@@ -21,39 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecaptchaEnterprise\Resource;
-
-/**
- * The "memberships" collection of methods.
- * Typical usage is:
- *  <code>
- *   $recaptchaenterpriseService = new Google\Service\RecaptchaEnterprise(...);
- *   $memberships = $recaptchaenterpriseService->projects_relatedaccountgroups_memberships;
- *  </code>
- */
-class ProjectsRelatedaccountgroupsMemberships extends \Google\Service\Resource
-{
+namespace Google\Service\RecaptchaEnterprise\Resource {
+    use Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1ListRelatedAccountGroupMembershipsResponse;
     /**
-     * Get memberships in a group of related accounts.
-     * (memberships.listProjectsRelatedaccountgroupsMemberships)
-     *
-     * @param string $parent Required. The resource name for the related account
-     * group in the format
-     * `projects/{project}/relatedaccountgroups/{relatedaccountgroup}`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. The maximum number of accounts to return.
-     * The service might return fewer than this value. If unspecified, at most 50
-     * accounts are returned. The maximum value is 1000; values above 1000 are
-     * coerced to 1000.
-     * @opt_param string pageToken Optional. A page token, received from a previous
-     * `ListRelatedAccountGroupMemberships` call. When paginating, all other
-     * parameters provided to `ListRelatedAccountGroupMemberships` must match the
-     * call that provided the page token.
-     * @return GoogleCloudRecaptchaenterpriseV1ListRelatedAccountGroupMembershipsResponse
-     * @throws \Google\Service\Exception
+     * The "memberships" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $recaptchaenterpriseService = new Google\Service\RecaptchaEnterprise(...);
+     *   $memberships = $recaptchaenterpriseService->projects_relatedaccountgroups_memberships;
+     *  </code>
      */
-    public function listProjectsRelatedaccountgroupsMemberships($parent, $optParams = [])
+    class ProjectsRelatedaccountgroupsMemberships extends \Google\Service\Resource
+    {
+        /**
+         * Get memberships in a group of related accounts.
+         * (memberships.listProjectsRelatedaccountgroupsMemberships)
+         *
+         * @param string $parent Required. The resource name for the related account
+         * group in the format
+         * `projects/{project}/relatedaccountgroups/{relatedaccountgroup}`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. The maximum number of accounts to return.
+         * The service might return fewer than this value. If unspecified, at most 50
+         * accounts are returned. The maximum value is 1000; values above 1000 are
+         * coerced to 1000.
+         * @opt_param string pageToken Optional. A page token, received from a previous
+         * `ListRelatedAccountGroupMemberships` call. When paginating, all other
+         * parameters provided to `ListRelatedAccountGroupMemberships` must match the
+         * call that provided the page token.
+         * @return GoogleCloudRecaptchaenterpriseV1ListRelatedAccountGroupMembershipsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsRelatedaccountgroupsMemberships($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\RecaptchaEnterprise\Resource\ProjectsRelatedaccountgroupsMemberships registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_RecaptchaEnterprise_Resource_ProjectsRelatedaccountgroupsMemberships extends \Google\Service\RecaptchaEnterprise\Resource\ProjectsRelatedaccountgroupsMemberships
     {
     }
 }

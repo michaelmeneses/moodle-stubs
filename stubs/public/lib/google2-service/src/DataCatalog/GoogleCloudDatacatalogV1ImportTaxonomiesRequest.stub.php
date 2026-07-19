@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1ImportTaxonomiesRequest extends \Google\Model
-{
-    protected $crossRegionalSourceType = GoogleCloudDatacatalogV1CrossRegionalSource::class;
-    protected $crossRegionalSourceDataType = '';
-    protected $inlineSourceType = GoogleCloudDatacatalogV1InlineSource::class;
-    protected $inlineSourceDataType = '';
-    /**
-     * Cross-regional source taxonomy to import.
-     *
-     * @param GoogleCloudDatacatalogV1CrossRegionalSource $crossRegionalSource
-     */
-    public function setCrossRegionalSource(GoogleCloudDatacatalogV1CrossRegionalSource $crossRegionalSource)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1ImportTaxonomiesRequest extends \Google\Model
     {
+        protected $crossRegionalSourceType = GoogleCloudDatacatalogV1CrossRegionalSource::class;
+        protected $crossRegionalSourceDataType = '';
+        protected $inlineSourceType = GoogleCloudDatacatalogV1InlineSource::class;
+        protected $inlineSourceDataType = '';
+        /**
+         * Cross-regional source taxonomy to import.
+         *
+         * @param GoogleCloudDatacatalogV1CrossRegionalSource $crossRegionalSource
+         */
+        public function setCrossRegionalSource(GoogleCloudDatacatalogV1CrossRegionalSource $crossRegionalSource)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1CrossRegionalSource
+         */
+        public function getCrossRegionalSource()
+        {
+        }
+        /**
+         * Inline source taxonomy to import.
+         *
+         * @param GoogleCloudDatacatalogV1InlineSource $inlineSource
+         */
+        public function setInlineSource(GoogleCloudDatacatalogV1InlineSource $inlineSource)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1InlineSource
+         */
+        public function getInlineSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatacatalogV1CrossRegionalSource
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1ImportTaxonomiesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCrossRegionalSource()
-    {
-    }
-    /**
-     * Inline source taxonomy to import.
-     *
-     * @param GoogleCloudDatacatalogV1InlineSource $inlineSource
-     */
-    public function setInlineSource(GoogleCloudDatacatalogV1InlineSource $inlineSource)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1InlineSource
-     */
-    public function getInlineSource()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1ImportTaxonomiesRequest extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1ImportTaxonomiesRequest
     {
     }
 }

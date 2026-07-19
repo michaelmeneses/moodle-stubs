@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class GoogleCloudBeyondcorpAppconnectorsV1NotificationConfig extends \Google\Model
-{
-    protected $pubsubNotificationType = GoogleCloudBeyondcorpAppconnectorsV1NotificationConfigCloudPubSubNotificationConfig::class;
-    protected $pubsubNotificationDataType = '';
-    /**
-     * Cloud Pub/Sub Configuration to receive notifications.
-     *
-     * @param GoogleCloudBeyondcorpAppconnectorsV1NotificationConfigCloudPubSubNotificationConfig $pubsubNotification
-     */
-    public function setPubsubNotification(GoogleCloudBeyondcorpAppconnectorsV1NotificationConfigCloudPubSubNotificationConfig $pubsubNotification)
+namespace Google\Service\BeyondCorp {
+    class GoogleCloudBeyondcorpAppconnectorsV1NotificationConfig extends \Google\Model
     {
+        protected $pubsubNotificationType = GoogleCloudBeyondcorpAppconnectorsV1NotificationConfigCloudPubSubNotificationConfig::class;
+        protected $pubsubNotificationDataType = '';
+        /**
+         * Cloud Pub/Sub Configuration to receive notifications.
+         *
+         * @param GoogleCloudBeyondcorpAppconnectorsV1NotificationConfigCloudPubSubNotificationConfig $pubsubNotification
+         */
+        public function setPubsubNotification(GoogleCloudBeyondcorpAppconnectorsV1NotificationConfigCloudPubSubNotificationConfig $pubsubNotification)
+        {
+        }
+        /**
+         * @return GoogleCloudBeyondcorpAppconnectorsV1NotificationConfigCloudPubSubNotificationConfig
+         */
+        public function getPubsubNotification()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudBeyondcorpAppconnectorsV1NotificationConfigCloudPubSubNotificationConfig
+     * Runtime class alias of \Google\Service\BeyondCorp\GoogleCloudBeyondcorpAppconnectorsV1NotificationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPubsubNotification()
+    class Google_Service_BeyondCorp_GoogleCloudBeyondcorpAppconnectorsV1NotificationConfig extends \Google\Service\BeyondCorp\GoogleCloudBeyondcorpAppconnectorsV1NotificationConfig
     {
     }
 }

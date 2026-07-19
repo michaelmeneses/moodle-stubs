@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2ModelModelFeaturesConfig extends \Google\Model
-{
-    protected $frequentlyBoughtTogetherConfigType = GoogleCloudRetailV2ModelFrequentlyBoughtTogetherFeaturesConfig::class;
-    protected $frequentlyBoughtTogetherConfigDataType = '';
-    /**
-     * Additional configs for frequently-bought-together models.
-     *
-     * @param GoogleCloudRetailV2ModelFrequentlyBoughtTogetherFeaturesConfig $frequentlyBoughtTogetherConfig
-     */
-    public function setFrequentlyBoughtTogetherConfig(GoogleCloudRetailV2ModelFrequentlyBoughtTogetherFeaturesConfig $frequentlyBoughtTogetherConfig)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2ModelModelFeaturesConfig extends \Google\Model
     {
+        protected $frequentlyBoughtTogetherConfigType = GoogleCloudRetailV2ModelFrequentlyBoughtTogetherFeaturesConfig::class;
+        protected $frequentlyBoughtTogetherConfigDataType = '';
+        /**
+         * Additional configs for frequently-bought-together models.
+         *
+         * @param GoogleCloudRetailV2ModelFrequentlyBoughtTogetherFeaturesConfig $frequentlyBoughtTogetherConfig
+         */
+        public function setFrequentlyBoughtTogetherConfig(GoogleCloudRetailV2ModelFrequentlyBoughtTogetherFeaturesConfig $frequentlyBoughtTogetherConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2ModelFrequentlyBoughtTogetherFeaturesConfig
+         */
+        public function getFrequentlyBoughtTogetherConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRetailV2ModelFrequentlyBoughtTogetherFeaturesConfig
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2ModelModelFeaturesConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFrequentlyBoughtTogetherConfig()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2ModelModelFeaturesConfig extends \Google\Service\CloudRetail\GoogleCloudRetailV2ModelModelFeaturesConfig
     {
     }
 }

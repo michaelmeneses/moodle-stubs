@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta2DocumentPageDetectedBarcode extends \Google\Model
-{
-    protected $barcodeType = GoogleCloudDocumentaiV1beta2Barcode::class;
-    protected $barcodeDataType = '';
-    protected $layoutType = GoogleCloudDocumentaiV1beta2DocumentPageLayout::class;
-    protected $layoutDataType = '';
-    /**
-     * @param GoogleCloudDocumentaiV1beta2Barcode
-     */
-    public function setBarcode(GoogleCloudDocumentaiV1beta2Barcode $barcode)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta2DocumentPageDetectedBarcode extends \Google\Model
     {
+        protected $barcodeType = GoogleCloudDocumentaiV1beta2Barcode::class;
+        protected $barcodeDataType = '';
+        protected $layoutType = GoogleCloudDocumentaiV1beta2DocumentPageLayout::class;
+        protected $layoutDataType = '';
+        /**
+         * @param GoogleCloudDocumentaiV1beta2Barcode
+         */
+        public function setBarcode(GoogleCloudDocumentaiV1beta2Barcode $barcode)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta2Barcode
+         */
+        public function getBarcode()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta2DocumentPageLayout
+         */
+        public function setLayout(GoogleCloudDocumentaiV1beta2DocumentPageLayout $layout)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta2DocumentPageLayout
+         */
+        public function getLayout()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1beta2Barcode
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta2DocumentPageDetectedBarcode registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBarcode()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta2DocumentPageLayout
-     */
-    public function setLayout(GoogleCloudDocumentaiV1beta2DocumentPageLayout $layout)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta2DocumentPageLayout
-     */
-    public function getLayout()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta2DocumentPageDetectedBarcode extends \Google\Service\Document\GoogleCloudDocumentaiV1beta2DocumentPageDetectedBarcode
     {
     }
 }

@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ListScopeNamespacesResponse extends \Google\Collection
-{
-    protected $collection_key = 'scopeNamespaces';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    protected $scopeNamespacesType = GkehubNamespace::class;
-    protected $scopeNamespacesDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\GKEHub {
+    class ListScopeNamespacesResponse extends \Google\Collection
     {
+        protected $collection_key = 'scopeNamespaces';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        protected $scopeNamespacesType = GkehubNamespace::class;
+        protected $scopeNamespacesDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param GkehubNamespace[]
+         */
+        public function setScopeNamespaces($scopeNamespaces)
+        {
+        }
+        /**
+         * @return GkehubNamespace[]
+         */
+        public function getScopeNamespaces()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\ListScopeNamespacesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param GkehubNamespace[]
-     */
-    public function setScopeNamespaces($scopeNamespaces)
-    {
-    }
-    /**
-     * @return GkehubNamespace[]
-     */
-    public function getScopeNamespaces()
+    class Google_Service_GKEHub_ListScopeNamespacesResponse extends \Google\Service\GKEHub\ListScopeNamespacesResponse
     {
     }
 }

@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidProvisioningPartner;
-
-class ClaimDeviceResponse extends \Google\Model
-{
-    /**
-     * The device ID of the claimed device.
-     *
-     * @var string
-     */
-    public $deviceId;
-    /**
-     * The resource name of the device in the format
-     * `partners/[PARTNER_ID]/devices/[DEVICE_ID]`.
-     *
-     * @var string
-     */
-    public $deviceName;
-    /**
-     * The device ID of the claimed device.
-     *
-     * @param string $deviceId
-     */
-    public function setDeviceId($deviceId)
+namespace Google\Service\AndroidProvisioningPartner {
+    class ClaimDeviceResponse extends \Google\Model
     {
+        /**
+         * The device ID of the claimed device.
+         *
+         * @var string
+         */
+        public $deviceId;
+        /**
+         * The resource name of the device in the format
+         * `partners/[PARTNER_ID]/devices/[DEVICE_ID]`.
+         *
+         * @var string
+         */
+        public $deviceName;
+        /**
+         * The device ID of the claimed device.
+         *
+         * @param string $deviceId
+         */
+        public function setDeviceId($deviceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeviceId()
+        {
+        }
+        /**
+         * The resource name of the device in the format
+         * `partners/[PARTNER_ID]/devices/[DEVICE_ID]`.
+         *
+         * @param string $deviceName
+         */
+        public function setDeviceName($deviceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeviceName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidProvisioningPartner\ClaimDeviceResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceId()
-    {
-    }
-    /**
-     * The resource name of the device in the format
-     * `partners/[PARTNER_ID]/devices/[DEVICE_ID]`.
-     *
-     * @param string $deviceName
-     */
-    public function setDeviceName($deviceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeviceName()
+    class Google_Service_AndroidProvisioningPartner_ClaimDeviceResponse extends \Google\Service\AndroidProvisioningPartner\ClaimDeviceResponse
     {
     }
 }

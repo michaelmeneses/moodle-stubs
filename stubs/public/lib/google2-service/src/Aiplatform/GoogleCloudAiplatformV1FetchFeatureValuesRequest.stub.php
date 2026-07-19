@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1FetchFeatureValuesRequest extends \Google\Model
-{
-    /**
-     * Not set. Will be treated as the KeyValue format.
-     */
-    public const DATA_FORMAT_FEATURE_VIEW_DATA_FORMAT_UNSPECIFIED = 'FEATURE_VIEW_DATA_FORMAT_UNSPECIFIED';
-    /**
-     * Return response data in key-value format.
-     */
-    public const DATA_FORMAT_KEY_VALUE = 'KEY_VALUE';
-    /**
-     * Return response data in proto Struct format.
-     */
-    public const DATA_FORMAT_PROTO_STRUCT = 'PROTO_STRUCT';
-    /**
-     * Optional. Response data format. If not set, FeatureViewDataFormat.KEY_VALUE
-     * will be used.
-     *
-     * @var string
-     */
-    public $dataFormat;
-    protected $dataKeyType = GoogleCloudAiplatformV1FeatureViewDataKey::class;
-    protected $dataKeyDataType = '';
-    /**
-     * Optional. Response data format. If not set, FeatureViewDataFormat.KEY_VALUE
-     * will be used.
-     *
-     * Accepted values: FEATURE_VIEW_DATA_FORMAT_UNSPECIFIED, KEY_VALUE,
-     * PROTO_STRUCT
-     *
-     * @param self::DATA_FORMAT_* $dataFormat
-     */
-    public function setDataFormat($dataFormat)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1FetchFeatureValuesRequest extends \Google\Model
     {
+        /**
+         * Not set. Will be treated as the KeyValue format.
+         */
+        public const DATA_FORMAT_FEATURE_VIEW_DATA_FORMAT_UNSPECIFIED = 'FEATURE_VIEW_DATA_FORMAT_UNSPECIFIED';
+        /**
+         * Return response data in key-value format.
+         */
+        public const DATA_FORMAT_KEY_VALUE = 'KEY_VALUE';
+        /**
+         * Return response data in proto Struct format.
+         */
+        public const DATA_FORMAT_PROTO_STRUCT = 'PROTO_STRUCT';
+        /**
+         * Optional. Response data format. If not set, FeatureViewDataFormat.KEY_VALUE
+         * will be used.
+         *
+         * @var string
+         */
+        public $dataFormat;
+        protected $dataKeyType = GoogleCloudAiplatformV1FeatureViewDataKey::class;
+        protected $dataKeyDataType = '';
+        /**
+         * Optional. Response data format. If not set, FeatureViewDataFormat.KEY_VALUE
+         * will be used.
+         *
+         * Accepted values: FEATURE_VIEW_DATA_FORMAT_UNSPECIFIED, KEY_VALUE,
+         * PROTO_STRUCT
+         *
+         * @param self::DATA_FORMAT_* $dataFormat
+         */
+        public function setDataFormat($dataFormat)
+        {
+        }
+        /**
+         * @return self::DATA_FORMAT_*
+         */
+        public function getDataFormat()
+        {
+        }
+        /**
+         * Optional. The request key to fetch feature values for.
+         *
+         * @param GoogleCloudAiplatformV1FeatureViewDataKey $dataKey
+         */
+        public function setDataKey(GoogleCloudAiplatformV1FeatureViewDataKey $dataKey)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1FeatureViewDataKey
+         */
+        public function getDataKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::DATA_FORMAT_*
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1FetchFeatureValuesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataFormat()
-    {
-    }
-    /**
-     * Optional. The request key to fetch feature values for.
-     *
-     * @param GoogleCloudAiplatformV1FeatureViewDataKey $dataKey
-     */
-    public function setDataKey(GoogleCloudAiplatformV1FeatureViewDataKey $dataKey)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1FeatureViewDataKey
-     */
-    public function getDataKey()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1FetchFeatureValuesRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1FetchFeatureValuesRequest
     {
     }
 }

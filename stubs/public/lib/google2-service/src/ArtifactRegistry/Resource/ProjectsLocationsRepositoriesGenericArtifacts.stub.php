@@ -21,33 +21,44 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry\Resource;
-
-/**
- * The "genericArtifacts" collection of methods.
- * Typical usage is:
- *  <code>
- *   $artifactregistryService = new Google\Service\ArtifactRegistry(...);
- *   $genericArtifacts = $artifactregistryService->projects_locations_repositories_genericArtifacts;
- *  </code>
- */
-class ProjectsLocationsRepositoriesGenericArtifacts extends \Google\Service\Resource
-{
+namespace Google\Service\ArtifactRegistry\Resource {
+    use Google\Service\ArtifactRegistry\UploadGenericArtifactMediaResponse;
+    use Google\Service\ArtifactRegistry\UploadGenericArtifactRequest;
     /**
-     * Directly uploads a Generic artifact. The returned operation will complete
-     * once the resources are uploaded. Package, version, and file resources are
-     * created based on the uploaded artifact. Uploaded artifacts that conflict with
-     * existing resources will raise an `ALREADY_EXISTS` error.
-     * (genericArtifacts.upload)
-     *
-     * @param string $parent The resource name of the repository where the generic
-     * artifact will be uploaded.
-     * @param UploadGenericArtifactRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return UploadGenericArtifactMediaResponse
-     * @throws \Google\Service\Exception
+     * The "genericArtifacts" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $artifactregistryService = new Google\Service\ArtifactRegistry(...);
+     *   $genericArtifacts = $artifactregistryService->projects_locations_repositories_genericArtifacts;
+     *  </code>
      */
-    public function upload($parent, UploadGenericArtifactRequest $postBody, $optParams = [])
+    class ProjectsLocationsRepositoriesGenericArtifacts extends \Google\Service\Resource
+    {
+        /**
+         * Directly uploads a Generic artifact. The returned operation will complete
+         * once the resources are uploaded. Package, version, and file resources are
+         * created based on the uploaded artifact. Uploaded artifacts that conflict with
+         * existing resources will raise an `ALREADY_EXISTS` error.
+         * (genericArtifacts.upload)
+         *
+         * @param string $parent The resource name of the repository where the generic
+         * artifact will be uploaded.
+         * @param UploadGenericArtifactRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return UploadGenericArtifactMediaResponse
+         * @throws \Google\Service\Exception
+         */
+        public function upload($parent, UploadGenericArtifactRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ArtifactRegistry\Resource\ProjectsLocationsRepositoriesGenericArtifacts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ArtifactRegistry_Resource_ProjectsLocationsRepositoriesGenericArtifacts extends \Google\Service\ArtifactRegistry\Resource\ProjectsLocationsRepositoriesGenericArtifacts
     {
     }
 }

@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecommendationsAI\Resource;
-
-/**
- * The "locations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $recommendationengineService = new Google\Service\RecommendationsAI(...);
- *   $locations = $recommendationengineService->projects_locations;
- *  </code>
- */
-class ProjectsLocations extends \Google\Service\Resource
-{
+namespace Google\Service\RecommendationsAI\Resource {
+    /**
+     * The "locations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $recommendationengineService = new Google\Service\RecommendationsAI(...);
+     *   $locations = $recommendationengineService->projects_locations;
+     *  </code>
+     */
+    class ProjectsLocations extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\RecommendationsAI\Resource\ProjectsLocations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_RecommendationsAI_Resource_ProjectsLocations extends \Google\Service\RecommendationsAI\Resource\ProjectsLocations
+    {
+    }
 }

@@ -21,27 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SearchConsole\Resource;
-
-/**
- * The "mobileFriendlyTest" collection of methods.
- * Typical usage is:
- *  <code>
- *   $searchconsoleService = new Google\Service\SearchConsole(...);
- *   $mobileFriendlyTest = $searchconsoleService->urlTestingTools_mobileFriendlyTest;
- *  </code>
- */
-class UrlTestingToolsMobileFriendlyTest extends \Google\Service\Resource
-{
+namespace Google\Service\SearchConsole\Resource {
+    use Google\Service\SearchConsole\RunMobileFriendlyTestRequest;
+    use Google\Service\SearchConsole\RunMobileFriendlyTestResponse;
     /**
-     * Runs Mobile-Friendly Test for a given URL. (mobileFriendlyTest.run)
-     *
-     * @param RunMobileFriendlyTestRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return RunMobileFriendlyTestResponse
-     * @throws \Google\Service\Exception
+     * The "mobileFriendlyTest" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $searchconsoleService = new Google\Service\SearchConsole(...);
+     *   $mobileFriendlyTest = $searchconsoleService->urlTestingTools_mobileFriendlyTest;
+     *  </code>
      */
-    public function run(RunMobileFriendlyTestRequest $postBody, $optParams = [])
+    class UrlTestingToolsMobileFriendlyTest extends \Google\Service\Resource
+    {
+        /**
+         * Runs Mobile-Friendly Test for a given URL. (mobileFriendlyTest.run)
+         *
+         * @param RunMobileFriendlyTestRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return RunMobileFriendlyTestResponse
+         * @throws \Google\Service\Exception
+         */
+        public function run(RunMobileFriendlyTestRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\SearchConsole\Resource\UrlTestingToolsMobileFriendlyTest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_SearchConsole_Resource_UrlTestingToolsMobileFriendlyTest extends \Google\Service\SearchConsole\Resource\UrlTestingToolsMobileFriendlyTest
     {
     }
 }

@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class PollItemsResponse extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = Item::class;
-    protected $itemsDataType = 'array';
-    /**
-     * Set of items from the queue available for connector to process. These items
-     * have the following subset of fields populated: version metadata.hash
-     * structured_data.hash content.hash payload status queue
-     *
-     * @param Item[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\CloudSearch {
+    class PollItemsResponse extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = Item::class;
+        protected $itemsDataType = 'array';
+        /**
+         * Set of items from the queue available for connector to process. These items
+         * have the following subset of fields populated: version metadata.hash
+         * structured_data.hash content.hash payload status queue
+         *
+         * @param Item[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return Item[]
+         */
+        public function getItems()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Item[]
+     * Runtime class alias of \Google\Service\CloudSearch\PollItemsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
+    class Google_Service_CloudSearch_PollItemsResponse extends \Google\Service\CloudSearch\PollItemsResponse
     {
     }
 }

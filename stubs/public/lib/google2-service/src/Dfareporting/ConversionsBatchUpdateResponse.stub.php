@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class ConversionsBatchUpdateResponse extends \Google\Collection
-{
-    protected $collection_key = 'status';
-    /**
-     * Indicates that some or all conversions failed to update.
-     *
-     * @var bool
-     */
-    public $hasFailures;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#conversionsBatchUpdateResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    protected $statusType = ConversionStatus::class;
-    protected $statusDataType = 'array';
-    /**
-     * Indicates that some or all conversions failed to update.
-     *
-     * @param bool $hasFailures
-     */
-    public function setHasFailures($hasFailures)
+namespace Google\Service\Dfareporting {
+    class ConversionsBatchUpdateResponse extends \Google\Collection
     {
+        protected $collection_key = 'status';
+        /**
+         * Indicates that some or all conversions failed to update.
+         *
+         * @var bool
+         */
+        public $hasFailures;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#conversionsBatchUpdateResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        protected $statusType = ConversionStatus::class;
+        protected $statusDataType = 'array';
+        /**
+         * Indicates that some or all conversions failed to update.
+         *
+         * @param bool $hasFailures
+         */
+        public function setHasFailures($hasFailures)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHasFailures()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#conversionsBatchUpdateResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The update status of each conversion. Statuses are returned in the same
+         * order that conversions are updated.
+         *
+         * @param ConversionStatus[] $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return ConversionStatus[]
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Dfareporting\ConversionsBatchUpdateResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHasFailures()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#conversionsBatchUpdateResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The update status of each conversion. Statuses are returned in the same
-     * order that conversions are updated.
-     *
-     * @param ConversionStatus[] $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return ConversionStatus[]
-     */
-    public function getStatus()
+    class Google_Service_Dfareporting_ConversionsBatchUpdateResponse extends \Google\Service\Dfareporting\ConversionsBatchUpdateResponse
     {
     }
 }

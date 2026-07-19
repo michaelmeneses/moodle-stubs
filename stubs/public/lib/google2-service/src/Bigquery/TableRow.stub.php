@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class TableRow extends \Google\Collection
-{
-    protected $collection_key = 'f';
-    protected $fType = TableCell::class;
-    protected $fDataType = 'array';
-    /**
-     * Represents a single row in the result set, consisting of one or more
-     * fields.
-     *
-     * @param TableCell[] $f
-     */
-    public function setF($f)
+namespace Google\Service\Bigquery {
+    class TableRow extends \Google\Collection
     {
+        protected $collection_key = 'f';
+        protected $fType = TableCell::class;
+        protected $fDataType = 'array';
+        /**
+         * Represents a single row in the result set, consisting of one or more
+         * fields.
+         *
+         * @param TableCell[] $f
+         */
+        public function setF($f)
+        {
+        }
+        /**
+         * @return TableCell[]
+         */
+        public function getF()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TableCell[]
+     * Runtime class alias of \Google\Service\Bigquery\TableRow registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getF()
+    class Google_Service_Bigquery_TableRow extends \Google\Service\Bigquery\TableRow
     {
     }
 }

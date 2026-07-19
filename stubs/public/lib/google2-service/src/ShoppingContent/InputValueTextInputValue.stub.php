@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class InputValueTextInputValue extends \Google\Model
-{
-    /**
-     * Required. Text provided by the merchant.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Required. Text provided by the merchant.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
+namespace Google\Service\ShoppingContent {
+    class InputValueTextInputValue extends \Google\Model
     {
+        /**
+         * Required. Text provided by the merchant.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Required. Text provided by the merchant.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\InputValueTextInputValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValue()
+    class Google_Service_ShoppingContent_InputValueTextInputValue extends \Google\Service\ShoppingContent\InputValueTextInputValue
     {
     }
 }

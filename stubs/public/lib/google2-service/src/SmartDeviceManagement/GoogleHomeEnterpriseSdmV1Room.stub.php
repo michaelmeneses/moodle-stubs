@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SmartDeviceManagement;
-
-class GoogleHomeEnterpriseSdmV1Room extends \Google\Model
-{
-    /**
-     * Output only. The resource name of the room. For example:
-     * "enterprises/XYZ/structures/ABC/rooms/123".
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Room traits.
-     *
-     * @var array[]
-     */
-    public $traits;
-    /**
-     * Output only. The resource name of the room. For example:
-     * "enterprises/XYZ/structures/ABC/rooms/123".
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\SmartDeviceManagement {
+    class GoogleHomeEnterpriseSdmV1Room extends \Google\Model
     {
+        /**
+         * Output only. The resource name of the room. For example:
+         * "enterprises/XYZ/structures/ABC/rooms/123".
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Room traits.
+         *
+         * @var array[]
+         */
+        public $traits;
+        /**
+         * Output only. The resource name of the room. For example:
+         * "enterprises/XYZ/structures/ABC/rooms/123".
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Room traits.
+         *
+         * @param array[] $traits
+         */
+        public function setTraits($traits)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getTraits()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SmartDeviceManagement\GoogleHomeEnterpriseSdmV1Room registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Room traits.
-     *
-     * @param array[] $traits
-     */
-    public function setTraits($traits)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getTraits()
+    class Google_Service_SmartDeviceManagement_GoogleHomeEnterpriseSdmV1Room extends \Google\Service\SmartDeviceManagement\GoogleHomeEnterpriseSdmV1Room
     {
     }
 }

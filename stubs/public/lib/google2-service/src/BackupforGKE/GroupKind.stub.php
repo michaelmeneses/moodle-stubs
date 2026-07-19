@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BackupforGKE;
-
-class GroupKind extends \Google\Model
-{
-    /**
-     * Optional. API group string of a Kubernetes resource, e.g.
-     * "apiextensions.k8s.io", "storage.k8s.io", etc. Note: use empty string for
-     * core API group.
-     *
-     * @var string
-     */
-    public $resourceGroup;
-    /**
-     * Optional. Kind of a Kubernetes resource, must be in UpperCamelCase
-     * (PascalCase) and singular form. E.g. "CustomResourceDefinition",
-     * "StorageClass", etc.
-     *
-     * @var string
-     */
-    public $resourceKind;
-    /**
-     * Optional. API group string of a Kubernetes resource, e.g.
-     * "apiextensions.k8s.io", "storage.k8s.io", etc. Note: use empty string for
-     * core API group.
-     *
-     * @param string $resourceGroup
-     */
-    public function setResourceGroup($resourceGroup)
+namespace Google\Service\BackupforGKE {
+    class GroupKind extends \Google\Model
     {
+        /**
+         * Optional. API group string of a Kubernetes resource, e.g.
+         * "apiextensions.k8s.io", "storage.k8s.io", etc. Note: use empty string for
+         * core API group.
+         *
+         * @var string
+         */
+        public $resourceGroup;
+        /**
+         * Optional. Kind of a Kubernetes resource, must be in UpperCamelCase
+         * (PascalCase) and singular form. E.g. "CustomResourceDefinition",
+         * "StorageClass", etc.
+         *
+         * @var string
+         */
+        public $resourceKind;
+        /**
+         * Optional. API group string of a Kubernetes resource, e.g.
+         * "apiextensions.k8s.io", "storage.k8s.io", etc. Note: use empty string for
+         * core API group.
+         *
+         * @param string $resourceGroup
+         */
+        public function setResourceGroup($resourceGroup)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceGroup()
+        {
+        }
+        /**
+         * Optional. Kind of a Kubernetes resource, must be in UpperCamelCase
+         * (PascalCase) and singular form. E.g. "CustomResourceDefinition",
+         * "StorageClass", etc.
+         *
+         * @param string $resourceKind
+         */
+        public function setResourceKind($resourceKind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BackupforGKE\GroupKind registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResourceGroup()
-    {
-    }
-    /**
-     * Optional. Kind of a Kubernetes resource, must be in UpperCamelCase
-     * (PascalCase) and singular form. E.g. "CustomResourceDefinition",
-     * "StorageClass", etc.
-     *
-     * @param string $resourceKind
-     */
-    public function setResourceKind($resourceKind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceKind()
+    class Google_Service_BackupforGKE_GroupKind extends \Google\Service\BackupforGKE\GroupKind
     {
     }
 }

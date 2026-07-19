@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SemanticTile;
-
-class TriangleStrip extends \Google\Collection
-{
-    protected $collection_key = 'vertexIndices';
-    public $vertexIndices;
-    public function setVertexIndices($vertexIndices)
+namespace Google\Service\SemanticTile {
+    class TriangleStrip extends \Google\Collection
     {
+        protected $collection_key = 'vertexIndices';
+        public $vertexIndices;
+        public function setVertexIndices($vertexIndices)
+        {
+        }
+        public function getVertexIndices()
+        {
+        }
     }
-    public function getVertexIndices()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\SemanticTile\TriangleStrip registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_SemanticTile_TriangleStrip extends \Google\Service\SemanticTile\TriangleStrip
     {
     }
 }

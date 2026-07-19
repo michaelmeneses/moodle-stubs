@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunOpV2VpcAccess extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $connector;
-    /**
-     * @var string
-     */
-    public $egress;
-    /**
-     * @param string
-     */
-    public function setConnector($connector)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunOpV2VpcAccess extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $connector;
+        /**
+         * @var string
+         */
+        public $egress;
+        /**
+         * @param string
+         */
+        public function setConnector($connector)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConnector()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEgress($egress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEgress()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunOpV2VpcAccess registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConnector()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEgress($egress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEgress()
+    class Google_Service_CloudRun_GoogleCloudRunOpV2VpcAccess extends \Google\Service\CloudRun\GoogleCloudRunOpV2VpcAccess
     {
     }
 }

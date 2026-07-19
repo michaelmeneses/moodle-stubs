@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Looker;
-
-class AdminSettings extends \Google\Collection
-{
-    protected $collection_key = 'allowedEmailDomains';
-    /**
-     * Email domain allowlist for the instance.
-     *
-     * @var string[]
-     */
-    public $allowedEmailDomains;
-    /**
-     * Email domain allowlist for the instance.
-     *
-     * @param string[] $allowedEmailDomains
-     */
-    public function setAllowedEmailDomains($allowedEmailDomains)
+namespace Google\Service\Looker {
+    class AdminSettings extends \Google\Collection
     {
+        protected $collection_key = 'allowedEmailDomains';
+        /**
+         * Email domain allowlist for the instance.
+         *
+         * @var string[]
+         */
+        public $allowedEmailDomains;
+        /**
+         * Email domain allowlist for the instance.
+         *
+         * @param string[] $allowedEmailDomains
+         */
+        public function setAllowedEmailDomains($allowedEmailDomains)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAllowedEmailDomains()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Looker\AdminSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowedEmailDomains()
+    class Google_Service_Looker_AdminSettings extends \Google\Service\Looker\AdminSettings
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSupport;
-
-class CreateAttachmentRequest extends \Google\Model
-{
-    protected $attachmentType = Attachment::class;
-    protected $attachmentDataType = '';
-    /**
-     * Required. The attachment to be created.
-     *
-     * @param Attachment $attachment
-     */
-    public function setAttachment(Attachment $attachment)
+namespace Google\Service\CloudSupport {
+    class CreateAttachmentRequest extends \Google\Model
     {
+        protected $attachmentType = Attachment::class;
+        protected $attachmentDataType = '';
+        /**
+         * Required. The attachment to be created.
+         *
+         * @param Attachment $attachment
+         */
+        public function setAttachment(Attachment $attachment)
+        {
+        }
+        /**
+         * @return Attachment
+         */
+        public function getAttachment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Attachment
+     * Runtime class alias of \Google\Service\CloudSupport\CreateAttachmentRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttachment()
+    class Google_Service_CloudSupport_CreateAttachmentRequest extends \Google\Service\CloudSupport\CreateAttachmentRequest
     {
     }
 }

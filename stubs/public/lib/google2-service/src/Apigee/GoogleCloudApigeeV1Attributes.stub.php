@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1Attributes extends \Google\Collection
-{
-    protected $collection_key = 'attribute';
-    protected $attributeType = GoogleCloudApigeeV1Attribute::class;
-    protected $attributeDataType = 'array';
-    /**
-     * List of attributes.
-     *
-     * @param GoogleCloudApigeeV1Attribute[] $attribute
-     */
-    public function setAttribute($attribute)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1Attributes extends \Google\Collection
     {
+        protected $collection_key = 'attribute';
+        protected $attributeType = GoogleCloudApigeeV1Attribute::class;
+        protected $attributeDataType = 'array';
+        /**
+         * List of attributes.
+         *
+         * @param GoogleCloudApigeeV1Attribute[] $attribute
+         */
+        public function setAttribute($attribute)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1Attribute[]
+         */
+        public function getAttribute()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1Attribute[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1Attributes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttribute()
+    class Google_Service_Apigee_GoogleCloudApigeeV1Attributes extends \Google\Service\Apigee\GoogleCloudApigeeV1Attributes
     {
     }
 }

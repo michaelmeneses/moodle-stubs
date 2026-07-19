@@ -21,123 +21,132 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class Relation extends \Google\Model
-{
-    /**
-     * Default value.
-     */
-    public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * DBDeployment -> Database
-     */
-    public const TYPE_LOGICAL_DATABASE = 'LOGICAL_DATABASE';
-    /**
-     * A relation between a machine/VM and the database deployment it hosts.
-     */
-    public const TYPE_DATABASE_DEPLOYMENT_HOSTING_SERVER = 'DATABASE_DEPLOYMENT_HOSTING_SERVER';
-    /**
-     * Output only. The timestamp when the relation was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. The destination asset name in the relation.
-     *
-     * @var string
-     */
-    public $dstAsset;
-    /**
-     * Output only. Identifier. The identifier of the relation.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The source asset name in the relation.
-     *
-     * @var string
-     */
-    public $srcAsset;
-    /**
-     * Optional. The type of the relation.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Output only. The timestamp when the relation was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\MigrationCenterAPI {
+    class Relation extends \Google\Model
     {
+        /**
+         * Default value.
+         */
+        public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * DBDeployment -> Database
+         */
+        public const TYPE_LOGICAL_DATABASE = 'LOGICAL_DATABASE';
+        /**
+         * A relation between a machine/VM and the database deployment it hosts.
+         */
+        public const TYPE_DATABASE_DEPLOYMENT_HOSTING_SERVER = 'DATABASE_DEPLOYMENT_HOSTING_SERVER';
+        /**
+         * Output only. The timestamp when the relation was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. The destination asset name in the relation.
+         *
+         * @var string
+         */
+        public $dstAsset;
+        /**
+         * Output only. Identifier. The identifier of the relation.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The source asset name in the relation.
+         *
+         * @var string
+         */
+        public $srcAsset;
+        /**
+         * Optional. The type of the relation.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Output only. The timestamp when the relation was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. The destination asset name in the relation.
+         *
+         * @param string $dstAsset
+         */
+        public function setDstAsset($dstAsset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDstAsset()
+        {
+        }
+        /**
+         * Output only. Identifier. The identifier of the relation.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The source asset name in the relation.
+         *
+         * @param string $srcAsset
+         */
+        public function setSrcAsset($srcAsset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSrcAsset()
+        {
+        }
+        /**
+         * Optional. The type of the relation.
+         *
+         * Accepted values: TYPE_UNSPECIFIED, LOGICAL_DATABASE,
+         * DATABASE_DEPLOYMENT_HOSTING_SERVER
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\Relation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. The destination asset name in the relation.
-     *
-     * @param string $dstAsset
-     */
-    public function setDstAsset($dstAsset)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDstAsset()
-    {
-    }
-    /**
-     * Output only. Identifier. The identifier of the relation.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The source asset name in the relation.
-     *
-     * @param string $srcAsset
-     */
-    public function setSrcAsset($srcAsset)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSrcAsset()
-    {
-    }
-    /**
-     * Optional. The type of the relation.
-     *
-     * Accepted values: TYPE_UNSPECIFIED, LOGICAL_DATABASE,
-     * DATABASE_DEPLOYMENT_HOSTING_SERVER
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_MigrationCenterAPI_Relation extends \Google\Service\MigrationCenterAPI\Relation
     {
     }
 }

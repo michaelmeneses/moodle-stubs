@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2CompleteQueryResponseRecentSearchResult extends \Google\Model
-{
-    /**
-     * The recent search query.
-     *
-     * @var string
-     */
-    public $recentSearch;
-    /**
-     * The recent search query.
-     *
-     * @param string $recentSearch
-     */
-    public function setRecentSearch($recentSearch)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2CompleteQueryResponseRecentSearchResult extends \Google\Model
     {
+        /**
+         * The recent search query.
+         *
+         * @var string
+         */
+        public $recentSearch;
+        /**
+         * The recent search query.
+         *
+         * @param string $recentSearch
+         */
+        public function setRecentSearch($recentSearch)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRecentSearch()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2CompleteQueryResponseRecentSearchResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRecentSearch()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2CompleteQueryResponseRecentSearchResult extends \Google\Service\CloudRetail\GoogleCloudRetailV2CompleteQueryResponseRecentSearchResult
     {
     }
 }

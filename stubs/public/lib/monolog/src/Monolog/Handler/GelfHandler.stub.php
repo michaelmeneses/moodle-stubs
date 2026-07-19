@@ -16,6 +16,11 @@
  */
 namespace Monolog\Handler;
 
+use Gelf\PublisherInterface;
+use Monolog\Level;
+use Monolog\Formatter\GelfMessageFormatter;
+use Monolog\Formatter\FormatterInterface;
+use Monolog\LogRecord;
 /**
  * Handler to send messages to a Graylog2 (http://www.graylog2.org) server
  *

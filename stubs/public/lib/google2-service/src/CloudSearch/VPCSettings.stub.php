@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class VPCSettings extends \Google\Model
-{
-    /**
-     * The resource name of the GCP Project to be used for VPC SC policy check.
-     * VPC security settings on this project will be honored for Cloud Search APIs
-     * after project_name has been updated through CustomerService. Format:
-     * projects/{project_id}
-     *
-     * @var string
-     */
-    public $project;
-    /**
-     * The resource name of the GCP Project to be used for VPC SC policy check.
-     * VPC security settings on this project will be honored for Cloud Search APIs
-     * after project_name has been updated through CustomerService. Format:
-     * projects/{project_id}
-     *
-     * @param string $project
-     */
-    public function setProject($project)
+namespace Google\Service\CloudSearch {
+    class VPCSettings extends \Google\Model
     {
+        /**
+         * The resource name of the GCP Project to be used for VPC SC policy check.
+         * VPC security settings on this project will be honored for Cloud Search APIs
+         * after project_name has been updated through CustomerService. Format:
+         * projects/{project_id}
+         *
+         * @var string
+         */
+        public $project;
+        /**
+         * The resource name of the GCP Project to be used for VPC SC policy check.
+         * VPC security settings on this project will be honored for Cloud Search APIs
+         * after project_name has been updated through CustomerService. Format:
+         * projects/{project_id}
+         *
+         * @param string $project
+         */
+        public function setProject($project)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProject()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\VPCSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProject()
+    class Google_Service_CloudSearch_VPCSettings extends \Google\Service\CloudSearch\VPCSettings
     {
     }
 }

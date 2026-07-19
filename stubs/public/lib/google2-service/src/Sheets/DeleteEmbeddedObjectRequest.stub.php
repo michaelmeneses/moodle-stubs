@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class DeleteEmbeddedObjectRequest extends \Google\Model
-{
-    /**
-     * The ID of the embedded object to delete.
-     *
-     * @var int
-     */
-    public $objectId;
-    /**
-     * The ID of the embedded object to delete.
-     *
-     * @param int $objectId
-     */
-    public function setObjectId($objectId)
+namespace Google\Service\Sheets {
+    class DeleteEmbeddedObjectRequest extends \Google\Model
     {
+        /**
+         * The ID of the embedded object to delete.
+         *
+         * @var int
+         */
+        public $objectId;
+        /**
+         * The ID of the embedded object to delete.
+         *
+         * @param int $objectId
+         */
+        public function setObjectId($objectId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getObjectId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Sheets\DeleteEmbeddedObjectRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getObjectId()
+    class Google_Service_Sheets_DeleteEmbeddedObjectRequest extends \Google\Service\Sheets\DeleteEmbeddedObjectRequest
     {
     }
 }

@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessPlaceActions;
-
-class NoFee extends \Google\Model
-{
+namespace Google\Service\MyBusinessPlaceActions {
+    class NoFee extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\MyBusinessPlaceActions\NoFee registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_MyBusinessPlaceActions_NoFee extends \Google\Service\MyBusinessPlaceActions\NoFee
+    {
+    }
 }

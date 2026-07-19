@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class DiskPartitionDetails extends \Google\Model
-{
-    /**
-     * Output only. Total free space of all partitions.
-     *
-     * @var string
-     */
-    public $freeSpaceBytes;
-    protected $partitionsType = DiskPartitionList::class;
-    protected $partitionsDataType = '';
-    /**
-     * Output only. Total capacity of all partitions.
-     *
-     * @var string
-     */
-    public $totalCapacityBytes;
-    /**
-     * Output only. Total free space of all partitions.
-     *
-     * @param string $freeSpaceBytes
-     */
-    public function setFreeSpaceBytes($freeSpaceBytes)
+namespace Google\Service\MigrationCenterAPI {
+    class DiskPartitionDetails extends \Google\Model
     {
+        /**
+         * Output only. Total free space of all partitions.
+         *
+         * @var string
+         */
+        public $freeSpaceBytes;
+        protected $partitionsType = DiskPartitionList::class;
+        protected $partitionsDataType = '';
+        /**
+         * Output only. Total capacity of all partitions.
+         *
+         * @var string
+         */
+        public $totalCapacityBytes;
+        /**
+         * Output only. Total free space of all partitions.
+         *
+         * @param string $freeSpaceBytes
+         */
+        public function setFreeSpaceBytes($freeSpaceBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFreeSpaceBytes()
+        {
+        }
+        /**
+         * Optional. List of partitions.
+         *
+         * @param DiskPartitionList $partitions
+         */
+        public function setPartitions(DiskPartitionList $partitions)
+        {
+        }
+        /**
+         * @return DiskPartitionList
+         */
+        public function getPartitions()
+        {
+        }
+        /**
+         * Output only. Total capacity of all partitions.
+         *
+         * @param string $totalCapacityBytes
+         */
+        public function setTotalCapacityBytes($totalCapacityBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalCapacityBytes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\DiskPartitionDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFreeSpaceBytes()
-    {
-    }
-    /**
-     * Optional. List of partitions.
-     *
-     * @param DiskPartitionList $partitions
-     */
-    public function setPartitions(DiskPartitionList $partitions)
-    {
-    }
-    /**
-     * @return DiskPartitionList
-     */
-    public function getPartitions()
-    {
-    }
-    /**
-     * Output only. Total capacity of all partitions.
-     *
-     * @param string $totalCapacityBytes
-     */
-    public function setTotalCapacityBytes($totalCapacityBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalCapacityBytes()
+    class Google_Service_MigrationCenterAPI_DiskPartitionDetails extends \Google\Service\MigrationCenterAPI\DiskPartitionDetails
     {
     }
 }

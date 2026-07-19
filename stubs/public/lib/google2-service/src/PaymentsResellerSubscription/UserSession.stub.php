@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class UserSession extends \Google\Model
-{
-    /**
-     * Output only. The time at which the user session expires.
-     *
-     * @var string
-     */
-    public $expireTime;
-    /**
-     * Output only. The encrypted token of the user session, including the
-     * information of the user's intent and request. This token should be provided
-     * when redirecting the user to Google.
-     *
-     * @var string
-     */
-    public $token;
-    /**
-     * Output only. The time at which the user session expires.
-     *
-     * @param string $expireTime
-     */
-    public function setExpireTime($expireTime)
+namespace Google\Service\PaymentsResellerSubscription {
+    class UserSession extends \Google\Model
     {
+        /**
+         * Output only. The time at which the user session expires.
+         *
+         * @var string
+         */
+        public $expireTime;
+        /**
+         * Output only. The encrypted token of the user session, including the
+         * information of the user's intent and request. This token should be provided
+         * when redirecting the user to Google.
+         *
+         * @var string
+         */
+        public $token;
+        /**
+         * Output only. The time at which the user session expires.
+         *
+         * @param string $expireTime
+         */
+        public function setExpireTime($expireTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpireTime()
+        {
+        }
+        /**
+         * Output only. The encrypted token of the user session, including the
+         * information of the user's intent and request. This token should be provided
+         * when redirecting the user to Google.
+         *
+         * @param string $token
+         */
+        public function setToken($token)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\UserSession registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExpireTime()
-    {
-    }
-    /**
-     * Output only. The encrypted token of the user session, including the
-     * information of the user's intent and request. This token should be provided
-     * when redirecting the user to Google.
-     *
-     * @param string $token
-     */
-    public function setToken($token)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getToken()
+    class Google_Service_PaymentsResellerSubscription_UserSession extends \Google\Service\PaymentsResellerSubscription\UserSession
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ApiAuth extends \Google\Model
-{
-    protected $apiKeyConfigType = GoogleCloudAiplatformV1ApiAuthApiKeyConfig::class;
-    protected $apiKeyConfigDataType = '';
-    /**
-     * The API secret.
-     *
-     * @param GoogleCloudAiplatformV1ApiAuthApiKeyConfig $apiKeyConfig
-     */
-    public function setApiKeyConfig(GoogleCloudAiplatformV1ApiAuthApiKeyConfig $apiKeyConfig)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ApiAuth extends \Google\Model
     {
+        protected $apiKeyConfigType = GoogleCloudAiplatformV1ApiAuthApiKeyConfig::class;
+        protected $apiKeyConfigDataType = '';
+        /**
+         * The API secret.
+         *
+         * @param GoogleCloudAiplatformV1ApiAuthApiKeyConfig $apiKeyConfig
+         */
+        public function setApiKeyConfig(GoogleCloudAiplatformV1ApiAuthApiKeyConfig $apiKeyConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ApiAuthApiKeyConfig
+         */
+        public function getApiKeyConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1ApiAuthApiKeyConfig
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ApiAuth registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiKeyConfig()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ApiAuth extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ApiAuth
     {
     }
 }

@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class GrafeasV1SlsaProvenanceZeroTwoSlsaInvocation extends \Google\Model
-{
-    protected $configSourceType = GrafeasV1SlsaProvenanceZeroTwoSlsaConfigSource::class;
-    protected $configSourceDataType = '';
-    /**
-     * @var array[]
-     */
-    public $environment;
-    /**
-     * @var array[]
-     */
-    public $parameters;
-    /**
-     * @param GrafeasV1SlsaProvenanceZeroTwoSlsaConfigSource $configSource
-     */
-    public function setConfigSource(GrafeasV1SlsaProvenanceZeroTwoSlsaConfigSource $configSource)
+namespace Google\Service\ContainerAnalysis {
+    class GrafeasV1SlsaProvenanceZeroTwoSlsaInvocation extends \Google\Model
     {
+        protected $configSourceType = GrafeasV1SlsaProvenanceZeroTwoSlsaConfigSource::class;
+        protected $configSourceDataType = '';
+        /**
+         * @var array[]
+         */
+        public $environment;
+        /**
+         * @var array[]
+         */
+        public $parameters;
+        /**
+         * @param GrafeasV1SlsaProvenanceZeroTwoSlsaConfigSource $configSource
+         */
+        public function setConfigSource(GrafeasV1SlsaProvenanceZeroTwoSlsaConfigSource $configSource)
+        {
+        }
+        /**
+         * @return GrafeasV1SlsaProvenanceZeroTwoSlsaConfigSource
+         */
+        public function getConfigSource()
+        {
+        }
+        /**
+         * @param array[] $environment
+         */
+        public function setEnvironment($environment)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getEnvironment()
+        {
+        }
+        /**
+         * @param array[] $parameters
+         */
+        public function setParameters($parameters)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getParameters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GrafeasV1SlsaProvenanceZeroTwoSlsaConfigSource
+     * Runtime class alias of \Google\Service\ContainerAnalysis\GrafeasV1SlsaProvenanceZeroTwoSlsaInvocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfigSource()
-    {
-    }
-    /**
-     * @param array[] $environment
-     */
-    public function setEnvironment($environment)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getEnvironment()
-    {
-    }
-    /**
-     * @param array[] $parameters
-     */
-    public function setParameters($parameters)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getParameters()
+    class Google_Service_ContainerAnalysis_GrafeasV1SlsaProvenanceZeroTwoSlsaInvocation extends \Google\Service\ContainerAnalysis\GrafeasV1SlsaProvenanceZeroTwoSlsaInvocation
     {
     }
 }

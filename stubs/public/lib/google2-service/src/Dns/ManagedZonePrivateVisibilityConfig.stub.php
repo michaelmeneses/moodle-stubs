@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dns;
-
-class ManagedZonePrivateVisibilityConfig extends \Google\Collection
-{
-    protected $collection_key = 'networks';
-    protected $gkeClustersType = ManagedZonePrivateVisibilityConfigGKECluster::class;
-    protected $gkeClustersDataType = 'array';
-    /**
-     * @var string
-     */
-    public $kind;
-    protected $networksType = ManagedZonePrivateVisibilityConfigNetwork::class;
-    protected $networksDataType = 'array';
-    /**
-     * The list of Google Kubernetes Engine clusters that can see this zone.
-     *
-     * @param ManagedZonePrivateVisibilityConfigGKECluster[] $gkeClusters
-     */
-    public function setGkeClusters($gkeClusters)
+namespace Google\Service\Dns {
+    class ManagedZonePrivateVisibilityConfig extends \Google\Collection
     {
+        protected $collection_key = 'networks';
+        protected $gkeClustersType = ManagedZonePrivateVisibilityConfigGKECluster::class;
+        protected $gkeClustersDataType = 'array';
+        /**
+         * @var string
+         */
+        public $kind;
+        protected $networksType = ManagedZonePrivateVisibilityConfigNetwork::class;
+        protected $networksDataType = 'array';
+        /**
+         * The list of Google Kubernetes Engine clusters that can see this zone.
+         *
+         * @param ManagedZonePrivateVisibilityConfigGKECluster[] $gkeClusters
+         */
+        public function setGkeClusters($gkeClusters)
+        {
+        }
+        /**
+         * @return ManagedZonePrivateVisibilityConfigGKECluster[]
+         */
+        public function getGkeClusters()
+        {
+        }
+        /**
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The list of VPC networks that can see this zone.
+         *
+         * @param ManagedZonePrivateVisibilityConfigNetwork[] $networks
+         */
+        public function setNetworks($networks)
+        {
+        }
+        /**
+         * @return ManagedZonePrivateVisibilityConfigNetwork[]
+         */
+        public function getNetworks()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ManagedZonePrivateVisibilityConfigGKECluster[]
+     * Runtime class alias of \Google\Service\Dns\ManagedZonePrivateVisibilityConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGkeClusters()
-    {
-    }
-    /**
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The list of VPC networks that can see this zone.
-     *
-     * @param ManagedZonePrivateVisibilityConfigNetwork[] $networks
-     */
-    public function setNetworks($networks)
-    {
-    }
-    /**
-     * @return ManagedZonePrivateVisibilityConfigNetwork[]
-     */
-    public function getNetworks()
+    class Google_Service_Dns_ManagedZonePrivateVisibilityConfig extends \Google\Service\Dns\ManagedZonePrivateVisibilityConfig
     {
     }
 }

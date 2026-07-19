@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3DeployFlowRequest extends \Google\Model
-{
-    /**
-     * Required. The flow version to deploy. Format:
-     * `projects//locations//agents//flows//versions/`.
-     *
-     * @var string
-     */
-    public $flowVersion;
-    /**
-     * Required. The flow version to deploy. Format:
-     * `projects//locations//agents//flows//versions/`.
-     *
-     * @param string $flowVersion
-     */
-    public function setFlowVersion($flowVersion)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3DeployFlowRequest extends \Google\Model
     {
+        /**
+         * Required. The flow version to deploy. Format:
+         * `projects//locations//agents//flows//versions/`.
+         *
+         * @var string
+         */
+        public $flowVersion;
+        /**
+         * Required. The flow version to deploy. Format:
+         * `projects//locations//agents//flows//versions/`.
+         *
+         * @param string $flowVersion
+         */
+        public function setFlowVersion($flowVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFlowVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3DeployFlowRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFlowVersion()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3DeployFlowRequest extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3DeployFlowRequest
     {
     }
 }

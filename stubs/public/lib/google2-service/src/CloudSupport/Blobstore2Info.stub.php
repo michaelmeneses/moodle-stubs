@@ -21,128 +21,137 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSupport;
-
-class Blobstore2Info extends \Google\Model
-{
-    /**
-     * # gdata.* are outside protos with mising documentation
-     *
-     * @var string
-     */
-    public $blobGeneration;
-    /**
-     * # gdata.* are outside protos with mising documentation
-     *
-     * @var string
-     */
-    public $blobId;
-    /**
-     * # gdata.* are outside protos with mising documentation
-     *
-     * @var string
-     */
-    public $downloadExternalReadToken;
-    /**
-     * # gdata.* are outside protos with mising documentation
-     *
-     * @var string
-     */
-    public $downloadReadHandle;
-    /**
-     * # gdata.* are outside protos with mising documentation
-     *
-     * @var string
-     */
-    public $readToken;
-    /**
-     * # gdata.* are outside protos with mising documentation
-     *
-     * @var string
-     */
-    public $uploadMetadataContainer;
-    /**
-     * # gdata.* are outside protos with mising documentation
-     *
-     * @param string $blobGeneration
-     */
-    public function setBlobGeneration($blobGeneration)
+namespace Google\Service\CloudSupport {
+    class Blobstore2Info extends \Google\Model
     {
+        /**
+         * # gdata.* are outside protos with mising documentation
+         *
+         * @var string
+         */
+        public $blobGeneration;
+        /**
+         * # gdata.* are outside protos with mising documentation
+         *
+         * @var string
+         */
+        public $blobId;
+        /**
+         * # gdata.* are outside protos with mising documentation
+         *
+         * @var string
+         */
+        public $downloadExternalReadToken;
+        /**
+         * # gdata.* are outside protos with mising documentation
+         *
+         * @var string
+         */
+        public $downloadReadHandle;
+        /**
+         * # gdata.* are outside protos with mising documentation
+         *
+         * @var string
+         */
+        public $readToken;
+        /**
+         * # gdata.* are outside protos with mising documentation
+         *
+         * @var string
+         */
+        public $uploadMetadataContainer;
+        /**
+         * # gdata.* are outside protos with mising documentation
+         *
+         * @param string $blobGeneration
+         */
+        public function setBlobGeneration($blobGeneration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBlobGeneration()
+        {
+        }
+        /**
+         * # gdata.* are outside protos with mising documentation
+         *
+         * @param string $blobId
+         */
+        public function setBlobId($blobId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBlobId()
+        {
+        }
+        /**
+         * # gdata.* are outside protos with mising documentation
+         *
+         * @param string $downloadExternalReadToken
+         */
+        public function setDownloadExternalReadToken($downloadExternalReadToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDownloadExternalReadToken()
+        {
+        }
+        /**
+         * # gdata.* are outside protos with mising documentation
+         *
+         * @param string $downloadReadHandle
+         */
+        public function setDownloadReadHandle($downloadReadHandle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDownloadReadHandle()
+        {
+        }
+        /**
+         * # gdata.* are outside protos with mising documentation
+         *
+         * @param string $readToken
+         */
+        public function setReadToken($readToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReadToken()
+        {
+        }
+        /**
+         * # gdata.* are outside protos with mising documentation
+         *
+         * @param string $uploadMetadataContainer
+         */
+        public function setUploadMetadataContainer($uploadMetadataContainer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUploadMetadataContainer()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSupport\Blobstore2Info registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlobGeneration()
-    {
-    }
-    /**
-     * # gdata.* are outside protos with mising documentation
-     *
-     * @param string $blobId
-     */
-    public function setBlobId($blobId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBlobId()
-    {
-    }
-    /**
-     * # gdata.* are outside protos with mising documentation
-     *
-     * @param string $downloadExternalReadToken
-     */
-    public function setDownloadExternalReadToken($downloadExternalReadToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDownloadExternalReadToken()
-    {
-    }
-    /**
-     * # gdata.* are outside protos with mising documentation
-     *
-     * @param string $downloadReadHandle
-     */
-    public function setDownloadReadHandle($downloadReadHandle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDownloadReadHandle()
-    {
-    }
-    /**
-     * # gdata.* are outside protos with mising documentation
-     *
-     * @param string $readToken
-     */
-    public function setReadToken($readToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReadToken()
-    {
-    }
-    /**
-     * # gdata.* are outside protos with mising documentation
-     *
-     * @param string $uploadMetadataContainer
-     */
-    public function setUploadMetadataContainer($uploadMetadataContainer)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUploadMetadataContainer()
+    class Google_Service_CloudSupport_Blobstore2Info extends \Google\Service\CloudSupport\Blobstore2Info
     {
     }
 }

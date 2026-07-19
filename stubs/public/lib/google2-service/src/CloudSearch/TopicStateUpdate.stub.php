@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class TopicStateUpdate extends \Google\Model
-{
-    protected $topicStateType = TopicState::class;
-    protected $topicStateDataType = '';
-    /**
-     * @param TopicState
-     */
-    public function setTopicState(TopicState $topicState)
+namespace Google\Service\CloudSearch {
+    class TopicStateUpdate extends \Google\Model
     {
+        protected $topicStateType = TopicState::class;
+        protected $topicStateDataType = '';
+        /**
+         * @param TopicState
+         */
+        public function setTopicState(TopicState $topicState)
+        {
+        }
+        /**
+         * @return TopicState
+         */
+        public function getTopicState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TopicState
+     * Runtime class alias of \Google\Service\CloudSearch\TopicStateUpdate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTopicState()
+    class Google_Service_CloudSearch_TopicStateUpdate extends \Google\Service\CloudSearch\TopicStateUpdate
     {
     }
 }

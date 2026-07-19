@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedCardCardHeader extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $imageAltText;
-    /**
-     * @var string
-     */
-    public $imageType;
-    /**
-     * @var string
-     */
-    public $imageUrl;
-    /**
-     * @var string
-     */
-    public $subtitle;
-    /**
-     * @var string
-     */
-    public $title;
-    /**
-     * @param string
-     */
-    public function setImageAltText($imageAltText)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedCardCardHeader extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $imageAltText;
+        /**
+         * @var string
+         */
+        public $imageType;
+        /**
+         * @var string
+         */
+        public $imageUrl;
+        /**
+         * @var string
+         */
+        public $subtitle;
+        /**
+         * @var string
+         */
+        public $title;
+        /**
+         * @param string
+         */
+        public function setImageAltText($imageAltText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageAltText()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setImageType($imageType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setImageUrl($imageUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageUrl()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSubtitle($subtitle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubtitle()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedCardCardHeader registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImageAltText()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setImageType($imageType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImageType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setImageUrl($imageUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImageUrl()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSubtitle($subtitle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubtitle()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_CloudSearch_AppsDynamiteSharedCardCardHeader extends \Google\Service\CloudSearch\AppsDynamiteSharedCardCardHeader
     {
     }
 }

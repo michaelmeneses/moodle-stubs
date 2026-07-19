@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudVideoIntelligence;
-
-class GoogleCloudVideointelligenceV1FaceDetectionConfig extends \Google\Model
-{
-    /**
-     * Whether to enable face attributes detection, such as glasses, dark_glasses,
-     * mouth_open etc. Ignored if 'include_bounding_boxes' is set to false.
-     *
-     * @var bool
-     */
-    public $includeAttributes;
-    /**
-     * Whether bounding boxes are included in the face annotation output.
-     *
-     * @var bool
-     */
-    public $includeBoundingBoxes;
-    /**
-     * Model to use for face detection. Supported values: "builtin/stable" (the
-     * default if unset) and "builtin/latest".
-     *
-     * @var string
-     */
-    public $model;
-    /**
-     * Whether to enable face attributes detection, such as glasses, dark_glasses,
-     * mouth_open etc. Ignored if 'include_bounding_boxes' is set to false.
-     *
-     * @param bool $includeAttributes
-     */
-    public function setIncludeAttributes($includeAttributes)
+namespace Google\Service\CloudVideoIntelligence {
+    class GoogleCloudVideointelligenceV1FaceDetectionConfig extends \Google\Model
     {
+        /**
+         * Whether to enable face attributes detection, such as glasses, dark_glasses,
+         * mouth_open etc. Ignored if 'include_bounding_boxes' is set to false.
+         *
+         * @var bool
+         */
+        public $includeAttributes;
+        /**
+         * Whether bounding boxes are included in the face annotation output.
+         *
+         * @var bool
+         */
+        public $includeBoundingBoxes;
+        /**
+         * Model to use for face detection. Supported values: "builtin/stable" (the
+         * default if unset) and "builtin/latest".
+         *
+         * @var string
+         */
+        public $model;
+        /**
+         * Whether to enable face attributes detection, such as glasses, dark_glasses,
+         * mouth_open etc. Ignored if 'include_bounding_boxes' is set to false.
+         *
+         * @param bool $includeAttributes
+         */
+        public function setIncludeAttributes($includeAttributes)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIncludeAttributes()
+        {
+        }
+        /**
+         * Whether bounding boxes are included in the face annotation output.
+         *
+         * @param bool $includeBoundingBoxes
+         */
+        public function setIncludeBoundingBoxes($includeBoundingBoxes)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIncludeBoundingBoxes()
+        {
+        }
+        /**
+         * Model to use for face detection. Supported values: "builtin/stable" (the
+         * default if unset) and "builtin/latest".
+         *
+         * @param string $model
+         */
+        public function setModel($model)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1FaceDetectionConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIncludeAttributes()
-    {
-    }
-    /**
-     * Whether bounding boxes are included in the face annotation output.
-     *
-     * @param bool $includeBoundingBoxes
-     */
-    public function setIncludeBoundingBoxes($includeBoundingBoxes)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIncludeBoundingBoxes()
-    {
-    }
-    /**
-     * Model to use for face detection. Supported values: "builtin/stable" (the
-     * default if unset) and "builtin/latest".
-     *
-     * @param string $model
-     */
-    public function setModel($model)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getModel()
+    class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1FaceDetectionConfig extends \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1FaceDetectionConfig
     {
     }
 }

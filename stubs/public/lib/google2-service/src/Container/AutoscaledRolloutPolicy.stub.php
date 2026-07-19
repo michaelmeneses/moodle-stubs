@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class AutoscaledRolloutPolicy extends \Google\Model
-{
-    /**
-     * Optional. Time to wait after cordoning the blue pool before draining the
-     * nodes. Defaults to 3 days. The value can be set between 0 and 7 days,
-     * inclusive.
-     *
-     * @var string
-     */
-    public $waitForDrainDuration;
-    /**
-     * Optional. Time to wait after cordoning the blue pool before draining the
-     * nodes. Defaults to 3 days. The value can be set between 0 and 7 days,
-     * inclusive.
-     *
-     * @param string $waitForDrainDuration
-     */
-    public function setWaitForDrainDuration($waitForDrainDuration)
+namespace Google\Service\Container {
+    class AutoscaledRolloutPolicy extends \Google\Model
     {
+        /**
+         * Optional. Time to wait after cordoning the blue pool before draining the
+         * nodes. Defaults to 3 days. The value can be set between 0 and 7 days,
+         * inclusive.
+         *
+         * @var string
+         */
+        public $waitForDrainDuration;
+        /**
+         * Optional. Time to wait after cordoning the blue pool before draining the
+         * nodes. Defaults to 3 days. The value can be set between 0 and 7 days,
+         * inclusive.
+         *
+         * @param string $waitForDrainDuration
+         */
+        public function setWaitForDrainDuration($waitForDrainDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWaitForDrainDuration()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Container\AutoscaledRolloutPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getWaitForDrainDuration()
+    class Google_Service_Container_AutoscaledRolloutPolicy extends \Google\Service\Container\AutoscaledRolloutPolicy
     {
     }
 }

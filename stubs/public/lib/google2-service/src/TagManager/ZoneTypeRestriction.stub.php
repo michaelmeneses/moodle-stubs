@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class ZoneTypeRestriction extends \Google\Collection
-{
-    protected $collection_key = 'whitelistedTypeId';
-    /**
-     * True if type restrictions have been enabled for this Zone.
-     *
-     * @var bool
-     */
-    public $enable;
-    /**
-     * List of type public ids that have been whitelisted for use in this Zone.
-     *
-     * @var string[]
-     */
-    public $whitelistedTypeId;
-    /**
-     * True if type restrictions have been enabled for this Zone.
-     *
-     * @param bool $enable
-     */
-    public function setEnable($enable)
+namespace Google\Service\TagManager {
+    class ZoneTypeRestriction extends \Google\Collection
     {
+        protected $collection_key = 'whitelistedTypeId';
+        /**
+         * True if type restrictions have been enabled for this Zone.
+         *
+         * @var bool
+         */
+        public $enable;
+        /**
+         * List of type public ids that have been whitelisted for use in this Zone.
+         *
+         * @var string[]
+         */
+        public $whitelistedTypeId;
+        /**
+         * True if type restrictions have been enabled for this Zone.
+         *
+         * @param bool $enable
+         */
+        public function setEnable($enable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnable()
+        {
+        }
+        /**
+         * List of type public ids that have been whitelisted for use in this Zone.
+         *
+         * @param string[] $whitelistedTypeId
+         */
+        public function setWhitelistedTypeId($whitelistedTypeId)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getWhitelistedTypeId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\TagManager\ZoneTypeRestriction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnable()
-    {
-    }
-    /**
-     * List of type public ids that have been whitelisted for use in this Zone.
-     *
-     * @param string[] $whitelistedTypeId
-     */
-    public function setWhitelistedTypeId($whitelistedTypeId)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getWhitelistedTypeId()
+    class Google_Service_TagManager_ZoneTypeRestriction extends \Google\Service\TagManager\ZoneTypeRestriction
     {
     }
 }

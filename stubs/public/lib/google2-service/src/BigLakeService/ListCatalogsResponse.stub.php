@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigLakeService;
-
-class ListCatalogsResponse extends \Google\Collection
-{
-    protected $collection_key = 'catalogs';
-    protected $catalogsType = Catalog::class;
-    protected $catalogsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The catalogs from the specified project.
-     *
-     * @param Catalog[] $catalogs
-     */
-    public function setCatalogs($catalogs)
+namespace Google\Service\BigLakeService {
+    class ListCatalogsResponse extends \Google\Collection
     {
+        protected $collection_key = 'catalogs';
+        protected $catalogsType = Catalog::class;
+        protected $catalogsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The catalogs from the specified project.
+         *
+         * @param Catalog[] $catalogs
+         */
+        public function setCatalogs($catalogs)
+        {
+        }
+        /**
+         * @return Catalog[]
+         */
+        public function getCatalogs()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Catalog[]
+     * Runtime class alias of \Google\Service\BigLakeService\ListCatalogsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCatalogs()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_BigLakeService_ListCatalogsResponse extends \Google\Service\BigLakeService\ListCatalogsResponse
     {
     }
 }

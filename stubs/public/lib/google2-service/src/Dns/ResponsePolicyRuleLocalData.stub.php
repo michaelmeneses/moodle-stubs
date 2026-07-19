@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dns;
-
-class ResponsePolicyRuleLocalData extends \Google\Collection
-{
-    protected $collection_key = 'localDatas';
-    protected $localDatasType = ResourceRecordSet::class;
-    protected $localDatasDataType = 'array';
-    /**
-     * All resource record sets for this selector, one per resource record type.
-     * The name must match the dns_name.
-     *
-     * @param ResourceRecordSet[] $localDatas
-     */
-    public function setLocalDatas($localDatas)
+namespace Google\Service\Dns {
+    class ResponsePolicyRuleLocalData extends \Google\Collection
     {
+        protected $collection_key = 'localDatas';
+        protected $localDatasType = ResourceRecordSet::class;
+        protected $localDatasDataType = 'array';
+        /**
+         * All resource record sets for this selector, one per resource record type.
+         * The name must match the dns_name.
+         *
+         * @param ResourceRecordSet[] $localDatas
+         */
+        public function setLocalDatas($localDatas)
+        {
+        }
+        /**
+         * @return ResourceRecordSet[]
+         */
+        public function getLocalDatas()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ResourceRecordSet[]
+     * Runtime class alias of \Google\Service\Dns\ResponsePolicyRuleLocalData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocalDatas()
+    class Google_Service_Dns_ResponsePolicyRuleLocalData extends \Google\Service\Dns\ResponsePolicyRuleLocalData
     {
     }
 }

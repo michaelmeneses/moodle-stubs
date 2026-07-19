@@ -21,220 +21,229 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Translate;
-
-class Model extends \Google\Model
-{
-    /**
-     * Output only. Timestamp when the model resource was created, which is also
-     * when the training started.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * The dataset from which the model is trained, in form of `projects/{project-
-     * number-or-id}/locations/{location_id}/datasets/{dataset_id}`
-     *
-     * @var string
-     */
-    public $dataset;
-    /**
-     * The name of the model to show in the interface. The name can be up to 32
-     * characters long and can consist only of ASCII Latin letters A-Z and a-z,
-     * underscores (_), and ASCII digits 0-9.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The resource name of the model, in form of `projects/{project-number-or-
-     * id}/locations/{location_id}/models/{model_id}`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The BCP-47 language code of the source language.
-     *
-     * @var string
-     */
-    public $sourceLanguageCode;
-    /**
-     * Output only. The BCP-47 language code of the target language.
-     *
-     * @var string
-     */
-    public $targetLanguageCode;
-    /**
-     * Output only. Number of examples (sentence pairs) used to test the model.
-     *
-     * @var int
-     */
-    public $testExampleCount;
-    /**
-     * Output only. Number of examples (sentence pairs) used to train the model.
-     *
-     * @var int
-     */
-    public $trainExampleCount;
-    /**
-     * Output only. Timestamp when this model was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. Number of examples (sentence pairs) used to validate the
-     * model.
-     *
-     * @var int
-     */
-    public $validateExampleCount;
-    /**
-     * Output only. Timestamp when the model resource was created, which is also
-     * when the training started.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Translate {
+    class Model extends \Google\Model
     {
+        /**
+         * Output only. Timestamp when the model resource was created, which is also
+         * when the training started.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * The dataset from which the model is trained, in form of `projects/{project-
+         * number-or-id}/locations/{location_id}/datasets/{dataset_id}`
+         *
+         * @var string
+         */
+        public $dataset;
+        /**
+         * The name of the model to show in the interface. The name can be up to 32
+         * characters long and can consist only of ASCII Latin letters A-Z and a-z,
+         * underscores (_), and ASCII digits 0-9.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The resource name of the model, in form of `projects/{project-number-or-
+         * id}/locations/{location_id}/models/{model_id}`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The BCP-47 language code of the source language.
+         *
+         * @var string
+         */
+        public $sourceLanguageCode;
+        /**
+         * Output only. The BCP-47 language code of the target language.
+         *
+         * @var string
+         */
+        public $targetLanguageCode;
+        /**
+         * Output only. Number of examples (sentence pairs) used to test the model.
+         *
+         * @var int
+         */
+        public $testExampleCount;
+        /**
+         * Output only. Number of examples (sentence pairs) used to train the model.
+         *
+         * @var int
+         */
+        public $trainExampleCount;
+        /**
+         * Output only. Timestamp when this model was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. Number of examples (sentence pairs) used to validate the
+         * model.
+         *
+         * @var int
+         */
+        public $validateExampleCount;
+        /**
+         * Output only. Timestamp when the model resource was created, which is also
+         * when the training started.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The dataset from which the model is trained, in form of `projects/{project-
+         * number-or-id}/locations/{location_id}/datasets/{dataset_id}`
+         *
+         * @param string $dataset
+         */
+        public function setDataset($dataset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataset()
+        {
+        }
+        /**
+         * The name of the model to show in the interface. The name can be up to 32
+         * characters long and can consist only of ASCII Latin letters A-Z and a-z,
+         * underscores (_), and ASCII digits 0-9.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The resource name of the model, in form of `projects/{project-number-or-
+         * id}/locations/{location_id}/models/{model_id}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The BCP-47 language code of the source language.
+         *
+         * @param string $sourceLanguageCode
+         */
+        public function setSourceLanguageCode($sourceLanguageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceLanguageCode()
+        {
+        }
+        /**
+         * Output only. The BCP-47 language code of the target language.
+         *
+         * @param string $targetLanguageCode
+         */
+        public function setTargetLanguageCode($targetLanguageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetLanguageCode()
+        {
+        }
+        /**
+         * Output only. Number of examples (sentence pairs) used to test the model.
+         *
+         * @param int $testExampleCount
+         */
+        public function setTestExampleCount($testExampleCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTestExampleCount()
+        {
+        }
+        /**
+         * Output only. Number of examples (sentence pairs) used to train the model.
+         *
+         * @param int $trainExampleCount
+         */
+        public function setTrainExampleCount($trainExampleCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTrainExampleCount()
+        {
+        }
+        /**
+         * Output only. Timestamp when this model was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * Output only. Number of examples (sentence pairs) used to validate the
+         * model.
+         *
+         * @param int $validateExampleCount
+         */
+        public function setValidateExampleCount($validateExampleCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getValidateExampleCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Translate\Model registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The dataset from which the model is trained, in form of `projects/{project-
-     * number-or-id}/locations/{location_id}/datasets/{dataset_id}`
-     *
-     * @param string $dataset
-     */
-    public function setDataset($dataset)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDataset()
-    {
-    }
-    /**
-     * The name of the model to show in the interface. The name can be up to 32
-     * characters long and can consist only of ASCII Latin letters A-Z and a-z,
-     * underscores (_), and ASCII digits 0-9.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The resource name of the model, in form of `projects/{project-number-or-
-     * id}/locations/{location_id}/models/{model_id}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The BCP-47 language code of the source language.
-     *
-     * @param string $sourceLanguageCode
-     */
-    public function setSourceLanguageCode($sourceLanguageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceLanguageCode()
-    {
-    }
-    /**
-     * Output only. The BCP-47 language code of the target language.
-     *
-     * @param string $targetLanguageCode
-     */
-    public function setTargetLanguageCode($targetLanguageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetLanguageCode()
-    {
-    }
-    /**
-     * Output only. Number of examples (sentence pairs) used to test the model.
-     *
-     * @param int $testExampleCount
-     */
-    public function setTestExampleCount($testExampleCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTestExampleCount()
-    {
-    }
-    /**
-     * Output only. Number of examples (sentence pairs) used to train the model.
-     *
-     * @param int $trainExampleCount
-     */
-    public function setTrainExampleCount($trainExampleCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTrainExampleCount()
-    {
-    }
-    /**
-     * Output only. Timestamp when this model was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
-    {
-    }
-    /**
-     * Output only. Number of examples (sentence pairs) used to validate the
-     * model.
-     *
-     * @param int $validateExampleCount
-     */
-    public function setValidateExampleCount($validateExampleCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getValidateExampleCount()
+    class Google_Service_Translate_Model extends \Google\Service\Translate\Model
     {
     }
 }

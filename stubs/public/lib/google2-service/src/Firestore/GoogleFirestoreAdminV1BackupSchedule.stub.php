@@ -21,136 +21,145 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class GoogleFirestoreAdminV1BackupSchedule extends \Google\Model
-{
-    /**
-     * Output only. The timestamp at which this backup schedule was created and
-     * effective since. No backups will be created for this schedule before this
-     * time.
-     *
-     * @var string
-     */
-    public $createTime;
-    protected $dailyRecurrenceType = GoogleFirestoreAdminV1DailyRecurrence::class;
-    protected $dailyRecurrenceDataType = '';
-    /**
-     * Output only. The unique backup schedule identifier across all locations and
-     * databases for the given project. This will be auto-assigned. Format is
-     * `projects/{project}/databases/{database}/backupSchedules/{backup_schedule}`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * At what relative time in the future, compared to its creation time, the
-     * backup should be deleted, e.g. keep backups for 7 days. The maximum
-     * supported retention period is 14 weeks.
-     *
-     * @var string
-     */
-    public $retention;
-    /**
-     * Output only. The timestamp at which this backup schedule was most recently
-     * updated. When a backup schedule is first created, this is the same as
-     * create_time.
-     *
-     * @var string
-     */
-    public $updateTime;
-    protected $weeklyRecurrenceType = GoogleFirestoreAdminV1WeeklyRecurrence::class;
-    protected $weeklyRecurrenceDataType = '';
-    /**
-     * Output only. The timestamp at which this backup schedule was created and
-     * effective since. No backups will be created for this schedule before this
-     * time.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Firestore {
+    class GoogleFirestoreAdminV1BackupSchedule extends \Google\Model
     {
+        /**
+         * Output only. The timestamp at which this backup schedule was created and
+         * effective since. No backups will be created for this schedule before this
+         * time.
+         *
+         * @var string
+         */
+        public $createTime;
+        protected $dailyRecurrenceType = GoogleFirestoreAdminV1DailyRecurrence::class;
+        protected $dailyRecurrenceDataType = '';
+        /**
+         * Output only. The unique backup schedule identifier across all locations and
+         * databases for the given project. This will be auto-assigned. Format is
+         * `projects/{project}/databases/{database}/backupSchedules/{backup_schedule}`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * At what relative time in the future, compared to its creation time, the
+         * backup should be deleted, e.g. keep backups for 7 days. The maximum
+         * supported retention period is 14 weeks.
+         *
+         * @var string
+         */
+        public $retention;
+        /**
+         * Output only. The timestamp at which this backup schedule was most recently
+         * updated. When a backup schedule is first created, this is the same as
+         * create_time.
+         *
+         * @var string
+         */
+        public $updateTime;
+        protected $weeklyRecurrenceType = GoogleFirestoreAdminV1WeeklyRecurrence::class;
+        protected $weeklyRecurrenceDataType = '';
+        /**
+         * Output only. The timestamp at which this backup schedule was created and
+         * effective since. No backups will be created for this schedule before this
+         * time.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * For a schedule that runs daily.
+         *
+         * @param GoogleFirestoreAdminV1DailyRecurrence $dailyRecurrence
+         */
+        public function setDailyRecurrence(GoogleFirestoreAdminV1DailyRecurrence $dailyRecurrence)
+        {
+        }
+        /**
+         * @return GoogleFirestoreAdminV1DailyRecurrence
+         */
+        public function getDailyRecurrence()
+        {
+        }
+        /**
+         * Output only. The unique backup schedule identifier across all locations and
+         * databases for the given project. This will be auto-assigned. Format is
+         * `projects/{project}/databases/{database}/backupSchedules/{backup_schedule}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * At what relative time in the future, compared to its creation time, the
+         * backup should be deleted, e.g. keep backups for 7 days. The maximum
+         * supported retention period is 14 weeks.
+         *
+         * @param string $retention
+         */
+        public function setRetention($retention)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRetention()
+        {
+        }
+        /**
+         * Output only. The timestamp at which this backup schedule was most recently
+         * updated. When a backup schedule is first created, this is the same as
+         * create_time.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * For a schedule that runs weekly on a specific day.
+         *
+         * @param GoogleFirestoreAdminV1WeeklyRecurrence $weeklyRecurrence
+         */
+        public function setWeeklyRecurrence(GoogleFirestoreAdminV1WeeklyRecurrence $weeklyRecurrence)
+        {
+        }
+        /**
+         * @return GoogleFirestoreAdminV1WeeklyRecurrence
+         */
+        public function getWeeklyRecurrence()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Firestore\GoogleFirestoreAdminV1BackupSchedule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * For a schedule that runs daily.
-     *
-     * @param GoogleFirestoreAdminV1DailyRecurrence $dailyRecurrence
-     */
-    public function setDailyRecurrence(GoogleFirestoreAdminV1DailyRecurrence $dailyRecurrence)
-    {
-    }
-    /**
-     * @return GoogleFirestoreAdminV1DailyRecurrence
-     */
-    public function getDailyRecurrence()
-    {
-    }
-    /**
-     * Output only. The unique backup schedule identifier across all locations and
-     * databases for the given project. This will be auto-assigned. Format is
-     * `projects/{project}/databases/{database}/backupSchedules/{backup_schedule}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * At what relative time in the future, compared to its creation time, the
-     * backup should be deleted, e.g. keep backups for 7 days. The maximum
-     * supported retention period is 14 weeks.
-     *
-     * @param string $retention
-     */
-    public function setRetention($retention)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRetention()
-    {
-    }
-    /**
-     * Output only. The timestamp at which this backup schedule was most recently
-     * updated. When a backup schedule is first created, this is the same as
-     * create_time.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
-    {
-    }
-    /**
-     * For a schedule that runs weekly on a specific day.
-     *
-     * @param GoogleFirestoreAdminV1WeeklyRecurrence $weeklyRecurrence
-     */
-    public function setWeeklyRecurrence(GoogleFirestoreAdminV1WeeklyRecurrence $weeklyRecurrence)
-    {
-    }
-    /**
-     * @return GoogleFirestoreAdminV1WeeklyRecurrence
-     */
-    public function getWeeklyRecurrence()
+    class Google_Service_Firestore_GoogleFirestoreAdminV1BackupSchedule extends \Google\Service\Firestore\GoogleFirestoreAdminV1BackupSchedule
     {
     }
 }

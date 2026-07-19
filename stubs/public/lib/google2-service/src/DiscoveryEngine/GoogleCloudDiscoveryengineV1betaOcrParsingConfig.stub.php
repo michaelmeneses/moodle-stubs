@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaOcrParsingConfig extends \Google\Collection
-{
-    protected $collection_key = 'enhancedDocumentElements';
-    /**
-     * @var string[]
-     */
-    public $enhancedDocumentElements;
-    /**
-     * @var bool
-     */
-    public $useNativeText;
-    /**
-     * @param string[]
-     */
-    public function setEnhancedDocumentElements($enhancedDocumentElements)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaOcrParsingConfig extends \Google\Collection
     {
+        protected $collection_key = 'enhancedDocumentElements';
+        /**
+         * @var string[]
+         */
+        public $enhancedDocumentElements;
+        /**
+         * @var bool
+         */
+        public $useNativeText;
+        /**
+         * @param string[]
+         */
+        public function setEnhancedDocumentElements($enhancedDocumentElements)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEnhancedDocumentElements()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setUseNativeText($useNativeText)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUseNativeText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaOcrParsingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnhancedDocumentElements()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setUseNativeText($useNativeText)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUseNativeText()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaOcrParsingConfig extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaOcrParsingConfig
     {
     }
 }

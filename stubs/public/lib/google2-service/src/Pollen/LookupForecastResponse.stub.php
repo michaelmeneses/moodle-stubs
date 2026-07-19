@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Pollen;
-
-class LookupForecastResponse extends \Google\Collection
-{
-    protected $collection_key = 'dailyInfo';
-    protected $dailyInfoType = DayInfo::class;
-    protected $dailyInfoDataType = 'array';
-    /**
-     * Optional. The token to retrieve the next page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The ISO_3166-1 alpha-2 code of the country/region corresponding to the
-     * location provided in the request. This field might be omitted from the
-     * response if the location provided in the request resides in a disputed
-     * territory.
-     *
-     * @var string
-     */
-    public $regionCode;
-    /**
-     * Required. This object contains the daily forecast information for each day
-     * requested.
-     *
-     * @param DayInfo[] $dailyInfo
-     */
-    public function setDailyInfo($dailyInfo)
+namespace Google\Service\Pollen {
+    class LookupForecastResponse extends \Google\Collection
     {
+        protected $collection_key = 'dailyInfo';
+        protected $dailyInfoType = DayInfo::class;
+        protected $dailyInfoDataType = 'array';
+        /**
+         * Optional. The token to retrieve the next page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The ISO_3166-1 alpha-2 code of the country/region corresponding to the
+         * location provided in the request. This field might be omitted from the
+         * response if the location provided in the request resides in a disputed
+         * territory.
+         *
+         * @var string
+         */
+        public $regionCode;
+        /**
+         * Required. This object contains the daily forecast information for each day
+         * requested.
+         *
+         * @param DayInfo[] $dailyInfo
+         */
+        public function setDailyInfo($dailyInfo)
+        {
+        }
+        /**
+         * @return DayInfo[]
+         */
+        public function getDailyInfo()
+        {
+        }
+        /**
+         * Optional. The token to retrieve the next page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The ISO_3166-1 alpha-2 code of the country/region corresponding to the
+         * location provided in the request. This field might be omitted from the
+         * response if the location provided in the request resides in a disputed
+         * territory.
+         *
+         * @param string $regionCode
+         */
+        public function setRegionCode($regionCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegionCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DayInfo[]
+     * Runtime class alias of \Google\Service\Pollen\LookupForecastResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDailyInfo()
-    {
-    }
-    /**
-     * Optional. The token to retrieve the next page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The ISO_3166-1 alpha-2 code of the country/region corresponding to the
-     * location provided in the request. This field might be omitted from the
-     * response if the location provided in the request resides in a disputed
-     * territory.
-     *
-     * @param string $regionCode
-     */
-    public function setRegionCode($regionCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegionCode()
+    class Google_Service_Pollen_LookupForecastResponse extends \Google\Service\Pollen\LookupForecastResponse
     {
     }
 }

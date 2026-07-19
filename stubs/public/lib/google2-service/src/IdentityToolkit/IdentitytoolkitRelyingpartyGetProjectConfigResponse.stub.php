@@ -21,225 +21,234 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\IdentityToolkit;
-
-class IdentitytoolkitRelyingpartyGetProjectConfigResponse extends \Google\Collection
-{
-    protected $collection_key = 'idpConfig';
-    /**
-     * Whether to allow password user sign in or sign up.
-     *
-     * @var bool
-     */
-    public $allowPasswordUser;
-    /**
-     * Browser API key, needed when making http request to Apiary.
-     *
-     * @var string
-     */
-    public $apiKey;
-    /**
-     * Authorized domains.
-     *
-     * @var string[]
-     */
-    public $authorizedDomains;
-    protected $changeEmailTemplateType = EmailTemplate::class;
-    protected $changeEmailTemplateDataType = '';
-    /**
-     * @var string
-     */
-    public $dynamicLinksDomain;
-    /**
-     * Whether anonymous user is enabled.
-     *
-     * @var bool
-     */
-    public $enableAnonymousUser;
-    protected $idpConfigType = IdpConfig::class;
-    protected $idpConfigDataType = 'array';
-    protected $legacyResetPasswordTemplateType = EmailTemplate::class;
-    protected $legacyResetPasswordTemplateDataType = '';
-    /**
-     * Project ID of the relying party.
-     *
-     * @var string
-     */
-    public $projectId;
-    protected $resetPasswordTemplateType = EmailTemplate::class;
-    protected $resetPasswordTemplateDataType = '';
-    /**
-     * Whether to use email sending provided by Firebear.
-     *
-     * @var bool
-     */
-    public $useEmailSending;
-    protected $verifyEmailTemplateType = EmailTemplate::class;
-    protected $verifyEmailTemplateDataType = '';
-    /**
-     * Whether to allow password user sign in or sign up.
-     *
-     * @param bool $allowPasswordUser
-     */
-    public function setAllowPasswordUser($allowPasswordUser)
+namespace Google\Service\IdentityToolkit {
+    class IdentitytoolkitRelyingpartyGetProjectConfigResponse extends \Google\Collection
     {
+        protected $collection_key = 'idpConfig';
+        /**
+         * Whether to allow password user sign in or sign up.
+         *
+         * @var bool
+         */
+        public $allowPasswordUser;
+        /**
+         * Browser API key, needed when making http request to Apiary.
+         *
+         * @var string
+         */
+        public $apiKey;
+        /**
+         * Authorized domains.
+         *
+         * @var string[]
+         */
+        public $authorizedDomains;
+        protected $changeEmailTemplateType = EmailTemplate::class;
+        protected $changeEmailTemplateDataType = '';
+        /**
+         * @var string
+         */
+        public $dynamicLinksDomain;
+        /**
+         * Whether anonymous user is enabled.
+         *
+         * @var bool
+         */
+        public $enableAnonymousUser;
+        protected $idpConfigType = IdpConfig::class;
+        protected $idpConfigDataType = 'array';
+        protected $legacyResetPasswordTemplateType = EmailTemplate::class;
+        protected $legacyResetPasswordTemplateDataType = '';
+        /**
+         * Project ID of the relying party.
+         *
+         * @var string
+         */
+        public $projectId;
+        protected $resetPasswordTemplateType = EmailTemplate::class;
+        protected $resetPasswordTemplateDataType = '';
+        /**
+         * Whether to use email sending provided by Firebear.
+         *
+         * @var bool
+         */
+        public $useEmailSending;
+        protected $verifyEmailTemplateType = EmailTemplate::class;
+        protected $verifyEmailTemplateDataType = '';
+        /**
+         * Whether to allow password user sign in or sign up.
+         *
+         * @param bool $allowPasswordUser
+         */
+        public function setAllowPasswordUser($allowPasswordUser)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowPasswordUser()
+        {
+        }
+        /**
+         * Browser API key, needed when making http request to Apiary.
+         *
+         * @param string $apiKey
+         */
+        public function setApiKey($apiKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApiKey()
+        {
+        }
+        /**
+         * Authorized domains.
+         *
+         * @param string[] $authorizedDomains
+         */
+        public function setAuthorizedDomains($authorizedDomains)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAuthorizedDomains()
+        {
+        }
+        /**
+         * Change email template.
+         *
+         * @param EmailTemplate $changeEmailTemplate
+         */
+        public function setChangeEmailTemplate(EmailTemplate $changeEmailTemplate)
+        {
+        }
+        /**
+         * @return EmailTemplate
+         */
+        public function getChangeEmailTemplate()
+        {
+        }
+        /**
+         * @param string $dynamicLinksDomain
+         */
+        public function setDynamicLinksDomain($dynamicLinksDomain)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDynamicLinksDomain()
+        {
+        }
+        /**
+         * Whether anonymous user is enabled.
+         *
+         * @param bool $enableAnonymousUser
+         */
+        public function setEnableAnonymousUser($enableAnonymousUser)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableAnonymousUser()
+        {
+        }
+        /**
+         * OAuth2 provider configuration.
+         *
+         * @param IdpConfig[] $idpConfig
+         */
+        public function setIdpConfig($idpConfig)
+        {
+        }
+        /**
+         * @return IdpConfig[]
+         */
+        public function getIdpConfig()
+        {
+        }
+        /**
+         * Legacy reset password email template.
+         *
+         * @param EmailTemplate $legacyResetPasswordTemplate
+         */
+        public function setLegacyResetPasswordTemplate(EmailTemplate $legacyResetPasswordTemplate)
+        {
+        }
+        /**
+         * @return EmailTemplate
+         */
+        public function getLegacyResetPasswordTemplate()
+        {
+        }
+        /**
+         * Project ID of the relying party.
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * Reset password email template.
+         *
+         * @param EmailTemplate $resetPasswordTemplate
+         */
+        public function setResetPasswordTemplate(EmailTemplate $resetPasswordTemplate)
+        {
+        }
+        /**
+         * @return EmailTemplate
+         */
+        public function getResetPasswordTemplate()
+        {
+        }
+        /**
+         * Whether to use email sending provided by Firebear.
+         *
+         * @param bool $useEmailSending
+         */
+        public function setUseEmailSending($useEmailSending)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUseEmailSending()
+        {
+        }
+        /**
+         * Verify email template.
+         *
+         * @param EmailTemplate $verifyEmailTemplate
+         */
+        public function setVerifyEmailTemplate(EmailTemplate $verifyEmailTemplate)
+        {
+        }
+        /**
+         * @return EmailTemplate
+         */
+        public function getVerifyEmailTemplate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartyGetProjectConfigResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowPasswordUser()
-    {
-    }
-    /**
-     * Browser API key, needed when making http request to Apiary.
-     *
-     * @param string $apiKey
-     */
-    public function setApiKey($apiKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getApiKey()
-    {
-    }
-    /**
-     * Authorized domains.
-     *
-     * @param string[] $authorizedDomains
-     */
-    public function setAuthorizedDomains($authorizedDomains)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getAuthorizedDomains()
-    {
-    }
-    /**
-     * Change email template.
-     *
-     * @param EmailTemplate $changeEmailTemplate
-     */
-    public function setChangeEmailTemplate(EmailTemplate $changeEmailTemplate)
-    {
-    }
-    /**
-     * @return EmailTemplate
-     */
-    public function getChangeEmailTemplate()
-    {
-    }
-    /**
-     * @param string $dynamicLinksDomain
-     */
-    public function setDynamicLinksDomain($dynamicLinksDomain)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDynamicLinksDomain()
-    {
-    }
-    /**
-     * Whether anonymous user is enabled.
-     *
-     * @param bool $enableAnonymousUser
-     */
-    public function setEnableAnonymousUser($enableAnonymousUser)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableAnonymousUser()
-    {
-    }
-    /**
-     * OAuth2 provider configuration.
-     *
-     * @param IdpConfig[] $idpConfig
-     */
-    public function setIdpConfig($idpConfig)
-    {
-    }
-    /**
-     * @return IdpConfig[]
-     */
-    public function getIdpConfig()
-    {
-    }
-    /**
-     * Legacy reset password email template.
-     *
-     * @param EmailTemplate $legacyResetPasswordTemplate
-     */
-    public function setLegacyResetPasswordTemplate(EmailTemplate $legacyResetPasswordTemplate)
-    {
-    }
-    /**
-     * @return EmailTemplate
-     */
-    public function getLegacyResetPasswordTemplate()
-    {
-    }
-    /**
-     * Project ID of the relying party.
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
-    {
-    }
-    /**
-     * Reset password email template.
-     *
-     * @param EmailTemplate $resetPasswordTemplate
-     */
-    public function setResetPasswordTemplate(EmailTemplate $resetPasswordTemplate)
-    {
-    }
-    /**
-     * @return EmailTemplate
-     */
-    public function getResetPasswordTemplate()
-    {
-    }
-    /**
-     * Whether to use email sending provided by Firebear.
-     *
-     * @param bool $useEmailSending
-     */
-    public function setUseEmailSending($useEmailSending)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUseEmailSending()
-    {
-    }
-    /**
-     * Verify email template.
-     *
-     * @param EmailTemplate $verifyEmailTemplate
-     */
-    public function setVerifyEmailTemplate(EmailTemplate $verifyEmailTemplate)
-    {
-    }
-    /**
-     * @return EmailTemplate
-     */
-    public function getVerifyEmailTemplate()
+    class Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartyGetProjectConfigResponse extends \Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartyGetProjectConfigResponse
     {
     }
 }

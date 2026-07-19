@@ -21,107 +21,116 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class BgpRoute extends \Google\Collection
-{
-    public const ORIGIN_BGP_ORIGIN_EGP = 'BGP_ORIGIN_EGP';
-    public const ORIGIN_BGP_ORIGIN_IGP = 'BGP_ORIGIN_IGP';
-    public const ORIGIN_BGP_ORIGIN_INCOMPLETE = 'BGP_ORIGIN_INCOMPLETE';
-    protected $collection_key = 'communities';
-    protected $asPathsType = BgpRouteAsPath::class;
-    protected $asPathsDataType = 'array';
-    /**
-     * Output only. [Output only] BGP communities in human-readable A:B format.
-     *
-     * @var string[]
-     */
-    public $communities;
-    protected $destinationType = BgpRouteNetworkLayerReachabilityInformation::class;
-    protected $destinationDataType = '';
-    /**
-     * Output only. [Output only] BGP multi-exit discriminator
-     *
-     * @var string
-     */
-    public $med;
-    /**
-     * Output only. [Output only] BGP origin (EGP, IGP or INCOMPLETE)
-     *
-     * @var string
-     */
-    public $origin;
-    /**
-     * Output only. [Output only] AS-PATH for the route
-     *
-     * @param BgpRouteAsPath[] $asPaths
-     */
-    public function setAsPaths($asPaths)
+namespace Google\Service\Compute {
+    class BgpRoute extends \Google\Collection
     {
+        public const ORIGIN_BGP_ORIGIN_EGP = 'BGP_ORIGIN_EGP';
+        public const ORIGIN_BGP_ORIGIN_IGP = 'BGP_ORIGIN_IGP';
+        public const ORIGIN_BGP_ORIGIN_INCOMPLETE = 'BGP_ORIGIN_INCOMPLETE';
+        protected $collection_key = 'communities';
+        protected $asPathsType = BgpRouteAsPath::class;
+        protected $asPathsDataType = 'array';
+        /**
+         * Output only. [Output only] BGP communities in human-readable A:B format.
+         *
+         * @var string[]
+         */
+        public $communities;
+        protected $destinationType = BgpRouteNetworkLayerReachabilityInformation::class;
+        protected $destinationDataType = '';
+        /**
+         * Output only. [Output only] BGP multi-exit discriminator
+         *
+         * @var string
+         */
+        public $med;
+        /**
+         * Output only. [Output only] BGP origin (EGP, IGP or INCOMPLETE)
+         *
+         * @var string
+         */
+        public $origin;
+        /**
+         * Output only. [Output only] AS-PATH for the route
+         *
+         * @param BgpRouteAsPath[] $asPaths
+         */
+        public function setAsPaths($asPaths)
+        {
+        }
+        /**
+         * @return BgpRouteAsPath[]
+         */
+        public function getAsPaths()
+        {
+        }
+        /**
+         * Output only. [Output only] BGP communities in human-readable A:B format.
+         *
+         * @param string[] $communities
+         */
+        public function setCommunities($communities)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCommunities()
+        {
+        }
+        /**
+         * Output only. [Output only] Destination IP range for the route, in human-
+         * readable CIDR format
+         *
+         * @param BgpRouteNetworkLayerReachabilityInformation $destination
+         */
+        public function setDestination(BgpRouteNetworkLayerReachabilityInformation $destination)
+        {
+        }
+        /**
+         * @return BgpRouteNetworkLayerReachabilityInformation
+         */
+        public function getDestination()
+        {
+        }
+        /**
+         * Output only. [Output only] BGP multi-exit discriminator
+         *
+         * @param string $med
+         */
+        public function setMed($med)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMed()
+        {
+        }
+        /**
+         * Output only. [Output only] BGP origin (EGP, IGP or INCOMPLETE)
+         *
+         * Accepted values: BGP_ORIGIN_EGP, BGP_ORIGIN_IGP, BGP_ORIGIN_INCOMPLETE
+         *
+         * @param self::ORIGIN_* $origin
+         */
+        public function setOrigin($origin)
+        {
+        }
+        /**
+         * @return self::ORIGIN_*
+         */
+        public function getOrigin()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BgpRouteAsPath[]
+     * Runtime class alias of \Google\Service\Compute\BgpRoute registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAsPaths()
-    {
-    }
-    /**
-     * Output only. [Output only] BGP communities in human-readable A:B format.
-     *
-     * @param string[] $communities
-     */
-    public function setCommunities($communities)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getCommunities()
-    {
-    }
-    /**
-     * Output only. [Output only] Destination IP range for the route, in human-
-     * readable CIDR format
-     *
-     * @param BgpRouteNetworkLayerReachabilityInformation $destination
-     */
-    public function setDestination(BgpRouteNetworkLayerReachabilityInformation $destination)
-    {
-    }
-    /**
-     * @return BgpRouteNetworkLayerReachabilityInformation
-     */
-    public function getDestination()
-    {
-    }
-    /**
-     * Output only. [Output only] BGP multi-exit discriminator
-     *
-     * @param string $med
-     */
-    public function setMed($med)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMed()
-    {
-    }
-    /**
-     * Output only. [Output only] BGP origin (EGP, IGP or INCOMPLETE)
-     *
-     * Accepted values: BGP_ORIGIN_EGP, BGP_ORIGIN_IGP, BGP_ORIGIN_INCOMPLETE
-     *
-     * @param self::ORIGIN_* $origin
-     */
-    public function setOrigin($origin)
-    {
-    }
-    /**
-     * @return self::ORIGIN_*
-     */
-    public function getOrigin()
+    class Google_Service_Compute_BgpRoute extends \Google\Service\Compute\BgpRoute
     {
     }
 }

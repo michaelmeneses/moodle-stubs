@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class BatchUpdatePresentationRequest extends \Google\Collection
-{
-    protected $collection_key = 'requests';
-    protected $requestsType = Request::class;
-    protected $requestsDataType = 'array';
-    protected $writeControlType = WriteControl::class;
-    protected $writeControlDataType = '';
-    /**
-     * A list of updates to apply to the presentation.
-     *
-     * @param Request[] $requests
-     */
-    public function setRequests($requests)
+namespace Google\Service\Slides {
+    class BatchUpdatePresentationRequest extends \Google\Collection
     {
+        protected $collection_key = 'requests';
+        protected $requestsType = Request::class;
+        protected $requestsDataType = 'array';
+        protected $writeControlType = WriteControl::class;
+        protected $writeControlDataType = '';
+        /**
+         * A list of updates to apply to the presentation.
+         *
+         * @param Request[] $requests
+         */
+        public function setRequests($requests)
+        {
+        }
+        /**
+         * @return Request[]
+         */
+        public function getRequests()
+        {
+        }
+        /**
+         * Provides control over how write requests are executed.
+         *
+         * @param WriteControl $writeControl
+         */
+        public function setWriteControl(WriteControl $writeControl)
+        {
+        }
+        /**
+         * @return WriteControl
+         */
+        public function getWriteControl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Request[]
+     * Runtime class alias of \Google\Service\Slides\BatchUpdatePresentationRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequests()
-    {
-    }
-    /**
-     * Provides control over how write requests are executed.
-     *
-     * @param WriteControl $writeControl
-     */
-    public function setWriteControl(WriteControl $writeControl)
-    {
-    }
-    /**
-     * @return WriteControl
-     */
-    public function getWriteControl()
+    class Google_Service_Slides_BatchUpdatePresentationRequest extends \Google\Service\Slides\BatchUpdatePresentationRequest
     {
     }
 }

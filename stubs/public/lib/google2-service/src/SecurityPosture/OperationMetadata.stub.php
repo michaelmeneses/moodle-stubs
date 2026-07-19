@@ -21,176 +21,185 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityPosture;
-
-class OperationMetadata extends \Google\Model
-{
-    /**
-     * Output only. The API version used to start the operation.
-     *
-     * @var string
-     */
-    public $apiVersion;
-    /**
-     * Output only. The time at which the operation was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. The time at which the operation finished running.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * Output only. An error message. Returned when a PostureDeployment enters a
-     * failure state like UPDATE_FAILED.
-     *
-     * @var string
-     */
-    public $errorMessage;
-    /**
-     * Output only. Whether a request to cancel the operation has been received.
-     * For operations that have been cancelled successfully, the Operation.error
-     * field contains the error code CANCELLED.
-     *
-     * @var bool
-     */
-    public $requestedCancellation;
-    /**
-     * Output only. The status of the operation, if any.
-     *
-     * @var string
-     */
-    public $statusMessage;
-    /**
-     * Output only. The server-defined resource path for the target of the
-     * operation.
-     *
-     * @var string
-     */
-    public $target;
-    /**
-     * Output only. The name of the action executed by the operation.
-     *
-     * @var string
-     */
-    public $verb;
-    /**
-     * Output only. The API version used to start the operation.
-     *
-     * @param string $apiVersion
-     */
-    public function setApiVersion($apiVersion)
+namespace Google\Service\SecurityPosture {
+    class OperationMetadata extends \Google\Model
     {
+        /**
+         * Output only. The API version used to start the operation.
+         *
+         * @var string
+         */
+        public $apiVersion;
+        /**
+         * Output only. The time at which the operation was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. The time at which the operation finished running.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * Output only. An error message. Returned when a PostureDeployment enters a
+         * failure state like UPDATE_FAILED.
+         *
+         * @var string
+         */
+        public $errorMessage;
+        /**
+         * Output only. Whether a request to cancel the operation has been received.
+         * For operations that have been cancelled successfully, the Operation.error
+         * field contains the error code CANCELLED.
+         *
+         * @var bool
+         */
+        public $requestedCancellation;
+        /**
+         * Output only. The status of the operation, if any.
+         *
+         * @var string
+         */
+        public $statusMessage;
+        /**
+         * Output only. The server-defined resource path for the target of the
+         * operation.
+         *
+         * @var string
+         */
+        public $target;
+        /**
+         * Output only. The name of the action executed by the operation.
+         *
+         * @var string
+         */
+        public $verb;
+        /**
+         * Output only. The API version used to start the operation.
+         *
+         * @param string $apiVersion
+         */
+        public function setApiVersion($apiVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApiVersion()
+        {
+        }
+        /**
+         * Output only. The time at which the operation was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. The time at which the operation finished running.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Output only. An error message. Returned when a PostureDeployment enters a
+         * failure state like UPDATE_FAILED.
+         *
+         * @param string $errorMessage
+         */
+        public function setErrorMessage($errorMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorMessage()
+        {
+        }
+        /**
+         * Output only. Whether a request to cancel the operation has been received.
+         * For operations that have been cancelled successfully, the Operation.error
+         * field contains the error code CANCELLED.
+         *
+         * @param bool $requestedCancellation
+         */
+        public function setRequestedCancellation($requestedCancellation)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRequestedCancellation()
+        {
+        }
+        /**
+         * Output only. The status of the operation, if any.
+         *
+         * @param string $statusMessage
+         */
+        public function setStatusMessage($statusMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatusMessage()
+        {
+        }
+        /**
+         * Output only. The server-defined resource path for the target of the
+         * operation.
+         *
+         * @param string $target
+         */
+        public function setTarget($target)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTarget()
+        {
+        }
+        /**
+         * Output only. The name of the action executed by the operation.
+         *
+         * @param string $verb
+         */
+        public function setVerb($verb)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVerb()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityPosture\OperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiVersion()
-    {
-    }
-    /**
-     * Output only. The time at which the operation was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. The time at which the operation finished running.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Output only. An error message. Returned when a PostureDeployment enters a
-     * failure state like UPDATE_FAILED.
-     *
-     * @param string $errorMessage
-     */
-    public function setErrorMessage($errorMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getErrorMessage()
-    {
-    }
-    /**
-     * Output only. Whether a request to cancel the operation has been received.
-     * For operations that have been cancelled successfully, the Operation.error
-     * field contains the error code CANCELLED.
-     *
-     * @param bool $requestedCancellation
-     */
-    public function setRequestedCancellation($requestedCancellation)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getRequestedCancellation()
-    {
-    }
-    /**
-     * Output only. The status of the operation, if any.
-     *
-     * @param string $statusMessage
-     */
-    public function setStatusMessage($statusMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatusMessage()
-    {
-    }
-    /**
-     * Output only. The server-defined resource path for the target of the
-     * operation.
-     *
-     * @param string $target
-     */
-    public function setTarget($target)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTarget()
-    {
-    }
-    /**
-     * Output only. The name of the action executed by the operation.
-     *
-     * @param string $verb
-     */
-    public function setVerb($verb)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVerb()
+    class Google_Service_SecurityPosture_OperationMetadata extends \Google\Service\SecurityPosture\OperationMetadata
     {
     }
 }

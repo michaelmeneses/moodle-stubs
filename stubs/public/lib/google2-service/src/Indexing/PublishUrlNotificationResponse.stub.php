@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Indexing;
-
-class PublishUrlNotificationResponse extends \Google\Model
-{
-    protected $urlNotificationMetadataType = UrlNotificationMetadata::class;
-    protected $urlNotificationMetadataDataType = '';
-    /**
-     * Description of the notification events received for this URL.
-     *
-     * @param UrlNotificationMetadata $urlNotificationMetadata
-     */
-    public function setUrlNotificationMetadata(UrlNotificationMetadata $urlNotificationMetadata)
+namespace Google\Service\Indexing {
+    class PublishUrlNotificationResponse extends \Google\Model
     {
+        protected $urlNotificationMetadataType = UrlNotificationMetadata::class;
+        protected $urlNotificationMetadataDataType = '';
+        /**
+         * Description of the notification events received for this URL.
+         *
+         * @param UrlNotificationMetadata $urlNotificationMetadata
+         */
+        public function setUrlNotificationMetadata(UrlNotificationMetadata $urlNotificationMetadata)
+        {
+        }
+        /**
+         * @return UrlNotificationMetadata
+         */
+        public function getUrlNotificationMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return UrlNotificationMetadata
+     * Runtime class alias of \Google\Service\Indexing\PublishUrlNotificationResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUrlNotificationMetadata()
+    class Google_Service_Indexing_PublishUrlNotificationResponse extends \Google\Service\Indexing\PublishUrlNotificationResponse
     {
     }
 }

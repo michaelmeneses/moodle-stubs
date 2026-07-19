@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2ListLabelsResponse extends \Google\Collection
-{
-    protected $collection_key = 'labels';
-    protected $labelsType = GoogleAppsDriveLabelsV2Label::class;
-    protected $labelsDataType = 'array';
-    /**
-     * The token of the next page in the response.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Labels.
-     *
-     * @param GoogleAppsDriveLabelsV2Label[] $labels
-     */
-    public function setLabels($labels)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2ListLabelsResponse extends \Google\Collection
     {
+        protected $collection_key = 'labels';
+        protected $labelsType = GoogleAppsDriveLabelsV2Label::class;
+        protected $labelsDataType = 'array';
+        /**
+         * The token of the next page in the response.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Labels.
+         *
+         * @param GoogleAppsDriveLabelsV2Label[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return GoogleAppsDriveLabelsV2Label[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * The token of the next page in the response.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAppsDriveLabelsV2Label[]
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2ListLabelsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabels()
-    {
-    }
-    /**
-     * The token of the next page in the response.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2ListLabelsResponse extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2ListLabelsResponse
     {
     }
 }

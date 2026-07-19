@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1CountChromeCrashEventsResponse extends \Google\Collection
-{
-    protected $collection_key = 'crashEventCounts';
-    protected $crashEventCountsType = GoogleChromeManagementV1CountChromeCrashEventsResponseCrashEventCount::class;
-    protected $crashEventCountsDataType = 'array';
-    /**
-     * Crash event counts grouped by date and browser version.
-     *
-     * @param GoogleChromeManagementV1CountChromeCrashEventsResponseCrashEventCount[] $crashEventCounts
-     */
-    public function setCrashEventCounts($crashEventCounts)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1CountChromeCrashEventsResponse extends \Google\Collection
     {
+        protected $collection_key = 'crashEventCounts';
+        protected $crashEventCountsType = GoogleChromeManagementV1CountChromeCrashEventsResponseCrashEventCount::class;
+        protected $crashEventCountsDataType = 'array';
+        /**
+         * Crash event counts grouped by date and browser version.
+         *
+         * @param GoogleChromeManagementV1CountChromeCrashEventsResponseCrashEventCount[] $crashEventCounts
+         */
+        public function setCrashEventCounts($crashEventCounts)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementV1CountChromeCrashEventsResponseCrashEventCount[]
+         */
+        public function getCrashEventCounts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChromeManagementV1CountChromeCrashEventsResponseCrashEventCount[]
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1CountChromeCrashEventsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCrashEventCounts()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1CountChromeCrashEventsResponse extends \Google\Service\ChromeManagement\GoogleChromeManagementV1CountChromeCrashEventsResponse
     {
     }
 }

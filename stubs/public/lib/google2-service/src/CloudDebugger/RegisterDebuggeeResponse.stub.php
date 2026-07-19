@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDebugger;
-
-class RegisterDebuggeeResponse extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $agentId;
-    protected $debuggeeType = Debuggee::class;
-    protected $debuggeeDataType = '';
-    /**
-     * @param string
-     */
-    public function setAgentId($agentId)
+namespace Google\Service\CloudDebugger {
+    class RegisterDebuggeeResponse extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $agentId;
+        protected $debuggeeType = Debuggee::class;
+        protected $debuggeeDataType = '';
+        /**
+         * @param string
+         */
+        public function setAgentId($agentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAgentId()
+        {
+        }
+        /**
+         * @param Debuggee
+         */
+        public function setDebuggee(Debuggee $debuggee)
+        {
+        }
+        /**
+         * @return Debuggee
+         */
+        public function getDebuggee()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDebugger\RegisterDebuggeeResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAgentId()
-    {
-    }
-    /**
-     * @param Debuggee
-     */
-    public function setDebuggee(Debuggee $debuggee)
-    {
-    }
-    /**
-     * @return Debuggee
-     */
-    public function getDebuggee()
+    class Google_Service_CloudDebugger_RegisterDebuggeeResponse extends \Google\Service\CloudDebugger\RegisterDebuggeeResponse
     {
     }
 }

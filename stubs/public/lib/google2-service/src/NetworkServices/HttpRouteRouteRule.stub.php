@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkServices;
-
-class HttpRouteRouteRule extends \Google\Collection
-{
-    protected $collection_key = 'matches';
-    protected $actionType = HttpRouteRouteAction::class;
-    protected $actionDataType = '';
-    protected $matchesType = HttpRouteRouteMatch::class;
-    protected $matchesDataType = 'array';
-    /**
-     * The detailed rule defining how to route matched traffic.
-     *
-     * @param HttpRouteRouteAction $action
-     */
-    public function setAction(HttpRouteRouteAction $action)
+namespace Google\Service\NetworkServices {
+    class HttpRouteRouteRule extends \Google\Collection
     {
+        protected $collection_key = 'matches';
+        protected $actionType = HttpRouteRouteAction::class;
+        protected $actionDataType = '';
+        protected $matchesType = HttpRouteRouteMatch::class;
+        protected $matchesDataType = 'array';
+        /**
+         * The detailed rule defining how to route matched traffic.
+         *
+         * @param HttpRouteRouteAction $action
+         */
+        public function setAction(HttpRouteRouteAction $action)
+        {
+        }
+        /**
+         * @return HttpRouteRouteAction
+         */
+        public function getAction()
+        {
+        }
+        /**
+         * A list of matches define conditions used for matching the rule against
+         * incoming HTTP requests. Each match is independent, i.e. this rule will be
+         * matched if ANY one of the matches is satisfied. If no matches field is
+         * specified, this rule will unconditionally match traffic. If a default rule
+         * is desired to be configured, add a rule with no matches specified to the
+         * end of the rules list.
+         *
+         * @param HttpRouteRouteMatch[] $matches
+         */
+        public function setMatches($matches)
+        {
+        }
+        /**
+         * @return HttpRouteRouteMatch[]
+         */
+        public function getMatches()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return HttpRouteRouteAction
+     * Runtime class alias of \Google\Service\NetworkServices\HttpRouteRouteRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAction()
-    {
-    }
-    /**
-     * A list of matches define conditions used for matching the rule against
-     * incoming HTTP requests. Each match is independent, i.e. this rule will be
-     * matched if ANY one of the matches is satisfied. If no matches field is
-     * specified, this rule will unconditionally match traffic. If a default rule
-     * is desired to be configured, add a rule with no matches specified to the
-     * end of the rules list.
-     *
-     * @param HttpRouteRouteMatch[] $matches
-     */
-    public function setMatches($matches)
-    {
-    }
-    /**
-     * @return HttpRouteRouteMatch[]
-     */
-    public function getMatches()
+    class Google_Service_NetworkServices_HttpRouteRouteRule extends \Google\Service\NetworkServices\HttpRouteRouteRule
     {
     }
 }

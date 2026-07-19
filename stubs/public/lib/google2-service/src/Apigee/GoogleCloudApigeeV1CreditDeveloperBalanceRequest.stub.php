@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1CreditDeveloperBalanceRequest extends \Google\Model
-{
-    protected $transactionAmountType = GoogleTypeMoney::class;
-    protected $transactionAmountDataType = '';
-    /**
-     * Each transaction_id uniquely identifies a credit balance request. If
-     * multiple requests are received with the same transaction_id, only one of
-     * them will be considered.
-     *
-     * @var string
-     */
-    public $transactionId;
-    /**
-     * The amount of money to be credited. The wallet corresponding to the
-     * currency specified within `transaction_amount` will be updated. For
-     * example, if you specified `currency_code` within `transaction_amount` as
-     * "USD", then the amount would be added to the wallet which has the "USD"
-     * currency or if no such wallet exists, a new wallet will be created with the
-     * "USD" currency.
-     *
-     * @param GoogleTypeMoney $transactionAmount
-     */
-    public function setTransactionAmount(GoogleTypeMoney $transactionAmount)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1CreditDeveloperBalanceRequest extends \Google\Model
     {
+        protected $transactionAmountType = GoogleTypeMoney::class;
+        protected $transactionAmountDataType = '';
+        /**
+         * Each transaction_id uniquely identifies a credit balance request. If
+         * multiple requests are received with the same transaction_id, only one of
+         * them will be considered.
+         *
+         * @var string
+         */
+        public $transactionId;
+        /**
+         * The amount of money to be credited. The wallet corresponding to the
+         * currency specified within `transaction_amount` will be updated. For
+         * example, if you specified `currency_code` within `transaction_amount` as
+         * "USD", then the amount would be added to the wallet which has the "USD"
+         * currency or if no such wallet exists, a new wallet will be created with the
+         * "USD" currency.
+         *
+         * @param GoogleTypeMoney $transactionAmount
+         */
+        public function setTransactionAmount(GoogleTypeMoney $transactionAmount)
+        {
+        }
+        /**
+         * @return GoogleTypeMoney
+         */
+        public function getTransactionAmount()
+        {
+        }
+        /**
+         * Each transaction_id uniquely identifies a credit balance request. If
+         * multiple requests are received with the same transaction_id, only one of
+         * them will be considered.
+         *
+         * @param string $transactionId
+         */
+        public function setTransactionId($transactionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTransactionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleTypeMoney
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1CreditDeveloperBalanceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTransactionAmount()
-    {
-    }
-    /**
-     * Each transaction_id uniquely identifies a credit balance request. If
-     * multiple requests are received with the same transaction_id, only one of
-     * them will be considered.
-     *
-     * @param string $transactionId
-     */
-    public function setTransactionId($transactionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTransactionId()
+    class Google_Service_Apigee_GoogleCloudApigeeV1CreditDeveloperBalanceRequest extends \Google\Service\Apigee\GoogleCloudApigeeV1CreditDeveloperBalanceRequest
     {
     }
 }

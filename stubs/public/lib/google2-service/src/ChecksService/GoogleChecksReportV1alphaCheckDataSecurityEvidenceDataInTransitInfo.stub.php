@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChecksService;
-
-class GoogleChecksReportV1alphaCheckDataSecurityEvidenceDataInTransitInfo extends \Google\Model
-{
-    /**
-     * The URL contacted by your app. This includes the protocol, domain, and URL
-     * parameters.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * The URL contacted by your app. This includes the protocol, domain, and URL
-     * parameters.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
+namespace Google\Service\ChecksService {
+    class GoogleChecksReportV1alphaCheckDataSecurityEvidenceDataInTransitInfo extends \Google\Model
     {
+        /**
+         * The URL contacted by your app. This includes the protocol, domain, and URL
+         * parameters.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * The URL contacted by your app. This includes the protocol, domain, and URL
+         * parameters.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChecksService\GoogleChecksReportV1alphaCheckDataSecurityEvidenceDataInTransitInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUri()
+    class Google_Service_ChecksService_GoogleChecksReportV1alphaCheckDataSecurityEvidenceDataInTransitInfo extends \Google\Service\ChecksService\GoogleChecksReportV1alphaCheckDataSecurityEvidenceDataInTransitInfo
     {
     }
 }

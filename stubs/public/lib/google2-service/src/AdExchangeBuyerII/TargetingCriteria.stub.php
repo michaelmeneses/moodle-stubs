@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class TargetingCriteria extends \Google\Collection
-{
-    protected $collection_key = 'inclusions';
-    protected $exclusionsType = TargetingValue::class;
-    protected $exclusionsDataType = 'array';
-    protected $inclusionsType = TargetingValue::class;
-    protected $inclusionsDataType = 'array';
-    /**
-     * The key representing the shared targeting criterion. Targeting criteria
-     * defined by Google ad servers will begin with GOOG_. Third parties may
-     * define their own keys. A list of permissible keys along with the acceptable
-     * values will be provided as part of the external documentation.
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * The list of values to exclude from targeting. Each value is AND'd together.
-     *
-     * @param TargetingValue[] $exclusions
-     */
-    public function setExclusions($exclusions)
+namespace Google\Service\AdExchangeBuyerII {
+    class TargetingCriteria extends \Google\Collection
     {
+        protected $collection_key = 'inclusions';
+        protected $exclusionsType = TargetingValue::class;
+        protected $exclusionsDataType = 'array';
+        protected $inclusionsType = TargetingValue::class;
+        protected $inclusionsDataType = 'array';
+        /**
+         * The key representing the shared targeting criterion. Targeting criteria
+         * defined by Google ad servers will begin with GOOG_. Third parties may
+         * define their own keys. A list of permissible keys along with the acceptable
+         * values will be provided as part of the external documentation.
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * The list of values to exclude from targeting. Each value is AND'd together.
+         *
+         * @param TargetingValue[] $exclusions
+         */
+        public function setExclusions($exclusions)
+        {
+        }
+        /**
+         * @return TargetingValue[]
+         */
+        public function getExclusions()
+        {
+        }
+        /**
+         * The list of value to include as part of the targeting. Each value is OR'd
+         * together.
+         *
+         * @param TargetingValue[] $inclusions
+         */
+        public function setInclusions($inclusions)
+        {
+        }
+        /**
+         * @return TargetingValue[]
+         */
+        public function getInclusions()
+        {
+        }
+        /**
+         * The key representing the shared targeting criterion. Targeting criteria
+         * defined by Google ad servers will begin with GOOG_. Third parties may
+         * define their own keys. A list of permissible keys along with the acceptable
+         * values will be provided as part of the external documentation.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TargetingValue[]
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\TargetingCriteria registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExclusions()
-    {
-    }
-    /**
-     * The list of value to include as part of the targeting. Each value is OR'd
-     * together.
-     *
-     * @param TargetingValue[] $inclusions
-     */
-    public function setInclusions($inclusions)
-    {
-    }
-    /**
-     * @return TargetingValue[]
-     */
-    public function getInclusions()
-    {
-    }
-    /**
-     * The key representing the shared targeting criterion. Targeting criteria
-     * defined by Google ad servers will begin with GOOG_. Third parties may
-     * define their own keys. A list of permissible keys along with the acceptable
-     * values will be provided as part of the external documentation.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKey()
+    class Google_Service_AdExchangeBuyerII_TargetingCriteria extends \Google\Service\AdExchangeBuyerII\TargetingCriteria
     {
     }
 }

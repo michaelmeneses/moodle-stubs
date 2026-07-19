@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class GridRange extends \Google\Model
-{
-    /**
-     * The end column (exclusive) of the range, or not set if unbounded.
-     *
-     * @var int
-     */
-    public $endColumnIndex;
-    /**
-     * The end row (exclusive) of the range, or not set if unbounded.
-     *
-     * @var int
-     */
-    public $endRowIndex;
-    /**
-     * The sheet this range is on.
-     *
-     * @var int
-     */
-    public $sheetId;
-    /**
-     * The start column (inclusive) of the range, or not set if unbounded.
-     *
-     * @var int
-     */
-    public $startColumnIndex;
-    /**
-     * The start row (inclusive) of the range, or not set if unbounded.
-     *
-     * @var int
-     */
-    public $startRowIndex;
-    /**
-     * The end column (exclusive) of the range, or not set if unbounded.
-     *
-     * @param int $endColumnIndex
-     */
-    public function setEndColumnIndex($endColumnIndex)
+namespace Google\Service\Sheets {
+    class GridRange extends \Google\Model
     {
+        /**
+         * The end column (exclusive) of the range, or not set if unbounded.
+         *
+         * @var int
+         */
+        public $endColumnIndex;
+        /**
+         * The end row (exclusive) of the range, or not set if unbounded.
+         *
+         * @var int
+         */
+        public $endRowIndex;
+        /**
+         * The sheet this range is on.
+         *
+         * @var int
+         */
+        public $sheetId;
+        /**
+         * The start column (inclusive) of the range, or not set if unbounded.
+         *
+         * @var int
+         */
+        public $startColumnIndex;
+        /**
+         * The start row (inclusive) of the range, or not set if unbounded.
+         *
+         * @var int
+         */
+        public $startRowIndex;
+        /**
+         * The end column (exclusive) of the range, or not set if unbounded.
+         *
+         * @param int $endColumnIndex
+         */
+        public function setEndColumnIndex($endColumnIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getEndColumnIndex()
+        {
+        }
+        /**
+         * The end row (exclusive) of the range, or not set if unbounded.
+         *
+         * @param int $endRowIndex
+         */
+        public function setEndRowIndex($endRowIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getEndRowIndex()
+        {
+        }
+        /**
+         * The sheet this range is on.
+         *
+         * @param int $sheetId
+         */
+        public function setSheetId($sheetId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSheetId()
+        {
+        }
+        /**
+         * The start column (inclusive) of the range, or not set if unbounded.
+         *
+         * @param int $startColumnIndex
+         */
+        public function setStartColumnIndex($startColumnIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStartColumnIndex()
+        {
+        }
+        /**
+         * The start row (inclusive) of the range, or not set if unbounded.
+         *
+         * @param int $startRowIndex
+         */
+        public function setStartRowIndex($startRowIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStartRowIndex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Sheets\GridRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndColumnIndex()
-    {
-    }
-    /**
-     * The end row (exclusive) of the range, or not set if unbounded.
-     *
-     * @param int $endRowIndex
-     */
-    public function setEndRowIndex($endRowIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getEndRowIndex()
-    {
-    }
-    /**
-     * The sheet this range is on.
-     *
-     * @param int $sheetId
-     */
-    public function setSheetId($sheetId)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSheetId()
-    {
-    }
-    /**
-     * The start column (inclusive) of the range, or not set if unbounded.
-     *
-     * @param int $startColumnIndex
-     */
-    public function setStartColumnIndex($startColumnIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStartColumnIndex()
-    {
-    }
-    /**
-     * The start row (inclusive) of the range, or not set if unbounded.
-     *
-     * @param int $startRowIndex
-     */
-    public function setStartRowIndex($startRowIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStartRowIndex()
+    class Google_Service_Sheets_GridRange extends \Google\Service\Sheets\GridRange
     {
     }
 }

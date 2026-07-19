@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Looker;
-
-class ExportInstanceRequest extends \Google\Model
-{
-    protected $encryptionConfigType = ExportEncryptionConfig::class;
-    protected $encryptionConfigDataType = '';
-    /**
-     * The path to the folder in Google Cloud Storage where the export will be
-     * stored. The URI is in the form `gs://bucketName/folderName`.
-     *
-     * @var string
-     */
-    public $gcsUri;
-    /**
-     * Required. Encryption configuration (CMEK). For CMEK enabled instances it
-     * should be same as looker CMEK.
-     *
-     * @param ExportEncryptionConfig $encryptionConfig
-     */
-    public function setEncryptionConfig(ExportEncryptionConfig $encryptionConfig)
+namespace Google\Service\Looker {
+    class ExportInstanceRequest extends \Google\Model
     {
+        protected $encryptionConfigType = ExportEncryptionConfig::class;
+        protected $encryptionConfigDataType = '';
+        /**
+         * The path to the folder in Google Cloud Storage where the export will be
+         * stored. The URI is in the form `gs://bucketName/folderName`.
+         *
+         * @var string
+         */
+        public $gcsUri;
+        /**
+         * Required. Encryption configuration (CMEK). For CMEK enabled instances it
+         * should be same as looker CMEK.
+         *
+         * @param ExportEncryptionConfig $encryptionConfig
+         */
+        public function setEncryptionConfig(ExportEncryptionConfig $encryptionConfig)
+        {
+        }
+        /**
+         * @return ExportEncryptionConfig
+         */
+        public function getEncryptionConfig()
+        {
+        }
+        /**
+         * The path to the folder in Google Cloud Storage where the export will be
+         * stored. The URI is in the form `gs://bucketName/folderName`.
+         *
+         * @param string $gcsUri
+         */
+        public function setGcsUri($gcsUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcsUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ExportEncryptionConfig
+     * Runtime class alias of \Google\Service\Looker\ExportInstanceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEncryptionConfig()
-    {
-    }
-    /**
-     * The path to the folder in Google Cloud Storage where the export will be
-     * stored. The URI is in the form `gs://bucketName/folderName`.
-     *
-     * @param string $gcsUri
-     */
-    public function setGcsUri($gcsUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGcsUri()
+    class Google_Service_Looker_ExportInstanceRequest extends \Google\Service\Looker\ExportInstanceRequest
     {
     }
 }

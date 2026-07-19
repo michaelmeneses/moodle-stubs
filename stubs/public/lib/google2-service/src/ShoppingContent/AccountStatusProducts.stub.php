@@ -21,103 +21,112 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class AccountStatusProducts extends \Google\Collection
-{
-    protected $collection_key = 'itemLevelIssues';
-    /**
-     * The channel the data applies to. Acceptable values are: - "`local`" -
-     * "`online`"
-     *
-     * @var string
-     */
-    public $channel;
-    /**
-     * The country the data applies to.
-     *
-     * @var string
-     */
-    public $country;
-    /**
-     * The destination the data applies to.
-     *
-     * @var string
-     */
-    public $destination;
-    protected $itemLevelIssuesType = AccountStatusItemLevelIssue::class;
-    protected $itemLevelIssuesDataType = 'array';
-    protected $statisticsType = AccountStatusStatistics::class;
-    protected $statisticsDataType = '';
-    /**
-     * The channel the data applies to. Acceptable values are: - "`local`" -
-     * "`online`"
-     *
-     * @param string $channel
-     */
-    public function setChannel($channel)
+namespace Google\Service\ShoppingContent {
+    class AccountStatusProducts extends \Google\Collection
     {
+        protected $collection_key = 'itemLevelIssues';
+        /**
+         * The channel the data applies to. Acceptable values are: - "`local`" -
+         * "`online`"
+         *
+         * @var string
+         */
+        public $channel;
+        /**
+         * The country the data applies to.
+         *
+         * @var string
+         */
+        public $country;
+        /**
+         * The destination the data applies to.
+         *
+         * @var string
+         */
+        public $destination;
+        protected $itemLevelIssuesType = AccountStatusItemLevelIssue::class;
+        protected $itemLevelIssuesDataType = 'array';
+        protected $statisticsType = AccountStatusStatistics::class;
+        protected $statisticsDataType = '';
+        /**
+         * The channel the data applies to. Acceptable values are: - "`local`" -
+         * "`online`"
+         *
+         * @param string $channel
+         */
+        public function setChannel($channel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChannel()
+        {
+        }
+        /**
+         * The country the data applies to.
+         *
+         * @param string $country
+         */
+        public function setCountry($country)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCountry()
+        {
+        }
+        /**
+         * The destination the data applies to.
+         *
+         * @param string $destination
+         */
+        public function setDestination($destination)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestination()
+        {
+        }
+        /**
+         * List of item-level issues.
+         *
+         * @param AccountStatusItemLevelIssue[] $itemLevelIssues
+         */
+        public function setItemLevelIssues($itemLevelIssues)
+        {
+        }
+        /**
+         * @return AccountStatusItemLevelIssue[]
+         */
+        public function getItemLevelIssues()
+        {
+        }
+        /**
+         * Aggregated product statistics.
+         *
+         * @param AccountStatusStatistics $statistics
+         */
+        public function setStatistics(AccountStatusStatistics $statistics)
+        {
+        }
+        /**
+         * @return AccountStatusStatistics
+         */
+        public function getStatistics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\AccountStatusProducts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChannel()
-    {
-    }
-    /**
-     * The country the data applies to.
-     *
-     * @param string $country
-     */
-    public function setCountry($country)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCountry()
-    {
-    }
-    /**
-     * The destination the data applies to.
-     *
-     * @param string $destination
-     */
-    public function setDestination($destination)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDestination()
-    {
-    }
-    /**
-     * List of item-level issues.
-     *
-     * @param AccountStatusItemLevelIssue[] $itemLevelIssues
-     */
-    public function setItemLevelIssues($itemLevelIssues)
-    {
-    }
-    /**
-     * @return AccountStatusItemLevelIssue[]
-     */
-    public function getItemLevelIssues()
-    {
-    }
-    /**
-     * Aggregated product statistics.
-     *
-     * @param AccountStatusStatistics $statistics
-     */
-    public function setStatistics(AccountStatusStatistics $statistics)
-    {
-    }
-    /**
-     * @return AccountStatusStatistics
-     */
-    public function getStatistics()
+    class Google_Service_ShoppingContent_AccountStatusProducts extends \Google\Service\ShoppingContent\AccountStatusProducts
     {
     }
 }

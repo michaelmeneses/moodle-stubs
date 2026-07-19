@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class SigningKey extends \Google\Model
-{
-    public $keyId;
-    public $keyScheme;
-    public $keyType;
-    public $publicKeyValue;
-    public function setKeyId($keyId)
+namespace Google\Service\ContainerAnalysis {
+    class SigningKey extends \Google\Model
     {
+        public $keyId;
+        public $keyScheme;
+        public $keyType;
+        public $publicKeyValue;
+        public function setKeyId($keyId)
+        {
+        }
+        public function getKeyId()
+        {
+        }
+        public function setKeyScheme($keyScheme)
+        {
+        }
+        public function getKeyScheme()
+        {
+        }
+        public function setKeyType($keyType)
+        {
+        }
+        public function getKeyType()
+        {
+        }
+        public function setPublicKeyValue($publicKeyValue)
+        {
+        }
+        public function getPublicKeyValue()
+        {
+        }
     }
-    public function getKeyId()
-    {
-    }
-    public function setKeyScheme($keyScheme)
-    {
-    }
-    public function getKeyScheme()
-    {
-    }
-    public function setKeyType($keyType)
-    {
-    }
-    public function getKeyType()
-    {
-    }
-    public function setPublicKeyValue($publicKeyValue)
-    {
-    }
-    public function getPublicKeyValue()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ContainerAnalysis\SigningKey registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ContainerAnalysis_SigningKey extends \Google\Service\ContainerAnalysis\SigningKey
     {
     }
 }

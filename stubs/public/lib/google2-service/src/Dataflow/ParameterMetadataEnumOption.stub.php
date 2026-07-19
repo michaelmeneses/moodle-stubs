@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class ParameterMetadataEnumOption extends \Google\Model
-{
-    /**
-     * Optional. The description to display for the enum option.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Optional. The label to display for the enum option.
-     *
-     * @var string
-     */
-    public $label;
-    /**
-     * Required. The value of the enum option.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Optional. The description to display for the enum option.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Dataflow {
+    class ParameterMetadataEnumOption extends \Google\Model
     {
+        /**
+         * Optional. The description to display for the enum option.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Optional. The label to display for the enum option.
+         *
+         * @var string
+         */
+        public $label;
+        /**
+         * Required. The value of the enum option.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Optional. The description to display for the enum option.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Optional. The label to display for the enum option.
+         *
+         * @param string $label
+         */
+        public function setLabel($label)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabel()
+        {
+        }
+        /**
+         * Required. The value of the enum option.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\ParameterMetadataEnumOption registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Optional. The label to display for the enum option.
-     *
-     * @param string $label
-     */
-    public function setLabel($label)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLabel()
-    {
-    }
-    /**
-     * Required. The value of the enum option.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_Dataflow_ParameterMetadataEnumOption extends \Google\Service\Dataflow\ParameterMetadataEnumOption
     {
     }
 }

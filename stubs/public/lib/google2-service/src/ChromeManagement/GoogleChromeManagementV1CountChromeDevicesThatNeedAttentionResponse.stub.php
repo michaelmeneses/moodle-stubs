@@ -21,112 +21,121 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1CountChromeDevicesThatNeedAttentionResponse extends \Google\Model
-{
-    /**
-     * Number of ChromeOS devices have not synced policies in the past 28 days.
-     *
-     * @var string
-     */
-    public $noRecentPolicySyncCount;
-    /**
-     * Number of ChromeOS devices that have not seen any user activity in the past
-     * 28 days.
-     *
-     * @var string
-     */
-    public $noRecentUserActivityCount;
-    /**
-     * Number of devices whose OS version is not compliant.
-     *
-     * @var string
-     */
-    public $osVersionNotCompliantCount;
-    /**
-     * Number of devices that are pending an OS update.
-     *
-     * @var string
-     */
-    public $pendingUpdate;
-    /**
-     * Number of devices that are unable to apply a policy due to an OS version
-     * mismatch.
-     *
-     * @var string
-     */
-    public $unsupportedPolicyCount;
-    /**
-     * Number of ChromeOS devices have not synced policies in the past 28 days.
-     *
-     * @param string $noRecentPolicySyncCount
-     */
-    public function setNoRecentPolicySyncCount($noRecentPolicySyncCount)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1CountChromeDevicesThatNeedAttentionResponse extends \Google\Model
     {
+        /**
+         * Number of ChromeOS devices have not synced policies in the past 28 days.
+         *
+         * @var string
+         */
+        public $noRecentPolicySyncCount;
+        /**
+         * Number of ChromeOS devices that have not seen any user activity in the past
+         * 28 days.
+         *
+         * @var string
+         */
+        public $noRecentUserActivityCount;
+        /**
+         * Number of devices whose OS version is not compliant.
+         *
+         * @var string
+         */
+        public $osVersionNotCompliantCount;
+        /**
+         * Number of devices that are pending an OS update.
+         *
+         * @var string
+         */
+        public $pendingUpdate;
+        /**
+         * Number of devices that are unable to apply a policy due to an OS version
+         * mismatch.
+         *
+         * @var string
+         */
+        public $unsupportedPolicyCount;
+        /**
+         * Number of ChromeOS devices have not synced policies in the past 28 days.
+         *
+         * @param string $noRecentPolicySyncCount
+         */
+        public function setNoRecentPolicySyncCount($noRecentPolicySyncCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNoRecentPolicySyncCount()
+        {
+        }
+        /**
+         * Number of ChromeOS devices that have not seen any user activity in the past
+         * 28 days.
+         *
+         * @param string $noRecentUserActivityCount
+         */
+        public function setNoRecentUserActivityCount($noRecentUserActivityCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNoRecentUserActivityCount()
+        {
+        }
+        /**
+         * Number of devices whose OS version is not compliant.
+         *
+         * @param string $osVersionNotCompliantCount
+         */
+        public function setOsVersionNotCompliantCount($osVersionNotCompliantCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOsVersionNotCompliantCount()
+        {
+        }
+        /**
+         * Number of devices that are pending an OS update.
+         *
+         * @param string $pendingUpdate
+         */
+        public function setPendingUpdate($pendingUpdate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPendingUpdate()
+        {
+        }
+        /**
+         * Number of devices that are unable to apply a policy due to an OS version
+         * mismatch.
+         *
+         * @param string $unsupportedPolicyCount
+         */
+        public function setUnsupportedPolicyCount($unsupportedPolicyCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUnsupportedPolicyCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1CountChromeDevicesThatNeedAttentionResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNoRecentPolicySyncCount()
-    {
-    }
-    /**
-     * Number of ChromeOS devices that have not seen any user activity in the past
-     * 28 days.
-     *
-     * @param string $noRecentUserActivityCount
-     */
-    public function setNoRecentUserActivityCount($noRecentUserActivityCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNoRecentUserActivityCount()
-    {
-    }
-    /**
-     * Number of devices whose OS version is not compliant.
-     *
-     * @param string $osVersionNotCompliantCount
-     */
-    public function setOsVersionNotCompliantCount($osVersionNotCompliantCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOsVersionNotCompliantCount()
-    {
-    }
-    /**
-     * Number of devices that are pending an OS update.
-     *
-     * @param string $pendingUpdate
-     */
-    public function setPendingUpdate($pendingUpdate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPendingUpdate()
-    {
-    }
-    /**
-     * Number of devices that are unable to apply a policy due to an OS version
-     * mismatch.
-     *
-     * @param string $unsupportedPolicyCount
-     */
-    public function setUnsupportedPolicyCount($unsupportedPolicyCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUnsupportedPolicyCount()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1CountChromeDevicesThatNeedAttentionResponse extends \Google\Service\ChromeManagement\GoogleChromeManagementV1CountChromeDevicesThatNeedAttentionResponse
     {
     }
 }

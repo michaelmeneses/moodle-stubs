@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class IntelligenceCloudAutomlXpsReportingMetrics extends \Google\Collection
-{
-    protected $collection_key = 'metricEntries';
-    /**
-     * @var string
-     */
-    public $effectiveTrainingDuration;
-    protected $metricEntriesType = IntelligenceCloudAutomlXpsMetricEntry::class;
-    protected $metricEntriesDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setEffectiveTrainingDuration($effectiveTrainingDuration)
+namespace Google\Service\Aiplatform {
+    class IntelligenceCloudAutomlXpsReportingMetrics extends \Google\Collection
     {
+        protected $collection_key = 'metricEntries';
+        /**
+         * @var string
+         */
+        public $effectiveTrainingDuration;
+        protected $metricEntriesType = IntelligenceCloudAutomlXpsMetricEntry::class;
+        protected $metricEntriesDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setEffectiveTrainingDuration($effectiveTrainingDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEffectiveTrainingDuration()
+        {
+        }
+        /**
+         * @param IntelligenceCloudAutomlXpsMetricEntry[]
+         */
+        public function setMetricEntries($metricEntries)
+        {
+        }
+        /**
+         * @return IntelligenceCloudAutomlXpsMetricEntry[]
+         */
+        public function getMetricEntries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\IntelligenceCloudAutomlXpsReportingMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEffectiveTrainingDuration()
-    {
-    }
-    /**
-     * @param IntelligenceCloudAutomlXpsMetricEntry[]
-     */
-    public function setMetricEntries($metricEntries)
-    {
-    }
-    /**
-     * @return IntelligenceCloudAutomlXpsMetricEntry[]
-     */
-    public function getMetricEntries()
+    class Google_Service_Aiplatform_IntelligenceCloudAutomlXpsReportingMetrics extends \Google\Service\Aiplatform\IntelligenceCloudAutomlXpsReportingMetrics
     {
     }
 }

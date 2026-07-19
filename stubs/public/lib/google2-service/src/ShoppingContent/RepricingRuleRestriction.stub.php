@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class RepricingRuleRestriction extends \Google\Model
-{
-    /**
-     * @var RepricingRuleRestrictionBoundary
-     */
-    public $floor;
-    protected $floorType = RepricingRuleRestrictionBoundary::class;
-    protected $floorDataType = '';
-    /**
-     * @var bool
-     */
-    public $useAutoPricingMinPrice;
-    /**
-     * @param RepricingRuleRestrictionBoundary
-     */
-    public function setFloor(RepricingRuleRestrictionBoundary $floor)
+namespace Google\Service\ShoppingContent {
+    class RepricingRuleRestriction extends \Google\Model
     {
+        /**
+         * @var RepricingRuleRestrictionBoundary
+         */
+        public $floor;
+        protected $floorType = RepricingRuleRestrictionBoundary::class;
+        protected $floorDataType = '';
+        /**
+         * @var bool
+         */
+        public $useAutoPricingMinPrice;
+        /**
+         * @param RepricingRuleRestrictionBoundary
+         */
+        public function setFloor(RepricingRuleRestrictionBoundary $floor)
+        {
+        }
+        /**
+         * @return RepricingRuleRestrictionBoundary
+         */
+        public function getFloor()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setUseAutoPricingMinPrice($useAutoPricingMinPrice)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUseAutoPricingMinPrice()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RepricingRuleRestrictionBoundary
+     * Runtime class alias of \Google\Service\ShoppingContent\RepricingRuleRestriction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFloor()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setUseAutoPricingMinPrice($useAutoPricingMinPrice)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUseAutoPricingMinPrice()
+    class Google_Service_ShoppingContent_RepricingRuleRestriction extends \Google\Service\ShoppingContent\RepricingRuleRestriction
     {
     }
 }

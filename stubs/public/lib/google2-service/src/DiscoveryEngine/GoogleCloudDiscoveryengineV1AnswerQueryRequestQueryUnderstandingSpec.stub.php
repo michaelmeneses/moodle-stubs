@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1AnswerQueryRequestQueryUnderstandingSpec extends \Google\Model
-{
-    /**
-     * Optional. Whether to disable spell correction. The default value is
-     * `false`.
-     *
-     * @var bool
-     */
-    public $disableSpellCorrection;
-    protected $queryClassificationSpecType = GoogleCloudDiscoveryengineV1AnswerQueryRequestQueryUnderstandingSpecQueryClassificationSpec::class;
-    protected $queryClassificationSpecDataType = '';
-    protected $queryRephraserSpecType = GoogleCloudDiscoveryengineV1AnswerQueryRequestQueryUnderstandingSpecQueryRephraserSpec::class;
-    protected $queryRephraserSpecDataType = '';
-    /**
-     * Optional. Whether to disable spell correction. The default value is
-     * `false`.
-     *
-     * @param bool $disableSpellCorrection
-     */
-    public function setDisableSpellCorrection($disableSpellCorrection)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1AnswerQueryRequestQueryUnderstandingSpec extends \Google\Model
     {
+        /**
+         * Optional. Whether to disable spell correction. The default value is
+         * `false`.
+         *
+         * @var bool
+         */
+        public $disableSpellCorrection;
+        protected $queryClassificationSpecType = GoogleCloudDiscoveryengineV1AnswerQueryRequestQueryUnderstandingSpecQueryClassificationSpec::class;
+        protected $queryClassificationSpecDataType = '';
+        protected $queryRephraserSpecType = GoogleCloudDiscoveryengineV1AnswerQueryRequestQueryUnderstandingSpecQueryRephraserSpec::class;
+        protected $queryRephraserSpecDataType = '';
+        /**
+         * Optional. Whether to disable spell correction. The default value is
+         * `false`.
+         *
+         * @param bool $disableSpellCorrection
+         */
+        public function setDisableSpellCorrection($disableSpellCorrection)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisableSpellCorrection()
+        {
+        }
+        /**
+         * Query classification specification.
+         *
+         * @param GoogleCloudDiscoveryengineV1AnswerQueryRequestQueryUnderstandingSpecQueryClassificationSpec $queryClassificationSpec
+         */
+        public function setQueryClassificationSpec(GoogleCloudDiscoveryengineV1AnswerQueryRequestQueryUnderstandingSpecQueryClassificationSpec $queryClassificationSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1AnswerQueryRequestQueryUnderstandingSpecQueryClassificationSpec
+         */
+        public function getQueryClassificationSpec()
+        {
+        }
+        /**
+         * Query rephraser specification.
+         *
+         * @param GoogleCloudDiscoveryengineV1AnswerQueryRequestQueryUnderstandingSpecQueryRephraserSpec $queryRephraserSpec
+         */
+        public function setQueryRephraserSpec(GoogleCloudDiscoveryengineV1AnswerQueryRequestQueryUnderstandingSpecQueryRephraserSpec $queryRephraserSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1AnswerQueryRequestQueryUnderstandingSpecQueryRephraserSpec
+         */
+        public function getQueryRephraserSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AnswerQueryRequestQueryUnderstandingSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisableSpellCorrection()
-    {
-    }
-    /**
-     * Query classification specification.
-     *
-     * @param GoogleCloudDiscoveryengineV1AnswerQueryRequestQueryUnderstandingSpecQueryClassificationSpec $queryClassificationSpec
-     */
-    public function setQueryClassificationSpec(GoogleCloudDiscoveryengineV1AnswerQueryRequestQueryUnderstandingSpecQueryClassificationSpec $queryClassificationSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1AnswerQueryRequestQueryUnderstandingSpecQueryClassificationSpec
-     */
-    public function getQueryClassificationSpec()
-    {
-    }
-    /**
-     * Query rephraser specification.
-     *
-     * @param GoogleCloudDiscoveryengineV1AnswerQueryRequestQueryUnderstandingSpecQueryRephraserSpec $queryRephraserSpec
-     */
-    public function setQueryRephraserSpec(GoogleCloudDiscoveryengineV1AnswerQueryRequestQueryUnderstandingSpecQueryRephraserSpec $queryRephraserSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1AnswerQueryRequestQueryUnderstandingSpecQueryRephraserSpec
-     */
-    public function getQueryRephraserSpec()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1AnswerQueryRequestQueryUnderstandingSpec extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AnswerQueryRequestQueryUnderstandingSpec
     {
     }
 }

@@ -21,60 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting\Resource;
-
-/**
- * The "dynamicFeeds" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dfareportingService = new Google\Service\Dfareporting(...);
- *   $dynamicFeeds = $dfareportingService->dynamicFeeds;
- *  </code>
- */
-class DynamicFeeds extends \Google\Service\Resource
-{
+namespace Google\Service\Dfareporting\Resource {
+    use Google\Service\Dfareporting\DynamicFeed;
+    use Google\Service\Dfareporting\DynamicFeedsInsertRequest;
     /**
-     * Gets a dynamic feed by ID. (dynamicFeeds.get)
-     *
-     * @param string $dynamicFeedId Required. Dynamic feed ID.
-     * @param array $optParams Optional parameters.
-     * @return DynamicFeed
-     * @throws \Google\Service\Exception
+     * The "dynamicFeeds" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dfareportingService = new Google\Service\Dfareporting(...);
+     *   $dynamicFeeds = $dfareportingService->dynamicFeeds;
+     *  </code>
      */
-    public function get($dynamicFeedId, $optParams = [])
+    class DynamicFeeds extends \Google\Service\Resource
     {
+        /**
+         * Gets a dynamic feed by ID. (dynamicFeeds.get)
+         *
+         * @param string $dynamicFeedId Required. Dynamic feed ID.
+         * @param array $optParams Optional parameters.
+         * @return DynamicFeed
+         * @throws \Google\Service\Exception
+         */
+        public function get($dynamicFeedId, $optParams = [])
+        {
+        }
+        /**
+         * Inserts a new dynamic feed. (dynamicFeeds.insert)
+         *
+         * @param DynamicFeedsInsertRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return DynamicFeed
+         * @throws \Google\Service\Exception
+         */
+        public function insert(DynamicFeedsInsertRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Retransforms a dynamic feed. (dynamicFeeds.retransform)
+         *
+         * @param string $dynamicFeedId Required. Dynamic feed ID.
+         * @param array $optParams Optional parameters.
+         * @return DynamicFeed
+         * @throws \Google\Service\Exception
+         */
+        public function retransform($dynamicFeedId, $optParams = [])
+        {
+        }
+        /**
+         * Updates a new dynamic feed. (dynamicFeeds.update)
+         *
+         * @param DynamicFeed $postBody
+         * @param array $optParams Optional parameters.
+         * @return DynamicFeed
+         * @throws \Google\Service\Exception
+         */
+        public function update(DynamicFeed $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Inserts a new dynamic feed. (dynamicFeeds.insert)
-     *
-     * @param DynamicFeedsInsertRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return DynamicFeed
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dfareporting\Resource\DynamicFeeds registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function insert(DynamicFeedsInsertRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Retransforms a dynamic feed. (dynamicFeeds.retransform)
-     *
-     * @param string $dynamicFeedId Required. Dynamic feed ID.
-     * @param array $optParams Optional parameters.
-     * @return DynamicFeed
-     * @throws \Google\Service\Exception
-     */
-    public function retransform($dynamicFeedId, $optParams = [])
-    {
-    }
-    /**
-     * Updates a new dynamic feed. (dynamicFeeds.update)
-     *
-     * @param DynamicFeed $postBody
-     * @param array $optParams Optional parameters.
-     * @return DynamicFeed
-     * @throws \Google\Service\Exception
-     */
-    public function update(DynamicFeed $postBody, $optParams = [])
+    class Google_Service_Dfareporting_Resource_DynamicFeeds extends \Google\Service\Dfareporting\Resource\DynamicFeeds
     {
     }
 }

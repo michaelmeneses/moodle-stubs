@@ -21,102 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class PipelineResult extends \Google\Model
-{
-    /**
-     * Default enum type; should not be used.
-     */
-    public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * Default
-     */
-    public const TYPE_STRING = 'STRING';
-    /**
-     * Array type
-     */
-    public const TYPE_ARRAY = 'ARRAY';
-    /**
-     * Object type
-     */
-    public const TYPE_OBJECT = 'OBJECT';
-    /**
-     * Output only. Description of the result.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Output only. Name of the result.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The type of data that the result holds.
-     *
-     * @var string
-     */
-    public $type;
-    protected $valueType = ResultValue::class;
-    protected $valueDataType = '';
-    /**
-     * Output only. Description of the result.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\CloudBuild {
+    class PipelineResult extends \Google\Model
     {
+        /**
+         * Default enum type; should not be used.
+         */
+        public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * Default
+         */
+        public const TYPE_STRING = 'STRING';
+        /**
+         * Array type
+         */
+        public const TYPE_ARRAY = 'ARRAY';
+        /**
+         * Object type
+         */
+        public const TYPE_OBJECT = 'OBJECT';
+        /**
+         * Output only. Description of the result.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Output only. Name of the result.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The type of data that the result holds.
+         *
+         * @var string
+         */
+        public $type;
+        protected $valueType = ResultValue::class;
+        protected $valueDataType = '';
+        /**
+         * Output only. Description of the result.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Output only. Name of the result.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The type of data that the result holds.
+         *
+         * Accepted values: TYPE_UNSPECIFIED, STRING, ARRAY, OBJECT
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
+        /**
+         * Output only. Value of the result.
+         *
+         * @param ResultValue $value
+         */
+        public function setValue(ResultValue $value)
+        {
+        }
+        /**
+         * @return ResultValue
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\PipelineResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Output only. Name of the result.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The type of data that the result holds.
-     *
-     * Accepted values: TYPE_UNSPECIFIED, STRING, ARRAY, OBJECT
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
-    {
-    }
-    /**
-     * Output only. Value of the result.
-     *
-     * @param ResultValue $value
-     */
-    public function setValue(ResultValue $value)
-    {
-    }
-    /**
-     * @return ResultValue
-     */
-    public function getValue()
+    class Google_Service_CloudBuild_PipelineResult extends \Google\Service\CloudBuild\PipelineResult
     {
     }
 }

@@ -21,121 +21,130 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class AudienceGroupAssignedTargetingOptionDetails extends \Google\Collection
-{
-    protected $collection_key = 'includedFirstPartyAndPartnerAudienceGroups';
-    protected $excludedFirstPartyAndPartnerAudienceGroupType = FirstPartyAndPartnerAudienceGroup::class;
-    protected $excludedFirstPartyAndPartnerAudienceGroupDataType = '';
-    protected $excludedGoogleAudienceGroupType = GoogleAudienceGroup::class;
-    protected $excludedGoogleAudienceGroupDataType = '';
-    protected $includedCombinedAudienceGroupType = CombinedAudienceGroup::class;
-    protected $includedCombinedAudienceGroupDataType = '';
-    protected $includedCustomListGroupType = CustomListGroup::class;
-    protected $includedCustomListGroupDataType = '';
-    protected $includedFirstPartyAndPartnerAudienceGroupsType = FirstPartyAndPartnerAudienceGroup::class;
-    protected $includedFirstPartyAndPartnerAudienceGroupsDataType = 'array';
-    protected $includedGoogleAudienceGroupType = GoogleAudienceGroup::class;
-    protected $includedGoogleAudienceGroupDataType = '';
-    /**
-     * Optional. The first party and partner audience ids and recencies of the
-     * excluded first party and partner audience group. Used for negative
-     * targeting. The COMPLEMENT of the UNION of this group and other excluded
-     * audience groups is used as an INTERSECTION to any positive audience
-     * targeting. All items are logically ‘OR’ of each other.
-     *
-     * @param FirstPartyAndPartnerAudienceGroup $excludedFirstPartyAndPartnerAudienceGroup
-     */
-    public function setExcludedFirstPartyAndPartnerAudienceGroup(FirstPartyAndPartnerAudienceGroup $excludedFirstPartyAndPartnerAudienceGroup)
+namespace Google\Service\DisplayVideo {
+    class AudienceGroupAssignedTargetingOptionDetails extends \Google\Collection
     {
+        protected $collection_key = 'includedFirstPartyAndPartnerAudienceGroups';
+        protected $excludedFirstPartyAndPartnerAudienceGroupType = FirstPartyAndPartnerAudienceGroup::class;
+        protected $excludedFirstPartyAndPartnerAudienceGroupDataType = '';
+        protected $excludedGoogleAudienceGroupType = GoogleAudienceGroup::class;
+        protected $excludedGoogleAudienceGroupDataType = '';
+        protected $includedCombinedAudienceGroupType = CombinedAudienceGroup::class;
+        protected $includedCombinedAudienceGroupDataType = '';
+        protected $includedCustomListGroupType = CustomListGroup::class;
+        protected $includedCustomListGroupDataType = '';
+        protected $includedFirstPartyAndPartnerAudienceGroupsType = FirstPartyAndPartnerAudienceGroup::class;
+        protected $includedFirstPartyAndPartnerAudienceGroupsDataType = 'array';
+        protected $includedGoogleAudienceGroupType = GoogleAudienceGroup::class;
+        protected $includedGoogleAudienceGroupDataType = '';
+        /**
+         * Optional. The first party and partner audience ids and recencies of the
+         * excluded first party and partner audience group. Used for negative
+         * targeting. The COMPLEMENT of the UNION of this group and other excluded
+         * audience groups is used as an INTERSECTION to any positive audience
+         * targeting. All items are logically ‘OR’ of each other.
+         *
+         * @param FirstPartyAndPartnerAudienceGroup $excludedFirstPartyAndPartnerAudienceGroup
+         */
+        public function setExcludedFirstPartyAndPartnerAudienceGroup(FirstPartyAndPartnerAudienceGroup $excludedFirstPartyAndPartnerAudienceGroup)
+        {
+        }
+        /**
+         * @return FirstPartyAndPartnerAudienceGroup
+         */
+        public function getExcludedFirstPartyAndPartnerAudienceGroup()
+        {
+        }
+        /**
+         * Optional. The Google audience ids of the excluded Google audience group.
+         * Used for negative targeting. The COMPLEMENT of the UNION of this group and
+         * other excluded audience groups is used as an INTERSECTION to any positive
+         * audience targeting. Only contains Affinity, In-market and Installed-apps
+         * type Google audiences. All items are logically ‘OR’ of each other.
+         *
+         * @param GoogleAudienceGroup $excludedGoogleAudienceGroup
+         */
+        public function setExcludedGoogleAudienceGroup(GoogleAudienceGroup $excludedGoogleAudienceGroup)
+        {
+        }
+        /**
+         * @return GoogleAudienceGroup
+         */
+        public function getExcludedGoogleAudienceGroup()
+        {
+        }
+        /**
+         * Optional. The combined audience ids of the included combined audience
+         * group. Contains combined audience ids only.
+         *
+         * @param CombinedAudienceGroup $includedCombinedAudienceGroup
+         */
+        public function setIncludedCombinedAudienceGroup(CombinedAudienceGroup $includedCombinedAudienceGroup)
+        {
+        }
+        /**
+         * @return CombinedAudienceGroup
+         */
+        public function getIncludedCombinedAudienceGroup()
+        {
+        }
+        /**
+         * Optional. The custom list ids of the included custom list group. Contains
+         * custom list ids only.
+         *
+         * @param CustomListGroup $includedCustomListGroup
+         */
+        public function setIncludedCustomListGroup(CustomListGroup $includedCustomListGroup)
+        {
+        }
+        /**
+         * @return CustomListGroup
+         */
+        public function getIncludedCustomListGroup()
+        {
+        }
+        /**
+         * Optional. The first party and partner audience ids and recencies of
+         * included first party and partner audience groups. Each first party and
+         * partner audience group contains first party and partner audience ids only.
+         * The relation between each first party and partner audience group is
+         * INTERSECTION, and the result is UNION'ed with other audience groups.
+         * Repeated groups with the same settings will be ignored.
+         *
+         * @param FirstPartyAndPartnerAudienceGroup[] $includedFirstPartyAndPartnerAudienceGroups
+         */
+        public function setIncludedFirstPartyAndPartnerAudienceGroups($includedFirstPartyAndPartnerAudienceGroups)
+        {
+        }
+        /**
+         * @return FirstPartyAndPartnerAudienceGroup[]
+         */
+        public function getIncludedFirstPartyAndPartnerAudienceGroups()
+        {
+        }
+        /**
+         * Optional. The Google audience ids of the included Google audience group.
+         * Contains Google audience ids only.
+         *
+         * @param GoogleAudienceGroup $includedGoogleAudienceGroup
+         */
+        public function setIncludedGoogleAudienceGroup(GoogleAudienceGroup $includedGoogleAudienceGroup)
+        {
+        }
+        /**
+         * @return GoogleAudienceGroup
+         */
+        public function getIncludedGoogleAudienceGroup()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FirstPartyAndPartnerAudienceGroup
+     * Runtime class alias of \Google\Service\DisplayVideo\AudienceGroupAssignedTargetingOptionDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExcludedFirstPartyAndPartnerAudienceGroup()
-    {
-    }
-    /**
-     * Optional. The Google audience ids of the excluded Google audience group.
-     * Used for negative targeting. The COMPLEMENT of the UNION of this group and
-     * other excluded audience groups is used as an INTERSECTION to any positive
-     * audience targeting. Only contains Affinity, In-market and Installed-apps
-     * type Google audiences. All items are logically ‘OR’ of each other.
-     *
-     * @param GoogleAudienceGroup $excludedGoogleAudienceGroup
-     */
-    public function setExcludedGoogleAudienceGroup(GoogleAudienceGroup $excludedGoogleAudienceGroup)
-    {
-    }
-    /**
-     * @return GoogleAudienceGroup
-     */
-    public function getExcludedGoogleAudienceGroup()
-    {
-    }
-    /**
-     * Optional. The combined audience ids of the included combined audience
-     * group. Contains combined audience ids only.
-     *
-     * @param CombinedAudienceGroup $includedCombinedAudienceGroup
-     */
-    public function setIncludedCombinedAudienceGroup(CombinedAudienceGroup $includedCombinedAudienceGroup)
-    {
-    }
-    /**
-     * @return CombinedAudienceGroup
-     */
-    public function getIncludedCombinedAudienceGroup()
-    {
-    }
-    /**
-     * Optional. The custom list ids of the included custom list group. Contains
-     * custom list ids only.
-     *
-     * @param CustomListGroup $includedCustomListGroup
-     */
-    public function setIncludedCustomListGroup(CustomListGroup $includedCustomListGroup)
-    {
-    }
-    /**
-     * @return CustomListGroup
-     */
-    public function getIncludedCustomListGroup()
-    {
-    }
-    /**
-     * Optional. The first party and partner audience ids and recencies of
-     * included first party and partner audience groups. Each first party and
-     * partner audience group contains first party and partner audience ids only.
-     * The relation between each first party and partner audience group is
-     * INTERSECTION, and the result is UNION'ed with other audience groups.
-     * Repeated groups with the same settings will be ignored.
-     *
-     * @param FirstPartyAndPartnerAudienceGroup[] $includedFirstPartyAndPartnerAudienceGroups
-     */
-    public function setIncludedFirstPartyAndPartnerAudienceGroups($includedFirstPartyAndPartnerAudienceGroups)
-    {
-    }
-    /**
-     * @return FirstPartyAndPartnerAudienceGroup[]
-     */
-    public function getIncludedFirstPartyAndPartnerAudienceGroups()
-    {
-    }
-    /**
-     * Optional. The Google audience ids of the included Google audience group.
-     * Contains Google audience ids only.
-     *
-     * @param GoogleAudienceGroup $includedGoogleAudienceGroup
-     */
-    public function setIncludedGoogleAudienceGroup(GoogleAudienceGroup $includedGoogleAudienceGroup)
-    {
-    }
-    /**
-     * @return GoogleAudienceGroup
-     */
-    public function getIncludedGoogleAudienceGroup()
+    class Google_Service_DisplayVideo_AudienceGroupAssignedTargetingOptionDetails extends \Google\Service\DisplayVideo\AudienceGroupAssignedTargetingOptionDetails
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class SelectionItems extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = GoogleAppsCardV1SelectionItem::class;
-    protected $itemsDataType = 'array';
-    /**
-     * An array of the SelectionItem objects.
-     *
-     * @param GoogleAppsCardV1SelectionItem[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\HangoutsChat {
+    class SelectionItems extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = GoogleAppsCardV1SelectionItem::class;
+        protected $itemsDataType = 'array';
+        /**
+         * An array of the SelectionItem objects.
+         *
+         * @param GoogleAppsCardV1SelectionItem[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1SelectionItem[]
+         */
+        public function getItems()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAppsCardV1SelectionItem[]
+     * Runtime class alias of \Google\Service\HangoutsChat\SelectionItems registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
+    class Google_Service_HangoutsChat_SelectionItems extends \Google\Service\HangoutsChat\SelectionItems
     {
     }
 }

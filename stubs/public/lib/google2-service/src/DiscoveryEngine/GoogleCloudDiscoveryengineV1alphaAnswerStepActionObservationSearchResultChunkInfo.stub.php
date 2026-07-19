@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaAnswerStepActionObservationSearchResultChunkInfo extends \Google\Model
-{
-    /**
-     * Chunk resource name.
-     *
-     * @var string
-     */
-    public $chunk;
-    /**
-     * Chunk textual content.
-     *
-     * @var string
-     */
-    public $content;
-    /**
-     * The relevance of the chunk for a given query. Values range from 0.0
-     * (completely irrelevant) to 1.0 (completely relevant). This value is for
-     * informational purpose only. It may change for the same query and chunk at
-     * any time due to a model retraining or change in implementation.
-     *
-     * @var float
-     */
-    public $relevanceScore;
-    /**
-     * Chunk resource name.
-     *
-     * @param string $chunk
-     */
-    public function setChunk($chunk)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaAnswerStepActionObservationSearchResultChunkInfo extends \Google\Model
     {
+        /**
+         * Chunk resource name.
+         *
+         * @var string
+         */
+        public $chunk;
+        /**
+         * Chunk textual content.
+         *
+         * @var string
+         */
+        public $content;
+        /**
+         * The relevance of the chunk for a given query. Values range from 0.0
+         * (completely irrelevant) to 1.0 (completely relevant). This value is for
+         * informational purpose only. It may change for the same query and chunk at
+         * any time due to a model retraining or change in implementation.
+         *
+         * @var float
+         */
+        public $relevanceScore;
+        /**
+         * Chunk resource name.
+         *
+         * @param string $chunk
+         */
+        public function setChunk($chunk)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChunk()
+        {
+        }
+        /**
+         * Chunk textual content.
+         *
+         * @param string $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * The relevance of the chunk for a given query. Values range from 0.0
+         * (completely irrelevant) to 1.0 (completely relevant). This value is for
+         * informational purpose only. It may change for the same query and chunk at
+         * any time due to a model retraining or change in implementation.
+         *
+         * @param float $relevanceScore
+         */
+        public function setRelevanceScore($relevanceScore)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getRelevanceScore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaAnswerStepActionObservationSearchResultChunkInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChunk()
-    {
-    }
-    /**
-     * Chunk textual content.
-     *
-     * @param string $content
-     */
-    public function setContent($content)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContent()
-    {
-    }
-    /**
-     * The relevance of the chunk for a given query. Values range from 0.0
-     * (completely irrelevant) to 1.0 (completely relevant). This value is for
-     * informational purpose only. It may change for the same query and chunk at
-     * any time due to a model retraining or change in implementation.
-     *
-     * @param float $relevanceScore
-     */
-    public function setRelevanceScore($relevanceScore)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getRelevanceScore()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaAnswerStepActionObservationSearchResultChunkInfo extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaAnswerStepActionObservationSearchResultChunkInfo
     {
     }
 }

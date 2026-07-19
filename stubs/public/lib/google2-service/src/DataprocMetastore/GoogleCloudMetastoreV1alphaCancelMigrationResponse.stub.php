@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataprocMetastore;
-
-class GoogleCloudMetastoreV1alphaCancelMigrationResponse extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $migrationExecution;
-    /**
-     * @param string
-     */
-    public function setMigrationExecution($migrationExecution)
+namespace Google\Service\DataprocMetastore {
+    class GoogleCloudMetastoreV1alphaCancelMigrationResponse extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $migrationExecution;
+        /**
+         * @param string
+         */
+        public function setMigrationExecution($migrationExecution)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMigrationExecution()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataprocMetastore\GoogleCloudMetastoreV1alphaCancelMigrationResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMigrationExecution()
+    class Google_Service_DataprocMetastore_GoogleCloudMetastoreV1alphaCancelMigrationResponse extends \Google\Service\DataprocMetastore\GoogleCloudMetastoreV1alphaCancelMigrationResponse
     {
     }
 }

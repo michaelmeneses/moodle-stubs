@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class LocalizedText extends \Google\Model
-{
-    /**
-     * The BCP47 tag for a locale. (e.g. "en-US", "de").
-     *
-     * @var string
-     */
-    public $locale;
-    /**
-     * The text localized in the associated locale.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * The BCP47 tag for a locale. (e.g. "en-US", "de").
-     *
-     * @param string $locale
-     */
-    public function setLocale($locale)
+namespace Google\Service\AndroidEnterprise {
+    class LocalizedText extends \Google\Model
     {
+        /**
+         * The BCP47 tag for a locale. (e.g. "en-US", "de").
+         *
+         * @var string
+         */
+        public $locale;
+        /**
+         * The text localized in the associated locale.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * The BCP47 tag for a locale. (e.g. "en-US", "de").
+         *
+         * @param string $locale
+         */
+        public function setLocale($locale)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocale()
+        {
+        }
+        /**
+         * The text localized in the associated locale.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidEnterprise\LocalizedText registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocale()
-    {
-    }
-    /**
-     * The text localized in the associated locale.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_AndroidEnterprise_LocalizedText extends \Google\Service\AndroidEnterprise\LocalizedText
     {
     }
 }

@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class ConfigMapVolumeSource extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    /**
-     * @var int
-     */
-    public $defaultMode;
-    protected $itemsType = KeyToPath::class;
-    protected $itemsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var bool
-     */
-    public $optional;
-    /**
-     * @param int
-     */
-    public function setDefaultMode($defaultMode)
+namespace Google\Service\CloudRun {
+    class ConfigMapVolumeSource extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        /**
+         * @var int
+         */
+        public $defaultMode;
+        protected $itemsType = KeyToPath::class;
+        protected $itemsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var bool
+         */
+        public $optional;
+        /**
+         * @param int
+         */
+        public function setDefaultMode($defaultMode)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDefaultMode()
+        {
+        }
+        /**
+         * @param KeyToPath[]
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return KeyToPath[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setOptional($optional)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getOptional()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudRun\ConfigMapVolumeSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefaultMode()
-    {
-    }
-    /**
-     * @param KeyToPath[]
-     */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return KeyToPath[]
-     */
-    public function getItems()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setOptional($optional)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getOptional()
+    class Google_Service_CloudRun_ConfigMapVolumeSource extends \Google\Service\CloudRun\ConfigMapVolumeSource
     {
     }
 }

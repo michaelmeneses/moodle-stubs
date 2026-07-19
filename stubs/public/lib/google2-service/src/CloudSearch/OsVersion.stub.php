@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class OsVersion extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $majorVersion;
-    /**
-     * @var int
-     */
-    public $minorVersion;
-    /**
-     * @var int
-     */
-    public $tertiaryVersion;
-    /**
-     * @param int
-     */
-    public function setMajorVersion($majorVersion)
+namespace Google\Service\CloudSearch {
+    class OsVersion extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $majorVersion;
+        /**
+         * @var int
+         */
+        public $minorVersion;
+        /**
+         * @var int
+         */
+        public $tertiaryVersion;
+        /**
+         * @param int
+         */
+        public function setMajorVersion($majorVersion)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMajorVersion()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setMinorVersion($minorVersion)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinorVersion()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setTertiaryVersion($tertiaryVersion)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTertiaryVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudSearch\OsVersion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMajorVersion()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setMinorVersion($minorVersion)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinorVersion()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setTertiaryVersion($tertiaryVersion)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTertiaryVersion()
+    class Google_Service_CloudSearch_OsVersion extends \Google\Service\CloudSearch\OsVersion
     {
     }
 }

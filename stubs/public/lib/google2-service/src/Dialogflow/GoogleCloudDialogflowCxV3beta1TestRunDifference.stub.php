@@ -21,77 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3beta1TestRunDifference extends \Google\Model
-{
-    /**
-     * Should never be used.
-     */
-    public const TYPE_DIFF_TYPE_UNSPECIFIED = 'DIFF_TYPE_UNSPECIFIED';
-    /**
-     * The intent.
-     */
-    public const TYPE_INTENT = 'INTENT';
-    /**
-     * The page.
-     */
-    public const TYPE_PAGE = 'PAGE';
-    /**
-     * The parameters.
-     */
-    public const TYPE_PARAMETERS = 'PARAMETERS';
-    /**
-     * The message utterance.
-     */
-    public const TYPE_UTTERANCE = 'UTTERANCE';
-    /**
-     * The flow.
-     */
-    public const TYPE_FLOW = 'FLOW';
-    /**
-     * A human readable description of the diff, showing the actual output vs
-     * expected output.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The type of diff.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * A human readable description of the diff, showing the actual output vs
-     * expected output.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3beta1TestRunDifference extends \Google\Model
     {
+        /**
+         * Should never be used.
+         */
+        public const TYPE_DIFF_TYPE_UNSPECIFIED = 'DIFF_TYPE_UNSPECIFIED';
+        /**
+         * The intent.
+         */
+        public const TYPE_INTENT = 'INTENT';
+        /**
+         * The page.
+         */
+        public const TYPE_PAGE = 'PAGE';
+        /**
+         * The parameters.
+         */
+        public const TYPE_PARAMETERS = 'PARAMETERS';
+        /**
+         * The message utterance.
+         */
+        public const TYPE_UTTERANCE = 'UTTERANCE';
+        /**
+         * The flow.
+         */
+        public const TYPE_FLOW = 'FLOW';
+        /**
+         * A human readable description of the diff, showing the actual output vs
+         * expected output.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The type of diff.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * A human readable description of the diff, showing the actual output vs
+         * expected output.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The type of diff.
+         *
+         * Accepted values: DIFF_TYPE_UNSPECIFIED, INTENT, PAGE, PARAMETERS,
+         * UTTERANCE, FLOW
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1TestRunDifference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * The type of diff.
-     *
-     * Accepted values: DIFF_TYPE_UNSPECIFIED, INTENT, PAGE, PARAMETERS,
-     * UTTERANCE, FLOW
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3beta1TestRunDifference extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1TestRunDifference
     {
     }
 }

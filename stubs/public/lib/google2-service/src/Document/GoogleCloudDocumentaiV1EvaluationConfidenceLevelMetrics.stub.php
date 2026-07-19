@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1EvaluationConfidenceLevelMetrics extends \Google\Model
-{
-    /**
-     * The confidence level.
-     *
-     * @var float
-     */
-    public $confidenceLevel;
-    protected $metricsType = GoogleCloudDocumentaiV1EvaluationMetrics::class;
-    protected $metricsDataType = '';
-    /**
-     * The confidence level.
-     *
-     * @param float $confidenceLevel
-     */
-    public function setConfidenceLevel($confidenceLevel)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1EvaluationConfidenceLevelMetrics extends \Google\Model
     {
+        /**
+         * The confidence level.
+         *
+         * @var float
+         */
+        public $confidenceLevel;
+        protected $metricsType = GoogleCloudDocumentaiV1EvaluationMetrics::class;
+        protected $metricsDataType = '';
+        /**
+         * The confidence level.
+         *
+         * @param float $confidenceLevel
+         */
+        public function setConfidenceLevel($confidenceLevel)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidenceLevel()
+        {
+        }
+        /**
+         * The metrics at the specific confidence level.
+         *
+         * @param GoogleCloudDocumentaiV1EvaluationMetrics $metrics
+         */
+        public function setMetrics(GoogleCloudDocumentaiV1EvaluationMetrics $metrics)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1EvaluationMetrics
+         */
+        public function getMetrics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1EvaluationConfidenceLevelMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfidenceLevel()
-    {
-    }
-    /**
-     * The metrics at the specific confidence level.
-     *
-     * @param GoogleCloudDocumentaiV1EvaluationMetrics $metrics
-     */
-    public function setMetrics(GoogleCloudDocumentaiV1EvaluationMetrics $metrics)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1EvaluationMetrics
-     */
-    public function getMetrics()
+    class Google_Service_Document_GoogleCloudDocumentaiV1EvaluationConfidenceLevelMetrics extends \Google\Service\Document\GoogleCloudDocumentaiV1EvaluationConfidenceLevelMetrics
     {
     }
 }

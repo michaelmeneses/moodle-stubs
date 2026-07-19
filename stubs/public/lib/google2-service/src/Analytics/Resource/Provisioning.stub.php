@@ -21,38 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics\Resource;
-
-/**
- * The "provisioning" collection of methods.
- * Typical usage is:
- *  <code>
- *   $analyticsService = new Google\Service\Analytics(...);
- *   $provisioning = $analyticsService->provisioning;
- *  </code>
- */
-class Provisioning extends \Google\Service\Resource
-{
+namespace Google\Service\Analytics\Resource {
+    use Google\Service\Analytics\AccountTicket;
+    use Google\Service\Analytics\AccountTreeRequest;
+    use Google\Service\Analytics\AccountTreeResponse;
     /**
-     * Creates an account ticket. (provisioning.createAccountTicket)
-     *
-     * @param AccountTicket $postBody
-     * @param array $optParams Optional parameters.
-     * @return AccountTicket
-     * @throws \Google\Service\Exception
+     * The "provisioning" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $analyticsService = new Google\Service\Analytics(...);
+     *   $provisioning = $analyticsService->provisioning;
+     *  </code>
      */
-    public function createAccountTicket(AccountTicket $postBody, $optParams = [])
+    class Provisioning extends \Google\Service\Resource
     {
+        /**
+         * Creates an account ticket. (provisioning.createAccountTicket)
+         *
+         * @param AccountTicket $postBody
+         * @param array $optParams Optional parameters.
+         * @return AccountTicket
+         * @throws \Google\Service\Exception
+         */
+        public function createAccountTicket(AccountTicket $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Provision account. (provisioning.createAccountTree)
+         *
+         * @param AccountTreeRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return AccountTreeResponse
+         * @throws \Google\Service\Exception
+         */
+        public function createAccountTree(AccountTreeRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Provision account. (provisioning.createAccountTree)
-     *
-     * @param AccountTreeRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return AccountTreeResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Analytics\Resource\Provisioning registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function createAccountTree(AccountTreeRequest $postBody, $optParams = [])
+    class Google_Service_Analytics_Resource_Provisioning extends \Google\Service\Analytics\Resource\Provisioning
     {
     }
 }

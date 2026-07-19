@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class SubscriptionPurchasesDeferResponse extends \Google\Model
-{
-    /**
-     * The new expiry time for the subscription in milliseconds since the Epoch.
-     *
-     * @var string
-     */
-    public $newExpiryTimeMillis;
-    /**
-     * The new expiry time for the subscription in milliseconds since the Epoch.
-     *
-     * @param string $newExpiryTimeMillis
-     */
-    public function setNewExpiryTimeMillis($newExpiryTimeMillis)
+namespace Google\Service\AndroidPublisher {
+    class SubscriptionPurchasesDeferResponse extends \Google\Model
     {
+        /**
+         * The new expiry time for the subscription in milliseconds since the Epoch.
+         *
+         * @var string
+         */
+        public $newExpiryTimeMillis;
+        /**
+         * The new expiry time for the subscription in milliseconds since the Epoch.
+         *
+         * @param string $newExpiryTimeMillis
+         */
+        public function setNewExpiryTimeMillis($newExpiryTimeMillis)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNewExpiryTimeMillis()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\SubscriptionPurchasesDeferResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNewExpiryTimeMillis()
+    class Google_Service_AndroidPublisher_SubscriptionPurchasesDeferResponse extends \Google\Service\AndroidPublisher\SubscriptionPurchasesDeferResponse
     {
     }
 }

@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class BooleanRule extends \Google\Model
-{
-    protected $conditionType = BooleanCondition::class;
-    protected $conditionDataType = '';
-    protected $formatType = CellFormat::class;
-    protected $formatDataType = '';
-    /**
-     * The condition of the rule. If the condition evaluates to true, the format
-     * is applied.
-     *
-     * @param BooleanCondition $condition
-     */
-    public function setCondition(BooleanCondition $condition)
+namespace Google\Service\Sheets {
+    class BooleanRule extends \Google\Model
     {
+        protected $conditionType = BooleanCondition::class;
+        protected $conditionDataType = '';
+        protected $formatType = CellFormat::class;
+        protected $formatDataType = '';
+        /**
+         * The condition of the rule. If the condition evaluates to true, the format
+         * is applied.
+         *
+         * @param BooleanCondition $condition
+         */
+        public function setCondition(BooleanCondition $condition)
+        {
+        }
+        /**
+         * @return BooleanCondition
+         */
+        public function getCondition()
+        {
+        }
+        /**
+         * The format to apply. Conditional formatting can only apply a subset of
+         * formatting: bold, italic, strikethrough, foreground color and, background
+         * color.
+         *
+         * @param CellFormat $format
+         */
+        public function setFormat(CellFormat $format)
+        {
+        }
+        /**
+         * @return CellFormat
+         */
+        public function getFormat()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BooleanCondition
+     * Runtime class alias of \Google\Service\Sheets\BooleanRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCondition()
-    {
-    }
-    /**
-     * The format to apply. Conditional formatting can only apply a subset of
-     * formatting: bold, italic, strikethrough, foreground color and, background
-     * color.
-     *
-     * @param CellFormat $format
-     */
-    public function setFormat(CellFormat $format)
-    {
-    }
-    /**
-     * @return CellFormat
-     */
-    public function getFormat()
+    class Google_Service_Sheets_BooleanRule extends \Google\Service\Sheets\BooleanRule
     {
     }
 }

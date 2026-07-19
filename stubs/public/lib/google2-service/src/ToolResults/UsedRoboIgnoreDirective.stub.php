@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class UsedRoboIgnoreDirective extends \Google\Model
-{
-    /**
-     * The name of the resource that was ignored.
-     *
-     * @var string
-     */
-    public $resourceName;
-    /**
-     * The name of the resource that was ignored.
-     *
-     * @param string $resourceName
-     */
-    public function setResourceName($resourceName)
+namespace Google\Service\ToolResults {
+    class UsedRoboIgnoreDirective extends \Google\Model
     {
+        /**
+         * The name of the resource that was ignored.
+         *
+         * @var string
+         */
+        public $resourceName;
+        /**
+         * The name of the resource that was ignored.
+         *
+         * @param string $resourceName
+         */
+        public function setResourceName($resourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ToolResults\UsedRoboIgnoreDirective registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResourceName()
+    class Google_Service_ToolResults_UsedRoboIgnoreDirective extends \Google\Service\ToolResults\UsedRoboIgnoreDirective
     {
     }
 }

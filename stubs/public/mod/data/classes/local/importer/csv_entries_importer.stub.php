@@ -22,6 +22,13 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_data\local\importer;
 
+use context_module;
+use core_php_time_limit;
+use core_tag_tag;
+use core_user;
+use csv_import_reader;
+use moodle_exception;
+use stdClass;
 /**
  * CSV entries_importer class for importing data and - if needed - files as well from a zip archive.
  *

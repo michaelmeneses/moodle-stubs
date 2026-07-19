@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class EmbeddedChart extends \Google\Model
-{
-    protected $borderType = EmbeddedObjectBorder::class;
-    protected $borderDataType = '';
-    /**
-     * The ID of the chart.
-     *
-     * @var int
-     */
-    public $chartId;
-    protected $positionType = EmbeddedObjectPosition::class;
-    protected $positionDataType = '';
-    protected $specType = ChartSpec::class;
-    protected $specDataType = '';
-    /**
-     * The border of the chart.
-     *
-     * @param EmbeddedObjectBorder $border
-     */
-    public function setBorder(EmbeddedObjectBorder $border)
+namespace Google\Service\Sheets {
+    class EmbeddedChart extends \Google\Model
     {
+        protected $borderType = EmbeddedObjectBorder::class;
+        protected $borderDataType = '';
+        /**
+         * The ID of the chart.
+         *
+         * @var int
+         */
+        public $chartId;
+        protected $positionType = EmbeddedObjectPosition::class;
+        protected $positionDataType = '';
+        protected $specType = ChartSpec::class;
+        protected $specDataType = '';
+        /**
+         * The border of the chart.
+         *
+         * @param EmbeddedObjectBorder $border
+         */
+        public function setBorder(EmbeddedObjectBorder $border)
+        {
+        }
+        /**
+         * @return EmbeddedObjectBorder
+         */
+        public function getBorder()
+        {
+        }
+        /**
+         * The ID of the chart.
+         *
+         * @param int $chartId
+         */
+        public function setChartId($chartId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getChartId()
+        {
+        }
+        /**
+         * The position of the chart.
+         *
+         * @param EmbeddedObjectPosition $position
+         */
+        public function setPosition(EmbeddedObjectPosition $position)
+        {
+        }
+        /**
+         * @return EmbeddedObjectPosition
+         */
+        public function getPosition()
+        {
+        }
+        /**
+         * The specification of the chart.
+         *
+         * @param ChartSpec $spec
+         */
+        public function setSpec(ChartSpec $spec)
+        {
+        }
+        /**
+         * @return ChartSpec
+         */
+        public function getSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EmbeddedObjectBorder
+     * Runtime class alias of \Google\Service\Sheets\EmbeddedChart registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBorder()
-    {
-    }
-    /**
-     * The ID of the chart.
-     *
-     * @param int $chartId
-     */
-    public function setChartId($chartId)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getChartId()
-    {
-    }
-    /**
-     * The position of the chart.
-     *
-     * @param EmbeddedObjectPosition $position
-     */
-    public function setPosition(EmbeddedObjectPosition $position)
-    {
-    }
-    /**
-     * @return EmbeddedObjectPosition
-     */
-    public function getPosition()
-    {
-    }
-    /**
-     * The specification of the chart.
-     *
-     * @param ChartSpec $spec
-     */
-    public function setSpec(ChartSpec $spec)
-    {
-    }
-    /**
-     * @return ChartSpec
-     */
-    public function getSpec()
+    class Google_Service_Sheets_EmbeddedChart extends \Google\Service\Sheets\EmbeddedChart
     {
     }
 }

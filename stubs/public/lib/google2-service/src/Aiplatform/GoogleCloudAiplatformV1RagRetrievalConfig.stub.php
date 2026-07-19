@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RagRetrievalConfig extends \Google\Model
-{
-    protected $filterType = GoogleCloudAiplatformV1RagRetrievalConfigFilter::class;
-    protected $filterDataType = '';
-    protected $rankingType = GoogleCloudAiplatformV1RagRetrievalConfigRanking::class;
-    protected $rankingDataType = '';
-    /**
-     * Optional. The number of contexts to retrieve.
-     *
-     * @var int
-     */
-    public $topK;
-    /**
-     * Optional. Config for filters.
-     *
-     * @param GoogleCloudAiplatformV1RagRetrievalConfigFilter $filter
-     */
-    public function setFilter(GoogleCloudAiplatformV1RagRetrievalConfigFilter $filter)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RagRetrievalConfig extends \Google\Model
     {
+        protected $filterType = GoogleCloudAiplatformV1RagRetrievalConfigFilter::class;
+        protected $filterDataType = '';
+        protected $rankingType = GoogleCloudAiplatformV1RagRetrievalConfigRanking::class;
+        protected $rankingDataType = '';
+        /**
+         * Optional. The number of contexts to retrieve.
+         *
+         * @var int
+         */
+        public $topK;
+        /**
+         * Optional. Config for filters.
+         *
+         * @param GoogleCloudAiplatformV1RagRetrievalConfigFilter $filter
+         */
+        public function setFilter(GoogleCloudAiplatformV1RagRetrievalConfigFilter $filter)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RagRetrievalConfigFilter
+         */
+        public function getFilter()
+        {
+        }
+        /**
+         * Optional. Config for ranking and reranking.
+         *
+         * @param GoogleCloudAiplatformV1RagRetrievalConfigRanking $ranking
+         */
+        public function setRanking(GoogleCloudAiplatformV1RagRetrievalConfigRanking $ranking)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RagRetrievalConfigRanking
+         */
+        public function getRanking()
+        {
+        }
+        /**
+         * Optional. The number of contexts to retrieve.
+         *
+         * @param int $topK
+         */
+        public function setTopK($topK)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTopK()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1RagRetrievalConfigFilter
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagRetrievalConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilter()
-    {
-    }
-    /**
-     * Optional. Config for ranking and reranking.
-     *
-     * @param GoogleCloudAiplatformV1RagRetrievalConfigRanking $ranking
-     */
-    public function setRanking(GoogleCloudAiplatformV1RagRetrievalConfigRanking $ranking)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1RagRetrievalConfigRanking
-     */
-    public function getRanking()
-    {
-    }
-    /**
-     * Optional. The number of contexts to retrieve.
-     *
-     * @param int $topK
-     */
-    public function setTopK($topK)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTopK()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RagRetrievalConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagRetrievalConfig
     {
     }
 }

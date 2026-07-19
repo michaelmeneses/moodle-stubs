@@ -21,177 +21,186 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class LeaseWorkItemRequest extends \Google\Collection
-{
-    protected $collection_key = 'workerCapabilities';
-    /**
-     * The current timestamp at the worker.
-     *
-     * @var string
-     */
-    public $currentWorkerTime;
-    /**
-     * The [regional endpoint]
-     * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that
-     * contains the WorkItem's job.
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * Optional. The project number of the project this worker belongs to.
-     *
-     * @var string
-     */
-    public $projectNumber;
-    /**
-     * The initial lease period.
-     *
-     * @var string
-     */
-    public $requestedLeaseDuration;
-    /**
-     * Untranslated bag-of-bytes WorkRequest from UnifiedWorker.
-     *
-     * @var array[]
-     */
-    public $unifiedWorkerRequest;
-    /**
-     * Filter for WorkItem type.
-     *
-     * @var string[]
-     */
-    public $workItemTypes;
-    /**
-     * Worker capabilities. WorkItems might be limited to workers with specific
-     * capabilities.
-     *
-     * @var string[]
-     */
-    public $workerCapabilities;
-    /**
-     * Identifies the worker leasing work -- typically the ID of the virtual
-     * machine running the worker.
-     *
-     * @var string
-     */
-    public $workerId;
-    /**
-     * The current timestamp at the worker.
-     *
-     * @param string $currentWorkerTime
-     */
-    public function setCurrentWorkerTime($currentWorkerTime)
+namespace Google\Service\Dataflow {
+    class LeaseWorkItemRequest extends \Google\Collection
     {
+        protected $collection_key = 'workerCapabilities';
+        /**
+         * The current timestamp at the worker.
+         *
+         * @var string
+         */
+        public $currentWorkerTime;
+        /**
+         * The [regional endpoint]
+         * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that
+         * contains the WorkItem's job.
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * Optional. The project number of the project this worker belongs to.
+         *
+         * @var string
+         */
+        public $projectNumber;
+        /**
+         * The initial lease period.
+         *
+         * @var string
+         */
+        public $requestedLeaseDuration;
+        /**
+         * Untranslated bag-of-bytes WorkRequest from UnifiedWorker.
+         *
+         * @var array[]
+         */
+        public $unifiedWorkerRequest;
+        /**
+         * Filter for WorkItem type.
+         *
+         * @var string[]
+         */
+        public $workItemTypes;
+        /**
+         * Worker capabilities. WorkItems might be limited to workers with specific
+         * capabilities.
+         *
+         * @var string[]
+         */
+        public $workerCapabilities;
+        /**
+         * Identifies the worker leasing work -- typically the ID of the virtual
+         * machine running the worker.
+         *
+         * @var string
+         */
+        public $workerId;
+        /**
+         * The current timestamp at the worker.
+         *
+         * @param string $currentWorkerTime
+         */
+        public function setCurrentWorkerTime($currentWorkerTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrentWorkerTime()
+        {
+        }
+        /**
+         * The [regional endpoint]
+         * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that
+         * contains the WorkItem's job.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * Optional. The project number of the project this worker belongs to.
+         *
+         * @param string $projectNumber
+         */
+        public function setProjectNumber($projectNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectNumber()
+        {
+        }
+        /**
+         * The initial lease period.
+         *
+         * @param string $requestedLeaseDuration
+         */
+        public function setRequestedLeaseDuration($requestedLeaseDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestedLeaseDuration()
+        {
+        }
+        /**
+         * Untranslated bag-of-bytes WorkRequest from UnifiedWorker.
+         *
+         * @param array[] $unifiedWorkerRequest
+         */
+        public function setUnifiedWorkerRequest($unifiedWorkerRequest)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getUnifiedWorkerRequest()
+        {
+        }
+        /**
+         * Filter for WorkItem type.
+         *
+         * @param string[] $workItemTypes
+         */
+        public function setWorkItemTypes($workItemTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getWorkItemTypes()
+        {
+        }
+        /**
+         * Worker capabilities. WorkItems might be limited to workers with specific
+         * capabilities.
+         *
+         * @param string[] $workerCapabilities
+         */
+        public function setWorkerCapabilities($workerCapabilities)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getWorkerCapabilities()
+        {
+        }
+        /**
+         * Identifies the worker leasing work -- typically the ID of the virtual
+         * machine running the worker.
+         *
+         * @param string $workerId
+         */
+        public function setWorkerId($workerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWorkerId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\LeaseWorkItemRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCurrentWorkerTime()
-    {
-    }
-    /**
-     * The [regional endpoint]
-     * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that
-     * contains the WorkItem's job.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * Optional. The project number of the project this worker belongs to.
-     *
-     * @param string $projectNumber
-     */
-    public function setProjectNumber($projectNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectNumber()
-    {
-    }
-    /**
-     * The initial lease period.
-     *
-     * @param string $requestedLeaseDuration
-     */
-    public function setRequestedLeaseDuration($requestedLeaseDuration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestedLeaseDuration()
-    {
-    }
-    /**
-     * Untranslated bag-of-bytes WorkRequest from UnifiedWorker.
-     *
-     * @param array[] $unifiedWorkerRequest
-     */
-    public function setUnifiedWorkerRequest($unifiedWorkerRequest)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getUnifiedWorkerRequest()
-    {
-    }
-    /**
-     * Filter for WorkItem type.
-     *
-     * @param string[] $workItemTypes
-     */
-    public function setWorkItemTypes($workItemTypes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getWorkItemTypes()
-    {
-    }
-    /**
-     * Worker capabilities. WorkItems might be limited to workers with specific
-     * capabilities.
-     *
-     * @param string[] $workerCapabilities
-     */
-    public function setWorkerCapabilities($workerCapabilities)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getWorkerCapabilities()
-    {
-    }
-    /**
-     * Identifies the worker leasing work -- typically the ID of the virtual
-     * machine running the worker.
-     *
-     * @param string $workerId
-     */
-    public function setWorkerId($workerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWorkerId()
+    class Google_Service_Dataflow_LeaseWorkItemRequest extends \Google\Service\Dataflow\LeaseWorkItemRequest
     {
     }
 }

@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_history;
 
+use core_question\local\bank\question_edit_contexts;
+use core_question\local\bank\view;
+use moodle_url;
+use stdClass;
 /**
  * Custom view class for the history page.
  *

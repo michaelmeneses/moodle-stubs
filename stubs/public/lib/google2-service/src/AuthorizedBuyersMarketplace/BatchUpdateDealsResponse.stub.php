@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AuthorizedBuyersMarketplace;
-
-class BatchUpdateDealsResponse extends \Google\Collection
-{
-    protected $collection_key = 'deals';
-    protected $dealsType = Deal::class;
-    protected $dealsDataType = 'array';
-    /**
-     * Deals updated.
-     *
-     * @param Deal[] $deals
-     */
-    public function setDeals($deals)
+namespace Google\Service\AuthorizedBuyersMarketplace {
+    class BatchUpdateDealsResponse extends \Google\Collection
     {
+        protected $collection_key = 'deals';
+        protected $dealsType = Deal::class;
+        protected $dealsDataType = 'array';
+        /**
+         * Deals updated.
+         *
+         * @param Deal[] $deals
+         */
+        public function setDeals($deals)
+        {
+        }
+        /**
+         * @return Deal[]
+         */
+        public function getDeals()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Deal[]
+     * Runtime class alias of \Google\Service\AuthorizedBuyersMarketplace\BatchUpdateDealsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeals()
+    class Google_Service_AuthorizedBuyersMarketplace_BatchUpdateDealsResponse extends \Google\Service\AuthorizedBuyersMarketplace\BatchUpdateDealsResponse
     {
     }
 }

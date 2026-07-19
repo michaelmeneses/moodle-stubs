@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1alpha1AnnotatorSelectorQaConfigScorecardList extends \Google\Collection
-{
-    protected $collection_key = 'qaScorecardRevisions';
-    /**
-     * List of QaScorecardRevisions.
-     *
-     * @var string[]
-     */
-    public $qaScorecardRevisions;
-    /**
-     * List of QaScorecardRevisions.
-     *
-     * @param string[] $qaScorecardRevisions
-     */
-    public function setQaScorecardRevisions($qaScorecardRevisions)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1alpha1AnnotatorSelectorQaConfigScorecardList extends \Google\Collection
     {
+        protected $collection_key = 'qaScorecardRevisions';
+        /**
+         * List of QaScorecardRevisions.
+         *
+         * @var string[]
+         */
+        public $qaScorecardRevisions;
+        /**
+         * List of QaScorecardRevisions.
+         *
+         * @param string[] $qaScorecardRevisions
+         */
+        public function setQaScorecardRevisions($qaScorecardRevisions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getQaScorecardRevisions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1AnnotatorSelectorQaConfigScorecardList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getQaScorecardRevisions()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1alpha1AnnotatorSelectorQaConfigScorecardList extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1AnnotatorSelectorQaConfigScorecardList
     {
     }
 }

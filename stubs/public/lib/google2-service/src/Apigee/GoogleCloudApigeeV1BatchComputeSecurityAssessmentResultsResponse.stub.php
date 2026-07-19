@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1BatchComputeSecurityAssessmentResultsResponse extends \Google\Collection
-{
-    protected $collection_key = 'securityAssessmentResults';
-    /**
-     * The time of the assessment api call.
-     *
-     * @var string
-     */
-    public $assessmentTime;
-    /**
-     * A token that can be sent as `page_token` to retrieve the next page. If this
-     * field is blank, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $securityAssessmentResultsType = GoogleCloudApigeeV1SecurityAssessmentResult::class;
-    protected $securityAssessmentResultsDataType = 'array';
-    /**
-     * The time of the assessment api call.
-     *
-     * @param string $assessmentTime
-     */
-    public function setAssessmentTime($assessmentTime)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1BatchComputeSecurityAssessmentResultsResponse extends \Google\Collection
     {
+        protected $collection_key = 'securityAssessmentResults';
+        /**
+         * The time of the assessment api call.
+         *
+         * @var string
+         */
+        public $assessmentTime;
+        /**
+         * A token that can be sent as `page_token` to retrieve the next page. If this
+         * field is blank, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $securityAssessmentResultsType = GoogleCloudApigeeV1SecurityAssessmentResult::class;
+        protected $securityAssessmentResultsDataType = 'array';
+        /**
+         * The time of the assessment api call.
+         *
+         * @param string $assessmentTime
+         */
+        public function setAssessmentTime($assessmentTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAssessmentTime()
+        {
+        }
+        /**
+         * A token that can be sent as `page_token` to retrieve the next page. If this
+         * field is blank, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Default sort order is by resource name in alphabetic order.
+         *
+         * @param GoogleCloudApigeeV1SecurityAssessmentResult[] $securityAssessmentResults
+         */
+        public function setSecurityAssessmentResults($securityAssessmentResults)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1SecurityAssessmentResult[]
+         */
+        public function getSecurityAssessmentResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1BatchComputeSecurityAssessmentResultsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssessmentTime()
-    {
-    }
-    /**
-     * A token that can be sent as `page_token` to retrieve the next page. If this
-     * field is blank, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Default sort order is by resource name in alphabetic order.
-     *
-     * @param GoogleCloudApigeeV1SecurityAssessmentResult[] $securityAssessmentResults
-     */
-    public function setSecurityAssessmentResults($securityAssessmentResults)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1SecurityAssessmentResult[]
-     */
-    public function getSecurityAssessmentResults()
+    class Google_Service_Apigee_GoogleCloudApigeeV1BatchComputeSecurityAssessmentResultsResponse extends \Google\Service\Apigee\GoogleCloudApigeeV1BatchComputeSecurityAssessmentResultsResponse
     {
     }
 }

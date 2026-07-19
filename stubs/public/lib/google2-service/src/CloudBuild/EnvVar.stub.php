@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class EnvVar extends \Google\Model
-{
-    /**
-     * Name of the environment variable.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Value of the environment variable.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Name of the environment variable.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\CloudBuild {
+    class EnvVar extends \Google\Model
     {
+        /**
+         * Name of the environment variable.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Value of the environment variable.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Name of the environment variable.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Value of the environment variable.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\EnvVar registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Value of the environment variable.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_CloudBuild_EnvVar extends \Google\Service\CloudBuild\EnvVar
     {
     }
 }

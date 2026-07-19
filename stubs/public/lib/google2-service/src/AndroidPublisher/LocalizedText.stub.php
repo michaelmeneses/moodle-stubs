@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class LocalizedText extends \Google\Model
-{
-    /**
-     * Language localization code (a BCP-47 language tag; for example, "de-AT" for
-     * Austrian German).
-     *
-     * @var string
-     */
-    public $language;
-    /**
-     * The text in the given language.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * Language localization code (a BCP-47 language tag; for example, "de-AT" for
-     * Austrian German).
-     *
-     * @param string $language
-     */
-    public function setLanguage($language)
+namespace Google\Service\AndroidPublisher {
+    class LocalizedText extends \Google\Model
     {
+        /**
+         * Language localization code (a BCP-47 language tag; for example, "de-AT" for
+         * Austrian German).
+         *
+         * @var string
+         */
+        public $language;
+        /**
+         * The text in the given language.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * Language localization code (a BCP-47 language tag; for example, "de-AT" for
+         * Austrian German).
+         *
+         * @param string $language
+         */
+        public function setLanguage($language)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguage()
+        {
+        }
+        /**
+         * The text in the given language.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\LocalizedText registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLanguage()
-    {
-    }
-    /**
-     * The text in the given language.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_AndroidPublisher_LocalizedText extends \Google\Service\AndroidPublisher\LocalizedText
     {
     }
 }

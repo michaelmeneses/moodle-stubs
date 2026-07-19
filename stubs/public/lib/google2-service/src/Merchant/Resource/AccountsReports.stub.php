@@ -21,31 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Merchant\Resource;
-
-/**
- * The "reports" collection of methods.
- * Typical usage is:
- *  <code>
- *   $merchantapiService = new Google\Service\Merchant(...);
- *   $reports = $merchantapiService->accounts_reports;
- *  </code>
- */
-class AccountsReports extends \Google\Service\Resource
-{
+namespace Google\Service\Merchant\Resource {
+    use Google\Service\Merchant\SearchRequest;
+    use Google\Service\Merchant\SearchResponse;
     /**
-     * Retrieves a report defined by a search query. The response might contain
-     * fewer rows than specified by `page_size`. Rely on `next_page_token` to
-     * determine if there are more rows to be requested. (reports.search)
-     *
-     * @param string $parent Required. Id of the account making the call. Must be a
-     * standalone account or an MCA subaccount. Format: accounts/{account}
-     * @param SearchRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SearchResponse
-     * @throws \Google\Service\Exception
+     * The "reports" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $merchantapiService = new Google\Service\Merchant(...);
+     *   $reports = $merchantapiService->accounts_reports;
+     *  </code>
      */
-    public function search($parent, SearchRequest $postBody, $optParams = [])
+    class AccountsReports extends \Google\Service\Resource
+    {
+        /**
+         * Retrieves a report defined by a search query. The response might contain
+         * fewer rows than specified by `page_size`. Rely on `next_page_token` to
+         * determine if there are more rows to be requested. (reports.search)
+         *
+         * @param string $parent Required. Id of the account making the call. Must be a
+         * standalone account or an MCA subaccount. Format: accounts/{account}
+         * @param SearchRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SearchResponse
+         * @throws \Google\Service\Exception
+         */
+        public function search($parent, SearchRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Merchant\Resource\AccountsReports registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Merchant_Resource_AccountsReports extends \Google\Service\Merchant\Resource\AccountsReports
     {
     }
 }

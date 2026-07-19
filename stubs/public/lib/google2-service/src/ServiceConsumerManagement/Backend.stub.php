@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceConsumerManagement;
-
-class Backend extends \Google\Collection
-{
-    protected $collection_key = 'rules';
-    protected $rulesType = BackendRule::class;
-    protected $rulesDataType = 'array';
-    /**
-     * A list of API backend rules that apply to individual API methods. **NOTE:**
-     * All service configuration rules follow "last one wins" order.
-     *
-     * @param BackendRule[] $rules
-     */
-    public function setRules($rules)
+namespace Google\Service\ServiceConsumerManagement {
+    class Backend extends \Google\Collection
     {
+        protected $collection_key = 'rules';
+        protected $rulesType = BackendRule::class;
+        protected $rulesDataType = 'array';
+        /**
+         * A list of API backend rules that apply to individual API methods. **NOTE:**
+         * All service configuration rules follow "last one wins" order.
+         *
+         * @param BackendRule[] $rules
+         */
+        public function setRules($rules)
+        {
+        }
+        /**
+         * @return BackendRule[]
+         */
+        public function getRules()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BackendRule[]
+     * Runtime class alias of \Google\Service\ServiceConsumerManagement\Backend registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRules()
+    class Google_Service_ServiceConsumerManagement_Backend extends \Google\Service\ServiceConsumerManagement\Backend
     {
     }
 }

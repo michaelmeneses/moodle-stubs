@@ -21,224 +21,233 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2JobTrigger extends \Google\Collection
-{
-    /**
-     * Unused.
-     */
-    public const STATUS_STATUS_UNSPECIFIED = 'STATUS_UNSPECIFIED';
-    /**
-     * Trigger is healthy.
-     */
-    public const STATUS_HEALTHY = 'HEALTHY';
-    /**
-     * Trigger is temporarily paused.
-     */
-    public const STATUS_PAUSED = 'PAUSED';
-    /**
-     * Trigger is cancelled and can not be resumed.
-     */
-    public const STATUS_CANCELLED = 'CANCELLED';
-    protected $collection_key = 'triggers';
-    /**
-     * Output only. The creation timestamp of a triggeredJob.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * User provided description (max 256 chars)
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Display name (max 100 chars)
-     *
-     * @var string
-     */
-    public $displayName;
-    protected $errorsType = GooglePrivacyDlpV2Error::class;
-    protected $errorsDataType = 'array';
-    protected $inspectJobType = GooglePrivacyDlpV2InspectJobConfig::class;
-    protected $inspectJobDataType = '';
-    /**
-     * Output only. The timestamp of the last time this trigger executed.
-     *
-     * @var string
-     */
-    public $lastRunTime;
-    /**
-     * Unique resource name for the triggeredJob, assigned by the service when the
-     * triggeredJob is created, for example `projects/dlp-test-
-     * project/jobTriggers/53234423`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. A status for this trigger.
-     *
-     * @var string
-     */
-    public $status;
-    protected $triggersType = GooglePrivacyDlpV2Trigger::class;
-    protected $triggersDataType = 'array';
-    /**
-     * Output only. The last update timestamp of a triggeredJob.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. The creation timestamp of a triggeredJob.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2JobTrigger extends \Google\Collection
     {
+        /**
+         * Unused.
+         */
+        public const STATUS_STATUS_UNSPECIFIED = 'STATUS_UNSPECIFIED';
+        /**
+         * Trigger is healthy.
+         */
+        public const STATUS_HEALTHY = 'HEALTHY';
+        /**
+         * Trigger is temporarily paused.
+         */
+        public const STATUS_PAUSED = 'PAUSED';
+        /**
+         * Trigger is cancelled and can not be resumed.
+         */
+        public const STATUS_CANCELLED = 'CANCELLED';
+        protected $collection_key = 'triggers';
+        /**
+         * Output only. The creation timestamp of a triggeredJob.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * User provided description (max 256 chars)
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Display name (max 100 chars)
+         *
+         * @var string
+         */
+        public $displayName;
+        protected $errorsType = GooglePrivacyDlpV2Error::class;
+        protected $errorsDataType = 'array';
+        protected $inspectJobType = GooglePrivacyDlpV2InspectJobConfig::class;
+        protected $inspectJobDataType = '';
+        /**
+         * Output only. The timestamp of the last time this trigger executed.
+         *
+         * @var string
+         */
+        public $lastRunTime;
+        /**
+         * Unique resource name for the triggeredJob, assigned by the service when the
+         * triggeredJob is created, for example `projects/dlp-test-
+         * project/jobTriggers/53234423`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. A status for this trigger.
+         *
+         * @var string
+         */
+        public $status;
+        protected $triggersType = GooglePrivacyDlpV2Trigger::class;
+        protected $triggersDataType = 'array';
+        /**
+         * Output only. The last update timestamp of a triggeredJob.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. The creation timestamp of a triggeredJob.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * User provided description (max 256 chars)
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Display name (max 100 chars)
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. A stream of errors encountered when the trigger was activated.
+         * Repeated errors may result in the JobTrigger automatically being paused.
+         * Will return the last 100 errors. Whenever the JobTrigger is modified this
+         * list will be cleared.
+         *
+         * @param GooglePrivacyDlpV2Error[] $errors
+         */
+        public function setErrors($errors)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2Error[]
+         */
+        public function getErrors()
+        {
+        }
+        /**
+         * For inspect jobs, a snapshot of the configuration.
+         *
+         * @param GooglePrivacyDlpV2InspectJobConfig $inspectJob
+         */
+        public function setInspectJob(GooglePrivacyDlpV2InspectJobConfig $inspectJob)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2InspectJobConfig
+         */
+        public function getInspectJob()
+        {
+        }
+        /**
+         * Output only. The timestamp of the last time this trigger executed.
+         *
+         * @param string $lastRunTime
+         */
+        public function setLastRunTime($lastRunTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastRunTime()
+        {
+        }
+        /**
+         * Unique resource name for the triggeredJob, assigned by the service when the
+         * triggeredJob is created, for example `projects/dlp-test-
+         * project/jobTriggers/53234423`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. A status for this trigger.
+         *
+         * Accepted values: STATUS_UNSPECIFIED, HEALTHY, PAUSED, CANCELLED
+         *
+         * @param self::STATUS_* $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return self::STATUS_*
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * A list of triggers which will be OR'ed together. Only one in the list needs
+         * to trigger for a job to be started. The list may contain only a single
+         * Schedule trigger and must have at least one object.
+         *
+         * @param GooglePrivacyDlpV2Trigger[] $triggers
+         */
+        public function setTriggers($triggers)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2Trigger[]
+         */
+        public function getTriggers()
+        {
+        }
+        /**
+         * Output only. The last update timestamp of a triggeredJob.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2JobTrigger registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * User provided description (max 256 chars)
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Display name (max 100 chars)
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. A stream of errors encountered when the trigger was activated.
-     * Repeated errors may result in the JobTrigger automatically being paused.
-     * Will return the last 100 errors. Whenever the JobTrigger is modified this
-     * list will be cleared.
-     *
-     * @param GooglePrivacyDlpV2Error[] $errors
-     */
-    public function setErrors($errors)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2Error[]
-     */
-    public function getErrors()
-    {
-    }
-    /**
-     * For inspect jobs, a snapshot of the configuration.
-     *
-     * @param GooglePrivacyDlpV2InspectJobConfig $inspectJob
-     */
-    public function setInspectJob(GooglePrivacyDlpV2InspectJobConfig $inspectJob)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2InspectJobConfig
-     */
-    public function getInspectJob()
-    {
-    }
-    /**
-     * Output only. The timestamp of the last time this trigger executed.
-     *
-     * @param string $lastRunTime
-     */
-    public function setLastRunTime($lastRunTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastRunTime()
-    {
-    }
-    /**
-     * Unique resource name for the triggeredJob, assigned by the service when the
-     * triggeredJob is created, for example `projects/dlp-test-
-     * project/jobTriggers/53234423`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Required. A status for this trigger.
-     *
-     * Accepted values: STATUS_UNSPECIFIED, HEALTHY, PAUSED, CANCELLED
-     *
-     * @param self::STATUS_* $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return self::STATUS_*
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * A list of triggers which will be OR'ed together. Only one in the list needs
-     * to trigger for a job to be started. The list may contain only a single
-     * Schedule trigger and must have at least one object.
-     *
-     * @param GooglePrivacyDlpV2Trigger[] $triggers
-     */
-    public function setTriggers($triggers)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2Trigger[]
-     */
-    public function getTriggers()
-    {
-    }
-    /**
-     * Output only. The last update timestamp of a triggeredJob.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_DLP_GooglePrivacyDlpV2JobTrigger extends \Google\Service\DLP\GooglePrivacyDlpV2JobTrigger
     {
     }
 }

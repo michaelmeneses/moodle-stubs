@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class InstancesImportRequest extends \Google\Model
-{
-    protected $importContextType = ImportContext::class;
-    protected $importContextDataType = '';
-    /**
-     * Contains details about the import operation.
-     *
-     * @param ImportContext $importContext
-     */
-    public function setImportContext(ImportContext $importContext)
+namespace Google\Service\SQLAdmin {
+    class InstancesImportRequest extends \Google\Model
     {
+        protected $importContextType = ImportContext::class;
+        protected $importContextDataType = '';
+        /**
+         * Contains details about the import operation.
+         *
+         * @param ImportContext $importContext
+         */
+        public function setImportContext(ImportContext $importContext)
+        {
+        }
+        /**
+         * @return ImportContext
+         */
+        public function getImportContext()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ImportContext
+     * Runtime class alias of \Google\Service\SQLAdmin\InstancesImportRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImportContext()
+    class Google_Service_SQLAdmin_InstancesImportRequest extends \Google\Service\SQLAdmin\InstancesImportRequest
     {
     }
 }

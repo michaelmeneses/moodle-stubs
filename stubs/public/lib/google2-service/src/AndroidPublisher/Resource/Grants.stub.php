@@ -21,58 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher\Resource;
-
-/**
- * The "grants" collection of methods.
- * Typical usage is:
- *  <code>
- *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
- *   $grants = $androidpublisherService->grants;
- *  </code>
- */
-class Grants extends \Google\Service\Resource
-{
+namespace Google\Service\AndroidPublisher\Resource {
+    use Google\Service\AndroidPublisher\Grant;
     /**
-     * Grant access for a user to the given package. (grants.create)
-     *
-     * @param string $parent Required. The user which needs permission. Format:
-     * developers/{developer}/users/{user}
-     * @param Grant $postBody
-     * @param array $optParams Optional parameters.
-     * @return Grant
-     * @throws \Google\Service\Exception
+     * The "grants" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
+     *   $grants = $androidpublisherService->grants;
+     *  </code>
      */
-    public function create($parent, Grant $postBody, $optParams = [])
+    class Grants extends \Google\Service\Resource
     {
+        /**
+         * Grant access for a user to the given package. (grants.create)
+         *
+         * @param string $parent Required. The user which needs permission. Format:
+         * developers/{developer}/users/{user}
+         * @param Grant $postBody
+         * @param array $optParams Optional parameters.
+         * @return Grant
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, Grant $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Removes all access for the user to the given package or developer account.
+         * (grants.delete)
+         *
+         * @param string $name Required. The name of the grant to delete. Format:
+         * developers/{developer}/users/{email}/grants/{package_name}
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Updates access for the user to the given package. (grants.patch)
+         *
+         * @param string $name Required. Resource name for this grant, following the
+         * pattern "developers/{developer}/users/{email}/grants/{package_name}". If this
+         * grant is for a draft app, the app ID will be used in this resource name
+         * instead of the package name.
+         * @param Grant $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Optional. The list of fields to be updated.
+         * @return Grant
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, Grant $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Removes all access for the user to the given package or developer account.
-     * (grants.delete)
-     *
-     * @param string $name Required. The name of the grant to delete. Format:
-     * developers/{developer}/users/{email}/grants/{package_name}
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AndroidPublisher\Resource\Grants registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Updates access for the user to the given package. (grants.patch)
-     *
-     * @param string $name Required. Resource name for this grant, following the
-     * pattern "developers/{developer}/users/{email}/grants/{package_name}". If this
-     * grant is for a draft app, the app ID will be used in this resource name
-     * instead of the package name.
-     * @param Grant $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Optional. The list of fields to be updated.
-     * @return Grant
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, Grant $postBody, $optParams = [])
+    class Google_Service_AndroidPublisher_Resource_Grants extends \Google\Service\AndroidPublisher\Resource\Grants
     {
     }
 }

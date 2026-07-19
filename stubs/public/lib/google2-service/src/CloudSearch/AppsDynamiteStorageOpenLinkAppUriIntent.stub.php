@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteStorageOpenLinkAppUriIntent extends \Google\Collection
-{
-    protected $collection_key = 'extraData';
-    protected $extraDataType = AppsDynamiteStorageOpenLinkAppUriIntentExtraData::class;
-    protected $extraDataDataType = 'array';
-    /**
-     * @var string
-     */
-    public $intentAction;
-    /**
-     * @param AppsDynamiteStorageOpenLinkAppUriIntentExtraData[]
-     */
-    public function setExtraData($extraData)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteStorageOpenLinkAppUriIntent extends \Google\Collection
     {
+        protected $collection_key = 'extraData';
+        protected $extraDataType = AppsDynamiteStorageOpenLinkAppUriIntentExtraData::class;
+        protected $extraDataDataType = 'array';
+        /**
+         * @var string
+         */
+        public $intentAction;
+        /**
+         * @param AppsDynamiteStorageOpenLinkAppUriIntentExtraData[]
+         */
+        public function setExtraData($extraData)
+        {
+        }
+        /**
+         * @return AppsDynamiteStorageOpenLinkAppUriIntentExtraData[]
+         */
+        public function getExtraData()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setIntentAction($intentAction)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIntentAction()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteStorageOpenLinkAppUriIntentExtraData[]
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteStorageOpenLinkAppUriIntent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExtraData()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setIntentAction($intentAction)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIntentAction()
+    class Google_Service_CloudSearch_AppsDynamiteStorageOpenLinkAppUriIntent extends \Google\Service\CloudSearch\AppsDynamiteStorageOpenLinkAppUriIntent
     {
     }
 }

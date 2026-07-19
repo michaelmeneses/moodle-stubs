@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class ChangeQuorumMetadata extends \Google\Model
-{
-    /**
-     * If set, the time at which this operation failed or was completed
-     * successfully.
-     *
-     * @var string
-     */
-    public $endTime;
-    protected $requestType = ChangeQuorumRequest::class;
-    protected $requestDataType = '';
-    /**
-     * Time the request was received.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * If set, the time at which this operation failed or was completed
-     * successfully.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\Spanner {
+    class ChangeQuorumMetadata extends \Google\Model
     {
+        /**
+         * If set, the time at which this operation failed or was completed
+         * successfully.
+         *
+         * @var string
+         */
+        public $endTime;
+        protected $requestType = ChangeQuorumRequest::class;
+        protected $requestDataType = '';
+        /**
+         * Time the request was received.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * If set, the time at which this operation failed or was completed
+         * successfully.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * The request for ChangeQuorum.
+         *
+         * @param ChangeQuorumRequest $request
+         */
+        public function setRequest(ChangeQuorumRequest $request)
+        {
+        }
+        /**
+         * @return ChangeQuorumRequest
+         */
+        public function getRequest()
+        {
+        }
+        /**
+         * Time the request was received.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Spanner\ChangeQuorumMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * The request for ChangeQuorum.
-     *
-     * @param ChangeQuorumRequest $request
-     */
-    public function setRequest(ChangeQuorumRequest $request)
-    {
-    }
-    /**
-     * @return ChangeQuorumRequest
-     */
-    public function getRequest()
-    {
-    }
-    /**
-     * Time the request was received.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_Spanner_ChangeQuorumMetadata extends \Google\Service\Spanner\ChangeQuorumMetadata
     {
     }
 }

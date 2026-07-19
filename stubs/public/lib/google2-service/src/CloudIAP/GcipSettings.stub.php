@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIAP;
-
-class GcipSettings extends \Google\Collection
-{
-    protected $collection_key = 'tenantIds';
-    /**
-     * Login page URI associated with the GCIP tenants. Typically, all resources
-     * within the same project share the same login page, though it could be
-     * overridden at the sub resource level.
-     *
-     * @var string
-     */
-    public $loginPageUri;
-    /**
-     * Optional. GCIP tenant IDs that are linked to the IAP resource. `tenant_ids`
-     * could be a string beginning with a number character to indicate
-     * authenticating with GCIP tenant flow, or in the format of `_` to indicate
-     * authenticating with GCIP agent flow. If agent flow is used, `tenant_ids`
-     * should only contain one single element, while for tenant flow, `tenant_ids`
-     * can contain multiple elements.
-     *
-     * @var string[]
-     */
-    public $tenantIds;
-    /**
-     * Login page URI associated with the GCIP tenants. Typically, all resources
-     * within the same project share the same login page, though it could be
-     * overridden at the sub resource level.
-     *
-     * @param string $loginPageUri
-     */
-    public function setLoginPageUri($loginPageUri)
+namespace Google\Service\CloudIAP {
+    class GcipSettings extends \Google\Collection
     {
+        protected $collection_key = 'tenantIds';
+        /**
+         * Login page URI associated with the GCIP tenants. Typically, all resources
+         * within the same project share the same login page, though it could be
+         * overridden at the sub resource level.
+         *
+         * @var string
+         */
+        public $loginPageUri;
+        /**
+         * Optional. GCIP tenant IDs that are linked to the IAP resource. `tenant_ids`
+         * could be a string beginning with a number character to indicate
+         * authenticating with GCIP tenant flow, or in the format of `_` to indicate
+         * authenticating with GCIP agent flow. If agent flow is used, `tenant_ids`
+         * should only contain one single element, while for tenant flow, `tenant_ids`
+         * can contain multiple elements.
+         *
+         * @var string[]
+         */
+        public $tenantIds;
+        /**
+         * Login page URI associated with the GCIP tenants. Typically, all resources
+         * within the same project share the same login page, though it could be
+         * overridden at the sub resource level.
+         *
+         * @param string $loginPageUri
+         */
+        public function setLoginPageUri($loginPageUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLoginPageUri()
+        {
+        }
+        /**
+         * Optional. GCIP tenant IDs that are linked to the IAP resource. `tenant_ids`
+         * could be a string beginning with a number character to indicate
+         * authenticating with GCIP tenant flow, or in the format of `_` to indicate
+         * authenticating with GCIP agent flow. If agent flow is used, `tenant_ids`
+         * should only contain one single element, while for tenant flow, `tenant_ids`
+         * can contain multiple elements.
+         *
+         * @param string[] $tenantIds
+         */
+        public function setTenantIds($tenantIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTenantIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudIAP\GcipSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLoginPageUri()
-    {
-    }
-    /**
-     * Optional. GCIP tenant IDs that are linked to the IAP resource. `tenant_ids`
-     * could be a string beginning with a number character to indicate
-     * authenticating with GCIP tenant flow, or in the format of `_` to indicate
-     * authenticating with GCIP agent flow. If agent flow is used, `tenant_ids`
-     * should only contain one single element, while for tenant flow, `tenant_ids`
-     * can contain multiple elements.
-     *
-     * @param string[] $tenantIds
-     */
-    public function setTenantIds($tenantIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTenantIds()
+    class Google_Service_CloudIAP_GcipSettings extends \Google\Service\CloudIAP\GcipSettings
     {
     }
 }

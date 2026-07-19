@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1IndexStats extends \Google\Model
-{
-    /**
-     * Output only. The number of shards in the Index.
-     *
-     * @var int
-     */
-    public $shardsCount;
-    /**
-     * Output only. The number of sparse vectors in the Index.
-     *
-     * @var string
-     */
-    public $sparseVectorsCount;
-    /**
-     * Output only. The number of dense vectors in the Index.
-     *
-     * @var string
-     */
-    public $vectorsCount;
-    /**
-     * Output only. The number of shards in the Index.
-     *
-     * @param int $shardsCount
-     */
-    public function setShardsCount($shardsCount)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1IndexStats extends \Google\Model
     {
+        /**
+         * Output only. The number of shards in the Index.
+         *
+         * @var int
+         */
+        public $shardsCount;
+        /**
+         * Output only. The number of sparse vectors in the Index.
+         *
+         * @var string
+         */
+        public $sparseVectorsCount;
+        /**
+         * Output only. The number of dense vectors in the Index.
+         *
+         * @var string
+         */
+        public $vectorsCount;
+        /**
+         * Output only. The number of shards in the Index.
+         *
+         * @param int $shardsCount
+         */
+        public function setShardsCount($shardsCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getShardsCount()
+        {
+        }
+        /**
+         * Output only. The number of sparse vectors in the Index.
+         *
+         * @param string $sparseVectorsCount
+         */
+        public function setSparseVectorsCount($sparseVectorsCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSparseVectorsCount()
+        {
+        }
+        /**
+         * Output only. The number of dense vectors in the Index.
+         *
+         * @param string $vectorsCount
+         */
+        public function setVectorsCount($vectorsCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVectorsCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1IndexStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getShardsCount()
-    {
-    }
-    /**
-     * Output only. The number of sparse vectors in the Index.
-     *
-     * @param string $sparseVectorsCount
-     */
-    public function setSparseVectorsCount($sparseVectorsCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSparseVectorsCount()
-    {
-    }
-    /**
-     * Output only. The number of dense vectors in the Index.
-     *
-     * @param string $vectorsCount
-     */
-    public function setVectorsCount($vectorsCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVectorsCount()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1IndexStats extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1IndexStats
     {
     }
 }

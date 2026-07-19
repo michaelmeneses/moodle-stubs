@@ -21,475 +21,484 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Drive;
-
-class TeamDriveCapabilities extends \Google\Model
-{
-    /**
-     * Whether the current user can add children to folders in this Team Drive.
-     *
-     * @var bool
-     */
-    public $canAddChildren;
-    /**
-     * Whether the current user can change the `copyRequiresWriterPermission`
-     * restriction of this Team Drive.
-     *
-     * @var bool
-     */
-    public $canChangeCopyRequiresWriterPermissionRestriction;
-    /**
-     * Whether the current user can change the `domainUsersOnly` restriction of
-     * this Team Drive.
-     *
-     * @var bool
-     */
-    public $canChangeDomainUsersOnlyRestriction;
-    /**
-     * Whether the current user can change organizer-applied download restrictions
-     * of this shared drive.
-     *
-     * @var bool
-     */
-    public $canChangeDownloadRestriction;
-    /**
-     * Whether the current user can change the
-     * `sharingFoldersRequiresOrganizerPermission` restriction of this Team Drive.
-     *
-     * @var bool
-     */
-    public $canChangeSharingFoldersRequiresOrganizerPermissionRestriction;
-    /**
-     * Whether the current user can change the background of this Team Drive.
-     *
-     * @var bool
-     */
-    public $canChangeTeamDriveBackground;
-    /**
-     * Whether the current user can change the `teamMembersOnly` restriction of
-     * this Team Drive.
-     *
-     * @var bool
-     */
-    public $canChangeTeamMembersOnlyRestriction;
-    /**
-     * Whether the current user can comment on files in this Team Drive.
-     *
-     * @var bool
-     */
-    public $canComment;
-    /**
-     * Whether the current user can copy files in this Team Drive.
-     *
-     * @var bool
-     */
-    public $canCopy;
-    /**
-     * Whether the current user can delete children from folders in this Team
-     * Drive.
-     *
-     * @var bool
-     */
-    public $canDeleteChildren;
-    /**
-     * Whether the current user can delete this Team Drive. Attempting to delete
-     * the Team Drive may still fail if there are untrashed items inside the Team
-     * Drive.
-     *
-     * @var bool
-     */
-    public $canDeleteTeamDrive;
-    /**
-     * Whether the current user can download files in this Team Drive.
-     *
-     * @var bool
-     */
-    public $canDownload;
-    /**
-     * Whether the current user can edit files in this Team Drive
-     *
-     * @var bool
-     */
-    public $canEdit;
-    /**
-     * Whether the current user can list the children of folders in this Team
-     * Drive.
-     *
-     * @var bool
-     */
-    public $canListChildren;
-    /**
-     * Whether the current user can add members to this Team Drive or remove them
-     * or change their role.
-     *
-     * @var bool
-     */
-    public $canManageMembers;
-    /**
-     * Whether the current user can read the revisions resource of files in this
-     * Team Drive.
-     *
-     * @var bool
-     */
-    public $canReadRevisions;
-    /**
-     * Deprecated: Use `canDeleteChildren` or `canTrashChildren` instead.
-     *
-     * @deprecated
-     * @var bool
-     */
-    public $canRemoveChildren;
-    /**
-     * Whether the current user can rename files or folders in this Team Drive.
-     *
-     * @var bool
-     */
-    public $canRename;
-    /**
-     * Whether the current user can rename this Team Drive.
-     *
-     * @var bool
-     */
-    public $canRenameTeamDrive;
-    /**
-     * Whether the current user can reset the Team Drive restrictions to defaults.
-     *
-     * @var bool
-     */
-    public $canResetTeamDriveRestrictions;
-    /**
-     * Whether the current user can share files or folders in this Team Drive.
-     *
-     * @var bool
-     */
-    public $canShare;
-    /**
-     * Whether the current user can trash children from folders in this Team
-     * Drive.
-     *
-     * @var bool
-     */
-    public $canTrashChildren;
-    /**
-     * Whether the current user can add children to folders in this Team Drive.
-     *
-     * @param bool $canAddChildren
-     */
-    public function setCanAddChildren($canAddChildren)
+namespace Google\Service\Drive {
+    class TeamDriveCapabilities extends \Google\Model
     {
+        /**
+         * Whether the current user can add children to folders in this Team Drive.
+         *
+         * @var bool
+         */
+        public $canAddChildren;
+        /**
+         * Whether the current user can change the `copyRequiresWriterPermission`
+         * restriction of this Team Drive.
+         *
+         * @var bool
+         */
+        public $canChangeCopyRequiresWriterPermissionRestriction;
+        /**
+         * Whether the current user can change the `domainUsersOnly` restriction of
+         * this Team Drive.
+         *
+         * @var bool
+         */
+        public $canChangeDomainUsersOnlyRestriction;
+        /**
+         * Whether the current user can change organizer-applied download restrictions
+         * of this shared drive.
+         *
+         * @var bool
+         */
+        public $canChangeDownloadRestriction;
+        /**
+         * Whether the current user can change the
+         * `sharingFoldersRequiresOrganizerPermission` restriction of this Team Drive.
+         *
+         * @var bool
+         */
+        public $canChangeSharingFoldersRequiresOrganizerPermissionRestriction;
+        /**
+         * Whether the current user can change the background of this Team Drive.
+         *
+         * @var bool
+         */
+        public $canChangeTeamDriveBackground;
+        /**
+         * Whether the current user can change the `teamMembersOnly` restriction of
+         * this Team Drive.
+         *
+         * @var bool
+         */
+        public $canChangeTeamMembersOnlyRestriction;
+        /**
+         * Whether the current user can comment on files in this Team Drive.
+         *
+         * @var bool
+         */
+        public $canComment;
+        /**
+         * Whether the current user can copy files in this Team Drive.
+         *
+         * @var bool
+         */
+        public $canCopy;
+        /**
+         * Whether the current user can delete children from folders in this Team
+         * Drive.
+         *
+         * @var bool
+         */
+        public $canDeleteChildren;
+        /**
+         * Whether the current user can delete this Team Drive. Attempting to delete
+         * the Team Drive may still fail if there are untrashed items inside the Team
+         * Drive.
+         *
+         * @var bool
+         */
+        public $canDeleteTeamDrive;
+        /**
+         * Whether the current user can download files in this Team Drive.
+         *
+         * @var bool
+         */
+        public $canDownload;
+        /**
+         * Whether the current user can edit files in this Team Drive
+         *
+         * @var bool
+         */
+        public $canEdit;
+        /**
+         * Whether the current user can list the children of folders in this Team
+         * Drive.
+         *
+         * @var bool
+         */
+        public $canListChildren;
+        /**
+         * Whether the current user can add members to this Team Drive or remove them
+         * or change their role.
+         *
+         * @var bool
+         */
+        public $canManageMembers;
+        /**
+         * Whether the current user can read the revisions resource of files in this
+         * Team Drive.
+         *
+         * @var bool
+         */
+        public $canReadRevisions;
+        /**
+         * Deprecated: Use `canDeleteChildren` or `canTrashChildren` instead.
+         *
+         * @deprecated
+         * @var bool
+         */
+        public $canRemoveChildren;
+        /**
+         * Whether the current user can rename files or folders in this Team Drive.
+         *
+         * @var bool
+         */
+        public $canRename;
+        /**
+         * Whether the current user can rename this Team Drive.
+         *
+         * @var bool
+         */
+        public $canRenameTeamDrive;
+        /**
+         * Whether the current user can reset the Team Drive restrictions to defaults.
+         *
+         * @var bool
+         */
+        public $canResetTeamDriveRestrictions;
+        /**
+         * Whether the current user can share files or folders in this Team Drive.
+         *
+         * @var bool
+         */
+        public $canShare;
+        /**
+         * Whether the current user can trash children from folders in this Team
+         * Drive.
+         *
+         * @var bool
+         */
+        public $canTrashChildren;
+        /**
+         * Whether the current user can add children to folders in this Team Drive.
+         *
+         * @param bool $canAddChildren
+         */
+        public function setCanAddChildren($canAddChildren)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanAddChildren()
+        {
+        }
+        /**
+         * Whether the current user can change the `copyRequiresWriterPermission`
+         * restriction of this Team Drive.
+         *
+         * @param bool $canChangeCopyRequiresWriterPermissionRestriction
+         */
+        public function setCanChangeCopyRequiresWriterPermissionRestriction($canChangeCopyRequiresWriterPermissionRestriction)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanChangeCopyRequiresWriterPermissionRestriction()
+        {
+        }
+        /**
+         * Whether the current user can change the `domainUsersOnly` restriction of
+         * this Team Drive.
+         *
+         * @param bool $canChangeDomainUsersOnlyRestriction
+         */
+        public function setCanChangeDomainUsersOnlyRestriction($canChangeDomainUsersOnlyRestriction)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanChangeDomainUsersOnlyRestriction()
+        {
+        }
+        /**
+         * Whether the current user can change organizer-applied download restrictions
+         * of this shared drive.
+         *
+         * @param bool $canChangeDownloadRestriction
+         */
+        public function setCanChangeDownloadRestriction($canChangeDownloadRestriction)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanChangeDownloadRestriction()
+        {
+        }
+        /**
+         * Whether the current user can change the
+         * `sharingFoldersRequiresOrganizerPermission` restriction of this Team Drive.
+         *
+         * @param bool $canChangeSharingFoldersRequiresOrganizerPermissionRestriction
+         */
+        public function setCanChangeSharingFoldersRequiresOrganizerPermissionRestriction($canChangeSharingFoldersRequiresOrganizerPermissionRestriction)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanChangeSharingFoldersRequiresOrganizerPermissionRestriction()
+        {
+        }
+        /**
+         * Whether the current user can change the background of this Team Drive.
+         *
+         * @param bool $canChangeTeamDriveBackground
+         */
+        public function setCanChangeTeamDriveBackground($canChangeTeamDriveBackground)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanChangeTeamDriveBackground()
+        {
+        }
+        /**
+         * Whether the current user can change the `teamMembersOnly` restriction of
+         * this Team Drive.
+         *
+         * @param bool $canChangeTeamMembersOnlyRestriction
+         */
+        public function setCanChangeTeamMembersOnlyRestriction($canChangeTeamMembersOnlyRestriction)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanChangeTeamMembersOnlyRestriction()
+        {
+        }
+        /**
+         * Whether the current user can comment on files in this Team Drive.
+         *
+         * @param bool $canComment
+         */
+        public function setCanComment($canComment)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanComment()
+        {
+        }
+        /**
+         * Whether the current user can copy files in this Team Drive.
+         *
+         * @param bool $canCopy
+         */
+        public function setCanCopy($canCopy)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanCopy()
+        {
+        }
+        /**
+         * Whether the current user can delete children from folders in this Team
+         * Drive.
+         *
+         * @param bool $canDeleteChildren
+         */
+        public function setCanDeleteChildren($canDeleteChildren)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanDeleteChildren()
+        {
+        }
+        /**
+         * Whether the current user can delete this Team Drive. Attempting to delete
+         * the Team Drive may still fail if there are untrashed items inside the Team
+         * Drive.
+         *
+         * @param bool $canDeleteTeamDrive
+         */
+        public function setCanDeleteTeamDrive($canDeleteTeamDrive)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanDeleteTeamDrive()
+        {
+        }
+        /**
+         * Whether the current user can download files in this Team Drive.
+         *
+         * @param bool $canDownload
+         */
+        public function setCanDownload($canDownload)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanDownload()
+        {
+        }
+        /**
+         * Whether the current user can edit files in this Team Drive
+         *
+         * @param bool $canEdit
+         */
+        public function setCanEdit($canEdit)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanEdit()
+        {
+        }
+        /**
+         * Whether the current user can list the children of folders in this Team
+         * Drive.
+         *
+         * @param bool $canListChildren
+         */
+        public function setCanListChildren($canListChildren)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanListChildren()
+        {
+        }
+        /**
+         * Whether the current user can add members to this Team Drive or remove them
+         * or change their role.
+         *
+         * @param bool $canManageMembers
+         */
+        public function setCanManageMembers($canManageMembers)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanManageMembers()
+        {
+        }
+        /**
+         * Whether the current user can read the revisions resource of files in this
+         * Team Drive.
+         *
+         * @param bool $canReadRevisions
+         */
+        public function setCanReadRevisions($canReadRevisions)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanReadRevisions()
+        {
+        }
+        /**
+         * Deprecated: Use `canDeleteChildren` or `canTrashChildren` instead.
+         *
+         * @deprecated
+         * @param bool $canRemoveChildren
+         */
+        public function setCanRemoveChildren($canRemoveChildren)
+        {
+        }
+        /**
+         * @deprecated
+         * @return bool
+         */
+        public function getCanRemoveChildren()
+        {
+        }
+        /**
+         * Whether the current user can rename files or folders in this Team Drive.
+         *
+         * @param bool $canRename
+         */
+        public function setCanRename($canRename)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanRename()
+        {
+        }
+        /**
+         * Whether the current user can rename this Team Drive.
+         *
+         * @param bool $canRenameTeamDrive
+         */
+        public function setCanRenameTeamDrive($canRenameTeamDrive)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanRenameTeamDrive()
+        {
+        }
+        /**
+         * Whether the current user can reset the Team Drive restrictions to defaults.
+         *
+         * @param bool $canResetTeamDriveRestrictions
+         */
+        public function setCanResetTeamDriveRestrictions($canResetTeamDriveRestrictions)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanResetTeamDriveRestrictions()
+        {
+        }
+        /**
+         * Whether the current user can share files or folders in this Team Drive.
+         *
+         * @param bool $canShare
+         */
+        public function setCanShare($canShare)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanShare()
+        {
+        }
+        /**
+         * Whether the current user can trash children from folders in this Team
+         * Drive.
+         *
+         * @param bool $canTrashChildren
+         */
+        public function setCanTrashChildren($canTrashChildren)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCanTrashChildren()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Drive\TeamDriveCapabilities registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCanAddChildren()
-    {
-    }
-    /**
-     * Whether the current user can change the `copyRequiresWriterPermission`
-     * restriction of this Team Drive.
-     *
-     * @param bool $canChangeCopyRequiresWriterPermissionRestriction
-     */
-    public function setCanChangeCopyRequiresWriterPermissionRestriction($canChangeCopyRequiresWriterPermissionRestriction)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanChangeCopyRequiresWriterPermissionRestriction()
-    {
-    }
-    /**
-     * Whether the current user can change the `domainUsersOnly` restriction of
-     * this Team Drive.
-     *
-     * @param bool $canChangeDomainUsersOnlyRestriction
-     */
-    public function setCanChangeDomainUsersOnlyRestriction($canChangeDomainUsersOnlyRestriction)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanChangeDomainUsersOnlyRestriction()
-    {
-    }
-    /**
-     * Whether the current user can change organizer-applied download restrictions
-     * of this shared drive.
-     *
-     * @param bool $canChangeDownloadRestriction
-     */
-    public function setCanChangeDownloadRestriction($canChangeDownloadRestriction)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanChangeDownloadRestriction()
-    {
-    }
-    /**
-     * Whether the current user can change the
-     * `sharingFoldersRequiresOrganizerPermission` restriction of this Team Drive.
-     *
-     * @param bool $canChangeSharingFoldersRequiresOrganizerPermissionRestriction
-     */
-    public function setCanChangeSharingFoldersRequiresOrganizerPermissionRestriction($canChangeSharingFoldersRequiresOrganizerPermissionRestriction)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanChangeSharingFoldersRequiresOrganizerPermissionRestriction()
-    {
-    }
-    /**
-     * Whether the current user can change the background of this Team Drive.
-     *
-     * @param bool $canChangeTeamDriveBackground
-     */
-    public function setCanChangeTeamDriveBackground($canChangeTeamDriveBackground)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanChangeTeamDriveBackground()
-    {
-    }
-    /**
-     * Whether the current user can change the `teamMembersOnly` restriction of
-     * this Team Drive.
-     *
-     * @param bool $canChangeTeamMembersOnlyRestriction
-     */
-    public function setCanChangeTeamMembersOnlyRestriction($canChangeTeamMembersOnlyRestriction)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanChangeTeamMembersOnlyRestriction()
-    {
-    }
-    /**
-     * Whether the current user can comment on files in this Team Drive.
-     *
-     * @param bool $canComment
-     */
-    public function setCanComment($canComment)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanComment()
-    {
-    }
-    /**
-     * Whether the current user can copy files in this Team Drive.
-     *
-     * @param bool $canCopy
-     */
-    public function setCanCopy($canCopy)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanCopy()
-    {
-    }
-    /**
-     * Whether the current user can delete children from folders in this Team
-     * Drive.
-     *
-     * @param bool $canDeleteChildren
-     */
-    public function setCanDeleteChildren($canDeleteChildren)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanDeleteChildren()
-    {
-    }
-    /**
-     * Whether the current user can delete this Team Drive. Attempting to delete
-     * the Team Drive may still fail if there are untrashed items inside the Team
-     * Drive.
-     *
-     * @param bool $canDeleteTeamDrive
-     */
-    public function setCanDeleteTeamDrive($canDeleteTeamDrive)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanDeleteTeamDrive()
-    {
-    }
-    /**
-     * Whether the current user can download files in this Team Drive.
-     *
-     * @param bool $canDownload
-     */
-    public function setCanDownload($canDownload)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanDownload()
-    {
-    }
-    /**
-     * Whether the current user can edit files in this Team Drive
-     *
-     * @param bool $canEdit
-     */
-    public function setCanEdit($canEdit)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanEdit()
-    {
-    }
-    /**
-     * Whether the current user can list the children of folders in this Team
-     * Drive.
-     *
-     * @param bool $canListChildren
-     */
-    public function setCanListChildren($canListChildren)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanListChildren()
-    {
-    }
-    /**
-     * Whether the current user can add members to this Team Drive or remove them
-     * or change their role.
-     *
-     * @param bool $canManageMembers
-     */
-    public function setCanManageMembers($canManageMembers)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanManageMembers()
-    {
-    }
-    /**
-     * Whether the current user can read the revisions resource of files in this
-     * Team Drive.
-     *
-     * @param bool $canReadRevisions
-     */
-    public function setCanReadRevisions($canReadRevisions)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanReadRevisions()
-    {
-    }
-    /**
-     * Deprecated: Use `canDeleteChildren` or `canTrashChildren` instead.
-     *
-     * @deprecated
-     * @param bool $canRemoveChildren
-     */
-    public function setCanRemoveChildren($canRemoveChildren)
-    {
-    }
-    /**
-     * @deprecated
-     * @return bool
-     */
-    public function getCanRemoveChildren()
-    {
-    }
-    /**
-     * Whether the current user can rename files or folders in this Team Drive.
-     *
-     * @param bool $canRename
-     */
-    public function setCanRename($canRename)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanRename()
-    {
-    }
-    /**
-     * Whether the current user can rename this Team Drive.
-     *
-     * @param bool $canRenameTeamDrive
-     */
-    public function setCanRenameTeamDrive($canRenameTeamDrive)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanRenameTeamDrive()
-    {
-    }
-    /**
-     * Whether the current user can reset the Team Drive restrictions to defaults.
-     *
-     * @param bool $canResetTeamDriveRestrictions
-     */
-    public function setCanResetTeamDriveRestrictions($canResetTeamDriveRestrictions)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanResetTeamDriveRestrictions()
-    {
-    }
-    /**
-     * Whether the current user can share files or folders in this Team Drive.
-     *
-     * @param bool $canShare
-     */
-    public function setCanShare($canShare)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanShare()
-    {
-    }
-    /**
-     * Whether the current user can trash children from folders in this Team
-     * Drive.
-     *
-     * @param bool $canTrashChildren
-     */
-    public function setCanTrashChildren($canTrashChildren)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCanTrashChildren()
+    class Google_Service_Drive_TeamDriveCapabilities extends \Google\Service\Drive\TeamDriveCapabilities
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class FetchMsComplianceMetadataRequest extends \Google\Model
-{
-    /**
-     * Required. The project id of the target project
-     *
-     * @var string
-     */
-    public $projectId;
-    /**
-     * Required. The project id of the target project
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
+namespace Google\Service\Backupdr {
+    class FetchMsComplianceMetadataRequest extends \Google\Model
     {
+        /**
+         * Required. The project id of the target project
+         *
+         * @var string
+         */
+        public $projectId;
+        /**
+         * Required. The project id of the target project
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Backupdr\FetchMsComplianceMetadataRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProjectId()
+    class Google_Service_Backupdr_FetchMsComplianceMetadataRequest extends \Google\Service\Backupdr\FetchMsComplianceMetadataRequest
     {
     }
 }

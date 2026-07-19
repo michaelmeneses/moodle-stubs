@@ -21,83 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseRules;
-
-class Issue extends \Google\Model
-{
-    /**
-     * An unspecified severity.
-     */
-    public const SEVERITY_SEVERITY_UNSPECIFIED = 'SEVERITY_UNSPECIFIED';
-    /**
-     * Deprecation issue for statements and method that may no longer be supported
-     * or maintained.
-     */
-    public const SEVERITY_DEPRECATION = 'DEPRECATION';
-    /**
-     * Warnings such as: unused variables.
-     */
-    public const SEVERITY_WARNING = 'WARNING';
-    /**
-     * Errors such as: unmatched curly braces or variable redefinition.
-     */
-    public const SEVERITY_ERROR = 'ERROR';
-    /**
-     * Short error description.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The severity of the issue.
-     *
-     * @var string
-     */
-    public $severity;
-    protected $sourcePositionType = SourcePosition::class;
-    protected $sourcePositionDataType = '';
-    /**
-     * Short error description.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\FirebaseRules {
+    class Issue extends \Google\Model
     {
+        /**
+         * An unspecified severity.
+         */
+        public const SEVERITY_SEVERITY_UNSPECIFIED = 'SEVERITY_UNSPECIFIED';
+        /**
+         * Deprecation issue for statements and method that may no longer be supported
+         * or maintained.
+         */
+        public const SEVERITY_DEPRECATION = 'DEPRECATION';
+        /**
+         * Warnings such as: unused variables.
+         */
+        public const SEVERITY_WARNING = 'WARNING';
+        /**
+         * Errors such as: unmatched curly braces or variable redefinition.
+         */
+        public const SEVERITY_ERROR = 'ERROR';
+        /**
+         * Short error description.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The severity of the issue.
+         *
+         * @var string
+         */
+        public $severity;
+        protected $sourcePositionType = SourcePosition::class;
+        protected $sourcePositionDataType = '';
+        /**
+         * Short error description.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The severity of the issue.
+         *
+         * Accepted values: SEVERITY_UNSPECIFIED, DEPRECATION, WARNING, ERROR
+         *
+         * @param self::SEVERITY_* $severity
+         */
+        public function setSeverity($severity)
+        {
+        }
+        /**
+         * @return self::SEVERITY_*
+         */
+        public function getSeverity()
+        {
+        }
+        /**
+         * Position of the issue in the `Source`.
+         *
+         * @param SourcePosition $sourcePosition
+         */
+        public function setSourcePosition(SourcePosition $sourcePosition)
+        {
+        }
+        /**
+         * @return SourcePosition
+         */
+        public function getSourcePosition()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\FirebaseRules\Issue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * The severity of the issue.
-     *
-     * Accepted values: SEVERITY_UNSPECIFIED, DEPRECATION, WARNING, ERROR
-     *
-     * @param self::SEVERITY_* $severity
-     */
-    public function setSeverity($severity)
-    {
-    }
-    /**
-     * @return self::SEVERITY_*
-     */
-    public function getSeverity()
-    {
-    }
-    /**
-     * Position of the issue in the `Source`.
-     *
-     * @param SourcePosition $sourcePosition
-     */
-    public function setSourcePosition(SourcePosition $sourcePosition)
-    {
-    }
-    /**
-     * @return SourcePosition
-     */
-    public function getSourcePosition()
+    class Google_Service_FirebaseRules_Issue extends \Google\Service\FirebaseRules\Issue
     {
     }
 }

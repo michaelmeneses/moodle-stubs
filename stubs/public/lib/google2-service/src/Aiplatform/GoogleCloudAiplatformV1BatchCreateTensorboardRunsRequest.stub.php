@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1BatchCreateTensorboardRunsRequest extends \Google\Collection
-{
-    protected $collection_key = 'requests';
-    protected $requestsType = GoogleCloudAiplatformV1CreateTensorboardRunRequest::class;
-    protected $requestsDataType = 'array';
-    /**
-     * Required. The request message specifying the TensorboardRuns to create. A
-     * maximum of 1000 TensorboardRuns can be created in a batch.
-     *
-     * @param GoogleCloudAiplatformV1CreateTensorboardRunRequest[] $requests
-     */
-    public function setRequests($requests)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1BatchCreateTensorboardRunsRequest extends \Google\Collection
     {
+        protected $collection_key = 'requests';
+        protected $requestsType = GoogleCloudAiplatformV1CreateTensorboardRunRequest::class;
+        protected $requestsDataType = 'array';
+        /**
+         * Required. The request message specifying the TensorboardRuns to create. A
+         * maximum of 1000 TensorboardRuns can be created in a batch.
+         *
+         * @param GoogleCloudAiplatformV1CreateTensorboardRunRequest[] $requests
+         */
+        public function setRequests($requests)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1CreateTensorboardRunRequest[]
+         */
+        public function getRequests()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1CreateTensorboardRunRequest[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchCreateTensorboardRunsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequests()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1BatchCreateTensorboardRunsRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchCreateTensorboardRunsRequest
     {
     }
 }

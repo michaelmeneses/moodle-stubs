@@ -21,325 +21,334 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class EnterpriseTopazSidekickCommonPerson extends \Google\Model
-{
-    protected $birthdayType = EnterpriseTopazSidekickCommonPersonBirthday::class;
-    protected $birthdayDataType = '';
-    /**
-     * Cell phone number.
-     *
-     * @var string
-     */
-    public $cellPhone;
-    /**
-     * The department the person works in (e.g. Engineering).
-     *
-     * @var string
-     */
-    public $department;
-    /**
-     * Desk location (e.g. US-MTV-PR55-5-5B1I).
-     *
-     * @var string
-     */
-    public $deskLocation;
-    /**
-     * Work desk phone number.
-     *
-     * @var string
-     */
-    public $deskPhone;
-    /**
-     * The full name.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Email.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * The last name.
-     *
-     * @var string
-     */
-    public $familyName;
-    /**
-     * The fully formatted address (e.g. 1255 Pear Avenue, Mountain View 94043,
-     * United States).
-     *
-     * @var string
-     */
-    public $fullAddress;
-    /**
-     * This field is deprecated. The obfuscated_id should be used instead.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $gaiaId;
-    /**
-     * The first name.
-     *
-     * @var string
-     */
-    public $givenName;
-    /**
-     * The person's job title (e.g. Software Engineer).
-     *
-     * @var string
-     */
-    public $jobTitle;
-    protected $managerType = EnterpriseTopazSidekickCommonPerson::class;
-    protected $managerDataType = '';
-    /**
-     * The obfuscated GAIA ID.
-     *
-     * @var string
-     */
-    public $obfuscatedId;
-    /**
-     * The URL for the Focus profile picture.
-     *
-     * @var string
-     */
-    public $photoUrl;
-    /**
-     * The street address (e.g. 1255 Pear Avenue).
-     *
-     * @var string
-     */
-    public $streetAddress;
-    /**
-     * The birthday.
-     *
-     * @param EnterpriseTopazSidekickCommonPersonBirthday $birthday
-     */
-    public function setBirthday(EnterpriseTopazSidekickCommonPersonBirthday $birthday)
+namespace Google\Service\CloudSearch {
+    class EnterpriseTopazSidekickCommonPerson extends \Google\Model
     {
+        protected $birthdayType = EnterpriseTopazSidekickCommonPersonBirthday::class;
+        protected $birthdayDataType = '';
+        /**
+         * Cell phone number.
+         *
+         * @var string
+         */
+        public $cellPhone;
+        /**
+         * The department the person works in (e.g. Engineering).
+         *
+         * @var string
+         */
+        public $department;
+        /**
+         * Desk location (e.g. US-MTV-PR55-5-5B1I).
+         *
+         * @var string
+         */
+        public $deskLocation;
+        /**
+         * Work desk phone number.
+         *
+         * @var string
+         */
+        public $deskPhone;
+        /**
+         * The full name.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Email.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * The last name.
+         *
+         * @var string
+         */
+        public $familyName;
+        /**
+         * The fully formatted address (e.g. 1255 Pear Avenue, Mountain View 94043,
+         * United States).
+         *
+         * @var string
+         */
+        public $fullAddress;
+        /**
+         * This field is deprecated. The obfuscated_id should be used instead.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $gaiaId;
+        /**
+         * The first name.
+         *
+         * @var string
+         */
+        public $givenName;
+        /**
+         * The person's job title (e.g. Software Engineer).
+         *
+         * @var string
+         */
+        public $jobTitle;
+        protected $managerType = EnterpriseTopazSidekickCommonPerson::class;
+        protected $managerDataType = '';
+        /**
+         * The obfuscated GAIA ID.
+         *
+         * @var string
+         */
+        public $obfuscatedId;
+        /**
+         * The URL for the Focus profile picture.
+         *
+         * @var string
+         */
+        public $photoUrl;
+        /**
+         * The street address (e.g. 1255 Pear Avenue).
+         *
+         * @var string
+         */
+        public $streetAddress;
+        /**
+         * The birthday.
+         *
+         * @param EnterpriseTopazSidekickCommonPersonBirthday $birthday
+         */
+        public function setBirthday(EnterpriseTopazSidekickCommonPersonBirthday $birthday)
+        {
+        }
+        /**
+         * @return EnterpriseTopazSidekickCommonPersonBirthday
+         */
+        public function getBirthday()
+        {
+        }
+        /**
+         * Cell phone number.
+         *
+         * @param string $cellPhone
+         */
+        public function setCellPhone($cellPhone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCellPhone()
+        {
+        }
+        /**
+         * The department the person works in (e.g. Engineering).
+         *
+         * @param string $department
+         */
+        public function setDepartment($department)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDepartment()
+        {
+        }
+        /**
+         * Desk location (e.g. US-MTV-PR55-5-5B1I).
+         *
+         * @param string $deskLocation
+         */
+        public function setDeskLocation($deskLocation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeskLocation()
+        {
+        }
+        /**
+         * Work desk phone number.
+         *
+         * @param string $deskPhone
+         */
+        public function setDeskPhone($deskPhone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeskPhone()
+        {
+        }
+        /**
+         * The full name.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Email.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * The last name.
+         *
+         * @param string $familyName
+         */
+        public function setFamilyName($familyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFamilyName()
+        {
+        }
+        /**
+         * The fully formatted address (e.g. 1255 Pear Avenue, Mountain View 94043,
+         * United States).
+         *
+         * @param string $fullAddress
+         */
+        public function setFullAddress($fullAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFullAddress()
+        {
+        }
+        /**
+         * This field is deprecated. The obfuscated_id should be used instead.
+         *
+         * @deprecated
+         * @param string $gaiaId
+         */
+        public function setGaiaId($gaiaId)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getGaiaId()
+        {
+        }
+        /**
+         * The first name.
+         *
+         * @param string $givenName
+         */
+        public function setGivenName($givenName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGivenName()
+        {
+        }
+        /**
+         * The person's job title (e.g. Software Engineer).
+         *
+         * @param string $jobTitle
+         */
+        public function setJobTitle($jobTitle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJobTitle()
+        {
+        }
+        /**
+         * The manager.
+         *
+         * @param EnterpriseTopazSidekickCommonPerson $manager
+         */
+        public function setManager(EnterpriseTopazSidekickCommonPerson $manager)
+        {
+        }
+        /**
+         * @return EnterpriseTopazSidekickCommonPerson
+         */
+        public function getManager()
+        {
+        }
+        /**
+         * The obfuscated GAIA ID.
+         *
+         * @param string $obfuscatedId
+         */
+        public function setObfuscatedId($obfuscatedId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObfuscatedId()
+        {
+        }
+        /**
+         * The URL for the Focus profile picture.
+         *
+         * @param string $photoUrl
+         */
+        public function setPhotoUrl($photoUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhotoUrl()
+        {
+        }
+        /**
+         * The street address (e.g. 1255 Pear Avenue).
+         *
+         * @param string $streetAddress
+         */
+        public function setStreetAddress($streetAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStreetAddress()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnterpriseTopazSidekickCommonPersonBirthday
+     * Runtime class alias of \Google\Service\CloudSearch\EnterpriseTopazSidekickCommonPerson registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBirthday()
-    {
-    }
-    /**
-     * Cell phone number.
-     *
-     * @param string $cellPhone
-     */
-    public function setCellPhone($cellPhone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCellPhone()
-    {
-    }
-    /**
-     * The department the person works in (e.g. Engineering).
-     *
-     * @param string $department
-     */
-    public function setDepartment($department)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDepartment()
-    {
-    }
-    /**
-     * Desk location (e.g. US-MTV-PR55-5-5B1I).
-     *
-     * @param string $deskLocation
-     */
-    public function setDeskLocation($deskLocation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeskLocation()
-    {
-    }
-    /**
-     * Work desk phone number.
-     *
-     * @param string $deskPhone
-     */
-    public function setDeskPhone($deskPhone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeskPhone()
-    {
-    }
-    /**
-     * The full name.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Email.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEmail()
-    {
-    }
-    /**
-     * The last name.
-     *
-     * @param string $familyName
-     */
-    public function setFamilyName($familyName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFamilyName()
-    {
-    }
-    /**
-     * The fully formatted address (e.g. 1255 Pear Avenue, Mountain View 94043,
-     * United States).
-     *
-     * @param string $fullAddress
-     */
-    public function setFullAddress($fullAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFullAddress()
-    {
-    }
-    /**
-     * This field is deprecated. The obfuscated_id should be used instead.
-     *
-     * @deprecated
-     * @param string $gaiaId
-     */
-    public function setGaiaId($gaiaId)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getGaiaId()
-    {
-    }
-    /**
-     * The first name.
-     *
-     * @param string $givenName
-     */
-    public function setGivenName($givenName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGivenName()
-    {
-    }
-    /**
-     * The person's job title (e.g. Software Engineer).
-     *
-     * @param string $jobTitle
-     */
-    public function setJobTitle($jobTitle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getJobTitle()
-    {
-    }
-    /**
-     * The manager.
-     *
-     * @param EnterpriseTopazSidekickCommonPerson $manager
-     */
-    public function setManager(EnterpriseTopazSidekickCommonPerson $manager)
-    {
-    }
-    /**
-     * @return EnterpriseTopazSidekickCommonPerson
-     */
-    public function getManager()
-    {
-    }
-    /**
-     * The obfuscated GAIA ID.
-     *
-     * @param string $obfuscatedId
-     */
-    public function setObfuscatedId($obfuscatedId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObfuscatedId()
-    {
-    }
-    /**
-     * The URL for the Focus profile picture.
-     *
-     * @param string $photoUrl
-     */
-    public function setPhotoUrl($photoUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhotoUrl()
-    {
-    }
-    /**
-     * The street address (e.g. 1255 Pear Avenue).
-     *
-     * @param string $streetAddress
-     */
-    public function setStreetAddress($streetAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStreetAddress()
+    class Google_Service_CloudSearch_EnterpriseTopazSidekickCommonPerson extends \Google\Service\CloudSearch\EnterpriseTopazSidekickCommonPerson
     {
     }
 }

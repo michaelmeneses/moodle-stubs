@@ -33,6 +33,8 @@
  */
 namespace quizaccess_seb;
 
+use context_module;
+use mod_quiz\quiz_settings;
 /**
  * Manage the access to the quiz.
  *

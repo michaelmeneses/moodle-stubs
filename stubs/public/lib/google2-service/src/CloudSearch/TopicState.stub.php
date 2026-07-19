@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class TopicState extends \Google\Model
-{
-    /**
-     * @var int[]
-     */
-    public $labelIdMessageCount;
-    /**
-     * @var int
-     */
-    public $numConstituents;
-    /**
-     * @param int[]
-     */
-    public function setLabelIdMessageCount($labelIdMessageCount)
+namespace Google\Service\CloudSearch {
+    class TopicState extends \Google\Model
     {
+        /**
+         * @var int[]
+         */
+        public $labelIdMessageCount;
+        /**
+         * @var int
+         */
+        public $numConstituents;
+        /**
+         * @param int[]
+         */
+        public function setLabelIdMessageCount($labelIdMessageCount)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getLabelIdMessageCount()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setNumConstituents($numConstituents)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumConstituents()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int[]
+     * Runtime class alias of \Google\Service\CloudSearch\TopicState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabelIdMessageCount()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setNumConstituents($numConstituents)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumConstituents()
+    class Google_Service_CloudSearch_TopicState extends \Google\Service\CloudSearch\TopicState
     {
     }
 }

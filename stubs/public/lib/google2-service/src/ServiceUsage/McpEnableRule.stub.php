@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceUsage;
-
-class McpEnableRule extends \Google\Collection
-{
-    protected $collection_key = 'mcpServices';
-    protected $mcpServicesType = McpService::class;
-    protected $mcpServicesDataType = 'array';
-    /**
-     * List of enabled MCP services.
-     *
-     * @param McpService[] $mcpServices
-     */
-    public function setMcpServices($mcpServices)
+namespace Google\Service\ServiceUsage {
+    class McpEnableRule extends \Google\Collection
     {
+        protected $collection_key = 'mcpServices';
+        protected $mcpServicesType = McpService::class;
+        protected $mcpServicesDataType = 'array';
+        /**
+         * List of enabled MCP services.
+         *
+         * @param McpService[] $mcpServices
+         */
+        public function setMcpServices($mcpServices)
+        {
+        }
+        /**
+         * @return McpService[]
+         */
+        public function getMcpServices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return McpService[]
+     * Runtime class alias of \Google\Service\ServiceUsage\McpEnableRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMcpServices()
+    class Google_Service_ServiceUsage_McpEnableRule extends \Google\Service\ServiceUsage\McpEnableRule
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1OperationSchema extends \Google\Model
-{
-    /**
-     * The JSON schema. Only valid JSON is accepted but semantic validation of
-     * schema is not supported right now.
-     *
-     * @var array[]
-     */
-    public $jsonSchema;
-    /**
-     * The JSON schema. Only valid JSON is accepted but semantic validation of
-     * schema is not supported right now.
-     *
-     * @param array[] $jsonSchema
-     */
-    public function setJsonSchema($jsonSchema)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1OperationSchema extends \Google\Model
     {
+        /**
+         * The JSON schema. Only valid JSON is accepted but semantic validation of
+         * schema is not supported right now.
+         *
+         * @var array[]
+         */
+        public $jsonSchema;
+        /**
+         * The JSON schema. Only valid JSON is accepted but semantic validation of
+         * schema is not supported right now.
+         *
+         * @param array[] $jsonSchema
+         */
+        public function setJsonSchema($jsonSchema)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getJsonSchema()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1OperationSchema registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJsonSchema()
+    class Google_Service_APIhub_GoogleCloudApihubV1OperationSchema extends \Google\Service\APIhub\GoogleCloudApihubV1OperationSchema
     {
     }
 }

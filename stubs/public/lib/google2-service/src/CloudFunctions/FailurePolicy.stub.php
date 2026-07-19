@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudFunctions;
-
-class FailurePolicy extends \Google\Model
-{
-    protected $retryType = Retry::class;
-    protected $retryDataType = '';
-    /**
-     * @param Retry
-     */
-    public function setRetry(Retry $retry)
+namespace Google\Service\CloudFunctions {
+    class FailurePolicy extends \Google\Model
     {
+        protected $retryType = Retry::class;
+        protected $retryDataType = '';
+        /**
+         * @param Retry
+         */
+        public function setRetry(Retry $retry)
+        {
+        }
+        /**
+         * @return Retry
+         */
+        public function getRetry()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Retry
+     * Runtime class alias of \Google\Service\CloudFunctions\FailurePolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRetry()
+    class Google_Service_CloudFunctions_FailurePolicy extends \Google\Service\CloudFunctions\FailurePolicy
     {
     }
 }

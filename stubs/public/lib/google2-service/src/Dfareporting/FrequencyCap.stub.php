@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class FrequencyCap extends \Google\Model
-{
-    /**
-     * Duration of time, in seconds, for this frequency cap. The maximum duration
-     * is 90 days. Acceptable values are 1 to 7776000, inclusive.
-     *
-     * @var string
-     */
-    public $duration;
-    /**
-     * Number of times an individual user can be served the ad within the
-     * specified duration. Acceptable values are 1 to 15, inclusive.
-     *
-     * @var string
-     */
-    public $impressions;
-    /**
-     * Duration of time, in seconds, for this frequency cap. The maximum duration
-     * is 90 days. Acceptable values are 1 to 7776000, inclusive.
-     *
-     * @param string $duration
-     */
-    public function setDuration($duration)
+namespace Google\Service\Dfareporting {
+    class FrequencyCap extends \Google\Model
     {
+        /**
+         * Duration of time, in seconds, for this frequency cap. The maximum duration
+         * is 90 days. Acceptable values are 1 to 7776000, inclusive.
+         *
+         * @var string
+         */
+        public $duration;
+        /**
+         * Number of times an individual user can be served the ad within the
+         * specified duration. Acceptable values are 1 to 15, inclusive.
+         *
+         * @var string
+         */
+        public $impressions;
+        /**
+         * Duration of time, in seconds, for this frequency cap. The maximum duration
+         * is 90 days. Acceptable values are 1 to 7776000, inclusive.
+         *
+         * @param string $duration
+         */
+        public function setDuration($duration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDuration()
+        {
+        }
+        /**
+         * Number of times an individual user can be served the ad within the
+         * specified duration. Acceptable values are 1 to 15, inclusive.
+         *
+         * @param string $impressions
+         */
+        public function setImpressions($impressions)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImpressions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\FrequencyCap registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDuration()
-    {
-    }
-    /**
-     * Number of times an individual user can be served the ad within the
-     * specified duration. Acceptable values are 1 to 15, inclusive.
-     *
-     * @param string $impressions
-     */
-    public function setImpressions($impressions)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImpressions()
+    class Google_Service_Dfareporting_FrequencyCap extends \Google\Service\Dfareporting\FrequencyCap
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class DriveDataRef extends \Google\Model
-{
-    /**
-     * The ID for the drive file. Use with the Drive API.
-     *
-     * @var string
-     */
-    public $driveFileId;
-    /**
-     * The ID for the drive file. Use with the Drive API.
-     *
-     * @param string $driveFileId
-     */
-    public function setDriveFileId($driveFileId)
+namespace Google\Service\HangoutsChat {
+    class DriveDataRef extends \Google\Model
     {
+        /**
+         * The ID for the drive file. Use with the Drive API.
+         *
+         * @var string
+         */
+        public $driveFileId;
+        /**
+         * The ID for the drive file. Use with the Drive API.
+         *
+         * @param string $driveFileId
+         */
+        public function setDriveFileId($driveFileId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDriveFileId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\HangoutsChat\DriveDataRef registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDriveFileId()
+    class Google_Service_HangoutsChat_DriveDataRef extends \Google\Service\HangoutsChat\DriveDataRef
     {
     }
 }

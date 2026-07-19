@@ -21,81 +21,90 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1FetchReportResultsRequest extends \Google\Collection
-{
-    protected $collection_key = 'partitionKeys';
-    /**
-     * Optional. Requested page size of the report. The server may return fewer
-     * results than requested. If you don't specify a page size, the server uses a
-     * sensible default (may change over time). The maximum value is 30,000; the
-     * server will change larger values to 30,000.
-     *
-     * @var int
-     */
-    public $pageSize;
-    /**
-     * Optional. A token that specifies a page of results beyond the first page.
-     * Obtained through FetchReportResultsResponse.next_page_token of the previous
-     * CloudChannelReportsService.FetchReportResults call.
-     *
-     * @var string
-     */
-    public $pageToken;
-    /**
-     * Optional. List of keys specifying which report partitions to return. If
-     * empty, returns all partitions.
-     *
-     * @var string[]
-     */
-    public $partitionKeys;
-    /**
-     * Optional. Requested page size of the report. The server may return fewer
-     * results than requested. If you don't specify a page size, the server uses a
-     * sensible default (may change over time). The maximum value is 30,000; the
-     * server will change larger values to 30,000.
-     *
-     * @param int $pageSize
-     */
-    public function setPageSize($pageSize)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1FetchReportResultsRequest extends \Google\Collection
     {
+        protected $collection_key = 'partitionKeys';
+        /**
+         * Optional. Requested page size of the report. The server may return fewer
+         * results than requested. If you don't specify a page size, the server uses a
+         * sensible default (may change over time). The maximum value is 30,000; the
+         * server will change larger values to 30,000.
+         *
+         * @var int
+         */
+        public $pageSize;
+        /**
+         * Optional. A token that specifies a page of results beyond the first page.
+         * Obtained through FetchReportResultsResponse.next_page_token of the previous
+         * CloudChannelReportsService.FetchReportResults call.
+         *
+         * @var string
+         */
+        public $pageToken;
+        /**
+         * Optional. List of keys specifying which report partitions to return. If
+         * empty, returns all partitions.
+         *
+         * @var string[]
+         */
+        public $partitionKeys;
+        /**
+         * Optional. Requested page size of the report. The server may return fewer
+         * results than requested. If you don't specify a page size, the server uses a
+         * sensible default (may change over time). The maximum value is 30,000; the
+         * server will change larger values to 30,000.
+         *
+         * @param int $pageSize
+         */
+        public function setPageSize($pageSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPageSize()
+        {
+        }
+        /**
+         * Optional. A token that specifies a page of results beyond the first page.
+         * Obtained through FetchReportResultsResponse.next_page_token of the previous
+         * CloudChannelReportsService.FetchReportResults call.
+         *
+         * @param string $pageToken
+         */
+        public function setPageToken($pageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPageToken()
+        {
+        }
+        /**
+         * Optional. List of keys specifying which report partitions to return. If
+         * empty, returns all partitions.
+         *
+         * @param string[] $partitionKeys
+         */
+        public function setPartitionKeys($partitionKeys)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPartitionKeys()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1FetchReportResultsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPageSize()
-    {
-    }
-    /**
-     * Optional. A token that specifies a page of results beyond the first page.
-     * Obtained through FetchReportResultsResponse.next_page_token of the previous
-     * CloudChannelReportsService.FetchReportResults call.
-     *
-     * @param string $pageToken
-     */
-    public function setPageToken($pageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPageToken()
-    {
-    }
-    /**
-     * Optional. List of keys specifying which report partitions to return. If
-     * empty, returns all partitions.
-     *
-     * @param string[] $partitionKeys
-     */
-    public function setPartitionKeys($partitionKeys)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPartitionKeys()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1FetchReportResultsRequest extends \Google\Service\Cloudchannel\GoogleCloudChannelV1FetchReportResultsRequest
     {
     }
 }

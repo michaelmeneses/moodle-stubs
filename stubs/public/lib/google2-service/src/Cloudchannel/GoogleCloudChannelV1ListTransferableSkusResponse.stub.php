@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1ListTransferableSkusResponse extends \Google\Collection
-{
-    protected $collection_key = 'transferableSkus';
-    /**
-     * A token to retrieve the next page of results. Pass to
-     * ListTransferableSkusRequest.page_token to obtain that page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $transferableSkusType = GoogleCloudChannelV1TransferableSku::class;
-    protected $transferableSkusDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass to
-     * ListTransferableSkusRequest.page_token to obtain that page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1ListTransferableSkusResponse extends \Google\Collection
     {
+        protected $collection_key = 'transferableSkus';
+        /**
+         * A token to retrieve the next page of results. Pass to
+         * ListTransferableSkusRequest.page_token to obtain that page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $transferableSkusType = GoogleCloudChannelV1TransferableSku::class;
+        protected $transferableSkusDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass to
+         * ListTransferableSkusRequest.page_token to obtain that page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Information about existing SKUs for a customer that needs a transfer.
+         *
+         * @param GoogleCloudChannelV1TransferableSku[] $transferableSkus
+         */
+        public function setTransferableSkus($transferableSkus)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1TransferableSku[]
+         */
+        public function getTransferableSkus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1ListTransferableSkusResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Information about existing SKUs for a customer that needs a transfer.
-     *
-     * @param GoogleCloudChannelV1TransferableSku[] $transferableSkus
-     */
-    public function setTransferableSkus($transferableSkus)
-    {
-    }
-    /**
-     * @return GoogleCloudChannelV1TransferableSku[]
-     */
-    public function getTransferableSkus()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1ListTransferableSkusResponse extends \Google\Service\Cloudchannel\GoogleCloudChannelV1ListTransferableSkusResponse
     {
     }
 }

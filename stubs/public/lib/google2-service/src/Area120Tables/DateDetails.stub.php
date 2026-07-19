@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Area120Tables;
-
-class DateDetails extends \Google\Model
-{
-    /**
-     * Whether the date column includes time.
-     *
-     * @var bool
-     */
-    public $hasTime;
-    /**
-     * Whether the date column includes time.
-     *
-     * @param bool $hasTime
-     */
-    public function setHasTime($hasTime)
+namespace Google\Service\Area120Tables {
+    class DateDetails extends \Google\Model
     {
+        /**
+         * Whether the date column includes time.
+         *
+         * @var bool
+         */
+        public $hasTime;
+        /**
+         * Whether the date column includes time.
+         *
+         * @param bool $hasTime
+         */
+        public function setHasTime($hasTime)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHasTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Area120Tables\DateDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHasTime()
+    class Google_Service_Area120Tables_DateDetails extends \Google\Service\Area120Tables\DateDetails
     {
     }
 }

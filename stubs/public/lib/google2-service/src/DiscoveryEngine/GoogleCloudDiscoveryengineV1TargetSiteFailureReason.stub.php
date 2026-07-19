@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1TargetSiteFailureReason extends \Google\Model
-{
-    protected $quotaFailureType = GoogleCloudDiscoveryengineV1TargetSiteFailureReasonQuotaFailure::class;
-    protected $quotaFailureDataType = '';
-    /**
-     * Failed due to insufficient quota.
-     *
-     * @param GoogleCloudDiscoveryengineV1TargetSiteFailureReasonQuotaFailure $quotaFailure
-     */
-    public function setQuotaFailure(GoogleCloudDiscoveryengineV1TargetSiteFailureReasonQuotaFailure $quotaFailure)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1TargetSiteFailureReason extends \Google\Model
     {
+        protected $quotaFailureType = GoogleCloudDiscoveryengineV1TargetSiteFailureReasonQuotaFailure::class;
+        protected $quotaFailureDataType = '';
+        /**
+         * Failed due to insufficient quota.
+         *
+         * @param GoogleCloudDiscoveryengineV1TargetSiteFailureReasonQuotaFailure $quotaFailure
+         */
+        public function setQuotaFailure(GoogleCloudDiscoveryengineV1TargetSiteFailureReasonQuotaFailure $quotaFailure)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1TargetSiteFailureReasonQuotaFailure
+         */
+        public function getQuotaFailure()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1TargetSiteFailureReasonQuotaFailure
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1TargetSiteFailureReason registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getQuotaFailure()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1TargetSiteFailureReason extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1TargetSiteFailureReason
     {
     }
 }

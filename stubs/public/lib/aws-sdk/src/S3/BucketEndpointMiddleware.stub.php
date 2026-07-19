@@ -8,6 +8,9 @@
  */
 namespace Aws\S3;
 
+use Aws\CommandInterface;
+use GuzzleHttp\Psr7\Uri;
+use Psr\Http\Message\RequestInterface;
 /**
  * Used to update the host used for S3 requests in the case of using a
  * "bucket endpoint" or CNAME bucket.

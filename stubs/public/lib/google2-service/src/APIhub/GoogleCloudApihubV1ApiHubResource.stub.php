@@ -21,113 +21,122 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1ApiHubResource extends \Google\Model
-{
-    protected $apiType = GoogleCloudApihubV1Api::class;
-    protected $apiDataType = '';
-    protected $definitionType = GoogleCloudApihubV1Definition::class;
-    protected $definitionDataType = '';
-    protected $deploymentType = GoogleCloudApihubV1Deployment::class;
-    protected $deploymentDataType = '';
-    protected $operationType = GoogleCloudApihubV1ApiOperation::class;
-    protected $operationDataType = '';
-    protected $specType = GoogleCloudApihubV1Spec::class;
-    protected $specDataType = '';
-    protected $versionType = GoogleCloudApihubV1Version::class;
-    protected $versionDataType = '';
-    /**
-     * This represents Api resource in search results. Only name, display_name,
-     * description and owner fields are populated in search results.
-     *
-     * @param GoogleCloudApihubV1Api $api
-     */
-    public function setApi(GoogleCloudApihubV1Api $api)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1ApiHubResource extends \Google\Model
     {
+        protected $apiType = GoogleCloudApihubV1Api::class;
+        protected $apiDataType = '';
+        protected $definitionType = GoogleCloudApihubV1Definition::class;
+        protected $definitionDataType = '';
+        protected $deploymentType = GoogleCloudApihubV1Deployment::class;
+        protected $deploymentDataType = '';
+        protected $operationType = GoogleCloudApihubV1ApiOperation::class;
+        protected $operationDataType = '';
+        protected $specType = GoogleCloudApihubV1Spec::class;
+        protected $specDataType = '';
+        protected $versionType = GoogleCloudApihubV1Version::class;
+        protected $versionDataType = '';
+        /**
+         * This represents Api resource in search results. Only name, display_name,
+         * description and owner fields are populated in search results.
+         *
+         * @param GoogleCloudApihubV1Api $api
+         */
+        public function setApi(GoogleCloudApihubV1Api $api)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1Api
+         */
+        public function getApi()
+        {
+        }
+        /**
+         * This represents Definition resource in search results. Only name field is
+         * populated in search results.
+         *
+         * @param GoogleCloudApihubV1Definition $definition
+         */
+        public function setDefinition(GoogleCloudApihubV1Definition $definition)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1Definition
+         */
+        public function getDefinition()
+        {
+        }
+        /**
+         * This represents Deployment resource in search results. Only name,
+         * display_name, description, deployment_type and api_versions fields are
+         * populated in search results.
+         *
+         * @param GoogleCloudApihubV1Deployment $deployment
+         */
+        public function setDeployment(GoogleCloudApihubV1Deployment $deployment)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1Deployment
+         */
+        public function getDeployment()
+        {
+        }
+        /**
+         * This represents ApiOperation resource in search results. Only name,
+         * description, spec and details fields are populated in search results.
+         *
+         * @param GoogleCloudApihubV1ApiOperation $operation
+         */
+        public function setOperation(GoogleCloudApihubV1ApiOperation $operation)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1ApiOperation
+         */
+        public function getOperation()
+        {
+        }
+        /**
+         * This represents Spec resource in search results. Only name, display_name,
+         * description, spec_type and documentation fields are populated in search
+         * results.
+         *
+         * @param GoogleCloudApihubV1Spec $spec
+         */
+        public function setSpec(GoogleCloudApihubV1Spec $spec)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1Spec
+         */
+        public function getSpec()
+        {
+        }
+        /**
+         * This represents Version resource in search results. Only name,
+         * display_name, description, lifecycle, compliance and accreditation fields
+         * are populated in search results.
+         *
+         * @param GoogleCloudApihubV1Version $version
+         */
+        public function setVersion(GoogleCloudApihubV1Version $version)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1Version
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApihubV1Api
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1ApiHubResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApi()
-    {
-    }
-    /**
-     * This represents Definition resource in search results. Only name field is
-     * populated in search results.
-     *
-     * @param GoogleCloudApihubV1Definition $definition
-     */
-    public function setDefinition(GoogleCloudApihubV1Definition $definition)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1Definition
-     */
-    public function getDefinition()
-    {
-    }
-    /**
-     * This represents Deployment resource in search results. Only name,
-     * display_name, description, deployment_type and api_versions fields are
-     * populated in search results.
-     *
-     * @param GoogleCloudApihubV1Deployment $deployment
-     */
-    public function setDeployment(GoogleCloudApihubV1Deployment $deployment)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1Deployment
-     */
-    public function getDeployment()
-    {
-    }
-    /**
-     * This represents ApiOperation resource in search results. Only name,
-     * description, spec and details fields are populated in search results.
-     *
-     * @param GoogleCloudApihubV1ApiOperation $operation
-     */
-    public function setOperation(GoogleCloudApihubV1ApiOperation $operation)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1ApiOperation
-     */
-    public function getOperation()
-    {
-    }
-    /**
-     * This represents Spec resource in search results. Only name, display_name,
-     * description, spec_type and documentation fields are populated in search
-     * results.
-     *
-     * @param GoogleCloudApihubV1Spec $spec
-     */
-    public function setSpec(GoogleCloudApihubV1Spec $spec)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1Spec
-     */
-    public function getSpec()
-    {
-    }
-    /**
-     * This represents Version resource in search results. Only name,
-     * display_name, description, lifecycle, compliance and accreditation fields
-     * are populated in search results.
-     *
-     * @param GoogleCloudApihubV1Version $version
-     */
-    public function setVersion(GoogleCloudApihubV1Version $version)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1Version
-     */
-    public function getVersion()
+    class Google_Service_APIhub_GoogleCloudApihubV1ApiHubResource extends \Google\Service\APIhub\GoogleCloudApihubV1ApiHubResource
     {
     }
 }

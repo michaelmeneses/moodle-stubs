@@ -21,52 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Recommender\Resource;
-
-/**
- * The "insightTypes" collection of methods.
- * Typical usage is:
- *  <code>
- *   $recommenderService = new Google\Service\Recommender(...);
- *   $insightTypes = $recommenderService->billingAccounts_locations_insightTypes;
- *  </code>
- */
-class BillingAccountsLocationsInsightTypes extends \Google\Service\Resource
-{
+namespace Google\Service\Recommender\Resource {
+    use Google\Service\Recommender\GoogleCloudRecommenderV1InsightTypeConfig;
     /**
-     * Gets the requested InsightTypeConfig. There is only one instance of the
-     * config for each InsightType. (insightTypes.getConfig)
-     *
-     * @param string $name Required. Name of the InsightTypeConfig to get.
-     * Acceptable formats: * `projects/[PROJECT_NUMBER]/locations/[LOCATION]/insight
-     * Types/[INSIGHT_TYPE_ID]/config` * `projects/[PROJECT_ID]/locations/[LOCATION]
-     * /insightTypes/[INSIGHT_TYPE_ID]/config` * `organizations/[ORGANIZATION_ID]/lo
-     * cations/[LOCATION]/insightTypes/[INSIGHT_TYPE_ID]/config` * `billingAccounts/
-     * [BILLING_ACCOUNT_ID]/locations/[LOCATION]/insightTypes/[INSIGHT_TYPE_ID]/conf
-     * ig`
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudRecommenderV1InsightTypeConfig
-     * @throws \Google\Service\Exception
+     * The "insightTypes" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $recommenderService = new Google\Service\Recommender(...);
+     *   $insightTypes = $recommenderService->billingAccounts_locations_insightTypes;
+     *  </code>
      */
-    public function getConfig($name, $optParams = [])
+    class BillingAccountsLocationsInsightTypes extends \Google\Service\Resource
     {
+        /**
+         * Gets the requested InsightTypeConfig. There is only one instance of the
+         * config for each InsightType. (insightTypes.getConfig)
+         *
+         * @param string $name Required. Name of the InsightTypeConfig to get.
+         * Acceptable formats: * `projects/[PROJECT_NUMBER]/locations/[LOCATION]/insight
+         * Types/[INSIGHT_TYPE_ID]/config` * `projects/[PROJECT_ID]/locations/[LOCATION]
+         * /insightTypes/[INSIGHT_TYPE_ID]/config` * `organizations/[ORGANIZATION_ID]/lo
+         * cations/[LOCATION]/insightTypes/[INSIGHT_TYPE_ID]/config` * `billingAccounts/
+         * [BILLING_ACCOUNT_ID]/locations/[LOCATION]/insightTypes/[INSIGHT_TYPE_ID]/conf
+         * ig`
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudRecommenderV1InsightTypeConfig
+         * @throws \Google\Service\Exception
+         */
+        public function getConfig($name, $optParams = [])
+        {
+        }
+        /**
+         * Updates an InsightTypeConfig change. This will create a new revision of the
+         * config. (insightTypes.updateConfig)
+         *
+         * @param string $name Identifier. Name of insight type config. Eg, projects/[PR
+         * OJECT_NUMBER]/locations/[LOCATION]/insightTypes/[INSIGHT_TYPE_ID]/config
+         * @param GoogleCloudRecommenderV1InsightTypeConfig $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask The list of fields to be updated.
+         * @opt_param bool validateOnly If true, validate the request and preview the
+         * change, but do not actually update it.
+         * @return GoogleCloudRecommenderV1InsightTypeConfig
+         * @throws \Google\Service\Exception
+         */
+        public function updateConfig($name, GoogleCloudRecommenderV1InsightTypeConfig $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Updates an InsightTypeConfig change. This will create a new revision of the
-     * config. (insightTypes.updateConfig)
-     *
-     * @param string $name Identifier. Name of insight type config. Eg, projects/[PR
-     * OJECT_NUMBER]/locations/[LOCATION]/insightTypes/[INSIGHT_TYPE_ID]/config
-     * @param GoogleCloudRecommenderV1InsightTypeConfig $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask The list of fields to be updated.
-     * @opt_param bool validateOnly If true, validate the request and preview the
-     * change, but do not actually update it.
-     * @return GoogleCloudRecommenderV1InsightTypeConfig
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Recommender\Resource\BillingAccountsLocationsInsightTypes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function updateConfig($name, GoogleCloudRecommenderV1InsightTypeConfig $postBody, $optParams = [])
+    class Google_Service_Recommender_Resource_BillingAccountsLocationsInsightTypes extends \Google\Service\Recommender\Resource\BillingAccountsLocationsInsightTypes
     {
     }
 }

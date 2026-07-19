@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class ImportClusterResponse extends \Google\Model
-{
-    /**
-     * Required. Size of the object downloaded from Google Cloud Storage in bytes.
-     *
-     * @var string
-     */
-    public $bytesDownloaded;
-    /**
-     * Required. Size of the object downloaded from Google Cloud Storage in bytes.
-     *
-     * @param string $bytesDownloaded
-     */
-    public function setBytesDownloaded($bytesDownloaded)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class ImportClusterResponse extends \Google\Model
     {
+        /**
+         * Required. Size of the object downloaded from Google Cloud Storage in bytes.
+         *
+         * @var string
+         */
+        public $bytesDownloaded;
+        /**
+         * Required. Size of the object downloaded from Google Cloud Storage in bytes.
+         *
+         * @param string $bytesDownloaded
+         */
+        public function setBytesDownloaded($bytesDownloaded)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBytesDownloaded()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\ImportClusterResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBytesDownloaded()
+    class Google_Service_CloudAlloyDBAdmin_ImportClusterResponse extends \Google\Service\CloudAlloyDBAdmin\ImportClusterResponse
     {
     }
 }

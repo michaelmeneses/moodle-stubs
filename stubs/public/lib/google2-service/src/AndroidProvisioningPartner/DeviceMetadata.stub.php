@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidProvisioningPartner;
-
-class DeviceMetadata extends \Google\Model
-{
-    /**
-     * Metadata entries recorded as key-value pairs.
-     *
-     * @var string[]
-     */
-    public $entries;
-    /**
-     * Metadata entries recorded as key-value pairs.
-     *
-     * @param string[] $entries
-     */
-    public function setEntries($entries)
+namespace Google\Service\AndroidProvisioningPartner {
+    class DeviceMetadata extends \Google\Model
     {
+        /**
+         * Metadata entries recorded as key-value pairs.
+         *
+         * @var string[]
+         */
+        public $entries;
+        /**
+         * Metadata entries recorded as key-value pairs.
+         *
+         * @param string[] $entries
+         */
+        public function setEntries($entries)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEntries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AndroidProvisioningPartner\DeviceMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntries()
+    class Google_Service_AndroidProvisioningPartner_DeviceMetadata extends \Google\Service\AndroidProvisioningPartner\DeviceMetadata
     {
     }
 }

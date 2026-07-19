@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1Schema extends \Google\Collection
-{
-    protected $collection_key = 'columns';
-    protected $columnsType = GoogleCloudDatacatalogV1ColumnSchema::class;
-    protected $columnsDataType = 'array';
-    /**
-     * The unified GoogleSQL-like schema of columns. The overall maximum number of
-     * columns and nested columns is 10,000. The maximum nested depth is 15
-     * levels.
-     *
-     * @param GoogleCloudDatacatalogV1ColumnSchema[] $columns
-     */
-    public function setColumns($columns)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1Schema extends \Google\Collection
     {
+        protected $collection_key = 'columns';
+        protected $columnsType = GoogleCloudDatacatalogV1ColumnSchema::class;
+        protected $columnsDataType = 'array';
+        /**
+         * The unified GoogleSQL-like schema of columns. The overall maximum number of
+         * columns and nested columns is 10,000. The maximum nested depth is 15
+         * levels.
+         *
+         * @param GoogleCloudDatacatalogV1ColumnSchema[] $columns
+         */
+        public function setColumns($columns)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1ColumnSchema[]
+         */
+        public function getColumns()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatacatalogV1ColumnSchema[]
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1Schema registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumns()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1Schema extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1Schema
     {
     }
 }

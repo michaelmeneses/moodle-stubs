@@ -21,30 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement\Resource;
-
-/**
- * The "webTokens" collection of methods.
- * Typical usage is:
- *  <code>
- *   $androidmanagementService = new Google\Service\AndroidManagement(...);
- *   $webTokens = $androidmanagementService->enterprises_webTokens;
- *  </code>
- */
-class EnterprisesWebTokens extends \Google\Service\Resource
-{
+namespace Google\Service\AndroidManagement\Resource {
+    use Google\Service\AndroidManagement\WebToken;
     /**
-     * Creates a web token to access an embeddable managed Google Play web UI for a
-     * given enterprise. (webTokens.create)
-     *
-     * @param string $parent The name of the enterprise in the form
-     * enterprises/{enterpriseId}.
-     * @param WebToken $postBody
-     * @param array $optParams Optional parameters.
-     * @return WebToken
-     * @throws \Google\Service\Exception
+     * The "webTokens" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $androidmanagementService = new Google\Service\AndroidManagement(...);
+     *   $webTokens = $androidmanagementService->enterprises_webTokens;
+     *  </code>
      */
-    public function create($parent, WebToken $postBody, $optParams = [])
+    class EnterprisesWebTokens extends \Google\Service\Resource
+    {
+        /**
+         * Creates a web token to access an embeddable managed Google Play web UI for a
+         * given enterprise. (webTokens.create)
+         *
+         * @param string $parent The name of the enterprise in the form
+         * enterprises/{enterpriseId}.
+         * @param WebToken $postBody
+         * @param array $optParams Optional parameters.
+         * @return WebToken
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, WebToken $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AndroidManagement\Resource\EnterprisesWebTokens registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AndroidManagement_Resource_EnterprisesWebTokens extends \Google\Service\AndroidManagement\Resource\EnterprisesWebTokens
     {
     }
 }

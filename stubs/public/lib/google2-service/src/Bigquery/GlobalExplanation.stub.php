@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class GlobalExplanation extends \Google\Collection
-{
-    protected $collection_key = 'explanations';
-    /**
-     * Class label for this set of global explanations. Will be empty/null for
-     * binary logistic and linear regression models. Sorted alphabetically in
-     * descending order.
-     *
-     * @var string
-     */
-    public $classLabel;
-    protected $explanationsType = Explanation::class;
-    protected $explanationsDataType = 'array';
-    /**
-     * Class label for this set of global explanations. Will be empty/null for
-     * binary logistic and linear regression models. Sorted alphabetically in
-     * descending order.
-     *
-     * @param string $classLabel
-     */
-    public function setClassLabel($classLabel)
+namespace Google\Service\Bigquery {
+    class GlobalExplanation extends \Google\Collection
     {
+        protected $collection_key = 'explanations';
+        /**
+         * Class label for this set of global explanations. Will be empty/null for
+         * binary logistic and linear regression models. Sorted alphabetically in
+         * descending order.
+         *
+         * @var string
+         */
+        public $classLabel;
+        protected $explanationsType = Explanation::class;
+        protected $explanationsDataType = 'array';
+        /**
+         * Class label for this set of global explanations. Will be empty/null for
+         * binary logistic and linear regression models. Sorted alphabetically in
+         * descending order.
+         *
+         * @param string $classLabel
+         */
+        public function setClassLabel($classLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClassLabel()
+        {
+        }
+        /**
+         * A list of the top global explanations. Sorted by absolute value of
+         * attribution in descending order.
+         *
+         * @param Explanation[] $explanations
+         */
+        public function setExplanations($explanations)
+        {
+        }
+        /**
+         * @return Explanation[]
+         */
+        public function getExplanations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\GlobalExplanation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClassLabel()
-    {
-    }
-    /**
-     * A list of the top global explanations. Sorted by absolute value of
-     * attribution in descending order.
-     *
-     * @param Explanation[] $explanations
-     */
-    public function setExplanations($explanations)
-    {
-    }
-    /**
-     * @return Explanation[]
-     */
-    public function getExplanations()
+    class Google_Service_Bigquery_GlobalExplanation extends \Google\Service\Bigquery\GlobalExplanation
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class VolumeVolumeInfoIndustryIdentifiers extends \Google\Model
-{
-    /**
-     * Industry specific volume identifier.
-     *
-     * @var string
-     */
-    public $identifier;
-    /**
-     * Identifier type. Possible values are ISBN_10, ISBN_13, ISSN and OTHER.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Industry specific volume identifier.
-     *
-     * @param string $identifier
-     */
-    public function setIdentifier($identifier)
+namespace Google\Service\Books {
+    class VolumeVolumeInfoIndustryIdentifiers extends \Google\Model
     {
+        /**
+         * Industry specific volume identifier.
+         *
+         * @var string
+         */
+        public $identifier;
+        /**
+         * Identifier type. Possible values are ISBN_10, ISBN_13, ISSN and OTHER.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Industry specific volume identifier.
+         *
+         * @param string $identifier
+         */
+        public function setIdentifier($identifier)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIdentifier()
+        {
+        }
+        /**
+         * Identifier type. Possible values are ISBN_10, ISBN_13, ISSN and OTHER.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Books\VolumeVolumeInfoIndustryIdentifiers registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIdentifier()
-    {
-    }
-    /**
-     * Identifier type. Possible values are ISBN_10, ISBN_13, ISSN and OTHER.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Books_VolumeVolumeInfoIndustryIdentifiers extends \Google\Service\Books\VolumeVolumeInfoIndustryIdentifiers
     {
     }
 }

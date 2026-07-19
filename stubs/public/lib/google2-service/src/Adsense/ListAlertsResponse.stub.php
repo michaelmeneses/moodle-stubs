@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Adsense;
-
-class ListAlertsResponse extends \Google\Collection
-{
-    protected $collection_key = 'alerts';
-    protected $alertsType = Alert::class;
-    protected $alertsDataType = 'array';
-    /**
-     * The alerts returned in this list response.
-     *
-     * @param Alert[] $alerts
-     */
-    public function setAlerts($alerts)
+namespace Google\Service\Adsense {
+    class ListAlertsResponse extends \Google\Collection
     {
+        protected $collection_key = 'alerts';
+        protected $alertsType = Alert::class;
+        protected $alertsDataType = 'array';
+        /**
+         * The alerts returned in this list response.
+         *
+         * @param Alert[] $alerts
+         */
+        public function setAlerts($alerts)
+        {
+        }
+        /**
+         * @return Alert[]
+         */
+        public function getAlerts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Alert[]
+     * Runtime class alias of \Google\Service\Adsense\ListAlertsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlerts()
+    class Google_Service_Adsense_ListAlertsResponse extends \Google\Service\Adsense\ListAlertsResponse
     {
     }
 }

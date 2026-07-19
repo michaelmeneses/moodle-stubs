@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sasportal;
-
-class SasPortalGetPolicyRequest extends \Google\Model
-{
-    /**
-     * Required. The resource for which the policy is being requested.
-     *
-     * @var string
-     */
-    public $resource;
-    /**
-     * Required. The resource for which the policy is being requested.
-     *
-     * @param string $resource
-     */
-    public function setResource($resource)
+namespace Google\Service\Sasportal {
+    class SasPortalGetPolicyRequest extends \Google\Model
     {
+        /**
+         * Required. The resource for which the policy is being requested.
+         *
+         * @var string
+         */
+        public $resource;
+        /**
+         * Required. The resource for which the policy is being requested.
+         *
+         * @param string $resource
+         */
+        public function setResource($resource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Sasportal\SasPortalGetPolicyRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResource()
+    class Google_Service_Sasportal_SasPortalGetPolicyRequest extends \Google\Service\Sasportal\SasPortalGetPolicyRequest
     {
     }
 }

@@ -21,33 +21,44 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine\Resource;
-
-/**
- * The "completionConfig" collection of methods.
- * Typical usage is:
- *  <code>
- *   $discoveryengineService = new Google\Service\DiscoveryEngine(...);
- *   $completionConfig = $discoveryengineService->projects_locations_collections_engines_completionConfig;
- *  </code>
- */
-class ProjectsLocationsCollectionsEnginesCompletionConfig extends \Google\Service\Resource
-{
+namespace Google\Service\DiscoveryEngine\Resource {
+    use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AdvancedCompleteQueryRequest;
+    use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AdvancedCompleteQueryResponse;
     /**
-     * Completes the user input with advanced keyword suggestions.
-     * (completionConfig.completeQuery)
-     *
-     * @param string $completionConfig Required. The completion_config of the parent
-     * dataStore or engine resource name for which the completion is performed, such
-     * as `projects/locations/global/collections/default_collection/dataStores/compl
-     * etionConfig` `projects/locations/global/collections/default_collection/engine
-     * s/completionConfig`.
-     * @param GoogleCloudDiscoveryengineV1AdvancedCompleteQueryRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudDiscoveryengineV1AdvancedCompleteQueryResponse
-     * @throws \Google\Service\Exception
+     * The "completionConfig" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $discoveryengineService = new Google\Service\DiscoveryEngine(...);
+     *   $completionConfig = $discoveryengineService->projects_locations_collections_engines_completionConfig;
+     *  </code>
      */
-    public function completeQuery($completionConfig, GoogleCloudDiscoveryengineV1AdvancedCompleteQueryRequest $postBody, $optParams = [])
+    class ProjectsLocationsCollectionsEnginesCompletionConfig extends \Google\Service\Resource
+    {
+        /**
+         * Completes the user input with advanced keyword suggestions.
+         * (completionConfig.completeQuery)
+         *
+         * @param string $completionConfig Required. The completion_config of the parent
+         * dataStore or engine resource name for which the completion is performed, such
+         * as `projects/locations/global/collections/default_collection/dataStores/compl
+         * etionConfig` `projects/locations/global/collections/default_collection/engine
+         * s/completionConfig`.
+         * @param GoogleCloudDiscoveryengineV1AdvancedCompleteQueryRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudDiscoveryengineV1AdvancedCompleteQueryResponse
+         * @throws \Google\Service\Exception
+         */
+        public function completeQuery($completionConfig, GoogleCloudDiscoveryengineV1AdvancedCompleteQueryRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DiscoveryEngine\Resource\ProjectsLocationsCollectionsEnginesCompletionConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DiscoveryEngine_Resource_ProjectsLocationsCollectionsEnginesCompletionConfig extends \Google\Service\DiscoveryEngine\Resource\ProjectsLocationsCollectionsEnginesCompletionConfig
     {
     }
 }

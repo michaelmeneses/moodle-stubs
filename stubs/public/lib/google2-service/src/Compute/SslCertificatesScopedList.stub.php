@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class SslCertificatesScopedList extends \Google\Collection
-{
-    protected $collection_key = 'sslCertificates';
-    protected $sslCertificatesType = SslCertificate::class;
-    protected $sslCertificatesDataType = 'array';
-    protected $warningType = SslCertificatesScopedListWarning::class;
-    protected $warningDataType = '';
-    /**
-     * List of SslCertificates contained in this scope.
-     *
-     * @param SslCertificate[] $sslCertificates
-     */
-    public function setSslCertificates($sslCertificates)
+namespace Google\Service\Compute {
+    class SslCertificatesScopedList extends \Google\Collection
     {
+        protected $collection_key = 'sslCertificates';
+        protected $sslCertificatesType = SslCertificate::class;
+        protected $sslCertificatesDataType = 'array';
+        protected $warningType = SslCertificatesScopedListWarning::class;
+        protected $warningDataType = '';
+        /**
+         * List of SslCertificates contained in this scope.
+         *
+         * @param SslCertificate[] $sslCertificates
+         */
+        public function setSslCertificates($sslCertificates)
+        {
+        }
+        /**
+         * @return SslCertificate[]
+         */
+        public function getSslCertificates()
+        {
+        }
+        /**
+         * Informational warning which replaces the list of backend services when the
+         * list is empty.
+         *
+         * @param SslCertificatesScopedListWarning $warning
+         */
+        public function setWarning(SslCertificatesScopedListWarning $warning)
+        {
+        }
+        /**
+         * @return SslCertificatesScopedListWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SslCertificate[]
+     * Runtime class alias of \Google\Service\Compute\SslCertificatesScopedList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSslCertificates()
-    {
-    }
-    /**
-     * Informational warning which replaces the list of backend services when the
-     * list is empty.
-     *
-     * @param SslCertificatesScopedListWarning $warning
-     */
-    public function setWarning(SslCertificatesScopedListWarning $warning)
-    {
-    }
-    /**
-     * @return SslCertificatesScopedListWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_SslCertificatesScopedList extends \Google\Service\Compute\SslCertificatesScopedList
     {
     }
 }

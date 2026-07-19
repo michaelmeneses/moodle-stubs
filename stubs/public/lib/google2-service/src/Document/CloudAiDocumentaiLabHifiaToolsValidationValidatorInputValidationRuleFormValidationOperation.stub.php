@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFormValidationOperation extends \Google\Collection
-{
-    public const OPERATION_TYPE_OPERATION_TYPE_UNSPECIFIED = 'OPERATION_TYPE_UNSPECIFIED';
-    public const OPERATION_TYPE_OPERATION_TYPE_SUM = 'OPERATION_TYPE_SUM';
-    public const OPERATION_TYPE_OPERATION_TYPE_SUB = 'OPERATION_TYPE_SUB';
-    public const OPERATION_TYPE_OPERATION_TYPE_MUL = 'OPERATION_TYPE_MUL';
-    public const OPERATION_TYPE_OPERATION_TYPE_DIV = 'OPERATION_TYPE_DIV';
-    public const OPERATION_TYPE_OPERATION_TYPE_MAX = 'OPERATION_TYPE_MAX';
-    public const OPERATION_TYPE_OPERATION_TYPE_MIN = 'OPERATION_TYPE_MIN';
-    public const OPERATION_TYPE_OPERATION_TYPE_ABS = 'OPERATION_TYPE_ABS';
-    public const OPERATION_TYPE_OPERATION_TYPE_UNIQUE = 'OPERATION_TYPE_UNIQUE';
-    public const OPERATION_TYPE_OPERATION_TYPE_COUNT = 'OPERATION_TYPE_COUNT';
-    protected $collection_key = 'operations';
-    protected $constantsType = CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleConstant::class;
-    protected $constantsDataType = 'array';
-    protected $fieldsType = CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleField::class;
-    protected $fieldsDataType = 'array';
-    /**
-     * The operation type to be applied to all the operands.
-     *
-     * @var string
-     */
-    public $operationType;
-    protected $operationsType = CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFormValidationOperation::class;
-    protected $operationsDataType = 'array';
-    /**
-     * A list of constants to be used as operands.
-     *
-     * @param CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleConstant[] $constants
-     */
-    public function setConstants($constants)
+namespace Google\Service\Document {
+    class CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFormValidationOperation extends \Google\Collection
     {
+        public const OPERATION_TYPE_OPERATION_TYPE_UNSPECIFIED = 'OPERATION_TYPE_UNSPECIFIED';
+        public const OPERATION_TYPE_OPERATION_TYPE_SUM = 'OPERATION_TYPE_SUM';
+        public const OPERATION_TYPE_OPERATION_TYPE_SUB = 'OPERATION_TYPE_SUB';
+        public const OPERATION_TYPE_OPERATION_TYPE_MUL = 'OPERATION_TYPE_MUL';
+        public const OPERATION_TYPE_OPERATION_TYPE_DIV = 'OPERATION_TYPE_DIV';
+        public const OPERATION_TYPE_OPERATION_TYPE_MAX = 'OPERATION_TYPE_MAX';
+        public const OPERATION_TYPE_OPERATION_TYPE_MIN = 'OPERATION_TYPE_MIN';
+        public const OPERATION_TYPE_OPERATION_TYPE_ABS = 'OPERATION_TYPE_ABS';
+        public const OPERATION_TYPE_OPERATION_TYPE_UNIQUE = 'OPERATION_TYPE_UNIQUE';
+        public const OPERATION_TYPE_OPERATION_TYPE_COUNT = 'OPERATION_TYPE_COUNT';
+        protected $collection_key = 'operations';
+        protected $constantsType = CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleConstant::class;
+        protected $constantsDataType = 'array';
+        protected $fieldsType = CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleField::class;
+        protected $fieldsDataType = 'array';
+        /**
+         * The operation type to be applied to all the operands.
+         *
+         * @var string
+         */
+        public $operationType;
+        protected $operationsType = CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFormValidationOperation::class;
+        protected $operationsDataType = 'array';
+        /**
+         * A list of constants to be used as operands.
+         *
+         * @param CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleConstant[] $constants
+         */
+        public function setConstants($constants)
+        {
+        }
+        /**
+         * @return CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleConstant[]
+         */
+        public function getConstants()
+        {
+        }
+        /**
+         * A list of fields to be used as operands.
+         *
+         * @param CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleField[] $fields
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleField[]
+         */
+        public function getFields()
+        {
+        }
+        /**
+         * The operation type to be applied to all the operands.
+         *
+         * Accepted values: OPERATION_TYPE_UNSPECIFIED, OPERATION_TYPE_SUM,
+         * OPERATION_TYPE_SUB, OPERATION_TYPE_MUL, OPERATION_TYPE_DIV,
+         * OPERATION_TYPE_MAX, OPERATION_TYPE_MIN, OPERATION_TYPE_ABS,
+         * OPERATION_TYPE_UNIQUE, OPERATION_TYPE_COUNT
+         *
+         * @param self::OPERATION_TYPE_* $operationType
+         */
+        public function setOperationType($operationType)
+        {
+        }
+        /**
+         * @return self::OPERATION_TYPE_*
+         */
+        public function getOperationType()
+        {
+        }
+        /**
+         * A list of recursive operations to be used as operands.
+         *
+         * @param CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFormValidationOperation[] $operations
+         */
+        public function setOperations($operations)
+        {
+        }
+        /**
+         * @return CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFormValidationOperation[]
+         */
+        public function getOperations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleConstant[]
+     * Runtime class alias of \Google\Service\Document\CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFormValidationOperation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConstants()
-    {
-    }
-    /**
-     * A list of fields to be used as operands.
-     *
-     * @param CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleField[] $fields
-     */
-    public function setFields($fields)
-    {
-    }
-    /**
-     * @return CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleField[]
-     */
-    public function getFields()
-    {
-    }
-    /**
-     * The operation type to be applied to all the operands.
-     *
-     * Accepted values: OPERATION_TYPE_UNSPECIFIED, OPERATION_TYPE_SUM,
-     * OPERATION_TYPE_SUB, OPERATION_TYPE_MUL, OPERATION_TYPE_DIV,
-     * OPERATION_TYPE_MAX, OPERATION_TYPE_MIN, OPERATION_TYPE_ABS,
-     * OPERATION_TYPE_UNIQUE, OPERATION_TYPE_COUNT
-     *
-     * @param self::OPERATION_TYPE_* $operationType
-     */
-    public function setOperationType($operationType)
-    {
-    }
-    /**
-     * @return self::OPERATION_TYPE_*
-     */
-    public function getOperationType()
-    {
-    }
-    /**
-     * A list of recursive operations to be used as operands.
-     *
-     * @param CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFormValidationOperation[] $operations
-     */
-    public function setOperations($operations)
-    {
-    }
-    /**
-     * @return CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFormValidationOperation[]
-     */
-    public function getOperations()
+    class Google_Service_Document_CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFormValidationOperation extends \Google\Service\Document\CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleFormValidationOperation
     {
     }
 }

@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMemorystoreforMemcached;
-
-class ListInstancesResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $instancesType = Instance::class;
-    protected $instancesDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * A list of Memcached instances in the project in the specified location, or
-     * across all locations. If the `location_id` in the parent field of the
-     * request is "-", all regions available to the project are queried, and the
-     * results aggregated.
-     *
-     * @param Instance[] $instances
-     */
-    public function setInstances($instances)
+namespace Google\Service\CloudMemorystoreforMemcached {
+    class ListInstancesResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $instancesType = Instance::class;
+        protected $instancesDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * A list of Memcached instances in the project in the specified location, or
+         * across all locations. If the `location_id` in the parent field of the
+         * request is "-", all regions available to the project are queried, and the
+         * results aggregated.
+         *
+         * @param Instance[] $instances
+         */
+        public function setInstances($instances)
+        {
+        }
+        /**
+         * @return Instance[]
+         */
+        public function getInstances()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Instance[]
+     * Runtime class alias of \Google\Service\CloudMemorystoreforMemcached\ListInstancesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstances()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_CloudMemorystoreforMemcached_ListInstancesResponse extends \Google\Service\CloudMemorystoreforMemcached\ListInstancesResponse
     {
     }
 }

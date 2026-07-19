@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaSearchIntegrationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'integrations';
-    protected $integrationsType = GoogleCloudIntegrationsV1alphaSearchIntegrationsResponseIntegrationSearchResult::class;
-    protected $integrationsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of integrations that match the search criteria.
-     *
-     * @param GoogleCloudIntegrationsV1alphaSearchIntegrationsResponseIntegrationSearchResult[] $integrations
-     */
-    public function setIntegrations($integrations)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaSearchIntegrationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'integrations';
+        protected $integrationsType = GoogleCloudIntegrationsV1alphaSearchIntegrationsResponseIntegrationSearchResult::class;
+        protected $integrationsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of integrations that match the search criteria.
+         *
+         * @param GoogleCloudIntegrationsV1alphaSearchIntegrationsResponseIntegrationSearchResult[] $integrations
+         */
+        public function setIntegrations($integrations)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaSearchIntegrationsResponseIntegrationSearchResult[]
+         */
+        public function getIntegrations()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudIntegrationsV1alphaSearchIntegrationsResponseIntegrationSearchResult[]
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaSearchIntegrationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIntegrations()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaSearchIntegrationsResponse extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaSearchIntegrationsResponse
     {
     }
 }

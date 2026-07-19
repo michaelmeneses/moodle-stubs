@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityPosture;
-
-class Property extends \Google\Model
-{
-    /**
-     * Required. The name of the custom source property.
-     *
-     * @var string
-     */
-    public $name;
-    protected $valueExpressionType = Expr::class;
-    protected $valueExpressionDataType = '';
-    /**
-     * Required. The name of the custom source property.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\SecurityPosture {
+    class Property extends \Google\Model
     {
+        /**
+         * Required. The name of the custom source property.
+         *
+         * @var string
+         */
+        public $name;
+        protected $valueExpressionType = Expr::class;
+        protected $valueExpressionDataType = '';
+        /**
+         * Required. The name of the custom source property.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. The CEL expression for the value of the custom source property.
+         * For resource properties, you can return the value of the property or a
+         * string enclosed in quotation marks.
+         *
+         * @param Expr $valueExpression
+         */
+        public function setValueExpression(Expr $valueExpression)
+        {
+        }
+        /**
+         * @return Expr
+         */
+        public function getValueExpression()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityPosture\Property registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. The CEL expression for the value of the custom source property.
-     * For resource properties, you can return the value of the property or a
-     * string enclosed in quotation marks.
-     *
-     * @param Expr $valueExpression
-     */
-    public function setValueExpression(Expr $valueExpression)
-    {
-    }
-    /**
-     * @return Expr
-     */
-    public function getValueExpression()
+    class Google_Service_SecurityPosture_Property extends \Google\Service\SecurityPosture\Property
     {
     }
 }

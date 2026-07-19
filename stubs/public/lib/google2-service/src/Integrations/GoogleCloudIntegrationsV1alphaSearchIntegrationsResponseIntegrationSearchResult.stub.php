@@ -21,191 +21,200 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaSearchIntegrationsResponseIntegrationSearchResult extends \Google\Model
-{
-    /**
-     * Default.
-     */
-    public const STATUS_INTEGRATION_STATE_UNSPECIFIED = 'INTEGRATION_STATE_UNSPECIFIED';
-    /**
-     * Draft.
-     */
-    public const STATUS_DRAFT = 'DRAFT';
-    /**
-     * Active.
-     */
-    public const STATUS_ACTIVE = 'ACTIVE';
-    /**
-     * Archived.
-     */
-    public const STATUS_ARCHIVED = 'ARCHIVED';
-    /**
-     * Snapshot.
-     */
-    public const STATUS_SNAPSHOT = 'SNAPSHOT';
-    /**
-     * Output only. The create time of the integration version.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * The creator of the integration version.
-     *
-     * @var string
-     */
-    public $creator;
-    /**
-     * The description of the integration version.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The integration id.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The integration document metadata.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The region of the integration version.
-     *
-     * @var string
-     */
-    public $region;
-    /**
-     * Output only. The status of the integration version.
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * The version of the integration version.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Output only. The create time of the integration version.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaSearchIntegrationsResponseIntegrationSearchResult extends \Google\Model
     {
+        /**
+         * Default.
+         */
+        public const STATUS_INTEGRATION_STATE_UNSPECIFIED = 'INTEGRATION_STATE_UNSPECIFIED';
+        /**
+         * Draft.
+         */
+        public const STATUS_DRAFT = 'DRAFT';
+        /**
+         * Active.
+         */
+        public const STATUS_ACTIVE = 'ACTIVE';
+        /**
+         * Archived.
+         */
+        public const STATUS_ARCHIVED = 'ARCHIVED';
+        /**
+         * Snapshot.
+         */
+        public const STATUS_SNAPSHOT = 'SNAPSHOT';
+        /**
+         * Output only. The create time of the integration version.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * The creator of the integration version.
+         *
+         * @var string
+         */
+        public $creator;
+        /**
+         * The description of the integration version.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The integration id.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The integration document metadata.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The region of the integration version.
+         *
+         * @var string
+         */
+        public $region;
+        /**
+         * Output only. The status of the integration version.
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * The version of the integration version.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Output only. The create time of the integration version.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The creator of the integration version.
+         *
+         * @param string $creator
+         */
+        public function setCreator($creator)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreator()
+        {
+        }
+        /**
+         * The description of the integration version.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The integration id.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The integration document metadata.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The region of the integration version.
+         *
+         * @param string $region
+         */
+        public function setRegion($region)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegion()
+        {
+        }
+        /**
+         * Output only. The status of the integration version.
+         *
+         * Accepted values: INTEGRATION_STATE_UNSPECIFIED, DRAFT, ACTIVE, ARCHIVED,
+         * SNAPSHOT
+         *
+         * @param self::STATUS_* $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return self::STATUS_*
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * The version of the integration version.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaSearchIntegrationsResponseIntegrationSearchResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The creator of the integration version.
-     *
-     * @param string $creator
-     */
-    public function setCreator($creator)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreator()
-    {
-    }
-    /**
-     * The description of the integration version.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * The integration id.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * The integration document metadata.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The region of the integration version.
-     *
-     * @param string $region
-     */
-    public function setRegion($region)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegion()
-    {
-    }
-    /**
-     * Output only. The status of the integration version.
-     *
-     * Accepted values: INTEGRATION_STATE_UNSPECIFIED, DRAFT, ACTIVE, ARCHIVED,
-     * SNAPSHOT
-     *
-     * @param self::STATUS_* $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return self::STATUS_*
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * The version of the integration version.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaSearchIntegrationsResponseIntegrationSearchResult extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaSearchIntegrationsResponseIntegrationSearchResult
     {
     }
 }

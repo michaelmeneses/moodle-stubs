@@ -21,155 +21,164 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class KeyedAppState extends \Google\Model
-{
-    /**
-     * Unspecified severity level.
-     */
-    public const SEVERITY_SEVERITY_UNSPECIFIED = 'SEVERITY_UNSPECIFIED';
-    /**
-     * Information severity level.
-     */
-    public const SEVERITY_INFO = 'INFO';
-    /**
-     * Error severity level. This should only be set for genuine error conditions
-     * that a management organization needs to take action to fix.
-     */
-    public const SEVERITY_ERROR = 'ERROR';
-    /**
-     * The creation time of the app state on the device.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Optionally, a machine-readable value to be read by the EMM. For example,
-     * setting values that the admin can choose to query against in the EMM
-     * console (e.g. “notify me if the battery_warning data < 10”).
-     *
-     * @var string
-     */
-    public $data;
-    /**
-     * The key for the app state. Acts as a point of reference for what the app is
-     * providing state for. For example, when providing managed configuration
-     * feedback, this key could be the managed configuration key.
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * The time the app state was most recently updated.
-     *
-     * @var string
-     */
-    public $lastUpdateTime;
-    /**
-     * Optionally, a free-form message string to explain the app state. If the
-     * state was triggered by a particular value (e.g. a managed configuration
-     * value), it should be included in the message.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * The severity of the app state.
-     *
-     * @var string
-     */
-    public $severity;
-    /**
-     * The creation time of the app state on the device.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\AndroidManagement {
+    class KeyedAppState extends \Google\Model
     {
+        /**
+         * Unspecified severity level.
+         */
+        public const SEVERITY_SEVERITY_UNSPECIFIED = 'SEVERITY_UNSPECIFIED';
+        /**
+         * Information severity level.
+         */
+        public const SEVERITY_INFO = 'INFO';
+        /**
+         * Error severity level. This should only be set for genuine error conditions
+         * that a management organization needs to take action to fix.
+         */
+        public const SEVERITY_ERROR = 'ERROR';
+        /**
+         * The creation time of the app state on the device.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Optionally, a machine-readable value to be read by the EMM. For example,
+         * setting values that the admin can choose to query against in the EMM
+         * console (e.g. “notify me if the battery_warning data < 10”).
+         *
+         * @var string
+         */
+        public $data;
+        /**
+         * The key for the app state. Acts as a point of reference for what the app is
+         * providing state for. For example, when providing managed configuration
+         * feedback, this key could be the managed configuration key.
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * The time the app state was most recently updated.
+         *
+         * @var string
+         */
+        public $lastUpdateTime;
+        /**
+         * Optionally, a free-form message string to explain the app state. If the
+         * state was triggered by a particular value (e.g. a managed configuration
+         * value), it should be included in the message.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * The severity of the app state.
+         *
+         * @var string
+         */
+        public $severity;
+        /**
+         * The creation time of the app state on the device.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optionally, a machine-readable value to be read by the EMM. For example,
+         * setting values that the admin can choose to query against in the EMM
+         * console (e.g. “notify me if the battery_warning data < 10”).
+         *
+         * @param string $data
+         */
+        public function setData($data)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getData()
+        {
+        }
+        /**
+         * The key for the app state. Acts as a point of reference for what the app is
+         * providing state for. For example, when providing managed configuration
+         * feedback, this key could be the managed configuration key.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * The time the app state was most recently updated.
+         *
+         * @param string $lastUpdateTime
+         */
+        public function setLastUpdateTime($lastUpdateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastUpdateTime()
+        {
+        }
+        /**
+         * Optionally, a free-form message string to explain the app state. If the
+         * state was triggered by a particular value (e.g. a managed configuration
+         * value), it should be included in the message.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * The severity of the app state.
+         *
+         * Accepted values: SEVERITY_UNSPECIFIED, INFO, ERROR
+         *
+         * @param self::SEVERITY_* $severity
+         */
+        public function setSeverity($severity)
+        {
+        }
+        /**
+         * @return self::SEVERITY_*
+         */
+        public function getSeverity()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidManagement\KeyedAppState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optionally, a machine-readable value to be read by the EMM. For example,
-     * setting values that the admin can choose to query against in the EMM
-     * console (e.g. “notify me if the battery_warning data < 10”).
-     *
-     * @param string $data
-     */
-    public function setData($data)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getData()
-    {
-    }
-    /**
-     * The key for the app state. Acts as a point of reference for what the app is
-     * providing state for. For example, when providing managed configuration
-     * feedback, this key could be the managed configuration key.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKey()
-    {
-    }
-    /**
-     * The time the app state was most recently updated.
-     *
-     * @param string $lastUpdateTime
-     */
-    public function setLastUpdateTime($lastUpdateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastUpdateTime()
-    {
-    }
-    /**
-     * Optionally, a free-form message string to explain the app state. If the
-     * state was triggered by a particular value (e.g. a managed configuration
-     * value), it should be included in the message.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
-    {
-    }
-    /**
-     * The severity of the app state.
-     *
-     * Accepted values: SEVERITY_UNSPECIFIED, INFO, ERROR
-     *
-     * @param self::SEVERITY_* $severity
-     */
-    public function setSeverity($severity)
-    {
-    }
-    /**
-     * @return self::SEVERITY_*
-     */
-    public function getSeverity()
+    class Google_Service_AndroidManagement_KeyedAppState extends \Google\Service\AndroidManagement\KeyedAppState
     {
     }
 }

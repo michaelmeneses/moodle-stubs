@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class CollectdValueError extends \Google\Model
-{
-    protected $errorType = Status::class;
-    protected $errorDataType = '';
-    /**
-     * The zero-based index in CollectdPayload.values within the parent
-     * CreateCollectdTimeSeriesRequest.collectd_payloads.
-     *
-     * @var int
-     */
-    public $index;
-    /**
-     * Records the error status for the value.
-     *
-     * @param Status $error
-     */
-    public function setError(Status $error)
+namespace Google\Service\Monitoring {
+    class CollectdValueError extends \Google\Model
     {
+        protected $errorType = Status::class;
+        protected $errorDataType = '';
+        /**
+         * The zero-based index in CollectdPayload.values within the parent
+         * CreateCollectdTimeSeriesRequest.collectd_payloads.
+         *
+         * @var int
+         */
+        public $index;
+        /**
+         * Records the error status for the value.
+         *
+         * @param Status $error
+         */
+        public function setError(Status $error)
+        {
+        }
+        /**
+         * @return Status
+         */
+        public function getError()
+        {
+        }
+        /**
+         * The zero-based index in CollectdPayload.values within the parent
+         * CreateCollectdTimeSeriesRequest.collectd_payloads.
+         *
+         * @param int $index
+         */
+        public function setIndex($index)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getIndex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Status
+     * Runtime class alias of \Google\Service\Monitoring\CollectdValueError registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getError()
-    {
-    }
-    /**
-     * The zero-based index in CollectdPayload.values within the parent
-     * CreateCollectdTimeSeriesRequest.collectd_payloads.
-     *
-     * @param int $index
-     */
-    public function setIndex($index)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getIndex()
+    class Google_Service_Monitoring_CollectdValueError extends \Google\Service\Monitoring\CollectdValueError
     {
     }
 }

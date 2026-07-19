@@ -21,241 +21,250 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class Connection extends \Google\Collection
-{
-    protected $collection_key = 'configVariables';
-    protected $authConfigType = AuthConfig::class;
-    protected $authConfigDataType = '';
-    protected $configVariablesType = ConfigVariable::class;
-    protected $configVariablesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $connectorVersion;
-    /**
-     * @var string
-     */
-    public $createTime;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var string
-     */
-    public $envoyImageLocation;
-    /**
-     * @var string
-     */
-    public $imageLocation;
-    /**
-     * @var string[]
-     */
-    public $labels;
-    protected $lockConfigType = LockConfig::class;
-    protected $lockConfigDataType = '';
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $serviceAccount;
-    /**
-     * @var string
-     */
-    public $serviceDirectory;
-    protected $statusType = ConnectionStatus::class;
-    protected $statusDataType = '';
-    /**
-     * @var bool
-     */
-    public $suspended;
-    /**
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * @param AuthConfig
-     */
-    public function setAuthConfig(AuthConfig $authConfig)
+namespace Google\Service\Connectors {
+    class Connection extends \Google\Collection
     {
+        protected $collection_key = 'configVariables';
+        protected $authConfigType = AuthConfig::class;
+        protected $authConfigDataType = '';
+        protected $configVariablesType = ConfigVariable::class;
+        protected $configVariablesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $connectorVersion;
+        /**
+         * @var string
+         */
+        public $createTime;
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @var string
+         */
+        public $envoyImageLocation;
+        /**
+         * @var string
+         */
+        public $imageLocation;
+        /**
+         * @var string[]
+         */
+        public $labels;
+        protected $lockConfigType = LockConfig::class;
+        protected $lockConfigDataType = '';
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $serviceAccount;
+        /**
+         * @var string
+         */
+        public $serviceDirectory;
+        protected $statusType = ConnectionStatus::class;
+        protected $statusDataType = '';
+        /**
+         * @var bool
+         */
+        public $suspended;
+        /**
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * @param AuthConfig
+         */
+        public function setAuthConfig(AuthConfig $authConfig)
+        {
+        }
+        /**
+         * @return AuthConfig
+         */
+        public function getAuthConfig()
+        {
+        }
+        /**
+         * @param ConfigVariable[]
+         */
+        public function setConfigVariables($configVariables)
+        {
+        }
+        /**
+         * @return ConfigVariable[]
+         */
+        public function getConfigVariables()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setConnectorVersion($connectorVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConnectorVersion()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEnvoyImageLocation($envoyImageLocation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnvoyImageLocation()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setImageLocation($imageLocation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageLocation()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * @param LockConfig
+         */
+        public function setLockConfig(LockConfig $lockConfig)
+        {
+        }
+        /**
+         * @return LockConfig
+         */
+        public function getLockConfig()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setServiceAccount($serviceAccount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceAccount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setServiceDirectory($serviceDirectory)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceDirectory()
+        {
+        }
+        /**
+         * @param ConnectionStatus
+         */
+        public function setStatus(ConnectionStatus $status)
+        {
+        }
+        /**
+         * @return ConnectionStatus
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setSuspended($suspended)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSuspended()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AuthConfig
+     * Runtime class alias of \Google\Service\Connectors\Connection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthConfig()
-    {
-    }
-    /**
-     * @param ConfigVariable[]
-     */
-    public function setConfigVariables($configVariables)
-    {
-    }
-    /**
-     * @return ConfigVariable[]
-     */
-    public function getConfigVariables()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setConnectorVersion($connectorVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getConnectorVersion()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEnvoyImageLocation($envoyImageLocation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEnvoyImageLocation()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setImageLocation($imageLocation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImageLocation()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * @param LockConfig
-     */
-    public function setLockConfig(LockConfig $lockConfig)
-    {
-    }
-    /**
-     * @return LockConfig
-     */
-    public function getLockConfig()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setServiceAccount($serviceAccount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceAccount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setServiceDirectory($serviceDirectory)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceDirectory()
-    {
-    }
-    /**
-     * @param ConnectionStatus
-     */
-    public function setStatus(ConnectionStatus $status)
-    {
-    }
-    /**
-     * @return ConnectionStatus
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setSuspended($suspended)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSuspended()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Connectors_Connection extends \Google\Service\Connectors\Connection
     {
     }
 }

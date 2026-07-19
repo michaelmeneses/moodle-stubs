@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1mainSentimentData extends \Google\Model
-{
-    /**
-     * A non-negative number from 0 to infinity which represents the absolute
-     * magnitude of sentiment regardless of score.
-     *
-     * @var float
-     */
-    public $magnitude;
-    /**
-     * The sentiment score between -1.0 (negative) and 1.0 (positive).
-     *
-     * @var float
-     */
-    public $score;
-    /**
-     * A non-negative number from 0 to infinity which represents the absolute
-     * magnitude of sentiment regardless of score.
-     *
-     * @param float $magnitude
-     */
-    public function setMagnitude($magnitude)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1mainSentimentData extends \Google\Model
     {
+        /**
+         * A non-negative number from 0 to infinity which represents the absolute
+         * magnitude of sentiment regardless of score.
+         *
+         * @var float
+         */
+        public $magnitude;
+        /**
+         * The sentiment score between -1.0 (negative) and 1.0 (positive).
+         *
+         * @var float
+         */
+        public $score;
+        /**
+         * A non-negative number from 0 to infinity which represents the absolute
+         * magnitude of sentiment regardless of score.
+         *
+         * @param float $magnitude
+         */
+        public function setMagnitude($magnitude)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getMagnitude()
+        {
+        }
+        /**
+         * The sentiment score between -1.0 (negative) and 1.0 (positive).
+         *
+         * @param float $score
+         */
+        public function setScore($score)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getScore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainSentimentData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMagnitude()
-    {
-    }
-    /**
-     * The sentiment score between -1.0 (negative) and 1.0 (positive).
-     *
-     * @param float $score
-     */
-    public function setScore($score)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getScore()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1mainSentimentData extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainSentimentData
     {
     }
 }

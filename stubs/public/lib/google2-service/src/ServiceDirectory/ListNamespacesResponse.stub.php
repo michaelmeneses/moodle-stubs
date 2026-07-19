@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceDirectory;
-
-class ListNamespacesResponse extends \Google\Collection
-{
-    protected $collection_key = 'namespaces';
-    protected $namespacesType = ServicedirectoryNamespace::class;
-    protected $namespacesDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of namespaces.
-     *
-     * @param ServicedirectoryNamespace[] $namespaces
-     */
-    public function setNamespaces($namespaces)
+namespace Google\Service\ServiceDirectory {
+    class ListNamespacesResponse extends \Google\Collection
     {
+        protected $collection_key = 'namespaces';
+        protected $namespacesType = ServicedirectoryNamespace::class;
+        protected $namespacesDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of namespaces.
+         *
+         * @param ServicedirectoryNamespace[] $namespaces
+         */
+        public function setNamespaces($namespaces)
+        {
+        }
+        /**
+         * @return ServicedirectoryNamespace[]
+         */
+        public function getNamespaces()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ServicedirectoryNamespace[]
+     * Runtime class alias of \Google\Service\ServiceDirectory\ListNamespacesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNamespaces()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_ServiceDirectory_ListNamespacesResponse extends \Google\Service\ServiceDirectory\ListNamespacesResponse
     {
     }
 }

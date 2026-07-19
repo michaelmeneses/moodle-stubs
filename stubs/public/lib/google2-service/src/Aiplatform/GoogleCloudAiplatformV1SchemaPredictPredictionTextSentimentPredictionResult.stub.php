@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaPredictPredictionTextSentimentPredictionResult extends \Google\Model
-{
-    /**
-     * The integer sentiment labels between 0 (inclusive) and sentimentMax label
-     * (inclusive), while 0 maps to the least positive sentiment and sentimentMax
-     * maps to the most positive one. The higher the score is, the more positive
-     * the sentiment in the text snippet is. Note: sentimentMax is an integer
-     * value between 1 (inclusive) and 10 (inclusive).
-     *
-     * @var int
-     */
-    public $sentiment;
-    /**
-     * The integer sentiment labels between 0 (inclusive) and sentimentMax label
-     * (inclusive), while 0 maps to the least positive sentiment and sentimentMax
-     * maps to the most positive one. The higher the score is, the more positive
-     * the sentiment in the text snippet is. Note: sentimentMax is an integer
-     * value between 1 (inclusive) and 10 (inclusive).
-     *
-     * @param int $sentiment
-     */
-    public function setSentiment($sentiment)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaPredictPredictionTextSentimentPredictionResult extends \Google\Model
     {
+        /**
+         * The integer sentiment labels between 0 (inclusive) and sentimentMax label
+         * (inclusive), while 0 maps to the least positive sentiment and sentimentMax
+         * maps to the most positive one. The higher the score is, the more positive
+         * the sentiment in the text snippet is. Note: sentimentMax is an integer
+         * value between 1 (inclusive) and 10 (inclusive).
+         *
+         * @var int
+         */
+        public $sentiment;
+        /**
+         * The integer sentiment labels between 0 (inclusive) and sentimentMax label
+         * (inclusive), while 0 maps to the least positive sentiment and sentimentMax
+         * maps to the most positive one. The higher the score is, the more positive
+         * the sentiment in the text snippet is. Note: sentimentMax is an integer
+         * value between 1 (inclusive) and 10 (inclusive).
+         *
+         * @param int $sentiment
+         */
+        public function setSentiment($sentiment)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSentiment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPredictPredictionTextSentimentPredictionResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSentiment()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaPredictPredictionTextSentimentPredictionResult extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPredictPredictionTextSentimentPredictionResult
     {
     }
 }

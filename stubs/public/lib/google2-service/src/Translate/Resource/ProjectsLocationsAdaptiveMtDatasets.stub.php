@@ -21,96 +21,110 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Translate\Resource;
-
-/**
- * The "adaptiveMtDatasets" collection of methods.
- * Typical usage is:
- *  <code>
- *   $translateService = new Google\Service\Translate(...);
- *   $adaptiveMtDatasets = $translateService->projects_locations_adaptiveMtDatasets;
- *  </code>
- */
-class ProjectsLocationsAdaptiveMtDatasets extends \Google\Service\Resource
-{
+namespace Google\Service\Translate\Resource {
+    use Google\Service\Translate\AdaptiveMtDataset;
+    use Google\Service\Translate\ImportAdaptiveMtFileRequest;
+    use Google\Service\Translate\ImportAdaptiveMtFileResponse;
+    use Google\Service\Translate\ListAdaptiveMtDatasetsResponse;
+    use Google\Service\Translate\TranslateEmpty;
     /**
-     * Creates an Adaptive MT dataset. (adaptiveMtDatasets.create)
-     *
-     * @param string $parent Required. Name of the parent project. In form of
-     * `projects/{project-number-or-id}/locations/{location-id}`
-     * @param AdaptiveMtDataset $postBody
-     * @param array $optParams Optional parameters.
-     * @return AdaptiveMtDataset
-     * @throws \Google\Service\Exception
+     * The "adaptiveMtDatasets" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $translateService = new Google\Service\Translate(...);
+     *   $adaptiveMtDatasets = $translateService->projects_locations_adaptiveMtDatasets;
+     *  </code>
      */
-    public function create($parent, AdaptiveMtDataset $postBody, $optParams = [])
+    class ProjectsLocationsAdaptiveMtDatasets extends \Google\Service\Resource
     {
+        /**
+         * Creates an Adaptive MT dataset. (adaptiveMtDatasets.create)
+         *
+         * @param string $parent Required. Name of the parent project. In form of
+         * `projects/{project-number-or-id}/locations/{location-id}`
+         * @param AdaptiveMtDataset $postBody
+         * @param array $optParams Optional parameters.
+         * @return AdaptiveMtDataset
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, AdaptiveMtDataset $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes an Adaptive MT dataset, including all its entries and associated
+         * metadata. (adaptiveMtDatasets.delete)
+         *
+         * @param string $name Required. Name of the dataset. In the form of
+         * `projects/{project-number-or-id}/locations/{location-
+         * id}/adaptiveMtDatasets/{adaptive-mt-dataset-id}`
+         * @param array $optParams Optional parameters.
+         * @return TranslateEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets the Adaptive MT dataset. (adaptiveMtDatasets.get)
+         *
+         * @param string $name Required. Name of the dataset. In the form of
+         * `projects/{project-number-or-id}/locations/{location-
+         * id}/adaptiveMtDatasets/{adaptive-mt-dataset-id}`
+         * @param array $optParams Optional parameters.
+         * @return AdaptiveMtDataset
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Imports an AdaptiveMtFile and adds all of its sentences into the
+         * AdaptiveMtDataset. (adaptiveMtDatasets.importAdaptiveMtFile)
+         *
+         * @param string $parent Required. The resource name of the file, in form of
+         * `projects/{project-number-or-
+         * id}/locations/{location_id}/adaptiveMtDatasets/{dataset}`
+         * @param ImportAdaptiveMtFileRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return ImportAdaptiveMtFileResponse
+         * @throws \Google\Service\Exception
+         */
+        public function importAdaptiveMtFile($parent, ImportAdaptiveMtFileRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Lists all Adaptive MT datasets for which the caller has read permission.
+         * (adaptiveMtDatasets.listProjectsLocationsAdaptiveMtDatasets)
+         *
+         * @param string $parent Required. The resource name of the project from which
+         * to list the Adaptive MT datasets. `projects/{project-number-or-
+         * id}/locations/{location-id}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. An expression for filtering the results of
+         * the request. Filter is not supported yet.
+         * @opt_param int pageSize Optional. Requested page size. The server may return
+         * fewer results than requested. If unspecified, the server picks an appropriate
+         * default.
+         * @opt_param string pageToken Optional. A token identifying a page of results
+         * the server should return. Typically, this is the value of
+         * ListAdaptiveMtDatasetsResponse.next_page_token returned from the previous
+         * call to `ListAdaptiveMtDatasets` method. The first page is returned if
+         * `page_token`is empty or missing.
+         * @return ListAdaptiveMtDatasetsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsAdaptiveMtDatasets($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes an Adaptive MT dataset, including all its entries and associated
-     * metadata. (adaptiveMtDatasets.delete)
-     *
-     * @param string $name Required. Name of the dataset. In the form of
-     * `projects/{project-number-or-id}/locations/{location-
-     * id}/adaptiveMtDatasets/{adaptive-mt-dataset-id}`
-     * @param array $optParams Optional parameters.
-     * @return TranslateEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Translate\Resource\ProjectsLocationsAdaptiveMtDatasets registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets the Adaptive MT dataset. (adaptiveMtDatasets.get)
-     *
-     * @param string $name Required. Name of the dataset. In the form of
-     * `projects/{project-number-or-id}/locations/{location-
-     * id}/adaptiveMtDatasets/{adaptive-mt-dataset-id}`
-     * @param array $optParams Optional parameters.
-     * @return AdaptiveMtDataset
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Imports an AdaptiveMtFile and adds all of its sentences into the
-     * AdaptiveMtDataset. (adaptiveMtDatasets.importAdaptiveMtFile)
-     *
-     * @param string $parent Required. The resource name of the file, in form of
-     * `projects/{project-number-or-
-     * id}/locations/{location_id}/adaptiveMtDatasets/{dataset}`
-     * @param ImportAdaptiveMtFileRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return ImportAdaptiveMtFileResponse
-     * @throws \Google\Service\Exception
-     */
-    public function importAdaptiveMtFile($parent, ImportAdaptiveMtFileRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Lists all Adaptive MT datasets for which the caller has read permission.
-     * (adaptiveMtDatasets.listProjectsLocationsAdaptiveMtDatasets)
-     *
-     * @param string $parent Required. The resource name of the project from which
-     * to list the Adaptive MT datasets. `projects/{project-number-or-
-     * id}/locations/{location-id}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. An expression for filtering the results of
-     * the request. Filter is not supported yet.
-     * @opt_param int pageSize Optional. Requested page size. The server may return
-     * fewer results than requested. If unspecified, the server picks an appropriate
-     * default.
-     * @opt_param string pageToken Optional. A token identifying a page of results
-     * the server should return. Typically, this is the value of
-     * ListAdaptiveMtDatasetsResponse.next_page_token returned from the previous
-     * call to `ListAdaptiveMtDatasets` method. The first page is returned if
-     * `page_token`is empty or missing.
-     * @return ListAdaptiveMtDatasetsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsAdaptiveMtDatasets($parent, $optParams = [])
+    class Google_Service_Translate_Resource_ProjectsLocationsAdaptiveMtDatasets extends \Google\Service\Translate\Resource\ProjectsLocationsAdaptiveMtDatasets
     {
     }
 }

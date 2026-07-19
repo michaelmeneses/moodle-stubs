@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Pubsub;
-
-class MessageTransform extends \Google\Model
-{
-    /**
-     * Optional. If true, the transform is disabled and will not be applied to
-     * messages. Defaults to `false`.
-     *
-     * @var bool
-     */
-    public $disabled;
-    /**
-     * Optional. This field is deprecated, use the `disabled` field to disable
-     * transforms.
-     *
-     * @deprecated
-     * @var bool
-     */
-    public $enabled;
-    protected $javascriptUdfType = JavaScriptUDF::class;
-    protected $javascriptUdfDataType = '';
-    /**
-     * Optional. If true, the transform is disabled and will not be applied to
-     * messages. Defaults to `false`.
-     *
-     * @param bool $disabled
-     */
-    public function setDisabled($disabled)
+namespace Google\Service\Pubsub {
+    class MessageTransform extends \Google\Model
     {
+        /**
+         * Optional. If true, the transform is disabled and will not be applied to
+         * messages. Defaults to `false`.
+         *
+         * @var bool
+         */
+        public $disabled;
+        /**
+         * Optional. This field is deprecated, use the `disabled` field to disable
+         * transforms.
+         *
+         * @deprecated
+         * @var bool
+         */
+        public $enabled;
+        protected $javascriptUdfType = JavaScriptUDF::class;
+        protected $javascriptUdfDataType = '';
+        /**
+         * Optional. If true, the transform is disabled and will not be applied to
+         * messages. Defaults to `false`.
+         *
+         * @param bool $disabled
+         */
+        public function setDisabled($disabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisabled()
+        {
+        }
+        /**
+         * Optional. This field is deprecated, use the `disabled` field to disable
+         * transforms.
+         *
+         * @deprecated
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @deprecated
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
+        /**
+         * Optional. JavaScript User Defined Function. If multiple JavaScriptUDF's are
+         * specified on a resource, each must have a unique `function_name`.
+         *
+         * @param JavaScriptUDF $javascriptUdf
+         */
+        public function setJavascriptUdf(JavaScriptUDF $javascriptUdf)
+        {
+        }
+        /**
+         * @return JavaScriptUDF
+         */
+        public function getJavascriptUdf()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Pubsub\MessageTransform registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisabled()
-    {
-    }
-    /**
-     * Optional. This field is deprecated, use the `disabled` field to disable
-     * transforms.
-     *
-     * @deprecated
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
-    {
-    }
-    /**
-     * @deprecated
-     * @return bool
-     */
-    public function getEnabled()
-    {
-    }
-    /**
-     * Optional. JavaScript User Defined Function. If multiple JavaScriptUDF's are
-     * specified on a resource, each must have a unique `function_name`.
-     *
-     * @param JavaScriptUDF $javascriptUdf
-     */
-    public function setJavascriptUdf(JavaScriptUDF $javascriptUdf)
-    {
-    }
-    /**
-     * @return JavaScriptUDF
-     */
-    public function getJavascriptUdf()
+    class Google_Service_Pubsub_MessageTransform extends \Google\Service\Pubsub\MessageTransform
     {
     }
 }

@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Adsense;
-
-class UrlChannel extends \Google\Model
-{
-    /**
-     * Output only. Resource name of the URL channel. Format:
-     * accounts/{account}/adclients/{adclient}/urlchannels/{urlchannel}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Unique ID of the custom channel as used in the
-     * `URL_CHANNEL_ID` reporting dimension.
-     *
-     * @var string
-     */
-    public $reportingDimensionId;
-    /**
-     * URI pattern of the channel. Does not include "http://" or "https://".
-     * Example: www.example.com/home
-     *
-     * @var string
-     */
-    public $uriPattern;
-    /**
-     * Output only. Resource name of the URL channel. Format:
-     * accounts/{account}/adclients/{adclient}/urlchannels/{urlchannel}
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Adsense {
+    class UrlChannel extends \Google\Model
     {
+        /**
+         * Output only. Resource name of the URL channel. Format:
+         * accounts/{account}/adclients/{adclient}/urlchannels/{urlchannel}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Unique ID of the custom channel as used in the
+         * `URL_CHANNEL_ID` reporting dimension.
+         *
+         * @var string
+         */
+        public $reportingDimensionId;
+        /**
+         * URI pattern of the channel. Does not include "http://" or "https://".
+         * Example: www.example.com/home
+         *
+         * @var string
+         */
+        public $uriPattern;
+        /**
+         * Output only. Resource name of the URL channel. Format:
+         * accounts/{account}/adclients/{adclient}/urlchannels/{urlchannel}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Unique ID of the custom channel as used in the
+         * `URL_CHANNEL_ID` reporting dimension.
+         *
+         * @param string $reportingDimensionId
+         */
+        public function setReportingDimensionId($reportingDimensionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReportingDimensionId()
+        {
+        }
+        /**
+         * URI pattern of the channel. Does not include "http://" or "https://".
+         * Example: www.example.com/home
+         *
+         * @param string $uriPattern
+         */
+        public function setUriPattern($uriPattern)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUriPattern()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Adsense\UrlChannel registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Unique ID of the custom channel as used in the
-     * `URL_CHANNEL_ID` reporting dimension.
-     *
-     * @param string $reportingDimensionId
-     */
-    public function setReportingDimensionId($reportingDimensionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReportingDimensionId()
-    {
-    }
-    /**
-     * URI pattern of the channel. Does not include "http://" or "https://".
-     * Example: www.example.com/home
-     *
-     * @param string $uriPattern
-     */
-    public function setUriPattern($uriPattern)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUriPattern()
+    class Google_Service_Adsense_UrlChannel extends \Google\Service\Adsense\UrlChannel
     {
     }
 }

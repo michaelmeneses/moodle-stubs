@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3GenerativeSettingsFallbackSettingsPromptTemplate extends \Google\Model
-{
-    /**
-     * Prompt name.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * If the flag is true, the prompt is frozen and cannot be modified by users.
-     *
-     * @var bool
-     */
-    public $frozen;
-    /**
-     * Prompt text that is sent to a LLM on no-match default, placeholders are
-     * filled downstream. For example: "Here is a conversation $conversation, a
-     * response is: "
-     *
-     * @var string
-     */
-    public $promptText;
-    /**
-     * Prompt name.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3GenerativeSettingsFallbackSettingsPromptTemplate extends \Google\Model
     {
+        /**
+         * Prompt name.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * If the flag is true, the prompt is frozen and cannot be modified by users.
+         *
+         * @var bool
+         */
+        public $frozen;
+        /**
+         * Prompt text that is sent to a LLM on no-match default, placeholders are
+         * filled downstream. For example: "Here is a conversation $conversation, a
+         * response is: "
+         *
+         * @var string
+         */
+        public $promptText;
+        /**
+         * Prompt name.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * If the flag is true, the prompt is frozen and cannot be modified by users.
+         *
+         * @param bool $frozen
+         */
+        public function setFrozen($frozen)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getFrozen()
+        {
+        }
+        /**
+         * Prompt text that is sent to a LLM on no-match default, placeholders are
+         * filled downstream. For example: "Here is a conversation $conversation, a
+         * response is: "
+         *
+         * @param string $promptText
+         */
+        public function setPromptText($promptText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPromptText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3GenerativeSettingsFallbackSettingsPromptTemplate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * If the flag is true, the prompt is frozen and cannot be modified by users.
-     *
-     * @param bool $frozen
-     */
-    public function setFrozen($frozen)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getFrozen()
-    {
-    }
-    /**
-     * Prompt text that is sent to a LLM on no-match default, placeholders are
-     * filled downstream. For example: "Here is a conversation $conversation, a
-     * response is: "
-     *
-     * @param string $promptText
-     */
-    public function setPromptText($promptText)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPromptText()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3GenerativeSettingsFallbackSettingsPromptTemplate extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3GenerativeSettingsFallbackSettingsPromptTemplate
     {
     }
 }

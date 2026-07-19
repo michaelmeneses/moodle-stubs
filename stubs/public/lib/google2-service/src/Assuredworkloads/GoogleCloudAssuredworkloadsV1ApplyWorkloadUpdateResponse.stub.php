@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Assuredworkloads;
-
-class GoogleCloudAssuredworkloadsV1ApplyWorkloadUpdateResponse extends \Google\Model
-{
-    protected $appliedUpdateType = GoogleCloudAssuredworkloadsV1WorkloadUpdate::class;
-    protected $appliedUpdateDataType = '';
-    /**
-     * The update that was applied.
-     *
-     * @param GoogleCloudAssuredworkloadsV1WorkloadUpdate $appliedUpdate
-     */
-    public function setAppliedUpdate(GoogleCloudAssuredworkloadsV1WorkloadUpdate $appliedUpdate)
+namespace Google\Service\Assuredworkloads {
+    class GoogleCloudAssuredworkloadsV1ApplyWorkloadUpdateResponse extends \Google\Model
     {
+        protected $appliedUpdateType = GoogleCloudAssuredworkloadsV1WorkloadUpdate::class;
+        protected $appliedUpdateDataType = '';
+        /**
+         * The update that was applied.
+         *
+         * @param GoogleCloudAssuredworkloadsV1WorkloadUpdate $appliedUpdate
+         */
+        public function setAppliedUpdate(GoogleCloudAssuredworkloadsV1WorkloadUpdate $appliedUpdate)
+        {
+        }
+        /**
+         * @return GoogleCloudAssuredworkloadsV1WorkloadUpdate
+         */
+        public function getAppliedUpdate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAssuredworkloadsV1WorkloadUpdate
+     * Runtime class alias of \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1ApplyWorkloadUpdateResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppliedUpdate()
+    class Google_Service_Assuredworkloads_GoogleCloudAssuredworkloadsV1ApplyWorkloadUpdateResponse extends \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1ApplyWorkloadUpdateResponse
     {
     }
 }

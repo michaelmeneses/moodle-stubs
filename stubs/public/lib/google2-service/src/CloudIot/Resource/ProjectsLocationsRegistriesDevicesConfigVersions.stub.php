@@ -21,35 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIot\Resource;
-
-/**
- * The "configVersions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudiotService = new Google\Service\CloudIot(...);
- *   $configVersions = $cloudiotService->projects_locations_registries_devices_configVersions;
- *  </code>
- */
-class ProjectsLocationsRegistriesDevicesConfigVersions extends \Google\Service\Resource
-{
+namespace Google\Service\CloudIot\Resource {
+    use Google\Service\CloudIot\ListDeviceConfigVersionsResponse;
     /**
-     * Lists the last few versions of the device configuration in descending order
-     * (i.e.: newest first).
-     * (configVersions.listProjectsLocationsRegistriesDevicesConfigVersions)
-     *
-     * @param string $name Required. The name of the device. For example,
-     * `projects/p0/locations/us-central1/registries/registry0/devices/device0` or
-     * `projects/p0/locations/us-central1/registries/registry0/devices/{num_id}`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int numVersions The number of versions to list. Versions are
-     * listed in decreasing order of the version number. The maximum number of
-     * versions retained is 10. If this value is zero, it will return all the
-     * versions available.
-     * @return ListDeviceConfigVersionsResponse
+     * The "configVersions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudiotService = new Google\Service\CloudIot(...);
+     *   $configVersions = $cloudiotService->projects_locations_registries_devices_configVersions;
+     *  </code>
      */
-    public function listProjectsLocationsRegistriesDevicesConfigVersions($name, $optParams = [])
+    class ProjectsLocationsRegistriesDevicesConfigVersions extends \Google\Service\Resource
+    {
+        /**
+         * Lists the last few versions of the device configuration in descending order
+         * (i.e.: newest first).
+         * (configVersions.listProjectsLocationsRegistriesDevicesConfigVersions)
+         *
+         * @param string $name Required. The name of the device. For example,
+         * `projects/p0/locations/us-central1/registries/registry0/devices/device0` or
+         * `projects/p0/locations/us-central1/registries/registry0/devices/{num_id}`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int numVersions The number of versions to list. Versions are
+         * listed in decreasing order of the version number. The maximum number of
+         * versions retained is 10. If this value is zero, it will return all the
+         * versions available.
+         * @return ListDeviceConfigVersionsResponse
+         */
+        public function listProjectsLocationsRegistriesDevicesConfigVersions($name, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudIot\Resource\ProjectsLocationsRegistriesDevicesConfigVersions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudIot_Resource_ProjectsLocationsRegistriesDevicesConfigVersions extends \Google\Service\CloudIot\Resource\ProjectsLocationsRegistriesDevicesConfigVersions
     {
     }
 }

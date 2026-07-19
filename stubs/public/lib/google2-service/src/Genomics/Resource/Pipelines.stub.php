@@ -21,37 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Genomics\Resource;
-
-/**
- * The "pipelines" collection of methods.
- * Typical usage is:
- *  <code>
- *   $genomicsService = new Google\Service\Genomics(...);
- *   $pipelines = $genomicsService->pipelines;
- *  </code>
- */
-class Pipelines extends \Google\Service\Resource
-{
+namespace Google\Service\Genomics\Resource {
+    use Google\Service\Genomics\Operation;
+    use Google\Service\Genomics\RunPipelineRequest;
     /**
-     * Runs a pipeline. The returned Operation's metadata field will contain a
-     * google.genomics.v2alpha1.Metadata object describing the status of the
-     * pipeline execution. The [response] field will contain a
-     * google.genomics.v2alpha1.RunPipelineResponse object if the pipeline completes
-     * successfully. **Note:** Before you can use this method, the Genomics Service
-     * Agent must have access to your project. This is done automatically when the
-     * Cloud Genomics API is first enabled, but if you delete this permission, or if
-     * you enabled the Cloud Genomics API before the v2alpha1 API launch, you must
-     * disable and re-enable the API to grant the Genomics Service Agent the
-     * required permissions. Authorization requires the following [Google
-     * IAM](https://cloud.google.com/iam/) permission: *
-     * `genomics.operations.create` [1]: /genomics/gsa (pipelines.run)
-     *
-     * @param RunPipelineRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
+     * The "pipelines" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $genomicsService = new Google\Service\Genomics(...);
+     *   $pipelines = $genomicsService->pipelines;
+     *  </code>
      */
-    public function run(RunPipelineRequest $postBody, $optParams = [])
+    class Pipelines extends \Google\Service\Resource
+    {
+        /**
+         * Runs a pipeline. The returned Operation's metadata field will contain a
+         * google.genomics.v2alpha1.Metadata object describing the status of the
+         * pipeline execution. The [response] field will contain a
+         * google.genomics.v2alpha1.RunPipelineResponse object if the pipeline completes
+         * successfully. **Note:** Before you can use this method, the Genomics Service
+         * Agent must have access to your project. This is done automatically when the
+         * Cloud Genomics API is first enabled, but if you delete this permission, or if
+         * you enabled the Cloud Genomics API before the v2alpha1 API launch, you must
+         * disable and re-enable the API to grant the Genomics Service Agent the
+         * required permissions. Authorization requires the following [Google
+         * IAM](https://cloud.google.com/iam/) permission: *
+         * `genomics.operations.create` [1]: /genomics/gsa (pipelines.run)
+         *
+         * @param RunPipelineRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         */
+        public function run(RunPipelineRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Genomics\Resource\Pipelines registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Genomics_Resource_Pipelines extends \Google\Service\Genomics\Resource\Pipelines
     {
     }
 }

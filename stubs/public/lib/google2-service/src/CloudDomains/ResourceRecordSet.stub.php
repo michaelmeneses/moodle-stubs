@@ -21,132 +21,141 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDomains;
-
-class ResourceRecordSet extends \Google\Collection
-{
-    protected $collection_key = 'signatureRrdata';
-    /**
-     * For example, www.example.com.
-     *
-     * @var string
-     */
-    public $name;
-    protected $routingPolicyType = RRSetRoutingPolicy::class;
-    protected $routingPolicyDataType = '';
-    /**
-     * As defined in RFC 1035 (section 5) and RFC 1034 (section 3.6.1) -- see
-     * examples.
-     *
-     * @var string[]
-     */
-    public $rrdata;
-    /**
-     * As defined in RFC 4034 (section 3.2).
-     *
-     * @var string[]
-     */
-    public $signatureRrdata;
-    /**
-     * Number of seconds that this `ResourceRecordSet` can be cached by resolvers.
-     *
-     * @var int
-     */
-    public $ttl;
-    /**
-     * The identifier of a supported record type. See the list of Supported DNS
-     * record types.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * For example, www.example.com.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\CloudDomains {
+    class ResourceRecordSet extends \Google\Collection
     {
+        protected $collection_key = 'signatureRrdata';
+        /**
+         * For example, www.example.com.
+         *
+         * @var string
+         */
+        public $name;
+        protected $routingPolicyType = RRSetRoutingPolicy::class;
+        protected $routingPolicyDataType = '';
+        /**
+         * As defined in RFC 1035 (section 5) and RFC 1034 (section 3.6.1) -- see
+         * examples.
+         *
+         * @var string[]
+         */
+        public $rrdata;
+        /**
+         * As defined in RFC 4034 (section 3.2).
+         *
+         * @var string[]
+         */
+        public $signatureRrdata;
+        /**
+         * Number of seconds that this `ResourceRecordSet` can be cached by resolvers.
+         *
+         * @var int
+         */
+        public $ttl;
+        /**
+         * The identifier of a supported record type. See the list of Supported DNS
+         * record types.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * For example, www.example.com.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Configures dynamic query responses based on either the geo location of the
+         * querying user or a weighted round robin based routing policy. A valid
+         * `ResourceRecordSet` contains only `rrdata` (for static resolution) or a
+         * `routing_policy` (for dynamic resolution).
+         *
+         * @param RRSetRoutingPolicy $routingPolicy
+         */
+        public function setRoutingPolicy(RRSetRoutingPolicy $routingPolicy)
+        {
+        }
+        /**
+         * @return RRSetRoutingPolicy
+         */
+        public function getRoutingPolicy()
+        {
+        }
+        /**
+         * As defined in RFC 1035 (section 5) and RFC 1034 (section 3.6.1) -- see
+         * examples.
+         *
+         * @param string[] $rrdata
+         */
+        public function setRrdata($rrdata)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRrdata()
+        {
+        }
+        /**
+         * As defined in RFC 4034 (section 3.2).
+         *
+         * @param string[] $signatureRrdata
+         */
+        public function setSignatureRrdata($signatureRrdata)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSignatureRrdata()
+        {
+        }
+        /**
+         * Number of seconds that this `ResourceRecordSet` can be cached by resolvers.
+         *
+         * @param int $ttl
+         */
+        public function setTtl($ttl)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTtl()
+        {
+        }
+        /**
+         * The identifier of a supported record type. See the list of Supported DNS
+         * record types.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDomains\ResourceRecordSet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Configures dynamic query responses based on either the geo location of the
-     * querying user or a weighted round robin based routing policy. A valid
-     * `ResourceRecordSet` contains only `rrdata` (for static resolution) or a
-     * `routing_policy` (for dynamic resolution).
-     *
-     * @param RRSetRoutingPolicy $routingPolicy
-     */
-    public function setRoutingPolicy(RRSetRoutingPolicy $routingPolicy)
-    {
-    }
-    /**
-     * @return RRSetRoutingPolicy
-     */
-    public function getRoutingPolicy()
-    {
-    }
-    /**
-     * As defined in RFC 1035 (section 5) and RFC 1034 (section 3.6.1) -- see
-     * examples.
-     *
-     * @param string[] $rrdata
-     */
-    public function setRrdata($rrdata)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRrdata()
-    {
-    }
-    /**
-     * As defined in RFC 4034 (section 3.2).
-     *
-     * @param string[] $signatureRrdata
-     */
-    public function setSignatureRrdata($signatureRrdata)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSignatureRrdata()
-    {
-    }
-    /**
-     * Number of seconds that this `ResourceRecordSet` can be cached by resolvers.
-     *
-     * @param int $ttl
-     */
-    public function setTtl($ttl)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTtl()
-    {
-    }
-    /**
-     * The identifier of a supported record type. See the list of Supported DNS
-     * record types.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_CloudDomains_ResourceRecordSet extends \Google\Service\CloudDomains\ResourceRecordSet
     {
     }
 }

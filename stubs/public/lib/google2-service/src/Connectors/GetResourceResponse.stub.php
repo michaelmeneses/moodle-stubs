@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class GetResourceResponse extends \Google\Model
-{
-    /**
-     * The content of the resource.
-     *
-     * @var string
-     */
-    public $data;
-    /**
-     * Metadata like service latency, etc.
-     *
-     * @var array[]
-     */
-    public $metadata;
-    /**
-     * The MIME type of the resource.
-     *
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * The content of the resource.
-     *
-     * @param string $data
-     */
-    public function setData($data)
+namespace Google\Service\Connectors {
+    class GetResourceResponse extends \Google\Model
     {
+        /**
+         * The content of the resource.
+         *
+         * @var string
+         */
+        public $data;
+        /**
+         * Metadata like service latency, etc.
+         *
+         * @var array[]
+         */
+        public $metadata;
+        /**
+         * The MIME type of the resource.
+         *
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * The content of the resource.
+         *
+         * @param string $data
+         */
+        public function setData($data)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getData()
+        {
+        }
+        /**
+         * Metadata like service latency, etc.
+         *
+         * @param array[] $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * The MIME type of the resource.
+         *
+         * @param string $mimeType
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Connectors\GetResourceResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getData()
-    {
-    }
-    /**
-     * Metadata like service latency, etc.
-     *
-     * @param array[] $metadata
-     */
-    public function setMetadata($metadata)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * The MIME type of the resource.
-     *
-     * @param string $mimeType
-     */
-    public function setMimeType($mimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimeType()
+    class Google_Service_Connectors_GetResourceResponse extends \Google\Service\Connectors\GetResourceResponse
     {
     }
 }

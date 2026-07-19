@@ -31,6 +31,9 @@
  */
 namespace core_course\local\factory;
 
+use core_course\local\repository\caching_content_item_readonly_repository;
+use core_course\local\repository\content_item_readonly_repository;
+use core_course\local\service\content_item_service;
 /**
  * Class service_factory, providing functions for location of service objects for course content items.
  *

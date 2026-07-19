@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ReturnPolicyPolicy extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $lastReturnDate;
-    /**
-     * @var string
-     */
-    public $numberOfDays;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param string
-     */
-    public function setLastReturnDate($lastReturnDate)
+namespace Google\Service\ShoppingContent {
+    class ReturnPolicyPolicy extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $lastReturnDate;
+        /**
+         * @var string
+         */
+        public $numberOfDays;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param string
+         */
+        public function setLastReturnDate($lastReturnDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastReturnDate()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNumberOfDays($numberOfDays)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNumberOfDays()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\ReturnPolicyPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLastReturnDate()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNumberOfDays($numberOfDays)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNumberOfDays()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_ShoppingContent_ReturnPolicyPolicy extends \Google\Service\ShoppingContent\ReturnPolicyPolicy
     {
     }
 }

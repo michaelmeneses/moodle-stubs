@@ -21,45 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for ToolResults (v1beta3).
- *
- * <p>
- * API to publish and access results from developer tools.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://firebase.google.com/docs/test-lab/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class ToolResults extends \Google\Service
-{
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    public $projects;
-    public $projects_histories;
-    public $projects_histories_executions;
-    public $projects_histories_executions_clusters;
-    public $projects_histories_executions_environments;
-    public $projects_histories_executions_steps;
-    public $projects_histories_executions_steps_perfMetricsSummary;
-    public $projects_histories_executions_steps_perfSampleSeries;
-    public $projects_histories_executions_steps_perfSampleSeries_samples;
-    public $projects_histories_executions_steps_testCases;
-    public $projects_histories_executions_steps_thumbnails;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the ToolResults service.
+     * Service definition for ToolResults (v1beta3).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * API to publish and access results from developer tools.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://firebase.google.com/docs/test-lab/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class ToolResults extends \Google\Service
+    {
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        public $projects;
+        public $projects_histories;
+        public $projects_histories_executions;
+        public $projects_histories_executions_clusters;
+        public $projects_histories_executions_environments;
+        public $projects_histories_executions_steps;
+        public $projects_histories_executions_steps_perfMetricsSummary;
+        public $projects_histories_executions_steps_perfSampleSeries;
+        public $projects_histories_executions_steps_perfSampleSeries_samples;
+        public $projects_histories_executions_steps_testCases;
+        public $projects_histories_executions_steps_thumbnails;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the ToolResults service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ToolResults registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ToolResults extends \Google\Service\ToolResults
     {
     }
 }

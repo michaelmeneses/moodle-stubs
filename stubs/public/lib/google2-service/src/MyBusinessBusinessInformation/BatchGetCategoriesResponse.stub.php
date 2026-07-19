@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessBusinessInformation;
-
-class BatchGetCategoriesResponse extends \Google\Collection
-{
-    protected $collection_key = 'categories';
-    protected $categoriesType = Category::class;
-    protected $categoriesDataType = 'array';
-    /**
-     * Categories that match the GConcept ids provided in the request. They will
-     * not come in the same order as category ids in the request.
-     *
-     * @param Category[] $categories
-     */
-    public function setCategories($categories)
+namespace Google\Service\MyBusinessBusinessInformation {
+    class BatchGetCategoriesResponse extends \Google\Collection
     {
+        protected $collection_key = 'categories';
+        protected $categoriesType = Category::class;
+        protected $categoriesDataType = 'array';
+        /**
+         * Categories that match the GConcept ids provided in the request. They will
+         * not come in the same order as category ids in the request.
+         *
+         * @param Category[] $categories
+         */
+        public function setCategories($categories)
+        {
+        }
+        /**
+         * @return Category[]
+         */
+        public function getCategories()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Category[]
+     * Runtime class alias of \Google\Service\MyBusinessBusinessInformation\BatchGetCategoriesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCategories()
+    class Google_Service_MyBusinessBusinessInformation_BatchGetCategoriesResponse extends \Google\Service\MyBusinessBusinessInformation\BatchGetCategoriesResponse
     {
     }
 }

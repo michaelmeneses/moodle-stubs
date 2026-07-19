@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1CreateInstructionMetadata extends \Google\Collection
-{
-    protected $collection_key = 'partialFailures';
-    /**
-     * Timestamp when create instruction request was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * The name of the created Instruction.
-     * projects/{project_id}/instructions/{instruction_id}
-     *
-     * @var string
-     */
-    public $instruction;
-    protected $partialFailuresType = GoogleRpcStatus::class;
-    protected $partialFailuresDataType = 'array';
-    /**
-     * Timestamp when create instruction request was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1CreateInstructionMetadata extends \Google\Collection
     {
+        protected $collection_key = 'partialFailures';
+        /**
+         * Timestamp when create instruction request was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * The name of the created Instruction.
+         * projects/{project_id}/instructions/{instruction_id}
+         *
+         * @var string
+         */
+        public $instruction;
+        protected $partialFailuresType = GoogleRpcStatus::class;
+        protected $partialFailuresDataType = 'array';
+        /**
+         * Timestamp when create instruction request was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The name of the created Instruction.
+         * projects/{project_id}/instructions/{instruction_id}
+         *
+         * @param string $instruction
+         */
+        public function setInstruction($instruction)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstruction()
+        {
+        }
+        /**
+         * Partial failures encountered. E.g. single files that couldn't be read.
+         * Status details field will contain standard GCP error details.
+         *
+         * @param GoogleRpcStatus[] $partialFailures
+         */
+        public function setPartialFailures($partialFailures)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus[]
+         */
+        public function getPartialFailures()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1CreateInstructionMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The name of the created Instruction.
-     * projects/{project_id}/instructions/{instruction_id}
-     *
-     * @param string $instruction
-     */
-    public function setInstruction($instruction)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstruction()
-    {
-    }
-    /**
-     * Partial failures encountered. E.g. single files that couldn't be read.
-     * Status details field will contain standard GCP error details.
-     *
-     * @param GoogleRpcStatus[] $partialFailures
-     */
-    public function setPartialFailures($partialFailures)
-    {
-    }
-    /**
-     * @return GoogleRpcStatus[]
-     */
-    public function getPartialFailures()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1CreateInstructionMetadata extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1CreateInstructionMetadata
     {
     }
 }

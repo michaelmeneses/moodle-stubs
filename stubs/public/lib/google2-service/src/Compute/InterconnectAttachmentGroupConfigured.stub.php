@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InterconnectAttachmentGroupConfigured extends \Google\Model
-{
-    protected $availabilitySlaType = InterconnectAttachmentGroupConfiguredAvailabilitySLA::class;
-    protected $availabilitySlaDataType = '';
-    /**
-     * @param InterconnectAttachmentGroupConfiguredAvailabilitySLA $availabilitySla
-     */
-    public function setAvailabilitySla(InterconnectAttachmentGroupConfiguredAvailabilitySLA $availabilitySla)
+namespace Google\Service\Compute {
+    class InterconnectAttachmentGroupConfigured extends \Google\Model
     {
+        protected $availabilitySlaType = InterconnectAttachmentGroupConfiguredAvailabilitySLA::class;
+        protected $availabilitySlaDataType = '';
+        /**
+         * @param InterconnectAttachmentGroupConfiguredAvailabilitySLA $availabilitySla
+         */
+        public function setAvailabilitySla(InterconnectAttachmentGroupConfiguredAvailabilitySLA $availabilitySla)
+        {
+        }
+        /**
+         * @return InterconnectAttachmentGroupConfiguredAvailabilitySLA
+         */
+        public function getAvailabilitySla()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InterconnectAttachmentGroupConfiguredAvailabilitySLA
+     * Runtime class alias of \Google\Service\Compute\InterconnectAttachmentGroupConfigured registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAvailabilitySla()
+    class Google_Service_Compute_InterconnectAttachmentGroupConfigured extends \Google\Service\Compute\InterconnectAttachmentGroupConfigured
     {
     }
 }

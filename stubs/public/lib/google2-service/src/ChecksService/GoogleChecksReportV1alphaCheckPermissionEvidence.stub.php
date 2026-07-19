@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChecksService;
-
-class GoogleChecksReportV1alphaCheckPermissionEvidence extends \Google\Model
-{
-    protected $permissionType = GoogleChecksReportV1alphaPermission::class;
-    protected $permissionDataType = '';
-    /**
-     * The permission that was found in your app.
-     *
-     * @param GoogleChecksReportV1alphaPermission $permission
-     */
-    public function setPermission(GoogleChecksReportV1alphaPermission $permission)
+namespace Google\Service\ChecksService {
+    class GoogleChecksReportV1alphaCheckPermissionEvidence extends \Google\Model
     {
+        protected $permissionType = GoogleChecksReportV1alphaPermission::class;
+        protected $permissionDataType = '';
+        /**
+         * The permission that was found in your app.
+         *
+         * @param GoogleChecksReportV1alphaPermission $permission
+         */
+        public function setPermission(GoogleChecksReportV1alphaPermission $permission)
+        {
+        }
+        /**
+         * @return GoogleChecksReportV1alphaPermission
+         */
+        public function getPermission()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChecksReportV1alphaPermission
+     * Runtime class alias of \Google\Service\ChecksService\GoogleChecksReportV1alphaCheckPermissionEvidence registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPermission()
+    class Google_Service_ChecksService_GoogleChecksReportV1alphaCheckPermissionEvidence extends \Google\Service\ChecksService\GoogleChecksReportV1alphaCheckPermissionEvidence
     {
     }
 }

@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GamesManagement;
-
-class HiddenPlayerList extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = HiddenPlayer::class;
-    protected $itemsDataType = 'array';
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `gamesManagement#hiddenPlayerList`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The pagination token for the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The players.
-     *
-     * @param HiddenPlayer[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\GamesManagement {
+    class HiddenPlayerList extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = HiddenPlayer::class;
+        protected $itemsDataType = 'array';
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `gamesManagement#hiddenPlayerList`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The pagination token for the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The players.
+         *
+         * @param HiddenPlayer[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return HiddenPlayer[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `gamesManagement#hiddenPlayerList`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The pagination token for the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return HiddenPlayer[]
+     * Runtime class alias of \Google\Service\GamesManagement\HiddenPlayerList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
-    {
-    }
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `gamesManagement#hiddenPlayerList`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The pagination token for the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_GamesManagement_HiddenPlayerList extends \Google\Service\GamesManagement\HiddenPlayerList
     {
     }
 }

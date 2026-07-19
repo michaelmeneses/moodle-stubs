@@ -21,115 +21,124 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class ExperimentVariations extends \Google\Model
-{
-    /**
-     * The name of the variation. This field is required when creating an
-     * experiment. This field may not be changed for an experiment whose status is
-     * ENDED.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Status of the variation. Possible values: "ACTIVE", "INACTIVE". INACTIVE
-     * variations are not served. This field may not be changed for an experiment
-     * whose status is ENDED.
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * The URL of the variation. This field may not be changed for an experiment
-     * whose status is RUNNING or ENDED.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * Weight that this variation should receive. Only present if the experiment
-     * is running. This field is read-only.
-     *
-     * @var 
-     */
-    public $weight;
-    /**
-     * True if the experiment has ended and this variation performed
-     * (statistically) significantly better than the original. This field is read-
-     * only.
-     *
-     * @var bool
-     */
-    public $won;
-    /**
-     * The name of the variation. This field is required when creating an
-     * experiment. This field may not be changed for an experiment whose status is
-     * ENDED.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Analytics {
+    class ExperimentVariations extends \Google\Model
     {
+        /**
+         * The name of the variation. This field is required when creating an
+         * experiment. This field may not be changed for an experiment whose status is
+         * ENDED.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Status of the variation. Possible values: "ACTIVE", "INACTIVE". INACTIVE
+         * variations are not served. This field may not be changed for an experiment
+         * whose status is ENDED.
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * The URL of the variation. This field may not be changed for an experiment
+         * whose status is RUNNING or ENDED.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * Weight that this variation should receive. Only present if the experiment
+         * is running. This field is read-only.
+         *
+         * @var 
+         */
+        public $weight;
+        /**
+         * True if the experiment has ended and this variation performed
+         * (statistically) significantly better than the original. This field is read-
+         * only.
+         *
+         * @var bool
+         */
+        public $won;
+        /**
+         * The name of the variation. This field is required when creating an
+         * experiment. This field may not be changed for an experiment whose status is
+         * ENDED.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Status of the variation. Possible values: "ACTIVE", "INACTIVE". INACTIVE
+         * variations are not served. This field may not be changed for an experiment
+         * whose status is ENDED.
+         *
+         * @param string $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * The URL of the variation. This field may not be changed for an experiment
+         * whose status is RUNNING or ENDED.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
+        public function setWeight($weight)
+        {
+        }
+        public function getWeight()
+        {
+        }
+        /**
+         * True if the experiment has ended and this variation performed
+         * (statistically) significantly better than the original. This field is read-
+         * only.
+         *
+         * @param bool $won
+         */
+        public function setWon($won)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getWon()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Analytics\ExperimentVariations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Status of the variation. Possible values: "ACTIVE", "INACTIVE". INACTIVE
-     * variations are not served. This field may not be changed for an experiment
-     * whose status is ENDED.
-     *
-     * @param string $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * The URL of the variation. This field may not be changed for an experiment
-     * whose status is RUNNING or ENDED.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
-    {
-    }
-    public function setWeight($weight)
-    {
-    }
-    public function getWeight()
-    {
-    }
-    /**
-     * True if the experiment has ended and this variation performed
-     * (statistically) significantly better than the original. This field is read-
-     * only.
-     *
-     * @param bool $won
-     */
-    public function setWon($won)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getWon()
+    class Google_Service_Analytics_ExperimentVariations extends \Google\Service\Analytics\ExperimentVariations
     {
     }
 }

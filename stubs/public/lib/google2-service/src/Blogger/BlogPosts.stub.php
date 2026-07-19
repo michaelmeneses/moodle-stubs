@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Blogger;
-
-class BlogPosts extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = Post::class;
-    protected $itemsDataType = 'array';
-    /**
-     * The URL of the container for posts in this blog.
-     *
-     * @var string
-     */
-    public $selfLink;
-    /**
-     * The count of posts in this blog.
-     *
-     * @var int
-     */
-    public $totalItems;
-    /**
-     * The List of Posts for this Blog.
-     *
-     * @param Post[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\Blogger {
+    class BlogPosts extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = Post::class;
+        protected $itemsDataType = 'array';
+        /**
+         * The URL of the container for posts in this blog.
+         *
+         * @var string
+         */
+        public $selfLink;
+        /**
+         * The count of posts in this blog.
+         *
+         * @var int
+         */
+        public $totalItems;
+        /**
+         * The List of Posts for this Blog.
+         *
+         * @param Post[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return Post[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * The URL of the container for posts in this blog.
+         *
+         * @param string $selfLink
+         */
+        public function setSelfLink($selfLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLink()
+        {
+        }
+        /**
+         * The count of posts in this blog.
+         *
+         * @param int $totalItems
+         */
+        public function setTotalItems($totalItems)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalItems()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Post[]
+     * Runtime class alias of \Google\Service\Blogger\BlogPosts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
-    {
-    }
-    /**
-     * The URL of the container for posts in this blog.
-     *
-     * @param string $selfLink
-     */
-    public function setSelfLink($selfLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLink()
-    {
-    }
-    /**
-     * The count of posts in this blog.
-     *
-     * @param int $totalItems
-     */
-    public function setTotalItems($totalItems)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalItems()
+    class Google_Service_Blogger_BlogPosts extends \Google\Service\Blogger\BlogPosts
     {
     }
 }

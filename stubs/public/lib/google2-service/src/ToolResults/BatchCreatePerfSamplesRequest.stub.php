@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class BatchCreatePerfSamplesRequest extends \Google\Collection
-{
-    protected $collection_key = 'perfSamples';
-    protected $perfSamplesType = PerfSample::class;
-    protected $perfSamplesDataType = 'array';
-    /**
-     * The set of PerfSamples to create should not include existing timestamps
-     *
-     * @param PerfSample[] $perfSamples
-     */
-    public function setPerfSamples($perfSamples)
+namespace Google\Service\ToolResults {
+    class BatchCreatePerfSamplesRequest extends \Google\Collection
     {
+        protected $collection_key = 'perfSamples';
+        protected $perfSamplesType = PerfSample::class;
+        protected $perfSamplesDataType = 'array';
+        /**
+         * The set of PerfSamples to create should not include existing timestamps
+         *
+         * @param PerfSample[] $perfSamples
+         */
+        public function setPerfSamples($perfSamples)
+        {
+        }
+        /**
+         * @return PerfSample[]
+         */
+        public function getPerfSamples()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PerfSample[]
+     * Runtime class alias of \Google\Service\ToolResults\BatchCreatePerfSamplesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPerfSamples()
+    class Google_Service_ToolResults_BatchCreatePerfSamplesRequest extends \Google\Service\ToolResults\BatchCreatePerfSamplesRequest
     {
     }
 }

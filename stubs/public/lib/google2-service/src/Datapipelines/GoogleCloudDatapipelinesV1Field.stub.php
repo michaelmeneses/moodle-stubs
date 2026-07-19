@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datapipelines;
-
-class GoogleCloudDatapipelinesV1Field extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $name;
-    protected $typeType = GoogleCloudDatapipelinesV1FieldType::class;
-    protected $typeDataType = '';
-    /**
-     * @param string
-     */
-    public function setName($name)
+namespace Google\Service\Datapipelines {
+    class GoogleCloudDatapipelinesV1Field extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $name;
+        protected $typeType = GoogleCloudDatapipelinesV1FieldType::class;
+        protected $typeDataType = '';
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param GoogleCloudDatapipelinesV1FieldType
+         */
+        public function setType(GoogleCloudDatapipelinesV1FieldType $type)
+        {
+        }
+        /**
+         * @return GoogleCloudDatapipelinesV1FieldType
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1Field registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * @param GoogleCloudDatapipelinesV1FieldType
-     */
-    public function setType(GoogleCloudDatapipelinesV1FieldType $type)
-    {
-    }
-    /**
-     * @return GoogleCloudDatapipelinesV1FieldType
-     */
-    public function getType()
+    class Google_Service_Datapipelines_GoogleCloudDatapipelinesV1Field extends \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1Field
     {
     }
 }

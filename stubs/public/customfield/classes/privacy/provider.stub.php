@@ -29,6 +29,13 @@
  */
 namespace core_customfield\privacy;
 
+use core_customfield\data_controller;
+use core_customfield\handler;
+use core_privacy\local\metadata\collection;
+use core_privacy\local\request\approved_contextlist;
+use core_privacy\local\request\contextlist;
+use core_privacy\local\request\writer;
+use core_privacy\manager;
 /**
  * Class provider
  *

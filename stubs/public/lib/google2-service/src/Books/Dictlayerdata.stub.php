@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class Dictlayerdata extends \Google\Model
-{
-    protected $commonType = DictlayerdataCommon::class;
-    protected $commonDataType = '';
-    protected $dictType = DictlayerdataDict::class;
-    protected $dictDataType = '';
-    /**
-     * @var string
-     */
-    public $kind;
-    /**
-     * @param DictlayerdataCommon $common
-     */
-    public function setCommon(DictlayerdataCommon $common)
+namespace Google\Service\Books {
+    class Dictlayerdata extends \Google\Model
     {
+        protected $commonType = DictlayerdataCommon::class;
+        protected $commonDataType = '';
+        protected $dictType = DictlayerdataDict::class;
+        protected $dictDataType = '';
+        /**
+         * @var string
+         */
+        public $kind;
+        /**
+         * @param DictlayerdataCommon $common
+         */
+        public function setCommon(DictlayerdataCommon $common)
+        {
+        }
+        /**
+         * @return DictlayerdataCommon
+         */
+        public function getCommon()
+        {
+        }
+        /**
+         * @param DictlayerdataDict $dict
+         */
+        public function setDict(DictlayerdataDict $dict)
+        {
+        }
+        /**
+         * @return DictlayerdataDict
+         */
+        public function getDict()
+        {
+        }
+        /**
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DictlayerdataCommon
+     * Runtime class alias of \Google\Service\Books\Dictlayerdata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommon()
-    {
-    }
-    /**
-     * @param DictlayerdataDict $dict
-     */
-    public function setDict(DictlayerdataDict $dict)
-    {
-    }
-    /**
-     * @return DictlayerdataDict
-     */
-    public function getDict()
-    {
-    }
-    /**
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Books_Dictlayerdata extends \Google\Service\Books\Dictlayerdata
     {
     }
 }

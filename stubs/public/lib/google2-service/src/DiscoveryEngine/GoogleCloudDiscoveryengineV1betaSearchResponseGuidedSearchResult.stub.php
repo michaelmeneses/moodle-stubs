@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaSearchResponseGuidedSearchResult extends \Google\Collection
-{
-    protected $collection_key = 'refinementAttributes';
-    /**
-     * @var string[]
-     */
-    public $followUpQuestions;
-    protected $refinementAttributesType = GoogleCloudDiscoveryengineV1betaSearchResponseGuidedSearchResultRefinementAttribute::class;
-    protected $refinementAttributesDataType = 'array';
-    /**
-     * @param string[]
-     */
-    public function setFollowUpQuestions($followUpQuestions)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaSearchResponseGuidedSearchResult extends \Google\Collection
     {
+        protected $collection_key = 'refinementAttributes';
+        /**
+         * @var string[]
+         */
+        public $followUpQuestions;
+        protected $refinementAttributesType = GoogleCloudDiscoveryengineV1betaSearchResponseGuidedSearchResultRefinementAttribute::class;
+        protected $refinementAttributesDataType = 'array';
+        /**
+         * @param string[]
+         */
+        public function setFollowUpQuestions($followUpQuestions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFollowUpQuestions()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaSearchResponseGuidedSearchResultRefinementAttribute[]
+         */
+        public function setRefinementAttributes($refinementAttributes)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaSearchResponseGuidedSearchResultRefinementAttribute[]
+         */
+        public function getRefinementAttributes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaSearchResponseGuidedSearchResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFollowUpQuestions()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaSearchResponseGuidedSearchResultRefinementAttribute[]
-     */
-    public function setRefinementAttributes($refinementAttributes)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaSearchResponseGuidedSearchResultRefinementAttribute[]
-     */
-    public function getRefinementAttributes()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaSearchResponseGuidedSearchResult extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaSearchResponseGuidedSearchResult
     {
     }
 }

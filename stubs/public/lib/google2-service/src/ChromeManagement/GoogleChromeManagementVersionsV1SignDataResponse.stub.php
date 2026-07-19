@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementVersionsV1SignDataResponse extends \Google\Model
-{
-    protected $certificateProvisioningProcessType = GoogleChromeManagementVersionsV1CertificateProvisioningProcess::class;
-    protected $certificateProvisioningProcessDataType = '';
-    /**
-     * Output only. The certificate provisioning process. The signature generated
-     * by the client will be available in the `signature` field of
-     * `CertificateProvisioningProcess`.
-     *
-     * @param GoogleChromeManagementVersionsV1CertificateProvisioningProcess $certificateProvisioningProcess
-     */
-    public function setCertificateProvisioningProcess(GoogleChromeManagementVersionsV1CertificateProvisioningProcess $certificateProvisioningProcess)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementVersionsV1SignDataResponse extends \Google\Model
     {
+        protected $certificateProvisioningProcessType = GoogleChromeManagementVersionsV1CertificateProvisioningProcess::class;
+        protected $certificateProvisioningProcessDataType = '';
+        /**
+         * Output only. The certificate provisioning process. The signature generated
+         * by the client will be available in the `signature` field of
+         * `CertificateProvisioningProcess`.
+         *
+         * @param GoogleChromeManagementVersionsV1CertificateProvisioningProcess $certificateProvisioningProcess
+         */
+        public function setCertificateProvisioningProcess(GoogleChromeManagementVersionsV1CertificateProvisioningProcess $certificateProvisioningProcess)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementVersionsV1CertificateProvisioningProcess
+         */
+        public function getCertificateProvisioningProcess()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChromeManagementVersionsV1CertificateProvisioningProcess
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1SignDataResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCertificateProvisioningProcess()
+    class Google_Service_ChromeManagement_GoogleChromeManagementVersionsV1SignDataResponse extends \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1SignDataResponse
     {
     }
 }

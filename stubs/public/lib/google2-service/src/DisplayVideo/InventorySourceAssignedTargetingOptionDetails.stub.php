@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class InventorySourceAssignedTargetingOptionDetails extends \Google\Model
-{
-    /**
-     * Required. ID of the inventory source. Should refer to the
-     * inventory_source_id field of an InventorySource resource.
-     *
-     * @var string
-     */
-    public $inventorySourceId;
-    /**
-     * Required. ID of the inventory source. Should refer to the
-     * inventory_source_id field of an InventorySource resource.
-     *
-     * @param string $inventorySourceId
-     */
-    public function setInventorySourceId($inventorySourceId)
+namespace Google\Service\DisplayVideo {
+    class InventorySourceAssignedTargetingOptionDetails extends \Google\Model
     {
+        /**
+         * Required. ID of the inventory source. Should refer to the
+         * inventory_source_id field of an InventorySource resource.
+         *
+         * @var string
+         */
+        public $inventorySourceId;
+        /**
+         * Required. ID of the inventory source. Should refer to the
+         * inventory_source_id field of an InventorySource resource.
+         *
+         * @param string $inventorySourceId
+         */
+        public function setInventorySourceId($inventorySourceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInventorySourceId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\InventorySourceAssignedTargetingOptionDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInventorySourceId()
+    class Google_Service_DisplayVideo_InventorySourceAssignedTargetingOptionDetails extends \Google\Service\DisplayVideo\InventorySourceAssignedTargetingOptionDetails
     {
     }
 }

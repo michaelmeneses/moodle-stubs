@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class ListUnmappedIdentitiesResponse extends \Google\Collection
-{
-    protected $collection_key = 'unmappedIdentities';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $unmappedIdentitiesType = UnmappedIdentity::class;
-    protected $unmappedIdentitiesDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\CloudSearch {
+    class ListUnmappedIdentitiesResponse extends \Google\Collection
     {
+        protected $collection_key = 'unmappedIdentities';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $unmappedIdentitiesType = UnmappedIdentity::class;
+        protected $unmappedIdentitiesDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param UnmappedIdentity[] $unmappedIdentities
+         */
+        public function setUnmappedIdentities($unmappedIdentities)
+        {
+        }
+        /**
+         * @return UnmappedIdentity[]
+         */
+        public function getUnmappedIdentities()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\ListUnmappedIdentitiesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param UnmappedIdentity[] $unmappedIdentities
-     */
-    public function setUnmappedIdentities($unmappedIdentities)
-    {
-    }
-    /**
-     * @return UnmappedIdentity[]
-     */
-    public function getUnmappedIdentities()
+    class Google_Service_CloudSearch_ListUnmappedIdentitiesResponse extends \Google\Service\CloudSearch\ListUnmappedIdentitiesResponse
     {
     }
 }

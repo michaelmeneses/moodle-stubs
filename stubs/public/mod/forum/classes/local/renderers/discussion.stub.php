@@ -29,6 +29,31 @@
  */
 namespace mod_forum\local\renderers;
 
+use mod_forum\local\entities\discussion as discussion_entity;
+use mod_forum\local\entities\forum as forum_entity;
+use mod_forum\local\entities\post as post_entity;
+use mod_forum\local\entities\sorter as sorter_entity;
+use mod_forum\local\factories\entity as entity_factory;
+use mod_forum\local\factories\legacy_data_mapper as legacy_data_mapper_factory;
+use mod_forum\local\factories\exporter as exporter_factory;
+use mod_forum\local\factories\url as url_factory;
+use mod_forum\local\factories\vault as vault_factory;
+use mod_forum\local\managers\capability as capability_manager;
+use mod_forum\local\renderers\posts as posts_renderer;
+use forum_portfolio_caller;
+use core\output\notification;
+use context;
+use context_module;
+use html_writer;
+use moodle_exception;
+use moodle_page;
+use moodle_url;
+use rating_manager;
+use renderer_base;
+use single_button;
+use single_select;
+use stdClass;
+use url_select;
 /**
  * Discussion renderer class.
  *

@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Transcoder;
-
-class TextMapping extends \Google\Model
-{
-    /**
-     * Required. The EditAtom.key that references atom with text inputs in the
-     * JobConfig.edit_list.
-     *
-     * @var string
-     */
-    public $atomKey;
-    /**
-     * Required. The Input.key that identifies the input file.
-     *
-     * @var string
-     */
-    public $inputKey;
-    /**
-     * Required. The zero-based index of the track in the input file.
-     *
-     * @var int
-     */
-    public $inputTrack;
-    /**
-     * Required. The EditAtom.key that references atom with text inputs in the
-     * JobConfig.edit_list.
-     *
-     * @param string $atomKey
-     */
-    public function setAtomKey($atomKey)
+namespace Google\Service\Transcoder {
+    class TextMapping extends \Google\Model
     {
+        /**
+         * Required. The EditAtom.key that references atom with text inputs in the
+         * JobConfig.edit_list.
+         *
+         * @var string
+         */
+        public $atomKey;
+        /**
+         * Required. The Input.key that identifies the input file.
+         *
+         * @var string
+         */
+        public $inputKey;
+        /**
+         * Required. The zero-based index of the track in the input file.
+         *
+         * @var int
+         */
+        public $inputTrack;
+        /**
+         * Required. The EditAtom.key that references atom with text inputs in the
+         * JobConfig.edit_list.
+         *
+         * @param string $atomKey
+         */
+        public function setAtomKey($atomKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAtomKey()
+        {
+        }
+        /**
+         * Required. The Input.key that identifies the input file.
+         *
+         * @param string $inputKey
+         */
+        public function setInputKey($inputKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInputKey()
+        {
+        }
+        /**
+         * Required. The zero-based index of the track in the input file.
+         *
+         * @param int $inputTrack
+         */
+        public function setInputTrack($inputTrack)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getInputTrack()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Transcoder\TextMapping registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAtomKey()
-    {
-    }
-    /**
-     * Required. The Input.key that identifies the input file.
-     *
-     * @param string $inputKey
-     */
-    public function setInputKey($inputKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInputKey()
-    {
-    }
-    /**
-     * Required. The zero-based index of the track in the input file.
-     *
-     * @param int $inputTrack
-     */
-    public function setInputTrack($inputTrack)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getInputTrack()
+    class Google_Service_Transcoder_TextMapping extends \Google\Service\Transcoder\TextMapping
     {
     }
 }

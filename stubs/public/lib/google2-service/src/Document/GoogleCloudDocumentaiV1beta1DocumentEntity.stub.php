@@ -21,175 +21,184 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta1DocumentEntity extends \Google\Collection
-{
-    protected $collection_key = 'properties';
-    /**
-     * @var float
-     */
-    public $confidence;
-    /**
-     * @var string
-     */
-    public $id;
-    /**
-     * @var string
-     */
-    public $mentionId;
-    /**
-     * @var string
-     */
-    public $mentionText;
-    protected $normalizedValueType = GoogleCloudDocumentaiV1beta1DocumentEntityNormalizedValue::class;
-    protected $normalizedValueDataType = '';
-    protected $pageAnchorType = GoogleCloudDocumentaiV1beta1DocumentPageAnchor::class;
-    protected $pageAnchorDataType = '';
-    protected $propertiesType = GoogleCloudDocumentaiV1beta1DocumentEntity::class;
-    protected $propertiesDataType = 'array';
-    protected $provenanceType = GoogleCloudDocumentaiV1beta1DocumentProvenance::class;
-    protected $provenanceDataType = '';
-    /**
-     * @var bool
-     */
-    public $redacted;
-    protected $textAnchorType = GoogleCloudDocumentaiV1beta1DocumentTextAnchor::class;
-    protected $textAnchorDataType = '';
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param float
-     */
-    public function setConfidence($confidence)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta1DocumentEntity extends \Google\Collection
     {
+        protected $collection_key = 'properties';
+        /**
+         * @var float
+         */
+        public $confidence;
+        /**
+         * @var string
+         */
+        public $id;
+        /**
+         * @var string
+         */
+        public $mentionId;
+        /**
+         * @var string
+         */
+        public $mentionText;
+        protected $normalizedValueType = GoogleCloudDocumentaiV1beta1DocumentEntityNormalizedValue::class;
+        protected $normalizedValueDataType = '';
+        protected $pageAnchorType = GoogleCloudDocumentaiV1beta1DocumentPageAnchor::class;
+        protected $pageAnchorDataType = '';
+        protected $propertiesType = GoogleCloudDocumentaiV1beta1DocumentEntity::class;
+        protected $propertiesDataType = 'array';
+        protected $provenanceType = GoogleCloudDocumentaiV1beta1DocumentProvenance::class;
+        protected $provenanceDataType = '';
+        /**
+         * @var bool
+         */
+        public $redacted;
+        protected $textAnchorType = GoogleCloudDocumentaiV1beta1DocumentTextAnchor::class;
+        protected $textAnchorDataType = '';
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param float
+         */
+        public function setConfidence($confidence)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidence()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMentionId($mentionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMentionId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMentionText($mentionText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMentionText()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta1DocumentEntityNormalizedValue
+         */
+        public function setNormalizedValue(GoogleCloudDocumentaiV1beta1DocumentEntityNormalizedValue $normalizedValue)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta1DocumentEntityNormalizedValue
+         */
+        public function getNormalizedValue()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta1DocumentPageAnchor
+         */
+        public function setPageAnchor(GoogleCloudDocumentaiV1beta1DocumentPageAnchor $pageAnchor)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta1DocumentPageAnchor
+         */
+        public function getPageAnchor()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta1DocumentEntity[]
+         */
+        public function setProperties($properties)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta1DocumentEntity[]
+         */
+        public function getProperties()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta1DocumentProvenance
+         */
+        public function setProvenance(GoogleCloudDocumentaiV1beta1DocumentProvenance $provenance)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta1DocumentProvenance
+         */
+        public function getProvenance()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setRedacted($redacted)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRedacted()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta1DocumentTextAnchor
+         */
+        public function setTextAnchor(GoogleCloudDocumentaiV1beta1DocumentTextAnchor $textAnchor)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta1DocumentTextAnchor
+         */
+        public function getTextAnchor()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta1DocumentEntity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfidence()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMentionId($mentionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMentionId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMentionText($mentionText)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMentionText()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta1DocumentEntityNormalizedValue
-     */
-    public function setNormalizedValue(GoogleCloudDocumentaiV1beta1DocumentEntityNormalizedValue $normalizedValue)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta1DocumentEntityNormalizedValue
-     */
-    public function getNormalizedValue()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta1DocumentPageAnchor
-     */
-    public function setPageAnchor(GoogleCloudDocumentaiV1beta1DocumentPageAnchor $pageAnchor)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta1DocumentPageAnchor
-     */
-    public function getPageAnchor()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta1DocumentEntity[]
-     */
-    public function setProperties($properties)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta1DocumentEntity[]
-     */
-    public function getProperties()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta1DocumentProvenance
-     */
-    public function setProvenance(GoogleCloudDocumentaiV1beta1DocumentProvenance $provenance)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta1DocumentProvenance
-     */
-    public function getProvenance()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setRedacted($redacted)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getRedacted()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta1DocumentTextAnchor
-     */
-    public function setTextAnchor(GoogleCloudDocumentaiV1beta1DocumentTextAnchor $textAnchor)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta1DocumentTextAnchor
-     */
-    public function getTextAnchor()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta1DocumentEntity extends \Google\Service\Document\GoogleCloudDocumentaiV1beta1DocumentEntity
     {
     }
 }

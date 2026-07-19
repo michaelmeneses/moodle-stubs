@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecommendationsAI;
-
-class GoogleCloudRecommendationengineV1beta1ImportUserEventsRequest extends \Google\Model
-{
-    protected $errorsConfigType = GoogleCloudRecommendationengineV1beta1ImportErrorsConfig::class;
-    protected $errorsConfigDataType = '';
-    protected $inputConfigType = GoogleCloudRecommendationengineV1beta1InputConfig::class;
-    protected $inputConfigDataType = '';
-    /**
-     * Optional. Unique identifier provided by client, within the ancestor dataset
-     * scope. Ensures idempotency for expensive long running operations. Server-
-     * generated if unspecified. Up to 128 characters long. This is returned as
-     * google.longrunning.Operation.name in the response. Note that this field
-     * must not be set if the desired input config is catalog_inline_source.
-     *
-     * @var string
-     */
-    public $requestId;
-    /**
-     * Optional. The desired location of errors incurred during the Import.
-     *
-     * @param GoogleCloudRecommendationengineV1beta1ImportErrorsConfig $errorsConfig
-     */
-    public function setErrorsConfig(GoogleCloudRecommendationengineV1beta1ImportErrorsConfig $errorsConfig)
+namespace Google\Service\RecommendationsAI {
+    class GoogleCloudRecommendationengineV1beta1ImportUserEventsRequest extends \Google\Model
     {
+        protected $errorsConfigType = GoogleCloudRecommendationengineV1beta1ImportErrorsConfig::class;
+        protected $errorsConfigDataType = '';
+        protected $inputConfigType = GoogleCloudRecommendationengineV1beta1InputConfig::class;
+        protected $inputConfigDataType = '';
+        /**
+         * Optional. Unique identifier provided by client, within the ancestor dataset
+         * scope. Ensures idempotency for expensive long running operations. Server-
+         * generated if unspecified. Up to 128 characters long. This is returned as
+         * google.longrunning.Operation.name in the response. Note that this field
+         * must not be set if the desired input config is catalog_inline_source.
+         *
+         * @var string
+         */
+        public $requestId;
+        /**
+         * Optional. The desired location of errors incurred during the Import.
+         *
+         * @param GoogleCloudRecommendationengineV1beta1ImportErrorsConfig $errorsConfig
+         */
+        public function setErrorsConfig(GoogleCloudRecommendationengineV1beta1ImportErrorsConfig $errorsConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudRecommendationengineV1beta1ImportErrorsConfig
+         */
+        public function getErrorsConfig()
+        {
+        }
+        /**
+         * Required. The desired input location of the data.
+         *
+         * @param GoogleCloudRecommendationengineV1beta1InputConfig $inputConfig
+         */
+        public function setInputConfig(GoogleCloudRecommendationengineV1beta1InputConfig $inputConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudRecommendationengineV1beta1InputConfig
+         */
+        public function getInputConfig()
+        {
+        }
+        /**
+         * Optional. Unique identifier provided by client, within the ancestor dataset
+         * scope. Ensures idempotency for expensive long running operations. Server-
+         * generated if unspecified. Up to 128 characters long. This is returned as
+         * google.longrunning.Operation.name in the response. Note that this field
+         * must not be set if the desired input config is catalog_inline_source.
+         *
+         * @param string $requestId
+         */
+        public function setRequestId($requestId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRecommendationengineV1beta1ImportErrorsConfig
+     * Runtime class alias of \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1ImportUserEventsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorsConfig()
-    {
-    }
-    /**
-     * Required. The desired input location of the data.
-     *
-     * @param GoogleCloudRecommendationengineV1beta1InputConfig $inputConfig
-     */
-    public function setInputConfig(GoogleCloudRecommendationengineV1beta1InputConfig $inputConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudRecommendationengineV1beta1InputConfig
-     */
-    public function getInputConfig()
-    {
-    }
-    /**
-     * Optional. Unique identifier provided by client, within the ancestor dataset
-     * scope. Ensures idempotency for expensive long running operations. Server-
-     * generated if unspecified. Up to 128 characters long. This is returned as
-     * google.longrunning.Operation.name in the response. Note that this field
-     * must not be set if the desired input config is catalog_inline_source.
-     *
-     * @param string $requestId
-     */
-    public function setRequestId($requestId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestId()
+    class Google_Service_RecommendationsAI_GoogleCloudRecommendationengineV1beta1ImportUserEventsRequest extends \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1ImportUserEventsRequest
     {
     }
 }

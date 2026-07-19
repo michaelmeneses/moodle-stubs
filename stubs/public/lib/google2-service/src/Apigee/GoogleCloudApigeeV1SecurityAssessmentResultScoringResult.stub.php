@@ -21,127 +21,136 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1SecurityAssessmentResultScoringResult extends \Google\Model
-{
-    /**
-     * Severity is not defined.
-     */
-    public const SEVERITY_SEVERITY_UNSPECIFIED = 'SEVERITY_UNSPECIFIED';
-    /**
-     * Severity is low.
-     */
-    public const SEVERITY_LOW = 'LOW';
-    /**
-     * Severity is medium.
-     */
-    public const SEVERITY_MEDIUM = 'MEDIUM';
-    /**
-     * Severity is high.
-     */
-    public const SEVERITY_HIGH = 'HIGH';
-    /**
-     * Severity is minimal
-     */
-    public const SEVERITY_MINIMAL = 'MINIMAL';
-    protected $assessmentRecommendationsType = GoogleCloudApigeeV1SecurityAssessmentResultScoringResultAssessmentRecommendation::class;
-    protected $assessmentRecommendationsDataType = 'map';
-    /**
-     * The time when resource data was last fetched for this resource. This time
-     * may be different than when the resource was actually updated due to lag in
-     * data collection.
-     *
-     * @var string
-     */
-    public $dataUpdateTime;
-    /**
-     * The number of failed assessments grouped by its weight. Keys are one of the
-     * following: "MAJOR", "MODERATE", "MINOR".
-     *
-     * @var int[]
-     */
-    public $failedAssessmentPerWeight;
-    /**
-     * The security score of the assessment.
-     *
-     * @var int
-     */
-    public $score;
-    /**
-     * @var string
-     */
-    public $severity;
-    /**
-     * The recommendations of the assessment. The key is the "name" of the
-     * assessment (not display_name), and the value are the recommendations.
-     *
-     * @param GoogleCloudApigeeV1SecurityAssessmentResultScoringResultAssessmentRecommendation[] $assessmentRecommendations
-     */
-    public function setAssessmentRecommendations($assessmentRecommendations)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1SecurityAssessmentResultScoringResult extends \Google\Model
     {
+        /**
+         * Severity is not defined.
+         */
+        public const SEVERITY_SEVERITY_UNSPECIFIED = 'SEVERITY_UNSPECIFIED';
+        /**
+         * Severity is low.
+         */
+        public const SEVERITY_LOW = 'LOW';
+        /**
+         * Severity is medium.
+         */
+        public const SEVERITY_MEDIUM = 'MEDIUM';
+        /**
+         * Severity is high.
+         */
+        public const SEVERITY_HIGH = 'HIGH';
+        /**
+         * Severity is minimal
+         */
+        public const SEVERITY_MINIMAL = 'MINIMAL';
+        protected $assessmentRecommendationsType = GoogleCloudApigeeV1SecurityAssessmentResultScoringResultAssessmentRecommendation::class;
+        protected $assessmentRecommendationsDataType = 'map';
+        /**
+         * The time when resource data was last fetched for this resource. This time
+         * may be different than when the resource was actually updated due to lag in
+         * data collection.
+         *
+         * @var string
+         */
+        public $dataUpdateTime;
+        /**
+         * The number of failed assessments grouped by its weight. Keys are one of the
+         * following: "MAJOR", "MODERATE", "MINOR".
+         *
+         * @var int[]
+         */
+        public $failedAssessmentPerWeight;
+        /**
+         * The security score of the assessment.
+         *
+         * @var int
+         */
+        public $score;
+        /**
+         * @var string
+         */
+        public $severity;
+        /**
+         * The recommendations of the assessment. The key is the "name" of the
+         * assessment (not display_name), and the value are the recommendations.
+         *
+         * @param GoogleCloudApigeeV1SecurityAssessmentResultScoringResultAssessmentRecommendation[] $assessmentRecommendations
+         */
+        public function setAssessmentRecommendations($assessmentRecommendations)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1SecurityAssessmentResultScoringResultAssessmentRecommendation[]
+         */
+        public function getAssessmentRecommendations()
+        {
+        }
+        /**
+         * The time when resource data was last fetched for this resource. This time
+         * may be different than when the resource was actually updated due to lag in
+         * data collection.
+         *
+         * @param string $dataUpdateTime
+         */
+        public function setDataUpdateTime($dataUpdateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataUpdateTime()
+        {
+        }
+        /**
+         * The number of failed assessments grouped by its weight. Keys are one of the
+         * following: "MAJOR", "MODERATE", "MINOR".
+         *
+         * @param int[] $failedAssessmentPerWeight
+         */
+        public function setFailedAssessmentPerWeight($failedAssessmentPerWeight)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getFailedAssessmentPerWeight()
+        {
+        }
+        /**
+         * The security score of the assessment.
+         *
+         * @param int $score
+         */
+        public function setScore($score)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getScore()
+        {
+        }
+        /**
+         * @param self::SEVERITY_* $severity
+         */
+        public function setSeverity($severity)
+        {
+        }
+        /**
+         * @return self::SEVERITY_*
+         */
+        public function getSeverity()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1SecurityAssessmentResultScoringResultAssessmentRecommendation[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1SecurityAssessmentResultScoringResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssessmentRecommendations()
-    {
-    }
-    /**
-     * The time when resource data was last fetched for this resource. This time
-     * may be different than when the resource was actually updated due to lag in
-     * data collection.
-     *
-     * @param string $dataUpdateTime
-     */
-    public function setDataUpdateTime($dataUpdateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDataUpdateTime()
-    {
-    }
-    /**
-     * The number of failed assessments grouped by its weight. Keys are one of the
-     * following: "MAJOR", "MODERATE", "MINOR".
-     *
-     * @param int[] $failedAssessmentPerWeight
-     */
-    public function setFailedAssessmentPerWeight($failedAssessmentPerWeight)
-    {
-    }
-    /**
-     * @return int[]
-     */
-    public function getFailedAssessmentPerWeight()
-    {
-    }
-    /**
-     * The security score of the assessment.
-     *
-     * @param int $score
-     */
-    public function setScore($score)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getScore()
-    {
-    }
-    /**
-     * @param self::SEVERITY_* $severity
-     */
-    public function setSeverity($severity)
-    {
-    }
-    /**
-     * @return self::SEVERITY_*
-     */
-    public function getSeverity()
+    class Google_Service_Apigee_GoogleCloudApigeeV1SecurityAssessmentResultScoringResult extends \Google\Service\Apigee\GoogleCloudApigeeV1SecurityAssessmentResultScoringResult
     {
     }
 }

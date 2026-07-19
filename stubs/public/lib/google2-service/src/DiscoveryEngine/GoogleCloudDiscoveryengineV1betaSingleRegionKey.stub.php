@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaSingleRegionKey extends \Google\Model
-{
-    /**
-     * Required. Single-regional kms key resource name which will be used to
-     * encrypt resources `projects/{project}/locations/{location}/keyRings/{keyRin
-     * g}/cryptoKeys/{keyId}`.
-     *
-     * @var string
-     */
-    public $kmsKey;
-    /**
-     * Required. Single-regional kms key resource name which will be used to
-     * encrypt resources `projects/{project}/locations/{location}/keyRings/{keyRin
-     * g}/cryptoKeys/{keyId}`.
-     *
-     * @param string $kmsKey
-     */
-    public function setKmsKey($kmsKey)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaSingleRegionKey extends \Google\Model
     {
+        /**
+         * Required. Single-regional kms key resource name which will be used to
+         * encrypt resources `projects/{project}/locations/{location}/keyRings/{keyRin
+         * g}/cryptoKeys/{keyId}`.
+         *
+         * @var string
+         */
+        public $kmsKey;
+        /**
+         * Required. Single-regional kms key resource name which will be used to
+         * encrypt resources `projects/{project}/locations/{location}/keyRings/{keyRin
+         * g}/cryptoKeys/{keyId}`.
+         *
+         * @param string $kmsKey
+         */
+        public function setKmsKey($kmsKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKmsKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaSingleRegionKey registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKmsKey()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaSingleRegionKey extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaSingleRegionKey
     {
     }
 }

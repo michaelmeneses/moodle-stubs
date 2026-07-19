@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class StartBackfillJobRequest extends \Google\Model
-{
-    protected $eventFilterType = EventFilter::class;
-    protected $eventFilterDataType = '';
-    /**
-     * Optional. Optional event filter. If not set, or empty, the backfill will be
-     * performed on the entire object. This is currently used for partial backfill
-     * and only supported for SQL Server sources.
-     *
-     * @param EventFilter $eventFilter
-     */
-    public function setEventFilter(EventFilter $eventFilter)
+namespace Google\Service\Datastream {
+    class StartBackfillJobRequest extends \Google\Model
     {
+        protected $eventFilterType = EventFilter::class;
+        protected $eventFilterDataType = '';
+        /**
+         * Optional. Optional event filter. If not set, or empty, the backfill will be
+         * performed on the entire object. This is currently used for partial backfill
+         * and only supported for SQL Server sources.
+         *
+         * @param EventFilter $eventFilter
+         */
+        public function setEventFilter(EventFilter $eventFilter)
+        {
+        }
+        /**
+         * @return EventFilter
+         */
+        public function getEventFilter()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EventFilter
+     * Runtime class alias of \Google\Service\Datastream\StartBackfillJobRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEventFilter()
+    class Google_Service_Datastream_StartBackfillJobRequest extends \Google\Service\Datastream\StartBackfillJobRequest
     {
     }
 }

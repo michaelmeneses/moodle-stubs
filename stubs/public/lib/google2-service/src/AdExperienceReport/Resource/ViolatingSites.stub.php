@@ -21,27 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExperienceReport\Resource;
-
-/**
- * The "violatingSites" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adexperiencereportService = new Google\Service\AdExperienceReport(...);
- *   $violatingSites = $adexperiencereportService->violatingSites;
- *  </code>
- */
-class ViolatingSites extends \Google\Service\Resource
-{
+namespace Google\Service\AdExperienceReport\Resource {
+    use Google\Service\AdExperienceReport\ViolatingSitesResponse;
     /**
-     * Lists sites that are failing in the Ad Experience Report on at least one
-     * platform. (violatingSites.listViolatingSites)
-     *
-     * @param array $optParams Optional parameters.
-     * @return ViolatingSitesResponse
-     * @throws \Google\Service\Exception
+     * The "violatingSites" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adexperiencereportService = new Google\Service\AdExperienceReport(...);
+     *   $violatingSites = $adexperiencereportService->violatingSites;
+     *  </code>
      */
-    public function listViolatingSites($optParams = [])
+    class ViolatingSites extends \Google\Service\Resource
+    {
+        /**
+         * Lists sites that are failing in the Ad Experience Report on at least one
+         * platform. (violatingSites.listViolatingSites)
+         *
+         * @param array $optParams Optional parameters.
+         * @return ViolatingSitesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listViolatingSites($optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AdExperienceReport\Resource\ViolatingSites registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AdExperienceReport_Resource_ViolatingSites extends \Google\Service\AdExperienceReport\Resource\ViolatingSites
     {
     }
 }

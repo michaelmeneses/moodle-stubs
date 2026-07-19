@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity;
-
-class AuthzPolicyAuthzRuleFromRequestSource extends \Google\Collection
-{
-    protected $collection_key = 'resources';
-    protected $ipBlocksType = AuthzPolicyAuthzRuleIpBlock::class;
-    protected $ipBlocksDataType = 'array';
-    protected $principalsType = AuthzPolicyAuthzRulePrincipal::class;
-    protected $principalsDataType = 'array';
-    protected $resourcesType = AuthzPolicyAuthzRuleRequestResource::class;
-    protected $resourcesDataType = 'array';
-    /**
-     * Optional. A list of IP addresses or IP address ranges to match against the
-     * source IP address of the request. Limited to 10 ip_blocks per Authorization
-     * Policy
-     *
-     * @param AuthzPolicyAuthzRuleIpBlock[] $ipBlocks
-     */
-    public function setIpBlocks($ipBlocks)
+namespace Google\Service\NetworkSecurity {
+    class AuthzPolicyAuthzRuleFromRequestSource extends \Google\Collection
     {
+        protected $collection_key = 'resources';
+        protected $ipBlocksType = AuthzPolicyAuthzRuleIpBlock::class;
+        protected $ipBlocksDataType = 'array';
+        protected $principalsType = AuthzPolicyAuthzRulePrincipal::class;
+        protected $principalsDataType = 'array';
+        protected $resourcesType = AuthzPolicyAuthzRuleRequestResource::class;
+        protected $resourcesDataType = 'array';
+        /**
+         * Optional. A list of IP addresses or IP address ranges to match against the
+         * source IP address of the request. Limited to 10 ip_blocks per Authorization
+         * Policy
+         *
+         * @param AuthzPolicyAuthzRuleIpBlock[] $ipBlocks
+         */
+        public function setIpBlocks($ipBlocks)
+        {
+        }
+        /**
+         * @return AuthzPolicyAuthzRuleIpBlock[]
+         */
+        public function getIpBlocks()
+        {
+        }
+        /**
+         * Optional. A list of identities derived from the client's certificate. This
+         * field will not match on a request unless frontend mutual TLS is enabled for
+         * the forwarding rule or Gateway and the client certificate has been
+         * successfully validated by mTLS. Each identity is a string whose value is
+         * matched against a list of URI SANs, DNS Name SANs, or the common name in
+         * the client's certificate. A match happens when any principal matches with
+         * the rule. Limited to 50 principals per Authorization Policy for regional
+         * internal Application Load Balancers, regional external Application Load
+         * Balancers, cross-region internal Application Load Balancers, and Cloud
+         * Service Mesh. This field is not supported for global external Application
+         * Load Balancers.
+         *
+         * @param AuthzPolicyAuthzRulePrincipal[] $principals
+         */
+        public function setPrincipals($principals)
+        {
+        }
+        /**
+         * @return AuthzPolicyAuthzRulePrincipal[]
+         */
+        public function getPrincipals()
+        {
+        }
+        /**
+         * Optional. A list of resources to match against the resource of the source
+         * VM of a request. Limited to 10 resources per Authorization Policy.
+         *
+         * @param AuthzPolicyAuthzRuleRequestResource[] $resources
+         */
+        public function setResources($resources)
+        {
+        }
+        /**
+         * @return AuthzPolicyAuthzRuleRequestResource[]
+         */
+        public function getResources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AuthzPolicyAuthzRuleIpBlock[]
+     * Runtime class alias of \Google\Service\NetworkSecurity\AuthzPolicyAuthzRuleFromRequestSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIpBlocks()
-    {
-    }
-    /**
-     * Optional. A list of identities derived from the client's certificate. This
-     * field will not match on a request unless frontend mutual TLS is enabled for
-     * the forwarding rule or Gateway and the client certificate has been
-     * successfully validated by mTLS. Each identity is a string whose value is
-     * matched against a list of URI SANs, DNS Name SANs, or the common name in
-     * the client's certificate. A match happens when any principal matches with
-     * the rule. Limited to 50 principals per Authorization Policy for regional
-     * internal Application Load Balancers, regional external Application Load
-     * Balancers, cross-region internal Application Load Balancers, and Cloud
-     * Service Mesh. This field is not supported for global external Application
-     * Load Balancers.
-     *
-     * @param AuthzPolicyAuthzRulePrincipal[] $principals
-     */
-    public function setPrincipals($principals)
-    {
-    }
-    /**
-     * @return AuthzPolicyAuthzRulePrincipal[]
-     */
-    public function getPrincipals()
-    {
-    }
-    /**
-     * Optional. A list of resources to match against the resource of the source
-     * VM of a request. Limited to 10 resources per Authorization Policy.
-     *
-     * @param AuthzPolicyAuthzRuleRequestResource[] $resources
-     */
-    public function setResources($resources)
-    {
-    }
-    /**
-     * @return AuthzPolicyAuthzRuleRequestResource[]
-     */
-    public function getResources()
+    class Google_Service_NetworkSecurity_AuthzPolicyAuthzRuleFromRequestSource extends \Google\Service\NetworkSecurity\AuthzPolicyAuthzRuleFromRequestSource
     {
     }
 }

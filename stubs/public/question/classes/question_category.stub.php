@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_question;
 
+use core\context;
+use JsonSerializable;
+use stdClass;
 /**
  * A simple value object representing a question category.
  *

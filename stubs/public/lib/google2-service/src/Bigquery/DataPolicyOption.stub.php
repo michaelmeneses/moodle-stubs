@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class DataPolicyOption extends \Google\Model
-{
-    /**
-     * Data policy resource name in the form of
-     * projects/project_id/locations/location_id/dataPolicies/data_policy_id.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Data policy resource name in the form of
-     * projects/project_id/locations/location_id/dataPolicies/data_policy_id.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Bigquery {
+    class DataPolicyOption extends \Google\Model
     {
+        /**
+         * Data policy resource name in the form of
+         * projects/project_id/locations/location_id/dataPolicies/data_policy_id.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Data policy resource name in the form of
+         * projects/project_id/locations/location_id/dataPolicies/data_policy_id.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\DataPolicyOption registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
+    class Google_Service_Bigquery_DataPolicyOption extends \Google\Service\Bigquery\DataPolicyOption
     {
     }
 }

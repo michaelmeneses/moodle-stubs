@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1IntermediateExtractedMemory extends \Google\Model
-{
-    /**
-     * Output only. The fact of the extracted memory.
-     *
-     * @var string
-     */
-    public $fact;
-    /**
-     * Output only. The fact of the extracted memory.
-     *
-     * @param string $fact
-     */
-    public function setFact($fact)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1IntermediateExtractedMemory extends \Google\Model
     {
+        /**
+         * Output only. The fact of the extracted memory.
+         *
+         * @var string
+         */
+        public $fact;
+        /**
+         * Output only. The fact of the extracted memory.
+         *
+         * @param string $fact
+         */
+        public function setFact($fact)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFact()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1IntermediateExtractedMemory registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFact()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1IntermediateExtractedMemory extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1IntermediateExtractedMemory
     {
     }
 }

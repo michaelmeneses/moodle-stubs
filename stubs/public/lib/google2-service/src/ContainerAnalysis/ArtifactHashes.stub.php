@@ -21,15 +21,24 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class ArtifactHashes extends \Google\Model
-{
-    public $sha256;
-    public function setSha256($sha256)
+namespace Google\Service\ContainerAnalysis {
+    class ArtifactHashes extends \Google\Model
     {
+        public $sha256;
+        public function setSha256($sha256)
+        {
+        }
+        public function getSha256()
+        {
+        }
     }
-    public function getSha256()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ContainerAnalysis\ArtifactHashes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ContainerAnalysis_ArtifactHashes extends \Google\Service\ContainerAnalysis\ArtifactHashes
     {
     }
 }

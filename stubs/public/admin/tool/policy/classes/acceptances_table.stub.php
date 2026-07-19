@@ -29,6 +29,11 @@
  */
 namespace tool_policy;
 
+use tool_policy\output\acceptances_filter;
+use tool_policy\output\renderer;
+use tool_policy\output\user_agreement;
+use core_user;
+use stdClass;
 /**
  * Class acceptances_table
  *

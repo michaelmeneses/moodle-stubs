@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1Score extends \Google\Collection
-{
-    protected $collection_key = 'subcomponents';
-    protected $componentType = GoogleCloudApigeeV1ScoreComponent::class;
-    protected $componentDataType = '';
-    protected $subcomponentsType = GoogleCloudApigeeV1ScoreComponent::class;
-    protected $subcomponentsDataType = 'array';
-    protected $timeRangeType = GoogleTypeInterval::class;
-    protected $timeRangeDataType = '';
-    /**
-     * Component containing score, recommendations and actions.
-     *
-     * @param GoogleCloudApigeeV1ScoreComponent $component
-     */
-    public function setComponent(GoogleCloudApigeeV1ScoreComponent $component)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1Score extends \Google\Collection
     {
+        protected $collection_key = 'subcomponents';
+        protected $componentType = GoogleCloudApigeeV1ScoreComponent::class;
+        protected $componentDataType = '';
+        protected $subcomponentsType = GoogleCloudApigeeV1ScoreComponent::class;
+        protected $subcomponentsDataType = 'array';
+        protected $timeRangeType = GoogleTypeInterval::class;
+        protected $timeRangeDataType = '';
+        /**
+         * Component containing score, recommendations and actions.
+         *
+         * @param GoogleCloudApigeeV1ScoreComponent $component
+         */
+        public function setComponent(GoogleCloudApigeeV1ScoreComponent $component)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1ScoreComponent
+         */
+        public function getComponent()
+        {
+        }
+        /**
+         * List of all the drilldown score components.
+         *
+         * @param GoogleCloudApigeeV1ScoreComponent[] $subcomponents
+         */
+        public function setSubcomponents($subcomponents)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1ScoreComponent[]
+         */
+        public function getSubcomponents()
+        {
+        }
+        /**
+         * Start and end time for the score.
+         *
+         * @param GoogleTypeInterval $timeRange
+         */
+        public function setTimeRange(GoogleTypeInterval $timeRange)
+        {
+        }
+        /**
+         * @return GoogleTypeInterval
+         */
+        public function getTimeRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1ScoreComponent
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1Score registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getComponent()
-    {
-    }
-    /**
-     * List of all the drilldown score components.
-     *
-     * @param GoogleCloudApigeeV1ScoreComponent[] $subcomponents
-     */
-    public function setSubcomponents($subcomponents)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1ScoreComponent[]
-     */
-    public function getSubcomponents()
-    {
-    }
-    /**
-     * Start and end time for the score.
-     *
-     * @param GoogleTypeInterval $timeRange
-     */
-    public function setTimeRange(GoogleTypeInterval $timeRange)
-    {
-    }
-    /**
-     * @return GoogleTypeInterval
-     */
-    public function getTimeRange()
+    class Google_Service_Apigee_GoogleCloudApigeeV1Score extends \Google\Service\Apigee\GoogleCloudApigeeV1Score
     {
     }
 }

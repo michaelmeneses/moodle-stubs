@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1WriteFeatureValuesPayload extends \Google\Model
-{
-    /**
-     * Required. The ID of the entity.
-     *
-     * @var string
-     */
-    public $entityId;
-    protected $featureValuesType = GoogleCloudAiplatformV1FeatureValue::class;
-    protected $featureValuesDataType = 'map';
-    /**
-     * Required. The ID of the entity.
-     *
-     * @param string $entityId
-     */
-    public function setEntityId($entityId)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1WriteFeatureValuesPayload extends \Google\Model
     {
+        /**
+         * Required. The ID of the entity.
+         *
+         * @var string
+         */
+        public $entityId;
+        protected $featureValuesType = GoogleCloudAiplatformV1FeatureValue::class;
+        protected $featureValuesDataType = 'map';
+        /**
+         * Required. The ID of the entity.
+         *
+         * @param string $entityId
+         */
+        public function setEntityId($entityId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEntityId()
+        {
+        }
+        /**
+         * Required. Feature values to be written, mapping from Feature ID to value.
+         * Up to 100,000 `feature_values` entries may be written across all payloads.
+         * The feature generation time, aligned by days, must be no older than five
+         * years (1825 days) and no later than one year (366 days) in the future.
+         *
+         * @param GoogleCloudAiplatformV1FeatureValue[] $featureValues
+         */
+        public function setFeatureValues($featureValues)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1FeatureValue[]
+         */
+        public function getFeatureValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1WriteFeatureValuesPayload registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntityId()
-    {
-    }
-    /**
-     * Required. Feature values to be written, mapping from Feature ID to value.
-     * Up to 100,000 `feature_values` entries may be written across all payloads.
-     * The feature generation time, aligned by days, must be no older than five
-     * years (1825 days) and no later than one year (366 days) in the future.
-     *
-     * @param GoogleCloudAiplatformV1FeatureValue[] $featureValues
-     */
-    public function setFeatureValues($featureValues)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1FeatureValue[]
-     */
-    public function getFeatureValues()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1WriteFeatureValuesPayload extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1WriteFeatureValuesPayload
     {
     }
 }

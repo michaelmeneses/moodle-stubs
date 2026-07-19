@@ -21,95 +21,104 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class AdSize extends \Google\Model
-{
-    /**
-     * A placeholder for an undefined size type.
-     */
-    public const SIZE_TYPE_SIZE_TYPE_UNSPECIFIED = 'SIZE_TYPE_UNSPECIFIED';
-    /**
-     * Ad slot with size specified by height and width in pixels.
-     */
-    public const SIZE_TYPE_PIXEL = 'PIXEL';
-    /**
-     * Special size to describe an interstitial ad slot.
-     */
-    public const SIZE_TYPE_INTERSTITIAL = 'INTERSTITIAL';
-    /**
-     * Native (mobile) ads rendered by the publisher.
-     */
-    public const SIZE_TYPE_NATIVE = 'NATIVE';
-    /**
-     * Fluid size (for example, responsive size) can be resized automatically with
-     * the change of outside environment.
-     */
-    public const SIZE_TYPE_FLUID = 'FLUID';
-    /**
-     * The height of the ad slot in pixels. This field will be present only when
-     * size type is `PIXEL`.
-     *
-     * @var string
-     */
-    public $height;
-    /**
-     * The size type of the ad slot.
-     *
-     * @var string
-     */
-    public $sizeType;
-    /**
-     * The width of the ad slot in pixels. This field will be present only when
-     * size type is `PIXEL`.
-     *
-     * @var string
-     */
-    public $width;
-    /**
-     * The height of the ad slot in pixels. This field will be present only when
-     * size type is `PIXEL`.
-     *
-     * @param string $height
-     */
-    public function setHeight($height)
+namespace Google\Service\AdExchangeBuyerII {
+    class AdSize extends \Google\Model
     {
+        /**
+         * A placeholder for an undefined size type.
+         */
+        public const SIZE_TYPE_SIZE_TYPE_UNSPECIFIED = 'SIZE_TYPE_UNSPECIFIED';
+        /**
+         * Ad slot with size specified by height and width in pixels.
+         */
+        public const SIZE_TYPE_PIXEL = 'PIXEL';
+        /**
+         * Special size to describe an interstitial ad slot.
+         */
+        public const SIZE_TYPE_INTERSTITIAL = 'INTERSTITIAL';
+        /**
+         * Native (mobile) ads rendered by the publisher.
+         */
+        public const SIZE_TYPE_NATIVE = 'NATIVE';
+        /**
+         * Fluid size (for example, responsive size) can be resized automatically with
+         * the change of outside environment.
+         */
+        public const SIZE_TYPE_FLUID = 'FLUID';
+        /**
+         * The height of the ad slot in pixels. This field will be present only when
+         * size type is `PIXEL`.
+         *
+         * @var string
+         */
+        public $height;
+        /**
+         * The size type of the ad slot.
+         *
+         * @var string
+         */
+        public $sizeType;
+        /**
+         * The width of the ad slot in pixels. This field will be present only when
+         * size type is `PIXEL`.
+         *
+         * @var string
+         */
+        public $width;
+        /**
+         * The height of the ad slot in pixels. This field will be present only when
+         * size type is `PIXEL`.
+         *
+         * @param string $height
+         */
+        public function setHeight($height)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHeight()
+        {
+        }
+        /**
+         * The size type of the ad slot.
+         *
+         * Accepted values: SIZE_TYPE_UNSPECIFIED, PIXEL, INTERSTITIAL, NATIVE, FLUID
+         *
+         * @param self::SIZE_TYPE_* $sizeType
+         */
+        public function setSizeType($sizeType)
+        {
+        }
+        /**
+         * @return self::SIZE_TYPE_*
+         */
+        public function getSizeType()
+        {
+        }
+        /**
+         * The width of the ad slot in pixels. This field will be present only when
+         * size type is `PIXEL`.
+         *
+         * @param string $width
+         */
+        public function setWidth($width)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWidth()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\AdSize registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHeight()
-    {
-    }
-    /**
-     * The size type of the ad slot.
-     *
-     * Accepted values: SIZE_TYPE_UNSPECIFIED, PIXEL, INTERSTITIAL, NATIVE, FLUID
-     *
-     * @param self::SIZE_TYPE_* $sizeType
-     */
-    public function setSizeType($sizeType)
-    {
-    }
-    /**
-     * @return self::SIZE_TYPE_*
-     */
-    public function getSizeType()
-    {
-    }
-    /**
-     * The width of the ad slot in pixels. This field will be present only when
-     * size type is `PIXEL`.
-     *
-     * @param string $width
-     */
-    public function setWidth($width)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWidth()
+    class Google_Service_AdExchangeBuyerII_AdSize extends \Google\Service\AdExchangeBuyerII\AdSize
     {
     }
 }

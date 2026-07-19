@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class Union extends \Google\Collection
-{
-    protected $collection_key = 'rules';
-    protected $rulesType = GcRule::class;
-    protected $rulesDataType = 'array';
-    /**
-     * Delete cells which would be deleted by any element of `rules`.
-     *
-     * @param GcRule[] $rules
-     */
-    public function setRules($rules)
+namespace Google\Service\BigtableAdmin {
+    class Union extends \Google\Collection
     {
+        protected $collection_key = 'rules';
+        protected $rulesType = GcRule::class;
+        protected $rulesDataType = 'array';
+        /**
+         * Delete cells which would be deleted by any element of `rules`.
+         *
+         * @param GcRule[] $rules
+         */
+        public function setRules($rules)
+        {
+        }
+        /**
+         * @return GcRule[]
+         */
+        public function getRules()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GcRule[]
+     * Runtime class alias of \Google\Service\BigtableAdmin\Union registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRules()
+    class Google_Service_BigtableAdmin_Union extends \Google\Service\BigtableAdmin\Union
     {
     }
 }

@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class PrivateRegistryAccessConfig extends \Google\Collection
-{
-    protected $collection_key = 'certificateAuthorityDomainConfig';
-    protected $certificateAuthorityDomainConfigType = CertificateAuthorityDomainConfig::class;
-    protected $certificateAuthorityDomainConfigDataType = 'array';
-    /**
-     * Private registry access is enabled.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * Private registry access configuration.
-     *
-     * @param CertificateAuthorityDomainConfig[] $certificateAuthorityDomainConfig
-     */
-    public function setCertificateAuthorityDomainConfig($certificateAuthorityDomainConfig)
+namespace Google\Service\Container {
+    class PrivateRegistryAccessConfig extends \Google\Collection
     {
+        protected $collection_key = 'certificateAuthorityDomainConfig';
+        protected $certificateAuthorityDomainConfigType = CertificateAuthorityDomainConfig::class;
+        protected $certificateAuthorityDomainConfigDataType = 'array';
+        /**
+         * Private registry access is enabled.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * Private registry access configuration.
+         *
+         * @param CertificateAuthorityDomainConfig[] $certificateAuthorityDomainConfig
+         */
+        public function setCertificateAuthorityDomainConfig($certificateAuthorityDomainConfig)
+        {
+        }
+        /**
+         * @return CertificateAuthorityDomainConfig[]
+         */
+        public function getCertificateAuthorityDomainConfig()
+        {
+        }
+        /**
+         * Private registry access is enabled.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CertificateAuthorityDomainConfig[]
+     * Runtime class alias of \Google\Service\Container\PrivateRegistryAccessConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCertificateAuthorityDomainConfig()
-    {
-    }
-    /**
-     * Private registry access is enabled.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnabled()
+    class Google_Service_Container_PrivateRegistryAccessConfig extends \Google\Service\Container\PrivateRegistryAccessConfig
     {
     }
 }

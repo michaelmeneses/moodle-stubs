@@ -21,120 +21,129 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0ResourcesListingGroupFilterDimension extends \Google\Model
-{
-    protected $productBiddingCategoryType = GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductBiddingCategory::class;
-    protected $productBiddingCategoryDataType = '';
-    protected $productBrandType = GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductBrand::class;
-    protected $productBrandDataType = '';
-    protected $productChannelType = GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductChannel::class;
-    protected $productChannelDataType = '';
-    protected $productConditionType = GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductCondition::class;
-    protected $productConditionDataType = '';
-    protected $productCustomAttributeType = GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductCustomAttribute::class;
-    protected $productCustomAttributeDataType = '';
-    protected $productItemIdType = GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductItemId::class;
-    protected $productItemIdDataType = '';
-    protected $productTypeType = GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductType::class;
-    protected $productTypeDataType = '';
-    /**
-     * Bidding category of a product offer.
-     *
-     * @param GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductBiddingCategory $productBiddingCategory
-     */
-    public function setProductBiddingCategory(GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductBiddingCategory $productBiddingCategory)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0ResourcesListingGroupFilterDimension extends \Google\Model
     {
+        protected $productBiddingCategoryType = GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductBiddingCategory::class;
+        protected $productBiddingCategoryDataType = '';
+        protected $productBrandType = GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductBrand::class;
+        protected $productBrandDataType = '';
+        protected $productChannelType = GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductChannel::class;
+        protected $productChannelDataType = '';
+        protected $productConditionType = GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductCondition::class;
+        protected $productConditionDataType = '';
+        protected $productCustomAttributeType = GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductCustomAttribute::class;
+        protected $productCustomAttributeDataType = '';
+        protected $productItemIdType = GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductItemId::class;
+        protected $productItemIdDataType = '';
+        protected $productTypeType = GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductType::class;
+        protected $productTypeDataType = '';
+        /**
+         * Bidding category of a product offer.
+         *
+         * @param GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductBiddingCategory $productBiddingCategory
+         */
+        public function setProductBiddingCategory(GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductBiddingCategory $productBiddingCategory)
+        {
+        }
+        /**
+         * @return GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductBiddingCategory
+         */
+        public function getProductBiddingCategory()
+        {
+        }
+        /**
+         * Brand of a product offer.
+         *
+         * @param GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductBrand $productBrand
+         */
+        public function setProductBrand(GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductBrand $productBrand)
+        {
+        }
+        /**
+         * @return GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductBrand
+         */
+        public function getProductBrand()
+        {
+        }
+        /**
+         * Locality of a product offer.
+         *
+         * @param GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductChannel $productChannel
+         */
+        public function setProductChannel(GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductChannel $productChannel)
+        {
+        }
+        /**
+         * @return GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductChannel
+         */
+        public function getProductChannel()
+        {
+        }
+        /**
+         * Condition of a product offer.
+         *
+         * @param GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductCondition $productCondition
+         */
+        public function setProductCondition(GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductCondition $productCondition)
+        {
+        }
+        /**
+         * @return GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductCondition
+         */
+        public function getProductCondition()
+        {
+        }
+        /**
+         * Custom attribute of a product offer.
+         *
+         * @param GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductCustomAttribute $productCustomAttribute
+         */
+        public function setProductCustomAttribute(GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductCustomAttribute $productCustomAttribute)
+        {
+        }
+        /**
+         * @return GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductCustomAttribute
+         */
+        public function getProductCustomAttribute()
+        {
+        }
+        /**
+         * Item id of a product offer.
+         *
+         * @param GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductItemId $productItemId
+         */
+        public function setProductItemId(GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductItemId $productItemId)
+        {
+        }
+        /**
+         * @return GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductItemId
+         */
+        public function getProductItemId()
+        {
+        }
+        /**
+         * Type of a product offer.
+         *
+         * @param GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductType $productType
+         */
+        public function setProductType(GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductType $productType)
+        {
+        }
+        /**
+         * @return GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductType
+         */
+        public function getProductType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductBiddingCategory
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesListingGroupFilterDimension registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProductBiddingCategory()
-    {
-    }
-    /**
-     * Brand of a product offer.
-     *
-     * @param GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductBrand $productBrand
-     */
-    public function setProductBrand(GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductBrand $productBrand)
-    {
-    }
-    /**
-     * @return GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductBrand
-     */
-    public function getProductBrand()
-    {
-    }
-    /**
-     * Locality of a product offer.
-     *
-     * @param GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductChannel $productChannel
-     */
-    public function setProductChannel(GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductChannel $productChannel)
-    {
-    }
-    /**
-     * @return GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductChannel
-     */
-    public function getProductChannel()
-    {
-    }
-    /**
-     * Condition of a product offer.
-     *
-     * @param GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductCondition $productCondition
-     */
-    public function setProductCondition(GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductCondition $productCondition)
-    {
-    }
-    /**
-     * @return GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductCondition
-     */
-    public function getProductCondition()
-    {
-    }
-    /**
-     * Custom attribute of a product offer.
-     *
-     * @param GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductCustomAttribute $productCustomAttribute
-     */
-    public function setProductCustomAttribute(GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductCustomAttribute $productCustomAttribute)
-    {
-    }
-    /**
-     * @return GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductCustomAttribute
-     */
-    public function getProductCustomAttribute()
-    {
-    }
-    /**
-     * Item id of a product offer.
-     *
-     * @param GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductItemId $productItemId
-     */
-    public function setProductItemId(GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductItemId $productItemId)
-    {
-    }
-    /**
-     * @return GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductItemId
-     */
-    public function getProductItemId()
-    {
-    }
-    /**
-     * Type of a product offer.
-     *
-     * @param GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductType $productType
-     */
-    public function setProductType(GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductType $productType)
-    {
-    }
-    /**
-     * @return GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductType
-     */
-    public function getProductType()
+    class Google_Service_SA360_GoogleAdsSearchads360V0ResourcesListingGroupFilterDimension extends \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesListingGroupFilterDimension
     {
     }
 }

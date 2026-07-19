@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GamesConfiguration;
-
-class LeaderboardConfigurationListResponse extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = LeaderboardConfiguration::class;
-    protected $itemsDataType = 'array';
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `gamesConfiguration#leaderboardConfigurationListResponse`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The pagination token for the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The leaderboard configurations.
-     *
-     * @param LeaderboardConfiguration[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\GamesConfiguration {
+    class LeaderboardConfigurationListResponse extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = LeaderboardConfiguration::class;
+        protected $itemsDataType = 'array';
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `gamesConfiguration#leaderboardConfigurationListResponse`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The pagination token for the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The leaderboard configurations.
+         *
+         * @param LeaderboardConfiguration[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return LeaderboardConfiguration[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `gamesConfiguration#leaderboardConfigurationListResponse`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The pagination token for the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LeaderboardConfiguration[]
+     * Runtime class alias of \Google\Service\GamesConfiguration\LeaderboardConfigurationListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
-    {
-    }
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `gamesConfiguration#leaderboardConfigurationListResponse`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The pagination token for the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_GamesConfiguration_LeaderboardConfigurationListResponse extends \Google\Service\GamesConfiguration\LeaderboardConfigurationListResponse
     {
     }
 }

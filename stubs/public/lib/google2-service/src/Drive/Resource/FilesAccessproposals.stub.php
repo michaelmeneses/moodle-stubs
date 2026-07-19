@@ -21,53 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Drive\Resource;
-
-/**
- * The "accessproposals" collection of methods.
- * Typical usage is:
- *  <code>
- *   $driveService = new Google\Service\Drive(...);
- *   $accessproposals = $driveService->files_accessproposals;
- *  </code>
- */
-class FilesAccessproposals extends \Google\Service\Resource
-{
+namespace Google\Service\Drive\Resource {
+    use Google\Service\Drive\ListAccessProposalsResponse;
     /**
-     * List the AccessProposals on a file. Note: Only approvers are able to list
-     * AccessProposals on a file. If the user is not an approver, returns a 403.
-     * (accessproposals.listFilesAccessproposals)
-     *
-     * @param string $fileId Required. The id of the item the request is on.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. The number of results per page
-     * @opt_param string pageToken Optional. The continuation token on the list of
-     * access requests.
-     * @return ListAccessProposalsResponse
-     * @throws \Google\Service\Exception
+     * The "accessproposals" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $driveService = new Google\Service\Drive(...);
+     *   $accessproposals = $driveService->files_accessproposals;
+     *  </code>
      */
-    public function listFilesAccessproposals($fileId, $optParams = [])
+    class FilesAccessproposals extends \Google\Service\Resource
     {
+        /**
+         * List the AccessProposals on a file. Note: Only approvers are able to list
+         * AccessProposals on a file. If the user is not an approver, returns a 403.
+         * (accessproposals.listFilesAccessproposals)
+         *
+         * @param string $fileId Required. The id of the item the request is on.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. The number of results per page
+         * @opt_param string pageToken Optional. The continuation token on the list of
+         * access requests.
+         * @return ListAccessProposalsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listFilesAccessproposals($fileId, $optParams = [])
+        {
+        }
+        /**
+         * Used to approve or deny an Access Proposal. (accessproposals.resolve)
+         *
+         * @param string $fileId Required. The id of the item the request is on.
+         * @param string $proposalId Required. The id of the access proposal to resolve.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string action Required. The action to take on the AccessProposal.
+         * @opt_param string role Optional. The roles the approver has allowed, if any.
+         * Note: This field is required for the `ACCEPT` action.
+         * @opt_param bool sendNotification Optional. Whether to send an email to the
+         * requester when the AccessProposal is denied or accepted.
+         * @opt_param string view Optional. Indicates the view for this access proposal.
+         * This should only be set when the proposal belongs to a view. `published` is
+         * the only supported value.
+         * @throws \Google\Service\Exception
+         */
+        public function resolve($fileId, $proposalId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Used to approve or deny an Access Proposal. (accessproposals.resolve)
-     *
-     * @param string $fileId Required. The id of the item the request is on.
-     * @param string $proposalId Required. The id of the access proposal to resolve.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string action Required. The action to take on the AccessProposal.
-     * @opt_param string role Optional. The roles the approver has allowed, if any.
-     * Note: This field is required for the `ACCEPT` action.
-     * @opt_param bool sendNotification Optional. Whether to send an email to the
-     * requester when the AccessProposal is denied or accepted.
-     * @opt_param string view Optional. Indicates the view for this access proposal.
-     * This should only be set when the proposal belongs to a view. `published` is
-     * the only supported value.
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Drive\Resource\FilesAccessproposals registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function resolve($fileId, $proposalId, $optParams = [])
+    class Google_Service_Drive_Resource_FilesAccessproposals extends \Google\Service\Drive\Resource\FilesAccessproposals
     {
     }
 }

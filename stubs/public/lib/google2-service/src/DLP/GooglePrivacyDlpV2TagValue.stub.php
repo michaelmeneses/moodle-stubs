@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2TagValue extends \Google\Model
-{
-    /**
-     * The namespaced name for the tag value to attach to resources. Must be in
-     * the format `{parent_id}/{tag_key_short_name}/{short_name}`, for example,
-     * "123456/environment/prod" for an organization parent, or "my-
-     * project/environment/prod" for a project parent.
-     *
-     * @var string
-     */
-    public $namespacedValue;
-    /**
-     * The namespaced name for the tag value to attach to resources. Must be in
-     * the format `{parent_id}/{tag_key_short_name}/{short_name}`, for example,
-     * "123456/environment/prod" for an organization parent, or "my-
-     * project/environment/prod" for a project parent.
-     *
-     * @param string $namespacedValue
-     */
-    public function setNamespacedValue($namespacedValue)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2TagValue extends \Google\Model
     {
+        /**
+         * The namespaced name for the tag value to attach to resources. Must be in
+         * the format `{parent_id}/{tag_key_short_name}/{short_name}`, for example,
+         * "123456/environment/prod" for an organization parent, or "my-
+         * project/environment/prod" for a project parent.
+         *
+         * @var string
+         */
+        public $namespacedValue;
+        /**
+         * The namespaced name for the tag value to attach to resources. Must be in
+         * the format `{parent_id}/{tag_key_short_name}/{short_name}`, for example,
+         * "123456/environment/prod" for an organization parent, or "my-
+         * project/environment/prod" for a project parent.
+         *
+         * @param string $namespacedValue
+         */
+        public function setNamespacedValue($namespacedValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNamespacedValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2TagValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNamespacedValue()
+    class Google_Service_DLP_GooglePrivacyDlpV2TagValue extends \Google\Service\DLP\GooglePrivacyDlpV2TagValue
     {
     }
 }

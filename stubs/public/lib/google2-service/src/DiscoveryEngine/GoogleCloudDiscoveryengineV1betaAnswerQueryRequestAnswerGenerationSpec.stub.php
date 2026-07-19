@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaAnswerQueryRequestAnswerGenerationSpec extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $answerLanguageCode;
-    /**
-     * @var bool
-     */
-    public $ignoreAdversarialQuery;
-    /**
-     * @var bool
-     */
-    public $ignoreNonAnswerSeekingQuery;
-    /**
-     * @var bool
-     */
-    public $includeCitations;
-    protected $modelSpecType = GoogleCloudDiscoveryengineV1betaAnswerQueryRequestAnswerGenerationSpecModelSpec::class;
-    protected $modelSpecDataType = '';
-    protected $promptSpecType = GoogleCloudDiscoveryengineV1betaAnswerQueryRequestAnswerGenerationSpecPromptSpec::class;
-    protected $promptSpecDataType = '';
-    /**
-     * @param string
-     */
-    public function setAnswerLanguageCode($answerLanguageCode)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaAnswerQueryRequestAnswerGenerationSpec extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $answerLanguageCode;
+        /**
+         * @var bool
+         */
+        public $ignoreAdversarialQuery;
+        /**
+         * @var bool
+         */
+        public $ignoreNonAnswerSeekingQuery;
+        /**
+         * @var bool
+         */
+        public $includeCitations;
+        protected $modelSpecType = GoogleCloudDiscoveryengineV1betaAnswerQueryRequestAnswerGenerationSpecModelSpec::class;
+        protected $modelSpecDataType = '';
+        protected $promptSpecType = GoogleCloudDiscoveryengineV1betaAnswerQueryRequestAnswerGenerationSpecPromptSpec::class;
+        protected $promptSpecDataType = '';
+        /**
+         * @param string
+         */
+        public function setAnswerLanguageCode($answerLanguageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnswerLanguageCode()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setIgnoreAdversarialQuery($ignoreAdversarialQuery)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIgnoreAdversarialQuery()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setIgnoreNonAnswerSeekingQuery($ignoreNonAnswerSeekingQuery)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIgnoreNonAnswerSeekingQuery()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setIncludeCitations($includeCitations)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIncludeCitations()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaAnswerQueryRequestAnswerGenerationSpecModelSpec
+         */
+        public function setModelSpec(GoogleCloudDiscoveryengineV1betaAnswerQueryRequestAnswerGenerationSpecModelSpec $modelSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaAnswerQueryRequestAnswerGenerationSpecModelSpec
+         */
+        public function getModelSpec()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaAnswerQueryRequestAnswerGenerationSpecPromptSpec
+         */
+        public function setPromptSpec(GoogleCloudDiscoveryengineV1betaAnswerQueryRequestAnswerGenerationSpecPromptSpec $promptSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaAnswerQueryRequestAnswerGenerationSpecPromptSpec
+         */
+        public function getPromptSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaAnswerQueryRequestAnswerGenerationSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnswerLanguageCode()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setIgnoreAdversarialQuery($ignoreAdversarialQuery)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIgnoreAdversarialQuery()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setIgnoreNonAnswerSeekingQuery($ignoreNonAnswerSeekingQuery)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIgnoreNonAnswerSeekingQuery()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setIncludeCitations($includeCitations)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIncludeCitations()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaAnswerQueryRequestAnswerGenerationSpecModelSpec
-     */
-    public function setModelSpec(GoogleCloudDiscoveryengineV1betaAnswerQueryRequestAnswerGenerationSpecModelSpec $modelSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaAnswerQueryRequestAnswerGenerationSpecModelSpec
-     */
-    public function getModelSpec()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaAnswerQueryRequestAnswerGenerationSpecPromptSpec
-     */
-    public function setPromptSpec(GoogleCloudDiscoveryengineV1betaAnswerQueryRequestAnswerGenerationSpecPromptSpec $promptSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaAnswerQueryRequestAnswerGenerationSpecPromptSpec
-     */
-    public function getPromptSpec()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaAnswerQueryRequestAnswerGenerationSpec extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaAnswerQueryRequestAnswerGenerationSpec
     {
     }
 }

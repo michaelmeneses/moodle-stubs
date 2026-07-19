@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\IdentityToolkit;
-
-class IdentitytoolkitRelyingpartyDeleteAccountRequest extends \Google\Model
-{
-    /**
-     * GCP project number of the requesting delegated app. Currently only intended
-     * for Firebase V1 migration.
-     *
-     * @var string
-     */
-    public $delegatedProjectNumber;
-    /**
-     * The GITKit token or STS id token of the authenticated user.
-     *
-     * @var string
-     */
-    public $idToken;
-    /**
-     * The local ID of the user.
-     *
-     * @var string
-     */
-    public $localId;
-    /**
-     * GCP project number of the requesting delegated app. Currently only intended
-     * for Firebase V1 migration.
-     *
-     * @param string $delegatedProjectNumber
-     */
-    public function setDelegatedProjectNumber($delegatedProjectNumber)
+namespace Google\Service\IdentityToolkit {
+    class IdentitytoolkitRelyingpartyDeleteAccountRequest extends \Google\Model
     {
+        /**
+         * GCP project number of the requesting delegated app. Currently only intended
+         * for Firebase V1 migration.
+         *
+         * @var string
+         */
+        public $delegatedProjectNumber;
+        /**
+         * The GITKit token or STS id token of the authenticated user.
+         *
+         * @var string
+         */
+        public $idToken;
+        /**
+         * The local ID of the user.
+         *
+         * @var string
+         */
+        public $localId;
+        /**
+         * GCP project number of the requesting delegated app. Currently only intended
+         * for Firebase V1 migration.
+         *
+         * @param string $delegatedProjectNumber
+         */
+        public function setDelegatedProjectNumber($delegatedProjectNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDelegatedProjectNumber()
+        {
+        }
+        /**
+         * The GITKit token or STS id token of the authenticated user.
+         *
+         * @param string $idToken
+         */
+        public function setIdToken($idToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIdToken()
+        {
+        }
+        /**
+         * The local ID of the user.
+         *
+         * @param string $localId
+         */
+        public function setLocalId($localId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocalId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartyDeleteAccountRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDelegatedProjectNumber()
-    {
-    }
-    /**
-     * The GITKit token or STS id token of the authenticated user.
-     *
-     * @param string $idToken
-     */
-    public function setIdToken($idToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIdToken()
-    {
-    }
-    /**
-     * The local ID of the user.
-     *
-     * @param string $localId
-     */
-    public function setLocalId($localId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocalId()
+    class Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartyDeleteAccountRequest extends \Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartyDeleteAccountRequest
     {
     }
 }

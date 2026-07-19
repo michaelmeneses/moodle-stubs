@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Translate;
-
-class ImportAdaptiveMtFileResponse extends \Google\Model
-{
-    protected $adaptiveMtFileType = AdaptiveMtFile::class;
-    protected $adaptiveMtFileDataType = '';
-    /**
-     * Output only. The Adaptive MT file that was imported.
-     *
-     * @param AdaptiveMtFile $adaptiveMtFile
-     */
-    public function setAdaptiveMtFile(AdaptiveMtFile $adaptiveMtFile)
+namespace Google\Service\Translate {
+    class ImportAdaptiveMtFileResponse extends \Google\Model
     {
+        protected $adaptiveMtFileType = AdaptiveMtFile::class;
+        protected $adaptiveMtFileDataType = '';
+        /**
+         * Output only. The Adaptive MT file that was imported.
+         *
+         * @param AdaptiveMtFile $adaptiveMtFile
+         */
+        public function setAdaptiveMtFile(AdaptiveMtFile $adaptiveMtFile)
+        {
+        }
+        /**
+         * @return AdaptiveMtFile
+         */
+        public function getAdaptiveMtFile()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AdaptiveMtFile
+     * Runtime class alias of \Google\Service\Translate\ImportAdaptiveMtFileResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdaptiveMtFile()
+    class Google_Service_Translate_ImportAdaptiveMtFileResponse extends \Google\Service\Translate\ImportAdaptiveMtFileResponse
     {
     }
 }

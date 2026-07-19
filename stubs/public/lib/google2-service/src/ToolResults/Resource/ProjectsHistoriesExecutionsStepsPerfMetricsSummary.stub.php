@@ -21,33 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults\Resource;
-
-/**
- * The "perfMetricsSummary" collection of methods.
- * Typical usage is:
- *  <code>
- *   $toolresultsService = new Google\Service\ToolResults(...);
- *   $perfMetricsSummary = $toolresultsService->projects_histories_executions_steps_perfMetricsSummary;
- *  </code>
- */
-class ProjectsHistoriesExecutionsStepsPerfMetricsSummary extends \Google\Service\Resource
-{
+namespace Google\Service\ToolResults\Resource {
+    use Google\Service\ToolResults\PerfMetricsSummary;
     /**
-     * Creates a PerfMetricsSummary resource. Returns the existing one if it has
-     * already been created. May return any of the following error code(s): -
-     * NOT_FOUND - The containing Step does not exist (perfMetricsSummary.create)
-     *
-     * @param string $projectId The cloud project
-     * @param string $historyId A tool results history ID.
-     * @param string $executionId A tool results execution ID.
-     * @param string $stepId A tool results step ID.
-     * @param PerfMetricsSummary $postBody
-     * @param array $optParams Optional parameters.
-     * @return PerfMetricsSummary
-     * @throws \Google\Service\Exception
+     * The "perfMetricsSummary" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $toolresultsService = new Google\Service\ToolResults(...);
+     *   $perfMetricsSummary = $toolresultsService->projects_histories_executions_steps_perfMetricsSummary;
+     *  </code>
      */
-    public function create($projectId, $historyId, $executionId, $stepId, PerfMetricsSummary $postBody, $optParams = [])
+    class ProjectsHistoriesExecutionsStepsPerfMetricsSummary extends \Google\Service\Resource
+    {
+        /**
+         * Creates a PerfMetricsSummary resource. Returns the existing one if it has
+         * already been created. May return any of the following error code(s): -
+         * NOT_FOUND - The containing Step does not exist (perfMetricsSummary.create)
+         *
+         * @param string $projectId The cloud project
+         * @param string $historyId A tool results history ID.
+         * @param string $executionId A tool results execution ID.
+         * @param string $stepId A tool results step ID.
+         * @param PerfMetricsSummary $postBody
+         * @param array $optParams Optional parameters.
+         * @return PerfMetricsSummary
+         * @throws \Google\Service\Exception
+         */
+        public function create($projectId, $historyId, $executionId, $stepId, PerfMetricsSummary $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ToolResults\Resource\ProjectsHistoriesExecutionsStepsPerfMetricsSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ToolResults_Resource_ProjectsHistoriesExecutionsStepsPerfMetricsSummary extends \Google\Service\ToolResults\Resource\ProjectsHistoriesExecutionsStepsPerfMetricsSummary
     {
     }
 }

@@ -30,6 +30,10 @@
  */
 namespace core_auth\privacy;
 
+use context;
+use core_privacy\local\metadata\collection;
+use core_privacy\local\request\transform;
+use core_privacy\local\request\writer;
 /**
  * Data provider class.
  *

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1PdfInstruction extends \Google\Model
-{
-    /**
-     * PDF file for the instruction. Only gcs path is allowed.
-     *
-     * @var string
-     */
-    public $gcsFileUri;
-    /**
-     * PDF file for the instruction. Only gcs path is allowed.
-     *
-     * @param string $gcsFileUri
-     */
-    public function setGcsFileUri($gcsFileUri)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1PdfInstruction extends \Google\Model
     {
+        /**
+         * PDF file for the instruction. Only gcs path is allowed.
+         *
+         * @var string
+         */
+        public $gcsFileUri;
+        /**
+         * PDF file for the instruction. Only gcs path is allowed.
+         *
+         * @param string $gcsFileUri
+         */
+        public function setGcsFileUri($gcsFileUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcsFileUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1PdfInstruction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcsFileUri()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1PdfInstruction extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1PdfInstruction
     {
     }
 }

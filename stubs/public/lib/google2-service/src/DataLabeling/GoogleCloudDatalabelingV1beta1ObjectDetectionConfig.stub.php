@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1ObjectDetectionConfig extends \Google\Model
-{
-    /**
-     * Required. Annotation spec set resource name.
-     *
-     * @var string
-     */
-    public $annotationSpecSet;
-    /**
-     * Required. Number of frames per second to be extracted from the video.
-     *
-     * @var 
-     */
-    public $extractionFrameRate;
-    /**
-     * Required. Annotation spec set resource name.
-     *
-     * @param string $annotationSpecSet
-     */
-    public function setAnnotationSpecSet($annotationSpecSet)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1ObjectDetectionConfig extends \Google\Model
     {
+        /**
+         * Required. Annotation spec set resource name.
+         *
+         * @var string
+         */
+        public $annotationSpecSet;
+        /**
+         * Required. Number of frames per second to be extracted from the video.
+         *
+         * @var 
+         */
+        public $extractionFrameRate;
+        /**
+         * Required. Annotation spec set resource name.
+         *
+         * @param string $annotationSpecSet
+         */
+        public function setAnnotationSpecSet($annotationSpecSet)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnnotationSpecSet()
+        {
+        }
+        public function setExtractionFrameRate($extractionFrameRate)
+        {
+        }
+        public function getExtractionFrameRate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ObjectDetectionConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotationSpecSet()
-    {
-    }
-    public function setExtractionFrameRate($extractionFrameRate)
-    {
-    }
-    public function getExtractionFrameRate()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1ObjectDetectionConfig extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ObjectDetectionConfig
     {
     }
 }

@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\StorageBatchOperations;
-
-class Manifest extends \Google\Model
-{
-    /**
-     * Required. `manifest_location` must contain the manifest source file that is
-     * a CSV file in a Google Cloud Storage bucket. Each row in the file must
-     * include the object details i.e. BucketId and Name. Generation may
-     * optionally be specified. When it is not specified the live object is acted
-     * upon. `manifest_location` should either be 1) An absolute path to the
-     * object in the format of `gs://bucket_name/path/file_name.csv`. 2) An
-     * absolute path with a single wildcard character in the file name, for
-     * example `gs://bucket_name/path/file_name*.csv`. If manifest location is
-     * specified with a wildcard, objects in all manifest files matching the
-     * pattern will be acted upon.
-     *
-     * @var string
-     */
-    public $manifestLocation;
-    /**
-     * Required. `manifest_location` must contain the manifest source file that is
-     * a CSV file in a Google Cloud Storage bucket. Each row in the file must
-     * include the object details i.e. BucketId and Name. Generation may
-     * optionally be specified. When it is not specified the live object is acted
-     * upon. `manifest_location` should either be 1) An absolute path to the
-     * object in the format of `gs://bucket_name/path/file_name.csv`. 2) An
-     * absolute path with a single wildcard character in the file name, for
-     * example `gs://bucket_name/path/file_name*.csv`. If manifest location is
-     * specified with a wildcard, objects in all manifest files matching the
-     * pattern will be acted upon.
-     *
-     * @param string $manifestLocation
-     */
-    public function setManifestLocation($manifestLocation)
+namespace Google\Service\StorageBatchOperations {
+    class Manifest extends \Google\Model
     {
+        /**
+         * Required. `manifest_location` must contain the manifest source file that is
+         * a CSV file in a Google Cloud Storage bucket. Each row in the file must
+         * include the object details i.e. BucketId and Name. Generation may
+         * optionally be specified. When it is not specified the live object is acted
+         * upon. `manifest_location` should either be 1) An absolute path to the
+         * object in the format of `gs://bucket_name/path/file_name.csv`. 2) An
+         * absolute path with a single wildcard character in the file name, for
+         * example `gs://bucket_name/path/file_name*.csv`. If manifest location is
+         * specified with a wildcard, objects in all manifest files matching the
+         * pattern will be acted upon.
+         *
+         * @var string
+         */
+        public $manifestLocation;
+        /**
+         * Required. `manifest_location` must contain the manifest source file that is
+         * a CSV file in a Google Cloud Storage bucket. Each row in the file must
+         * include the object details i.e. BucketId and Name. Generation may
+         * optionally be specified. When it is not specified the live object is acted
+         * upon. `manifest_location` should either be 1) An absolute path to the
+         * object in the format of `gs://bucket_name/path/file_name.csv`. 2) An
+         * absolute path with a single wildcard character in the file name, for
+         * example `gs://bucket_name/path/file_name*.csv`. If manifest location is
+         * specified with a wildcard, objects in all manifest files matching the
+         * pattern will be acted upon.
+         *
+         * @param string $manifestLocation
+         */
+        public function setManifestLocation($manifestLocation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getManifestLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\StorageBatchOperations\Manifest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getManifestLocation()
+    class Google_Service_StorageBatchOperations_Manifest extends \Google\Service\StorageBatchOperations\Manifest
     {
     }
 }

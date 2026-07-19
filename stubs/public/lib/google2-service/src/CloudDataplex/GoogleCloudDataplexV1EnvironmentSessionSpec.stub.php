@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1EnvironmentSessionSpec extends \Google\Model
-{
-    /**
-     * Optional. If True, this causes sessions to be pre-created and available for
-     * faster startup to enable interactive exploration use-cases. This defaults
-     * to False to avoid additional billed charges. These can only be set to True
-     * for the environment with name set to "default", and with default
-     * configuration.
-     *
-     * @var bool
-     */
-    public $enableFastStartup;
-    /**
-     * Optional. The idle time configuration of the session. The session will be
-     * auto-terminated at the end of this period.
-     *
-     * @var string
-     */
-    public $maxIdleDuration;
-    /**
-     * Optional. If True, this causes sessions to be pre-created and available for
-     * faster startup to enable interactive exploration use-cases. This defaults
-     * to False to avoid additional billed charges. These can only be set to True
-     * for the environment with name set to "default", and with default
-     * configuration.
-     *
-     * @param bool $enableFastStartup
-     */
-    public function setEnableFastStartup($enableFastStartup)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1EnvironmentSessionSpec extends \Google\Model
     {
+        /**
+         * Optional. If True, this causes sessions to be pre-created and available for
+         * faster startup to enable interactive exploration use-cases. This defaults
+         * to False to avoid additional billed charges. These can only be set to True
+         * for the environment with name set to "default", and with default
+         * configuration.
+         *
+         * @var bool
+         */
+        public $enableFastStartup;
+        /**
+         * Optional. The idle time configuration of the session. The session will be
+         * auto-terminated at the end of this period.
+         *
+         * @var string
+         */
+        public $maxIdleDuration;
+        /**
+         * Optional. If True, this causes sessions to be pre-created and available for
+         * faster startup to enable interactive exploration use-cases. This defaults
+         * to False to avoid additional billed charges. These can only be set to True
+         * for the environment with name set to "default", and with default
+         * configuration.
+         *
+         * @param bool $enableFastStartup
+         */
+        public function setEnableFastStartup($enableFastStartup)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableFastStartup()
+        {
+        }
+        /**
+         * Optional. The idle time configuration of the session. The session will be
+         * auto-terminated at the end of this period.
+         *
+         * @param string $maxIdleDuration
+         */
+        public function setMaxIdleDuration($maxIdleDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxIdleDuration()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1EnvironmentSessionSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableFastStartup()
-    {
-    }
-    /**
-     * Optional. The idle time configuration of the session. The session will be
-     * auto-terminated at the end of this period.
-     *
-     * @param string $maxIdleDuration
-     */
-    public function setMaxIdleDuration($maxIdleDuration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaxIdleDuration()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1EnvironmentSessionSpec extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1EnvironmentSessionSpec
     {
     }
 }

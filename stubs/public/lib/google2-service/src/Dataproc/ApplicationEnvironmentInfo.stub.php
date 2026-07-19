@@ -21,117 +21,126 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class ApplicationEnvironmentInfo extends \Google\Collection
-{
-    protected $collection_key = 'resourceProfiles';
-    /**
-     * @var string[]
-     */
-    public $classpathEntries;
-    /**
-     * @var string[]
-     */
-    public $hadoopProperties;
-    /**
-     * @var string[]
-     */
-    public $metricsProperties;
-    protected $resourceProfilesType = ResourceProfileInfo::class;
-    protected $resourceProfilesDataType = 'array';
-    protected $runtimeType = SparkRuntimeInfo::class;
-    protected $runtimeDataType = '';
-    /**
-     * @var string[]
-     */
-    public $sparkProperties;
-    /**
-     * @var string[]
-     */
-    public $systemProperties;
-    /**
-     * @param string[] $classpathEntries
-     */
-    public function setClasspathEntries($classpathEntries)
+namespace Google\Service\Dataproc {
+    class ApplicationEnvironmentInfo extends \Google\Collection
     {
+        protected $collection_key = 'resourceProfiles';
+        /**
+         * @var string[]
+         */
+        public $classpathEntries;
+        /**
+         * @var string[]
+         */
+        public $hadoopProperties;
+        /**
+         * @var string[]
+         */
+        public $metricsProperties;
+        protected $resourceProfilesType = ResourceProfileInfo::class;
+        protected $resourceProfilesDataType = 'array';
+        protected $runtimeType = SparkRuntimeInfo::class;
+        protected $runtimeDataType = '';
+        /**
+         * @var string[]
+         */
+        public $sparkProperties;
+        /**
+         * @var string[]
+         */
+        public $systemProperties;
+        /**
+         * @param string[] $classpathEntries
+         */
+        public function setClasspathEntries($classpathEntries)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getClasspathEntries()
+        {
+        }
+        /**
+         * @param string[] $hadoopProperties
+         */
+        public function setHadoopProperties($hadoopProperties)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getHadoopProperties()
+        {
+        }
+        /**
+         * @param string[] $metricsProperties
+         */
+        public function setMetricsProperties($metricsProperties)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMetricsProperties()
+        {
+        }
+        /**
+         * @param ResourceProfileInfo[] $resourceProfiles
+         */
+        public function setResourceProfiles($resourceProfiles)
+        {
+        }
+        /**
+         * @return ResourceProfileInfo[]
+         */
+        public function getResourceProfiles()
+        {
+        }
+        /**
+         * @param SparkRuntimeInfo $runtime
+         */
+        public function setRuntime(SparkRuntimeInfo $runtime)
+        {
+        }
+        /**
+         * @return SparkRuntimeInfo
+         */
+        public function getRuntime()
+        {
+        }
+        /**
+         * @param string[] $sparkProperties
+         */
+        public function setSparkProperties($sparkProperties)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSparkProperties()
+        {
+        }
+        /**
+         * @param string[] $systemProperties
+         */
+        public function setSystemProperties($systemProperties)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSystemProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Dataproc\ApplicationEnvironmentInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClasspathEntries()
-    {
-    }
-    /**
-     * @param string[] $hadoopProperties
-     */
-    public function setHadoopProperties($hadoopProperties)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getHadoopProperties()
-    {
-    }
-    /**
-     * @param string[] $metricsProperties
-     */
-    public function setMetricsProperties($metricsProperties)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMetricsProperties()
-    {
-    }
-    /**
-     * @param ResourceProfileInfo[] $resourceProfiles
-     */
-    public function setResourceProfiles($resourceProfiles)
-    {
-    }
-    /**
-     * @return ResourceProfileInfo[]
-     */
-    public function getResourceProfiles()
-    {
-    }
-    /**
-     * @param SparkRuntimeInfo $runtime
-     */
-    public function setRuntime(SparkRuntimeInfo $runtime)
-    {
-    }
-    /**
-     * @return SparkRuntimeInfo
-     */
-    public function getRuntime()
-    {
-    }
-    /**
-     * @param string[] $sparkProperties
-     */
-    public function setSparkProperties($sparkProperties)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSparkProperties()
-    {
-    }
-    /**
-     * @param string[] $systemProperties
-     */
-    public function setSystemProperties($systemProperties)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSystemProperties()
+    class Google_Service_Dataproc_ApplicationEnvironmentInfo extends \Google\Service\Dataproc\ApplicationEnvironmentInfo
     {
     }
 }

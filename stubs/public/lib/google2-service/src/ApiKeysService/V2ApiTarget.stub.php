@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ApiKeysService;
-
-class V2ApiTarget extends \Google\Collection
-{
-    protected $collection_key = 'methods';
-    /**
-     * Optional. List of one or more methods that can be called. If empty, all
-     * methods for the service are allowed. A wildcard (*) can be used as the last
-     * symbol. Valid examples:
-     * `google.cloud.translate.v2.TranslateService.GetSupportedLanguage`
-     * `TranslateText` `Get*` `translate.googleapis.com.Get*`
-     *
-     * @var string[]
-     */
-    public $methods;
-    /**
-     * The service for this restriction. It should be the canonical service name,
-     * for example: `translate.googleapis.com`. You can use [`gcloud services
-     * list`](https://cloud.google.com/sdk/gcloud/reference/services/list) to get
-     * a list of services that are enabled in the project.
-     *
-     * @var string
-     */
-    public $service;
-    /**
-     * Optional. List of one or more methods that can be called. If empty, all
-     * methods for the service are allowed. A wildcard (*) can be used as the last
-     * symbol. Valid examples:
-     * `google.cloud.translate.v2.TranslateService.GetSupportedLanguage`
-     * `TranslateText` `Get*` `translate.googleapis.com.Get*`
-     *
-     * @param string[] $methods
-     */
-    public function setMethods($methods)
+namespace Google\Service\ApiKeysService {
+    class V2ApiTarget extends \Google\Collection
     {
+        protected $collection_key = 'methods';
+        /**
+         * Optional. List of one or more methods that can be called. If empty, all
+         * methods for the service are allowed. A wildcard (*) can be used as the last
+         * symbol. Valid examples:
+         * `google.cloud.translate.v2.TranslateService.GetSupportedLanguage`
+         * `TranslateText` `Get*` `translate.googleapis.com.Get*`
+         *
+         * @var string[]
+         */
+        public $methods;
+        /**
+         * The service for this restriction. It should be the canonical service name,
+         * for example: `translate.googleapis.com`. You can use [`gcloud services
+         * list`](https://cloud.google.com/sdk/gcloud/reference/services/list) to get
+         * a list of services that are enabled in the project.
+         *
+         * @var string
+         */
+        public $service;
+        /**
+         * Optional. List of one or more methods that can be called. If empty, all
+         * methods for the service are allowed. A wildcard (*) can be used as the last
+         * symbol. Valid examples:
+         * `google.cloud.translate.v2.TranslateService.GetSupportedLanguage`
+         * `TranslateText` `Get*` `translate.googleapis.com.Get*`
+         *
+         * @param string[] $methods
+         */
+        public function setMethods($methods)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMethods()
+        {
+        }
+        /**
+         * The service for this restriction. It should be the canonical service name,
+         * for example: `translate.googleapis.com`. You can use [`gcloud services
+         * list`](https://cloud.google.com/sdk/gcloud/reference/services/list) to get
+         * a list of services that are enabled in the project.
+         *
+         * @param string $service
+         */
+        public function setService($service)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getService()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ApiKeysService\V2ApiTarget registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMethods()
-    {
-    }
-    /**
-     * The service for this restriction. It should be the canonical service name,
-     * for example: `translate.googleapis.com`. You can use [`gcloud services
-     * list`](https://cloud.google.com/sdk/gcloud/reference/services/list) to get
-     * a list of services that are enabled in the project.
-     *
-     * @param string $service
-     */
-    public function setService($service)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getService()
+    class Google_Service_ApiKeysService_V2ApiTarget extends \Google\Service\ApiKeysService\V2ApiTarget
     {
     }
 }

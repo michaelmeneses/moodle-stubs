@@ -21,112 +21,121 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1AnnotationSpec extends \Google\Model
-{
-    /**
-     * Output only. Timestamp when this AnnotationSpec was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Required. The user-defined name of the AnnotationSpec. The name can be up
-     * to 128 characters long and can consist of any UTF-8 characters.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Optional. Used to perform consistent read-modify-write updates. If not set,
-     * a blind "overwrite" update happens.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Output only. Resource name of the AnnotationSpec.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Timestamp when AnnotationSpec was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. Timestamp when this AnnotationSpec was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1AnnotationSpec extends \Google\Model
     {
+        /**
+         * Output only. Timestamp when this AnnotationSpec was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Required. The user-defined name of the AnnotationSpec. The name can be up
+         * to 128 characters long and can consist of any UTF-8 characters.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Optional. Used to perform consistent read-modify-write updates. If not set,
+         * a blind "overwrite" update happens.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Output only. Resource name of the AnnotationSpec.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Timestamp when AnnotationSpec was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. Timestamp when this AnnotationSpec was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Required. The user-defined name of the AnnotationSpec. The name can be up
+         * to 128 characters long and can consist of any UTF-8 characters.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Optional. Used to perform consistent read-modify-write updates. If not set,
+         * a blind "overwrite" update happens.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Output only. Resource name of the AnnotationSpec.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Timestamp when AnnotationSpec was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1AnnotationSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Required. The user-defined name of the AnnotationSpec. The name can be up
-     * to 128 characters long and can consist of any UTF-8 characters.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Optional. Used to perform consistent read-modify-write updates. If not set,
-     * a blind "overwrite" update happens.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * Output only. Resource name of the AnnotationSpec.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Timestamp when AnnotationSpec was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1AnnotationSpec extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1AnnotationSpec
     {
     }
 }

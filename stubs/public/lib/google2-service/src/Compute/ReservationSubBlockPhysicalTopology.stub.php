@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ReservationSubBlockPhysicalTopology extends \Google\Model
-{
-    /**
-     * The hash of the capacity block within the cluster.
-     *
-     * @var string
-     */
-    public $block;
-    /**
-     * The cluster name of the reservation subBlock.
-     *
-     * @var string
-     */
-    public $cluster;
-    /**
-     * The hash of the capacity sub-block within the capacity block.
-     *
-     * @var string
-     */
-    public $subBlock;
-    /**
-     * The hash of the capacity block within the cluster.
-     *
-     * @param string $block
-     */
-    public function setBlock($block)
+namespace Google\Service\Compute {
+    class ReservationSubBlockPhysicalTopology extends \Google\Model
     {
+        /**
+         * The hash of the capacity block within the cluster.
+         *
+         * @var string
+         */
+        public $block;
+        /**
+         * The cluster name of the reservation subBlock.
+         *
+         * @var string
+         */
+        public $cluster;
+        /**
+         * The hash of the capacity sub-block within the capacity block.
+         *
+         * @var string
+         */
+        public $subBlock;
+        /**
+         * The hash of the capacity block within the cluster.
+         *
+         * @param string $block
+         */
+        public function setBlock($block)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBlock()
+        {
+        }
+        /**
+         * The cluster name of the reservation subBlock.
+         *
+         * @param string $cluster
+         */
+        public function setCluster($cluster)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCluster()
+        {
+        }
+        /**
+         * The hash of the capacity sub-block within the capacity block.
+         *
+         * @param string $subBlock
+         */
+        public function setSubBlock($subBlock)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubBlock()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\ReservationSubBlockPhysicalTopology registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlock()
-    {
-    }
-    /**
-     * The cluster name of the reservation subBlock.
-     *
-     * @param string $cluster
-     */
-    public function setCluster($cluster)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCluster()
-    {
-    }
-    /**
-     * The hash of the capacity sub-block within the capacity block.
-     *
-     * @param string $subBlock
-     */
-    public function setSubBlock($subBlock)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubBlock()
+    class Google_Service_Compute_ReservationSubBlockPhysicalTopology extends \Google\Service\Compute\ReservationSubBlockPhysicalTopology
     {
     }
 }

@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity;
-
-class AuthzPolicyCustomProviderAuthzExtension extends \Google\Collection
-{
-    protected $collection_key = 'resources';
-    /**
-     * Required. A list of references to authorization extensions that will be
-     * invoked for requests matching this policy. Limited to 1 custom provider.
-     *
-     * @var string[]
-     */
-    public $resources;
-    /**
-     * Required. A list of references to authorization extensions that will be
-     * invoked for requests matching this policy. Limited to 1 custom provider.
-     *
-     * @param string[] $resources
-     */
-    public function setResources($resources)
+namespace Google\Service\NetworkSecurity {
+    class AuthzPolicyCustomProviderAuthzExtension extends \Google\Collection
     {
+        protected $collection_key = 'resources';
+        /**
+         * Required. A list of references to authorization extensions that will be
+         * invoked for requests matching this policy. Limited to 1 custom provider.
+         *
+         * @var string[]
+         */
+        public $resources;
+        /**
+         * Required. A list of references to authorization extensions that will be
+         * invoked for requests matching this policy. Limited to 1 custom provider.
+         *
+         * @param string[] $resources
+         */
+        public function setResources($resources)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getResources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\NetworkSecurity\AuthzPolicyCustomProviderAuthzExtension registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResources()
+    class Google_Service_NetworkSecurity_AuthzPolicyCustomProviderAuthzExtension extends \Google\Service\NetworkSecurity\AuthzPolicyCustomProviderAuthzExtension
     {
     }
 }

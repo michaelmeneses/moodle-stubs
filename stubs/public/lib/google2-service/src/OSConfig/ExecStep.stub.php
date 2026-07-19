@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class ExecStep extends \Google\Model
-{
-    protected $linuxExecStepConfigType = ExecStepConfig::class;
-    protected $linuxExecStepConfigDataType = '';
-    protected $windowsExecStepConfigType = ExecStepConfig::class;
-    protected $windowsExecStepConfigDataType = '';
-    /**
-     * @param ExecStepConfig
-     */
-    public function setLinuxExecStepConfig(ExecStepConfig $linuxExecStepConfig)
+namespace Google\Service\OSConfig {
+    class ExecStep extends \Google\Model
     {
+        protected $linuxExecStepConfigType = ExecStepConfig::class;
+        protected $linuxExecStepConfigDataType = '';
+        protected $windowsExecStepConfigType = ExecStepConfig::class;
+        protected $windowsExecStepConfigDataType = '';
+        /**
+         * @param ExecStepConfig
+         */
+        public function setLinuxExecStepConfig(ExecStepConfig $linuxExecStepConfig)
+        {
+        }
+        /**
+         * @return ExecStepConfig
+         */
+        public function getLinuxExecStepConfig()
+        {
+        }
+        /**
+         * @param ExecStepConfig
+         */
+        public function setWindowsExecStepConfig(ExecStepConfig $windowsExecStepConfig)
+        {
+        }
+        /**
+         * @return ExecStepConfig
+         */
+        public function getWindowsExecStepConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ExecStepConfig
+     * Runtime class alias of \Google\Service\OSConfig\ExecStep registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLinuxExecStepConfig()
-    {
-    }
-    /**
-     * @param ExecStepConfig
-     */
-    public function setWindowsExecStepConfig(ExecStepConfig $windowsExecStepConfig)
-    {
-    }
-    /**
-     * @return ExecStepConfig
-     */
-    public function getWindowsExecStepConfig()
+    class Google_Service_OSConfig_ExecStep extends \Google\Service\OSConfig\ExecStep
     {
     }
 }

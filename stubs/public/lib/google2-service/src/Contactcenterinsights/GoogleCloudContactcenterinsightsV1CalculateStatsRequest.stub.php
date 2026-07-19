@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1CalculateStatsRequest extends \Google\Model
-{
-    /**
-     * A filter to reduce results to a specific subset. This field is useful for
-     * getting statistics about conversations with specific properties.
-     *
-     * @var string
-     */
-    public $filter;
-    /**
-     * A filter to reduce results to a specific subset. This field is useful for
-     * getting statistics about conversations with specific properties.
-     *
-     * @param string $filter
-     */
-    public function setFilter($filter)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1CalculateStatsRequest extends \Google\Model
     {
+        /**
+         * A filter to reduce results to a specific subset. This field is useful for
+         * getting statistics about conversations with specific properties.
+         *
+         * @var string
+         */
+        public $filter;
+        /**
+         * A filter to reduce results to a specific subset. This field is useful for
+         * getting statistics about conversations with specific properties.
+         *
+         * @param string $filter
+         */
+        public function setFilter($filter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilter()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1CalculateStatsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilter()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1CalculateStatsRequest extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1CalculateStatsRequest
     {
     }
 }

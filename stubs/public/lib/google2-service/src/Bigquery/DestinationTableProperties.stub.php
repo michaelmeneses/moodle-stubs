@@ -21,102 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class DestinationTableProperties extends \Google\Model
-{
-    /**
-     * Optional. The description for the destination table. This will only be used
-     * if the destination table is newly created. If the table already exists and
-     * a value different than the current description is provided, the job will
-     * fail.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Internal use only.
-     *
-     * @var string
-     */
-    public $expirationTime;
-    /**
-     * Optional. Friendly name for the destination table. If the table already
-     * exists, it should be same as the existing friendly name.
-     *
-     * @var string
-     */
-    public $friendlyName;
-    /**
-     * Optional. The labels associated with this table. You can use these to
-     * organize and group your tables. This will only be used if the destination
-     * table is newly created. If the table already exists and labels are
-     * different than the current labels are provided, the job will fail.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Optional. The description for the destination table. This will only be used
-     * if the destination table is newly created. If the table already exists and
-     * a value different than the current description is provided, the job will
-     * fail.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Bigquery {
+    class DestinationTableProperties extends \Google\Model
     {
+        /**
+         * Optional. The description for the destination table. This will only be used
+         * if the destination table is newly created. If the table already exists and
+         * a value different than the current description is provided, the job will
+         * fail.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Internal use only.
+         *
+         * @var string
+         */
+        public $expirationTime;
+        /**
+         * Optional. Friendly name for the destination table. If the table already
+         * exists, it should be same as the existing friendly name.
+         *
+         * @var string
+         */
+        public $friendlyName;
+        /**
+         * Optional. The labels associated with this table. You can use these to
+         * organize and group your tables. This will only be used if the destination
+         * table is newly created. If the table already exists and labels are
+         * different than the current labels are provided, the job will fail.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Optional. The description for the destination table. This will only be used
+         * if the destination table is newly created. If the table already exists and
+         * a value different than the current description is provided, the job will
+         * fail.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Internal use only.
+         *
+         * @param string $expirationTime
+         */
+        public function setExpirationTime($expirationTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpirationTime()
+        {
+        }
+        /**
+         * Optional. Friendly name for the destination table. If the table already
+         * exists, it should be same as the existing friendly name.
+         *
+         * @param string $friendlyName
+         */
+        public function setFriendlyName($friendlyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFriendlyName()
+        {
+        }
+        /**
+         * Optional. The labels associated with this table. You can use these to
+         * organize and group your tables. This will only be used if the destination
+         * table is newly created. If the table already exists and labels are
+         * different than the current labels are provided, the job will fail.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\DestinationTableProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Internal use only.
-     *
-     * @param string $expirationTime
-     */
-    public function setExpirationTime($expirationTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpirationTime()
-    {
-    }
-    /**
-     * Optional. Friendly name for the destination table. If the table already
-     * exists, it should be same as the existing friendly name.
-     *
-     * @param string $friendlyName
-     */
-    public function setFriendlyName($friendlyName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFriendlyName()
-    {
-    }
-    /**
-     * Optional. The labels associated with this table. You can use these to
-     * organize and group your tables. This will only be used if the destination
-     * table is newly created. If the table already exists and labels are
-     * different than the current labels are provided, the job will fail.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
+    class Google_Service_Bigquery_DestinationTableProperties extends \Google\Service\Bigquery\DestinationTableProperties
     {
     }
 }

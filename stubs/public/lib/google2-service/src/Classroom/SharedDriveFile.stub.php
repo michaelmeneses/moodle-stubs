@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class SharedDriveFile extends \Google\Model
-{
-    /**
-     * No sharing mode specified. This should never be returned.
-     */
-    public const SHARE_MODE_UNKNOWN_SHARE_MODE = 'UNKNOWN_SHARE_MODE';
-    /**
-     * Students can view the shared file.
-     */
-    public const SHARE_MODE_VIEW = 'VIEW';
-    /**
-     * Students can edit the shared file.
-     */
-    public const SHARE_MODE_EDIT = 'EDIT';
-    /**
-     * Students have a personal copy of the shared file.
-     */
-    public const SHARE_MODE_STUDENT_COPY = 'STUDENT_COPY';
-    protected $driveFileType = DriveFile::class;
-    protected $driveFileDataType = '';
-    /**
-     * Mechanism by which students access the Drive item.
-     *
-     * @var string
-     */
-    public $shareMode;
-    /**
-     * Drive file details.
-     *
-     * @param DriveFile $driveFile
-     */
-    public function setDriveFile(DriveFile $driveFile)
+namespace Google\Service\Classroom {
+    class SharedDriveFile extends \Google\Model
     {
+        /**
+         * No sharing mode specified. This should never be returned.
+         */
+        public const SHARE_MODE_UNKNOWN_SHARE_MODE = 'UNKNOWN_SHARE_MODE';
+        /**
+         * Students can view the shared file.
+         */
+        public const SHARE_MODE_VIEW = 'VIEW';
+        /**
+         * Students can edit the shared file.
+         */
+        public const SHARE_MODE_EDIT = 'EDIT';
+        /**
+         * Students have a personal copy of the shared file.
+         */
+        public const SHARE_MODE_STUDENT_COPY = 'STUDENT_COPY';
+        protected $driveFileType = DriveFile::class;
+        protected $driveFileDataType = '';
+        /**
+         * Mechanism by which students access the Drive item.
+         *
+         * @var string
+         */
+        public $shareMode;
+        /**
+         * Drive file details.
+         *
+         * @param DriveFile $driveFile
+         */
+        public function setDriveFile(DriveFile $driveFile)
+        {
+        }
+        /**
+         * @return DriveFile
+         */
+        public function getDriveFile()
+        {
+        }
+        /**
+         * Mechanism by which students access the Drive item.
+         *
+         * Accepted values: UNKNOWN_SHARE_MODE, VIEW, EDIT, STUDENT_COPY
+         *
+         * @param self::SHARE_MODE_* $shareMode
+         */
+        public function setShareMode($shareMode)
+        {
+        }
+        /**
+         * @return self::SHARE_MODE_*
+         */
+        public function getShareMode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DriveFile
+     * Runtime class alias of \Google\Service\Classroom\SharedDriveFile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDriveFile()
-    {
-    }
-    /**
-     * Mechanism by which students access the Drive item.
-     *
-     * Accepted values: UNKNOWN_SHARE_MODE, VIEW, EDIT, STUDENT_COPY
-     *
-     * @param self::SHARE_MODE_* $shareMode
-     */
-    public function setShareMode($shareMode)
-    {
-    }
-    /**
-     * @return self::SHARE_MODE_*
-     */
-    public function getShareMode()
+    class Google_Service_Classroom_SharedDriveFile extends \Google\Service\Classroom\SharedDriveFile
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class AddDimensionGroupRequest extends \Google\Model
-{
-    protected $rangeType = DimensionRange::class;
-    protected $rangeDataType = '';
-    /**
-     * The range over which to create a group.
-     *
-     * @param DimensionRange $range
-     */
-    public function setRange(DimensionRange $range)
+namespace Google\Service\Sheets {
+    class AddDimensionGroupRequest extends \Google\Model
     {
+        protected $rangeType = DimensionRange::class;
+        protected $rangeDataType = '';
+        /**
+         * The range over which to create a group.
+         *
+         * @param DimensionRange $range
+         */
+        public function setRange(DimensionRange $range)
+        {
+        }
+        /**
+         * @return DimensionRange
+         */
+        public function getRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DimensionRange
+     * Runtime class alias of \Google\Service\Sheets\AddDimensionGroupRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRange()
+    class Google_Service_Sheets_AddDimensionGroupRequest extends \Google\Service\Sheets\AddDimensionGroupRequest
     {
     }
 }

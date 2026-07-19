@@ -8,6 +8,8 @@
  */
 namespace Aws;
 
+use Aws\Api\Service;
+use Psr\Http\Message\RequestInterface;
 /**
  * @internal Middleware that auto fills parameters with `idempotencyToken` trait
  */

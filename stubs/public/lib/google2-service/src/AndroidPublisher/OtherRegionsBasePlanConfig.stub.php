@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class OtherRegionsBasePlanConfig extends \Google\Model
-{
-    protected $eurPriceType = Money::class;
-    protected $eurPriceDataType = '';
-    /**
-     * Whether the base plan is available for new subscribers in any new locations
-     * Play may launch in. If not specified, this will default to false.
-     *
-     * @var bool
-     */
-    public $newSubscriberAvailability;
-    protected $usdPriceType = Money::class;
-    protected $usdPriceDataType = '';
-    /**
-     * Required. Price in EUR to use for any new locations Play may launch in.
-     *
-     * @param Money $eurPrice
-     */
-    public function setEurPrice(Money $eurPrice)
+namespace Google\Service\AndroidPublisher {
+    class OtherRegionsBasePlanConfig extends \Google\Model
     {
+        protected $eurPriceType = Money::class;
+        protected $eurPriceDataType = '';
+        /**
+         * Whether the base plan is available for new subscribers in any new locations
+         * Play may launch in. If not specified, this will default to false.
+         *
+         * @var bool
+         */
+        public $newSubscriberAvailability;
+        protected $usdPriceType = Money::class;
+        protected $usdPriceDataType = '';
+        /**
+         * Required. Price in EUR to use for any new locations Play may launch in.
+         *
+         * @param Money $eurPrice
+         */
+        public function setEurPrice(Money $eurPrice)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getEurPrice()
+        {
+        }
+        /**
+         * Whether the base plan is available for new subscribers in any new locations
+         * Play may launch in. If not specified, this will default to false.
+         *
+         * @param bool $newSubscriberAvailability
+         */
+        public function setNewSubscriberAvailability($newSubscriberAvailability)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getNewSubscriberAvailability()
+        {
+        }
+        /**
+         * Required. Price in USD to use for any new locations Play may launch in.
+         *
+         * @param Money $usdPrice
+         */
+        public function setUsdPrice(Money $usdPrice)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getUsdPrice()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Money
+     * Runtime class alias of \Google\Service\AndroidPublisher\OtherRegionsBasePlanConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEurPrice()
-    {
-    }
-    /**
-     * Whether the base plan is available for new subscribers in any new locations
-     * Play may launch in. If not specified, this will default to false.
-     *
-     * @param bool $newSubscriberAvailability
-     */
-    public function setNewSubscriberAvailability($newSubscriberAvailability)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getNewSubscriberAvailability()
-    {
-    }
-    /**
-     * Required. Price in USD to use for any new locations Play may launch in.
-     *
-     * @param Money $usdPrice
-     */
-    public function setUsdPrice(Money $usdPrice)
-    {
-    }
-    /**
-     * @return Money
-     */
-    public function getUsdPrice()
+    class Google_Service_AndroidPublisher_OtherRegionsBasePlanConfig extends \Google\Service\AndroidPublisher\OtherRegionsBasePlanConfig
     {
     }
 }

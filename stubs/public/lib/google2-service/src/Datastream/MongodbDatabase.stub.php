@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class MongodbDatabase extends \Google\Collection
-{
-    protected $collection_key = 'collections';
-    protected $collectionsType = MongodbCollection::class;
-    protected $collectionsDataType = 'array';
-    /**
-     * Database name.
-     *
-     * @var string
-     */
-    public $database;
-    /**
-     * Collections in the database.
-     *
-     * @param MongodbCollection[] $collections
-     */
-    public function setCollections($collections)
+namespace Google\Service\Datastream {
+    class MongodbDatabase extends \Google\Collection
     {
+        protected $collection_key = 'collections';
+        protected $collectionsType = MongodbCollection::class;
+        protected $collectionsDataType = 'array';
+        /**
+         * Database name.
+         *
+         * @var string
+         */
+        public $database;
+        /**
+         * Collections in the database.
+         *
+         * @param MongodbCollection[] $collections
+         */
+        public function setCollections($collections)
+        {
+        }
+        /**
+         * @return MongodbCollection[]
+         */
+        public function getCollections()
+        {
+        }
+        /**
+         * Database name.
+         *
+         * @param string $database
+         */
+        public function setDatabase($database)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatabase()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MongodbCollection[]
+     * Runtime class alias of \Google\Service\Datastream\MongodbDatabase registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCollections()
-    {
-    }
-    /**
-     * Database name.
-     *
-     * @param string $database
-     */
-    public function setDatabase($database)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDatabase()
+    class Google_Service_Datastream_MongodbDatabase extends \Google\Service\Datastream\MongodbDatabase
     {
     }
 }

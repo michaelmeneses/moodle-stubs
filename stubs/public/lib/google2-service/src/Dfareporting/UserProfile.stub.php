@@ -21,170 +21,179 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class UserProfile extends \Google\Model
-{
-    /**
-     * The account ID to which this profile belongs.
-     *
-     * @var string
-     */
-    public $accountId;
-    /**
-     * The account name this profile belongs to.
-     *
-     * @var string
-     */
-    public $accountName;
-    /**
-     * Etag of this resource.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#userProfile".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The unique ID of the user profile.
-     *
-     * @var string
-     */
-    public $profileId;
-    /**
-     * The sub account ID this profile belongs to if applicable.
-     *
-     * @var string
-     */
-    public $subAccountId;
-    /**
-     * The sub account name this profile belongs to if applicable.
-     *
-     * @var string
-     */
-    public $subAccountName;
-    /**
-     * The user name.
-     *
-     * @var string
-     */
-    public $userName;
-    /**
-     * The account ID to which this profile belongs.
-     *
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\Dfareporting {
+    class UserProfile extends \Google\Model
     {
+        /**
+         * The account ID to which this profile belongs.
+         *
+         * @var string
+         */
+        public $accountId;
+        /**
+         * The account name this profile belongs to.
+         *
+         * @var string
+         */
+        public $accountName;
+        /**
+         * Etag of this resource.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#userProfile".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The unique ID of the user profile.
+         *
+         * @var string
+         */
+        public $profileId;
+        /**
+         * The sub account ID this profile belongs to if applicable.
+         *
+         * @var string
+         */
+        public $subAccountId;
+        /**
+         * The sub account name this profile belongs to if applicable.
+         *
+         * @var string
+         */
+        public $subAccountName;
+        /**
+         * The user name.
+         *
+         * @var string
+         */
+        public $userName;
+        /**
+         * The account ID to which this profile belongs.
+         *
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * The account name this profile belongs to.
+         *
+         * @param string $accountName
+         */
+        public function setAccountName($accountName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountName()
+        {
+        }
+        /**
+         * Etag of this resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#userProfile".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The unique ID of the user profile.
+         *
+         * @param string $profileId
+         */
+        public function setProfileId($profileId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProfileId()
+        {
+        }
+        /**
+         * The sub account ID this profile belongs to if applicable.
+         *
+         * @param string $subAccountId
+         */
+        public function setSubAccountId($subAccountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubAccountId()
+        {
+        }
+        /**
+         * The sub account name this profile belongs to if applicable.
+         *
+         * @param string $subAccountName
+         */
+        public function setSubAccountName($subAccountName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubAccountName()
+        {
+        }
+        /**
+         * The user name.
+         *
+         * @param string $userName
+         */
+        public function setUserName($userName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\UserProfile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * The account name this profile belongs to.
-     *
-     * @param string $accountName
-     */
-    public function setAccountName($accountName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAccountName()
-    {
-    }
-    /**
-     * Etag of this resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#userProfile".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The unique ID of the user profile.
-     *
-     * @param string $profileId
-     */
-    public function setProfileId($profileId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProfileId()
-    {
-    }
-    /**
-     * The sub account ID this profile belongs to if applicable.
-     *
-     * @param string $subAccountId
-     */
-    public function setSubAccountId($subAccountId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubAccountId()
-    {
-    }
-    /**
-     * The sub account name this profile belongs to if applicable.
-     *
-     * @param string $subAccountName
-     */
-    public function setSubAccountName($subAccountName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubAccountName()
-    {
-    }
-    /**
-     * The user name.
-     *
-     * @param string $userName
-     */
-    public function setUserName($userName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserName()
+    class Google_Service_Dfareporting_UserProfile extends \Google\Service\Dfareporting\UserProfile
     {
     }
 }

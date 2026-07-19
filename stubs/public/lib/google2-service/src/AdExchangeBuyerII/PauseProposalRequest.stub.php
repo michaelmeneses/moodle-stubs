@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class PauseProposalRequest extends \Google\Model
-{
-    /**
-     * The reason why the proposal is being paused. This human readable message
-     * will be displayed in the seller's UI. (Max length: 1000 unicode code
-     * units.)
-     *
-     * @var string
-     */
-    public $reason;
-    /**
-     * The reason why the proposal is being paused. This human readable message
-     * will be displayed in the seller's UI. (Max length: 1000 unicode code
-     * units.)
-     *
-     * @param string $reason
-     */
-    public function setReason($reason)
+namespace Google\Service\AdExchangeBuyerII {
+    class PauseProposalRequest extends \Google\Model
     {
+        /**
+         * The reason why the proposal is being paused. This human readable message
+         * will be displayed in the seller's UI. (Max length: 1000 unicode code
+         * units.)
+         *
+         * @var string
+         */
+        public $reason;
+        /**
+         * The reason why the proposal is being paused. This human readable message
+         * will be displayed in the seller's UI. (Max length: 1000 unicode code
+         * units.)
+         *
+         * @param string $reason
+         */
+        public function setReason($reason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReason()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\PauseProposalRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReason()
+    class Google_Service_AdExchangeBuyerII_PauseProposalRequest extends \Google\Service\AdExchangeBuyerII\PauseProposalRequest
     {
     }
 }

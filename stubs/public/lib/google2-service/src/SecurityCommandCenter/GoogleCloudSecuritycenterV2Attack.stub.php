@@ -21,118 +21,127 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2Attack extends \Google\Model
-{
-    /**
-     * Type of attack, for example, 'SYN-flood', 'NTP-udp', or 'CHARGEN-udp'.
-     *
-     * @var string
-     */
-    public $classification;
-    /**
-     * Total BPS (bytes per second) volume of attack. Deprecated - refer to
-     * volume_bps_long instead.
-     *
-     * @deprecated
-     * @var int
-     */
-    public $volumeBps;
-    /**
-     * Total BPS (bytes per second) volume of attack.
-     *
-     * @var string
-     */
-    public $volumeBpsLong;
-    /**
-     * Total PPS (packets per second) volume of attack. Deprecated - refer to
-     * volume_pps_long instead.
-     *
-     * @deprecated
-     * @var int
-     */
-    public $volumePps;
-    /**
-     * Total PPS (packets per second) volume of attack.
-     *
-     * @var string
-     */
-    public $volumePpsLong;
-    /**
-     * Type of attack, for example, 'SYN-flood', 'NTP-udp', or 'CHARGEN-udp'.
-     *
-     * @param string $classification
-     */
-    public function setClassification($classification)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2Attack extends \Google\Model
     {
+        /**
+         * Type of attack, for example, 'SYN-flood', 'NTP-udp', or 'CHARGEN-udp'.
+         *
+         * @var string
+         */
+        public $classification;
+        /**
+         * Total BPS (bytes per second) volume of attack. Deprecated - refer to
+         * volume_bps_long instead.
+         *
+         * @deprecated
+         * @var int
+         */
+        public $volumeBps;
+        /**
+         * Total BPS (bytes per second) volume of attack.
+         *
+         * @var string
+         */
+        public $volumeBpsLong;
+        /**
+         * Total PPS (packets per second) volume of attack. Deprecated - refer to
+         * volume_pps_long instead.
+         *
+         * @deprecated
+         * @var int
+         */
+        public $volumePps;
+        /**
+         * Total PPS (packets per second) volume of attack.
+         *
+         * @var string
+         */
+        public $volumePpsLong;
+        /**
+         * Type of attack, for example, 'SYN-flood', 'NTP-udp', or 'CHARGEN-udp'.
+         *
+         * @param string $classification
+         */
+        public function setClassification($classification)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClassification()
+        {
+        }
+        /**
+         * Total BPS (bytes per second) volume of attack. Deprecated - refer to
+         * volume_bps_long instead.
+         *
+         * @deprecated
+         * @param int $volumeBps
+         */
+        public function setVolumeBps($volumeBps)
+        {
+        }
+        /**
+         * @deprecated
+         * @return int
+         */
+        public function getVolumeBps()
+        {
+        }
+        /**
+         * Total BPS (bytes per second) volume of attack.
+         *
+         * @param string $volumeBpsLong
+         */
+        public function setVolumeBpsLong($volumeBpsLong)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVolumeBpsLong()
+        {
+        }
+        /**
+         * Total PPS (packets per second) volume of attack. Deprecated - refer to
+         * volume_pps_long instead.
+         *
+         * @deprecated
+         * @param int $volumePps
+         */
+        public function setVolumePps($volumePps)
+        {
+        }
+        /**
+         * @deprecated
+         * @return int
+         */
+        public function getVolumePps()
+        {
+        }
+        /**
+         * Total PPS (packets per second) volume of attack.
+         *
+         * @param string $volumePpsLong
+         */
+        public function setVolumePpsLong($volumePpsLong)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVolumePpsLong()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2Attack registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClassification()
-    {
-    }
-    /**
-     * Total BPS (bytes per second) volume of attack. Deprecated - refer to
-     * volume_bps_long instead.
-     *
-     * @deprecated
-     * @param int $volumeBps
-     */
-    public function setVolumeBps($volumeBps)
-    {
-    }
-    /**
-     * @deprecated
-     * @return int
-     */
-    public function getVolumeBps()
-    {
-    }
-    /**
-     * Total BPS (bytes per second) volume of attack.
-     *
-     * @param string $volumeBpsLong
-     */
-    public function setVolumeBpsLong($volumeBpsLong)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVolumeBpsLong()
-    {
-    }
-    /**
-     * Total PPS (packets per second) volume of attack. Deprecated - refer to
-     * volume_pps_long instead.
-     *
-     * @deprecated
-     * @param int $volumePps
-     */
-    public function setVolumePps($volumePps)
-    {
-    }
-    /**
-     * @deprecated
-     * @return int
-     */
-    public function getVolumePps()
-    {
-    }
-    /**
-     * Total PPS (packets per second) volume of attack.
-     *
-     * @param string $volumePpsLong
-     */
-    public function setVolumePpsLong($volumePpsLong)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVolumePpsLong()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2Attack extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2Attack
     {
     }
 }

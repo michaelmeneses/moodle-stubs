@@ -21,32 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessLodging\Resource;
-
-/**
- * The "lodging" collection of methods.
- * Typical usage is:
- *  <code>
- *   $mybusinesslodgingService = new Google\Service\MyBusinessLodging(...);
- *   $lodging = $mybusinesslodgingService->locations_lodging;
- *  </code>
- */
-class LocationsLodging extends \Google\Service\Resource
-{
+namespace Google\Service\MyBusinessLodging\Resource {
+    use Google\Service\MyBusinessLodging\GetGoogleUpdatedLodgingResponse;
     /**
-     * Returns the Google updated Lodging of a specific location.
-     * (lodging.getGoogleUpdated)
-     *
-     * @param string $name Required. Google identifier for this location in the
-     * form: `locations/{location_id}/lodging`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string readMask Required. The specific fields to return. Use "*"
-     * to include all fields. Repeated field items cannot be individually specified.
-     * @return GetGoogleUpdatedLodgingResponse
-     * @throws \Google\Service\Exception
+     * The "lodging" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $mybusinesslodgingService = new Google\Service\MyBusinessLodging(...);
+     *   $lodging = $mybusinesslodgingService->locations_lodging;
+     *  </code>
      */
-    public function getGoogleUpdated($name, $optParams = [])
+    class LocationsLodging extends \Google\Service\Resource
+    {
+        /**
+         * Returns the Google updated Lodging of a specific location.
+         * (lodging.getGoogleUpdated)
+         *
+         * @param string $name Required. Google identifier for this location in the
+         * form: `locations/{location_id}/lodging`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string readMask Required. The specific fields to return. Use "*"
+         * to include all fields. Repeated field items cannot be individually specified.
+         * @return GetGoogleUpdatedLodgingResponse
+         * @throws \Google\Service\Exception
+         */
+        public function getGoogleUpdated($name, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\MyBusinessLodging\Resource\LocationsLodging registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_MyBusinessLodging_Resource_LocationsLodging extends \Google\Service\MyBusinessLodging\Resource\LocationsLodging
     {
     }
 }

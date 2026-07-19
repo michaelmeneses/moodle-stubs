@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1ImportTaxonomiesResponse extends \Google\Collection
-{
-    protected $collection_key = 'taxonomies';
-    protected $taxonomiesType = GoogleCloudDatacatalogV1Taxonomy::class;
-    protected $taxonomiesDataType = 'array';
-    /**
-     * Imported taxonomies.
-     *
-     * @param GoogleCloudDatacatalogV1Taxonomy[] $taxonomies
-     */
-    public function setTaxonomies($taxonomies)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1ImportTaxonomiesResponse extends \Google\Collection
     {
+        protected $collection_key = 'taxonomies';
+        protected $taxonomiesType = GoogleCloudDatacatalogV1Taxonomy::class;
+        protected $taxonomiesDataType = 'array';
+        /**
+         * Imported taxonomies.
+         *
+         * @param GoogleCloudDatacatalogV1Taxonomy[] $taxonomies
+         */
+        public function setTaxonomies($taxonomies)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1Taxonomy[]
+         */
+        public function getTaxonomies()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatacatalogV1Taxonomy[]
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1ImportTaxonomiesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTaxonomies()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1ImportTaxonomiesResponse extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1ImportTaxonomiesResponse
     {
     }
 }

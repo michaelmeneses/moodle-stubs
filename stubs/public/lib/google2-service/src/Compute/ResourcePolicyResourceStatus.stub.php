@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ResourcePolicyResourceStatus extends \Google\Model
-{
-    protected $instanceSchedulePolicyType = ResourcePolicyResourceStatusInstanceSchedulePolicyStatus::class;
-    protected $instanceSchedulePolicyDataType = '';
-    /**
-     * Output only. [Output Only] Specifies a set of output values reffering to
-     * the instance_schedule_policy system status. This field should have the same
-     * name as corresponding policy field.
-     *
-     * @param ResourcePolicyResourceStatusInstanceSchedulePolicyStatus $instanceSchedulePolicy
-     */
-    public function setInstanceSchedulePolicy(ResourcePolicyResourceStatusInstanceSchedulePolicyStatus $instanceSchedulePolicy)
+namespace Google\Service\Compute {
+    class ResourcePolicyResourceStatus extends \Google\Model
     {
+        protected $instanceSchedulePolicyType = ResourcePolicyResourceStatusInstanceSchedulePolicyStatus::class;
+        protected $instanceSchedulePolicyDataType = '';
+        /**
+         * Output only. [Output Only] Specifies a set of output values reffering to
+         * the instance_schedule_policy system status. This field should have the same
+         * name as corresponding policy field.
+         *
+         * @param ResourcePolicyResourceStatusInstanceSchedulePolicyStatus $instanceSchedulePolicy
+         */
+        public function setInstanceSchedulePolicy(ResourcePolicyResourceStatusInstanceSchedulePolicyStatus $instanceSchedulePolicy)
+        {
+        }
+        /**
+         * @return ResourcePolicyResourceStatusInstanceSchedulePolicyStatus
+         */
+        public function getInstanceSchedulePolicy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ResourcePolicyResourceStatusInstanceSchedulePolicyStatus
+     * Runtime class alias of \Google\Service\Compute\ResourcePolicyResourceStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstanceSchedulePolicy()
+    class Google_Service_Compute_ResourcePolicyResourceStatus extends \Google\Service\Compute\ResourcePolicyResourceStatus
     {
     }
 }

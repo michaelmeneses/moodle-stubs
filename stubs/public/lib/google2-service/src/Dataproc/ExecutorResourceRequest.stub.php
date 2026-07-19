@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class ExecutorResourceRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $amount;
-    /**
-     * @var string
-     */
-    public $discoveryScript;
-    /**
-     * @var string
-     */
-    public $resourceName;
-    /**
-     * @var string
-     */
-    public $vendor;
-    /**
-     * @param string $amount
-     */
-    public function setAmount($amount)
+namespace Google\Service\Dataproc {
+    class ExecutorResourceRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $amount;
+        /**
+         * @var string
+         */
+        public $discoveryScript;
+        /**
+         * @var string
+         */
+        public $resourceName;
+        /**
+         * @var string
+         */
+        public $vendor;
+        /**
+         * @param string $amount
+         */
+        public function setAmount($amount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAmount()
+        {
+        }
+        /**
+         * @param string $discoveryScript
+         */
+        public function setDiscoveryScript($discoveryScript)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDiscoveryScript()
+        {
+        }
+        /**
+         * @param string $resourceName
+         */
+        public function setResourceName($resourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceName()
+        {
+        }
+        /**
+         * @param string $vendor
+         */
+        public function setVendor($vendor)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVendor()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\ExecutorResourceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAmount()
-    {
-    }
-    /**
-     * @param string $discoveryScript
-     */
-    public function setDiscoveryScript($discoveryScript)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDiscoveryScript()
-    {
-    }
-    /**
-     * @param string $resourceName
-     */
-    public function setResourceName($resourceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceName()
-    {
-    }
-    /**
-     * @param string $vendor
-     */
-    public function setVendor($vendor)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVendor()
+    class Google_Service_Dataproc_ExecutorResourceRequest extends \Google\Service\Dataproc\ExecutorResourceRequest
     {
     }
 }

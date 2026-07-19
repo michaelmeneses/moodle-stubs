@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiUiv1beta3ExportDocumentsMetadataIndividualExportStatus extends \Google\Model
-{
-    protected $documentIdType = GoogleCloudDocumentaiUiv1beta3DocumentId::class;
-    protected $documentIdDataType = '';
-    /**
-     * The output_gcs_destination of the exported document if it was successful,
-     * otherwise empty.
-     *
-     * @var string
-     */
-    public $outputGcsDestination;
-    protected $statusType = GoogleRpcStatus::class;
-    protected $statusDataType = '';
-    /**
-     * The path to source docproto of the document.
-     *
-     * @param GoogleCloudDocumentaiUiv1beta3DocumentId $documentId
-     */
-    public function setDocumentId(GoogleCloudDocumentaiUiv1beta3DocumentId $documentId)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiUiv1beta3ExportDocumentsMetadataIndividualExportStatus extends \Google\Model
     {
+        protected $documentIdType = GoogleCloudDocumentaiUiv1beta3DocumentId::class;
+        protected $documentIdDataType = '';
+        /**
+         * The output_gcs_destination of the exported document if it was successful,
+         * otherwise empty.
+         *
+         * @var string
+         */
+        public $outputGcsDestination;
+        protected $statusType = GoogleRpcStatus::class;
+        protected $statusDataType = '';
+        /**
+         * The path to source docproto of the document.
+         *
+         * @param GoogleCloudDocumentaiUiv1beta3DocumentId $documentId
+         */
+        public function setDocumentId(GoogleCloudDocumentaiUiv1beta3DocumentId $documentId)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiUiv1beta3DocumentId
+         */
+        public function getDocumentId()
+        {
+        }
+        /**
+         * The output_gcs_destination of the exported document if it was successful,
+         * otherwise empty.
+         *
+         * @param string $outputGcsDestination
+         */
+        public function setOutputGcsDestination($outputGcsDestination)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOutputGcsDestination()
+        {
+        }
+        /**
+         * The status of the exporting of the document.
+         *
+         * @param GoogleRpcStatus $status
+         */
+        public function setStatus(GoogleRpcStatus $status)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiUiv1beta3DocumentId
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3ExportDocumentsMetadataIndividualExportStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocumentId()
-    {
-    }
-    /**
-     * The output_gcs_destination of the exported document if it was successful,
-     * otherwise empty.
-     *
-     * @param string $outputGcsDestination
-     */
-    public function setOutputGcsDestination($outputGcsDestination)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOutputGcsDestination()
-    {
-    }
-    /**
-     * The status of the exporting of the document.
-     *
-     * @param GoogleRpcStatus $status
-     */
-    public function setStatus(GoogleRpcStatus $status)
-    {
-    }
-    /**
-     * @return GoogleRpcStatus
-     */
-    public function getStatus()
+    class Google_Service_Document_GoogleCloudDocumentaiUiv1beta3ExportDocumentsMetadataIndividualExportStatus extends \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3ExportDocumentsMetadataIndividualExportStatus
     {
     }
 }

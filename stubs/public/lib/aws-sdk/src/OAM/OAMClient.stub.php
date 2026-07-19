@@ -8,6 +8,7 @@
  */
 namespace Aws\OAM;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **CloudWatch Observability Access Manager** service.
  * @method \Aws\Result createLink(array $args = [])

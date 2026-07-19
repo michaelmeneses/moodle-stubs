@@ -21,88 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Script\Resource;
-
-/**
- * The "projects" collection of methods.
- * Typical usage is:
- *  <code>
- *   $scriptService = new Google\Service\Script(...);
- *   $projects = $scriptService->projects;
- *  </code>
- */
-class Projects extends \Google\Service\Resource
-{
+namespace Google\Service\Script\Resource {
+    use Google\Service\Script\Content;
+    use Google\Service\Script\CreateProjectRequest;
+    use Google\Service\Script\Metrics;
+    use Google\Service\Script\Project;
     /**
-     * Creates a new, empty script project with no script files and a base manifest
-     * file. (projects.create)
-     *
-     * @param CreateProjectRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Project
-     * @throws \Google\Service\Exception
+     * The "projects" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $scriptService = new Google\Service\Script(...);
+     *   $projects = $scriptService->projects;
+     *  </code>
      */
-    public function create(CreateProjectRequest $postBody, $optParams = [])
+    class Projects extends \Google\Service\Resource
     {
+        /**
+         * Creates a new, empty script project with no script files and a base manifest
+         * file. (projects.create)
+         *
+         * @param CreateProjectRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Project
+         * @throws \Google\Service\Exception
+         */
+        public function create(CreateProjectRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Gets a script project's metadata. (projects.get)
+         *
+         * @param string $scriptId The script project's Drive ID.
+         * @param array $optParams Optional parameters.
+         * @return Project
+         * @throws \Google\Service\Exception
+         */
+        public function get($scriptId, $optParams = [])
+        {
+        }
+        /**
+         * Gets the content of the script project, including the code source and
+         * metadata for each script file. (projects.getContent)
+         *
+         * @param string $scriptId The script project's Drive ID.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int versionNumber The version number of the project to retrieve.
+         * If not provided, the project's HEAD version is returned.
+         * @return Content
+         * @throws \Google\Service\Exception
+         */
+        public function getContent($scriptId, $optParams = [])
+        {
+        }
+        /**
+         * Get metrics data for scripts, such as number of executions and active users.
+         * (projects.getMetrics)
+         *
+         * @param string $scriptId Required field indicating the script to get metrics
+         * for.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string metricsFilter.deploymentId Optional field indicating a
+         * specific deployment to retrieve metrics from.
+         * @opt_param string metricsGranularity Required field indicating what
+         * granularity of metrics are returned.
+         * @return Metrics
+         * @throws \Google\Service\Exception
+         */
+        public function getMetrics($scriptId, $optParams = [])
+        {
+        }
+        /**
+         * Updates the content of the specified script project. This content is stored
+         * as the HEAD version, and is used when the script is executed as a trigger, in
+         * the script editor, in add-on preview mode, or as a web app or Apps Script API
+         * in development mode. This clears all the existing files in the project.
+         * (projects.updateContent)
+         *
+         * @param string $scriptId The script project's Drive ID.
+         * @param Content $postBody
+         * @param array $optParams Optional parameters.
+         * @return Content
+         * @throws \Google\Service\Exception
+         */
+        public function updateContent($scriptId, Content $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets a script project's metadata. (projects.get)
-     *
-     * @param string $scriptId The script project's Drive ID.
-     * @param array $optParams Optional parameters.
-     * @return Project
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Script\Resource\Projects registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($scriptId, $optParams = [])
-    {
-    }
-    /**
-     * Gets the content of the script project, including the code source and
-     * metadata for each script file. (projects.getContent)
-     *
-     * @param string $scriptId The script project's Drive ID.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int versionNumber The version number of the project to retrieve.
-     * If not provided, the project's HEAD version is returned.
-     * @return Content
-     * @throws \Google\Service\Exception
-     */
-    public function getContent($scriptId, $optParams = [])
-    {
-    }
-    /**
-     * Get metrics data for scripts, such as number of executions and active users.
-     * (projects.getMetrics)
-     *
-     * @param string $scriptId Required field indicating the script to get metrics
-     * for.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string metricsFilter.deploymentId Optional field indicating a
-     * specific deployment to retrieve metrics from.
-     * @opt_param string metricsGranularity Required field indicating what
-     * granularity of metrics are returned.
-     * @return Metrics
-     * @throws \Google\Service\Exception
-     */
-    public function getMetrics($scriptId, $optParams = [])
-    {
-    }
-    /**
-     * Updates the content of the specified script project. This content is stored
-     * as the HEAD version, and is used when the script is executed as a trigger, in
-     * the script editor, in add-on preview mode, or as a web app or Apps Script API
-     * in development mode. This clears all the existing files in the project.
-     * (projects.updateContent)
-     *
-     * @param string $scriptId The script project's Drive ID.
-     * @param Content $postBody
-     * @param array $optParams Optional parameters.
-     * @return Content
-     * @throws \Google\Service\Exception
-     */
-    public function updateContent($scriptId, Content $postBody, $optParams = [])
+    class Google_Service_Script_Resource_Projects extends \Google\Service\Script\Resource\Projects
     {
     }
 }

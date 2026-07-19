@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudVideoIntelligence;
-
-class GoogleCloudVideointelligenceV1p2beta1DetectedAttribute extends \Google\Model
-{
-    /**
-     * Detected attribute confidence. Range [0, 1].
-     *
-     * @var float
-     */
-    public $confidence;
-    /**
-     * The name of the attribute, for example, glasses, dark_glasses, mouth_open.
-     * A full list of supported type names will be provided in the document.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Text value of the detection result. For example, the value for "HairColor"
-     * can be "black", "blonde", etc.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Detected attribute confidence. Range [0, 1].
-     *
-     * @param float $confidence
-     */
-    public function setConfidence($confidence)
+namespace Google\Service\CloudVideoIntelligence {
+    class GoogleCloudVideointelligenceV1p2beta1DetectedAttribute extends \Google\Model
     {
+        /**
+         * Detected attribute confidence. Range [0, 1].
+         *
+         * @var float
+         */
+        public $confidence;
+        /**
+         * The name of the attribute, for example, glasses, dark_glasses, mouth_open.
+         * A full list of supported type names will be provided in the document.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Text value of the detection result. For example, the value for "HairColor"
+         * can be "black", "blonde", etc.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Detected attribute confidence. Range [0, 1].
+         *
+         * @param float $confidence
+         */
+        public function setConfidence($confidence)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidence()
+        {
+        }
+        /**
+         * The name of the attribute, for example, glasses, dark_glasses, mouth_open.
+         * A full list of supported type names will be provided in the document.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Text value of the detection result. For example, the value for "HairColor"
+         * can be "black", "blonde", etc.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1p2beta1DetectedAttribute registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfidence()
-    {
-    }
-    /**
-     * The name of the attribute, for example, glasses, dark_glasses, mouth_open.
-     * A full list of supported type names will be provided in the document.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Text value of the detection result. For example, the value for "HairColor"
-     * can be "black", "blonde", etc.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p2beta1DetectedAttribute extends \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1p2beta1DetectedAttribute
     {
     }
 }

@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class GoogleBigtableAdminV2TypeProto extends \Google\Model
-{
-    /**
-     * The fully qualified name of the protobuf message, including package. In the
-     * format of "foo.bar.Message".
-     *
-     * @var string
-     */
-    public $messageName;
-    /**
-     * The ID of the schema bundle that this proto is defined in.
-     *
-     * @var string
-     */
-    public $schemaBundleId;
-    /**
-     * The fully qualified name of the protobuf message, including package. In the
-     * format of "foo.bar.Message".
-     *
-     * @param string $messageName
-     */
-    public function setMessageName($messageName)
+namespace Google\Service\BigtableAdmin {
+    class GoogleBigtableAdminV2TypeProto extends \Google\Model
     {
+        /**
+         * The fully qualified name of the protobuf message, including package. In the
+         * format of "foo.bar.Message".
+         *
+         * @var string
+         */
+        public $messageName;
+        /**
+         * The ID of the schema bundle that this proto is defined in.
+         *
+         * @var string
+         */
+        public $schemaBundleId;
+        /**
+         * The fully qualified name of the protobuf message, including package. In the
+         * format of "foo.bar.Message".
+         *
+         * @param string $messageName
+         */
+        public function setMessageName($messageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessageName()
+        {
+        }
+        /**
+         * The ID of the schema bundle that this proto is defined in.
+         *
+         * @param string $schemaBundleId
+         */
+        public function setSchemaBundleId($schemaBundleId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSchemaBundleId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigtableAdmin\GoogleBigtableAdminV2TypeProto registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMessageName()
-    {
-    }
-    /**
-     * The ID of the schema bundle that this proto is defined in.
-     *
-     * @param string $schemaBundleId
-     */
-    public function setSchemaBundleId($schemaBundleId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSchemaBundleId()
+    class Google_Service_BigtableAdmin_GoogleBigtableAdminV2TypeProto extends \Google\Service\BigtableAdmin\GoogleBigtableAdminV2TypeProto
     {
     }
 }

@@ -21,268 +21,277 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class NodeGroupNode extends \Google\Collection
-{
-    public const CPU_OVERCOMMIT_TYPE_CPU_OVERCOMMIT_TYPE_UNSPECIFIED = 'CPU_OVERCOMMIT_TYPE_UNSPECIFIED';
-    public const CPU_OVERCOMMIT_TYPE_ENABLED = 'ENABLED';
-    public const CPU_OVERCOMMIT_TYPE_NONE = 'NONE';
-    public const STATUS_CREATING = 'CREATING';
-    public const STATUS_DELETING = 'DELETING';
-    public const STATUS_INVALID = 'INVALID';
-    public const STATUS_READY = 'READY';
-    public const STATUS_REPAIRING = 'REPAIRING';
-    protected $collection_key = 'instances';
-    protected $acceleratorsType = AcceleratorConfig::class;
-    protected $acceleratorsDataType = 'array';
-    protected $consumedResourcesType = InstanceConsumptionInfo::class;
-    protected $consumedResourcesDataType = '';
-    /**
-     * CPU overcommit.
-     *
-     * @var string
-     */
-    public $cpuOvercommitType;
-    protected $disksType = LocalDisk::class;
-    protected $disksDataType = 'array';
-    protected $instanceConsumptionDataType = InstanceConsumptionData::class;
-    protected $instanceConsumptionDataDataType = 'array';
-    /**
-     * Instances scheduled on this node.
-     *
-     * @var string[]
-     */
-    public $instances;
-    /**
-     * The name of the node.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The type of this node.
-     *
-     * @var string
-     */
-    public $nodeType;
-    /**
-     * Output only. [Output Only] Reserved for future use.
-     *
-     * @var bool
-     */
-    public $satisfiesPzs;
-    protected $serverBindingType = ServerBinding::class;
-    protected $serverBindingDataType = '';
-    /**
-     * Server ID associated with this node.
-     *
-     * @var string
-     */
-    public $serverId;
-    /**
-     * @var string
-     */
-    public $status;
-    protected $totalResourcesType = InstanceConsumptionInfo::class;
-    protected $totalResourcesDataType = '';
-    protected $upcomingMaintenanceType = UpcomingMaintenance::class;
-    protected $upcomingMaintenanceDataType = '';
-    /**
-     * Accelerators for this node.
-     *
-     * @param AcceleratorConfig[] $accelerators
-     */
-    public function setAccelerators($accelerators)
+namespace Google\Service\Compute {
+    class NodeGroupNode extends \Google\Collection
     {
+        public const CPU_OVERCOMMIT_TYPE_CPU_OVERCOMMIT_TYPE_UNSPECIFIED = 'CPU_OVERCOMMIT_TYPE_UNSPECIFIED';
+        public const CPU_OVERCOMMIT_TYPE_ENABLED = 'ENABLED';
+        public const CPU_OVERCOMMIT_TYPE_NONE = 'NONE';
+        public const STATUS_CREATING = 'CREATING';
+        public const STATUS_DELETING = 'DELETING';
+        public const STATUS_INVALID = 'INVALID';
+        public const STATUS_READY = 'READY';
+        public const STATUS_REPAIRING = 'REPAIRING';
+        protected $collection_key = 'instances';
+        protected $acceleratorsType = AcceleratorConfig::class;
+        protected $acceleratorsDataType = 'array';
+        protected $consumedResourcesType = InstanceConsumptionInfo::class;
+        protected $consumedResourcesDataType = '';
+        /**
+         * CPU overcommit.
+         *
+         * @var string
+         */
+        public $cpuOvercommitType;
+        protected $disksType = LocalDisk::class;
+        protected $disksDataType = 'array';
+        protected $instanceConsumptionDataType = InstanceConsumptionData::class;
+        protected $instanceConsumptionDataDataType = 'array';
+        /**
+         * Instances scheduled on this node.
+         *
+         * @var string[]
+         */
+        public $instances;
+        /**
+         * The name of the node.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The type of this node.
+         *
+         * @var string
+         */
+        public $nodeType;
+        /**
+         * Output only. [Output Only] Reserved for future use.
+         *
+         * @var bool
+         */
+        public $satisfiesPzs;
+        protected $serverBindingType = ServerBinding::class;
+        protected $serverBindingDataType = '';
+        /**
+         * Server ID associated with this node.
+         *
+         * @var string
+         */
+        public $serverId;
+        /**
+         * @var string
+         */
+        public $status;
+        protected $totalResourcesType = InstanceConsumptionInfo::class;
+        protected $totalResourcesDataType = '';
+        protected $upcomingMaintenanceType = UpcomingMaintenance::class;
+        protected $upcomingMaintenanceDataType = '';
+        /**
+         * Accelerators for this node.
+         *
+         * @param AcceleratorConfig[] $accelerators
+         */
+        public function setAccelerators($accelerators)
+        {
+        }
+        /**
+         * @return AcceleratorConfig[]
+         */
+        public function getAccelerators()
+        {
+        }
+        /**
+         * Output only. Node resources that are reserved by all instances.
+         *
+         * @param InstanceConsumptionInfo $consumedResources
+         */
+        public function setConsumedResources(InstanceConsumptionInfo $consumedResources)
+        {
+        }
+        /**
+         * @return InstanceConsumptionInfo
+         */
+        public function getConsumedResources()
+        {
+        }
+        /**
+         * CPU overcommit.
+         *
+         * Accepted values: CPU_OVERCOMMIT_TYPE_UNSPECIFIED, ENABLED, NONE
+         *
+         * @param self::CPU_OVERCOMMIT_TYPE_* $cpuOvercommitType
+         */
+        public function setCpuOvercommitType($cpuOvercommitType)
+        {
+        }
+        /**
+         * @return self::CPU_OVERCOMMIT_TYPE_*
+         */
+        public function getCpuOvercommitType()
+        {
+        }
+        /**
+         * Local disk configurations.
+         *
+         * @param LocalDisk[] $disks
+         */
+        public function setDisks($disks)
+        {
+        }
+        /**
+         * @return LocalDisk[]
+         */
+        public function getDisks()
+        {
+        }
+        /**
+         * Output only. Instance data that shows consumed resources on the node.
+         *
+         * @param InstanceConsumptionData[] $instanceConsumptionData
+         */
+        public function setInstanceConsumptionData($instanceConsumptionData)
+        {
+        }
+        /**
+         * @return InstanceConsumptionData[]
+         */
+        public function getInstanceConsumptionData()
+        {
+        }
+        /**
+         * Instances scheduled on this node.
+         *
+         * @param string[] $instances
+         */
+        public function setInstances($instances)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getInstances()
+        {
+        }
+        /**
+         * The name of the node.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The type of this node.
+         *
+         * @param string $nodeType
+         */
+        public function setNodeType($nodeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNodeType()
+        {
+        }
+        /**
+         * Output only. [Output Only] Reserved for future use.
+         *
+         * @param bool $satisfiesPzs
+         */
+        public function setSatisfiesPzs($satisfiesPzs)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSatisfiesPzs()
+        {
+        }
+        /**
+         * Binding properties for the physical server.
+         *
+         * @param ServerBinding $serverBinding
+         */
+        public function setServerBinding(ServerBinding $serverBinding)
+        {
+        }
+        /**
+         * @return ServerBinding
+         */
+        public function getServerBinding()
+        {
+        }
+        /**
+         * Server ID associated with this node.
+         *
+         * @param string $serverId
+         */
+        public function setServerId($serverId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServerId()
+        {
+        }
+        /**
+         * @param self::STATUS_* $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return self::STATUS_*
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * Output only. Total amount of available resources on the node.
+         *
+         * @param InstanceConsumptionInfo $totalResources
+         */
+        public function setTotalResources(InstanceConsumptionInfo $totalResources)
+        {
+        }
+        /**
+         * @return InstanceConsumptionInfo
+         */
+        public function getTotalResources()
+        {
+        }
+        /**
+         * Output only. [Output Only] The information about an upcoming maintenance
+         * event.
+         *
+         * @param UpcomingMaintenance $upcomingMaintenance
+         */
+        public function setUpcomingMaintenance(UpcomingMaintenance $upcomingMaintenance)
+        {
+        }
+        /**
+         * @return UpcomingMaintenance
+         */
+        public function getUpcomingMaintenance()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AcceleratorConfig[]
+     * Runtime class alias of \Google\Service\Compute\NodeGroupNode registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccelerators()
-    {
-    }
-    /**
-     * Output only. Node resources that are reserved by all instances.
-     *
-     * @param InstanceConsumptionInfo $consumedResources
-     */
-    public function setConsumedResources(InstanceConsumptionInfo $consumedResources)
-    {
-    }
-    /**
-     * @return InstanceConsumptionInfo
-     */
-    public function getConsumedResources()
-    {
-    }
-    /**
-     * CPU overcommit.
-     *
-     * Accepted values: CPU_OVERCOMMIT_TYPE_UNSPECIFIED, ENABLED, NONE
-     *
-     * @param self::CPU_OVERCOMMIT_TYPE_* $cpuOvercommitType
-     */
-    public function setCpuOvercommitType($cpuOvercommitType)
-    {
-    }
-    /**
-     * @return self::CPU_OVERCOMMIT_TYPE_*
-     */
-    public function getCpuOvercommitType()
-    {
-    }
-    /**
-     * Local disk configurations.
-     *
-     * @param LocalDisk[] $disks
-     */
-    public function setDisks($disks)
-    {
-    }
-    /**
-     * @return LocalDisk[]
-     */
-    public function getDisks()
-    {
-    }
-    /**
-     * Output only. Instance data that shows consumed resources on the node.
-     *
-     * @param InstanceConsumptionData[] $instanceConsumptionData
-     */
-    public function setInstanceConsumptionData($instanceConsumptionData)
-    {
-    }
-    /**
-     * @return InstanceConsumptionData[]
-     */
-    public function getInstanceConsumptionData()
-    {
-    }
-    /**
-     * Instances scheduled on this node.
-     *
-     * @param string[] $instances
-     */
-    public function setInstances($instances)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getInstances()
-    {
-    }
-    /**
-     * The name of the node.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The type of this node.
-     *
-     * @param string $nodeType
-     */
-    public function setNodeType($nodeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNodeType()
-    {
-    }
-    /**
-     * Output only. [Output Only] Reserved for future use.
-     *
-     * @param bool $satisfiesPzs
-     */
-    public function setSatisfiesPzs($satisfiesPzs)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSatisfiesPzs()
-    {
-    }
-    /**
-     * Binding properties for the physical server.
-     *
-     * @param ServerBinding $serverBinding
-     */
-    public function setServerBinding(ServerBinding $serverBinding)
-    {
-    }
-    /**
-     * @return ServerBinding
-     */
-    public function getServerBinding()
-    {
-    }
-    /**
-     * Server ID associated with this node.
-     *
-     * @param string $serverId
-     */
-    public function setServerId($serverId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServerId()
-    {
-    }
-    /**
-     * @param self::STATUS_* $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return self::STATUS_*
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * Output only. Total amount of available resources on the node.
-     *
-     * @param InstanceConsumptionInfo $totalResources
-     */
-    public function setTotalResources(InstanceConsumptionInfo $totalResources)
-    {
-    }
-    /**
-     * @return InstanceConsumptionInfo
-     */
-    public function getTotalResources()
-    {
-    }
-    /**
-     * Output only. [Output Only] The information about an upcoming maintenance
-     * event.
-     *
-     * @param UpcomingMaintenance $upcomingMaintenance
-     */
-    public function setUpcomingMaintenance(UpcomingMaintenance $upcomingMaintenance)
-    {
-    }
-    /**
-     * @return UpcomingMaintenance
-     */
-    public function getUpcomingMaintenance()
+    class Google_Service_Compute_NodeGroupNode extends \Google\Service\Compute\NodeGroupNode
     {
     }
 }

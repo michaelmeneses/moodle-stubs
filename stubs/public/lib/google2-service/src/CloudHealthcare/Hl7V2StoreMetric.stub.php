@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class Hl7V2StoreMetric extends \Google\Model
-{
-    /**
-     * The total count of HL7v2 messages in the store for the given message type.
-     *
-     * @var string
-     */
-    public $count;
-    /**
-     * The Hl7v2 message type this metric applies to, such as `ADT` or `ORU`.
-     *
-     * @var string
-     */
-    public $messageType;
-    /**
-     * The total amount of structured storage used by HL7v2 messages of this
-     * message type in the store.
-     *
-     * @var string
-     */
-    public $structuredStorageSizeBytes;
-    /**
-     * The total count of HL7v2 messages in the store for the given message type.
-     *
-     * @param string $count
-     */
-    public function setCount($count)
+namespace Google\Service\CloudHealthcare {
+    class Hl7V2StoreMetric extends \Google\Model
     {
+        /**
+         * The total count of HL7v2 messages in the store for the given message type.
+         *
+         * @var string
+         */
+        public $count;
+        /**
+         * The Hl7v2 message type this metric applies to, such as `ADT` or `ORU`.
+         *
+         * @var string
+         */
+        public $messageType;
+        /**
+         * The total amount of structured storage used by HL7v2 messages of this
+         * message type in the store.
+         *
+         * @var string
+         */
+        public $structuredStorageSizeBytes;
+        /**
+         * The total count of HL7v2 messages in the store for the given message type.
+         *
+         * @param string $count
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCount()
+        {
+        }
+        /**
+         * The Hl7v2 message type this metric applies to, such as `ADT` or `ORU`.
+         *
+         * @param string $messageType
+         */
+        public function setMessageType($messageType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessageType()
+        {
+        }
+        /**
+         * The total amount of structured storage used by HL7v2 messages of this
+         * message type in the store.
+         *
+         * @param string $structuredStorageSizeBytes
+         */
+        public function setStructuredStorageSizeBytes($structuredStorageSizeBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStructuredStorageSizeBytes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudHealthcare\Hl7V2StoreMetric registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCount()
-    {
-    }
-    /**
-     * The Hl7v2 message type this metric applies to, such as `ADT` or `ORU`.
-     *
-     * @param string $messageType
-     */
-    public function setMessageType($messageType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessageType()
-    {
-    }
-    /**
-     * The total amount of structured storage used by HL7v2 messages of this
-     * message type in the store.
-     *
-     * @param string $structuredStorageSizeBytes
-     */
-    public function setStructuredStorageSizeBytes($structuredStorageSizeBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStructuredStorageSizeBytes()
+    class Google_Service_CloudHealthcare_Hl7V2StoreMetric extends \Google\Service\CloudHealthcare\Hl7V2StoreMetric
     {
     }
 }

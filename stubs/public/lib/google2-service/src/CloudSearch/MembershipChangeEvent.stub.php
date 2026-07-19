@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class MembershipChangeEvent extends \Google\Collection
-{
-    protected $collection_key = 'participantId';
-    /**
-     * @var string
-     */
-    public $leaveReason;
-    protected $participantIdType = StoredParticipantId::class;
-    protected $participantIdDataType = 'array';
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param string
-     */
-    public function setLeaveReason($leaveReason)
+namespace Google\Service\CloudSearch {
+    class MembershipChangeEvent extends \Google\Collection
     {
+        protected $collection_key = 'participantId';
+        /**
+         * @var string
+         */
+        public $leaveReason;
+        protected $participantIdType = StoredParticipantId::class;
+        protected $participantIdDataType = 'array';
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param string
+         */
+        public function setLeaveReason($leaveReason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLeaveReason()
+        {
+        }
+        /**
+         * @param StoredParticipantId[]
+         */
+        public function setParticipantId($participantId)
+        {
+        }
+        /**
+         * @return StoredParticipantId[]
+         */
+        public function getParticipantId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\MembershipChangeEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLeaveReason()
-    {
-    }
-    /**
-     * @param StoredParticipantId[]
-     */
-    public function setParticipantId($participantId)
-    {
-    }
-    /**
-     * @return StoredParticipantId[]
-     */
-    public function getParticipantId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_CloudSearch_MembershipChangeEvent extends \Google\Service\CloudSearch\MembershipChangeEvent
     {
     }
 }

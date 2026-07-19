@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class ListExadbVmClustersResponse extends \Google\Collection
-{
-    protected $collection_key = 'exadbVmClusters';
-    protected $exadbVmClustersType = ExadbVmCluster::class;
-    protected $exadbVmClustersDataType = 'array';
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of ExadbVmClusters.
-     *
-     * @param ExadbVmCluster[] $exadbVmClusters
-     */
-    public function setExadbVmClusters($exadbVmClusters)
+namespace Google\Service\OracleDatabase {
+    class ListExadbVmClustersResponse extends \Google\Collection
     {
+        protected $collection_key = 'exadbVmClusters';
+        protected $exadbVmClustersType = ExadbVmCluster::class;
+        protected $exadbVmClustersDataType = 'array';
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of ExadbVmClusters.
+         *
+         * @param ExadbVmCluster[] $exadbVmClusters
+         */
+        public function setExadbVmClusters($exadbVmClusters)
+        {
+        }
+        /**
+         * @return ExadbVmCluster[]
+         */
+        public function getExadbVmClusters()
+        {
+        }
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ExadbVmCluster[]
+     * Runtime class alias of \Google\Service\OracleDatabase\ListExadbVmClustersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExadbVmClusters()
-    {
-    }
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_OracleDatabase_ListExadbVmClustersResponse extends \Google\Service\OracleDatabase\ListExadbVmClustersResponse
     {
     }
 }

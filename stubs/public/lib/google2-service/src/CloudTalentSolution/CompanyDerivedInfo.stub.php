@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudTalentSolution;
-
-class CompanyDerivedInfo extends \Google\Model
-{
-    protected $headquartersLocationType = Location::class;
-    protected $headquartersLocationDataType = '';
-    /**
-     * A structured headquarters location of the company, resolved from
-     * Company.headquarters_address if provided.
-     *
-     * @param Location $headquartersLocation
-     */
-    public function setHeadquartersLocation(Location $headquartersLocation)
+namespace Google\Service\CloudTalentSolution {
+    class CompanyDerivedInfo extends \Google\Model
     {
+        protected $headquartersLocationType = Location::class;
+        protected $headquartersLocationDataType = '';
+        /**
+         * A structured headquarters location of the company, resolved from
+         * Company.headquarters_address if provided.
+         *
+         * @param Location $headquartersLocation
+         */
+        public function setHeadquartersLocation(Location $headquartersLocation)
+        {
+        }
+        /**
+         * @return Location
+         */
+        public function getHeadquartersLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Location
+     * Runtime class alias of \Google\Service\CloudTalentSolution\CompanyDerivedInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHeadquartersLocation()
+    class Google_Service_CloudTalentSolution_CompanyDerivedInfo extends \Google\Service\CloudTalentSolution\CompanyDerivedInfo
     {
     }
 }

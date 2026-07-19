@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_assign\penalty;
 
+use assign;
+use core\context\module as context_module;
+use core_grades\penalty_manager;
+use grade_item;
 /**
  * Helper class for penalty in assignment module.
  *

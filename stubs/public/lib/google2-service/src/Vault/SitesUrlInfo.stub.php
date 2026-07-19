@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vault;
-
-class SitesUrlInfo extends \Google\Collection
-{
-    protected $collection_key = 'urls';
-    /**
-     * A list of published site URLs.
-     *
-     * @var string[]
-     */
-    public $urls;
-    /**
-     * A list of published site URLs.
-     *
-     * @param string[] $urls
-     */
-    public function setUrls($urls)
+namespace Google\Service\Vault {
+    class SitesUrlInfo extends \Google\Collection
     {
+        protected $collection_key = 'urls';
+        /**
+         * A list of published site URLs.
+         *
+         * @var string[]
+         */
+        public $urls;
+        /**
+         * A list of published site URLs.
+         *
+         * @param string[] $urls
+         */
+        public function setUrls($urls)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUrls()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Vault\SitesUrlInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUrls()
+    class Google_Service_Vault_SitesUrlInfo extends \Google\Service\Vault\SitesUrlInfo
     {
     }
 }

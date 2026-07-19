@@ -21,133 +21,142 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1IndexDatapointNumericRestriction extends \Google\Model
-{
-    /**
-     * Default value of the enum.
-     */
-    public const OP_OPERATOR_UNSPECIFIED = 'OPERATOR_UNSPECIFIED';
-    /**
-     * Datapoints are eligible iff their value is < the query's.
-     */
-    public const OP_LESS = 'LESS';
-    /**
-     * Datapoints are eligible iff their value is <= the query's.
-     */
-    public const OP_LESS_EQUAL = 'LESS_EQUAL';
-    /**
-     * Datapoints are eligible iff their value is == the query's.
-     */
-    public const OP_EQUAL = 'EQUAL';
-    /**
-     * Datapoints are eligible iff their value is >= the query's.
-     */
-    public const OP_GREATER_EQUAL = 'GREATER_EQUAL';
-    /**
-     * Datapoints are eligible iff their value is > the query's.
-     */
-    public const OP_GREATER = 'GREATER';
-    /**
-     * Datapoints are eligible iff their value is != the query's.
-     */
-    public const OP_NOT_EQUAL = 'NOT_EQUAL';
-    /**
-     * The namespace of this restriction. e.g.: cost.
-     *
-     * @var string
-     */
-    public $namespace;
-    /**
-     * This MUST be specified for queries and must NOT be specified for
-     * datapoints.
-     *
-     * @var string
-     */
-    public $op;
-    /**
-     * Represents 64 bit float.
-     *
-     * @var 
-     */
-    public $valueDouble;
-    /**
-     * Represents 32 bit float.
-     *
-     * @var float
-     */
-    public $valueFloat;
-    /**
-     * Represents 64 bit integer.
-     *
-     * @var string
-     */
-    public $valueInt;
-    /**
-     * The namespace of this restriction. e.g.: cost.
-     *
-     * @param string $namespace
-     */
-    public function setNamespace($namespace)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1IndexDatapointNumericRestriction extends \Google\Model
     {
+        /**
+         * Default value of the enum.
+         */
+        public const OP_OPERATOR_UNSPECIFIED = 'OPERATOR_UNSPECIFIED';
+        /**
+         * Datapoints are eligible iff their value is < the query's.
+         */
+        public const OP_LESS = 'LESS';
+        /**
+         * Datapoints are eligible iff their value is <= the query's.
+         */
+        public const OP_LESS_EQUAL = 'LESS_EQUAL';
+        /**
+         * Datapoints are eligible iff their value is == the query's.
+         */
+        public const OP_EQUAL = 'EQUAL';
+        /**
+         * Datapoints are eligible iff their value is >= the query's.
+         */
+        public const OP_GREATER_EQUAL = 'GREATER_EQUAL';
+        /**
+         * Datapoints are eligible iff their value is > the query's.
+         */
+        public const OP_GREATER = 'GREATER';
+        /**
+         * Datapoints are eligible iff their value is != the query's.
+         */
+        public const OP_NOT_EQUAL = 'NOT_EQUAL';
+        /**
+         * The namespace of this restriction. e.g.: cost.
+         *
+         * @var string
+         */
+        public $namespace;
+        /**
+         * This MUST be specified for queries and must NOT be specified for
+         * datapoints.
+         *
+         * @var string
+         */
+        public $op;
+        /**
+         * Represents 64 bit float.
+         *
+         * @var 
+         */
+        public $valueDouble;
+        /**
+         * Represents 32 bit float.
+         *
+         * @var float
+         */
+        public $valueFloat;
+        /**
+         * Represents 64 bit integer.
+         *
+         * @var string
+         */
+        public $valueInt;
+        /**
+         * The namespace of this restriction. e.g.: cost.
+         *
+         * @param string $namespace
+         */
+        public function setNamespace($namespace)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNamespace()
+        {
+        }
+        /**
+         * This MUST be specified for queries and must NOT be specified for
+         * datapoints.
+         *
+         * Accepted values: OPERATOR_UNSPECIFIED, LESS, LESS_EQUAL, EQUAL,
+         * GREATER_EQUAL, GREATER, NOT_EQUAL
+         *
+         * @param self::OP_* $op
+         */
+        public function setOp($op)
+        {
+        }
+        /**
+         * @return self::OP_*
+         */
+        public function getOp()
+        {
+        }
+        public function setValueDouble($valueDouble)
+        {
+        }
+        public function getValueDouble()
+        {
+        }
+        /**
+         * Represents 32 bit float.
+         *
+         * @param float $valueFloat
+         */
+        public function setValueFloat($valueFloat)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getValueFloat()
+        {
+        }
+        /**
+         * Represents 64 bit integer.
+         *
+         * @param string $valueInt
+         */
+        public function setValueInt($valueInt)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValueInt()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1IndexDatapointNumericRestriction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNamespace()
-    {
-    }
-    /**
-     * This MUST be specified for queries and must NOT be specified for
-     * datapoints.
-     *
-     * Accepted values: OPERATOR_UNSPECIFIED, LESS, LESS_EQUAL, EQUAL,
-     * GREATER_EQUAL, GREATER, NOT_EQUAL
-     *
-     * @param self::OP_* $op
-     */
-    public function setOp($op)
-    {
-    }
-    /**
-     * @return self::OP_*
-     */
-    public function getOp()
-    {
-    }
-    public function setValueDouble($valueDouble)
-    {
-    }
-    public function getValueDouble()
-    {
-    }
-    /**
-     * Represents 32 bit float.
-     *
-     * @param float $valueFloat
-     */
-    public function setValueFloat($valueFloat)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getValueFloat()
-    {
-    }
-    /**
-     * Represents 64 bit integer.
-     *
-     * @param string $valueInt
-     */
-    public function setValueInt($valueInt)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValueInt()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1IndexDatapointNumericRestriction extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1IndexDatapointNumericRestriction
     {
     }
 }

@@ -21,199 +21,208 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DeploymentManager;
-
-class Manifest extends \Google\Collection
-{
-    protected $collection_key = 'imports';
-    protected $configType = ConfigFile::class;
-    protected $configDataType = '';
-    /**
-     * Output only. The fully-expanded configuration file, including any templates
-     * and references.
-     *
-     * @var string
-     */
-    public $expandedConfig;
-    /**
-     * @var string
-     */
-    public $id;
-    protected $importsType = ImportFile::class;
-    protected $importsDataType = 'array';
-    /**
-     * Output only. Creation timestamp in RFC3339 text format.
-     *
-     * @var string
-     */
-    public $insertTime;
-    /**
-     * Output only. The YAML layout for this manifest.
-     *
-     * @var string
-     */
-    public $layout;
-    /**
-     * Output only. The computed size of the fully expanded manifest.
-     *
-     * @var string
-     */
-    public $manifestSizeBytes;
-    /**
-     * Output only. The size limit for expanded manifests in the project.
-     *
-     * @var string
-     */
-    public $manifestSizeLimitBytes;
-    /**
-     * Output only. The name of the manifest.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Self link for the manifest.
-     *
-     * @var string
-     */
-    public $selfLink;
-    /**
-     * Output only. The YAML configuration for this manifest.
-     *
-     * @param ConfigFile $config
-     */
-    public function setConfig(ConfigFile $config)
+namespace Google\Service\DeploymentManager {
+    class Manifest extends \Google\Collection
     {
+        protected $collection_key = 'imports';
+        protected $configType = ConfigFile::class;
+        protected $configDataType = '';
+        /**
+         * Output only. The fully-expanded configuration file, including any templates
+         * and references.
+         *
+         * @var string
+         */
+        public $expandedConfig;
+        /**
+         * @var string
+         */
+        public $id;
+        protected $importsType = ImportFile::class;
+        protected $importsDataType = 'array';
+        /**
+         * Output only. Creation timestamp in RFC3339 text format.
+         *
+         * @var string
+         */
+        public $insertTime;
+        /**
+         * Output only. The YAML layout for this manifest.
+         *
+         * @var string
+         */
+        public $layout;
+        /**
+         * Output only. The computed size of the fully expanded manifest.
+         *
+         * @var string
+         */
+        public $manifestSizeBytes;
+        /**
+         * Output only. The size limit for expanded manifests in the project.
+         *
+         * @var string
+         */
+        public $manifestSizeLimitBytes;
+        /**
+         * Output only. The name of the manifest.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Self link for the manifest.
+         *
+         * @var string
+         */
+        public $selfLink;
+        /**
+         * Output only. The YAML configuration for this manifest.
+         *
+         * @param ConfigFile $config
+         */
+        public function setConfig(ConfigFile $config)
+        {
+        }
+        /**
+         * @return ConfigFile
+         */
+        public function getConfig()
+        {
+        }
+        /**
+         * Output only. The fully-expanded configuration file, including any templates
+         * and references.
+         *
+         * @param string $expandedConfig
+         */
+        public function setExpandedConfig($expandedConfig)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpandedConfig()
+        {
+        }
+        /**
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Output only. The imported files for this manifest.
+         *
+         * @param ImportFile[] $imports
+         */
+        public function setImports($imports)
+        {
+        }
+        /**
+         * @return ImportFile[]
+         */
+        public function getImports()
+        {
+        }
+        /**
+         * Output only. Creation timestamp in RFC3339 text format.
+         *
+         * @param string $insertTime
+         */
+        public function setInsertTime($insertTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInsertTime()
+        {
+        }
+        /**
+         * Output only. The YAML layout for this manifest.
+         *
+         * @param string $layout
+         */
+        public function setLayout($layout)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLayout()
+        {
+        }
+        /**
+         * Output only. The computed size of the fully expanded manifest.
+         *
+         * @param string $manifestSizeBytes
+         */
+        public function setManifestSizeBytes($manifestSizeBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getManifestSizeBytes()
+        {
+        }
+        /**
+         * Output only. The size limit for expanded manifests in the project.
+         *
+         * @param string $manifestSizeLimitBytes
+         */
+        public function setManifestSizeLimitBytes($manifestSizeLimitBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getManifestSizeLimitBytes()
+        {
+        }
+        /**
+         * Output only. The name of the manifest.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Self link for the manifest.
+         *
+         * @param string $selfLink
+         */
+        public function setSelfLink($selfLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLink()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ConfigFile
+     * Runtime class alias of \Google\Service\DeploymentManager\Manifest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfig()
-    {
-    }
-    /**
-     * Output only. The fully-expanded configuration file, including any templates
-     * and references.
-     *
-     * @param string $expandedConfig
-     */
-    public function setExpandedConfig($expandedConfig)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpandedConfig()
-    {
-    }
-    /**
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Output only. The imported files for this manifest.
-     *
-     * @param ImportFile[] $imports
-     */
-    public function setImports($imports)
-    {
-    }
-    /**
-     * @return ImportFile[]
-     */
-    public function getImports()
-    {
-    }
-    /**
-     * Output only. Creation timestamp in RFC3339 text format.
-     *
-     * @param string $insertTime
-     */
-    public function setInsertTime($insertTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInsertTime()
-    {
-    }
-    /**
-     * Output only. The YAML layout for this manifest.
-     *
-     * @param string $layout
-     */
-    public function setLayout($layout)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLayout()
-    {
-    }
-    /**
-     * Output only. The computed size of the fully expanded manifest.
-     *
-     * @param string $manifestSizeBytes
-     */
-    public function setManifestSizeBytes($manifestSizeBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getManifestSizeBytes()
-    {
-    }
-    /**
-     * Output only. The size limit for expanded manifests in the project.
-     *
-     * @param string $manifestSizeLimitBytes
-     */
-    public function setManifestSizeLimitBytes($manifestSizeLimitBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getManifestSizeLimitBytes()
-    {
-    }
-    /**
-     * Output only. The name of the manifest.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Self link for the manifest.
-     *
-     * @param string $selfLink
-     */
-    public function setSelfLink($selfLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLink()
+    class Google_Service_DeploymentManager_Manifest extends \Google\Service\DeploymentManager\Manifest
     {
     }
 }

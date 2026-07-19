@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class RepairPhaseConfig extends \Google\Model
-{
-    protected $retryType = Retry::class;
-    protected $retryDataType = '';
-    protected $rollbackType = Rollback::class;
-    protected $rollbackDataType = '';
-    /**
-     * Optional. Retries a failed job.
-     *
-     * @param Retry $retry
-     */
-    public function setRetry(Retry $retry)
+namespace Google\Service\CloudDeploy {
+    class RepairPhaseConfig extends \Google\Model
     {
+        protected $retryType = Retry::class;
+        protected $retryDataType = '';
+        protected $rollbackType = Rollback::class;
+        protected $rollbackDataType = '';
+        /**
+         * Optional. Retries a failed job.
+         *
+         * @param Retry $retry
+         */
+        public function setRetry(Retry $retry)
+        {
+        }
+        /**
+         * @return Retry
+         */
+        public function getRetry()
+        {
+        }
+        /**
+         * Optional. Rolls back a `Rollout`.
+         *
+         * @param Rollback $rollback
+         */
+        public function setRollback(Rollback $rollback)
+        {
+        }
+        /**
+         * @return Rollback
+         */
+        public function getRollback()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Retry
+     * Runtime class alias of \Google\Service\CloudDeploy\RepairPhaseConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRetry()
-    {
-    }
-    /**
-     * Optional. Rolls back a `Rollout`.
-     *
-     * @param Rollback $rollback
-     */
-    public function setRollback(Rollback $rollback)
-    {
-    }
-    /**
-     * @return Rollback
-     */
-    public function getRollback()
+    class Google_Service_CloudDeploy_RepairPhaseConfig extends \Google\Service\CloudDeploy\RepairPhaseConfig
     {
     }
 }

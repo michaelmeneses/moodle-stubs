@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity;
-
-class CustomMirroringProfile extends \Google\Model
-{
-    /**
-     * Required. Immutable. The target MirroringEndpointGroup. When a mirroring
-     * rule with this security profile attached matches a packet, a replica will
-     * be mirrored to the location-local target in this group.
-     *
-     * @var string
-     */
-    public $mirroringEndpointGroup;
-    /**
-     * Required. Immutable. The target MirroringEndpointGroup. When a mirroring
-     * rule with this security profile attached matches a packet, a replica will
-     * be mirrored to the location-local target in this group.
-     *
-     * @param string $mirroringEndpointGroup
-     */
-    public function setMirroringEndpointGroup($mirroringEndpointGroup)
+namespace Google\Service\NetworkSecurity {
+    class CustomMirroringProfile extends \Google\Model
     {
+        /**
+         * Required. Immutable. The target MirroringEndpointGroup. When a mirroring
+         * rule with this security profile attached matches a packet, a replica will
+         * be mirrored to the location-local target in this group.
+         *
+         * @var string
+         */
+        public $mirroringEndpointGroup;
+        /**
+         * Required. Immutable. The target MirroringEndpointGroup. When a mirroring
+         * rule with this security profile attached matches a packet, a replica will
+         * be mirrored to the location-local target in this group.
+         *
+         * @param string $mirroringEndpointGroup
+         */
+        public function setMirroringEndpointGroup($mirroringEndpointGroup)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMirroringEndpointGroup()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkSecurity\CustomMirroringProfile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMirroringEndpointGroup()
+    class Google_Service_NetworkSecurity_CustomMirroringProfile extends \Google\Service\NetworkSecurity\CustomMirroringProfile
     {
     }
 }

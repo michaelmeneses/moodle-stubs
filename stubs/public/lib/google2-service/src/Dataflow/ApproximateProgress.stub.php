@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class ApproximateProgress extends \Google\Model
-{
-    /**
-     * Obsolete.
-     *
-     * @deprecated
-     * @var float
-     */
-    public $percentComplete;
-    protected $positionType = Position::class;
-    protected $positionDataType = '';
-    /**
-     * Obsolete.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $remainingTime;
-    /**
-     * Obsolete.
-     *
-     * @deprecated
-     * @param float $percentComplete
-     */
-    public function setPercentComplete($percentComplete)
+namespace Google\Service\Dataflow {
+    class ApproximateProgress extends \Google\Model
     {
+        /**
+         * Obsolete.
+         *
+         * @deprecated
+         * @var float
+         */
+        public $percentComplete;
+        protected $positionType = Position::class;
+        protected $positionDataType = '';
+        /**
+         * Obsolete.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $remainingTime;
+        /**
+         * Obsolete.
+         *
+         * @deprecated
+         * @param float $percentComplete
+         */
+        public function setPercentComplete($percentComplete)
+        {
+        }
+        /**
+         * @deprecated
+         * @return float
+         */
+        public function getPercentComplete()
+        {
+        }
+        /**
+         * Obsolete.
+         *
+         * @deprecated
+         * @param Position $position
+         */
+        public function setPosition(Position $position)
+        {
+        }
+        /**
+         * @deprecated
+         * @return Position
+         */
+        public function getPosition()
+        {
+        }
+        /**
+         * Obsolete.
+         *
+         * @deprecated
+         * @param string $remainingTime
+         */
+        public function setRemainingTime($remainingTime)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getRemainingTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return float
+     * Runtime class alias of \Google\Service\Dataflow\ApproximateProgress registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPercentComplete()
-    {
-    }
-    /**
-     * Obsolete.
-     *
-     * @deprecated
-     * @param Position $position
-     */
-    public function setPosition(Position $position)
-    {
-    }
-    /**
-     * @deprecated
-     * @return Position
-     */
-    public function getPosition()
-    {
-    }
-    /**
-     * Obsolete.
-     *
-     * @deprecated
-     * @param string $remainingTime
-     */
-    public function setRemainingTime($remainingTime)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getRemainingTime()
+    class Google_Service_Dataflow_ApproximateProgress extends \Google\Service\Dataflow\ApproximateProgress
     {
     }
 }

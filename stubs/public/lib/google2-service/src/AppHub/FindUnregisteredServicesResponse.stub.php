@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AppHub;
-
-class FindUnregisteredServicesResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    /**
-     * @var DiscoveredService[]
-     */
-    public $discoveredServices;
-    protected $discoveredServicesType = DiscoveredService::class;
-    protected $discoveredServicesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * @param DiscoveredService[]
-     */
-    public function setDiscoveredServices($discoveredServices)
+namespace Google\Service\AppHub {
+    class FindUnregisteredServicesResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        /**
+         * @var DiscoveredService[]
+         */
+        public $discoveredServices;
+        protected $discoveredServicesType = DiscoveredService::class;
+        protected $discoveredServicesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * @param DiscoveredService[]
+         */
+        public function setDiscoveredServices($discoveredServices)
+        {
+        }
+        /**
+         * @return DiscoveredService[]
+         */
+        public function getDiscoveredServices()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DiscoveredService[]
+     * Runtime class alias of \Google\Service\AppHub\FindUnregisteredServicesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDiscoveredServices()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_AppHub_FindUnregisteredServicesResponse extends \Google\Service\AppHub\FindUnregisteredServicesResponse
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SemanticTile;
-
-class FirstDerivativeElevationGrid extends \Google\Collection
-{
-    protected $collection_key = 'rows';
-    public $altitudeMultiplier;
-    protected $rowsType = Row::class;
-    protected $rowsDataType = 'array';
-    public function setAltitudeMultiplier($altitudeMultiplier)
+namespace Google\Service\SemanticTile {
+    class FirstDerivativeElevationGrid extends \Google\Collection
     {
+        protected $collection_key = 'rows';
+        public $altitudeMultiplier;
+        protected $rowsType = Row::class;
+        protected $rowsDataType = 'array';
+        public function setAltitudeMultiplier($altitudeMultiplier)
+        {
+        }
+        public function getAltitudeMultiplier()
+        {
+        }
+        /**
+         * @param Row[]
+         */
+        public function setRows($rows)
+        {
+        }
+        /**
+         * @return Row[]
+         */
+        public function getRows()
+        {
+        }
     }
-    public function getAltitudeMultiplier()
-    {
-    }
+}
+namespace {
     /**
-     * @param Row[]
+     * Runtime class alias of \Google\Service\SemanticTile\FirstDerivativeElevationGrid registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setRows($rows)
-    {
-    }
-    /**
-     * @return Row[]
-     */
-    public function getRows()
+    class Google_Service_SemanticTile_FirstDerivativeElevationGrid extends \Google\Service\SemanticTile\FirstDerivativeElevationGrid
     {
     }
 }

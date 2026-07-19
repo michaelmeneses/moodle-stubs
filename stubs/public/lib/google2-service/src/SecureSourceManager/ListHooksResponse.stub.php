@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecureSourceManager;
-
-class ListHooksResponse extends \Google\Collection
-{
-    protected $collection_key = 'hooks';
-    protected $hooksType = Hook::class;
-    protected $hooksDataType = 'array';
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of hooks.
-     *
-     * @param Hook[] $hooks
-     */
-    public function setHooks($hooks)
+namespace Google\Service\SecureSourceManager {
+    class ListHooksResponse extends \Google\Collection
     {
+        protected $collection_key = 'hooks';
+        protected $hooksType = Hook::class;
+        protected $hooksDataType = 'array';
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of hooks.
+         *
+         * @param Hook[] $hooks
+         */
+        public function setHooks($hooks)
+        {
+        }
+        /**
+         * @return Hook[]
+         */
+        public function getHooks()
+        {
+        }
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Hook[]
+     * Runtime class alias of \Google\Service\SecureSourceManager\ListHooksResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHooks()
-    {
-    }
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_SecureSourceManager_ListHooksResponse extends \Google\Service\SecureSourceManager\ListHooksResponse
     {
     }
 }

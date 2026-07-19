@@ -21,102 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteV1ApiCompatV1Action extends \Google\Model
-{
-    protected $confirmType = AppsDynamiteV1ApiCompatV1ActionConfirm::class;
-    protected $confirmDataType = '';
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $style;
-    /**
-     * @var string
-     */
-    public $text;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @var string
-     */
-    public $value;
-    /**
-     * @param AppsDynamiteV1ApiCompatV1ActionConfirm
-     */
-    public function setConfirm(AppsDynamiteV1ApiCompatV1ActionConfirm $confirm)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteV1ApiCompatV1Action extends \Google\Model
     {
+        protected $confirmType = AppsDynamiteV1ApiCompatV1ActionConfirm::class;
+        protected $confirmDataType = '';
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $style;
+        /**
+         * @var string
+         */
+        public $text;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @var string
+         */
+        public $value;
+        /**
+         * @param AppsDynamiteV1ApiCompatV1ActionConfirm
+         */
+        public function setConfirm(AppsDynamiteV1ApiCompatV1ActionConfirm $confirm)
+        {
+        }
+        /**
+         * @return AppsDynamiteV1ApiCompatV1ActionConfirm
+         */
+        public function getConfirm()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStyle($style)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStyle()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteV1ApiCompatV1ActionConfirm
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteV1ApiCompatV1Action registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfirm()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStyle($style)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStyle()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_CloudSearch_AppsDynamiteV1ApiCompatV1Action extends \Google\Service\CloudSearch\AppsDynamiteV1ApiCompatV1Action
     {
     }
 }

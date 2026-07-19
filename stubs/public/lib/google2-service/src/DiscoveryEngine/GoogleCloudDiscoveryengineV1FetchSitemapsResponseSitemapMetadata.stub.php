@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1FetchSitemapsResponseSitemapMetadata extends \Google\Model
-{
-    protected $sitemapType = GoogleCloudDiscoveryengineV1Sitemap::class;
-    protected $sitemapDataType = '';
-    /**
-     * The Sitemap.
-     *
-     * @param GoogleCloudDiscoveryengineV1Sitemap $sitemap
-     */
-    public function setSitemap(GoogleCloudDiscoveryengineV1Sitemap $sitemap)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1FetchSitemapsResponseSitemapMetadata extends \Google\Model
     {
+        protected $sitemapType = GoogleCloudDiscoveryengineV1Sitemap::class;
+        protected $sitemapDataType = '';
+        /**
+         * The Sitemap.
+         *
+         * @param GoogleCloudDiscoveryengineV1Sitemap $sitemap
+         */
+        public function setSitemap(GoogleCloudDiscoveryengineV1Sitemap $sitemap)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1Sitemap
+         */
+        public function getSitemap()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1Sitemap
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1FetchSitemapsResponseSitemapMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSitemap()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1FetchSitemapsResponseSitemapMetadata extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1FetchSitemapsResponseSitemapMetadata
     {
     }
 }

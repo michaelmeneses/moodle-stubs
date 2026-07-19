@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class ApksListResponse extends \Google\Collection
-{
-    protected $collection_key = 'apks';
-    protected $apksType = Apk::class;
-    protected $apksDataType = 'array';
-    /**
-     * The kind of this response ("androidpublisher#apksListResponse").
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * All APKs.
-     *
-     * @param Apk[] $apks
-     */
-    public function setApks($apks)
+namespace Google\Service\AndroidPublisher {
+    class ApksListResponse extends \Google\Collection
     {
+        protected $collection_key = 'apks';
+        protected $apksType = Apk::class;
+        protected $apksDataType = 'array';
+        /**
+         * The kind of this response ("androidpublisher#apksListResponse").
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * All APKs.
+         *
+         * @param Apk[] $apks
+         */
+        public function setApks($apks)
+        {
+        }
+        /**
+         * @return Apk[]
+         */
+        public function getApks()
+        {
+        }
+        /**
+         * The kind of this response ("androidpublisher#apksListResponse").
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Apk[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\ApksListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApks()
-    {
-    }
-    /**
-     * The kind of this response ("androidpublisher#apksListResponse").
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_AndroidPublisher_ApksListResponse extends \Google\Service\AndroidPublisher\ApksListResponse
     {
     }
 }

@@ -21,86 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement\Resource;
-
-/**
- * The "webApps" collection of methods.
- * Typical usage is:
- *  <code>
- *   $androidmanagementService = new Google\Service\AndroidManagement(...);
- *   $webApps = $androidmanagementService->enterprises_webApps;
- *  </code>
- */
-class EnterprisesWebApps extends \Google\Service\Resource
-{
+namespace Google\Service\AndroidManagement\Resource {
+    use Google\Service\AndroidManagement\AndroidmanagementEmpty;
+    use Google\Service\AndroidManagement\ListWebAppsResponse;
+    use Google\Service\AndroidManagement\WebApp;
     /**
-     * Creates a web app. (webApps.create)
-     *
-     * @param string $parent The name of the enterprise in the form
-     * enterprises/{enterpriseId}.
-     * @param WebApp $postBody
-     * @param array $optParams Optional parameters.
-     * @return WebApp
-     * @throws \Google\Service\Exception
+     * The "webApps" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $androidmanagementService = new Google\Service\AndroidManagement(...);
+     *   $webApps = $androidmanagementService->enterprises_webApps;
+     *  </code>
      */
-    public function create($parent, WebApp $postBody, $optParams = [])
+    class EnterprisesWebApps extends \Google\Service\Resource
     {
+        /**
+         * Creates a web app. (webApps.create)
+         *
+         * @param string $parent The name of the enterprise in the form
+         * enterprises/{enterpriseId}.
+         * @param WebApp $postBody
+         * @param array $optParams Optional parameters.
+         * @return WebApp
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, WebApp $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a web app. (webApps.delete)
+         *
+         * @param string $name The name of the web app in the form
+         * enterprises/{enterpriseId}/webApps/{packageName}.
+         * @param array $optParams Optional parameters.
+         * @return AndroidmanagementEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets a web app. (webApps.get)
+         *
+         * @param string $name The name of the web app in the form
+         * enterprises/{enterpriseId}/webApps/{packageName}.
+         * @param array $optParams Optional parameters.
+         * @return WebApp
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists web apps for a given enterprise. (webApps.listEnterprisesWebApps)
+         *
+         * @param string $parent The name of the enterprise in the form
+         * enterprises/{enterpriseId}.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The requested page size. This is a hint and the
+         * actual page size in the response may be different.
+         * @opt_param string pageToken A token identifying a page of results returned by
+         * the server.
+         * @return ListWebAppsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listEnterprisesWebApps($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates a web app. (webApps.patch)
+         *
+         * @param string $name The name of the web app in the form
+         * enterprises/{enterpriseId}/webApps/{packageName}.
+         * @param WebApp $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask The field mask indicating the fields to update.
+         * If not set, all modifiable fields will be modified.
+         * @return WebApp
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, WebApp $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a web app. (webApps.delete)
-     *
-     * @param string $name The name of the web app in the form
-     * enterprises/{enterpriseId}/webApps/{packageName}.
-     * @param array $optParams Optional parameters.
-     * @return AndroidmanagementEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AndroidManagement\Resource\EnterprisesWebApps registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets a web app. (webApps.get)
-     *
-     * @param string $name The name of the web app in the form
-     * enterprises/{enterpriseId}/webApps/{packageName}.
-     * @param array $optParams Optional parameters.
-     * @return WebApp
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists web apps for a given enterprise. (webApps.listEnterprisesWebApps)
-     *
-     * @param string $parent The name of the enterprise in the form
-     * enterprises/{enterpriseId}.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The requested page size. This is a hint and the
-     * actual page size in the response may be different.
-     * @opt_param string pageToken A token identifying a page of results returned by
-     * the server.
-     * @return ListWebAppsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listEnterprisesWebApps($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates a web app. (webApps.patch)
-     *
-     * @param string $name The name of the web app in the form
-     * enterprises/{enterpriseId}/webApps/{packageName}.
-     * @param WebApp $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask The field mask indicating the fields to update.
-     * If not set, all modifiable fields will be modified.
-     * @return WebApp
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, WebApp $postBody, $optParams = [])
+    class Google_Service_AndroidManagement_Resource_EnterprisesWebApps extends \Google\Service\AndroidManagement\Resource\EnterprisesWebApps
     {
     }
 }

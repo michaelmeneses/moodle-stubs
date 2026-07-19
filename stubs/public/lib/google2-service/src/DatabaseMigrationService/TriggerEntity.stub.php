@@ -21,113 +21,122 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class TriggerEntity extends \Google\Collection
-{
-    protected $collection_key = 'triggeringEvents';
-    /**
-     * Custom engine specific features.
-     *
-     * @var array[]
-     */
-    public $customFeatures;
-    /**
-     * The name of the trigger.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The SQL code which creates the trigger.
-     *
-     * @var string
-     */
-    public $sqlCode;
-    /**
-     * Indicates when the trigger fires, for example BEFORE STATEMENT, AFTER EACH
-     * ROW.
-     *
-     * @var string
-     */
-    public $triggerType;
-    /**
-     * The DML, DDL, or database events that fire the trigger, for example INSERT,
-     * UPDATE.
-     *
-     * @var string[]
-     */
-    public $triggeringEvents;
-    /**
-     * Custom engine specific features.
-     *
-     * @param array[] $customFeatures
-     */
-    public function setCustomFeatures($customFeatures)
+namespace Google\Service\DatabaseMigrationService {
+    class TriggerEntity extends \Google\Collection
     {
+        protected $collection_key = 'triggeringEvents';
+        /**
+         * Custom engine specific features.
+         *
+         * @var array[]
+         */
+        public $customFeatures;
+        /**
+         * The name of the trigger.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The SQL code which creates the trigger.
+         *
+         * @var string
+         */
+        public $sqlCode;
+        /**
+         * Indicates when the trigger fires, for example BEFORE STATEMENT, AFTER EACH
+         * ROW.
+         *
+         * @var string
+         */
+        public $triggerType;
+        /**
+         * The DML, DDL, or database events that fire the trigger, for example INSERT,
+         * UPDATE.
+         *
+         * @var string[]
+         */
+        public $triggeringEvents;
+        /**
+         * Custom engine specific features.
+         *
+         * @param array[] $customFeatures
+         */
+        public function setCustomFeatures($customFeatures)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getCustomFeatures()
+        {
+        }
+        /**
+         * The name of the trigger.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The SQL code which creates the trigger.
+         *
+         * @param string $sqlCode
+         */
+        public function setSqlCode($sqlCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSqlCode()
+        {
+        }
+        /**
+         * Indicates when the trigger fires, for example BEFORE STATEMENT, AFTER EACH
+         * ROW.
+         *
+         * @param string $triggerType
+         */
+        public function setTriggerType($triggerType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTriggerType()
+        {
+        }
+        /**
+         * The DML, DDL, or database events that fire the trigger, for example INSERT,
+         * UPDATE.
+         *
+         * @param string[] $triggeringEvents
+         */
+        public function setTriggeringEvents($triggeringEvents)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTriggeringEvents()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\TriggerEntity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomFeatures()
-    {
-    }
-    /**
-     * The name of the trigger.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The SQL code which creates the trigger.
-     *
-     * @param string $sqlCode
-     */
-    public function setSqlCode($sqlCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSqlCode()
-    {
-    }
-    /**
-     * Indicates when the trigger fires, for example BEFORE STATEMENT, AFTER EACH
-     * ROW.
-     *
-     * @param string $triggerType
-     */
-    public function setTriggerType($triggerType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTriggerType()
-    {
-    }
-    /**
-     * The DML, DDL, or database events that fire the trigger, for example INSERT,
-     * UPDATE.
-     *
-     * @param string[] $triggeringEvents
-     */
-    public function setTriggeringEvents($triggeringEvents)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTriggeringEvents()
+    class Google_Service_DatabaseMigrationService_TriggerEntity extends \Google\Service\DatabaseMigrationService\TriggerEntity
     {
     }
 }

@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class GeneratedAssetPackSlice extends \Google\Model
-{
-    /**
-     * Download ID, which uniquely identifies the APK to download. Should be
-     * supplied to `generatedapks.download` method.
-     *
-     * @var string
-     */
-    public $downloadId;
-    /**
-     * Name of the module that this asset slice belongs to.
-     *
-     * @var string
-     */
-    public $moduleName;
-    /**
-     * Asset slice ID.
-     *
-     * @var string
-     */
-    public $sliceId;
-    /**
-     * Asset module version.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Download ID, which uniquely identifies the APK to download. Should be
-     * supplied to `generatedapks.download` method.
-     *
-     * @param string $downloadId
-     */
-    public function setDownloadId($downloadId)
+namespace Google\Service\AndroidPublisher {
+    class GeneratedAssetPackSlice extends \Google\Model
     {
+        /**
+         * Download ID, which uniquely identifies the APK to download. Should be
+         * supplied to `generatedapks.download` method.
+         *
+         * @var string
+         */
+        public $downloadId;
+        /**
+         * Name of the module that this asset slice belongs to.
+         *
+         * @var string
+         */
+        public $moduleName;
+        /**
+         * Asset slice ID.
+         *
+         * @var string
+         */
+        public $sliceId;
+        /**
+         * Asset module version.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Download ID, which uniquely identifies the APK to download. Should be
+         * supplied to `generatedapks.download` method.
+         *
+         * @param string $downloadId
+         */
+        public function setDownloadId($downloadId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDownloadId()
+        {
+        }
+        /**
+         * Name of the module that this asset slice belongs to.
+         *
+         * @param string $moduleName
+         */
+        public function setModuleName($moduleName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModuleName()
+        {
+        }
+        /**
+         * Asset slice ID.
+         *
+         * @param string $sliceId
+         */
+        public function setSliceId($sliceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSliceId()
+        {
+        }
+        /**
+         * Asset module version.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\GeneratedAssetPackSlice registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDownloadId()
-    {
-    }
-    /**
-     * Name of the module that this asset slice belongs to.
-     *
-     * @param string $moduleName
-     */
-    public function setModuleName($moduleName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getModuleName()
-    {
-    }
-    /**
-     * Asset slice ID.
-     *
-     * @param string $sliceId
-     */
-    public function setSliceId($sliceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSliceId()
-    {
-    }
-    /**
-     * Asset module version.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_AndroidPublisher_GeneratedAssetPackSlice extends \Google\Service\AndroidPublisher\GeneratedAssetPackSlice
     {
     }
 }

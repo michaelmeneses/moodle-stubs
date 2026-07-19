@@ -21,38 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase\Resource;
-
-/**
- * The "dbSystemInitialStorageSizes" collection of methods.
- * Typical usage is:
- *  <code>
- *   $oracledatabaseService = new Google\Service\OracleDatabase(...);
- *   $dbSystemInitialStorageSizes = $oracledatabaseService->projects_locations_dbSystemInitialStorageSizes;
- *  </code>
- */
-class ProjectsLocationsDbSystemInitialStorageSizes extends \Google\Service\Resource
-{
+namespace Google\Service\OracleDatabase\Resource {
+    use Google\Service\OracleDatabase\ListDbSystemInitialStorageSizesResponse;
     /**
-     * Lists all the DbSystemInitialStorageSizes for the given project and location.
-     * (dbSystemInitialStorageSizes.listProjectsLocationsDbSystemInitialStorageSizes
-     * )
-     *
-     * @param string $parent Required. The parent value for the
-     * DbSystemInitialStorageSize resource with the format:
-     * projects/{project}/locations/{location}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. The maximum number of items to return. If
-     * unspecified, a maximum of 50 DbSystemInitialStorageSizes will be returned.
-     * The maximum value is 1000; values above 1000 will be reset to 1000.
-     * @opt_param string pageToken Optional. A token identifying the requested page
-     * of results to return. All fields except the filter should remain the same as
-     * in the request that provided this page token.
-     * @return ListDbSystemInitialStorageSizesResponse
-     * @throws \Google\Service\Exception
+     * The "dbSystemInitialStorageSizes" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $oracledatabaseService = new Google\Service\OracleDatabase(...);
+     *   $dbSystemInitialStorageSizes = $oracledatabaseService->projects_locations_dbSystemInitialStorageSizes;
+     *  </code>
      */
-    public function listProjectsLocationsDbSystemInitialStorageSizes($parent, $optParams = [])
+    class ProjectsLocationsDbSystemInitialStorageSizes extends \Google\Service\Resource
+    {
+        /**
+         * Lists all the DbSystemInitialStorageSizes for the given project and location.
+         * (dbSystemInitialStorageSizes.listProjectsLocationsDbSystemInitialStorageSizes
+         * )
+         *
+         * @param string $parent Required. The parent value for the
+         * DbSystemInitialStorageSize resource with the format:
+         * projects/{project}/locations/{location}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. The maximum number of items to return. If
+         * unspecified, a maximum of 50 DbSystemInitialStorageSizes will be returned.
+         * The maximum value is 1000; values above 1000 will be reset to 1000.
+         * @opt_param string pageToken Optional. A token identifying the requested page
+         * of results to return. All fields except the filter should remain the same as
+         * in the request that provided this page token.
+         * @return ListDbSystemInitialStorageSizesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsDbSystemInitialStorageSizes($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\OracleDatabase\Resource\ProjectsLocationsDbSystemInitialStorageSizes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_OracleDatabase_Resource_ProjectsLocationsDbSystemInitialStorageSizes extends \Google\Service\OracleDatabase\Resource\ProjectsLocationsDbSystemInitialStorageSizes
     {
     }
 }

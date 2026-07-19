@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecaptchaEnterprise;
-
-class GoogleCloudRecaptchaenterpriseV1FirewallPolicyAssessment extends \Google\Model
-{
-    protected $errorType = GoogleRpcStatus::class;
-    protected $errorDataType = '';
-    protected $firewallPolicyType = GoogleCloudRecaptchaenterpriseV1FirewallPolicy::class;
-    protected $firewallPolicyDataType = '';
-    /**
-     * Output only. If the processing of a policy config fails, an error is
-     * populated and the firewall_policy is left empty.
-     *
-     * @param GoogleRpcStatus $error
-     */
-    public function setError(GoogleRpcStatus $error)
+namespace Google\Service\RecaptchaEnterprise {
+    class GoogleCloudRecaptchaenterpriseV1FirewallPolicyAssessment extends \Google\Model
     {
+        protected $errorType = GoogleRpcStatus::class;
+        protected $errorDataType = '';
+        protected $firewallPolicyType = GoogleCloudRecaptchaenterpriseV1FirewallPolicy::class;
+        protected $firewallPolicyDataType = '';
+        /**
+         * Output only. If the processing of a policy config fails, an error is
+         * populated and the firewall_policy is left empty.
+         *
+         * @param GoogleRpcStatus $error
+         */
+        public function setError(GoogleRpcStatus $error)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus
+         */
+        public function getError()
+        {
+        }
+        /**
+         * Output only. The policy that matched the request. If more than one policy
+         * may match, this is the first match. If no policy matches the incoming
+         * request, the policy field is left empty.
+         *
+         * @param GoogleCloudRecaptchaenterpriseV1FirewallPolicy $firewallPolicy
+         */
+        public function setFirewallPolicy(GoogleCloudRecaptchaenterpriseV1FirewallPolicy $firewallPolicy)
+        {
+        }
+        /**
+         * @return GoogleCloudRecaptchaenterpriseV1FirewallPolicy
+         */
+        public function getFirewallPolicy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleRpcStatus
+     * Runtime class alias of \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1FirewallPolicyAssessment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getError()
-    {
-    }
-    /**
-     * Output only. The policy that matched the request. If more than one policy
-     * may match, this is the first match. If no policy matches the incoming
-     * request, the policy field is left empty.
-     *
-     * @param GoogleCloudRecaptchaenterpriseV1FirewallPolicy $firewallPolicy
-     */
-    public function setFirewallPolicy(GoogleCloudRecaptchaenterpriseV1FirewallPolicy $firewallPolicy)
-    {
-    }
-    /**
-     * @return GoogleCloudRecaptchaenterpriseV1FirewallPolicy
-     */
-    public function getFirewallPolicy()
+    class Google_Service_RecaptchaEnterprise_GoogleCloudRecaptchaenterpriseV1FirewallPolicyAssessment extends \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1FirewallPolicyAssessment
     {
     }
 }

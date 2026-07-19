@@ -21,15 +21,24 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1beta1ViewSpec extends \Google\Model
-{
-    public $viewQuery;
-    public function setViewQuery($viewQuery)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1beta1ViewSpec extends \Google\Model
     {
+        public $viewQuery;
+        public function setViewQuery($viewQuery)
+        {
+        }
+        public function getViewQuery()
+        {
+        }
     }
-    public function getViewQuery()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1ViewSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1beta1ViewSpec extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1ViewSpec
     {
     }
 }

@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Gmail;
-
-class BatchModifyMessagesRequest extends \Google\Collection
-{
-    protected $collection_key = 'removeLabelIds';
-    /**
-     * A list of label IDs to add to messages.
-     *
-     * @var string[]
-     */
-    public $addLabelIds;
-    /**
-     * The IDs of the messages to modify. There is a limit of 1000 ids per
-     * request.
-     *
-     * @var string[]
-     */
-    public $ids;
-    /**
-     * A list of label IDs to remove from messages.
-     *
-     * @var string[]
-     */
-    public $removeLabelIds;
-    /**
-     * A list of label IDs to add to messages.
-     *
-     * @param string[] $addLabelIds
-     */
-    public function setAddLabelIds($addLabelIds)
+namespace Google\Service\Gmail {
+    class BatchModifyMessagesRequest extends \Google\Collection
     {
+        protected $collection_key = 'removeLabelIds';
+        /**
+         * A list of label IDs to add to messages.
+         *
+         * @var string[]
+         */
+        public $addLabelIds;
+        /**
+         * The IDs of the messages to modify. There is a limit of 1000 ids per
+         * request.
+         *
+         * @var string[]
+         */
+        public $ids;
+        /**
+         * A list of label IDs to remove from messages.
+         *
+         * @var string[]
+         */
+        public $removeLabelIds;
+        /**
+         * A list of label IDs to add to messages.
+         *
+         * @param string[] $addLabelIds
+         */
+        public function setAddLabelIds($addLabelIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAddLabelIds()
+        {
+        }
+        /**
+         * The IDs of the messages to modify. There is a limit of 1000 ids per
+         * request.
+         *
+         * @param string[] $ids
+         */
+        public function setIds($ids)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIds()
+        {
+        }
+        /**
+         * A list of label IDs to remove from messages.
+         *
+         * @param string[] $removeLabelIds
+         */
+        public function setRemoveLabelIds($removeLabelIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRemoveLabelIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Gmail\BatchModifyMessagesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddLabelIds()
-    {
-    }
-    /**
-     * The IDs of the messages to modify. There is a limit of 1000 ids per
-     * request.
-     *
-     * @param string[] $ids
-     */
-    public function setIds($ids)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getIds()
-    {
-    }
-    /**
-     * A list of label IDs to remove from messages.
-     *
-     * @param string[] $removeLabelIds
-     */
-    public function setRemoveLabelIds($removeLabelIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRemoveLabelIds()
+    class Google_Service_Gmail_BatchModifyMessagesRequest extends \Google\Service\Gmail\BatchModifyMessagesRequest
     {
     }
 }

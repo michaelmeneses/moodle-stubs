@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class EditInventorySourceReadWriteAccessorsRequest extends \Google\Model
-{
-    protected $advertisersUpdateType = EditInventorySourceReadWriteAccessorsRequestAdvertisersUpdate::class;
-    protected $advertisersUpdateDataType = '';
-    /**
-     * Set the partner context as read/write accessor of the inventory source.
-     * This will remove all other current read/write advertiser accessors.
-     *
-     * @var bool
-     */
-    public $assignPartner;
-    /**
-     * Required. The partner context by which the accessors change is being made.
-     *
-     * @var string
-     */
-    public $partnerId;
-    /**
-     * The advertisers to add or remove from the list of advertisers that have
-     * read/write access to the inventory source. This change will remove an
-     * existing partner read/write accessor.
-     *
-     * @param EditInventorySourceReadWriteAccessorsRequestAdvertisersUpdate $advertisersUpdate
-     */
-    public function setAdvertisersUpdate(EditInventorySourceReadWriteAccessorsRequestAdvertisersUpdate $advertisersUpdate)
+namespace Google\Service\DisplayVideo {
+    class EditInventorySourceReadWriteAccessorsRequest extends \Google\Model
     {
+        protected $advertisersUpdateType = EditInventorySourceReadWriteAccessorsRequestAdvertisersUpdate::class;
+        protected $advertisersUpdateDataType = '';
+        /**
+         * Set the partner context as read/write accessor of the inventory source.
+         * This will remove all other current read/write advertiser accessors.
+         *
+         * @var bool
+         */
+        public $assignPartner;
+        /**
+         * Required. The partner context by which the accessors change is being made.
+         *
+         * @var string
+         */
+        public $partnerId;
+        /**
+         * The advertisers to add or remove from the list of advertisers that have
+         * read/write access to the inventory source. This change will remove an
+         * existing partner read/write accessor.
+         *
+         * @param EditInventorySourceReadWriteAccessorsRequestAdvertisersUpdate $advertisersUpdate
+         */
+        public function setAdvertisersUpdate(EditInventorySourceReadWriteAccessorsRequestAdvertisersUpdate $advertisersUpdate)
+        {
+        }
+        /**
+         * @return EditInventorySourceReadWriteAccessorsRequestAdvertisersUpdate
+         */
+        public function getAdvertisersUpdate()
+        {
+        }
+        /**
+         * Set the partner context as read/write accessor of the inventory source.
+         * This will remove all other current read/write advertiser accessors.
+         *
+         * @param bool $assignPartner
+         */
+        public function setAssignPartner($assignPartner)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAssignPartner()
+        {
+        }
+        /**
+         * Required. The partner context by which the accessors change is being made.
+         *
+         * @param string $partnerId
+         */
+        public function setPartnerId($partnerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPartnerId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EditInventorySourceReadWriteAccessorsRequestAdvertisersUpdate
+     * Runtime class alias of \Google\Service\DisplayVideo\EditInventorySourceReadWriteAccessorsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdvertisersUpdate()
-    {
-    }
-    /**
-     * Set the partner context as read/write accessor of the inventory source.
-     * This will remove all other current read/write advertiser accessors.
-     *
-     * @param bool $assignPartner
-     */
-    public function setAssignPartner($assignPartner)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getAssignPartner()
-    {
-    }
-    /**
-     * Required. The partner context by which the accessors change is being made.
-     *
-     * @param string $partnerId
-     */
-    public function setPartnerId($partnerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPartnerId()
+    class Google_Service_DisplayVideo_EditInventorySourceReadWriteAccessorsRequest extends \Google\Service\DisplayVideo\EditInventorySourceReadWriteAccessorsRequest
     {
     }
 }

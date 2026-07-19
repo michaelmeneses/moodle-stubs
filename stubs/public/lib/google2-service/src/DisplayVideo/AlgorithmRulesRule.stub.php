@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class AlgorithmRulesRule extends \Google\Collection
-{
-    protected $collection_key = 'conditions';
-    protected $conditionsType = AlgorithmRulesRuleCondition::class;
-    protected $conditionsDataType = 'array';
-    protected $defaultReturnValueType = AlgorithmRulesSignalValue::class;
-    protected $defaultReturnValueDataType = '';
-    /**
-     * List of conditions in this rule. The criteria among conditions should be
-     * mutually exclusive.
-     *
-     * @param AlgorithmRulesRuleCondition[] $conditions
-     */
-    public function setConditions($conditions)
+namespace Google\Service\DisplayVideo {
+    class AlgorithmRulesRule extends \Google\Collection
     {
+        protected $collection_key = 'conditions';
+        protected $conditionsType = AlgorithmRulesRuleCondition::class;
+        protected $conditionsDataType = 'array';
+        protected $defaultReturnValueType = AlgorithmRulesSignalValue::class;
+        protected $defaultReturnValueDataType = '';
+        /**
+         * List of conditions in this rule. The criteria among conditions should be
+         * mutually exclusive.
+         *
+         * @param AlgorithmRulesRuleCondition[] $conditions
+         */
+        public function setConditions($conditions)
+        {
+        }
+        /**
+         * @return AlgorithmRulesRuleCondition[]
+         */
+        public function getConditions()
+        {
+        }
+        /**
+         * The default return value applied when none of the conditions are met.
+         *
+         * @param AlgorithmRulesSignalValue $defaultReturnValue
+         */
+        public function setDefaultReturnValue(AlgorithmRulesSignalValue $defaultReturnValue)
+        {
+        }
+        /**
+         * @return AlgorithmRulesSignalValue
+         */
+        public function getDefaultReturnValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AlgorithmRulesRuleCondition[]
+     * Runtime class alias of \Google\Service\DisplayVideo\AlgorithmRulesRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConditions()
-    {
-    }
-    /**
-     * The default return value applied when none of the conditions are met.
-     *
-     * @param AlgorithmRulesSignalValue $defaultReturnValue
-     */
-    public function setDefaultReturnValue(AlgorithmRulesSignalValue $defaultReturnValue)
-    {
-    }
-    /**
-     * @return AlgorithmRulesSignalValue
-     */
-    public function getDefaultReturnValue()
+    class Google_Service_DisplayVideo_AlgorithmRulesRule extends \Google\Service\DisplayVideo\AlgorithmRulesRule
     {
     }
 }

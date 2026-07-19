@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class Migration extends \Google\Model
-{
-    /**
-     * Immutable. Resource path as an URI of the source resource, for example a
-     * subnet. The project for the source resource should match the project for
-     * the InternalRange. An example:
-     * /projects/{project}/regions/{region}/subnetworks/{subnet}
-     *
-     * @var string
-     */
-    public $source;
-    /**
-     * Immutable. Resource path of the target resource. The target project can be
-     * different, as in the cases when migrating to peer networks. For example:
-     * /projects/{project}/regions/{region}/subnetworks/{subnet}
-     *
-     * @var string
-     */
-    public $target;
-    /**
-     * Immutable. Resource path as an URI of the source resource, for example a
-     * subnet. The project for the source resource should match the project for
-     * the InternalRange. An example:
-     * /projects/{project}/regions/{region}/subnetworks/{subnet}
-     *
-     * @param string $source
-     */
-    public function setSource($source)
+namespace Google\Service\Networkconnectivity {
+    class Migration extends \Google\Model
     {
+        /**
+         * Immutable. Resource path as an URI of the source resource, for example a
+         * subnet. The project for the source resource should match the project for
+         * the InternalRange. An example:
+         * /projects/{project}/regions/{region}/subnetworks/{subnet}
+         *
+         * @var string
+         */
+        public $source;
+        /**
+         * Immutable. Resource path of the target resource. The target project can be
+         * different, as in the cases when migrating to peer networks. For example:
+         * /projects/{project}/regions/{region}/subnetworks/{subnet}
+         *
+         * @var string
+         */
+        public $target;
+        /**
+         * Immutable. Resource path as an URI of the source resource, for example a
+         * subnet. The project for the source resource should match the project for
+         * the InternalRange. An example:
+         * /projects/{project}/regions/{region}/subnetworks/{subnet}
+         *
+         * @param string $source
+         */
+        public function setSource($source)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSource()
+        {
+        }
+        /**
+         * Immutable. Resource path of the target resource. The target project can be
+         * different, as in the cases when migrating to peer networks. For example:
+         * /projects/{project}/regions/{region}/subnetworks/{subnet}
+         *
+         * @param string $target
+         */
+        public function setTarget($target)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTarget()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Networkconnectivity\Migration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSource()
-    {
-    }
-    /**
-     * Immutable. Resource path of the target resource. The target project can be
-     * different, as in the cases when migrating to peer networks. For example:
-     * /projects/{project}/regions/{region}/subnetworks/{subnet}
-     *
-     * @param string $target
-     */
-    public function setTarget($target)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTarget()
+    class Google_Service_Networkconnectivity_Migration extends \Google\Service\Networkconnectivity\Migration
     {
     }
 }

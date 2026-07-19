@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class ClientSecretCredentials extends \Google\Model
-{
-    /**
-     * Azure client ID.
-     *
-     * @var string
-     */
-    public $clientId;
-    /**
-     * Input only. Azure client secret.
-     *
-     * @var string
-     */
-    public $clientSecret;
-    /**
-     * Azure tenant ID.
-     *
-     * @var string
-     */
-    public $tenantId;
-    /**
-     * Azure client ID.
-     *
-     * @param string $clientId
-     */
-    public function setClientId($clientId)
+namespace Google\Service\VMMigrationService {
+    class ClientSecretCredentials extends \Google\Model
     {
+        /**
+         * Azure client ID.
+         *
+         * @var string
+         */
+        public $clientId;
+        /**
+         * Input only. Azure client secret.
+         *
+         * @var string
+         */
+        public $clientSecret;
+        /**
+         * Azure tenant ID.
+         *
+         * @var string
+         */
+        public $tenantId;
+        /**
+         * Azure client ID.
+         *
+         * @param string $clientId
+         */
+        public function setClientId($clientId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientId()
+        {
+        }
+        /**
+         * Input only. Azure client secret.
+         *
+         * @param string $clientSecret
+         */
+        public function setClientSecret($clientSecret)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientSecret()
+        {
+        }
+        /**
+         * Azure tenant ID.
+         *
+         * @param string $tenantId
+         */
+        public function setTenantId($tenantId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTenantId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\VMMigrationService\ClientSecretCredentials registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClientId()
-    {
-    }
-    /**
-     * Input only. Azure client secret.
-     *
-     * @param string $clientSecret
-     */
-    public function setClientSecret($clientSecret)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClientSecret()
-    {
-    }
-    /**
-     * Azure tenant ID.
-     *
-     * @param string $tenantId
-     */
-    public function setTenantId($tenantId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTenantId()
+    class Google_Service_VMMigrationService_ClientSecretCredentials extends \Google\Service\VMMigrationService\ClientSecretCredentials
     {
     }
 }

@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RagVectorDbConfigRagManagedDb extends \Google\Model
-{
-    protected $annType = GoogleCloudAiplatformV1RagVectorDbConfigRagManagedDbANN::class;
-    protected $annDataType = '';
-    protected $knnType = GoogleCloudAiplatformV1RagVectorDbConfigRagManagedDbKNN::class;
-    protected $knnDataType = '';
-    /**
-     * Performs an ANN search on RagCorpus. Use this if you have a lot of files (>
-     * 10K) in your RagCorpus and want to reduce the search latency.
-     *
-     * @param GoogleCloudAiplatformV1RagVectorDbConfigRagManagedDbANN $ann
-     */
-    public function setAnn(GoogleCloudAiplatformV1RagVectorDbConfigRagManagedDbANN $ann)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RagVectorDbConfigRagManagedDb extends \Google\Model
     {
+        protected $annType = GoogleCloudAiplatformV1RagVectorDbConfigRagManagedDbANN::class;
+        protected $annDataType = '';
+        protected $knnType = GoogleCloudAiplatformV1RagVectorDbConfigRagManagedDbKNN::class;
+        protected $knnDataType = '';
+        /**
+         * Performs an ANN search on RagCorpus. Use this if you have a lot of files (>
+         * 10K) in your RagCorpus and want to reduce the search latency.
+         *
+         * @param GoogleCloudAiplatformV1RagVectorDbConfigRagManagedDbANN $ann
+         */
+        public function setAnn(GoogleCloudAiplatformV1RagVectorDbConfigRagManagedDbANN $ann)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RagVectorDbConfigRagManagedDbANN
+         */
+        public function getAnn()
+        {
+        }
+        /**
+         * Performs a KNN search on RagCorpus. Default choice if not specified.
+         *
+         * @param GoogleCloudAiplatformV1RagVectorDbConfigRagManagedDbKNN $knn
+         */
+        public function setKnn(GoogleCloudAiplatformV1RagVectorDbConfigRagManagedDbKNN $knn)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RagVectorDbConfigRagManagedDbKNN
+         */
+        public function getKnn()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1RagVectorDbConfigRagManagedDbANN
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagVectorDbConfigRagManagedDb registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnn()
-    {
-    }
-    /**
-     * Performs a KNN search on RagCorpus. Default choice if not specified.
-     *
-     * @param GoogleCloudAiplatformV1RagVectorDbConfigRagManagedDbKNN $knn
-     */
-    public function setKnn(GoogleCloudAiplatformV1RagVectorDbConfigRagManagedDbKNN $knn)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1RagVectorDbConfigRagManagedDbKNN
-     */
-    public function getKnn()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RagVectorDbConfigRagManagedDb extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagVectorDbConfigRagManagedDb
     {
     }
 }

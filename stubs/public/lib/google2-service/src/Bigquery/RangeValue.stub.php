@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class RangeValue extends \Google\Model
-{
-    protected $endType = QueryParameterValue::class;
-    protected $endDataType = '';
-    protected $startType = QueryParameterValue::class;
-    protected $startDataType = '';
-    /**
-     * Optional. The end value of the range. A missing value represents an
-     * unbounded end.
-     *
-     * @param QueryParameterValue $end
-     */
-    public function setEnd(QueryParameterValue $end)
+namespace Google\Service\Bigquery {
+    class RangeValue extends \Google\Model
     {
+        protected $endType = QueryParameterValue::class;
+        protected $endDataType = '';
+        protected $startType = QueryParameterValue::class;
+        protected $startDataType = '';
+        /**
+         * Optional. The end value of the range. A missing value represents an
+         * unbounded end.
+         *
+         * @param QueryParameterValue $end
+         */
+        public function setEnd(QueryParameterValue $end)
+        {
+        }
+        /**
+         * @return QueryParameterValue
+         */
+        public function getEnd()
+        {
+        }
+        /**
+         * Optional. The start value of the range. A missing value represents an
+         * unbounded start.
+         *
+         * @param QueryParameterValue $start
+         */
+        public function setStart(QueryParameterValue $start)
+        {
+        }
+        /**
+         * @return QueryParameterValue
+         */
+        public function getStart()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return QueryParameterValue
+     * Runtime class alias of \Google\Service\Bigquery\RangeValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnd()
-    {
-    }
-    /**
-     * Optional. The start value of the range. A missing value represents an
-     * unbounded start.
-     *
-     * @param QueryParameterValue $start
-     */
-    public function setStart(QueryParameterValue $start)
-    {
-    }
-    /**
-     * @return QueryParameterValue
-     */
-    public function getStart()
+    class Google_Service_Bigquery_RangeValue extends \Google\Service\Bigquery\RangeValue
     {
     }
 }

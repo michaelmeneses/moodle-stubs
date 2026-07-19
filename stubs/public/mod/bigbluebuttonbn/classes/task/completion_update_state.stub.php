@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_bigbluebuttonbn\task;
 
+use core\task\adhoc_task;
+use core_user;
+use mod_bigbluebuttonbn\local\proxy\bigbluebutton_proxy;
 /**
  * Class containing the scheduled task for updating the completion state.
  *

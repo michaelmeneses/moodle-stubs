@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AppHub;
-
-class LookupDiscoveredServiceResponse extends \Google\Model
-{
-    protected $discoveredServiceType = DiscoveredService::class;
-    protected $discoveredServiceDataType = '';
-    /**
-     * Discovered Service if exists, empty otherwise.
-     *
-     * @param DiscoveredService $discoveredService
-     */
-    public function setDiscoveredService(DiscoveredService $discoveredService)
+namespace Google\Service\AppHub {
+    class LookupDiscoveredServiceResponse extends \Google\Model
     {
+        protected $discoveredServiceType = DiscoveredService::class;
+        protected $discoveredServiceDataType = '';
+        /**
+         * Discovered Service if exists, empty otherwise.
+         *
+         * @param DiscoveredService $discoveredService
+         */
+        public function setDiscoveredService(DiscoveredService $discoveredService)
+        {
+        }
+        /**
+         * @return DiscoveredService
+         */
+        public function getDiscoveredService()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DiscoveredService
+     * Runtime class alias of \Google\Service\AppHub\LookupDiscoveredServiceResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDiscoveredService()
+    class Google_Service_AppHub_LookupDiscoveredServiceResponse extends \Google\Service\AppHub\LookupDiscoveredServiceResponse
     {
     }
 }

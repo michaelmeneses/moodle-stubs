@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sasportal;
-
-class SasPortalNode extends \Google\Collection
-{
-    protected $collection_key = 'sasUserIds';
-    /**
-     * The node's display name.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. Resource name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * User ids used by the devices belonging to this node.
-     *
-     * @var string[]
-     */
-    public $sasUserIds;
-    /**
-     * The node's display name.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\Sasportal {
+    class SasPortalNode extends \Google\Collection
     {
+        protected $collection_key = 'sasUserIds';
+        /**
+         * The node's display name.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. Resource name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * User ids used by the devices belonging to this node.
+         *
+         * @var string[]
+         */
+        public $sasUserIds;
+        /**
+         * The node's display name.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. Resource name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * User ids used by the devices belonging to this node.
+         *
+         * @param string[] $sasUserIds
+         */
+        public function setSasUserIds($sasUserIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSasUserIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Sasportal\SasPortalNode registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. Resource name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * User ids used by the devices belonging to this node.
-     *
-     * @param string[] $sasUserIds
-     */
-    public function setSasUserIds($sasUserIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSasUserIds()
+    class Google_Service_Sasportal_SasPortalNode extends \Google\Service\Sasportal\SasPortalNode
     {
     }
 }

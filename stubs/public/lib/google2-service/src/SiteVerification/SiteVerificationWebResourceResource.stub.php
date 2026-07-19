@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SiteVerification;
-
-class SiteVerificationWebResourceResource extends \Google\Collection
-{
-    protected $collection_key = 'owners';
-    /**
-     * The string used to identify this site. This value should be used in the
-     * "id" portion of the REST URL for the Get, Update, and Delete operations.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The email addresses of all verified owners.
-     *
-     * @var string[]
-     */
-    public $owners;
-    protected $siteType = SiteVerificationWebResourceResourceSite::class;
-    protected $siteDataType = '';
-    /**
-     * The string used to identify this site. This value should be used in the
-     * "id" portion of the REST URL for the Get, Update, and Delete operations.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\SiteVerification {
+    class SiteVerificationWebResourceResource extends \Google\Collection
     {
+        protected $collection_key = 'owners';
+        /**
+         * The string used to identify this site. This value should be used in the
+         * "id" portion of the REST URL for the Get, Update, and Delete operations.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The email addresses of all verified owners.
+         *
+         * @var string[]
+         */
+        public $owners;
+        protected $siteType = SiteVerificationWebResourceResourceSite::class;
+        protected $siteDataType = '';
+        /**
+         * The string used to identify this site. This value should be used in the
+         * "id" portion of the REST URL for the Get, Update, and Delete operations.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The email addresses of all verified owners.
+         *
+         * @param string[] $owners
+         */
+        public function setOwners($owners)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getOwners()
+        {
+        }
+        /**
+         * The address and type of a site that is verified or will be verified.
+         *
+         * @param SiteVerificationWebResourceResourceSite $site
+         */
+        public function setSite(SiteVerificationWebResourceResourceSite $site)
+        {
+        }
+        /**
+         * @return SiteVerificationWebResourceResourceSite
+         */
+        public function getSite()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SiteVerification\SiteVerificationWebResourceResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * The email addresses of all verified owners.
-     *
-     * @param string[] $owners
-     */
-    public function setOwners($owners)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getOwners()
-    {
-    }
-    /**
-     * The address and type of a site that is verified or will be verified.
-     *
-     * @param SiteVerificationWebResourceResourceSite $site
-     */
-    public function setSite(SiteVerificationWebResourceResourceSite $site)
-    {
-    }
-    /**
-     * @return SiteVerificationWebResourceResourceSite
-     */
-    public function getSite()
+    class Google_Service_SiteVerification_SiteVerificationWebResourceResource extends \Google\Service\SiteVerification\SiteVerificationWebResourceResource
     {
     }
 }

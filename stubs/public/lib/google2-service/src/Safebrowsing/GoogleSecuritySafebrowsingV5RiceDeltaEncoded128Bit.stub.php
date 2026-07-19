@@ -21,118 +21,127 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Safebrowsing;
-
-class GoogleSecuritySafebrowsingV5RiceDeltaEncoded128Bit extends \Google\Model
-{
-    /**
-     * The encoded deltas that are encoded using the Golomb-Rice coder.
-     *
-     * @var string
-     */
-    public $encodedData;
-    /**
-     * The number of entries that are delta encoded in the encoded data. If only a
-     * single integer was encoded, this will be zero and the single value will be
-     * stored in `first_value`.
-     *
-     * @var int
-     */
-    public $entriesCount;
-    /**
-     * The upper 64 bits of the first entry in the encoded data (hashes). If the
-     * field is empty, the upper 64 bits are all zero.
-     *
-     * @var string
-     */
-    public $firstValueHi;
-    /**
-     * The lower 64 bits of the first entry in the encoded data (hashes). If the
-     * field is empty, the lower 64 bits are all zero.
-     *
-     * @var string
-     */
-    public $firstValueLo;
-    /**
-     * The Golomb-Rice parameter. This parameter is guaranteed to be between 99
-     * and 126, inclusive.
-     *
-     * @var int
-     */
-    public $riceParameter;
-    /**
-     * The encoded deltas that are encoded using the Golomb-Rice coder.
-     *
-     * @param string $encodedData
-     */
-    public function setEncodedData($encodedData)
+namespace Google\Service\Safebrowsing {
+    class GoogleSecuritySafebrowsingV5RiceDeltaEncoded128Bit extends \Google\Model
     {
+        /**
+         * The encoded deltas that are encoded using the Golomb-Rice coder.
+         *
+         * @var string
+         */
+        public $encodedData;
+        /**
+         * The number of entries that are delta encoded in the encoded data. If only a
+         * single integer was encoded, this will be zero and the single value will be
+         * stored in `first_value`.
+         *
+         * @var int
+         */
+        public $entriesCount;
+        /**
+         * The upper 64 bits of the first entry in the encoded data (hashes). If the
+         * field is empty, the upper 64 bits are all zero.
+         *
+         * @var string
+         */
+        public $firstValueHi;
+        /**
+         * The lower 64 bits of the first entry in the encoded data (hashes). If the
+         * field is empty, the lower 64 bits are all zero.
+         *
+         * @var string
+         */
+        public $firstValueLo;
+        /**
+         * The Golomb-Rice parameter. This parameter is guaranteed to be between 99
+         * and 126, inclusive.
+         *
+         * @var int
+         */
+        public $riceParameter;
+        /**
+         * The encoded deltas that are encoded using the Golomb-Rice coder.
+         *
+         * @param string $encodedData
+         */
+        public function setEncodedData($encodedData)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEncodedData()
+        {
+        }
+        /**
+         * The number of entries that are delta encoded in the encoded data. If only a
+         * single integer was encoded, this will be zero and the single value will be
+         * stored in `first_value`.
+         *
+         * @param int $entriesCount
+         */
+        public function setEntriesCount($entriesCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getEntriesCount()
+        {
+        }
+        /**
+         * The upper 64 bits of the first entry in the encoded data (hashes). If the
+         * field is empty, the upper 64 bits are all zero.
+         *
+         * @param string $firstValueHi
+         */
+        public function setFirstValueHi($firstValueHi)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFirstValueHi()
+        {
+        }
+        /**
+         * The lower 64 bits of the first entry in the encoded data (hashes). If the
+         * field is empty, the lower 64 bits are all zero.
+         *
+         * @param string $firstValueLo
+         */
+        public function setFirstValueLo($firstValueLo)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFirstValueLo()
+        {
+        }
+        /**
+         * The Golomb-Rice parameter. This parameter is guaranteed to be between 99
+         * and 126, inclusive.
+         *
+         * @param int $riceParameter
+         */
+        public function setRiceParameter($riceParameter)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRiceParameter()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV5RiceDeltaEncoded128Bit registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEncodedData()
-    {
-    }
-    /**
-     * The number of entries that are delta encoded in the encoded data. If only a
-     * single integer was encoded, this will be zero and the single value will be
-     * stored in `first_value`.
-     *
-     * @param int $entriesCount
-     */
-    public function setEntriesCount($entriesCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getEntriesCount()
-    {
-    }
-    /**
-     * The upper 64 bits of the first entry in the encoded data (hashes). If the
-     * field is empty, the upper 64 bits are all zero.
-     *
-     * @param string $firstValueHi
-     */
-    public function setFirstValueHi($firstValueHi)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFirstValueHi()
-    {
-    }
-    /**
-     * The lower 64 bits of the first entry in the encoded data (hashes). If the
-     * field is empty, the lower 64 bits are all zero.
-     *
-     * @param string $firstValueLo
-     */
-    public function setFirstValueLo($firstValueLo)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFirstValueLo()
-    {
-    }
-    /**
-     * The Golomb-Rice parameter. This parameter is guaranteed to be between 99
-     * and 126, inclusive.
-     *
-     * @param int $riceParameter
-     */
-    public function setRiceParameter($riceParameter)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRiceParameter()
+    class Google_Service_Safebrowsing_GoogleSecuritySafebrowsingV5RiceDeltaEncoded128Bit extends \Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV5RiceDeltaEncoded128Bit
     {
     }
 }

@@ -21,323 +21,332 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudLifeSciences;
-
-class Action extends \Google\Collection
-{
-    protected $collection_key = 'mounts';
-    /**
-     * @var bool
-     */
-    public $alwaysRun;
-    /**
-     * @var bool
-     */
-    public $blockExternalNetwork;
-    /**
-     * @var string[]
-     */
-    public $commands;
-    /**
-     * @var string
-     */
-    public $containerName;
-    protected $credentialsType = Secret::class;
-    protected $credentialsDataType = '';
-    /**
-     * @var bool
-     */
-    public $disableImagePrefetch;
-    /**
-     * @var bool
-     */
-    public $disableStandardErrorCapture;
-    /**
-     * @var bool
-     */
-    public $enableFuse;
-    protected $encryptedEnvironmentType = Secret::class;
-    protected $encryptedEnvironmentDataType = '';
-    /**
-     * @var string
-     */
-    public $entrypoint;
-    /**
-     * @var string[]
-     */
-    public $environment;
-    /**
-     * @var bool
-     */
-    public $ignoreExitStatus;
-    /**
-     * @var string
-     */
-    public $imageUri;
-    /**
-     * @var string[]
-     */
-    public $labels;
-    protected $mountsType = Mount::class;
-    protected $mountsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $pidNamespace;
-    /**
-     * @var int[]
-     */
-    public $portMappings;
-    /**
-     * @var bool
-     */
-    public $publishExposedPorts;
-    /**
-     * @var bool
-     */
-    public $runInBackground;
-    /**
-     * @var string
-     */
-    public $timeout;
-    /**
-     * @param bool
-     */
-    public function setAlwaysRun($alwaysRun)
+namespace Google\Service\CloudLifeSciences {
+    class Action extends \Google\Collection
     {
+        protected $collection_key = 'mounts';
+        /**
+         * @var bool
+         */
+        public $alwaysRun;
+        /**
+         * @var bool
+         */
+        public $blockExternalNetwork;
+        /**
+         * @var string[]
+         */
+        public $commands;
+        /**
+         * @var string
+         */
+        public $containerName;
+        protected $credentialsType = Secret::class;
+        protected $credentialsDataType = '';
+        /**
+         * @var bool
+         */
+        public $disableImagePrefetch;
+        /**
+         * @var bool
+         */
+        public $disableStandardErrorCapture;
+        /**
+         * @var bool
+         */
+        public $enableFuse;
+        protected $encryptedEnvironmentType = Secret::class;
+        protected $encryptedEnvironmentDataType = '';
+        /**
+         * @var string
+         */
+        public $entrypoint;
+        /**
+         * @var string[]
+         */
+        public $environment;
+        /**
+         * @var bool
+         */
+        public $ignoreExitStatus;
+        /**
+         * @var string
+         */
+        public $imageUri;
+        /**
+         * @var string[]
+         */
+        public $labels;
+        protected $mountsType = Mount::class;
+        protected $mountsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $pidNamespace;
+        /**
+         * @var int[]
+         */
+        public $portMappings;
+        /**
+         * @var bool
+         */
+        public $publishExposedPorts;
+        /**
+         * @var bool
+         */
+        public $runInBackground;
+        /**
+         * @var string
+         */
+        public $timeout;
+        /**
+         * @param bool
+         */
+        public function setAlwaysRun($alwaysRun)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAlwaysRun()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setBlockExternalNetwork($blockExternalNetwork)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBlockExternalNetwork()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setCommands($commands)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCommands()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setContainerName($containerName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContainerName()
+        {
+        }
+        /**
+         * @param Secret
+         */
+        public function setCredentials(Secret $credentials)
+        {
+        }
+        /**
+         * @return Secret
+         */
+        public function getCredentials()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setDisableImagePrefetch($disableImagePrefetch)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisableImagePrefetch()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setDisableStandardErrorCapture($disableStandardErrorCapture)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisableStandardErrorCapture()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setEnableFuse($enableFuse)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableFuse()
+        {
+        }
+        /**
+         * @param Secret
+         */
+        public function setEncryptedEnvironment(Secret $encryptedEnvironment)
+        {
+        }
+        /**
+         * @return Secret
+         */
+        public function getEncryptedEnvironment()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEntrypoint($entrypoint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEntrypoint()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setEnvironment($environment)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEnvironment()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setIgnoreExitStatus($ignoreExitStatus)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIgnoreExitStatus()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setImageUri($imageUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageUri()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * @param Mount[]
+         */
+        public function setMounts($mounts)
+        {
+        }
+        /**
+         * @return Mount[]
+         */
+        public function getMounts()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPidNamespace($pidNamespace)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPidNamespace()
+        {
+        }
+        /**
+         * @param int[]
+         */
+        public function setPortMappings($portMappings)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getPortMappings()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setPublishExposedPorts($publishExposedPorts)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPublishExposedPorts()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setRunInBackground($runInBackground)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRunInBackground()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTimeout($timeout)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeout()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudLifeSciences\Action registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlwaysRun()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setBlockExternalNetwork($blockExternalNetwork)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getBlockExternalNetwork()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setCommands($commands)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getCommands()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setContainerName($containerName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContainerName()
-    {
-    }
-    /**
-     * @param Secret
-     */
-    public function setCredentials(Secret $credentials)
-    {
-    }
-    /**
-     * @return Secret
-     */
-    public function getCredentials()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setDisableImagePrefetch($disableImagePrefetch)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDisableImagePrefetch()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setDisableStandardErrorCapture($disableStandardErrorCapture)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDisableStandardErrorCapture()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setEnableFuse($enableFuse)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableFuse()
-    {
-    }
-    /**
-     * @param Secret
-     */
-    public function setEncryptedEnvironment(Secret $encryptedEnvironment)
-    {
-    }
-    /**
-     * @return Secret
-     */
-    public function getEncryptedEnvironment()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEntrypoint($entrypoint)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEntrypoint()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setEnvironment($environment)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getEnvironment()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setIgnoreExitStatus($ignoreExitStatus)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIgnoreExitStatus()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setImageUri($imageUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImageUri()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * @param Mount[]
-     */
-    public function setMounts($mounts)
-    {
-    }
-    /**
-     * @return Mount[]
-     */
-    public function getMounts()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPidNamespace($pidNamespace)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPidNamespace()
-    {
-    }
-    /**
-     * @param int[]
-     */
-    public function setPortMappings($portMappings)
-    {
-    }
-    /**
-     * @return int[]
-     */
-    public function getPortMappings()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setPublishExposedPorts($publishExposedPorts)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPublishExposedPorts()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setRunInBackground($runInBackground)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getRunInBackground()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTimeout($timeout)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeout()
+    class Google_Service_CloudLifeSciences_Action extends \Google\Service\CloudLifeSciences\Action
     {
     }
 }

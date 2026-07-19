@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class EnterpriseTopazSidekickNlpMetadata extends \Google\Model
-{
-    /**
-     * Confidence of the interpretation that generated this card.
-     *
-     * @var float
-     */
-    public $confidence;
-    /**
-     * Confidence of the interpretation that generated this card.
-     *
-     * @param float $confidence
-     */
-    public function setConfidence($confidence)
+namespace Google\Service\CloudSearch {
+    class EnterpriseTopazSidekickNlpMetadata extends \Google\Model
     {
+        /**
+         * Confidence of the interpretation that generated this card.
+         *
+         * @var float
+         */
+        public $confidence;
+        /**
+         * Confidence of the interpretation that generated this card.
+         *
+         * @param float $confidence
+         */
+        public function setConfidence($confidence)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidence()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\CloudSearch\EnterpriseTopazSidekickNlpMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfidence()
+    class Google_Service_CloudSearch_EnterpriseTopazSidekickNlpMetadata extends \Google\Service\CloudSearch\EnterpriseTopazSidekickNlpMetadata
     {
     }
 }

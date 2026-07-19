@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class SkaffoldGCBRepoSource extends \Google\Model
-{
-    /**
-     * Optional. Relative path from the repository root to the Skaffold Config
-     * file.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * Optional. Branch or tag to use when cloning the repository.
-     *
-     * @var string
-     */
-    public $ref;
-    /**
-     * Required. Name of the Cloud Build V2 Repository. Format is projects/{projec
-     * t}/locations/{location}/connections/{connection}/repositories/{repository}.
-     *
-     * @var string
-     */
-    public $repository;
-    /**
-     * Optional. Relative path from the repository root to the Skaffold Config
-     * file.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
+namespace Google\Service\CloudDeploy {
+    class SkaffoldGCBRepoSource extends \Google\Model
     {
+        /**
+         * Optional. Relative path from the repository root to the Skaffold Config
+         * file.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * Optional. Branch or tag to use when cloning the repository.
+         *
+         * @var string
+         */
+        public $ref;
+        /**
+         * Required. Name of the Cloud Build V2 Repository. Format is projects/{projec
+         * t}/locations/{location}/connections/{connection}/repositories/{repository}.
+         *
+         * @var string
+         */
+        public $repository;
+        /**
+         * Optional. Relative path from the repository root to the Skaffold Config
+         * file.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
+        /**
+         * Optional. Branch or tag to use when cloning the repository.
+         *
+         * @param string $ref
+         */
+        public function setRef($ref)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRef()
+        {
+        }
+        /**
+         * Required. Name of the Cloud Build V2 Repository. Format is projects/{projec
+         * t}/locations/{location}/connections/{connection}/repositories/{repository}.
+         *
+         * @param string $repository
+         */
+        public function setRepository($repository)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRepository()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDeploy\SkaffoldGCBRepoSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPath()
-    {
-    }
-    /**
-     * Optional. Branch or tag to use when cloning the repository.
-     *
-     * @param string $ref
-     */
-    public function setRef($ref)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRef()
-    {
-    }
-    /**
-     * Required. Name of the Cloud Build V2 Repository. Format is projects/{projec
-     * t}/locations/{location}/connections/{connection}/repositories/{repository}.
-     *
-     * @param string $repository
-     */
-    public function setRepository($repository)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRepository()
+    class Google_Service_CloudDeploy_SkaffoldGCBRepoSource extends \Google\Service\CloudDeploy\SkaffoldGCBRepoSource
     {
     }
 }

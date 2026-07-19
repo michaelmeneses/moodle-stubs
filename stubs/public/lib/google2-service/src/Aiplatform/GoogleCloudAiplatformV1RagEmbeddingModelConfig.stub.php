@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RagEmbeddingModelConfig extends \Google\Model
-{
-    protected $vertexPredictionEndpointType = GoogleCloudAiplatformV1RagEmbeddingModelConfigVertexPredictionEndpoint::class;
-    protected $vertexPredictionEndpointDataType = '';
-    /**
-     * The Vertex AI Prediction Endpoint that either refers to a publisher model
-     * or an endpoint that is hosting a 1P fine-tuned text embedding model.
-     * Endpoints hosting non-1P fine-tuned text embedding models are currently not
-     * supported. This is used for dense vector search.
-     *
-     * @param GoogleCloudAiplatformV1RagEmbeddingModelConfigVertexPredictionEndpoint $vertexPredictionEndpoint
-     */
-    public function setVertexPredictionEndpoint(GoogleCloudAiplatformV1RagEmbeddingModelConfigVertexPredictionEndpoint $vertexPredictionEndpoint)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RagEmbeddingModelConfig extends \Google\Model
     {
+        protected $vertexPredictionEndpointType = GoogleCloudAiplatformV1RagEmbeddingModelConfigVertexPredictionEndpoint::class;
+        protected $vertexPredictionEndpointDataType = '';
+        /**
+         * The Vertex AI Prediction Endpoint that either refers to a publisher model
+         * or an endpoint that is hosting a 1P fine-tuned text embedding model.
+         * Endpoints hosting non-1P fine-tuned text embedding models are currently not
+         * supported. This is used for dense vector search.
+         *
+         * @param GoogleCloudAiplatformV1RagEmbeddingModelConfigVertexPredictionEndpoint $vertexPredictionEndpoint
+         */
+        public function setVertexPredictionEndpoint(GoogleCloudAiplatformV1RagEmbeddingModelConfigVertexPredictionEndpoint $vertexPredictionEndpoint)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RagEmbeddingModelConfigVertexPredictionEndpoint
+         */
+        public function getVertexPredictionEndpoint()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1RagEmbeddingModelConfigVertexPredictionEndpoint
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagEmbeddingModelConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVertexPredictionEndpoint()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RagEmbeddingModelConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagEmbeddingModelConfig
     {
     }
 }

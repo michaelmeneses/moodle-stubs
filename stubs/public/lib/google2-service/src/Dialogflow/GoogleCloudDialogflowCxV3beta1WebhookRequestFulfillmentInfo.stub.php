@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3beta1WebhookRequestFulfillmentInfo extends \Google\Model
-{
-    /**
-     * Always present. The value of the Fulfillment.tag field will be populated in
-     * this field by Dialogflow when the associated webhook is called. The tag is
-     * typically used by the webhook service to identify which fulfillment is
-     * being called, but it could be used for other purposes.
-     *
-     * @var string
-     */
-    public $tag;
-    /**
-     * Always present. The value of the Fulfillment.tag field will be populated in
-     * this field by Dialogflow when the associated webhook is called. The tag is
-     * typically used by the webhook service to identify which fulfillment is
-     * being called, but it could be used for other purposes.
-     *
-     * @param string $tag
-     */
-    public function setTag($tag)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3beta1WebhookRequestFulfillmentInfo extends \Google\Model
     {
+        /**
+         * Always present. The value of the Fulfillment.tag field will be populated in
+         * this field by Dialogflow when the associated webhook is called. The tag is
+         * typically used by the webhook service to identify which fulfillment is
+         * being called, but it could be used for other purposes.
+         *
+         * @var string
+         */
+        public $tag;
+        /**
+         * Always present. The value of the Fulfillment.tag field will be populated in
+         * this field by Dialogflow when the associated webhook is called. The tag is
+         * typically used by the webhook service to identify which fulfillment is
+         * being called, but it could be used for other purposes.
+         *
+         * @param string $tag
+         */
+        public function setTag($tag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTag()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1WebhookRequestFulfillmentInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTag()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3beta1WebhookRequestFulfillmentInfo extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1WebhookRequestFulfillmentInfo
     {
     }
 }

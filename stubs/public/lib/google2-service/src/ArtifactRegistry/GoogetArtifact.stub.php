@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class GoogetArtifact extends \Google\Model
-{
-    /**
-     * Output only. Operating system architecture of the artifact.
-     *
-     * @var string
-     */
-    public $architecture;
-    /**
-     * Output only. The Artifact Registry resource name of the artifact.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The GooGet package name of the artifact.
-     *
-     * @var string
-     */
-    public $packageName;
-    /**
-     * Output only. Operating system architecture of the artifact.
-     *
-     * @param string $architecture
-     */
-    public function setArchitecture($architecture)
+namespace Google\Service\ArtifactRegistry {
+    class GoogetArtifact extends \Google\Model
     {
+        /**
+         * Output only. Operating system architecture of the artifact.
+         *
+         * @var string
+         */
+        public $architecture;
+        /**
+         * Output only. The Artifact Registry resource name of the artifact.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The GooGet package name of the artifact.
+         *
+         * @var string
+         */
+        public $packageName;
+        /**
+         * Output only. Operating system architecture of the artifact.
+         *
+         * @param string $architecture
+         */
+        public function setArchitecture($architecture)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getArchitecture()
+        {
+        }
+        /**
+         * Output only. The Artifact Registry resource name of the artifact.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The GooGet package name of the artifact.
+         *
+         * @param string $packageName
+         */
+        public function setPackageName($packageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackageName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ArtifactRegistry\GoogetArtifact registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArchitecture()
-    {
-    }
-    /**
-     * Output only. The Artifact Registry resource name of the artifact.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The GooGet package name of the artifact.
-     *
-     * @param string $packageName
-     */
-    public function setPackageName($packageName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPackageName()
+    class Google_Service_ArtifactRegistry_GoogetArtifact extends \Google\Service\ArtifactRegistry\GoogetArtifact
     {
     }
 }

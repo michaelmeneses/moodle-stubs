@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MapsPlaces;
-
-class GoogleMapsPlacesV1PlaceConsumerAlertDetails extends \Google\Model
-{
-    protected $aboutLinkType = GoogleMapsPlacesV1PlaceConsumerAlertDetailsLink::class;
-    protected $aboutLinkDataType = '';
-    /**
-     * The description of the consumer alert message.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The title to show together with the description.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * The link to show together with the description to provide more information.
-     *
-     * @param GoogleMapsPlacesV1PlaceConsumerAlertDetailsLink $aboutLink
-     */
-    public function setAboutLink(GoogleMapsPlacesV1PlaceConsumerAlertDetailsLink $aboutLink)
+namespace Google\Service\MapsPlaces {
+    class GoogleMapsPlacesV1PlaceConsumerAlertDetails extends \Google\Model
     {
+        protected $aboutLinkType = GoogleMapsPlacesV1PlaceConsumerAlertDetailsLink::class;
+        protected $aboutLinkDataType = '';
+        /**
+         * The description of the consumer alert message.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The title to show together with the description.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * The link to show together with the description to provide more information.
+         *
+         * @param GoogleMapsPlacesV1PlaceConsumerAlertDetailsLink $aboutLink
+         */
+        public function setAboutLink(GoogleMapsPlacesV1PlaceConsumerAlertDetailsLink $aboutLink)
+        {
+        }
+        /**
+         * @return GoogleMapsPlacesV1PlaceConsumerAlertDetailsLink
+         */
+        public function getAboutLink()
+        {
+        }
+        /**
+         * The description of the consumer alert message.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The title to show together with the description.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleMapsPlacesV1PlaceConsumerAlertDetailsLink
+     * Runtime class alias of \Google\Service\MapsPlaces\GoogleMapsPlacesV1PlaceConsumerAlertDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAboutLink()
-    {
-    }
-    /**
-     * The description of the consumer alert message.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * The title to show together with the description.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_MapsPlaces_GoogleMapsPlacesV1PlaceConsumerAlertDetails extends \Google\Service\MapsPlaces\GoogleMapsPlacesV1PlaceConsumerAlertDetails
     {
     }
 }

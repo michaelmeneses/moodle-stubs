@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class SetDataValidationRequest extends \Google\Model
-{
-    /**
-     * Optional. If true, the data validation rule will be applied to the filtered
-     * rows as well.
-     *
-     * @var bool
-     */
-    public $filteredRowsIncluded;
-    protected $rangeType = GridRange::class;
-    protected $rangeDataType = '';
-    protected $ruleType = DataValidationRule::class;
-    protected $ruleDataType = '';
-    /**
-     * Optional. If true, the data validation rule will be applied to the filtered
-     * rows as well.
-     *
-     * @param bool $filteredRowsIncluded
-     */
-    public function setFilteredRowsIncluded($filteredRowsIncluded)
+namespace Google\Service\Sheets {
+    class SetDataValidationRequest extends \Google\Model
     {
+        /**
+         * Optional. If true, the data validation rule will be applied to the filtered
+         * rows as well.
+         *
+         * @var bool
+         */
+        public $filteredRowsIncluded;
+        protected $rangeType = GridRange::class;
+        protected $rangeDataType = '';
+        protected $ruleType = DataValidationRule::class;
+        protected $ruleDataType = '';
+        /**
+         * Optional. If true, the data validation rule will be applied to the filtered
+         * rows as well.
+         *
+         * @param bool $filteredRowsIncluded
+         */
+        public function setFilteredRowsIncluded($filteredRowsIncluded)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getFilteredRowsIncluded()
+        {
+        }
+        /**
+         * The range the data validation rule should apply to.
+         *
+         * @param GridRange $range
+         */
+        public function setRange(GridRange $range)
+        {
+        }
+        /**
+         * @return GridRange
+         */
+        public function getRange()
+        {
+        }
+        /**
+         * The data validation rule to set on each cell in the range, or empty to
+         * clear the data validation in the range.
+         *
+         * @param DataValidationRule $rule
+         */
+        public function setRule(DataValidationRule $rule)
+        {
+        }
+        /**
+         * @return DataValidationRule
+         */
+        public function getRule()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Sheets\SetDataValidationRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilteredRowsIncluded()
-    {
-    }
-    /**
-     * The range the data validation rule should apply to.
-     *
-     * @param GridRange $range
-     */
-    public function setRange(GridRange $range)
-    {
-    }
-    /**
-     * @return GridRange
-     */
-    public function getRange()
-    {
-    }
-    /**
-     * The data validation rule to set on each cell in the range, or empty to
-     * clear the data validation in the range.
-     *
-     * @param DataValidationRule $rule
-     */
-    public function setRule(DataValidationRule $rule)
-    {
-    }
-    /**
-     * @return DataValidationRule
-     */
-    public function getRule()
+    class Google_Service_Sheets_SetDataValidationRequest extends \Google\Service\Sheets\SetDataValidationRequest
     {
     }
 }

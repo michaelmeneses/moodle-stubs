@@ -21,458 +21,467 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storagetransfer;
-
-class TransferCounters extends \Google\Model
-{
-    /**
-     * Bytes that are copied to the data sink.
-     *
-     * @var string
-     */
-    public $bytesCopiedToSink;
-    /**
-     * Bytes that are deleted from the data sink.
-     *
-     * @var string
-     */
-    public $bytesDeletedFromSink;
-    /**
-     * Bytes that are deleted from the data source.
-     *
-     * @var string
-     */
-    public $bytesDeletedFromSource;
-    /**
-     * Bytes that failed to be deleted from the data sink.
-     *
-     * @var string
-     */
-    public $bytesFailedToDeleteFromSink;
-    /**
-     * Bytes found in the data source that are scheduled to be transferred,
-     * excluding any that are filtered based on object conditions or skipped due
-     * to sync.
-     *
-     * @var string
-     */
-    public $bytesFoundFromSource;
-    /**
-     * Bytes found only in the data sink that are scheduled to be deleted.
-     *
-     * @var string
-     */
-    public $bytesFoundOnlyFromSink;
-    /**
-     * Bytes in the data source that failed to be transferred or that failed to be
-     * deleted after being transferred.
-     *
-     * @var string
-     */
-    public $bytesFromSourceFailed;
-    /**
-     * Bytes in the data source that are not transferred because they already
-     * exist in the data sink.
-     *
-     * @var string
-     */
-    public $bytesFromSourceSkippedBySync;
-    /**
-     * For transfers involving PosixFilesystem only. Number of listing failures
-     * for each directory found at the source. Potential failures when listing a
-     * directory include permission failure or block failure. If listing a
-     * directory fails, no files in the directory are transferred.
-     *
-     * @var string
-     */
-    public $directoriesFailedToListFromSource;
-    /**
-     * For transfers involving PosixFilesystem only. Number of directories found
-     * while listing. For example, if the root directory of the transfer is
-     * `base/` and there are two other directories, `a/` and `b/` under this
-     * directory, the count after listing `base/`, `base/a/` and `base/b/` is 3.
-     *
-     * @var string
-     */
-    public $directoriesFoundFromSource;
-    /**
-     * For transfers involving PosixFilesystem only. Number of successful listings
-     * for each directory found at the source.
-     *
-     * @var string
-     */
-    public $directoriesSuccessfullyListedFromSource;
-    /**
-     * Number of successfully cleaned up intermediate objects.
-     *
-     * @var string
-     */
-    public $intermediateObjectsCleanedUp;
-    /**
-     * Number of intermediate objects failed cleaned up.
-     *
-     * @var string
-     */
-    public $intermediateObjectsFailedCleanedUp;
-    /**
-     * Objects that are copied to the data sink.
-     *
-     * @var string
-     */
-    public $objectsCopiedToSink;
-    /**
-     * Objects that are deleted from the data sink.
-     *
-     * @var string
-     */
-    public $objectsDeletedFromSink;
-    /**
-     * Objects that are deleted from the data source.
-     *
-     * @var string
-     */
-    public $objectsDeletedFromSource;
-    /**
-     * Objects that failed to be deleted from the data sink.
-     *
-     * @var string
-     */
-    public $objectsFailedToDeleteFromSink;
-    /**
-     * Objects found in the data source that are scheduled to be transferred,
-     * excluding any that are filtered based on object conditions or skipped due
-     * to sync.
-     *
-     * @var string
-     */
-    public $objectsFoundFromSource;
-    /**
-     * Objects found only in the data sink that are scheduled to be deleted.
-     *
-     * @var string
-     */
-    public $objectsFoundOnlyFromSink;
-    /**
-     * Objects in the data source that failed to be transferred or that failed to
-     * be deleted after being transferred.
-     *
-     * @var string
-     */
-    public $objectsFromSourceFailed;
-    /**
-     * Objects in the data source that are not transferred because they already
-     * exist in the data sink.
-     *
-     * @var string
-     */
-    public $objectsFromSourceSkippedBySync;
-    /**
-     * Bytes that are copied to the data sink.
-     *
-     * @param string $bytesCopiedToSink
-     */
-    public function setBytesCopiedToSink($bytesCopiedToSink)
+namespace Google\Service\Storagetransfer {
+    class TransferCounters extends \Google\Model
     {
+        /**
+         * Bytes that are copied to the data sink.
+         *
+         * @var string
+         */
+        public $bytesCopiedToSink;
+        /**
+         * Bytes that are deleted from the data sink.
+         *
+         * @var string
+         */
+        public $bytesDeletedFromSink;
+        /**
+         * Bytes that are deleted from the data source.
+         *
+         * @var string
+         */
+        public $bytesDeletedFromSource;
+        /**
+         * Bytes that failed to be deleted from the data sink.
+         *
+         * @var string
+         */
+        public $bytesFailedToDeleteFromSink;
+        /**
+         * Bytes found in the data source that are scheduled to be transferred,
+         * excluding any that are filtered based on object conditions or skipped due
+         * to sync.
+         *
+         * @var string
+         */
+        public $bytesFoundFromSource;
+        /**
+         * Bytes found only in the data sink that are scheduled to be deleted.
+         *
+         * @var string
+         */
+        public $bytesFoundOnlyFromSink;
+        /**
+         * Bytes in the data source that failed to be transferred or that failed to be
+         * deleted after being transferred.
+         *
+         * @var string
+         */
+        public $bytesFromSourceFailed;
+        /**
+         * Bytes in the data source that are not transferred because they already
+         * exist in the data sink.
+         *
+         * @var string
+         */
+        public $bytesFromSourceSkippedBySync;
+        /**
+         * For transfers involving PosixFilesystem only. Number of listing failures
+         * for each directory found at the source. Potential failures when listing a
+         * directory include permission failure or block failure. If listing a
+         * directory fails, no files in the directory are transferred.
+         *
+         * @var string
+         */
+        public $directoriesFailedToListFromSource;
+        /**
+         * For transfers involving PosixFilesystem only. Number of directories found
+         * while listing. For example, if the root directory of the transfer is
+         * `base/` and there are two other directories, `a/` and `b/` under this
+         * directory, the count after listing `base/`, `base/a/` and `base/b/` is 3.
+         *
+         * @var string
+         */
+        public $directoriesFoundFromSource;
+        /**
+         * For transfers involving PosixFilesystem only. Number of successful listings
+         * for each directory found at the source.
+         *
+         * @var string
+         */
+        public $directoriesSuccessfullyListedFromSource;
+        /**
+         * Number of successfully cleaned up intermediate objects.
+         *
+         * @var string
+         */
+        public $intermediateObjectsCleanedUp;
+        /**
+         * Number of intermediate objects failed cleaned up.
+         *
+         * @var string
+         */
+        public $intermediateObjectsFailedCleanedUp;
+        /**
+         * Objects that are copied to the data sink.
+         *
+         * @var string
+         */
+        public $objectsCopiedToSink;
+        /**
+         * Objects that are deleted from the data sink.
+         *
+         * @var string
+         */
+        public $objectsDeletedFromSink;
+        /**
+         * Objects that are deleted from the data source.
+         *
+         * @var string
+         */
+        public $objectsDeletedFromSource;
+        /**
+         * Objects that failed to be deleted from the data sink.
+         *
+         * @var string
+         */
+        public $objectsFailedToDeleteFromSink;
+        /**
+         * Objects found in the data source that are scheduled to be transferred,
+         * excluding any that are filtered based on object conditions or skipped due
+         * to sync.
+         *
+         * @var string
+         */
+        public $objectsFoundFromSource;
+        /**
+         * Objects found only in the data sink that are scheduled to be deleted.
+         *
+         * @var string
+         */
+        public $objectsFoundOnlyFromSink;
+        /**
+         * Objects in the data source that failed to be transferred or that failed to
+         * be deleted after being transferred.
+         *
+         * @var string
+         */
+        public $objectsFromSourceFailed;
+        /**
+         * Objects in the data source that are not transferred because they already
+         * exist in the data sink.
+         *
+         * @var string
+         */
+        public $objectsFromSourceSkippedBySync;
+        /**
+         * Bytes that are copied to the data sink.
+         *
+         * @param string $bytesCopiedToSink
+         */
+        public function setBytesCopiedToSink($bytesCopiedToSink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBytesCopiedToSink()
+        {
+        }
+        /**
+         * Bytes that are deleted from the data sink.
+         *
+         * @param string $bytesDeletedFromSink
+         */
+        public function setBytesDeletedFromSink($bytesDeletedFromSink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBytesDeletedFromSink()
+        {
+        }
+        /**
+         * Bytes that are deleted from the data source.
+         *
+         * @param string $bytesDeletedFromSource
+         */
+        public function setBytesDeletedFromSource($bytesDeletedFromSource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBytesDeletedFromSource()
+        {
+        }
+        /**
+         * Bytes that failed to be deleted from the data sink.
+         *
+         * @param string $bytesFailedToDeleteFromSink
+         */
+        public function setBytesFailedToDeleteFromSink($bytesFailedToDeleteFromSink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBytesFailedToDeleteFromSink()
+        {
+        }
+        /**
+         * Bytes found in the data source that are scheduled to be transferred,
+         * excluding any that are filtered based on object conditions or skipped due
+         * to sync.
+         *
+         * @param string $bytesFoundFromSource
+         */
+        public function setBytesFoundFromSource($bytesFoundFromSource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBytesFoundFromSource()
+        {
+        }
+        /**
+         * Bytes found only in the data sink that are scheduled to be deleted.
+         *
+         * @param string $bytesFoundOnlyFromSink
+         */
+        public function setBytesFoundOnlyFromSink($bytesFoundOnlyFromSink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBytesFoundOnlyFromSink()
+        {
+        }
+        /**
+         * Bytes in the data source that failed to be transferred or that failed to be
+         * deleted after being transferred.
+         *
+         * @param string $bytesFromSourceFailed
+         */
+        public function setBytesFromSourceFailed($bytesFromSourceFailed)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBytesFromSourceFailed()
+        {
+        }
+        /**
+         * Bytes in the data source that are not transferred because they already
+         * exist in the data sink.
+         *
+         * @param string $bytesFromSourceSkippedBySync
+         */
+        public function setBytesFromSourceSkippedBySync($bytesFromSourceSkippedBySync)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBytesFromSourceSkippedBySync()
+        {
+        }
+        /**
+         * For transfers involving PosixFilesystem only. Number of listing failures
+         * for each directory found at the source. Potential failures when listing a
+         * directory include permission failure or block failure. If listing a
+         * directory fails, no files in the directory are transferred.
+         *
+         * @param string $directoriesFailedToListFromSource
+         */
+        public function setDirectoriesFailedToListFromSource($directoriesFailedToListFromSource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDirectoriesFailedToListFromSource()
+        {
+        }
+        /**
+         * For transfers involving PosixFilesystem only. Number of directories found
+         * while listing. For example, if the root directory of the transfer is
+         * `base/` and there are two other directories, `a/` and `b/` under this
+         * directory, the count after listing `base/`, `base/a/` and `base/b/` is 3.
+         *
+         * @param string $directoriesFoundFromSource
+         */
+        public function setDirectoriesFoundFromSource($directoriesFoundFromSource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDirectoriesFoundFromSource()
+        {
+        }
+        /**
+         * For transfers involving PosixFilesystem only. Number of successful listings
+         * for each directory found at the source.
+         *
+         * @param string $directoriesSuccessfullyListedFromSource
+         */
+        public function setDirectoriesSuccessfullyListedFromSource($directoriesSuccessfullyListedFromSource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDirectoriesSuccessfullyListedFromSource()
+        {
+        }
+        /**
+         * Number of successfully cleaned up intermediate objects.
+         *
+         * @param string $intermediateObjectsCleanedUp
+         */
+        public function setIntermediateObjectsCleanedUp($intermediateObjectsCleanedUp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIntermediateObjectsCleanedUp()
+        {
+        }
+        /**
+         * Number of intermediate objects failed cleaned up.
+         *
+         * @param string $intermediateObjectsFailedCleanedUp
+         */
+        public function setIntermediateObjectsFailedCleanedUp($intermediateObjectsFailedCleanedUp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIntermediateObjectsFailedCleanedUp()
+        {
+        }
+        /**
+         * Objects that are copied to the data sink.
+         *
+         * @param string $objectsCopiedToSink
+         */
+        public function setObjectsCopiedToSink($objectsCopiedToSink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectsCopiedToSink()
+        {
+        }
+        /**
+         * Objects that are deleted from the data sink.
+         *
+         * @param string $objectsDeletedFromSink
+         */
+        public function setObjectsDeletedFromSink($objectsDeletedFromSink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectsDeletedFromSink()
+        {
+        }
+        /**
+         * Objects that are deleted from the data source.
+         *
+         * @param string $objectsDeletedFromSource
+         */
+        public function setObjectsDeletedFromSource($objectsDeletedFromSource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectsDeletedFromSource()
+        {
+        }
+        /**
+         * Objects that failed to be deleted from the data sink.
+         *
+         * @param string $objectsFailedToDeleteFromSink
+         */
+        public function setObjectsFailedToDeleteFromSink($objectsFailedToDeleteFromSink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectsFailedToDeleteFromSink()
+        {
+        }
+        /**
+         * Objects found in the data source that are scheduled to be transferred,
+         * excluding any that are filtered based on object conditions or skipped due
+         * to sync.
+         *
+         * @param string $objectsFoundFromSource
+         */
+        public function setObjectsFoundFromSource($objectsFoundFromSource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectsFoundFromSource()
+        {
+        }
+        /**
+         * Objects found only in the data sink that are scheduled to be deleted.
+         *
+         * @param string $objectsFoundOnlyFromSink
+         */
+        public function setObjectsFoundOnlyFromSink($objectsFoundOnlyFromSink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectsFoundOnlyFromSink()
+        {
+        }
+        /**
+         * Objects in the data source that failed to be transferred or that failed to
+         * be deleted after being transferred.
+         *
+         * @param string $objectsFromSourceFailed
+         */
+        public function setObjectsFromSourceFailed($objectsFromSourceFailed)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectsFromSourceFailed()
+        {
+        }
+        /**
+         * Objects in the data source that are not transferred because they already
+         * exist in the data sink.
+         *
+         * @param string $objectsFromSourceSkippedBySync
+         */
+        public function setObjectsFromSourceSkippedBySync($objectsFromSourceSkippedBySync)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectsFromSourceSkippedBySync()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Storagetransfer\TransferCounters registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBytesCopiedToSink()
-    {
-    }
-    /**
-     * Bytes that are deleted from the data sink.
-     *
-     * @param string $bytesDeletedFromSink
-     */
-    public function setBytesDeletedFromSink($bytesDeletedFromSink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBytesDeletedFromSink()
-    {
-    }
-    /**
-     * Bytes that are deleted from the data source.
-     *
-     * @param string $bytesDeletedFromSource
-     */
-    public function setBytesDeletedFromSource($bytesDeletedFromSource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBytesDeletedFromSource()
-    {
-    }
-    /**
-     * Bytes that failed to be deleted from the data sink.
-     *
-     * @param string $bytesFailedToDeleteFromSink
-     */
-    public function setBytesFailedToDeleteFromSink($bytesFailedToDeleteFromSink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBytesFailedToDeleteFromSink()
-    {
-    }
-    /**
-     * Bytes found in the data source that are scheduled to be transferred,
-     * excluding any that are filtered based on object conditions or skipped due
-     * to sync.
-     *
-     * @param string $bytesFoundFromSource
-     */
-    public function setBytesFoundFromSource($bytesFoundFromSource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBytesFoundFromSource()
-    {
-    }
-    /**
-     * Bytes found only in the data sink that are scheduled to be deleted.
-     *
-     * @param string $bytesFoundOnlyFromSink
-     */
-    public function setBytesFoundOnlyFromSink($bytesFoundOnlyFromSink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBytesFoundOnlyFromSink()
-    {
-    }
-    /**
-     * Bytes in the data source that failed to be transferred or that failed to be
-     * deleted after being transferred.
-     *
-     * @param string $bytesFromSourceFailed
-     */
-    public function setBytesFromSourceFailed($bytesFromSourceFailed)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBytesFromSourceFailed()
-    {
-    }
-    /**
-     * Bytes in the data source that are not transferred because they already
-     * exist in the data sink.
-     *
-     * @param string $bytesFromSourceSkippedBySync
-     */
-    public function setBytesFromSourceSkippedBySync($bytesFromSourceSkippedBySync)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBytesFromSourceSkippedBySync()
-    {
-    }
-    /**
-     * For transfers involving PosixFilesystem only. Number of listing failures
-     * for each directory found at the source. Potential failures when listing a
-     * directory include permission failure or block failure. If listing a
-     * directory fails, no files in the directory are transferred.
-     *
-     * @param string $directoriesFailedToListFromSource
-     */
-    public function setDirectoriesFailedToListFromSource($directoriesFailedToListFromSource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDirectoriesFailedToListFromSource()
-    {
-    }
-    /**
-     * For transfers involving PosixFilesystem only. Number of directories found
-     * while listing. For example, if the root directory of the transfer is
-     * `base/` and there are two other directories, `a/` and `b/` under this
-     * directory, the count after listing `base/`, `base/a/` and `base/b/` is 3.
-     *
-     * @param string $directoriesFoundFromSource
-     */
-    public function setDirectoriesFoundFromSource($directoriesFoundFromSource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDirectoriesFoundFromSource()
-    {
-    }
-    /**
-     * For transfers involving PosixFilesystem only. Number of successful listings
-     * for each directory found at the source.
-     *
-     * @param string $directoriesSuccessfullyListedFromSource
-     */
-    public function setDirectoriesSuccessfullyListedFromSource($directoriesSuccessfullyListedFromSource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDirectoriesSuccessfullyListedFromSource()
-    {
-    }
-    /**
-     * Number of successfully cleaned up intermediate objects.
-     *
-     * @param string $intermediateObjectsCleanedUp
-     */
-    public function setIntermediateObjectsCleanedUp($intermediateObjectsCleanedUp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIntermediateObjectsCleanedUp()
-    {
-    }
-    /**
-     * Number of intermediate objects failed cleaned up.
-     *
-     * @param string $intermediateObjectsFailedCleanedUp
-     */
-    public function setIntermediateObjectsFailedCleanedUp($intermediateObjectsFailedCleanedUp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIntermediateObjectsFailedCleanedUp()
-    {
-    }
-    /**
-     * Objects that are copied to the data sink.
-     *
-     * @param string $objectsCopiedToSink
-     */
-    public function setObjectsCopiedToSink($objectsCopiedToSink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectsCopiedToSink()
-    {
-    }
-    /**
-     * Objects that are deleted from the data sink.
-     *
-     * @param string $objectsDeletedFromSink
-     */
-    public function setObjectsDeletedFromSink($objectsDeletedFromSink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectsDeletedFromSink()
-    {
-    }
-    /**
-     * Objects that are deleted from the data source.
-     *
-     * @param string $objectsDeletedFromSource
-     */
-    public function setObjectsDeletedFromSource($objectsDeletedFromSource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectsDeletedFromSource()
-    {
-    }
-    /**
-     * Objects that failed to be deleted from the data sink.
-     *
-     * @param string $objectsFailedToDeleteFromSink
-     */
-    public function setObjectsFailedToDeleteFromSink($objectsFailedToDeleteFromSink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectsFailedToDeleteFromSink()
-    {
-    }
-    /**
-     * Objects found in the data source that are scheduled to be transferred,
-     * excluding any that are filtered based on object conditions or skipped due
-     * to sync.
-     *
-     * @param string $objectsFoundFromSource
-     */
-    public function setObjectsFoundFromSource($objectsFoundFromSource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectsFoundFromSource()
-    {
-    }
-    /**
-     * Objects found only in the data sink that are scheduled to be deleted.
-     *
-     * @param string $objectsFoundOnlyFromSink
-     */
-    public function setObjectsFoundOnlyFromSink($objectsFoundOnlyFromSink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectsFoundOnlyFromSink()
-    {
-    }
-    /**
-     * Objects in the data source that failed to be transferred or that failed to
-     * be deleted after being transferred.
-     *
-     * @param string $objectsFromSourceFailed
-     */
-    public function setObjectsFromSourceFailed($objectsFromSourceFailed)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectsFromSourceFailed()
-    {
-    }
-    /**
-     * Objects in the data source that are not transferred because they already
-     * exist in the data sink.
-     *
-     * @param string $objectsFromSourceSkippedBySync
-     */
-    public function setObjectsFromSourceSkippedBySync($objectsFromSourceSkippedBySync)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectsFromSourceSkippedBySync()
+    class Google_Service_Storagetransfer_TransferCounters extends \Google\Service\Storagetransfer\TransferCounters
     {
     }
 }

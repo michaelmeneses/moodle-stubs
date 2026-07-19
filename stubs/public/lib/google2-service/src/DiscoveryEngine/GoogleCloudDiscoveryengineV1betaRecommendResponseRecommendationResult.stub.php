@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaRecommendResponseRecommendationResult extends \Google\Model
-{
-    protected $documentType = GoogleCloudDiscoveryengineV1betaDocument::class;
-    protected $documentDataType = '';
-    /**
-     * @var string
-     */
-    public $id;
-    /**
-     * @var array[]
-     */
-    public $metadata;
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaDocument
-     */
-    public function setDocument(GoogleCloudDiscoveryengineV1betaDocument $document)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaRecommendResponseRecommendationResult extends \Google\Model
     {
+        protected $documentType = GoogleCloudDiscoveryengineV1betaDocument::class;
+        protected $documentDataType = '';
+        /**
+         * @var string
+         */
+        public $id;
+        /**
+         * @var array[]
+         */
+        public $metadata;
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaDocument
+         */
+        public function setDocument(GoogleCloudDiscoveryengineV1betaDocument $document)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaDocument
+         */
+        public function getDocument()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param array[]
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1betaDocument
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaRecommendResponseRecommendationResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocument()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * @param array[]
-     */
-    public function setMetadata($metadata)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getMetadata()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaRecommendResponseRecommendationResult extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaRecommendResponseRecommendationResult
     {
     }
 }

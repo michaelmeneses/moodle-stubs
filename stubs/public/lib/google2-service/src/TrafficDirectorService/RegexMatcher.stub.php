@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TrafficDirectorService;
-
-class RegexMatcher extends \Google\Model
-{
-    protected $googleRe2Type = GoogleRE2::class;
-    protected $googleRe2DataType = '';
-    /**
-     * The regex match string. The string must be supported by the configured
-     * engine. The regex is matched against the full string, not as a partial
-     * match.
-     *
-     * @var string
-     */
-    public $regex;
-    /**
-     * Google's RE2 regex engine.
-     *
-     * @deprecated
-     * @param GoogleRE2 $googleRe2
-     */
-    public function setGoogleRe2(GoogleRE2 $googleRe2)
+namespace Google\Service\TrafficDirectorService {
+    class RegexMatcher extends \Google\Model
     {
+        protected $googleRe2Type = GoogleRE2::class;
+        protected $googleRe2DataType = '';
+        /**
+         * The regex match string. The string must be supported by the configured
+         * engine. The regex is matched against the full string, not as a partial
+         * match.
+         *
+         * @var string
+         */
+        public $regex;
+        /**
+         * Google's RE2 regex engine.
+         *
+         * @deprecated
+         * @param GoogleRE2 $googleRe2
+         */
+        public function setGoogleRe2(GoogleRE2 $googleRe2)
+        {
+        }
+        /**
+         * @deprecated
+         * @return GoogleRE2
+         */
+        public function getGoogleRe2()
+        {
+        }
+        /**
+         * The regex match string. The string must be supported by the configured
+         * engine. The regex is matched against the full string, not as a partial
+         * match.
+         *
+         * @param string $regex
+         */
+        public function setRegex($regex)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return GoogleRE2
+     * Runtime class alias of \Google\Service\TrafficDirectorService\RegexMatcher registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGoogleRe2()
-    {
-    }
-    /**
-     * The regex match string. The string must be supported by the configured
-     * engine. The regex is matched against the full string, not as a partial
-     * match.
-     *
-     * @param string $regex
-     */
-    public function setRegex($regex)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegex()
+    class Google_Service_TrafficDirectorService_RegexMatcher extends \Google\Service\TrafficDirectorService\RegexMatcher
     {
     }
 }

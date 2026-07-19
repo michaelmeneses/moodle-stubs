@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class ExportSBOMResponse extends \Google\Model
-{
-    /**
-     * The name of the discovery occurrence in the form
-     * "projects/{project_id}/occurrences/{OCCURRENCE_ID} It can be used to track
-     * the progress of the SBOM export.
-     *
-     * @var string
-     */
-    public $discoveryOccurrence;
-    /**
-     * The name of the discovery occurrence in the form
-     * "projects/{project_id}/occurrences/{OCCURRENCE_ID} It can be used to track
-     * the progress of the SBOM export.
-     *
-     * @param string $discoveryOccurrence
-     */
-    public function setDiscoveryOccurrence($discoveryOccurrence)
+namespace Google\Service\ContainerAnalysis {
+    class ExportSBOMResponse extends \Google\Model
     {
+        /**
+         * The name of the discovery occurrence in the form
+         * "projects/{project_id}/occurrences/{OCCURRENCE_ID} It can be used to track
+         * the progress of the SBOM export.
+         *
+         * @var string
+         */
+        public $discoveryOccurrence;
+        /**
+         * The name of the discovery occurrence in the form
+         * "projects/{project_id}/occurrences/{OCCURRENCE_ID} It can be used to track
+         * the progress of the SBOM export.
+         *
+         * @param string $discoveryOccurrence
+         */
+        public function setDiscoveryOccurrence($discoveryOccurrence)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDiscoveryOccurrence()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ContainerAnalysis\ExportSBOMResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDiscoveryOccurrence()
+    class Google_Service_ContainerAnalysis_ExportSBOMResponse extends \Google\Service\ContainerAnalysis\ExportSBOMResponse
     {
     }
 }

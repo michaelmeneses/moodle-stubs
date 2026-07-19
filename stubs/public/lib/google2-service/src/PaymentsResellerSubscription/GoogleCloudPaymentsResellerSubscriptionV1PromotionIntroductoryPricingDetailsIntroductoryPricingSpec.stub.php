@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class GoogleCloudPaymentsResellerSubscriptionV1PromotionIntroductoryPricingDetailsIntroductoryPricingSpec extends \Google\Model
-{
-    protected $discountAmountType = GoogleCloudPaymentsResellerSubscriptionV1Amount::class;
-    protected $discountAmountDataType = '';
-    /**
-     * @var string
-     */
-    public $discountRatioMicros;
-    /**
-     * @var int
-     */
-    public $recurrenceCount;
-    /**
-     * @var string
-     */
-    public $regionCode;
-    /**
-     * @param GoogleCloudPaymentsResellerSubscriptionV1Amount
-     */
-    public function setDiscountAmount(GoogleCloudPaymentsResellerSubscriptionV1Amount $discountAmount)
+namespace Google\Service\PaymentsResellerSubscription {
+    class GoogleCloudPaymentsResellerSubscriptionV1PromotionIntroductoryPricingDetailsIntroductoryPricingSpec extends \Google\Model
     {
+        protected $discountAmountType = GoogleCloudPaymentsResellerSubscriptionV1Amount::class;
+        protected $discountAmountDataType = '';
+        /**
+         * @var string
+         */
+        public $discountRatioMicros;
+        /**
+         * @var int
+         */
+        public $recurrenceCount;
+        /**
+         * @var string
+         */
+        public $regionCode;
+        /**
+         * @param GoogleCloudPaymentsResellerSubscriptionV1Amount
+         */
+        public function setDiscountAmount(GoogleCloudPaymentsResellerSubscriptionV1Amount $discountAmount)
+        {
+        }
+        /**
+         * @return GoogleCloudPaymentsResellerSubscriptionV1Amount
+         */
+        public function getDiscountAmount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDiscountRatioMicros($discountRatioMicros)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDiscountRatioMicros()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setRecurrenceCount($recurrenceCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRecurrenceCount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRegionCode($regionCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegionCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudPaymentsResellerSubscriptionV1Amount
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1PromotionIntroductoryPricingDetailsIntroductoryPricingSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDiscountAmount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDiscountRatioMicros($discountRatioMicros)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDiscountRatioMicros()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setRecurrenceCount($recurrenceCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRecurrenceCount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRegionCode($regionCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegionCode()
+    class Google_Service_PaymentsResellerSubscription_GoogleCloudPaymentsResellerSubscriptionV1PromotionIntroductoryPricingDetailsIntroductoryPricingSpec extends \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1PromotionIntroductoryPricingDetailsIntroductoryPricingSpec
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class SourceSqlChange extends \Google\Model
-{
-    /**
-     * Required. Sql code for source (stored procedure, function, trigger or view)
-     *
-     * @var string
-     */
-    public $sqlCode;
-    /**
-     * Required. Sql code for source (stored procedure, function, trigger or view)
-     *
-     * @param string $sqlCode
-     */
-    public function setSqlCode($sqlCode)
+namespace Google\Service\DatabaseMigrationService {
+    class SourceSqlChange extends \Google\Model
     {
+        /**
+         * Required. Sql code for source (stored procedure, function, trigger or view)
+         *
+         * @var string
+         */
+        public $sqlCode;
+        /**
+         * Required. Sql code for source (stored procedure, function, trigger or view)
+         *
+         * @param string $sqlCode
+         */
+        public function setSqlCode($sqlCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSqlCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\SourceSqlChange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSqlCode()
+    class Google_Service_DatabaseMigrationService_SourceSqlChange extends \Google\Service\DatabaseMigrationService\SourceSqlChange
     {
     }
 }

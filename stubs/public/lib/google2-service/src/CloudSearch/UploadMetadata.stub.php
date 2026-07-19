@@ -21,220 +21,229 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class UploadMetadata extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $attachmentToken;
-    protected $backendUploadMetadataType = AppsDynamiteSharedBackendUploadMetadata::class;
-    protected $backendUploadMetadataDataType = '';
-    protected $clonedAuthorizedItemIdType = AuthorizedItemId::class;
-    protected $clonedAuthorizedItemIdDataType = '';
-    /**
-     * @var string
-     */
-    public $clonedDriveAction;
-    /**
-     * @var string
-     */
-    public $clonedDriveId;
-    /**
-     * @var string
-     */
-    public $contentName;
-    /**
-     * @var string
-     */
-    public $contentType;
-    protected $dlpMetricsMetadataType = AppsDynamiteSharedDlpMetricsMetadata::class;
-    protected $dlpMetricsMetadataDataType = '';
-    protected $internalOnlyComponentSearchInfoType = AppsDynamiteSharedMessageComponentSearchInfo::class;
-    protected $internalOnlyComponentSearchInfoDataType = '';
-    /**
-     * @var string
-     */
-    public $latestVirusScanTimestamp;
-    /**
-     * @var string
-     */
-    public $localId;
-    protected $originalDimensionType = AppsDynamiteSharedDimension::class;
-    protected $originalDimensionDataType = '';
-    protected $videoReferenceType = AppsDynamiteSharedVideoReference::class;
-    protected $videoReferenceDataType = '';
-    /**
-     * @var string
-     */
-    public $virusScanResult;
-    /**
-     * @param string
-     */
-    public function setAttachmentToken($attachmentToken)
+namespace Google\Service\CloudSearch {
+    class UploadMetadata extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $attachmentToken;
+        protected $backendUploadMetadataType = AppsDynamiteSharedBackendUploadMetadata::class;
+        protected $backendUploadMetadataDataType = '';
+        protected $clonedAuthorizedItemIdType = AuthorizedItemId::class;
+        protected $clonedAuthorizedItemIdDataType = '';
+        /**
+         * @var string
+         */
+        public $clonedDriveAction;
+        /**
+         * @var string
+         */
+        public $clonedDriveId;
+        /**
+         * @var string
+         */
+        public $contentName;
+        /**
+         * @var string
+         */
+        public $contentType;
+        protected $dlpMetricsMetadataType = AppsDynamiteSharedDlpMetricsMetadata::class;
+        protected $dlpMetricsMetadataDataType = '';
+        protected $internalOnlyComponentSearchInfoType = AppsDynamiteSharedMessageComponentSearchInfo::class;
+        protected $internalOnlyComponentSearchInfoDataType = '';
+        /**
+         * @var string
+         */
+        public $latestVirusScanTimestamp;
+        /**
+         * @var string
+         */
+        public $localId;
+        protected $originalDimensionType = AppsDynamiteSharedDimension::class;
+        protected $originalDimensionDataType = '';
+        protected $videoReferenceType = AppsDynamiteSharedVideoReference::class;
+        protected $videoReferenceDataType = '';
+        /**
+         * @var string
+         */
+        public $virusScanResult;
+        /**
+         * @param string
+         */
+        public function setAttachmentToken($attachmentToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAttachmentToken()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedBackendUploadMetadata
+         */
+        public function setBackendUploadMetadata(AppsDynamiteSharedBackendUploadMetadata $backendUploadMetadata)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedBackendUploadMetadata
+         */
+        public function getBackendUploadMetadata()
+        {
+        }
+        /**
+         * @param AuthorizedItemId
+         */
+        public function setClonedAuthorizedItemId(AuthorizedItemId $clonedAuthorizedItemId)
+        {
+        }
+        /**
+         * @return AuthorizedItemId
+         */
+        public function getClonedAuthorizedItemId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setClonedDriveAction($clonedDriveAction)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClonedDriveAction()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setClonedDriveId($clonedDriveId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClonedDriveId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setContentName($contentName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContentName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setContentType($contentType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContentType()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedDlpMetricsMetadata
+         */
+        public function setDlpMetricsMetadata(AppsDynamiteSharedDlpMetricsMetadata $dlpMetricsMetadata)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedDlpMetricsMetadata
+         */
+        public function getDlpMetricsMetadata()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedMessageComponentSearchInfo
+         */
+        public function setInternalOnlyComponentSearchInfo(AppsDynamiteSharedMessageComponentSearchInfo $internalOnlyComponentSearchInfo)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedMessageComponentSearchInfo
+         */
+        public function getInternalOnlyComponentSearchInfo()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLatestVirusScanTimestamp($latestVirusScanTimestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLatestVirusScanTimestamp()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLocalId($localId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocalId()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedDimension
+         */
+        public function setOriginalDimension(AppsDynamiteSharedDimension $originalDimension)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedDimension
+         */
+        public function getOriginalDimension()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedVideoReference
+         */
+        public function setVideoReference(AppsDynamiteSharedVideoReference $videoReference)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedVideoReference
+         */
+        public function getVideoReference()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setVirusScanResult($virusScanResult)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVirusScanResult()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\UploadMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttachmentToken()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedBackendUploadMetadata
-     */
-    public function setBackendUploadMetadata(AppsDynamiteSharedBackendUploadMetadata $backendUploadMetadata)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedBackendUploadMetadata
-     */
-    public function getBackendUploadMetadata()
-    {
-    }
-    /**
-     * @param AuthorizedItemId
-     */
-    public function setClonedAuthorizedItemId(AuthorizedItemId $clonedAuthorizedItemId)
-    {
-    }
-    /**
-     * @return AuthorizedItemId
-     */
-    public function getClonedAuthorizedItemId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setClonedDriveAction($clonedDriveAction)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClonedDriveAction()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setClonedDriveId($clonedDriveId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClonedDriveId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setContentName($contentName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContentName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setContentType($contentType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContentType()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedDlpMetricsMetadata
-     */
-    public function setDlpMetricsMetadata(AppsDynamiteSharedDlpMetricsMetadata $dlpMetricsMetadata)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedDlpMetricsMetadata
-     */
-    public function getDlpMetricsMetadata()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedMessageComponentSearchInfo
-     */
-    public function setInternalOnlyComponentSearchInfo(AppsDynamiteSharedMessageComponentSearchInfo $internalOnlyComponentSearchInfo)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedMessageComponentSearchInfo
-     */
-    public function getInternalOnlyComponentSearchInfo()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLatestVirusScanTimestamp($latestVirusScanTimestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLatestVirusScanTimestamp()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLocalId($localId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocalId()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedDimension
-     */
-    public function setOriginalDimension(AppsDynamiteSharedDimension $originalDimension)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedDimension
-     */
-    public function getOriginalDimension()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedVideoReference
-     */
-    public function setVideoReference(AppsDynamiteSharedVideoReference $videoReference)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedVideoReference
-     */
-    public function getVideoReference()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setVirusScanResult($virusScanResult)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVirusScanResult()
+    class Google_Service_CloudSearch_UploadMetadata extends \Google\Service\CloudSearch\UploadMetadata
     {
     }
 }

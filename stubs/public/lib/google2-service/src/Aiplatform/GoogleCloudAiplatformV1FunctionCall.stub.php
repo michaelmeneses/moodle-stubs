@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1FunctionCall extends \Google\Collection
-{
-    protected $collection_key = 'partialArgs';
-    /**
-     * Optional. The function parameters and values in JSON object format. See
-     * [FunctionDeclaration.parameters] for parameter details.
-     *
-     * @var array[]
-     */
-    public $args;
-    /**
-     * Optional. The name of the function to call. Matches
-     * [FunctionDeclaration.name].
-     *
-     * @var string
-     */
-    public $name;
-    protected $partialArgsType = GoogleCloudAiplatformV1PartialArg::class;
-    protected $partialArgsDataType = 'array';
-    /**
-     * Optional. Whether this is the last part of the FunctionCall. If true,
-     * another partial message for the current FunctionCall is expected to follow.
-     *
-     * @var bool
-     */
-    public $willContinue;
-    /**
-     * Optional. The function parameters and values in JSON object format. See
-     * [FunctionDeclaration.parameters] for parameter details.
-     *
-     * @param array[] $args
-     */
-    public function setArgs($args)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1FunctionCall extends \Google\Collection
     {
+        protected $collection_key = 'partialArgs';
+        /**
+         * Optional. The function parameters and values in JSON object format. See
+         * [FunctionDeclaration.parameters] for parameter details.
+         *
+         * @var array[]
+         */
+        public $args;
+        /**
+         * Optional. The name of the function to call. Matches
+         * [FunctionDeclaration.name].
+         *
+         * @var string
+         */
+        public $name;
+        protected $partialArgsType = GoogleCloudAiplatformV1PartialArg::class;
+        protected $partialArgsDataType = 'array';
+        /**
+         * Optional. Whether this is the last part of the FunctionCall. If true,
+         * another partial message for the current FunctionCall is expected to follow.
+         *
+         * @var bool
+         */
+        public $willContinue;
+        /**
+         * Optional. The function parameters and values in JSON object format. See
+         * [FunctionDeclaration.parameters] for parameter details.
+         *
+         * @param array[] $args
+         */
+        public function setArgs($args)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getArgs()
+        {
+        }
+        /**
+         * Optional. The name of the function to call. Matches
+         * [FunctionDeclaration.name].
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. The partial argument value of the function call. If provided,
+         * represents the arguments/fields that are streamed incrementally.
+         *
+         * @param GoogleCloudAiplatformV1PartialArg[] $partialArgs
+         */
+        public function setPartialArgs($partialArgs)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1PartialArg[]
+         */
+        public function getPartialArgs()
+        {
+        }
+        /**
+         * Optional. Whether this is the last part of the FunctionCall. If true,
+         * another partial message for the current FunctionCall is expected to follow.
+         *
+         * @param bool $willContinue
+         */
+        public function setWillContinue($willContinue)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getWillContinue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1FunctionCall registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArgs()
-    {
-    }
-    /**
-     * Optional. The name of the function to call. Matches
-     * [FunctionDeclaration.name].
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. The partial argument value of the function call. If provided,
-     * represents the arguments/fields that are streamed incrementally.
-     *
-     * @param GoogleCloudAiplatformV1PartialArg[] $partialArgs
-     */
-    public function setPartialArgs($partialArgs)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1PartialArg[]
-     */
-    public function getPartialArgs()
-    {
-    }
-    /**
-     * Optional. Whether this is the last part of the FunctionCall. If true,
-     * another partial message for the current FunctionCall is expected to follow.
-     *
-     * @param bool $willContinue
-     */
-    public function setWillContinue($willContinue)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getWillContinue()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1FunctionCall extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1FunctionCall
     {
     }
 }

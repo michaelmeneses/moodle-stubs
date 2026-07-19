@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class AdaptMessageRequest extends \Google\Model
-{
-    /**
-     * Optional. Opaque request state passed by the client to the server.
-     *
-     * @var string[]
-     */
-    public $attachments;
-    /**
-     * Optional. Uninterpreted bytes from the underlying wire protocol.
-     *
-     * @var string
-     */
-    public $payload;
-    /**
-     * Required. Identifier for the underlying wire protocol.
-     *
-     * @var string
-     */
-    public $protocol;
-    /**
-     * Optional. Opaque request state passed by the client to the server.
-     *
-     * @param string[] $attachments
-     */
-    public function setAttachments($attachments)
+namespace Google\Service\Spanner {
+    class AdaptMessageRequest extends \Google\Model
     {
+        /**
+         * Optional. Opaque request state passed by the client to the server.
+         *
+         * @var string[]
+         */
+        public $attachments;
+        /**
+         * Optional. Uninterpreted bytes from the underlying wire protocol.
+         *
+         * @var string
+         */
+        public $payload;
+        /**
+         * Required. Identifier for the underlying wire protocol.
+         *
+         * @var string
+         */
+        public $protocol;
+        /**
+         * Optional. Opaque request state passed by the client to the server.
+         *
+         * @param string[] $attachments
+         */
+        public function setAttachments($attachments)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAttachments()
+        {
+        }
+        /**
+         * Optional. Uninterpreted bytes from the underlying wire protocol.
+         *
+         * @param string $payload
+         */
+        public function setPayload($payload)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPayload()
+        {
+        }
+        /**
+         * Required. Identifier for the underlying wire protocol.
+         *
+         * @param string $protocol
+         */
+        public function setProtocol($protocol)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProtocol()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Spanner\AdaptMessageRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttachments()
-    {
-    }
-    /**
-     * Optional. Uninterpreted bytes from the underlying wire protocol.
-     *
-     * @param string $payload
-     */
-    public function setPayload($payload)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPayload()
-    {
-    }
-    /**
-     * Required. Identifier for the underlying wire protocol.
-     *
-     * @param string $protocol
-     */
-    public function setProtocol($protocol)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProtocol()
+    class Google_Service_Spanner_AdaptMessageRequest extends \Google\Service\Spanner\AdaptMessageRequest
     {
     }
 }

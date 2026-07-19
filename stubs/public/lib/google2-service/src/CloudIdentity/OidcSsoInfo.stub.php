@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity;
-
-class OidcSsoInfo extends \Google\Model
-{
-    /**
-     * Required. Name of the `InboundOidcSsoProfile` to use. Must be of the form
-     * `inboundOidcSsoProfiles/{inbound_oidc_sso_profile}`.
-     *
-     * @var string
-     */
-    public $inboundOidcSsoProfile;
-    /**
-     * Required. Name of the `InboundOidcSsoProfile` to use. Must be of the form
-     * `inboundOidcSsoProfiles/{inbound_oidc_sso_profile}`.
-     *
-     * @param string $inboundOidcSsoProfile
-     */
-    public function setInboundOidcSsoProfile($inboundOidcSsoProfile)
+namespace Google\Service\CloudIdentity {
+    class OidcSsoInfo extends \Google\Model
     {
+        /**
+         * Required. Name of the `InboundOidcSsoProfile` to use. Must be of the form
+         * `inboundOidcSsoProfiles/{inbound_oidc_sso_profile}`.
+         *
+         * @var string
+         */
+        public $inboundOidcSsoProfile;
+        /**
+         * Required. Name of the `InboundOidcSsoProfile` to use. Must be of the form
+         * `inboundOidcSsoProfiles/{inbound_oidc_sso_profile}`.
+         *
+         * @param string $inboundOidcSsoProfile
+         */
+        public function setInboundOidcSsoProfile($inboundOidcSsoProfile)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInboundOidcSsoProfile()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudIdentity\OidcSsoInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInboundOidcSsoProfile()
+    class Google_Service_CloudIdentity_OidcSsoInfo extends \Google\Service\CloudIdentity\OidcSsoInfo
     {
     }
 }

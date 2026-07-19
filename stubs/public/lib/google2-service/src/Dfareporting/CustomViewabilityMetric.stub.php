@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class CustomViewabilityMetric extends \Google\Model
-{
-    protected $configurationType = CustomViewabilityMetricConfiguration::class;
-    protected $configurationDataType = '';
-    /**
-     * ID of the custom viewability metric.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Name of the custom viewability metric.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Configuration of the custom viewability metric.
-     *
-     * @param CustomViewabilityMetricConfiguration $configuration
-     */
-    public function setConfiguration(CustomViewabilityMetricConfiguration $configuration)
+namespace Google\Service\Dfareporting {
+    class CustomViewabilityMetric extends \Google\Model
     {
+        protected $configurationType = CustomViewabilityMetricConfiguration::class;
+        protected $configurationDataType = '';
+        /**
+         * ID of the custom viewability metric.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Name of the custom viewability metric.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Configuration of the custom viewability metric.
+         *
+         * @param CustomViewabilityMetricConfiguration $configuration
+         */
+        public function setConfiguration(CustomViewabilityMetricConfiguration $configuration)
+        {
+        }
+        /**
+         * @return CustomViewabilityMetricConfiguration
+         */
+        public function getConfiguration()
+        {
+        }
+        /**
+         * ID of the custom viewability metric.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Name of the custom viewability metric.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CustomViewabilityMetricConfiguration
+     * Runtime class alias of \Google\Service\Dfareporting\CustomViewabilityMetric registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfiguration()
-    {
-    }
-    /**
-     * ID of the custom viewability metric.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Name of the custom viewability metric.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Dfareporting_CustomViewabilityMetric extends \Google\Service\Dfareporting\CustomViewabilityMetric
     {
     }
 }

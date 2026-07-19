@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class ChangeChromeOsDeviceStatusResult extends \Google\Model
-{
-    /**
-     * The unique ID of the ChromeOS device.
-     *
-     * @var string
-     */
-    public $deviceId;
-    protected $errorType = Status::class;
-    protected $errorDataType = '';
-    protected $responseType = ChangeChromeOsDeviceStatusSucceeded::class;
-    protected $responseDataType = '';
-    /**
-     * The unique ID of the ChromeOS device.
-     *
-     * @param string $deviceId
-     */
-    public function setDeviceId($deviceId)
+namespace Google\Service\Directory {
+    class ChangeChromeOsDeviceStatusResult extends \Google\Model
     {
+        /**
+         * The unique ID of the ChromeOS device.
+         *
+         * @var string
+         */
+        public $deviceId;
+        protected $errorType = Status::class;
+        protected $errorDataType = '';
+        protected $responseType = ChangeChromeOsDeviceStatusSucceeded::class;
+        protected $responseDataType = '';
+        /**
+         * The unique ID of the ChromeOS device.
+         *
+         * @param string $deviceId
+         */
+        public function setDeviceId($deviceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeviceId()
+        {
+        }
+        /**
+         * The error result of the operation in case of failure.
+         *
+         * @param Status $error
+         */
+        public function setError(Status $error)
+        {
+        }
+        /**
+         * @return Status
+         */
+        public function getError()
+        {
+        }
+        /**
+         * The device could change its status successfully.
+         *
+         * @param ChangeChromeOsDeviceStatusSucceeded $response
+         */
+        public function setResponse(ChangeChromeOsDeviceStatusSucceeded $response)
+        {
+        }
+        /**
+         * @return ChangeChromeOsDeviceStatusSucceeded
+         */
+        public function getResponse()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\ChangeChromeOsDeviceStatusResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceId()
-    {
-    }
-    /**
-     * The error result of the operation in case of failure.
-     *
-     * @param Status $error
-     */
-    public function setError(Status $error)
-    {
-    }
-    /**
-     * @return Status
-     */
-    public function getError()
-    {
-    }
-    /**
-     * The device could change its status successfully.
-     *
-     * @param ChangeChromeOsDeviceStatusSucceeded $response
-     */
-    public function setResponse(ChangeChromeOsDeviceStatusSucceeded $response)
-    {
-    }
-    /**
-     * @return ChangeChromeOsDeviceStatusSucceeded
-     */
-    public function getResponse()
+    class Google_Service_Directory_ChangeChromeOsDeviceStatusResult extends \Google\Service\Directory\ChangeChromeOsDeviceStatusResult
     {
     }
 }

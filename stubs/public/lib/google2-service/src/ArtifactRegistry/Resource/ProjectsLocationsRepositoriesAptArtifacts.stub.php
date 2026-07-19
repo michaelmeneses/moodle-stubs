@@ -21,48 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry\Resource;
-
-/**
- * The "aptArtifacts" collection of methods.
- * Typical usage is:
- *  <code>
- *   $artifactregistryService = new Google\Service\ArtifactRegistry(...);
- *   $aptArtifacts = $artifactregistryService->projects_locations_repositories_aptArtifacts;
- *  </code>
- */
-class ProjectsLocationsRepositoriesAptArtifacts extends \Google\Service\Resource
-{
+namespace Google\Service\ArtifactRegistry\Resource {
+    use Google\Service\ArtifactRegistry\ImportAptArtifactsRequest;
+    use Google\Service\ArtifactRegistry\Operation;
+    use Google\Service\ArtifactRegistry\UploadAptArtifactMediaResponse;
+    use Google\Service\ArtifactRegistry\UploadAptArtifactRequest;
     /**
-     * Imports Apt artifacts. The returned Operation will complete once the
-     * resources are imported. Package, Version, and File resources are created
-     * based on the imported artifacts. Imported artifacts that conflict with
-     * existing resources are ignored. (aptArtifacts.import)
-     *
-     * @param string $parent The name of the parent resource where the artifacts
-     * will be imported.
-     * @param ImportAptArtifactsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "aptArtifacts" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $artifactregistryService = new Google\Service\ArtifactRegistry(...);
+     *   $aptArtifacts = $artifactregistryService->projects_locations_repositories_aptArtifacts;
+     *  </code>
      */
-    public function import($parent, ImportAptArtifactsRequest $postBody, $optParams = [])
+    class ProjectsLocationsRepositoriesAptArtifacts extends \Google\Service\Resource
     {
+        /**
+         * Imports Apt artifacts. The returned Operation will complete once the
+         * resources are imported. Package, Version, and File resources are created
+         * based on the imported artifacts. Imported artifacts that conflict with
+         * existing resources are ignored. (aptArtifacts.import)
+         *
+         * @param string $parent The name of the parent resource where the artifacts
+         * will be imported.
+         * @param ImportAptArtifactsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function import($parent, ImportAptArtifactsRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Directly uploads an Apt artifact. The returned Operation will complete once
+         * the resources are uploaded. Package, Version, and File resources are created
+         * based on the imported artifact. Imported artifacts that conflict with
+         * existing resources are ignored. (aptArtifacts.upload)
+         *
+         * @param string $parent The name of the parent resource where the artifacts
+         * will be uploaded.
+         * @param UploadAptArtifactRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return UploadAptArtifactMediaResponse
+         * @throws \Google\Service\Exception
+         */
+        public function upload($parent, UploadAptArtifactRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Directly uploads an Apt artifact. The returned Operation will complete once
-     * the resources are uploaded. Package, Version, and File resources are created
-     * based on the imported artifact. Imported artifacts that conflict with
-     * existing resources are ignored. (aptArtifacts.upload)
-     *
-     * @param string $parent The name of the parent resource where the artifacts
-     * will be uploaded.
-     * @param UploadAptArtifactRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return UploadAptArtifactMediaResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ArtifactRegistry\Resource\ProjectsLocationsRepositoriesAptArtifacts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function upload($parent, UploadAptArtifactRequest $postBody, $optParams = [])
+    class Google_Service_ArtifactRegistry_Resource_ProjectsLocationsRepositoriesAptArtifacts extends \Google\Service\ArtifactRegistry\Resource\ProjectsLocationsRepositoriesAptArtifacts
     {
     }
 }

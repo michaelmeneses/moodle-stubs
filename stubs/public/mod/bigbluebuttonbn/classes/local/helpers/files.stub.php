@@ -30,6 +30,14 @@
  */
 namespace mod_bigbluebuttonbn\local\helpers;
 
+use cache;
+use cache_store;
+use context;
+use context_module;
+use context_system;
+use mod_bigbluebuttonbn\instance;
+use moodle_url;
+use stdClass;
 /**
  * Utility class for all files routines helper
  *

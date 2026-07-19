@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class MultiClassClassificationMetrics extends \Google\Collection
-{
-    protected $collection_key = 'confusionMatrixList';
-    protected $aggregateClassificationMetricsType = AggregateClassificationMetrics::class;
-    protected $aggregateClassificationMetricsDataType = '';
-    protected $confusionMatrixListType = ConfusionMatrix::class;
-    protected $confusionMatrixListDataType = 'array';
-    /**
-     * Aggregate classification metrics.
-     *
-     * @param AggregateClassificationMetrics $aggregateClassificationMetrics
-     */
-    public function setAggregateClassificationMetrics(AggregateClassificationMetrics $aggregateClassificationMetrics)
+namespace Google\Service\Bigquery {
+    class MultiClassClassificationMetrics extends \Google\Collection
     {
+        protected $collection_key = 'confusionMatrixList';
+        protected $aggregateClassificationMetricsType = AggregateClassificationMetrics::class;
+        protected $aggregateClassificationMetricsDataType = '';
+        protected $confusionMatrixListType = ConfusionMatrix::class;
+        protected $confusionMatrixListDataType = 'array';
+        /**
+         * Aggregate classification metrics.
+         *
+         * @param AggregateClassificationMetrics $aggregateClassificationMetrics
+         */
+        public function setAggregateClassificationMetrics(AggregateClassificationMetrics $aggregateClassificationMetrics)
+        {
+        }
+        /**
+         * @return AggregateClassificationMetrics
+         */
+        public function getAggregateClassificationMetrics()
+        {
+        }
+        /**
+         * Confusion matrix at different thresholds.
+         *
+         * @param ConfusionMatrix[] $confusionMatrixList
+         */
+        public function setConfusionMatrixList($confusionMatrixList)
+        {
+        }
+        /**
+         * @return ConfusionMatrix[]
+         */
+        public function getConfusionMatrixList()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AggregateClassificationMetrics
+     * Runtime class alias of \Google\Service\Bigquery\MultiClassClassificationMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAggregateClassificationMetrics()
-    {
-    }
-    /**
-     * Confusion matrix at different thresholds.
-     *
-     * @param ConfusionMatrix[] $confusionMatrixList
-     */
-    public function setConfusionMatrixList($confusionMatrixList)
-    {
-    }
-    /**
-     * @return ConfusionMatrix[]
-     */
-    public function getConfusionMatrixList()
+    class Google_Service_Bigquery_MultiClassClassificationMetrics extends \Google\Service\Bigquery\MultiClassClassificationMetrics
     {
     }
 }

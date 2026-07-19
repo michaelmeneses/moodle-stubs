@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class SslPolicyReference extends \Google\Model
-{
-    /**
-     * URL of the SSL policy resource. Set this to empty string to clear any
-     * existing SSL policy associated with the target proxy resource.
-     *
-     * @var string
-     */
-    public $sslPolicy;
-    /**
-     * URL of the SSL policy resource. Set this to empty string to clear any
-     * existing SSL policy associated with the target proxy resource.
-     *
-     * @param string $sslPolicy
-     */
-    public function setSslPolicy($sslPolicy)
+namespace Google\Service\Compute {
+    class SslPolicyReference extends \Google\Model
     {
+        /**
+         * URL of the SSL policy resource. Set this to empty string to clear any
+         * existing SSL policy associated with the target proxy resource.
+         *
+         * @var string
+         */
+        public $sslPolicy;
+        /**
+         * URL of the SSL policy resource. Set this to empty string to clear any
+         * existing SSL policy associated with the target proxy resource.
+         *
+         * @param string $sslPolicy
+         */
+        public function setSslPolicy($sslPolicy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSslPolicy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\SslPolicyReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSslPolicy()
+    class Google_Service_Compute_SslPolicyReference extends \Google\Service\Compute\SslPolicyReference
     {
     }
 }

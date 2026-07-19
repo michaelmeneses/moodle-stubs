@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdMob;
-
-class GenerateNetworkReportRequest extends \Google\Model
-{
-    protected $reportSpecType = NetworkReportSpec::class;
-    protected $reportSpecDataType = '';
-    /**
-     * Network report specification.
-     *
-     * @param NetworkReportSpec $reportSpec
-     */
-    public function setReportSpec(NetworkReportSpec $reportSpec)
+namespace Google\Service\AdMob {
+    class GenerateNetworkReportRequest extends \Google\Model
     {
+        protected $reportSpecType = NetworkReportSpec::class;
+        protected $reportSpecDataType = '';
+        /**
+         * Network report specification.
+         *
+         * @param NetworkReportSpec $reportSpec
+         */
+        public function setReportSpec(NetworkReportSpec $reportSpec)
+        {
+        }
+        /**
+         * @return NetworkReportSpec
+         */
+        public function getReportSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return NetworkReportSpec
+     * Runtime class alias of \Google\Service\AdMob\GenerateNetworkReportRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReportSpec()
+    class Google_Service_AdMob_GenerateNetworkReportRequest extends \Google\Service\AdMob\GenerateNetworkReportRequest
     {
     }
 }

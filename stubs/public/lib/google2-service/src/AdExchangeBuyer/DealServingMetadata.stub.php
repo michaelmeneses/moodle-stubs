@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class DealServingMetadata extends \Google\Model
-{
-    public $alcoholAdsAllowed;
-    protected $dealPauseStatusType = DealServingMetadataDealPauseStatus::class;
-    protected $dealPauseStatusDataType = '';
-    public function setAlcoholAdsAllowed($alcoholAdsAllowed)
+namespace Google\Service\AdExchangeBuyer {
+    class DealServingMetadata extends \Google\Model
     {
+        public $alcoholAdsAllowed;
+        protected $dealPauseStatusType = DealServingMetadataDealPauseStatus::class;
+        protected $dealPauseStatusDataType = '';
+        public function setAlcoholAdsAllowed($alcoholAdsAllowed)
+        {
+        }
+        public function getAlcoholAdsAllowed()
+        {
+        }
+        /**
+         * @param DealServingMetadataDealPauseStatus
+         */
+        public function setDealPauseStatus(DealServingMetadataDealPauseStatus $dealPauseStatus)
+        {
+        }
+        /**
+         * @return DealServingMetadataDealPauseStatus
+         */
+        public function getDealPauseStatus()
+        {
+        }
     }
-    public function getAlcoholAdsAllowed()
-    {
-    }
+}
+namespace {
     /**
-     * @param DealServingMetadataDealPauseStatus
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\DealServingMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setDealPauseStatus(DealServingMetadataDealPauseStatus $dealPauseStatus)
-    {
-    }
-    /**
-     * @return DealServingMetadataDealPauseStatus
-     */
-    public function getDealPauseStatus()
+    class Google_Service_AdExchangeBuyer_DealServingMetadata extends \Google\Service\AdExchangeBuyer\DealServingMetadata
     {
     }
 }

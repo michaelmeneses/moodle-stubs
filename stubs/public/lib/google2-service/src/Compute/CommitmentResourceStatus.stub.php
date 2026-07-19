@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class CommitmentResourceStatus extends \Google\Model
-{
-    /**
-     * Output only. [Output Only] Indicates the end time of customer's eligibility
-     * to send custom term requests in RFC3339 text format. Term extension
-     * requests that (not the end time in the request) after this time will be
-     * rejected.
-     *
-     * @var string
-     */
-    public $customTermEligibilityEndTimestamp;
-    /**
-     * Output only. [Output Only] Indicates the end time of customer's eligibility
-     * to send custom term requests in RFC3339 text format. Term extension
-     * requests that (not the end time in the request) after this time will be
-     * rejected.
-     *
-     * @param string $customTermEligibilityEndTimestamp
-     */
-    public function setCustomTermEligibilityEndTimestamp($customTermEligibilityEndTimestamp)
+namespace Google\Service\Compute {
+    class CommitmentResourceStatus extends \Google\Model
     {
+        /**
+         * Output only. [Output Only] Indicates the end time of customer's eligibility
+         * to send custom term requests in RFC3339 text format. Term extension
+         * requests that (not the end time in the request) after this time will be
+         * rejected.
+         *
+         * @var string
+         */
+        public $customTermEligibilityEndTimestamp;
+        /**
+         * Output only. [Output Only] Indicates the end time of customer's eligibility
+         * to send custom term requests in RFC3339 text format. Term extension
+         * requests that (not the end time in the request) after this time will be
+         * rejected.
+         *
+         * @param string $customTermEligibilityEndTimestamp
+         */
+        public function setCustomTermEligibilityEndTimestamp($customTermEligibilityEndTimestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomTermEligibilityEndTimestamp()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\CommitmentResourceStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomTermEligibilityEndTimestamp()
+    class Google_Service_Compute_CommitmentResourceStatus extends \Google\Service\Compute\CommitmentResourceStatus
     {
     }
 }

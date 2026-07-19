@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class CalendarModeAdviceRequest extends \Google\Model
-{
-    protected $futureResourcesSpecsType = FutureResourcesSpec::class;
-    protected $futureResourcesSpecsDataType = 'map';
-    /**
-     * Specification of resources to create in the future. The key of the map is
-     * an arbitrary string specified by the caller. Value of the map is a
-     * specification of required resources and their constraints. Currently only
-     * one value is allowed in this map.
-     *
-     * @param FutureResourcesSpec[] $futureResourcesSpecs
-     */
-    public function setFutureResourcesSpecs($futureResourcesSpecs)
+namespace Google\Service\Compute {
+    class CalendarModeAdviceRequest extends \Google\Model
     {
+        protected $futureResourcesSpecsType = FutureResourcesSpec::class;
+        protected $futureResourcesSpecsDataType = 'map';
+        /**
+         * Specification of resources to create in the future. The key of the map is
+         * an arbitrary string specified by the caller. Value of the map is a
+         * specification of required resources and their constraints. Currently only
+         * one value is allowed in this map.
+         *
+         * @param FutureResourcesSpec[] $futureResourcesSpecs
+         */
+        public function setFutureResourcesSpecs($futureResourcesSpecs)
+        {
+        }
+        /**
+         * @return FutureResourcesSpec[]
+         */
+        public function getFutureResourcesSpecs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FutureResourcesSpec[]
+     * Runtime class alias of \Google\Service\Compute\CalendarModeAdviceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFutureResourcesSpecs()
+    class Google_Service_Compute_CalendarModeAdviceRequest extends \Google\Service\Compute\CalendarModeAdviceRequest
     {
     }
 }

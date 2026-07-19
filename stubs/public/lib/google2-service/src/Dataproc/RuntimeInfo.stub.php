@@ -21,127 +21,136 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class RuntimeInfo extends \Google\Model
-{
-    protected $approximateUsageType = UsageMetrics::class;
-    protected $approximateUsageDataType = '';
-    protected $currentUsageType = UsageSnapshot::class;
-    protected $currentUsageDataType = '';
-    /**
-     * Output only. A URI pointing to the location of the diagnostics tarball.
-     *
-     * @var string
-     */
-    public $diagnosticOutputUri;
-    /**
-     * Output only. Map of remote access endpoints (such as web interfaces and
-     * APIs) to their URIs.
-     *
-     * @var string[]
-     */
-    public $endpoints;
-    /**
-     * Output only. A URI pointing to the location of the stdout and stderr of the
-     * workload.
-     *
-     * @var string
-     */
-    public $outputUri;
-    protected $propertiesInfoType = PropertiesInfo::class;
-    protected $propertiesInfoDataType = '';
-    /**
-     * Output only. Approximate workload resource usage, calculated when the
-     * workload completes (see Dataproc Serverless pricing
-     * (https://cloud.google.com/dataproc-serverless/pricing)).Note: This metric
-     * calculation may change in the future, for example, to capture cumulative
-     * workload resource consumption during workload execution (see the Dataproc
-     * Serverless release notes (https://cloud.google.com/dataproc-
-     * serverless/docs/release-notes) for announcements, changes, fixes and other
-     * Dataproc developments).
-     *
-     * @param UsageMetrics $approximateUsage
-     */
-    public function setApproximateUsage(UsageMetrics $approximateUsage)
+namespace Google\Service\Dataproc {
+    class RuntimeInfo extends \Google\Model
     {
+        protected $approximateUsageType = UsageMetrics::class;
+        protected $approximateUsageDataType = '';
+        protected $currentUsageType = UsageSnapshot::class;
+        protected $currentUsageDataType = '';
+        /**
+         * Output only. A URI pointing to the location of the diagnostics tarball.
+         *
+         * @var string
+         */
+        public $diagnosticOutputUri;
+        /**
+         * Output only. Map of remote access endpoints (such as web interfaces and
+         * APIs) to their URIs.
+         *
+         * @var string[]
+         */
+        public $endpoints;
+        /**
+         * Output only. A URI pointing to the location of the stdout and stderr of the
+         * workload.
+         *
+         * @var string
+         */
+        public $outputUri;
+        protected $propertiesInfoType = PropertiesInfo::class;
+        protected $propertiesInfoDataType = '';
+        /**
+         * Output only. Approximate workload resource usage, calculated when the
+         * workload completes (see Dataproc Serverless pricing
+         * (https://cloud.google.com/dataproc-serverless/pricing)).Note: This metric
+         * calculation may change in the future, for example, to capture cumulative
+         * workload resource consumption during workload execution (see the Dataproc
+         * Serverless release notes (https://cloud.google.com/dataproc-
+         * serverless/docs/release-notes) for announcements, changes, fixes and other
+         * Dataproc developments).
+         *
+         * @param UsageMetrics $approximateUsage
+         */
+        public function setApproximateUsage(UsageMetrics $approximateUsage)
+        {
+        }
+        /**
+         * @return UsageMetrics
+         */
+        public function getApproximateUsage()
+        {
+        }
+        /**
+         * Output only. Snapshot of current workload resource usage.
+         *
+         * @param UsageSnapshot $currentUsage
+         */
+        public function setCurrentUsage(UsageSnapshot $currentUsage)
+        {
+        }
+        /**
+         * @return UsageSnapshot
+         */
+        public function getCurrentUsage()
+        {
+        }
+        /**
+         * Output only. A URI pointing to the location of the diagnostics tarball.
+         *
+         * @param string $diagnosticOutputUri
+         */
+        public function setDiagnosticOutputUri($diagnosticOutputUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDiagnosticOutputUri()
+        {
+        }
+        /**
+         * Output only. Map of remote access endpoints (such as web interfaces and
+         * APIs) to their URIs.
+         *
+         * @param string[] $endpoints
+         */
+        public function setEndpoints($endpoints)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEndpoints()
+        {
+        }
+        /**
+         * Output only. A URI pointing to the location of the stdout and stderr of the
+         * workload.
+         *
+         * @param string $outputUri
+         */
+        public function setOutputUri($outputUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOutputUri()
+        {
+        }
+        /**
+         * Optional. Properties of the workload organized by origin.
+         *
+         * @param PropertiesInfo $propertiesInfo
+         */
+        public function setPropertiesInfo(PropertiesInfo $propertiesInfo)
+        {
+        }
+        /**
+         * @return PropertiesInfo
+         */
+        public function getPropertiesInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return UsageMetrics
+     * Runtime class alias of \Google\Service\Dataproc\RuntimeInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApproximateUsage()
-    {
-    }
-    /**
-     * Output only. Snapshot of current workload resource usage.
-     *
-     * @param UsageSnapshot $currentUsage
-     */
-    public function setCurrentUsage(UsageSnapshot $currentUsage)
-    {
-    }
-    /**
-     * @return UsageSnapshot
-     */
-    public function getCurrentUsage()
-    {
-    }
-    /**
-     * Output only. A URI pointing to the location of the diagnostics tarball.
-     *
-     * @param string $diagnosticOutputUri
-     */
-    public function setDiagnosticOutputUri($diagnosticOutputUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDiagnosticOutputUri()
-    {
-    }
-    /**
-     * Output only. Map of remote access endpoints (such as web interfaces and
-     * APIs) to their URIs.
-     *
-     * @param string[] $endpoints
-     */
-    public function setEndpoints($endpoints)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getEndpoints()
-    {
-    }
-    /**
-     * Output only. A URI pointing to the location of the stdout and stderr of the
-     * workload.
-     *
-     * @param string $outputUri
-     */
-    public function setOutputUri($outputUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOutputUri()
-    {
-    }
-    /**
-     * Optional. Properties of the workload organized by origin.
-     *
-     * @param PropertiesInfo $propertiesInfo
-     */
-    public function setPropertiesInfo(PropertiesInfo $propertiesInfo)
-    {
-    }
-    /**
-     * @return PropertiesInfo
-     */
-    public function getPropertiesInfo()
+    class Google_Service_Dataproc_RuntimeInfo extends \Google\Service\Dataproc\RuntimeInfo
     {
     }
 }

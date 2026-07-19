@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Logging;
-
-class CreateLinkRequest extends \Google\Model
-{
-    protected $linkType = Link::class;
-    protected $linkDataType = '';
-    /**
-     * Required. The ID to use for the link. The link_id can have up to 100
-     * characters. A valid link_id must only have alphanumeric characters and
-     * underscores within it.
-     *
-     * @var string
-     */
-    public $linkId;
-    /**
-     * Required. The full resource name of the bucket to create a link for.
-     * "projects/[PROJECT_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]"
-     *
-     * @var string
-     */
-    public $parent;
-    /**
-     * Required. The new link.
-     *
-     * @param Link $link
-     */
-    public function setLink(Link $link)
+namespace Google\Service\Logging {
+    class CreateLinkRequest extends \Google\Model
     {
+        protected $linkType = Link::class;
+        protected $linkDataType = '';
+        /**
+         * Required. The ID to use for the link. The link_id can have up to 100
+         * characters. A valid link_id must only have alphanumeric characters and
+         * underscores within it.
+         *
+         * @var string
+         */
+        public $linkId;
+        /**
+         * Required. The full resource name of the bucket to create a link for.
+         * "projects/[PROJECT_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]"
+         *
+         * @var string
+         */
+        public $parent;
+        /**
+         * Required. The new link.
+         *
+         * @param Link $link
+         */
+        public function setLink(Link $link)
+        {
+        }
+        /**
+         * @return Link
+         */
+        public function getLink()
+        {
+        }
+        /**
+         * Required. The ID to use for the link. The link_id can have up to 100
+         * characters. A valid link_id must only have alphanumeric characters and
+         * underscores within it.
+         *
+         * @param string $linkId
+         */
+        public function setLinkId($linkId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLinkId()
+        {
+        }
+        /**
+         * Required. The full resource name of the bucket to create a link for.
+         * "projects/[PROJECT_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]"
+         *
+         * @param string $parent
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Link
+     * Runtime class alias of \Google\Service\Logging\CreateLinkRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLink()
-    {
-    }
-    /**
-     * Required. The ID to use for the link. The link_id can have up to 100
-     * characters. A valid link_id must only have alphanumeric characters and
-     * underscores within it.
-     *
-     * @param string $linkId
-     */
-    public function setLinkId($linkId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLinkId()
-    {
-    }
-    /**
-     * Required. The full resource name of the bucket to create a link for.
-     * "projects/[PROJECT_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]"
-     *
-     * @param string $parent
-     */
-    public function setParent($parent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParent()
+    class Google_Service_Logging_CreateLinkRequest extends \Google\Service\Logging\CreateLinkRequest
     {
     }
 }

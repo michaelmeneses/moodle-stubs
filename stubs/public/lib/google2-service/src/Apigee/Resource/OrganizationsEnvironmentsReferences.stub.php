@@ -21,70 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee\Resource;
-
-/**
- * The "references" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apigeeService = new Google\Service\Apigee(...);
- *   $references = $apigeeService->organizations_environments_references;
- *  </code>
- */
-class OrganizationsEnvironmentsReferences extends \Google\Service\Resource
-{
+namespace Google\Service\Apigee\Resource {
+    use Google\Service\Apigee\GoogleCloudApigeeV1Reference;
     /**
-     * Creates a Reference in the specified environment. (references.create)
-     *
-     * @param string $parent Required. The parent environment name under which the
-     * Reference will be created. Must be of the form
-     * `organizations/{org}/environments/{env}`.
-     * @param GoogleCloudApigeeV1Reference $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1Reference
-     * @throws \Google\Service\Exception
+     * The "references" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apigeeService = new Google\Service\Apigee(...);
+     *   $references = $apigeeService->organizations_environments_references;
+     *  </code>
      */
-    public function create($parent, GoogleCloudApigeeV1Reference $postBody, $optParams = [])
+    class OrganizationsEnvironmentsReferences extends \Google\Service\Resource
     {
+        /**
+         * Creates a Reference in the specified environment. (references.create)
+         *
+         * @param string $parent Required. The parent environment name under which the
+         * Reference will be created. Must be of the form
+         * `organizations/{org}/environments/{env}`.
+         * @param GoogleCloudApigeeV1Reference $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1Reference
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudApigeeV1Reference $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a Reference from an environment. Returns the deleted Reference
+         * resource. (references.delete)
+         *
+         * @param string $name Required. The name of the Reference to delete. Must be of
+         * the form `organizations/{org}/environments/{env}/references/{ref}`.
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1Reference
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets a Reference resource. (references.get)
+         *
+         * @param string $name Required. The name of the Reference to get. Must be of
+         * the form `organizations/{org}/environments/{env}/references/{ref}`.
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1Reference
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing Reference. Note that this operation has PUT semantics; it
+         * will replace the entirety of the existing Reference with the resource in the
+         * request body. (references.update)
+         *
+         * @param string $name Required. The name of the Reference to update. Must be of
+         * the form `organizations/{org}/environments/{env}/references/{ref}`.
+         * @param GoogleCloudApigeeV1Reference $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1Reference
+         * @throws \Google\Service\Exception
+         */
+        public function update($name, GoogleCloudApigeeV1Reference $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a Reference from an environment. Returns the deleted Reference
-     * resource. (references.delete)
-     *
-     * @param string $name Required. The name of the Reference to delete. Must be of
-     * the form `organizations/{org}/environments/{env}/references/{ref}`.
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1Reference
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Apigee\Resource\OrganizationsEnvironmentsReferences registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets a Reference resource. (references.get)
-     *
-     * @param string $name Required. The name of the Reference to get. Must be of
-     * the form `organizations/{org}/environments/{env}/references/{ref}`.
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1Reference
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Updates an existing Reference. Note that this operation has PUT semantics; it
-     * will replace the entirety of the existing Reference with the resource in the
-     * request body. (references.update)
-     *
-     * @param string $name Required. The name of the Reference to update. Must be of
-     * the form `organizations/{org}/environments/{env}/references/{ref}`.
-     * @param GoogleCloudApigeeV1Reference $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1Reference
-     * @throws \Google\Service\Exception
-     */
-    public function update($name, GoogleCloudApigeeV1Reference $postBody, $optParams = [])
+    class Google_Service_Apigee_Resource_OrganizationsEnvironmentsReferences extends \Google\Service\Apigee\Resource\OrganizationsEnvironmentsReferences
     {
     }
 }

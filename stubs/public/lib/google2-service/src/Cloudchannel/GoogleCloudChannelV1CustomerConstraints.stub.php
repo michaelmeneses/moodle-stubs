@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1CustomerConstraints extends \Google\Collection
-{
-    protected $collection_key = 'promotionalOrderTypes';
-    /**
-     * Allowed Customer Type.
-     *
-     * @var string[]
-     */
-    public $allowedCustomerTypes;
-    /**
-     * Allowed geographical regions of the customer.
-     *
-     * @var string[]
-     */
-    public $allowedRegions;
-    /**
-     * Allowed Promotional Order Type. Present for Promotional offers.
-     *
-     * @var string[]
-     */
-    public $promotionalOrderTypes;
-    /**
-     * Allowed Customer Type.
-     *
-     * @param string[] $allowedCustomerTypes
-     */
-    public function setAllowedCustomerTypes($allowedCustomerTypes)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1CustomerConstraints extends \Google\Collection
     {
+        protected $collection_key = 'promotionalOrderTypes';
+        /**
+         * Allowed Customer Type.
+         *
+         * @var string[]
+         */
+        public $allowedCustomerTypes;
+        /**
+         * Allowed geographical regions of the customer.
+         *
+         * @var string[]
+         */
+        public $allowedRegions;
+        /**
+         * Allowed Promotional Order Type. Present for Promotional offers.
+         *
+         * @var string[]
+         */
+        public $promotionalOrderTypes;
+        /**
+         * Allowed Customer Type.
+         *
+         * @param string[] $allowedCustomerTypes
+         */
+        public function setAllowedCustomerTypes($allowedCustomerTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAllowedCustomerTypes()
+        {
+        }
+        /**
+         * Allowed geographical regions of the customer.
+         *
+         * @param string[] $allowedRegions
+         */
+        public function setAllowedRegions($allowedRegions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAllowedRegions()
+        {
+        }
+        /**
+         * Allowed Promotional Order Type. Present for Promotional offers.
+         *
+         * @param string[] $promotionalOrderTypes
+         */
+        public function setPromotionalOrderTypes($promotionalOrderTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPromotionalOrderTypes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1CustomerConstraints registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowedCustomerTypes()
-    {
-    }
-    /**
-     * Allowed geographical regions of the customer.
-     *
-     * @param string[] $allowedRegions
-     */
-    public function setAllowedRegions($allowedRegions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getAllowedRegions()
-    {
-    }
-    /**
-     * Allowed Promotional Order Type. Present for Promotional offers.
-     *
-     * @param string[] $promotionalOrderTypes
-     */
-    public function setPromotionalOrderTypes($promotionalOrderTypes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPromotionalOrderTypes()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1CustomerConstraints extends \Google\Service\Cloudchannel\GoogleCloudChannelV1CustomerConstraints
     {
     }
 }

@@ -21,50 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books\Resource;
-
-/**
- * The "layers" collection of methods.
- * Typical usage is:
- *  <code>
- *   $booksService = new Google\Service\Books(...);
- *   $layers = $booksService->layers;
- *  </code>
- */
-class Layers extends \Google\Service\Resource
-{
+namespace Google\Service\Books\Resource {
+    use Google\Service\Books\Layersummaries;
+    use Google\Service\Books\Layersummary;
     /**
-     * Gets the layer summary for a volume. (layers.get)
-     *
-     * @param string $volumeId The volume to retrieve layers for.
-     * @param string $summaryId The ID for the layer to get the summary for.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string contentVersion The content version for the requested
-     * volume.
-     * @opt_param string source String to identify the originator of this request.
-     * @return Layersummary
-     * @throws \Google\Service\Exception
+     * The "layers" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $booksService = new Google\Service\Books(...);
+     *   $layers = $booksService->layers;
+     *  </code>
      */
-    public function get($volumeId, $summaryId, $optParams = [])
+    class Layers extends \Google\Service\Resource
     {
+        /**
+         * Gets the layer summary for a volume. (layers.get)
+         *
+         * @param string $volumeId The volume to retrieve layers for.
+         * @param string $summaryId The ID for the layer to get the summary for.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string contentVersion The content version for the requested
+         * volume.
+         * @opt_param string source String to identify the originator of this request.
+         * @return Layersummary
+         * @throws \Google\Service\Exception
+         */
+        public function get($volumeId, $summaryId, $optParams = [])
+        {
+        }
+        /**
+         * List the layer summaries for a volume. (layers.listLayers)
+         *
+         * @param string $volumeId The volume to retrieve layers for.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string contentVersion The content version for the requested
+         * volume.
+         * @opt_param string maxResults Maximum number of results to return
+         * @opt_param string pageToken The value of the nextToken from the previous
+         * page.
+         * @opt_param string source String to identify the originator of this request.
+         * @return Layersummaries
+         * @throws \Google\Service\Exception
+         */
+        public function listLayers($volumeId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * List the layer summaries for a volume. (layers.listLayers)
-     *
-     * @param string $volumeId The volume to retrieve layers for.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string contentVersion The content version for the requested
-     * volume.
-     * @opt_param string maxResults Maximum number of results to return
-     * @opt_param string pageToken The value of the nextToken from the previous
-     * page.
-     * @opt_param string source String to identify the originator of this request.
-     * @return Layersummaries
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Books\Resource\Layers registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listLayers($volumeId, $optParams = [])
+    class Google_Service_Books_Resource_Layers extends \Google\Service\Books\Resource\Layers
     {
     }
 }

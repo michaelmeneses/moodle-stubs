@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyVersionsV1UploadPolicyFileResponse extends \Google\Model
-{
-    /**
-     * The uri for end user to download the file.
-     *
-     * @var string
-     */
-    public $downloadUri;
-    /**
-     * The uri for end user to download the file.
-     *
-     * @param string $downloadUri
-     */
-    public function setDownloadUri($downloadUri)
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyVersionsV1UploadPolicyFileResponse extends \Google\Model
     {
+        /**
+         * The uri for end user to download the file.
+         *
+         * @var string
+         */
+        public $downloadUri;
+        /**
+         * The uri for end user to download the file.
+         *
+         * @param string $downloadUri
+         */
+        public function setDownloadUri($downloadUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDownloadUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1UploadPolicyFileResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDownloadUri()
+    class Google_Service_ChromePolicy_GoogleChromePolicyVersionsV1UploadPolicyFileResponse extends \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1UploadPolicyFileResponse
     {
     }
 }

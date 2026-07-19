@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastore;
-
-class CompositeFilter extends \Google\Collection
-{
-    /**
-     * Unspecified. This value must not be used.
-     */
-    public const OP_OPERATOR_UNSPECIFIED = 'OPERATOR_UNSPECIFIED';
-    /**
-     * The results are required to satisfy each of the combined filters.
-     */
-    public const OP_AND = 'AND';
-    /**
-     * Documents are required to satisfy at least one of the combined filters.
-     */
-    public const OP_OR = 'OR';
-    protected $collection_key = 'filters';
-    protected $filtersType = Filter::class;
-    protected $filtersDataType = 'array';
-    /**
-     * The operator for combining multiple filters.
-     *
-     * @var string
-     */
-    public $op;
-    /**
-     * The list of filters to combine. Requires: * At least one filter is present.
-     *
-     * @param Filter[] $filters
-     */
-    public function setFilters($filters)
+namespace Google\Service\Datastore {
+    class CompositeFilter extends \Google\Collection
     {
+        /**
+         * Unspecified. This value must not be used.
+         */
+        public const OP_OPERATOR_UNSPECIFIED = 'OPERATOR_UNSPECIFIED';
+        /**
+         * The results are required to satisfy each of the combined filters.
+         */
+        public const OP_AND = 'AND';
+        /**
+         * Documents are required to satisfy at least one of the combined filters.
+         */
+        public const OP_OR = 'OR';
+        protected $collection_key = 'filters';
+        protected $filtersType = Filter::class;
+        protected $filtersDataType = 'array';
+        /**
+         * The operator for combining multiple filters.
+         *
+         * @var string
+         */
+        public $op;
+        /**
+         * The list of filters to combine. Requires: * At least one filter is present.
+         *
+         * @param Filter[] $filters
+         */
+        public function setFilters($filters)
+        {
+        }
+        /**
+         * @return Filter[]
+         */
+        public function getFilters()
+        {
+        }
+        /**
+         * The operator for combining multiple filters.
+         *
+         * Accepted values: OPERATOR_UNSPECIFIED, AND, OR
+         *
+         * @param self::OP_* $op
+         */
+        public function setOp($op)
+        {
+        }
+        /**
+         * @return self::OP_*
+         */
+        public function getOp()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Filter[]
+     * Runtime class alias of \Google\Service\Datastore\CompositeFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilters()
-    {
-    }
-    /**
-     * The operator for combining multiple filters.
-     *
-     * Accepted values: OPERATOR_UNSPECIFIED, AND, OR
-     *
-     * @param self::OP_* $op
-     */
-    public function setOp($op)
-    {
-    }
-    /**
-     * @return self::OP_*
-     */
-    public function getOp()
+    class Google_Service_Datastore_CompositeFilter extends \Google\Service\Datastore\CompositeFilter
     {
     }
 }

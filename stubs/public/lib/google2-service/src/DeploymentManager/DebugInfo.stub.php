@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DeploymentManager;
-
-class DebugInfo extends \Google\Collection
-{
-    protected $collection_key = 'stackEntries';
-    /**
-     * Additional debugging information provided by the server.
-     *
-     * @var string
-     */
-    public $detail;
-    /**
-     * The stack trace entries indicating where the error occurred.
-     *
-     * @var string[]
-     */
-    public $stackEntries;
-    /**
-     * Additional debugging information provided by the server.
-     *
-     * @param string $detail
-     */
-    public function setDetail($detail)
+namespace Google\Service\DeploymentManager {
+    class DebugInfo extends \Google\Collection
     {
+        protected $collection_key = 'stackEntries';
+        /**
+         * Additional debugging information provided by the server.
+         *
+         * @var string
+         */
+        public $detail;
+        /**
+         * The stack trace entries indicating where the error occurred.
+         *
+         * @var string[]
+         */
+        public $stackEntries;
+        /**
+         * Additional debugging information provided by the server.
+         *
+         * @param string $detail
+         */
+        public function setDetail($detail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDetail()
+        {
+        }
+        /**
+         * The stack trace entries indicating where the error occurred.
+         *
+         * @param string[] $stackEntries
+         */
+        public function setStackEntries($stackEntries)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getStackEntries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DeploymentManager\DebugInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDetail()
-    {
-    }
-    /**
-     * The stack trace entries indicating where the error occurred.
-     *
-     * @param string[] $stackEntries
-     */
-    public function setStackEntries($stackEntries)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getStackEntries()
+    class Google_Service_DeploymentManager_DebugInfo extends \Google\Service\DeploymentManager\DebugInfo
     {
     }
 }

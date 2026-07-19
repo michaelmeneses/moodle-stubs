@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2IssueResourceAzureMetadata extends \Google\Model
-{
-    protected $subscriptionType = GoogleCloudSecuritycenterV2IssueResourceAzureMetadataAzureSubscription::class;
-    protected $subscriptionDataType = '';
-    /**
-     * The Azure subscription of the resource associated with the issue.
-     *
-     * @param GoogleCloudSecuritycenterV2IssueResourceAzureMetadataAzureSubscription $subscription
-     */
-    public function setSubscription(GoogleCloudSecuritycenterV2IssueResourceAzureMetadataAzureSubscription $subscription)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2IssueResourceAzureMetadata extends \Google\Model
     {
+        protected $subscriptionType = GoogleCloudSecuritycenterV2IssueResourceAzureMetadataAzureSubscription::class;
+        protected $subscriptionDataType = '';
+        /**
+         * The Azure subscription of the resource associated with the issue.
+         *
+         * @param GoogleCloudSecuritycenterV2IssueResourceAzureMetadataAzureSubscription $subscription
+         */
+        public function setSubscription(GoogleCloudSecuritycenterV2IssueResourceAzureMetadataAzureSubscription $subscription)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2IssueResourceAzureMetadataAzureSubscription
+         */
+        public function getSubscription()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudSecuritycenterV2IssueResourceAzureMetadataAzureSubscription
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2IssueResourceAzureMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSubscription()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2IssueResourceAzureMetadata extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2IssueResourceAzureMetadata
     {
     }
 }

@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2Disk extends \Google\Model
-{
-    /**
-     * The name of the disk, for example,
-     * "https://www.googleapis.com/compute/v1/projects/{project-id}/zones/{zone-
-     * id}/disks/{disk-id}".
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The name of the disk, for example,
-     * "https://www.googleapis.com/compute/v1/projects/{project-id}/zones/{zone-
-     * id}/disks/{disk-id}".
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2Disk extends \Google\Model
     {
+        /**
+         * The name of the disk, for example,
+         * "https://www.googleapis.com/compute/v1/projects/{project-id}/zones/{zone-
+         * id}/disks/{disk-id}".
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The name of the disk, for example,
+         * "https://www.googleapis.com/compute/v1/projects/{project-id}/zones/{zone-
+         * id}/disks/{disk-id}".
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2Disk registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2Disk extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2Disk
     {
     }
 }

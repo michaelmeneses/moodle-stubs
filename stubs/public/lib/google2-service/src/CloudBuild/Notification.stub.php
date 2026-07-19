@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class Notification extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $filter;
-    protected $httpDeliveryType = HTTPDelivery::class;
-    protected $httpDeliveryDataType = '';
-    public $httpDelivery;
-    protected $slackDeliveryType = SlackDelivery::class;
-    protected $slackDeliveryDataType = '';
-    public $slackDelivery;
-    protected $smtpDeliveryType = SMTPDelivery::class;
-    protected $smtpDeliveryDataType = '';
-    public $smtpDelivery;
-    /**
-     * @var array[]
-     */
-    public $structDelivery;
-    /**
-     * @param string
-     */
-    public function setFilter($filter)
+namespace Google\Service\CloudBuild {
+    class Notification extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $filter;
+        protected $httpDeliveryType = HTTPDelivery::class;
+        protected $httpDeliveryDataType = '';
+        public $httpDelivery;
+        protected $slackDeliveryType = SlackDelivery::class;
+        protected $slackDeliveryDataType = '';
+        public $slackDelivery;
+        protected $smtpDeliveryType = SMTPDelivery::class;
+        protected $smtpDeliveryDataType = '';
+        public $smtpDelivery;
+        /**
+         * @var array[]
+         */
+        public $structDelivery;
+        /**
+         * @param string
+         */
+        public function setFilter($filter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilter()
+        {
+        }
+        /**
+         * @param HTTPDelivery
+         */
+        public function setHttpDelivery(HTTPDelivery $httpDelivery)
+        {
+        }
+        /**
+         * @return HTTPDelivery
+         */
+        public function getHttpDelivery()
+        {
+        }
+        /**
+         * @param SlackDelivery
+         */
+        public function setSlackDelivery(SlackDelivery $slackDelivery)
+        {
+        }
+        /**
+         * @return SlackDelivery
+         */
+        public function getSlackDelivery()
+        {
+        }
+        /**
+         * @param SMTPDelivery
+         */
+        public function setSmtpDelivery(SMTPDelivery $smtpDelivery)
+        {
+        }
+        /**
+         * @return SMTPDelivery
+         */
+        public function getSmtpDelivery()
+        {
+        }
+        /**
+         * @param array[]
+         */
+        public function setStructDelivery($structDelivery)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getStructDelivery()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\Notification registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilter()
-    {
-    }
-    /**
-     * @param HTTPDelivery
-     */
-    public function setHttpDelivery(HTTPDelivery $httpDelivery)
-    {
-    }
-    /**
-     * @return HTTPDelivery
-     */
-    public function getHttpDelivery()
-    {
-    }
-    /**
-     * @param SlackDelivery
-     */
-    public function setSlackDelivery(SlackDelivery $slackDelivery)
-    {
-    }
-    /**
-     * @return SlackDelivery
-     */
-    public function getSlackDelivery()
-    {
-    }
-    /**
-     * @param SMTPDelivery
-     */
-    public function setSmtpDelivery(SMTPDelivery $smtpDelivery)
-    {
-    }
-    /**
-     * @return SMTPDelivery
-     */
-    public function getSmtpDelivery()
-    {
-    }
-    /**
-     * @param array[]
-     */
-    public function setStructDelivery($structDelivery)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getStructDelivery()
+    class Google_Service_CloudBuild_Notification extends \Google\Service\CloudBuild\Notification
     {
     }
 }

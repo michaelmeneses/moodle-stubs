@@ -21,39 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting\Resource;
-
-/**
- * The "videoFormats" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dfareportingService = new Google\Service\Dfareporting(...);
- *   $videoFormats = $dfareportingService->videoFormats;
- *  </code>
- */
-class VideoFormats extends \Google\Service\Resource
-{
+namespace Google\Service\Dfareporting\Resource {
+    use Google\Service\Dfareporting\VideoFormat;
+    use Google\Service\Dfareporting\VideoFormatsListResponse;
     /**
-     * Gets one video format by ID. (videoFormats.get)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param int $id Video format ID.
-     * @param array $optParams Optional parameters.
-     * @return VideoFormat
-     * @throws \Google\Service\Exception
+     * The "videoFormats" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dfareportingService = new Google\Service\Dfareporting(...);
+     *   $videoFormats = $dfareportingService->videoFormats;
+     *  </code>
      */
-    public function get($profileId, $id, $optParams = [])
+    class VideoFormats extends \Google\Service\Resource
     {
+        /**
+         * Gets one video format by ID. (videoFormats.get)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param int $id Video format ID.
+         * @param array $optParams Optional parameters.
+         * @return VideoFormat
+         * @throws \Google\Service\Exception
+         */
+        public function get($profileId, $id, $optParams = [])
+        {
+        }
+        /**
+         * Lists available video formats. (videoFormats.listVideoFormats)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param array $optParams Optional parameters.
+         * @return VideoFormatsListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listVideoFormats($profileId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists available video formats. (videoFormats.listVideoFormats)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param array $optParams Optional parameters.
-     * @return VideoFormatsListResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dfareporting\Resource\VideoFormats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listVideoFormats($profileId, $optParams = [])
+    class Google_Service_Dfareporting_Resource_VideoFormats extends \Google\Service\Dfareporting\Resource\VideoFormats
     {
     }
 }

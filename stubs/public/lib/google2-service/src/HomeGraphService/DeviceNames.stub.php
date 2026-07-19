@@ -21,75 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HomeGraphService;
-
-class DeviceNames extends \Google\Collection
-{
-    protected $collection_key = 'nicknames';
-    /**
-     * List of names provided by the manufacturer rather than the user, such as
-     * serial numbers, SKUs, etc.
-     *
-     * @var string[]
-     */
-    public $defaultNames;
-    /**
-     * Primary name of the device, generally provided by the user. Names will be
-     * truncated if over the 60 Unicode code point (character) limit and no errors
-     * will be thrown. Developers are responsible for handling long names.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Additional names provided by the user for the device.
-     *
-     * @var string[]
-     */
-    public $nicknames;
-    /**
-     * List of names provided by the manufacturer rather than the user, such as
-     * serial numbers, SKUs, etc.
-     *
-     * @param string[] $defaultNames
-     */
-    public function setDefaultNames($defaultNames)
+namespace Google\Service\HomeGraphService {
+    class DeviceNames extends \Google\Collection
     {
+        protected $collection_key = 'nicknames';
+        /**
+         * List of names provided by the manufacturer rather than the user, such as
+         * serial numbers, SKUs, etc.
+         *
+         * @var string[]
+         */
+        public $defaultNames;
+        /**
+         * Primary name of the device, generally provided by the user. Names will be
+         * truncated if over the 60 Unicode code point (character) limit and no errors
+         * will be thrown. Developers are responsible for handling long names.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Additional names provided by the user for the device.
+         *
+         * @var string[]
+         */
+        public $nicknames;
+        /**
+         * List of names provided by the manufacturer rather than the user, such as
+         * serial numbers, SKUs, etc.
+         *
+         * @param string[] $defaultNames
+         */
+        public function setDefaultNames($defaultNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDefaultNames()
+        {
+        }
+        /**
+         * Primary name of the device, generally provided by the user. Names will be
+         * truncated if over the 60 Unicode code point (character) limit and no errors
+         * will be thrown. Developers are responsible for handling long names.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Additional names provided by the user for the device.
+         *
+         * @param string[] $nicknames
+         */
+        public function setNicknames($nicknames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getNicknames()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\HomeGraphService\DeviceNames registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefaultNames()
-    {
-    }
-    /**
-     * Primary name of the device, generally provided by the user. Names will be
-     * truncated if over the 60 Unicode code point (character) limit and no errors
-     * will be thrown. Developers are responsible for handling long names.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Additional names provided by the user for the device.
-     *
-     * @param string[] $nicknames
-     */
-    public function setNicknames($nicknames)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getNicknames()
+    class Google_Service_HomeGraphService_DeviceNames extends \Google\Service\HomeGraphService\DeviceNames
     {
     }
 }

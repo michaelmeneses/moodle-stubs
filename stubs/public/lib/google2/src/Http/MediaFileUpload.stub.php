@@ -23,6 +23,12 @@
  */
 namespace Google\Http;
 
+use Google\Client;
+use Google\Exception as GoogleException;
+use GuzzleHttp\Psr7;
+use GuzzleHttp\Psr7\Request;
+use GuzzleHttp\Psr7\Uri;
+use Psr\Http\Message\RequestInterface;
 /**
  * Manage large file uploads, which may be media but can be any type
  * of sizable data.

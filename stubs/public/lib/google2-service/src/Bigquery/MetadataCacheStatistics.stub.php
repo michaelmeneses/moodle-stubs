@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class MetadataCacheStatistics extends \Google\Collection
-{
-    protected $collection_key = 'tableMetadataCacheUsage';
-    protected $tableMetadataCacheUsageType = TableMetadataCacheUsage::class;
-    protected $tableMetadataCacheUsageDataType = 'array';
-    /**
-     * Set for the Metadata caching eligible tables referenced in the query.
-     *
-     * @param TableMetadataCacheUsage[] $tableMetadataCacheUsage
-     */
-    public function setTableMetadataCacheUsage($tableMetadataCacheUsage)
+namespace Google\Service\Bigquery {
+    class MetadataCacheStatistics extends \Google\Collection
     {
+        protected $collection_key = 'tableMetadataCacheUsage';
+        protected $tableMetadataCacheUsageType = TableMetadataCacheUsage::class;
+        protected $tableMetadataCacheUsageDataType = 'array';
+        /**
+         * Set for the Metadata caching eligible tables referenced in the query.
+         *
+         * @param TableMetadataCacheUsage[] $tableMetadataCacheUsage
+         */
+        public function setTableMetadataCacheUsage($tableMetadataCacheUsage)
+        {
+        }
+        /**
+         * @return TableMetadataCacheUsage[]
+         */
+        public function getTableMetadataCacheUsage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TableMetadataCacheUsage[]
+     * Runtime class alias of \Google\Service\Bigquery\MetadataCacheStatistics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTableMetadataCacheUsage()
+    class Google_Service_Bigquery_MetadataCacheStatistics extends \Google\Service\Bigquery\MetadataCacheStatistics
     {
     }
 }

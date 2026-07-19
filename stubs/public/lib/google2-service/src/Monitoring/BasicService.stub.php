@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class BasicService extends \Google\Model
-{
-    /**
-     * Labels that specify the resource that emits the monitoring data which is
-     * used for SLO reporting of this Service. Documentation and valid values for
-     * given service types here
-     * (https://cloud.google.com/stackdriver/docs/solutions/slo-
-     * monitoring/api/api-structures#basic-svc-w-basic-sli).
-     *
-     * @var string[]
-     */
-    public $serviceLabels;
-    /**
-     * The type of service that this basic service defines, e.g. APP_ENGINE
-     * service type. Documentation and valid values here
-     * (https://cloud.google.com/stackdriver/docs/solutions/slo-
-     * monitoring/api/api-structures#basic-svc-w-basic-sli).
-     *
-     * @var string
-     */
-    public $serviceType;
-    /**
-     * Labels that specify the resource that emits the monitoring data which is
-     * used for SLO reporting of this Service. Documentation and valid values for
-     * given service types here
-     * (https://cloud.google.com/stackdriver/docs/solutions/slo-
-     * monitoring/api/api-structures#basic-svc-w-basic-sli).
-     *
-     * @param string[] $serviceLabels
-     */
-    public function setServiceLabels($serviceLabels)
+namespace Google\Service\Monitoring {
+    class BasicService extends \Google\Model
     {
+        /**
+         * Labels that specify the resource that emits the monitoring data which is
+         * used for SLO reporting of this Service. Documentation and valid values for
+         * given service types here
+         * (https://cloud.google.com/stackdriver/docs/solutions/slo-
+         * monitoring/api/api-structures#basic-svc-w-basic-sli).
+         *
+         * @var string[]
+         */
+        public $serviceLabels;
+        /**
+         * The type of service that this basic service defines, e.g. APP_ENGINE
+         * service type. Documentation and valid values here
+         * (https://cloud.google.com/stackdriver/docs/solutions/slo-
+         * monitoring/api/api-structures#basic-svc-w-basic-sli).
+         *
+         * @var string
+         */
+        public $serviceType;
+        /**
+         * Labels that specify the resource that emits the monitoring data which is
+         * used for SLO reporting of this Service. Documentation and valid values for
+         * given service types here
+         * (https://cloud.google.com/stackdriver/docs/solutions/slo-
+         * monitoring/api/api-structures#basic-svc-w-basic-sli).
+         *
+         * @param string[] $serviceLabels
+         */
+        public function setServiceLabels($serviceLabels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getServiceLabels()
+        {
+        }
+        /**
+         * The type of service that this basic service defines, e.g. APP_ENGINE
+         * service type. Documentation and valid values here
+         * (https://cloud.google.com/stackdriver/docs/solutions/slo-
+         * monitoring/api/api-structures#basic-svc-w-basic-sli).
+         *
+         * @param string $serviceType
+         */
+        public function setServiceType($serviceType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Monitoring\BasicService registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getServiceLabels()
-    {
-    }
-    /**
-     * The type of service that this basic service defines, e.g. APP_ENGINE
-     * service type. Documentation and valid values here
-     * (https://cloud.google.com/stackdriver/docs/solutions/slo-
-     * monitoring/api/api-structures#basic-svc-w-basic-sli).
-     *
-     * @param string $serviceType
-     */
-    public function setServiceType($serviceType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceType()
+    class Google_Service_Monitoring_BasicService extends \Google\Service\Monitoring\BasicService
     {
     }
 }

@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\StreetViewPublish;
-
-class Place extends \Google\Model
-{
-    /**
-     * Output only. The language_code that the name is localized with. This should
-     * be the language_code specified in the request, but may be a fallback.
-     *
-     * @var string
-     */
-    public $languageCode;
-    /**
-     * Output only. The name of the place, localized to the language_code.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Place identifier, as described in
-     * https://developers.google.com/places/place-id.
-     *
-     * @var string
-     */
-    public $placeId;
-    /**
-     * Output only. The language_code that the name is localized with. This should
-     * be the language_code specified in the request, but may be a fallback.
-     *
-     * @param string $languageCode
-     */
-    public function setLanguageCode($languageCode)
+namespace Google\Service\StreetViewPublish {
+    class Place extends \Google\Model
     {
+        /**
+         * Output only. The language_code that the name is localized with. This should
+         * be the language_code specified in the request, but may be a fallback.
+         *
+         * @var string
+         */
+        public $languageCode;
+        /**
+         * Output only. The name of the place, localized to the language_code.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Place identifier, as described in
+         * https://developers.google.com/places/place-id.
+         *
+         * @var string
+         */
+        public $placeId;
+        /**
+         * Output only. The language_code that the name is localized with. This should
+         * be the language_code specified in the request, but may be a fallback.
+         *
+         * @param string $languageCode
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
+        /**
+         * Output only. The name of the place, localized to the language_code.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Place identifier, as described in
+         * https://developers.google.com/places/place-id.
+         *
+         * @param string $placeId
+         */
+        public function setPlaceId($placeId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlaceId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\StreetViewPublish\Place registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLanguageCode()
-    {
-    }
-    /**
-     * Output only. The name of the place, localized to the language_code.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Place identifier, as described in
-     * https://developers.google.com/places/place-id.
-     *
-     * @param string $placeId
-     */
-    public function setPlaceId($placeId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPlaceId()
+    class Google_Service_StreetViewPublish_Place extends \Google\Service\StreetViewPublish\Place
     {
     }
 }

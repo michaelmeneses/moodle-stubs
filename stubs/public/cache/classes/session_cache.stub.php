@@ -20,300 +20,310 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core_cache;
-
-/**
- * A session cache.
- *
- * This class is used for session caches returned by the cache::make methods.
- *
- * It differs from the application loader in a couple of noteable ways:
- *    1. Sessions are always expected to exist.
- *       Because of this we don't ever use the static acceleration array.
- *    2. Session data for a loader instance (store + definition) is consolidate into a
- *       single array for storage within the store.
- *       Along with this we embed a lastaccessed time with the data. This way we can
- *       check sessions for a last access time.
- *    3. Session stores are required to support key searching and must
- *       implement searchable_cache_interface. This ensures stores used for the cache can be
- *       targetted for garbage collection of session data.
- *
- * This cache class should never be interacted with directly. Instead you should always use the cache::make methods.
- * It is technically possible to call those methods through this class however there is no guarantee that you will get an
- * instance of this class back again.
- *
- * @todo we should support locking in the session as well. Should be pretty simple to set up.
- *
- * @internal don't use me directly.
- * @method store|searchable_cache_interface get_store() Returns the cache store which must implement
- *                                                      both searchable_cache_interface.
- *
- * @package    core_cache
- * @category   cache
- * @copyright  2012 Sam Hemelryk
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-class session_cache extends cache
-{
+namespace core_cache {
+    use core\exception\coding_exception;
     /**
-     * The user the session has been established for.
-     * @var int
-     */
-    protected static $loadeduserid = null;
-    /**
-     * The userid this cache is currently using.
-     * @var int
-     */
-    protected $currentuserid = null;
-    /**
-     * The session id we are currently using.
-     * @var array
-     */
-    protected $sessionid = null;
-    /**
-     * The session data for the above session id.
-     * @var array
-     */
-    protected $session = null;
-    /**
-     * Constant used to prefix keys.
-     */
-    const KEY_PREFIX = 'sess_';
-    /**
-     * This is the key used to track last access.
-     */
-    const LASTACCESS = '__lastaccess__';
-    /**
-     * Override the cache::construct method.
+     * A session cache.
      *
-     * This function gets overriden so that we can process any invalidation events if need be.
-     * If the definition doesn't have any invalidation events then this occurs exactly as it would for the cache class.
-     * Otherwise we look at the last invalidation time and then check the invalidation data for events that have occured
-     * between then now.
+     * This class is used for session caches returned by the cache::make methods.
      *
-     * You should not call this method from your code, instead you should use the cache::make methods.
+     * It differs from the application loader in a couple of noteable ways:
+     *    1. Sessions are always expected to exist.
+     *       Because of this we don't ever use the static acceleration array.
+     *    2. Session data for a loader instance (store + definition) is consolidate into a
+     *       single array for storage within the store.
+     *       Along with this we embed a lastaccessed time with the data. This way we can
+     *       check sessions for a last access time.
+     *    3. Session stores are required to support key searching and must
+     *       implement searchable_cache_interface. This ensures stores used for the cache can be
+     *       targetted for garbage collection of session data.
      *
-     * @param definition $definition
-     * @param store $store
-     * @param loader_interface|data_source_interface $loader
+     * This cache class should never be interacted with directly. Instead you should always use the cache::make methods.
+     * It is technically possible to call those methods through this class however there is no guarantee that you will get an
+     * instance of this class back again.
+     *
+     * @todo we should support locking in the session as well. Should be pretty simple to set up.
+     *
+     * @internal don't use me directly.
+     * @method store|searchable_cache_interface get_store() Returns the cache store which must implement
+     *                                                      both searchable_cache_interface.
+     *
+     * @package    core_cache
+     * @category   cache
+     * @copyright  2012 Sam Hemelryk
+     * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    public function __construct(definition $definition, store $store, $loader = null)
+    class session_cache extends cache
     {
+        /**
+         * The user the session has been established for.
+         * @var int
+         */
+        protected static $loadeduserid = null;
+        /**
+         * The userid this cache is currently using.
+         * @var int
+         */
+        protected $currentuserid = null;
+        /**
+         * The session id we are currently using.
+         * @var array
+         */
+        protected $sessionid = null;
+        /**
+         * The session data for the above session id.
+         * @var array
+         */
+        protected $session = null;
+        /**
+         * Constant used to prefix keys.
+         */
+        const KEY_PREFIX = 'sess_';
+        /**
+         * This is the key used to track last access.
+         */
+        const LASTACCESS = '__lastaccess__';
+        /**
+         * Override the cache::construct method.
+         *
+         * This function gets overriden so that we can process any invalidation events if need be.
+         * If the definition doesn't have any invalidation events then this occurs exactly as it would for the cache class.
+         * Otherwise we look at the last invalidation time and then check the invalidation data for events that have occured
+         * between then now.
+         *
+         * You should not call this method from your code, instead you should use the cache::make methods.
+         *
+         * @param definition $definition
+         * @param store $store
+         * @param loader_interface|data_source_interface $loader
+         */
+        public function __construct(definition $definition, store $store, $loader = null)
+        {
+        }
+        /**
+         * Sets the session id for the loader.
+         */
+        protected function set_session_id()
+        {
+        }
+        /**
+         * Returns the prefix used for all keys.
+         * @return string
+         */
+        protected function get_key_prefix()
+        {
+        }
+        /**
+         * Parses the key turning it into a string (or array is required) suitable to be passed to the cache store.
+         *
+         * This function is called for every operation that uses keys. For this reason we use this function to also check
+         * that the current user is the same as the user who last used this cache.
+         *
+         * On top of that if prepends the string 'sess_' to the start of all keys. The _ ensures things are easily identifiable.
+         *
+         * @param string|int $key As passed to get|set|delete etc.
+         * @return string|array String unless the store supports multi-identifiers in which case an array if returned.
+         */
+        protected function parse_key($key)
+        {
+        }
+        /**
+         * Check that this cache instance is tracking the current user.
+         */
+        protected function check_tracked_user()
+        {
+        }
+        /**
+         * Purges the session cache of all data belonging to the current user.
+         */
+        public function purge_current_user()
+        {
+        }
+        /**
+         * Retrieves the value for the given key from the cache.
+         *
+         * @param string|int $key The key for the data being requested.
+         *      It can be any structure although using a scalar string or int is recommended in the interests of performance.
+         *      In advanced cases an array may be useful such as in situations requiring the multi-key functionality.
+         * @param int $requiredversion Minimum required version of the data or cache::VERSION_NONE
+         * @param int $strictness One of IGNORE_MISSING | MUST_EXIST
+         * @param mixed &$actualversion If specified, will be set to the actual version number retrieved
+         * @return mixed|false The data from the cache or false if the key did not exist within the cache.
+         * @throws coding_exception
+         */
+        protected function get_implementation($key, int $requiredversion, int $strictness, &$actualversion = null)
+        {
+        }
+        /**
+         * Sends a key => value pair to the cache.
+         *
+         * <code>
+         * // This code will add four entries to the cache, one for each url.
+         * $cache->set('main', 'http://moodle.org');
+         * $cache->set('docs', 'http://docs.moodle.org');
+         * $cache->set('tracker', 'http://tracker.moodle.org');
+         * $cache->set('qa', 'http://qa.moodle.net');
+         * </code>
+         *
+         * @param string|int $key The key for the data being requested.
+         *      It can be any structure although using a scalar string or int is recommended in the interests of performance.
+         *      In advanced cases an array may be useful such as in situations requiring the multi-key functionality.
+         * @param mixed $data The data to set against the key.
+         * @return bool True on success, false otherwise.
+         */
+        public function set($key, $data)
+        {
+        }
+        /**
+         * Delete the given key from the cache.
+         *
+         * @param string|int $key The key to delete.
+         * @param bool $recurse When set to true the key will also be deleted from all stacked cache loaders and their stores.
+         *     This happens by default and ensure that all the caches are consistent. It is NOT recommended to change this.
+         * @return bool True of success, false otherwise.
+         */
+        public function delete($key, $recurse = true)
+        {
+        }
+        /**
+         * Retrieves an array of values for an array of keys.
+         *
+         * Using this function comes with potential performance implications.
+         * Not all cache stores will support get_many/set_many operations and in order to replicate this functionality will call
+         * the equivalent singular method for each item provided.
+         * This should not deter you from using this function as there is a performance benefit in situations where the cache store
+         * does support it, but you should be aware of this fact.
+         *
+         * @param array $keys The keys of the data being requested.
+         *      Each key can be any structure although using a scalar string or int is recommended in the interests of performance.
+         *      In advanced cases an array may be useful such as in situations requiring the multi-key functionality.
+         * @param int $strictness One of IGNORE_MISSING or MUST_EXIST.
+         * @return array An array of key value pairs for the items that could be retrieved from the cache.
+         *      If MUST_EXIST was used and not all keys existed within the cache then an exception will be thrown.
+         *      Otherwise any key that did not exist will have a data value of false within the results.
+         * @throws coding_exception
+         */
+        public function get_many(array $keys, $strictness = IGNORE_MISSING)
+        {
+        }
+        /**
+         * Delete all of the given keys from the cache.
+         *
+         * @param array $keys The key to delete.
+         * @param bool $recurse When set to true the key will also be deleted from all stacked cache loaders and their stores.
+         *     This happens by default and ensure that all the caches are consistent. It is NOT recommended to change this.
+         * @return int The number of items successfully deleted.
+         */
+        public function delete_many(array $keys, $recurse = true)
+        {
+        }
+        /**
+         * Sends several key => value pairs to the cache.
+         *
+         * Using this function comes with potential performance implications.
+         * Not all cache stores will support get_many/set_many operations and in order to replicate this functionality will call
+         * the equivalent singular method for each item provided.
+         * This should not deter you from using this function as there is a performance benefit in situations where the cache store
+         * does support it, but you should be aware of this fact.
+         *
+         * <code>
+         * // This code will add four entries to the cache, one for each url.
+         * $cache->set_many(array(
+         *     'main' => 'http://moodle.org',
+         *     'docs' => 'http://docs.moodle.org',
+         *     'tracker' => 'http://tracker.moodle.org',
+         *     'qa' => ''http://qa.moodle.net'
+         * ));
+         * </code>
+         *
+         * @param array $keyvaluearray An array of key => value pairs to send to the cache.
+         * @return int The number of items successfully set. It is up to the developer to check this matches the number of items.
+         *      ... if they care that is.
+         */
+        public function set_many(array $keyvaluearray)
+        {
+        }
+        /**
+         * Purges the cache store, and loader if there is one.
+         *
+         * @return bool True on success, false otherwise
+         */
+        public function purge()
+        {
+        }
+        /**
+         * Test is a cache has a key.
+         *
+         * The use of the has methods is strongly discouraged. In a high load environment the cache may well change between the
+         * test and any subsequent action (get, set, delete etc).
+         * Instead it is recommended to write your code in such a way they it performs the following steps:
+         * <ol>
+         * <li>Attempt to retrieve the information.</li>
+         * <li>Generate the information.</li>
+         * <li>Attempt to set the information</li>
+         * </ol>
+         *
+         * Its also worth mentioning that not all stores support key tests.
+         * For stores that don't support key tests this functionality is mimicked by using the equivalent get method.
+         * Just one more reason you should not use these methods unless you have a very good reason to do so.
+         *
+         * @param string|int $key
+         * @param bool $tryloadifpossible If set to true, the cache doesn't contain the key, and there is another cache loader or
+         *      data source then the code will try load the key value from the next item in the chain.
+         * @return bool True if the cache has the requested key, false otherwise.
+         */
+        public function has($key, $tryloadifpossible = false)
+        {
+        }
+        /**
+         * Test is a cache has all of the given keys.
+         *
+         * It is strongly recommended to avoid the use of this function if not absolutely required.
+         * In a high load environment the cache may well change between the test and any subsequent action (get, set, delete etc).
+         *
+         * Its also worth mentioning that not all stores support key tests.
+         * For stores that don't support key tests this functionality is mimicked by using the equivalent get method.
+         * Just one more reason you should not use these methods unless you have a very good reason to do so.
+         *
+         * @param array $keys
+         * @return bool True if the cache has all of the given keys, false otherwise.
+         */
+        public function has_all(array $keys)
+        {
+        }
+        /**
+         * Test if a cache has at least one of the given keys.
+         *
+         * It is strongly recommended to avoid the use of this function if not absolutely required.
+         * In a high load environment the cache may well change between the test and any subsequent action (get, set, delete etc).
+         *
+         * Its also worth mentioning that not all stores support key tests.
+         * For stores that don't support key tests this functionality is mimicked by using the equivalent get method.
+         * Just one more reason you should not use these methods unless you have a very good reason to do so.
+         *
+         * @param array $keys
+         * @return bool True if the cache has at least one of the given keys
+         */
+        public function has_any(array $keys)
+        {
+        }
+        /**
+         * The session loader never uses static acceleration.
+         * Instead it stores things in the static $session variable. Shared between all session loaders.
+         *
+         * @return bool
+         */
+        protected function use_static_acceleration()
+        {
+        }
     }
+}
+namespace {
     /**
-     * Sets the session id for the loader.
+     * Runtime class alias of \core_cache\session_cache registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    protected function set_session_id()
-    {
-    }
-    /**
-     * Returns the prefix used for all keys.
-     * @return string
-     */
-    protected function get_key_prefix()
-    {
-    }
-    /**
-     * Parses the key turning it into a string (or array is required) suitable to be passed to the cache store.
-     *
-     * This function is called for every operation that uses keys. For this reason we use this function to also check
-     * that the current user is the same as the user who last used this cache.
-     *
-     * On top of that if prepends the string 'sess_' to the start of all keys. The _ ensures things are easily identifiable.
-     *
-     * @param string|int $key As passed to get|set|delete etc.
-     * @return string|array String unless the store supports multi-identifiers in which case an array if returned.
-     */
-    protected function parse_key($key)
-    {
-    }
-    /**
-     * Check that this cache instance is tracking the current user.
-     */
-    protected function check_tracked_user()
-    {
-    }
-    /**
-     * Purges the session cache of all data belonging to the current user.
-     */
-    public function purge_current_user()
-    {
-    }
-    /**
-     * Retrieves the value for the given key from the cache.
-     *
-     * @param string|int $key The key for the data being requested.
-     *      It can be any structure although using a scalar string or int is recommended in the interests of performance.
-     *      In advanced cases an array may be useful such as in situations requiring the multi-key functionality.
-     * @param int $requiredversion Minimum required version of the data or cache::VERSION_NONE
-     * @param int $strictness One of IGNORE_MISSING | MUST_EXIST
-     * @param mixed &$actualversion If specified, will be set to the actual version number retrieved
-     * @return mixed|false The data from the cache or false if the key did not exist within the cache.
-     * @throws coding_exception
-     */
-    protected function get_implementation($key, int $requiredversion, int $strictness, &$actualversion = null)
-    {
-    }
-    /**
-     * Sends a key => value pair to the cache.
-     *
-     * <code>
-     * // This code will add four entries to the cache, one for each url.
-     * $cache->set('main', 'http://moodle.org');
-     * $cache->set('docs', 'http://docs.moodle.org');
-     * $cache->set('tracker', 'http://tracker.moodle.org');
-     * $cache->set('qa', 'http://qa.moodle.net');
-     * </code>
-     *
-     * @param string|int $key The key for the data being requested.
-     *      It can be any structure although using a scalar string or int is recommended in the interests of performance.
-     *      In advanced cases an array may be useful such as in situations requiring the multi-key functionality.
-     * @param mixed $data The data to set against the key.
-     * @return bool True on success, false otherwise.
-     */
-    public function set($key, $data)
-    {
-    }
-    /**
-     * Delete the given key from the cache.
-     *
-     * @param string|int $key The key to delete.
-     * @param bool $recurse When set to true the key will also be deleted from all stacked cache loaders and their stores.
-     *     This happens by default and ensure that all the caches are consistent. It is NOT recommended to change this.
-     * @return bool True of success, false otherwise.
-     */
-    public function delete($key, $recurse = true)
-    {
-    }
-    /**
-     * Retrieves an array of values for an array of keys.
-     *
-     * Using this function comes with potential performance implications.
-     * Not all cache stores will support get_many/set_many operations and in order to replicate this functionality will call
-     * the equivalent singular method for each item provided.
-     * This should not deter you from using this function as there is a performance benefit in situations where the cache store
-     * does support it, but you should be aware of this fact.
-     *
-     * @param array $keys The keys of the data being requested.
-     *      Each key can be any structure although using a scalar string or int is recommended in the interests of performance.
-     *      In advanced cases an array may be useful such as in situations requiring the multi-key functionality.
-     * @param int $strictness One of IGNORE_MISSING or MUST_EXIST.
-     * @return array An array of key value pairs for the items that could be retrieved from the cache.
-     *      If MUST_EXIST was used and not all keys existed within the cache then an exception will be thrown.
-     *      Otherwise any key that did not exist will have a data value of false within the results.
-     * @throws coding_exception
-     */
-    public function get_many(array $keys, $strictness = IGNORE_MISSING)
-    {
-    }
-    /**
-     * Delete all of the given keys from the cache.
-     *
-     * @param array $keys The key to delete.
-     * @param bool $recurse When set to true the key will also be deleted from all stacked cache loaders and their stores.
-     *     This happens by default and ensure that all the caches are consistent. It is NOT recommended to change this.
-     * @return int The number of items successfully deleted.
-     */
-    public function delete_many(array $keys, $recurse = true)
-    {
-    }
-    /**
-     * Sends several key => value pairs to the cache.
-     *
-     * Using this function comes with potential performance implications.
-     * Not all cache stores will support get_many/set_many operations and in order to replicate this functionality will call
-     * the equivalent singular method for each item provided.
-     * This should not deter you from using this function as there is a performance benefit in situations where the cache store
-     * does support it, but you should be aware of this fact.
-     *
-     * <code>
-     * // This code will add four entries to the cache, one for each url.
-     * $cache->set_many(array(
-     *     'main' => 'http://moodle.org',
-     *     'docs' => 'http://docs.moodle.org',
-     *     'tracker' => 'http://tracker.moodle.org',
-     *     'qa' => ''http://qa.moodle.net'
-     * ));
-     * </code>
-     *
-     * @param array $keyvaluearray An array of key => value pairs to send to the cache.
-     * @return int The number of items successfully set. It is up to the developer to check this matches the number of items.
-     *      ... if they care that is.
-     */
-    public function set_many(array $keyvaluearray)
-    {
-    }
-    /**
-     * Purges the cache store, and loader if there is one.
-     *
-     * @return bool True on success, false otherwise
-     */
-    public function purge()
-    {
-    }
-    /**
-     * Test is a cache has a key.
-     *
-     * The use of the has methods is strongly discouraged. In a high load environment the cache may well change between the
-     * test and any subsequent action (get, set, delete etc).
-     * Instead it is recommended to write your code in such a way they it performs the following steps:
-     * <ol>
-     * <li>Attempt to retrieve the information.</li>
-     * <li>Generate the information.</li>
-     * <li>Attempt to set the information</li>
-     * </ol>
-     *
-     * Its also worth mentioning that not all stores support key tests.
-     * For stores that don't support key tests this functionality is mimicked by using the equivalent get method.
-     * Just one more reason you should not use these methods unless you have a very good reason to do so.
-     *
-     * @param string|int $key
-     * @param bool $tryloadifpossible If set to true, the cache doesn't contain the key, and there is another cache loader or
-     *      data source then the code will try load the key value from the next item in the chain.
-     * @return bool True if the cache has the requested key, false otherwise.
-     */
-    public function has($key, $tryloadifpossible = false)
-    {
-    }
-    /**
-     * Test is a cache has all of the given keys.
-     *
-     * It is strongly recommended to avoid the use of this function if not absolutely required.
-     * In a high load environment the cache may well change between the test and any subsequent action (get, set, delete etc).
-     *
-     * Its also worth mentioning that not all stores support key tests.
-     * For stores that don't support key tests this functionality is mimicked by using the equivalent get method.
-     * Just one more reason you should not use these methods unless you have a very good reason to do so.
-     *
-     * @param array $keys
-     * @return bool True if the cache has all of the given keys, false otherwise.
-     */
-    public function has_all(array $keys)
-    {
-    }
-    /**
-     * Test if a cache has at least one of the given keys.
-     *
-     * It is strongly recommended to avoid the use of this function if not absolutely required.
-     * In a high load environment the cache may well change between the test and any subsequent action (get, set, delete etc).
-     *
-     * Its also worth mentioning that not all stores support key tests.
-     * For stores that don't support key tests this functionality is mimicked by using the equivalent get method.
-     * Just one more reason you should not use these methods unless you have a very good reason to do so.
-     *
-     * @param array $keys
-     * @return bool True if the cache has at least one of the given keys
-     */
-    public function has_any(array $keys)
-    {
-    }
-    /**
-     * The session loader never uses static acceleration.
-     * Instead it stores things in the static $session variable. Shared between all session loaders.
-     *
-     * @return bool
-     */
-    protected function use_static_acceleration()
+    class cache_session extends \core_cache\session_cache
     {
     }
 }

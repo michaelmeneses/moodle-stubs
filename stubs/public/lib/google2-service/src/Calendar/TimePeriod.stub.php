@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Calendar;
-
-class TimePeriod extends \Google\Model
-{
-    /**
-     * The (exclusive) end of the time period.
-     *
-     * @var string
-     */
-    public $end;
-    /**
-     * The (inclusive) start of the time period.
-     *
-     * @var string
-     */
-    public $start;
-    /**
-     * The (exclusive) end of the time period.
-     *
-     * @param string $end
-     */
-    public function setEnd($end)
+namespace Google\Service\Calendar {
+    class TimePeriod extends \Google\Model
     {
+        /**
+         * The (exclusive) end of the time period.
+         *
+         * @var string
+         */
+        public $end;
+        /**
+         * The (inclusive) start of the time period.
+         *
+         * @var string
+         */
+        public $start;
+        /**
+         * The (exclusive) end of the time period.
+         *
+         * @param string $end
+         */
+        public function setEnd($end)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnd()
+        {
+        }
+        /**
+         * The (inclusive) start of the time period.
+         *
+         * @param string $start
+         */
+        public function setStart($start)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStart()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Calendar\TimePeriod registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnd()
-    {
-    }
-    /**
-     * The (inclusive) start of the time period.
-     *
-     * @param string $start
-     */
-    public function setStart($start)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStart()
+    class Google_Service_Calendar_TimePeriod extends \Google\Service\Calendar\TimePeriod
     {
     }
 }

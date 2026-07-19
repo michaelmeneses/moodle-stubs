@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class GoogleCloudOsconfigV2OrchestrationScope extends \Google\Collection
-{
-    protected $collection_key = 'selectors';
-    protected $selectorsType = GoogleCloudOsconfigV2OrchestrationScopeSelector::class;
-    protected $selectorsDataType = 'array';
-    /**
-     * Optional. Selectors of the orchestration scope. There is a logical AND
-     * between each selector defined. When there is no explicit
-     * `ResourceHierarchySelector` selector specified, the scope is by default
-     * bounded to the parent of the policy orchestrator resource.
-     *
-     * @param GoogleCloudOsconfigV2OrchestrationScopeSelector[] $selectors
-     */
-    public function setSelectors($selectors)
+namespace Google\Service\OSConfig {
+    class GoogleCloudOsconfigV2OrchestrationScope extends \Google\Collection
     {
+        protected $collection_key = 'selectors';
+        protected $selectorsType = GoogleCloudOsconfigV2OrchestrationScopeSelector::class;
+        protected $selectorsDataType = 'array';
+        /**
+         * Optional. Selectors of the orchestration scope. There is a logical AND
+         * between each selector defined. When there is no explicit
+         * `ResourceHierarchySelector` selector specified, the scope is by default
+         * bounded to the parent of the policy orchestrator resource.
+         *
+         * @param GoogleCloudOsconfigV2OrchestrationScopeSelector[] $selectors
+         */
+        public function setSelectors($selectors)
+        {
+        }
+        /**
+         * @return GoogleCloudOsconfigV2OrchestrationScopeSelector[]
+         */
+        public function getSelectors()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudOsconfigV2OrchestrationScopeSelector[]
+     * Runtime class alias of \Google\Service\OSConfig\GoogleCloudOsconfigV2OrchestrationScope registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSelectors()
+    class Google_Service_OSConfig_GoogleCloudOsconfigV2OrchestrationScope extends \Google\Service\OSConfig\GoogleCloudOsconfigV2OrchestrationScope
     {
     }
 }

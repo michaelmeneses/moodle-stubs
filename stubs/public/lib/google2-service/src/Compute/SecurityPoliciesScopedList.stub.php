@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class SecurityPoliciesScopedList extends \Google\Collection
-{
-    protected $collection_key = 'securityPolicies';
-    protected $securityPoliciesType = SecurityPolicy::class;
-    protected $securityPoliciesDataType = 'array';
-    protected $warningType = SecurityPoliciesScopedListWarning::class;
-    protected $warningDataType = '';
-    /**
-     * A list of SecurityPolicies contained in this scope.
-     *
-     * @param SecurityPolicy[] $securityPolicies
-     */
-    public function setSecurityPolicies($securityPolicies)
+namespace Google\Service\Compute {
+    class SecurityPoliciesScopedList extends \Google\Collection
     {
+        protected $collection_key = 'securityPolicies';
+        protected $securityPoliciesType = SecurityPolicy::class;
+        protected $securityPoliciesDataType = 'array';
+        protected $warningType = SecurityPoliciesScopedListWarning::class;
+        protected $warningDataType = '';
+        /**
+         * A list of SecurityPolicies contained in this scope.
+         *
+         * @param SecurityPolicy[] $securityPolicies
+         */
+        public function setSecurityPolicies($securityPolicies)
+        {
+        }
+        /**
+         * @return SecurityPolicy[]
+         */
+        public function getSecurityPolicies()
+        {
+        }
+        /**
+         * Informational warning which replaces the list of security policies when the
+         * list is empty.
+         *
+         * @param SecurityPoliciesScopedListWarning $warning
+         */
+        public function setWarning(SecurityPoliciesScopedListWarning $warning)
+        {
+        }
+        /**
+         * @return SecurityPoliciesScopedListWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SecurityPolicy[]
+     * Runtime class alias of \Google\Service\Compute\SecurityPoliciesScopedList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSecurityPolicies()
-    {
-    }
-    /**
-     * Informational warning which replaces the list of security policies when the
-     * list is empty.
-     *
-     * @param SecurityPoliciesScopedListWarning $warning
-     */
-    public function setWarning(SecurityPoliciesScopedListWarning $warning)
-    {
-    }
-    /**
-     * @return SecurityPoliciesScopedListWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_SecurityPoliciesScopedList extends \Google\Service\Compute\SecurityPoliciesScopedList
     {
     }
 }

@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudKMS;
-
-class CertificateChains extends \Google\Collection
-{
-    protected $collection_key = 'googlePartitionCerts';
-    /**
-     * Cavium certificate chain corresponding to the attestation.
-     *
-     * @var string[]
-     */
-    public $caviumCerts;
-    /**
-     * Google card certificate chain corresponding to the attestation.
-     *
-     * @var string[]
-     */
-    public $googleCardCerts;
-    /**
-     * Google partition certificate chain corresponding to the attestation.
-     *
-     * @var string[]
-     */
-    public $googlePartitionCerts;
-    /**
-     * Cavium certificate chain corresponding to the attestation.
-     *
-     * @param string[] $caviumCerts
-     */
-    public function setCaviumCerts($caviumCerts)
+namespace Google\Service\CloudKMS {
+    class CertificateChains extends \Google\Collection
     {
+        protected $collection_key = 'googlePartitionCerts';
+        /**
+         * Cavium certificate chain corresponding to the attestation.
+         *
+         * @var string[]
+         */
+        public $caviumCerts;
+        /**
+         * Google card certificate chain corresponding to the attestation.
+         *
+         * @var string[]
+         */
+        public $googleCardCerts;
+        /**
+         * Google partition certificate chain corresponding to the attestation.
+         *
+         * @var string[]
+         */
+        public $googlePartitionCerts;
+        /**
+         * Cavium certificate chain corresponding to the attestation.
+         *
+         * @param string[] $caviumCerts
+         */
+        public function setCaviumCerts($caviumCerts)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCaviumCerts()
+        {
+        }
+        /**
+         * Google card certificate chain corresponding to the attestation.
+         *
+         * @param string[] $googleCardCerts
+         */
+        public function setGoogleCardCerts($googleCardCerts)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getGoogleCardCerts()
+        {
+        }
+        /**
+         * Google partition certificate chain corresponding to the attestation.
+         *
+         * @param string[] $googlePartitionCerts
+         */
+        public function setGooglePartitionCerts($googlePartitionCerts)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getGooglePartitionCerts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudKMS\CertificateChains registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCaviumCerts()
-    {
-    }
-    /**
-     * Google card certificate chain corresponding to the attestation.
-     *
-     * @param string[] $googleCardCerts
-     */
-    public function setGoogleCardCerts($googleCardCerts)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getGoogleCardCerts()
-    {
-    }
-    /**
-     * Google partition certificate chain corresponding to the attestation.
-     *
-     * @param string[] $googlePartitionCerts
-     */
-    public function setGooglePartitionCerts($googlePartitionCerts)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getGooglePartitionCerts()
+    class Google_Service_CloudKMS_CertificateChains extends \Google\Service\CloudKMS\CertificateChains
     {
     }
 }

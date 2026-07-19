@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PubsubLite;
-
-class Cursor extends \Google\Model
-{
-    /**
-     * The offset of a message within a topic partition. Must be greater than or
-     * equal 0.
-     *
-     * @var string
-     */
-    public $offset;
-    /**
-     * The offset of a message within a topic partition. Must be greater than or
-     * equal 0.
-     *
-     * @param string $offset
-     */
-    public function setOffset($offset)
+namespace Google\Service\PubsubLite {
+    class Cursor extends \Google\Model
     {
+        /**
+         * The offset of a message within a topic partition. Must be greater than or
+         * equal 0.
+         *
+         * @var string
+         */
+        public $offset;
+        /**
+         * The offset of a message within a topic partition. Must be greater than or
+         * equal 0.
+         *
+         * @param string $offset
+         */
+        public function setOffset($offset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOffset()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PubsubLite\Cursor registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOffset()
+    class Google_Service_PubsubLite_Cursor extends \Google\Service\PubsubLite\Cursor
     {
     }
 }

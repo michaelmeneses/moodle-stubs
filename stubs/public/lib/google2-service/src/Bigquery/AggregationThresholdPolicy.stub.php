@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class AggregationThresholdPolicy extends \Google\Collection
-{
-    protected $collection_key = 'privacyUnitColumns';
-    /**
-     * Optional. The privacy unit column(s) associated with this policy. For now,
-     * only one column per data source object (table, view) is allowed as a
-     * privacy unit column. Representing as a repeated field in metadata for
-     * extensibility to multiple columns in future. Duplicates and Repeated struct
-     * fields are not allowed. For nested fields, use dot notation ("outer.inner")
-     *
-     * @var string[]
-     */
-    public $privacyUnitColumns;
-    /**
-     * Optional. The threshold for the "aggregation threshold" policy.
-     *
-     * @var string
-     */
-    public $threshold;
-    /**
-     * Optional. The privacy unit column(s) associated with this policy. For now,
-     * only one column per data source object (table, view) is allowed as a
-     * privacy unit column. Representing as a repeated field in metadata for
-     * extensibility to multiple columns in future. Duplicates and Repeated struct
-     * fields are not allowed. For nested fields, use dot notation ("outer.inner")
-     *
-     * @param string[] $privacyUnitColumns
-     */
-    public function setPrivacyUnitColumns($privacyUnitColumns)
+namespace Google\Service\Bigquery {
+    class AggregationThresholdPolicy extends \Google\Collection
     {
+        protected $collection_key = 'privacyUnitColumns';
+        /**
+         * Optional. The privacy unit column(s) associated with this policy. For now,
+         * only one column per data source object (table, view) is allowed as a
+         * privacy unit column. Representing as a repeated field in metadata for
+         * extensibility to multiple columns in future. Duplicates and Repeated struct
+         * fields are not allowed. For nested fields, use dot notation ("outer.inner")
+         *
+         * @var string[]
+         */
+        public $privacyUnitColumns;
+        /**
+         * Optional. The threshold for the "aggregation threshold" policy.
+         *
+         * @var string
+         */
+        public $threshold;
+        /**
+         * Optional. The privacy unit column(s) associated with this policy. For now,
+         * only one column per data source object (table, view) is allowed as a
+         * privacy unit column. Representing as a repeated field in metadata for
+         * extensibility to multiple columns in future. Duplicates and Repeated struct
+         * fields are not allowed. For nested fields, use dot notation ("outer.inner")
+         *
+         * @param string[] $privacyUnitColumns
+         */
+        public function setPrivacyUnitColumns($privacyUnitColumns)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPrivacyUnitColumns()
+        {
+        }
+        /**
+         * Optional. The threshold for the "aggregation threshold" policy.
+         *
+         * @param string $threshold
+         */
+        public function setThreshold($threshold)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThreshold()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Bigquery\AggregationThresholdPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPrivacyUnitColumns()
-    {
-    }
-    /**
-     * Optional. The threshold for the "aggregation threshold" policy.
-     *
-     * @param string $threshold
-     */
-    public function setThreshold($threshold)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getThreshold()
+    class Google_Service_Bigquery_AggregationThresholdPolicy extends \Google\Service\Bigquery\AggregationThresholdPolicy
     {
     }
 }

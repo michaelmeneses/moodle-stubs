@@ -21,105 +21,114 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class ThirdPartyLink extends \Google\Model
-{
-    /**
-     * Etag of this resource
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "youtube#thirdPartyLink".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The linking_token identifies a YouTube account and channel with which the
-     * third party account is linked.
-     *
-     * @var string
-     */
-    public $linkingToken;
-    protected $snippetType = ThirdPartyLinkSnippet::class;
-    protected $snippetDataType = '';
-    protected $statusType = ThirdPartyLinkStatus::class;
-    protected $statusDataType = '';
-    /**
-     * Etag of this resource
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\YouTube {
+    class ThirdPartyLink extends \Google\Model
     {
+        /**
+         * Etag of this resource
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "youtube#thirdPartyLink".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The linking_token identifies a YouTube account and channel with which the
+         * third party account is linked.
+         *
+         * @var string
+         */
+        public $linkingToken;
+        protected $snippetType = ThirdPartyLinkSnippet::class;
+        protected $snippetDataType = '';
+        protected $statusType = ThirdPartyLinkStatus::class;
+        protected $statusDataType = '';
+        /**
+         * Etag of this resource
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "youtube#thirdPartyLink".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The linking_token identifies a YouTube account and channel with which the
+         * third party account is linked.
+         *
+         * @param string $linkingToken
+         */
+        public function setLinkingToken($linkingToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLinkingToken()
+        {
+        }
+        /**
+         * The snippet object contains basic details about the third- party account
+         * link.
+         *
+         * @param ThirdPartyLinkSnippet $snippet
+         */
+        public function setSnippet(ThirdPartyLinkSnippet $snippet)
+        {
+        }
+        /**
+         * @return ThirdPartyLinkSnippet
+         */
+        public function getSnippet()
+        {
+        }
+        /**
+         * The status object contains information about the status of the link.
+         *
+         * @param ThirdPartyLinkStatus $status
+         */
+        public function setStatus(ThirdPartyLinkStatus $status)
+        {
+        }
+        /**
+         * @return ThirdPartyLinkStatus
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\ThirdPartyLink registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "youtube#thirdPartyLink".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The linking_token identifies a YouTube account and channel with which the
-     * third party account is linked.
-     *
-     * @param string $linkingToken
-     */
-    public function setLinkingToken($linkingToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLinkingToken()
-    {
-    }
-    /**
-     * The snippet object contains basic details about the third- party account
-     * link.
-     *
-     * @param ThirdPartyLinkSnippet $snippet
-     */
-    public function setSnippet(ThirdPartyLinkSnippet $snippet)
-    {
-    }
-    /**
-     * @return ThirdPartyLinkSnippet
-     */
-    public function getSnippet()
-    {
-    }
-    /**
-     * The status object contains information about the status of the link.
-     *
-     * @param ThirdPartyLinkStatus $status
-     */
-    public function setStatus(ThirdPartyLinkStatus $status)
-    {
-    }
-    /**
-     * @return ThirdPartyLinkStatus
-     */
-    public function getStatus()
+    class Google_Service_YouTube_ThirdPartyLink extends \Google\Service\YouTube\ThirdPartyLink
     {
     }
 }

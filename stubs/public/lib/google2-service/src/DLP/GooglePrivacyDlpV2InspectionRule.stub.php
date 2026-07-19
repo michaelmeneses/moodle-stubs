@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2InspectionRule extends \Google\Model
-{
-    protected $exclusionRuleType = GooglePrivacyDlpV2ExclusionRule::class;
-    protected $exclusionRuleDataType = '';
-    protected $hotwordRuleType = GooglePrivacyDlpV2HotwordRule::class;
-    protected $hotwordRuleDataType = '';
-    /**
-     * Exclusion rule.
-     *
-     * @param GooglePrivacyDlpV2ExclusionRule $exclusionRule
-     */
-    public function setExclusionRule(GooglePrivacyDlpV2ExclusionRule $exclusionRule)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2InspectionRule extends \Google\Model
     {
+        protected $exclusionRuleType = GooglePrivacyDlpV2ExclusionRule::class;
+        protected $exclusionRuleDataType = '';
+        protected $hotwordRuleType = GooglePrivacyDlpV2HotwordRule::class;
+        protected $hotwordRuleDataType = '';
+        /**
+         * Exclusion rule.
+         *
+         * @param GooglePrivacyDlpV2ExclusionRule $exclusionRule
+         */
+        public function setExclusionRule(GooglePrivacyDlpV2ExclusionRule $exclusionRule)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2ExclusionRule
+         */
+        public function getExclusionRule()
+        {
+        }
+        /**
+         * Hotword-based detection rule.
+         *
+         * @param GooglePrivacyDlpV2HotwordRule $hotwordRule
+         */
+        public function setHotwordRule(GooglePrivacyDlpV2HotwordRule $hotwordRule)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2HotwordRule
+         */
+        public function getHotwordRule()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2ExclusionRule
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2InspectionRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExclusionRule()
-    {
-    }
-    /**
-     * Hotword-based detection rule.
-     *
-     * @param GooglePrivacyDlpV2HotwordRule $hotwordRule
-     */
-    public function setHotwordRule(GooglePrivacyDlpV2HotwordRule $hotwordRule)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2HotwordRule
-     */
-    public function getHotwordRule()
+    class Google_Service_DLP_GooglePrivacyDlpV2InspectionRule extends \Google\Service\DLP\GooglePrivacyDlpV2InspectionRule
     {
     }
 }

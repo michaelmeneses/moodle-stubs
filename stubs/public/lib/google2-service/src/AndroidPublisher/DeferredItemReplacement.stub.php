@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class DeferredItemReplacement extends \Google\Model
-{
-    /**
-     * The product_id going to replace the existing product_id.
-     *
-     * @var string
-     */
-    public $productId;
-    /**
-     * The product_id going to replace the existing product_id.
-     *
-     * @param string $productId
-     */
-    public function setProductId($productId)
+namespace Google\Service\AndroidPublisher {
+    class DeferredItemReplacement extends \Google\Model
     {
+        /**
+         * The product_id going to replace the existing product_id.
+         *
+         * @var string
+         */
+        public $productId;
+        /**
+         * The product_id going to replace the existing product_id.
+         *
+         * @param string $productId
+         */
+        public function setProductId($productId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\DeferredItemReplacement registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProductId()
+    class Google_Service_AndroidPublisher_DeferredItemReplacement extends \Google\Service\AndroidPublisher\DeferredItemReplacement
     {
     }
 }

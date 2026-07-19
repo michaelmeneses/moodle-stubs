@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1alpha1AgentCoachingInstruction extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $agentAction;
-    /**
-     * @var string
-     */
-    public $condition;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var string
-     */
-    public $displayName;
-    /**
-     * @var string[]
-     */
-    public $metadata;
-    /**
-     * @var string
-     */
-    public $systemAction;
-    /**
-     * @param string
-     */
-    public function setAgentAction($agentAction)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1alpha1AgentCoachingInstruction extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $agentAction;
+        /**
+         * @var string
+         */
+        public $condition;
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @var string
+         */
+        public $displayName;
+        /**
+         * @var string[]
+         */
+        public $metadata;
+        /**
+         * @var string
+         */
+        public $systemAction;
+        /**
+         * @param string
+         */
+        public function setAgentAction($agentAction)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAgentAction()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCondition($condition)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCondition()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSystemAction($systemAction)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSystemAction()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1AgentCoachingInstruction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAgentAction()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCondition($condition)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCondition()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setMetadata($metadata)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSystemAction($systemAction)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSystemAction()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1alpha1AgentCoachingInstruction extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1AgentCoachingInstruction
     {
     }
 }

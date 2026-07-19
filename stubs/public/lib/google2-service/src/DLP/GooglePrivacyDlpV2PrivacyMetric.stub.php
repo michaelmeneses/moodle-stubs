@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2PrivacyMetric extends \Google\Model
-{
-    protected $categoricalStatsConfigType = GooglePrivacyDlpV2CategoricalStatsConfig::class;
-    protected $categoricalStatsConfigDataType = '';
-    protected $deltaPresenceEstimationConfigType = GooglePrivacyDlpV2DeltaPresenceEstimationConfig::class;
-    protected $deltaPresenceEstimationConfigDataType = '';
-    protected $kAnonymityConfigType = GooglePrivacyDlpV2KAnonymityConfig::class;
-    protected $kAnonymityConfigDataType = '';
-    protected $kMapEstimationConfigType = GooglePrivacyDlpV2KMapEstimationConfig::class;
-    protected $kMapEstimationConfigDataType = '';
-    protected $lDiversityConfigType = GooglePrivacyDlpV2LDiversityConfig::class;
-    protected $lDiversityConfigDataType = '';
-    protected $numericalStatsConfigType = GooglePrivacyDlpV2NumericalStatsConfig::class;
-    protected $numericalStatsConfigDataType = '';
-    /**
-     * Categorical stats
-     *
-     * @param GooglePrivacyDlpV2CategoricalStatsConfig $categoricalStatsConfig
-     */
-    public function setCategoricalStatsConfig(GooglePrivacyDlpV2CategoricalStatsConfig $categoricalStatsConfig)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2PrivacyMetric extends \Google\Model
     {
+        protected $categoricalStatsConfigType = GooglePrivacyDlpV2CategoricalStatsConfig::class;
+        protected $categoricalStatsConfigDataType = '';
+        protected $deltaPresenceEstimationConfigType = GooglePrivacyDlpV2DeltaPresenceEstimationConfig::class;
+        protected $deltaPresenceEstimationConfigDataType = '';
+        protected $kAnonymityConfigType = GooglePrivacyDlpV2KAnonymityConfig::class;
+        protected $kAnonymityConfigDataType = '';
+        protected $kMapEstimationConfigType = GooglePrivacyDlpV2KMapEstimationConfig::class;
+        protected $kMapEstimationConfigDataType = '';
+        protected $lDiversityConfigType = GooglePrivacyDlpV2LDiversityConfig::class;
+        protected $lDiversityConfigDataType = '';
+        protected $numericalStatsConfigType = GooglePrivacyDlpV2NumericalStatsConfig::class;
+        protected $numericalStatsConfigDataType = '';
+        /**
+         * Categorical stats
+         *
+         * @param GooglePrivacyDlpV2CategoricalStatsConfig $categoricalStatsConfig
+         */
+        public function setCategoricalStatsConfig(GooglePrivacyDlpV2CategoricalStatsConfig $categoricalStatsConfig)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2CategoricalStatsConfig
+         */
+        public function getCategoricalStatsConfig()
+        {
+        }
+        /**
+         * delta-presence
+         *
+         * @param GooglePrivacyDlpV2DeltaPresenceEstimationConfig $deltaPresenceEstimationConfig
+         */
+        public function setDeltaPresenceEstimationConfig(GooglePrivacyDlpV2DeltaPresenceEstimationConfig $deltaPresenceEstimationConfig)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2DeltaPresenceEstimationConfig
+         */
+        public function getDeltaPresenceEstimationConfig()
+        {
+        }
+        /**
+         * K-anonymity
+         *
+         * @param GooglePrivacyDlpV2KAnonymityConfig $kAnonymityConfig
+         */
+        public function setKAnonymityConfig(GooglePrivacyDlpV2KAnonymityConfig $kAnonymityConfig)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2KAnonymityConfig
+         */
+        public function getKAnonymityConfig()
+        {
+        }
+        /**
+         * k-map
+         *
+         * @param GooglePrivacyDlpV2KMapEstimationConfig $kMapEstimationConfig
+         */
+        public function setKMapEstimationConfig(GooglePrivacyDlpV2KMapEstimationConfig $kMapEstimationConfig)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2KMapEstimationConfig
+         */
+        public function getKMapEstimationConfig()
+        {
+        }
+        /**
+         * l-diversity
+         *
+         * @param GooglePrivacyDlpV2LDiversityConfig $lDiversityConfig
+         */
+        public function setLDiversityConfig(GooglePrivacyDlpV2LDiversityConfig $lDiversityConfig)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2LDiversityConfig
+         */
+        public function getLDiversityConfig()
+        {
+        }
+        /**
+         * Numerical stats
+         *
+         * @param GooglePrivacyDlpV2NumericalStatsConfig $numericalStatsConfig
+         */
+        public function setNumericalStatsConfig(GooglePrivacyDlpV2NumericalStatsConfig $numericalStatsConfig)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2NumericalStatsConfig
+         */
+        public function getNumericalStatsConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2CategoricalStatsConfig
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2PrivacyMetric registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCategoricalStatsConfig()
-    {
-    }
-    /**
-     * delta-presence
-     *
-     * @param GooglePrivacyDlpV2DeltaPresenceEstimationConfig $deltaPresenceEstimationConfig
-     */
-    public function setDeltaPresenceEstimationConfig(GooglePrivacyDlpV2DeltaPresenceEstimationConfig $deltaPresenceEstimationConfig)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2DeltaPresenceEstimationConfig
-     */
-    public function getDeltaPresenceEstimationConfig()
-    {
-    }
-    /**
-     * K-anonymity
-     *
-     * @param GooglePrivacyDlpV2KAnonymityConfig $kAnonymityConfig
-     */
-    public function setKAnonymityConfig(GooglePrivacyDlpV2KAnonymityConfig $kAnonymityConfig)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2KAnonymityConfig
-     */
-    public function getKAnonymityConfig()
-    {
-    }
-    /**
-     * k-map
-     *
-     * @param GooglePrivacyDlpV2KMapEstimationConfig $kMapEstimationConfig
-     */
-    public function setKMapEstimationConfig(GooglePrivacyDlpV2KMapEstimationConfig $kMapEstimationConfig)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2KMapEstimationConfig
-     */
-    public function getKMapEstimationConfig()
-    {
-    }
-    /**
-     * l-diversity
-     *
-     * @param GooglePrivacyDlpV2LDiversityConfig $lDiversityConfig
-     */
-    public function setLDiversityConfig(GooglePrivacyDlpV2LDiversityConfig $lDiversityConfig)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2LDiversityConfig
-     */
-    public function getLDiversityConfig()
-    {
-    }
-    /**
-     * Numerical stats
-     *
-     * @param GooglePrivacyDlpV2NumericalStatsConfig $numericalStatsConfig
-     */
-    public function setNumericalStatsConfig(GooglePrivacyDlpV2NumericalStatsConfig $numericalStatsConfig)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2NumericalStatsConfig
-     */
-    public function getNumericalStatsConfig()
+    class Google_Service_DLP_GooglePrivacyDlpV2PrivacyMetric extends \Google\Service\DLP\GooglePrivacyDlpV2PrivacyMetric
     {
     }
 }

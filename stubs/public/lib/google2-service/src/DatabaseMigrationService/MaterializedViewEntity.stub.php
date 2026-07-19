@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class MaterializedViewEntity extends \Google\Collection
-{
-    protected $collection_key = 'indices';
-    /**
-     * Custom engine specific features.
-     *
-     * @var array[]
-     */
-    public $customFeatures;
-    protected $indicesType = IndexEntity::class;
-    protected $indicesDataType = 'array';
-    /**
-     * The SQL code which creates the view.
-     *
-     * @var string
-     */
-    public $sqlCode;
-    /**
-     * Custom engine specific features.
-     *
-     * @param array[] $customFeatures
-     */
-    public function setCustomFeatures($customFeatures)
+namespace Google\Service\DatabaseMigrationService {
+    class MaterializedViewEntity extends \Google\Collection
     {
+        protected $collection_key = 'indices';
+        /**
+         * Custom engine specific features.
+         *
+         * @var array[]
+         */
+        public $customFeatures;
+        protected $indicesType = IndexEntity::class;
+        protected $indicesDataType = 'array';
+        /**
+         * The SQL code which creates the view.
+         *
+         * @var string
+         */
+        public $sqlCode;
+        /**
+         * Custom engine specific features.
+         *
+         * @param array[] $customFeatures
+         */
+        public function setCustomFeatures($customFeatures)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getCustomFeatures()
+        {
+        }
+        /**
+         * View indices.
+         *
+         * @param IndexEntity[] $indices
+         */
+        public function setIndices($indices)
+        {
+        }
+        /**
+         * @return IndexEntity[]
+         */
+        public function getIndices()
+        {
+        }
+        /**
+         * The SQL code which creates the view.
+         *
+         * @param string $sqlCode
+         */
+        public function setSqlCode($sqlCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSqlCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\MaterializedViewEntity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomFeatures()
-    {
-    }
-    /**
-     * View indices.
-     *
-     * @param IndexEntity[] $indices
-     */
-    public function setIndices($indices)
-    {
-    }
-    /**
-     * @return IndexEntity[]
-     */
-    public function getIndices()
-    {
-    }
-    /**
-     * The SQL code which creates the view.
-     *
-     * @param string $sqlCode
-     */
-    public function setSqlCode($sqlCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSqlCode()
+    class Google_Service_DatabaseMigrationService_MaterializedViewEntity extends \Google\Service\DatabaseMigrationService\MaterializedViewEntity
     {
     }
 }

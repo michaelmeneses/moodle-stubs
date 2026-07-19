@@ -21,40 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting\Resource;
-
-/**
- * The "operatingSystemVersions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dfareportingService = new Google\Service\Dfareporting(...);
- *   $operatingSystemVersions = $dfareportingService->operatingSystemVersions;
- *  </code>
- */
-class OperatingSystemVersions extends \Google\Service\Resource
-{
+namespace Google\Service\Dfareporting\Resource {
+    use Google\Service\Dfareporting\OperatingSystemVersion;
+    use Google\Service\Dfareporting\OperatingSystemVersionsListResponse;
     /**
-     * Gets one operating system version by ID. (operatingSystemVersions.get)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param string $id Operating system version ID.
-     * @param array $optParams Optional parameters.
-     * @return OperatingSystemVersion
-     * @throws \Google\Service\Exception
+     * The "operatingSystemVersions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dfareportingService = new Google\Service\Dfareporting(...);
+     *   $operatingSystemVersions = $dfareportingService->operatingSystemVersions;
+     *  </code>
      */
-    public function get($profileId, $id, $optParams = [])
+    class OperatingSystemVersions extends \Google\Service\Resource
     {
+        /**
+         * Gets one operating system version by ID. (operatingSystemVersions.get)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param string $id Operating system version ID.
+         * @param array $optParams Optional parameters.
+         * @return OperatingSystemVersion
+         * @throws \Google\Service\Exception
+         */
+        public function get($profileId, $id, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a list of operating system versions.
+         * (operatingSystemVersions.listOperatingSystemVersions)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param array $optParams Optional parameters.
+         * @return OperatingSystemVersionsListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listOperatingSystemVersions($profileId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves a list of operating system versions.
-     * (operatingSystemVersions.listOperatingSystemVersions)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param array $optParams Optional parameters.
-     * @return OperatingSystemVersionsListResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dfareporting\Resource\OperatingSystemVersions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listOperatingSystemVersions($profileId, $optParams = [])
+    class Google_Service_Dfareporting_Resource_OperatingSystemVersions extends \Google\Service\Dfareporting\Resource\OperatingSystemVersions
     {
     }
 }

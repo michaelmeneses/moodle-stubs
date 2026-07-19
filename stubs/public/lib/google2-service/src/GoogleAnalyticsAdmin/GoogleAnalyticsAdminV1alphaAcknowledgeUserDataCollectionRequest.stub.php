@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaAcknowledgeUserDataCollectionRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $acknowledgement;
-    /**
-     * @param string
-     */
-    public function setAcknowledgement($acknowledgement)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaAcknowledgeUserDataCollectionRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $acknowledgement;
+        /**
+         * @param string
+         */
+        public function setAcknowledgement($acknowledgement)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAcknowledgement()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAcknowledgeUserDataCollectionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAcknowledgement()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaAcknowledgeUserDataCollectionRequest extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAcknowledgeUserDataCollectionRequest
     {
     }
 }

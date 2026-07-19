@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class CapTokenHolderProto extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $tokenHmacSha1Prefix;
-    /**
-     * @param string
-     */
-    public function setTokenHmacSha1Prefix($tokenHmacSha1Prefix)
+namespace Google\Service\CloudSearch {
+    class CapTokenHolderProto extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $tokenHmacSha1Prefix;
+        /**
+         * @param string
+         */
+        public function setTokenHmacSha1Prefix($tokenHmacSha1Prefix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTokenHmacSha1Prefix()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\CapTokenHolderProto registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTokenHmacSha1Prefix()
+    class Google_Service_CloudSearch_CapTokenHolderProto extends \Google\Service\CloudSearch\CapTokenHolderProto
     {
     }
 }

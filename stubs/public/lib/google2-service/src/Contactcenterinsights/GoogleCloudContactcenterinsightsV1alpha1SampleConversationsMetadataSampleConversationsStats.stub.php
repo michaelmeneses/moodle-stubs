@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1alpha1SampleConversationsMetadataSampleConversationsStats extends \Google\Model
-{
-    /**
-     * Output only. The number of objects which were unable to be sampled due to
-     * errors. The errors are populated in the partial_errors field.
-     *
-     * @var int
-     */
-    public $failedSampleCount;
-    /**
-     * Output only. The number of new conversations added during this sample
-     * operation.
-     *
-     * @var int
-     */
-    public $successfulSampleCount;
-    /**
-     * Output only. The number of objects which were unable to be sampled due to
-     * errors. The errors are populated in the partial_errors field.
-     *
-     * @param int $failedSampleCount
-     */
-    public function setFailedSampleCount($failedSampleCount)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1alpha1SampleConversationsMetadataSampleConversationsStats extends \Google\Model
     {
+        /**
+         * Output only. The number of objects which were unable to be sampled due to
+         * errors. The errors are populated in the partial_errors field.
+         *
+         * @var int
+         */
+        public $failedSampleCount;
+        /**
+         * Output only. The number of new conversations added during this sample
+         * operation.
+         *
+         * @var int
+         */
+        public $successfulSampleCount;
+        /**
+         * Output only. The number of objects which were unable to be sampled due to
+         * errors. The errors are populated in the partial_errors field.
+         *
+         * @param int $failedSampleCount
+         */
+        public function setFailedSampleCount($failedSampleCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFailedSampleCount()
+        {
+        }
+        /**
+         * Output only. The number of new conversations added during this sample
+         * operation.
+         *
+         * @param int $successfulSampleCount
+         */
+        public function setSuccessfulSampleCount($successfulSampleCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSuccessfulSampleCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1SampleConversationsMetadataSampleConversationsStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFailedSampleCount()
-    {
-    }
-    /**
-     * Output only. The number of new conversations added during this sample
-     * operation.
-     *
-     * @param int $successfulSampleCount
-     */
-    public function setSuccessfulSampleCount($successfulSampleCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSuccessfulSampleCount()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1alpha1SampleConversationsMetadataSampleConversationsStats extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1SampleConversationsMetadataSampleConversationsStats
     {
     }
 }

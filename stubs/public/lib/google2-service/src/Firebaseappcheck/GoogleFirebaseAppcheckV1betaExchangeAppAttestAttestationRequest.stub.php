@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebaseappcheck;
-
-class GoogleFirebaseAppcheckV1betaExchangeAppAttestAttestationRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $attestationStatement;
-    /**
-     * @var string
-     */
-    public $challenge;
-    /**
-     * @var string
-     */
-    public $keyId;
-    /**
-     * @param string
-     */
-    public function setAttestationStatement($attestationStatement)
+namespace Google\Service\Firebaseappcheck {
+    class GoogleFirebaseAppcheckV1betaExchangeAppAttestAttestationRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $attestationStatement;
+        /**
+         * @var string
+         */
+        public $challenge;
+        /**
+         * @var string
+         */
+        public $keyId;
+        /**
+         * @param string
+         */
+        public function setAttestationStatement($attestationStatement)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAttestationStatement()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setChallenge($challenge)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChallenge()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKeyId($keyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKeyId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1betaExchangeAppAttestAttestationRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttestationStatement()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setChallenge($challenge)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getChallenge()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKeyId($keyId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKeyId()
+    class Google_Service_Firebaseappcheck_GoogleFirebaseAppcheckV1betaExchangeAppAttestAttestationRequest extends \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1betaExchangeAppAttestAttestationRequest
     {
     }
 }

@@ -21,35 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedKafka\Resource;
-
-/**
- * The "compatibility" collection of methods.
- * Typical usage is:
- *  <code>
- *   $managedkafkaService = new Google\Service\ManagedKafka(...);
- *   $compatibility = $managedkafkaService->projects_locations_schemaRegistries_compatibility;
- *  </code>
- */
-class ProjectsLocationsSchemaRegistriesCompatibility extends \Google\Service\Resource
-{
+namespace Google\Service\ManagedKafka\Resource {
+    use Google\Service\ManagedKafka\CheckCompatibilityRequest;
+    use Google\Service\ManagedKafka\CheckCompatibilityResponse;
     /**
-     * Check compatibility of a schema with all versions or a specific version of a
-     * subject. (compatibility.checkCompatibility)
-     *
-     * @param string $name Required. The name of the resource to check compatibility
-     * for. The format is either of following: * projects/{project}/locations/{locat
-     * ion}/schemaRegistries/{schema_registry}/compatibility/subjects/versions:
-     * Check compatibility with one or more versions of the specified subject. * pro
-     * jects/{project}/locations/{location}/schemaRegistries/{schema_registry}/compa
-     * tibility/subjects/{subject}/versions/{version}: Check compatibility with a
-     * specific version of the subject.
-     * @param CheckCompatibilityRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return CheckCompatibilityResponse
-     * @throws \Google\Service\Exception
+     * The "compatibility" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $managedkafkaService = new Google\Service\ManagedKafka(...);
+     *   $compatibility = $managedkafkaService->projects_locations_schemaRegistries_compatibility;
+     *  </code>
      */
-    public function checkCompatibility($name, CheckCompatibilityRequest $postBody, $optParams = [])
+    class ProjectsLocationsSchemaRegistriesCompatibility extends \Google\Service\Resource
+    {
+        /**
+         * Check compatibility of a schema with all versions or a specific version of a
+         * subject. (compatibility.checkCompatibility)
+         *
+         * @param string $name Required. The name of the resource to check compatibility
+         * for. The format is either of following: * projects/{project}/locations/{locat
+         * ion}/schemaRegistries/{schema_registry}/compatibility/subjects/versions:
+         * Check compatibility with one or more versions of the specified subject. * pro
+         * jects/{project}/locations/{location}/schemaRegistries/{schema_registry}/compa
+         * tibility/subjects/{subject}/versions/{version}: Check compatibility with a
+         * specific version of the subject.
+         * @param CheckCompatibilityRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return CheckCompatibilityResponse
+         * @throws \Google\Service\Exception
+         */
+        public function checkCompatibility($name, CheckCompatibilityRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ManagedKafka\Resource\ProjectsLocationsSchemaRegistriesCompatibility registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ManagedKafka_Resource_ProjectsLocationsSchemaRegistriesCompatibility extends \Google\Service\ManagedKafka\Resource\ProjectsLocationsSchemaRegistriesCompatibility
     {
     }
 }

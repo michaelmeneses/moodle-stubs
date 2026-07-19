@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1IndexDatapointRestriction extends \Google\Collection
-{
-    protected $collection_key = 'denyList';
-    /**
-     * The attributes to allow in this namespace. e.g.: 'red'
-     *
-     * @var string[]
-     */
-    public $allowList;
-    /**
-     * The attributes to deny in this namespace. e.g.: 'blue'
-     *
-     * @var string[]
-     */
-    public $denyList;
-    /**
-     * The namespace of this restriction. e.g.: color.
-     *
-     * @var string
-     */
-    public $namespace;
-    /**
-     * The attributes to allow in this namespace. e.g.: 'red'
-     *
-     * @param string[] $allowList
-     */
-    public function setAllowList($allowList)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1IndexDatapointRestriction extends \Google\Collection
     {
+        protected $collection_key = 'denyList';
+        /**
+         * The attributes to allow in this namespace. e.g.: 'red'
+         *
+         * @var string[]
+         */
+        public $allowList;
+        /**
+         * The attributes to deny in this namespace. e.g.: 'blue'
+         *
+         * @var string[]
+         */
+        public $denyList;
+        /**
+         * The namespace of this restriction. e.g.: color.
+         *
+         * @var string
+         */
+        public $namespace;
+        /**
+         * The attributes to allow in this namespace. e.g.: 'red'
+         *
+         * @param string[] $allowList
+         */
+        public function setAllowList($allowList)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAllowList()
+        {
+        }
+        /**
+         * The attributes to deny in this namespace. e.g.: 'blue'
+         *
+         * @param string[] $denyList
+         */
+        public function setDenyList($denyList)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDenyList()
+        {
+        }
+        /**
+         * The namespace of this restriction. e.g.: color.
+         *
+         * @param string $namespace
+         */
+        public function setNamespace($namespace)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNamespace()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1IndexDatapointRestriction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowList()
-    {
-    }
-    /**
-     * The attributes to deny in this namespace. e.g.: 'blue'
-     *
-     * @param string[] $denyList
-     */
-    public function setDenyList($denyList)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDenyList()
-    {
-    }
-    /**
-     * The namespace of this restriction. e.g.: color.
-     *
-     * @param string $namespace
-     */
-    public function setNamespace($namespace)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNamespace()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1IndexDatapointRestriction extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1IndexDatapointRestriction
     {
     }
 }

@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ConfigManagementPolicyControllerMonitoring extends \Google\Collection
-{
-    protected $collection_key = 'backends';
-    /**
-     * Specifies the list of backends Policy Controller will export to. An empty
-     * list would effectively disable metrics export.
-     *
-     * @var string[]
-     */
-    public $backends;
-    /**
-     * Specifies the list of backends Policy Controller will export to. An empty
-     * list would effectively disable metrics export.
-     *
-     * @param string[] $backends
-     */
-    public function setBackends($backends)
+namespace Google\Service\GKEHub {
+    class ConfigManagementPolicyControllerMonitoring extends \Google\Collection
     {
+        protected $collection_key = 'backends';
+        /**
+         * Specifies the list of backends Policy Controller will export to. An empty
+         * list would effectively disable metrics export.
+         *
+         * @var string[]
+         */
+        public $backends;
+        /**
+         * Specifies the list of backends Policy Controller will export to. An empty
+         * list would effectively disable metrics export.
+         *
+         * @param string[] $backends
+         */
+        public function setBackends($backends)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getBackends()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\GKEHub\ConfigManagementPolicyControllerMonitoring registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackends()
+    class Google_Service_GKEHub_ConfigManagementPolicyControllerMonitoring extends \Google\Service\GKEHub\ConfigManagementPolicyControllerMonitoring
     {
     }
 }

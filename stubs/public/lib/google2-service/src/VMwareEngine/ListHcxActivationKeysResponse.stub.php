@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMwareEngine;
-
-class ListHcxActivationKeysResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $hcxActivationKeysType = HcxActivationKey::class;
-    protected $hcxActivationKeysDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached when making an aggregated query using
-     * wildcards.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * List of HCX activation keys.
-     *
-     * @param HcxActivationKey[] $hcxActivationKeys
-     */
-    public function setHcxActivationKeys($hcxActivationKeys)
+namespace Google\Service\VMwareEngine {
+    class ListHcxActivationKeysResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $hcxActivationKeysType = HcxActivationKey::class;
+        protected $hcxActivationKeysDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached when making an aggregated query using
+         * wildcards.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * List of HCX activation keys.
+         *
+         * @param HcxActivationKey[] $hcxActivationKeys
+         */
+        public function setHcxActivationKeys($hcxActivationKeys)
+        {
+        }
+        /**
+         * @return HcxActivationKey[]
+         */
+        public function getHcxActivationKeys()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached when making an aggregated query using
+         * wildcards.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return HcxActivationKey[]
+     * Runtime class alias of \Google\Service\VMwareEngine\ListHcxActivationKeysResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHcxActivationKeys()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached when making an aggregated query using
-     * wildcards.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_VMwareEngine_ListHcxActivationKeysResponse extends \Google\Service\VMwareEngine\ListHcxActivationKeysResponse
     {
     }
 }

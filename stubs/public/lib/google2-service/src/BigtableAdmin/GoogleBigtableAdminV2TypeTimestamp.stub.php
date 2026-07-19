@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class GoogleBigtableAdminV2TypeTimestamp extends \Google\Model
-{
-    protected $encodingType = GoogleBigtableAdminV2TypeTimestampEncoding::class;
-    protected $encodingDataType = '';
-    /**
-     * The encoding to use when converting to or from lower level types.
-     *
-     * @param GoogleBigtableAdminV2TypeTimestampEncoding $encoding
-     */
-    public function setEncoding(GoogleBigtableAdminV2TypeTimestampEncoding $encoding)
+namespace Google\Service\BigtableAdmin {
+    class GoogleBigtableAdminV2TypeTimestamp extends \Google\Model
     {
+        protected $encodingType = GoogleBigtableAdminV2TypeTimestampEncoding::class;
+        protected $encodingDataType = '';
+        /**
+         * The encoding to use when converting to or from lower level types.
+         *
+         * @param GoogleBigtableAdminV2TypeTimestampEncoding $encoding
+         */
+        public function setEncoding(GoogleBigtableAdminV2TypeTimestampEncoding $encoding)
+        {
+        }
+        /**
+         * @return GoogleBigtableAdminV2TypeTimestampEncoding
+         */
+        public function getEncoding()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleBigtableAdminV2TypeTimestampEncoding
+     * Runtime class alias of \Google\Service\BigtableAdmin\GoogleBigtableAdminV2TypeTimestamp registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEncoding()
+    class Google_Service_BigtableAdmin_GoogleBigtableAdminV2TypeTimestamp extends \Google\Service\BigtableAdmin\GoogleBigtableAdminV2TypeTimestamp
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class BillingInfoList extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = BillingInfo::class;
-    protected $itemsDataType = 'array';
-    public $kind;
+namespace Google\Service\AdExchangeBuyer {
+    class BillingInfoList extends \Google\Collection
+    {
+        protected $collection_key = 'items';
+        protected $itemsType = BillingInfo::class;
+        protected $itemsDataType = 'array';
+        public $kind;
+        /**
+         * @param BillingInfo[]
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return BillingInfo[]
+         */
+        public function getItems()
+        {
+        }
+        public function setKind($kind)
+        {
+        }
+        public function getKind()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param BillingInfo[]
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\BillingInfoList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return BillingInfo[]
-     */
-    public function getItems()
-    {
-    }
-    public function setKind($kind)
-    {
-    }
-    public function getKind()
+    class Google_Service_AdExchangeBuyer_BillingInfoList extends \Google\Service\AdExchangeBuyer\BillingInfoList
     {
     }
 }

@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Playdeveloperreporting;
-
-class GooglePlayDeveloperReportingV1beta1Release extends \Google\Collection
-{
-    protected $collection_key = 'versionCodes';
-    /**
-     * Readable identifier of the release.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The version codes contained in this release.
-     *
-     * @var string[]
-     */
-    public $versionCodes;
-    /**
-     * Readable identifier of the release.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\Playdeveloperreporting {
+    class GooglePlayDeveloperReportingV1beta1Release extends \Google\Collection
     {
+        protected $collection_key = 'versionCodes';
+        /**
+         * Readable identifier of the release.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The version codes contained in this release.
+         *
+         * @var string[]
+         */
+        public $versionCodes;
+        /**
+         * Readable identifier of the release.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The version codes contained in this release.
+         *
+         * @param string[] $versionCodes
+         */
+        public function setVersionCodes($versionCodes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getVersionCodes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1Release registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The version codes contained in this release.
-     *
-     * @param string[] $versionCodes
-     */
-    public function setVersionCodes($versionCodes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getVersionCodes()
+    class Google_Service_Playdeveloperreporting_GooglePlayDeveloperReportingV1beta1Release extends \Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1Release
     {
     }
 }

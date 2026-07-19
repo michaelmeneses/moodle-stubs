@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter;
-
-class ReportingRule extends \Google\Model
-{
-    /**
-     * Any other associated alert details, for example, AlertConfiguration.
-     *
-     * @var string
-     */
-    public $alertDetails;
-    /**
-     * Rule name
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Alert Rule query Sample Query query { condition { filter {
-     * expected_application_id: 777491262838 expected_event_name:
-     * "indexable_content_change" filter_op: IN } } conjunction_operator: OR }
-     *
-     * @var string
-     */
-    public $query;
-    /**
-     * Any other associated alert details, for example, AlertConfiguration.
-     *
-     * @param string $alertDetails
-     */
-    public function setAlertDetails($alertDetails)
+namespace Google\Service\AlertCenter {
+    class ReportingRule extends \Google\Model
     {
+        /**
+         * Any other associated alert details, for example, AlertConfiguration.
+         *
+         * @var string
+         */
+        public $alertDetails;
+        /**
+         * Rule name
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Alert Rule query Sample Query query { condition { filter {
+         * expected_application_id: 777491262838 expected_event_name:
+         * "indexable_content_change" filter_op: IN } } conjunction_operator: OR }
+         *
+         * @var string
+         */
+        public $query;
+        /**
+         * Any other associated alert details, for example, AlertConfiguration.
+         *
+         * @param string $alertDetails
+         */
+        public function setAlertDetails($alertDetails)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAlertDetails()
+        {
+        }
+        /**
+         * Rule name
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Alert Rule query Sample Query query { condition { filter {
+         * expected_application_id: 777491262838 expected_event_name:
+         * "indexable_content_change" filter_op: IN } } conjunction_operator: OR }
+         *
+         * @param string $query
+         */
+        public function setQuery($query)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuery()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AlertCenter\ReportingRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlertDetails()
-    {
-    }
-    /**
-     * Rule name
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Alert Rule query Sample Query query { condition { filter {
-     * expected_application_id: 777491262838 expected_event_name:
-     * "indexable_content_change" filter_op: IN } } conjunction_operator: OR }
-     *
-     * @param string $query
-     */
-    public function setQuery($query)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuery()
+    class Google_Service_AlertCenter_ReportingRule extends \Google\Service\AlertCenter\ReportingRule
     {
     }
 }

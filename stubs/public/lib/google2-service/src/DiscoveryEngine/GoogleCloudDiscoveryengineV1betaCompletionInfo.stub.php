@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaCompletionInfo extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $selectedPosition;
-    /**
-     * @var string
-     */
-    public $selectedSuggestion;
-    /**
-     * @param int
-     */
-    public function setSelectedPosition($selectedPosition)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaCompletionInfo extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $selectedPosition;
+        /**
+         * @var string
+         */
+        public $selectedSuggestion;
+        /**
+         * @param int
+         */
+        public function setSelectedPosition($selectedPosition)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSelectedPosition()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSelectedSuggestion($selectedSuggestion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelectedSuggestion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaCompletionInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSelectedPosition()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSelectedSuggestion($selectedSuggestion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelectedSuggestion()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaCompletionInfo extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaCompletionInfo
     {
     }
 }

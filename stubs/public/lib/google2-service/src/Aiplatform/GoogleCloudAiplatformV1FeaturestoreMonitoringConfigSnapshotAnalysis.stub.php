@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1FeaturestoreMonitoringConfigSnapshotAnalysis extends \Google\Model
-{
-    /**
-     * The monitoring schedule for snapshot analysis. For EntityType-level config:
-     * unset / disabled = true indicates disabled by default for Features under
-     * it; otherwise by default enable snapshot analysis monitoring with
-     * monitoring_interval for Features under it. Feature-level config: disabled =
-     * true indicates disabled regardless of the EntityType-level config; unset
-     * monitoring_interval indicates going with EntityType-level config; otherwise
-     * run snapshot analysis monitoring with monitoring_interval regardless of the
-     * EntityType-level config. Explicitly Disable the snapshot analysis based
-     * monitoring.
-     *
-     * @var bool
-     */
-    public $disabled;
-    /**
-     * Configuration of the snapshot analysis based monitoring pipeline running
-     * interval. The value indicates number of days.
-     *
-     * @var int
-     */
-    public $monitoringIntervalDays;
-    /**
-     * Customized export features time window for snapshot analysis. Unit is one
-     * day. Default value is 3 weeks. Minimum value is 1 day. Maximum value is
-     * 4000 days.
-     *
-     * @var int
-     */
-    public $stalenessDays;
-    /**
-     * The monitoring schedule for snapshot analysis. For EntityType-level config:
-     * unset / disabled = true indicates disabled by default for Features under
-     * it; otherwise by default enable snapshot analysis monitoring with
-     * monitoring_interval for Features under it. Feature-level config: disabled =
-     * true indicates disabled regardless of the EntityType-level config; unset
-     * monitoring_interval indicates going with EntityType-level config; otherwise
-     * run snapshot analysis monitoring with monitoring_interval regardless of the
-     * EntityType-level config. Explicitly Disable the snapshot analysis based
-     * monitoring.
-     *
-     * @param bool $disabled
-     */
-    public function setDisabled($disabled)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1FeaturestoreMonitoringConfigSnapshotAnalysis extends \Google\Model
     {
+        /**
+         * The monitoring schedule for snapshot analysis. For EntityType-level config:
+         * unset / disabled = true indicates disabled by default for Features under
+         * it; otherwise by default enable snapshot analysis monitoring with
+         * monitoring_interval for Features under it. Feature-level config: disabled =
+         * true indicates disabled regardless of the EntityType-level config; unset
+         * monitoring_interval indicates going with EntityType-level config; otherwise
+         * run snapshot analysis monitoring with monitoring_interval regardless of the
+         * EntityType-level config. Explicitly Disable the snapshot analysis based
+         * monitoring.
+         *
+         * @var bool
+         */
+        public $disabled;
+        /**
+         * Configuration of the snapshot analysis based monitoring pipeline running
+         * interval. The value indicates number of days.
+         *
+         * @var int
+         */
+        public $monitoringIntervalDays;
+        /**
+         * Customized export features time window for snapshot analysis. Unit is one
+         * day. Default value is 3 weeks. Minimum value is 1 day. Maximum value is
+         * 4000 days.
+         *
+         * @var int
+         */
+        public $stalenessDays;
+        /**
+         * The monitoring schedule for snapshot analysis. For EntityType-level config:
+         * unset / disabled = true indicates disabled by default for Features under
+         * it; otherwise by default enable snapshot analysis monitoring with
+         * monitoring_interval for Features under it. Feature-level config: disabled =
+         * true indicates disabled regardless of the EntityType-level config; unset
+         * monitoring_interval indicates going with EntityType-level config; otherwise
+         * run snapshot analysis monitoring with monitoring_interval regardless of the
+         * EntityType-level config. Explicitly Disable the snapshot analysis based
+         * monitoring.
+         *
+         * @param bool $disabled
+         */
+        public function setDisabled($disabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisabled()
+        {
+        }
+        /**
+         * Configuration of the snapshot analysis based monitoring pipeline running
+         * interval. The value indicates number of days.
+         *
+         * @param int $monitoringIntervalDays
+         */
+        public function setMonitoringIntervalDays($monitoringIntervalDays)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMonitoringIntervalDays()
+        {
+        }
+        /**
+         * Customized export features time window for snapshot analysis. Unit is one
+         * day. Default value is 3 weeks. Minimum value is 1 day. Maximum value is
+         * 4000 days.
+         *
+         * @param int $stalenessDays
+         */
+        public function setStalenessDays($stalenessDays)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStalenessDays()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeaturestoreMonitoringConfigSnapshotAnalysis registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisabled()
-    {
-    }
-    /**
-     * Configuration of the snapshot analysis based monitoring pipeline running
-     * interval. The value indicates number of days.
-     *
-     * @param int $monitoringIntervalDays
-     */
-    public function setMonitoringIntervalDays($monitoringIntervalDays)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMonitoringIntervalDays()
-    {
-    }
-    /**
-     * Customized export features time window for snapshot analysis. Unit is one
-     * day. Default value is 3 weeks. Minimum value is 1 day. Maximum value is
-     * 4000 days.
-     *
-     * @param int $stalenessDays
-     */
-    public function setStalenessDays($stalenessDays)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStalenessDays()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1FeaturestoreMonitoringConfigSnapshotAnalysis extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeaturestoreMonitoringConfigSnapshotAnalysis
     {
     }
 }

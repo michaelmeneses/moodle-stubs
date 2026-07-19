@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudFilestore;
-
-class Date extends \Google\Model
-{
-    /**
-     * Day of a month. Must be from 1 to 31 and valid for the year and month, or 0
-     * to specify a year by itself or a year and month where the day isn't
-     * significant.
-     *
-     * @var int
-     */
-    public $day;
-    /**
-     * Month of a year. Must be from 1 to 12, or 0 to specify a year without a
-     * month and day.
-     *
-     * @var int
-     */
-    public $month;
-    /**
-     * Year of the date. Must be from 1 to 9999, or 0 to specify a date without a
-     * year.
-     *
-     * @var int
-     */
-    public $year;
-    /**
-     * Day of a month. Must be from 1 to 31 and valid for the year and month, or 0
-     * to specify a year by itself or a year and month where the day isn't
-     * significant.
-     *
-     * @param int $day
-     */
-    public function setDay($day)
+namespace Google\Service\CloudFilestore {
+    class Date extends \Google\Model
     {
+        /**
+         * Day of a month. Must be from 1 to 31 and valid for the year and month, or 0
+         * to specify a year by itself or a year and month where the day isn't
+         * significant.
+         *
+         * @var int
+         */
+        public $day;
+        /**
+         * Month of a year. Must be from 1 to 12, or 0 to specify a year without a
+         * month and day.
+         *
+         * @var int
+         */
+        public $month;
+        /**
+         * Year of the date. Must be from 1 to 9999, or 0 to specify a date without a
+         * year.
+         *
+         * @var int
+         */
+        public $year;
+        /**
+         * Day of a month. Must be from 1 to 31 and valid for the year and month, or 0
+         * to specify a year by itself or a year and month where the day isn't
+         * significant.
+         *
+         * @param int $day
+         */
+        public function setDay($day)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDay()
+        {
+        }
+        /**
+         * Month of a year. Must be from 1 to 12, or 0 to specify a year without a
+         * month and day.
+         *
+         * @param int $month
+         */
+        public function setMonth($month)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMonth()
+        {
+        }
+        /**
+         * Year of the date. Must be from 1 to 9999, or 0 to specify a date without a
+         * year.
+         *
+         * @param int $year
+         */
+        public function setYear($year)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getYear()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudFilestore\Date registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDay()
-    {
-    }
-    /**
-     * Month of a year. Must be from 1 to 12, or 0 to specify a year without a
-     * month and day.
-     *
-     * @param int $month
-     */
-    public function setMonth($month)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMonth()
-    {
-    }
-    /**
-     * Year of the date. Must be from 1 to 9999, or 0 to specify a date without a
-     * year.
-     *
-     * @param int $year
-     */
-    public function setYear($year)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getYear()
+    class Google_Service_CloudFilestore_Date extends \Google\Service\CloudFilestore\Date
     {
     }
 }

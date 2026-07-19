@@ -21,101 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OrgPolicyAPI\Resource;
-
-/**
- * The "customConstraints" collection of methods.
- * Typical usage is:
- *  <code>
- *   $orgpolicyService = new Google\Service\OrgPolicyAPI(...);
- *   $customConstraints = $orgpolicyService->organizations_customConstraints;
- *  </code>
- */
-class OrganizationsCustomConstraints extends \Google\Service\Resource
-{
+namespace Google\Service\OrgPolicyAPI\Resource {
+    use Google\Service\OrgPolicyAPI\GoogleCloudOrgpolicyV2CustomConstraint;
+    use Google\Service\OrgPolicyAPI\GoogleCloudOrgpolicyV2ListCustomConstraintsResponse;
+    use Google\Service\OrgPolicyAPI\GoogleProtobufEmpty;
     /**
-     * Creates a custom constraint. Returns a `google.rpc.Status` with
-     * `google.rpc.Code.NOT_FOUND` if the organization does not exist. Returns a
-     * `google.rpc.Status` with `google.rpc.Code.ALREADY_EXISTS` if the constraint
-     * already exists on the given organization. (customConstraints.create)
-     *
-     * @param string $parent Required. Must be in the following form: *
-     * `organizations/{organization_id}`
-     * @param GoogleCloudOrgpolicyV2CustomConstraint $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudOrgpolicyV2CustomConstraint
-     * @throws \Google\Service\Exception
+     * The "customConstraints" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $orgpolicyService = new Google\Service\OrgPolicyAPI(...);
+     *   $customConstraints = $orgpolicyService->organizations_customConstraints;
+     *  </code>
      */
-    public function create($parent, GoogleCloudOrgpolicyV2CustomConstraint $postBody, $optParams = [])
+    class OrganizationsCustomConstraints extends \Google\Service\Resource
     {
+        /**
+         * Creates a custom constraint. Returns a `google.rpc.Status` with
+         * `google.rpc.Code.NOT_FOUND` if the organization does not exist. Returns a
+         * `google.rpc.Status` with `google.rpc.Code.ALREADY_EXISTS` if the constraint
+         * already exists on the given organization. (customConstraints.create)
+         *
+         * @param string $parent Required. Must be in the following form: *
+         * `organizations/{organization_id}`
+         * @param GoogleCloudOrgpolicyV2CustomConstraint $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudOrgpolicyV2CustomConstraint
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudOrgpolicyV2CustomConstraint $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a custom constraint. Returns a `google.rpc.Status` with
+         * `google.rpc.Code.NOT_FOUND` if the constraint does not exist.
+         * (customConstraints.delete)
+         *
+         * @param string $name Required. Name of the custom constraint to delete. See
+         * the custom constraint entry for naming rules.
+         * @param array $optParams Optional parameters.
+         * @return GoogleProtobufEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets a custom or managed constraint. Returns a `google.rpc.Status` with
+         * `google.rpc.Code.NOT_FOUND` if the custom or managed constraint does not
+         * exist. (customConstraints.get)
+         *
+         * @param string $name Required. Resource name of the custom or managed
+         * constraint. See the custom constraint entry for naming requirements.
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudOrgpolicyV2CustomConstraint
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves all of the custom constraints that exist on a particular
+         * organization resource. (customConstraints.listOrganizationsCustomConstraints)
+         *
+         * @param string $parent Required. The target Google Cloud resource that parents
+         * the set of custom constraints that will be returned from this call. Must be
+         * in one of the following forms: * `organizations/{organization_id}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Size of the pages to be returned. This is currently
+         * unsupported and will be ignored. The server may at any point start using this
+         * field to limit page size.
+         * @opt_param string pageToken Page token used to retrieve the next page. This
+         * is currently unsupported and will be ignored. The server may at any point
+         * start using this field.
+         * @return GoogleCloudOrgpolicyV2ListCustomConstraintsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listOrganizationsCustomConstraints($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates a custom constraint. Returns a `google.rpc.Status` with
+         * `google.rpc.Code.NOT_FOUND` if the constraint does not exist. Note: the
+         * supplied policy will perform a full overwrite of all fields.
+         * (customConstraints.patch)
+         *
+         * @param string $name Immutable. Name of the constraint. This is unique within
+         * the organization. Format of the name should be *
+         * `organizations/{organization_id}/customConstraints/{custom_constraint_id}`
+         * Example: `organizations/123/customConstraints/custom.createOnlyE2TypeVms` The
+         * max length is 70 characters and the minimum length is 1. Note that the prefix
+         * `organizations/{organization_id}/customConstraints/` is not counted.
+         * @param GoogleCloudOrgpolicyV2CustomConstraint $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudOrgpolicyV2CustomConstraint
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, GoogleCloudOrgpolicyV2CustomConstraint $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a custom constraint. Returns a `google.rpc.Status` with
-     * `google.rpc.Code.NOT_FOUND` if the constraint does not exist.
-     * (customConstraints.delete)
-     *
-     * @param string $name Required. Name of the custom constraint to delete. See
-     * the custom constraint entry for naming rules.
-     * @param array $optParams Optional parameters.
-     * @return GoogleProtobufEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\OrgPolicyAPI\Resource\OrganizationsCustomConstraints registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets a custom or managed constraint. Returns a `google.rpc.Status` with
-     * `google.rpc.Code.NOT_FOUND` if the custom or managed constraint does not
-     * exist. (customConstraints.get)
-     *
-     * @param string $name Required. Resource name of the custom or managed
-     * constraint. See the custom constraint entry for naming requirements.
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudOrgpolicyV2CustomConstraint
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves all of the custom constraints that exist on a particular
-     * organization resource. (customConstraints.listOrganizationsCustomConstraints)
-     *
-     * @param string $parent Required. The target Google Cloud resource that parents
-     * the set of custom constraints that will be returned from this call. Must be
-     * in one of the following forms: * `organizations/{organization_id}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Size of the pages to be returned. This is currently
-     * unsupported and will be ignored. The server may at any point start using this
-     * field to limit page size.
-     * @opt_param string pageToken Page token used to retrieve the next page. This
-     * is currently unsupported and will be ignored. The server may at any point
-     * start using this field.
-     * @return GoogleCloudOrgpolicyV2ListCustomConstraintsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listOrganizationsCustomConstraints($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates a custom constraint. Returns a `google.rpc.Status` with
-     * `google.rpc.Code.NOT_FOUND` if the constraint does not exist. Note: the
-     * supplied policy will perform a full overwrite of all fields.
-     * (customConstraints.patch)
-     *
-     * @param string $name Immutable. Name of the constraint. This is unique within
-     * the organization. Format of the name should be *
-     * `organizations/{organization_id}/customConstraints/{custom_constraint_id}`
-     * Example: `organizations/123/customConstraints/custom.createOnlyE2TypeVms` The
-     * max length is 70 characters and the minimum length is 1. Note that the prefix
-     * `organizations/{organization_id}/customConstraints/` is not counted.
-     * @param GoogleCloudOrgpolicyV2CustomConstraint $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudOrgpolicyV2CustomConstraint
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, GoogleCloudOrgpolicyV2CustomConstraint $postBody, $optParams = [])
+    class Google_Service_OrgPolicyAPI_Resource_OrganizationsCustomConstraints extends \Google\Service\OrgPolicyAPI\Resource\OrganizationsCustomConstraints
     {
     }
 }

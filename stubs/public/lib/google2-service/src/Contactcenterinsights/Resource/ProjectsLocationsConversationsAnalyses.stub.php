@@ -21,72 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights\Resource;
-
-/**
- * The "analyses" collection of methods.
- * Typical usage is:
- *  <code>
- *   $contactcenterinsightsService = new Google\Service\Contactcenterinsights(...);
- *   $analyses = $contactcenterinsightsService->projects_locations_conversations_analyses;
- *  </code>
- */
-class ProjectsLocationsConversationsAnalyses extends \Google\Service\Resource
-{
+namespace Google\Service\Contactcenterinsights\Resource {
+    use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1Analysis;
+    use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1ListAnalysesResponse;
+    use Google\Service\Contactcenterinsights\GoogleLongrunningOperation;
+    use Google\Service\Contactcenterinsights\GoogleProtobufEmpty;
     /**
-     * Creates an analysis. The long running operation is done when the analysis has
-     * completed. (analyses.create)
-     *
-     * @param string $parent Required. The parent resource of the analysis.
-     * @param GoogleCloudContactcenterinsightsV1Analysis $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * The "analyses" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $contactcenterinsightsService = new Google\Service\Contactcenterinsights(...);
+     *   $analyses = $contactcenterinsightsService->projects_locations_conversations_analyses;
+     *  </code>
      */
-    public function create($parent, GoogleCloudContactcenterinsightsV1Analysis $postBody, $optParams = [])
+    class ProjectsLocationsConversationsAnalyses extends \Google\Service\Resource
     {
+        /**
+         * Creates an analysis. The long running operation is done when the analysis has
+         * completed. (analyses.create)
+         *
+         * @param string $parent Required. The parent resource of the analysis.
+         * @param GoogleCloudContactcenterinsightsV1Analysis $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudContactcenterinsightsV1Analysis $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes an analysis. (analyses.delete)
+         *
+         * @param string $name Required. The name of the analysis to delete.
+         * @param array $optParams Optional parameters.
+         * @return GoogleProtobufEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets an analysis. (analyses.get)
+         *
+         * @param string $name Required. The name of the analysis to get.
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudContactcenterinsightsV1Analysis
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists analyses. (analyses.listProjectsLocationsConversationsAnalyses)
+         *
+         * @param string $parent Required. The parent resource of the analyses.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter A filter to reduce results to a specific subset.
+         * Useful for querying conversations with specific properties.
+         * @opt_param int pageSize The maximum number of analyses to return in the
+         * response. If this value is zero, the service will select a default size. A
+         * call might return fewer objects than requested. A non-empty `next_page_token`
+         * in the response indicates that more data is available.
+         * @opt_param string pageToken The value returned by the last
+         * `ListAnalysesResponse`; indicates that this is a continuation of a prior
+         * `ListAnalyses` call and the system should return the next page of data.
+         * @return GoogleCloudContactcenterinsightsV1ListAnalysesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsConversationsAnalyses($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes an analysis. (analyses.delete)
-     *
-     * @param string $name Required. The name of the analysis to delete.
-     * @param array $optParams Optional parameters.
-     * @return GoogleProtobufEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Contactcenterinsights\Resource\ProjectsLocationsConversationsAnalyses registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets an analysis. (analyses.get)
-     *
-     * @param string $name Required. The name of the analysis to get.
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudContactcenterinsightsV1Analysis
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists analyses. (analyses.listProjectsLocationsConversationsAnalyses)
-     *
-     * @param string $parent Required. The parent resource of the analyses.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter A filter to reduce results to a specific subset.
-     * Useful for querying conversations with specific properties.
-     * @opt_param int pageSize The maximum number of analyses to return in the
-     * response. If this value is zero, the service will select a default size. A
-     * call might return fewer objects than requested. A non-empty `next_page_token`
-     * in the response indicates that more data is available.
-     * @opt_param string pageToken The value returned by the last
-     * `ListAnalysesResponse`; indicates that this is a continuation of a prior
-     * `ListAnalyses` call and the system should return the next page of data.
-     * @return GoogleCloudContactcenterinsightsV1ListAnalysesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsConversationsAnalyses($parent, $optParams = [])
+    class Google_Service_Contactcenterinsights_Resource_ProjectsLocationsConversationsAnalyses extends \Google\Service\Contactcenterinsights\Resource\ProjectsLocationsConversationsAnalyses
     {
     }
 }

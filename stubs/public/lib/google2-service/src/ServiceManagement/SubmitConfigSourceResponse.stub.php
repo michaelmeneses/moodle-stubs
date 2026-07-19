@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceManagement;
-
-class SubmitConfigSourceResponse extends \Google\Model
-{
-    protected $serviceConfigType = Service::class;
-    protected $serviceConfigDataType = '';
-    /**
-     * The generated service configuration.
-     *
-     * @param Service $serviceConfig
-     */
-    public function setServiceConfig(Service $serviceConfig)
+namespace Google\Service\ServiceManagement {
+    class SubmitConfigSourceResponse extends \Google\Model
     {
+        protected $serviceConfigType = Service::class;
+        protected $serviceConfigDataType = '';
+        /**
+         * The generated service configuration.
+         *
+         * @param Service $serviceConfig
+         */
+        public function setServiceConfig(Service $serviceConfig)
+        {
+        }
+        /**
+         * @return Service
+         */
+        public function getServiceConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Service
+     * Runtime class alias of \Google\Service\ServiceManagement\SubmitConfigSourceResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getServiceConfig()
+    class Google_Service_ServiceManagement_SubmitConfigSourceResponse extends \Google\Service\ServiceManagement\SubmitConfigSourceResponse
     {
     }
 }

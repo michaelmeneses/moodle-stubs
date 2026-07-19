@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class SeqMapTaskOutputInfo extends \Google\Model
-{
-    protected $sinkType = Sink::class;
-    protected $sinkDataType = '';
-    /**
-     * The id of the TupleTag the user code will tag the output value by.
-     *
-     * @var string
-     */
-    public $tag;
-    /**
-     * The sink to write the output value to.
-     *
-     * @param Sink $sink
-     */
-    public function setSink(Sink $sink)
+namespace Google\Service\Dataflow {
+    class SeqMapTaskOutputInfo extends \Google\Model
     {
+        protected $sinkType = Sink::class;
+        protected $sinkDataType = '';
+        /**
+         * The id of the TupleTag the user code will tag the output value by.
+         *
+         * @var string
+         */
+        public $tag;
+        /**
+         * The sink to write the output value to.
+         *
+         * @param Sink $sink
+         */
+        public function setSink(Sink $sink)
+        {
+        }
+        /**
+         * @return Sink
+         */
+        public function getSink()
+        {
+        }
+        /**
+         * The id of the TupleTag the user code will tag the output value by.
+         *
+         * @param string $tag
+         */
+        public function setTag($tag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTag()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Sink
+     * Runtime class alias of \Google\Service\Dataflow\SeqMapTaskOutputInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSink()
-    {
-    }
-    /**
-     * The id of the TupleTag the user code will tag the output value by.
-     *
-     * @param string $tag
-     */
-    public function setTag($tag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTag()
+    class Google_Service_Dataflow_SeqMapTaskOutputInfo extends \Google\Service\Dataflow\SeqMapTaskOutputInfo
     {
     }
 }

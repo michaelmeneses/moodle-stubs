@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class ScreenDensityTargeting extends \Google\Collection
-{
-    protected $collection_key = 'value';
-    protected $alternativesType = ScreenDensity::class;
-    protected $alternativesDataType = 'array';
-    protected $valueType = ScreenDensity::class;
-    protected $valueDataType = 'array';
-    /**
-     * Targeting of other sibling directories that were in the Bundle. For main
-     * splits this is targeting of other main splits.
-     *
-     * @param ScreenDensity[] $alternatives
-     */
-    public function setAlternatives($alternatives)
+namespace Google\Service\AndroidPublisher {
+    class ScreenDensityTargeting extends \Google\Collection
     {
+        protected $collection_key = 'value';
+        protected $alternativesType = ScreenDensity::class;
+        protected $alternativesDataType = 'array';
+        protected $valueType = ScreenDensity::class;
+        protected $valueDataType = 'array';
+        /**
+         * Targeting of other sibling directories that were in the Bundle. For main
+         * splits this is targeting of other main splits.
+         *
+         * @param ScreenDensity[] $alternatives
+         */
+        public function setAlternatives($alternatives)
+        {
+        }
+        /**
+         * @return ScreenDensity[]
+         */
+        public function getAlternatives()
+        {
+        }
+        /**
+         * Value of a screen density.
+         *
+         * @param ScreenDensity[] $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return ScreenDensity[]
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ScreenDensity[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\ScreenDensityTargeting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlternatives()
-    {
-    }
-    /**
-     * Value of a screen density.
-     *
-     * @param ScreenDensity[] $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return ScreenDensity[]
-     */
-    public function getValue()
+    class Google_Service_AndroidPublisher_ScreenDensityTargeting extends \Google\Service\AndroidPublisher\ScreenDensityTargeting
     {
     }
 }

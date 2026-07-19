@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseManagement;
-
-class IosAppConfig extends \Google\Model
-{
-    /**
-     * The content of the XML configuration file.
-     *
-     * @var string
-     */
-    public $configFileContents;
-    /**
-     * The filename that the configuration artifact for the `IosApp` is typically
-     * saved as. For example: `GoogleService-Info.plist`
-     *
-     * @var string
-     */
-    public $configFilename;
-    /**
-     * The content of the XML configuration file.
-     *
-     * @param string $configFileContents
-     */
-    public function setConfigFileContents($configFileContents)
+namespace Google\Service\FirebaseManagement {
+    class IosAppConfig extends \Google\Model
     {
+        /**
+         * The content of the XML configuration file.
+         *
+         * @var string
+         */
+        public $configFileContents;
+        /**
+         * The filename that the configuration artifact for the `IosApp` is typically
+         * saved as. For example: `GoogleService-Info.plist`
+         *
+         * @var string
+         */
+        public $configFilename;
+        /**
+         * The content of the XML configuration file.
+         *
+         * @param string $configFileContents
+         */
+        public function setConfigFileContents($configFileContents)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConfigFileContents()
+        {
+        }
+        /**
+         * The filename that the configuration artifact for the `IosApp` is typically
+         * saved as. For example: `GoogleService-Info.plist`
+         *
+         * @param string $configFilename
+         */
+        public function setConfigFilename($configFilename)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConfigFilename()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\FirebaseManagement\IosAppConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfigFileContents()
-    {
-    }
-    /**
-     * The filename that the configuration artifact for the `IosApp` is typically
-     * saved as. For example: `GoogleService-Info.plist`
-     *
-     * @param string $configFilename
-     */
-    public function setConfigFilename($configFilename)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getConfigFilename()
+    class Google_Service_FirebaseManagement_IosAppConfig extends \Google\Service\FirebaseManagement\IosAppConfig
     {
     }
 }

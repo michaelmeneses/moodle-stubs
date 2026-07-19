@@ -21,130 +21,139 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkManagement;
-
-class CloudSQLInstanceInfo extends \Google\Model
-{
-    /**
-     * Name of a Cloud SQL instance.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * External IP address of a Cloud SQL instance.
-     *
-     * @var string
-     */
-    public $externalIp;
-    /**
-     * Internal IP address of a Cloud SQL instance.
-     *
-     * @var string
-     */
-    public $internalIp;
-    /**
-     * URI of a Cloud SQL instance network or empty string if the instance does
-     * not have one.
-     *
-     * @var string
-     */
-    public $networkUri;
-    /**
-     * Region in which the Cloud SQL instance is running.
-     *
-     * @var string
-     */
-    public $region;
-    /**
-     * URI of a Cloud SQL instance.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Name of a Cloud SQL instance.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\NetworkManagement {
+    class CloudSQLInstanceInfo extends \Google\Model
     {
+        /**
+         * Name of a Cloud SQL instance.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * External IP address of a Cloud SQL instance.
+         *
+         * @var string
+         */
+        public $externalIp;
+        /**
+         * Internal IP address of a Cloud SQL instance.
+         *
+         * @var string
+         */
+        public $internalIp;
+        /**
+         * URI of a Cloud SQL instance network or empty string if the instance does
+         * not have one.
+         *
+         * @var string
+         */
+        public $networkUri;
+        /**
+         * Region in which the Cloud SQL instance is running.
+         *
+         * @var string
+         */
+        public $region;
+        /**
+         * URI of a Cloud SQL instance.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Name of a Cloud SQL instance.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * External IP address of a Cloud SQL instance.
+         *
+         * @param string $externalIp
+         */
+        public function setExternalIp($externalIp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExternalIp()
+        {
+        }
+        /**
+         * Internal IP address of a Cloud SQL instance.
+         *
+         * @param string $internalIp
+         */
+        public function setInternalIp($internalIp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInternalIp()
+        {
+        }
+        /**
+         * URI of a Cloud SQL instance network or empty string if the instance does
+         * not have one.
+         *
+         * @param string $networkUri
+         */
+        public function setNetworkUri($networkUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetworkUri()
+        {
+        }
+        /**
+         * Region in which the Cloud SQL instance is running.
+         *
+         * @param string $region
+         */
+        public function setRegion($region)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegion()
+        {
+        }
+        /**
+         * URI of a Cloud SQL instance.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkManagement\CloudSQLInstanceInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * External IP address of a Cloud SQL instance.
-     *
-     * @param string $externalIp
-     */
-    public function setExternalIp($externalIp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExternalIp()
-    {
-    }
-    /**
-     * Internal IP address of a Cloud SQL instance.
-     *
-     * @param string $internalIp
-     */
-    public function setInternalIp($internalIp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInternalIp()
-    {
-    }
-    /**
-     * URI of a Cloud SQL instance network or empty string if the instance does
-     * not have one.
-     *
-     * @param string $networkUri
-     */
-    public function setNetworkUri($networkUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNetworkUri()
-    {
-    }
-    /**
-     * Region in which the Cloud SQL instance is running.
-     *
-     * @param string $region
-     */
-    public function setRegion($region)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegion()
-    {
-    }
-    /**
-     * URI of a Cloud SQL instance.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_NetworkManagement_CloudSQLInstanceInfo extends \Google\Service\NetworkManagement\CloudSQLInstanceInfo
     {
     }
 }

@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigTtlConfig extends \Google\Model
-{
-    /**
-     * Optional. The default TTL duration of the memories in the Memory Bank. This
-     * applies to all operations that create or update a memory.
-     *
-     * @var string
-     */
-    public $defaultTtl;
-    protected $granularTtlConfigType = GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigTtlConfigGranularTtlConfig::class;
-    protected $granularTtlConfigDataType = '';
-    /**
-     * Optional. The default TTL duration of the memory revisions in the Memory
-     * Bank. This applies to all operations that create a memory revision. If not
-     * set, a default TTL of 365 days will be used.
-     *
-     * @var string
-     */
-    public $memoryRevisionDefaultTtl;
-    /**
-     * Optional. The default TTL duration of the memories in the Memory Bank. This
-     * applies to all operations that create or update a memory.
-     *
-     * @param string $defaultTtl
-     */
-    public function setDefaultTtl($defaultTtl)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigTtlConfig extends \Google\Model
     {
+        /**
+         * Optional. The default TTL duration of the memories in the Memory Bank. This
+         * applies to all operations that create or update a memory.
+         *
+         * @var string
+         */
+        public $defaultTtl;
+        protected $granularTtlConfigType = GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigTtlConfigGranularTtlConfig::class;
+        protected $granularTtlConfigDataType = '';
+        /**
+         * Optional. The default TTL duration of the memory revisions in the Memory
+         * Bank. This applies to all operations that create a memory revision. If not
+         * set, a default TTL of 365 days will be used.
+         *
+         * @var string
+         */
+        public $memoryRevisionDefaultTtl;
+        /**
+         * Optional. The default TTL duration of the memories in the Memory Bank. This
+         * applies to all operations that create or update a memory.
+         *
+         * @param string $defaultTtl
+         */
+        public function setDefaultTtl($defaultTtl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefaultTtl()
+        {
+        }
+        /**
+         * Optional. The granular TTL configuration of the memories in the Memory
+         * Bank.
+         *
+         * @param GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigTtlConfigGranularTtlConfig $granularTtlConfig
+         */
+        public function setGranularTtlConfig(GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigTtlConfigGranularTtlConfig $granularTtlConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigTtlConfigGranularTtlConfig
+         */
+        public function getGranularTtlConfig()
+        {
+        }
+        /**
+         * Optional. The default TTL duration of the memory revisions in the Memory
+         * Bank. This applies to all operations that create a memory revision. If not
+         * set, a default TTL of 365 days will be used.
+         *
+         * @param string $memoryRevisionDefaultTtl
+         */
+        public function setMemoryRevisionDefaultTtl($memoryRevisionDefaultTtl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMemoryRevisionDefaultTtl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigTtlConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefaultTtl()
-    {
-    }
-    /**
-     * Optional. The granular TTL configuration of the memories in the Memory
-     * Bank.
-     *
-     * @param GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigTtlConfigGranularTtlConfig $granularTtlConfig
-     */
-    public function setGranularTtlConfig(GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigTtlConfigGranularTtlConfig $granularTtlConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigTtlConfigGranularTtlConfig
-     */
-    public function getGranularTtlConfig()
-    {
-    }
-    /**
-     * Optional. The default TTL duration of the memory revisions in the Memory
-     * Bank. This applies to all operations that create a memory revision. If not
-     * set, a default TTL of 365 days will be used.
-     *
-     * @param string $memoryRevisionDefaultTtl
-     */
-    public function setMemoryRevisionDefaultTtl($memoryRevisionDefaultTtl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMemoryRevisionDefaultTtl()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigTtlConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ReasoningEngineContextSpecMemoryBankConfigTtlConfig
     {
     }
 }

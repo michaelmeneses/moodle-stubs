@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class MerchantLocation extends \Google\Model
-{
+namespace Google\Service\Walletobjects {
+    class MerchantLocation extends \Google\Model
+    {
+        /**
+         * The latitude specified as any value in the range of -90.0 through +90.0,
+         * both inclusive. Values outside these bounds will be rejected.
+         *
+         * @var 
+         */
+        public $latitude;
+        /**
+         * The longitude specified in the range -180.0 through +180.0, both inclusive.
+         * Values outside these bounds will be rejected.
+         *
+         * @var 
+         */
+        public $longitude;
+        public function setLatitude($latitude)
+        {
+        }
+        public function getLatitude()
+        {
+        }
+        public function setLongitude($longitude)
+        {
+        }
+        public function getLongitude()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * The latitude specified as any value in the range of -90.0 through +90.0,
-     * both inclusive. Values outside these bounds will be rejected.
-     *
-     * @var 
+     * Runtime class alias of \Google\Service\Walletobjects\MerchantLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $latitude;
-    /**
-     * The longitude specified in the range -180.0 through +180.0, both inclusive.
-     * Values outside these bounds will be rejected.
-     *
-     * @var 
-     */
-    public $longitude;
-    public function setLatitude($latitude)
-    {
-    }
-    public function getLatitude()
-    {
-    }
-    public function setLongitude($longitude)
-    {
-    }
-    public function getLongitude()
+    class Google_Service_Walletobjects_MerchantLocation extends \Google\Service\Walletobjects\MerchantLocation
     {
     }
 }

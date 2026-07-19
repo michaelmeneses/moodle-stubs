@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1InvalidRule extends \Google\Model
-{
-    /**
-     * Validation error on a parsed expression.
-     *
-     * @var string
-     */
-    public $error;
-    protected $ruleType = GoogleCloudContentwarehouseV1Rule::class;
-    protected $ruleDataType = '';
-    /**
-     * Validation error on a parsed expression.
-     *
-     * @param string $error
-     */
-    public function setError($error)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1InvalidRule extends \Google\Model
     {
+        /**
+         * Validation error on a parsed expression.
+         *
+         * @var string
+         */
+        public $error;
+        protected $ruleType = GoogleCloudContentwarehouseV1Rule::class;
+        protected $ruleDataType = '';
+        /**
+         * Validation error on a parsed expression.
+         *
+         * @param string $error
+         */
+        public function setError($error)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getError()
+        {
+        }
+        /**
+         * Triggered rule.
+         *
+         * @param GoogleCloudContentwarehouseV1Rule $rule
+         */
+        public function setRule(GoogleCloudContentwarehouseV1Rule $rule)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1Rule
+         */
+        public function getRule()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1InvalidRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getError()
-    {
-    }
-    /**
-     * Triggered rule.
-     *
-     * @param GoogleCloudContentwarehouseV1Rule $rule
-     */
-    public function setRule(GoogleCloudContentwarehouseV1Rule $rule)
-    {
-    }
-    /**
-     * @return GoogleCloudContentwarehouseV1Rule
-     */
-    public function getRule()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1InvalidRule extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1InvalidRule
     {
     }
 }

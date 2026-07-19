@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1PropertyMetadata extends \Google\Model
-{
-    protected $humanReviewLabelingMetadataType = GoogleCloudDocumentaiV1HumanReviewLabelingMetadata::class;
-    protected $humanReviewLabelingMetadataDataType = '';
-    protected $humanReviewMetadataType = GoogleCloudDocumentaiV1HumanReviewValidationMetadata::class;
-    protected $humanReviewMetadataDataType = '';
-    /**
-     * @var bool
-     */
-    public $inactive;
-    /**
-     * @param GoogleCloudDocumentaiV1HumanReviewLabelingMetadata
-     */
-    public function setHumanReviewLabelingMetadata(GoogleCloudDocumentaiV1HumanReviewLabelingMetadata $humanReviewLabelingMetadata)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1PropertyMetadata extends \Google\Model
     {
+        protected $humanReviewLabelingMetadataType = GoogleCloudDocumentaiV1HumanReviewLabelingMetadata::class;
+        protected $humanReviewLabelingMetadataDataType = '';
+        protected $humanReviewMetadataType = GoogleCloudDocumentaiV1HumanReviewValidationMetadata::class;
+        protected $humanReviewMetadataDataType = '';
+        /**
+         * @var bool
+         */
+        public $inactive;
+        /**
+         * @param GoogleCloudDocumentaiV1HumanReviewLabelingMetadata
+         */
+        public function setHumanReviewLabelingMetadata(GoogleCloudDocumentaiV1HumanReviewLabelingMetadata $humanReviewLabelingMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1HumanReviewLabelingMetadata
+         */
+        public function getHumanReviewLabelingMetadata()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1HumanReviewValidationMetadata
+         */
+        public function setHumanReviewMetadata(GoogleCloudDocumentaiV1HumanReviewValidationMetadata $humanReviewMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1HumanReviewValidationMetadata
+         */
+        public function getHumanReviewMetadata()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setInactive($inactive)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getInactive()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1HumanReviewLabelingMetadata
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1PropertyMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHumanReviewLabelingMetadata()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1HumanReviewValidationMetadata
-     */
-    public function setHumanReviewMetadata(GoogleCloudDocumentaiV1HumanReviewValidationMetadata $humanReviewMetadata)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1HumanReviewValidationMetadata
-     */
-    public function getHumanReviewMetadata()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setInactive($inactive)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getInactive()
+    class Google_Service_Document_GoogleCloudDocumentaiV1PropertyMetadata extends \Google\Service\Document\GoogleCloudDocumentaiV1PropertyMetadata
     {
     }
 }

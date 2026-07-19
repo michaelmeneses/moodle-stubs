@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2IssueResourceAzureMetadataAzureSubscription extends \Google\Model
-{
-    /**
-     * The Azure subscription display name of the resource associated with the
-     * issue.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The Azure subscription ID of the resource associated with the issue.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The Azure subscription display name of the resource associated with the
-     * issue.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2IssueResourceAzureMetadataAzureSubscription extends \Google\Model
     {
+        /**
+         * The Azure subscription display name of the resource associated with the
+         * issue.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The Azure subscription ID of the resource associated with the issue.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The Azure subscription display name of the resource associated with the
+         * issue.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The Azure subscription ID of the resource associated with the issue.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2IssueResourceAzureMetadataAzureSubscription registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The Azure subscription ID of the resource associated with the issue.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2IssueResourceAzureMetadataAzureSubscription extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2IssueResourceAzureMetadataAzureSubscription
     {
     }
 }

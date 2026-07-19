@@ -21,93 +21,102 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1mainBulkDownloadFeedbackLabelsMetadataDownloadStats extends \Google\Collection
-{
-    protected $collection_key = 'fileNames';
-    /**
-     * Output only. Full name of the files written to Cloud storage.
-     *
-     * @var string[]
-     */
-    public $fileNames;
-    /**
-     * The number of objects processed during the download operation.
-     *
-     * @var int
-     */
-    public $processedObjectCount;
-    /**
-     * The number of new feedback labels downloaded during this operation.
-     * Different from "processed" because some labels might not be downloaded
-     * because an error.
-     *
-     * @var int
-     */
-    public $successfulDownloadCount;
-    /**
-     * Total number of files written to the provided Cloud Storage bucket.
-     *
-     * @var int
-     */
-    public $totalFilesWritten;
-    /**
-     * Output only. Full name of the files written to Cloud storage.
-     *
-     * @param string[] $fileNames
-     */
-    public function setFileNames($fileNames)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1mainBulkDownloadFeedbackLabelsMetadataDownloadStats extends \Google\Collection
     {
+        protected $collection_key = 'fileNames';
+        /**
+         * Output only. Full name of the files written to Cloud storage.
+         *
+         * @var string[]
+         */
+        public $fileNames;
+        /**
+         * The number of objects processed during the download operation.
+         *
+         * @var int
+         */
+        public $processedObjectCount;
+        /**
+         * The number of new feedback labels downloaded during this operation.
+         * Different from "processed" because some labels might not be downloaded
+         * because an error.
+         *
+         * @var int
+         */
+        public $successfulDownloadCount;
+        /**
+         * Total number of files written to the provided Cloud Storage bucket.
+         *
+         * @var int
+         */
+        public $totalFilesWritten;
+        /**
+         * Output only. Full name of the files written to Cloud storage.
+         *
+         * @param string[] $fileNames
+         */
+        public function setFileNames($fileNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFileNames()
+        {
+        }
+        /**
+         * The number of objects processed during the download operation.
+         *
+         * @param int $processedObjectCount
+         */
+        public function setProcessedObjectCount($processedObjectCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getProcessedObjectCount()
+        {
+        }
+        /**
+         * The number of new feedback labels downloaded during this operation.
+         * Different from "processed" because some labels might not be downloaded
+         * because an error.
+         *
+         * @param int $successfulDownloadCount
+         */
+        public function setSuccessfulDownloadCount($successfulDownloadCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSuccessfulDownloadCount()
+        {
+        }
+        /**
+         * Total number of files written to the provided Cloud Storage bucket.
+         *
+         * @param int $totalFilesWritten
+         */
+        public function setTotalFilesWritten($totalFilesWritten)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalFilesWritten()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainBulkDownloadFeedbackLabelsMetadataDownloadStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFileNames()
-    {
-    }
-    /**
-     * The number of objects processed during the download operation.
-     *
-     * @param int $processedObjectCount
-     */
-    public function setProcessedObjectCount($processedObjectCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getProcessedObjectCount()
-    {
-    }
-    /**
-     * The number of new feedback labels downloaded during this operation.
-     * Different from "processed" because some labels might not be downloaded
-     * because an error.
-     *
-     * @param int $successfulDownloadCount
-     */
-    public function setSuccessfulDownloadCount($successfulDownloadCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSuccessfulDownloadCount()
-    {
-    }
-    /**
-     * Total number of files written to the provided Cloud Storage bucket.
-     *
-     * @param int $totalFilesWritten
-     */
-    public function setTotalFilesWritten($totalFilesWritten)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalFilesWritten()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1mainBulkDownloadFeedbackLabelsMetadataDownloadStats extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainBulkDownloadFeedbackLabelsMetadataDownloadStats
     {
     }
 }

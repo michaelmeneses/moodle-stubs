@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class ExplicitBuckets extends \Google\Collection
-{
-    protected $collection_key = 'bounds';
-    public $bounds;
-    public function setBounds($bounds)
+namespace Google\Service\Networkconnectivity {
+    class ExplicitBuckets extends \Google\Collection
     {
+        protected $collection_key = 'bounds';
+        public $bounds;
+        public function setBounds($bounds)
+        {
+        }
+        public function getBounds()
+        {
+        }
     }
-    public function getBounds()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Networkconnectivity\ExplicitBuckets registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Networkconnectivity_ExplicitBuckets extends \Google\Service\Networkconnectivity\ExplicitBuckets
     {
     }
 }

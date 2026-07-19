@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MapsPlaces;
-
-class GoogleMapsPlacesV1ContextualContentJustificationBusinessAvailabilityAttributesJustification extends \Google\Model
-{
-    /**
-     * If a place provides delivery.
-     *
-     * @var bool
-     */
-    public $delivery;
-    /**
-     * If a place provides dine-in.
-     *
-     * @var bool
-     */
-    public $dineIn;
-    /**
-     * If a place provides takeout.
-     *
-     * @var bool
-     */
-    public $takeout;
-    /**
-     * If a place provides delivery.
-     *
-     * @param bool $delivery
-     */
-    public function setDelivery($delivery)
+namespace Google\Service\MapsPlaces {
+    class GoogleMapsPlacesV1ContextualContentJustificationBusinessAvailabilityAttributesJustification extends \Google\Model
     {
+        /**
+         * If a place provides delivery.
+         *
+         * @var bool
+         */
+        public $delivery;
+        /**
+         * If a place provides dine-in.
+         *
+         * @var bool
+         */
+        public $dineIn;
+        /**
+         * If a place provides takeout.
+         *
+         * @var bool
+         */
+        public $takeout;
+        /**
+         * If a place provides delivery.
+         *
+         * @param bool $delivery
+         */
+        public function setDelivery($delivery)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDelivery()
+        {
+        }
+        /**
+         * If a place provides dine-in.
+         *
+         * @param bool $dineIn
+         */
+        public function setDineIn($dineIn)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDineIn()
+        {
+        }
+        /**
+         * If a place provides takeout.
+         *
+         * @param bool $takeout
+         */
+        public function setTakeout($takeout)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getTakeout()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\MapsPlaces\GoogleMapsPlacesV1ContextualContentJustificationBusinessAvailabilityAttributesJustification registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDelivery()
-    {
-    }
-    /**
-     * If a place provides dine-in.
-     *
-     * @param bool $dineIn
-     */
-    public function setDineIn($dineIn)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDineIn()
-    {
-    }
-    /**
-     * If a place provides takeout.
-     *
-     * @param bool $takeout
-     */
-    public function setTakeout($takeout)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getTakeout()
+    class Google_Service_MapsPlaces_GoogleMapsPlacesV1ContextualContentJustificationBusinessAvailabilityAttributesJustification extends \Google\Service\MapsPlaces\GoogleMapsPlacesV1ContextualContentJustificationBusinessAvailabilityAttributesJustification
     {
     }
 }

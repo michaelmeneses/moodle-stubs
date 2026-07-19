@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1AssistantCustomerPolicy extends \Google\Collection
-{
-    protected $collection_key = 'bannedPhrases';
-    protected $bannedPhrasesType = GoogleCloudDiscoveryengineV1AssistantCustomerPolicyBannedPhrase::class;
-    protected $bannedPhrasesDataType = 'array';
-    protected $modelArmorConfigType = GoogleCloudDiscoveryengineV1AssistantCustomerPolicyModelArmorConfig::class;
-    protected $modelArmorConfigDataType = '';
-    /**
-     * Optional. List of banned phrases.
-     *
-     * @param GoogleCloudDiscoveryengineV1AssistantCustomerPolicyBannedPhrase[] $bannedPhrases
-     */
-    public function setBannedPhrases($bannedPhrases)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1AssistantCustomerPolicy extends \Google\Collection
     {
+        protected $collection_key = 'bannedPhrases';
+        protected $bannedPhrasesType = GoogleCloudDiscoveryengineV1AssistantCustomerPolicyBannedPhrase::class;
+        protected $bannedPhrasesDataType = 'array';
+        protected $modelArmorConfigType = GoogleCloudDiscoveryengineV1AssistantCustomerPolicyModelArmorConfig::class;
+        protected $modelArmorConfigDataType = '';
+        /**
+         * Optional. List of banned phrases.
+         *
+         * @param GoogleCloudDiscoveryengineV1AssistantCustomerPolicyBannedPhrase[] $bannedPhrases
+         */
+        public function setBannedPhrases($bannedPhrases)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1AssistantCustomerPolicyBannedPhrase[]
+         */
+        public function getBannedPhrases()
+        {
+        }
+        /**
+         * Optional. Model Armor configuration to be used for sanitizing user prompts
+         * and assistant responses.
+         *
+         * @param GoogleCloudDiscoveryengineV1AssistantCustomerPolicyModelArmorConfig $modelArmorConfig
+         */
+        public function setModelArmorConfig(GoogleCloudDiscoveryengineV1AssistantCustomerPolicyModelArmorConfig $modelArmorConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1AssistantCustomerPolicyModelArmorConfig
+         */
+        public function getModelArmorConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1AssistantCustomerPolicyBannedPhrase[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AssistantCustomerPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBannedPhrases()
-    {
-    }
-    /**
-     * Optional. Model Armor configuration to be used for sanitizing user prompts
-     * and assistant responses.
-     *
-     * @param GoogleCloudDiscoveryengineV1AssistantCustomerPolicyModelArmorConfig $modelArmorConfig
-     */
-    public function setModelArmorConfig(GoogleCloudDiscoveryengineV1AssistantCustomerPolicyModelArmorConfig $modelArmorConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1AssistantCustomerPolicyModelArmorConfig
-     */
-    public function getModelArmorConfig()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1AssistantCustomerPolicy extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AssistantCustomerPolicy
     {
     }
 }

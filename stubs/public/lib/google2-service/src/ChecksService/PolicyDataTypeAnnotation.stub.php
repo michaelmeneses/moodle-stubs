@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChecksService;
-
-class PolicyDataTypeAnnotation extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $dataType;
-    /**
-     * @var string
-     */
-    public $endOffset;
-    /**
-     * @var float
-     */
-    public $score;
-    /**
-     * @var string
-     */
-    public $startOffset;
-    /**
-     * @var string
-     */
-    public $textContent;
-    /**
-     * @param string
-     */
-    public function setDataType($dataType)
+namespace Google\Service\ChecksService {
+    class PolicyDataTypeAnnotation extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $dataType;
+        /**
+         * @var string
+         */
+        public $endOffset;
+        /**
+         * @var float
+         */
+        public $score;
+        /**
+         * @var string
+         */
+        public $startOffset;
+        /**
+         * @var string
+         */
+        public $textContent;
+        /**
+         * @param string
+         */
+        public function setDataType($dataType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEndOffset($endOffset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndOffset()
+        {
+        }
+        /**
+         * @param float
+         */
+        public function setScore($score)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getScore()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStartOffset($startOffset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartOffset()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTextContent($textContent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTextContent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChecksService\PolicyDataTypeAnnotation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEndOffset($endOffset)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndOffset()
-    {
-    }
-    /**
-     * @param float
-     */
-    public function setScore($score)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getScore()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStartOffset($startOffset)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartOffset()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTextContent($textContent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTextContent()
+    class Google_Service_ChecksService_PolicyDataTypeAnnotation extends \Google\Service\ChecksService\PolicyDataTypeAnnotation
     {
     }
 }

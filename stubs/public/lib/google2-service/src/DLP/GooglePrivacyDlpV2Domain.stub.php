@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2Domain extends \Google\Collection
-{
-    /**
-     * Category unspecified.
-     */
-    public const CATEGORY_CATEGORY_UNSPECIFIED = 'CATEGORY_UNSPECIFIED';
-    /**
-     * Indicates that the data profile is related to artificial intelligence. When
-     * set, all findings stored to Security Command Center will set the
-     * corresponding AI domain field of `Finding` objects.
-     */
-    public const CATEGORY_AI = 'AI';
-    /**
-     * Indicates that the data profile is related to code.
-     */
-    public const CATEGORY_CODE = 'CODE';
-    protected $collection_key = 'signals';
-    /**
-     * A domain category that this profile is related to.
-     *
-     * @var string
-     */
-    public $category;
-    /**
-     * The collection of signals that influenced selection of the category.
-     *
-     * @var string[]
-     */
-    public $signals;
-    /**
-     * A domain category that this profile is related to.
-     *
-     * Accepted values: CATEGORY_UNSPECIFIED, AI, CODE
-     *
-     * @param self::CATEGORY_* $category
-     */
-    public function setCategory($category)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2Domain extends \Google\Collection
     {
+        /**
+         * Category unspecified.
+         */
+        public const CATEGORY_CATEGORY_UNSPECIFIED = 'CATEGORY_UNSPECIFIED';
+        /**
+         * Indicates that the data profile is related to artificial intelligence. When
+         * set, all findings stored to Security Command Center will set the
+         * corresponding AI domain field of `Finding` objects.
+         */
+        public const CATEGORY_AI = 'AI';
+        /**
+         * Indicates that the data profile is related to code.
+         */
+        public const CATEGORY_CODE = 'CODE';
+        protected $collection_key = 'signals';
+        /**
+         * A domain category that this profile is related to.
+         *
+         * @var string
+         */
+        public $category;
+        /**
+         * The collection of signals that influenced selection of the category.
+         *
+         * @var string[]
+         */
+        public $signals;
+        /**
+         * A domain category that this profile is related to.
+         *
+         * Accepted values: CATEGORY_UNSPECIFIED, AI, CODE
+         *
+         * @param self::CATEGORY_* $category
+         */
+        public function setCategory($category)
+        {
+        }
+        /**
+         * @return self::CATEGORY_*
+         */
+        public function getCategory()
+        {
+        }
+        /**
+         * The collection of signals that influenced selection of the category.
+         *
+         * @param string[] $signals
+         */
+        public function setSignals($signals)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSignals()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CATEGORY_*
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2Domain registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCategory()
-    {
-    }
-    /**
-     * The collection of signals that influenced selection of the category.
-     *
-     * @param string[] $signals
-     */
-    public function setSignals($signals)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSignals()
+    class Google_Service_DLP_GooglePrivacyDlpV2Domain extends \Google\Service\DLP\GooglePrivacyDlpV2Domain
     {
     }
 }

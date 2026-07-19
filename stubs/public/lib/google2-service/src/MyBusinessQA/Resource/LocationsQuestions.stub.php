@@ -21,84 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessQA\Resource;
-
-/**
- * The "questions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $mybusinessqandaService = new Google\Service\MyBusinessQA(...);
- *   $questions = $mybusinessqandaService->locations_questions;
- *  </code>
- */
-class LocationsQuestions extends \Google\Service\Resource
-{
+namespace Google\Service\MyBusinessQA\Resource {
+    use Google\Service\MyBusinessQA\ListQuestionsResponse;
+    use Google\Service\MyBusinessQA\MybusinessqandaEmpty;
+    use Google\Service\MyBusinessQA\Question;
     /**
-     * Adds a question for the specified location. (questions.create)
-     *
-     * @param string $parent Required. The name of the location to write a question
-     * for.
-     * @param Question $postBody
-     * @param array $optParams Optional parameters.
-     * @return Question
-     * @throws \Google\Service\Exception
+     * The "questions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $mybusinessqandaService = new Google\Service\MyBusinessQA(...);
+     *   $questions = $mybusinessqandaService->locations_questions;
+     *  </code>
      */
-    public function create($parent, Question $postBody, $optParams = [])
+    class LocationsQuestions extends \Google\Service\Resource
     {
+        /**
+         * Adds a question for the specified location. (questions.create)
+         *
+         * @param string $parent Required. The name of the location to write a question
+         * for.
+         * @param Question $postBody
+         * @param array $optParams Optional parameters.
+         * @return Question
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, Question $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a specific question written by the current user. (questions.delete)
+         *
+         * @param string $name Required. The name of the question to delete.
+         * @param array $optParams Optional parameters.
+         * @return MybusinessqandaEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Returns the paginated list of questions and some of its answers for a
+         * specified location. This operation is only valid if the specified location is
+         * verified. (questions.listLocationsQuestions)
+         *
+         * @param string $parent Required. The name of the location to fetch questions
+         * for.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int answersPerQuestion Optional. How many answers to fetch per
+         * question. The default and maximum `answers_per_question` values are 10.
+         * @opt_param string filter Optional. A filter constraining the questions to
+         * return. The only filter currently supported is "ignore_answered=true"
+         * @opt_param string orderBy Optional. The order to return the questions. Valid
+         * options include 'update_time desc' and 'upvote_count desc', which will return
+         * the questions sorted descendingly by the requested field. The default sort
+         * order is 'update_time desc'.
+         * @opt_param int pageSize Optional. How many questions to fetch per page. The
+         * default and maximum `page_size` values are 10.
+         * @opt_param string pageToken Optional. If specified, the next page of
+         * questions is retrieved.
+         * @return ListQuestionsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listLocationsQuestions($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates a specific question written by the current user. (questions.patch)
+         *
+         * @param string $name Immutable. The unique name for the question.
+         * locations/questions This field will be ignored if set during question
+         * creation.
+         * @param Question $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Required. The specific fields to update. Only
+         * question text can be updated.
+         * @return Question
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, Question $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a specific question written by the current user. (questions.delete)
-     *
-     * @param string $name Required. The name of the question to delete.
-     * @param array $optParams Optional parameters.
-     * @return MybusinessqandaEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\MyBusinessQA\Resource\LocationsQuestions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Returns the paginated list of questions and some of its answers for a
-     * specified location. This operation is only valid if the specified location is
-     * verified. (questions.listLocationsQuestions)
-     *
-     * @param string $parent Required. The name of the location to fetch questions
-     * for.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int answersPerQuestion Optional. How many answers to fetch per
-     * question. The default and maximum `answers_per_question` values are 10.
-     * @opt_param string filter Optional. A filter constraining the questions to
-     * return. The only filter currently supported is "ignore_answered=true"
-     * @opt_param string orderBy Optional. The order to return the questions. Valid
-     * options include 'update_time desc' and 'upvote_count desc', which will return
-     * the questions sorted descendingly by the requested field. The default sort
-     * order is 'update_time desc'.
-     * @opt_param int pageSize Optional. How many questions to fetch per page. The
-     * default and maximum `page_size` values are 10.
-     * @opt_param string pageToken Optional. If specified, the next page of
-     * questions is retrieved.
-     * @return ListQuestionsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listLocationsQuestions($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates a specific question written by the current user. (questions.patch)
-     *
-     * @param string $name Immutable. The unique name for the question.
-     * locations/questions This field will be ignored if set during question
-     * creation.
-     * @param Question $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Required. The specific fields to update. Only
-     * question text can be updated.
-     * @return Question
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, Question $postBody, $optParams = [])
+    class Google_Service_MyBusinessQA_Resource_LocationsQuestions extends \Google\Service\MyBusinessQA\Resource\LocationsQuestions
     {
     }
 }

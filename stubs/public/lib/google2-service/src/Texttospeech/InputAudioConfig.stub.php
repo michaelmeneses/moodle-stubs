@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Texttospeech;
-
-class InputAudioConfig extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $audioEncoding;
-    /**
-     * @var int
-     */
-    public $sampleRateHertz;
-    /**
-     * @param string
-     */
-    public function setAudioEncoding($audioEncoding)
+namespace Google\Service\Texttospeech {
+    class InputAudioConfig extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $audioEncoding;
+        /**
+         * @var int
+         */
+        public $sampleRateHertz;
+        /**
+         * @param string
+         */
+        public function setAudioEncoding($audioEncoding)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAudioEncoding()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setSampleRateHertz($sampleRateHertz)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSampleRateHertz()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Texttospeech\InputAudioConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAudioEncoding()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setSampleRateHertz($sampleRateHertz)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSampleRateHertz()
+    class Google_Service_Texttospeech_InputAudioConfig extends \Google\Service\Texttospeech\InputAudioConfig
     {
     }
 }

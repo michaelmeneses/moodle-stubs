@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class CloudAiLargeModelsVisionVideo extends \Google\Model
-{
-    /**
-     * Base 64 encoded video bytes.
-     *
-     * @var string
-     */
-    public $encodedVideo;
-    /**
-     * Video encoding, for example "video/mp4".
-     *
-     * @var string
-     */
-    public $encoding;
-    /**
-     * Text/Expanded text input for Help Me Write.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * Path to another storage (typically Google Cloud Storage).
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Raw bytes.
-     *
-     * @var string
-     */
-    public $video;
-    /**
-     * Base 64 encoded video bytes.
-     *
-     * @param string $encodedVideo
-     */
-    public function setEncodedVideo($encodedVideo)
+namespace Google\Service\Aiplatform {
+    class CloudAiLargeModelsVisionVideo extends \Google\Model
     {
+        /**
+         * Base 64 encoded video bytes.
+         *
+         * @var string
+         */
+        public $encodedVideo;
+        /**
+         * Video encoding, for example "video/mp4".
+         *
+         * @var string
+         */
+        public $encoding;
+        /**
+         * Text/Expanded text input for Help Me Write.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * Path to another storage (typically Google Cloud Storage).
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Raw bytes.
+         *
+         * @var string
+         */
+        public $video;
+        /**
+         * Base 64 encoded video bytes.
+         *
+         * @param string $encodedVideo
+         */
+        public function setEncodedVideo($encodedVideo)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEncodedVideo()
+        {
+        }
+        /**
+         * Video encoding, for example "video/mp4".
+         *
+         * @param string $encoding
+         */
+        public function setEncoding($encoding)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEncoding()
+        {
+        }
+        /**
+         * Text/Expanded text input for Help Me Write.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
+        /**
+         * Path to another storage (typically Google Cloud Storage).
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
+        /**
+         * Raw bytes.
+         *
+         * @param string $video
+         */
+        public function setVideo($video)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVideo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\CloudAiLargeModelsVisionVideo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEncodedVideo()
-    {
-    }
-    /**
-     * Video encoding, for example "video/mp4".
-     *
-     * @param string $encoding
-     */
-    public function setEncoding($encoding)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEncoding()
-    {
-    }
-    /**
-     * Text/Expanded text input for Help Me Write.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
-    {
-    }
-    /**
-     * Path to another storage (typically Google Cloud Storage).
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
-    {
-    }
-    /**
-     * Raw bytes.
-     *
-     * @param string $video
-     */
-    public function setVideo($video)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVideo()
+    class Google_Service_Aiplatform_CloudAiLargeModelsVisionVideo extends \Google\Service\Aiplatform\CloudAiLargeModelsVisionVideo
     {
     }
 }

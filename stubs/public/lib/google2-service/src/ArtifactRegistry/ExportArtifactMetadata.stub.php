@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class ExportArtifactMetadata extends \Google\Collection
-{
-    protected $collection_key = 'exportedFiles';
-    protected $exportedFilesType = ExportedFile::class;
-    protected $exportedFilesDataType = 'array';
-    /**
-     * The exported artifact files.
-     *
-     * @param ExportedFile[] $exportedFiles
-     */
-    public function setExportedFiles($exportedFiles)
+namespace Google\Service\ArtifactRegistry {
+    class ExportArtifactMetadata extends \Google\Collection
     {
+        protected $collection_key = 'exportedFiles';
+        protected $exportedFilesType = ExportedFile::class;
+        protected $exportedFilesDataType = 'array';
+        /**
+         * The exported artifact files.
+         *
+         * @param ExportedFile[] $exportedFiles
+         */
+        public function setExportedFiles($exportedFiles)
+        {
+        }
+        /**
+         * @return ExportedFile[]
+         */
+        public function getExportedFiles()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ExportedFile[]
+     * Runtime class alias of \Google\Service\ArtifactRegistry\ExportArtifactMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExportedFiles()
+    class Google_Service_ArtifactRegistry_ExportArtifactMetadata extends \Google\Service\ArtifactRegistry\ExportArtifactMetadata
     {
     }
 }

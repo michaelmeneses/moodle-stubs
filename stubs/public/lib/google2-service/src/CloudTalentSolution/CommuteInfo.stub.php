@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudTalentSolution;
-
-class CommuteInfo extends \Google\Model
-{
-    protected $jobLocationType = Location::class;
-    protected $jobLocationDataType = '';
-    /**
-     * The number of seconds required to travel to the job location from the query
-     * location. A duration of 0 seconds indicates that the job isn't reachable
-     * within the requested duration, but was returned as part of an expanded
-     * query.
-     *
-     * @var string
-     */
-    public $travelDuration;
-    /**
-     * Location used as the destination in the commute calculation.
-     *
-     * @param Location $jobLocation
-     */
-    public function setJobLocation(Location $jobLocation)
+namespace Google\Service\CloudTalentSolution {
+    class CommuteInfo extends \Google\Model
     {
+        protected $jobLocationType = Location::class;
+        protected $jobLocationDataType = '';
+        /**
+         * The number of seconds required to travel to the job location from the query
+         * location. A duration of 0 seconds indicates that the job isn't reachable
+         * within the requested duration, but was returned as part of an expanded
+         * query.
+         *
+         * @var string
+         */
+        public $travelDuration;
+        /**
+         * Location used as the destination in the commute calculation.
+         *
+         * @param Location $jobLocation
+         */
+        public function setJobLocation(Location $jobLocation)
+        {
+        }
+        /**
+         * @return Location
+         */
+        public function getJobLocation()
+        {
+        }
+        /**
+         * The number of seconds required to travel to the job location from the query
+         * location. A duration of 0 seconds indicates that the job isn't reachable
+         * within the requested duration, but was returned as part of an expanded
+         * query.
+         *
+         * @param string $travelDuration
+         */
+        public function setTravelDuration($travelDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTravelDuration()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Location
+     * Runtime class alias of \Google\Service\CloudTalentSolution\CommuteInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJobLocation()
-    {
-    }
-    /**
-     * The number of seconds required to travel to the job location from the query
-     * location. A duration of 0 seconds indicates that the job isn't reachable
-     * within the requested duration, but was returned as part of an expanded
-     * query.
-     *
-     * @param string $travelDuration
-     */
-    public function setTravelDuration($travelDuration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTravelDuration()
+    class Google_Service_CloudTalentSolution_CommuteInfo extends \Google\Service\CloudTalentSolution\CommuteInfo
     {
     }
 }

@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class MaintenancePolicy extends \Google\Model
-{
-    /**
-     * A hash identifying the version of this policy, so that updates to fields of
-     * the policy won't accidentally undo intermediate changes (and so that users
-     * of the API unaware of some fields won't accidentally remove other fields).
-     * Make a `get()` request to the cluster to get the current resource version
-     * and include it with requests to set the policy.
-     *
-     * @var string
-     */
-    public $resourceVersion;
-    protected $windowType = MaintenanceWindow::class;
-    protected $windowDataType = '';
-    /**
-     * A hash identifying the version of this policy, so that updates to fields of
-     * the policy won't accidentally undo intermediate changes (and so that users
-     * of the API unaware of some fields won't accidentally remove other fields).
-     * Make a `get()` request to the cluster to get the current resource version
-     * and include it with requests to set the policy.
-     *
-     * @param string $resourceVersion
-     */
-    public function setResourceVersion($resourceVersion)
+namespace Google\Service\Container {
+    class MaintenancePolicy extends \Google\Model
     {
+        /**
+         * A hash identifying the version of this policy, so that updates to fields of
+         * the policy won't accidentally undo intermediate changes (and so that users
+         * of the API unaware of some fields won't accidentally remove other fields).
+         * Make a `get()` request to the cluster to get the current resource version
+         * and include it with requests to set the policy.
+         *
+         * @var string
+         */
+        public $resourceVersion;
+        protected $windowType = MaintenanceWindow::class;
+        protected $windowDataType = '';
+        /**
+         * A hash identifying the version of this policy, so that updates to fields of
+         * the policy won't accidentally undo intermediate changes (and so that users
+         * of the API unaware of some fields won't accidentally remove other fields).
+         * Make a `get()` request to the cluster to get the current resource version
+         * and include it with requests to set the policy.
+         *
+         * @param string $resourceVersion
+         */
+        public function setResourceVersion($resourceVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceVersion()
+        {
+        }
+        /**
+         * Specifies the maintenance window in which maintenance may be performed.
+         *
+         * @param MaintenanceWindow $window
+         */
+        public function setWindow(MaintenanceWindow $window)
+        {
+        }
+        /**
+         * @return MaintenanceWindow
+         */
+        public function getWindow()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Container\MaintenancePolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResourceVersion()
-    {
-    }
-    /**
-     * Specifies the maintenance window in which maintenance may be performed.
-     *
-     * @param MaintenanceWindow $window
-     */
-    public function setWindow(MaintenanceWindow $window)
-    {
-    }
-    /**
-     * @return MaintenanceWindow
-     */
-    public function getWindow()
+    class Google_Service_Container_MaintenancePolicy extends \Google\Service\Container\MaintenancePolicy
     {
     }
 }

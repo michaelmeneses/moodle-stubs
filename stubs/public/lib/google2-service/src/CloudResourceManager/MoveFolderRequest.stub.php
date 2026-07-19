@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudResourceManager;
-
-class MoveFolderRequest extends \Google\Model
-{
-    /**
-     * Required. The resource name of the folder or organization which should be
-     * the folder's new parent. Must be of the form `folders/{folder_id}` or
-     * `organizations/{org_id}`.
-     *
-     * @var string
-     */
-    public $destinationParent;
-    /**
-     * Required. The resource name of the folder or organization which should be
-     * the folder's new parent. Must be of the form `folders/{folder_id}` or
-     * `organizations/{org_id}`.
-     *
-     * @param string $destinationParent
-     */
-    public function setDestinationParent($destinationParent)
+namespace Google\Service\CloudResourceManager {
+    class MoveFolderRequest extends \Google\Model
     {
+        /**
+         * Required. The resource name of the folder or organization which should be
+         * the folder's new parent. Must be of the form `folders/{folder_id}` or
+         * `organizations/{org_id}`.
+         *
+         * @var string
+         */
+        public $destinationParent;
+        /**
+         * Required. The resource name of the folder or organization which should be
+         * the folder's new parent. Must be of the form `folders/{folder_id}` or
+         * `organizations/{org_id}`.
+         *
+         * @param string $destinationParent
+         */
+        public function setDestinationParent($destinationParent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestinationParent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudResourceManager\MoveFolderRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDestinationParent()
+    class Google_Service_CloudResourceManager_MoveFolderRequest extends \Google\Service\CloudResourceManager\MoveFolderRequest
     {
     }
 }

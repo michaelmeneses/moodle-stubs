@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class DenyMaintenancePeriod extends \Google\Model
-{
-    /**
-     * "deny maintenance period" end date. If the year of the end date is empty,
-     * the year of the start date also must be empty. In this case, it means the
-     * no maintenance interval recurs every year. The date is in format yyyy-mm-dd
-     * i.e., 2020-11-01, or mm-dd, i.e., 11-01
-     *
-     * @var string
-     */
-    public $endDate;
-    /**
-     * "deny maintenance period" start date. If the year of the start date is
-     * empty, the year of the end date also must be empty. In this case, it means
-     * the deny maintenance period recurs every year. The date is in format yyyy-
-     * mm-dd i.e., 2020-11-01, or mm-dd, i.e., 11-01
-     *
-     * @var string
-     */
-    public $startDate;
-    /**
-     * Time in UTC when the "deny maintenance period" starts on start_date and
-     * ends on end_date. The time is in format: HH:mm:SS, i.e., 00:00:00
-     *
-     * @var string
-     */
-    public $time;
-    /**
-     * "deny maintenance period" end date. If the year of the end date is empty,
-     * the year of the start date also must be empty. In this case, it means the
-     * no maintenance interval recurs every year. The date is in format yyyy-mm-dd
-     * i.e., 2020-11-01, or mm-dd, i.e., 11-01
-     *
-     * @param string $endDate
-     */
-    public function setEndDate($endDate)
+namespace Google\Service\SQLAdmin {
+    class DenyMaintenancePeriod extends \Google\Model
     {
+        /**
+         * "deny maintenance period" end date. If the year of the end date is empty,
+         * the year of the start date also must be empty. In this case, it means the
+         * no maintenance interval recurs every year. The date is in format yyyy-mm-dd
+         * i.e., 2020-11-01, or mm-dd, i.e., 11-01
+         *
+         * @var string
+         */
+        public $endDate;
+        /**
+         * "deny maintenance period" start date. If the year of the start date is
+         * empty, the year of the end date also must be empty. In this case, it means
+         * the deny maintenance period recurs every year. The date is in format yyyy-
+         * mm-dd i.e., 2020-11-01, or mm-dd, i.e., 11-01
+         *
+         * @var string
+         */
+        public $startDate;
+        /**
+         * Time in UTC when the "deny maintenance period" starts on start_date and
+         * ends on end_date. The time is in format: HH:mm:SS, i.e., 00:00:00
+         *
+         * @var string
+         */
+        public $time;
+        /**
+         * "deny maintenance period" end date. If the year of the end date is empty,
+         * the year of the start date also must be empty. In this case, it means the
+         * no maintenance interval recurs every year. The date is in format yyyy-mm-dd
+         * i.e., 2020-11-01, or mm-dd, i.e., 11-01
+         *
+         * @param string $endDate
+         */
+        public function setEndDate($endDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndDate()
+        {
+        }
+        /**
+         * "deny maintenance period" start date. If the year of the start date is
+         * empty, the year of the end date also must be empty. In this case, it means
+         * the deny maintenance period recurs every year. The date is in format yyyy-
+         * mm-dd i.e., 2020-11-01, or mm-dd, i.e., 11-01
+         *
+         * @param string $startDate
+         */
+        public function setStartDate($startDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartDate()
+        {
+        }
+        /**
+         * Time in UTC when the "deny maintenance period" starts on start_date and
+         * ends on end_date. The time is in format: HH:mm:SS, i.e., 00:00:00
+         *
+         * @param string $time
+         */
+        public function setTime($time)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SQLAdmin\DenyMaintenancePeriod registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndDate()
-    {
-    }
-    /**
-     * "deny maintenance period" start date. If the year of the start date is
-     * empty, the year of the end date also must be empty. In this case, it means
-     * the deny maintenance period recurs every year. The date is in format yyyy-
-     * mm-dd i.e., 2020-11-01, or mm-dd, i.e., 11-01
-     *
-     * @param string $startDate
-     */
-    public function setStartDate($startDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartDate()
-    {
-    }
-    /**
-     * Time in UTC when the "deny maintenance period" starts on start_date and
-     * ends on end_date. The time is in format: HH:mm:SS, i.e., 00:00:00
-     *
-     * @param string $time
-     */
-    public function setTime($time)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTime()
+    class Google_Service_SQLAdmin_DenyMaintenancePeriod extends \Google\Service\SQLAdmin\DenyMaintenancePeriod
     {
     }
 }

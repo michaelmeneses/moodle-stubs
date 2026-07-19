@@ -29,6 +29,12 @@
  */
 namespace mod_lti\output;
 
+use moodle_url;
+use renderable;
+use templatable;
+use renderer_base;
+use stdClass;
+use help_icon;
 /**
  * Class containing data for tool_configure page
  *

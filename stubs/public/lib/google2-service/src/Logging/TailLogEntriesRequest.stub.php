@@ -21,97 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Logging;
-
-class TailLogEntriesRequest extends \Google\Collection
-{
-    protected $collection_key = 'resourceNames';
-    /**
-     * Optional. The amount of time to buffer log entries at the server before
-     * being returned to prevent out of order results due to late arriving log
-     * entries. Valid values are between 0-60000 milliseconds. Defaults to 2000
-     * milliseconds.
-     *
-     * @var string
-     */
-    public $bufferWindow;
-    /**
-     * Optional. Only log entries that match the filter are returned. An empty
-     * filter matches all log entries in the resources listed in resource_names.
-     * Referencing a parent resource that is not listed in resource_names will
-     * cause the filter to return no results. The maximum length of a filter is
-     * 20,000 characters.
-     *
-     * @var string
-     */
-    public $filter;
-    /**
-     * Required. Name of a parent resource from which to retrieve log entries:
-     * projects/[PROJECT_ID] organizations/[ORGANIZATION_ID]
-     * billingAccounts/[BILLING_ACCOUNT_ID] folders/[FOLDER_ID]May alternatively
-     * be one or more views: projects/[PROJECT_ID]/locations/[LOCATION_ID]/buckets
-     * /[BUCKET_ID]/views/[VIEW_ID] organizations/[ORGANIZATION_ID]/locations/[LOC
-     * ATION_ID]/buckets/[BUCKET_ID]/views/[VIEW_ID] billingAccounts/[BILLING_ACCO
-     * UNT_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]/views/[VIEW_ID] folders
-     * /[FOLDER_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]/views/[VIEW_ID]
-     *
-     * @var string[]
-     */
-    public $resourceNames;
-    /**
-     * Optional. The amount of time to buffer log entries at the server before
-     * being returned to prevent out of order results due to late arriving log
-     * entries. Valid values are between 0-60000 milliseconds. Defaults to 2000
-     * milliseconds.
-     *
-     * @param string $bufferWindow
-     */
-    public function setBufferWindow($bufferWindow)
+namespace Google\Service\Logging {
+    class TailLogEntriesRequest extends \Google\Collection
     {
+        protected $collection_key = 'resourceNames';
+        /**
+         * Optional. The amount of time to buffer log entries at the server before
+         * being returned to prevent out of order results due to late arriving log
+         * entries. Valid values are between 0-60000 milliseconds. Defaults to 2000
+         * milliseconds.
+         *
+         * @var string
+         */
+        public $bufferWindow;
+        /**
+         * Optional. Only log entries that match the filter are returned. An empty
+         * filter matches all log entries in the resources listed in resource_names.
+         * Referencing a parent resource that is not listed in resource_names will
+         * cause the filter to return no results. The maximum length of a filter is
+         * 20,000 characters.
+         *
+         * @var string
+         */
+        public $filter;
+        /**
+         * Required. Name of a parent resource from which to retrieve log entries:
+         * projects/[PROJECT_ID] organizations/[ORGANIZATION_ID]
+         * billingAccounts/[BILLING_ACCOUNT_ID] folders/[FOLDER_ID]May alternatively
+         * be one or more views: projects/[PROJECT_ID]/locations/[LOCATION_ID]/buckets
+         * /[BUCKET_ID]/views/[VIEW_ID] organizations/[ORGANIZATION_ID]/locations/[LOC
+         * ATION_ID]/buckets/[BUCKET_ID]/views/[VIEW_ID] billingAccounts/[BILLING_ACCO
+         * UNT_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]/views/[VIEW_ID] folders
+         * /[FOLDER_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]/views/[VIEW_ID]
+         *
+         * @var string[]
+         */
+        public $resourceNames;
+        /**
+         * Optional. The amount of time to buffer log entries at the server before
+         * being returned to prevent out of order results due to late arriving log
+         * entries. Valid values are between 0-60000 milliseconds. Defaults to 2000
+         * milliseconds.
+         *
+         * @param string $bufferWindow
+         */
+        public function setBufferWindow($bufferWindow)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBufferWindow()
+        {
+        }
+        /**
+         * Optional. Only log entries that match the filter are returned. An empty
+         * filter matches all log entries in the resources listed in resource_names.
+         * Referencing a parent resource that is not listed in resource_names will
+         * cause the filter to return no results. The maximum length of a filter is
+         * 20,000 characters.
+         *
+         * @param string $filter
+         */
+        public function setFilter($filter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilter()
+        {
+        }
+        /**
+         * Required. Name of a parent resource from which to retrieve log entries:
+         * projects/[PROJECT_ID] organizations/[ORGANIZATION_ID]
+         * billingAccounts/[BILLING_ACCOUNT_ID] folders/[FOLDER_ID]May alternatively
+         * be one or more views: projects/[PROJECT_ID]/locations/[LOCATION_ID]/buckets
+         * /[BUCKET_ID]/views/[VIEW_ID] organizations/[ORGANIZATION_ID]/locations/[LOC
+         * ATION_ID]/buckets/[BUCKET_ID]/views/[VIEW_ID] billingAccounts/[BILLING_ACCO
+         * UNT_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]/views/[VIEW_ID] folders
+         * /[FOLDER_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]/views/[VIEW_ID]
+         *
+         * @param string[] $resourceNames
+         */
+        public function setResourceNames($resourceNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getResourceNames()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Logging\TailLogEntriesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBufferWindow()
-    {
-    }
-    /**
-     * Optional. Only log entries that match the filter are returned. An empty
-     * filter matches all log entries in the resources listed in resource_names.
-     * Referencing a parent resource that is not listed in resource_names will
-     * cause the filter to return no results. The maximum length of a filter is
-     * 20,000 characters.
-     *
-     * @param string $filter
-     */
-    public function setFilter($filter)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFilter()
-    {
-    }
-    /**
-     * Required. Name of a parent resource from which to retrieve log entries:
-     * projects/[PROJECT_ID] organizations/[ORGANIZATION_ID]
-     * billingAccounts/[BILLING_ACCOUNT_ID] folders/[FOLDER_ID]May alternatively
-     * be one or more views: projects/[PROJECT_ID]/locations/[LOCATION_ID]/buckets
-     * /[BUCKET_ID]/views/[VIEW_ID] organizations/[ORGANIZATION_ID]/locations/[LOC
-     * ATION_ID]/buckets/[BUCKET_ID]/views/[VIEW_ID] billingAccounts/[BILLING_ACCO
-     * UNT_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]/views/[VIEW_ID] folders
-     * /[FOLDER_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]/views/[VIEW_ID]
-     *
-     * @param string[] $resourceNames
-     */
-    public function setResourceNames($resourceNames)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getResourceNames()
+    class Google_Service_Logging_TailLogEntriesRequest extends \Google\Service\Logging\TailLogEntriesRequest
     {
     }
 }

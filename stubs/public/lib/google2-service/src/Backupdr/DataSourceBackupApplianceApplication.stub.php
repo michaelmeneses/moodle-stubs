@@ -21,148 +21,157 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class DataSourceBackupApplianceApplication extends \Google\Model
-{
-    /**
-     * Appliance Id of the Backup Appliance.
-     *
-     * @var string
-     */
-    public $applianceId;
-    /**
-     * The appid field of the application within the Backup Appliance.
-     *
-     * @var string
-     */
-    public $applicationId;
-    /**
-     * The name of the Application as known to the Backup Appliance.
-     *
-     * @var string
-     */
-    public $applicationName;
-    /**
-     * Appliance name.
-     *
-     * @var string
-     */
-    public $backupAppliance;
-    /**
-     * Hostid of the application host.
-     *
-     * @var string
-     */
-    public $hostId;
-    /**
-     * Hostname of the host where the application is running.
-     *
-     * @var string
-     */
-    public $hostname;
-    /**
-     * The type of the application. e.g. VMBackup
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Appliance Id of the Backup Appliance.
-     *
-     * @param string $applianceId
-     */
-    public function setApplianceId($applianceId)
+namespace Google\Service\Backupdr {
+    class DataSourceBackupApplianceApplication extends \Google\Model
     {
+        /**
+         * Appliance Id of the Backup Appliance.
+         *
+         * @var string
+         */
+        public $applianceId;
+        /**
+         * The appid field of the application within the Backup Appliance.
+         *
+         * @var string
+         */
+        public $applicationId;
+        /**
+         * The name of the Application as known to the Backup Appliance.
+         *
+         * @var string
+         */
+        public $applicationName;
+        /**
+         * Appliance name.
+         *
+         * @var string
+         */
+        public $backupAppliance;
+        /**
+         * Hostid of the application host.
+         *
+         * @var string
+         */
+        public $hostId;
+        /**
+         * Hostname of the host where the application is running.
+         *
+         * @var string
+         */
+        public $hostname;
+        /**
+         * The type of the application. e.g. VMBackup
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Appliance Id of the Backup Appliance.
+         *
+         * @param string $applianceId
+         */
+        public function setApplianceId($applianceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApplianceId()
+        {
+        }
+        /**
+         * The appid field of the application within the Backup Appliance.
+         *
+         * @param string $applicationId
+         */
+        public function setApplicationId($applicationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApplicationId()
+        {
+        }
+        /**
+         * The name of the Application as known to the Backup Appliance.
+         *
+         * @param string $applicationName
+         */
+        public function setApplicationName($applicationName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApplicationName()
+        {
+        }
+        /**
+         * Appliance name.
+         *
+         * @param string $backupAppliance
+         */
+        public function setBackupAppliance($backupAppliance)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBackupAppliance()
+        {
+        }
+        /**
+         * Hostid of the application host.
+         *
+         * @param string $hostId
+         */
+        public function setHostId($hostId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHostId()
+        {
+        }
+        /**
+         * Hostname of the host where the application is running.
+         *
+         * @param string $hostname
+         */
+        public function setHostname($hostname)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHostname()
+        {
+        }
+        /**
+         * The type of the application. e.g. VMBackup
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Backupdr\DataSourceBackupApplianceApplication registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApplianceId()
-    {
-    }
-    /**
-     * The appid field of the application within the Backup Appliance.
-     *
-     * @param string $applicationId
-     */
-    public function setApplicationId($applicationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getApplicationId()
-    {
-    }
-    /**
-     * The name of the Application as known to the Backup Appliance.
-     *
-     * @param string $applicationName
-     */
-    public function setApplicationName($applicationName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getApplicationName()
-    {
-    }
-    /**
-     * Appliance name.
-     *
-     * @param string $backupAppliance
-     */
-    public function setBackupAppliance($backupAppliance)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBackupAppliance()
-    {
-    }
-    /**
-     * Hostid of the application host.
-     *
-     * @param string $hostId
-     */
-    public function setHostId($hostId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHostId()
-    {
-    }
-    /**
-     * Hostname of the host where the application is running.
-     *
-     * @param string $hostname
-     */
-    public function setHostname($hostname)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHostname()
-    {
-    }
-    /**
-     * The type of the application. e.g. VMBackup
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Backupdr_DataSourceBackupApplianceApplication extends \Google\Service\Backupdr\DataSourceBackupApplianceApplication
     {
     }
 }

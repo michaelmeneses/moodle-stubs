@@ -21,46 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSupport\Resource;
-
-/**
- * The "comments" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudsupportService = new Google\Service\CloudSupport(...);
- *   $comments = $cloudsupportService->projects_cases_comments;
- *  </code>
- */
-class ProjectsCasesComments extends \Google\Service\Resource
-{
+namespace Google\Service\CloudSupport\Resource {
+    use Google\Service\CloudSupport\Comment;
+    use Google\Service\CloudSupport\ListCommentsResponse;
     /**
-     * Add a new comment to the specified Case. The comment object must have the
-     * following fields set: body. (comments.create)
-     *
-     * @param string $parent Required. The resource name of Case to which this
-     * comment should be added.
-     * @param Comment $postBody
-     * @param array $optParams Optional parameters.
-     * @return Comment
+     * The "comments" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudsupportService = new Google\Service\CloudSupport(...);
+     *   $comments = $cloudsupportService->projects_cases_comments;
+     *  </code>
      */
-    public function create($parent, Comment $postBody, $optParams = [])
+    class ProjectsCasesComments extends \Google\Service\Resource
     {
+        /**
+         * Add a new comment to the specified Case. The comment object must have the
+         * following fields set: body. (comments.create)
+         *
+         * @param string $parent Required. The resource name of Case to which this
+         * comment should be added.
+         * @param Comment $postBody
+         * @param array $optParams Optional parameters.
+         * @return Comment
+         */
+        public function create($parent, Comment $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Retrieve all Comments associated with the Case object.
+         * (comments.listProjectsCasesComments)
+         *
+         * @param string $parent Required. The resource name of Case object for which
+         * comments should be listed.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of comments fetched with each
+         * request. Defaults to 10.
+         * @opt_param string pageToken A token identifying the page of results to
+         * return. If unspecified, the first page is retrieved.
+         * @return ListCommentsResponse
+         */
+        public function listProjectsCasesComments($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieve all Comments associated with the Case object.
-     * (comments.listProjectsCasesComments)
-     *
-     * @param string $parent Required. The resource name of Case object for which
-     * comments should be listed.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of comments fetched with each
-     * request. Defaults to 10.
-     * @opt_param string pageToken A token identifying the page of results to
-     * return. If unspecified, the first page is retrieved.
-     * @return ListCommentsResponse
+     * Runtime class alias of \Google\Service\CloudSupport\Resource\ProjectsCasesComments registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listProjectsCasesComments($parent, $optParams = [])
+    class Google_Service_CloudSupport_Resource_ProjectsCasesComments extends \Google\Service\CloudSupport\Resource\ProjectsCasesComments
     {
     }
 }

@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ListApiProxiesResponse extends \Google\Collection
-{
-    protected $collection_key = 'proxies';
-    protected $proxiesType = GoogleCloudApigeeV1ApiProxy::class;
-    protected $proxiesDataType = 'array';
-    /**
-     * @param GoogleCloudApigeeV1ApiProxy[] $proxies
-     */
-    public function setProxies($proxies)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ListApiProxiesResponse extends \Google\Collection
     {
+        protected $collection_key = 'proxies';
+        protected $proxiesType = GoogleCloudApigeeV1ApiProxy::class;
+        protected $proxiesDataType = 'array';
+        /**
+         * @param GoogleCloudApigeeV1ApiProxy[] $proxies
+         */
+        public function setProxies($proxies)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1ApiProxy[]
+         */
+        public function getProxies()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1ApiProxy[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ListApiProxiesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProxies()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ListApiProxiesResponse extends \Google\Service\Apigee\GoogleCloudApigeeV1ListApiProxiesResponse
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1EvaluationRunMetricRubricBasedMetricSpecRepeatedRubrics extends \Google\Collection
-{
-    protected $collection_key = 'rubrics';
-    protected $rubricsType = GoogleCloudAiplatformV1Rubric::class;
-    protected $rubricsDataType = 'array';
-    /**
-     * The list of rubrics.
-     *
-     * @param GoogleCloudAiplatformV1Rubric[] $rubrics
-     */
-    public function setRubrics($rubrics)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1EvaluationRunMetricRubricBasedMetricSpecRepeatedRubrics extends \Google\Collection
     {
+        protected $collection_key = 'rubrics';
+        protected $rubricsType = GoogleCloudAiplatformV1Rubric::class;
+        protected $rubricsDataType = 'array';
+        /**
+         * The list of rubrics.
+         *
+         * @param GoogleCloudAiplatformV1Rubric[] $rubrics
+         */
+        public function setRubrics($rubrics)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Rubric[]
+         */
+        public function getRubrics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1Rubric[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationRunMetricRubricBasedMetricSpecRepeatedRubrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRubrics()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1EvaluationRunMetricRubricBasedMetricSpecRepeatedRubrics extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationRunMetricRubricBasedMetricSpecRepeatedRubrics
     {
     }
 }

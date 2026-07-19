@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class GoogleAppsCardV1ExpressionDataCondition extends \Google\Model
-{
-    /**
-     * Unspecified condition type.
-     */
-    public const CONDITION_TYPE_CONDITION_TYPE_UNSPECIFIED = 'CONDITION_TYPE_UNSPECIFIED';
-    /**
-     * The expression evaluation was successful.
-     */
-    public const CONDITION_TYPE_EXPRESSION_EVALUATION_SUCCESS = 'EXPRESSION_EVALUATION_SUCCESS';
-    /**
-     * The expression evaluation was unsuccessful.
-     */
-    public const CONDITION_TYPE_EXPRESSION_EVALUATION_FAILURE = 'EXPRESSION_EVALUATION_FAILURE';
-    /**
-     * The type of the condition.
-     *
-     * @var string
-     */
-    public $conditionType;
-    /**
-     * The type of the condition.
-     *
-     * Accepted values: CONDITION_TYPE_UNSPECIFIED, EXPRESSION_EVALUATION_SUCCESS,
-     * EXPRESSION_EVALUATION_FAILURE
-     *
-     * @param self::CONDITION_TYPE_* $conditionType
-     */
-    public function setConditionType($conditionType)
+namespace Google\Service\HangoutsChat {
+    class GoogleAppsCardV1ExpressionDataCondition extends \Google\Model
     {
+        /**
+         * Unspecified condition type.
+         */
+        public const CONDITION_TYPE_CONDITION_TYPE_UNSPECIFIED = 'CONDITION_TYPE_UNSPECIFIED';
+        /**
+         * The expression evaluation was successful.
+         */
+        public const CONDITION_TYPE_EXPRESSION_EVALUATION_SUCCESS = 'EXPRESSION_EVALUATION_SUCCESS';
+        /**
+         * The expression evaluation was unsuccessful.
+         */
+        public const CONDITION_TYPE_EXPRESSION_EVALUATION_FAILURE = 'EXPRESSION_EVALUATION_FAILURE';
+        /**
+         * The type of the condition.
+         *
+         * @var string
+         */
+        public $conditionType;
+        /**
+         * The type of the condition.
+         *
+         * Accepted values: CONDITION_TYPE_UNSPECIFIED, EXPRESSION_EVALUATION_SUCCESS,
+         * EXPRESSION_EVALUATION_FAILURE
+         *
+         * @param self::CONDITION_TYPE_* $conditionType
+         */
+        public function setConditionType($conditionType)
+        {
+        }
+        /**
+         * @return self::CONDITION_TYPE_*
+         */
+        public function getConditionType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CONDITION_TYPE_*
+     * Runtime class alias of \Google\Service\HangoutsChat\GoogleAppsCardV1ExpressionDataCondition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConditionType()
+    class Google_Service_HangoutsChat_GoogleAppsCardV1ExpressionDataCondition extends \Google\Service\HangoutsChat\GoogleAppsCardV1ExpressionDataCondition
     {
     }
 }

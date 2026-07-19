@@ -21,102 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class Mutation extends \Google\Model
-{
-    protected $deleteType = Delete::class;
-    protected $deleteDataType = '';
-    protected $insertType = Write::class;
-    protected $insertDataType = '';
-    protected $insertOrUpdateType = Write::class;
-    protected $insertOrUpdateDataType = '';
-    protected $replaceType = Write::class;
-    protected $replaceDataType = '';
-    protected $updateType = Write::class;
-    protected $updateDataType = '';
-    /**
-     * Delete rows from a table. Succeeds whether or not the named rows were
-     * present.
-     *
-     * @param Delete $delete
-     */
-    public function setDelete(Delete $delete)
+namespace Google\Service\Spanner {
+    class Mutation extends \Google\Model
     {
+        protected $deleteType = Delete::class;
+        protected $deleteDataType = '';
+        protected $insertType = Write::class;
+        protected $insertDataType = '';
+        protected $insertOrUpdateType = Write::class;
+        protected $insertOrUpdateDataType = '';
+        protected $replaceType = Write::class;
+        protected $replaceDataType = '';
+        protected $updateType = Write::class;
+        protected $updateDataType = '';
+        /**
+         * Delete rows from a table. Succeeds whether or not the named rows were
+         * present.
+         *
+         * @param Delete $delete
+         */
+        public function setDelete(Delete $delete)
+        {
+        }
+        /**
+         * @return Delete
+         */
+        public function getDelete()
+        {
+        }
+        /**
+         * Insert new rows in a table. If any of the rows already exist, the write or
+         * transaction fails with error `ALREADY_EXISTS`.
+         *
+         * @param Write $insert
+         */
+        public function setInsert(Write $insert)
+        {
+        }
+        /**
+         * @return Write
+         */
+        public function getInsert()
+        {
+        }
+        /**
+         * Like insert, except that if the row already exists, then its column values
+         * are overwritten with the ones provided. Any column values not explicitly
+         * written are preserved. When using insert_or_update, just as when using
+         * insert, all `NOT NULL` columns in the table must be given a value. This
+         * holds true even when the row already exists and will therefore actually be
+         * updated.
+         *
+         * @param Write $insertOrUpdate
+         */
+        public function setInsertOrUpdate(Write $insertOrUpdate)
+        {
+        }
+        /**
+         * @return Write
+         */
+        public function getInsertOrUpdate()
+        {
+        }
+        /**
+         * Like insert, except that if the row already exists, it is deleted, and the
+         * column values provided are inserted instead. Unlike insert_or_update, this
+         * means any values not explicitly written become `NULL`. In an interleaved
+         * table, if you create the child table with the `ON DELETE CASCADE`
+         * annotation, then replacing a parent row also deletes the child rows.
+         * Otherwise, you must delete the child rows before you replace the parent
+         * row.
+         *
+         * @param Write $replace
+         */
+        public function setReplace(Write $replace)
+        {
+        }
+        /**
+         * @return Write
+         */
+        public function getReplace()
+        {
+        }
+        /**
+         * Update existing rows in a table. If any of the rows does not already exist,
+         * the transaction fails with error `NOT_FOUND`.
+         *
+         * @param Write $update
+         */
+        public function setUpdate(Write $update)
+        {
+        }
+        /**
+         * @return Write
+         */
+        public function getUpdate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Delete
+     * Runtime class alias of \Google\Service\Spanner\Mutation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDelete()
-    {
-    }
-    /**
-     * Insert new rows in a table. If any of the rows already exist, the write or
-     * transaction fails with error `ALREADY_EXISTS`.
-     *
-     * @param Write $insert
-     */
-    public function setInsert(Write $insert)
-    {
-    }
-    /**
-     * @return Write
-     */
-    public function getInsert()
-    {
-    }
-    /**
-     * Like insert, except that if the row already exists, then its column values
-     * are overwritten with the ones provided. Any column values not explicitly
-     * written are preserved. When using insert_or_update, just as when using
-     * insert, all `NOT NULL` columns in the table must be given a value. This
-     * holds true even when the row already exists and will therefore actually be
-     * updated.
-     *
-     * @param Write $insertOrUpdate
-     */
-    public function setInsertOrUpdate(Write $insertOrUpdate)
-    {
-    }
-    /**
-     * @return Write
-     */
-    public function getInsertOrUpdate()
-    {
-    }
-    /**
-     * Like insert, except that if the row already exists, it is deleted, and the
-     * column values provided are inserted instead. Unlike insert_or_update, this
-     * means any values not explicitly written become `NULL`. In an interleaved
-     * table, if you create the child table with the `ON DELETE CASCADE`
-     * annotation, then replacing a parent row also deletes the child rows.
-     * Otherwise, you must delete the child rows before you replace the parent
-     * row.
-     *
-     * @param Write $replace
-     */
-    public function setReplace(Write $replace)
-    {
-    }
-    /**
-     * @return Write
-     */
-    public function getReplace()
-    {
-    }
-    /**
-     * Update existing rows in a table. If any of the rows does not already exist,
-     * the transaction fails with error `NOT_FOUND`.
-     *
-     * @param Write $update
-     */
-    public function setUpdate(Write $update)
-    {
-    }
-    /**
-     * @return Write
-     */
-    public function getUpdate()
+    class Google_Service_Spanner_Mutation extends \Google\Service\Spanner\Mutation
     {
     }
 }

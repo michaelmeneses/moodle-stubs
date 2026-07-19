@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class UrlMapsValidateResponse extends \Google\Model
-{
-    protected $resultType = UrlMapValidationResult::class;
-    protected $resultDataType = '';
-    /**
-     * @param UrlMapValidationResult $result
-     */
-    public function setResult(UrlMapValidationResult $result)
+namespace Google\Service\Compute {
+    class UrlMapsValidateResponse extends \Google\Model
     {
+        protected $resultType = UrlMapValidationResult::class;
+        protected $resultDataType = '';
+        /**
+         * @param UrlMapValidationResult $result
+         */
+        public function setResult(UrlMapValidationResult $result)
+        {
+        }
+        /**
+         * @return UrlMapValidationResult
+         */
+        public function getResult()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return UrlMapValidationResult
+     * Runtime class alias of \Google\Service\Compute\UrlMapsValidateResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResult()
+    class Google_Service_Compute_UrlMapsValidateResponse extends \Google\Service\Compute\UrlMapsValidateResponse
     {
     }
 }

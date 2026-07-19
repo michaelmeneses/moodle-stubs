@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class RepositoryConfig extends \Google\Model
-{
-    protected $pypiRepositoryConfigType = PyPiRepositoryConfig::class;
-    protected $pypiRepositoryConfigDataType = '';
-    /**
-     * Optional. Configuration for PyPi repository.
-     *
-     * @param PyPiRepositoryConfig $pypiRepositoryConfig
-     */
-    public function setPypiRepositoryConfig(PyPiRepositoryConfig $pypiRepositoryConfig)
+namespace Google\Service\Dataproc {
+    class RepositoryConfig extends \Google\Model
     {
+        protected $pypiRepositoryConfigType = PyPiRepositoryConfig::class;
+        protected $pypiRepositoryConfigDataType = '';
+        /**
+         * Optional. Configuration for PyPi repository.
+         *
+         * @param PyPiRepositoryConfig $pypiRepositoryConfig
+         */
+        public function setPypiRepositoryConfig(PyPiRepositoryConfig $pypiRepositoryConfig)
+        {
+        }
+        /**
+         * @return PyPiRepositoryConfig
+         */
+        public function getPypiRepositoryConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PyPiRepositoryConfig
+     * Runtime class alias of \Google\Service\Dataproc\RepositoryConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPypiRepositoryConfig()
+    class Google_Service_Dataproc_RepositoryConfig extends \Google\Service\Dataproc\RepositoryConfig
     {
     }
 }

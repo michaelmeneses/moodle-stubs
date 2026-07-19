@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteFrontendMember extends \Google\Model
-{
-    protected $rosterType = AppsDynamiteFrontendRoster::class;
-    protected $rosterDataType = '';
-    protected $userType = AppsDynamiteFrontendUser::class;
-    protected $userDataType = '';
-    /**
-     * @param AppsDynamiteFrontendRoster
-     */
-    public function setRoster(AppsDynamiteFrontendRoster $roster)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteFrontendMember extends \Google\Model
     {
+        protected $rosterType = AppsDynamiteFrontendRoster::class;
+        protected $rosterDataType = '';
+        protected $userType = AppsDynamiteFrontendUser::class;
+        protected $userDataType = '';
+        /**
+         * @param AppsDynamiteFrontendRoster
+         */
+        public function setRoster(AppsDynamiteFrontendRoster $roster)
+        {
+        }
+        /**
+         * @return AppsDynamiteFrontendRoster
+         */
+        public function getRoster()
+        {
+        }
+        /**
+         * @param AppsDynamiteFrontendUser
+         */
+        public function setUser(AppsDynamiteFrontendUser $user)
+        {
+        }
+        /**
+         * @return AppsDynamiteFrontendUser
+         */
+        public function getUser()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteFrontendRoster
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteFrontendMember registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRoster()
-    {
-    }
-    /**
-     * @param AppsDynamiteFrontendUser
-     */
-    public function setUser(AppsDynamiteFrontendUser $user)
-    {
-    }
-    /**
-     * @return AppsDynamiteFrontendUser
-     */
-    public function getUser()
+    class Google_Service_CloudSearch_AppsDynamiteFrontendMember extends \Google\Service\CloudSearch\AppsDynamiteFrontendMember
     {
     }
 }

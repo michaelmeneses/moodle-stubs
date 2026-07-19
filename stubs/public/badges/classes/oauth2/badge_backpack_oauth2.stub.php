@@ -31,6 +31,7 @@
  */
 namespace core_badges\oauth2;
 
+use core\persistent;
 /**
  * Class badge_backpack_oauth2 for backpack is connected.
  *

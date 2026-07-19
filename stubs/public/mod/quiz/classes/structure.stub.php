@@ -22,6 +22,24 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_quiz;
 
+use coding_exception;
+use context_module;
+use core\context;
+use core\context\module;
+use core\exception\invalid_parameter_exception;
+use core\exception\moodle_exception;
+use core\output\inplace_editable;
+use core_question\local\bank\version_options;
+use mod_quiz\event\quiz_grade_item_created;
+use mod_quiz\event\quiz_grade_item_deleted;
+use mod_quiz\event\quiz_grade_item_updated;
+use mod_quiz\event\slot_grade_item_updated;
+use mod_quiz\event\slot_mark_updated;
+use mod_quiz\event\slot_version_updated;
+use mod_quiz\local\structure\slot_random;
+use mod_quiz\question\bank\qbank_helper;
+use mod_quiz\question\qubaids_for_quiz;
+use stdClass;
 /**
  * Quiz structure class.
  *

@@ -21,154 +21,163 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class Channel extends \Google\Model
-{
-    /**
-     * The ID of the advertiser that owns the channel.
-     *
-     * @var string
-     */
-    public $advertiserId;
-    /**
-     * Output only. The unique ID of the channel. Assigned by the system.
-     *
-     * @var string
-     */
-    public $channelId;
-    /**
-     * Required. The display name of the channel. Must be UTF-8 encoded with a
-     * maximum length of 240 bytes.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. The resource name of the channel.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Number of line items that are directly targeting this channel
-     * negatively.
-     *
-     * @var string
-     */
-    public $negativelyTargetedLineItemCount;
-    /**
-     * The ID of the partner that owns the channel.
-     *
-     * @var string
-     */
-    public $partnerId;
-    /**
-     * Output only. Number of line items that are directly targeting this channel
-     * positively.
-     *
-     * @var string
-     */
-    public $positivelyTargetedLineItemCount;
-    /**
-     * The ID of the advertiser that owns the channel.
-     *
-     * @param string $advertiserId
-     */
-    public function setAdvertiserId($advertiserId)
+namespace Google\Service\DisplayVideo {
+    class Channel extends \Google\Model
     {
+        /**
+         * The ID of the advertiser that owns the channel.
+         *
+         * @var string
+         */
+        public $advertiserId;
+        /**
+         * Output only. The unique ID of the channel. Assigned by the system.
+         *
+         * @var string
+         */
+        public $channelId;
+        /**
+         * Required. The display name of the channel. Must be UTF-8 encoded with a
+         * maximum length of 240 bytes.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. The resource name of the channel.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Number of line items that are directly targeting this channel
+         * negatively.
+         *
+         * @var string
+         */
+        public $negativelyTargetedLineItemCount;
+        /**
+         * The ID of the partner that owns the channel.
+         *
+         * @var string
+         */
+        public $partnerId;
+        /**
+         * Output only. Number of line items that are directly targeting this channel
+         * positively.
+         *
+         * @var string
+         */
+        public $positivelyTargetedLineItemCount;
+        /**
+         * The ID of the advertiser that owns the channel.
+         *
+         * @param string $advertiserId
+         */
+        public function setAdvertiserId($advertiserId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdvertiserId()
+        {
+        }
+        /**
+         * Output only. The unique ID of the channel. Assigned by the system.
+         *
+         * @param string $channelId
+         */
+        public function setChannelId($channelId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChannelId()
+        {
+        }
+        /**
+         * Required. The display name of the channel. Must be UTF-8 encoded with a
+         * maximum length of 240 bytes.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. The resource name of the channel.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Number of line items that are directly targeting this channel
+         * negatively.
+         *
+         * @param string $negativelyTargetedLineItemCount
+         */
+        public function setNegativelyTargetedLineItemCount($negativelyTargetedLineItemCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNegativelyTargetedLineItemCount()
+        {
+        }
+        /**
+         * The ID of the partner that owns the channel.
+         *
+         * @param string $partnerId
+         */
+        public function setPartnerId($partnerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPartnerId()
+        {
+        }
+        /**
+         * Output only. Number of line items that are directly targeting this channel
+         * positively.
+         *
+         * @param string $positivelyTargetedLineItemCount
+         */
+        public function setPositivelyTargetedLineItemCount($positivelyTargetedLineItemCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPositivelyTargetedLineItemCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\Channel registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdvertiserId()
-    {
-    }
-    /**
-     * Output only. The unique ID of the channel. Assigned by the system.
-     *
-     * @param string $channelId
-     */
-    public function setChannelId($channelId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getChannelId()
-    {
-    }
-    /**
-     * Required. The display name of the channel. Must be UTF-8 encoded with a
-     * maximum length of 240 bytes.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. The resource name of the channel.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Number of line items that are directly targeting this channel
-     * negatively.
-     *
-     * @param string $negativelyTargetedLineItemCount
-     */
-    public function setNegativelyTargetedLineItemCount($negativelyTargetedLineItemCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNegativelyTargetedLineItemCount()
-    {
-    }
-    /**
-     * The ID of the partner that owns the channel.
-     *
-     * @param string $partnerId
-     */
-    public function setPartnerId($partnerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPartnerId()
-    {
-    }
-    /**
-     * Output only. Number of line items that are directly targeting this channel
-     * positively.
-     *
-     * @param string $positivelyTargetedLineItemCount
-     */
-    public function setPositivelyTargetedLineItemCount($positivelyTargetedLineItemCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPositivelyTargetedLineItemCount()
+    class Google_Service_DisplayVideo_Channel extends \Google\Service\DisplayVideo\Channel
     {
     }
 }

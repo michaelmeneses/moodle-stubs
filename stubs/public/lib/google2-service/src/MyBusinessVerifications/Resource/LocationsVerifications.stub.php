@@ -21,48 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessVerifications\Resource;
-
-/**
- * The "verifications" collection of methods.
- * Typical usage is:
- *  <code>
- *   $mybusinessverificationsService = new Google\Service\MyBusinessVerifications(...);
- *   $verifications = $mybusinessverificationsService->locations_verifications;
- *  </code>
- */
-class LocationsVerifications extends \Google\Service\Resource
-{
+namespace Google\Service\MyBusinessVerifications\Resource {
+    use Google\Service\MyBusinessVerifications\CompleteVerificationRequest;
+    use Google\Service\MyBusinessVerifications\CompleteVerificationResponse;
+    use Google\Service\MyBusinessVerifications\ListVerificationsResponse;
     /**
-     * Completes a `PENDING` verification. It is only necessary for non `AUTO`
-     * verification methods. `AUTO` verification request is instantly `VERIFIED`
-     * upon creation. (verifications.complete)
-     *
-     * @param string $name Required. Resource name of the verification to complete.
-     * @param CompleteVerificationRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return CompleteVerificationResponse
-     * @throws \Google\Service\Exception
+     * The "verifications" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $mybusinessverificationsService = new Google\Service\MyBusinessVerifications(...);
+     *   $verifications = $mybusinessverificationsService->locations_verifications;
+     *  </code>
      */
-    public function complete($name, CompleteVerificationRequest $postBody, $optParams = [])
+    class LocationsVerifications extends \Google\Service\Resource
     {
+        /**
+         * Completes a `PENDING` verification. It is only necessary for non `AUTO`
+         * verification methods. `AUTO` verification request is instantly `VERIFIED`
+         * upon creation. (verifications.complete)
+         *
+         * @param string $name Required. Resource name of the verification to complete.
+         * @param CompleteVerificationRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return CompleteVerificationResponse
+         * @throws \Google\Service\Exception
+         */
+        public function complete($name, CompleteVerificationRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * List verifications of a location, ordered by create time.
+         * (verifications.listLocationsVerifications)
+         *
+         * @param string $parent Required. Resource name of the location that
+         * verification requests belong to.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize How many verification to include per page. Minimum is
+         * 1, and the default and maximum page size is 100.
+         * @opt_param string pageToken If specified, returns the next page of
+         * verifications.
+         * @return ListVerificationsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listLocationsVerifications($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * List verifications of a location, ordered by create time.
-     * (verifications.listLocationsVerifications)
-     *
-     * @param string $parent Required. Resource name of the location that
-     * verification requests belong to.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize How many verification to include per page. Minimum is
-     * 1, and the default and maximum page size is 100.
-     * @opt_param string pageToken If specified, returns the next page of
-     * verifications.
-     * @return ListVerificationsResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\MyBusinessVerifications\Resource\LocationsVerifications registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listLocationsVerifications($parent, $optParams = [])
+    class Google_Service_MyBusinessVerifications_Resource_LocationsVerifications extends \Google\Service\MyBusinessVerifications\Resource\LocationsVerifications
     {
     }
 }

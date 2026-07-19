@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3ImportEntityTypesResponse extends \Google\Collection
-{
-    protected $collection_key = 'entityTypes';
-    protected $conflictingResourcesType = GoogleCloudDialogflowCxV3ImportEntityTypesResponseConflictingResources::class;
-    protected $conflictingResourcesDataType = '';
-    /**
-     * The unique identifier of the imported entity types. Format:
-     * `projects//locations//agents//entity_types/`.
-     *
-     * @var string[]
-     */
-    public $entityTypes;
-    /**
-     * Info which resources have conflicts when REPORT_CONFLICT merge_option is
-     * set in ImportEntityTypesRequest.
-     *
-     * @param GoogleCloudDialogflowCxV3ImportEntityTypesResponseConflictingResources $conflictingResources
-     */
-    public function setConflictingResources(GoogleCloudDialogflowCxV3ImportEntityTypesResponseConflictingResources $conflictingResources)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3ImportEntityTypesResponse extends \Google\Collection
     {
+        protected $collection_key = 'entityTypes';
+        protected $conflictingResourcesType = GoogleCloudDialogflowCxV3ImportEntityTypesResponseConflictingResources::class;
+        protected $conflictingResourcesDataType = '';
+        /**
+         * The unique identifier of the imported entity types. Format:
+         * `projects//locations//agents//entity_types/`.
+         *
+         * @var string[]
+         */
+        public $entityTypes;
+        /**
+         * Info which resources have conflicts when REPORT_CONFLICT merge_option is
+         * set in ImportEntityTypesRequest.
+         *
+         * @param GoogleCloudDialogflowCxV3ImportEntityTypesResponseConflictingResources $conflictingResources
+         */
+        public function setConflictingResources(GoogleCloudDialogflowCxV3ImportEntityTypesResponseConflictingResources $conflictingResources)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3ImportEntityTypesResponseConflictingResources
+         */
+        public function getConflictingResources()
+        {
+        }
+        /**
+         * The unique identifier of the imported entity types. Format:
+         * `projects//locations//agents//entity_types/`.
+         *
+         * @param string[] $entityTypes
+         */
+        public function setEntityTypes($entityTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEntityTypes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3ImportEntityTypesResponseConflictingResources
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ImportEntityTypesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConflictingResources()
-    {
-    }
-    /**
-     * The unique identifier of the imported entity types. Format:
-     * `projects//locations//agents//entity_types/`.
-     *
-     * @param string[] $entityTypes
-     */
-    public function setEntityTypes($entityTypes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getEntityTypes()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3ImportEntityTypesResponse extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ImportEntityTypesResponse
     {
     }
 }

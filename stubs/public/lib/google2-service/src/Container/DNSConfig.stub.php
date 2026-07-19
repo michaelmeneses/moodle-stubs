@@ -21,121 +21,130 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class DNSConfig extends \Google\Model
-{
-    /**
-     * Default value
-     */
-    public const CLUSTER_DNS_PROVIDER_UNSPECIFIED = 'PROVIDER_UNSPECIFIED';
-    /**
-     * Use GKE default DNS provider(kube-dns) for DNS resolution.
-     */
-    public const CLUSTER_DNS_PLATFORM_DEFAULT = 'PLATFORM_DEFAULT';
-    /**
-     * Use CloudDNS for DNS resolution.
-     */
-    public const CLUSTER_DNS_CLOUD_DNS = 'CLOUD_DNS';
-    /**
-     * Use KubeDNS for DNS resolution.
-     */
-    public const CLUSTER_DNS_KUBE_DNS = 'KUBE_DNS';
-    /**
-     * Default value, will be inferred as cluster scope.
-     */
-    public const CLUSTER_DNS_SCOPE_DNS_SCOPE_UNSPECIFIED = 'DNS_SCOPE_UNSPECIFIED';
-    /**
-     * DNS records are accessible from within the cluster.
-     */
-    public const CLUSTER_DNS_SCOPE_CLUSTER_SCOPE = 'CLUSTER_SCOPE';
-    /**
-     * DNS records are accessible from within the VPC.
-     */
-    public const CLUSTER_DNS_SCOPE_VPC_SCOPE = 'VPC_SCOPE';
-    /**
-     * Optional. The domain used in Additive VPC scope.
-     *
-     * @var string
-     */
-    public $additiveVpcScopeDnsDomain;
-    /**
-     * cluster_dns indicates which in-cluster DNS provider should be used.
-     *
-     * @var string
-     */
-    public $clusterDns;
-    /**
-     * cluster_dns_domain is the suffix used for all cluster service records.
-     *
-     * @var string
-     */
-    public $clusterDnsDomain;
-    /**
-     * cluster_dns_scope indicates the scope of access to cluster DNS records.
-     *
-     * @var string
-     */
-    public $clusterDnsScope;
-    /**
-     * Optional. The domain used in Additive VPC scope.
-     *
-     * @param string $additiveVpcScopeDnsDomain
-     */
-    public function setAdditiveVpcScopeDnsDomain($additiveVpcScopeDnsDomain)
+namespace Google\Service\Container {
+    class DNSConfig extends \Google\Model
     {
+        /**
+         * Default value
+         */
+        public const CLUSTER_DNS_PROVIDER_UNSPECIFIED = 'PROVIDER_UNSPECIFIED';
+        /**
+         * Use GKE default DNS provider(kube-dns) for DNS resolution.
+         */
+        public const CLUSTER_DNS_PLATFORM_DEFAULT = 'PLATFORM_DEFAULT';
+        /**
+         * Use CloudDNS for DNS resolution.
+         */
+        public const CLUSTER_DNS_CLOUD_DNS = 'CLOUD_DNS';
+        /**
+         * Use KubeDNS for DNS resolution.
+         */
+        public const CLUSTER_DNS_KUBE_DNS = 'KUBE_DNS';
+        /**
+         * Default value, will be inferred as cluster scope.
+         */
+        public const CLUSTER_DNS_SCOPE_DNS_SCOPE_UNSPECIFIED = 'DNS_SCOPE_UNSPECIFIED';
+        /**
+         * DNS records are accessible from within the cluster.
+         */
+        public const CLUSTER_DNS_SCOPE_CLUSTER_SCOPE = 'CLUSTER_SCOPE';
+        /**
+         * DNS records are accessible from within the VPC.
+         */
+        public const CLUSTER_DNS_SCOPE_VPC_SCOPE = 'VPC_SCOPE';
+        /**
+         * Optional. The domain used in Additive VPC scope.
+         *
+         * @var string
+         */
+        public $additiveVpcScopeDnsDomain;
+        /**
+         * cluster_dns indicates which in-cluster DNS provider should be used.
+         *
+         * @var string
+         */
+        public $clusterDns;
+        /**
+         * cluster_dns_domain is the suffix used for all cluster service records.
+         *
+         * @var string
+         */
+        public $clusterDnsDomain;
+        /**
+         * cluster_dns_scope indicates the scope of access to cluster DNS records.
+         *
+         * @var string
+         */
+        public $clusterDnsScope;
+        /**
+         * Optional. The domain used in Additive VPC scope.
+         *
+         * @param string $additiveVpcScopeDnsDomain
+         */
+        public function setAdditiveVpcScopeDnsDomain($additiveVpcScopeDnsDomain)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdditiveVpcScopeDnsDomain()
+        {
+        }
+        /**
+         * cluster_dns indicates which in-cluster DNS provider should be used.
+         *
+         * Accepted values: PROVIDER_UNSPECIFIED, PLATFORM_DEFAULT, CLOUD_DNS,
+         * KUBE_DNS
+         *
+         * @param self::CLUSTER_DNS_* $clusterDns
+         */
+        public function setClusterDns($clusterDns)
+        {
+        }
+        /**
+         * @return self::CLUSTER_DNS_*
+         */
+        public function getClusterDns()
+        {
+        }
+        /**
+         * cluster_dns_domain is the suffix used for all cluster service records.
+         *
+         * @param string $clusterDnsDomain
+         */
+        public function setClusterDnsDomain($clusterDnsDomain)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClusterDnsDomain()
+        {
+        }
+        /**
+         * cluster_dns_scope indicates the scope of access to cluster DNS records.
+         *
+         * Accepted values: DNS_SCOPE_UNSPECIFIED, CLUSTER_SCOPE, VPC_SCOPE
+         *
+         * @param self::CLUSTER_DNS_SCOPE_* $clusterDnsScope
+         */
+        public function setClusterDnsScope($clusterDnsScope)
+        {
+        }
+        /**
+         * @return self::CLUSTER_DNS_SCOPE_*
+         */
+        public function getClusterDnsScope()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Container\DNSConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdditiveVpcScopeDnsDomain()
-    {
-    }
-    /**
-     * cluster_dns indicates which in-cluster DNS provider should be used.
-     *
-     * Accepted values: PROVIDER_UNSPECIFIED, PLATFORM_DEFAULT, CLOUD_DNS,
-     * KUBE_DNS
-     *
-     * @param self::CLUSTER_DNS_* $clusterDns
-     */
-    public function setClusterDns($clusterDns)
-    {
-    }
-    /**
-     * @return self::CLUSTER_DNS_*
-     */
-    public function getClusterDns()
-    {
-    }
-    /**
-     * cluster_dns_domain is the suffix used for all cluster service records.
-     *
-     * @param string $clusterDnsDomain
-     */
-    public function setClusterDnsDomain($clusterDnsDomain)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClusterDnsDomain()
-    {
-    }
-    /**
-     * cluster_dns_scope indicates the scope of access to cluster DNS records.
-     *
-     * Accepted values: DNS_SCOPE_UNSPECIFIED, CLUSTER_SCOPE, VPC_SCOPE
-     *
-     * @param self::CLUSTER_DNS_SCOPE_* $clusterDnsScope
-     */
-    public function setClusterDnsScope($clusterDnsScope)
-    {
-    }
-    /**
-     * @return self::CLUSTER_DNS_SCOPE_*
-     */
-    public function getClusterDnsScope()
+    class Google_Service_Container_DNSConfig extends \Google\Service\Container\DNSConfig
     {
     }
 }

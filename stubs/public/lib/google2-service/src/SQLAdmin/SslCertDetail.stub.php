@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class SslCertDetail extends \Google\Model
-{
-    protected $certInfoType = SslCert::class;
-    protected $certInfoDataType = '';
-    /**
-     * The private key for the client cert, in pem format. Keep private in order
-     * to protect your security.
-     *
-     * @var string
-     */
-    public $certPrivateKey;
-    /**
-     * The public information about the cert.
-     *
-     * @param SslCert $certInfo
-     */
-    public function setCertInfo(SslCert $certInfo)
+namespace Google\Service\SQLAdmin {
+    class SslCertDetail extends \Google\Model
     {
+        protected $certInfoType = SslCert::class;
+        protected $certInfoDataType = '';
+        /**
+         * The private key for the client cert, in pem format. Keep private in order
+         * to protect your security.
+         *
+         * @var string
+         */
+        public $certPrivateKey;
+        /**
+         * The public information about the cert.
+         *
+         * @param SslCert $certInfo
+         */
+        public function setCertInfo(SslCert $certInfo)
+        {
+        }
+        /**
+         * @return SslCert
+         */
+        public function getCertInfo()
+        {
+        }
+        /**
+         * The private key for the client cert, in pem format. Keep private in order
+         * to protect your security.
+         *
+         * @param string $certPrivateKey
+         */
+        public function setCertPrivateKey($certPrivateKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCertPrivateKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SslCert
+     * Runtime class alias of \Google\Service\SQLAdmin\SslCertDetail registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCertInfo()
-    {
-    }
-    /**
-     * The private key for the client cert, in pem format. Keep private in order
-     * to protect your security.
-     *
-     * @param string $certPrivateKey
-     */
-    public function setCertPrivateKey($certPrivateKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCertPrivateKey()
+    class Google_Service_SQLAdmin_SslCertDetail extends \Google\Service\SQLAdmin\SslCertDetail
     {
     }
 }

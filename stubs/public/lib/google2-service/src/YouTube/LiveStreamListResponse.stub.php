@@ -21,187 +21,196 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class LiveStreamListResponse extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    /**
-     * Etag of this resource.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Serialized EventId of the request which produced this response.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $eventId;
-    protected $itemsType = LiveStream::class;
-    protected $itemsDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "youtube#liveStreamListResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The token that can be used as the value of the pageToken parameter to
-     * retrieve the next page in the result set.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $pageInfoType = PageInfo::class;
-    protected $pageInfoDataType = '';
-    /**
-     * The token that can be used as the value of the pageToken parameter to
-     * retrieve the previous page in the result set.
-     *
-     * @var string
-     */
-    public $prevPageToken;
-    protected $tokenPaginationType = TokenPagination::class;
-    protected $tokenPaginationDataType = '';
-    /**
-     * The visitorId identifies the visitor.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $visitorId;
-    /**
-     * Etag of this resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\YouTube {
+    class LiveStreamListResponse extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        /**
+         * Etag of this resource.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Serialized EventId of the request which produced this response.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $eventId;
+        protected $itemsType = LiveStream::class;
+        protected $itemsDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "youtube#liveStreamListResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The token that can be used as the value of the pageToken parameter to
+         * retrieve the next page in the result set.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $pageInfoType = PageInfo::class;
+        protected $pageInfoDataType = '';
+        /**
+         * The token that can be used as the value of the pageToken parameter to
+         * retrieve the previous page in the result set.
+         *
+         * @var string
+         */
+        public $prevPageToken;
+        protected $tokenPaginationType = TokenPagination::class;
+        protected $tokenPaginationDataType = '';
+        /**
+         * The visitorId identifies the visitor.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $visitorId;
+        /**
+         * Etag of this resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Serialized EventId of the request which produced this response.
+         *
+         * @deprecated
+         * @param string $eventId
+         */
+        public function setEventId($eventId)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getEventId()
+        {
+        }
+        /**
+         * A list of live streams that match the request criteria.
+         *
+         * @param LiveStream[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return LiveStream[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "youtube#liveStreamListResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The token that can be used as the value of the pageToken parameter to
+         * retrieve the next page in the result set.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param PageInfo $pageInfo
+         */
+        public function setPageInfo(PageInfo $pageInfo)
+        {
+        }
+        /**
+         * @return PageInfo
+         */
+        public function getPageInfo()
+        {
+        }
+        /**
+         * The token that can be used as the value of the pageToken parameter to
+         * retrieve the previous page in the result set.
+         *
+         * @param string $prevPageToken
+         */
+        public function setPrevPageToken($prevPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrevPageToken()
+        {
+        }
+        /**
+         * @deprecated
+         * @param TokenPagination $tokenPagination
+         */
+        public function setTokenPagination(TokenPagination $tokenPagination)
+        {
+        }
+        /**
+         * @deprecated
+         * @return TokenPagination
+         */
+        public function getTokenPagination()
+        {
+        }
+        /**
+         * The visitorId identifies the visitor.
+         *
+         * @deprecated
+         * @param string $visitorId
+         */
+        public function setVisitorId($visitorId)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getVisitorId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\LiveStreamListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * Serialized EventId of the request which produced this response.
-     *
-     * @deprecated
-     * @param string $eventId
-     */
-    public function setEventId($eventId)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getEventId()
-    {
-    }
-    /**
-     * A list of live streams that match the request criteria.
-     *
-     * @param LiveStream[] $items
-     */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return LiveStream[]
-     */
-    public function getItems()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "youtube#liveStreamListResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The token that can be used as the value of the pageToken parameter to
-     * retrieve the next page in the result set.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param PageInfo $pageInfo
-     */
-    public function setPageInfo(PageInfo $pageInfo)
-    {
-    }
-    /**
-     * @return PageInfo
-     */
-    public function getPageInfo()
-    {
-    }
-    /**
-     * The token that can be used as the value of the pageToken parameter to
-     * retrieve the previous page in the result set.
-     *
-     * @param string $prevPageToken
-     */
-    public function setPrevPageToken($prevPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrevPageToken()
-    {
-    }
-    /**
-     * @deprecated
-     * @param TokenPagination $tokenPagination
-     */
-    public function setTokenPagination(TokenPagination $tokenPagination)
-    {
-    }
-    /**
-     * @deprecated
-     * @return TokenPagination
-     */
-    public function getTokenPagination()
-    {
-    }
-    /**
-     * The visitorId identifies the visitor.
-     *
-     * @deprecated
-     * @param string $visitorId
-     */
-    public function setVisitorId($visitorId)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getVisitorId()
+    class Google_Service_YouTube_LiveStreamListResponse extends \Google\Service\YouTube\LiveStreamListResponse
     {
     }
 }

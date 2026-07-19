@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class GoogleIamV2DenyRule extends \Google\Collection
-{
-    protected $collection_key = 'exceptionPrincipals';
-    protected $denialConditionType = Expr::class;
-    protected $denialConditionDataType = '';
-    /**
-     * @var string[]
-     */
-    public $deniedPermissions;
-    /**
-     * @var string[]
-     */
-    public $deniedPrincipals;
-    /**
-     * @var string[]
-     */
-    public $exceptionPermissions;
-    /**
-     * @var string[]
-     */
-    public $exceptionPrincipals;
-    /**
-     * @param Expr
-     */
-    public function setDenialCondition(Expr $denialCondition)
+namespace Google\Service\CloudAsset {
+    class GoogleIamV2DenyRule extends \Google\Collection
     {
+        protected $collection_key = 'exceptionPrincipals';
+        protected $denialConditionType = Expr::class;
+        protected $denialConditionDataType = '';
+        /**
+         * @var string[]
+         */
+        public $deniedPermissions;
+        /**
+         * @var string[]
+         */
+        public $deniedPrincipals;
+        /**
+         * @var string[]
+         */
+        public $exceptionPermissions;
+        /**
+         * @var string[]
+         */
+        public $exceptionPrincipals;
+        /**
+         * @param Expr
+         */
+        public function setDenialCondition(Expr $denialCondition)
+        {
+        }
+        /**
+         * @return Expr
+         */
+        public function getDenialCondition()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setDeniedPermissions($deniedPermissions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDeniedPermissions()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setDeniedPrincipals($deniedPrincipals)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDeniedPrincipals()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setExceptionPermissions($exceptionPermissions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExceptionPermissions()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setExceptionPrincipals($exceptionPrincipals)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExceptionPrincipals()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Expr
+     * Runtime class alias of \Google\Service\CloudAsset\GoogleIamV2DenyRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDenialCondition()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setDeniedPermissions($deniedPermissions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDeniedPermissions()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setDeniedPrincipals($deniedPrincipals)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDeniedPrincipals()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setExceptionPermissions($exceptionPermissions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getExceptionPermissions()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setExceptionPrincipals($exceptionPrincipals)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getExceptionPrincipals()
+    class Google_Service_CloudAsset_GoogleIamV2DenyRule extends \Google\Service\CloudAsset\GoogleIamV2DenyRule
     {
     }
 }

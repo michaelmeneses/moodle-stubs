@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class GenderTargetingOptionDetails extends \Google\Model
-{
-    /**
-     * Default value when gender is not specified in this version. This enum is a
-     * place holder for default value and does not represent a real gender option.
-     */
-    public const GENDER_GENDER_UNSPECIFIED = 'GENDER_UNSPECIFIED';
-    /**
-     * The audience gender is male.
-     */
-    public const GENDER_GENDER_MALE = 'GENDER_MALE';
-    /**
-     * The audience gender is female.
-     */
-    public const GENDER_GENDER_FEMALE = 'GENDER_FEMALE';
-    /**
-     * The audience gender is unknown.
-     */
-    public const GENDER_GENDER_UNKNOWN = 'GENDER_UNKNOWN';
-    /**
-     * Output only. The gender of an audience.
-     *
-     * @var string
-     */
-    public $gender;
-    /**
-     * Output only. The gender of an audience.
-     *
-     * Accepted values: GENDER_UNSPECIFIED, GENDER_MALE, GENDER_FEMALE,
-     * GENDER_UNKNOWN
-     *
-     * @param self::GENDER_* $gender
-     */
-    public function setGender($gender)
+namespace Google\Service\DisplayVideo {
+    class GenderTargetingOptionDetails extends \Google\Model
     {
+        /**
+         * Default value when gender is not specified in this version. This enum is a
+         * place holder for default value and does not represent a real gender option.
+         */
+        public const GENDER_GENDER_UNSPECIFIED = 'GENDER_UNSPECIFIED';
+        /**
+         * The audience gender is male.
+         */
+        public const GENDER_GENDER_MALE = 'GENDER_MALE';
+        /**
+         * The audience gender is female.
+         */
+        public const GENDER_GENDER_FEMALE = 'GENDER_FEMALE';
+        /**
+         * The audience gender is unknown.
+         */
+        public const GENDER_GENDER_UNKNOWN = 'GENDER_UNKNOWN';
+        /**
+         * Output only. The gender of an audience.
+         *
+         * @var string
+         */
+        public $gender;
+        /**
+         * Output only. The gender of an audience.
+         *
+         * Accepted values: GENDER_UNSPECIFIED, GENDER_MALE, GENDER_FEMALE,
+         * GENDER_UNKNOWN
+         *
+         * @param self::GENDER_* $gender
+         */
+        public function setGender($gender)
+        {
+        }
+        /**
+         * @return self::GENDER_*
+         */
+        public function getGender()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::GENDER_*
+     * Runtime class alias of \Google\Service\DisplayVideo\GenderTargetingOptionDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGender()
+    class Google_Service_DisplayVideo_GenderTargetingOptionDetails extends \Google\Service\DisplayVideo\GenderTargetingOptionDetails
     {
     }
 }

@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkManagement;
-
-class ListVpcFlowLogsConfigsResponse extends \Google\Collection
-{
-    protected $collection_key = 'vpcFlowLogsConfigs';
-    /**
-     * Page token to fetch the next set of configurations.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached (when querying all locations with `-`).
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    protected $vpcFlowLogsConfigsType = VpcFlowLogsConfig::class;
-    protected $vpcFlowLogsConfigsDataType = 'array';
-    /**
-     * Page token to fetch the next set of configurations.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\NetworkManagement {
+    class ListVpcFlowLogsConfigsResponse extends \Google\Collection
     {
+        protected $collection_key = 'vpcFlowLogsConfigs';
+        /**
+         * Page token to fetch the next set of configurations.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached (when querying all locations with `-`).
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        protected $vpcFlowLogsConfigsType = VpcFlowLogsConfig::class;
+        protected $vpcFlowLogsConfigsDataType = 'array';
+        /**
+         * Page token to fetch the next set of configurations.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached (when querying all locations with `-`).
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
+        /**
+         * List of VPC Flow Log configurations.
+         *
+         * @param VpcFlowLogsConfig[] $vpcFlowLogsConfigs
+         */
+        public function setVpcFlowLogsConfigs($vpcFlowLogsConfigs)
+        {
+        }
+        /**
+         * @return VpcFlowLogsConfig[]
+         */
+        public function getVpcFlowLogsConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkManagement\ListVpcFlowLogsConfigsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached (when querying all locations with `-`).
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
-    {
-    }
-    /**
-     * List of VPC Flow Log configurations.
-     *
-     * @param VpcFlowLogsConfig[] $vpcFlowLogsConfigs
-     */
-    public function setVpcFlowLogsConfigs($vpcFlowLogsConfigs)
-    {
-    }
-    /**
-     * @return VpcFlowLogsConfig[]
-     */
-    public function getVpcFlowLogsConfigs()
+    class Google_Service_NetworkManagement_ListVpcFlowLogsConfigsResponse extends \Google\Service\NetworkManagement\ListVpcFlowLogsConfigsResponse
     {
     }
 }

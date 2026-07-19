@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class Deployment extends \Google\Collection
-{
-    protected $collection_key = 'resourceUri';
-    public $address;
-    public $config;
-    public $deployTime;
-    public $platform;
-    public $resourceUri;
-    public $undeployTime;
-    public $userEmail;
-    public function setAddress($address)
+namespace Google\Service\ContainerAnalysis {
+    class Deployment extends \Google\Collection
     {
+        protected $collection_key = 'resourceUri';
+        public $address;
+        public $config;
+        public $deployTime;
+        public $platform;
+        public $resourceUri;
+        public $undeployTime;
+        public $userEmail;
+        public function setAddress($address)
+        {
+        }
+        public function getAddress()
+        {
+        }
+        public function setConfig($config)
+        {
+        }
+        public function getConfig()
+        {
+        }
+        public function setDeployTime($deployTime)
+        {
+        }
+        public function getDeployTime()
+        {
+        }
+        public function setPlatform($platform)
+        {
+        }
+        public function getPlatform()
+        {
+        }
+        public function setResourceUri($resourceUri)
+        {
+        }
+        public function getResourceUri()
+        {
+        }
+        public function setUndeployTime($undeployTime)
+        {
+        }
+        public function getUndeployTime()
+        {
+        }
+        public function setUserEmail($userEmail)
+        {
+        }
+        public function getUserEmail()
+        {
+        }
     }
-    public function getAddress()
-    {
-    }
-    public function setConfig($config)
-    {
-    }
-    public function getConfig()
-    {
-    }
-    public function setDeployTime($deployTime)
-    {
-    }
-    public function getDeployTime()
-    {
-    }
-    public function setPlatform($platform)
-    {
-    }
-    public function getPlatform()
-    {
-    }
-    public function setResourceUri($resourceUri)
-    {
-    }
-    public function getResourceUri()
-    {
-    }
-    public function setUndeployTime($undeployTime)
-    {
-    }
-    public function getUndeployTime()
-    {
-    }
-    public function setUserEmail($userEmail)
-    {
-    }
-    public function getUserEmail()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ContainerAnalysis\Deployment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ContainerAnalysis_Deployment extends \Google\Service\ContainerAnalysis\Deployment
     {
     }
 }

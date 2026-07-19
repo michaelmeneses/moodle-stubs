@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaCitationMetadata extends \Google\Collection
-{
-    protected $collection_key = 'citations';
-    protected $citationsType = GoogleCloudDiscoveryengineV1alphaCitation::class;
-    protected $citationsDataType = 'array';
-    /**
-     * Output only. List of citations.
-     *
-     * @param GoogleCloudDiscoveryengineV1alphaCitation[] $citations
-     */
-    public function setCitations($citations)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaCitationMetadata extends \Google\Collection
     {
+        protected $collection_key = 'citations';
+        protected $citationsType = GoogleCloudDiscoveryengineV1alphaCitation::class;
+        protected $citationsDataType = 'array';
+        /**
+         * Output only. List of citations.
+         *
+         * @param GoogleCloudDiscoveryengineV1alphaCitation[] $citations
+         */
+        public function setCitations($citations)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaCitation[]
+         */
+        public function getCitations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1alphaCitation[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaCitationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCitations()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaCitationMetadata extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaCitationMetadata
     {
     }
 }

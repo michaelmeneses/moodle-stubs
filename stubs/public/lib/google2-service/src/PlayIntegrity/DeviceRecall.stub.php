@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PlayIntegrity;
-
-class DeviceRecall extends \Google\Model
-{
-    protected $valuesType = Values::class;
-    protected $valuesDataType = '';
-    protected $writeDatesType = WriteDates::class;
-    protected $writeDatesDataType = '';
-    /**
-     * Required. Contains the recall bits values.
-     *
-     * @param Values $values
-     */
-    public function setValues(Values $values)
+namespace Google\Service\PlayIntegrity {
+    class DeviceRecall extends \Google\Model
     {
+        protected $valuesType = Values::class;
+        protected $valuesDataType = '';
+        protected $writeDatesType = WriteDates::class;
+        protected $writeDatesDataType = '';
+        /**
+         * Required. Contains the recall bits values.
+         *
+         * @param Values $values
+         */
+        public function setValues(Values $values)
+        {
+        }
+        /**
+         * @return Values
+         */
+        public function getValues()
+        {
+        }
+        /**
+         * Required. Contains the recall bits write dates.
+         *
+         * @param WriteDates $writeDates
+         */
+        public function setWriteDates(WriteDates $writeDates)
+        {
+        }
+        /**
+         * @return WriteDates
+         */
+        public function getWriteDates()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Values
+     * Runtime class alias of \Google\Service\PlayIntegrity\DeviceRecall registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValues()
-    {
-    }
-    /**
-     * Required. Contains the recall bits write dates.
-     *
-     * @param WriteDates $writeDates
-     */
-    public function setWriteDates(WriteDates $writeDates)
-    {
-    }
-    /**
-     * @return WriteDates
-     */
-    public function getWriteDates()
+    class Google_Service_PlayIntegrity_DeviceRecall extends \Google\Service\PlayIntegrity\DeviceRecall
     {
     }
 }

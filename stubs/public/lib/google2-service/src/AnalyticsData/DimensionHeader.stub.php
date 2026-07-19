@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsData;
-
-class DimensionHeader extends \Google\Model
-{
-    /**
-     * The dimension's name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The dimension's name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\AnalyticsData {
+    class DimensionHeader extends \Google\Model
     {
+        /**
+         * The dimension's name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The dimension's name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AnalyticsData\DimensionHeader registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
+    class Google_Service_AnalyticsData_DimensionHeader extends \Google\Service\AnalyticsData\DimensionHeader
     {
     }
 }

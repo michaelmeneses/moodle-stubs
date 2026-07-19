@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsReporting;
-
-class PivotHeaderEntry extends \Google\Collection
-{
-    protected $collection_key = 'dimensionValues';
-    /**
-     * @var string[]
-     */
-    public $dimensionNames;
-    /**
-     * @var string[]
-     */
-    public $dimensionValues;
-    protected $metricType = MetricHeaderEntry::class;
-    protected $metricDataType = '';
-    /**
-     * @param string[]
-     */
-    public function setDimensionNames($dimensionNames)
+namespace Google\Service\AnalyticsReporting {
+    class PivotHeaderEntry extends \Google\Collection
     {
+        protected $collection_key = 'dimensionValues';
+        /**
+         * @var string[]
+         */
+        public $dimensionNames;
+        /**
+         * @var string[]
+         */
+        public $dimensionValues;
+        protected $metricType = MetricHeaderEntry::class;
+        protected $metricDataType = '';
+        /**
+         * @param string[]
+         */
+        public function setDimensionNames($dimensionNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDimensionNames()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setDimensionValues($dimensionValues)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDimensionValues()
+        {
+        }
+        /**
+         * @param MetricHeaderEntry
+         */
+        public function setMetric(MetricHeaderEntry $metric)
+        {
+        }
+        /**
+         * @return MetricHeaderEntry
+         */
+        public function getMetric()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AnalyticsReporting\PivotHeaderEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDimensionNames()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setDimensionValues($dimensionValues)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDimensionValues()
-    {
-    }
-    /**
-     * @param MetricHeaderEntry
-     */
-    public function setMetric(MetricHeaderEntry $metric)
-    {
-    }
-    /**
-     * @return MetricHeaderEntry
-     */
-    public function getMetric()
+    class Google_Service_AnalyticsReporting_PivotHeaderEntry extends \Google\Service\AnalyticsReporting\PivotHeaderEntry
     {
     }
 }

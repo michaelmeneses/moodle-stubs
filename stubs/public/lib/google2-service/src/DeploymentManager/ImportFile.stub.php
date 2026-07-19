@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DeploymentManager;
-
-class ImportFile extends \Google\Model
-{
-    /**
-     * The contents of the file.
-     *
-     * @var string
-     */
-    public $content;
-    /**
-     * The name of the file.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The contents of the file.
-     *
-     * @param string $content
-     */
-    public function setContent($content)
+namespace Google\Service\DeploymentManager {
+    class ImportFile extends \Google\Model
     {
+        /**
+         * The contents of the file.
+         *
+         * @var string
+         */
+        public $content;
+        /**
+         * The name of the file.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The contents of the file.
+         *
+         * @param string $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * The name of the file.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DeploymentManager\ImportFile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
-    {
-    }
-    /**
-     * The name of the file.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_DeploymentManager_ImportFile extends \Google\Service\DeploymentManager\ImportFile
     {
     }
 }

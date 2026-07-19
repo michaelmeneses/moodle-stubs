@@ -21,59 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Blogger\Resource;
-
-/**
- * The "blogs" collection of methods.
- * Typical usage is:
- *  <code>
- *   $bloggerService = new Google\Service\Blogger(...);
- *   $blogs = $bloggerService->blogs;
- *  </code>
- */
-class Blogs extends \Google\Service\Resource
-{
+namespace Google\Service\Blogger\Resource {
+    use Google\Service\Blogger\Blog;
+    use Google\Service\Blogger\BlogList;
     /**
-     * Gets a blog by id. (blogs.get)
-     *
-     * @param string $blogId
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string maxPosts
-     * @opt_param string view
-     * @return Blog
-     * @throws \Google\Service\Exception
+     * The "blogs" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $bloggerService = new Google\Service\Blogger(...);
+     *   $blogs = $bloggerService->blogs;
+     *  </code>
      */
-    public function get($blogId, $optParams = [])
+    class Blogs extends \Google\Service\Resource
     {
+        /**
+         * Gets a blog by id. (blogs.get)
+         *
+         * @param string $blogId
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string maxPosts
+         * @opt_param string view
+         * @return Blog
+         * @throws \Google\Service\Exception
+         */
+        public function get($blogId, $optParams = [])
+        {
+        }
+        /**
+         * Gets a blog by url. (blogs.getByUrl)
+         *
+         * @param string $url
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string view
+         * @return Blog
+         * @throws \Google\Service\Exception
+         */
+        public function getByUrl($url, $optParams = [])
+        {
+        }
+        /**
+         * Lists blogs by user. (blogs.listByUser)
+         *
+         * @param string $userId
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool fetchUserInfo
+         * @opt_param string role
+         * @opt_param string status Default value of status is LIVE.
+         * @opt_param string view
+         * @return BlogList
+         * @throws \Google\Service\Exception
+         */
+        public function listByUser($userId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets a blog by url. (blogs.getByUrl)
-     *
-     * @param string $url
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string view
-     * @return Blog
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Blogger\Resource\Blogs registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getByUrl($url, $optParams = [])
-    {
-    }
-    /**
-     * Lists blogs by user. (blogs.listByUser)
-     *
-     * @param string $userId
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool fetchUserInfo
-     * @opt_param string role
-     * @opt_param string status Default value of status is LIVE.
-     * @opt_param string view
-     * @return BlogList
-     * @throws \Google\Service\Exception
-     */
-    public function listByUser($userId, $optParams = [])
+    class Google_Service_Blogger_Resource_Blogs extends \Google\Service\Blogger\Resource\Blogs
     {
     }
 }

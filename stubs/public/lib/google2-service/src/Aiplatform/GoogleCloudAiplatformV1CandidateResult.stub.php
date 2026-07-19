@@ -21,127 +21,136 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1CandidateResult extends \Google\Collection
-{
-    protected $collection_key = 'rubricVerdicts';
-    /**
-     * Optional. Additional results for the metric.
-     *
-     * @var array
-     */
-    public $additionalResults;
-    /**
-     * Required. The candidate that is being evaluated. The value is the same as
-     * the candidate name in the EvaluationRequest.
-     *
-     * @var string
-     */
-    public $candidate;
-    /**
-     * Optional. The explanation for the metric.
-     *
-     * @var string
-     */
-    public $explanation;
-    /**
-     * Required. The metric that was evaluated.
-     *
-     * @var string
-     */
-    public $metric;
-    protected $rubricVerdictsType = GoogleCloudAiplatformV1RubricVerdict::class;
-    protected $rubricVerdictsDataType = 'array';
-    /**
-     * Optional. The score for the metric.
-     *
-     * @var float
-     */
-    public $score;
-    /**
-     * Optional. Additional results for the metric.
-     *
-     * @param array $additionalResults
-     */
-    public function setAdditionalResults($additionalResults)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1CandidateResult extends \Google\Collection
     {
+        protected $collection_key = 'rubricVerdicts';
+        /**
+         * Optional. Additional results for the metric.
+         *
+         * @var array
+         */
+        public $additionalResults;
+        /**
+         * Required. The candidate that is being evaluated. The value is the same as
+         * the candidate name in the EvaluationRequest.
+         *
+         * @var string
+         */
+        public $candidate;
+        /**
+         * Optional. The explanation for the metric.
+         *
+         * @var string
+         */
+        public $explanation;
+        /**
+         * Required. The metric that was evaluated.
+         *
+         * @var string
+         */
+        public $metric;
+        protected $rubricVerdictsType = GoogleCloudAiplatformV1RubricVerdict::class;
+        protected $rubricVerdictsDataType = 'array';
+        /**
+         * Optional. The score for the metric.
+         *
+         * @var float
+         */
+        public $score;
+        /**
+         * Optional. Additional results for the metric.
+         *
+         * @param array $additionalResults
+         */
+        public function setAdditionalResults($additionalResults)
+        {
+        }
+        /**
+         * @return array
+         */
+        public function getAdditionalResults()
+        {
+        }
+        /**
+         * Required. The candidate that is being evaluated. The value is the same as
+         * the candidate name in the EvaluationRequest.
+         *
+         * @param string $candidate
+         */
+        public function setCandidate($candidate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCandidate()
+        {
+        }
+        /**
+         * Optional. The explanation for the metric.
+         *
+         * @param string $explanation
+         */
+        public function setExplanation($explanation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExplanation()
+        {
+        }
+        /**
+         * Required. The metric that was evaluated.
+         *
+         * @param string $metric
+         */
+        public function setMetric($metric)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMetric()
+        {
+        }
+        /**
+         * Optional. The rubric verdicts for the metric.
+         *
+         * @param GoogleCloudAiplatformV1RubricVerdict[] $rubricVerdicts
+         */
+        public function setRubricVerdicts($rubricVerdicts)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RubricVerdict[]
+         */
+        public function getRubricVerdicts()
+        {
+        }
+        /**
+         * Optional. The score for the metric.
+         *
+         * @param float $score
+         */
+        public function setScore($score)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getScore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1CandidateResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdditionalResults()
-    {
-    }
-    /**
-     * Required. The candidate that is being evaluated. The value is the same as
-     * the candidate name in the EvaluationRequest.
-     *
-     * @param string $candidate
-     */
-    public function setCandidate($candidate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCandidate()
-    {
-    }
-    /**
-     * Optional. The explanation for the metric.
-     *
-     * @param string $explanation
-     */
-    public function setExplanation($explanation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExplanation()
-    {
-    }
-    /**
-     * Required. The metric that was evaluated.
-     *
-     * @param string $metric
-     */
-    public function setMetric($metric)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMetric()
-    {
-    }
-    /**
-     * Optional. The rubric verdicts for the metric.
-     *
-     * @param GoogleCloudAiplatformV1RubricVerdict[] $rubricVerdicts
-     */
-    public function setRubricVerdicts($rubricVerdicts)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1RubricVerdict[]
-     */
-    public function getRubricVerdicts()
-    {
-    }
-    /**
-     * Optional. The score for the metric.
-     *
-     * @param float $score
-     */
-    public function setScore($score)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getScore()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1CandidateResult extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1CandidateResult
     {
     }
 }

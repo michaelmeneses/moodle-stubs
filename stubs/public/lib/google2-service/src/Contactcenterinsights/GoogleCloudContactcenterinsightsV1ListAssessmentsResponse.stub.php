@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1ListAssessmentsResponse extends \Google\Collection
-{
-    protected $collection_key = 'assessments';
-    protected $assessmentsType = GoogleCloudContactcenterinsightsV1Assessment::class;
-    protected $assessmentsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The assessments that match the request.
-     *
-     * @param GoogleCloudContactcenterinsightsV1Assessment[] $assessments
-     */
-    public function setAssessments($assessments)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1ListAssessmentsResponse extends \Google\Collection
     {
+        protected $collection_key = 'assessments';
+        protected $assessmentsType = GoogleCloudContactcenterinsightsV1Assessment::class;
+        protected $assessmentsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The assessments that match the request.
+         *
+         * @param GoogleCloudContactcenterinsightsV1Assessment[] $assessments
+         */
+        public function setAssessments($assessments)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1Assessment[]
+         */
+        public function getAssessments()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContactcenterinsightsV1Assessment[]
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1ListAssessmentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssessments()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1ListAssessmentsResponse extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1ListAssessmentsResponse
     {
     }
 }

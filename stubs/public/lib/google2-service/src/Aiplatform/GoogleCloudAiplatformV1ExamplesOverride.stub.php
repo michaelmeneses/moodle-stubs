@@ -21,119 +21,128 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ExamplesOverride extends \Google\Collection
-{
-    /**
-     * Unspecified format. Must not be used.
-     */
-    public const DATA_FORMAT_DATA_FORMAT_UNSPECIFIED = 'DATA_FORMAT_UNSPECIFIED';
-    /**
-     * Provided data is a set of model inputs.
-     */
-    public const DATA_FORMAT_INSTANCES = 'INSTANCES';
-    /**
-     * Provided data is a set of embeddings.
-     */
-    public const DATA_FORMAT_EMBEDDINGS = 'EMBEDDINGS';
-    protected $collection_key = 'restrictions';
-    /**
-     * The number of neighbors to return that have the same crowding tag.
-     *
-     * @var int
-     */
-    public $crowdingCount;
-    /**
-     * The format of the data being provided with each call.
-     *
-     * @var string
-     */
-    public $dataFormat;
-    /**
-     * The number of neighbors to return.
-     *
-     * @var int
-     */
-    public $neighborCount;
-    protected $restrictionsType = GoogleCloudAiplatformV1ExamplesRestrictionsNamespace::class;
-    protected $restrictionsDataType = 'array';
-    /**
-     * If true, return the embeddings instead of neighbors.
-     *
-     * @var bool
-     */
-    public $returnEmbeddings;
-    /**
-     * The number of neighbors to return that have the same crowding tag.
-     *
-     * @param int $crowdingCount
-     */
-    public function setCrowdingCount($crowdingCount)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ExamplesOverride extends \Google\Collection
     {
+        /**
+         * Unspecified format. Must not be used.
+         */
+        public const DATA_FORMAT_DATA_FORMAT_UNSPECIFIED = 'DATA_FORMAT_UNSPECIFIED';
+        /**
+         * Provided data is a set of model inputs.
+         */
+        public const DATA_FORMAT_INSTANCES = 'INSTANCES';
+        /**
+         * Provided data is a set of embeddings.
+         */
+        public const DATA_FORMAT_EMBEDDINGS = 'EMBEDDINGS';
+        protected $collection_key = 'restrictions';
+        /**
+         * The number of neighbors to return that have the same crowding tag.
+         *
+         * @var int
+         */
+        public $crowdingCount;
+        /**
+         * The format of the data being provided with each call.
+         *
+         * @var string
+         */
+        public $dataFormat;
+        /**
+         * The number of neighbors to return.
+         *
+         * @var int
+         */
+        public $neighborCount;
+        protected $restrictionsType = GoogleCloudAiplatformV1ExamplesRestrictionsNamespace::class;
+        protected $restrictionsDataType = 'array';
+        /**
+         * If true, return the embeddings instead of neighbors.
+         *
+         * @var bool
+         */
+        public $returnEmbeddings;
+        /**
+         * The number of neighbors to return that have the same crowding tag.
+         *
+         * @param int $crowdingCount
+         */
+        public function setCrowdingCount($crowdingCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCrowdingCount()
+        {
+        }
+        /**
+         * The format of the data being provided with each call.
+         *
+         * Accepted values: DATA_FORMAT_UNSPECIFIED, INSTANCES, EMBEDDINGS
+         *
+         * @param self::DATA_FORMAT_* $dataFormat
+         */
+        public function setDataFormat($dataFormat)
+        {
+        }
+        /**
+         * @return self::DATA_FORMAT_*
+         */
+        public function getDataFormat()
+        {
+        }
+        /**
+         * The number of neighbors to return.
+         *
+         * @param int $neighborCount
+         */
+        public function setNeighborCount($neighborCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNeighborCount()
+        {
+        }
+        /**
+         * Restrict the resulting nearest neighbors to respect these constraints.
+         *
+         * @param GoogleCloudAiplatformV1ExamplesRestrictionsNamespace[] $restrictions
+         */
+        public function setRestrictions($restrictions)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ExamplesRestrictionsNamespace[]
+         */
+        public function getRestrictions()
+        {
+        }
+        /**
+         * If true, return the embeddings instead of neighbors.
+         *
+         * @param bool $returnEmbeddings
+         */
+        public function setReturnEmbeddings($returnEmbeddings)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReturnEmbeddings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ExamplesOverride registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCrowdingCount()
-    {
-    }
-    /**
-     * The format of the data being provided with each call.
-     *
-     * Accepted values: DATA_FORMAT_UNSPECIFIED, INSTANCES, EMBEDDINGS
-     *
-     * @param self::DATA_FORMAT_* $dataFormat
-     */
-    public function setDataFormat($dataFormat)
-    {
-    }
-    /**
-     * @return self::DATA_FORMAT_*
-     */
-    public function getDataFormat()
-    {
-    }
-    /**
-     * The number of neighbors to return.
-     *
-     * @param int $neighborCount
-     */
-    public function setNeighborCount($neighborCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNeighborCount()
-    {
-    }
-    /**
-     * Restrict the resulting nearest neighbors to respect these constraints.
-     *
-     * @param GoogleCloudAiplatformV1ExamplesRestrictionsNamespace[] $restrictions
-     */
-    public function setRestrictions($restrictions)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1ExamplesRestrictionsNamespace[]
-     */
-    public function getRestrictions()
-    {
-    }
-    /**
-     * If true, return the embeddings instead of neighbors.
-     *
-     * @param bool $returnEmbeddings
-     */
-    public function setReturnEmbeddings($returnEmbeddings)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReturnEmbeddings()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ExamplesOverride extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ExamplesOverride
     {
     }
 }

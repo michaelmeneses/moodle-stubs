@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ExactMatchInput extends \Google\Collection
-{
-    protected $collection_key = 'instances';
-    protected $instancesType = GoogleCloudAiplatformV1ExactMatchInstance::class;
-    protected $instancesDataType = 'array';
-    protected $metricSpecType = GoogleCloudAiplatformV1ExactMatchSpec::class;
-    protected $metricSpecDataType = '';
-    /**
-     * Required. Repeated exact match instances.
-     *
-     * @param GoogleCloudAiplatformV1ExactMatchInstance[] $instances
-     */
-    public function setInstances($instances)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ExactMatchInput extends \Google\Collection
     {
+        protected $collection_key = 'instances';
+        protected $instancesType = GoogleCloudAiplatformV1ExactMatchInstance::class;
+        protected $instancesDataType = 'array';
+        protected $metricSpecType = GoogleCloudAiplatformV1ExactMatchSpec::class;
+        protected $metricSpecDataType = '';
+        /**
+         * Required. Repeated exact match instances.
+         *
+         * @param GoogleCloudAiplatformV1ExactMatchInstance[] $instances
+         */
+        public function setInstances($instances)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ExactMatchInstance[]
+         */
+        public function getInstances()
+        {
+        }
+        /**
+         * Required. Spec for exact match metric.
+         *
+         * @param GoogleCloudAiplatformV1ExactMatchSpec $metricSpec
+         */
+        public function setMetricSpec(GoogleCloudAiplatformV1ExactMatchSpec $metricSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ExactMatchSpec
+         */
+        public function getMetricSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1ExactMatchInstance[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ExactMatchInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstances()
-    {
-    }
-    /**
-     * Required. Spec for exact match metric.
-     *
-     * @param GoogleCloudAiplatformV1ExactMatchSpec $metricSpec
-     */
-    public function setMetricSpec(GoogleCloudAiplatformV1ExactMatchSpec $metricSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1ExactMatchSpec
-     */
-    public function getMetricSpec()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ExactMatchInput extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ExactMatchInput
     {
     }
 }

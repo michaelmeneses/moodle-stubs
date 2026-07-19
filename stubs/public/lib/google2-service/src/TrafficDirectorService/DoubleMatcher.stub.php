@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TrafficDirectorService;
-
-class DoubleMatcher extends \Google\Model
-{
-    /**
-     * If specified, the input double value must be equal to the value specified
-     * here.
-     *
-     * @var 
-     */
-    public $exact;
-    protected $rangeType = DoubleRange::class;
-    protected $rangeDataType = '';
-    public function setExact($exact)
+namespace Google\Service\TrafficDirectorService {
+    class DoubleMatcher extends \Google\Model
     {
+        /**
+         * If specified, the input double value must be equal to the value specified
+         * here.
+         *
+         * @var 
+         */
+        public $exact;
+        protected $rangeType = DoubleRange::class;
+        protected $rangeDataType = '';
+        public function setExact($exact)
+        {
+        }
+        public function getExact()
+        {
+        }
+        /**
+         * If specified, the input double value must be in the range specified here.
+         * Note: The range is using half-open interval semantics [start, end).
+         *
+         * @param DoubleRange $range
+         */
+        public function setRange(DoubleRange $range)
+        {
+        }
+        /**
+         * @return DoubleRange
+         */
+        public function getRange()
+        {
+        }
     }
-    public function getExact()
-    {
-    }
+}
+namespace {
     /**
-     * If specified, the input double value must be in the range specified here.
-     * Note: The range is using half-open interval semantics [start, end).
-     *
-     * @param DoubleRange $range
+     * Runtime class alias of \Google\Service\TrafficDirectorService\DoubleMatcher registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setRange(DoubleRange $range)
-    {
-    }
-    /**
-     * @return DoubleRange
-     */
-    public function getRange()
+    class Google_Service_TrafficDirectorService_DoubleMatcher extends \Google\Service\TrafficDirectorService\DoubleMatcher
     {
     }
 }

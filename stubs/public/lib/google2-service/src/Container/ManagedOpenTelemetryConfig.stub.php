@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class ManagedOpenTelemetryConfig extends \Google\Model
-{
-    /**
-     * SCOPE_UNSPECIFIED is when the scope is not set.
-     */
-    public const SCOPE_SCOPE_UNSPECIFIED = 'SCOPE_UNSPECIFIED';
-    /**
-     * NONE is used to disable the Managed OpenTelemetry pipeline.
-     */
-    public const SCOPE_NONE = 'NONE';
-    /**
-     * COLLECTION_AND_INSTRUMENTATION_COMPONENTS is used to enable the Managed
-     * OpenTelemetry pipeline for collection and instrumentation components.
-     */
-    public const SCOPE_COLLECTION_AND_INSTRUMENTATION_COMPONENTS = 'COLLECTION_AND_INSTRUMENTATION_COMPONENTS';
-    /**
-     * Scope of the Managed OpenTelemetry pipeline.
-     *
-     * @var string
-     */
-    public $scope;
-    /**
-     * Scope of the Managed OpenTelemetry pipeline.
-     *
-     * Accepted values: SCOPE_UNSPECIFIED, NONE,
-     * COLLECTION_AND_INSTRUMENTATION_COMPONENTS
-     *
-     * @param self::SCOPE_* $scope
-     */
-    public function setScope($scope)
+namespace Google\Service\Container {
+    class ManagedOpenTelemetryConfig extends \Google\Model
     {
+        /**
+         * SCOPE_UNSPECIFIED is when the scope is not set.
+         */
+        public const SCOPE_SCOPE_UNSPECIFIED = 'SCOPE_UNSPECIFIED';
+        /**
+         * NONE is used to disable the Managed OpenTelemetry pipeline.
+         */
+        public const SCOPE_NONE = 'NONE';
+        /**
+         * COLLECTION_AND_INSTRUMENTATION_COMPONENTS is used to enable the Managed
+         * OpenTelemetry pipeline for collection and instrumentation components.
+         */
+        public const SCOPE_COLLECTION_AND_INSTRUMENTATION_COMPONENTS = 'COLLECTION_AND_INSTRUMENTATION_COMPONENTS';
+        /**
+         * Scope of the Managed OpenTelemetry pipeline.
+         *
+         * @var string
+         */
+        public $scope;
+        /**
+         * Scope of the Managed OpenTelemetry pipeline.
+         *
+         * Accepted values: SCOPE_UNSPECIFIED, NONE,
+         * COLLECTION_AND_INSTRUMENTATION_COMPONENTS
+         *
+         * @param self::SCOPE_* $scope
+         */
+        public function setScope($scope)
+        {
+        }
+        /**
+         * @return self::SCOPE_*
+         */
+        public function getScope()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::SCOPE_*
+     * Runtime class alias of \Google\Service\Container\ManagedOpenTelemetryConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getScope()
+    class Google_Service_Container_ManagedOpenTelemetryConfig extends \Google\Service\Container\ManagedOpenTelemetryConfig
     {
     }
 }

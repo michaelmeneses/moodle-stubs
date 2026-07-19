@@ -21,125 +21,134 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class CloudArmor extends \Google\Model
-{
-    protected $adaptiveProtectionType = AdaptiveProtection::class;
-    protected $adaptiveProtectionDataType = '';
-    protected $attackType = Attack::class;
-    protected $attackDataType = '';
-    /**
-     * Duration of attack from the start until the current moment (updated every 5
-     * minutes).
-     *
-     * @var string
-     */
-    public $duration;
-    protected $requestsType = Requests::class;
-    protected $requestsDataType = '';
-    protected $securityPolicyType = SecurityPolicy::class;
-    protected $securityPolicyDataType = '';
-    /**
-     * Distinguish between volumetric & protocol DDoS attack and application layer
-     * attacks. For example, "L3_4" for Layer 3 and Layer 4 DDoS attacks, or "L_7"
-     * for Layer 7 DDoS attacks.
-     *
-     * @var string
-     */
-    public $threatVector;
-    /**
-     * Information about potential Layer 7 DDoS attacks identified by [Google
-     * Cloud Armor Adaptive
-     * Protection](https://cloud.google.com/armor/docs/adaptive-protection-
-     * overview).
-     *
-     * @param AdaptiveProtection $adaptiveProtection
-     */
-    public function setAdaptiveProtection(AdaptiveProtection $adaptiveProtection)
+namespace Google\Service\SecurityCommandCenter {
+    class CloudArmor extends \Google\Model
     {
+        protected $adaptiveProtectionType = AdaptiveProtection::class;
+        protected $adaptiveProtectionDataType = '';
+        protected $attackType = Attack::class;
+        protected $attackDataType = '';
+        /**
+         * Duration of attack from the start until the current moment (updated every 5
+         * minutes).
+         *
+         * @var string
+         */
+        public $duration;
+        protected $requestsType = Requests::class;
+        protected $requestsDataType = '';
+        protected $securityPolicyType = SecurityPolicy::class;
+        protected $securityPolicyDataType = '';
+        /**
+         * Distinguish between volumetric & protocol DDoS attack and application layer
+         * attacks. For example, "L3_4" for Layer 3 and Layer 4 DDoS attacks, or "L_7"
+         * for Layer 7 DDoS attacks.
+         *
+         * @var string
+         */
+        public $threatVector;
+        /**
+         * Information about potential Layer 7 DDoS attacks identified by [Google
+         * Cloud Armor Adaptive
+         * Protection](https://cloud.google.com/armor/docs/adaptive-protection-
+         * overview).
+         *
+         * @param AdaptiveProtection $adaptiveProtection
+         */
+        public function setAdaptiveProtection(AdaptiveProtection $adaptiveProtection)
+        {
+        }
+        /**
+         * @return AdaptiveProtection
+         */
+        public function getAdaptiveProtection()
+        {
+        }
+        /**
+         * Information about DDoS attack volume and classification.
+         *
+         * @param Attack $attack
+         */
+        public function setAttack(Attack $attack)
+        {
+        }
+        /**
+         * @return Attack
+         */
+        public function getAttack()
+        {
+        }
+        /**
+         * Duration of attack from the start until the current moment (updated every 5
+         * minutes).
+         *
+         * @param string $duration
+         */
+        public function setDuration($duration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDuration()
+        {
+        }
+        /**
+         * Information about incoming requests evaluated by [Google Cloud Armor
+         * security policies](https://cloud.google.com/armor/docs/security-policy-
+         * overview).
+         *
+         * @param Requests $requests
+         */
+        public function setRequests(Requests $requests)
+        {
+        }
+        /**
+         * @return Requests
+         */
+        public function getRequests()
+        {
+        }
+        /**
+         * Information about the [Google Cloud Armor security
+         * policy](https://cloud.google.com/armor/docs/security-policy-overview)
+         * relevant to the finding.
+         *
+         * @param SecurityPolicy $securityPolicy
+         */
+        public function setSecurityPolicy(SecurityPolicy $securityPolicy)
+        {
+        }
+        /**
+         * @return SecurityPolicy
+         */
+        public function getSecurityPolicy()
+        {
+        }
+        /**
+         * Distinguish between volumetric & protocol DDoS attack and application layer
+         * attacks. For example, "L3_4" for Layer 3 and Layer 4 DDoS attacks, or "L_7"
+         * for Layer 7 DDoS attacks.
+         *
+         * @param string $threatVector
+         */
+        public function setThreatVector($threatVector)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThreatVector()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AdaptiveProtection
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\CloudArmor registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdaptiveProtection()
-    {
-    }
-    /**
-     * Information about DDoS attack volume and classification.
-     *
-     * @param Attack $attack
-     */
-    public function setAttack(Attack $attack)
-    {
-    }
-    /**
-     * @return Attack
-     */
-    public function getAttack()
-    {
-    }
-    /**
-     * Duration of attack from the start until the current moment (updated every 5
-     * minutes).
-     *
-     * @param string $duration
-     */
-    public function setDuration($duration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDuration()
-    {
-    }
-    /**
-     * Information about incoming requests evaluated by [Google Cloud Armor
-     * security policies](https://cloud.google.com/armor/docs/security-policy-
-     * overview).
-     *
-     * @param Requests $requests
-     */
-    public function setRequests(Requests $requests)
-    {
-    }
-    /**
-     * @return Requests
-     */
-    public function getRequests()
-    {
-    }
-    /**
-     * Information about the [Google Cloud Armor security
-     * policy](https://cloud.google.com/armor/docs/security-policy-overview)
-     * relevant to the finding.
-     *
-     * @param SecurityPolicy $securityPolicy
-     */
-    public function setSecurityPolicy(SecurityPolicy $securityPolicy)
-    {
-    }
-    /**
-     * @return SecurityPolicy
-     */
-    public function getSecurityPolicy()
-    {
-    }
-    /**
-     * Distinguish between volumetric & protocol DDoS attack and application layer
-     * attacks. For example, "L3_4" for Layer 3 and Layer 4 DDoS attacks, or "L_7"
-     * for Layer 7 DDoS attacks.
-     *
-     * @param string $threatVector
-     */
-    public function setThreatVector($threatVector)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getThreatVector()
+    class Google_Service_SecurityCommandCenter_CloudArmor extends \Google\Service\SecurityCommandCenter\CloudArmor
     {
     }
 }

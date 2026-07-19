@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryDataTransfer;
-
-class EventDrivenSchedule extends \Google\Model
-{
-    /**
-     * Pub/Sub subscription name used to receive events. Only Google Cloud Storage
-     * data source support this option. Format:
-     * projects/{project}/subscriptions/{subscription}
-     *
-     * @var string
-     */
-    public $pubsubSubscription;
-    /**
-     * Pub/Sub subscription name used to receive events. Only Google Cloud Storage
-     * data source support this option. Format:
-     * projects/{project}/subscriptions/{subscription}
-     *
-     * @param string $pubsubSubscription
-     */
-    public function setPubsubSubscription($pubsubSubscription)
+namespace Google\Service\BigQueryDataTransfer {
+    class EventDrivenSchedule extends \Google\Model
     {
+        /**
+         * Pub/Sub subscription name used to receive events. Only Google Cloud Storage
+         * data source support this option. Format:
+         * projects/{project}/subscriptions/{subscription}
+         *
+         * @var string
+         */
+        public $pubsubSubscription;
+        /**
+         * Pub/Sub subscription name used to receive events. Only Google Cloud Storage
+         * data source support this option. Format:
+         * projects/{project}/subscriptions/{subscription}
+         *
+         * @param string $pubsubSubscription
+         */
+        public function setPubsubSubscription($pubsubSubscription)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPubsubSubscription()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigQueryDataTransfer\EventDrivenSchedule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPubsubSubscription()
+    class Google_Service_BigQueryDataTransfer_EventDrivenSchedule extends \Google\Service\BigQueryDataTransfer\EventDrivenSchedule
     {
     }
 }

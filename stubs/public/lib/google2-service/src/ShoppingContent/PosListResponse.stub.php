@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class PosListResponse extends \Google\Collection
-{
-    protected $collection_key = 'resources';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "`content#posListResponse`".
-     *
-     * @var string
-     */
-    public $kind;
-    protected $resourcesType = PosStore::class;
-    protected $resourcesDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "`content#posListResponse`".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\ShoppingContent {
+    class PosListResponse extends \Google\Collection
     {
+        protected $collection_key = 'resources';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "`content#posListResponse`".
+         *
+         * @var string
+         */
+        public $kind;
+        protected $resourcesType = PosStore::class;
+        protected $resourcesDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "`content#posListResponse`".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param PosStore[] $resources
+         */
+        public function setResources($resources)
+        {
+        }
+        /**
+         * @return PosStore[]
+         */
+        public function getResources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\PosListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * @param PosStore[] $resources
-     */
-    public function setResources($resources)
-    {
-    }
-    /**
-     * @return PosStore[]
-     */
-    public function getResources()
+    class Google_Service_ShoppingContent_PosListResponse extends \Google\Service\ShoppingContent\PosListResponse
     {
     }
 }

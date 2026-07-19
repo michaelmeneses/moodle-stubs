@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Forms;
-
-class CreateWatchRequest extends \Google\Model
-{
-    protected $watchType = Watch::class;
-    protected $watchDataType = '';
-    /**
-     * The ID to use for the watch. If specified, the ID must not already be in
-     * use. If not specified, an ID is generated. This value should be 4-63
-     * characters, and valid characters are /a-z-/.
-     *
-     * @var string
-     */
-    public $watchId;
-    /**
-     * Required. The watch object. No ID should be set on this object; use
-     * `watch_id` instead.
-     *
-     * @param Watch $watch
-     */
-    public function setWatch(Watch $watch)
+namespace Google\Service\Forms {
+    class CreateWatchRequest extends \Google\Model
     {
+        protected $watchType = Watch::class;
+        protected $watchDataType = '';
+        /**
+         * The ID to use for the watch. If specified, the ID must not already be in
+         * use. If not specified, an ID is generated. This value should be 4-63
+         * characters, and valid characters are /a-z-/.
+         *
+         * @var string
+         */
+        public $watchId;
+        /**
+         * Required. The watch object. No ID should be set on this object; use
+         * `watch_id` instead.
+         *
+         * @param Watch $watch
+         */
+        public function setWatch(Watch $watch)
+        {
+        }
+        /**
+         * @return Watch
+         */
+        public function getWatch()
+        {
+        }
+        /**
+         * The ID to use for the watch. If specified, the ID must not already be in
+         * use. If not specified, an ID is generated. This value should be 4-63
+         * characters, and valid characters are /a-z-/.
+         *
+         * @param string $watchId
+         */
+        public function setWatchId($watchId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWatchId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Watch
+     * Runtime class alias of \Google\Service\Forms\CreateWatchRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getWatch()
-    {
-    }
-    /**
-     * The ID to use for the watch. If specified, the ID must not already be in
-     * use. If not specified, an ID is generated. This value should be 4-63
-     * characters, and valid characters are /a-z-/.
-     *
-     * @param string $watchId
-     */
-    public function setWatchId($watchId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWatchId()
+    class Google_Service_Forms_CreateWatchRequest extends \Google\Service\Forms\CreateWatchRequest
     {
     }
 }

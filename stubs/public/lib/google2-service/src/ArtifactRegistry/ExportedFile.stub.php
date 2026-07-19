@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class ExportedFile extends \Google\Collection
-{
-    protected $collection_key = 'hashes';
-    /**
-     * Cloud Storage Object path of the exported file. Examples:
-     * `dst_bucket/file1`, `dst_bucket/sub_dir/file1`
-     *
-     * @var string
-     */
-    public $gcsObjectPath;
-    protected $hashesType = Hash::class;
-    protected $hashesDataType = 'array';
-    /**
-     * Name of the exported artifact file. Format:
-     * `projects/p1/locations/us/repositories/repo1/files/file1`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Cloud Storage Object path of the exported file. Examples:
-     * `dst_bucket/file1`, `dst_bucket/sub_dir/file1`
-     *
-     * @param string $gcsObjectPath
-     */
-    public function setGcsObjectPath($gcsObjectPath)
+namespace Google\Service\ArtifactRegistry {
+    class ExportedFile extends \Google\Collection
     {
+        protected $collection_key = 'hashes';
+        /**
+         * Cloud Storage Object path of the exported file. Examples:
+         * `dst_bucket/file1`, `dst_bucket/sub_dir/file1`
+         *
+         * @var string
+         */
+        public $gcsObjectPath;
+        protected $hashesType = Hash::class;
+        protected $hashesDataType = 'array';
+        /**
+         * Name of the exported artifact file. Format:
+         * `projects/p1/locations/us/repositories/repo1/files/file1`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Cloud Storage Object path of the exported file. Examples:
+         * `dst_bucket/file1`, `dst_bucket/sub_dir/file1`
+         *
+         * @param string $gcsObjectPath
+         */
+        public function setGcsObjectPath($gcsObjectPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcsObjectPath()
+        {
+        }
+        /**
+         * The hashes of the file content.
+         *
+         * @param Hash[] $hashes
+         */
+        public function setHashes($hashes)
+        {
+        }
+        /**
+         * @return Hash[]
+         */
+        public function getHashes()
+        {
+        }
+        /**
+         * Name of the exported artifact file. Format:
+         * `projects/p1/locations/us/repositories/repo1/files/file1`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ArtifactRegistry\ExportedFile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcsObjectPath()
-    {
-    }
-    /**
-     * The hashes of the file content.
-     *
-     * @param Hash[] $hashes
-     */
-    public function setHashes($hashes)
-    {
-    }
-    /**
-     * @return Hash[]
-     */
-    public function getHashes()
-    {
-    }
-    /**
-     * Name of the exported artifact file. Format:
-     * `projects/p1/locations/us/repositories/repo1/files/file1`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_ArtifactRegistry_ExportedFile extends \Google\Service\ArtifactRegistry\ExportedFile
     {
     }
 }

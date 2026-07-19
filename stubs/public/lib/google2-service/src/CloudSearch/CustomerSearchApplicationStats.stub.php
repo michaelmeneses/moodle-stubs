@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class CustomerSearchApplicationStats extends \Google\Model
-{
-    /**
-     * The count of search applications for the date.
-     *
-     * @var string
-     */
-    public $count;
-    protected $dateType = Date::class;
-    protected $dateDataType = '';
-    /**
-     * The count of search applications for the date.
-     *
-     * @param string $count
-     */
-    public function setCount($count)
+namespace Google\Service\CloudSearch {
+    class CustomerSearchApplicationStats extends \Google\Model
     {
+        /**
+         * The count of search applications for the date.
+         *
+         * @var string
+         */
+        public $count;
+        protected $dateType = Date::class;
+        protected $dateDataType = '';
+        /**
+         * The count of search applications for the date.
+         *
+         * @param string $count
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCount()
+        {
+        }
+        /**
+         * The date for which search application stats were calculated.
+         *
+         * @param Date $date
+         */
+        public function setDate(Date $date)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getDate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\CustomerSearchApplicationStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCount()
-    {
-    }
-    /**
-     * The date for which search application stats were calculated.
-     *
-     * @param Date $date
-     */
-    public function setDate(Date $date)
-    {
-    }
-    /**
-     * @return Date
-     */
-    public function getDate()
+    class Google_Service_CloudSearch_CustomerSearchApplicationStats extends \Google\Service\CloudSearch\CustomerSearchApplicationStats
     {
     }
 }

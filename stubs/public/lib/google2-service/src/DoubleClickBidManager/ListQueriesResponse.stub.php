@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DoubleClickBidManager;
-
-class ListQueriesResponse extends \Google\Collection
-{
-    protected $collection_key = 'queries';
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * page_token field in the subsequent call to `queries.list` method to
-     * retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $queriesType = Query::class;
-    protected $queriesDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * page_token field in the subsequent call to `queries.list` method to
-     * retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\DoubleClickBidManager {
+    class ListQueriesResponse extends \Google\Collection
     {
+        protected $collection_key = 'queries';
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * page_token field in the subsequent call to `queries.list` method to
+         * retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $queriesType = Query::class;
+        protected $queriesDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * page_token field in the subsequent call to `queries.list` method to
+         * retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of queries. This field will be absent if empty.
+         *
+         * @param Query[] $queries
+         */
+        public function setQueries($queries)
+        {
+        }
+        /**
+         * @return Query[]
+         */
+        public function getQueries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DoubleClickBidManager\ListQueriesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of queries. This field will be absent if empty.
-     *
-     * @param Query[] $queries
-     */
-    public function setQueries($queries)
-    {
-    }
-    /**
-     * @return Query[]
-     */
-    public function getQueries()
+    class Google_Service_DoubleClickBidManager_ListQueriesResponse extends \Google\Service\DoubleClickBidManager\ListQueriesResponse
     {
     }
 }

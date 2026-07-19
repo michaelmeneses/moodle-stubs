@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class LinkedContentReference extends \Google\Model
-{
-    protected $sheetsChartReferenceType = SheetsChartReference::class;
-    protected $sheetsChartReferenceDataType = '';
-    /**
-     * A reference to the linked chart.
-     *
-     * @param SheetsChartReference $sheetsChartReference
-     */
-    public function setSheetsChartReference(SheetsChartReference $sheetsChartReference)
+namespace Google\Service\Docs {
+    class LinkedContentReference extends \Google\Model
     {
+        protected $sheetsChartReferenceType = SheetsChartReference::class;
+        protected $sheetsChartReferenceDataType = '';
+        /**
+         * A reference to the linked chart.
+         *
+         * @param SheetsChartReference $sheetsChartReference
+         */
+        public function setSheetsChartReference(SheetsChartReference $sheetsChartReference)
+        {
+        }
+        /**
+         * @return SheetsChartReference
+         */
+        public function getSheetsChartReference()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SheetsChartReference
+     * Runtime class alias of \Google\Service\Docs\LinkedContentReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSheetsChartReference()
+    class Google_Service_Docs_LinkedContentReference extends \Google\Service\Docs\LinkedContentReference
     {
     }
 }

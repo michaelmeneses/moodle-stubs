@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedKafka;
-
-class AccessConfig extends \Google\Collection
-{
-    protected $collection_key = 'networkConfigs';
-    protected $networkConfigsType = NetworkConfig::class;
-    protected $networkConfigsDataType = 'array';
-    /**
-     * Required. Virtual Private Cloud (VPC) networks that must be granted direct
-     * access to the Kafka cluster. Minimum of 1 network is required. Maximum 10
-     * networks can be specified.
-     *
-     * @param NetworkConfig[] $networkConfigs
-     */
-    public function setNetworkConfigs($networkConfigs)
+namespace Google\Service\ManagedKafka {
+    class AccessConfig extends \Google\Collection
     {
+        protected $collection_key = 'networkConfigs';
+        protected $networkConfigsType = NetworkConfig::class;
+        protected $networkConfigsDataType = 'array';
+        /**
+         * Required. Virtual Private Cloud (VPC) networks that must be granted direct
+         * access to the Kafka cluster. Minimum of 1 network is required. Maximum 10
+         * networks can be specified.
+         *
+         * @param NetworkConfig[] $networkConfigs
+         */
+        public function setNetworkConfigs($networkConfigs)
+        {
+        }
+        /**
+         * @return NetworkConfig[]
+         */
+        public function getNetworkConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return NetworkConfig[]
+     * Runtime class alias of \Google\Service\ManagedKafka\AccessConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNetworkConfigs()
+    class Google_Service_ManagedKafka_AccessConfig extends \Google\Service\ManagedKafka\AccessConfig
     {
     }
 }

@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateAuthorityService;
-
-class UserDefinedAccessUrls extends \Google\Collection
-{
-    protected $collection_key = 'crlAccessUrls';
-    /**
-     * Optional. A list of URLs where the issuer CA certificate may be downloaded,
-     * which appears in the "Authority Information Access" extension in the
-     * certificate. If specified, the default Cloud Storage URLs will be omitted.
-     *
-     * @var string[]
-     */
-    public $aiaIssuingCertificateUrls;
-    /**
-     * Optional. A list of URLs where to obtain CRL information, i.e. the
-     * DistributionPoint.fullName described by
-     * https://tools.ietf.org/html/rfc5280#section-4.2.1.13. If specified, the
-     * default Cloud Storage URLs will be omitted.
-     *
-     * @var string[]
-     */
-    public $crlAccessUrls;
-    /**
-     * Optional. A list of URLs where the issuer CA certificate may be downloaded,
-     * which appears in the "Authority Information Access" extension in the
-     * certificate. If specified, the default Cloud Storage URLs will be omitted.
-     *
-     * @param string[] $aiaIssuingCertificateUrls
-     */
-    public function setAiaIssuingCertificateUrls($aiaIssuingCertificateUrls)
+namespace Google\Service\CertificateAuthorityService {
+    class UserDefinedAccessUrls extends \Google\Collection
     {
+        protected $collection_key = 'crlAccessUrls';
+        /**
+         * Optional. A list of URLs where the issuer CA certificate may be downloaded,
+         * which appears in the "Authority Information Access" extension in the
+         * certificate. If specified, the default Cloud Storage URLs will be omitted.
+         *
+         * @var string[]
+         */
+        public $aiaIssuingCertificateUrls;
+        /**
+         * Optional. A list of URLs where to obtain CRL information, i.e. the
+         * DistributionPoint.fullName described by
+         * https://tools.ietf.org/html/rfc5280#section-4.2.1.13. If specified, the
+         * default Cloud Storage URLs will be omitted.
+         *
+         * @var string[]
+         */
+        public $crlAccessUrls;
+        /**
+         * Optional. A list of URLs where the issuer CA certificate may be downloaded,
+         * which appears in the "Authority Information Access" extension in the
+         * certificate. If specified, the default Cloud Storage URLs will be omitted.
+         *
+         * @param string[] $aiaIssuingCertificateUrls
+         */
+        public function setAiaIssuingCertificateUrls($aiaIssuingCertificateUrls)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAiaIssuingCertificateUrls()
+        {
+        }
+        /**
+         * Optional. A list of URLs where to obtain CRL information, i.e. the
+         * DistributionPoint.fullName described by
+         * https://tools.ietf.org/html/rfc5280#section-4.2.1.13. If specified, the
+         * default Cloud Storage URLs will be omitted.
+         *
+         * @param string[] $crlAccessUrls
+         */
+        public function setCrlAccessUrls($crlAccessUrls)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCrlAccessUrls()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CertificateAuthorityService\UserDefinedAccessUrls registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAiaIssuingCertificateUrls()
-    {
-    }
-    /**
-     * Optional. A list of URLs where to obtain CRL information, i.e. the
-     * DistributionPoint.fullName described by
-     * https://tools.ietf.org/html/rfc5280#section-4.2.1.13. If specified, the
-     * default Cloud Storage URLs will be omitted.
-     *
-     * @param string[] $crlAccessUrls
-     */
-    public function setCrlAccessUrls($crlAccessUrls)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getCrlAccessUrls()
+    class Google_Service_CertificateAuthorityService_UserDefinedAccessUrls extends \Google\Service\CertificateAuthorityService\UserDefinedAccessUrls
     {
     }
 }

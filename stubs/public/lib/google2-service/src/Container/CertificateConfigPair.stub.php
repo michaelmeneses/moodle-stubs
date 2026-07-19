@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class CertificateConfigPair extends \Google\Model
-{
-    protected $certType = CertificateConfig::class;
-    protected $certDataType = '';
-    protected $keyType = CertificateConfig::class;
-    protected $keyDataType = '';
-    /**
-     * Cert configures the client certificate.
-     *
-     * @param CertificateConfig $cert
-     */
-    public function setCert(CertificateConfig $cert)
+namespace Google\Service\Container {
+    class CertificateConfigPair extends \Google\Model
     {
+        protected $certType = CertificateConfig::class;
+        protected $certDataType = '';
+        protected $keyType = CertificateConfig::class;
+        protected $keyDataType = '';
+        /**
+         * Cert configures the client certificate.
+         *
+         * @param CertificateConfig $cert
+         */
+        public function setCert(CertificateConfig $cert)
+        {
+        }
+        /**
+         * @return CertificateConfig
+         */
+        public function getCert()
+        {
+        }
+        /**
+         * Key configures the client private key. Optional.
+         *
+         * @param CertificateConfig $key
+         */
+        public function setKey(CertificateConfig $key)
+        {
+        }
+        /**
+         * @return CertificateConfig
+         */
+        public function getKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CertificateConfig
+     * Runtime class alias of \Google\Service\Container\CertificateConfigPair registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCert()
-    {
-    }
-    /**
-     * Key configures the client private key. Optional.
-     *
-     * @param CertificateConfig $key
-     */
-    public function setKey(CertificateConfig $key)
-    {
-    }
-    /**
-     * @return CertificateConfig
-     */
-    public function getKey()
+    class Google_Service_Container_CertificateConfigPair extends \Google\Service\Container\CertificateConfigPair
     {
     }
 }

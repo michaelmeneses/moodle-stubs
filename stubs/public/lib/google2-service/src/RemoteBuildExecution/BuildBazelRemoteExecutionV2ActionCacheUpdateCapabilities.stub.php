@@ -21,15 +21,24 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class BuildBazelRemoteExecutionV2ActionCacheUpdateCapabilities extends \Google\Model
-{
-    public $updateEnabled;
-    public function setUpdateEnabled($updateEnabled)
+namespace Google\Service\RemoteBuildExecution {
+    class BuildBazelRemoteExecutionV2ActionCacheUpdateCapabilities extends \Google\Model
     {
+        public $updateEnabled;
+        public function setUpdateEnabled($updateEnabled)
+        {
+        }
+        public function getUpdateEnabled()
+        {
+        }
     }
-    public function getUpdateEnabled()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2ActionCacheUpdateCapabilities registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_RemoteBuildExecution_BuildBazelRemoteExecutionV2ActionCacheUpdateCapabilities extends \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2ActionCacheUpdateCapabilities
     {
     }
 }

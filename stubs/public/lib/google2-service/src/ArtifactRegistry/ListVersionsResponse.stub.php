@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class ListVersionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'versions';
-    /**
-     * The token to retrieve the next page of versions, or empty if there are no
-     * more versions to return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $versionsType = Version::class;
-    protected $versionsDataType = 'array';
-    /**
-     * The token to retrieve the next page of versions, or empty if there are no
-     * more versions to return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\ArtifactRegistry {
+    class ListVersionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'versions';
+        /**
+         * The token to retrieve the next page of versions, or empty if there are no
+         * more versions to return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $versionsType = Version::class;
+        protected $versionsDataType = 'array';
+        /**
+         * The token to retrieve the next page of versions, or empty if there are no
+         * more versions to return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The versions returned.
+         *
+         * @param Version[] $versions
+         */
+        public function setVersions($versions)
+        {
+        }
+        /**
+         * @return Version[]
+         */
+        public function getVersions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ArtifactRegistry\ListVersionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The versions returned.
-     *
-     * @param Version[] $versions
-     */
-    public function setVersions($versions)
-    {
-    }
-    /**
-     * @return Version[]
-     */
-    public function getVersions()
+    class Google_Service_ArtifactRegistry_ListVersionsResponse extends \Google\Service\ArtifactRegistry\ListVersionsResponse
     {
     }
 }

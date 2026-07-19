@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter;
-
-class MaliciousEntity extends \Google\Model
-{
-    /**
-     * The header from display name.
-     *
-     * @var string
-     */
-    public $displayName;
-    protected $entityType = User::class;
-    protected $entityDataType = '';
-    /**
-     * The sender email address.
-     *
-     * @var string
-     */
-    public $fromHeader;
-    /**
-     * The header from display name.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\AlertCenter {
+    class MaliciousEntity extends \Google\Model
     {
+        /**
+         * The header from display name.
+         *
+         * @var string
+         */
+        public $displayName;
+        protected $entityType = User::class;
+        protected $entityDataType = '';
+        /**
+         * The sender email address.
+         *
+         * @var string
+         */
+        public $fromHeader;
+        /**
+         * The header from display name.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The actor who triggered a gmail phishing alert.
+         *
+         * @param User $entity
+         */
+        public function setEntity(User $entity)
+        {
+        }
+        /**
+         * @return User
+         */
+        public function getEntity()
+        {
+        }
+        /**
+         * The sender email address.
+         *
+         * @param string $fromHeader
+         */
+        public function setFromHeader($fromHeader)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFromHeader()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AlertCenter\MaliciousEntity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The actor who triggered a gmail phishing alert.
-     *
-     * @param User $entity
-     */
-    public function setEntity(User $entity)
-    {
-    }
-    /**
-     * @return User
-     */
-    public function getEntity()
-    {
-    }
-    /**
-     * The sender email address.
-     *
-     * @param string $fromHeader
-     */
-    public function setFromHeader($fromHeader)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFromHeader()
+    class Google_Service_AlertCenter_MaliciousEntity extends \Google\Service\AlertCenter\MaliciousEntity
     {
     }
 }

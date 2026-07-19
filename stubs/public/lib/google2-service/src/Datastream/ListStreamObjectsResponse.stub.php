@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class ListStreamObjectsResponse extends \Google\Collection
-{
-    protected $collection_key = 'streamObjects';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $streamObjectsType = StreamObject::class;
-    protected $streamObjectsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Datastream {
+    class ListStreamObjectsResponse extends \Google\Collection
     {
+        protected $collection_key = 'streamObjects';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $streamObjectsType = StreamObject::class;
+        protected $streamObjectsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of stream objects.
+         *
+         * @param StreamObject[] $streamObjects
+         */
+        public function setStreamObjects($streamObjects)
+        {
+        }
+        /**
+         * @return StreamObject[]
+         */
+        public function getStreamObjects()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastream\ListStreamObjectsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of stream objects.
-     *
-     * @param StreamObject[] $streamObjects
-     */
-    public function setStreamObjects($streamObjects)
-    {
-    }
-    /**
-     * @return StreamObject[]
-     */
-    public function getStreamObjects()
+    class Google_Service_Datastream_ListStreamObjectsResponse extends \Google\Service\Datastream\ListStreamObjectsResponse
     {
     }
 }

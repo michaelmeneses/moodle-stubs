@@ -21,115 +21,124 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class ReportCrossDimensionReachCriteria extends \Google\Collection
-{
-    protected $collection_key = 'overlapMetricNames';
-    protected $breakdownType = SortedDimension::class;
-    protected $breakdownDataType = 'array';
-    protected $dateRangeType = DateRange::class;
-    protected $dateRangeDataType = '';
-    /**
-     * @var string
-     */
-    public $dimension;
-    protected $dimensionFiltersType = DimensionValue::class;
-    protected $dimensionFiltersDataType = 'array';
-    /**
-     * @var string[]
-     */
-    public $metricNames;
-    /**
-     * @var string[]
-     */
-    public $overlapMetricNames;
-    /**
-     * @var bool
-     */
-    public $pivoted;
-    /**
-     * @param SortedDimension[]
-     */
-    public function setBreakdown($breakdown)
+namespace Google\Service\Dfareporting {
+    class ReportCrossDimensionReachCriteria extends \Google\Collection
     {
+        protected $collection_key = 'overlapMetricNames';
+        protected $breakdownType = SortedDimension::class;
+        protected $breakdownDataType = 'array';
+        protected $dateRangeType = DateRange::class;
+        protected $dateRangeDataType = '';
+        /**
+         * @var string
+         */
+        public $dimension;
+        protected $dimensionFiltersType = DimensionValue::class;
+        protected $dimensionFiltersDataType = 'array';
+        /**
+         * @var string[]
+         */
+        public $metricNames;
+        /**
+         * @var string[]
+         */
+        public $overlapMetricNames;
+        /**
+         * @var bool
+         */
+        public $pivoted;
+        /**
+         * @param SortedDimension[]
+         */
+        public function setBreakdown($breakdown)
+        {
+        }
+        /**
+         * @return SortedDimension[]
+         */
+        public function getBreakdown()
+        {
+        }
+        /**
+         * @param DateRange
+         */
+        public function setDateRange(DateRange $dateRange)
+        {
+        }
+        /**
+         * @return DateRange
+         */
+        public function getDateRange()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDimension($dimension)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDimension()
+        {
+        }
+        /**
+         * @param DimensionValue[]
+         */
+        public function setDimensionFilters($dimensionFilters)
+        {
+        }
+        /**
+         * @return DimensionValue[]
+         */
+        public function getDimensionFilters()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setMetricNames($metricNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMetricNames()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setOverlapMetricNames($overlapMetricNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getOverlapMetricNames()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setPivoted($pivoted)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPivoted()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SortedDimension[]
+     * Runtime class alias of \Google\Service\Dfareporting\ReportCrossDimensionReachCriteria registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBreakdown()
-    {
-    }
-    /**
-     * @param DateRange
-     */
-    public function setDateRange(DateRange $dateRange)
-    {
-    }
-    /**
-     * @return DateRange
-     */
-    public function getDateRange()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDimension($dimension)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDimension()
-    {
-    }
-    /**
-     * @param DimensionValue[]
-     */
-    public function setDimensionFilters($dimensionFilters)
-    {
-    }
-    /**
-     * @return DimensionValue[]
-     */
-    public function getDimensionFilters()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setMetricNames($metricNames)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMetricNames()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setOverlapMetricNames($overlapMetricNames)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getOverlapMetricNames()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setPivoted($pivoted)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPivoted()
+    class Google_Service_Dfareporting_ReportCrossDimensionReachCriteria extends \Google\Service\Dfareporting\ReportCrossDimensionReachCriteria
     {
     }
 }

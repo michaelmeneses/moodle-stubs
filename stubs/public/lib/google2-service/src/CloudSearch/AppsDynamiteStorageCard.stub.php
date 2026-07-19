@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteStorageCard extends \Google\Collection
-{
-    protected $collection_key = 'sections';
-    protected $cardActionsType = AppsDynamiteStorageCardCardAction::class;
-    protected $cardActionsDataType = 'array';
-    protected $headerType = AppsDynamiteStorageCardCardHeader::class;
-    protected $headerDataType = '';
-    /**
-     * @var string
-     */
-    public $name;
-    protected $sectionsType = AppsDynamiteStorageCardSection::class;
-    protected $sectionsDataType = 'array';
-    /**
-     * @param AppsDynamiteStorageCardCardAction[]
-     */
-    public function setCardActions($cardActions)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteStorageCard extends \Google\Collection
     {
+        protected $collection_key = 'sections';
+        protected $cardActionsType = AppsDynamiteStorageCardCardAction::class;
+        protected $cardActionsDataType = 'array';
+        protected $headerType = AppsDynamiteStorageCardCardHeader::class;
+        protected $headerDataType = '';
+        /**
+         * @var string
+         */
+        public $name;
+        protected $sectionsType = AppsDynamiteStorageCardSection::class;
+        protected $sectionsDataType = 'array';
+        /**
+         * @param AppsDynamiteStorageCardCardAction[]
+         */
+        public function setCardActions($cardActions)
+        {
+        }
+        /**
+         * @return AppsDynamiteStorageCardCardAction[]
+         */
+        public function getCardActions()
+        {
+        }
+        /**
+         * @param AppsDynamiteStorageCardCardHeader
+         */
+        public function setHeader(AppsDynamiteStorageCardCardHeader $header)
+        {
+        }
+        /**
+         * @return AppsDynamiteStorageCardCardHeader
+         */
+        public function getHeader()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param AppsDynamiteStorageCardSection[]
+         */
+        public function setSections($sections)
+        {
+        }
+        /**
+         * @return AppsDynamiteStorageCardSection[]
+         */
+        public function getSections()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteStorageCardCardAction[]
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteStorageCard registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCardActions()
-    {
-    }
-    /**
-     * @param AppsDynamiteStorageCardCardHeader
-     */
-    public function setHeader(AppsDynamiteStorageCardCardHeader $header)
-    {
-    }
-    /**
-     * @return AppsDynamiteStorageCardCardHeader
-     */
-    public function getHeader()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param AppsDynamiteStorageCardSection[]
-     */
-    public function setSections($sections)
-    {
-    }
-    /**
-     * @return AppsDynamiteStorageCardSection[]
-     */
-    public function getSections()
+    class Google_Service_CloudSearch_AppsDynamiteStorageCard extends \Google\Service\CloudSearch\AppsDynamiteStorageCard
     {
     }
 }

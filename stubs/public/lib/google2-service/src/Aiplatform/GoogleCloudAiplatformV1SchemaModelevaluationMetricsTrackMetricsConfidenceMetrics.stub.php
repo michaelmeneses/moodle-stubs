@@ -21,114 +21,123 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaModelevaluationMetricsTrackMetricsConfidenceMetrics extends \Google\Model
-{
-    /**
-     * Bounding box intersection-over-union precision. Measures how well the
-     * bounding boxes overlap between each other (e.g. complete overlap or just
-     * barely above iou_threshold).
-     *
-     * @var float
-     */
-    public $boundingBoxIou;
-    /**
-     * The confidence threshold value used to compute the metrics.
-     *
-     * @var float
-     */
-    public $confidenceThreshold;
-    /**
-     * Mismatch rate, which measures the tracking consistency, i.e. correctness of
-     * instance ID continuity.
-     *
-     * @var float
-     */
-    public $mismatchRate;
-    /**
-     * Tracking precision.
-     *
-     * @var float
-     */
-    public $trackingPrecision;
-    /**
-     * Tracking recall.
-     *
-     * @var float
-     */
-    public $trackingRecall;
-    /**
-     * Bounding box intersection-over-union precision. Measures how well the
-     * bounding boxes overlap between each other (e.g. complete overlap or just
-     * barely above iou_threshold).
-     *
-     * @param float $boundingBoxIou
-     */
-    public function setBoundingBoxIou($boundingBoxIou)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaModelevaluationMetricsTrackMetricsConfidenceMetrics extends \Google\Model
     {
+        /**
+         * Bounding box intersection-over-union precision. Measures how well the
+         * bounding boxes overlap between each other (e.g. complete overlap or just
+         * barely above iou_threshold).
+         *
+         * @var float
+         */
+        public $boundingBoxIou;
+        /**
+         * The confidence threshold value used to compute the metrics.
+         *
+         * @var float
+         */
+        public $confidenceThreshold;
+        /**
+         * Mismatch rate, which measures the tracking consistency, i.e. correctness of
+         * instance ID continuity.
+         *
+         * @var float
+         */
+        public $mismatchRate;
+        /**
+         * Tracking precision.
+         *
+         * @var float
+         */
+        public $trackingPrecision;
+        /**
+         * Tracking recall.
+         *
+         * @var float
+         */
+        public $trackingRecall;
+        /**
+         * Bounding box intersection-over-union precision. Measures how well the
+         * bounding boxes overlap between each other (e.g. complete overlap or just
+         * barely above iou_threshold).
+         *
+         * @param float $boundingBoxIou
+         */
+        public function setBoundingBoxIou($boundingBoxIou)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getBoundingBoxIou()
+        {
+        }
+        /**
+         * The confidence threshold value used to compute the metrics.
+         *
+         * @param float $confidenceThreshold
+         */
+        public function setConfidenceThreshold($confidenceThreshold)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidenceThreshold()
+        {
+        }
+        /**
+         * Mismatch rate, which measures the tracking consistency, i.e. correctness of
+         * instance ID continuity.
+         *
+         * @param float $mismatchRate
+         */
+        public function setMismatchRate($mismatchRate)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getMismatchRate()
+        {
+        }
+        /**
+         * Tracking precision.
+         *
+         * @param float $trackingPrecision
+         */
+        public function setTrackingPrecision($trackingPrecision)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getTrackingPrecision()
+        {
+        }
+        /**
+         * Tracking recall.
+         *
+         * @param float $trackingRecall
+         */
+        public function setTrackingRecall($trackingRecall)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getTrackingRecall()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaModelevaluationMetricsTrackMetricsConfidenceMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBoundingBoxIou()
-    {
-    }
-    /**
-     * The confidence threshold value used to compute the metrics.
-     *
-     * @param float $confidenceThreshold
-     */
-    public function setConfidenceThreshold($confidenceThreshold)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getConfidenceThreshold()
-    {
-    }
-    /**
-     * Mismatch rate, which measures the tracking consistency, i.e. correctness of
-     * instance ID continuity.
-     *
-     * @param float $mismatchRate
-     */
-    public function setMismatchRate($mismatchRate)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getMismatchRate()
-    {
-    }
-    /**
-     * Tracking precision.
-     *
-     * @param float $trackingPrecision
-     */
-    public function setTrackingPrecision($trackingPrecision)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getTrackingPrecision()
-    {
-    }
-    /**
-     * Tracking recall.
-     *
-     * @param float $trackingRecall
-     */
-    public function setTrackingRecall($trackingRecall)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getTrackingRecall()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaModelevaluationMetricsTrackMetricsConfidenceMetrics extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaModelevaluationMetricsTrackMetricsConfidenceMetrics
     {
     }
 }

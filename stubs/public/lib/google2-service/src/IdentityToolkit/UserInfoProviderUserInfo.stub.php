@@ -21,172 +21,181 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\IdentityToolkit;
-
-class UserInfoProviderUserInfo extends \Google\Model
-{
-    /**
-     * The user's display name at the IDP.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * User's email at IDP.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * User's identifier at IDP.
-     *
-     * @var string
-     */
-    public $federatedId;
-    /**
-     * User's phone number.
-     *
-     * @var string
-     */
-    public $phoneNumber;
-    /**
-     * The user's photo url at the IDP.
-     *
-     * @var string
-     */
-    public $photoUrl;
-    /**
-     * The IdP ID. For white listed IdPs it's a short domain name, e.g.,
-     * google.com, aol.com, live.net and yahoo.com. For other OpenID IdPs it's the
-     * OP identifier.
-     *
-     * @var string
-     */
-    public $providerId;
-    /**
-     * User's raw identifier directly returned from IDP.
-     *
-     * @var string
-     */
-    public $rawId;
-    /**
-     * User's screen name at Twitter or login name at Github.
-     *
-     * @var string
-     */
-    public $screenName;
-    /**
-     * The user's display name at the IDP.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\IdentityToolkit {
+    class UserInfoProviderUserInfo extends \Google\Model
     {
+        /**
+         * The user's display name at the IDP.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * User's email at IDP.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * User's identifier at IDP.
+         *
+         * @var string
+         */
+        public $federatedId;
+        /**
+         * User's phone number.
+         *
+         * @var string
+         */
+        public $phoneNumber;
+        /**
+         * The user's photo url at the IDP.
+         *
+         * @var string
+         */
+        public $photoUrl;
+        /**
+         * The IdP ID. For white listed IdPs it's a short domain name, e.g.,
+         * google.com, aol.com, live.net and yahoo.com. For other OpenID IdPs it's the
+         * OP identifier.
+         *
+         * @var string
+         */
+        public $providerId;
+        /**
+         * User's raw identifier directly returned from IDP.
+         *
+         * @var string
+         */
+        public $rawId;
+        /**
+         * User's screen name at Twitter or login name at Github.
+         *
+         * @var string
+         */
+        public $screenName;
+        /**
+         * The user's display name at the IDP.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * User's email at IDP.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * User's identifier at IDP.
+         *
+         * @param string $federatedId
+         */
+        public function setFederatedId($federatedId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFederatedId()
+        {
+        }
+        /**
+         * User's phone number.
+         *
+         * @param string $phoneNumber
+         */
+        public function setPhoneNumber($phoneNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhoneNumber()
+        {
+        }
+        /**
+         * The user's photo url at the IDP.
+         *
+         * @param string $photoUrl
+         */
+        public function setPhotoUrl($photoUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhotoUrl()
+        {
+        }
+        /**
+         * The IdP ID. For white listed IdPs it's a short domain name, e.g.,
+         * google.com, aol.com, live.net and yahoo.com. For other OpenID IdPs it's the
+         * OP identifier.
+         *
+         * @param string $providerId
+         */
+        public function setProviderId($providerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProviderId()
+        {
+        }
+        /**
+         * User's raw identifier directly returned from IDP.
+         *
+         * @param string $rawId
+         */
+        public function setRawId($rawId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRawId()
+        {
+        }
+        /**
+         * User's screen name at Twitter or login name at Github.
+         *
+         * @param string $screenName
+         */
+        public function setScreenName($screenName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScreenName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\IdentityToolkit\UserInfoProviderUserInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * User's email at IDP.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEmail()
-    {
-    }
-    /**
-     * User's identifier at IDP.
-     *
-     * @param string $federatedId
-     */
-    public function setFederatedId($federatedId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFederatedId()
-    {
-    }
-    /**
-     * User's phone number.
-     *
-     * @param string $phoneNumber
-     */
-    public function setPhoneNumber($phoneNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhoneNumber()
-    {
-    }
-    /**
-     * The user's photo url at the IDP.
-     *
-     * @param string $photoUrl
-     */
-    public function setPhotoUrl($photoUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhotoUrl()
-    {
-    }
-    /**
-     * The IdP ID. For white listed IdPs it's a short domain name, e.g.,
-     * google.com, aol.com, live.net and yahoo.com. For other OpenID IdPs it's the
-     * OP identifier.
-     *
-     * @param string $providerId
-     */
-    public function setProviderId($providerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProviderId()
-    {
-    }
-    /**
-     * User's raw identifier directly returned from IDP.
-     *
-     * @param string $rawId
-     */
-    public function setRawId($rawId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRawId()
-    {
-    }
-    /**
-     * User's screen name at Twitter or login name at Github.
-     *
-     * @param string $screenName
-     */
-    public function setScreenName($screenName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScreenName()
+    class Google_Service_IdentityToolkit_UserInfoProviderUserInfo extends \Google\Service\IdentityToolkit\UserInfoProviderUserInfo
     {
     }
 }

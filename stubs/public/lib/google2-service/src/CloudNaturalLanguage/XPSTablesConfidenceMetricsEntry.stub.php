@@ -21,161 +21,170 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSTablesConfidenceMetricsEntry extends \Google\Model
-{
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSTablesConfidenceMetricsEntry extends \Google\Model
+    {
+        /**
+         * The confidence threshold value used to compute the metrics.
+         *
+         * @var 
+         */
+        public $confidenceThreshold;
+        /**
+         * The harmonic mean of recall and precision. (2 * precision * recall) /
+         * (precision + recall)
+         *
+         * @var 
+         */
+        public $f1Score;
+        /**
+         * False negative count.
+         *
+         * @var string
+         */
+        public $falseNegativeCount;
+        /**
+         * False positive count.
+         *
+         * @var string
+         */
+        public $falsePositiveCount;
+        /**
+         * FPR = #false positives / (#false positives + #true negatives)
+         *
+         * @var 
+         */
+        public $falsePositiveRate;
+        /**
+         * Precision = #true positives / (#true positives + #false positives).
+         *
+         * @var 
+         */
+        public $precision;
+        /**
+         * Recall = #true positives / (#true positives + #false negatives).
+         *
+         * @var 
+         */
+        public $recall;
+        /**
+         * True negative count.
+         *
+         * @var string
+         */
+        public $trueNegativeCount;
+        /**
+         * True positive count.
+         *
+         * @var string
+         */
+        public $truePositiveCount;
+        /**
+         * TPR = #true positives / (#true positives + #false negatvies)
+         *
+         * @var 
+         */
+        public $truePositiveRate;
+        public function setConfidenceThreshold($confidenceThreshold)
+        {
+        }
+        public function getConfidenceThreshold()
+        {
+        }
+        public function setF1Score($f1Score)
+        {
+        }
+        public function getF1Score()
+        {
+        }
+        /**
+         * False negative count.
+         *
+         * @param string $falseNegativeCount
+         */
+        public function setFalseNegativeCount($falseNegativeCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFalseNegativeCount()
+        {
+        }
+        /**
+         * False positive count.
+         *
+         * @param string $falsePositiveCount
+         */
+        public function setFalsePositiveCount($falsePositiveCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFalsePositiveCount()
+        {
+        }
+        public function setFalsePositiveRate($falsePositiveRate)
+        {
+        }
+        public function getFalsePositiveRate()
+        {
+        }
+        public function setPrecision($precision)
+        {
+        }
+        public function getPrecision()
+        {
+        }
+        public function setRecall($recall)
+        {
+        }
+        public function getRecall()
+        {
+        }
+        /**
+         * True negative count.
+         *
+         * @param string $trueNegativeCount
+         */
+        public function setTrueNegativeCount($trueNegativeCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTrueNegativeCount()
+        {
+        }
+        /**
+         * True positive count.
+         *
+         * @param string $truePositiveCount
+         */
+        public function setTruePositiveCount($truePositiveCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTruePositiveCount()
+        {
+        }
+        public function setTruePositiveRate($truePositiveRate)
+        {
+        }
+        public function getTruePositiveRate()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * The confidence threshold value used to compute the metrics.
-     *
-     * @var 
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSTablesConfidenceMetricsEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $confidenceThreshold;
-    /**
-     * The harmonic mean of recall and precision. (2 * precision * recall) /
-     * (precision + recall)
-     *
-     * @var 
-     */
-    public $f1Score;
-    /**
-     * False negative count.
-     *
-     * @var string
-     */
-    public $falseNegativeCount;
-    /**
-     * False positive count.
-     *
-     * @var string
-     */
-    public $falsePositiveCount;
-    /**
-     * FPR = #false positives / (#false positives + #true negatives)
-     *
-     * @var 
-     */
-    public $falsePositiveRate;
-    /**
-     * Precision = #true positives / (#true positives + #false positives).
-     *
-     * @var 
-     */
-    public $precision;
-    /**
-     * Recall = #true positives / (#true positives + #false negatives).
-     *
-     * @var 
-     */
-    public $recall;
-    /**
-     * True negative count.
-     *
-     * @var string
-     */
-    public $trueNegativeCount;
-    /**
-     * True positive count.
-     *
-     * @var string
-     */
-    public $truePositiveCount;
-    /**
-     * TPR = #true positives / (#true positives + #false negatvies)
-     *
-     * @var 
-     */
-    public $truePositiveRate;
-    public function setConfidenceThreshold($confidenceThreshold)
-    {
-    }
-    public function getConfidenceThreshold()
-    {
-    }
-    public function setF1Score($f1Score)
-    {
-    }
-    public function getF1Score()
-    {
-    }
-    /**
-     * False negative count.
-     *
-     * @param string $falseNegativeCount
-     */
-    public function setFalseNegativeCount($falseNegativeCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFalseNegativeCount()
-    {
-    }
-    /**
-     * False positive count.
-     *
-     * @param string $falsePositiveCount
-     */
-    public function setFalsePositiveCount($falsePositiveCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFalsePositiveCount()
-    {
-    }
-    public function setFalsePositiveRate($falsePositiveRate)
-    {
-    }
-    public function getFalsePositiveRate()
-    {
-    }
-    public function setPrecision($precision)
-    {
-    }
-    public function getPrecision()
-    {
-    }
-    public function setRecall($recall)
-    {
-    }
-    public function getRecall()
-    {
-    }
-    /**
-     * True negative count.
-     *
-     * @param string $trueNegativeCount
-     */
-    public function setTrueNegativeCount($trueNegativeCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTrueNegativeCount()
-    {
-    }
-    /**
-     * True positive count.
-     *
-     * @param string $truePositiveCount
-     */
-    public function setTruePositiveCount($truePositiveCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTruePositiveCount()
-    {
-    }
-    public function setTruePositiveRate($truePositiveRate)
-    {
-    }
-    public function getTruePositiveRate()
+    class Google_Service_CloudNaturalLanguage_XPSTablesConfidenceMetricsEntry extends \Google\Service\CloudNaturalLanguage\XPSTablesConfidenceMetricsEntry
     {
     }
 }

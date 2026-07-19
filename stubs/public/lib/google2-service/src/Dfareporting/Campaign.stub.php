@@ -21,544 +21,553 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class Campaign extends \Google\Collection
-{
-    /**
-     * The campaign contains EU political ads.
-     */
-    public const EU_POLITICAL_ADS_DECLARATION_CONTAINS_EU_POLITICAL_ADS = 'CONTAINS_EU_POLITICAL_ADS';
-    /**
-     * The campaign does not contain EU political ads.
-     */
-    public const EU_POLITICAL_ADS_DECLARATION_DOES_NOT_CONTAIN_EU_POLITICAL_ADS = 'DOES_NOT_CONTAIN_EU_POLITICAL_ADS';
-    protected $collection_key = 'eventTagOverrides';
-    /**
-     * Account ID of this campaign. This is a read-only field that can be left
-     * blank.
-     *
-     * @var string
-     */
-    public $accountId;
-    protected $adBlockingConfigurationType = AdBlockingConfiguration::class;
-    protected $adBlockingConfigurationDataType = '';
-    protected $additionalCreativeOptimizationConfigurationsType = CreativeOptimizationConfiguration::class;
-    protected $additionalCreativeOptimizationConfigurationsDataType = 'array';
-    /**
-     * Advertiser group ID of the associated advertiser.
-     *
-     * @var string
-     */
-    public $advertiserGroupId;
-    /**
-     * Advertiser ID of this campaign. This is a required field.
-     *
-     * @var string
-     */
-    public $advertiserId;
-    protected $advertiserIdDimensionValueType = DimensionValue::class;
-    protected $advertiserIdDimensionValueDataType = '';
-    /**
-     * Whether this campaign has been archived.
-     *
-     * @var bool
-     */
-    public $archived;
-    protected $audienceSegmentGroupsType = AudienceSegmentGroup::class;
-    protected $audienceSegmentGroupsDataType = 'array';
-    /**
-     * Billing invoice code included in the Campaign Manager client billing
-     * invoices associated with the campaign.
-     *
-     * @var string
-     */
-    public $billingInvoiceCode;
-    protected $clickThroughUrlSuffixPropertiesType = ClickThroughUrlSuffixProperties::class;
-    protected $clickThroughUrlSuffixPropertiesDataType = '';
-    /**
-     * Arbitrary comments about this campaign. Must be less than 256 characters
-     * long.
-     *
-     * @var string
-     */
-    public $comment;
-    protected $createInfoType = LastModifiedInfo::class;
-    protected $createInfoDataType = '';
-    /**
-     * List of creative group IDs that are assigned to the campaign.
-     *
-     * @var string[]
-     */
-    public $creativeGroupIds;
-    protected $creativeOptimizationConfigurationType = CreativeOptimizationConfiguration::class;
-    protected $creativeOptimizationConfigurationDataType = '';
-    protected $defaultClickThroughEventTagPropertiesType = DefaultClickThroughEventTagProperties::class;
-    protected $defaultClickThroughEventTagPropertiesDataType = '';
-    /**
-     * The default landing page ID for this campaign.
-     *
-     * @var string
-     */
-    public $defaultLandingPageId;
-    /**
-     * @var string
-     */
-    public $endDate;
-    /**
-     * Optional. Whether the campaign has EU political ads. Campaign Manager 360
-     * doesn't allow campaigns with EU political ads to serve in the EU. They can
-     * still serve in other regions.
-     *
-     * @var string
-     */
-    public $euPoliticalAdsDeclaration;
-    protected $eventTagOverridesType = EventTagOverride::class;
-    protected $eventTagOverridesDataType = 'array';
-    /**
-     * External ID for this campaign.
-     *
-     * @var string
-     */
-    public $externalId;
-    /**
-     * ID of this campaign. This is a read-only auto-generated field.
-     *
-     * @var string
-     */
-    public $id;
-    protected $idDimensionValueType = DimensionValue::class;
-    protected $idDimensionValueDataType = '';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#campaign".
-     *
-     * @var string
-     */
-    public $kind;
-    protected $lastModifiedInfoType = LastModifiedInfo::class;
-    protected $lastModifiedInfoDataType = '';
-    protected $measurementPartnerLinkType = MeasurementPartnerCampaignLink::class;
-    protected $measurementPartnerLinkDataType = '';
-    /**
-     * Name of this campaign. This is a required field and must be less than 512
-     * characters long and unique among campaigns of the same advertiser.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $startDate;
-    /**
-     * Subaccount ID of this campaign. This is a read-only field that can be left
-     * blank.
-     *
-     * @var string
-     */
-    public $subaccountId;
-    /**
-     * Account ID of this campaign. This is a read-only field that can be left
-     * blank.
-     *
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\Dfareporting {
+    class Campaign extends \Google\Collection
     {
+        /**
+         * The campaign contains EU political ads.
+         */
+        public const EU_POLITICAL_ADS_DECLARATION_CONTAINS_EU_POLITICAL_ADS = 'CONTAINS_EU_POLITICAL_ADS';
+        /**
+         * The campaign does not contain EU political ads.
+         */
+        public const EU_POLITICAL_ADS_DECLARATION_DOES_NOT_CONTAIN_EU_POLITICAL_ADS = 'DOES_NOT_CONTAIN_EU_POLITICAL_ADS';
+        protected $collection_key = 'eventTagOverrides';
+        /**
+         * Account ID of this campaign. This is a read-only field that can be left
+         * blank.
+         *
+         * @var string
+         */
+        public $accountId;
+        protected $adBlockingConfigurationType = AdBlockingConfiguration::class;
+        protected $adBlockingConfigurationDataType = '';
+        protected $additionalCreativeOptimizationConfigurationsType = CreativeOptimizationConfiguration::class;
+        protected $additionalCreativeOptimizationConfigurationsDataType = 'array';
+        /**
+         * Advertiser group ID of the associated advertiser.
+         *
+         * @var string
+         */
+        public $advertiserGroupId;
+        /**
+         * Advertiser ID of this campaign. This is a required field.
+         *
+         * @var string
+         */
+        public $advertiserId;
+        protected $advertiserIdDimensionValueType = DimensionValue::class;
+        protected $advertiserIdDimensionValueDataType = '';
+        /**
+         * Whether this campaign has been archived.
+         *
+         * @var bool
+         */
+        public $archived;
+        protected $audienceSegmentGroupsType = AudienceSegmentGroup::class;
+        protected $audienceSegmentGroupsDataType = 'array';
+        /**
+         * Billing invoice code included in the Campaign Manager client billing
+         * invoices associated with the campaign.
+         *
+         * @var string
+         */
+        public $billingInvoiceCode;
+        protected $clickThroughUrlSuffixPropertiesType = ClickThroughUrlSuffixProperties::class;
+        protected $clickThroughUrlSuffixPropertiesDataType = '';
+        /**
+         * Arbitrary comments about this campaign. Must be less than 256 characters
+         * long.
+         *
+         * @var string
+         */
+        public $comment;
+        protected $createInfoType = LastModifiedInfo::class;
+        protected $createInfoDataType = '';
+        /**
+         * List of creative group IDs that are assigned to the campaign.
+         *
+         * @var string[]
+         */
+        public $creativeGroupIds;
+        protected $creativeOptimizationConfigurationType = CreativeOptimizationConfiguration::class;
+        protected $creativeOptimizationConfigurationDataType = '';
+        protected $defaultClickThroughEventTagPropertiesType = DefaultClickThroughEventTagProperties::class;
+        protected $defaultClickThroughEventTagPropertiesDataType = '';
+        /**
+         * The default landing page ID for this campaign.
+         *
+         * @var string
+         */
+        public $defaultLandingPageId;
+        /**
+         * @var string
+         */
+        public $endDate;
+        /**
+         * Optional. Whether the campaign has EU political ads. Campaign Manager 360
+         * doesn't allow campaigns with EU political ads to serve in the EU. They can
+         * still serve in other regions.
+         *
+         * @var string
+         */
+        public $euPoliticalAdsDeclaration;
+        protected $eventTagOverridesType = EventTagOverride::class;
+        protected $eventTagOverridesDataType = 'array';
+        /**
+         * External ID for this campaign.
+         *
+         * @var string
+         */
+        public $externalId;
+        /**
+         * ID of this campaign. This is a read-only auto-generated field.
+         *
+         * @var string
+         */
+        public $id;
+        protected $idDimensionValueType = DimensionValue::class;
+        protected $idDimensionValueDataType = '';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#campaign".
+         *
+         * @var string
+         */
+        public $kind;
+        protected $lastModifiedInfoType = LastModifiedInfo::class;
+        protected $lastModifiedInfoDataType = '';
+        protected $measurementPartnerLinkType = MeasurementPartnerCampaignLink::class;
+        protected $measurementPartnerLinkDataType = '';
+        /**
+         * Name of this campaign. This is a required field and must be less than 512
+         * characters long and unique among campaigns of the same advertiser.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $startDate;
+        /**
+         * Subaccount ID of this campaign. This is a read-only field that can be left
+         * blank.
+         *
+         * @var string
+         */
+        public $subaccountId;
+        /**
+         * Account ID of this campaign. This is a read-only field that can be left
+         * blank.
+         *
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * Ad blocking settings for this campaign.
+         *
+         * @param AdBlockingConfiguration $adBlockingConfiguration
+         */
+        public function setAdBlockingConfiguration(AdBlockingConfiguration $adBlockingConfiguration)
+        {
+        }
+        /**
+         * @return AdBlockingConfiguration
+         */
+        public function getAdBlockingConfiguration()
+        {
+        }
+        /**
+         * Additional creative optimization configurations for the campaign.
+         *
+         * @param CreativeOptimizationConfiguration[] $additionalCreativeOptimizationConfigurations
+         */
+        public function setAdditionalCreativeOptimizationConfigurations($additionalCreativeOptimizationConfigurations)
+        {
+        }
+        /**
+         * @return CreativeOptimizationConfiguration[]
+         */
+        public function getAdditionalCreativeOptimizationConfigurations()
+        {
+        }
+        /**
+         * Advertiser group ID of the associated advertiser.
+         *
+         * @param string $advertiserGroupId
+         */
+        public function setAdvertiserGroupId($advertiserGroupId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdvertiserGroupId()
+        {
+        }
+        /**
+         * Advertiser ID of this campaign. This is a required field.
+         *
+         * @param string $advertiserId
+         */
+        public function setAdvertiserId($advertiserId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdvertiserId()
+        {
+        }
+        /**
+         * Dimension value for the advertiser ID of this campaign. This is a read-
+         * only, auto-generated field.
+         *
+         * @param DimensionValue $advertiserIdDimensionValue
+         */
+        public function setAdvertiserIdDimensionValue(DimensionValue $advertiserIdDimensionValue)
+        {
+        }
+        /**
+         * @return DimensionValue
+         */
+        public function getAdvertiserIdDimensionValue()
+        {
+        }
+        /**
+         * Whether this campaign has been archived.
+         *
+         * @param bool $archived
+         */
+        public function setArchived($archived)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getArchived()
+        {
+        }
+        /**
+         * Audience segment groups assigned to this campaign. Cannot have more than
+         * 300 segment groups.
+         *
+         * @param AudienceSegmentGroup[] $audienceSegmentGroups
+         */
+        public function setAudienceSegmentGroups($audienceSegmentGroups)
+        {
+        }
+        /**
+         * @return AudienceSegmentGroup[]
+         */
+        public function getAudienceSegmentGroups()
+        {
+        }
+        /**
+         * Billing invoice code included in the Campaign Manager client billing
+         * invoices associated with the campaign.
+         *
+         * @param string $billingInvoiceCode
+         */
+        public function setBillingInvoiceCode($billingInvoiceCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBillingInvoiceCode()
+        {
+        }
+        /**
+         * Click-through URL suffix override properties for this campaign.
+         *
+         * @param ClickThroughUrlSuffixProperties $clickThroughUrlSuffixProperties
+         */
+        public function setClickThroughUrlSuffixProperties(ClickThroughUrlSuffixProperties $clickThroughUrlSuffixProperties)
+        {
+        }
+        /**
+         * @return ClickThroughUrlSuffixProperties
+         */
+        public function getClickThroughUrlSuffixProperties()
+        {
+        }
+        /**
+         * Arbitrary comments about this campaign. Must be less than 256 characters
+         * long.
+         *
+         * @param string $comment
+         */
+        public function setComment($comment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getComment()
+        {
+        }
+        /**
+         * Information about the creation of this campaign. This is a read-only field.
+         *
+         * @param LastModifiedInfo $createInfo
+         */
+        public function setCreateInfo(LastModifiedInfo $createInfo)
+        {
+        }
+        /**
+         * @return LastModifiedInfo
+         */
+        public function getCreateInfo()
+        {
+        }
+        /**
+         * List of creative group IDs that are assigned to the campaign.
+         *
+         * @param string[] $creativeGroupIds
+         */
+        public function setCreativeGroupIds($creativeGroupIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCreativeGroupIds()
+        {
+        }
+        /**
+         * Creative optimization configuration for the campaign.
+         *
+         * @param CreativeOptimizationConfiguration $creativeOptimizationConfiguration
+         */
+        public function setCreativeOptimizationConfiguration(CreativeOptimizationConfiguration $creativeOptimizationConfiguration)
+        {
+        }
+        /**
+         * @return CreativeOptimizationConfiguration
+         */
+        public function getCreativeOptimizationConfiguration()
+        {
+        }
+        /**
+         * Click-through event tag ID override properties for this campaign.
+         *
+         * @param DefaultClickThroughEventTagProperties $defaultClickThroughEventTagProperties
+         */
+        public function setDefaultClickThroughEventTagProperties(DefaultClickThroughEventTagProperties $defaultClickThroughEventTagProperties)
+        {
+        }
+        /**
+         * @return DefaultClickThroughEventTagProperties
+         */
+        public function getDefaultClickThroughEventTagProperties()
+        {
+        }
+        /**
+         * The default landing page ID for this campaign.
+         *
+         * @param string $defaultLandingPageId
+         */
+        public function setDefaultLandingPageId($defaultLandingPageId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefaultLandingPageId()
+        {
+        }
+        /**
+         * @param string $endDate
+         */
+        public function setEndDate($endDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndDate()
+        {
+        }
+        /**
+         * Optional. Whether the campaign has EU political ads. Campaign Manager 360
+         * doesn't allow campaigns with EU political ads to serve in the EU. They can
+         * still serve in other regions.
+         *
+         * Accepted values: CONTAINS_EU_POLITICAL_ADS,
+         * DOES_NOT_CONTAIN_EU_POLITICAL_ADS
+         *
+         * @param self::EU_POLITICAL_ADS_DECLARATION_* $euPoliticalAdsDeclaration
+         */
+        public function setEuPoliticalAdsDeclaration($euPoliticalAdsDeclaration)
+        {
+        }
+        /**
+         * @return self::EU_POLITICAL_ADS_DECLARATION_*
+         */
+        public function getEuPoliticalAdsDeclaration()
+        {
+        }
+        /**
+         * Overrides that can be used to activate or deactivate advertiser event tags.
+         *
+         * @param EventTagOverride[] $eventTagOverrides
+         */
+        public function setEventTagOverrides($eventTagOverrides)
+        {
+        }
+        /**
+         * @return EventTagOverride[]
+         */
+        public function getEventTagOverrides()
+        {
+        }
+        /**
+         * External ID for this campaign.
+         *
+         * @param string $externalId
+         */
+        public function setExternalId($externalId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExternalId()
+        {
+        }
+        /**
+         * ID of this campaign. This is a read-only auto-generated field.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Dimension value for the ID of this campaign. This is a read-only, auto-
+         * generated field.
+         *
+         * @param DimensionValue $idDimensionValue
+         */
+        public function setIdDimensionValue(DimensionValue $idDimensionValue)
+        {
+        }
+        /**
+         * @return DimensionValue
+         */
+        public function getIdDimensionValue()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#campaign".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Information about the most recent modification of this campaign. This is a
+         * read-only field.
+         *
+         * @param LastModifiedInfo $lastModifiedInfo
+         */
+        public function setLastModifiedInfo(LastModifiedInfo $lastModifiedInfo)
+        {
+        }
+        /**
+         * @return LastModifiedInfo
+         */
+        public function getLastModifiedInfo()
+        {
+        }
+        /**
+         * Measurement partner campaign link for tag wrapping.
+         *
+         * @param MeasurementPartnerCampaignLink $measurementPartnerLink
+         */
+        public function setMeasurementPartnerLink(MeasurementPartnerCampaignLink $measurementPartnerLink)
+        {
+        }
+        /**
+         * @return MeasurementPartnerCampaignLink
+         */
+        public function getMeasurementPartnerLink()
+        {
+        }
+        /**
+         * Name of this campaign. This is a required field and must be less than 512
+         * characters long and unique among campaigns of the same advertiser.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string $startDate
+         */
+        public function setStartDate($startDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartDate()
+        {
+        }
+        /**
+         * Subaccount ID of this campaign. This is a read-only field that can be left
+         * blank.
+         *
+         * @param string $subaccountId
+         */
+        public function setSubaccountId($subaccountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubaccountId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\Campaign registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * Ad blocking settings for this campaign.
-     *
-     * @param AdBlockingConfiguration $adBlockingConfiguration
-     */
-    public function setAdBlockingConfiguration(AdBlockingConfiguration $adBlockingConfiguration)
-    {
-    }
-    /**
-     * @return AdBlockingConfiguration
-     */
-    public function getAdBlockingConfiguration()
-    {
-    }
-    /**
-     * Additional creative optimization configurations for the campaign.
-     *
-     * @param CreativeOptimizationConfiguration[] $additionalCreativeOptimizationConfigurations
-     */
-    public function setAdditionalCreativeOptimizationConfigurations($additionalCreativeOptimizationConfigurations)
-    {
-    }
-    /**
-     * @return CreativeOptimizationConfiguration[]
-     */
-    public function getAdditionalCreativeOptimizationConfigurations()
-    {
-    }
-    /**
-     * Advertiser group ID of the associated advertiser.
-     *
-     * @param string $advertiserGroupId
-     */
-    public function setAdvertiserGroupId($advertiserGroupId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAdvertiserGroupId()
-    {
-    }
-    /**
-     * Advertiser ID of this campaign. This is a required field.
-     *
-     * @param string $advertiserId
-     */
-    public function setAdvertiserId($advertiserId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAdvertiserId()
-    {
-    }
-    /**
-     * Dimension value for the advertiser ID of this campaign. This is a read-
-     * only, auto-generated field.
-     *
-     * @param DimensionValue $advertiserIdDimensionValue
-     */
-    public function setAdvertiserIdDimensionValue(DimensionValue $advertiserIdDimensionValue)
-    {
-    }
-    /**
-     * @return DimensionValue
-     */
-    public function getAdvertiserIdDimensionValue()
-    {
-    }
-    /**
-     * Whether this campaign has been archived.
-     *
-     * @param bool $archived
-     */
-    public function setArchived($archived)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getArchived()
-    {
-    }
-    /**
-     * Audience segment groups assigned to this campaign. Cannot have more than
-     * 300 segment groups.
-     *
-     * @param AudienceSegmentGroup[] $audienceSegmentGroups
-     */
-    public function setAudienceSegmentGroups($audienceSegmentGroups)
-    {
-    }
-    /**
-     * @return AudienceSegmentGroup[]
-     */
-    public function getAudienceSegmentGroups()
-    {
-    }
-    /**
-     * Billing invoice code included in the Campaign Manager client billing
-     * invoices associated with the campaign.
-     *
-     * @param string $billingInvoiceCode
-     */
-    public function setBillingInvoiceCode($billingInvoiceCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBillingInvoiceCode()
-    {
-    }
-    /**
-     * Click-through URL suffix override properties for this campaign.
-     *
-     * @param ClickThroughUrlSuffixProperties $clickThroughUrlSuffixProperties
-     */
-    public function setClickThroughUrlSuffixProperties(ClickThroughUrlSuffixProperties $clickThroughUrlSuffixProperties)
-    {
-    }
-    /**
-     * @return ClickThroughUrlSuffixProperties
-     */
-    public function getClickThroughUrlSuffixProperties()
-    {
-    }
-    /**
-     * Arbitrary comments about this campaign. Must be less than 256 characters
-     * long.
-     *
-     * @param string $comment
-     */
-    public function setComment($comment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getComment()
-    {
-    }
-    /**
-     * Information about the creation of this campaign. This is a read-only field.
-     *
-     * @param LastModifiedInfo $createInfo
-     */
-    public function setCreateInfo(LastModifiedInfo $createInfo)
-    {
-    }
-    /**
-     * @return LastModifiedInfo
-     */
-    public function getCreateInfo()
-    {
-    }
-    /**
-     * List of creative group IDs that are assigned to the campaign.
-     *
-     * @param string[] $creativeGroupIds
-     */
-    public function setCreativeGroupIds($creativeGroupIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getCreativeGroupIds()
-    {
-    }
-    /**
-     * Creative optimization configuration for the campaign.
-     *
-     * @param CreativeOptimizationConfiguration $creativeOptimizationConfiguration
-     */
-    public function setCreativeOptimizationConfiguration(CreativeOptimizationConfiguration $creativeOptimizationConfiguration)
-    {
-    }
-    /**
-     * @return CreativeOptimizationConfiguration
-     */
-    public function getCreativeOptimizationConfiguration()
-    {
-    }
-    /**
-     * Click-through event tag ID override properties for this campaign.
-     *
-     * @param DefaultClickThroughEventTagProperties $defaultClickThroughEventTagProperties
-     */
-    public function setDefaultClickThroughEventTagProperties(DefaultClickThroughEventTagProperties $defaultClickThroughEventTagProperties)
-    {
-    }
-    /**
-     * @return DefaultClickThroughEventTagProperties
-     */
-    public function getDefaultClickThroughEventTagProperties()
-    {
-    }
-    /**
-     * The default landing page ID for this campaign.
-     *
-     * @param string $defaultLandingPageId
-     */
-    public function setDefaultLandingPageId($defaultLandingPageId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDefaultLandingPageId()
-    {
-    }
-    /**
-     * @param string $endDate
-     */
-    public function setEndDate($endDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndDate()
-    {
-    }
-    /**
-     * Optional. Whether the campaign has EU political ads. Campaign Manager 360
-     * doesn't allow campaigns with EU political ads to serve in the EU. They can
-     * still serve in other regions.
-     *
-     * Accepted values: CONTAINS_EU_POLITICAL_ADS,
-     * DOES_NOT_CONTAIN_EU_POLITICAL_ADS
-     *
-     * @param self::EU_POLITICAL_ADS_DECLARATION_* $euPoliticalAdsDeclaration
-     */
-    public function setEuPoliticalAdsDeclaration($euPoliticalAdsDeclaration)
-    {
-    }
-    /**
-     * @return self::EU_POLITICAL_ADS_DECLARATION_*
-     */
-    public function getEuPoliticalAdsDeclaration()
-    {
-    }
-    /**
-     * Overrides that can be used to activate or deactivate advertiser event tags.
-     *
-     * @param EventTagOverride[] $eventTagOverrides
-     */
-    public function setEventTagOverrides($eventTagOverrides)
-    {
-    }
-    /**
-     * @return EventTagOverride[]
-     */
-    public function getEventTagOverrides()
-    {
-    }
-    /**
-     * External ID for this campaign.
-     *
-     * @param string $externalId
-     */
-    public function setExternalId($externalId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExternalId()
-    {
-    }
-    /**
-     * ID of this campaign. This is a read-only auto-generated field.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Dimension value for the ID of this campaign. This is a read-only, auto-
-     * generated field.
-     *
-     * @param DimensionValue $idDimensionValue
-     */
-    public function setIdDimensionValue(DimensionValue $idDimensionValue)
-    {
-    }
-    /**
-     * @return DimensionValue
-     */
-    public function getIdDimensionValue()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#campaign".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Information about the most recent modification of this campaign. This is a
-     * read-only field.
-     *
-     * @param LastModifiedInfo $lastModifiedInfo
-     */
-    public function setLastModifiedInfo(LastModifiedInfo $lastModifiedInfo)
-    {
-    }
-    /**
-     * @return LastModifiedInfo
-     */
-    public function getLastModifiedInfo()
-    {
-    }
-    /**
-     * Measurement partner campaign link for tag wrapping.
-     *
-     * @param MeasurementPartnerCampaignLink $measurementPartnerLink
-     */
-    public function setMeasurementPartnerLink(MeasurementPartnerCampaignLink $measurementPartnerLink)
-    {
-    }
-    /**
-     * @return MeasurementPartnerCampaignLink
-     */
-    public function getMeasurementPartnerLink()
-    {
-    }
-    /**
-     * Name of this campaign. This is a required field and must be less than 512
-     * characters long and unique among campaigns of the same advertiser.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string $startDate
-     */
-    public function setStartDate($startDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartDate()
-    {
-    }
-    /**
-     * Subaccount ID of this campaign. This is a read-only field that can be left
-     * blank.
-     *
-     * @param string $subaccountId
-     */
-    public function setSubaccountId($subaccountId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubaccountId()
+    class Google_Service_Dfareporting_Campaign extends \Google\Service\Dfareporting\Campaign
     {
     }
 }

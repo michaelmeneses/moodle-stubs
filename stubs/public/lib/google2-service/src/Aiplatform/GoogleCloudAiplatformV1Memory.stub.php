@@ -21,305 +21,314 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1Memory extends \Google\Collection
-{
-    protected $collection_key = 'topics';
-    /**
-     * Output only. Timestamp when this Memory was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Optional. Description of the Memory.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Optional. Input only. If true, no revision will be created for this
-     * request.
-     *
-     * @var bool
-     */
-    public $disableMemoryRevisions;
-    /**
-     * Optional. Display name of the Memory.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Optional. Timestamp of when this resource is considered expired. This is
-     * *always* provided on output when `expiration` is set on input, regardless
-     * of whether `expire_time` or `ttl` was provided.
-     *
-     * @var string
-     */
-    public $expireTime;
-    /**
-     * Required. Semantic knowledge extracted from the source content.
-     *
-     * @var string
-     */
-    public $fact;
-    /**
-     * Identifier. The resource name of the Memory. Format: `projects/{project}/lo
-     * cations/{location}/reasoningEngines/{reasoning_engine}/memories/{memory}`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. Input only. Timestamp of when the revision is considered expired.
-     * If not set, the memory revision will be kept until manually deleted.
-     *
-     * @var string
-     */
-    public $revisionExpireTime;
-    /**
-     * Optional. Input only. The labels to apply to the Memory Revision created as
-     * a result of this request.
-     *
-     * @var string[]
-     */
-    public $revisionLabels;
-    /**
-     * Optional. Input only. The TTL for the revision. The expiration time is
-     * computed: now + TTL.
-     *
-     * @var string
-     */
-    public $revisionTtl;
-    /**
-     * Required. Immutable. The scope of the Memory. Memories are isolated within
-     * their scope. The scope is defined when creating or generating memories.
-     * Scope values cannot contain the wildcard character '*'.
-     *
-     * @var string[]
-     */
-    public $scope;
-    protected $topicsType = GoogleCloudAiplatformV1MemoryTopicId::class;
-    protected $topicsDataType = 'array';
-    /**
-     * Optional. Input only. The TTL for this resource. The expiration time is
-     * computed: now + TTL.
-     *
-     * @var string
-     */
-    public $ttl;
-    /**
-     * Output only. Timestamp when this Memory was most recently updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. Timestamp when this Memory was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1Memory extends \Google\Collection
     {
+        protected $collection_key = 'topics';
+        /**
+         * Output only. Timestamp when this Memory was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Optional. Description of the Memory.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Optional. Input only. If true, no revision will be created for this
+         * request.
+         *
+         * @var bool
+         */
+        public $disableMemoryRevisions;
+        /**
+         * Optional. Display name of the Memory.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Optional. Timestamp of when this resource is considered expired. This is
+         * *always* provided on output when `expiration` is set on input, regardless
+         * of whether `expire_time` or `ttl` was provided.
+         *
+         * @var string
+         */
+        public $expireTime;
+        /**
+         * Required. Semantic knowledge extracted from the source content.
+         *
+         * @var string
+         */
+        public $fact;
+        /**
+         * Identifier. The resource name of the Memory. Format: `projects/{project}/lo
+         * cations/{location}/reasoningEngines/{reasoning_engine}/memories/{memory}`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. Input only. Timestamp of when the revision is considered expired.
+         * If not set, the memory revision will be kept until manually deleted.
+         *
+         * @var string
+         */
+        public $revisionExpireTime;
+        /**
+         * Optional. Input only. The labels to apply to the Memory Revision created as
+         * a result of this request.
+         *
+         * @var string[]
+         */
+        public $revisionLabels;
+        /**
+         * Optional. Input only. The TTL for the revision. The expiration time is
+         * computed: now + TTL.
+         *
+         * @var string
+         */
+        public $revisionTtl;
+        /**
+         * Required. Immutable. The scope of the Memory. Memories are isolated within
+         * their scope. The scope is defined when creating or generating memories.
+         * Scope values cannot contain the wildcard character '*'.
+         *
+         * @var string[]
+         */
+        public $scope;
+        protected $topicsType = GoogleCloudAiplatformV1MemoryTopicId::class;
+        protected $topicsDataType = 'array';
+        /**
+         * Optional. Input only. The TTL for this resource. The expiration time is
+         * computed: now + TTL.
+         *
+         * @var string
+         */
+        public $ttl;
+        /**
+         * Output only. Timestamp when this Memory was most recently updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. Timestamp when this Memory was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. Description of the Memory.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Optional. Input only. If true, no revision will be created for this
+         * request.
+         *
+         * @param bool $disableMemoryRevisions
+         */
+        public function setDisableMemoryRevisions($disableMemoryRevisions)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisableMemoryRevisions()
+        {
+        }
+        /**
+         * Optional. Display name of the Memory.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Optional. Timestamp of when this resource is considered expired. This is
+         * *always* provided on output when `expiration` is set on input, regardless
+         * of whether `expire_time` or `ttl` was provided.
+         *
+         * @param string $expireTime
+         */
+        public function setExpireTime($expireTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpireTime()
+        {
+        }
+        /**
+         * Required. Semantic knowledge extracted from the source content.
+         *
+         * @param string $fact
+         */
+        public function setFact($fact)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFact()
+        {
+        }
+        /**
+         * Identifier. The resource name of the Memory. Format: `projects/{project}/lo
+         * cations/{location}/reasoningEngines/{reasoning_engine}/memories/{memory}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. Input only. Timestamp of when the revision is considered expired.
+         * If not set, the memory revision will be kept until manually deleted.
+         *
+         * @param string $revisionExpireTime
+         */
+        public function setRevisionExpireTime($revisionExpireTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRevisionExpireTime()
+        {
+        }
+        /**
+         * Optional. Input only. The labels to apply to the Memory Revision created as
+         * a result of this request.
+         *
+         * @param string[] $revisionLabels
+         */
+        public function setRevisionLabels($revisionLabels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRevisionLabels()
+        {
+        }
+        /**
+         * Optional. Input only. The TTL for the revision. The expiration time is
+         * computed: now + TTL.
+         *
+         * @param string $revisionTtl
+         */
+        public function setRevisionTtl($revisionTtl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRevisionTtl()
+        {
+        }
+        /**
+         * Required. Immutable. The scope of the Memory. Memories are isolated within
+         * their scope. The scope is defined when creating or generating memories.
+         * Scope values cannot contain the wildcard character '*'.
+         *
+         * @param string[] $scope
+         */
+        public function setScope($scope)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getScope()
+        {
+        }
+        /**
+         * Optional. The Topics of the Memory.
+         *
+         * @param GoogleCloudAiplatformV1MemoryTopicId[] $topics
+         */
+        public function setTopics($topics)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1MemoryTopicId[]
+         */
+        public function getTopics()
+        {
+        }
+        /**
+         * Optional. Input only. The TTL for this resource. The expiration time is
+         * computed: now + TTL.
+         *
+         * @param string $ttl
+         */
+        public function setTtl($ttl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTtl()
+        {
+        }
+        /**
+         * Output only. Timestamp when this Memory was most recently updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1Memory registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. Description of the Memory.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Optional. Input only. If true, no revision will be created for this
-     * request.
-     *
-     * @param bool $disableMemoryRevisions
-     */
-    public function setDisableMemoryRevisions($disableMemoryRevisions)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDisableMemoryRevisions()
-    {
-    }
-    /**
-     * Optional. Display name of the Memory.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Optional. Timestamp of when this resource is considered expired. This is
-     * *always* provided on output when `expiration` is set on input, regardless
-     * of whether `expire_time` or `ttl` was provided.
-     *
-     * @param string $expireTime
-     */
-    public function setExpireTime($expireTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpireTime()
-    {
-    }
-    /**
-     * Required. Semantic knowledge extracted from the source content.
-     *
-     * @param string $fact
-     */
-    public function setFact($fact)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFact()
-    {
-    }
-    /**
-     * Identifier. The resource name of the Memory. Format: `projects/{project}/lo
-     * cations/{location}/reasoningEngines/{reasoning_engine}/memories/{memory}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. Input only. Timestamp of when the revision is considered expired.
-     * If not set, the memory revision will be kept until manually deleted.
-     *
-     * @param string $revisionExpireTime
-     */
-    public function setRevisionExpireTime($revisionExpireTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRevisionExpireTime()
-    {
-    }
-    /**
-     * Optional. Input only. The labels to apply to the Memory Revision created as
-     * a result of this request.
-     *
-     * @param string[] $revisionLabels
-     */
-    public function setRevisionLabels($revisionLabels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRevisionLabels()
-    {
-    }
-    /**
-     * Optional. Input only. The TTL for the revision. The expiration time is
-     * computed: now + TTL.
-     *
-     * @param string $revisionTtl
-     */
-    public function setRevisionTtl($revisionTtl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRevisionTtl()
-    {
-    }
-    /**
-     * Required. Immutable. The scope of the Memory. Memories are isolated within
-     * their scope. The scope is defined when creating or generating memories.
-     * Scope values cannot contain the wildcard character '*'.
-     *
-     * @param string[] $scope
-     */
-    public function setScope($scope)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getScope()
-    {
-    }
-    /**
-     * Optional. The Topics of the Memory.
-     *
-     * @param GoogleCloudAiplatformV1MemoryTopicId[] $topics
-     */
-    public function setTopics($topics)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1MemoryTopicId[]
-     */
-    public function getTopics()
-    {
-    }
-    /**
-     * Optional. Input only. The TTL for this resource. The expiration time is
-     * computed: now + TTL.
-     *
-     * @param string $ttl
-     */
-    public function setTtl($ttl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTtl()
-    {
-    }
-    /**
-     * Output only. Timestamp when this Memory was most recently updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1Memory extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1Memory
     {
     }
 }

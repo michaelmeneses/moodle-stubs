@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseDynamicLinks;
-
-class GetIosReopenAttributionRequest extends \Google\Model
-{
-    /**
-     * APP bundle ID.
-     *
-     * @var string
-     */
-    public $bundleId;
-    /**
-     * FDL link to be verified from an app universal link open. The FDL link can
-     * be one of: 1) short FDL. e.g. .page.link/, or 2) long FDL. e.g.
-     * .page.link/?{query params}, or 3) Invite FDL. e.g. .page.link/i/
-     *
-     * @var string
-     */
-    public $requestedLink;
-    /**
-     * Google SDK version. Version takes the form "$major.$minor.$patch"
-     *
-     * @var string
-     */
-    public $sdkVersion;
-    /**
-     * APP bundle ID.
-     *
-     * @param string $bundleId
-     */
-    public function setBundleId($bundleId)
+namespace Google\Service\FirebaseDynamicLinks {
+    class GetIosReopenAttributionRequest extends \Google\Model
     {
+        /**
+         * APP bundle ID.
+         *
+         * @var string
+         */
+        public $bundleId;
+        /**
+         * FDL link to be verified from an app universal link open. The FDL link can
+         * be one of: 1) short FDL. e.g. .page.link/, or 2) long FDL. e.g.
+         * .page.link/?{query params}, or 3) Invite FDL. e.g. .page.link/i/
+         *
+         * @var string
+         */
+        public $requestedLink;
+        /**
+         * Google SDK version. Version takes the form "$major.$minor.$patch"
+         *
+         * @var string
+         */
+        public $sdkVersion;
+        /**
+         * APP bundle ID.
+         *
+         * @param string $bundleId
+         */
+        public function setBundleId($bundleId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBundleId()
+        {
+        }
+        /**
+         * FDL link to be verified from an app universal link open. The FDL link can
+         * be one of: 1) short FDL. e.g. .page.link/, or 2) long FDL. e.g.
+         * .page.link/?{query params}, or 3) Invite FDL. e.g. .page.link/i/
+         *
+         * @param string $requestedLink
+         */
+        public function setRequestedLink($requestedLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestedLink()
+        {
+        }
+        /**
+         * Google SDK version. Version takes the form "$major.$minor.$patch"
+         *
+         * @param string $sdkVersion
+         */
+        public function setSdkVersion($sdkVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSdkVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\FirebaseDynamicLinks\GetIosReopenAttributionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBundleId()
-    {
-    }
-    /**
-     * FDL link to be verified from an app universal link open. The FDL link can
-     * be one of: 1) short FDL. e.g. .page.link/, or 2) long FDL. e.g.
-     * .page.link/?{query params}, or 3) Invite FDL. e.g. .page.link/i/
-     *
-     * @param string $requestedLink
-     */
-    public function setRequestedLink($requestedLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestedLink()
-    {
-    }
-    /**
-     * Google SDK version. Version takes the form "$major.$minor.$patch"
-     *
-     * @param string $sdkVersion
-     */
-    public function setSdkVersion($sdkVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSdkVersion()
+    class Google_Service_FirebaseDynamicLinks_GetIosReopenAttributionRequest extends \Google\Service\FirebaseDynamicLinks\GetIosReopenAttributionRequest
     {
     }
 }

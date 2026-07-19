@@ -21,84 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTubeReporting\Resource;
-
-/**
- * The "jobs" collection of methods.
- * Typical usage is:
- *  <code>
- *   $youtubereportingService = new Google\Service\YouTubeReporting(...);
- *   $jobs = $youtubereportingService->jobs;
- *  </code>
- */
-class Jobs extends \Google\Service\Resource
-{
+namespace Google\Service\YouTubeReporting\Resource {
+    use Google\Service\YouTubeReporting\Job;
+    use Google\Service\YouTubeReporting\ListJobsResponse;
+    use Google\Service\YouTubeReporting\YoutubereportingEmpty;
     /**
-     * Creates a job and returns it. (jobs.create)
-     *
-     * @param Job $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string onBehalfOfContentOwner The content owner's external ID on
-     * which behalf the user is acting on. If not set, the user is acting for
-     * himself (his own channel).
-     * @return Job
-     * @throws \Google\Service\Exception
+     * The "jobs" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $youtubereportingService = new Google\Service\YouTubeReporting(...);
+     *   $jobs = $youtubereportingService->jobs;
+     *  </code>
      */
-    public function create(Job $postBody, $optParams = [])
+    class Jobs extends \Google\Service\Resource
     {
+        /**
+         * Creates a job and returns it. (jobs.create)
+         *
+         * @param Job $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string onBehalfOfContentOwner The content owner's external ID on
+         * which behalf the user is acting on. If not set, the user is acting for
+         * himself (his own channel).
+         * @return Job
+         * @throws \Google\Service\Exception
+         */
+        public function create(Job $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a job. (jobs.delete)
+         *
+         * @param string $jobId The ID of the job to delete.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string onBehalfOfContentOwner The content owner's external ID on
+         * which behalf the user is acting on. If not set, the user is acting for
+         * himself (his own channel).
+         * @return YoutubereportingEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($jobId, $optParams = [])
+        {
+        }
+        /**
+         * Gets a job. (jobs.get)
+         *
+         * @param string $jobId The ID of the job to retrieve.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string onBehalfOfContentOwner The content owner's external ID on
+         * which behalf the user is acting on. If not set, the user is acting for
+         * himself (his own channel).
+         * @return Job
+         * @throws \Google\Service\Exception
+         */
+        public function get($jobId, $optParams = [])
+        {
+        }
+        /**
+         * Lists jobs. (jobs.listJobs)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool includeSystemManaged If set to true, also system-managed jobs
+         * will be returned; otherwise only user-created jobs will be returned. System-
+         * managed jobs can neither be modified nor deleted.
+         * @opt_param string onBehalfOfContentOwner The content owner's external ID on
+         * which behalf the user is acting on. If not set, the user is acting for
+         * himself (his own channel).
+         * @opt_param int pageSize Requested page size. Server may return fewer jobs
+         * than requested. If unspecified, server will pick an appropriate default.
+         * @opt_param string pageToken A token identifying a page of results the server
+         * should return. Typically, this is the value of
+         * ListReportTypesResponse.next_page_token returned in response to the previous
+         * call to the `ListJobs` method.
+         * @return ListJobsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listJobs($optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a job. (jobs.delete)
-     *
-     * @param string $jobId The ID of the job to delete.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string onBehalfOfContentOwner The content owner's external ID on
-     * which behalf the user is acting on. If not set, the user is acting for
-     * himself (his own channel).
-     * @return YoutubereportingEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\YouTubeReporting\Resource\Jobs registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($jobId, $optParams = [])
-    {
-    }
-    /**
-     * Gets a job. (jobs.get)
-     *
-     * @param string $jobId The ID of the job to retrieve.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string onBehalfOfContentOwner The content owner's external ID on
-     * which behalf the user is acting on. If not set, the user is acting for
-     * himself (his own channel).
-     * @return Job
-     * @throws \Google\Service\Exception
-     */
-    public function get($jobId, $optParams = [])
-    {
-    }
-    /**
-     * Lists jobs. (jobs.listJobs)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool includeSystemManaged If set to true, also system-managed jobs
-     * will be returned; otherwise only user-created jobs will be returned. System-
-     * managed jobs can neither be modified nor deleted.
-     * @opt_param string onBehalfOfContentOwner The content owner's external ID on
-     * which behalf the user is acting on. If not set, the user is acting for
-     * himself (his own channel).
-     * @opt_param int pageSize Requested page size. Server may return fewer jobs
-     * than requested. If unspecified, server will pick an appropriate default.
-     * @opt_param string pageToken A token identifying a page of results the server
-     * should return. Typically, this is the value of
-     * ListReportTypesResponse.next_page_token returned in response to the previous
-     * call to the `ListJobs` method.
-     * @return ListJobsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listJobs($optParams = [])
+    class Google_Service_YouTubeReporting_Resource_Jobs extends \Google\Service\YouTubeReporting\Resource\Jobs
     {
     }
 }

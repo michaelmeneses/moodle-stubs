@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class ChromeOsDeviceAction extends \Google\Model
-{
-    /**
-     * Action to be taken on the Chrome OS device.
-     *
-     * @var string
-     */
-    public $action;
-    /**
-     * Only used when the action is `deprovision`. With the `deprovision` action,
-     * this field is required. *Note*: The deprovision reason is audited because
-     * it might have implications on licenses for perpetual subscription
-     * customers.
-     *
-     * @var string
-     */
-    public $deprovisionReason;
-    /**
-     * Action to be taken on the Chrome OS device.
-     *
-     * @param string $action
-     */
-    public function setAction($action)
+namespace Google\Service\Directory {
+    class ChromeOsDeviceAction extends \Google\Model
     {
+        /**
+         * Action to be taken on the Chrome OS device.
+         *
+         * @var string
+         */
+        public $action;
+        /**
+         * Only used when the action is `deprovision`. With the `deprovision` action,
+         * this field is required. *Note*: The deprovision reason is audited because
+         * it might have implications on licenses for perpetual subscription
+         * customers.
+         *
+         * @var string
+         */
+        public $deprovisionReason;
+        /**
+         * Action to be taken on the Chrome OS device.
+         *
+         * @param string $action
+         */
+        public function setAction($action)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAction()
+        {
+        }
+        /**
+         * Only used when the action is `deprovision`. With the `deprovision` action,
+         * this field is required. *Note*: The deprovision reason is audited because
+         * it might have implications on licenses for perpetual subscription
+         * customers.
+         *
+         * @param string $deprovisionReason
+         */
+        public function setDeprovisionReason($deprovisionReason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeprovisionReason()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\ChromeOsDeviceAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAction()
-    {
-    }
-    /**
-     * Only used when the action is `deprovision`. With the `deprovision` action,
-     * this field is required. *Note*: The deprovision reason is audited because
-     * it might have implications on licenses for perpetual subscription
-     * customers.
-     *
-     * @param string $deprovisionReason
-     */
-    public function setDeprovisionReason($deprovisionReason)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeprovisionReason()
+    class Google_Service_Directory_ChromeOsDeviceAction extends \Google\Service\Directory\ChromeOsDeviceAction
     {
     }
 }

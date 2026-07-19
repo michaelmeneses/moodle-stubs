@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1UploadRagFileRequest extends \Google\Model
-{
-    protected $ragFileType = GoogleCloudAiplatformV1RagFile::class;
-    protected $ragFileDataType = '';
-    protected $uploadRagFileConfigType = GoogleCloudAiplatformV1UploadRagFileConfig::class;
-    protected $uploadRagFileConfigDataType = '';
-    /**
-     * Required. The RagFile to upload.
-     *
-     * @param GoogleCloudAiplatformV1RagFile $ragFile
-     */
-    public function setRagFile(GoogleCloudAiplatformV1RagFile $ragFile)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1UploadRagFileRequest extends \Google\Model
     {
+        protected $ragFileType = GoogleCloudAiplatformV1RagFile::class;
+        protected $ragFileDataType = '';
+        protected $uploadRagFileConfigType = GoogleCloudAiplatformV1UploadRagFileConfig::class;
+        protected $uploadRagFileConfigDataType = '';
+        /**
+         * Required. The RagFile to upload.
+         *
+         * @param GoogleCloudAiplatformV1RagFile $ragFile
+         */
+        public function setRagFile(GoogleCloudAiplatformV1RagFile $ragFile)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RagFile
+         */
+        public function getRagFile()
+        {
+        }
+        /**
+         * Required. The config for the RagFiles to be uploaded into the RagCorpus.
+         * VertexRagDataService.UploadRagFile.
+         *
+         * @param GoogleCloudAiplatformV1UploadRagFileConfig $uploadRagFileConfig
+         */
+        public function setUploadRagFileConfig(GoogleCloudAiplatformV1UploadRagFileConfig $uploadRagFileConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1UploadRagFileConfig
+         */
+        public function getUploadRagFileConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1RagFile
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1UploadRagFileRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRagFile()
-    {
-    }
-    /**
-     * Required. The config for the RagFiles to be uploaded into the RagCorpus.
-     * VertexRagDataService.UploadRagFile.
-     *
-     * @param GoogleCloudAiplatformV1UploadRagFileConfig $uploadRagFileConfig
-     */
-    public function setUploadRagFileConfig(GoogleCloudAiplatformV1UploadRagFileConfig $uploadRagFileConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1UploadRagFileConfig
-     */
-    public function getUploadRagFileConfig()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1UploadRagFileRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1UploadRagFileRequest
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter;
-
-class SSOProfileCreatedEvent extends \Google\Model
-{
-    /**
-     * sso profile name which got created
-     *
-     * @var string
-     */
-    public $inboundSsoProfileName;
-    /**
-     * sso profile name which got created
-     *
-     * @param string $inboundSsoProfileName
-     */
-    public function setInboundSsoProfileName($inboundSsoProfileName)
+namespace Google\Service\AlertCenter {
+    class SSOProfileCreatedEvent extends \Google\Model
     {
+        /**
+         * sso profile name which got created
+         *
+         * @var string
+         */
+        public $inboundSsoProfileName;
+        /**
+         * sso profile name which got created
+         *
+         * @param string $inboundSsoProfileName
+         */
+        public function setInboundSsoProfileName($inboundSsoProfileName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInboundSsoProfileName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AlertCenter\SSOProfileCreatedEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInboundSsoProfileName()
+    class Google_Service_AlertCenter_SSOProfileCreatedEvent extends \Google\Service\AlertCenter\SSOProfileCreatedEvent
     {
     }
 }

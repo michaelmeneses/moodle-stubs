@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ListModelEvaluationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'modelEvaluations';
-    protected $modelEvaluationsType = GoogleCloudAiplatformV1ModelEvaluation::class;
-    protected $modelEvaluationsDataType = 'array';
-    /**
-     * A token to retrieve next page of results. Pass to
-     * ListModelEvaluationsRequest.page_token to obtain that page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of ModelEvaluations in the requested page.
-     *
-     * @param GoogleCloudAiplatformV1ModelEvaluation[] $modelEvaluations
-     */
-    public function setModelEvaluations($modelEvaluations)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ListModelEvaluationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'modelEvaluations';
+        protected $modelEvaluationsType = GoogleCloudAiplatformV1ModelEvaluation::class;
+        protected $modelEvaluationsDataType = 'array';
+        /**
+         * A token to retrieve next page of results. Pass to
+         * ListModelEvaluationsRequest.page_token to obtain that page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of ModelEvaluations in the requested page.
+         *
+         * @param GoogleCloudAiplatformV1ModelEvaluation[] $modelEvaluations
+         */
+        public function setModelEvaluations($modelEvaluations)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ModelEvaluation[]
+         */
+        public function getModelEvaluations()
+        {
+        }
+        /**
+         * A token to retrieve next page of results. Pass to
+         * ListModelEvaluationsRequest.page_token to obtain that page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1ModelEvaluation[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListModelEvaluationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getModelEvaluations()
-    {
-    }
-    /**
-     * A token to retrieve next page of results. Pass to
-     * ListModelEvaluationsRequest.page_token to obtain that page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ListModelEvaluationsResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListModelEvaluationsResponse
     {
     }
 }

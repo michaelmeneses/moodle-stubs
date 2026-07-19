@@ -16,6 +16,9 @@
  */
 namespace Monolog;
 
+use Psr\Log\LoggerInterface;
+use Psr\Log\LogLevel;
+use ReflectionExtension;
 /**
  * Monolog POSIX signal handler
  *

@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter;
-
-class MergeInfo extends \Google\Model
-{
-    /**
-     * Optional. New alert ID. Reference the [google.apps.alertcenter.Alert] with
-     * this ID for the current state.
-     *
-     * @var string
-     */
-    public $newAlertId;
-    /**
-     * The new tracking ID from the parent incident.
-     *
-     * @var string
-     */
-    public $newIncidentTrackingId;
-    /**
-     * Optional. New alert ID. Reference the [google.apps.alertcenter.Alert] with
-     * this ID for the current state.
-     *
-     * @param string $newAlertId
-     */
-    public function setNewAlertId($newAlertId)
+namespace Google\Service\AlertCenter {
+    class MergeInfo extends \Google\Model
     {
+        /**
+         * Optional. New alert ID. Reference the [google.apps.alertcenter.Alert] with
+         * this ID for the current state.
+         *
+         * @var string
+         */
+        public $newAlertId;
+        /**
+         * The new tracking ID from the parent incident.
+         *
+         * @var string
+         */
+        public $newIncidentTrackingId;
+        /**
+         * Optional. New alert ID. Reference the [google.apps.alertcenter.Alert] with
+         * this ID for the current state.
+         *
+         * @param string $newAlertId
+         */
+        public function setNewAlertId($newAlertId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNewAlertId()
+        {
+        }
+        /**
+         * The new tracking ID from the parent incident.
+         *
+         * @param string $newIncidentTrackingId
+         */
+        public function setNewIncidentTrackingId($newIncidentTrackingId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNewIncidentTrackingId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AlertCenter\MergeInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNewAlertId()
-    {
-    }
-    /**
-     * The new tracking ID from the parent incident.
-     *
-     * @param string $newIncidentTrackingId
-     */
-    public function setNewIncidentTrackingId($newIncidentTrackingId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNewIncidentTrackingId()
+    class Google_Service_AlertCenter_MergeInfo extends \Google\Service\AlertCenter\MergeInfo
     {
     }
 }

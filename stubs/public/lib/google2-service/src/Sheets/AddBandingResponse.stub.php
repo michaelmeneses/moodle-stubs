@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class AddBandingResponse extends \Google\Model
-{
-    protected $bandedRangeType = BandedRange::class;
-    protected $bandedRangeDataType = '';
-    /**
-     * The banded range that was added.
-     *
-     * @param BandedRange $bandedRange
-     */
-    public function setBandedRange(BandedRange $bandedRange)
+namespace Google\Service\Sheets {
+    class AddBandingResponse extends \Google\Model
     {
+        protected $bandedRangeType = BandedRange::class;
+        protected $bandedRangeDataType = '';
+        /**
+         * The banded range that was added.
+         *
+         * @param BandedRange $bandedRange
+         */
+        public function setBandedRange(BandedRange $bandedRange)
+        {
+        }
+        /**
+         * @return BandedRange
+         */
+        public function getBandedRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BandedRange
+     * Runtime class alias of \Google\Service\Sheets\AddBandingResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBandedRange()
+    class Google_Service_Sheets_AddBandingResponse extends \Google\Service\Sheets\AddBandingResponse
     {
     }
 }

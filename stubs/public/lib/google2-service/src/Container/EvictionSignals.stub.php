@@ -21,194 +21,203 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class EvictionSignals extends \Google\Model
-{
-    /**
-     * Optional. Amount of storage available on filesystem that container runtime
-     * uses for storing images layers. If the container filesystem and image
-     * filesystem are not separate, then imagefs can store both image layers and
-     * writeable layers. Defines the amount of "imagefs.available" signal in
-     * kubelet. Default is unset, if not specified in the kubelet config. It
-     * takses percentage value for now. Sample format: "30%". Must be >= 15% and
-     * <= 50%. See https://kubernetes.io/docs/concepts/scheduling-eviction/node-
-     * pressure-eviction/#eviction-signals
-     *
-     * @var string
-     */
-    public $imagefsAvailable;
-    /**
-     * Optional. Amount of inodes available on filesystem that container runtime
-     * uses for storing images layers. Defines the amount of "imagefs.inodesFree"
-     * signal in kubelet. Default is unset, if not specified in the kubelet
-     * config. Linux only. It takses percentage value for now. Sample format:
-     * "30%". Must be >= 5% and <= 50%. See
-     * https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
-     * eviction/#eviction-signals
-     *
-     * @var string
-     */
-    public $imagefsInodesFree;
-    /**
-     * Optional. Memory available (i.e. capacity - workingSet), in bytes. Defines
-     * the amount of "memory.available" signal in kubelet. Default is unset, if
-     * not specified in the kubelet config. Format: positive number + unit, e.g.
-     * 100Ki, 10Mi, 5Gi. Valid units are Ki, Mi, Gi. Must be >= 100Mi and <= 50%
-     * of the node's memory. See https://kubernetes.io/docs/concepts/scheduling-
-     * eviction/node-pressure-eviction/#eviction-signals
-     *
-     * @var string
-     */
-    public $memoryAvailable;
-    /**
-     * Optional. Amount of storage available on filesystem that kubelet uses for
-     * volumes, daemon logs, etc. Defines the amount of "nodefs.available" signal
-     * in kubelet. Default is unset, if not specified in the kubelet config. It
-     * takses percentage value for now. Sample format: "30%". Must be >= 10% and
-     * <= 50%. See https://kubernetes.io/docs/concepts/scheduling-eviction/node-
-     * pressure-eviction/#eviction-signals
-     *
-     * @var string
-     */
-    public $nodefsAvailable;
-    /**
-     * Optional. Amount of inodes available on filesystem that kubelet uses for
-     * volumes, daemon logs, etc. Defines the amount of "nodefs.inodesFree" signal
-     * in kubelet. Default is unset, if not specified in the kubelet config. Linux
-     * only. It takses percentage value for now. Sample format: "30%". Must be >=
-     * 5% and <= 50%. See https://kubernetes.io/docs/concepts/scheduling-
-     * eviction/node-pressure-eviction/#eviction-signals
-     *
-     * @var string
-     */
-    public $nodefsInodesFree;
-    /**
-     * Optional. Amount of PID available for pod allocation. Defines the amount of
-     * "pid.available" signal in kubelet. Default is unset, if not specified in
-     * the kubelet config. It takses percentage value for now. Sample format:
-     * "30%". Must be >= 10% and <= 50%. See
-     * https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
-     * eviction/#eviction-signals
-     *
-     * @var string
-     */
-    public $pidAvailable;
-    /**
-     * Optional. Amount of storage available on filesystem that container runtime
-     * uses for storing images layers. If the container filesystem and image
-     * filesystem are not separate, then imagefs can store both image layers and
-     * writeable layers. Defines the amount of "imagefs.available" signal in
-     * kubelet. Default is unset, if not specified in the kubelet config. It
-     * takses percentage value for now. Sample format: "30%". Must be >= 15% and
-     * <= 50%. See https://kubernetes.io/docs/concepts/scheduling-eviction/node-
-     * pressure-eviction/#eviction-signals
-     *
-     * @param string $imagefsAvailable
-     */
-    public function setImagefsAvailable($imagefsAvailable)
+namespace Google\Service\Container {
+    class EvictionSignals extends \Google\Model
     {
+        /**
+         * Optional. Amount of storage available on filesystem that container runtime
+         * uses for storing images layers. If the container filesystem and image
+         * filesystem are not separate, then imagefs can store both image layers and
+         * writeable layers. Defines the amount of "imagefs.available" signal in
+         * kubelet. Default is unset, if not specified in the kubelet config. It
+         * takses percentage value for now. Sample format: "30%". Must be >= 15% and
+         * <= 50%. See https://kubernetes.io/docs/concepts/scheduling-eviction/node-
+         * pressure-eviction/#eviction-signals
+         *
+         * @var string
+         */
+        public $imagefsAvailable;
+        /**
+         * Optional. Amount of inodes available on filesystem that container runtime
+         * uses for storing images layers. Defines the amount of "imagefs.inodesFree"
+         * signal in kubelet. Default is unset, if not specified in the kubelet
+         * config. Linux only. It takses percentage value for now. Sample format:
+         * "30%". Must be >= 5% and <= 50%. See
+         * https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
+         * eviction/#eviction-signals
+         *
+         * @var string
+         */
+        public $imagefsInodesFree;
+        /**
+         * Optional. Memory available (i.e. capacity - workingSet), in bytes. Defines
+         * the amount of "memory.available" signal in kubelet. Default is unset, if
+         * not specified in the kubelet config. Format: positive number + unit, e.g.
+         * 100Ki, 10Mi, 5Gi. Valid units are Ki, Mi, Gi. Must be >= 100Mi and <= 50%
+         * of the node's memory. See https://kubernetes.io/docs/concepts/scheduling-
+         * eviction/node-pressure-eviction/#eviction-signals
+         *
+         * @var string
+         */
+        public $memoryAvailable;
+        /**
+         * Optional. Amount of storage available on filesystem that kubelet uses for
+         * volumes, daemon logs, etc. Defines the amount of "nodefs.available" signal
+         * in kubelet. Default is unset, if not specified in the kubelet config. It
+         * takses percentage value for now. Sample format: "30%". Must be >= 10% and
+         * <= 50%. See https://kubernetes.io/docs/concepts/scheduling-eviction/node-
+         * pressure-eviction/#eviction-signals
+         *
+         * @var string
+         */
+        public $nodefsAvailable;
+        /**
+         * Optional. Amount of inodes available on filesystem that kubelet uses for
+         * volumes, daemon logs, etc. Defines the amount of "nodefs.inodesFree" signal
+         * in kubelet. Default is unset, if not specified in the kubelet config. Linux
+         * only. It takses percentage value for now. Sample format: "30%". Must be >=
+         * 5% and <= 50%. See https://kubernetes.io/docs/concepts/scheduling-
+         * eviction/node-pressure-eviction/#eviction-signals
+         *
+         * @var string
+         */
+        public $nodefsInodesFree;
+        /**
+         * Optional. Amount of PID available for pod allocation. Defines the amount of
+         * "pid.available" signal in kubelet. Default is unset, if not specified in
+         * the kubelet config. It takses percentage value for now. Sample format:
+         * "30%". Must be >= 10% and <= 50%. See
+         * https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
+         * eviction/#eviction-signals
+         *
+         * @var string
+         */
+        public $pidAvailable;
+        /**
+         * Optional. Amount of storage available on filesystem that container runtime
+         * uses for storing images layers. If the container filesystem and image
+         * filesystem are not separate, then imagefs can store both image layers and
+         * writeable layers. Defines the amount of "imagefs.available" signal in
+         * kubelet. Default is unset, if not specified in the kubelet config. It
+         * takses percentage value for now. Sample format: "30%". Must be >= 15% and
+         * <= 50%. See https://kubernetes.io/docs/concepts/scheduling-eviction/node-
+         * pressure-eviction/#eviction-signals
+         *
+         * @param string $imagefsAvailable
+         */
+        public function setImagefsAvailable($imagefsAvailable)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImagefsAvailable()
+        {
+        }
+        /**
+         * Optional. Amount of inodes available on filesystem that container runtime
+         * uses for storing images layers. Defines the amount of "imagefs.inodesFree"
+         * signal in kubelet. Default is unset, if not specified in the kubelet
+         * config. Linux only. It takses percentage value for now. Sample format:
+         * "30%". Must be >= 5% and <= 50%. See
+         * https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
+         * eviction/#eviction-signals
+         *
+         * @param string $imagefsInodesFree
+         */
+        public function setImagefsInodesFree($imagefsInodesFree)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImagefsInodesFree()
+        {
+        }
+        /**
+         * Optional. Memory available (i.e. capacity - workingSet), in bytes. Defines
+         * the amount of "memory.available" signal in kubelet. Default is unset, if
+         * not specified in the kubelet config. Format: positive number + unit, e.g.
+         * 100Ki, 10Mi, 5Gi. Valid units are Ki, Mi, Gi. Must be >= 100Mi and <= 50%
+         * of the node's memory. See https://kubernetes.io/docs/concepts/scheduling-
+         * eviction/node-pressure-eviction/#eviction-signals
+         *
+         * @param string $memoryAvailable
+         */
+        public function setMemoryAvailable($memoryAvailable)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMemoryAvailable()
+        {
+        }
+        /**
+         * Optional. Amount of storage available on filesystem that kubelet uses for
+         * volumes, daemon logs, etc. Defines the amount of "nodefs.available" signal
+         * in kubelet. Default is unset, if not specified in the kubelet config. It
+         * takses percentage value for now. Sample format: "30%". Must be >= 10% and
+         * <= 50%. See https://kubernetes.io/docs/concepts/scheduling-eviction/node-
+         * pressure-eviction/#eviction-signals
+         *
+         * @param string $nodefsAvailable
+         */
+        public function setNodefsAvailable($nodefsAvailable)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNodefsAvailable()
+        {
+        }
+        /**
+         * Optional. Amount of inodes available on filesystem that kubelet uses for
+         * volumes, daemon logs, etc. Defines the amount of "nodefs.inodesFree" signal
+         * in kubelet. Default is unset, if not specified in the kubelet config. Linux
+         * only. It takses percentage value for now. Sample format: "30%". Must be >=
+         * 5% and <= 50%. See https://kubernetes.io/docs/concepts/scheduling-
+         * eviction/node-pressure-eviction/#eviction-signals
+         *
+         * @param string $nodefsInodesFree
+         */
+        public function setNodefsInodesFree($nodefsInodesFree)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNodefsInodesFree()
+        {
+        }
+        /**
+         * Optional. Amount of PID available for pod allocation. Defines the amount of
+         * "pid.available" signal in kubelet. Default is unset, if not specified in
+         * the kubelet config. It takses percentage value for now. Sample format:
+         * "30%". Must be >= 10% and <= 50%. See
+         * https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
+         * eviction/#eviction-signals
+         *
+         * @param string $pidAvailable
+         */
+        public function setPidAvailable($pidAvailable)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPidAvailable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Container\EvictionSignals registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImagefsAvailable()
-    {
-    }
-    /**
-     * Optional. Amount of inodes available on filesystem that container runtime
-     * uses for storing images layers. Defines the amount of "imagefs.inodesFree"
-     * signal in kubelet. Default is unset, if not specified in the kubelet
-     * config. Linux only. It takses percentage value for now. Sample format:
-     * "30%". Must be >= 5% and <= 50%. See
-     * https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
-     * eviction/#eviction-signals
-     *
-     * @param string $imagefsInodesFree
-     */
-    public function setImagefsInodesFree($imagefsInodesFree)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImagefsInodesFree()
-    {
-    }
-    /**
-     * Optional. Memory available (i.e. capacity - workingSet), in bytes. Defines
-     * the amount of "memory.available" signal in kubelet. Default is unset, if
-     * not specified in the kubelet config. Format: positive number + unit, e.g.
-     * 100Ki, 10Mi, 5Gi. Valid units are Ki, Mi, Gi. Must be >= 100Mi and <= 50%
-     * of the node's memory. See https://kubernetes.io/docs/concepts/scheduling-
-     * eviction/node-pressure-eviction/#eviction-signals
-     *
-     * @param string $memoryAvailable
-     */
-    public function setMemoryAvailable($memoryAvailable)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMemoryAvailable()
-    {
-    }
-    /**
-     * Optional. Amount of storage available on filesystem that kubelet uses for
-     * volumes, daemon logs, etc. Defines the amount of "nodefs.available" signal
-     * in kubelet. Default is unset, if not specified in the kubelet config. It
-     * takses percentage value for now. Sample format: "30%". Must be >= 10% and
-     * <= 50%. See https://kubernetes.io/docs/concepts/scheduling-eviction/node-
-     * pressure-eviction/#eviction-signals
-     *
-     * @param string $nodefsAvailable
-     */
-    public function setNodefsAvailable($nodefsAvailable)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNodefsAvailable()
-    {
-    }
-    /**
-     * Optional. Amount of inodes available on filesystem that kubelet uses for
-     * volumes, daemon logs, etc. Defines the amount of "nodefs.inodesFree" signal
-     * in kubelet. Default is unset, if not specified in the kubelet config. Linux
-     * only. It takses percentage value for now. Sample format: "30%". Must be >=
-     * 5% and <= 50%. See https://kubernetes.io/docs/concepts/scheduling-
-     * eviction/node-pressure-eviction/#eviction-signals
-     *
-     * @param string $nodefsInodesFree
-     */
-    public function setNodefsInodesFree($nodefsInodesFree)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNodefsInodesFree()
-    {
-    }
-    /**
-     * Optional. Amount of PID available for pod allocation. Defines the amount of
-     * "pid.available" signal in kubelet. Default is unset, if not specified in
-     * the kubelet config. It takses percentage value for now. Sample format:
-     * "30%". Must be >= 10% and <= 50%. See
-     * https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
-     * eviction/#eviction-signals
-     *
-     * @param string $pidAvailable
-     */
-    public function setPidAvailable($pidAvailable)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPidAvailable()
+    class Google_Service_Container_EvictionSignals extends \Google\Service\Container\EvictionSignals
     {
     }
 }

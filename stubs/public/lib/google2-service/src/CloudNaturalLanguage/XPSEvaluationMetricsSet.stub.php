@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSEvaluationMetricsSet extends \Google\Collection
-{
-    protected $collection_key = 'evaluationMetrics';
-    protected $evaluationMetricsType = XPSEvaluationMetrics::class;
-    protected $evaluationMetricsDataType = 'array';
-    protected $fileSpecType = XPSFileSpec::class;
-    protected $fileSpecDataType = '';
-    /**
-     * Number of the evaluation metrics (usually one per label plus overall).
-     *
-     * @var string
-     */
-    public $numEvaluationMetrics;
-    /**
-     * Inline EvaluationMetrics - should be relatively small. For passing large
-     * quantities of exhaustive metrics, use file_spec.
-     *
-     * @param XPSEvaluationMetrics[] $evaluationMetrics
-     */
-    public function setEvaluationMetrics($evaluationMetrics)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSEvaluationMetricsSet extends \Google\Collection
     {
+        protected $collection_key = 'evaluationMetrics';
+        protected $evaluationMetricsType = XPSEvaluationMetrics::class;
+        protected $evaluationMetricsDataType = 'array';
+        protected $fileSpecType = XPSFileSpec::class;
+        protected $fileSpecDataType = '';
+        /**
+         * Number of the evaluation metrics (usually one per label plus overall).
+         *
+         * @var string
+         */
+        public $numEvaluationMetrics;
+        /**
+         * Inline EvaluationMetrics - should be relatively small. For passing large
+         * quantities of exhaustive metrics, use file_spec.
+         *
+         * @param XPSEvaluationMetrics[] $evaluationMetrics
+         */
+        public function setEvaluationMetrics($evaluationMetrics)
+        {
+        }
+        /**
+         * @return XPSEvaluationMetrics[]
+         */
+        public function getEvaluationMetrics()
+        {
+        }
+        /**
+         * File spec containing evaluation metrics of a model, must point to RecordIO
+         * file(s) of intelligence.cloud.automl.xps.EvaluationMetrics messages.
+         *
+         * @param XPSFileSpec $fileSpec
+         */
+        public function setFileSpec(XPSFileSpec $fileSpec)
+        {
+        }
+        /**
+         * @return XPSFileSpec
+         */
+        public function getFileSpec()
+        {
+        }
+        /**
+         * Number of the evaluation metrics (usually one per label plus overall).
+         *
+         * @param string $numEvaluationMetrics
+         */
+        public function setNumEvaluationMetrics($numEvaluationMetrics)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNumEvaluationMetrics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return XPSEvaluationMetrics[]
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSEvaluationMetricsSet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEvaluationMetrics()
-    {
-    }
-    /**
-     * File spec containing evaluation metrics of a model, must point to RecordIO
-     * file(s) of intelligence.cloud.automl.xps.EvaluationMetrics messages.
-     *
-     * @param XPSFileSpec $fileSpec
-     */
-    public function setFileSpec(XPSFileSpec $fileSpec)
-    {
-    }
-    /**
-     * @return XPSFileSpec
-     */
-    public function getFileSpec()
-    {
-    }
-    /**
-     * Number of the evaluation metrics (usually one per label plus overall).
-     *
-     * @param string $numEvaluationMetrics
-     */
-    public function setNumEvaluationMetrics($numEvaluationMetrics)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNumEvaluationMetrics()
+    class Google_Service_CloudNaturalLanguage_XPSEvaluationMetricsSet extends \Google\Service\CloudNaturalLanguage\XPSEvaluationMetricsSet
     {
     }
 }

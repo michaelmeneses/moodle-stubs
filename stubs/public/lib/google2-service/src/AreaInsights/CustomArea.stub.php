@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AreaInsights;
-
-class CustomArea extends \Google\Model
-{
-    protected $polygonType = Polygon::class;
-    protected $polygonDataType = '';
-    /**
-     * Required. The custom area represented as a polygon
-     *
-     * @param Polygon $polygon
-     */
-    public function setPolygon(Polygon $polygon)
+namespace Google\Service\AreaInsights {
+    class CustomArea extends \Google\Model
     {
+        protected $polygonType = Polygon::class;
+        protected $polygonDataType = '';
+        /**
+         * Required. The custom area represented as a polygon
+         *
+         * @param Polygon $polygon
+         */
+        public function setPolygon(Polygon $polygon)
+        {
+        }
+        /**
+         * @return Polygon
+         */
+        public function getPolygon()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Polygon
+     * Runtime class alias of \Google\Service\AreaInsights\CustomArea registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPolygon()
+    class Google_Service_AreaInsights_CustomArea extends \Google\Service\AreaInsights\CustomArea
     {
     }
 }

@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class RefreshDataSourceRequest extends \Google\Model
-{
-    /**
-     * Reference to a DataSource. If specified, refreshes all associated data
-     * source objects for the data source.
-     *
-     * @var string
-     */
-    public $dataSourceId;
-    /**
-     * Refreshes the data source objects regardless of the current state. If not
-     * set and a referenced data source object was in error state, the refresh
-     * will fail immediately.
-     *
-     * @var bool
-     */
-    public $force;
-    /**
-     * Refreshes all existing data source objects in the spreadsheet.
-     *
-     * @var bool
-     */
-    public $isAll;
-    protected $referencesType = DataSourceObjectReferences::class;
-    protected $referencesDataType = '';
-    /**
-     * Reference to a DataSource. If specified, refreshes all associated data
-     * source objects for the data source.
-     *
-     * @param string $dataSourceId
-     */
-    public function setDataSourceId($dataSourceId)
+namespace Google\Service\Sheets {
+    class RefreshDataSourceRequest extends \Google\Model
     {
+        /**
+         * Reference to a DataSource. If specified, refreshes all associated data
+         * source objects for the data source.
+         *
+         * @var string
+         */
+        public $dataSourceId;
+        /**
+         * Refreshes the data source objects regardless of the current state. If not
+         * set and a referenced data source object was in error state, the refresh
+         * will fail immediately.
+         *
+         * @var bool
+         */
+        public $force;
+        /**
+         * Refreshes all existing data source objects in the spreadsheet.
+         *
+         * @var bool
+         */
+        public $isAll;
+        protected $referencesType = DataSourceObjectReferences::class;
+        protected $referencesDataType = '';
+        /**
+         * Reference to a DataSource. If specified, refreshes all associated data
+         * source objects for the data source.
+         *
+         * @param string $dataSourceId
+         */
+        public function setDataSourceId($dataSourceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataSourceId()
+        {
+        }
+        /**
+         * Refreshes the data source objects regardless of the current state. If not
+         * set and a referenced data source object was in error state, the refresh
+         * will fail immediately.
+         *
+         * @param bool $force
+         */
+        public function setForce($force)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getForce()
+        {
+        }
+        /**
+         * Refreshes all existing data source objects in the spreadsheet.
+         *
+         * @param bool $isAll
+         */
+        public function setIsAll($isAll)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsAll()
+        {
+        }
+        /**
+         * References to data source objects to refresh.
+         *
+         * @param DataSourceObjectReferences $references
+         */
+        public function setReferences(DataSourceObjectReferences $references)
+        {
+        }
+        /**
+         * @return DataSourceObjectReferences
+         */
+        public function getReferences()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Sheets\RefreshDataSourceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataSourceId()
-    {
-    }
-    /**
-     * Refreshes the data source objects regardless of the current state. If not
-     * set and a referenced data source object was in error state, the refresh
-     * will fail immediately.
-     *
-     * @param bool $force
-     */
-    public function setForce($force)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getForce()
-    {
-    }
-    /**
-     * Refreshes all existing data source objects in the spreadsheet.
-     *
-     * @param bool $isAll
-     */
-    public function setIsAll($isAll)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsAll()
-    {
-    }
-    /**
-     * References to data source objects to refresh.
-     *
-     * @param DataSourceObjectReferences $references
-     */
-    public function setReferences(DataSourceObjectReferences $references)
-    {
-    }
-    /**
-     * @return DataSourceObjectReferences
-     */
-    public function getReferences()
+    class Google_Service_Sheets_RefreshDataSourceRequest extends \Google\Service\Sheets\RefreshDataSourceRequest
     {
     }
 }

@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidProvisioningPartner;
-
-class CustomerListCustomersResponse extends \Google\Collection
-{
-    protected $collection_key = 'customers';
-    protected $customersType = Company::class;
-    protected $customersDataType = 'array';
-    /**
-     * A token used to access the next page of results. Omitted if no further
-     * results are available.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The customer accounts the calling user is a member of.
-     *
-     * @param Company[] $customers
-     */
-    public function setCustomers($customers)
+namespace Google\Service\AndroidProvisioningPartner {
+    class CustomerListCustomersResponse extends \Google\Collection
     {
+        protected $collection_key = 'customers';
+        protected $customersType = Company::class;
+        protected $customersDataType = 'array';
+        /**
+         * A token used to access the next page of results. Omitted if no further
+         * results are available.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The customer accounts the calling user is a member of.
+         *
+         * @param Company[] $customers
+         */
+        public function setCustomers($customers)
+        {
+        }
+        /**
+         * @return Company[]
+         */
+        public function getCustomers()
+        {
+        }
+        /**
+         * A token used to access the next page of results. Omitted if no further
+         * results are available.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Company[]
+     * Runtime class alias of \Google\Service\AndroidProvisioningPartner\CustomerListCustomersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomers()
-    {
-    }
-    /**
-     * A token used to access the next page of results. Omitted if no further
-     * results are available.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_AndroidProvisioningPartner_CustomerListCustomersResponse extends \Google\Service\AndroidProvisioningPartner\CustomerListCustomersResponse
     {
     }
 }

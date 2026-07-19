@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMemorystoreforMemcached;
-
-class RequirementOverride extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $ziOverride;
-    /**
-     * @var string
-     */
-    public $zsOverride;
-    /**
-     * @param string
-     */
-    public function setZiOverride($ziOverride)
+namespace Google\Service\CloudMemorystoreforMemcached {
+    class RequirementOverride extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $ziOverride;
+        /**
+         * @var string
+         */
+        public $zsOverride;
+        /**
+         * @param string
+         */
+        public function setZiOverride($ziOverride)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getZiOverride()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setZsOverride($zsOverride)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getZsOverride()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudMemorystoreforMemcached\RequirementOverride registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getZiOverride()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setZsOverride($zsOverride)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getZsOverride()
+    class Google_Service_CloudMemorystoreforMemcached_RequirementOverride extends \Google\Service\CloudMemorystoreforMemcached\RequirementOverride
     {
     }
 }

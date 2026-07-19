@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Iam;
-
-class GoogleIamV2PolicyRule extends \Google\Model
-{
-    protected $denyRuleType = GoogleIamV2DenyRule::class;
-    protected $denyRuleDataType = '';
-    /**
-     * A user-specified description of the rule. This value can be up to 256
-     * characters.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * A rule for a deny policy.
-     *
-     * @param GoogleIamV2DenyRule $denyRule
-     */
-    public function setDenyRule(GoogleIamV2DenyRule $denyRule)
+namespace Google\Service\Iam {
+    class GoogleIamV2PolicyRule extends \Google\Model
     {
+        protected $denyRuleType = GoogleIamV2DenyRule::class;
+        protected $denyRuleDataType = '';
+        /**
+         * A user-specified description of the rule. This value can be up to 256
+         * characters.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * A rule for a deny policy.
+         *
+         * @param GoogleIamV2DenyRule $denyRule
+         */
+        public function setDenyRule(GoogleIamV2DenyRule $denyRule)
+        {
+        }
+        /**
+         * @return GoogleIamV2DenyRule
+         */
+        public function getDenyRule()
+        {
+        }
+        /**
+         * A user-specified description of the rule. This value can be up to 256
+         * characters.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleIamV2DenyRule
+     * Runtime class alias of \Google\Service\Iam\GoogleIamV2PolicyRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDenyRule()
-    {
-    }
-    /**
-     * A user-specified description of the rule. This value can be up to 256
-     * characters.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
+    class Google_Service_Iam_GoogleIamV2PolicyRule extends \Google\Service\Iam\GoogleIamV2PolicyRule
     {
     }
 }

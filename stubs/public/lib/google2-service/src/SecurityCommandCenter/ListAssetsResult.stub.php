@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class ListAssetsResult extends \Google\Model
-{
-    /**
-     * State change is unused, this is the canonical default for this enum.
-     */
-    public const STATE_CHANGE_UNUSED = 'UNUSED';
-    /**
-     * Asset was added between the points in time.
-     */
-    public const STATE_CHANGE_ADDED = 'ADDED';
-    /**
-     * Asset was removed between the points in time.
-     */
-    public const STATE_CHANGE_REMOVED = 'REMOVED';
-    /**
-     * Asset was present at both point(s) in time.
-     */
-    public const STATE_CHANGE_ACTIVE = 'ACTIVE';
-    protected $assetType = Asset::class;
-    protected $assetDataType = '';
-    /**
-     * State change of the asset between the points in time.
-     *
-     * @var string
-     */
-    public $stateChange;
-    /**
-     * Asset matching the search request.
-     *
-     * @param Asset $asset
-     */
-    public function setAsset(Asset $asset)
+namespace Google\Service\SecurityCommandCenter {
+    class ListAssetsResult extends \Google\Model
     {
+        /**
+         * State change is unused, this is the canonical default for this enum.
+         */
+        public const STATE_CHANGE_UNUSED = 'UNUSED';
+        /**
+         * Asset was added between the points in time.
+         */
+        public const STATE_CHANGE_ADDED = 'ADDED';
+        /**
+         * Asset was removed between the points in time.
+         */
+        public const STATE_CHANGE_REMOVED = 'REMOVED';
+        /**
+         * Asset was present at both point(s) in time.
+         */
+        public const STATE_CHANGE_ACTIVE = 'ACTIVE';
+        protected $assetType = Asset::class;
+        protected $assetDataType = '';
+        /**
+         * State change of the asset between the points in time.
+         *
+         * @var string
+         */
+        public $stateChange;
+        /**
+         * Asset matching the search request.
+         *
+         * @param Asset $asset
+         */
+        public function setAsset(Asset $asset)
+        {
+        }
+        /**
+         * @return Asset
+         */
+        public function getAsset()
+        {
+        }
+        /**
+         * State change of the asset between the points in time.
+         *
+         * Accepted values: UNUSED, ADDED, REMOVED, ACTIVE
+         *
+         * @param self::STATE_CHANGE_* $stateChange
+         */
+        public function setStateChange($stateChange)
+        {
+        }
+        /**
+         * @return self::STATE_CHANGE_*
+         */
+        public function getStateChange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Asset
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\ListAssetsResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAsset()
-    {
-    }
-    /**
-     * State change of the asset between the points in time.
-     *
-     * Accepted values: UNUSED, ADDED, REMOVED, ACTIVE
-     *
-     * @param self::STATE_CHANGE_* $stateChange
-     */
-    public function setStateChange($stateChange)
-    {
-    }
-    /**
-     * @return self::STATE_CHANGE_*
-     */
-    public function getStateChange()
+    class Google_Service_SecurityCommandCenter_ListAssetsResult extends \Google\Service\SecurityCommandCenter\ListAssetsResult
     {
     }
 }

@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class FleetObservabilityLoggingConfig extends \Google\Model
-{
-    protected $defaultConfigType = FleetObservabilityRoutingConfig::class;
-    protected $defaultConfigDataType = '';
-    protected $fleetScopeLogsConfigType = FleetObservabilityRoutingConfig::class;
-    protected $fleetScopeLogsConfigDataType = '';
-    /**
-     * @param FleetObservabilityRoutingConfig
-     */
-    public function setDefaultConfig(FleetObservabilityRoutingConfig $defaultConfig)
+namespace Google\Service\GKEHub {
+    class FleetObservabilityLoggingConfig extends \Google\Model
     {
+        protected $defaultConfigType = FleetObservabilityRoutingConfig::class;
+        protected $defaultConfigDataType = '';
+        protected $fleetScopeLogsConfigType = FleetObservabilityRoutingConfig::class;
+        protected $fleetScopeLogsConfigDataType = '';
+        /**
+         * @param FleetObservabilityRoutingConfig
+         */
+        public function setDefaultConfig(FleetObservabilityRoutingConfig $defaultConfig)
+        {
+        }
+        /**
+         * @return FleetObservabilityRoutingConfig
+         */
+        public function getDefaultConfig()
+        {
+        }
+        /**
+         * @param FleetObservabilityRoutingConfig
+         */
+        public function setFleetScopeLogsConfig(FleetObservabilityRoutingConfig $fleetScopeLogsConfig)
+        {
+        }
+        /**
+         * @return FleetObservabilityRoutingConfig
+         */
+        public function getFleetScopeLogsConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FleetObservabilityRoutingConfig
+     * Runtime class alias of \Google\Service\GKEHub\FleetObservabilityLoggingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefaultConfig()
-    {
-    }
-    /**
-     * @param FleetObservabilityRoutingConfig
-     */
-    public function setFleetScopeLogsConfig(FleetObservabilityRoutingConfig $fleetScopeLogsConfig)
-    {
-    }
-    /**
-     * @return FleetObservabilityRoutingConfig
-     */
-    public function getFleetScopeLogsConfig()
+    class Google_Service_GKEHub_FleetObservabilityLoggingConfig extends \Google\Service\GKEHub\FleetObservabilityLoggingConfig
     {
     }
 }

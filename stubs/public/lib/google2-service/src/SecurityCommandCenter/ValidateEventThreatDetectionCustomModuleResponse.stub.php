@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class ValidateEventThreatDetectionCustomModuleResponse extends \Google\Model
-{
-    protected $errorsType = CustomModuleValidationErrors::class;
-    protected $errorsDataType = '';
-    /**
-     * A list of errors returned by the validator. If the list is empty, there
-     * were no errors.
-     *
-     * @param CustomModuleValidationErrors $errors
-     */
-    public function setErrors(CustomModuleValidationErrors $errors)
+namespace Google\Service\SecurityCommandCenter {
+    class ValidateEventThreatDetectionCustomModuleResponse extends \Google\Model
     {
+        protected $errorsType = CustomModuleValidationErrors::class;
+        protected $errorsDataType = '';
+        /**
+         * A list of errors returned by the validator. If the list is empty, there
+         * were no errors.
+         *
+         * @param CustomModuleValidationErrors $errors
+         */
+        public function setErrors(CustomModuleValidationErrors $errors)
+        {
+        }
+        /**
+         * @return CustomModuleValidationErrors
+         */
+        public function getErrors()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CustomModuleValidationErrors
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\ValidateEventThreatDetectionCustomModuleResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrors()
+    class Google_Service_SecurityCommandCenter_ValidateEventThreatDetectionCustomModuleResponse extends \Google\Service\SecurityCommandCenter\ValidateEventThreatDetectionCustomModuleResponse
     {
     }
 }

@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class SalesforceProfile extends \Google\Model
-{
-    /**
-     * Required. Domain endpoint for the Salesforce connection.
-     *
-     * @var string
-     */
-    public $domain;
-    protected $oauth2ClientCredentialsType = Oauth2ClientCredentials::class;
-    protected $oauth2ClientCredentialsDataType = '';
-    protected $userCredentialsType = UserCredentials::class;
-    protected $userCredentialsDataType = '';
-    /**
-     * Required. Domain endpoint for the Salesforce connection.
-     *
-     * @param string $domain
-     */
-    public function setDomain($domain)
+namespace Google\Service\Datastream {
+    class SalesforceProfile extends \Google\Model
     {
+        /**
+         * Required. Domain endpoint for the Salesforce connection.
+         *
+         * @var string
+         */
+        public $domain;
+        protected $oauth2ClientCredentialsType = Oauth2ClientCredentials::class;
+        protected $oauth2ClientCredentialsDataType = '';
+        protected $userCredentialsType = UserCredentials::class;
+        protected $userCredentialsDataType = '';
+        /**
+         * Required. Domain endpoint for the Salesforce connection.
+         *
+         * @param string $domain
+         */
+        public function setDomain($domain)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDomain()
+        {
+        }
+        /**
+         * Connected app authentication.
+         *
+         * @param Oauth2ClientCredentials $oauth2ClientCredentials
+         */
+        public function setOauth2ClientCredentials(Oauth2ClientCredentials $oauth2ClientCredentials)
+        {
+        }
+        /**
+         * @return Oauth2ClientCredentials
+         */
+        public function getOauth2ClientCredentials()
+        {
+        }
+        /**
+         * User-password authentication.
+         *
+         * @param UserCredentials $userCredentials
+         */
+        public function setUserCredentials(UserCredentials $userCredentials)
+        {
+        }
+        /**
+         * @return UserCredentials
+         */
+        public function getUserCredentials()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastream\SalesforceProfile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDomain()
-    {
-    }
-    /**
-     * Connected app authentication.
-     *
-     * @param Oauth2ClientCredentials $oauth2ClientCredentials
-     */
-    public function setOauth2ClientCredentials(Oauth2ClientCredentials $oauth2ClientCredentials)
-    {
-    }
-    /**
-     * @return Oauth2ClientCredentials
-     */
-    public function getOauth2ClientCredentials()
-    {
-    }
-    /**
-     * User-password authentication.
-     *
-     * @param UserCredentials $userCredentials
-     */
-    public function setUserCredentials(UserCredentials $userCredentials)
-    {
-    }
-    /**
-     * @return UserCredentials
-     */
-    public function getUserCredentials()
+    class Google_Service_Datastream_SalesforceProfile extends \Google\Service\Datastream\SalesforceProfile
     {
     }
 }

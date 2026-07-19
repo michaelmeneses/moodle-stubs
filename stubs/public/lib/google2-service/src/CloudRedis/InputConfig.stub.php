@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class InputConfig extends \Google\Model
-{
-    protected $gcsSourceType = GcsSource::class;
-    protected $gcsSourceDataType = '';
-    /**
-     * Google Cloud Storage location where input content is located.
-     *
-     * @param GcsSource $gcsSource
-     */
-    public function setGcsSource(GcsSource $gcsSource)
+namespace Google\Service\CloudRedis {
+    class InputConfig extends \Google\Model
     {
+        protected $gcsSourceType = GcsSource::class;
+        protected $gcsSourceDataType = '';
+        /**
+         * Google Cloud Storage location where input content is located.
+         *
+         * @param GcsSource $gcsSource
+         */
+        public function setGcsSource(GcsSource $gcsSource)
+        {
+        }
+        /**
+         * @return GcsSource
+         */
+        public function getGcsSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GcsSource
+     * Runtime class alias of \Google\Service\CloudRedis\InputConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcsSource()
+    class Google_Service_CloudRedis_InputConfig extends \Google\Service\CloudRedis\InputConfig
     {
     }
 }

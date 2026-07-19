@@ -21,83 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class RouteStatus extends \Google\Collection
-{
-    protected $collection_key = 'traffic';
-    protected $addressType = Addressable::class;
-    protected $addressDataType = '';
-    protected $conditionsType = GoogleCloudRunV1Condition::class;
-    protected $conditionsDataType = 'array';
-    /**
-     * @var int
-     */
-    public $observedGeneration;
-    protected $trafficType = TrafficTarget::class;
-    protected $trafficDataType = 'array';
-    /**
-     * @var string
-     */
-    public $url;
-    /**
-     * @param Addressable
-     */
-    public function setAddress(Addressable $address)
+namespace Google\Service\CloudRun {
+    class RouteStatus extends \Google\Collection
     {
+        protected $collection_key = 'traffic';
+        protected $addressType = Addressable::class;
+        protected $addressDataType = '';
+        protected $conditionsType = GoogleCloudRunV1Condition::class;
+        protected $conditionsDataType = 'array';
+        /**
+         * @var int
+         */
+        public $observedGeneration;
+        protected $trafficType = TrafficTarget::class;
+        protected $trafficDataType = 'array';
+        /**
+         * @var string
+         */
+        public $url;
+        /**
+         * @param Addressable
+         */
+        public function setAddress(Addressable $address)
+        {
+        }
+        /**
+         * @return Addressable
+         */
+        public function getAddress()
+        {
+        }
+        /**
+         * @param GoogleCloudRunV1Condition[]
+         */
+        public function setConditions($conditions)
+        {
+        }
+        /**
+         * @return GoogleCloudRunV1Condition[]
+         */
+        public function getConditions()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setObservedGeneration($observedGeneration)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getObservedGeneration()
+        {
+        }
+        /**
+         * @param TrafficTarget[]
+         */
+        public function setTraffic($traffic)
+        {
+        }
+        /**
+         * @return TrafficTarget[]
+         */
+        public function getTraffic()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Addressable
+     * Runtime class alias of \Google\Service\CloudRun\RouteStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddress()
-    {
-    }
-    /**
-     * @param GoogleCloudRunV1Condition[]
-     */
-    public function setConditions($conditions)
-    {
-    }
-    /**
-     * @return GoogleCloudRunV1Condition[]
-     */
-    public function getConditions()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setObservedGeneration($observedGeneration)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getObservedGeneration()
-    {
-    }
-    /**
-     * @param TrafficTarget[]
-     */
-    public function setTraffic($traffic)
-    {
-    }
-    /**
-     * @return TrafficTarget[]
-     */
-    public function getTraffic()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_CloudRun_RouteStatus extends \Google\Service\CloudRun\RouteStatus
     {
     }
 }

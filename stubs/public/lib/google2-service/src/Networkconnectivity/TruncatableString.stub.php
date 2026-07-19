@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class TruncatableString extends \Google\Model
-{
-    public $truncatedByteCount;
-    public $value;
-    public function setTruncatedByteCount($truncatedByteCount)
+namespace Google\Service\Networkconnectivity {
+    class TruncatableString extends \Google\Model
     {
+        public $truncatedByteCount;
+        public $value;
+        public function setTruncatedByteCount($truncatedByteCount)
+        {
+        }
+        public function getTruncatedByteCount()
+        {
+        }
+        public function setValue($value)
+        {
+        }
+        public function getValue()
+        {
+        }
     }
-    public function getTruncatedByteCount()
-    {
-    }
-    public function setValue($value)
-    {
-    }
-    public function getValue()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Networkconnectivity\TruncatableString registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Networkconnectivity_TruncatableString extends \Google\Service\Networkconnectivity\TruncatableString
     {
     }
 }

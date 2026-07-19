@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseAppDistribution;
-
-class GoogleFirebaseAppdistroV1ListTestersResponse extends \Google\Collection
-{
-    protected $collection_key = 'testers';
-    /**
-     * A short-lived token, which can be sent as `pageToken` to retrieve the next
-     * page. If this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $testersType = GoogleFirebaseAppdistroV1Tester::class;
-    protected $testersDataType = 'array';
-    /**
-     * A short-lived token, which can be sent as `pageToken` to retrieve the next
-     * page. If this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\FirebaseAppDistribution {
+    class GoogleFirebaseAppdistroV1ListTestersResponse extends \Google\Collection
     {
+        protected $collection_key = 'testers';
+        /**
+         * A short-lived token, which can be sent as `pageToken` to retrieve the next
+         * page. If this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $testersType = GoogleFirebaseAppdistroV1Tester::class;
+        protected $testersDataType = 'array';
+        /**
+         * A short-lived token, which can be sent as `pageToken` to retrieve the next
+         * page. If this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The testers listed.
+         *
+         * @param GoogleFirebaseAppdistroV1Tester[] $testers
+         */
+        public function setTesters($testers)
+        {
+        }
+        /**
+         * @return GoogleFirebaseAppdistroV1Tester[]
+         */
+        public function getTesters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\FirebaseAppDistribution\GoogleFirebaseAppdistroV1ListTestersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The testers listed.
-     *
-     * @param GoogleFirebaseAppdistroV1Tester[] $testers
-     */
-    public function setTesters($testers)
-    {
-    }
-    /**
-     * @return GoogleFirebaseAppdistroV1Tester[]
-     */
-    public function getTesters()
+    class Google_Service_FirebaseAppDistribution_GoogleFirebaseAppdistroV1ListTestersResponse extends \Google\Service\FirebaseAppDistribution\GoogleFirebaseAppdistroV1ListTestersResponse
     {
     }
 }

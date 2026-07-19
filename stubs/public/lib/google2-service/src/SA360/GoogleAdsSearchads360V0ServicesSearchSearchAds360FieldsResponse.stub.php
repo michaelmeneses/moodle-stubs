@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0ServicesSearchSearchAds360FieldsResponse extends \Google\Collection
-{
-    protected $collection_key = 'results';
-    /**
-     * Pagination token used to retrieve the next page of results. Pass the
-     * content of this string as the `page_token` attribute of the next request.
-     * `next_page_token` is not returned for the last page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $resultsType = GoogleAdsSearchads360V0ResourcesSearchAds360Field::class;
-    protected $resultsDataType = 'array';
-    /**
-     * Total number of results that match the query ignoring the LIMIT clause.
-     *
-     * @var string
-     */
-    public $totalResultsCount;
-    /**
-     * Pagination token used to retrieve the next page of results. Pass the
-     * content of this string as the `page_token` attribute of the next request.
-     * `next_page_token` is not returned for the last page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0ServicesSearchSearchAds360FieldsResponse extends \Google\Collection
     {
+        protected $collection_key = 'results';
+        /**
+         * Pagination token used to retrieve the next page of results. Pass the
+         * content of this string as the `page_token` attribute of the next request.
+         * `next_page_token` is not returned for the last page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $resultsType = GoogleAdsSearchads360V0ResourcesSearchAds360Field::class;
+        protected $resultsDataType = 'array';
+        /**
+         * Total number of results that match the query ignoring the LIMIT clause.
+         *
+         * @var string
+         */
+        public $totalResultsCount;
+        /**
+         * Pagination token used to retrieve the next page of results. Pass the
+         * content of this string as the `page_token` attribute of the next request.
+         * `next_page_token` is not returned for the last page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of fields that matched the query.
+         *
+         * @param GoogleAdsSearchads360V0ResourcesSearchAds360Field[] $results
+         */
+        public function setResults($results)
+        {
+        }
+        /**
+         * @return GoogleAdsSearchads360V0ResourcesSearchAds360Field[]
+         */
+        public function getResults()
+        {
+        }
+        /**
+         * Total number of results that match the query ignoring the LIMIT clause.
+         *
+         * @param string $totalResultsCount
+         */
+        public function setTotalResultsCount($totalResultsCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalResultsCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0ServicesSearchSearchAds360FieldsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of fields that matched the query.
-     *
-     * @param GoogleAdsSearchads360V0ResourcesSearchAds360Field[] $results
-     */
-    public function setResults($results)
-    {
-    }
-    /**
-     * @return GoogleAdsSearchads360V0ResourcesSearchAds360Field[]
-     */
-    public function getResults()
-    {
-    }
-    /**
-     * Total number of results that match the query ignoring the LIMIT clause.
-     *
-     * @param string $totalResultsCount
-     */
-    public function setTotalResultsCount($totalResultsCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalResultsCount()
+    class Google_Service_SA360_GoogleAdsSearchads360V0ServicesSearchSearchAds360FieldsResponse extends \Google\Service\SA360\GoogleAdsSearchads360V0ServicesSearchSearchAds360FieldsResponse
     {
     }
 }

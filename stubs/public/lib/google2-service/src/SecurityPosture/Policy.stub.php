@@ -21,83 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityPosture;
-
-class Policy extends \Google\Collection
-{
-    protected $collection_key = 'complianceStandards';
-    protected $complianceStandardsType = ComplianceStandard::class;
-    protected $complianceStandardsDataType = 'array';
-    protected $constraintType = Constraint::class;
-    protected $constraintDataType = '';
-    /**
-     * Optional. A description of the policy.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Required. A user-specified identifier for the policy. In a PolicySet, each
-     * policy must have a unique identifier.
-     *
-     * @var string
-     */
-    public $policyId;
-    /**
-     * Optional. The compliance standards that the policy helps enforce.
-     *
-     * @param ComplianceStandard[] $complianceStandards
-     */
-    public function setComplianceStandards($complianceStandards)
+namespace Google\Service\SecurityPosture {
+    class Policy extends \Google\Collection
     {
+        protected $collection_key = 'complianceStandards';
+        protected $complianceStandardsType = ComplianceStandard::class;
+        protected $complianceStandardsDataType = 'array';
+        protected $constraintType = Constraint::class;
+        protected $constraintDataType = '';
+        /**
+         * Optional. A description of the policy.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Required. A user-specified identifier for the policy. In a PolicySet, each
+         * policy must have a unique identifier.
+         *
+         * @var string
+         */
+        public $policyId;
+        /**
+         * Optional. The compliance standards that the policy helps enforce.
+         *
+         * @param ComplianceStandard[] $complianceStandards
+         */
+        public function setComplianceStandards($complianceStandards)
+        {
+        }
+        /**
+         * @return ComplianceStandard[]
+         */
+        public function getComplianceStandards()
+        {
+        }
+        /**
+         * Required. The constraints that the policy includes.
+         *
+         * @param Constraint $constraint
+         */
+        public function setConstraint(Constraint $constraint)
+        {
+        }
+        /**
+         * @return Constraint
+         */
+        public function getConstraint()
+        {
+        }
+        /**
+         * Optional. A description of the policy.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Required. A user-specified identifier for the policy. In a PolicySet, each
+         * policy must have a unique identifier.
+         *
+         * @param string $policyId
+         */
+        public function setPolicyId($policyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPolicyId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ComplianceStandard[]
+     * Runtime class alias of \Google\Service\SecurityPosture\Policy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getComplianceStandards()
-    {
-    }
-    /**
-     * Required. The constraints that the policy includes.
-     *
-     * @param Constraint $constraint
-     */
-    public function setConstraint(Constraint $constraint)
-    {
-    }
-    /**
-     * @return Constraint
-     */
-    public function getConstraint()
-    {
-    }
-    /**
-     * Optional. A description of the policy.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Required. A user-specified identifier for the policy. In a PolicySet, each
-     * policy must have a unique identifier.
-     *
-     * @param string $policyId
-     */
-    public function setPolicyId($policyId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPolicyId()
+    class Google_Service_SecurityPosture_Policy extends \Google\Service\SecurityPosture\Policy
     {
     }
 }

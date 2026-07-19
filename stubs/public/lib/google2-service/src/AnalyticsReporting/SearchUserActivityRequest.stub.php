@@ -21,101 +21,110 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsReporting;
-
-class SearchUserActivityRequest extends \Google\Collection
-{
-    protected $collection_key = 'activityTypes';
-    /**
-     * @var string[]
-     */
-    public $activityTypes;
-    protected $dateRangeType = DateRange::class;
-    protected $dateRangeDataType = '';
-    /**
-     * @var int
-     */
-    public $pageSize;
-    /**
-     * @var string
-     */
-    public $pageToken;
-    protected $userType = User::class;
-    protected $userDataType = '';
-    /**
-     * @var string
-     */
-    public $viewId;
-    /**
-     * @param string[]
-     */
-    public function setActivityTypes($activityTypes)
+namespace Google\Service\AnalyticsReporting {
+    class SearchUserActivityRequest extends \Google\Collection
     {
+        protected $collection_key = 'activityTypes';
+        /**
+         * @var string[]
+         */
+        public $activityTypes;
+        protected $dateRangeType = DateRange::class;
+        protected $dateRangeDataType = '';
+        /**
+         * @var int
+         */
+        public $pageSize;
+        /**
+         * @var string
+         */
+        public $pageToken;
+        protected $userType = User::class;
+        protected $userDataType = '';
+        /**
+         * @var string
+         */
+        public $viewId;
+        /**
+         * @param string[]
+         */
+        public function setActivityTypes($activityTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getActivityTypes()
+        {
+        }
+        /**
+         * @param DateRange
+         */
+        public function setDateRange(DateRange $dateRange)
+        {
+        }
+        /**
+         * @return DateRange
+         */
+        public function getDateRange()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setPageSize($pageSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPageSize()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPageToken($pageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPageToken()
+        {
+        }
+        /**
+         * @param User
+         */
+        public function setUser(User $user)
+        {
+        }
+        /**
+         * @return User
+         */
+        public function getUser()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setViewId($viewId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getViewId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AnalyticsReporting\SearchUserActivityRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActivityTypes()
-    {
-    }
-    /**
-     * @param DateRange
-     */
-    public function setDateRange(DateRange $dateRange)
-    {
-    }
-    /**
-     * @return DateRange
-     */
-    public function getDateRange()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setPageSize($pageSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPageSize()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPageToken($pageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPageToken()
-    {
-    }
-    /**
-     * @param User
-     */
-    public function setUser(User $user)
-    {
-    }
-    /**
-     * @return User
-     */
-    public function getUser()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setViewId($viewId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getViewId()
+    class Google_Service_AnalyticsReporting_SearchUserActivityRequest extends \Google\Service\AnalyticsReporting\SearchUserActivityRequest
     {
     }
 }

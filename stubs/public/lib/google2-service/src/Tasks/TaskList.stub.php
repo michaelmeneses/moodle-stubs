@@ -21,132 +21,141 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Tasks;
-
-class TaskList extends \Google\Model
-{
-    /**
-     * ETag of the resource.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Task list identifier.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Output only. Type of the resource. This is always "tasks#taskList".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Output only. URL pointing to this task list. Used to retrieve, update, or
-     * delete this task list.
-     *
-     * @var string
-     */
-    public $selfLink;
-    /**
-     * Title of the task list. Maximum length allowed: 1024 characters.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Output only. Last modification time of the task list (as a RFC 3339
-     * timestamp).
-     *
-     * @var string
-     */
-    public $updated;
-    /**
-     * ETag of the resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\Tasks {
+    class TaskList extends \Google\Model
     {
+        /**
+         * ETag of the resource.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Task list identifier.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Output only. Type of the resource. This is always "tasks#taskList".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Output only. URL pointing to this task list. Used to retrieve, update, or
+         * delete this task list.
+         *
+         * @var string
+         */
+        public $selfLink;
+        /**
+         * Title of the task list. Maximum length allowed: 1024 characters.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Output only. Last modification time of the task list (as a RFC 3339
+         * timestamp).
+         *
+         * @var string
+         */
+        public $updated;
+        /**
+         * ETag of the resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Task list identifier.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Output only. Type of the resource. This is always "tasks#taskList".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Output only. URL pointing to this task list. Used to retrieve, update, or
+         * delete this task list.
+         *
+         * @param string $selfLink
+         */
+        public function setSelfLink($selfLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLink()
+        {
+        }
+        /**
+         * Title of the task list. Maximum length allowed: 1024 characters.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * Output only. Last modification time of the task list (as a RFC 3339
+         * timestamp).
+         *
+         * @param string $updated
+         */
+        public function setUpdated($updated)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdated()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Tasks\TaskList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * Task list identifier.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Output only. Type of the resource. This is always "tasks#taskList".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Output only. URL pointing to this task list. Used to retrieve, update, or
-     * delete this task list.
-     *
-     * @param string $selfLink
-     */
-    public function setSelfLink($selfLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLink()
-    {
-    }
-    /**
-     * Title of the task list. Maximum length allowed: 1024 characters.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * Output only. Last modification time of the task list (as a RFC 3339
-     * timestamp).
-     *
-     * @param string $updated
-     */
-    public function setUpdated($updated)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdated()
+    class Google_Service_Tasks_TaskList extends \Google\Service\Tasks\TaskList
     {
     }
 }

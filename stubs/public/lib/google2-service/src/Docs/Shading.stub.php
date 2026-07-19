@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class Shading extends \Google\Model
-{
-    protected $backgroundColorType = OptionalColor::class;
-    protected $backgroundColorDataType = '';
-    /**
-     * The background color of this paragraph shading.
-     *
-     * @param OptionalColor $backgroundColor
-     */
-    public function setBackgroundColor(OptionalColor $backgroundColor)
+namespace Google\Service\Docs {
+    class Shading extends \Google\Model
     {
+        protected $backgroundColorType = OptionalColor::class;
+        protected $backgroundColorDataType = '';
+        /**
+         * The background color of this paragraph shading.
+         *
+         * @param OptionalColor $backgroundColor
+         */
+        public function setBackgroundColor(OptionalColor $backgroundColor)
+        {
+        }
+        /**
+         * @return OptionalColor
+         */
+        public function getBackgroundColor()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return OptionalColor
+     * Runtime class alias of \Google\Service\Docs\Shading registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackgroundColor()
+    class Google_Service_Docs_Shading extends \Google\Service\Docs\Shading
     {
     }
 }

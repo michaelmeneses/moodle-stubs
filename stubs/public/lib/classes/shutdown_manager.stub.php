@@ -20,91 +20,101 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core;
-
-/**
- * Shutdown management class.
- *
- * @package    core
- * @copyright  2013 Petr Skoda {@link http://skodak.org}
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-class shutdown_manager
-{
-    /** @var array list of custom callbacks */
-    protected static array $callbacks = [];
-    /** @var array list of custom signal callbacks */
-    protected static array $signalcallbacks = [];
-    /** @var bool is this manager already registered? */
-    protected static bool $registered = false;
-    /** @var array A list of pcntl handlers */
-    protected static array $pcntlhandlers = [];
+namespace core {
+    use Throwable;
     /**
-     * Register self as main shutdown handler.
+     * Shutdown management class.
      *
-     * Note: This method should _only_ be called from lib/setup.php.
+     * @package    core
+     * @copyright  2013 Petr Skoda {@link http://skodak.org}
+     * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    public static function initialize(): void
+    class shutdown_manager
     {
+        /** @var array list of custom callbacks */
+        protected static array $callbacks = [];
+        /** @var array list of custom signal callbacks */
+        protected static array $signalcallbacks = [];
+        /** @var bool is this manager already registered? */
+        protected static bool $registered = false;
+        /** @var array A list of pcntl handlers */
+        protected static array $pcntlhandlers = [];
+        /**
+         * Register self as main shutdown handler.
+         *
+         * Note: This method should _only_ be called from lib/setup.php.
+         */
+        public static function initialize(): void
+        {
+        }
+        /**
+         * Whether the shutdown manager initialized.
+         *
+         * @return bool
+         */
+        public static function is_initialized(): bool
+        {
+        }
+        /**
+         * Signal handler for SIGINT, and SIGTERM.
+         *
+         * @param   int     $signo The signal being handled
+         */
+        public static function signal_handler(int $signo): void
+        {
+        }
+        /**
+         * Register custom signal handler function.
+         *
+         * If a handler returns false the signal will be ignored.
+         *
+         * @param callable $callback
+         * @param array $params
+         * @return void
+         */
+        public static function register_signal_handler(callable $callback, ?array $params = null): void
+        {
+        }
+        /**
+         * Register custom shutdown function.
+         *
+         * @param callable $callback
+         * @param array $params
+         * @return void
+         */
+        public static function register_function(callable $callback, ?array $params = null): void
+        {
+        }
+        /**
+         * This is the main shutdown handler.
+         *
+         * Note: DO NOT call this method directly. It will be called automatically on shutdown.
+         */
+        public static function shutdown_handler(): void
+        {
+        }
+        /**
+         * Standard shutdown sequence.
+         */
+        protected static function request_shutdown(): void
+        {
+        }
+        /**
+         * Logging for the shutdown manager.
+         *
+         * @param string $value
+         */
+        protected static function log(string $value): void
+        {
+        }
     }
+}
+namespace {
     /**
-     * Whether the shutdown manager initialized.
-     *
-     * @return bool
+     * Runtime class alias of \core\shutdown_manager registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public static function is_initialized(): bool
-    {
-    }
-    /**
-     * Signal handler for SIGINT, and SIGTERM.
-     *
-     * @param   int     $signo The signal being handled
-     */
-    public static function signal_handler(int $signo): void
-    {
-    }
-    /**
-     * Register custom signal handler function.
-     *
-     * If a handler returns false the signal will be ignored.
-     *
-     * @param callable $callback
-     * @param array $params
-     * @return void
-     */
-    public static function register_signal_handler(callable $callback, ?array $params = null): void
-    {
-    }
-    /**
-     * Register custom shutdown function.
-     *
-     * @param callable $callback
-     * @param array $params
-     * @return void
-     */
-    public static function register_function(callable $callback, ?array $params = null): void
-    {
-    }
-    /**
-     * This is the main shutdown handler.
-     *
-     * Note: DO NOT call this method directly. It will be called automatically on shutdown.
-     */
-    public static function shutdown_handler(): void
-    {
-    }
-    /**
-     * Standard shutdown sequence.
-     */
-    protected static function request_shutdown(): void
-    {
-    }
-    /**
-     * Logging for the shutdown manager.
-     *
-     * @param string $value
-     */
-    protected static function log(string $value): void
+    class core_shutdown_manager extends \core\shutdown_manager
     {
     }
 }

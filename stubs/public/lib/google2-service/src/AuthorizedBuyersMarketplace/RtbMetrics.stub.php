@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AuthorizedBuyersMarketplace;
-
-class RtbMetrics extends \Google\Model
-{
-    /**
-     * Ad impressions in last 7 days.
-     *
-     * @var string
-     */
-    public $adImpressions7Days;
-    /**
-     * Bid rate in last 7 days, calculated by (bids / bid requests).
-     *
-     * @var 
-     */
-    public $bidRate7Days;
-    /**
-     * Bid requests in last 7 days.
-     *
-     * @var string
-     */
-    public $bidRequests7Days;
-    /**
-     * Bids in last 7 days.
-     *
-     * @var string
-     */
-    public $bids7Days;
-    /**
-     * Filtered bid rate in last 7 days, calculated by (filtered bids / bids).
-     *
-     * @var 
-     */
-    public $filteredBidRate7Days;
-    /**
-     * Must bid rate for current month.
-     *
-     * @var 
-     */
-    public $mustBidRateCurrentMonth;
-    /**
-     * Ad impressions in last 7 days.
-     *
-     * @param string $adImpressions7Days
-     */
-    public function setAdImpressions7Days($adImpressions7Days)
+namespace Google\Service\AuthorizedBuyersMarketplace {
+    class RtbMetrics extends \Google\Model
     {
+        /**
+         * Ad impressions in last 7 days.
+         *
+         * @var string
+         */
+        public $adImpressions7Days;
+        /**
+         * Bid rate in last 7 days, calculated by (bids / bid requests).
+         *
+         * @var 
+         */
+        public $bidRate7Days;
+        /**
+         * Bid requests in last 7 days.
+         *
+         * @var string
+         */
+        public $bidRequests7Days;
+        /**
+         * Bids in last 7 days.
+         *
+         * @var string
+         */
+        public $bids7Days;
+        /**
+         * Filtered bid rate in last 7 days, calculated by (filtered bids / bids).
+         *
+         * @var 
+         */
+        public $filteredBidRate7Days;
+        /**
+         * Must bid rate for current month.
+         *
+         * @var 
+         */
+        public $mustBidRateCurrentMonth;
+        /**
+         * Ad impressions in last 7 days.
+         *
+         * @param string $adImpressions7Days
+         */
+        public function setAdImpressions7Days($adImpressions7Days)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdImpressions7Days()
+        {
+        }
+        public function setBidRate7Days($bidRate7Days)
+        {
+        }
+        public function getBidRate7Days()
+        {
+        }
+        /**
+         * Bid requests in last 7 days.
+         *
+         * @param string $bidRequests7Days
+         */
+        public function setBidRequests7Days($bidRequests7Days)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBidRequests7Days()
+        {
+        }
+        /**
+         * Bids in last 7 days.
+         *
+         * @param string $bids7Days
+         */
+        public function setBids7Days($bids7Days)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBids7Days()
+        {
+        }
+        public function setFilteredBidRate7Days($filteredBidRate7Days)
+        {
+        }
+        public function getFilteredBidRate7Days()
+        {
+        }
+        public function setMustBidRateCurrentMonth($mustBidRateCurrentMonth)
+        {
+        }
+        public function getMustBidRateCurrentMonth()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AuthorizedBuyersMarketplace\RtbMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdImpressions7Days()
-    {
-    }
-    public function setBidRate7Days($bidRate7Days)
-    {
-    }
-    public function getBidRate7Days()
-    {
-    }
-    /**
-     * Bid requests in last 7 days.
-     *
-     * @param string $bidRequests7Days
-     */
-    public function setBidRequests7Days($bidRequests7Days)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBidRequests7Days()
-    {
-    }
-    /**
-     * Bids in last 7 days.
-     *
-     * @param string $bids7Days
-     */
-    public function setBids7Days($bids7Days)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBids7Days()
-    {
-    }
-    public function setFilteredBidRate7Days($filteredBidRate7Days)
-    {
-    }
-    public function getFilteredBidRate7Days()
-    {
-    }
-    public function setMustBidRateCurrentMonth($mustBidRateCurrentMonth)
-    {
-    }
-    public function getMustBidRateCurrentMonth()
+    class Google_Service_AuthorizedBuyersMarketplace_RtbMetrics extends \Google\Service\AuthorizedBuyersMarketplace\RtbMetrics
     {
     }
 }

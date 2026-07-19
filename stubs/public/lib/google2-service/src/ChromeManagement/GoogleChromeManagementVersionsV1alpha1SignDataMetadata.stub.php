@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementVersionsV1alpha1SignDataMetadata extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $startTime;
-    /**
-     * @param string
-     */
-    public function setStartTime($startTime)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementVersionsV1alpha1SignDataMetadata extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $startTime;
+        /**
+         * @param string
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1alpha1SignDataMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStartTime()
+    class Google_Service_ChromeManagement_GoogleChromeManagementVersionsV1alpha1SignDataMetadata extends \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1alpha1SignDataMetadata
     {
     }
 }

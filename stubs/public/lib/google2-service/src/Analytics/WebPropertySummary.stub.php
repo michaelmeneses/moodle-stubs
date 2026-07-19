@@ -21,165 +21,174 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class WebPropertySummary extends \Google\Collection
-{
-    protected $collection_key = 'profiles';
-    /**
-     * Web property ID of the form UA-XXXXX-YY.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Internal ID for this web property.
-     *
-     * @var string
-     */
-    public $internalWebPropertyId;
-    /**
-     * Resource type for Analytics WebPropertySummary.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Level for this web property. Possible values are STANDARD or PREMIUM.
-     *
-     * @var string
-     */
-    public $level;
-    /**
-     * Web property name.
-     *
-     * @var string
-     */
-    public $name;
-    protected $profilesType = ProfileSummary::class;
-    protected $profilesDataType = 'array';
-    /**
-     * Indicates whether this web property is starred or not.
-     *
-     * @var bool
-     */
-    public $starred;
-    /**
-     * Website url for this web property.
-     *
-     * @var string
-     */
-    public $websiteUrl;
-    /**
-     * Web property ID of the form UA-XXXXX-YY.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\Analytics {
+    class WebPropertySummary extends \Google\Collection
     {
+        protected $collection_key = 'profiles';
+        /**
+         * Web property ID of the form UA-XXXXX-YY.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Internal ID for this web property.
+         *
+         * @var string
+         */
+        public $internalWebPropertyId;
+        /**
+         * Resource type for Analytics WebPropertySummary.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Level for this web property. Possible values are STANDARD or PREMIUM.
+         *
+         * @var string
+         */
+        public $level;
+        /**
+         * Web property name.
+         *
+         * @var string
+         */
+        public $name;
+        protected $profilesType = ProfileSummary::class;
+        protected $profilesDataType = 'array';
+        /**
+         * Indicates whether this web property is starred or not.
+         *
+         * @var bool
+         */
+        public $starred;
+        /**
+         * Website url for this web property.
+         *
+         * @var string
+         */
+        public $websiteUrl;
+        /**
+         * Web property ID of the form UA-XXXXX-YY.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Internal ID for this web property.
+         *
+         * @param string $internalWebPropertyId
+         */
+        public function setInternalWebPropertyId($internalWebPropertyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInternalWebPropertyId()
+        {
+        }
+        /**
+         * Resource type for Analytics WebPropertySummary.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Level for this web property. Possible values are STANDARD or PREMIUM.
+         *
+         * @param string $level
+         */
+        public function setLevel($level)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLevel()
+        {
+        }
+        /**
+         * Web property name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * List of profiles under this web property.
+         *
+         * @param ProfileSummary[] $profiles
+         */
+        public function setProfiles($profiles)
+        {
+        }
+        /**
+         * @return ProfileSummary[]
+         */
+        public function getProfiles()
+        {
+        }
+        /**
+         * Indicates whether this web property is starred or not.
+         *
+         * @param bool $starred
+         */
+        public function setStarred($starred)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getStarred()
+        {
+        }
+        /**
+         * Website url for this web property.
+         *
+         * @param string $websiteUrl
+         */
+        public function setWebsiteUrl($websiteUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWebsiteUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Analytics\WebPropertySummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * Internal ID for this web property.
-     *
-     * @param string $internalWebPropertyId
-     */
-    public function setInternalWebPropertyId($internalWebPropertyId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInternalWebPropertyId()
-    {
-    }
-    /**
-     * Resource type for Analytics WebPropertySummary.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Level for this web property. Possible values are STANDARD or PREMIUM.
-     *
-     * @param string $level
-     */
-    public function setLevel($level)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLevel()
-    {
-    }
-    /**
-     * Web property name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * List of profiles under this web property.
-     *
-     * @param ProfileSummary[] $profiles
-     */
-    public function setProfiles($profiles)
-    {
-    }
-    /**
-     * @return ProfileSummary[]
-     */
-    public function getProfiles()
-    {
-    }
-    /**
-     * Indicates whether this web property is starred or not.
-     *
-     * @param bool $starred
-     */
-    public function setStarred($starred)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getStarred()
-    {
-    }
-    /**
-     * Website url for this web property.
-     *
-     * @param string $websiteUrl
-     */
-    public function setWebsiteUrl($websiteUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWebsiteUrl()
+    class Google_Service_Analytics_WebPropertySummary extends \Google\Service\Analytics\WebPropertySummary
     {
     }
 }

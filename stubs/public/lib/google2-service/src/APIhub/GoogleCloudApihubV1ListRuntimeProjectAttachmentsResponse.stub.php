@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1ListRuntimeProjectAttachmentsResponse extends \Google\Collection
-{
-    protected $collection_key = 'runtimeProjectAttachments';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $runtimeProjectAttachmentsType = GoogleCloudApihubV1RuntimeProjectAttachment::class;
-    protected $runtimeProjectAttachmentsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1ListRuntimeProjectAttachmentsResponse extends \Google\Collection
     {
+        protected $collection_key = 'runtimeProjectAttachments';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $runtimeProjectAttachmentsType = GoogleCloudApihubV1RuntimeProjectAttachment::class;
+        protected $runtimeProjectAttachmentsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of runtime project attachments.
+         *
+         * @param GoogleCloudApihubV1RuntimeProjectAttachment[] $runtimeProjectAttachments
+         */
+        public function setRuntimeProjectAttachments($runtimeProjectAttachments)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1RuntimeProjectAttachment[]
+         */
+        public function getRuntimeProjectAttachments()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1ListRuntimeProjectAttachmentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of runtime project attachments.
-     *
-     * @param GoogleCloudApihubV1RuntimeProjectAttachment[] $runtimeProjectAttachments
-     */
-    public function setRuntimeProjectAttachments($runtimeProjectAttachments)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1RuntimeProjectAttachment[]
-     */
-    public function getRuntimeProjectAttachments()
+    class Google_Service_APIhub_GoogleCloudApihubV1ListRuntimeProjectAttachmentsResponse extends \Google\Service\APIhub\GoogleCloudApihubV1ListRuntimeProjectAttachmentsResponse
     {
     }
 }

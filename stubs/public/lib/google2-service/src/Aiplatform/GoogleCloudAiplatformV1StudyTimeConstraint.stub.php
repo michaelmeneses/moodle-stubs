@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1StudyTimeConstraint extends \Google\Model
-{
-    /**
-     * Compares the wallclock time to this time. Must use UTC timezone.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * Counts the wallclock time passed since the creation of this Study.
-     *
-     * @var string
-     */
-    public $maxDuration;
-    /**
-     * Compares the wallclock time to this time. Must use UTC timezone.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1StudyTimeConstraint extends \Google\Model
     {
+        /**
+         * Compares the wallclock time to this time. Must use UTC timezone.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * Counts the wallclock time passed since the creation of this Study.
+         *
+         * @var string
+         */
+        public $maxDuration;
+        /**
+         * Compares the wallclock time to this time. Must use UTC timezone.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Counts the wallclock time passed since the creation of this Study.
+         *
+         * @param string $maxDuration
+         */
+        public function setMaxDuration($maxDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxDuration()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1StudyTimeConstraint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Counts the wallclock time passed since the creation of this Study.
-     *
-     * @param string $maxDuration
-     */
-    public function setMaxDuration($maxDuration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaxDuration()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1StudyTimeConstraint extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1StudyTimeConstraint
     {
     }
 }

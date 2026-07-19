@@ -21,118 +21,127 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class AccountBusinessInformation extends \Google\Model
-{
-    protected $addressType = AccountAddress::class;
-    protected $addressDataType = '';
-    protected $customerServiceType = AccountCustomerService::class;
-    protected $customerServiceDataType = '';
-    /**
-     * The 10-digit [Korean business registration
-     * number](https://support.google.com/merchants/answer/9037766) separated with
-     * dashes in the format: XXX-XX-XXXXX. This field will only be updated if
-     * explicitly set.
-     *
-     * @var string
-     */
-    public $koreanBusinessRegistrationNumber;
-    /**
-     * The phone number of the business in
-     * [E.164](https://en.wikipedia.org/wiki/E.164) format. This can only be
-     * updated if a verified phone number is not already set. To replace a
-     * verified phone number use the `Accounts.requestphoneverification` and
-     * `Accounts.verifyphonenumber`.
-     *
-     * @var string
-     */
-    public $phoneNumber;
-    /**
-     * Verification status of the phone number of the business. This status is
-     * read only and can be updated only by successful phone verification.
-     * Acceptable values are: - "`verified`" - "`unverified`"
-     *
-     * @var string
-     */
-    public $phoneVerificationStatus;
-    /**
-     * The address of the business. Use `\n` to add a second address line.
-     *
-     * @param AccountAddress $address
-     */
-    public function setAddress(AccountAddress $address)
+namespace Google\Service\ShoppingContent {
+    class AccountBusinessInformation extends \Google\Model
     {
+        protected $addressType = AccountAddress::class;
+        protected $addressDataType = '';
+        protected $customerServiceType = AccountCustomerService::class;
+        protected $customerServiceDataType = '';
+        /**
+         * The 10-digit [Korean business registration
+         * number](https://support.google.com/merchants/answer/9037766) separated with
+         * dashes in the format: XXX-XX-XXXXX. This field will only be updated if
+         * explicitly set.
+         *
+         * @var string
+         */
+        public $koreanBusinessRegistrationNumber;
+        /**
+         * The phone number of the business in
+         * [E.164](https://en.wikipedia.org/wiki/E.164) format. This can only be
+         * updated if a verified phone number is not already set. To replace a
+         * verified phone number use the `Accounts.requestphoneverification` and
+         * `Accounts.verifyphonenumber`.
+         *
+         * @var string
+         */
+        public $phoneNumber;
+        /**
+         * Verification status of the phone number of the business. This status is
+         * read only and can be updated only by successful phone verification.
+         * Acceptable values are: - "`verified`" - "`unverified`"
+         *
+         * @var string
+         */
+        public $phoneVerificationStatus;
+        /**
+         * The address of the business. Use `\n` to add a second address line.
+         *
+         * @param AccountAddress $address
+         */
+        public function setAddress(AccountAddress $address)
+        {
+        }
+        /**
+         * @return AccountAddress
+         */
+        public function getAddress()
+        {
+        }
+        /**
+         * The customer service information of the business.
+         *
+         * @param AccountCustomerService $customerService
+         */
+        public function setCustomerService(AccountCustomerService $customerService)
+        {
+        }
+        /**
+         * @return AccountCustomerService
+         */
+        public function getCustomerService()
+        {
+        }
+        /**
+         * The 10-digit [Korean business registration
+         * number](https://support.google.com/merchants/answer/9037766) separated with
+         * dashes in the format: XXX-XX-XXXXX. This field will only be updated if
+         * explicitly set.
+         *
+         * @param string $koreanBusinessRegistrationNumber
+         */
+        public function setKoreanBusinessRegistrationNumber($koreanBusinessRegistrationNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKoreanBusinessRegistrationNumber()
+        {
+        }
+        /**
+         * The phone number of the business in
+         * [E.164](https://en.wikipedia.org/wiki/E.164) format. This can only be
+         * updated if a verified phone number is not already set. To replace a
+         * verified phone number use the `Accounts.requestphoneverification` and
+         * `Accounts.verifyphonenumber`.
+         *
+         * @param string $phoneNumber
+         */
+        public function setPhoneNumber($phoneNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhoneNumber()
+        {
+        }
+        /**
+         * Verification status of the phone number of the business. This status is
+         * read only and can be updated only by successful phone verification.
+         * Acceptable values are: - "`verified`" - "`unverified`"
+         *
+         * @param string $phoneVerificationStatus
+         */
+        public function setPhoneVerificationStatus($phoneVerificationStatus)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhoneVerificationStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AccountAddress
+     * Runtime class alias of \Google\Service\ShoppingContent\AccountBusinessInformation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddress()
-    {
-    }
-    /**
-     * The customer service information of the business.
-     *
-     * @param AccountCustomerService $customerService
-     */
-    public function setCustomerService(AccountCustomerService $customerService)
-    {
-    }
-    /**
-     * @return AccountCustomerService
-     */
-    public function getCustomerService()
-    {
-    }
-    /**
-     * The 10-digit [Korean business registration
-     * number](https://support.google.com/merchants/answer/9037766) separated with
-     * dashes in the format: XXX-XX-XXXXX. This field will only be updated if
-     * explicitly set.
-     *
-     * @param string $koreanBusinessRegistrationNumber
-     */
-    public function setKoreanBusinessRegistrationNumber($koreanBusinessRegistrationNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKoreanBusinessRegistrationNumber()
-    {
-    }
-    /**
-     * The phone number of the business in
-     * [E.164](https://en.wikipedia.org/wiki/E.164) format. This can only be
-     * updated if a verified phone number is not already set. To replace a
-     * verified phone number use the `Accounts.requestphoneverification` and
-     * `Accounts.verifyphonenumber`.
-     *
-     * @param string $phoneNumber
-     */
-    public function setPhoneNumber($phoneNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhoneNumber()
-    {
-    }
-    /**
-     * Verification status of the phone number of the business. This status is
-     * read only and can be updated only by successful phone verification.
-     * Acceptable values are: - "`verified`" - "`unverified`"
-     *
-     * @param string $phoneVerificationStatus
-     */
-    public function setPhoneVerificationStatus($phoneVerificationStatus)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhoneVerificationStatus()
+    class Google_Service_ShoppingContent_AccountBusinessInformation extends \Google\Service\ShoppingContent\AccountBusinessInformation
     {
     }
 }

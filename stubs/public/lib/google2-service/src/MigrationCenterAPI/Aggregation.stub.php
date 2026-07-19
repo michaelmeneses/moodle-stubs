@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class Aggregation extends \Google\Model
-{
-    protected $countType = AggregationCount::class;
-    protected $countDataType = '';
-    /**
-     * The name of the field on which to aggregate.
-     *
-     * @var string
-     */
-    public $field;
-    protected $frequencyType = AggregationFrequency::class;
-    protected $frequencyDataType = '';
-    protected $histogramType = AggregationHistogram::class;
-    protected $histogramDataType = '';
-    protected $sumType = AggregationSum::class;
-    protected $sumDataType = '';
-    /**
-     * Count the number of matching objects.
-     *
-     * @param AggregationCount $count
-     */
-    public function setCount(AggregationCount $count)
+namespace Google\Service\MigrationCenterAPI {
+    class Aggregation extends \Google\Model
     {
+        protected $countType = AggregationCount::class;
+        protected $countDataType = '';
+        /**
+         * The name of the field on which to aggregate.
+         *
+         * @var string
+         */
+        public $field;
+        protected $frequencyType = AggregationFrequency::class;
+        protected $frequencyDataType = '';
+        protected $histogramType = AggregationHistogram::class;
+        protected $histogramDataType = '';
+        protected $sumType = AggregationSum::class;
+        protected $sumDataType = '';
+        /**
+         * Count the number of matching objects.
+         *
+         * @param AggregationCount $count
+         */
+        public function setCount(AggregationCount $count)
+        {
+        }
+        /**
+         * @return AggregationCount
+         */
+        public function getCount()
+        {
+        }
+        /**
+         * The name of the field on which to aggregate.
+         *
+         * @param string $field
+         */
+        public function setField($field)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getField()
+        {
+        }
+        /**
+         * Creates a frequency distribution of all field values.
+         *
+         * @param AggregationFrequency $frequency
+         */
+        public function setFrequency(AggregationFrequency $frequency)
+        {
+        }
+        /**
+         * @return AggregationFrequency
+         */
+        public function getFrequency()
+        {
+        }
+        /**
+         * Creates a bucketed histogram of field values.
+         *
+         * @param AggregationHistogram $histogram
+         */
+        public function setHistogram(AggregationHistogram $histogram)
+        {
+        }
+        /**
+         * @return AggregationHistogram
+         */
+        public function getHistogram()
+        {
+        }
+        /**
+         * Sum over a numeric field.
+         *
+         * @param AggregationSum $sum
+         */
+        public function setSum(AggregationSum $sum)
+        {
+        }
+        /**
+         * @return AggregationSum
+         */
+        public function getSum()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AggregationCount
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\Aggregation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCount()
-    {
-    }
-    /**
-     * The name of the field on which to aggregate.
-     *
-     * @param string $field
-     */
-    public function setField($field)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getField()
-    {
-    }
-    /**
-     * Creates a frequency distribution of all field values.
-     *
-     * @param AggregationFrequency $frequency
-     */
-    public function setFrequency(AggregationFrequency $frequency)
-    {
-    }
-    /**
-     * @return AggregationFrequency
-     */
-    public function getFrequency()
-    {
-    }
-    /**
-     * Creates a bucketed histogram of field values.
-     *
-     * @param AggregationHistogram $histogram
-     */
-    public function setHistogram(AggregationHistogram $histogram)
-    {
-    }
-    /**
-     * @return AggregationHistogram
-     */
-    public function getHistogram()
-    {
-    }
-    /**
-     * Sum over a numeric field.
-     *
-     * @param AggregationSum $sum
-     */
-    public function setSum(AggregationSum $sum)
-    {
-    }
-    /**
-     * @return AggregationSum
-     */
-    public function getSum()
+    class Google_Service_MigrationCenterAPI_Aggregation extends \Google\Service\MigrationCenterAPI\Aggregation
     {
     }
 }

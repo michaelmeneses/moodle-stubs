@@ -21,268 +21,277 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1SecurityReport extends \Google\Model
-{
-    /**
-     * Creation time of the query.
-     *
-     * @var string
-     */
-    public $created;
-    /**
-     * Display Name specified by the user.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Hostname is available only when query is executed at host level.
-     *
-     * @var string
-     */
-    public $envgroupHostname;
-    /**
-     * Error is set when query fails.
-     *
-     * @var string
-     */
-    public $error;
-    /**
-     * ExecutionTime is available only after the query is completed.
-     *
-     * @var string
-     */
-    public $executionTime;
-    protected $queryParamsType = GoogleCloudApigeeV1SecurityReportMetadata::class;
-    protected $queryParamsDataType = '';
-    /**
-     * Report Definition ID.
-     *
-     * @var string
-     */
-    public $reportDefinitionId;
-    protected $resultType = GoogleCloudApigeeV1SecurityReportResultMetadata::class;
-    protected $resultDataType = '';
-    /**
-     * ResultFileSize is available only after the query is completed.
-     *
-     * @var string
-     */
-    public $resultFileSize;
-    /**
-     * ResultRows is available only after the query is completed.
-     *
-     * @var string
-     */
-    public $resultRows;
-    /**
-     * Self link of the query. Example: `/organizations/myorg/environments/myenv/s
-     * ecurityReports/9cfc0d85-0f30-46d6-ae6f-318d0cb961bd` or following format if
-     * query is running at host level: `/organizations/myorg/hostSecurityReports/9
-     * cfc0d85-0f30-46d6-ae6f-318d0cb961bd`
-     *
-     * @var string
-     */
-    public $self;
-    /**
-     * Query state could be "enqueued", "running", "completed", "expired" and
-     * "failed".
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. Last updated timestamp for the query.
-     *
-     * @var string
-     */
-    public $updated;
-    /**
-     * Creation time of the query.
-     *
-     * @param string $created
-     */
-    public function setCreated($created)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1SecurityReport extends \Google\Model
     {
+        /**
+         * Creation time of the query.
+         *
+         * @var string
+         */
+        public $created;
+        /**
+         * Display Name specified by the user.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Hostname is available only when query is executed at host level.
+         *
+         * @var string
+         */
+        public $envgroupHostname;
+        /**
+         * Error is set when query fails.
+         *
+         * @var string
+         */
+        public $error;
+        /**
+         * ExecutionTime is available only after the query is completed.
+         *
+         * @var string
+         */
+        public $executionTime;
+        protected $queryParamsType = GoogleCloudApigeeV1SecurityReportMetadata::class;
+        protected $queryParamsDataType = '';
+        /**
+         * Report Definition ID.
+         *
+         * @var string
+         */
+        public $reportDefinitionId;
+        protected $resultType = GoogleCloudApigeeV1SecurityReportResultMetadata::class;
+        protected $resultDataType = '';
+        /**
+         * ResultFileSize is available only after the query is completed.
+         *
+         * @var string
+         */
+        public $resultFileSize;
+        /**
+         * ResultRows is available only after the query is completed.
+         *
+         * @var string
+         */
+        public $resultRows;
+        /**
+         * Self link of the query. Example: `/organizations/myorg/environments/myenv/s
+         * ecurityReports/9cfc0d85-0f30-46d6-ae6f-318d0cb961bd` or following format if
+         * query is running at host level: `/organizations/myorg/hostSecurityReports/9
+         * cfc0d85-0f30-46d6-ae6f-318d0cb961bd`
+         *
+         * @var string
+         */
+        public $self;
+        /**
+         * Query state could be "enqueued", "running", "completed", "expired" and
+         * "failed".
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. Last updated timestamp for the query.
+         *
+         * @var string
+         */
+        public $updated;
+        /**
+         * Creation time of the query.
+         *
+         * @param string $created
+         */
+        public function setCreated($created)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreated()
+        {
+        }
+        /**
+         * Display Name specified by the user.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Hostname is available only when query is executed at host level.
+         *
+         * @param string $envgroupHostname
+         */
+        public function setEnvgroupHostname($envgroupHostname)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnvgroupHostname()
+        {
+        }
+        /**
+         * Error is set when query fails.
+         *
+         * @param string $error
+         */
+        public function setError($error)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getError()
+        {
+        }
+        /**
+         * ExecutionTime is available only after the query is completed.
+         *
+         * @param string $executionTime
+         */
+        public function setExecutionTime($executionTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExecutionTime()
+        {
+        }
+        /**
+         * Contains information like metrics, dimenstions etc of the Security Report.
+         *
+         * @param GoogleCloudApigeeV1SecurityReportMetadata $queryParams
+         */
+        public function setQueryParams(GoogleCloudApigeeV1SecurityReportMetadata $queryParams)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1SecurityReportMetadata
+         */
+        public function getQueryParams()
+        {
+        }
+        /**
+         * Report Definition ID.
+         *
+         * @param string $reportDefinitionId
+         */
+        public function setReportDefinitionId($reportDefinitionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReportDefinitionId()
+        {
+        }
+        /**
+         * Result is available only after the query is completed.
+         *
+         * @param GoogleCloudApigeeV1SecurityReportResultMetadata $result
+         */
+        public function setResult(GoogleCloudApigeeV1SecurityReportResultMetadata $result)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1SecurityReportResultMetadata
+         */
+        public function getResult()
+        {
+        }
+        /**
+         * ResultFileSize is available only after the query is completed.
+         *
+         * @param string $resultFileSize
+         */
+        public function setResultFileSize($resultFileSize)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResultFileSize()
+        {
+        }
+        /**
+         * ResultRows is available only after the query is completed.
+         *
+         * @param string $resultRows
+         */
+        public function setResultRows($resultRows)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResultRows()
+        {
+        }
+        /**
+         * Self link of the query. Example: `/organizations/myorg/environments/myenv/s
+         * ecurityReports/9cfc0d85-0f30-46d6-ae6f-318d0cb961bd` or following format if
+         * query is running at host level: `/organizations/myorg/hostSecurityReports/9
+         * cfc0d85-0f30-46d6-ae6f-318d0cb961bd`
+         *
+         * @param string $self
+         */
+        public function setSelf($self)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelf()
+        {
+        }
+        /**
+         * Query state could be "enqueued", "running", "completed", "expired" and
+         * "failed".
+         *
+         * @param string $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Output only. Last updated timestamp for the query.
+         *
+         * @param string $updated
+         */
+        public function setUpdated($updated)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdated()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1SecurityReport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreated()
-    {
-    }
-    /**
-     * Display Name specified by the user.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Hostname is available only when query is executed at host level.
-     *
-     * @param string $envgroupHostname
-     */
-    public function setEnvgroupHostname($envgroupHostname)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEnvgroupHostname()
-    {
-    }
-    /**
-     * Error is set when query fails.
-     *
-     * @param string $error
-     */
-    public function setError($error)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getError()
-    {
-    }
-    /**
-     * ExecutionTime is available only after the query is completed.
-     *
-     * @param string $executionTime
-     */
-    public function setExecutionTime($executionTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExecutionTime()
-    {
-    }
-    /**
-     * Contains information like metrics, dimenstions etc of the Security Report.
-     *
-     * @param GoogleCloudApigeeV1SecurityReportMetadata $queryParams
-     */
-    public function setQueryParams(GoogleCloudApigeeV1SecurityReportMetadata $queryParams)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1SecurityReportMetadata
-     */
-    public function getQueryParams()
-    {
-    }
-    /**
-     * Report Definition ID.
-     *
-     * @param string $reportDefinitionId
-     */
-    public function setReportDefinitionId($reportDefinitionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReportDefinitionId()
-    {
-    }
-    /**
-     * Result is available only after the query is completed.
-     *
-     * @param GoogleCloudApigeeV1SecurityReportResultMetadata $result
-     */
-    public function setResult(GoogleCloudApigeeV1SecurityReportResultMetadata $result)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1SecurityReportResultMetadata
-     */
-    public function getResult()
-    {
-    }
-    /**
-     * ResultFileSize is available only after the query is completed.
-     *
-     * @param string $resultFileSize
-     */
-    public function setResultFileSize($resultFileSize)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResultFileSize()
-    {
-    }
-    /**
-     * ResultRows is available only after the query is completed.
-     *
-     * @param string $resultRows
-     */
-    public function setResultRows($resultRows)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResultRows()
-    {
-    }
-    /**
-     * Self link of the query. Example: `/organizations/myorg/environments/myenv/s
-     * ecurityReports/9cfc0d85-0f30-46d6-ae6f-318d0cb961bd` or following format if
-     * query is running at host level: `/organizations/myorg/hostSecurityReports/9
-     * cfc0d85-0f30-46d6-ae6f-318d0cb961bd`
-     *
-     * @param string $self
-     */
-    public function setSelf($self)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelf()
-    {
-    }
-    /**
-     * Query state could be "enqueued", "running", "completed", "expired" and
-     * "failed".
-     *
-     * @param string $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Output only. Last updated timestamp for the query.
-     *
-     * @param string $updated
-     */
-    public function setUpdated($updated)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdated()
+    class Google_Service_Apigee_GoogleCloudApigeeV1SecurityReport extends \Google\Service\Apigee\GoogleCloudApigeeV1SecurityReport
     {
     }
 }

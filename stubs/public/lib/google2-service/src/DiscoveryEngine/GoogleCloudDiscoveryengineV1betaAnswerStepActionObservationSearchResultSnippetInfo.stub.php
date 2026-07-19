@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaAnswerStepActionObservationSearchResultSnippetInfo extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $snippet;
-    /**
-     * @var string
-     */
-    public $snippetStatus;
-    /**
-     * @param string
-     */
-    public function setSnippet($snippet)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaAnswerStepActionObservationSearchResultSnippetInfo extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $snippet;
+        /**
+         * @var string
+         */
+        public $snippetStatus;
+        /**
+         * @param string
+         */
+        public function setSnippet($snippet)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSnippet()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSnippetStatus($snippetStatus)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSnippetStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaAnswerStepActionObservationSearchResultSnippetInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSnippet()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSnippetStatus($snippetStatus)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSnippetStatus()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaAnswerStepActionObservationSearchResultSnippetInfo extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaAnswerStepActionObservationSearchResultSnippetInfo
     {
     }
 }

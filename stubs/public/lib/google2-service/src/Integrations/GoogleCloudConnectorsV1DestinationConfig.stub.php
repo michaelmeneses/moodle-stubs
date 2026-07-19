@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudConnectorsV1DestinationConfig extends \Google\Collection
-{
-    protected $collection_key = 'destinations';
-    protected $destinationsType = GoogleCloudConnectorsV1Destination::class;
-    protected $destinationsDataType = 'array';
-    /**
-     * The key is the destination identifier that is supported by the Connector.
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * The destinations for the key.
-     *
-     * @param GoogleCloudConnectorsV1Destination[] $destinations
-     */
-    public function setDestinations($destinations)
+namespace Google\Service\Integrations {
+    class GoogleCloudConnectorsV1DestinationConfig extends \Google\Collection
     {
+        protected $collection_key = 'destinations';
+        protected $destinationsType = GoogleCloudConnectorsV1Destination::class;
+        protected $destinationsDataType = 'array';
+        /**
+         * The key is the destination identifier that is supported by the Connector.
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * The destinations for the key.
+         *
+         * @param GoogleCloudConnectorsV1Destination[] $destinations
+         */
+        public function setDestinations($destinations)
+        {
+        }
+        /**
+         * @return GoogleCloudConnectorsV1Destination[]
+         */
+        public function getDestinations()
+        {
+        }
+        /**
+         * The key is the destination identifier that is supported by the Connector.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudConnectorsV1Destination[]
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudConnectorsV1DestinationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDestinations()
-    {
-    }
-    /**
-     * The key is the destination identifier that is supported by the Connector.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKey()
+    class Google_Service_Integrations_GoogleCloudConnectorsV1DestinationConfig extends \Google\Service\Integrations\GoogleCloudConnectorsV1DestinationConfig
     {
     }
 }

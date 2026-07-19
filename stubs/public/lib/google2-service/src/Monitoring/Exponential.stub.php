@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class Exponential extends \Google\Model
-{
-    /**
-     * Must be greater than 1.
-     *
-     * @var 
-     */
-    public $growthFactor;
-    /**
-     * Must be greater than 0.
-     *
-     * @var int
-     */
-    public $numFiniteBuckets;
-    /**
-     * Must be greater than 0.
-     *
-     * @var 
-     */
-    public $scale;
-    public function setGrowthFactor($growthFactor)
+namespace Google\Service\Monitoring {
+    class Exponential extends \Google\Model
     {
+        /**
+         * Must be greater than 1.
+         *
+         * @var 
+         */
+        public $growthFactor;
+        /**
+         * Must be greater than 0.
+         *
+         * @var int
+         */
+        public $numFiniteBuckets;
+        /**
+         * Must be greater than 0.
+         *
+         * @var 
+         */
+        public $scale;
+        public function setGrowthFactor($growthFactor)
+        {
+        }
+        public function getGrowthFactor()
+        {
+        }
+        /**
+         * Must be greater than 0.
+         *
+         * @param int $numFiniteBuckets
+         */
+        public function setNumFiniteBuckets($numFiniteBuckets)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumFiniteBuckets()
+        {
+        }
+        public function setScale($scale)
+        {
+        }
+        public function getScale()
+        {
+        }
     }
-    public function getGrowthFactor()
-    {
-    }
+}
+namespace {
     /**
-     * Must be greater than 0.
-     *
-     * @param int $numFiniteBuckets
+     * Runtime class alias of \Google\Service\Monitoring\Exponential registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setNumFiniteBuckets($numFiniteBuckets)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumFiniteBuckets()
-    {
-    }
-    public function setScale($scale)
-    {
-    }
-    public function getScale()
+    class Google_Service_Monitoring_Exponential extends \Google\Service\Monitoring\Exponential
     {
     }
 }

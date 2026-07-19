@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class BatchGetOneTimeProductsResponse extends \Google\Collection
-{
-    protected $collection_key = 'oneTimeProducts';
-    protected $oneTimeProductsType = OneTimeProduct::class;
-    protected $oneTimeProductsDataType = 'array';
-    /**
-     * The list of requested one-time products, in the same order as the request.
-     *
-     * @param OneTimeProduct[] $oneTimeProducts
-     */
-    public function setOneTimeProducts($oneTimeProducts)
+namespace Google\Service\AndroidPublisher {
+    class BatchGetOneTimeProductsResponse extends \Google\Collection
     {
+        protected $collection_key = 'oneTimeProducts';
+        protected $oneTimeProductsType = OneTimeProduct::class;
+        protected $oneTimeProductsDataType = 'array';
+        /**
+         * The list of requested one-time products, in the same order as the request.
+         *
+         * @param OneTimeProduct[] $oneTimeProducts
+         */
+        public function setOneTimeProducts($oneTimeProducts)
+        {
+        }
+        /**
+         * @return OneTimeProduct[]
+         */
+        public function getOneTimeProducts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return OneTimeProduct[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\BatchGetOneTimeProductsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOneTimeProducts()
+    class Google_Service_AndroidPublisher_BatchGetOneTimeProductsResponse extends \Google\Service\AndroidPublisher\BatchGetOneTimeProductsResponse
     {
     }
 }

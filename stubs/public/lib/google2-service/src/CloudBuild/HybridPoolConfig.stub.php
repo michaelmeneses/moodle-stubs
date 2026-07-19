@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class HybridPoolConfig extends \Google\Model
-{
-    protected $defaultWorkerConfigType = HybridWorkerConfig::class;
-    protected $defaultWorkerConfigDataType = '';
-    /**
-     * @var string
-     */
-    public $membership;
-    /**
-     * @param HybridWorkerConfig
-     */
-    public function setDefaultWorkerConfig(HybridWorkerConfig $defaultWorkerConfig)
+namespace Google\Service\CloudBuild {
+    class HybridPoolConfig extends \Google\Model
     {
+        protected $defaultWorkerConfigType = HybridWorkerConfig::class;
+        protected $defaultWorkerConfigDataType = '';
+        /**
+         * @var string
+         */
+        public $membership;
+        /**
+         * @param HybridWorkerConfig
+         */
+        public function setDefaultWorkerConfig(HybridWorkerConfig $defaultWorkerConfig)
+        {
+        }
+        /**
+         * @return HybridWorkerConfig
+         */
+        public function getDefaultWorkerConfig()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMembership($membership)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMembership()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return HybridWorkerConfig
+     * Runtime class alias of \Google\Service\CloudBuild\HybridPoolConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefaultWorkerConfig()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMembership($membership)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMembership()
+    class Google_Service_CloudBuild_HybridPoolConfig extends \Google\Service\CloudBuild\HybridPoolConfig
     {
     }
 }

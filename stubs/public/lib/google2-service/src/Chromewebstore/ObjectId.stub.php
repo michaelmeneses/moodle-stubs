@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Chromewebstore;
-
-class ObjectId extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $bucketName;
-    /**
-     * @var string
-     */
-    public $generation;
-    /**
-     * @var string
-     */
-    public $objectName;
-    /**
-     * @param string
-     */
-    public function setBucketName($bucketName)
+namespace Google\Service\Chromewebstore {
+    class ObjectId extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $bucketName;
+        /**
+         * @var string
+         */
+        public $generation;
+        /**
+         * @var string
+         */
+        public $objectName;
+        /**
+         * @param string
+         */
+        public function setBucketName($bucketName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBucketName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setGeneration($generation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGeneration()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setObjectName($objectName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Chromewebstore\ObjectId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBucketName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setGeneration($generation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGeneration()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setObjectName($objectName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectName()
+    class Google_Service_Chromewebstore_ObjectId extends \Google\Service\Chromewebstore\ObjectId
     {
     }
 }

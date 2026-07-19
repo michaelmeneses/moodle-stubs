@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSecurityToken;
-
-class GoogleIdentityStsV1betaOptions extends \Google\Model
-{
-    protected $accessBoundaryType = GoogleIdentityStsV1betaAccessBoundary::class;
-    protected $accessBoundaryDataType = '';
-    /**
-     * A Google project used for quota and billing purposes when the credential is
-     * used to access Google APIs. The provided project overrides the project
-     * bound to the credential. The value must be a project number or a project
-     * ID. Example: `my-sample-project-191923`. The maximum length is 32
-     * characters.
-     *
-     * @var string
-     */
-    public $userProject;
-    /**
-     * An access boundary that defines the upper bound of permissions the
-     * credential may have. The value should be a JSON object of AccessBoundary.
-     * The access boundary can include up to 10 rules. The size of the parameter
-     * value should not exceed 2048 characters.
-     *
-     * @param GoogleIdentityStsV1betaAccessBoundary $accessBoundary
-     */
-    public function setAccessBoundary(GoogleIdentityStsV1betaAccessBoundary $accessBoundary)
+namespace Google\Service\CloudSecurityToken {
+    class GoogleIdentityStsV1betaOptions extends \Google\Model
     {
+        protected $accessBoundaryType = GoogleIdentityStsV1betaAccessBoundary::class;
+        protected $accessBoundaryDataType = '';
+        /**
+         * A Google project used for quota and billing purposes when the credential is
+         * used to access Google APIs. The provided project overrides the project
+         * bound to the credential. The value must be a project number or a project
+         * ID. Example: `my-sample-project-191923`. The maximum length is 32
+         * characters.
+         *
+         * @var string
+         */
+        public $userProject;
+        /**
+         * An access boundary that defines the upper bound of permissions the
+         * credential may have. The value should be a JSON object of AccessBoundary.
+         * The access boundary can include up to 10 rules. The size of the parameter
+         * value should not exceed 2048 characters.
+         *
+         * @param GoogleIdentityStsV1betaAccessBoundary $accessBoundary
+         */
+        public function setAccessBoundary(GoogleIdentityStsV1betaAccessBoundary $accessBoundary)
+        {
+        }
+        /**
+         * @return GoogleIdentityStsV1betaAccessBoundary
+         */
+        public function getAccessBoundary()
+        {
+        }
+        /**
+         * A Google project used for quota and billing purposes when the credential is
+         * used to access Google APIs. The provided project overrides the project
+         * bound to the credential. The value must be a project number or a project
+         * ID. Example: `my-sample-project-191923`. The maximum length is 32
+         * characters.
+         *
+         * @param string $userProject
+         */
+        public function setUserProject($userProject)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserProject()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleIdentityStsV1betaAccessBoundary
+     * Runtime class alias of \Google\Service\CloudSecurityToken\GoogleIdentityStsV1betaOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessBoundary()
-    {
-    }
-    /**
-     * A Google project used for quota and billing purposes when the credential is
-     * used to access Google APIs. The provided project overrides the project
-     * bound to the credential. The value must be a project number or a project
-     * ID. Example: `my-sample-project-191923`. The maximum length is 32
-     * characters.
-     *
-     * @param string $userProject
-     */
-    public function setUserProject($userProject)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserProject()
+    class Google_Service_CloudSecurityToken_GoogleIdentityStsV1betaOptions extends \Google\Service\CloudSecurityToken\GoogleIdentityStsV1betaOptions
     {
     }
 }

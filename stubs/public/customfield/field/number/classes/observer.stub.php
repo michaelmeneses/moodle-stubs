@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace customfield_number;
 
+use customfield_number\local\numberproviders\nofactivities;
+use customfield_number\task\recalculate;
 /**
  * Event observers for customfield_number
  *

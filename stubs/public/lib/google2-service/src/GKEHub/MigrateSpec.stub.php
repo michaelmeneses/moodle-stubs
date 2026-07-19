@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class MigrateSpec extends \Google\Model
-{
+namespace Google\Service\GKEHub {
+    class MigrateSpec extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\GKEHub\MigrateSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_GKEHub_MigrateSpec extends \Google\Service\GKEHub\MigrateSpec
+    {
+    }
 }

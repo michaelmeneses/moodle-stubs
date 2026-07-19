@@ -21,69 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebaseappcheck\Resource;
-
-/**
- * The "playIntegrityConfig" collection of methods.
- * Typical usage is:
- *  <code>
- *   $firebaseappcheckService = new Google\Service\Firebaseappcheck(...);
- *   $playIntegrityConfig = $firebaseappcheckService->projects_apps_playIntegrityConfig;
- *  </code>
- */
-class ProjectsAppsPlayIntegrityConfig extends \Google\Service\Resource
-{
+namespace Google\Service\Firebaseappcheck\Resource {
+    use Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1BatchGetPlayIntegrityConfigsResponse;
+    use Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1PlayIntegrityConfig;
     /**
-     * Atomically gets the PlayIntegrityConfigs for the specified list of apps.
-     * (playIntegrityConfig.batchGet)
-     *
-     * @param string $parent Required. The parent project name shared by all
-     * PlayIntegrityConfigs being retrieved, in the format ```
-     * projects/{project_number} ``` The parent collection in the `name` field of
-     * any resource being retrieved must match this field, or the entire batch
-     * fails.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string names Required. The relative resource names of the
-     * PlayIntegrityConfigs to retrieve, in the format ```
-     * projects/{project_number}/apps/{app_id}/playIntegrityConfig ``` A maximum of
-     * 100 objects can be retrieved in a batch.
-     * @return GoogleFirebaseAppcheckV1BatchGetPlayIntegrityConfigsResponse
-     * @throws \Google\Service\Exception
+     * The "playIntegrityConfig" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $firebaseappcheckService = new Google\Service\Firebaseappcheck(...);
+     *   $playIntegrityConfig = $firebaseappcheckService->projects_apps_playIntegrityConfig;
+     *  </code>
      */
-    public function batchGet($parent, $optParams = [])
+    class ProjectsAppsPlayIntegrityConfig extends \Google\Service\Resource
     {
+        /**
+         * Atomically gets the PlayIntegrityConfigs for the specified list of apps.
+         * (playIntegrityConfig.batchGet)
+         *
+         * @param string $parent Required. The parent project name shared by all
+         * PlayIntegrityConfigs being retrieved, in the format ```
+         * projects/{project_number} ``` The parent collection in the `name` field of
+         * any resource being retrieved must match this field, or the entire batch
+         * fails.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string names Required. The relative resource names of the
+         * PlayIntegrityConfigs to retrieve, in the format ```
+         * projects/{project_number}/apps/{app_id}/playIntegrityConfig ``` A maximum of
+         * 100 objects can be retrieved in a batch.
+         * @return GoogleFirebaseAppcheckV1BatchGetPlayIntegrityConfigsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function batchGet($parent, $optParams = [])
+        {
+        }
+        /**
+         * Gets the PlayIntegrityConfig for the specified app. (playIntegrityConfig.get)
+         *
+         * @param string $name Required. The relative resource name of the
+         * PlayIntegrityConfig, in the format: ```
+         * projects/{project_number}/apps/{app_id}/playIntegrityConfig ```
+         * @param array $optParams Optional parameters.
+         * @return GoogleFirebaseAppcheckV1PlayIntegrityConfig
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Updates the PlayIntegrityConfig for the specified app. While this
+         * configuration is incomplete or invalid, the app will be unable to exchange
+         * Play Integrity tokens for App Check tokens. (playIntegrityConfig.patch)
+         *
+         * @param string $name Required. The relative resource name of the Play
+         * Integrity configuration object, in the format: ```
+         * projects/{project_number}/apps/{app_id}/playIntegrityConfig ```
+         * @param GoogleFirebaseAppcheckV1PlayIntegrityConfig $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Required. A comma-separated list of names of
+         * fields in the PlayIntegrityConfig to update. Example: `token_ttl`.
+         * @return GoogleFirebaseAppcheckV1PlayIntegrityConfig
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, GoogleFirebaseAppcheckV1PlayIntegrityConfig $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets the PlayIntegrityConfig for the specified app. (playIntegrityConfig.get)
-     *
-     * @param string $name Required. The relative resource name of the
-     * PlayIntegrityConfig, in the format: ```
-     * projects/{project_number}/apps/{app_id}/playIntegrityConfig ```
-     * @param array $optParams Optional parameters.
-     * @return GoogleFirebaseAppcheckV1PlayIntegrityConfig
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Firebaseappcheck\Resource\ProjectsAppsPlayIntegrityConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Updates the PlayIntegrityConfig for the specified app. While this
-     * configuration is incomplete or invalid, the app will be unable to exchange
-     * Play Integrity tokens for App Check tokens. (playIntegrityConfig.patch)
-     *
-     * @param string $name Required. The relative resource name of the Play
-     * Integrity configuration object, in the format: ```
-     * projects/{project_number}/apps/{app_id}/playIntegrityConfig ```
-     * @param GoogleFirebaseAppcheckV1PlayIntegrityConfig $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Required. A comma-separated list of names of
-     * fields in the PlayIntegrityConfig to update. Example: `token_ttl`.
-     * @return GoogleFirebaseAppcheckV1PlayIntegrityConfig
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, GoogleFirebaseAppcheckV1PlayIntegrityConfig $postBody, $optParams = [])
+    class Google_Service_Firebaseappcheck_Resource_ProjectsAppsPlayIntegrityConfig extends \Google\Service\Firebaseappcheck\Resource\ProjectsAppsPlayIntegrityConfig
     {
     }
 }

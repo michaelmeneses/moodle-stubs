@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class GoogleCloudBeyondcorpSecuritygatewaysV1Endpoint extends \Google\Model
-{
-    /**
-     * Required. Hostname of the endpoint.
-     *
-     * @var string
-     */
-    public $hostname;
-    /**
-     * Required. Port of the endpoint.
-     *
-     * @var int
-     */
-    public $port;
-    /**
-     * Required. Hostname of the endpoint.
-     *
-     * @param string $hostname
-     */
-    public function setHostname($hostname)
+namespace Google\Service\BeyondCorp {
+    class GoogleCloudBeyondcorpSecuritygatewaysV1Endpoint extends \Google\Model
     {
+        /**
+         * Required. Hostname of the endpoint.
+         *
+         * @var string
+         */
+        public $hostname;
+        /**
+         * Required. Port of the endpoint.
+         *
+         * @var int
+         */
+        public $port;
+        /**
+         * Required. Hostname of the endpoint.
+         *
+         * @param string $hostname
+         */
+        public function setHostname($hostname)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHostname()
+        {
+        }
+        /**
+         * Required. Port of the endpoint.
+         *
+         * @param int $port
+         */
+        public function setPort($port)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPort()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BeyondCorp\GoogleCloudBeyondcorpSecuritygatewaysV1Endpoint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHostname()
-    {
-    }
-    /**
-     * Required. Port of the endpoint.
-     *
-     * @param int $port
-     */
-    public function setPort($port)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPort()
+    class Google_Service_BeyondCorp_GoogleCloudBeyondcorpSecuritygatewaysV1Endpoint extends \Google\Service\BeyondCorp\GoogleCloudBeyondcorpSecuritygatewaysV1Endpoint
     {
     }
 }

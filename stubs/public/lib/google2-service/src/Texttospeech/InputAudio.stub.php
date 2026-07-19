@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Texttospeech;
-
-class InputAudio extends \Google\Model
-{
-    protected $audioConfigType = InputAudioConfig::class;
-    protected $audioConfigDataType = '';
-    /**
-     * @var string
-     */
-    public $content;
-    /**
-     * @param InputAudioConfig
-     */
-    public function setAudioConfig(InputAudioConfig $audioConfig)
+namespace Google\Service\Texttospeech {
+    class InputAudio extends \Google\Model
     {
+        protected $audioConfigType = InputAudioConfig::class;
+        protected $audioConfigDataType = '';
+        /**
+         * @var string
+         */
+        public $content;
+        /**
+         * @param InputAudioConfig
+         */
+        public function setAudioConfig(InputAudioConfig $audioConfig)
+        {
+        }
+        /**
+         * @return InputAudioConfig
+         */
+        public function getAudioConfig()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InputAudioConfig
+     * Runtime class alias of \Google\Service\Texttospeech\InputAudio registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAudioConfig()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setContent($content)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContent()
+    class Google_Service_Texttospeech_InputAudio extends \Google\Service\Texttospeech\InputAudio
     {
     }
 }

@@ -21,32 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube\Resource;
-
-/**
- * The "videoAbuseReportReasons" collection of methods.
- * Typical usage is:
- *  <code>
- *   $youtubeService = new Google\Service\YouTube(...);
- *   $videoAbuseReportReasons = $youtubeService->videoAbuseReportReasons;
- *  </code>
- */
-class VideoAbuseReportReasons extends \Google\Service\Resource
-{
+namespace Google\Service\YouTube\Resource {
+    use Google\Service\YouTube\VideoAbuseReportReasonListResponse;
     /**
-     * Retrieves a list of resources, possibly filtered.
-     * (videoAbuseReportReasons.listVideoAbuseReportReasons)
-     *
-     * @param string|array $part The *part* parameter specifies the videoCategory
-     * resource parts that the API response will include. Supported values are id
-     * and snippet.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string hl
-     * @return VideoAbuseReportReasonListResponse
-     * @throws \Google\Service\Exception
+     * The "videoAbuseReportReasons" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $youtubeService = new Google\Service\YouTube(...);
+     *   $videoAbuseReportReasons = $youtubeService->videoAbuseReportReasons;
+     *  </code>
      */
-    public function listVideoAbuseReportReasons($part, $optParams = [])
+    class VideoAbuseReportReasons extends \Google\Service\Resource
+    {
+        /**
+         * Retrieves a list of resources, possibly filtered.
+         * (videoAbuseReportReasons.listVideoAbuseReportReasons)
+         *
+         * @param string|array $part The *part* parameter specifies the videoCategory
+         * resource parts that the API response will include. Supported values are id
+         * and snippet.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string hl
+         * @return VideoAbuseReportReasonListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listVideoAbuseReportReasons($part, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\YouTube\Resource\VideoAbuseReportReasons registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_YouTube_Resource_VideoAbuseReportReasons extends \Google\Service\YouTube\Resource\VideoAbuseReportReasons
     {
     }
 }

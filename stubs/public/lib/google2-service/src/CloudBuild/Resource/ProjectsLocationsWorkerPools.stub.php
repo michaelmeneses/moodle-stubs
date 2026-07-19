@@ -21,100 +21,112 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild\Resource;
-
-/**
- * The "workerPools" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudbuildService = new Google\Service\CloudBuild(...);
- *   $workerPools = $cloudbuildService->projects_locations_workerPools;
- *  </code>
- */
-class ProjectsLocationsWorkerPools extends \Google\Service\Resource
-{
+namespace Google\Service\CloudBuild\Resource {
+    use Google\Service\CloudBuild\ListWorkerPoolsResponse;
+    use Google\Service\CloudBuild\Operation;
+    use Google\Service\CloudBuild\WorkerPool;
     /**
-     * Creates a `WorkerPool`. (workerPools.create)
-     *
-     * @param string $parent Required. The parent resource where this worker pool
-     * will be created. Format: `projects/{project}/locations/{location}`.
-     * @param WorkerPool $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool validateOnly If set, validate the request and preview the
-     * response, but do not actually post it.
-     * @opt_param string workerPoolId Required. Immutable. The ID to use for the
-     * `WorkerPool`, which will become the final component of the resource name.
-     * This value should be 1-63 characters, and valid characters are /a-z-/.
-     * @return Operation
+     * The "workerPools" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudbuildService = new Google\Service\CloudBuild(...);
+     *   $workerPools = $cloudbuildService->projects_locations_workerPools;
+     *  </code>
      */
-    public function create($parent, WorkerPool $postBody, $optParams = [])
+    class ProjectsLocationsWorkerPools extends \Google\Service\Resource
     {
+        /**
+         * Creates a `WorkerPool`. (workerPools.create)
+         *
+         * @param string $parent Required. The parent resource where this worker pool
+         * will be created. Format: `projects/{project}/locations/{location}`.
+         * @param WorkerPool $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool validateOnly If set, validate the request and preview the
+         * response, but do not actually post it.
+         * @opt_param string workerPoolId Required. Immutable. The ID to use for the
+         * `WorkerPool`, which will become the final component of the resource name.
+         * This value should be 1-63 characters, and valid characters are /a-z-/.
+         * @return Operation
+         */
+        public function create($parent, WorkerPool $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a `WorkerPool`. (workerPools.delete)
+         *
+         * @param string $name Required. The name of the `WorkerPool` to delete. Format:
+         * `projects/{project}/locations/{location}/workerPools/{workerPool}`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool allowMissing If set to true, and the `WorkerPool` is not
+         * found, the request will succeed but no action will be taken on the server.
+         * @opt_param string etag Optional. If provided, it must match the server's etag
+         * on the workerpool for the request to be processed.
+         * @opt_param bool validateOnly If set, validate the request and preview the
+         * response, but do not actually post it.
+         * @return Operation
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Returns details of a `WorkerPool`. (workerPools.get)
+         *
+         * @param string $name Required. The name of the `WorkerPool` to retrieve.
+         * Format: `projects/{project}/locations/{location}/workerPools/{workerPool}`.
+         * @param array $optParams Optional parameters.
+         * @return WorkerPool
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists `WorkerPool`s. (workerPools.listProjectsLocationsWorkerPools)
+         *
+         * @param string $parent Required. The parent of the collection of
+         * `WorkerPools`. Format: `projects/{project}/locations/{location}`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of `WorkerPool`s to return. The
+         * service may return fewer than this value. If omitted, the server will use a
+         * sensible default.
+         * @opt_param string pageToken A page token, received from a previous
+         * `ListWorkerPools` call. Provide this to retrieve the subsequent page.
+         * @return ListWorkerPoolsResponse
+         */
+        public function listProjectsLocationsWorkerPools($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates a `WorkerPool`. (workerPools.patch)
+         *
+         * @param string $name Output only. The resource name of the `WorkerPool`, with
+         * format `projects/{project}/locations/{location}/workerPools/{worker_pool}`.
+         * The value of `{worker_pool}` is provided by `worker_pool_id` in
+         * `CreateWorkerPool` request and the value of `{location}` is determined by the
+         * endpoint accessed.
+         * @param WorkerPool $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask A mask specifying which fields in `worker_pool`
+         * to update.
+         * @opt_param bool validateOnly If set, validate the request and preview the
+         * response, but do not actually post it.
+         * @return Operation
+         */
+        public function patch($name, WorkerPool $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a `WorkerPool`. (workerPools.delete)
-     *
-     * @param string $name Required. The name of the `WorkerPool` to delete. Format:
-     * `projects/{project}/locations/{location}/workerPools/{workerPool}`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool allowMissing If set to true, and the `WorkerPool` is not
-     * found, the request will succeed but no action will be taken on the server.
-     * @opt_param string etag Optional. If provided, it must match the server's etag
-     * on the workerpool for the request to be processed.
-     * @opt_param bool validateOnly If set, validate the request and preview the
-     * response, but do not actually post it.
-     * @return Operation
+     * Runtime class alias of \Google\Service\CloudBuild\Resource\ProjectsLocationsWorkerPools registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Returns details of a `WorkerPool`. (workerPools.get)
-     *
-     * @param string $name Required. The name of the `WorkerPool` to retrieve.
-     * Format: `projects/{project}/locations/{location}/workerPools/{workerPool}`.
-     * @param array $optParams Optional parameters.
-     * @return WorkerPool
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists `WorkerPool`s. (workerPools.listProjectsLocationsWorkerPools)
-     *
-     * @param string $parent Required. The parent of the collection of
-     * `WorkerPools`. Format: `projects/{project}/locations/{location}`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of `WorkerPool`s to return. The
-     * service may return fewer than this value. If omitted, the server will use a
-     * sensible default.
-     * @opt_param string pageToken A page token, received from a previous
-     * `ListWorkerPools` call. Provide this to retrieve the subsequent page.
-     * @return ListWorkerPoolsResponse
-     */
-    public function listProjectsLocationsWorkerPools($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates a `WorkerPool`. (workerPools.patch)
-     *
-     * @param string $name Output only. The resource name of the `WorkerPool`, with
-     * format `projects/{project}/locations/{location}/workerPools/{worker_pool}`.
-     * The value of `{worker_pool}` is provided by `worker_pool_id` in
-     * `CreateWorkerPool` request and the value of `{location}` is determined by the
-     * endpoint accessed.
-     * @param WorkerPool $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask A mask specifying which fields in `worker_pool`
-     * to update.
-     * @opt_param bool validateOnly If set, validate the request and preview the
-     * response, but do not actually post it.
-     * @return Operation
-     */
-    public function patch($name, WorkerPool $postBody, $optParams = [])
+    class Google_Service_CloudBuild_Resource_ProjectsLocationsWorkerPools extends \Google\Service\CloudBuild\Resource\ProjectsLocationsWorkerPools
     {
     }
 }

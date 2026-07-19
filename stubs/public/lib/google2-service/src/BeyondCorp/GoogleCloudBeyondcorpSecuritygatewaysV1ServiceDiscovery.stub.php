@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class GoogleCloudBeyondcorpSecuritygatewaysV1ServiceDiscovery extends \Google\Model
-{
-    protected $apiGatewayType = GoogleCloudBeyondcorpSecuritygatewaysV1ServiceDiscoveryApiGateway::class;
-    protected $apiGatewayDataType = '';
-    /**
-     * Required. External API configuration.
-     *
-     * @param GoogleCloudBeyondcorpSecuritygatewaysV1ServiceDiscoveryApiGateway $apiGateway
-     */
-    public function setApiGateway(GoogleCloudBeyondcorpSecuritygatewaysV1ServiceDiscoveryApiGateway $apiGateway)
+namespace Google\Service\BeyondCorp {
+    class GoogleCloudBeyondcorpSecuritygatewaysV1ServiceDiscovery extends \Google\Model
     {
+        protected $apiGatewayType = GoogleCloudBeyondcorpSecuritygatewaysV1ServiceDiscoveryApiGateway::class;
+        protected $apiGatewayDataType = '';
+        /**
+         * Required. External API configuration.
+         *
+         * @param GoogleCloudBeyondcorpSecuritygatewaysV1ServiceDiscoveryApiGateway $apiGateway
+         */
+        public function setApiGateway(GoogleCloudBeyondcorpSecuritygatewaysV1ServiceDiscoveryApiGateway $apiGateway)
+        {
+        }
+        /**
+         * @return GoogleCloudBeyondcorpSecuritygatewaysV1ServiceDiscoveryApiGateway
+         */
+        public function getApiGateway()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudBeyondcorpSecuritygatewaysV1ServiceDiscoveryApiGateway
+     * Runtime class alias of \Google\Service\BeyondCorp\GoogleCloudBeyondcorpSecuritygatewaysV1ServiceDiscovery registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiGateway()
+    class Google_Service_BeyondCorp_GoogleCloudBeyondcorpSecuritygatewaysV1ServiceDiscovery extends \Google\Service\BeyondCorp\GoogleCloudBeyondcorpSecuritygatewaysV1ServiceDiscovery
     {
     }
 }

@@ -21,149 +21,158 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity;
-
-class MembershipRelation extends \Google\Collection
-{
-    protected $collection_key = 'roles';
-    /**
-     * An extended description to help users determine the purpose of a `Group`.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The display name of the `Group`.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The [resource name](https://cloud.google.com/apis/design/resource_names) of
-     * the `Group`. Shall be of the form `groups/{group_id}`.
-     *
-     * @var string
-     */
-    public $group;
-    protected $groupKeyType = EntityKey::class;
-    protected $groupKeyDataType = '';
-    /**
-     * One or more label entries that apply to the Group. Currently supported
-     * labels contain a key with an empty value.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * The [resource name](https://cloud.google.com/apis/design/resource_names) of
-     * the `Membership`. Shall be of the form
-     * `groups/{group_id}/memberships/{membership_id}`.
-     *
-     * @var string
-     */
-    public $membership;
-    protected $rolesType = MembershipRole::class;
-    protected $rolesDataType = 'array';
-    /**
-     * An extended description to help users determine the purpose of a `Group`.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\CloudIdentity {
+    class MembershipRelation extends \Google\Collection
     {
+        protected $collection_key = 'roles';
+        /**
+         * An extended description to help users determine the purpose of a `Group`.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The display name of the `Group`.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The [resource name](https://cloud.google.com/apis/design/resource_names) of
+         * the `Group`. Shall be of the form `groups/{group_id}`.
+         *
+         * @var string
+         */
+        public $group;
+        protected $groupKeyType = EntityKey::class;
+        protected $groupKeyDataType = '';
+        /**
+         * One or more label entries that apply to the Group. Currently supported
+         * labels contain a key with an empty value.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * The [resource name](https://cloud.google.com/apis/design/resource_names) of
+         * the `Membership`. Shall be of the form
+         * `groups/{group_id}/memberships/{membership_id}`.
+         *
+         * @var string
+         */
+        public $membership;
+        protected $rolesType = MembershipRole::class;
+        protected $rolesDataType = 'array';
+        /**
+         * An extended description to help users determine the purpose of a `Group`.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The display name of the `Group`.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The [resource name](https://cloud.google.com/apis/design/resource_names) of
+         * the `Group`. Shall be of the form `groups/{group_id}`.
+         *
+         * @param string $group
+         */
+        public function setGroup($group)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGroup()
+        {
+        }
+        /**
+         * The `EntityKey` of the `Group`.
+         *
+         * @param EntityKey $groupKey
+         */
+        public function setGroupKey(EntityKey $groupKey)
+        {
+        }
+        /**
+         * @return EntityKey
+         */
+        public function getGroupKey()
+        {
+        }
+        /**
+         * One or more label entries that apply to the Group. Currently supported
+         * labels contain a key with an empty value.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * The [resource name](https://cloud.google.com/apis/design/resource_names) of
+         * the `Membership`. Shall be of the form
+         * `groups/{group_id}/memberships/{membership_id}`.
+         *
+         * @param string $membership
+         */
+        public function setMembership($membership)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMembership()
+        {
+        }
+        /**
+         * The `MembershipRole`s that apply to the `Membership`.
+         *
+         * @param MembershipRole[] $roles
+         */
+        public function setRoles($roles)
+        {
+        }
+        /**
+         * @return MembershipRole[]
+         */
+        public function getRoles()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudIdentity\MembershipRelation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * The display name of the `Group`.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The [resource name](https://cloud.google.com/apis/design/resource_names) of
-     * the `Group`. Shall be of the form `groups/{group_id}`.
-     *
-     * @param string $group
-     */
-    public function setGroup($group)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGroup()
-    {
-    }
-    /**
-     * The `EntityKey` of the `Group`.
-     *
-     * @param EntityKey $groupKey
-     */
-    public function setGroupKey(EntityKey $groupKey)
-    {
-    }
-    /**
-     * @return EntityKey
-     */
-    public function getGroupKey()
-    {
-    }
-    /**
-     * One or more label entries that apply to the Group. Currently supported
-     * labels contain a key with an empty value.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * The [resource name](https://cloud.google.com/apis/design/resource_names) of
-     * the `Membership`. Shall be of the form
-     * `groups/{group_id}/memberships/{membership_id}`.
-     *
-     * @param string $membership
-     */
-    public function setMembership($membership)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMembership()
-    {
-    }
-    /**
-     * The `MembershipRole`s that apply to the `Membership`.
-     *
-     * @param MembershipRole[] $roles
-     */
-    public function setRoles($roles)
-    {
-    }
-    /**
-     * @return MembershipRole[]
-     */
-    public function getRoles()
+    class Google_Service_CloudIdentity_MembershipRelation extends \Google\Service\CloudIdentity\MembershipRelation
     {
     }
 }

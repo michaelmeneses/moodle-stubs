@@ -21,103 +21,120 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent\Resource;
-
-/**
- * The "pos" collection of methods.
- * Typical usage is:
- *  <code>
- *   $contentService = new Google\Service\ShoppingContent(...);
- *   $pos = $contentService->pos;
- *  </code>
- */
-class Pos extends \Google\Service\Resource
-{
+namespace Google\Service\ShoppingContent\Resource {
+    use Google\Service\ShoppingContent\PosCustomBatchRequest;
+    use Google\Service\ShoppingContent\PosCustomBatchResponse;
+    use Google\Service\ShoppingContent\PosInventoryRequest;
+    use Google\Service\ShoppingContent\PosInventoryResponse;
+    use Google\Service\ShoppingContent\PosListResponse;
+    use Google\Service\ShoppingContent\PosSaleRequest;
+    use Google\Service\ShoppingContent\PosSaleResponse;
+    use Google\Service\ShoppingContent\PosStore;
     /**
-     * Batches multiple POS-related calls in a single request. (pos.custombatch)
-     *
-     * @param PosCustomBatchRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return PosCustomBatchResponse
-     * @throws \Google\Service\Exception
+     * The "pos" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $contentService = new Google\Service\ShoppingContent(...);
+     *   $pos = $contentService->pos;
+     *  </code>
      */
-    public function custombatch(PosCustomBatchRequest $postBody, $optParams = [])
+    class Pos extends \Google\Service\Resource
     {
+        /**
+         * Batches multiple POS-related calls in a single request. (pos.custombatch)
+         *
+         * @param PosCustomBatchRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return PosCustomBatchResponse
+         * @throws \Google\Service\Exception
+         */
+        public function custombatch(PosCustomBatchRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a store for the given merchant. (pos.delete)
+         *
+         * @param string $merchantId The ID of the POS or inventory data provider.
+         * @param string $targetMerchantId The ID of the target merchant.
+         * @param string $storeCode A store code that is unique per merchant.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($merchantId, $targetMerchantId, $storeCode, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves information about the given store. (pos.get)
+         *
+         * @param string $merchantId The ID of the POS or inventory data provider.
+         * @param string $targetMerchantId The ID of the target merchant.
+         * @param string $storeCode A store code that is unique per merchant.
+         * @param array $optParams Optional parameters.
+         * @return PosStore
+         * @throws \Google\Service\Exception
+         */
+        public function get($merchantId, $targetMerchantId, $storeCode, $optParams = [])
+        {
+        }
+        /**
+         * Creates a store for the given merchant. (pos.insert)
+         *
+         * @param string $merchantId The ID of the POS or inventory data provider.
+         * @param string $targetMerchantId The ID of the target merchant.
+         * @param PosStore $postBody
+         * @param array $optParams Optional parameters.
+         * @return PosStore
+         * @throws \Google\Service\Exception
+         */
+        public function insert($merchantId, $targetMerchantId, PosStore $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Submit inventory for the given merchant. (pos.inventory)
+         *
+         * @param string $merchantId The ID of the POS or inventory data provider.
+         * @param string $targetMerchantId The ID of the target merchant.
+         * @param PosInventoryRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return PosInventoryResponse
+         * @throws \Google\Service\Exception
+         */
+        public function inventory($merchantId, $targetMerchantId, PosInventoryRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Lists the stores of the target merchant. (pos.listPos)
+         *
+         * @param string $merchantId The ID of the POS or inventory data provider.
+         * @param string $targetMerchantId The ID of the target merchant.
+         * @param array $optParams Optional parameters.
+         * @return PosListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listPos($merchantId, $targetMerchantId, $optParams = [])
+        {
+        }
+        /**
+         * Submit a sale event for the given merchant. (pos.sale)
+         *
+         * @param string $merchantId The ID of the POS or inventory data provider.
+         * @param string $targetMerchantId The ID of the target merchant.
+         * @param PosSaleRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return PosSaleResponse
+         * @throws \Google\Service\Exception
+         */
+        public function sale($merchantId, $targetMerchantId, PosSaleRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a store for the given merchant. (pos.delete)
-     *
-     * @param string $merchantId The ID of the POS or inventory data provider.
-     * @param string $targetMerchantId The ID of the target merchant.
-     * @param string $storeCode A store code that is unique per merchant.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ShoppingContent\Resource\Pos registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($merchantId, $targetMerchantId, $storeCode, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves information about the given store. (pos.get)
-     *
-     * @param string $merchantId The ID of the POS or inventory data provider.
-     * @param string $targetMerchantId The ID of the target merchant.
-     * @param string $storeCode A store code that is unique per merchant.
-     * @param array $optParams Optional parameters.
-     * @return PosStore
-     * @throws \Google\Service\Exception
-     */
-    public function get($merchantId, $targetMerchantId, $storeCode, $optParams = [])
-    {
-    }
-    /**
-     * Creates a store for the given merchant. (pos.insert)
-     *
-     * @param string $merchantId The ID of the POS or inventory data provider.
-     * @param string $targetMerchantId The ID of the target merchant.
-     * @param PosStore $postBody
-     * @param array $optParams Optional parameters.
-     * @return PosStore
-     * @throws \Google\Service\Exception
-     */
-    public function insert($merchantId, $targetMerchantId, PosStore $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Submit inventory for the given merchant. (pos.inventory)
-     *
-     * @param string $merchantId The ID of the POS or inventory data provider.
-     * @param string $targetMerchantId The ID of the target merchant.
-     * @param PosInventoryRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return PosInventoryResponse
-     * @throws \Google\Service\Exception
-     */
-    public function inventory($merchantId, $targetMerchantId, PosInventoryRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Lists the stores of the target merchant. (pos.listPos)
-     *
-     * @param string $merchantId The ID of the POS or inventory data provider.
-     * @param string $targetMerchantId The ID of the target merchant.
-     * @param array $optParams Optional parameters.
-     * @return PosListResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listPos($merchantId, $targetMerchantId, $optParams = [])
-    {
-    }
-    /**
-     * Submit a sale event for the given merchant. (pos.sale)
-     *
-     * @param string $merchantId The ID of the POS or inventory data provider.
-     * @param string $targetMerchantId The ID of the target merchant.
-     * @param PosSaleRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return PosSaleResponse
-     * @throws \Google\Service\Exception
-     */
-    public function sale($merchantId, $targetMerchantId, PosSaleRequest $postBody, $optParams = [])
+    class Google_Service_ShoppingContent_Resource_Pos extends \Google\Service\ShoppingContent\Resource\Pos
     {
     }
 }

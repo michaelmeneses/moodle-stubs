@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class Segment extends \Google\Model
-{
-    protected $formattingType = Formatting::class;
-    protected $formattingDataType = '';
-    protected $hashtagDataType = HashtagData::class;
-    protected $hashtagDataDataType = '';
-    protected $linkDataType = LinkData::class;
-    protected $linkDataDataType = '';
-    protected $searchLinkDataType = SearchLinkData::class;
-    protected $searchLinkDataDataType = '';
-    /**
-     * @var string
-     */
-    public $text;
-    /**
-     * @var string
-     */
-    public $type;
-    protected $userMentionDataType = UserMentionData::class;
-    protected $userMentionDataDataType = '';
-    /**
-     * @param Formatting
-     */
-    public function setFormatting(Formatting $formatting)
+namespace Google\Service\CloudSearch {
+    class Segment extends \Google\Model
     {
+        protected $formattingType = Formatting::class;
+        protected $formattingDataType = '';
+        protected $hashtagDataType = HashtagData::class;
+        protected $hashtagDataDataType = '';
+        protected $linkDataType = LinkData::class;
+        protected $linkDataDataType = '';
+        protected $searchLinkDataType = SearchLinkData::class;
+        protected $searchLinkDataDataType = '';
+        /**
+         * @var string
+         */
+        public $text;
+        /**
+         * @var string
+         */
+        public $type;
+        protected $userMentionDataType = UserMentionData::class;
+        protected $userMentionDataDataType = '';
+        /**
+         * @param Formatting
+         */
+        public function setFormatting(Formatting $formatting)
+        {
+        }
+        /**
+         * @return Formatting
+         */
+        public function getFormatting()
+        {
+        }
+        /**
+         * @param HashtagData
+         */
+        public function setHashtagData(HashtagData $hashtagData)
+        {
+        }
+        /**
+         * @return HashtagData
+         */
+        public function getHashtagData()
+        {
+        }
+        /**
+         * @param LinkData
+         */
+        public function setLinkData(LinkData $linkData)
+        {
+        }
+        /**
+         * @return LinkData
+         */
+        public function getLinkData()
+        {
+        }
+        /**
+         * @param SearchLinkData
+         */
+        public function setSearchLinkData(SearchLinkData $searchLinkData)
+        {
+        }
+        /**
+         * @return SearchLinkData
+         */
+        public function getSearchLinkData()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * @param UserMentionData
+         */
+        public function setUserMentionData(UserMentionData $userMentionData)
+        {
+        }
+        /**
+         * @return UserMentionData
+         */
+        public function getUserMentionData()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Formatting
+     * Runtime class alias of \Google\Service\CloudSearch\Segment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFormatting()
-    {
-    }
-    /**
-     * @param HashtagData
-     */
-    public function setHashtagData(HashtagData $hashtagData)
-    {
-    }
-    /**
-     * @return HashtagData
-     */
-    public function getHashtagData()
-    {
-    }
-    /**
-     * @param LinkData
-     */
-    public function setLinkData(LinkData $linkData)
-    {
-    }
-    /**
-     * @return LinkData
-     */
-    public function getLinkData()
-    {
-    }
-    /**
-     * @param SearchLinkData
-     */
-    public function setSearchLinkData(SearchLinkData $searchLinkData)
-    {
-    }
-    /**
-     * @return SearchLinkData
-     */
-    public function getSearchLinkData()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-    }
-    /**
-     * @param UserMentionData
-     */
-    public function setUserMentionData(UserMentionData $userMentionData)
-    {
-    }
-    /**
-     * @return UserMentionData
-     */
-    public function getUserMentionData()
+    class Google_Service_CloudSearch_Segment extends \Google\Service\CloudSearch\Segment
     {
     }
 }

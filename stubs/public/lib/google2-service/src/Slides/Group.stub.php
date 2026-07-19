@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class Group extends \Google\Collection
-{
-    protected $collection_key = 'children';
-    protected $childrenType = PageElement::class;
-    protected $childrenDataType = 'array';
-    /**
-     * The collection of elements in the group. The minimum size of a group is 2.
-     *
-     * @param PageElement[] $children
-     */
-    public function setChildren($children)
+namespace Google\Service\Slides {
+    class Group extends \Google\Collection
     {
+        protected $collection_key = 'children';
+        protected $childrenType = PageElement::class;
+        protected $childrenDataType = 'array';
+        /**
+         * The collection of elements in the group. The minimum size of a group is 2.
+         *
+         * @param PageElement[] $children
+         */
+        public function setChildren($children)
+        {
+        }
+        /**
+         * @return PageElement[]
+         */
+        public function getChildren()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PageElement[]
+     * Runtime class alias of \Google\Service\Slides\Group registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChildren()
+    class Google_Service_Slides_Group extends \Google\Service\Slides\Group
     {
     }
 }

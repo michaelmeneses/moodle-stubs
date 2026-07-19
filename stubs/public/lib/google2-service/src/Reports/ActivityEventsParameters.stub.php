@@ -21,164 +21,173 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Reports;
-
-class ActivityEventsParameters extends \Google\Collection
-{
-    protected $collection_key = 'multiValue';
-    /**
-     * Boolean value of the parameter.
-     *
-     * @var bool
-     */
-    public $boolValue;
-    /**
-     * Integer value of the parameter.
-     *
-     * @var string
-     */
-    public $intValue;
-    protected $messageValueType = ActivityEventsParametersMessageValue::class;
-    protected $messageValueDataType = '';
-    /**
-     * Integer values of the parameter.
-     *
-     * @var string[]
-     */
-    public $multiIntValue;
-    protected $multiMessageValueType = ActivityEventsParametersMultiMessageValue::class;
-    protected $multiMessageValueDataType = 'array';
-    /**
-     * String values of the parameter.
-     *
-     * @var string[]
-     */
-    public $multiValue;
-    /**
-     * The name of the parameter.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * String value of the parameter.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Boolean value of the parameter.
-     *
-     * @param bool $boolValue
-     */
-    public function setBoolValue($boolValue)
+namespace Google\Service\Reports {
+    class ActivityEventsParameters extends \Google\Collection
     {
+        protected $collection_key = 'multiValue';
+        /**
+         * Boolean value of the parameter.
+         *
+         * @var bool
+         */
+        public $boolValue;
+        /**
+         * Integer value of the parameter.
+         *
+         * @var string
+         */
+        public $intValue;
+        protected $messageValueType = ActivityEventsParametersMessageValue::class;
+        protected $messageValueDataType = '';
+        /**
+         * Integer values of the parameter.
+         *
+         * @var string[]
+         */
+        public $multiIntValue;
+        protected $multiMessageValueType = ActivityEventsParametersMultiMessageValue::class;
+        protected $multiMessageValueDataType = 'array';
+        /**
+         * String values of the parameter.
+         *
+         * @var string[]
+         */
+        public $multiValue;
+        /**
+         * The name of the parameter.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * String value of the parameter.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Boolean value of the parameter.
+         *
+         * @param bool $boolValue
+         */
+        public function setBoolValue($boolValue)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBoolValue()
+        {
+        }
+        /**
+         * Integer value of the parameter.
+         *
+         * @param string $intValue
+         */
+        public function setIntValue($intValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIntValue()
+        {
+        }
+        /**
+         * Nested parameter value pairs associated with this parameter. Complex value
+         * type for a parameter are returned as a list of parameter values. For
+         * example, the address parameter may have a value as `[{parameter: [{name:
+         * city, value: abc}]}]`
+         *
+         * @param ActivityEventsParametersMessageValue $messageValue
+         */
+        public function setMessageValue(ActivityEventsParametersMessageValue $messageValue)
+        {
+        }
+        /**
+         * @return ActivityEventsParametersMessageValue
+         */
+        public function getMessageValue()
+        {
+        }
+        /**
+         * Integer values of the parameter.
+         *
+         * @param string[] $multiIntValue
+         */
+        public function setMultiIntValue($multiIntValue)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMultiIntValue()
+        {
+        }
+        /**
+         * List of `messageValue` objects.
+         *
+         * @param ActivityEventsParametersMultiMessageValue[] $multiMessageValue
+         */
+        public function setMultiMessageValue($multiMessageValue)
+        {
+        }
+        /**
+         * @return ActivityEventsParametersMultiMessageValue[]
+         */
+        public function getMultiMessageValue()
+        {
+        }
+        /**
+         * String values of the parameter.
+         *
+         * @param string[] $multiValue
+         */
+        public function setMultiValue($multiValue)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMultiValue()
+        {
+        }
+        /**
+         * The name of the parameter.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * String value of the parameter.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Reports\ActivityEventsParameters registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBoolValue()
-    {
-    }
-    /**
-     * Integer value of the parameter.
-     *
-     * @param string $intValue
-     */
-    public function setIntValue($intValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIntValue()
-    {
-    }
-    /**
-     * Nested parameter value pairs associated with this parameter. Complex value
-     * type for a parameter are returned as a list of parameter values. For
-     * example, the address parameter may have a value as `[{parameter: [{name:
-     * city, value: abc}]}]`
-     *
-     * @param ActivityEventsParametersMessageValue $messageValue
-     */
-    public function setMessageValue(ActivityEventsParametersMessageValue $messageValue)
-    {
-    }
-    /**
-     * @return ActivityEventsParametersMessageValue
-     */
-    public function getMessageValue()
-    {
-    }
-    /**
-     * Integer values of the parameter.
-     *
-     * @param string[] $multiIntValue
-     */
-    public function setMultiIntValue($multiIntValue)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMultiIntValue()
-    {
-    }
-    /**
-     * List of `messageValue` objects.
-     *
-     * @param ActivityEventsParametersMultiMessageValue[] $multiMessageValue
-     */
-    public function setMultiMessageValue($multiMessageValue)
-    {
-    }
-    /**
-     * @return ActivityEventsParametersMultiMessageValue[]
-     */
-    public function getMultiMessageValue()
-    {
-    }
-    /**
-     * String values of the parameter.
-     *
-     * @param string[] $multiValue
-     */
-    public function setMultiValue($multiValue)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMultiValue()
-    {
-    }
-    /**
-     * The name of the parameter.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * String value of the parameter.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_Reports_ActivityEventsParameters extends \Google\Service\Reports\ActivityEventsParameters
     {
     }
 }

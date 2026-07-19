@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class BuildBazelRemoteExecutionV2CacheCapabilities extends \Google\Collection
-{
-    protected $collection_key = 'supportedCompressor';
-    protected $actionCacheUpdateCapabilitiesType = BuildBazelRemoteExecutionV2ActionCacheUpdateCapabilities::class;
-    protected $actionCacheUpdateCapabilitiesDataType = '';
-    protected $cachePriorityCapabilitiesType = BuildBazelRemoteExecutionV2PriorityCapabilities::class;
-    protected $cachePriorityCapabilitiesDataType = '';
-    public $digestFunction;
-    public $maxBatchTotalSizeBytes;
-    public $supportedCompressor;
-    public $symlinkAbsolutePathStrategy;
+namespace Google\Service\RemoteBuildExecution {
+    class BuildBazelRemoteExecutionV2CacheCapabilities extends \Google\Collection
+    {
+        protected $collection_key = 'supportedCompressor';
+        protected $actionCacheUpdateCapabilitiesType = BuildBazelRemoteExecutionV2ActionCacheUpdateCapabilities::class;
+        protected $actionCacheUpdateCapabilitiesDataType = '';
+        protected $cachePriorityCapabilitiesType = BuildBazelRemoteExecutionV2PriorityCapabilities::class;
+        protected $cachePriorityCapabilitiesDataType = '';
+        public $digestFunction;
+        public $maxBatchTotalSizeBytes;
+        public $supportedCompressor;
+        public $symlinkAbsolutePathStrategy;
+        /**
+         * @param BuildBazelRemoteExecutionV2ActionCacheUpdateCapabilities
+         */
+        public function setActionCacheUpdateCapabilities(BuildBazelRemoteExecutionV2ActionCacheUpdateCapabilities $actionCacheUpdateCapabilities)
+        {
+        }
+        /**
+         * @return BuildBazelRemoteExecutionV2ActionCacheUpdateCapabilities
+         */
+        public function getActionCacheUpdateCapabilities()
+        {
+        }
+        /**
+         * @param BuildBazelRemoteExecutionV2PriorityCapabilities
+         */
+        public function setCachePriorityCapabilities(BuildBazelRemoteExecutionV2PriorityCapabilities $cachePriorityCapabilities)
+        {
+        }
+        /**
+         * @return BuildBazelRemoteExecutionV2PriorityCapabilities
+         */
+        public function getCachePriorityCapabilities()
+        {
+        }
+        public function setDigestFunction($digestFunction)
+        {
+        }
+        public function getDigestFunction()
+        {
+        }
+        public function setMaxBatchTotalSizeBytes($maxBatchTotalSizeBytes)
+        {
+        }
+        public function getMaxBatchTotalSizeBytes()
+        {
+        }
+        public function setSupportedCompressor($supportedCompressor)
+        {
+        }
+        public function getSupportedCompressor()
+        {
+        }
+        public function setSymlinkAbsolutePathStrategy($symlinkAbsolutePathStrategy)
+        {
+        }
+        public function getSymlinkAbsolutePathStrategy()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param BuildBazelRemoteExecutionV2ActionCacheUpdateCapabilities
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2CacheCapabilities registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setActionCacheUpdateCapabilities(BuildBazelRemoteExecutionV2ActionCacheUpdateCapabilities $actionCacheUpdateCapabilities)
-    {
-    }
-    /**
-     * @return BuildBazelRemoteExecutionV2ActionCacheUpdateCapabilities
-     */
-    public function getActionCacheUpdateCapabilities()
-    {
-    }
-    /**
-     * @param BuildBazelRemoteExecutionV2PriorityCapabilities
-     */
-    public function setCachePriorityCapabilities(BuildBazelRemoteExecutionV2PriorityCapabilities $cachePriorityCapabilities)
-    {
-    }
-    /**
-     * @return BuildBazelRemoteExecutionV2PriorityCapabilities
-     */
-    public function getCachePriorityCapabilities()
-    {
-    }
-    public function setDigestFunction($digestFunction)
-    {
-    }
-    public function getDigestFunction()
-    {
-    }
-    public function setMaxBatchTotalSizeBytes($maxBatchTotalSizeBytes)
-    {
-    }
-    public function getMaxBatchTotalSizeBytes()
-    {
-    }
-    public function setSupportedCompressor($supportedCompressor)
-    {
-    }
-    public function getSupportedCompressor()
-    {
-    }
-    public function setSymlinkAbsolutePathStrategy($symlinkAbsolutePathStrategy)
-    {
-    }
-    public function getSymlinkAbsolutePathStrategy()
+    class Google_Service_RemoteBuildExecution_BuildBazelRemoteExecutionV2CacheCapabilities extends \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2CacheCapabilities
     {
     }
 }

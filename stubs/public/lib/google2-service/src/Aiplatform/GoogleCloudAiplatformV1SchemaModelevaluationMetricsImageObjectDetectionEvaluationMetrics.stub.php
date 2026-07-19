@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaModelevaluationMetricsImageObjectDetectionEvaluationMetrics extends \Google\Collection
-{
-    protected $collection_key = 'boundingBoxMetrics';
-    /**
-     * The single metric for bounding boxes evaluation: the `meanAveragePrecision`
-     * averaged over all `boundingBoxMetricsEntries`.
-     *
-     * @var float
-     */
-    public $boundingBoxMeanAveragePrecision;
-    protected $boundingBoxMetricsType = GoogleCloudAiplatformV1SchemaModelevaluationMetricsBoundingBoxMetrics::class;
-    protected $boundingBoxMetricsDataType = 'array';
-    /**
-     * The total number of bounding boxes (i.e. summed over all images) the ground
-     * truth used to create this evaluation had.
-     *
-     * @var int
-     */
-    public $evaluatedBoundingBoxCount;
-    /**
-     * The single metric for bounding boxes evaluation: the `meanAveragePrecision`
-     * averaged over all `boundingBoxMetricsEntries`.
-     *
-     * @param float $boundingBoxMeanAveragePrecision
-     */
-    public function setBoundingBoxMeanAveragePrecision($boundingBoxMeanAveragePrecision)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaModelevaluationMetricsImageObjectDetectionEvaluationMetrics extends \Google\Collection
     {
+        protected $collection_key = 'boundingBoxMetrics';
+        /**
+         * The single metric for bounding boxes evaluation: the `meanAveragePrecision`
+         * averaged over all `boundingBoxMetricsEntries`.
+         *
+         * @var float
+         */
+        public $boundingBoxMeanAveragePrecision;
+        protected $boundingBoxMetricsType = GoogleCloudAiplatformV1SchemaModelevaluationMetricsBoundingBoxMetrics::class;
+        protected $boundingBoxMetricsDataType = 'array';
+        /**
+         * The total number of bounding boxes (i.e. summed over all images) the ground
+         * truth used to create this evaluation had.
+         *
+         * @var int
+         */
+        public $evaluatedBoundingBoxCount;
+        /**
+         * The single metric for bounding boxes evaluation: the `meanAveragePrecision`
+         * averaged over all `boundingBoxMetricsEntries`.
+         *
+         * @param float $boundingBoxMeanAveragePrecision
+         */
+        public function setBoundingBoxMeanAveragePrecision($boundingBoxMeanAveragePrecision)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getBoundingBoxMeanAveragePrecision()
+        {
+        }
+        /**
+         * The bounding boxes match metrics for each intersection-over-union threshold
+         * 0.05,0.10,...,0.95,0.96,0.97,0.98,0.99 and each label confidence threshold
+         * 0.05,0.10,...,0.95,0.96,0.97,0.98,0.99 pair.
+         *
+         * @param GoogleCloudAiplatformV1SchemaModelevaluationMetricsBoundingBoxMetrics[] $boundingBoxMetrics
+         */
+        public function setBoundingBoxMetrics($boundingBoxMetrics)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SchemaModelevaluationMetricsBoundingBoxMetrics[]
+         */
+        public function getBoundingBoxMetrics()
+        {
+        }
+        /**
+         * The total number of bounding boxes (i.e. summed over all images) the ground
+         * truth used to create this evaluation had.
+         *
+         * @param int $evaluatedBoundingBoxCount
+         */
+        public function setEvaluatedBoundingBoxCount($evaluatedBoundingBoxCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getEvaluatedBoundingBoxCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaModelevaluationMetricsImageObjectDetectionEvaluationMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBoundingBoxMeanAveragePrecision()
-    {
-    }
-    /**
-     * The bounding boxes match metrics for each intersection-over-union threshold
-     * 0.05,0.10,...,0.95,0.96,0.97,0.98,0.99 and each label confidence threshold
-     * 0.05,0.10,...,0.95,0.96,0.97,0.98,0.99 pair.
-     *
-     * @param GoogleCloudAiplatformV1SchemaModelevaluationMetricsBoundingBoxMetrics[] $boundingBoxMetrics
-     */
-    public function setBoundingBoxMetrics($boundingBoxMetrics)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1SchemaModelevaluationMetricsBoundingBoxMetrics[]
-     */
-    public function getBoundingBoxMetrics()
-    {
-    }
-    /**
-     * The total number of bounding boxes (i.e. summed over all images) the ground
-     * truth used to create this evaluation had.
-     *
-     * @param int $evaluatedBoundingBoxCount
-     */
-    public function setEvaluatedBoundingBoxCount($evaluatedBoundingBoxCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getEvaluatedBoundingBoxCount()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaModelevaluationMetricsImageObjectDetectionEvaluationMetrics extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaModelevaluationMetricsImageObjectDetectionEvaluationMetrics
     {
     }
 }

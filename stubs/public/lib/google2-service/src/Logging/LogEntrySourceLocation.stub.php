@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Logging;
-
-class LogEntrySourceLocation extends \Google\Model
-{
-    /**
-     * Optional. Source file name. Depending on the runtime environment, this
-     * might be a simple name or a fully-qualified name.
-     *
-     * @var string
-     */
-    public $file;
-    /**
-     * Optional. Human-readable name of the function or method being invoked, with
-     * optional context such as the class or package name. This information may be
-     * used in contexts such as the logs viewer, where a file and line number are
-     * less meaningful. The format can vary by language. For example:
-     * qual.if.ied.Class.method (Java), dir/package.func (Go), function (Python).
-     *
-     * @var string
-     */
-    public $function;
-    /**
-     * Optional. Line within the source file. 1-based; 0 indicates no line number
-     * available.
-     *
-     * @var string
-     */
-    public $line;
-    /**
-     * Optional. Source file name. Depending on the runtime environment, this
-     * might be a simple name or a fully-qualified name.
-     *
-     * @param string $file
-     */
-    public function setFile($file)
+namespace Google\Service\Logging {
+    class LogEntrySourceLocation extends \Google\Model
     {
+        /**
+         * Optional. Source file name. Depending on the runtime environment, this
+         * might be a simple name or a fully-qualified name.
+         *
+         * @var string
+         */
+        public $file;
+        /**
+         * Optional. Human-readable name of the function or method being invoked, with
+         * optional context such as the class or package name. This information may be
+         * used in contexts such as the logs viewer, where a file and line number are
+         * less meaningful. The format can vary by language. For example:
+         * qual.if.ied.Class.method (Java), dir/package.func (Go), function (Python).
+         *
+         * @var string
+         */
+        public $function;
+        /**
+         * Optional. Line within the source file. 1-based; 0 indicates no line number
+         * available.
+         *
+         * @var string
+         */
+        public $line;
+        /**
+         * Optional. Source file name. Depending on the runtime environment, this
+         * might be a simple name or a fully-qualified name.
+         *
+         * @param string $file
+         */
+        public function setFile($file)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFile()
+        {
+        }
+        /**
+         * Optional. Human-readable name of the function or method being invoked, with
+         * optional context such as the class or package name. This information may be
+         * used in contexts such as the logs viewer, where a file and line number are
+         * less meaningful. The format can vary by language. For example:
+         * qual.if.ied.Class.method (Java), dir/package.func (Go), function (Python).
+         *
+         * @param string $function
+         */
+        public function setFunction($function)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFunction()
+        {
+        }
+        /**
+         * Optional. Line within the source file. 1-based; 0 indicates no line number
+         * available.
+         *
+         * @param string $line
+         */
+        public function setLine($line)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLine()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Logging\LogEntrySourceLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFile()
-    {
-    }
-    /**
-     * Optional. Human-readable name of the function or method being invoked, with
-     * optional context such as the class or package name. This information may be
-     * used in contexts such as the logs viewer, where a file and line number are
-     * less meaningful. The format can vary by language. For example:
-     * qual.if.ied.Class.method (Java), dir/package.func (Go), function (Python).
-     *
-     * @param string $function
-     */
-    public function setFunction($function)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFunction()
-    {
-    }
-    /**
-     * Optional. Line within the source file. 1-based; 0 indicates no line number
-     * available.
-     *
-     * @param string $line
-     */
-    public function setLine($line)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLine()
+    class Google_Service_Logging_LogEntrySourceLocation extends \Google\Service\Logging\LogEntrySourceLocation
     {
     }
 }

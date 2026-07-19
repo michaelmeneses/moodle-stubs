@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1ListConversationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'conversations';
-    protected $conversationsType = GoogleCloudDiscoveryengineV1Conversation::class;
-    protected $conversationsDataType = 'array';
-    /**
-     * Pagination token, if not returned indicates the last page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * All the Conversations for a given data store.
-     *
-     * @param GoogleCloudDiscoveryengineV1Conversation[] $conversations
-     */
-    public function setConversations($conversations)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1ListConversationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'conversations';
+        protected $conversationsType = GoogleCloudDiscoveryengineV1Conversation::class;
+        protected $conversationsDataType = 'array';
+        /**
+         * Pagination token, if not returned indicates the last page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * All the Conversations for a given data store.
+         *
+         * @param GoogleCloudDiscoveryengineV1Conversation[] $conversations
+         */
+        public function setConversations($conversations)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1Conversation[]
+         */
+        public function getConversations()
+        {
+        }
+        /**
+         * Pagination token, if not returned indicates the last page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1Conversation[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ListConversationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConversations()
-    {
-    }
-    /**
-     * Pagination token, if not returned indicates the last page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1ListConversationsResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ListConversationsResponse
     {
     }
 }

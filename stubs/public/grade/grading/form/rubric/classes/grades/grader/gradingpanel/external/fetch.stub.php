@@ -8,6 +8,18 @@
  */
 namespace gradingform_rubric\grades\grader\gradingpanel\external;
 
+use coding_exception;
+use context;
+use core_grades\component_gradeitem as gradeitem;
+use core_grades\component_gradeitems;
+use core_external\external_api;
+use core_external\external_function_parameters;
+use core_external\external_multiple_structure;
+use core_external\external_single_structure;
+use core_external\external_value;
+use core_external\external_warnings;
+use stdClass;
+use moodle_exception;
 /**
  * Web services relating to fetching of a rubric for the grading panel.
  *

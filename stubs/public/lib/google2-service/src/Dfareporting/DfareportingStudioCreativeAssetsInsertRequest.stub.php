@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class DfareportingStudioCreativeAssetsInsertRequest extends \Google\Model
-{
-    /**
-     * Optional. Studio account ID of the studio creative asset. It is a optional.
-     *
-     * @var string
-     */
-    public $studioAccountId;
-    /**
-     * Required. Studio advertiser ID of the studio creative asset. It is a
-     * required field on insertion.
-     *
-     * @var string
-     */
-    public $studioAdvertiserId;
-    /**
-     * Optional. Studio creative ID of the studio creative asset. It is a optional
-     * field. If it is set, the asset will be associated to the creative.
-     *
-     * @var string
-     */
-    public $studioCreativeId;
-    /**
-     * Optional. Studio account ID of the studio creative asset. It is a optional.
-     *
-     * @param string $studioAccountId
-     */
-    public function setStudioAccountId($studioAccountId)
+namespace Google\Service\Dfareporting {
+    class DfareportingStudioCreativeAssetsInsertRequest extends \Google\Model
     {
+        /**
+         * Optional. Studio account ID of the studio creative asset. It is a optional.
+         *
+         * @var string
+         */
+        public $studioAccountId;
+        /**
+         * Required. Studio advertiser ID of the studio creative asset. It is a
+         * required field on insertion.
+         *
+         * @var string
+         */
+        public $studioAdvertiserId;
+        /**
+         * Optional. Studio creative ID of the studio creative asset. It is a optional
+         * field. If it is set, the asset will be associated to the creative.
+         *
+         * @var string
+         */
+        public $studioCreativeId;
+        /**
+         * Optional. Studio account ID of the studio creative asset. It is a optional.
+         *
+         * @param string $studioAccountId
+         */
+        public function setStudioAccountId($studioAccountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStudioAccountId()
+        {
+        }
+        /**
+         * Required. Studio advertiser ID of the studio creative asset. It is a
+         * required field on insertion.
+         *
+         * @param string $studioAdvertiserId
+         */
+        public function setStudioAdvertiserId($studioAdvertiserId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStudioAdvertiserId()
+        {
+        }
+        /**
+         * Optional. Studio creative ID of the studio creative asset. It is a optional
+         * field. If it is set, the asset will be associated to the creative.
+         *
+         * @param string $studioCreativeId
+         */
+        public function setStudioCreativeId($studioCreativeId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStudioCreativeId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\DfareportingStudioCreativeAssetsInsertRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStudioAccountId()
-    {
-    }
-    /**
-     * Required. Studio advertiser ID of the studio creative asset. It is a
-     * required field on insertion.
-     *
-     * @param string $studioAdvertiserId
-     */
-    public function setStudioAdvertiserId($studioAdvertiserId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStudioAdvertiserId()
-    {
-    }
-    /**
-     * Optional. Studio creative ID of the studio creative asset. It is a optional
-     * field. If it is set, the asset will be associated to the creative.
-     *
-     * @param string $studioCreativeId
-     */
-    public function setStudioCreativeId($studioCreativeId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStudioCreativeId()
+    class Google_Service_Dfareporting_DfareportingStudioCreativeAssetsInsertRequest extends \Google\Service\Dfareporting\DfareportingStudioCreativeAssetsInsertRequest
     {
     }
 }

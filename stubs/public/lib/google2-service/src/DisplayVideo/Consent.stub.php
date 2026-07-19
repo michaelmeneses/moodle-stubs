@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class Consent extends \Google\Model
-{
-    /**
-     * Type value is not specified or is unknown in this version.
-     */
-    public const AD_PERSONALIZATION_CONSENT_STATUS_UNSPECIFIED = 'CONSENT_STATUS_UNSPECIFIED';
-    /**
-     * Consent is granted.
-     */
-    public const AD_PERSONALIZATION_CONSENT_STATUS_GRANTED = 'CONSENT_STATUS_GRANTED';
-    /**
-     * Consent is denied.
-     */
-    public const AD_PERSONALIZATION_CONSENT_STATUS_DENIED = 'CONSENT_STATUS_DENIED';
-    /**
-     * Type value is not specified or is unknown in this version.
-     */
-    public const AD_USER_DATA_CONSENT_STATUS_UNSPECIFIED = 'CONSENT_STATUS_UNSPECIFIED';
-    /**
-     * Consent is granted.
-     */
-    public const AD_USER_DATA_CONSENT_STATUS_GRANTED = 'CONSENT_STATUS_GRANTED';
-    /**
-     * Consent is denied.
-     */
-    public const AD_USER_DATA_CONSENT_STATUS_DENIED = 'CONSENT_STATUS_DENIED';
-    /**
-     * Represents consent for ad personalization.
-     *
-     * @var string
-     */
-    public $adPersonalization;
-    /**
-     * Represents consent for ad user data.
-     *
-     * @var string
-     */
-    public $adUserData;
-    /**
-     * Represents consent for ad personalization.
-     *
-     * Accepted values: CONSENT_STATUS_UNSPECIFIED, CONSENT_STATUS_GRANTED,
-     * CONSENT_STATUS_DENIED
-     *
-     * @param self::AD_PERSONALIZATION_* $adPersonalization
-     */
-    public function setAdPersonalization($adPersonalization)
+namespace Google\Service\DisplayVideo {
+    class Consent extends \Google\Model
     {
+        /**
+         * Type value is not specified or is unknown in this version.
+         */
+        public const AD_PERSONALIZATION_CONSENT_STATUS_UNSPECIFIED = 'CONSENT_STATUS_UNSPECIFIED';
+        /**
+         * Consent is granted.
+         */
+        public const AD_PERSONALIZATION_CONSENT_STATUS_GRANTED = 'CONSENT_STATUS_GRANTED';
+        /**
+         * Consent is denied.
+         */
+        public const AD_PERSONALIZATION_CONSENT_STATUS_DENIED = 'CONSENT_STATUS_DENIED';
+        /**
+         * Type value is not specified or is unknown in this version.
+         */
+        public const AD_USER_DATA_CONSENT_STATUS_UNSPECIFIED = 'CONSENT_STATUS_UNSPECIFIED';
+        /**
+         * Consent is granted.
+         */
+        public const AD_USER_DATA_CONSENT_STATUS_GRANTED = 'CONSENT_STATUS_GRANTED';
+        /**
+         * Consent is denied.
+         */
+        public const AD_USER_DATA_CONSENT_STATUS_DENIED = 'CONSENT_STATUS_DENIED';
+        /**
+         * Represents consent for ad personalization.
+         *
+         * @var string
+         */
+        public $adPersonalization;
+        /**
+         * Represents consent for ad user data.
+         *
+         * @var string
+         */
+        public $adUserData;
+        /**
+         * Represents consent for ad personalization.
+         *
+         * Accepted values: CONSENT_STATUS_UNSPECIFIED, CONSENT_STATUS_GRANTED,
+         * CONSENT_STATUS_DENIED
+         *
+         * @param self::AD_PERSONALIZATION_* $adPersonalization
+         */
+        public function setAdPersonalization($adPersonalization)
+        {
+        }
+        /**
+         * @return self::AD_PERSONALIZATION_*
+         */
+        public function getAdPersonalization()
+        {
+        }
+        /**
+         * Represents consent for ad user data.
+         *
+         * Accepted values: CONSENT_STATUS_UNSPECIFIED, CONSENT_STATUS_GRANTED,
+         * CONSENT_STATUS_DENIED
+         *
+         * @param self::AD_USER_DATA_* $adUserData
+         */
+        public function setAdUserData($adUserData)
+        {
+        }
+        /**
+         * @return self::AD_USER_DATA_*
+         */
+        public function getAdUserData()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::AD_PERSONALIZATION_*
+     * Runtime class alias of \Google\Service\DisplayVideo\Consent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdPersonalization()
-    {
-    }
-    /**
-     * Represents consent for ad user data.
-     *
-     * Accepted values: CONSENT_STATUS_UNSPECIFIED, CONSENT_STATUS_GRANTED,
-     * CONSENT_STATUS_DENIED
-     *
-     * @param self::AD_USER_DATA_* $adUserData
-     */
-    public function setAdUserData($adUserData)
-    {
-    }
-    /**
-     * @return self::AD_USER_DATA_*
-     */
-    public function getAdUserData()
+    class Google_Service_DisplayVideo_Consent extends \Google\Service\DisplayVideo\Consent
     {
     }
 }

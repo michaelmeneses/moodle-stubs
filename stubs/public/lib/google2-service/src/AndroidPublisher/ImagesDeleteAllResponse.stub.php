@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class ImagesDeleteAllResponse extends \Google\Collection
-{
-    protected $collection_key = 'deleted';
-    protected $deletedType = Image::class;
-    protected $deletedDataType = 'array';
-    /**
-     * The deleted images.
-     *
-     * @param Image[] $deleted
-     */
-    public function setDeleted($deleted)
+namespace Google\Service\AndroidPublisher {
+    class ImagesDeleteAllResponse extends \Google\Collection
     {
+        protected $collection_key = 'deleted';
+        protected $deletedType = Image::class;
+        protected $deletedDataType = 'array';
+        /**
+         * The deleted images.
+         *
+         * @param Image[] $deleted
+         */
+        public function setDeleted($deleted)
+        {
+        }
+        /**
+         * @return Image[]
+         */
+        public function getDeleted()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Image[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\ImagesDeleteAllResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeleted()
+    class Google_Service_AndroidPublisher_ImagesDeleteAllResponse extends \Google\Service\AndroidPublisher\ImagesDeleteAllResponse
     {
     }
 }

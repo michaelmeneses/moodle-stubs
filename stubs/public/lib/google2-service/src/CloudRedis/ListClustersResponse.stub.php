@@ -21,75 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class ListClustersResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $clustersType = Cluster::class;
-    protected $clustersDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * A list of Redis clusters in the project in the specified location, or
-     * across all locations. If the `location_id` in the parent field of the
-     * request is "-", all regions available to the project are queried, and the
-     * results aggregated. If in such an aggregated query a location is
-     * unavailable, a placeholder Redis entry is included in the response with the
-     * `name` field set to a value of the form
-     * `projects/{project_id}/locations/{location_id}/clusters/`- and the `status`
-     * field set to ERROR and `status_message` field set to "location not
-     * available for ListClusters".
-     *
-     * @param Cluster[] $clusters
-     */
-    public function setClusters($clusters)
+namespace Google\Service\CloudRedis {
+    class ListClustersResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $clustersType = Cluster::class;
+        protected $clustersDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * A list of Redis clusters in the project in the specified location, or
+         * across all locations. If the `location_id` in the parent field of the
+         * request is "-", all regions available to the project are queried, and the
+         * results aggregated. If in such an aggregated query a location is
+         * unavailable, a placeholder Redis entry is included in the response with the
+         * `name` field set to a value of the form
+         * `projects/{project_id}/locations/{location_id}/clusters/`- and the `status`
+         * field set to ERROR and `status_message` field set to "location not
+         * available for ListClusters".
+         *
+         * @param Cluster[] $clusters
+         */
+        public function setClusters($clusters)
+        {
+        }
+        /**
+         * @return Cluster[]
+         */
+        public function getClusters()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Cluster[]
+     * Runtime class alias of \Google\Service\CloudRedis\ListClustersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClusters()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_CloudRedis_ListClustersResponse extends \Google\Service\CloudRedis\ListClustersResponse
     {
     }
 }

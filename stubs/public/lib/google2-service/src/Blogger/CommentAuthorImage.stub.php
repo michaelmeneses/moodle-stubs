@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Blogger;
-
-class CommentAuthorImage extends \Google\Model
-{
-    /**
-     * The creator's avatar URL.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * The creator's avatar URL.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
+namespace Google\Service\Blogger {
+    class CommentAuthorImage extends \Google\Model
     {
+        /**
+         * The creator's avatar URL.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * The creator's avatar URL.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Blogger\CommentAuthorImage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUrl()
+    class Google_Service_Blogger_CommentAuthorImage extends \Google\Service\Blogger\CommentAuthorImage
     {
     }
 }

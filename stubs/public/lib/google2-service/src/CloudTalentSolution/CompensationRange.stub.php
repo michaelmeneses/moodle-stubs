@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudTalentSolution;
-
-class CompensationRange extends \Google\Model
-{
-    protected $maxCompensationType = Money::class;
-    protected $maxCompensationDataType = '';
-    protected $minCompensationType = Money::class;
-    protected $minCompensationDataType = '';
-    /**
-     * The maximum amount of compensation. If left empty, the value is set to a
-     * maximal compensation value and the currency code is set to match the
-     * currency code of min_compensation.
-     *
-     * @param Money $maxCompensation
-     */
-    public function setMaxCompensation(Money $maxCompensation)
+namespace Google\Service\CloudTalentSolution {
+    class CompensationRange extends \Google\Model
     {
+        protected $maxCompensationType = Money::class;
+        protected $maxCompensationDataType = '';
+        protected $minCompensationType = Money::class;
+        protected $minCompensationDataType = '';
+        /**
+         * The maximum amount of compensation. If left empty, the value is set to a
+         * maximal compensation value and the currency code is set to match the
+         * currency code of min_compensation.
+         *
+         * @param Money $maxCompensation
+         */
+        public function setMaxCompensation(Money $maxCompensation)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getMaxCompensation()
+        {
+        }
+        /**
+         * The minimum amount of compensation. If left empty, the value is set to zero
+         * and the currency code is set to match the currency code of
+         * max_compensation.
+         *
+         * @param Money $minCompensation
+         */
+        public function setMinCompensation(Money $minCompensation)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getMinCompensation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Money
+     * Runtime class alias of \Google\Service\CloudTalentSolution\CompensationRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxCompensation()
-    {
-    }
-    /**
-     * The minimum amount of compensation. If left empty, the value is set to zero
-     * and the currency code is set to match the currency code of
-     * max_compensation.
-     *
-     * @param Money $minCompensation
-     */
-    public function setMinCompensation(Money $minCompensation)
-    {
-    }
-    /**
-     * @return Money
-     */
-    public function getMinCompensation()
+    class Google_Service_CloudTalentSolution_CompensationRange extends \Google\Service\CloudTalentSolution\CompensationRange
     {
     }
 }

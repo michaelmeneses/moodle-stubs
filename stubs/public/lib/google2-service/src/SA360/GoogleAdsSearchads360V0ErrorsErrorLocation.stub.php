@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0ErrorsErrorLocation extends \Google\Collection
-{
-    protected $collection_key = 'fieldPathElements';
-    protected $fieldPathElementsType = GoogleAdsSearchads360V0ErrorsErrorLocationFieldPathElement::class;
-    protected $fieldPathElementsDataType = 'array';
-    /**
-     * A field path that indicates which field was invalid in the request.
-     *
-     * @param GoogleAdsSearchads360V0ErrorsErrorLocationFieldPathElement[] $fieldPathElements
-     */
-    public function setFieldPathElements($fieldPathElements)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0ErrorsErrorLocation extends \Google\Collection
     {
+        protected $collection_key = 'fieldPathElements';
+        protected $fieldPathElementsType = GoogleAdsSearchads360V0ErrorsErrorLocationFieldPathElement::class;
+        protected $fieldPathElementsDataType = 'array';
+        /**
+         * A field path that indicates which field was invalid in the request.
+         *
+         * @param GoogleAdsSearchads360V0ErrorsErrorLocationFieldPathElement[] $fieldPathElements
+         */
+        public function setFieldPathElements($fieldPathElements)
+        {
+        }
+        /**
+         * @return GoogleAdsSearchads360V0ErrorsErrorLocationFieldPathElement[]
+         */
+        public function getFieldPathElements()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAdsSearchads360V0ErrorsErrorLocationFieldPathElement[]
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0ErrorsErrorLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFieldPathElements()
+    class Google_Service_SA360_GoogleAdsSearchads360V0ErrorsErrorLocation extends \Google\Service\SA360\GoogleAdsSearchads360V0ErrorsErrorLocation
     {
     }
 }

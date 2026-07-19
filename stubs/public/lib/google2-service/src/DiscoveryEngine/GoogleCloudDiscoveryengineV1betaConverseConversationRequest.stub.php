@@ -21,128 +21,137 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaConverseConversationRequest extends \Google\Model
-{
-    protected $boostSpecType = GoogleCloudDiscoveryengineV1betaSearchRequestBoostSpec::class;
-    protected $boostSpecDataType = '';
-    protected $conversationType = GoogleCloudDiscoveryengineV1betaConversation::class;
-    protected $conversationDataType = '';
-    /**
-     * @var string
-     */
-    public $filter;
-    protected $queryType = GoogleCloudDiscoveryengineV1betaTextInput::class;
-    protected $queryDataType = '';
-    /**
-     * @var bool
-     */
-    public $safeSearch;
-    /**
-     * @var string
-     */
-    public $servingConfig;
-    protected $summarySpecType = GoogleCloudDiscoveryengineV1betaSearchRequestContentSearchSpecSummarySpec::class;
-    protected $summarySpecDataType = '';
-    /**
-     * @var string[]
-     */
-    public $userLabels;
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaSearchRequestBoostSpec
-     */
-    public function setBoostSpec(GoogleCloudDiscoveryengineV1betaSearchRequestBoostSpec $boostSpec)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaConverseConversationRequest extends \Google\Model
     {
+        protected $boostSpecType = GoogleCloudDiscoveryengineV1betaSearchRequestBoostSpec::class;
+        protected $boostSpecDataType = '';
+        protected $conversationType = GoogleCloudDiscoveryengineV1betaConversation::class;
+        protected $conversationDataType = '';
+        /**
+         * @var string
+         */
+        public $filter;
+        protected $queryType = GoogleCloudDiscoveryengineV1betaTextInput::class;
+        protected $queryDataType = '';
+        /**
+         * @var bool
+         */
+        public $safeSearch;
+        /**
+         * @var string
+         */
+        public $servingConfig;
+        protected $summarySpecType = GoogleCloudDiscoveryengineV1betaSearchRequestContentSearchSpecSummarySpec::class;
+        protected $summarySpecDataType = '';
+        /**
+         * @var string[]
+         */
+        public $userLabels;
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaSearchRequestBoostSpec
+         */
+        public function setBoostSpec(GoogleCloudDiscoveryengineV1betaSearchRequestBoostSpec $boostSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaSearchRequestBoostSpec
+         */
+        public function getBoostSpec()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaConversation
+         */
+        public function setConversation(GoogleCloudDiscoveryengineV1betaConversation $conversation)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaConversation
+         */
+        public function getConversation()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFilter($filter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilter()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaTextInput
+         */
+        public function setQuery(GoogleCloudDiscoveryengineV1betaTextInput $query)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaTextInput
+         */
+        public function getQuery()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setSafeSearch($safeSearch)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSafeSearch()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setServingConfig($servingConfig)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServingConfig()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaSearchRequestContentSearchSpecSummarySpec
+         */
+        public function setSummarySpec(GoogleCloudDiscoveryengineV1betaSearchRequestContentSearchSpecSummarySpec $summarySpec)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaSearchRequestContentSearchSpecSummarySpec
+         */
+        public function getSummarySpec()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setUserLabels($userLabels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUserLabels()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1betaSearchRequestBoostSpec
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaConverseConversationRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBoostSpec()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaConversation
-     */
-    public function setConversation(GoogleCloudDiscoveryengineV1betaConversation $conversation)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaConversation
-     */
-    public function getConversation()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFilter($filter)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFilter()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaTextInput
-     */
-    public function setQuery(GoogleCloudDiscoveryengineV1betaTextInput $query)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaTextInput
-     */
-    public function getQuery()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setSafeSearch($safeSearch)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSafeSearch()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setServingConfig($servingConfig)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServingConfig()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaSearchRequestContentSearchSpecSummarySpec
-     */
-    public function setSummarySpec(GoogleCloudDiscoveryengineV1betaSearchRequestContentSearchSpecSummarySpec $summarySpec)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaSearchRequestContentSearchSpecSummarySpec
-     */
-    public function getSummarySpec()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setUserLabels($userLabels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUserLabels()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaConverseConversationRequest extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaConverseConversationRequest
     {
     }
 }

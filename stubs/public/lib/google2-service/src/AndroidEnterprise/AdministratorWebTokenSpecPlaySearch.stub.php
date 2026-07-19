@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class AdministratorWebTokenSpecPlaySearch extends \Google\Model
-{
-    /**
-     * Allow access to the iframe in approve mode. Default is false.
-     *
-     * @var bool
-     */
-    public $approveApps;
-    /**
-     * Whether the managed Play Search apps page is displayed. Default is true.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * Allow access to the iframe in approve mode. Default is false.
-     *
-     * @param bool $approveApps
-     */
-    public function setApproveApps($approveApps)
+namespace Google\Service\AndroidEnterprise {
+    class AdministratorWebTokenSpecPlaySearch extends \Google\Model
     {
+        /**
+         * Allow access to the iframe in approve mode. Default is false.
+         *
+         * @var bool
+         */
+        public $approveApps;
+        /**
+         * Whether the managed Play Search apps page is displayed. Default is true.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * Allow access to the iframe in approve mode. Default is false.
+         *
+         * @param bool $approveApps
+         */
+        public function setApproveApps($approveApps)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getApproveApps()
+        {
+        }
+        /**
+         * Whether the managed Play Search apps page is displayed. Default is true.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\AndroidEnterprise\AdministratorWebTokenSpecPlaySearch registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApproveApps()
-    {
-    }
-    /**
-     * Whether the managed Play Search apps page is displayed. Default is true.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnabled()
+    class Google_Service_AndroidEnterprise_AdministratorWebTokenSpecPlaySearch extends \Google\Service\AndroidEnterprise\AdministratorWebTokenSpecPlaySearch
     {
     }
 }

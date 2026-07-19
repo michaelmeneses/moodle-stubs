@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIot;
-
-class DeviceCredential extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $expirationTime;
-    protected $publicKeyType = PublicKeyCredential::class;
-    protected $publicKeyDataType = '';
-    /**
-     * @param string
-     */
-    public function setExpirationTime($expirationTime)
+namespace Google\Service\CloudIot {
+    class DeviceCredential extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $expirationTime;
+        protected $publicKeyType = PublicKeyCredential::class;
+        protected $publicKeyDataType = '';
+        /**
+         * @param string
+         */
+        public function setExpirationTime($expirationTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpirationTime()
+        {
+        }
+        /**
+         * @param PublicKeyCredential
+         */
+        public function setPublicKey(PublicKeyCredential $publicKey)
+        {
+        }
+        /**
+         * @return PublicKeyCredential
+         */
+        public function getPublicKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudIot\DeviceCredential registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExpirationTime()
-    {
-    }
-    /**
-     * @param PublicKeyCredential
-     */
-    public function setPublicKey(PublicKeyCredential $publicKey)
-    {
-    }
-    /**
-     * @return PublicKeyCredential
-     */
-    public function getPublicKey()
+    class Google_Service_CloudIot_DeviceCredential extends \Google\Service\CloudIot\DeviceCredential
     {
     }
 }

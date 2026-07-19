@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1AsyncQueryResultView extends \Google\Collection
-{
-    protected $collection_key = 'rows';
-    /**
-     * Error code when there is a failure.
-     *
-     * @var int
-     */
-    public $code;
-    /**
-     * Error message when there is a failure.
-     *
-     * @var string
-     */
-    public $error;
-    protected $metadataType = GoogleCloudApigeeV1QueryMetadata::class;
-    protected $metadataDataType = '';
-    /**
-     * Rows of query result. Each row is a JSON object. Example:
-     * {sum(message_count): 1, developer_app: "(not set)",…}
-     *
-     * @var array[]
-     */
-    public $rows;
-    /**
-     * State of retrieving ResultView.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Error code when there is a failure.
-     *
-     * @param int $code
-     */
-    public function setCode($code)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1AsyncQueryResultView extends \Google\Collection
     {
+        protected $collection_key = 'rows';
+        /**
+         * Error code when there is a failure.
+         *
+         * @var int
+         */
+        public $code;
+        /**
+         * Error message when there is a failure.
+         *
+         * @var string
+         */
+        public $error;
+        protected $metadataType = GoogleCloudApigeeV1QueryMetadata::class;
+        protected $metadataDataType = '';
+        /**
+         * Rows of query result. Each row is a JSON object. Example:
+         * {sum(message_count): 1, developer_app: "(not set)",…}
+         *
+         * @var array[]
+         */
+        public $rows;
+        /**
+         * State of retrieving ResultView.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Error code when there is a failure.
+         *
+         * @param int $code
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCode()
+        {
+        }
+        /**
+         * Error message when there is a failure.
+         *
+         * @param string $error
+         */
+        public function setError($error)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getError()
+        {
+        }
+        /**
+         * Metadata contains information like metrics, dimenstions etc of the
+         * AsyncQuery.
+         *
+         * @param GoogleCloudApigeeV1QueryMetadata $metadata
+         */
+        public function setMetadata(GoogleCloudApigeeV1QueryMetadata $metadata)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1QueryMetadata
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * Rows of query result. Each row is a JSON object. Example:
+         * {sum(message_count): 1, developer_app: "(not set)",…}
+         *
+         * @param array[] $rows
+         */
+        public function setRows($rows)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getRows()
+        {
+        }
+        /**
+         * State of retrieving ResultView.
+         *
+         * @param string $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1AsyncQueryResultView registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCode()
-    {
-    }
-    /**
-     * Error message when there is a failure.
-     *
-     * @param string $error
-     */
-    public function setError($error)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getError()
-    {
-    }
-    /**
-     * Metadata contains information like metrics, dimenstions etc of the
-     * AsyncQuery.
-     *
-     * @param GoogleCloudApigeeV1QueryMetadata $metadata
-     */
-    public function setMetadata(GoogleCloudApigeeV1QueryMetadata $metadata)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1QueryMetadata
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * Rows of query result. Each row is a JSON object. Example:
-     * {sum(message_count): 1, developer_app: "(not set)",…}
-     *
-     * @param array[] $rows
-     */
-    public function setRows($rows)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getRows()
-    {
-    }
-    /**
-     * State of retrieving ResultView.
-     *
-     * @param string $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
+    class Google_Service_Apigee_GoogleCloudApigeeV1AsyncQueryResultView extends \Google\Service\Apigee\GoogleCloudApigeeV1AsyncQueryResultView
     {
     }
 }

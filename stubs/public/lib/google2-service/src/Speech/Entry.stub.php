@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Speech;
-
-class Entry extends \Google\Model
-{
-    /**
-     * Whether the search is case sensitive.
-     *
-     * @var bool
-     */
-    public $caseSensitive;
-    /**
-     * What to replace with. Max length is 100 characters.
-     *
-     * @var string
-     */
-    public $replace;
-    /**
-     * What to replace. Max length is 100 characters.
-     *
-     * @var string
-     */
-    public $search;
-    /**
-     * Whether the search is case sensitive.
-     *
-     * @param bool $caseSensitive
-     */
-    public function setCaseSensitive($caseSensitive)
+namespace Google\Service\Speech {
+    class Entry extends \Google\Model
     {
+        /**
+         * Whether the search is case sensitive.
+         *
+         * @var bool
+         */
+        public $caseSensitive;
+        /**
+         * What to replace with. Max length is 100 characters.
+         *
+         * @var string
+         */
+        public $replace;
+        /**
+         * What to replace. Max length is 100 characters.
+         *
+         * @var string
+         */
+        public $search;
+        /**
+         * Whether the search is case sensitive.
+         *
+         * @param bool $caseSensitive
+         */
+        public function setCaseSensitive($caseSensitive)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCaseSensitive()
+        {
+        }
+        /**
+         * What to replace with. Max length is 100 characters.
+         *
+         * @param string $replace
+         */
+        public function setReplace($replace)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReplace()
+        {
+        }
+        /**
+         * What to replace. Max length is 100 characters.
+         *
+         * @param string $search
+         */
+        public function setSearch($search)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSearch()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Speech\Entry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCaseSensitive()
-    {
-    }
-    /**
-     * What to replace with. Max length is 100 characters.
-     *
-     * @param string $replace
-     */
-    public function setReplace($replace)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReplace()
-    {
-    }
-    /**
-     * What to replace. Max length is 100 characters.
-     *
-     * @param string $search
-     */
-    public function setSearch($search)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSearch()
+    class Google_Service_Speech_Entry extends \Google\Service\Speech\Entry
     {
     }
 }

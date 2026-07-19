@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class WorkloadProfileHealth extends \Google\Collection
-{
-    protected $collection_key = 'componentHealthes';
-    /**
-     * @var string
-     */
-    public $checkTime;
-    protected $componentHealthesType = ComponentHealth::class;
-    protected $componentHealthesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $state;
-    /**
-     * @param string
-     */
-    public function setCheckTime($checkTime)
+namespace Google\Service\WorkloadManager {
+    class WorkloadProfileHealth extends \Google\Collection
     {
+        protected $collection_key = 'componentHealthes';
+        /**
+         * @var string
+         */
+        public $checkTime;
+        protected $componentHealthesType = ComponentHealth::class;
+        protected $componentHealthesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $state;
+        /**
+         * @param string
+         */
+        public function setCheckTime($checkTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCheckTime()
+        {
+        }
+        /**
+         * @param ComponentHealth[]
+         */
+        public function setComponentHealthes($componentHealthes)
+        {
+        }
+        /**
+         * @return ComponentHealth[]
+         */
+        public function getComponentHealthes()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WorkloadManager\WorkloadProfileHealth registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCheckTime()
-    {
-    }
-    /**
-     * @param ComponentHealth[]
-     */
-    public function setComponentHealthes($componentHealthes)
-    {
-    }
-    /**
-     * @return ComponentHealth[]
-     */
-    public function getComponentHealthes()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
+    class Google_Service_WorkloadManager_WorkloadProfileHealth extends \Google\Service\WorkloadManager\WorkloadProfileHealth
     {
     }
 }

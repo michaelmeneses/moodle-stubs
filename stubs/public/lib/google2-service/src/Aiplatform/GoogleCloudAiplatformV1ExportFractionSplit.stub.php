@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ExportFractionSplit extends \Google\Model
-{
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ExportFractionSplit extends \Google\Model
+    {
+        /**
+         * The fraction of the input data that is to be used to evaluate the Model.
+         *
+         * @var 
+         */
+        public $testFraction;
+        /**
+         * The fraction of the input data that is to be used to train the Model.
+         *
+         * @var 
+         */
+        public $trainingFraction;
+        /**
+         * The fraction of the input data that is to be used to validate the Model.
+         *
+         * @var 
+         */
+        public $validationFraction;
+        public function setTestFraction($testFraction)
+        {
+        }
+        public function getTestFraction()
+        {
+        }
+        public function setTrainingFraction($trainingFraction)
+        {
+        }
+        public function getTrainingFraction()
+        {
+        }
+        public function setValidationFraction($validationFraction)
+        {
+        }
+        public function getValidationFraction()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * The fraction of the input data that is to be used to evaluate the Model.
-     *
-     * @var 
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ExportFractionSplit registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $testFraction;
-    /**
-     * The fraction of the input data that is to be used to train the Model.
-     *
-     * @var 
-     */
-    public $trainingFraction;
-    /**
-     * The fraction of the input data that is to be used to validate the Model.
-     *
-     * @var 
-     */
-    public $validationFraction;
-    public function setTestFraction($testFraction)
-    {
-    }
-    public function getTestFraction()
-    {
-    }
-    public function setTrainingFraction($trainingFraction)
-    {
-    }
-    public function getTrainingFraction()
-    {
-    }
-    public function setValidationFraction($validationFraction)
-    {
-    }
-    public function getValidationFraction()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ExportFractionSplit extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ExportFractionSplit
     {
     }
 }

@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1TrialParameter extends \Google\Model
-{
-    /**
-     * Output only. The ID of the parameter. The parameter should be defined in
-     * StudySpec's Parameters.
-     *
-     * @var string
-     */
-    public $parameterId;
-    /**
-     * Output only. The value of the parameter. `number_value` will be set if a
-     * parameter defined in StudySpec is in type 'INTEGER', 'DOUBLE' or
-     * 'DISCRETE'. `string_value` will be set if a parameter defined in StudySpec
-     * is in type 'CATEGORICAL'.
-     *
-     * @var array
-     */
-    public $value;
-    /**
-     * Output only. The ID of the parameter. The parameter should be defined in
-     * StudySpec's Parameters.
-     *
-     * @param string $parameterId
-     */
-    public function setParameterId($parameterId)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1TrialParameter extends \Google\Model
     {
+        /**
+         * Output only. The ID of the parameter. The parameter should be defined in
+         * StudySpec's Parameters.
+         *
+         * @var string
+         */
+        public $parameterId;
+        /**
+         * Output only. The value of the parameter. `number_value` will be set if a
+         * parameter defined in StudySpec is in type 'INTEGER', 'DOUBLE' or
+         * 'DISCRETE'. `string_value` will be set if a parameter defined in StudySpec
+         * is in type 'CATEGORICAL'.
+         *
+         * @var array
+         */
+        public $value;
+        /**
+         * Output only. The ID of the parameter. The parameter should be defined in
+         * StudySpec's Parameters.
+         *
+         * @param string $parameterId
+         */
+        public function setParameterId($parameterId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParameterId()
+        {
+        }
+        /**
+         * Output only. The value of the parameter. `number_value` will be set if a
+         * parameter defined in StudySpec is in type 'INTEGER', 'DOUBLE' or
+         * 'DISCRETE'. `string_value` will be set if a parameter defined in StudySpec
+         * is in type 'CATEGORICAL'.
+         *
+         * @param array $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return array
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1TrialParameter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParameterId()
-    {
-    }
-    /**
-     * Output only. The value of the parameter. `number_value` will be set if a
-     * parameter defined in StudySpec is in type 'INTEGER', 'DOUBLE' or
-     * 'DISCRETE'. `string_value` will be set if a parameter defined in StudySpec
-     * is in type 'CATEGORICAL'.
-     *
-     * @param array $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return array
-     */
-    public function getValue()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1TrialParameter extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1TrialParameter
     {
     }
 }

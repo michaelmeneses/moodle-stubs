@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMachineLearningEngine;
-
-class GoogleCloudMlV1MeasurementMetric extends \Google\Model
-{
-    /**
-     * Required. Metric name.
-     *
-     * @var string
-     */
-    public $metric;
-    /**
-     * Required. The value for this metric.
-     *
-     * @var 
-     */
-    public $value;
-    /**
-     * Required. Metric name.
-     *
-     * @param string $metric
-     */
-    public function setMetric($metric)
+namespace Google\Service\CloudMachineLearningEngine {
+    class GoogleCloudMlV1MeasurementMetric extends \Google\Model
     {
+        /**
+         * Required. Metric name.
+         *
+         * @var string
+         */
+        public $metric;
+        /**
+         * Required. The value for this metric.
+         *
+         * @var 
+         */
+        public $value;
+        /**
+         * Required. Metric name.
+         *
+         * @param string $metric
+         */
+        public function setMetric($metric)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMetric()
+        {
+        }
+        public function setValue($value)
+        {
+        }
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1MeasurementMetric registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetric()
-    {
-    }
-    public function setValue($value)
-    {
-    }
-    public function getValue()
+    class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1MeasurementMetric extends \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1MeasurementMetric
     {
     }
 }

@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkspaceEvents;
-
-class AgentInterface extends \Google\Model
-{
-    /**
-     * The transport supported this url. This is an open form string, to be easily
-     * extended for many transport protocols. The core ones officially supported
-     * are JSONRPC, GRPC and HTTP+JSON.
-     *
-     * @var string
-     */
-    public $transport;
-    /**
-     * The url this interface is found at.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * The transport supported this url. This is an open form string, to be easily
-     * extended for many transport protocols. The core ones officially supported
-     * are JSONRPC, GRPC and HTTP+JSON.
-     *
-     * @param string $transport
-     */
-    public function setTransport($transport)
+namespace Google\Service\WorkspaceEvents {
+    class AgentInterface extends \Google\Model
     {
+        /**
+         * The transport supported this url. This is an open form string, to be easily
+         * extended for many transport protocols. The core ones officially supported
+         * are JSONRPC, GRPC and HTTP+JSON.
+         *
+         * @var string
+         */
+        public $transport;
+        /**
+         * The url this interface is found at.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * The transport supported this url. This is an open form string, to be easily
+         * extended for many transport protocols. The core ones officially supported
+         * are JSONRPC, GRPC and HTTP+JSON.
+         *
+         * @param string $transport
+         */
+        public function setTransport($transport)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTransport()
+        {
+        }
+        /**
+         * The url this interface is found at.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WorkspaceEvents\AgentInterface registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTransport()
-    {
-    }
-    /**
-     * The url this interface is found at.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_WorkspaceEvents_AgentInterface extends \Google\Service\WorkspaceEvents\AgentInterface
     {
     }
 }

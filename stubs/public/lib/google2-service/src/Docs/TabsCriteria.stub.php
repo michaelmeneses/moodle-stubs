@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class TabsCriteria extends \Google\Collection
-{
-    protected $collection_key = 'tabIds';
-    /**
-     * The list of tab IDs in which the request executes.
-     *
-     * @var string[]
-     */
-    public $tabIds;
-    /**
-     * The list of tab IDs in which the request executes.
-     *
-     * @param string[] $tabIds
-     */
-    public function setTabIds($tabIds)
+namespace Google\Service\Docs {
+    class TabsCriteria extends \Google\Collection
     {
+        protected $collection_key = 'tabIds';
+        /**
+         * The list of tab IDs in which the request executes.
+         *
+         * @var string[]
+         */
+        public $tabIds;
+        /**
+         * The list of tab IDs in which the request executes.
+         *
+         * @param string[] $tabIds
+         */
+        public function setTabIds($tabIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTabIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Docs\TabsCriteria registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTabIds()
+    class Google_Service_Docs_TabsCriteria extends \Google\Service\Docs\TabsCriteria
     {
     }
 }

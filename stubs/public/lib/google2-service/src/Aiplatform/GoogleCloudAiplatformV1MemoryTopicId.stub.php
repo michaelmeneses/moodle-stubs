@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1MemoryTopicId extends \Google\Model
-{
-    /**
-     * Unspecified topic. This value should not be used.
-     */
-    public const MANAGED_MEMORY_TOPIC_MANAGED_TOPIC_ENUM_UNSPECIFIED = 'MANAGED_TOPIC_ENUM_UNSPECIFIED';
-    /**
-     * Significant personal information about the User like first names,
-     * relationships, hobbies, important dates.
-     */
-    public const MANAGED_MEMORY_TOPIC_USER_PERSONAL_INFO = 'USER_PERSONAL_INFO';
-    /**
-     * Stated or implied likes, dislikes, preferred styles, or patterns.
-     */
-    public const MANAGED_MEMORY_TOPIC_USER_PREFERENCES = 'USER_PREFERENCES';
-    /**
-     * Important milestones or conclusions within the dialogue.
-     */
-    public const MANAGED_MEMORY_TOPIC_KEY_CONVERSATION_DETAILS = 'KEY_CONVERSATION_DETAILS';
-    /**
-     * Information that the user explicitly requested to remember or forget.
-     */
-    public const MANAGED_MEMORY_TOPIC_EXPLICIT_INSTRUCTIONS = 'EXPLICIT_INSTRUCTIONS';
-    /**
-     * Optional. The custom memory topic label.
-     *
-     * @var string
-     */
-    public $customMemoryTopicLabel;
-    /**
-     * Optional. The managed memory topic.
-     *
-     * @var string
-     */
-    public $managedMemoryTopic;
-    /**
-     * Optional. The custom memory topic label.
-     *
-     * @param string $customMemoryTopicLabel
-     */
-    public function setCustomMemoryTopicLabel($customMemoryTopicLabel)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1MemoryTopicId extends \Google\Model
     {
+        /**
+         * Unspecified topic. This value should not be used.
+         */
+        public const MANAGED_MEMORY_TOPIC_MANAGED_TOPIC_ENUM_UNSPECIFIED = 'MANAGED_TOPIC_ENUM_UNSPECIFIED';
+        /**
+         * Significant personal information about the User like first names,
+         * relationships, hobbies, important dates.
+         */
+        public const MANAGED_MEMORY_TOPIC_USER_PERSONAL_INFO = 'USER_PERSONAL_INFO';
+        /**
+         * Stated or implied likes, dislikes, preferred styles, or patterns.
+         */
+        public const MANAGED_MEMORY_TOPIC_USER_PREFERENCES = 'USER_PREFERENCES';
+        /**
+         * Important milestones or conclusions within the dialogue.
+         */
+        public const MANAGED_MEMORY_TOPIC_KEY_CONVERSATION_DETAILS = 'KEY_CONVERSATION_DETAILS';
+        /**
+         * Information that the user explicitly requested to remember or forget.
+         */
+        public const MANAGED_MEMORY_TOPIC_EXPLICIT_INSTRUCTIONS = 'EXPLICIT_INSTRUCTIONS';
+        /**
+         * Optional. The custom memory topic label.
+         *
+         * @var string
+         */
+        public $customMemoryTopicLabel;
+        /**
+         * Optional. The managed memory topic.
+         *
+         * @var string
+         */
+        public $managedMemoryTopic;
+        /**
+         * Optional. The custom memory topic label.
+         *
+         * @param string $customMemoryTopicLabel
+         */
+        public function setCustomMemoryTopicLabel($customMemoryTopicLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomMemoryTopicLabel()
+        {
+        }
+        /**
+         * Optional. The managed memory topic.
+         *
+         * Accepted values: MANAGED_TOPIC_ENUM_UNSPECIFIED, USER_PERSONAL_INFO,
+         * USER_PREFERENCES, KEY_CONVERSATION_DETAILS, EXPLICIT_INSTRUCTIONS
+         *
+         * @param self::MANAGED_MEMORY_TOPIC_* $managedMemoryTopic
+         */
+        public function setManagedMemoryTopic($managedMemoryTopic)
+        {
+        }
+        /**
+         * @return self::MANAGED_MEMORY_TOPIC_*
+         */
+        public function getManagedMemoryTopic()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1MemoryTopicId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomMemoryTopicLabel()
-    {
-    }
-    /**
-     * Optional. The managed memory topic.
-     *
-     * Accepted values: MANAGED_TOPIC_ENUM_UNSPECIFIED, USER_PERSONAL_INFO,
-     * USER_PREFERENCES, KEY_CONVERSATION_DETAILS, EXPLICIT_INSTRUCTIONS
-     *
-     * @param self::MANAGED_MEMORY_TOPIC_* $managedMemoryTopic
-     */
-    public function setManagedMemoryTopic($managedMemoryTopic)
-    {
-    }
-    /**
-     * @return self::MANAGED_MEMORY_TOPIC_*
-     */
-    public function getManagedMemoryTopic()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1MemoryTopicId extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1MemoryTopicId
     {
     }
 }

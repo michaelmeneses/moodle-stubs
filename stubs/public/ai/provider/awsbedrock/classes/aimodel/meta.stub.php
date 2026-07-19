@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace aiprovider_awsbedrock\aimodel;
 
+use aiprovider_awsbedrock\model_definition;
 /**
  * Meta model catalog.
  *

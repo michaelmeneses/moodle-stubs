@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class Body extends \Google\Collection
-{
-    protected $collection_key = 'content';
-    protected $contentType = StructuralElement::class;
-    protected $contentDataType = 'array';
-    /**
-     * The contents of the body. The indexes for the body's content begin at zero.
-     *
-     * @param StructuralElement[] $content
-     */
-    public function setContent($content)
+namespace Google\Service\Docs {
+    class Body extends \Google\Collection
     {
+        protected $collection_key = 'content';
+        protected $contentType = StructuralElement::class;
+        protected $contentDataType = 'array';
+        /**
+         * The contents of the body. The indexes for the body's content begin at zero.
+         *
+         * @param StructuralElement[] $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return StructuralElement[]
+         */
+        public function getContent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return StructuralElement[]
+     * Runtime class alias of \Google\Service\Docs\Body registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
+    class Google_Service_Docs_Body extends \Google\Service\Docs\Body
     {
     }
 }

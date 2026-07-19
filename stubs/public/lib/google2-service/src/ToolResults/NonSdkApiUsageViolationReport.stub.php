@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class NonSdkApiUsageViolationReport extends \Google\Collection
-{
-    protected $collection_key = 'exampleApis';
-    protected $exampleApisType = NonSdkApi::class;
-    protected $exampleApisDataType = 'array';
-    /**
-     * Minimum API level required for the application to run.
-     *
-     * @var int
-     */
-    public $minSdkVersion;
-    /**
-     * Specifies the API Level on which the application is designed to run.
-     *
-     * @var int
-     */
-    public $targetSdkVersion;
-    /**
-     * Total number of unique Non-SDK API's accessed.
-     *
-     * @var int
-     */
-    public $uniqueApis;
-    /**
-     * Examples of the detected API usages.
-     *
-     * @param NonSdkApi[] $exampleApis
-     */
-    public function setExampleApis($exampleApis)
+namespace Google\Service\ToolResults {
+    class NonSdkApiUsageViolationReport extends \Google\Collection
     {
+        protected $collection_key = 'exampleApis';
+        protected $exampleApisType = NonSdkApi::class;
+        protected $exampleApisDataType = 'array';
+        /**
+         * Minimum API level required for the application to run.
+         *
+         * @var int
+         */
+        public $minSdkVersion;
+        /**
+         * Specifies the API Level on which the application is designed to run.
+         *
+         * @var int
+         */
+        public $targetSdkVersion;
+        /**
+         * Total number of unique Non-SDK API's accessed.
+         *
+         * @var int
+         */
+        public $uniqueApis;
+        /**
+         * Examples of the detected API usages.
+         *
+         * @param NonSdkApi[] $exampleApis
+         */
+        public function setExampleApis($exampleApis)
+        {
+        }
+        /**
+         * @return NonSdkApi[]
+         */
+        public function getExampleApis()
+        {
+        }
+        /**
+         * Minimum API level required for the application to run.
+         *
+         * @param int $minSdkVersion
+         */
+        public function setMinSdkVersion($minSdkVersion)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinSdkVersion()
+        {
+        }
+        /**
+         * Specifies the API Level on which the application is designed to run.
+         *
+         * @param int $targetSdkVersion
+         */
+        public function setTargetSdkVersion($targetSdkVersion)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTargetSdkVersion()
+        {
+        }
+        /**
+         * Total number of unique Non-SDK API's accessed.
+         *
+         * @param int $uniqueApis
+         */
+        public function setUniqueApis($uniqueApis)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getUniqueApis()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return NonSdkApi[]
+     * Runtime class alias of \Google\Service\ToolResults\NonSdkApiUsageViolationReport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExampleApis()
-    {
-    }
-    /**
-     * Minimum API level required for the application to run.
-     *
-     * @param int $minSdkVersion
-     */
-    public function setMinSdkVersion($minSdkVersion)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinSdkVersion()
-    {
-    }
-    /**
-     * Specifies the API Level on which the application is designed to run.
-     *
-     * @param int $targetSdkVersion
-     */
-    public function setTargetSdkVersion($targetSdkVersion)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTargetSdkVersion()
-    {
-    }
-    /**
-     * Total number of unique Non-SDK API's accessed.
-     *
-     * @param int $uniqueApis
-     */
-    public function setUniqueApis($uniqueApis)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getUniqueApis()
+    class Google_Service_ToolResults_NonSdkApiUsageViolationReport extends \Google\Service\ToolResults\NonSdkApiUsageViolationReport
     {
     }
 }

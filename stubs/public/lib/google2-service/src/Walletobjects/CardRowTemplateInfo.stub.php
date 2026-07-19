@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class CardRowTemplateInfo extends \Google\Model
-{
-    protected $oneItemType = CardRowOneItem::class;
-    protected $oneItemDataType = '';
-    protected $threeItemsType = CardRowThreeItems::class;
-    protected $threeItemsDataType = '';
-    protected $twoItemsType = CardRowTwoItems::class;
-    protected $twoItemsDataType = '';
-    /**
-     * Template for a row containing one item. Exactly one of "one_item",
-     * "two_items", "three_items" must be set.
-     *
-     * @param CardRowOneItem $oneItem
-     */
-    public function setOneItem(CardRowOneItem $oneItem)
+namespace Google\Service\Walletobjects {
+    class CardRowTemplateInfo extends \Google\Model
     {
+        protected $oneItemType = CardRowOneItem::class;
+        protected $oneItemDataType = '';
+        protected $threeItemsType = CardRowThreeItems::class;
+        protected $threeItemsDataType = '';
+        protected $twoItemsType = CardRowTwoItems::class;
+        protected $twoItemsDataType = '';
+        /**
+         * Template for a row containing one item. Exactly one of "one_item",
+         * "two_items", "three_items" must be set.
+         *
+         * @param CardRowOneItem $oneItem
+         */
+        public function setOneItem(CardRowOneItem $oneItem)
+        {
+        }
+        /**
+         * @return CardRowOneItem
+         */
+        public function getOneItem()
+        {
+        }
+        /**
+         * Template for a row containing three items. Exactly one of "one_item",
+         * "two_items", "three_items" must be set.
+         *
+         * @param CardRowThreeItems $threeItems
+         */
+        public function setThreeItems(CardRowThreeItems $threeItems)
+        {
+        }
+        /**
+         * @return CardRowThreeItems
+         */
+        public function getThreeItems()
+        {
+        }
+        /**
+         * Template for a row containing two items. Exactly one of "one_item",
+         * "two_items", "three_items" must be set.
+         *
+         * @param CardRowTwoItems $twoItems
+         */
+        public function setTwoItems(CardRowTwoItems $twoItems)
+        {
+        }
+        /**
+         * @return CardRowTwoItems
+         */
+        public function getTwoItems()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CardRowOneItem
+     * Runtime class alias of \Google\Service\Walletobjects\CardRowTemplateInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOneItem()
-    {
-    }
-    /**
-     * Template for a row containing three items. Exactly one of "one_item",
-     * "two_items", "three_items" must be set.
-     *
-     * @param CardRowThreeItems $threeItems
-     */
-    public function setThreeItems(CardRowThreeItems $threeItems)
-    {
-    }
-    /**
-     * @return CardRowThreeItems
-     */
-    public function getThreeItems()
-    {
-    }
-    /**
-     * Template for a row containing two items. Exactly one of "one_item",
-     * "two_items", "three_items" must be set.
-     *
-     * @param CardRowTwoItems $twoItems
-     */
-    public function setTwoItems(CardRowTwoItems $twoItems)
-    {
-    }
-    /**
-     * @return CardRowTwoItems
-     */
-    public function getTwoItems()
+    class Google_Service_Walletobjects_CardRowTemplateInfo extends \Google\Service\Walletobjects\CardRowTemplateInfo
     {
     }
 }

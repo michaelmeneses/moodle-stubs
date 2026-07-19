@@ -21,90 +21,102 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Logging\Resource;
-
-/**
- * The "links" collection of methods.
- * Typical usage is:
- *  <code>
- *   $loggingService = new Google\Service\Logging(...);
- *   $links = $loggingService->billingAccounts_locations_buckets_links;
- *  </code>
- */
-class BillingAccountsLocationsBucketsLinks extends \Google\Service\Resource
-{
+namespace Google\Service\Logging\Resource {
+    use Google\Service\Logging\Link;
+    use Google\Service\Logging\ListLinksResponse;
+    use Google\Service\Logging\Operation;
     /**
-     * Asynchronously creates a linked dataset in BigQuery which makes it possible
-     * to use BigQuery to read the logs stored in the log bucket. A log bucket may
-     * currently only contain one link. (links.create)
-     *
-     * @param string $parent Required. The full resource name of the bucket to
-     * create a link for.
-     * "projects/[PROJECT_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]"
-     * @param Link $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string linkId Required. The ID to use for the link. The link_id
-     * can have up to 100 characters. A valid link_id must only have alphanumeric
-     * characters and underscores within it.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "links" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $loggingService = new Google\Service\Logging(...);
+     *   $links = $loggingService->billingAccounts_locations_buckets_links;
+     *  </code>
      */
-    public function create($parent, Link $postBody, $optParams = [])
+    class BillingAccountsLocationsBucketsLinks extends \Google\Service\Resource
     {
+        /**
+         * Asynchronously creates a linked dataset in BigQuery which makes it possible
+         * to use BigQuery to read the logs stored in the log bucket. A log bucket may
+         * currently only contain one link. (links.create)
+         *
+         * @param string $parent Required. The full resource name of the bucket to
+         * create a link for.
+         * "projects/[PROJECT_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]"
+         * @param Link $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string linkId Required. The ID to use for the link. The link_id
+         * can have up to 100 characters. A valid link_id must only have alphanumeric
+         * characters and underscores within it.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, Link $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a link. This will also delete the corresponding BigQuery linked
+         * dataset. (links.delete)
+         *
+         * @param string $name Required. The full resource name of the link to delete. "
+         * projects/[PROJECT_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]/links/[LINK
+         * _ID]" "organizations/[ORGANIZATION_ID]/locations/[LOCATION_ID]/buckets/[BUCKE
+         * T_ID]/links/[LINK_ID]" "billingAccounts/[BILLING_ACCOUNT_ID]/locations/[LOCAT
+         * ION_ID]/buckets/[BUCKET_ID]/links/[LINK_ID]" "folders/[FOLDER_ID]/locations/[
+         * LOCATION_ID]/buckets/[BUCKET_ID]/links/[LINK_ID]"
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets a link. (links.get)
+         *
+         * @param string $name Required. The resource name of the link: "projects/[PROJE
+         * CT_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]/links/[LINK_ID]" "organiza
+         * tions/[ORGANIZATION_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]/links/[LI
+         * NK_ID]" "billingAccounts/[BILLING_ACCOUNT_ID]/locations/[LOCATION_ID]/buckets
+         * /[BUCKET_ID]/links/[LINK_ID]" "folders/[FOLDER_ID]/locations/[LOCATION_ID]/bu
+         * ckets/[BUCKET_ID]/links/[LINK_ID]"
+         * @param array $optParams Optional parameters.
+         * @return Link
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists links. (links.listBillingAccountsLocationsBucketsLinks)
+         *
+         * @param string $parent Required. The parent resource whose links are to be
+         * listed: "projects/[PROJECT_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]"
+         * "organizations/[ORGANIZATION_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]"
+         * "billingAccounts/[BILLING_ACCOUNT_ID]/locations/[LOCATION_ID]/buckets/[BUCKET
+         * _ID]" "folders/[FOLDER_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]"
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. The maximum number of results to return
+         * from this request.
+         * @opt_param string pageToken Optional. If present, then retrieve the next
+         * batch of results from the preceding call to this method. pageToken must be
+         * the value of nextPageToken from the previous response.
+         * @return ListLinksResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listBillingAccountsLocationsBucketsLinks($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a link. This will also delete the corresponding BigQuery linked
-     * dataset. (links.delete)
-     *
-     * @param string $name Required. The full resource name of the link to delete. "
-     * projects/[PROJECT_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]/links/[LINK
-     * _ID]" "organizations/[ORGANIZATION_ID]/locations/[LOCATION_ID]/buckets/[BUCKE
-     * T_ID]/links/[LINK_ID]" "billingAccounts/[BILLING_ACCOUNT_ID]/locations/[LOCAT
-     * ION_ID]/buckets/[BUCKET_ID]/links/[LINK_ID]" "folders/[FOLDER_ID]/locations/[
-     * LOCATION_ID]/buckets/[BUCKET_ID]/links/[LINK_ID]"
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Logging\Resource\BillingAccountsLocationsBucketsLinks registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets a link. (links.get)
-     *
-     * @param string $name Required. The resource name of the link: "projects/[PROJE
-     * CT_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]/links/[LINK_ID]" "organiza
-     * tions/[ORGANIZATION_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]/links/[LI
-     * NK_ID]" "billingAccounts/[BILLING_ACCOUNT_ID]/locations/[LOCATION_ID]/buckets
-     * /[BUCKET_ID]/links/[LINK_ID]" "folders/[FOLDER_ID]/locations/[LOCATION_ID]/bu
-     * ckets/[BUCKET_ID]/links/[LINK_ID]"
-     * @param array $optParams Optional parameters.
-     * @return Link
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists links. (links.listBillingAccountsLocationsBucketsLinks)
-     *
-     * @param string $parent Required. The parent resource whose links are to be
-     * listed: "projects/[PROJECT_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]"
-     * "organizations/[ORGANIZATION_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]"
-     * "billingAccounts/[BILLING_ACCOUNT_ID]/locations/[LOCATION_ID]/buckets/[BUCKET
-     * _ID]" "folders/[FOLDER_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]"
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. The maximum number of results to return
-     * from this request.
-     * @opt_param string pageToken Optional. If present, then retrieve the next
-     * batch of results from the preceding call to this method. pageToken must be
-     * the value of nextPageToken from the previous response.
-     * @return ListLinksResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listBillingAccountsLocationsBucketsLinks($parent, $optParams = [])
+    class Google_Service_Logging_Resource_BillingAccountsLocationsBucketsLinks extends \Google\Service\Logging\Resource\BillingAccountsLocationsBucketsLinks
     {
     }
 }

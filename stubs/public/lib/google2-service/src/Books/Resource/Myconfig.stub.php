@@ -21,107 +21,120 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books\Resource;
-
-/**
- * The "myconfig" collection of methods.
- * Typical usage is:
- *  <code>
- *   $booksService = new Google\Service\Books(...);
- *   $myconfig = $booksService->myconfig;
- *  </code>
- */
-class Myconfig extends \Google\Service\Resource
-{
+namespace Google\Service\Books\Resource {
+    use Google\Service\Books\DownloadAccesses;
+    use Google\Service\Books\RequestAccessData;
+    use Google\Service\Books\Usersettings;
+    use Google\Service\Books\Volumes as VolumesModel;
     /**
-     * Gets the current settings for the user. (myconfig.getUserSettings)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string country Unused. Added only to workaround TEX mandatory
-     * request template requirement
-     * @return Usersettings
-     * @throws \Google\Service\Exception
+     * The "myconfig" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $booksService = new Google\Service\Books(...);
+     *   $myconfig = $booksService->myconfig;
+     *  </code>
      */
-    public function getUserSettings($optParams = [])
+    class Myconfig extends \Google\Service\Resource
     {
+        /**
+         * Gets the current settings for the user. (myconfig.getUserSettings)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string country Unused. Added only to workaround TEX mandatory
+         * request template requirement
+         * @return Usersettings
+         * @throws \Google\Service\Exception
+         */
+        public function getUserSettings($optParams = [])
+        {
+        }
+        /**
+         * Release downloaded content access restriction.
+         * (myconfig.releaseDownloadAccess)
+         *
+         * @param string $cpksver The device/version ID from which to release the
+         * restriction.
+         * @param string|array $volumeIds The volume(s) to release restrictions for.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string locale ISO-639-1, ISO-3166-1 codes for message
+         * localization, i.e. en_US.
+         * @opt_param string source String to identify the originator of this request.
+         * @return DownloadAccesses
+         * @throws \Google\Service\Exception
+         */
+        public function releaseDownloadAccess($cpksver, $volumeIds, $optParams = [])
+        {
+        }
+        /**
+         * Request concurrent and download access restrictions. (myconfig.requestAccess)
+         *
+         * @param string $cpksver The device/version ID from which to request the
+         * restrictions.
+         * @param string $nonce The client nonce value.
+         * @param string $source String to identify the originator of this request.
+         * @param string $volumeId The volume to request concurrent/download
+         * restrictions for.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string licenseTypes The type of access license to request. If not
+         * specified, the default is BOTH.
+         * @opt_param string locale ISO-639-1, ISO-3166-1 codes for message
+         * localization, i.e. en_US.
+         * @return RequestAccessData
+         * @throws \Google\Service\Exception
+         */
+        public function requestAccess($cpksver, $nonce, $source, $volumeId, $optParams = [])
+        {
+        }
+        /**
+         * Request downloaded content access for specified volumes on the My eBooks
+         * shelf. (myconfig.syncVolumeLicenses)
+         *
+         * @param string $cpksver The device/version ID from which to release the
+         * restriction.
+         * @param string $nonce The client nonce value.
+         * @param string $source String to identify the originator of this request.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string features List of features supported by the client, i.e.,
+         * 'RENTALS'
+         * @opt_param bool includeNonComicsSeries Set to true to include non-comics
+         * series. Defaults to false.
+         * @opt_param string locale ISO-639-1, ISO-3166-1 codes for message
+         * localization, i.e. en_US.
+         * @opt_param bool showPreorders Set to true to show pre-ordered books. Defaults
+         * to false.
+         * @opt_param string volumeIds The volume(s) to request download restrictions
+         * for.
+         * @return VolumesModel
+         * @throws \Google\Service\Exception
+         */
+        public function syncVolumeLicenses($cpksver, $nonce, $source, $optParams = [])
+        {
+        }
+        /**
+         * Sets the settings for the user. If a sub-object is specified, it will
+         * overwrite the existing sub-object stored in the server. Unspecified sub-
+         * objects will retain the existing value. (myconfig.updateUserSettings)
+         *
+         * @param Usersettings $postBody
+         * @param array $optParams Optional parameters.
+         * @return Usersettings
+         * @throws \Google\Service\Exception
+         */
+        public function updateUserSettings(Usersettings $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Release downloaded content access restriction.
-     * (myconfig.releaseDownloadAccess)
-     *
-     * @param string $cpksver The device/version ID from which to release the
-     * restriction.
-     * @param string|array $volumeIds The volume(s) to release restrictions for.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string locale ISO-639-1, ISO-3166-1 codes for message
-     * localization, i.e. en_US.
-     * @opt_param string source String to identify the originator of this request.
-     * @return DownloadAccesses
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Books\Resource\Myconfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function releaseDownloadAccess($cpksver, $volumeIds, $optParams = [])
-    {
-    }
-    /**
-     * Request concurrent and download access restrictions. (myconfig.requestAccess)
-     *
-     * @param string $cpksver The device/version ID from which to request the
-     * restrictions.
-     * @param string $nonce The client nonce value.
-     * @param string $source String to identify the originator of this request.
-     * @param string $volumeId The volume to request concurrent/download
-     * restrictions for.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string licenseTypes The type of access license to request. If not
-     * specified, the default is BOTH.
-     * @opt_param string locale ISO-639-1, ISO-3166-1 codes for message
-     * localization, i.e. en_US.
-     * @return RequestAccessData
-     * @throws \Google\Service\Exception
-     */
-    public function requestAccess($cpksver, $nonce, $source, $volumeId, $optParams = [])
-    {
-    }
-    /**
-     * Request downloaded content access for specified volumes on the My eBooks
-     * shelf. (myconfig.syncVolumeLicenses)
-     *
-     * @param string $cpksver The device/version ID from which to release the
-     * restriction.
-     * @param string $nonce The client nonce value.
-     * @param string $source String to identify the originator of this request.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string features List of features supported by the client, i.e.,
-     * 'RENTALS'
-     * @opt_param bool includeNonComicsSeries Set to true to include non-comics
-     * series. Defaults to false.
-     * @opt_param string locale ISO-639-1, ISO-3166-1 codes for message
-     * localization, i.e. en_US.
-     * @opt_param bool showPreorders Set to true to show pre-ordered books. Defaults
-     * to false.
-     * @opt_param string volumeIds The volume(s) to request download restrictions
-     * for.
-     * @return VolumesModel
-     * @throws \Google\Service\Exception
-     */
-    public function syncVolumeLicenses($cpksver, $nonce, $source, $optParams = [])
-    {
-    }
-    /**
-     * Sets the settings for the user. If a sub-object is specified, it will
-     * overwrite the existing sub-object stored in the server. Unspecified sub-
-     * objects will retain the existing value. (myconfig.updateUserSettings)
-     *
-     * @param Usersettings $postBody
-     * @param array $optParams Optional parameters.
-     * @return Usersettings
-     * @throws \Google\Service\Exception
-     */
-    public function updateUserSettings(Usersettings $postBody, $optParams = [])
+    class Google_Service_Books_Resource_Myconfig extends \Google\Service\Books\Resource\Myconfig
     {
     }
 }

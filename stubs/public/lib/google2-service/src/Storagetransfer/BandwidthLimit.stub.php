@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storagetransfer;
-
-class BandwidthLimit extends \Google\Model
-{
-    /**
-     * Bandwidth rate in megabytes per second, distributed across all the agents
-     * in the pool.
-     *
-     * @var string
-     */
-    public $limitMbps;
-    /**
-     * Bandwidth rate in megabytes per second, distributed across all the agents
-     * in the pool.
-     *
-     * @param string $limitMbps
-     */
-    public function setLimitMbps($limitMbps)
+namespace Google\Service\Storagetransfer {
+    class BandwidthLimit extends \Google\Model
     {
+        /**
+         * Bandwidth rate in megabytes per second, distributed across all the agents
+         * in the pool.
+         *
+         * @var string
+         */
+        public $limitMbps;
+        /**
+         * Bandwidth rate in megabytes per second, distributed across all the agents
+         * in the pool.
+         *
+         * @param string $limitMbps
+         */
+        public function setLimitMbps($limitMbps)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLimitMbps()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Storagetransfer\BandwidthLimit registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLimitMbps()
+    class Google_Service_Storagetransfer_BandwidthLimit extends \Google\Service\Storagetransfer\BandwidthLimit
     {
     }
 }

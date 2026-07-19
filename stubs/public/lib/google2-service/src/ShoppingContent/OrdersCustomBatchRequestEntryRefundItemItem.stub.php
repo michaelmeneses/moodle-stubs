@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OrdersCustomBatchRequestEntryRefundItemItem extends \Google\Model
-{
-    protected $amountType = MonetaryAmount::class;
-    protected $amountDataType = '';
-    /**
-     * @var bool
-     */
-    public $fullRefund;
-    /**
-     * @var string
-     */
-    public $lineItemId;
-    /**
-     * @var string
-     */
-    public $productId;
-    /**
-     * @var int
-     */
-    public $quantity;
-    /**
-     * @param MonetaryAmount
-     */
-    public function setAmount(MonetaryAmount $amount)
+namespace Google\Service\ShoppingContent {
+    class OrdersCustomBatchRequestEntryRefundItemItem extends \Google\Model
     {
+        protected $amountType = MonetaryAmount::class;
+        protected $amountDataType = '';
+        /**
+         * @var bool
+         */
+        public $fullRefund;
+        /**
+         * @var string
+         */
+        public $lineItemId;
+        /**
+         * @var string
+         */
+        public $productId;
+        /**
+         * @var int
+         */
+        public $quantity;
+        /**
+         * @param MonetaryAmount
+         */
+        public function setAmount(MonetaryAmount $amount)
+        {
+        }
+        /**
+         * @return MonetaryAmount
+         */
+        public function getAmount()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setFullRefund($fullRefund)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getFullRefund()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLineItemId($lineItemId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLineItemId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProductId($productId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductId()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setQuantity($quantity)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getQuantity()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MonetaryAmount
+     * Runtime class alias of \Google\Service\ShoppingContent\OrdersCustomBatchRequestEntryRefundItemItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAmount()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setFullRefund($fullRefund)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getFullRefund()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLineItemId($lineItemId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLineItemId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProductId($productId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductId()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setQuantity($quantity)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getQuantity()
+    class Google_Service_ShoppingContent_OrdersCustomBatchRequestEntryRefundItemItem extends \Google\Service\ShoppingContent\OrdersCustomBatchRequestEntryRefundItemItem
     {
     }
 }

@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class CertificateAuthorityDomainConfig extends \Google\Collection
-{
-    protected $collection_key = 'fqdns';
-    /**
-     * List of fully qualified domain names (FQDN). Specifying port is supported.
-     * Wildcards are NOT supported. Examples: - my.customdomain.com -
-     * 10.0.1.2:5000
-     *
-     * @var string[]
-     */
-    public $fqdns;
-    protected $gcpSecretManagerCertificateConfigType = GCPSecretManagerCertificateConfig::class;
-    protected $gcpSecretManagerCertificateConfigDataType = '';
-    /**
-     * List of fully qualified domain names (FQDN). Specifying port is supported.
-     * Wildcards are NOT supported. Examples: - my.customdomain.com -
-     * 10.0.1.2:5000
-     *
-     * @param string[] $fqdns
-     */
-    public function setFqdns($fqdns)
+namespace Google\Service\Container {
+    class CertificateAuthorityDomainConfig extends \Google\Collection
     {
+        protected $collection_key = 'fqdns';
+        /**
+         * List of fully qualified domain names (FQDN). Specifying port is supported.
+         * Wildcards are NOT supported. Examples: - my.customdomain.com -
+         * 10.0.1.2:5000
+         *
+         * @var string[]
+         */
+        public $fqdns;
+        protected $gcpSecretManagerCertificateConfigType = GCPSecretManagerCertificateConfig::class;
+        protected $gcpSecretManagerCertificateConfigDataType = '';
+        /**
+         * List of fully qualified domain names (FQDN). Specifying port is supported.
+         * Wildcards are NOT supported. Examples: - my.customdomain.com -
+         * 10.0.1.2:5000
+         *
+         * @param string[] $fqdns
+         */
+        public function setFqdns($fqdns)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFqdns()
+        {
+        }
+        /**
+         * Google Secret Manager (GCP) certificate configuration.
+         *
+         * @param GCPSecretManagerCertificateConfig $gcpSecretManagerCertificateConfig
+         */
+        public function setGcpSecretManagerCertificateConfig(GCPSecretManagerCertificateConfig $gcpSecretManagerCertificateConfig)
+        {
+        }
+        /**
+         * @return GCPSecretManagerCertificateConfig
+         */
+        public function getGcpSecretManagerCertificateConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Container\CertificateAuthorityDomainConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFqdns()
-    {
-    }
-    /**
-     * Google Secret Manager (GCP) certificate configuration.
-     *
-     * @param GCPSecretManagerCertificateConfig $gcpSecretManagerCertificateConfig
-     */
-    public function setGcpSecretManagerCertificateConfig(GCPSecretManagerCertificateConfig $gcpSecretManagerCertificateConfig)
-    {
-    }
-    /**
-     * @return GCPSecretManagerCertificateConfig
-     */
-    public function getGcpSecretManagerCertificateConfig()
+    class Google_Service_Container_CertificateAuthorityDomainConfig extends \Google\Service\Container\CertificateAuthorityDomainConfig
     {
     }
 }

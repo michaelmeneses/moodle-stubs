@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ExportDataOperationMetadata extends \Google\Model
-{
-    /**
-     * A Google Cloud Storage directory which path ends with '/'. The exported
-     * data is stored in the directory.
-     *
-     * @var string
-     */
-    public $gcsOutputDirectory;
-    protected $genericMetadataType = GoogleCloudAiplatformV1GenericOperationMetadata::class;
-    protected $genericMetadataDataType = '';
-    /**
-     * A Google Cloud Storage directory which path ends with '/'. The exported
-     * data is stored in the directory.
-     *
-     * @param string $gcsOutputDirectory
-     */
-    public function setGcsOutputDirectory($gcsOutputDirectory)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ExportDataOperationMetadata extends \Google\Model
     {
+        /**
+         * A Google Cloud Storage directory which path ends with '/'. The exported
+         * data is stored in the directory.
+         *
+         * @var string
+         */
+        public $gcsOutputDirectory;
+        protected $genericMetadataType = GoogleCloudAiplatformV1GenericOperationMetadata::class;
+        protected $genericMetadataDataType = '';
+        /**
+         * A Google Cloud Storage directory which path ends with '/'. The exported
+         * data is stored in the directory.
+         *
+         * @param string $gcsOutputDirectory
+         */
+        public function setGcsOutputDirectory($gcsOutputDirectory)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcsOutputDirectory()
+        {
+        }
+        /**
+         * The common part of the operation metadata.
+         *
+         * @param GoogleCloudAiplatformV1GenericOperationMetadata $genericMetadata
+         */
+        public function setGenericMetadata(GoogleCloudAiplatformV1GenericOperationMetadata $genericMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1GenericOperationMetadata
+         */
+        public function getGenericMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ExportDataOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcsOutputDirectory()
-    {
-    }
-    /**
-     * The common part of the operation metadata.
-     *
-     * @param GoogleCloudAiplatformV1GenericOperationMetadata $genericMetadata
-     */
-    public function setGenericMetadata(GoogleCloudAiplatformV1GenericOperationMetadata $genericMetadata)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1GenericOperationMetadata
-     */
-    public function getGenericMetadata()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ExportDataOperationMetadata extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ExportDataOperationMetadata
     {
     }
 }

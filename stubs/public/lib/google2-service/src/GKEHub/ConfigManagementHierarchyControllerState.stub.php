@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ConfigManagementHierarchyControllerState extends \Google\Model
-{
-    protected $stateType = ConfigManagementHierarchyControllerDeploymentState::class;
-    protected $stateDataType = '';
-    protected $versionType = ConfigManagementHierarchyControllerVersion::class;
-    protected $versionDataType = '';
-    /**
-     * The deployment state for Hierarchy Controller.
-     *
-     * @param ConfigManagementHierarchyControllerDeploymentState $state
-     */
-    public function setState(ConfigManagementHierarchyControllerDeploymentState $state)
+namespace Google\Service\GKEHub {
+    class ConfigManagementHierarchyControllerState extends \Google\Model
     {
+        protected $stateType = ConfigManagementHierarchyControllerDeploymentState::class;
+        protected $stateDataType = '';
+        protected $versionType = ConfigManagementHierarchyControllerVersion::class;
+        protected $versionDataType = '';
+        /**
+         * The deployment state for Hierarchy Controller.
+         *
+         * @param ConfigManagementHierarchyControllerDeploymentState $state
+         */
+        public function setState(ConfigManagementHierarchyControllerDeploymentState $state)
+        {
+        }
+        /**
+         * @return ConfigManagementHierarchyControllerDeploymentState
+         */
+        public function getState()
+        {
+        }
+        /**
+         * The version for Hierarchy Controller.
+         *
+         * @param ConfigManagementHierarchyControllerVersion $version
+         */
+        public function setVersion(ConfigManagementHierarchyControllerVersion $version)
+        {
+        }
+        /**
+         * @return ConfigManagementHierarchyControllerVersion
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ConfigManagementHierarchyControllerDeploymentState
+     * Runtime class alias of \Google\Service\GKEHub\ConfigManagementHierarchyControllerState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getState()
-    {
-    }
-    /**
-     * The version for Hierarchy Controller.
-     *
-     * @param ConfigManagementHierarchyControllerVersion $version
-     */
-    public function setVersion(ConfigManagementHierarchyControllerVersion $version)
-    {
-    }
-    /**
-     * @return ConfigManagementHierarchyControllerVersion
-     */
-    public function getVersion()
+    class Google_Service_GKEHub_ConfigManagementHierarchyControllerState extends \Google\Service\GKEHub\ConfigManagementHierarchyControllerState
     {
     }
 }

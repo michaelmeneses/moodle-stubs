@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class GitLabEventsConfig extends \Google\Model
-{
-    protected $gitlabConfigType = GitLabConfig::class;
-    protected $gitlabConfigDataType = '';
-    /**
-     * @var string
-     */
-    public $gitlabConfigResource;
-    /**
-     * @var string
-     */
-    public $projectNamespace;
-    protected $pullRequestType = PullRequestFilter::class;
-    protected $pullRequestDataType = '';
-    protected $pushType = PushFilter::class;
-    protected $pushDataType = '';
-    /**
-     * @param GitLabConfig
-     */
-    public function setGitlabConfig(GitLabConfig $gitlabConfig)
+namespace Google\Service\CloudBuild {
+    class GitLabEventsConfig extends \Google\Model
     {
+        protected $gitlabConfigType = GitLabConfig::class;
+        protected $gitlabConfigDataType = '';
+        /**
+         * @var string
+         */
+        public $gitlabConfigResource;
+        /**
+         * @var string
+         */
+        public $projectNamespace;
+        protected $pullRequestType = PullRequestFilter::class;
+        protected $pullRequestDataType = '';
+        protected $pushType = PushFilter::class;
+        protected $pushDataType = '';
+        /**
+         * @param GitLabConfig
+         */
+        public function setGitlabConfig(GitLabConfig $gitlabConfig)
+        {
+        }
+        /**
+         * @return GitLabConfig
+         */
+        public function getGitlabConfig()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setGitlabConfigResource($gitlabConfigResource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGitlabConfigResource()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProjectNamespace($projectNamespace)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectNamespace()
+        {
+        }
+        /**
+         * @param PullRequestFilter
+         */
+        public function setPullRequest(PullRequestFilter $pullRequest)
+        {
+        }
+        /**
+         * @return PullRequestFilter
+         */
+        public function getPullRequest()
+        {
+        }
+        /**
+         * @param PushFilter
+         */
+        public function setPush(PushFilter $push)
+        {
+        }
+        /**
+         * @return PushFilter
+         */
+        public function getPush()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GitLabConfig
+     * Runtime class alias of \Google\Service\CloudBuild\GitLabEventsConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGitlabConfig()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setGitlabConfigResource($gitlabConfigResource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGitlabConfigResource()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProjectNamespace($projectNamespace)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectNamespace()
-    {
-    }
-    /**
-     * @param PullRequestFilter
-     */
-    public function setPullRequest(PullRequestFilter $pullRequest)
-    {
-    }
-    /**
-     * @return PullRequestFilter
-     */
-    public function getPullRequest()
-    {
-    }
-    /**
-     * @param PushFilter
-     */
-    public function setPush(PushFilter $push)
-    {
-    }
-    /**
-     * @return PushFilter
-     */
-    public function getPush()
+    class Google_Service_CloudBuild_GitLabEventsConfig extends \Google\Service\CloudBuild\GitLabEventsConfig
     {
     }
 }

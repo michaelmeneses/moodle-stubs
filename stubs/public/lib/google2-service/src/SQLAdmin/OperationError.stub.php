@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class OperationError extends \Google\Model
-{
-    /**
-     * Identifies the specific error that occurred.
-     *
-     * @var string
-     */
-    public $code;
-    /**
-     * This is always `sql#operationError`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Additional information about the error encountered.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * Identifies the specific error that occurred.
-     *
-     * @param string $code
-     */
-    public function setCode($code)
+namespace Google\Service\SQLAdmin {
+    class OperationError extends \Google\Model
     {
+        /**
+         * Identifies the specific error that occurred.
+         *
+         * @var string
+         */
+        public $code;
+        /**
+         * This is always `sql#operationError`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Additional information about the error encountered.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * Identifies the specific error that occurred.
+         *
+         * @param string $code
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCode()
+        {
+        }
+        /**
+         * This is always `sql#operationError`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Additional information about the error encountered.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SQLAdmin\OperationError registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCode()
-    {
-    }
-    /**
-     * This is always `sql#operationError`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Additional information about the error encountered.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
+    class Google_Service_SQLAdmin_OperationError extends \Google\Service\SQLAdmin\OperationError
     {
     }
 }

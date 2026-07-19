@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2PriceInfoPriceRange extends \Google\Model
-{
-    protected $originalPriceType = GoogleCloudRetailV2Interval::class;
-    protected $originalPriceDataType = '';
-    protected $priceType = GoogleCloudRetailV2Interval::class;
-    protected $priceDataType = '';
-    /**
-     * The inclusive Product.pricing_info.original_price internal of all variant
-     * Product having the same Product.primary_product_id.
-     *
-     * @param GoogleCloudRetailV2Interval $originalPrice
-     */
-    public function setOriginalPrice(GoogleCloudRetailV2Interval $originalPrice)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2PriceInfoPriceRange extends \Google\Model
     {
+        protected $originalPriceType = GoogleCloudRetailV2Interval::class;
+        protected $originalPriceDataType = '';
+        protected $priceType = GoogleCloudRetailV2Interval::class;
+        protected $priceDataType = '';
+        /**
+         * The inclusive Product.pricing_info.original_price internal of all variant
+         * Product having the same Product.primary_product_id.
+         *
+         * @param GoogleCloudRetailV2Interval $originalPrice
+         */
+        public function setOriginalPrice(GoogleCloudRetailV2Interval $originalPrice)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2Interval
+         */
+        public function getOriginalPrice()
+        {
+        }
+        /**
+         * The inclusive Product.pricing_info.price interval of all variant Product
+         * having the same Product.primary_product_id.
+         *
+         * @param GoogleCloudRetailV2Interval $price
+         */
+        public function setPrice(GoogleCloudRetailV2Interval $price)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2Interval
+         */
+        public function getPrice()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRetailV2Interval
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2PriceInfoPriceRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOriginalPrice()
-    {
-    }
-    /**
-     * The inclusive Product.pricing_info.price interval of all variant Product
-     * having the same Product.primary_product_id.
-     *
-     * @param GoogleCloudRetailV2Interval $price
-     */
-    public function setPrice(GoogleCloudRetailV2Interval $price)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2Interval
-     */
-    public function getPrice()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2PriceInfoPriceRange extends \Google\Service\CloudRetail\GoogleCloudRetailV2PriceInfoPriceRange
     {
     }
 }

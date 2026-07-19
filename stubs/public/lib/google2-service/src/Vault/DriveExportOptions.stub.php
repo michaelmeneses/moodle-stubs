@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vault;
-
-class DriveExportOptions extends \Google\Model
-{
-    /**
-     * To include access level information for users with [indirect
-     * access](https://support.google.com/vault/answer/6099459#metadata) to files,
-     * set to **true**.
-     *
-     * @var bool
-     */
-    public $includeAccessInfo;
-    /**
-     * To include access level information for users with [indirect
-     * access](https://support.google.com/vault/answer/6099459#metadata) to files,
-     * set to **true**.
-     *
-     * @param bool $includeAccessInfo
-     */
-    public function setIncludeAccessInfo($includeAccessInfo)
+namespace Google\Service\Vault {
+    class DriveExportOptions extends \Google\Model
     {
+        /**
+         * To include access level information for users with [indirect
+         * access](https://support.google.com/vault/answer/6099459#metadata) to files,
+         * set to **true**.
+         *
+         * @var bool
+         */
+        public $includeAccessInfo;
+        /**
+         * To include access level information for users with [indirect
+         * access](https://support.google.com/vault/answer/6099459#metadata) to files,
+         * set to **true**.
+         *
+         * @param bool $includeAccessInfo
+         */
+        public function setIncludeAccessInfo($includeAccessInfo)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIncludeAccessInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Vault\DriveExportOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIncludeAccessInfo()
+    class Google_Service_Vault_DriveExportOptions extends \Google\Service\Vault\DriveExportOptions
     {
     }
 }

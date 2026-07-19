@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoConditionResult extends \Google\Model
-{
-    /**
-     * the current task number.
-     *
-     * @var string
-     */
-    public $currentTaskNumber;
-    /**
-     * the next task number.
-     *
-     * @var string
-     */
-    public $nextTaskNumber;
-    /**
-     * the result comes out after evaluate the combined condition. True if there's
-     * no combined condition specified.
-     *
-     * @var bool
-     */
-    public $result;
-    /**
-     * the current task number.
-     *
-     * @param string $currentTaskNumber
-     */
-    public function setCurrentTaskNumber($currentTaskNumber)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoConditionResult extends \Google\Model
     {
+        /**
+         * the current task number.
+         *
+         * @var string
+         */
+        public $currentTaskNumber;
+        /**
+         * the next task number.
+         *
+         * @var string
+         */
+        public $nextTaskNumber;
+        /**
+         * the result comes out after evaluate the combined condition. True if there's
+         * no combined condition specified.
+         *
+         * @var bool
+         */
+        public $result;
+        /**
+         * the current task number.
+         *
+         * @param string $currentTaskNumber
+         */
+        public function setCurrentTaskNumber($currentTaskNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrentTaskNumber()
+        {
+        }
+        /**
+         * the next task number.
+         *
+         * @param string $nextTaskNumber
+         */
+        public function setNextTaskNumber($nextTaskNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextTaskNumber()
+        {
+        }
+        /**
+         * the result comes out after evaluate the combined condition. True if there's
+         * no combined condition specified.
+         *
+         * @param bool $result
+         */
+        public function setResult($result)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getResult()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoConditionResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCurrentTaskNumber()
-    {
-    }
-    /**
-     * the next task number.
-     *
-     * @param string $nextTaskNumber
-     */
-    public function setNextTaskNumber($nextTaskNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextTaskNumber()
-    {
-    }
-    /**
-     * the result comes out after evaluate the combined condition. True if there's
-     * no combined condition specified.
-     *
-     * @param bool $result
-     */
-    public function setResult($result)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getResult()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoConditionResult extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoConditionResult
     {
     }
 }

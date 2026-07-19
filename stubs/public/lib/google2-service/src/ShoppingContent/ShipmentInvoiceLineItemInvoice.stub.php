@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ShipmentInvoiceLineItemInvoice extends \Google\Collection
-{
-    protected $collection_key = 'shipmentUnitIds';
-    /**
-     * @var string
-     */
-    public $lineItemId;
-    /**
-     * @var string
-     */
-    public $productId;
-    /**
-     * @var string[]
-     */
-    public $shipmentUnitIds;
-    protected $unitInvoiceType = UnitInvoice::class;
-    protected $unitInvoiceDataType = '';
-    /**
-     * @param string
-     */
-    public function setLineItemId($lineItemId)
+namespace Google\Service\ShoppingContent {
+    class ShipmentInvoiceLineItemInvoice extends \Google\Collection
     {
+        protected $collection_key = 'shipmentUnitIds';
+        /**
+         * @var string
+         */
+        public $lineItemId;
+        /**
+         * @var string
+         */
+        public $productId;
+        /**
+         * @var string[]
+         */
+        public $shipmentUnitIds;
+        protected $unitInvoiceType = UnitInvoice::class;
+        protected $unitInvoiceDataType = '';
+        /**
+         * @param string
+         */
+        public function setLineItemId($lineItemId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLineItemId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProductId($productId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductId()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setShipmentUnitIds($shipmentUnitIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getShipmentUnitIds()
+        {
+        }
+        /**
+         * @param UnitInvoice
+         */
+        public function setUnitInvoice(UnitInvoice $unitInvoice)
+        {
+        }
+        /**
+         * @return UnitInvoice
+         */
+        public function getUnitInvoice()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\ShipmentInvoiceLineItemInvoice registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLineItemId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProductId($productId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductId()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setShipmentUnitIds($shipmentUnitIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getShipmentUnitIds()
-    {
-    }
-    /**
-     * @param UnitInvoice
-     */
-    public function setUnitInvoice(UnitInvoice $unitInvoice)
-    {
-    }
-    /**
-     * @return UnitInvoice
-     */
-    public function getUnitInvoice()
+    class Google_Service_ShoppingContent_ShipmentInvoiceLineItemInvoice extends \Google\Service\ShoppingContent\ShipmentInvoiceLineItemInvoice
     {
     }
 }

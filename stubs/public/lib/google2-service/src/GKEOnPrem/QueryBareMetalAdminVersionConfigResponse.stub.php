@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class QueryBareMetalAdminVersionConfigResponse extends \Google\Collection
-{
-    protected $collection_key = 'versions';
-    protected $versionsType = BareMetalVersionInfo::class;
-    protected $versionsDataType = 'array';
-    /**
-     * List of available versions to install or to upgrade to.
-     *
-     * @param BareMetalVersionInfo[] $versions
-     */
-    public function setVersions($versions)
+namespace Google\Service\GKEOnPrem {
+    class QueryBareMetalAdminVersionConfigResponse extends \Google\Collection
     {
+        protected $collection_key = 'versions';
+        protected $versionsType = BareMetalVersionInfo::class;
+        protected $versionsDataType = 'array';
+        /**
+         * List of available versions to install or to upgrade to.
+         *
+         * @param BareMetalVersionInfo[] $versions
+         */
+        public function setVersions($versions)
+        {
+        }
+        /**
+         * @return BareMetalVersionInfo[]
+         */
+        public function getVersions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BareMetalVersionInfo[]
+     * Runtime class alias of \Google\Service\GKEOnPrem\QueryBareMetalAdminVersionConfigResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVersions()
+    class Google_Service_GKEOnPrem_QueryBareMetalAdminVersionConfigResponse extends \Google\Service\GKEOnPrem\QueryBareMetalAdminVersionConfigResponse
     {
     }
 }

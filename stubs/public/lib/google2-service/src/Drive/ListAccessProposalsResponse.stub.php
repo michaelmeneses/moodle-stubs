@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Drive;
-
-class ListAccessProposalsResponse extends \Google\Collection
-{
-    protected $collection_key = 'accessProposals';
-    protected $accessProposalsType = AccessProposal::class;
-    protected $accessProposalsDataType = 'array';
-    /**
-     * The continuation token for the next page of results. This will be absent if
-     * the end of the results list has been reached. If the token is rejected for
-     * any reason, it should be discarded, and pagination should be restarted from
-     * the first page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of access proposals. This field is only populated in Drive API v3.
-     *
-     * @param AccessProposal[] $accessProposals
-     */
-    public function setAccessProposals($accessProposals)
+namespace Google\Service\Drive {
+    class ListAccessProposalsResponse extends \Google\Collection
     {
+        protected $collection_key = 'accessProposals';
+        protected $accessProposalsType = AccessProposal::class;
+        protected $accessProposalsDataType = 'array';
+        /**
+         * The continuation token for the next page of results. This will be absent if
+         * the end of the results list has been reached. If the token is rejected for
+         * any reason, it should be discarded, and pagination should be restarted from
+         * the first page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of access proposals. This field is only populated in Drive API v3.
+         *
+         * @param AccessProposal[] $accessProposals
+         */
+        public function setAccessProposals($accessProposals)
+        {
+        }
+        /**
+         * @return AccessProposal[]
+         */
+        public function getAccessProposals()
+        {
+        }
+        /**
+         * The continuation token for the next page of results. This will be absent if
+         * the end of the results list has been reached. If the token is rejected for
+         * any reason, it should be discarded, and pagination should be restarted from
+         * the first page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AccessProposal[]
+     * Runtime class alias of \Google\Service\Drive\ListAccessProposalsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessProposals()
-    {
-    }
-    /**
-     * The continuation token for the next page of results. This will be absent if
-     * the end of the results list has been reached. If the token is rejected for
-     * any reason, it should be discarded, and pagination should be restarted from
-     * the first page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Drive_ListAccessProposalsResponse extends \Google\Service\Drive\ListAccessProposalsResponse
     {
     }
 }

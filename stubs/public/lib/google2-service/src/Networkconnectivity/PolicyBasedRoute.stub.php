@@ -21,330 +21,339 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class PolicyBasedRoute extends \Google\Collection
-{
-    /**
-     * Default value.
-     */
-    public const NEXT_HOP_OTHER_ROUTES_OTHER_ROUTES_UNSPECIFIED = 'OTHER_ROUTES_UNSPECIFIED';
-    /**
-     * Use the routes from the default routing tables (system-generated routes,
-     * custom routes, peering route) to determine the next hop. This effectively
-     * excludes matching packets being applied on other PBRs with a lower
-     * priority.
-     */
-    public const NEXT_HOP_OTHER_ROUTES_DEFAULT_ROUTING = 'DEFAULT_ROUTING';
-    protected $collection_key = 'warnings';
-    /**
-     * Output only. Time when the policy-based route was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Optional. An optional description of this resource. Provide this field when
-     * you create the resource.
-     *
-     * @var string
-     */
-    public $description;
-    protected $filterType = Filter::class;
-    protected $filterDataType = '';
-    protected $interconnectAttachmentType = InterconnectAttachment::class;
-    protected $interconnectAttachmentDataType = '';
-    /**
-     * Output only. Type of this resource. Always
-     * networkconnectivity#policyBasedRoute for policy-based Route resources.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * User-defined labels.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Immutable. Identifier. A unique name of the resource in the form of `projec
-     * ts/{project_number}/locations/global/PolicyBasedRoutes/{policy_based_route_
-     * id}`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. Fully-qualified URL of the network that this route applies to,
-     * for example: projects/my-project/global/networks/my-network.
-     *
-     * @var string
-     */
-    public $network;
-    /**
-     * Optional. The IP address of a global-access-enabled L4 ILB that is the next
-     * hop for matching packets. For this version, only nextHopIlbIp is supported.
-     *
-     * @var string
-     */
-    public $nextHopIlbIp;
-    /**
-     * Optional. Other routes that will be referenced to determine the next hop of
-     * the packet.
-     *
-     * @var string
-     */
-    public $nextHopOtherRoutes;
-    /**
-     * Optional. The priority of this policy-based route. Priority is used to
-     * break ties in cases where there are more than one matching policy-based
-     * routes found. In cases where multiple policy-based routes are matched, the
-     * one with the lowest-numbered priority value wins. The default value is
-     * 1000. The priority value must be from 1 to 65535, inclusive.
-     *
-     * @var int
-     */
-    public $priority;
-    /**
-     * Output only. Server-defined fully-qualified URL for this resource.
-     *
-     * @var string
-     */
-    public $selfLink;
-    /**
-     * Output only. Time when the policy-based route was updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    protected $virtualMachineType = VirtualMachine::class;
-    protected $virtualMachineDataType = '';
-    protected $warningsType = Warnings::class;
-    protected $warningsDataType = 'array';
-    /**
-     * Output only. Time when the policy-based route was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Networkconnectivity {
+    class PolicyBasedRoute extends \Google\Collection
     {
+        /**
+         * Default value.
+         */
+        public const NEXT_HOP_OTHER_ROUTES_OTHER_ROUTES_UNSPECIFIED = 'OTHER_ROUTES_UNSPECIFIED';
+        /**
+         * Use the routes from the default routing tables (system-generated routes,
+         * custom routes, peering route) to determine the next hop. This effectively
+         * excludes matching packets being applied on other PBRs with a lower
+         * priority.
+         */
+        public const NEXT_HOP_OTHER_ROUTES_DEFAULT_ROUTING = 'DEFAULT_ROUTING';
+        protected $collection_key = 'warnings';
+        /**
+         * Output only. Time when the policy-based route was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Optional. An optional description of this resource. Provide this field when
+         * you create the resource.
+         *
+         * @var string
+         */
+        public $description;
+        protected $filterType = Filter::class;
+        protected $filterDataType = '';
+        protected $interconnectAttachmentType = InterconnectAttachment::class;
+        protected $interconnectAttachmentDataType = '';
+        /**
+         * Output only. Type of this resource. Always
+         * networkconnectivity#policyBasedRoute for policy-based Route resources.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * User-defined labels.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Immutable. Identifier. A unique name of the resource in the form of `projec
+         * ts/{project_number}/locations/global/PolicyBasedRoutes/{policy_based_route_
+         * id}`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. Fully-qualified URL of the network that this route applies to,
+         * for example: projects/my-project/global/networks/my-network.
+         *
+         * @var string
+         */
+        public $network;
+        /**
+         * Optional. The IP address of a global-access-enabled L4 ILB that is the next
+         * hop for matching packets. For this version, only nextHopIlbIp is supported.
+         *
+         * @var string
+         */
+        public $nextHopIlbIp;
+        /**
+         * Optional. Other routes that will be referenced to determine the next hop of
+         * the packet.
+         *
+         * @var string
+         */
+        public $nextHopOtherRoutes;
+        /**
+         * Optional. The priority of this policy-based route. Priority is used to
+         * break ties in cases where there are more than one matching policy-based
+         * routes found. In cases where multiple policy-based routes are matched, the
+         * one with the lowest-numbered priority value wins. The default value is
+         * 1000. The priority value must be from 1 to 65535, inclusive.
+         *
+         * @var int
+         */
+        public $priority;
+        /**
+         * Output only. Server-defined fully-qualified URL for this resource.
+         *
+         * @var string
+         */
+        public $selfLink;
+        /**
+         * Output only. Time when the policy-based route was updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        protected $virtualMachineType = VirtualMachine::class;
+        protected $virtualMachineDataType = '';
+        protected $warningsType = Warnings::class;
+        protected $warningsDataType = 'array';
+        /**
+         * Output only. Time when the policy-based route was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. An optional description of this resource. Provide this field when
+         * you create the resource.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Required. The filter to match L4 traffic.
+         *
+         * @param Filter $filter
+         */
+        public function setFilter(Filter $filter)
+        {
+        }
+        /**
+         * @return Filter
+         */
+        public function getFilter()
+        {
+        }
+        /**
+         * Optional. The interconnect attachments that this policy-based route applies
+         * to.
+         *
+         * @param InterconnectAttachment $interconnectAttachment
+         */
+        public function setInterconnectAttachment(InterconnectAttachment $interconnectAttachment)
+        {
+        }
+        /**
+         * @return InterconnectAttachment
+         */
+        public function getInterconnectAttachment()
+        {
+        }
+        /**
+         * Output only. Type of this resource. Always
+         * networkconnectivity#policyBasedRoute for policy-based Route resources.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * User-defined labels.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Immutable. Identifier. A unique name of the resource in the form of `projec
+         * ts/{project_number}/locations/global/PolicyBasedRoutes/{policy_based_route_
+         * id}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. Fully-qualified URL of the network that this route applies to,
+         * for example: projects/my-project/global/networks/my-network.
+         *
+         * @param string $network
+         */
+        public function setNetwork($network)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetwork()
+        {
+        }
+        /**
+         * Optional. The IP address of a global-access-enabled L4 ILB that is the next
+         * hop for matching packets. For this version, only nextHopIlbIp is supported.
+         *
+         * @param string $nextHopIlbIp
+         */
+        public function setNextHopIlbIp($nextHopIlbIp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextHopIlbIp()
+        {
+        }
+        /**
+         * Optional. Other routes that will be referenced to determine the next hop of
+         * the packet.
+         *
+         * Accepted values: OTHER_ROUTES_UNSPECIFIED, DEFAULT_ROUTING
+         *
+         * @param self::NEXT_HOP_OTHER_ROUTES_* $nextHopOtherRoutes
+         */
+        public function setNextHopOtherRoutes($nextHopOtherRoutes)
+        {
+        }
+        /**
+         * @return self::NEXT_HOP_OTHER_ROUTES_*
+         */
+        public function getNextHopOtherRoutes()
+        {
+        }
+        /**
+         * Optional. The priority of this policy-based route. Priority is used to
+         * break ties in cases where there are more than one matching policy-based
+         * routes found. In cases where multiple policy-based routes are matched, the
+         * one with the lowest-numbered priority value wins. The default value is
+         * 1000. The priority value must be from 1 to 65535, inclusive.
+         *
+         * @param int $priority
+         */
+        public function setPriority($priority)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPriority()
+        {
+        }
+        /**
+         * Output only. Server-defined fully-qualified URL for this resource.
+         *
+         * @param string $selfLink
+         */
+        public function setSelfLink($selfLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLink()
+        {
+        }
+        /**
+         * Output only. Time when the policy-based route was updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * Optional. VM instances that this policy-based route applies to.
+         *
+         * @param VirtualMachine $virtualMachine
+         */
+        public function setVirtualMachine(VirtualMachine $virtualMachine)
+        {
+        }
+        /**
+         * @return VirtualMachine
+         */
+        public function getVirtualMachine()
+        {
+        }
+        /**
+         * Output only. If potential misconfigurations are detected for this route,
+         * this field will be populated with warning messages.
+         *
+         * @param Warnings[] $warnings
+         */
+        public function setWarnings($warnings)
+        {
+        }
+        /**
+         * @return Warnings[]
+         */
+        public function getWarnings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Networkconnectivity\PolicyBasedRoute registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. An optional description of this resource. Provide this field when
-     * you create the resource.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Required. The filter to match L4 traffic.
-     *
-     * @param Filter $filter
-     */
-    public function setFilter(Filter $filter)
-    {
-    }
-    /**
-     * @return Filter
-     */
-    public function getFilter()
-    {
-    }
-    /**
-     * Optional. The interconnect attachments that this policy-based route applies
-     * to.
-     *
-     * @param InterconnectAttachment $interconnectAttachment
-     */
-    public function setInterconnectAttachment(InterconnectAttachment $interconnectAttachment)
-    {
-    }
-    /**
-     * @return InterconnectAttachment
-     */
-    public function getInterconnectAttachment()
-    {
-    }
-    /**
-     * Output only. Type of this resource. Always
-     * networkconnectivity#policyBasedRoute for policy-based Route resources.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * User-defined labels.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Immutable. Identifier. A unique name of the resource in the form of `projec
-     * ts/{project_number}/locations/global/PolicyBasedRoutes/{policy_based_route_
-     * id}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Required. Fully-qualified URL of the network that this route applies to,
-     * for example: projects/my-project/global/networks/my-network.
-     *
-     * @param string $network
-     */
-    public function setNetwork($network)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNetwork()
-    {
-    }
-    /**
-     * Optional. The IP address of a global-access-enabled L4 ILB that is the next
-     * hop for matching packets. For this version, only nextHopIlbIp is supported.
-     *
-     * @param string $nextHopIlbIp
-     */
-    public function setNextHopIlbIp($nextHopIlbIp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextHopIlbIp()
-    {
-    }
-    /**
-     * Optional. Other routes that will be referenced to determine the next hop of
-     * the packet.
-     *
-     * Accepted values: OTHER_ROUTES_UNSPECIFIED, DEFAULT_ROUTING
-     *
-     * @param self::NEXT_HOP_OTHER_ROUTES_* $nextHopOtherRoutes
-     */
-    public function setNextHopOtherRoutes($nextHopOtherRoutes)
-    {
-    }
-    /**
-     * @return self::NEXT_HOP_OTHER_ROUTES_*
-     */
-    public function getNextHopOtherRoutes()
-    {
-    }
-    /**
-     * Optional. The priority of this policy-based route. Priority is used to
-     * break ties in cases where there are more than one matching policy-based
-     * routes found. In cases where multiple policy-based routes are matched, the
-     * one with the lowest-numbered priority value wins. The default value is
-     * 1000. The priority value must be from 1 to 65535, inclusive.
-     *
-     * @param int $priority
-     */
-    public function setPriority($priority)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPriority()
-    {
-    }
-    /**
-     * Output only. Server-defined fully-qualified URL for this resource.
-     *
-     * @param string $selfLink
-     */
-    public function setSelfLink($selfLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLink()
-    {
-    }
-    /**
-     * Output only. Time when the policy-based route was updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
-    {
-    }
-    /**
-     * Optional. VM instances that this policy-based route applies to.
-     *
-     * @param VirtualMachine $virtualMachine
-     */
-    public function setVirtualMachine(VirtualMachine $virtualMachine)
-    {
-    }
-    /**
-     * @return VirtualMachine
-     */
-    public function getVirtualMachine()
-    {
-    }
-    /**
-     * Output only. If potential misconfigurations are detected for this route,
-     * this field will be populated with warning messages.
-     *
-     * @param Warnings[] $warnings
-     */
-    public function setWarnings($warnings)
-    {
-    }
-    /**
-     * @return Warnings[]
-     */
-    public function getWarnings()
+    class Google_Service_Networkconnectivity_PolicyBasedRoute extends \Google\Service\Networkconnectivity\PolicyBasedRoute
     {
     }
 }

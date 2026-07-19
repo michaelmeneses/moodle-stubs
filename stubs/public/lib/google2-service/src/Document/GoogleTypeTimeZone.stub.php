@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleTypeTimeZone extends \Google\Model
-{
-    /**
-     * IANA Time Zone Database time zone. For example "America/New_York".
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Optional. IANA Time Zone Database version number. For example "2019a".
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * IANA Time Zone Database time zone. For example "America/New_York".
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\Document {
+    class GoogleTypeTimeZone extends \Google\Model
     {
+        /**
+         * IANA Time Zone Database time zone. For example "America/New_York".
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Optional. IANA Time Zone Database version number. For example "2019a".
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * IANA Time Zone Database time zone. For example "America/New_York".
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Optional. IANA Time Zone Database version number. For example "2019a".
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleTypeTimeZone registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * Optional. IANA Time Zone Database version number. For example "2019a".
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_Document_GoogleTypeTimeZone extends \Google\Service\Document\GoogleTypeTimeZone
     {
     }
 }

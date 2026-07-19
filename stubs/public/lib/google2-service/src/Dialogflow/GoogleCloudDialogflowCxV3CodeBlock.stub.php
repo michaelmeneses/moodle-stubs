@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3CodeBlock extends \Google\Model
-{
-    /**
-     * Optional. Source code of the block in Python.
-     *
-     * @var string
-     */
-    public $code;
-    /**
-     * Optional. Source code of the block in Python.
-     *
-     * @param string $code
-     */
-    public function setCode($code)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3CodeBlock extends \Google\Model
     {
+        /**
+         * Optional. Source code of the block in Python.
+         *
+         * @var string
+         */
+        public $code;
+        /**
+         * Optional. Source code of the block in Python.
+         *
+         * @param string $code
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3CodeBlock registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCode()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3CodeBlock extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3CodeBlock
     {
     }
 }

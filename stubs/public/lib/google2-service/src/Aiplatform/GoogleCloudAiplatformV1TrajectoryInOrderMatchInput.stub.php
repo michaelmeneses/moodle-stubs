@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1TrajectoryInOrderMatchInput extends \Google\Collection
-{
-    protected $collection_key = 'instances';
-    protected $instancesType = GoogleCloudAiplatformV1TrajectoryInOrderMatchInstance::class;
-    protected $instancesDataType = 'array';
-    protected $metricSpecType = GoogleCloudAiplatformV1TrajectoryInOrderMatchSpec::class;
-    protected $metricSpecDataType = '';
-    /**
-     * Required. Repeated TrajectoryInOrderMatch instance.
-     *
-     * @param GoogleCloudAiplatformV1TrajectoryInOrderMatchInstance[] $instances
-     */
-    public function setInstances($instances)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1TrajectoryInOrderMatchInput extends \Google\Collection
     {
+        protected $collection_key = 'instances';
+        protected $instancesType = GoogleCloudAiplatformV1TrajectoryInOrderMatchInstance::class;
+        protected $instancesDataType = 'array';
+        protected $metricSpecType = GoogleCloudAiplatformV1TrajectoryInOrderMatchSpec::class;
+        protected $metricSpecDataType = '';
+        /**
+         * Required. Repeated TrajectoryInOrderMatch instance.
+         *
+         * @param GoogleCloudAiplatformV1TrajectoryInOrderMatchInstance[] $instances
+         */
+        public function setInstances($instances)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1TrajectoryInOrderMatchInstance[]
+         */
+        public function getInstances()
+        {
+        }
+        /**
+         * Required. Spec for TrajectoryInOrderMatch metric.
+         *
+         * @param GoogleCloudAiplatformV1TrajectoryInOrderMatchSpec $metricSpec
+         */
+        public function setMetricSpec(GoogleCloudAiplatformV1TrajectoryInOrderMatchSpec $metricSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1TrajectoryInOrderMatchSpec
+         */
+        public function getMetricSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1TrajectoryInOrderMatchInstance[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1TrajectoryInOrderMatchInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstances()
-    {
-    }
-    /**
-     * Required. Spec for TrajectoryInOrderMatch metric.
-     *
-     * @param GoogleCloudAiplatformV1TrajectoryInOrderMatchSpec $metricSpec
-     */
-    public function setMetricSpec(GoogleCloudAiplatformV1TrajectoryInOrderMatchSpec $metricSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1TrajectoryInOrderMatchSpec
-     */
-    public function getMetricSpec()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1TrajectoryInOrderMatchInput extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1TrajectoryInOrderMatchInput
     {
     }
 }

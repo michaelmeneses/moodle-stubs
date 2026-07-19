@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1BatchCreateFeaturesRequest extends \Google\Collection
-{
-    protected $collection_key = 'requests';
-    protected $requestsType = GoogleCloudAiplatformV1CreateFeatureRequest::class;
-    protected $requestsDataType = 'array';
-    /**
-     * Required. The request message specifying the Features to create. All
-     * Features must be created under the same parent EntityType / FeatureGroup.
-     * The `parent` field in each child request message can be omitted. If
-     * `parent` is set in a child request, then the value must match the `parent`
-     * value in this request message.
-     *
-     * @param GoogleCloudAiplatformV1CreateFeatureRequest[] $requests
-     */
-    public function setRequests($requests)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1BatchCreateFeaturesRequest extends \Google\Collection
     {
+        protected $collection_key = 'requests';
+        protected $requestsType = GoogleCloudAiplatformV1CreateFeatureRequest::class;
+        protected $requestsDataType = 'array';
+        /**
+         * Required. The request message specifying the Features to create. All
+         * Features must be created under the same parent EntityType / FeatureGroup.
+         * The `parent` field in each child request message can be omitted. If
+         * `parent` is set in a child request, then the value must match the `parent`
+         * value in this request message.
+         *
+         * @param GoogleCloudAiplatformV1CreateFeatureRequest[] $requests
+         */
+        public function setRequests($requests)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1CreateFeatureRequest[]
+         */
+        public function getRequests()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1CreateFeatureRequest[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchCreateFeaturesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequests()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1BatchCreateFeaturesRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchCreateFeaturesRequest
     {
     }
 }

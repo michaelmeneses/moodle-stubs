@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class AccountAdsLink extends \Google\Model
-{
-    /**
-     * Customer ID of the Ads account.
-     *
-     * @var string
-     */
-    public $adsId;
-    /**
-     * Status of the link between this Merchant Center account and the Ads
-     * account. Upon retrieval, it represents the actual status of the link and
-     * can be either `active` if it was approved in Google Ads or `pending` if
-     * it's pending approval. Upon insertion, it represents the *intended* status
-     * of the link. Re-uploading a link with status `active` when it's still
-     * pending or with status `pending` when it's already active will have no
-     * effect: the status will remain unchanged. Re-uploading a link with
-     * deprecated status `inactive` is equivalent to not submitting the link at
-     * all and will delete the link if it was active or cancel the link request if
-     * it was pending. Acceptable values are: - "`active`" - "`pending`"
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * Customer ID of the Ads account.
-     *
-     * @param string $adsId
-     */
-    public function setAdsId($adsId)
+namespace Google\Service\ShoppingContent {
+    class AccountAdsLink extends \Google\Model
     {
+        /**
+         * Customer ID of the Ads account.
+         *
+         * @var string
+         */
+        public $adsId;
+        /**
+         * Status of the link between this Merchant Center account and the Ads
+         * account. Upon retrieval, it represents the actual status of the link and
+         * can be either `active` if it was approved in Google Ads or `pending` if
+         * it's pending approval. Upon insertion, it represents the *intended* status
+         * of the link. Re-uploading a link with status `active` when it's still
+         * pending or with status `pending` when it's already active will have no
+         * effect: the status will remain unchanged. Re-uploading a link with
+         * deprecated status `inactive` is equivalent to not submitting the link at
+         * all and will delete the link if it was active or cancel the link request if
+         * it was pending. Acceptable values are: - "`active`" - "`pending`"
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * Customer ID of the Ads account.
+         *
+         * @param string $adsId
+         */
+        public function setAdsId($adsId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdsId()
+        {
+        }
+        /**
+         * Status of the link between this Merchant Center account and the Ads
+         * account. Upon retrieval, it represents the actual status of the link and
+         * can be either `active` if it was approved in Google Ads or `pending` if
+         * it's pending approval. Upon insertion, it represents the *intended* status
+         * of the link. Re-uploading a link with status `active` when it's still
+         * pending or with status `pending` when it's already active will have no
+         * effect: the status will remain unchanged. Re-uploading a link with
+         * deprecated status `inactive` is equivalent to not submitting the link at
+         * all and will delete the link if it was active or cancel the link request if
+         * it was pending. Acceptable values are: - "`active`" - "`pending`"
+         *
+         * @param string $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\AccountAdsLink registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdsId()
-    {
-    }
-    /**
-     * Status of the link between this Merchant Center account and the Ads
-     * account. Upon retrieval, it represents the actual status of the link and
-     * can be either `active` if it was approved in Google Ads or `pending` if
-     * it's pending approval. Upon insertion, it represents the *intended* status
-     * of the link. Re-uploading a link with status `active` when it's still
-     * pending or with status `pending` when it's already active will have no
-     * effect: the status will remain unchanged. Re-uploading a link with
-     * deprecated status `inactive` is equivalent to not submitting the link at
-     * all and will delete the link if it was active or cancel the link request if
-     * it was pending. Acceptable values are: - "`active`" - "`pending`"
-     *
-     * @param string $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatus()
+    class Google_Service_ShoppingContent_AccountAdsLink extends \Google\Service\ShoppingContent\AccountAdsLink
     {
     }
 }

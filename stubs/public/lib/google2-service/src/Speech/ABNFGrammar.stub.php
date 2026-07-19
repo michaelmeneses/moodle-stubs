@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Speech;
-
-class ABNFGrammar extends \Google\Collection
-{
-    protected $collection_key = 'abnfStrings';
-    /**
-     * All declarations and rules of an ABNF grammar broken up into multiple
-     * strings that will end up concatenated.
-     *
-     * @var string[]
-     */
-    public $abnfStrings;
-    /**
-     * All declarations and rules of an ABNF grammar broken up into multiple
-     * strings that will end up concatenated.
-     *
-     * @param string[] $abnfStrings
-     */
-    public function setAbnfStrings($abnfStrings)
+namespace Google\Service\Speech {
+    class ABNFGrammar extends \Google\Collection
     {
+        protected $collection_key = 'abnfStrings';
+        /**
+         * All declarations and rules of an ABNF grammar broken up into multiple
+         * strings that will end up concatenated.
+         *
+         * @var string[]
+         */
+        public $abnfStrings;
+        /**
+         * All declarations and rules of an ABNF grammar broken up into multiple
+         * strings that will end up concatenated.
+         *
+         * @param string[] $abnfStrings
+         */
+        public function setAbnfStrings($abnfStrings)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAbnfStrings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Speech\ABNFGrammar registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAbnfStrings()
+    class Google_Service_Speech_ABNFGrammar extends \Google\Service\Speech\ABNFGrammar
     {
     }
 }

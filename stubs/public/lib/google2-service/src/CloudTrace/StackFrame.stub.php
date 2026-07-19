@@ -21,135 +21,144 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudTrace;
-
-class StackFrame extends \Google\Model
-{
-    /**
-     * The column number where the function call appears, if available. This is
-     * important in JavaScript because of its anonymous functions.
-     *
-     * @var string
-     */
-    public $columnNumber;
-    protected $fileNameType = TruncatableString::class;
-    protected $fileNameDataType = '';
-    protected $functionNameType = TruncatableString::class;
-    protected $functionNameDataType = '';
-    /**
-     * The line number in `file_name` where the function call appears.
-     *
-     * @var string
-     */
-    public $lineNumber;
-    protected $loadModuleType = Module::class;
-    protected $loadModuleDataType = '';
-    protected $originalFunctionNameType = TruncatableString::class;
-    protected $originalFunctionNameDataType = '';
-    protected $sourceVersionType = TruncatableString::class;
-    protected $sourceVersionDataType = '';
-    /**
-     * The column number where the function call appears, if available. This is
-     * important in JavaScript because of its anonymous functions.
-     *
-     * @param string $columnNumber
-     */
-    public function setColumnNumber($columnNumber)
+namespace Google\Service\CloudTrace {
+    class StackFrame extends \Google\Model
     {
+        /**
+         * The column number where the function call appears, if available. This is
+         * important in JavaScript because of its anonymous functions.
+         *
+         * @var string
+         */
+        public $columnNumber;
+        protected $fileNameType = TruncatableString::class;
+        protected $fileNameDataType = '';
+        protected $functionNameType = TruncatableString::class;
+        protected $functionNameDataType = '';
+        /**
+         * The line number in `file_name` where the function call appears.
+         *
+         * @var string
+         */
+        public $lineNumber;
+        protected $loadModuleType = Module::class;
+        protected $loadModuleDataType = '';
+        protected $originalFunctionNameType = TruncatableString::class;
+        protected $originalFunctionNameDataType = '';
+        protected $sourceVersionType = TruncatableString::class;
+        protected $sourceVersionDataType = '';
+        /**
+         * The column number where the function call appears, if available. This is
+         * important in JavaScript because of its anonymous functions.
+         *
+         * @param string $columnNumber
+         */
+        public function setColumnNumber($columnNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getColumnNumber()
+        {
+        }
+        /**
+         * The name of the source file where the function call appears (up to 256
+         * bytes).
+         *
+         * @param TruncatableString $fileName
+         */
+        public function setFileName(TruncatableString $fileName)
+        {
+        }
+        /**
+         * @return TruncatableString
+         */
+        public function getFileName()
+        {
+        }
+        /**
+         * The fully-qualified name that uniquely identifies the function or method
+         * that is active in this frame (up to 1024 bytes).
+         *
+         * @param TruncatableString $functionName
+         */
+        public function setFunctionName(TruncatableString $functionName)
+        {
+        }
+        /**
+         * @return TruncatableString
+         */
+        public function getFunctionName()
+        {
+        }
+        /**
+         * The line number in `file_name` where the function call appears.
+         *
+         * @param string $lineNumber
+         */
+        public function setLineNumber($lineNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLineNumber()
+        {
+        }
+        /**
+         * The binary module from where the code was loaded.
+         *
+         * @param Module $loadModule
+         */
+        public function setLoadModule(Module $loadModule)
+        {
+        }
+        /**
+         * @return Module
+         */
+        public function getLoadModule()
+        {
+        }
+        /**
+         * An un-mangled function name, if `function_name` is mangled. To get
+         * information about name mangling, run [this
+         * search](https://www.google.com/search?q=cxx+name+mangling). The name can be
+         * fully-qualified (up to 1024 bytes).
+         *
+         * @param TruncatableString $originalFunctionName
+         */
+        public function setOriginalFunctionName(TruncatableString $originalFunctionName)
+        {
+        }
+        /**
+         * @return TruncatableString
+         */
+        public function getOriginalFunctionName()
+        {
+        }
+        /**
+         * The version of the deployed source code (up to 128 bytes).
+         *
+         * @param TruncatableString $sourceVersion
+         */
+        public function setSourceVersion(TruncatableString $sourceVersion)
+        {
+        }
+        /**
+         * @return TruncatableString
+         */
+        public function getSourceVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudTrace\StackFrame registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumnNumber()
-    {
-    }
-    /**
-     * The name of the source file where the function call appears (up to 256
-     * bytes).
-     *
-     * @param TruncatableString $fileName
-     */
-    public function setFileName(TruncatableString $fileName)
-    {
-    }
-    /**
-     * @return TruncatableString
-     */
-    public function getFileName()
-    {
-    }
-    /**
-     * The fully-qualified name that uniquely identifies the function or method
-     * that is active in this frame (up to 1024 bytes).
-     *
-     * @param TruncatableString $functionName
-     */
-    public function setFunctionName(TruncatableString $functionName)
-    {
-    }
-    /**
-     * @return TruncatableString
-     */
-    public function getFunctionName()
-    {
-    }
-    /**
-     * The line number in `file_name` where the function call appears.
-     *
-     * @param string $lineNumber
-     */
-    public function setLineNumber($lineNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLineNumber()
-    {
-    }
-    /**
-     * The binary module from where the code was loaded.
-     *
-     * @param Module $loadModule
-     */
-    public function setLoadModule(Module $loadModule)
-    {
-    }
-    /**
-     * @return Module
-     */
-    public function getLoadModule()
-    {
-    }
-    /**
-     * An un-mangled function name, if `function_name` is mangled. To get
-     * information about name mangling, run [this
-     * search](https://www.google.com/search?q=cxx+name+mangling). The name can be
-     * fully-qualified (up to 1024 bytes).
-     *
-     * @param TruncatableString $originalFunctionName
-     */
-    public function setOriginalFunctionName(TruncatableString $originalFunctionName)
-    {
-    }
-    /**
-     * @return TruncatableString
-     */
-    public function getOriginalFunctionName()
-    {
-    }
-    /**
-     * The version of the deployed source code (up to 128 bytes).
-     *
-     * @param TruncatableString $sourceVersion
-     */
-    public function setSourceVersion(TruncatableString $sourceVersion)
-    {
-    }
-    /**
-     * @return TruncatableString
-     */
-    public function getSourceVersion()
+    class Google_Service_CloudTrace_StackFrame extends \Google\Service\CloudTrace\StackFrame
     {
     }
 }

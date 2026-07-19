@@ -21,129 +21,138 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class NetworkInterface extends \Google\Model
-{
-    /**
-     * An unspecified network tier. Will be used as PREMIUM.
-     */
-    public const NETWORK_TIER_COMPUTE_ENGINE_NETWORK_TIER_UNSPECIFIED = 'COMPUTE_ENGINE_NETWORK_TIER_UNSPECIFIED';
-    /**
-     * A standard network tier.
-     */
-    public const NETWORK_TIER_NETWORK_TIER_STANDARD = 'NETWORK_TIER_STANDARD';
-    /**
-     * A premium network tier.
-     */
-    public const NETWORK_TIER_NETWORK_TIER_PREMIUM = 'NETWORK_TIER_PREMIUM';
-    /**
-     * Optional. The external IP to define in the NIC.
-     *
-     * @var string
-     */
-    public $externalIp;
-    /**
-     * Optional. The internal IP to define in the NIC. The formats accepted are:
-     * `ephemeral` \ ipv4 address \ a named address resource full path.
-     *
-     * @var string
-     */
-    public $internalIp;
-    /**
-     * Optional. The network to connect the NIC to.
-     *
-     * @var string
-     */
-    public $network;
-    /**
-     * Optional. The networking tier used for optimizing connectivity between
-     * instances and systems on the internet. Applies only for external ephemeral
-     * IP addresses. If left empty, will default to PREMIUM.
-     *
-     * @var string
-     */
-    public $networkTier;
-    /**
-     * Optional. The subnetwork to connect the NIC to.
-     *
-     * @var string
-     */
-    public $subnetwork;
-    /**
-     * Optional. The external IP to define in the NIC.
-     *
-     * @param string $externalIp
-     */
-    public function setExternalIp($externalIp)
+namespace Google\Service\VMMigrationService {
+    class NetworkInterface extends \Google\Model
     {
+        /**
+         * An unspecified network tier. Will be used as PREMIUM.
+         */
+        public const NETWORK_TIER_COMPUTE_ENGINE_NETWORK_TIER_UNSPECIFIED = 'COMPUTE_ENGINE_NETWORK_TIER_UNSPECIFIED';
+        /**
+         * A standard network tier.
+         */
+        public const NETWORK_TIER_NETWORK_TIER_STANDARD = 'NETWORK_TIER_STANDARD';
+        /**
+         * A premium network tier.
+         */
+        public const NETWORK_TIER_NETWORK_TIER_PREMIUM = 'NETWORK_TIER_PREMIUM';
+        /**
+         * Optional. The external IP to define in the NIC.
+         *
+         * @var string
+         */
+        public $externalIp;
+        /**
+         * Optional. The internal IP to define in the NIC. The formats accepted are:
+         * `ephemeral` \ ipv4 address \ a named address resource full path.
+         *
+         * @var string
+         */
+        public $internalIp;
+        /**
+         * Optional. The network to connect the NIC to.
+         *
+         * @var string
+         */
+        public $network;
+        /**
+         * Optional. The networking tier used for optimizing connectivity between
+         * instances and systems on the internet. Applies only for external ephemeral
+         * IP addresses. If left empty, will default to PREMIUM.
+         *
+         * @var string
+         */
+        public $networkTier;
+        /**
+         * Optional. The subnetwork to connect the NIC to.
+         *
+         * @var string
+         */
+        public $subnetwork;
+        /**
+         * Optional. The external IP to define in the NIC.
+         *
+         * @param string $externalIp
+         */
+        public function setExternalIp($externalIp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExternalIp()
+        {
+        }
+        /**
+         * Optional. The internal IP to define in the NIC. The formats accepted are:
+         * `ephemeral` \ ipv4 address \ a named address resource full path.
+         *
+         * @param string $internalIp
+         */
+        public function setInternalIp($internalIp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInternalIp()
+        {
+        }
+        /**
+         * Optional. The network to connect the NIC to.
+         *
+         * @param string $network
+         */
+        public function setNetwork($network)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetwork()
+        {
+        }
+        /**
+         * Optional. The networking tier used for optimizing connectivity between
+         * instances and systems on the internet. Applies only for external ephemeral
+         * IP addresses. If left empty, will default to PREMIUM.
+         *
+         * Accepted values: COMPUTE_ENGINE_NETWORK_TIER_UNSPECIFIED,
+         * NETWORK_TIER_STANDARD, NETWORK_TIER_PREMIUM
+         *
+         * @param self::NETWORK_TIER_* $networkTier
+         */
+        public function setNetworkTier($networkTier)
+        {
+        }
+        /**
+         * @return self::NETWORK_TIER_*
+         */
+        public function getNetworkTier()
+        {
+        }
+        /**
+         * Optional. The subnetwork to connect the NIC to.
+         *
+         * @param string $subnetwork
+         */
+        public function setSubnetwork($subnetwork)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubnetwork()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\VMMigrationService\NetworkInterface registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExternalIp()
-    {
-    }
-    /**
-     * Optional. The internal IP to define in the NIC. The formats accepted are:
-     * `ephemeral` \ ipv4 address \ a named address resource full path.
-     *
-     * @param string $internalIp
-     */
-    public function setInternalIp($internalIp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInternalIp()
-    {
-    }
-    /**
-     * Optional. The network to connect the NIC to.
-     *
-     * @param string $network
-     */
-    public function setNetwork($network)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNetwork()
-    {
-    }
-    /**
-     * Optional. The networking tier used for optimizing connectivity between
-     * instances and systems on the internet. Applies only for external ephemeral
-     * IP addresses. If left empty, will default to PREMIUM.
-     *
-     * Accepted values: COMPUTE_ENGINE_NETWORK_TIER_UNSPECIFIED,
-     * NETWORK_TIER_STANDARD, NETWORK_TIER_PREMIUM
-     *
-     * @param self::NETWORK_TIER_* $networkTier
-     */
-    public function setNetworkTier($networkTier)
-    {
-    }
-    /**
-     * @return self::NETWORK_TIER_*
-     */
-    public function getNetworkTier()
-    {
-    }
-    /**
-     * Optional. The subnetwork to connect the NIC to.
-     *
-     * @param string $subnetwork
-     */
-    public function setSubnetwork($subnetwork)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubnetwork()
+    class Google_Service_VMMigrationService_NetworkInterface extends \Google\Service\VMMigrationService\NetworkInterface
     {
     }
 }

@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FactCheckTools;
-
-class GoogleFactcheckingFactchecktoolsV1alpha1Claim extends \Google\Collection
-{
-    protected $collection_key = 'claimReview';
-    /**
-     * The date that the claim was made.
-     *
-     * @var string
-     */
-    public $claimDate;
-    protected $claimReviewType = GoogleFactcheckingFactchecktoolsV1alpha1ClaimReview::class;
-    protected $claimReviewDataType = 'array';
-    /**
-     * A person or organization stating the claim. For instance, "John Doe".
-     *
-     * @var string
-     */
-    public $claimant;
-    /**
-     * The claim text. For instance, "Crime has doubled in the last 2 years."
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * The date that the claim was made.
-     *
-     * @param string $claimDate
-     */
-    public function setClaimDate($claimDate)
+namespace Google\Service\FactCheckTools {
+    class GoogleFactcheckingFactchecktoolsV1alpha1Claim extends \Google\Collection
     {
+        protected $collection_key = 'claimReview';
+        /**
+         * The date that the claim was made.
+         *
+         * @var string
+         */
+        public $claimDate;
+        protected $claimReviewType = GoogleFactcheckingFactchecktoolsV1alpha1ClaimReview::class;
+        protected $claimReviewDataType = 'array';
+        /**
+         * A person or organization stating the claim. For instance, "John Doe".
+         *
+         * @var string
+         */
+        public $claimant;
+        /**
+         * The claim text. For instance, "Crime has doubled in the last 2 years."
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * The date that the claim was made.
+         *
+         * @param string $claimDate
+         */
+        public function setClaimDate($claimDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClaimDate()
+        {
+        }
+        /**
+         * One or more reviews of this claim (namely, a fact-checking article).
+         *
+         * @param GoogleFactcheckingFactchecktoolsV1alpha1ClaimReview[] $claimReview
+         */
+        public function setClaimReview($claimReview)
+        {
+        }
+        /**
+         * @return GoogleFactcheckingFactchecktoolsV1alpha1ClaimReview[]
+         */
+        public function getClaimReview()
+        {
+        }
+        /**
+         * A person or organization stating the claim. For instance, "John Doe".
+         *
+         * @param string $claimant
+         */
+        public function setClaimant($claimant)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClaimant()
+        {
+        }
+        /**
+         * The claim text. For instance, "Crime has doubled in the last 2 years."
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\FactCheckTools\GoogleFactcheckingFactchecktoolsV1alpha1Claim registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClaimDate()
-    {
-    }
-    /**
-     * One or more reviews of this claim (namely, a fact-checking article).
-     *
-     * @param GoogleFactcheckingFactchecktoolsV1alpha1ClaimReview[] $claimReview
-     */
-    public function setClaimReview($claimReview)
-    {
-    }
-    /**
-     * @return GoogleFactcheckingFactchecktoolsV1alpha1ClaimReview[]
-     */
-    public function getClaimReview()
-    {
-    }
-    /**
-     * A person or organization stating the claim. For instance, "John Doe".
-     *
-     * @param string $claimant
-     */
-    public function setClaimant($claimant)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClaimant()
-    {
-    }
-    /**
-     * The claim text. For instance, "Crime has doubled in the last 2 years."
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_FactCheckTools_GoogleFactcheckingFactchecktoolsV1alpha1Claim extends \Google\Service\FactCheckTools\GoogleFactcheckingFactchecktoolsV1alpha1Claim
     {
     }
 }

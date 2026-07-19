@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class DimensionDimensionValue extends \Google\Model
-{
-    public $id;
-    public $name;
-    public $percentage;
-    public function setId($id)
+namespace Google\Service\AdExchangeBuyer {
+    class DimensionDimensionValue extends \Google\Model
     {
+        public $id;
+        public $name;
+        public $percentage;
+        public function setId($id)
+        {
+        }
+        public function getId()
+        {
+        }
+        public function setName($name)
+        {
+        }
+        public function getName()
+        {
+        }
+        public function setPercentage($percentage)
+        {
+        }
+        public function getPercentage()
+        {
+        }
     }
-    public function getId()
-    {
-    }
-    public function setName($name)
-    {
-    }
-    public function getName()
-    {
-    }
-    public function setPercentage($percentage)
-    {
-    }
-    public function getPercentage()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\DimensionDimensionValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AdExchangeBuyer_DimensionDimensionValue extends \Google\Service\AdExchangeBuyer\DimensionDimensionValue
     {
     }
 }

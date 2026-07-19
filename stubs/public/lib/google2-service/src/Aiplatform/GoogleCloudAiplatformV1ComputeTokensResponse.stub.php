@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ComputeTokensResponse extends \Google\Collection
-{
-    protected $collection_key = 'tokensInfo';
-    protected $tokensInfoType = GoogleCloudAiplatformV1TokensInfo::class;
-    protected $tokensInfoDataType = 'array';
-    /**
-     * Lists of tokens info from the input. A ComputeTokensRequest could have
-     * multiple instances with a prompt in each instance. We also need to return
-     * lists of tokens info for the request with multiple instances.
-     *
-     * @param GoogleCloudAiplatformV1TokensInfo[] $tokensInfo
-     */
-    public function setTokensInfo($tokensInfo)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ComputeTokensResponse extends \Google\Collection
     {
+        protected $collection_key = 'tokensInfo';
+        protected $tokensInfoType = GoogleCloudAiplatformV1TokensInfo::class;
+        protected $tokensInfoDataType = 'array';
+        /**
+         * Lists of tokens info from the input. A ComputeTokensRequest could have
+         * multiple instances with a prompt in each instance. We also need to return
+         * lists of tokens info for the request with multiple instances.
+         *
+         * @param GoogleCloudAiplatformV1TokensInfo[] $tokensInfo
+         */
+        public function setTokensInfo($tokensInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1TokensInfo[]
+         */
+        public function getTokensInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1TokensInfo[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ComputeTokensResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTokensInfo()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ComputeTokensResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ComputeTokensResponse
     {
     }
 }

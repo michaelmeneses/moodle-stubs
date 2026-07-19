@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class Hl7V2StoreMetrics extends \Google\Collection
-{
-    protected $collection_key = 'metrics';
-    protected $metricsType = Hl7V2StoreMetric::class;
-    protected $metricsDataType = 'array';
-    /**
-     * The resource name of the HL7v2 store to get metrics for, in the format
-     * `projects/{project_id}/datasets/{dataset_id}/hl7V2Stores/{hl7v2_store_id}`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * List of HL7v2 store metrics by message type.
-     *
-     * @param Hl7V2StoreMetric[] $metrics
-     */
-    public function setMetrics($metrics)
+namespace Google\Service\CloudHealthcare {
+    class Hl7V2StoreMetrics extends \Google\Collection
     {
+        protected $collection_key = 'metrics';
+        protected $metricsType = Hl7V2StoreMetric::class;
+        protected $metricsDataType = 'array';
+        /**
+         * The resource name of the HL7v2 store to get metrics for, in the format
+         * `projects/{project_id}/datasets/{dataset_id}/hl7V2Stores/{hl7v2_store_id}`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * List of HL7v2 store metrics by message type.
+         *
+         * @param Hl7V2StoreMetric[] $metrics
+         */
+        public function setMetrics($metrics)
+        {
+        }
+        /**
+         * @return Hl7V2StoreMetric[]
+         */
+        public function getMetrics()
+        {
+        }
+        /**
+         * The resource name of the HL7v2 store to get metrics for, in the format
+         * `projects/{project_id}/datasets/{dataset_id}/hl7V2Stores/{hl7v2_store_id}`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Hl7V2StoreMetric[]
+     * Runtime class alias of \Google\Service\CloudHealthcare\Hl7V2StoreMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetrics()
-    {
-    }
-    /**
-     * The resource name of the HL7v2 store to get metrics for, in the format
-     * `projects/{project_id}/datasets/{dataset_id}/hl7V2Stores/{hl7v2_store_id}`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_CloudHealthcare_Hl7V2StoreMetrics extends \Google\Service\CloudHealthcare\Hl7V2StoreMetrics
     {
     }
 }

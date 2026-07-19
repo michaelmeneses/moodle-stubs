@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class AccessCredentials extends \Google\Model
-{
-    /**
-     * OAuth access token.
-     *
-     * @var string
-     */
-    public $accessToken;
-    /**
-     * Duration till the access token expires.
-     *
-     * @var string
-     */
-    public $expiresIn;
-    /**
-     * OAuth refresh token.
-     *
-     * @var string
-     */
-    public $refreshToken;
-    /**
-     * OAuth access token.
-     *
-     * @param string $accessToken
-     */
-    public function setAccessToken($accessToken)
+namespace Google\Service\Connectors {
+    class AccessCredentials extends \Google\Model
     {
+        /**
+         * OAuth access token.
+         *
+         * @var string
+         */
+        public $accessToken;
+        /**
+         * Duration till the access token expires.
+         *
+         * @var string
+         */
+        public $expiresIn;
+        /**
+         * OAuth refresh token.
+         *
+         * @var string
+         */
+        public $refreshToken;
+        /**
+         * OAuth access token.
+         *
+         * @param string $accessToken
+         */
+        public function setAccessToken($accessToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccessToken()
+        {
+        }
+        /**
+         * Duration till the access token expires.
+         *
+         * @param string $expiresIn
+         */
+        public function setExpiresIn($expiresIn)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpiresIn()
+        {
+        }
+        /**
+         * OAuth refresh token.
+         *
+         * @param string $refreshToken
+         */
+        public function setRefreshToken($refreshToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRefreshToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Connectors\AccessCredentials registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessToken()
-    {
-    }
-    /**
-     * Duration till the access token expires.
-     *
-     * @param string $expiresIn
-     */
-    public function setExpiresIn($expiresIn)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpiresIn()
-    {
-    }
-    /**
-     * OAuth refresh token.
-     *
-     * @param string $refreshToken
-     */
-    public function setRefreshToken($refreshToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRefreshToken()
+    class Google_Service_Connectors_AccessCredentials extends \Google\Service\Connectors\AccessCredentials
     {
     }
 }

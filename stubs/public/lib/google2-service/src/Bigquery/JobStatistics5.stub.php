@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class JobStatistics5 extends \Google\Model
-{
-    /**
-     * Output only. Number of logical bytes copied to the destination table.
-     *
-     * @var string
-     */
-    public $copiedLogicalBytes;
-    /**
-     * Output only. Number of rows copied to the destination table.
-     *
-     * @var string
-     */
-    public $copiedRows;
-    /**
-     * Output only. Number of logical bytes copied to the destination table.
-     *
-     * @param string $copiedLogicalBytes
-     */
-    public function setCopiedLogicalBytes($copiedLogicalBytes)
+namespace Google\Service\Bigquery {
+    class JobStatistics5 extends \Google\Model
     {
+        /**
+         * Output only. Number of logical bytes copied to the destination table.
+         *
+         * @var string
+         */
+        public $copiedLogicalBytes;
+        /**
+         * Output only. Number of rows copied to the destination table.
+         *
+         * @var string
+         */
+        public $copiedRows;
+        /**
+         * Output only. Number of logical bytes copied to the destination table.
+         *
+         * @param string $copiedLogicalBytes
+         */
+        public function setCopiedLogicalBytes($copiedLogicalBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCopiedLogicalBytes()
+        {
+        }
+        /**
+         * Output only. Number of rows copied to the destination table.
+         *
+         * @param string $copiedRows
+         */
+        public function setCopiedRows($copiedRows)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCopiedRows()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\JobStatistics5 registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCopiedLogicalBytes()
-    {
-    }
-    /**
-     * Output only. Number of rows copied to the destination table.
-     *
-     * @param string $copiedRows
-     */
-    public function setCopiedRows($copiedRows)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCopiedRows()
+    class Google_Service_Bigquery_JobStatistics5 extends \Google\Service\Bigquery\JobStatistics5
     {
     }
 }

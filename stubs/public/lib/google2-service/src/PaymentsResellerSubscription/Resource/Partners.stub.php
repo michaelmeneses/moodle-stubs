@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription\Resource;
-
-/**
- * The "partners" collection of methods.
- * Typical usage is:
- *  <code>
- *   $paymentsresellersubscriptionService = new Google\Service\PaymentsResellerSubscription(...);
- *   $partners = $paymentsresellersubscriptionService->partners;
- *  </code>
- */
-class Partners extends \Google\Service\Resource
-{
+namespace Google\Service\PaymentsResellerSubscription\Resource {
+    /**
+     * The "partners" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $paymentsresellersubscriptionService = new Google\Service\PaymentsResellerSubscription(...);
+     *   $partners = $paymentsresellersubscriptionService->partners;
+     *  </code>
+     */
+    class Partners extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\Resource\Partners registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_PaymentsResellerSubscription_Resource_Partners extends \Google\Service\PaymentsResellerSubscription\Resource\Partners
+    {
+    }
 }

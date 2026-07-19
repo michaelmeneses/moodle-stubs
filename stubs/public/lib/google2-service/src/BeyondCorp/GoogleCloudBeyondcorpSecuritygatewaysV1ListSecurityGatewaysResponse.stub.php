@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class GoogleCloudBeyondcorpSecuritygatewaysV1ListSecurityGatewaysResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    /**
-     * A token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $securityGatewaysType = GoogleCloudBeyondcorpSecuritygatewaysV1SecurityGateway::class;
-    protected $securityGatewaysDataType = 'array';
-    /**
-     * A list of locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * A token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\BeyondCorp {
+    class GoogleCloudBeyondcorpSecuritygatewaysV1ListSecurityGatewaysResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        /**
+         * A token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $securityGatewaysType = GoogleCloudBeyondcorpSecuritygatewaysV1SecurityGateway::class;
+        protected $securityGatewaysDataType = 'array';
+        /**
+         * A list of locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * A token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * A list of BeyondCorp SecurityGateway in the project.
+         *
+         * @param GoogleCloudBeyondcorpSecuritygatewaysV1SecurityGateway[] $securityGateways
+         */
+        public function setSecurityGateways($securityGateways)
+        {
+        }
+        /**
+         * @return GoogleCloudBeyondcorpSecuritygatewaysV1SecurityGateway[]
+         */
+        public function getSecurityGateways()
+        {
+        }
+        /**
+         * A list of locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BeyondCorp\GoogleCloudBeyondcorpSecuritygatewaysV1ListSecurityGatewaysResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * A list of BeyondCorp SecurityGateway in the project.
-     *
-     * @param GoogleCloudBeyondcorpSecuritygatewaysV1SecurityGateway[] $securityGateways
-     */
-    public function setSecurityGateways($securityGateways)
-    {
-    }
-    /**
-     * @return GoogleCloudBeyondcorpSecuritygatewaysV1SecurityGateway[]
-     */
-    public function getSecurityGateways()
-    {
-    }
-    /**
-     * A list of locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_BeyondCorp_GoogleCloudBeyondcorpSecuritygatewaysV1ListSecurityGatewaysResponse extends \Google\Service\BeyondCorp\GoogleCloudBeyondcorpSecuritygatewaysV1ListSecurityGatewaysResponse
     {
     }
 }

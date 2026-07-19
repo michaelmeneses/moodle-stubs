@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaImageSegmentationAnnotation extends \Google\Model
-{
-    protected $maskAnnotationType = GoogleCloudAiplatformV1SchemaImageSegmentationAnnotationMaskAnnotation::class;
-    protected $maskAnnotationDataType = '';
-    protected $polygonAnnotationType = GoogleCloudAiplatformV1SchemaImageSegmentationAnnotationPolygonAnnotation::class;
-    protected $polygonAnnotationDataType = '';
-    protected $polylineAnnotationType = GoogleCloudAiplatformV1SchemaImageSegmentationAnnotationPolylineAnnotation::class;
-    protected $polylineAnnotationDataType = '';
-    /**
-     * Mask based segmentation annotation. Only one mask annotation can exist for
-     * one image.
-     *
-     * @param GoogleCloudAiplatformV1SchemaImageSegmentationAnnotationMaskAnnotation $maskAnnotation
-     */
-    public function setMaskAnnotation(GoogleCloudAiplatformV1SchemaImageSegmentationAnnotationMaskAnnotation $maskAnnotation)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaImageSegmentationAnnotation extends \Google\Model
     {
+        protected $maskAnnotationType = GoogleCloudAiplatformV1SchemaImageSegmentationAnnotationMaskAnnotation::class;
+        protected $maskAnnotationDataType = '';
+        protected $polygonAnnotationType = GoogleCloudAiplatformV1SchemaImageSegmentationAnnotationPolygonAnnotation::class;
+        protected $polygonAnnotationDataType = '';
+        protected $polylineAnnotationType = GoogleCloudAiplatformV1SchemaImageSegmentationAnnotationPolylineAnnotation::class;
+        protected $polylineAnnotationDataType = '';
+        /**
+         * Mask based segmentation annotation. Only one mask annotation can exist for
+         * one image.
+         *
+         * @param GoogleCloudAiplatformV1SchemaImageSegmentationAnnotationMaskAnnotation $maskAnnotation
+         */
+        public function setMaskAnnotation(GoogleCloudAiplatformV1SchemaImageSegmentationAnnotationMaskAnnotation $maskAnnotation)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SchemaImageSegmentationAnnotationMaskAnnotation
+         */
+        public function getMaskAnnotation()
+        {
+        }
+        /**
+         * Polygon annotation.
+         *
+         * @param GoogleCloudAiplatformV1SchemaImageSegmentationAnnotationPolygonAnnotation $polygonAnnotation
+         */
+        public function setPolygonAnnotation(GoogleCloudAiplatformV1SchemaImageSegmentationAnnotationPolygonAnnotation $polygonAnnotation)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SchemaImageSegmentationAnnotationPolygonAnnotation
+         */
+        public function getPolygonAnnotation()
+        {
+        }
+        /**
+         * Polyline annotation.
+         *
+         * @param GoogleCloudAiplatformV1SchemaImageSegmentationAnnotationPolylineAnnotation $polylineAnnotation
+         */
+        public function setPolylineAnnotation(GoogleCloudAiplatformV1SchemaImageSegmentationAnnotationPolylineAnnotation $polylineAnnotation)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SchemaImageSegmentationAnnotationPolylineAnnotation
+         */
+        public function getPolylineAnnotation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1SchemaImageSegmentationAnnotationMaskAnnotation
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaImageSegmentationAnnotation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaskAnnotation()
-    {
-    }
-    /**
-     * Polygon annotation.
-     *
-     * @param GoogleCloudAiplatformV1SchemaImageSegmentationAnnotationPolygonAnnotation $polygonAnnotation
-     */
-    public function setPolygonAnnotation(GoogleCloudAiplatformV1SchemaImageSegmentationAnnotationPolygonAnnotation $polygonAnnotation)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1SchemaImageSegmentationAnnotationPolygonAnnotation
-     */
-    public function getPolygonAnnotation()
-    {
-    }
-    /**
-     * Polyline annotation.
-     *
-     * @param GoogleCloudAiplatformV1SchemaImageSegmentationAnnotationPolylineAnnotation $polylineAnnotation
-     */
-    public function setPolylineAnnotation(GoogleCloudAiplatformV1SchemaImageSegmentationAnnotationPolylineAnnotation $polylineAnnotation)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1SchemaImageSegmentationAnnotationPolylineAnnotation
-     */
-    public function getPolylineAnnotation()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaImageSegmentationAnnotation extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaImageSegmentationAnnotation
     {
     }
 }

@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSupport;
-
-class Escalation extends \Google\Model
-{
-    /**
-     * The escalation reason is in an unknown state or has not been specified.
-     */
-    public const REASON_REASON_UNSPECIFIED = 'REASON_UNSPECIFIED';
-    /**
-     * The case is taking too long to resolve.
-     */
-    public const REASON_RESOLUTION_TIME = 'RESOLUTION_TIME';
-    /**
-     * The support agent does not have the expertise required to successfully
-     * resolve the issue.
-     */
-    public const REASON_TECHNICAL_EXPERTISE = 'TECHNICAL_EXPERTISE';
-    /**
-     * The issue is having a significant business impact.
-     */
-    public const REASON_BUSINESS_IMPACT = 'BUSINESS_IMPACT';
-    /**
-     * Required. A free text description to accompany the `reason` field above.
-     * Provides additional context on why the case is being escalated.
-     *
-     * @var string
-     */
-    public $justification;
-    /**
-     * Required. The reason why the Case is being escalated.
-     *
-     * @var string
-     */
-    public $reason;
-    /**
-     * Required. A free text description to accompany the `reason` field above.
-     * Provides additional context on why the case is being escalated.
-     *
-     * @param string $justification
-     */
-    public function setJustification($justification)
+namespace Google\Service\CloudSupport {
+    class Escalation extends \Google\Model
     {
+        /**
+         * The escalation reason is in an unknown state or has not been specified.
+         */
+        public const REASON_REASON_UNSPECIFIED = 'REASON_UNSPECIFIED';
+        /**
+         * The case is taking too long to resolve.
+         */
+        public const REASON_RESOLUTION_TIME = 'RESOLUTION_TIME';
+        /**
+         * The support agent does not have the expertise required to successfully
+         * resolve the issue.
+         */
+        public const REASON_TECHNICAL_EXPERTISE = 'TECHNICAL_EXPERTISE';
+        /**
+         * The issue is having a significant business impact.
+         */
+        public const REASON_BUSINESS_IMPACT = 'BUSINESS_IMPACT';
+        /**
+         * Required. A free text description to accompany the `reason` field above.
+         * Provides additional context on why the case is being escalated.
+         *
+         * @var string
+         */
+        public $justification;
+        /**
+         * Required. The reason why the Case is being escalated.
+         *
+         * @var string
+         */
+        public $reason;
+        /**
+         * Required. A free text description to accompany the `reason` field above.
+         * Provides additional context on why the case is being escalated.
+         *
+         * @param string $justification
+         */
+        public function setJustification($justification)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJustification()
+        {
+        }
+        /**
+         * Required. The reason why the Case is being escalated.
+         *
+         * Accepted values: REASON_UNSPECIFIED, RESOLUTION_TIME, TECHNICAL_EXPERTISE,
+         * BUSINESS_IMPACT
+         *
+         * @param self::REASON_* $reason
+         */
+        public function setReason($reason)
+        {
+        }
+        /**
+         * @return self::REASON_*
+         */
+        public function getReason()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSupport\Escalation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJustification()
-    {
-    }
-    /**
-     * Required. The reason why the Case is being escalated.
-     *
-     * Accepted values: REASON_UNSPECIFIED, RESOLUTION_TIME, TECHNICAL_EXPERTISE,
-     * BUSINESS_IMPACT
-     *
-     * @param self::REASON_* $reason
-     */
-    public function setReason($reason)
-    {
-    }
-    /**
-     * @return self::REASON_*
-     */
-    public function getReason()
+    class Google_Service_CloudSupport_Escalation extends \Google\Service\CloudSupport\Escalation
     {
     }
 }

@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class Menu extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = MenuItem::class;
-    protected $itemsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $label;
-    /**
-     * @var string
-     */
-    public $name;
-    protected $onChangeType = FormAction::class;
-    protected $onChangeDataType = '';
-    /**
-     * @param MenuItem[]
-     */
-    public function setItems($items)
+namespace Google\Service\CloudSearch {
+    class Menu extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = MenuItem::class;
+        protected $itemsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $label;
+        /**
+         * @var string
+         */
+        public $name;
+        protected $onChangeType = FormAction::class;
+        protected $onChangeDataType = '';
+        /**
+         * @param MenuItem[]
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return MenuItem[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLabel($label)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabel()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param FormAction
+         */
+        public function setOnChange(FormAction $onChange)
+        {
+        }
+        /**
+         * @return FormAction
+         */
+        public function getOnChange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MenuItem[]
+     * Runtime class alias of \Google\Service\CloudSearch\Menu registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLabel($label)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLabel()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param FormAction
-     */
-    public function setOnChange(FormAction $onChange)
-    {
-    }
-    /**
-     * @return FormAction
-     */
-    public function getOnChange()
+    class Google_Service_CloudSearch_Menu extends \Google\Service\CloudSearch\Menu
     {
     }
 }

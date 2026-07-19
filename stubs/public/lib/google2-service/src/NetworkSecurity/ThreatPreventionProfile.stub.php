@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity;
-
-class ThreatPreventionProfile extends \Google\Collection
-{
-    protected $collection_key = 'threatOverrides';
-    protected $antivirusOverridesType = AntivirusOverride::class;
-    protected $antivirusOverridesDataType = 'array';
-    protected $severityOverridesType = SeverityOverride::class;
-    protected $severityOverridesDataType = 'array';
-    protected $threatOverridesType = ThreatOverride::class;
-    protected $threatOverridesDataType = 'array';
-    /**
-     * Optional. Configuration for overriding antivirus actions per protocol.
-     *
-     * @param AntivirusOverride[] $antivirusOverrides
-     */
-    public function setAntivirusOverrides($antivirusOverrides)
+namespace Google\Service\NetworkSecurity {
+    class ThreatPreventionProfile extends \Google\Collection
     {
+        protected $collection_key = 'threatOverrides';
+        protected $antivirusOverridesType = AntivirusOverride::class;
+        protected $antivirusOverridesDataType = 'array';
+        protected $severityOverridesType = SeverityOverride::class;
+        protected $severityOverridesDataType = 'array';
+        protected $threatOverridesType = ThreatOverride::class;
+        protected $threatOverridesDataType = 'array';
+        /**
+         * Optional. Configuration for overriding antivirus actions per protocol.
+         *
+         * @param AntivirusOverride[] $antivirusOverrides
+         */
+        public function setAntivirusOverrides($antivirusOverrides)
+        {
+        }
+        /**
+         * @return AntivirusOverride[]
+         */
+        public function getAntivirusOverrides()
+        {
+        }
+        /**
+         * Optional. Configuration for overriding threats actions by severity match.
+         *
+         * @param SeverityOverride[] $severityOverrides
+         */
+        public function setSeverityOverrides($severityOverrides)
+        {
+        }
+        /**
+         * @return SeverityOverride[]
+         */
+        public function getSeverityOverrides()
+        {
+        }
+        /**
+         * Optional. Configuration for overriding threats actions by threat_id match.
+         * If a threat is matched both by configuration provided in severity_overrides
+         * and threat_overrides, the threat_overrides action is applied.
+         *
+         * @param ThreatOverride[] $threatOverrides
+         */
+        public function setThreatOverrides($threatOverrides)
+        {
+        }
+        /**
+         * @return ThreatOverride[]
+         */
+        public function getThreatOverrides()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AntivirusOverride[]
+     * Runtime class alias of \Google\Service\NetworkSecurity\ThreatPreventionProfile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAntivirusOverrides()
-    {
-    }
-    /**
-     * Optional. Configuration for overriding threats actions by severity match.
-     *
-     * @param SeverityOverride[] $severityOverrides
-     */
-    public function setSeverityOverrides($severityOverrides)
-    {
-    }
-    /**
-     * @return SeverityOverride[]
-     */
-    public function getSeverityOverrides()
-    {
-    }
-    /**
-     * Optional. Configuration for overriding threats actions by threat_id match.
-     * If a threat is matched both by configuration provided in severity_overrides
-     * and threat_overrides, the threat_overrides action is applied.
-     *
-     * @param ThreatOverride[] $threatOverrides
-     */
-    public function setThreatOverrides($threatOverrides)
-    {
-    }
-    /**
-     * @return ThreatOverride[]
-     */
-    public function getThreatOverrides()
+    class Google_Service_NetworkSecurity_ThreatPreventionProfile extends \Google\Service\NetworkSecurity\ThreatPreventionProfile
     {
     }
 }

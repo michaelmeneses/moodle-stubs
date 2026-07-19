@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class LookupMigrationJobObjectRequest extends \Google\Model
-{
-    protected $sourceObjectIdentifierType = SourceObjectIdentifier::class;
-    protected $sourceObjectIdentifierDataType = '';
-    /**
-     * Required. The source object identifier which maps to the migration job
-     * object.
-     *
-     * @param SourceObjectIdentifier $sourceObjectIdentifier
-     */
-    public function setSourceObjectIdentifier(SourceObjectIdentifier $sourceObjectIdentifier)
+namespace Google\Service\DatabaseMigrationService {
+    class LookupMigrationJobObjectRequest extends \Google\Model
     {
+        protected $sourceObjectIdentifierType = SourceObjectIdentifier::class;
+        protected $sourceObjectIdentifierDataType = '';
+        /**
+         * Required. The source object identifier which maps to the migration job
+         * object.
+         *
+         * @param SourceObjectIdentifier $sourceObjectIdentifier
+         */
+        public function setSourceObjectIdentifier(SourceObjectIdentifier $sourceObjectIdentifier)
+        {
+        }
+        /**
+         * @return SourceObjectIdentifier
+         */
+        public function getSourceObjectIdentifier()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SourceObjectIdentifier
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\LookupMigrationJobObjectRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSourceObjectIdentifier()
+    class Google_Service_DatabaseMigrationService_LookupMigrationJobObjectRequest extends \Google\Service\DatabaseMigrationService\LookupMigrationJobObjectRequest
     {
     }
 }

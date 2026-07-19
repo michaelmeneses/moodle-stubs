@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RagFileParsingConfig extends \Google\Model
-{
-    protected $layoutParserType = GoogleCloudAiplatformV1RagFileParsingConfigLayoutParser::class;
-    protected $layoutParserDataType = '';
-    protected $llmParserType = GoogleCloudAiplatformV1RagFileParsingConfigLlmParser::class;
-    protected $llmParserDataType = '';
-    /**
-     * The Layout Parser to use for RagFiles.
-     *
-     * @param GoogleCloudAiplatformV1RagFileParsingConfigLayoutParser $layoutParser
-     */
-    public function setLayoutParser(GoogleCloudAiplatformV1RagFileParsingConfigLayoutParser $layoutParser)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RagFileParsingConfig extends \Google\Model
     {
+        protected $layoutParserType = GoogleCloudAiplatformV1RagFileParsingConfigLayoutParser::class;
+        protected $layoutParserDataType = '';
+        protected $llmParserType = GoogleCloudAiplatformV1RagFileParsingConfigLlmParser::class;
+        protected $llmParserDataType = '';
+        /**
+         * The Layout Parser to use for RagFiles.
+         *
+         * @param GoogleCloudAiplatformV1RagFileParsingConfigLayoutParser $layoutParser
+         */
+        public function setLayoutParser(GoogleCloudAiplatformV1RagFileParsingConfigLayoutParser $layoutParser)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RagFileParsingConfigLayoutParser
+         */
+        public function getLayoutParser()
+        {
+        }
+        /**
+         * The LLM Parser to use for RagFiles.
+         *
+         * @param GoogleCloudAiplatformV1RagFileParsingConfigLlmParser $llmParser
+         */
+        public function setLlmParser(GoogleCloudAiplatformV1RagFileParsingConfigLlmParser $llmParser)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RagFileParsingConfigLlmParser
+         */
+        public function getLlmParser()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1RagFileParsingConfigLayoutParser
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagFileParsingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLayoutParser()
-    {
-    }
-    /**
-     * The LLM Parser to use for RagFiles.
-     *
-     * @param GoogleCloudAiplatformV1RagFileParsingConfigLlmParser $llmParser
-     */
-    public function setLlmParser(GoogleCloudAiplatformV1RagFileParsingConfigLlmParser $llmParser)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1RagFileParsingConfigLlmParser
-     */
-    public function getLlmParser()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RagFileParsingConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagFileParsingConfig
     {
     }
 }

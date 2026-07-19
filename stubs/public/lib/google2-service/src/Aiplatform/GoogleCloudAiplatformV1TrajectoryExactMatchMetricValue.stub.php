@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1TrajectoryExactMatchMetricValue extends \Google\Model
-{
-    /**
-     * Output only. TrajectoryExactMatch score.
-     *
-     * @var float
-     */
-    public $score;
-    /**
-     * Output only. TrajectoryExactMatch score.
-     *
-     * @param float $score
-     */
-    public function setScore($score)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1TrajectoryExactMatchMetricValue extends \Google\Model
     {
+        /**
+         * Output only. TrajectoryExactMatch score.
+         *
+         * @var float
+         */
+        public $score;
+        /**
+         * Output only. TrajectoryExactMatch score.
+         *
+         * @param float $score
+         */
+        public function setScore($score)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getScore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1TrajectoryExactMatchMetricValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getScore()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1TrajectoryExactMatchMetricValue extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1TrajectoryExactMatchMetricValue
     {
     }
 }

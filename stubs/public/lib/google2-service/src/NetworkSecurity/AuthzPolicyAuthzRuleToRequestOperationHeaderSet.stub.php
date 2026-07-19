@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity;
-
-class AuthzPolicyAuthzRuleToRequestOperationHeaderSet extends \Google\Collection
-{
-    protected $collection_key = 'headers';
-    protected $headersType = AuthzPolicyAuthzRuleHeaderMatch::class;
-    protected $headersDataType = 'array';
-    /**
-     * Required. A list of headers to match against in http header. The match can
-     * be one of exact, prefix, suffix, or contains (substring match). The match
-     * follows AND semantics which means all the headers must match. Matches are
-     * always case sensitive unless the ignoreCase is set. Limited to 10 headers
-     * per Authorization Policy.
-     *
-     * @param AuthzPolicyAuthzRuleHeaderMatch[] $headers
-     */
-    public function setHeaders($headers)
+namespace Google\Service\NetworkSecurity {
+    class AuthzPolicyAuthzRuleToRequestOperationHeaderSet extends \Google\Collection
     {
+        protected $collection_key = 'headers';
+        protected $headersType = AuthzPolicyAuthzRuleHeaderMatch::class;
+        protected $headersDataType = 'array';
+        /**
+         * Required. A list of headers to match against in http header. The match can
+         * be one of exact, prefix, suffix, or contains (substring match). The match
+         * follows AND semantics which means all the headers must match. Matches are
+         * always case sensitive unless the ignoreCase is set. Limited to 10 headers
+         * per Authorization Policy.
+         *
+         * @param AuthzPolicyAuthzRuleHeaderMatch[] $headers
+         */
+        public function setHeaders($headers)
+        {
+        }
+        /**
+         * @return AuthzPolicyAuthzRuleHeaderMatch[]
+         */
+        public function getHeaders()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AuthzPolicyAuthzRuleHeaderMatch[]
+     * Runtime class alias of \Google\Service\NetworkSecurity\AuthzPolicyAuthzRuleToRequestOperationHeaderSet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHeaders()
+    class Google_Service_NetworkSecurity_AuthzPolicyAuthzRuleToRequestOperationHeaderSet extends \Google\Service\NetworkSecurity\AuthzPolicyAuthzRuleToRequestOperationHeaderSet
     {
     }
 }

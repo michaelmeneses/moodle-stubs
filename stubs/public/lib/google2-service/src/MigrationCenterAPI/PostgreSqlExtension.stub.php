@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class PostgreSqlExtension extends \Google\Model
-{
-    /**
-     * Required. The extension name.
-     *
-     * @var string
-     */
-    public $extension;
-    /**
-     * Required. The extension version.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Required. The extension name.
-     *
-     * @param string $extension
-     */
-    public function setExtension($extension)
+namespace Google\Service\MigrationCenterAPI {
+    class PostgreSqlExtension extends \Google\Model
     {
+        /**
+         * Required. The extension name.
+         *
+         * @var string
+         */
+        public $extension;
+        /**
+         * Required. The extension version.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Required. The extension name.
+         *
+         * @param string $extension
+         */
+        public function setExtension($extension)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExtension()
+        {
+        }
+        /**
+         * Required. The extension version.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\PostgreSqlExtension registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExtension()
-    {
-    }
-    /**
-     * Required. The extension version.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_MigrationCenterAPI_PostgreSqlExtension extends \Google\Service\MigrationCenterAPI\PostgreSqlExtension
     {
     }
 }

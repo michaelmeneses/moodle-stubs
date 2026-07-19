@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceNetworking;
-
-class CustomErrorRule extends \Google\Model
-{
-    /**
-     * Mark this message as possible payload in error response. Otherwise, objects
-     * of this type will be filtered when they appear in error payload.
-     *
-     * @var bool
-     */
-    public $isErrorType;
-    /**
-     * Selects messages to which this rule applies. Refer to selector for syntax
-     * details.
-     *
-     * @var string
-     */
-    public $selector;
-    /**
-     * Mark this message as possible payload in error response. Otherwise, objects
-     * of this type will be filtered when they appear in error payload.
-     *
-     * @param bool $isErrorType
-     */
-    public function setIsErrorType($isErrorType)
+namespace Google\Service\ServiceNetworking {
+    class CustomErrorRule extends \Google\Model
     {
+        /**
+         * Mark this message as possible payload in error response. Otherwise, objects
+         * of this type will be filtered when they appear in error payload.
+         *
+         * @var bool
+         */
+        public $isErrorType;
+        /**
+         * Selects messages to which this rule applies. Refer to selector for syntax
+         * details.
+         *
+         * @var string
+         */
+        public $selector;
+        /**
+         * Mark this message as possible payload in error response. Otherwise, objects
+         * of this type will be filtered when they appear in error payload.
+         *
+         * @param bool $isErrorType
+         */
+        public function setIsErrorType($isErrorType)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsErrorType()
+        {
+        }
+        /**
+         * Selects messages to which this rule applies. Refer to selector for syntax
+         * details.
+         *
+         * @param string $selector
+         */
+        public function setSelector($selector)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelector()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\ServiceNetworking\CustomErrorRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIsErrorType()
-    {
-    }
-    /**
-     * Selects messages to which this rule applies. Refer to selector for syntax
-     * details.
-     *
-     * @param string $selector
-     */
-    public function setSelector($selector)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelector()
+    class Google_Service_ServiceNetworking_CustomErrorRule extends \Google\Service\ServiceNetworking\CustomErrorRule
     {
     }
 }

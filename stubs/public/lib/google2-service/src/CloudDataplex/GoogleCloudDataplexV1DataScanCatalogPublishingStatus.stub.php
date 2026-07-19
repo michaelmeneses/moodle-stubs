@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataScanCatalogPublishingStatus extends \Google\Model
-{
-    /**
-     * The publishing state is unspecified.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * Publishing to catalog completed successfully.
-     */
-    public const STATE_SUCCEEDED = 'SUCCEEDED';
-    /**
-     * Publish to catalog failed.
-     */
-    public const STATE_FAILED = 'FAILED';
-    /**
-     * Publishing to catalog was skipped.
-     */
-    public const STATE_SKIPPED = 'SKIPPED';
-    /**
-     * Output only. Execution state for publishing.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. Execution state for publishing.
-     *
-     * Accepted values: STATE_UNSPECIFIED, SUCCEEDED, FAILED, SKIPPED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataScanCatalogPublishingStatus extends \Google\Model
     {
+        /**
+         * The publishing state is unspecified.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * Publishing to catalog completed successfully.
+         */
+        public const STATE_SUCCEEDED = 'SUCCEEDED';
+        /**
+         * Publish to catalog failed.
+         */
+        public const STATE_FAILED = 'FAILED';
+        /**
+         * Publishing to catalog was skipped.
+         */
+        public const STATE_SKIPPED = 'SKIPPED';
+        /**
+         * Output only. Execution state for publishing.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. Execution state for publishing.
+         *
+         * Accepted values: STATE_UNSPECIFIED, SUCCEEDED, FAILED, SKIPPED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::STATE_*
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataScanCatalogPublishingStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getState()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataScanCatalogPublishingStatus extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataScanCatalogPublishingStatus
     {
     }
 }

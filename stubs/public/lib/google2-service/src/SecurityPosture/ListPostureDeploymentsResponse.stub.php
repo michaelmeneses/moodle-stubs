@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityPosture;
-
-class ListPostureDeploymentsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    /**
-     * A pagination token. To retrieve the next page of results, call the method
-     * again with this token.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $postureDeploymentsType = PostureDeployment::class;
-    protected $postureDeploymentsDataType = 'array';
-    /**
-     * Locations that were temporarily unavailable and could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * A pagination token. To retrieve the next page of results, call the method
-     * again with this token.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\SecurityPosture {
+    class ListPostureDeploymentsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        /**
+         * A pagination token. To retrieve the next page of results, call the method
+         * again with this token.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $postureDeploymentsType = PostureDeployment::class;
+        protected $postureDeploymentsDataType = 'array';
+        /**
+         * Locations that were temporarily unavailable and could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * A pagination token. To retrieve the next page of results, call the method
+         * again with this token.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of PostureDeployment resources.
+         *
+         * @param PostureDeployment[] $postureDeployments
+         */
+        public function setPostureDeployments($postureDeployments)
+        {
+        }
+        /**
+         * @return PostureDeployment[]
+         */
+        public function getPostureDeployments()
+        {
+        }
+        /**
+         * Locations that were temporarily unavailable and could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityPosture\ListPostureDeploymentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of PostureDeployment resources.
-     *
-     * @param PostureDeployment[] $postureDeployments
-     */
-    public function setPostureDeployments($postureDeployments)
-    {
-    }
-    /**
-     * @return PostureDeployment[]
-     */
-    public function getPostureDeployments()
-    {
-    }
-    /**
-     * Locations that were temporarily unavailable and could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_SecurityPosture_ListPostureDeploymentsResponse extends \Google\Service\SecurityPosture\ListPostureDeploymentsResponse
     {
     }
 }

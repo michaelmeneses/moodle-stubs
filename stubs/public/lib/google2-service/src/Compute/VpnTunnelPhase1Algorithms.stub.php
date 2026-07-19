@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class VpnTunnelPhase1Algorithms extends \Google\Collection
-{
-    protected $collection_key = 'prf';
-    /**
-     * @var string[]
-     */
-    public $dh;
-    /**
-     * @var string[]
-     */
-    public $encryption;
-    /**
-     * @var string[]
-     */
-    public $integrity;
-    /**
-     * @var string[]
-     */
-    public $prf;
-    /**
-     * @param string[] $dh
-     */
-    public function setDh($dh)
+namespace Google\Service\Compute {
+    class VpnTunnelPhase1Algorithms extends \Google\Collection
     {
+        protected $collection_key = 'prf';
+        /**
+         * @var string[]
+         */
+        public $dh;
+        /**
+         * @var string[]
+         */
+        public $encryption;
+        /**
+         * @var string[]
+         */
+        public $integrity;
+        /**
+         * @var string[]
+         */
+        public $prf;
+        /**
+         * @param string[] $dh
+         */
+        public function setDh($dh)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDh()
+        {
+        }
+        /**
+         * @param string[] $encryption
+         */
+        public function setEncryption($encryption)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEncryption()
+        {
+        }
+        /**
+         * @param string[] $integrity
+         */
+        public function setIntegrity($integrity)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIntegrity()
+        {
+        }
+        /**
+         * @param string[] $prf
+         */
+        public function setPrf($prf)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPrf()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Compute\VpnTunnelPhase1Algorithms registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDh()
-    {
-    }
-    /**
-     * @param string[] $encryption
-     */
-    public function setEncryption($encryption)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getEncryption()
-    {
-    }
-    /**
-     * @param string[] $integrity
-     */
-    public function setIntegrity($integrity)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getIntegrity()
-    {
-    }
-    /**
-     * @param string[] $prf
-     */
-    public function setPrf($prf)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPrf()
+    class Google_Service_Compute_VpnTunnelPhase1Algorithms extends \Google\Service\Compute\VpnTunnelPhase1Algorithms
     {
     }
 }

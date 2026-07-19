@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class Metaline extends \Google\Collection
-{
-    protected $collection_key = 'properties';
-    protected $propertiesType = DisplayedProperty::class;
-    protected $propertiesDataType = 'array';
-    /**
-     * The list of displayed properties for the metaline. The maximum number of
-     * properties is 5.
-     *
-     * @param DisplayedProperty[] $properties
-     */
-    public function setProperties($properties)
+namespace Google\Service\CloudSearch {
+    class Metaline extends \Google\Collection
     {
+        protected $collection_key = 'properties';
+        protected $propertiesType = DisplayedProperty::class;
+        protected $propertiesDataType = 'array';
+        /**
+         * The list of displayed properties for the metaline. The maximum number of
+         * properties is 5.
+         *
+         * @param DisplayedProperty[] $properties
+         */
+        public function setProperties($properties)
+        {
+        }
+        /**
+         * @return DisplayedProperty[]
+         */
+        public function getProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DisplayedProperty[]
+     * Runtime class alias of \Google\Service\CloudSearch\Metaline registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProperties()
+    class Google_Service_CloudSearch_Metaline extends \Google\Service\CloudSearch\Metaline
     {
     }
 }

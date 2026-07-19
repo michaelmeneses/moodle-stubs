@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SemanticTile;
-
-class Vertex3DList extends \Google\Collection
-{
-    protected $collection_key = 'zOffsets';
-    public $xOffsets;
-    public $yOffsets;
-    public $zOffsets;
-    public function setXOffsets($xOffsets)
+namespace Google\Service\SemanticTile {
+    class Vertex3DList extends \Google\Collection
     {
+        protected $collection_key = 'zOffsets';
+        public $xOffsets;
+        public $yOffsets;
+        public $zOffsets;
+        public function setXOffsets($xOffsets)
+        {
+        }
+        public function getXOffsets()
+        {
+        }
+        public function setYOffsets($yOffsets)
+        {
+        }
+        public function getYOffsets()
+        {
+        }
+        public function setZOffsets($zOffsets)
+        {
+        }
+        public function getZOffsets()
+        {
+        }
     }
-    public function getXOffsets()
-    {
-    }
-    public function setYOffsets($yOffsets)
-    {
-    }
-    public function getYOffsets()
-    {
-    }
-    public function setZOffsets($zOffsets)
-    {
-    }
-    public function getZOffsets()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\SemanticTile\Vertex3DList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_SemanticTile_Vertex3DList extends \Google\Service\SemanticTile\Vertex3DList
     {
     }
 }

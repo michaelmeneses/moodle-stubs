@@ -8,6 +8,7 @@
  */
 namespace Aws\PartnerCentralChannel;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Partner Central Channel API** service.
  * @method \Aws\Result acceptChannelHandshake(array $args = [])

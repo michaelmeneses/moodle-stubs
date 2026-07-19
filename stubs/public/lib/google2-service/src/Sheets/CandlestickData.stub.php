@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class CandlestickData extends \Google\Model
-{
-    protected $closeSeriesType = CandlestickSeries::class;
-    protected $closeSeriesDataType = '';
-    protected $highSeriesType = CandlestickSeries::class;
-    protected $highSeriesDataType = '';
-    protected $lowSeriesType = CandlestickSeries::class;
-    protected $lowSeriesDataType = '';
-    protected $openSeriesType = CandlestickSeries::class;
-    protected $openSeriesDataType = '';
-    /**
-     * The range data (vertical axis) for the close/final value for each candle.
-     * This is the top of the candle body. If greater than the open value the
-     * candle will be filled. Otherwise the candle will be hollow.
-     *
-     * @param CandlestickSeries $closeSeries
-     */
-    public function setCloseSeries(CandlestickSeries $closeSeries)
+namespace Google\Service\Sheets {
+    class CandlestickData extends \Google\Model
     {
+        protected $closeSeriesType = CandlestickSeries::class;
+        protected $closeSeriesDataType = '';
+        protected $highSeriesType = CandlestickSeries::class;
+        protected $highSeriesDataType = '';
+        protected $lowSeriesType = CandlestickSeries::class;
+        protected $lowSeriesDataType = '';
+        protected $openSeriesType = CandlestickSeries::class;
+        protected $openSeriesDataType = '';
+        /**
+         * The range data (vertical axis) for the close/final value for each candle.
+         * This is the top of the candle body. If greater than the open value the
+         * candle will be filled. Otherwise the candle will be hollow.
+         *
+         * @param CandlestickSeries $closeSeries
+         */
+        public function setCloseSeries(CandlestickSeries $closeSeries)
+        {
+        }
+        /**
+         * @return CandlestickSeries
+         */
+        public function getCloseSeries()
+        {
+        }
+        /**
+         * The range data (vertical axis) for the high/maximum value for each candle.
+         * This is the top of the candle's center line.
+         *
+         * @param CandlestickSeries $highSeries
+         */
+        public function setHighSeries(CandlestickSeries $highSeries)
+        {
+        }
+        /**
+         * @return CandlestickSeries
+         */
+        public function getHighSeries()
+        {
+        }
+        /**
+         * The range data (vertical axis) for the low/minimum value for each candle.
+         * This is the bottom of the candle's center line.
+         *
+         * @param CandlestickSeries $lowSeries
+         */
+        public function setLowSeries(CandlestickSeries $lowSeries)
+        {
+        }
+        /**
+         * @return CandlestickSeries
+         */
+        public function getLowSeries()
+        {
+        }
+        /**
+         * The range data (vertical axis) for the open/initial value for each candle.
+         * This is the bottom of the candle body. If less than the close value the
+         * candle will be filled. Otherwise the candle will be hollow.
+         *
+         * @param CandlestickSeries $openSeries
+         */
+        public function setOpenSeries(CandlestickSeries $openSeries)
+        {
+        }
+        /**
+         * @return CandlestickSeries
+         */
+        public function getOpenSeries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CandlestickSeries
+     * Runtime class alias of \Google\Service\Sheets\CandlestickData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloseSeries()
-    {
-    }
-    /**
-     * The range data (vertical axis) for the high/maximum value for each candle.
-     * This is the top of the candle's center line.
-     *
-     * @param CandlestickSeries $highSeries
-     */
-    public function setHighSeries(CandlestickSeries $highSeries)
-    {
-    }
-    /**
-     * @return CandlestickSeries
-     */
-    public function getHighSeries()
-    {
-    }
-    /**
-     * The range data (vertical axis) for the low/minimum value for each candle.
-     * This is the bottom of the candle's center line.
-     *
-     * @param CandlestickSeries $lowSeries
-     */
-    public function setLowSeries(CandlestickSeries $lowSeries)
-    {
-    }
-    /**
-     * @return CandlestickSeries
-     */
-    public function getLowSeries()
-    {
-    }
-    /**
-     * The range data (vertical axis) for the open/initial value for each candle.
-     * This is the bottom of the candle body. If less than the close value the
-     * candle will be filled. Otherwise the candle will be hollow.
-     *
-     * @param CandlestickSeries $openSeries
-     */
-    public function setOpenSeries(CandlestickSeries $openSeries)
-    {
-    }
-    /**
-     * @return CandlestickSeries
-     */
-    public function getOpenSeries()
+    class Google_Service_Sheets_CandlestickData extends \Google\Service\Sheets\CandlestickData
     {
     }
 }

@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class BatchUpdatePurchaseOptionStatesResponse extends \Google\Collection
-{
-    protected $collection_key = 'oneTimeProducts';
-    protected $oneTimeProductsType = OneTimeProduct::class;
-    protected $oneTimeProductsDataType = 'array';
-    /**
-     * The list of updated one-time products. This list will match the requests
-     * one to one, in the same order.
-     *
-     * @param OneTimeProduct[] $oneTimeProducts
-     */
-    public function setOneTimeProducts($oneTimeProducts)
+namespace Google\Service\AndroidPublisher {
+    class BatchUpdatePurchaseOptionStatesResponse extends \Google\Collection
     {
+        protected $collection_key = 'oneTimeProducts';
+        protected $oneTimeProductsType = OneTimeProduct::class;
+        protected $oneTimeProductsDataType = 'array';
+        /**
+         * The list of updated one-time products. This list will match the requests
+         * one to one, in the same order.
+         *
+         * @param OneTimeProduct[] $oneTimeProducts
+         */
+        public function setOneTimeProducts($oneTimeProducts)
+        {
+        }
+        /**
+         * @return OneTimeProduct[]
+         */
+        public function getOneTimeProducts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return OneTimeProduct[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\BatchUpdatePurchaseOptionStatesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOneTimeProducts()
+    class Google_Service_AndroidPublisher_BatchUpdatePurchaseOptionStatesResponse extends \Google\Service\AndroidPublisher\BatchUpdatePurchaseOptionStatesResponse
     {
     }
 }

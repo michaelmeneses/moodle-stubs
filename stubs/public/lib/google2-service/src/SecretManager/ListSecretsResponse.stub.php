@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecretManager;
-
-class ListSecretsResponse extends \Google\Collection
-{
-    protected $collection_key = 'secrets';
-    /**
-     * A token to retrieve the next page of results. Pass this value in
-     * ListSecretsRequest.page_token to retrieve the next page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $secretsType = Secret::class;
-    protected $secretsDataType = 'array';
-    /**
-     * The total number of Secrets but 0 when the ListSecretsRequest.filter field
-     * is set.
-     *
-     * @var int
-     */
-    public $totalSize;
-    /**
-     * A token to retrieve the next page of results. Pass this value in
-     * ListSecretsRequest.page_token to retrieve the next page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\SecretManager {
+    class ListSecretsResponse extends \Google\Collection
     {
+        protected $collection_key = 'secrets';
+        /**
+         * A token to retrieve the next page of results. Pass this value in
+         * ListSecretsRequest.page_token to retrieve the next page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $secretsType = Secret::class;
+        protected $secretsDataType = 'array';
+        /**
+         * The total number of Secrets but 0 when the ListSecretsRequest.filter field
+         * is set.
+         *
+         * @var int
+         */
+        public $totalSize;
+        /**
+         * A token to retrieve the next page of results. Pass this value in
+         * ListSecretsRequest.page_token to retrieve the next page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of Secrets sorted in reverse by create_time (newest first).
+         *
+         * @param Secret[] $secrets
+         */
+        public function setSecrets($secrets)
+        {
+        }
+        /**
+         * @return Secret[]
+         */
+        public function getSecrets()
+        {
+        }
+        /**
+         * The total number of Secrets but 0 when the ListSecretsRequest.filter field
+         * is set.
+         *
+         * @param int $totalSize
+         */
+        public function setTotalSize($totalSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecretManager\ListSecretsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of Secrets sorted in reverse by create_time (newest first).
-     *
-     * @param Secret[] $secrets
-     */
-    public function setSecrets($secrets)
-    {
-    }
-    /**
-     * @return Secret[]
-     */
-    public function getSecrets()
-    {
-    }
-    /**
-     * The total number of Secrets but 0 when the ListSecretsRequest.filter field
-     * is set.
-     *
-     * @param int $totalSize
-     */
-    public function setTotalSize($totalSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalSize()
+    class Google_Service_SecretManager_ListSecretsResponse extends \Google\Service\SecretManager\ListSecretsResponse
     {
     }
 }

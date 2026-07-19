@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class Dimensions extends \Google\Model
-{
-    /**
-     * The height in pixels.
-     *
-     * @var int
-     */
-    public $heightPixels;
-    /**
-     * The width in pixels.
-     *
-     * @var int
-     */
-    public $widthPixels;
-    /**
-     * The height in pixels.
-     *
-     * @param int $heightPixels
-     */
-    public function setHeightPixels($heightPixels)
+namespace Google\Service\DisplayVideo {
+    class Dimensions extends \Google\Model
     {
+        /**
+         * The height in pixels.
+         *
+         * @var int
+         */
+        public $heightPixels;
+        /**
+         * The width in pixels.
+         *
+         * @var int
+         */
+        public $widthPixels;
+        /**
+         * The height in pixels.
+         *
+         * @param int $heightPixels
+         */
+        public function setHeightPixels($heightPixels)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHeightPixels()
+        {
+        }
+        /**
+         * The width in pixels.
+         *
+         * @param int $widthPixels
+         */
+        public function setWidthPixels($widthPixels)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getWidthPixels()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\DisplayVideo\Dimensions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHeightPixels()
-    {
-    }
-    /**
-     * The width in pixels.
-     *
-     * @param int $widthPixels
-     */
-    public function setWidthPixels($widthPixels)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getWidthPixels()
+    class Google_Service_DisplayVideo_Dimensions extends \Google\Service\DisplayVideo\Dimensions
     {
     }
 }

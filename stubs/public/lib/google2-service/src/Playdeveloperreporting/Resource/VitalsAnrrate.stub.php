@@ -21,41 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Playdeveloperreporting\Resource;
-
-/**
- * The "anrrate" collection of methods.
- * Typical usage is:
- *  <code>
- *   $playdeveloperreportingService = new Google\Service\Playdeveloperreporting(...);
- *   $anrrate = $playdeveloperreportingService->vitals_anrrate;
- *  </code>
- */
-class VitalsAnrrate extends \Google\Service\Resource
-{
+namespace Google\Service\Playdeveloperreporting\Resource {
+    use Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1AnrRateMetricSet;
+    use Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1QueryAnrRateMetricSetRequest;
+    use Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1QueryAnrRateMetricSetResponse;
     /**
-     * Describes the properties of the metric set. (anrrate.get)
-     *
-     * @param string $name Required. The resource name. Format:
-     * apps/{app}/anrRateMetricSet
-     * @param array $optParams Optional parameters.
-     * @return GooglePlayDeveloperReportingV1beta1AnrRateMetricSet
-     * @throws \Google\Service\Exception
+     * The "anrrate" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $playdeveloperreportingService = new Google\Service\Playdeveloperreporting(...);
+     *   $anrrate = $playdeveloperreportingService->vitals_anrrate;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class VitalsAnrrate extends \Google\Service\Resource
     {
+        /**
+         * Describes the properties of the metric set. (anrrate.get)
+         *
+         * @param string $name Required. The resource name. Format:
+         * apps/{app}/anrRateMetricSet
+         * @param array $optParams Optional parameters.
+         * @return GooglePlayDeveloperReportingV1beta1AnrRateMetricSet
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Queries the metrics in the metric set. (anrrate.query)
+         *
+         * @param string $name Required. The resource name. Format:
+         * apps/{app}/anrRateMetricSet
+         * @param GooglePlayDeveloperReportingV1beta1QueryAnrRateMetricSetRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GooglePlayDeveloperReportingV1beta1QueryAnrRateMetricSetResponse
+         * @throws \Google\Service\Exception
+         */
+        public function query($name, GooglePlayDeveloperReportingV1beta1QueryAnrRateMetricSetRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Queries the metrics in the metric set. (anrrate.query)
-     *
-     * @param string $name Required. The resource name. Format:
-     * apps/{app}/anrRateMetricSet
-     * @param GooglePlayDeveloperReportingV1beta1QueryAnrRateMetricSetRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GooglePlayDeveloperReportingV1beta1QueryAnrRateMetricSetResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Playdeveloperreporting\Resource\VitalsAnrrate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function query($name, GooglePlayDeveloperReportingV1beta1QueryAnrRateMetricSetRequest $postBody, $optParams = [])
+    class Google_Service_Playdeveloperreporting_Resource_VitalsAnrrate extends \Google\Service\Playdeveloperreporting\Resource\VitalsAnrrate
     {
     }
 }

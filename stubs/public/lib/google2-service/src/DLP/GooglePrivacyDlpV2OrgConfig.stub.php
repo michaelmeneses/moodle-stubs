@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2OrgConfig extends \Google\Model
-{
-    protected $locationType = GooglePrivacyDlpV2DiscoveryStartingLocation::class;
-    protected $locationDataType = '';
-    /**
-     * The project that will run the scan. The DLP service account that exists
-     * within this project must have access to all resources that are profiled,
-     * and the DLP API must be enabled.
-     *
-     * @var string
-     */
-    public $projectId;
-    /**
-     * The data to scan: folder, org, or project
-     *
-     * @param GooglePrivacyDlpV2DiscoveryStartingLocation $location
-     */
-    public function setLocation(GooglePrivacyDlpV2DiscoveryStartingLocation $location)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2OrgConfig extends \Google\Model
     {
+        protected $locationType = GooglePrivacyDlpV2DiscoveryStartingLocation::class;
+        protected $locationDataType = '';
+        /**
+         * The project that will run the scan. The DLP service account that exists
+         * within this project must have access to all resources that are profiled,
+         * and the DLP API must be enabled.
+         *
+         * @var string
+         */
+        public $projectId;
+        /**
+         * The data to scan: folder, org, or project
+         *
+         * @param GooglePrivacyDlpV2DiscoveryStartingLocation $location
+         */
+        public function setLocation(GooglePrivacyDlpV2DiscoveryStartingLocation $location)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2DiscoveryStartingLocation
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * The project that will run the scan. The DLP service account that exists
+         * within this project must have access to all resources that are profiled,
+         * and the DLP API must be enabled.
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2DiscoveryStartingLocation
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2OrgConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocation()
-    {
-    }
-    /**
-     * The project that will run the scan. The DLP service account that exists
-     * within this project must have access to all resources that are profiled,
-     * and the DLP API must be enabled.
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
+    class Google_Service_DLP_GooglePrivacyDlpV2OrgConfig extends \Google\Service\DLP\GooglePrivacyDlpV2OrgConfig
     {
     }
 }

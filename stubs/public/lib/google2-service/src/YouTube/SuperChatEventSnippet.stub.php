@@ -21,207 +21,216 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class SuperChatEventSnippet extends \Google\Model
-{
-    /**
-     * The purchase amount, in micros of the purchase currency. e.g., 1 is
-     * represented as 1000000.
-     *
-     * @var string
-     */
-    public $amountMicros;
-    /**
-     * Channel id where the event occurred.
-     *
-     * @var string
-     */
-    public $channelId;
-    /**
-     * The text contents of the comment left by the user.
-     *
-     * @var string
-     */
-    public $commentText;
-    /**
-     * The date and time when the event occurred.
-     *
-     * @var string
-     */
-    public $createdAt;
-    /**
-     * The currency in which the purchase was made. ISO 4217.
-     *
-     * @var string
-     */
-    public $currency;
-    /**
-     * A rendered string that displays the purchase amount and currency (e.g.,
-     * "$1.00"). The string is rendered for the given language.
-     *
-     * @var string
-     */
-    public $displayString;
-    /**
-     * True if this event is a Super Sticker event.
-     *
-     * @var bool
-     */
-    public $isSuperStickerEvent;
-    /**
-     * The tier for the paid message, which is based on the amount of money spent
-     * to purchase the message.
-     *
-     * @var string
-     */
-    public $messageType;
-    protected $superStickerMetadataType = SuperStickerMetadata::class;
-    protected $superStickerMetadataDataType = '';
-    protected $supporterDetailsType = ChannelProfileDetails::class;
-    protected $supporterDetailsDataType = '';
-    /**
-     * The purchase amount, in micros of the purchase currency. e.g., 1 is
-     * represented as 1000000.
-     *
-     * @param string $amountMicros
-     */
-    public function setAmountMicros($amountMicros)
+namespace Google\Service\YouTube {
+    class SuperChatEventSnippet extends \Google\Model
     {
+        /**
+         * The purchase amount, in micros of the purchase currency. e.g., 1 is
+         * represented as 1000000.
+         *
+         * @var string
+         */
+        public $amountMicros;
+        /**
+         * Channel id where the event occurred.
+         *
+         * @var string
+         */
+        public $channelId;
+        /**
+         * The text contents of the comment left by the user.
+         *
+         * @var string
+         */
+        public $commentText;
+        /**
+         * The date and time when the event occurred.
+         *
+         * @var string
+         */
+        public $createdAt;
+        /**
+         * The currency in which the purchase was made. ISO 4217.
+         *
+         * @var string
+         */
+        public $currency;
+        /**
+         * A rendered string that displays the purchase amount and currency (e.g.,
+         * "$1.00"). The string is rendered for the given language.
+         *
+         * @var string
+         */
+        public $displayString;
+        /**
+         * True if this event is a Super Sticker event.
+         *
+         * @var bool
+         */
+        public $isSuperStickerEvent;
+        /**
+         * The tier for the paid message, which is based on the amount of money spent
+         * to purchase the message.
+         *
+         * @var string
+         */
+        public $messageType;
+        protected $superStickerMetadataType = SuperStickerMetadata::class;
+        protected $superStickerMetadataDataType = '';
+        protected $supporterDetailsType = ChannelProfileDetails::class;
+        protected $supporterDetailsDataType = '';
+        /**
+         * The purchase amount, in micros of the purchase currency. e.g., 1 is
+         * represented as 1000000.
+         *
+         * @param string $amountMicros
+         */
+        public function setAmountMicros($amountMicros)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAmountMicros()
+        {
+        }
+        /**
+         * Channel id where the event occurred.
+         *
+         * @param string $channelId
+         */
+        public function setChannelId($channelId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChannelId()
+        {
+        }
+        /**
+         * The text contents of the comment left by the user.
+         *
+         * @param string $commentText
+         */
+        public function setCommentText($commentText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCommentText()
+        {
+        }
+        /**
+         * The date and time when the event occurred.
+         *
+         * @param string $createdAt
+         */
+        public function setCreatedAt($createdAt)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreatedAt()
+        {
+        }
+        /**
+         * The currency in which the purchase was made. ISO 4217.
+         *
+         * @param string $currency
+         */
+        public function setCurrency($currency)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrency()
+        {
+        }
+        /**
+         * A rendered string that displays the purchase amount and currency (e.g.,
+         * "$1.00"). The string is rendered for the given language.
+         *
+         * @param string $displayString
+         */
+        public function setDisplayString($displayString)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayString()
+        {
+        }
+        /**
+         * True if this event is a Super Sticker event.
+         *
+         * @param bool $isSuperStickerEvent
+         */
+        public function setIsSuperStickerEvent($isSuperStickerEvent)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsSuperStickerEvent()
+        {
+        }
+        /**
+         * The tier for the paid message, which is based on the amount of money spent
+         * to purchase the message.
+         *
+         * @param string $messageType
+         */
+        public function setMessageType($messageType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessageType()
+        {
+        }
+        /**
+         * If this event is a Super Sticker event, this field will contain metadata
+         * about the Super Sticker.
+         *
+         * @param SuperStickerMetadata $superStickerMetadata
+         */
+        public function setSuperStickerMetadata(SuperStickerMetadata $superStickerMetadata)
+        {
+        }
+        /**
+         * @return SuperStickerMetadata
+         */
+        public function getSuperStickerMetadata()
+        {
+        }
+        /**
+         * Details about the supporter.
+         *
+         * @param ChannelProfileDetails $supporterDetails
+         */
+        public function setSupporterDetails(ChannelProfileDetails $supporterDetails)
+        {
+        }
+        /**
+         * @return ChannelProfileDetails
+         */
+        public function getSupporterDetails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\SuperChatEventSnippet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAmountMicros()
-    {
-    }
-    /**
-     * Channel id where the event occurred.
-     *
-     * @param string $channelId
-     */
-    public function setChannelId($channelId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getChannelId()
-    {
-    }
-    /**
-     * The text contents of the comment left by the user.
-     *
-     * @param string $commentText
-     */
-    public function setCommentText($commentText)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCommentText()
-    {
-    }
-    /**
-     * The date and time when the event occurred.
-     *
-     * @param string $createdAt
-     */
-    public function setCreatedAt($createdAt)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreatedAt()
-    {
-    }
-    /**
-     * The currency in which the purchase was made. ISO 4217.
-     *
-     * @param string $currency
-     */
-    public function setCurrency($currency)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCurrency()
-    {
-    }
-    /**
-     * A rendered string that displays the purchase amount and currency (e.g.,
-     * "$1.00"). The string is rendered for the given language.
-     *
-     * @param string $displayString
-     */
-    public function setDisplayString($displayString)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayString()
-    {
-    }
-    /**
-     * True if this event is a Super Sticker event.
-     *
-     * @param bool $isSuperStickerEvent
-     */
-    public function setIsSuperStickerEvent($isSuperStickerEvent)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsSuperStickerEvent()
-    {
-    }
-    /**
-     * The tier for the paid message, which is based on the amount of money spent
-     * to purchase the message.
-     *
-     * @param string $messageType
-     */
-    public function setMessageType($messageType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessageType()
-    {
-    }
-    /**
-     * If this event is a Super Sticker event, this field will contain metadata
-     * about the Super Sticker.
-     *
-     * @param SuperStickerMetadata $superStickerMetadata
-     */
-    public function setSuperStickerMetadata(SuperStickerMetadata $superStickerMetadata)
-    {
-    }
-    /**
-     * @return SuperStickerMetadata
-     */
-    public function getSuperStickerMetadata()
-    {
-    }
-    /**
-     * Details about the supporter.
-     *
-     * @param ChannelProfileDetails $supporterDetails
-     */
-    public function setSupporterDetails(ChannelProfileDetails $supporterDetails)
-    {
-    }
-    /**
-     * @return ChannelProfileDetails
-     */
-    public function getSupporterDetails()
+    class Google_Service_YouTube_SuperChatEventSnippet extends \Google\Service\YouTube\SuperChatEventSnippet
     {
     }
 }

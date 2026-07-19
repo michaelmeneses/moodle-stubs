@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class Rollback extends \Google\Model
-{
-    /**
-     * Optional. The starting phase ID for the `Rollout`. If unspecified, the
-     * `Rollout` will start in the stable phase.
-     *
-     * @var string
-     */
-    public $destinationPhase;
-    /**
-     * Optional. If pending rollout exists on the target, the rollback operation
-     * will be aborted.
-     *
-     * @var bool
-     */
-    public $disableRollbackIfRolloutPending;
-    /**
-     * Optional. The starting phase ID for the `Rollout`. If unspecified, the
-     * `Rollout` will start in the stable phase.
-     *
-     * @param string $destinationPhase
-     */
-    public function setDestinationPhase($destinationPhase)
+namespace Google\Service\CloudDeploy {
+    class Rollback extends \Google\Model
     {
+        /**
+         * Optional. The starting phase ID for the `Rollout`. If unspecified, the
+         * `Rollout` will start in the stable phase.
+         *
+         * @var string
+         */
+        public $destinationPhase;
+        /**
+         * Optional. If pending rollout exists on the target, the rollback operation
+         * will be aborted.
+         *
+         * @var bool
+         */
+        public $disableRollbackIfRolloutPending;
+        /**
+         * Optional. The starting phase ID for the `Rollout`. If unspecified, the
+         * `Rollout` will start in the stable phase.
+         *
+         * @param string $destinationPhase
+         */
+        public function setDestinationPhase($destinationPhase)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestinationPhase()
+        {
+        }
+        /**
+         * Optional. If pending rollout exists on the target, the rollback operation
+         * will be aborted.
+         *
+         * @param bool $disableRollbackIfRolloutPending
+         */
+        public function setDisableRollbackIfRolloutPending($disableRollbackIfRolloutPending)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisableRollbackIfRolloutPending()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDeploy\Rollback registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDestinationPhase()
-    {
-    }
-    /**
-     * Optional. If pending rollout exists on the target, the rollback operation
-     * will be aborted.
-     *
-     * @param bool $disableRollbackIfRolloutPending
-     */
-    public function setDisableRollbackIfRolloutPending($disableRollbackIfRolloutPending)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDisableRollbackIfRolloutPending()
+    class Google_Service_CloudDeploy_Rollback extends \Google\Service\CloudDeploy\Rollback
     {
     }
 }

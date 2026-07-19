@@ -17,6 +17,7 @@
  */
 namespace libphonenumber;
 
+use RuntimeException;
 /**
  * @phpstan-consistent-constructor
  * @no-named-arguments

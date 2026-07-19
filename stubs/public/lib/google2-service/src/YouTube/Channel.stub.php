@@ -21,240 +21,249 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class Channel extends \Google\Model
-{
-    protected $auditDetailsType = ChannelAuditDetails::class;
-    protected $auditDetailsDataType = '';
-    protected $brandingSettingsType = ChannelBrandingSettings::class;
-    protected $brandingSettingsDataType = '';
-    protected $contentDetailsType = ChannelContentDetails::class;
-    protected $contentDetailsDataType = '';
-    protected $contentOwnerDetailsType = ChannelContentOwnerDetails::class;
-    protected $contentOwnerDetailsDataType = '';
-    protected $conversionPingsType = ChannelConversionPings::class;
-    protected $conversionPingsDataType = '';
-    /**
-     * Etag of this resource.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * The ID that YouTube uses to uniquely identify the channel.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "youtube#channel".
-     *
-     * @var string
-     */
-    public $kind;
-    protected $localizationsType = ChannelLocalization::class;
-    protected $localizationsDataType = 'map';
-    protected $snippetType = ChannelSnippet::class;
-    protected $snippetDataType = '';
-    protected $statisticsType = ChannelStatistics::class;
-    protected $statisticsDataType = '';
-    protected $statusType = ChannelStatus::class;
-    protected $statusDataType = '';
-    protected $topicDetailsType = ChannelTopicDetails::class;
-    protected $topicDetailsDataType = '';
-    /**
-     * The auditionDetails object encapsulates channel data that is relevant for
-     * YouTube Partners during the audition process.
-     *
-     * @param ChannelAuditDetails $auditDetails
-     */
-    public function setAuditDetails(ChannelAuditDetails $auditDetails)
+namespace Google\Service\YouTube {
+    class Channel extends \Google\Model
     {
+        protected $auditDetailsType = ChannelAuditDetails::class;
+        protected $auditDetailsDataType = '';
+        protected $brandingSettingsType = ChannelBrandingSettings::class;
+        protected $brandingSettingsDataType = '';
+        protected $contentDetailsType = ChannelContentDetails::class;
+        protected $contentDetailsDataType = '';
+        protected $contentOwnerDetailsType = ChannelContentOwnerDetails::class;
+        protected $contentOwnerDetailsDataType = '';
+        protected $conversionPingsType = ChannelConversionPings::class;
+        protected $conversionPingsDataType = '';
+        /**
+         * Etag of this resource.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * The ID that YouTube uses to uniquely identify the channel.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "youtube#channel".
+         *
+         * @var string
+         */
+        public $kind;
+        protected $localizationsType = ChannelLocalization::class;
+        protected $localizationsDataType = 'map';
+        protected $snippetType = ChannelSnippet::class;
+        protected $snippetDataType = '';
+        protected $statisticsType = ChannelStatistics::class;
+        protected $statisticsDataType = '';
+        protected $statusType = ChannelStatus::class;
+        protected $statusDataType = '';
+        protected $topicDetailsType = ChannelTopicDetails::class;
+        protected $topicDetailsDataType = '';
+        /**
+         * The auditionDetails object encapsulates channel data that is relevant for
+         * YouTube Partners during the audition process.
+         *
+         * @param ChannelAuditDetails $auditDetails
+         */
+        public function setAuditDetails(ChannelAuditDetails $auditDetails)
+        {
+        }
+        /**
+         * @return ChannelAuditDetails
+         */
+        public function getAuditDetails()
+        {
+        }
+        /**
+         * The brandingSettings object encapsulates information about the branding of
+         * the channel.
+         *
+         * @param ChannelBrandingSettings $brandingSettings
+         */
+        public function setBrandingSettings(ChannelBrandingSettings $brandingSettings)
+        {
+        }
+        /**
+         * @return ChannelBrandingSettings
+         */
+        public function getBrandingSettings()
+        {
+        }
+        /**
+         * The contentDetails object encapsulates information about the channel's
+         * content.
+         *
+         * @param ChannelContentDetails $contentDetails
+         */
+        public function setContentDetails(ChannelContentDetails $contentDetails)
+        {
+        }
+        /**
+         * @return ChannelContentDetails
+         */
+        public function getContentDetails()
+        {
+        }
+        /**
+         * The contentOwnerDetails object encapsulates channel data that is relevant
+         * for YouTube Partners linked with the channel.
+         *
+         * @param ChannelContentOwnerDetails $contentOwnerDetails
+         */
+        public function setContentOwnerDetails(ChannelContentOwnerDetails $contentOwnerDetails)
+        {
+        }
+        /**
+         * @return ChannelContentOwnerDetails
+         */
+        public function getContentOwnerDetails()
+        {
+        }
+        /**
+         * The conversionPings object encapsulates information about conversion pings
+         * that need to be respected by the channel.
+         *
+         * @deprecated
+         * @param ChannelConversionPings $conversionPings
+         */
+        public function setConversionPings(ChannelConversionPings $conversionPings)
+        {
+        }
+        /**
+         * @deprecated
+         * @return ChannelConversionPings
+         */
+        public function getConversionPings()
+        {
+        }
+        /**
+         * Etag of this resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * The ID that YouTube uses to uniquely identify the channel.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "youtube#channel".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Localizations for different languages
+         *
+         * @param ChannelLocalization[] $localizations
+         */
+        public function setLocalizations($localizations)
+        {
+        }
+        /**
+         * @return ChannelLocalization[]
+         */
+        public function getLocalizations()
+        {
+        }
+        /**
+         * The snippet object contains basic details about the channel, such as its
+         * title, description, and thumbnail images.
+         *
+         * @param ChannelSnippet $snippet
+         */
+        public function setSnippet(ChannelSnippet $snippet)
+        {
+        }
+        /**
+         * @return ChannelSnippet
+         */
+        public function getSnippet()
+        {
+        }
+        /**
+         * The statistics object encapsulates statistics for the channel.
+         *
+         * @param ChannelStatistics $statistics
+         */
+        public function setStatistics(ChannelStatistics $statistics)
+        {
+        }
+        /**
+         * @return ChannelStatistics
+         */
+        public function getStatistics()
+        {
+        }
+        /**
+         * The status object encapsulates information about the privacy status of the
+         * channel.
+         *
+         * @param ChannelStatus $status
+         */
+        public function setStatus(ChannelStatus $status)
+        {
+        }
+        /**
+         * @return ChannelStatus
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * The topicDetails object encapsulates information about Freebase topics
+         * associated with the channel.
+         *
+         * @param ChannelTopicDetails $topicDetails
+         */
+        public function setTopicDetails(ChannelTopicDetails $topicDetails)
+        {
+        }
+        /**
+         * @return ChannelTopicDetails
+         */
+        public function getTopicDetails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ChannelAuditDetails
+     * Runtime class alias of \Google\Service\YouTube\Channel registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuditDetails()
-    {
-    }
-    /**
-     * The brandingSettings object encapsulates information about the branding of
-     * the channel.
-     *
-     * @param ChannelBrandingSettings $brandingSettings
-     */
-    public function setBrandingSettings(ChannelBrandingSettings $brandingSettings)
-    {
-    }
-    /**
-     * @return ChannelBrandingSettings
-     */
-    public function getBrandingSettings()
-    {
-    }
-    /**
-     * The contentDetails object encapsulates information about the channel's
-     * content.
-     *
-     * @param ChannelContentDetails $contentDetails
-     */
-    public function setContentDetails(ChannelContentDetails $contentDetails)
-    {
-    }
-    /**
-     * @return ChannelContentDetails
-     */
-    public function getContentDetails()
-    {
-    }
-    /**
-     * The contentOwnerDetails object encapsulates channel data that is relevant
-     * for YouTube Partners linked with the channel.
-     *
-     * @param ChannelContentOwnerDetails $contentOwnerDetails
-     */
-    public function setContentOwnerDetails(ChannelContentOwnerDetails $contentOwnerDetails)
-    {
-    }
-    /**
-     * @return ChannelContentOwnerDetails
-     */
-    public function getContentOwnerDetails()
-    {
-    }
-    /**
-     * The conversionPings object encapsulates information about conversion pings
-     * that need to be respected by the channel.
-     *
-     * @deprecated
-     * @param ChannelConversionPings $conversionPings
-     */
-    public function setConversionPings(ChannelConversionPings $conversionPings)
-    {
-    }
-    /**
-     * @deprecated
-     * @return ChannelConversionPings
-     */
-    public function getConversionPings()
-    {
-    }
-    /**
-     * Etag of this resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * The ID that YouTube uses to uniquely identify the channel.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "youtube#channel".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Localizations for different languages
-     *
-     * @param ChannelLocalization[] $localizations
-     */
-    public function setLocalizations($localizations)
-    {
-    }
-    /**
-     * @return ChannelLocalization[]
-     */
-    public function getLocalizations()
-    {
-    }
-    /**
-     * The snippet object contains basic details about the channel, such as its
-     * title, description, and thumbnail images.
-     *
-     * @param ChannelSnippet $snippet
-     */
-    public function setSnippet(ChannelSnippet $snippet)
-    {
-    }
-    /**
-     * @return ChannelSnippet
-     */
-    public function getSnippet()
-    {
-    }
-    /**
-     * The statistics object encapsulates statistics for the channel.
-     *
-     * @param ChannelStatistics $statistics
-     */
-    public function setStatistics(ChannelStatistics $statistics)
-    {
-    }
-    /**
-     * @return ChannelStatistics
-     */
-    public function getStatistics()
-    {
-    }
-    /**
-     * The status object encapsulates information about the privacy status of the
-     * channel.
-     *
-     * @param ChannelStatus $status
-     */
-    public function setStatus(ChannelStatus $status)
-    {
-    }
-    /**
-     * @return ChannelStatus
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * The topicDetails object encapsulates information about Freebase topics
-     * associated with the channel.
-     *
-     * @param ChannelTopicDetails $topicDetails
-     */
-    public function setTopicDetails(ChannelTopicDetails $topicDetails)
-    {
-    }
-    /**
-     * @return ChannelTopicDetails
-     */
-    public function getTopicDetails()
+    class Google_Service_YouTube_Channel extends \Google\Service\YouTube\Channel
     {
     }
 }

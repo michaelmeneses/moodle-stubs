@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class YoutubeAssetAssociationLinkedYouTubeAsset extends \Google\Model
-{
-    protected $affiliateLocationAssetFilterType = YoutubeAssetAssociationAffiliateLocationAssetFilter::class;
-    protected $affiliateLocationAssetFilterDataType = '';
-    protected $locationAssetFilterType = YoutubeAssetAssociationLocationAssetFilter::class;
-    protected $locationAssetFilterDataType = '';
-    protected $sitelinkAssetType = YoutubeAssetAssociationSitelinkAsset::class;
-    protected $sitelinkAssetDataType = '';
-    /**
-     * An affiliate location asset filter. This can be set only when
-     * youtube_asset_type is `YOUTUBE_ASSET_TYPE_AFFILIATE_LOCATION`.
-     *
-     * @param YoutubeAssetAssociationAffiliateLocationAssetFilter $affiliateLocationAssetFilter
-     */
-    public function setAffiliateLocationAssetFilter(YoutubeAssetAssociationAffiliateLocationAssetFilter $affiliateLocationAssetFilter)
+namespace Google\Service\DisplayVideo {
+    class YoutubeAssetAssociationLinkedYouTubeAsset extends \Google\Model
     {
+        protected $affiliateLocationAssetFilterType = YoutubeAssetAssociationAffiliateLocationAssetFilter::class;
+        protected $affiliateLocationAssetFilterDataType = '';
+        protected $locationAssetFilterType = YoutubeAssetAssociationLocationAssetFilter::class;
+        protected $locationAssetFilterDataType = '';
+        protected $sitelinkAssetType = YoutubeAssetAssociationSitelinkAsset::class;
+        protected $sitelinkAssetDataType = '';
+        /**
+         * An affiliate location asset filter. This can be set only when
+         * youtube_asset_type is `YOUTUBE_ASSET_TYPE_AFFILIATE_LOCATION`.
+         *
+         * @param YoutubeAssetAssociationAffiliateLocationAssetFilter $affiliateLocationAssetFilter
+         */
+        public function setAffiliateLocationAssetFilter(YoutubeAssetAssociationAffiliateLocationAssetFilter $affiliateLocationAssetFilter)
+        {
+        }
+        /**
+         * @return YoutubeAssetAssociationAffiliateLocationAssetFilter
+         */
+        public function getAffiliateLocationAssetFilter()
+        {
+        }
+        /**
+         * A location asset filter. This can be set only when youtube_asset_type is
+         * `YOUTUBE_ASSET_TYPE_LOCATION`.
+         *
+         * @param YoutubeAssetAssociationLocationAssetFilter $locationAssetFilter
+         */
+        public function setLocationAssetFilter(YoutubeAssetAssociationLocationAssetFilter $locationAssetFilter)
+        {
+        }
+        /**
+         * @return YoutubeAssetAssociationLocationAssetFilter
+         */
+        public function getLocationAssetFilter()
+        {
+        }
+        /**
+         * A sitelink asset. This can be set only when youtube_asset_type is
+         * `YOUTUBE_ASSET_TYPE_SITELINK`.
+         *
+         * @param YoutubeAssetAssociationSitelinkAsset $sitelinkAsset
+         */
+        public function setSitelinkAsset(YoutubeAssetAssociationSitelinkAsset $sitelinkAsset)
+        {
+        }
+        /**
+         * @return YoutubeAssetAssociationSitelinkAsset
+         */
+        public function getSitelinkAsset()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return YoutubeAssetAssociationAffiliateLocationAssetFilter
+     * Runtime class alias of \Google\Service\DisplayVideo\YoutubeAssetAssociationLinkedYouTubeAsset registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAffiliateLocationAssetFilter()
-    {
-    }
-    /**
-     * A location asset filter. This can be set only when youtube_asset_type is
-     * `YOUTUBE_ASSET_TYPE_LOCATION`.
-     *
-     * @param YoutubeAssetAssociationLocationAssetFilter $locationAssetFilter
-     */
-    public function setLocationAssetFilter(YoutubeAssetAssociationLocationAssetFilter $locationAssetFilter)
-    {
-    }
-    /**
-     * @return YoutubeAssetAssociationLocationAssetFilter
-     */
-    public function getLocationAssetFilter()
-    {
-    }
-    /**
-     * A sitelink asset. This can be set only when youtube_asset_type is
-     * `YOUTUBE_ASSET_TYPE_SITELINK`.
-     *
-     * @param YoutubeAssetAssociationSitelinkAsset $sitelinkAsset
-     */
-    public function setSitelinkAsset(YoutubeAssetAssociationSitelinkAsset $sitelinkAsset)
-    {
-    }
-    /**
-     * @return YoutubeAssetAssociationSitelinkAsset
-     */
-    public function getSitelinkAsset()
+    class Google_Service_DisplayVideo_YoutubeAssetAssociationLinkedYouTubeAsset extends \Google\Service\DisplayVideo\YoutubeAssetAssociationLinkedYouTubeAsset
     {
     }
 }

@@ -21,93 +21,102 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class Value extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $booleanValue;
-    protected $dateValueType = Date::class;
-    protected $dateValueDataType = '';
-    public $doubleValue;
-    /**
-     * @var string
-     */
-    public $integerValue;
-    /**
-     * @var string
-     */
-    public $stringValue;
-    /**
-     * @var string
-     */
-    public $timestampValue;
-    /**
-     * @param bool $booleanValue
-     */
-    public function setBooleanValue($booleanValue)
+namespace Google\Service\CloudSearch {
+    class Value extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $booleanValue;
+        protected $dateValueType = Date::class;
+        protected $dateValueDataType = '';
+        public $doubleValue;
+        /**
+         * @var string
+         */
+        public $integerValue;
+        /**
+         * @var string
+         */
+        public $stringValue;
+        /**
+         * @var string
+         */
+        public $timestampValue;
+        /**
+         * @param bool $booleanValue
+         */
+        public function setBooleanValue($booleanValue)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBooleanValue()
+        {
+        }
+        /**
+         * @param Date $dateValue
+         */
+        public function setDateValue(Date $dateValue)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getDateValue()
+        {
+        }
+        public function setDoubleValue($doubleValue)
+        {
+        }
+        public function getDoubleValue()
+        {
+        }
+        /**
+         * @param string $integerValue
+         */
+        public function setIntegerValue($integerValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIntegerValue()
+        {
+        }
+        /**
+         * @param string $stringValue
+         */
+        public function setStringValue($stringValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStringValue()
+        {
+        }
+        /**
+         * @param string $timestampValue
+         */
+        public function setTimestampValue($timestampValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimestampValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudSearch\Value registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBooleanValue()
-    {
-    }
-    /**
-     * @param Date $dateValue
-     */
-    public function setDateValue(Date $dateValue)
-    {
-    }
-    /**
-     * @return Date
-     */
-    public function getDateValue()
-    {
-    }
-    public function setDoubleValue($doubleValue)
-    {
-    }
-    public function getDoubleValue()
-    {
-    }
-    /**
-     * @param string $integerValue
-     */
-    public function setIntegerValue($integerValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIntegerValue()
-    {
-    }
-    /**
-     * @param string $stringValue
-     */
-    public function setStringValue($stringValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStringValue()
-    {
-    }
-    /**
-     * @param string $timestampValue
-     */
-    public function setTimestampValue($timestampValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimestampValue()
+    class Google_Service_CloudSearch_Value extends \Google\Service\CloudSearch\Value
     {
     }
 }

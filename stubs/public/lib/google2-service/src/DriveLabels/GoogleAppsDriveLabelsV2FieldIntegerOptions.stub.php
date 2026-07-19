@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2FieldIntegerOptions extends \Google\Model
-{
-    /**
-     * Output only. The maximum valid value for the integer field.
-     *
-     * @var string
-     */
-    public $maxValue;
-    /**
-     * Output only. The minimum valid value for the integer field.
-     *
-     * @var string
-     */
-    public $minValue;
-    /**
-     * Output only. The maximum valid value for the integer field.
-     *
-     * @param string $maxValue
-     */
-    public function setMaxValue($maxValue)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2FieldIntegerOptions extends \Google\Model
     {
+        /**
+         * Output only. The maximum valid value for the integer field.
+         *
+         * @var string
+         */
+        public $maxValue;
+        /**
+         * Output only. The minimum valid value for the integer field.
+         *
+         * @var string
+         */
+        public $minValue;
+        /**
+         * Output only. The maximum valid value for the integer field.
+         *
+         * @param string $maxValue
+         */
+        public function setMaxValue($maxValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxValue()
+        {
+        }
+        /**
+         * Output only. The minimum valid value for the integer field.
+         *
+         * @param string $minValue
+         */
+        public function setMinValue($minValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMinValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2FieldIntegerOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxValue()
-    {
-    }
-    /**
-     * Output only. The minimum valid value for the integer field.
-     *
-     * @param string $minValue
-     */
-    public function setMinValue($minValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMinValue()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2FieldIntegerOptions extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2FieldIntegerOptions
     {
     }
 }

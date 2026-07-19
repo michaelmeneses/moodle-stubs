@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class GoogleFirestoreAdminV1TtlConfig extends \Google\Model
-{
-    /**
-     * The state is unspecified or unknown.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The TTL is being applied. There is an active long-running operation to
-     * track the change. Newly written documents will have TTLs applied as
-     * requested. Requested TTLs on existing documents are still being processed.
-     * When TTLs on all existing documents have been processed, the state will
-     * move to 'ACTIVE'.
-     */
-    public const STATE_CREATING = 'CREATING';
-    /**
-     * The TTL is active for all documents.
-     */
-    public const STATE_ACTIVE = 'ACTIVE';
-    /**
-     * The TTL configuration could not be enabled for all existing documents.
-     * Newly written documents will continue to have their TTL applied. The LRO
-     * returned when last attempting to enable TTL for this `Field` has failed,
-     * and may have more details.
-     */
-    public const STATE_NEEDS_REPAIR = 'NEEDS_REPAIR';
-    /**
-     * Output only. The state of the TTL configuration.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. The state of the TTL configuration.
-     *
-     * Accepted values: STATE_UNSPECIFIED, CREATING, ACTIVE, NEEDS_REPAIR
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
+namespace Google\Service\Firestore {
+    class GoogleFirestoreAdminV1TtlConfig extends \Google\Model
     {
+        /**
+         * The state is unspecified or unknown.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The TTL is being applied. There is an active long-running operation to
+         * track the change. Newly written documents will have TTLs applied as
+         * requested. Requested TTLs on existing documents are still being processed.
+         * When TTLs on all existing documents have been processed, the state will
+         * move to 'ACTIVE'.
+         */
+        public const STATE_CREATING = 'CREATING';
+        /**
+         * The TTL is active for all documents.
+         */
+        public const STATE_ACTIVE = 'ACTIVE';
+        /**
+         * The TTL configuration could not be enabled for all existing documents.
+         * Newly written documents will continue to have their TTL applied. The LRO
+         * returned when last attempting to enable TTL for this `Field` has failed,
+         * and may have more details.
+         */
+        public const STATE_NEEDS_REPAIR = 'NEEDS_REPAIR';
+        /**
+         * Output only. The state of the TTL configuration.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. The state of the TTL configuration.
+         *
+         * Accepted values: STATE_UNSPECIFIED, CREATING, ACTIVE, NEEDS_REPAIR
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::STATE_*
+     * Runtime class alias of \Google\Service\Firestore\GoogleFirestoreAdminV1TtlConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getState()
+    class Google_Service_Firestore_GoogleFirestoreAdminV1TtlConfig extends \Google\Service\Firestore\GoogleFirestoreAdminV1TtlConfig
     {
     }
 }

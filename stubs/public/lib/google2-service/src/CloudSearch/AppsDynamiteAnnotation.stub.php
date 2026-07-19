@@ -21,414 +21,423 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteAnnotation extends \Google\Model
-{
-    protected $babelPlaceholderMetadataType = AppsDynamiteBabelPlaceholderMetadata::class;
-    protected $babelPlaceholderMetadataDataType = '';
-    protected $cardCapabilityMetadataType = AppsDynamiteCardCapabilityMetadata::class;
-    protected $cardCapabilityMetadataDataType = '';
-    /**
-     * @var string
-     */
-    public $chipRenderType;
-    protected $consentedAppUnfurlMetadataType = AppsDynamiteConsentedAppUnfurlMetadata::class;
-    protected $consentedAppUnfurlMetadataDataType = '';
-    protected $customEmojiMetadataType = AppsDynamiteCustomEmojiMetadata::class;
-    protected $customEmojiMetadataDataType = '';
-    protected $dataLossPreventionMetadataType = AppsDynamiteDataLossPreventionMetadata::class;
-    protected $dataLossPreventionMetadataDataType = '';
-    protected $driveMetadataType = AppsDynamiteDriveMetadata::class;
-    protected $driveMetadataDataType = '';
-    protected $formatMetadataType = AppsDynamiteFormatMetadata::class;
-    protected $formatMetadataDataType = '';
-    protected $groupRetentionSettingsUpdatedType = AppsDynamiteGroupRetentionSettingsUpdatedMetaData::class;
-    protected $groupRetentionSettingsUpdatedDataType = '';
-    protected $gsuiteIntegrationMetadataType = AppsDynamiteGsuiteIntegrationMetadata::class;
-    protected $gsuiteIntegrationMetadataDataType = '';
-    protected $incomingWebhookChangedMetadataType = AppsDynamiteIncomingWebhookChangedMetadata::class;
-    protected $incomingWebhookChangedMetadataDataType = '';
-    protected $integrationConfigUpdatedType = AppsDynamiteIntegrationConfigUpdatedMetadata::class;
-    protected $integrationConfigUpdatedDataType = '';
-    /**
-     * @var int
-     */
-    public $length;
-    /**
-     * @var string
-     */
-    public $localId;
-    protected $membershipChangedType = AppsDynamiteMembershipChangedMetadata::class;
-    protected $membershipChangedDataType = '';
-    protected $readReceiptsSettingsMetadataType = AppsDynamiteReadReceiptsSettingsUpdatedMetadata::class;
-    protected $readReceiptsSettingsMetadataDataType = '';
-    protected $requiredMessageFeaturesMetadataType = AppsDynamiteRequiredMessageFeaturesMetadata::class;
-    protected $requiredMessageFeaturesMetadataDataType = '';
-    protected $roomUpdatedType = AppsDynamiteRoomUpdatedMetadata::class;
-    protected $roomUpdatedDataType = '';
-    /**
-     * @var bool
-     */
-    public $serverInvalidated;
-    protected $slashCommandMetadataType = AppsDynamiteSlashCommandMetadata::class;
-    protected $slashCommandMetadataDataType = '';
-    /**
-     * @var int
-     */
-    public $startIndex;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @var string
-     */
-    public $uniqueId;
-    protected $uploadMetadataType = AppsDynamiteUploadMetadata::class;
-    protected $uploadMetadataDataType = '';
-    protected $urlMetadataType = AppsDynamiteUrlMetadata::class;
-    protected $urlMetadataDataType = '';
-    protected $userMentionMetadataType = AppsDynamiteUserMentionMetadata::class;
-    protected $userMentionMetadataDataType = '';
-    protected $videoCallMetadataType = AppsDynamiteVideoCallMetadata::class;
-    protected $videoCallMetadataDataType = '';
-    protected $youtubeMetadataType = AppsDynamiteYoutubeMetadata::class;
-    protected $youtubeMetadataDataType = '';
-    /**
-     * @param AppsDynamiteBabelPlaceholderMetadata
-     */
-    public function setBabelPlaceholderMetadata(AppsDynamiteBabelPlaceholderMetadata $babelPlaceholderMetadata)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteAnnotation extends \Google\Model
     {
+        protected $babelPlaceholderMetadataType = AppsDynamiteBabelPlaceholderMetadata::class;
+        protected $babelPlaceholderMetadataDataType = '';
+        protected $cardCapabilityMetadataType = AppsDynamiteCardCapabilityMetadata::class;
+        protected $cardCapabilityMetadataDataType = '';
+        /**
+         * @var string
+         */
+        public $chipRenderType;
+        protected $consentedAppUnfurlMetadataType = AppsDynamiteConsentedAppUnfurlMetadata::class;
+        protected $consentedAppUnfurlMetadataDataType = '';
+        protected $customEmojiMetadataType = AppsDynamiteCustomEmojiMetadata::class;
+        protected $customEmojiMetadataDataType = '';
+        protected $dataLossPreventionMetadataType = AppsDynamiteDataLossPreventionMetadata::class;
+        protected $dataLossPreventionMetadataDataType = '';
+        protected $driveMetadataType = AppsDynamiteDriveMetadata::class;
+        protected $driveMetadataDataType = '';
+        protected $formatMetadataType = AppsDynamiteFormatMetadata::class;
+        protected $formatMetadataDataType = '';
+        protected $groupRetentionSettingsUpdatedType = AppsDynamiteGroupRetentionSettingsUpdatedMetaData::class;
+        protected $groupRetentionSettingsUpdatedDataType = '';
+        protected $gsuiteIntegrationMetadataType = AppsDynamiteGsuiteIntegrationMetadata::class;
+        protected $gsuiteIntegrationMetadataDataType = '';
+        protected $incomingWebhookChangedMetadataType = AppsDynamiteIncomingWebhookChangedMetadata::class;
+        protected $incomingWebhookChangedMetadataDataType = '';
+        protected $integrationConfigUpdatedType = AppsDynamiteIntegrationConfigUpdatedMetadata::class;
+        protected $integrationConfigUpdatedDataType = '';
+        /**
+         * @var int
+         */
+        public $length;
+        /**
+         * @var string
+         */
+        public $localId;
+        protected $membershipChangedType = AppsDynamiteMembershipChangedMetadata::class;
+        protected $membershipChangedDataType = '';
+        protected $readReceiptsSettingsMetadataType = AppsDynamiteReadReceiptsSettingsUpdatedMetadata::class;
+        protected $readReceiptsSettingsMetadataDataType = '';
+        protected $requiredMessageFeaturesMetadataType = AppsDynamiteRequiredMessageFeaturesMetadata::class;
+        protected $requiredMessageFeaturesMetadataDataType = '';
+        protected $roomUpdatedType = AppsDynamiteRoomUpdatedMetadata::class;
+        protected $roomUpdatedDataType = '';
+        /**
+         * @var bool
+         */
+        public $serverInvalidated;
+        protected $slashCommandMetadataType = AppsDynamiteSlashCommandMetadata::class;
+        protected $slashCommandMetadataDataType = '';
+        /**
+         * @var int
+         */
+        public $startIndex;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @var string
+         */
+        public $uniqueId;
+        protected $uploadMetadataType = AppsDynamiteUploadMetadata::class;
+        protected $uploadMetadataDataType = '';
+        protected $urlMetadataType = AppsDynamiteUrlMetadata::class;
+        protected $urlMetadataDataType = '';
+        protected $userMentionMetadataType = AppsDynamiteUserMentionMetadata::class;
+        protected $userMentionMetadataDataType = '';
+        protected $videoCallMetadataType = AppsDynamiteVideoCallMetadata::class;
+        protected $videoCallMetadataDataType = '';
+        protected $youtubeMetadataType = AppsDynamiteYoutubeMetadata::class;
+        protected $youtubeMetadataDataType = '';
+        /**
+         * @param AppsDynamiteBabelPlaceholderMetadata
+         */
+        public function setBabelPlaceholderMetadata(AppsDynamiteBabelPlaceholderMetadata $babelPlaceholderMetadata)
+        {
+        }
+        /**
+         * @return AppsDynamiteBabelPlaceholderMetadata
+         */
+        public function getBabelPlaceholderMetadata()
+        {
+        }
+        /**
+         * @param AppsDynamiteCardCapabilityMetadata
+         */
+        public function setCardCapabilityMetadata(AppsDynamiteCardCapabilityMetadata $cardCapabilityMetadata)
+        {
+        }
+        /**
+         * @return AppsDynamiteCardCapabilityMetadata
+         */
+        public function getCardCapabilityMetadata()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setChipRenderType($chipRenderType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChipRenderType()
+        {
+        }
+        /**
+         * @param AppsDynamiteConsentedAppUnfurlMetadata
+         */
+        public function setConsentedAppUnfurlMetadata(AppsDynamiteConsentedAppUnfurlMetadata $consentedAppUnfurlMetadata)
+        {
+        }
+        /**
+         * @return AppsDynamiteConsentedAppUnfurlMetadata
+         */
+        public function getConsentedAppUnfurlMetadata()
+        {
+        }
+        /**
+         * @param AppsDynamiteCustomEmojiMetadata
+         */
+        public function setCustomEmojiMetadata(AppsDynamiteCustomEmojiMetadata $customEmojiMetadata)
+        {
+        }
+        /**
+         * @return AppsDynamiteCustomEmojiMetadata
+         */
+        public function getCustomEmojiMetadata()
+        {
+        }
+        /**
+         * @param AppsDynamiteDataLossPreventionMetadata
+         */
+        public function setDataLossPreventionMetadata(AppsDynamiteDataLossPreventionMetadata $dataLossPreventionMetadata)
+        {
+        }
+        /**
+         * @return AppsDynamiteDataLossPreventionMetadata
+         */
+        public function getDataLossPreventionMetadata()
+        {
+        }
+        /**
+         * @param AppsDynamiteDriveMetadata
+         */
+        public function setDriveMetadata(AppsDynamiteDriveMetadata $driveMetadata)
+        {
+        }
+        /**
+         * @return AppsDynamiteDriveMetadata
+         */
+        public function getDriveMetadata()
+        {
+        }
+        /**
+         * @param AppsDynamiteFormatMetadata
+         */
+        public function setFormatMetadata(AppsDynamiteFormatMetadata $formatMetadata)
+        {
+        }
+        /**
+         * @return AppsDynamiteFormatMetadata
+         */
+        public function getFormatMetadata()
+        {
+        }
+        /**
+         * @param AppsDynamiteGroupRetentionSettingsUpdatedMetaData
+         */
+        public function setGroupRetentionSettingsUpdated(AppsDynamiteGroupRetentionSettingsUpdatedMetaData $groupRetentionSettingsUpdated)
+        {
+        }
+        /**
+         * @return AppsDynamiteGroupRetentionSettingsUpdatedMetaData
+         */
+        public function getGroupRetentionSettingsUpdated()
+        {
+        }
+        /**
+         * @param AppsDynamiteGsuiteIntegrationMetadata
+         */
+        public function setGsuiteIntegrationMetadata(AppsDynamiteGsuiteIntegrationMetadata $gsuiteIntegrationMetadata)
+        {
+        }
+        /**
+         * @return AppsDynamiteGsuiteIntegrationMetadata
+         */
+        public function getGsuiteIntegrationMetadata()
+        {
+        }
+        /**
+         * @param AppsDynamiteIncomingWebhookChangedMetadata
+         */
+        public function setIncomingWebhookChangedMetadata(AppsDynamiteIncomingWebhookChangedMetadata $incomingWebhookChangedMetadata)
+        {
+        }
+        /**
+         * @return AppsDynamiteIncomingWebhookChangedMetadata
+         */
+        public function getIncomingWebhookChangedMetadata()
+        {
+        }
+        /**
+         * @param AppsDynamiteIntegrationConfigUpdatedMetadata
+         */
+        public function setIntegrationConfigUpdated(AppsDynamiteIntegrationConfigUpdatedMetadata $integrationConfigUpdated)
+        {
+        }
+        /**
+         * @return AppsDynamiteIntegrationConfigUpdatedMetadata
+         */
+        public function getIntegrationConfigUpdated()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setLength($length)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getLength()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLocalId($localId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocalId()
+        {
+        }
+        /**
+         * @param AppsDynamiteMembershipChangedMetadata
+         */
+        public function setMembershipChanged(AppsDynamiteMembershipChangedMetadata $membershipChanged)
+        {
+        }
+        /**
+         * @return AppsDynamiteMembershipChangedMetadata
+         */
+        public function getMembershipChanged()
+        {
+        }
+        /**
+         * @param AppsDynamiteReadReceiptsSettingsUpdatedMetadata
+         */
+        public function setReadReceiptsSettingsMetadata(AppsDynamiteReadReceiptsSettingsUpdatedMetadata $readReceiptsSettingsMetadata)
+        {
+        }
+        /**
+         * @return AppsDynamiteReadReceiptsSettingsUpdatedMetadata
+         */
+        public function getReadReceiptsSettingsMetadata()
+        {
+        }
+        /**
+         * @param AppsDynamiteRequiredMessageFeaturesMetadata
+         */
+        public function setRequiredMessageFeaturesMetadata(AppsDynamiteRequiredMessageFeaturesMetadata $requiredMessageFeaturesMetadata)
+        {
+        }
+        /**
+         * @return AppsDynamiteRequiredMessageFeaturesMetadata
+         */
+        public function getRequiredMessageFeaturesMetadata()
+        {
+        }
+        /**
+         * @param AppsDynamiteRoomUpdatedMetadata
+         */
+        public function setRoomUpdated(AppsDynamiteRoomUpdatedMetadata $roomUpdated)
+        {
+        }
+        /**
+         * @return AppsDynamiteRoomUpdatedMetadata
+         */
+        public function getRoomUpdated()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setServerInvalidated($serverInvalidated)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getServerInvalidated()
+        {
+        }
+        /**
+         * @param AppsDynamiteSlashCommandMetadata
+         */
+        public function setSlashCommandMetadata(AppsDynamiteSlashCommandMetadata $slashCommandMetadata)
+        {
+        }
+        /**
+         * @return AppsDynamiteSlashCommandMetadata
+         */
+        public function getSlashCommandMetadata()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setStartIndex($startIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStartIndex()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUniqueId($uniqueId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUniqueId()
+        {
+        }
+        /**
+         * @param AppsDynamiteUploadMetadata
+         */
+        public function setUploadMetadata(AppsDynamiteUploadMetadata $uploadMetadata)
+        {
+        }
+        /**
+         * @return AppsDynamiteUploadMetadata
+         */
+        public function getUploadMetadata()
+        {
+        }
+        /**
+         * @param AppsDynamiteUrlMetadata
+         */
+        public function setUrlMetadata(AppsDynamiteUrlMetadata $urlMetadata)
+        {
+        }
+        /**
+         * @return AppsDynamiteUrlMetadata
+         */
+        public function getUrlMetadata()
+        {
+        }
+        /**
+         * @param AppsDynamiteUserMentionMetadata
+         */
+        public function setUserMentionMetadata(AppsDynamiteUserMentionMetadata $userMentionMetadata)
+        {
+        }
+        /**
+         * @return AppsDynamiteUserMentionMetadata
+         */
+        public function getUserMentionMetadata()
+        {
+        }
+        /**
+         * @param AppsDynamiteVideoCallMetadata
+         */
+        public function setVideoCallMetadata(AppsDynamiteVideoCallMetadata $videoCallMetadata)
+        {
+        }
+        /**
+         * @return AppsDynamiteVideoCallMetadata
+         */
+        public function getVideoCallMetadata()
+        {
+        }
+        /**
+         * @param AppsDynamiteYoutubeMetadata
+         */
+        public function setYoutubeMetadata(AppsDynamiteYoutubeMetadata $youtubeMetadata)
+        {
+        }
+        /**
+         * @return AppsDynamiteYoutubeMetadata
+         */
+        public function getYoutubeMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteBabelPlaceholderMetadata
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteAnnotation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBabelPlaceholderMetadata()
-    {
-    }
-    /**
-     * @param AppsDynamiteCardCapabilityMetadata
-     */
-    public function setCardCapabilityMetadata(AppsDynamiteCardCapabilityMetadata $cardCapabilityMetadata)
-    {
-    }
-    /**
-     * @return AppsDynamiteCardCapabilityMetadata
-     */
-    public function getCardCapabilityMetadata()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setChipRenderType($chipRenderType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getChipRenderType()
-    {
-    }
-    /**
-     * @param AppsDynamiteConsentedAppUnfurlMetadata
-     */
-    public function setConsentedAppUnfurlMetadata(AppsDynamiteConsentedAppUnfurlMetadata $consentedAppUnfurlMetadata)
-    {
-    }
-    /**
-     * @return AppsDynamiteConsentedAppUnfurlMetadata
-     */
-    public function getConsentedAppUnfurlMetadata()
-    {
-    }
-    /**
-     * @param AppsDynamiteCustomEmojiMetadata
-     */
-    public function setCustomEmojiMetadata(AppsDynamiteCustomEmojiMetadata $customEmojiMetadata)
-    {
-    }
-    /**
-     * @return AppsDynamiteCustomEmojiMetadata
-     */
-    public function getCustomEmojiMetadata()
-    {
-    }
-    /**
-     * @param AppsDynamiteDataLossPreventionMetadata
-     */
-    public function setDataLossPreventionMetadata(AppsDynamiteDataLossPreventionMetadata $dataLossPreventionMetadata)
-    {
-    }
-    /**
-     * @return AppsDynamiteDataLossPreventionMetadata
-     */
-    public function getDataLossPreventionMetadata()
-    {
-    }
-    /**
-     * @param AppsDynamiteDriveMetadata
-     */
-    public function setDriveMetadata(AppsDynamiteDriveMetadata $driveMetadata)
-    {
-    }
-    /**
-     * @return AppsDynamiteDriveMetadata
-     */
-    public function getDriveMetadata()
-    {
-    }
-    /**
-     * @param AppsDynamiteFormatMetadata
-     */
-    public function setFormatMetadata(AppsDynamiteFormatMetadata $formatMetadata)
-    {
-    }
-    /**
-     * @return AppsDynamiteFormatMetadata
-     */
-    public function getFormatMetadata()
-    {
-    }
-    /**
-     * @param AppsDynamiteGroupRetentionSettingsUpdatedMetaData
-     */
-    public function setGroupRetentionSettingsUpdated(AppsDynamiteGroupRetentionSettingsUpdatedMetaData $groupRetentionSettingsUpdated)
-    {
-    }
-    /**
-     * @return AppsDynamiteGroupRetentionSettingsUpdatedMetaData
-     */
-    public function getGroupRetentionSettingsUpdated()
-    {
-    }
-    /**
-     * @param AppsDynamiteGsuiteIntegrationMetadata
-     */
-    public function setGsuiteIntegrationMetadata(AppsDynamiteGsuiteIntegrationMetadata $gsuiteIntegrationMetadata)
-    {
-    }
-    /**
-     * @return AppsDynamiteGsuiteIntegrationMetadata
-     */
-    public function getGsuiteIntegrationMetadata()
-    {
-    }
-    /**
-     * @param AppsDynamiteIncomingWebhookChangedMetadata
-     */
-    public function setIncomingWebhookChangedMetadata(AppsDynamiteIncomingWebhookChangedMetadata $incomingWebhookChangedMetadata)
-    {
-    }
-    /**
-     * @return AppsDynamiteIncomingWebhookChangedMetadata
-     */
-    public function getIncomingWebhookChangedMetadata()
-    {
-    }
-    /**
-     * @param AppsDynamiteIntegrationConfigUpdatedMetadata
-     */
-    public function setIntegrationConfigUpdated(AppsDynamiteIntegrationConfigUpdatedMetadata $integrationConfigUpdated)
-    {
-    }
-    /**
-     * @return AppsDynamiteIntegrationConfigUpdatedMetadata
-     */
-    public function getIntegrationConfigUpdated()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setLength($length)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getLength()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLocalId($localId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocalId()
-    {
-    }
-    /**
-     * @param AppsDynamiteMembershipChangedMetadata
-     */
-    public function setMembershipChanged(AppsDynamiteMembershipChangedMetadata $membershipChanged)
-    {
-    }
-    /**
-     * @return AppsDynamiteMembershipChangedMetadata
-     */
-    public function getMembershipChanged()
-    {
-    }
-    /**
-     * @param AppsDynamiteReadReceiptsSettingsUpdatedMetadata
-     */
-    public function setReadReceiptsSettingsMetadata(AppsDynamiteReadReceiptsSettingsUpdatedMetadata $readReceiptsSettingsMetadata)
-    {
-    }
-    /**
-     * @return AppsDynamiteReadReceiptsSettingsUpdatedMetadata
-     */
-    public function getReadReceiptsSettingsMetadata()
-    {
-    }
-    /**
-     * @param AppsDynamiteRequiredMessageFeaturesMetadata
-     */
-    public function setRequiredMessageFeaturesMetadata(AppsDynamiteRequiredMessageFeaturesMetadata $requiredMessageFeaturesMetadata)
-    {
-    }
-    /**
-     * @return AppsDynamiteRequiredMessageFeaturesMetadata
-     */
-    public function getRequiredMessageFeaturesMetadata()
-    {
-    }
-    /**
-     * @param AppsDynamiteRoomUpdatedMetadata
-     */
-    public function setRoomUpdated(AppsDynamiteRoomUpdatedMetadata $roomUpdated)
-    {
-    }
-    /**
-     * @return AppsDynamiteRoomUpdatedMetadata
-     */
-    public function getRoomUpdated()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setServerInvalidated($serverInvalidated)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getServerInvalidated()
-    {
-    }
-    /**
-     * @param AppsDynamiteSlashCommandMetadata
-     */
-    public function setSlashCommandMetadata(AppsDynamiteSlashCommandMetadata $slashCommandMetadata)
-    {
-    }
-    /**
-     * @return AppsDynamiteSlashCommandMetadata
-     */
-    public function getSlashCommandMetadata()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setStartIndex($startIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStartIndex()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUniqueId($uniqueId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUniqueId()
-    {
-    }
-    /**
-     * @param AppsDynamiteUploadMetadata
-     */
-    public function setUploadMetadata(AppsDynamiteUploadMetadata $uploadMetadata)
-    {
-    }
-    /**
-     * @return AppsDynamiteUploadMetadata
-     */
-    public function getUploadMetadata()
-    {
-    }
-    /**
-     * @param AppsDynamiteUrlMetadata
-     */
-    public function setUrlMetadata(AppsDynamiteUrlMetadata $urlMetadata)
-    {
-    }
-    /**
-     * @return AppsDynamiteUrlMetadata
-     */
-    public function getUrlMetadata()
-    {
-    }
-    /**
-     * @param AppsDynamiteUserMentionMetadata
-     */
-    public function setUserMentionMetadata(AppsDynamiteUserMentionMetadata $userMentionMetadata)
-    {
-    }
-    /**
-     * @return AppsDynamiteUserMentionMetadata
-     */
-    public function getUserMentionMetadata()
-    {
-    }
-    /**
-     * @param AppsDynamiteVideoCallMetadata
-     */
-    public function setVideoCallMetadata(AppsDynamiteVideoCallMetadata $videoCallMetadata)
-    {
-    }
-    /**
-     * @return AppsDynamiteVideoCallMetadata
-     */
-    public function getVideoCallMetadata()
-    {
-    }
-    /**
-     * @param AppsDynamiteYoutubeMetadata
-     */
-    public function setYoutubeMetadata(AppsDynamiteYoutubeMetadata $youtubeMetadata)
-    {
-    }
-    /**
-     * @return AppsDynamiteYoutubeMetadata
-     */
-    public function getYoutubeMetadata()
+    class Google_Service_CloudSearch_AppsDynamiteAnnotation extends \Google\Service\CloudSearch\AppsDynamiteAnnotation
     {
     }
 }

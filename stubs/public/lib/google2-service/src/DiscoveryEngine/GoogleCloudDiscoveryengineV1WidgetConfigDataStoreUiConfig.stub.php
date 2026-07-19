@@ -21,98 +21,107 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1WidgetConfigDataStoreUiConfig extends \Google\Collection
-{
-    protected $collection_key = 'facetField';
-    protected $facetFieldType = GoogleCloudDiscoveryengineV1WidgetConfigFacetField::class;
-    protected $facetFieldDataType = 'array';
-    protected $fieldsUiComponentsMapType = GoogleCloudDiscoveryengineV1WidgetConfigUIComponentField::class;
-    protected $fieldsUiComponentsMapDataType = 'map';
-    /**
-     * Output only. the identifier of the data store, used for widget service. For
-     * now it refers to data_store_id, in the future we will migrate the field to
-     * encrypted data store name UUID.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The name of the data store. It should be data store resource name Format: `
-     * projects/{project}/locations/{location}/collections/{collection_id}/dataSto
-     * res/{data_store_id}`. For APIs under WidgetService, such as
-     * WidgetService.LookUpWidgetConfig, the project number and location part is
-     * erased in this field.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Facet fields that store the mapping of fields to end user widget
-     * appearance.
-     *
-     * @param GoogleCloudDiscoveryengineV1WidgetConfigFacetField[] $facetField
-     */
-    public function setFacetField($facetField)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1WidgetConfigDataStoreUiConfig extends \Google\Collection
     {
+        protected $collection_key = 'facetField';
+        protected $facetFieldType = GoogleCloudDiscoveryengineV1WidgetConfigFacetField::class;
+        protected $facetFieldDataType = 'array';
+        protected $fieldsUiComponentsMapType = GoogleCloudDiscoveryengineV1WidgetConfigUIComponentField::class;
+        protected $fieldsUiComponentsMapDataType = 'map';
+        /**
+         * Output only. the identifier of the data store, used for widget service. For
+         * now it refers to data_store_id, in the future we will migrate the field to
+         * encrypted data store name UUID.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The name of the data store. It should be data store resource name Format: `
+         * projects/{project}/locations/{location}/collections/{collection_id}/dataSto
+         * res/{data_store_id}`. For APIs under WidgetService, such as
+         * WidgetService.LookUpWidgetConfig, the project number and location part is
+         * erased in this field.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Facet fields that store the mapping of fields to end user widget
+         * appearance.
+         *
+         * @param GoogleCloudDiscoveryengineV1WidgetConfigFacetField[] $facetField
+         */
+        public function setFacetField($facetField)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1WidgetConfigFacetField[]
+         */
+        public function getFacetField()
+        {
+        }
+        /**
+         * The key is the UI component. Mock. Currently supported `title`,
+         * `thumbnail`, `url`, `custom1`, `custom2`, `custom3`. The value is the name
+         * of the field along with its device visibility. The 3 custom fields are
+         * optional and can be added or removed. `title`, `thumbnail`, `url` are
+         * required UI components that cannot be removed.
+         *
+         * @param GoogleCloudDiscoveryengineV1WidgetConfigUIComponentField[] $fieldsUiComponentsMap
+         */
+        public function setFieldsUiComponentsMap($fieldsUiComponentsMap)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1WidgetConfigUIComponentField[]
+         */
+        public function getFieldsUiComponentsMap()
+        {
+        }
+        /**
+         * Output only. the identifier of the data store, used for widget service. For
+         * now it refers to data_store_id, in the future we will migrate the field to
+         * encrypted data store name UUID.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The name of the data store. It should be data store resource name Format: `
+         * projects/{project}/locations/{location}/collections/{collection_id}/dataSto
+         * res/{data_store_id}`. For APIs under WidgetService, such as
+         * WidgetService.LookUpWidgetConfig, the project number and location part is
+         * erased in this field.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1WidgetConfigFacetField[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1WidgetConfigDataStoreUiConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFacetField()
-    {
-    }
-    /**
-     * The key is the UI component. Mock. Currently supported `title`,
-     * `thumbnail`, `url`, `custom1`, `custom2`, `custom3`. The value is the name
-     * of the field along with its device visibility. The 3 custom fields are
-     * optional and can be added or removed. `title`, `thumbnail`, `url` are
-     * required UI components that cannot be removed.
-     *
-     * @param GoogleCloudDiscoveryengineV1WidgetConfigUIComponentField[] $fieldsUiComponentsMap
-     */
-    public function setFieldsUiComponentsMap($fieldsUiComponentsMap)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1WidgetConfigUIComponentField[]
-     */
-    public function getFieldsUiComponentsMap()
-    {
-    }
-    /**
-     * Output only. the identifier of the data store, used for widget service. For
-     * now it refers to data_store_id, in the future we will migrate the field to
-     * encrypted data store name UUID.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * The name of the data store. It should be data store resource name Format: `
-     * projects/{project}/locations/{location}/collections/{collection_id}/dataSto
-     * res/{data_store_id}`. For APIs under WidgetService, such as
-     * WidgetService.LookUpWidgetConfig, the project number and location part is
-     * erased in this field.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1WidgetConfigDataStoreUiConfig extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1WidgetConfigDataStoreUiConfig
     {
     }
 }

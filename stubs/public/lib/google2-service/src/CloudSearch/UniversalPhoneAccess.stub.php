@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class UniversalPhoneAccess extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $pin;
-    /**
-     * @var string
-     */
-    public $pstnInfoUrl;
-    /**
-     * @param string
-     */
-    public function setPin($pin)
+namespace Google\Service\CloudSearch {
+    class UniversalPhoneAccess extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $pin;
+        /**
+         * @var string
+         */
+        public $pstnInfoUrl;
+        /**
+         * @param string
+         */
+        public function setPin($pin)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPin()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPstnInfoUrl($pstnInfoUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPstnInfoUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\UniversalPhoneAccess registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPin()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPstnInfoUrl($pstnInfoUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPstnInfoUrl()
+    class Google_Service_CloudSearch_UniversalPhoneAccess extends \Google\Service\CloudSearch\UniversalPhoneAccess
     {
     }
 }

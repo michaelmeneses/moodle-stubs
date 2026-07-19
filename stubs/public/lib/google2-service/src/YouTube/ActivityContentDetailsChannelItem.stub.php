@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class ActivityContentDetailsChannelItem extends \Google\Model
-{
-    protected $resourceIdType = ResourceId::class;
-    protected $resourceIdDataType = '';
-    /**
-     * The resourceId object contains information that identifies the resource
-     * that was added to the channel.
-     *
-     * @param ResourceId $resourceId
-     */
-    public function setResourceId(ResourceId $resourceId)
+namespace Google\Service\YouTube {
+    class ActivityContentDetailsChannelItem extends \Google\Model
     {
+        protected $resourceIdType = ResourceId::class;
+        protected $resourceIdDataType = '';
+        /**
+         * The resourceId object contains information that identifies the resource
+         * that was added to the channel.
+         *
+         * @param ResourceId $resourceId
+         */
+        public function setResourceId(ResourceId $resourceId)
+        {
+        }
+        /**
+         * @return ResourceId
+         */
+        public function getResourceId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ResourceId
+     * Runtime class alias of \Google\Service\YouTube\ActivityContentDetailsChannelItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResourceId()
+    class Google_Service_YouTube_ActivityContentDetailsChannelItem extends \Google\Service\YouTube\ActivityContentDetailsChannelItem
     {
     }
 }

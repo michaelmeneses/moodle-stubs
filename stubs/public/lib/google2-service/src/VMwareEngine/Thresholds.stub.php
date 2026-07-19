@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMwareEngine;
-
-class Thresholds extends \Google\Model
-{
-    /**
-     * Required. The utilization triggering the scale-in operation in percent.
-     *
-     * @var int
-     */
-    public $scaleIn;
-    /**
-     * Required. The utilization triggering the scale-out operation in percent.
-     *
-     * @var int
-     */
-    public $scaleOut;
-    /**
-     * Required. The utilization triggering the scale-in operation in percent.
-     *
-     * @param int $scaleIn
-     */
-    public function setScaleIn($scaleIn)
+namespace Google\Service\VMwareEngine {
+    class Thresholds extends \Google\Model
     {
+        /**
+         * Required. The utilization triggering the scale-in operation in percent.
+         *
+         * @var int
+         */
+        public $scaleIn;
+        /**
+         * Required. The utilization triggering the scale-out operation in percent.
+         *
+         * @var int
+         */
+        public $scaleOut;
+        /**
+         * Required. The utilization triggering the scale-in operation in percent.
+         *
+         * @param int $scaleIn
+         */
+        public function setScaleIn($scaleIn)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getScaleIn()
+        {
+        }
+        /**
+         * Required. The utilization triggering the scale-out operation in percent.
+         *
+         * @param int $scaleOut
+         */
+        public function setScaleOut($scaleOut)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getScaleOut()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\VMwareEngine\Thresholds registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getScaleIn()
-    {
-    }
-    /**
-     * Required. The utilization triggering the scale-out operation in percent.
-     *
-     * @param int $scaleOut
-     */
-    public function setScaleOut($scaleOut)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getScaleOut()
+    class Google_Service_VMwareEngine_Thresholds extends \Google\Service\VMwareEngine\Thresholds
     {
     }
 }

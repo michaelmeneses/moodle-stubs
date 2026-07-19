@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class OutputQuantileMetrics extends \Google\Model
-{
-    protected $bytesWrittenType = Quantiles::class;
-    protected $bytesWrittenDataType = '';
-    protected $recordsWrittenType = Quantiles::class;
-    protected $recordsWrittenDataType = '';
-    /**
-     * @param Quantiles $bytesWritten
-     */
-    public function setBytesWritten(Quantiles $bytesWritten)
+namespace Google\Service\Dataproc {
+    class OutputQuantileMetrics extends \Google\Model
     {
+        protected $bytesWrittenType = Quantiles::class;
+        protected $bytesWrittenDataType = '';
+        protected $recordsWrittenType = Quantiles::class;
+        protected $recordsWrittenDataType = '';
+        /**
+         * @param Quantiles $bytesWritten
+         */
+        public function setBytesWritten(Quantiles $bytesWritten)
+        {
+        }
+        /**
+         * @return Quantiles
+         */
+        public function getBytesWritten()
+        {
+        }
+        /**
+         * @param Quantiles $recordsWritten
+         */
+        public function setRecordsWritten(Quantiles $recordsWritten)
+        {
+        }
+        /**
+         * @return Quantiles
+         */
+        public function getRecordsWritten()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Quantiles
+     * Runtime class alias of \Google\Service\Dataproc\OutputQuantileMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBytesWritten()
-    {
-    }
-    /**
-     * @param Quantiles $recordsWritten
-     */
-    public function setRecordsWritten(Quantiles $recordsWritten)
-    {
-    }
-    /**
-     * @return Quantiles
-     */
-    public function getRecordsWritten()
+    class Google_Service_Dataproc_OutputQuantileMetrics extends \Google\Service\Dataproc\OutputQuantileMetrics
     {
     }
 }

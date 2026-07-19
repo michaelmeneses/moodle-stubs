@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Translate;
-
-class ListExamplesResponse extends \Google\Collection
-{
-    protected $collection_key = 'examples';
-    protected $examplesType = Example::class;
-    protected $examplesDataType = 'array';
-    /**
-     * A token to retrieve next page of results. Pass this token to the page_token
-     * field in the ListExamplesRequest to obtain the corresponding page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The sentence pairs.
-     *
-     * @param Example[] $examples
-     */
-    public function setExamples($examples)
+namespace Google\Service\Translate {
+    class ListExamplesResponse extends \Google\Collection
     {
+        protected $collection_key = 'examples';
+        protected $examplesType = Example::class;
+        protected $examplesDataType = 'array';
+        /**
+         * A token to retrieve next page of results. Pass this token to the page_token
+         * field in the ListExamplesRequest to obtain the corresponding page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The sentence pairs.
+         *
+         * @param Example[] $examples
+         */
+        public function setExamples($examples)
+        {
+        }
+        /**
+         * @return Example[]
+         */
+        public function getExamples()
+        {
+        }
+        /**
+         * A token to retrieve next page of results. Pass this token to the page_token
+         * field in the ListExamplesRequest to obtain the corresponding page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Example[]
+     * Runtime class alias of \Google\Service\Translate\ListExamplesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExamples()
-    {
-    }
-    /**
-     * A token to retrieve next page of results. Pass this token to the page_token
-     * field in the ListExamplesRequest to obtain the corresponding page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Translate_ListExamplesResponse extends \Google\Service\Translate\ListExamplesResponse
     {
     }
 }

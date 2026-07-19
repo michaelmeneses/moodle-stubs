@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class DoublePropertyOptions extends \Google\Model
-{
-    protected $operatorOptionsType = DoubleOperatorOptions::class;
-    protected $operatorOptionsDataType = '';
-    /**
-     * If set, describes how the double should be used as a search operator.
-     *
-     * @param DoubleOperatorOptions $operatorOptions
-     */
-    public function setOperatorOptions(DoubleOperatorOptions $operatorOptions)
+namespace Google\Service\CloudSearch {
+    class DoublePropertyOptions extends \Google\Model
     {
+        protected $operatorOptionsType = DoubleOperatorOptions::class;
+        protected $operatorOptionsDataType = '';
+        /**
+         * If set, describes how the double should be used as a search operator.
+         *
+         * @param DoubleOperatorOptions $operatorOptions
+         */
+        public function setOperatorOptions(DoubleOperatorOptions $operatorOptions)
+        {
+        }
+        /**
+         * @return DoubleOperatorOptions
+         */
+        public function getOperatorOptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DoubleOperatorOptions
+     * Runtime class alias of \Google\Service\CloudSearch\DoublePropertyOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOperatorOptions()
+    class Google_Service_CloudSearch_DoublePropertyOptions extends \Google\Service\CloudSearch\DoublePropertyOptions
     {
     }
 }

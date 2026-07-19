@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class CustomEmojiMetadata extends \Google\Model
-{
-    protected $customEmojiType = CustomEmoji::class;
-    protected $customEmojiDataType = '';
-    /**
-     * The custom emoji.
-     *
-     * @param CustomEmoji $customEmoji
-     */
-    public function setCustomEmoji(CustomEmoji $customEmoji)
+namespace Google\Service\HangoutsChat {
+    class CustomEmojiMetadata extends \Google\Model
     {
+        protected $customEmojiType = CustomEmoji::class;
+        protected $customEmojiDataType = '';
+        /**
+         * The custom emoji.
+         *
+         * @param CustomEmoji $customEmoji
+         */
+        public function setCustomEmoji(CustomEmoji $customEmoji)
+        {
+        }
+        /**
+         * @return CustomEmoji
+         */
+        public function getCustomEmoji()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CustomEmoji
+     * Runtime class alias of \Google\Service\HangoutsChat\CustomEmojiMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomEmoji()
+    class Google_Service_HangoutsChat_CustomEmojiMetadata extends \Google\Service\HangoutsChat\CustomEmojiMetadata
     {
     }
 }

@@ -21,131 +21,140 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaAssistAnswer extends \Google\Collection
-{
-    /**
-     * Unknown.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * Assist operation is currently in progress.
-     */
-    public const STATE_IN_PROGRESS = 'IN_PROGRESS';
-    /**
-     * Assist operation has failed.
-     */
-    public const STATE_FAILED = 'FAILED';
-    /**
-     * Assist operation has succeeded.
-     */
-    public const STATE_SUCCEEDED = 'SUCCEEDED';
-    /**
-     * Assist operation has been skipped.
-     */
-    public const STATE_SKIPPED = 'SKIPPED';
-    protected $collection_key = 'replies';
-    /**
-     * Reasons for not answering the assist call.
-     *
-     * @var string[]
-     */
-    public $assistSkippedReasons;
-    protected $customerPolicyEnforcementResultType = GoogleCloudDiscoveryengineV1alphaAssistAnswerCustomerPolicyEnforcementResult::class;
-    protected $customerPolicyEnforcementResultDataType = '';
-    /**
-     * Immutable. Identifier. Resource name of the `AssistAnswer`. Format: `projec
-     * ts/{project}/locations/{location}/collections/{collection}/engines/{engine}
-     * /sessions/{session}/assistAnswers/{assist_answer}` This field must be a
-     * UTF-8 encoded string with a length limit of 1024 characters.
-     *
-     * @var string
-     */
-    public $name;
-    protected $repliesType = GoogleCloudDiscoveryengineV1alphaAssistAnswerReply::class;
-    protected $repliesDataType = 'array';
-    /**
-     * State of the answer generation.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Reasons for not answering the assist call.
-     *
-     * @param string[] $assistSkippedReasons
-     */
-    public function setAssistSkippedReasons($assistSkippedReasons)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaAssistAnswer extends \Google\Collection
     {
+        /**
+         * Unknown.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * Assist operation is currently in progress.
+         */
+        public const STATE_IN_PROGRESS = 'IN_PROGRESS';
+        /**
+         * Assist operation has failed.
+         */
+        public const STATE_FAILED = 'FAILED';
+        /**
+         * Assist operation has succeeded.
+         */
+        public const STATE_SUCCEEDED = 'SUCCEEDED';
+        /**
+         * Assist operation has been skipped.
+         */
+        public const STATE_SKIPPED = 'SKIPPED';
+        protected $collection_key = 'replies';
+        /**
+         * Reasons for not answering the assist call.
+         *
+         * @var string[]
+         */
+        public $assistSkippedReasons;
+        protected $customerPolicyEnforcementResultType = GoogleCloudDiscoveryengineV1alphaAssistAnswerCustomerPolicyEnforcementResult::class;
+        protected $customerPolicyEnforcementResultDataType = '';
+        /**
+         * Immutable. Identifier. Resource name of the `AssistAnswer`. Format: `projec
+         * ts/{project}/locations/{location}/collections/{collection}/engines/{engine}
+         * /sessions/{session}/assistAnswers/{assist_answer}` This field must be a
+         * UTF-8 encoded string with a length limit of 1024 characters.
+         *
+         * @var string
+         */
+        public $name;
+        protected $repliesType = GoogleCloudDiscoveryengineV1alphaAssistAnswerReply::class;
+        protected $repliesDataType = 'array';
+        /**
+         * State of the answer generation.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Reasons for not answering the assist call.
+         *
+         * @param string[] $assistSkippedReasons
+         */
+        public function setAssistSkippedReasons($assistSkippedReasons)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAssistSkippedReasons()
+        {
+        }
+        /**
+         * Optional. The field contains information about the various policy checks'
+         * results like the banned phrases or the Model Armor checks. This field is
+         * populated only if the assist call was skipped due to a policy violation.
+         *
+         * @param GoogleCloudDiscoveryengineV1alphaAssistAnswerCustomerPolicyEnforcementResult $customerPolicyEnforcementResult
+         */
+        public function setCustomerPolicyEnforcementResult(GoogleCloudDiscoveryengineV1alphaAssistAnswerCustomerPolicyEnforcementResult $customerPolicyEnforcementResult)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaAssistAnswerCustomerPolicyEnforcementResult
+         */
+        public function getCustomerPolicyEnforcementResult()
+        {
+        }
+        /**
+         * Immutable. Identifier. Resource name of the `AssistAnswer`. Format: `projec
+         * ts/{project}/locations/{location}/collections/{collection}/engines/{engine}
+         * /sessions/{session}/assistAnswers/{assist_answer}` This field must be a
+         * UTF-8 encoded string with a length limit of 1024 characters.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Replies of the assistant.
+         *
+         * @param GoogleCloudDiscoveryengineV1alphaAssistAnswerReply[] $replies
+         */
+        public function setReplies($replies)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaAssistAnswerReply[]
+         */
+        public function getReplies()
+        {
+        }
+        /**
+         * State of the answer generation.
+         *
+         * Accepted values: STATE_UNSPECIFIED, IN_PROGRESS, FAILED, SUCCEEDED, SKIPPED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaAssistAnswer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssistSkippedReasons()
-    {
-    }
-    /**
-     * Optional. The field contains information about the various policy checks'
-     * results like the banned phrases or the Model Armor checks. This field is
-     * populated only if the assist call was skipped due to a policy violation.
-     *
-     * @param GoogleCloudDiscoveryengineV1alphaAssistAnswerCustomerPolicyEnforcementResult $customerPolicyEnforcementResult
-     */
-    public function setCustomerPolicyEnforcementResult(GoogleCloudDiscoveryengineV1alphaAssistAnswerCustomerPolicyEnforcementResult $customerPolicyEnforcementResult)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1alphaAssistAnswerCustomerPolicyEnforcementResult
-     */
-    public function getCustomerPolicyEnforcementResult()
-    {
-    }
-    /**
-     * Immutable. Identifier. Resource name of the `AssistAnswer`. Format: `projec
-     * ts/{project}/locations/{location}/collections/{collection}/engines/{engine}
-     * /sessions/{session}/assistAnswers/{assist_answer}` This field must be a
-     * UTF-8 encoded string with a length limit of 1024 characters.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Replies of the assistant.
-     *
-     * @param GoogleCloudDiscoveryengineV1alphaAssistAnswerReply[] $replies
-     */
-    public function setReplies($replies)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1alphaAssistAnswerReply[]
-     */
-    public function getReplies()
-    {
-    }
-    /**
-     * State of the answer generation.
-     *
-     * Accepted values: STATE_UNSPECIFIED, IN_PROGRESS, FAILED, SUCCEEDED, SKIPPED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaAssistAnswer extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaAssistAnswer
     {
     }
 }

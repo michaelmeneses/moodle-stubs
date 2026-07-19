@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1APIProductAssociation extends \Google\Model
-{
-    /**
-     * API product to be associated with the credential.
-     *
-     * @var string
-     */
-    public $apiproduct;
-    /**
-     * The API product credential associated status. Valid values are `approved`
-     * or `revoked`.
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * API product to be associated with the credential.
-     *
-     * @param string $apiproduct
-     */
-    public function setApiproduct($apiproduct)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1APIProductAssociation extends \Google\Model
     {
+        /**
+         * API product to be associated with the credential.
+         *
+         * @var string
+         */
+        public $apiproduct;
+        /**
+         * The API product credential associated status. Valid values are `approved`
+         * or `revoked`.
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * API product to be associated with the credential.
+         *
+         * @param string $apiproduct
+         */
+        public function setApiproduct($apiproduct)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApiproduct()
+        {
+        }
+        /**
+         * The API product credential associated status. Valid values are `approved`
+         * or `revoked`.
+         *
+         * @param string $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1APIProductAssociation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiproduct()
-    {
-    }
-    /**
-     * The API product credential associated status. Valid values are `approved`
-     * or `revoked`.
-     *
-     * @param string $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatus()
+    class Google_Service_Apigee_GoogleCloudApigeeV1APIProductAssociation extends \Google\Service\Apigee\GoogleCloudApigeeV1APIProductAssociation
     {
     }
 }

@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceUsage;
-
-class ListServicesResponse extends \Google\Collection
-{
-    protected $collection_key = 'services';
-    /**
-     * Token that can be passed to `ListServices` to resume a paginated query.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $servicesType = GoogleApiServiceusageV1Service::class;
-    protected $servicesDataType = 'array';
-    /**
-     * Token that can be passed to `ListServices` to resume a paginated query.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\ServiceUsage {
+    class ListServicesResponse extends \Google\Collection
     {
+        protected $collection_key = 'services';
+        /**
+         * Token that can be passed to `ListServices` to resume a paginated query.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $servicesType = GoogleApiServiceusageV1Service::class;
+        protected $servicesDataType = 'array';
+        /**
+         * Token that can be passed to `ListServices` to resume a paginated query.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The available services for the requested project.
+         *
+         * @param GoogleApiServiceusageV1Service[] $services
+         */
+        public function setServices($services)
+        {
+        }
+        /**
+         * @return GoogleApiServiceusageV1Service[]
+         */
+        public function getServices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceUsage\ListServicesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The available services for the requested project.
-     *
-     * @param GoogleApiServiceusageV1Service[] $services
-     */
-    public function setServices($services)
-    {
-    }
-    /**
-     * @return GoogleApiServiceusageV1Service[]
-     */
-    public function getServices()
+    class Google_Service_ServiceUsage_ListServicesResponse extends \Google\Service\ServiceUsage\ListServicesResponse
     {
     }
 }

@@ -21,119 +21,137 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SASPortalTesting\Resource;
-
-/**
- * The "customers" collection of methods.
- * Typical usage is:
- *  <code>
- *   $prod_tt_sasportalService = new Google\Service\SASPortalTesting(...);
- *   $customers = $prod_tt_sasportalService->customers;
- *  </code>
- */
-class Customers extends \Google\Service\Resource
-{
+namespace Google\Service\SASPortalTesting\Resource {
+    use Google\Service\SASPortalTesting\SasPortalCustomer;
+    use Google\Service\SASPortalTesting\SasPortalListCustomersResponse;
+    use Google\Service\SASPortalTesting\SasPortalListGcpProjectDeploymentsResponse;
+    use Google\Service\SASPortalTesting\SasPortalListLegacyOrganizationsResponse;
+    use Google\Service\SASPortalTesting\SasPortalMigrateOrganizationRequest;
+    use Google\Service\SASPortalTesting\SasPortalOperation;
+    use Google\Service\SASPortalTesting\SasPortalProvisionDeploymentRequest;
+    use Google\Service\SASPortalTesting\SasPortalProvisionDeploymentResponse;
+    use Google\Service\SASPortalTesting\SasPortalSetupSasAnalyticsRequest;
     /**
-     * Returns a requested customer. (customers.get)
-     *
-     * @param string $name Required. The name of the customer.
-     * @param array $optParams Optional parameters.
-     * @return SasPortalCustomer
-     * @throws \Google\Service\Exception
+     * The "customers" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $prod_tt_sasportalService = new Google\Service\SASPortalTesting(...);
+     *   $customers = $prod_tt_sasportalService->customers;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class Customers extends \Google\Service\Resource
     {
+        /**
+         * Returns a requested customer. (customers.get)
+         *
+         * @param string $name Required. The name of the customer.
+         * @param array $optParams Optional parameters.
+         * @return SasPortalCustomer
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Returns a list of requested customers. (customers.listCustomers)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of customers to return in the
+         * response.
+         * @opt_param string pageToken A pagination token returned from a previous call
+         * to ListCustomers that indicates where this listing should continue from.
+         * @return SasPortalListCustomersResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listCustomers($optParams = [])
+        {
+        }
+        /**
+         * Returns a list of SAS deployments associated with current GCP project.
+         * Includes whether SAS analytics has been enabled or not.
+         * (customers.listGcpProjectDeployments)
+         *
+         * @param array $optParams Optional parameters.
+         * @return SasPortalListGcpProjectDeploymentsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listGcpProjectDeployments($optParams = [])
+        {
+        }
+        /**
+         * Returns a list of legacy organizations. (customers.listLegacyOrganizations)
+         *
+         * @param array $optParams Optional parameters.
+         * @return SasPortalListLegacyOrganizationsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listLegacyOrganizations($optParams = [])
+        {
+        }
+        /**
+         * Migrates a SAS organization to the cloud. This will create GCP projects for
+         * each deployment and associate them. The SAS Organization is linked to the gcp
+         * project that called the command. go/sas-legacy-customer-migration
+         * (customers.migrateOrganization)
+         *
+         * @param SasPortalMigrateOrganizationRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SasPortalOperation
+         * @throws \Google\Service\Exception
+         */
+        public function migrateOrganization(SasPortalMigrateOrganizationRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing customer. (customers.patch)
+         *
+         * @param string $name Output only. Resource name of the customer.
+         * @param SasPortalCustomer $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Fields to be updated.
+         * @return SasPortalCustomer
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, SasPortalCustomer $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Creates a new SAS deployment through the GCP workflow. Creates a SAS
+         * organization if an organization match is not found.
+         * (customers.provisionDeployment)
+         *
+         * @param SasPortalProvisionDeploymentRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SasPortalProvisionDeploymentResponse
+         * @throws \Google\Service\Exception
+         */
+        public function provisionDeployment(SasPortalProvisionDeploymentRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Setups the a GCP Project to receive SAS Analytics messages via GCP Pub/Sub
+         * with a subscription to BigQuery. All the Pub/Sub topics and BigQuery tables
+         * are created automatically as part of this service.
+         * (customers.setupSasAnalytics)
+         *
+         * @param SasPortalSetupSasAnalyticsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SasPortalOperation
+         * @throws \Google\Service\Exception
+         */
+        public function setupSasAnalytics(SasPortalSetupSasAnalyticsRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Returns a list of requested customers. (customers.listCustomers)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of customers to return in the
-     * response.
-     * @opt_param string pageToken A pagination token returned from a previous call
-     * to ListCustomers that indicates where this listing should continue from.
-     * @return SasPortalListCustomersResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\SASPortalTesting\Resource\Customers registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listCustomers($optParams = [])
-    {
-    }
-    /**
-     * Returns a list of SAS deployments associated with current GCP project.
-     * Includes whether SAS analytics has been enabled or not.
-     * (customers.listGcpProjectDeployments)
-     *
-     * @param array $optParams Optional parameters.
-     * @return SasPortalListGcpProjectDeploymentsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listGcpProjectDeployments($optParams = [])
-    {
-    }
-    /**
-     * Returns a list of legacy organizations. (customers.listLegacyOrganizations)
-     *
-     * @param array $optParams Optional parameters.
-     * @return SasPortalListLegacyOrganizationsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listLegacyOrganizations($optParams = [])
-    {
-    }
-    /**
-     * Migrates a SAS organization to the cloud. This will create GCP projects for
-     * each deployment and associate them. The SAS Organization is linked to the gcp
-     * project that called the command. go/sas-legacy-customer-migration
-     * (customers.migrateOrganization)
-     *
-     * @param SasPortalMigrateOrganizationRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SasPortalOperation
-     * @throws \Google\Service\Exception
-     */
-    public function migrateOrganization(SasPortalMigrateOrganizationRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates an existing customer. (customers.patch)
-     *
-     * @param string $name Output only. Resource name of the customer.
-     * @param SasPortalCustomer $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Fields to be updated.
-     * @return SasPortalCustomer
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, SasPortalCustomer $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Creates a new SAS deployment through the GCP workflow. Creates a SAS
-     * organization if an organization match is not found.
-     * (customers.provisionDeployment)
-     *
-     * @param SasPortalProvisionDeploymentRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SasPortalProvisionDeploymentResponse
-     * @throws \Google\Service\Exception
-     */
-    public function provisionDeployment(SasPortalProvisionDeploymentRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Setups the a GCP Project to receive SAS Analytics messages via GCP Pub/Sub
-     * with a subscription to BigQuery. All the Pub/Sub topics and BigQuery tables
-     * are created automatically as part of this service.
-     * (customers.setupSasAnalytics)
-     *
-     * @param SasPortalSetupSasAnalyticsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SasPortalOperation
-     * @throws \Google\Service\Exception
-     */
-    public function setupSasAnalytics(SasPortalSetupSasAnalyticsRequest $postBody, $optParams = [])
+    class Google_Service_SASPortalTesting_Resource_Customers extends \Google\Service\SASPortalTesting\Resource\Customers
     {
     }
 }

@@ -21,112 +21,121 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class ExitEvent extends \Google\Model
-{
-    /**
-     * Exit event type is not specified or is unknown in this version.
-     */
-    public const TYPE_EXIT_EVENT_TYPE_UNSPECIFIED = 'EXIT_EVENT_TYPE_UNSPECIFIED';
-    /**
-     * The exit event is the default one.
-     */
-    public const TYPE_EXIT_EVENT_TYPE_DEFAULT = 'EXIT_EVENT_TYPE_DEFAULT';
-    /**
-     * The exit event is a backup exit event. There could be multiple backup exit
-     * events in a creative.
-     */
-    public const TYPE_EXIT_EVENT_TYPE_BACKUP = 'EXIT_EVENT_TYPE_BACKUP';
-    /**
-     * Optional. The name of the click tag of the exit event. The name must be
-     * unique within one creative. Leave it empty or unset for creatives
-     * containing image assets only.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. The name used to identify this event in reports. Leave it empty
-     * or unset for creatives containing image assets only.
-     *
-     * @var string
-     */
-    public $reportingName;
-    /**
-     * Required. The type of the exit event.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Required. The click through URL of the exit event. This is required when
-     * type is: * `EXIT_EVENT_TYPE_DEFAULT` * `EXIT_EVENT_TYPE_BACKUP`
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * Optional. The name of the click tag of the exit event. The name must be
-     * unique within one creative. Leave it empty or unset for creatives
-     * containing image assets only.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\DisplayVideo {
+    class ExitEvent extends \Google\Model
     {
+        /**
+         * Exit event type is not specified or is unknown in this version.
+         */
+        public const TYPE_EXIT_EVENT_TYPE_UNSPECIFIED = 'EXIT_EVENT_TYPE_UNSPECIFIED';
+        /**
+         * The exit event is the default one.
+         */
+        public const TYPE_EXIT_EVENT_TYPE_DEFAULT = 'EXIT_EVENT_TYPE_DEFAULT';
+        /**
+         * The exit event is a backup exit event. There could be multiple backup exit
+         * events in a creative.
+         */
+        public const TYPE_EXIT_EVENT_TYPE_BACKUP = 'EXIT_EVENT_TYPE_BACKUP';
+        /**
+         * Optional. The name of the click tag of the exit event. The name must be
+         * unique within one creative. Leave it empty or unset for creatives
+         * containing image assets only.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. The name used to identify this event in reports. Leave it empty
+         * or unset for creatives containing image assets only.
+         *
+         * @var string
+         */
+        public $reportingName;
+        /**
+         * Required. The type of the exit event.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Required. The click through URL of the exit event. This is required when
+         * type is: * `EXIT_EVENT_TYPE_DEFAULT` * `EXIT_EVENT_TYPE_BACKUP`
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * Optional. The name of the click tag of the exit event. The name must be
+         * unique within one creative. Leave it empty or unset for creatives
+         * containing image assets only.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. The name used to identify this event in reports. Leave it empty
+         * or unset for creatives containing image assets only.
+         *
+         * @param string $reportingName
+         */
+        public function setReportingName($reportingName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReportingName()
+        {
+        }
+        /**
+         * Required. The type of the exit event.
+         *
+         * Accepted values: EXIT_EVENT_TYPE_UNSPECIFIED, EXIT_EVENT_TYPE_DEFAULT,
+         * EXIT_EVENT_TYPE_BACKUP
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
+        /**
+         * Required. The click through URL of the exit event. This is required when
+         * type is: * `EXIT_EVENT_TYPE_DEFAULT` * `EXIT_EVENT_TYPE_BACKUP`
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\ExitEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. The name used to identify this event in reports. Leave it empty
-     * or unset for creatives containing image assets only.
-     *
-     * @param string $reportingName
-     */
-    public function setReportingName($reportingName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReportingName()
-    {
-    }
-    /**
-     * Required. The type of the exit event.
-     *
-     * Accepted values: EXIT_EVENT_TYPE_UNSPECIFIED, EXIT_EVENT_TYPE_DEFAULT,
-     * EXIT_EVENT_TYPE_BACKUP
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
-    {
-    }
-    /**
-     * Required. The click through URL of the exit event. This is required when
-     * type is: * `EXIT_EVENT_TYPE_DEFAULT` * `EXIT_EVENT_TYPE_BACKUP`
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_DisplayVideo_ExitEvent extends \Google\Service\DisplayVideo\ExitEvent
     {
     }
 }

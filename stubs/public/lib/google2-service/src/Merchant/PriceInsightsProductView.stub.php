@@ -21,297 +21,306 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Merchant;
-
-class PriceInsightsProductView extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $brand;
-    /**
-     * @var string
-     */
-    public $categoryL1;
-    /**
-     * @var string
-     */
-    public $categoryL2;
-    /**
-     * @var string
-     */
-    public $categoryL3;
-    /**
-     * @var string
-     */
-    public $categoryL4;
-    /**
-     * @var string
-     */
-    public $categoryL5;
-    /**
-     * @var string
-     */
-    public $effectiveness;
-    /**
-     * @var string
-     */
-    public $id;
-    /**
-     * @var string
-     */
-    public $offerId;
-    public $predictedClicksChangeFraction;
-    public $predictedConversionsChangeFraction;
-    public $predictedImpressionsChangeFraction;
-    protected $priceType = Price::class;
-    protected $priceDataType = '';
-    /**
-     * @var string
-     */
-    public $productTypeL1;
-    /**
-     * @var string
-     */
-    public $productTypeL2;
-    /**
-     * @var string
-     */
-    public $productTypeL3;
-    /**
-     * @var string
-     */
-    public $productTypeL4;
-    /**
-     * @var string
-     */
-    public $productTypeL5;
-    protected $suggestedPriceType = Price::class;
-    protected $suggestedPriceDataType = '';
-    /**
-     * @var string
-     */
-    public $title;
-    /**
-     * @param string
-     */
-    public function setBrand($brand)
+namespace Google\Service\Merchant {
+    class PriceInsightsProductView extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $brand;
+        /**
+         * @var string
+         */
+        public $categoryL1;
+        /**
+         * @var string
+         */
+        public $categoryL2;
+        /**
+         * @var string
+         */
+        public $categoryL3;
+        /**
+         * @var string
+         */
+        public $categoryL4;
+        /**
+         * @var string
+         */
+        public $categoryL5;
+        /**
+         * @var string
+         */
+        public $effectiveness;
+        /**
+         * @var string
+         */
+        public $id;
+        /**
+         * @var string
+         */
+        public $offerId;
+        public $predictedClicksChangeFraction;
+        public $predictedConversionsChangeFraction;
+        public $predictedImpressionsChangeFraction;
+        protected $priceType = Price::class;
+        protected $priceDataType = '';
+        /**
+         * @var string
+         */
+        public $productTypeL1;
+        /**
+         * @var string
+         */
+        public $productTypeL2;
+        /**
+         * @var string
+         */
+        public $productTypeL3;
+        /**
+         * @var string
+         */
+        public $productTypeL4;
+        /**
+         * @var string
+         */
+        public $productTypeL5;
+        protected $suggestedPriceType = Price::class;
+        protected $suggestedPriceDataType = '';
+        /**
+         * @var string
+         */
+        public $title;
+        /**
+         * @param string
+         */
+        public function setBrand($brand)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBrand()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCategoryL1($categoryL1)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCategoryL1()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCategoryL2($categoryL2)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCategoryL2()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCategoryL3($categoryL3)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCategoryL3()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCategoryL4($categoryL4)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCategoryL4()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCategoryL5($categoryL5)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCategoryL5()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEffectiveness($effectiveness)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEffectiveness()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOfferId($offerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOfferId()
+        {
+        }
+        public function setPredictedClicksChangeFraction($predictedClicksChangeFraction)
+        {
+        }
+        public function getPredictedClicksChangeFraction()
+        {
+        }
+        public function setPredictedConversionsChangeFraction($predictedConversionsChangeFraction)
+        {
+        }
+        public function getPredictedConversionsChangeFraction()
+        {
+        }
+        public function setPredictedImpressionsChangeFraction($predictedImpressionsChangeFraction)
+        {
+        }
+        public function getPredictedImpressionsChangeFraction()
+        {
+        }
+        /**
+         * @param Price
+         */
+        public function setPrice(Price $price)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getPrice()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProductTypeL1($productTypeL1)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductTypeL1()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProductTypeL2($productTypeL2)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductTypeL2()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProductTypeL3($productTypeL3)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductTypeL3()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProductTypeL4($productTypeL4)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductTypeL4()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProductTypeL5($productTypeL5)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductTypeL5()
+        {
+        }
+        /**
+         * @param Price
+         */
+        public function setSuggestedPrice(Price $suggestedPrice)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getSuggestedPrice()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Merchant\PriceInsightsProductView registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBrand()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCategoryL1($categoryL1)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCategoryL1()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCategoryL2($categoryL2)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCategoryL2()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCategoryL3($categoryL3)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCategoryL3()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCategoryL4($categoryL4)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCategoryL4()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCategoryL5($categoryL5)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCategoryL5()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEffectiveness($effectiveness)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEffectiveness()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOfferId($offerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOfferId()
-    {
-    }
-    public function setPredictedClicksChangeFraction($predictedClicksChangeFraction)
-    {
-    }
-    public function getPredictedClicksChangeFraction()
-    {
-    }
-    public function setPredictedConversionsChangeFraction($predictedConversionsChangeFraction)
-    {
-    }
-    public function getPredictedConversionsChangeFraction()
-    {
-    }
-    public function setPredictedImpressionsChangeFraction($predictedImpressionsChangeFraction)
-    {
-    }
-    public function getPredictedImpressionsChangeFraction()
-    {
-    }
-    /**
-     * @param Price
-     */
-    public function setPrice(Price $price)
-    {
-    }
-    /**
-     * @return Price
-     */
-    public function getPrice()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProductTypeL1($productTypeL1)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductTypeL1()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProductTypeL2($productTypeL2)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductTypeL2()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProductTypeL3($productTypeL3)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductTypeL3()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProductTypeL4($productTypeL4)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductTypeL4()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProductTypeL5($productTypeL5)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductTypeL5()
-    {
-    }
-    /**
-     * @param Price
-     */
-    public function setSuggestedPrice(Price $suggestedPrice)
-    {
-    }
-    /**
-     * @return Price
-     */
-    public function getSuggestedPrice()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_Merchant_PriceInsightsProductView extends \Google\Service\Merchant\PriceInsightsProductView
     {
     }
 }

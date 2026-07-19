@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_columnsortorder;
 
+use core\context;
+use core_question\local\bank\column_manager_base;
+use core_question\local\bank\plugin_features_base;
+use core_question\local\bank\view;
+use qbank_columnsortorder\output\add_column;
+use qbank_columnsortorder\output\reset_columns;
 /**
  * Plugin features for qbank_columnsortorder
  *

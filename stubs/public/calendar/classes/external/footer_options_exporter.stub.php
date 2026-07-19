@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_calendar\external;
 
+use core\external\exporter;
+use renderer_base;
+use stdClass;
+use moodle_url;
 /**
  * Class for exporting calendar footer view options data.
  *

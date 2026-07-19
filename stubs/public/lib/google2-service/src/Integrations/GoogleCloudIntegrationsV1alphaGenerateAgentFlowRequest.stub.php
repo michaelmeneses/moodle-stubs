@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaGenerateAgentFlowRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $creator;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var string
-     */
-    public $displayName;
-    /**
-     * @var string
-     */
-    public $intent;
-    /**
-     * @param string
-     */
-    public function setCreator($creator)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaGenerateAgentFlowRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $creator;
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @var string
+         */
+        public $displayName;
+        /**
+         * @var string
+         */
+        public $intent;
+        /**
+         * @param string
+         */
+        public function setCreator($creator)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreator()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setIntent($intent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIntent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaGenerateAgentFlowRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreator()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setIntent($intent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIntent()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaGenerateAgentFlowRequest extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaGenerateAgentFlowRequest
     {
     }
 }

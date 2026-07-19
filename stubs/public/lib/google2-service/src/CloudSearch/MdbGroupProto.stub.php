@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class MdbGroupProto extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $groupName;
-    /**
-     * @param string
-     */
-    public function setGroupName($groupName)
+namespace Google\Service\CloudSearch {
+    class MdbGroupProto extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $groupName;
+        /**
+         * @param string
+         */
+        public function setGroupName($groupName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGroupName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\MdbGroupProto registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGroupName()
+    class Google_Service_CloudSearch_MdbGroupProto extends \Google\Service\CloudSearch\MdbGroupProto
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1MigrateResourceRequestMigrateDataLabelingDatasetConfigMigrateDataLabelingAnnotatedDatasetConfig extends \Google\Model
-{
-    /**
-     * Required. Full resource name of data labeling AnnotatedDataset. Format: `pr
-     * ojects/{project}/datasets/{dataset}/annotatedDatasets/{annotated_dataset}`.
-     *
-     * @var string
-     */
-    public $annotatedDataset;
-    /**
-     * Required. Full resource name of data labeling AnnotatedDataset. Format: `pr
-     * ojects/{project}/datasets/{dataset}/annotatedDatasets/{annotated_dataset}`.
-     *
-     * @param string $annotatedDataset
-     */
-    public function setAnnotatedDataset($annotatedDataset)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1MigrateResourceRequestMigrateDataLabelingDatasetConfigMigrateDataLabelingAnnotatedDatasetConfig extends \Google\Model
     {
+        /**
+         * Required. Full resource name of data labeling AnnotatedDataset. Format: `pr
+         * ojects/{project}/datasets/{dataset}/annotatedDatasets/{annotated_dataset}`.
+         *
+         * @var string
+         */
+        public $annotatedDataset;
+        /**
+         * Required. Full resource name of data labeling AnnotatedDataset. Format: `pr
+         * ojects/{project}/datasets/{dataset}/annotatedDatasets/{annotated_dataset}`.
+         *
+         * @param string $annotatedDataset
+         */
+        public function setAnnotatedDataset($annotatedDataset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnnotatedDataset()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1MigrateResourceRequestMigrateDataLabelingDatasetConfigMigrateDataLabelingAnnotatedDatasetConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotatedDataset()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1MigrateResourceRequestMigrateDataLabelingDatasetConfigMigrateDataLabelingAnnotatedDatasetConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1MigrateResourceRequestMigrateDataLabelingDatasetConfigMigrateDataLabelingAnnotatedDatasetConfig
     {
     }
 }

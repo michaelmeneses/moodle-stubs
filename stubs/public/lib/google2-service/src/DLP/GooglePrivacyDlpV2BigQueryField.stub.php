@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2BigQueryField extends \Google\Model
-{
-    protected $fieldType = GooglePrivacyDlpV2FieldId::class;
-    protected $fieldDataType = '';
-    protected $tableType = GooglePrivacyDlpV2BigQueryTable::class;
-    protected $tableDataType = '';
-    /**
-     * Designated field in the BigQuery table.
-     *
-     * @param GooglePrivacyDlpV2FieldId $field
-     */
-    public function setField(GooglePrivacyDlpV2FieldId $field)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2BigQueryField extends \Google\Model
     {
+        protected $fieldType = GooglePrivacyDlpV2FieldId::class;
+        protected $fieldDataType = '';
+        protected $tableType = GooglePrivacyDlpV2BigQueryTable::class;
+        protected $tableDataType = '';
+        /**
+         * Designated field in the BigQuery table.
+         *
+         * @param GooglePrivacyDlpV2FieldId $field
+         */
+        public function setField(GooglePrivacyDlpV2FieldId $field)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2FieldId
+         */
+        public function getField()
+        {
+        }
+        /**
+         * Source table of the field.
+         *
+         * @param GooglePrivacyDlpV2BigQueryTable $table
+         */
+        public function setTable(GooglePrivacyDlpV2BigQueryTable $table)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2BigQueryTable
+         */
+        public function getTable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2FieldId
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2BigQueryField registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getField()
-    {
-    }
-    /**
-     * Source table of the field.
-     *
-     * @param GooglePrivacyDlpV2BigQueryTable $table
-     */
-    public function setTable(GooglePrivacyDlpV2BigQueryTable $table)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2BigQueryTable
-     */
-    public function getTable()
+    class Google_Service_DLP_GooglePrivacyDlpV2BigQueryField extends \Google\Service\DLP\GooglePrivacyDlpV2BigQueryField
     {
     }
 }

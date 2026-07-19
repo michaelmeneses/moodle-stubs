@@ -21,49 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin\Resource;
-
-/**
- * The "hotTablets" collection of methods.
- * Typical usage is:
- *  <code>
- *   $bigtableadminService = new Google\Service\BigtableAdmin(...);
- *   $hotTablets = $bigtableadminService->projects_instances_clusters_hotTablets;
- *  </code>
- */
-class ProjectsInstancesClustersHotTablets extends \Google\Service\Resource
-{
+namespace Google\Service\BigtableAdmin\Resource {
+    use Google\Service\BigtableAdmin\ListHotTabletsResponse;
     /**
-     * Lists hot tablets in a cluster, within the time range provided. Hot tablets
-     * are ordered based on CPU usage.
-     * (hotTablets.listProjectsInstancesClustersHotTablets)
-     *
-     * @param string $parent Required. The cluster name to list hot tablets. Value
-     * is in the following form:
-     * `projects/{project}/instances/{instance}/clusters/{cluster}`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string endTime The end time to list hot tablets.
-     * @opt_param int pageSize Maximum number of results per page. A page_size that
-     * is empty or zero lets the server choose the number of items to return. A
-     * page_size which is strictly positive will return at most that many items. A
-     * negative page_size will cause an error. Following the first request,
-     * subsequent paginated calls do not need a page_size field. If a page_size is
-     * set in subsequent calls, it must match the page_size given in the first
-     * request.
-     * @opt_param string pageToken The value of `next_page_token` returned by a
-     * previous call.
-     * @opt_param string startTime The start time to list hot tablets. The hot
-     * tablets in the response will have start times between the requested start
-     * time and end time. Start time defaults to Now if it is unset, and end time
-     * defaults to Now - 24 hours if it is unset. The start time should be less than
-     * the end time, and the maximum allowed time range between start time and end
-     * time is 48 hours. Start time and end time should have values between Now and
-     * Now - 14 days.
-     * @return ListHotTabletsResponse
-     * @throws \Google\Service\Exception
+     * The "hotTablets" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $bigtableadminService = new Google\Service\BigtableAdmin(...);
+     *   $hotTablets = $bigtableadminService->projects_instances_clusters_hotTablets;
+     *  </code>
      */
-    public function listProjectsInstancesClustersHotTablets($parent, $optParams = [])
+    class ProjectsInstancesClustersHotTablets extends \Google\Service\Resource
+    {
+        /**
+         * Lists hot tablets in a cluster, within the time range provided. Hot tablets
+         * are ordered based on CPU usage.
+         * (hotTablets.listProjectsInstancesClustersHotTablets)
+         *
+         * @param string $parent Required. The cluster name to list hot tablets. Value
+         * is in the following form:
+         * `projects/{project}/instances/{instance}/clusters/{cluster}`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string endTime The end time to list hot tablets.
+         * @opt_param int pageSize Maximum number of results per page. A page_size that
+         * is empty or zero lets the server choose the number of items to return. A
+         * page_size which is strictly positive will return at most that many items. A
+         * negative page_size will cause an error. Following the first request,
+         * subsequent paginated calls do not need a page_size field. If a page_size is
+         * set in subsequent calls, it must match the page_size given in the first
+         * request.
+         * @opt_param string pageToken The value of `next_page_token` returned by a
+         * previous call.
+         * @opt_param string startTime The start time to list hot tablets. The hot
+         * tablets in the response will have start times between the requested start
+         * time and end time. Start time defaults to Now if it is unset, and end time
+         * defaults to Now - 24 hours if it is unset. The start time should be less than
+         * the end time, and the maximum allowed time range between start time and end
+         * time is 48 hours. Start time and end time should have values between Now and
+         * Now - 14 days.
+         * @return ListHotTabletsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsInstancesClustersHotTablets($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\BigtableAdmin\Resource\ProjectsInstancesClustersHotTablets registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_BigtableAdmin_Resource_ProjectsInstancesClustersHotTablets extends \Google\Service\BigtableAdmin\Resource\ProjectsInstancesClustersHotTablets
     {
     }
 }

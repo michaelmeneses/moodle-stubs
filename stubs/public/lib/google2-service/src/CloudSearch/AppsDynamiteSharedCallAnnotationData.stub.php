@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedCallAnnotationData extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $callEndedTimestamp;
-    protected $callMetadataType = AppsDynamiteSharedCallMetadata::class;
-    protected $callMetadataDataType = '';
-    /**
-     * @var string
-     */
-    public $callStatus;
-    /**
-     * @param string
-     */
-    public function setCallEndedTimestamp($callEndedTimestamp)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedCallAnnotationData extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $callEndedTimestamp;
+        protected $callMetadataType = AppsDynamiteSharedCallMetadata::class;
+        protected $callMetadataDataType = '';
+        /**
+         * @var string
+         */
+        public $callStatus;
+        /**
+         * @param string
+         */
+        public function setCallEndedTimestamp($callEndedTimestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCallEndedTimestamp()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedCallMetadata
+         */
+        public function setCallMetadata(AppsDynamiteSharedCallMetadata $callMetadata)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedCallMetadata
+         */
+        public function getCallMetadata()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCallStatus($callStatus)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCallStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedCallAnnotationData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCallEndedTimestamp()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedCallMetadata
-     */
-    public function setCallMetadata(AppsDynamiteSharedCallMetadata $callMetadata)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedCallMetadata
-     */
-    public function getCallMetadata()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCallStatus($callStatus)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCallStatus()
+    class Google_Service_CloudSearch_AppsDynamiteSharedCallAnnotationData extends \Google\Service\CloudSearch\AppsDynamiteSharedCallAnnotationData
     {
     }
 }

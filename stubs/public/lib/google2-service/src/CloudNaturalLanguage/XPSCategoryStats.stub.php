@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSCategoryStats extends \Google\Collection
-{
-    protected $collection_key = 'topCategoryStats';
-    protected $commonStatsType = XPSCommonStats::class;
-    protected $commonStatsDataType = '';
-    protected $topCategoryStatsType = XPSCategoryStatsSingleCategoryStats::class;
-    protected $topCategoryStatsDataType = 'array';
-    /**
-     * @param XPSCommonStats $commonStats
-     */
-    public function setCommonStats(XPSCommonStats $commonStats)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSCategoryStats extends \Google\Collection
     {
+        protected $collection_key = 'topCategoryStats';
+        protected $commonStatsType = XPSCommonStats::class;
+        protected $commonStatsDataType = '';
+        protected $topCategoryStatsType = XPSCategoryStatsSingleCategoryStats::class;
+        protected $topCategoryStatsDataType = 'array';
+        /**
+         * @param XPSCommonStats $commonStats
+         */
+        public function setCommonStats(XPSCommonStats $commonStats)
+        {
+        }
+        /**
+         * @return XPSCommonStats
+         */
+        public function getCommonStats()
+        {
+        }
+        /**
+         * The statistics of the top 20 CATEGORY values, ordered by
+         * CategoryStats.SingleCategoryStats.count.
+         *
+         * @param XPSCategoryStatsSingleCategoryStats[] $topCategoryStats
+         */
+        public function setTopCategoryStats($topCategoryStats)
+        {
+        }
+        /**
+         * @return XPSCategoryStatsSingleCategoryStats[]
+         */
+        public function getTopCategoryStats()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return XPSCommonStats
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSCategoryStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommonStats()
-    {
-    }
-    /**
-     * The statistics of the top 20 CATEGORY values, ordered by
-     * CategoryStats.SingleCategoryStats.count.
-     *
-     * @param XPSCategoryStatsSingleCategoryStats[] $topCategoryStats
-     */
-    public function setTopCategoryStats($topCategoryStats)
-    {
-    }
-    /**
-     * @return XPSCategoryStatsSingleCategoryStats[]
-     */
-    public function getTopCategoryStats()
+    class Google_Service_CloudNaturalLanguage_XPSCategoryStats extends \Google\Service\CloudNaturalLanguage\XPSCategoryStats
     {
     }
 }

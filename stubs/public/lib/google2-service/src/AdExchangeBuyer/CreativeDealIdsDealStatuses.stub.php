@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class CreativeDealIdsDealStatuses extends \Google\Model
-{
-    public $arcStatus;
-    public $dealId;
-    public $webPropertyId;
-    public function setArcStatus($arcStatus)
+namespace Google\Service\AdExchangeBuyer {
+    class CreativeDealIdsDealStatuses extends \Google\Model
     {
+        public $arcStatus;
+        public $dealId;
+        public $webPropertyId;
+        public function setArcStatus($arcStatus)
+        {
+        }
+        public function getArcStatus()
+        {
+        }
+        public function setDealId($dealId)
+        {
+        }
+        public function getDealId()
+        {
+        }
+        public function setWebPropertyId($webPropertyId)
+        {
+        }
+        public function getWebPropertyId()
+        {
+        }
     }
-    public function getArcStatus()
-    {
-    }
-    public function setDealId($dealId)
-    {
-    }
-    public function getDealId()
-    {
-    }
-    public function setWebPropertyId($webPropertyId)
-    {
-    }
-    public function getWebPropertyId()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\CreativeDealIdsDealStatuses registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AdExchangeBuyer_CreativeDealIdsDealStatuses extends \Google\Service\AdExchangeBuyer\CreativeDealIdsDealStatuses
     {
     }
 }

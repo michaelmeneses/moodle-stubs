@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1GenerateVideoResponse extends \Google\Collection
-{
-    protected $collection_key = 'videos';
-    /**
-     * The cloud storage uris of the generated videos.
-     *
-     * @deprecated
-     * @var string[]
-     */
-    public $generatedSamples;
-    /**
-     * Returns if any videos were filtered due to RAI policies.
-     *
-     * @var int
-     */
-    public $raiMediaFilteredCount;
-    /**
-     * Returns rai failure reasons if any.
-     *
-     * @var string[]
-     */
-    public $raiMediaFilteredReasons;
-    protected $videosType = GoogleCloudAiplatformV1GenerateVideoResponseVideo::class;
-    protected $videosDataType = 'array';
-    /**
-     * The cloud storage uris of the generated videos.
-     *
-     * @deprecated
-     * @param string[] $generatedSamples
-     */
-    public function setGeneratedSamples($generatedSamples)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1GenerateVideoResponse extends \Google\Collection
     {
+        protected $collection_key = 'videos';
+        /**
+         * The cloud storage uris of the generated videos.
+         *
+         * @deprecated
+         * @var string[]
+         */
+        public $generatedSamples;
+        /**
+         * Returns if any videos were filtered due to RAI policies.
+         *
+         * @var int
+         */
+        public $raiMediaFilteredCount;
+        /**
+         * Returns rai failure reasons if any.
+         *
+         * @var string[]
+         */
+        public $raiMediaFilteredReasons;
+        protected $videosType = GoogleCloudAiplatformV1GenerateVideoResponseVideo::class;
+        protected $videosDataType = 'array';
+        /**
+         * The cloud storage uris of the generated videos.
+         *
+         * @deprecated
+         * @param string[] $generatedSamples
+         */
+        public function setGeneratedSamples($generatedSamples)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string[]
+         */
+        public function getGeneratedSamples()
+        {
+        }
+        /**
+         * Returns if any videos were filtered due to RAI policies.
+         *
+         * @param int $raiMediaFilteredCount
+         */
+        public function setRaiMediaFilteredCount($raiMediaFilteredCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRaiMediaFilteredCount()
+        {
+        }
+        /**
+         * Returns rai failure reasons if any.
+         *
+         * @param string[] $raiMediaFilteredReasons
+         */
+        public function setRaiMediaFilteredReasons($raiMediaFilteredReasons)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRaiMediaFilteredReasons()
+        {
+        }
+        /**
+         * List of video bytes or Cloud Storage URIs of the generated videos.
+         *
+         * @param GoogleCloudAiplatformV1GenerateVideoResponseVideo[] $videos
+         */
+        public function setVideos($videos)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1GenerateVideoResponseVideo[]
+         */
+        public function getVideos()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return string[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1GenerateVideoResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGeneratedSamples()
-    {
-    }
-    /**
-     * Returns if any videos were filtered due to RAI policies.
-     *
-     * @param int $raiMediaFilteredCount
-     */
-    public function setRaiMediaFilteredCount($raiMediaFilteredCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRaiMediaFilteredCount()
-    {
-    }
-    /**
-     * Returns rai failure reasons if any.
-     *
-     * @param string[] $raiMediaFilteredReasons
-     */
-    public function setRaiMediaFilteredReasons($raiMediaFilteredReasons)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRaiMediaFilteredReasons()
-    {
-    }
-    /**
-     * List of video bytes or Cloud Storage URIs of the generated videos.
-     *
-     * @param GoogleCloudAiplatformV1GenerateVideoResponseVideo[] $videos
-     */
-    public function setVideos($videos)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1GenerateVideoResponseVideo[]
-     */
-    public function getVideos()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1GenerateVideoResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1GenerateVideoResponse
     {
     }
 }

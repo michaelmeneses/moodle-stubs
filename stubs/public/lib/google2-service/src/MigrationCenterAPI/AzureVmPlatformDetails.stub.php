@@ -21,103 +21,112 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class AzureVmPlatformDetails extends \Google\Model
-{
-    /**
-     * Simultaneous Multithreading status unknown.
-     */
-    public const HYPERTHREADING_HYPERTHREADING_STATUS_UNSPECIFIED = 'HYPERTHREADING_STATUS_UNSPECIFIED';
-    /**
-     * Simultaneous Multithreading is disabled or unavailable.
-     */
-    public const HYPERTHREADING_HYPERTHREADING_STATUS_DISABLED = 'HYPERTHREADING_STATUS_DISABLED';
-    /**
-     * Simultaneous Multithreading is enabled.
-     */
-    public const HYPERTHREADING_HYPERTHREADING_STATUS_ENABLED = 'HYPERTHREADING_STATUS_ENABLED';
-    /**
-     * Whether the machine is hyperthreaded.
-     *
-     * @var string
-     */
-    public $hyperthreading;
-    /**
-     * The location of the machine in the Azure format.
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * Azure platform's machine type label.
-     *
-     * @var string
-     */
-    public $machineTypeLabel;
-    /**
-     * Azure platform's provisioning state.
-     *
-     * @var string
-     */
-    public $provisioningState;
-    /**
-     * Whether the machine is hyperthreaded.
-     *
-     * Accepted values: HYPERTHREADING_STATUS_UNSPECIFIED,
-     * HYPERTHREADING_STATUS_DISABLED, HYPERTHREADING_STATUS_ENABLED
-     *
-     * @param self::HYPERTHREADING_* $hyperthreading
-     */
-    public function setHyperthreading($hyperthreading)
+namespace Google\Service\MigrationCenterAPI {
+    class AzureVmPlatformDetails extends \Google\Model
     {
+        /**
+         * Simultaneous Multithreading status unknown.
+         */
+        public const HYPERTHREADING_HYPERTHREADING_STATUS_UNSPECIFIED = 'HYPERTHREADING_STATUS_UNSPECIFIED';
+        /**
+         * Simultaneous Multithreading is disabled or unavailable.
+         */
+        public const HYPERTHREADING_HYPERTHREADING_STATUS_DISABLED = 'HYPERTHREADING_STATUS_DISABLED';
+        /**
+         * Simultaneous Multithreading is enabled.
+         */
+        public const HYPERTHREADING_HYPERTHREADING_STATUS_ENABLED = 'HYPERTHREADING_STATUS_ENABLED';
+        /**
+         * Whether the machine is hyperthreaded.
+         *
+         * @var string
+         */
+        public $hyperthreading;
+        /**
+         * The location of the machine in the Azure format.
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * Azure platform's machine type label.
+         *
+         * @var string
+         */
+        public $machineTypeLabel;
+        /**
+         * Azure platform's provisioning state.
+         *
+         * @var string
+         */
+        public $provisioningState;
+        /**
+         * Whether the machine is hyperthreaded.
+         *
+         * Accepted values: HYPERTHREADING_STATUS_UNSPECIFIED,
+         * HYPERTHREADING_STATUS_DISABLED, HYPERTHREADING_STATUS_ENABLED
+         *
+         * @param self::HYPERTHREADING_* $hyperthreading
+         */
+        public function setHyperthreading($hyperthreading)
+        {
+        }
+        /**
+         * @return self::HYPERTHREADING_*
+         */
+        public function getHyperthreading()
+        {
+        }
+        /**
+         * The location of the machine in the Azure format.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * Azure platform's machine type label.
+         *
+         * @param string $machineTypeLabel
+         */
+        public function setMachineTypeLabel($machineTypeLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMachineTypeLabel()
+        {
+        }
+        /**
+         * Azure platform's provisioning state.
+         *
+         * @param string $provisioningState
+         */
+        public function setProvisioningState($provisioningState)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProvisioningState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::HYPERTHREADING_*
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\AzureVmPlatformDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHyperthreading()
-    {
-    }
-    /**
-     * The location of the machine in the Azure format.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * Azure platform's machine type label.
-     *
-     * @param string $machineTypeLabel
-     */
-    public function setMachineTypeLabel($machineTypeLabel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMachineTypeLabel()
-    {
-    }
-    /**
-     * Azure platform's provisioning state.
-     *
-     * @param string $provisioningState
-     */
-    public function setProvisioningState($provisioningState)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProvisioningState()
+    class Google_Service_MigrationCenterAPI_AzureVmPlatformDetails extends \Google\Service\MigrationCenterAPI\AzureVmPlatformDetails
     {
     }
 }

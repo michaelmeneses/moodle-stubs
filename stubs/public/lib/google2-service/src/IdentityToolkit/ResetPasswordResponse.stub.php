@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\IdentityToolkit;
-
-class ResetPasswordResponse extends \Google\Model
-{
-    /**
-     * The user's email. If the out-of-band code is for email recovery, the user's
-     * original email.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * The fixed string "identitytoolkit#ResetPasswordResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * If the out-of-band code is for email recovery, the user's new email.
-     *
-     * @var string
-     */
-    public $newEmail;
-    /**
-     * The request type.
-     *
-     * @var string
-     */
-    public $requestType;
-    /**
-     * The user's email. If the out-of-band code is for email recovery, the user's
-     * original email.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
+namespace Google\Service\IdentityToolkit {
+    class ResetPasswordResponse extends \Google\Model
     {
+        /**
+         * The user's email. If the out-of-band code is for email recovery, the user's
+         * original email.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * The fixed string "identitytoolkit#ResetPasswordResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * If the out-of-band code is for email recovery, the user's new email.
+         *
+         * @var string
+         */
+        public $newEmail;
+        /**
+         * The request type.
+         *
+         * @var string
+         */
+        public $requestType;
+        /**
+         * The user's email. If the out-of-band code is for email recovery, the user's
+         * original email.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * The fixed string "identitytoolkit#ResetPasswordResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * If the out-of-band code is for email recovery, the user's new email.
+         *
+         * @param string $newEmail
+         */
+        public function setNewEmail($newEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNewEmail()
+        {
+        }
+        /**
+         * The request type.
+         *
+         * @param string $requestType
+         */
+        public function setRequestType($requestType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\IdentityToolkit\ResetPasswordResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmail()
-    {
-    }
-    /**
-     * The fixed string "identitytoolkit#ResetPasswordResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * If the out-of-band code is for email recovery, the user's new email.
-     *
-     * @param string $newEmail
-     */
-    public function setNewEmail($newEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNewEmail()
-    {
-    }
-    /**
-     * The request type.
-     *
-     * @param string $requestType
-     */
-    public function setRequestType($requestType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestType()
+    class Google_Service_IdentityToolkit_ResetPasswordResponse extends \Google\Service\IdentityToolkit\ResetPasswordResponse
     {
     }
 }

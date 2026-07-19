@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3EntityTypeEntity extends \Google\Collection
-{
-    protected $collection_key = 'synonyms';
-    /**
-     * Required. A collection of value synonyms. For example, if the entity type
-     * is *vegetable*, and `value` is *scallions*, a synonym could be *green
-     * onions*. For `KIND_LIST` entity types: * This collection must contain
-     * exactly one synonym equal to `value`.
-     *
-     * @var string[]
-     */
-    public $synonyms;
-    /**
-     * Required. The primary value associated with this entity entry. For example,
-     * if the entity type is *vegetable*, the value could be *scallions*. For
-     * `KIND_MAP` entity types: * A canonical value to be used in place of
-     * synonyms. For `KIND_LIST` entity types: * A string that can contain
-     * references to other entity types (with or without aliases).
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Required. A collection of value synonyms. For example, if the entity type
-     * is *vegetable*, and `value` is *scallions*, a synonym could be *green
-     * onions*. For `KIND_LIST` entity types: * This collection must contain
-     * exactly one synonym equal to `value`.
-     *
-     * @param string[] $synonyms
-     */
-    public function setSynonyms($synonyms)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3EntityTypeEntity extends \Google\Collection
     {
+        protected $collection_key = 'synonyms';
+        /**
+         * Required. A collection of value synonyms. For example, if the entity type
+         * is *vegetable*, and `value` is *scallions*, a synonym could be *green
+         * onions*. For `KIND_LIST` entity types: * This collection must contain
+         * exactly one synonym equal to `value`.
+         *
+         * @var string[]
+         */
+        public $synonyms;
+        /**
+         * Required. The primary value associated with this entity entry. For example,
+         * if the entity type is *vegetable*, the value could be *scallions*. For
+         * `KIND_MAP` entity types: * A canonical value to be used in place of
+         * synonyms. For `KIND_LIST` entity types: * A string that can contain
+         * references to other entity types (with or without aliases).
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Required. A collection of value synonyms. For example, if the entity type
+         * is *vegetable*, and `value` is *scallions*, a synonym could be *green
+         * onions*. For `KIND_LIST` entity types: * This collection must contain
+         * exactly one synonym equal to `value`.
+         *
+         * @param string[] $synonyms
+         */
+        public function setSynonyms($synonyms)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSynonyms()
+        {
+        }
+        /**
+         * Required. The primary value associated with this entity entry. For example,
+         * if the entity type is *vegetable*, the value could be *scallions*. For
+         * `KIND_MAP` entity types: * A canonical value to be used in place of
+         * synonyms. For `KIND_LIST` entity types: * A string that can contain
+         * references to other entity types (with or without aliases).
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3EntityTypeEntity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSynonyms()
-    {
-    }
-    /**
-     * Required. The primary value associated with this entity entry. For example,
-     * if the entity type is *vegetable*, the value could be *scallions*. For
-     * `KIND_MAP` entity types: * A canonical value to be used in place of
-     * synonyms. For `KIND_LIST` entity types: * A string that can contain
-     * references to other entity types (with or without aliases).
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3EntityTypeEntity extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3EntityTypeEntity
     {
     }
 }

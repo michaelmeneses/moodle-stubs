@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ServiceMeshMembershipSpec extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $controlPlane;
-    /**
-     * @var string
-     */
-    public $management;
-    /**
-     * @param string
-     */
-    public function setControlPlane($controlPlane)
+namespace Google\Service\GKEHub {
+    class ServiceMeshMembershipSpec extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $controlPlane;
+        /**
+         * @var string
+         */
+        public $management;
+        /**
+         * @param string
+         */
+        public function setControlPlane($controlPlane)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getControlPlane()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setManagement($management)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getManagement()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\ServiceMeshMembershipSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getControlPlane()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setManagement($management)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getManagement()
+    class Google_Service_GKEHub_ServiceMeshMembershipSpec extends \Google\Service\GKEHub\ServiceMeshMembershipSpec
     {
     }
 }

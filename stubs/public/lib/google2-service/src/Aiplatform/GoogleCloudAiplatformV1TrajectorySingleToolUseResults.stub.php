@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1TrajectorySingleToolUseResults extends \Google\Collection
-{
-    protected $collection_key = 'trajectorySingleToolUseMetricValues';
-    protected $trajectorySingleToolUseMetricValuesType = GoogleCloudAiplatformV1TrajectorySingleToolUseMetricValue::class;
-    protected $trajectorySingleToolUseMetricValuesDataType = 'array';
-    /**
-     * Output only. TrajectorySingleToolUse metric values.
-     *
-     * @param GoogleCloudAiplatformV1TrajectorySingleToolUseMetricValue[] $trajectorySingleToolUseMetricValues
-     */
-    public function setTrajectorySingleToolUseMetricValues($trajectorySingleToolUseMetricValues)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1TrajectorySingleToolUseResults extends \Google\Collection
     {
+        protected $collection_key = 'trajectorySingleToolUseMetricValues';
+        protected $trajectorySingleToolUseMetricValuesType = GoogleCloudAiplatformV1TrajectorySingleToolUseMetricValue::class;
+        protected $trajectorySingleToolUseMetricValuesDataType = 'array';
+        /**
+         * Output only. TrajectorySingleToolUse metric values.
+         *
+         * @param GoogleCloudAiplatformV1TrajectorySingleToolUseMetricValue[] $trajectorySingleToolUseMetricValues
+         */
+        public function setTrajectorySingleToolUseMetricValues($trajectorySingleToolUseMetricValues)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1TrajectorySingleToolUseMetricValue[]
+         */
+        public function getTrajectorySingleToolUseMetricValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1TrajectorySingleToolUseMetricValue[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1TrajectorySingleToolUseResults registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTrajectorySingleToolUseMetricValues()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1TrajectorySingleToolUseResults extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1TrajectorySingleToolUseResults
     {
     }
 }

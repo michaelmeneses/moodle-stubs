@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaSuspensionApprovalConfig extends \Google\Collection
-{
-    protected $collection_key = 'emailAddresses';
-    /**
-     * Information to provide for recipients.
-     *
-     * @var string
-     */
-    public $customMessage;
-    /**
-     * Email addresses to send approval request to.
-     *
-     * @var string[]
-     */
-    public $emailAddresses;
-    protected $expirationType = GoogleCloudIntegrationsV1alphaSuspensionApprovalExpiration::class;
-    protected $expirationDataType = '';
-    /**
-     * Information to provide for recipients.
-     *
-     * @param string $customMessage
-     */
-    public function setCustomMessage($customMessage)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaSuspensionApprovalConfig extends \Google\Collection
     {
+        protected $collection_key = 'emailAddresses';
+        /**
+         * Information to provide for recipients.
+         *
+         * @var string
+         */
+        public $customMessage;
+        /**
+         * Email addresses to send approval request to.
+         *
+         * @var string[]
+         */
+        public $emailAddresses;
+        protected $expirationType = GoogleCloudIntegrationsV1alphaSuspensionApprovalExpiration::class;
+        protected $expirationDataType = '';
+        /**
+         * Information to provide for recipients.
+         *
+         * @param string $customMessage
+         */
+        public function setCustomMessage($customMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomMessage()
+        {
+        }
+        /**
+         * Email addresses to send approval request to.
+         *
+         * @param string[] $emailAddresses
+         */
+        public function setEmailAddresses($emailAddresses)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEmailAddresses()
+        {
+        }
+        /**
+         * Indicates the next steps when no external actions happen on the suspension.
+         *
+         * @param GoogleCloudIntegrationsV1alphaSuspensionApprovalExpiration $expiration
+         */
+        public function setExpiration(GoogleCloudIntegrationsV1alphaSuspensionApprovalExpiration $expiration)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaSuspensionApprovalExpiration
+         */
+        public function getExpiration()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaSuspensionApprovalConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomMessage()
-    {
-    }
-    /**
-     * Email addresses to send approval request to.
-     *
-     * @param string[] $emailAddresses
-     */
-    public function setEmailAddresses($emailAddresses)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getEmailAddresses()
-    {
-    }
-    /**
-     * Indicates the next steps when no external actions happen on the suspension.
-     *
-     * @param GoogleCloudIntegrationsV1alphaSuspensionApprovalExpiration $expiration
-     */
-    public function setExpiration(GoogleCloudIntegrationsV1alphaSuspensionApprovalExpiration $expiration)
-    {
-    }
-    /**
-     * @return GoogleCloudIntegrationsV1alphaSuspensionApprovalExpiration
-     */
-    public function getExpiration()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaSuspensionApprovalConfig extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaSuspensionApprovalConfig
     {
     }
 }

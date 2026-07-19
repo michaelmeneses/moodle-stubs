@@ -21,53 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors\Resource;
-
-/**
- * The "entityTypes" collection of methods.
- * Typical usage is:
- *  <code>
- *   $connectorsService = new Google\Service\Connectors(...);
- *   $entityTypes = $connectorsService->projects_locations_connections_entityTypes;
- *  </code>
- */
-class ProjectsLocationsConnectionsEntityTypes extends \Google\Service\Resource
-{
+namespace Google\Service\Connectors\Resource {
+    use Google\Service\Connectors\EntityType;
+    use Google\Service\Connectors\ListEntityTypesResponse;
     /**
-     * Gets metadata of given entity type (entityTypes.get)
-     *
-     * @param string $name Required. Resource name of the Entity Type. Format: proje
-     * cts/{project}/locations/{location}/connections/{connection}/entityTypes/{enti
-     * tyType}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string contextMetadata Context metadata for request could be used
-     * to fetch customization of entity type schema.
-     * @opt_param string view Specifies view for entity type schema.
-     * @return EntityType
-     * @throws \Google\Service\Exception
+     * The "entityTypes" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $connectorsService = new Google\Service\Connectors(...);
+     *   $entityTypes = $connectorsService->projects_locations_connections_entityTypes;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocationsConnectionsEntityTypes extends \Google\Service\Resource
     {
+        /**
+         * Gets metadata of given entity type (entityTypes.get)
+         *
+         * @param string $name Required. Resource name of the Entity Type. Format: proje
+         * cts/{project}/locations/{location}/connections/{connection}/entityTypes/{enti
+         * tyType}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string contextMetadata Context metadata for request could be used
+         * to fetch customization of entity type schema.
+         * @opt_param string view Specifies view for entity type schema.
+         * @return EntityType
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists metadata related to all entity types present in the external system.
+         * (entityTypes.listProjectsLocationsConnectionsEntityTypes)
+         *
+         * @param string $parent Required. Resource name of the Entity Type. Format:
+         * projects/{project}/locations/{location}/connections/{connection}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Number of entity types to return. Defaults to 25.
+         * @opt_param string pageToken Page token, return from a previous
+         * ListEntityTypes call, that can be used retrieve the next page of content. If
+         * unspecified, the request returns the first page of entity types.
+         * @opt_param string view Specifies which fields of the Entity Type are returned
+         * in the response.
+         * @return ListEntityTypesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsConnectionsEntityTypes($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists metadata related to all entity types present in the external system.
-     * (entityTypes.listProjectsLocationsConnectionsEntityTypes)
-     *
-     * @param string $parent Required. Resource name of the Entity Type. Format:
-     * projects/{project}/locations/{location}/connections/{connection}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Number of entity types to return. Defaults to 25.
-     * @opt_param string pageToken Page token, return from a previous
-     * ListEntityTypes call, that can be used retrieve the next page of content. If
-     * unspecified, the request returns the first page of entity types.
-     * @opt_param string view Specifies which fields of the Entity Type are returned
-     * in the response.
-     * @return ListEntityTypesResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Connectors\Resource\ProjectsLocationsConnectionsEntityTypes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listProjectsLocationsConnectionsEntityTypes($parent, $optParams = [])
+    class Google_Service_Connectors_Resource_ProjectsLocationsConnectionsEntityTypes extends \Google\Service\Connectors\Resource\ProjectsLocationsConnectionsEntityTypes
     {
     }
 }

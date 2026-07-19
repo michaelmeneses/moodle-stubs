@@ -21,75 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Merchant;
-
-class NonProductPerformanceView extends \Google\Model
-{
-    public $clickThroughRate;
-    /**
-     * @var string
-     */
-    public $clicks;
-    protected $dateType = Date::class;
-    protected $dateDataType = '';
-    /**
-     * @var string
-     */
-    public $impressions;
-    protected $weekType = Date::class;
-    protected $weekDataType = '';
-    public function setClickThroughRate($clickThroughRate)
+namespace Google\Service\Merchant {
+    class NonProductPerformanceView extends \Google\Model
     {
+        public $clickThroughRate;
+        /**
+         * @var string
+         */
+        public $clicks;
+        protected $dateType = Date::class;
+        protected $dateDataType = '';
+        /**
+         * @var string
+         */
+        public $impressions;
+        protected $weekType = Date::class;
+        protected $weekDataType = '';
+        public function setClickThroughRate($clickThroughRate)
+        {
+        }
+        public function getClickThroughRate()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setClicks($clicks)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClicks()
+        {
+        }
+        /**
+         * @param Date
+         */
+        public function setDate(Date $date)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getDate()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setImpressions($impressions)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImpressions()
+        {
+        }
+        /**
+         * @param Date
+         */
+        public function setWeek(Date $week)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getWeek()
+        {
+        }
     }
-    public function getClickThroughRate()
-    {
-    }
+}
+namespace {
     /**
-     * @param string
+     * Runtime class alias of \Google\Service\Merchant\NonProductPerformanceView registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setClicks($clicks)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClicks()
-    {
-    }
-    /**
-     * @param Date
-     */
-    public function setDate(Date $date)
-    {
-    }
-    /**
-     * @return Date
-     */
-    public function getDate()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setImpressions($impressions)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImpressions()
-    {
-    }
-    /**
-     * @param Date
-     */
-    public function setWeek(Date $week)
-    {
-    }
-    /**
-     * @return Date
-     */
-    public function getWeek()
+    class Google_Service_Merchant_NonProductPerformanceView extends \Google\Service\Merchant\NonProductPerformanceView
     {
     }
 }

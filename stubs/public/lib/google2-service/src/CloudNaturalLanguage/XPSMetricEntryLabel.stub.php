@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSMetricEntryLabel extends \Google\Model
-{
-    /**
-     * The name of the label.
-     *
-     * @var string
-     */
-    public $labelName;
-    /**
-     * The value of the label.
-     *
-     * @var string
-     */
-    public $labelValue;
-    /**
-     * The name of the label.
-     *
-     * @param string $labelName
-     */
-    public function setLabelName($labelName)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSMetricEntryLabel extends \Google\Model
     {
+        /**
+         * The name of the label.
+         *
+         * @var string
+         */
+        public $labelName;
+        /**
+         * The value of the label.
+         *
+         * @var string
+         */
+        public $labelValue;
+        /**
+         * The name of the label.
+         *
+         * @param string $labelName
+         */
+        public function setLabelName($labelName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabelName()
+        {
+        }
+        /**
+         * The value of the label.
+         *
+         * @param string $labelValue
+         */
+        public function setLabelValue($labelValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabelValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSMetricEntryLabel registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabelName()
-    {
-    }
-    /**
-     * The value of the label.
-     *
-     * @param string $labelValue
-     */
-    public function setLabelValue($labelValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLabelValue()
+    class Google_Service_CloudNaturalLanguage_XPSMetricEntryLabel extends \Google\Service\CloudNaturalLanguage\XPSMetricEntryLabel
     {
     }
 }

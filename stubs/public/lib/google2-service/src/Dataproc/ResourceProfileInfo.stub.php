@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class ResourceProfileInfo extends \Google\Model
-{
-    protected $executorResourcesType = ExecutorResourceRequest::class;
-    protected $executorResourcesDataType = 'map';
-    /**
-     * @var int
-     */
-    public $resourceProfileId;
-    protected $taskResourcesType = TaskResourceRequest::class;
-    protected $taskResourcesDataType = 'map';
-    /**
-     * @param ExecutorResourceRequest[] $executorResources
-     */
-    public function setExecutorResources($executorResources)
+namespace Google\Service\Dataproc {
+    class ResourceProfileInfo extends \Google\Model
     {
+        protected $executorResourcesType = ExecutorResourceRequest::class;
+        protected $executorResourcesDataType = 'map';
+        /**
+         * @var int
+         */
+        public $resourceProfileId;
+        protected $taskResourcesType = TaskResourceRequest::class;
+        protected $taskResourcesDataType = 'map';
+        /**
+         * @param ExecutorResourceRequest[] $executorResources
+         */
+        public function setExecutorResources($executorResources)
+        {
+        }
+        /**
+         * @return ExecutorResourceRequest[]
+         */
+        public function getExecutorResources()
+        {
+        }
+        /**
+         * @param int $resourceProfileId
+         */
+        public function setResourceProfileId($resourceProfileId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getResourceProfileId()
+        {
+        }
+        /**
+         * @param TaskResourceRequest[] $taskResources
+         */
+        public function setTaskResources($taskResources)
+        {
+        }
+        /**
+         * @return TaskResourceRequest[]
+         */
+        public function getTaskResources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ExecutorResourceRequest[]
+     * Runtime class alias of \Google\Service\Dataproc\ResourceProfileInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExecutorResources()
-    {
-    }
-    /**
-     * @param int $resourceProfileId
-     */
-    public function setResourceProfileId($resourceProfileId)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getResourceProfileId()
-    {
-    }
-    /**
-     * @param TaskResourceRequest[] $taskResources
-     */
-    public function setTaskResources($taskResources)
-    {
-    }
-    /**
-     * @return TaskResourceRequest[]
-     */
-    public function getTaskResources()
+    class Google_Service_Dataproc_ResourceProfileInfo extends \Google\Service\Dataproc\ResourceProfileInfo
     {
     }
 }

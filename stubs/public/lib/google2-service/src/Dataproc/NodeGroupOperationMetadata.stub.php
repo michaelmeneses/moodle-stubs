@@ -21,207 +21,216 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class NodeGroupOperationMetadata extends \Google\Collection
-{
-    /**
-     * Node group operation type is unknown.
-     */
-    public const OPERATION_TYPE_NODE_GROUP_OPERATION_TYPE_UNSPECIFIED = 'NODE_GROUP_OPERATION_TYPE_UNSPECIFIED';
-    /**
-     * Create node group operation type.
-     */
-    public const OPERATION_TYPE_CREATE = 'CREATE';
-    /**
-     * Update node group operation type.
-     */
-    public const OPERATION_TYPE_UPDATE = 'UPDATE';
-    /**
-     * Delete node group operation type.
-     */
-    public const OPERATION_TYPE_DELETE = 'DELETE';
-    /**
-     * Resize node group operation type.
-     */
-    public const OPERATION_TYPE_RESIZE = 'RESIZE';
-    /**
-     * Repair node group operation type.
-     */
-    public const OPERATION_TYPE_REPAIR = 'REPAIR';
-    /**
-     * Update node group label operation type.
-     */
-    public const OPERATION_TYPE_UPDATE_LABELS = 'UPDATE_LABELS';
-    /**
-     * Start node group operation type.
-     */
-    public const OPERATION_TYPE_START = 'START';
-    /**
-     * Stop node group operation type.
-     */
-    public const OPERATION_TYPE_STOP = 'STOP';
-    /**
-     * This operation type is used to update the metadata config of a node group.
-     * We update the metadata of the VMs in the node group and await for intended
-     * config change to be completed at the node group level. Currently, only the
-     * identity config update is supported.
-     */
-    public const OPERATION_TYPE_UPDATE_METADATA_CONFIG = 'UPDATE_METADATA_CONFIG';
-    protected $collection_key = 'warnings';
-    /**
-     * Output only. Cluster UUID associated with the node group operation.
-     *
-     * @var string
-     */
-    public $clusterUuid;
-    /**
-     * Output only. Short description of operation.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Output only. Labels associated with the operation.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Output only. Node group ID for the operation.
-     *
-     * @var string
-     */
-    public $nodeGroupId;
-    /**
-     * The operation type.
-     *
-     * @var string
-     */
-    public $operationType;
-    protected $statusType = ClusterOperationStatus::class;
-    protected $statusDataType = '';
-    protected $statusHistoryType = ClusterOperationStatus::class;
-    protected $statusHistoryDataType = 'array';
-    /**
-     * Output only. Errors encountered during operation execution.
-     *
-     * @var string[]
-     */
-    public $warnings;
-    /**
-     * Output only. Cluster UUID associated with the node group operation.
-     *
-     * @param string $clusterUuid
-     */
-    public function setClusterUuid($clusterUuid)
+namespace Google\Service\Dataproc {
+    class NodeGroupOperationMetadata extends \Google\Collection
     {
+        /**
+         * Node group operation type is unknown.
+         */
+        public const OPERATION_TYPE_NODE_GROUP_OPERATION_TYPE_UNSPECIFIED = 'NODE_GROUP_OPERATION_TYPE_UNSPECIFIED';
+        /**
+         * Create node group operation type.
+         */
+        public const OPERATION_TYPE_CREATE = 'CREATE';
+        /**
+         * Update node group operation type.
+         */
+        public const OPERATION_TYPE_UPDATE = 'UPDATE';
+        /**
+         * Delete node group operation type.
+         */
+        public const OPERATION_TYPE_DELETE = 'DELETE';
+        /**
+         * Resize node group operation type.
+         */
+        public const OPERATION_TYPE_RESIZE = 'RESIZE';
+        /**
+         * Repair node group operation type.
+         */
+        public const OPERATION_TYPE_REPAIR = 'REPAIR';
+        /**
+         * Update node group label operation type.
+         */
+        public const OPERATION_TYPE_UPDATE_LABELS = 'UPDATE_LABELS';
+        /**
+         * Start node group operation type.
+         */
+        public const OPERATION_TYPE_START = 'START';
+        /**
+         * Stop node group operation type.
+         */
+        public const OPERATION_TYPE_STOP = 'STOP';
+        /**
+         * This operation type is used to update the metadata config of a node group.
+         * We update the metadata of the VMs in the node group and await for intended
+         * config change to be completed at the node group level. Currently, only the
+         * identity config update is supported.
+         */
+        public const OPERATION_TYPE_UPDATE_METADATA_CONFIG = 'UPDATE_METADATA_CONFIG';
+        protected $collection_key = 'warnings';
+        /**
+         * Output only. Cluster UUID associated with the node group operation.
+         *
+         * @var string
+         */
+        public $clusterUuid;
+        /**
+         * Output only. Short description of operation.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Output only. Labels associated with the operation.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Output only. Node group ID for the operation.
+         *
+         * @var string
+         */
+        public $nodeGroupId;
+        /**
+         * The operation type.
+         *
+         * @var string
+         */
+        public $operationType;
+        protected $statusType = ClusterOperationStatus::class;
+        protected $statusDataType = '';
+        protected $statusHistoryType = ClusterOperationStatus::class;
+        protected $statusHistoryDataType = 'array';
+        /**
+         * Output only. Errors encountered during operation execution.
+         *
+         * @var string[]
+         */
+        public $warnings;
+        /**
+         * Output only. Cluster UUID associated with the node group operation.
+         *
+         * @param string $clusterUuid
+         */
+        public function setClusterUuid($clusterUuid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClusterUuid()
+        {
+        }
+        /**
+         * Output only. Short description of operation.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Output only. Labels associated with the operation.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Output only. Node group ID for the operation.
+         *
+         * @param string $nodeGroupId
+         */
+        public function setNodeGroupId($nodeGroupId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNodeGroupId()
+        {
+        }
+        /**
+         * The operation type.
+         *
+         * Accepted values: NODE_GROUP_OPERATION_TYPE_UNSPECIFIED, CREATE, UPDATE,
+         * DELETE, RESIZE, REPAIR, UPDATE_LABELS, START, STOP, UPDATE_METADATA_CONFIG
+         *
+         * @param self::OPERATION_TYPE_* $operationType
+         */
+        public function setOperationType($operationType)
+        {
+        }
+        /**
+         * @return self::OPERATION_TYPE_*
+         */
+        public function getOperationType()
+        {
+        }
+        /**
+         * Output only. Current operation status.
+         *
+         * @param ClusterOperationStatus $status
+         */
+        public function setStatus(ClusterOperationStatus $status)
+        {
+        }
+        /**
+         * @return ClusterOperationStatus
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * Output only. The previous operation status.
+         *
+         * @param ClusterOperationStatus[] $statusHistory
+         */
+        public function setStatusHistory($statusHistory)
+        {
+        }
+        /**
+         * @return ClusterOperationStatus[]
+         */
+        public function getStatusHistory()
+        {
+        }
+        /**
+         * Output only. Errors encountered during operation execution.
+         *
+         * @param string[] $warnings
+         */
+        public function setWarnings($warnings)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getWarnings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\NodeGroupOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClusterUuid()
-    {
-    }
-    /**
-     * Output only. Short description of operation.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Output only. Labels associated with the operation.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Output only. Node group ID for the operation.
-     *
-     * @param string $nodeGroupId
-     */
-    public function setNodeGroupId($nodeGroupId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNodeGroupId()
-    {
-    }
-    /**
-     * The operation type.
-     *
-     * Accepted values: NODE_GROUP_OPERATION_TYPE_UNSPECIFIED, CREATE, UPDATE,
-     * DELETE, RESIZE, REPAIR, UPDATE_LABELS, START, STOP, UPDATE_METADATA_CONFIG
-     *
-     * @param self::OPERATION_TYPE_* $operationType
-     */
-    public function setOperationType($operationType)
-    {
-    }
-    /**
-     * @return self::OPERATION_TYPE_*
-     */
-    public function getOperationType()
-    {
-    }
-    /**
-     * Output only. Current operation status.
-     *
-     * @param ClusterOperationStatus $status
-     */
-    public function setStatus(ClusterOperationStatus $status)
-    {
-    }
-    /**
-     * @return ClusterOperationStatus
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * Output only. The previous operation status.
-     *
-     * @param ClusterOperationStatus[] $statusHistory
-     */
-    public function setStatusHistory($statusHistory)
-    {
-    }
-    /**
-     * @return ClusterOperationStatus[]
-     */
-    public function getStatusHistory()
-    {
-    }
-    /**
-     * Output only. Errors encountered during operation execution.
-     *
-     * @param string[] $warnings
-     */
-    public function setWarnings($warnings)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getWarnings()
+    class Google_Service_Dataproc_NodeGroupOperationMetadata extends \Google\Service\Dataproc\NodeGroupOperationMetadata
     {
     }
 }

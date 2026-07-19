@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class CropHint extends \Google\Model
-{
-    protected $boundingPolyType = BoundingPoly::class;
-    protected $boundingPolyDataType = '';
-    /**
-     * Confidence of this being a salient region. Range [0, 1].
-     *
-     * @var float
-     */
-    public $confidence;
-    /**
-     * Fraction of importance of this salient region with respect to the original
-     * image.
-     *
-     * @var float
-     */
-    public $importanceFraction;
-    /**
-     * The bounding polygon for the crop region. The coordinates of the bounding
-     * box are in the original image's scale.
-     *
-     * @param BoundingPoly $boundingPoly
-     */
-    public function setBoundingPoly(BoundingPoly $boundingPoly)
+namespace Google\Service\Vision {
+    class CropHint extends \Google\Model
     {
+        protected $boundingPolyType = BoundingPoly::class;
+        protected $boundingPolyDataType = '';
+        /**
+         * Confidence of this being a salient region. Range [0, 1].
+         *
+         * @var float
+         */
+        public $confidence;
+        /**
+         * Fraction of importance of this salient region with respect to the original
+         * image.
+         *
+         * @var float
+         */
+        public $importanceFraction;
+        /**
+         * The bounding polygon for the crop region. The coordinates of the bounding
+         * box are in the original image's scale.
+         *
+         * @param BoundingPoly $boundingPoly
+         */
+        public function setBoundingPoly(BoundingPoly $boundingPoly)
+        {
+        }
+        /**
+         * @return BoundingPoly
+         */
+        public function getBoundingPoly()
+        {
+        }
+        /**
+         * Confidence of this being a salient region. Range [0, 1].
+         *
+         * @param float $confidence
+         */
+        public function setConfidence($confidence)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidence()
+        {
+        }
+        /**
+         * Fraction of importance of this salient region with respect to the original
+         * image.
+         *
+         * @param float $importanceFraction
+         */
+        public function setImportanceFraction($importanceFraction)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getImportanceFraction()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BoundingPoly
+     * Runtime class alias of \Google\Service\Vision\CropHint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBoundingPoly()
-    {
-    }
-    /**
-     * Confidence of this being a salient region. Range [0, 1].
-     *
-     * @param float $confidence
-     */
-    public function setConfidence($confidence)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getConfidence()
-    {
-    }
-    /**
-     * Fraction of importance of this salient region with respect to the original
-     * image.
-     *
-     * @param float $importanceFraction
-     */
-    public function setImportanceFraction($importanceFraction)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getImportanceFraction()
+    class Google_Service_Vision_CropHint extends \Google\Service\Vision\CropHint
     {
     }
 }

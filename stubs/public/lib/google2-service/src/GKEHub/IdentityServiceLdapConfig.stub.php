@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class IdentityServiceLdapConfig extends \Google\Model
-{
-    protected $groupType = IdentityServiceGroupConfig::class;
-    protected $groupDataType = '';
-    protected $serverType = IdentityServiceServerConfig::class;
-    protected $serverDataType = '';
-    protected $serviceAccountType = IdentityServiceServiceAccountConfig::class;
-    protected $serviceAccountDataType = '';
-    protected $userType = IdentityServiceUserConfig::class;
-    protected $userDataType = '';
-    /**
-     * Optional. Contains the properties for locating and authenticating groups in
-     * the directory.
-     *
-     * @param IdentityServiceGroupConfig $group
-     */
-    public function setGroup(IdentityServiceGroupConfig $group)
+namespace Google\Service\GKEHub {
+    class IdentityServiceLdapConfig extends \Google\Model
     {
+        protected $groupType = IdentityServiceGroupConfig::class;
+        protected $groupDataType = '';
+        protected $serverType = IdentityServiceServerConfig::class;
+        protected $serverDataType = '';
+        protected $serviceAccountType = IdentityServiceServiceAccountConfig::class;
+        protected $serviceAccountDataType = '';
+        protected $userType = IdentityServiceUserConfig::class;
+        protected $userDataType = '';
+        /**
+         * Optional. Contains the properties for locating and authenticating groups in
+         * the directory.
+         *
+         * @param IdentityServiceGroupConfig $group
+         */
+        public function setGroup(IdentityServiceGroupConfig $group)
+        {
+        }
+        /**
+         * @return IdentityServiceGroupConfig
+         */
+        public function getGroup()
+        {
+        }
+        /**
+         * Required. Server settings for the external LDAP server.
+         *
+         * @param IdentityServiceServerConfig $server
+         */
+        public function setServer(IdentityServiceServerConfig $server)
+        {
+        }
+        /**
+         * @return IdentityServiceServerConfig
+         */
+        public function getServer()
+        {
+        }
+        /**
+         * Required. Contains the credentials of the service account which is
+         * authorized to perform the LDAP search in the directory. The credentials can
+         * be supplied by the combination of the DN and password or the client
+         * certificate.
+         *
+         * @param IdentityServiceServiceAccountConfig $serviceAccount
+         */
+        public function setServiceAccount(IdentityServiceServiceAccountConfig $serviceAccount)
+        {
+        }
+        /**
+         * @return IdentityServiceServiceAccountConfig
+         */
+        public function getServiceAccount()
+        {
+        }
+        /**
+         * Required. Defines where users exist in the LDAP directory.
+         *
+         * @param IdentityServiceUserConfig $user
+         */
+        public function setUser(IdentityServiceUserConfig $user)
+        {
+        }
+        /**
+         * @return IdentityServiceUserConfig
+         */
+        public function getUser()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return IdentityServiceGroupConfig
+     * Runtime class alias of \Google\Service\GKEHub\IdentityServiceLdapConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGroup()
-    {
-    }
-    /**
-     * Required. Server settings for the external LDAP server.
-     *
-     * @param IdentityServiceServerConfig $server
-     */
-    public function setServer(IdentityServiceServerConfig $server)
-    {
-    }
-    /**
-     * @return IdentityServiceServerConfig
-     */
-    public function getServer()
-    {
-    }
-    /**
-     * Required. Contains the credentials of the service account which is
-     * authorized to perform the LDAP search in the directory. The credentials can
-     * be supplied by the combination of the DN and password or the client
-     * certificate.
-     *
-     * @param IdentityServiceServiceAccountConfig $serviceAccount
-     */
-    public function setServiceAccount(IdentityServiceServiceAccountConfig $serviceAccount)
-    {
-    }
-    /**
-     * @return IdentityServiceServiceAccountConfig
-     */
-    public function getServiceAccount()
-    {
-    }
-    /**
-     * Required. Defines where users exist in the LDAP directory.
-     *
-     * @param IdentityServiceUserConfig $user
-     */
-    public function setUser(IdentityServiceUserConfig $user)
-    {
-    }
-    /**
-     * @return IdentityServiceUserConfig
-     */
-    public function getUser()
+    class Google_Service_GKEHub_IdentityServiceLdapConfig extends \Google\Service\GKEHub\IdentityServiceLdapConfig
     {
     }
 }

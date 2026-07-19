@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV1ResourceApplicationAttributesContactInfo extends \Google\Model
-{
-    /**
-     * Email address of the contacts.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * Email address of the contacts.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV1ResourceApplicationAttributesContactInfo extends \Google\Model
     {
+        /**
+         * Email address of the contacts.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * Email address of the contacts.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV1ResourceApplicationAttributesContactInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmail()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV1ResourceApplicationAttributesContactInfo extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV1ResourceApplicationAttributesContactInfo
     {
     }
 }

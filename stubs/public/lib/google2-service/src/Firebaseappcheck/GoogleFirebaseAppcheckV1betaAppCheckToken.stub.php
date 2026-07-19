@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebaseappcheck;
-
-class GoogleFirebaseAppcheckV1betaAppCheckToken extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $attestationToken;
-    /**
-     * @var string
-     */
-    public $token;
-    /**
-     * @var string
-     */
-    public $ttl;
-    /**
-     * @param string
-     */
-    public function setAttestationToken($attestationToken)
+namespace Google\Service\Firebaseappcheck {
+    class GoogleFirebaseAppcheckV1betaAppCheckToken extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $attestationToken;
+        /**
+         * @var string
+         */
+        public $token;
+        /**
+         * @var string
+         */
+        public $ttl;
+        /**
+         * @param string
+         */
+        public function setAttestationToken($attestationToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAttestationToken()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setToken($token)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getToken()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTtl($ttl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTtl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1betaAppCheckToken registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttestationToken()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setToken($token)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getToken()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTtl($ttl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTtl()
+    class Google_Service_Firebaseappcheck_GoogleFirebaseAppcheckV1betaAppCheckToken extends \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1betaAppCheckToken
     {
     }
 }

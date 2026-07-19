@@ -21,150 +21,159 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class SqlServerProfile extends \Google\Model
-{
-    /**
-     * Required. Database for the SQLServer connection.
-     *
-     * @var string
-     */
-    public $database;
-    /**
-     * Required. Hostname for the SQLServer connection.
-     *
-     * @var string
-     */
-    public $hostname;
-    /**
-     * Optional. Password for the SQLServer connection. Mutually exclusive with
-     * the `secret_manager_stored_password` field.
-     *
-     * @var string
-     */
-    public $password;
-    /**
-     * Port for the SQLServer connection, default value is 1433.
-     *
-     * @var int
-     */
-    public $port;
-    /**
-     * Optional. A reference to a Secret Manager resource name storing the
-     * SQLServer connection password. Mutually exclusive with the `password`
-     * field.
-     *
-     * @var string
-     */
-    public $secretManagerStoredPassword;
-    protected $sslConfigType = SqlServerSslConfig::class;
-    protected $sslConfigDataType = '';
-    /**
-     * Required. Username for the SQLServer connection.
-     *
-     * @var string
-     */
-    public $username;
-    /**
-     * Required. Database for the SQLServer connection.
-     *
-     * @param string $database
-     */
-    public function setDatabase($database)
+namespace Google\Service\Datastream {
+    class SqlServerProfile extends \Google\Model
     {
+        /**
+         * Required. Database for the SQLServer connection.
+         *
+         * @var string
+         */
+        public $database;
+        /**
+         * Required. Hostname for the SQLServer connection.
+         *
+         * @var string
+         */
+        public $hostname;
+        /**
+         * Optional. Password for the SQLServer connection. Mutually exclusive with
+         * the `secret_manager_stored_password` field.
+         *
+         * @var string
+         */
+        public $password;
+        /**
+         * Port for the SQLServer connection, default value is 1433.
+         *
+         * @var int
+         */
+        public $port;
+        /**
+         * Optional. A reference to a Secret Manager resource name storing the
+         * SQLServer connection password. Mutually exclusive with the `password`
+         * field.
+         *
+         * @var string
+         */
+        public $secretManagerStoredPassword;
+        protected $sslConfigType = SqlServerSslConfig::class;
+        protected $sslConfigDataType = '';
+        /**
+         * Required. Username for the SQLServer connection.
+         *
+         * @var string
+         */
+        public $username;
+        /**
+         * Required. Database for the SQLServer connection.
+         *
+         * @param string $database
+         */
+        public function setDatabase($database)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatabase()
+        {
+        }
+        /**
+         * Required. Hostname for the SQLServer connection.
+         *
+         * @param string $hostname
+         */
+        public function setHostname($hostname)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHostname()
+        {
+        }
+        /**
+         * Optional. Password for the SQLServer connection. Mutually exclusive with
+         * the `secret_manager_stored_password` field.
+         *
+         * @param string $password
+         */
+        public function setPassword($password)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPassword()
+        {
+        }
+        /**
+         * Port for the SQLServer connection, default value is 1433.
+         *
+         * @param int $port
+         */
+        public function setPort($port)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPort()
+        {
+        }
+        /**
+         * Optional. A reference to a Secret Manager resource name storing the
+         * SQLServer connection password. Mutually exclusive with the `password`
+         * field.
+         *
+         * @param string $secretManagerStoredPassword
+         */
+        public function setSecretManagerStoredPassword($secretManagerStoredPassword)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecretManagerStoredPassword()
+        {
+        }
+        /**
+         * Optional. SSL configuration for the SQLServer connection.
+         *
+         * @param SqlServerSslConfig $sslConfig
+         */
+        public function setSslConfig(SqlServerSslConfig $sslConfig)
+        {
+        }
+        /**
+         * @return SqlServerSslConfig
+         */
+        public function getSslConfig()
+        {
+        }
+        /**
+         * Required. Username for the SQLServer connection.
+         *
+         * @param string $username
+         */
+        public function setUsername($username)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUsername()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastream\SqlServerProfile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatabase()
-    {
-    }
-    /**
-     * Required. Hostname for the SQLServer connection.
-     *
-     * @param string $hostname
-     */
-    public function setHostname($hostname)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHostname()
-    {
-    }
-    /**
-     * Optional. Password for the SQLServer connection. Mutually exclusive with
-     * the `secret_manager_stored_password` field.
-     *
-     * @param string $password
-     */
-    public function setPassword($password)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPassword()
-    {
-    }
-    /**
-     * Port for the SQLServer connection, default value is 1433.
-     *
-     * @param int $port
-     */
-    public function setPort($port)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPort()
-    {
-    }
-    /**
-     * Optional. A reference to a Secret Manager resource name storing the
-     * SQLServer connection password. Mutually exclusive with the `password`
-     * field.
-     *
-     * @param string $secretManagerStoredPassword
-     */
-    public function setSecretManagerStoredPassword($secretManagerStoredPassword)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSecretManagerStoredPassword()
-    {
-    }
-    /**
-     * Optional. SSL configuration for the SQLServer connection.
-     *
-     * @param SqlServerSslConfig $sslConfig
-     */
-    public function setSslConfig(SqlServerSslConfig $sslConfig)
-    {
-    }
-    /**
-     * @return SqlServerSslConfig
-     */
-    public function getSslConfig()
-    {
-    }
-    /**
-     * Required. Username for the SQLServer connection.
-     *
-     * @param string $username
-     */
-    public function setUsername($username)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUsername()
+    class Google_Service_Datastream_SqlServerProfile extends \Google\Service\Datastream\SqlServerProfile
     {
     }
 }

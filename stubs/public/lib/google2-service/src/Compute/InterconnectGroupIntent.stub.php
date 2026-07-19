@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InterconnectGroupIntent extends \Google\Model
-{
-    public const TOPOLOGY_CAPABILITY_NO_SLA = 'NO_SLA';
-    public const TOPOLOGY_CAPABILITY_PRODUCTION_CRITICAL = 'PRODUCTION_CRITICAL';
-    public const TOPOLOGY_CAPABILITY_PRODUCTION_NON_CRITICAL = 'PRODUCTION_NON_CRITICAL';
-    public const TOPOLOGY_CAPABILITY_UNSPECIFIED = 'UNSPECIFIED';
-    /**
-     * @var string
-     */
-    public $topologyCapability;
-    /**
-     * @param self::TOPOLOGY_CAPABILITY_* $topologyCapability
-     */
-    public function setTopologyCapability($topologyCapability)
+namespace Google\Service\Compute {
+    class InterconnectGroupIntent extends \Google\Model
     {
+        public const TOPOLOGY_CAPABILITY_NO_SLA = 'NO_SLA';
+        public const TOPOLOGY_CAPABILITY_PRODUCTION_CRITICAL = 'PRODUCTION_CRITICAL';
+        public const TOPOLOGY_CAPABILITY_PRODUCTION_NON_CRITICAL = 'PRODUCTION_NON_CRITICAL';
+        public const TOPOLOGY_CAPABILITY_UNSPECIFIED = 'UNSPECIFIED';
+        /**
+         * @var string
+         */
+        public $topologyCapability;
+        /**
+         * @param self::TOPOLOGY_CAPABILITY_* $topologyCapability
+         */
+        public function setTopologyCapability($topologyCapability)
+        {
+        }
+        /**
+         * @return self::TOPOLOGY_CAPABILITY_*
+         */
+        public function getTopologyCapability()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::TOPOLOGY_CAPABILITY_*
+     * Runtime class alias of \Google\Service\Compute\InterconnectGroupIntent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTopologyCapability()
+    class Google_Service_Compute_InterconnectGroupIntent extends \Google\Service\Compute\InterconnectGroupIntent
     {
     }
 }

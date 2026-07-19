@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class ScriptStatistics extends \Google\Collection
-{
-    /**
-     * Default value.
-     */
-    public const EVALUATION_KIND_EVALUATION_KIND_UNSPECIFIED = 'EVALUATION_KIND_UNSPECIFIED';
-    /**
-     * The statement appears directly in the script.
-     */
-    public const EVALUATION_KIND_STATEMENT = 'STATEMENT';
-    /**
-     * The statement evaluates an expression that appears in the script.
-     */
-    public const EVALUATION_KIND_EXPRESSION = 'EXPRESSION';
-    protected $collection_key = 'stackFrames';
-    /**
-     * Whether this child job was a statement or expression.
-     *
-     * @var string
-     */
-    public $evaluationKind;
-    protected $stackFramesType = ScriptStackFrame::class;
-    protected $stackFramesDataType = 'array';
-    /**
-     * Whether this child job was a statement or expression.
-     *
-     * Accepted values: EVALUATION_KIND_UNSPECIFIED, STATEMENT, EXPRESSION
-     *
-     * @param self::EVALUATION_KIND_* $evaluationKind
-     */
-    public function setEvaluationKind($evaluationKind)
+namespace Google\Service\Bigquery {
+    class ScriptStatistics extends \Google\Collection
     {
+        /**
+         * Default value.
+         */
+        public const EVALUATION_KIND_EVALUATION_KIND_UNSPECIFIED = 'EVALUATION_KIND_UNSPECIFIED';
+        /**
+         * The statement appears directly in the script.
+         */
+        public const EVALUATION_KIND_STATEMENT = 'STATEMENT';
+        /**
+         * The statement evaluates an expression that appears in the script.
+         */
+        public const EVALUATION_KIND_EXPRESSION = 'EXPRESSION';
+        protected $collection_key = 'stackFrames';
+        /**
+         * Whether this child job was a statement or expression.
+         *
+         * @var string
+         */
+        public $evaluationKind;
+        protected $stackFramesType = ScriptStackFrame::class;
+        protected $stackFramesDataType = 'array';
+        /**
+         * Whether this child job was a statement or expression.
+         *
+         * Accepted values: EVALUATION_KIND_UNSPECIFIED, STATEMENT, EXPRESSION
+         *
+         * @param self::EVALUATION_KIND_* $evaluationKind
+         */
+        public function setEvaluationKind($evaluationKind)
+        {
+        }
+        /**
+         * @return self::EVALUATION_KIND_*
+         */
+        public function getEvaluationKind()
+        {
+        }
+        /**
+         * Stack trace showing the line/column/procedure name of each frame on the
+         * stack at the point where the current evaluation happened. The leaf frame is
+         * first, the primary script is last. Never empty.
+         *
+         * @param ScriptStackFrame[] $stackFrames
+         */
+        public function setStackFrames($stackFrames)
+        {
+        }
+        /**
+         * @return ScriptStackFrame[]
+         */
+        public function getStackFrames()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::EVALUATION_KIND_*
+     * Runtime class alias of \Google\Service\Bigquery\ScriptStatistics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEvaluationKind()
-    {
-    }
-    /**
-     * Stack trace showing the line/column/procedure name of each frame on the
-     * stack at the point where the current evaluation happened. The leaf frame is
-     * first, the primary script is last. Never empty.
-     *
-     * @param ScriptStackFrame[] $stackFrames
-     */
-    public function setStackFrames($stackFrames)
-    {
-    }
-    /**
-     * @return ScriptStackFrame[]
-     */
-    public function getStackFrames()
+    class Google_Service_Bigquery_ScriptStatistics extends \Google\Service\Bigquery\ScriptStatistics
     {
     }
 }

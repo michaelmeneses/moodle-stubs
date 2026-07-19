@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class Rule extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $assetId;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $targetingTemplateId;
-    /**
-     * @param string
-     */
-    public function setAssetId($assetId)
+namespace Google\Service\Dfareporting {
+    class Rule extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $assetId;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $targetingTemplateId;
+        /**
+         * @param string
+         */
+        public function setAssetId($assetId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAssetId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTargetingTemplateId($targetingTemplateId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetingTemplateId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\Rule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssetId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTargetingTemplateId($targetingTemplateId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetingTemplateId()
+    class Google_Service_Dfareporting_Rule extends \Google\Service\Dfareporting\Rule
     {
     }
 }

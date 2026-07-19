@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1DialogflowAssistAnswer extends \Google\Model
-{
-    /**
-     * The name of answer record, in the format of
-     * "projects//locations//answerRecords/"
-     *
-     * @var string
-     */
-    public $answerRecord;
-    protected $intentSuggestionType = GoogleCloudDialogflowV2beta1IntentSuggestion::class;
-    protected $intentSuggestionDataType = '';
-    protected $queryResultType = GoogleCloudDialogflowV2beta1QueryResult::class;
-    protected $queryResultDataType = '';
-    /**
-     * The name of answer record, in the format of
-     * "projects//locations//answerRecords/"
-     *
-     * @param string $answerRecord
-     */
-    public function setAnswerRecord($answerRecord)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1DialogflowAssistAnswer extends \Google\Model
     {
+        /**
+         * The name of answer record, in the format of
+         * "projects//locations//answerRecords/"
+         *
+         * @var string
+         */
+        public $answerRecord;
+        protected $intentSuggestionType = GoogleCloudDialogflowV2beta1IntentSuggestion::class;
+        protected $intentSuggestionDataType = '';
+        protected $queryResultType = GoogleCloudDialogflowV2beta1QueryResult::class;
+        protected $queryResultDataType = '';
+        /**
+         * The name of answer record, in the format of
+         * "projects//locations//answerRecords/"
+         *
+         * @param string $answerRecord
+         */
+        public function setAnswerRecord($answerRecord)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnswerRecord()
+        {
+        }
+        /**
+         * An intent suggestion generated from conversation.
+         *
+         * @param GoogleCloudDialogflowV2beta1IntentSuggestion $intentSuggestion
+         */
+        public function setIntentSuggestion(GoogleCloudDialogflowV2beta1IntentSuggestion $intentSuggestion)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2beta1IntentSuggestion
+         */
+        public function getIntentSuggestion()
+        {
+        }
+        /**
+         * Result from v2 agent.
+         *
+         * @param GoogleCloudDialogflowV2beta1QueryResult $queryResult
+         */
+        public function setQueryResult(GoogleCloudDialogflowV2beta1QueryResult $queryResult)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2beta1QueryResult
+         */
+        public function getQueryResult()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1DialogflowAssistAnswer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnswerRecord()
-    {
-    }
-    /**
-     * An intent suggestion generated from conversation.
-     *
-     * @param GoogleCloudDialogflowV2beta1IntentSuggestion $intentSuggestion
-     */
-    public function setIntentSuggestion(GoogleCloudDialogflowV2beta1IntentSuggestion $intentSuggestion)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2beta1IntentSuggestion
-     */
-    public function getIntentSuggestion()
-    {
-    }
-    /**
-     * Result from v2 agent.
-     *
-     * @param GoogleCloudDialogflowV2beta1QueryResult $queryResult
-     */
-    public function setQueryResult(GoogleCloudDialogflowV2beta1QueryResult $queryResult)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2beta1QueryResult
-     */
-    public function getQueryResult()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1DialogflowAssistAnswer extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1DialogflowAssistAnswer
     {
     }
 }

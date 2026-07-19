@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1AddContextArtifactsAndExecutionsRequest extends \Google\Collection
-{
-    protected $collection_key = 'executions';
-    /**
-     * The resource names of the Artifacts to attribute to the Context. Format: `p
-     * rojects/{project}/locations/{location}/metadataStores/{metadatastore}/artif
-     * acts/{artifact}`
-     *
-     * @var string[]
-     */
-    public $artifacts;
-    /**
-     * The resource names of the Executions to associate with the Context. Format:
-     * `projects/{project}/locations/{location}/metadataStores/{metadatastore}/exe
-     * cutions/{execution}`
-     *
-     * @var string[]
-     */
-    public $executions;
-    /**
-     * The resource names of the Artifacts to attribute to the Context. Format: `p
-     * rojects/{project}/locations/{location}/metadataStores/{metadatastore}/artif
-     * acts/{artifact}`
-     *
-     * @param string[] $artifacts
-     */
-    public function setArtifacts($artifacts)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1AddContextArtifactsAndExecutionsRequest extends \Google\Collection
     {
+        protected $collection_key = 'executions';
+        /**
+         * The resource names of the Artifacts to attribute to the Context. Format: `p
+         * rojects/{project}/locations/{location}/metadataStores/{metadatastore}/artif
+         * acts/{artifact}`
+         *
+         * @var string[]
+         */
+        public $artifacts;
+        /**
+         * The resource names of the Executions to associate with the Context. Format:
+         * `projects/{project}/locations/{location}/metadataStores/{metadatastore}/exe
+         * cutions/{execution}`
+         *
+         * @var string[]
+         */
+        public $executions;
+        /**
+         * The resource names of the Artifacts to attribute to the Context. Format: `p
+         * rojects/{project}/locations/{location}/metadataStores/{metadatastore}/artif
+         * acts/{artifact}`
+         *
+         * @param string[] $artifacts
+         */
+        public function setArtifacts($artifacts)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getArtifacts()
+        {
+        }
+        /**
+         * The resource names of the Executions to associate with the Context. Format:
+         * `projects/{project}/locations/{location}/metadataStores/{metadatastore}/exe
+         * cutions/{execution}`
+         *
+         * @param string[] $executions
+         */
+        public function setExecutions($executions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExecutions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1AddContextArtifactsAndExecutionsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArtifacts()
-    {
-    }
-    /**
-     * The resource names of the Executions to associate with the Context. Format:
-     * `projects/{project}/locations/{location}/metadataStores/{metadatastore}/exe
-     * cutions/{execution}`
-     *
-     * @param string[] $executions
-     */
-    public function setExecutions($executions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getExecutions()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1AddContextArtifactsAndExecutionsRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1AddContextArtifactsAndExecutionsRequest
     {
     }
 }

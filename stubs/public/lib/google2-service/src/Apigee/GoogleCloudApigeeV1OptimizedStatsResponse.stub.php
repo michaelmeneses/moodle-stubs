@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1OptimizedStatsResponse extends \Google\Collection
-{
-    protected $collection_key = 'TimeUnit';
-    protected $internal_gapi_mappings = ["timeUnit" => "TimeUnit"];
-    /**
-     * List of time unit values. Time unit refers to an epoch timestamp value.
-     *
-     * @var string[]
-     */
-    public $timeUnit;
-    protected $metaDataType = GoogleCloudApigeeV1Metadata::class;
-    protected $metaDataDataType = '';
-    /**
-     * Boolean flag that indicates whether the results were truncated based on the
-     * limit parameter.
-     *
-     * @var bool
-     */
-    public $resultTruncated;
-    protected $statsType = GoogleCloudApigeeV1OptimizedStatsNode::class;
-    protected $statsDataType = '';
-    /**
-     * List of time unit values. Time unit refers to an epoch timestamp value.
-     *
-     * @param string[] $timeUnit
-     */
-    public function setTimeUnit($timeUnit)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1OptimizedStatsResponse extends \Google\Collection
     {
+        protected $collection_key = 'TimeUnit';
+        protected $internal_gapi_mappings = ["timeUnit" => "TimeUnit"];
+        /**
+         * List of time unit values. Time unit refers to an epoch timestamp value.
+         *
+         * @var string[]
+         */
+        public $timeUnit;
+        protected $metaDataType = GoogleCloudApigeeV1Metadata::class;
+        protected $metaDataDataType = '';
+        /**
+         * Boolean flag that indicates whether the results were truncated based on the
+         * limit parameter.
+         *
+         * @var bool
+         */
+        public $resultTruncated;
+        protected $statsType = GoogleCloudApigeeV1OptimizedStatsNode::class;
+        protected $statsDataType = '';
+        /**
+         * List of time unit values. Time unit refers to an epoch timestamp value.
+         *
+         * @param string[] $timeUnit
+         */
+        public function setTimeUnit($timeUnit)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTimeUnit()
+        {
+        }
+        /**
+         * Metadata information about the query executed.
+         *
+         * @param GoogleCloudApigeeV1Metadata $metaData
+         */
+        public function setMetaData(GoogleCloudApigeeV1Metadata $metaData)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1Metadata
+         */
+        public function getMetaData()
+        {
+        }
+        /**
+         * Boolean flag that indicates whether the results were truncated based on the
+         * limit parameter.
+         *
+         * @param bool $resultTruncated
+         */
+        public function setResultTruncated($resultTruncated)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getResultTruncated()
+        {
+        }
+        /**
+         * `stats` results.
+         *
+         * @param GoogleCloudApigeeV1OptimizedStatsNode $stats
+         */
+        public function setStats(GoogleCloudApigeeV1OptimizedStatsNode $stats)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1OptimizedStatsNode
+         */
+        public function getStats()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1OptimizedStatsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTimeUnit()
-    {
-    }
-    /**
-     * Metadata information about the query executed.
-     *
-     * @param GoogleCloudApigeeV1Metadata $metaData
-     */
-    public function setMetaData(GoogleCloudApigeeV1Metadata $metaData)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1Metadata
-     */
-    public function getMetaData()
-    {
-    }
-    /**
-     * Boolean flag that indicates whether the results were truncated based on the
-     * limit parameter.
-     *
-     * @param bool $resultTruncated
-     */
-    public function setResultTruncated($resultTruncated)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getResultTruncated()
-    {
-    }
-    /**
-     * `stats` results.
-     *
-     * @param GoogleCloudApigeeV1OptimizedStatsNode $stats
-     */
-    public function setStats(GoogleCloudApigeeV1OptimizedStatsNode $stats)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1OptimizedStatsNode
-     */
-    public function getStats()
+    class Google_Service_Apigee_GoogleCloudApigeeV1OptimizedStatsResponse extends \Google\Service\Apigee\GoogleCloudApigeeV1OptimizedStatsResponse
     {
     }
 }

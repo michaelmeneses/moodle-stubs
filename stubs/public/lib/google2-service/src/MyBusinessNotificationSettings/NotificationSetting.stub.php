@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessNotificationSettings;
-
-class NotificationSetting extends \Google\Collection
-{
-    protected $collection_key = 'notificationTypes';
-    /**
-     * Required. The resource name this setting is for. This is of the form
-     * `accounts/{account_id}/notificationSetting`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The types of notifications that will be sent to the Pub/Sub topic. To stop
-     * receiving notifications entirely, use
-     * NotificationSettings.UpdateNotificationSetting with an empty
-     * notification_types or set the pubsub_topic to an empty string.
-     *
-     * @var string[]
-     */
-    public $notificationTypes;
-    /**
-     * Optional. The Google Pub/Sub topic that will receive notifications when
-     * locations managed by this account are updated. If unset, no notifications
-     * will be posted. The account mybusiness-api-
-     * pubsub@system.gserviceaccount.com must have at least Publish permissions on
-     * the Pub/Sub topic.
-     *
-     * @var string
-     */
-    public $pubsubTopic;
-    /**
-     * Required. The resource name this setting is for. This is of the form
-     * `accounts/{account_id}/notificationSetting`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\MyBusinessNotificationSettings {
+    class NotificationSetting extends \Google\Collection
     {
+        protected $collection_key = 'notificationTypes';
+        /**
+         * Required. The resource name this setting is for. This is of the form
+         * `accounts/{account_id}/notificationSetting`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The types of notifications that will be sent to the Pub/Sub topic. To stop
+         * receiving notifications entirely, use
+         * NotificationSettings.UpdateNotificationSetting with an empty
+         * notification_types or set the pubsub_topic to an empty string.
+         *
+         * @var string[]
+         */
+        public $notificationTypes;
+        /**
+         * Optional. The Google Pub/Sub topic that will receive notifications when
+         * locations managed by this account are updated. If unset, no notifications
+         * will be posted. The account mybusiness-api-
+         * pubsub@system.gserviceaccount.com must have at least Publish permissions on
+         * the Pub/Sub topic.
+         *
+         * @var string
+         */
+        public $pubsubTopic;
+        /**
+         * Required. The resource name this setting is for. This is of the form
+         * `accounts/{account_id}/notificationSetting`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The types of notifications that will be sent to the Pub/Sub topic. To stop
+         * receiving notifications entirely, use
+         * NotificationSettings.UpdateNotificationSetting with an empty
+         * notification_types or set the pubsub_topic to an empty string.
+         *
+         * @param string[] $notificationTypes
+         */
+        public function setNotificationTypes($notificationTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getNotificationTypes()
+        {
+        }
+        /**
+         * Optional. The Google Pub/Sub topic that will receive notifications when
+         * locations managed by this account are updated. If unset, no notifications
+         * will be posted. The account mybusiness-api-
+         * pubsub@system.gserviceaccount.com must have at least Publish permissions on
+         * the Pub/Sub topic.
+         *
+         * @param string $pubsubTopic
+         */
+        public function setPubsubTopic($pubsubTopic)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPubsubTopic()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MyBusinessNotificationSettings\NotificationSetting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * The types of notifications that will be sent to the Pub/Sub topic. To stop
-     * receiving notifications entirely, use
-     * NotificationSettings.UpdateNotificationSetting with an empty
-     * notification_types or set the pubsub_topic to an empty string.
-     *
-     * @param string[] $notificationTypes
-     */
-    public function setNotificationTypes($notificationTypes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getNotificationTypes()
-    {
-    }
-    /**
-     * Optional. The Google Pub/Sub topic that will receive notifications when
-     * locations managed by this account are updated. If unset, no notifications
-     * will be posted. The account mybusiness-api-
-     * pubsub@system.gserviceaccount.com must have at least Publish permissions on
-     * the Pub/Sub topic.
-     *
-     * @param string $pubsubTopic
-     */
-    public function setPubsubTopic($pubsubTopic)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPubsubTopic()
+    class Google_Service_MyBusinessNotificationSettings_NotificationSetting extends \Google\Service\MyBusinessNotificationSettings\NotificationSetting
     {
     }
 }

@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta2DocumentPageSymbol extends \Google\Collection
-{
-    protected $collection_key = 'detectedLanguages';
-    protected $detectedLanguagesType = GoogleCloudDocumentaiV1beta2DocumentPageDetectedLanguage::class;
-    protected $detectedLanguagesDataType = 'array';
-    protected $layoutType = GoogleCloudDocumentaiV1beta2DocumentPageLayout::class;
-    protected $layoutDataType = '';
-    /**
-     * @param GoogleCloudDocumentaiV1beta2DocumentPageDetectedLanguage[]
-     */
-    public function setDetectedLanguages($detectedLanguages)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta2DocumentPageSymbol extends \Google\Collection
     {
+        protected $collection_key = 'detectedLanguages';
+        protected $detectedLanguagesType = GoogleCloudDocumentaiV1beta2DocumentPageDetectedLanguage::class;
+        protected $detectedLanguagesDataType = 'array';
+        protected $layoutType = GoogleCloudDocumentaiV1beta2DocumentPageLayout::class;
+        protected $layoutDataType = '';
+        /**
+         * @param GoogleCloudDocumentaiV1beta2DocumentPageDetectedLanguage[]
+         */
+        public function setDetectedLanguages($detectedLanguages)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta2DocumentPageDetectedLanguage[]
+         */
+        public function getDetectedLanguages()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta2DocumentPageLayout
+         */
+        public function setLayout(GoogleCloudDocumentaiV1beta2DocumentPageLayout $layout)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta2DocumentPageLayout
+         */
+        public function getLayout()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1beta2DocumentPageDetectedLanguage[]
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta2DocumentPageSymbol registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDetectedLanguages()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta2DocumentPageLayout
-     */
-    public function setLayout(GoogleCloudDocumentaiV1beta2DocumentPageLayout $layout)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta2DocumentPageLayout
-     */
-    public function getLayout()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta2DocumentPageSymbol extends \Google\Service\Document\GoogleCloudDocumentaiV1beta2DocumentPageSymbol
     {
     }
 }

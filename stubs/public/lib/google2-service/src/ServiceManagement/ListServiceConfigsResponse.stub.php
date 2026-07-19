@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceManagement;
-
-class ListServiceConfigsResponse extends \Google\Collection
-{
-    protected $collection_key = 'serviceConfigs';
-    /**
-     * The token of the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $serviceConfigsType = Service::class;
-    protected $serviceConfigsDataType = 'array';
-    /**
-     * The token of the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\ServiceManagement {
+    class ListServiceConfigsResponse extends \Google\Collection
     {
+        protected $collection_key = 'serviceConfigs';
+        /**
+         * The token of the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $serviceConfigsType = Service::class;
+        protected $serviceConfigsDataType = 'array';
+        /**
+         * The token of the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of service configuration resources.
+         *
+         * @param Service[] $serviceConfigs
+         */
+        public function setServiceConfigs($serviceConfigs)
+        {
+        }
+        /**
+         * @return Service[]
+         */
+        public function getServiceConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceManagement\ListServiceConfigsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of service configuration resources.
-     *
-     * @param Service[] $serviceConfigs
-     */
-    public function setServiceConfigs($serviceConfigs)
-    {
-    }
-    /**
-     * @return Service[]
-     */
-    public function getServiceConfigs()
+    class Google_Service_ServiceManagement_ListServiceConfigsResponse extends \Google\Service\ServiceManagement\ListServiceConfigsResponse
     {
     }
 }

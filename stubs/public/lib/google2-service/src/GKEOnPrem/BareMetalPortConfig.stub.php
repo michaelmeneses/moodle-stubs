@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class BareMetalPortConfig extends \Google\Model
-{
-    /**
-     * The port that control plane hosted load balancers will listen on.
-     *
-     * @var int
-     */
-    public $controlPlaneLoadBalancerPort;
-    /**
-     * The port that control plane hosted load balancers will listen on.
-     *
-     * @param int $controlPlaneLoadBalancerPort
-     */
-    public function setControlPlaneLoadBalancerPort($controlPlaneLoadBalancerPort)
+namespace Google\Service\GKEOnPrem {
+    class BareMetalPortConfig extends \Google\Model
     {
+        /**
+         * The port that control plane hosted load balancers will listen on.
+         *
+         * @var int
+         */
+        public $controlPlaneLoadBalancerPort;
+        /**
+         * The port that control plane hosted load balancers will listen on.
+         *
+         * @param int $controlPlaneLoadBalancerPort
+         */
+        public function setControlPlaneLoadBalancerPort($controlPlaneLoadBalancerPort)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getControlPlaneLoadBalancerPort()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\GKEOnPrem\BareMetalPortConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getControlPlaneLoadBalancerPort()
+    class Google_Service_GKEOnPrem_BareMetalPortConfig extends \Google\Service\GKEOnPrem\BareMetalPortConfig
     {
     }
 }

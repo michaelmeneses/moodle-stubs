@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ListStudiesResponse extends \Google\Collection
-{
-    protected $collection_key = 'studies';
-    /**
-     * Passes this token as the `page_token` field of the request for a subsequent
-     * call. If this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $studiesType = GoogleCloudAiplatformV1Study::class;
-    protected $studiesDataType = 'array';
-    /**
-     * Passes this token as the `page_token` field of the request for a subsequent
-     * call. If this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ListStudiesResponse extends \Google\Collection
     {
+        protected $collection_key = 'studies';
+        /**
+         * Passes this token as the `page_token` field of the request for a subsequent
+         * call. If this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $studiesType = GoogleCloudAiplatformV1Study::class;
+        protected $studiesDataType = 'array';
+        /**
+         * Passes this token as the `page_token` field of the request for a subsequent
+         * call. If this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The studies associated with the project.
+         *
+         * @param GoogleCloudAiplatformV1Study[] $studies
+         */
+        public function setStudies($studies)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Study[]
+         */
+        public function getStudies()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListStudiesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The studies associated with the project.
-     *
-     * @param GoogleCloudAiplatformV1Study[] $studies
-     */
-    public function setStudies($studies)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1Study[]
-     */
-    public function getStudies()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ListStudiesResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListStudiesResponse
     {
     }
 }

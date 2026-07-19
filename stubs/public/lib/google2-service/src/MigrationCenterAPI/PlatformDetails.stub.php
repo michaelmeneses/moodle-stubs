@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class PlatformDetails extends \Google\Model
-{
-    protected $awsEc2DetailsType = AwsEc2PlatformDetails::class;
-    protected $awsEc2DetailsDataType = '';
-    protected $azureVmDetailsType = AzureVmPlatformDetails::class;
-    protected $azureVmDetailsDataType = '';
-    protected $genericDetailsType = GenericPlatformDetails::class;
-    protected $genericDetailsDataType = '';
-    protected $physicalDetailsType = PhysicalPlatformDetails::class;
-    protected $physicalDetailsDataType = '';
-    protected $vmwareDetailsType = VmwarePlatformDetails::class;
-    protected $vmwareDetailsDataType = '';
-    /**
-     * AWS EC2 specific details.
-     *
-     * @param AwsEc2PlatformDetails $awsEc2Details
-     */
-    public function setAwsEc2Details(AwsEc2PlatformDetails $awsEc2Details)
+namespace Google\Service\MigrationCenterAPI {
+    class PlatformDetails extends \Google\Model
     {
+        protected $awsEc2DetailsType = AwsEc2PlatformDetails::class;
+        protected $awsEc2DetailsDataType = '';
+        protected $azureVmDetailsType = AzureVmPlatformDetails::class;
+        protected $azureVmDetailsDataType = '';
+        protected $genericDetailsType = GenericPlatformDetails::class;
+        protected $genericDetailsDataType = '';
+        protected $physicalDetailsType = PhysicalPlatformDetails::class;
+        protected $physicalDetailsDataType = '';
+        protected $vmwareDetailsType = VmwarePlatformDetails::class;
+        protected $vmwareDetailsDataType = '';
+        /**
+         * AWS EC2 specific details.
+         *
+         * @param AwsEc2PlatformDetails $awsEc2Details
+         */
+        public function setAwsEc2Details(AwsEc2PlatformDetails $awsEc2Details)
+        {
+        }
+        /**
+         * @return AwsEc2PlatformDetails
+         */
+        public function getAwsEc2Details()
+        {
+        }
+        /**
+         * Azure VM specific details.
+         *
+         * @param AzureVmPlatformDetails $azureVmDetails
+         */
+        public function setAzureVmDetails(AzureVmPlatformDetails $azureVmDetails)
+        {
+        }
+        /**
+         * @return AzureVmPlatformDetails
+         */
+        public function getAzureVmDetails()
+        {
+        }
+        /**
+         * Generic platform details.
+         *
+         * @param GenericPlatformDetails $genericDetails
+         */
+        public function setGenericDetails(GenericPlatformDetails $genericDetails)
+        {
+        }
+        /**
+         * @return GenericPlatformDetails
+         */
+        public function getGenericDetails()
+        {
+        }
+        /**
+         * Physical machines platform details.
+         *
+         * @param PhysicalPlatformDetails $physicalDetails
+         */
+        public function setPhysicalDetails(PhysicalPlatformDetails $physicalDetails)
+        {
+        }
+        /**
+         * @return PhysicalPlatformDetails
+         */
+        public function getPhysicalDetails()
+        {
+        }
+        /**
+         * VMware specific details.
+         *
+         * @param VmwarePlatformDetails $vmwareDetails
+         */
+        public function setVmwareDetails(VmwarePlatformDetails $vmwareDetails)
+        {
+        }
+        /**
+         * @return VmwarePlatformDetails
+         */
+        public function getVmwareDetails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AwsEc2PlatformDetails
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\PlatformDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAwsEc2Details()
-    {
-    }
-    /**
-     * Azure VM specific details.
-     *
-     * @param AzureVmPlatformDetails $azureVmDetails
-     */
-    public function setAzureVmDetails(AzureVmPlatformDetails $azureVmDetails)
-    {
-    }
-    /**
-     * @return AzureVmPlatformDetails
-     */
-    public function getAzureVmDetails()
-    {
-    }
-    /**
-     * Generic platform details.
-     *
-     * @param GenericPlatformDetails $genericDetails
-     */
-    public function setGenericDetails(GenericPlatformDetails $genericDetails)
-    {
-    }
-    /**
-     * @return GenericPlatformDetails
-     */
-    public function getGenericDetails()
-    {
-    }
-    /**
-     * Physical machines platform details.
-     *
-     * @param PhysicalPlatformDetails $physicalDetails
-     */
-    public function setPhysicalDetails(PhysicalPlatformDetails $physicalDetails)
-    {
-    }
-    /**
-     * @return PhysicalPlatformDetails
-     */
-    public function getPhysicalDetails()
-    {
-    }
-    /**
-     * VMware specific details.
-     *
-     * @param VmwarePlatformDetails $vmwareDetails
-     */
-    public function setVmwareDetails(VmwarePlatformDetails $vmwareDetails)
-    {
-    }
-    /**
-     * @return VmwarePlatformDetails
-     */
-    public function getVmwareDetails()
+    class Google_Service_MigrationCenterAPI_PlatformDetails extends \Google\Service\MigrationCenterAPI\PlatformDetails
     {
     }
 }

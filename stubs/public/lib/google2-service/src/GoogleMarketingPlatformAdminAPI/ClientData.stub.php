@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleMarketingPlatformAdminAPI;
-
-class ClientData extends \Google\Model
-{
-    protected $endDateType = Date::class;
-    protected $endDateDataType = '';
-    protected $organizationType = Organization::class;
-    protected $organizationDataType = '';
-    protected $startDateType = Date::class;
-    protected $startDateDataType = '';
-    /**
-     * The end date of the contract between the sales org and the end client.
-     *
-     * @param Date $endDate
-     */
-    public function setEndDate(Date $endDate)
+namespace Google\Service\GoogleMarketingPlatformAdminAPI {
+    class ClientData extends \Google\Model
     {
+        protected $endDateType = Date::class;
+        protected $endDateDataType = '';
+        protected $organizationType = Organization::class;
+        protected $organizationDataType = '';
+        protected $startDateType = Date::class;
+        protected $startDateDataType = '';
+        /**
+         * The end date of the contract between the sales org and the end client.
+         *
+         * @param Date $endDate
+         */
+        public function setEndDate(Date $endDate)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getEndDate()
+        {
+        }
+        /**
+         * The end client that has/had contract with the requested sales org.
+         *
+         * @param Organization $organization
+         */
+        public function setOrganization(Organization $organization)
+        {
+        }
+        /**
+         * @return Organization
+         */
+        public function getOrganization()
+        {
+        }
+        /**
+         * The start date of the contract between the sales org and the end client.
+         *
+         * @param Date $startDate
+         */
+        public function setStartDate(Date $startDate)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getStartDate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Date
+     * Runtime class alias of \Google\Service\GoogleMarketingPlatformAdminAPI\ClientData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndDate()
-    {
-    }
-    /**
-     * The end client that has/had contract with the requested sales org.
-     *
-     * @param Organization $organization
-     */
-    public function setOrganization(Organization $organization)
-    {
-    }
-    /**
-     * @return Organization
-     */
-    public function getOrganization()
-    {
-    }
-    /**
-     * The start date of the contract between the sales org and the end client.
-     *
-     * @param Date $startDate
-     */
-    public function setStartDate(Date $startDate)
-    {
-    }
-    /**
-     * @return Date
-     */
-    public function getStartDate()
+    class Google_Service_GoogleMarketingPlatformAdminAPI_ClientData extends \Google\Service\GoogleMarketingPlatformAdminAPI\ClientData
     {
     }
 }

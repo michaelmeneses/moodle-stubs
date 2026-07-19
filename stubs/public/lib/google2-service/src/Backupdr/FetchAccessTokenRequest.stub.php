@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class FetchAccessTokenRequest extends \Google\Model
-{
-    /**
-     * Required. The generation of the backup to update.
-     *
-     * @var int
-     */
-    public $generationId;
-    /**
-     * Required. The generation of the backup to update.
-     *
-     * @param int $generationId
-     */
-    public function setGenerationId($generationId)
+namespace Google\Service\Backupdr {
+    class FetchAccessTokenRequest extends \Google\Model
     {
+        /**
+         * Required. The generation of the backup to update.
+         *
+         * @var int
+         */
+        public $generationId;
+        /**
+         * Required. The generation of the backup to update.
+         *
+         * @param int $generationId
+         */
+        public function setGenerationId($generationId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getGenerationId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Backupdr\FetchAccessTokenRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGenerationId()
+    class Google_Service_Backupdr_FetchAccessTokenRequest extends \Google\Service\Backupdr\FetchAccessTokenRequest
     {
     }
 }

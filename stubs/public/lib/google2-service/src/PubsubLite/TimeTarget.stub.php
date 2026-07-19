@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PubsubLite;
-
-class TimeTarget extends \Google\Model
-{
-    /**
-     * Request the cursor of the first message with event time greater than or
-     * equal to `event_time`. If messages are missing an event time, the publish
-     * time is used as a fallback. As event times are user supplied, subsequent
-     * messages may have event times less than `event_time` and should be filtered
-     * by the client, if necessary.
-     *
-     * @var string
-     */
-    public $eventTime;
-    /**
-     * Request the cursor of the first message with publish time greater than or
-     * equal to `publish_time`. All messages thereafter are guaranteed to have
-     * publish times >= `publish_time`.
-     *
-     * @var string
-     */
-    public $publishTime;
-    /**
-     * Request the cursor of the first message with event time greater than or
-     * equal to `event_time`. If messages are missing an event time, the publish
-     * time is used as a fallback. As event times are user supplied, subsequent
-     * messages may have event times less than `event_time` and should be filtered
-     * by the client, if necessary.
-     *
-     * @param string $eventTime
-     */
-    public function setEventTime($eventTime)
+namespace Google\Service\PubsubLite {
+    class TimeTarget extends \Google\Model
     {
+        /**
+         * Request the cursor of the first message with event time greater than or
+         * equal to `event_time`. If messages are missing an event time, the publish
+         * time is used as a fallback. As event times are user supplied, subsequent
+         * messages may have event times less than `event_time` and should be filtered
+         * by the client, if necessary.
+         *
+         * @var string
+         */
+        public $eventTime;
+        /**
+         * Request the cursor of the first message with publish time greater than or
+         * equal to `publish_time`. All messages thereafter are guaranteed to have
+         * publish times >= `publish_time`.
+         *
+         * @var string
+         */
+        public $publishTime;
+        /**
+         * Request the cursor of the first message with event time greater than or
+         * equal to `event_time`. If messages are missing an event time, the publish
+         * time is used as a fallback. As event times are user supplied, subsequent
+         * messages may have event times less than `event_time` and should be filtered
+         * by the client, if necessary.
+         *
+         * @param string $eventTime
+         */
+        public function setEventTime($eventTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEventTime()
+        {
+        }
+        /**
+         * Request the cursor of the first message with publish time greater than or
+         * equal to `publish_time`. All messages thereafter are guaranteed to have
+         * publish times >= `publish_time`.
+         *
+         * @param string $publishTime
+         */
+        public function setPublishTime($publishTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPublishTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PubsubLite\TimeTarget registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEventTime()
-    {
-    }
-    /**
-     * Request the cursor of the first message with publish time greater than or
-     * equal to `publish_time`. All messages thereafter are guaranteed to have
-     * publish times >= `publish_time`.
-     *
-     * @param string $publishTime
-     */
-    public function setPublishTime($publishTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPublishTime()
+    class Google_Service_PubsubLite_TimeTarget extends \Google\Service\PubsubLite\TimeTarget
     {
     }
 }

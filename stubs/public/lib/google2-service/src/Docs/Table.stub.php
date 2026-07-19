@@ -21,129 +21,138 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class Table extends \Google\Collection
-{
-    protected $collection_key = 'tableRows';
-    /**
-     * Number of columns in the table. It's possible for a table to be non-
-     * rectangular, so some rows may have a different number of cells.
-     *
-     * @var int
-     */
-    public $columns;
-    /**
-     * Number of rows in the table.
-     *
-     * @var int
-     */
-    public $rows;
-    /**
-     * The suggested deletion IDs. If empty, then there are no suggested deletions
-     * of this content.
-     *
-     * @var string[]
-     */
-    public $suggestedDeletionIds;
-    /**
-     * The suggested insertion IDs. A Table may have multiple insertion IDs if
-     * it's a nested suggested change. If empty, then this is not a suggested
-     * insertion.
-     *
-     * @var string[]
-     */
-    public $suggestedInsertionIds;
-    protected $tableRowsType = TableRow::class;
-    protected $tableRowsDataType = 'array';
-    protected $tableStyleType = TableStyle::class;
-    protected $tableStyleDataType = '';
-    /**
-     * Number of columns in the table. It's possible for a table to be non-
-     * rectangular, so some rows may have a different number of cells.
-     *
-     * @param int $columns
-     */
-    public function setColumns($columns)
+namespace Google\Service\Docs {
+    class Table extends \Google\Collection
     {
+        protected $collection_key = 'tableRows';
+        /**
+         * Number of columns in the table. It's possible for a table to be non-
+         * rectangular, so some rows may have a different number of cells.
+         *
+         * @var int
+         */
+        public $columns;
+        /**
+         * Number of rows in the table.
+         *
+         * @var int
+         */
+        public $rows;
+        /**
+         * The suggested deletion IDs. If empty, then there are no suggested deletions
+         * of this content.
+         *
+         * @var string[]
+         */
+        public $suggestedDeletionIds;
+        /**
+         * The suggested insertion IDs. A Table may have multiple insertion IDs if
+         * it's a nested suggested change. If empty, then this is not a suggested
+         * insertion.
+         *
+         * @var string[]
+         */
+        public $suggestedInsertionIds;
+        protected $tableRowsType = TableRow::class;
+        protected $tableRowsDataType = 'array';
+        protected $tableStyleType = TableStyle::class;
+        protected $tableStyleDataType = '';
+        /**
+         * Number of columns in the table. It's possible for a table to be non-
+         * rectangular, so some rows may have a different number of cells.
+         *
+         * @param int $columns
+         */
+        public function setColumns($columns)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getColumns()
+        {
+        }
+        /**
+         * Number of rows in the table.
+         *
+         * @param int $rows
+         */
+        public function setRows($rows)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRows()
+        {
+        }
+        /**
+         * The suggested deletion IDs. If empty, then there are no suggested deletions
+         * of this content.
+         *
+         * @param string[] $suggestedDeletionIds
+         */
+        public function setSuggestedDeletionIds($suggestedDeletionIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSuggestedDeletionIds()
+        {
+        }
+        /**
+         * The suggested insertion IDs. A Table may have multiple insertion IDs if
+         * it's a nested suggested change. If empty, then this is not a suggested
+         * insertion.
+         *
+         * @param string[] $suggestedInsertionIds
+         */
+        public function setSuggestedInsertionIds($suggestedInsertionIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSuggestedInsertionIds()
+        {
+        }
+        /**
+         * The contents and style of each row.
+         *
+         * @param TableRow[] $tableRows
+         */
+        public function setTableRows($tableRows)
+        {
+        }
+        /**
+         * @return TableRow[]
+         */
+        public function getTableRows()
+        {
+        }
+        /**
+         * The style of the table.
+         *
+         * @param TableStyle $tableStyle
+         */
+        public function setTableStyle(TableStyle $tableStyle)
+        {
+        }
+        /**
+         * @return TableStyle
+         */
+        public function getTableStyle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Docs\Table registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumns()
-    {
-    }
-    /**
-     * Number of rows in the table.
-     *
-     * @param int $rows
-     */
-    public function setRows($rows)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRows()
-    {
-    }
-    /**
-     * The suggested deletion IDs. If empty, then there are no suggested deletions
-     * of this content.
-     *
-     * @param string[] $suggestedDeletionIds
-     */
-    public function setSuggestedDeletionIds($suggestedDeletionIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSuggestedDeletionIds()
-    {
-    }
-    /**
-     * The suggested insertion IDs. A Table may have multiple insertion IDs if
-     * it's a nested suggested change. If empty, then this is not a suggested
-     * insertion.
-     *
-     * @param string[] $suggestedInsertionIds
-     */
-    public function setSuggestedInsertionIds($suggestedInsertionIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSuggestedInsertionIds()
-    {
-    }
-    /**
-     * The contents and style of each row.
-     *
-     * @param TableRow[] $tableRows
-     */
-    public function setTableRows($tableRows)
-    {
-    }
-    /**
-     * @return TableRow[]
-     */
-    public function getTableRows()
-    {
-    }
-    /**
-     * The style of the table.
-     *
-     * @param TableStyle $tableStyle
-     */
-    public function setTableStyle(TableStyle $tableStyle)
-    {
-    }
-    /**
-     * @return TableStyle
-     */
-    public function getTableStyle()
+    class Google_Service_Docs_Table extends \Google\Service\Docs\Table
     {
     }
 }

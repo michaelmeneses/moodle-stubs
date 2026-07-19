@@ -21,103 +21,112 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1CheckGroundingRequest extends \Google\Collection
-{
-    protected $collection_key = 'facts';
-    /**
-     * Answer candidate to check. It can have a maximum length of 4096 tokens.
-     *
-     * @var string
-     */
-    public $answerCandidate;
-    protected $factsType = GoogleCloudDiscoveryengineV1GroundingFact::class;
-    protected $factsDataType = 'array';
-    protected $groundingSpecType = GoogleCloudDiscoveryengineV1CheckGroundingSpec::class;
-    protected $groundingSpecDataType = '';
-    /**
-     * The user labels applied to a resource must meet the following requirements:
-     * * Each resource can have multiple labels, up to a maximum of 64. * Each
-     * label must be a key-value pair. * Keys have a minimum length of 1 character
-     * and a maximum length of 63 characters and cannot be empty. Values can be
-     * empty and have a maximum length of 63 characters. * Keys and values can
-     * contain only lowercase letters, numeric characters, underscores, and
-     * dashes. All characters must use UTF-8 encoding, and international
-     * characters are allowed. * The key portion of a label must be unique.
-     * However, you can use the same key with multiple resources. * Keys must
-     * start with a lowercase letter or international character. See [Google Cloud
-     * Document](https://cloud.google.com/resource-manager/docs/creating-managing-
-     * labels#requirements) for more details.
-     *
-     * @var string[]
-     */
-    public $userLabels;
-    /**
-     * Answer candidate to check. It can have a maximum length of 4096 tokens.
-     *
-     * @param string $answerCandidate
-     */
-    public function setAnswerCandidate($answerCandidate)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1CheckGroundingRequest extends \Google\Collection
     {
+        protected $collection_key = 'facts';
+        /**
+         * Answer candidate to check. It can have a maximum length of 4096 tokens.
+         *
+         * @var string
+         */
+        public $answerCandidate;
+        protected $factsType = GoogleCloudDiscoveryengineV1GroundingFact::class;
+        protected $factsDataType = 'array';
+        protected $groundingSpecType = GoogleCloudDiscoveryengineV1CheckGroundingSpec::class;
+        protected $groundingSpecDataType = '';
+        /**
+         * The user labels applied to a resource must meet the following requirements:
+         * * Each resource can have multiple labels, up to a maximum of 64. * Each
+         * label must be a key-value pair. * Keys have a minimum length of 1 character
+         * and a maximum length of 63 characters and cannot be empty. Values can be
+         * empty and have a maximum length of 63 characters. * Keys and values can
+         * contain only lowercase letters, numeric characters, underscores, and
+         * dashes. All characters must use UTF-8 encoding, and international
+         * characters are allowed. * The key portion of a label must be unique.
+         * However, you can use the same key with multiple resources. * Keys must
+         * start with a lowercase letter or international character. See [Google Cloud
+         * Document](https://cloud.google.com/resource-manager/docs/creating-managing-
+         * labels#requirements) for more details.
+         *
+         * @var string[]
+         */
+        public $userLabels;
+        /**
+         * Answer candidate to check. It can have a maximum length of 4096 tokens.
+         *
+         * @param string $answerCandidate
+         */
+        public function setAnswerCandidate($answerCandidate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnswerCandidate()
+        {
+        }
+        /**
+         * List of facts for the grounding check. We support up to 200 facts.
+         *
+         * @param GoogleCloudDiscoveryengineV1GroundingFact[] $facts
+         */
+        public function setFacts($facts)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1GroundingFact[]
+         */
+        public function getFacts()
+        {
+        }
+        /**
+         * Configuration of the grounding check.
+         *
+         * @param GoogleCloudDiscoveryengineV1CheckGroundingSpec $groundingSpec
+         */
+        public function setGroundingSpec(GoogleCloudDiscoveryengineV1CheckGroundingSpec $groundingSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1CheckGroundingSpec
+         */
+        public function getGroundingSpec()
+        {
+        }
+        /**
+         * The user labels applied to a resource must meet the following requirements:
+         * * Each resource can have multiple labels, up to a maximum of 64. * Each
+         * label must be a key-value pair. * Keys have a minimum length of 1 character
+         * and a maximum length of 63 characters and cannot be empty. Values can be
+         * empty and have a maximum length of 63 characters. * Keys and values can
+         * contain only lowercase letters, numeric characters, underscores, and
+         * dashes. All characters must use UTF-8 encoding, and international
+         * characters are allowed. * The key portion of a label must be unique.
+         * However, you can use the same key with multiple resources. * Keys must
+         * start with a lowercase letter or international character. See [Google Cloud
+         * Document](https://cloud.google.com/resource-manager/docs/creating-managing-
+         * labels#requirements) for more details.
+         *
+         * @param string[] $userLabels
+         */
+        public function setUserLabels($userLabels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUserLabels()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1CheckGroundingRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnswerCandidate()
-    {
-    }
-    /**
-     * List of facts for the grounding check. We support up to 200 facts.
-     *
-     * @param GoogleCloudDiscoveryengineV1GroundingFact[] $facts
-     */
-    public function setFacts($facts)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1GroundingFact[]
-     */
-    public function getFacts()
-    {
-    }
-    /**
-     * Configuration of the grounding check.
-     *
-     * @param GoogleCloudDiscoveryengineV1CheckGroundingSpec $groundingSpec
-     */
-    public function setGroundingSpec(GoogleCloudDiscoveryengineV1CheckGroundingSpec $groundingSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1CheckGroundingSpec
-     */
-    public function getGroundingSpec()
-    {
-    }
-    /**
-     * The user labels applied to a resource must meet the following requirements:
-     * * Each resource can have multiple labels, up to a maximum of 64. * Each
-     * label must be a key-value pair. * Keys have a minimum length of 1 character
-     * and a maximum length of 63 characters and cannot be empty. Values can be
-     * empty and have a maximum length of 63 characters. * Keys and values can
-     * contain only lowercase letters, numeric characters, underscores, and
-     * dashes. All characters must use UTF-8 encoding, and international
-     * characters are allowed. * The key portion of a label must be unique.
-     * However, you can use the same key with multiple resources. * Keys must
-     * start with a lowercase letter or international character. See [Google Cloud
-     * Document](https://cloud.google.com/resource-manager/docs/creating-managing-
-     * labels#requirements) for more details.
-     *
-     * @param string[] $userLabels
-     */
-    public function setUserLabels($userLabels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUserLabels()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1CheckGroundingRequest extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1CheckGroundingRequest
     {
     }
 }

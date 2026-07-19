@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InterconnectAttachmentGroupsOperationalStatus extends \Google\Collection
-{
-    public const GROUP_STATUS_DEGRADED = 'DEGRADED';
-    public const GROUP_STATUS_FULLY_DOWN = 'FULLY_DOWN';
-    public const GROUP_STATUS_FULLY_UP = 'FULLY_UP';
-    public const GROUP_STATUS_UNSPECIFIED = 'UNSPECIFIED';
-    protected $collection_key = 'attachmentStatuses';
-    protected $attachmentStatusesType = InterconnectAttachmentGroupsOperationalStatusAttachmentStatus::class;
-    protected $attachmentStatusesDataType = 'array';
-    protected $configuredType = InterconnectAttachmentGroupConfigured::class;
-    protected $configuredDataType = '';
-    /**
-     * Output only. Summarizes the status of the group.
-     *
-     * @var string
-     */
-    public $groupStatus;
-    protected $intentType = InterconnectAttachmentGroupIntent::class;
-    protected $intentDataType = '';
-    protected $operationalType = InterconnectAttachmentGroupConfigured::class;
-    protected $operationalDataType = '';
-    /**
-     * @param InterconnectAttachmentGroupsOperationalStatusAttachmentStatus[] $attachmentStatuses
-     */
-    public function setAttachmentStatuses($attachmentStatuses)
+namespace Google\Service\Compute {
+    class InterconnectAttachmentGroupsOperationalStatus extends \Google\Collection
     {
+        public const GROUP_STATUS_DEGRADED = 'DEGRADED';
+        public const GROUP_STATUS_FULLY_DOWN = 'FULLY_DOWN';
+        public const GROUP_STATUS_FULLY_UP = 'FULLY_UP';
+        public const GROUP_STATUS_UNSPECIFIED = 'UNSPECIFIED';
+        protected $collection_key = 'attachmentStatuses';
+        protected $attachmentStatusesType = InterconnectAttachmentGroupsOperationalStatusAttachmentStatus::class;
+        protected $attachmentStatusesDataType = 'array';
+        protected $configuredType = InterconnectAttachmentGroupConfigured::class;
+        protected $configuredDataType = '';
+        /**
+         * Output only. Summarizes the status of the group.
+         *
+         * @var string
+         */
+        public $groupStatus;
+        protected $intentType = InterconnectAttachmentGroupIntent::class;
+        protected $intentDataType = '';
+        protected $operationalType = InterconnectAttachmentGroupConfigured::class;
+        protected $operationalDataType = '';
+        /**
+         * @param InterconnectAttachmentGroupsOperationalStatusAttachmentStatus[] $attachmentStatuses
+         */
+        public function setAttachmentStatuses($attachmentStatuses)
+        {
+        }
+        /**
+         * @return InterconnectAttachmentGroupsOperationalStatusAttachmentStatus[]
+         */
+        public function getAttachmentStatuses()
+        {
+        }
+        /**
+         * @param InterconnectAttachmentGroupConfigured $configured
+         */
+        public function setConfigured(InterconnectAttachmentGroupConfigured $configured)
+        {
+        }
+        /**
+         * @return InterconnectAttachmentGroupConfigured
+         */
+        public function getConfigured()
+        {
+        }
+        /**
+         * Output only. Summarizes the status of the group.
+         *
+         * Accepted values: DEGRADED, FULLY_DOWN, FULLY_UP, UNSPECIFIED
+         *
+         * @param self::GROUP_STATUS_* $groupStatus
+         */
+        public function setGroupStatus($groupStatus)
+        {
+        }
+        /**
+         * @return self::GROUP_STATUS_*
+         */
+        public function getGroupStatus()
+        {
+        }
+        /**
+         * @param InterconnectAttachmentGroupIntent $intent
+         */
+        public function setIntent(InterconnectAttachmentGroupIntent $intent)
+        {
+        }
+        /**
+         * @return InterconnectAttachmentGroupIntent
+         */
+        public function getIntent()
+        {
+        }
+        /**
+         * Output only. The operational state of the group, including only active
+         * Attachments.
+         *
+         * @param InterconnectAttachmentGroupConfigured $operational
+         */
+        public function setOperational(InterconnectAttachmentGroupConfigured $operational)
+        {
+        }
+        /**
+         * @return InterconnectAttachmentGroupConfigured
+         */
+        public function getOperational()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InterconnectAttachmentGroupsOperationalStatusAttachmentStatus[]
+     * Runtime class alias of \Google\Service\Compute\InterconnectAttachmentGroupsOperationalStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttachmentStatuses()
-    {
-    }
-    /**
-     * @param InterconnectAttachmentGroupConfigured $configured
-     */
-    public function setConfigured(InterconnectAttachmentGroupConfigured $configured)
-    {
-    }
-    /**
-     * @return InterconnectAttachmentGroupConfigured
-     */
-    public function getConfigured()
-    {
-    }
-    /**
-     * Output only. Summarizes the status of the group.
-     *
-     * Accepted values: DEGRADED, FULLY_DOWN, FULLY_UP, UNSPECIFIED
-     *
-     * @param self::GROUP_STATUS_* $groupStatus
-     */
-    public function setGroupStatus($groupStatus)
-    {
-    }
-    /**
-     * @return self::GROUP_STATUS_*
-     */
-    public function getGroupStatus()
-    {
-    }
-    /**
-     * @param InterconnectAttachmentGroupIntent $intent
-     */
-    public function setIntent(InterconnectAttachmentGroupIntent $intent)
-    {
-    }
-    /**
-     * @return InterconnectAttachmentGroupIntent
-     */
-    public function getIntent()
-    {
-    }
-    /**
-     * Output only. The operational state of the group, including only active
-     * Attachments.
-     *
-     * @param InterconnectAttachmentGroupConfigured $operational
-     */
-    public function setOperational(InterconnectAttachmentGroupConfigured $operational)
-    {
-    }
-    /**
-     * @return InterconnectAttachmentGroupConfigured
-     */
-    public function getOperational()
+    class Google_Service_Compute_InterconnectAttachmentGroupsOperationalStatus extends \Google\Service\Compute\InterconnectAttachmentGroupsOperationalStatus
     {
     }
 }

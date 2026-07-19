@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class PermissionSetting extends \Google\Model
-{
-    /**
-     * Optional. Whether space managers `ROLE_ASSISTANT_MANAGER`) have this
-     * permission.
-     *
-     * @var bool
-     */
-    public $assistantManagersAllowed;
-    /**
-     * Optional. Whether space owners (`ROLE_MANAGER`) have this permission.
-     *
-     * @var bool
-     */
-    public $managersAllowed;
-    /**
-     * Optional. Whether basic space members (`ROLE_MEMBER`) have this permission.
-     *
-     * @var bool
-     */
-    public $membersAllowed;
-    /**
-     * Optional. Whether space managers `ROLE_ASSISTANT_MANAGER`) have this
-     * permission.
-     *
-     * @param bool $assistantManagersAllowed
-     */
-    public function setAssistantManagersAllowed($assistantManagersAllowed)
+namespace Google\Service\HangoutsChat {
+    class PermissionSetting extends \Google\Model
     {
+        /**
+         * Optional. Whether space managers `ROLE_ASSISTANT_MANAGER`) have this
+         * permission.
+         *
+         * @var bool
+         */
+        public $assistantManagersAllowed;
+        /**
+         * Optional. Whether space owners (`ROLE_MANAGER`) have this permission.
+         *
+         * @var bool
+         */
+        public $managersAllowed;
+        /**
+         * Optional. Whether basic space members (`ROLE_MEMBER`) have this permission.
+         *
+         * @var bool
+         */
+        public $membersAllowed;
+        /**
+         * Optional. Whether space managers `ROLE_ASSISTANT_MANAGER`) have this
+         * permission.
+         *
+         * @param bool $assistantManagersAllowed
+         */
+        public function setAssistantManagersAllowed($assistantManagersAllowed)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAssistantManagersAllowed()
+        {
+        }
+        /**
+         * Optional. Whether space owners (`ROLE_MANAGER`) have this permission.
+         *
+         * @param bool $managersAllowed
+         */
+        public function setManagersAllowed($managersAllowed)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getManagersAllowed()
+        {
+        }
+        /**
+         * Optional. Whether basic space members (`ROLE_MEMBER`) have this permission.
+         *
+         * @param bool $membersAllowed
+         */
+        public function setMembersAllowed($membersAllowed)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getMembersAllowed()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\HangoutsChat\PermissionSetting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssistantManagersAllowed()
-    {
-    }
-    /**
-     * Optional. Whether space owners (`ROLE_MANAGER`) have this permission.
-     *
-     * @param bool $managersAllowed
-     */
-    public function setManagersAllowed($managersAllowed)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getManagersAllowed()
-    {
-    }
-    /**
-     * Optional. Whether basic space members (`ROLE_MEMBER`) have this permission.
-     *
-     * @param bool $membersAllowed
-     */
-    public function setMembersAllowed($membersAllowed)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getMembersAllowed()
+    class Google_Service_HangoutsChat_PermissionSetting extends \Google\Service\HangoutsChat\PermissionSetting
     {
     }
 }

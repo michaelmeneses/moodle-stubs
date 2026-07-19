@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OnDemandScanning;
-
-class OndemandscanningEmpty extends \Google\Model
-{
+namespace Google\Service\OnDemandScanning {
+    class OndemandscanningEmpty extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\OnDemandScanning\OndemandscanningEmpty registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_OnDemandScanning_OndemandscanningEmpty extends \Google\Service\OnDemandScanning\OndemandscanningEmpty
+    {
+    }
 }

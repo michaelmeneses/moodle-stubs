@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIAP;
-
-class NextStateOfTags extends \Google\Model
-{
-    protected $tagsFullStateType = TagsFullState::class;
-    protected $tagsFullStateDataType = '';
-    protected $tagsFullStateForChildResourceType = TagsFullStateForChildResource::class;
-    protected $tagsFullStateForChildResourceDataType = '';
-    protected $tagsPartialStateType = TagsPartialState::class;
-    protected $tagsPartialStateDataType = '';
-    /**
-     * @param TagsFullState $tagsFullState
-     */
-    public function setTagsFullState(TagsFullState $tagsFullState)
+namespace Google\Service\CloudIAP {
+    class NextStateOfTags extends \Google\Model
     {
+        protected $tagsFullStateType = TagsFullState::class;
+        protected $tagsFullStateDataType = '';
+        protected $tagsFullStateForChildResourceType = TagsFullStateForChildResource::class;
+        protected $tagsFullStateForChildResourceDataType = '';
+        protected $tagsPartialStateType = TagsPartialState::class;
+        protected $tagsPartialStateDataType = '';
+        /**
+         * @param TagsFullState $tagsFullState
+         */
+        public function setTagsFullState(TagsFullState $tagsFullState)
+        {
+        }
+        /**
+         * @return TagsFullState
+         */
+        public function getTagsFullState()
+        {
+        }
+        /**
+         * @param TagsFullStateForChildResource $tagsFullStateForChildResource
+         */
+        public function setTagsFullStateForChildResource(TagsFullStateForChildResource $tagsFullStateForChildResource)
+        {
+        }
+        /**
+         * @return TagsFullStateForChildResource
+         */
+        public function getTagsFullStateForChildResource()
+        {
+        }
+        /**
+         * @param TagsPartialState $tagsPartialState
+         */
+        public function setTagsPartialState(TagsPartialState $tagsPartialState)
+        {
+        }
+        /**
+         * @return TagsPartialState
+         */
+        public function getTagsPartialState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TagsFullState
+     * Runtime class alias of \Google\Service\CloudIAP\NextStateOfTags registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTagsFullState()
-    {
-    }
-    /**
-     * @param TagsFullStateForChildResource $tagsFullStateForChildResource
-     */
-    public function setTagsFullStateForChildResource(TagsFullStateForChildResource $tagsFullStateForChildResource)
-    {
-    }
-    /**
-     * @return TagsFullStateForChildResource
-     */
-    public function getTagsFullStateForChildResource()
-    {
-    }
-    /**
-     * @param TagsPartialState $tagsPartialState
-     */
-    public function setTagsPartialState(TagsPartialState $tagsPartialState)
-    {
-    }
-    /**
-     * @return TagsPartialState
-     */
-    public function getTagsPartialState()
+    class Google_Service_CloudIAP_NextStateOfTags extends \Google\Service\CloudIAP\NextStateOfTags
     {
     }
 }

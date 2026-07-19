@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class KeyImportEvent extends \Google\Model
-{
-    /**
-     * UID of the application which imported the key
-     *
-     * @var int
-     */
-    public $applicationUid;
-    /**
-     * Alias of the key.
-     *
-     * @var string
-     */
-    public $keyAlias;
-    /**
-     * Whether the operation was successful.
-     *
-     * @var bool
-     */
-    public $success;
-    /**
-     * UID of the application which imported the key
-     *
-     * @param int $applicationUid
-     */
-    public function setApplicationUid($applicationUid)
+namespace Google\Service\AndroidManagement {
+    class KeyImportEvent extends \Google\Model
     {
+        /**
+         * UID of the application which imported the key
+         *
+         * @var int
+         */
+        public $applicationUid;
+        /**
+         * Alias of the key.
+         *
+         * @var string
+         */
+        public $keyAlias;
+        /**
+         * Whether the operation was successful.
+         *
+         * @var bool
+         */
+        public $success;
+        /**
+         * UID of the application which imported the key
+         *
+         * @param int $applicationUid
+         */
+        public function setApplicationUid($applicationUid)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getApplicationUid()
+        {
+        }
+        /**
+         * Alias of the key.
+         *
+         * @param string $keyAlias
+         */
+        public function setKeyAlias($keyAlias)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKeyAlias()
+        {
+        }
+        /**
+         * Whether the operation was successful.
+         *
+         * @param bool $success
+         */
+        public function setSuccess($success)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSuccess()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\AndroidManagement\KeyImportEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApplicationUid()
-    {
-    }
-    /**
-     * Alias of the key.
-     *
-     * @param string $keyAlias
-     */
-    public function setKeyAlias($keyAlias)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKeyAlias()
-    {
-    }
-    /**
-     * Whether the operation was successful.
-     *
-     * @param bool $success
-     */
-    public function setSuccess($success)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSuccess()
+    class Google_Service_AndroidManagement_KeyImportEvent extends \Google\Service\AndroidManagement\KeyImportEvent
     {
     }
 }

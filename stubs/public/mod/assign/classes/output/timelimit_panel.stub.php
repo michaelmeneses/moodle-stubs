@@ -29,6 +29,10 @@
  */
 namespace mod_assign\output;
 
+use renderable;
+use renderer_base;
+use stdClass;
+use templatable;
 /**
  * Represents the timer panel.
  *

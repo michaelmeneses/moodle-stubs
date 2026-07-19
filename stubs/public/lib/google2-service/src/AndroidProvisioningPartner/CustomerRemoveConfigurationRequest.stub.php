@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidProvisioningPartner;
-
-class CustomerRemoveConfigurationRequest extends \Google\Model
-{
-    protected $deviceType = DeviceReference::class;
-    protected $deviceDataType = '';
-    /**
-     * Required. The device to remove the configuration from. There are custom
-     * validations in RemoveConfigurationRequestValidator
-     *
-     * @param DeviceReference $device
-     */
-    public function setDevice(DeviceReference $device)
+namespace Google\Service\AndroidProvisioningPartner {
+    class CustomerRemoveConfigurationRequest extends \Google\Model
     {
+        protected $deviceType = DeviceReference::class;
+        protected $deviceDataType = '';
+        /**
+         * Required. The device to remove the configuration from. There are custom
+         * validations in RemoveConfigurationRequestValidator
+         *
+         * @param DeviceReference $device
+         */
+        public function setDevice(DeviceReference $device)
+        {
+        }
+        /**
+         * @return DeviceReference
+         */
+        public function getDevice()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DeviceReference
+     * Runtime class alias of \Google\Service\AndroidProvisioningPartner\CustomerRemoveConfigurationRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDevice()
+    class Google_Service_AndroidProvisioningPartner_CustomerRemoveConfigurationRequest extends \Google\Service\AndroidProvisioningPartner\CustomerRemoveConfigurationRequest
     {
     }
 }

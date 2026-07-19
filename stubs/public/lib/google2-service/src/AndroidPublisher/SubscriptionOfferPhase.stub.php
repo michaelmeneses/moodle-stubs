@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class SubscriptionOfferPhase extends \Google\Collection
-{
-    protected $collection_key = 'regionalConfigs';
-    /**
-     * Required. The duration of a single recurrence of this phase. Specified in
-     * ISO 8601 format.
-     *
-     * @var string
-     */
-    public $duration;
-    protected $otherRegionsConfigType = OtherRegionsSubscriptionOfferPhaseConfig::class;
-    protected $otherRegionsConfigDataType = '';
-    /**
-     * Required. The number of times this phase repeats. If this offer phase is
-     * not free, each recurrence charges the user the price of this offer phase.
-     *
-     * @var int
-     */
-    public $recurrenceCount;
-    protected $regionalConfigsType = RegionalSubscriptionOfferPhaseConfig::class;
-    protected $regionalConfigsDataType = 'array';
-    /**
-     * Required. The duration of a single recurrence of this phase. Specified in
-     * ISO 8601 format.
-     *
-     * @param string $duration
-     */
-    public function setDuration($duration)
+namespace Google\Service\AndroidPublisher {
+    class SubscriptionOfferPhase extends \Google\Collection
     {
+        protected $collection_key = 'regionalConfigs';
+        /**
+         * Required. The duration of a single recurrence of this phase. Specified in
+         * ISO 8601 format.
+         *
+         * @var string
+         */
+        public $duration;
+        protected $otherRegionsConfigType = OtherRegionsSubscriptionOfferPhaseConfig::class;
+        protected $otherRegionsConfigDataType = '';
+        /**
+         * Required. The number of times this phase repeats. If this offer phase is
+         * not free, each recurrence charges the user the price of this offer phase.
+         *
+         * @var int
+         */
+        public $recurrenceCount;
+        protected $regionalConfigsType = RegionalSubscriptionOfferPhaseConfig::class;
+        protected $regionalConfigsDataType = 'array';
+        /**
+         * Required. The duration of a single recurrence of this phase. Specified in
+         * ISO 8601 format.
+         *
+         * @param string $duration
+         */
+        public function setDuration($duration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDuration()
+        {
+        }
+        /**
+         * Pricing information for any new locations Play may launch in.
+         *
+         * @param OtherRegionsSubscriptionOfferPhaseConfig $otherRegionsConfig
+         */
+        public function setOtherRegionsConfig(OtherRegionsSubscriptionOfferPhaseConfig $otherRegionsConfig)
+        {
+        }
+        /**
+         * @return OtherRegionsSubscriptionOfferPhaseConfig
+         */
+        public function getOtherRegionsConfig()
+        {
+        }
+        /**
+         * Required. The number of times this phase repeats. If this offer phase is
+         * not free, each recurrence charges the user the price of this offer phase.
+         *
+         * @param int $recurrenceCount
+         */
+        public function setRecurrenceCount($recurrenceCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRecurrenceCount()
+        {
+        }
+        /**
+         * Required. The region-specific configuration of this offer phase. This list
+         * must contain exactly one entry for each region for which the subscription
+         * offer has a regional config.
+         *
+         * @param RegionalSubscriptionOfferPhaseConfig[] $regionalConfigs
+         */
+        public function setRegionalConfigs($regionalConfigs)
+        {
+        }
+        /**
+         * @return RegionalSubscriptionOfferPhaseConfig[]
+         */
+        public function getRegionalConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\SubscriptionOfferPhase registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDuration()
-    {
-    }
-    /**
-     * Pricing information for any new locations Play may launch in.
-     *
-     * @param OtherRegionsSubscriptionOfferPhaseConfig $otherRegionsConfig
-     */
-    public function setOtherRegionsConfig(OtherRegionsSubscriptionOfferPhaseConfig $otherRegionsConfig)
-    {
-    }
-    /**
-     * @return OtherRegionsSubscriptionOfferPhaseConfig
-     */
-    public function getOtherRegionsConfig()
-    {
-    }
-    /**
-     * Required. The number of times this phase repeats. If this offer phase is
-     * not free, each recurrence charges the user the price of this offer phase.
-     *
-     * @param int $recurrenceCount
-     */
-    public function setRecurrenceCount($recurrenceCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRecurrenceCount()
-    {
-    }
-    /**
-     * Required. The region-specific configuration of this offer phase. This list
-     * must contain exactly one entry for each region for which the subscription
-     * offer has a regional config.
-     *
-     * @param RegionalSubscriptionOfferPhaseConfig[] $regionalConfigs
-     */
-    public function setRegionalConfigs($regionalConfigs)
-    {
-    }
-    /**
-     * @return RegionalSubscriptionOfferPhaseConfig[]
-     */
-    public function getRegionalConfigs()
+    class Google_Service_AndroidPublisher_SubscriptionOfferPhase extends \Google\Service\AndroidPublisher\SubscriptionOfferPhase
     {
     }
 }

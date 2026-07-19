@@ -8,6 +8,12 @@
  */
 namespace core_reportbuilder\form;
 
+use core\context;
+use core_form\dynamic_form;
+use core_reportbuilder\local\helpers\report;
+use core_reportbuilder\local\models\report as report_model;
+use core_reportbuilder\permission;
+use core\url;
 /**
  * Dynamic duplicate custom reports form
  *

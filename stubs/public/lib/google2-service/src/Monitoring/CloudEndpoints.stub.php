@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class CloudEndpoints extends \Google\Model
-{
-    /**
-     * The name of the Cloud Endpoints service underlying this service.
-     * Corresponds to the service resource label in the api monitored resource
-     * (https://cloud.google.com/monitoring/api/resources#tag_api).
-     *
-     * @var string
-     */
-    public $service;
-    /**
-     * The name of the Cloud Endpoints service underlying this service.
-     * Corresponds to the service resource label in the api monitored resource
-     * (https://cloud.google.com/monitoring/api/resources#tag_api).
-     *
-     * @param string $service
-     */
-    public function setService($service)
+namespace Google\Service\Monitoring {
+    class CloudEndpoints extends \Google\Model
     {
+        /**
+         * The name of the Cloud Endpoints service underlying this service.
+         * Corresponds to the service resource label in the api monitored resource
+         * (https://cloud.google.com/monitoring/api/resources#tag_api).
+         *
+         * @var string
+         */
+        public $service;
+        /**
+         * The name of the Cloud Endpoints service underlying this service.
+         * Corresponds to the service resource label in the api monitored resource
+         * (https://cloud.google.com/monitoring/api/resources#tag_api).
+         *
+         * @param string $service
+         */
+        public function setService($service)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getService()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Monitoring\CloudEndpoints registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getService()
+    class Google_Service_Monitoring_CloudEndpoints extends \Google\Service\Monitoring\CloudEndpoints
     {
     }
 }

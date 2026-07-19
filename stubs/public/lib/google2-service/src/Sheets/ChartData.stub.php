@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class ChartData extends \Google\Model
-{
-    /**
-     * Default value, do not use.
-     */
-    public const AGGREGATE_TYPE_CHART_AGGREGATE_TYPE_UNSPECIFIED = 'CHART_AGGREGATE_TYPE_UNSPECIFIED';
-    /**
-     * Average aggregate function.
-     */
-    public const AGGREGATE_TYPE_AVERAGE = 'AVERAGE';
-    /**
-     * Count aggregate function.
-     */
-    public const AGGREGATE_TYPE_COUNT = 'COUNT';
-    /**
-     * Maximum aggregate function.
-     */
-    public const AGGREGATE_TYPE_MAX = 'MAX';
-    /**
-     * Median aggregate function.
-     */
-    public const AGGREGATE_TYPE_MEDIAN = 'MEDIAN';
-    /**
-     * Minimum aggregate function.
-     */
-    public const AGGREGATE_TYPE_MIN = 'MIN';
-    /**
-     * Sum aggregate function.
-     */
-    public const AGGREGATE_TYPE_SUM = 'SUM';
-    /**
-     * The aggregation type for the series of a data source chart. Only supported
-     * for data source charts.
-     *
-     * @var string
-     */
-    public $aggregateType;
-    protected $columnReferenceType = DataSourceColumnReference::class;
-    protected $columnReferenceDataType = '';
-    protected $groupRuleType = ChartGroupRule::class;
-    protected $groupRuleDataType = '';
-    protected $sourceRangeType = ChartSourceRange::class;
-    protected $sourceRangeDataType = '';
-    /**
-     * The aggregation type for the series of a data source chart. Only supported
-     * for data source charts.
-     *
-     * Accepted values: CHART_AGGREGATE_TYPE_UNSPECIFIED, AVERAGE, COUNT, MAX,
-     * MEDIAN, MIN, SUM
-     *
-     * @param self::AGGREGATE_TYPE_* $aggregateType
-     */
-    public function setAggregateType($aggregateType)
+namespace Google\Service\Sheets {
+    class ChartData extends \Google\Model
     {
+        /**
+         * Default value, do not use.
+         */
+        public const AGGREGATE_TYPE_CHART_AGGREGATE_TYPE_UNSPECIFIED = 'CHART_AGGREGATE_TYPE_UNSPECIFIED';
+        /**
+         * Average aggregate function.
+         */
+        public const AGGREGATE_TYPE_AVERAGE = 'AVERAGE';
+        /**
+         * Count aggregate function.
+         */
+        public const AGGREGATE_TYPE_COUNT = 'COUNT';
+        /**
+         * Maximum aggregate function.
+         */
+        public const AGGREGATE_TYPE_MAX = 'MAX';
+        /**
+         * Median aggregate function.
+         */
+        public const AGGREGATE_TYPE_MEDIAN = 'MEDIAN';
+        /**
+         * Minimum aggregate function.
+         */
+        public const AGGREGATE_TYPE_MIN = 'MIN';
+        /**
+         * Sum aggregate function.
+         */
+        public const AGGREGATE_TYPE_SUM = 'SUM';
+        /**
+         * The aggregation type for the series of a data source chart. Only supported
+         * for data source charts.
+         *
+         * @var string
+         */
+        public $aggregateType;
+        protected $columnReferenceType = DataSourceColumnReference::class;
+        protected $columnReferenceDataType = '';
+        protected $groupRuleType = ChartGroupRule::class;
+        protected $groupRuleDataType = '';
+        protected $sourceRangeType = ChartSourceRange::class;
+        protected $sourceRangeDataType = '';
+        /**
+         * The aggregation type for the series of a data source chart. Only supported
+         * for data source charts.
+         *
+         * Accepted values: CHART_AGGREGATE_TYPE_UNSPECIFIED, AVERAGE, COUNT, MAX,
+         * MEDIAN, MIN, SUM
+         *
+         * @param self::AGGREGATE_TYPE_* $aggregateType
+         */
+        public function setAggregateType($aggregateType)
+        {
+        }
+        /**
+         * @return self::AGGREGATE_TYPE_*
+         */
+        public function getAggregateType()
+        {
+        }
+        /**
+         * The reference to the data source column that the data reads from.
+         *
+         * @param DataSourceColumnReference $columnReference
+         */
+        public function setColumnReference(DataSourceColumnReference $columnReference)
+        {
+        }
+        /**
+         * @return DataSourceColumnReference
+         */
+        public function getColumnReference()
+        {
+        }
+        /**
+         * The rule to group the data by if the ChartData backs the domain of a data
+         * source chart. Only supported for data source charts.
+         *
+         * @param ChartGroupRule $groupRule
+         */
+        public function setGroupRule(ChartGroupRule $groupRule)
+        {
+        }
+        /**
+         * @return ChartGroupRule
+         */
+        public function getGroupRule()
+        {
+        }
+        /**
+         * The source ranges of the data.
+         *
+         * @param ChartSourceRange $sourceRange
+         */
+        public function setSourceRange(ChartSourceRange $sourceRange)
+        {
+        }
+        /**
+         * @return ChartSourceRange
+         */
+        public function getSourceRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::AGGREGATE_TYPE_*
+     * Runtime class alias of \Google\Service\Sheets\ChartData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAggregateType()
-    {
-    }
-    /**
-     * The reference to the data source column that the data reads from.
-     *
-     * @param DataSourceColumnReference $columnReference
-     */
-    public function setColumnReference(DataSourceColumnReference $columnReference)
-    {
-    }
-    /**
-     * @return DataSourceColumnReference
-     */
-    public function getColumnReference()
-    {
-    }
-    /**
-     * The rule to group the data by if the ChartData backs the domain of a data
-     * source chart. Only supported for data source charts.
-     *
-     * @param ChartGroupRule $groupRule
-     */
-    public function setGroupRule(ChartGroupRule $groupRule)
-    {
-    }
-    /**
-     * @return ChartGroupRule
-     */
-    public function getGroupRule()
-    {
-    }
-    /**
-     * The source ranges of the data.
-     *
-     * @param ChartSourceRange $sourceRange
-     */
-    public function setSourceRange(ChartSourceRange $sourceRange)
-    {
-    }
-    /**
-     * @return ChartSourceRange
-     */
-    public function getSourceRange()
+    class Google_Service_Sheets_ChartData extends \Google\Service\Sheets\ChartData
     {
     }
 }

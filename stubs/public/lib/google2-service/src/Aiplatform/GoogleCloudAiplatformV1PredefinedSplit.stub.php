@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1PredefinedSplit extends \Google\Model
-{
-    /**
-     * Required. The key is a name of one of the Dataset's data columns. The value
-     * of the key (either the label's value or value in the column) must be one of
-     * {`training`, `validation`, `test`}, and it defines to which set the given
-     * piece of data is assigned. If for a piece of data the key is not present or
-     * has an invalid value, that piece is ignored by the pipeline.
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * Required. The key is a name of one of the Dataset's data columns. The value
-     * of the key (either the label's value or value in the column) must be one of
-     * {`training`, `validation`, `test`}, and it defines to which set the given
-     * piece of data is assigned. If for a piece of data the key is not present or
-     * has an invalid value, that piece is ignored by the pipeline.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1PredefinedSplit extends \Google\Model
     {
+        /**
+         * Required. The key is a name of one of the Dataset's data columns. The value
+         * of the key (either the label's value or value in the column) must be one of
+         * {`training`, `validation`, `test`}, and it defines to which set the given
+         * piece of data is assigned. If for a piece of data the key is not present or
+         * has an invalid value, that piece is ignored by the pipeline.
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * Required. The key is a name of one of the Dataset's data columns. The value
+         * of the key (either the label's value or value in the column) must be one of
+         * {`training`, `validation`, `test`}, and it defines to which set the given
+         * piece of data is assigned. If for a piece of data the key is not present or
+         * has an invalid value, that piece is ignored by the pipeline.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1PredefinedSplit registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKey()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1PredefinedSplit extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1PredefinedSplit
     {
     }
 }

@@ -21,75 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunV2TaskAttemptResult extends \Google\Model
-{
-    /**
-     * Output only. The exit code of this attempt. This may be unset if the
-     * container was unable to exit cleanly with a code due to some other failure.
-     * See status field for possible failure details. At most one of exit_code or
-     * term_signal will be set.
-     *
-     * @var int
-     */
-    public $exitCode;
-    protected $statusType = GoogleRpcStatus::class;
-    protected $statusDataType = '';
-    /**
-     * Output only. Termination signal of the container. This is set to non-zero
-     * if the container is terminated by the system. At most one of exit_code or
-     * term_signal will be set.
-     *
-     * @var int
-     */
-    public $termSignal;
-    /**
-     * Output only. The exit code of this attempt. This may be unset if the
-     * container was unable to exit cleanly with a code due to some other failure.
-     * See status field for possible failure details. At most one of exit_code or
-     * term_signal will be set.
-     *
-     * @param int $exitCode
-     */
-    public function setExitCode($exitCode)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunV2TaskAttemptResult extends \Google\Model
     {
+        /**
+         * Output only. The exit code of this attempt. This may be unset if the
+         * container was unable to exit cleanly with a code due to some other failure.
+         * See status field for possible failure details. At most one of exit_code or
+         * term_signal will be set.
+         *
+         * @var int
+         */
+        public $exitCode;
+        protected $statusType = GoogleRpcStatus::class;
+        protected $statusDataType = '';
+        /**
+         * Output only. Termination signal of the container. This is set to non-zero
+         * if the container is terminated by the system. At most one of exit_code or
+         * term_signal will be set.
+         *
+         * @var int
+         */
+        public $termSignal;
+        /**
+         * Output only. The exit code of this attempt. This may be unset if the
+         * container was unable to exit cleanly with a code due to some other failure.
+         * See status field for possible failure details. At most one of exit_code or
+         * term_signal will be set.
+         *
+         * @param int $exitCode
+         */
+        public function setExitCode($exitCode)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getExitCode()
+        {
+        }
+        /**
+         * Output only. The status of this attempt. If the status code is OK, then the
+         * attempt succeeded.
+         *
+         * @param GoogleRpcStatus $status
+         */
+        public function setStatus(GoogleRpcStatus $status)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * Output only. Termination signal of the container. This is set to non-zero
+         * if the container is terminated by the system. At most one of exit_code or
+         * term_signal will be set.
+         *
+         * @param int $termSignal
+         */
+        public function setTermSignal($termSignal)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTermSignal()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunV2TaskAttemptResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExitCode()
-    {
-    }
-    /**
-     * Output only. The status of this attempt. If the status code is OK, then the
-     * attempt succeeded.
-     *
-     * @param GoogleRpcStatus $status
-     */
-    public function setStatus(GoogleRpcStatus $status)
-    {
-    }
-    /**
-     * @return GoogleRpcStatus
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * Output only. Termination signal of the container. This is set to non-zero
-     * if the container is terminated by the system. At most one of exit_code or
-     * term_signal will be set.
-     *
-     * @param int $termSignal
-     */
-    public function setTermSignal($termSignal)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTermSignal()
+    class Google_Service_CloudRun_GoogleCloudRunV2TaskAttemptResult extends \Google\Service\CloudRun\GoogleCloudRunV2TaskAttemptResult
     {
     }
 }

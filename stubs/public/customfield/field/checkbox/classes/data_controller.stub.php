@@ -29,6 +29,8 @@
  */
 namespace customfield_checkbox;
 
+use core_customfield\api;
+use core_customfield\output\field_data;
 /**
  * Class data
  *

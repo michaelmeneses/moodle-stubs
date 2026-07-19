@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class Readers extends \Google\Collection
-{
-    protected $collection_key = 'principals';
-    protected $principalsType = Principal::class;
-    protected $principalsDataType = 'array';
-    /**
-     * @param Principal[]
-     */
-    public function setPrincipals($principals)
+namespace Google\Service\Connectors {
+    class Readers extends \Google\Collection
     {
+        protected $collection_key = 'principals';
+        protected $principalsType = Principal::class;
+        protected $principalsDataType = 'array';
+        /**
+         * @param Principal[]
+         */
+        public function setPrincipals($principals)
+        {
+        }
+        /**
+         * @return Principal[]
+         */
+        public function getPrincipals()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Principal[]
+     * Runtime class alias of \Google\Service\Connectors\Readers registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPrincipals()
+    class Google_Service_Connectors_Readers extends \Google\Service\Connectors\Readers
     {
     }
 }

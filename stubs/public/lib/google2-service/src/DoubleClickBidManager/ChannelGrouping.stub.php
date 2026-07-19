@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DoubleClickBidManager;
-
-class ChannelGrouping extends \Google\Collection
-{
-    protected $collection_key = 'rules';
-    /**
-     * @var string
-     */
-    public $fallbackName;
-    /**
-     * @var string
-     */
-    public $name;
-    protected $rulesType = Rule::class;
-    protected $rulesDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setFallbackName($fallbackName)
+namespace Google\Service\DoubleClickBidManager {
+    class ChannelGrouping extends \Google\Collection
     {
+        protected $collection_key = 'rules';
+        /**
+         * @var string
+         */
+        public $fallbackName;
+        /**
+         * @var string
+         */
+        public $name;
+        protected $rulesType = Rule::class;
+        protected $rulesDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setFallbackName($fallbackName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFallbackName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param Rule[]
+         */
+        public function setRules($rules)
+        {
+        }
+        /**
+         * @return Rule[]
+         */
+        public function getRules()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DoubleClickBidManager\ChannelGrouping registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFallbackName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param Rule[]
-     */
-    public function setRules($rules)
-    {
-    }
-    /**
-     * @return Rule[]
-     */
-    public function getRules()
+    class Google_Service_DoubleClickBidManager_ChannelGrouping extends \Google\Service\DoubleClickBidManager\ChannelGrouping
     {
     }
 }

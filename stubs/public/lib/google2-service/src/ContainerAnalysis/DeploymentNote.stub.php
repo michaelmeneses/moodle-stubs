@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class DeploymentNote extends \Google\Collection
-{
-    protected $collection_key = 'resourceUri';
-    /**
-     * Required. Resource URI for the artifact being deployed.
-     *
-     * @var string[]
-     */
-    public $resourceUri;
-    /**
-     * Required. Resource URI for the artifact being deployed.
-     *
-     * @param string[] $resourceUri
-     */
-    public function setResourceUri($resourceUri)
+namespace Google\Service\ContainerAnalysis {
+    class DeploymentNote extends \Google\Collection
     {
+        protected $collection_key = 'resourceUri';
+        /**
+         * Required. Resource URI for the artifact being deployed.
+         *
+         * @var string[]
+         */
+        public $resourceUri;
+        /**
+         * Required. Resource URI for the artifact being deployed.
+         *
+         * @param string[] $resourceUri
+         */
+        public function setResourceUri($resourceUri)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getResourceUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ContainerAnalysis\DeploymentNote registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResourceUri()
+    class Google_Service_ContainerAnalysis_DeploymentNote extends \Google\Service\ContainerAnalysis\DeploymentNote
     {
     }
 }

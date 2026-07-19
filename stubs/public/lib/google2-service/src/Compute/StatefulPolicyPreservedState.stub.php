@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class StatefulPolicyPreservedState extends \Google\Model
-{
-    protected $disksType = StatefulPolicyPreservedStateDiskDevice::class;
-    protected $disksDataType = 'map';
-    protected $externalIPsType = StatefulPolicyPreservedStateNetworkIp::class;
-    protected $externalIPsDataType = 'map';
-    protected $internalIPsType = StatefulPolicyPreservedStateNetworkIp::class;
-    protected $internalIPsDataType = 'map';
-    /**
-     * Disks created on the instances that will be preserved on instance delete,
-     * update, etc. This map is keyed with the device names of the disks.
-     *
-     * @param StatefulPolicyPreservedStateDiskDevice[] $disks
-     */
-    public function setDisks($disks)
+namespace Google\Service\Compute {
+    class StatefulPolicyPreservedState extends \Google\Model
     {
+        protected $disksType = StatefulPolicyPreservedStateDiskDevice::class;
+        protected $disksDataType = 'map';
+        protected $externalIPsType = StatefulPolicyPreservedStateNetworkIp::class;
+        protected $externalIPsDataType = 'map';
+        protected $internalIPsType = StatefulPolicyPreservedStateNetworkIp::class;
+        protected $internalIPsDataType = 'map';
+        /**
+         * Disks created on the instances that will be preserved on instance delete,
+         * update, etc. This map is keyed with the device names of the disks.
+         *
+         * @param StatefulPolicyPreservedStateDiskDevice[] $disks
+         */
+        public function setDisks($disks)
+        {
+        }
+        /**
+         * @return StatefulPolicyPreservedStateDiskDevice[]
+         */
+        public function getDisks()
+        {
+        }
+        /**
+         * External network IPs assigned to the instances that will be preserved on
+         * instance delete, update, etc. This map is keyed with the network interface
+         * name.
+         *
+         * @param StatefulPolicyPreservedStateNetworkIp[] $externalIPs
+         */
+        public function setExternalIPs($externalIPs)
+        {
+        }
+        /**
+         * @return StatefulPolicyPreservedStateNetworkIp[]
+         */
+        public function getExternalIPs()
+        {
+        }
+        /**
+         * Internal network IPs assigned to the instances that will be preserved on
+         * instance delete, update, etc. This map is keyed with the network interface
+         * name.
+         *
+         * @param StatefulPolicyPreservedStateNetworkIp[] $internalIPs
+         */
+        public function setInternalIPs($internalIPs)
+        {
+        }
+        /**
+         * @return StatefulPolicyPreservedStateNetworkIp[]
+         */
+        public function getInternalIPs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return StatefulPolicyPreservedStateDiskDevice[]
+     * Runtime class alias of \Google\Service\Compute\StatefulPolicyPreservedState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisks()
-    {
-    }
-    /**
-     * External network IPs assigned to the instances that will be preserved on
-     * instance delete, update, etc. This map is keyed with the network interface
-     * name.
-     *
-     * @param StatefulPolicyPreservedStateNetworkIp[] $externalIPs
-     */
-    public function setExternalIPs($externalIPs)
-    {
-    }
-    /**
-     * @return StatefulPolicyPreservedStateNetworkIp[]
-     */
-    public function getExternalIPs()
-    {
-    }
-    /**
-     * Internal network IPs assigned to the instances that will be preserved on
-     * instance delete, update, etc. This map is keyed with the network interface
-     * name.
-     *
-     * @param StatefulPolicyPreservedStateNetworkIp[] $internalIPs
-     */
-    public function setInternalIPs($internalIPs)
-    {
-    }
-    /**
-     * @return StatefulPolicyPreservedStateNetworkIp[]
-     */
-    public function getInternalIPs()
+    class Google_Service_Compute_StatefulPolicyPreservedState extends \Google\Service\Compute\StatefulPolicyPreservedState
     {
     }
 }

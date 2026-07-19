@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChecksService;
-
-class GoogleChecksRepoScanV1alphaCliAnalysis extends \Google\Collection
-{
-    protected $collection_key = 'sources';
-    protected $codeScansType = GoogleChecksRepoScanV1alphaCodeScan::class;
-    protected $codeScansDataType = 'array';
-    protected $sourcesType = GoogleChecksRepoScanV1alphaSource::class;
-    protected $sourcesDataType = 'array';
-    /**
-     * Optional. Requested code scans resulting from preliminary CLI analysis.
-     *
-     * @param GoogleChecksRepoScanV1alphaCodeScan[] $codeScans
-     */
-    public function setCodeScans($codeScans)
+namespace Google\Service\ChecksService {
+    class GoogleChecksRepoScanV1alphaCliAnalysis extends \Google\Collection
     {
+        protected $collection_key = 'sources';
+        protected $codeScansType = GoogleChecksRepoScanV1alphaCodeScan::class;
+        protected $codeScansDataType = 'array';
+        protected $sourcesType = GoogleChecksRepoScanV1alphaSource::class;
+        protected $sourcesDataType = 'array';
+        /**
+         * Optional. Requested code scans resulting from preliminary CLI analysis.
+         *
+         * @param GoogleChecksRepoScanV1alphaCodeScan[] $codeScans
+         */
+        public function setCodeScans($codeScans)
+        {
+        }
+        /**
+         * @return GoogleChecksRepoScanV1alphaCodeScan[]
+         */
+        public function getCodeScans()
+        {
+        }
+        /**
+         * Optional. Data sources detected in the scan.
+         *
+         * @param GoogleChecksRepoScanV1alphaSource[] $sources
+         */
+        public function setSources($sources)
+        {
+        }
+        /**
+         * @return GoogleChecksRepoScanV1alphaSource[]
+         */
+        public function getSources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChecksRepoScanV1alphaCodeScan[]
+     * Runtime class alias of \Google\Service\ChecksService\GoogleChecksRepoScanV1alphaCliAnalysis registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCodeScans()
-    {
-    }
-    /**
-     * Optional. Data sources detected in the scan.
-     *
-     * @param GoogleChecksRepoScanV1alphaSource[] $sources
-     */
-    public function setSources($sources)
-    {
-    }
-    /**
-     * @return GoogleChecksRepoScanV1alphaSource[]
-     */
-    public function getSources()
+    class Google_Service_ChecksService_GoogleChecksRepoScanV1alphaCliAnalysis extends \Google\Service\ChecksService\GoogleChecksRepoScanV1alphaCliAnalysis
     {
     }
 }

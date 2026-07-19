@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class IndexedHotKey extends \Google\Model
-{
-    /**
-     * A (sparse) mapping from key bucket index to the index of the specific hot
-     * row key for that key bucket. The index of the hot row key can be translated
-     * to the actual row key via the ScanData.VisualizationData.indexed_keys
-     * repeated field.
-     *
-     * @var int[]
-     */
-    public $sparseHotKeys;
-    /**
-     * A (sparse) mapping from key bucket index to the index of the specific hot
-     * row key for that key bucket. The index of the hot row key can be translated
-     * to the actual row key via the ScanData.VisualizationData.indexed_keys
-     * repeated field.
-     *
-     * @param int[] $sparseHotKeys
-     */
-    public function setSparseHotKeys($sparseHotKeys)
+namespace Google\Service\Spanner {
+    class IndexedHotKey extends \Google\Model
     {
+        /**
+         * A (sparse) mapping from key bucket index to the index of the specific hot
+         * row key for that key bucket. The index of the hot row key can be translated
+         * to the actual row key via the ScanData.VisualizationData.indexed_keys
+         * repeated field.
+         *
+         * @var int[]
+         */
+        public $sparseHotKeys;
+        /**
+         * A (sparse) mapping from key bucket index to the index of the specific hot
+         * row key for that key bucket. The index of the hot row key can be translated
+         * to the actual row key via the ScanData.VisualizationData.indexed_keys
+         * repeated field.
+         *
+         * @param int[] $sparseHotKeys
+         */
+        public function setSparseHotKeys($sparseHotKeys)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getSparseHotKeys()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int[]
+     * Runtime class alias of \Google\Service\Spanner\IndexedHotKey registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSparseHotKeys()
+    class Google_Service_Spanner_IndexedHotKey extends \Google\Service\Spanner\IndexedHotKey
     {
     }
 }

@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class PlacementAssignment extends \Google\Model
-{
-    /**
-     * Whether this placement assignment is active. When true, the placement will
-     * be included in the ad's rotation.
-     *
-     * @var bool
-     */
-    public $active;
-    /**
-     * ID of the placement to be assigned. This is a required field.
-     *
-     * @var string
-     */
-    public $placementId;
-    protected $placementIdDimensionValueType = DimensionValue::class;
-    protected $placementIdDimensionValueDataType = '';
-    /**
-     * Whether the placement to be assigned requires SSL. This is a read-only
-     * field that is auto-generated when the ad is inserted or updated.
-     *
-     * @var bool
-     */
-    public $sslRequired;
-    /**
-     * Whether this placement assignment is active. When true, the placement will
-     * be included in the ad's rotation.
-     *
-     * @param bool $active
-     */
-    public function setActive($active)
+namespace Google\Service\Dfareporting {
+    class PlacementAssignment extends \Google\Model
     {
+        /**
+         * Whether this placement assignment is active. When true, the placement will
+         * be included in the ad's rotation.
+         *
+         * @var bool
+         */
+        public $active;
+        /**
+         * ID of the placement to be assigned. This is a required field.
+         *
+         * @var string
+         */
+        public $placementId;
+        protected $placementIdDimensionValueType = DimensionValue::class;
+        protected $placementIdDimensionValueDataType = '';
+        /**
+         * Whether the placement to be assigned requires SSL. This is a read-only
+         * field that is auto-generated when the ad is inserted or updated.
+         *
+         * @var bool
+         */
+        public $sslRequired;
+        /**
+         * Whether this placement assignment is active. When true, the placement will
+         * be included in the ad's rotation.
+         *
+         * @param bool $active
+         */
+        public function setActive($active)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getActive()
+        {
+        }
+        /**
+         * ID of the placement to be assigned. This is a required field.
+         *
+         * @param string $placementId
+         */
+        public function setPlacementId($placementId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlacementId()
+        {
+        }
+        /**
+         * Dimension value for the ID of the placement. This is a read-only, auto-
+         * generated field.
+         *
+         * @param DimensionValue $placementIdDimensionValue
+         */
+        public function setPlacementIdDimensionValue(DimensionValue $placementIdDimensionValue)
+        {
+        }
+        /**
+         * @return DimensionValue
+         */
+        public function getPlacementIdDimensionValue()
+        {
+        }
+        /**
+         * Whether the placement to be assigned requires SSL. This is a read-only
+         * field that is auto-generated when the ad is inserted or updated.
+         *
+         * @param bool $sslRequired
+         */
+        public function setSslRequired($sslRequired)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSslRequired()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Dfareporting\PlacementAssignment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActive()
-    {
-    }
-    /**
-     * ID of the placement to be assigned. This is a required field.
-     *
-     * @param string $placementId
-     */
-    public function setPlacementId($placementId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPlacementId()
-    {
-    }
-    /**
-     * Dimension value for the ID of the placement. This is a read-only, auto-
-     * generated field.
-     *
-     * @param DimensionValue $placementIdDimensionValue
-     */
-    public function setPlacementIdDimensionValue(DimensionValue $placementIdDimensionValue)
-    {
-    }
-    /**
-     * @return DimensionValue
-     */
-    public function getPlacementIdDimensionValue()
-    {
-    }
-    /**
-     * Whether the placement to be assigned requires SSL. This is a read-only
-     * field that is auto-generated when the ad is inserted or updated.
-     *
-     * @param bool $sslRequired
-     */
-    public function setSslRequired($sslRequired)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSslRequired()
+    class Google_Service_Dfareporting_PlacementAssignment extends \Google\Service\Dfareporting\PlacementAssignment
     {
     }
 }

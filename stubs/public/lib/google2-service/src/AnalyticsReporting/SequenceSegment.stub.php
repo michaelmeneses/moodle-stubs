@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsReporting;
-
-class SequenceSegment extends \Google\Collection
-{
-    protected $collection_key = 'segmentSequenceSteps';
-    /**
-     * @var bool
-     */
-    public $firstStepShouldMatchFirstHit;
-    protected $segmentSequenceStepsType = SegmentSequenceStep::class;
-    protected $segmentSequenceStepsDataType = 'array';
-    /**
-     * @param bool
-     */
-    public function setFirstStepShouldMatchFirstHit($firstStepShouldMatchFirstHit)
+namespace Google\Service\AnalyticsReporting {
+    class SequenceSegment extends \Google\Collection
     {
+        protected $collection_key = 'segmentSequenceSteps';
+        /**
+         * @var bool
+         */
+        public $firstStepShouldMatchFirstHit;
+        protected $segmentSequenceStepsType = SegmentSequenceStep::class;
+        protected $segmentSequenceStepsDataType = 'array';
+        /**
+         * @param bool
+         */
+        public function setFirstStepShouldMatchFirstHit($firstStepShouldMatchFirstHit)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getFirstStepShouldMatchFirstHit()
+        {
+        }
+        /**
+         * @param SegmentSequenceStep[]
+         */
+        public function setSegmentSequenceSteps($segmentSequenceSteps)
+        {
+        }
+        /**
+         * @return SegmentSequenceStep[]
+         */
+        public function getSegmentSequenceSteps()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\AnalyticsReporting\SequenceSegment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFirstStepShouldMatchFirstHit()
-    {
-    }
-    /**
-     * @param SegmentSequenceStep[]
-     */
-    public function setSegmentSequenceSteps($segmentSequenceSteps)
-    {
-    }
-    /**
-     * @return SegmentSequenceStep[]
-     */
-    public function getSegmentSequenceSteps()
+    class Google_Service_AnalyticsReporting_SequenceSegment extends \Google\Service\AnalyticsReporting\SequenceSegment
     {
     }
 }

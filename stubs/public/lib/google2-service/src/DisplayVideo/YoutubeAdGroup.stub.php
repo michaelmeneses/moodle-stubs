@@ -21,179 +21,188 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class YoutubeAdGroup extends \Google\Collection
-{
-    protected $collection_key = 'youtubeAdIds';
-    /**
-     * @var string
-     */
-    public $adGroupFormat;
-    /**
-     * @var string
-     */
-    public $adGroupId;
-    /**
-     * @var string
-     */
-    public $advertiserId;
-    protected $biddingStrategyType = YoutubeAndPartnersBiddingStrategy::class;
-    protected $biddingStrategyDataType = '';
-    /**
-     * @var string
-     */
-    public $displayName;
-    /**
-     * @var string
-     */
-    public $entityStatus;
-    /**
-     * @var string
-     */
-    public $lineItemId;
-    /**
-     * @var string
-     */
-    public $name;
-    protected $productFeedDataType = ProductFeedData::class;
-    protected $productFeedDataDataType = '';
-    protected $targetingExpansionType = TargetingExpansionConfig::class;
-    protected $targetingExpansionDataType = '';
-    /**
-     * @var string[]
-     */
-    public $youtubeAdIds;
-    /**
-     * @param string
-     */
-    public function setAdGroupFormat($adGroupFormat)
+namespace Google\Service\DisplayVideo {
+    class YoutubeAdGroup extends \Google\Collection
     {
+        protected $collection_key = 'youtubeAdIds';
+        /**
+         * @var string
+         */
+        public $adGroupFormat;
+        /**
+         * @var string
+         */
+        public $adGroupId;
+        /**
+         * @var string
+         */
+        public $advertiserId;
+        protected $biddingStrategyType = YoutubeAndPartnersBiddingStrategy::class;
+        protected $biddingStrategyDataType = '';
+        /**
+         * @var string
+         */
+        public $displayName;
+        /**
+         * @var string
+         */
+        public $entityStatus;
+        /**
+         * @var string
+         */
+        public $lineItemId;
+        /**
+         * @var string
+         */
+        public $name;
+        protected $productFeedDataType = ProductFeedData::class;
+        protected $productFeedDataDataType = '';
+        protected $targetingExpansionType = TargetingExpansionConfig::class;
+        protected $targetingExpansionDataType = '';
+        /**
+         * @var string[]
+         */
+        public $youtubeAdIds;
+        /**
+         * @param string
+         */
+        public function setAdGroupFormat($adGroupFormat)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdGroupFormat()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setAdGroupId($adGroupId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdGroupId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setAdvertiserId($advertiserId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdvertiserId()
+        {
+        }
+        /**
+         * @param YoutubeAndPartnersBiddingStrategy
+         */
+        public function setBiddingStrategy(YoutubeAndPartnersBiddingStrategy $biddingStrategy)
+        {
+        }
+        /**
+         * @return YoutubeAndPartnersBiddingStrategy
+         */
+        public function getBiddingStrategy()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEntityStatus($entityStatus)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEntityStatus()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLineItemId($lineItemId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLineItemId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param ProductFeedData
+         */
+        public function setProductFeedData(ProductFeedData $productFeedData)
+        {
+        }
+        /**
+         * @return ProductFeedData
+         */
+        public function getProductFeedData()
+        {
+        }
+        /**
+         * @param TargetingExpansionConfig
+         */
+        public function setTargetingExpansion(TargetingExpansionConfig $targetingExpansion)
+        {
+        }
+        /**
+         * @return TargetingExpansionConfig
+         */
+        public function getTargetingExpansion()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setYoutubeAdIds($youtubeAdIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getYoutubeAdIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\YoutubeAdGroup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdGroupFormat()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setAdGroupId($adGroupId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAdGroupId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setAdvertiserId($advertiserId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAdvertiserId()
-    {
-    }
-    /**
-     * @param YoutubeAndPartnersBiddingStrategy
-     */
-    public function setBiddingStrategy(YoutubeAndPartnersBiddingStrategy $biddingStrategy)
-    {
-    }
-    /**
-     * @return YoutubeAndPartnersBiddingStrategy
-     */
-    public function getBiddingStrategy()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEntityStatus($entityStatus)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEntityStatus()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLineItemId($lineItemId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLineItemId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param ProductFeedData
-     */
-    public function setProductFeedData(ProductFeedData $productFeedData)
-    {
-    }
-    /**
-     * @return ProductFeedData
-     */
-    public function getProductFeedData()
-    {
-    }
-    /**
-     * @param TargetingExpansionConfig
-     */
-    public function setTargetingExpansion(TargetingExpansionConfig $targetingExpansion)
-    {
-    }
-    /**
-     * @return TargetingExpansionConfig
-     */
-    public function getTargetingExpansion()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setYoutubeAdIds($youtubeAdIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getYoutubeAdIds()
+    class Google_Service_DisplayVideo_YoutubeAdGroup extends \Google\Service\DisplayVideo\YoutubeAdGroup
     {
     }
 }

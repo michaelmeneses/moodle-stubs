@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class BitbucketServerRepositoryId extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $projectKey;
-    /**
-     * @var string
-     */
-    public $repoSlug;
-    /**
-     * @var int
-     */
-    public $webhookId;
-    /**
-     * @param string
-     */
-    public function setProjectKey($projectKey)
+namespace Google\Service\CloudBuild {
+    class BitbucketServerRepositoryId extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $projectKey;
+        /**
+         * @var string
+         */
+        public $repoSlug;
+        /**
+         * @var int
+         */
+        public $webhookId;
+        /**
+         * @param string
+         */
+        public function setProjectKey($projectKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectKey()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRepoSlug($repoSlug)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRepoSlug()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setWebhookId($webhookId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getWebhookId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\BitbucketServerRepositoryId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProjectKey()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRepoSlug($repoSlug)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRepoSlug()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setWebhookId($webhookId)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getWebhookId()
+    class Google_Service_CloudBuild_BitbucketServerRepositoryId extends \Google\Service\CloudBuild\BitbucketServerRepositoryId
     {
     }
 }

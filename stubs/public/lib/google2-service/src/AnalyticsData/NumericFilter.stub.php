@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsData;
-
-class NumericFilter extends \Google\Model
-{
-    /**
-     * Unspecified.
-     */
-    public const OPERATION_OPERATION_UNSPECIFIED = 'OPERATION_UNSPECIFIED';
-    /**
-     * Equal
-     */
-    public const OPERATION_EQUAL = 'EQUAL';
-    /**
-     * Less than
-     */
-    public const OPERATION_LESS_THAN = 'LESS_THAN';
-    /**
-     * Less than or equal
-     */
-    public const OPERATION_LESS_THAN_OR_EQUAL = 'LESS_THAN_OR_EQUAL';
-    /**
-     * Greater than
-     */
-    public const OPERATION_GREATER_THAN = 'GREATER_THAN';
-    /**
-     * Greater than or equal
-     */
-    public const OPERATION_GREATER_THAN_OR_EQUAL = 'GREATER_THAN_OR_EQUAL';
-    /**
-     * The operation type for this filter.
-     *
-     * @var string
-     */
-    public $operation;
-    protected $valueType = NumericValue::class;
-    protected $valueDataType = '';
-    /**
-     * The operation type for this filter.
-     *
-     * Accepted values: OPERATION_UNSPECIFIED, EQUAL, LESS_THAN,
-     * LESS_THAN_OR_EQUAL, GREATER_THAN, GREATER_THAN_OR_EQUAL
-     *
-     * @param self::OPERATION_* $operation
-     */
-    public function setOperation($operation)
+namespace Google\Service\AnalyticsData {
+    class NumericFilter extends \Google\Model
     {
+        /**
+         * Unspecified.
+         */
+        public const OPERATION_OPERATION_UNSPECIFIED = 'OPERATION_UNSPECIFIED';
+        /**
+         * Equal
+         */
+        public const OPERATION_EQUAL = 'EQUAL';
+        /**
+         * Less than
+         */
+        public const OPERATION_LESS_THAN = 'LESS_THAN';
+        /**
+         * Less than or equal
+         */
+        public const OPERATION_LESS_THAN_OR_EQUAL = 'LESS_THAN_OR_EQUAL';
+        /**
+         * Greater than
+         */
+        public const OPERATION_GREATER_THAN = 'GREATER_THAN';
+        /**
+         * Greater than or equal
+         */
+        public const OPERATION_GREATER_THAN_OR_EQUAL = 'GREATER_THAN_OR_EQUAL';
+        /**
+         * The operation type for this filter.
+         *
+         * @var string
+         */
+        public $operation;
+        protected $valueType = NumericValue::class;
+        protected $valueDataType = '';
+        /**
+         * The operation type for this filter.
+         *
+         * Accepted values: OPERATION_UNSPECIFIED, EQUAL, LESS_THAN,
+         * LESS_THAN_OR_EQUAL, GREATER_THAN, GREATER_THAN_OR_EQUAL
+         *
+         * @param self::OPERATION_* $operation
+         */
+        public function setOperation($operation)
+        {
+        }
+        /**
+         * @return self::OPERATION_*
+         */
+        public function getOperation()
+        {
+        }
+        /**
+         * A numeric value or a date value.
+         *
+         * @param NumericValue $value
+         */
+        public function setValue(NumericValue $value)
+        {
+        }
+        /**
+         * @return NumericValue
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::OPERATION_*
+     * Runtime class alias of \Google\Service\AnalyticsData\NumericFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOperation()
-    {
-    }
-    /**
-     * A numeric value or a date value.
-     *
-     * @param NumericValue $value
-     */
-    public function setValue(NumericValue $value)
-    {
-    }
-    /**
-     * @return NumericValue
-     */
-    public function getValue()
+    class Google_Service_AnalyticsData_NumericFilter extends \Google\Service\AnalyticsData\NumericFilter
     {
     }
 }

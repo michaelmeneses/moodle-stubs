@@ -21,491 +21,500 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class ImageSettings extends \Google\Model
-{
-    protected $backgroundImageUrlType = LocalizedProperty::class;
-    protected $backgroundImageUrlDataType = '';
-    /**
-     * This is generated when a ChannelBanner.Insert request has succeeded for the
-     * given channel.
-     *
-     * @var string
-     */
-    public $bannerExternalUrl;
-    /**
-     * Banner image. Desktop size (1060x175).
-     *
-     * @deprecated
-     * @var string
-     */
-    public $bannerImageUrl;
-    /**
-     * Banner image. Mobile size high resolution (1440x395).
-     *
-     * @deprecated
-     * @var string
-     */
-    public $bannerMobileExtraHdImageUrl;
-    /**
-     * Banner image. Mobile size high resolution (1280x360).
-     *
-     * @deprecated
-     * @var string
-     */
-    public $bannerMobileHdImageUrl;
-    /**
-     * Banner image. Mobile size (640x175).
-     *
-     * @deprecated
-     * @var string
-     */
-    public $bannerMobileImageUrl;
-    /**
-     * Banner image. Mobile size low resolution (320x88).
-     *
-     * @deprecated
-     * @var string
-     */
-    public $bannerMobileLowImageUrl;
-    /**
-     * Banner image. Mobile size medium/high resolution (960x263).
-     *
-     * @deprecated
-     * @var string
-     */
-    public $bannerMobileMediumHdImageUrl;
-    /**
-     * Banner image. Tablet size extra high resolution (2560x424).
-     *
-     * @deprecated
-     * @var string
-     */
-    public $bannerTabletExtraHdImageUrl;
-    /**
-     * Banner image. Tablet size high resolution (2276x377).
-     *
-     * @deprecated
-     * @var string
-     */
-    public $bannerTabletHdImageUrl;
-    /**
-     * Banner image. Tablet size (1707x283).
-     *
-     * @deprecated
-     * @var string
-     */
-    public $bannerTabletImageUrl;
-    /**
-     * Banner image. Tablet size low resolution (1138x188).
-     *
-     * @deprecated
-     * @var string
-     */
-    public $bannerTabletLowImageUrl;
-    /**
-     * Banner image. TV size high resolution (1920x1080).
-     *
-     * @deprecated
-     * @var string
-     */
-    public $bannerTvHighImageUrl;
-    /**
-     * Banner image. TV size extra high resolution (2120x1192).
-     *
-     * @deprecated
-     * @var string
-     */
-    public $bannerTvImageUrl;
-    /**
-     * Banner image. TV size low resolution (854x480).
-     *
-     * @deprecated
-     * @var string
-     */
-    public $bannerTvLowImageUrl;
-    /**
-     * Banner image. TV size medium resolution (1280x720).
-     *
-     * @deprecated
-     * @var string
-     */
-    public $bannerTvMediumImageUrl;
-    protected $largeBrandedBannerImageImapScriptType = LocalizedProperty::class;
-    protected $largeBrandedBannerImageImapScriptDataType = '';
-    protected $largeBrandedBannerImageUrlType = LocalizedProperty::class;
-    protected $largeBrandedBannerImageUrlDataType = '';
-    protected $smallBrandedBannerImageImapScriptType = LocalizedProperty::class;
-    protected $smallBrandedBannerImageImapScriptDataType = '';
-    protected $smallBrandedBannerImageUrlType = LocalizedProperty::class;
-    protected $smallBrandedBannerImageUrlDataType = '';
-    /**
-     * The URL for a 1px by 1px tracking pixel that can be used to collect
-     * statistics for views of the channel or video pages.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $trackingImageUrl;
-    /**
-     * @deprecated
-     * @var string
-     */
-    public $watchIconImageUrl;
-    /**
-     * The URL for the background image shown on the video watch page. The image
-     * should be 1200px by 615px, with a maximum file size of 128k.
-     *
-     * @deprecated
-     * @param LocalizedProperty $backgroundImageUrl
-     */
-    public function setBackgroundImageUrl(LocalizedProperty $backgroundImageUrl)
+namespace Google\Service\YouTube {
+    class ImageSettings extends \Google\Model
     {
+        protected $backgroundImageUrlType = LocalizedProperty::class;
+        protected $backgroundImageUrlDataType = '';
+        /**
+         * This is generated when a ChannelBanner.Insert request has succeeded for the
+         * given channel.
+         *
+         * @var string
+         */
+        public $bannerExternalUrl;
+        /**
+         * Banner image. Desktop size (1060x175).
+         *
+         * @deprecated
+         * @var string
+         */
+        public $bannerImageUrl;
+        /**
+         * Banner image. Mobile size high resolution (1440x395).
+         *
+         * @deprecated
+         * @var string
+         */
+        public $bannerMobileExtraHdImageUrl;
+        /**
+         * Banner image. Mobile size high resolution (1280x360).
+         *
+         * @deprecated
+         * @var string
+         */
+        public $bannerMobileHdImageUrl;
+        /**
+         * Banner image. Mobile size (640x175).
+         *
+         * @deprecated
+         * @var string
+         */
+        public $bannerMobileImageUrl;
+        /**
+         * Banner image. Mobile size low resolution (320x88).
+         *
+         * @deprecated
+         * @var string
+         */
+        public $bannerMobileLowImageUrl;
+        /**
+         * Banner image. Mobile size medium/high resolution (960x263).
+         *
+         * @deprecated
+         * @var string
+         */
+        public $bannerMobileMediumHdImageUrl;
+        /**
+         * Banner image. Tablet size extra high resolution (2560x424).
+         *
+         * @deprecated
+         * @var string
+         */
+        public $bannerTabletExtraHdImageUrl;
+        /**
+         * Banner image. Tablet size high resolution (2276x377).
+         *
+         * @deprecated
+         * @var string
+         */
+        public $bannerTabletHdImageUrl;
+        /**
+         * Banner image. Tablet size (1707x283).
+         *
+         * @deprecated
+         * @var string
+         */
+        public $bannerTabletImageUrl;
+        /**
+         * Banner image. Tablet size low resolution (1138x188).
+         *
+         * @deprecated
+         * @var string
+         */
+        public $bannerTabletLowImageUrl;
+        /**
+         * Banner image. TV size high resolution (1920x1080).
+         *
+         * @deprecated
+         * @var string
+         */
+        public $bannerTvHighImageUrl;
+        /**
+         * Banner image. TV size extra high resolution (2120x1192).
+         *
+         * @deprecated
+         * @var string
+         */
+        public $bannerTvImageUrl;
+        /**
+         * Banner image. TV size low resolution (854x480).
+         *
+         * @deprecated
+         * @var string
+         */
+        public $bannerTvLowImageUrl;
+        /**
+         * Banner image. TV size medium resolution (1280x720).
+         *
+         * @deprecated
+         * @var string
+         */
+        public $bannerTvMediumImageUrl;
+        protected $largeBrandedBannerImageImapScriptType = LocalizedProperty::class;
+        protected $largeBrandedBannerImageImapScriptDataType = '';
+        protected $largeBrandedBannerImageUrlType = LocalizedProperty::class;
+        protected $largeBrandedBannerImageUrlDataType = '';
+        protected $smallBrandedBannerImageImapScriptType = LocalizedProperty::class;
+        protected $smallBrandedBannerImageImapScriptDataType = '';
+        protected $smallBrandedBannerImageUrlType = LocalizedProperty::class;
+        protected $smallBrandedBannerImageUrlDataType = '';
+        /**
+         * The URL for a 1px by 1px tracking pixel that can be used to collect
+         * statistics for views of the channel or video pages.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $trackingImageUrl;
+        /**
+         * @deprecated
+         * @var string
+         */
+        public $watchIconImageUrl;
+        /**
+         * The URL for the background image shown on the video watch page. The image
+         * should be 1200px by 615px, with a maximum file size of 128k.
+         *
+         * @deprecated
+         * @param LocalizedProperty $backgroundImageUrl
+         */
+        public function setBackgroundImageUrl(LocalizedProperty $backgroundImageUrl)
+        {
+        }
+        /**
+         * @deprecated
+         * @return LocalizedProperty
+         */
+        public function getBackgroundImageUrl()
+        {
+        }
+        /**
+         * This is generated when a ChannelBanner.Insert request has succeeded for the
+         * given channel.
+         *
+         * @param string $bannerExternalUrl
+         */
+        public function setBannerExternalUrl($bannerExternalUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBannerExternalUrl()
+        {
+        }
+        /**
+         * Banner image. Desktop size (1060x175).
+         *
+         * @deprecated
+         * @param string $bannerImageUrl
+         */
+        public function setBannerImageUrl($bannerImageUrl)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getBannerImageUrl()
+        {
+        }
+        /**
+         * Banner image. Mobile size high resolution (1440x395).
+         *
+         * @deprecated
+         * @param string $bannerMobileExtraHdImageUrl
+         */
+        public function setBannerMobileExtraHdImageUrl($bannerMobileExtraHdImageUrl)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getBannerMobileExtraHdImageUrl()
+        {
+        }
+        /**
+         * Banner image. Mobile size high resolution (1280x360).
+         *
+         * @deprecated
+         * @param string $bannerMobileHdImageUrl
+         */
+        public function setBannerMobileHdImageUrl($bannerMobileHdImageUrl)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getBannerMobileHdImageUrl()
+        {
+        }
+        /**
+         * Banner image. Mobile size (640x175).
+         *
+         * @deprecated
+         * @param string $bannerMobileImageUrl
+         */
+        public function setBannerMobileImageUrl($bannerMobileImageUrl)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getBannerMobileImageUrl()
+        {
+        }
+        /**
+         * Banner image. Mobile size low resolution (320x88).
+         *
+         * @deprecated
+         * @param string $bannerMobileLowImageUrl
+         */
+        public function setBannerMobileLowImageUrl($bannerMobileLowImageUrl)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getBannerMobileLowImageUrl()
+        {
+        }
+        /**
+         * Banner image. Mobile size medium/high resolution (960x263).
+         *
+         * @deprecated
+         * @param string $bannerMobileMediumHdImageUrl
+         */
+        public function setBannerMobileMediumHdImageUrl($bannerMobileMediumHdImageUrl)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getBannerMobileMediumHdImageUrl()
+        {
+        }
+        /**
+         * Banner image. Tablet size extra high resolution (2560x424).
+         *
+         * @deprecated
+         * @param string $bannerTabletExtraHdImageUrl
+         */
+        public function setBannerTabletExtraHdImageUrl($bannerTabletExtraHdImageUrl)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getBannerTabletExtraHdImageUrl()
+        {
+        }
+        /**
+         * Banner image. Tablet size high resolution (2276x377).
+         *
+         * @deprecated
+         * @param string $bannerTabletHdImageUrl
+         */
+        public function setBannerTabletHdImageUrl($bannerTabletHdImageUrl)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getBannerTabletHdImageUrl()
+        {
+        }
+        /**
+         * Banner image. Tablet size (1707x283).
+         *
+         * @deprecated
+         * @param string $bannerTabletImageUrl
+         */
+        public function setBannerTabletImageUrl($bannerTabletImageUrl)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getBannerTabletImageUrl()
+        {
+        }
+        /**
+         * Banner image. Tablet size low resolution (1138x188).
+         *
+         * @deprecated
+         * @param string $bannerTabletLowImageUrl
+         */
+        public function setBannerTabletLowImageUrl($bannerTabletLowImageUrl)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getBannerTabletLowImageUrl()
+        {
+        }
+        /**
+         * Banner image. TV size high resolution (1920x1080).
+         *
+         * @deprecated
+         * @param string $bannerTvHighImageUrl
+         */
+        public function setBannerTvHighImageUrl($bannerTvHighImageUrl)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getBannerTvHighImageUrl()
+        {
+        }
+        /**
+         * Banner image. TV size extra high resolution (2120x1192).
+         *
+         * @deprecated
+         * @param string $bannerTvImageUrl
+         */
+        public function setBannerTvImageUrl($bannerTvImageUrl)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getBannerTvImageUrl()
+        {
+        }
+        /**
+         * Banner image. TV size low resolution (854x480).
+         *
+         * @deprecated
+         * @param string $bannerTvLowImageUrl
+         */
+        public function setBannerTvLowImageUrl($bannerTvLowImageUrl)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getBannerTvLowImageUrl()
+        {
+        }
+        /**
+         * Banner image. TV size medium resolution (1280x720).
+         *
+         * @deprecated
+         * @param string $bannerTvMediumImageUrl
+         */
+        public function setBannerTvMediumImageUrl($bannerTvMediumImageUrl)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getBannerTvMediumImageUrl()
+        {
+        }
+        /**
+         * The image map script for the large banner image.
+         *
+         * @deprecated
+         * @param LocalizedProperty $largeBrandedBannerImageImapScript
+         */
+        public function setLargeBrandedBannerImageImapScript(LocalizedProperty $largeBrandedBannerImageImapScript)
+        {
+        }
+        /**
+         * @deprecated
+         * @return LocalizedProperty
+         */
+        public function getLargeBrandedBannerImageImapScript()
+        {
+        }
+        /**
+         * The URL for the 854px by 70px image that appears below the video player in
+         * the expanded video view of the video watch page.
+         *
+         * @deprecated
+         * @param LocalizedProperty $largeBrandedBannerImageUrl
+         */
+        public function setLargeBrandedBannerImageUrl(LocalizedProperty $largeBrandedBannerImageUrl)
+        {
+        }
+        /**
+         * @deprecated
+         * @return LocalizedProperty
+         */
+        public function getLargeBrandedBannerImageUrl()
+        {
+        }
+        /**
+         * The image map script for the small banner image.
+         *
+         * @deprecated
+         * @param LocalizedProperty $smallBrandedBannerImageImapScript
+         */
+        public function setSmallBrandedBannerImageImapScript(LocalizedProperty $smallBrandedBannerImageImapScript)
+        {
+        }
+        /**
+         * @deprecated
+         * @return LocalizedProperty
+         */
+        public function getSmallBrandedBannerImageImapScript()
+        {
+        }
+        /**
+         * The URL for the 640px by 70px banner image that appears below the video
+         * player in the default view of the video watch page. The URL for the image
+         * that appears above the top-left corner of the video player. This is a
+         * 25-pixel-high image with a flexible width that cannot exceed 170 pixels.
+         *
+         * @deprecated
+         * @param LocalizedProperty $smallBrandedBannerImageUrl
+         */
+        public function setSmallBrandedBannerImageUrl(LocalizedProperty $smallBrandedBannerImageUrl)
+        {
+        }
+        /**
+         * @deprecated
+         * @return LocalizedProperty
+         */
+        public function getSmallBrandedBannerImageUrl()
+        {
+        }
+        /**
+         * The URL for a 1px by 1px tracking pixel that can be used to collect
+         * statistics for views of the channel or video pages.
+         *
+         * @deprecated
+         * @param string $trackingImageUrl
+         */
+        public function setTrackingImageUrl($trackingImageUrl)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getTrackingImageUrl()
+        {
+        }
+        /**
+         * @deprecated
+         * @param string $watchIconImageUrl
+         */
+        public function setWatchIconImageUrl($watchIconImageUrl)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getWatchIconImageUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return LocalizedProperty
+     * Runtime class alias of \Google\Service\YouTube\ImageSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackgroundImageUrl()
-    {
-    }
-    /**
-     * This is generated when a ChannelBanner.Insert request has succeeded for the
-     * given channel.
-     *
-     * @param string $bannerExternalUrl
-     */
-    public function setBannerExternalUrl($bannerExternalUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBannerExternalUrl()
-    {
-    }
-    /**
-     * Banner image. Desktop size (1060x175).
-     *
-     * @deprecated
-     * @param string $bannerImageUrl
-     */
-    public function setBannerImageUrl($bannerImageUrl)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getBannerImageUrl()
-    {
-    }
-    /**
-     * Banner image. Mobile size high resolution (1440x395).
-     *
-     * @deprecated
-     * @param string $bannerMobileExtraHdImageUrl
-     */
-    public function setBannerMobileExtraHdImageUrl($bannerMobileExtraHdImageUrl)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getBannerMobileExtraHdImageUrl()
-    {
-    }
-    /**
-     * Banner image. Mobile size high resolution (1280x360).
-     *
-     * @deprecated
-     * @param string $bannerMobileHdImageUrl
-     */
-    public function setBannerMobileHdImageUrl($bannerMobileHdImageUrl)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getBannerMobileHdImageUrl()
-    {
-    }
-    /**
-     * Banner image. Mobile size (640x175).
-     *
-     * @deprecated
-     * @param string $bannerMobileImageUrl
-     */
-    public function setBannerMobileImageUrl($bannerMobileImageUrl)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getBannerMobileImageUrl()
-    {
-    }
-    /**
-     * Banner image. Mobile size low resolution (320x88).
-     *
-     * @deprecated
-     * @param string $bannerMobileLowImageUrl
-     */
-    public function setBannerMobileLowImageUrl($bannerMobileLowImageUrl)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getBannerMobileLowImageUrl()
-    {
-    }
-    /**
-     * Banner image. Mobile size medium/high resolution (960x263).
-     *
-     * @deprecated
-     * @param string $bannerMobileMediumHdImageUrl
-     */
-    public function setBannerMobileMediumHdImageUrl($bannerMobileMediumHdImageUrl)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getBannerMobileMediumHdImageUrl()
-    {
-    }
-    /**
-     * Banner image. Tablet size extra high resolution (2560x424).
-     *
-     * @deprecated
-     * @param string $bannerTabletExtraHdImageUrl
-     */
-    public function setBannerTabletExtraHdImageUrl($bannerTabletExtraHdImageUrl)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getBannerTabletExtraHdImageUrl()
-    {
-    }
-    /**
-     * Banner image. Tablet size high resolution (2276x377).
-     *
-     * @deprecated
-     * @param string $bannerTabletHdImageUrl
-     */
-    public function setBannerTabletHdImageUrl($bannerTabletHdImageUrl)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getBannerTabletHdImageUrl()
-    {
-    }
-    /**
-     * Banner image. Tablet size (1707x283).
-     *
-     * @deprecated
-     * @param string $bannerTabletImageUrl
-     */
-    public function setBannerTabletImageUrl($bannerTabletImageUrl)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getBannerTabletImageUrl()
-    {
-    }
-    /**
-     * Banner image. Tablet size low resolution (1138x188).
-     *
-     * @deprecated
-     * @param string $bannerTabletLowImageUrl
-     */
-    public function setBannerTabletLowImageUrl($bannerTabletLowImageUrl)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getBannerTabletLowImageUrl()
-    {
-    }
-    /**
-     * Banner image. TV size high resolution (1920x1080).
-     *
-     * @deprecated
-     * @param string $bannerTvHighImageUrl
-     */
-    public function setBannerTvHighImageUrl($bannerTvHighImageUrl)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getBannerTvHighImageUrl()
-    {
-    }
-    /**
-     * Banner image. TV size extra high resolution (2120x1192).
-     *
-     * @deprecated
-     * @param string $bannerTvImageUrl
-     */
-    public function setBannerTvImageUrl($bannerTvImageUrl)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getBannerTvImageUrl()
-    {
-    }
-    /**
-     * Banner image. TV size low resolution (854x480).
-     *
-     * @deprecated
-     * @param string $bannerTvLowImageUrl
-     */
-    public function setBannerTvLowImageUrl($bannerTvLowImageUrl)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getBannerTvLowImageUrl()
-    {
-    }
-    /**
-     * Banner image. TV size medium resolution (1280x720).
-     *
-     * @deprecated
-     * @param string $bannerTvMediumImageUrl
-     */
-    public function setBannerTvMediumImageUrl($bannerTvMediumImageUrl)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getBannerTvMediumImageUrl()
-    {
-    }
-    /**
-     * The image map script for the large banner image.
-     *
-     * @deprecated
-     * @param LocalizedProperty $largeBrandedBannerImageImapScript
-     */
-    public function setLargeBrandedBannerImageImapScript(LocalizedProperty $largeBrandedBannerImageImapScript)
-    {
-    }
-    /**
-     * @deprecated
-     * @return LocalizedProperty
-     */
-    public function getLargeBrandedBannerImageImapScript()
-    {
-    }
-    /**
-     * The URL for the 854px by 70px image that appears below the video player in
-     * the expanded video view of the video watch page.
-     *
-     * @deprecated
-     * @param LocalizedProperty $largeBrandedBannerImageUrl
-     */
-    public function setLargeBrandedBannerImageUrl(LocalizedProperty $largeBrandedBannerImageUrl)
-    {
-    }
-    /**
-     * @deprecated
-     * @return LocalizedProperty
-     */
-    public function getLargeBrandedBannerImageUrl()
-    {
-    }
-    /**
-     * The image map script for the small banner image.
-     *
-     * @deprecated
-     * @param LocalizedProperty $smallBrandedBannerImageImapScript
-     */
-    public function setSmallBrandedBannerImageImapScript(LocalizedProperty $smallBrandedBannerImageImapScript)
-    {
-    }
-    /**
-     * @deprecated
-     * @return LocalizedProperty
-     */
-    public function getSmallBrandedBannerImageImapScript()
-    {
-    }
-    /**
-     * The URL for the 640px by 70px banner image that appears below the video
-     * player in the default view of the video watch page. The URL for the image
-     * that appears above the top-left corner of the video player. This is a
-     * 25-pixel-high image with a flexible width that cannot exceed 170 pixels.
-     *
-     * @deprecated
-     * @param LocalizedProperty $smallBrandedBannerImageUrl
-     */
-    public function setSmallBrandedBannerImageUrl(LocalizedProperty $smallBrandedBannerImageUrl)
-    {
-    }
-    /**
-     * @deprecated
-     * @return LocalizedProperty
-     */
-    public function getSmallBrandedBannerImageUrl()
-    {
-    }
-    /**
-     * The URL for a 1px by 1px tracking pixel that can be used to collect
-     * statistics for views of the channel or video pages.
-     *
-     * @deprecated
-     * @param string $trackingImageUrl
-     */
-    public function setTrackingImageUrl($trackingImageUrl)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getTrackingImageUrl()
-    {
-    }
-    /**
-     * @deprecated
-     * @param string $watchIconImageUrl
-     */
-    public function setWatchIconImageUrl($watchIconImageUrl)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getWatchIconImageUrl()
+    class Google_Service_YouTube_ImageSettings extends \Google\Service\YouTube\ImageSettings
     {
     }
 }

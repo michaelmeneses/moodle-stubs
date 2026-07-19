@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Fitness;
-
-class ListDataSourcesResponse extends \Google\Collection
-{
-    protected $collection_key = 'dataSource';
-    protected $dataSourceType = DataSource::class;
-    protected $dataSourceDataType = 'array';
-    /**
-     * A previously created data source.
-     *
-     * @param DataSource[] $dataSource
-     */
-    public function setDataSource($dataSource)
+namespace Google\Service\Fitness {
+    class ListDataSourcesResponse extends \Google\Collection
     {
+        protected $collection_key = 'dataSource';
+        protected $dataSourceType = DataSource::class;
+        protected $dataSourceDataType = 'array';
+        /**
+         * A previously created data source.
+         *
+         * @param DataSource[] $dataSource
+         */
+        public function setDataSource($dataSource)
+        {
+        }
+        /**
+         * @return DataSource[]
+         */
+        public function getDataSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DataSource[]
+     * Runtime class alias of \Google\Service\Fitness\ListDataSourcesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataSource()
+    class Google_Service_Fitness_ListDataSourcesResponse extends \Google\Service\Fitness\ListDataSourcesResponse
     {
     }
 }

@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceManagement;
-
-class ListServicesResponse extends \Google\Collection
-{
-    protected $collection_key = 'services';
-    /**
-     * Token that can be passed to `ListServices` to resume a paginated query.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $servicesType = ManagedService::class;
-    protected $servicesDataType = 'array';
-    /**
-     * Token that can be passed to `ListServices` to resume a paginated query.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\ServiceManagement {
+    class ListServicesResponse extends \Google\Collection
     {
+        protected $collection_key = 'services';
+        /**
+         * Token that can be passed to `ListServices` to resume a paginated query.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $servicesType = ManagedService::class;
+        protected $servicesDataType = 'array';
+        /**
+         * Token that can be passed to `ListServices` to resume a paginated query.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The returned services will only have the name field set.
+         *
+         * @param ManagedService[] $services
+         */
+        public function setServices($services)
+        {
+        }
+        /**
+         * @return ManagedService[]
+         */
+        public function getServices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceManagement\ListServicesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The returned services will only have the name field set.
-     *
-     * @param ManagedService[] $services
-     */
-    public function setServices($services)
-    {
-    }
-    /**
-     * @return ManagedService[]
-     */
-    public function getServices()
+    class Google_Service_ServiceManagement_ListServicesResponse extends \Google\Service\ServiceManagement\ListServicesResponse
     {
     }
 }

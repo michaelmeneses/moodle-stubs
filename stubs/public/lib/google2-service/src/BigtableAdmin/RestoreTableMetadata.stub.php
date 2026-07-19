@@ -21,122 +21,131 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class RestoreTableMetadata extends \Google\Model
-{
-    /**
-     * No restore associated.
-     */
-    public const SOURCE_TYPE_RESTORE_SOURCE_TYPE_UNSPECIFIED = 'RESTORE_SOURCE_TYPE_UNSPECIFIED';
-    /**
-     * A backup was used as the source of the restore.
-     */
-    public const SOURCE_TYPE_BACKUP = 'BACKUP';
-    protected $backupInfoType = BackupInfo::class;
-    protected $backupInfoDataType = '';
-    /**
-     * Name of the table being created and restored to.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * If exists, the name of the long-running operation that will be used to
-     * track the post-restore optimization process to optimize the performance of
-     * the restored table. The metadata type of the long-running operation is
-     * OptimizeRestoredTableMetadata. The response type is Empty. This long-
-     * running operation may be automatically created by the system if applicable
-     * after the RestoreTable long-running operation completes successfully. This
-     * operation may not be created if the table is already optimized or the
-     * restore was not successful.
-     *
-     * @var string
-     */
-    public $optimizeTableOperationName;
-    protected $progressType = OperationProgress::class;
-    protected $progressDataType = '';
-    /**
-     * The type of the restore source.
-     *
-     * @var string
-     */
-    public $sourceType;
-    /**
-     * @param BackupInfo $backupInfo
-     */
-    public function setBackupInfo(BackupInfo $backupInfo)
+namespace Google\Service\BigtableAdmin {
+    class RestoreTableMetadata extends \Google\Model
     {
+        /**
+         * No restore associated.
+         */
+        public const SOURCE_TYPE_RESTORE_SOURCE_TYPE_UNSPECIFIED = 'RESTORE_SOURCE_TYPE_UNSPECIFIED';
+        /**
+         * A backup was used as the source of the restore.
+         */
+        public const SOURCE_TYPE_BACKUP = 'BACKUP';
+        protected $backupInfoType = BackupInfo::class;
+        protected $backupInfoDataType = '';
+        /**
+         * Name of the table being created and restored to.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * If exists, the name of the long-running operation that will be used to
+         * track the post-restore optimization process to optimize the performance of
+         * the restored table. The metadata type of the long-running operation is
+         * OptimizeRestoredTableMetadata. The response type is Empty. This long-
+         * running operation may be automatically created by the system if applicable
+         * after the RestoreTable long-running operation completes successfully. This
+         * operation may not be created if the table is already optimized or the
+         * restore was not successful.
+         *
+         * @var string
+         */
+        public $optimizeTableOperationName;
+        protected $progressType = OperationProgress::class;
+        protected $progressDataType = '';
+        /**
+         * The type of the restore source.
+         *
+         * @var string
+         */
+        public $sourceType;
+        /**
+         * @param BackupInfo $backupInfo
+         */
+        public function setBackupInfo(BackupInfo $backupInfo)
+        {
+        }
+        /**
+         * @return BackupInfo
+         */
+        public function getBackupInfo()
+        {
+        }
+        /**
+         * Name of the table being created and restored to.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * If exists, the name of the long-running operation that will be used to
+         * track the post-restore optimization process to optimize the performance of
+         * the restored table. The metadata type of the long-running operation is
+         * OptimizeRestoredTableMetadata. The response type is Empty. This long-
+         * running operation may be automatically created by the system if applicable
+         * after the RestoreTable long-running operation completes successfully. This
+         * operation may not be created if the table is already optimized or the
+         * restore was not successful.
+         *
+         * @param string $optimizeTableOperationName
+         */
+        public function setOptimizeTableOperationName($optimizeTableOperationName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOptimizeTableOperationName()
+        {
+        }
+        /**
+         * The progress of the RestoreTable operation.
+         *
+         * @param OperationProgress $progress
+         */
+        public function setProgress(OperationProgress $progress)
+        {
+        }
+        /**
+         * @return OperationProgress
+         */
+        public function getProgress()
+        {
+        }
+        /**
+         * The type of the restore source.
+         *
+         * Accepted values: RESTORE_SOURCE_TYPE_UNSPECIFIED, BACKUP
+         *
+         * @param self::SOURCE_TYPE_* $sourceType
+         */
+        public function setSourceType($sourceType)
+        {
+        }
+        /**
+         * @return self::SOURCE_TYPE_*
+         */
+        public function getSourceType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BackupInfo
+     * Runtime class alias of \Google\Service\BigtableAdmin\RestoreTableMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackupInfo()
-    {
-    }
-    /**
-     * Name of the table being created and restored to.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * If exists, the name of the long-running operation that will be used to
-     * track the post-restore optimization process to optimize the performance of
-     * the restored table. The metadata type of the long-running operation is
-     * OptimizeRestoredTableMetadata. The response type is Empty. This long-
-     * running operation may be automatically created by the system if applicable
-     * after the RestoreTable long-running operation completes successfully. This
-     * operation may not be created if the table is already optimized or the
-     * restore was not successful.
-     *
-     * @param string $optimizeTableOperationName
-     */
-    public function setOptimizeTableOperationName($optimizeTableOperationName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOptimizeTableOperationName()
-    {
-    }
-    /**
-     * The progress of the RestoreTable operation.
-     *
-     * @param OperationProgress $progress
-     */
-    public function setProgress(OperationProgress $progress)
-    {
-    }
-    /**
-     * @return OperationProgress
-     */
-    public function getProgress()
-    {
-    }
-    /**
-     * The type of the restore source.
-     *
-     * Accepted values: RESTORE_SOURCE_TYPE_UNSPECIFIED, BACKUP
-     *
-     * @param self::SOURCE_TYPE_* $sourceType
-     */
-    public function setSourceType($sourceType)
-    {
-    }
-    /**
-     * @return self::SOURCE_TYPE_*
-     */
-    public function getSourceType()
+    class Google_Service_BigtableAdmin_RestoreTableMetadata extends \Google\Service\BigtableAdmin\RestoreTableMetadata
     {
     }
 }

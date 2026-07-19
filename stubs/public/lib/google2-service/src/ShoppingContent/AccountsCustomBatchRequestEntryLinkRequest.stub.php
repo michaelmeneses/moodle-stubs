@@ -21,103 +21,112 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class AccountsCustomBatchRequestEntryLinkRequest extends \Google\Collection
-{
-    protected $collection_key = 'services';
-    /**
-     * Action to perform for this link. The `"request"` action is only available
-     * to select merchants. Acceptable values are: - "`approve`" - "`remove`" -
-     * "`request`"
-     *
-     * @var string
-     */
-    public $action;
-    /**
-     * Type of the link between the two accounts. Acceptable values are: -
-     * "`channelPartner`" - "`eCommercePlatform`" - "`paymentServiceProvider`" -
-     * "`localProductManager`"
-     *
-     * @var string
-     */
-    public $linkType;
-    /**
-     * The ID of the linked account.
-     *
-     * @var string
-     */
-    public $linkedAccountId;
-    /**
-     * Provided services. Acceptable values are: -
-     * "`shoppingAdsProductManagement`" - "`shoppingActionsProductManagement`" -
-     * "`shoppingActionsOrderManagement`" - "`paymentProcessing`" -
-     * "`localProductManagement`"
-     *
-     * @var string[]
-     */
-    public $services;
-    /**
-     * Action to perform for this link. The `"request"` action is only available
-     * to select merchants. Acceptable values are: - "`approve`" - "`remove`" -
-     * "`request`"
-     *
-     * @param string $action
-     */
-    public function setAction($action)
+namespace Google\Service\ShoppingContent {
+    class AccountsCustomBatchRequestEntryLinkRequest extends \Google\Collection
     {
+        protected $collection_key = 'services';
+        /**
+         * Action to perform for this link. The `"request"` action is only available
+         * to select merchants. Acceptable values are: - "`approve`" - "`remove`" -
+         * "`request`"
+         *
+         * @var string
+         */
+        public $action;
+        /**
+         * Type of the link between the two accounts. Acceptable values are: -
+         * "`channelPartner`" - "`eCommercePlatform`" - "`paymentServiceProvider`" -
+         * "`localProductManager`"
+         *
+         * @var string
+         */
+        public $linkType;
+        /**
+         * The ID of the linked account.
+         *
+         * @var string
+         */
+        public $linkedAccountId;
+        /**
+         * Provided services. Acceptable values are: -
+         * "`shoppingAdsProductManagement`" - "`shoppingActionsProductManagement`" -
+         * "`shoppingActionsOrderManagement`" - "`paymentProcessing`" -
+         * "`localProductManagement`"
+         *
+         * @var string[]
+         */
+        public $services;
+        /**
+         * Action to perform for this link. The `"request"` action is only available
+         * to select merchants. Acceptable values are: - "`approve`" - "`remove`" -
+         * "`request`"
+         *
+         * @param string $action
+         */
+        public function setAction($action)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAction()
+        {
+        }
+        /**
+         * Type of the link between the two accounts. Acceptable values are: -
+         * "`channelPartner`" - "`eCommercePlatform`" - "`paymentServiceProvider`" -
+         * "`localProductManager`"
+         *
+         * @param string $linkType
+         */
+        public function setLinkType($linkType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLinkType()
+        {
+        }
+        /**
+         * The ID of the linked account.
+         *
+         * @param string $linkedAccountId
+         */
+        public function setLinkedAccountId($linkedAccountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLinkedAccountId()
+        {
+        }
+        /**
+         * Provided services. Acceptable values are: -
+         * "`shoppingAdsProductManagement`" - "`shoppingActionsProductManagement`" -
+         * "`shoppingActionsOrderManagement`" - "`paymentProcessing`" -
+         * "`localProductManagement`"
+         *
+         * @param string[] $services
+         */
+        public function setServices($services)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getServices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\AccountsCustomBatchRequestEntryLinkRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAction()
-    {
-    }
-    /**
-     * Type of the link between the two accounts. Acceptable values are: -
-     * "`channelPartner`" - "`eCommercePlatform`" - "`paymentServiceProvider`" -
-     * "`localProductManager`"
-     *
-     * @param string $linkType
-     */
-    public function setLinkType($linkType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLinkType()
-    {
-    }
-    /**
-     * The ID of the linked account.
-     *
-     * @param string $linkedAccountId
-     */
-    public function setLinkedAccountId($linkedAccountId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLinkedAccountId()
-    {
-    }
-    /**
-     * Provided services. Acceptable values are: -
-     * "`shoppingAdsProductManagement`" - "`shoppingActionsProductManagement`" -
-     * "`shoppingActionsOrderManagement`" - "`paymentProcessing`" -
-     * "`localProductManagement`"
-     *
-     * @param string[] $services
-     */
-    public function setServices($services)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getServices()
+    class Google_Service_ShoppingContent_AccountsCustomBatchRequestEntryLinkRequest extends \Google\Service\ShoppingContent\AccountsCustomBatchRequestEntryLinkRequest
     {
     }
 }

@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSupport;
-
-class ListCommentsResponse extends \Google\Collection
-{
-    protected $collection_key = 'comments';
-    protected $commentsType = Comment::class;
-    protected $commentsDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Set this in the `page_token`
-     * field of subsequent `cases.comments.list` requests. If unspecified, there
-     * are no more results to retrieve.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of the comments associated with the case.
-     *
-     * @param Comment[] $comments
-     */
-    public function setComments($comments)
+namespace Google\Service\CloudSupport {
+    class ListCommentsResponse extends \Google\Collection
     {
+        protected $collection_key = 'comments';
+        protected $commentsType = Comment::class;
+        protected $commentsDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Set this in the `page_token`
+         * field of subsequent `cases.comments.list` requests. If unspecified, there
+         * are no more results to retrieve.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of the comments associated with the case.
+         *
+         * @param Comment[] $comments
+         */
+        public function setComments($comments)
+        {
+        }
+        /**
+         * @return Comment[]
+         */
+        public function getComments()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results. Set this in the `page_token`
+         * field of subsequent `cases.comments.list` requests. If unspecified, there
+         * are no more results to retrieve.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Comment[]
+     * Runtime class alias of \Google\Service\CloudSupport\ListCommentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getComments()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results. Set this in the `page_token`
-     * field of subsequent `cases.comments.list` requests. If unspecified, there
-     * are no more results to retrieve.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudSupport_ListCommentsResponse extends \Google\Service\CloudSupport\ListCommentsResponse
     {
     }
 }

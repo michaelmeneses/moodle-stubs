@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsExtensionsMarkupCalendarClientActionMarkupEditAttendeesActionMarkup extends \Google\Collection
-{
-    protected $collection_key = 'addAttendeeEmails';
-    /**
-     * @var string[]
-     */
-    public $addAttendeeEmails;
-    /**
-     * @param string[]
-     */
-    public function setAddAttendeeEmails($addAttendeeEmails)
+namespace Google\Service\CloudSearch {
+    class AppsExtensionsMarkupCalendarClientActionMarkupEditAttendeesActionMarkup extends \Google\Collection
     {
+        protected $collection_key = 'addAttendeeEmails';
+        /**
+         * @var string[]
+         */
+        public $addAttendeeEmails;
+        /**
+         * @param string[]
+         */
+        public function setAddAttendeeEmails($addAttendeeEmails)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAddAttendeeEmails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudSearch\AppsExtensionsMarkupCalendarClientActionMarkupEditAttendeesActionMarkup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddAttendeeEmails()
+    class Google_Service_CloudSearch_AppsExtensionsMarkupCalendarClientActionMarkupEditAttendeesActionMarkup extends \Google\Service\CloudSearch\AppsExtensionsMarkupCalendarClientActionMarkupEditAttendeesActionMarkup
     {
     }
 }

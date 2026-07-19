@@ -21,68 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebaseappcheck\Resource;
-
-/**
- * The "appAttestConfig" collection of methods.
- * Typical usage is:
- *  <code>
- *   $firebaseappcheckService = new Google\Service\Firebaseappcheck(...);
- *   $appAttestConfig = $firebaseappcheckService->projects_apps_appAttestConfig;
- *  </code>
- */
-class ProjectsAppsAppAttestConfig extends \Google\Service\Resource
-{
+namespace Google\Service\Firebaseappcheck\Resource {
+    use Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1AppAttestConfig;
+    use Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1BatchGetAppAttestConfigsResponse;
     /**
-     * Atomically gets the AppAttestConfigs for the specified list of apps.
-     * (appAttestConfig.batchGet)
-     *
-     * @param string $parent Required. The parent project name shared by all
-     * AppAttestConfigs being retrieved, in the format ``` projects/{project_number}
-     * ``` The parent collection in the `name` field of any resource being retrieved
-     * must match this field, or the entire batch fails.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string names Required. The relative resource names of the
-     * AppAttestConfigs to retrieve, in the format ```
-     * projects/{project_number}/apps/{app_id}/appAttestConfig ``` A maximum of 100
-     * objects can be retrieved in a batch.
-     * @return GoogleFirebaseAppcheckV1BatchGetAppAttestConfigsResponse
-     * @throws \Google\Service\Exception
+     * The "appAttestConfig" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $firebaseappcheckService = new Google\Service\Firebaseappcheck(...);
+     *   $appAttestConfig = $firebaseappcheckService->projects_apps_appAttestConfig;
+     *  </code>
      */
-    public function batchGet($parent, $optParams = [])
+    class ProjectsAppsAppAttestConfig extends \Google\Service\Resource
     {
+        /**
+         * Atomically gets the AppAttestConfigs for the specified list of apps.
+         * (appAttestConfig.batchGet)
+         *
+         * @param string $parent Required. The parent project name shared by all
+         * AppAttestConfigs being retrieved, in the format ``` projects/{project_number}
+         * ``` The parent collection in the `name` field of any resource being retrieved
+         * must match this field, or the entire batch fails.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string names Required. The relative resource names of the
+         * AppAttestConfigs to retrieve, in the format ```
+         * projects/{project_number}/apps/{app_id}/appAttestConfig ``` A maximum of 100
+         * objects can be retrieved in a batch.
+         * @return GoogleFirebaseAppcheckV1BatchGetAppAttestConfigsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function batchGet($parent, $optParams = [])
+        {
+        }
+        /**
+         * Gets the AppAttestConfig for the specified app. (appAttestConfig.get)
+         *
+         * @param string $name Required. The relative resource name of the
+         * AppAttestConfig, in the format: ```
+         * projects/{project_number}/apps/{app_id}/appAttestConfig ```
+         * @param array $optParams Optional parameters.
+         * @return GoogleFirebaseAppcheckV1AppAttestConfig
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Updates the AppAttestConfig for the specified app. While this configuration
+         * is incomplete or invalid, the app will be unable to exchange AppAttest tokens
+         * for App Check tokens. (appAttestConfig.patch)
+         *
+         * @param string $name Required. The relative resource name of the App Attest
+         * configuration object, in the format: ```
+         * projects/{project_number}/apps/{app_id}/appAttestConfig ```
+         * @param GoogleFirebaseAppcheckV1AppAttestConfig $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Required. A comma-separated list of names of
+         * fields in the AppAttestConfig to update. Example: `token_ttl`.
+         * @return GoogleFirebaseAppcheckV1AppAttestConfig
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, GoogleFirebaseAppcheckV1AppAttestConfig $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets the AppAttestConfig for the specified app. (appAttestConfig.get)
-     *
-     * @param string $name Required. The relative resource name of the
-     * AppAttestConfig, in the format: ```
-     * projects/{project_number}/apps/{app_id}/appAttestConfig ```
-     * @param array $optParams Optional parameters.
-     * @return GoogleFirebaseAppcheckV1AppAttestConfig
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Firebaseappcheck\Resource\ProjectsAppsAppAttestConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Updates the AppAttestConfig for the specified app. While this configuration
-     * is incomplete or invalid, the app will be unable to exchange AppAttest tokens
-     * for App Check tokens. (appAttestConfig.patch)
-     *
-     * @param string $name Required. The relative resource name of the App Attest
-     * configuration object, in the format: ```
-     * projects/{project_number}/apps/{app_id}/appAttestConfig ```
-     * @param GoogleFirebaseAppcheckV1AppAttestConfig $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Required. A comma-separated list of names of
-     * fields in the AppAttestConfig to update. Example: `token_ttl`.
-     * @return GoogleFirebaseAppcheckV1AppAttestConfig
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, GoogleFirebaseAppcheckV1AppAttestConfig $postBody, $optParams = [])
+    class Google_Service_Firebaseappcheck_Resource_ProjectsAppsAppAttestConfig extends \Google\Service\Firebaseappcheck\Resource\ProjectsAppsAppAttestConfig
     {
     }
 }

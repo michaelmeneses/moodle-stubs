@@ -21,244 +21,253 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class FuseboxItem extends \Google\Model
-{
-    protected $attributesType = Attributes::class;
-    protected $attributesDataType = '';
-    /**
-     * @var string
-     */
-    public $creationTimeMicroseconds;
-    protected $historyType = History::class;
-    protected $historyDataType = '';
-    protected $itemKeyType = MultiKey::class;
-    protected $itemKeyDataType = '';
-    protected $labelsType = Labels::class;
-    protected $labelsDataType = '';
-    /**
-     * @var string
-     */
-    public $lastModificationTimeUs;
-    protected $lockerReferencesType = References::class;
-    protected $lockerReferencesDataType = '';
-    protected $matchInfoType = MatchInfo::class;
-    protected $matchInfoDataType = '';
-    protected $partsType = ItemParts::class;
-    protected $partsDataType = '';
-    /**
-     * @var string
-     */
-    public $readTs;
-    protected $referencesType = References::class;
-    protected $referencesDataType = '';
-    /**
-     * @var string
-     */
-    public $snippet;
-    protected $threadKeyType = MultiKey::class;
-    protected $threadKeyDataType = '';
-    /**
-     * @var string
-     */
-    public $threadLocator;
-    protected $triggersType = Triggers::class;
-    protected $triggersDataType = '';
-    /**
-     * @var string
-     */
-    public $version;
-    /**
-     * @param Attributes
-     */
-    public function setAttributes(Attributes $attributes)
+namespace Google\Service\CloudSearch {
+    class FuseboxItem extends \Google\Model
     {
+        protected $attributesType = Attributes::class;
+        protected $attributesDataType = '';
+        /**
+         * @var string
+         */
+        public $creationTimeMicroseconds;
+        protected $historyType = History::class;
+        protected $historyDataType = '';
+        protected $itemKeyType = MultiKey::class;
+        protected $itemKeyDataType = '';
+        protected $labelsType = Labels::class;
+        protected $labelsDataType = '';
+        /**
+         * @var string
+         */
+        public $lastModificationTimeUs;
+        protected $lockerReferencesType = References::class;
+        protected $lockerReferencesDataType = '';
+        protected $matchInfoType = MatchInfo::class;
+        protected $matchInfoDataType = '';
+        protected $partsType = ItemParts::class;
+        protected $partsDataType = '';
+        /**
+         * @var string
+         */
+        public $readTs;
+        protected $referencesType = References::class;
+        protected $referencesDataType = '';
+        /**
+         * @var string
+         */
+        public $snippet;
+        protected $threadKeyType = MultiKey::class;
+        protected $threadKeyDataType = '';
+        /**
+         * @var string
+         */
+        public $threadLocator;
+        protected $triggersType = Triggers::class;
+        protected $triggersDataType = '';
+        /**
+         * @var string
+         */
+        public $version;
+        /**
+         * @param Attributes
+         */
+        public function setAttributes(Attributes $attributes)
+        {
+        }
+        /**
+         * @return Attributes
+         */
+        public function getAttributes()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCreationTimeMicroseconds($creationTimeMicroseconds)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreationTimeMicroseconds()
+        {
+        }
+        /**
+         * @param History
+         */
+        public function setHistory(History $history)
+        {
+        }
+        /**
+         * @return History
+         */
+        public function getHistory()
+        {
+        }
+        /**
+         * @param MultiKey
+         */
+        public function setItemKey(MultiKey $itemKey)
+        {
+        }
+        /**
+         * @return MultiKey
+         */
+        public function getItemKey()
+        {
+        }
+        /**
+         * @param Labels
+         */
+        public function setLabels(Labels $labels)
+        {
+        }
+        /**
+         * @return Labels
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLastModificationTimeUs($lastModificationTimeUs)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastModificationTimeUs()
+        {
+        }
+        /**
+         * @param References
+         */
+        public function setLockerReferences(References $lockerReferences)
+        {
+        }
+        /**
+         * @return References
+         */
+        public function getLockerReferences()
+        {
+        }
+        /**
+         * @param MatchInfo
+         */
+        public function setMatchInfo(MatchInfo $matchInfo)
+        {
+        }
+        /**
+         * @return MatchInfo
+         */
+        public function getMatchInfo()
+        {
+        }
+        /**
+         * @param ItemParts
+         */
+        public function setParts(ItemParts $parts)
+        {
+        }
+        /**
+         * @return ItemParts
+         */
+        public function getParts()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReadTs($readTs)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReadTs()
+        {
+        }
+        /**
+         * @param References
+         */
+        public function setReferences(References $references)
+        {
+        }
+        /**
+         * @return References
+         */
+        public function getReferences()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSnippet($snippet)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSnippet()
+        {
+        }
+        /**
+         * @param MultiKey
+         */
+        public function setThreadKey(MultiKey $threadKey)
+        {
+        }
+        /**
+         * @return MultiKey
+         */
+        public function getThreadKey()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setThreadLocator($threadLocator)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThreadLocator()
+        {
+        }
+        /**
+         * @param Triggers
+         */
+        public function setTriggers(Triggers $triggers)
+        {
+        }
+        /**
+         * @return Triggers
+         */
+        public function getTriggers()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Attributes
+     * Runtime class alias of \Google\Service\CloudSearch\FuseboxItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributes()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCreationTimeMicroseconds($creationTimeMicroseconds)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreationTimeMicroseconds()
-    {
-    }
-    /**
-     * @param History
-     */
-    public function setHistory(History $history)
-    {
-    }
-    /**
-     * @return History
-     */
-    public function getHistory()
-    {
-    }
-    /**
-     * @param MultiKey
-     */
-    public function setItemKey(MultiKey $itemKey)
-    {
-    }
-    /**
-     * @return MultiKey
-     */
-    public function getItemKey()
-    {
-    }
-    /**
-     * @param Labels
-     */
-    public function setLabels(Labels $labels)
-    {
-    }
-    /**
-     * @return Labels
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLastModificationTimeUs($lastModificationTimeUs)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastModificationTimeUs()
-    {
-    }
-    /**
-     * @param References
-     */
-    public function setLockerReferences(References $lockerReferences)
-    {
-    }
-    /**
-     * @return References
-     */
-    public function getLockerReferences()
-    {
-    }
-    /**
-     * @param MatchInfo
-     */
-    public function setMatchInfo(MatchInfo $matchInfo)
-    {
-    }
-    /**
-     * @return MatchInfo
-     */
-    public function getMatchInfo()
-    {
-    }
-    /**
-     * @param ItemParts
-     */
-    public function setParts(ItemParts $parts)
-    {
-    }
-    /**
-     * @return ItemParts
-     */
-    public function getParts()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReadTs($readTs)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReadTs()
-    {
-    }
-    /**
-     * @param References
-     */
-    public function setReferences(References $references)
-    {
-    }
-    /**
-     * @return References
-     */
-    public function getReferences()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSnippet($snippet)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSnippet()
-    {
-    }
-    /**
-     * @param MultiKey
-     */
-    public function setThreadKey(MultiKey $threadKey)
-    {
-    }
-    /**
-     * @return MultiKey
-     */
-    public function getThreadKey()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setThreadLocator($threadLocator)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getThreadLocator()
-    {
-    }
-    /**
-     * @param Triggers
-     */
-    public function setTriggers(Triggers $triggers)
-    {
-    }
-    /**
-     * @return Triggers
-     */
-    public function getTriggers()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_CloudSearch_FuseboxItem extends \Google\Service\CloudSearch\FuseboxItem
     {
     }
 }

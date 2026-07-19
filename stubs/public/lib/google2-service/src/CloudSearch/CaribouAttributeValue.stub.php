@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class CaribouAttributeValue extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $booleanValue;
-    /**
-     * @var int
-     */
-    public $intValue;
-    /**
-     * @var string
-     */
-    public $longValue;
-    /**
-     * @var string
-     */
-    public $rawByteValue;
-    /**
-     * @var string
-     */
-    public $stringValue;
-    /**
-     * @param bool
-     */
-    public function setBooleanValue($booleanValue)
+namespace Google\Service\CloudSearch {
+    class CaribouAttributeValue extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $booleanValue;
+        /**
+         * @var int
+         */
+        public $intValue;
+        /**
+         * @var string
+         */
+        public $longValue;
+        /**
+         * @var string
+         */
+        public $rawByteValue;
+        /**
+         * @var string
+         */
+        public $stringValue;
+        /**
+         * @param bool
+         */
+        public function setBooleanValue($booleanValue)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBooleanValue()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setIntValue($intValue)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getIntValue()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLongValue($longValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLongValue()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRawByteValue($rawByteValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRawByteValue()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStringValue($stringValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStringValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudSearch\CaribouAttributeValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBooleanValue()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setIntValue($intValue)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getIntValue()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLongValue($longValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLongValue()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRawByteValue($rawByteValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRawByteValue()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStringValue($stringValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStringValue()
+    class Google_Service_CloudSearch_CaribouAttributeValue extends \Google\Service\CloudSearch\CaribouAttributeValue
     {
     }
 }

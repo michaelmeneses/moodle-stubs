@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudControlsPartnerService;
-
-class WorkloadOnboardingState extends \Google\Collection
-{
-    protected $collection_key = 'onboardingSteps';
-    protected $onboardingStepsType = WorkloadOnboardingStep::class;
-    protected $onboardingStepsDataType = 'array';
-    /**
-     * List of workload onboarding steps.
-     *
-     * @param WorkloadOnboardingStep[] $onboardingSteps
-     */
-    public function setOnboardingSteps($onboardingSteps)
+namespace Google\Service\CloudControlsPartnerService {
+    class WorkloadOnboardingState extends \Google\Collection
     {
+        protected $collection_key = 'onboardingSteps';
+        protected $onboardingStepsType = WorkloadOnboardingStep::class;
+        protected $onboardingStepsDataType = 'array';
+        /**
+         * List of workload onboarding steps.
+         *
+         * @param WorkloadOnboardingStep[] $onboardingSteps
+         */
+        public function setOnboardingSteps($onboardingSteps)
+        {
+        }
+        /**
+         * @return WorkloadOnboardingStep[]
+         */
+        public function getOnboardingSteps()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return WorkloadOnboardingStep[]
+     * Runtime class alias of \Google\Service\CloudControlsPartnerService\WorkloadOnboardingState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOnboardingSteps()
+    class Google_Service_CloudControlsPartnerService_WorkloadOnboardingState extends \Google\Service\CloudControlsPartnerService\WorkloadOnboardingState
     {
     }
 }

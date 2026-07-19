@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class AdditionalNodeNetworkConfig extends \Google\Model
-{
-    /**
-     * Name of the VPC where the additional interface belongs
-     *
-     * @var string
-     */
-    public $network;
-    /**
-     * Name of the subnetwork where the additional interface belongs
-     *
-     * @var string
-     */
-    public $subnetwork;
-    /**
-     * Name of the VPC where the additional interface belongs
-     *
-     * @param string $network
-     */
-    public function setNetwork($network)
+namespace Google\Service\Container {
+    class AdditionalNodeNetworkConfig extends \Google\Model
     {
+        /**
+         * Name of the VPC where the additional interface belongs
+         *
+         * @var string
+         */
+        public $network;
+        /**
+         * Name of the subnetwork where the additional interface belongs
+         *
+         * @var string
+         */
+        public $subnetwork;
+        /**
+         * Name of the VPC where the additional interface belongs
+         *
+         * @param string $network
+         */
+        public function setNetwork($network)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetwork()
+        {
+        }
+        /**
+         * Name of the subnetwork where the additional interface belongs
+         *
+         * @param string $subnetwork
+         */
+        public function setSubnetwork($subnetwork)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubnetwork()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Container\AdditionalNodeNetworkConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNetwork()
-    {
-    }
-    /**
-     * Name of the subnetwork where the additional interface belongs
-     *
-     * @param string $subnetwork
-     */
-    public function setSubnetwork($subnetwork)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubnetwork()
+    class Google_Service_Container_AdditionalNodeNetworkConfig extends \Google\Service\Container\AdditionalNodeNetworkConfig
     {
     }
 }

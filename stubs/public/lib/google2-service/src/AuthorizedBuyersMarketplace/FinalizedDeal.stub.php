@@ -21,143 +21,152 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AuthorizedBuyersMarketplace;
-
-class FinalizedDeal extends \Google\Model
-{
-    /**
-     * Unspecified.
-     */
-    public const DEAL_SERVING_STATUS_DEAL_SERVING_STATUS_UNSPECIFIED = 'DEAL_SERVING_STATUS_UNSPECIFIED';
-    /**
-     * The deal is actively serving or ready to serve when the start date is
-     * reached.
-     */
-    public const DEAL_SERVING_STATUS_ACTIVE = 'ACTIVE';
-    /**
-     * The deal serving has ended.
-     */
-    public const DEAL_SERVING_STATUS_ENDED = 'ENDED';
-    /**
-     * The deal serving is paused by buyer.
-     */
-    public const DEAL_SERVING_STATUS_PAUSED_BY_BUYER = 'PAUSED_BY_BUYER';
-    /**
-     * The deal serving is paused by seller.
-     */
-    public const DEAL_SERVING_STATUS_PAUSED_BY_SELLER = 'PAUSED_BY_SELLER';
-    protected $dealType = Deal::class;
-    protected $dealDataType = '';
-    protected $dealPausingInfoType = DealPausingInfo::class;
-    protected $dealPausingInfoDataType = '';
-    /**
-     * Serving status of the deal.
-     *
-     * @var string
-     */
-    public $dealServingStatus;
-    /**
-     * The resource name of the finalized deal. Format:
-     * `buyers/{accountId}/finalizedDeals/{finalizedDealId}`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Whether the Programmatic Guaranteed deal is ready for serving.
-     *
-     * @var bool
-     */
-    public $readyToServe;
-    protected $rtbMetricsType = RtbMetrics::class;
-    protected $rtbMetricsDataType = '';
-    /**
-     * A copy of the Deal made upon finalization. During renegotiation, this will
-     * reflect the last finalized deal before renegotiation was initiated.
-     *
-     * @param Deal $deal
-     */
-    public function setDeal(Deal $deal)
+namespace Google\Service\AuthorizedBuyersMarketplace {
+    class FinalizedDeal extends \Google\Model
     {
+        /**
+         * Unspecified.
+         */
+        public const DEAL_SERVING_STATUS_DEAL_SERVING_STATUS_UNSPECIFIED = 'DEAL_SERVING_STATUS_UNSPECIFIED';
+        /**
+         * The deal is actively serving or ready to serve when the start date is
+         * reached.
+         */
+        public const DEAL_SERVING_STATUS_ACTIVE = 'ACTIVE';
+        /**
+         * The deal serving has ended.
+         */
+        public const DEAL_SERVING_STATUS_ENDED = 'ENDED';
+        /**
+         * The deal serving is paused by buyer.
+         */
+        public const DEAL_SERVING_STATUS_PAUSED_BY_BUYER = 'PAUSED_BY_BUYER';
+        /**
+         * The deal serving is paused by seller.
+         */
+        public const DEAL_SERVING_STATUS_PAUSED_BY_SELLER = 'PAUSED_BY_SELLER';
+        protected $dealType = Deal::class;
+        protected $dealDataType = '';
+        protected $dealPausingInfoType = DealPausingInfo::class;
+        protected $dealPausingInfoDataType = '';
+        /**
+         * Serving status of the deal.
+         *
+         * @var string
+         */
+        public $dealServingStatus;
+        /**
+         * The resource name of the finalized deal. Format:
+         * `buyers/{accountId}/finalizedDeals/{finalizedDealId}`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Whether the Programmatic Guaranteed deal is ready for serving.
+         *
+         * @var bool
+         */
+        public $readyToServe;
+        protected $rtbMetricsType = RtbMetrics::class;
+        protected $rtbMetricsDataType = '';
+        /**
+         * A copy of the Deal made upon finalization. During renegotiation, this will
+         * reflect the last finalized deal before renegotiation was initiated.
+         *
+         * @param Deal $deal
+         */
+        public function setDeal(Deal $deal)
+        {
+        }
+        /**
+         * @return Deal
+         */
+        public function getDeal()
+        {
+        }
+        /**
+         * Information related to deal pausing for the deal.
+         *
+         * @param DealPausingInfo $dealPausingInfo
+         */
+        public function setDealPausingInfo(DealPausingInfo $dealPausingInfo)
+        {
+        }
+        /**
+         * @return DealPausingInfo
+         */
+        public function getDealPausingInfo()
+        {
+        }
+        /**
+         * Serving status of the deal.
+         *
+         * Accepted values: DEAL_SERVING_STATUS_UNSPECIFIED, ACTIVE, ENDED,
+         * PAUSED_BY_BUYER, PAUSED_BY_SELLER
+         *
+         * @param self::DEAL_SERVING_STATUS_* $dealServingStatus
+         */
+        public function setDealServingStatus($dealServingStatus)
+        {
+        }
+        /**
+         * @return self::DEAL_SERVING_STATUS_*
+         */
+        public function getDealServingStatus()
+        {
+        }
+        /**
+         * The resource name of the finalized deal. Format:
+         * `buyers/{accountId}/finalizedDeals/{finalizedDealId}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Whether the Programmatic Guaranteed deal is ready for serving.
+         *
+         * @param bool $readyToServe
+         */
+        public function setReadyToServe($readyToServe)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReadyToServe()
+        {
+        }
+        /**
+         * Real-time bidding metrics for this deal.
+         *
+         * @param RtbMetrics $rtbMetrics
+         */
+        public function setRtbMetrics(RtbMetrics $rtbMetrics)
+        {
+        }
+        /**
+         * @return RtbMetrics
+         */
+        public function getRtbMetrics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Deal
+     * Runtime class alias of \Google\Service\AuthorizedBuyersMarketplace\FinalizedDeal registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeal()
-    {
-    }
-    /**
-     * Information related to deal pausing for the deal.
-     *
-     * @param DealPausingInfo $dealPausingInfo
-     */
-    public function setDealPausingInfo(DealPausingInfo $dealPausingInfo)
-    {
-    }
-    /**
-     * @return DealPausingInfo
-     */
-    public function getDealPausingInfo()
-    {
-    }
-    /**
-     * Serving status of the deal.
-     *
-     * Accepted values: DEAL_SERVING_STATUS_UNSPECIFIED, ACTIVE, ENDED,
-     * PAUSED_BY_BUYER, PAUSED_BY_SELLER
-     *
-     * @param self::DEAL_SERVING_STATUS_* $dealServingStatus
-     */
-    public function setDealServingStatus($dealServingStatus)
-    {
-    }
-    /**
-     * @return self::DEAL_SERVING_STATUS_*
-     */
-    public function getDealServingStatus()
-    {
-    }
-    /**
-     * The resource name of the finalized deal. Format:
-     * `buyers/{accountId}/finalizedDeals/{finalizedDealId}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Whether the Programmatic Guaranteed deal is ready for serving.
-     *
-     * @param bool $readyToServe
-     */
-    public function setReadyToServe($readyToServe)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReadyToServe()
-    {
-    }
-    /**
-     * Real-time bidding metrics for this deal.
-     *
-     * @param RtbMetrics $rtbMetrics
-     */
-    public function setRtbMetrics(RtbMetrics $rtbMetrics)
-    {
-    }
-    /**
-     * @return RtbMetrics
-     */
-    public function getRtbMetrics()
+    class Google_Service_AuthorizedBuyersMarketplace_FinalizedDeal extends \Google\Service\AuthorizedBuyersMarketplace\FinalizedDeal
     {
     }
 }

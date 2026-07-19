@@ -21,47 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Meet\Resource;
-
-/**
- * The "recordings" collection of methods.
- * Typical usage is:
- *  <code>
- *   $meetService = new Google\Service\Meet(...);
- *   $recordings = $meetService->conferenceRecords_recordings;
- *  </code>
- */
-class ConferenceRecordsRecordings extends \Google\Service\Resource
-{
+namespace Google\Service\Meet\Resource {
+    use Google\Service\Meet\ListRecordingsResponse;
+    use Google\Service\Meet\Recording;
     /**
-     * Gets a recording by recording ID. (recordings.get)
-     *
-     * @param string $name Required. Resource name of the recording.
-     * @param array $optParams Optional parameters.
-     * @return Recording
-     * @throws \Google\Service\Exception
+     * The "recordings" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $meetService = new Google\Service\Meet(...);
+     *   $recordings = $meetService->conferenceRecords_recordings;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ConferenceRecordsRecordings extends \Google\Service\Resource
     {
+        /**
+         * Gets a recording by recording ID. (recordings.get)
+         *
+         * @param string $name Required. Resource name of the recording.
+         * @param array $optParams Optional parameters.
+         * @return Recording
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists the recording resources from the conference record. By default, ordered
+         * by start time and in ascending order.
+         * (recordings.listConferenceRecordsRecordings)
+         *
+         * @param string $parent Required. Format:
+         * `conferenceRecords/{conference_record}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Maximum number of recordings to return. The service
+         * might return fewer than this value. If unspecified, at most 10 recordings are
+         * returned. The maximum value is 100; values above 100 are coerced to 100.
+         * Maximum might change in the future.
+         * @opt_param string pageToken Page token returned from previous List Call.
+         * @return ListRecordingsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listConferenceRecordsRecordings($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists the recording resources from the conference record. By default, ordered
-     * by start time and in ascending order.
-     * (recordings.listConferenceRecordsRecordings)
-     *
-     * @param string $parent Required. Format:
-     * `conferenceRecords/{conference_record}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Maximum number of recordings to return. The service
-     * might return fewer than this value. If unspecified, at most 10 recordings are
-     * returned. The maximum value is 100; values above 100 are coerced to 100.
-     * Maximum might change in the future.
-     * @opt_param string pageToken Page token returned from previous List Call.
-     * @return ListRecordingsResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Meet\Resource\ConferenceRecordsRecordings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listConferenceRecordsRecordings($parent, $optParams = [])
+    class Google_Service_Meet_Resource_ConferenceRecordsRecordings extends \Google\Service\Meet\Resource\ConferenceRecordsRecordings
     {
     }
 }

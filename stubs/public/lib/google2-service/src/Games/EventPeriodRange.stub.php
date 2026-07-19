@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class EventPeriodRange extends \Google\Model
-{
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#eventPeriodRange`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The time when this update period ends, in millis, since 1970 UTC (Unix
-     * Epoch).
-     *
-     * @var string
-     */
-    public $periodEndMillis;
-    /**
-     * The time when this update period begins, in millis, since 1970 UTC (Unix
-     * Epoch).
-     *
-     * @var string
-     */
-    public $periodStartMillis;
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#eventPeriodRange`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Games {
+    class EventPeriodRange extends \Google\Model
     {
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#eventPeriodRange`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The time when this update period ends, in millis, since 1970 UTC (Unix
+         * Epoch).
+         *
+         * @var string
+         */
+        public $periodEndMillis;
+        /**
+         * The time when this update period begins, in millis, since 1970 UTC (Unix
+         * Epoch).
+         *
+         * @var string
+         */
+        public $periodStartMillis;
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#eventPeriodRange`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The time when this update period ends, in millis, since 1970 UTC (Unix
+         * Epoch).
+         *
+         * @param string $periodEndMillis
+         */
+        public function setPeriodEndMillis($periodEndMillis)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPeriodEndMillis()
+        {
+        }
+        /**
+         * The time when this update period begins, in millis, since 1970 UTC (Unix
+         * Epoch).
+         *
+         * @param string $periodStartMillis
+         */
+        public function setPeriodStartMillis($periodStartMillis)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPeriodStartMillis()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Games\EventPeriodRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * The time when this update period ends, in millis, since 1970 UTC (Unix
-     * Epoch).
-     *
-     * @param string $periodEndMillis
-     */
-    public function setPeriodEndMillis($periodEndMillis)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPeriodEndMillis()
-    {
-    }
-    /**
-     * The time when this update period begins, in millis, since 1970 UTC (Unix
-     * Epoch).
-     *
-     * @param string $periodStartMillis
-     */
-    public function setPeriodStartMillis($periodStartMillis)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPeriodStartMillis()
+    class Google_Service_Games_EventPeriodRange extends \Google\Service\Games\EventPeriodRange
     {
     }
 }

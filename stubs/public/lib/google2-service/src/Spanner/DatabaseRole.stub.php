@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class DatabaseRole extends \Google\Model
-{
-    /**
-     * Required. The name of the database role. Values are of the form
-     * `projects//instances//databases//databaseRoles/` where `` is as specified
-     * in the `CREATE ROLE` DDL statement.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. The name of the database role. Values are of the form
-     * `projects//instances//databases//databaseRoles/` where `` is as specified
-     * in the `CREATE ROLE` DDL statement.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Spanner {
+    class DatabaseRole extends \Google\Model
     {
+        /**
+         * Required. The name of the database role. Values are of the form
+         * `projects//instances//databases//databaseRoles/` where `` is as specified
+         * in the `CREATE ROLE` DDL statement.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. The name of the database role. Values are of the form
+         * `projects//instances//databases//databaseRoles/` where `` is as specified
+         * in the `CREATE ROLE` DDL statement.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Spanner\DatabaseRole registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
+    class Google_Service_Spanner_DatabaseRole extends \Google\Service\Spanner\DatabaseRole
     {
     }
 }

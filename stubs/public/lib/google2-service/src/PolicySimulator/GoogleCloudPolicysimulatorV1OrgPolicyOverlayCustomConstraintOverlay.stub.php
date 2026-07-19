@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PolicySimulator;
-
-class GoogleCloudPolicysimulatorV1OrgPolicyOverlayCustomConstraintOverlay extends \Google\Model
-{
-    protected $customConstraintType = GoogleCloudOrgpolicyV2CustomConstraint::class;
-    protected $customConstraintDataType = '';
-    /**
-     * Optional. Resource the constraint is attached to. Example:
-     * "organization/987654"
-     *
-     * @var string
-     */
-    public $customConstraintParent;
-    /**
-     * Optional. The new or updated custom constraint.
-     *
-     * @param GoogleCloudOrgpolicyV2CustomConstraint $customConstraint
-     */
-    public function setCustomConstraint(GoogleCloudOrgpolicyV2CustomConstraint $customConstraint)
+namespace Google\Service\PolicySimulator {
+    class GoogleCloudPolicysimulatorV1OrgPolicyOverlayCustomConstraintOverlay extends \Google\Model
     {
+        protected $customConstraintType = GoogleCloudOrgpolicyV2CustomConstraint::class;
+        protected $customConstraintDataType = '';
+        /**
+         * Optional. Resource the constraint is attached to. Example:
+         * "organization/987654"
+         *
+         * @var string
+         */
+        public $customConstraintParent;
+        /**
+         * Optional. The new or updated custom constraint.
+         *
+         * @param GoogleCloudOrgpolicyV2CustomConstraint $customConstraint
+         */
+        public function setCustomConstraint(GoogleCloudOrgpolicyV2CustomConstraint $customConstraint)
+        {
+        }
+        /**
+         * @return GoogleCloudOrgpolicyV2CustomConstraint
+         */
+        public function getCustomConstraint()
+        {
+        }
+        /**
+         * Optional. Resource the constraint is attached to. Example:
+         * "organization/987654"
+         *
+         * @param string $customConstraintParent
+         */
+        public function setCustomConstraintParent($customConstraintParent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomConstraintParent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudOrgpolicyV2CustomConstraint
+     * Runtime class alias of \Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1OrgPolicyOverlayCustomConstraintOverlay registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomConstraint()
-    {
-    }
-    /**
-     * Optional. Resource the constraint is attached to. Example:
-     * "organization/987654"
-     *
-     * @param string $customConstraintParent
-     */
-    public function setCustomConstraintParent($customConstraintParent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCustomConstraintParent()
+    class Google_Service_PolicySimulator_GoogleCloudPolicysimulatorV1OrgPolicyOverlayCustomConstraintOverlay extends \Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1OrgPolicyOverlayCustomConstraintOverlay
     {
     }
 }

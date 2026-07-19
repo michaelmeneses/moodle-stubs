@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class FetchMsComplianceMetadataResponse extends \Google\Model
-{
-    /**
-     * The ms compliance metadata of the target project, if the project is an
-     * assured workloads project, values will be true, otherwise false.
-     *
-     * @var bool
-     */
-    public $isAssuredWorkload;
-    /**
-     * The ms compliance metadata of the target project, if the project is an
-     * assured workloads project, values will be true, otherwise false.
-     *
-     * @param bool $isAssuredWorkload
-     */
-    public function setIsAssuredWorkload($isAssuredWorkload)
+namespace Google\Service\Backupdr {
+    class FetchMsComplianceMetadataResponse extends \Google\Model
     {
+        /**
+         * The ms compliance metadata of the target project, if the project is an
+         * assured workloads project, values will be true, otherwise false.
+         *
+         * @var bool
+         */
+        public $isAssuredWorkload;
+        /**
+         * The ms compliance metadata of the target project, if the project is an
+         * assured workloads project, values will be true, otherwise false.
+         *
+         * @param bool $isAssuredWorkload
+         */
+        public function setIsAssuredWorkload($isAssuredWorkload)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsAssuredWorkload()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Backupdr\FetchMsComplianceMetadataResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIsAssuredWorkload()
+    class Google_Service_Backupdr_FetchMsComplianceMetadataResponse extends \Google\Service\Backupdr\FetchMsComplianceMetadataResponse
     {
     }
 }

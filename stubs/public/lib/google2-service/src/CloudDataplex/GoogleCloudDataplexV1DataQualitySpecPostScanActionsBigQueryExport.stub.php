@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataQualitySpecPostScanActionsBigQueryExport extends \Google\Model
-{
-    /**
-     * Optional. The BigQuery table to export DataQualityScan results to. Format:
-     * //bigquery.googleapis.com/projects/PROJECT_ID/datasets/DATASET_ID/tables/TA
-     * BLE_ID or projects/PROJECT_ID/datasets/DATASET_ID/tables/TABLE_ID
-     *
-     * @var string
-     */
-    public $resultsTable;
-    /**
-     * Optional. The BigQuery table to export DataQualityScan results to. Format:
-     * //bigquery.googleapis.com/projects/PROJECT_ID/datasets/DATASET_ID/tables/TA
-     * BLE_ID or projects/PROJECT_ID/datasets/DATASET_ID/tables/TABLE_ID
-     *
-     * @param string $resultsTable
-     */
-    public function setResultsTable($resultsTable)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataQualitySpecPostScanActionsBigQueryExport extends \Google\Model
     {
+        /**
+         * Optional. The BigQuery table to export DataQualityScan results to. Format:
+         * //bigquery.googleapis.com/projects/PROJECT_ID/datasets/DATASET_ID/tables/TA
+         * BLE_ID or projects/PROJECT_ID/datasets/DATASET_ID/tables/TABLE_ID
+         *
+         * @var string
+         */
+        public $resultsTable;
+        /**
+         * Optional. The BigQuery table to export DataQualityScan results to. Format:
+         * //bigquery.googleapis.com/projects/PROJECT_ID/datasets/DATASET_ID/tables/TA
+         * BLE_ID or projects/PROJECT_ID/datasets/DATASET_ID/tables/TABLE_ID
+         *
+         * @param string $resultsTable
+         */
+        public function setResultsTable($resultsTable)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResultsTable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataQualitySpecPostScanActionsBigQueryExport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResultsTable()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataQualitySpecPostScanActionsBigQueryExport extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataQualitySpecPostScanActionsBigQueryExport
     {
     }
 }

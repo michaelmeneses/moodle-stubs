@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteAttachment extends \Google\Model
-{
-    protected $addOnDataType = GoogleChatV1ContextualAddOnMarkup::class;
-    protected $addOnDataDataType = '';
-    protected $appIdType = AppsDynamiteUserId::class;
-    protected $appIdDataType = '';
-    /**
-     * @var string
-     */
-    public $attachmentId;
-    protected $cardAddOnDataType = AppsDynamiteSharedCard::class;
-    protected $cardAddOnDataDataType = '';
-    protected $deprecatedAddOnDataType = ContextualAddOnMarkup::class;
-    protected $deprecatedAddOnDataDataType = '';
-    protected $slackDataType = AppsDynamiteV1ApiCompatV1Attachment::class;
-    protected $slackDataDataType = '';
-    /**
-     * @var int
-     */
-    public $slackDataImageUrlHeight;
-    /**
-     * @param GoogleChatV1ContextualAddOnMarkup
-     */
-    public function setAddOnData(GoogleChatV1ContextualAddOnMarkup $addOnData)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteAttachment extends \Google\Model
     {
+        protected $addOnDataType = GoogleChatV1ContextualAddOnMarkup::class;
+        protected $addOnDataDataType = '';
+        protected $appIdType = AppsDynamiteUserId::class;
+        protected $appIdDataType = '';
+        /**
+         * @var string
+         */
+        public $attachmentId;
+        protected $cardAddOnDataType = AppsDynamiteSharedCard::class;
+        protected $cardAddOnDataDataType = '';
+        protected $deprecatedAddOnDataType = ContextualAddOnMarkup::class;
+        protected $deprecatedAddOnDataDataType = '';
+        protected $slackDataType = AppsDynamiteV1ApiCompatV1Attachment::class;
+        protected $slackDataDataType = '';
+        /**
+         * @var int
+         */
+        public $slackDataImageUrlHeight;
+        /**
+         * @param GoogleChatV1ContextualAddOnMarkup
+         */
+        public function setAddOnData(GoogleChatV1ContextualAddOnMarkup $addOnData)
+        {
+        }
+        /**
+         * @return GoogleChatV1ContextualAddOnMarkup
+         */
+        public function getAddOnData()
+        {
+        }
+        /**
+         * @param AppsDynamiteUserId
+         */
+        public function setAppId(AppsDynamiteUserId $appId)
+        {
+        }
+        /**
+         * @return AppsDynamiteUserId
+         */
+        public function getAppId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setAttachmentId($attachmentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAttachmentId()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedCard
+         */
+        public function setCardAddOnData(AppsDynamiteSharedCard $cardAddOnData)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedCard
+         */
+        public function getCardAddOnData()
+        {
+        }
+        /**
+         * @param ContextualAddOnMarkup
+         */
+        public function setDeprecatedAddOnData(ContextualAddOnMarkup $deprecatedAddOnData)
+        {
+        }
+        /**
+         * @return ContextualAddOnMarkup
+         */
+        public function getDeprecatedAddOnData()
+        {
+        }
+        /**
+         * @param AppsDynamiteV1ApiCompatV1Attachment
+         */
+        public function setSlackData(AppsDynamiteV1ApiCompatV1Attachment $slackData)
+        {
+        }
+        /**
+         * @return AppsDynamiteV1ApiCompatV1Attachment
+         */
+        public function getSlackData()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setSlackDataImageUrlHeight($slackDataImageUrlHeight)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSlackDataImageUrlHeight()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChatV1ContextualAddOnMarkup
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteAttachment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddOnData()
-    {
-    }
-    /**
-     * @param AppsDynamiteUserId
-     */
-    public function setAppId(AppsDynamiteUserId $appId)
-    {
-    }
-    /**
-     * @return AppsDynamiteUserId
-     */
-    public function getAppId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setAttachmentId($attachmentId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAttachmentId()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedCard
-     */
-    public function setCardAddOnData(AppsDynamiteSharedCard $cardAddOnData)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedCard
-     */
-    public function getCardAddOnData()
-    {
-    }
-    /**
-     * @param ContextualAddOnMarkup
-     */
-    public function setDeprecatedAddOnData(ContextualAddOnMarkup $deprecatedAddOnData)
-    {
-    }
-    /**
-     * @return ContextualAddOnMarkup
-     */
-    public function getDeprecatedAddOnData()
-    {
-    }
-    /**
-     * @param AppsDynamiteV1ApiCompatV1Attachment
-     */
-    public function setSlackData(AppsDynamiteV1ApiCompatV1Attachment $slackData)
-    {
-    }
-    /**
-     * @return AppsDynamiteV1ApiCompatV1Attachment
-     */
-    public function getSlackData()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setSlackDataImageUrlHeight($slackDataImageUrlHeight)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSlackDataImageUrlHeight()
+    class Google_Service_CloudSearch_AppsDynamiteAttachment extends \Google\Service\CloudSearch\AppsDynamiteAttachment
     {
     }
 }

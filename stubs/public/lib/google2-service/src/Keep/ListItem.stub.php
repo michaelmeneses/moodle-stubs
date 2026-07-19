@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Keep;
-
-class ListItem extends \Google\Collection
-{
-    protected $collection_key = 'childListItems';
-    /**
-     * Whether this item has been checked off or not.
-     *
-     * @var bool
-     */
-    public $checked;
-    protected $childListItemsType = ListItem::class;
-    protected $childListItemsDataType = 'array';
-    protected $textType = TextContent::class;
-    protected $textDataType = '';
-    /**
-     * Whether this item has been checked off or not.
-     *
-     * @param bool $checked
-     */
-    public function setChecked($checked)
+namespace Google\Service\Keep {
+    class ListItem extends \Google\Collection
     {
+        protected $collection_key = 'childListItems';
+        /**
+         * Whether this item has been checked off or not.
+         *
+         * @var bool
+         */
+        public $checked;
+        protected $childListItemsType = ListItem::class;
+        protected $childListItemsDataType = 'array';
+        protected $textType = TextContent::class;
+        protected $textDataType = '';
+        /**
+         * Whether this item has been checked off or not.
+         *
+         * @param bool $checked
+         */
+        public function setChecked($checked)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getChecked()
+        {
+        }
+        /**
+         * If set, list of list items nested under this list item. Only one level of
+         * nesting is allowed.
+         *
+         * @param ListItem[] $childListItems
+         */
+        public function setChildListItems($childListItems)
+        {
+        }
+        /**
+         * @return ListItem[]
+         */
+        public function getChildListItems()
+        {
+        }
+        /**
+         * The text of this item. Length must be less than 1,000 characters.
+         *
+         * @param TextContent $text
+         */
+        public function setText(TextContent $text)
+        {
+        }
+        /**
+         * @return TextContent
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Keep\ListItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChecked()
-    {
-    }
-    /**
-     * If set, list of list items nested under this list item. Only one level of
-     * nesting is allowed.
-     *
-     * @param ListItem[] $childListItems
-     */
-    public function setChildListItems($childListItems)
-    {
-    }
-    /**
-     * @return ListItem[]
-     */
-    public function getChildListItems()
-    {
-    }
-    /**
-     * The text of this item. Length must be less than 1,000 characters.
-     *
-     * @param TextContent $text
-     */
-    public function setText(TextContent $text)
-    {
-    }
-    /**
-     * @return TextContent
-     */
-    public function getText()
+    class Google_Service_Keep_ListItem extends \Google\Service\Keep\ListItem
     {
     }
 }

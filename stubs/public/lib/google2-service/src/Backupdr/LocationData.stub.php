@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class LocationData extends \Google\Model
-{
-    protected $blobstoreLocationType = BlobstoreLocation::class;
-    protected $blobstoreLocationDataType = '';
-    protected $childAssetLocationType = CloudAssetComposition::class;
-    protected $childAssetLocationDataType = '';
-    protected $directLocationType = DirectLocationAssignment::class;
-    protected $directLocationDataType = '';
-    protected $gcpProjectProxyType = TenantProjectProxy::class;
-    protected $gcpProjectProxyDataType = '';
-    protected $placerLocationType = PlacerLocation::class;
-    protected $placerLocationDataType = '';
-    protected $spannerLocationType = SpannerLocation::class;
-    protected $spannerLocationDataType = '';
-    /**
-     * @param BlobstoreLocation
-     */
-    public function setBlobstoreLocation(BlobstoreLocation $blobstoreLocation)
+namespace Google\Service\Backupdr {
+    class LocationData extends \Google\Model
     {
+        protected $blobstoreLocationType = BlobstoreLocation::class;
+        protected $blobstoreLocationDataType = '';
+        protected $childAssetLocationType = CloudAssetComposition::class;
+        protected $childAssetLocationDataType = '';
+        protected $directLocationType = DirectLocationAssignment::class;
+        protected $directLocationDataType = '';
+        protected $gcpProjectProxyType = TenantProjectProxy::class;
+        protected $gcpProjectProxyDataType = '';
+        protected $placerLocationType = PlacerLocation::class;
+        protected $placerLocationDataType = '';
+        protected $spannerLocationType = SpannerLocation::class;
+        protected $spannerLocationDataType = '';
+        /**
+         * @param BlobstoreLocation
+         */
+        public function setBlobstoreLocation(BlobstoreLocation $blobstoreLocation)
+        {
+        }
+        /**
+         * @return BlobstoreLocation
+         */
+        public function getBlobstoreLocation()
+        {
+        }
+        /**
+         * @param CloudAssetComposition
+         */
+        public function setChildAssetLocation(CloudAssetComposition $childAssetLocation)
+        {
+        }
+        /**
+         * @return CloudAssetComposition
+         */
+        public function getChildAssetLocation()
+        {
+        }
+        /**
+         * @param DirectLocationAssignment
+         */
+        public function setDirectLocation(DirectLocationAssignment $directLocation)
+        {
+        }
+        /**
+         * @return DirectLocationAssignment
+         */
+        public function getDirectLocation()
+        {
+        }
+        /**
+         * @param TenantProjectProxy
+         */
+        public function setGcpProjectProxy(TenantProjectProxy $gcpProjectProxy)
+        {
+        }
+        /**
+         * @return TenantProjectProxy
+         */
+        public function getGcpProjectProxy()
+        {
+        }
+        /**
+         * @param PlacerLocation
+         */
+        public function setPlacerLocation(PlacerLocation $placerLocation)
+        {
+        }
+        /**
+         * @return PlacerLocation
+         */
+        public function getPlacerLocation()
+        {
+        }
+        /**
+         * @param SpannerLocation
+         */
+        public function setSpannerLocation(SpannerLocation $spannerLocation)
+        {
+        }
+        /**
+         * @return SpannerLocation
+         */
+        public function getSpannerLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BlobstoreLocation
+     * Runtime class alias of \Google\Service\Backupdr\LocationData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlobstoreLocation()
-    {
-    }
-    /**
-     * @param CloudAssetComposition
-     */
-    public function setChildAssetLocation(CloudAssetComposition $childAssetLocation)
-    {
-    }
-    /**
-     * @return CloudAssetComposition
-     */
-    public function getChildAssetLocation()
-    {
-    }
-    /**
-     * @param DirectLocationAssignment
-     */
-    public function setDirectLocation(DirectLocationAssignment $directLocation)
-    {
-    }
-    /**
-     * @return DirectLocationAssignment
-     */
-    public function getDirectLocation()
-    {
-    }
-    /**
-     * @param TenantProjectProxy
-     */
-    public function setGcpProjectProxy(TenantProjectProxy $gcpProjectProxy)
-    {
-    }
-    /**
-     * @return TenantProjectProxy
-     */
-    public function getGcpProjectProxy()
-    {
-    }
-    /**
-     * @param PlacerLocation
-     */
-    public function setPlacerLocation(PlacerLocation $placerLocation)
-    {
-    }
-    /**
-     * @return PlacerLocation
-     */
-    public function getPlacerLocation()
-    {
-    }
-    /**
-     * @param SpannerLocation
-     */
-    public function setSpannerLocation(SpannerLocation $spannerLocation)
-    {
-    }
-    /**
-     * @return SpannerLocation
-     */
-    public function getSpannerLocation()
+    class Google_Service_Backupdr_LocationData extends \Google\Service\Backupdr\LocationData
     {
     }
 }

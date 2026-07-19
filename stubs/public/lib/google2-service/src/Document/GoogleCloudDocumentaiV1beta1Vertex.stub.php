@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta1Vertex extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $x;
-    /**
-     * @var int
-     */
-    public $y;
-    /**
-     * @param int
-     */
-    public function setX($x)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta1Vertex extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $x;
+        /**
+         * @var int
+         */
+        public $y;
+        /**
+         * @param int
+         */
+        public function setX($x)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getX()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setY($y)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getY()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta1Vertex registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getX()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setY($y)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getY()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta1Vertex extends \Google\Service\Document\GoogleCloudDocumentaiV1beta1Vertex
     {
     }
 }

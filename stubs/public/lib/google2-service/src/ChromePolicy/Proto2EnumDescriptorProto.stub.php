@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class Proto2EnumDescriptorProto extends \Google\Collection
-{
-    public const VISIBILITY_VISIBILITY_UNSET = 'VISIBILITY_UNSET';
-    public const VISIBILITY_VISIBILITY_LOCAL = 'VISIBILITY_LOCAL';
-    public const VISIBILITY_VISIBILITY_EXPORT = 'VISIBILITY_EXPORT';
-    protected $collection_key = 'value';
-    /**
-     * @var string
-     */
-    public $name;
-    protected $valueType = Proto2EnumValueDescriptorProto::class;
-    protected $valueDataType = 'array';
-    /**
-     * Support for `export` and `local` keywords on enums.
-     *
-     * @var string
-     */
-    public $visibility;
-    /**
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\ChromePolicy {
+    class Proto2EnumDescriptorProto extends \Google\Collection
     {
+        public const VISIBILITY_VISIBILITY_UNSET = 'VISIBILITY_UNSET';
+        public const VISIBILITY_VISIBILITY_LOCAL = 'VISIBILITY_LOCAL';
+        public const VISIBILITY_VISIBILITY_EXPORT = 'VISIBILITY_EXPORT';
+        protected $collection_key = 'value';
+        /**
+         * @var string
+         */
+        public $name;
+        protected $valueType = Proto2EnumValueDescriptorProto::class;
+        protected $valueDataType = 'array';
+        /**
+         * Support for `export` and `local` keywords on enums.
+         *
+         * @var string
+         */
+        public $visibility;
+        /**
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param Proto2EnumValueDescriptorProto[] $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return Proto2EnumValueDescriptorProto[]
+         */
+        public function getValue()
+        {
+        }
+        /**
+         * Support for `export` and `local` keywords on enums.
+         *
+         * Accepted values: VISIBILITY_UNSET, VISIBILITY_LOCAL, VISIBILITY_EXPORT
+         *
+         * @param self::VISIBILITY_* $visibility
+         */
+        public function setVisibility($visibility)
+        {
+        }
+        /**
+         * @return self::VISIBILITY_*
+         */
+        public function getVisibility()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromePolicy\Proto2EnumDescriptorProto registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * @param Proto2EnumValueDescriptorProto[] $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return Proto2EnumValueDescriptorProto[]
-     */
-    public function getValue()
-    {
-    }
-    /**
-     * Support for `export` and `local` keywords on enums.
-     *
-     * Accepted values: VISIBILITY_UNSET, VISIBILITY_LOCAL, VISIBILITY_EXPORT
-     *
-     * @param self::VISIBILITY_* $visibility
-     */
-    public function setVisibility($visibility)
-    {
-    }
-    /**
-     * @return self::VISIBILITY_*
-     */
-    public function getVisibility()
+    class Google_Service_ChromePolicy_Proto2EnumDescriptorProto extends \Google\Service\ChromePolicy\Proto2EnumDescriptorProto
     {
     }
 }

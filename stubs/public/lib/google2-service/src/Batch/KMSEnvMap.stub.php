@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Batch;
-
-class KMSEnvMap extends \Google\Model
-{
-    /**
-     * The value of the cipherText response from the `encrypt` method.
-     *
-     * @var string
-     */
-    public $cipherText;
-    /**
-     * The name of the KMS key that will be used to decrypt the cipher text.
-     *
-     * @var string
-     */
-    public $keyName;
-    /**
-     * The value of the cipherText response from the `encrypt` method.
-     *
-     * @param string $cipherText
-     */
-    public function setCipherText($cipherText)
+namespace Google\Service\Batch {
+    class KMSEnvMap extends \Google\Model
     {
+        /**
+         * The value of the cipherText response from the `encrypt` method.
+         *
+         * @var string
+         */
+        public $cipherText;
+        /**
+         * The name of the KMS key that will be used to decrypt the cipher text.
+         *
+         * @var string
+         */
+        public $keyName;
+        /**
+         * The value of the cipherText response from the `encrypt` method.
+         *
+         * @param string $cipherText
+         */
+        public function setCipherText($cipherText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCipherText()
+        {
+        }
+        /**
+         * The name of the KMS key that will be used to decrypt the cipher text.
+         *
+         * @param string $keyName
+         */
+        public function setKeyName($keyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKeyName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Batch\KMSEnvMap registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCipherText()
-    {
-    }
-    /**
-     * The name of the KMS key that will be used to decrypt the cipher text.
-     *
-     * @param string $keyName
-     */
-    public function setKeyName($keyName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKeyName()
+    class Google_Service_Batch_KMSEnvMap extends \Google\Service\Batch\KMSEnvMap
     {
     }
 }

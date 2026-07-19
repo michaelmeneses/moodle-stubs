@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class Extension extends \Google\Model
-{
-    protected $durationType = Duration::class;
-    protected $durationDataType = '';
-    /**
-     * Required. Identifier of the end-user in partner’s system.
-     *
-     * @var string
-     */
-    public $partnerUserToken;
-    /**
-     * Required. Specifies the period of access the subscription should grant.
-     *
-     * @param Duration $duration
-     */
-    public function setDuration(Duration $duration)
+namespace Google\Service\PaymentsResellerSubscription {
+    class Extension extends \Google\Model
     {
+        protected $durationType = Duration::class;
+        protected $durationDataType = '';
+        /**
+         * Required. Identifier of the end-user in partner’s system.
+         *
+         * @var string
+         */
+        public $partnerUserToken;
+        /**
+         * Required. Specifies the period of access the subscription should grant.
+         *
+         * @param Duration $duration
+         */
+        public function setDuration(Duration $duration)
+        {
+        }
+        /**
+         * @return Duration
+         */
+        public function getDuration()
+        {
+        }
+        /**
+         * Required. Identifier of the end-user in partner’s system.
+         *
+         * @param string $partnerUserToken
+         */
+        public function setPartnerUserToken($partnerUserToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPartnerUserToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Duration
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\Extension registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDuration()
-    {
-    }
-    /**
-     * Required. Identifier of the end-user in partner’s system.
-     *
-     * @param string $partnerUserToken
-     */
-    public function setPartnerUserToken($partnerUserToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPartnerUserToken()
+    class Google_Service_PaymentsResellerSubscription_Extension extends \Google\Service\PaymentsResellerSubscription\Extension
     {
     }
 }

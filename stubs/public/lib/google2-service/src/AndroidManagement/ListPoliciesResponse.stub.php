@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class ListPoliciesResponse extends \Google\Collection
-{
-    protected $collection_key = 'policies';
-    /**
-     * If there are more results, a token to retrieve next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $policiesType = Policy::class;
-    protected $policiesDataType = 'array';
-    /**
-     * If there are more results, a token to retrieve next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\AndroidManagement {
+    class ListPoliciesResponse extends \Google\Collection
     {
+        protected $collection_key = 'policies';
+        /**
+         * If there are more results, a token to retrieve next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $policiesType = Policy::class;
+        protected $policiesDataType = 'array';
+        /**
+         * If there are more results, a token to retrieve next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of policies.
+         *
+         * @param Policy[] $policies
+         */
+        public function setPolicies($policies)
+        {
+        }
+        /**
+         * @return Policy[]
+         */
+        public function getPolicies()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidManagement\ListPoliciesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of policies.
-     *
-     * @param Policy[] $policies
-     */
-    public function setPolicies($policies)
-    {
-    }
-    /**
-     * @return Policy[]
-     */
-    public function getPolicies()
+    class Google_Service_AndroidManagement_ListPoliciesResponse extends \Google\Service\AndroidManagement\ListPoliciesResponse
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2ConditionTimeRange extends \Google\Model
-{
-    /**
-     * End of time range. Range is inclusive.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * Start of time range. Range is inclusive.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * End of time range. Range is inclusive.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2ConditionTimeRange extends \Google\Model
     {
+        /**
+         * End of time range. Range is inclusive.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * Start of time range. Range is inclusive.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * End of time range. Range is inclusive.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Start of time range. Range is inclusive.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2ConditionTimeRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Start of time range. Range is inclusive.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2ConditionTimeRange extends \Google\Service\CloudRetail\GoogleCloudRetailV2ConditionTimeRange
     {
     }
 }

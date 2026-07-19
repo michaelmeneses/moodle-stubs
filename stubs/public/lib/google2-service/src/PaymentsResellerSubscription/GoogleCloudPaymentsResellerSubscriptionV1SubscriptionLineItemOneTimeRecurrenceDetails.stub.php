@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class GoogleCloudPaymentsResellerSubscriptionV1SubscriptionLineItemOneTimeRecurrenceDetails extends \Google\Model
-{
-    protected $servicePeriodType = GoogleCloudPaymentsResellerSubscriptionV1ServicePeriod::class;
-    protected $servicePeriodDataType = '';
-    /**
-     * @param GoogleCloudPaymentsResellerSubscriptionV1ServicePeriod
-     */
-    public function setServicePeriod(GoogleCloudPaymentsResellerSubscriptionV1ServicePeriod $servicePeriod)
+namespace Google\Service\PaymentsResellerSubscription {
+    class GoogleCloudPaymentsResellerSubscriptionV1SubscriptionLineItemOneTimeRecurrenceDetails extends \Google\Model
     {
+        protected $servicePeriodType = GoogleCloudPaymentsResellerSubscriptionV1ServicePeriod::class;
+        protected $servicePeriodDataType = '';
+        /**
+         * @param GoogleCloudPaymentsResellerSubscriptionV1ServicePeriod
+         */
+        public function setServicePeriod(GoogleCloudPaymentsResellerSubscriptionV1ServicePeriod $servicePeriod)
+        {
+        }
+        /**
+         * @return GoogleCloudPaymentsResellerSubscriptionV1ServicePeriod
+         */
+        public function getServicePeriod()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudPaymentsResellerSubscriptionV1ServicePeriod
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1SubscriptionLineItemOneTimeRecurrenceDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getServicePeriod()
+    class Google_Service_PaymentsResellerSubscription_GoogleCloudPaymentsResellerSubscriptionV1SubscriptionLineItemOneTimeRecurrenceDetails extends \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1SubscriptionLineItemOneTimeRecurrenceDetails
     {
     }
 }

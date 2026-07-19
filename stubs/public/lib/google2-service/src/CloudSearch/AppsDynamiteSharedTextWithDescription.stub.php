@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedTextWithDescription extends \Google\Collection
-{
-    protected $collection_key = 'textSegmentsWithDescription';
-    /**
-     * @var string
-     */
-    public $textBody;
-    protected $textSegmentsWithDescriptionType = AppsDynamiteSharedTextSegmentsWithDescription::class;
-    protected $textSegmentsWithDescriptionDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setTextBody($textBody)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedTextWithDescription extends \Google\Collection
     {
+        protected $collection_key = 'textSegmentsWithDescription';
+        /**
+         * @var string
+         */
+        public $textBody;
+        protected $textSegmentsWithDescriptionType = AppsDynamiteSharedTextSegmentsWithDescription::class;
+        protected $textSegmentsWithDescriptionDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setTextBody($textBody)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTextBody()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedTextSegmentsWithDescription[]
+         */
+        public function setTextSegmentsWithDescription($textSegmentsWithDescription)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedTextSegmentsWithDescription[]
+         */
+        public function getTextSegmentsWithDescription()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedTextWithDescription registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTextBody()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedTextSegmentsWithDescription[]
-     */
-    public function setTextSegmentsWithDescription($textSegmentsWithDescription)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedTextSegmentsWithDescription[]
-     */
-    public function getTextSegmentsWithDescription()
+    class Google_Service_CloudSearch_AppsDynamiteSharedTextWithDescription extends \Google\Service\CloudSearch\AppsDynamiteSharedTextWithDescription
     {
     }
 }

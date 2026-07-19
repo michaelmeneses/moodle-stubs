@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class ListTeachersResponse extends \Google\Collection
-{
-    protected $collection_key = 'teachers';
-    /**
-     * Token identifying the next page of results to return. If empty, no further
-     * results are available.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $teachersType = Teacher::class;
-    protected $teachersDataType = 'array';
-    /**
-     * Token identifying the next page of results to return. If empty, no further
-     * results are available.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Classroom {
+    class ListTeachersResponse extends \Google\Collection
     {
+        protected $collection_key = 'teachers';
+        /**
+         * Token identifying the next page of results to return. If empty, no further
+         * results are available.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $teachersType = Teacher::class;
+        protected $teachersDataType = 'array';
+        /**
+         * Token identifying the next page of results to return. If empty, no further
+         * results are available.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Teachers who match the list request.
+         *
+         * @param Teacher[] $teachers
+         */
+        public function setTeachers($teachers)
+        {
+        }
+        /**
+         * @return Teacher[]
+         */
+        public function getTeachers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Classroom\ListTeachersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Teachers who match the list request.
-     *
-     * @param Teacher[] $teachers
-     */
-    public function setTeachers($teachers)
-    {
-    }
-    /**
-     * @return Teacher[]
-     */
-    public function getTeachers()
+    class Google_Service_Classroom_ListTeachersResponse extends \Google\Service\Classroom\ListTeachersResponse
     {
     }
 }

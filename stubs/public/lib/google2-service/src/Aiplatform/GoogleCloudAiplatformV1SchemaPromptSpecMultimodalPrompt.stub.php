@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaPromptSpecMultimodalPrompt extends \Google\Model
-{
-    protected $promptMessageType = GoogleCloudAiplatformV1SchemaPromptSpecPromptMessage::class;
-    protected $promptMessageDataType = '';
-    /**
-     * The prompt message.
-     *
-     * @param GoogleCloudAiplatformV1SchemaPromptSpecPromptMessage $promptMessage
-     */
-    public function setPromptMessage(GoogleCloudAiplatformV1SchemaPromptSpecPromptMessage $promptMessage)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaPromptSpecMultimodalPrompt extends \Google\Model
     {
+        protected $promptMessageType = GoogleCloudAiplatformV1SchemaPromptSpecPromptMessage::class;
+        protected $promptMessageDataType = '';
+        /**
+         * The prompt message.
+         *
+         * @param GoogleCloudAiplatformV1SchemaPromptSpecPromptMessage $promptMessage
+         */
+        public function setPromptMessage(GoogleCloudAiplatformV1SchemaPromptSpecPromptMessage $promptMessage)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SchemaPromptSpecPromptMessage
+         */
+        public function getPromptMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1SchemaPromptSpecPromptMessage
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPromptSpecMultimodalPrompt registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPromptMessage()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaPromptSpecMultimodalPrompt extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPromptSpecMultimodalPrompt
     {
     }
 }

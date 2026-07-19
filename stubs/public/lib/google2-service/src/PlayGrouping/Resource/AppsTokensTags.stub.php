@@ -21,32 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PlayGrouping\Resource;
-
-/**
- * The "tags" collection of methods.
- * Typical usage is:
- *  <code>
- *   $playgroupingService = new Google\Service\PlayGrouping(...);
- *   $tags = $playgroupingService->apps_tokens_tags;
- *  </code>
- */
-class AppsTokensTags extends \Google\Service\Resource
-{
+namespace Google\Service\PlayGrouping\Resource {
+    use Google\Service\PlayGrouping\CreateOrUpdateTagsRequest;
+    use Google\Service\PlayGrouping\CreateOrUpdateTagsResponse;
     /**
-     * Create or update tags for the user and app that are represented by the given
-     * token. (tags.createOrUpdate)
-     *
-     * @param string $appPackage Required. App whose tags are being manipulated.
-     * Format: apps/{package_name}
-     * @param string $token Required. Token for which the tags are being inserted or
-     * updated. Format: tokens/{token}
-     * @param CreateOrUpdateTagsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return CreateOrUpdateTagsResponse
-     * @throws \Google\Service\Exception
+     * The "tags" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $playgroupingService = new Google\Service\PlayGrouping(...);
+     *   $tags = $playgroupingService->apps_tokens_tags;
+     *  </code>
      */
-    public function createOrUpdate($appPackage, $token, CreateOrUpdateTagsRequest $postBody, $optParams = [])
+    class AppsTokensTags extends \Google\Service\Resource
+    {
+        /**
+         * Create or update tags for the user and app that are represented by the given
+         * token. (tags.createOrUpdate)
+         *
+         * @param string $appPackage Required. App whose tags are being manipulated.
+         * Format: apps/{package_name}
+         * @param string $token Required. Token for which the tags are being inserted or
+         * updated. Format: tokens/{token}
+         * @param CreateOrUpdateTagsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return CreateOrUpdateTagsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function createOrUpdate($appPackage, $token, CreateOrUpdateTagsRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\PlayGrouping\Resource\AppsTokensTags registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_PlayGrouping_Resource_AppsTokensTags extends \Google\Service\PlayGrouping\Resource\AppsTokensTags
     {
     }
 }

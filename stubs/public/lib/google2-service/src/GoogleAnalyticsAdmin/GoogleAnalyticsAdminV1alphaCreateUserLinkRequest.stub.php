@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaCreateUserLinkRequest extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $notifyNewUser;
-    /**
-     * @var string
-     */
-    public $parent;
-    protected $userLinkType = GoogleAnalyticsAdminV1alphaUserLink::class;
-    protected $userLinkDataType = '';
-    /**
-     * @param bool
-     */
-    public function setNotifyNewUser($notifyNewUser)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaCreateUserLinkRequest extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $notifyNewUser;
+        /**
+         * @var string
+         */
+        public $parent;
+        protected $userLinkType = GoogleAnalyticsAdminV1alphaUserLink::class;
+        protected $userLinkDataType = '';
+        /**
+         * @param bool
+         */
+        public function setNotifyNewUser($notifyNewUser)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getNotifyNewUser()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaUserLink
+         */
+        public function setUserLink(GoogleAnalyticsAdminV1alphaUserLink $userLink)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaUserLink
+         */
+        public function getUserLink()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaCreateUserLinkRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNotifyNewUser()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setParent($parent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParent()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaUserLink
-     */
-    public function setUserLink(GoogleAnalyticsAdminV1alphaUserLink $userLink)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaUserLink
-     */
-    public function getUserLink()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaCreateUserLinkRequest extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaCreateUserLinkRequest
     {
     }
 }

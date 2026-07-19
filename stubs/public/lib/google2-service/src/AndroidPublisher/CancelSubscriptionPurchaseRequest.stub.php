@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class CancelSubscriptionPurchaseRequest extends \Google\Model
-{
-    protected $cancellationContextType = CancellationContext::class;
-    protected $cancellationContextDataType = '';
-    /**
-     * Required. Additional details around the subscription revocation.
-     *
-     * @param CancellationContext $cancellationContext
-     */
-    public function setCancellationContext(CancellationContext $cancellationContext)
+namespace Google\Service\AndroidPublisher {
+    class CancelSubscriptionPurchaseRequest extends \Google\Model
     {
+        protected $cancellationContextType = CancellationContext::class;
+        protected $cancellationContextDataType = '';
+        /**
+         * Required. Additional details around the subscription revocation.
+         *
+         * @param CancellationContext $cancellationContext
+         */
+        public function setCancellationContext(CancellationContext $cancellationContext)
+        {
+        }
+        /**
+         * @return CancellationContext
+         */
+        public function getCancellationContext()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CancellationContext
+     * Runtime class alias of \Google\Service\AndroidPublisher\CancelSubscriptionPurchaseRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCancellationContext()
+    class Google_Service_AndroidPublisher_CancelSubscriptionPurchaseRequest extends \Google\Service\AndroidPublisher\CancelSubscriptionPurchaseRequest
     {
     }
 }

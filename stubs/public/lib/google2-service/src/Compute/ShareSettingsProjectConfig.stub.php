@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ShareSettingsProjectConfig extends \Google\Model
-{
-    /**
-     * The project ID, should be same as the key of this project config in the
-     * parent map.
-     *
-     * @var string
-     */
-    public $projectId;
-    /**
-     * The project ID, should be same as the key of this project config in the
-     * parent map.
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
+namespace Google\Service\Compute {
+    class ShareSettingsProjectConfig extends \Google\Model
     {
+        /**
+         * The project ID, should be same as the key of this project config in the
+         * parent map.
+         *
+         * @var string
+         */
+        public $projectId;
+        /**
+         * The project ID, should be same as the key of this project config in the
+         * parent map.
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\ShareSettingsProjectConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProjectId()
+    class Google_Service_Compute_ShareSettingsProjectConfig extends \Google\Service\Compute\ShareSettingsProjectConfig
     {
     }
 }

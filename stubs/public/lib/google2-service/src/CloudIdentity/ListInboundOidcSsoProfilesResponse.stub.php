@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity;
-
-class ListInboundOidcSsoProfilesResponse extends \Google\Collection
-{
-    protected $collection_key = 'inboundOidcSsoProfiles';
-    protected $inboundOidcSsoProfilesType = InboundOidcSsoProfile::class;
-    protected $inboundOidcSsoProfilesDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of InboundOidcSsoProfiles.
-     *
-     * @param InboundOidcSsoProfile[] $inboundOidcSsoProfiles
-     */
-    public function setInboundOidcSsoProfiles($inboundOidcSsoProfiles)
+namespace Google\Service\CloudIdentity {
+    class ListInboundOidcSsoProfilesResponse extends \Google\Collection
     {
+        protected $collection_key = 'inboundOidcSsoProfiles';
+        protected $inboundOidcSsoProfilesType = InboundOidcSsoProfile::class;
+        protected $inboundOidcSsoProfilesDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of InboundOidcSsoProfiles.
+         *
+         * @param InboundOidcSsoProfile[] $inboundOidcSsoProfiles
+         */
+        public function setInboundOidcSsoProfiles($inboundOidcSsoProfiles)
+        {
+        }
+        /**
+         * @return InboundOidcSsoProfile[]
+         */
+        public function getInboundOidcSsoProfiles()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InboundOidcSsoProfile[]
+     * Runtime class alias of \Google\Service\CloudIdentity\ListInboundOidcSsoProfilesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInboundOidcSsoProfiles()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudIdentity_ListInboundOidcSsoProfilesResponse extends \Google\Service\CloudIdentity\ListInboundOidcSsoProfilesResponse
     {
     }
 }

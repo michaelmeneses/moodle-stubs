@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiUiv1beta3Schema extends \Google\Collection
-{
-    protected $collection_key = 'entityTypes';
-    /**
-     * Description of the schema.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Display name to show to users.
-     *
-     * @var string
-     */
-    public $displayName;
-    protected $entityTypesType = GoogleCloudDocumentaiUiv1beta3SchemaEntityType::class;
-    protected $entityTypesDataType = 'array';
-    /**
-     * Description of the schema.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiUiv1beta3Schema extends \Google\Collection
     {
+        protected $collection_key = 'entityTypes';
+        /**
+         * Description of the schema.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Display name to show to users.
+         *
+         * @var string
+         */
+        public $displayName;
+        protected $entityTypesType = GoogleCloudDocumentaiUiv1beta3SchemaEntityType::class;
+        protected $entityTypesDataType = 'array';
+        /**
+         * Description of the schema.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Display name to show to users.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Entity types of the schema.
+         *
+         * @param GoogleCloudDocumentaiUiv1beta3SchemaEntityType[] $entityTypes
+         */
+        public function setEntityTypes($entityTypes)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiUiv1beta3SchemaEntityType[]
+         */
+        public function getEntityTypes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3Schema registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Display name to show to users.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Entity types of the schema.
-     *
-     * @param GoogleCloudDocumentaiUiv1beta3SchemaEntityType[] $entityTypes
-     */
-    public function setEntityTypes($entityTypes)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiUiv1beta3SchemaEntityType[]
-     */
-    public function getEntityTypes()
+    class Google_Service_Document_GoogleCloudDocumentaiUiv1beta3Schema extends \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3Schema
     {
     }
 }

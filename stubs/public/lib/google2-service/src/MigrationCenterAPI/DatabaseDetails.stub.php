@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class DatabaseDetails extends \Google\Collection
-{
-    protected $collection_key = 'schemas';
-    /**
-     * Optional. The allocated storage for the database in bytes.
-     *
-     * @var string
-     */
-    public $allocatedStorageBytes;
-    /**
-     * Required. The name of the database.
-     *
-     * @var string
-     */
-    public $databaseName;
-    protected $parentDatabaseDeploymentType = DatabaseDetailsParentDatabaseDeployment::class;
-    protected $parentDatabaseDeploymentDataType = '';
-    protected $schemasType = DatabaseSchema::class;
-    protected $schemasDataType = 'array';
-    /**
-     * Optional. The allocated storage for the database in bytes.
-     *
-     * @param string $allocatedStorageBytes
-     */
-    public function setAllocatedStorageBytes($allocatedStorageBytes)
+namespace Google\Service\MigrationCenterAPI {
+    class DatabaseDetails extends \Google\Collection
     {
+        protected $collection_key = 'schemas';
+        /**
+         * Optional. The allocated storage for the database in bytes.
+         *
+         * @var string
+         */
+        public $allocatedStorageBytes;
+        /**
+         * Required. The name of the database.
+         *
+         * @var string
+         */
+        public $databaseName;
+        protected $parentDatabaseDeploymentType = DatabaseDetailsParentDatabaseDeployment::class;
+        protected $parentDatabaseDeploymentDataType = '';
+        protected $schemasType = DatabaseSchema::class;
+        protected $schemasDataType = 'array';
+        /**
+         * Optional. The allocated storage for the database in bytes.
+         *
+         * @param string $allocatedStorageBytes
+         */
+        public function setAllocatedStorageBytes($allocatedStorageBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAllocatedStorageBytes()
+        {
+        }
+        /**
+         * Required. The name of the database.
+         *
+         * @param string $databaseName
+         */
+        public function setDatabaseName($databaseName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatabaseName()
+        {
+        }
+        /**
+         * Required. The parent database deployment that contains the logical
+         * database.
+         *
+         * @param DatabaseDetailsParentDatabaseDeployment $parentDatabaseDeployment
+         */
+        public function setParentDatabaseDeployment(DatabaseDetailsParentDatabaseDeployment $parentDatabaseDeployment)
+        {
+        }
+        /**
+         * @return DatabaseDetailsParentDatabaseDeployment
+         */
+        public function getParentDatabaseDeployment()
+        {
+        }
+        /**
+         * Optional. The database schemas.
+         *
+         * @param DatabaseSchema[] $schemas
+         */
+        public function setSchemas($schemas)
+        {
+        }
+        /**
+         * @return DatabaseSchema[]
+         */
+        public function getSchemas()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\DatabaseDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllocatedStorageBytes()
-    {
-    }
-    /**
-     * Required. The name of the database.
-     *
-     * @param string $databaseName
-     */
-    public function setDatabaseName($databaseName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDatabaseName()
-    {
-    }
-    /**
-     * Required. The parent database deployment that contains the logical
-     * database.
-     *
-     * @param DatabaseDetailsParentDatabaseDeployment $parentDatabaseDeployment
-     */
-    public function setParentDatabaseDeployment(DatabaseDetailsParentDatabaseDeployment $parentDatabaseDeployment)
-    {
-    }
-    /**
-     * @return DatabaseDetailsParentDatabaseDeployment
-     */
-    public function getParentDatabaseDeployment()
-    {
-    }
-    /**
-     * Optional. The database schemas.
-     *
-     * @param DatabaseSchema[] $schemas
-     */
-    public function setSchemas($schemas)
-    {
-    }
-    /**
-     * @return DatabaseSchema[]
-     */
-    public function getSchemas()
+    class Google_Service_MigrationCenterAPI_DatabaseDetails extends \Google\Service\MigrationCenterAPI\DatabaseDetails
     {
     }
 }

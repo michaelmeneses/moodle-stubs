@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataQualitySpecPostScanActionsRecipients extends \Google\Collection
-{
-    protected $collection_key = 'emails';
-    /**
-     * Optional. The email recipients who will receive the DataQualityScan results
-     * report.
-     *
-     * @var string[]
-     */
-    public $emails;
-    /**
-     * Optional. The email recipients who will receive the DataQualityScan results
-     * report.
-     *
-     * @param string[] $emails
-     */
-    public function setEmails($emails)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataQualitySpecPostScanActionsRecipients extends \Google\Collection
     {
+        protected $collection_key = 'emails';
+        /**
+         * Optional. The email recipients who will receive the DataQualityScan results
+         * report.
+         *
+         * @var string[]
+         */
+        public $emails;
+        /**
+         * Optional. The email recipients who will receive the DataQualityScan results
+         * report.
+         *
+         * @param string[] $emails
+         */
+        public function setEmails($emails)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEmails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataQualitySpecPostScanActionsRecipients registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmails()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataQualitySpecPostScanActionsRecipients extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataQualitySpecPostScanActionsRecipients
     {
     }
 }

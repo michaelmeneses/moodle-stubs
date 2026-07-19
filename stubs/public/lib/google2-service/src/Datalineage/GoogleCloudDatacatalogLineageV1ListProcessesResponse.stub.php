@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datalineage;
-
-class GoogleCloudDatacatalogLineageV1ListProcessesResponse extends \Google\Collection
-{
-    protected $collection_key = 'processes';
-    /**
-     * The token to specify as `page_token` in the next call to get the next page.
-     * If this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $processesType = GoogleCloudDatacatalogLineageV1Process::class;
-    protected $processesDataType = 'array';
-    /**
-     * The token to specify as `page_token` in the next call to get the next page.
-     * If this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Datalineage {
+    class GoogleCloudDatacatalogLineageV1ListProcessesResponse extends \Google\Collection
     {
+        protected $collection_key = 'processes';
+        /**
+         * The token to specify as `page_token` in the next call to get the next page.
+         * If this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $processesType = GoogleCloudDatacatalogLineageV1Process::class;
+        protected $processesDataType = 'array';
+        /**
+         * The token to specify as `page_token` in the next call to get the next page.
+         * If this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The processes from the specified project and location.
+         *
+         * @param GoogleCloudDatacatalogLineageV1Process[] $processes
+         */
+        public function setProcesses($processes)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogLineageV1Process[]
+         */
+        public function getProcesses()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datalineage\GoogleCloudDatacatalogLineageV1ListProcessesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The processes from the specified project and location.
-     *
-     * @param GoogleCloudDatacatalogLineageV1Process[] $processes
-     */
-    public function setProcesses($processes)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogLineageV1Process[]
-     */
-    public function getProcesses()
+    class Google_Service_Datalineage_GoogleCloudDatacatalogLineageV1ListProcessesResponse extends \Google\Service\Datalineage\GoogleCloudDatacatalogLineageV1ListProcessesResponse
     {
     }
 }

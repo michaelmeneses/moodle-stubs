@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Transcoder;
-
-class TranscoderEmpty extends \Google\Model
-{
+namespace Google\Service\Transcoder {
+    class TranscoderEmpty extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Transcoder\TranscoderEmpty registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Transcoder_TranscoderEmpty extends \Google\Service\Transcoder\TranscoderEmpty
+    {
+    }
 }

@@ -21,120 +21,130 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for Directory (directory_v1).
- *
- * <p>
- * Admin SDK lets administrators of enterprise domains to view and manage
- * resources like user, groups etc. It also provides audit and usage reports of
- * domain.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://developers.google.com/workspace/admin/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class Directory extends \Google\Service
-{
-    /** See, add, edit, and permanently delete the printers that your organization can use with Chrome. */
-    const ADMIN_CHROME_PRINTERS = "https://www.googleapis.com/auth/admin.chrome.printers";
-    /** See the printers that your organization can use with Chrome. */
-    const ADMIN_CHROME_PRINTERS_READONLY = "https://www.googleapis.com/auth/admin.chrome.printers.readonly";
-    /** View and manage customer related information. */
-    const ADMIN_DIRECTORY_CUSTOMER = "https://www.googleapis.com/auth/admin.directory.customer";
-    /** View customer related information. */
-    const ADMIN_DIRECTORY_CUSTOMER_READONLY = "https://www.googleapis.com/auth/admin.directory.customer.readonly";
-    /** View and manage your ChromeOS devices' metadata. */
-    const ADMIN_DIRECTORY_DEVICE_CHROMEOS = "https://www.googleapis.com/auth/admin.directory.device.chromeos";
-    /** View your ChromeOS devices' metadata. */
-    const ADMIN_DIRECTORY_DEVICE_CHROMEOS_READONLY = "https://www.googleapis.com/auth/admin.directory.device.chromeos.readonly";
-    /** View and manage your mobile devices' metadata. */
-    const ADMIN_DIRECTORY_DEVICE_MOBILE = "https://www.googleapis.com/auth/admin.directory.device.mobile";
-    /** Manage your mobile devices by performing administrative tasks. */
-    const ADMIN_DIRECTORY_DEVICE_MOBILE_ACTION = "https://www.googleapis.com/auth/admin.directory.device.mobile.action";
-    /** View your mobile devices' metadata. */
-    const ADMIN_DIRECTORY_DEVICE_MOBILE_READONLY = "https://www.googleapis.com/auth/admin.directory.device.mobile.readonly";
-    /** View and manage the provisioning of domains for your customers. */
-    const ADMIN_DIRECTORY_DOMAIN = "https://www.googleapis.com/auth/admin.directory.domain";
-    /** View domains related to your customers. */
-    const ADMIN_DIRECTORY_DOMAIN_READONLY = "https://www.googleapis.com/auth/admin.directory.domain.readonly";
-    /** View and manage the provisioning of groups on your domain. */
-    const ADMIN_DIRECTORY_GROUP = "https://www.googleapis.com/auth/admin.directory.group";
-    /** View and manage group subscriptions on your domain. */
-    const ADMIN_DIRECTORY_GROUP_MEMBER = "https://www.googleapis.com/auth/admin.directory.group.member";
-    /** View group subscriptions on your domain. */
-    const ADMIN_DIRECTORY_GROUP_MEMBER_READONLY = "https://www.googleapis.com/auth/admin.directory.group.member.readonly";
-    /** View groups on your domain. */
-    const ADMIN_DIRECTORY_GROUP_READONLY = "https://www.googleapis.com/auth/admin.directory.group.readonly";
-    /** View and manage organization units on your domain. */
-    const ADMIN_DIRECTORY_ORGUNIT = "https://www.googleapis.com/auth/admin.directory.orgunit";
-    /** View organization units on your domain. */
-    const ADMIN_DIRECTORY_ORGUNIT_READONLY = "https://www.googleapis.com/auth/admin.directory.orgunit.readonly";
-    /** View and manage the provisioning of calendar resources on your domain. */
-    const ADMIN_DIRECTORY_RESOURCE_CALENDAR = "https://www.googleapis.com/auth/admin.directory.resource.calendar";
-    /** View calendar resources on your domain. */
-    const ADMIN_DIRECTORY_RESOURCE_CALENDAR_READONLY = "https://www.googleapis.com/auth/admin.directory.resource.calendar.readonly";
-    /** Manage delegated admin roles for your domain. */
-    const ADMIN_DIRECTORY_ROLEMANAGEMENT = "https://www.googleapis.com/auth/admin.directory.rolemanagement";
-    /** View delegated admin roles for your domain. */
-    const ADMIN_DIRECTORY_ROLEMANAGEMENT_READONLY = "https://www.googleapis.com/auth/admin.directory.rolemanagement.readonly";
-    /** View and manage the provisioning of users on your domain. */
-    const ADMIN_DIRECTORY_USER = "https://www.googleapis.com/auth/admin.directory.user";
-    /** View and manage user aliases on your domain. */
-    const ADMIN_DIRECTORY_USER_ALIAS = "https://www.googleapis.com/auth/admin.directory.user.alias";
-    /** View user aliases on your domain. */
-    const ADMIN_DIRECTORY_USER_ALIAS_READONLY = "https://www.googleapis.com/auth/admin.directory.user.alias.readonly";
-    /** See info about users on your domain. */
-    const ADMIN_DIRECTORY_USER_READONLY = "https://www.googleapis.com/auth/admin.directory.user.readonly";
-    /** Manage data access permissions for users on your domain. */
-    const ADMIN_DIRECTORY_USER_SECURITY = "https://www.googleapis.com/auth/admin.directory.user.security";
-    /** View and manage the provisioning of user schemas on your domain. */
-    const ADMIN_DIRECTORY_USERSCHEMA = "https://www.googleapis.com/auth/admin.directory.userschema";
-    /** View user schemas on your domain. */
-    const ADMIN_DIRECTORY_USERSCHEMA_READONLY = "https://www.googleapis.com/auth/admin.directory.userschema.readonly";
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    public $asps;
-    public $channels;
-    public $chromeosdevices;
-    public $customer_devices_chromeos;
-    public $customer_devices_chromeos_commands;
-    public $customers;
-    public $customers_chrome_printServers;
-    public $customers_chrome_printers;
-    public $domainAliases;
-    public $domains;
-    public $groups;
-    public $groups_aliases;
-    public $members;
-    public $mobiledevices;
-    public $orgunits;
-    public $privileges;
-    public $resources_buildings;
-    public $resources_calendars;
-    public $resources_features;
-    public $roleAssignments;
-    public $roles;
-    public $schemas;
-    public $tokens;
-    public $twoStepVerification;
-    public $users;
-    public $users_aliases;
-    public $users_photos;
-    public $verificationCodes;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the Directory service.
+     * Service definition for Directory (directory_v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Admin SDK lets administrators of enterprise domains to view and manage
+     * resources like user, groups etc. It also provides audit and usage reports of
+     * domain.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://developers.google.com/workspace/admin/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class Directory extends \Google\Service
+    {
+        /** See, add, edit, and permanently delete the printers that your organization can use with Chrome. */
+        const ADMIN_CHROME_PRINTERS = "https://www.googleapis.com/auth/admin.chrome.printers";
+        /** See the printers that your organization can use with Chrome. */
+        const ADMIN_CHROME_PRINTERS_READONLY = "https://www.googleapis.com/auth/admin.chrome.printers.readonly";
+        /** View and manage customer related information. */
+        const ADMIN_DIRECTORY_CUSTOMER = "https://www.googleapis.com/auth/admin.directory.customer";
+        /** View customer related information. */
+        const ADMIN_DIRECTORY_CUSTOMER_READONLY = "https://www.googleapis.com/auth/admin.directory.customer.readonly";
+        /** View and manage your ChromeOS devices' metadata. */
+        const ADMIN_DIRECTORY_DEVICE_CHROMEOS = "https://www.googleapis.com/auth/admin.directory.device.chromeos";
+        /** View your ChromeOS devices' metadata. */
+        const ADMIN_DIRECTORY_DEVICE_CHROMEOS_READONLY = "https://www.googleapis.com/auth/admin.directory.device.chromeos.readonly";
+        /** View and manage your mobile devices' metadata. */
+        const ADMIN_DIRECTORY_DEVICE_MOBILE = "https://www.googleapis.com/auth/admin.directory.device.mobile";
+        /** Manage your mobile devices by performing administrative tasks. */
+        const ADMIN_DIRECTORY_DEVICE_MOBILE_ACTION = "https://www.googleapis.com/auth/admin.directory.device.mobile.action";
+        /** View your mobile devices' metadata. */
+        const ADMIN_DIRECTORY_DEVICE_MOBILE_READONLY = "https://www.googleapis.com/auth/admin.directory.device.mobile.readonly";
+        /** View and manage the provisioning of domains for your customers. */
+        const ADMIN_DIRECTORY_DOMAIN = "https://www.googleapis.com/auth/admin.directory.domain";
+        /** View domains related to your customers. */
+        const ADMIN_DIRECTORY_DOMAIN_READONLY = "https://www.googleapis.com/auth/admin.directory.domain.readonly";
+        /** View and manage the provisioning of groups on your domain. */
+        const ADMIN_DIRECTORY_GROUP = "https://www.googleapis.com/auth/admin.directory.group";
+        /** View and manage group subscriptions on your domain. */
+        const ADMIN_DIRECTORY_GROUP_MEMBER = "https://www.googleapis.com/auth/admin.directory.group.member";
+        /** View group subscriptions on your domain. */
+        const ADMIN_DIRECTORY_GROUP_MEMBER_READONLY = "https://www.googleapis.com/auth/admin.directory.group.member.readonly";
+        /** View groups on your domain. */
+        const ADMIN_DIRECTORY_GROUP_READONLY = "https://www.googleapis.com/auth/admin.directory.group.readonly";
+        /** View and manage organization units on your domain. */
+        const ADMIN_DIRECTORY_ORGUNIT = "https://www.googleapis.com/auth/admin.directory.orgunit";
+        /** View organization units on your domain. */
+        const ADMIN_DIRECTORY_ORGUNIT_READONLY = "https://www.googleapis.com/auth/admin.directory.orgunit.readonly";
+        /** View and manage the provisioning of calendar resources on your domain. */
+        const ADMIN_DIRECTORY_RESOURCE_CALENDAR = "https://www.googleapis.com/auth/admin.directory.resource.calendar";
+        /** View calendar resources on your domain. */
+        const ADMIN_DIRECTORY_RESOURCE_CALENDAR_READONLY = "https://www.googleapis.com/auth/admin.directory.resource.calendar.readonly";
+        /** Manage delegated admin roles for your domain. */
+        const ADMIN_DIRECTORY_ROLEMANAGEMENT = "https://www.googleapis.com/auth/admin.directory.rolemanagement";
+        /** View delegated admin roles for your domain. */
+        const ADMIN_DIRECTORY_ROLEMANAGEMENT_READONLY = "https://www.googleapis.com/auth/admin.directory.rolemanagement.readonly";
+        /** View and manage the provisioning of users on your domain. */
+        const ADMIN_DIRECTORY_USER = "https://www.googleapis.com/auth/admin.directory.user";
+        /** View and manage user aliases on your domain. */
+        const ADMIN_DIRECTORY_USER_ALIAS = "https://www.googleapis.com/auth/admin.directory.user.alias";
+        /** View user aliases on your domain. */
+        const ADMIN_DIRECTORY_USER_ALIAS_READONLY = "https://www.googleapis.com/auth/admin.directory.user.alias.readonly";
+        /** See info about users on your domain. */
+        const ADMIN_DIRECTORY_USER_READONLY = "https://www.googleapis.com/auth/admin.directory.user.readonly";
+        /** Manage data access permissions for users on your domain. */
+        const ADMIN_DIRECTORY_USER_SECURITY = "https://www.googleapis.com/auth/admin.directory.user.security";
+        /** View and manage the provisioning of user schemas on your domain. */
+        const ADMIN_DIRECTORY_USERSCHEMA = "https://www.googleapis.com/auth/admin.directory.userschema";
+        /** View user schemas on your domain. */
+        const ADMIN_DIRECTORY_USERSCHEMA_READONLY = "https://www.googleapis.com/auth/admin.directory.userschema.readonly";
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        public $asps;
+        public $channels;
+        public $chromeosdevices;
+        public $customer_devices_chromeos;
+        public $customer_devices_chromeos_commands;
+        public $customers;
+        public $customers_chrome_printServers;
+        public $customers_chrome_printers;
+        public $domainAliases;
+        public $domains;
+        public $groups;
+        public $groups_aliases;
+        public $members;
+        public $mobiledevices;
+        public $orgunits;
+        public $privileges;
+        public $resources_buildings;
+        public $resources_calendars;
+        public $resources_features;
+        public $roleAssignments;
+        public $roles;
+        public $schemas;
+        public $tokens;
+        public $twoStepVerification;
+        public $users;
+        public $users_aliases;
+        public $users_photos;
+        public $verificationCodes;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the Directory service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Directory registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Directory extends \Google\Service\Directory
     {
     }
 }

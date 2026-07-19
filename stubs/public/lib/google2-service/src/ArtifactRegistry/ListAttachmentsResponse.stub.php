@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class ListAttachmentsResponse extends \Google\Collection
-{
-    protected $collection_key = 'attachments';
-    protected $attachmentsType = Attachment::class;
-    protected $attachmentsDataType = 'array';
-    /**
-     * The token to retrieve the next page of attachments, or empty if there are
-     * no more attachments to return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The attachments returned.
-     *
-     * @param Attachment[] $attachments
-     */
-    public function setAttachments($attachments)
+namespace Google\Service\ArtifactRegistry {
+    class ListAttachmentsResponse extends \Google\Collection
     {
+        protected $collection_key = 'attachments';
+        protected $attachmentsType = Attachment::class;
+        protected $attachmentsDataType = 'array';
+        /**
+         * The token to retrieve the next page of attachments, or empty if there are
+         * no more attachments to return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The attachments returned.
+         *
+         * @param Attachment[] $attachments
+         */
+        public function setAttachments($attachments)
+        {
+        }
+        /**
+         * @return Attachment[]
+         */
+        public function getAttachments()
+        {
+        }
+        /**
+         * The token to retrieve the next page of attachments, or empty if there are
+         * no more attachments to return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Attachment[]
+     * Runtime class alias of \Google\Service\ArtifactRegistry\ListAttachmentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttachments()
-    {
-    }
-    /**
-     * The token to retrieve the next page of attachments, or empty if there are
-     * no more attachments to return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_ArtifactRegistry_ListAttachmentsResponse extends \Google\Service\ArtifactRegistry\ListAttachmentsResponse
     {
     }
 }

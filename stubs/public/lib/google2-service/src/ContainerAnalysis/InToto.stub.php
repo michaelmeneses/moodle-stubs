@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class InToto extends \Google\Collection
-{
-    protected $collection_key = 'signingKeys';
-    public $expectedCommand;
-    protected $expectedMaterialsType = ArtifactRule::class;
-    protected $expectedMaterialsDataType = 'array';
-    protected $expectedProductsType = ArtifactRule::class;
-    protected $expectedProductsDataType = 'array';
-    protected $signingKeysType = SigningKey::class;
-    protected $signingKeysDataType = 'array';
-    public $stepName;
-    public $threshold;
-    public function setExpectedCommand($expectedCommand)
+namespace Google\Service\ContainerAnalysis {
+    class InToto extends \Google\Collection
     {
+        protected $collection_key = 'signingKeys';
+        public $expectedCommand;
+        protected $expectedMaterialsType = ArtifactRule::class;
+        protected $expectedMaterialsDataType = 'array';
+        protected $expectedProductsType = ArtifactRule::class;
+        protected $expectedProductsDataType = 'array';
+        protected $signingKeysType = SigningKey::class;
+        protected $signingKeysDataType = 'array';
+        public $stepName;
+        public $threshold;
+        public function setExpectedCommand($expectedCommand)
+        {
+        }
+        public function getExpectedCommand()
+        {
+        }
+        /**
+         * @param ArtifactRule[]
+         */
+        public function setExpectedMaterials($expectedMaterials)
+        {
+        }
+        /**
+         * @return ArtifactRule[]
+         */
+        public function getExpectedMaterials()
+        {
+        }
+        /**
+         * @param ArtifactRule[]
+         */
+        public function setExpectedProducts($expectedProducts)
+        {
+        }
+        /**
+         * @return ArtifactRule[]
+         */
+        public function getExpectedProducts()
+        {
+        }
+        /**
+         * @param SigningKey[]
+         */
+        public function setSigningKeys($signingKeys)
+        {
+        }
+        /**
+         * @return SigningKey[]
+         */
+        public function getSigningKeys()
+        {
+        }
+        public function setStepName($stepName)
+        {
+        }
+        public function getStepName()
+        {
+        }
+        public function setThreshold($threshold)
+        {
+        }
+        public function getThreshold()
+        {
+        }
     }
-    public function getExpectedCommand()
-    {
-    }
+}
+namespace {
     /**
-     * @param ArtifactRule[]
+     * Runtime class alias of \Google\Service\ContainerAnalysis\InToto registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setExpectedMaterials($expectedMaterials)
-    {
-    }
-    /**
-     * @return ArtifactRule[]
-     */
-    public function getExpectedMaterials()
-    {
-    }
-    /**
-     * @param ArtifactRule[]
-     */
-    public function setExpectedProducts($expectedProducts)
-    {
-    }
-    /**
-     * @return ArtifactRule[]
-     */
-    public function getExpectedProducts()
-    {
-    }
-    /**
-     * @param SigningKey[]
-     */
-    public function setSigningKeys($signingKeys)
-    {
-    }
-    /**
-     * @return SigningKey[]
-     */
-    public function getSigningKeys()
-    {
-    }
-    public function setStepName($stepName)
-    {
-    }
-    public function getStepName()
-    {
-    }
-    public function setThreshold($threshold)
-    {
-    }
-    public function getThreshold()
+    class Google_Service_ContainerAnalysis_InToto extends \Google\Service\ContainerAnalysis\InToto
     {
     }
 }

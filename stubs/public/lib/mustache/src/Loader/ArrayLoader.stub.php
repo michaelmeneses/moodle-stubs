@@ -16,6 +16,8 @@
  */
 namespace Mustache\Loader;
 
+use Mustache\Exception\UnknownTemplateException;
+use Mustache\Loader;
 /**
  * Mustache Template array Loader implementation.
  *

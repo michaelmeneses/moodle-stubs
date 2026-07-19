@@ -21,29 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects\Resource;
-
-/**
- * The "privateContent" collection of methods.
- * Typical usage is:
- *  <code>
- *   $walletobjectsService = new Google\Service\Walletobjects(...);
- *   $privateContent = $walletobjectsService->walletobjects_v1_privateContent;
- *  </code>
- */
-class WalletobjectsV1PrivateContent extends \Google\Service\Resource
-{
+namespace Google\Service\Walletobjects\Resource {
+    use Google\Service\Walletobjects\SetPassUpdateNoticeRequest;
+    use Google\Service\Walletobjects\SetPassUpdateNoticeResponse;
     /**
-     * Provide Google with information about awaiting private pass update. This will
-     * allow Google to provide the update notification to the device that currently
-     * holds this pass. (privateContent.setPassUpdateNotice)
-     *
-     * @param SetPassUpdateNoticeRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SetPassUpdateNoticeResponse
-     * @throws \Google\Service\Exception
+     * The "privateContent" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $walletobjectsService = new Google\Service\Walletobjects(...);
+     *   $privateContent = $walletobjectsService->walletobjects_v1_privateContent;
+     *  </code>
      */
-    public function setPassUpdateNotice(SetPassUpdateNoticeRequest $postBody, $optParams = [])
+    class WalletobjectsV1PrivateContent extends \Google\Service\Resource
+    {
+        /**
+         * Provide Google with information about awaiting private pass update. This will
+         * allow Google to provide the update notification to the device that currently
+         * holds this pass. (privateContent.setPassUpdateNotice)
+         *
+         * @param SetPassUpdateNoticeRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SetPassUpdateNoticeResponse
+         * @throws \Google\Service\Exception
+         */
+        public function setPassUpdateNotice(SetPassUpdateNoticeRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Walletobjects\Resource\WalletobjectsV1PrivateContent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Walletobjects_Resource_WalletobjectsV1PrivateContent extends \Google\Service\Walletobjects\Resource\WalletobjectsV1PrivateContent
     {
     }
 }

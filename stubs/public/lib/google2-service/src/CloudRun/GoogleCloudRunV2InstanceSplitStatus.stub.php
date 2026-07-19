@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunV2InstanceSplitStatus extends \Google\Model
-{
-    /**
-     * Unspecified instance allocation type.
-     */
-    public const TYPE_INSTANCE_SPLIT_ALLOCATION_TYPE_UNSPECIFIED = 'INSTANCE_SPLIT_ALLOCATION_TYPE_UNSPECIFIED';
-    /**
-     * Allocates instances to the Service's latest ready Revision.
-     */
-    public const TYPE_INSTANCE_SPLIT_ALLOCATION_TYPE_LATEST = 'INSTANCE_SPLIT_ALLOCATION_TYPE_LATEST';
-    /**
-     * Allocates instances to a Revision by name.
-     */
-    public const TYPE_INSTANCE_SPLIT_ALLOCATION_TYPE_REVISION = 'INSTANCE_SPLIT_ALLOCATION_TYPE_REVISION';
-    /**
-     * Specifies percent of the instance split to this Revision.
-     *
-     * @var int
-     */
-    public $percent;
-    /**
-     * Revision to which this instance split is assigned.
-     *
-     * @var string
-     */
-    public $revision;
-    /**
-     * The allocation type for this instance split.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Specifies percent of the instance split to this Revision.
-     *
-     * @param int $percent
-     */
-    public function setPercent($percent)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunV2InstanceSplitStatus extends \Google\Model
     {
+        /**
+         * Unspecified instance allocation type.
+         */
+        public const TYPE_INSTANCE_SPLIT_ALLOCATION_TYPE_UNSPECIFIED = 'INSTANCE_SPLIT_ALLOCATION_TYPE_UNSPECIFIED';
+        /**
+         * Allocates instances to the Service's latest ready Revision.
+         */
+        public const TYPE_INSTANCE_SPLIT_ALLOCATION_TYPE_LATEST = 'INSTANCE_SPLIT_ALLOCATION_TYPE_LATEST';
+        /**
+         * Allocates instances to a Revision by name.
+         */
+        public const TYPE_INSTANCE_SPLIT_ALLOCATION_TYPE_REVISION = 'INSTANCE_SPLIT_ALLOCATION_TYPE_REVISION';
+        /**
+         * Specifies percent of the instance split to this Revision.
+         *
+         * @var int
+         */
+        public $percent;
+        /**
+         * Revision to which this instance split is assigned.
+         *
+         * @var string
+         */
+        public $revision;
+        /**
+         * The allocation type for this instance split.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Specifies percent of the instance split to this Revision.
+         *
+         * @param int $percent
+         */
+        public function setPercent($percent)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPercent()
+        {
+        }
+        /**
+         * Revision to which this instance split is assigned.
+         *
+         * @param string $revision
+         */
+        public function setRevision($revision)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRevision()
+        {
+        }
+        /**
+         * The allocation type for this instance split.
+         *
+         * Accepted values: INSTANCE_SPLIT_ALLOCATION_TYPE_UNSPECIFIED,
+         * INSTANCE_SPLIT_ALLOCATION_TYPE_LATEST,
+         * INSTANCE_SPLIT_ALLOCATION_TYPE_REVISION
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunV2InstanceSplitStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPercent()
-    {
-    }
-    /**
-     * Revision to which this instance split is assigned.
-     *
-     * @param string $revision
-     */
-    public function setRevision($revision)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRevision()
-    {
-    }
-    /**
-     * The allocation type for this instance split.
-     *
-     * Accepted values: INSTANCE_SPLIT_ALLOCATION_TYPE_UNSPECIFIED,
-     * INSTANCE_SPLIT_ALLOCATION_TYPE_LATEST,
-     * INSTANCE_SPLIT_ALLOCATION_TYPE_REVISION
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_CloudRun_GoogleCloudRunV2InstanceSplitStatus extends \Google\Service\CloudRun\GoogleCloudRunV2InstanceSplitStatus
     {
     }
 }

@@ -21,125 +21,134 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Batch;
-
-class AgentInfo extends \Google\Collection
-{
-    /**
-     * Unspecified state.
-     */
-    public const STATE_AGENT_STATE_UNSPECIFIED = 'AGENT_STATE_UNSPECIFIED';
-    /**
-     * The agent is starting on the VM instance.
-     */
-    public const STATE_AGENT_STARTING = 'AGENT_STARTING';
-    /**
-     * The agent is running. The agent in the RUNNING state can never go back to
-     * the STARTING state.
-     */
-    public const STATE_AGENT_RUNNING = 'AGENT_RUNNING';
-    /**
-     * The agent has stopped, either on request or due to a failure.
-     */
-    public const STATE_AGENT_STOPPED = 'AGENT_STOPPED';
-    protected $collection_key = 'tasks';
-    /**
-     * Optional. The assigned Job ID
-     *
-     * @var string
-     */
-    public $jobId;
-    /**
-     * When the AgentInfo is generated.
-     *
-     * @var string
-     */
-    public $reportTime;
-    /**
-     * Agent state.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * The assigned task group ID.
-     *
-     * @var string
-     */
-    public $taskGroupId;
-    protected $tasksType = AgentTaskInfo::class;
-    protected $tasksDataType = 'array';
-    /**
-     * Optional. The assigned Job ID
-     *
-     * @param string $jobId
-     */
-    public function setJobId($jobId)
+namespace Google\Service\Batch {
+    class AgentInfo extends \Google\Collection
     {
+        /**
+         * Unspecified state.
+         */
+        public const STATE_AGENT_STATE_UNSPECIFIED = 'AGENT_STATE_UNSPECIFIED';
+        /**
+         * The agent is starting on the VM instance.
+         */
+        public const STATE_AGENT_STARTING = 'AGENT_STARTING';
+        /**
+         * The agent is running. The agent in the RUNNING state can never go back to
+         * the STARTING state.
+         */
+        public const STATE_AGENT_RUNNING = 'AGENT_RUNNING';
+        /**
+         * The agent has stopped, either on request or due to a failure.
+         */
+        public const STATE_AGENT_STOPPED = 'AGENT_STOPPED';
+        protected $collection_key = 'tasks';
+        /**
+         * Optional. The assigned Job ID
+         *
+         * @var string
+         */
+        public $jobId;
+        /**
+         * When the AgentInfo is generated.
+         *
+         * @var string
+         */
+        public $reportTime;
+        /**
+         * Agent state.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * The assigned task group ID.
+         *
+         * @var string
+         */
+        public $taskGroupId;
+        protected $tasksType = AgentTaskInfo::class;
+        protected $tasksDataType = 'array';
+        /**
+         * Optional. The assigned Job ID
+         *
+         * @param string $jobId
+         */
+        public function setJobId($jobId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJobId()
+        {
+        }
+        /**
+         * When the AgentInfo is generated.
+         *
+         * @param string $reportTime
+         */
+        public function setReportTime($reportTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReportTime()
+        {
+        }
+        /**
+         * Agent state.
+         *
+         * Accepted values: AGENT_STATE_UNSPECIFIED, AGENT_STARTING, AGENT_RUNNING,
+         * AGENT_STOPPED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * The assigned task group ID.
+         *
+         * @param string $taskGroupId
+         */
+        public function setTaskGroupId($taskGroupId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTaskGroupId()
+        {
+        }
+        /**
+         * Task Info.
+         *
+         * @param AgentTaskInfo[] $tasks
+         */
+        public function setTasks($tasks)
+        {
+        }
+        /**
+         * @return AgentTaskInfo[]
+         */
+        public function getTasks()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Batch\AgentInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJobId()
-    {
-    }
-    /**
-     * When the AgentInfo is generated.
-     *
-     * @param string $reportTime
-     */
-    public function setReportTime($reportTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReportTime()
-    {
-    }
-    /**
-     * Agent state.
-     *
-     * Accepted values: AGENT_STATE_UNSPECIFIED, AGENT_STARTING, AGENT_RUNNING,
-     * AGENT_STOPPED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * The assigned task group ID.
-     *
-     * @param string $taskGroupId
-     */
-    public function setTaskGroupId($taskGroupId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTaskGroupId()
-    {
-    }
-    /**
-     * Task Info.
-     *
-     * @param AgentTaskInfo[] $tasks
-     */
-    public function setTasks($tasks)
-    {
-    }
-    /**
-     * @return AgentTaskInfo[]
-     */
-    public function getTasks()
+    class Google_Service_Batch_AgentInfo extends \Google\Service\Batch\AgentInfo
     {
     }
 }

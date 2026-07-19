@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0ResourcesCampaignNetworkSettings extends \Google\Model
-{
-    /**
-     * Whether ads will be served on specified placements in the Google Display
-     * Network. Placements are specified using the Placement criterion.
-     *
-     * @var bool
-     */
-    public $targetContentNetwork;
-    /**
-     * Whether ads will be served with google.com search results.
-     *
-     * @var bool
-     */
-    public $targetGoogleSearch;
-    /**
-     * Whether ads will be served on the Google Partner Network. This is available
-     * only to some select Google partner accounts.
-     *
-     * @var bool
-     */
-    public $targetPartnerSearchNetwork;
-    /**
-     * Whether ads will be served on partner sites in the Google Search Network
-     * (requires `target_google_search` to also be `true`).
-     *
-     * @var bool
-     */
-    public $targetSearchNetwork;
-    /**
-     * Whether ads will be served on specified placements in the Google Display
-     * Network. Placements are specified using the Placement criterion.
-     *
-     * @param bool $targetContentNetwork
-     */
-    public function setTargetContentNetwork($targetContentNetwork)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0ResourcesCampaignNetworkSettings extends \Google\Model
     {
+        /**
+         * Whether ads will be served on specified placements in the Google Display
+         * Network. Placements are specified using the Placement criterion.
+         *
+         * @var bool
+         */
+        public $targetContentNetwork;
+        /**
+         * Whether ads will be served with google.com search results.
+         *
+         * @var bool
+         */
+        public $targetGoogleSearch;
+        /**
+         * Whether ads will be served on the Google Partner Network. This is available
+         * only to some select Google partner accounts.
+         *
+         * @var bool
+         */
+        public $targetPartnerSearchNetwork;
+        /**
+         * Whether ads will be served on partner sites in the Google Search Network
+         * (requires `target_google_search` to also be `true`).
+         *
+         * @var bool
+         */
+        public $targetSearchNetwork;
+        /**
+         * Whether ads will be served on specified placements in the Google Display
+         * Network. Placements are specified using the Placement criterion.
+         *
+         * @param bool $targetContentNetwork
+         */
+        public function setTargetContentNetwork($targetContentNetwork)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getTargetContentNetwork()
+        {
+        }
+        /**
+         * Whether ads will be served with google.com search results.
+         *
+         * @param bool $targetGoogleSearch
+         */
+        public function setTargetGoogleSearch($targetGoogleSearch)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getTargetGoogleSearch()
+        {
+        }
+        /**
+         * Whether ads will be served on the Google Partner Network. This is available
+         * only to some select Google partner accounts.
+         *
+         * @param bool $targetPartnerSearchNetwork
+         */
+        public function setTargetPartnerSearchNetwork($targetPartnerSearchNetwork)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getTargetPartnerSearchNetwork()
+        {
+        }
+        /**
+         * Whether ads will be served on partner sites in the Google Search Network
+         * (requires `target_google_search` to also be `true`).
+         *
+         * @param bool $targetSearchNetwork
+         */
+        public function setTargetSearchNetwork($targetSearchNetwork)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getTargetSearchNetwork()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesCampaignNetworkSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTargetContentNetwork()
-    {
-    }
-    /**
-     * Whether ads will be served with google.com search results.
-     *
-     * @param bool $targetGoogleSearch
-     */
-    public function setTargetGoogleSearch($targetGoogleSearch)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getTargetGoogleSearch()
-    {
-    }
-    /**
-     * Whether ads will be served on the Google Partner Network. This is available
-     * only to some select Google partner accounts.
-     *
-     * @param bool $targetPartnerSearchNetwork
-     */
-    public function setTargetPartnerSearchNetwork($targetPartnerSearchNetwork)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getTargetPartnerSearchNetwork()
-    {
-    }
-    /**
-     * Whether ads will be served on partner sites in the Google Search Network
-     * (requires `target_google_search` to also be `true`).
-     *
-     * @param bool $targetSearchNetwork
-     */
-    public function setTargetSearchNetwork($targetSearchNetwork)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getTargetSearchNetwork()
+    class Google_Service_SA360_GoogleAdsSearchads360V0ResourcesCampaignNetworkSettings extends \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesCampaignNetworkSettings
     {
     }
 }

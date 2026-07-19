@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedAssistantAnnotationData extends \Google\Model
-{
-    protected $suggestionType = AppsDynamiteSharedAssistantSuggestion::class;
-    protected $suggestionDataType = '';
-    protected $unfulfillableType = AppsDynamiteSharedAssistantUnfulfillableRequest::class;
-    protected $unfulfillableDataType = '';
-    /**
-     * @param AppsDynamiteSharedAssistantSuggestion
-     */
-    public function setSuggestion(AppsDynamiteSharedAssistantSuggestion $suggestion)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedAssistantAnnotationData extends \Google\Model
     {
+        protected $suggestionType = AppsDynamiteSharedAssistantSuggestion::class;
+        protected $suggestionDataType = '';
+        protected $unfulfillableType = AppsDynamiteSharedAssistantUnfulfillableRequest::class;
+        protected $unfulfillableDataType = '';
+        /**
+         * @param AppsDynamiteSharedAssistantSuggestion
+         */
+        public function setSuggestion(AppsDynamiteSharedAssistantSuggestion $suggestion)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedAssistantSuggestion
+         */
+        public function getSuggestion()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedAssistantUnfulfillableRequest
+         */
+        public function setUnfulfillable(AppsDynamiteSharedAssistantUnfulfillableRequest $unfulfillable)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedAssistantUnfulfillableRequest
+         */
+        public function getUnfulfillable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteSharedAssistantSuggestion
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedAssistantAnnotationData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSuggestion()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedAssistantUnfulfillableRequest
-     */
-    public function setUnfulfillable(AppsDynamiteSharedAssistantUnfulfillableRequest $unfulfillable)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedAssistantUnfulfillableRequest
-     */
-    public function getUnfulfillable()
+    class Google_Service_CloudSearch_AppsDynamiteSharedAssistantAnnotationData extends \Google\Service\CloudSearch\AppsDynamiteSharedAssistantAnnotationData
     {
     }
 }

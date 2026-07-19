@@ -21,226 +21,235 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class DbSystem extends \Google\Model
-{
-    /**
-     * Output only. The date and time that the DbSystem was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Required. The display name for the System db. The name does not have to be
-     * unique within your project.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. The ID of the subscription entitlement associated with the
-     * DbSystem
-     *
-     * @var string
-     */
-    public $entitlementId;
-    /**
-     * Optional. The GCP Oracle zone where Oracle DbSystem is hosted. Example: us-
-     * east4-b-r2. If not specified, the system will pick a zone based on
-     * availability.
-     *
-     * @var string
-     */
-    public $gcpOracleZone;
-    /**
-     * Optional. The labels or tags associated with the DbSystem.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Identifier. The name of the DbSystem resource in the following format:
-     * projects/{project}/locations/{region}/dbSystems/{db_system}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. HTTPS link to OCI resources exposed to Customer via UI
-     * Interface.
-     *
-     * @var string
-     */
-    public $ociUrl;
-    /**
-     * Optional. The name of the OdbNetwork associated with the DbSystem. Format:
-     * projects/{project}/locations/{location}/odbNetworks/{odb_network} It is
-     * optional but if specified, this should match the parent ODBNetwork of the
-     * OdbSubnet.
-     *
-     * @var string
-     */
-    public $odbNetwork;
-    /**
-     * Required. The name of the OdbSubnet associated with the DbSystem for IP
-     * allocation. Format: projects/{project}/locations/{location}/odbNetworks/{od
-     * b_network}/odbSubnets/{odb_subnet}
-     *
-     * @var string
-     */
-    public $odbSubnet;
-    protected $propertiesType = DbSystemProperties::class;
-    protected $propertiesDataType = '';
-    /**
-     * Output only. The date and time that the DbSystem was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\OracleDatabase {
+    class DbSystem extends \Google\Model
     {
+        /**
+         * Output only. The date and time that the DbSystem was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Required. The display name for the System db. The name does not have to be
+         * unique within your project.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. The ID of the subscription entitlement associated with the
+         * DbSystem
+         *
+         * @var string
+         */
+        public $entitlementId;
+        /**
+         * Optional. The GCP Oracle zone where Oracle DbSystem is hosted. Example: us-
+         * east4-b-r2. If not specified, the system will pick a zone based on
+         * availability.
+         *
+         * @var string
+         */
+        public $gcpOracleZone;
+        /**
+         * Optional. The labels or tags associated with the DbSystem.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Identifier. The name of the DbSystem resource in the following format:
+         * projects/{project}/locations/{region}/dbSystems/{db_system}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. HTTPS link to OCI resources exposed to Customer via UI
+         * Interface.
+         *
+         * @var string
+         */
+        public $ociUrl;
+        /**
+         * Optional. The name of the OdbNetwork associated with the DbSystem. Format:
+         * projects/{project}/locations/{location}/odbNetworks/{odb_network} It is
+         * optional but if specified, this should match the parent ODBNetwork of the
+         * OdbSubnet.
+         *
+         * @var string
+         */
+        public $odbNetwork;
+        /**
+         * Required. The name of the OdbSubnet associated with the DbSystem for IP
+         * allocation. Format: projects/{project}/locations/{location}/odbNetworks/{od
+         * b_network}/odbSubnets/{odb_subnet}
+         *
+         * @var string
+         */
+        public $odbSubnet;
+        protected $propertiesType = DbSystemProperties::class;
+        protected $propertiesDataType = '';
+        /**
+         * Output only. The date and time that the DbSystem was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Required. The display name for the System db. The name does not have to be
+         * unique within your project.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. The ID of the subscription entitlement associated with the
+         * DbSystem
+         *
+         * @param string $entitlementId
+         */
+        public function setEntitlementId($entitlementId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEntitlementId()
+        {
+        }
+        /**
+         * Optional. The GCP Oracle zone where Oracle DbSystem is hosted. Example: us-
+         * east4-b-r2. If not specified, the system will pick a zone based on
+         * availability.
+         *
+         * @param string $gcpOracleZone
+         */
+        public function setGcpOracleZone($gcpOracleZone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcpOracleZone()
+        {
+        }
+        /**
+         * Optional. The labels or tags associated with the DbSystem.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Identifier. The name of the DbSystem resource in the following format:
+         * projects/{project}/locations/{region}/dbSystems/{db_system}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. HTTPS link to OCI resources exposed to Customer via UI
+         * Interface.
+         *
+         * @param string $ociUrl
+         */
+        public function setOciUrl($ociUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOciUrl()
+        {
+        }
+        /**
+         * Optional. The name of the OdbNetwork associated with the DbSystem. Format:
+         * projects/{project}/locations/{location}/odbNetworks/{odb_network} It is
+         * optional but if specified, this should match the parent ODBNetwork of the
+         * OdbSubnet.
+         *
+         * @param string $odbNetwork
+         */
+        public function setOdbNetwork($odbNetwork)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOdbNetwork()
+        {
+        }
+        /**
+         * Required. The name of the OdbSubnet associated with the DbSystem for IP
+         * allocation. Format: projects/{project}/locations/{location}/odbNetworks/{od
+         * b_network}/odbSubnets/{odb_subnet}
+         *
+         * @param string $odbSubnet
+         */
+        public function setOdbSubnet($odbSubnet)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOdbSubnet()
+        {
+        }
+        /**
+         * Optional. The properties of the DbSystem.
+         *
+         * @param DbSystemProperties $properties
+         */
+        public function setProperties(DbSystemProperties $properties)
+        {
+        }
+        /**
+         * @return DbSystemProperties
+         */
+        public function getProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OracleDatabase\DbSystem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Required. The display name for the System db. The name does not have to be
-     * unique within your project.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. The ID of the subscription entitlement associated with the
-     * DbSystem
-     *
-     * @param string $entitlementId
-     */
-    public function setEntitlementId($entitlementId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEntitlementId()
-    {
-    }
-    /**
-     * Optional. The GCP Oracle zone where Oracle DbSystem is hosted. Example: us-
-     * east4-b-r2. If not specified, the system will pick a zone based on
-     * availability.
-     *
-     * @param string $gcpOracleZone
-     */
-    public function setGcpOracleZone($gcpOracleZone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGcpOracleZone()
-    {
-    }
-    /**
-     * Optional. The labels or tags associated with the DbSystem.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Identifier. The name of the DbSystem resource in the following format:
-     * projects/{project}/locations/{region}/dbSystems/{db_system}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. HTTPS link to OCI resources exposed to Customer via UI
-     * Interface.
-     *
-     * @param string $ociUrl
-     */
-    public function setOciUrl($ociUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOciUrl()
-    {
-    }
-    /**
-     * Optional. The name of the OdbNetwork associated with the DbSystem. Format:
-     * projects/{project}/locations/{location}/odbNetworks/{odb_network} It is
-     * optional but if specified, this should match the parent ODBNetwork of the
-     * OdbSubnet.
-     *
-     * @param string $odbNetwork
-     */
-    public function setOdbNetwork($odbNetwork)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOdbNetwork()
-    {
-    }
-    /**
-     * Required. The name of the OdbSubnet associated with the DbSystem for IP
-     * allocation. Format: projects/{project}/locations/{location}/odbNetworks/{od
-     * b_network}/odbSubnets/{odb_subnet}
-     *
-     * @param string $odbSubnet
-     */
-    public function setOdbSubnet($odbSubnet)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOdbSubnet()
-    {
-    }
-    /**
-     * Optional. The properties of the DbSystem.
-     *
-     * @param DbSystemProperties $properties
-     */
-    public function setProperties(DbSystemProperties $properties)
-    {
-    }
-    /**
-     * @return DbSystemProperties
-     */
-    public function getProperties()
+    class Google_Service_OracleDatabase_DbSystem extends \Google\Service\OracleDatabase\DbSystem
     {
     }
 }

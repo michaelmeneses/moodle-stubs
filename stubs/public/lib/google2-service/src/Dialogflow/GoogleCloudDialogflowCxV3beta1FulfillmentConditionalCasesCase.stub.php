@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3beta1FulfillmentConditionalCasesCase extends \Google\Collection
-{
-    protected $collection_key = 'caseContent';
-    protected $caseContentType = GoogleCloudDialogflowCxV3beta1FulfillmentConditionalCasesCaseCaseContent::class;
-    protected $caseContentDataType = 'array';
-    /**
-     * The condition to activate and select this case. Empty means the condition
-     * is always true. The condition is evaluated against form parameters or
-     * session parameters. See the [conditions reference](https://cloud.google.com
-     * /dialogflow/cx/docs/reference/condition).
-     *
-     * @var string
-     */
-    public $condition;
-    /**
-     * A list of case content.
-     *
-     * @param GoogleCloudDialogflowCxV3beta1FulfillmentConditionalCasesCaseCaseContent[] $caseContent
-     */
-    public function setCaseContent($caseContent)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3beta1FulfillmentConditionalCasesCase extends \Google\Collection
     {
+        protected $collection_key = 'caseContent';
+        protected $caseContentType = GoogleCloudDialogflowCxV3beta1FulfillmentConditionalCasesCaseCaseContent::class;
+        protected $caseContentDataType = 'array';
+        /**
+         * The condition to activate and select this case. Empty means the condition
+         * is always true. The condition is evaluated against form parameters or
+         * session parameters. See the [conditions reference](https://cloud.google.com
+         * /dialogflow/cx/docs/reference/condition).
+         *
+         * @var string
+         */
+        public $condition;
+        /**
+         * A list of case content.
+         *
+         * @param GoogleCloudDialogflowCxV3beta1FulfillmentConditionalCasesCaseCaseContent[] $caseContent
+         */
+        public function setCaseContent($caseContent)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3beta1FulfillmentConditionalCasesCaseCaseContent[]
+         */
+        public function getCaseContent()
+        {
+        }
+        /**
+         * The condition to activate and select this case. Empty means the condition
+         * is always true. The condition is evaluated against form parameters or
+         * session parameters. See the [conditions reference](https://cloud.google.com
+         * /dialogflow/cx/docs/reference/condition).
+         *
+         * @param string $condition
+         */
+        public function setCondition($condition)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCondition()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3beta1FulfillmentConditionalCasesCaseCaseContent[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1FulfillmentConditionalCasesCase registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCaseContent()
-    {
-    }
-    /**
-     * The condition to activate and select this case. Empty means the condition
-     * is always true. The condition is evaluated against form parameters or
-     * session parameters. See the [conditions reference](https://cloud.google.com
-     * /dialogflow/cx/docs/reference/condition).
-     *
-     * @param string $condition
-     */
-    public function setCondition($condition)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCondition()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3beta1FulfillmentConditionalCasesCase extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1FulfillmentConditionalCasesCase
     {
     }
 }

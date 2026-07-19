@@ -21,213 +21,222 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta1Document extends \Google\Collection
-{
-    protected $collection_key = 'textStyles';
-    protected $chunkedDocumentType = GoogleCloudDocumentaiV1beta1DocumentChunkedDocument::class;
-    protected $chunkedDocumentDataType = '';
-    /**
-     * @var string
-     */
-    public $content;
-    protected $documentLayoutType = GoogleCloudDocumentaiV1beta1DocumentDocumentLayout::class;
-    protected $documentLayoutDataType = '';
-    protected $entitiesType = GoogleCloudDocumentaiV1beta1DocumentEntity::class;
-    protected $entitiesDataType = 'array';
-    protected $entityRelationsType = GoogleCloudDocumentaiV1beta1DocumentEntityRelation::class;
-    protected $entityRelationsDataType = 'array';
-    protected $errorType = GoogleRpcStatus::class;
-    protected $errorDataType = '';
-    /**
-     * @var string
-     */
-    public $mimeType;
-    protected $pagesType = GoogleCloudDocumentaiV1beta1DocumentPage::class;
-    protected $pagesDataType = 'array';
-    protected $revisionsType = GoogleCloudDocumentaiV1beta1DocumentRevision::class;
-    protected $revisionsDataType = 'array';
-    protected $shardInfoType = GoogleCloudDocumentaiV1beta1DocumentShardInfo::class;
-    protected $shardInfoDataType = '';
-    /**
-     * @var string
-     */
-    public $text;
-    protected $textChangesType = GoogleCloudDocumentaiV1beta1DocumentTextChange::class;
-    protected $textChangesDataType = 'array';
-    protected $textStylesType = GoogleCloudDocumentaiV1beta1DocumentStyle::class;
-    protected $textStylesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $uri;
-    /**
-     * @param GoogleCloudDocumentaiV1beta1DocumentChunkedDocument
-     */
-    public function setChunkedDocument(GoogleCloudDocumentaiV1beta1DocumentChunkedDocument $chunkedDocument)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta1Document extends \Google\Collection
     {
+        protected $collection_key = 'textStyles';
+        protected $chunkedDocumentType = GoogleCloudDocumentaiV1beta1DocumentChunkedDocument::class;
+        protected $chunkedDocumentDataType = '';
+        /**
+         * @var string
+         */
+        public $content;
+        protected $documentLayoutType = GoogleCloudDocumentaiV1beta1DocumentDocumentLayout::class;
+        protected $documentLayoutDataType = '';
+        protected $entitiesType = GoogleCloudDocumentaiV1beta1DocumentEntity::class;
+        protected $entitiesDataType = 'array';
+        protected $entityRelationsType = GoogleCloudDocumentaiV1beta1DocumentEntityRelation::class;
+        protected $entityRelationsDataType = 'array';
+        protected $errorType = GoogleRpcStatus::class;
+        protected $errorDataType = '';
+        /**
+         * @var string
+         */
+        public $mimeType;
+        protected $pagesType = GoogleCloudDocumentaiV1beta1DocumentPage::class;
+        protected $pagesDataType = 'array';
+        protected $revisionsType = GoogleCloudDocumentaiV1beta1DocumentRevision::class;
+        protected $revisionsDataType = 'array';
+        protected $shardInfoType = GoogleCloudDocumentaiV1beta1DocumentShardInfo::class;
+        protected $shardInfoDataType = '';
+        /**
+         * @var string
+         */
+        public $text;
+        protected $textChangesType = GoogleCloudDocumentaiV1beta1DocumentTextChange::class;
+        protected $textChangesDataType = 'array';
+        protected $textStylesType = GoogleCloudDocumentaiV1beta1DocumentStyle::class;
+        protected $textStylesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $uri;
+        /**
+         * @param GoogleCloudDocumentaiV1beta1DocumentChunkedDocument
+         */
+        public function setChunkedDocument(GoogleCloudDocumentaiV1beta1DocumentChunkedDocument $chunkedDocument)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta1DocumentChunkedDocument
+         */
+        public function getChunkedDocument()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta1DocumentDocumentLayout
+         */
+        public function setDocumentLayout(GoogleCloudDocumentaiV1beta1DocumentDocumentLayout $documentLayout)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta1DocumentDocumentLayout
+         */
+        public function getDocumentLayout()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta1DocumentEntity[]
+         */
+        public function setEntities($entities)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta1DocumentEntity[]
+         */
+        public function getEntities()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta1DocumentEntityRelation[]
+         */
+        public function setEntityRelations($entityRelations)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta1DocumentEntityRelation[]
+         */
+        public function getEntityRelations()
+        {
+        }
+        /**
+         * @param GoogleRpcStatus
+         */
+        public function setError(GoogleRpcStatus $error)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus
+         */
+        public function getError()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta1DocumentPage[]
+         */
+        public function setPages($pages)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta1DocumentPage[]
+         */
+        public function getPages()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta1DocumentRevision[]
+         */
+        public function setRevisions($revisions)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta1DocumentRevision[]
+         */
+        public function getRevisions()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta1DocumentShardInfo
+         */
+        public function setShardInfo(GoogleCloudDocumentaiV1beta1DocumentShardInfo $shardInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta1DocumentShardInfo
+         */
+        public function getShardInfo()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta1DocumentTextChange[]
+         */
+        public function setTextChanges($textChanges)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta1DocumentTextChange[]
+         */
+        public function getTextChanges()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta1DocumentStyle[]
+         */
+        public function setTextStyles($textStyles)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta1DocumentStyle[]
+         */
+        public function getTextStyles()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1beta1DocumentChunkedDocument
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta1Document registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChunkedDocument()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setContent($content)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContent()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta1DocumentDocumentLayout
-     */
-    public function setDocumentLayout(GoogleCloudDocumentaiV1beta1DocumentDocumentLayout $documentLayout)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta1DocumentDocumentLayout
-     */
-    public function getDocumentLayout()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta1DocumentEntity[]
-     */
-    public function setEntities($entities)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta1DocumentEntity[]
-     */
-    public function getEntities()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta1DocumentEntityRelation[]
-     */
-    public function setEntityRelations($entityRelations)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta1DocumentEntityRelation[]
-     */
-    public function getEntityRelations()
-    {
-    }
-    /**
-     * @param GoogleRpcStatus
-     */
-    public function setError(GoogleRpcStatus $error)
-    {
-    }
-    /**
-     * @return GoogleRpcStatus
-     */
-    public function getError()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMimeType($mimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimeType()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta1DocumentPage[]
-     */
-    public function setPages($pages)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta1DocumentPage[]
-     */
-    public function getPages()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta1DocumentRevision[]
-     */
-    public function setRevisions($revisions)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta1DocumentRevision[]
-     */
-    public function getRevisions()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta1DocumentShardInfo
-     */
-    public function setShardInfo(GoogleCloudDocumentaiV1beta1DocumentShardInfo $shardInfo)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta1DocumentShardInfo
-     */
-    public function getShardInfo()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta1DocumentTextChange[]
-     */
-    public function setTextChanges($textChanges)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta1DocumentTextChange[]
-     */
-    public function getTextChanges()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta1DocumentStyle[]
-     */
-    public function setTextStyles($textStyles)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta1DocumentStyle[]
-     */
-    public function getTextStyles()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta1Document extends \Google\Service\Document\GoogleCloudDocumentaiV1beta1Document
     {
     }
 }

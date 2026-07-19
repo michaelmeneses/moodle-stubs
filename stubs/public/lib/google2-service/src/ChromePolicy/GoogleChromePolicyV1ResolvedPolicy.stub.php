@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyV1ResolvedPolicy extends \Google\Model
-{
-    protected $addedSourceKeyType = GoogleChromePolicyV1PolicyTargetKey::class;
-    protected $addedSourceKeyDataType = '';
-    protected $sourceKeyType = GoogleChromePolicyV1PolicyTargetKey::class;
-    protected $sourceKeyDataType = '';
-    protected $targetKeyType = GoogleChromePolicyV1PolicyTargetKey::class;
-    protected $targetKeyDataType = '';
-    protected $valueType = GoogleChromePolicyV1PolicyValue::class;
-    protected $valueDataType = '';
-    /**
-     * @param GoogleChromePolicyV1PolicyTargetKey
-     */
-    public function setAddedSourceKey(GoogleChromePolicyV1PolicyTargetKey $addedSourceKey)
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyV1ResolvedPolicy extends \Google\Model
     {
+        protected $addedSourceKeyType = GoogleChromePolicyV1PolicyTargetKey::class;
+        protected $addedSourceKeyDataType = '';
+        protected $sourceKeyType = GoogleChromePolicyV1PolicyTargetKey::class;
+        protected $sourceKeyDataType = '';
+        protected $targetKeyType = GoogleChromePolicyV1PolicyTargetKey::class;
+        protected $targetKeyDataType = '';
+        protected $valueType = GoogleChromePolicyV1PolicyValue::class;
+        protected $valueDataType = '';
+        /**
+         * @param GoogleChromePolicyV1PolicyTargetKey
+         */
+        public function setAddedSourceKey(GoogleChromePolicyV1PolicyTargetKey $addedSourceKey)
+        {
+        }
+        /**
+         * @return GoogleChromePolicyV1PolicyTargetKey
+         */
+        public function getAddedSourceKey()
+        {
+        }
+        /**
+         * @param GoogleChromePolicyV1PolicyTargetKey
+         */
+        public function setSourceKey(GoogleChromePolicyV1PolicyTargetKey $sourceKey)
+        {
+        }
+        /**
+         * @return GoogleChromePolicyV1PolicyTargetKey
+         */
+        public function getSourceKey()
+        {
+        }
+        /**
+         * @param GoogleChromePolicyV1PolicyTargetKey
+         */
+        public function setTargetKey(GoogleChromePolicyV1PolicyTargetKey $targetKey)
+        {
+        }
+        /**
+         * @return GoogleChromePolicyV1PolicyTargetKey
+         */
+        public function getTargetKey()
+        {
+        }
+        /**
+         * @param GoogleChromePolicyV1PolicyValue
+         */
+        public function setValue(GoogleChromePolicyV1PolicyValue $value)
+        {
+        }
+        /**
+         * @return GoogleChromePolicyV1PolicyValue
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChromePolicyV1PolicyTargetKey
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyV1ResolvedPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddedSourceKey()
-    {
-    }
-    /**
-     * @param GoogleChromePolicyV1PolicyTargetKey
-     */
-    public function setSourceKey(GoogleChromePolicyV1PolicyTargetKey $sourceKey)
-    {
-    }
-    /**
-     * @return GoogleChromePolicyV1PolicyTargetKey
-     */
-    public function getSourceKey()
-    {
-    }
-    /**
-     * @param GoogleChromePolicyV1PolicyTargetKey
-     */
-    public function setTargetKey(GoogleChromePolicyV1PolicyTargetKey $targetKey)
-    {
-    }
-    /**
-     * @return GoogleChromePolicyV1PolicyTargetKey
-     */
-    public function getTargetKey()
-    {
-    }
-    /**
-     * @param GoogleChromePolicyV1PolicyValue
-     */
-    public function setValue(GoogleChromePolicyV1PolicyValue $value)
-    {
-    }
-    /**
-     * @return GoogleChromePolicyV1PolicyValue
-     */
-    public function getValue()
+    class Google_Service_ChromePolicy_GoogleChromePolicyV1ResolvedPolicy extends \Google\Service\ChromePolicy\GoogleChromePolicyV1ResolvedPolicy
     {
     }
 }

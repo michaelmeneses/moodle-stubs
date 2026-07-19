@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2alphaBigQueryOutputResult extends \Google\Model
-{
-    /**
-     * The ID of a BigQuery Dataset.
-     *
-     * @var string
-     */
-    public $datasetId;
-    /**
-     * The ID of a BigQuery Table.
-     *
-     * @var string
-     */
-    public $tableId;
-    /**
-     * The ID of a BigQuery Dataset.
-     *
-     * @param string $datasetId
-     */
-    public function setDatasetId($datasetId)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2alphaBigQueryOutputResult extends \Google\Model
     {
+        /**
+         * The ID of a BigQuery Dataset.
+         *
+         * @var string
+         */
+        public $datasetId;
+        /**
+         * The ID of a BigQuery Table.
+         *
+         * @var string
+         */
+        public $tableId;
+        /**
+         * The ID of a BigQuery Dataset.
+         *
+         * @param string $datasetId
+         */
+        public function setDatasetId($datasetId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatasetId()
+        {
+        }
+        /**
+         * The ID of a BigQuery Table.
+         *
+         * @param string $tableId
+         */
+        public function setTableId($tableId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTableId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2alphaBigQueryOutputResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatasetId()
-    {
-    }
-    /**
-     * The ID of a BigQuery Table.
-     *
-     * @param string $tableId
-     */
-    public function setTableId($tableId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTableId()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2alphaBigQueryOutputResult extends \Google\Service\CloudRetail\GoogleCloudRetailV2alphaBigQueryOutputResult
     {
     }
 }

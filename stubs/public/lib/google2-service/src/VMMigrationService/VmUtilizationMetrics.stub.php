@@ -21,172 +21,181 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class VmUtilizationMetrics extends \Google\Model
-{
-    /**
-     * Average CPU usage, percent.
-     *
-     * @var int
-     */
-    public $cpuAveragePercent;
-    /**
-     * Max CPU usage, percent.
-     *
-     * @var int
-     */
-    public $cpuMaxPercent;
-    /**
-     * Average disk IO rate, in kilobytes per second.
-     *
-     * @var string
-     */
-    public $diskIoRateAverageKbps;
-    /**
-     * Max disk IO rate, in kilobytes per second.
-     *
-     * @var string
-     */
-    public $diskIoRateMaxKbps;
-    /**
-     * Average memory usage, percent.
-     *
-     * @var int
-     */
-    public $memoryAveragePercent;
-    /**
-     * Max memory usage, percent.
-     *
-     * @var int
-     */
-    public $memoryMaxPercent;
-    /**
-     * Average network throughput (combined transmit-rates and receive-rates), in
-     * kilobytes per second.
-     *
-     * @var string
-     */
-    public $networkThroughputAverageKbps;
-    /**
-     * Max network throughput (combined transmit-rates and receive-rates), in
-     * kilobytes per second.
-     *
-     * @var string
-     */
-    public $networkThroughputMaxKbps;
-    /**
-     * Average CPU usage, percent.
-     *
-     * @param int $cpuAveragePercent
-     */
-    public function setCpuAveragePercent($cpuAveragePercent)
+namespace Google\Service\VMMigrationService {
+    class VmUtilizationMetrics extends \Google\Model
     {
+        /**
+         * Average CPU usage, percent.
+         *
+         * @var int
+         */
+        public $cpuAveragePercent;
+        /**
+         * Max CPU usage, percent.
+         *
+         * @var int
+         */
+        public $cpuMaxPercent;
+        /**
+         * Average disk IO rate, in kilobytes per second.
+         *
+         * @var string
+         */
+        public $diskIoRateAverageKbps;
+        /**
+         * Max disk IO rate, in kilobytes per second.
+         *
+         * @var string
+         */
+        public $diskIoRateMaxKbps;
+        /**
+         * Average memory usage, percent.
+         *
+         * @var int
+         */
+        public $memoryAveragePercent;
+        /**
+         * Max memory usage, percent.
+         *
+         * @var int
+         */
+        public $memoryMaxPercent;
+        /**
+         * Average network throughput (combined transmit-rates and receive-rates), in
+         * kilobytes per second.
+         *
+         * @var string
+         */
+        public $networkThroughputAverageKbps;
+        /**
+         * Max network throughput (combined transmit-rates and receive-rates), in
+         * kilobytes per second.
+         *
+         * @var string
+         */
+        public $networkThroughputMaxKbps;
+        /**
+         * Average CPU usage, percent.
+         *
+         * @param int $cpuAveragePercent
+         */
+        public function setCpuAveragePercent($cpuAveragePercent)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCpuAveragePercent()
+        {
+        }
+        /**
+         * Max CPU usage, percent.
+         *
+         * @param int $cpuMaxPercent
+         */
+        public function setCpuMaxPercent($cpuMaxPercent)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCpuMaxPercent()
+        {
+        }
+        /**
+         * Average disk IO rate, in kilobytes per second.
+         *
+         * @param string $diskIoRateAverageKbps
+         */
+        public function setDiskIoRateAverageKbps($diskIoRateAverageKbps)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDiskIoRateAverageKbps()
+        {
+        }
+        /**
+         * Max disk IO rate, in kilobytes per second.
+         *
+         * @param string $diskIoRateMaxKbps
+         */
+        public function setDiskIoRateMaxKbps($diskIoRateMaxKbps)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDiskIoRateMaxKbps()
+        {
+        }
+        /**
+         * Average memory usage, percent.
+         *
+         * @param int $memoryAveragePercent
+         */
+        public function setMemoryAveragePercent($memoryAveragePercent)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMemoryAveragePercent()
+        {
+        }
+        /**
+         * Max memory usage, percent.
+         *
+         * @param int $memoryMaxPercent
+         */
+        public function setMemoryMaxPercent($memoryMaxPercent)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMemoryMaxPercent()
+        {
+        }
+        /**
+         * Average network throughput (combined transmit-rates and receive-rates), in
+         * kilobytes per second.
+         *
+         * @param string $networkThroughputAverageKbps
+         */
+        public function setNetworkThroughputAverageKbps($networkThroughputAverageKbps)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetworkThroughputAverageKbps()
+        {
+        }
+        /**
+         * Max network throughput (combined transmit-rates and receive-rates), in
+         * kilobytes per second.
+         *
+         * @param string $networkThroughputMaxKbps
+         */
+        public function setNetworkThroughputMaxKbps($networkThroughputMaxKbps)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetworkThroughputMaxKbps()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\VMMigrationService\VmUtilizationMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCpuAveragePercent()
-    {
-    }
-    /**
-     * Max CPU usage, percent.
-     *
-     * @param int $cpuMaxPercent
-     */
-    public function setCpuMaxPercent($cpuMaxPercent)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getCpuMaxPercent()
-    {
-    }
-    /**
-     * Average disk IO rate, in kilobytes per second.
-     *
-     * @param string $diskIoRateAverageKbps
-     */
-    public function setDiskIoRateAverageKbps($diskIoRateAverageKbps)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDiskIoRateAverageKbps()
-    {
-    }
-    /**
-     * Max disk IO rate, in kilobytes per second.
-     *
-     * @param string $diskIoRateMaxKbps
-     */
-    public function setDiskIoRateMaxKbps($diskIoRateMaxKbps)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDiskIoRateMaxKbps()
-    {
-    }
-    /**
-     * Average memory usage, percent.
-     *
-     * @param int $memoryAveragePercent
-     */
-    public function setMemoryAveragePercent($memoryAveragePercent)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMemoryAveragePercent()
-    {
-    }
-    /**
-     * Max memory usage, percent.
-     *
-     * @param int $memoryMaxPercent
-     */
-    public function setMemoryMaxPercent($memoryMaxPercent)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMemoryMaxPercent()
-    {
-    }
-    /**
-     * Average network throughput (combined transmit-rates and receive-rates), in
-     * kilobytes per second.
-     *
-     * @param string $networkThroughputAverageKbps
-     */
-    public function setNetworkThroughputAverageKbps($networkThroughputAverageKbps)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNetworkThroughputAverageKbps()
-    {
-    }
-    /**
-     * Max network throughput (combined transmit-rates and receive-rates), in
-     * kilobytes per second.
-     *
-     * @param string $networkThroughputMaxKbps
-     */
-    public function setNetworkThroughputMaxKbps($networkThroughputMaxKbps)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNetworkThroughputMaxKbps()
+    class Google_Service_VMMigrationService_VmUtilizationMetrics extends \Google\Service\VMMigrationService\VmUtilizationMetrics
     {
     }
 }

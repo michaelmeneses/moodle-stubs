@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class GuestAccountInfo extends \Google\Model
-{
-    /**
-     * Immutable. The guest's external email.
-     *
-     * @var string
-     */
-    public $primaryGuestEmail;
-    /**
-     * Immutable. The guest's external email.
-     *
-     * @param string $primaryGuestEmail
-     */
-    public function setPrimaryGuestEmail($primaryGuestEmail)
+namespace Google\Service\Directory {
+    class GuestAccountInfo extends \Google\Model
     {
+        /**
+         * Immutable. The guest's external email.
+         *
+         * @var string
+         */
+        public $primaryGuestEmail;
+        /**
+         * Immutable. The guest's external email.
+         *
+         * @param string $primaryGuestEmail
+         */
+        public function setPrimaryGuestEmail($primaryGuestEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrimaryGuestEmail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\GuestAccountInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPrimaryGuestEmail()
+    class Google_Service_Directory_GuestAccountInfo extends \Google\Service\Directory\GuestAccountInfo
     {
     }
 }

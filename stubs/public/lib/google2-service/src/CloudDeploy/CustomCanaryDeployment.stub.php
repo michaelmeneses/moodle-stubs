@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class CustomCanaryDeployment extends \Google\Collection
-{
-    protected $collection_key = 'phaseConfigs';
-    protected $phaseConfigsType = PhaseConfig::class;
-    protected $phaseConfigsDataType = 'array';
-    /**
-     * Required. Configuration for each phase in the canary deployment in the
-     * order executed.
-     *
-     * @param PhaseConfig[] $phaseConfigs
-     */
-    public function setPhaseConfigs($phaseConfigs)
+namespace Google\Service\CloudDeploy {
+    class CustomCanaryDeployment extends \Google\Collection
     {
+        protected $collection_key = 'phaseConfigs';
+        protected $phaseConfigsType = PhaseConfig::class;
+        protected $phaseConfigsDataType = 'array';
+        /**
+         * Required. Configuration for each phase in the canary deployment in the
+         * order executed.
+         *
+         * @param PhaseConfig[] $phaseConfigs
+         */
+        public function setPhaseConfigs($phaseConfigs)
+        {
+        }
+        /**
+         * @return PhaseConfig[]
+         */
+        public function getPhaseConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PhaseConfig[]
+     * Runtime class alias of \Google\Service\CloudDeploy\CustomCanaryDeployment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPhaseConfigs()
+    class Google_Service_CloudDeploy_CustomCanaryDeployment extends \Google\Service\CloudDeploy\CustomCanaryDeployment
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class GoogleCloudVisionV1p4beta1WebDetectionWebImage extends \Google\Model
-{
-    /**
-     * (Deprecated) Overall relevancy score for the image.
-     *
-     * @var float
-     */
-    public $score;
-    /**
-     * The result image URL.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * (Deprecated) Overall relevancy score for the image.
-     *
-     * @param float $score
-     */
-    public function setScore($score)
+namespace Google\Service\Vision {
+    class GoogleCloudVisionV1p4beta1WebDetectionWebImage extends \Google\Model
     {
+        /**
+         * (Deprecated) Overall relevancy score for the image.
+         *
+         * @var float
+         */
+        public $score;
+        /**
+         * The result image URL.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * (Deprecated) Overall relevancy score for the image.
+         *
+         * @param float $score
+         */
+        public function setScore($score)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getScore()
+        {
+        }
+        /**
+         * The result image URL.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Vision\GoogleCloudVisionV1p4beta1WebDetectionWebImage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getScore()
-    {
-    }
-    /**
-     * The result image URL.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_Vision_GoogleCloudVisionV1p4beta1WebDetectionWebImage extends \Google\Service\Vision\GoogleCloudVisionV1p4beta1WebDetectionWebImage
     {
     }
 }

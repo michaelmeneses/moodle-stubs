@@ -8,6 +8,7 @@
  */
 namespace DI\Definition;
 
+use Psr\Container\ContainerInterface;
 /**
  * Definition of a value for dependency injection.
  *

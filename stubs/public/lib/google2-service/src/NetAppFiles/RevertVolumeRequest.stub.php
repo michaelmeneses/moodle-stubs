@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetAppFiles;
-
-class RevertVolumeRequest extends \Google\Model
-{
-    /**
-     * Required. The snapshot resource ID, in the format 'my-snapshot', where the
-     * specified ID is the {snapshot_id} of the fully qualified name like projects
-     * /{project_id}/locations/{location_id}/volumes/{volume_id}/snapshots/{snapsh
-     * ot_id}
-     *
-     * @var string
-     */
-    public $snapshotId;
-    /**
-     * Required. The snapshot resource ID, in the format 'my-snapshot', where the
-     * specified ID is the {snapshot_id} of the fully qualified name like projects
-     * /{project_id}/locations/{location_id}/volumes/{volume_id}/snapshots/{snapsh
-     * ot_id}
-     *
-     * @param string $snapshotId
-     */
-    public function setSnapshotId($snapshotId)
+namespace Google\Service\NetAppFiles {
+    class RevertVolumeRequest extends \Google\Model
     {
+        /**
+         * Required. The snapshot resource ID, in the format 'my-snapshot', where the
+         * specified ID is the {snapshot_id} of the fully qualified name like projects
+         * /{project_id}/locations/{location_id}/volumes/{volume_id}/snapshots/{snapsh
+         * ot_id}
+         *
+         * @var string
+         */
+        public $snapshotId;
+        /**
+         * Required. The snapshot resource ID, in the format 'my-snapshot', where the
+         * specified ID is the {snapshot_id} of the fully qualified name like projects
+         * /{project_id}/locations/{location_id}/volumes/{volume_id}/snapshots/{snapsh
+         * ot_id}
+         *
+         * @param string $snapshotId
+         */
+        public function setSnapshotId($snapshotId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSnapshotId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetAppFiles\RevertVolumeRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSnapshotId()
+    class Google_Service_NetAppFiles_RevertVolumeRequest extends \Google\Service\NetAppFiles\RevertVolumeRequest
     {
     }
 }

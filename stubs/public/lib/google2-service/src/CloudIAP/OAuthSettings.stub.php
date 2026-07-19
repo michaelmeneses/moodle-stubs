@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIAP;
-
-class OAuthSettings extends \Google\Collection
-{
-    protected $collection_key = 'programmaticClients';
-    /**
-     * Domain hint to send as hd=? parameter in OAuth request flow. Enables
-     * redirect to primary IDP by skipping Google's login screen.
-     * https://developers.google.com/identity/protocols/OpenIDConnect#hd-param
-     * Note: IAP does not verify that the id token's hd claim matches this value
-     * since access behavior is managed by IAM policies.
-     *
-     * @var string
-     */
-    public $loginHint;
-    /**
-     * Optional. List of client ids allowed to use IAP programmatically.
-     *
-     * @var string[]
-     */
-    public $programmaticClients;
-    /**
-     * Domain hint to send as hd=? parameter in OAuth request flow. Enables
-     * redirect to primary IDP by skipping Google's login screen.
-     * https://developers.google.com/identity/protocols/OpenIDConnect#hd-param
-     * Note: IAP does not verify that the id token's hd claim matches this value
-     * since access behavior is managed by IAM policies.
-     *
-     * @param string $loginHint
-     */
-    public function setLoginHint($loginHint)
+namespace Google\Service\CloudIAP {
+    class OAuthSettings extends \Google\Collection
     {
+        protected $collection_key = 'programmaticClients';
+        /**
+         * Domain hint to send as hd=? parameter in OAuth request flow. Enables
+         * redirect to primary IDP by skipping Google's login screen.
+         * https://developers.google.com/identity/protocols/OpenIDConnect#hd-param
+         * Note: IAP does not verify that the id token's hd claim matches this value
+         * since access behavior is managed by IAM policies.
+         *
+         * @var string
+         */
+        public $loginHint;
+        /**
+         * Optional. List of client ids allowed to use IAP programmatically.
+         *
+         * @var string[]
+         */
+        public $programmaticClients;
+        /**
+         * Domain hint to send as hd=? parameter in OAuth request flow. Enables
+         * redirect to primary IDP by skipping Google's login screen.
+         * https://developers.google.com/identity/protocols/OpenIDConnect#hd-param
+         * Note: IAP does not verify that the id token's hd claim matches this value
+         * since access behavior is managed by IAM policies.
+         *
+         * @param string $loginHint
+         */
+        public function setLoginHint($loginHint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLoginHint()
+        {
+        }
+        /**
+         * Optional. List of client ids allowed to use IAP programmatically.
+         *
+         * @param string[] $programmaticClients
+         */
+        public function setProgrammaticClients($programmaticClients)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getProgrammaticClients()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudIAP\OAuthSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLoginHint()
-    {
-    }
-    /**
-     * Optional. List of client ids allowed to use IAP programmatically.
-     *
-     * @param string[] $programmaticClients
-     */
-    public function setProgrammaticClients($programmaticClients)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getProgrammaticClients()
+    class Google_Service_CloudIAP_OAuthSettings extends \Google\Service\CloudIAP\OAuthSettings
     {
     }
 }

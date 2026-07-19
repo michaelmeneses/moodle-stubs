@@ -21,168 +21,177 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class SetMasterAuthRequest extends \Google\Model
-{
-    /**
-     * Operation is unknown and will error out.
-     */
-    public const ACTION_UNKNOWN = 'UNKNOWN';
-    /**
-     * Set the password to a user generated value.
-     */
-    public const ACTION_SET_PASSWORD = 'SET_PASSWORD';
-    /**
-     * Generate a new password and set it to that.
-     */
-    public const ACTION_GENERATE_PASSWORD = 'GENERATE_PASSWORD';
-    /**
-     * Set the username. If an empty username is provided, basic authentication is
-     * disabled for the cluster. If a non-empty username is provided, basic
-     * authentication is enabled, with either a provided password or a generated
-     * one.
-     */
-    public const ACTION_SET_USERNAME = 'SET_USERNAME';
-    /**
-     * Required. The exact form of action to be taken on the master auth.
-     *
-     * @var string
-     */
-    public $action;
-    /**
-     * Deprecated. The name of the cluster to upgrade. This field has been
-     * deprecated and replaced by the name field.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $clusterId;
-    /**
-     * The name (project, location, cluster) of the cluster to set auth. Specified
-     * in the format `projects/locations/clusters`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Deprecated. The Google Developers Console [project ID or project
-     * number](https://cloud.google.com/resource-manager/docs/creating-managing-
-     * projects). This field has been deprecated and replaced by the name field.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $projectId;
-    protected $updateType = MasterAuth::class;
-    protected $updateDataType = '';
-    /**
-     * Deprecated. The name of the Google Compute Engine
-     * [zone](https://cloud.google.com/compute/docs/zones#available) in which the
-     * cluster resides. This field has been deprecated and replaced by the name
-     * field.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $zone;
-    /**
-     * Required. The exact form of action to be taken on the master auth.
-     *
-     * Accepted values: UNKNOWN, SET_PASSWORD, GENERATE_PASSWORD, SET_USERNAME
-     *
-     * @param self::ACTION_* $action
-     */
-    public function setAction($action)
+namespace Google\Service\Container {
+    class SetMasterAuthRequest extends \Google\Model
     {
+        /**
+         * Operation is unknown and will error out.
+         */
+        public const ACTION_UNKNOWN = 'UNKNOWN';
+        /**
+         * Set the password to a user generated value.
+         */
+        public const ACTION_SET_PASSWORD = 'SET_PASSWORD';
+        /**
+         * Generate a new password and set it to that.
+         */
+        public const ACTION_GENERATE_PASSWORD = 'GENERATE_PASSWORD';
+        /**
+         * Set the username. If an empty username is provided, basic authentication is
+         * disabled for the cluster. If a non-empty username is provided, basic
+         * authentication is enabled, with either a provided password or a generated
+         * one.
+         */
+        public const ACTION_SET_USERNAME = 'SET_USERNAME';
+        /**
+         * Required. The exact form of action to be taken on the master auth.
+         *
+         * @var string
+         */
+        public $action;
+        /**
+         * Deprecated. The name of the cluster to upgrade. This field has been
+         * deprecated and replaced by the name field.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $clusterId;
+        /**
+         * The name (project, location, cluster) of the cluster to set auth. Specified
+         * in the format `projects/locations/clusters`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Deprecated. The Google Developers Console [project ID or project
+         * number](https://cloud.google.com/resource-manager/docs/creating-managing-
+         * projects). This field has been deprecated and replaced by the name field.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $projectId;
+        protected $updateType = MasterAuth::class;
+        protected $updateDataType = '';
+        /**
+         * Deprecated. The name of the Google Compute Engine
+         * [zone](https://cloud.google.com/compute/docs/zones#available) in which the
+         * cluster resides. This field has been deprecated and replaced by the name
+         * field.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $zone;
+        /**
+         * Required. The exact form of action to be taken on the master auth.
+         *
+         * Accepted values: UNKNOWN, SET_PASSWORD, GENERATE_PASSWORD, SET_USERNAME
+         *
+         * @param self::ACTION_* $action
+         */
+        public function setAction($action)
+        {
+        }
+        /**
+         * @return self::ACTION_*
+         */
+        public function getAction()
+        {
+        }
+        /**
+         * Deprecated. The name of the cluster to upgrade. This field has been
+         * deprecated and replaced by the name field.
+         *
+         * @deprecated
+         * @param string $clusterId
+         */
+        public function setClusterId($clusterId)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getClusterId()
+        {
+        }
+        /**
+         * The name (project, location, cluster) of the cluster to set auth. Specified
+         * in the format `projects/locations/clusters`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Deprecated. The Google Developers Console [project ID or project
+         * number](https://cloud.google.com/resource-manager/docs/creating-managing-
+         * projects). This field has been deprecated and replaced by the name field.
+         *
+         * @deprecated
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * Required. A description of the update.
+         *
+         * @param MasterAuth $update
+         */
+        public function setUpdate(MasterAuth $update)
+        {
+        }
+        /**
+         * @return MasterAuth
+         */
+        public function getUpdate()
+        {
+        }
+        /**
+         * Deprecated. The name of the Google Compute Engine
+         * [zone](https://cloud.google.com/compute/docs/zones#available) in which the
+         * cluster resides. This field has been deprecated and replaced by the name
+         * field.
+         *
+         * @deprecated
+         * @param string $zone
+         */
+        public function setZone($zone)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ACTION_*
+     * Runtime class alias of \Google\Service\Container\SetMasterAuthRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAction()
-    {
-    }
-    /**
-     * Deprecated. The name of the cluster to upgrade. This field has been
-     * deprecated and replaced by the name field.
-     *
-     * @deprecated
-     * @param string $clusterId
-     */
-    public function setClusterId($clusterId)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getClusterId()
-    {
-    }
-    /**
-     * The name (project, location, cluster) of the cluster to set auth. Specified
-     * in the format `projects/locations/clusters`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Deprecated. The Google Developers Console [project ID or project
-     * number](https://cloud.google.com/resource-manager/docs/creating-managing-
-     * projects). This field has been deprecated and replaced by the name field.
-     *
-     * @deprecated
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getProjectId()
-    {
-    }
-    /**
-     * Required. A description of the update.
-     *
-     * @param MasterAuth $update
-     */
-    public function setUpdate(MasterAuth $update)
-    {
-    }
-    /**
-     * @return MasterAuth
-     */
-    public function getUpdate()
-    {
-    }
-    /**
-     * Deprecated. The name of the Google Compute Engine
-     * [zone](https://cloud.google.com/compute/docs/zones#available) in which the
-     * cluster resides. This field has been deprecated and replaced by the name
-     * field.
-     *
-     * @deprecated
-     * @param string $zone
-     */
-    public function setZone($zone)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getZone()
+    class Google_Service_Container_SetMasterAuthRequest extends \Google\Service\Container\SetMasterAuthRequest
     {
     }
 }

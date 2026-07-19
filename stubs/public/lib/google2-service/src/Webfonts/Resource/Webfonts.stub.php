@@ -21,37 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Webfonts\Resource;
-
-/**
- * The "webfonts" collection of methods.
- * Typical usage is:
- *  <code>
- *   $webfontsService = new Google\Service\Webfonts(...);
- *   $webfonts = $webfontsService->webfonts;
- *  </code>
- */
-class Webfonts extends \Google\Service\Resource
-{
+namespace Google\Service\Webfonts\Resource {
+    use Google\Service\Webfonts\WebfontList;
     /**
-     * Retrieves the list of fonts currently served by the Google Fonts Developer
-     * API. (webfonts.listWebfonts)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string capability Controls the font urls in `Webfont.files`, by
-     * default, static ttf fonts are sent.
-     * @opt_param string category Filters by Webfont.category, if category is found
-     * in Webfont.categories. If not set, returns all families.
-     * @opt_param string family Filters by Webfont.family, using literal match. If
-     * not set, returns all families
-     * @opt_param string sort Enables sorting of the list.
-     * @opt_param string subset Filters by Webfont.subset, if subset is found in
-     * Webfont.subsets. If not set, returns all families.
-     * @return WebfontList
-     * @throws \Google\Service\Exception
+     * The "webfonts" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $webfontsService = new Google\Service\Webfonts(...);
+     *   $webfonts = $webfontsService->webfonts;
+     *  </code>
      */
-    public function listWebfonts($optParams = [])
+    class Webfonts extends \Google\Service\Resource
+    {
+        /**
+         * Retrieves the list of fonts currently served by the Google Fonts Developer
+         * API. (webfonts.listWebfonts)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string capability Controls the font urls in `Webfont.files`, by
+         * default, static ttf fonts are sent.
+         * @opt_param string category Filters by Webfont.category, if category is found
+         * in Webfont.categories. If not set, returns all families.
+         * @opt_param string family Filters by Webfont.family, using literal match. If
+         * not set, returns all families
+         * @opt_param string sort Enables sorting of the list.
+         * @opt_param string subset Filters by Webfont.subset, if subset is found in
+         * Webfont.subsets. If not set, returns all families.
+         * @return WebfontList
+         * @throws \Google\Service\Exception
+         */
+        public function listWebfonts($optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Webfonts\Resource\Webfonts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Webfonts_Resource_Webfonts extends \Google\Service\Webfonts\Resource\Webfonts
     {
     }
 }

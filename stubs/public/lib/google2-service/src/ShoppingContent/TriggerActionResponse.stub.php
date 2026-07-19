@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class TriggerActionResponse extends \Google\Model
-{
-    /**
-     * The message for merchant.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * The message for merchant.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
+namespace Google\Service\ShoppingContent {
+    class TriggerActionResponse extends \Google\Model
     {
+        /**
+         * The message for merchant.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * The message for merchant.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\TriggerActionResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMessage()
+    class Google_Service_ShoppingContent_TriggerActionResponse extends \Google\Service\ShoppingContent\TriggerActionResponse
     {
     }
 }

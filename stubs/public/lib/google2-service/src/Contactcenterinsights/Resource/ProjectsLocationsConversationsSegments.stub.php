@@ -21,28 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights\Resource;
-
-/**
- * The "segments" collection of methods.
- * Typical usage is:
- *  <code>
- *   $contactcenterinsightsService = new Google\Service\Contactcenterinsights(...);
- *   $segments = $contactcenterinsightsService->projects_locations_conversations_segments;
- *  </code>
- */
-class ProjectsLocationsConversationsSegments extends \Google\Service\Resource
-{
+namespace Google\Service\Contactcenterinsights\Resource {
+    use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1BulkAnalyzeConversationsRequest;
+    use Google\Service\Contactcenterinsights\GoogleLongrunningOperation;
     /**
-     * Analyzes multiple conversations in a single request. (segments.bulkAnalyze)
-     *
-     * @param string $parent Required. The parent resource to create analyses in.
-     * @param GoogleCloudContactcenterinsightsV1BulkAnalyzeConversationsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * The "segments" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $contactcenterinsightsService = new Google\Service\Contactcenterinsights(...);
+     *   $segments = $contactcenterinsightsService->projects_locations_conversations_segments;
+     *  </code>
      */
-    public function bulkAnalyze($parent, GoogleCloudContactcenterinsightsV1BulkAnalyzeConversationsRequest $postBody, $optParams = [])
+    class ProjectsLocationsConversationsSegments extends \Google\Service\Resource
+    {
+        /**
+         * Analyzes multiple conversations in a single request. (segments.bulkAnalyze)
+         *
+         * @param string $parent Required. The parent resource to create analyses in.
+         * @param GoogleCloudContactcenterinsightsV1BulkAnalyzeConversationsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function bulkAnalyze($parent, GoogleCloudContactcenterinsightsV1BulkAnalyzeConversationsRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Contactcenterinsights\Resource\ProjectsLocationsConversationsSegments registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Contactcenterinsights_Resource_ProjectsLocationsConversationsSegments extends \Google\Service\Contactcenterinsights\Resource\ProjectsLocationsConversationsSegments
     {
     }
 }

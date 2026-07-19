@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class RefreshDataSourceObjectExecutionStatus extends \Google\Model
-{
-    protected $dataExecutionStatusType = DataExecutionStatus::class;
-    protected $dataExecutionStatusDataType = '';
-    protected $referenceType = DataSourceObjectReference::class;
-    protected $referenceDataType = '';
-    /**
-     * The data execution status.
-     *
-     * @param DataExecutionStatus $dataExecutionStatus
-     */
-    public function setDataExecutionStatus(DataExecutionStatus $dataExecutionStatus)
+namespace Google\Service\Sheets {
+    class RefreshDataSourceObjectExecutionStatus extends \Google\Model
     {
+        protected $dataExecutionStatusType = DataExecutionStatus::class;
+        protected $dataExecutionStatusDataType = '';
+        protected $referenceType = DataSourceObjectReference::class;
+        protected $referenceDataType = '';
+        /**
+         * The data execution status.
+         *
+         * @param DataExecutionStatus $dataExecutionStatus
+         */
+        public function setDataExecutionStatus(DataExecutionStatus $dataExecutionStatus)
+        {
+        }
+        /**
+         * @return DataExecutionStatus
+         */
+        public function getDataExecutionStatus()
+        {
+        }
+        /**
+         * Reference to a data source object being refreshed.
+         *
+         * @param DataSourceObjectReference $reference
+         */
+        public function setReference(DataSourceObjectReference $reference)
+        {
+        }
+        /**
+         * @return DataSourceObjectReference
+         */
+        public function getReference()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DataExecutionStatus
+     * Runtime class alias of \Google\Service\Sheets\RefreshDataSourceObjectExecutionStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataExecutionStatus()
-    {
-    }
-    /**
-     * Reference to a data source object being refreshed.
-     *
-     * @param DataSourceObjectReference $reference
-     */
-    public function setReference(DataSourceObjectReference $reference)
-    {
-    }
-    /**
-     * @return DataSourceObjectReference
-     */
-    public function getReference()
+    class Google_Service_Sheets_RefreshDataSourceObjectExecutionStatus extends \Google\Service\Sheets\RefreshDataSourceObjectExecutionStatus
     {
     }
 }

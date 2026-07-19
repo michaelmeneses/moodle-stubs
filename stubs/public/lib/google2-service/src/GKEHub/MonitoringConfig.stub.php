@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class MonitoringConfig extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $cluster;
-    /**
-     * @var string
-     */
-    public $clusterHash;
-    /**
-     * @var string
-     */
-    public $kubernetesMetricsPrefix;
-    /**
-     * @var string
-     */
-    public $location;
-    /**
-     * @var string
-     */
-    public $projectId;
-    /**
-     * @param string
-     */
-    public function setCluster($cluster)
+namespace Google\Service\GKEHub {
+    class MonitoringConfig extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $cluster;
+        /**
+         * @var string
+         */
+        public $clusterHash;
+        /**
+         * @var string
+         */
+        public $kubernetesMetricsPrefix;
+        /**
+         * @var string
+         */
+        public $location;
+        /**
+         * @var string
+         */
+        public $projectId;
+        /**
+         * @param string
+         */
+        public function setCluster($cluster)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCluster()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setClusterHash($clusterHash)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClusterHash()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKubernetesMetricsPrefix($kubernetesMetricsPrefix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKubernetesMetricsPrefix()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\MonitoringConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCluster()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setClusterHash($clusterHash)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClusterHash()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKubernetesMetricsPrefix($kubernetesMetricsPrefix)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKubernetesMetricsPrefix()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
+    class Google_Service_GKEHub_MonitoringConfig extends \Google\Service\GKEHub\MonitoringConfig
     {
     }
 }

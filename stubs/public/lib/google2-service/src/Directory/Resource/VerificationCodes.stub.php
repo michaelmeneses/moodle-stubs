@@ -21,51 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory\Resource;
-
-/**
- * The "verificationCodes" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adminService = new Google\Service\Directory(...);
- *   $verificationCodes = $adminService->verificationCodes;
- *  </code>
- */
-class VerificationCodes extends \Google\Service\Resource
-{
+namespace Google\Service\Directory\Resource {
+    use Google\Service\Directory\VerificationCodes as VerificationCodesModel;
     /**
-     * Generates new backup verification codes for the user.
-     * (verificationCodes.generate)
-     *
-     * @param string $userKey Email or immutable ID of the user
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "verificationCodes" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adminService = new Google\Service\Directory(...);
+     *   $verificationCodes = $adminService->verificationCodes;
+     *  </code>
      */
-    public function generate($userKey, $optParams = [])
+    class VerificationCodes extends \Google\Service\Resource
     {
+        /**
+         * Generates new backup verification codes for the user.
+         * (verificationCodes.generate)
+         *
+         * @param string $userKey Email or immutable ID of the user
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function generate($userKey, $optParams = [])
+        {
+        }
+        /**
+         * Invalidates the current backup verification codes for the user.
+         * (verificationCodes.invalidate)
+         *
+         * @param string $userKey Email or immutable ID of the user
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function invalidate($userKey, $optParams = [])
+        {
+        }
+        /**
+         * Returns the current set of valid backup verification codes for the specified
+         * user. (verificationCodes.listVerificationCodes)
+         *
+         * @param string $userKey Identifies the user in the API request. The value can
+         * be the user's primary email address, alias email address, or unique user ID.
+         * @param array $optParams Optional parameters.
+         * @return VerificationCodesModel
+         * @throws \Google\Service\Exception
+         */
+        public function listVerificationCodes($userKey, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Invalidates the current backup verification codes for the user.
-     * (verificationCodes.invalidate)
-     *
-     * @param string $userKey Email or immutable ID of the user
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Directory\Resource\VerificationCodes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function invalidate($userKey, $optParams = [])
-    {
-    }
-    /**
-     * Returns the current set of valid backup verification codes for the specified
-     * user. (verificationCodes.listVerificationCodes)
-     *
-     * @param string $userKey Identifies the user in the API request. The value can
-     * be the user's primary email address, alias email address, or unique user ID.
-     * @param array $optParams Optional parameters.
-     * @return VerificationCodesModel
-     * @throws \Google\Service\Exception
-     */
-    public function listVerificationCodes($userKey, $optParams = [])
+    class Google_Service_Directory_Resource_VerificationCodes extends \Google\Service\Directory\Resource\VerificationCodes
     {
     }
 }

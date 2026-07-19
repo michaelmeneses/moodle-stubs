@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1SearchResponseSessionInfo extends \Google\Model
-{
-    /**
-     * Name of the session. If the auto-session mode is used (when
-     * SearchRequest.session ends with "-"), this field holds the newly generated
-     * session name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Query ID that corresponds to this search API call. One session can have
-     * multiple turns, each with a unique query ID. By specifying the session name
-     * and this query ID in the Answer API call, the answer generation happens in
-     * the context of the search results from this search call.
-     *
-     * @var string
-     */
-    public $queryId;
-    /**
-     * Name of the session. If the auto-session mode is used (when
-     * SearchRequest.session ends with "-"), this field holds the newly generated
-     * session name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1SearchResponseSessionInfo extends \Google\Model
     {
+        /**
+         * Name of the session. If the auto-session mode is used (when
+         * SearchRequest.session ends with "-"), this field holds the newly generated
+         * session name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Query ID that corresponds to this search API call. One session can have
+         * multiple turns, each with a unique query ID. By specifying the session name
+         * and this query ID in the Answer API call, the answer generation happens in
+         * the context of the search results from this search call.
+         *
+         * @var string
+         */
+        public $queryId;
+        /**
+         * Name of the session. If the auto-session mode is used (when
+         * SearchRequest.session ends with "-"), this field holds the newly generated
+         * session name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Query ID that corresponds to this search API call. One session can have
+         * multiple turns, each with a unique query ID. By specifying the session name
+         * and this query ID in the Answer API call, the answer generation happens in
+         * the context of the search results from this search call.
+         *
+         * @param string $queryId
+         */
+        public function setQueryId($queryId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQueryId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1SearchResponseSessionInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Query ID that corresponds to this search API call. One session can have
-     * multiple turns, each with a unique query ID. By specifying the session name
-     * and this query ID in the Answer API call, the answer generation happens in
-     * the context of the search results from this search call.
-     *
-     * @param string $queryId
-     */
-    public function setQueryId($queryId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQueryId()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1SearchResponseSessionInfo extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1SearchResponseSessionInfo
     {
     }
 }

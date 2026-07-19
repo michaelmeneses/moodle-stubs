@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class GoogleBigtableAdminV2TypeTimestampEncoding extends \Google\Model
-{
-    protected $unixMicrosInt64Type = GoogleBigtableAdminV2TypeInt64Encoding::class;
-    protected $unixMicrosInt64DataType = '';
-    /**
-     * Encodes the number of microseconds since the Unix epoch using the given
-     * `Int64` encoding. Values must be microsecond-aligned. Compatible with: -
-     * Java `Instant.truncatedTo()` with `ChronoUnit.MICROS`
-     *
-     * @param GoogleBigtableAdminV2TypeInt64Encoding $unixMicrosInt64
-     */
-    public function setUnixMicrosInt64(GoogleBigtableAdminV2TypeInt64Encoding $unixMicrosInt64)
+namespace Google\Service\BigtableAdmin {
+    class GoogleBigtableAdminV2TypeTimestampEncoding extends \Google\Model
     {
+        protected $unixMicrosInt64Type = GoogleBigtableAdminV2TypeInt64Encoding::class;
+        protected $unixMicrosInt64DataType = '';
+        /**
+         * Encodes the number of microseconds since the Unix epoch using the given
+         * `Int64` encoding. Values must be microsecond-aligned. Compatible with: -
+         * Java `Instant.truncatedTo()` with `ChronoUnit.MICROS`
+         *
+         * @param GoogleBigtableAdminV2TypeInt64Encoding $unixMicrosInt64
+         */
+        public function setUnixMicrosInt64(GoogleBigtableAdminV2TypeInt64Encoding $unixMicrosInt64)
+        {
+        }
+        /**
+         * @return GoogleBigtableAdminV2TypeInt64Encoding
+         */
+        public function getUnixMicrosInt64()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleBigtableAdminV2TypeInt64Encoding
+     * Runtime class alias of \Google\Service\BigtableAdmin\GoogleBigtableAdminV2TypeTimestampEncoding registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUnixMicrosInt64()
+    class Google_Service_BigtableAdmin_GoogleBigtableAdminV2TypeTimestampEncoding extends \Google\Service\BigtableAdmin\GoogleBigtableAdminV2TypeTimestampEncoding
     {
     }
 }

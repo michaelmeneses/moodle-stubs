@@ -21,98 +21,107 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3FlowInvocation extends \Google\Model
-{
-    /**
-     * Unspecified output.
-     */
-    public const FLOW_STATE_OUTPUT_STATE_UNSPECIFIED = 'OUTPUT_STATE_UNSPECIFIED';
-    /**
-     * Succeeded.
-     */
-    public const FLOW_STATE_OUTPUT_STATE_OK = 'OUTPUT_STATE_OK';
-    /**
-     * Cancelled.
-     */
-    public const FLOW_STATE_OUTPUT_STATE_CANCELLED = 'OUTPUT_STATE_CANCELLED';
-    /**
-     * Failed.
-     */
-    public const FLOW_STATE_OUTPUT_STATE_FAILED = 'OUTPUT_STATE_FAILED';
-    /**
-     * Escalated.
-     */
-    public const FLOW_STATE_OUTPUT_STATE_ESCALATED = 'OUTPUT_STATE_ESCALATED';
-    /**
-     * Pending.
-     */
-    public const FLOW_STATE_OUTPUT_STATE_PENDING = 'OUTPUT_STATE_PENDING';
-    /**
-     * Output only. The display name of the flow.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Required. The unique identifier of the flow. Format:
-     * `projects//locations//agents//flows/`.
-     *
-     * @var string
-     */
-    public $flow;
-    /**
-     * Required. Flow invocation's output state.
-     *
-     * @var string
-     */
-    public $flowState;
-    /**
-     * Output only. The display name of the flow.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3FlowInvocation extends \Google\Model
     {
+        /**
+         * Unspecified output.
+         */
+        public const FLOW_STATE_OUTPUT_STATE_UNSPECIFIED = 'OUTPUT_STATE_UNSPECIFIED';
+        /**
+         * Succeeded.
+         */
+        public const FLOW_STATE_OUTPUT_STATE_OK = 'OUTPUT_STATE_OK';
+        /**
+         * Cancelled.
+         */
+        public const FLOW_STATE_OUTPUT_STATE_CANCELLED = 'OUTPUT_STATE_CANCELLED';
+        /**
+         * Failed.
+         */
+        public const FLOW_STATE_OUTPUT_STATE_FAILED = 'OUTPUT_STATE_FAILED';
+        /**
+         * Escalated.
+         */
+        public const FLOW_STATE_OUTPUT_STATE_ESCALATED = 'OUTPUT_STATE_ESCALATED';
+        /**
+         * Pending.
+         */
+        public const FLOW_STATE_OUTPUT_STATE_PENDING = 'OUTPUT_STATE_PENDING';
+        /**
+         * Output only. The display name of the flow.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Required. The unique identifier of the flow. Format:
+         * `projects//locations//agents//flows/`.
+         *
+         * @var string
+         */
+        public $flow;
+        /**
+         * Required. Flow invocation's output state.
+         *
+         * @var string
+         */
+        public $flowState;
+        /**
+         * Output only. The display name of the flow.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Required. The unique identifier of the flow. Format:
+         * `projects//locations//agents//flows/`.
+         *
+         * @param string $flow
+         */
+        public function setFlow($flow)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFlow()
+        {
+        }
+        /**
+         * Required. Flow invocation's output state.
+         *
+         * Accepted values: OUTPUT_STATE_UNSPECIFIED, OUTPUT_STATE_OK,
+         * OUTPUT_STATE_CANCELLED, OUTPUT_STATE_FAILED, OUTPUT_STATE_ESCALATED,
+         * OUTPUT_STATE_PENDING
+         *
+         * @param self::FLOW_STATE_* $flowState
+         */
+        public function setFlowState($flowState)
+        {
+        }
+        /**
+         * @return self::FLOW_STATE_*
+         */
+        public function getFlowState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3FlowInvocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Required. The unique identifier of the flow. Format:
-     * `projects//locations//agents//flows/`.
-     *
-     * @param string $flow
-     */
-    public function setFlow($flow)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFlow()
-    {
-    }
-    /**
-     * Required. Flow invocation's output state.
-     *
-     * Accepted values: OUTPUT_STATE_UNSPECIFIED, OUTPUT_STATE_OK,
-     * OUTPUT_STATE_CANCELLED, OUTPUT_STATE_FAILED, OUTPUT_STATE_ESCALATED,
-     * OUTPUT_STATE_PENDING
-     *
-     * @param self::FLOW_STATE_* $flowState
-     */
-    public function setFlowState($flowState)
-    {
-    }
-    /**
-     * @return self::FLOW_STATE_*
-     */
-    public function getFlowState()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3FlowInvocation extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3FlowInvocation
     {
     }
 }

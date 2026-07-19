@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class Content extends \Google\Collection
-{
-    protected $collection_key = 'actions';
-    protected $actionsType = Action::class;
-    protected $actionsDataType = 'array';
-    protected $descriptionType = SafeHtmlProto::class;
-    protected $descriptionDataType = '';
-    protected $subtitleType = BackgroundColoredText::class;
-    protected $subtitleDataType = '';
-    protected $titleType = BackgroundColoredText::class;
-    protected $titleDataType = '';
-    /**
-     * [Optional] Actions for this card.
-     *
-     * @param Action[] $actions
-     */
-    public function setActions($actions)
+namespace Google\Service\CloudSearch {
+    class Content extends \Google\Collection
     {
+        protected $collection_key = 'actions';
+        protected $actionsType = Action::class;
+        protected $actionsDataType = 'array';
+        protected $descriptionType = SafeHtmlProto::class;
+        protected $descriptionDataType = '';
+        protected $subtitleType = BackgroundColoredText::class;
+        protected $subtitleDataType = '';
+        protected $titleType = BackgroundColoredText::class;
+        protected $titleDataType = '';
+        /**
+         * [Optional] Actions for this card.
+         *
+         * @param Action[] $actions
+         */
+        public function setActions($actions)
+        {
+        }
+        /**
+         * @return Action[]
+         */
+        public function getActions()
+        {
+        }
+        /**
+         * [Optional] Description of the card.
+         *
+         * @param SafeHtmlProto $description
+         */
+        public function setDescription(SafeHtmlProto $description)
+        {
+        }
+        /**
+         * @return SafeHtmlProto
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * [Optional] Subtitle of the card.
+         *
+         * @param BackgroundColoredText $subtitle
+         */
+        public function setSubtitle(BackgroundColoredText $subtitle)
+        {
+        }
+        /**
+         * @return BackgroundColoredText
+         */
+        public function getSubtitle()
+        {
+        }
+        /**
+         * [Optional] Title of the card.
+         *
+         * @param BackgroundColoredText $title
+         */
+        public function setTitle(BackgroundColoredText $title)
+        {
+        }
+        /**
+         * @return BackgroundColoredText
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Action[]
+     * Runtime class alias of \Google\Service\CloudSearch\Content registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActions()
-    {
-    }
-    /**
-     * [Optional] Description of the card.
-     *
-     * @param SafeHtmlProto $description
-     */
-    public function setDescription(SafeHtmlProto $description)
-    {
-    }
-    /**
-     * @return SafeHtmlProto
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * [Optional] Subtitle of the card.
-     *
-     * @param BackgroundColoredText $subtitle
-     */
-    public function setSubtitle(BackgroundColoredText $subtitle)
-    {
-    }
-    /**
-     * @return BackgroundColoredText
-     */
-    public function getSubtitle()
-    {
-    }
-    /**
-     * [Optional] Title of the card.
-     *
-     * @param BackgroundColoredText $title
-     */
-    public function setTitle(BackgroundColoredText $title)
-    {
-    }
-    /**
-     * @return BackgroundColoredText
-     */
-    public function getTitle()
+    class Google_Service_CloudSearch_Content extends \Google\Service\CloudSearch\Content
     {
     }
 }

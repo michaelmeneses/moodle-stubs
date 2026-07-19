@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class BigTableIODetails extends \Google\Model
-{
-    /**
-     * InstanceId accessed in the connection.
-     *
-     * @var string
-     */
-    public $instanceId;
-    /**
-     * ProjectId accessed in the connection.
-     *
-     * @var string
-     */
-    public $projectId;
-    /**
-     * TableId accessed in the connection.
-     *
-     * @var string
-     */
-    public $tableId;
-    /**
-     * InstanceId accessed in the connection.
-     *
-     * @param string $instanceId
-     */
-    public function setInstanceId($instanceId)
+namespace Google\Service\Dataflow {
+    class BigTableIODetails extends \Google\Model
     {
+        /**
+         * InstanceId accessed in the connection.
+         *
+         * @var string
+         */
+        public $instanceId;
+        /**
+         * ProjectId accessed in the connection.
+         *
+         * @var string
+         */
+        public $projectId;
+        /**
+         * TableId accessed in the connection.
+         *
+         * @var string
+         */
+        public $tableId;
+        /**
+         * InstanceId accessed in the connection.
+         *
+         * @param string $instanceId
+         */
+        public function setInstanceId($instanceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstanceId()
+        {
+        }
+        /**
+         * ProjectId accessed in the connection.
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * TableId accessed in the connection.
+         *
+         * @param string $tableId
+         */
+        public function setTableId($tableId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTableId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\BigTableIODetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstanceId()
-    {
-    }
-    /**
-     * ProjectId accessed in the connection.
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
-    {
-    }
-    /**
-     * TableId accessed in the connection.
-     *
-     * @param string $tableId
-     */
-    public function setTableId($tableId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTableId()
+    class Google_Service_Dataflow_BigTableIODetails extends \Google\Service\Dataflow\BigTableIODetails
     {
     }
 }

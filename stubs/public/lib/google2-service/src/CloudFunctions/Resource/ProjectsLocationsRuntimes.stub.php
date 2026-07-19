@@ -21,32 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudFunctions\Resource;
-
-/**
- * The "runtimes" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudfunctionsService = new Google\Service\CloudFunctions(...);
- *   $runtimes = $cloudfunctionsService->projects_locations_runtimes;
- *  </code>
- */
-class ProjectsLocationsRuntimes extends \Google\Service\Resource
-{
+namespace Google\Service\CloudFunctions\Resource {
+    use Google\Service\CloudFunctions\ListRuntimesResponse;
     /**
-     * Returns a list of runtimes that are supported for the requested project.
-     * (runtimes.listProjectsLocationsRuntimes)
-     *
-     * @param string $parent Required. The project and location from which the
-     * runtimes should be listed, specified in the format `projects/locations`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter The filter for Runtimes that match the filter
-     * expression, following the syntax outlined in https://google.aip.dev/160.
-     * @return ListRuntimesResponse
-     * @throws \Google\Service\Exception
+     * The "runtimes" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudfunctionsService = new Google\Service\CloudFunctions(...);
+     *   $runtimes = $cloudfunctionsService->projects_locations_runtimes;
+     *  </code>
      */
-    public function listProjectsLocationsRuntimes($parent, $optParams = [])
+    class ProjectsLocationsRuntimes extends \Google\Service\Resource
+    {
+        /**
+         * Returns a list of runtimes that are supported for the requested project.
+         * (runtimes.listProjectsLocationsRuntimes)
+         *
+         * @param string $parent Required. The project and location from which the
+         * runtimes should be listed, specified in the format `projects/locations`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter The filter for Runtimes that match the filter
+         * expression, following the syntax outlined in https://google.aip.dev/160.
+         * @return ListRuntimesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsRuntimes($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudFunctions\Resource\ProjectsLocationsRuntimes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudFunctions_Resource_ProjectsLocationsRuntimes extends \Google\Service\CloudFunctions\Resource\ProjectsLocationsRuntimes
     {
     }
 }

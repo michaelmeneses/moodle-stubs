@@ -20,187 +20,197 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\output;
-
-/**
- * Progress bar class.
- *
- * Manages the display of a progress bar.
- *
- * To use this class.
- * - construct
- * - call create (or use the 3rd param to the constructor)
- * - call update or update_full() or update() repeatedly
- *
- * @copyright 2008 jamiesensei
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @package core
- * @category output
- */
-class progress_bar implements renderable, templatable
-{
-    /** @var bool Can use output buffering. */
-    protected static $supportsoutputbuffering = false;
-    /** @var string unique id */
-    protected $idnumber;
-    /** @var int total width */
-    protected $width;
-    /** @var int last percentage printed */
-    protected $percent = 0;
-    /** @var int time when last printed */
-    protected $lastupdate = 0;
-    /** @var int when did we start printing this */
-    protected $timestart = 0;
-    /** @var bool Whether or not to auto render updates to the screen */
-    protected $autoupdate = true;
-    /** @var bool Whether or not an error has occured */
-    protected $haserrored = false;
+namespace core\output {
+    use core\exception\coding_exception;
     /**
-     * Constructor
+     * Progress bar class.
      *
-     * Prints JS code if $autostart true.
+     * Manages the display of a progress bar.
      *
-     * @param string $htmlid The unique ID for the progress bar or HTML container id.
-     * @param int $width The suggested width.
-     * @param bool $autostart Whether to start the progress bar right away.
-     */
-    public function __construct($htmlid = '', $width = 500, $autostart = false)
-    {
-    }
-    /**
-     * Getter for ID
-     * @return string id
-     */
-    public function get_id(): string
-    {
-    }
-    /**
-     * Get the percent
-     * @return float
-     */
-    public function get_percent(): float
-    {
-    }
-    /**
-     * Create a new progress bar, this function will output html.
+     * To use this class.
+     * - construct
+     * - call create (or use the 3rd param to the constructor)
+     * - call update or update_full() or update() repeatedly
      *
-     * @return void Echo's output
+     * @copyright 2008 jamiesensei
+     * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     * @package core
+     * @category output
      */
-    public function create()
+    class progress_bar implements renderable, templatable
     {
+        /** @var bool Can use output buffering. */
+        protected static $supportsoutputbuffering = false;
+        /** @var string unique id */
+        protected $idnumber;
+        /** @var int total width */
+        protected $width;
+        /** @var int last percentage printed */
+        protected $percent = 0;
+        /** @var int time when last printed */
+        protected $lastupdate = 0;
+        /** @var int when did we start printing this */
+        protected $timestart = 0;
+        /** @var bool Whether or not to auto render updates to the screen */
+        protected $autoupdate = true;
+        /** @var bool Whether or not an error has occured */
+        protected $haserrored = false;
+        /**
+         * Constructor
+         *
+         * Prints JS code if $autostart true.
+         *
+         * @param string $htmlid The unique ID for the progress bar or HTML container id.
+         * @param int $width The suggested width.
+         * @param bool $autostart Whether to start the progress bar right away.
+         */
+        public function __construct($htmlid = '', $width = 500, $autostart = false)
+        {
+        }
+        /**
+         * Getter for ID
+         * @return string id
+         */
+        public function get_id(): string
+        {
+        }
+        /**
+         * Get the percent
+         * @return float
+         */
+        public function get_percent(): float
+        {
+        }
+        /**
+         * Create a new progress bar, this function will output html.
+         *
+         * @return void Echo's output
+         */
+        public function create()
+        {
+        }
+        /**
+         * Render the progress bar.
+         *
+         * @return void
+         */
+        public function render(): void
+        {
+        }
+        /**
+         * Get the content to be rendered
+         *
+         * @return string
+         */
+        public function get_content(): string
+        {
+        }
+        /**
+         * Set whether or not to auto render updates to the screen
+         *
+         * @param bool $value
+         * @return void
+         */
+        public function auto_update(bool $value): void
+        {
+        }
+        /**
+         * Update the progress bar.
+         *
+         * @param int $percent From 1-100.
+         * @param string $msg The message.
+         * @return void Echo's output
+         * @throws coding_exception
+         */
+        protected function update_raw($percent, $msg)
+        {
+        }
+        /**
+         * Estimate how much time it is going to take.
+         *
+         * @param int $pt From 1-100.
+         * @return mixed Null (unknown), or int.
+         */
+        protected function estimate($pt)
+        {
+        }
+        /**
+         * Update progress bar according percent.
+         *
+         * @param int $percent From 1-100.
+         * @param string $msg The message needed to be shown.
+         */
+        public function update_full($percent, $msg)
+        {
+        }
+        /**
+         * Update progress bar according the number of tasks.
+         *
+         * @param int $cur Current task number.
+         * @param int $total Total task number.
+         * @param string $msg The message needed to be shown.
+         */
+        public function update($cur, $total, $msg)
+        {
+        }
+        /**
+         * Restart the progress bar.
+         */
+        public function restart()
+        {
+        }
+        /**
+         * Export for template.
+         *
+         * @param  renderer_base $output The renderer.
+         * @return array
+         */
+        public function export_for_template(renderer_base $output)
+        {
+        }
+        /**
+         * This gets the estimate message to be displayed with the progress bar.
+         *
+         * @param float $percent
+         * @return string
+         */
+        public function get_estimate_message(float $percent): string
+        {
+        }
+        /**
+         * Set the error flag on the object
+         *
+         * @param bool $value
+         * @return void
+         */
+        protected function set_haserrored(bool $value): void
+        {
+        }
+        /**
+         * Check if the process has errored
+         *
+         * @return bool
+         */
+        public function get_haserrored(): bool
+        {
+        }
+        /**
+         * Set that the process running has errored
+         *
+         * @param string $errormsg
+         * @return void
+         */
+        public function error(string $errormsg): void
+        {
+        }
     }
+}
+namespace {
     /**
-     * Render the progress bar.
-     *
-     * @return void
+     * Runtime class alias of \core\output\progress_bar registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function render(): void
-    {
-    }
-    /**
-     * Get the content to be rendered
-     *
-     * @return string
-     */
-    public function get_content(): string
-    {
-    }
-    /**
-     * Set whether or not to auto render updates to the screen
-     *
-     * @param bool $value
-     * @return void
-     */
-    public function auto_update(bool $value): void
-    {
-    }
-    /**
-     * Update the progress bar.
-     *
-     * @param int $percent From 1-100.
-     * @param string $msg The message.
-     * @return void Echo's output
-     * @throws coding_exception
-     */
-    protected function update_raw($percent, $msg)
-    {
-    }
-    /**
-     * Estimate how much time it is going to take.
-     *
-     * @param int $pt From 1-100.
-     * @return mixed Null (unknown), or int.
-     */
-    protected function estimate($pt)
-    {
-    }
-    /**
-     * Update progress bar according percent.
-     *
-     * @param int $percent From 1-100.
-     * @param string $msg The message needed to be shown.
-     */
-    public function update_full($percent, $msg)
-    {
-    }
-    /**
-     * Update progress bar according the number of tasks.
-     *
-     * @param int $cur Current task number.
-     * @param int $total Total task number.
-     * @param string $msg The message needed to be shown.
-     */
-    public function update($cur, $total, $msg)
-    {
-    }
-    /**
-     * Restart the progress bar.
-     */
-    public function restart()
-    {
-    }
-    /**
-     * Export for template.
-     *
-     * @param  renderer_base $output The renderer.
-     * @return array
-     */
-    public function export_for_template(renderer_base $output)
-    {
-    }
-    /**
-     * This gets the estimate message to be displayed with the progress bar.
-     *
-     * @param float $percent
-     * @return string
-     */
-    public function get_estimate_message(float $percent): string
-    {
-    }
-    /**
-     * Set the error flag on the object
-     *
-     * @param bool $value
-     * @return void
-     */
-    protected function set_haserrored(bool $value): void
-    {
-    }
-    /**
-     * Check if the process has errored
-     *
-     * @return bool
-     */
-    public function get_haserrored(): bool
-    {
-    }
-    /**
-     * Set that the process running has errored
-     *
-     * @param string $errormsg
-     * @return void
-     */
-    public function error(string $errormsg): void
+    class progress_bar extends \core\output\progress_bar
     {
     }
 }

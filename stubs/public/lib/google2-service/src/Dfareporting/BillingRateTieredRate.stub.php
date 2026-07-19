@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class BillingRateTieredRate extends \Google\Model
-{
-    /**
-     * The maximum for this tier range.
-     *
-     * @var string
-     */
-    public $highValue;
-    /**
-     * The minimum for this tier range.
-     *
-     * @var string
-     */
-    public $lowValue;
-    /**
-     * Rate in micros for this tier.
-     *
-     * @var string
-     */
-    public $rateInMicros;
-    /**
-     * The maximum for this tier range.
-     *
-     * @param string $highValue
-     */
-    public function setHighValue($highValue)
+namespace Google\Service\Dfareporting {
+    class BillingRateTieredRate extends \Google\Model
     {
+        /**
+         * The maximum for this tier range.
+         *
+         * @var string
+         */
+        public $highValue;
+        /**
+         * The minimum for this tier range.
+         *
+         * @var string
+         */
+        public $lowValue;
+        /**
+         * Rate in micros for this tier.
+         *
+         * @var string
+         */
+        public $rateInMicros;
+        /**
+         * The maximum for this tier range.
+         *
+         * @param string $highValue
+         */
+        public function setHighValue($highValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHighValue()
+        {
+        }
+        /**
+         * The minimum for this tier range.
+         *
+         * @param string $lowValue
+         */
+        public function setLowValue($lowValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLowValue()
+        {
+        }
+        /**
+         * Rate in micros for this tier.
+         *
+         * @param string $rateInMicros
+         */
+        public function setRateInMicros($rateInMicros)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRateInMicros()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\BillingRateTieredRate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHighValue()
-    {
-    }
-    /**
-     * The minimum for this tier range.
-     *
-     * @param string $lowValue
-     */
-    public function setLowValue($lowValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLowValue()
-    {
-    }
-    /**
-     * Rate in micros for this tier.
-     *
-     * @param string $rateInMicros
-     */
-    public function setRateInMicros($rateInMicros)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRateInMicros()
+    class Google_Service_Dfareporting_BillingRateTieredRate extends \Google\Service\Dfareporting\BillingRateTieredRate
     {
     }
 }

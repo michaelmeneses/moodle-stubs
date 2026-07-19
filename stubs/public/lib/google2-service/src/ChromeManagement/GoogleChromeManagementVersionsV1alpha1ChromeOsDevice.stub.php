@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementVersionsV1alpha1ChromeOsDevice extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $deviceDirectoryApiId;
-    /**
-     * @var string
-     */
-    public $serialNumber;
-    /**
-     * @param string
-     */
-    public function setDeviceDirectoryApiId($deviceDirectoryApiId)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementVersionsV1alpha1ChromeOsDevice extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $deviceDirectoryApiId;
+        /**
+         * @var string
+         */
+        public $serialNumber;
+        /**
+         * @param string
+         */
+        public function setDeviceDirectoryApiId($deviceDirectoryApiId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeviceDirectoryApiId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSerialNumber($serialNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSerialNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1alpha1ChromeOsDevice registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceDirectoryApiId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSerialNumber($serialNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSerialNumber()
+    class Google_Service_ChromeManagement_GoogleChromeManagementVersionsV1alpha1ChromeOsDevice extends \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1alpha1ChromeOsDevice
     {
     }
 }

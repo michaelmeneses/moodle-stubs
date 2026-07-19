@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class ListConnectorsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $connectorsType = Connector::class;
-    protected $connectorsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * @param Connector[]
-     */
-    public function setConnectors($connectors)
+namespace Google\Service\Connectors {
+    class ListConnectorsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $connectorsType = Connector::class;
+        protected $connectorsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * @param Connector[]
+         */
+        public function setConnectors($connectors)
+        {
+        }
+        /**
+         * @return Connector[]
+         */
+        public function getConnectors()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Connector[]
+     * Runtime class alias of \Google\Service\Connectors\ListConnectorsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConnectors()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_Connectors_ListConnectorsResponse extends \Google\Service\Connectors\ListConnectorsResponse
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GameServices;
-
-class GkeClusterReference extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $cluster;
-    /**
-     * @param string
-     */
-    public function setCluster($cluster)
+namespace Google\Service\GameServices {
+    class GkeClusterReference extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $cluster;
+        /**
+         * @param string
+         */
+        public function setCluster($cluster)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCluster()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GameServices\GkeClusterReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCluster()
+    class Google_Service_GameServices_GkeClusterReference extends \Google\Service\GameServices\GkeClusterReference
     {
     }
 }

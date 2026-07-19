@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\IdentityToolkit;
-
-class IdentitytoolkitRelyingpartyVerifyCustomTokenRequest extends \Google\Model
-{
-    /**
-     * GCP project number of the requesting delegated app. Currently only intended
-     * for Firebase V1 migration.
-     *
-     * @var string
-     */
-    public $delegatedProjectNumber;
-    /**
-     * Instance id token of the app.
-     *
-     * @var string
-     */
-    public $instanceId;
-    /**
-     * Whether return sts id token and refresh token instead of gitkit token.
-     *
-     * @var bool
-     */
-    public $returnSecureToken;
-    /**
-     * The custom token to verify
-     *
-     * @var string
-     */
-    public $token;
-    /**
-     * GCP project number of the requesting delegated app. Currently only intended
-     * for Firebase V1 migration.
-     *
-     * @param string $delegatedProjectNumber
-     */
-    public function setDelegatedProjectNumber($delegatedProjectNumber)
+namespace Google\Service\IdentityToolkit {
+    class IdentitytoolkitRelyingpartyVerifyCustomTokenRequest extends \Google\Model
     {
+        /**
+         * GCP project number of the requesting delegated app. Currently only intended
+         * for Firebase V1 migration.
+         *
+         * @var string
+         */
+        public $delegatedProjectNumber;
+        /**
+         * Instance id token of the app.
+         *
+         * @var string
+         */
+        public $instanceId;
+        /**
+         * Whether return sts id token and refresh token instead of gitkit token.
+         *
+         * @var bool
+         */
+        public $returnSecureToken;
+        /**
+         * The custom token to verify
+         *
+         * @var string
+         */
+        public $token;
+        /**
+         * GCP project number of the requesting delegated app. Currently only intended
+         * for Firebase V1 migration.
+         *
+         * @param string $delegatedProjectNumber
+         */
+        public function setDelegatedProjectNumber($delegatedProjectNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDelegatedProjectNumber()
+        {
+        }
+        /**
+         * Instance id token of the app.
+         *
+         * @param string $instanceId
+         */
+        public function setInstanceId($instanceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstanceId()
+        {
+        }
+        /**
+         * Whether return sts id token and refresh token instead of gitkit token.
+         *
+         * @param bool $returnSecureToken
+         */
+        public function setReturnSecureToken($returnSecureToken)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReturnSecureToken()
+        {
+        }
+        /**
+         * The custom token to verify
+         *
+         * @param string $token
+         */
+        public function setToken($token)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartyVerifyCustomTokenRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDelegatedProjectNumber()
-    {
-    }
-    /**
-     * Instance id token of the app.
-     *
-     * @param string $instanceId
-     */
-    public function setInstanceId($instanceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstanceId()
-    {
-    }
-    /**
-     * Whether return sts id token and refresh token instead of gitkit token.
-     *
-     * @param bool $returnSecureToken
-     */
-    public function setReturnSecureToken($returnSecureToken)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReturnSecureToken()
-    {
-    }
-    /**
-     * The custom token to verify
-     *
-     * @param string $token
-     */
-    public function setToken($token)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getToken()
+    class Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartyVerifyCustomTokenRequest extends \Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartyVerifyCustomTokenRequest
     {
     }
 }

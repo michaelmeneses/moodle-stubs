@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class VmwareBundleConfig extends \Google\Model
-{
-    protected $statusType = ResourceStatus::class;
-    protected $statusDataType = '';
-    /**
-     * The version of the bundle.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Output only. Resource status for the bundle.
-     *
-     * @param ResourceStatus $status
-     */
-    public function setStatus(ResourceStatus $status)
+namespace Google\Service\GKEOnPrem {
+    class VmwareBundleConfig extends \Google\Model
     {
+        protected $statusType = ResourceStatus::class;
+        protected $statusDataType = '';
+        /**
+         * The version of the bundle.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Output only. Resource status for the bundle.
+         *
+         * @param ResourceStatus $status
+         */
+        public function setStatus(ResourceStatus $status)
+        {
+        }
+        /**
+         * @return ResourceStatus
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * The version of the bundle.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ResourceStatus
+     * Runtime class alias of \Google\Service\GKEOnPrem\VmwareBundleConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStatus()
-    {
-    }
-    /**
-     * The version of the bundle.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_GKEOnPrem_VmwareBundleConfig extends \Google\Service\GKEOnPrem\VmwareBundleConfig
     {
     }
 }

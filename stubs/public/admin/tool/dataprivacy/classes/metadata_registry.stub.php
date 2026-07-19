@@ -29,6 +29,7 @@
  */
 namespace tool_dataprivacy;
 
+use core_privacy\local\metadata\types\type;
 /**
  * Class containing helper methods for processing data requests.
  *

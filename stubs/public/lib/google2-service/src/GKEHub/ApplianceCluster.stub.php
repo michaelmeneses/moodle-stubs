@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ApplianceCluster extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $resourceLink;
-    /**
-     * @param string
-     */
-    public function setResourceLink($resourceLink)
+namespace Google\Service\GKEHub {
+    class ApplianceCluster extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $resourceLink;
+        /**
+         * @param string
+         */
+        public function setResourceLink($resourceLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceLink()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\ApplianceCluster registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResourceLink()
+    class Google_Service_GKEHub_ApplianceCluster extends \Google\Service\GKEHub\ApplianceCluster
     {
     }
 }

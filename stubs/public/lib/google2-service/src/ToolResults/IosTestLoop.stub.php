@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class IosTestLoop extends \Google\Model
-{
-    /**
-     * Bundle ID of the app.
-     *
-     * @var string
-     */
-    public $bundleId;
-    /**
-     * Bundle ID of the app.
-     *
-     * @param string $bundleId
-     */
-    public function setBundleId($bundleId)
+namespace Google\Service\ToolResults {
+    class IosTestLoop extends \Google\Model
     {
+        /**
+         * Bundle ID of the app.
+         *
+         * @var string
+         */
+        public $bundleId;
+        /**
+         * Bundle ID of the app.
+         *
+         * @param string $bundleId
+         */
+        public function setBundleId($bundleId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBundleId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ToolResults\IosTestLoop registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBundleId()
+    class Google_Service_ToolResults_IosTestLoop extends \Google\Service\ToolResults\IosTestLoop
     {
     }
 }

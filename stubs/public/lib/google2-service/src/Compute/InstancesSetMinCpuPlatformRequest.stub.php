@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InstancesSetMinCpuPlatformRequest extends \Google\Model
-{
-    /**
-     * Minimum cpu/platform this instance should be started at.
-     *
-     * @var string
-     */
-    public $minCpuPlatform;
-    /**
-     * Minimum cpu/platform this instance should be started at.
-     *
-     * @param string $minCpuPlatform
-     */
-    public function setMinCpuPlatform($minCpuPlatform)
+namespace Google\Service\Compute {
+    class InstancesSetMinCpuPlatformRequest extends \Google\Model
     {
+        /**
+         * Minimum cpu/platform this instance should be started at.
+         *
+         * @var string
+         */
+        public $minCpuPlatform;
+        /**
+         * Minimum cpu/platform this instance should be started at.
+         *
+         * @param string $minCpuPlatform
+         */
+        public function setMinCpuPlatform($minCpuPlatform)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMinCpuPlatform()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\InstancesSetMinCpuPlatformRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMinCpuPlatform()
+    class Google_Service_Compute_InstancesSetMinCpuPlatformRequest extends \Google\Service\Compute\InstancesSetMinCpuPlatformRequest
     {
     }
 }

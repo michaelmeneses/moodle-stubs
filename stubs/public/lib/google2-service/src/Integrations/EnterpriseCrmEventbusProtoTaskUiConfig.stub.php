@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoTaskUiConfig extends \Google\Collection
-{
-    protected $collection_key = 'taskUiModuleConfigs';
-    protected $taskUiModuleConfigsType = EnterpriseCrmEventbusProtoTaskUiModuleConfig::class;
-    protected $taskUiModuleConfigsDataType = 'array';
-    /**
-     * Configurations of included config modules.
-     *
-     * @param EnterpriseCrmEventbusProtoTaskUiModuleConfig[] $taskUiModuleConfigs
-     */
-    public function setTaskUiModuleConfigs($taskUiModuleConfigs)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoTaskUiConfig extends \Google\Collection
     {
+        protected $collection_key = 'taskUiModuleConfigs';
+        protected $taskUiModuleConfigsType = EnterpriseCrmEventbusProtoTaskUiModuleConfig::class;
+        protected $taskUiModuleConfigsDataType = 'array';
+        /**
+         * Configurations of included config modules.
+         *
+         * @param EnterpriseCrmEventbusProtoTaskUiModuleConfig[] $taskUiModuleConfigs
+         */
+        public function setTaskUiModuleConfigs($taskUiModuleConfigs)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoTaskUiModuleConfig[]
+         */
+        public function getTaskUiModuleConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnterpriseCrmEventbusProtoTaskUiModuleConfig[]
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoTaskUiConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTaskUiModuleConfigs()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoTaskUiConfig extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoTaskUiConfig
     {
     }
 }

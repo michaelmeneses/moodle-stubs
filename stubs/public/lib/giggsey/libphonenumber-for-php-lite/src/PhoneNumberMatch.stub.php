@@ -8,6 +8,9 @@
  */
 namespace libphonenumber;
 
+use InvalidArgumentException;
+use Stringable;
+use function mb_strlen;
 /**
  * @no-named-arguments
  */

@@ -21,160 +21,169 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1Property extends \Google\Model
-{
-    protected $dateTimeValuesType = GoogleCloudContentwarehouseV1DateTimeArray::class;
-    protected $dateTimeValuesDataType = '';
-    protected $enumValuesType = GoogleCloudContentwarehouseV1EnumArray::class;
-    protected $enumValuesDataType = '';
-    protected $floatValuesType = GoogleCloudContentwarehouseV1FloatArray::class;
-    protected $floatValuesDataType = '';
-    protected $integerValuesType = GoogleCloudContentwarehouseV1IntegerArray::class;
-    protected $integerValuesDataType = '';
-    protected $mapPropertyType = GoogleCloudContentwarehouseV1MapProperty::class;
-    protected $mapPropertyDataType = '';
-    /**
-     * Required. Must match the name of a PropertyDefinition in the
-     * DocumentSchema.
-     *
-     * @var string
-     */
-    public $name;
-    protected $propertyValuesType = GoogleCloudContentwarehouseV1PropertyArray::class;
-    protected $propertyValuesDataType = '';
-    protected $textValuesType = GoogleCloudContentwarehouseV1TextArray::class;
-    protected $textValuesDataType = '';
-    protected $timestampValuesType = GoogleCloudContentwarehouseV1TimestampArray::class;
-    protected $timestampValuesDataType = '';
-    /**
-     * Date time property values. It is not supported by CMEK compliant
-     * deployment.
-     *
-     * @param GoogleCloudContentwarehouseV1DateTimeArray $dateTimeValues
-     */
-    public function setDateTimeValues(GoogleCloudContentwarehouseV1DateTimeArray $dateTimeValues)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1Property extends \Google\Model
     {
+        protected $dateTimeValuesType = GoogleCloudContentwarehouseV1DateTimeArray::class;
+        protected $dateTimeValuesDataType = '';
+        protected $enumValuesType = GoogleCloudContentwarehouseV1EnumArray::class;
+        protected $enumValuesDataType = '';
+        protected $floatValuesType = GoogleCloudContentwarehouseV1FloatArray::class;
+        protected $floatValuesDataType = '';
+        protected $integerValuesType = GoogleCloudContentwarehouseV1IntegerArray::class;
+        protected $integerValuesDataType = '';
+        protected $mapPropertyType = GoogleCloudContentwarehouseV1MapProperty::class;
+        protected $mapPropertyDataType = '';
+        /**
+         * Required. Must match the name of a PropertyDefinition in the
+         * DocumentSchema.
+         *
+         * @var string
+         */
+        public $name;
+        protected $propertyValuesType = GoogleCloudContentwarehouseV1PropertyArray::class;
+        protected $propertyValuesDataType = '';
+        protected $textValuesType = GoogleCloudContentwarehouseV1TextArray::class;
+        protected $textValuesDataType = '';
+        protected $timestampValuesType = GoogleCloudContentwarehouseV1TimestampArray::class;
+        protected $timestampValuesDataType = '';
+        /**
+         * Date time property values. It is not supported by CMEK compliant
+         * deployment.
+         *
+         * @param GoogleCloudContentwarehouseV1DateTimeArray $dateTimeValues
+         */
+        public function setDateTimeValues(GoogleCloudContentwarehouseV1DateTimeArray $dateTimeValues)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1DateTimeArray
+         */
+        public function getDateTimeValues()
+        {
+        }
+        /**
+         * Enum property values.
+         *
+         * @param GoogleCloudContentwarehouseV1EnumArray $enumValues
+         */
+        public function setEnumValues(GoogleCloudContentwarehouseV1EnumArray $enumValues)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1EnumArray
+         */
+        public function getEnumValues()
+        {
+        }
+        /**
+         * Float property values.
+         *
+         * @param GoogleCloudContentwarehouseV1FloatArray $floatValues
+         */
+        public function setFloatValues(GoogleCloudContentwarehouseV1FloatArray $floatValues)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1FloatArray
+         */
+        public function getFloatValues()
+        {
+        }
+        /**
+         * Integer property values.
+         *
+         * @param GoogleCloudContentwarehouseV1IntegerArray $integerValues
+         */
+        public function setIntegerValues(GoogleCloudContentwarehouseV1IntegerArray $integerValues)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1IntegerArray
+         */
+        public function getIntegerValues()
+        {
+        }
+        /**
+         * Map property values.
+         *
+         * @param GoogleCloudContentwarehouseV1MapProperty $mapProperty
+         */
+        public function setMapProperty(GoogleCloudContentwarehouseV1MapProperty $mapProperty)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1MapProperty
+         */
+        public function getMapProperty()
+        {
+        }
+        /**
+         * Required. Must match the name of a PropertyDefinition in the
+         * DocumentSchema.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Nested structured data property values.
+         *
+         * @param GoogleCloudContentwarehouseV1PropertyArray $propertyValues
+         */
+        public function setPropertyValues(GoogleCloudContentwarehouseV1PropertyArray $propertyValues)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1PropertyArray
+         */
+        public function getPropertyValues()
+        {
+        }
+        /**
+         * String/text property values.
+         *
+         * @param GoogleCloudContentwarehouseV1TextArray $textValues
+         */
+        public function setTextValues(GoogleCloudContentwarehouseV1TextArray $textValues)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1TextArray
+         */
+        public function getTextValues()
+        {
+        }
+        /**
+         * Timestamp property values. It is not supported by CMEK compliant
+         * deployment.
+         *
+         * @param GoogleCloudContentwarehouseV1TimestampArray $timestampValues
+         */
+        public function setTimestampValues(GoogleCloudContentwarehouseV1TimestampArray $timestampValues)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1TimestampArray
+         */
+        public function getTimestampValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContentwarehouseV1DateTimeArray
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1Property registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDateTimeValues()
-    {
-    }
-    /**
-     * Enum property values.
-     *
-     * @param GoogleCloudContentwarehouseV1EnumArray $enumValues
-     */
-    public function setEnumValues(GoogleCloudContentwarehouseV1EnumArray $enumValues)
-    {
-    }
-    /**
-     * @return GoogleCloudContentwarehouseV1EnumArray
-     */
-    public function getEnumValues()
-    {
-    }
-    /**
-     * Float property values.
-     *
-     * @param GoogleCloudContentwarehouseV1FloatArray $floatValues
-     */
-    public function setFloatValues(GoogleCloudContentwarehouseV1FloatArray $floatValues)
-    {
-    }
-    /**
-     * @return GoogleCloudContentwarehouseV1FloatArray
-     */
-    public function getFloatValues()
-    {
-    }
-    /**
-     * Integer property values.
-     *
-     * @param GoogleCloudContentwarehouseV1IntegerArray $integerValues
-     */
-    public function setIntegerValues(GoogleCloudContentwarehouseV1IntegerArray $integerValues)
-    {
-    }
-    /**
-     * @return GoogleCloudContentwarehouseV1IntegerArray
-     */
-    public function getIntegerValues()
-    {
-    }
-    /**
-     * Map property values.
-     *
-     * @param GoogleCloudContentwarehouseV1MapProperty $mapProperty
-     */
-    public function setMapProperty(GoogleCloudContentwarehouseV1MapProperty $mapProperty)
-    {
-    }
-    /**
-     * @return GoogleCloudContentwarehouseV1MapProperty
-     */
-    public function getMapProperty()
-    {
-    }
-    /**
-     * Required. Must match the name of a PropertyDefinition in the
-     * DocumentSchema.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Nested structured data property values.
-     *
-     * @param GoogleCloudContentwarehouseV1PropertyArray $propertyValues
-     */
-    public function setPropertyValues(GoogleCloudContentwarehouseV1PropertyArray $propertyValues)
-    {
-    }
-    /**
-     * @return GoogleCloudContentwarehouseV1PropertyArray
-     */
-    public function getPropertyValues()
-    {
-    }
-    /**
-     * String/text property values.
-     *
-     * @param GoogleCloudContentwarehouseV1TextArray $textValues
-     */
-    public function setTextValues(GoogleCloudContentwarehouseV1TextArray $textValues)
-    {
-    }
-    /**
-     * @return GoogleCloudContentwarehouseV1TextArray
-     */
-    public function getTextValues()
-    {
-    }
-    /**
-     * Timestamp property values. It is not supported by CMEK compliant
-     * deployment.
-     *
-     * @param GoogleCloudContentwarehouseV1TimestampArray $timestampValues
-     */
-    public function setTimestampValues(GoogleCloudContentwarehouseV1TimestampArray $timestampValues)
-    {
-    }
-    /**
-     * @return GoogleCloudContentwarehouseV1TimestampArray
-     */
-    public function getTimestampValues()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1Property extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1Property
     {
     }
 }

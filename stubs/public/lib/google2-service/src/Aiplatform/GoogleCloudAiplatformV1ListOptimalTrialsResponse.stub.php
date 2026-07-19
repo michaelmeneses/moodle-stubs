@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ListOptimalTrialsResponse extends \Google\Collection
-{
-    protected $collection_key = 'optimalTrials';
-    protected $optimalTrialsType = GoogleCloudAiplatformV1Trial::class;
-    protected $optimalTrialsDataType = 'array';
-    /**
-     * The pareto-optimal Trials for multiple objective Study or the optimal trial
-     * for single objective Study. The definition of pareto-optimal can be checked
-     * in wiki page. https://en.wikipedia.org/wiki/Pareto_efficiency
-     *
-     * @param GoogleCloudAiplatformV1Trial[] $optimalTrials
-     */
-    public function setOptimalTrials($optimalTrials)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ListOptimalTrialsResponse extends \Google\Collection
     {
+        protected $collection_key = 'optimalTrials';
+        protected $optimalTrialsType = GoogleCloudAiplatformV1Trial::class;
+        protected $optimalTrialsDataType = 'array';
+        /**
+         * The pareto-optimal Trials for multiple objective Study or the optimal trial
+         * for single objective Study. The definition of pareto-optimal can be checked
+         * in wiki page. https://en.wikipedia.org/wiki/Pareto_efficiency
+         *
+         * @param GoogleCloudAiplatformV1Trial[] $optimalTrials
+         */
+        public function setOptimalTrials($optimalTrials)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Trial[]
+         */
+        public function getOptimalTrials()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1Trial[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListOptimalTrialsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOptimalTrials()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ListOptimalTrialsResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListOptimalTrialsResponse
     {
     }
 }

@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class ResourceUsageExportConfig extends \Google\Model
-{
-    protected $bigqueryDestinationType = BigQueryDestination::class;
-    protected $bigqueryDestinationDataType = '';
-    protected $consumptionMeteringConfigType = ConsumptionMeteringConfig::class;
-    protected $consumptionMeteringConfigDataType = '';
-    /**
-     * Whether to enable network egress metering for this cluster. If enabled, a
-     * daemonset will be created in the cluster to meter network egress traffic.
-     *
-     * @var bool
-     */
-    public $enableNetworkEgressMetering;
-    /**
-     * Configuration to use BigQuery as usage export destination.
-     *
-     * @param BigQueryDestination $bigqueryDestination
-     */
-    public function setBigqueryDestination(BigQueryDestination $bigqueryDestination)
+namespace Google\Service\Container {
+    class ResourceUsageExportConfig extends \Google\Model
     {
+        protected $bigqueryDestinationType = BigQueryDestination::class;
+        protected $bigqueryDestinationDataType = '';
+        protected $consumptionMeteringConfigType = ConsumptionMeteringConfig::class;
+        protected $consumptionMeteringConfigDataType = '';
+        /**
+         * Whether to enable network egress metering for this cluster. If enabled, a
+         * daemonset will be created in the cluster to meter network egress traffic.
+         *
+         * @var bool
+         */
+        public $enableNetworkEgressMetering;
+        /**
+         * Configuration to use BigQuery as usage export destination.
+         *
+         * @param BigQueryDestination $bigqueryDestination
+         */
+        public function setBigqueryDestination(BigQueryDestination $bigqueryDestination)
+        {
+        }
+        /**
+         * @return BigQueryDestination
+         */
+        public function getBigqueryDestination()
+        {
+        }
+        /**
+         * Configuration to enable resource consumption metering.
+         *
+         * @param ConsumptionMeteringConfig $consumptionMeteringConfig
+         */
+        public function setConsumptionMeteringConfig(ConsumptionMeteringConfig $consumptionMeteringConfig)
+        {
+        }
+        /**
+         * @return ConsumptionMeteringConfig
+         */
+        public function getConsumptionMeteringConfig()
+        {
+        }
+        /**
+         * Whether to enable network egress metering for this cluster. If enabled, a
+         * daemonset will be created in the cluster to meter network egress traffic.
+         *
+         * @param bool $enableNetworkEgressMetering
+         */
+        public function setEnableNetworkEgressMetering($enableNetworkEgressMetering)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableNetworkEgressMetering()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BigQueryDestination
+     * Runtime class alias of \Google\Service\Container\ResourceUsageExportConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBigqueryDestination()
-    {
-    }
-    /**
-     * Configuration to enable resource consumption metering.
-     *
-     * @param ConsumptionMeteringConfig $consumptionMeteringConfig
-     */
-    public function setConsumptionMeteringConfig(ConsumptionMeteringConfig $consumptionMeteringConfig)
-    {
-    }
-    /**
-     * @return ConsumptionMeteringConfig
-     */
-    public function getConsumptionMeteringConfig()
-    {
-    }
-    /**
-     * Whether to enable network egress metering for this cluster. If enabled, a
-     * daemonset will be created in the cluster to meter network egress traffic.
-     *
-     * @param bool $enableNetworkEgressMetering
-     */
-    public function setEnableNetworkEgressMetering($enableNetworkEgressMetering)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableNetworkEgressMetering()
+    class Google_Service_Container_ResourceUsageExportConfig extends \Google\Service\Container\ResourceUsageExportConfig
     {
     }
 }

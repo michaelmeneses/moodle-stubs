@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AreaInsights;
-
-class LocationFilter extends \Google\Model
-{
-    protected $circleType = Circle::class;
-    protected $circleDataType = '';
-    protected $customAreaType = CustomArea::class;
-    protected $customAreaDataType = '';
-    protected $regionType = Region::class;
-    protected $regionDataType = '';
-    /**
-     * Area as a circle.
-     *
-     * @param Circle $circle
-     */
-    public function setCircle(Circle $circle)
+namespace Google\Service\AreaInsights {
+    class LocationFilter extends \Google\Model
     {
+        protected $circleType = Circle::class;
+        protected $circleDataType = '';
+        protected $customAreaType = CustomArea::class;
+        protected $customAreaDataType = '';
+        protected $regionType = Region::class;
+        protected $regionDataType = '';
+        /**
+         * Area as a circle.
+         *
+         * @param Circle $circle
+         */
+        public function setCircle(Circle $circle)
+        {
+        }
+        /**
+         * @return Circle
+         */
+        public function getCircle()
+        {
+        }
+        /**
+         * Custom area specified by a polygon.
+         *
+         * @param CustomArea $customArea
+         */
+        public function setCustomArea(CustomArea $customArea)
+        {
+        }
+        /**
+         * @return CustomArea
+         */
+        public function getCustomArea()
+        {
+        }
+        /**
+         * Area as region.
+         *
+         * @param Region $region
+         */
+        public function setRegion(Region $region)
+        {
+        }
+        /**
+         * @return Region
+         */
+        public function getRegion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Circle
+     * Runtime class alias of \Google\Service\AreaInsights\LocationFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCircle()
-    {
-    }
-    /**
-     * Custom area specified by a polygon.
-     *
-     * @param CustomArea $customArea
-     */
-    public function setCustomArea(CustomArea $customArea)
-    {
-    }
-    /**
-     * @return CustomArea
-     */
-    public function getCustomArea()
-    {
-    }
-    /**
-     * Area as region.
-     *
-     * @param Region $region
-     */
-    public function setRegion(Region $region)
-    {
-    }
-    /**
-     * @return Region
-     */
-    public function getRegion()
+    class Google_Service_AreaInsights_LocationFilter extends \Google\Service\AreaInsights\LocationFilter
     {
     }
 }

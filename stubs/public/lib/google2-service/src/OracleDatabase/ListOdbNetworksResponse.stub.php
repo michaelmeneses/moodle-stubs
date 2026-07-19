@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class ListOdbNetworksResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $odbNetworksType = OdbNetwork::class;
-    protected $odbNetworksDataType = 'array';
-    /**
-     * Unreachable locations when listing resources across all locations using
-     * wildcard location '-'.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\OracleDatabase {
+    class ListOdbNetworksResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $odbNetworksType = OdbNetwork::class;
+        protected $odbNetworksDataType = 'array';
+        /**
+         * Unreachable locations when listing resources across all locations using
+         * wildcard location '-'.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of ODB Networks.
+         *
+         * @param OdbNetwork[] $odbNetworks
+         */
+        public function setOdbNetworks($odbNetworks)
+        {
+        }
+        /**
+         * @return OdbNetwork[]
+         */
+        public function getOdbNetworks()
+        {
+        }
+        /**
+         * Unreachable locations when listing resources across all locations using
+         * wildcard location '-'.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OracleDatabase\ListOdbNetworksResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of ODB Networks.
-     *
-     * @param OdbNetwork[] $odbNetworks
-     */
-    public function setOdbNetworks($odbNetworks)
-    {
-    }
-    /**
-     * @return OdbNetwork[]
-     */
-    public function getOdbNetworks()
-    {
-    }
-    /**
-     * Unreachable locations when listing resources across all locations using
-     * wildcard location '-'.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_OracleDatabase_ListOdbNetworksResponse extends \Google\Service\OracleDatabase\ListOdbNetworksResponse
     {
     }
 }

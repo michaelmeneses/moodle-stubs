@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine;
-
-class ListAuthorizedDomainsResponse extends \Google\Collection
-{
-    protected $collection_key = 'domains';
-    protected $domainsType = AuthorizedDomain::class;
-    protected $domainsDataType = 'array';
-    /**
-     * Continuation token for fetching the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The authorized domains belonging to the user.
-     *
-     * @param AuthorizedDomain[] $domains
-     */
-    public function setDomains($domains)
+namespace Google\Service\Appengine {
+    class ListAuthorizedDomainsResponse extends \Google\Collection
     {
+        protected $collection_key = 'domains';
+        protected $domainsType = AuthorizedDomain::class;
+        protected $domainsDataType = 'array';
+        /**
+         * Continuation token for fetching the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The authorized domains belonging to the user.
+         *
+         * @param AuthorizedDomain[] $domains
+         */
+        public function setDomains($domains)
+        {
+        }
+        /**
+         * @return AuthorizedDomain[]
+         */
+        public function getDomains()
+        {
+        }
+        /**
+         * Continuation token for fetching the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AuthorizedDomain[]
+     * Runtime class alias of \Google\Service\Appengine\ListAuthorizedDomainsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDomains()
-    {
-    }
-    /**
-     * Continuation token for fetching the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Appengine_ListAuthorizedDomainsResponse extends \Google\Service\Appengine\ListAuthorizedDomainsResponse
     {
     }
 }

@@ -21,164 +21,173 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteStorageWidget extends \Google\Model
-{
-    protected $buttonListType = AppsDynamiteStorageButtonList::class;
-    protected $buttonListDataType = '';
-    protected $columnsType = AppsDynamiteStorageColumns::class;
-    protected $columnsDataType = '';
-    protected $dateTimePickerType = AppsDynamiteStorageDateTimePicker::class;
-    protected $dateTimePickerDataType = '';
-    protected $decoratedTextType = AppsDynamiteStorageDecoratedText::class;
-    protected $decoratedTextDataType = '';
-    protected $dividerType = AppsDynamiteStorageDivider::class;
-    protected $dividerDataType = '';
-    protected $gridType = AppsDynamiteStorageGrid::class;
-    protected $gridDataType = '';
-    /**
-     * @var string
-     */
-    public $horizontalAlignment;
-    protected $imageType = AppsDynamiteStorageImage::class;
-    protected $imageDataType = '';
-    protected $selectionInputType = AppsDynamiteStorageSelectionInput::class;
-    protected $selectionInputDataType = '';
-    protected $textInputType = AppsDynamiteStorageTextInput::class;
-    protected $textInputDataType = '';
-    protected $textParagraphType = AppsDynamiteStorageTextParagraph::class;
-    protected $textParagraphDataType = '';
-    /**
-     * @param AppsDynamiteStorageButtonList
-     */
-    public function setButtonList(AppsDynamiteStorageButtonList $buttonList)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteStorageWidget extends \Google\Model
     {
+        protected $buttonListType = AppsDynamiteStorageButtonList::class;
+        protected $buttonListDataType = '';
+        protected $columnsType = AppsDynamiteStorageColumns::class;
+        protected $columnsDataType = '';
+        protected $dateTimePickerType = AppsDynamiteStorageDateTimePicker::class;
+        protected $dateTimePickerDataType = '';
+        protected $decoratedTextType = AppsDynamiteStorageDecoratedText::class;
+        protected $decoratedTextDataType = '';
+        protected $dividerType = AppsDynamiteStorageDivider::class;
+        protected $dividerDataType = '';
+        protected $gridType = AppsDynamiteStorageGrid::class;
+        protected $gridDataType = '';
+        /**
+         * @var string
+         */
+        public $horizontalAlignment;
+        protected $imageType = AppsDynamiteStorageImage::class;
+        protected $imageDataType = '';
+        protected $selectionInputType = AppsDynamiteStorageSelectionInput::class;
+        protected $selectionInputDataType = '';
+        protected $textInputType = AppsDynamiteStorageTextInput::class;
+        protected $textInputDataType = '';
+        protected $textParagraphType = AppsDynamiteStorageTextParagraph::class;
+        protected $textParagraphDataType = '';
+        /**
+         * @param AppsDynamiteStorageButtonList
+         */
+        public function setButtonList(AppsDynamiteStorageButtonList $buttonList)
+        {
+        }
+        /**
+         * @return AppsDynamiteStorageButtonList
+         */
+        public function getButtonList()
+        {
+        }
+        /**
+         * @param AppsDynamiteStorageColumns
+         */
+        public function setColumns(AppsDynamiteStorageColumns $columns)
+        {
+        }
+        /**
+         * @return AppsDynamiteStorageColumns
+         */
+        public function getColumns()
+        {
+        }
+        /**
+         * @param AppsDynamiteStorageDateTimePicker
+         */
+        public function setDateTimePicker(AppsDynamiteStorageDateTimePicker $dateTimePicker)
+        {
+        }
+        /**
+         * @return AppsDynamiteStorageDateTimePicker
+         */
+        public function getDateTimePicker()
+        {
+        }
+        /**
+         * @param AppsDynamiteStorageDecoratedText
+         */
+        public function setDecoratedText(AppsDynamiteStorageDecoratedText $decoratedText)
+        {
+        }
+        /**
+         * @return AppsDynamiteStorageDecoratedText
+         */
+        public function getDecoratedText()
+        {
+        }
+        /**
+         * @param AppsDynamiteStorageDivider
+         */
+        public function setDivider(AppsDynamiteStorageDivider $divider)
+        {
+        }
+        /**
+         * @return AppsDynamiteStorageDivider
+         */
+        public function getDivider()
+        {
+        }
+        /**
+         * @param AppsDynamiteStorageGrid
+         */
+        public function setGrid(AppsDynamiteStorageGrid $grid)
+        {
+        }
+        /**
+         * @return AppsDynamiteStorageGrid
+         */
+        public function getGrid()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setHorizontalAlignment($horizontalAlignment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHorizontalAlignment()
+        {
+        }
+        /**
+         * @param AppsDynamiteStorageImage
+         */
+        public function setImage(AppsDynamiteStorageImage $image)
+        {
+        }
+        /**
+         * @return AppsDynamiteStorageImage
+         */
+        public function getImage()
+        {
+        }
+        /**
+         * @param AppsDynamiteStorageSelectionInput
+         */
+        public function setSelectionInput(AppsDynamiteStorageSelectionInput $selectionInput)
+        {
+        }
+        /**
+         * @return AppsDynamiteStorageSelectionInput
+         */
+        public function getSelectionInput()
+        {
+        }
+        /**
+         * @param AppsDynamiteStorageTextInput
+         */
+        public function setTextInput(AppsDynamiteStorageTextInput $textInput)
+        {
+        }
+        /**
+         * @return AppsDynamiteStorageTextInput
+         */
+        public function getTextInput()
+        {
+        }
+        /**
+         * @param AppsDynamiteStorageTextParagraph
+         */
+        public function setTextParagraph(AppsDynamiteStorageTextParagraph $textParagraph)
+        {
+        }
+        /**
+         * @return AppsDynamiteStorageTextParagraph
+         */
+        public function getTextParagraph()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteStorageButtonList
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteStorageWidget registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getButtonList()
-    {
-    }
-    /**
-     * @param AppsDynamiteStorageColumns
-     */
-    public function setColumns(AppsDynamiteStorageColumns $columns)
-    {
-    }
-    /**
-     * @return AppsDynamiteStorageColumns
-     */
-    public function getColumns()
-    {
-    }
-    /**
-     * @param AppsDynamiteStorageDateTimePicker
-     */
-    public function setDateTimePicker(AppsDynamiteStorageDateTimePicker $dateTimePicker)
-    {
-    }
-    /**
-     * @return AppsDynamiteStorageDateTimePicker
-     */
-    public function getDateTimePicker()
-    {
-    }
-    /**
-     * @param AppsDynamiteStorageDecoratedText
-     */
-    public function setDecoratedText(AppsDynamiteStorageDecoratedText $decoratedText)
-    {
-    }
-    /**
-     * @return AppsDynamiteStorageDecoratedText
-     */
-    public function getDecoratedText()
-    {
-    }
-    /**
-     * @param AppsDynamiteStorageDivider
-     */
-    public function setDivider(AppsDynamiteStorageDivider $divider)
-    {
-    }
-    /**
-     * @return AppsDynamiteStorageDivider
-     */
-    public function getDivider()
-    {
-    }
-    /**
-     * @param AppsDynamiteStorageGrid
-     */
-    public function setGrid(AppsDynamiteStorageGrid $grid)
-    {
-    }
-    /**
-     * @return AppsDynamiteStorageGrid
-     */
-    public function getGrid()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setHorizontalAlignment($horizontalAlignment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHorizontalAlignment()
-    {
-    }
-    /**
-     * @param AppsDynamiteStorageImage
-     */
-    public function setImage(AppsDynamiteStorageImage $image)
-    {
-    }
-    /**
-     * @return AppsDynamiteStorageImage
-     */
-    public function getImage()
-    {
-    }
-    /**
-     * @param AppsDynamiteStorageSelectionInput
-     */
-    public function setSelectionInput(AppsDynamiteStorageSelectionInput $selectionInput)
-    {
-    }
-    /**
-     * @return AppsDynamiteStorageSelectionInput
-     */
-    public function getSelectionInput()
-    {
-    }
-    /**
-     * @param AppsDynamiteStorageTextInput
-     */
-    public function setTextInput(AppsDynamiteStorageTextInput $textInput)
-    {
-    }
-    /**
-     * @return AppsDynamiteStorageTextInput
-     */
-    public function getTextInput()
-    {
-    }
-    /**
-     * @param AppsDynamiteStorageTextParagraph
-     */
-    public function setTextParagraph(AppsDynamiteStorageTextParagraph $textParagraph)
-    {
-    }
-    /**
-     * @return AppsDynamiteStorageTextParagraph
-     */
-    public function getTextParagraph()
+    class Google_Service_CloudSearch_AppsDynamiteStorageWidget extends \Google\Service\CloudSearch\AppsDynamiteStorageWidget
     {
     }
 }

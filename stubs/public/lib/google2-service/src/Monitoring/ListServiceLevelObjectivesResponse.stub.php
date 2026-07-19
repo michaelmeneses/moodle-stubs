@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class ListServiceLevelObjectivesResponse extends \Google\Collection
-{
-    protected $collection_key = 'serviceLevelObjectives';
-    /**
-     * If there are more results than have been returned, then this field is set
-     * to a non-empty value. To see the additional results, use that value as
-     * page_token in the next call to this method.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $serviceLevelObjectivesType = ServiceLevelObjective::class;
-    protected $serviceLevelObjectivesDataType = 'array';
-    /**
-     * If there are more results than have been returned, then this field is set
-     * to a non-empty value. To see the additional results, use that value as
-     * page_token in the next call to this method.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Monitoring {
+    class ListServiceLevelObjectivesResponse extends \Google\Collection
     {
+        protected $collection_key = 'serviceLevelObjectives';
+        /**
+         * If there are more results than have been returned, then this field is set
+         * to a non-empty value. To see the additional results, use that value as
+         * page_token in the next call to this method.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $serviceLevelObjectivesType = ServiceLevelObjective::class;
+        protected $serviceLevelObjectivesDataType = 'array';
+        /**
+         * If there are more results than have been returned, then this field is set
+         * to a non-empty value. To see the additional results, use that value as
+         * page_token in the next call to this method.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The ServiceLevelObjectives matching the specified filter.
+         *
+         * @param ServiceLevelObjective[] $serviceLevelObjectives
+         */
+        public function setServiceLevelObjectives($serviceLevelObjectives)
+        {
+        }
+        /**
+         * @return ServiceLevelObjective[]
+         */
+        public function getServiceLevelObjectives()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Monitoring\ListServiceLevelObjectivesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The ServiceLevelObjectives matching the specified filter.
-     *
-     * @param ServiceLevelObjective[] $serviceLevelObjectives
-     */
-    public function setServiceLevelObjectives($serviceLevelObjectives)
-    {
-    }
-    /**
-     * @return ServiceLevelObjective[]
-     */
-    public function getServiceLevelObjectives()
+    class Google_Service_Monitoring_ListServiceLevelObjectivesResponse extends \Google\Service\Monitoring\ListServiceLevelObjectivesResponse
     {
     }
 }

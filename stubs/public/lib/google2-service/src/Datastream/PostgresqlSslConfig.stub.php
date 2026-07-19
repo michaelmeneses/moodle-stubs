@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class PostgresqlSslConfig extends \Google\Model
-{
-    protected $serverAndClientVerificationType = ServerAndClientVerification::class;
-    protected $serverAndClientVerificationDataType = '';
-    protected $serverVerificationType = ServerVerification::class;
-    protected $serverVerificationDataType = '';
-    /**
-     * If this field is set, the communication will be encrypted with TLS
-     * encryption and both the server identity and the client identity will be
-     * authenticated.
-     *
-     * @param ServerAndClientVerification $serverAndClientVerification
-     */
-    public function setServerAndClientVerification(ServerAndClientVerification $serverAndClientVerification)
+namespace Google\Service\Datastream {
+    class PostgresqlSslConfig extends \Google\Model
     {
+        protected $serverAndClientVerificationType = ServerAndClientVerification::class;
+        protected $serverAndClientVerificationDataType = '';
+        protected $serverVerificationType = ServerVerification::class;
+        protected $serverVerificationDataType = '';
+        /**
+         * If this field is set, the communication will be encrypted with TLS
+         * encryption and both the server identity and the client identity will be
+         * authenticated.
+         *
+         * @param ServerAndClientVerification $serverAndClientVerification
+         */
+        public function setServerAndClientVerification(ServerAndClientVerification $serverAndClientVerification)
+        {
+        }
+        /**
+         * @return ServerAndClientVerification
+         */
+        public function getServerAndClientVerification()
+        {
+        }
+        /**
+         * If this field is set, the communication will be encrypted with TLS
+         * encryption and the server identity will be authenticated.
+         *
+         * @param ServerVerification $serverVerification
+         */
+        public function setServerVerification(ServerVerification $serverVerification)
+        {
+        }
+        /**
+         * @return ServerVerification
+         */
+        public function getServerVerification()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ServerAndClientVerification
+     * Runtime class alias of \Google\Service\Datastream\PostgresqlSslConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getServerAndClientVerification()
-    {
-    }
-    /**
-     * If this field is set, the communication will be encrypted with TLS
-     * encryption and the server identity will be authenticated.
-     *
-     * @param ServerVerification $serverVerification
-     */
-    public function setServerVerification(ServerVerification $serverVerification)
-    {
-    }
-    /**
-     * @return ServerVerification
-     */
-    public function getServerVerification()
+    class Google_Service_Datastream_PostgresqlSslConfig extends \Google\Service\Datastream\PostgresqlSslConfig
     {
     }
 }

@@ -20,46 +20,59 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\output\renderer_factory;
-
-/**
- * This is renderer factory allows themes to override the standard renderers using php code.
- *
- * It will load any code from theme/mytheme/renderers.php and
- * theme/parenttheme/renderers.php, if then exist. Then whenever you ask for
- * a renderer for 'component', it will create a mytheme_component_renderer or a
- * parenttheme_component_renderer, instead of a component_renderer,
- * if either of those classes exist.
- *
- * @copyright 2009 Tim Hunt
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @since Moodle 2.0
- * @package core
- * @category output
- */
-class theme_overridden_renderer_factory extends renderer_factory_base
-{
+namespace core\output\renderer_factory {
+    use core\exception\coding_exception;
+    use core\output\renderer_base;
+    use core\output\theme_config;
+    use moodle_page;
     /**
-     * @var array An array of renderer prefixes
-     */
-    protected $prefixes = [];
-    /**
-     * Constructor.
-     * @param theme_config $theme the theme we are rendering for.
-     */
-    public function __construct(theme_config $theme)
-    {
-    }
-    /**
-     * Implement the subclass method
+     * This is renderer factory allows themes to override the standard renderers using php code.
      *
-     * @param moodle_page $page the page the renderer is outputting content for.
-     * @param string $component name such as 'core', 'mod_forum' or 'qtype_multichoice'.
-     * @param string $subtype optional subtype such as 'news' resulting to 'mod_forum_news'
-     * @param string $target one of rendering target constants
-     * @return renderer_base an object implementing the requested renderer interface.
+     * It will load any code from theme/mytheme/renderers.php and
+     * theme/parenttheme/renderers.php, if then exist. Then whenever you ask for
+     * a renderer for 'component', it will create a mytheme_component_renderer or a
+     * parenttheme_component_renderer, instead of a component_renderer,
+     * if either of those classes exist.
+     *
+     * @copyright 2009 Tim Hunt
+     * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     * @since Moodle 2.0
+     * @package core
+     * @category output
      */
-    public function get_renderer(moodle_page $page, $component, $subtype = null, $target = null)
+    class theme_overridden_renderer_factory extends renderer_factory_base
+    {
+        /**
+         * @var array An array of renderer prefixes
+         */
+        protected $prefixes = [];
+        /**
+         * Constructor.
+         * @param theme_config $theme the theme we are rendering for.
+         */
+        public function __construct(theme_config $theme)
+        {
+        }
+        /**
+         * Implement the subclass method
+         *
+         * @param moodle_page $page the page the renderer is outputting content for.
+         * @param string $component name such as 'core', 'mod_forum' or 'qtype_multichoice'.
+         * @param string $subtype optional subtype such as 'news' resulting to 'mod_forum_news'
+         * @param string $target one of rendering target constants
+         * @return renderer_base an object implementing the requested renderer interface.
+         */
+        public function get_renderer(moodle_page $page, $component, $subtype = null, $target = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \core\output\renderer_factory\theme_overridden_renderer_factory registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class theme_overridden_renderer_factory extends \core\output\renderer_factory\theme_overridden_renderer_factory
     {
     }
 }

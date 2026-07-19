@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1QueryReasoningEngineResponse extends \Google\Model
-{
-    /**
-     * Response provided by users in JSON object format.
-     *
-     * @var array
-     */
-    public $output;
-    /**
-     * Response provided by users in JSON object format.
-     *
-     * @param array $output
-     */
-    public function setOutput($output)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1QueryReasoningEngineResponse extends \Google\Model
     {
+        /**
+         * Response provided by users in JSON object format.
+         *
+         * @var array
+         */
+        public $output;
+        /**
+         * Response provided by users in JSON object format.
+         *
+         * @param array $output
+         */
+        public function setOutput($output)
+        {
+        }
+        /**
+         * @return array
+         */
+        public function getOutput()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1QueryReasoningEngineResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOutput()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1QueryReasoningEngineResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1QueryReasoningEngineResponse
     {
     }
 }

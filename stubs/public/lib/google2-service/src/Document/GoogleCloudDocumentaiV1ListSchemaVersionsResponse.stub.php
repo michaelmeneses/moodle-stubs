@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1ListSchemaVersionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'schemaVersions';
-    /**
-     * Points to the next SchemaVersion, otherwise empty.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $schemaVersionsType = GoogleCloudDocumentaiV1SchemaVersion::class;
-    protected $schemaVersionsDataType = 'array';
-    /**
-     * Points to the next SchemaVersion, otherwise empty.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1ListSchemaVersionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'schemaVersions';
+        /**
+         * Points to the next SchemaVersion, otherwise empty.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $schemaVersionsType = GoogleCloudDocumentaiV1SchemaVersion::class;
+        protected $schemaVersionsDataType = 'array';
+        /**
+         * Points to the next SchemaVersion, otherwise empty.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of SchemaVersions.
+         *
+         * @param GoogleCloudDocumentaiV1SchemaVersion[] $schemaVersions
+         */
+        public function setSchemaVersions($schemaVersions)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1SchemaVersion[]
+         */
+        public function getSchemaVersions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1ListSchemaVersionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of SchemaVersions.
-     *
-     * @param GoogleCloudDocumentaiV1SchemaVersion[] $schemaVersions
-     */
-    public function setSchemaVersions($schemaVersions)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1SchemaVersion[]
-     */
-    public function getSchemaVersions()
+    class Google_Service_Document_GoogleCloudDocumentaiV1ListSchemaVersionsResponse extends \Google\Service\Document\GoogleCloudDocumentaiV1ListSchemaVersionsResponse
     {
     }
 }

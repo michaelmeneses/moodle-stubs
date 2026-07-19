@@ -21,113 +21,122 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1SharedFlow extends \Google\Collection
-{
-    protected $collection_key = 'revision';
-    /**
-     * The id of the most recently created revision for this shared flow.
-     *
-     * @var string
-     */
-    public $latestRevisionId;
-    protected $metaDataType = GoogleCloudApigeeV1EntityMetadata::class;
-    protected $metaDataDataType = '';
-    /**
-     * The ID of the shared flow.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * A list of revisions of this shared flow.
-     *
-     * @var string[]
-     */
-    public $revision;
-    /**
-     * Optional. The ID of the space associated with this shared flow. Any IAM
-     * policies applied to the space will control access to this shared flow. To
-     * learn how Spaces can be used to manage resources, read the [Apigee Spaces
-     * Overview](https://cloud.google.com/apigee/docs/api-platform/system-
-     * administration/spaces/apigee-spaces-overview).
-     *
-     * @var string
-     */
-    public $space;
-    /**
-     * The id of the most recently created revision for this shared flow.
-     *
-     * @param string $latestRevisionId
-     */
-    public function setLatestRevisionId($latestRevisionId)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1SharedFlow extends \Google\Collection
     {
+        protected $collection_key = 'revision';
+        /**
+         * The id of the most recently created revision for this shared flow.
+         *
+         * @var string
+         */
+        public $latestRevisionId;
+        protected $metaDataType = GoogleCloudApigeeV1EntityMetadata::class;
+        protected $metaDataDataType = '';
+        /**
+         * The ID of the shared flow.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * A list of revisions of this shared flow.
+         *
+         * @var string[]
+         */
+        public $revision;
+        /**
+         * Optional. The ID of the space associated with this shared flow. Any IAM
+         * policies applied to the space will control access to this shared flow. To
+         * learn how Spaces can be used to manage resources, read the [Apigee Spaces
+         * Overview](https://cloud.google.com/apigee/docs/api-platform/system-
+         * administration/spaces/apigee-spaces-overview).
+         *
+         * @var string
+         */
+        public $space;
+        /**
+         * The id of the most recently created revision for this shared flow.
+         *
+         * @param string $latestRevisionId
+         */
+        public function setLatestRevisionId($latestRevisionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLatestRevisionId()
+        {
+        }
+        /**
+         * Metadata describing the shared flow.
+         *
+         * @param GoogleCloudApigeeV1EntityMetadata $metaData
+         */
+        public function setMetaData(GoogleCloudApigeeV1EntityMetadata $metaData)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1EntityMetadata
+         */
+        public function getMetaData()
+        {
+        }
+        /**
+         * The ID of the shared flow.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * A list of revisions of this shared flow.
+         *
+         * @param string[] $revision
+         */
+        public function setRevision($revision)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRevision()
+        {
+        }
+        /**
+         * Optional. The ID of the space associated with this shared flow. Any IAM
+         * policies applied to the space will control access to this shared flow. To
+         * learn how Spaces can be used to manage resources, read the [Apigee Spaces
+         * Overview](https://cloud.google.com/apigee/docs/api-platform/system-
+         * administration/spaces/apigee-spaces-overview).
+         *
+         * @param string $space
+         */
+        public function setSpace($space)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSpace()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1SharedFlow registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLatestRevisionId()
-    {
-    }
-    /**
-     * Metadata describing the shared flow.
-     *
-     * @param GoogleCloudApigeeV1EntityMetadata $metaData
-     */
-    public function setMetaData(GoogleCloudApigeeV1EntityMetadata $metaData)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1EntityMetadata
-     */
-    public function getMetaData()
-    {
-    }
-    /**
-     * The ID of the shared flow.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * A list of revisions of this shared flow.
-     *
-     * @param string[] $revision
-     */
-    public function setRevision($revision)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRevision()
-    {
-    }
-    /**
-     * Optional. The ID of the space associated with this shared flow. Any IAM
-     * policies applied to the space will control access to this shared flow. To
-     * learn how Spaces can be used to manage resources, read the [Apigee Spaces
-     * Overview](https://cloud.google.com/apigee/docs/api-platform/system-
-     * administration/spaces/apigee-spaces-overview).
-     *
-     * @param string $space
-     */
-    public function setSpace($space)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSpace()
+    class Google_Service_Apigee_GoogleCloudApigeeV1SharedFlow extends \Google\Service\Apigee\GoogleCloudApigeeV1SharedFlow
     {
     }
 }

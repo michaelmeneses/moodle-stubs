@@ -21,95 +21,104 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class AppVersion extends \Google\Collection
-{
-    protected $collection_key = 'trackIds';
-    /**
-     * If the value is True, it indicates that this version is a production track.
-     *
-     * @var bool
-     */
-    public $production;
-    /**
-     * Track identifiers that the app version is published in. This does not
-     * include the production track (see production instead).
-     *
-     * @var string[]
-     */
-    public $trackIds;
-    /**
-     * Unique increasing identifier for the app version.
-     *
-     * @var int
-     */
-    public $versionCode;
-    /**
-     * The string used in the Play store by the app developer to identify the
-     * version. The string is not necessarily unique or localized (for example,
-     * the string could be "1.4").
-     *
-     * @var string
-     */
-    public $versionString;
-    /**
-     * If the value is True, it indicates that this version is a production track.
-     *
-     * @param bool $production
-     */
-    public function setProduction($production)
+namespace Google\Service\AndroidManagement {
+    class AppVersion extends \Google\Collection
     {
+        protected $collection_key = 'trackIds';
+        /**
+         * If the value is True, it indicates that this version is a production track.
+         *
+         * @var bool
+         */
+        public $production;
+        /**
+         * Track identifiers that the app version is published in. This does not
+         * include the production track (see production instead).
+         *
+         * @var string[]
+         */
+        public $trackIds;
+        /**
+         * Unique increasing identifier for the app version.
+         *
+         * @var int
+         */
+        public $versionCode;
+        /**
+         * The string used in the Play store by the app developer to identify the
+         * version. The string is not necessarily unique or localized (for example,
+         * the string could be "1.4").
+         *
+         * @var string
+         */
+        public $versionString;
+        /**
+         * If the value is True, it indicates that this version is a production track.
+         *
+         * @param bool $production
+         */
+        public function setProduction($production)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getProduction()
+        {
+        }
+        /**
+         * Track identifiers that the app version is published in. This does not
+         * include the production track (see production instead).
+         *
+         * @param string[] $trackIds
+         */
+        public function setTrackIds($trackIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTrackIds()
+        {
+        }
+        /**
+         * Unique increasing identifier for the app version.
+         *
+         * @param int $versionCode
+         */
+        public function setVersionCode($versionCode)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getVersionCode()
+        {
+        }
+        /**
+         * The string used in the Play store by the app developer to identify the
+         * version. The string is not necessarily unique or localized (for example,
+         * the string could be "1.4").
+         *
+         * @param string $versionString
+         */
+        public function setVersionString($versionString)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersionString()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\AndroidManagement\AppVersion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProduction()
-    {
-    }
-    /**
-     * Track identifiers that the app version is published in. This does not
-     * include the production track (see production instead).
-     *
-     * @param string[] $trackIds
-     */
-    public function setTrackIds($trackIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTrackIds()
-    {
-    }
-    /**
-     * Unique increasing identifier for the app version.
-     *
-     * @param int $versionCode
-     */
-    public function setVersionCode($versionCode)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getVersionCode()
-    {
-    }
-    /**
-     * The string used in the Play store by the app developer to identify the
-     * version. The string is not necessarily unique or localized (for example,
-     * the string could be "1.4").
-     *
-     * @param string $versionString
-     */
-    public function setVersionString($versionString)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersionString()
+    class Google_Service_AndroidManagement_AppVersion extends \Google\Service\AndroidManagement\AppVersion
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class StartupConfig extends \Google\Model
-{
-    /**
-     * Optional. The config setting to enable cluster creation/ updation to be
-     * successful only after required_registration_fraction of instances are up
-     * and running. This configuration is applicable to only secondary workers for
-     * now. The cluster will fail if required_registration_fraction of instances
-     * are not available. This will include instance creation, agent registration,
-     * and service registration (if enabled).
-     *
-     * @var 
-     */
-    public $requiredRegistrationFraction;
-    public function setRequiredRegistrationFraction($requiredRegistrationFraction)
+namespace Google\Service\Dataproc {
+    class StartupConfig extends \Google\Model
     {
+        /**
+         * Optional. The config setting to enable cluster creation/ updation to be
+         * successful only after required_registration_fraction of instances are up
+         * and running. This configuration is applicable to only secondary workers for
+         * now. The cluster will fail if required_registration_fraction of instances
+         * are not available. This will include instance creation, agent registration,
+         * and service registration (if enabled).
+         *
+         * @var 
+         */
+        public $requiredRegistrationFraction;
+        public function setRequiredRegistrationFraction($requiredRegistrationFraction)
+        {
+        }
+        public function getRequiredRegistrationFraction()
+        {
+        }
     }
-    public function getRequiredRegistrationFraction()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Dataproc\StartupConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Dataproc_StartupConfig extends \Google\Service\Dataproc\StartupConfig
     {
     }
 }

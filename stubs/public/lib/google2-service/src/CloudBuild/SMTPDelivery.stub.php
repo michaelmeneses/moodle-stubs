@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class SMTPDelivery extends \Google\Collection
-{
-    protected $collection_key = 'recipientAddresses';
-    /**
-     * @var string
-     */
-    public $fromAddress;
-    protected $passwordType = NotifierSecretRef::class;
-    protected $passwordDataType = '';
-    public $password;
-    /**
-     * @var string
-     */
-    public $port;
-    /**
-     * @var string[]
-     */
-    public $recipientAddresses;
-    /**
-     * @var string
-     */
-    public $senderAddress;
-    /**
-     * @var string
-     */
-    public $server;
-    /**
-     * @param string
-     */
-    public function setFromAddress($fromAddress)
+namespace Google\Service\CloudBuild {
+    class SMTPDelivery extends \Google\Collection
     {
+        protected $collection_key = 'recipientAddresses';
+        /**
+         * @var string
+         */
+        public $fromAddress;
+        protected $passwordType = NotifierSecretRef::class;
+        protected $passwordDataType = '';
+        public $password;
+        /**
+         * @var string
+         */
+        public $port;
+        /**
+         * @var string[]
+         */
+        public $recipientAddresses;
+        /**
+         * @var string
+         */
+        public $senderAddress;
+        /**
+         * @var string
+         */
+        public $server;
+        /**
+         * @param string
+         */
+        public function setFromAddress($fromAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFromAddress()
+        {
+        }
+        /**
+         * @param NotifierSecretRef
+         */
+        public function setPassword(NotifierSecretRef $password)
+        {
+        }
+        /**
+         * @return NotifierSecretRef
+         */
+        public function getPassword()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPort($port)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPort()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setRecipientAddresses($recipientAddresses)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRecipientAddresses()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSenderAddress($senderAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSenderAddress()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setServer($server)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServer()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\SMTPDelivery registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFromAddress()
-    {
-    }
-    /**
-     * @param NotifierSecretRef
-     */
-    public function setPassword(NotifierSecretRef $password)
-    {
-    }
-    /**
-     * @return NotifierSecretRef
-     */
-    public function getPassword()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPort($port)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPort()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setRecipientAddresses($recipientAddresses)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRecipientAddresses()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSenderAddress($senderAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSenderAddress()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setServer($server)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServer()
+    class Google_Service_CloudBuild_SMTPDelivery extends \Google\Service\CloudBuild\SMTPDelivery
     {
     }
 }

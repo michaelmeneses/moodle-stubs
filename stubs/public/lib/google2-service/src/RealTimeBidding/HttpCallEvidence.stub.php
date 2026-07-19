@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RealTimeBidding;
-
-class HttpCallEvidence extends \Google\Collection
-{
-    protected $collection_key = 'urls';
-    /**
-     * URLs of HTTP calls made by the creative.
-     *
-     * @var string[]
-     */
-    public $urls;
-    /**
-     * URLs of HTTP calls made by the creative.
-     *
-     * @param string[] $urls
-     */
-    public function setUrls($urls)
+namespace Google\Service\RealTimeBidding {
+    class HttpCallEvidence extends \Google\Collection
     {
+        protected $collection_key = 'urls';
+        /**
+         * URLs of HTTP calls made by the creative.
+         *
+         * @var string[]
+         */
+        public $urls;
+        /**
+         * URLs of HTTP calls made by the creative.
+         *
+         * @param string[] $urls
+         */
+        public function setUrls($urls)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUrls()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\RealTimeBidding\HttpCallEvidence registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUrls()
+    class Google_Service_RealTimeBidding_HttpCallEvidence extends \Google\Service\RealTimeBidding\HttpCallEvidence
     {
     }
 }

@@ -21,75 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WebRisk;
-
-class GoogleCloudWebriskV1SearchHashesResponseThreatHash extends \Google\Collection
-{
-    protected $collection_key = 'threatTypes';
-    /**
-     * The cache lifetime for the returned match. Clients must not cache this
-     * response past this timestamp to avoid false positives.
-     *
-     * @var string
-     */
-    public $expireTime;
-    /**
-     * A 32 byte SHA256 hash. This field is in binary format. For JSON requests,
-     * hashes are base64-encoded.
-     *
-     * @var string
-     */
-    public $hash;
-    /**
-     * The ThreatList this threat belongs to. This must contain at least one
-     * entry.
-     *
-     * @var string[]
-     */
-    public $threatTypes;
-    /**
-     * The cache lifetime for the returned match. Clients must not cache this
-     * response past this timestamp to avoid false positives.
-     *
-     * @param string $expireTime
-     */
-    public function setExpireTime($expireTime)
+namespace Google\Service\WebRisk {
+    class GoogleCloudWebriskV1SearchHashesResponseThreatHash extends \Google\Collection
     {
+        protected $collection_key = 'threatTypes';
+        /**
+         * The cache lifetime for the returned match. Clients must not cache this
+         * response past this timestamp to avoid false positives.
+         *
+         * @var string
+         */
+        public $expireTime;
+        /**
+         * A 32 byte SHA256 hash. This field is in binary format. For JSON requests,
+         * hashes are base64-encoded.
+         *
+         * @var string
+         */
+        public $hash;
+        /**
+         * The ThreatList this threat belongs to. This must contain at least one
+         * entry.
+         *
+         * @var string[]
+         */
+        public $threatTypes;
+        /**
+         * The cache lifetime for the returned match. Clients must not cache this
+         * response past this timestamp to avoid false positives.
+         *
+         * @param string $expireTime
+         */
+        public function setExpireTime($expireTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpireTime()
+        {
+        }
+        /**
+         * A 32 byte SHA256 hash. This field is in binary format. For JSON requests,
+         * hashes are base64-encoded.
+         *
+         * @param string $hash
+         */
+        public function setHash($hash)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHash()
+        {
+        }
+        /**
+         * The ThreatList this threat belongs to. This must contain at least one
+         * entry.
+         *
+         * @param string[] $threatTypes
+         */
+        public function setThreatTypes($threatTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getThreatTypes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WebRisk\GoogleCloudWebriskV1SearchHashesResponseThreatHash registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExpireTime()
-    {
-    }
-    /**
-     * A 32 byte SHA256 hash. This field is in binary format. For JSON requests,
-     * hashes are base64-encoded.
-     *
-     * @param string $hash
-     */
-    public function setHash($hash)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHash()
-    {
-    }
-    /**
-     * The ThreatList this threat belongs to. This must contain at least one
-     * entry.
-     *
-     * @param string[] $threatTypes
-     */
-    public function setThreatTypes($threatTypes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getThreatTypes()
+    class Google_Service_WebRisk_GoogleCloudWebriskV1SearchHashesResponseThreatHash extends \Google\Service\WebRisk\GoogleCloudWebriskV1SearchHashesResponseThreatHash
     {
     }
 }

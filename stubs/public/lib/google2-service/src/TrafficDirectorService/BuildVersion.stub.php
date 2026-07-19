@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TrafficDirectorService;
-
-class BuildVersion extends \Google\Model
-{
-    /**
-     * Free-form build information. Envoy defines several well known keys in the
-     * source/common/version/version.h file
-     *
-     * @var array[]
-     */
-    public $metadata;
-    protected $versionType = SemanticVersion::class;
-    protected $versionDataType = '';
-    /**
-     * Free-form build information. Envoy defines several well known keys in the
-     * source/common/version/version.h file
-     *
-     * @param array[] $metadata
-     */
-    public function setMetadata($metadata)
+namespace Google\Service\TrafficDirectorService {
+    class BuildVersion extends \Google\Model
     {
+        /**
+         * Free-form build information. Envoy defines several well known keys in the
+         * source/common/version/version.h file
+         *
+         * @var array[]
+         */
+        public $metadata;
+        protected $versionType = SemanticVersion::class;
+        protected $versionDataType = '';
+        /**
+         * Free-form build information. Envoy defines several well known keys in the
+         * source/common/version/version.h file
+         *
+         * @param array[] $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * SemVer version of extension.
+         *
+         * @param SemanticVersion $version
+         */
+        public function setVersion(SemanticVersion $version)
+        {
+        }
+        /**
+         * @return SemanticVersion
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\TrafficDirectorService\BuildVersion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetadata()
-    {
-    }
-    /**
-     * SemVer version of extension.
-     *
-     * @param SemanticVersion $version
-     */
-    public function setVersion(SemanticVersion $version)
-    {
-    }
-    /**
-     * @return SemanticVersion
-     */
-    public function getVersion()
+    class Google_Service_TrafficDirectorService_BuildVersion extends \Google\Service\TrafficDirectorService\BuildVersion
     {
     }
 }

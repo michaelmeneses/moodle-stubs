@@ -21,230 +21,239 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class McfDataQuery extends \Google\Collection
-{
-    protected $collection_key = 'sort';
-    protected $internal_gapi_mappings = ["endDate" => "end-date", "maxResults" => "max-results", "startDate" => "start-date", "startIndex" => "start-index"];
-    /**
-     * List of analytics dimensions.
-     *
-     * @var string
-     */
-    public $dimensions;
-    /**
-     * End date.
-     *
-     * @var string
-     */
-    public $endDate;
-    /**
-     * Comma-separated list of dimension or metric filters.
-     *
-     * @var string
-     */
-    public $filters;
-    /**
-     * Unique table ID.
-     *
-     * @var string
-     */
-    public $ids;
-    /**
-     * Maximum results per page.
-     *
-     * @var int
-     */
-    public $maxResults;
-    /**
-     * List of analytics metrics.
-     *
-     * @var string[]
-     */
-    public $metrics;
-    /**
-     * Desired sampling level
-     *
-     * @var string
-     */
-    public $samplingLevel;
-    /**
-     * Analytics advanced segment.
-     *
-     * @var string
-     */
-    public $segment;
-    /**
-     * List of dimensions or metrics based on which Analytics data is sorted.
-     *
-     * @var string[]
-     */
-    public $sort;
-    /**
-     * Start date.
-     *
-     * @var string
-     */
-    public $startDate;
-    /**
-     * Start index.
-     *
-     * @var int
-     */
-    public $startIndex;
-    /**
-     * List of analytics dimensions.
-     *
-     * @param string $dimensions
-     */
-    public function setDimensions($dimensions)
+namespace Google\Service\Analytics {
+    class McfDataQuery extends \Google\Collection
     {
+        protected $collection_key = 'sort';
+        protected $internal_gapi_mappings = ["endDate" => "end-date", "maxResults" => "max-results", "startDate" => "start-date", "startIndex" => "start-index"];
+        /**
+         * List of analytics dimensions.
+         *
+         * @var string
+         */
+        public $dimensions;
+        /**
+         * End date.
+         *
+         * @var string
+         */
+        public $endDate;
+        /**
+         * Comma-separated list of dimension or metric filters.
+         *
+         * @var string
+         */
+        public $filters;
+        /**
+         * Unique table ID.
+         *
+         * @var string
+         */
+        public $ids;
+        /**
+         * Maximum results per page.
+         *
+         * @var int
+         */
+        public $maxResults;
+        /**
+         * List of analytics metrics.
+         *
+         * @var string[]
+         */
+        public $metrics;
+        /**
+         * Desired sampling level
+         *
+         * @var string
+         */
+        public $samplingLevel;
+        /**
+         * Analytics advanced segment.
+         *
+         * @var string
+         */
+        public $segment;
+        /**
+         * List of dimensions or metrics based on which Analytics data is sorted.
+         *
+         * @var string[]
+         */
+        public $sort;
+        /**
+         * Start date.
+         *
+         * @var string
+         */
+        public $startDate;
+        /**
+         * Start index.
+         *
+         * @var int
+         */
+        public $startIndex;
+        /**
+         * List of analytics dimensions.
+         *
+         * @param string $dimensions
+         */
+        public function setDimensions($dimensions)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDimensions()
+        {
+        }
+        /**
+         * End date.
+         *
+         * @param string $endDate
+         */
+        public function setEndDate($endDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndDate()
+        {
+        }
+        /**
+         * Comma-separated list of dimension or metric filters.
+         *
+         * @param string $filters
+         */
+        public function setFilters($filters)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilters()
+        {
+        }
+        /**
+         * Unique table ID.
+         *
+         * @param string $ids
+         */
+        public function setIds($ids)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIds()
+        {
+        }
+        /**
+         * Maximum results per page.
+         *
+         * @param int $maxResults
+         */
+        public function setMaxResults($maxResults)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxResults()
+        {
+        }
+        /**
+         * List of analytics metrics.
+         *
+         * @param string[] $metrics
+         */
+        public function setMetrics($metrics)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMetrics()
+        {
+        }
+        /**
+         * Desired sampling level
+         *
+         * @param string $samplingLevel
+         */
+        public function setSamplingLevel($samplingLevel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSamplingLevel()
+        {
+        }
+        /**
+         * Analytics advanced segment.
+         *
+         * @param string $segment
+         */
+        public function setSegment($segment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSegment()
+        {
+        }
+        /**
+         * List of dimensions or metrics based on which Analytics data is sorted.
+         *
+         * @param string[] $sort
+         */
+        public function setSort($sort)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSort()
+        {
+        }
+        /**
+         * Start date.
+         *
+         * @param string $startDate
+         */
+        public function setStartDate($startDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartDate()
+        {
+        }
+        /**
+         * Start index.
+         *
+         * @param int $startIndex
+         */
+        public function setStartIndex($startIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStartIndex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Analytics\McfDataQuery registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDimensions()
-    {
-    }
-    /**
-     * End date.
-     *
-     * @param string $endDate
-     */
-    public function setEndDate($endDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndDate()
-    {
-    }
-    /**
-     * Comma-separated list of dimension or metric filters.
-     *
-     * @param string $filters
-     */
-    public function setFilters($filters)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFilters()
-    {
-    }
-    /**
-     * Unique table ID.
-     *
-     * @param string $ids
-     */
-    public function setIds($ids)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIds()
-    {
-    }
-    /**
-     * Maximum results per page.
-     *
-     * @param int $maxResults
-     */
-    public function setMaxResults($maxResults)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxResults()
-    {
-    }
-    /**
-     * List of analytics metrics.
-     *
-     * @param string[] $metrics
-     */
-    public function setMetrics($metrics)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMetrics()
-    {
-    }
-    /**
-     * Desired sampling level
-     *
-     * @param string $samplingLevel
-     */
-    public function setSamplingLevel($samplingLevel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSamplingLevel()
-    {
-    }
-    /**
-     * Analytics advanced segment.
-     *
-     * @param string $segment
-     */
-    public function setSegment($segment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSegment()
-    {
-    }
-    /**
-     * List of dimensions or metrics based on which Analytics data is sorted.
-     *
-     * @param string[] $sort
-     */
-    public function setSort($sort)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSort()
-    {
-    }
-    /**
-     * Start date.
-     *
-     * @param string $startDate
-     */
-    public function setStartDate($startDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartDate()
-    {
-    }
-    /**
-     * Start index.
-     *
-     * @param int $startIndex
-     */
-    public function setStartIndex($startIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStartIndex()
+    class Google_Service_Analytics_McfDataQuery extends \Google\Service\Analytics\McfDataQuery
     {
     }
 }

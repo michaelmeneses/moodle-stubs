@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Translate;
-
-class SupportedLanguage extends \Google\Model
-{
-    /**
-     * Human-readable name of the language localized in the display language
-     * specified in the request.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Supported language code, generally consisting of its ISO 639-1 identifier,
-     * for example, 'en', 'ja'. In certain cases, ISO-639 codes including language
-     * and region identifiers are returned (for example, 'zh-TW' and 'zh-CN').
-     *
-     * @var string
-     */
-    public $languageCode;
-    /**
-     * Can be used as a source language.
-     *
-     * @var bool
-     */
-    public $supportSource;
-    /**
-     * Can be used as a target language.
-     *
-     * @var bool
-     */
-    public $supportTarget;
-    /**
-     * Human-readable name of the language localized in the display language
-     * specified in the request.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\Translate {
+    class SupportedLanguage extends \Google\Model
     {
+        /**
+         * Human-readable name of the language localized in the display language
+         * specified in the request.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Supported language code, generally consisting of its ISO 639-1 identifier,
+         * for example, 'en', 'ja'. In certain cases, ISO-639 codes including language
+         * and region identifiers are returned (for example, 'zh-TW' and 'zh-CN').
+         *
+         * @var string
+         */
+        public $languageCode;
+        /**
+         * Can be used as a source language.
+         *
+         * @var bool
+         */
+        public $supportSource;
+        /**
+         * Can be used as a target language.
+         *
+         * @var bool
+         */
+        public $supportTarget;
+        /**
+         * Human-readable name of the language localized in the display language
+         * specified in the request.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Supported language code, generally consisting of its ISO 639-1 identifier,
+         * for example, 'en', 'ja'. In certain cases, ISO-639 codes including language
+         * and region identifiers are returned (for example, 'zh-TW' and 'zh-CN').
+         *
+         * @param string $languageCode
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
+        /**
+         * Can be used as a source language.
+         *
+         * @param bool $supportSource
+         */
+        public function setSupportSource($supportSource)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSupportSource()
+        {
+        }
+        /**
+         * Can be used as a target language.
+         *
+         * @param bool $supportTarget
+         */
+        public function setSupportTarget($supportTarget)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSupportTarget()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Translate\SupportedLanguage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Supported language code, generally consisting of its ISO 639-1 identifier,
-     * for example, 'en', 'ja'. In certain cases, ISO-639 codes including language
-     * and region identifiers are returned (for example, 'zh-TW' and 'zh-CN').
-     *
-     * @param string $languageCode
-     */
-    public function setLanguageCode($languageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguageCode()
-    {
-    }
-    /**
-     * Can be used as a source language.
-     *
-     * @param bool $supportSource
-     */
-    public function setSupportSource($supportSource)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSupportSource()
-    {
-    }
-    /**
-     * Can be used as a target language.
-     *
-     * @param bool $supportTarget
-     */
-    public function setSupportTarget($supportTarget)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSupportTarget()
+    class Google_Service_Translate_SupportedLanguage extends \Google\Service\Translate\SupportedLanguage
     {
     }
 }

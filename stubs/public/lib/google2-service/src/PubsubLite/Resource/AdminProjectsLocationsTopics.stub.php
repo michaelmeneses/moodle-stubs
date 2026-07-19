@@ -21,106 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PubsubLite\Resource;
-
-/**
- * The "topics" collection of methods.
- * Typical usage is:
- *  <code>
- *   $pubsubliteService = new Google\Service\PubsubLite(...);
- *   $topics = $pubsubliteService->admin_projects_locations_topics;
- *  </code>
- */
-class AdminProjectsLocationsTopics extends \Google\Service\Resource
-{
+namespace Google\Service\PubsubLite\Resource {
+    use Google\Service\PubsubLite\ListTopicsResponse;
+    use Google\Service\PubsubLite\PubsubliteEmpty;
+    use Google\Service\PubsubLite\Topic;
+    use Google\Service\PubsubLite\TopicPartitions;
     /**
-     * Creates a new topic. (topics.create)
-     *
-     * @param string $parent Required. The parent location in which to create the
-     * topic. Structured like `projects/{project_number}/locations/{location}`.
-     * @param Topic $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string topicId Required. The ID to use for the topic, which will
-     * become the final component of the topic's name. This value is structured
-     * like: `my-topic-name`.
-     * @return Topic
-     * @throws \Google\Service\Exception
+     * The "topics" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $pubsubliteService = new Google\Service\PubsubLite(...);
+     *   $topics = $pubsubliteService->admin_projects_locations_topics;
+     *  </code>
      */
-    public function create($parent, Topic $postBody, $optParams = [])
+    class AdminProjectsLocationsTopics extends \Google\Service\Resource
     {
+        /**
+         * Creates a new topic. (topics.create)
+         *
+         * @param string $parent Required. The parent location in which to create the
+         * topic. Structured like `projects/{project_number}/locations/{location}`.
+         * @param Topic $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string topicId Required. The ID to use for the topic, which will
+         * become the final component of the topic's name. This value is structured
+         * like: `my-topic-name`.
+         * @return Topic
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, Topic $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes the specified topic. (topics.delete)
+         *
+         * @param string $name Required. The name of the topic to delete.
+         * @param array $optParams Optional parameters.
+         * @return PubsubliteEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Returns the topic configuration. (topics.get)
+         *
+         * @param string $name Required. The name of the topic whose configuration to
+         * return.
+         * @param array $optParams Optional parameters.
+         * @return Topic
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Returns the partition information for the requested topic.
+         * (topics.getPartitions)
+         *
+         * @param string $name Required. The topic whose partition information to
+         * return.
+         * @param array $optParams Optional parameters.
+         * @return TopicPartitions
+         * @throws \Google\Service\Exception
+         */
+        public function getPartitions($name, $optParams = [])
+        {
+        }
+        /**
+         * Returns the list of topics for the given project.
+         * (topics.listAdminProjectsLocationsTopics)
+         *
+         * @param string $parent Required. The parent whose topics are to be listed.
+         * Structured like `projects/{project_number}/locations/{location}`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of topics to return. The service
+         * may return fewer than this value. If unset or zero, all topics for the parent
+         * will be returned.
+         * @opt_param string pageToken A page token, received from a previous
+         * `ListTopics` call. Provide this to retrieve the subsequent page. When
+         * paginating, all other parameters provided to `ListTopics` must match the call
+         * that provided the page token.
+         * @return ListTopicsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAdminProjectsLocationsTopics($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates properties of the specified topic. (topics.patch)
+         *
+         * @param string $name The name of the topic. Structured like:
+         * projects/{project_number}/locations/{location}/topics/{topic_id}
+         * @param Topic $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Required. A mask specifying the topic fields to
+         * change.
+         * @return Topic
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, Topic $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes the specified topic. (topics.delete)
-     *
-     * @param string $name Required. The name of the topic to delete.
-     * @param array $optParams Optional parameters.
-     * @return PubsubliteEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\PubsubLite\Resource\AdminProjectsLocationsTopics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Returns the topic configuration. (topics.get)
-     *
-     * @param string $name Required. The name of the topic whose configuration to
-     * return.
-     * @param array $optParams Optional parameters.
-     * @return Topic
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Returns the partition information for the requested topic.
-     * (topics.getPartitions)
-     *
-     * @param string $name Required. The topic whose partition information to
-     * return.
-     * @param array $optParams Optional parameters.
-     * @return TopicPartitions
-     * @throws \Google\Service\Exception
-     */
-    public function getPartitions($name, $optParams = [])
-    {
-    }
-    /**
-     * Returns the list of topics for the given project.
-     * (topics.listAdminProjectsLocationsTopics)
-     *
-     * @param string $parent Required. The parent whose topics are to be listed.
-     * Structured like `projects/{project_number}/locations/{location}`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of topics to return. The service
-     * may return fewer than this value. If unset or zero, all topics for the parent
-     * will be returned.
-     * @opt_param string pageToken A page token, received from a previous
-     * `ListTopics` call. Provide this to retrieve the subsequent page. When
-     * paginating, all other parameters provided to `ListTopics` must match the call
-     * that provided the page token.
-     * @return ListTopicsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listAdminProjectsLocationsTopics($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates properties of the specified topic. (topics.patch)
-     *
-     * @param string $name The name of the topic. Structured like:
-     * projects/{project_number}/locations/{location}/topics/{topic_id}
-     * @param Topic $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Required. A mask specifying the topic fields to
-     * change.
-     * @return Topic
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, Topic $postBody, $optParams = [])
+    class Google_Service_PubsubLite_Resource_AdminProjectsLocationsTopics extends \Google\Service\PubsubLite\Resource\AdminProjectsLocationsTopics
     {
     }
 }

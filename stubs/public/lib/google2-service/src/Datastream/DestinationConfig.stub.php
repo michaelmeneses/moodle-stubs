@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class DestinationConfig extends \Google\Model
-{
-    protected $bigqueryDestinationConfigType = BigQueryDestinationConfig::class;
-    protected $bigqueryDestinationConfigDataType = '';
-    /**
-     * Required. Destination connection profile resource. Format:
-     * `projects/{project}/locations/{location}/connectionProfiles/{name}`
-     *
-     * @var string
-     */
-    public $destinationConnectionProfile;
-    protected $gcsDestinationConfigType = GcsDestinationConfig::class;
-    protected $gcsDestinationConfigDataType = '';
-    /**
-     * BigQuery destination configuration.
-     *
-     * @param BigQueryDestinationConfig $bigqueryDestinationConfig
-     */
-    public function setBigqueryDestinationConfig(BigQueryDestinationConfig $bigqueryDestinationConfig)
+namespace Google\Service\Datastream {
+    class DestinationConfig extends \Google\Model
     {
+        protected $bigqueryDestinationConfigType = BigQueryDestinationConfig::class;
+        protected $bigqueryDestinationConfigDataType = '';
+        /**
+         * Required. Destination connection profile resource. Format:
+         * `projects/{project}/locations/{location}/connectionProfiles/{name}`
+         *
+         * @var string
+         */
+        public $destinationConnectionProfile;
+        protected $gcsDestinationConfigType = GcsDestinationConfig::class;
+        protected $gcsDestinationConfigDataType = '';
+        /**
+         * BigQuery destination configuration.
+         *
+         * @param BigQueryDestinationConfig $bigqueryDestinationConfig
+         */
+        public function setBigqueryDestinationConfig(BigQueryDestinationConfig $bigqueryDestinationConfig)
+        {
+        }
+        /**
+         * @return BigQueryDestinationConfig
+         */
+        public function getBigqueryDestinationConfig()
+        {
+        }
+        /**
+         * Required. Destination connection profile resource. Format:
+         * `projects/{project}/locations/{location}/connectionProfiles/{name}`
+         *
+         * @param string $destinationConnectionProfile
+         */
+        public function setDestinationConnectionProfile($destinationConnectionProfile)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestinationConnectionProfile()
+        {
+        }
+        /**
+         * A configuration for how data should be loaded to Cloud Storage.
+         *
+         * @param GcsDestinationConfig $gcsDestinationConfig
+         */
+        public function setGcsDestinationConfig(GcsDestinationConfig $gcsDestinationConfig)
+        {
+        }
+        /**
+         * @return GcsDestinationConfig
+         */
+        public function getGcsDestinationConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BigQueryDestinationConfig
+     * Runtime class alias of \Google\Service\Datastream\DestinationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBigqueryDestinationConfig()
-    {
-    }
-    /**
-     * Required. Destination connection profile resource. Format:
-     * `projects/{project}/locations/{location}/connectionProfiles/{name}`
-     *
-     * @param string $destinationConnectionProfile
-     */
-    public function setDestinationConnectionProfile($destinationConnectionProfile)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDestinationConnectionProfile()
-    {
-    }
-    /**
-     * A configuration for how data should be loaded to Cloud Storage.
-     *
-     * @param GcsDestinationConfig $gcsDestinationConfig
-     */
-    public function setGcsDestinationConfig(GcsDestinationConfig $gcsDestinationConfig)
-    {
-    }
-    /**
-     * @return GcsDestinationConfig
-     */
-    public function getGcsDestinationConfig()
+    class Google_Service_Datastream_DestinationConfig extends \Google\Service\Datastream\DestinationConfig
     {
     }
 }

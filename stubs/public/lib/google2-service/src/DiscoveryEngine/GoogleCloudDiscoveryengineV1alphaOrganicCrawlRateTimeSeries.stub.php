@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaOrganicCrawlRateTimeSeries extends \Google\Model
-{
-    protected $googleOrganicCrawlRateType = GoogleCloudDiscoveryengineV1alphaCrawlRateTimeSeries::class;
-    protected $googleOrganicCrawlRateDataType = '';
-    protected $vertexAiOrganicCrawlRateType = GoogleCloudDiscoveryengineV1alphaCrawlRateTimeSeries::class;
-    protected $vertexAiOrganicCrawlRateDataType = '';
-    /**
-     * Google's organic crawl rate time series, which is the sum of all
-     * googlebots' crawl rate. Please refer to
-     * https://developers.google.com/search/docs/crawling-indexing/overview-
-     * google-crawlers for more details about googlebots.
-     *
-     * @param GoogleCloudDiscoveryengineV1alphaCrawlRateTimeSeries $googleOrganicCrawlRate
-     */
-    public function setGoogleOrganicCrawlRate(GoogleCloudDiscoveryengineV1alphaCrawlRateTimeSeries $googleOrganicCrawlRate)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaOrganicCrawlRateTimeSeries extends \Google\Model
     {
+        protected $googleOrganicCrawlRateType = GoogleCloudDiscoveryengineV1alphaCrawlRateTimeSeries::class;
+        protected $googleOrganicCrawlRateDataType = '';
+        protected $vertexAiOrganicCrawlRateType = GoogleCloudDiscoveryengineV1alphaCrawlRateTimeSeries::class;
+        protected $vertexAiOrganicCrawlRateDataType = '';
+        /**
+         * Google's organic crawl rate time series, which is the sum of all
+         * googlebots' crawl rate. Please refer to
+         * https://developers.google.com/search/docs/crawling-indexing/overview-
+         * google-crawlers for more details about googlebots.
+         *
+         * @param GoogleCloudDiscoveryengineV1alphaCrawlRateTimeSeries $googleOrganicCrawlRate
+         */
+        public function setGoogleOrganicCrawlRate(GoogleCloudDiscoveryengineV1alphaCrawlRateTimeSeries $googleOrganicCrawlRate)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaCrawlRateTimeSeries
+         */
+        public function getGoogleOrganicCrawlRate()
+        {
+        }
+        /**
+         * Vertex AI's organic crawl rate time series, which is the crawl rate of
+         * Google-CloudVertexBot when dedicate crawl is not set. Please refer to
+         * https://developers.google.com/search/docs/crawling-indexing/google-common-
+         * crawlers#google-cloudvertexbot for more details about Google-
+         * CloudVertexBot.
+         *
+         * @param GoogleCloudDiscoveryengineV1alphaCrawlRateTimeSeries $vertexAiOrganicCrawlRate
+         */
+        public function setVertexAiOrganicCrawlRate(GoogleCloudDiscoveryengineV1alphaCrawlRateTimeSeries $vertexAiOrganicCrawlRate)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaCrawlRateTimeSeries
+         */
+        public function getVertexAiOrganicCrawlRate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1alphaCrawlRateTimeSeries
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaOrganicCrawlRateTimeSeries registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGoogleOrganicCrawlRate()
-    {
-    }
-    /**
-     * Vertex AI's organic crawl rate time series, which is the crawl rate of
-     * Google-CloudVertexBot when dedicate crawl is not set. Please refer to
-     * https://developers.google.com/search/docs/crawling-indexing/google-common-
-     * crawlers#google-cloudvertexbot for more details about Google-
-     * CloudVertexBot.
-     *
-     * @param GoogleCloudDiscoveryengineV1alphaCrawlRateTimeSeries $vertexAiOrganicCrawlRate
-     */
-    public function setVertexAiOrganicCrawlRate(GoogleCloudDiscoveryengineV1alphaCrawlRateTimeSeries $vertexAiOrganicCrawlRate)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1alphaCrawlRateTimeSeries
-     */
-    public function getVertexAiOrganicCrawlRate()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaOrganicCrawlRateTimeSeries extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaOrganicCrawlRateTimeSeries
     {
     }
 }

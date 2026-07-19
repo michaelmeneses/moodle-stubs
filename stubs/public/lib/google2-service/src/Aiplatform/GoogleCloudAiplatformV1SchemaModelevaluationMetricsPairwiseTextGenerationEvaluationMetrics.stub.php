@@ -21,290 +21,299 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaModelevaluationMetricsPairwiseTextGenerationEvaluationMetrics extends \Google\Model
-{
-    /**
-     * Fraction of cases where the autorater agreed with the human raters.
-     *
-     * @var float
-     */
-    public $accuracy;
-    /**
-     * Percentage of time the autorater decided the baseline model had the better
-     * response.
-     *
-     * @var float
-     */
-    public $baselineModelWinRate;
-    /**
-     * A measurement of agreement between the autorater and human raters that
-     * takes the likelihood of random agreement into account.
-     *
-     * @var float
-     */
-    public $cohensKappa;
-    /**
-     * Harmonic mean of precision and recall.
-     *
-     * @var float
-     */
-    public $f1Score;
-    /**
-     * Number of examples where the autorater chose the baseline model, but humans
-     * preferred the model.
-     *
-     * @var string
-     */
-    public $falseNegativeCount;
-    /**
-     * Number of examples where the autorater chose the model, but humans
-     * preferred the baseline model.
-     *
-     * @var string
-     */
-    public $falsePositiveCount;
-    /**
-     * Percentage of time humans decided the baseline model had the better
-     * response.
-     *
-     * @var float
-     */
-    public $humanPreferenceBaselineModelWinRate;
-    /**
-     * Percentage of time humans decided the model had the better response.
-     *
-     * @var float
-     */
-    public $humanPreferenceModelWinRate;
-    /**
-     * Percentage of time the autorater decided the model had the better response.
-     *
-     * @var float
-     */
-    public $modelWinRate;
-    /**
-     * Fraction of cases where the autorater and humans thought the model had a
-     * better response out of all cases where the autorater thought the model had
-     * a better response. True positive divided by all positive.
-     *
-     * @var float
-     */
-    public $precision;
-    /**
-     * Fraction of cases where the autorater and humans thought the model had a
-     * better response out of all cases where the humans thought the model had a
-     * better response.
-     *
-     * @var float
-     */
-    public $recall;
-    /**
-     * Number of examples where both the autorater and humans decided that the
-     * model had the worse response.
-     *
-     * @var string
-     */
-    public $trueNegativeCount;
-    /**
-     * Number of examples where both the autorater and humans decided that the
-     * model had the better response.
-     *
-     * @var string
-     */
-    public $truePositiveCount;
-    /**
-     * Fraction of cases where the autorater agreed with the human raters.
-     *
-     * @param float $accuracy
-     */
-    public function setAccuracy($accuracy)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaModelevaluationMetricsPairwiseTextGenerationEvaluationMetrics extends \Google\Model
     {
+        /**
+         * Fraction of cases where the autorater agreed with the human raters.
+         *
+         * @var float
+         */
+        public $accuracy;
+        /**
+         * Percentage of time the autorater decided the baseline model had the better
+         * response.
+         *
+         * @var float
+         */
+        public $baselineModelWinRate;
+        /**
+         * A measurement of agreement between the autorater and human raters that
+         * takes the likelihood of random agreement into account.
+         *
+         * @var float
+         */
+        public $cohensKappa;
+        /**
+         * Harmonic mean of precision and recall.
+         *
+         * @var float
+         */
+        public $f1Score;
+        /**
+         * Number of examples where the autorater chose the baseline model, but humans
+         * preferred the model.
+         *
+         * @var string
+         */
+        public $falseNegativeCount;
+        /**
+         * Number of examples where the autorater chose the model, but humans
+         * preferred the baseline model.
+         *
+         * @var string
+         */
+        public $falsePositiveCount;
+        /**
+         * Percentage of time humans decided the baseline model had the better
+         * response.
+         *
+         * @var float
+         */
+        public $humanPreferenceBaselineModelWinRate;
+        /**
+         * Percentage of time humans decided the model had the better response.
+         *
+         * @var float
+         */
+        public $humanPreferenceModelWinRate;
+        /**
+         * Percentage of time the autorater decided the model had the better response.
+         *
+         * @var float
+         */
+        public $modelWinRate;
+        /**
+         * Fraction of cases where the autorater and humans thought the model had a
+         * better response out of all cases where the autorater thought the model had
+         * a better response. True positive divided by all positive.
+         *
+         * @var float
+         */
+        public $precision;
+        /**
+         * Fraction of cases where the autorater and humans thought the model had a
+         * better response out of all cases where the humans thought the model had a
+         * better response.
+         *
+         * @var float
+         */
+        public $recall;
+        /**
+         * Number of examples where both the autorater and humans decided that the
+         * model had the worse response.
+         *
+         * @var string
+         */
+        public $trueNegativeCount;
+        /**
+         * Number of examples where both the autorater and humans decided that the
+         * model had the better response.
+         *
+         * @var string
+         */
+        public $truePositiveCount;
+        /**
+         * Fraction of cases where the autorater agreed with the human raters.
+         *
+         * @param float $accuracy
+         */
+        public function setAccuracy($accuracy)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getAccuracy()
+        {
+        }
+        /**
+         * Percentage of time the autorater decided the baseline model had the better
+         * response.
+         *
+         * @param float $baselineModelWinRate
+         */
+        public function setBaselineModelWinRate($baselineModelWinRate)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getBaselineModelWinRate()
+        {
+        }
+        /**
+         * A measurement of agreement between the autorater and human raters that
+         * takes the likelihood of random agreement into account.
+         *
+         * @param float $cohensKappa
+         */
+        public function setCohensKappa($cohensKappa)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getCohensKappa()
+        {
+        }
+        /**
+         * Harmonic mean of precision and recall.
+         *
+         * @param float $f1Score
+         */
+        public function setF1Score($f1Score)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getF1Score()
+        {
+        }
+        /**
+         * Number of examples where the autorater chose the baseline model, but humans
+         * preferred the model.
+         *
+         * @param string $falseNegativeCount
+         */
+        public function setFalseNegativeCount($falseNegativeCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFalseNegativeCount()
+        {
+        }
+        /**
+         * Number of examples where the autorater chose the model, but humans
+         * preferred the baseline model.
+         *
+         * @param string $falsePositiveCount
+         */
+        public function setFalsePositiveCount($falsePositiveCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFalsePositiveCount()
+        {
+        }
+        /**
+         * Percentage of time humans decided the baseline model had the better
+         * response.
+         *
+         * @param float $humanPreferenceBaselineModelWinRate
+         */
+        public function setHumanPreferenceBaselineModelWinRate($humanPreferenceBaselineModelWinRate)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getHumanPreferenceBaselineModelWinRate()
+        {
+        }
+        /**
+         * Percentage of time humans decided the model had the better response.
+         *
+         * @param float $humanPreferenceModelWinRate
+         */
+        public function setHumanPreferenceModelWinRate($humanPreferenceModelWinRate)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getHumanPreferenceModelWinRate()
+        {
+        }
+        /**
+         * Percentage of time the autorater decided the model had the better response.
+         *
+         * @param float $modelWinRate
+         */
+        public function setModelWinRate($modelWinRate)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getModelWinRate()
+        {
+        }
+        /**
+         * Fraction of cases where the autorater and humans thought the model had a
+         * better response out of all cases where the autorater thought the model had
+         * a better response. True positive divided by all positive.
+         *
+         * @param float $precision
+         */
+        public function setPrecision($precision)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getPrecision()
+        {
+        }
+        /**
+         * Fraction of cases where the autorater and humans thought the model had a
+         * better response out of all cases where the humans thought the model had a
+         * better response.
+         *
+         * @param float $recall
+         */
+        public function setRecall($recall)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getRecall()
+        {
+        }
+        /**
+         * Number of examples where both the autorater and humans decided that the
+         * model had the worse response.
+         *
+         * @param string $trueNegativeCount
+         */
+        public function setTrueNegativeCount($trueNegativeCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTrueNegativeCount()
+        {
+        }
+        /**
+         * Number of examples where both the autorater and humans decided that the
+         * model had the better response.
+         *
+         * @param string $truePositiveCount
+         */
+        public function setTruePositiveCount($truePositiveCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTruePositiveCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaModelevaluationMetricsPairwiseTextGenerationEvaluationMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccuracy()
-    {
-    }
-    /**
-     * Percentage of time the autorater decided the baseline model had the better
-     * response.
-     *
-     * @param float $baselineModelWinRate
-     */
-    public function setBaselineModelWinRate($baselineModelWinRate)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getBaselineModelWinRate()
-    {
-    }
-    /**
-     * A measurement of agreement between the autorater and human raters that
-     * takes the likelihood of random agreement into account.
-     *
-     * @param float $cohensKappa
-     */
-    public function setCohensKappa($cohensKappa)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getCohensKappa()
-    {
-    }
-    /**
-     * Harmonic mean of precision and recall.
-     *
-     * @param float $f1Score
-     */
-    public function setF1Score($f1Score)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getF1Score()
-    {
-    }
-    /**
-     * Number of examples where the autorater chose the baseline model, but humans
-     * preferred the model.
-     *
-     * @param string $falseNegativeCount
-     */
-    public function setFalseNegativeCount($falseNegativeCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFalseNegativeCount()
-    {
-    }
-    /**
-     * Number of examples where the autorater chose the model, but humans
-     * preferred the baseline model.
-     *
-     * @param string $falsePositiveCount
-     */
-    public function setFalsePositiveCount($falsePositiveCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFalsePositiveCount()
-    {
-    }
-    /**
-     * Percentage of time humans decided the baseline model had the better
-     * response.
-     *
-     * @param float $humanPreferenceBaselineModelWinRate
-     */
-    public function setHumanPreferenceBaselineModelWinRate($humanPreferenceBaselineModelWinRate)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getHumanPreferenceBaselineModelWinRate()
-    {
-    }
-    /**
-     * Percentage of time humans decided the model had the better response.
-     *
-     * @param float $humanPreferenceModelWinRate
-     */
-    public function setHumanPreferenceModelWinRate($humanPreferenceModelWinRate)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getHumanPreferenceModelWinRate()
-    {
-    }
-    /**
-     * Percentage of time the autorater decided the model had the better response.
-     *
-     * @param float $modelWinRate
-     */
-    public function setModelWinRate($modelWinRate)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getModelWinRate()
-    {
-    }
-    /**
-     * Fraction of cases where the autorater and humans thought the model had a
-     * better response out of all cases where the autorater thought the model had
-     * a better response. True positive divided by all positive.
-     *
-     * @param float $precision
-     */
-    public function setPrecision($precision)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getPrecision()
-    {
-    }
-    /**
-     * Fraction of cases where the autorater and humans thought the model had a
-     * better response out of all cases where the humans thought the model had a
-     * better response.
-     *
-     * @param float $recall
-     */
-    public function setRecall($recall)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getRecall()
-    {
-    }
-    /**
-     * Number of examples where both the autorater and humans decided that the
-     * model had the worse response.
-     *
-     * @param string $trueNegativeCount
-     */
-    public function setTrueNegativeCount($trueNegativeCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTrueNegativeCount()
-    {
-    }
-    /**
-     * Number of examples where both the autorater and humans decided that the
-     * model had the better response.
-     *
-     * @param string $truePositiveCount
-     */
-    public function setTruePositiveCount($truePositiveCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTruePositiveCount()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaModelevaluationMetricsPairwiseTextGenerationEvaluationMetrics extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaModelevaluationMetricsPairwiseTextGenerationEvaluationMetrics
     {
     }
 }

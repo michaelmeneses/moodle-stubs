@@ -21,471 +21,480 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\IdentityToolkit;
-
-class IdentitytoolkitRelyingpartySetAccountInfoRequest extends \Google\Collection
-{
-    protected $collection_key = 'provider';
-    /**
-     * The captcha challenge.
-     *
-     * @var string
-     */
-    public $captchaChallenge;
-    /**
-     * Response to the captcha.
-     *
-     * @var string
-     */
-    public $captchaResponse;
-    /**
-     * The timestamp when the account is created.
-     *
-     * @var string
-     */
-    public $createdAt;
-    /**
-     * The custom attributes to be set in the user's id token.
-     *
-     * @var string
-     */
-    public $customAttributes;
-    /**
-     * GCP project number of the requesting delegated app. Currently only intended
-     * for Firebase V1 migration.
-     *
-     * @var string
-     */
-    public $delegatedProjectNumber;
-    /**
-     * The attributes users request to delete.
-     *
-     * @var string[]
-     */
-    public $deleteAttribute;
-    /**
-     * The IDPs the user request to delete.
-     *
-     * @var string[]
-     */
-    public $deleteProvider;
-    /**
-     * Whether to disable the user.
-     *
-     * @var bool
-     */
-    public $disableUser;
-    /**
-     * The name of the user.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The email of the user.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * Mark the email as verified or not.
-     *
-     * @var bool
-     */
-    public $emailVerified;
-    /**
-     * The GITKit token of the authenticated user.
-     *
-     * @var string
-     */
-    public $idToken;
-    /**
-     * Instance id token of the app.
-     *
-     * @var string
-     */
-    public $instanceId;
-    /**
-     * Last login timestamp.
-     *
-     * @var string
-     */
-    public $lastLoginAt;
-    /**
-     * The local ID of the user.
-     *
-     * @var string
-     */
-    public $localId;
-    /**
-     * The out-of-band code of the change email request.
-     *
-     * @var string
-     */
-    public $oobCode;
-    /**
-     * The new password of the user.
-     *
-     * @var string
-     */
-    public $password;
-    /**
-     * Privileged caller can update user with specified phone number.
-     *
-     * @var string
-     */
-    public $phoneNumber;
-    /**
-     * The photo url of the user.
-     *
-     * @var string
-     */
-    public $photoUrl;
-    /**
-     * The associated IDPs of the user.
-     *
-     * @var string[]
-     */
-    public $provider;
-    /**
-     * Whether return sts id token and refresh token instead of gitkit token.
-     *
-     * @var bool
-     */
-    public $returnSecureToken;
-    /**
-     * Mark the user to upgrade to federated login.
-     *
-     * @var bool
-     */
-    public $upgradeToFederatedLogin;
-    /**
-     * Timestamp in seconds for valid login token.
-     *
-     * @var string
-     */
-    public $validSince;
-    /**
-     * The captcha challenge.
-     *
-     * @param string $captchaChallenge
-     */
-    public function setCaptchaChallenge($captchaChallenge)
+namespace Google\Service\IdentityToolkit {
+    class IdentitytoolkitRelyingpartySetAccountInfoRequest extends \Google\Collection
     {
+        protected $collection_key = 'provider';
+        /**
+         * The captcha challenge.
+         *
+         * @var string
+         */
+        public $captchaChallenge;
+        /**
+         * Response to the captcha.
+         *
+         * @var string
+         */
+        public $captchaResponse;
+        /**
+         * The timestamp when the account is created.
+         *
+         * @var string
+         */
+        public $createdAt;
+        /**
+         * The custom attributes to be set in the user's id token.
+         *
+         * @var string
+         */
+        public $customAttributes;
+        /**
+         * GCP project number of the requesting delegated app. Currently only intended
+         * for Firebase V1 migration.
+         *
+         * @var string
+         */
+        public $delegatedProjectNumber;
+        /**
+         * The attributes users request to delete.
+         *
+         * @var string[]
+         */
+        public $deleteAttribute;
+        /**
+         * The IDPs the user request to delete.
+         *
+         * @var string[]
+         */
+        public $deleteProvider;
+        /**
+         * Whether to disable the user.
+         *
+         * @var bool
+         */
+        public $disableUser;
+        /**
+         * The name of the user.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The email of the user.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * Mark the email as verified or not.
+         *
+         * @var bool
+         */
+        public $emailVerified;
+        /**
+         * The GITKit token of the authenticated user.
+         *
+         * @var string
+         */
+        public $idToken;
+        /**
+         * Instance id token of the app.
+         *
+         * @var string
+         */
+        public $instanceId;
+        /**
+         * Last login timestamp.
+         *
+         * @var string
+         */
+        public $lastLoginAt;
+        /**
+         * The local ID of the user.
+         *
+         * @var string
+         */
+        public $localId;
+        /**
+         * The out-of-band code of the change email request.
+         *
+         * @var string
+         */
+        public $oobCode;
+        /**
+         * The new password of the user.
+         *
+         * @var string
+         */
+        public $password;
+        /**
+         * Privileged caller can update user with specified phone number.
+         *
+         * @var string
+         */
+        public $phoneNumber;
+        /**
+         * The photo url of the user.
+         *
+         * @var string
+         */
+        public $photoUrl;
+        /**
+         * The associated IDPs of the user.
+         *
+         * @var string[]
+         */
+        public $provider;
+        /**
+         * Whether return sts id token and refresh token instead of gitkit token.
+         *
+         * @var bool
+         */
+        public $returnSecureToken;
+        /**
+         * Mark the user to upgrade to federated login.
+         *
+         * @var bool
+         */
+        public $upgradeToFederatedLogin;
+        /**
+         * Timestamp in seconds for valid login token.
+         *
+         * @var string
+         */
+        public $validSince;
+        /**
+         * The captcha challenge.
+         *
+         * @param string $captchaChallenge
+         */
+        public function setCaptchaChallenge($captchaChallenge)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCaptchaChallenge()
+        {
+        }
+        /**
+         * Response to the captcha.
+         *
+         * @param string $captchaResponse
+         */
+        public function setCaptchaResponse($captchaResponse)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCaptchaResponse()
+        {
+        }
+        /**
+         * The timestamp when the account is created.
+         *
+         * @param string $createdAt
+         */
+        public function setCreatedAt($createdAt)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreatedAt()
+        {
+        }
+        /**
+         * The custom attributes to be set in the user's id token.
+         *
+         * @param string $customAttributes
+         */
+        public function setCustomAttributes($customAttributes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomAttributes()
+        {
+        }
+        /**
+         * GCP project number of the requesting delegated app. Currently only intended
+         * for Firebase V1 migration.
+         *
+         * @param string $delegatedProjectNumber
+         */
+        public function setDelegatedProjectNumber($delegatedProjectNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDelegatedProjectNumber()
+        {
+        }
+        /**
+         * The attributes users request to delete.
+         *
+         * @param string[] $deleteAttribute
+         */
+        public function setDeleteAttribute($deleteAttribute)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDeleteAttribute()
+        {
+        }
+        /**
+         * The IDPs the user request to delete.
+         *
+         * @param string[] $deleteProvider
+         */
+        public function setDeleteProvider($deleteProvider)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDeleteProvider()
+        {
+        }
+        /**
+         * Whether to disable the user.
+         *
+         * @param bool $disableUser
+         */
+        public function setDisableUser($disableUser)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisableUser()
+        {
+        }
+        /**
+         * The name of the user.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The email of the user.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * Mark the email as verified or not.
+         *
+         * @param bool $emailVerified
+         */
+        public function setEmailVerified($emailVerified)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEmailVerified()
+        {
+        }
+        /**
+         * The GITKit token of the authenticated user.
+         *
+         * @param string $idToken
+         */
+        public function setIdToken($idToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIdToken()
+        {
+        }
+        /**
+         * Instance id token of the app.
+         *
+         * @param string $instanceId
+         */
+        public function setInstanceId($instanceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstanceId()
+        {
+        }
+        /**
+         * Last login timestamp.
+         *
+         * @param string $lastLoginAt
+         */
+        public function setLastLoginAt($lastLoginAt)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastLoginAt()
+        {
+        }
+        /**
+         * The local ID of the user.
+         *
+         * @param string $localId
+         */
+        public function setLocalId($localId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocalId()
+        {
+        }
+        /**
+         * The out-of-band code of the change email request.
+         *
+         * @param string $oobCode
+         */
+        public function setOobCode($oobCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOobCode()
+        {
+        }
+        /**
+         * The new password of the user.
+         *
+         * @param string $password
+         */
+        public function setPassword($password)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPassword()
+        {
+        }
+        /**
+         * Privileged caller can update user with specified phone number.
+         *
+         * @param string $phoneNumber
+         */
+        public function setPhoneNumber($phoneNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhoneNumber()
+        {
+        }
+        /**
+         * The photo url of the user.
+         *
+         * @param string $photoUrl
+         */
+        public function setPhotoUrl($photoUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhotoUrl()
+        {
+        }
+        /**
+         * The associated IDPs of the user.
+         *
+         * @param string[] $provider
+         */
+        public function setProvider($provider)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getProvider()
+        {
+        }
+        /**
+         * Whether return sts id token and refresh token instead of gitkit token.
+         *
+         * @param bool $returnSecureToken
+         */
+        public function setReturnSecureToken($returnSecureToken)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReturnSecureToken()
+        {
+        }
+        /**
+         * Mark the user to upgrade to federated login.
+         *
+         * @param bool $upgradeToFederatedLogin
+         */
+        public function setUpgradeToFederatedLogin($upgradeToFederatedLogin)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUpgradeToFederatedLogin()
+        {
+        }
+        /**
+         * Timestamp in seconds for valid login token.
+         *
+         * @param string $validSince
+         */
+        public function setValidSince($validSince)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValidSince()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartySetAccountInfoRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCaptchaChallenge()
-    {
-    }
-    /**
-     * Response to the captcha.
-     *
-     * @param string $captchaResponse
-     */
-    public function setCaptchaResponse($captchaResponse)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCaptchaResponse()
-    {
-    }
-    /**
-     * The timestamp when the account is created.
-     *
-     * @param string $createdAt
-     */
-    public function setCreatedAt($createdAt)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreatedAt()
-    {
-    }
-    /**
-     * The custom attributes to be set in the user's id token.
-     *
-     * @param string $customAttributes
-     */
-    public function setCustomAttributes($customAttributes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCustomAttributes()
-    {
-    }
-    /**
-     * GCP project number of the requesting delegated app. Currently only intended
-     * for Firebase V1 migration.
-     *
-     * @param string $delegatedProjectNumber
-     */
-    public function setDelegatedProjectNumber($delegatedProjectNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDelegatedProjectNumber()
-    {
-    }
-    /**
-     * The attributes users request to delete.
-     *
-     * @param string[] $deleteAttribute
-     */
-    public function setDeleteAttribute($deleteAttribute)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDeleteAttribute()
-    {
-    }
-    /**
-     * The IDPs the user request to delete.
-     *
-     * @param string[] $deleteProvider
-     */
-    public function setDeleteProvider($deleteProvider)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDeleteProvider()
-    {
-    }
-    /**
-     * Whether to disable the user.
-     *
-     * @param bool $disableUser
-     */
-    public function setDisableUser($disableUser)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDisableUser()
-    {
-    }
-    /**
-     * The name of the user.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The email of the user.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEmail()
-    {
-    }
-    /**
-     * Mark the email as verified or not.
-     *
-     * @param bool $emailVerified
-     */
-    public function setEmailVerified($emailVerified)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEmailVerified()
-    {
-    }
-    /**
-     * The GITKit token of the authenticated user.
-     *
-     * @param string $idToken
-     */
-    public function setIdToken($idToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIdToken()
-    {
-    }
-    /**
-     * Instance id token of the app.
-     *
-     * @param string $instanceId
-     */
-    public function setInstanceId($instanceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstanceId()
-    {
-    }
-    /**
-     * Last login timestamp.
-     *
-     * @param string $lastLoginAt
-     */
-    public function setLastLoginAt($lastLoginAt)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastLoginAt()
-    {
-    }
-    /**
-     * The local ID of the user.
-     *
-     * @param string $localId
-     */
-    public function setLocalId($localId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocalId()
-    {
-    }
-    /**
-     * The out-of-band code of the change email request.
-     *
-     * @param string $oobCode
-     */
-    public function setOobCode($oobCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOobCode()
-    {
-    }
-    /**
-     * The new password of the user.
-     *
-     * @param string $password
-     */
-    public function setPassword($password)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPassword()
-    {
-    }
-    /**
-     * Privileged caller can update user with specified phone number.
-     *
-     * @param string $phoneNumber
-     */
-    public function setPhoneNumber($phoneNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhoneNumber()
-    {
-    }
-    /**
-     * The photo url of the user.
-     *
-     * @param string $photoUrl
-     */
-    public function setPhotoUrl($photoUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhotoUrl()
-    {
-    }
-    /**
-     * The associated IDPs of the user.
-     *
-     * @param string[] $provider
-     */
-    public function setProvider($provider)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getProvider()
-    {
-    }
-    /**
-     * Whether return sts id token and refresh token instead of gitkit token.
-     *
-     * @param bool $returnSecureToken
-     */
-    public function setReturnSecureToken($returnSecureToken)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReturnSecureToken()
-    {
-    }
-    /**
-     * Mark the user to upgrade to federated login.
-     *
-     * @param bool $upgradeToFederatedLogin
-     */
-    public function setUpgradeToFederatedLogin($upgradeToFederatedLogin)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUpgradeToFederatedLogin()
-    {
-    }
-    /**
-     * Timestamp in seconds for valid login token.
-     *
-     * @param string $validSince
-     */
-    public function setValidSince($validSince)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValidSince()
+    class Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartySetAccountInfoRequest extends \Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartySetAccountInfoRequest
     {
     }
 }

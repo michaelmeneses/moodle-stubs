@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaModelevaluationMetricsForecastingEvaluationMetricsQuantileMetricsEntry extends \Google\Model
-{
-    /**
-     * This is a custom metric that calculates the percentage of true values that
-     * were less than the predicted value for that quantile. Only populated when
-     * optimization_objective is minimize-quantile-loss and each entry corresponds
-     * to an entry in quantiles The percent value can be used to compare with the
-     * quantile value, which is the target value.
-     *
-     * @var 
-     */
-    public $observedQuantile;
-    /**
-     * The quantile for this entry.
-     *
-     * @var 
-     */
-    public $quantile;
-    /**
-     * The scaled pinball loss of this quantile.
-     *
-     * @var float
-     */
-    public $scaledPinballLoss;
-    public function setObservedQuantile($observedQuantile)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaModelevaluationMetricsForecastingEvaluationMetricsQuantileMetricsEntry extends \Google\Model
     {
+        /**
+         * This is a custom metric that calculates the percentage of true values that
+         * were less than the predicted value for that quantile. Only populated when
+         * optimization_objective is minimize-quantile-loss and each entry corresponds
+         * to an entry in quantiles The percent value can be used to compare with the
+         * quantile value, which is the target value.
+         *
+         * @var 
+         */
+        public $observedQuantile;
+        /**
+         * The quantile for this entry.
+         *
+         * @var 
+         */
+        public $quantile;
+        /**
+         * The scaled pinball loss of this quantile.
+         *
+         * @var float
+         */
+        public $scaledPinballLoss;
+        public function setObservedQuantile($observedQuantile)
+        {
+        }
+        public function getObservedQuantile()
+        {
+        }
+        public function setQuantile($quantile)
+        {
+        }
+        public function getQuantile()
+        {
+        }
+        /**
+         * The scaled pinball loss of this quantile.
+         *
+         * @param float $scaledPinballLoss
+         */
+        public function setScaledPinballLoss($scaledPinballLoss)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getScaledPinballLoss()
+        {
+        }
     }
-    public function getObservedQuantile()
-    {
-    }
-    public function setQuantile($quantile)
-    {
-    }
-    public function getQuantile()
-    {
-    }
+}
+namespace {
     /**
-     * The scaled pinball loss of this quantile.
-     *
-     * @param float $scaledPinballLoss
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaModelevaluationMetricsForecastingEvaluationMetricsQuantileMetricsEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setScaledPinballLoss($scaledPinballLoss)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getScaledPinballLoss()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaModelevaluationMetricsForecastingEvaluationMetricsQuantileMetricsEntry extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaModelevaluationMetricsForecastingEvaluationMetricsQuantileMetricsEntry
     {
     }
 }

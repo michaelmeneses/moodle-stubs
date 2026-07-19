@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Blogger;
-
-class CommentInReplyTo extends \Google\Model
-{
-    /**
-     * The identified of the parent of this comment.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The identified of the parent of this comment.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\Blogger {
+    class CommentInReplyTo extends \Google\Model
     {
+        /**
+         * The identified of the parent of this comment.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The identified of the parent of this comment.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Blogger\CommentInReplyTo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
+    class Google_Service_Blogger_CommentInReplyTo extends \Google\Service\Blogger\CommentInReplyTo
     {
     }
 }

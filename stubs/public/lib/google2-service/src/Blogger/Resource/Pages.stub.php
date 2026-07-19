@@ -21,130 +21,141 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Blogger\Resource;
-
-/**
- * The "pages" collection of methods.
- * Typical usage is:
- *  <code>
- *   $bloggerService = new Google\Service\Blogger(...);
- *   $pages = $bloggerService->pages;
- *  </code>
- */
-class Pages extends \Google\Service\Resource
-{
+namespace Google\Service\Blogger\Resource {
+    use Google\Service\Blogger\Page;
+    use Google\Service\Blogger\PageList;
     /**
-     * Deletes a page by blog id and page id. (pages.delete)
-     *
-     * @param string $blogId
-     * @param string $pageId
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool useTrash Move to Trash if possible
-     * @throws \Google\Service\Exception
+     * The "pages" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $bloggerService = new Google\Service\Blogger(...);
+     *   $pages = $bloggerService->pages;
+     *  </code>
      */
-    public function delete($blogId, $pageId, $optParams = [])
+    class Pages extends \Google\Service\Resource
     {
+        /**
+         * Deletes a page by blog id and page id. (pages.delete)
+         *
+         * @param string $blogId
+         * @param string $pageId
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool useTrash Move to Trash if possible
+         * @throws \Google\Service\Exception
+         */
+        public function delete($blogId, $pageId, $optParams = [])
+        {
+        }
+        /**
+         * Gets a page by blog id and page id. (pages.get)
+         *
+         * @param string $blogId
+         * @param string $pageId
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string view
+         * @return Page
+         * @throws \Google\Service\Exception
+         */
+        public function get($blogId, $pageId, $optParams = [])
+        {
+        }
+        /**
+         * Inserts a page. (pages.insert)
+         *
+         * @param string $blogId
+         * @param Page $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool isDraft
+         * @return Page
+         * @throws \Google\Service\Exception
+         */
+        public function insert($blogId, Page $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Lists pages. (pages.listPages)
+         *
+         * @param string $blogId
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool fetchBodies
+         * @opt_param string maxResults
+         * @opt_param string pageToken
+         * @opt_param string status
+         * @opt_param string view
+         * @return PageList
+         * @throws \Google\Service\Exception
+         */
+        public function listPages($blogId, $optParams = [])
+        {
+        }
+        /**
+         * Patches a page. (pages.patch)
+         *
+         * @param string $blogId
+         * @param string $pageId
+         * @param Page $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool publish
+         * @opt_param bool revert
+         * @return Page
+         * @throws \Google\Service\Exception
+         */
+        public function patch($blogId, $pageId, Page $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Publishes a page. (pages.publish)
+         *
+         * @param string $blogId
+         * @param string $pageId
+         * @param array $optParams Optional parameters.
+         * @return Page
+         * @throws \Google\Service\Exception
+         */
+        public function publish($blogId, $pageId, $optParams = [])
+        {
+        }
+        /**
+         * Reverts a published or scheduled page to draft state. (pages.revert)
+         *
+         * @param string $blogId
+         * @param string $pageId
+         * @param array $optParams Optional parameters.
+         * @return Page
+         * @throws \Google\Service\Exception
+         */
+        public function revert($blogId, $pageId, $optParams = [])
+        {
+        }
+        /**
+         * Updates a page by blog id and page id. (pages.update)
+         *
+         * @param string $blogId
+         * @param string $pageId
+         * @param Page $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool publish
+         * @opt_param bool revert
+         * @return Page
+         * @throws \Google\Service\Exception
+         */
+        public function update($blogId, $pageId, Page $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets a page by blog id and page id. (pages.get)
-     *
-     * @param string $blogId
-     * @param string $pageId
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string view
-     * @return Page
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Blogger\Resource\Pages registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($blogId, $pageId, $optParams = [])
-    {
-    }
-    /**
-     * Inserts a page. (pages.insert)
-     *
-     * @param string $blogId
-     * @param Page $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool isDraft
-     * @return Page
-     * @throws \Google\Service\Exception
-     */
-    public function insert($blogId, Page $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Lists pages. (pages.listPages)
-     *
-     * @param string $blogId
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool fetchBodies
-     * @opt_param string maxResults
-     * @opt_param string pageToken
-     * @opt_param string status
-     * @opt_param string view
-     * @return PageList
-     * @throws \Google\Service\Exception
-     */
-    public function listPages($blogId, $optParams = [])
-    {
-    }
-    /**
-     * Patches a page. (pages.patch)
-     *
-     * @param string $blogId
-     * @param string $pageId
-     * @param Page $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool publish
-     * @opt_param bool revert
-     * @return Page
-     * @throws \Google\Service\Exception
-     */
-    public function patch($blogId, $pageId, Page $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Publishes a page. (pages.publish)
-     *
-     * @param string $blogId
-     * @param string $pageId
-     * @param array $optParams Optional parameters.
-     * @return Page
-     * @throws \Google\Service\Exception
-     */
-    public function publish($blogId, $pageId, $optParams = [])
-    {
-    }
-    /**
-     * Reverts a published or scheduled page to draft state. (pages.revert)
-     *
-     * @param string $blogId
-     * @param string $pageId
-     * @param array $optParams Optional parameters.
-     * @return Page
-     * @throws \Google\Service\Exception
-     */
-    public function revert($blogId, $pageId, $optParams = [])
-    {
-    }
-    /**
-     * Updates a page by blog id and page id. (pages.update)
-     *
-     * @param string $blogId
-     * @param string $pageId
-     * @param Page $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool publish
-     * @opt_param bool revert
-     * @return Page
-     * @throws \Google\Service\Exception
-     */
-    public function update($blogId, $pageId, Page $postBody, $optParams = [])
+    class Google_Service_Blogger_Resource_Pages extends \Google\Service\Blogger\Resource\Pages
     {
     }
 }

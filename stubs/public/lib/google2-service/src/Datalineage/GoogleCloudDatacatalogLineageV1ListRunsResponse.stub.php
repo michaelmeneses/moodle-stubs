@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datalineage;
-
-class GoogleCloudDatacatalogLineageV1ListRunsResponse extends \Google\Collection
-{
-    protected $collection_key = 'runs';
-    /**
-     * The token to specify as `page_token` in the next call to get the next page.
-     * If this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $runsType = GoogleCloudDatacatalogLineageV1Run::class;
-    protected $runsDataType = 'array';
-    /**
-     * The token to specify as `page_token` in the next call to get the next page.
-     * If this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Datalineage {
+    class GoogleCloudDatacatalogLineageV1ListRunsResponse extends \Google\Collection
     {
+        protected $collection_key = 'runs';
+        /**
+         * The token to specify as `page_token` in the next call to get the next page.
+         * If this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $runsType = GoogleCloudDatacatalogLineageV1Run::class;
+        protected $runsDataType = 'array';
+        /**
+         * The token to specify as `page_token` in the next call to get the next page.
+         * If this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The runs from the specified project and location.
+         *
+         * @param GoogleCloudDatacatalogLineageV1Run[] $runs
+         */
+        public function setRuns($runs)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogLineageV1Run[]
+         */
+        public function getRuns()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datalineage\GoogleCloudDatacatalogLineageV1ListRunsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The runs from the specified project and location.
-     *
-     * @param GoogleCloudDatacatalogLineageV1Run[] $runs
-     */
-    public function setRuns($runs)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogLineageV1Run[]
-     */
-    public function getRuns()
+    class Google_Service_Datalineage_GoogleCloudDatacatalogLineageV1ListRunsResponse extends \Google\Service\Datalineage\GoogleCloudDatacatalogLineageV1ListRunsResponse
     {
     }
 }

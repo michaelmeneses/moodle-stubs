@@ -21,35 +21,44 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class TagFilterList extends \Google\Collection
-{
-    protected $collection_key = 'tags';
-    /**
-     * Optional. Tags to be filtered. Tags must be DICOM Data Elements, File Meta
-     * Elements, or Directory Structuring Elements, as defined at: https://dicom.n
-     * ema.org/medical/dicom/current/output/html/part06.html#table_6-1,. They may
-     * be provided by "Keyword" or "Tag". For example "PatientID", "00100010".
-     *
-     * @var string[]
-     */
-    public $tags;
-    /**
-     * Optional. Tags to be filtered. Tags must be DICOM Data Elements, File Meta
-     * Elements, or Directory Structuring Elements, as defined at: https://dicom.n
-     * ema.org/medical/dicom/current/output/html/part06.html#table_6-1,. They may
-     * be provided by "Keyword" or "Tag". For example "PatientID", "00100010".
-     *
-     * @param string[] $tags
-     */
-    public function setTags($tags)
+namespace Google\Service\CloudHealthcare {
+    class TagFilterList extends \Google\Collection
     {
+        protected $collection_key = 'tags';
+        /**
+         * Optional. Tags to be filtered. Tags must be DICOM Data Elements, File Meta
+         * Elements, or Directory Structuring Elements, as defined at: https://dicom.n
+         * ema.org/medical/dicom/current/output/html/part06.html#table_6-1,. They may
+         * be provided by "Keyword" or "Tag". For example "PatientID", "00100010".
+         *
+         * @var string[]
+         */
+        public $tags;
+        /**
+         * Optional. Tags to be filtered. Tags must be DICOM Data Elements, File Meta
+         * Elements, or Directory Structuring Elements, as defined at: https://dicom.n
+         * ema.org/medical/dicom/current/output/html/part06.html#table_6-1,. They may
+         * be provided by "Keyword" or "Tag". For example "PatientID", "00100010".
+         *
+         * @param string[] $tags
+         */
+        public function setTags($tags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTags()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudHealthcare\TagFilterList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTags()
+    class Google_Service_CloudHealthcare_TagFilterList extends \Google\Service\CloudHealthcare\TagFilterList
     {
     }
 }

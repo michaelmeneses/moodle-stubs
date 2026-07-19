@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1ListChannelPartnerRepricingConfigsResponse extends \Google\Collection
-{
-    protected $collection_key = 'channelPartnerRepricingConfigs';
-    protected $channelPartnerRepricingConfigsType = GoogleCloudChannelV1ChannelPartnerRepricingConfig::class;
-    protected $channelPartnerRepricingConfigsDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass to
-     * ListChannelPartnerRepricingConfigsRequest.page_token to obtain that page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The repricing configs for this channel partner.
-     *
-     * @param GoogleCloudChannelV1ChannelPartnerRepricingConfig[] $channelPartnerRepricingConfigs
-     */
-    public function setChannelPartnerRepricingConfigs($channelPartnerRepricingConfigs)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1ListChannelPartnerRepricingConfigsResponse extends \Google\Collection
     {
+        protected $collection_key = 'channelPartnerRepricingConfigs';
+        protected $channelPartnerRepricingConfigsType = GoogleCloudChannelV1ChannelPartnerRepricingConfig::class;
+        protected $channelPartnerRepricingConfigsDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass to
+         * ListChannelPartnerRepricingConfigsRequest.page_token to obtain that page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The repricing configs for this channel partner.
+         *
+         * @param GoogleCloudChannelV1ChannelPartnerRepricingConfig[] $channelPartnerRepricingConfigs
+         */
+        public function setChannelPartnerRepricingConfigs($channelPartnerRepricingConfigs)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1ChannelPartnerRepricingConfig[]
+         */
+        public function getChannelPartnerRepricingConfigs()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results. Pass to
+         * ListChannelPartnerRepricingConfigsRequest.page_token to obtain that page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudChannelV1ChannelPartnerRepricingConfig[]
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1ListChannelPartnerRepricingConfigsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChannelPartnerRepricingConfigs()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results. Pass to
-     * ListChannelPartnerRepricingConfigsRequest.page_token to obtain that page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1ListChannelPartnerRepricingConfigsResponse extends \Google\Service\Cloudchannel\GoogleCloudChannelV1ListChannelPartnerRepricingConfigsResponse
     {
     }
 }

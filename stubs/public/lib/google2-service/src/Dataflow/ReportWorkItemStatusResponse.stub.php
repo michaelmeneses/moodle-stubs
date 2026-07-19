@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class ReportWorkItemStatusResponse extends \Google\Collection
-{
-    protected $collection_key = 'workItemServiceStates';
-    /**
-     * Untranslated bag-of-bytes WorkProgressUpdateResponse for UnifiedWorker.
-     *
-     * @var array[]
-     */
-    public $unifiedWorkerResponse;
-    protected $workItemServiceStatesType = WorkItemServiceState::class;
-    protected $workItemServiceStatesDataType = 'array';
-    /**
-     * Untranslated bag-of-bytes WorkProgressUpdateResponse for UnifiedWorker.
-     *
-     * @param array[] $unifiedWorkerResponse
-     */
-    public function setUnifiedWorkerResponse($unifiedWorkerResponse)
+namespace Google\Service\Dataflow {
+    class ReportWorkItemStatusResponse extends \Google\Collection
     {
+        protected $collection_key = 'workItemServiceStates';
+        /**
+         * Untranslated bag-of-bytes WorkProgressUpdateResponse for UnifiedWorker.
+         *
+         * @var array[]
+         */
+        public $unifiedWorkerResponse;
+        protected $workItemServiceStatesType = WorkItemServiceState::class;
+        protected $workItemServiceStatesDataType = 'array';
+        /**
+         * Untranslated bag-of-bytes WorkProgressUpdateResponse for UnifiedWorker.
+         *
+         * @param array[] $unifiedWorkerResponse
+         */
+        public function setUnifiedWorkerResponse($unifiedWorkerResponse)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getUnifiedWorkerResponse()
+        {
+        }
+        /**
+         * A set of messages indicating the service-side state for each WorkItem whose
+         * status was reported, in the same order as the WorkItemStatus messages in
+         * the ReportWorkItemStatusRequest which resulting in this response.
+         *
+         * @param WorkItemServiceState[] $workItemServiceStates
+         */
+        public function setWorkItemServiceStates($workItemServiceStates)
+        {
+        }
+        /**
+         * @return WorkItemServiceState[]
+         */
+        public function getWorkItemServiceStates()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\Dataflow\ReportWorkItemStatusResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUnifiedWorkerResponse()
-    {
-    }
-    /**
-     * A set of messages indicating the service-side state for each WorkItem whose
-     * status was reported, in the same order as the WorkItemStatus messages in
-     * the ReportWorkItemStatusRequest which resulting in this response.
-     *
-     * @param WorkItemServiceState[] $workItemServiceStates
-     */
-    public function setWorkItemServiceStates($workItemServiceStates)
-    {
-    }
-    /**
-     * @return WorkItemServiceState[]
-     */
-    public function getWorkItemServiceStates()
+    class Google_Service_Dataflow_ReportWorkItemStatusResponse extends \Google\Service\Dataflow\ReportWorkItemStatusResponse
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessVerifications;
-
-class FetchVerificationOptionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'options';
-    protected $optionsType = VerificationOption::class;
-    protected $optionsDataType = 'array';
-    /**
-     * The available verification options.
-     *
-     * @param VerificationOption[] $options
-     */
-    public function setOptions($options)
+namespace Google\Service\MyBusinessVerifications {
+    class FetchVerificationOptionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'options';
+        protected $optionsType = VerificationOption::class;
+        protected $optionsDataType = 'array';
+        /**
+         * The available verification options.
+         *
+         * @param VerificationOption[] $options
+         */
+        public function setOptions($options)
+        {
+        }
+        /**
+         * @return VerificationOption[]
+         */
+        public function getOptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return VerificationOption[]
+     * Runtime class alias of \Google\Service\MyBusinessVerifications\FetchVerificationOptionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOptions()
+    class Google_Service_MyBusinessVerifications_FetchVerificationOptionsResponse extends \Google\Service\MyBusinessVerifications\FetchVerificationOptionsResponse
     {
     }
 }

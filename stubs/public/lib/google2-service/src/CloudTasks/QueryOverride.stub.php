@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudTasks;
-
-class QueryOverride extends \Google\Model
-{
-    /**
-     * The query parameters (e.g., qparam1=123&qparam2=456). Default is an empty
-     * string.
-     *
-     * @var string
-     */
-    public $queryParams;
-    /**
-     * The query parameters (e.g., qparam1=123&qparam2=456). Default is an empty
-     * string.
-     *
-     * @param string $queryParams
-     */
-    public function setQueryParams($queryParams)
+namespace Google\Service\CloudTasks {
+    class QueryOverride extends \Google\Model
     {
+        /**
+         * The query parameters (e.g., qparam1=123&qparam2=456). Default is an empty
+         * string.
+         *
+         * @var string
+         */
+        public $queryParams;
+        /**
+         * The query parameters (e.g., qparam1=123&qparam2=456). Default is an empty
+         * string.
+         *
+         * @param string $queryParams
+         */
+        public function setQueryParams($queryParams)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQueryParams()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudTasks\QueryOverride registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getQueryParams()
+    class Google_Service_CloudTasks_QueryOverride extends \Google\Service\CloudTasks\QueryOverride
     {
     }
 }

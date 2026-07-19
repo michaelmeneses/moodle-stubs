@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1betaDataStreamAndroidAppStreamData extends \Google\Model
-{
-    /**
-     * Output only. ID of the corresponding Android app in Firebase, if any. This
-     * ID can change if the Android app is deleted and recreated.
-     *
-     * @var string
-     */
-    public $firebaseAppId;
-    /**
-     * Immutable. The package name for the app being measured. Example:
-     * "com.example.myandroidapp"
-     *
-     * @var string
-     */
-    public $packageName;
-    /**
-     * Output only. ID of the corresponding Android app in Firebase, if any. This
-     * ID can change if the Android app is deleted and recreated.
-     *
-     * @param string $firebaseAppId
-     */
-    public function setFirebaseAppId($firebaseAppId)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1betaDataStreamAndroidAppStreamData extends \Google\Model
     {
+        /**
+         * Output only. ID of the corresponding Android app in Firebase, if any. This
+         * ID can change if the Android app is deleted and recreated.
+         *
+         * @var string
+         */
+        public $firebaseAppId;
+        /**
+         * Immutable. The package name for the app being measured. Example:
+         * "com.example.myandroidapp"
+         *
+         * @var string
+         */
+        public $packageName;
+        /**
+         * Output only. ID of the corresponding Android app in Firebase, if any. This
+         * ID can change if the Android app is deleted and recreated.
+         *
+         * @param string $firebaseAppId
+         */
+        public function setFirebaseAppId($firebaseAppId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFirebaseAppId()
+        {
+        }
+        /**
+         * Immutable. The package name for the app being measured. Example:
+         * "com.example.myandroidapp"
+         *
+         * @param string $packageName
+         */
+        public function setPackageName($packageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackageName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaDataStreamAndroidAppStreamData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFirebaseAppId()
-    {
-    }
-    /**
-     * Immutable. The package name for the app being measured. Example:
-     * "com.example.myandroidapp"
-     *
-     * @param string $packageName
-     */
-    public function setPackageName($packageName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPackageName()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1betaDataStreamAndroidAppStreamData extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaDataStreamAndroidAppStreamData
     {
     }
 }

@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class ScheduledExecutionRecord extends \Google\Model
-{
-    protected $errorStatusType = Status::class;
-    protected $errorStatusDataType = '';
-    /**
-     * Output only. The timestamp of this execution attempt.
-     *
-     * @var string
-     */
-    public $executionTime;
-    /**
-     * The name of the created workflow invocation, if one was successfully
-     * created. Must be in the format
-     * `projects/locations/repositories/workflowInvocations`.
-     *
-     * @var string
-     */
-    public $workflowInvocation;
-    /**
-     * The error status encountered upon this attempt to create the workflow
-     * invocation, if the attempt was unsuccessful.
-     *
-     * @param Status $errorStatus
-     */
-    public function setErrorStatus(Status $errorStatus)
+namespace Google\Service\Dataform {
+    class ScheduledExecutionRecord extends \Google\Model
     {
+        protected $errorStatusType = Status::class;
+        protected $errorStatusDataType = '';
+        /**
+         * Output only. The timestamp of this execution attempt.
+         *
+         * @var string
+         */
+        public $executionTime;
+        /**
+         * The name of the created workflow invocation, if one was successfully
+         * created. Must be in the format
+         * `projects/locations/repositories/workflowInvocations`.
+         *
+         * @var string
+         */
+        public $workflowInvocation;
+        /**
+         * The error status encountered upon this attempt to create the workflow
+         * invocation, if the attempt was unsuccessful.
+         *
+         * @param Status $errorStatus
+         */
+        public function setErrorStatus(Status $errorStatus)
+        {
+        }
+        /**
+         * @return Status
+         */
+        public function getErrorStatus()
+        {
+        }
+        /**
+         * Output only. The timestamp of this execution attempt.
+         *
+         * @param string $executionTime
+         */
+        public function setExecutionTime($executionTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExecutionTime()
+        {
+        }
+        /**
+         * The name of the created workflow invocation, if one was successfully
+         * created. Must be in the format
+         * `projects/locations/repositories/workflowInvocations`.
+         *
+         * @param string $workflowInvocation
+         */
+        public function setWorkflowInvocation($workflowInvocation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWorkflowInvocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Status
+     * Runtime class alias of \Google\Service\Dataform\ScheduledExecutionRecord registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorStatus()
-    {
-    }
-    /**
-     * Output only. The timestamp of this execution attempt.
-     *
-     * @param string $executionTime
-     */
-    public function setExecutionTime($executionTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExecutionTime()
-    {
-    }
-    /**
-     * The name of the created workflow invocation, if one was successfully
-     * created. Must be in the format
-     * `projects/locations/repositories/workflowInvocations`.
-     *
-     * @param string $workflowInvocation
-     */
-    public function setWorkflowInvocation($workflowInvocation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWorkflowInvocation()
+    class Google_Service_Dataform_ScheduledExecutionRecord extends \Google\Service\Dataform\ScheduledExecutionRecord
     {
     }
 }

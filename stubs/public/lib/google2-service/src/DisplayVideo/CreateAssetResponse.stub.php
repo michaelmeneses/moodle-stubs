@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class CreateAssetResponse extends \Google\Model
-{
-    protected $assetType = Asset::class;
-    protected $assetDataType = '';
-    /**
-     * The uploaded asset, if successful.
-     *
-     * @param Asset $asset
-     */
-    public function setAsset(Asset $asset)
+namespace Google\Service\DisplayVideo {
+    class CreateAssetResponse extends \Google\Model
     {
+        protected $assetType = Asset::class;
+        protected $assetDataType = '';
+        /**
+         * The uploaded asset, if successful.
+         *
+         * @param Asset $asset
+         */
+        public function setAsset(Asset $asset)
+        {
+        }
+        /**
+         * @return Asset
+         */
+        public function getAsset()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Asset
+     * Runtime class alias of \Google\Service\DisplayVideo\CreateAssetResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAsset()
+    class Google_Service_DisplayVideo_CreateAssetResponse extends \Google\Service\DisplayVideo\CreateAssetResponse
     {
     }
 }

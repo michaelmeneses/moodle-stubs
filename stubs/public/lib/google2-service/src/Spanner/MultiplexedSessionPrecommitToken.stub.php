@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class MultiplexedSessionPrecommitToken extends \Google\Model
-{
-    /**
-     * Opaque precommit token.
-     *
-     * @var string
-     */
-    public $precommitToken;
-    /**
-     * An incrementing seq number is generated on every precommit token that is
-     * returned. Clients should remember the precommit token with the highest
-     * sequence number from the current transaction attempt.
-     *
-     * @var int
-     */
-    public $seqNum;
-    /**
-     * Opaque precommit token.
-     *
-     * @param string $precommitToken
-     */
-    public function setPrecommitToken($precommitToken)
+namespace Google\Service\Spanner {
+    class MultiplexedSessionPrecommitToken extends \Google\Model
     {
+        /**
+         * Opaque precommit token.
+         *
+         * @var string
+         */
+        public $precommitToken;
+        /**
+         * An incrementing seq number is generated on every precommit token that is
+         * returned. Clients should remember the precommit token with the highest
+         * sequence number from the current transaction attempt.
+         *
+         * @var int
+         */
+        public $seqNum;
+        /**
+         * Opaque precommit token.
+         *
+         * @param string $precommitToken
+         */
+        public function setPrecommitToken($precommitToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrecommitToken()
+        {
+        }
+        /**
+         * An incrementing seq number is generated on every precommit token that is
+         * returned. Clients should remember the precommit token with the highest
+         * sequence number from the current transaction attempt.
+         *
+         * @param int $seqNum
+         */
+        public function setSeqNum($seqNum)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSeqNum()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Spanner\MultiplexedSessionPrecommitToken registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPrecommitToken()
-    {
-    }
-    /**
-     * An incrementing seq number is generated on every precommit token that is
-     * returned. Clients should remember the precommit token with the highest
-     * sequence number from the current transaction attempt.
-     *
-     * @param int $seqNum
-     */
-    public function setSeqNum($seqNum)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSeqNum()
+    class Google_Service_Spanner_MultiplexedSessionPrecommitToken extends \Google\Service\Spanner\MultiplexedSessionPrecommitToken
     {
     }
 }

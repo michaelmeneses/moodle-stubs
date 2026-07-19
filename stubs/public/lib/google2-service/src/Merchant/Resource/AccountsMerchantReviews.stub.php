@@ -21,80 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Merchant\Resource;
-
-/**
- * The "merchantReviews" collection of methods.
- * Typical usage is:
- *  <code>
- *   $merchantapiService = new Google\Service\Merchant(...);
- *   $merchantReviews = $merchantapiService->accounts_merchantReviews;
- *  </code>
- */
-class AccountsMerchantReviews extends \Google\Service\Resource
-{
+namespace Google\Service\Merchant\Resource {
+    use Google\Service\Merchant\ListMerchantReviewsResponse;
+    use Google\Service\Merchant\MerchantReview;
+    use Google\Service\Merchant\MerchantapiEmpty;
     /**
-     * Deletes merchant review. (merchantReviews.delete)
-     *
-     * @param string $name Required. The ID of the merchant review. Format:
-     * accounts/{account}/merchantReviews/{merchantReview}
-     * @param array $optParams Optional parameters.
-     * @return MerchantapiEmpty
-     * @throws \Google\Service\Exception
+     * The "merchantReviews" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $merchantapiService = new Google\Service\Merchant(...);
+     *   $merchantReviews = $merchantapiService->accounts_merchantReviews;
+     *  </code>
      */
-    public function delete($name, $optParams = [])
+    class AccountsMerchantReviews extends \Google\Service\Resource
     {
+        /**
+         * Deletes merchant review. (merchantReviews.delete)
+         *
+         * @param string $name Required. The ID of the merchant review. Format:
+         * accounts/{account}/merchantReviews/{merchantReview}
+         * @param array $optParams Optional parameters.
+         * @return MerchantapiEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets a merchant review. (merchantReviews.get)
+         *
+         * @param string $name Required. The ID of the merchant review. Format:
+         * accounts/{account}/merchantReviews/{merchantReview}
+         * @param array $optParams Optional parameters.
+         * @return MerchantReview
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Inserts a review for your Merchant Center account. If the review already
+         * exists, then the review is replaced with the new instance.
+         * (merchantReviews.insert)
+         *
+         * @param string $parent Required. The account where the merchant review will be
+         * inserted. Format: accounts/{account}
+         * @param MerchantReview $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string dataSource Required. The data source of the [merchantreview
+         * ](https://support.google.com/merchants/answer/7045996?sjid=525358124421758197
+         * 6-EU) Format: `accounts/{account}/dataSources/{datasource}`.
+         * @return MerchantReview
+         * @throws \Google\Service\Exception
+         */
+        public function insert($parent, MerchantReview $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Lists merchant reviews. (merchantReviews.listAccountsMerchantReviews)
+         *
+         * @param string $parent Required. The account to list merchant reviews for.
+         * Format: accounts/{account}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. The maximum number of merchant reviews to
+         * return. The service can return fewer than this value. The maximum value is
+         * 1000; values above 1000 are coerced to 1000. If unspecified, the maximum
+         * number of reviews is returned.
+         * @opt_param string pageToken Optional. A page token, received from a previous
+         * `ListMerchantReviews` call. Provide this to retrieve the subsequent page.
+         * When paginating, all other parameters provided to `ListMerchantReviews` must
+         * match the call that provided the page token.
+         * @return ListMerchantReviewsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAccountsMerchantReviews($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets a merchant review. (merchantReviews.get)
-     *
-     * @param string $name Required. The ID of the merchant review. Format:
-     * accounts/{account}/merchantReviews/{merchantReview}
-     * @param array $optParams Optional parameters.
-     * @return MerchantReview
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Merchant\Resource\AccountsMerchantReviews registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Inserts a review for your Merchant Center account. If the review already
-     * exists, then the review is replaced with the new instance.
-     * (merchantReviews.insert)
-     *
-     * @param string $parent Required. The account where the merchant review will be
-     * inserted. Format: accounts/{account}
-     * @param MerchantReview $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string dataSource Required. The data source of the [merchantreview
-     * ](https://support.google.com/merchants/answer/7045996?sjid=525358124421758197
-     * 6-EU) Format: `accounts/{account}/dataSources/{datasource}`.
-     * @return MerchantReview
-     * @throws \Google\Service\Exception
-     */
-    public function insert($parent, MerchantReview $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Lists merchant reviews. (merchantReviews.listAccountsMerchantReviews)
-     *
-     * @param string $parent Required. The account to list merchant reviews for.
-     * Format: accounts/{account}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. The maximum number of merchant reviews to
-     * return. The service can return fewer than this value. The maximum value is
-     * 1000; values above 1000 are coerced to 1000. If unspecified, the maximum
-     * number of reviews is returned.
-     * @opt_param string pageToken Optional. A page token, received from a previous
-     * `ListMerchantReviews` call. Provide this to retrieve the subsequent page.
-     * When paginating, all other parameters provided to `ListMerchantReviews` must
-     * match the call that provided the page token.
-     * @return ListMerchantReviewsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listAccountsMerchantReviews($parent, $optParams = [])
+    class Google_Service_Merchant_Resource_AccountsMerchantReviews extends \Google\Service\Merchant\Resource\AccountsMerchantReviews
     {
     }
 }

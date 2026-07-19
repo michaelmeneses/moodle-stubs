@@ -8,6 +8,8 @@
  */
 namespace mod_forum\grades;
 
+use core_grades\local\gradeitem\itemnumber_mapping;
+use core_grades\local\gradeitem\advancedgrading_mapping as advanced_mapping;
 /**
  * Grade item mappings for the activity.
  *

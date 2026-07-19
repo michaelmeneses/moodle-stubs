@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class GamePlayerToken extends \Google\Model
-{
-    /**
-     * The application that this player identifier is for.
-     *
-     * @var string
-     */
-    public $applicationId;
-    protected $recallTokenType = RecallToken::class;
-    protected $recallTokenDataType = '';
-    /**
-     * The application that this player identifier is for.
-     *
-     * @param string $applicationId
-     */
-    public function setApplicationId($applicationId)
+namespace Google\Service\Games {
+    class GamePlayerToken extends \Google\Model
     {
+        /**
+         * The application that this player identifier is for.
+         *
+         * @var string
+         */
+        public $applicationId;
+        protected $recallTokenType = RecallToken::class;
+        protected $recallTokenDataType = '';
+        /**
+         * The application that this player identifier is for.
+         *
+         * @param string $applicationId
+         */
+        public function setApplicationId($applicationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApplicationId()
+        {
+        }
+        /**
+         * Recall token data.
+         *
+         * @param RecallToken $recallToken
+         */
+        public function setRecallToken(RecallToken $recallToken)
+        {
+        }
+        /**
+         * @return RecallToken
+         */
+        public function getRecallToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Games\GamePlayerToken registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApplicationId()
-    {
-    }
-    /**
-     * Recall token data.
-     *
-     * @param RecallToken $recallToken
-     */
-    public function setRecallToken(RecallToken $recallToken)
-    {
-    }
-    /**
-     * @return RecallToken
-     */
-    public function getRecallToken()
+    class Google_Service_Games_GamePlayerToken extends \Google\Service\Games\GamePlayerToken
     {
     }
 }

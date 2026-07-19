@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ModalityTokenCount extends \Google\Model
-{
-    /**
-     * When a modality is not specified, it is treated as `TEXT`.
-     */
-    public const MODALITY_MODALITY_UNSPECIFIED = 'MODALITY_UNSPECIFIED';
-    /**
-     * The `Part` contains plain text.
-     */
-    public const MODALITY_TEXT = 'TEXT';
-    /**
-     * The `Part` contains an image.
-     */
-    public const MODALITY_IMAGE = 'IMAGE';
-    /**
-     * The `Part` contains a video.
-     */
-    public const MODALITY_VIDEO = 'VIDEO';
-    /**
-     * The `Part` contains audio.
-     */
-    public const MODALITY_AUDIO = 'AUDIO';
-    /**
-     * The `Part` contains a document, such as a PDF.
-     */
-    public const MODALITY_DOCUMENT = 'DOCUMENT';
-    /**
-     * The modality that this token count applies to.
-     *
-     * @var string
-     */
-    public $modality;
-    /**
-     * The number of tokens counted for this modality.
-     *
-     * @var int
-     */
-    public $tokenCount;
-    /**
-     * The modality that this token count applies to.
-     *
-     * Accepted values: MODALITY_UNSPECIFIED, TEXT, IMAGE, VIDEO, AUDIO, DOCUMENT
-     *
-     * @param self::MODALITY_* $modality
-     */
-    public function setModality($modality)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ModalityTokenCount extends \Google\Model
     {
+        /**
+         * When a modality is not specified, it is treated as `TEXT`.
+         */
+        public const MODALITY_MODALITY_UNSPECIFIED = 'MODALITY_UNSPECIFIED';
+        /**
+         * The `Part` contains plain text.
+         */
+        public const MODALITY_TEXT = 'TEXT';
+        /**
+         * The `Part` contains an image.
+         */
+        public const MODALITY_IMAGE = 'IMAGE';
+        /**
+         * The `Part` contains a video.
+         */
+        public const MODALITY_VIDEO = 'VIDEO';
+        /**
+         * The `Part` contains audio.
+         */
+        public const MODALITY_AUDIO = 'AUDIO';
+        /**
+         * The `Part` contains a document, such as a PDF.
+         */
+        public const MODALITY_DOCUMENT = 'DOCUMENT';
+        /**
+         * The modality that this token count applies to.
+         *
+         * @var string
+         */
+        public $modality;
+        /**
+         * The number of tokens counted for this modality.
+         *
+         * @var int
+         */
+        public $tokenCount;
+        /**
+         * The modality that this token count applies to.
+         *
+         * Accepted values: MODALITY_UNSPECIFIED, TEXT, IMAGE, VIDEO, AUDIO, DOCUMENT
+         *
+         * @param self::MODALITY_* $modality
+         */
+        public function setModality($modality)
+        {
+        }
+        /**
+         * @return self::MODALITY_*
+         */
+        public function getModality()
+        {
+        }
+        /**
+         * The number of tokens counted for this modality.
+         *
+         * @param int $tokenCount
+         */
+        public function setTokenCount($tokenCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTokenCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::MODALITY_*
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ModalityTokenCount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getModality()
-    {
-    }
-    /**
-     * The number of tokens counted for this modality.
-     *
-     * @param int $tokenCount
-     */
-    public function setTokenCount($tokenCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTokenCount()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ModalityTokenCount extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ModalityTokenCount
     {
     }
 }

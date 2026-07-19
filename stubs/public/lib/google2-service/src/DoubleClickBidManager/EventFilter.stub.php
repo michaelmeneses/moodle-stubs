@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DoubleClickBidManager;
-
-class EventFilter extends \Google\Model
-{
-    protected $dimensionFilterType = PathQueryOptionsFilter::class;
-    protected $dimensionFilterDataType = '';
-    /**
-     * @param PathQueryOptionsFilter
-     */
-    public function setDimensionFilter(PathQueryOptionsFilter $dimensionFilter)
+namespace Google\Service\DoubleClickBidManager {
+    class EventFilter extends \Google\Model
     {
+        protected $dimensionFilterType = PathQueryOptionsFilter::class;
+        protected $dimensionFilterDataType = '';
+        /**
+         * @param PathQueryOptionsFilter
+         */
+        public function setDimensionFilter(PathQueryOptionsFilter $dimensionFilter)
+        {
+        }
+        /**
+         * @return PathQueryOptionsFilter
+         */
+        public function getDimensionFilter()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PathQueryOptionsFilter
+     * Runtime class alias of \Google\Service\DoubleClickBidManager\EventFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDimensionFilter()
+    class Google_Service_DoubleClickBidManager_EventFilter extends \Google\Service\DoubleClickBidManager\EventFilter
     {
     }
 }

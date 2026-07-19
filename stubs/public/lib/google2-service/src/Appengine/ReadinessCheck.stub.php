@@ -21,154 +21,163 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine;
-
-class ReadinessCheck extends \Google\Model
-{
-    /**
-     * A maximum time limit on application initialization, measured from moment
-     * the application successfully replies to a healthcheck until it is ready to
-     * serve traffic.
-     *
-     * @var string
-     */
-    public $appStartTimeout;
-    /**
-     * Interval between health checks.
-     *
-     * @var string
-     */
-    public $checkInterval;
-    /**
-     * Number of consecutive failed checks required before removing traffic.
-     *
-     * @var string
-     */
-    public $failureThreshold;
-    /**
-     * Host header to send when performing a HTTP Readiness check. Example:
-     * "myapp.appspot.com"
-     *
-     * @var string
-     */
-    public $host;
-    /**
-     * The request path.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * Number of consecutive successful checks required before receiving traffic.
-     *
-     * @var string
-     */
-    public $successThreshold;
-    /**
-     * Time before the check is considered failed.
-     *
-     * @var string
-     */
-    public $timeout;
-    /**
-     * A maximum time limit on application initialization, measured from moment
-     * the application successfully replies to a healthcheck until it is ready to
-     * serve traffic.
-     *
-     * @param string $appStartTimeout
-     */
-    public function setAppStartTimeout($appStartTimeout)
+namespace Google\Service\Appengine {
+    class ReadinessCheck extends \Google\Model
     {
+        /**
+         * A maximum time limit on application initialization, measured from moment
+         * the application successfully replies to a healthcheck until it is ready to
+         * serve traffic.
+         *
+         * @var string
+         */
+        public $appStartTimeout;
+        /**
+         * Interval between health checks.
+         *
+         * @var string
+         */
+        public $checkInterval;
+        /**
+         * Number of consecutive failed checks required before removing traffic.
+         *
+         * @var string
+         */
+        public $failureThreshold;
+        /**
+         * Host header to send when performing a HTTP Readiness check. Example:
+         * "myapp.appspot.com"
+         *
+         * @var string
+         */
+        public $host;
+        /**
+         * The request path.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * Number of consecutive successful checks required before receiving traffic.
+         *
+         * @var string
+         */
+        public $successThreshold;
+        /**
+         * Time before the check is considered failed.
+         *
+         * @var string
+         */
+        public $timeout;
+        /**
+         * A maximum time limit on application initialization, measured from moment
+         * the application successfully replies to a healthcheck until it is ready to
+         * serve traffic.
+         *
+         * @param string $appStartTimeout
+         */
+        public function setAppStartTimeout($appStartTimeout)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAppStartTimeout()
+        {
+        }
+        /**
+         * Interval between health checks.
+         *
+         * @param string $checkInterval
+         */
+        public function setCheckInterval($checkInterval)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCheckInterval()
+        {
+        }
+        /**
+         * Number of consecutive failed checks required before removing traffic.
+         *
+         * @param string $failureThreshold
+         */
+        public function setFailureThreshold($failureThreshold)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFailureThreshold()
+        {
+        }
+        /**
+         * Host header to send when performing a HTTP Readiness check. Example:
+         * "myapp.appspot.com"
+         *
+         * @param string $host
+         */
+        public function setHost($host)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHost()
+        {
+        }
+        /**
+         * The request path.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
+        /**
+         * Number of consecutive successful checks required before receiving traffic.
+         *
+         * @param string $successThreshold
+         */
+        public function setSuccessThreshold($successThreshold)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSuccessThreshold()
+        {
+        }
+        /**
+         * Time before the check is considered failed.
+         *
+         * @param string $timeout
+         */
+        public function setTimeout($timeout)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeout()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Appengine\ReadinessCheck registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppStartTimeout()
-    {
-    }
-    /**
-     * Interval between health checks.
-     *
-     * @param string $checkInterval
-     */
-    public function setCheckInterval($checkInterval)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCheckInterval()
-    {
-    }
-    /**
-     * Number of consecutive failed checks required before removing traffic.
-     *
-     * @param string $failureThreshold
-     */
-    public function setFailureThreshold($failureThreshold)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFailureThreshold()
-    {
-    }
-    /**
-     * Host header to send when performing a HTTP Readiness check. Example:
-     * "myapp.appspot.com"
-     *
-     * @param string $host
-     */
-    public function setHost($host)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHost()
-    {
-    }
-    /**
-     * The request path.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
-    {
-    }
-    /**
-     * Number of consecutive successful checks required before receiving traffic.
-     *
-     * @param string $successThreshold
-     */
-    public function setSuccessThreshold($successThreshold)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSuccessThreshold()
-    {
-    }
-    /**
-     * Time before the check is considered failed.
-     *
-     * @param string $timeout
-     */
-    public function setTimeout($timeout)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeout()
+    class Google_Service_Appengine_ReadinessCheck extends \Google\Service\Appengine\ReadinessCheck
     {
     }
 }

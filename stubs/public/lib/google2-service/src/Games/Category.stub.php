@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class Category extends \Google\Model
-{
-    /**
-     * The category name.
-     *
-     * @var string
-     */
-    public $category;
-    /**
-     * Experience points earned in this category.
-     *
-     * @var string
-     */
-    public $experiencePoints;
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#category`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The category name.
-     *
-     * @param string $category
-     */
-    public function setCategory($category)
+namespace Google\Service\Games {
+    class Category extends \Google\Model
     {
+        /**
+         * The category name.
+         *
+         * @var string
+         */
+        public $category;
+        /**
+         * Experience points earned in this category.
+         *
+         * @var string
+         */
+        public $experiencePoints;
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#category`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The category name.
+         *
+         * @param string $category
+         */
+        public function setCategory($category)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCategory()
+        {
+        }
+        /**
+         * Experience points earned in this category.
+         *
+         * @param string $experiencePoints
+         */
+        public function setExperiencePoints($experiencePoints)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExperiencePoints()
+        {
+        }
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#category`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Games\Category registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCategory()
-    {
-    }
-    /**
-     * Experience points earned in this category.
-     *
-     * @param string $experiencePoints
-     */
-    public function setExperiencePoints($experiencePoints)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExperiencePoints()
-    {
-    }
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#category`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Games_Category extends \Google\Service\Games\Category
     {
     }
 }

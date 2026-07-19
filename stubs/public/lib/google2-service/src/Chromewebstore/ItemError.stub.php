@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Chromewebstore;
-
-class ItemError extends \Google\Model
-{
-    protected $internal_gapi_mappings = ["errorCode" => "error_code", "errorDetail" => "error_detail"];
-    /**
-     * @var string
-     */
-    public $errorCode;
-    /**
-     * @var string
-     */
-    public $errorDetail;
-    /**
-     * @param string
-     */
-    public function setErrorCode($errorCode)
+namespace Google\Service\Chromewebstore {
+    class ItemError extends \Google\Model
     {
+        protected $internal_gapi_mappings = ["errorCode" => "error_code", "errorDetail" => "error_detail"];
+        /**
+         * @var string
+         */
+        public $errorCode;
+        /**
+         * @var string
+         */
+        public $errorDetail;
+        /**
+         * @param string
+         */
+        public function setErrorCode($errorCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorCode()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setErrorDetail($errorDetail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorDetail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Chromewebstore\ItemError registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorCode()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setErrorDetail($errorDetail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getErrorDetail()
+    class Google_Service_Chromewebstore_ItemError extends \Google\Service\Chromewebstore\ItemError
     {
     }
 }

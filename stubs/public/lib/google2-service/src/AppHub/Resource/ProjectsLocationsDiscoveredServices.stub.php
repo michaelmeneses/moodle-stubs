@@ -21,69 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AppHub\Resource;
-
-/**
- * The "discoveredServices" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apphubService = new Google\Service\AppHub(...);
- *   $discoveredServices = $apphubService->projects_locations_discoveredServices;
- *  </code>
- */
-class ProjectsLocationsDiscoveredServices extends \Google\Service\Resource
-{
+namespace Google\Service\AppHub\Resource {
+    use Google\Service\AppHub\DiscoveredService;
+    use Google\Service\AppHub\ListDiscoveredServicesResponse;
+    use Google\Service\AppHub\LookupDiscoveredServiceResponse;
     /**
-     * Gets a Discovered Service in a host project and location.
-     * (discoveredServices.get)
-     *
-     * @param string $name Required. Fully qualified name of the Discovered Service
-     * to fetch. Expected format: `projects/{project}/locations/{location}/discovere
-     * dServices/{discoveredService}`.
-     * @param array $optParams Optional parameters.
-     * @return DiscoveredService
-     * @throws \Google\Service\Exception
+     * The "discoveredServices" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apphubService = new Google\Service\AppHub(...);
+     *   $discoveredServices = $apphubService->projects_locations_discoveredServices;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocationsDiscoveredServices extends \Google\Service\Resource
     {
+        /**
+         * Gets a Discovered Service in a host project and location.
+         * (discoveredServices.get)
+         *
+         * @param string $name Required. Fully qualified name of the Discovered Service
+         * to fetch. Expected format: `projects/{project}/locations/{location}/discovere
+         * dServices/{discoveredService}`.
+         * @param array $optParams Optional parameters.
+         * @return DiscoveredService
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists Discovered Services that can be added to an Application in a host
+         * project and location.
+         * (discoveredServices.listProjectsLocationsDiscoveredServices)
+         *
+         * @param string $parent Required. Project and location to list Discovered
+         * Services on. Expected format: `projects/{project}/locations/{location}`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. Filtering results.
+         * @opt_param string orderBy Optional. Hint for how to order the results.
+         * @opt_param int pageSize Optional. Requested page size. Server may return
+         * fewer items than requested. If unspecified, server will pick an appropriate
+         * default.
+         * @opt_param string pageToken Optional. A token identifying a page of results
+         * the server should return.
+         * @return ListDiscoveredServicesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsDiscoveredServices($parent, $optParams = [])
+        {
+        }
+        /**
+         * Lists a Discovered Service in a host project and location, with a given
+         * resource URI. (discoveredServices.lookup)
+         *
+         * @param string $parent Required. Host project ID and location to lookup
+         * Discovered Service in. Expected format:
+         * `projects/{project}/locations/{location}`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string uri Required. Resource URI to find DiscoveredService for.
+         * Accepts both project number and project ID and does translation when needed.
+         * @return LookupDiscoveredServiceResponse
+         * @throws \Google\Service\Exception
+         */
+        public function lookup($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists Discovered Services that can be added to an Application in a host
-     * project and location.
-     * (discoveredServices.listProjectsLocationsDiscoveredServices)
-     *
-     * @param string $parent Required. Project and location to list Discovered
-     * Services on. Expected format: `projects/{project}/locations/{location}`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. Filtering results.
-     * @opt_param string orderBy Optional. Hint for how to order the results.
-     * @opt_param int pageSize Optional. Requested page size. Server may return
-     * fewer items than requested. If unspecified, server will pick an appropriate
-     * default.
-     * @opt_param string pageToken Optional. A token identifying a page of results
-     * the server should return.
-     * @return ListDiscoveredServicesResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AppHub\Resource\ProjectsLocationsDiscoveredServices registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listProjectsLocationsDiscoveredServices($parent, $optParams = [])
-    {
-    }
-    /**
-     * Lists a Discovered Service in a host project and location, with a given
-     * resource URI. (discoveredServices.lookup)
-     *
-     * @param string $parent Required. Host project ID and location to lookup
-     * Discovered Service in. Expected format:
-     * `projects/{project}/locations/{location}`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string uri Required. Resource URI to find DiscoveredService for.
-     * Accepts both project number and project ID and does translation when needed.
-     * @return LookupDiscoveredServiceResponse
-     * @throws \Google\Service\Exception
-     */
-    public function lookup($parent, $optParams = [])
+    class Google_Service_AppHub_Resource_ProjectsLocationsDiscoveredServices extends \Google\Service\AppHub\Resource\ProjectsLocationsDiscoveredServices
     {
     }
 }

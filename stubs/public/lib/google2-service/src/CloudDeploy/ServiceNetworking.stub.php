@@ -21,98 +21,107 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class ServiceNetworking extends \Google\Model
-{
-    /**
-     * Required. Name of the Kubernetes Deployment whose traffic is managed by the
-     * specified Service.
-     *
-     * @var string
-     */
-    public $deployment;
-    /**
-     * Optional. Whether to disable Pod overprovisioning. If Pod overprovisioning
-     * is disabled then Cloud Deploy will limit the number of total Pods used for
-     * the deployment strategy to the number of Pods the Deployment has on the
-     * cluster.
-     *
-     * @var bool
-     */
-    public $disablePodOverprovisioning;
-    /**
-     * Optional. The label to use when selecting Pods for the Deployment resource.
-     * This label must already be present in the Deployment.
-     *
-     * @var string
-     */
-    public $podSelectorLabel;
-    /**
-     * Required. Name of the Kubernetes Service.
-     *
-     * @var string
-     */
-    public $service;
-    /**
-     * Required. Name of the Kubernetes Deployment whose traffic is managed by the
-     * specified Service.
-     *
-     * @param string $deployment
-     */
-    public function setDeployment($deployment)
+namespace Google\Service\CloudDeploy {
+    class ServiceNetworking extends \Google\Model
     {
+        /**
+         * Required. Name of the Kubernetes Deployment whose traffic is managed by the
+         * specified Service.
+         *
+         * @var string
+         */
+        public $deployment;
+        /**
+         * Optional. Whether to disable Pod overprovisioning. If Pod overprovisioning
+         * is disabled then Cloud Deploy will limit the number of total Pods used for
+         * the deployment strategy to the number of Pods the Deployment has on the
+         * cluster.
+         *
+         * @var bool
+         */
+        public $disablePodOverprovisioning;
+        /**
+         * Optional. The label to use when selecting Pods for the Deployment resource.
+         * This label must already be present in the Deployment.
+         *
+         * @var string
+         */
+        public $podSelectorLabel;
+        /**
+         * Required. Name of the Kubernetes Service.
+         *
+         * @var string
+         */
+        public $service;
+        /**
+         * Required. Name of the Kubernetes Deployment whose traffic is managed by the
+         * specified Service.
+         *
+         * @param string $deployment
+         */
+        public function setDeployment($deployment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeployment()
+        {
+        }
+        /**
+         * Optional. Whether to disable Pod overprovisioning. If Pod overprovisioning
+         * is disabled then Cloud Deploy will limit the number of total Pods used for
+         * the deployment strategy to the number of Pods the Deployment has on the
+         * cluster.
+         *
+         * @param bool $disablePodOverprovisioning
+         */
+        public function setDisablePodOverprovisioning($disablePodOverprovisioning)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisablePodOverprovisioning()
+        {
+        }
+        /**
+         * Optional. The label to use when selecting Pods for the Deployment resource.
+         * This label must already be present in the Deployment.
+         *
+         * @param string $podSelectorLabel
+         */
+        public function setPodSelectorLabel($podSelectorLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPodSelectorLabel()
+        {
+        }
+        /**
+         * Required. Name of the Kubernetes Service.
+         *
+         * @param string $service
+         */
+        public function setService($service)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getService()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDeploy\ServiceNetworking registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeployment()
-    {
-    }
-    /**
-     * Optional. Whether to disable Pod overprovisioning. If Pod overprovisioning
-     * is disabled then Cloud Deploy will limit the number of total Pods used for
-     * the deployment strategy to the number of Pods the Deployment has on the
-     * cluster.
-     *
-     * @param bool $disablePodOverprovisioning
-     */
-    public function setDisablePodOverprovisioning($disablePodOverprovisioning)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDisablePodOverprovisioning()
-    {
-    }
-    /**
-     * Optional. The label to use when selecting Pods for the Deployment resource.
-     * This label must already be present in the Deployment.
-     *
-     * @param string $podSelectorLabel
-     */
-    public function setPodSelectorLabel($podSelectorLabel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPodSelectorLabel()
-    {
-    }
-    /**
-     * Required. Name of the Kubernetes Service.
-     *
-     * @param string $service
-     */
-    public function setService($service)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getService()
+    class Google_Service_CloudDeploy_ServiceNetworking extends \Google\Service\CloudDeploy\ServiceNetworking
     {
     }
 }

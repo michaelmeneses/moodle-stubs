@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class ListUserPermissionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'userPermission';
-    /**
-     * Continuation token for fetching the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $userPermissionType = UserPermission::class;
-    protected $userPermissionDataType = 'array';
-    /**
-     * Continuation token for fetching the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\TagManager {
+    class ListUserPermissionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'userPermission';
+        /**
+         * Continuation token for fetching the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $userPermissionType = UserPermission::class;
+        protected $userPermissionDataType = 'array';
+        /**
+         * Continuation token for fetching the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * All GTM UserPermissions of a GTM Account.
+         *
+         * @param UserPermission[] $userPermission
+         */
+        public function setUserPermission($userPermission)
+        {
+        }
+        /**
+         * @return UserPermission[]
+         */
+        public function getUserPermission()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\TagManager\ListUserPermissionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * All GTM UserPermissions of a GTM Account.
-     *
-     * @param UserPermission[] $userPermission
-     */
-    public function setUserPermission($userPermission)
-    {
-    }
-    /**
-     * @return UserPermission[]
-     */
-    public function getUserPermission()
+    class Google_Service_TagManager_ListUserPermissionsResponse extends \Google\Service\TagManager\ListUserPermissionsResponse
     {
     }
 }

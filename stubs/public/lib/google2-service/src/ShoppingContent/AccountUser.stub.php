@@ -21,165 +21,174 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class AccountUser extends \Google\Model
-{
-    /**
-     * Whether user is an admin.
-     *
-     * @var bool
-     */
-    public $admin;
-    /**
-     * User's email address.
-     *
-     * @var string
-     */
-    public $emailAddress;
-    /**
-     * This role is deprecated and can no longer be assigned. Any value set will
-     * be ignored.
-     *
-     * @deprecated
-     * @var bool
-     */
-    public $orderManager;
-    /**
-     * This role is deprecated and can no longer be assigned. Any value set will
-     * be ignored.
-     *
-     * @deprecated
-     * @var bool
-     */
-    public $paymentsAnalyst;
-    /**
-     * This role is deprecated and can no longer be assigned. Any value set will
-     * be ignored.
-     *
-     * @deprecated
-     * @var bool
-     */
-    public $paymentsManager;
-    /**
-     * Optional. Whether user has standard read-only access.
-     *
-     * @var bool
-     */
-    public $readOnly;
-    /**
-     * Whether user is a reporting manager. This role is equivalent to the
-     * Performance and insights role in Merchant Center.
-     *
-     * @var bool
-     */
-    public $reportingManager;
-    /**
-     * Whether user is an admin.
-     *
-     * @param bool $admin
-     */
-    public function setAdmin($admin)
+namespace Google\Service\ShoppingContent {
+    class AccountUser extends \Google\Model
     {
+        /**
+         * Whether user is an admin.
+         *
+         * @var bool
+         */
+        public $admin;
+        /**
+         * User's email address.
+         *
+         * @var string
+         */
+        public $emailAddress;
+        /**
+         * This role is deprecated and can no longer be assigned. Any value set will
+         * be ignored.
+         *
+         * @deprecated
+         * @var bool
+         */
+        public $orderManager;
+        /**
+         * This role is deprecated and can no longer be assigned. Any value set will
+         * be ignored.
+         *
+         * @deprecated
+         * @var bool
+         */
+        public $paymentsAnalyst;
+        /**
+         * This role is deprecated and can no longer be assigned. Any value set will
+         * be ignored.
+         *
+         * @deprecated
+         * @var bool
+         */
+        public $paymentsManager;
+        /**
+         * Optional. Whether user has standard read-only access.
+         *
+         * @var bool
+         */
+        public $readOnly;
+        /**
+         * Whether user is a reporting manager. This role is equivalent to the
+         * Performance and insights role in Merchant Center.
+         *
+         * @var bool
+         */
+        public $reportingManager;
+        /**
+         * Whether user is an admin.
+         *
+         * @param bool $admin
+         */
+        public function setAdmin($admin)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAdmin()
+        {
+        }
+        /**
+         * User's email address.
+         *
+         * @param string $emailAddress
+         */
+        public function setEmailAddress($emailAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmailAddress()
+        {
+        }
+        /**
+         * This role is deprecated and can no longer be assigned. Any value set will
+         * be ignored.
+         *
+         * @deprecated
+         * @param bool $orderManager
+         */
+        public function setOrderManager($orderManager)
+        {
+        }
+        /**
+         * @deprecated
+         * @return bool
+         */
+        public function getOrderManager()
+        {
+        }
+        /**
+         * This role is deprecated and can no longer be assigned. Any value set will
+         * be ignored.
+         *
+         * @deprecated
+         * @param bool $paymentsAnalyst
+         */
+        public function setPaymentsAnalyst($paymentsAnalyst)
+        {
+        }
+        /**
+         * @deprecated
+         * @return bool
+         */
+        public function getPaymentsAnalyst()
+        {
+        }
+        /**
+         * This role is deprecated and can no longer be assigned. Any value set will
+         * be ignored.
+         *
+         * @deprecated
+         * @param bool $paymentsManager
+         */
+        public function setPaymentsManager($paymentsManager)
+        {
+        }
+        /**
+         * @deprecated
+         * @return bool
+         */
+        public function getPaymentsManager()
+        {
+        }
+        /**
+         * Optional. Whether user has standard read-only access.
+         *
+         * @param bool $readOnly
+         */
+        public function setReadOnly($readOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReadOnly()
+        {
+        }
+        /**
+         * Whether user is a reporting manager. This role is equivalent to the
+         * Performance and insights role in Merchant Center.
+         *
+         * @param bool $reportingManager
+         */
+        public function setReportingManager($reportingManager)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReportingManager()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\ShoppingContent\AccountUser registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdmin()
-    {
-    }
-    /**
-     * User's email address.
-     *
-     * @param string $emailAddress
-     */
-    public function setEmailAddress($emailAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEmailAddress()
-    {
-    }
-    /**
-     * This role is deprecated and can no longer be assigned. Any value set will
-     * be ignored.
-     *
-     * @deprecated
-     * @param bool $orderManager
-     */
-    public function setOrderManager($orderManager)
-    {
-    }
-    /**
-     * @deprecated
-     * @return bool
-     */
-    public function getOrderManager()
-    {
-    }
-    /**
-     * This role is deprecated and can no longer be assigned. Any value set will
-     * be ignored.
-     *
-     * @deprecated
-     * @param bool $paymentsAnalyst
-     */
-    public function setPaymentsAnalyst($paymentsAnalyst)
-    {
-    }
-    /**
-     * @deprecated
-     * @return bool
-     */
-    public function getPaymentsAnalyst()
-    {
-    }
-    /**
-     * This role is deprecated and can no longer be assigned. Any value set will
-     * be ignored.
-     *
-     * @deprecated
-     * @param bool $paymentsManager
-     */
-    public function setPaymentsManager($paymentsManager)
-    {
-    }
-    /**
-     * @deprecated
-     * @return bool
-     */
-    public function getPaymentsManager()
-    {
-    }
-    /**
-     * Optional. Whether user has standard read-only access.
-     *
-     * @param bool $readOnly
-     */
-    public function setReadOnly($readOnly)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReadOnly()
-    {
-    }
-    /**
-     * Whether user is a reporting manager. This role is equivalent to the
-     * Performance and insights role in Merchant Center.
-     *
-     * @param bool $reportingManager
-     */
-    public function setReportingManager($reportingManager)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReportingManager()
+    class Google_Service_ShoppingContent_AccountUser extends \Google\Service\ShoppingContent\AccountUser
     {
     }
 }

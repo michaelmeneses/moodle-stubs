@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Webmasters;
-
-class WmxSitemapContent extends \Google\Model
-{
-    public $indexed;
-    public $submitted;
-    public $type;
-    public function setIndexed($indexed)
+namespace Google\Service\Webmasters {
+    class WmxSitemapContent extends \Google\Model
     {
+        public $indexed;
+        public $submitted;
+        public $type;
+        public function setIndexed($indexed)
+        {
+        }
+        public function getIndexed()
+        {
+        }
+        public function setSubmitted($submitted)
+        {
+        }
+        public function getSubmitted()
+        {
+        }
+        public function setType($type)
+        {
+        }
+        public function getType()
+        {
+        }
     }
-    public function getIndexed()
-    {
-    }
-    public function setSubmitted($submitted)
-    {
-    }
-    public function getSubmitted()
-    {
-    }
-    public function setType($type)
-    {
-    }
-    public function getType()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Webmasters\WmxSitemapContent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Webmasters_WmxSitemapContent extends \Google\Service\Webmasters\WmxSitemapContent
     {
     }
 }

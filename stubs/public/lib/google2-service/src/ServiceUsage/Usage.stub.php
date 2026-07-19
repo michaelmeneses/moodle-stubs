@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceUsage;
-
-class Usage extends \Google\Collection
-{
-    protected $collection_key = 'rules';
-    /**
-     * The full resource name of a channel used for sending notifications to the
-     * service producer. Google Service Management currently only supports [Google
-     * Cloud Pub/Sub](https://cloud.google.com/pubsub) as a notification channel.
-     * To use Google Cloud Pub/Sub as the channel, this must be the name of a
-     * Cloud Pub/Sub topic that uses the Cloud Pub/Sub topic name format
-     * documented in https://cloud.google.com/pubsub/docs/overview.
-     *
-     * @var string
-     */
-    public $producerNotificationChannel;
-    /**
-     * Requirements that must be satisfied before a consumer project can use the
-     * service. Each requirement is of the form /; for example
-     * 'serviceusage.googleapis.com/billing-enabled'. For Google APIs, a Terms of
-     * Service requirement must be included here. Google Cloud APIs must include
-     * "serviceusage.googleapis.com/tos/cloud". Other Google APIs should include
-     * "serviceusage.googleapis.com/tos/universal". Additional ToS can be included
-     * based on the business needs.
-     *
-     * @var string[]
-     */
-    public $requirements;
-    protected $rulesType = UsageRule::class;
-    protected $rulesDataType = 'array';
-    /**
-     * The full resource name of a channel used for sending notifications to the
-     * service producer. Google Service Management currently only supports [Google
-     * Cloud Pub/Sub](https://cloud.google.com/pubsub) as a notification channel.
-     * To use Google Cloud Pub/Sub as the channel, this must be the name of a
-     * Cloud Pub/Sub topic that uses the Cloud Pub/Sub topic name format
-     * documented in https://cloud.google.com/pubsub/docs/overview.
-     *
-     * @param string $producerNotificationChannel
-     */
-    public function setProducerNotificationChannel($producerNotificationChannel)
+namespace Google\Service\ServiceUsage {
+    class Usage extends \Google\Collection
     {
+        protected $collection_key = 'rules';
+        /**
+         * The full resource name of a channel used for sending notifications to the
+         * service producer. Google Service Management currently only supports [Google
+         * Cloud Pub/Sub](https://cloud.google.com/pubsub) as a notification channel.
+         * To use Google Cloud Pub/Sub as the channel, this must be the name of a
+         * Cloud Pub/Sub topic that uses the Cloud Pub/Sub topic name format
+         * documented in https://cloud.google.com/pubsub/docs/overview.
+         *
+         * @var string
+         */
+        public $producerNotificationChannel;
+        /**
+         * Requirements that must be satisfied before a consumer project can use the
+         * service. Each requirement is of the form /; for example
+         * 'serviceusage.googleapis.com/billing-enabled'. For Google APIs, a Terms of
+         * Service requirement must be included here. Google Cloud APIs must include
+         * "serviceusage.googleapis.com/tos/cloud". Other Google APIs should include
+         * "serviceusage.googleapis.com/tos/universal". Additional ToS can be included
+         * based on the business needs.
+         *
+         * @var string[]
+         */
+        public $requirements;
+        protected $rulesType = UsageRule::class;
+        protected $rulesDataType = 'array';
+        /**
+         * The full resource name of a channel used for sending notifications to the
+         * service producer. Google Service Management currently only supports [Google
+         * Cloud Pub/Sub](https://cloud.google.com/pubsub) as a notification channel.
+         * To use Google Cloud Pub/Sub as the channel, this must be the name of a
+         * Cloud Pub/Sub topic that uses the Cloud Pub/Sub topic name format
+         * documented in https://cloud.google.com/pubsub/docs/overview.
+         *
+         * @param string $producerNotificationChannel
+         */
+        public function setProducerNotificationChannel($producerNotificationChannel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProducerNotificationChannel()
+        {
+        }
+        /**
+         * Requirements that must be satisfied before a consumer project can use the
+         * service. Each requirement is of the form /; for example
+         * 'serviceusage.googleapis.com/billing-enabled'. For Google APIs, a Terms of
+         * Service requirement must be included here. Google Cloud APIs must include
+         * "serviceusage.googleapis.com/tos/cloud". Other Google APIs should include
+         * "serviceusage.googleapis.com/tos/universal". Additional ToS can be included
+         * based on the business needs.
+         *
+         * @param string[] $requirements
+         */
+        public function setRequirements($requirements)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRequirements()
+        {
+        }
+        /**
+         * A list of usage rules that apply to individual API methods. **NOTE:** All
+         * service configuration rules follow "last one wins" order.
+         *
+         * @param UsageRule[] $rules
+         */
+        public function setRules($rules)
+        {
+        }
+        /**
+         * @return UsageRule[]
+         */
+        public function getRules()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceUsage\Usage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProducerNotificationChannel()
-    {
-    }
-    /**
-     * Requirements that must be satisfied before a consumer project can use the
-     * service. Each requirement is of the form /; for example
-     * 'serviceusage.googleapis.com/billing-enabled'. For Google APIs, a Terms of
-     * Service requirement must be included here. Google Cloud APIs must include
-     * "serviceusage.googleapis.com/tos/cloud". Other Google APIs should include
-     * "serviceusage.googleapis.com/tos/universal". Additional ToS can be included
-     * based on the business needs.
-     *
-     * @param string[] $requirements
-     */
-    public function setRequirements($requirements)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRequirements()
-    {
-    }
-    /**
-     * A list of usage rules that apply to individual API methods. **NOTE:** All
-     * service configuration rules follow "last one wins" order.
-     *
-     * @param UsageRule[] $rules
-     */
-    public function setRules($rules)
-    {
-    }
-    /**
-     * @return UsageRule[]
-     */
-    public function getRules()
+    class Google_Service_ServiceUsage_Usage extends \Google\Service\ServiceUsage\Usage
     {
     }
 }

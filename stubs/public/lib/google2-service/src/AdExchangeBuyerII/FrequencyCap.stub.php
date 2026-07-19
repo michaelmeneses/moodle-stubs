@@ -21,114 +21,123 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class FrequencyCap extends \Google\Model
-{
-    /**
-     * A placeholder for an undefined time unit type. This just indicates the
-     * variable with this value hasn't been initialized.
-     */
-    public const TIME_UNIT_TYPE_TIME_UNIT_TYPE_UNSPECIFIED = 'TIME_UNIT_TYPE_UNSPECIFIED';
-    /**
-     * Minute
-     */
-    public const TIME_UNIT_TYPE_MINUTE = 'MINUTE';
-    /**
-     * Hour
-     */
-    public const TIME_UNIT_TYPE_HOUR = 'HOUR';
-    /**
-     * Day
-     */
-    public const TIME_UNIT_TYPE_DAY = 'DAY';
-    /**
-     * Week
-     */
-    public const TIME_UNIT_TYPE_WEEK = 'WEEK';
-    /**
-     * Month
-     */
-    public const TIME_UNIT_TYPE_MONTH = 'MONTH';
-    /**
-     * Lifetime
-     */
-    public const TIME_UNIT_TYPE_LIFETIME = 'LIFETIME';
-    /**
-     * Pod
-     */
-    public const TIME_UNIT_TYPE_POD = 'POD';
-    /**
-     * Stream
-     */
-    public const TIME_UNIT_TYPE_STREAM = 'STREAM';
-    /**
-     * The maximum number of impressions that can be served to a user within the
-     * specified time period.
-     *
-     * @var int
-     */
-    public $maxImpressions;
-    /**
-     * The amount of time, in the units specified by time_unit_type. Defines the
-     * amount of time over which impressions per user are counted and capped.
-     *
-     * @var int
-     */
-    public $numTimeUnits;
-    /**
-     * The time unit. Along with num_time_units defines the amount of time over
-     * which impressions per user are counted and capped.
-     *
-     * @var string
-     */
-    public $timeUnitType;
-    /**
-     * The maximum number of impressions that can be served to a user within the
-     * specified time period.
-     *
-     * @param int $maxImpressions
-     */
-    public function setMaxImpressions($maxImpressions)
+namespace Google\Service\AdExchangeBuyerII {
+    class FrequencyCap extends \Google\Model
     {
+        /**
+         * A placeholder for an undefined time unit type. This just indicates the
+         * variable with this value hasn't been initialized.
+         */
+        public const TIME_UNIT_TYPE_TIME_UNIT_TYPE_UNSPECIFIED = 'TIME_UNIT_TYPE_UNSPECIFIED';
+        /**
+         * Minute
+         */
+        public const TIME_UNIT_TYPE_MINUTE = 'MINUTE';
+        /**
+         * Hour
+         */
+        public const TIME_UNIT_TYPE_HOUR = 'HOUR';
+        /**
+         * Day
+         */
+        public const TIME_UNIT_TYPE_DAY = 'DAY';
+        /**
+         * Week
+         */
+        public const TIME_UNIT_TYPE_WEEK = 'WEEK';
+        /**
+         * Month
+         */
+        public const TIME_UNIT_TYPE_MONTH = 'MONTH';
+        /**
+         * Lifetime
+         */
+        public const TIME_UNIT_TYPE_LIFETIME = 'LIFETIME';
+        /**
+         * Pod
+         */
+        public const TIME_UNIT_TYPE_POD = 'POD';
+        /**
+         * Stream
+         */
+        public const TIME_UNIT_TYPE_STREAM = 'STREAM';
+        /**
+         * The maximum number of impressions that can be served to a user within the
+         * specified time period.
+         *
+         * @var int
+         */
+        public $maxImpressions;
+        /**
+         * The amount of time, in the units specified by time_unit_type. Defines the
+         * amount of time over which impressions per user are counted and capped.
+         *
+         * @var int
+         */
+        public $numTimeUnits;
+        /**
+         * The time unit. Along with num_time_units defines the amount of time over
+         * which impressions per user are counted and capped.
+         *
+         * @var string
+         */
+        public $timeUnitType;
+        /**
+         * The maximum number of impressions that can be served to a user within the
+         * specified time period.
+         *
+         * @param int $maxImpressions
+         */
+        public function setMaxImpressions($maxImpressions)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxImpressions()
+        {
+        }
+        /**
+         * The amount of time, in the units specified by time_unit_type. Defines the
+         * amount of time over which impressions per user are counted and capped.
+         *
+         * @param int $numTimeUnits
+         */
+        public function setNumTimeUnits($numTimeUnits)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumTimeUnits()
+        {
+        }
+        /**
+         * The time unit. Along with num_time_units defines the amount of time over
+         * which impressions per user are counted and capped.
+         *
+         * Accepted values: TIME_UNIT_TYPE_UNSPECIFIED, MINUTE, HOUR, DAY, WEEK,
+         * MONTH, LIFETIME, POD, STREAM
+         *
+         * @param self::TIME_UNIT_TYPE_* $timeUnitType
+         */
+        public function setTimeUnitType($timeUnitType)
+        {
+        }
+        /**
+         * @return self::TIME_UNIT_TYPE_*
+         */
+        public function getTimeUnitType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\FrequencyCap registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxImpressions()
-    {
-    }
-    /**
-     * The amount of time, in the units specified by time_unit_type. Defines the
-     * amount of time over which impressions per user are counted and capped.
-     *
-     * @param int $numTimeUnits
-     */
-    public function setNumTimeUnits($numTimeUnits)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumTimeUnits()
-    {
-    }
-    /**
-     * The time unit. Along with num_time_units defines the amount of time over
-     * which impressions per user are counted and capped.
-     *
-     * Accepted values: TIME_UNIT_TYPE_UNSPECIFIED, MINUTE, HOUR, DAY, WEEK,
-     * MONTH, LIFETIME, POD, STREAM
-     *
-     * @param self::TIME_UNIT_TYPE_* $timeUnitType
-     */
-    public function setTimeUnitType($timeUnitType)
-    {
-    }
-    /**
-     * @return self::TIME_UNIT_TYPE_*
-     */
-    public function getTimeUnitType()
+    class Google_Service_AdExchangeBuyerII_FrequencyCap extends \Google\Service\AdExchangeBuyerII\FrequencyCap
     {
     }
 }

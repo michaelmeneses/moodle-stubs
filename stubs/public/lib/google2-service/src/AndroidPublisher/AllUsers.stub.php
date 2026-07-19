@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class AllUsers extends \Google\Model
-{
-    /**
-     * Required. Set to true if all set of users are needed.
-     *
-     * @var bool
-     */
-    public $isAllUsersRequested;
-    /**
-     * Required. Set to true if all set of users are needed.
-     *
-     * @param bool $isAllUsersRequested
-     */
-    public function setIsAllUsersRequested($isAllUsersRequested)
+namespace Google\Service\AndroidPublisher {
+    class AllUsers extends \Google\Model
     {
+        /**
+         * Required. Set to true if all set of users are needed.
+         *
+         * @var bool
+         */
+        public $isAllUsersRequested;
+        /**
+         * Required. Set to true if all set of users are needed.
+         *
+         * @param bool $isAllUsersRequested
+         */
+        public function setIsAllUsersRequested($isAllUsersRequested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsAllUsersRequested()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\AndroidPublisher\AllUsers registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIsAllUsersRequested()
+    class Google_Service_AndroidPublisher_AllUsers extends \Google\Service\AndroidPublisher\AllUsers
     {
     }
 }

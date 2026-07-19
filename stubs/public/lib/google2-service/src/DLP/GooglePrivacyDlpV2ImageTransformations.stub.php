@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2ImageTransformations extends \Google\Collection
-{
-    protected $collection_key = 'transforms';
-    protected $transformsType = GooglePrivacyDlpV2ImageTransformation::class;
-    protected $transformsDataType = 'array';
-    /**
-     * List of transforms to make.
-     *
-     * @param GooglePrivacyDlpV2ImageTransformation[] $transforms
-     */
-    public function setTransforms($transforms)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2ImageTransformations extends \Google\Collection
     {
+        protected $collection_key = 'transforms';
+        protected $transformsType = GooglePrivacyDlpV2ImageTransformation::class;
+        protected $transformsDataType = 'array';
+        /**
+         * List of transforms to make.
+         *
+         * @param GooglePrivacyDlpV2ImageTransformation[] $transforms
+         */
+        public function setTransforms($transforms)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2ImageTransformation[]
+         */
+        public function getTransforms()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2ImageTransformation[]
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2ImageTransformations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTransforms()
+    class Google_Service_DLP_GooglePrivacyDlpV2ImageTransformations extends \Google\Service\DLP\GooglePrivacyDlpV2ImageTransformations
     {
     }
 }

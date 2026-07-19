@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class UserFacingMessage extends \Google\Model
-{
-    /**
-     * The default message displayed if no localized message is specified or the
-     * user's locale doesn't match with any of the localized messages. A default
-     * message must be provided if any localized messages are provided.
-     *
-     * @var string
-     */
-    public $defaultMessage;
-    /**
-     * A map containing pairs, where locale is a well-formed BCP 47 language
-     * (https://www.w3.org/International/articles/language-tags/) code, such as
-     * en-US, es-ES, or fr.
-     *
-     * @var string[]
-     */
-    public $localizedMessages;
-    /**
-     * The default message displayed if no localized message is specified or the
-     * user's locale doesn't match with any of the localized messages. A default
-     * message must be provided if any localized messages are provided.
-     *
-     * @param string $defaultMessage
-     */
-    public function setDefaultMessage($defaultMessage)
+namespace Google\Service\AndroidManagement {
+    class UserFacingMessage extends \Google\Model
     {
+        /**
+         * The default message displayed if no localized message is specified or the
+         * user's locale doesn't match with any of the localized messages. A default
+         * message must be provided if any localized messages are provided.
+         *
+         * @var string
+         */
+        public $defaultMessage;
+        /**
+         * A map containing pairs, where locale is a well-formed BCP 47 language
+         * (https://www.w3.org/International/articles/language-tags/) code, such as
+         * en-US, es-ES, or fr.
+         *
+         * @var string[]
+         */
+        public $localizedMessages;
+        /**
+         * The default message displayed if no localized message is specified or the
+         * user's locale doesn't match with any of the localized messages. A default
+         * message must be provided if any localized messages are provided.
+         *
+         * @param string $defaultMessage
+         */
+        public function setDefaultMessage($defaultMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefaultMessage()
+        {
+        }
+        /**
+         * A map containing pairs, where locale is a well-formed BCP 47 language
+         * (https://www.w3.org/International/articles/language-tags/) code, such as
+         * en-US, es-ES, or fr.
+         *
+         * @param string[] $localizedMessages
+         */
+        public function setLocalizedMessages($localizedMessages)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLocalizedMessages()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidManagement\UserFacingMessage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefaultMessage()
-    {
-    }
-    /**
-     * A map containing pairs, where locale is a well-formed BCP 47 language
-     * (https://www.w3.org/International/articles/language-tags/) code, such as
-     * en-US, es-ES, or fr.
-     *
-     * @param string[] $localizedMessages
-     */
-    public function setLocalizedMessages($localizedMessages)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLocalizedMessages()
+    class Google_Service_AndroidManagement_UserFacingMessage extends \Google\Service\AndroidManagement\UserFacingMessage
     {
     }
 }

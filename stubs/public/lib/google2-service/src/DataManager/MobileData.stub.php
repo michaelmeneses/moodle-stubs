@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataManager;
-
-class MobileData extends \Google\Collection
-{
-    protected $collection_key = 'mobileIds';
-    /**
-     * Required. The list of mobile device IDs (advertising ID/IDFA). At most 10
-     * `mobileIds` can be provided in a single AudienceMember.
-     *
-     * @var string[]
-     */
-    public $mobileIds;
-    /**
-     * Required. The list of mobile device IDs (advertising ID/IDFA). At most 10
-     * `mobileIds` can be provided in a single AudienceMember.
-     *
-     * @param string[] $mobileIds
-     */
-    public function setMobileIds($mobileIds)
+namespace Google\Service\DataManager {
+    class MobileData extends \Google\Collection
     {
+        protected $collection_key = 'mobileIds';
+        /**
+         * Required. The list of mobile device IDs (advertising ID/IDFA). At most 10
+         * `mobileIds` can be provided in a single AudienceMember.
+         *
+         * @var string[]
+         */
+        public $mobileIds;
+        /**
+         * Required. The list of mobile device IDs (advertising ID/IDFA). At most 10
+         * `mobileIds` can be provided in a single AudienceMember.
+         *
+         * @param string[] $mobileIds
+         */
+        public function setMobileIds($mobileIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMobileIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DataManager\MobileData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMobileIds()
+    class Google_Service_DataManager_MobileData extends \Google\Service\DataManager\MobileData
     {
     }
 }

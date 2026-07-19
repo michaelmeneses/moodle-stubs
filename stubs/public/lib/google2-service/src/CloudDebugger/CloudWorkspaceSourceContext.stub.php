@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDebugger;
-
-class CloudWorkspaceSourceContext extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $snapshotId;
-    protected $workspaceIdType = CloudWorkspaceId::class;
-    protected $workspaceIdDataType = '';
-    /**
-     * @param string
-     */
-    public function setSnapshotId($snapshotId)
+namespace Google\Service\CloudDebugger {
+    class CloudWorkspaceSourceContext extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $snapshotId;
+        protected $workspaceIdType = CloudWorkspaceId::class;
+        protected $workspaceIdDataType = '';
+        /**
+         * @param string
+         */
+        public function setSnapshotId($snapshotId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSnapshotId()
+        {
+        }
+        /**
+         * @param CloudWorkspaceId
+         */
+        public function setWorkspaceId(CloudWorkspaceId $workspaceId)
+        {
+        }
+        /**
+         * @return CloudWorkspaceId
+         */
+        public function getWorkspaceId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDebugger\CloudWorkspaceSourceContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSnapshotId()
-    {
-    }
-    /**
-     * @param CloudWorkspaceId
-     */
-    public function setWorkspaceId(CloudWorkspaceId $workspaceId)
-    {
-    }
-    /**
-     * @return CloudWorkspaceId
-     */
-    public function getWorkspaceId()
+    class Google_Service_CloudDebugger_CloudWorkspaceSourceContext extends \Google\Service\CloudDebugger\CloudWorkspaceSourceContext
     {
     }
 }

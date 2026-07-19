@@ -21,120 +21,129 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class ToolAnnotations extends \Google\Model
-{
-    /**
-     * If true, the tool may perform destructive updates to its environment. If
-     * false, the tool performs only additive updates. (This property is
-     * meaningful only when `read_only_hint == false`)
-     *
-     * @var bool
-     */
-    public $destructiveHint;
-    /**
-     * If true, calling the tool repeatedly with the same arguments will have no
-     * additional effect on the environment. (This property is meaningful only
-     * when `read_only_hint == false`)
-     *
-     * @var bool
-     */
-    public $idempotentHint;
-    /**
-     * If true, this tool may interact with an "open world" of external entities.
-     * If false, the tool's domain of interaction is closed. For example, the
-     * world of a web search tool is open, whereas that of a memory tool is not.
-     *
-     * @var bool
-     */
-    public $openWorldHint;
-    /**
-     * If true, the tool does not modify its environment.
-     *
-     * @var bool
-     */
-    public $readOnlyHint;
-    /**
-     * A human-readable title for the tool.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * If true, the tool may perform destructive updates to its environment. If
-     * false, the tool performs only additive updates. (This property is
-     * meaningful only when `read_only_hint == false`)
-     *
-     * @param bool $destructiveHint
-     */
-    public function setDestructiveHint($destructiveHint)
+namespace Google\Service\Connectors {
+    class ToolAnnotations extends \Google\Model
     {
+        /**
+         * If true, the tool may perform destructive updates to its environment. If
+         * false, the tool performs only additive updates. (This property is
+         * meaningful only when `read_only_hint == false`)
+         *
+         * @var bool
+         */
+        public $destructiveHint;
+        /**
+         * If true, calling the tool repeatedly with the same arguments will have no
+         * additional effect on the environment. (This property is meaningful only
+         * when `read_only_hint == false`)
+         *
+         * @var bool
+         */
+        public $idempotentHint;
+        /**
+         * If true, this tool may interact with an "open world" of external entities.
+         * If false, the tool's domain of interaction is closed. For example, the
+         * world of a web search tool is open, whereas that of a memory tool is not.
+         *
+         * @var bool
+         */
+        public $openWorldHint;
+        /**
+         * If true, the tool does not modify its environment.
+         *
+         * @var bool
+         */
+        public $readOnlyHint;
+        /**
+         * A human-readable title for the tool.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * If true, the tool may perform destructive updates to its environment. If
+         * false, the tool performs only additive updates. (This property is
+         * meaningful only when `read_only_hint == false`)
+         *
+         * @param bool $destructiveHint
+         */
+        public function setDestructiveHint($destructiveHint)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDestructiveHint()
+        {
+        }
+        /**
+         * If true, calling the tool repeatedly with the same arguments will have no
+         * additional effect on the environment. (This property is meaningful only
+         * when `read_only_hint == false`)
+         *
+         * @param bool $idempotentHint
+         */
+        public function setIdempotentHint($idempotentHint)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIdempotentHint()
+        {
+        }
+        /**
+         * If true, this tool may interact with an "open world" of external entities.
+         * If false, the tool's domain of interaction is closed. For example, the
+         * world of a web search tool is open, whereas that of a memory tool is not.
+         *
+         * @param bool $openWorldHint
+         */
+        public function setOpenWorldHint($openWorldHint)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getOpenWorldHint()
+        {
+        }
+        /**
+         * If true, the tool does not modify its environment.
+         *
+         * @param bool $readOnlyHint
+         */
+        public function setReadOnlyHint($readOnlyHint)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReadOnlyHint()
+        {
+        }
+        /**
+         * A human-readable title for the tool.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Connectors\ToolAnnotations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDestructiveHint()
-    {
-    }
-    /**
-     * If true, calling the tool repeatedly with the same arguments will have no
-     * additional effect on the environment. (This property is meaningful only
-     * when `read_only_hint == false`)
-     *
-     * @param bool $idempotentHint
-     */
-    public function setIdempotentHint($idempotentHint)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIdempotentHint()
-    {
-    }
-    /**
-     * If true, this tool may interact with an "open world" of external entities.
-     * If false, the tool's domain of interaction is closed. For example, the
-     * world of a web search tool is open, whereas that of a memory tool is not.
-     *
-     * @param bool $openWorldHint
-     */
-    public function setOpenWorldHint($openWorldHint)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getOpenWorldHint()
-    {
-    }
-    /**
-     * If true, the tool does not modify its environment.
-     *
-     * @param bool $readOnlyHint
-     */
-    public function setReadOnlyHint($readOnlyHint)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReadOnlyHint()
-    {
-    }
-    /**
-     * A human-readable title for the tool.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_Connectors_ToolAnnotations extends \Google\Service\Connectors\ToolAnnotations
     {
     }
 }

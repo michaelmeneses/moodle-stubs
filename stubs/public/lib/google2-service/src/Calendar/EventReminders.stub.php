@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Calendar;
-
-class EventReminders extends \Google\Collection
-{
-    protected $collection_key = 'overrides';
-    protected $overridesType = EventReminder::class;
-    protected $overridesDataType = 'array';
-    /**
-     * Whether the default reminders of the calendar apply to the event.
-     *
-     * @var bool
-     */
-    public $useDefault;
-    /**
-     * If the event doesn't use the default reminders, this lists the reminders
-     * specific to the event, or, if not set, indicates that no reminders are set
-     * for this event. The maximum number of override reminders is 5.
-     *
-     * @param EventReminder[] $overrides
-     */
-    public function setOverrides($overrides)
+namespace Google\Service\Calendar {
+    class EventReminders extends \Google\Collection
     {
+        protected $collection_key = 'overrides';
+        protected $overridesType = EventReminder::class;
+        protected $overridesDataType = 'array';
+        /**
+         * Whether the default reminders of the calendar apply to the event.
+         *
+         * @var bool
+         */
+        public $useDefault;
+        /**
+         * If the event doesn't use the default reminders, this lists the reminders
+         * specific to the event, or, if not set, indicates that no reminders are set
+         * for this event. The maximum number of override reminders is 5.
+         *
+         * @param EventReminder[] $overrides
+         */
+        public function setOverrides($overrides)
+        {
+        }
+        /**
+         * @return EventReminder[]
+         */
+        public function getOverrides()
+        {
+        }
+        /**
+         * Whether the default reminders of the calendar apply to the event.
+         *
+         * @param bool $useDefault
+         */
+        public function setUseDefault($useDefault)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUseDefault()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EventReminder[]
+     * Runtime class alias of \Google\Service\Calendar\EventReminders registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOverrides()
-    {
-    }
-    /**
-     * Whether the default reminders of the calendar apply to the event.
-     *
-     * @param bool $useDefault
-     */
-    public function setUseDefault($useDefault)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUseDefault()
+    class Google_Service_Calendar_EventReminders extends \Google\Service\Calendar\EventReminders
     {
     }
 }

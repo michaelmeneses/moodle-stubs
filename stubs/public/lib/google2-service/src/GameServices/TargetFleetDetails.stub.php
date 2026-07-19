@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GameServices;
-
-class TargetFleetDetails extends \Google\Model
-{
-    protected $autoscalerType = TargetFleetAutoscaler::class;
-    protected $autoscalerDataType = '';
-    protected $fleetType = TargetFleet::class;
-    protected $fleetDataType = '';
-    /**
-     * @param TargetFleetAutoscaler
-     */
-    public function setAutoscaler(TargetFleetAutoscaler $autoscaler)
+namespace Google\Service\GameServices {
+    class TargetFleetDetails extends \Google\Model
     {
+        protected $autoscalerType = TargetFleetAutoscaler::class;
+        protected $autoscalerDataType = '';
+        protected $fleetType = TargetFleet::class;
+        protected $fleetDataType = '';
+        /**
+         * @param TargetFleetAutoscaler
+         */
+        public function setAutoscaler(TargetFleetAutoscaler $autoscaler)
+        {
+        }
+        /**
+         * @return TargetFleetAutoscaler
+         */
+        public function getAutoscaler()
+        {
+        }
+        /**
+         * @param TargetFleet
+         */
+        public function setFleet(TargetFleet $fleet)
+        {
+        }
+        /**
+         * @return TargetFleet
+         */
+        public function getFleet()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TargetFleetAutoscaler
+     * Runtime class alias of \Google\Service\GameServices\TargetFleetDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutoscaler()
-    {
-    }
-    /**
-     * @param TargetFleet
-     */
-    public function setFleet(TargetFleet $fleet)
-    {
-    }
-    /**
-     * @return TargetFleet
-     */
-    public function getFleet()
+    class Google_Service_GameServices_TargetFleetDetails extends \Google\Service\GameServices\TargetFleetDetails
     {
     }
 }

@@ -21,146 +21,155 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSClassificationEvaluationMetrics extends \Google\Collection
-{
-    protected $collection_key = 'confidenceMetricsEntries';
-    /**
-     * The Area under precision recall curve metric.
-     *
-     * @var float
-     */
-    public $auPrc;
-    /**
-     * The Area Under Receiver Operating Characteristic curve metric. Micro-
-     * averaged for the overall evaluation.
-     *
-     * @var float
-     */
-    public $auRoc;
-    /**
-     * The Area under precision recall curve metric based on priors.
-     *
-     * @var float
-     */
-    public $baseAuPrc;
-    protected $confidenceMetricsEntriesType = XPSConfidenceMetricsEntry::class;
-    protected $confidenceMetricsEntriesDataType = 'array';
-    protected $confusionMatrixType = XPSConfusionMatrix::class;
-    protected $confusionMatrixDataType = '';
-    /**
-     * The number of examples used for model evaluation.
-     *
-     * @var int
-     */
-    public $evaluatedExamplesCount;
-    /**
-     * The Log Loss metric.
-     *
-     * @var float
-     */
-    public $logLoss;
-    /**
-     * The Area under precision recall curve metric.
-     *
-     * @param float $auPrc
-     */
-    public function setAuPrc($auPrc)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSClassificationEvaluationMetrics extends \Google\Collection
     {
+        protected $collection_key = 'confidenceMetricsEntries';
+        /**
+         * The Area under precision recall curve metric.
+         *
+         * @var float
+         */
+        public $auPrc;
+        /**
+         * The Area Under Receiver Operating Characteristic curve metric. Micro-
+         * averaged for the overall evaluation.
+         *
+         * @var float
+         */
+        public $auRoc;
+        /**
+         * The Area under precision recall curve metric based on priors.
+         *
+         * @var float
+         */
+        public $baseAuPrc;
+        protected $confidenceMetricsEntriesType = XPSConfidenceMetricsEntry::class;
+        protected $confidenceMetricsEntriesDataType = 'array';
+        protected $confusionMatrixType = XPSConfusionMatrix::class;
+        protected $confusionMatrixDataType = '';
+        /**
+         * The number of examples used for model evaluation.
+         *
+         * @var int
+         */
+        public $evaluatedExamplesCount;
+        /**
+         * The Log Loss metric.
+         *
+         * @var float
+         */
+        public $logLoss;
+        /**
+         * The Area under precision recall curve metric.
+         *
+         * @param float $auPrc
+         */
+        public function setAuPrc($auPrc)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getAuPrc()
+        {
+        }
+        /**
+         * The Area Under Receiver Operating Characteristic curve metric. Micro-
+         * averaged for the overall evaluation.
+         *
+         * @param float $auRoc
+         */
+        public function setAuRoc($auRoc)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getAuRoc()
+        {
+        }
+        /**
+         * The Area under precision recall curve metric based on priors.
+         *
+         * @param float $baseAuPrc
+         */
+        public function setBaseAuPrc($baseAuPrc)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getBaseAuPrc()
+        {
+        }
+        /**
+         * Metrics that have confidence thresholds. Precision-recall curve can be
+         * derived from it.
+         *
+         * @param XPSConfidenceMetricsEntry[] $confidenceMetricsEntries
+         */
+        public function setConfidenceMetricsEntries($confidenceMetricsEntries)
+        {
+        }
+        /**
+         * @return XPSConfidenceMetricsEntry[]
+         */
+        public function getConfidenceMetricsEntries()
+        {
+        }
+        /**
+         * Confusion matrix of the evaluation. Only set for MULTICLASS classification
+         * problems where number of annotation specs is no more than 10. Only set for
+         * model level evaluation, not for evaluation per label.
+         *
+         * @param XPSConfusionMatrix $confusionMatrix
+         */
+        public function setConfusionMatrix(XPSConfusionMatrix $confusionMatrix)
+        {
+        }
+        /**
+         * @return XPSConfusionMatrix
+         */
+        public function getConfusionMatrix()
+        {
+        }
+        /**
+         * The number of examples used for model evaluation.
+         *
+         * @param int $evaluatedExamplesCount
+         */
+        public function setEvaluatedExamplesCount($evaluatedExamplesCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getEvaluatedExamplesCount()
+        {
+        }
+        /**
+         * The Log Loss metric.
+         *
+         * @param float $logLoss
+         */
+        public function setLogLoss($logLoss)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getLogLoss()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSClassificationEvaluationMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuPrc()
-    {
-    }
-    /**
-     * The Area Under Receiver Operating Characteristic curve metric. Micro-
-     * averaged for the overall evaluation.
-     *
-     * @param float $auRoc
-     */
-    public function setAuRoc($auRoc)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getAuRoc()
-    {
-    }
-    /**
-     * The Area under precision recall curve metric based on priors.
-     *
-     * @param float $baseAuPrc
-     */
-    public function setBaseAuPrc($baseAuPrc)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getBaseAuPrc()
-    {
-    }
-    /**
-     * Metrics that have confidence thresholds. Precision-recall curve can be
-     * derived from it.
-     *
-     * @param XPSConfidenceMetricsEntry[] $confidenceMetricsEntries
-     */
-    public function setConfidenceMetricsEntries($confidenceMetricsEntries)
-    {
-    }
-    /**
-     * @return XPSConfidenceMetricsEntry[]
-     */
-    public function getConfidenceMetricsEntries()
-    {
-    }
-    /**
-     * Confusion matrix of the evaluation. Only set for MULTICLASS classification
-     * problems where number of annotation specs is no more than 10. Only set for
-     * model level evaluation, not for evaluation per label.
-     *
-     * @param XPSConfusionMatrix $confusionMatrix
-     */
-    public function setConfusionMatrix(XPSConfusionMatrix $confusionMatrix)
-    {
-    }
-    /**
-     * @return XPSConfusionMatrix
-     */
-    public function getConfusionMatrix()
-    {
-    }
-    /**
-     * The number of examples used for model evaluation.
-     *
-     * @param int $evaluatedExamplesCount
-     */
-    public function setEvaluatedExamplesCount($evaluatedExamplesCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getEvaluatedExamplesCount()
-    {
-    }
-    /**
-     * The Log Loss metric.
-     *
-     * @param float $logLoss
-     */
-    public function setLogLoss($logLoss)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getLogLoss()
+    class Google_Service_CloudNaturalLanguage_XPSClassificationEvaluationMetrics extends \Google\Service\CloudNaturalLanguage\XPSClassificationEvaluationMetrics
     {
     }
 }

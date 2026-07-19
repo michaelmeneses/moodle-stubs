@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetAppFiles;
-
-class SyncReplicationRequest extends \Google\Model
-{
+namespace Google\Service\NetAppFiles {
+    class SyncReplicationRequest extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\NetAppFiles\SyncReplicationRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_NetAppFiles_SyncReplicationRequest extends \Google\Service\NetAppFiles\SyncReplicationRequest
+    {
+    }
 }

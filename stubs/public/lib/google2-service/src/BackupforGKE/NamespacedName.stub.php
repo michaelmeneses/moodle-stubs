@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BackupforGKE;
-
-class NamespacedName extends \Google\Model
-{
-    /**
-     * Optional. The name of the Kubernetes resource.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. The Namespace of the Kubernetes resource.
-     *
-     * @var string
-     */
-    public $namespace;
-    /**
-     * Optional. The name of the Kubernetes resource.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\BackupforGKE {
+    class NamespacedName extends \Google\Model
     {
+        /**
+         * Optional. The name of the Kubernetes resource.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. The Namespace of the Kubernetes resource.
+         *
+         * @var string
+         */
+        public $namespace;
+        /**
+         * Optional. The name of the Kubernetes resource.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. The Namespace of the Kubernetes resource.
+         *
+         * @param string $namespace
+         */
+        public function setNamespace($namespace)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNamespace()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BackupforGKE\NamespacedName registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. The Namespace of the Kubernetes resource.
-     *
-     * @param string $namespace
-     */
-    public function setNamespace($namespace)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNamespace()
+    class Google_Service_BackupforGKE_NamespacedName extends \Google\Service\BackupforGKE\NamespacedName
     {
     }
 }

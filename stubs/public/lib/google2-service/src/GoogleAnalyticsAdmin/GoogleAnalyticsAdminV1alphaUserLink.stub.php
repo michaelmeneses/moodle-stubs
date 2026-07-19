@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaUserLink extends \Google\Collection
-{
-    protected $collection_key = 'directRoles';
-    /**
-     * @var string[]
-     */
-    public $directRoles;
-    /**
-     * @var string
-     */
-    public $emailAddress;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @param string[]
-     */
-    public function setDirectRoles($directRoles)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaUserLink extends \Google\Collection
     {
+        protected $collection_key = 'directRoles';
+        /**
+         * @var string[]
+         */
+        public $directRoles;
+        /**
+         * @var string
+         */
+        public $emailAddress;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @param string[]
+         */
+        public function setDirectRoles($directRoles)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDirectRoles()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEmailAddress($emailAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmailAddress()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaUserLink registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDirectRoles()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEmailAddress($emailAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEmailAddress()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaUserLink extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaUserLink
     {
     }
 }

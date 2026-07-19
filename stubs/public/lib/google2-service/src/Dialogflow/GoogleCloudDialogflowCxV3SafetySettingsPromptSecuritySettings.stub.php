@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3SafetySettingsPromptSecuritySettings extends \Google\Model
-{
-    /**
-     * Optional. Enable prompt security checks.
-     *
-     * @var bool
-     */
-    public $enablePromptSecurity;
-    /**
-     * Optional. Enable prompt security checks.
-     *
-     * @param bool $enablePromptSecurity
-     */
-    public function setEnablePromptSecurity($enablePromptSecurity)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3SafetySettingsPromptSecuritySettings extends \Google\Model
     {
+        /**
+         * Optional. Enable prompt security checks.
+         *
+         * @var bool
+         */
+        public $enablePromptSecurity;
+        /**
+         * Optional. Enable prompt security checks.
+         *
+         * @param bool $enablePromptSecurity
+         */
+        public function setEnablePromptSecurity($enablePromptSecurity)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnablePromptSecurity()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3SafetySettingsPromptSecuritySettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnablePromptSecurity()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3SafetySettingsPromptSecuritySettings extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3SafetySettingsPromptSecuritySettings
     {
     }
 }

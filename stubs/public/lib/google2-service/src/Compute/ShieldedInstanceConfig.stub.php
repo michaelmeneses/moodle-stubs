@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ShieldedInstanceConfig extends \Google\Model
-{
-    /**
-     * Defines whether the instance has integrity monitoring enabled.Enabled by
-     * default.
-     *
-     * @var bool
-     */
-    public $enableIntegrityMonitoring;
-    /**
-     * Defines whether the instance has Secure Boot enabled.Disabled by default.
-     *
-     * @var bool
-     */
-    public $enableSecureBoot;
-    /**
-     * Defines whether the instance has the vTPM enabled.Enabled by default.
-     *
-     * @var bool
-     */
-    public $enableVtpm;
-    /**
-     * Defines whether the instance has integrity monitoring enabled.Enabled by
-     * default.
-     *
-     * @param bool $enableIntegrityMonitoring
-     */
-    public function setEnableIntegrityMonitoring($enableIntegrityMonitoring)
+namespace Google\Service\Compute {
+    class ShieldedInstanceConfig extends \Google\Model
     {
+        /**
+         * Defines whether the instance has integrity monitoring enabled.Enabled by
+         * default.
+         *
+         * @var bool
+         */
+        public $enableIntegrityMonitoring;
+        /**
+         * Defines whether the instance has Secure Boot enabled.Disabled by default.
+         *
+         * @var bool
+         */
+        public $enableSecureBoot;
+        /**
+         * Defines whether the instance has the vTPM enabled.Enabled by default.
+         *
+         * @var bool
+         */
+        public $enableVtpm;
+        /**
+         * Defines whether the instance has integrity monitoring enabled.Enabled by
+         * default.
+         *
+         * @param bool $enableIntegrityMonitoring
+         */
+        public function setEnableIntegrityMonitoring($enableIntegrityMonitoring)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableIntegrityMonitoring()
+        {
+        }
+        /**
+         * Defines whether the instance has Secure Boot enabled.Disabled by default.
+         *
+         * @param bool $enableSecureBoot
+         */
+        public function setEnableSecureBoot($enableSecureBoot)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableSecureBoot()
+        {
+        }
+        /**
+         * Defines whether the instance has the vTPM enabled.Enabled by default.
+         *
+         * @param bool $enableVtpm
+         */
+        public function setEnableVtpm($enableVtpm)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableVtpm()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Compute\ShieldedInstanceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableIntegrityMonitoring()
-    {
-    }
-    /**
-     * Defines whether the instance has Secure Boot enabled.Disabled by default.
-     *
-     * @param bool $enableSecureBoot
-     */
-    public function setEnableSecureBoot($enableSecureBoot)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableSecureBoot()
-    {
-    }
-    /**
-     * Defines whether the instance has the vTPM enabled.Enabled by default.
-     *
-     * @param bool $enableVtpm
-     */
-    public function setEnableVtpm($enableVtpm)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableVtpm()
+    class Google_Service_Compute_ShieldedInstanceConfig extends \Google\Service\Compute\ShieldedInstanceConfig
     {
     }
 }

@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class KubernetesSoftwareConfig extends \Google\Model
-{
-    /**
-     * The components that should be installed in this Dataproc cluster. The key
-     * must be a string from the KubernetesComponent enumeration. The value is the
-     * version of the software to be installed. At least one entry must be
-     * specified.
-     *
-     * @var string[]
-     */
-    public $componentVersion;
-    /**
-     * The properties to set on daemon config files.Property keys are specified in
-     * prefix:property format, for example spark:spark.kubernetes.container.image.
-     * The following are supported prefixes and their mappings: spark: spark-
-     * defaults.confFor more information, see Cluster properties
-     * (https://cloud.google.com/dataproc/docs/concepts/cluster-properties).
-     *
-     * @var string[]
-     */
-    public $properties;
-    /**
-     * The components that should be installed in this Dataproc cluster. The key
-     * must be a string from the KubernetesComponent enumeration. The value is the
-     * version of the software to be installed. At least one entry must be
-     * specified.
-     *
-     * @param string[] $componentVersion
-     */
-    public function setComponentVersion($componentVersion)
+namespace Google\Service\Dataproc {
+    class KubernetesSoftwareConfig extends \Google\Model
     {
+        /**
+         * The components that should be installed in this Dataproc cluster. The key
+         * must be a string from the KubernetesComponent enumeration. The value is the
+         * version of the software to be installed. At least one entry must be
+         * specified.
+         *
+         * @var string[]
+         */
+        public $componentVersion;
+        /**
+         * The properties to set on daemon config files.Property keys are specified in
+         * prefix:property format, for example spark:spark.kubernetes.container.image.
+         * The following are supported prefixes and their mappings: spark: spark-
+         * defaults.confFor more information, see Cluster properties
+         * (https://cloud.google.com/dataproc/docs/concepts/cluster-properties).
+         *
+         * @var string[]
+         */
+        public $properties;
+        /**
+         * The components that should be installed in this Dataproc cluster. The key
+         * must be a string from the KubernetesComponent enumeration. The value is the
+         * version of the software to be installed. At least one entry must be
+         * specified.
+         *
+         * @param string[] $componentVersion
+         */
+        public function setComponentVersion($componentVersion)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getComponentVersion()
+        {
+        }
+        /**
+         * The properties to set on daemon config files.Property keys are specified in
+         * prefix:property format, for example spark:spark.kubernetes.container.image.
+         * The following are supported prefixes and their mappings: spark: spark-
+         * defaults.confFor more information, see Cluster properties
+         * (https://cloud.google.com/dataproc/docs/concepts/cluster-properties).
+         *
+         * @param string[] $properties
+         */
+        public function setProperties($properties)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Dataproc\KubernetesSoftwareConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getComponentVersion()
-    {
-    }
-    /**
-     * The properties to set on daemon config files.Property keys are specified in
-     * prefix:property format, for example spark:spark.kubernetes.container.image.
-     * The following are supported prefixes and their mappings: spark: spark-
-     * defaults.confFor more information, see Cluster properties
-     * (https://cloud.google.com/dataproc/docs/concepts/cluster-properties).
-     *
-     * @param string[] $properties
-     */
-    public function setProperties($properties)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getProperties()
+    class Google_Service_Dataproc_KubernetesSoftwareConfig extends \Google\Service\Dataproc\KubernetesSoftwareConfig
     {
     }
 }

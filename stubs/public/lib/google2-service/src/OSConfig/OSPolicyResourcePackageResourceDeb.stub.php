@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class OSPolicyResourcePackageResourceDeb extends \Google\Model
-{
-    /**
-     * Whether dependencies should also be installed. - install when false: `dpkg
-     * -i package` - install when true: `apt-get update && apt-get -y install
-     * package.deb`
-     *
-     * @var bool
-     */
-    public $pullDeps;
-    protected $sourceType = OSPolicyResourceFile::class;
-    protected $sourceDataType = '';
-    /**
-     * Whether dependencies should also be installed. - install when false: `dpkg
-     * -i package` - install when true: `apt-get update && apt-get -y install
-     * package.deb`
-     *
-     * @param bool $pullDeps
-     */
-    public function setPullDeps($pullDeps)
+namespace Google\Service\OSConfig {
+    class OSPolicyResourcePackageResourceDeb extends \Google\Model
     {
+        /**
+         * Whether dependencies should also be installed. - install when false: `dpkg
+         * -i package` - install when true: `apt-get update && apt-get -y install
+         * package.deb`
+         *
+         * @var bool
+         */
+        public $pullDeps;
+        protected $sourceType = OSPolicyResourceFile::class;
+        protected $sourceDataType = '';
+        /**
+         * Whether dependencies should also be installed. - install when false: `dpkg
+         * -i package` - install when true: `apt-get update && apt-get -y install
+         * package.deb`
+         *
+         * @param bool $pullDeps
+         */
+        public function setPullDeps($pullDeps)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPullDeps()
+        {
+        }
+        /**
+         * Required. A deb package.
+         *
+         * @param OSPolicyResourceFile $source
+         */
+        public function setSource(OSPolicyResourceFile $source)
+        {
+        }
+        /**
+         * @return OSPolicyResourceFile
+         */
+        public function getSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\OSConfig\OSPolicyResourcePackageResourceDeb registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPullDeps()
-    {
-    }
-    /**
-     * Required. A deb package.
-     *
-     * @param OSPolicyResourceFile $source
-     */
-    public function setSource(OSPolicyResourceFile $source)
-    {
-    }
-    /**
-     * @return OSPolicyResourceFile
-     */
-    public function getSource()
+    class Google_Service_OSConfig_OSPolicyResourcePackageResourceDeb extends \Google\Service\OSConfig\OSPolicyResourcePackageResourceDeb
     {
     }
 }

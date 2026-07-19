@@ -8,6 +8,9 @@
  */
 namespace Aws\ApiGateway;
 
+use Aws\AwsClient;
+use Aws\CommandInterface;
+use Psr\Http\Message\RequestInterface;
 /**
  * This client is used to interact with the **AWS API Gateway** service.
  *

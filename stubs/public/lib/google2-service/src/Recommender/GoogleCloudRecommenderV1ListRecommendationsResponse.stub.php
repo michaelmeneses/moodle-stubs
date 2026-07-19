@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Recommender;
-
-class GoogleCloudRecommenderV1ListRecommendationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'recommendations';
-    /**
-     * A token that can be used to request the next page of results. This field is
-     * empty if there are no additional results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $recommendationsType = GoogleCloudRecommenderV1Recommendation::class;
-    protected $recommendationsDataType = 'array';
-    /**
-     * A token that can be used to request the next page of results. This field is
-     * empty if there are no additional results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Recommender {
+    class GoogleCloudRecommenderV1ListRecommendationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'recommendations';
+        /**
+         * A token that can be used to request the next page of results. This field is
+         * empty if there are no additional results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $recommendationsType = GoogleCloudRecommenderV1Recommendation::class;
+        protected $recommendationsDataType = 'array';
+        /**
+         * A token that can be used to request the next page of results. This field is
+         * empty if there are no additional results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The set of recommendations for the `parent` resource.
+         *
+         * @param GoogleCloudRecommenderV1Recommendation[] $recommendations
+         */
+        public function setRecommendations($recommendations)
+        {
+        }
+        /**
+         * @return GoogleCloudRecommenderV1Recommendation[]
+         */
+        public function getRecommendations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Recommender\GoogleCloudRecommenderV1ListRecommendationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The set of recommendations for the `parent` resource.
-     *
-     * @param GoogleCloudRecommenderV1Recommendation[] $recommendations
-     */
-    public function setRecommendations($recommendations)
-    {
-    }
-    /**
-     * @return GoogleCloudRecommenderV1Recommendation[]
-     */
-    public function getRecommendations()
+    class Google_Service_Recommender_GoogleCloudRecommenderV1ListRecommendationsResponse extends \Google\Service\Recommender\GoogleCloudRecommenderV1ListRecommendationsResponse
     {
     }
 }

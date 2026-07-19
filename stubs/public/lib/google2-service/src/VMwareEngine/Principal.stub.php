@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMwareEngine;
-
-class Principal extends \Google\Model
-{
-    /**
-     * The service account which needs to be granted the permission.
-     *
-     * @var string
-     */
-    public $serviceAccount;
-    /**
-     * The user who needs to be granted permission.
-     *
-     * @var string
-     */
-    public $user;
-    /**
-     * The service account which needs to be granted the permission.
-     *
-     * @param string $serviceAccount
-     */
-    public function setServiceAccount($serviceAccount)
+namespace Google\Service\VMwareEngine {
+    class Principal extends \Google\Model
     {
+        /**
+         * The service account which needs to be granted the permission.
+         *
+         * @var string
+         */
+        public $serviceAccount;
+        /**
+         * The user who needs to be granted permission.
+         *
+         * @var string
+         */
+        public $user;
+        /**
+         * The service account which needs to be granted the permission.
+         *
+         * @param string $serviceAccount
+         */
+        public function setServiceAccount($serviceAccount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceAccount()
+        {
+        }
+        /**
+         * The user who needs to be granted permission.
+         *
+         * @param string $user
+         */
+        public function setUser($user)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUser()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\VMwareEngine\Principal registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getServiceAccount()
-    {
-    }
-    /**
-     * The user who needs to be granted permission.
-     *
-     * @param string $user
-     */
-    public function setUser($user)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUser()
+    class Google_Service_VMwareEngine_Principal extends \Google\Service\VMwareEngine\Principal
     {
     }
 }

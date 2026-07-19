@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudVideoIntelligence;
-
-class GoogleCloudVideointelligenceV1p3beta1AnnotateVideoResponse extends \Google\Collection
-{
-    protected $collection_key = 'annotationResults';
-    protected $annotationResultsType = GoogleCloudVideointelligenceV1p3beta1VideoAnnotationResults::class;
-    protected $annotationResultsDataType = 'array';
-    /**
-     * Annotation results for all videos specified in `AnnotateVideoRequest`.
-     *
-     * @param GoogleCloudVideointelligenceV1p3beta1VideoAnnotationResults[] $annotationResults
-     */
-    public function setAnnotationResults($annotationResults)
+namespace Google\Service\CloudVideoIntelligence {
+    class GoogleCloudVideointelligenceV1p3beta1AnnotateVideoResponse extends \Google\Collection
     {
+        protected $collection_key = 'annotationResults';
+        protected $annotationResultsType = GoogleCloudVideointelligenceV1p3beta1VideoAnnotationResults::class;
+        protected $annotationResultsDataType = 'array';
+        /**
+         * Annotation results for all videos specified in `AnnotateVideoRequest`.
+         *
+         * @param GoogleCloudVideointelligenceV1p3beta1VideoAnnotationResults[] $annotationResults
+         */
+        public function setAnnotationResults($annotationResults)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1p3beta1VideoAnnotationResults[]
+         */
+        public function getAnnotationResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudVideointelligenceV1p3beta1VideoAnnotationResults[]
+     * Runtime class alias of \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1p3beta1AnnotateVideoResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotationResults()
+    class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1AnnotateVideoResponse extends \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1p3beta1AnnotateVideoResponse
     {
     }
 }

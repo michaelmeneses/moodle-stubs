@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ImportRagFilesRequest extends \Google\Model
-{
-    protected $importRagFilesConfigType = GoogleCloudAiplatformV1ImportRagFilesConfig::class;
-    protected $importRagFilesConfigDataType = '';
-    /**
-     * Required. The config for the RagFiles to be synced and imported into the
-     * RagCorpus. VertexRagDataService.ImportRagFiles.
-     *
-     * @param GoogleCloudAiplatformV1ImportRagFilesConfig $importRagFilesConfig
-     */
-    public function setImportRagFilesConfig(GoogleCloudAiplatformV1ImportRagFilesConfig $importRagFilesConfig)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ImportRagFilesRequest extends \Google\Model
     {
+        protected $importRagFilesConfigType = GoogleCloudAiplatformV1ImportRagFilesConfig::class;
+        protected $importRagFilesConfigDataType = '';
+        /**
+         * Required. The config for the RagFiles to be synced and imported into the
+         * RagCorpus. VertexRagDataService.ImportRagFiles.
+         *
+         * @param GoogleCloudAiplatformV1ImportRagFilesConfig $importRagFilesConfig
+         */
+        public function setImportRagFilesConfig(GoogleCloudAiplatformV1ImportRagFilesConfig $importRagFilesConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ImportRagFilesConfig
+         */
+        public function getImportRagFilesConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1ImportRagFilesConfig
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ImportRagFilesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImportRagFilesConfig()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ImportRagFilesRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ImportRagFilesRequest
     {
     }
 }

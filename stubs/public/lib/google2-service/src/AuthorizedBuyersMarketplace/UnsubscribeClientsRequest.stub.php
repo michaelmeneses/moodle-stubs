@@ -21,33 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AuthorizedBuyersMarketplace;
-
-class UnsubscribeClientsRequest extends \Google\Collection
-{
-    protected $collection_key = 'clients';
-    /**
-     * Optional. A list of client buyers to unsubscribe from the auction package,
-     * with client buyer in the format
-     * `buyers/{accountId}/clients/{clientAccountId}`.
-     *
-     * @var string[]
-     */
-    public $clients;
-    /**
-     * Optional. A list of client buyers to unsubscribe from the auction package,
-     * with client buyer in the format
-     * `buyers/{accountId}/clients/{clientAccountId}`.
-     *
-     * @param string[] $clients
-     */
-    public function setClients($clients)
+namespace Google\Service\AuthorizedBuyersMarketplace {
+    class UnsubscribeClientsRequest extends \Google\Collection
     {
+        protected $collection_key = 'clients';
+        /**
+         * Optional. A list of client buyers to unsubscribe from the auction package,
+         * with client buyer in the format
+         * `buyers/{accountId}/clients/{clientAccountId}`.
+         *
+         * @var string[]
+         */
+        public $clients;
+        /**
+         * Optional. A list of client buyers to unsubscribe from the auction package,
+         * with client buyer in the format
+         * `buyers/{accountId}/clients/{clientAccountId}`.
+         *
+         * @param string[] $clients
+         */
+        public function setClients($clients)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getClients()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AuthorizedBuyersMarketplace\UnsubscribeClientsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClients()
+    class Google_Service_AuthorizedBuyersMarketplace_UnsubscribeClientsRequest extends \Google\Service\AuthorizedBuyersMarketplace\UnsubscribeClientsRequest
     {
     }
 }

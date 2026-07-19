@@ -22,6 +22,17 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_question\local\bank;
 
+use cm_info;
+use context;
+use context_course;
+use core\context\course;
+use core\context\module;
+use core\context_helper;
+use core\di;
+use core\task\manager;
+use moodle_database;
+use moodle_url;
+use stdClass;
 /**
  * Helper class for qbank sharing.
  *
@@ -265,11 +276,9 @@ class question_bank_helper
      * @param module|null $modulecontext If set, use this instead of $coursecontext when applying text filters on bank names.
      * @param bool $includeshared Include banks with shared questions.
      * @param bool $includerecent Include banks recently viewed by the user.
-     * @param bool $includeprivate Include banks with private questions. If $modulecontext is set, only the current module's bank
-     *     will be included.
      * @return formatted_bank[]
      */
-    public static function get_banks_for_course(course $coursecontext, ?module $modulecontext = null, bool $includeshared = true, bool $includerecent = false, bool $includeprivate = false): array
+    public static function get_banks_for_course(course $coursecontext, ?module $modulecontext = null, bool $includeshared = true, bool $includerecent = false): array
     {
     }
 }

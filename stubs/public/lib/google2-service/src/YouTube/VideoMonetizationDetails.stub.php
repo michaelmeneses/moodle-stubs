@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class VideoMonetizationDetails extends \Google\Model
-{
-    protected $accessType = AccessPolicy::class;
-    protected $accessDataType = '';
-    /**
-     * The value of access indicates whether the video can be monetized or not.
-     *
-     * @param AccessPolicy $access
-     */
-    public function setAccess(AccessPolicy $access)
+namespace Google\Service\YouTube {
+    class VideoMonetizationDetails extends \Google\Model
     {
+        protected $accessType = AccessPolicy::class;
+        protected $accessDataType = '';
+        /**
+         * The value of access indicates whether the video can be monetized or not.
+         *
+         * @param AccessPolicy $access
+         */
+        public function setAccess(AccessPolicy $access)
+        {
+        }
+        /**
+         * @return AccessPolicy
+         */
+        public function getAccess()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AccessPolicy
+     * Runtime class alias of \Google\Service\YouTube\VideoMonetizationDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccess()
+    class Google_Service_YouTube_VideoMonetizationDetails extends \Google\Service\YouTube\VideoMonetizationDetails
     {
     }
 }

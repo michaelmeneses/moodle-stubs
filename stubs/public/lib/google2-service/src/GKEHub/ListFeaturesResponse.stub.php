@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ListFeaturesResponse extends \Google\Collection
-{
-    protected $collection_key = 'resources';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    protected $resourcesType = Feature::class;
-    protected $resourcesDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\GKEHub {
+    class ListFeaturesResponse extends \Google\Collection
     {
+        protected $collection_key = 'resources';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        protected $resourcesType = Feature::class;
+        protected $resourcesDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param Feature[]
+         */
+        public function setResources($resources)
+        {
+        }
+        /**
+         * @return Feature[]
+         */
+        public function getResources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\ListFeaturesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param Feature[]
-     */
-    public function setResources($resources)
-    {
-    }
-    /**
-     * @return Feature[]
-     */
-    public function getResources()
+    class Google_Service_GKEHub_ListFeaturesResponse extends \Google\Service\GKEHub\ListFeaturesResponse
     {
     }
 }

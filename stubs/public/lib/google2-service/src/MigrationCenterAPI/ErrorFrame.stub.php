@@ -21,81 +21,90 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class ErrorFrame extends \Google\Collection
-{
-    protected $collection_key = 'violations';
-    /**
-     * Output only. Frame ingestion time.
-     *
-     * @var string
-     */
-    public $ingestionTime;
-    /**
-     * Output only. The identifier of the ErrorFrame.
-     *
-     * @var string
-     */
-    public $name;
-    protected $originalFrameType = AssetFrame::class;
-    protected $originalFrameDataType = '';
-    protected $violationsType = FrameViolationEntry::class;
-    protected $violationsDataType = 'array';
-    /**
-     * Output only. Frame ingestion time.
-     *
-     * @param string $ingestionTime
-     */
-    public function setIngestionTime($ingestionTime)
+namespace Google\Service\MigrationCenterAPI {
+    class ErrorFrame extends \Google\Collection
     {
+        protected $collection_key = 'violations';
+        /**
+         * Output only. Frame ingestion time.
+         *
+         * @var string
+         */
+        public $ingestionTime;
+        /**
+         * Output only. The identifier of the ErrorFrame.
+         *
+         * @var string
+         */
+        public $name;
+        protected $originalFrameType = AssetFrame::class;
+        protected $originalFrameDataType = '';
+        protected $violationsType = FrameViolationEntry::class;
+        protected $violationsDataType = 'array';
+        /**
+         * Output only. Frame ingestion time.
+         *
+         * @param string $ingestionTime
+         */
+        public function setIngestionTime($ingestionTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIngestionTime()
+        {
+        }
+        /**
+         * Output only. The identifier of the ErrorFrame.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The frame that was originally reported.
+         *
+         * @param AssetFrame $originalFrame
+         */
+        public function setOriginalFrame(AssetFrame $originalFrame)
+        {
+        }
+        /**
+         * @return AssetFrame
+         */
+        public function getOriginalFrame()
+        {
+        }
+        /**
+         * Output only. All the violations that were detected for the frame.
+         *
+         * @param FrameViolationEntry[] $violations
+         */
+        public function setViolations($violations)
+        {
+        }
+        /**
+         * @return FrameViolationEntry[]
+         */
+        public function getViolations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\ErrorFrame registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIngestionTime()
-    {
-    }
-    /**
-     * Output only. The identifier of the ErrorFrame.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The frame that was originally reported.
-     *
-     * @param AssetFrame $originalFrame
-     */
-    public function setOriginalFrame(AssetFrame $originalFrame)
-    {
-    }
-    /**
-     * @return AssetFrame
-     */
-    public function getOriginalFrame()
-    {
-    }
-    /**
-     * Output only. All the violations that were detected for the frame.
-     *
-     * @param FrameViolationEntry[] $violations
-     */
-    public function setViolations($violations)
-    {
-    }
-    /**
-     * @return FrameViolationEntry[]
-     */
-    public function getViolations()
+    class Google_Service_MigrationCenterAPI_ErrorFrame extends \Google\Service\MigrationCenterAPI\ErrorFrame
     {
     }
 }

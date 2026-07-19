@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class ChromeOsMoveDevicesToOu extends \Google\Collection
-{
-    protected $collection_key = 'deviceIds';
-    /**
-     * Chrome OS devices to be moved to OU
-     *
-     * @var string[]
-     */
-    public $deviceIds;
-    /**
-     * Chrome OS devices to be moved to OU
-     *
-     * @param string[] $deviceIds
-     */
-    public function setDeviceIds($deviceIds)
+namespace Google\Service\Directory {
+    class ChromeOsMoveDevicesToOu extends \Google\Collection
     {
+        protected $collection_key = 'deviceIds';
+        /**
+         * Chrome OS devices to be moved to OU
+         *
+         * @var string[]
+         */
+        public $deviceIds;
+        /**
+         * Chrome OS devices to be moved to OU
+         *
+         * @param string[] $deviceIds
+         */
+        public function setDeviceIds($deviceIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDeviceIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Directory\ChromeOsMoveDevicesToOu registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceIds()
+    class Google_Service_Directory_ChromeOsMoveDevicesToOu extends \Google\Service\Directory\ChromeOsMoveDevicesToOu
     {
     }
 }

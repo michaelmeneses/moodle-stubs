@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyVersionsV1PolicyModificationErrorDetails extends \Google\Collection
-{
-    protected $collection_key = 'modificationErrors';
-    protected $modificationErrorsType = GoogleChromePolicyVersionsV1PolicyModificationError::class;
-    protected $modificationErrorsDataType = 'array';
-    /**
-     * Output only. List of specific policy modifications errors that may have
-     * occurred during a modifying request.
-     *
-     * @param GoogleChromePolicyVersionsV1PolicyModificationError[] $modificationErrors
-     */
-    public function setModificationErrors($modificationErrors)
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyVersionsV1PolicyModificationErrorDetails extends \Google\Collection
     {
+        protected $collection_key = 'modificationErrors';
+        protected $modificationErrorsType = GoogleChromePolicyVersionsV1PolicyModificationError::class;
+        protected $modificationErrorsDataType = 'array';
+        /**
+         * Output only. List of specific policy modifications errors that may have
+         * occurred during a modifying request.
+         *
+         * @param GoogleChromePolicyVersionsV1PolicyModificationError[] $modificationErrors
+         */
+        public function setModificationErrors($modificationErrors)
+        {
+        }
+        /**
+         * @return GoogleChromePolicyVersionsV1PolicyModificationError[]
+         */
+        public function getModificationErrors()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChromePolicyVersionsV1PolicyModificationError[]
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1PolicyModificationErrorDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getModificationErrors()
+    class Google_Service_ChromePolicy_GoogleChromePolicyVersionsV1PolicyModificationErrorDetails extends \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1PolicyModificationErrorDetails
     {
     }
 }

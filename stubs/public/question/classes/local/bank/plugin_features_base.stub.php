@@ -32,6 +32,10 @@
  */
 namespace core_question\local\bank;
 
+use core\context;
+use qbank_columnsortorder\local\qbank\column_action_move;
+use qbank_columnsortorder\local\qbank\column_action_remove;
+use qbank_columnsortorder\local\qbank\column_action_resize;
 /**
  * Class plugin_features_base is the base class for qbank plugins.
  *

@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Drive;
-
-class DriveFileImageMediaMetadataLocation extends \Google\Model
-{
+namespace Google\Service\Drive {
+    class DriveFileImageMediaMetadataLocation extends \Google\Model
+    {
+        /**
+         * Output only. The altitude stored in the image.
+         *
+         * @var 
+         */
+        public $altitude;
+        /**
+         * Output only. The latitude stored in the image.
+         *
+         * @var 
+         */
+        public $latitude;
+        /**
+         * Output only. The longitude stored in the image.
+         *
+         * @var 
+         */
+        public $longitude;
+        public function setAltitude($altitude)
+        {
+        }
+        public function getAltitude()
+        {
+        }
+        public function setLatitude($latitude)
+        {
+        }
+        public function getLatitude()
+        {
+        }
+        public function setLongitude($longitude)
+        {
+        }
+        public function getLongitude()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * Output only. The altitude stored in the image.
-     *
-     * @var 
+     * Runtime class alias of \Google\Service\Drive\DriveFileImageMediaMetadataLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $altitude;
-    /**
-     * Output only. The latitude stored in the image.
-     *
-     * @var 
-     */
-    public $latitude;
-    /**
-     * Output only. The longitude stored in the image.
-     *
-     * @var 
-     */
-    public $longitude;
-    public function setAltitude($altitude)
-    {
-    }
-    public function getAltitude()
-    {
-    }
-    public function setLatitude($latitude)
-    {
-    }
-    public function getLatitude()
-    {
-    }
-    public function setLongitude($longitude)
-    {
-    }
-    public function getLongitude()
+    class Google_Service_Drive_DriveFileImageMediaMetadataLocation extends \Google\Service\Drive\DriveFileImageMediaMetadataLocation
     {
     }
 }

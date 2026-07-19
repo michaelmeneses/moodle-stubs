@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class APILayerServer extends \Google\Collection
-{
-    protected $collection_key = 'resources';
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $osVersion;
-    protected $resourcesType = CloudResource::class;
-    protected $resourcesDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setName($name)
+namespace Google\Service\WorkloadManager {
+    class APILayerServer extends \Google\Collection
     {
+        protected $collection_key = 'resources';
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $osVersion;
+        protected $resourcesType = CloudResource::class;
+        protected $resourcesDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOsVersion($osVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOsVersion()
+        {
+        }
+        /**
+         * @param CloudResource[]
+         */
+        public function setResources($resources)
+        {
+        }
+        /**
+         * @return CloudResource[]
+         */
+        public function getResources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WorkloadManager\APILayerServer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOsVersion($osVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOsVersion()
-    {
-    }
-    /**
-     * @param CloudResource[]
-     */
-    public function setResources($resources)
-    {
-    }
-    /**
-     * @return CloudResource[]
-     */
-    public function getResources()
+    class Google_Service_WorkloadManager_APILayerServer extends \Google\Service\WorkloadManager\APILayerServer
     {
     }
 }

@@ -21,169 +21,178 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine;
-
-class OperationMetadataV1Alpha extends \Google\Collection
-{
-    protected $collection_key = 'warning';
-    protected $createVersionMetadataType = CreateVersionMetadataV1Alpha::class;
-    protected $createVersionMetadataDataType = '';
-    /**
-     * Time that this operation completed.@OutputOnly
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * Ephemeral message that may change every time the operation is polled.
-     * @OutputOnly
-     *
-     * @var string
-     */
-    public $ephemeralMessage;
-    /**
-     * Time that this operation was created.@OutputOnly
-     *
-     * @var string
-     */
-    public $insertTime;
-    /**
-     * API method that initiated this operation. Example:
-     * google.appengine.v1alpha.Versions.CreateVersion.@OutputOnly
-     *
-     * @var string
-     */
-    public $method;
-    /**
-     * Name of the resource that this operation is acting on. Example:
-     * apps/myapp/services/default.@OutputOnly
-     *
-     * @var string
-     */
-    public $target;
-    /**
-     * User who requested this operation.@OutputOnly
-     *
-     * @var string
-     */
-    public $user;
-    /**
-     * Durable messages that persist on every operation poll. @OutputOnly
-     *
-     * @var string[]
-     */
-    public $warning;
-    /**
-     * @param CreateVersionMetadataV1Alpha $createVersionMetadata
-     */
-    public function setCreateVersionMetadata(CreateVersionMetadataV1Alpha $createVersionMetadata)
+namespace Google\Service\Appengine {
+    class OperationMetadataV1Alpha extends \Google\Collection
     {
+        protected $collection_key = 'warning';
+        protected $createVersionMetadataType = CreateVersionMetadataV1Alpha::class;
+        protected $createVersionMetadataDataType = '';
+        /**
+         * Time that this operation completed.@OutputOnly
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * Ephemeral message that may change every time the operation is polled.
+         * @OutputOnly
+         *
+         * @var string
+         */
+        public $ephemeralMessage;
+        /**
+         * Time that this operation was created.@OutputOnly
+         *
+         * @var string
+         */
+        public $insertTime;
+        /**
+         * API method that initiated this operation. Example:
+         * google.appengine.v1alpha.Versions.CreateVersion.@OutputOnly
+         *
+         * @var string
+         */
+        public $method;
+        /**
+         * Name of the resource that this operation is acting on. Example:
+         * apps/myapp/services/default.@OutputOnly
+         *
+         * @var string
+         */
+        public $target;
+        /**
+         * User who requested this operation.@OutputOnly
+         *
+         * @var string
+         */
+        public $user;
+        /**
+         * Durable messages that persist on every operation poll. @OutputOnly
+         *
+         * @var string[]
+         */
+        public $warning;
+        /**
+         * @param CreateVersionMetadataV1Alpha $createVersionMetadata
+         */
+        public function setCreateVersionMetadata(CreateVersionMetadataV1Alpha $createVersionMetadata)
+        {
+        }
+        /**
+         * @return CreateVersionMetadataV1Alpha
+         */
+        public function getCreateVersionMetadata()
+        {
+        }
+        /**
+         * Time that this operation completed.@OutputOnly
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Ephemeral message that may change every time the operation is polled.
+         * @OutputOnly
+         *
+         * @param string $ephemeralMessage
+         */
+        public function setEphemeralMessage($ephemeralMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEphemeralMessage()
+        {
+        }
+        /**
+         * Time that this operation was created.@OutputOnly
+         *
+         * @param string $insertTime
+         */
+        public function setInsertTime($insertTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInsertTime()
+        {
+        }
+        /**
+         * API method that initiated this operation. Example:
+         * google.appengine.v1alpha.Versions.CreateVersion.@OutputOnly
+         *
+         * @param string $method
+         */
+        public function setMethod($method)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMethod()
+        {
+        }
+        /**
+         * Name of the resource that this operation is acting on. Example:
+         * apps/myapp/services/default.@OutputOnly
+         *
+         * @param string $target
+         */
+        public function setTarget($target)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTarget()
+        {
+        }
+        /**
+         * User who requested this operation.@OutputOnly
+         *
+         * @param string $user
+         */
+        public function setUser($user)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUser()
+        {
+        }
+        /**
+         * Durable messages that persist on every operation poll. @OutputOnly
+         *
+         * @param string[] $warning
+         */
+        public function setWarning($warning)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CreateVersionMetadataV1Alpha
+     * Runtime class alias of \Google\Service\Appengine\OperationMetadataV1Alpha registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateVersionMetadata()
-    {
-    }
-    /**
-     * Time that this operation completed.@OutputOnly
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Ephemeral message that may change every time the operation is polled.
-     * @OutputOnly
-     *
-     * @param string $ephemeralMessage
-     */
-    public function setEphemeralMessage($ephemeralMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEphemeralMessage()
-    {
-    }
-    /**
-     * Time that this operation was created.@OutputOnly
-     *
-     * @param string $insertTime
-     */
-    public function setInsertTime($insertTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInsertTime()
-    {
-    }
-    /**
-     * API method that initiated this operation. Example:
-     * google.appengine.v1alpha.Versions.CreateVersion.@OutputOnly
-     *
-     * @param string $method
-     */
-    public function setMethod($method)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMethod()
-    {
-    }
-    /**
-     * Name of the resource that this operation is acting on. Example:
-     * apps/myapp/services/default.@OutputOnly
-     *
-     * @param string $target
-     */
-    public function setTarget($target)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTarget()
-    {
-    }
-    /**
-     * User who requested this operation.@OutputOnly
-     *
-     * @param string $user
-     */
-    public function setUser($user)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUser()
-    {
-    }
-    /**
-     * Durable messages that persist on every operation poll. @OutputOnly
-     *
-     * @param string[] $warning
-     */
-    public function setWarning($warning)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getWarning()
+    class Google_Service_Appengine_OperationMetadataV1Alpha extends \Google\Service\Appengine\OperationMetadataV1Alpha
     {
     }
 }

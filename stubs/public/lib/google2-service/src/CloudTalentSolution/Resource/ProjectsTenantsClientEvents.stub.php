@@ -21,34 +21,44 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudTalentSolution\Resource;
-
-/**
- * The "clientEvents" collection of methods.
- * Typical usage is:
- *  <code>
- *   $jobsService = new Google\Service\CloudTalentSolution(...);
- *   $clientEvents = $jobsService->projects_tenants_clientEvents;
- *  </code>
- */
-class ProjectsTenantsClientEvents extends \Google\Service\Resource
-{
+namespace Google\Service\CloudTalentSolution\Resource {
+    use Google\Service\CloudTalentSolution\ClientEvent;
     /**
-     * Report events issued when end user interacts with customer's application that
-     * uses Cloud Talent Solution. You may inspect the created events in [self
-     * service tools](https://console.cloud.google.com/talent-solution/overview).
-     * [Learn more](https://cloud.google.com/talent-solution/docs/management-tools)
-     * about self service tools. (clientEvents.create)
-     *
-     * @param string $parent Required. Resource name of the tenant under which the
-     * event is created. The format is "projects/{project_id}/tenants/{tenant_id}",
-     * for example, "projects/foo/tenants/bar".
-     * @param ClientEvent $postBody
-     * @param array $optParams Optional parameters.
-     * @return ClientEvent
-     * @throws \Google\Service\Exception
+     * The "clientEvents" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $jobsService = new Google\Service\CloudTalentSolution(...);
+     *   $clientEvents = $jobsService->projects_tenants_clientEvents;
+     *  </code>
      */
-    public function create($parent, ClientEvent $postBody, $optParams = [])
+    class ProjectsTenantsClientEvents extends \Google\Service\Resource
+    {
+        /**
+         * Report events issued when end user interacts with customer's application that
+         * uses Cloud Talent Solution. You may inspect the created events in [self
+         * service tools](https://console.cloud.google.com/talent-solution/overview).
+         * [Learn more](https://cloud.google.com/talent-solution/docs/management-tools)
+         * about self service tools. (clientEvents.create)
+         *
+         * @param string $parent Required. Resource name of the tenant under which the
+         * event is created. The format is "projects/{project_id}/tenants/{tenant_id}",
+         * for example, "projects/foo/tenants/bar".
+         * @param ClientEvent $postBody
+         * @param array $optParams Optional parameters.
+         * @return ClientEvent
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, ClientEvent $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudTalentSolution\Resource\ProjectsTenantsClientEvents registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudTalentSolution_Resource_ProjectsTenantsClientEvents extends \Google\Service\CloudTalentSolution\Resource\ProjectsTenantsClientEvents
     {
     }
 }

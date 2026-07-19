@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class LookupStreamObjectRequest extends \Google\Model
-{
-    protected $sourceObjectIdentifierType = SourceObjectIdentifier::class;
-    protected $sourceObjectIdentifierDataType = '';
-    /**
-     * Required. The source object identifier which maps to the stream object.
-     *
-     * @param SourceObjectIdentifier $sourceObjectIdentifier
-     */
-    public function setSourceObjectIdentifier(SourceObjectIdentifier $sourceObjectIdentifier)
+namespace Google\Service\Datastream {
+    class LookupStreamObjectRequest extends \Google\Model
     {
+        protected $sourceObjectIdentifierType = SourceObjectIdentifier::class;
+        protected $sourceObjectIdentifierDataType = '';
+        /**
+         * Required. The source object identifier which maps to the stream object.
+         *
+         * @param SourceObjectIdentifier $sourceObjectIdentifier
+         */
+        public function setSourceObjectIdentifier(SourceObjectIdentifier $sourceObjectIdentifier)
+        {
+        }
+        /**
+         * @return SourceObjectIdentifier
+         */
+        public function getSourceObjectIdentifier()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SourceObjectIdentifier
+     * Runtime class alias of \Google\Service\Datastream\LookupStreamObjectRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSourceObjectIdentifier()
+    class Google_Service_Datastream_LookupStreamObjectRequest extends \Google\Service\Datastream\LookupStreamObjectRequest
     {
     }
 }

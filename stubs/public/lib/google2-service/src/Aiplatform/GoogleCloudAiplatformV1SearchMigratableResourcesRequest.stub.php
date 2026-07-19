@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SearchMigratableResourcesRequest extends \Google\Model
-{
-    /**
-     * A filter for your search. You can use the following types of filters: *
-     * Resource type filters. The following strings filter for a specific type of
-     * MigratableResource: * `ml_engine_model_version:*` * `automl_model:*` *
-     * `automl_dataset:*` * `data_labeling_dataset:*` * "Migrated or not" filters.
-     * The following strings filter for resources that either have or have not
-     * already been migrated: * `last_migrate_time:*` filters for migrated
-     * resources. * `NOT last_migrate_time:*` filters for not yet migrated
-     * resources.
-     *
-     * @var string
-     */
-    public $filter;
-    /**
-     * The standard page size. The default and maximum value is 100.
-     *
-     * @var int
-     */
-    public $pageSize;
-    /**
-     * The standard page token.
-     *
-     * @var string
-     */
-    public $pageToken;
-    /**
-     * A filter for your search. You can use the following types of filters: *
-     * Resource type filters. The following strings filter for a specific type of
-     * MigratableResource: * `ml_engine_model_version:*` * `automl_model:*` *
-     * `automl_dataset:*` * `data_labeling_dataset:*` * "Migrated or not" filters.
-     * The following strings filter for resources that either have or have not
-     * already been migrated: * `last_migrate_time:*` filters for migrated
-     * resources. * `NOT last_migrate_time:*` filters for not yet migrated
-     * resources.
-     *
-     * @param string $filter
-     */
-    public function setFilter($filter)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SearchMigratableResourcesRequest extends \Google\Model
     {
+        /**
+         * A filter for your search. You can use the following types of filters: *
+         * Resource type filters. The following strings filter for a specific type of
+         * MigratableResource: * `ml_engine_model_version:*` * `automl_model:*` *
+         * `automl_dataset:*` * `data_labeling_dataset:*` * "Migrated or not" filters.
+         * The following strings filter for resources that either have or have not
+         * already been migrated: * `last_migrate_time:*` filters for migrated
+         * resources. * `NOT last_migrate_time:*` filters for not yet migrated
+         * resources.
+         *
+         * @var string
+         */
+        public $filter;
+        /**
+         * The standard page size. The default and maximum value is 100.
+         *
+         * @var int
+         */
+        public $pageSize;
+        /**
+         * The standard page token.
+         *
+         * @var string
+         */
+        public $pageToken;
+        /**
+         * A filter for your search. You can use the following types of filters: *
+         * Resource type filters. The following strings filter for a specific type of
+         * MigratableResource: * `ml_engine_model_version:*` * `automl_model:*` *
+         * `automl_dataset:*` * `data_labeling_dataset:*` * "Migrated or not" filters.
+         * The following strings filter for resources that either have or have not
+         * already been migrated: * `last_migrate_time:*` filters for migrated
+         * resources. * `NOT last_migrate_time:*` filters for not yet migrated
+         * resources.
+         *
+         * @param string $filter
+         */
+        public function setFilter($filter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilter()
+        {
+        }
+        /**
+         * The standard page size. The default and maximum value is 100.
+         *
+         * @param int $pageSize
+         */
+        public function setPageSize($pageSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPageSize()
+        {
+        }
+        /**
+         * The standard page token.
+         *
+         * @param string $pageToken
+         */
+        public function setPageToken($pageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SearchMigratableResourcesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilter()
-    {
-    }
-    /**
-     * The standard page size. The default and maximum value is 100.
-     *
-     * @param int $pageSize
-     */
-    public function setPageSize($pageSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPageSize()
-    {
-    }
-    /**
-     * The standard page token.
-     *
-     * @param string $pageToken
-     */
-    public function setPageToken($pageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPageToken()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SearchMigratableResourcesRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SearchMigratableResourcesRequest
     {
     }
 }

@@ -21,93 +21,107 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset\Resource;
-
-/**
- * The "feeds" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudassetService = new Google\Service\CloudAsset(...);
- *   $feeds = $cloudassetService->feeds;
- *  </code>
- */
-class Feeds extends \Google\Service\Resource
-{
+namespace Google\Service\CloudAsset\Resource {
+    use Google\Service\CloudAsset\CloudassetEmpty;
+    use Google\Service\CloudAsset\CreateFeedRequest;
+    use Google\Service\CloudAsset\Feed;
+    use Google\Service\CloudAsset\ListFeedsResponse;
+    use Google\Service\CloudAsset\UpdateFeedRequest;
     /**
-     * Creates a feed in a parent project/folder/organization to listen to its asset
-     * updates. (feeds.create)
-     *
-     * @param string $parent Required. The name of the project/folder/organization
-     * where this feed should be created in. It can only be an organization number
-     * (such as "organizations/123"), a folder number (such as "folders/123"), a
-     * project ID (such as "projects/my-project-id"), or a project number (such as
-     * "projects/12345").
-     * @param CreateFeedRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Feed
-     * @throws \Google\Service\Exception
+     * The "feeds" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudassetService = new Google\Service\CloudAsset(...);
+     *   $feeds = $cloudassetService->feeds;
+     *  </code>
      */
-    public function create($parent, CreateFeedRequest $postBody, $optParams = [])
+    class Feeds extends \Google\Service\Resource
     {
+        /**
+         * Creates a feed in a parent project/folder/organization to listen to its asset
+         * updates. (feeds.create)
+         *
+         * @param string $parent Required. The name of the project/folder/organization
+         * where this feed should be created in. It can only be an organization number
+         * (such as "organizations/123"), a folder number (such as "folders/123"), a
+         * project ID (such as "projects/my-project-id"), or a project number (such as
+         * "projects/12345").
+         * @param CreateFeedRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Feed
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, CreateFeedRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes an asset feed. (feeds.delete)
+         *
+         * @param string $name Required. The name of the feed and it must be in the
+         * format of: projects/project_number/feeds/feed_id
+         * folders/folder_number/feeds/feed_id
+         * organizations/organization_number/feeds/feed_id
+         * @param array $optParams Optional parameters.
+         * @return CloudassetEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets details about an asset feed. (feeds.get)
+         *
+         * @param string $name Required. The name of the Feed and it must be in the
+         * format of: projects/project_number/feeds/feed_id
+         * folders/folder_number/feeds/feed_id
+         * organizations/organization_number/feeds/feed_id
+         * @param array $optParams Optional parameters.
+         * @return Feed
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists all asset feeds in a parent project/folder/organization.
+         * (feeds.listFeeds)
+         *
+         * @param string $parent Required. The parent project/folder/organization whose
+         * feeds are to be listed. It can only be using project/folder/organization
+         * number (such as "folders/12345")", or a project ID (such as "projects/my-
+         * project-id").
+         * @param array $optParams Optional parameters.
+         * @return ListFeedsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listFeeds($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates an asset feed configuration. (feeds.patch)
+         *
+         * @param string $name Required. The format will be
+         * projects/{project_number}/feeds/{client-assigned_feed_identifier} or
+         * folders/{folder_number}/feeds/{client-assigned_feed_identifier} or
+         * organizations/{organization_number}/feeds/{client-assigned_feed_identifier}
+         * The client-assigned feed identifier must be unique within the parent
+         * project/folder/organization.
+         * @param UpdateFeedRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Feed
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, UpdateFeedRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes an asset feed. (feeds.delete)
-     *
-     * @param string $name Required. The name of the feed and it must be in the
-     * format of: projects/project_number/feeds/feed_id
-     * folders/folder_number/feeds/feed_id
-     * organizations/organization_number/feeds/feed_id
-     * @param array $optParams Optional parameters.
-     * @return CloudassetEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\CloudAsset\Resource\Feeds registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets details about an asset feed. (feeds.get)
-     *
-     * @param string $name Required. The name of the Feed and it must be in the
-     * format of: projects/project_number/feeds/feed_id
-     * folders/folder_number/feeds/feed_id
-     * organizations/organization_number/feeds/feed_id
-     * @param array $optParams Optional parameters.
-     * @return Feed
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists all asset feeds in a parent project/folder/organization.
-     * (feeds.listFeeds)
-     *
-     * @param string $parent Required. The parent project/folder/organization whose
-     * feeds are to be listed. It can only be using project/folder/organization
-     * number (such as "folders/12345")", or a project ID (such as "projects/my-
-     * project-id").
-     * @param array $optParams Optional parameters.
-     * @return ListFeedsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listFeeds($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates an asset feed configuration. (feeds.patch)
-     *
-     * @param string $name Required. The format will be
-     * projects/{project_number}/feeds/{client-assigned_feed_identifier} or
-     * folders/{folder_number}/feeds/{client-assigned_feed_identifier} or
-     * organizations/{organization_number}/feeds/{client-assigned_feed_identifier}
-     * The client-assigned feed identifier must be unique within the parent
-     * project/folder/organization.
-     * @param UpdateFeedRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Feed
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, UpdateFeedRequest $postBody, $optParams = [])
+    class Google_Service_CloudAsset_Resource_Feeds extends \Google\Service\CloudAsset\Resource\Feeds
     {
     }
 }

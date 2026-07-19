@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine;
-
-class ListInstancesResponse extends \Google\Collection
-{
-    protected $collection_key = 'instances';
-    protected $instancesType = Instance::class;
-    protected $instancesDataType = 'array';
-    /**
-     * Continuation token for fetching the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The instances belonging to the requested version.
-     *
-     * @param Instance[] $instances
-     */
-    public function setInstances($instances)
+namespace Google\Service\Appengine {
+    class ListInstancesResponse extends \Google\Collection
     {
+        protected $collection_key = 'instances';
+        protected $instancesType = Instance::class;
+        protected $instancesDataType = 'array';
+        /**
+         * Continuation token for fetching the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The instances belonging to the requested version.
+         *
+         * @param Instance[] $instances
+         */
+        public function setInstances($instances)
+        {
+        }
+        /**
+         * @return Instance[]
+         */
+        public function getInstances()
+        {
+        }
+        /**
+         * Continuation token for fetching the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Instance[]
+     * Runtime class alias of \Google\Service\Appengine\ListInstancesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstances()
-    {
-    }
-    /**
-     * Continuation token for fetching the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Appengine_ListInstancesResponse extends \Google\Service\Appengine\ListInstancesResponse
     {
     }
 }

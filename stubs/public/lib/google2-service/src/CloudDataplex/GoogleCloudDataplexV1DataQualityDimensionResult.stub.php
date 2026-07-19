@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataQualityDimensionResult extends \Google\Model
-{
-    protected $dimensionType = GoogleCloudDataplexV1DataQualityDimension::class;
-    protected $dimensionDataType = '';
-    /**
-     * Output only. Whether the dimension passed or failed.
-     *
-     * @var bool
-     */
-    public $passed;
-    /**
-     * Output only. The dimension-level data quality score for this data scan job
-     * if and only if the 'dimension' field is set.The score ranges between 0, 100
-     * (up to two decimal points).
-     *
-     * @var float
-     */
-    public $score;
-    /**
-     * Output only. The dimension config specified in the DataQualitySpec, as is.
-     *
-     * @param GoogleCloudDataplexV1DataQualityDimension $dimension
-     */
-    public function setDimension(GoogleCloudDataplexV1DataQualityDimension $dimension)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataQualityDimensionResult extends \Google\Model
     {
+        protected $dimensionType = GoogleCloudDataplexV1DataQualityDimension::class;
+        protected $dimensionDataType = '';
+        /**
+         * Output only. Whether the dimension passed or failed.
+         *
+         * @var bool
+         */
+        public $passed;
+        /**
+         * Output only. The dimension-level data quality score for this data scan job
+         * if and only if the 'dimension' field is set.The score ranges between 0, 100
+         * (up to two decimal points).
+         *
+         * @var float
+         */
+        public $score;
+        /**
+         * Output only. The dimension config specified in the DataQualitySpec, as is.
+         *
+         * @param GoogleCloudDataplexV1DataQualityDimension $dimension
+         */
+        public function setDimension(GoogleCloudDataplexV1DataQualityDimension $dimension)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1DataQualityDimension
+         */
+        public function getDimension()
+        {
+        }
+        /**
+         * Output only. Whether the dimension passed or failed.
+         *
+         * @param bool $passed
+         */
+        public function setPassed($passed)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPassed()
+        {
+        }
+        /**
+         * Output only. The dimension-level data quality score for this data scan job
+         * if and only if the 'dimension' field is set.The score ranges between 0, 100
+         * (up to two decimal points).
+         *
+         * @param float $score
+         */
+        public function setScore($score)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getScore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDataplexV1DataQualityDimension
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataQualityDimensionResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDimension()
-    {
-    }
-    /**
-     * Output only. Whether the dimension passed or failed.
-     *
-     * @param bool $passed
-     */
-    public function setPassed($passed)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPassed()
-    {
-    }
-    /**
-     * Output only. The dimension-level data quality score for this data scan job
-     * if and only if the 'dimension' field is set.The score ranges between 0, 100
-     * (up to two decimal points).
-     *
-     * @param float $score
-     */
-    public function setScore($score)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getScore()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataQualityDimensionResult extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataQualityDimensionResult
     {
     }
 }

@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class AccountsAuthInfoResponse extends \Google\Collection
-{
-    protected $collection_key = 'accountIdentifiers';
-    protected $accountIdentifiersType = AccountIdentifier::class;
-    protected $accountIdentifiersDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "`content#accountsAuthInfoResponse`".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The account identifiers corresponding to the authenticated user. - For an
-     * individual account: only the merchant ID is defined - For an aggregator:
-     * only the aggregator ID is defined - For a subaccount of an MCA: both the
-     * merchant ID and the aggregator ID are defined.
-     *
-     * @param AccountIdentifier[] $accountIdentifiers
-     */
-    public function setAccountIdentifiers($accountIdentifiers)
+namespace Google\Service\ShoppingContent {
+    class AccountsAuthInfoResponse extends \Google\Collection
     {
+        protected $collection_key = 'accountIdentifiers';
+        protected $accountIdentifiersType = AccountIdentifier::class;
+        protected $accountIdentifiersDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "`content#accountsAuthInfoResponse`".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The account identifiers corresponding to the authenticated user. - For an
+         * individual account: only the merchant ID is defined - For an aggregator:
+         * only the aggregator ID is defined - For a subaccount of an MCA: both the
+         * merchant ID and the aggregator ID are defined.
+         *
+         * @param AccountIdentifier[] $accountIdentifiers
+         */
+        public function setAccountIdentifiers($accountIdentifiers)
+        {
+        }
+        /**
+         * @return AccountIdentifier[]
+         */
+        public function getAccountIdentifiers()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "`content#accountsAuthInfoResponse`".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AccountIdentifier[]
+     * Runtime class alias of \Google\Service\ShoppingContent\AccountsAuthInfoResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountIdentifiers()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "`content#accountsAuthInfoResponse`".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_ShoppingContent_AccountsAuthInfoResponse extends \Google\Service\ShoppingContent\AccountsAuthInfoResponse
     {
     }
 }

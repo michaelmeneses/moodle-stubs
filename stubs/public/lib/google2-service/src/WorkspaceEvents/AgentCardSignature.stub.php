@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkspaceEvents;
-
-class AgentCardSignature extends \Google\Model
-{
-    /**
-     * The unprotected JWS header values.
-     *
-     * @var array[]
-     */
-    public $header;
-    /**
-     * Required. The protected JWS header for the signature. This is always a
-     * base64url-encoded JSON object. Required.
-     *
-     * @var string
-     */
-    public $protected;
-    /**
-     * Required. The computed signature, base64url-encoded. Required.
-     *
-     * @var string
-     */
-    public $signature;
-    /**
-     * The unprotected JWS header values.
-     *
-     * @param array[] $header
-     */
-    public function setHeader($header)
+namespace Google\Service\WorkspaceEvents {
+    class AgentCardSignature extends \Google\Model
     {
+        /**
+         * The unprotected JWS header values.
+         *
+         * @var array[]
+         */
+        public $header;
+        /**
+         * Required. The protected JWS header for the signature. This is always a
+         * base64url-encoded JSON object. Required.
+         *
+         * @var string
+         */
+        public $protected;
+        /**
+         * Required. The computed signature, base64url-encoded. Required.
+         *
+         * @var string
+         */
+        public $signature;
+        /**
+         * The unprotected JWS header values.
+         *
+         * @param array[] $header
+         */
+        public function setHeader($header)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getHeader()
+        {
+        }
+        /**
+         * Required. The protected JWS header for the signature. This is always a
+         * base64url-encoded JSON object. Required.
+         *
+         * @param string $protected
+         */
+        public function setProtected($protected)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProtected()
+        {
+        }
+        /**
+         * Required. The computed signature, base64url-encoded. Required.
+         *
+         * @param string $signature
+         */
+        public function setSignature($signature)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSignature()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\WorkspaceEvents\AgentCardSignature registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHeader()
-    {
-    }
-    /**
-     * Required. The protected JWS header for the signature. This is always a
-     * base64url-encoded JSON object. Required.
-     *
-     * @param string $protected
-     */
-    public function setProtected($protected)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProtected()
-    {
-    }
-    /**
-     * Required. The computed signature, base64url-encoded. Required.
-     *
-     * @param string $signature
-     */
-    public function setSignature($signature)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSignature()
+    class Google_Service_WorkspaceEvents_AgentCardSignature extends \Google\Service\WorkspaceEvents\AgentCardSignature
     {
     }
 }

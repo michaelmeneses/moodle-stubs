@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2IntentMessageImage extends \Google\Model
-{
-    /**
-     * Optional. A text description of the image to be used for accessibility,
-     * e.g., screen readers.
-     *
-     * @var string
-     */
-    public $accessibilityText;
-    /**
-     * Optional. The public URI to an image file.
-     *
-     * @var string
-     */
-    public $imageUri;
-    /**
-     * Optional. A text description of the image to be used for accessibility,
-     * e.g., screen readers.
-     *
-     * @param string $accessibilityText
-     */
-    public function setAccessibilityText($accessibilityText)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2IntentMessageImage extends \Google\Model
     {
+        /**
+         * Optional. A text description of the image to be used for accessibility,
+         * e.g., screen readers.
+         *
+         * @var string
+         */
+        public $accessibilityText;
+        /**
+         * Optional. The public URI to an image file.
+         *
+         * @var string
+         */
+        public $imageUri;
+        /**
+         * Optional. A text description of the image to be used for accessibility,
+         * e.g., screen readers.
+         *
+         * @param string $accessibilityText
+         */
+        public function setAccessibilityText($accessibilityText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccessibilityText()
+        {
+        }
+        /**
+         * Optional. The public URI to an image file.
+         *
+         * @param string $imageUri
+         */
+        public function setImageUri($imageUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2IntentMessageImage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessibilityText()
-    {
-    }
-    /**
-     * Optional. The public URI to an image file.
-     *
-     * @param string $imageUri
-     */
-    public function setImageUri($imageUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImageUri()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2IntentMessageImage extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2IntentMessageImage
     {
     }
 }

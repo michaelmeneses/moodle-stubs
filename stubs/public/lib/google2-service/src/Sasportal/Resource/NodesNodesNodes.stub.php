@@ -21,49 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sasportal\Resource;
-
-/**
- * The "nodes" collection of methods.
- * Typical usage is:
- *  <code>
- *   $sasportalService = new Google\Service\Sasportal(...);
- *   $nodes = $sasportalService->nodes_nodes_nodes;
- *  </code>
- */
-class NodesNodesNodes extends \Google\Service\Resource
-{
+namespace Google\Service\Sasportal\Resource {
+    use Google\Service\Sasportal\SasPortalListNodesResponse;
+    use Google\Service\Sasportal\SasPortalNode;
     /**
-     * Creates a new node. (nodes.create)
-     *
-     * @param string $parent Required. The parent resource name where the node is to
-     * be created.
-     * @param SasPortalNode $postBody
-     * @param array $optParams Optional parameters.
-     * @return SasPortalNode
-     * @throws \Google\Service\Exception
+     * The "nodes" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $sasportalService = new Google\Service\Sasportal(...);
+     *   $nodes = $sasportalService->nodes_nodes_nodes;
+     *  </code>
      */
-    public function create($parent, SasPortalNode $postBody, $optParams = [])
+    class NodesNodesNodes extends \Google\Service\Resource
     {
+        /**
+         * Creates a new node. (nodes.create)
+         *
+         * @param string $parent Required. The parent resource name where the node is to
+         * be created.
+         * @param SasPortalNode $postBody
+         * @param array $optParams Optional parameters.
+         * @return SasPortalNode
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, SasPortalNode $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Lists nodes. (nodes.listNodesNodesNodes)
+         *
+         * @param string $parent Required. The parent resource name, for example,
+         * "nodes/1".
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter The filter expression. The filter should have the
+         * following format: "DIRECT_CHILDREN" or format: "direct_children". The filter
+         * is case insensitive. If empty, then no nodes are filtered.
+         * @opt_param int pageSize The maximum number of nodes to return in the
+         * response.
+         * @opt_param string pageToken A pagination token returned from a previous call
+         * to ListNodes that indicates where this listing should continue from.
+         * @return SasPortalListNodesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listNodesNodesNodes($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists nodes. (nodes.listNodesNodesNodes)
-     *
-     * @param string $parent Required. The parent resource name, for example,
-     * "nodes/1".
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter The filter expression. The filter should have the
-     * following format: "DIRECT_CHILDREN" or format: "direct_children". The filter
-     * is case insensitive. If empty, then no nodes are filtered.
-     * @opt_param int pageSize The maximum number of nodes to return in the
-     * response.
-     * @opt_param string pageToken A pagination token returned from a previous call
-     * to ListNodes that indicates where this listing should continue from.
-     * @return SasPortalListNodesResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Sasportal\Resource\NodesNodesNodes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listNodesNodesNodes($parent, $optParams = [])
+    class Google_Service_Sasportal_Resource_NodesNodesNodes extends \Google\Service\Sasportal\Resource\NodesNodesNodes
     {
     }
 }

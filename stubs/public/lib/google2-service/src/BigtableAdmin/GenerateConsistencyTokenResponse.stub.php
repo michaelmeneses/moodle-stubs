@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class GenerateConsistencyTokenResponse extends \Google\Model
-{
-    /**
-     * The generated consistency token.
-     *
-     * @var string
-     */
-    public $consistencyToken;
-    /**
-     * The generated consistency token.
-     *
-     * @param string $consistencyToken
-     */
-    public function setConsistencyToken($consistencyToken)
+namespace Google\Service\BigtableAdmin {
+    class GenerateConsistencyTokenResponse extends \Google\Model
     {
+        /**
+         * The generated consistency token.
+         *
+         * @var string
+         */
+        public $consistencyToken;
+        /**
+         * The generated consistency token.
+         *
+         * @param string $consistencyToken
+         */
+        public function setConsistencyToken($consistencyToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConsistencyToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigtableAdmin\GenerateConsistencyTokenResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConsistencyToken()
+    class Google_Service_BigtableAdmin_GenerateConsistencyTokenResponse extends \Google\Service\BigtableAdmin\GenerateConsistencyTokenResponse
     {
     }
 }

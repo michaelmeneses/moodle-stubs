@@ -21,164 +21,173 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class ConsentArtifact extends \Google\Collection
-{
-    protected $collection_key = 'consentContentScreenshots';
-    protected $consentContentScreenshotsType = Image::class;
-    protected $consentContentScreenshotsDataType = 'array';
-    /**
-     * Optional. An string indicating the version of the consent information shown
-     * to the user.
-     *
-     * @var string
-     */
-    public $consentContentVersion;
-    protected $guardianSignatureType = Signature::class;
-    protected $guardianSignatureDataType = '';
-    /**
-     * Optional. Metadata associated with the Consent artifact. For example, the
-     * consent locale or user agent version.
-     *
-     * @var string[]
-     */
-    public $metadata;
-    /**
-     * Identifier. Resource name of the Consent artifact, of the form `projects/{p
-     * roject_id}/locations/{location_id}/datasets/{dataset_id}/consentStores/{con
-     * sent_store_id}/consentArtifacts/{consent_artifact_id}`. Cannot be changed
-     * after creation.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. User's UUID provided by the client.
-     *
-     * @var string
-     */
-    public $userId;
-    protected $userSignatureType = Signature::class;
-    protected $userSignatureDataType = '';
-    protected $witnessSignatureType = Signature::class;
-    protected $witnessSignatureDataType = '';
-    /**
-     * Optional. Screenshots, PDFs, or other binary information documenting the
-     * user's consent.
-     *
-     * @param Image[] $consentContentScreenshots
-     */
-    public function setConsentContentScreenshots($consentContentScreenshots)
+namespace Google\Service\CloudHealthcare {
+    class ConsentArtifact extends \Google\Collection
     {
+        protected $collection_key = 'consentContentScreenshots';
+        protected $consentContentScreenshotsType = Image::class;
+        protected $consentContentScreenshotsDataType = 'array';
+        /**
+         * Optional. An string indicating the version of the consent information shown
+         * to the user.
+         *
+         * @var string
+         */
+        public $consentContentVersion;
+        protected $guardianSignatureType = Signature::class;
+        protected $guardianSignatureDataType = '';
+        /**
+         * Optional. Metadata associated with the Consent artifact. For example, the
+         * consent locale or user agent version.
+         *
+         * @var string[]
+         */
+        public $metadata;
+        /**
+         * Identifier. Resource name of the Consent artifact, of the form `projects/{p
+         * roject_id}/locations/{location_id}/datasets/{dataset_id}/consentStores/{con
+         * sent_store_id}/consentArtifacts/{consent_artifact_id}`. Cannot be changed
+         * after creation.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. User's UUID provided by the client.
+         *
+         * @var string
+         */
+        public $userId;
+        protected $userSignatureType = Signature::class;
+        protected $userSignatureDataType = '';
+        protected $witnessSignatureType = Signature::class;
+        protected $witnessSignatureDataType = '';
+        /**
+         * Optional. Screenshots, PDFs, or other binary information documenting the
+         * user's consent.
+         *
+         * @param Image[] $consentContentScreenshots
+         */
+        public function setConsentContentScreenshots($consentContentScreenshots)
+        {
+        }
+        /**
+         * @return Image[]
+         */
+        public function getConsentContentScreenshots()
+        {
+        }
+        /**
+         * Optional. An string indicating the version of the consent information shown
+         * to the user.
+         *
+         * @param string $consentContentVersion
+         */
+        public function setConsentContentVersion($consentContentVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConsentContentVersion()
+        {
+        }
+        /**
+         * Optional. A signature from a guardian.
+         *
+         * @param Signature $guardianSignature
+         */
+        public function setGuardianSignature(Signature $guardianSignature)
+        {
+        }
+        /**
+         * @return Signature
+         */
+        public function getGuardianSignature()
+        {
+        }
+        /**
+         * Optional. Metadata associated with the Consent artifact. For example, the
+         * consent locale or user agent version.
+         *
+         * @param string[] $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * Identifier. Resource name of the Consent artifact, of the form `projects/{p
+         * roject_id}/locations/{location_id}/datasets/{dataset_id}/consentStores/{con
+         * sent_store_id}/consentArtifacts/{consent_artifact_id}`. Cannot be changed
+         * after creation.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. User's UUID provided by the client.
+         *
+         * @param string $userId
+         */
+        public function setUserId($userId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserId()
+        {
+        }
+        /**
+         * Optional. User's signature.
+         *
+         * @param Signature $userSignature
+         */
+        public function setUserSignature(Signature $userSignature)
+        {
+        }
+        /**
+         * @return Signature
+         */
+        public function getUserSignature()
+        {
+        }
+        /**
+         * Optional. A signature from a witness.
+         *
+         * @param Signature $witnessSignature
+         */
+        public function setWitnessSignature(Signature $witnessSignature)
+        {
+        }
+        /**
+         * @return Signature
+         */
+        public function getWitnessSignature()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Image[]
+     * Runtime class alias of \Google\Service\CloudHealthcare\ConsentArtifact registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConsentContentScreenshots()
-    {
-    }
-    /**
-     * Optional. An string indicating the version of the consent information shown
-     * to the user.
-     *
-     * @param string $consentContentVersion
-     */
-    public function setConsentContentVersion($consentContentVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getConsentContentVersion()
-    {
-    }
-    /**
-     * Optional. A signature from a guardian.
-     *
-     * @param Signature $guardianSignature
-     */
-    public function setGuardianSignature(Signature $guardianSignature)
-    {
-    }
-    /**
-     * @return Signature
-     */
-    public function getGuardianSignature()
-    {
-    }
-    /**
-     * Optional. Metadata associated with the Consent artifact. For example, the
-     * consent locale or user agent version.
-     *
-     * @param string[] $metadata
-     */
-    public function setMetadata($metadata)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * Identifier. Resource name of the Consent artifact, of the form `projects/{p
-     * roject_id}/locations/{location_id}/datasets/{dataset_id}/consentStores/{con
-     * sent_store_id}/consentArtifacts/{consent_artifact_id}`. Cannot be changed
-     * after creation.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Required. User's UUID provided by the client.
-     *
-     * @param string $userId
-     */
-    public function setUserId($userId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserId()
-    {
-    }
-    /**
-     * Optional. User's signature.
-     *
-     * @param Signature $userSignature
-     */
-    public function setUserSignature(Signature $userSignature)
-    {
-    }
-    /**
-     * @return Signature
-     */
-    public function getUserSignature()
-    {
-    }
-    /**
-     * Optional. A signature from a witness.
-     *
-     * @param Signature $witnessSignature
-     */
-    public function setWitnessSignature(Signature $witnessSignature)
-    {
-    }
-    /**
-     * @return Signature
-     */
-    public function getWitnessSignature()
+    class Google_Service_CloudHealthcare_ConsentArtifact extends \Google\Service\CloudHealthcare\ConsentArtifact
     {
     }
 }

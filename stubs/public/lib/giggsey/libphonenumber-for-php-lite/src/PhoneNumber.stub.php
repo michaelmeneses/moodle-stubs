@@ -8,6 +8,7 @@
  */
 namespace libphonenumber;
 
+use Serializable;
 /**
  * It is not recommended to create PhoneNumber objects directly, instead you should
  * use PhoneNumberUtil::parse() to parse the number and return a PhoneNumber object

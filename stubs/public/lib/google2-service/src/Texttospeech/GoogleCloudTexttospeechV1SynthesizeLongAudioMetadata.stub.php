@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Texttospeech;
-
-class GoogleCloudTexttospeechV1SynthesizeLongAudioMetadata extends \Google\Model
-{
-    /**
-     * Deprecated. Do not use.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $lastUpdateTime;
-    /**
-     * The progress of the most recent processing update in percentage, ie. 70.0%.
-     *
-     * @var 
-     */
-    public $progressPercentage;
-    /**
-     * Time when the request was received.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Deprecated. Do not use.
-     *
-     * @deprecated
-     * @param string $lastUpdateTime
-     */
-    public function setLastUpdateTime($lastUpdateTime)
+namespace Google\Service\Texttospeech {
+    class GoogleCloudTexttospeechV1SynthesizeLongAudioMetadata extends \Google\Model
     {
+        /**
+         * Deprecated. Do not use.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $lastUpdateTime;
+        /**
+         * The progress of the most recent processing update in percentage, ie. 70.0%.
+         *
+         * @var 
+         */
+        public $progressPercentage;
+        /**
+         * Time when the request was received.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Deprecated. Do not use.
+         *
+         * @deprecated
+         * @param string $lastUpdateTime
+         */
+        public function setLastUpdateTime($lastUpdateTime)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getLastUpdateTime()
+        {
+        }
+        public function setProgressPercentage($progressPercentage)
+        {
+        }
+        public function getProgressPercentage()
+        {
+        }
+        /**
+         * Time when the request was received.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return string
+     * Runtime class alias of \Google\Service\Texttospeech\GoogleCloudTexttospeechV1SynthesizeLongAudioMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLastUpdateTime()
-    {
-    }
-    public function setProgressPercentage($progressPercentage)
-    {
-    }
-    public function getProgressPercentage()
-    {
-    }
-    /**
-     * Time when the request was received.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_Texttospeech_GoogleCloudTexttospeechV1SynthesizeLongAudioMetadata extends \Google\Service\Texttospeech\GoogleCloudTexttospeechV1SynthesizeLongAudioMetadata
     {
     }
 }

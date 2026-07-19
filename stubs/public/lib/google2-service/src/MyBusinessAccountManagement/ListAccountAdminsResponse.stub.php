@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessAccountManagement;
-
-class ListAccountAdminsResponse extends \Google\Collection
-{
-    protected $collection_key = 'accountAdmins';
-    protected $accountAdminsType = Admin::class;
-    protected $accountAdminsDataType = 'array';
-    /**
-     * A collection of Admin instances.
-     *
-     * @param Admin[] $accountAdmins
-     */
-    public function setAccountAdmins($accountAdmins)
+namespace Google\Service\MyBusinessAccountManagement {
+    class ListAccountAdminsResponse extends \Google\Collection
     {
+        protected $collection_key = 'accountAdmins';
+        protected $accountAdminsType = Admin::class;
+        protected $accountAdminsDataType = 'array';
+        /**
+         * A collection of Admin instances.
+         *
+         * @param Admin[] $accountAdmins
+         */
+        public function setAccountAdmins($accountAdmins)
+        {
+        }
+        /**
+         * @return Admin[]
+         */
+        public function getAccountAdmins()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Admin[]
+     * Runtime class alias of \Google\Service\MyBusinessAccountManagement\ListAccountAdminsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountAdmins()
+    class Google_Service_MyBusinessAccountManagement_ListAccountAdminsResponse extends \Google\Service\MyBusinessAccountManagement\ListAccountAdminsResponse
     {
     }
 }

@@ -21,394 +21,403 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseAppHosting;
-
-class Build extends \Google\Collection
-{
-    /**
-     * The build is in an unknown state.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The build is building.
-     */
-    public const STATE_BUILDING = 'BUILDING';
-    /**
-     * The build has completed and is awaiting the next step. This may move to
-     * DEPLOYING once App Hosting starts to set up infrastructure.
-     */
-    public const STATE_BUILT = 'BUILT';
-    /**
-     * The infrastructure for this build is being set up.
-     */
-    public const STATE_DEPLOYING = 'DEPLOYING';
-    /**
-     * The infrastructure for this build is ready. The build may or may not be
-     * serving traffic - see `Backend.traffic` for the current state, or
-     * `Backend.traffic_statuses` for the desired state.
-     */
-    public const STATE_READY = 'READY';
-    /**
-     * The build has failed.
-     */
-    public const STATE_FAILED = 'FAILED';
-    protected $collection_key = 'errors';
-    /**
-     * Optional. Unstructured key value map that may be set by external tools to
-     * store and arbitrary metadata. They are not queryable and should be
-     * preserved when modifying objects.
-     *
-     * @var string[]
-     */
-    public $annotations;
-    /**
-     * Output only. The location of the [Cloud Build
-     * logs](https://cloud.google.com/build/docs/view-build-results) for the build
-     * process.
-     *
-     * @var string
-     */
-    public $buildLogsUri;
-    protected $configType = Config::class;
-    protected $configDataType = '';
-    /**
-     * Output only. Time at which the build was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. Time at which the build was deleted.
-     *
-     * @var string
-     */
-    public $deleteTime;
-    /**
-     * Optional. Human-readable name. 63 character limit.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. The environment name of the backend when this build was
-     * created.
-     *
-     * @var string
-     */
-    public $environment;
-    protected $errorsType = Error::class;
-    protected $errorsDataType = 'array';
-    /**
-     * Output only. Server-computed checksum based on other values; may be sent on
-     * update or delete to ensure operation is done on expected resource.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Output only. The Artifact Registry [container
-     * image](https://cloud.google.com/artifact-registry/docs/reference/rest/v1/pr
-     * ojects.locations.repositories.dockerImages) URI, used by the Cloud Run [`re
-     * vision`](https://cloud.google.com/run/docs/reference/rest/v2/projects.locat
-     * ions.services.revisions) for this build.
-     *
-     * @var string
-     */
-    public $image;
-    /**
-     * Optional. Unstructured key value map that can be used to organize and
-     * categorize objects.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Identifier. The resource name of the build. Format: `projects/{project}/loc
-     * ations/{locationId}/backends/{backendId}/builds/{buildId}`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. A field that, if true, indicates that the build has an ongoing
-     * LRO.
-     *
-     * @var bool
-     */
-    public $reconciling;
-    protected $sourceType = BuildSource::class;
-    protected $sourceDataType = '';
-    /**
-     * Output only. The state of the build.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. System-assigned, unique identifier.
-     *
-     * @var string
-     */
-    public $uid;
-    /**
-     * Output only. Time at which the build was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Optional. Unstructured key value map that may be set by external tools to
-     * store and arbitrary metadata. They are not queryable and should be
-     * preserved when modifying objects.
-     *
-     * @param string[] $annotations
-     */
-    public function setAnnotations($annotations)
+namespace Google\Service\FirebaseAppHosting {
+    class Build extends \Google\Collection
     {
+        /**
+         * The build is in an unknown state.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The build is building.
+         */
+        public const STATE_BUILDING = 'BUILDING';
+        /**
+         * The build has completed and is awaiting the next step. This may move to
+         * DEPLOYING once App Hosting starts to set up infrastructure.
+         */
+        public const STATE_BUILT = 'BUILT';
+        /**
+         * The infrastructure for this build is being set up.
+         */
+        public const STATE_DEPLOYING = 'DEPLOYING';
+        /**
+         * The infrastructure for this build is ready. The build may or may not be
+         * serving traffic - see `Backend.traffic` for the current state, or
+         * `Backend.traffic_statuses` for the desired state.
+         */
+        public const STATE_READY = 'READY';
+        /**
+         * The build has failed.
+         */
+        public const STATE_FAILED = 'FAILED';
+        protected $collection_key = 'errors';
+        /**
+         * Optional. Unstructured key value map that may be set by external tools to
+         * store and arbitrary metadata. They are not queryable and should be
+         * preserved when modifying objects.
+         *
+         * @var string[]
+         */
+        public $annotations;
+        /**
+         * Output only. The location of the [Cloud Build
+         * logs](https://cloud.google.com/build/docs/view-build-results) for the build
+         * process.
+         *
+         * @var string
+         */
+        public $buildLogsUri;
+        protected $configType = Config::class;
+        protected $configDataType = '';
+        /**
+         * Output only. Time at which the build was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. Time at which the build was deleted.
+         *
+         * @var string
+         */
+        public $deleteTime;
+        /**
+         * Optional. Human-readable name. 63 character limit.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. The environment name of the backend when this build was
+         * created.
+         *
+         * @var string
+         */
+        public $environment;
+        protected $errorsType = Error::class;
+        protected $errorsDataType = 'array';
+        /**
+         * Output only. Server-computed checksum based on other values; may be sent on
+         * update or delete to ensure operation is done on expected resource.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Output only. The Artifact Registry [container
+         * image](https://cloud.google.com/artifact-registry/docs/reference/rest/v1/pr
+         * ojects.locations.repositories.dockerImages) URI, used by the Cloud Run [`re
+         * vision`](https://cloud.google.com/run/docs/reference/rest/v2/projects.locat
+         * ions.services.revisions) for this build.
+         *
+         * @var string
+         */
+        public $image;
+        /**
+         * Optional. Unstructured key value map that can be used to organize and
+         * categorize objects.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Identifier. The resource name of the build. Format: `projects/{project}/loc
+         * ations/{locationId}/backends/{backendId}/builds/{buildId}`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. A field that, if true, indicates that the build has an ongoing
+         * LRO.
+         *
+         * @var bool
+         */
+        public $reconciling;
+        protected $sourceType = BuildSource::class;
+        protected $sourceDataType = '';
+        /**
+         * Output only. The state of the build.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. System-assigned, unique identifier.
+         *
+         * @var string
+         */
+        public $uid;
+        /**
+         * Output only. Time at which the build was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Optional. Unstructured key value map that may be set by external tools to
+         * store and arbitrary metadata. They are not queryable and should be
+         * preserved when modifying objects.
+         *
+         * @param string[] $annotations
+         */
+        public function setAnnotations($annotations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAnnotations()
+        {
+        }
+        /**
+         * Output only. The location of the [Cloud Build
+         * logs](https://cloud.google.com/build/docs/view-build-results) for the build
+         * process.
+         *
+         * @param string $buildLogsUri
+         */
+        public function setBuildLogsUri($buildLogsUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBuildLogsUri()
+        {
+        }
+        /**
+         * Optional. Additional configuration of the service.
+         *
+         * @param Config $config
+         */
+        public function setConfig(Config $config)
+        {
+        }
+        /**
+         * @return Config
+         */
+        public function getConfig()
+        {
+        }
+        /**
+         * Output only. Time at which the build was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. Time at which the build was deleted.
+         *
+         * @param string $deleteTime
+         */
+        public function setDeleteTime($deleteTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeleteTime()
+        {
+        }
+        /**
+         * Optional. Human-readable name. 63 character limit.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. The environment name of the backend when this build was
+         * created.
+         *
+         * @param string $environment
+         */
+        public function setEnvironment($environment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnvironment()
+        {
+        }
+        /**
+         * Output only. A list of all errors that occurred during an App Hosting
+         * build.
+         *
+         * @param Error[] $errors
+         */
+        public function setErrors($errors)
+        {
+        }
+        /**
+         * @return Error[]
+         */
+        public function getErrors()
+        {
+        }
+        /**
+         * Output only. Server-computed checksum based on other values; may be sent on
+         * update or delete to ensure operation is done on expected resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Output only. The Artifact Registry [container
+         * image](https://cloud.google.com/artifact-registry/docs/reference/rest/v1/pr
+         * ojects.locations.repositories.dockerImages) URI, used by the Cloud Run [`re
+         * vision`](https://cloud.google.com/run/docs/reference/rest/v2/projects.locat
+         * ions.services.revisions) for this build.
+         *
+         * @param string $image
+         */
+        public function setImage($image)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImage()
+        {
+        }
+        /**
+         * Optional. Unstructured key value map that can be used to organize and
+         * categorize objects.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Identifier. The resource name of the build. Format: `projects/{project}/loc
+         * ations/{locationId}/backends/{backendId}/builds/{buildId}`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. A field that, if true, indicates that the build has an ongoing
+         * LRO.
+         *
+         * @param bool $reconciling
+         */
+        public function setReconciling($reconciling)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReconciling()
+        {
+        }
+        /**
+         * Required. Immutable. The source for the build.
+         *
+         * @param BuildSource $source
+         */
+        public function setSource(BuildSource $source)
+        {
+        }
+        /**
+         * @return BuildSource
+         */
+        public function getSource()
+        {
+        }
+        /**
+         * Output only. The state of the build.
+         *
+         * Accepted values: STATE_UNSPECIFIED, BUILDING, BUILT, DEPLOYING, READY,
+         * FAILED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Output only. System-assigned, unique identifier.
+         *
+         * @param string $uid
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUid()
+        {
+        }
+        /**
+         * Output only. Time at which the build was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\FirebaseAppHosting\Build registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotations()
-    {
-    }
-    /**
-     * Output only. The location of the [Cloud Build
-     * logs](https://cloud.google.com/build/docs/view-build-results) for the build
-     * process.
-     *
-     * @param string $buildLogsUri
-     */
-    public function setBuildLogsUri($buildLogsUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBuildLogsUri()
-    {
-    }
-    /**
-     * Optional. Additional configuration of the service.
-     *
-     * @param Config $config
-     */
-    public function setConfig(Config $config)
-    {
-    }
-    /**
-     * @return Config
-     */
-    public function getConfig()
-    {
-    }
-    /**
-     * Output only. Time at which the build was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. Time at which the build was deleted.
-     *
-     * @param string $deleteTime
-     */
-    public function setDeleteTime($deleteTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeleteTime()
-    {
-    }
-    /**
-     * Optional. Human-readable name. 63 character limit.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. The environment name of the backend when this build was
-     * created.
-     *
-     * @param string $environment
-     */
-    public function setEnvironment($environment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEnvironment()
-    {
-    }
-    /**
-     * Output only. A list of all errors that occurred during an App Hosting
-     * build.
-     *
-     * @param Error[] $errors
-     */
-    public function setErrors($errors)
-    {
-    }
-    /**
-     * @return Error[]
-     */
-    public function getErrors()
-    {
-    }
-    /**
-     * Output only. Server-computed checksum based on other values; may be sent on
-     * update or delete to ensure operation is done on expected resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * Output only. The Artifact Registry [container
-     * image](https://cloud.google.com/artifact-registry/docs/reference/rest/v1/pr
-     * ojects.locations.repositories.dockerImages) URI, used by the Cloud Run [`re
-     * vision`](https://cloud.google.com/run/docs/reference/rest/v2/projects.locat
-     * ions.services.revisions) for this build.
-     *
-     * @param string $image
-     */
-    public function setImage($image)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImage()
-    {
-    }
-    /**
-     * Optional. Unstructured key value map that can be used to organize and
-     * categorize objects.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Identifier. The resource name of the build. Format: `projects/{project}/loc
-     * ations/{locationId}/backends/{backendId}/builds/{buildId}`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. A field that, if true, indicates that the build has an ongoing
-     * LRO.
-     *
-     * @param bool $reconciling
-     */
-    public function setReconciling($reconciling)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReconciling()
-    {
-    }
-    /**
-     * Required. Immutable. The source for the build.
-     *
-     * @param BuildSource $source
-     */
-    public function setSource(BuildSource $source)
-    {
-    }
-    /**
-     * @return BuildSource
-     */
-    public function getSource()
-    {
-    }
-    /**
-     * Output only. The state of the build.
-     *
-     * Accepted values: STATE_UNSPECIFIED, BUILDING, BUILT, DEPLOYING, READY,
-     * FAILED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Output only. System-assigned, unique identifier.
-     *
-     * @param string $uid
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUid()
-    {
-    }
-    /**
-     * Output only. Time at which the build was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_FirebaseAppHosting_Build extends \Google\Service\FirebaseAppHosting\Build
     {
     }
 }

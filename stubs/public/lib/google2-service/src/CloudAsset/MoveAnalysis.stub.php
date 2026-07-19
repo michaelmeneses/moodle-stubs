@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class MoveAnalysis extends \Google\Model
-{
-    protected $analysisType = MoveAnalysisResult::class;
-    protected $analysisDataType = '';
-    /**
-     * The user friendly display name of the analysis. E.g. IAM, organization
-     * policy etc.
-     *
-     * @var string
-     */
-    public $displayName;
-    protected $errorType = Status::class;
-    protected $errorDataType = '';
-    /**
-     * Analysis result of moving the target resource.
-     *
-     * @param MoveAnalysisResult $analysis
-     */
-    public function setAnalysis(MoveAnalysisResult $analysis)
+namespace Google\Service\CloudAsset {
+    class MoveAnalysis extends \Google\Model
     {
+        protected $analysisType = MoveAnalysisResult::class;
+        protected $analysisDataType = '';
+        /**
+         * The user friendly display name of the analysis. E.g. IAM, organization
+         * policy etc.
+         *
+         * @var string
+         */
+        public $displayName;
+        protected $errorType = Status::class;
+        protected $errorDataType = '';
+        /**
+         * Analysis result of moving the target resource.
+         *
+         * @param MoveAnalysisResult $analysis
+         */
+        public function setAnalysis(MoveAnalysisResult $analysis)
+        {
+        }
+        /**
+         * @return MoveAnalysisResult
+         */
+        public function getAnalysis()
+        {
+        }
+        /**
+         * The user friendly display name of the analysis. E.g. IAM, organization
+         * policy etc.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Description of error encountered when performing the analysis.
+         *
+         * @param Status $error
+         */
+        public function setError(Status $error)
+        {
+        }
+        /**
+         * @return Status
+         */
+        public function getError()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MoveAnalysisResult
+     * Runtime class alias of \Google\Service\CloudAsset\MoveAnalysis registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnalysis()
-    {
-    }
-    /**
-     * The user friendly display name of the analysis. E.g. IAM, organization
-     * policy etc.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Description of error encountered when performing the analysis.
-     *
-     * @param Status $error
-     */
-    public function setError(Status $error)
-    {
-    }
-    /**
-     * @return Status
-     */
-    public function getError()
+    class Google_Service_CloudAsset_MoveAnalysis extends \Google\Service\CloudAsset\MoveAnalysis
     {
     }
 }

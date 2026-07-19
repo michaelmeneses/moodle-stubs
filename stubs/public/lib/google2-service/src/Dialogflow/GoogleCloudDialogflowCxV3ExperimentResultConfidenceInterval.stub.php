@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3ExperimentResultConfidenceInterval extends \Google\Model
-{
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3ExperimentResultConfidenceInterval extends \Google\Model
+    {
+        /**
+         * The confidence level used to construct the interval, i.e. there is X%
+         * chance that the true value is within this interval.
+         *
+         * @var 
+         */
+        public $confidenceLevel;
+        /**
+         * Lower bound of the interval.
+         *
+         * @var 
+         */
+        public $lowerBound;
+        /**
+         * The percent change between an experiment metric's value and the value for
+         * its control.
+         *
+         * @var 
+         */
+        public $ratio;
+        /**
+         * Upper bound of the interval.
+         *
+         * @var 
+         */
+        public $upperBound;
+        public function setConfidenceLevel($confidenceLevel)
+        {
+        }
+        public function getConfidenceLevel()
+        {
+        }
+        public function setLowerBound($lowerBound)
+        {
+        }
+        public function getLowerBound()
+        {
+        }
+        public function setRatio($ratio)
+        {
+        }
+        public function getRatio()
+        {
+        }
+        public function setUpperBound($upperBound)
+        {
+        }
+        public function getUpperBound()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * The confidence level used to construct the interval, i.e. there is X%
-     * chance that the true value is within this interval.
-     *
-     * @var 
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ExperimentResultConfidenceInterval registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $confidenceLevel;
-    /**
-     * Lower bound of the interval.
-     *
-     * @var 
-     */
-    public $lowerBound;
-    /**
-     * The percent change between an experiment metric's value and the value for
-     * its control.
-     *
-     * @var 
-     */
-    public $ratio;
-    /**
-     * Upper bound of the interval.
-     *
-     * @var 
-     */
-    public $upperBound;
-    public function setConfidenceLevel($confidenceLevel)
-    {
-    }
-    public function getConfidenceLevel()
-    {
-    }
-    public function setLowerBound($lowerBound)
-    {
-    }
-    public function getLowerBound()
-    {
-    }
-    public function setRatio($ratio)
-    {
-    }
-    public function getRatio()
-    {
-    }
-    public function setUpperBound($upperBound)
-    {
-    }
-    public function getUpperBound()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3ExperimentResultConfidenceInterval extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ExperimentResultConfidenceInterval
     {
     }
 }

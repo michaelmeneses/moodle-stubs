@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoCombinedCondition extends \Google\Collection
-{
-    protected $collection_key = 'conditions';
-    protected $conditionsType = EnterpriseCrmEventbusProtoCondition::class;
-    protected $conditionsDataType = 'array';
-    /**
-     * A set of individual constituent conditions.
-     *
-     * @param EnterpriseCrmEventbusProtoCondition[] $conditions
-     */
-    public function setConditions($conditions)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoCombinedCondition extends \Google\Collection
     {
+        protected $collection_key = 'conditions';
+        protected $conditionsType = EnterpriseCrmEventbusProtoCondition::class;
+        protected $conditionsDataType = 'array';
+        /**
+         * A set of individual constituent conditions.
+         *
+         * @param EnterpriseCrmEventbusProtoCondition[] $conditions
+         */
+        public function setConditions($conditions)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoCondition[]
+         */
+        public function getConditions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnterpriseCrmEventbusProtoCondition[]
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoCombinedCondition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConditions()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoCombinedCondition extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoCombinedCondition
     {
     }
 }

@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class ListAccountsResponse extends \Google\Collection
-{
-    protected $collection_key = 'account';
-    protected $accountType = Account::class;
-    protected $accountDataType = 'array';
-    /**
-     * Continuation token for fetching the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of GTM Accounts that a user has access to.
-     *
-     * @param Account[] $account
-     */
-    public function setAccount($account)
+namespace Google\Service\TagManager {
+    class ListAccountsResponse extends \Google\Collection
     {
+        protected $collection_key = 'account';
+        protected $accountType = Account::class;
+        protected $accountDataType = 'array';
+        /**
+         * Continuation token for fetching the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of GTM Accounts that a user has access to.
+         *
+         * @param Account[] $account
+         */
+        public function setAccount($account)
+        {
+        }
+        /**
+         * @return Account[]
+         */
+        public function getAccount()
+        {
+        }
+        /**
+         * Continuation token for fetching the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Account[]
+     * Runtime class alias of \Google\Service\TagManager\ListAccountsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccount()
-    {
-    }
-    /**
-     * Continuation token for fetching the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_TagManager_ListAccountsResponse extends \Google\Service\TagManager\ListAccountsResponse
     {
     }
 }

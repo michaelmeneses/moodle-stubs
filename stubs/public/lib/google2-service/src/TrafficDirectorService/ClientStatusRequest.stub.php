@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TrafficDirectorService;
-
-class ClientStatusRequest extends \Google\Collection
-{
-    protected $collection_key = 'nodeMatchers';
-    /**
-     * If true, the server will not include the resource contents in the response
-     * (i.e., the generic_xds_configs.xds_config field will not be populated).
-     * [#not-implemented-hide:]
-     *
-     * @var bool
-     */
-    public $excludeResourceContents;
-    protected $nodeType = Node::class;
-    protected $nodeDataType = '';
-    protected $nodeMatchersType = NodeMatcher::class;
-    protected $nodeMatchersDataType = 'array';
-    /**
-     * If true, the server will not include the resource contents in the response
-     * (i.e., the generic_xds_configs.xds_config field will not be populated).
-     * [#not-implemented-hide:]
-     *
-     * @param bool $excludeResourceContents
-     */
-    public function setExcludeResourceContents($excludeResourceContents)
+namespace Google\Service\TrafficDirectorService {
+    class ClientStatusRequest extends \Google\Collection
     {
+        protected $collection_key = 'nodeMatchers';
+        /**
+         * If true, the server will not include the resource contents in the response
+         * (i.e., the generic_xds_configs.xds_config field will not be populated).
+         * [#not-implemented-hide:]
+         *
+         * @var bool
+         */
+        public $excludeResourceContents;
+        protected $nodeType = Node::class;
+        protected $nodeDataType = '';
+        protected $nodeMatchersType = NodeMatcher::class;
+        protected $nodeMatchersDataType = 'array';
+        /**
+         * If true, the server will not include the resource contents in the response
+         * (i.e., the generic_xds_configs.xds_config field will not be populated).
+         * [#not-implemented-hide:]
+         *
+         * @param bool $excludeResourceContents
+         */
+        public function setExcludeResourceContents($excludeResourceContents)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getExcludeResourceContents()
+        {
+        }
+        /**
+         * The node making the csds request.
+         *
+         * @param Node $node
+         */
+        public function setNode(Node $node)
+        {
+        }
+        /**
+         * @return Node
+         */
+        public function getNode()
+        {
+        }
+        /**
+         * Management server can use these match criteria to identify clients. The
+         * match follows OR semantics.
+         *
+         * @param NodeMatcher[] $nodeMatchers
+         */
+        public function setNodeMatchers($nodeMatchers)
+        {
+        }
+        /**
+         * @return NodeMatcher[]
+         */
+        public function getNodeMatchers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\TrafficDirectorService\ClientStatusRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExcludeResourceContents()
-    {
-    }
-    /**
-     * The node making the csds request.
-     *
-     * @param Node $node
-     */
-    public function setNode(Node $node)
-    {
-    }
-    /**
-     * @return Node
-     */
-    public function getNode()
-    {
-    }
-    /**
-     * Management server can use these match criteria to identify clients. The
-     * match follows OR semantics.
-     *
-     * @param NodeMatcher[] $nodeMatchers
-     */
-    public function setNodeMatchers($nodeMatchers)
-    {
-    }
-    /**
-     * @return NodeMatcher[]
-     */
-    public function getNodeMatchers()
+    class Google_Service_TrafficDirectorService_ClientStatusRequest extends \Google\Service\TrafficDirectorService\ClientStatusRequest
     {
     }
 }

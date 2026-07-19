@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class SqlServerLsnPosition extends \Google\Model
-{
-    /**
-     * Required. Log sequence number (LSN) from where Logs will be read
-     *
-     * @var string
-     */
-    public $lsn;
-    /**
-     * Required. Log sequence number (LSN) from where Logs will be read
-     *
-     * @param string $lsn
-     */
-    public function setLsn($lsn)
+namespace Google\Service\Datastream {
+    class SqlServerLsnPosition extends \Google\Model
     {
+        /**
+         * Required. Log sequence number (LSN) from where Logs will be read
+         *
+         * @var string
+         */
+        public $lsn;
+        /**
+         * Required. Log sequence number (LSN) from where Logs will be read
+         *
+         * @param string $lsn
+         */
+        public function setLsn($lsn)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLsn()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastream\SqlServerLsnPosition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLsn()
+    class Google_Service_Datastream_SqlServerLsnPosition extends \Google\Service\Datastream\SqlServerLsnPosition
     {
     }
 }

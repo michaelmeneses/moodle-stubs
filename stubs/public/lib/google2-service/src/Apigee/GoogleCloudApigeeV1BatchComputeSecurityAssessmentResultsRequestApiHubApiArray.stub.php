@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1BatchComputeSecurityAssessmentResultsRequestApiHubApiArray extends \Google\Collection
-{
-    protected $collection_key = 'apis';
-    /**
-     * Required. The array of API Hub API IDs. Format:
-     * `projects/{project}/locations/{location}/apis/{api}`
-     *
-     * @var string[]
-     */
-    public $apis;
-    /**
-     * Required. The array of API Hub API IDs. Format:
-     * `projects/{project}/locations/{location}/apis/{api}`
-     *
-     * @param string[] $apis
-     */
-    public function setApis($apis)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1BatchComputeSecurityAssessmentResultsRequestApiHubApiArray extends \Google\Collection
     {
+        protected $collection_key = 'apis';
+        /**
+         * Required. The array of API Hub API IDs. Format:
+         * `projects/{project}/locations/{location}/apis/{api}`
+         *
+         * @var string[]
+         */
+        public $apis;
+        /**
+         * Required. The array of API Hub API IDs. Format:
+         * `projects/{project}/locations/{location}/apis/{api}`
+         *
+         * @param string[] $apis
+         */
+        public function setApis($apis)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getApis()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1BatchComputeSecurityAssessmentResultsRequestApiHubApiArray registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApis()
+    class Google_Service_Apigee_GoogleCloudApigeeV1BatchComputeSecurityAssessmentResultsRequestApiHubApiArray extends \Google\Service\Apigee\GoogleCloudApigeeV1BatchComputeSecurityAssessmentResultsRequestApiHubApiArray
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class UsersettingsNotesExport extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $folderName;
-    /**
-     * @var bool
-     */
-    public $isEnabled;
-    /**
-     * @param string $folderName
-     */
-    public function setFolderName($folderName)
+namespace Google\Service\Books {
+    class UsersettingsNotesExport extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $folderName;
+        /**
+         * @var bool
+         */
+        public $isEnabled;
+        /**
+         * @param string $folderName
+         */
+        public function setFolderName($folderName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFolderName()
+        {
+        }
+        /**
+         * @param bool $isEnabled
+         */
+        public function setIsEnabled($isEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Books\UsersettingsNotesExport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFolderName()
-    {
-    }
-    /**
-     * @param bool $isEnabled
-     */
-    public function setIsEnabled($isEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsEnabled()
+    class Google_Service_Books_UsersettingsNotesExport extends \Google\Service\Books\UsersettingsNotesExport
     {
     }
 }

@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class ProcessAppManifestCallbackOperationMetadata extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $completeTime;
-    /**
-     * @var string
-     */
-    public $createTime;
-    /**
-     * @var string
-     */
-    public $githubEnterpriseConfig;
-    /**
-     * @param string
-     */
-    public function setCompleteTime($completeTime)
+namespace Google\Service\CloudBuild {
+    class ProcessAppManifestCallbackOperationMetadata extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $completeTime;
+        /**
+         * @var string
+         */
+        public $createTime;
+        /**
+         * @var string
+         */
+        public $githubEnterpriseConfig;
+        /**
+         * @param string
+         */
+        public function setCompleteTime($completeTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCompleteTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setGithubEnterpriseConfig($githubEnterpriseConfig)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGithubEnterpriseConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\ProcessAppManifestCallbackOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCompleteTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setGithubEnterpriseConfig($githubEnterpriseConfig)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGithubEnterpriseConfig()
+    class Google_Service_CloudBuild_ProcessAppManifestCallbackOperationMetadata extends \Google\Service\CloudBuild\ProcessAppManifestCallbackOperationMetadata
     {
     }
 }

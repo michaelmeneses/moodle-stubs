@@ -21,105 +21,114 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class EventSeat extends \Google\Model
-{
-    protected $gateType = LocalizedString::class;
-    protected $gateDataType = '';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * `"walletobjects#eventSeat"`.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $kind;
-    protected $rowType = LocalizedString::class;
-    protected $rowDataType = '';
-    protected $seatType = LocalizedString::class;
-    protected $seatDataType = '';
-    protected $sectionType = LocalizedString::class;
-    protected $sectionDataType = '';
-    /**
-     * The gate the ticket holder should enter to get to their seat, such as "A"
-     * or "West". This field is localizable so you may translate words or use
-     * different alphabets for the characters in an identifier.
-     *
-     * @param LocalizedString $gate
-     */
-    public function setGate(LocalizedString $gate)
+namespace Google\Service\Walletobjects {
+    class EventSeat extends \Google\Model
     {
+        protected $gateType = LocalizedString::class;
+        protected $gateDataType = '';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * `"walletobjects#eventSeat"`.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $kind;
+        protected $rowType = LocalizedString::class;
+        protected $rowDataType = '';
+        protected $seatType = LocalizedString::class;
+        protected $seatDataType = '';
+        protected $sectionType = LocalizedString::class;
+        protected $sectionDataType = '';
+        /**
+         * The gate the ticket holder should enter to get to their seat, such as "A"
+         * or "West". This field is localizable so you may translate words or use
+         * different alphabets for the characters in an identifier.
+         *
+         * @param LocalizedString $gate
+         */
+        public function setGate(LocalizedString $gate)
+        {
+        }
+        /**
+         * @return LocalizedString
+         */
+        public function getGate()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * `"walletobjects#eventSeat"`.
+         *
+         * @deprecated
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The row of the seat, such as "1", E", "BB", or "A5". This field is
+         * localizable so you may translate words or use different alphabets for the
+         * characters in an identifier.
+         *
+         * @param LocalizedString $row
+         */
+        public function setRow(LocalizedString $row)
+        {
+        }
+        /**
+         * @return LocalizedString
+         */
+        public function getRow()
+        {
+        }
+        /**
+         * The seat number, such as "1", "2", "3", or any other seat identifier. This
+         * field is localizable so you may translate words or use different alphabets
+         * for the characters in an identifier.
+         *
+         * @param LocalizedString $seat
+         */
+        public function setSeat(LocalizedString $seat)
+        {
+        }
+        /**
+         * @return LocalizedString
+         */
+        public function getSeat()
+        {
+        }
+        /**
+         * The section of the seat, such as "121". This field is localizable so you
+         * may translate words or use different alphabets for the characters in an
+         * identifier.
+         *
+         * @param LocalizedString $section
+         */
+        public function setSection(LocalizedString $section)
+        {
+        }
+        /**
+         * @return LocalizedString
+         */
+        public function getSection()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LocalizedString
+     * Runtime class alias of \Google\Service\Walletobjects\EventSeat registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGate()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * `"walletobjects#eventSeat"`.
-     *
-     * @deprecated
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The row of the seat, such as "1", E", "BB", or "A5". This field is
-     * localizable so you may translate words or use different alphabets for the
-     * characters in an identifier.
-     *
-     * @param LocalizedString $row
-     */
-    public function setRow(LocalizedString $row)
-    {
-    }
-    /**
-     * @return LocalizedString
-     */
-    public function getRow()
-    {
-    }
-    /**
-     * The seat number, such as "1", "2", "3", or any other seat identifier. This
-     * field is localizable so you may translate words or use different alphabets
-     * for the characters in an identifier.
-     *
-     * @param LocalizedString $seat
-     */
-    public function setSeat(LocalizedString $seat)
-    {
-    }
-    /**
-     * @return LocalizedString
-     */
-    public function getSeat()
-    {
-    }
-    /**
-     * The section of the seat, such as "121". This field is localizable so you
-     * may translate words or use different alphabets for the characters in an
-     * identifier.
-     *
-     * @param LocalizedString $section
-     */
-    public function setSection(LocalizedString $section)
-    {
-    }
-    /**
-     * @return LocalizedString
-     */
-    public function getSection()
+    class Google_Service_Walletobjects_EventSeat extends \Google\Service\Walletobjects\EventSeat
     {
     }
 }

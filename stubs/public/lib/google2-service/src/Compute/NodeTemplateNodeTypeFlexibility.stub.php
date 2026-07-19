@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class NodeTemplateNodeTypeFlexibility extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $cpus;
-    /**
-     * @var string
-     */
-    public $localSsd;
-    /**
-     * @var string
-     */
-    public $memory;
-    /**
-     * @param string $cpus
-     */
-    public function setCpus($cpus)
+namespace Google\Service\Compute {
+    class NodeTemplateNodeTypeFlexibility extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $cpus;
+        /**
+         * @var string
+         */
+        public $localSsd;
+        /**
+         * @var string
+         */
+        public $memory;
+        /**
+         * @param string $cpus
+         */
+        public function setCpus($cpus)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCpus()
+        {
+        }
+        /**
+         * @param string $localSsd
+         */
+        public function setLocalSsd($localSsd)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocalSsd()
+        {
+        }
+        /**
+         * @param string $memory
+         */
+        public function setMemory($memory)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMemory()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\NodeTemplateNodeTypeFlexibility registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCpus()
-    {
-    }
-    /**
-     * @param string $localSsd
-     */
-    public function setLocalSsd($localSsd)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocalSsd()
-    {
-    }
-    /**
-     * @param string $memory
-     */
-    public function setMemory($memory)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMemory()
+    class Google_Service_Compute_NodeTemplateNodeTypeFlexibility extends \Google\Service\Compute\NodeTemplateNodeTypeFlexibility
     {
     }
 }

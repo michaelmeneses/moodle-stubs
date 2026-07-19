@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace enrol_lti\local\ltiadvantage\lib;
 
+use enrol_lti\local\ltiadvantage\repository\application_registration_repository;
+use enrol_lti\local\ltiadvantage\repository\deployment_repository;
+use Packback\Lti1p3\Interfaces\IDatabase;
+use Packback\Lti1p3\LtiDeployment;
+use Packback\Lti1p3\LtiRegistration;
 /**
  * The issuer_database class, providing a read-only store of issuer details.
  *

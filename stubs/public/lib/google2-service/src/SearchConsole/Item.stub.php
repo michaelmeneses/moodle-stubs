@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SearchConsole;
-
-class Item extends \Google\Collection
-{
-    protected $collection_key = 'issues';
-    protected $issuesType = RichResultsIssue::class;
-    protected $issuesDataType = 'array';
-    /**
-     * The user-provided name of this item.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * A list of zero or more rich result issues found for this instance.
-     *
-     * @param RichResultsIssue[] $issues
-     */
-    public function setIssues($issues)
+namespace Google\Service\SearchConsole {
+    class Item extends \Google\Collection
     {
+        protected $collection_key = 'issues';
+        protected $issuesType = RichResultsIssue::class;
+        protected $issuesDataType = 'array';
+        /**
+         * The user-provided name of this item.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * A list of zero or more rich result issues found for this instance.
+         *
+         * @param RichResultsIssue[] $issues
+         */
+        public function setIssues($issues)
+        {
+        }
+        /**
+         * @return RichResultsIssue[]
+         */
+        public function getIssues()
+        {
+        }
+        /**
+         * The user-provided name of this item.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RichResultsIssue[]
+     * Runtime class alias of \Google\Service\SearchConsole\Item registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIssues()
-    {
-    }
-    /**
-     * The user-provided name of this item.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_SearchConsole_Item extends \Google\Service\SearchConsole\Item
     {
     }
 }

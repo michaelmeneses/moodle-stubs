@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1BoolArray extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    /**
-     * A list of bool values.
-     *
-     * @var bool[]
-     */
-    public $values;
-    /**
-     * A list of bool values.
-     *
-     * @param bool[] $values
-     */
-    public function setValues($values)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1BoolArray extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        /**
+         * A list of bool values.
+         *
+         * @var bool[]
+         */
+        public $values;
+        /**
+         * A list of bool values.
+         *
+         * @param bool[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return bool[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1BoolArray registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValues()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1BoolArray extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1BoolArray
     {
     }
 }

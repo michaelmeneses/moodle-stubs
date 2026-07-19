@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Css;
-
-class UpdateAccountLabelsRequest extends \Google\Collection
-{
-    protected $collection_key = 'labelIds';
-    /**
-     * The list of label IDs to overwrite the existing account label IDs. If the
-     * list is empty, all currently assigned label IDs will be deleted.
-     *
-     * @var string[]
-     */
-    public $labelIds;
-    /**
-     * Optional. Only required when updating MC account labels. The CSS domain
-     * that is the parent resource of the MC account. Format: accounts/{account}
-     *
-     * @var string
-     */
-    public $parent;
-    /**
-     * The list of label IDs to overwrite the existing account label IDs. If the
-     * list is empty, all currently assigned label IDs will be deleted.
-     *
-     * @param string[] $labelIds
-     */
-    public function setLabelIds($labelIds)
+namespace Google\Service\Css {
+    class UpdateAccountLabelsRequest extends \Google\Collection
     {
+        protected $collection_key = 'labelIds';
+        /**
+         * The list of label IDs to overwrite the existing account label IDs. If the
+         * list is empty, all currently assigned label IDs will be deleted.
+         *
+         * @var string[]
+         */
+        public $labelIds;
+        /**
+         * Optional. Only required when updating MC account labels. The CSS domain
+         * that is the parent resource of the MC account. Format: accounts/{account}
+         *
+         * @var string
+         */
+        public $parent;
+        /**
+         * The list of label IDs to overwrite the existing account label IDs. If the
+         * list is empty, all currently assigned label IDs will be deleted.
+         *
+         * @param string[] $labelIds
+         */
+        public function setLabelIds($labelIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabelIds()
+        {
+        }
+        /**
+         * Optional. Only required when updating MC account labels. The CSS domain
+         * that is the parent resource of the MC account. Format: accounts/{account}
+         *
+         * @param string $parent
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Css\UpdateAccountLabelsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabelIds()
-    {
-    }
-    /**
-     * Optional. Only required when updating MC account labels. The CSS domain
-     * that is the parent resource of the MC account. Format: accounts/{account}
-     *
-     * @param string $parent
-     */
-    public function setParent($parent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParent()
+    class Google_Service_Css_UpdateAccountLabelsRequest extends \Google\Service\Css\UpdateAccountLabelsRequest
     {
     }
 }

@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1StreamAssistRequestToolsSpecVertexAiSearchSpec extends \Google\Collection
-{
-    protected $collection_key = 'dataStoreSpecs';
-    protected $dataStoreSpecsType = GoogleCloudDiscoveryengineV1SearchRequestDataStoreSpec::class;
-    protected $dataStoreSpecsDataType = 'array';
-    /**
-     * Optional. The filter syntax consists of an expression language for
-     * constructing a predicate from one or more fields of the documents being
-     * filtered. Filter expression is case-sensitive. If this field is
-     * unrecognizable, an `INVALID_ARGUMENT` is returned. Filtering in Vertex AI
-     * Search is done by mapping the LHS filter key to a key property defined in
-     * the Vertex AI Search backend -- this mapping is defined by the customer in
-     * their schema. For example a media customer might have a field 'name' in
-     * their schema. In this case the filter would look like this: filter -->
-     * name:'ANY("king kong")' For more information about filtering including
-     * syntax and filter operators, see
-     * [Filter](https://cloud.google.com/generative-ai-app-builder/docs/filter-
-     * search-metadata)
-     *
-     * @var string
-     */
-    public $filter;
-    /**
-     * Optional. Specs defining DataStores to filter on in a search call and
-     * configurations for those data stores. This is only considered for Engines
-     * with multiple data stores.
-     *
-     * @param GoogleCloudDiscoveryengineV1SearchRequestDataStoreSpec[] $dataStoreSpecs
-     */
-    public function setDataStoreSpecs($dataStoreSpecs)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1StreamAssistRequestToolsSpecVertexAiSearchSpec extends \Google\Collection
     {
+        protected $collection_key = 'dataStoreSpecs';
+        protected $dataStoreSpecsType = GoogleCloudDiscoveryengineV1SearchRequestDataStoreSpec::class;
+        protected $dataStoreSpecsDataType = 'array';
+        /**
+         * Optional. The filter syntax consists of an expression language for
+         * constructing a predicate from one or more fields of the documents being
+         * filtered. Filter expression is case-sensitive. If this field is
+         * unrecognizable, an `INVALID_ARGUMENT` is returned. Filtering in Vertex AI
+         * Search is done by mapping the LHS filter key to a key property defined in
+         * the Vertex AI Search backend -- this mapping is defined by the customer in
+         * their schema. For example a media customer might have a field 'name' in
+         * their schema. In this case the filter would look like this: filter -->
+         * name:'ANY("king kong")' For more information about filtering including
+         * syntax and filter operators, see
+         * [Filter](https://cloud.google.com/generative-ai-app-builder/docs/filter-
+         * search-metadata)
+         *
+         * @var string
+         */
+        public $filter;
+        /**
+         * Optional. Specs defining DataStores to filter on in a search call and
+         * configurations for those data stores. This is only considered for Engines
+         * with multiple data stores.
+         *
+         * @param GoogleCloudDiscoveryengineV1SearchRequestDataStoreSpec[] $dataStoreSpecs
+         */
+        public function setDataStoreSpecs($dataStoreSpecs)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1SearchRequestDataStoreSpec[]
+         */
+        public function getDataStoreSpecs()
+        {
+        }
+        /**
+         * Optional. The filter syntax consists of an expression language for
+         * constructing a predicate from one or more fields of the documents being
+         * filtered. Filter expression is case-sensitive. If this field is
+         * unrecognizable, an `INVALID_ARGUMENT` is returned. Filtering in Vertex AI
+         * Search is done by mapping the LHS filter key to a key property defined in
+         * the Vertex AI Search backend -- this mapping is defined by the customer in
+         * their schema. For example a media customer might have a field 'name' in
+         * their schema. In this case the filter would look like this: filter -->
+         * name:'ANY("king kong")' For more information about filtering including
+         * syntax and filter operators, see
+         * [Filter](https://cloud.google.com/generative-ai-app-builder/docs/filter-
+         * search-metadata)
+         *
+         * @param string $filter
+         */
+        public function setFilter($filter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilter()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1SearchRequestDataStoreSpec[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1StreamAssistRequestToolsSpecVertexAiSearchSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataStoreSpecs()
-    {
-    }
-    /**
-     * Optional. The filter syntax consists of an expression language for
-     * constructing a predicate from one or more fields of the documents being
-     * filtered. Filter expression is case-sensitive. If this field is
-     * unrecognizable, an `INVALID_ARGUMENT` is returned. Filtering in Vertex AI
-     * Search is done by mapping the LHS filter key to a key property defined in
-     * the Vertex AI Search backend -- this mapping is defined by the customer in
-     * their schema. For example a media customer might have a field 'name' in
-     * their schema. In this case the filter would look like this: filter -->
-     * name:'ANY("king kong")' For more information about filtering including
-     * syntax and filter operators, see
-     * [Filter](https://cloud.google.com/generative-ai-app-builder/docs/filter-
-     * search-metadata)
-     *
-     * @param string $filter
-     */
-    public function setFilter($filter)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFilter()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1StreamAssistRequestToolsSpecVertexAiSearchSpec extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1StreamAssistRequestToolsSpecVertexAiSearchSpec
     {
     }
 }

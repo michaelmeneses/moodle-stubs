@@ -21,270 +21,279 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DeveloperConnect;
-
-class InsightsConfig extends \Google\Collection
-{
-    /**
-     * No state specified.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The InsightsConfig is pending application discovery/runtime discovery.
-     */
-    public const STATE_PENDING = 'PENDING';
-    /**
-     * The initial discovery process is complete.
-     */
-    public const STATE_COMPLETE = 'COMPLETE';
-    /**
-     * The InsightsConfig is in an error state.
-     */
-    public const STATE_ERROR = 'ERROR';
-    protected $collection_key = 'runtimeConfigs';
-    /**
-     * Optional. User specified annotations. See
-     * https://google.aip.dev/148#annotations for more details such as format and
-     * size limitations.
-     *
-     * @var string[]
-     */
-    public $annotations;
-    /**
-     * Optional. The name of the App Hub Application. Format:
-     * projects/{project}/locations/{location}/applications/{application}
-     *
-     * @var string
-     */
-    public $appHubApplication;
-    protected $artifactConfigsType = ArtifactConfig::class;
-    protected $artifactConfigsDataType = 'array';
-    /**
-     * Output only. Create timestamp.
-     *
-     * @var string
-     */
-    public $createTime;
-    protected $errorsType = Status::class;
-    protected $errorsDataType = 'array';
-    /**
-     * Optional. Set of labels associated with an InsightsConfig.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Identifier. The name of the InsightsConfig. Format:
-     * projects/{project}/locations/{location}/insightsConfigs/{insightsConfig}
-     *
-     * @var string
-     */
-    public $name;
-    protected $projectsType = Projects::class;
-    protected $projectsDataType = '';
-    /**
-     * Output only. Reconciling (https://google.aip.dev/128#reconciliation). Set
-     * to true if the current state of InsightsConfig does not match the user's
-     * intended state, and the service is actively updating the resource to
-     * reconcile them. This can happen due to user-triggered updates or system
-     * actions like failover or maintenance.
-     *
-     * @var bool
-     */
-    public $reconciling;
-    protected $runtimeConfigsType = RuntimeConfig::class;
-    protected $runtimeConfigsDataType = 'array';
-    /**
-     * Optional. Output only. The state of the InsightsConfig.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. Update timestamp.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Optional. User specified annotations. See
-     * https://google.aip.dev/148#annotations for more details such as format and
-     * size limitations.
-     *
-     * @param string[] $annotations
-     */
-    public function setAnnotations($annotations)
+namespace Google\Service\DeveloperConnect {
+    class InsightsConfig extends \Google\Collection
     {
+        /**
+         * No state specified.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The InsightsConfig is pending application discovery/runtime discovery.
+         */
+        public const STATE_PENDING = 'PENDING';
+        /**
+         * The initial discovery process is complete.
+         */
+        public const STATE_COMPLETE = 'COMPLETE';
+        /**
+         * The InsightsConfig is in an error state.
+         */
+        public const STATE_ERROR = 'ERROR';
+        protected $collection_key = 'runtimeConfigs';
+        /**
+         * Optional. User specified annotations. See
+         * https://google.aip.dev/148#annotations for more details such as format and
+         * size limitations.
+         *
+         * @var string[]
+         */
+        public $annotations;
+        /**
+         * Optional. The name of the App Hub Application. Format:
+         * projects/{project}/locations/{location}/applications/{application}
+         *
+         * @var string
+         */
+        public $appHubApplication;
+        protected $artifactConfigsType = ArtifactConfig::class;
+        protected $artifactConfigsDataType = 'array';
+        /**
+         * Output only. Create timestamp.
+         *
+         * @var string
+         */
+        public $createTime;
+        protected $errorsType = Status::class;
+        protected $errorsDataType = 'array';
+        /**
+         * Optional. Set of labels associated with an InsightsConfig.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Identifier. The name of the InsightsConfig. Format:
+         * projects/{project}/locations/{location}/insightsConfigs/{insightsConfig}
+         *
+         * @var string
+         */
+        public $name;
+        protected $projectsType = Projects::class;
+        protected $projectsDataType = '';
+        /**
+         * Output only. Reconciling (https://google.aip.dev/128#reconciliation). Set
+         * to true if the current state of InsightsConfig does not match the user's
+         * intended state, and the service is actively updating the resource to
+         * reconcile them. This can happen due to user-triggered updates or system
+         * actions like failover or maintenance.
+         *
+         * @var bool
+         */
+        public $reconciling;
+        protected $runtimeConfigsType = RuntimeConfig::class;
+        protected $runtimeConfigsDataType = 'array';
+        /**
+         * Optional. Output only. The state of the InsightsConfig.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. Update timestamp.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Optional. User specified annotations. See
+         * https://google.aip.dev/148#annotations for more details such as format and
+         * size limitations.
+         *
+         * @param string[] $annotations
+         */
+        public function setAnnotations($annotations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAnnotations()
+        {
+        }
+        /**
+         * Optional. The name of the App Hub Application. Format:
+         * projects/{project}/locations/{location}/applications/{application}
+         *
+         * @param string $appHubApplication
+         */
+        public function setAppHubApplication($appHubApplication)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAppHubApplication()
+        {
+        }
+        /**
+         * Optional. The artifact configurations of the artifacts that are deployed.
+         *
+         * @param ArtifactConfig[] $artifactConfigs
+         */
+        public function setArtifactConfigs($artifactConfigs)
+        {
+        }
+        /**
+         * @return ArtifactConfig[]
+         */
+        public function getArtifactConfigs()
+        {
+        }
+        /**
+         * Output only. Create timestamp.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. Any errors that occurred while setting up the InsightsConfig.
+         * Each error will be in the format: `field_name: error_message`, e.g.
+         * GetAppHubApplication: Permission denied while getting App Hub application.
+         * Please grant permissions to the P4SA.
+         *
+         * @param Status[] $errors
+         */
+        public function setErrors($errors)
+        {
+        }
+        /**
+         * @return Status[]
+         */
+        public function getErrors()
+        {
+        }
+        /**
+         * Optional. Set of labels associated with an InsightsConfig.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Identifier. The name of the InsightsConfig. Format:
+         * projects/{project}/locations/{location}/insightsConfigs/{insightsConfig}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. The GCP projects to track with the InsightsConfig.
+         *
+         * @param Projects $projects
+         */
+        public function setProjects(Projects $projects)
+        {
+        }
+        /**
+         * @return Projects
+         */
+        public function getProjects()
+        {
+        }
+        /**
+         * Output only. Reconciling (https://google.aip.dev/128#reconciliation). Set
+         * to true if the current state of InsightsConfig does not match the user's
+         * intended state, and the service is actively updating the resource to
+         * reconcile them. This can happen due to user-triggered updates or system
+         * actions like failover or maintenance.
+         *
+         * @param bool $reconciling
+         */
+        public function setReconciling($reconciling)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReconciling()
+        {
+        }
+        /**
+         * Output only. The runtime configurations where the application is deployed.
+         *
+         * @param RuntimeConfig[] $runtimeConfigs
+         */
+        public function setRuntimeConfigs($runtimeConfigs)
+        {
+        }
+        /**
+         * @return RuntimeConfig[]
+         */
+        public function getRuntimeConfigs()
+        {
+        }
+        /**
+         * Optional. Output only. The state of the InsightsConfig.
+         *
+         * Accepted values: STATE_UNSPECIFIED, PENDING, COMPLETE, ERROR
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Output only. Update timestamp.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DeveloperConnect\InsightsConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotations()
-    {
-    }
-    /**
-     * Optional. The name of the App Hub Application. Format:
-     * projects/{project}/locations/{location}/applications/{application}
-     *
-     * @param string $appHubApplication
-     */
-    public function setAppHubApplication($appHubApplication)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAppHubApplication()
-    {
-    }
-    /**
-     * Optional. The artifact configurations of the artifacts that are deployed.
-     *
-     * @param ArtifactConfig[] $artifactConfigs
-     */
-    public function setArtifactConfigs($artifactConfigs)
-    {
-    }
-    /**
-     * @return ArtifactConfig[]
-     */
-    public function getArtifactConfigs()
-    {
-    }
-    /**
-     * Output only. Create timestamp.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. Any errors that occurred while setting up the InsightsConfig.
-     * Each error will be in the format: `field_name: error_message`, e.g.
-     * GetAppHubApplication: Permission denied while getting App Hub application.
-     * Please grant permissions to the P4SA.
-     *
-     * @param Status[] $errors
-     */
-    public function setErrors($errors)
-    {
-    }
-    /**
-     * @return Status[]
-     */
-    public function getErrors()
-    {
-    }
-    /**
-     * Optional. Set of labels associated with an InsightsConfig.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Identifier. The name of the InsightsConfig. Format:
-     * projects/{project}/locations/{location}/insightsConfigs/{insightsConfig}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. The GCP projects to track with the InsightsConfig.
-     *
-     * @param Projects $projects
-     */
-    public function setProjects(Projects $projects)
-    {
-    }
-    /**
-     * @return Projects
-     */
-    public function getProjects()
-    {
-    }
-    /**
-     * Output only. Reconciling (https://google.aip.dev/128#reconciliation). Set
-     * to true if the current state of InsightsConfig does not match the user's
-     * intended state, and the service is actively updating the resource to
-     * reconcile them. This can happen due to user-triggered updates or system
-     * actions like failover or maintenance.
-     *
-     * @param bool $reconciling
-     */
-    public function setReconciling($reconciling)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReconciling()
-    {
-    }
-    /**
-     * Output only. The runtime configurations where the application is deployed.
-     *
-     * @param RuntimeConfig[] $runtimeConfigs
-     */
-    public function setRuntimeConfigs($runtimeConfigs)
-    {
-    }
-    /**
-     * @return RuntimeConfig[]
-     */
-    public function getRuntimeConfigs()
-    {
-    }
-    /**
-     * Optional. Output only. The state of the InsightsConfig.
-     *
-     * Accepted values: STATE_UNSPECIFIED, PENDING, COMPLETE, ERROR
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Output only. Update timestamp.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_DeveloperConnect_InsightsConfig extends \Google\Service\DeveloperConnect\InsightsConfig
     {
     }
 }

@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Pubsub;
-
-class NoWrapper extends \Google\Model
-{
-    /**
-     * Optional. When true, writes the Pub/Sub message metadata to `x-goog-
-     * pubsub-:` headers of the HTTP request. Writes the Pub/Sub message
-     * attributes to `:` headers of the HTTP request.
-     *
-     * @var bool
-     */
-    public $writeMetadata;
-    /**
-     * Optional. When true, writes the Pub/Sub message metadata to `x-goog-
-     * pubsub-:` headers of the HTTP request. Writes the Pub/Sub message
-     * attributes to `:` headers of the HTTP request.
-     *
-     * @param bool $writeMetadata
-     */
-    public function setWriteMetadata($writeMetadata)
+namespace Google\Service\Pubsub {
+    class NoWrapper extends \Google\Model
     {
+        /**
+         * Optional. When true, writes the Pub/Sub message metadata to `x-goog-
+         * pubsub-:` headers of the HTTP request. Writes the Pub/Sub message
+         * attributes to `:` headers of the HTTP request.
+         *
+         * @var bool
+         */
+        public $writeMetadata;
+        /**
+         * Optional. When true, writes the Pub/Sub message metadata to `x-goog-
+         * pubsub-:` headers of the HTTP request. Writes the Pub/Sub message
+         * attributes to `:` headers of the HTTP request.
+         *
+         * @param bool $writeMetadata
+         */
+        public function setWriteMetadata($writeMetadata)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getWriteMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Pubsub\NoWrapper registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getWriteMetadata()
+    class Google_Service_Pubsub_NoWrapper extends \Google\Service\Pubsub\NoWrapper
     {
     }
 }

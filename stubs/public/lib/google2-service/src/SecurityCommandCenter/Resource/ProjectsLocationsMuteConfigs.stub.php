@@ -21,71 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter\Resource;
-
-/**
- * The "muteConfigs" collection of methods.
- * Typical usage is:
- *  <code>
- *   $securitycenterService = new Google\Service\SecurityCommandCenter(...);
- *   $muteConfigs = $securitycenterService->projects_locations_muteConfigs;
- *  </code>
- */
-class ProjectsLocationsMuteConfigs extends \Google\Service\Resource
-{
+namespace Google\Service\SecurityCommandCenter\Resource {
+    use Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV1MuteConfig;
+    use Google\Service\SecurityCommandCenter\SecuritycenterEmpty;
     /**
-     * Deletes an existing mute config. (muteConfigs.delete)
-     *
-     * @param string $name Required. Name of the mute config to delete. Its format
-     * is `organizations/{organization}/muteConfigs/{config_id}`,
-     * `folders/{folder}/muteConfigs/{config_id}`,
-     * `projects/{project}/muteConfigs/{config_id}`,
-     * `organizations/{organization}/locations/global/muteConfigs/{config_id}`,
-     * `folders/{folder}/locations/global/muteConfigs/{config_id}`, or
-     * `projects/{project}/locations/global/muteConfigs/{config_id}`.
-     * @param array $optParams Optional parameters.
-     * @return SecuritycenterEmpty
-     * @throws \Google\Service\Exception
+     * The "muteConfigs" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $securitycenterService = new Google\Service\SecurityCommandCenter(...);
+     *   $muteConfigs = $securitycenterService->projects_locations_muteConfigs;
+     *  </code>
      */
-    public function delete($name, $optParams = [])
+    class ProjectsLocationsMuteConfigs extends \Google\Service\Resource
     {
+        /**
+         * Deletes an existing mute config. (muteConfigs.delete)
+         *
+         * @param string $name Required. Name of the mute config to delete. Its format
+         * is `organizations/{organization}/muteConfigs/{config_id}`,
+         * `folders/{folder}/muteConfigs/{config_id}`,
+         * `projects/{project}/muteConfigs/{config_id}`,
+         * `organizations/{organization}/locations/global/muteConfigs/{config_id}`,
+         * `folders/{folder}/locations/global/muteConfigs/{config_id}`, or
+         * `projects/{project}/locations/global/muteConfigs/{config_id}`.
+         * @param array $optParams Optional parameters.
+         * @return SecuritycenterEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets a mute config. (muteConfigs.get)
+         *
+         * @param string $name Required. Name of the mute config to retrieve. Its format
+         * is `organizations/{organization}/muteConfigs/{config_id}`,
+         * `folders/{folder}/muteConfigs/{config_id}`,
+         * `projects/{project}/muteConfigs/{config_id}`,
+         * `organizations/{organization}/locations/global/muteConfigs/{config_id}`,
+         * `folders/{folder}/locations/global/muteConfigs/{config_id}`, or
+         * `projects/{project}/locations/global/muteConfigs/{config_id}`.
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudSecuritycenterV1MuteConfig
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Updates a mute config. (muteConfigs.patch)
+         *
+         * @param string $name This field will be ignored if provided on config
+         * creation. Format `organizations/{organization}/muteConfigs/{mute_config}`
+         * `folders/{folder}/muteConfigs/{mute_config}`
+         * `projects/{project}/muteConfigs/{mute_config}`
+         * `organizations/{organization}/locations/global/muteConfigs/{mute_config}`
+         * `folders/{folder}/locations/global/muteConfigs/{mute_config}`
+         * `projects/{project}/locations/global/muteConfigs/{mute_config}`
+         * @param GoogleCloudSecuritycenterV1MuteConfig $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask The list of fields to be updated. If empty all
+         * mutable fields will be updated.
+         * @return GoogleCloudSecuritycenterV1MuteConfig
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, GoogleCloudSecuritycenterV1MuteConfig $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets a mute config. (muteConfigs.get)
-     *
-     * @param string $name Required. Name of the mute config to retrieve. Its format
-     * is `organizations/{organization}/muteConfigs/{config_id}`,
-     * `folders/{folder}/muteConfigs/{config_id}`,
-     * `projects/{project}/muteConfigs/{config_id}`,
-     * `organizations/{organization}/locations/global/muteConfigs/{config_id}`,
-     * `folders/{folder}/locations/global/muteConfigs/{config_id}`, or
-     * `projects/{project}/locations/global/muteConfigs/{config_id}`.
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudSecuritycenterV1MuteConfig
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\Resource\ProjectsLocationsMuteConfigs registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Updates a mute config. (muteConfigs.patch)
-     *
-     * @param string $name This field will be ignored if provided on config
-     * creation. Format `organizations/{organization}/muteConfigs/{mute_config}`
-     * `folders/{folder}/muteConfigs/{mute_config}`
-     * `projects/{project}/muteConfigs/{mute_config}`
-     * `organizations/{organization}/locations/global/muteConfigs/{mute_config}`
-     * `folders/{folder}/locations/global/muteConfigs/{mute_config}`
-     * `projects/{project}/locations/global/muteConfigs/{mute_config}`
-     * @param GoogleCloudSecuritycenterV1MuteConfig $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask The list of fields to be updated. If empty all
-     * mutable fields will be updated.
-     * @return GoogleCloudSecuritycenterV1MuteConfig
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, GoogleCloudSecuritycenterV1MuteConfig $postBody, $optParams = [])
+    class Google_Service_SecurityCommandCenter_Resource_ProjectsLocationsMuteConfigs extends \Google\Service\SecurityCommandCenter\Resource\ProjectsLocationsMuteConfigs
     {
     }
 }

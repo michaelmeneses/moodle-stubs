@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessBusinessCalls;
-
-class ListBusinessCallsInsightsResponse extends \Google\Collection
-{
-    protected $collection_key = 'businessCallsInsights';
-    protected $businessCallsInsightsType = BusinessCallsInsights::class;
-    protected $businessCallsInsightsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @param BusinessCallsInsights[]
-     */
-    public function setBusinessCallsInsights($businessCallsInsights)
+namespace Google\Service\MyBusinessBusinessCalls {
+    class ListBusinessCallsInsightsResponse extends \Google\Collection
     {
+        protected $collection_key = 'businessCallsInsights';
+        protected $businessCallsInsightsType = BusinessCallsInsights::class;
+        protected $businessCallsInsightsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @param BusinessCallsInsights[]
+         */
+        public function setBusinessCallsInsights($businessCallsInsights)
+        {
+        }
+        /**
+         * @return BusinessCallsInsights[]
+         */
+        public function getBusinessCallsInsights()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BusinessCallsInsights[]
+     * Runtime class alias of \Google\Service\MyBusinessBusinessCalls\ListBusinessCallsInsightsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBusinessCallsInsights()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_MyBusinessBusinessCalls_ListBusinessCallsInsightsResponse extends \Google\Service\MyBusinessBusinessCalls\ListBusinessCallsInsightsResponse
     {
     }
 }

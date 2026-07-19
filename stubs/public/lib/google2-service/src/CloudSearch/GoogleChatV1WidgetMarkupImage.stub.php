@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class GoogleChatV1WidgetMarkupImage extends \Google\Model
-{
-    public $aspectRatio;
-    /**
-     * @var string
-     */
-    public $imageUrl;
-    protected $onClickType = GoogleChatV1WidgetMarkupOnClick::class;
-    protected $onClickDataType = '';
-    public function setAspectRatio($aspectRatio)
+namespace Google\Service\CloudSearch {
+    class GoogleChatV1WidgetMarkupImage extends \Google\Model
     {
+        public $aspectRatio;
+        /**
+         * @var string
+         */
+        public $imageUrl;
+        protected $onClickType = GoogleChatV1WidgetMarkupOnClick::class;
+        protected $onClickDataType = '';
+        public function setAspectRatio($aspectRatio)
+        {
+        }
+        public function getAspectRatio()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setImageUrl($imageUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageUrl()
+        {
+        }
+        /**
+         * @param GoogleChatV1WidgetMarkupOnClick
+         */
+        public function setOnClick(GoogleChatV1WidgetMarkupOnClick $onClick)
+        {
+        }
+        /**
+         * @return GoogleChatV1WidgetMarkupOnClick
+         */
+        public function getOnClick()
+        {
+        }
     }
-    public function getAspectRatio()
-    {
-    }
+}
+namespace {
     /**
-     * @param string
+     * Runtime class alias of \Google\Service\CloudSearch\GoogleChatV1WidgetMarkupImage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setImageUrl($imageUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImageUrl()
-    {
-    }
-    /**
-     * @param GoogleChatV1WidgetMarkupOnClick
-     */
-    public function setOnClick(GoogleChatV1WidgetMarkupOnClick $onClick)
-    {
-    }
-    /**
-     * @return GoogleChatV1WidgetMarkupOnClick
-     */
-    public function getOnClick()
+    class Google_Service_CloudSearch_GoogleChatV1WidgetMarkupImage extends \Google\Service\CloudSearch\GoogleChatV1WidgetMarkupImage
     {
     }
 }

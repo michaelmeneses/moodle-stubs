@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class AwsOrganization extends \Google\Model
-{
-    /**
-     * The unique identifier (ID) for the organization. The regex pattern for an
-     * organization ID string requires "o-" followed by from 10 to 32 lowercase
-     * letters or digits.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The unique identifier (ID) for the organization. The regex pattern for an
-     * organization ID string requires "o-" followed by from 10 to 32 lowercase
-     * letters or digits.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\SecurityCommandCenter {
+    class AwsOrganization extends \Google\Model
     {
+        /**
+         * The unique identifier (ID) for the organization. The regex pattern for an
+         * organization ID string requires "o-" followed by from 10 to 32 lowercase
+         * letters or digits.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The unique identifier (ID) for the organization. The regex pattern for an
+         * organization ID string requires "o-" followed by from 10 to 32 lowercase
+         * letters or digits.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\AwsOrganization registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
+    class Google_Service_SecurityCommandCenter_AwsOrganization extends \Google\Service\SecurityCommandCenter\AwsOrganization
     {
     }
 }

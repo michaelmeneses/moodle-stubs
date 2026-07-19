@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaUseTemplateResponse extends \Google\Collection
-{
-    protected $collection_key = 'subIntegrationVersions';
-    protected $integrationVersionType = GoogleCloudIntegrationsV1alphaIntegrationVersion::class;
-    protected $integrationVersionDataType = '';
-    protected $subIntegrationVersionsType = GoogleCloudIntegrationsV1alphaIntegrationVersion::class;
-    protected $subIntegrationVersionsDataType = 'array';
-    /**
-     * IntegrationVersion which is created.
-     *
-     * @param GoogleCloudIntegrationsV1alphaIntegrationVersion $integrationVersion
-     */
-    public function setIntegrationVersion(GoogleCloudIntegrationsV1alphaIntegrationVersion $integrationVersion)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaUseTemplateResponse extends \Google\Collection
     {
+        protected $collection_key = 'subIntegrationVersions';
+        protected $integrationVersionType = GoogleCloudIntegrationsV1alphaIntegrationVersion::class;
+        protected $integrationVersionDataType = '';
+        protected $subIntegrationVersionsType = GoogleCloudIntegrationsV1alphaIntegrationVersion::class;
+        protected $subIntegrationVersionsDataType = 'array';
+        /**
+         * IntegrationVersion which is created.
+         *
+         * @param GoogleCloudIntegrationsV1alphaIntegrationVersion $integrationVersion
+         */
+        public function setIntegrationVersion(GoogleCloudIntegrationsV1alphaIntegrationVersion $integrationVersion)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaIntegrationVersion
+         */
+        public function getIntegrationVersion()
+        {
+        }
+        /**
+         * Sub integration versions which are created.
+         *
+         * @param GoogleCloudIntegrationsV1alphaIntegrationVersion[] $subIntegrationVersions
+         */
+        public function setSubIntegrationVersions($subIntegrationVersions)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaIntegrationVersion[]
+         */
+        public function getSubIntegrationVersions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudIntegrationsV1alphaIntegrationVersion
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaUseTemplateResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIntegrationVersion()
-    {
-    }
-    /**
-     * Sub integration versions which are created.
-     *
-     * @param GoogleCloudIntegrationsV1alphaIntegrationVersion[] $subIntegrationVersions
-     */
-    public function setSubIntegrationVersions($subIntegrationVersions)
-    {
-    }
-    /**
-     * @return GoogleCloudIntegrationsV1alphaIntegrationVersion[]
-     */
-    public function getSubIntegrationVersions()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaUseTemplateResponse extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaUseTemplateResponse
     {
     }
 }

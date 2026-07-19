@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace factor_sms;
 
+use core_sms\hook\before_gateway_deleted;
+use core_sms\hook\before_gateway_disabled;
 /**
  * Hook listener for SMS factor.
  *

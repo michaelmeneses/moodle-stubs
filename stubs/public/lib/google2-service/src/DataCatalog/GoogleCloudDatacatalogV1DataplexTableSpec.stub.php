@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1DataplexTableSpec extends \Google\Collection
-{
-    protected $collection_key = 'externalTables';
-    protected $dataplexSpecType = GoogleCloudDatacatalogV1DataplexSpec::class;
-    protected $dataplexSpecDataType = '';
-    protected $externalTablesType = GoogleCloudDatacatalogV1DataplexExternalTable::class;
-    protected $externalTablesDataType = 'array';
-    /**
-     * Indicates if the table schema is managed by the user or not.
-     *
-     * @var bool
-     */
-    public $userManaged;
-    /**
-     * Common Dataplex Universal Catalog fields.
-     *
-     * @param GoogleCloudDatacatalogV1DataplexSpec $dataplexSpec
-     */
-    public function setDataplexSpec(GoogleCloudDatacatalogV1DataplexSpec $dataplexSpec)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1DataplexTableSpec extends \Google\Collection
     {
+        protected $collection_key = 'externalTables';
+        protected $dataplexSpecType = GoogleCloudDatacatalogV1DataplexSpec::class;
+        protected $dataplexSpecDataType = '';
+        protected $externalTablesType = GoogleCloudDatacatalogV1DataplexExternalTable::class;
+        protected $externalTablesDataType = 'array';
+        /**
+         * Indicates if the table schema is managed by the user or not.
+         *
+         * @var bool
+         */
+        public $userManaged;
+        /**
+         * Common Dataplex Universal Catalog fields.
+         *
+         * @param GoogleCloudDatacatalogV1DataplexSpec $dataplexSpec
+         */
+        public function setDataplexSpec(GoogleCloudDatacatalogV1DataplexSpec $dataplexSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1DataplexSpec
+         */
+        public function getDataplexSpec()
+        {
+        }
+        /**
+         * List of external tables registered by Dataplex Universal Catalog in other
+         * systems based on the same underlying data. External tables allow to query
+         * this data in those systems.
+         *
+         * @param GoogleCloudDatacatalogV1DataplexExternalTable[] $externalTables
+         */
+        public function setExternalTables($externalTables)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1DataplexExternalTable[]
+         */
+        public function getExternalTables()
+        {
+        }
+        /**
+         * Indicates if the table schema is managed by the user or not.
+         *
+         * @param bool $userManaged
+         */
+        public function setUserManaged($userManaged)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUserManaged()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatacatalogV1DataplexSpec
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1DataplexTableSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataplexSpec()
-    {
-    }
-    /**
-     * List of external tables registered by Dataplex Universal Catalog in other
-     * systems based on the same underlying data. External tables allow to query
-     * this data in those systems.
-     *
-     * @param GoogleCloudDatacatalogV1DataplexExternalTable[] $externalTables
-     */
-    public function setExternalTables($externalTables)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1DataplexExternalTable[]
-     */
-    public function getExternalTables()
-    {
-    }
-    /**
-     * Indicates if the table schema is managed by the user or not.
-     *
-     * @param bool $userManaged
-     */
-    public function setUserManaged($userManaged)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUserManaged()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1DataplexTableSpec extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1DataplexTableSpec
     {
     }
 }

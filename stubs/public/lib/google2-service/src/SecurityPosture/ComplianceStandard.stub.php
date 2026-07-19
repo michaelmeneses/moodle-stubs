@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityPosture;
-
-class ComplianceStandard extends \Google\Model
-{
-    /**
-     * Optional. The control in the compliance standard that the policy helps
-     * enforce. For example, `AC-3`.
-     *
-     * @var string
-     */
-    public $control;
-    /**
-     * Optional. The compliance standard that the policy helps enforce. For
-     * example, `NIST SP 800-53`.
-     *
-     * @var string
-     */
-    public $standard;
-    /**
-     * Optional. The control in the compliance standard that the policy helps
-     * enforce. For example, `AC-3`.
-     *
-     * @param string $control
-     */
-    public function setControl($control)
+namespace Google\Service\SecurityPosture {
+    class ComplianceStandard extends \Google\Model
     {
+        /**
+         * Optional. The control in the compliance standard that the policy helps
+         * enforce. For example, `AC-3`.
+         *
+         * @var string
+         */
+        public $control;
+        /**
+         * Optional. The compliance standard that the policy helps enforce. For
+         * example, `NIST SP 800-53`.
+         *
+         * @var string
+         */
+        public $standard;
+        /**
+         * Optional. The control in the compliance standard that the policy helps
+         * enforce. For example, `AC-3`.
+         *
+         * @param string $control
+         */
+        public function setControl($control)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getControl()
+        {
+        }
+        /**
+         * Optional. The compliance standard that the policy helps enforce. For
+         * example, `NIST SP 800-53`.
+         *
+         * @param string $standard
+         */
+        public function setStandard($standard)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStandard()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityPosture\ComplianceStandard registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getControl()
-    {
-    }
-    /**
-     * Optional. The compliance standard that the policy helps enforce. For
-     * example, `NIST SP 800-53`.
-     *
-     * @param string $standard
-     */
-    public function setStandard($standard)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStandard()
+    class Google_Service_SecurityPosture_ComplianceStandard extends \Google\Service\SecurityPosture\ComplianceStandard
     {
     }
 }

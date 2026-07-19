@@ -21,136 +21,145 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FactCheckTools;
-
-class GoogleFactcheckingFactchecktoolsV1alpha1ClaimRating extends \Google\Model
-{
-    /**
-     * For numeric ratings, the best value possible in the scale from worst to
-     * best. Corresponds to `ClaimReview.reviewRating.bestRating`.
-     *
-     * @var int
-     */
-    public $bestRating;
-    /**
-     * Corresponds to `ClaimReview.reviewRating.image`.
-     *
-     * @var string
-     */
-    public $imageUrl;
-    /**
-     * Corresponds to `ClaimReview.reviewRating.ratingExplanation`.
-     *
-     * @var string
-     */
-    public $ratingExplanation;
-    /**
-     * A numeric rating of this claim, in the range worstRating — bestRating
-     * inclusive. Corresponds to `ClaimReview.reviewRating.ratingValue`.
-     *
-     * @var int
-     */
-    public $ratingValue;
-    /**
-     * The truthfulness rating as a human-readible short word or phrase.
-     * Corresponds to `ClaimReview.reviewRating.alternateName`.
-     *
-     * @var string
-     */
-    public $textualRating;
-    /**
-     * For numeric ratings, the worst value possible in the scale from worst to
-     * best. Corresponds to `ClaimReview.reviewRating.worstRating`.
-     *
-     * @var int
-     */
-    public $worstRating;
-    /**
-     * For numeric ratings, the best value possible in the scale from worst to
-     * best. Corresponds to `ClaimReview.reviewRating.bestRating`.
-     *
-     * @param int $bestRating
-     */
-    public function setBestRating($bestRating)
+namespace Google\Service\FactCheckTools {
+    class GoogleFactcheckingFactchecktoolsV1alpha1ClaimRating extends \Google\Model
     {
+        /**
+         * For numeric ratings, the best value possible in the scale from worst to
+         * best. Corresponds to `ClaimReview.reviewRating.bestRating`.
+         *
+         * @var int
+         */
+        public $bestRating;
+        /**
+         * Corresponds to `ClaimReview.reviewRating.image`.
+         *
+         * @var string
+         */
+        public $imageUrl;
+        /**
+         * Corresponds to `ClaimReview.reviewRating.ratingExplanation`.
+         *
+         * @var string
+         */
+        public $ratingExplanation;
+        /**
+         * A numeric rating of this claim, in the range worstRating — bestRating
+         * inclusive. Corresponds to `ClaimReview.reviewRating.ratingValue`.
+         *
+         * @var int
+         */
+        public $ratingValue;
+        /**
+         * The truthfulness rating as a human-readible short word or phrase.
+         * Corresponds to `ClaimReview.reviewRating.alternateName`.
+         *
+         * @var string
+         */
+        public $textualRating;
+        /**
+         * For numeric ratings, the worst value possible in the scale from worst to
+         * best. Corresponds to `ClaimReview.reviewRating.worstRating`.
+         *
+         * @var int
+         */
+        public $worstRating;
+        /**
+         * For numeric ratings, the best value possible in the scale from worst to
+         * best. Corresponds to `ClaimReview.reviewRating.bestRating`.
+         *
+         * @param int $bestRating
+         */
+        public function setBestRating($bestRating)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getBestRating()
+        {
+        }
+        /**
+         * Corresponds to `ClaimReview.reviewRating.image`.
+         *
+         * @param string $imageUrl
+         */
+        public function setImageUrl($imageUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageUrl()
+        {
+        }
+        /**
+         * Corresponds to `ClaimReview.reviewRating.ratingExplanation`.
+         *
+         * @param string $ratingExplanation
+         */
+        public function setRatingExplanation($ratingExplanation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRatingExplanation()
+        {
+        }
+        /**
+         * A numeric rating of this claim, in the range worstRating — bestRating
+         * inclusive. Corresponds to `ClaimReview.reviewRating.ratingValue`.
+         *
+         * @param int $ratingValue
+         */
+        public function setRatingValue($ratingValue)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRatingValue()
+        {
+        }
+        /**
+         * The truthfulness rating as a human-readible short word or phrase.
+         * Corresponds to `ClaimReview.reviewRating.alternateName`.
+         *
+         * @param string $textualRating
+         */
+        public function setTextualRating($textualRating)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTextualRating()
+        {
+        }
+        /**
+         * For numeric ratings, the worst value possible in the scale from worst to
+         * best. Corresponds to `ClaimReview.reviewRating.worstRating`.
+         *
+         * @param int $worstRating
+         */
+        public function setWorstRating($worstRating)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getWorstRating()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\FactCheckTools\GoogleFactcheckingFactchecktoolsV1alpha1ClaimRating registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBestRating()
-    {
-    }
-    /**
-     * Corresponds to `ClaimReview.reviewRating.image`.
-     *
-     * @param string $imageUrl
-     */
-    public function setImageUrl($imageUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImageUrl()
-    {
-    }
-    /**
-     * Corresponds to `ClaimReview.reviewRating.ratingExplanation`.
-     *
-     * @param string $ratingExplanation
-     */
-    public function setRatingExplanation($ratingExplanation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRatingExplanation()
-    {
-    }
-    /**
-     * A numeric rating of this claim, in the range worstRating — bestRating
-     * inclusive. Corresponds to `ClaimReview.reviewRating.ratingValue`.
-     *
-     * @param int $ratingValue
-     */
-    public function setRatingValue($ratingValue)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRatingValue()
-    {
-    }
-    /**
-     * The truthfulness rating as a human-readible short word or phrase.
-     * Corresponds to `ClaimReview.reviewRating.alternateName`.
-     *
-     * @param string $textualRating
-     */
-    public function setTextualRating($textualRating)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTextualRating()
-    {
-    }
-    /**
-     * For numeric ratings, the worst value possible in the scale from worst to
-     * best. Corresponds to `ClaimReview.reviewRating.worstRating`.
-     *
-     * @param int $worstRating
-     */
-    public function setWorstRating($worstRating)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getWorstRating()
+    class Google_Service_FactCheckTools_GoogleFactcheckingFactchecktoolsV1alpha1ClaimRating extends \Google\Service\FactCheckTools\GoogleFactcheckingFactchecktoolsV1alpha1ClaimRating
     {
     }
 }

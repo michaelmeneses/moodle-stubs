@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class RestartMigrationJobRequest extends \Google\Model
-{
-    protected $objectsFilterType = MigrationJobObjectsConfig::class;
-    protected $objectsFilterDataType = '';
-    /**
-     * Optional. If true, only failed objects will be restarted.
-     *
-     * @var bool
-     */
-    public $restartFailedObjects;
-    /**
-     * Optional. Restart the migration job without running prior configuration
-     * verification. Defaults to `false`.
-     *
-     * @var bool
-     */
-    public $skipValidation;
-    /**
-     * Optional. The object filter to apply to the migration job.
-     *
-     * @param MigrationJobObjectsConfig $objectsFilter
-     */
-    public function setObjectsFilter(MigrationJobObjectsConfig $objectsFilter)
+namespace Google\Service\DatabaseMigrationService {
+    class RestartMigrationJobRequest extends \Google\Model
     {
+        protected $objectsFilterType = MigrationJobObjectsConfig::class;
+        protected $objectsFilterDataType = '';
+        /**
+         * Optional. If true, only failed objects will be restarted.
+         *
+         * @var bool
+         */
+        public $restartFailedObjects;
+        /**
+         * Optional. Restart the migration job without running prior configuration
+         * verification. Defaults to `false`.
+         *
+         * @var bool
+         */
+        public $skipValidation;
+        /**
+         * Optional. The object filter to apply to the migration job.
+         *
+         * @param MigrationJobObjectsConfig $objectsFilter
+         */
+        public function setObjectsFilter(MigrationJobObjectsConfig $objectsFilter)
+        {
+        }
+        /**
+         * @return MigrationJobObjectsConfig
+         */
+        public function getObjectsFilter()
+        {
+        }
+        /**
+         * Optional. If true, only failed objects will be restarted.
+         *
+         * @param bool $restartFailedObjects
+         */
+        public function setRestartFailedObjects($restartFailedObjects)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRestartFailedObjects()
+        {
+        }
+        /**
+         * Optional. Restart the migration job without running prior configuration
+         * verification. Defaults to `false`.
+         *
+         * @param bool $skipValidation
+         */
+        public function setSkipValidation($skipValidation)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSkipValidation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MigrationJobObjectsConfig
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\RestartMigrationJobRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getObjectsFilter()
-    {
-    }
-    /**
-     * Optional. If true, only failed objects will be restarted.
-     *
-     * @param bool $restartFailedObjects
-     */
-    public function setRestartFailedObjects($restartFailedObjects)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getRestartFailedObjects()
-    {
-    }
-    /**
-     * Optional. Restart the migration job without running prior configuration
-     * verification. Defaults to `false`.
-     *
-     * @param bool $skipValidation
-     */
-    public function setSkipValidation($skipValidation)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSkipValidation()
+    class Google_Service_DatabaseMigrationService_RestartMigrationJobRequest extends \Google\Service\DatabaseMigrationService\RestartMigrationJobRequest
     {
     }
 }

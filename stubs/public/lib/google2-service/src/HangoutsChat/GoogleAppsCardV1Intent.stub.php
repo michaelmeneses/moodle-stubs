@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class GoogleAppsCardV1Intent extends \Google\Collection
-{
-    protected $collection_key = 'extraData';
-    protected $extraDataType = GoogleAppsCardV1ExtraData::class;
-    protected $extraDataDataType = 'array';
-    /**
-     * @var string
-     */
-    public $intentAction;
-    /**
-     * @param GoogleAppsCardV1ExtraData[]
-     */
-    public function setExtraData($extraData)
+namespace Google\Service\HangoutsChat {
+    class GoogleAppsCardV1Intent extends \Google\Collection
     {
+        protected $collection_key = 'extraData';
+        protected $extraDataType = GoogleAppsCardV1ExtraData::class;
+        protected $extraDataDataType = 'array';
+        /**
+         * @var string
+         */
+        public $intentAction;
+        /**
+         * @param GoogleAppsCardV1ExtraData[]
+         */
+        public function setExtraData($extraData)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1ExtraData[]
+         */
+        public function getExtraData()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setIntentAction($intentAction)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIntentAction()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAppsCardV1ExtraData[]
+     * Runtime class alias of \Google\Service\HangoutsChat\GoogleAppsCardV1Intent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExtraData()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setIntentAction($intentAction)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIntentAction()
+    class Google_Service_HangoutsChat_GoogleAppsCardV1Intent extends \Google\Service\HangoutsChat\GoogleAppsCardV1Intent
     {
     }
 }

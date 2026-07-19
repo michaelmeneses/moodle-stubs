@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storagetransfer;
-
-class ListTransferJobsResponse extends \Google\Collection
-{
-    protected $collection_key = 'transferJobs';
-    /**
-     * The list next page token.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $transferJobsType = TransferJob::class;
-    protected $transferJobsDataType = 'array';
-    /**
-     * The list next page token.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Storagetransfer {
+    class ListTransferJobsResponse extends \Google\Collection
     {
+        protected $collection_key = 'transferJobs';
+        /**
+         * The list next page token.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $transferJobsType = TransferJob::class;
+        protected $transferJobsDataType = 'array';
+        /**
+         * The list next page token.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * A list of transfer jobs.
+         *
+         * @param TransferJob[] $transferJobs
+         */
+        public function setTransferJobs($transferJobs)
+        {
+        }
+        /**
+         * @return TransferJob[]
+         */
+        public function getTransferJobs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Storagetransfer\ListTransferJobsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * A list of transfer jobs.
-     *
-     * @param TransferJob[] $transferJobs
-     */
-    public function setTransferJobs($transferJobs)
-    {
-    }
-    /**
-     * @return TransferJob[]
-     */
-    public function getTransferJobs()
+    class Google_Service_Storagetransfer_ListTransferJobsResponse extends \Google\Service\Storagetransfer\ListTransferJobsResponse
     {
     }
 }

@@ -21,152 +21,161 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class StreamBlockData extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $deserialized;
-    /**
-     * @var string
-     */
-    public $diskSize;
-    /**
-     * @var string
-     */
-    public $executorId;
-    /**
-     * @var string
-     */
-    public $hostPort;
-    /**
-     * @var string
-     */
-    public $memSize;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $storageLevel;
-    /**
-     * @var bool
-     */
-    public $useDisk;
-    /**
-     * @var bool
-     */
-    public $useMemory;
-    /**
-     * @param bool $deserialized
-     */
-    public function setDeserialized($deserialized)
+namespace Google\Service\Dataproc {
+    class StreamBlockData extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $deserialized;
+        /**
+         * @var string
+         */
+        public $diskSize;
+        /**
+         * @var string
+         */
+        public $executorId;
+        /**
+         * @var string
+         */
+        public $hostPort;
+        /**
+         * @var string
+         */
+        public $memSize;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $storageLevel;
+        /**
+         * @var bool
+         */
+        public $useDisk;
+        /**
+         * @var bool
+         */
+        public $useMemory;
+        /**
+         * @param bool $deserialized
+         */
+        public function setDeserialized($deserialized)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDeserialized()
+        {
+        }
+        /**
+         * @param string $diskSize
+         */
+        public function setDiskSize($diskSize)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDiskSize()
+        {
+        }
+        /**
+         * @param string $executorId
+         */
+        public function setExecutorId($executorId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExecutorId()
+        {
+        }
+        /**
+         * @param string $hostPort
+         */
+        public function setHostPort($hostPort)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHostPort()
+        {
+        }
+        /**
+         * @param string $memSize
+         */
+        public function setMemSize($memSize)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMemSize()
+        {
+        }
+        /**
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string $storageLevel
+         */
+        public function setStorageLevel($storageLevel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStorageLevel()
+        {
+        }
+        /**
+         * @param bool $useDisk
+         */
+        public function setUseDisk($useDisk)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUseDisk()
+        {
+        }
+        /**
+         * @param bool $useMemory
+         */
+        public function setUseMemory($useMemory)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUseMemory()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Dataproc\StreamBlockData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeserialized()
-    {
-    }
-    /**
-     * @param string $diskSize
-     */
-    public function setDiskSize($diskSize)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDiskSize()
-    {
-    }
-    /**
-     * @param string $executorId
-     */
-    public function setExecutorId($executorId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExecutorId()
-    {
-    }
-    /**
-     * @param string $hostPort
-     */
-    public function setHostPort($hostPort)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHostPort()
-    {
-    }
-    /**
-     * @param string $memSize
-     */
-    public function setMemSize($memSize)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMemSize()
-    {
-    }
-    /**
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string $storageLevel
-     */
-    public function setStorageLevel($storageLevel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStorageLevel()
-    {
-    }
-    /**
-     * @param bool $useDisk
-     */
-    public function setUseDisk($useDisk)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUseDisk()
-    {
-    }
-    /**
-     * @param bool $useMemory
-     */
-    public function setUseMemory($useMemory)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUseMemory()
+    class Google_Service_Dataproc_StreamBlockData extends \Google\Service\Dataproc\StreamBlockData
     {
     }
 }

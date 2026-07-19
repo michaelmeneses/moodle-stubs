@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoFieldMappingConfig extends \Google\Collection
-{
-    protected $collection_key = 'mappedFields';
-    protected $mappedFieldsType = EnterpriseCrmEventbusProtoMappedField::class;
-    protected $mappedFieldsDataType = 'array';
-    /**
-     * @param EnterpriseCrmEventbusProtoMappedField[] $mappedFields
-     */
-    public function setMappedFields($mappedFields)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoFieldMappingConfig extends \Google\Collection
     {
+        protected $collection_key = 'mappedFields';
+        protected $mappedFieldsType = EnterpriseCrmEventbusProtoMappedField::class;
+        protected $mappedFieldsDataType = 'array';
+        /**
+         * @param EnterpriseCrmEventbusProtoMappedField[] $mappedFields
+         */
+        public function setMappedFields($mappedFields)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoMappedField[]
+         */
+        public function getMappedFields()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnterpriseCrmEventbusProtoMappedField[]
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoFieldMappingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMappedFields()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoFieldMappingConfig extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoFieldMappingConfig
     {
     }
 }

@@ -21,121 +21,130 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BinaryAuthorization;
-
-class CheckResult extends \Google\Model
-{
-    protected $allowlistResultType = AllowlistResult::class;
-    protected $allowlistResultDataType = '';
-    /**
-     * The name of the check.
-     *
-     * @var string
-     */
-    public $displayName;
-    protected $evaluationResultType = EvaluationResult::class;
-    protected $evaluationResultDataType = '';
-    /**
-     * Explanation of this check result.
-     *
-     * @var string
-     */
-    public $explanation;
-    /**
-     * The index of the check.
-     *
-     * @var string
-     */
-    public $index;
-    /**
-     * The type of the check.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * If the image was exempted by an allow_pattern in the check, contains the
-     * pattern that the image name matched.
-     *
-     * @param AllowlistResult $allowlistResult
-     */
-    public function setAllowlistResult(AllowlistResult $allowlistResult)
+namespace Google\Service\BinaryAuthorization {
+    class CheckResult extends \Google\Model
     {
+        protected $allowlistResultType = AllowlistResult::class;
+        protected $allowlistResultDataType = '';
+        /**
+         * The name of the check.
+         *
+         * @var string
+         */
+        public $displayName;
+        protected $evaluationResultType = EvaluationResult::class;
+        protected $evaluationResultDataType = '';
+        /**
+         * Explanation of this check result.
+         *
+         * @var string
+         */
+        public $explanation;
+        /**
+         * The index of the check.
+         *
+         * @var string
+         */
+        public $index;
+        /**
+         * The type of the check.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * If the image was exempted by an allow_pattern in the check, contains the
+         * pattern that the image name matched.
+         *
+         * @param AllowlistResult $allowlistResult
+         */
+        public function setAllowlistResult(AllowlistResult $allowlistResult)
+        {
+        }
+        /**
+         * @return AllowlistResult
+         */
+        public function getAllowlistResult()
+        {
+        }
+        /**
+         * The name of the check.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * If a check was evaluated, contains the result of the check.
+         *
+         * @param EvaluationResult $evaluationResult
+         */
+        public function setEvaluationResult(EvaluationResult $evaluationResult)
+        {
+        }
+        /**
+         * @return EvaluationResult
+         */
+        public function getEvaluationResult()
+        {
+        }
+        /**
+         * Explanation of this check result.
+         *
+         * @param string $explanation
+         */
+        public function setExplanation($explanation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExplanation()
+        {
+        }
+        /**
+         * The index of the check.
+         *
+         * @param string $index
+         */
+        public function setIndex($index)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIndex()
+        {
+        }
+        /**
+         * The type of the check.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AllowlistResult
+     * Runtime class alias of \Google\Service\BinaryAuthorization\CheckResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowlistResult()
-    {
-    }
-    /**
-     * The name of the check.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * If a check was evaluated, contains the result of the check.
-     *
-     * @param EvaluationResult $evaluationResult
-     */
-    public function setEvaluationResult(EvaluationResult $evaluationResult)
-    {
-    }
-    /**
-     * @return EvaluationResult
-     */
-    public function getEvaluationResult()
-    {
-    }
-    /**
-     * Explanation of this check result.
-     *
-     * @param string $explanation
-     */
-    public function setExplanation($explanation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExplanation()
-    {
-    }
-    /**
-     * The index of the check.
-     *
-     * @param string $index
-     */
-    public function setIndex($index)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIndex()
-    {
-    }
-    /**
-     * The type of the check.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_BinaryAuthorization_CheckResult extends \Google\Service\BinaryAuthorization\CheckResult
     {
     }
 }

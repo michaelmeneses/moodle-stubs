@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2DatastoreKey extends \Google\Model
-{
-    protected $entityKeyType = GooglePrivacyDlpV2Key::class;
-    protected $entityKeyDataType = '';
-    /**
-     * Datastore entity key.
-     *
-     * @param GooglePrivacyDlpV2Key $entityKey
-     */
-    public function setEntityKey(GooglePrivacyDlpV2Key $entityKey)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2DatastoreKey extends \Google\Model
     {
+        protected $entityKeyType = GooglePrivacyDlpV2Key::class;
+        protected $entityKeyDataType = '';
+        /**
+         * Datastore entity key.
+         *
+         * @param GooglePrivacyDlpV2Key $entityKey
+         */
+        public function setEntityKey(GooglePrivacyDlpV2Key $entityKey)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2Key
+         */
+        public function getEntityKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2Key
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2DatastoreKey registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntityKey()
+    class Google_Service_DLP_GooglePrivacyDlpV2DatastoreKey extends \Google\Service\DLP\GooglePrivacyDlpV2DatastoreKey
     {
     }
 }

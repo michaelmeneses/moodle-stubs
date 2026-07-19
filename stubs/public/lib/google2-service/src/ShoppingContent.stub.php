@@ -21,67 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for ShoppingContent (v2.1).
- *
- * <p>
- * This API is deprecated. Please use Merchant API instead:
- * https://developers.google.com/merchant/api.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://developers.google.com/shopping-content/v2/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class ShoppingContent extends \Google\Service
-{
-    /** Manage your product listings and accounts for Google Shopping. */
-    const CONTENT = "https://www.googleapis.com/auth/content";
-    public $accounts;
-    public $accounts_credentials;
-    public $accounts_labels;
-    public $accounts_returncarrier;
-    public $accountstatuses;
-    public $accounttax;
-    public $collections;
-    public $collectionstatuses;
-    public $conversionsources;
-    public $csses;
-    public $datafeeds;
-    public $datafeedstatuses;
-    public $freelistingsprogram;
-    public $freelistingsprogram_checkoutsettings;
-    public $liasettings;
-    public $localinventory;
-    public $merchantsupport;
-    public $ordertrackingsignals;
-    public $pos;
-    public $productdeliverytime;
-    public $products;
-    public $productstatuses;
-    public $promotions;
-    public $pubsubnotificationsettings;
-    public $quotas;
-    public $recommendations;
-    public $regionalinventory;
-    public $regions;
-    public $reports;
-    public $returnpolicyonline;
-    public $shippingsettings;
-    public $shoppingadsprogram;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the ShoppingContent service.
+     * Service definition for ShoppingContent (v2.1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * This API is deprecated. Please use Merchant API instead:
+     * https://developers.google.com/merchant/api.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://developers.google.com/shopping-content/v2/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class ShoppingContent extends \Google\Service
+    {
+        /** Manage your product listings and accounts for Google Shopping. */
+        const CONTENT = "https://www.googleapis.com/auth/content";
+        public $accounts;
+        public $accounts_credentials;
+        public $accounts_labels;
+        public $accounts_returncarrier;
+        public $accountstatuses;
+        public $accounttax;
+        public $collections;
+        public $collectionstatuses;
+        public $conversionsources;
+        public $csses;
+        public $datafeeds;
+        public $datafeedstatuses;
+        public $freelistingsprogram;
+        public $freelistingsprogram_checkoutsettings;
+        public $liasettings;
+        public $localinventory;
+        public $merchantsupport;
+        public $ordertrackingsignals;
+        public $pos;
+        public $productdeliverytime;
+        public $products;
+        public $productstatuses;
+        public $promotions;
+        public $pubsubnotificationsettings;
+        public $quotas;
+        public $recommendations;
+        public $regionalinventory;
+        public $regions;
+        public $reports;
+        public $returnpolicyonline;
+        public $shippingsettings;
+        public $shoppingadsprogram;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the ShoppingContent service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ShoppingContent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ShoppingContent extends \Google\Service\ShoppingContent
     {
     }
 }

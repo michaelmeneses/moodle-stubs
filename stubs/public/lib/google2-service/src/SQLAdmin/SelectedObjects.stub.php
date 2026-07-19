@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class SelectedObjects extends \Google\Model
-{
-    /**
-     * Required. The name of the database to migrate.
-     *
-     * @var string
-     */
-    public $database;
-    /**
-     * Required. The name of the database to migrate.
-     *
-     * @param string $database
-     */
-    public function setDatabase($database)
+namespace Google\Service\SQLAdmin {
+    class SelectedObjects extends \Google\Model
     {
+        /**
+         * Required. The name of the database to migrate.
+         *
+         * @var string
+         */
+        public $database;
+        /**
+         * Required. The name of the database to migrate.
+         *
+         * @param string $database
+         */
+        public function setDatabase($database)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatabase()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SQLAdmin\SelectedObjects registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatabase()
+    class Google_Service_SQLAdmin_SelectedObjects extends \Google\Service\SQLAdmin\SelectedObjects
     {
     }
 }

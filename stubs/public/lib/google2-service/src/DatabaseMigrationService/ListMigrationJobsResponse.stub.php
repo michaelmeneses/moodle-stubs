@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class ListMigrationJobsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $migrationJobsType = MigrationJob::class;
-    protected $migrationJobsDataType = 'array';
-    /**
-     * A token which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * The list of migration jobs objects.
-     *
-     * @param MigrationJob[] $migrationJobs
-     */
-    public function setMigrationJobs($migrationJobs)
+namespace Google\Service\DatabaseMigrationService {
+    class ListMigrationJobsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $migrationJobsType = MigrationJob::class;
+        protected $migrationJobsDataType = 'array';
+        /**
+         * A token which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * The list of migration jobs objects.
+         *
+         * @param MigrationJob[] $migrationJobs
+         */
+        public function setMigrationJobs($migrationJobs)
+        {
+        }
+        /**
+         * @return MigrationJob[]
+         */
+        public function getMigrationJobs()
+        {
+        }
+        /**
+         * A token which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MigrationJob[]
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\ListMigrationJobsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMigrationJobs()
-    {
-    }
-    /**
-     * A token which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_DatabaseMigrationService_ListMigrationJobsResponse extends \Google\Service\DatabaseMigrationService\ListMigrationJobsResponse
     {
     }
 }

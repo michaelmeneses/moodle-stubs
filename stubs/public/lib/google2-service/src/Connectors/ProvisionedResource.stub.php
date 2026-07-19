@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class ProvisionedResource extends \Google\Model
-{
-    /**
-     * Type of the resource. This can be either a GCP resource or a custom one
-     * (e.g. another cloud provider's VM). For GCP compute resources use singular
-     * form of the names listed in GCP compute API documentation
-     * (https://cloud.google.com/compute/docs/reference/rest/v1/), prefixed with
-     * 'compute-', for example: 'compute-instance', 'compute-disk', 'compute-
-     * autoscaler'.
-     *
-     * @var string
-     */
-    public $resourceType;
-    /**
-     * URL identifying the resource, e.g.
-     * "https://www.googleapis.com/compute/v1/projects/...)".
-     *
-     * @var string
-     */
-    public $resourceUrl;
-    /**
-     * Type of the resource. This can be either a GCP resource or a custom one
-     * (e.g. another cloud provider's VM). For GCP compute resources use singular
-     * form of the names listed in GCP compute API documentation
-     * (https://cloud.google.com/compute/docs/reference/rest/v1/), prefixed with
-     * 'compute-', for example: 'compute-instance', 'compute-disk', 'compute-
-     * autoscaler'.
-     *
-     * @param string $resourceType
-     */
-    public function setResourceType($resourceType)
+namespace Google\Service\Connectors {
+    class ProvisionedResource extends \Google\Model
     {
+        /**
+         * Type of the resource. This can be either a GCP resource or a custom one
+         * (e.g. another cloud provider's VM). For GCP compute resources use singular
+         * form of the names listed in GCP compute API documentation
+         * (https://cloud.google.com/compute/docs/reference/rest/v1/), prefixed with
+         * 'compute-', for example: 'compute-instance', 'compute-disk', 'compute-
+         * autoscaler'.
+         *
+         * @var string
+         */
+        public $resourceType;
+        /**
+         * URL identifying the resource, e.g.
+         * "https://www.googleapis.com/compute/v1/projects/...)".
+         *
+         * @var string
+         */
+        public $resourceUrl;
+        /**
+         * Type of the resource. This can be either a GCP resource or a custom one
+         * (e.g. another cloud provider's VM). For GCP compute resources use singular
+         * form of the names listed in GCP compute API documentation
+         * (https://cloud.google.com/compute/docs/reference/rest/v1/), prefixed with
+         * 'compute-', for example: 'compute-instance', 'compute-disk', 'compute-
+         * autoscaler'.
+         *
+         * @param string $resourceType
+         */
+        public function setResourceType($resourceType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceType()
+        {
+        }
+        /**
+         * URL identifying the resource, e.g.
+         * "https://www.googleapis.com/compute/v1/projects/...)".
+         *
+         * @param string $resourceUrl
+         */
+        public function setResourceUrl($resourceUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Connectors\ProvisionedResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResourceType()
-    {
-    }
-    /**
-     * URL identifying the resource, e.g.
-     * "https://www.googleapis.com/compute/v1/projects/...)".
-     *
-     * @param string $resourceUrl
-     */
-    public function setResourceUrl($resourceUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceUrl()
+    class Google_Service_Connectors_ProvisionedResource extends \Google\Service\Connectors\ProvisionedResource
     {
     }
 }

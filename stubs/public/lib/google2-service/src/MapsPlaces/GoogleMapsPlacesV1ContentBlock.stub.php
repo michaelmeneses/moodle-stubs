@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MapsPlaces;
-
-class GoogleMapsPlacesV1ContentBlock extends \Google\Collection
-{
-    protected $collection_key = 'referencedPlaces';
-    protected $contentType = GoogleTypeLocalizedText::class;
-    protected $contentDataType = '';
-    /**
-     * The list of resource names of the referenced places. This name can be used
-     * in other APIs that accept Place resource names.
-     *
-     * @var string[]
-     */
-    public $referencedPlaces;
-    /**
-     * Content related to the topic.
-     *
-     * @param GoogleTypeLocalizedText $content
-     */
-    public function setContent(GoogleTypeLocalizedText $content)
+namespace Google\Service\MapsPlaces {
+    class GoogleMapsPlacesV1ContentBlock extends \Google\Collection
     {
+        protected $collection_key = 'referencedPlaces';
+        protected $contentType = GoogleTypeLocalizedText::class;
+        protected $contentDataType = '';
+        /**
+         * The list of resource names of the referenced places. This name can be used
+         * in other APIs that accept Place resource names.
+         *
+         * @var string[]
+         */
+        public $referencedPlaces;
+        /**
+         * Content related to the topic.
+         *
+         * @param GoogleTypeLocalizedText $content
+         */
+        public function setContent(GoogleTypeLocalizedText $content)
+        {
+        }
+        /**
+         * @return GoogleTypeLocalizedText
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * The list of resource names of the referenced places. This name can be used
+         * in other APIs that accept Place resource names.
+         *
+         * @param string[] $referencedPlaces
+         */
+        public function setReferencedPlaces($referencedPlaces)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getReferencedPlaces()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleTypeLocalizedText
+     * Runtime class alias of \Google\Service\MapsPlaces\GoogleMapsPlacesV1ContentBlock registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
-    {
-    }
-    /**
-     * The list of resource names of the referenced places. This name can be used
-     * in other APIs that accept Place resource names.
-     *
-     * @param string[] $referencedPlaces
-     */
-    public function setReferencedPlaces($referencedPlaces)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getReferencedPlaces()
+    class Google_Service_MapsPlaces_GoogleMapsPlacesV1ContentBlock extends \Google\Service\MapsPlaces\GoogleMapsPlacesV1ContentBlock
     {
     }
 }

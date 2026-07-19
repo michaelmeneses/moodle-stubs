@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class CloudReliabilityZicyWs3DataplaneProtosCloudAsset extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $assetName;
-    /**
-     * @var string
-     */
-    public $assetType;
-    /**
-     * @param string
-     */
-    public function setAssetName($assetName)
+namespace Google\Service\CloudDataplex {
+    class CloudReliabilityZicyWs3DataplaneProtosCloudAsset extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $assetName;
+        /**
+         * @var string
+         */
+        public $assetType;
+        /**
+         * @param string
+         */
+        public function setAssetName($assetName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAssetName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setAssetType($assetType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAssetType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\CloudReliabilityZicyWs3DataplaneProtosCloudAsset registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssetName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setAssetType($assetType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAssetType()
+    class Google_Service_CloudDataplex_CloudReliabilityZicyWs3DataplaneProtosCloudAsset extends \Google\Service\CloudDataplex\CloudReliabilityZicyWs3DataplaneProtosCloudAsset
     {
     }
 }

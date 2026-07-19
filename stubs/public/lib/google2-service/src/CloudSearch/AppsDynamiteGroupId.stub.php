@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteGroupId extends \Google\Model
-{
-    protected $dmIdType = AppsDynamiteDmId::class;
-    protected $dmIdDataType = '';
-    protected $spaceIdType = AppsDynamiteSpaceId::class;
-    protected $spaceIdDataType = '';
-    /**
-     * @param AppsDynamiteDmId
-     */
-    public function setDmId(AppsDynamiteDmId $dmId)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteGroupId extends \Google\Model
     {
+        protected $dmIdType = AppsDynamiteDmId::class;
+        protected $dmIdDataType = '';
+        protected $spaceIdType = AppsDynamiteSpaceId::class;
+        protected $spaceIdDataType = '';
+        /**
+         * @param AppsDynamiteDmId
+         */
+        public function setDmId(AppsDynamiteDmId $dmId)
+        {
+        }
+        /**
+         * @return AppsDynamiteDmId
+         */
+        public function getDmId()
+        {
+        }
+        /**
+         * @param AppsDynamiteSpaceId
+         */
+        public function setSpaceId(AppsDynamiteSpaceId $spaceId)
+        {
+        }
+        /**
+         * @return AppsDynamiteSpaceId
+         */
+        public function getSpaceId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteDmId
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteGroupId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDmId()
-    {
-    }
-    /**
-     * @param AppsDynamiteSpaceId
-     */
-    public function setSpaceId(AppsDynamiteSpaceId $spaceId)
-    {
-    }
-    /**
-     * @return AppsDynamiteSpaceId
-     */
-    public function getSpaceId()
+    class Google_Service_CloudSearch_AppsDynamiteGroupId extends \Google\Service\CloudSearch\AppsDynamiteGroupId
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class LogEntry extends \Google\Model
-{
-    protected $cloudLoggingEntryType = CloudLoggingEntry::class;
-    protected $cloudLoggingEntryDataType = '';
-    /**
-     * An individual entry in a log stored in Cloud Logging.
-     *
-     * @param CloudLoggingEntry $cloudLoggingEntry
-     */
-    public function setCloudLoggingEntry(CloudLoggingEntry $cloudLoggingEntry)
+namespace Google\Service\SecurityCommandCenter {
+    class LogEntry extends \Google\Model
     {
+        protected $cloudLoggingEntryType = CloudLoggingEntry::class;
+        protected $cloudLoggingEntryDataType = '';
+        /**
+         * An individual entry in a log stored in Cloud Logging.
+         *
+         * @param CloudLoggingEntry $cloudLoggingEntry
+         */
+        public function setCloudLoggingEntry(CloudLoggingEntry $cloudLoggingEntry)
+        {
+        }
+        /**
+         * @return CloudLoggingEntry
+         */
+        public function getCloudLoggingEntry()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloudLoggingEntry
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\LogEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudLoggingEntry()
+    class Google_Service_SecurityCommandCenter_LogEntry extends \Google\Service\SecurityCommandCenter\LogEntry
     {
     }
 }

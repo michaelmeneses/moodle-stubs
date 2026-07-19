@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class GrafeasV1beta1PackageDetails extends \Google\Model
-{
-    protected $installationType = Installation::class;
-    protected $installationDataType = '';
-    /**
-     * @param Installation
-     */
-    public function setInstallation(Installation $installation)
+namespace Google\Service\ContainerAnalysis {
+    class GrafeasV1beta1PackageDetails extends \Google\Model
     {
+        protected $installationType = Installation::class;
+        protected $installationDataType = '';
+        /**
+         * @param Installation
+         */
+        public function setInstallation(Installation $installation)
+        {
+        }
+        /**
+         * @return Installation
+         */
+        public function getInstallation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Installation
+     * Runtime class alias of \Google\Service\ContainerAnalysis\GrafeasV1beta1PackageDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstallation()
+    class Google_Service_ContainerAnalysis_GrafeasV1beta1PackageDetails extends \Google\Service\ContainerAnalysis\GrafeasV1beta1PackageDetails
     {
     }
 }

@@ -21,145 +21,154 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity;
-
-class DnsThreatDetector extends \Google\Collection
-{
-    /**
-     * An unspecified provider.
-     */
-    public const PROVIDER_PROVIDER_UNSPECIFIED = 'PROVIDER_UNSPECIFIED';
-    /**
-     * The Infoblox DNS threat detector provider.
-     */
-    public const PROVIDER_INFOBLOX = 'INFOBLOX';
-    protected $collection_key = 'excludedNetworks';
-    /**
-     * Output only. Create time stamp.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Optional. A list of network resource names which aren't monitored by this
-     * DnsThreatDetector. Example:
-     * `projects/PROJECT_ID/global/networks/NETWORK_NAME`.
-     *
-     * @var string[]
-     */
-    public $excludedNetworks;
-    /**
-     * Optional. Any labels associated with the DnsThreatDetector, listed as key
-     * value pairs.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Immutable. Identifier. Name of the DnsThreatDetector resource.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. The provider used for DNS threat analysis.
-     *
-     * @var string
-     */
-    public $provider;
-    /**
-     * Output only. Update time stamp.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. Create time stamp.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\NetworkSecurity {
+    class DnsThreatDetector extends \Google\Collection
     {
+        /**
+         * An unspecified provider.
+         */
+        public const PROVIDER_PROVIDER_UNSPECIFIED = 'PROVIDER_UNSPECIFIED';
+        /**
+         * The Infoblox DNS threat detector provider.
+         */
+        public const PROVIDER_INFOBLOX = 'INFOBLOX';
+        protected $collection_key = 'excludedNetworks';
+        /**
+         * Output only. Create time stamp.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Optional. A list of network resource names which aren't monitored by this
+         * DnsThreatDetector. Example:
+         * `projects/PROJECT_ID/global/networks/NETWORK_NAME`.
+         *
+         * @var string[]
+         */
+        public $excludedNetworks;
+        /**
+         * Optional. Any labels associated with the DnsThreatDetector, listed as key
+         * value pairs.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Immutable. Identifier. Name of the DnsThreatDetector resource.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. The provider used for DNS threat analysis.
+         *
+         * @var string
+         */
+        public $provider;
+        /**
+         * Output only. Update time stamp.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. Create time stamp.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. A list of network resource names which aren't monitored by this
+         * DnsThreatDetector. Example:
+         * `projects/PROJECT_ID/global/networks/NETWORK_NAME`.
+         *
+         * @param string[] $excludedNetworks
+         */
+        public function setExcludedNetworks($excludedNetworks)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExcludedNetworks()
+        {
+        }
+        /**
+         * Optional. Any labels associated with the DnsThreatDetector, listed as key
+         * value pairs.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Immutable. Identifier. Name of the DnsThreatDetector resource.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. The provider used for DNS threat analysis.
+         *
+         * Accepted values: PROVIDER_UNSPECIFIED, INFOBLOX
+         *
+         * @param self::PROVIDER_* $provider
+         */
+        public function setProvider($provider)
+        {
+        }
+        /**
+         * @return self::PROVIDER_*
+         */
+        public function getProvider()
+        {
+        }
+        /**
+         * Output only. Update time stamp.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkSecurity\DnsThreatDetector registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. A list of network resource names which aren't monitored by this
-     * DnsThreatDetector. Example:
-     * `projects/PROJECT_ID/global/networks/NETWORK_NAME`.
-     *
-     * @param string[] $excludedNetworks
-     */
-    public function setExcludedNetworks($excludedNetworks)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getExcludedNetworks()
-    {
-    }
-    /**
-     * Optional. Any labels associated with the DnsThreatDetector, listed as key
-     * value pairs.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Immutable. Identifier. Name of the DnsThreatDetector resource.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Required. The provider used for DNS threat analysis.
-     *
-     * Accepted values: PROVIDER_UNSPECIFIED, INFOBLOX
-     *
-     * @param self::PROVIDER_* $provider
-     */
-    public function setProvider($provider)
-    {
-    }
-    /**
-     * @return self::PROVIDER_*
-     */
-    public function getProvider()
-    {
-    }
-    /**
-     * Output only. Update time stamp.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_NetworkSecurity_DnsThreatDetector extends \Google\Service\NetworkSecurity\DnsThreatDetector
     {
     }
 }

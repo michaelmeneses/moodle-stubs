@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Area120Tables;
-
-class UpdateRowRequest extends \Google\Model
-{
-    /**
-     * Defaults to user entered text.
-     */
-    public const VIEW_VIEW_UNSPECIFIED = 'VIEW_UNSPECIFIED';
-    /**
-     * Uses internally generated column id to identify values.
-     */
-    public const VIEW_COLUMN_ID_VIEW = 'COLUMN_ID_VIEW';
-    protected $rowType = Row::class;
-    protected $rowDataType = '';
-    /**
-     * The list of fields to update.
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * Optional. Column key to use for values in the row. Defaults to user entered
-     * name.
-     *
-     * @var string
-     */
-    public $view;
-    /**
-     * Required. The row to update.
-     *
-     * @param Row $row
-     */
-    public function setRow(Row $row)
+namespace Google\Service\Area120Tables {
+    class UpdateRowRequest extends \Google\Model
     {
+        /**
+         * Defaults to user entered text.
+         */
+        public const VIEW_VIEW_UNSPECIFIED = 'VIEW_UNSPECIFIED';
+        /**
+         * Uses internally generated column id to identify values.
+         */
+        public const VIEW_COLUMN_ID_VIEW = 'COLUMN_ID_VIEW';
+        protected $rowType = Row::class;
+        protected $rowDataType = '';
+        /**
+         * The list of fields to update.
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * Optional. Column key to use for values in the row. Defaults to user entered
+         * name.
+         *
+         * @var string
+         */
+        public $view;
+        /**
+         * Required. The row to update.
+         *
+         * @param Row $row
+         */
+        public function setRow(Row $row)
+        {
+        }
+        /**
+         * @return Row
+         */
+        public function getRow()
+        {
+        }
+        /**
+         * The list of fields to update.
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
+        /**
+         * Optional. Column key to use for values in the row. Defaults to user entered
+         * name.
+         *
+         * Accepted values: VIEW_UNSPECIFIED, COLUMN_ID_VIEW
+         *
+         * @param self::VIEW_* $view
+         */
+        public function setView($view)
+        {
+        }
+        /**
+         * @return self::VIEW_*
+         */
+        public function getView()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Row
+     * Runtime class alias of \Google\Service\Area120Tables\UpdateRowRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRow()
-    {
-    }
-    /**
-     * The list of fields to update.
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
-    {
-    }
-    /**
-     * Optional. Column key to use for values in the row. Defaults to user entered
-     * name.
-     *
-     * Accepted values: VIEW_UNSPECIFIED, COLUMN_ID_VIEW
-     *
-     * @param self::VIEW_* $view
-     */
-    public function setView($view)
-    {
-    }
-    /**
-     * @return self::VIEW_*
-     */
-    public function getView()
+    class Google_Service_Area120Tables_UpdateRowRequest extends \Google\Service\Area120Tables\UpdateRowRequest
     {
     }
 }

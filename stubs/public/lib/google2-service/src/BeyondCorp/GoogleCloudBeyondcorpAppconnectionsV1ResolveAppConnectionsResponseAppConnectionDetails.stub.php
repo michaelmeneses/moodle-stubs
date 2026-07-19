@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class GoogleCloudBeyondcorpAppconnectionsV1ResolveAppConnectionsResponseAppConnectionDetails extends \Google\Collection
-{
-    protected $collection_key = 'recentMigVms';
-    protected $appConnectionType = GoogleCloudBeyondcorpAppconnectionsV1AppConnection::class;
-    protected $appConnectionDataType = '';
-    /**
-     * If type=GCP_REGIONAL_MIG, contains most recent VM instances, like `https://
-     * www.googleapis.com/compute/v1/projects/{project_id}/zones/{zone_id}/instanc
-     * es/{instance_id}`.
-     *
-     * @var string[]
-     */
-    public $recentMigVms;
-    /**
-     * A BeyondCorp AppConnection in the project.
-     *
-     * @param GoogleCloudBeyondcorpAppconnectionsV1AppConnection $appConnection
-     */
-    public function setAppConnection(GoogleCloudBeyondcorpAppconnectionsV1AppConnection $appConnection)
+namespace Google\Service\BeyondCorp {
+    class GoogleCloudBeyondcorpAppconnectionsV1ResolveAppConnectionsResponseAppConnectionDetails extends \Google\Collection
     {
+        protected $collection_key = 'recentMigVms';
+        protected $appConnectionType = GoogleCloudBeyondcorpAppconnectionsV1AppConnection::class;
+        protected $appConnectionDataType = '';
+        /**
+         * If type=GCP_REGIONAL_MIG, contains most recent VM instances, like `https://
+         * www.googleapis.com/compute/v1/projects/{project_id}/zones/{zone_id}/instanc
+         * es/{instance_id}`.
+         *
+         * @var string[]
+         */
+        public $recentMigVms;
+        /**
+         * A BeyondCorp AppConnection in the project.
+         *
+         * @param GoogleCloudBeyondcorpAppconnectionsV1AppConnection $appConnection
+         */
+        public function setAppConnection(GoogleCloudBeyondcorpAppconnectionsV1AppConnection $appConnection)
+        {
+        }
+        /**
+         * @return GoogleCloudBeyondcorpAppconnectionsV1AppConnection
+         */
+        public function getAppConnection()
+        {
+        }
+        /**
+         * If type=GCP_REGIONAL_MIG, contains most recent VM instances, like `https://
+         * www.googleapis.com/compute/v1/projects/{project_id}/zones/{zone_id}/instanc
+         * es/{instance_id}`.
+         *
+         * @param string[] $recentMigVms
+         */
+        public function setRecentMigVms($recentMigVms)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRecentMigVms()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudBeyondcorpAppconnectionsV1AppConnection
+     * Runtime class alias of \Google\Service\BeyondCorp\GoogleCloudBeyondcorpAppconnectionsV1ResolveAppConnectionsResponseAppConnectionDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppConnection()
-    {
-    }
-    /**
-     * If type=GCP_REGIONAL_MIG, contains most recent VM instances, like `https://
-     * www.googleapis.com/compute/v1/projects/{project_id}/zones/{zone_id}/instanc
-     * es/{instance_id}`.
-     *
-     * @param string[] $recentMigVms
-     */
-    public function setRecentMigVms($recentMigVms)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRecentMigVms()
+    class Google_Service_BeyondCorp_GoogleCloudBeyondcorpAppconnectionsV1ResolveAppConnectionsResponseAppConnectionDetails extends \Google\Service\BeyondCorp\GoogleCloudBeyondcorpAppconnectionsV1ResolveAppConnectionsResponseAppConnectionDetails
     {
     }
 }

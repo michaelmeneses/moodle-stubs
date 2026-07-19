@@ -21,286 +21,295 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryConnectionService;
-
-class Connection extends \Google\Model
-{
-    protected $awsType = AwsProperties::class;
-    protected $awsDataType = '';
-    protected $azureType = AzureProperties::class;
-    protected $azureDataType = '';
-    protected $cloudResourceType = CloudResourceProperties::class;
-    protected $cloudResourceDataType = '';
-    protected $cloudSpannerType = CloudSpannerProperties::class;
-    protected $cloudSpannerDataType = '';
-    protected $cloudSqlType = CloudSqlProperties::class;
-    protected $cloudSqlDataType = '';
-    protected $configurationType = ConnectorConfiguration::class;
-    protected $configurationDataType = '';
-    /**
-     * Output only. The creation timestamp of the connection.
-     *
-     * @var string
-     */
-    public $creationTime;
-    /**
-     * User provided description.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * User provided display name for the connection.
-     *
-     * @var string
-     */
-    public $friendlyName;
-    /**
-     * Output only. True, if credential is configured for this connection.
-     *
-     * @var bool
-     */
-    public $hasCredential;
-    /**
-     * Optional. The Cloud KMS key that is used for credentials encryption. If
-     * omitted, internal Google owned encryption keys are used. Example: `projects
-     * /[kms_project_id]/locations/[region]/keyRings/[key_region]/cryptoKeys/[key]
-     * `
-     *
-     * @var string
-     */
-    public $kmsKeyName;
-    /**
-     * Output only. The last update timestamp of the connection.
-     *
-     * @var string
-     */
-    public $lastModifiedTime;
-    /**
-     * Output only. The resource name of the connection in the form of:
-     * `projects/{project_id}/locations/{location_id}/connections/{connection_id}`
-     *
-     * @var string
-     */
-    public $name;
-    protected $salesforceDataCloudType = SalesforceDataCloudProperties::class;
-    protected $salesforceDataCloudDataType = '';
-    protected $sparkType = SparkProperties::class;
-    protected $sparkDataType = '';
-    /**
-     * Amazon Web Services (AWS) properties.
-     *
-     * @param AwsProperties $aws
-     */
-    public function setAws(AwsProperties $aws)
+namespace Google\Service\BigQueryConnectionService {
+    class Connection extends \Google\Model
     {
+        protected $awsType = AwsProperties::class;
+        protected $awsDataType = '';
+        protected $azureType = AzureProperties::class;
+        protected $azureDataType = '';
+        protected $cloudResourceType = CloudResourceProperties::class;
+        protected $cloudResourceDataType = '';
+        protected $cloudSpannerType = CloudSpannerProperties::class;
+        protected $cloudSpannerDataType = '';
+        protected $cloudSqlType = CloudSqlProperties::class;
+        protected $cloudSqlDataType = '';
+        protected $configurationType = ConnectorConfiguration::class;
+        protected $configurationDataType = '';
+        /**
+         * Output only. The creation timestamp of the connection.
+         *
+         * @var string
+         */
+        public $creationTime;
+        /**
+         * User provided description.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * User provided display name for the connection.
+         *
+         * @var string
+         */
+        public $friendlyName;
+        /**
+         * Output only. True, if credential is configured for this connection.
+         *
+         * @var bool
+         */
+        public $hasCredential;
+        /**
+         * Optional. The Cloud KMS key that is used for credentials encryption. If
+         * omitted, internal Google owned encryption keys are used. Example: `projects
+         * /[kms_project_id]/locations/[region]/keyRings/[key_region]/cryptoKeys/[key]
+         * `
+         *
+         * @var string
+         */
+        public $kmsKeyName;
+        /**
+         * Output only. The last update timestamp of the connection.
+         *
+         * @var string
+         */
+        public $lastModifiedTime;
+        /**
+         * Output only. The resource name of the connection in the form of:
+         * `projects/{project_id}/locations/{location_id}/connections/{connection_id}`
+         *
+         * @var string
+         */
+        public $name;
+        protected $salesforceDataCloudType = SalesforceDataCloudProperties::class;
+        protected $salesforceDataCloudDataType = '';
+        protected $sparkType = SparkProperties::class;
+        protected $sparkDataType = '';
+        /**
+         * Amazon Web Services (AWS) properties.
+         *
+         * @param AwsProperties $aws
+         */
+        public function setAws(AwsProperties $aws)
+        {
+        }
+        /**
+         * @return AwsProperties
+         */
+        public function getAws()
+        {
+        }
+        /**
+         * Azure properties.
+         *
+         * @param AzureProperties $azure
+         */
+        public function setAzure(AzureProperties $azure)
+        {
+        }
+        /**
+         * @return AzureProperties
+         */
+        public function getAzure()
+        {
+        }
+        /**
+         * Cloud Resource properties.
+         *
+         * @param CloudResourceProperties $cloudResource
+         */
+        public function setCloudResource(CloudResourceProperties $cloudResource)
+        {
+        }
+        /**
+         * @return CloudResourceProperties
+         */
+        public function getCloudResource()
+        {
+        }
+        /**
+         * Cloud Spanner properties.
+         *
+         * @param CloudSpannerProperties $cloudSpanner
+         */
+        public function setCloudSpanner(CloudSpannerProperties $cloudSpanner)
+        {
+        }
+        /**
+         * @return CloudSpannerProperties
+         */
+        public function getCloudSpanner()
+        {
+        }
+        /**
+         * Cloud SQL properties.
+         *
+         * @param CloudSqlProperties $cloudSql
+         */
+        public function setCloudSql(CloudSqlProperties $cloudSql)
+        {
+        }
+        /**
+         * @return CloudSqlProperties
+         */
+        public function getCloudSql()
+        {
+        }
+        /**
+         * Optional. Connector configuration.
+         *
+         * @param ConnectorConfiguration $configuration
+         */
+        public function setConfiguration(ConnectorConfiguration $configuration)
+        {
+        }
+        /**
+         * @return ConnectorConfiguration
+         */
+        public function getConfiguration()
+        {
+        }
+        /**
+         * Output only. The creation timestamp of the connection.
+         *
+         * @param string $creationTime
+         */
+        public function setCreationTime($creationTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreationTime()
+        {
+        }
+        /**
+         * User provided description.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * User provided display name for the connection.
+         *
+         * @param string $friendlyName
+         */
+        public function setFriendlyName($friendlyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFriendlyName()
+        {
+        }
+        /**
+         * Output only. True, if credential is configured for this connection.
+         *
+         * @param bool $hasCredential
+         */
+        public function setHasCredential($hasCredential)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHasCredential()
+        {
+        }
+        /**
+         * Optional. The Cloud KMS key that is used for credentials encryption. If
+         * omitted, internal Google owned encryption keys are used. Example: `projects
+         * /[kms_project_id]/locations/[region]/keyRings/[key_region]/cryptoKeys/[key]
+         * `
+         *
+         * @param string $kmsKeyName
+         */
+        public function setKmsKeyName($kmsKeyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKmsKeyName()
+        {
+        }
+        /**
+         * Output only. The last update timestamp of the connection.
+         *
+         * @param string $lastModifiedTime
+         */
+        public function setLastModifiedTime($lastModifiedTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastModifiedTime()
+        {
+        }
+        /**
+         * Output only. The resource name of the connection in the form of:
+         * `projects/{project_id}/locations/{location_id}/connections/{connection_id}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. Salesforce DataCloud properties. This field is intended for use
+         * only by Salesforce partner projects. This field contains properties for
+         * your Salesforce DataCloud connection.
+         *
+         * @param SalesforceDataCloudProperties $salesforceDataCloud
+         */
+        public function setSalesforceDataCloud(SalesforceDataCloudProperties $salesforceDataCloud)
+        {
+        }
+        /**
+         * @return SalesforceDataCloudProperties
+         */
+        public function getSalesforceDataCloud()
+        {
+        }
+        /**
+         * Spark properties.
+         *
+         * @param SparkProperties $spark
+         */
+        public function setSpark(SparkProperties $spark)
+        {
+        }
+        /**
+         * @return SparkProperties
+         */
+        public function getSpark()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AwsProperties
+     * Runtime class alias of \Google\Service\BigQueryConnectionService\Connection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAws()
-    {
-    }
-    /**
-     * Azure properties.
-     *
-     * @param AzureProperties $azure
-     */
-    public function setAzure(AzureProperties $azure)
-    {
-    }
-    /**
-     * @return AzureProperties
-     */
-    public function getAzure()
-    {
-    }
-    /**
-     * Cloud Resource properties.
-     *
-     * @param CloudResourceProperties $cloudResource
-     */
-    public function setCloudResource(CloudResourceProperties $cloudResource)
-    {
-    }
-    /**
-     * @return CloudResourceProperties
-     */
-    public function getCloudResource()
-    {
-    }
-    /**
-     * Cloud Spanner properties.
-     *
-     * @param CloudSpannerProperties $cloudSpanner
-     */
-    public function setCloudSpanner(CloudSpannerProperties $cloudSpanner)
-    {
-    }
-    /**
-     * @return CloudSpannerProperties
-     */
-    public function getCloudSpanner()
-    {
-    }
-    /**
-     * Cloud SQL properties.
-     *
-     * @param CloudSqlProperties $cloudSql
-     */
-    public function setCloudSql(CloudSqlProperties $cloudSql)
-    {
-    }
-    /**
-     * @return CloudSqlProperties
-     */
-    public function getCloudSql()
-    {
-    }
-    /**
-     * Optional. Connector configuration.
-     *
-     * @param ConnectorConfiguration $configuration
-     */
-    public function setConfiguration(ConnectorConfiguration $configuration)
-    {
-    }
-    /**
-     * @return ConnectorConfiguration
-     */
-    public function getConfiguration()
-    {
-    }
-    /**
-     * Output only. The creation timestamp of the connection.
-     *
-     * @param string $creationTime
-     */
-    public function setCreationTime($creationTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreationTime()
-    {
-    }
-    /**
-     * User provided description.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * User provided display name for the connection.
-     *
-     * @param string $friendlyName
-     */
-    public function setFriendlyName($friendlyName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFriendlyName()
-    {
-    }
-    /**
-     * Output only. True, if credential is configured for this connection.
-     *
-     * @param bool $hasCredential
-     */
-    public function setHasCredential($hasCredential)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getHasCredential()
-    {
-    }
-    /**
-     * Optional. The Cloud KMS key that is used for credentials encryption. If
-     * omitted, internal Google owned encryption keys are used. Example: `projects
-     * /[kms_project_id]/locations/[region]/keyRings/[key_region]/cryptoKeys/[key]
-     * `
-     *
-     * @param string $kmsKeyName
-     */
-    public function setKmsKeyName($kmsKeyName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKmsKeyName()
-    {
-    }
-    /**
-     * Output only. The last update timestamp of the connection.
-     *
-     * @param string $lastModifiedTime
-     */
-    public function setLastModifiedTime($lastModifiedTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastModifiedTime()
-    {
-    }
-    /**
-     * Output only. The resource name of the connection in the form of:
-     * `projects/{project_id}/locations/{location_id}/connections/{connection_id}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. Salesforce DataCloud properties. This field is intended for use
-     * only by Salesforce partner projects. This field contains properties for
-     * your Salesforce DataCloud connection.
-     *
-     * @param SalesforceDataCloudProperties $salesforceDataCloud
-     */
-    public function setSalesforceDataCloud(SalesforceDataCloudProperties $salesforceDataCloud)
-    {
-    }
-    /**
-     * @return SalesforceDataCloudProperties
-     */
-    public function getSalesforceDataCloud()
-    {
-    }
-    /**
-     * Spark properties.
-     *
-     * @param SparkProperties $spark
-     */
-    public function setSpark(SparkProperties $spark)
-    {
-    }
-    /**
-     * @return SparkProperties
-     */
-    public function getSpark()
+    class Google_Service_BigQueryConnectionService_Connection extends \Google\Service\BigQueryConnectionService\Connection
     {
     }
 }

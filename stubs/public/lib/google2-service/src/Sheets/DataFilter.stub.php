@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class DataFilter extends \Google\Model
-{
-    /**
-     * Selects data that matches the specified A1 range.
-     *
-     * @var string
-     */
-    public $a1Range;
-    protected $developerMetadataLookupType = DeveloperMetadataLookup::class;
-    protected $developerMetadataLookupDataType = '';
-    protected $gridRangeType = GridRange::class;
-    protected $gridRangeDataType = '';
-    /**
-     * Selects data that matches the specified A1 range.
-     *
-     * @param string $a1Range
-     */
-    public function setA1Range($a1Range)
+namespace Google\Service\Sheets {
+    class DataFilter extends \Google\Model
     {
+        /**
+         * Selects data that matches the specified A1 range.
+         *
+         * @var string
+         */
+        public $a1Range;
+        protected $developerMetadataLookupType = DeveloperMetadataLookup::class;
+        protected $developerMetadataLookupDataType = '';
+        protected $gridRangeType = GridRange::class;
+        protected $gridRangeDataType = '';
+        /**
+         * Selects data that matches the specified A1 range.
+         *
+         * @param string $a1Range
+         */
+        public function setA1Range($a1Range)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getA1Range()
+        {
+        }
+        /**
+         * Selects data associated with the developer metadata matching the criteria
+         * described by this DeveloperMetadataLookup.
+         *
+         * @param DeveloperMetadataLookup $developerMetadataLookup
+         */
+        public function setDeveloperMetadataLookup(DeveloperMetadataLookup $developerMetadataLookup)
+        {
+        }
+        /**
+         * @return DeveloperMetadataLookup
+         */
+        public function getDeveloperMetadataLookup()
+        {
+        }
+        /**
+         * Selects data that matches the range described by the GridRange.
+         *
+         * @param GridRange $gridRange
+         */
+        public function setGridRange(GridRange $gridRange)
+        {
+        }
+        /**
+         * @return GridRange
+         */
+        public function getGridRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Sheets\DataFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getA1Range()
-    {
-    }
-    /**
-     * Selects data associated with the developer metadata matching the criteria
-     * described by this DeveloperMetadataLookup.
-     *
-     * @param DeveloperMetadataLookup $developerMetadataLookup
-     */
-    public function setDeveloperMetadataLookup(DeveloperMetadataLookup $developerMetadataLookup)
-    {
-    }
-    /**
-     * @return DeveloperMetadataLookup
-     */
-    public function getDeveloperMetadataLookup()
-    {
-    }
-    /**
-     * Selects data that matches the range described by the GridRange.
-     *
-     * @param GridRange $gridRange
-     */
-    public function setGridRange(GridRange $gridRange)
-    {
-    }
-    /**
-     * @return GridRange
-     */
-    public function getGridRange()
+    class Google_Service_Sheets_DataFilter extends \Google\Service\Sheets\DataFilter
     {
     }
 }

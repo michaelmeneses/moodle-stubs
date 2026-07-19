@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class PrismaCpeCode extends \Google\Model
-{
-    /**
-     * The Prisma client code.
-     *
-     * @var string
-     */
-    public $prismaClientCode;
-    /**
-     * The Prisma estimate code.
-     *
-     * @var string
-     */
-    public $prismaEstimateCode;
-    /**
-     * The Prisma product code.
-     *
-     * @var string
-     */
-    public $prismaProductCode;
-    /**
-     * The Prisma client code.
-     *
-     * @param string $prismaClientCode
-     */
-    public function setPrismaClientCode($prismaClientCode)
+namespace Google\Service\DisplayVideo {
+    class PrismaCpeCode extends \Google\Model
     {
+        /**
+         * The Prisma client code.
+         *
+         * @var string
+         */
+        public $prismaClientCode;
+        /**
+         * The Prisma estimate code.
+         *
+         * @var string
+         */
+        public $prismaEstimateCode;
+        /**
+         * The Prisma product code.
+         *
+         * @var string
+         */
+        public $prismaProductCode;
+        /**
+         * The Prisma client code.
+         *
+         * @param string $prismaClientCode
+         */
+        public function setPrismaClientCode($prismaClientCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrismaClientCode()
+        {
+        }
+        /**
+         * The Prisma estimate code.
+         *
+         * @param string $prismaEstimateCode
+         */
+        public function setPrismaEstimateCode($prismaEstimateCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrismaEstimateCode()
+        {
+        }
+        /**
+         * The Prisma product code.
+         *
+         * @param string $prismaProductCode
+         */
+        public function setPrismaProductCode($prismaProductCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrismaProductCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\PrismaCpeCode registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPrismaClientCode()
-    {
-    }
-    /**
-     * The Prisma estimate code.
-     *
-     * @param string $prismaEstimateCode
-     */
-    public function setPrismaEstimateCode($prismaEstimateCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrismaEstimateCode()
-    {
-    }
-    /**
-     * The Prisma product code.
-     *
-     * @param string $prismaProductCode
-     */
-    public function setPrismaProductCode($prismaProductCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrismaProductCode()
+    class Google_Service_DisplayVideo_PrismaCpeCode extends \Google\Service\DisplayVideo\PrismaCpeCode
     {
     }
 }

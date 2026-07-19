@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class OptimizeRestoredDatabaseMetadata extends \Google\Model
-{
-    /**
-     * Name of the restored database being optimized.
-     *
-     * @var string
-     */
-    public $name;
-    protected $progressType = OperationProgress::class;
-    protected $progressDataType = '';
-    /**
-     * Name of the restored database being optimized.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Spanner {
+    class OptimizeRestoredDatabaseMetadata extends \Google\Model
     {
+        /**
+         * Name of the restored database being optimized.
+         *
+         * @var string
+         */
+        public $name;
+        protected $progressType = OperationProgress::class;
+        protected $progressDataType = '';
+        /**
+         * Name of the restored database being optimized.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The progress of the post-restore optimizations.
+         *
+         * @param OperationProgress $progress
+         */
+        public function setProgress(OperationProgress $progress)
+        {
+        }
+        /**
+         * @return OperationProgress
+         */
+        public function getProgress()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Spanner\OptimizeRestoredDatabaseMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * The progress of the post-restore optimizations.
-     *
-     * @param OperationProgress $progress
-     */
-    public function setProgress(OperationProgress $progress)
-    {
-    }
-    /**
-     * @return OperationProgress
-     */
-    public function getProgress()
+    class Google_Service_Spanner_OptimizeRestoredDatabaseMetadata extends \Google\Service\Spanner\OptimizeRestoredDatabaseMetadata
     {
     }
 }

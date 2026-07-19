@@ -21,64 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer\Resource;
-
-/**
- * The "accounts" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adexchangebuyerService = new Google\Service\AdExchangeBuyer(...);
- *   $accounts = $adexchangebuyerService->accounts;
- *  </code>
- */
-class Accounts extends \Google\Service\Resource
-{
+namespace Google\Service\AdExchangeBuyer\Resource {
+    use Google\Service\AdExchangeBuyer\Account;
+    use Google\Service\AdExchangeBuyer\AccountsList;
     /**
-     * Gets one account by ID. (accounts.get)
-     *
-     * @param int $id The account id
-     * @param array $optParams Optional parameters.
-     * @return Account
+     * The "accounts" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adexchangebuyerService = new Google\Service\AdExchangeBuyer(...);
+     *   $accounts = $adexchangebuyerService->accounts;
+     *  </code>
      */
-    public function get($id, $optParams = [])
+    class Accounts extends \Google\Service\Resource
     {
+        /**
+         * Gets one account by ID. (accounts.get)
+         *
+         * @param int $id The account id
+         * @param array $optParams Optional parameters.
+         * @return Account
+         */
+        public function get($id, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves the authenticated user's list of accounts. (accounts.listAccounts)
+         *
+         * @param array $optParams Optional parameters.
+         * @return AccountsList
+         */
+        public function listAccounts($optParams = [])
+        {
+        }
+        /**
+         * Updates an existing account. This method supports patch semantics.
+         * (accounts.patch)
+         *
+         * @param int $id The account id
+         * @param Account $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool confirmUnsafeAccountChange Confirmation for erasing bidder
+         * and cookie matching urls.
+         * @return Account
+         */
+        public function patch($id, Account $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing account. (accounts.update)
+         *
+         * @param int $id The account id
+         * @param Account $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool confirmUnsafeAccountChange Confirmation for erasing bidder
+         * and cookie matching urls.
+         * @return Account
+         */
+        public function update($id, Account $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves the authenticated user's list of accounts. (accounts.listAccounts)
-     *
-     * @param array $optParams Optional parameters.
-     * @return AccountsList
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\Resource\Accounts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listAccounts($optParams = [])
-    {
-    }
-    /**
-     * Updates an existing account. This method supports patch semantics.
-     * (accounts.patch)
-     *
-     * @param int $id The account id
-     * @param Account $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool confirmUnsafeAccountChange Confirmation for erasing bidder
-     * and cookie matching urls.
-     * @return Account
-     */
-    public function patch($id, Account $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates an existing account. (accounts.update)
-     *
-     * @param int $id The account id
-     * @param Account $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool confirmUnsafeAccountChange Confirmation for erasing bidder
-     * and cookie matching urls.
-     * @return Account
-     */
-    public function update($id, Account $postBody, $optParams = [])
+    class Google_Service_AdExchangeBuyer_Resource_Accounts extends \Google\Service\AdExchangeBuyer\Resource\Accounts
     {
     }
 }

@@ -21,48 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations\Resource;
-
-/**
- * The "connections" collection of methods.
- * Typical usage is:
- *  <code>
- *   $integrationsService = new Google\Service\Integrations(...);
- *   $connections = $integrationsService->projects_locations_connections;
- *  </code>
- */
-class ProjectsLocationsConnections extends \Google\Service\Resource
-{
+namespace Google\Service\Integrations\Resource {
+    use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaConnectionSchemaMetadata;
+    use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListConnectionsResponse;
     /**
-     * Lists the available entities and actions associated with a Connection.
-     * (connections.getConnectionSchemaMetadata)
-     *
-     * @param string $name Required. ConnectionSchemaMetadata name. Format: projects
-     * /{project}/locations/{location}/connections/{connection}/connectionSchemaMeta
-     * data
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudIntegrationsV1alphaConnectionSchemaMetadata
-     * @throws \Google\Service\Exception
+     * The "connections" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $integrationsService = new Google\Service\Integrations(...);
+     *   $connections = $integrationsService->projects_locations_connections;
+     *  </code>
      */
-    public function getConnectionSchemaMetadata($name, $optParams = [])
+    class ProjectsLocationsConnections extends \Google\Service\Resource
     {
+        /**
+         * Lists the available entities and actions associated with a Connection.
+         * (connections.getConnectionSchemaMetadata)
+         *
+         * @param string $name Required. ConnectionSchemaMetadata name. Format: projects
+         * /{project}/locations/{location}/connections/{connection}/connectionSchemaMeta
+         * data
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudIntegrationsV1alphaConnectionSchemaMetadata
+         * @throws \Google\Service\Exception
+         */
+        public function getConnectionSchemaMetadata($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists Connections in a given project and location.
+         * (connections.listProjectsLocationsConnections)
+         *
+         * @param string $parent Required. Parent resource of the Connection, of the
+         * form: `projects/locations`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Filter.
+         * @opt_param string orderBy Order by parameters.
+         * @opt_param int pageSize Page size.
+         * @opt_param string pageToken Page token.
+         * @return GoogleCloudIntegrationsV1alphaListConnectionsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsConnections($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists Connections in a given project and location.
-     * (connections.listProjectsLocationsConnections)
-     *
-     * @param string $parent Required. Parent resource of the Connection, of the
-     * form: `projects/locations`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Filter.
-     * @opt_param string orderBy Order by parameters.
-     * @opt_param int pageSize Page size.
-     * @opt_param string pageToken Page token.
-     * @return GoogleCloudIntegrationsV1alphaListConnectionsResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Integrations\Resource\ProjectsLocationsConnections registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listProjectsLocationsConnections($parent, $optParams = [])
+    class Google_Service_Integrations_Resource_ProjectsLocationsConnections extends \Google\Service\Integrations\Resource\ProjectsLocationsConnections
     {
     }
 }

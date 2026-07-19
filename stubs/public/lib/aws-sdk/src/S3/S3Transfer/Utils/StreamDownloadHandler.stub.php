@@ -8,6 +8,9 @@
  */
 namespace Aws\S3\S3Transfer\Utils;
 
+use Aws\S3\S3Transfer\Progress\AbstractTransferListener;
+use GuzzleHttp\Psr7\Utils;
+use Psr\Http\Message\StreamInterface;
 final class StreamDownloadHandler extends AbstractDownloadHandler
 {
     /** @var StreamInterface|null */

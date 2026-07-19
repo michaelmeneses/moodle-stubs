@@ -21,163 +21,172 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class ConfigVariableTemplate extends \Google\Collection
-{
-    protected $collection_key = 'enumOptions';
-    protected $authorizationCodeLinkType = AuthorizationCodeLink::class;
-    protected $authorizationCodeLinkDataType = '';
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var string
-     */
-    public $displayName;
-    protected $enumOptionsType = EnumOption::class;
-    protected $enumOptionsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $key;
-    /**
-     * @var bool
-     */
-    public $required;
-    protected $roleGrantType = RoleGrant::class;
-    protected $roleGrantDataType = '';
-    /**
-     * @var string
-     */
-    public $state;
-    /**
-     * @var string
-     */
-    public $validationRegex;
-    /**
-     * @var string
-     */
-    public $valueType;
-    /**
-     * @param AuthorizationCodeLink
-     */
-    public function setAuthorizationCodeLink(AuthorizationCodeLink $authorizationCodeLink)
+namespace Google\Service\Connectors {
+    class ConfigVariableTemplate extends \Google\Collection
     {
+        protected $collection_key = 'enumOptions';
+        protected $authorizationCodeLinkType = AuthorizationCodeLink::class;
+        protected $authorizationCodeLinkDataType = '';
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @var string
+         */
+        public $displayName;
+        protected $enumOptionsType = EnumOption::class;
+        protected $enumOptionsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $key;
+        /**
+         * @var bool
+         */
+        public $required;
+        protected $roleGrantType = RoleGrant::class;
+        protected $roleGrantDataType = '';
+        /**
+         * @var string
+         */
+        public $state;
+        /**
+         * @var string
+         */
+        public $validationRegex;
+        /**
+         * @var string
+         */
+        public $valueType;
+        /**
+         * @param AuthorizationCodeLink
+         */
+        public function setAuthorizationCodeLink(AuthorizationCodeLink $authorizationCodeLink)
+        {
+        }
+        /**
+         * @return AuthorizationCodeLink
+         */
+        public function getAuthorizationCodeLink()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param EnumOption[]
+         */
+        public function setEnumOptions($enumOptions)
+        {
+        }
+        /**
+         * @return EnumOption[]
+         */
+        public function getEnumOptions()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setRequired($required)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRequired()
+        {
+        }
+        /**
+         * @param RoleGrant
+         */
+        public function setRoleGrant(RoleGrant $roleGrant)
+        {
+        }
+        /**
+         * @return RoleGrant
+         */
+        public function getRoleGrant()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setValidationRegex($validationRegex)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValidationRegex()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setValueType($valueType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValueType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AuthorizationCodeLink
+     * Runtime class alias of \Google\Service\Connectors\ConfigVariableTemplate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthorizationCodeLink()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * @param EnumOption[]
-     */
-    public function setEnumOptions($enumOptions)
-    {
-    }
-    /**
-     * @return EnumOption[]
-     */
-    public function getEnumOptions()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKey($key)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKey()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setRequired($required)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getRequired()
-    {
-    }
-    /**
-     * @param RoleGrant
-     */
-    public function setRoleGrant(RoleGrant $roleGrant)
-    {
-    }
-    /**
-     * @return RoleGrant
-     */
-    public function getRoleGrant()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setValidationRegex($validationRegex)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValidationRegex()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setValueType($valueType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValueType()
+    class Google_Service_Connectors_ConfigVariableTemplate extends \Google\Service\Connectors\ConfigVariableTemplate
     {
     }
 }

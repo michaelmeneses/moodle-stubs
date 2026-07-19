@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementVersionsV1MoveThirdPartyProfileUserRequest extends \Google\Model
-{
-    /**
-     * Required. Destination organizational unit where the third party chrome
-     * profile user will be moved to.
-     *
-     * @var string
-     */
-    public $destinationOrgUnit;
-    /**
-     * Required. Destination organizational unit where the third party chrome
-     * profile user will be moved to.
-     *
-     * @param string $destinationOrgUnit
-     */
-    public function setDestinationOrgUnit($destinationOrgUnit)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementVersionsV1MoveThirdPartyProfileUserRequest extends \Google\Model
     {
+        /**
+         * Required. Destination organizational unit where the third party chrome
+         * profile user will be moved to.
+         *
+         * @var string
+         */
+        public $destinationOrgUnit;
+        /**
+         * Required. Destination organizational unit where the third party chrome
+         * profile user will be moved to.
+         *
+         * @param string $destinationOrgUnit
+         */
+        public function setDestinationOrgUnit($destinationOrgUnit)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestinationOrgUnit()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1MoveThirdPartyProfileUserRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDestinationOrgUnit()
+    class Google_Service_ChromeManagement_GoogleChromeManagementVersionsV1MoveThirdPartyProfileUserRequest extends \Google\Service\ChromeManagement\GoogleChromeManagementVersionsV1MoveThirdPartyProfileUserRequest
     {
     }
 }

@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyVersionsV1ModifyGroupPolicyRequest extends \Google\Model
-{
-    protected $policyTargetKeyType = GoogleChromePolicyVersionsV1PolicyTargetKey::class;
-    protected $policyTargetKeyDataType = '';
-    protected $policyValueType = GoogleChromePolicyVersionsV1PolicyValue::class;
-    protected $policyValueDataType = '';
-    /**
-     * Required. Policy fields to update. Only fields in this mask will be
-     * updated; other fields in `policy_value` will be ignored (even if they have
-     * values). If a field is in this list it must have a value in 'policy_value'.
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * Required. The key of the target for which we want to modify a policy. The
-     * target resource must point to a Group.
-     *
-     * @param GoogleChromePolicyVersionsV1PolicyTargetKey $policyTargetKey
-     */
-    public function setPolicyTargetKey(GoogleChromePolicyVersionsV1PolicyTargetKey $policyTargetKey)
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyVersionsV1ModifyGroupPolicyRequest extends \Google\Model
     {
+        protected $policyTargetKeyType = GoogleChromePolicyVersionsV1PolicyTargetKey::class;
+        protected $policyTargetKeyDataType = '';
+        protected $policyValueType = GoogleChromePolicyVersionsV1PolicyValue::class;
+        protected $policyValueDataType = '';
+        /**
+         * Required. Policy fields to update. Only fields in this mask will be
+         * updated; other fields in `policy_value` will be ignored (even if they have
+         * values). If a field is in this list it must have a value in 'policy_value'.
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * Required. The key of the target for which we want to modify a policy. The
+         * target resource must point to a Group.
+         *
+         * @param GoogleChromePolicyVersionsV1PolicyTargetKey $policyTargetKey
+         */
+        public function setPolicyTargetKey(GoogleChromePolicyVersionsV1PolicyTargetKey $policyTargetKey)
+        {
+        }
+        /**
+         * @return GoogleChromePolicyVersionsV1PolicyTargetKey
+         */
+        public function getPolicyTargetKey()
+        {
+        }
+        /**
+         * The new value for the policy.
+         *
+         * @param GoogleChromePolicyVersionsV1PolicyValue $policyValue
+         */
+        public function setPolicyValue(GoogleChromePolicyVersionsV1PolicyValue $policyValue)
+        {
+        }
+        /**
+         * @return GoogleChromePolicyVersionsV1PolicyValue
+         */
+        public function getPolicyValue()
+        {
+        }
+        /**
+         * Required. Policy fields to update. Only fields in this mask will be
+         * updated; other fields in `policy_value` will be ignored (even if they have
+         * values). If a field is in this list it must have a value in 'policy_value'.
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChromePolicyVersionsV1PolicyTargetKey
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1ModifyGroupPolicyRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPolicyTargetKey()
-    {
-    }
-    /**
-     * The new value for the policy.
-     *
-     * @param GoogleChromePolicyVersionsV1PolicyValue $policyValue
-     */
-    public function setPolicyValue(GoogleChromePolicyVersionsV1PolicyValue $policyValue)
-    {
-    }
-    /**
-     * @return GoogleChromePolicyVersionsV1PolicyValue
-     */
-    public function getPolicyValue()
-    {
-    }
-    /**
-     * Required. Policy fields to update. Only fields in this mask will be
-     * updated; other fields in `policy_value` will be ignored (even if they have
-     * values). If a field is in this list it must have a value in 'policy_value'.
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_ChromePolicy_GoogleChromePolicyVersionsV1ModifyGroupPolicyRequest extends \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1ModifyGroupPolicyRequest
     {
     }
 }

@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ContainerRegistryDestination extends \Google\Model
-{
-    /**
-     * Required. Container Registry URI of a container image. Only Google
-     * Container Registry and Artifact Registry are supported now. Accepted forms:
-     * * Google Container Registry path. For example:
-     * `gcr.io/projectId/imageName:tag`. * Artifact Registry path. For example:
-     * `us-central1-docker.pkg.dev/projectId/repoName/imageName:tag`. If a tag is
-     * not specified, "latest" will be used as the default tag.
-     *
-     * @var string
-     */
-    public $outputUri;
-    /**
-     * Required. Container Registry URI of a container image. Only Google
-     * Container Registry and Artifact Registry are supported now. Accepted forms:
-     * * Google Container Registry path. For example:
-     * `gcr.io/projectId/imageName:tag`. * Artifact Registry path. For example:
-     * `us-central1-docker.pkg.dev/projectId/repoName/imageName:tag`. If a tag is
-     * not specified, "latest" will be used as the default tag.
-     *
-     * @param string $outputUri
-     */
-    public function setOutputUri($outputUri)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ContainerRegistryDestination extends \Google\Model
     {
+        /**
+         * Required. Container Registry URI of a container image. Only Google
+         * Container Registry and Artifact Registry are supported now. Accepted forms:
+         * * Google Container Registry path. For example:
+         * `gcr.io/projectId/imageName:tag`. * Artifact Registry path. For example:
+         * `us-central1-docker.pkg.dev/projectId/repoName/imageName:tag`. If a tag is
+         * not specified, "latest" will be used as the default tag.
+         *
+         * @var string
+         */
+        public $outputUri;
+        /**
+         * Required. Container Registry URI of a container image. Only Google
+         * Container Registry and Artifact Registry are supported now. Accepted forms:
+         * * Google Container Registry path. For example:
+         * `gcr.io/projectId/imageName:tag`. * Artifact Registry path. For example:
+         * `us-central1-docker.pkg.dev/projectId/repoName/imageName:tag`. If a tag is
+         * not specified, "latest" will be used as the default tag.
+         *
+         * @param string $outputUri
+         */
+        public function setOutputUri($outputUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOutputUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ContainerRegistryDestination registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOutputUri()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ContainerRegistryDestination extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ContainerRegistryDestination
     {
     }
 }

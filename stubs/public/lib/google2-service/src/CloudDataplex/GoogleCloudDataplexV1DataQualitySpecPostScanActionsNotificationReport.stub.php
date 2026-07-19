@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataQualitySpecPostScanActionsNotificationReport extends \Google\Model
-{
-    protected $jobEndTriggerType = GoogleCloudDataplexV1DataQualitySpecPostScanActionsJobEndTrigger::class;
-    protected $jobEndTriggerDataType = '';
-    protected $jobFailureTriggerType = GoogleCloudDataplexV1DataQualitySpecPostScanActionsJobFailureTrigger::class;
-    protected $jobFailureTriggerDataType = '';
-    protected $recipientsType = GoogleCloudDataplexV1DataQualitySpecPostScanActionsRecipients::class;
-    protected $recipientsDataType = '';
-    protected $scoreThresholdTriggerType = GoogleCloudDataplexV1DataQualitySpecPostScanActionsScoreThresholdTrigger::class;
-    protected $scoreThresholdTriggerDataType = '';
-    /**
-     * Optional. If set, report will be sent when a scan job ends.
-     *
-     * @param GoogleCloudDataplexV1DataQualitySpecPostScanActionsJobEndTrigger $jobEndTrigger
-     */
-    public function setJobEndTrigger(GoogleCloudDataplexV1DataQualitySpecPostScanActionsJobEndTrigger $jobEndTrigger)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataQualitySpecPostScanActionsNotificationReport extends \Google\Model
     {
+        protected $jobEndTriggerType = GoogleCloudDataplexV1DataQualitySpecPostScanActionsJobEndTrigger::class;
+        protected $jobEndTriggerDataType = '';
+        protected $jobFailureTriggerType = GoogleCloudDataplexV1DataQualitySpecPostScanActionsJobFailureTrigger::class;
+        protected $jobFailureTriggerDataType = '';
+        protected $recipientsType = GoogleCloudDataplexV1DataQualitySpecPostScanActionsRecipients::class;
+        protected $recipientsDataType = '';
+        protected $scoreThresholdTriggerType = GoogleCloudDataplexV1DataQualitySpecPostScanActionsScoreThresholdTrigger::class;
+        protected $scoreThresholdTriggerDataType = '';
+        /**
+         * Optional. If set, report will be sent when a scan job ends.
+         *
+         * @param GoogleCloudDataplexV1DataQualitySpecPostScanActionsJobEndTrigger $jobEndTrigger
+         */
+        public function setJobEndTrigger(GoogleCloudDataplexV1DataQualitySpecPostScanActionsJobEndTrigger $jobEndTrigger)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1DataQualitySpecPostScanActionsJobEndTrigger
+         */
+        public function getJobEndTrigger()
+        {
+        }
+        /**
+         * Optional. If set, report will be sent when a scan job fails.
+         *
+         * @param GoogleCloudDataplexV1DataQualitySpecPostScanActionsJobFailureTrigger $jobFailureTrigger
+         */
+        public function setJobFailureTrigger(GoogleCloudDataplexV1DataQualitySpecPostScanActionsJobFailureTrigger $jobFailureTrigger)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1DataQualitySpecPostScanActionsJobFailureTrigger
+         */
+        public function getJobFailureTrigger()
+        {
+        }
+        /**
+         * Required. The recipients who will receive the notification report.
+         *
+         * @param GoogleCloudDataplexV1DataQualitySpecPostScanActionsRecipients $recipients
+         */
+        public function setRecipients(GoogleCloudDataplexV1DataQualitySpecPostScanActionsRecipients $recipients)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1DataQualitySpecPostScanActionsRecipients
+         */
+        public function getRecipients()
+        {
+        }
+        /**
+         * Optional. If set, report will be sent when score threshold is met.
+         *
+         * @param GoogleCloudDataplexV1DataQualitySpecPostScanActionsScoreThresholdTrigger $scoreThresholdTrigger
+         */
+        public function setScoreThresholdTrigger(GoogleCloudDataplexV1DataQualitySpecPostScanActionsScoreThresholdTrigger $scoreThresholdTrigger)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1DataQualitySpecPostScanActionsScoreThresholdTrigger
+         */
+        public function getScoreThresholdTrigger()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDataplexV1DataQualitySpecPostScanActionsJobEndTrigger
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataQualitySpecPostScanActionsNotificationReport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJobEndTrigger()
-    {
-    }
-    /**
-     * Optional. If set, report will be sent when a scan job fails.
-     *
-     * @param GoogleCloudDataplexV1DataQualitySpecPostScanActionsJobFailureTrigger $jobFailureTrigger
-     */
-    public function setJobFailureTrigger(GoogleCloudDataplexV1DataQualitySpecPostScanActionsJobFailureTrigger $jobFailureTrigger)
-    {
-    }
-    /**
-     * @return GoogleCloudDataplexV1DataQualitySpecPostScanActionsJobFailureTrigger
-     */
-    public function getJobFailureTrigger()
-    {
-    }
-    /**
-     * Required. The recipients who will receive the notification report.
-     *
-     * @param GoogleCloudDataplexV1DataQualitySpecPostScanActionsRecipients $recipients
-     */
-    public function setRecipients(GoogleCloudDataplexV1DataQualitySpecPostScanActionsRecipients $recipients)
-    {
-    }
-    /**
-     * @return GoogleCloudDataplexV1DataQualitySpecPostScanActionsRecipients
-     */
-    public function getRecipients()
-    {
-    }
-    /**
-     * Optional. If set, report will be sent when score threshold is met.
-     *
-     * @param GoogleCloudDataplexV1DataQualitySpecPostScanActionsScoreThresholdTrigger $scoreThresholdTrigger
-     */
-    public function setScoreThresholdTrigger(GoogleCloudDataplexV1DataQualitySpecPostScanActionsScoreThresholdTrigger $scoreThresholdTrigger)
-    {
-    }
-    /**
-     * @return GoogleCloudDataplexV1DataQualitySpecPostScanActionsScoreThresholdTrigger
-     */
-    public function getScoreThresholdTrigger()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataQualitySpecPostScanActionsNotificationReport extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataQualitySpecPostScanActionsNotificationReport
     {
     }
 }

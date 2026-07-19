@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudbilling;
-
-class Category extends \Google\Model
-{
-    /**
-     * The type of product the SKU refers to. Example: "Compute", "Storage",
-     * "Network", "ApplicationServices" etc.
-     *
-     * @var string
-     */
-    public $resourceFamily;
-    /**
-     * A group classification for related SKUs. Example: "RAM", "GPU",
-     * "Prediction", "Ops", "GoogleEgress" etc.
-     *
-     * @var string
-     */
-    public $resourceGroup;
-    /**
-     * The display name of the service this SKU belongs to.
-     *
-     * @var string
-     */
-    public $serviceDisplayName;
-    /**
-     * Represents how the SKU is consumed. Example: "OnDemand", "Preemptible",
-     * "Commit1Mo", "Commit1Yr" etc.
-     *
-     * @var string
-     */
-    public $usageType;
-    /**
-     * The type of product the SKU refers to. Example: "Compute", "Storage",
-     * "Network", "ApplicationServices" etc.
-     *
-     * @param string $resourceFamily
-     */
-    public function setResourceFamily($resourceFamily)
+namespace Google\Service\Cloudbilling {
+    class Category extends \Google\Model
     {
+        /**
+         * The type of product the SKU refers to. Example: "Compute", "Storage",
+         * "Network", "ApplicationServices" etc.
+         *
+         * @var string
+         */
+        public $resourceFamily;
+        /**
+         * A group classification for related SKUs. Example: "RAM", "GPU",
+         * "Prediction", "Ops", "GoogleEgress" etc.
+         *
+         * @var string
+         */
+        public $resourceGroup;
+        /**
+         * The display name of the service this SKU belongs to.
+         *
+         * @var string
+         */
+        public $serviceDisplayName;
+        /**
+         * Represents how the SKU is consumed. Example: "OnDemand", "Preemptible",
+         * "Commit1Mo", "Commit1Yr" etc.
+         *
+         * @var string
+         */
+        public $usageType;
+        /**
+         * The type of product the SKU refers to. Example: "Compute", "Storage",
+         * "Network", "ApplicationServices" etc.
+         *
+         * @param string $resourceFamily
+         */
+        public function setResourceFamily($resourceFamily)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceFamily()
+        {
+        }
+        /**
+         * A group classification for related SKUs. Example: "RAM", "GPU",
+         * "Prediction", "Ops", "GoogleEgress" etc.
+         *
+         * @param string $resourceGroup
+         */
+        public function setResourceGroup($resourceGroup)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceGroup()
+        {
+        }
+        /**
+         * The display name of the service this SKU belongs to.
+         *
+         * @param string $serviceDisplayName
+         */
+        public function setServiceDisplayName($serviceDisplayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceDisplayName()
+        {
+        }
+        /**
+         * Represents how the SKU is consumed. Example: "OnDemand", "Preemptible",
+         * "Commit1Mo", "Commit1Yr" etc.
+         *
+         * @param string $usageType
+         */
+        public function setUsageType($usageType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUsageType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Cloudbilling\Category registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResourceFamily()
-    {
-    }
-    /**
-     * A group classification for related SKUs. Example: "RAM", "GPU",
-     * "Prediction", "Ops", "GoogleEgress" etc.
-     *
-     * @param string $resourceGroup
-     */
-    public function setResourceGroup($resourceGroup)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceGroup()
-    {
-    }
-    /**
-     * The display name of the service this SKU belongs to.
-     *
-     * @param string $serviceDisplayName
-     */
-    public function setServiceDisplayName($serviceDisplayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceDisplayName()
-    {
-    }
-    /**
-     * Represents how the SKU is consumed. Example: "OnDemand", "Preemptible",
-     * "Commit1Mo", "Commit1Yr" etc.
-     *
-     * @param string $usageType
-     */
-    public function setUsageType($usageType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUsageType()
+    class Google_Service_Cloudbilling_Category extends \Google\Service\Cloudbilling\Category
     {
     }
 }

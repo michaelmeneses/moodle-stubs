@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\exception;
 
+use stdClass;
 /**
  * Exception thrown when there is an error parsing an XML file.
  *

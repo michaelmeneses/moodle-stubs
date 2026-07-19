@@ -21,109 +21,118 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Transcoder;
-
-class Encryption extends \Google\Model
-{
-    protected $aes128Type = Aes128Encryption::class;
-    protected $aes128DataType = '';
-    protected $drmSystemsType = DrmSystems::class;
-    protected $drmSystemsDataType = '';
-    /**
-     * Required. Identifier for this set of encryption options.
-     *
-     * @var string
-     */
-    public $id;
-    protected $mpegCencType = MpegCommonEncryption::class;
-    protected $mpegCencDataType = '';
-    protected $sampleAesType = SampleAesEncryption::class;
-    protected $sampleAesDataType = '';
-    protected $secretManagerKeySourceType = SecretManagerSource::class;
-    protected $secretManagerKeySourceDataType = '';
-    /**
-     * Configuration for AES-128 encryption.
-     *
-     * @param Aes128Encryption $aes128
-     */
-    public function setAes128(Aes128Encryption $aes128)
+namespace Google\Service\Transcoder {
+    class Encryption extends \Google\Model
     {
+        protected $aes128Type = Aes128Encryption::class;
+        protected $aes128DataType = '';
+        protected $drmSystemsType = DrmSystems::class;
+        protected $drmSystemsDataType = '';
+        /**
+         * Required. Identifier for this set of encryption options.
+         *
+         * @var string
+         */
+        public $id;
+        protected $mpegCencType = MpegCommonEncryption::class;
+        protected $mpegCencDataType = '';
+        protected $sampleAesType = SampleAesEncryption::class;
+        protected $sampleAesDataType = '';
+        protected $secretManagerKeySourceType = SecretManagerSource::class;
+        protected $secretManagerKeySourceDataType = '';
+        /**
+         * Configuration for AES-128 encryption.
+         *
+         * @param Aes128Encryption $aes128
+         */
+        public function setAes128(Aes128Encryption $aes128)
+        {
+        }
+        /**
+         * @return Aes128Encryption
+         */
+        public function getAes128()
+        {
+        }
+        /**
+         * Required. DRM system(s) to use; at least one must be specified. If a DRM
+         * system is omitted, it is considered disabled.
+         *
+         * @param DrmSystems $drmSystems
+         */
+        public function setDrmSystems(DrmSystems $drmSystems)
+        {
+        }
+        /**
+         * @return DrmSystems
+         */
+        public function getDrmSystems()
+        {
+        }
+        /**
+         * Required. Identifier for this set of encryption options.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Configuration for MPEG Common Encryption (MPEG-CENC).
+         *
+         * @param MpegCommonEncryption $mpegCenc
+         */
+        public function setMpegCenc(MpegCommonEncryption $mpegCenc)
+        {
+        }
+        /**
+         * @return MpegCommonEncryption
+         */
+        public function getMpegCenc()
+        {
+        }
+        /**
+         * Configuration for SAMPLE-AES encryption.
+         *
+         * @param SampleAesEncryption $sampleAes
+         */
+        public function setSampleAes(SampleAesEncryption $sampleAes)
+        {
+        }
+        /**
+         * @return SampleAesEncryption
+         */
+        public function getSampleAes()
+        {
+        }
+        /**
+         * Keys are stored in Google Secret Manager.
+         *
+         * @param SecretManagerSource $secretManagerKeySource
+         */
+        public function setSecretManagerKeySource(SecretManagerSource $secretManagerKeySource)
+        {
+        }
+        /**
+         * @return SecretManagerSource
+         */
+        public function getSecretManagerKeySource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Aes128Encryption
+     * Runtime class alias of \Google\Service\Transcoder\Encryption registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAes128()
-    {
-    }
-    /**
-     * Required. DRM system(s) to use; at least one must be specified. If a DRM
-     * system is omitted, it is considered disabled.
-     *
-     * @param DrmSystems $drmSystems
-     */
-    public function setDrmSystems(DrmSystems $drmSystems)
-    {
-    }
-    /**
-     * @return DrmSystems
-     */
-    public function getDrmSystems()
-    {
-    }
-    /**
-     * Required. Identifier for this set of encryption options.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Configuration for MPEG Common Encryption (MPEG-CENC).
-     *
-     * @param MpegCommonEncryption $mpegCenc
-     */
-    public function setMpegCenc(MpegCommonEncryption $mpegCenc)
-    {
-    }
-    /**
-     * @return MpegCommonEncryption
-     */
-    public function getMpegCenc()
-    {
-    }
-    /**
-     * Configuration for SAMPLE-AES encryption.
-     *
-     * @param SampleAesEncryption $sampleAes
-     */
-    public function setSampleAes(SampleAesEncryption $sampleAes)
-    {
-    }
-    /**
-     * @return SampleAesEncryption
-     */
-    public function getSampleAes()
-    {
-    }
-    /**
-     * Keys are stored in Google Secret Manager.
-     *
-     * @param SecretManagerSource $secretManagerKeySource
-     */
-    public function setSecretManagerKeySource(SecretManagerSource $secretManagerKeySource)
-    {
-    }
-    /**
-     * @return SecretManagerSource
-     */
-    public function getSecretManagerKeySource()
+    class Google_Service_Transcoder_Encryption extends \Google\Service\Transcoder\Encryption
     {
     }
 }

@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseKnowledgeAnswer extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $answerText;
-    protected $faqSourceType = GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseKnowledgeAnswerFaqSource::class;
-    protected $faqSourceDataType = '';
-    protected $generativeSourceType = GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseKnowledgeAnswerGenerativeSource::class;
-    protected $generativeSourceDataType = '';
-    protected $intentMatchingSourceType = GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseKnowledgeAnswerIntentMatchingSource::class;
-    protected $intentMatchingSourceDataType = '';
-    /**
-     * @var float
-     */
-    public $matchConfidence;
-    /**
-     * @param string
-     */
-    public function setAnswerText($answerText)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseKnowledgeAnswer extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $answerText;
+        protected $faqSourceType = GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseKnowledgeAnswerFaqSource::class;
+        protected $faqSourceDataType = '';
+        protected $generativeSourceType = GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseKnowledgeAnswerGenerativeSource::class;
+        protected $generativeSourceDataType = '';
+        protected $intentMatchingSourceType = GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseKnowledgeAnswerIntentMatchingSource::class;
+        protected $intentMatchingSourceDataType = '';
+        /**
+         * @var float
+         */
+        public $matchConfidence;
+        /**
+         * @param string
+         */
+        public function setAnswerText($answerText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnswerText()
+        {
+        }
+        /**
+         * @param GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseKnowledgeAnswerFaqSource
+         */
+        public function setFaqSource(GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseKnowledgeAnswerFaqSource $faqSource)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseKnowledgeAnswerFaqSource
+         */
+        public function getFaqSource()
+        {
+        }
+        /**
+         * @param GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseKnowledgeAnswerGenerativeSource
+         */
+        public function setGenerativeSource(GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseKnowledgeAnswerGenerativeSource $generativeSource)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseKnowledgeAnswerGenerativeSource
+         */
+        public function getGenerativeSource()
+        {
+        }
+        /**
+         * @param GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseKnowledgeAnswerIntentMatchingSource
+         */
+        public function setIntentMatchingSource(GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseKnowledgeAnswerIntentMatchingSource $intentMatchingSource)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseKnowledgeAnswerIntentMatchingSource
+         */
+        public function getIntentMatchingSource()
+        {
+        }
+        /**
+         * @param float
+         */
+        public function setMatchConfidence($matchConfidence)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getMatchConfidence()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseKnowledgeAnswer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnswerText()
-    {
-    }
-    /**
-     * @param GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseKnowledgeAnswerFaqSource
-     */
-    public function setFaqSource(GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseKnowledgeAnswerFaqSource $faqSource)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseKnowledgeAnswerFaqSource
-     */
-    public function getFaqSource()
-    {
-    }
-    /**
-     * @param GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseKnowledgeAnswerGenerativeSource
-     */
-    public function setGenerativeSource(GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseKnowledgeAnswerGenerativeSource $generativeSource)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseKnowledgeAnswerGenerativeSource
-     */
-    public function getGenerativeSource()
-    {
-    }
-    /**
-     * @param GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseKnowledgeAnswerIntentMatchingSource
-     */
-    public function setIntentMatchingSource(GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseKnowledgeAnswerIntentMatchingSource $intentMatchingSource)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseKnowledgeAnswerIntentMatchingSource
-     */
-    public function getIntentMatchingSource()
-    {
-    }
-    /**
-     * @param float
-     */
-    public function setMatchConfidence($matchConfidence)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getMatchConfidence()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseKnowledgeAnswer extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1GetKnowledgeAssistResponseKnowledgeAnswer
     {
     }
 }

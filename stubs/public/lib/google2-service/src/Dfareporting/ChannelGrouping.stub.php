@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class ChannelGrouping extends \Google\Collection
-{
-    protected $collection_key = 'rules';
-    /**
-     * @var string
-     */
-    public $fallbackName;
-    /**
-     * @var string
-     */
-    public $kind;
-    /**
-     * @var string
-     */
-    public $name;
-    protected $rulesType = ChannelGroupingRule::class;
-    protected $rulesDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setFallbackName($fallbackName)
+namespace Google\Service\Dfareporting {
+    class ChannelGrouping extends \Google\Collection
     {
+        protected $collection_key = 'rules';
+        /**
+         * @var string
+         */
+        public $fallbackName;
+        /**
+         * @var string
+         */
+        public $kind;
+        /**
+         * @var string
+         */
+        public $name;
+        protected $rulesType = ChannelGroupingRule::class;
+        protected $rulesDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setFallbackName($fallbackName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFallbackName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param ChannelGroupingRule[]
+         */
+        public function setRules($rules)
+        {
+        }
+        /**
+         * @return ChannelGroupingRule[]
+         */
+        public function getRules()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\ChannelGrouping registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFallbackName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param ChannelGroupingRule[]
-     */
-    public function setRules($rules)
-    {
-    }
-    /**
-     * @return ChannelGroupingRule[]
-     */
-    public function getRules()
+    class Google_Service_Dfareporting_ChannelGrouping extends \Google\Service\Dfareporting\ChannelGrouping
     {
     }
 }

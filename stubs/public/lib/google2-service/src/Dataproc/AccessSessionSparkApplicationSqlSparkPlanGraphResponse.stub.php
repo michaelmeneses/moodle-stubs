@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class AccessSessionSparkApplicationSqlSparkPlanGraphResponse extends \Google\Model
-{
-    protected $sparkPlanGraphType = SparkPlanGraph::class;
-    protected $sparkPlanGraphDataType = '';
-    /**
-     * SparkPlanGraph for a Spark Application execution.
-     *
-     * @param SparkPlanGraph $sparkPlanGraph
-     */
-    public function setSparkPlanGraph(SparkPlanGraph $sparkPlanGraph)
+namespace Google\Service\Dataproc {
+    class AccessSessionSparkApplicationSqlSparkPlanGraphResponse extends \Google\Model
     {
+        protected $sparkPlanGraphType = SparkPlanGraph::class;
+        protected $sparkPlanGraphDataType = '';
+        /**
+         * SparkPlanGraph for a Spark Application execution.
+         *
+         * @param SparkPlanGraph $sparkPlanGraph
+         */
+        public function setSparkPlanGraph(SparkPlanGraph $sparkPlanGraph)
+        {
+        }
+        /**
+         * @return SparkPlanGraph
+         */
+        public function getSparkPlanGraph()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SparkPlanGraph
+     * Runtime class alias of \Google\Service\Dataproc\AccessSessionSparkApplicationSqlSparkPlanGraphResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSparkPlanGraph()
+    class Google_Service_Dataproc_AccessSessionSparkApplicationSqlSparkPlanGraphResponse extends \Google\Service\Dataproc\AccessSessionSparkApplicationSqlSparkPlanGraphResponse
     {
     }
 }

@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class ShardSummary extends \Google\Collection
-{
-    protected $collection_key = 'runs';
-    protected $runsType = StepSummary::class;
-    protected $runsDataType = 'array';
-    protected $shardResultType = MergedResult::class;
-    protected $shardResultDataType = '';
-    /**
-     * Summaries of the steps belonging to the shard. With flaky_test_attempts
-     * enabled from TestExecutionService, more than one run (Step) can present.
-     * And the runs will be sorted by multistep_number.
-     *
-     * @param StepSummary[] $runs
-     */
-    public function setRuns($runs)
+namespace Google\Service\ToolResults {
+    class ShardSummary extends \Google\Collection
     {
+        protected $collection_key = 'runs';
+        protected $runsType = StepSummary::class;
+        protected $runsDataType = 'array';
+        protected $shardResultType = MergedResult::class;
+        protected $shardResultDataType = '';
+        /**
+         * Summaries of the steps belonging to the shard. With flaky_test_attempts
+         * enabled from TestExecutionService, more than one run (Step) can present.
+         * And the runs will be sorted by multistep_number.
+         *
+         * @param StepSummary[] $runs
+         */
+        public function setRuns($runs)
+        {
+        }
+        /**
+         * @return StepSummary[]
+         */
+        public function getRuns()
+        {
+        }
+        /**
+         * Merged result of the shard.
+         *
+         * @param MergedResult $shardResult
+         */
+        public function setShardResult(MergedResult $shardResult)
+        {
+        }
+        /**
+         * @return MergedResult
+         */
+        public function getShardResult()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return StepSummary[]
+     * Runtime class alias of \Google\Service\ToolResults\ShardSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRuns()
-    {
-    }
-    /**
-     * Merged result of the shard.
-     *
-     * @param MergedResult $shardResult
-     */
-    public function setShardResult(MergedResult $shardResult)
-    {
-    }
-    /**
-     * @return MergedResult
-     */
-    public function getShardResult()
+    class Google_Service_ToolResults_ShardSummary extends \Google\Service\ToolResults\ShardSummary
     {
     }
 }

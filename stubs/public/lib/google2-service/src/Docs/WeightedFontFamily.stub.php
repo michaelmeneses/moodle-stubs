@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class WeightedFontFamily extends \Google\Model
-{
-    /**
-     * The font family of the text. The font family can be any font from the Font
-     * menu in Docs or from [Google Fonts] (https://fonts.google.com/). If the
-     * font name is unrecognized, the text is rendered in `Arial`.
-     *
-     * @var string
-     */
-    public $fontFamily;
-    /**
-     * The weight of the font. This field can have any value that's a multiple of
-     * `100` between `100` and `900`, inclusive. This range corresponds to the
-     * numerical values described in the CSS 2.1 Specification, [section
-     * 15.6](https://www.w3.org/TR/CSS21/fonts.html#font-boldness), with non-
-     * numerical values disallowed. The default value is `400` ("normal"). The
-     * font weight makes up just one component of the rendered font weight. A
-     * combination of the `weight` and the text style's resolved `bold` value
-     * determine the rendered weight, after accounting for inheritance: * If the
-     * text is bold and the weight is less than `400`, the rendered weight is 400.
-     * * If the text is bold and the weight is greater than or equal to `400` but
-     * is less than `700`, the rendered weight is `700`. * If the weight is
-     * greater than or equal to `700`, the rendered weight is equal to the weight.
-     * * If the text is not bold, the rendered weight is equal to the weight.
-     *
-     * @var int
-     */
-    public $weight;
-    /**
-     * The font family of the text. The font family can be any font from the Font
-     * menu in Docs or from [Google Fonts] (https://fonts.google.com/). If the
-     * font name is unrecognized, the text is rendered in `Arial`.
-     *
-     * @param string $fontFamily
-     */
-    public function setFontFamily($fontFamily)
+namespace Google\Service\Docs {
+    class WeightedFontFamily extends \Google\Model
     {
+        /**
+         * The font family of the text. The font family can be any font from the Font
+         * menu in Docs or from [Google Fonts] (https://fonts.google.com/). If the
+         * font name is unrecognized, the text is rendered in `Arial`.
+         *
+         * @var string
+         */
+        public $fontFamily;
+        /**
+         * The weight of the font. This field can have any value that's a multiple of
+         * `100` between `100` and `900`, inclusive. This range corresponds to the
+         * numerical values described in the CSS 2.1 Specification, [section
+         * 15.6](https://www.w3.org/TR/CSS21/fonts.html#font-boldness), with non-
+         * numerical values disallowed. The default value is `400` ("normal"). The
+         * font weight makes up just one component of the rendered font weight. A
+         * combination of the `weight` and the text style's resolved `bold` value
+         * determine the rendered weight, after accounting for inheritance: * If the
+         * text is bold and the weight is less than `400`, the rendered weight is 400.
+         * * If the text is bold and the weight is greater than or equal to `400` but
+         * is less than `700`, the rendered weight is `700`. * If the weight is
+         * greater than or equal to `700`, the rendered weight is equal to the weight.
+         * * If the text is not bold, the rendered weight is equal to the weight.
+         *
+         * @var int
+         */
+        public $weight;
+        /**
+         * The font family of the text. The font family can be any font from the Font
+         * menu in Docs or from [Google Fonts] (https://fonts.google.com/). If the
+         * font name is unrecognized, the text is rendered in `Arial`.
+         *
+         * @param string $fontFamily
+         */
+        public function setFontFamily($fontFamily)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFontFamily()
+        {
+        }
+        /**
+         * The weight of the font. This field can have any value that's a multiple of
+         * `100` between `100` and `900`, inclusive. This range corresponds to the
+         * numerical values described in the CSS 2.1 Specification, [section
+         * 15.6](https://www.w3.org/TR/CSS21/fonts.html#font-boldness), with non-
+         * numerical values disallowed. The default value is `400` ("normal"). The
+         * font weight makes up just one component of the rendered font weight. A
+         * combination of the `weight` and the text style's resolved `bold` value
+         * determine the rendered weight, after accounting for inheritance: * If the
+         * text is bold and the weight is less than `400`, the rendered weight is 400.
+         * * If the text is bold and the weight is greater than or equal to `400` but
+         * is less than `700`, the rendered weight is `700`. * If the weight is
+         * greater than or equal to `700`, the rendered weight is equal to the weight.
+         * * If the text is not bold, the rendered weight is equal to the weight.
+         *
+         * @param int $weight
+         */
+        public function setWeight($weight)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getWeight()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Docs\WeightedFontFamily registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFontFamily()
-    {
-    }
-    /**
-     * The weight of the font. This field can have any value that's a multiple of
-     * `100` between `100` and `900`, inclusive. This range corresponds to the
-     * numerical values described in the CSS 2.1 Specification, [section
-     * 15.6](https://www.w3.org/TR/CSS21/fonts.html#font-boldness), with non-
-     * numerical values disallowed. The default value is `400` ("normal"). The
-     * font weight makes up just one component of the rendered font weight. A
-     * combination of the `weight` and the text style's resolved `bold` value
-     * determine the rendered weight, after accounting for inheritance: * If the
-     * text is bold and the weight is less than `400`, the rendered weight is 400.
-     * * If the text is bold and the weight is greater than or equal to `400` but
-     * is less than `700`, the rendered weight is `700`. * If the weight is
-     * greater than or equal to `700`, the rendered weight is equal to the weight.
-     * * If the text is not bold, the rendered weight is equal to the weight.
-     *
-     * @param int $weight
-     */
-    public function setWeight($weight)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getWeight()
+    class Google_Service_Docs_WeightedFontFamily extends \Google\Service\Docs\WeightedFontFamily
     {
     }
 }

@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ApiCategory extends \Google\Model
-{
-    /**
-     * ID of the category (a UUID).
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Name of the category.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Name of the portal.
-     *
-     * @var string
-     */
-    public $siteId;
-    /**
-     * Time the category was last modified in milliseconds since epoch.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * ID of the category (a UUID).
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ApiCategory extends \Google\Model
     {
+        /**
+         * ID of the category (a UUID).
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Name of the category.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Name of the portal.
+         *
+         * @var string
+         */
+        public $siteId;
+        /**
+         * Time the category was last modified in milliseconds since epoch.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * ID of the category (a UUID).
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Name of the category.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Name of the portal.
+         *
+         * @param string $siteId
+         */
+        public function setSiteId($siteId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSiteId()
+        {
+        }
+        /**
+         * Time the category was last modified in milliseconds since epoch.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ApiCategory registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * Name of the category.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Name of the portal.
-     *
-     * @param string $siteId
-     */
-    public function setSiteId($siteId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSiteId()
-    {
-    }
-    /**
-     * Time the category was last modified in milliseconds since epoch.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ApiCategory extends \Google\Service\Apigee\GoogleCloudApigeeV1ApiCategory
     {
     }
 }

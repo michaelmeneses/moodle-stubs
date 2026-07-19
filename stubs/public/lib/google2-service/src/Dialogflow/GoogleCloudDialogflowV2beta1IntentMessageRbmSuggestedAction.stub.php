@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedAction extends \Google\Model
-{
-    protected $dialType = GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedActionRbmSuggestedActionDial::class;
-    protected $dialDataType = '';
-    protected $openUrlType = GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedActionRbmSuggestedActionOpenUri::class;
-    protected $openUrlDataType = '';
-    /**
-     * Opaque payload that the Dialogflow receives in a user event when the user
-     * taps the suggested action. This data will be also forwarded to webhook to
-     * allow performing custom business logic.
-     *
-     * @var string
-     */
-    public $postbackData;
-    protected $shareLocationType = GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedActionRbmSuggestedActionShareLocation::class;
-    protected $shareLocationDataType = '';
-    /**
-     * Text to display alongside the action.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * Suggested client side action: Dial a phone number
-     *
-     * @param GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedActionRbmSuggestedActionDial $dial
-     */
-    public function setDial(GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedActionRbmSuggestedActionDial $dial)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedAction extends \Google\Model
     {
+        protected $dialType = GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedActionRbmSuggestedActionDial::class;
+        protected $dialDataType = '';
+        protected $openUrlType = GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedActionRbmSuggestedActionOpenUri::class;
+        protected $openUrlDataType = '';
+        /**
+         * Opaque payload that the Dialogflow receives in a user event when the user
+         * taps the suggested action. This data will be also forwarded to webhook to
+         * allow performing custom business logic.
+         *
+         * @var string
+         */
+        public $postbackData;
+        protected $shareLocationType = GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedActionRbmSuggestedActionShareLocation::class;
+        protected $shareLocationDataType = '';
+        /**
+         * Text to display alongside the action.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * Suggested client side action: Dial a phone number
+         *
+         * @param GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedActionRbmSuggestedActionDial $dial
+         */
+        public function setDial(GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedActionRbmSuggestedActionDial $dial)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedActionRbmSuggestedActionDial
+         */
+        public function getDial()
+        {
+        }
+        /**
+         * Suggested client side action: Open a URI on device
+         *
+         * @param GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedActionRbmSuggestedActionOpenUri $openUrl
+         */
+        public function setOpenUrl(GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedActionRbmSuggestedActionOpenUri $openUrl)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedActionRbmSuggestedActionOpenUri
+         */
+        public function getOpenUrl()
+        {
+        }
+        /**
+         * Opaque payload that the Dialogflow receives in a user event when the user
+         * taps the suggested action. This data will be also forwarded to webhook to
+         * allow performing custom business logic.
+         *
+         * @param string $postbackData
+         */
+        public function setPostbackData($postbackData)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPostbackData()
+        {
+        }
+        /**
+         * Suggested client side action: Share user location
+         *
+         * @param GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedActionRbmSuggestedActionShareLocation $shareLocation
+         */
+        public function setShareLocation(GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedActionRbmSuggestedActionShareLocation $shareLocation)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedActionRbmSuggestedActionShareLocation
+         */
+        public function getShareLocation()
+        {
+        }
+        /**
+         * Text to display alongside the action.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedActionRbmSuggestedActionDial
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDial()
-    {
-    }
-    /**
-     * Suggested client side action: Open a URI on device
-     *
-     * @param GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedActionRbmSuggestedActionOpenUri $openUrl
-     */
-    public function setOpenUrl(GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedActionRbmSuggestedActionOpenUri $openUrl)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedActionRbmSuggestedActionOpenUri
-     */
-    public function getOpenUrl()
-    {
-    }
-    /**
-     * Opaque payload that the Dialogflow receives in a user event when the user
-     * taps the suggested action. This data will be also forwarded to webhook to
-     * allow performing custom business logic.
-     *
-     * @param string $postbackData
-     */
-    public function setPostbackData($postbackData)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPostbackData()
-    {
-    }
-    /**
-     * Suggested client side action: Share user location
-     *
-     * @param GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedActionRbmSuggestedActionShareLocation $shareLocation
-     */
-    public function setShareLocation(GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedActionRbmSuggestedActionShareLocation $shareLocation)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedActionRbmSuggestedActionShareLocation
-     */
-    public function getShareLocation()
-    {
-    }
-    /**
-     * Text to display alongside the action.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedAction extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedAction
     {
     }
 }

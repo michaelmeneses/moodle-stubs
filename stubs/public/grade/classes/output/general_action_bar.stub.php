@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_grades\output;
 
+use moodle_url;
+use core\output\select_menu;
 /**
  * Renderable class for the general action bar in the gradebook pages.
  *

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter;
-
-class SSOProfileUpdatedEvent extends \Google\Model
-{
-    /**
-     * changes made to sso profile
-     *
-     * @var string
-     */
-    public $inboundSsoProfileChanges;
-    /**
-     * sso profile name which got updated
-     *
-     * @var string
-     */
-    public $inboundSsoProfileName;
-    /**
-     * changes made to sso profile
-     *
-     * @param string $inboundSsoProfileChanges
-     */
-    public function setInboundSsoProfileChanges($inboundSsoProfileChanges)
+namespace Google\Service\AlertCenter {
+    class SSOProfileUpdatedEvent extends \Google\Model
     {
+        /**
+         * changes made to sso profile
+         *
+         * @var string
+         */
+        public $inboundSsoProfileChanges;
+        /**
+         * sso profile name which got updated
+         *
+         * @var string
+         */
+        public $inboundSsoProfileName;
+        /**
+         * changes made to sso profile
+         *
+         * @param string $inboundSsoProfileChanges
+         */
+        public function setInboundSsoProfileChanges($inboundSsoProfileChanges)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInboundSsoProfileChanges()
+        {
+        }
+        /**
+         * sso profile name which got updated
+         *
+         * @param string $inboundSsoProfileName
+         */
+        public function setInboundSsoProfileName($inboundSsoProfileName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInboundSsoProfileName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AlertCenter\SSOProfileUpdatedEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInboundSsoProfileChanges()
-    {
-    }
-    /**
-     * sso profile name which got updated
-     *
-     * @param string $inboundSsoProfileName
-     */
-    public function setInboundSsoProfileName($inboundSsoProfileName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInboundSsoProfileName()
+    class Google_Service_AlertCenter_SSOProfileUpdatedEvent extends \Google\Service\AlertCenter\SSOProfileUpdatedEvent
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Gmail;
-
-class SignAndEncryptKeyPairs extends \Google\Model
-{
-    /**
-     * The ID of the CseKeyPair that encrypts signed outgoing mail.
-     *
-     * @var string
-     */
-    public $encryptionKeyPairId;
-    /**
-     * The ID of the CseKeyPair that signs outgoing mail.
-     *
-     * @var string
-     */
-    public $signingKeyPairId;
-    /**
-     * The ID of the CseKeyPair that encrypts signed outgoing mail.
-     *
-     * @param string $encryptionKeyPairId
-     */
-    public function setEncryptionKeyPairId($encryptionKeyPairId)
+namespace Google\Service\Gmail {
+    class SignAndEncryptKeyPairs extends \Google\Model
     {
+        /**
+         * The ID of the CseKeyPair that encrypts signed outgoing mail.
+         *
+         * @var string
+         */
+        public $encryptionKeyPairId;
+        /**
+         * The ID of the CseKeyPair that signs outgoing mail.
+         *
+         * @var string
+         */
+        public $signingKeyPairId;
+        /**
+         * The ID of the CseKeyPair that encrypts signed outgoing mail.
+         *
+         * @param string $encryptionKeyPairId
+         */
+        public function setEncryptionKeyPairId($encryptionKeyPairId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEncryptionKeyPairId()
+        {
+        }
+        /**
+         * The ID of the CseKeyPair that signs outgoing mail.
+         *
+         * @param string $signingKeyPairId
+         */
+        public function setSigningKeyPairId($signingKeyPairId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSigningKeyPairId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Gmail\SignAndEncryptKeyPairs registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEncryptionKeyPairId()
-    {
-    }
-    /**
-     * The ID of the CseKeyPair that signs outgoing mail.
-     *
-     * @param string $signingKeyPairId
-     */
-    public function setSigningKeyPairId($signingKeyPairId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSigningKeyPairId()
+    class Google_Service_Gmail_SignAndEncryptKeyPairs extends \Google\Service\Gmail\SignAndEncryptKeyPairs
     {
     }
 }

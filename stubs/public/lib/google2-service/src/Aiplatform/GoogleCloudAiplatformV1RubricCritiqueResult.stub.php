@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RubricCritiqueResult extends \Google\Model
-{
-    /**
-     * Output only. Rubric to be evaluated.
-     *
-     * @var string
-     */
-    public $rubric;
-    /**
-     * Output only. Verdict for the rubric - true if the rubric is met, false
-     * otherwise.
-     *
-     * @var bool
-     */
-    public $verdict;
-    /**
-     * Output only. Rubric to be evaluated.
-     *
-     * @param string $rubric
-     */
-    public function setRubric($rubric)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RubricCritiqueResult extends \Google\Model
     {
+        /**
+         * Output only. Rubric to be evaluated.
+         *
+         * @var string
+         */
+        public $rubric;
+        /**
+         * Output only. Verdict for the rubric - true if the rubric is met, false
+         * otherwise.
+         *
+         * @var bool
+         */
+        public $verdict;
+        /**
+         * Output only. Rubric to be evaluated.
+         *
+         * @param string $rubric
+         */
+        public function setRubric($rubric)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRubric()
+        {
+        }
+        /**
+         * Output only. Verdict for the rubric - true if the rubric is met, false
+         * otherwise.
+         *
+         * @param bool $verdict
+         */
+        public function setVerdict($verdict)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getVerdict()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RubricCritiqueResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRubric()
-    {
-    }
-    /**
-     * Output only. Verdict for the rubric - true if the rubric is met, false
-     * otherwise.
-     *
-     * @param bool $verdict
-     */
-    public function setVerdict($verdict)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getVerdict()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RubricCritiqueResult extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RubricCritiqueResult
     {
     }
 }

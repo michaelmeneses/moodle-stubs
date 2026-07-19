@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1EnvironmentConfigClientIPResolutionConfig extends \Google\Model
-{
-    protected $headerIndexAlgorithmType = GoogleCloudApigeeV1EnvironmentConfigClientIPResolutionConfigHeaderIndexAlgorithm::class;
-    protected $headerIndexAlgorithmDataType = '';
-    /**
-     * Resolves the client ip based on a custom header.
-     *
-     * @param GoogleCloudApigeeV1EnvironmentConfigClientIPResolutionConfigHeaderIndexAlgorithm $headerIndexAlgorithm
-     */
-    public function setHeaderIndexAlgorithm(GoogleCloudApigeeV1EnvironmentConfigClientIPResolutionConfigHeaderIndexAlgorithm $headerIndexAlgorithm)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1EnvironmentConfigClientIPResolutionConfig extends \Google\Model
     {
+        protected $headerIndexAlgorithmType = GoogleCloudApigeeV1EnvironmentConfigClientIPResolutionConfigHeaderIndexAlgorithm::class;
+        protected $headerIndexAlgorithmDataType = '';
+        /**
+         * Resolves the client ip based on a custom header.
+         *
+         * @param GoogleCloudApigeeV1EnvironmentConfigClientIPResolutionConfigHeaderIndexAlgorithm $headerIndexAlgorithm
+         */
+        public function setHeaderIndexAlgorithm(GoogleCloudApigeeV1EnvironmentConfigClientIPResolutionConfigHeaderIndexAlgorithm $headerIndexAlgorithm)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1EnvironmentConfigClientIPResolutionConfigHeaderIndexAlgorithm
+         */
+        public function getHeaderIndexAlgorithm()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1EnvironmentConfigClientIPResolutionConfigHeaderIndexAlgorithm
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1EnvironmentConfigClientIPResolutionConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHeaderIndexAlgorithm()
+    class Google_Service_Apigee_GoogleCloudApigeeV1EnvironmentConfigClientIPResolutionConfig extends \Google\Service\Apigee\GoogleCloudApigeeV1EnvironmentConfigClientIPResolutionConfig
     {
     }
 }

@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GamesManagement;
-
-class PlayerScoreResetAllResponse extends \Google\Collection
-{
-    protected $collection_key = 'results';
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `gamesManagement#playerScoreResetAllResponse`.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $resultsType = PlayerScoreResetResponse::class;
-    protected $resultsDataType = 'array';
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `gamesManagement#playerScoreResetAllResponse`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\GamesManagement {
+    class PlayerScoreResetAllResponse extends \Google\Collection
     {
+        protected $collection_key = 'results';
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `gamesManagement#playerScoreResetAllResponse`.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $resultsType = PlayerScoreResetResponse::class;
+        protected $resultsDataType = 'array';
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `gamesManagement#playerScoreResetAllResponse`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The leaderboard reset results.
+         *
+         * @param PlayerScoreResetResponse[] $results
+         */
+        public function setResults($results)
+        {
+        }
+        /**
+         * @return PlayerScoreResetResponse[]
+         */
+        public function getResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GamesManagement\PlayerScoreResetAllResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * The leaderboard reset results.
-     *
-     * @param PlayerScoreResetResponse[] $results
-     */
-    public function setResults($results)
-    {
-    }
-    /**
-     * @return PlayerScoreResetResponse[]
-     */
-    public function getResults()
+    class Google_Service_GamesManagement_PlayerScoreResetAllResponse extends \Google\Service\GamesManagement\PlayerScoreResetAllResponse
     {
     }
 }

@@ -21,127 +21,136 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GcpMetadata extends \Google\Collection
-{
-    protected $collection_key = 'folders';
-    protected $foldersType = GoogleCloudSecuritycenterV2Folder::class;
-    protected $foldersDataType = 'array';
-    /**
-     * The name of the organization that the resource belongs to.
-     *
-     * @var string
-     */
-    public $organization;
-    /**
-     * The full resource name of resource's parent.
-     *
-     * @var string
-     */
-    public $parent;
-    /**
-     * The human readable name of resource's parent.
-     *
-     * @var string
-     */
-    public $parentDisplayName;
-    /**
-     * The full resource name of project that the resource belongs to.
-     *
-     * @var string
-     */
-    public $project;
-    /**
-     * The project ID that the resource belongs to.
-     *
-     * @var string
-     */
-    public $projectDisplayName;
-    /**
-     * Output only. Contains a Folder message for each folder in the assets
-     * ancestry. The first folder is the deepest nested folder, and the last
-     * folder is the folder directly under the Organization.
-     *
-     * @param GoogleCloudSecuritycenterV2Folder[] $folders
-     */
-    public function setFolders($folders)
+namespace Google\Service\SecurityCommandCenter {
+    class GcpMetadata extends \Google\Collection
     {
+        protected $collection_key = 'folders';
+        protected $foldersType = GoogleCloudSecuritycenterV2Folder::class;
+        protected $foldersDataType = 'array';
+        /**
+         * The name of the organization that the resource belongs to.
+         *
+         * @var string
+         */
+        public $organization;
+        /**
+         * The full resource name of resource's parent.
+         *
+         * @var string
+         */
+        public $parent;
+        /**
+         * The human readable name of resource's parent.
+         *
+         * @var string
+         */
+        public $parentDisplayName;
+        /**
+         * The full resource name of project that the resource belongs to.
+         *
+         * @var string
+         */
+        public $project;
+        /**
+         * The project ID that the resource belongs to.
+         *
+         * @var string
+         */
+        public $projectDisplayName;
+        /**
+         * Output only. Contains a Folder message for each folder in the assets
+         * ancestry. The first folder is the deepest nested folder, and the last
+         * folder is the folder directly under the Organization.
+         *
+         * @param GoogleCloudSecuritycenterV2Folder[] $folders
+         */
+        public function setFolders($folders)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2Folder[]
+         */
+        public function getFolders()
+        {
+        }
+        /**
+         * The name of the organization that the resource belongs to.
+         *
+         * @param string $organization
+         */
+        public function setOrganization($organization)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrganization()
+        {
+        }
+        /**
+         * The full resource name of resource's parent.
+         *
+         * @param string $parent
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
+        /**
+         * The human readable name of resource's parent.
+         *
+         * @param string $parentDisplayName
+         */
+        public function setParentDisplayName($parentDisplayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParentDisplayName()
+        {
+        }
+        /**
+         * The full resource name of project that the resource belongs to.
+         *
+         * @param string $project
+         */
+        public function setProject($project)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProject()
+        {
+        }
+        /**
+         * The project ID that the resource belongs to.
+         *
+         * @param string $projectDisplayName
+         */
+        public function setProjectDisplayName($projectDisplayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectDisplayName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudSecuritycenterV2Folder[]
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GcpMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFolders()
-    {
-    }
-    /**
-     * The name of the organization that the resource belongs to.
-     *
-     * @param string $organization
-     */
-    public function setOrganization($organization)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrganization()
-    {
-    }
-    /**
-     * The full resource name of resource's parent.
-     *
-     * @param string $parent
-     */
-    public function setParent($parent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParent()
-    {
-    }
-    /**
-     * The human readable name of resource's parent.
-     *
-     * @param string $parentDisplayName
-     */
-    public function setParentDisplayName($parentDisplayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParentDisplayName()
-    {
-    }
-    /**
-     * The full resource name of project that the resource belongs to.
-     *
-     * @param string $project
-     */
-    public function setProject($project)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProject()
-    {
-    }
-    /**
-     * The project ID that the resource belongs to.
-     *
-     * @param string $projectDisplayName
-     */
-    public function setProjectDisplayName($projectDisplayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectDisplayName()
+    class Google_Service_SecurityCommandCenter_GcpMetadata extends \Google\Service\SecurityCommandCenter\GcpMetadata
     {
     }
 }

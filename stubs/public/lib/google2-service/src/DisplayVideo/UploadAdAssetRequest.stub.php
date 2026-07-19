@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class UploadAdAssetRequest extends \Google\Model
-{
-    /**
-     * The ad asset type is unspecified.
-     */
-    public const AD_ASSET_TYPE_AD_ASSET_TYPE_UNSPECIFIED = 'AD_ASSET_TYPE_UNSPECIFIED';
-    /**
-     * The ad asset is a YouTube/DemandGen image.
-     */
-    public const AD_ASSET_TYPE_AD_ASSET_TYPE_IMAGE = 'AD_ASSET_TYPE_IMAGE';
-    /**
-     * The ad asset is a YouTube video.
-     */
-    public const AD_ASSET_TYPE_AD_ASSET_TYPE_YOUTUBE_VIDEO = 'AD_ASSET_TYPE_YOUTUBE_VIDEO';
-    /**
-     * Required. The type of the ad asset. Only `AD_ASSET_TYPE_IMAGE` is
-     * supported.
-     *
-     * @var string
-     */
-    public $adAssetType;
-    /**
-     * Required. The filename of the ad asset, including the file extension. The
-     * filename must be UTF-8 encoded with a maximum size of 240 bytes.
-     *
-     * @var string
-     */
-    public $filename;
-    /**
-     * Required. The type of the ad asset. Only `AD_ASSET_TYPE_IMAGE` is
-     * supported.
-     *
-     * Accepted values: AD_ASSET_TYPE_UNSPECIFIED, AD_ASSET_TYPE_IMAGE,
-     * AD_ASSET_TYPE_YOUTUBE_VIDEO
-     *
-     * @param self::AD_ASSET_TYPE_* $adAssetType
-     */
-    public function setAdAssetType($adAssetType)
+namespace Google\Service\DisplayVideo {
+    class UploadAdAssetRequest extends \Google\Model
     {
+        /**
+         * The ad asset type is unspecified.
+         */
+        public const AD_ASSET_TYPE_AD_ASSET_TYPE_UNSPECIFIED = 'AD_ASSET_TYPE_UNSPECIFIED';
+        /**
+         * The ad asset is a YouTube/DemandGen image.
+         */
+        public const AD_ASSET_TYPE_AD_ASSET_TYPE_IMAGE = 'AD_ASSET_TYPE_IMAGE';
+        /**
+         * The ad asset is a YouTube video.
+         */
+        public const AD_ASSET_TYPE_AD_ASSET_TYPE_YOUTUBE_VIDEO = 'AD_ASSET_TYPE_YOUTUBE_VIDEO';
+        /**
+         * Required. The type of the ad asset. Only `AD_ASSET_TYPE_IMAGE` is
+         * supported.
+         *
+         * @var string
+         */
+        public $adAssetType;
+        /**
+         * Required. The filename of the ad asset, including the file extension. The
+         * filename must be UTF-8 encoded with a maximum size of 240 bytes.
+         *
+         * @var string
+         */
+        public $filename;
+        /**
+         * Required. The type of the ad asset. Only `AD_ASSET_TYPE_IMAGE` is
+         * supported.
+         *
+         * Accepted values: AD_ASSET_TYPE_UNSPECIFIED, AD_ASSET_TYPE_IMAGE,
+         * AD_ASSET_TYPE_YOUTUBE_VIDEO
+         *
+         * @param self::AD_ASSET_TYPE_* $adAssetType
+         */
+        public function setAdAssetType($adAssetType)
+        {
+        }
+        /**
+         * @return self::AD_ASSET_TYPE_*
+         */
+        public function getAdAssetType()
+        {
+        }
+        /**
+         * Required. The filename of the ad asset, including the file extension. The
+         * filename must be UTF-8 encoded with a maximum size of 240 bytes.
+         *
+         * @param string $filename
+         */
+        public function setFilename($filename)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilename()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::AD_ASSET_TYPE_*
+     * Runtime class alias of \Google\Service\DisplayVideo\UploadAdAssetRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdAssetType()
-    {
-    }
-    /**
-     * Required. The filename of the ad asset, including the file extension. The
-     * filename must be UTF-8 encoded with a maximum size of 240 bytes.
-     *
-     * @param string $filename
-     */
-    public function setFilename($filename)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFilename()
+    class Google_Service_DisplayVideo_UploadAdAssetRequest extends \Google\Service\DisplayVideo\UploadAdAssetRequest
     {
     }
 }

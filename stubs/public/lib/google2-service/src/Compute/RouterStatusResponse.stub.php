@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class RouterStatusResponse extends \Google\Model
-{
-    /**
-     * Output only. Type of resource.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $resultType = RouterStatus::class;
-    protected $resultDataType = '';
-    /**
-     * Output only. Type of resource.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Compute {
+    class RouterStatusResponse extends \Google\Model
     {
+        /**
+         * Output only. Type of resource.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $resultType = RouterStatus::class;
+        protected $resultDataType = '';
+        /**
+         * Output only. Type of resource.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param RouterStatus $result
+         */
+        public function setResult(RouterStatus $result)
+        {
+        }
+        /**
+         * @return RouterStatus
+         */
+        public function getResult()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\RouterStatusResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * @param RouterStatus $result
-     */
-    public function setResult(RouterStatus $result)
-    {
-    }
-    /**
-     * @return RouterStatus
-     */
-    public function getResult()
+    class Google_Service_Compute_RouterStatusResponse extends \Google\Service\Compute\RouterStatusResponse
     {
     }
 }

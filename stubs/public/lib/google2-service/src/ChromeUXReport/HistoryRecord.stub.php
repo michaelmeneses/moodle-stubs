@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeUXReport;
-
-class HistoryRecord extends \Google\Collection
-{
-    protected $collection_key = 'collectionPeriods';
-    protected $collectionPeriodsType = CollectionPeriod::class;
-    protected $collectionPeriodsDataType = 'array';
-    protected $keyType = HistoryKey::class;
-    protected $keyDataType = '';
-    protected $metricsType = MetricTimeseries::class;
-    protected $metricsDataType = 'map';
-    /**
-     * The collection periods indicate when each of the data points reflected in
-     * the time series data in metrics was collected. Note that all the time
-     * series share the same collection periods, and it is enforced in the CrUX
-     * pipeline that every time series has the same number of data points.
-     *
-     * @param CollectionPeriod[] $collectionPeriods
-     */
-    public function setCollectionPeriods($collectionPeriods)
+namespace Google\Service\ChromeUXReport {
+    class HistoryRecord extends \Google\Collection
     {
+        protected $collection_key = 'collectionPeriods';
+        protected $collectionPeriodsType = CollectionPeriod::class;
+        protected $collectionPeriodsDataType = 'array';
+        protected $keyType = HistoryKey::class;
+        protected $keyDataType = '';
+        protected $metricsType = MetricTimeseries::class;
+        protected $metricsDataType = 'map';
+        /**
+         * The collection periods indicate when each of the data points reflected in
+         * the time series data in metrics was collected. Note that all the time
+         * series share the same collection periods, and it is enforced in the CrUX
+         * pipeline that every time series has the same number of data points.
+         *
+         * @param CollectionPeriod[] $collectionPeriods
+         */
+        public function setCollectionPeriods($collectionPeriods)
+        {
+        }
+        /**
+         * @return CollectionPeriod[]
+         */
+        public function getCollectionPeriods()
+        {
+        }
+        /**
+         * Key defines all of the unique querying parameters needed to look up a user
+         * experience history record.
+         *
+         * @param HistoryKey $key
+         */
+        public function setKey(HistoryKey $key)
+        {
+        }
+        /**
+         * @return HistoryKey
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * Metrics is the map of user experience time series data available for the
+         * record defined in the key field. Metrics are keyed on the metric name.
+         * Allowed key values: ["first_contentful_paint", "first_input_delay",
+         * "largest_contentful_paint", "cumulative_layout_shift",
+         * "experimental_time_to_first_byte",
+         * "experimental_interaction_to_next_paint"]
+         *
+         * @param MetricTimeseries[] $metrics
+         */
+        public function setMetrics($metrics)
+        {
+        }
+        /**
+         * @return MetricTimeseries[]
+         */
+        public function getMetrics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CollectionPeriod[]
+     * Runtime class alias of \Google\Service\ChromeUXReport\HistoryRecord registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCollectionPeriods()
-    {
-    }
-    /**
-     * Key defines all of the unique querying parameters needed to look up a user
-     * experience history record.
-     *
-     * @param HistoryKey $key
-     */
-    public function setKey(HistoryKey $key)
-    {
-    }
-    /**
-     * @return HistoryKey
-     */
-    public function getKey()
-    {
-    }
-    /**
-     * Metrics is the map of user experience time series data available for the
-     * record defined in the key field. Metrics are keyed on the metric name.
-     * Allowed key values: ["first_contentful_paint", "first_input_delay",
-     * "largest_contentful_paint", "cumulative_layout_shift",
-     * "experimental_time_to_first_byte",
-     * "experimental_interaction_to_next_paint"]
-     *
-     * @param MetricTimeseries[] $metrics
-     */
-    public function setMetrics($metrics)
-    {
-    }
-    /**
-     * @return MetricTimeseries[]
-     */
-    public function getMetrics()
+    class Google_Service_ChromeUXReport_HistoryRecord extends \Google\Service\ChromeUXReport\HistoryRecord
     {
     }
 }

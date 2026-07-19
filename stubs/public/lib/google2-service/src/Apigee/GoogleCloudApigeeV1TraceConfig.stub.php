@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1TraceConfig extends \Google\Model
-{
-    /**
-     * Exporter unspecified
-     */
-    public const EXPORTER_EXPORTER_UNSPECIFIED = 'EXPORTER_UNSPECIFIED';
-    /**
-     * Jaeger exporter
-     */
-    public const EXPORTER_JAEGER = 'JAEGER';
-    /**
-     * Cloudtrace exporter
-     */
-    public const EXPORTER_CLOUD_TRACE = 'CLOUD_TRACE';
-    /**
-     * Required. Endpoint of the exporter.
-     *
-     * @var string
-     */
-    public $endpoint;
-    /**
-     * Required. Exporter that is used to view the distributed trace captured
-     * using OpenCensus. An exporter sends traces to any backend that is capable
-     * of consuming them. Recorded spans can be exported by registered exporters.
-     *
-     * @var string
-     */
-    public $exporter;
-    protected $samplingConfigType = GoogleCloudApigeeV1TraceSamplingConfig::class;
-    protected $samplingConfigDataType = '';
-    /**
-     * Required. Endpoint of the exporter.
-     *
-     * @param string $endpoint
-     */
-    public function setEndpoint($endpoint)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1TraceConfig extends \Google\Model
     {
+        /**
+         * Exporter unspecified
+         */
+        public const EXPORTER_EXPORTER_UNSPECIFIED = 'EXPORTER_UNSPECIFIED';
+        /**
+         * Jaeger exporter
+         */
+        public const EXPORTER_JAEGER = 'JAEGER';
+        /**
+         * Cloudtrace exporter
+         */
+        public const EXPORTER_CLOUD_TRACE = 'CLOUD_TRACE';
+        /**
+         * Required. Endpoint of the exporter.
+         *
+         * @var string
+         */
+        public $endpoint;
+        /**
+         * Required. Exporter that is used to view the distributed trace captured
+         * using OpenCensus. An exporter sends traces to any backend that is capable
+         * of consuming them. Recorded spans can be exported by registered exporters.
+         *
+         * @var string
+         */
+        public $exporter;
+        protected $samplingConfigType = GoogleCloudApigeeV1TraceSamplingConfig::class;
+        protected $samplingConfigDataType = '';
+        /**
+         * Required. Endpoint of the exporter.
+         *
+         * @param string $endpoint
+         */
+        public function setEndpoint($endpoint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndpoint()
+        {
+        }
+        /**
+         * Required. Exporter that is used to view the distributed trace captured
+         * using OpenCensus. An exporter sends traces to any backend that is capable
+         * of consuming them. Recorded spans can be exported by registered exporters.
+         *
+         * Accepted values: EXPORTER_UNSPECIFIED, JAEGER, CLOUD_TRACE
+         *
+         * @param self::EXPORTER_* $exporter
+         */
+        public function setExporter($exporter)
+        {
+        }
+        /**
+         * @return self::EXPORTER_*
+         */
+        public function getExporter()
+        {
+        }
+        /**
+         * Distributed trace configuration for all API proxies in an environment. You
+         * can also override the configuration for a specific API proxy using the
+         * distributed trace configuration overrides API.
+         *
+         * @param GoogleCloudApigeeV1TraceSamplingConfig $samplingConfig
+         */
+        public function setSamplingConfig(GoogleCloudApigeeV1TraceSamplingConfig $samplingConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1TraceSamplingConfig
+         */
+        public function getSamplingConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1TraceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndpoint()
-    {
-    }
-    /**
-     * Required. Exporter that is used to view the distributed trace captured
-     * using OpenCensus. An exporter sends traces to any backend that is capable
-     * of consuming them. Recorded spans can be exported by registered exporters.
-     *
-     * Accepted values: EXPORTER_UNSPECIFIED, JAEGER, CLOUD_TRACE
-     *
-     * @param self::EXPORTER_* $exporter
-     */
-    public function setExporter($exporter)
-    {
-    }
-    /**
-     * @return self::EXPORTER_*
-     */
-    public function getExporter()
-    {
-    }
-    /**
-     * Distributed trace configuration for all API proxies in an environment. You
-     * can also override the configuration for a specific API proxy using the
-     * distributed trace configuration overrides API.
-     *
-     * @param GoogleCloudApigeeV1TraceSamplingConfig $samplingConfig
-     */
-    public function setSamplingConfig(GoogleCloudApigeeV1TraceSamplingConfig $samplingConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1TraceSamplingConfig
-     */
-    public function getSamplingConfig()
+    class Google_Service_Apigee_GoogleCloudApigeeV1TraceConfig extends \Google\Service\Apigee\GoogleCloudApigeeV1TraceConfig
     {
     }
 }

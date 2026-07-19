@@ -21,115 +21,124 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class Subaccount extends \Google\Collection
-{
-    protected $collection_key = 'availablePermissionIds';
-    /**
-     * ID of the account that contains this subaccount. This is a read-only field
-     * that can be left blank.
-     *
-     * @var string
-     */
-    public $accountId;
-    /**
-     * IDs of the available user role permissions for this subaccount.
-     *
-     * @var string[]
-     */
-    public $availablePermissionIds;
-    /**
-     * ID of this subaccount. This is a read-only, auto-generated field.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#subaccount".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Name of this subaccount. This is a required field. Must be less than 128
-     * characters long and be unique among subaccounts of the same account.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * ID of the account that contains this subaccount. This is a read-only field
-     * that can be left blank.
-     *
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\Dfareporting {
+    class Subaccount extends \Google\Collection
     {
+        protected $collection_key = 'availablePermissionIds';
+        /**
+         * ID of the account that contains this subaccount. This is a read-only field
+         * that can be left blank.
+         *
+         * @var string
+         */
+        public $accountId;
+        /**
+         * IDs of the available user role permissions for this subaccount.
+         *
+         * @var string[]
+         */
+        public $availablePermissionIds;
+        /**
+         * ID of this subaccount. This is a read-only, auto-generated field.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#subaccount".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Name of this subaccount. This is a required field. Must be less than 128
+         * characters long and be unique among subaccounts of the same account.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * ID of the account that contains this subaccount. This is a read-only field
+         * that can be left blank.
+         *
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * IDs of the available user role permissions for this subaccount.
+         *
+         * @param string[] $availablePermissionIds
+         */
+        public function setAvailablePermissionIds($availablePermissionIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAvailablePermissionIds()
+        {
+        }
+        /**
+         * ID of this subaccount. This is a read-only, auto-generated field.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#subaccount".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Name of this subaccount. This is a required field. Must be less than 128
+         * characters long and be unique among subaccounts of the same account.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\Subaccount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * IDs of the available user role permissions for this subaccount.
-     *
-     * @param string[] $availablePermissionIds
-     */
-    public function setAvailablePermissionIds($availablePermissionIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getAvailablePermissionIds()
-    {
-    }
-    /**
-     * ID of this subaccount. This is a read-only, auto-generated field.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#subaccount".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Name of this subaccount. This is a required field. Must be less than 128
-     * characters long and be unique among subaccounts of the same account.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Dfareporting_Subaccount extends \Google\Service\Dfareporting\Subaccount
     {
     }
 }

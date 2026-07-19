@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Looker;
-
-class PscConfig extends \Google\Collection
-{
-    protected $collection_key = 'serviceAttachments';
-    /**
-     * Optional. List of VPCs that are allowed ingress into looker. Format:
-     * projects/{project}/global/networks/{network}
-     *
-     * @var string[]
-     */
-    public $allowedVpcs;
-    /**
-     * Output only. URI of the Looker service attachment.
-     *
-     * @var string
-     */
-    public $lookerServiceAttachmentUri;
-    protected $serviceAttachmentsType = ServiceAttachment::class;
-    protected $serviceAttachmentsDataType = 'array';
-    /**
-     * Optional. List of VPCs that are allowed ingress into looker. Format:
-     * projects/{project}/global/networks/{network}
-     *
-     * @param string[] $allowedVpcs
-     */
-    public function setAllowedVpcs($allowedVpcs)
+namespace Google\Service\Looker {
+    class PscConfig extends \Google\Collection
     {
+        protected $collection_key = 'serviceAttachments';
+        /**
+         * Optional. List of VPCs that are allowed ingress into looker. Format:
+         * projects/{project}/global/networks/{network}
+         *
+         * @var string[]
+         */
+        public $allowedVpcs;
+        /**
+         * Output only. URI of the Looker service attachment.
+         *
+         * @var string
+         */
+        public $lookerServiceAttachmentUri;
+        protected $serviceAttachmentsType = ServiceAttachment::class;
+        protected $serviceAttachmentsDataType = 'array';
+        /**
+         * Optional. List of VPCs that are allowed ingress into looker. Format:
+         * projects/{project}/global/networks/{network}
+         *
+         * @param string[] $allowedVpcs
+         */
+        public function setAllowedVpcs($allowedVpcs)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAllowedVpcs()
+        {
+        }
+        /**
+         * Output only. URI of the Looker service attachment.
+         *
+         * @param string $lookerServiceAttachmentUri
+         */
+        public function setLookerServiceAttachmentUri($lookerServiceAttachmentUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLookerServiceAttachmentUri()
+        {
+        }
+        /**
+         * Optional. List of egress service attachment configurations.
+         *
+         * @param ServiceAttachment[] $serviceAttachments
+         */
+        public function setServiceAttachments($serviceAttachments)
+        {
+        }
+        /**
+         * @return ServiceAttachment[]
+         */
+        public function getServiceAttachments()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Looker\PscConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowedVpcs()
-    {
-    }
-    /**
-     * Output only. URI of the Looker service attachment.
-     *
-     * @param string $lookerServiceAttachmentUri
-     */
-    public function setLookerServiceAttachmentUri($lookerServiceAttachmentUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLookerServiceAttachmentUri()
-    {
-    }
-    /**
-     * Optional. List of egress service attachment configurations.
-     *
-     * @param ServiceAttachment[] $serviceAttachments
-     */
-    public function setServiceAttachments($serviceAttachments)
-    {
-    }
-    /**
-     * @return ServiceAttachment[]
-     */
-    public function getServiceAttachments()
+    class Google_Service_Looker_PscConfig extends \Google\Service\Looker\PscConfig
     {
     }
 }

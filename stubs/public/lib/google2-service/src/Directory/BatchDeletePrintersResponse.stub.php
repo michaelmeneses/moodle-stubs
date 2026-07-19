@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class BatchDeletePrintersResponse extends \Google\Collection
-{
-    protected $collection_key = 'printerIds';
-    protected $failedPrintersType = FailureInfo::class;
-    protected $failedPrintersDataType = 'array';
-    /**
-     * A list of Printer.id that were successfully deleted.
-     *
-     * @var string[]
-     */
-    public $printerIds;
-    /**
-     * A list of update failures.
-     *
-     * @param FailureInfo[] $failedPrinters
-     */
-    public function setFailedPrinters($failedPrinters)
+namespace Google\Service\Directory {
+    class BatchDeletePrintersResponse extends \Google\Collection
     {
+        protected $collection_key = 'printerIds';
+        protected $failedPrintersType = FailureInfo::class;
+        protected $failedPrintersDataType = 'array';
+        /**
+         * A list of Printer.id that were successfully deleted.
+         *
+         * @var string[]
+         */
+        public $printerIds;
+        /**
+         * A list of update failures.
+         *
+         * @param FailureInfo[] $failedPrinters
+         */
+        public function setFailedPrinters($failedPrinters)
+        {
+        }
+        /**
+         * @return FailureInfo[]
+         */
+        public function getFailedPrinters()
+        {
+        }
+        /**
+         * A list of Printer.id that were successfully deleted.
+         *
+         * @param string[] $printerIds
+         */
+        public function setPrinterIds($printerIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPrinterIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FailureInfo[]
+     * Runtime class alias of \Google\Service\Directory\BatchDeletePrintersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFailedPrinters()
-    {
-    }
-    /**
-     * A list of Printer.id that were successfully deleted.
-     *
-     * @param string[] $printerIds
-     */
-    public function setPrinterIds($printerIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPrinterIds()
+    class Google_Service_Directory_BatchDeletePrintersResponse extends \Google\Service\Directory\BatchDeletePrintersResponse
     {
     }
 }

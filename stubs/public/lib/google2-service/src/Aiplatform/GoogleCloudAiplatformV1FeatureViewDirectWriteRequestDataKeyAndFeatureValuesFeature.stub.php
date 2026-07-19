@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1FeatureViewDirectWriteRequestDataKeyAndFeatureValuesFeature extends \Google\Model
-{
-    /**
-     * Feature short name.
-     *
-     * @var string
-     */
-    public $name;
-    protected $valueType = GoogleCloudAiplatformV1FeatureValue::class;
-    protected $valueDataType = '';
-    /**
-     * Feature short name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1FeatureViewDirectWriteRequestDataKeyAndFeatureValuesFeature extends \Google\Model
     {
+        /**
+         * Feature short name.
+         *
+         * @var string
+         */
+        public $name;
+        protected $valueType = GoogleCloudAiplatformV1FeatureValue::class;
+        protected $valueDataType = '';
+        /**
+         * Feature short name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Feature value. A user provided timestamp may be set in the
+         * `FeatureValue.metadata.generate_time` field.
+         *
+         * @param GoogleCloudAiplatformV1FeatureValue $value
+         */
+        public function setValue(GoogleCloudAiplatformV1FeatureValue $value)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1FeatureValue
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureViewDirectWriteRequestDataKeyAndFeatureValuesFeature registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Feature value. A user provided timestamp may be set in the
-     * `FeatureValue.metadata.generate_time` field.
-     *
-     * @param GoogleCloudAiplatformV1FeatureValue $value
-     */
-    public function setValue(GoogleCloudAiplatformV1FeatureValue $value)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1FeatureValue
-     */
-    public function getValue()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1FeatureViewDirectWriteRequestDataKeyAndFeatureValuesFeature extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureViewDirectWriteRequestDataKeyAndFeatureValuesFeature
     {
     }
 }

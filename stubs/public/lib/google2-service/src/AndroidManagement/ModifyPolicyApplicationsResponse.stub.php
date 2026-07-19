@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class ModifyPolicyApplicationsResponse extends \Google\Model
-{
-    protected $policyType = Policy::class;
-    protected $policyDataType = '';
-    /**
-     * The updated policy.
-     *
-     * @param Policy $policy
-     */
-    public function setPolicy(Policy $policy)
+namespace Google\Service\AndroidManagement {
+    class ModifyPolicyApplicationsResponse extends \Google\Model
     {
+        protected $policyType = Policy::class;
+        protected $policyDataType = '';
+        /**
+         * The updated policy.
+         *
+         * @param Policy $policy
+         */
+        public function setPolicy(Policy $policy)
+        {
+        }
+        /**
+         * @return Policy
+         */
+        public function getPolicy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Policy
+     * Runtime class alias of \Google\Service\AndroidManagement\ModifyPolicyApplicationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPolicy()
+    class Google_Service_AndroidManagement_ModifyPolicyApplicationsResponse extends \Google\Service\AndroidManagement\ModifyPolicyApplicationsResponse
     {
     }
 }

@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InterconnectGroupConfiguredTopologyCapability extends \Google\Collection
-{
-    public const SUPPORTED_SLA_NO_SLA = 'NO_SLA';
-    public const SUPPORTED_SLA_PRODUCTION_CRITICAL = 'PRODUCTION_CRITICAL';
-    public const SUPPORTED_SLA_PRODUCTION_NON_CRITICAL = 'PRODUCTION_NON_CRITICAL';
-    public const SUPPORTED_SLA_UNSPECIFIED = 'UNSPECIFIED';
-    protected $collection_key = 'intendedCapabilityBlockers';
-    protected $intendedCapabilityBlockersType = InterconnectGroupConfiguredTopologyCapabilityIntendedCapabilityBlockers::class;
-    protected $intendedCapabilityBlockersDataType = 'array';
-    /**
-     * @var string
-     */
-    public $supportedSla;
-    /**
-     * @param InterconnectGroupConfiguredTopologyCapabilityIntendedCapabilityBlockers[] $intendedCapabilityBlockers
-     */
-    public function setIntendedCapabilityBlockers($intendedCapabilityBlockers)
+namespace Google\Service\Compute {
+    class InterconnectGroupConfiguredTopologyCapability extends \Google\Collection
     {
+        public const SUPPORTED_SLA_NO_SLA = 'NO_SLA';
+        public const SUPPORTED_SLA_PRODUCTION_CRITICAL = 'PRODUCTION_CRITICAL';
+        public const SUPPORTED_SLA_PRODUCTION_NON_CRITICAL = 'PRODUCTION_NON_CRITICAL';
+        public const SUPPORTED_SLA_UNSPECIFIED = 'UNSPECIFIED';
+        protected $collection_key = 'intendedCapabilityBlockers';
+        protected $intendedCapabilityBlockersType = InterconnectGroupConfiguredTopologyCapabilityIntendedCapabilityBlockers::class;
+        protected $intendedCapabilityBlockersDataType = 'array';
+        /**
+         * @var string
+         */
+        public $supportedSla;
+        /**
+         * @param InterconnectGroupConfiguredTopologyCapabilityIntendedCapabilityBlockers[] $intendedCapabilityBlockers
+         */
+        public function setIntendedCapabilityBlockers($intendedCapabilityBlockers)
+        {
+        }
+        /**
+         * @return InterconnectGroupConfiguredTopologyCapabilityIntendedCapabilityBlockers[]
+         */
+        public function getIntendedCapabilityBlockers()
+        {
+        }
+        /**
+         * @param self::SUPPORTED_SLA_* $supportedSla
+         */
+        public function setSupportedSla($supportedSla)
+        {
+        }
+        /**
+         * @return self::SUPPORTED_SLA_*
+         */
+        public function getSupportedSla()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InterconnectGroupConfiguredTopologyCapabilityIntendedCapabilityBlockers[]
+     * Runtime class alias of \Google\Service\Compute\InterconnectGroupConfiguredTopologyCapability registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIntendedCapabilityBlockers()
-    {
-    }
-    /**
-     * @param self::SUPPORTED_SLA_* $supportedSla
-     */
-    public function setSupportedSla($supportedSla)
-    {
-    }
-    /**
-     * @return self::SUPPORTED_SLA_*
-     */
-    public function getSupportedSla()
+    class Google_Service_Compute_InterconnectGroupConfiguredTopologyCapability extends \Google\Service\Compute\InterconnectGroupConfiguredTopologyCapability
     {
     }
 }

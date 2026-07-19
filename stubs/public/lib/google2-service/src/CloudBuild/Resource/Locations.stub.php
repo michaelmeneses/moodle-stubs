@@ -21,33 +21,44 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild\Resource;
-
-/**
- * The "locations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudbuildService = new Google\Service\CloudBuild(...);
- *   $locations = $cloudbuildService->locations;
- *  </code>
- */
-class Locations extends \Google\Service\Resource
-{
+namespace Google\Service\CloudBuild\Resource {
+    use Google\Service\CloudBuild\CloudbuildEmpty;
+    use Google\Service\CloudBuild\HttpBody;
     /**
-     * ReceiveRegionalWebhook is called when the API receives a regional GitHub
-     * webhook. (locations.regionalWebhook)
-     *
-     * @param string $location Required. The location where the webhook should be
-     * sent.
-     * @param HttpBody $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string webhookKey For GitHub Enterprise webhooks, this key is used
-     * to associate the webhook request with the GitHubEnterpriseConfig to use for
-     * validation.
-     * @return CloudbuildEmpty
+     * The "locations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudbuildService = new Google\Service\CloudBuild(...);
+     *   $locations = $cloudbuildService->locations;
+     *  </code>
      */
-    public function regionalWebhook($location, HttpBody $postBody, $optParams = [])
+    class Locations extends \Google\Service\Resource
+    {
+        /**
+         * ReceiveRegionalWebhook is called when the API receives a regional GitHub
+         * webhook. (locations.regionalWebhook)
+         *
+         * @param string $location Required. The location where the webhook should be
+         * sent.
+         * @param HttpBody $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string webhookKey For GitHub Enterprise webhooks, this key is used
+         * to associate the webhook request with the GitHubEnterpriseConfig to use for
+         * validation.
+         * @return CloudbuildEmpty
+         */
+        public function regionalWebhook($location, HttpBody $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudBuild\Resource\Locations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudBuild_Resource_Locations extends \Google\Service\CloudBuild\Resource\Locations
     {
     }
 }

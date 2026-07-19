@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Batch;
-
-class AgentTimingInfo extends \Google\Model
-{
-    /**
-     * Agent startup time
-     *
-     * @var string
-     */
-    public $agentStartupTime;
-    /**
-     * Boot timestamp of the VM OS
-     *
-     * @var string
-     */
-    public $bootTime;
-    /**
-     * Startup time of the Batch VM script.
-     *
-     * @var string
-     */
-    public $scriptStartupTime;
-    /**
-     * Agent startup time
-     *
-     * @param string $agentStartupTime
-     */
-    public function setAgentStartupTime($agentStartupTime)
+namespace Google\Service\Batch {
+    class AgentTimingInfo extends \Google\Model
     {
+        /**
+         * Agent startup time
+         *
+         * @var string
+         */
+        public $agentStartupTime;
+        /**
+         * Boot timestamp of the VM OS
+         *
+         * @var string
+         */
+        public $bootTime;
+        /**
+         * Startup time of the Batch VM script.
+         *
+         * @var string
+         */
+        public $scriptStartupTime;
+        /**
+         * Agent startup time
+         *
+         * @param string $agentStartupTime
+         */
+        public function setAgentStartupTime($agentStartupTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAgentStartupTime()
+        {
+        }
+        /**
+         * Boot timestamp of the VM OS
+         *
+         * @param string $bootTime
+         */
+        public function setBootTime($bootTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBootTime()
+        {
+        }
+        /**
+         * Startup time of the Batch VM script.
+         *
+         * @param string $scriptStartupTime
+         */
+        public function setScriptStartupTime($scriptStartupTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScriptStartupTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Batch\AgentTimingInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAgentStartupTime()
-    {
-    }
-    /**
-     * Boot timestamp of the VM OS
-     *
-     * @param string $bootTime
-     */
-    public function setBootTime($bootTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBootTime()
-    {
-    }
-    /**
-     * Startup time of the Batch VM script.
-     *
-     * @param string $scriptStartupTime
-     */
-    public function setScriptStartupTime($scriptStartupTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScriptStartupTime()
+    class Google_Service_Batch_AgentTimingInfo extends \Google\Service\Batch\AgentTimingInfo
     {
     }
 }

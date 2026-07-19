@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0CommonTargetOutrankShare extends \Google\Model
-{
-    /**
-     * Maximum bid limit that can be set by the bid strategy. The limit applies to
-     * all keywords managed by the strategy.
-     *
-     * @var string
-     */
-    public $cpcBidCeilingMicros;
-    /**
-     * Maximum bid limit that can be set by the bid strategy. The limit applies to
-     * all keywords managed by the strategy.
-     *
-     * @param string $cpcBidCeilingMicros
-     */
-    public function setCpcBidCeilingMicros($cpcBidCeilingMicros)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0CommonTargetOutrankShare extends \Google\Model
     {
+        /**
+         * Maximum bid limit that can be set by the bid strategy. The limit applies to
+         * all keywords managed by the strategy.
+         *
+         * @var string
+         */
+        public $cpcBidCeilingMicros;
+        /**
+         * Maximum bid limit that can be set by the bid strategy. The limit applies to
+         * all keywords managed by the strategy.
+         *
+         * @param string $cpcBidCeilingMicros
+         */
+        public function setCpcBidCeilingMicros($cpcBidCeilingMicros)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCpcBidCeilingMicros()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0CommonTargetOutrankShare registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCpcBidCeilingMicros()
+    class Google_Service_SA360_GoogleAdsSearchads360V0CommonTargetOutrankShare extends \Google\Service\SA360\GoogleAdsSearchads360V0CommonTargetOutrankShare
     {
     }
 }

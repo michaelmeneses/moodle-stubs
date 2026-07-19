@@ -21,81 +21,90 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1DocumentPageTableTableCell extends \Google\Collection
-{
-    protected $collection_key = 'detectedLanguages';
-    /**
-     * How many columns this cell spans.
-     *
-     * @var int
-     */
-    public $colSpan;
-    protected $detectedLanguagesType = GoogleCloudDocumentaiV1DocumentPageDetectedLanguage::class;
-    protected $detectedLanguagesDataType = 'array';
-    protected $layoutType = GoogleCloudDocumentaiV1DocumentPageLayout::class;
-    protected $layoutDataType = '';
-    /**
-     * How many rows this cell spans.
-     *
-     * @var int
-     */
-    public $rowSpan;
-    /**
-     * How many columns this cell spans.
-     *
-     * @param int $colSpan
-     */
-    public function setColSpan($colSpan)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1DocumentPageTableTableCell extends \Google\Collection
     {
+        protected $collection_key = 'detectedLanguages';
+        /**
+         * How many columns this cell spans.
+         *
+         * @var int
+         */
+        public $colSpan;
+        protected $detectedLanguagesType = GoogleCloudDocumentaiV1DocumentPageDetectedLanguage::class;
+        protected $detectedLanguagesDataType = 'array';
+        protected $layoutType = GoogleCloudDocumentaiV1DocumentPageLayout::class;
+        protected $layoutDataType = '';
+        /**
+         * How many rows this cell spans.
+         *
+         * @var int
+         */
+        public $rowSpan;
+        /**
+         * How many columns this cell spans.
+         *
+         * @param int $colSpan
+         */
+        public function setColSpan($colSpan)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getColSpan()
+        {
+        }
+        /**
+         * A list of detected languages together with confidence.
+         *
+         * @param GoogleCloudDocumentaiV1DocumentPageDetectedLanguage[] $detectedLanguages
+         */
+        public function setDetectedLanguages($detectedLanguages)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1DocumentPageDetectedLanguage[]
+         */
+        public function getDetectedLanguages()
+        {
+        }
+        /**
+         * Layout for TableCell.
+         *
+         * @param GoogleCloudDocumentaiV1DocumentPageLayout $layout
+         */
+        public function setLayout(GoogleCloudDocumentaiV1DocumentPageLayout $layout)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1DocumentPageLayout
+         */
+        public function getLayout()
+        {
+        }
+        /**
+         * How many rows this cell spans.
+         *
+         * @param int $rowSpan
+         */
+        public function setRowSpan($rowSpan)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRowSpan()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1DocumentPageTableTableCell registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColSpan()
-    {
-    }
-    /**
-     * A list of detected languages together with confidence.
-     *
-     * @param GoogleCloudDocumentaiV1DocumentPageDetectedLanguage[] $detectedLanguages
-     */
-    public function setDetectedLanguages($detectedLanguages)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1DocumentPageDetectedLanguage[]
-     */
-    public function getDetectedLanguages()
-    {
-    }
-    /**
-     * Layout for TableCell.
-     *
-     * @param GoogleCloudDocumentaiV1DocumentPageLayout $layout
-     */
-    public function setLayout(GoogleCloudDocumentaiV1DocumentPageLayout $layout)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1DocumentPageLayout
-     */
-    public function getLayout()
-    {
-    }
-    /**
-     * How many rows this cell spans.
-     *
-     * @param int $rowSpan
-     */
-    public function setRowSpan($rowSpan)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRowSpan()
+    class Google_Service_Document_GoogleCloudDocumentaiV1DocumentPageTableTableCell extends \Google\Service\Document\GoogleCloudDocumentaiV1DocumentPageTableTableCell
     {
     }
 }

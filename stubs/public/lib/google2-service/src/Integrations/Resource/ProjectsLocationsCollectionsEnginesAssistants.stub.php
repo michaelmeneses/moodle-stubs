@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations\Resource;
-
-/**
- * The "assistants" collection of methods.
- * Typical usage is:
- *  <code>
- *   $integrationsService = new Google\Service\Integrations(...);
- *   $assistants = $integrationsService->projects_locations_collections_engines_assistants;
- *  </code>
- */
-class ProjectsLocationsCollectionsEnginesAssistants extends \Google\Service\Resource
-{
+namespace Google\Service\Integrations\Resource {
+    /**
+     * The "assistants" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $integrationsService = new Google\Service\Integrations(...);
+     *   $assistants = $integrationsService->projects_locations_collections_engines_assistants;
+     *  </code>
+     */
+    class ProjectsLocationsCollectionsEnginesAssistants extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Integrations\Resource\ProjectsLocationsCollectionsEnginesAssistants registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Integrations_Resource_ProjectsLocationsCollectionsEnginesAssistants extends \Google\Service\Integrations\Resource\ProjectsLocationsCollectionsEnginesAssistants
+    {
+    }
 }

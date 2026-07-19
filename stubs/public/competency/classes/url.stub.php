@@ -29,6 +29,7 @@
  */
 namespace core_competency;
 
+use moodle_url;
 /**
  * URL manager class.
  *

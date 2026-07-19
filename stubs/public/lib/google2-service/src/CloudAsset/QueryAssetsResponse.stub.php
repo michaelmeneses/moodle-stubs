@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class QueryAssetsResponse extends \Google\Model
-{
-    /**
-     * The query response, which can be either an `error` or a valid `response`.
-     * If `done` == `false` and the query result is being saved in an output, the
-     * output_config field will be set. If `done` == `true`, exactly one of
-     * `error`, `query_result` or `output_config` will be set. [done] is unset
-     * unless the [QueryAssetsResponse] contains a
-     * [QueryAssetsResponse.job_reference].
-     *
-     * @var bool
-     */
-    public $done;
-    protected $errorType = Status::class;
-    protected $errorDataType = '';
-    /**
-     * Reference to a query job.
-     *
-     * @var string
-     */
-    public $jobReference;
-    protected $outputConfigType = QueryAssetsOutputConfig::class;
-    protected $outputConfigDataType = '';
-    protected $queryResultType = QueryResult::class;
-    protected $queryResultDataType = '';
-    /**
-     * The query response, which can be either an `error` or a valid `response`.
-     * If `done` == `false` and the query result is being saved in an output, the
-     * output_config field will be set. If `done` == `true`, exactly one of
-     * `error`, `query_result` or `output_config` will be set. [done] is unset
-     * unless the [QueryAssetsResponse] contains a
-     * [QueryAssetsResponse.job_reference].
-     *
-     * @param bool $done
-     */
-    public function setDone($done)
+namespace Google\Service\CloudAsset {
+    class QueryAssetsResponse extends \Google\Model
     {
+        /**
+         * The query response, which can be either an `error` or a valid `response`.
+         * If `done` == `false` and the query result is being saved in an output, the
+         * output_config field will be set. If `done` == `true`, exactly one of
+         * `error`, `query_result` or `output_config` will be set. [done] is unset
+         * unless the [QueryAssetsResponse] contains a
+         * [QueryAssetsResponse.job_reference].
+         *
+         * @var bool
+         */
+        public $done;
+        protected $errorType = Status::class;
+        protected $errorDataType = '';
+        /**
+         * Reference to a query job.
+         *
+         * @var string
+         */
+        public $jobReference;
+        protected $outputConfigType = QueryAssetsOutputConfig::class;
+        protected $outputConfigDataType = '';
+        protected $queryResultType = QueryResult::class;
+        protected $queryResultDataType = '';
+        /**
+         * The query response, which can be either an `error` or a valid `response`.
+         * If `done` == `false` and the query result is being saved in an output, the
+         * output_config field will be set. If `done` == `true`, exactly one of
+         * `error`, `query_result` or `output_config` will be set. [done] is unset
+         * unless the [QueryAssetsResponse] contains a
+         * [QueryAssetsResponse.job_reference].
+         *
+         * @param bool $done
+         */
+        public function setDone($done)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDone()
+        {
+        }
+        /**
+         * Error status.
+         *
+         * @param Status $error
+         */
+        public function setError(Status $error)
+        {
+        }
+        /**
+         * @return Status
+         */
+        public function getError()
+        {
+        }
+        /**
+         * Reference to a query job.
+         *
+         * @param string $jobReference
+         */
+        public function setJobReference($jobReference)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJobReference()
+        {
+        }
+        /**
+         * Output configuration, which indicates that instead of being returned in an
+         * API response on the fly, the query result will be saved in a specific
+         * output.
+         *
+         * @param QueryAssetsOutputConfig $outputConfig
+         */
+        public function setOutputConfig(QueryAssetsOutputConfig $outputConfig)
+        {
+        }
+        /**
+         * @return QueryAssetsOutputConfig
+         */
+        public function getOutputConfig()
+        {
+        }
+        /**
+         * Result of the query.
+         *
+         * @param QueryResult $queryResult
+         */
+        public function setQueryResult(QueryResult $queryResult)
+        {
+        }
+        /**
+         * @return QueryResult
+         */
+        public function getQueryResult()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudAsset\QueryAssetsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDone()
-    {
-    }
-    /**
-     * Error status.
-     *
-     * @param Status $error
-     */
-    public function setError(Status $error)
-    {
-    }
-    /**
-     * @return Status
-     */
-    public function getError()
-    {
-    }
-    /**
-     * Reference to a query job.
-     *
-     * @param string $jobReference
-     */
-    public function setJobReference($jobReference)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getJobReference()
-    {
-    }
-    /**
-     * Output configuration, which indicates that instead of being returned in an
-     * API response on the fly, the query result will be saved in a specific
-     * output.
-     *
-     * @param QueryAssetsOutputConfig $outputConfig
-     */
-    public function setOutputConfig(QueryAssetsOutputConfig $outputConfig)
-    {
-    }
-    /**
-     * @return QueryAssetsOutputConfig
-     */
-    public function getOutputConfig()
-    {
-    }
-    /**
-     * Result of the query.
-     *
-     * @param QueryResult $queryResult
-     */
-    public function setQueryResult(QueryResult $queryResult)
-    {
-    }
-    /**
-     * @return QueryResult
-     */
-    public function getQueryResult()
+    class Google_Service_CloudAsset_QueryAssetsResponse extends \Google\Service\CloudAsset\QueryAssetsResponse
     {
     }
 }

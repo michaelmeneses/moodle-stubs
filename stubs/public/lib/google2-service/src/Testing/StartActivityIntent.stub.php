@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class StartActivityIntent extends \Google\Collection
-{
-    protected $collection_key = 'categories';
-    /**
-     * Action name. Required for START_ACTIVITY.
-     *
-     * @var string
-     */
-    public $action;
-    /**
-     * Intent categories to set on the intent.
-     *
-     * @var string[]
-     */
-    public $categories;
-    /**
-     * URI for the action.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Action name. Required for START_ACTIVITY.
-     *
-     * @param string $action
-     */
-    public function setAction($action)
+namespace Google\Service\Testing {
+    class StartActivityIntent extends \Google\Collection
     {
+        protected $collection_key = 'categories';
+        /**
+         * Action name. Required for START_ACTIVITY.
+         *
+         * @var string
+         */
+        public $action;
+        /**
+         * Intent categories to set on the intent.
+         *
+         * @var string[]
+         */
+        public $categories;
+        /**
+         * URI for the action.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Action name. Required for START_ACTIVITY.
+         *
+         * @param string $action
+         */
+        public function setAction($action)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAction()
+        {
+        }
+        /**
+         * Intent categories to set on the intent.
+         *
+         * @param string[] $categories
+         */
+        public function setCategories($categories)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCategories()
+        {
+        }
+        /**
+         * URI for the action.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Testing\StartActivityIntent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAction()
-    {
-    }
-    /**
-     * Intent categories to set on the intent.
-     *
-     * @param string[] $categories
-     */
-    public function setCategories($categories)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getCategories()
-    {
-    }
-    /**
-     * URI for the action.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_Testing_StartActivityIntent extends \Google\Service\Testing\StartActivityIntent
     {
     }
 }

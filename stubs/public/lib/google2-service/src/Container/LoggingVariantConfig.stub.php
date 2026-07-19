@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class LoggingVariantConfig extends \Google\Model
-{
-    /**
-     * Default value. This shouldn't be used.
-     */
-    public const VARIANT_VARIANT_UNSPECIFIED = 'VARIANT_UNSPECIFIED';
-    /**
-     * default logging variant.
-     */
-    public const VARIANT_DEFAULT = 'DEFAULT';
-    /**
-     * maximum logging throughput variant.
-     */
-    public const VARIANT_MAX_THROUGHPUT = 'MAX_THROUGHPUT';
-    /**
-     * Logging variant deployed on nodes.
-     *
-     * @var string
-     */
-    public $variant;
-    /**
-     * Logging variant deployed on nodes.
-     *
-     * Accepted values: VARIANT_UNSPECIFIED, DEFAULT, MAX_THROUGHPUT
-     *
-     * @param self::VARIANT_* $variant
-     */
-    public function setVariant($variant)
+namespace Google\Service\Container {
+    class LoggingVariantConfig extends \Google\Model
     {
+        /**
+         * Default value. This shouldn't be used.
+         */
+        public const VARIANT_VARIANT_UNSPECIFIED = 'VARIANT_UNSPECIFIED';
+        /**
+         * default logging variant.
+         */
+        public const VARIANT_DEFAULT = 'DEFAULT';
+        /**
+         * maximum logging throughput variant.
+         */
+        public const VARIANT_MAX_THROUGHPUT = 'MAX_THROUGHPUT';
+        /**
+         * Logging variant deployed on nodes.
+         *
+         * @var string
+         */
+        public $variant;
+        /**
+         * Logging variant deployed on nodes.
+         *
+         * Accepted values: VARIANT_UNSPECIFIED, DEFAULT, MAX_THROUGHPUT
+         *
+         * @param self::VARIANT_* $variant
+         */
+        public function setVariant($variant)
+        {
+        }
+        /**
+         * @return self::VARIANT_*
+         */
+        public function getVariant()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::VARIANT_*
+     * Runtime class alias of \Google\Service\Container\LoggingVariantConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVariant()
+    class Google_Service_Container_LoggingVariantConfig extends \Google\Service\Container\LoggingVariantConfig
     {
     }
 }

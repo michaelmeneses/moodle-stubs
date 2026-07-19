@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class GoogleCloudVisionV1p1beta1WebDetectionWebPage extends \Google\Collection
-{
-    protected $collection_key = 'partialMatchingImages';
-    protected $fullMatchingImagesType = GoogleCloudVisionV1p1beta1WebDetectionWebImage::class;
-    protected $fullMatchingImagesDataType = 'array';
-    /**
-     * Title for the web page, may contain HTML markups.
-     *
-     * @var string
-     */
-    public $pageTitle;
-    protected $partialMatchingImagesType = GoogleCloudVisionV1p1beta1WebDetectionWebImage::class;
-    protected $partialMatchingImagesDataType = 'array';
-    /**
-     * (Deprecated) Overall relevancy score for the web page.
-     *
-     * @var float
-     */
-    public $score;
-    /**
-     * The result web page URL.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * Fully matching images on the page. Can include resized copies of the query
-     * image.
-     *
-     * @param GoogleCloudVisionV1p1beta1WebDetectionWebImage[] $fullMatchingImages
-     */
-    public function setFullMatchingImages($fullMatchingImages)
+namespace Google\Service\Vision {
+    class GoogleCloudVisionV1p1beta1WebDetectionWebPage extends \Google\Collection
     {
+        protected $collection_key = 'partialMatchingImages';
+        protected $fullMatchingImagesType = GoogleCloudVisionV1p1beta1WebDetectionWebImage::class;
+        protected $fullMatchingImagesDataType = 'array';
+        /**
+         * Title for the web page, may contain HTML markups.
+         *
+         * @var string
+         */
+        public $pageTitle;
+        protected $partialMatchingImagesType = GoogleCloudVisionV1p1beta1WebDetectionWebImage::class;
+        protected $partialMatchingImagesDataType = 'array';
+        /**
+         * (Deprecated) Overall relevancy score for the web page.
+         *
+         * @var float
+         */
+        public $score;
+        /**
+         * The result web page URL.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * Fully matching images on the page. Can include resized copies of the query
+         * image.
+         *
+         * @param GoogleCloudVisionV1p1beta1WebDetectionWebImage[] $fullMatchingImages
+         */
+        public function setFullMatchingImages($fullMatchingImages)
+        {
+        }
+        /**
+         * @return GoogleCloudVisionV1p1beta1WebDetectionWebImage[]
+         */
+        public function getFullMatchingImages()
+        {
+        }
+        /**
+         * Title for the web page, may contain HTML markups.
+         *
+         * @param string $pageTitle
+         */
+        public function setPageTitle($pageTitle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPageTitle()
+        {
+        }
+        /**
+         * Partial matching images on the page. Those images are similar enough to
+         * share some key-point features. For example an original image will likely
+         * have partial matching for its crops.
+         *
+         * @param GoogleCloudVisionV1p1beta1WebDetectionWebImage[] $partialMatchingImages
+         */
+        public function setPartialMatchingImages($partialMatchingImages)
+        {
+        }
+        /**
+         * @return GoogleCloudVisionV1p1beta1WebDetectionWebImage[]
+         */
+        public function getPartialMatchingImages()
+        {
+        }
+        /**
+         * (Deprecated) Overall relevancy score for the web page.
+         *
+         * @param float $score
+         */
+        public function setScore($score)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getScore()
+        {
+        }
+        /**
+         * The result web page URL.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudVisionV1p1beta1WebDetectionWebImage[]
+     * Runtime class alias of \Google\Service\Vision\GoogleCloudVisionV1p1beta1WebDetectionWebPage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFullMatchingImages()
-    {
-    }
-    /**
-     * Title for the web page, may contain HTML markups.
-     *
-     * @param string $pageTitle
-     */
-    public function setPageTitle($pageTitle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPageTitle()
-    {
-    }
-    /**
-     * Partial matching images on the page. Those images are similar enough to
-     * share some key-point features. For example an original image will likely
-     * have partial matching for its crops.
-     *
-     * @param GoogleCloudVisionV1p1beta1WebDetectionWebImage[] $partialMatchingImages
-     */
-    public function setPartialMatchingImages($partialMatchingImages)
-    {
-    }
-    /**
-     * @return GoogleCloudVisionV1p1beta1WebDetectionWebImage[]
-     */
-    public function getPartialMatchingImages()
-    {
-    }
-    /**
-     * (Deprecated) Overall relevancy score for the web page.
-     *
-     * @param float $score
-     */
-    public function setScore($score)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getScore()
-    {
-    }
-    /**
-     * The result web page URL.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_Vision_GoogleCloudVisionV1p1beta1WebDetectionWebPage extends \Google\Service\Vision\GoogleCloudVisionV1p1beta1WebDetectionWebPage
     {
     }
 }

@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaPredictPredictionTimeSeriesForecastingPredictionResult extends \Google\Collection
-{
-    protected $collection_key = 'quantileValues';
-    /**
-     * Quantile predictions, in 1-1 correspondence with quantile_values.
-     *
-     * @var float[]
-     */
-    public $quantilePredictions;
-    /**
-     * Quantile values.
-     *
-     * @var float[]
-     */
-    public $quantileValues;
-    protected $tftFeatureImportanceType = GoogleCloudAiplatformV1SchemaPredictPredictionTftFeatureImportance::class;
-    protected $tftFeatureImportanceDataType = '';
-    /**
-     * The regression value.
-     *
-     * @var float
-     */
-    public $value;
-    /**
-     * Quantile predictions, in 1-1 correspondence with quantile_values.
-     *
-     * @param float[] $quantilePredictions
-     */
-    public function setQuantilePredictions($quantilePredictions)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaPredictPredictionTimeSeriesForecastingPredictionResult extends \Google\Collection
     {
+        protected $collection_key = 'quantileValues';
+        /**
+         * Quantile predictions, in 1-1 correspondence with quantile_values.
+         *
+         * @var float[]
+         */
+        public $quantilePredictions;
+        /**
+         * Quantile values.
+         *
+         * @var float[]
+         */
+        public $quantileValues;
+        protected $tftFeatureImportanceType = GoogleCloudAiplatformV1SchemaPredictPredictionTftFeatureImportance::class;
+        protected $tftFeatureImportanceDataType = '';
+        /**
+         * The regression value.
+         *
+         * @var float
+         */
+        public $value;
+        /**
+         * Quantile predictions, in 1-1 correspondence with quantile_values.
+         *
+         * @param float[] $quantilePredictions
+         */
+        public function setQuantilePredictions($quantilePredictions)
+        {
+        }
+        /**
+         * @return float[]
+         */
+        public function getQuantilePredictions()
+        {
+        }
+        /**
+         * Quantile values.
+         *
+         * @param float[] $quantileValues
+         */
+        public function setQuantileValues($quantileValues)
+        {
+        }
+        /**
+         * @return float[]
+         */
+        public function getQuantileValues()
+        {
+        }
+        /**
+         * Only use these if TFt is enabled.
+         *
+         * @param GoogleCloudAiplatformV1SchemaPredictPredictionTftFeatureImportance $tftFeatureImportance
+         */
+        public function setTftFeatureImportance(GoogleCloudAiplatformV1SchemaPredictPredictionTftFeatureImportance $tftFeatureImportance)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SchemaPredictPredictionTftFeatureImportance
+         */
+        public function getTftFeatureImportance()
+        {
+        }
+        /**
+         * The regression value.
+         *
+         * @param float $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPredictPredictionTimeSeriesForecastingPredictionResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getQuantilePredictions()
-    {
-    }
-    /**
-     * Quantile values.
-     *
-     * @param float[] $quantileValues
-     */
-    public function setQuantileValues($quantileValues)
-    {
-    }
-    /**
-     * @return float[]
-     */
-    public function getQuantileValues()
-    {
-    }
-    /**
-     * Only use these if TFt is enabled.
-     *
-     * @param GoogleCloudAiplatformV1SchemaPredictPredictionTftFeatureImportance $tftFeatureImportance
-     */
-    public function setTftFeatureImportance(GoogleCloudAiplatformV1SchemaPredictPredictionTftFeatureImportance $tftFeatureImportance)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1SchemaPredictPredictionTftFeatureImportance
-     */
-    public function getTftFeatureImportance()
-    {
-    }
-    /**
-     * The regression value.
-     *
-     * @param float $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getValue()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaPredictPredictionTimeSeriesForecastingPredictionResult extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPredictPredictionTimeSeriesForecastingPredictionResult
     {
     }
 }

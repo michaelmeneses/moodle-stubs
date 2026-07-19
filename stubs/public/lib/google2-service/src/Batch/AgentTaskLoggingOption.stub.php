@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Batch;
-
-class AgentTaskLoggingOption extends \Google\Model
-{
-    /**
-     * Labels to be added to the log entry. Now only cloud logging is supported.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Labels to be added to the log entry. Now only cloud logging is supported.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
+namespace Google\Service\Batch {
+    class AgentTaskLoggingOption extends \Google\Model
     {
+        /**
+         * Labels to be added to the log entry. Now only cloud logging is supported.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Labels to be added to the log entry. Now only cloud logging is supported.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Batch\AgentTaskLoggingOption registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabels()
+    class Google_Service_Batch_AgentTaskLoggingOption extends \Google\Service\Batch\AgentTaskLoggingOption
     {
     }
 }

@@ -21,155 +21,164 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class ComplianceNote extends \Google\Collection
-{
-    protected $collection_key = 'version';
-    protected $cisBenchmarkType = CisBenchmark::class;
-    protected $cisBenchmarkDataType = '';
-    /**
-     * A description about this compliance check.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * @var string
-     */
-    public $impact;
-    /**
-     * A rationale for the existence of this compliance check.
-     *
-     * @var string
-     */
-    public $rationale;
-    /**
-     * A description of remediation steps if the compliance check fails.
-     *
-     * @var string
-     */
-    public $remediation;
-    /**
-     * Serialized scan instructions with a predefined format.
-     *
-     * @var string
-     */
-    public $scanInstructions;
-    /**
-     * The title that identifies this compliance check.
-     *
-     * @var string
-     */
-    public $title;
-    protected $versionType = ComplianceVersion::class;
-    protected $versionDataType = 'array';
-    /**
-     * @param CisBenchmark $cisBenchmark
-     */
-    public function setCisBenchmark(CisBenchmark $cisBenchmark)
+namespace Google\Service\ContainerAnalysis {
+    class ComplianceNote extends \Google\Collection
     {
+        protected $collection_key = 'version';
+        protected $cisBenchmarkType = CisBenchmark::class;
+        protected $cisBenchmarkDataType = '';
+        /**
+         * A description about this compliance check.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * @var string
+         */
+        public $impact;
+        /**
+         * A rationale for the existence of this compliance check.
+         *
+         * @var string
+         */
+        public $rationale;
+        /**
+         * A description of remediation steps if the compliance check fails.
+         *
+         * @var string
+         */
+        public $remediation;
+        /**
+         * Serialized scan instructions with a predefined format.
+         *
+         * @var string
+         */
+        public $scanInstructions;
+        /**
+         * The title that identifies this compliance check.
+         *
+         * @var string
+         */
+        public $title;
+        protected $versionType = ComplianceVersion::class;
+        protected $versionDataType = 'array';
+        /**
+         * @param CisBenchmark $cisBenchmark
+         */
+        public function setCisBenchmark(CisBenchmark $cisBenchmark)
+        {
+        }
+        /**
+         * @return CisBenchmark
+         */
+        public function getCisBenchmark()
+        {
+        }
+        /**
+         * A description about this compliance check.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param string $impact
+         */
+        public function setImpact($impact)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImpact()
+        {
+        }
+        /**
+         * A rationale for the existence of this compliance check.
+         *
+         * @param string $rationale
+         */
+        public function setRationale($rationale)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRationale()
+        {
+        }
+        /**
+         * A description of remediation steps if the compliance check fails.
+         *
+         * @param string $remediation
+         */
+        public function setRemediation($remediation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRemediation()
+        {
+        }
+        /**
+         * Serialized scan instructions with a predefined format.
+         *
+         * @param string $scanInstructions
+         */
+        public function setScanInstructions($scanInstructions)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScanInstructions()
+        {
+        }
+        /**
+         * The title that identifies this compliance check.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * The OS and config versions the benchmark applies to.
+         *
+         * @param ComplianceVersion[] $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return ComplianceVersion[]
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CisBenchmark
+     * Runtime class alias of \Google\Service\ContainerAnalysis\ComplianceNote registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCisBenchmark()
-    {
-    }
-    /**
-     * A description about this compliance check.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param string $impact
-     */
-    public function setImpact($impact)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImpact()
-    {
-    }
-    /**
-     * A rationale for the existence of this compliance check.
-     *
-     * @param string $rationale
-     */
-    public function setRationale($rationale)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRationale()
-    {
-    }
-    /**
-     * A description of remediation steps if the compliance check fails.
-     *
-     * @param string $remediation
-     */
-    public function setRemediation($remediation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRemediation()
-    {
-    }
-    /**
-     * Serialized scan instructions with a predefined format.
-     *
-     * @param string $scanInstructions
-     */
-    public function setScanInstructions($scanInstructions)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScanInstructions()
-    {
-    }
-    /**
-     * The title that identifies this compliance check.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * The OS and config versions the benchmark applies to.
-     *
-     * @param ComplianceVersion[] $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return ComplianceVersion[]
-     */
-    public function getVersion()
+    class Google_Service_ContainerAnalysis_ComplianceNote extends \Google\Service\ContainerAnalysis\ComplianceNote
     {
     }
 }

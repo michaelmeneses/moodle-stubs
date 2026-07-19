@@ -21,214 +21,223 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class Bookshelf extends \Google\Model
-{
-    /**
-     * Whether this bookshelf is PUBLIC or PRIVATE.
-     *
-     * @var string
-     */
-    public $access;
-    /**
-     * Created time for this bookshelf (formatted UTC timestamp with millisecond
-     * resolution).
-     *
-     * @var string
-     */
-    public $created;
-    /**
-     * Description of this bookshelf.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Id of this bookshelf, only unique by user.
-     *
-     * @var int
-     */
-    public $id;
-    /**
-     * Resource type for bookshelf metadata.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * URL to this resource.
-     *
-     * @var string
-     */
-    public $selfLink;
-    /**
-     * Title of this bookshelf.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Last modified time of this bookshelf (formatted UTC timestamp with
-     * millisecond resolution).
-     *
-     * @var string
-     */
-    public $updated;
-    /**
-     * Number of volumes in this bookshelf.
-     *
-     * @var int
-     */
-    public $volumeCount;
-    /**
-     * Last time a volume was added or removed from this bookshelf (formatted UTC
-     * timestamp with millisecond resolution).
-     *
-     * @var string
-     */
-    public $volumesLastUpdated;
-    /**
-     * Whether this bookshelf is PUBLIC or PRIVATE.
-     *
-     * @param string $access
-     */
-    public function setAccess($access)
+namespace Google\Service\Books {
+    class Bookshelf extends \Google\Model
     {
+        /**
+         * Whether this bookshelf is PUBLIC or PRIVATE.
+         *
+         * @var string
+         */
+        public $access;
+        /**
+         * Created time for this bookshelf (formatted UTC timestamp with millisecond
+         * resolution).
+         *
+         * @var string
+         */
+        public $created;
+        /**
+         * Description of this bookshelf.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Id of this bookshelf, only unique by user.
+         *
+         * @var int
+         */
+        public $id;
+        /**
+         * Resource type for bookshelf metadata.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * URL to this resource.
+         *
+         * @var string
+         */
+        public $selfLink;
+        /**
+         * Title of this bookshelf.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Last modified time of this bookshelf (formatted UTC timestamp with
+         * millisecond resolution).
+         *
+         * @var string
+         */
+        public $updated;
+        /**
+         * Number of volumes in this bookshelf.
+         *
+         * @var int
+         */
+        public $volumeCount;
+        /**
+         * Last time a volume was added or removed from this bookshelf (formatted UTC
+         * timestamp with millisecond resolution).
+         *
+         * @var string
+         */
+        public $volumesLastUpdated;
+        /**
+         * Whether this bookshelf is PUBLIC or PRIVATE.
+         *
+         * @param string $access
+         */
+        public function setAccess($access)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccess()
+        {
+        }
+        /**
+         * Created time for this bookshelf (formatted UTC timestamp with millisecond
+         * resolution).
+         *
+         * @param string $created
+         */
+        public function setCreated($created)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreated()
+        {
+        }
+        /**
+         * Description of this bookshelf.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Id of this bookshelf, only unique by user.
+         *
+         * @param int $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Resource type for bookshelf metadata.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * URL to this resource.
+         *
+         * @param string $selfLink
+         */
+        public function setSelfLink($selfLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLink()
+        {
+        }
+        /**
+         * Title of this bookshelf.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * Last modified time of this bookshelf (formatted UTC timestamp with
+         * millisecond resolution).
+         *
+         * @param string $updated
+         */
+        public function setUpdated($updated)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdated()
+        {
+        }
+        /**
+         * Number of volumes in this bookshelf.
+         *
+         * @param int $volumeCount
+         */
+        public function setVolumeCount($volumeCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getVolumeCount()
+        {
+        }
+        /**
+         * Last time a volume was added or removed from this bookshelf (formatted UTC
+         * timestamp with millisecond resolution).
+         *
+         * @param string $volumesLastUpdated
+         */
+        public function setVolumesLastUpdated($volumesLastUpdated)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVolumesLastUpdated()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Books\Bookshelf registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccess()
-    {
-    }
-    /**
-     * Created time for this bookshelf (formatted UTC timestamp with millisecond
-     * resolution).
-     *
-     * @param string $created
-     */
-    public function setCreated($created)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreated()
-    {
-    }
-    /**
-     * Description of this bookshelf.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Id of this bookshelf, only unique by user.
-     *
-     * @param int $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Resource type for bookshelf metadata.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * URL to this resource.
-     *
-     * @param string $selfLink
-     */
-    public function setSelfLink($selfLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLink()
-    {
-    }
-    /**
-     * Title of this bookshelf.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * Last modified time of this bookshelf (formatted UTC timestamp with
-     * millisecond resolution).
-     *
-     * @param string $updated
-     */
-    public function setUpdated($updated)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdated()
-    {
-    }
-    /**
-     * Number of volumes in this bookshelf.
-     *
-     * @param int $volumeCount
-     */
-    public function setVolumeCount($volumeCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getVolumeCount()
-    {
-    }
-    /**
-     * Last time a volume was added or removed from this bookshelf (formatted UTC
-     * timestamp with millisecond resolution).
-     *
-     * @param string $volumesLastUpdated
-     */
-    public function setVolumesLastUpdated($volumesLastUpdated)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVolumesLastUpdated()
+    class Google_Service_Books_Bookshelf extends \Google\Service\Books\Bookshelf
     {
     }
 }

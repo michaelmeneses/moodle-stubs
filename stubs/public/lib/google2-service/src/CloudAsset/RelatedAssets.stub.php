@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class RelatedAssets extends \Google\Collection
-{
-    protected $collection_key = 'assets';
-    protected $assetsType = RelatedAsset::class;
-    protected $assetsDataType = 'array';
-    protected $relationshipAttributesType = RelationshipAttributes::class;
-    protected $relationshipAttributesDataType = '';
-    /**
-     * The peer resources of the relationship.
-     *
-     * @param RelatedAsset[] $assets
-     */
-    public function setAssets($assets)
+namespace Google\Service\CloudAsset {
+    class RelatedAssets extends \Google\Collection
     {
+        protected $collection_key = 'assets';
+        protected $assetsType = RelatedAsset::class;
+        protected $assetsDataType = 'array';
+        protected $relationshipAttributesType = RelationshipAttributes::class;
+        protected $relationshipAttributesDataType = '';
+        /**
+         * The peer resources of the relationship.
+         *
+         * @param RelatedAsset[] $assets
+         */
+        public function setAssets($assets)
+        {
+        }
+        /**
+         * @return RelatedAsset[]
+         */
+        public function getAssets()
+        {
+        }
+        /**
+         * The detailed relationship attributes.
+         *
+         * @param RelationshipAttributes $relationshipAttributes
+         */
+        public function setRelationshipAttributes(RelationshipAttributes $relationshipAttributes)
+        {
+        }
+        /**
+         * @return RelationshipAttributes
+         */
+        public function getRelationshipAttributes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RelatedAsset[]
+     * Runtime class alias of \Google\Service\CloudAsset\RelatedAssets registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssets()
-    {
-    }
-    /**
-     * The detailed relationship attributes.
-     *
-     * @param RelationshipAttributes $relationshipAttributes
-     */
-    public function setRelationshipAttributes(RelationshipAttributes $relationshipAttributes)
-    {
-    }
-    /**
-     * @return RelationshipAttributes
-     */
-    public function getRelationshipAttributes()
+    class Google_Service_CloudAsset_RelatedAssets extends \Google\Service\CloudAsset\RelatedAssets
     {
     }
 }

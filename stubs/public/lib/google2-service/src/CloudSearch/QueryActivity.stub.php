@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class QueryActivity extends \Google\Model
-{
-    /**
-     * User input query to be logged/removed.
-     *
-     * @var string
-     */
-    public $query;
-    /**
-     * User input query to be logged/removed.
-     *
-     * @param string $query
-     */
-    public function setQuery($query)
+namespace Google\Service\CloudSearch {
+    class QueryActivity extends \Google\Model
     {
+        /**
+         * User input query to be logged/removed.
+         *
+         * @var string
+         */
+        public $query;
+        /**
+         * User input query to be logged/removed.
+         *
+         * @param string $query
+         */
+        public function setQuery($query)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuery()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\QueryActivity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getQuery()
+    class Google_Service_CloudSearch_QueryActivity extends \Google\Service\CloudSearch\QueryActivity
     {
     }
 }

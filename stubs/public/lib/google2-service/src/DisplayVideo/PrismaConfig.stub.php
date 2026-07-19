@@ -21,97 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class PrismaConfig extends \Google\Model
-{
-    /**
-     * Type is not specified or unknown in this version.
-     */
-    public const PRISMA_TYPE_PRISMA_TYPE_UNSPECIFIED = 'PRISMA_TYPE_UNSPECIFIED';
-    /**
-     * Display type.
-     */
-    public const PRISMA_TYPE_PRISMA_TYPE_DISPLAY = 'PRISMA_TYPE_DISPLAY';
-    /**
-     * Search type.
-     */
-    public const PRISMA_TYPE_PRISMA_TYPE_SEARCH = 'PRISMA_TYPE_SEARCH';
-    /**
-     * Video type.
-     */
-    public const PRISMA_TYPE_PRISMA_TYPE_VIDEO = 'PRISMA_TYPE_VIDEO';
-    /**
-     * Audio type.
-     */
-    public const PRISMA_TYPE_PRISMA_TYPE_AUDIO = 'PRISMA_TYPE_AUDIO';
-    /**
-     * Social type.
-     */
-    public const PRISMA_TYPE_PRISMA_TYPE_SOCIAL = 'PRISMA_TYPE_SOCIAL';
-    /**
-     * Fee type.
-     */
-    public const PRISMA_TYPE_PRISMA_TYPE_FEE = 'PRISMA_TYPE_FEE';
-    protected $prismaCpeCodeType = PrismaCpeCode::class;
-    protected $prismaCpeCodeDataType = '';
-    /**
-     * Required. The Prisma type.
-     *
-     * @var string
-     */
-    public $prismaType;
-    /**
-     * Required. The entity allocated this budget (DSP, site, etc.).
-     *
-     * @var string
-     */
-    public $supplier;
-    /**
-     * Required. Relevant client, product, and estimate codes from the Mediaocean
-     * Prisma tool.
-     *
-     * @param PrismaCpeCode $prismaCpeCode
-     */
-    public function setPrismaCpeCode(PrismaCpeCode $prismaCpeCode)
+namespace Google\Service\DisplayVideo {
+    class PrismaConfig extends \Google\Model
     {
+        /**
+         * Type is not specified or unknown in this version.
+         */
+        public const PRISMA_TYPE_PRISMA_TYPE_UNSPECIFIED = 'PRISMA_TYPE_UNSPECIFIED';
+        /**
+         * Display type.
+         */
+        public const PRISMA_TYPE_PRISMA_TYPE_DISPLAY = 'PRISMA_TYPE_DISPLAY';
+        /**
+         * Search type.
+         */
+        public const PRISMA_TYPE_PRISMA_TYPE_SEARCH = 'PRISMA_TYPE_SEARCH';
+        /**
+         * Video type.
+         */
+        public const PRISMA_TYPE_PRISMA_TYPE_VIDEO = 'PRISMA_TYPE_VIDEO';
+        /**
+         * Audio type.
+         */
+        public const PRISMA_TYPE_PRISMA_TYPE_AUDIO = 'PRISMA_TYPE_AUDIO';
+        /**
+         * Social type.
+         */
+        public const PRISMA_TYPE_PRISMA_TYPE_SOCIAL = 'PRISMA_TYPE_SOCIAL';
+        /**
+         * Fee type.
+         */
+        public const PRISMA_TYPE_PRISMA_TYPE_FEE = 'PRISMA_TYPE_FEE';
+        protected $prismaCpeCodeType = PrismaCpeCode::class;
+        protected $prismaCpeCodeDataType = '';
+        /**
+         * Required. The Prisma type.
+         *
+         * @var string
+         */
+        public $prismaType;
+        /**
+         * Required. The entity allocated this budget (DSP, site, etc.).
+         *
+         * @var string
+         */
+        public $supplier;
+        /**
+         * Required. Relevant client, product, and estimate codes from the Mediaocean
+         * Prisma tool.
+         *
+         * @param PrismaCpeCode $prismaCpeCode
+         */
+        public function setPrismaCpeCode(PrismaCpeCode $prismaCpeCode)
+        {
+        }
+        /**
+         * @return PrismaCpeCode
+         */
+        public function getPrismaCpeCode()
+        {
+        }
+        /**
+         * Required. The Prisma type.
+         *
+         * Accepted values: PRISMA_TYPE_UNSPECIFIED, PRISMA_TYPE_DISPLAY,
+         * PRISMA_TYPE_SEARCH, PRISMA_TYPE_VIDEO, PRISMA_TYPE_AUDIO,
+         * PRISMA_TYPE_SOCIAL, PRISMA_TYPE_FEE
+         *
+         * @param self::PRISMA_TYPE_* $prismaType
+         */
+        public function setPrismaType($prismaType)
+        {
+        }
+        /**
+         * @return self::PRISMA_TYPE_*
+         */
+        public function getPrismaType()
+        {
+        }
+        /**
+         * Required. The entity allocated this budget (DSP, site, etc.).
+         *
+         * @param string $supplier
+         */
+        public function setSupplier($supplier)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSupplier()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PrismaCpeCode
+     * Runtime class alias of \Google\Service\DisplayVideo\PrismaConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPrismaCpeCode()
-    {
-    }
-    /**
-     * Required. The Prisma type.
-     *
-     * Accepted values: PRISMA_TYPE_UNSPECIFIED, PRISMA_TYPE_DISPLAY,
-     * PRISMA_TYPE_SEARCH, PRISMA_TYPE_VIDEO, PRISMA_TYPE_AUDIO,
-     * PRISMA_TYPE_SOCIAL, PRISMA_TYPE_FEE
-     *
-     * @param self::PRISMA_TYPE_* $prismaType
-     */
-    public function setPrismaType($prismaType)
-    {
-    }
-    /**
-     * @return self::PRISMA_TYPE_*
-     */
-    public function getPrismaType()
-    {
-    }
-    /**
-     * Required. The entity allocated this budget (DSP, site, etc.).
-     *
-     * @param string $supplier
-     */
-    public function setSupplier($supplier)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSupplier()
+    class Google_Service_DisplayVideo_PrismaConfig extends \Google\Service\DisplayVideo\PrismaConfig
     {
     }
 }

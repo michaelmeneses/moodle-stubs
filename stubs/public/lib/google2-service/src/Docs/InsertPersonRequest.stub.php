@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class InsertPersonRequest extends \Google\Model
-{
-    protected $endOfSegmentLocationType = EndOfSegmentLocation::class;
-    protected $endOfSegmentLocationDataType = '';
-    protected $locationType = Location::class;
-    protected $locationDataType = '';
-    protected $personPropertiesType = PersonProperties::class;
-    protected $personPropertiesDataType = '';
-    /**
-     * Inserts the person mention at the end of a header, footer, footnote or the
-     * document body.
-     *
-     * @param EndOfSegmentLocation $endOfSegmentLocation
-     */
-    public function setEndOfSegmentLocation(EndOfSegmentLocation $endOfSegmentLocation)
+namespace Google\Service\Docs {
+    class InsertPersonRequest extends \Google\Model
     {
+        protected $endOfSegmentLocationType = EndOfSegmentLocation::class;
+        protected $endOfSegmentLocationDataType = '';
+        protected $locationType = Location::class;
+        protected $locationDataType = '';
+        protected $personPropertiesType = PersonProperties::class;
+        protected $personPropertiesDataType = '';
+        /**
+         * Inserts the person mention at the end of a header, footer, footnote or the
+         * document body.
+         *
+         * @param EndOfSegmentLocation $endOfSegmentLocation
+         */
+        public function setEndOfSegmentLocation(EndOfSegmentLocation $endOfSegmentLocation)
+        {
+        }
+        /**
+         * @return EndOfSegmentLocation
+         */
+        public function getEndOfSegmentLocation()
+        {
+        }
+        /**
+         * Inserts the person mention at a specific index in the document. The person
+         * mention must be inserted inside the bounds of an existing Paragraph. For
+         * instance, it cannot be inserted at a table's start index (i.e. between the
+         * table and its preceding paragraph). People cannot be inserted inside an
+         * equation.
+         *
+         * @param Location $location
+         */
+        public function setLocation(Location $location)
+        {
+        }
+        /**
+         * @return Location
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * The properties of the person mention to insert.
+         *
+         * @param PersonProperties $personProperties
+         */
+        public function setPersonProperties(PersonProperties $personProperties)
+        {
+        }
+        /**
+         * @return PersonProperties
+         */
+        public function getPersonProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EndOfSegmentLocation
+     * Runtime class alias of \Google\Service\Docs\InsertPersonRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndOfSegmentLocation()
-    {
-    }
-    /**
-     * Inserts the person mention at a specific index in the document. The person
-     * mention must be inserted inside the bounds of an existing Paragraph. For
-     * instance, it cannot be inserted at a table's start index (i.e. between the
-     * table and its preceding paragraph). People cannot be inserted inside an
-     * equation.
-     *
-     * @param Location $location
-     */
-    public function setLocation(Location $location)
-    {
-    }
-    /**
-     * @return Location
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * The properties of the person mention to insert.
-     *
-     * @param PersonProperties $personProperties
-     */
-    public function setPersonProperties(PersonProperties $personProperties)
-    {
-    }
-    /**
-     * @return PersonProperties
-     */
-    public function getPersonProperties()
+    class Google_Service_Docs_InsertPersonRequest extends \Google\Service\Docs\InsertPersonRequest
     {
     }
 }

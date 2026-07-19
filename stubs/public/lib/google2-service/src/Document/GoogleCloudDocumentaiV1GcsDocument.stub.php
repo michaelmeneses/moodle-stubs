@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1GcsDocument extends \Google\Model
-{
-    /**
-     * The Cloud Storage object uri.
-     *
-     * @var string
-     */
-    public $gcsUri;
-    /**
-     * An IANA MIME type (RFC6838) of the content.
-     *
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * The Cloud Storage object uri.
-     *
-     * @param string $gcsUri
-     */
-    public function setGcsUri($gcsUri)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1GcsDocument extends \Google\Model
     {
+        /**
+         * The Cloud Storage object uri.
+         *
+         * @var string
+         */
+        public $gcsUri;
+        /**
+         * An IANA MIME type (RFC6838) of the content.
+         *
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * The Cloud Storage object uri.
+         *
+         * @param string $gcsUri
+         */
+        public function setGcsUri($gcsUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcsUri()
+        {
+        }
+        /**
+         * An IANA MIME type (RFC6838) of the content.
+         *
+         * @param string $mimeType
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1GcsDocument registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcsUri()
-    {
-    }
-    /**
-     * An IANA MIME type (RFC6838) of the content.
-     *
-     * @param string $mimeType
-     */
-    public function setMimeType($mimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimeType()
+    class Google_Service_Document_GoogleCloudDocumentaiV1GcsDocument extends \Google\Service\Document\GoogleCloudDocumentaiV1GcsDocument
     {
     }
 }

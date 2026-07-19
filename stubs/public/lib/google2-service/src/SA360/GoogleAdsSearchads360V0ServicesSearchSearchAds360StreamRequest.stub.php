@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0ServicesSearchSearchAds360StreamRequest extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $batchSize;
-    /**
-     * @var string
-     */
-    public $query;
-    /**
-     * @var string
-     */
-    public $summaryRowSetting;
-    /**
-     * @param int
-     */
-    public function setBatchSize($batchSize)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0ServicesSearchSearchAds360StreamRequest extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $batchSize;
+        /**
+         * @var string
+         */
+        public $query;
+        /**
+         * @var string
+         */
+        public $summaryRowSetting;
+        /**
+         * @param int
+         */
+        public function setBatchSize($batchSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getBatchSize()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setQuery($query)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuery()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSummaryRowSetting($summaryRowSetting)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSummaryRowSetting()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0ServicesSearchSearchAds360StreamRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBatchSize()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setQuery($query)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuery()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSummaryRowSetting($summaryRowSetting)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSummaryRowSetting()
+    class Google_Service_SA360_GoogleAdsSearchads360V0ServicesSearchSearchAds360StreamRequest extends \Google\Service\SA360\GoogleAdsSearchads360V0ServicesSearchSearchAds360StreamRequest
     {
     }
 }

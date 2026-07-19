@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SASPortalTesting;
-
-class SasPortalDpaMoveList extends \Google\Model
-{
-    /**
-     * The ID of the DPA.
-     *
-     * @var string
-     */
-    public $dpaId;
-    protected $frequencyRangeType = SasPortalFrequencyRange::class;
-    protected $frequencyRangeDataType = '';
-    /**
-     * The ID of the DPA.
-     *
-     * @param string $dpaId
-     */
-    public function setDpaId($dpaId)
+namespace Google\Service\SASPortalTesting {
+    class SasPortalDpaMoveList extends \Google\Model
     {
+        /**
+         * The ID of the DPA.
+         *
+         * @var string
+         */
+        public $dpaId;
+        protected $frequencyRangeType = SasPortalFrequencyRange::class;
+        protected $frequencyRangeDataType = '';
+        /**
+         * The ID of the DPA.
+         *
+         * @param string $dpaId
+         */
+        public function setDpaId($dpaId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDpaId()
+        {
+        }
+        /**
+         * The frequency range that the move list affects.
+         *
+         * @param SasPortalFrequencyRange $frequencyRange
+         */
+        public function setFrequencyRange(SasPortalFrequencyRange $frequencyRange)
+        {
+        }
+        /**
+         * @return SasPortalFrequencyRange
+         */
+        public function getFrequencyRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SASPortalTesting\SasPortalDpaMoveList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDpaId()
-    {
-    }
-    /**
-     * The frequency range that the move list affects.
-     *
-     * @param SasPortalFrequencyRange $frequencyRange
-     */
-    public function setFrequencyRange(SasPortalFrequencyRange $frequencyRange)
-    {
-    }
-    /**
-     * @return SasPortalFrequencyRange
-     */
-    public function getFrequencyRange()
+    class Google_Service_SASPortalTesting_SasPortalDpaMoveList extends \Google\Service\SASPortalTesting\SasPortalDpaMoveList
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class ReplaceSitesResponse extends \Google\Collection
-{
-    protected $collection_key = 'sites';
-    protected $sitesType = Site::class;
-    protected $sitesDataType = 'array';
-    /**
-     * The list of sites in the channel after replacing.
-     *
-     * @param Site[] $sites
-     */
-    public function setSites($sites)
+namespace Google\Service\DisplayVideo {
+    class ReplaceSitesResponse extends \Google\Collection
     {
+        protected $collection_key = 'sites';
+        protected $sitesType = Site::class;
+        protected $sitesDataType = 'array';
+        /**
+         * The list of sites in the channel after replacing.
+         *
+         * @param Site[] $sites
+         */
+        public function setSites($sites)
+        {
+        }
+        /**
+         * @return Site[]
+         */
+        public function getSites()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Site[]
+     * Runtime class alias of \Google\Service\DisplayVideo\ReplaceSitesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSites()
+    class Google_Service_DisplayVideo_ReplaceSitesResponse extends \Google\Service\DisplayVideo\ReplaceSitesResponse
     {
     }
 }

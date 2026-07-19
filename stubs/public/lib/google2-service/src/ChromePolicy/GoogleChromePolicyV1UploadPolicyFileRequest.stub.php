@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyV1UploadPolicyFileRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $policyField;
-    /**
-     * @param string
-     */
-    public function setPolicyField($policyField)
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyV1UploadPolicyFileRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $policyField;
+        /**
+         * @param string
+         */
+        public function setPolicyField($policyField)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPolicyField()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyV1UploadPolicyFileRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPolicyField()
+    class Google_Service_ChromePolicy_GoogleChromePolicyV1UploadPolicyFileRequest extends \Google\Service\ChromePolicy\GoogleChromePolicyV1UploadPolicyFileRequest
     {
     }
 }

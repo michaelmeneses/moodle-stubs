@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class Principal extends \Google\Model
-{
-    protected $internal_gapi_mappings = ["groupId" => "group_id", "userId" => "user_id"];
-    /**
-     * @var string
-     */
-    public $groupId;
-    /**
-     * @var string
-     */
-    public $userId;
-    /**
-     * @param string
-     */
-    public function setGroupId($groupId)
+namespace Google\Service\Connectors {
+    class Principal extends \Google\Model
     {
+        protected $internal_gapi_mappings = ["groupId" => "group_id", "userId" => "user_id"];
+        /**
+         * @var string
+         */
+        public $groupId;
+        /**
+         * @var string
+         */
+        public $userId;
+        /**
+         * @param string
+         */
+        public function setGroupId($groupId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGroupId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUserId($userId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Connectors\Principal registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGroupId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUserId($userId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserId()
+    class Google_Service_Connectors_Principal extends \Google\Service\Connectors\Principal
     {
     }
 }

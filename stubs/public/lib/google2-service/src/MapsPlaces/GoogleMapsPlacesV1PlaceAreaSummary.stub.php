@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MapsPlaces;
-
-class GoogleMapsPlacesV1PlaceAreaSummary extends \Google\Collection
-{
-    protected $collection_key = 'contentBlocks';
-    protected $contentBlocksType = GoogleMapsPlacesV1ContentBlock::class;
-    protected $contentBlocksDataType = 'array';
-    /**
-     * @var string
-     */
-    public $flagContentUri;
-    /**
-     * @param GoogleMapsPlacesV1ContentBlock[]
-     */
-    public function setContentBlocks($contentBlocks)
+namespace Google\Service\MapsPlaces {
+    class GoogleMapsPlacesV1PlaceAreaSummary extends \Google\Collection
     {
+        protected $collection_key = 'contentBlocks';
+        protected $contentBlocksType = GoogleMapsPlacesV1ContentBlock::class;
+        protected $contentBlocksDataType = 'array';
+        /**
+         * @var string
+         */
+        public $flagContentUri;
+        /**
+         * @param GoogleMapsPlacesV1ContentBlock[]
+         */
+        public function setContentBlocks($contentBlocks)
+        {
+        }
+        /**
+         * @return GoogleMapsPlacesV1ContentBlock[]
+         */
+        public function getContentBlocks()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFlagContentUri($flagContentUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFlagContentUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleMapsPlacesV1ContentBlock[]
+     * Runtime class alias of \Google\Service\MapsPlaces\GoogleMapsPlacesV1PlaceAreaSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContentBlocks()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFlagContentUri($flagContentUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFlagContentUri()
+    class Google_Service_MapsPlaces_GoogleMapsPlacesV1PlaceAreaSummary extends \Google\Service\MapsPlaces\GoogleMapsPlacesV1PlaceAreaSummary
     {
     }
 }

@@ -21,83 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2Rating extends \Google\Collection
-{
-    protected $collection_key = 'ratingHistogram';
-    /**
-     * The average rating of the Product. The rating is scaled at 1-5. Otherwise,
-     * an INVALID_ARGUMENT error is returned.
-     *
-     * @var float
-     */
-    public $averageRating;
-    /**
-     * The total number of ratings. This value is independent of the value of
-     * rating_histogram. This value must be nonnegative. Otherwise, an
-     * INVALID_ARGUMENT error is returned.
-     *
-     * @var int
-     */
-    public $ratingCount;
-    /**
-     * List of rating counts per rating value (index = rating - 1). The list is
-     * empty if there is no rating. If the list is non-empty, its size is always
-     * 5. Otherwise, an INVALID_ARGUMENT error is returned. For example, [41, 14,
-     * 13, 47, 303]. It means that the Product got 41 ratings with 1 star, 14
-     * ratings with 2 star, and so on.
-     *
-     * @var int[]
-     */
-    public $ratingHistogram;
-    /**
-     * The average rating of the Product. The rating is scaled at 1-5. Otherwise,
-     * an INVALID_ARGUMENT error is returned.
-     *
-     * @param float $averageRating
-     */
-    public function setAverageRating($averageRating)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2Rating extends \Google\Collection
     {
+        protected $collection_key = 'ratingHistogram';
+        /**
+         * The average rating of the Product. The rating is scaled at 1-5. Otherwise,
+         * an INVALID_ARGUMENT error is returned.
+         *
+         * @var float
+         */
+        public $averageRating;
+        /**
+         * The total number of ratings. This value is independent of the value of
+         * rating_histogram. This value must be nonnegative. Otherwise, an
+         * INVALID_ARGUMENT error is returned.
+         *
+         * @var int
+         */
+        public $ratingCount;
+        /**
+         * List of rating counts per rating value (index = rating - 1). The list is
+         * empty if there is no rating. If the list is non-empty, its size is always
+         * 5. Otherwise, an INVALID_ARGUMENT error is returned. For example, [41, 14,
+         * 13, 47, 303]. It means that the Product got 41 ratings with 1 star, 14
+         * ratings with 2 star, and so on.
+         *
+         * @var int[]
+         */
+        public $ratingHistogram;
+        /**
+         * The average rating of the Product. The rating is scaled at 1-5. Otherwise,
+         * an INVALID_ARGUMENT error is returned.
+         *
+         * @param float $averageRating
+         */
+        public function setAverageRating($averageRating)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getAverageRating()
+        {
+        }
+        /**
+         * The total number of ratings. This value is independent of the value of
+         * rating_histogram. This value must be nonnegative. Otherwise, an
+         * INVALID_ARGUMENT error is returned.
+         *
+         * @param int $ratingCount
+         */
+        public function setRatingCount($ratingCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRatingCount()
+        {
+        }
+        /**
+         * List of rating counts per rating value (index = rating - 1). The list is
+         * empty if there is no rating. If the list is non-empty, its size is always
+         * 5. Otherwise, an INVALID_ARGUMENT error is returned. For example, [41, 14,
+         * 13, 47, 303]. It means that the Product got 41 ratings with 1 star, 14
+         * ratings with 2 star, and so on.
+         *
+         * @param int[] $ratingHistogram
+         */
+        public function setRatingHistogram($ratingHistogram)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getRatingHistogram()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2Rating registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAverageRating()
-    {
-    }
-    /**
-     * The total number of ratings. This value is independent of the value of
-     * rating_histogram. This value must be nonnegative. Otherwise, an
-     * INVALID_ARGUMENT error is returned.
-     *
-     * @param int $ratingCount
-     */
-    public function setRatingCount($ratingCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRatingCount()
-    {
-    }
-    /**
-     * List of rating counts per rating value (index = rating - 1). The list is
-     * empty if there is no rating. If the list is non-empty, its size is always
-     * 5. Otherwise, an INVALID_ARGUMENT error is returned. For example, [41, 14,
-     * 13, 47, 303]. It means that the Product got 41 ratings with 1 star, 14
-     * ratings with 2 star, and so on.
-     *
-     * @param int[] $ratingHistogram
-     */
-    public function setRatingHistogram($ratingHistogram)
-    {
-    }
-    /**
-     * @return int[]
-     */
-    public function getRatingHistogram()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2Rating extends \Google\Service\CloudRetail\GoogleCloudRetailV2Rating
     {
     }
 }

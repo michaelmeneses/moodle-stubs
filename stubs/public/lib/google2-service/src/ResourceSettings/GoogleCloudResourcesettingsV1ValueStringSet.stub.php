@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ResourceSettings;
-
-class GoogleCloudResourcesettingsV1ValueStringSet extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    /**
-     * @var string[]
-     */
-    public $values;
-    /**
-     * @param string[]
-     */
-    public function setValues($values)
+namespace Google\Service\ResourceSettings {
+    class GoogleCloudResourcesettingsV1ValueStringSet extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        /**
+         * @var string[]
+         */
+        public $values;
+        /**
+         * @param string[]
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ResourceSettings\GoogleCloudResourcesettingsV1ValueStringSet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValues()
+    class Google_Service_ResourceSettings_GoogleCloudResourcesettingsV1ValueStringSet extends \Google\Service\ResourceSettings\GoogleCloudResourcesettingsV1ValueStringSet
     {
     }
 }

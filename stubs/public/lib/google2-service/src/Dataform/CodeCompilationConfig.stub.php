@@ -21,214 +21,223 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class CodeCompilationConfig extends \Google\Model
-{
-    /**
-     * Optional. The default schema (BigQuery dataset ID) for assertions.
-     *
-     * @var string
-     */
-    public $assertionSchema;
-    /**
-     * Optional. The prefix to prepend to built-in assertion names.
-     *
-     * @var string
-     */
-    public $builtinAssertionNamePrefix;
-    /**
-     * Optional. The suffix that should be appended to all database (Google Cloud
-     * project ID) names.
-     *
-     * @var string
-     */
-    public $databaseSuffix;
-    /**
-     * Optional. The default database (Google Cloud project ID).
-     *
-     * @var string
-     */
-    public $defaultDatabase;
-    /**
-     * Optional. The default BigQuery location to use. Defaults to "US". See the
-     * BigQuery docs for a full list of locations:
-     * https://cloud.google.com/bigquery/docs/locations.
-     *
-     * @var string
-     */
-    public $defaultLocation;
-    protected $defaultNotebookRuntimeOptionsType = NotebookRuntimeOptions::class;
-    protected $defaultNotebookRuntimeOptionsDataType = '';
-    /**
-     * Optional. The default schema (BigQuery dataset ID).
-     *
-     * @var string
-     */
-    public $defaultSchema;
-    /**
-     * Optional. The suffix that should be appended to all schema (BigQuery
-     * dataset ID) names.
-     *
-     * @var string
-     */
-    public $schemaSuffix;
-    /**
-     * Optional. The prefix that should be prepended to all table names.
-     *
-     * @var string
-     */
-    public $tablePrefix;
-    /**
-     * Optional. User-defined variables that are made available to project code
-     * during compilation.
-     *
-     * @var string[]
-     */
-    public $vars;
-    /**
-     * Optional. The default schema (BigQuery dataset ID) for assertions.
-     *
-     * @param string $assertionSchema
-     */
-    public function setAssertionSchema($assertionSchema)
+namespace Google\Service\Dataform {
+    class CodeCompilationConfig extends \Google\Model
     {
+        /**
+         * Optional. The default schema (BigQuery dataset ID) for assertions.
+         *
+         * @var string
+         */
+        public $assertionSchema;
+        /**
+         * Optional. The prefix to prepend to built-in assertion names.
+         *
+         * @var string
+         */
+        public $builtinAssertionNamePrefix;
+        /**
+         * Optional. The suffix that should be appended to all database (Google Cloud
+         * project ID) names.
+         *
+         * @var string
+         */
+        public $databaseSuffix;
+        /**
+         * Optional. The default database (Google Cloud project ID).
+         *
+         * @var string
+         */
+        public $defaultDatabase;
+        /**
+         * Optional. The default BigQuery location to use. Defaults to "US". See the
+         * BigQuery docs for a full list of locations:
+         * https://cloud.google.com/bigquery/docs/locations.
+         *
+         * @var string
+         */
+        public $defaultLocation;
+        protected $defaultNotebookRuntimeOptionsType = NotebookRuntimeOptions::class;
+        protected $defaultNotebookRuntimeOptionsDataType = '';
+        /**
+         * Optional. The default schema (BigQuery dataset ID).
+         *
+         * @var string
+         */
+        public $defaultSchema;
+        /**
+         * Optional. The suffix that should be appended to all schema (BigQuery
+         * dataset ID) names.
+         *
+         * @var string
+         */
+        public $schemaSuffix;
+        /**
+         * Optional. The prefix that should be prepended to all table names.
+         *
+         * @var string
+         */
+        public $tablePrefix;
+        /**
+         * Optional. User-defined variables that are made available to project code
+         * during compilation.
+         *
+         * @var string[]
+         */
+        public $vars;
+        /**
+         * Optional. The default schema (BigQuery dataset ID) for assertions.
+         *
+         * @param string $assertionSchema
+         */
+        public function setAssertionSchema($assertionSchema)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAssertionSchema()
+        {
+        }
+        /**
+         * Optional. The prefix to prepend to built-in assertion names.
+         *
+         * @param string $builtinAssertionNamePrefix
+         */
+        public function setBuiltinAssertionNamePrefix($builtinAssertionNamePrefix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBuiltinAssertionNamePrefix()
+        {
+        }
+        /**
+         * Optional. The suffix that should be appended to all database (Google Cloud
+         * project ID) names.
+         *
+         * @param string $databaseSuffix
+         */
+        public function setDatabaseSuffix($databaseSuffix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatabaseSuffix()
+        {
+        }
+        /**
+         * Optional. The default database (Google Cloud project ID).
+         *
+         * @param string $defaultDatabase
+         */
+        public function setDefaultDatabase($defaultDatabase)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefaultDatabase()
+        {
+        }
+        /**
+         * Optional. The default BigQuery location to use. Defaults to "US". See the
+         * BigQuery docs for a full list of locations:
+         * https://cloud.google.com/bigquery/docs/locations.
+         *
+         * @param string $defaultLocation
+         */
+        public function setDefaultLocation($defaultLocation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefaultLocation()
+        {
+        }
+        /**
+         * Optional. The default notebook runtime options.
+         *
+         * @param NotebookRuntimeOptions $defaultNotebookRuntimeOptions
+         */
+        public function setDefaultNotebookRuntimeOptions(NotebookRuntimeOptions $defaultNotebookRuntimeOptions)
+        {
+        }
+        /**
+         * @return NotebookRuntimeOptions
+         */
+        public function getDefaultNotebookRuntimeOptions()
+        {
+        }
+        /**
+         * Optional. The default schema (BigQuery dataset ID).
+         *
+         * @param string $defaultSchema
+         */
+        public function setDefaultSchema($defaultSchema)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefaultSchema()
+        {
+        }
+        /**
+         * Optional. The suffix that should be appended to all schema (BigQuery
+         * dataset ID) names.
+         *
+         * @param string $schemaSuffix
+         */
+        public function setSchemaSuffix($schemaSuffix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSchemaSuffix()
+        {
+        }
+        /**
+         * Optional. The prefix that should be prepended to all table names.
+         *
+         * @param string $tablePrefix
+         */
+        public function setTablePrefix($tablePrefix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTablePrefix()
+        {
+        }
+        /**
+         * Optional. User-defined variables that are made available to project code
+         * during compilation.
+         *
+         * @param string[] $vars
+         */
+        public function setVars($vars)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getVars()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataform\CodeCompilationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssertionSchema()
-    {
-    }
-    /**
-     * Optional. The prefix to prepend to built-in assertion names.
-     *
-     * @param string $builtinAssertionNamePrefix
-     */
-    public function setBuiltinAssertionNamePrefix($builtinAssertionNamePrefix)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBuiltinAssertionNamePrefix()
-    {
-    }
-    /**
-     * Optional. The suffix that should be appended to all database (Google Cloud
-     * project ID) names.
-     *
-     * @param string $databaseSuffix
-     */
-    public function setDatabaseSuffix($databaseSuffix)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDatabaseSuffix()
-    {
-    }
-    /**
-     * Optional. The default database (Google Cloud project ID).
-     *
-     * @param string $defaultDatabase
-     */
-    public function setDefaultDatabase($defaultDatabase)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDefaultDatabase()
-    {
-    }
-    /**
-     * Optional. The default BigQuery location to use. Defaults to "US". See the
-     * BigQuery docs for a full list of locations:
-     * https://cloud.google.com/bigquery/docs/locations.
-     *
-     * @param string $defaultLocation
-     */
-    public function setDefaultLocation($defaultLocation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDefaultLocation()
-    {
-    }
-    /**
-     * Optional. The default notebook runtime options.
-     *
-     * @param NotebookRuntimeOptions $defaultNotebookRuntimeOptions
-     */
-    public function setDefaultNotebookRuntimeOptions(NotebookRuntimeOptions $defaultNotebookRuntimeOptions)
-    {
-    }
-    /**
-     * @return NotebookRuntimeOptions
-     */
-    public function getDefaultNotebookRuntimeOptions()
-    {
-    }
-    /**
-     * Optional. The default schema (BigQuery dataset ID).
-     *
-     * @param string $defaultSchema
-     */
-    public function setDefaultSchema($defaultSchema)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDefaultSchema()
-    {
-    }
-    /**
-     * Optional. The suffix that should be appended to all schema (BigQuery
-     * dataset ID) names.
-     *
-     * @param string $schemaSuffix
-     */
-    public function setSchemaSuffix($schemaSuffix)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSchemaSuffix()
-    {
-    }
-    /**
-     * Optional. The prefix that should be prepended to all table names.
-     *
-     * @param string $tablePrefix
-     */
-    public function setTablePrefix($tablePrefix)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTablePrefix()
-    {
-    }
-    /**
-     * Optional. User-defined variables that are made available to project code
-     * during compilation.
-     *
-     * @param string[] $vars
-     */
-    public function setVars($vars)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getVars()
+    class Google_Service_Dataform_CodeCompilationConfig extends \Google\Service\Dataform\CodeCompilationConfig
     {
     }
 }

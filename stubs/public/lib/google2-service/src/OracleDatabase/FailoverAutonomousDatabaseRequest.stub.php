@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class FailoverAutonomousDatabaseRequest extends \Google\Model
-{
-    /**
-     * Required. The peer database name to fail over to.
-     *
-     * @var string
-     */
-    public $peerAutonomousDatabase;
-    /**
-     * Required. The peer database name to fail over to.
-     *
-     * @param string $peerAutonomousDatabase
-     */
-    public function setPeerAutonomousDatabase($peerAutonomousDatabase)
+namespace Google\Service\OracleDatabase {
+    class FailoverAutonomousDatabaseRequest extends \Google\Model
     {
+        /**
+         * Required. The peer database name to fail over to.
+         *
+         * @var string
+         */
+        public $peerAutonomousDatabase;
+        /**
+         * Required. The peer database name to fail over to.
+         *
+         * @param string $peerAutonomousDatabase
+         */
+        public function setPeerAutonomousDatabase($peerAutonomousDatabase)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPeerAutonomousDatabase()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OracleDatabase\FailoverAutonomousDatabaseRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPeerAutonomousDatabase()
+    class Google_Service_OracleDatabase_FailoverAutonomousDatabaseRequest extends \Google\Service\OracleDatabase\FailoverAutonomousDatabaseRequest
     {
     }
 }

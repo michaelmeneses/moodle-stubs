@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkspaceEvents;
-
-class AgentProvider extends \Google\Model
-{
-    /**
-     * The providers organization name Example: "Google"
-     *
-     * @var string
-     */
-    public $organization;
-    /**
-     * The providers reference url Example: "https://ai.google.dev"
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * The providers organization name Example: "Google"
-     *
-     * @param string $organization
-     */
-    public function setOrganization($organization)
+namespace Google\Service\WorkspaceEvents {
+    class AgentProvider extends \Google\Model
     {
+        /**
+         * The providers organization name Example: "Google"
+         *
+         * @var string
+         */
+        public $organization;
+        /**
+         * The providers reference url Example: "https://ai.google.dev"
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * The providers organization name Example: "Google"
+         *
+         * @param string $organization
+         */
+        public function setOrganization($organization)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrganization()
+        {
+        }
+        /**
+         * The providers reference url Example: "https://ai.google.dev"
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WorkspaceEvents\AgentProvider registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOrganization()
-    {
-    }
-    /**
-     * The providers reference url Example: "https://ai.google.dev"
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_WorkspaceEvents_AgentProvider extends \Google\Service\WorkspaceEvents\AgentProvider
     {
     }
 }

@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Calendar;
-
-class Setting extends \Google\Model
-{
-    /**
-     * ETag of the resource.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * The id of the user setting.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Type of the resource ("calendar#setting").
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Value of the user setting. The format of the value depends on the ID of the
-     * setting. It must always be a UTF-8 string of length up to 1024 characters.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * ETag of the resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\Calendar {
+    class Setting extends \Google\Model
     {
+        /**
+         * ETag of the resource.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * The id of the user setting.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Type of the resource ("calendar#setting").
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Value of the user setting. The format of the value depends on the ID of the
+         * setting. It must always be a UTF-8 string of length up to 1024 characters.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * ETag of the resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * The id of the user setting.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Type of the resource ("calendar#setting").
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Value of the user setting. The format of the value depends on the ID of the
+         * setting. It must always be a UTF-8 string of length up to 1024 characters.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Calendar\Setting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * The id of the user setting.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Type of the resource ("calendar#setting").
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Value of the user setting. The format of the value depends on the ID of the
-     * setting. It must always be a UTF-8 string of length up to 1024 characters.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_Calendar_Setting extends \Google\Service\Calendar\Setting
     {
     }
 }

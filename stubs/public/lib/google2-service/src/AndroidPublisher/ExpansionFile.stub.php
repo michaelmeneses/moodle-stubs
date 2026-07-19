@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class ExpansionFile extends \Google\Model
-{
-    /**
-     * If set, this field indicates that this APK has an expansion file uploaded
-     * to it: this APK does not reference another APK's expansion file. The
-     * field's value is the size of the uploaded expansion file in bytes.
-     *
-     * @var string
-     */
-    public $fileSize;
-    /**
-     * If set, this APK's expansion file references another APK's expansion file.
-     * The file_size field will not be set.
-     *
-     * @var int
-     */
-    public $referencesVersion;
-    /**
-     * If set, this field indicates that this APK has an expansion file uploaded
-     * to it: this APK does not reference another APK's expansion file. The
-     * field's value is the size of the uploaded expansion file in bytes.
-     *
-     * @param string $fileSize
-     */
-    public function setFileSize($fileSize)
+namespace Google\Service\AndroidPublisher {
+    class ExpansionFile extends \Google\Model
     {
+        /**
+         * If set, this field indicates that this APK has an expansion file uploaded
+         * to it: this APK does not reference another APK's expansion file. The
+         * field's value is the size of the uploaded expansion file in bytes.
+         *
+         * @var string
+         */
+        public $fileSize;
+        /**
+         * If set, this APK's expansion file references another APK's expansion file.
+         * The file_size field will not be set.
+         *
+         * @var int
+         */
+        public $referencesVersion;
+        /**
+         * If set, this field indicates that this APK has an expansion file uploaded
+         * to it: this APK does not reference another APK's expansion file. The
+         * field's value is the size of the uploaded expansion file in bytes.
+         *
+         * @param string $fileSize
+         */
+        public function setFileSize($fileSize)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFileSize()
+        {
+        }
+        /**
+         * If set, this APK's expansion file references another APK's expansion file.
+         * The file_size field will not be set.
+         *
+         * @param int $referencesVersion
+         */
+        public function setReferencesVersion($referencesVersion)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getReferencesVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\ExpansionFile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFileSize()
-    {
-    }
-    /**
-     * If set, this APK's expansion file references another APK's expansion file.
-     * The file_size field will not be set.
-     *
-     * @param int $referencesVersion
-     */
-    public function setReferencesVersion($referencesVersion)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getReferencesVersion()
+    class Google_Service_AndroidPublisher_ExpansionFile extends \Google\Service\AndroidPublisher\ExpansionFile
     {
     }
 }

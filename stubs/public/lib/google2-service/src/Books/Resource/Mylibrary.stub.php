@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books\Resource;
-
-/**
- * The "mylibrary" collection of methods.
- * Typical usage is:
- *  <code>
- *   $booksService = new Google\Service\Books(...);
- *   $mylibrary = $booksService->mylibrary;
- *  </code>
- */
-class Mylibrary extends \Google\Service\Resource
-{
+namespace Google\Service\Books\Resource {
+    /**
+     * The "mylibrary" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $booksService = new Google\Service\Books(...);
+     *   $mylibrary = $booksService->mylibrary;
+     *  </code>
+     */
+    class Mylibrary extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Books\Resource\Mylibrary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Books_Resource_Mylibrary extends \Google\Service\Books\Resource\Mylibrary
+    {
+    }
 }

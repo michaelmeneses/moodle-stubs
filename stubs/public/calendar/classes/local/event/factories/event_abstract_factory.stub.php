@@ -29,6 +29,15 @@
  */
 namespace core_calendar\local\event\factories;
 
+use core_calendar\local\event\entities\event;
+use core_calendar\local\event\entities\repeat_event_collection;
+use core_calendar\local\event\exceptions\invalid_callback_exception;
+use core_calendar\local\event\proxies\cm_info_proxy;
+use core_calendar\local\event\proxies\coursecat_proxy;
+use core_calendar\local\event\proxies\std_proxy;
+use core_calendar\local\event\value_objects\event_description;
+use core_calendar\local\event\value_objects\event_times;
+use core_calendar\local\event\entities\event_interface;
 /**
  * Abstract factory for creating calendar events.
  *

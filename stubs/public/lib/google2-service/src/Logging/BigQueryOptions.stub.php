@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Logging;
-
-class BigQueryOptions extends \Google\Model
-{
-    /**
-     * Optional. Whether to use BigQuery's partition tables
-     * (https://cloud.google.com/bigquery/docs/partitioned-tables). By default,
-     * Cloud Logging creates dated tables based on the log entries' timestamps,
-     * e.g. syslog_20170523. With partitioned tables the date suffix is no longer
-     * present and special query syntax
-     * (https://cloud.google.com/bigquery/docs/querying-partitioned-tables) has to
-     * be used instead. In both cases, tables are sharded based on UTC timezone.
-     *
-     * @var bool
-     */
-    public $usePartitionedTables;
-    /**
-     * Output only. True if new timestamp column based partitioning is in use,
-     * false if legacy ingress-time partitioning is in use.All new sinks will have
-     * this field set true and will use timestamp column based partitioning. If
-     * use_partitioned_tables is false, this value has no meaning and will be
-     * false. Legacy sinks using partitioned tables will have this field set to
-     * false.
-     *
-     * @var bool
-     */
-    public $usesTimestampColumnPartitioning;
-    /**
-     * Optional. Whether to use BigQuery's partition tables
-     * (https://cloud.google.com/bigquery/docs/partitioned-tables). By default,
-     * Cloud Logging creates dated tables based on the log entries' timestamps,
-     * e.g. syslog_20170523. With partitioned tables the date suffix is no longer
-     * present and special query syntax
-     * (https://cloud.google.com/bigquery/docs/querying-partitioned-tables) has to
-     * be used instead. In both cases, tables are sharded based on UTC timezone.
-     *
-     * @param bool $usePartitionedTables
-     */
-    public function setUsePartitionedTables($usePartitionedTables)
+namespace Google\Service\Logging {
+    class BigQueryOptions extends \Google\Model
     {
+        /**
+         * Optional. Whether to use BigQuery's partition tables
+         * (https://cloud.google.com/bigquery/docs/partitioned-tables). By default,
+         * Cloud Logging creates dated tables based on the log entries' timestamps,
+         * e.g. syslog_20170523. With partitioned tables the date suffix is no longer
+         * present and special query syntax
+         * (https://cloud.google.com/bigquery/docs/querying-partitioned-tables) has to
+         * be used instead. In both cases, tables are sharded based on UTC timezone.
+         *
+         * @var bool
+         */
+        public $usePartitionedTables;
+        /**
+         * Output only. True if new timestamp column based partitioning is in use,
+         * false if legacy ingress-time partitioning is in use.All new sinks will have
+         * this field set true and will use timestamp column based partitioning. If
+         * use_partitioned_tables is false, this value has no meaning and will be
+         * false. Legacy sinks using partitioned tables will have this field set to
+         * false.
+         *
+         * @var bool
+         */
+        public $usesTimestampColumnPartitioning;
+        /**
+         * Optional. Whether to use BigQuery's partition tables
+         * (https://cloud.google.com/bigquery/docs/partitioned-tables). By default,
+         * Cloud Logging creates dated tables based on the log entries' timestamps,
+         * e.g. syslog_20170523. With partitioned tables the date suffix is no longer
+         * present and special query syntax
+         * (https://cloud.google.com/bigquery/docs/querying-partitioned-tables) has to
+         * be used instead. In both cases, tables are sharded based on UTC timezone.
+         *
+         * @param bool $usePartitionedTables
+         */
+        public function setUsePartitionedTables($usePartitionedTables)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUsePartitionedTables()
+        {
+        }
+        /**
+         * Output only. True if new timestamp column based partitioning is in use,
+         * false if legacy ingress-time partitioning is in use.All new sinks will have
+         * this field set true and will use timestamp column based partitioning. If
+         * use_partitioned_tables is false, this value has no meaning and will be
+         * false. Legacy sinks using partitioned tables will have this field set to
+         * false.
+         *
+         * @param bool $usesTimestampColumnPartitioning
+         */
+        public function setUsesTimestampColumnPartitioning($usesTimestampColumnPartitioning)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUsesTimestampColumnPartitioning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Logging\BigQueryOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUsePartitionedTables()
-    {
-    }
-    /**
-     * Output only. True if new timestamp column based partitioning is in use,
-     * false if legacy ingress-time partitioning is in use.All new sinks will have
-     * this field set true and will use timestamp column based partitioning. If
-     * use_partitioned_tables is false, this value has no meaning and will be
-     * false. Legacy sinks using partitioned tables will have this field set to
-     * false.
-     *
-     * @param bool $usesTimestampColumnPartitioning
-     */
-    public function setUsesTimestampColumnPartitioning($usesTimestampColumnPartitioning)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUsesTimestampColumnPartitioning()
+    class Google_Service_Logging_BigQueryOptions extends \Google\Service\Logging\BigQueryOptions
     {
     }
 }

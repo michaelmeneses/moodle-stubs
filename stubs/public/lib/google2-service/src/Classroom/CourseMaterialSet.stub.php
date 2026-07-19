@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class CourseMaterialSet extends \Google\Collection
-{
-    protected $collection_key = 'materials';
-    protected $materialsType = CourseMaterial::class;
-    protected $materialsDataType = 'array';
-    /**
-     * Title for this set.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Materials attached to this set.
-     *
-     * @param CourseMaterial[] $materials
-     */
-    public function setMaterials($materials)
+namespace Google\Service\Classroom {
+    class CourseMaterialSet extends \Google\Collection
     {
+        protected $collection_key = 'materials';
+        protected $materialsType = CourseMaterial::class;
+        protected $materialsDataType = 'array';
+        /**
+         * Title for this set.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Materials attached to this set.
+         *
+         * @param CourseMaterial[] $materials
+         */
+        public function setMaterials($materials)
+        {
+        }
+        /**
+         * @return CourseMaterial[]
+         */
+        public function getMaterials()
+        {
+        }
+        /**
+         * Title for this set.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CourseMaterial[]
+     * Runtime class alias of \Google\Service\Classroom\CourseMaterialSet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaterials()
-    {
-    }
-    /**
-     * Title for this set.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_Classroom_CourseMaterialSet extends \Google\Service\Classroom\CourseMaterialSet
     {
     }
 }

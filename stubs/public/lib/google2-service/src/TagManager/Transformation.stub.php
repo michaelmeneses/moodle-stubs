@@ -21,247 +21,256 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class Transformation extends \Google\Collection
-{
-    protected $collection_key = 'parameter';
-    /**
-     * GTM Account ID.
-     *
-     * @var string
-     */
-    public $accountId;
-    /**
-     * GTM Container ID.
-     *
-     * @var string
-     */
-    public $containerId;
-    /**
-     * The fingerprint of the GTM Transformation as computed at storage time. This
-     * value is recomputed whenever the transformation is modified.
-     *
-     * @var string
-     */
-    public $fingerprint;
-    /**
-     * Transformation display name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * User notes on how to apply this transformation in the container.
-     *
-     * @var string
-     */
-    public $notes;
-    protected $parameterType = Parameter::class;
-    protected $parameterDataType = 'array';
-    /**
-     * Parent folder id.
-     *
-     * @var string
-     */
-    public $parentFolderId;
-    /**
-     * GTM transformation's API relative path.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * Auto generated link to the tag manager UI
-     *
-     * @var string
-     */
-    public $tagManagerUrl;
-    /**
-     * The Transformation ID uniquely identifies the GTM transformation.
-     *
-     * @var string
-     */
-    public $transformationId;
-    /**
-     * Transformation type.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * GTM Workspace ID.
-     *
-     * @var string
-     */
-    public $workspaceId;
-    /**
-     * GTM Account ID.
-     *
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\TagManager {
+    class Transformation extends \Google\Collection
     {
+        protected $collection_key = 'parameter';
+        /**
+         * GTM Account ID.
+         *
+         * @var string
+         */
+        public $accountId;
+        /**
+         * GTM Container ID.
+         *
+         * @var string
+         */
+        public $containerId;
+        /**
+         * The fingerprint of the GTM Transformation as computed at storage time. This
+         * value is recomputed whenever the transformation is modified.
+         *
+         * @var string
+         */
+        public $fingerprint;
+        /**
+         * Transformation display name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * User notes on how to apply this transformation in the container.
+         *
+         * @var string
+         */
+        public $notes;
+        protected $parameterType = Parameter::class;
+        protected $parameterDataType = 'array';
+        /**
+         * Parent folder id.
+         *
+         * @var string
+         */
+        public $parentFolderId;
+        /**
+         * GTM transformation's API relative path.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * Auto generated link to the tag manager UI
+         *
+         * @var string
+         */
+        public $tagManagerUrl;
+        /**
+         * The Transformation ID uniquely identifies the GTM transformation.
+         *
+         * @var string
+         */
+        public $transformationId;
+        /**
+         * Transformation type.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * GTM Workspace ID.
+         *
+         * @var string
+         */
+        public $workspaceId;
+        /**
+         * GTM Account ID.
+         *
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * GTM Container ID.
+         *
+         * @param string $containerId
+         */
+        public function setContainerId($containerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContainerId()
+        {
+        }
+        /**
+         * The fingerprint of the GTM Transformation as computed at storage time. This
+         * value is recomputed whenever the transformation is modified.
+         *
+         * @param string $fingerprint
+         */
+        public function setFingerprint($fingerprint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFingerprint()
+        {
+        }
+        /**
+         * Transformation display name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * User notes on how to apply this transformation in the container.
+         *
+         * @param string $notes
+         */
+        public function setNotes($notes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNotes()
+        {
+        }
+        /**
+         * The transformation's parameters.
+         *
+         * @param Parameter[] $parameter
+         */
+        public function setParameter($parameter)
+        {
+        }
+        /**
+         * @return Parameter[]
+         */
+        public function getParameter()
+        {
+        }
+        /**
+         * Parent folder id.
+         *
+         * @param string $parentFolderId
+         */
+        public function setParentFolderId($parentFolderId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParentFolderId()
+        {
+        }
+        /**
+         * GTM transformation's API relative path.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
+        /**
+         * Auto generated link to the tag manager UI
+         *
+         * @param string $tagManagerUrl
+         */
+        public function setTagManagerUrl($tagManagerUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTagManagerUrl()
+        {
+        }
+        /**
+         * The Transformation ID uniquely identifies the GTM transformation.
+         *
+         * @param string $transformationId
+         */
+        public function setTransformationId($transformationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTransformationId()
+        {
+        }
+        /**
+         * Transformation type.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * GTM Workspace ID.
+         *
+         * @param string $workspaceId
+         */
+        public function setWorkspaceId($workspaceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWorkspaceId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\TagManager\Transformation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * GTM Container ID.
-     *
-     * @param string $containerId
-     */
-    public function setContainerId($containerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContainerId()
-    {
-    }
-    /**
-     * The fingerprint of the GTM Transformation as computed at storage time. This
-     * value is recomputed whenever the transformation is modified.
-     *
-     * @param string $fingerprint
-     */
-    public function setFingerprint($fingerprint)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFingerprint()
-    {
-    }
-    /**
-     * Transformation display name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * User notes on how to apply this transformation in the container.
-     *
-     * @param string $notes
-     */
-    public function setNotes($notes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNotes()
-    {
-    }
-    /**
-     * The transformation's parameters.
-     *
-     * @param Parameter[] $parameter
-     */
-    public function setParameter($parameter)
-    {
-    }
-    /**
-     * @return Parameter[]
-     */
-    public function getParameter()
-    {
-    }
-    /**
-     * Parent folder id.
-     *
-     * @param string $parentFolderId
-     */
-    public function setParentFolderId($parentFolderId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParentFolderId()
-    {
-    }
-    /**
-     * GTM transformation's API relative path.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
-    {
-    }
-    /**
-     * Auto generated link to the tag manager UI
-     *
-     * @param string $tagManagerUrl
-     */
-    public function setTagManagerUrl($tagManagerUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTagManagerUrl()
-    {
-    }
-    /**
-     * The Transformation ID uniquely identifies the GTM transformation.
-     *
-     * @param string $transformationId
-     */
-    public function setTransformationId($transformationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTransformationId()
-    {
-    }
-    /**
-     * Transformation type.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-    }
-    /**
-     * GTM Workspace ID.
-     *
-     * @param string $workspaceId
-     */
-    public function setWorkspaceId($workspaceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWorkspaceId()
+    class Google_Service_TagManager_Transformation extends \Google\Service\TagManager\Transformation
     {
     }
 }

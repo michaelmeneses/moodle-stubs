@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1NotebookExecutionJobGcsNotebookSource extends \Google\Model
-{
-    /**
-     * The version of the Cloud Storage object to read. If unset, the current
-     * version of the object is read. See
-     * https://cloud.google.com/storage/docs/metadata#generation-number.
-     *
-     * @var string
-     */
-    public $generation;
-    /**
-     * The Cloud Storage uri pointing to the ipynb file. Format:
-     * `gs://bucket/notebook_file.ipynb`
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * The version of the Cloud Storage object to read. If unset, the current
-     * version of the object is read. See
-     * https://cloud.google.com/storage/docs/metadata#generation-number.
-     *
-     * @param string $generation
-     */
-    public function setGeneration($generation)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1NotebookExecutionJobGcsNotebookSource extends \Google\Model
     {
+        /**
+         * The version of the Cloud Storage object to read. If unset, the current
+         * version of the object is read. See
+         * https://cloud.google.com/storage/docs/metadata#generation-number.
+         *
+         * @var string
+         */
+        public $generation;
+        /**
+         * The Cloud Storage uri pointing to the ipynb file. Format:
+         * `gs://bucket/notebook_file.ipynb`
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * The version of the Cloud Storage object to read. If unset, the current
+         * version of the object is read. See
+         * https://cloud.google.com/storage/docs/metadata#generation-number.
+         *
+         * @param string $generation
+         */
+        public function setGeneration($generation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGeneration()
+        {
+        }
+        /**
+         * The Cloud Storage uri pointing to the ipynb file. Format:
+         * `gs://bucket/notebook_file.ipynb`
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1NotebookExecutionJobGcsNotebookSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGeneration()
-    {
-    }
-    /**
-     * The Cloud Storage uri pointing to the ipynb file. Format:
-     * `gs://bucket/notebook_file.ipynb`
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1NotebookExecutionJobGcsNotebookSource extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1NotebookExecutionJobGcsNotebookSource
     {
     }
 }

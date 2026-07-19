@@ -21,40 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting\Resource;
-
-/**
- * The "conversions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dfareportingService = new Google\Service\Dfareporting(...);
- *   $conversions = $dfareportingService->conversions;
- *  </code>
- */
-class Conversions extends \Google\Service\Resource
-{
+namespace Google\Service\Dfareporting\Resource {
+    use Google\Service\Dfareporting\ConversionsBatchInsertRequest;
+    use Google\Service\Dfareporting\ConversionsBatchInsertResponse;
+    use Google\Service\Dfareporting\ConversionsBatchUpdateRequest;
+    use Google\Service\Dfareporting\ConversionsBatchUpdateResponse;
     /**
-     * Inserts conversions. (conversions.batchinsert)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param ConversionsBatchInsertRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return ConversionsBatchInsertResponse
-     * @throws \Google\Service\Exception
+     * The "conversions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dfareportingService = new Google\Service\Dfareporting(...);
+     *   $conversions = $dfareportingService->conversions;
+     *  </code>
      */
-    public function batchinsert($profileId, ConversionsBatchInsertRequest $postBody, $optParams = [])
+    class Conversions extends \Google\Service\Resource
     {
+        /**
+         * Inserts conversions. (conversions.batchinsert)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param ConversionsBatchInsertRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return ConversionsBatchInsertResponse
+         * @throws \Google\Service\Exception
+         */
+        public function batchinsert($profileId, ConversionsBatchInsertRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates existing conversions. (conversions.batchupdate)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param ConversionsBatchUpdateRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return ConversionsBatchUpdateResponse
+         * @throws \Google\Service\Exception
+         */
+        public function batchupdate($profileId, ConversionsBatchUpdateRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Updates existing conversions. (conversions.batchupdate)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param ConversionsBatchUpdateRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return ConversionsBatchUpdateResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dfareporting\Resource\Conversions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function batchupdate($profileId, ConversionsBatchUpdateRequest $postBody, $optParams = [])
+    class Google_Service_Dfareporting_Resource_Conversions extends \Google\Service\Dfareporting\Resource\Conversions
     {
     }
 }

@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class ListPopulationClause extends \Google\Collection
-{
-    protected $collection_key = 'terms';
-    protected $termsType = ListPopulationTerm::class;
-    protected $termsDataType = 'array';
-    /**
-     * Terms of this list population clause. Each clause is made up of list
-     * population terms representing constraints and are joined by ORs.
-     *
-     * @param ListPopulationTerm[] $terms
-     */
-    public function setTerms($terms)
+namespace Google\Service\Dfareporting {
+    class ListPopulationClause extends \Google\Collection
     {
+        protected $collection_key = 'terms';
+        protected $termsType = ListPopulationTerm::class;
+        protected $termsDataType = 'array';
+        /**
+         * Terms of this list population clause. Each clause is made up of list
+         * population terms representing constraints and are joined by ORs.
+         *
+         * @param ListPopulationTerm[] $terms
+         */
+        public function setTerms($terms)
+        {
+        }
+        /**
+         * @return ListPopulationTerm[]
+         */
+        public function getTerms()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ListPopulationTerm[]
+     * Runtime class alias of \Google\Service\Dfareporting\ListPopulationClause registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTerms()
+    class Google_Service_Dfareporting_ListPopulationClause extends \Google\Service\Dfareporting\ListPopulationClause
     {
     }
 }

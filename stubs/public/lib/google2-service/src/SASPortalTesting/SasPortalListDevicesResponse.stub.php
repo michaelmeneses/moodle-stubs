@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SASPortalTesting;
-
-class SasPortalListDevicesResponse extends \Google\Collection
-{
-    protected $collection_key = 'devices';
-    protected $devicesType = SasPortalDevice::class;
-    protected $devicesDataType = 'array';
-    /**
-     * A pagination token returned from a previous call to ListDevices that
-     * indicates from where listing should continue. If the field is missing or
-     * empty, it means there is no more devices.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The devices that match the request.
-     *
-     * @param SasPortalDevice[] $devices
-     */
-    public function setDevices($devices)
+namespace Google\Service\SASPortalTesting {
+    class SasPortalListDevicesResponse extends \Google\Collection
     {
+        protected $collection_key = 'devices';
+        protected $devicesType = SasPortalDevice::class;
+        protected $devicesDataType = 'array';
+        /**
+         * A pagination token returned from a previous call to ListDevices that
+         * indicates from where listing should continue. If the field is missing or
+         * empty, it means there is no more devices.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The devices that match the request.
+         *
+         * @param SasPortalDevice[] $devices
+         */
+        public function setDevices($devices)
+        {
+        }
+        /**
+         * @return SasPortalDevice[]
+         */
+        public function getDevices()
+        {
+        }
+        /**
+         * A pagination token returned from a previous call to ListDevices that
+         * indicates from where listing should continue. If the field is missing or
+         * empty, it means there is no more devices.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SasPortalDevice[]
+     * Runtime class alias of \Google\Service\SASPortalTesting\SasPortalListDevicesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDevices()
-    {
-    }
-    /**
-     * A pagination token returned from a previous call to ListDevices that
-     * indicates from where listing should continue. If the field is missing or
-     * empty, it means there is no more devices.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_SASPortalTesting_SasPortalListDevicesResponse extends \Google\Service\SASPortalTesting\SasPortalListDevicesResponse
     {
     }
 }

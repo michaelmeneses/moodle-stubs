@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class AnnotateImageRequest extends \Google\Collection
-{
-    protected $collection_key = 'features';
-    protected $featuresType = Feature::class;
-    protected $featuresDataType = 'array';
-    protected $imageType = Image::class;
-    protected $imageDataType = '';
-    protected $imageContextType = ImageContext::class;
-    protected $imageContextDataType = '';
-    /**
-     * Requested features.
-     *
-     * @param Feature[] $features
-     */
-    public function setFeatures($features)
+namespace Google\Service\Vision {
+    class AnnotateImageRequest extends \Google\Collection
     {
+        protected $collection_key = 'features';
+        protected $featuresType = Feature::class;
+        protected $featuresDataType = 'array';
+        protected $imageType = Image::class;
+        protected $imageDataType = '';
+        protected $imageContextType = ImageContext::class;
+        protected $imageContextDataType = '';
+        /**
+         * Requested features.
+         *
+         * @param Feature[] $features
+         */
+        public function setFeatures($features)
+        {
+        }
+        /**
+         * @return Feature[]
+         */
+        public function getFeatures()
+        {
+        }
+        /**
+         * The image to be processed.
+         *
+         * @param Image $image
+         */
+        public function setImage(Image $image)
+        {
+        }
+        /**
+         * @return Image
+         */
+        public function getImage()
+        {
+        }
+        /**
+         * Additional context that may accompany the image.
+         *
+         * @param ImageContext $imageContext
+         */
+        public function setImageContext(ImageContext $imageContext)
+        {
+        }
+        /**
+         * @return ImageContext
+         */
+        public function getImageContext()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Feature[]
+     * Runtime class alias of \Google\Service\Vision\AnnotateImageRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFeatures()
-    {
-    }
-    /**
-     * The image to be processed.
-     *
-     * @param Image $image
-     */
-    public function setImage(Image $image)
-    {
-    }
-    /**
-     * @return Image
-     */
-    public function getImage()
-    {
-    }
-    /**
-     * Additional context that may accompany the image.
-     *
-     * @param ImageContext $imageContext
-     */
-    public function setImageContext(ImageContext $imageContext)
-    {
-    }
-    /**
-     * @return ImageContext
-     */
-    public function getImageContext()
+    class Google_Service_Vision_AnnotateImageRequest extends \Google\Service\Vision\AnnotateImageRequest
     {
     }
 }

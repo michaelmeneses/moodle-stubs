@@ -21,79 +21,90 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise\Resource;
-
-/**
- * The "managedconfigurationsforuser" collection of methods.
- * Typical usage is:
- *  <code>
- *   $androidenterpriseService = new Google\Service\AndroidEnterprise(...);
- *   $managedconfigurationsforuser = $androidenterpriseService->managedconfigurationsforuser;
- *  </code>
- */
-class Managedconfigurationsforuser extends \Google\Service\Resource
-{
+namespace Google\Service\AndroidEnterprise\Resource {
+    use Google\Service\AndroidEnterprise\ManagedConfiguration;
+    use Google\Service\AndroidEnterprise\ManagedConfigurationsForUserListResponse;
     /**
-     * Removes a per-user managed configuration for an app for the specified user.
-     * (managedconfigurationsforuser.delete)
-     *
-     * @param string $enterpriseId The ID of the enterprise.
-     * @param string $userId The ID of the user.
-     * @param string $managedConfigurationForUserId The ID of the managed
-     * configuration (a product ID), e.g. "app:com.google.android.gm".
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "managedconfigurationsforuser" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $androidenterpriseService = new Google\Service\AndroidEnterprise(...);
+     *   $managedconfigurationsforuser = $androidenterpriseService->managedconfigurationsforuser;
+     *  </code>
      */
-    public function delete($enterpriseId, $userId, $managedConfigurationForUserId, $optParams = [])
+    class Managedconfigurationsforuser extends \Google\Service\Resource
     {
+        /**
+         * Removes a per-user managed configuration for an app for the specified user.
+         * (managedconfigurationsforuser.delete)
+         *
+         * @param string $enterpriseId The ID of the enterprise.
+         * @param string $userId The ID of the user.
+         * @param string $managedConfigurationForUserId The ID of the managed
+         * configuration (a product ID), e.g. "app:com.google.android.gm".
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($enterpriseId, $userId, $managedConfigurationForUserId, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves details of a per-user managed configuration for an app for the
+         * specified user. (managedconfigurationsforuser.get)
+         *
+         * @param string $enterpriseId The ID of the enterprise.
+         * @param string $userId The ID of the user.
+         * @param string $managedConfigurationForUserId The ID of the managed
+         * configuration (a product ID), e.g. "app:com.google.android.gm".
+         * @param array $optParams Optional parameters.
+         * @return ManagedConfiguration
+         * @throws \Google\Service\Exception
+         */
+        public function get($enterpriseId, $userId, $managedConfigurationForUserId, $optParams = [])
+        {
+        }
+        /**
+         * Lists all the per-user managed configurations for the specified user. Only
+         * the ID is set.
+         * (managedconfigurationsforuser.listManagedconfigurationsforuser)
+         *
+         * @param string $enterpriseId The ID of the enterprise.
+         * @param string $userId The ID of the user.
+         * @param array $optParams Optional parameters.
+         * @return ManagedConfigurationsForUserListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listManagedconfigurationsforuser($enterpriseId, $userId, $optParams = [])
+        {
+        }
+        /**
+         * Adds or updates the managed configuration settings for an app for the
+         * specified user. If you support the Managed configurations iframe, you can
+         * apply managed configurations to a user by specifying an mcmId and its
+         * associated configuration variables (if any) in the request. Alternatively,
+         * all EMMs can apply managed configurations by passing a list of managed
+         * properties. (managedconfigurationsforuser.update)
+         *
+         * @param string $enterpriseId The ID of the enterprise.
+         * @param string $userId The ID of the user.
+         * @param string $managedConfigurationForUserId The ID of the managed
+         * configuration (a product ID), e.g. "app:com.google.android.gm".
+         * @param ManagedConfiguration $postBody
+         * @param array $optParams Optional parameters.
+         * @return ManagedConfiguration
+         * @throws \Google\Service\Exception
+         */
+        public function update($enterpriseId, $userId, $managedConfigurationForUserId, ManagedConfiguration $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves details of a per-user managed configuration for an app for the
-     * specified user. (managedconfigurationsforuser.get)
-     *
-     * @param string $enterpriseId The ID of the enterprise.
-     * @param string $userId The ID of the user.
-     * @param string $managedConfigurationForUserId The ID of the managed
-     * configuration (a product ID), e.g. "app:com.google.android.gm".
-     * @param array $optParams Optional parameters.
-     * @return ManagedConfiguration
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AndroidEnterprise\Resource\Managedconfigurationsforuser registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($enterpriseId, $userId, $managedConfigurationForUserId, $optParams = [])
-    {
-    }
-    /**
-     * Lists all the per-user managed configurations for the specified user. Only
-     * the ID is set.
-     * (managedconfigurationsforuser.listManagedconfigurationsforuser)
-     *
-     * @param string $enterpriseId The ID of the enterprise.
-     * @param string $userId The ID of the user.
-     * @param array $optParams Optional parameters.
-     * @return ManagedConfigurationsForUserListResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listManagedconfigurationsforuser($enterpriseId, $userId, $optParams = [])
-    {
-    }
-    /**
-     * Adds or updates the managed configuration settings for an app for the
-     * specified user. If you support the Managed configurations iframe, you can
-     * apply managed configurations to a user by specifying an mcmId and its
-     * associated configuration variables (if any) in the request. Alternatively,
-     * all EMMs can apply managed configurations by passing a list of managed
-     * properties. (managedconfigurationsforuser.update)
-     *
-     * @param string $enterpriseId The ID of the enterprise.
-     * @param string $userId The ID of the user.
-     * @param string $managedConfigurationForUserId The ID of the managed
-     * configuration (a product ID), e.g. "app:com.google.android.gm".
-     * @param ManagedConfiguration $postBody
-     * @param array $optParams Optional parameters.
-     * @return ManagedConfiguration
-     * @throws \Google\Service\Exception
-     */
-    public function update($enterpriseId, $userId, $managedConfigurationForUserId, ManagedConfiguration $postBody, $optParams = [])
+    class Google_Service_AndroidEnterprise_Resource_Managedconfigurationsforuser extends \Google\Service\AndroidEnterprise\Resource\Managedconfigurationsforuser
     {
     }
 }

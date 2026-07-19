@@ -21,120 +21,129 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class UserCredentials extends \Google\Model
-{
-    /**
-     * Optional. Password for the Salesforce connection. Mutually exclusive with
-     * the `secret_manager_stored_password` field.
-     *
-     * @var string
-     */
-    public $password;
-    /**
-     * Optional. A reference to a Secret Manager resource name storing the
-     * Salesforce connection's password. Mutually exclusive with the `password`
-     * field.
-     *
-     * @var string
-     */
-    public $secretManagerStoredPassword;
-    /**
-     * Optional. A reference to a Secret Manager resource name storing the
-     * Salesforce connection's security token. Mutually exclusive with the
-     * `security_token` field.
-     *
-     * @var string
-     */
-    public $secretManagerStoredSecurityToken;
-    /**
-     * Optional. Security token for the Salesforce connection. Mutually exclusive
-     * with the `secret_manager_stored_security_token` field.
-     *
-     * @var string
-     */
-    public $securityToken;
-    /**
-     * Required. Username for the Salesforce connection.
-     *
-     * @var string
-     */
-    public $username;
-    /**
-     * Optional. Password for the Salesforce connection. Mutually exclusive with
-     * the `secret_manager_stored_password` field.
-     *
-     * @param string $password
-     */
-    public function setPassword($password)
+namespace Google\Service\Datastream {
+    class UserCredentials extends \Google\Model
     {
+        /**
+         * Optional. Password for the Salesforce connection. Mutually exclusive with
+         * the `secret_manager_stored_password` field.
+         *
+         * @var string
+         */
+        public $password;
+        /**
+         * Optional. A reference to a Secret Manager resource name storing the
+         * Salesforce connection's password. Mutually exclusive with the `password`
+         * field.
+         *
+         * @var string
+         */
+        public $secretManagerStoredPassword;
+        /**
+         * Optional. A reference to a Secret Manager resource name storing the
+         * Salesforce connection's security token. Mutually exclusive with the
+         * `security_token` field.
+         *
+         * @var string
+         */
+        public $secretManagerStoredSecurityToken;
+        /**
+         * Optional. Security token for the Salesforce connection. Mutually exclusive
+         * with the `secret_manager_stored_security_token` field.
+         *
+         * @var string
+         */
+        public $securityToken;
+        /**
+         * Required. Username for the Salesforce connection.
+         *
+         * @var string
+         */
+        public $username;
+        /**
+         * Optional. Password for the Salesforce connection. Mutually exclusive with
+         * the `secret_manager_stored_password` field.
+         *
+         * @param string $password
+         */
+        public function setPassword($password)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPassword()
+        {
+        }
+        /**
+         * Optional. A reference to a Secret Manager resource name storing the
+         * Salesforce connection's password. Mutually exclusive with the `password`
+         * field.
+         *
+         * @param string $secretManagerStoredPassword
+         */
+        public function setSecretManagerStoredPassword($secretManagerStoredPassword)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecretManagerStoredPassword()
+        {
+        }
+        /**
+         * Optional. A reference to a Secret Manager resource name storing the
+         * Salesforce connection's security token. Mutually exclusive with the
+         * `security_token` field.
+         *
+         * @param string $secretManagerStoredSecurityToken
+         */
+        public function setSecretManagerStoredSecurityToken($secretManagerStoredSecurityToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecretManagerStoredSecurityToken()
+        {
+        }
+        /**
+         * Optional. Security token for the Salesforce connection. Mutually exclusive
+         * with the `secret_manager_stored_security_token` field.
+         *
+         * @param string $securityToken
+         */
+        public function setSecurityToken($securityToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecurityToken()
+        {
+        }
+        /**
+         * Required. Username for the Salesforce connection.
+         *
+         * @param string $username
+         */
+        public function setUsername($username)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUsername()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastream\UserCredentials registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPassword()
-    {
-    }
-    /**
-     * Optional. A reference to a Secret Manager resource name storing the
-     * Salesforce connection's password. Mutually exclusive with the `password`
-     * field.
-     *
-     * @param string $secretManagerStoredPassword
-     */
-    public function setSecretManagerStoredPassword($secretManagerStoredPassword)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSecretManagerStoredPassword()
-    {
-    }
-    /**
-     * Optional. A reference to a Secret Manager resource name storing the
-     * Salesforce connection's security token. Mutually exclusive with the
-     * `security_token` field.
-     *
-     * @param string $secretManagerStoredSecurityToken
-     */
-    public function setSecretManagerStoredSecurityToken($secretManagerStoredSecurityToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSecretManagerStoredSecurityToken()
-    {
-    }
-    /**
-     * Optional. Security token for the Salesforce connection. Mutually exclusive
-     * with the `secret_manager_stored_security_token` field.
-     *
-     * @param string $securityToken
-     */
-    public function setSecurityToken($securityToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSecurityToken()
-    {
-    }
-    /**
-     * Required. Username for the Salesforce connection.
-     *
-     * @param string $username
-     */
-    public function setUsername($username)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUsername()
+    class Google_Service_Datastream_UserCredentials extends \Google\Service\Datastream\UserCredentials
     {
     }
 }

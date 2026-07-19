@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunV2NetworkInterface extends \Google\Collection
-{
-    protected $collection_key = 'tags';
-    /**
-     * Optional. The VPC network that the Cloud Run resource will be able to send
-     * traffic to. At least one of network or subnetwork must be specified. If
-     * both network and subnetwork are specified, the given VPC subnetwork must
-     * belong to the given VPC network. If network is not specified, it will be
-     * looked up from the subnetwork.
-     *
-     * @var string
-     */
-    public $network;
-    /**
-     * Optional. The VPC subnetwork that the Cloud Run resource will get IPs from.
-     * At least one of network or subnetwork must be specified. If both network
-     * and subnetwork are specified, the given VPC subnetwork must belong to the
-     * given VPC network. If subnetwork is not specified, the subnetwork with the
-     * same name with the network will be used.
-     *
-     * @var string
-     */
-    public $subnetwork;
-    /**
-     * Optional. Network tags applied to this Cloud Run resource.
-     *
-     * @var string[]
-     */
-    public $tags;
-    /**
-     * Optional. The VPC network that the Cloud Run resource will be able to send
-     * traffic to. At least one of network or subnetwork must be specified. If
-     * both network and subnetwork are specified, the given VPC subnetwork must
-     * belong to the given VPC network. If network is not specified, it will be
-     * looked up from the subnetwork.
-     *
-     * @param string $network
-     */
-    public function setNetwork($network)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunV2NetworkInterface extends \Google\Collection
     {
+        protected $collection_key = 'tags';
+        /**
+         * Optional. The VPC network that the Cloud Run resource will be able to send
+         * traffic to. At least one of network or subnetwork must be specified. If
+         * both network and subnetwork are specified, the given VPC subnetwork must
+         * belong to the given VPC network. If network is not specified, it will be
+         * looked up from the subnetwork.
+         *
+         * @var string
+         */
+        public $network;
+        /**
+         * Optional. The VPC subnetwork that the Cloud Run resource will get IPs from.
+         * At least one of network or subnetwork must be specified. If both network
+         * and subnetwork are specified, the given VPC subnetwork must belong to the
+         * given VPC network. If subnetwork is not specified, the subnetwork with the
+         * same name with the network will be used.
+         *
+         * @var string
+         */
+        public $subnetwork;
+        /**
+         * Optional. Network tags applied to this Cloud Run resource.
+         *
+         * @var string[]
+         */
+        public $tags;
+        /**
+         * Optional. The VPC network that the Cloud Run resource will be able to send
+         * traffic to. At least one of network or subnetwork must be specified. If
+         * both network and subnetwork are specified, the given VPC subnetwork must
+         * belong to the given VPC network. If network is not specified, it will be
+         * looked up from the subnetwork.
+         *
+         * @param string $network
+         */
+        public function setNetwork($network)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetwork()
+        {
+        }
+        /**
+         * Optional. The VPC subnetwork that the Cloud Run resource will get IPs from.
+         * At least one of network or subnetwork must be specified. If both network
+         * and subnetwork are specified, the given VPC subnetwork must belong to the
+         * given VPC network. If subnetwork is not specified, the subnetwork with the
+         * same name with the network will be used.
+         *
+         * @param string $subnetwork
+         */
+        public function setSubnetwork($subnetwork)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubnetwork()
+        {
+        }
+        /**
+         * Optional. Network tags applied to this Cloud Run resource.
+         *
+         * @param string[] $tags
+         */
+        public function setTags($tags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTags()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunV2NetworkInterface registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNetwork()
-    {
-    }
-    /**
-     * Optional. The VPC subnetwork that the Cloud Run resource will get IPs from.
-     * At least one of network or subnetwork must be specified. If both network
-     * and subnetwork are specified, the given VPC subnetwork must belong to the
-     * given VPC network. If subnetwork is not specified, the subnetwork with the
-     * same name with the network will be used.
-     *
-     * @param string $subnetwork
-     */
-    public function setSubnetwork($subnetwork)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubnetwork()
-    {
-    }
-    /**
-     * Optional. Network tags applied to this Cloud Run resource.
-     *
-     * @param string[] $tags
-     */
-    public function setTags($tags)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTags()
+    class Google_Service_CloudRun_GoogleCloudRunV2NetworkInterface extends \Google\Service\CloudRun\GoogleCloudRunV2NetworkInterface
     {
     }
 }

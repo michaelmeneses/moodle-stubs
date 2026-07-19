@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storagetransfer;
-
-class AwsAccessKey extends \Google\Model
-{
-    /**
-     * Required. AWS access key ID.
-     *
-     * @var string
-     */
-    public $accessKeyId;
-    /**
-     * Required. AWS secret access key. This field is not returned in RPC
-     * responses.
-     *
-     * @var string
-     */
-    public $secretAccessKey;
-    /**
-     * Required. AWS access key ID.
-     *
-     * @param string $accessKeyId
-     */
-    public function setAccessKeyId($accessKeyId)
+namespace Google\Service\Storagetransfer {
+    class AwsAccessKey extends \Google\Model
     {
+        /**
+         * Required. AWS access key ID.
+         *
+         * @var string
+         */
+        public $accessKeyId;
+        /**
+         * Required. AWS secret access key. This field is not returned in RPC
+         * responses.
+         *
+         * @var string
+         */
+        public $secretAccessKey;
+        /**
+         * Required. AWS access key ID.
+         *
+         * @param string $accessKeyId
+         */
+        public function setAccessKeyId($accessKeyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccessKeyId()
+        {
+        }
+        /**
+         * Required. AWS secret access key. This field is not returned in RPC
+         * responses.
+         *
+         * @param string $secretAccessKey
+         */
+        public function setSecretAccessKey($secretAccessKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecretAccessKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Storagetransfer\AwsAccessKey registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessKeyId()
-    {
-    }
-    /**
-     * Required. AWS secret access key. This field is not returned in RPC
-     * responses.
-     *
-     * @param string $secretAccessKey
-     */
-    public function setSecretAccessKey($secretAccessKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSecretAccessKey()
+    class Google_Service_Storagetransfer_AwsAccessKey extends \Google\Service\Storagetransfer\AwsAccessKey
     {
     }
 }

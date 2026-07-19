@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class OrdersListResponse extends \Google\Collection
-{
-    protected $collection_key = 'orders';
-    /**
-     * @var string
-     */
-    public $kind;
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    protected $ordersType = Order::class;
-    protected $ordersDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setKind($kind)
+namespace Google\Service\Dfareporting {
+    class OrdersListResponse extends \Google\Collection
     {
+        protected $collection_key = 'orders';
+        /**
+         * @var string
+         */
+        public $kind;
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        protected $ordersType = Order::class;
+        protected $ordersDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param Order[]
+         */
+        public function setOrders($orders)
+        {
+        }
+        /**
+         * @return Order[]
+         */
+        public function getOrders()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\OrdersListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param Order[]
-     */
-    public function setOrders($orders)
-    {
-    }
-    /**
-     * @return Order[]
-     */
-    public function getOrders()
+    class Google_Service_Dfareporting_OrdersListResponse extends \Google\Service\Dfareporting\OrdersListResponse
     {
     }
 }

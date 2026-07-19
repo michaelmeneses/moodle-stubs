@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1FileStatus extends \Google\Model
-{
-    /**
-     * RagFile state is unspecified.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * RagFile resource has been created and indexed successfully.
-     */
-    public const STATE_ACTIVE = 'ACTIVE';
-    /**
-     * RagFile resource is in a problematic state. See `error_message` field for
-     * details.
-     */
-    public const STATE_ERROR = 'ERROR';
-    /**
-     * Output only. Only when the `state` field is ERROR.
-     *
-     * @var string
-     */
-    public $errorStatus;
-    /**
-     * Output only. RagFile state.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. Only when the `state` field is ERROR.
-     *
-     * @param string $errorStatus
-     */
-    public function setErrorStatus($errorStatus)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1FileStatus extends \Google\Model
     {
+        /**
+         * RagFile state is unspecified.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * RagFile resource has been created and indexed successfully.
+         */
+        public const STATE_ACTIVE = 'ACTIVE';
+        /**
+         * RagFile resource is in a problematic state. See `error_message` field for
+         * details.
+         */
+        public const STATE_ERROR = 'ERROR';
+        /**
+         * Output only. Only when the `state` field is ERROR.
+         *
+         * @var string
+         */
+        public $errorStatus;
+        /**
+         * Output only. RagFile state.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. Only when the `state` field is ERROR.
+         *
+         * @param string $errorStatus
+         */
+        public function setErrorStatus($errorStatus)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorStatus()
+        {
+        }
+        /**
+         * Output only. RagFile state.
+         *
+         * Accepted values: STATE_UNSPECIFIED, ACTIVE, ERROR
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1FileStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorStatus()
-    {
-    }
-    /**
-     * Output only. RagFile state.
-     *
-     * Accepted values: STATE_UNSPECIFIED, ACTIVE, ERROR
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1FileStatus extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1FileStatus
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dns;
-
-class PolicyDns64Config extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $kind;
-    protected $scopeType = PolicyDns64ConfigScope::class;
-    protected $scopeDataType = '';
-    /**
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Dns {
+    class PolicyDns64Config extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $kind;
+        protected $scopeType = PolicyDns64ConfigScope::class;
+        protected $scopeDataType = '';
+        /**
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The scope to which DNS64 config will be applied to.
+         *
+         * @param PolicyDns64ConfigScope $scope
+         */
+        public function setScope(PolicyDns64ConfigScope $scope)
+        {
+        }
+        /**
+         * @return PolicyDns64ConfigScope
+         */
+        public function getScope()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dns\PolicyDns64Config registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * The scope to which DNS64 config will be applied to.
-     *
-     * @param PolicyDns64ConfigScope $scope
-     */
-    public function setScope(PolicyDns64ConfigScope $scope)
-    {
-    }
-    /**
-     * @return PolicyDns64ConfigScope
-     */
-    public function getScope()
+    class Google_Service_Dns_PolicyDns64Config extends \Google\Service\Dns\PolicyDns64Config
     {
     }
 }

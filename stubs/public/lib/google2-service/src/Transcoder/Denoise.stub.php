@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Transcoder;
-
-class Denoise extends \Google\Model
-{
-    /**
-     * Set strength of the denoise. Enter a value between 0 and 1. The higher the
-     * value, the smoother the image. 0 is no denoising. The default is 0.
-     *
-     * @var 
-     */
-    public $strength;
-    /**
-     * Set the denoiser mode. The default is `standard`. Supported denoiser modes:
-     * - `standard` - `grain`
-     *
-     * @var string
-     */
-    public $tune;
-    public function setStrength($strength)
+namespace Google\Service\Transcoder {
+    class Denoise extends \Google\Model
     {
+        /**
+         * Set strength of the denoise. Enter a value between 0 and 1. The higher the
+         * value, the smoother the image. 0 is no denoising. The default is 0.
+         *
+         * @var 
+         */
+        public $strength;
+        /**
+         * Set the denoiser mode. The default is `standard`. Supported denoiser modes:
+         * - `standard` - `grain`
+         *
+         * @var string
+         */
+        public $tune;
+        public function setStrength($strength)
+        {
+        }
+        public function getStrength()
+        {
+        }
+        /**
+         * Set the denoiser mode. The default is `standard`. Supported denoiser modes:
+         * - `standard` - `grain`
+         *
+         * @param string $tune
+         */
+        public function setTune($tune)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTune()
+        {
+        }
     }
-    public function getStrength()
-    {
-    }
+}
+namespace {
     /**
-     * Set the denoiser mode. The default is `standard`. Supported denoiser modes:
-     * - `standard` - `grain`
-     *
-     * @param string $tune
+     * Runtime class alias of \Google\Service\Transcoder\Denoise registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setTune($tune)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTune()
+    class Google_Service_Transcoder_Denoise extends \Google\Service\Transcoder\Denoise
     {
     }
 }

@@ -8,6 +8,7 @@
  */
 namespace Aws\FSx;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon FSx** service.
  * @method \Aws\Result associateFileSystemAliases(array $args = [])

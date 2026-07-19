@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidate extends \Google\Model
-{
-    protected $contentType = GoogleCloudDiscoveryengineV1GroundedGenerationContent::class;
-    protected $contentDataType = '';
-    protected $groundingMetadataType = GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadata::class;
-    protected $groundingMetadataDataType = '';
-    /**
-     * @var float
-     */
-    public $groundingScore;
-    /**
-     * @var int
-     */
-    public $index;
-    /**
-     * @param GoogleCloudDiscoveryengineV1GroundedGenerationContent
-     */
-    public function setContent(GoogleCloudDiscoveryengineV1GroundedGenerationContent $content)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidate extends \Google\Model
     {
+        protected $contentType = GoogleCloudDiscoveryengineV1GroundedGenerationContent::class;
+        protected $contentDataType = '';
+        protected $groundingMetadataType = GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadata::class;
+        protected $groundingMetadataDataType = '';
+        /**
+         * @var float
+         */
+        public $groundingScore;
+        /**
+         * @var int
+         */
+        public $index;
+        /**
+         * @param GoogleCloudDiscoveryengineV1GroundedGenerationContent
+         */
+        public function setContent(GoogleCloudDiscoveryengineV1GroundedGenerationContent $content)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1GroundedGenerationContent
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadata
+         */
+        public function setGroundingMetadata(GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadata $groundingMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadata
+         */
+        public function getGroundingMetadata()
+        {
+        }
+        /**
+         * @param float
+         */
+        public function setGroundingScore($groundingScore)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getGroundingScore()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setIndex($index)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getIndex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1GroundedGenerationContent
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadata
-     */
-    public function setGroundingMetadata(GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadata $groundingMetadata)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadata
-     */
-    public function getGroundingMetadata()
-    {
-    }
-    /**
-     * @param float
-     */
-    public function setGroundingScore($groundingScore)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getGroundingScore()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setIndex($index)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getIndex()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidate extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidate
     {
     }
 }

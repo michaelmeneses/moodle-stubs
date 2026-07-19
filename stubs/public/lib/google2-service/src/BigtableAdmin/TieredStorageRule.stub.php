@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class TieredStorageRule extends \Google\Model
-{
-    /**
-     * Include cells older than the given age. For the infrequent access tier,
-     * this value must be at least 30 days.
-     *
-     * @var string
-     */
-    public $includeIfOlderThan;
-    /**
-     * Include cells older than the given age. For the infrequent access tier,
-     * this value must be at least 30 days.
-     *
-     * @param string $includeIfOlderThan
-     */
-    public function setIncludeIfOlderThan($includeIfOlderThan)
+namespace Google\Service\BigtableAdmin {
+    class TieredStorageRule extends \Google\Model
     {
+        /**
+         * Include cells older than the given age. For the infrequent access tier,
+         * this value must be at least 30 days.
+         *
+         * @var string
+         */
+        public $includeIfOlderThan;
+        /**
+         * Include cells older than the given age. For the infrequent access tier,
+         * this value must be at least 30 days.
+         *
+         * @param string $includeIfOlderThan
+         */
+        public function setIncludeIfOlderThan($includeIfOlderThan)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIncludeIfOlderThan()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigtableAdmin\TieredStorageRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIncludeIfOlderThan()
+    class Google_Service_BigtableAdmin_TieredStorageRule extends \Google\Service\BigtableAdmin\TieredStorageRule
     {
     }
 }

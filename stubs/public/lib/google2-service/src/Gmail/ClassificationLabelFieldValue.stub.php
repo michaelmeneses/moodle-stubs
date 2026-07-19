@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Gmail;
-
-class ClassificationLabelFieldValue extends \Google\Model
-{
-    /**
-     * Required. The field ID for the Classification Label Value. Maps to the ID
-     * field of the Google Drive `Label.Field` object.
-     *
-     * @var string
-     */
-    public $fieldId;
-    /**
-     * Selection choice ID for the selection option. Should only be set if the
-     * field type is `SELECTION` in the Google Drive `Label.Field` object. Maps to
-     * the id field of the Google Drive `Label.Field.SelectionOptions` resource.
-     *
-     * @var string
-     */
-    public $selection;
-    /**
-     * Required. The field ID for the Classification Label Value. Maps to the ID
-     * field of the Google Drive `Label.Field` object.
-     *
-     * @param string $fieldId
-     */
-    public function setFieldId($fieldId)
+namespace Google\Service\Gmail {
+    class ClassificationLabelFieldValue extends \Google\Model
     {
+        /**
+         * Required. The field ID for the Classification Label Value. Maps to the ID
+         * field of the Google Drive `Label.Field` object.
+         *
+         * @var string
+         */
+        public $fieldId;
+        /**
+         * Selection choice ID for the selection option. Should only be set if the
+         * field type is `SELECTION` in the Google Drive `Label.Field` object. Maps to
+         * the id field of the Google Drive `Label.Field.SelectionOptions` resource.
+         *
+         * @var string
+         */
+        public $selection;
+        /**
+         * Required. The field ID for the Classification Label Value. Maps to the ID
+         * field of the Google Drive `Label.Field` object.
+         *
+         * @param string $fieldId
+         */
+        public function setFieldId($fieldId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFieldId()
+        {
+        }
+        /**
+         * Selection choice ID for the selection option. Should only be set if the
+         * field type is `SELECTION` in the Google Drive `Label.Field` object. Maps to
+         * the id field of the Google Drive `Label.Field.SelectionOptions` resource.
+         *
+         * @param string $selection
+         */
+        public function setSelection($selection)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelection()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Gmail\ClassificationLabelFieldValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFieldId()
-    {
-    }
-    /**
-     * Selection choice ID for the selection option. Should only be set if the
-     * field type is `SELECTION` in the Google Drive `Label.Field` object. Maps to
-     * the id field of the Google Drive `Label.Field.SelectionOptions` resource.
-     *
-     * @param string $selection
-     */
-    public function setSelection($selection)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelection()
+    class Google_Service_Gmail_ClassificationLabelFieldValue extends \Google\Service\Gmail\ClassificationLabelFieldValue
     {
     }
 }

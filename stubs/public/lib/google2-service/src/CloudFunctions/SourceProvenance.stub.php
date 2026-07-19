@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudFunctions;
-
-class SourceProvenance extends \Google\Model
-{
-    /**
-     * A copy of the build's `source.git_uri`, if exists, with any commits
-     * resolved.
-     *
-     * @var string
-     */
-    public $gitUri;
-    protected $resolvedRepoSourceType = RepoSource::class;
-    protected $resolvedRepoSourceDataType = '';
-    protected $resolvedStorageSourceType = StorageSource::class;
-    protected $resolvedStorageSourceDataType = '';
-    /**
-     * A copy of the build's `source.git_uri`, if exists, with any commits
-     * resolved.
-     *
-     * @param string $gitUri
-     */
-    public function setGitUri($gitUri)
+namespace Google\Service\CloudFunctions {
+    class SourceProvenance extends \Google\Model
     {
+        /**
+         * A copy of the build's `source.git_uri`, if exists, with any commits
+         * resolved.
+         *
+         * @var string
+         */
+        public $gitUri;
+        protected $resolvedRepoSourceType = RepoSource::class;
+        protected $resolvedRepoSourceDataType = '';
+        protected $resolvedStorageSourceType = StorageSource::class;
+        protected $resolvedStorageSourceDataType = '';
+        /**
+         * A copy of the build's `source.git_uri`, if exists, with any commits
+         * resolved.
+         *
+         * @param string $gitUri
+         */
+        public function setGitUri($gitUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGitUri()
+        {
+        }
+        /**
+         * A copy of the build's `source.repo_source`, if exists, with any revisions
+         * resolved.
+         *
+         * @param RepoSource $resolvedRepoSource
+         */
+        public function setResolvedRepoSource(RepoSource $resolvedRepoSource)
+        {
+        }
+        /**
+         * @return RepoSource
+         */
+        public function getResolvedRepoSource()
+        {
+        }
+        /**
+         * A copy of the build's `source.storage_source`, if exists, with any
+         * generations resolved.
+         *
+         * @param StorageSource $resolvedStorageSource
+         */
+        public function setResolvedStorageSource(StorageSource $resolvedStorageSource)
+        {
+        }
+        /**
+         * @return StorageSource
+         */
+        public function getResolvedStorageSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudFunctions\SourceProvenance registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGitUri()
-    {
-    }
-    /**
-     * A copy of the build's `source.repo_source`, if exists, with any revisions
-     * resolved.
-     *
-     * @param RepoSource $resolvedRepoSource
-     */
-    public function setResolvedRepoSource(RepoSource $resolvedRepoSource)
-    {
-    }
-    /**
-     * @return RepoSource
-     */
-    public function getResolvedRepoSource()
-    {
-    }
-    /**
-     * A copy of the build's `source.storage_source`, if exists, with any
-     * generations resolved.
-     *
-     * @param StorageSource $resolvedStorageSource
-     */
-    public function setResolvedStorageSource(StorageSource $resolvedStorageSource)
-    {
-    }
-    /**
-     * @return StorageSource
-     */
-    public function getResolvedStorageSource()
+    class Google_Service_CloudFunctions_SourceProvenance extends \Google\Service\CloudFunctions\SourceProvenance
     {
     }
 }

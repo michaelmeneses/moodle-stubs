@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataprocMetastore;
-
-class GoogleCloudMetastoreV2LatestBackup extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $backupId;
-    /**
-     * @var string
-     */
-    public $duration;
-    /**
-     * @var string
-     */
-    public $startTime;
-    /**
-     * @var string
-     */
-    public $state;
-    /**
-     * @param string
-     */
-    public function setBackupId($backupId)
+namespace Google\Service\DataprocMetastore {
+    class GoogleCloudMetastoreV2LatestBackup extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $backupId;
+        /**
+         * @var string
+         */
+        public $duration;
+        /**
+         * @var string
+         */
+        public $startTime;
+        /**
+         * @var string
+         */
+        public $state;
+        /**
+         * @param string
+         */
+        public function setBackupId($backupId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBackupId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDuration($duration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDuration()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataprocMetastore\GoogleCloudMetastoreV2LatestBackup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackupId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDuration($duration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDuration()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
+    class Google_Service_DataprocMetastore_GoogleCloudMetastoreV2LatestBackup extends \Google\Service\DataprocMetastore\GoogleCloudMetastoreV2LatestBackup
     {
     }
 }

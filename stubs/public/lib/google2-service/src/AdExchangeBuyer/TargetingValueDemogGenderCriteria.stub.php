@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class TargetingValueDemogGenderCriteria extends \Google\Collection
-{
-    protected $collection_key = 'demogGenderCriteriaIds';
-    public $demogGenderCriteriaIds;
-    public function setDemogGenderCriteriaIds($demogGenderCriteriaIds)
+namespace Google\Service\AdExchangeBuyer {
+    class TargetingValueDemogGenderCriteria extends \Google\Collection
     {
+        protected $collection_key = 'demogGenderCriteriaIds';
+        public $demogGenderCriteriaIds;
+        public function setDemogGenderCriteriaIds($demogGenderCriteriaIds)
+        {
+        }
+        public function getDemogGenderCriteriaIds()
+        {
+        }
     }
-    public function getDemogGenderCriteriaIds()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\TargetingValueDemogGenderCriteria registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AdExchangeBuyer_TargetingValueDemogGenderCriteria extends \Google\Service\AdExchangeBuyer\TargetingValueDemogGenderCriteria
     {
     }
 }

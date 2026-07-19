@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class Annotations extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = Annotation::class;
-    protected $itemsDataType = 'array';
-    /**
-     * Resource type.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Token to pass in for pagination for the next page. This will not be present
-     * if this request does not have more results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Total number of annotations found. This may be greater than the number of
-     * notes returned in this response if results have been paginated.
-     *
-     * @var int
-     */
-    public $totalItems;
-    /**
-     * A list of annotations.
-     *
-     * @param Annotation[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\Books {
+    class Annotations extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = Annotation::class;
+        protected $itemsDataType = 'array';
+        /**
+         * Resource type.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Token to pass in for pagination for the next page. This will not be present
+         * if this request does not have more results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Total number of annotations found. This may be greater than the number of
+         * notes returned in this response if results have been paginated.
+         *
+         * @var int
+         */
+        public $totalItems;
+        /**
+         * A list of annotations.
+         *
+         * @param Annotation[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return Annotation[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * Resource type.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Token to pass in for pagination for the next page. This will not be present
+         * if this request does not have more results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Total number of annotations found. This may be greater than the number of
+         * notes returned in this response if results have been paginated.
+         *
+         * @param int $totalItems
+         */
+        public function setTotalItems($totalItems)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalItems()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Annotation[]
+     * Runtime class alias of \Google\Service\Books\Annotations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
-    {
-    }
-    /**
-     * Resource type.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Token to pass in for pagination for the next page. This will not be present
-     * if this request does not have more results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Total number of annotations found. This may be greater than the number of
-     * notes returned in this response if results have been paginated.
-     *
-     * @param int $totalItems
-     */
-    public function setTotalItems($totalItems)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalItems()
+    class Google_Service_Books_Annotations extends \Google\Service\Books\Annotations
     {
     }
 }

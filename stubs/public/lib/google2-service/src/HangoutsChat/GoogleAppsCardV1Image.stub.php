@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class GoogleAppsCardV1Image extends \Google\Model
-{
-    /**
-     * The alternative text of this image that's used for accessibility.
-     *
-     * @var string
-     */
-    public $altText;
-    /**
-     * The HTTPS URL that hosts the image. For example: ```
-     * https://developers.google.com/workspace/chat/images/quickstart-app-
-     * avatar.png ```
-     *
-     * @var string
-     */
-    public $imageUrl;
-    protected $onClickType = GoogleAppsCardV1OnClick::class;
-    protected $onClickDataType = '';
-    /**
-     * The alternative text of this image that's used for accessibility.
-     *
-     * @param string $altText
-     */
-    public function setAltText($altText)
+namespace Google\Service\HangoutsChat {
+    class GoogleAppsCardV1Image extends \Google\Model
     {
+        /**
+         * The alternative text of this image that's used for accessibility.
+         *
+         * @var string
+         */
+        public $altText;
+        /**
+         * The HTTPS URL that hosts the image. For example: ```
+         * https://developers.google.com/workspace/chat/images/quickstart-app-
+         * avatar.png ```
+         *
+         * @var string
+         */
+        public $imageUrl;
+        protected $onClickType = GoogleAppsCardV1OnClick::class;
+        protected $onClickDataType = '';
+        /**
+         * The alternative text of this image that's used for accessibility.
+         *
+         * @param string $altText
+         */
+        public function setAltText($altText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAltText()
+        {
+        }
+        /**
+         * The HTTPS URL that hosts the image. For example: ```
+         * https://developers.google.com/workspace/chat/images/quickstart-app-
+         * avatar.png ```
+         *
+         * @param string $imageUrl
+         */
+        public function setImageUrl($imageUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageUrl()
+        {
+        }
+        /**
+         * When a user clicks the image, the click triggers this action.
+         *
+         * @param GoogleAppsCardV1OnClick $onClick
+         */
+        public function setOnClick(GoogleAppsCardV1OnClick $onClick)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1OnClick
+         */
+        public function getOnClick()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\HangoutsChat\GoogleAppsCardV1Image registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAltText()
-    {
-    }
-    /**
-     * The HTTPS URL that hosts the image. For example: ```
-     * https://developers.google.com/workspace/chat/images/quickstart-app-
-     * avatar.png ```
-     *
-     * @param string $imageUrl
-     */
-    public function setImageUrl($imageUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImageUrl()
-    {
-    }
-    /**
-     * When a user clicks the image, the click triggers this action.
-     *
-     * @param GoogleAppsCardV1OnClick $onClick
-     */
-    public function setOnClick(GoogleAppsCardV1OnClick $onClick)
-    {
-    }
-    /**
-     * @return GoogleAppsCardV1OnClick
-     */
-    public function getOnClick()
+    class Google_Service_HangoutsChat_GoogleAppsCardV1Image extends \Google\Service\HangoutsChat\GoogleAppsCardV1Image
     {
     }
 }

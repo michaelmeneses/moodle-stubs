@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\StreetViewPublish;
-
-class Level extends \Google\Model
-{
-    /**
-     * Required. A name assigned to this Level, restricted to 3 characters.
-     * Consider how the elevator buttons would be labeled for this level if there
-     * was an elevator.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. Floor number, used for ordering. 0 indicates the ground level, 1
-     * indicates the first level above ground level, -1 indicates the first level
-     * under ground level. Non-integer values are OK.
-     *
-     * @var 
-     */
-    public $number;
-    /**
-     * Required. A name assigned to this Level, restricted to 3 characters.
-     * Consider how the elevator buttons would be labeled for this level if there
-     * was an elevator.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\StreetViewPublish {
+    class Level extends \Google\Model
     {
+        /**
+         * Required. A name assigned to this Level, restricted to 3 characters.
+         * Consider how the elevator buttons would be labeled for this level if there
+         * was an elevator.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. Floor number, used for ordering. 0 indicates the ground level, 1
+         * indicates the first level above ground level, -1 indicates the first level
+         * under ground level. Non-integer values are OK.
+         *
+         * @var 
+         */
+        public $number;
+        /**
+         * Required. A name assigned to this Level, restricted to 3 characters.
+         * Consider how the elevator buttons would be labeled for this level if there
+         * was an elevator.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        public function setNumber($number)
+        {
+        }
+        public function getNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\StreetViewPublish\Level registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    public function setNumber($number)
-    {
-    }
-    public function getNumber()
+    class Google_Service_StreetViewPublish_Level extends \Google\Service\StreetViewPublish\Level
     {
     }
 }

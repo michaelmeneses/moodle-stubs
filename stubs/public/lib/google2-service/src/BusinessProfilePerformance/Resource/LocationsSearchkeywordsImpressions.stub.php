@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BusinessProfilePerformance\Resource;
-
-/**
- * The "impressions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $businessprofileperformanceService = new Google\Service\BusinessProfilePerformance(...);
- *   $impressions = $businessprofileperformanceService->locations_searchkeywords_impressions;
- *  </code>
- */
-class LocationsSearchkeywordsImpressions extends \Google\Service\Resource
-{
+namespace Google\Service\BusinessProfilePerformance\Resource {
+    /**
+     * The "impressions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $businessprofileperformanceService = new Google\Service\BusinessProfilePerformance(...);
+     *   $impressions = $businessprofileperformanceService->locations_searchkeywords_impressions;
+     *  </code>
+     */
+    class LocationsSearchkeywordsImpressions extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\BusinessProfilePerformance\Resource\LocationsSearchkeywordsImpressions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_BusinessProfilePerformance_Resource_LocationsSearchkeywordsImpressions extends \Google\Service\BusinessProfilePerformance\Resource\LocationsSearchkeywordsImpressions
+    {
+    }
 }

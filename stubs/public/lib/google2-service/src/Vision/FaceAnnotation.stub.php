@@ -21,505 +21,514 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class FaceAnnotation extends \Google\Collection
-{
-    /**
-     * Unknown likelihood.
-     */
-    public const ANGER_LIKELIHOOD_UNKNOWN = 'UNKNOWN';
-    /**
-     * It is very unlikely.
-     */
-    public const ANGER_LIKELIHOOD_VERY_UNLIKELY = 'VERY_UNLIKELY';
-    /**
-     * It is unlikely.
-     */
-    public const ANGER_LIKELIHOOD_UNLIKELY = 'UNLIKELY';
-    /**
-     * It is possible.
-     */
-    public const ANGER_LIKELIHOOD_POSSIBLE = 'POSSIBLE';
-    /**
-     * It is likely.
-     */
-    public const ANGER_LIKELIHOOD_LIKELY = 'LIKELY';
-    /**
-     * It is very likely.
-     */
-    public const ANGER_LIKELIHOOD_VERY_LIKELY = 'VERY_LIKELY';
-    /**
-     * Unknown likelihood.
-     */
-    public const BLURRED_LIKELIHOOD_UNKNOWN = 'UNKNOWN';
-    /**
-     * It is very unlikely.
-     */
-    public const BLURRED_LIKELIHOOD_VERY_UNLIKELY = 'VERY_UNLIKELY';
-    /**
-     * It is unlikely.
-     */
-    public const BLURRED_LIKELIHOOD_UNLIKELY = 'UNLIKELY';
-    /**
-     * It is possible.
-     */
-    public const BLURRED_LIKELIHOOD_POSSIBLE = 'POSSIBLE';
-    /**
-     * It is likely.
-     */
-    public const BLURRED_LIKELIHOOD_LIKELY = 'LIKELY';
-    /**
-     * It is very likely.
-     */
-    public const BLURRED_LIKELIHOOD_VERY_LIKELY = 'VERY_LIKELY';
-    /**
-     * Unknown likelihood.
-     */
-    public const HEADWEAR_LIKELIHOOD_UNKNOWN = 'UNKNOWN';
-    /**
-     * It is very unlikely.
-     */
-    public const HEADWEAR_LIKELIHOOD_VERY_UNLIKELY = 'VERY_UNLIKELY';
-    /**
-     * It is unlikely.
-     */
-    public const HEADWEAR_LIKELIHOOD_UNLIKELY = 'UNLIKELY';
-    /**
-     * It is possible.
-     */
-    public const HEADWEAR_LIKELIHOOD_POSSIBLE = 'POSSIBLE';
-    /**
-     * It is likely.
-     */
-    public const HEADWEAR_LIKELIHOOD_LIKELY = 'LIKELY';
-    /**
-     * It is very likely.
-     */
-    public const HEADWEAR_LIKELIHOOD_VERY_LIKELY = 'VERY_LIKELY';
-    /**
-     * Unknown likelihood.
-     */
-    public const JOY_LIKELIHOOD_UNKNOWN = 'UNKNOWN';
-    /**
-     * It is very unlikely.
-     */
-    public const JOY_LIKELIHOOD_VERY_UNLIKELY = 'VERY_UNLIKELY';
-    /**
-     * It is unlikely.
-     */
-    public const JOY_LIKELIHOOD_UNLIKELY = 'UNLIKELY';
-    /**
-     * It is possible.
-     */
-    public const JOY_LIKELIHOOD_POSSIBLE = 'POSSIBLE';
-    /**
-     * It is likely.
-     */
-    public const JOY_LIKELIHOOD_LIKELY = 'LIKELY';
-    /**
-     * It is very likely.
-     */
-    public const JOY_LIKELIHOOD_VERY_LIKELY = 'VERY_LIKELY';
-    /**
-     * Unknown likelihood.
-     */
-    public const SORROW_LIKELIHOOD_UNKNOWN = 'UNKNOWN';
-    /**
-     * It is very unlikely.
-     */
-    public const SORROW_LIKELIHOOD_VERY_UNLIKELY = 'VERY_UNLIKELY';
-    /**
-     * It is unlikely.
-     */
-    public const SORROW_LIKELIHOOD_UNLIKELY = 'UNLIKELY';
-    /**
-     * It is possible.
-     */
-    public const SORROW_LIKELIHOOD_POSSIBLE = 'POSSIBLE';
-    /**
-     * It is likely.
-     */
-    public const SORROW_LIKELIHOOD_LIKELY = 'LIKELY';
-    /**
-     * It is very likely.
-     */
-    public const SORROW_LIKELIHOOD_VERY_LIKELY = 'VERY_LIKELY';
-    /**
-     * Unknown likelihood.
-     */
-    public const SURPRISE_LIKELIHOOD_UNKNOWN = 'UNKNOWN';
-    /**
-     * It is very unlikely.
-     */
-    public const SURPRISE_LIKELIHOOD_VERY_UNLIKELY = 'VERY_UNLIKELY';
-    /**
-     * It is unlikely.
-     */
-    public const SURPRISE_LIKELIHOOD_UNLIKELY = 'UNLIKELY';
-    /**
-     * It is possible.
-     */
-    public const SURPRISE_LIKELIHOOD_POSSIBLE = 'POSSIBLE';
-    /**
-     * It is likely.
-     */
-    public const SURPRISE_LIKELIHOOD_LIKELY = 'LIKELY';
-    /**
-     * It is very likely.
-     */
-    public const SURPRISE_LIKELIHOOD_VERY_LIKELY = 'VERY_LIKELY';
-    /**
-     * Unknown likelihood.
-     */
-    public const UNDER_EXPOSED_LIKELIHOOD_UNKNOWN = 'UNKNOWN';
-    /**
-     * It is very unlikely.
-     */
-    public const UNDER_EXPOSED_LIKELIHOOD_VERY_UNLIKELY = 'VERY_UNLIKELY';
-    /**
-     * It is unlikely.
-     */
-    public const UNDER_EXPOSED_LIKELIHOOD_UNLIKELY = 'UNLIKELY';
-    /**
-     * It is possible.
-     */
-    public const UNDER_EXPOSED_LIKELIHOOD_POSSIBLE = 'POSSIBLE';
-    /**
-     * It is likely.
-     */
-    public const UNDER_EXPOSED_LIKELIHOOD_LIKELY = 'LIKELY';
-    /**
-     * It is very likely.
-     */
-    public const UNDER_EXPOSED_LIKELIHOOD_VERY_LIKELY = 'VERY_LIKELY';
-    protected $collection_key = 'landmarks';
-    /**
-     * Anger likelihood.
-     *
-     * @var string
-     */
-    public $angerLikelihood;
-    /**
-     * Blurred likelihood.
-     *
-     * @var string
-     */
-    public $blurredLikelihood;
-    protected $boundingPolyType = BoundingPoly::class;
-    protected $boundingPolyDataType = '';
-    /**
-     * Detection confidence. Range [0, 1].
-     *
-     * @var float
-     */
-    public $detectionConfidence;
-    protected $fdBoundingPolyType = BoundingPoly::class;
-    protected $fdBoundingPolyDataType = '';
-    /**
-     * Headwear likelihood.
-     *
-     * @var string
-     */
-    public $headwearLikelihood;
-    /**
-     * Joy likelihood.
-     *
-     * @var string
-     */
-    public $joyLikelihood;
-    /**
-     * Face landmarking confidence. Range [0, 1].
-     *
-     * @var float
-     */
-    public $landmarkingConfidence;
-    protected $landmarksType = Landmark::class;
-    protected $landmarksDataType = 'array';
-    /**
-     * Yaw angle, which indicates the leftward/rightward angle that the face is
-     * pointing relative to the vertical plane perpendicular to the image. Range
-     * [-180,180].
-     *
-     * @var float
-     */
-    public $panAngle;
-    /**
-     * Roll angle, which indicates the amount of clockwise/anti-clockwise rotation
-     * of the face relative to the image vertical about the axis perpendicular to
-     * the face. Range [-180,180].
-     *
-     * @var float
-     */
-    public $rollAngle;
-    /**
-     * Sorrow likelihood.
-     *
-     * @var string
-     */
-    public $sorrowLikelihood;
-    /**
-     * Surprise likelihood.
-     *
-     * @var string
-     */
-    public $surpriseLikelihood;
-    /**
-     * Pitch angle, which indicates the upwards/downwards angle that the face is
-     * pointing relative to the image's horizontal plane. Range [-180,180].
-     *
-     * @var float
-     */
-    public $tiltAngle;
-    /**
-     * Under-exposed likelihood.
-     *
-     * @var string
-     */
-    public $underExposedLikelihood;
-    /**
-     * Anger likelihood.
-     *
-     * Accepted values: UNKNOWN, VERY_UNLIKELY, UNLIKELY, POSSIBLE, LIKELY,
-     * VERY_LIKELY
-     *
-     * @param self::ANGER_LIKELIHOOD_* $angerLikelihood
-     */
-    public function setAngerLikelihood($angerLikelihood)
+namespace Google\Service\Vision {
+    class FaceAnnotation extends \Google\Collection
     {
+        /**
+         * Unknown likelihood.
+         */
+        public const ANGER_LIKELIHOOD_UNKNOWN = 'UNKNOWN';
+        /**
+         * It is very unlikely.
+         */
+        public const ANGER_LIKELIHOOD_VERY_UNLIKELY = 'VERY_UNLIKELY';
+        /**
+         * It is unlikely.
+         */
+        public const ANGER_LIKELIHOOD_UNLIKELY = 'UNLIKELY';
+        /**
+         * It is possible.
+         */
+        public const ANGER_LIKELIHOOD_POSSIBLE = 'POSSIBLE';
+        /**
+         * It is likely.
+         */
+        public const ANGER_LIKELIHOOD_LIKELY = 'LIKELY';
+        /**
+         * It is very likely.
+         */
+        public const ANGER_LIKELIHOOD_VERY_LIKELY = 'VERY_LIKELY';
+        /**
+         * Unknown likelihood.
+         */
+        public const BLURRED_LIKELIHOOD_UNKNOWN = 'UNKNOWN';
+        /**
+         * It is very unlikely.
+         */
+        public const BLURRED_LIKELIHOOD_VERY_UNLIKELY = 'VERY_UNLIKELY';
+        /**
+         * It is unlikely.
+         */
+        public const BLURRED_LIKELIHOOD_UNLIKELY = 'UNLIKELY';
+        /**
+         * It is possible.
+         */
+        public const BLURRED_LIKELIHOOD_POSSIBLE = 'POSSIBLE';
+        /**
+         * It is likely.
+         */
+        public const BLURRED_LIKELIHOOD_LIKELY = 'LIKELY';
+        /**
+         * It is very likely.
+         */
+        public const BLURRED_LIKELIHOOD_VERY_LIKELY = 'VERY_LIKELY';
+        /**
+         * Unknown likelihood.
+         */
+        public const HEADWEAR_LIKELIHOOD_UNKNOWN = 'UNKNOWN';
+        /**
+         * It is very unlikely.
+         */
+        public const HEADWEAR_LIKELIHOOD_VERY_UNLIKELY = 'VERY_UNLIKELY';
+        /**
+         * It is unlikely.
+         */
+        public const HEADWEAR_LIKELIHOOD_UNLIKELY = 'UNLIKELY';
+        /**
+         * It is possible.
+         */
+        public const HEADWEAR_LIKELIHOOD_POSSIBLE = 'POSSIBLE';
+        /**
+         * It is likely.
+         */
+        public const HEADWEAR_LIKELIHOOD_LIKELY = 'LIKELY';
+        /**
+         * It is very likely.
+         */
+        public const HEADWEAR_LIKELIHOOD_VERY_LIKELY = 'VERY_LIKELY';
+        /**
+         * Unknown likelihood.
+         */
+        public const JOY_LIKELIHOOD_UNKNOWN = 'UNKNOWN';
+        /**
+         * It is very unlikely.
+         */
+        public const JOY_LIKELIHOOD_VERY_UNLIKELY = 'VERY_UNLIKELY';
+        /**
+         * It is unlikely.
+         */
+        public const JOY_LIKELIHOOD_UNLIKELY = 'UNLIKELY';
+        /**
+         * It is possible.
+         */
+        public const JOY_LIKELIHOOD_POSSIBLE = 'POSSIBLE';
+        /**
+         * It is likely.
+         */
+        public const JOY_LIKELIHOOD_LIKELY = 'LIKELY';
+        /**
+         * It is very likely.
+         */
+        public const JOY_LIKELIHOOD_VERY_LIKELY = 'VERY_LIKELY';
+        /**
+         * Unknown likelihood.
+         */
+        public const SORROW_LIKELIHOOD_UNKNOWN = 'UNKNOWN';
+        /**
+         * It is very unlikely.
+         */
+        public const SORROW_LIKELIHOOD_VERY_UNLIKELY = 'VERY_UNLIKELY';
+        /**
+         * It is unlikely.
+         */
+        public const SORROW_LIKELIHOOD_UNLIKELY = 'UNLIKELY';
+        /**
+         * It is possible.
+         */
+        public const SORROW_LIKELIHOOD_POSSIBLE = 'POSSIBLE';
+        /**
+         * It is likely.
+         */
+        public const SORROW_LIKELIHOOD_LIKELY = 'LIKELY';
+        /**
+         * It is very likely.
+         */
+        public const SORROW_LIKELIHOOD_VERY_LIKELY = 'VERY_LIKELY';
+        /**
+         * Unknown likelihood.
+         */
+        public const SURPRISE_LIKELIHOOD_UNKNOWN = 'UNKNOWN';
+        /**
+         * It is very unlikely.
+         */
+        public const SURPRISE_LIKELIHOOD_VERY_UNLIKELY = 'VERY_UNLIKELY';
+        /**
+         * It is unlikely.
+         */
+        public const SURPRISE_LIKELIHOOD_UNLIKELY = 'UNLIKELY';
+        /**
+         * It is possible.
+         */
+        public const SURPRISE_LIKELIHOOD_POSSIBLE = 'POSSIBLE';
+        /**
+         * It is likely.
+         */
+        public const SURPRISE_LIKELIHOOD_LIKELY = 'LIKELY';
+        /**
+         * It is very likely.
+         */
+        public const SURPRISE_LIKELIHOOD_VERY_LIKELY = 'VERY_LIKELY';
+        /**
+         * Unknown likelihood.
+         */
+        public const UNDER_EXPOSED_LIKELIHOOD_UNKNOWN = 'UNKNOWN';
+        /**
+         * It is very unlikely.
+         */
+        public const UNDER_EXPOSED_LIKELIHOOD_VERY_UNLIKELY = 'VERY_UNLIKELY';
+        /**
+         * It is unlikely.
+         */
+        public const UNDER_EXPOSED_LIKELIHOOD_UNLIKELY = 'UNLIKELY';
+        /**
+         * It is possible.
+         */
+        public const UNDER_EXPOSED_LIKELIHOOD_POSSIBLE = 'POSSIBLE';
+        /**
+         * It is likely.
+         */
+        public const UNDER_EXPOSED_LIKELIHOOD_LIKELY = 'LIKELY';
+        /**
+         * It is very likely.
+         */
+        public const UNDER_EXPOSED_LIKELIHOOD_VERY_LIKELY = 'VERY_LIKELY';
+        protected $collection_key = 'landmarks';
+        /**
+         * Anger likelihood.
+         *
+         * @var string
+         */
+        public $angerLikelihood;
+        /**
+         * Blurred likelihood.
+         *
+         * @var string
+         */
+        public $blurredLikelihood;
+        protected $boundingPolyType = BoundingPoly::class;
+        protected $boundingPolyDataType = '';
+        /**
+         * Detection confidence. Range [0, 1].
+         *
+         * @var float
+         */
+        public $detectionConfidence;
+        protected $fdBoundingPolyType = BoundingPoly::class;
+        protected $fdBoundingPolyDataType = '';
+        /**
+         * Headwear likelihood.
+         *
+         * @var string
+         */
+        public $headwearLikelihood;
+        /**
+         * Joy likelihood.
+         *
+         * @var string
+         */
+        public $joyLikelihood;
+        /**
+         * Face landmarking confidence. Range [0, 1].
+         *
+         * @var float
+         */
+        public $landmarkingConfidence;
+        protected $landmarksType = Landmark::class;
+        protected $landmarksDataType = 'array';
+        /**
+         * Yaw angle, which indicates the leftward/rightward angle that the face is
+         * pointing relative to the vertical plane perpendicular to the image. Range
+         * [-180,180].
+         *
+         * @var float
+         */
+        public $panAngle;
+        /**
+         * Roll angle, which indicates the amount of clockwise/anti-clockwise rotation
+         * of the face relative to the image vertical about the axis perpendicular to
+         * the face. Range [-180,180].
+         *
+         * @var float
+         */
+        public $rollAngle;
+        /**
+         * Sorrow likelihood.
+         *
+         * @var string
+         */
+        public $sorrowLikelihood;
+        /**
+         * Surprise likelihood.
+         *
+         * @var string
+         */
+        public $surpriseLikelihood;
+        /**
+         * Pitch angle, which indicates the upwards/downwards angle that the face is
+         * pointing relative to the image's horizontal plane. Range [-180,180].
+         *
+         * @var float
+         */
+        public $tiltAngle;
+        /**
+         * Under-exposed likelihood.
+         *
+         * @var string
+         */
+        public $underExposedLikelihood;
+        /**
+         * Anger likelihood.
+         *
+         * Accepted values: UNKNOWN, VERY_UNLIKELY, UNLIKELY, POSSIBLE, LIKELY,
+         * VERY_LIKELY
+         *
+         * @param self::ANGER_LIKELIHOOD_* $angerLikelihood
+         */
+        public function setAngerLikelihood($angerLikelihood)
+        {
+        }
+        /**
+         * @return self::ANGER_LIKELIHOOD_*
+         */
+        public function getAngerLikelihood()
+        {
+        }
+        /**
+         * Blurred likelihood.
+         *
+         * Accepted values: UNKNOWN, VERY_UNLIKELY, UNLIKELY, POSSIBLE, LIKELY,
+         * VERY_LIKELY
+         *
+         * @param self::BLURRED_LIKELIHOOD_* $blurredLikelihood
+         */
+        public function setBlurredLikelihood($blurredLikelihood)
+        {
+        }
+        /**
+         * @return self::BLURRED_LIKELIHOOD_*
+         */
+        public function getBlurredLikelihood()
+        {
+        }
+        /**
+         * The bounding polygon around the face. The coordinates of the bounding box
+         * are in the original image's scale. The bounding box is computed to "frame"
+         * the face in accordance with human expectations. It is based on the
+         * landmarker results. Note that one or more x and/or y coordinates may not be
+         * generated in the `BoundingPoly` (the polygon will be unbounded) if only a
+         * partial face appears in the image to be annotated.
+         *
+         * @param BoundingPoly $boundingPoly
+         */
+        public function setBoundingPoly(BoundingPoly $boundingPoly)
+        {
+        }
+        /**
+         * @return BoundingPoly
+         */
+        public function getBoundingPoly()
+        {
+        }
+        /**
+         * Detection confidence. Range [0, 1].
+         *
+         * @param float $detectionConfidence
+         */
+        public function setDetectionConfidence($detectionConfidence)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getDetectionConfidence()
+        {
+        }
+        /**
+         * The `fd_bounding_poly` bounding polygon is tighter than the `boundingPoly`,
+         * and encloses only the skin part of the face. Typically, it is used to
+         * eliminate the face from any image analysis that detects the "amount of
+         * skin" visible in an image. It is not based on the landmarker results, only
+         * on the initial face detection, hence the fd (face detection) prefix.
+         *
+         * @param BoundingPoly $fdBoundingPoly
+         */
+        public function setFdBoundingPoly(BoundingPoly $fdBoundingPoly)
+        {
+        }
+        /**
+         * @return BoundingPoly
+         */
+        public function getFdBoundingPoly()
+        {
+        }
+        /**
+         * Headwear likelihood.
+         *
+         * Accepted values: UNKNOWN, VERY_UNLIKELY, UNLIKELY, POSSIBLE, LIKELY,
+         * VERY_LIKELY
+         *
+         * @param self::HEADWEAR_LIKELIHOOD_* $headwearLikelihood
+         */
+        public function setHeadwearLikelihood($headwearLikelihood)
+        {
+        }
+        /**
+         * @return self::HEADWEAR_LIKELIHOOD_*
+         */
+        public function getHeadwearLikelihood()
+        {
+        }
+        /**
+         * Joy likelihood.
+         *
+         * Accepted values: UNKNOWN, VERY_UNLIKELY, UNLIKELY, POSSIBLE, LIKELY,
+         * VERY_LIKELY
+         *
+         * @param self::JOY_LIKELIHOOD_* $joyLikelihood
+         */
+        public function setJoyLikelihood($joyLikelihood)
+        {
+        }
+        /**
+         * @return self::JOY_LIKELIHOOD_*
+         */
+        public function getJoyLikelihood()
+        {
+        }
+        /**
+         * Face landmarking confidence. Range [0, 1].
+         *
+         * @param float $landmarkingConfidence
+         */
+        public function setLandmarkingConfidence($landmarkingConfidence)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getLandmarkingConfidence()
+        {
+        }
+        /**
+         * Detected face landmarks.
+         *
+         * @param Landmark[] $landmarks
+         */
+        public function setLandmarks($landmarks)
+        {
+        }
+        /**
+         * @return Landmark[]
+         */
+        public function getLandmarks()
+        {
+        }
+        /**
+         * Yaw angle, which indicates the leftward/rightward angle that the face is
+         * pointing relative to the vertical plane perpendicular to the image. Range
+         * [-180,180].
+         *
+         * @param float $panAngle
+         */
+        public function setPanAngle($panAngle)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getPanAngle()
+        {
+        }
+        /**
+         * Roll angle, which indicates the amount of clockwise/anti-clockwise rotation
+         * of the face relative to the image vertical about the axis perpendicular to
+         * the face. Range [-180,180].
+         *
+         * @param float $rollAngle
+         */
+        public function setRollAngle($rollAngle)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getRollAngle()
+        {
+        }
+        /**
+         * Sorrow likelihood.
+         *
+         * Accepted values: UNKNOWN, VERY_UNLIKELY, UNLIKELY, POSSIBLE, LIKELY,
+         * VERY_LIKELY
+         *
+         * @param self::SORROW_LIKELIHOOD_* $sorrowLikelihood
+         */
+        public function setSorrowLikelihood($sorrowLikelihood)
+        {
+        }
+        /**
+         * @return self::SORROW_LIKELIHOOD_*
+         */
+        public function getSorrowLikelihood()
+        {
+        }
+        /**
+         * Surprise likelihood.
+         *
+         * Accepted values: UNKNOWN, VERY_UNLIKELY, UNLIKELY, POSSIBLE, LIKELY,
+         * VERY_LIKELY
+         *
+         * @param self::SURPRISE_LIKELIHOOD_* $surpriseLikelihood
+         */
+        public function setSurpriseLikelihood($surpriseLikelihood)
+        {
+        }
+        /**
+         * @return self::SURPRISE_LIKELIHOOD_*
+         */
+        public function getSurpriseLikelihood()
+        {
+        }
+        /**
+         * Pitch angle, which indicates the upwards/downwards angle that the face is
+         * pointing relative to the image's horizontal plane. Range [-180,180].
+         *
+         * @param float $tiltAngle
+         */
+        public function setTiltAngle($tiltAngle)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getTiltAngle()
+        {
+        }
+        /**
+         * Under-exposed likelihood.
+         *
+         * Accepted values: UNKNOWN, VERY_UNLIKELY, UNLIKELY, POSSIBLE, LIKELY,
+         * VERY_LIKELY
+         *
+         * @param self::UNDER_EXPOSED_LIKELIHOOD_* $underExposedLikelihood
+         */
+        public function setUnderExposedLikelihood($underExposedLikelihood)
+        {
+        }
+        /**
+         * @return self::UNDER_EXPOSED_LIKELIHOOD_*
+         */
+        public function getUnderExposedLikelihood()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ANGER_LIKELIHOOD_*
+     * Runtime class alias of \Google\Service\Vision\FaceAnnotation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAngerLikelihood()
-    {
-    }
-    /**
-     * Blurred likelihood.
-     *
-     * Accepted values: UNKNOWN, VERY_UNLIKELY, UNLIKELY, POSSIBLE, LIKELY,
-     * VERY_LIKELY
-     *
-     * @param self::BLURRED_LIKELIHOOD_* $blurredLikelihood
-     */
-    public function setBlurredLikelihood($blurredLikelihood)
-    {
-    }
-    /**
-     * @return self::BLURRED_LIKELIHOOD_*
-     */
-    public function getBlurredLikelihood()
-    {
-    }
-    /**
-     * The bounding polygon around the face. The coordinates of the bounding box
-     * are in the original image's scale. The bounding box is computed to "frame"
-     * the face in accordance with human expectations. It is based on the
-     * landmarker results. Note that one or more x and/or y coordinates may not be
-     * generated in the `BoundingPoly` (the polygon will be unbounded) if only a
-     * partial face appears in the image to be annotated.
-     *
-     * @param BoundingPoly $boundingPoly
-     */
-    public function setBoundingPoly(BoundingPoly $boundingPoly)
-    {
-    }
-    /**
-     * @return BoundingPoly
-     */
-    public function getBoundingPoly()
-    {
-    }
-    /**
-     * Detection confidence. Range [0, 1].
-     *
-     * @param float $detectionConfidence
-     */
-    public function setDetectionConfidence($detectionConfidence)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getDetectionConfidence()
-    {
-    }
-    /**
-     * The `fd_bounding_poly` bounding polygon is tighter than the `boundingPoly`,
-     * and encloses only the skin part of the face. Typically, it is used to
-     * eliminate the face from any image analysis that detects the "amount of
-     * skin" visible in an image. It is not based on the landmarker results, only
-     * on the initial face detection, hence the fd (face detection) prefix.
-     *
-     * @param BoundingPoly $fdBoundingPoly
-     */
-    public function setFdBoundingPoly(BoundingPoly $fdBoundingPoly)
-    {
-    }
-    /**
-     * @return BoundingPoly
-     */
-    public function getFdBoundingPoly()
-    {
-    }
-    /**
-     * Headwear likelihood.
-     *
-     * Accepted values: UNKNOWN, VERY_UNLIKELY, UNLIKELY, POSSIBLE, LIKELY,
-     * VERY_LIKELY
-     *
-     * @param self::HEADWEAR_LIKELIHOOD_* $headwearLikelihood
-     */
-    public function setHeadwearLikelihood($headwearLikelihood)
-    {
-    }
-    /**
-     * @return self::HEADWEAR_LIKELIHOOD_*
-     */
-    public function getHeadwearLikelihood()
-    {
-    }
-    /**
-     * Joy likelihood.
-     *
-     * Accepted values: UNKNOWN, VERY_UNLIKELY, UNLIKELY, POSSIBLE, LIKELY,
-     * VERY_LIKELY
-     *
-     * @param self::JOY_LIKELIHOOD_* $joyLikelihood
-     */
-    public function setJoyLikelihood($joyLikelihood)
-    {
-    }
-    /**
-     * @return self::JOY_LIKELIHOOD_*
-     */
-    public function getJoyLikelihood()
-    {
-    }
-    /**
-     * Face landmarking confidence. Range [0, 1].
-     *
-     * @param float $landmarkingConfidence
-     */
-    public function setLandmarkingConfidence($landmarkingConfidence)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getLandmarkingConfidence()
-    {
-    }
-    /**
-     * Detected face landmarks.
-     *
-     * @param Landmark[] $landmarks
-     */
-    public function setLandmarks($landmarks)
-    {
-    }
-    /**
-     * @return Landmark[]
-     */
-    public function getLandmarks()
-    {
-    }
-    /**
-     * Yaw angle, which indicates the leftward/rightward angle that the face is
-     * pointing relative to the vertical plane perpendicular to the image. Range
-     * [-180,180].
-     *
-     * @param float $panAngle
-     */
-    public function setPanAngle($panAngle)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getPanAngle()
-    {
-    }
-    /**
-     * Roll angle, which indicates the amount of clockwise/anti-clockwise rotation
-     * of the face relative to the image vertical about the axis perpendicular to
-     * the face. Range [-180,180].
-     *
-     * @param float $rollAngle
-     */
-    public function setRollAngle($rollAngle)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getRollAngle()
-    {
-    }
-    /**
-     * Sorrow likelihood.
-     *
-     * Accepted values: UNKNOWN, VERY_UNLIKELY, UNLIKELY, POSSIBLE, LIKELY,
-     * VERY_LIKELY
-     *
-     * @param self::SORROW_LIKELIHOOD_* $sorrowLikelihood
-     */
-    public function setSorrowLikelihood($sorrowLikelihood)
-    {
-    }
-    /**
-     * @return self::SORROW_LIKELIHOOD_*
-     */
-    public function getSorrowLikelihood()
-    {
-    }
-    /**
-     * Surprise likelihood.
-     *
-     * Accepted values: UNKNOWN, VERY_UNLIKELY, UNLIKELY, POSSIBLE, LIKELY,
-     * VERY_LIKELY
-     *
-     * @param self::SURPRISE_LIKELIHOOD_* $surpriseLikelihood
-     */
-    public function setSurpriseLikelihood($surpriseLikelihood)
-    {
-    }
-    /**
-     * @return self::SURPRISE_LIKELIHOOD_*
-     */
-    public function getSurpriseLikelihood()
-    {
-    }
-    /**
-     * Pitch angle, which indicates the upwards/downwards angle that the face is
-     * pointing relative to the image's horizontal plane. Range [-180,180].
-     *
-     * @param float $tiltAngle
-     */
-    public function setTiltAngle($tiltAngle)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getTiltAngle()
-    {
-    }
-    /**
-     * Under-exposed likelihood.
-     *
-     * Accepted values: UNKNOWN, VERY_UNLIKELY, UNLIKELY, POSSIBLE, LIKELY,
-     * VERY_LIKELY
-     *
-     * @param self::UNDER_EXPOSED_LIKELIHOOD_* $underExposedLikelihood
-     */
-    public function setUnderExposedLikelihood($underExposedLikelihood)
-    {
-    }
-    /**
-     * @return self::UNDER_EXPOSED_LIKELIHOOD_*
-     */
-    public function getUnderExposedLikelihood()
+    class Google_Service_Vision_FaceAnnotation extends \Google\Service\Vision\FaceAnnotation
     {
     }
 }

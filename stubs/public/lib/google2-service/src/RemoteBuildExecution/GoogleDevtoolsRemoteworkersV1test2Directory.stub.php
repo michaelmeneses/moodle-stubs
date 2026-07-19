@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class GoogleDevtoolsRemoteworkersV1test2Directory extends \Google\Collection
-{
-    protected $collection_key = 'files';
-    protected $directoriesType = GoogleDevtoolsRemoteworkersV1test2DirectoryMetadata::class;
-    protected $directoriesDataType = 'array';
-    protected $filesType = GoogleDevtoolsRemoteworkersV1test2FileMetadata::class;
-    protected $filesDataType = 'array';
-    /**
-     * @param GoogleDevtoolsRemoteworkersV1test2DirectoryMetadata[]
-     */
-    public function setDirectories($directories)
+namespace Google\Service\RemoteBuildExecution {
+    class GoogleDevtoolsRemoteworkersV1test2Directory extends \Google\Collection
     {
+        protected $collection_key = 'files';
+        protected $directoriesType = GoogleDevtoolsRemoteworkersV1test2DirectoryMetadata::class;
+        protected $directoriesDataType = 'array';
+        protected $filesType = GoogleDevtoolsRemoteworkersV1test2FileMetadata::class;
+        protected $filesDataType = 'array';
+        /**
+         * @param GoogleDevtoolsRemoteworkersV1test2DirectoryMetadata[]
+         */
+        public function setDirectories($directories)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsRemoteworkersV1test2DirectoryMetadata[]
+         */
+        public function getDirectories()
+        {
+        }
+        /**
+         * @param GoogleDevtoolsRemoteworkersV1test2FileMetadata[]
+         */
+        public function setFiles($files)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsRemoteworkersV1test2FileMetadata[]
+         */
+        public function getFiles()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleDevtoolsRemoteworkersV1test2DirectoryMetadata[]
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemoteworkersV1test2Directory registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDirectories()
-    {
-    }
-    /**
-     * @param GoogleDevtoolsRemoteworkersV1test2FileMetadata[]
-     */
-    public function setFiles($files)
-    {
-    }
-    /**
-     * @return GoogleDevtoolsRemoteworkersV1test2FileMetadata[]
-     */
-    public function getFiles()
+    class Google_Service_RemoteBuildExecution_GoogleDevtoolsRemoteworkersV1test2Directory extends \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemoteworkersV1test2Directory
     {
     }
 }

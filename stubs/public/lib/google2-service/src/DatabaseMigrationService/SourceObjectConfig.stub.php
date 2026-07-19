@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class SourceObjectConfig extends \Google\Model
-{
-    protected $objectIdentifierType = SourceObjectIdentifier::class;
-    protected $objectIdentifierDataType = '';
-    /**
-     * Optional. The object identifier.
-     *
-     * @param SourceObjectIdentifier $objectIdentifier
-     */
-    public function setObjectIdentifier(SourceObjectIdentifier $objectIdentifier)
+namespace Google\Service\DatabaseMigrationService {
+    class SourceObjectConfig extends \Google\Model
     {
+        protected $objectIdentifierType = SourceObjectIdentifier::class;
+        protected $objectIdentifierDataType = '';
+        /**
+         * Optional. The object identifier.
+         *
+         * @param SourceObjectIdentifier $objectIdentifier
+         */
+        public function setObjectIdentifier(SourceObjectIdentifier $objectIdentifier)
+        {
+        }
+        /**
+         * @return SourceObjectIdentifier
+         */
+        public function getObjectIdentifier()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SourceObjectIdentifier
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\SourceObjectConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getObjectIdentifier()
+    class Google_Service_DatabaseMigrationService_SourceObjectConfig extends \Google\Service\DatabaseMigrationService\SourceObjectConfig
     {
     }
 }

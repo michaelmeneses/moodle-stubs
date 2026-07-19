@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class DnsAutomationStatus extends \Google\Model
-{
-    /**
-     * Default value. This value is unused.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * DNS record creation is pending.
-     */
-    public const STATE_PENDING_CREATE = 'PENDING_CREATE';
-    /**
-     * DNS record is active.
-     */
-    public const STATE_ACTIVE = 'ACTIVE';
-    /**
-     * DNS record deletion is pending.
-     */
-    public const STATE_PENDING_DELETE = 'PENDING_DELETE';
-    /**
-     * DNS record creation failed.
-     */
-    public const STATE_CREATE_FAILED = 'CREATE_FAILED';
-    /**
-     * DNS record deletion failed.
-     */
-    public const STATE_DELETE_FAILED = 'DELETE_FAILED';
-    protected $errorType = GoogleRpcStatus::class;
-    protected $errorDataType = '';
-    /**
-     * Output only. The fully qualified domain name of the DNS record.
-     *
-     * @var string
-     */
-    public $fqdn;
-    /**
-     * Output only. The current state of DNS automation.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. The error details if the state is CREATE_FAILED or
-     * DELETE_FAILED.
-     *
-     * @param GoogleRpcStatus $error
-     */
-    public function setError(GoogleRpcStatus $error)
+namespace Google\Service\Networkconnectivity {
+    class DnsAutomationStatus extends \Google\Model
     {
+        /**
+         * Default value. This value is unused.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * DNS record creation is pending.
+         */
+        public const STATE_PENDING_CREATE = 'PENDING_CREATE';
+        /**
+         * DNS record is active.
+         */
+        public const STATE_ACTIVE = 'ACTIVE';
+        /**
+         * DNS record deletion is pending.
+         */
+        public const STATE_PENDING_DELETE = 'PENDING_DELETE';
+        /**
+         * DNS record creation failed.
+         */
+        public const STATE_CREATE_FAILED = 'CREATE_FAILED';
+        /**
+         * DNS record deletion failed.
+         */
+        public const STATE_DELETE_FAILED = 'DELETE_FAILED';
+        protected $errorType = GoogleRpcStatus::class;
+        protected $errorDataType = '';
+        /**
+         * Output only. The fully qualified domain name of the DNS record.
+         *
+         * @var string
+         */
+        public $fqdn;
+        /**
+         * Output only. The current state of DNS automation.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. The error details if the state is CREATE_FAILED or
+         * DELETE_FAILED.
+         *
+         * @param GoogleRpcStatus $error
+         */
+        public function setError(GoogleRpcStatus $error)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus
+         */
+        public function getError()
+        {
+        }
+        /**
+         * Output only. The fully qualified domain name of the DNS record.
+         *
+         * @param string $fqdn
+         */
+        public function setFqdn($fqdn)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFqdn()
+        {
+        }
+        /**
+         * Output only. The current state of DNS automation.
+         *
+         * Accepted values: STATE_UNSPECIFIED, PENDING_CREATE, ACTIVE, PENDING_DELETE,
+         * CREATE_FAILED, DELETE_FAILED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleRpcStatus
+     * Runtime class alias of \Google\Service\Networkconnectivity\DnsAutomationStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getError()
-    {
-    }
-    /**
-     * Output only. The fully qualified domain name of the DNS record.
-     *
-     * @param string $fqdn
-     */
-    public function setFqdn($fqdn)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFqdn()
-    {
-    }
-    /**
-     * Output only. The current state of DNS automation.
-     *
-     * Accepted values: STATE_UNSPECIFIED, PENDING_CREATE, ACTIVE, PENDING_DELETE,
-     * CREATE_FAILED, DELETE_FAILED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_Networkconnectivity_DnsAutomationStatus extends \Google\Service\Networkconnectivity\DnsAutomationStatus
     {
     }
 }

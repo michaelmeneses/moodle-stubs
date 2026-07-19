@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PeopleService;
-
-class ClientData extends \Google\Model
-{
-    /**
-     * The client specified key of the client data.
-     *
-     * @var string
-     */
-    public $key;
-    protected $metadataType = FieldMetadata::class;
-    protected $metadataDataType = '';
-    /**
-     * The client specified value of the client data.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * The client specified key of the client data.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
+namespace Google\Service\PeopleService {
+    class ClientData extends \Google\Model
     {
+        /**
+         * The client specified key of the client data.
+         *
+         * @var string
+         */
+        public $key;
+        protected $metadataType = FieldMetadata::class;
+        protected $metadataDataType = '';
+        /**
+         * The client specified value of the client data.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * The client specified key of the client data.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * Metadata about the client data.
+         *
+         * @param FieldMetadata $metadata
+         */
+        public function setMetadata(FieldMetadata $metadata)
+        {
+        }
+        /**
+         * @return FieldMetadata
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * The client specified value of the client data.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PeopleService\ClientData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKey()
-    {
-    }
-    /**
-     * Metadata about the client data.
-     *
-     * @param FieldMetadata $metadata
-     */
-    public function setMetadata(FieldMetadata $metadata)
-    {
-    }
-    /**
-     * @return FieldMetadata
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * The client specified value of the client data.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_PeopleService_ClientData extends \Google\Service\PeopleService\ClientData
     {
     }
 }

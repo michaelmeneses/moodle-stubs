@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecretManager;
-
-class AddSecretVersionRequest extends \Google\Model
-{
-    protected $payloadType = SecretPayload::class;
-    protected $payloadDataType = '';
-    /**
-     * Required. The secret payload of the SecretVersion.
-     *
-     * @param SecretPayload $payload
-     */
-    public function setPayload(SecretPayload $payload)
+namespace Google\Service\SecretManager {
+    class AddSecretVersionRequest extends \Google\Model
     {
+        protected $payloadType = SecretPayload::class;
+        protected $payloadDataType = '';
+        /**
+         * Required. The secret payload of the SecretVersion.
+         *
+         * @param SecretPayload $payload
+         */
+        public function setPayload(SecretPayload $payload)
+        {
+        }
+        /**
+         * @return SecretPayload
+         */
+        public function getPayload()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SecretPayload
+     * Runtime class alias of \Google\Service\SecretManager\AddSecretVersionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPayload()
+    class Google_Service_SecretManager_AddSecretVersionRequest extends \Google\Service\SecretManager\AddSecretVersionRequest
     {
     }
 }

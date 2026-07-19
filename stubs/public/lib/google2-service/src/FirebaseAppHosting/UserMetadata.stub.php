@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseAppHosting;
-
-class UserMetadata extends \Google\Model
-{
-    /**
-     * Output only. The 'name' field in a Git user's git.config. Required by Git.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. The 'email' field in a Git user's git.config, if available.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * Output only. The URI of an image file associated with the user's account in
-     * an external source control provider, if available.
-     *
-     * @var string
-     */
-    public $imageUri;
-    /**
-     * Output only. The 'name' field in a Git user's git.config. Required by Git.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\FirebaseAppHosting {
+    class UserMetadata extends \Google\Model
     {
+        /**
+         * Output only. The 'name' field in a Git user's git.config. Required by Git.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. The 'email' field in a Git user's git.config, if available.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * Output only. The URI of an image file associated with the user's account in
+         * an external source control provider, if available.
+         *
+         * @var string
+         */
+        public $imageUri;
+        /**
+         * Output only. The 'name' field in a Git user's git.config. Required by Git.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. The 'email' field in a Git user's git.config, if available.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * Output only. The URI of an image file associated with the user's account in
+         * an external source control provider, if available.
+         *
+         * @param string $imageUri
+         */
+        public function setImageUri($imageUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\FirebaseAppHosting\UserMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. The 'email' field in a Git user's git.config, if available.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEmail()
-    {
-    }
-    /**
-     * Output only. The URI of an image file associated with the user's account in
-     * an external source control provider, if available.
-     *
-     * @param string $imageUri
-     */
-    public function setImageUri($imageUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImageUri()
+    class Google_Service_FirebaseAppHosting_UserMetadata extends \Google\Service\FirebaseAppHosting\UserMetadata
     {
     }
 }

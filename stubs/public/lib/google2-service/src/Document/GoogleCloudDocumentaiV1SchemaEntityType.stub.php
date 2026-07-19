@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1SchemaEntityType extends \Google\Collection
-{
-    protected $collection_key = 'properties';
-    public $baseType;
-    public $description;
-    public $enumValues;
-    public $occurrenceType;
-    protected $propertiesType = GoogleCloudDocumentaiV1SchemaEntityType::class;
-    protected $propertiesDataType = 'array';
-    public $source;
-    public $type;
-    public function setBaseType($baseType)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1SchemaEntityType extends \Google\Collection
     {
+        protected $collection_key = 'properties';
+        public $baseType;
+        public $description;
+        public $enumValues;
+        public $occurrenceType;
+        protected $propertiesType = GoogleCloudDocumentaiV1SchemaEntityType::class;
+        protected $propertiesDataType = 'array';
+        public $source;
+        public $type;
+        public function setBaseType($baseType)
+        {
+        }
+        public function getBaseType()
+        {
+        }
+        public function setDescription($description)
+        {
+        }
+        public function getDescription()
+        {
+        }
+        public function setEnumValues($enumValues)
+        {
+        }
+        public function getEnumValues()
+        {
+        }
+        public function setOccurrenceType($occurrenceType)
+        {
+        }
+        public function getOccurrenceType()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1SchemaEntityType[]
+         */
+        public function setProperties($properties)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1SchemaEntityType[]
+         */
+        public function getProperties()
+        {
+        }
+        public function setSource($source)
+        {
+        }
+        public function getSource()
+        {
+        }
+        public function setType($type)
+        {
+        }
+        public function getType()
+        {
+        }
     }
-    public function getBaseType()
-    {
-    }
-    public function setDescription($description)
-    {
-    }
-    public function getDescription()
-    {
-    }
-    public function setEnumValues($enumValues)
-    {
-    }
-    public function getEnumValues()
-    {
-    }
-    public function setOccurrenceType($occurrenceType)
-    {
-    }
-    public function getOccurrenceType()
-    {
-    }
+}
+namespace {
     /**
-     * @param GoogleCloudDocumentaiV1SchemaEntityType[]
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1SchemaEntityType registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setProperties($properties)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1SchemaEntityType[]
-     */
-    public function getProperties()
-    {
-    }
-    public function setSource($source)
-    {
-    }
-    public function getSource()
-    {
-    }
-    public function setType($type)
-    {
-    }
-    public function getType()
+    class Google_Service_Document_GoogleCloudDocumentaiV1SchemaEntityType extends \Google\Service\Document\GoogleCloudDocumentaiV1SchemaEntityType
     {
     }
 }

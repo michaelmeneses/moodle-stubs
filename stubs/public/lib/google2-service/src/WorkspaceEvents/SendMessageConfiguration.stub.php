@@ -21,93 +21,102 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkspaceEvents;
-
-class SendMessageConfiguration extends \Google\Collection
-{
-    protected $collection_key = 'acceptedOutputModes';
-    /**
-     * The output modes that the agent is expected to respond with.
-     *
-     * @var string[]
-     */
-    public $acceptedOutputModes;
-    /**
-     * If true, the message will be blocking until the task is completed. If
-     * false, the message will be non-blocking and the task will be returned
-     * immediately. It is the caller's responsibility to check for any task
-     * updates.
-     *
-     * @var bool
-     */
-    public $blocking;
-    /**
-     * The maximum number of messages to include in the history. if 0, the history
-     * will be unlimited.
-     *
-     * @var int
-     */
-    public $historyLength;
-    protected $pushNotificationType = PushNotificationConfig::class;
-    protected $pushNotificationDataType = '';
-    /**
-     * The output modes that the agent is expected to respond with.
-     *
-     * @param string[] $acceptedOutputModes
-     */
-    public function setAcceptedOutputModes($acceptedOutputModes)
+namespace Google\Service\WorkspaceEvents {
+    class SendMessageConfiguration extends \Google\Collection
     {
+        protected $collection_key = 'acceptedOutputModes';
+        /**
+         * The output modes that the agent is expected to respond with.
+         *
+         * @var string[]
+         */
+        public $acceptedOutputModes;
+        /**
+         * If true, the message will be blocking until the task is completed. If
+         * false, the message will be non-blocking and the task will be returned
+         * immediately. It is the caller's responsibility to check for any task
+         * updates.
+         *
+         * @var bool
+         */
+        public $blocking;
+        /**
+         * The maximum number of messages to include in the history. if 0, the history
+         * will be unlimited.
+         *
+         * @var int
+         */
+        public $historyLength;
+        protected $pushNotificationType = PushNotificationConfig::class;
+        protected $pushNotificationDataType = '';
+        /**
+         * The output modes that the agent is expected to respond with.
+         *
+         * @param string[] $acceptedOutputModes
+         */
+        public function setAcceptedOutputModes($acceptedOutputModes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAcceptedOutputModes()
+        {
+        }
+        /**
+         * If true, the message will be blocking until the task is completed. If
+         * false, the message will be non-blocking and the task will be returned
+         * immediately. It is the caller's responsibility to check for any task
+         * updates.
+         *
+         * @param bool $blocking
+         */
+        public function setBlocking($blocking)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBlocking()
+        {
+        }
+        /**
+         * The maximum number of messages to include in the history. if 0, the history
+         * will be unlimited.
+         *
+         * @param int $historyLength
+         */
+        public function setHistoryLength($historyLength)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHistoryLength()
+        {
+        }
+        /**
+         * A configuration of a webhook that can be used to receive updates
+         *
+         * @param PushNotificationConfig $pushNotification
+         */
+        public function setPushNotification(PushNotificationConfig $pushNotification)
+        {
+        }
+        /**
+         * @return PushNotificationConfig
+         */
+        public function getPushNotification()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\WorkspaceEvents\SendMessageConfiguration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAcceptedOutputModes()
-    {
-    }
-    /**
-     * If true, the message will be blocking until the task is completed. If
-     * false, the message will be non-blocking and the task will be returned
-     * immediately. It is the caller's responsibility to check for any task
-     * updates.
-     *
-     * @param bool $blocking
-     */
-    public function setBlocking($blocking)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getBlocking()
-    {
-    }
-    /**
-     * The maximum number of messages to include in the history. if 0, the history
-     * will be unlimited.
-     *
-     * @param int $historyLength
-     */
-    public function setHistoryLength($historyLength)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getHistoryLength()
-    {
-    }
-    /**
-     * A configuration of a webhook that can be used to receive updates
-     *
-     * @param PushNotificationConfig $pushNotification
-     */
-    public function setPushNotification(PushNotificationConfig $pushNotification)
-    {
-    }
-    /**
-     * @return PushNotificationConfig
-     */
-    public function getPushNotification()
+    class Google_Service_WorkspaceEvents_SendMessageConfiguration extends \Google\Service\WorkspaceEvents\SendMessageConfiguration
     {
     }
 }

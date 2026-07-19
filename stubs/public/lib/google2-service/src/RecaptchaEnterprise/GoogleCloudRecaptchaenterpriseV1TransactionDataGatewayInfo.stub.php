@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecaptchaEnterprise;
-
-class GoogleCloudRecaptchaenterpriseV1TransactionDataGatewayInfo extends \Google\Model
-{
-    /**
-     * Optional. AVS response code from the gateway (available only when reCAPTCHA
-     * Enterprise is called after authorization).
-     *
-     * @var string
-     */
-    public $avsResponseCode;
-    /**
-     * Optional. CVV response code from the gateway (available only when reCAPTCHA
-     * Enterprise is called after authorization).
-     *
-     * @var string
-     */
-    public $cvvResponseCode;
-    /**
-     * Optional. Gateway response code describing the state of the transaction.
-     *
-     * @var string
-     */
-    public $gatewayResponseCode;
-    /**
-     * Optional. Name of the gateway service (for example, stripe, square,
-     * paypal).
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. AVS response code from the gateway (available only when reCAPTCHA
-     * Enterprise is called after authorization).
-     *
-     * @param string $avsResponseCode
-     */
-    public function setAvsResponseCode($avsResponseCode)
+namespace Google\Service\RecaptchaEnterprise {
+    class GoogleCloudRecaptchaenterpriseV1TransactionDataGatewayInfo extends \Google\Model
     {
+        /**
+         * Optional. AVS response code from the gateway (available only when reCAPTCHA
+         * Enterprise is called after authorization).
+         *
+         * @var string
+         */
+        public $avsResponseCode;
+        /**
+         * Optional. CVV response code from the gateway (available only when reCAPTCHA
+         * Enterprise is called after authorization).
+         *
+         * @var string
+         */
+        public $cvvResponseCode;
+        /**
+         * Optional. Gateway response code describing the state of the transaction.
+         *
+         * @var string
+         */
+        public $gatewayResponseCode;
+        /**
+         * Optional. Name of the gateway service (for example, stripe, square,
+         * paypal).
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. AVS response code from the gateway (available only when reCAPTCHA
+         * Enterprise is called after authorization).
+         *
+         * @param string $avsResponseCode
+         */
+        public function setAvsResponseCode($avsResponseCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAvsResponseCode()
+        {
+        }
+        /**
+         * Optional. CVV response code from the gateway (available only when reCAPTCHA
+         * Enterprise is called after authorization).
+         *
+         * @param string $cvvResponseCode
+         */
+        public function setCvvResponseCode($cvvResponseCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCvvResponseCode()
+        {
+        }
+        /**
+         * Optional. Gateway response code describing the state of the transaction.
+         *
+         * @param string $gatewayResponseCode
+         */
+        public function setGatewayResponseCode($gatewayResponseCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGatewayResponseCode()
+        {
+        }
+        /**
+         * Optional. Name of the gateway service (for example, stripe, square,
+         * paypal).
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1TransactionDataGatewayInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAvsResponseCode()
-    {
-    }
-    /**
-     * Optional. CVV response code from the gateway (available only when reCAPTCHA
-     * Enterprise is called after authorization).
-     *
-     * @param string $cvvResponseCode
-     */
-    public function setCvvResponseCode($cvvResponseCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCvvResponseCode()
-    {
-    }
-    /**
-     * Optional. Gateway response code describing the state of the transaction.
-     *
-     * @param string $gatewayResponseCode
-     */
-    public function setGatewayResponseCode($gatewayResponseCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGatewayResponseCode()
-    {
-    }
-    /**
-     * Optional. Name of the gateway service (for example, stripe, square,
-     * paypal).
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_RecaptchaEnterprise_GoogleCloudRecaptchaenterpriseV1TransactionDataGatewayInfo extends \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1TransactionDataGatewayInfo
     {
     }
 }

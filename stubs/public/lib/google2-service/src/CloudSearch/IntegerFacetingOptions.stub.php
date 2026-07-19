@@ -21,33 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class IntegerFacetingOptions extends \Google\Collection
-{
-    protected $collection_key = 'integerBuckets';
-    /**
-     * Buckets for given integer values should be in strictly ascending order. For
-     * example, if values supplied are (1,5,10,100), the following facet buckets
-     * will be formed {<1, [1,5), [5-10), [10-100), >=100}.
-     *
-     * @var string[]
-     */
-    public $integerBuckets;
-    /**
-     * Buckets for given integer values should be in strictly ascending order. For
-     * example, if values supplied are (1,5,10,100), the following facet buckets
-     * will be formed {<1, [1,5), [5-10), [10-100), >=100}.
-     *
-     * @param string[] $integerBuckets
-     */
-    public function setIntegerBuckets($integerBuckets)
+namespace Google\Service\CloudSearch {
+    class IntegerFacetingOptions extends \Google\Collection
     {
+        protected $collection_key = 'integerBuckets';
+        /**
+         * Buckets for given integer values should be in strictly ascending order. For
+         * example, if values supplied are (1,5,10,100), the following facet buckets
+         * will be formed {<1, [1,5), [5-10), [10-100), >=100}.
+         *
+         * @var string[]
+         */
+        public $integerBuckets;
+        /**
+         * Buckets for given integer values should be in strictly ascending order. For
+         * example, if values supplied are (1,5,10,100), the following facet buckets
+         * will be formed {<1, [1,5), [5-10), [10-100), >=100}.
+         *
+         * @param string[] $integerBuckets
+         */
+        public function setIntegerBuckets($integerBuckets)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIntegerBuckets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudSearch\IntegerFacetingOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIntegerBuckets()
+    class Google_Service_CloudSearch_IntegerFacetingOptions extends \Google\Service\CloudSearch\IntegerFacetingOptions
     {
     }
 }

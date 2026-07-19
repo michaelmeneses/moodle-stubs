@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class PivotGroupSortValueBucket extends \Google\Collection
-{
-    protected $collection_key = 'buckets';
-    protected $bucketsType = ExtendedValue::class;
-    protected $bucketsDataType = 'array';
-    /**
-     * The offset in the PivotTable.values list which the values in this grouping
-     * should be sorted by.
-     *
-     * @var int
-     */
-    public $valuesIndex;
-    /**
-     * Determines the bucket from which values are chosen to sort. For example, in
-     * a pivot table with one row group & two column groups, the row group can
-     * list up to two values. The first value corresponds to a value within the
-     * first column group, and the second value corresponds to a value in the
-     * second column group. If no values are listed, this would indicate that the
-     * row should be sorted according to the "Grand Total" over the column groups.
-     * If a single value is listed, this would correspond to using the "Total" of
-     * that bucket.
-     *
-     * @param ExtendedValue[] $buckets
-     */
-    public function setBuckets($buckets)
+namespace Google\Service\Sheets {
+    class PivotGroupSortValueBucket extends \Google\Collection
     {
+        protected $collection_key = 'buckets';
+        protected $bucketsType = ExtendedValue::class;
+        protected $bucketsDataType = 'array';
+        /**
+         * The offset in the PivotTable.values list which the values in this grouping
+         * should be sorted by.
+         *
+         * @var int
+         */
+        public $valuesIndex;
+        /**
+         * Determines the bucket from which values are chosen to sort. For example, in
+         * a pivot table with one row group & two column groups, the row group can
+         * list up to two values. The first value corresponds to a value within the
+         * first column group, and the second value corresponds to a value in the
+         * second column group. If no values are listed, this would indicate that the
+         * row should be sorted according to the "Grand Total" over the column groups.
+         * If a single value is listed, this would correspond to using the "Total" of
+         * that bucket.
+         *
+         * @param ExtendedValue[] $buckets
+         */
+        public function setBuckets($buckets)
+        {
+        }
+        /**
+         * @return ExtendedValue[]
+         */
+        public function getBuckets()
+        {
+        }
+        /**
+         * The offset in the PivotTable.values list which the values in this grouping
+         * should be sorted by.
+         *
+         * @param int $valuesIndex
+         */
+        public function setValuesIndex($valuesIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getValuesIndex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ExtendedValue[]
+     * Runtime class alias of \Google\Service\Sheets\PivotGroupSortValueBucket registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBuckets()
-    {
-    }
-    /**
-     * The offset in the PivotTable.values list which the values in this grouping
-     * should be sorted by.
-     *
-     * @param int $valuesIndex
-     */
-    public function setValuesIndex($valuesIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getValuesIndex()
+    class Google_Service_Sheets_PivotGroupSortValueBucket extends \Google\Service\Sheets\PivotGroupSortValueBucket
     {
     }
 }

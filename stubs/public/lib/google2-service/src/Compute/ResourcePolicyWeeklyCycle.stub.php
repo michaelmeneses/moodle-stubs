@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ResourcePolicyWeeklyCycle extends \Google\Collection
-{
-    protected $collection_key = 'dayOfWeeks';
-    protected $dayOfWeeksType = ResourcePolicyWeeklyCycleDayOfWeek::class;
-    protected $dayOfWeeksDataType = 'array';
-    /**
-     * Up to 7 intervals/windows, one for each day of the week.
-     *
-     * @param ResourcePolicyWeeklyCycleDayOfWeek[] $dayOfWeeks
-     */
-    public function setDayOfWeeks($dayOfWeeks)
+namespace Google\Service\Compute {
+    class ResourcePolicyWeeklyCycle extends \Google\Collection
     {
+        protected $collection_key = 'dayOfWeeks';
+        protected $dayOfWeeksType = ResourcePolicyWeeklyCycleDayOfWeek::class;
+        protected $dayOfWeeksDataType = 'array';
+        /**
+         * Up to 7 intervals/windows, one for each day of the week.
+         *
+         * @param ResourcePolicyWeeklyCycleDayOfWeek[] $dayOfWeeks
+         */
+        public function setDayOfWeeks($dayOfWeeks)
+        {
+        }
+        /**
+         * @return ResourcePolicyWeeklyCycleDayOfWeek[]
+         */
+        public function getDayOfWeeks()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ResourcePolicyWeeklyCycleDayOfWeek[]
+     * Runtime class alias of \Google\Service\Compute\ResourcePolicyWeeklyCycle registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDayOfWeeks()
+    class Google_Service_Compute_ResourcePolicyWeeklyCycle extends \Google\Service\Compute\ResourcePolicyWeeklyCycle
     {
     }
 }

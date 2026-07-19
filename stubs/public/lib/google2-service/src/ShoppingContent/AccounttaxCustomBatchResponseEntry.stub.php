@@ -21,83 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class AccounttaxCustomBatchResponseEntry extends \Google\Model
-{
-    protected $accountTaxType = AccountTax::class;
-    protected $accountTaxDataType = '';
-    /**
-     * The ID of the request entry this entry responds to.
-     *
-     * @var string
-     */
-    public $batchId;
-    protected $errorsType = Errors::class;
-    protected $errorsDataType = '';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "`content#accounttaxCustomBatchResponseEntry`"
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The retrieved or updated account tax settings.
-     *
-     * @param AccountTax $accountTax
-     */
-    public function setAccountTax(AccountTax $accountTax)
+namespace Google\Service\ShoppingContent {
+    class AccounttaxCustomBatchResponseEntry extends \Google\Model
     {
+        protected $accountTaxType = AccountTax::class;
+        protected $accountTaxDataType = '';
+        /**
+         * The ID of the request entry this entry responds to.
+         *
+         * @var string
+         */
+        public $batchId;
+        protected $errorsType = Errors::class;
+        protected $errorsDataType = '';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "`content#accounttaxCustomBatchResponseEntry`"
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The retrieved or updated account tax settings.
+         *
+         * @param AccountTax $accountTax
+         */
+        public function setAccountTax(AccountTax $accountTax)
+        {
+        }
+        /**
+         * @return AccountTax
+         */
+        public function getAccountTax()
+        {
+        }
+        /**
+         * The ID of the request entry this entry responds to.
+         *
+         * @param string $batchId
+         */
+        public function setBatchId($batchId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBatchId()
+        {
+        }
+        /**
+         * A list of errors for failed custombatch entries. *Note:* Schema errors fail
+         * the whole request.
+         *
+         * @param Errors $errors
+         */
+        public function setErrors(Errors $errors)
+        {
+        }
+        /**
+         * @return Errors
+         */
+        public function getErrors()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "`content#accounttaxCustomBatchResponseEntry`"
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AccountTax
+     * Runtime class alias of \Google\Service\ShoppingContent\AccounttaxCustomBatchResponseEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountTax()
-    {
-    }
-    /**
-     * The ID of the request entry this entry responds to.
-     *
-     * @param string $batchId
-     */
-    public function setBatchId($batchId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBatchId()
-    {
-    }
-    /**
-     * A list of errors for failed custombatch entries. *Note:* Schema errors fail
-     * the whole request.
-     *
-     * @param Errors $errors
-     */
-    public function setErrors(Errors $errors)
-    {
-    }
-    /**
-     * @return Errors
-     */
-    public function getErrors()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "`content#accounttaxCustomBatchResponseEntry`"
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_ShoppingContent_AccounttaxCustomBatchResponseEntry extends \Google\Service\ShoppingContent\AccounttaxCustomBatchResponseEntry
     {
     }
 }

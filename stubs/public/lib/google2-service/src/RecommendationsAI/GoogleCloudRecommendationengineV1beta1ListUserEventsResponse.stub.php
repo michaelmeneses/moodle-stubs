@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecommendationsAI;
-
-class GoogleCloudRecommendationengineV1beta1ListUserEventsResponse extends \Google\Collection
-{
-    protected $collection_key = 'userEvents';
-    /**
-     * If empty, the list is complete. If nonempty, the token to pass to the next
-     * request's ListUserEvents.page_token.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $userEventsType = GoogleCloudRecommendationengineV1beta1UserEvent::class;
-    protected $userEventsDataType = 'array';
-    /**
-     * If empty, the list is complete. If nonempty, the token to pass to the next
-     * request's ListUserEvents.page_token.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\RecommendationsAI {
+    class GoogleCloudRecommendationengineV1beta1ListUserEventsResponse extends \Google\Collection
     {
+        protected $collection_key = 'userEvents';
+        /**
+         * If empty, the list is complete. If nonempty, the token to pass to the next
+         * request's ListUserEvents.page_token.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $userEventsType = GoogleCloudRecommendationengineV1beta1UserEvent::class;
+        protected $userEventsDataType = 'array';
+        /**
+         * If empty, the list is complete. If nonempty, the token to pass to the next
+         * request's ListUserEvents.page_token.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The user events.
+         *
+         * @param GoogleCloudRecommendationengineV1beta1UserEvent[] $userEvents
+         */
+        public function setUserEvents($userEvents)
+        {
+        }
+        /**
+         * @return GoogleCloudRecommendationengineV1beta1UserEvent[]
+         */
+        public function getUserEvents()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1ListUserEventsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The user events.
-     *
-     * @param GoogleCloudRecommendationengineV1beta1UserEvent[] $userEvents
-     */
-    public function setUserEvents($userEvents)
-    {
-    }
-    /**
-     * @return GoogleCloudRecommendationengineV1beta1UserEvent[]
-     */
-    public function getUserEvents()
+    class Google_Service_RecommendationsAI_GoogleCloudRecommendationengineV1beta1ListUserEventsResponse extends \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1ListUserEventsResponse
     {
     }
 }

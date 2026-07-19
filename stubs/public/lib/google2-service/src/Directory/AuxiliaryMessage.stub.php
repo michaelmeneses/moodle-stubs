@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class AuxiliaryMessage extends \Google\Model
-{
-    /**
-     * Message type unspecified.
-     */
-    public const SEVERITY_SEVERITY_UNSPECIFIED = 'SEVERITY_UNSPECIFIED';
-    /**
-     * Message of severity: info.
-     */
-    public const SEVERITY_SEVERITY_INFO = 'SEVERITY_INFO';
-    /**
-     * Message of severity: warning.
-     */
-    public const SEVERITY_SEVERITY_WARNING = 'SEVERITY_WARNING';
-    /**
-     * Message of severity: error.
-     */
-    public const SEVERITY_SEVERITY_ERROR = 'SEVERITY_ERROR';
-    /**
-     * Human readable message in English. Example: "Given printer is invalid or no
-     * longer supported."
-     *
-     * @var string
-     */
-    public $auxiliaryMessage;
-    /**
-     * Field that this message concerns.
-     *
-     * @var string
-     */
-    public $fieldMask;
-    /**
-     * Message severity
-     *
-     * @var string
-     */
-    public $severity;
-    /**
-     * Human readable message in English. Example: "Given printer is invalid or no
-     * longer supported."
-     *
-     * @param string $auxiliaryMessage
-     */
-    public function setAuxiliaryMessage($auxiliaryMessage)
+namespace Google\Service\Directory {
+    class AuxiliaryMessage extends \Google\Model
     {
+        /**
+         * Message type unspecified.
+         */
+        public const SEVERITY_SEVERITY_UNSPECIFIED = 'SEVERITY_UNSPECIFIED';
+        /**
+         * Message of severity: info.
+         */
+        public const SEVERITY_SEVERITY_INFO = 'SEVERITY_INFO';
+        /**
+         * Message of severity: warning.
+         */
+        public const SEVERITY_SEVERITY_WARNING = 'SEVERITY_WARNING';
+        /**
+         * Message of severity: error.
+         */
+        public const SEVERITY_SEVERITY_ERROR = 'SEVERITY_ERROR';
+        /**
+         * Human readable message in English. Example: "Given printer is invalid or no
+         * longer supported."
+         *
+         * @var string
+         */
+        public $auxiliaryMessage;
+        /**
+         * Field that this message concerns.
+         *
+         * @var string
+         */
+        public $fieldMask;
+        /**
+         * Message severity
+         *
+         * @var string
+         */
+        public $severity;
+        /**
+         * Human readable message in English. Example: "Given printer is invalid or no
+         * longer supported."
+         *
+         * @param string $auxiliaryMessage
+         */
+        public function setAuxiliaryMessage($auxiliaryMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAuxiliaryMessage()
+        {
+        }
+        /**
+         * Field that this message concerns.
+         *
+         * @param string $fieldMask
+         */
+        public function setFieldMask($fieldMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFieldMask()
+        {
+        }
+        /**
+         * Message severity
+         *
+         * Accepted values: SEVERITY_UNSPECIFIED, SEVERITY_INFO, SEVERITY_WARNING,
+         * SEVERITY_ERROR
+         *
+         * @param self::SEVERITY_* $severity
+         */
+        public function setSeverity($severity)
+        {
+        }
+        /**
+         * @return self::SEVERITY_*
+         */
+        public function getSeverity()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\AuxiliaryMessage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuxiliaryMessage()
-    {
-    }
-    /**
-     * Field that this message concerns.
-     *
-     * @param string $fieldMask
-     */
-    public function setFieldMask($fieldMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFieldMask()
-    {
-    }
-    /**
-     * Message severity
-     *
-     * Accepted values: SEVERITY_UNSPECIFIED, SEVERITY_INFO, SEVERITY_WARNING,
-     * SEVERITY_ERROR
-     *
-     * @param self::SEVERITY_* $severity
-     */
-    public function setSeverity($severity)
-    {
-    }
-    /**
-     * @return self::SEVERITY_*
-     */
-    public function getSeverity()
+    class Google_Service_Directory_AuxiliaryMessage extends \Google\Service\Directory\AuxiliaryMessage
     {
     }
 }

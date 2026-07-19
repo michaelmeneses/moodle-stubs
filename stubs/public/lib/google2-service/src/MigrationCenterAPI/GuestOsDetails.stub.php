@@ -21,116 +21,125 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class GuestOsDetails extends \Google\Model
-{
-    public const FAMILY_OS_FAMILY_UNKNOWN = 'OS_FAMILY_UNKNOWN';
-    /**
-     * Microsoft Windows Server and Desktop.
-     */
-    public const FAMILY_OS_FAMILY_WINDOWS = 'OS_FAMILY_WINDOWS';
-    /**
-     * Various Linux flavors.
-     */
-    public const FAMILY_OS_FAMILY_LINUX = 'OS_FAMILY_LINUX';
-    /**
-     * Non-Linux Unix flavors.
-     */
-    public const FAMILY_OS_FAMILY_UNIX = 'OS_FAMILY_UNIX';
-    protected $configType = GuestConfigDetails::class;
-    protected $configDataType = '';
-    /**
-     * What family the OS belong to, if known.
-     *
-     * @var string
-     */
-    public $family;
-    /**
-     * The name of the operating system.
-     *
-     * @var string
-     */
-    public $osName;
-    protected $runtimeType = GuestRuntimeDetails::class;
-    protected $runtimeDataType = '';
-    /**
-     * The version of the operating system.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * OS and app configuration.
-     *
-     * @param GuestConfigDetails $config
-     */
-    public function setConfig(GuestConfigDetails $config)
+namespace Google\Service\MigrationCenterAPI {
+    class GuestOsDetails extends \Google\Model
     {
+        public const FAMILY_OS_FAMILY_UNKNOWN = 'OS_FAMILY_UNKNOWN';
+        /**
+         * Microsoft Windows Server and Desktop.
+         */
+        public const FAMILY_OS_FAMILY_WINDOWS = 'OS_FAMILY_WINDOWS';
+        /**
+         * Various Linux flavors.
+         */
+        public const FAMILY_OS_FAMILY_LINUX = 'OS_FAMILY_LINUX';
+        /**
+         * Non-Linux Unix flavors.
+         */
+        public const FAMILY_OS_FAMILY_UNIX = 'OS_FAMILY_UNIX';
+        protected $configType = GuestConfigDetails::class;
+        protected $configDataType = '';
+        /**
+         * What family the OS belong to, if known.
+         *
+         * @var string
+         */
+        public $family;
+        /**
+         * The name of the operating system.
+         *
+         * @var string
+         */
+        public $osName;
+        protected $runtimeType = GuestRuntimeDetails::class;
+        protected $runtimeDataType = '';
+        /**
+         * The version of the operating system.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * OS and app configuration.
+         *
+         * @param GuestConfigDetails $config
+         */
+        public function setConfig(GuestConfigDetails $config)
+        {
+        }
+        /**
+         * @return GuestConfigDetails
+         */
+        public function getConfig()
+        {
+        }
+        /**
+         * What family the OS belong to, if known.
+         *
+         * Accepted values: OS_FAMILY_UNKNOWN, OS_FAMILY_WINDOWS, OS_FAMILY_LINUX,
+         * OS_FAMILY_UNIX
+         *
+         * @param self::FAMILY_* $family
+         */
+        public function setFamily($family)
+        {
+        }
+        /**
+         * @return self::FAMILY_*
+         */
+        public function getFamily()
+        {
+        }
+        /**
+         * The name of the operating system.
+         *
+         * @param string $osName
+         */
+        public function setOsName($osName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOsName()
+        {
+        }
+        /**
+         * Runtime information.
+         *
+         * @param GuestRuntimeDetails $runtime
+         */
+        public function setRuntime(GuestRuntimeDetails $runtime)
+        {
+        }
+        /**
+         * @return GuestRuntimeDetails
+         */
+        public function getRuntime()
+        {
+        }
+        /**
+         * The version of the operating system.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GuestConfigDetails
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\GuestOsDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfig()
-    {
-    }
-    /**
-     * What family the OS belong to, if known.
-     *
-     * Accepted values: OS_FAMILY_UNKNOWN, OS_FAMILY_WINDOWS, OS_FAMILY_LINUX,
-     * OS_FAMILY_UNIX
-     *
-     * @param self::FAMILY_* $family
-     */
-    public function setFamily($family)
-    {
-    }
-    /**
-     * @return self::FAMILY_*
-     */
-    public function getFamily()
-    {
-    }
-    /**
-     * The name of the operating system.
-     *
-     * @param string $osName
-     */
-    public function setOsName($osName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOsName()
-    {
-    }
-    /**
-     * Runtime information.
-     *
-     * @param GuestRuntimeDetails $runtime
-     */
-    public function setRuntime(GuestRuntimeDetails $runtime)
-    {
-    }
-    /**
-     * @return GuestRuntimeDetails
-     */
-    public function getRuntime()
-    {
-    }
-    /**
-     * The version of the operating system.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_MigrationCenterAPI_GuestOsDetails extends \Google\Service\MigrationCenterAPI\GuestOsDetails
     {
     }
 }

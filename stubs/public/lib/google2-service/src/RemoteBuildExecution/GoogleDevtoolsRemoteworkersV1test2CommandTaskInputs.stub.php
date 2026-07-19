@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class GoogleDevtoolsRemoteworkersV1test2CommandTaskInputs extends \Google\Collection
-{
-    protected $collection_key = 'inlineBlobs';
-    public $arguments;
-    protected $environmentVariablesType = GoogleDevtoolsRemoteworkersV1test2CommandTaskInputsEnvironmentVariable::class;
-    protected $environmentVariablesDataType = 'array';
-    protected $filesType = GoogleDevtoolsRemoteworkersV1test2Digest::class;
-    protected $filesDataType = 'array';
-    protected $inlineBlobsType = GoogleDevtoolsRemoteworkersV1test2Blob::class;
-    protected $inlineBlobsDataType = 'array';
-    public $workingDirectory;
-    public function setArguments($arguments)
+namespace Google\Service\RemoteBuildExecution {
+    class GoogleDevtoolsRemoteworkersV1test2CommandTaskInputs extends \Google\Collection
     {
+        protected $collection_key = 'inlineBlobs';
+        public $arguments;
+        protected $environmentVariablesType = GoogleDevtoolsRemoteworkersV1test2CommandTaskInputsEnvironmentVariable::class;
+        protected $environmentVariablesDataType = 'array';
+        protected $filesType = GoogleDevtoolsRemoteworkersV1test2Digest::class;
+        protected $filesDataType = 'array';
+        protected $inlineBlobsType = GoogleDevtoolsRemoteworkersV1test2Blob::class;
+        protected $inlineBlobsDataType = 'array';
+        public $workingDirectory;
+        public function setArguments($arguments)
+        {
+        }
+        public function getArguments()
+        {
+        }
+        /**
+         * @param GoogleDevtoolsRemoteworkersV1test2CommandTaskInputsEnvironmentVariable[]
+         */
+        public function setEnvironmentVariables($environmentVariables)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsRemoteworkersV1test2CommandTaskInputsEnvironmentVariable[]
+         */
+        public function getEnvironmentVariables()
+        {
+        }
+        /**
+         * @param GoogleDevtoolsRemoteworkersV1test2Digest[]
+         */
+        public function setFiles($files)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsRemoteworkersV1test2Digest[]
+         */
+        public function getFiles()
+        {
+        }
+        /**
+         * @param GoogleDevtoolsRemoteworkersV1test2Blob[]
+         */
+        public function setInlineBlobs($inlineBlobs)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsRemoteworkersV1test2Blob[]
+         */
+        public function getInlineBlobs()
+        {
+        }
+        public function setWorkingDirectory($workingDirectory)
+        {
+        }
+        public function getWorkingDirectory()
+        {
+        }
     }
-    public function getArguments()
-    {
-    }
+}
+namespace {
     /**
-     * @param GoogleDevtoolsRemoteworkersV1test2CommandTaskInputsEnvironmentVariable[]
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemoteworkersV1test2CommandTaskInputs registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setEnvironmentVariables($environmentVariables)
-    {
-    }
-    /**
-     * @return GoogleDevtoolsRemoteworkersV1test2CommandTaskInputsEnvironmentVariable[]
-     */
-    public function getEnvironmentVariables()
-    {
-    }
-    /**
-     * @param GoogleDevtoolsRemoteworkersV1test2Digest[]
-     */
-    public function setFiles($files)
-    {
-    }
-    /**
-     * @return GoogleDevtoolsRemoteworkersV1test2Digest[]
-     */
-    public function getFiles()
-    {
-    }
-    /**
-     * @param GoogleDevtoolsRemoteworkersV1test2Blob[]
-     */
-    public function setInlineBlobs($inlineBlobs)
-    {
-    }
-    /**
-     * @return GoogleDevtoolsRemoteworkersV1test2Blob[]
-     */
-    public function getInlineBlobs()
-    {
-    }
-    public function setWorkingDirectory($workingDirectory)
-    {
-    }
-    public function getWorkingDirectory()
+    class Google_Service_RemoteBuildExecution_GoogleDevtoolsRemoteworkersV1test2CommandTaskInputs extends \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemoteworkersV1test2CommandTaskInputs
     {
     }
 }

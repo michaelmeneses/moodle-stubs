@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class CloudAiLargeModelsVisionRaiInfoDetectedLabels extends \Google\Collection
-{
-    protected $collection_key = 'entities';
-    protected $entitiesType = CloudAiLargeModelsVisionRaiInfoDetectedLabelsEntity::class;
-    protected $entitiesDataType = 'array';
-    /**
-     * The RAI category for the deteceted labels.
-     *
-     * @var string
-     */
-    public $raiCategory;
-    /**
-     * The list of detected entities for the rai signal.
-     *
-     * @param CloudAiLargeModelsVisionRaiInfoDetectedLabelsEntity[] $entities
-     */
-    public function setEntities($entities)
+namespace Google\Service\Aiplatform {
+    class CloudAiLargeModelsVisionRaiInfoDetectedLabels extends \Google\Collection
     {
+        protected $collection_key = 'entities';
+        protected $entitiesType = CloudAiLargeModelsVisionRaiInfoDetectedLabelsEntity::class;
+        protected $entitiesDataType = 'array';
+        /**
+         * The RAI category for the deteceted labels.
+         *
+         * @var string
+         */
+        public $raiCategory;
+        /**
+         * The list of detected entities for the rai signal.
+         *
+         * @param CloudAiLargeModelsVisionRaiInfoDetectedLabelsEntity[] $entities
+         */
+        public function setEntities($entities)
+        {
+        }
+        /**
+         * @return CloudAiLargeModelsVisionRaiInfoDetectedLabelsEntity[]
+         */
+        public function getEntities()
+        {
+        }
+        /**
+         * The RAI category for the deteceted labels.
+         *
+         * @param string $raiCategory
+         */
+        public function setRaiCategory($raiCategory)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRaiCategory()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloudAiLargeModelsVisionRaiInfoDetectedLabelsEntity[]
+     * Runtime class alias of \Google\Service\Aiplatform\CloudAiLargeModelsVisionRaiInfoDetectedLabels registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntities()
-    {
-    }
-    /**
-     * The RAI category for the deteceted labels.
-     *
-     * @param string $raiCategory
-     */
-    public function setRaiCategory($raiCategory)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRaiCategory()
+    class Google_Service_Aiplatform_CloudAiLargeModelsVisionRaiInfoDetectedLabels extends \Google\Service\Aiplatform\CloudAiLargeModelsVisionRaiInfoDetectedLabels
     {
     }
 }

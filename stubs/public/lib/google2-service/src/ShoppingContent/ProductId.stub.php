@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ProductId extends \Google\Model
-{
-    /**
-     * The Content API ID of the product, in the form
-     * `channel:contentLanguage:targetCountry:offerId`.
-     *
-     * @var string
-     */
-    public $productId;
-    /**
-     * The Content API ID of the product, in the form
-     * `channel:contentLanguage:targetCountry:offerId`.
-     *
-     * @param string $productId
-     */
-    public function setProductId($productId)
+namespace Google\Service\ShoppingContent {
+    class ProductId extends \Google\Model
     {
+        /**
+         * The Content API ID of the product, in the form
+         * `channel:contentLanguage:targetCountry:offerId`.
+         *
+         * @var string
+         */
+        public $productId;
+        /**
+         * The Content API ID of the product, in the form
+         * `channel:contentLanguage:targetCountry:offerId`.
+         *
+         * @param string $productId
+         */
+        public function setProductId($productId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\ProductId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProductId()
+    class Google_Service_ShoppingContent_ProductId extends \Google\Service\ShoppingContent\ProductId
     {
     }
 }

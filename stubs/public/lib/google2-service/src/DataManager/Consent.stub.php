@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataManager;
-
-class Consent extends \Google\Model
-{
-    /**
-     * Not specified.
-     */
-    public const AD_PERSONALIZATION_CONSENT_STATUS_UNSPECIFIED = 'CONSENT_STATUS_UNSPECIFIED';
-    /**
-     * Granted.
-     */
-    public const AD_PERSONALIZATION_CONSENT_GRANTED = 'CONSENT_GRANTED';
-    /**
-     * Denied.
-     */
-    public const AD_PERSONALIZATION_CONSENT_DENIED = 'CONSENT_DENIED';
-    /**
-     * Not specified.
-     */
-    public const AD_USER_DATA_CONSENT_STATUS_UNSPECIFIED = 'CONSENT_STATUS_UNSPECIFIED';
-    /**
-     * Granted.
-     */
-    public const AD_USER_DATA_CONSENT_GRANTED = 'CONSENT_GRANTED';
-    /**
-     * Denied.
-     */
-    public const AD_USER_DATA_CONSENT_DENIED = 'CONSENT_DENIED';
-    /**
-     * Optional. Represents if the user consents to ad personalization.
-     *
-     * @var string
-     */
-    public $adPersonalization;
-    /**
-     * Optional. Represents if the user consents to ad user data.
-     *
-     * @var string
-     */
-    public $adUserData;
-    /**
-     * Optional. Represents if the user consents to ad personalization.
-     *
-     * Accepted values: CONSENT_STATUS_UNSPECIFIED, CONSENT_GRANTED,
-     * CONSENT_DENIED
-     *
-     * @param self::AD_PERSONALIZATION_* $adPersonalization
-     */
-    public function setAdPersonalization($adPersonalization)
+namespace Google\Service\DataManager {
+    class Consent extends \Google\Model
     {
+        /**
+         * Not specified.
+         */
+        public const AD_PERSONALIZATION_CONSENT_STATUS_UNSPECIFIED = 'CONSENT_STATUS_UNSPECIFIED';
+        /**
+         * Granted.
+         */
+        public const AD_PERSONALIZATION_CONSENT_GRANTED = 'CONSENT_GRANTED';
+        /**
+         * Denied.
+         */
+        public const AD_PERSONALIZATION_CONSENT_DENIED = 'CONSENT_DENIED';
+        /**
+         * Not specified.
+         */
+        public const AD_USER_DATA_CONSENT_STATUS_UNSPECIFIED = 'CONSENT_STATUS_UNSPECIFIED';
+        /**
+         * Granted.
+         */
+        public const AD_USER_DATA_CONSENT_GRANTED = 'CONSENT_GRANTED';
+        /**
+         * Denied.
+         */
+        public const AD_USER_DATA_CONSENT_DENIED = 'CONSENT_DENIED';
+        /**
+         * Optional. Represents if the user consents to ad personalization.
+         *
+         * @var string
+         */
+        public $adPersonalization;
+        /**
+         * Optional. Represents if the user consents to ad user data.
+         *
+         * @var string
+         */
+        public $adUserData;
+        /**
+         * Optional. Represents if the user consents to ad personalization.
+         *
+         * Accepted values: CONSENT_STATUS_UNSPECIFIED, CONSENT_GRANTED,
+         * CONSENT_DENIED
+         *
+         * @param self::AD_PERSONALIZATION_* $adPersonalization
+         */
+        public function setAdPersonalization($adPersonalization)
+        {
+        }
+        /**
+         * @return self::AD_PERSONALIZATION_*
+         */
+        public function getAdPersonalization()
+        {
+        }
+        /**
+         * Optional. Represents if the user consents to ad user data.
+         *
+         * Accepted values: CONSENT_STATUS_UNSPECIFIED, CONSENT_GRANTED,
+         * CONSENT_DENIED
+         *
+         * @param self::AD_USER_DATA_* $adUserData
+         */
+        public function setAdUserData($adUserData)
+        {
+        }
+        /**
+         * @return self::AD_USER_DATA_*
+         */
+        public function getAdUserData()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::AD_PERSONALIZATION_*
+     * Runtime class alias of \Google\Service\DataManager\Consent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdPersonalization()
-    {
-    }
-    /**
-     * Optional. Represents if the user consents to ad user data.
-     *
-     * Accepted values: CONSENT_STATUS_UNSPECIFIED, CONSENT_GRANTED,
-     * CONSENT_DENIED
-     *
-     * @param self::AD_USER_DATA_* $adUserData
-     */
-    public function setAdUserData($adUserData)
-    {
-    }
-    /**
-     * @return self::AD_USER_DATA_*
-     */
-    public function getAdUserData()
+    class Google_Service_DataManager_Consent extends \Google\Service\DataManager\Consent
     {
     }
 }

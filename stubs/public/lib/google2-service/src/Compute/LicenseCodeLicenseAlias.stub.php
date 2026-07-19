@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class LicenseCodeLicenseAlias extends \Google\Model
-{
-    /**
-     * Output only. [Output Only] Description of this License Code.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Output only. [Output Only] URL of license corresponding to this License
-     * Code.
-     *
-     * @var string
-     */
-    public $selfLink;
-    /**
-     * Output only. [Output Only] Description of this License Code.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Compute {
+    class LicenseCodeLicenseAlias extends \Google\Model
     {
+        /**
+         * Output only. [Output Only] Description of this License Code.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Output only. [Output Only] URL of license corresponding to this License
+         * Code.
+         *
+         * @var string
+         */
+        public $selfLink;
+        /**
+         * Output only. [Output Only] Description of this License Code.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Output only. [Output Only] URL of license corresponding to this License
+         * Code.
+         *
+         * @param string $selfLink
+         */
+        public function setSelfLink($selfLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLink()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\LicenseCodeLicenseAlias registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Output only. [Output Only] URL of license corresponding to this License
-     * Code.
-     *
-     * @param string $selfLink
-     */
-    public function setSelfLink($selfLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLink()
+    class Google_Service_Compute_LicenseCodeLicenseAlias extends \Google\Service\Compute\LicenseCodeLicenseAlias
     {
     }
 }

@@ -21,282 +21,291 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class CounterUpdate extends \Google\Model
-{
-    /**
-     * Boolean value for And, Or.
-     *
-     * @var bool
-     */
-    public $boolean;
-    protected $boundedTrieType = BoundedTrie::class;
-    protected $boundedTrieDataType = '';
-    /**
-     * True if this counter is reported as the total cumulative aggregate value
-     * accumulated since the worker started working on this WorkItem. By default
-     * this is false, indicating that this counter is reported as a delta.
-     *
-     * @var bool
-     */
-    public $cumulative;
-    protected $distributionType = DistributionUpdate::class;
-    protected $distributionDataType = '';
-    /**
-     * Floating point value for Sum, Max, Min.
-     *
-     * @var 
-     */
-    public $floatingPoint;
-    protected $floatingPointListType = FloatingPointList::class;
-    protected $floatingPointListDataType = '';
-    protected $floatingPointMeanType = FloatingPointMean::class;
-    protected $floatingPointMeanDataType = '';
-    protected $integerType = SplitInt64::class;
-    protected $integerDataType = '';
-    protected $integerGaugeType = IntegerGauge::class;
-    protected $integerGaugeDataType = '';
-    protected $integerListType = IntegerList::class;
-    protected $integerListDataType = '';
-    protected $integerMeanType = IntegerMean::class;
-    protected $integerMeanDataType = '';
-    /**
-     * Value for internally-defined counters used by the Dataflow service.
-     *
-     * @var array
-     */
-    public $internal;
-    protected $nameAndKindType = NameAndKind::class;
-    protected $nameAndKindDataType = '';
-    /**
-     * The service-generated short identifier for this counter. The short_id ->
-     * (name, metadata) mapping is constant for the lifetime of a job.
-     *
-     * @var string
-     */
-    public $shortId;
-    protected $stringListType = StringList::class;
-    protected $stringListDataType = '';
-    protected $structuredNameAndMetadataType = CounterStructuredNameAndMetadata::class;
-    protected $structuredNameAndMetadataDataType = '';
-    /**
-     * Boolean value for And, Or.
-     *
-     * @param bool $boolean
-     */
-    public function setBoolean($boolean)
+namespace Google\Service\Dataflow {
+    class CounterUpdate extends \Google\Model
     {
+        /**
+         * Boolean value for And, Or.
+         *
+         * @var bool
+         */
+        public $boolean;
+        protected $boundedTrieType = BoundedTrie::class;
+        protected $boundedTrieDataType = '';
+        /**
+         * True if this counter is reported as the total cumulative aggregate value
+         * accumulated since the worker started working on this WorkItem. By default
+         * this is false, indicating that this counter is reported as a delta.
+         *
+         * @var bool
+         */
+        public $cumulative;
+        protected $distributionType = DistributionUpdate::class;
+        protected $distributionDataType = '';
+        /**
+         * Floating point value for Sum, Max, Min.
+         *
+         * @var 
+         */
+        public $floatingPoint;
+        protected $floatingPointListType = FloatingPointList::class;
+        protected $floatingPointListDataType = '';
+        protected $floatingPointMeanType = FloatingPointMean::class;
+        protected $floatingPointMeanDataType = '';
+        protected $integerType = SplitInt64::class;
+        protected $integerDataType = '';
+        protected $integerGaugeType = IntegerGauge::class;
+        protected $integerGaugeDataType = '';
+        protected $integerListType = IntegerList::class;
+        protected $integerListDataType = '';
+        protected $integerMeanType = IntegerMean::class;
+        protected $integerMeanDataType = '';
+        /**
+         * Value for internally-defined counters used by the Dataflow service.
+         *
+         * @var array
+         */
+        public $internal;
+        protected $nameAndKindType = NameAndKind::class;
+        protected $nameAndKindDataType = '';
+        /**
+         * The service-generated short identifier for this counter. The short_id ->
+         * (name, metadata) mapping is constant for the lifetime of a job.
+         *
+         * @var string
+         */
+        public $shortId;
+        protected $stringListType = StringList::class;
+        protected $stringListDataType = '';
+        protected $structuredNameAndMetadataType = CounterStructuredNameAndMetadata::class;
+        protected $structuredNameAndMetadataDataType = '';
+        /**
+         * Boolean value for And, Or.
+         *
+         * @param bool $boolean
+         */
+        public function setBoolean($boolean)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBoolean()
+        {
+        }
+        /**
+         * Bounded trie data
+         *
+         * @param BoundedTrie $boundedTrie
+         */
+        public function setBoundedTrie(BoundedTrie $boundedTrie)
+        {
+        }
+        /**
+         * @return BoundedTrie
+         */
+        public function getBoundedTrie()
+        {
+        }
+        /**
+         * True if this counter is reported as the total cumulative aggregate value
+         * accumulated since the worker started working on this WorkItem. By default
+         * this is false, indicating that this counter is reported as a delta.
+         *
+         * @param bool $cumulative
+         */
+        public function setCumulative($cumulative)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCumulative()
+        {
+        }
+        /**
+         * Distribution data
+         *
+         * @param DistributionUpdate $distribution
+         */
+        public function setDistribution(DistributionUpdate $distribution)
+        {
+        }
+        /**
+         * @return DistributionUpdate
+         */
+        public function getDistribution()
+        {
+        }
+        public function setFloatingPoint($floatingPoint)
+        {
+        }
+        public function getFloatingPoint()
+        {
+        }
+        /**
+         * List of floating point numbers, for Set.
+         *
+         * @param FloatingPointList $floatingPointList
+         */
+        public function setFloatingPointList(FloatingPointList $floatingPointList)
+        {
+        }
+        /**
+         * @return FloatingPointList
+         */
+        public function getFloatingPointList()
+        {
+        }
+        /**
+         * Floating point mean aggregation value for Mean.
+         *
+         * @param FloatingPointMean $floatingPointMean
+         */
+        public function setFloatingPointMean(FloatingPointMean $floatingPointMean)
+        {
+        }
+        /**
+         * @return FloatingPointMean
+         */
+        public function getFloatingPointMean()
+        {
+        }
+        /**
+         * Integer value for Sum, Max, Min.
+         *
+         * @param SplitInt64 $integer
+         */
+        public function setInteger(SplitInt64 $integer)
+        {
+        }
+        /**
+         * @return SplitInt64
+         */
+        public function getInteger()
+        {
+        }
+        /**
+         * Gauge data
+         *
+         * @param IntegerGauge $integerGauge
+         */
+        public function setIntegerGauge(IntegerGauge $integerGauge)
+        {
+        }
+        /**
+         * @return IntegerGauge
+         */
+        public function getIntegerGauge()
+        {
+        }
+        /**
+         * List of integers, for Set.
+         *
+         * @param IntegerList $integerList
+         */
+        public function setIntegerList(IntegerList $integerList)
+        {
+        }
+        /**
+         * @return IntegerList
+         */
+        public function getIntegerList()
+        {
+        }
+        /**
+         * Integer mean aggregation value for Mean.
+         *
+         * @param IntegerMean $integerMean
+         */
+        public function setIntegerMean(IntegerMean $integerMean)
+        {
+        }
+        /**
+         * @return IntegerMean
+         */
+        public function getIntegerMean()
+        {
+        }
+        /**
+         * Value for internally-defined counters used by the Dataflow service.
+         *
+         * @param array $internal
+         */
+        public function setInternal($internal)
+        {
+        }
+        /**
+         * @return array
+         */
+        public function getInternal()
+        {
+        }
+        /**
+         * Counter name and aggregation type.
+         *
+         * @param NameAndKind $nameAndKind
+         */
+        public function setNameAndKind(NameAndKind $nameAndKind)
+        {
+        }
+        /**
+         * @return NameAndKind
+         */
+        public function getNameAndKind()
+        {
+        }
+        /**
+         * The service-generated short identifier for this counter. The short_id ->
+         * (name, metadata) mapping is constant for the lifetime of a job.
+         *
+         * @param string $shortId
+         */
+        public function setShortId($shortId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShortId()
+        {
+        }
+        /**
+         * List of strings, for Set.
+         *
+         * @param StringList $stringList
+         */
+        public function setStringList(StringList $stringList)
+        {
+        }
+        /**
+         * @return StringList
+         */
+        public function getStringList()
+        {
+        }
+        /**
+         * Counter structured name and metadata.
+         *
+         * @param CounterStructuredNameAndMetadata $structuredNameAndMetadata
+         */
+        public function setStructuredNameAndMetadata(CounterStructuredNameAndMetadata $structuredNameAndMetadata)
+        {
+        }
+        /**
+         * @return CounterStructuredNameAndMetadata
+         */
+        public function getStructuredNameAndMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Dataflow\CounterUpdate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBoolean()
-    {
-    }
-    /**
-     * Bounded trie data
-     *
-     * @param BoundedTrie $boundedTrie
-     */
-    public function setBoundedTrie(BoundedTrie $boundedTrie)
-    {
-    }
-    /**
-     * @return BoundedTrie
-     */
-    public function getBoundedTrie()
-    {
-    }
-    /**
-     * True if this counter is reported as the total cumulative aggregate value
-     * accumulated since the worker started working on this WorkItem. By default
-     * this is false, indicating that this counter is reported as a delta.
-     *
-     * @param bool $cumulative
-     */
-    public function setCumulative($cumulative)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCumulative()
-    {
-    }
-    /**
-     * Distribution data
-     *
-     * @param DistributionUpdate $distribution
-     */
-    public function setDistribution(DistributionUpdate $distribution)
-    {
-    }
-    /**
-     * @return DistributionUpdate
-     */
-    public function getDistribution()
-    {
-    }
-    public function setFloatingPoint($floatingPoint)
-    {
-    }
-    public function getFloatingPoint()
-    {
-    }
-    /**
-     * List of floating point numbers, for Set.
-     *
-     * @param FloatingPointList $floatingPointList
-     */
-    public function setFloatingPointList(FloatingPointList $floatingPointList)
-    {
-    }
-    /**
-     * @return FloatingPointList
-     */
-    public function getFloatingPointList()
-    {
-    }
-    /**
-     * Floating point mean aggregation value for Mean.
-     *
-     * @param FloatingPointMean $floatingPointMean
-     */
-    public function setFloatingPointMean(FloatingPointMean $floatingPointMean)
-    {
-    }
-    /**
-     * @return FloatingPointMean
-     */
-    public function getFloatingPointMean()
-    {
-    }
-    /**
-     * Integer value for Sum, Max, Min.
-     *
-     * @param SplitInt64 $integer
-     */
-    public function setInteger(SplitInt64 $integer)
-    {
-    }
-    /**
-     * @return SplitInt64
-     */
-    public function getInteger()
-    {
-    }
-    /**
-     * Gauge data
-     *
-     * @param IntegerGauge $integerGauge
-     */
-    public function setIntegerGauge(IntegerGauge $integerGauge)
-    {
-    }
-    /**
-     * @return IntegerGauge
-     */
-    public function getIntegerGauge()
-    {
-    }
-    /**
-     * List of integers, for Set.
-     *
-     * @param IntegerList $integerList
-     */
-    public function setIntegerList(IntegerList $integerList)
-    {
-    }
-    /**
-     * @return IntegerList
-     */
-    public function getIntegerList()
-    {
-    }
-    /**
-     * Integer mean aggregation value for Mean.
-     *
-     * @param IntegerMean $integerMean
-     */
-    public function setIntegerMean(IntegerMean $integerMean)
-    {
-    }
-    /**
-     * @return IntegerMean
-     */
-    public function getIntegerMean()
-    {
-    }
-    /**
-     * Value for internally-defined counters used by the Dataflow service.
-     *
-     * @param array $internal
-     */
-    public function setInternal($internal)
-    {
-    }
-    /**
-     * @return array
-     */
-    public function getInternal()
-    {
-    }
-    /**
-     * Counter name and aggregation type.
-     *
-     * @param NameAndKind $nameAndKind
-     */
-    public function setNameAndKind(NameAndKind $nameAndKind)
-    {
-    }
-    /**
-     * @return NameAndKind
-     */
-    public function getNameAndKind()
-    {
-    }
-    /**
-     * The service-generated short identifier for this counter. The short_id ->
-     * (name, metadata) mapping is constant for the lifetime of a job.
-     *
-     * @param string $shortId
-     */
-    public function setShortId($shortId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShortId()
-    {
-    }
-    /**
-     * List of strings, for Set.
-     *
-     * @param StringList $stringList
-     */
-    public function setStringList(StringList $stringList)
-    {
-    }
-    /**
-     * @return StringList
-     */
-    public function getStringList()
-    {
-    }
-    /**
-     * Counter structured name and metadata.
-     *
-     * @param CounterStructuredNameAndMetadata $structuredNameAndMetadata
-     */
-    public function setStructuredNameAndMetadata(CounterStructuredNameAndMetadata $structuredNameAndMetadata)
-    {
-    }
-    /**
-     * @return CounterStructuredNameAndMetadata
-     */
-    public function getStructuredNameAndMetadata()
+    class Google_Service_Dataflow_CounterUpdate extends \Google\Service\Dataflow\CounterUpdate
     {
     }
 }

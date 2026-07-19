@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class RemoteInAppUpdateData extends \Google\Collection
-{
-    protected $collection_key = 'remoteAppUpdateDataPerBundle';
-    protected $remoteAppUpdateDataPerBundleType = RemoteInAppUpdateDataPerBundle::class;
-    protected $remoteAppUpdateDataPerBundleDataType = 'array';
-    /**
-     * Data related to the recovery action at bundle level.
-     *
-     * @param RemoteInAppUpdateDataPerBundle[] $remoteAppUpdateDataPerBundle
-     */
-    public function setRemoteAppUpdateDataPerBundle($remoteAppUpdateDataPerBundle)
+namespace Google\Service\AndroidPublisher {
+    class RemoteInAppUpdateData extends \Google\Collection
     {
+        protected $collection_key = 'remoteAppUpdateDataPerBundle';
+        protected $remoteAppUpdateDataPerBundleType = RemoteInAppUpdateDataPerBundle::class;
+        protected $remoteAppUpdateDataPerBundleDataType = 'array';
+        /**
+         * Data related to the recovery action at bundle level.
+         *
+         * @param RemoteInAppUpdateDataPerBundle[] $remoteAppUpdateDataPerBundle
+         */
+        public function setRemoteAppUpdateDataPerBundle($remoteAppUpdateDataPerBundle)
+        {
+        }
+        /**
+         * @return RemoteInAppUpdateDataPerBundle[]
+         */
+        public function getRemoteAppUpdateDataPerBundle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RemoteInAppUpdateDataPerBundle[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\RemoteInAppUpdateData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRemoteAppUpdateDataPerBundle()
+    class Google_Service_AndroidPublisher_RemoteInAppUpdateData extends \Google\Service\AndroidPublisher\RemoteInAppUpdateData
     {
     }
 }

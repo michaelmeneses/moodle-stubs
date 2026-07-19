@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class FilterUpdate extends \Google\Model
-{
-    protected $filterCreatedType = FilterCreated::class;
-    protected $filterCreatedDataType = '';
-    protected $filterDeletedType = FilterDeleted::class;
-    protected $filterDeletedDataType = '';
-    /**
-     * @var string
-     */
-    public $filterId;
-    /**
-     * @param FilterCreated
-     */
-    public function setFilterCreated(FilterCreated $filterCreated)
+namespace Google\Service\CloudSearch {
+    class FilterUpdate extends \Google\Model
     {
+        protected $filterCreatedType = FilterCreated::class;
+        protected $filterCreatedDataType = '';
+        protected $filterDeletedType = FilterDeleted::class;
+        protected $filterDeletedDataType = '';
+        /**
+         * @var string
+         */
+        public $filterId;
+        /**
+         * @param FilterCreated
+         */
+        public function setFilterCreated(FilterCreated $filterCreated)
+        {
+        }
+        /**
+         * @return FilterCreated
+         */
+        public function getFilterCreated()
+        {
+        }
+        /**
+         * @param FilterDeleted
+         */
+        public function setFilterDeleted(FilterDeleted $filterDeleted)
+        {
+        }
+        /**
+         * @return FilterDeleted
+         */
+        public function getFilterDeleted()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFilterId($filterId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilterId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FilterCreated
+     * Runtime class alias of \Google\Service\CloudSearch\FilterUpdate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilterCreated()
-    {
-    }
-    /**
-     * @param FilterDeleted
-     */
-    public function setFilterDeleted(FilterDeleted $filterDeleted)
-    {
-    }
-    /**
-     * @return FilterDeleted
-     */
-    public function getFilterDeleted()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFilterId($filterId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFilterId()
+    class Google_Service_CloudSearch_FilterUpdate extends \Google\Service\CloudSearch\FilterUpdate
     {
     }
 }

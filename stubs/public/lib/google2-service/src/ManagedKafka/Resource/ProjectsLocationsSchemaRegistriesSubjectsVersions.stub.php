@@ -21,113 +21,126 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedKafka\Resource;
-
-/**
- * The "versions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $managedkafkaService = new Google\Service\ManagedKafka(...);
- *   $versions = $managedkafkaService->projects_locations_schemaRegistries_subjects_versions;
- *  </code>
- */
-class ProjectsLocationsSchemaRegistriesSubjectsVersions extends \Google\Service\Resource
-{
+namespace Google\Service\ManagedKafka\Resource {
+    use Google\Service\ManagedKafka\CreateVersionRequest;
+    use Google\Service\ManagedKafka\CreateVersionResponse;
+    use Google\Service\ManagedKafka\HttpBody;
+    use Google\Service\ManagedKafka\SchemaVersion;
     /**
-     * Register a new version under a given subject with the given schema.
-     * (versions.create)
-     *
-     * @param string $parent Required. The subject to create the version for.
-     * Structured like: `projects/{project}/locations/{location}/schemaRegistries/{s
-     * chema_registry}/subjects/{subject}` or `projects/{project}/locations/{locatio
-     * n}/schemaRegistries/{schema_registry}/contexts/{context}/subjects/{subject}`
-     * @param CreateVersionRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return CreateVersionResponse
-     * @throws \Google\Service\Exception
+     * The "versions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $managedkafkaService = new Google\Service\ManagedKafka(...);
+     *   $versions = $managedkafkaService->projects_locations_schemaRegistries_subjects_versions;
+     *  </code>
      */
-    public function create($parent, CreateVersionRequest $postBody, $optParams = [])
+    class ProjectsLocationsSchemaRegistriesSubjectsVersions extends \Google\Service\Resource
     {
+        /**
+         * Register a new version under a given subject with the given schema.
+         * (versions.create)
+         *
+         * @param string $parent Required. The subject to create the version for.
+         * Structured like: `projects/{project}/locations/{location}/schemaRegistries/{s
+         * chema_registry}/subjects/{subject}` or `projects/{project}/locations/{locatio
+         * n}/schemaRegistries/{schema_registry}/contexts/{context}/subjects/{subject}`
+         * @param CreateVersionRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return CreateVersionResponse
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, CreateVersionRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Delete a version of a subject. The response will be the deleted version id.
+         * (versions.delete)
+         *
+         * @param string $name Required. The name of the subject version to delete.
+         * Structured like: `projects/{project}/locations/{location}/schemaRegistries/{s
+         * chema_registry}/subjects/{subject}/versions/{version}` or `projects/{project}
+         * /locations/{location}/schemaRegistries/{schema_registry}/contexts/{context}/s
+         * ubjects/{subject}/versions/{version}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool permanent Optional. If true, both the version and the
+         * referenced schema ID will be permanently deleted. The default is false. If
+         * false, the version will be deleted but the schema ID will be retained. Soft-
+         * deleted versions can still be searched in ListVersions API call with
+         * deleted=true query parameter. A soft-delete of a version must be performed
+         * before a hard-delete.
+         * @return HttpBody
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Get a versioned schema (schema with subject/version) of a subject.
+         * (versions.get)
+         *
+         * @param string $name Required. The name of the subject to return versions.
+         * Structured like: `projects/{project}/locations/{location}/schemaRegistries/{s
+         * chema_registry}/subjects/{subject}/versions/{version}` or `projects/{project}
+         * /locations/{location}/schemaRegistries/{schema_registry}/contexts/{context}/s
+         * ubjects/{subject}/versions/{version}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool deleted Optional. If true, no matter if the subject/version
+         * is soft-deleted or not, it returns the version details. If false, it returns
+         * NOT_FOUND error if the subject/version is soft-deleted. The default is false.
+         * @return SchemaVersion
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Get the schema string only for a version of a subject. The response will be
+         * the schema string. (versions.getSchema)
+         *
+         * @param string $name Required. The name of the subject to return versions.
+         * Structured like: `projects/{project}/locations/{location}/schemaRegistries/{s
+         * chema_registry}/subjects/{subject}/versions/{version}` or `projects/{project}
+         * /locations/{location}/schemaRegistries/{schema_registry}/contexts/{context}/s
+         * ubjects/{subject}/versions/{version}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool deleted Optional. If true, no matter if the subject/version
+         * is soft-deleted or not, it returns the version details. If false, it returns
+         * NOT_FOUND error if the subject/version is soft-deleted. The default is false.
+         * @return HttpBody
+         * @throws \Google\Service\Exception
+         */
+        public function getSchema($name, $optParams = [])
+        {
+        }
+        /**
+         * Get all versions of a subject. The response will be an array of versions of
+         * the subject. (versions.listProjectsLocationsSchemaRegistriesSubjectsVersions)
+         *
+         * @param string $parent Required. The subject whose versions are to be listed.
+         * Structured like: `projects/{project}/locations/{location}/schemaRegistries/{s
+         * chema_registry}/subjects/{subject}` or `projects/{project}/locations/{locatio
+         * n}/schemaRegistries/{schema_registry}/contexts/{context}/subjects/{subject}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool deleted Optional. If true, the response will include soft-
+         * deleted versions of an active or soft-deleted subject. The default is false.
+         * @return HttpBody
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsSchemaRegistriesSubjectsVersions($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Delete a version of a subject. The response will be the deleted version id.
-     * (versions.delete)
-     *
-     * @param string $name Required. The name of the subject version to delete.
-     * Structured like: `projects/{project}/locations/{location}/schemaRegistries/{s
-     * chema_registry}/subjects/{subject}/versions/{version}` or `projects/{project}
-     * /locations/{location}/schemaRegistries/{schema_registry}/contexts/{context}/s
-     * ubjects/{subject}/versions/{version}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool permanent Optional. If true, both the version and the
-     * referenced schema ID will be permanently deleted. The default is false. If
-     * false, the version will be deleted but the schema ID will be retained. Soft-
-     * deleted versions can still be searched in ListVersions API call with
-     * deleted=true query parameter. A soft-delete of a version must be performed
-     * before a hard-delete.
-     * @return HttpBody
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ManagedKafka\Resource\ProjectsLocationsSchemaRegistriesSubjectsVersions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Get a versioned schema (schema with subject/version) of a subject.
-     * (versions.get)
-     *
-     * @param string $name Required. The name of the subject to return versions.
-     * Structured like: `projects/{project}/locations/{location}/schemaRegistries/{s
-     * chema_registry}/subjects/{subject}/versions/{version}` or `projects/{project}
-     * /locations/{location}/schemaRegistries/{schema_registry}/contexts/{context}/s
-     * ubjects/{subject}/versions/{version}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool deleted Optional. If true, no matter if the subject/version
-     * is soft-deleted or not, it returns the version details. If false, it returns
-     * NOT_FOUND error if the subject/version is soft-deleted. The default is false.
-     * @return SchemaVersion
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Get the schema string only for a version of a subject. The response will be
-     * the schema string. (versions.getSchema)
-     *
-     * @param string $name Required. The name of the subject to return versions.
-     * Structured like: `projects/{project}/locations/{location}/schemaRegistries/{s
-     * chema_registry}/subjects/{subject}/versions/{version}` or `projects/{project}
-     * /locations/{location}/schemaRegistries/{schema_registry}/contexts/{context}/s
-     * ubjects/{subject}/versions/{version}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool deleted Optional. If true, no matter if the subject/version
-     * is soft-deleted or not, it returns the version details. If false, it returns
-     * NOT_FOUND error if the subject/version is soft-deleted. The default is false.
-     * @return HttpBody
-     * @throws \Google\Service\Exception
-     */
-    public function getSchema($name, $optParams = [])
-    {
-    }
-    /**
-     * Get all versions of a subject. The response will be an array of versions of
-     * the subject. (versions.listProjectsLocationsSchemaRegistriesSubjectsVersions)
-     *
-     * @param string $parent Required. The subject whose versions are to be listed.
-     * Structured like: `projects/{project}/locations/{location}/schemaRegistries/{s
-     * chema_registry}/subjects/{subject}` or `projects/{project}/locations/{locatio
-     * n}/schemaRegistries/{schema_registry}/contexts/{context}/subjects/{subject}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool deleted Optional. If true, the response will include soft-
-     * deleted versions of an active or soft-deleted subject. The default is false.
-     * @return HttpBody
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsSchemaRegistriesSubjectsVersions($parent, $optParams = [])
+    class Google_Service_ManagedKafka_Resource_ProjectsLocationsSchemaRegistriesSubjectsVersions extends \Google\Service\ManagedKafka\Resource\ProjectsLocationsSchemaRegistriesSubjectsVersions
     {
     }
 }

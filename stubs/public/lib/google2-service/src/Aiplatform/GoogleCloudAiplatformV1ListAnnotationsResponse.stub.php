@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ListAnnotationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'annotations';
-    protected $annotationsType = GoogleCloudAiplatformV1Annotation::class;
-    protected $annotationsDataType = 'array';
-    /**
-     * The standard List next-page token.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * A list of Annotations that matches the specified filter in the request.
-     *
-     * @param GoogleCloudAiplatformV1Annotation[] $annotations
-     */
-    public function setAnnotations($annotations)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ListAnnotationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'annotations';
+        protected $annotationsType = GoogleCloudAiplatformV1Annotation::class;
+        protected $annotationsDataType = 'array';
+        /**
+         * The standard List next-page token.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * A list of Annotations that matches the specified filter in the request.
+         *
+         * @param GoogleCloudAiplatformV1Annotation[] $annotations
+         */
+        public function setAnnotations($annotations)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Annotation[]
+         */
+        public function getAnnotations()
+        {
+        }
+        /**
+         * The standard List next-page token.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1Annotation[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListAnnotationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotations()
-    {
-    }
-    /**
-     * The standard List next-page token.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ListAnnotationsResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListAnnotationsResponse
     {
     }
 }

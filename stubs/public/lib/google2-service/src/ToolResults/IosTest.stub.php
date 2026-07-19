@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class IosTest extends \Google\Model
-{
-    protected $iosAppInfoType = IosAppInfo::class;
-    protected $iosAppInfoDataType = '';
-    protected $iosRoboTestType = IosRoboTest::class;
-    protected $iosRoboTestDataType = '';
-    protected $iosTestLoopType = IosTestLoop::class;
-    protected $iosTestLoopDataType = '';
-    protected $iosXcTestType = IosXcTest::class;
-    protected $iosXcTestDataType = '';
-    protected $testTimeoutType = Duration::class;
-    protected $testTimeoutDataType = '';
-    /**
-     * Information about the application under test.
-     *
-     * @param IosAppInfo $iosAppInfo
-     */
-    public function setIosAppInfo(IosAppInfo $iosAppInfo)
+namespace Google\Service\ToolResults {
+    class IosTest extends \Google\Model
     {
+        protected $iosAppInfoType = IosAppInfo::class;
+        protected $iosAppInfoDataType = '';
+        protected $iosRoboTestType = IosRoboTest::class;
+        protected $iosRoboTestDataType = '';
+        protected $iosTestLoopType = IosTestLoop::class;
+        protected $iosTestLoopDataType = '';
+        protected $iosXcTestType = IosXcTest::class;
+        protected $iosXcTestDataType = '';
+        protected $testTimeoutType = Duration::class;
+        protected $testTimeoutDataType = '';
+        /**
+         * Information about the application under test.
+         *
+         * @param IosAppInfo $iosAppInfo
+         */
+        public function setIosAppInfo(IosAppInfo $iosAppInfo)
+        {
+        }
+        /**
+         * @return IosAppInfo
+         */
+        public function getIosAppInfo()
+        {
+        }
+        /**
+         * An iOS Robo test.
+         *
+         * @param IosRoboTest $iosRoboTest
+         */
+        public function setIosRoboTest(IosRoboTest $iosRoboTest)
+        {
+        }
+        /**
+         * @return IosRoboTest
+         */
+        public function getIosRoboTest()
+        {
+        }
+        /**
+         * An iOS test loop.
+         *
+         * @param IosTestLoop $iosTestLoop
+         */
+        public function setIosTestLoop(IosTestLoop $iosTestLoop)
+        {
+        }
+        /**
+         * @return IosTestLoop
+         */
+        public function getIosTestLoop()
+        {
+        }
+        /**
+         * An iOS XCTest.
+         *
+         * @param IosXcTest $iosXcTest
+         */
+        public function setIosXcTest(IosXcTest $iosXcTest)
+        {
+        }
+        /**
+         * @return IosXcTest
+         */
+        public function getIosXcTest()
+        {
+        }
+        /**
+         * Max time a test is allowed to run before it is automatically cancelled.
+         *
+         * @param Duration $testTimeout
+         */
+        public function setTestTimeout(Duration $testTimeout)
+        {
+        }
+        /**
+         * @return Duration
+         */
+        public function getTestTimeout()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return IosAppInfo
+     * Runtime class alias of \Google\Service\ToolResults\IosTest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIosAppInfo()
-    {
-    }
-    /**
-     * An iOS Robo test.
-     *
-     * @param IosRoboTest $iosRoboTest
-     */
-    public function setIosRoboTest(IosRoboTest $iosRoboTest)
-    {
-    }
-    /**
-     * @return IosRoboTest
-     */
-    public function getIosRoboTest()
-    {
-    }
-    /**
-     * An iOS test loop.
-     *
-     * @param IosTestLoop $iosTestLoop
-     */
-    public function setIosTestLoop(IosTestLoop $iosTestLoop)
-    {
-    }
-    /**
-     * @return IosTestLoop
-     */
-    public function getIosTestLoop()
-    {
-    }
-    /**
-     * An iOS XCTest.
-     *
-     * @param IosXcTest $iosXcTest
-     */
-    public function setIosXcTest(IosXcTest $iosXcTest)
-    {
-    }
-    /**
-     * @return IosXcTest
-     */
-    public function getIosXcTest()
-    {
-    }
-    /**
-     * Max time a test is allowed to run before it is automatically cancelled.
-     *
-     * @param Duration $testTimeout
-     */
-    public function setTestTimeout(Duration $testTimeout)
-    {
-    }
-    /**
-     * @return Duration
-     */
-    public function getTestTimeout()
+    class Google_Service_ToolResults_IosTest extends \Google\Service\ToolResults\IosTest
     {
     }
 }

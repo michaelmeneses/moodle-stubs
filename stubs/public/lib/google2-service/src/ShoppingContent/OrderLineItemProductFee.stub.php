@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OrderLineItemProductFee extends \Google\Model
-{
-    protected $amountType = Price::class;
-    protected $amountDataType = '';
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @param Price
-     */
-    public function setAmount(Price $amount)
+namespace Google\Service\ShoppingContent {
+    class OrderLineItemProductFee extends \Google\Model
     {
+        protected $amountType = Price::class;
+        protected $amountDataType = '';
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @param Price
+         */
+        public function setAmount(Price $amount)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getAmount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Price
+     * Runtime class alias of \Google\Service\ShoppingContent\OrderLineItemProductFee registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAmount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_ShoppingContent_OrderLineItemProductFee extends \Google\Service\ShoppingContent\OrderLineItemProductFee
     {
     }
 }

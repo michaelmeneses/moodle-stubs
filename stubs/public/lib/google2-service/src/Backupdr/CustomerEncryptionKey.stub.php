@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class CustomerEncryptionKey extends \Google\Model
-{
-    /**
-     * Optional. The name of the encryption key that is stored in Google Cloud
-     * KMS.
-     *
-     * @var string
-     */
-    public $kmsKeyName;
-    /**
-     * Optional. The service account being used for the encryption request for the
-     * given KMS key. If absent, the Compute Engine default service account is
-     * used.
-     *
-     * @var string
-     */
-    public $kmsKeyServiceAccount;
-    /**
-     * Optional. Specifies a 256-bit customer-supplied encryption key.
-     *
-     * @var string
-     */
-    public $rawKey;
-    /**
-     * Optional. RSA-wrapped 2048-bit customer-supplied encryption key to either
-     * encrypt or decrypt this resource.
-     *
-     * @var string
-     */
-    public $rsaEncryptedKey;
-    /**
-     * Optional. The name of the encryption key that is stored in Google Cloud
-     * KMS.
-     *
-     * @param string $kmsKeyName
-     */
-    public function setKmsKeyName($kmsKeyName)
+namespace Google\Service\Backupdr {
+    class CustomerEncryptionKey extends \Google\Model
     {
+        /**
+         * Optional. The name of the encryption key that is stored in Google Cloud
+         * KMS.
+         *
+         * @var string
+         */
+        public $kmsKeyName;
+        /**
+         * Optional. The service account being used for the encryption request for the
+         * given KMS key. If absent, the Compute Engine default service account is
+         * used.
+         *
+         * @var string
+         */
+        public $kmsKeyServiceAccount;
+        /**
+         * Optional. Specifies a 256-bit customer-supplied encryption key.
+         *
+         * @var string
+         */
+        public $rawKey;
+        /**
+         * Optional. RSA-wrapped 2048-bit customer-supplied encryption key to either
+         * encrypt or decrypt this resource.
+         *
+         * @var string
+         */
+        public $rsaEncryptedKey;
+        /**
+         * Optional. The name of the encryption key that is stored in Google Cloud
+         * KMS.
+         *
+         * @param string $kmsKeyName
+         */
+        public function setKmsKeyName($kmsKeyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKmsKeyName()
+        {
+        }
+        /**
+         * Optional. The service account being used for the encryption request for the
+         * given KMS key. If absent, the Compute Engine default service account is
+         * used.
+         *
+         * @param string $kmsKeyServiceAccount
+         */
+        public function setKmsKeyServiceAccount($kmsKeyServiceAccount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKmsKeyServiceAccount()
+        {
+        }
+        /**
+         * Optional. Specifies a 256-bit customer-supplied encryption key.
+         *
+         * @param string $rawKey
+         */
+        public function setRawKey($rawKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRawKey()
+        {
+        }
+        /**
+         * Optional. RSA-wrapped 2048-bit customer-supplied encryption key to either
+         * encrypt or decrypt this resource.
+         *
+         * @param string $rsaEncryptedKey
+         */
+        public function setRsaEncryptedKey($rsaEncryptedKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRsaEncryptedKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Backupdr\CustomerEncryptionKey registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKmsKeyName()
-    {
-    }
-    /**
-     * Optional. The service account being used for the encryption request for the
-     * given KMS key. If absent, the Compute Engine default service account is
-     * used.
-     *
-     * @param string $kmsKeyServiceAccount
-     */
-    public function setKmsKeyServiceAccount($kmsKeyServiceAccount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKmsKeyServiceAccount()
-    {
-    }
-    /**
-     * Optional. Specifies a 256-bit customer-supplied encryption key.
-     *
-     * @param string $rawKey
-     */
-    public function setRawKey($rawKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRawKey()
-    {
-    }
-    /**
-     * Optional. RSA-wrapped 2048-bit customer-supplied encryption key to either
-     * encrypt or decrypt this resource.
-     *
-     * @param string $rsaEncryptedKey
-     */
-    public function setRsaEncryptedKey($rsaEncryptedKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRsaEncryptedKey()
+    class Google_Service_Backupdr_CustomerEncryptionKey extends \Google\Service\Backupdr\CustomerEncryptionKey
     {
     }
 }

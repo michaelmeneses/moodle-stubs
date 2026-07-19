@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecureSourceManager;
-
-class ListBranchRulesResponse extends \Google\Collection
-{
-    protected $collection_key = 'branchRules';
-    protected $branchRulesType = BranchRule::class;
-    protected $branchRulesDataType = 'array';
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of branch rules.
-     *
-     * @param BranchRule[] $branchRules
-     */
-    public function setBranchRules($branchRules)
+namespace Google\Service\SecureSourceManager {
+    class ListBranchRulesResponse extends \Google\Collection
     {
+        protected $collection_key = 'branchRules';
+        protected $branchRulesType = BranchRule::class;
+        protected $branchRulesDataType = 'array';
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of branch rules.
+         *
+         * @param BranchRule[] $branchRules
+         */
+        public function setBranchRules($branchRules)
+        {
+        }
+        /**
+         * @return BranchRule[]
+         */
+        public function getBranchRules()
+        {
+        }
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BranchRule[]
+     * Runtime class alias of \Google\Service\SecureSourceManager\ListBranchRulesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBranchRules()
-    {
-    }
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_SecureSourceManager_ListBranchRulesResponse extends \Google\Service\SecureSourceManager\ListBranchRulesResponse
     {
     }
 }

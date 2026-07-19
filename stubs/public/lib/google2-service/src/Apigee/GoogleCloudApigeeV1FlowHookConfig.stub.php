@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1FlowHookConfig extends \Google\Model
-{
-    /**
-     * Flag that specifies whether the flow should abort after an error in the
-     * flow hook. Defaults to `true` (continue on error).
-     *
-     * @var bool
-     */
-    public $continueOnError;
-    /**
-     * Name of the flow hook in the following format:
-     * `organizations/{org}/environments/{env}/flowhooks/{point}`. Valid `point`
-     * values include: `PreProxyFlowHook`, `PostProxyFlowHook`,
-     * `PreTargetFlowHook`, and `PostTargetFlowHook`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Name of the shared flow to invoke in the following format:
-     * `organizations/{org}/sharedflows/{sharedflow}`
-     *
-     * @var string
-     */
-    public $sharedFlowName;
-    /**
-     * Flag that specifies whether the flow should abort after an error in the
-     * flow hook. Defaults to `true` (continue on error).
-     *
-     * @param bool $continueOnError
-     */
-    public function setContinueOnError($continueOnError)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1FlowHookConfig extends \Google\Model
     {
+        /**
+         * Flag that specifies whether the flow should abort after an error in the
+         * flow hook. Defaults to `true` (continue on error).
+         *
+         * @var bool
+         */
+        public $continueOnError;
+        /**
+         * Name of the flow hook in the following format:
+         * `organizations/{org}/environments/{env}/flowhooks/{point}`. Valid `point`
+         * values include: `PreProxyFlowHook`, `PostProxyFlowHook`,
+         * `PreTargetFlowHook`, and `PostTargetFlowHook`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Name of the shared flow to invoke in the following format:
+         * `organizations/{org}/sharedflows/{sharedflow}`
+         *
+         * @var string
+         */
+        public $sharedFlowName;
+        /**
+         * Flag that specifies whether the flow should abort after an error in the
+         * flow hook. Defaults to `true` (continue on error).
+         *
+         * @param bool $continueOnError
+         */
+        public function setContinueOnError($continueOnError)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getContinueOnError()
+        {
+        }
+        /**
+         * Name of the flow hook in the following format:
+         * `organizations/{org}/environments/{env}/flowhooks/{point}`. Valid `point`
+         * values include: `PreProxyFlowHook`, `PostProxyFlowHook`,
+         * `PreTargetFlowHook`, and `PostTargetFlowHook`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Name of the shared flow to invoke in the following format:
+         * `organizations/{org}/sharedflows/{sharedflow}`
+         *
+         * @param string $sharedFlowName
+         */
+        public function setSharedFlowName($sharedFlowName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSharedFlowName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1FlowHookConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContinueOnError()
-    {
-    }
-    /**
-     * Name of the flow hook in the following format:
-     * `organizations/{org}/environments/{env}/flowhooks/{point}`. Valid `point`
-     * values include: `PreProxyFlowHook`, `PostProxyFlowHook`,
-     * `PreTargetFlowHook`, and `PostTargetFlowHook`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Name of the shared flow to invoke in the following format:
-     * `organizations/{org}/sharedflows/{sharedflow}`
-     *
-     * @param string $sharedFlowName
-     */
-    public function setSharedFlowName($sharedFlowName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSharedFlowName()
+    class Google_Service_Apigee_GoogleCloudApigeeV1FlowHookConfig extends \Google\Service\Apigee\GoogleCloudApigeeV1FlowHookConfig
     {
     }
 }

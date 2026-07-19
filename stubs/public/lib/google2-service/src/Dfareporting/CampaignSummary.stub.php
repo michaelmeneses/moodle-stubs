@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class CampaignSummary extends \Google\Model
-{
-    /**
-     * Campaign billing invoice code.
-     *
-     * @var string
-     */
-    public $billingInvoiceCode;
-    /**
-     * Campaign ID.
-     *
-     * @var string
-     */
-    public $campaignId;
-    /**
-     * The pre-tax amount for this campaign, in micros of the invoice's currency.
-     *
-     * @var string
-     */
-    public $preTaxAmountMicros;
-    /**
-     * The tax amount for this campaign, in micros of the invoice's currency.
-     *
-     * @var string
-     */
-    public $taxAmountMicros;
-    /**
-     * The total amount of charges for this campaign, in micros of the invoice's
-     * currency.
-     *
-     * @var string
-     */
-    public $totalAmountMicros;
-    /**
-     * Campaign billing invoice code.
-     *
-     * @param string $billingInvoiceCode
-     */
-    public function setBillingInvoiceCode($billingInvoiceCode)
+namespace Google\Service\Dfareporting {
+    class CampaignSummary extends \Google\Model
     {
+        /**
+         * Campaign billing invoice code.
+         *
+         * @var string
+         */
+        public $billingInvoiceCode;
+        /**
+         * Campaign ID.
+         *
+         * @var string
+         */
+        public $campaignId;
+        /**
+         * The pre-tax amount for this campaign, in micros of the invoice's currency.
+         *
+         * @var string
+         */
+        public $preTaxAmountMicros;
+        /**
+         * The tax amount for this campaign, in micros of the invoice's currency.
+         *
+         * @var string
+         */
+        public $taxAmountMicros;
+        /**
+         * The total amount of charges for this campaign, in micros of the invoice's
+         * currency.
+         *
+         * @var string
+         */
+        public $totalAmountMicros;
+        /**
+         * Campaign billing invoice code.
+         *
+         * @param string $billingInvoiceCode
+         */
+        public function setBillingInvoiceCode($billingInvoiceCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBillingInvoiceCode()
+        {
+        }
+        /**
+         * Campaign ID.
+         *
+         * @param string $campaignId
+         */
+        public function setCampaignId($campaignId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCampaignId()
+        {
+        }
+        /**
+         * The pre-tax amount for this campaign, in micros of the invoice's currency.
+         *
+         * @param string $preTaxAmountMicros
+         */
+        public function setPreTaxAmountMicros($preTaxAmountMicros)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPreTaxAmountMicros()
+        {
+        }
+        /**
+         * The tax amount for this campaign, in micros of the invoice's currency.
+         *
+         * @param string $taxAmountMicros
+         */
+        public function setTaxAmountMicros($taxAmountMicros)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTaxAmountMicros()
+        {
+        }
+        /**
+         * The total amount of charges for this campaign, in micros of the invoice's
+         * currency.
+         *
+         * @param string $totalAmountMicros
+         */
+        public function setTotalAmountMicros($totalAmountMicros)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalAmountMicros()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\CampaignSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBillingInvoiceCode()
-    {
-    }
-    /**
-     * Campaign ID.
-     *
-     * @param string $campaignId
-     */
-    public function setCampaignId($campaignId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCampaignId()
-    {
-    }
-    /**
-     * The pre-tax amount for this campaign, in micros of the invoice's currency.
-     *
-     * @param string $preTaxAmountMicros
-     */
-    public function setPreTaxAmountMicros($preTaxAmountMicros)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPreTaxAmountMicros()
-    {
-    }
-    /**
-     * The tax amount for this campaign, in micros of the invoice's currency.
-     *
-     * @param string $taxAmountMicros
-     */
-    public function setTaxAmountMicros($taxAmountMicros)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTaxAmountMicros()
-    {
-    }
-    /**
-     * The total amount of charges for this campaign, in micros of the invoice's
-     * currency.
-     *
-     * @param string $totalAmountMicros
-     */
-    public function setTotalAmountMicros($totalAmountMicros)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalAmountMicros()
+    class Google_Service_Dfareporting_CampaignSummary extends \Google\Service\Dfareporting\CampaignSummary
     {
     }
 }

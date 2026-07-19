@@ -21,83 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class PlayerLeaderboardScoreListResponse extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = PlayerLeaderboardScore::class;
-    protected $itemsDataType = 'array';
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#playerLeaderboardScoreListResponse`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The pagination token for the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $playerType = Player::class;
-    protected $playerDataType = '';
-    /**
-     * The leaderboard scores.
-     *
-     * @param PlayerLeaderboardScore[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\Games {
+    class PlayerLeaderboardScoreListResponse extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = PlayerLeaderboardScore::class;
+        protected $itemsDataType = 'array';
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#playerLeaderboardScoreListResponse`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The pagination token for the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $playerType = Player::class;
+        protected $playerDataType = '';
+        /**
+         * The leaderboard scores.
+         *
+         * @param PlayerLeaderboardScore[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return PlayerLeaderboardScore[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#playerLeaderboardScoreListResponse`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The pagination token for the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The Player resources for the owner of this score.
+         *
+         * @param Player $player
+         */
+        public function setPlayer(Player $player)
+        {
+        }
+        /**
+         * @return Player
+         */
+        public function getPlayer()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PlayerLeaderboardScore[]
+     * Runtime class alias of \Google\Service\Games\PlayerLeaderboardScoreListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
-    {
-    }
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#playerLeaderboardScoreListResponse`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The pagination token for the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The Player resources for the owner of this score.
-     *
-     * @param Player $player
-     */
-    public function setPlayer(Player $player)
-    {
-    }
-    /**
-     * @return Player
-     */
-    public function getPlayer()
+    class Google_Service_Games_PlayerLeaderboardScoreListResponse extends \Google\Service\Games\PlayerLeaderboardScoreListResponse
     {
     }
 }

@@ -21,130 +21,139 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdSenseHost;
-
-class AdUnit extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $code;
-    protected $contentAdsSettingsType = AdUnitContentAdsSettings::class;
-    protected $contentAdsSettingsDataType = '';
-    protected $customStyleType = AdStyle::class;
-    protected $customStyleDataType = '';
-    /**
-     * @var string
-     */
-    public $id;
-    /**
-     * @var string
-     */
-    public $kind;
-    protected $mobileContentAdsSettingsType = AdUnitMobileContentAdsSettings::class;
-    protected $mobileContentAdsSettingsDataType = '';
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $status;
-    /**
-     * @param string
-     */
-    public function setCode($code)
+namespace Google\Service\AdSenseHost {
+    class AdUnit extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $code;
+        protected $contentAdsSettingsType = AdUnitContentAdsSettings::class;
+        protected $contentAdsSettingsDataType = '';
+        protected $customStyleType = AdStyle::class;
+        protected $customStyleDataType = '';
+        /**
+         * @var string
+         */
+        public $id;
+        /**
+         * @var string
+         */
+        public $kind;
+        protected $mobileContentAdsSettingsType = AdUnitMobileContentAdsSettings::class;
+        protected $mobileContentAdsSettingsDataType = '';
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $status;
+        /**
+         * @param string
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCode()
+        {
+        }
+        /**
+         * @param AdUnitContentAdsSettings
+         */
+        public function setContentAdsSettings(AdUnitContentAdsSettings $contentAdsSettings)
+        {
+        }
+        /**
+         * @return AdUnitContentAdsSettings
+         */
+        public function getContentAdsSettings()
+        {
+        }
+        /**
+         * @param AdStyle
+         */
+        public function setCustomStyle(AdStyle $customStyle)
+        {
+        }
+        /**
+         * @return AdStyle
+         */
+        public function getCustomStyle()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param AdUnitMobileContentAdsSettings
+         */
+        public function setMobileContentAdsSettings(AdUnitMobileContentAdsSettings $mobileContentAdsSettings)
+        {
+        }
+        /**
+         * @return AdUnitMobileContentAdsSettings
+         */
+        public function getMobileContentAdsSettings()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AdSenseHost\AdUnit registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCode()
-    {
-    }
-    /**
-     * @param AdUnitContentAdsSettings
-     */
-    public function setContentAdsSettings(AdUnitContentAdsSettings $contentAdsSettings)
-    {
-    }
-    /**
-     * @return AdUnitContentAdsSettings
-     */
-    public function getContentAdsSettings()
-    {
-    }
-    /**
-     * @param AdStyle
-     */
-    public function setCustomStyle(AdStyle $customStyle)
-    {
-    }
-    /**
-     * @return AdStyle
-     */
-    public function getCustomStyle()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * @param AdUnitMobileContentAdsSettings
-     */
-    public function setMobileContentAdsSettings(AdUnitMobileContentAdsSettings $mobileContentAdsSettings)
-    {
-    }
-    /**
-     * @return AdUnitMobileContentAdsSettings
-     */
-    public function getMobileContentAdsSettings()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatus()
+    class Google_Service_AdSenseHost_AdUnit extends \Google\Service\AdSenseHost\AdUnit
     {
     }
 }

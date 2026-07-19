@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Iam;
-
-class BindingDelta extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $action;
-    protected $conditionType = Expr::class;
-    protected $conditionDataType = '';
-    public $condition;
-    /**
-     * @var string
-     */
-    public $member;
-    /**
-     * @var string
-     */
-    public $role;
-    /**
-     * @param string
-     */
-    public function setAction($action)
+namespace Google\Service\Iam {
+    class BindingDelta extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $action;
+        protected $conditionType = Expr::class;
+        protected $conditionDataType = '';
+        public $condition;
+        /**
+         * @var string
+         */
+        public $member;
+        /**
+         * @var string
+         */
+        public $role;
+        /**
+         * @param string
+         */
+        public function setAction($action)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAction()
+        {
+        }
+        /**
+         * @param Expr
+         */
+        public function setCondition(Expr $condition)
+        {
+        }
+        /**
+         * @return Expr
+         */
+        public function getCondition()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMember($member)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMember()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRole($role)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRole()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Iam\BindingDelta registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAction()
-    {
-    }
-    /**
-     * @param Expr
-     */
-    public function setCondition(Expr $condition)
-    {
-    }
-    /**
-     * @return Expr
-     */
-    public function getCondition()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMember($member)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMember()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRole($role)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRole()
+    class Google_Service_Iam_BindingDelta extends \Google\Service\Iam\BindingDelta
     {
     }
 }

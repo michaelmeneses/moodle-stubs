@@ -21,136 +21,145 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ProductstatusesCustomBatchRequestEntry extends \Google\Collection
-{
-    protected $collection_key = 'destinations';
-    /**
-     * An entry ID, unique within the batch request.
-     *
-     * @var string
-     */
-    public $batchId;
-    /**
-     * If set, only issues for the specified destinations are returned, otherwise
-     * only issues for the Shopping destination.
-     *
-     * @var string[]
-     */
-    public $destinations;
-    /**
-     * Deprecated: Setting this field has no effect and attributes are never
-     * included.
-     *
-     * @deprecated
-     * @var bool
-     */
-    public $includeAttributes;
-    /**
-     * The ID of the managing account.
-     *
-     * @var string
-     */
-    public $merchantId;
-    /**
-     * The method of the batch entry. Acceptable values are: - "`get`"
-     *
-     * @var string
-     */
-    public $method;
-    /**
-     * The ID of the product whose status to get.
-     *
-     * @var string
-     */
-    public $productId;
-    /**
-     * An entry ID, unique within the batch request.
-     *
-     * @param string $batchId
-     */
-    public function setBatchId($batchId)
+namespace Google\Service\ShoppingContent {
+    class ProductstatusesCustomBatchRequestEntry extends \Google\Collection
     {
+        protected $collection_key = 'destinations';
+        /**
+         * An entry ID, unique within the batch request.
+         *
+         * @var string
+         */
+        public $batchId;
+        /**
+         * If set, only issues for the specified destinations are returned, otherwise
+         * only issues for the Shopping destination.
+         *
+         * @var string[]
+         */
+        public $destinations;
+        /**
+         * Deprecated: Setting this field has no effect and attributes are never
+         * included.
+         *
+         * @deprecated
+         * @var bool
+         */
+        public $includeAttributes;
+        /**
+         * The ID of the managing account.
+         *
+         * @var string
+         */
+        public $merchantId;
+        /**
+         * The method of the batch entry. Acceptable values are: - "`get`"
+         *
+         * @var string
+         */
+        public $method;
+        /**
+         * The ID of the product whose status to get.
+         *
+         * @var string
+         */
+        public $productId;
+        /**
+         * An entry ID, unique within the batch request.
+         *
+         * @param string $batchId
+         */
+        public function setBatchId($batchId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBatchId()
+        {
+        }
+        /**
+         * If set, only issues for the specified destinations are returned, otherwise
+         * only issues for the Shopping destination.
+         *
+         * @param string[] $destinations
+         */
+        public function setDestinations($destinations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDestinations()
+        {
+        }
+        /**
+         * Deprecated: Setting this field has no effect and attributes are never
+         * included.
+         *
+         * @deprecated
+         * @param bool $includeAttributes
+         */
+        public function setIncludeAttributes($includeAttributes)
+        {
+        }
+        /**
+         * @deprecated
+         * @return bool
+         */
+        public function getIncludeAttributes()
+        {
+        }
+        /**
+         * The ID of the managing account.
+         *
+         * @param string $merchantId
+         */
+        public function setMerchantId($merchantId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMerchantId()
+        {
+        }
+        /**
+         * The method of the batch entry. Acceptable values are: - "`get`"
+         *
+         * @param string $method
+         */
+        public function setMethod($method)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMethod()
+        {
+        }
+        /**
+         * The ID of the product whose status to get.
+         *
+         * @param string $productId
+         */
+        public function setProductId($productId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\ProductstatusesCustomBatchRequestEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBatchId()
-    {
-    }
-    /**
-     * If set, only issues for the specified destinations are returned, otherwise
-     * only issues for the Shopping destination.
-     *
-     * @param string[] $destinations
-     */
-    public function setDestinations($destinations)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDestinations()
-    {
-    }
-    /**
-     * Deprecated: Setting this field has no effect and attributes are never
-     * included.
-     *
-     * @deprecated
-     * @param bool $includeAttributes
-     */
-    public function setIncludeAttributes($includeAttributes)
-    {
-    }
-    /**
-     * @deprecated
-     * @return bool
-     */
-    public function getIncludeAttributes()
-    {
-    }
-    /**
-     * The ID of the managing account.
-     *
-     * @param string $merchantId
-     */
-    public function setMerchantId($merchantId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMerchantId()
-    {
-    }
-    /**
-     * The method of the batch entry. Acceptable values are: - "`get`"
-     *
-     * @param string $method
-     */
-    public function setMethod($method)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMethod()
-    {
-    }
-    /**
-     * The ID of the product whose status to get.
-     *
-     * @param string $productId
-     */
-    public function setProductId($productId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductId()
+    class Google_Service_ShoppingContent_ProductstatusesCustomBatchRequestEntry extends \Google\Service\ShoppingContent\ProductstatusesCustomBatchRequestEntry
     {
     }
 }

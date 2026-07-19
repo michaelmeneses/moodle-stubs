@@ -8,6 +8,13 @@
  */
 namespace core_reportbuilder\output\dynamictabs;
 
+use context_system;
+use core\output\dynamic_tabs\base;
+use core_reportbuilder\local\models\report;
+use core_reportbuilder\local\systemreports\report_access_list;
+use core_reportbuilder\permission;
+use core_reportbuilder\system_report_factory;
+use renderer_base;
 /**
  * Access dynamic tab
  *

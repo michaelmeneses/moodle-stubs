@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AnnotationInfo extends \Google\Collection
-{
-    protected $collection_key = 'coannotatorDeviceIds';
-    /**
-     * @var string[]
-     */
-    public $coannotatorDeviceIds;
-    /**
-     * @var bool
-     */
-    public $isActive;
-    /**
-     * @param string[]
-     */
-    public function setCoannotatorDeviceIds($coannotatorDeviceIds)
+namespace Google\Service\CloudSearch {
+    class AnnotationInfo extends \Google\Collection
     {
+        protected $collection_key = 'coannotatorDeviceIds';
+        /**
+         * @var string[]
+         */
+        public $coannotatorDeviceIds;
+        /**
+         * @var bool
+         */
+        public $isActive;
+        /**
+         * @param string[]
+         */
+        public function setCoannotatorDeviceIds($coannotatorDeviceIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCoannotatorDeviceIds()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setIsActive($isActive)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsActive()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudSearch\AnnotationInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCoannotatorDeviceIds()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setIsActive($isActive)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsActive()
+    class Google_Service_CloudSearch_AnnotationInfo extends \Google\Service\CloudSearch\AnnotationInfo
     {
     }
 }

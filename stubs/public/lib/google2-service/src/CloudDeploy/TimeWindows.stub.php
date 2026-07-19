@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class TimeWindows extends \Google\Collection
-{
-    protected $collection_key = 'weeklyWindows';
-    protected $oneTimeWindowsType = OneTimeWindow::class;
-    protected $oneTimeWindowsDataType = 'array';
-    /**
-     * Required. The time zone in IANA format [IANA Time Zone
-     * Database](https://www.iana.org/time-zones) (e.g. America/New_York).
-     *
-     * @var string
-     */
-    public $timeZone;
-    protected $weeklyWindowsType = WeeklyWindow::class;
-    protected $weeklyWindowsDataType = 'array';
-    /**
-     * Optional. One-time windows within which actions are restricted.
-     *
-     * @param OneTimeWindow[] $oneTimeWindows
-     */
-    public function setOneTimeWindows($oneTimeWindows)
+namespace Google\Service\CloudDeploy {
+    class TimeWindows extends \Google\Collection
     {
+        protected $collection_key = 'weeklyWindows';
+        protected $oneTimeWindowsType = OneTimeWindow::class;
+        protected $oneTimeWindowsDataType = 'array';
+        /**
+         * Required. The time zone in IANA format [IANA Time Zone
+         * Database](https://www.iana.org/time-zones) (e.g. America/New_York).
+         *
+         * @var string
+         */
+        public $timeZone;
+        protected $weeklyWindowsType = WeeklyWindow::class;
+        protected $weeklyWindowsDataType = 'array';
+        /**
+         * Optional. One-time windows within which actions are restricted.
+         *
+         * @param OneTimeWindow[] $oneTimeWindows
+         */
+        public function setOneTimeWindows($oneTimeWindows)
+        {
+        }
+        /**
+         * @return OneTimeWindow[]
+         */
+        public function getOneTimeWindows()
+        {
+        }
+        /**
+         * Required. The time zone in IANA format [IANA Time Zone
+         * Database](https://www.iana.org/time-zones) (e.g. America/New_York).
+         *
+         * @param string $timeZone
+         */
+        public function setTimeZone($timeZone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeZone()
+        {
+        }
+        /**
+         * Optional. Recurring weekly windows within which actions are restricted.
+         *
+         * @param WeeklyWindow[] $weeklyWindows
+         */
+        public function setWeeklyWindows($weeklyWindows)
+        {
+        }
+        /**
+         * @return WeeklyWindow[]
+         */
+        public function getWeeklyWindows()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return OneTimeWindow[]
+     * Runtime class alias of \Google\Service\CloudDeploy\TimeWindows registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOneTimeWindows()
-    {
-    }
-    /**
-     * Required. The time zone in IANA format [IANA Time Zone
-     * Database](https://www.iana.org/time-zones) (e.g. America/New_York).
-     *
-     * @param string $timeZone
-     */
-    public function setTimeZone($timeZone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeZone()
-    {
-    }
-    /**
-     * Optional. Recurring weekly windows within which actions are restricted.
-     *
-     * @param WeeklyWindow[] $weeklyWindows
-     */
-    public function setWeeklyWindows($weeklyWindows)
-    {
-    }
-    /**
-     * @return WeeklyWindow[]
-     */
-    public function getWeeklyWindows()
+    class Google_Service_CloudDeploy_TimeWindows extends \Google\Service\CloudDeploy\TimeWindows
     {
     }
 }

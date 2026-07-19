@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class CreativeDealAssociation extends \Google\Model
-{
-    /**
-     * The account the creative belongs to.
-     *
-     * @var string
-     */
-    public $accountId;
-    /**
-     * The ID of the creative associated with the deal.
-     *
-     * @var string
-     */
-    public $creativeId;
-    /**
-     * The externalDealId for the deal associated with the creative.
-     *
-     * @var string
-     */
-    public $dealsId;
-    /**
-     * The account the creative belongs to.
-     *
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\AdExchangeBuyerII {
+    class CreativeDealAssociation extends \Google\Model
     {
+        /**
+         * The account the creative belongs to.
+         *
+         * @var string
+         */
+        public $accountId;
+        /**
+         * The ID of the creative associated with the deal.
+         *
+         * @var string
+         */
+        public $creativeId;
+        /**
+         * The externalDealId for the deal associated with the creative.
+         *
+         * @var string
+         */
+        public $dealsId;
+        /**
+         * The account the creative belongs to.
+         *
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * The ID of the creative associated with the deal.
+         *
+         * @param string $creativeId
+         */
+        public function setCreativeId($creativeId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreativeId()
+        {
+        }
+        /**
+         * The externalDealId for the deal associated with the creative.
+         *
+         * @param string $dealsId
+         */
+        public function setDealsId($dealsId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDealsId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\CreativeDealAssociation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * The ID of the creative associated with the deal.
-     *
-     * @param string $creativeId
-     */
-    public function setCreativeId($creativeId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreativeId()
-    {
-    }
-    /**
-     * The externalDealId for the deal associated with the creative.
-     *
-     * @param string $dealsId
-     */
-    public function setDealsId($dealsId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDealsId()
+    class Google_Service_AdExchangeBuyerII_CreativeDealAssociation extends \Google\Service\AdExchangeBuyerII\CreativeDealAssociation
     {
     }
 }

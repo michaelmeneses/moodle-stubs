@@ -21,132 +21,141 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class GkeWorkload extends \Google\Model
-{
-    /**
-     * The name of the parent cluster.
-     *
-     * @var string
-     */
-    public $clusterName;
-    /**
-     * The location of the parent cluster. This may be a zone or region.
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * The name of the parent namespace.
-     *
-     * @var string
-     */
-    public $namespaceName;
-    /**
-     * Output only. The project this resource lives in. For legacy services
-     * migrated from the Custom type, this may be a distinct project from the one
-     * parenting the service itself.
-     *
-     * @var string
-     */
-    public $projectId;
-    /**
-     * The name of this workload.
-     *
-     * @var string
-     */
-    public $topLevelControllerName;
-    /**
-     * The type of this workload (for example, "Deployment" or "DaemonSet")
-     *
-     * @var string
-     */
-    public $topLevelControllerType;
-    /**
-     * The name of the parent cluster.
-     *
-     * @param string $clusterName
-     */
-    public function setClusterName($clusterName)
+namespace Google\Service\Monitoring {
+    class GkeWorkload extends \Google\Model
     {
+        /**
+         * The name of the parent cluster.
+         *
+         * @var string
+         */
+        public $clusterName;
+        /**
+         * The location of the parent cluster. This may be a zone or region.
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * The name of the parent namespace.
+         *
+         * @var string
+         */
+        public $namespaceName;
+        /**
+         * Output only. The project this resource lives in. For legacy services
+         * migrated from the Custom type, this may be a distinct project from the one
+         * parenting the service itself.
+         *
+         * @var string
+         */
+        public $projectId;
+        /**
+         * The name of this workload.
+         *
+         * @var string
+         */
+        public $topLevelControllerName;
+        /**
+         * The type of this workload (for example, "Deployment" or "DaemonSet")
+         *
+         * @var string
+         */
+        public $topLevelControllerType;
+        /**
+         * The name of the parent cluster.
+         *
+         * @param string $clusterName
+         */
+        public function setClusterName($clusterName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClusterName()
+        {
+        }
+        /**
+         * The location of the parent cluster. This may be a zone or region.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * The name of the parent namespace.
+         *
+         * @param string $namespaceName
+         */
+        public function setNamespaceName($namespaceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNamespaceName()
+        {
+        }
+        /**
+         * Output only. The project this resource lives in. For legacy services
+         * migrated from the Custom type, this may be a distinct project from the one
+         * parenting the service itself.
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * The name of this workload.
+         *
+         * @param string $topLevelControllerName
+         */
+        public function setTopLevelControllerName($topLevelControllerName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTopLevelControllerName()
+        {
+        }
+        /**
+         * The type of this workload (for example, "Deployment" or "DaemonSet")
+         *
+         * @param string $topLevelControllerType
+         */
+        public function setTopLevelControllerType($topLevelControllerType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTopLevelControllerType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Monitoring\GkeWorkload registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClusterName()
-    {
-    }
-    /**
-     * The location of the parent cluster. This may be a zone or region.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * The name of the parent namespace.
-     *
-     * @param string $namespaceName
-     */
-    public function setNamespaceName($namespaceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNamespaceName()
-    {
-    }
-    /**
-     * Output only. The project this resource lives in. For legacy services
-     * migrated from the Custom type, this may be a distinct project from the one
-     * parenting the service itself.
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
-    {
-    }
-    /**
-     * The name of this workload.
-     *
-     * @param string $topLevelControllerName
-     */
-    public function setTopLevelControllerName($topLevelControllerName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTopLevelControllerName()
-    {
-    }
-    /**
-     * The type of this workload (for example, "Deployment" or "DaemonSet")
-     *
-     * @param string $topLevelControllerType
-     */
-    public function setTopLevelControllerType($topLevelControllerType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTopLevelControllerType()
+    class Google_Service_Monitoring_GkeWorkload extends \Google\Service\Monitoring\GkeWorkload
     {
     }
 }

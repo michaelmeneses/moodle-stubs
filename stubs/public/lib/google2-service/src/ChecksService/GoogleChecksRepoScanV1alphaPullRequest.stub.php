@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChecksService;
-
-class GoogleChecksRepoScanV1alphaPullRequest extends \Google\Model
-{
-    /**
-     * Required. For PR analysis, we compare against the most recent scan of the
-     * base branch to highlight new issues.
-     *
-     * @var string
-     */
-    public $baseBranch;
-    /**
-     * Required. This can be supplied by the user or parsed automatically from
-     * predefined CI environment variables.
-     *
-     * @var string
-     */
-    public $prNumber;
-    /**
-     * Required. For PR analysis, we compare against the most recent scan of the
-     * base branch to highlight new issues.
-     *
-     * @param string $baseBranch
-     */
-    public function setBaseBranch($baseBranch)
+namespace Google\Service\ChecksService {
+    class GoogleChecksRepoScanV1alphaPullRequest extends \Google\Model
     {
+        /**
+         * Required. For PR analysis, we compare against the most recent scan of the
+         * base branch to highlight new issues.
+         *
+         * @var string
+         */
+        public $baseBranch;
+        /**
+         * Required. This can be supplied by the user or parsed automatically from
+         * predefined CI environment variables.
+         *
+         * @var string
+         */
+        public $prNumber;
+        /**
+         * Required. For PR analysis, we compare against the most recent scan of the
+         * base branch to highlight new issues.
+         *
+         * @param string $baseBranch
+         */
+        public function setBaseBranch($baseBranch)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBaseBranch()
+        {
+        }
+        /**
+         * Required. This can be supplied by the user or parsed automatically from
+         * predefined CI environment variables.
+         *
+         * @param string $prNumber
+         */
+        public function setPrNumber($prNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChecksService\GoogleChecksRepoScanV1alphaPullRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBaseBranch()
-    {
-    }
-    /**
-     * Required. This can be supplied by the user or parsed automatically from
-     * predefined CI environment variables.
-     *
-     * @param string $prNumber
-     */
-    public function setPrNumber($prNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrNumber()
+    class Google_Service_ChecksService_GoogleChecksRepoScanV1alphaPullRequest extends \Google\Service\ChecksService\GoogleChecksRepoScanV1alphaPullRequest
     {
     }
 }

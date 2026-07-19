@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Forms;
-
-class Location extends \Google\Model
-{
-    /**
-     * The index of an item in the form. This must be in the range [0..*N*), where
-     * *N* is the number of items in the form.
-     *
-     * @var int
-     */
-    public $index;
-    /**
-     * The index of an item in the form. This must be in the range [0..*N*), where
-     * *N* is the number of items in the form.
-     *
-     * @param int $index
-     */
-    public function setIndex($index)
+namespace Google\Service\Forms {
+    class Location extends \Google\Model
     {
+        /**
+         * The index of an item in the form. This must be in the range [0..*N*), where
+         * *N* is the number of items in the form.
+         *
+         * @var int
+         */
+        public $index;
+        /**
+         * The index of an item in the form. This must be in the range [0..*N*), where
+         * *N* is the number of items in the form.
+         *
+         * @param int $index
+         */
+        public function setIndex($index)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getIndex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Forms\Location registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIndex()
+    class Google_Service_Forms_Location extends \Google\Service\Forms\Location
     {
     }
 }

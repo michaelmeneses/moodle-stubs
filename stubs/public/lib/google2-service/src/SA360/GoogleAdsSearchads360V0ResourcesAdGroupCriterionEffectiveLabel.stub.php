@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0ResourcesAdGroupCriterionEffectiveLabel extends \Google\Model
-{
-    /**
-     * Immutable. The ad group criterion to which the effective label is attached.
-     *
-     * @var string
-     */
-    public $adGroupCriterion;
-    /**
-     * Immutable. The effective label assigned to the ad group criterion.
-     *
-     * @var string
-     */
-    public $label;
-    /**
-     * Output only. The ID of the Customer which owns the effective label.
-     *
-     * @var string
-     */
-    public $ownerCustomerId;
-    /**
-     * Immutable. The resource name of the ad group criterion effective label. Ad
-     * group criterion effective label resource names have the form: `customers/{o
-     * wner_customer_id}/adGroupCriterionEffectiveLabels/{ad_group_id}~{criterion_
-     * id}~{label_id}`
-     *
-     * @var string
-     */
-    public $resourceName;
-    /**
-     * Immutable. The ad group criterion to which the effective label is attached.
-     *
-     * @param string $adGroupCriterion
-     */
-    public function setAdGroupCriterion($adGroupCriterion)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0ResourcesAdGroupCriterionEffectiveLabel extends \Google\Model
     {
+        /**
+         * Immutable. The ad group criterion to which the effective label is attached.
+         *
+         * @var string
+         */
+        public $adGroupCriterion;
+        /**
+         * Immutable. The effective label assigned to the ad group criterion.
+         *
+         * @var string
+         */
+        public $label;
+        /**
+         * Output only. The ID of the Customer which owns the effective label.
+         *
+         * @var string
+         */
+        public $ownerCustomerId;
+        /**
+         * Immutable. The resource name of the ad group criterion effective label. Ad
+         * group criterion effective label resource names have the form: `customers/{o
+         * wner_customer_id}/adGroupCriterionEffectiveLabels/{ad_group_id}~{criterion_
+         * id}~{label_id}`
+         *
+         * @var string
+         */
+        public $resourceName;
+        /**
+         * Immutable. The ad group criterion to which the effective label is attached.
+         *
+         * @param string $adGroupCriterion
+         */
+        public function setAdGroupCriterion($adGroupCriterion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdGroupCriterion()
+        {
+        }
+        /**
+         * Immutable. The effective label assigned to the ad group criterion.
+         *
+         * @param string $label
+         */
+        public function setLabel($label)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabel()
+        {
+        }
+        /**
+         * Output only. The ID of the Customer which owns the effective label.
+         *
+         * @param string $ownerCustomerId
+         */
+        public function setOwnerCustomerId($ownerCustomerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOwnerCustomerId()
+        {
+        }
+        /**
+         * Immutable. The resource name of the ad group criterion effective label. Ad
+         * group criterion effective label resource names have the form: `customers/{o
+         * wner_customer_id}/adGroupCriterionEffectiveLabels/{ad_group_id}~{criterion_
+         * id}~{label_id}`
+         *
+         * @param string $resourceName
+         */
+        public function setResourceName($resourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesAdGroupCriterionEffectiveLabel registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdGroupCriterion()
-    {
-    }
-    /**
-     * Immutable. The effective label assigned to the ad group criterion.
-     *
-     * @param string $label
-     */
-    public function setLabel($label)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLabel()
-    {
-    }
-    /**
-     * Output only. The ID of the Customer which owns the effective label.
-     *
-     * @param string $ownerCustomerId
-     */
-    public function setOwnerCustomerId($ownerCustomerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOwnerCustomerId()
-    {
-    }
-    /**
-     * Immutable. The resource name of the ad group criterion effective label. Ad
-     * group criterion effective label resource names have the form: `customers/{o
-     * wner_customer_id}/adGroupCriterionEffectiveLabels/{ad_group_id}~{criterion_
-     * id}~{label_id}`
-     *
-     * @param string $resourceName
-     */
-    public function setResourceName($resourceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceName()
+    class Google_Service_SA360_GoogleAdsSearchads360V0ResourcesAdGroupCriterionEffectiveLabel extends \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesAdGroupCriterionEffectiveLabel
     {
     }
 }

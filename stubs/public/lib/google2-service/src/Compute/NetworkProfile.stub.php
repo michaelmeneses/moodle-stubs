@@ -21,202 +21,211 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class NetworkProfile extends \Google\Model
-{
-    /**
-     * Output only. [Output Only] Creation timestamp inRFC3339 text format.
-     *
-     * @var string
-     */
-    public $creationTimestamp;
-    /**
-     * Output only. [Output Only] An optional description of this resource.
-     *
-     * @var string
-     */
-    public $description;
-    protected $featuresType = NetworkProfileNetworkFeatures::class;
-    protected $featuresDataType = '';
-    /**
-     * Output only. [Output Only] The unique identifier for the resource. This
-     * identifier is defined by the server.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Output only. [Output Only] Type of the resource.
-     * Alwayscompute#networkProfile for network profiles.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $locationType = NetworkProfileLocation::class;
-    protected $locationDataType = '';
-    /**
-     * Output only. [Output Only] Name of the resource.
-     *
-     * @var string
-     */
-    public $name;
-    protected $profileTypeType = NetworkProfileProfileType::class;
-    protected $profileTypeDataType = '';
-    /**
-     * Output only. [Output Only] Server-defined URL for the resource.
-     *
-     * @var string
-     */
-    public $selfLink;
-    /**
-     * Output only. [Output Only] Server-defined URL for this resource with the
-     * resource id.
-     *
-     * @var string
-     */
-    public $selfLinkWithId;
-    /**
-     * Output only. [Output Only] Creation timestamp inRFC3339 text format.
-     *
-     * @param string $creationTimestamp
-     */
-    public function setCreationTimestamp($creationTimestamp)
+namespace Google\Service\Compute {
+    class NetworkProfile extends \Google\Model
     {
+        /**
+         * Output only. [Output Only] Creation timestamp inRFC3339 text format.
+         *
+         * @var string
+         */
+        public $creationTimestamp;
+        /**
+         * Output only. [Output Only] An optional description of this resource.
+         *
+         * @var string
+         */
+        public $description;
+        protected $featuresType = NetworkProfileNetworkFeatures::class;
+        protected $featuresDataType = '';
+        /**
+         * Output only. [Output Only] The unique identifier for the resource. This
+         * identifier is defined by the server.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Output only. [Output Only] Type of the resource.
+         * Alwayscompute#networkProfile for network profiles.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $locationType = NetworkProfileLocation::class;
+        protected $locationDataType = '';
+        /**
+         * Output only. [Output Only] Name of the resource.
+         *
+         * @var string
+         */
+        public $name;
+        protected $profileTypeType = NetworkProfileProfileType::class;
+        protected $profileTypeDataType = '';
+        /**
+         * Output only. [Output Only] Server-defined URL for the resource.
+         *
+         * @var string
+         */
+        public $selfLink;
+        /**
+         * Output only. [Output Only] Server-defined URL for this resource with the
+         * resource id.
+         *
+         * @var string
+         */
+        public $selfLinkWithId;
+        /**
+         * Output only. [Output Only] Creation timestamp inRFC3339 text format.
+         *
+         * @param string $creationTimestamp
+         */
+        public function setCreationTimestamp($creationTimestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreationTimestamp()
+        {
+        }
+        /**
+         * Output only. [Output Only] An optional description of this resource.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Output only. [Output Only] Features supported by the network.
+         *
+         * @param NetworkProfileNetworkFeatures $features
+         */
+        public function setFeatures(NetworkProfileNetworkFeatures $features)
+        {
+        }
+        /**
+         * @return NetworkProfileNetworkFeatures
+         */
+        public function getFeatures()
+        {
+        }
+        /**
+         * Output only. [Output Only] The unique identifier for the resource. This
+         * identifier is defined by the server.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Output only. [Output Only] Type of the resource.
+         * Alwayscompute#networkProfile for network profiles.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Output only. [Output Only] Location to which the network is restricted.
+         *
+         * @param NetworkProfileLocation $location
+         */
+        public function setLocation(NetworkProfileLocation $location)
+        {
+        }
+        /**
+         * @return NetworkProfileLocation
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * Output only. [Output Only] Name of the resource.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. [Output Only] Type of the network profile.
+         *
+         * @param NetworkProfileProfileType $profileType
+         */
+        public function setProfileType(NetworkProfileProfileType $profileType)
+        {
+        }
+        /**
+         * @return NetworkProfileProfileType
+         */
+        public function getProfileType()
+        {
+        }
+        /**
+         * Output only. [Output Only] Server-defined URL for the resource.
+         *
+         * @param string $selfLink
+         */
+        public function setSelfLink($selfLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLink()
+        {
+        }
+        /**
+         * Output only. [Output Only] Server-defined URL for this resource with the
+         * resource id.
+         *
+         * @param string $selfLinkWithId
+         */
+        public function setSelfLinkWithId($selfLinkWithId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLinkWithId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\NetworkProfile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreationTimestamp()
-    {
-    }
-    /**
-     * Output only. [Output Only] An optional description of this resource.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Output only. [Output Only] Features supported by the network.
-     *
-     * @param NetworkProfileNetworkFeatures $features
-     */
-    public function setFeatures(NetworkProfileNetworkFeatures $features)
-    {
-    }
-    /**
-     * @return NetworkProfileNetworkFeatures
-     */
-    public function getFeatures()
-    {
-    }
-    /**
-     * Output only. [Output Only] The unique identifier for the resource. This
-     * identifier is defined by the server.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Output only. [Output Only] Type of the resource.
-     * Alwayscompute#networkProfile for network profiles.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Output only. [Output Only] Location to which the network is restricted.
-     *
-     * @param NetworkProfileLocation $location
-     */
-    public function setLocation(NetworkProfileLocation $location)
-    {
-    }
-    /**
-     * @return NetworkProfileLocation
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * Output only. [Output Only] Name of the resource.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. [Output Only] Type of the network profile.
-     *
-     * @param NetworkProfileProfileType $profileType
-     */
-    public function setProfileType(NetworkProfileProfileType $profileType)
-    {
-    }
-    /**
-     * @return NetworkProfileProfileType
-     */
-    public function getProfileType()
-    {
-    }
-    /**
-     * Output only. [Output Only] Server-defined URL for the resource.
-     *
-     * @param string $selfLink
-     */
-    public function setSelfLink($selfLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLink()
-    {
-    }
-    /**
-     * Output only. [Output Only] Server-defined URL for this resource with the
-     * resource id.
-     *
-     * @param string $selfLinkWithId
-     */
-    public function setSelfLinkWithId($selfLinkWithId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLinkWithId()
+    class Google_Service_Compute_NetworkProfile extends \Google\Service\Compute\NetworkProfile
     {
     }
 }

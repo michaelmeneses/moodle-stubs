@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class Entity extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $id;
-    /**
-     * @var string
-     */
-    public $typeId;
-    /**
-     * @var string
-     */
-    public $url;
-    /**
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\YouTube {
+    class Entity extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $id;
+        /**
+         * @var string
+         */
+        public $typeId;
+        /**
+         * @var string
+         */
+        public $url;
+        /**
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param string $typeId
+         */
+        public function setTypeId($typeId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTypeId()
+        {
+        }
+        /**
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\Entity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * @param string $typeId
-     */
-    public function setTypeId($typeId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTypeId()
-    {
-    }
-    /**
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_YouTube_Entity extends \Google\Service\YouTube\Entity
     {
     }
 }

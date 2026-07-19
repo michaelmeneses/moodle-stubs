@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BinaryAuthorization;
-
-class ListPlatformPoliciesResponse extends \Google\Collection
-{
-    protected $collection_key = 'platformPolicies';
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * ListPlatformPoliciesRequest.page_token field in the subsequent call to the
-     * `ListPlatformPolicies` method to retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $platformPoliciesType = PlatformPolicy::class;
-    protected $platformPoliciesDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * ListPlatformPoliciesRequest.page_token field in the subsequent call to the
-     * `ListPlatformPolicies` method to retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\BinaryAuthorization {
+    class ListPlatformPoliciesResponse extends \Google\Collection
     {
+        protected $collection_key = 'platformPolicies';
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * ListPlatformPoliciesRequest.page_token field in the subsequent call to the
+         * `ListPlatformPolicies` method to retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $platformPoliciesType = PlatformPolicy::class;
+        protected $platformPoliciesDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * ListPlatformPoliciesRequest.page_token field in the subsequent call to the
+         * `ListPlatformPolicies` method to retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of platform policies.
+         *
+         * @param PlatformPolicy[] $platformPolicies
+         */
+        public function setPlatformPolicies($platformPolicies)
+        {
+        }
+        /**
+         * @return PlatformPolicy[]
+         */
+        public function getPlatformPolicies()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BinaryAuthorization\ListPlatformPoliciesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of platform policies.
-     *
-     * @param PlatformPolicy[] $platformPolicies
-     */
-    public function setPlatformPolicies($platformPolicies)
-    {
-    }
-    /**
-     * @return PlatformPolicy[]
-     */
-    public function getPlatformPolicies()
+    class Google_Service_BinaryAuthorization_ListPlatformPoliciesResponse extends \Google\Service\BinaryAuthorization\ListPlatformPoliciesResponse
     {
     }
 }

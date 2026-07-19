@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0ResourcesConversionActionValueSettings extends \Google\Model
-{
-    /**
-     * Controls whether the default value and default currency code are used in
-     * place of the value and currency code specified in conversion events for
-     * this conversion action.
-     *
-     * @var bool
-     */
-    public $alwaysUseDefaultValue;
-    /**
-     * The currency code to use when conversion events for this conversion action
-     * are sent with an invalid or missing currency code, or when this conversion
-     * action is configured to always use the default value.
-     *
-     * @var string
-     */
-    public $defaultCurrencyCode;
-    /**
-     * The value to use when conversion events for this conversion action are sent
-     * with an invalid, disallowed or missing value, or when this conversion
-     * action is configured to always use the default value.
-     *
-     * @var 
-     */
-    public $defaultValue;
-    /**
-     * Controls whether the default value and default currency code are used in
-     * place of the value and currency code specified in conversion events for
-     * this conversion action.
-     *
-     * @param bool $alwaysUseDefaultValue
-     */
-    public function setAlwaysUseDefaultValue($alwaysUseDefaultValue)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0ResourcesConversionActionValueSettings extends \Google\Model
     {
+        /**
+         * Controls whether the default value and default currency code are used in
+         * place of the value and currency code specified in conversion events for
+         * this conversion action.
+         *
+         * @var bool
+         */
+        public $alwaysUseDefaultValue;
+        /**
+         * The currency code to use when conversion events for this conversion action
+         * are sent with an invalid or missing currency code, or when this conversion
+         * action is configured to always use the default value.
+         *
+         * @var string
+         */
+        public $defaultCurrencyCode;
+        /**
+         * The value to use when conversion events for this conversion action are sent
+         * with an invalid, disallowed or missing value, or when this conversion
+         * action is configured to always use the default value.
+         *
+         * @var 
+         */
+        public $defaultValue;
+        /**
+         * Controls whether the default value and default currency code are used in
+         * place of the value and currency code specified in conversion events for
+         * this conversion action.
+         *
+         * @param bool $alwaysUseDefaultValue
+         */
+        public function setAlwaysUseDefaultValue($alwaysUseDefaultValue)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAlwaysUseDefaultValue()
+        {
+        }
+        /**
+         * The currency code to use when conversion events for this conversion action
+         * are sent with an invalid or missing currency code, or when this conversion
+         * action is configured to always use the default value.
+         *
+         * @param string $defaultCurrencyCode
+         */
+        public function setDefaultCurrencyCode($defaultCurrencyCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefaultCurrencyCode()
+        {
+        }
+        public function setDefaultValue($defaultValue)
+        {
+        }
+        public function getDefaultValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesConversionActionValueSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlwaysUseDefaultValue()
-    {
-    }
-    /**
-     * The currency code to use when conversion events for this conversion action
-     * are sent with an invalid or missing currency code, or when this conversion
-     * action is configured to always use the default value.
-     *
-     * @param string $defaultCurrencyCode
-     */
-    public function setDefaultCurrencyCode($defaultCurrencyCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDefaultCurrencyCode()
-    {
-    }
-    public function setDefaultValue($defaultValue)
-    {
-    }
-    public function getDefaultValue()
+    class Google_Service_SA360_GoogleAdsSearchads360V0ResourcesConversionActionValueSettings extends \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesConversionActionValueSettings
     {
     }
 }

@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class DocsList extends \Google\Collection
-{
-    protected $collection_key = 'suggestedDeletionIds';
-    protected $listPropertiesType = ListProperties::class;
-    protected $listPropertiesDataType = '';
-    /**
-     * The suggested deletion IDs. If empty, then there are no suggested deletions
-     * of this list.
-     *
-     * @var string[]
-     */
-    public $suggestedDeletionIds;
-    /**
-     * The suggested insertion ID. If empty, then this is not a suggested
-     * insertion.
-     *
-     * @var string
-     */
-    public $suggestedInsertionId;
-    protected $suggestedListPropertiesChangesType = SuggestedListProperties::class;
-    protected $suggestedListPropertiesChangesDataType = 'map';
-    /**
-     * The properties of the list.
-     *
-     * @param ListProperties $listProperties
-     */
-    public function setListProperties(ListProperties $listProperties)
+namespace Google\Service\Docs {
+    class DocsList extends \Google\Collection
     {
+        protected $collection_key = 'suggestedDeletionIds';
+        protected $listPropertiesType = ListProperties::class;
+        protected $listPropertiesDataType = '';
+        /**
+         * The suggested deletion IDs. If empty, then there are no suggested deletions
+         * of this list.
+         *
+         * @var string[]
+         */
+        public $suggestedDeletionIds;
+        /**
+         * The suggested insertion ID. If empty, then this is not a suggested
+         * insertion.
+         *
+         * @var string
+         */
+        public $suggestedInsertionId;
+        protected $suggestedListPropertiesChangesType = SuggestedListProperties::class;
+        protected $suggestedListPropertiesChangesDataType = 'map';
+        /**
+         * The properties of the list.
+         *
+         * @param ListProperties $listProperties
+         */
+        public function setListProperties(ListProperties $listProperties)
+        {
+        }
+        /**
+         * @return ListProperties
+         */
+        public function getListProperties()
+        {
+        }
+        /**
+         * The suggested deletion IDs. If empty, then there are no suggested deletions
+         * of this list.
+         *
+         * @param string[] $suggestedDeletionIds
+         */
+        public function setSuggestedDeletionIds($suggestedDeletionIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSuggestedDeletionIds()
+        {
+        }
+        /**
+         * The suggested insertion ID. If empty, then this is not a suggested
+         * insertion.
+         *
+         * @param string $suggestedInsertionId
+         */
+        public function setSuggestedInsertionId($suggestedInsertionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSuggestedInsertionId()
+        {
+        }
+        /**
+         * The suggested changes to the list properties, keyed by suggestion ID.
+         *
+         * @param SuggestedListProperties[] $suggestedListPropertiesChanges
+         */
+        public function setSuggestedListPropertiesChanges($suggestedListPropertiesChanges)
+        {
+        }
+        /**
+         * @return SuggestedListProperties[]
+         */
+        public function getSuggestedListPropertiesChanges()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ListProperties
+     * Runtime class alias of \Google\Service\Docs\DocsList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getListProperties()
-    {
-    }
-    /**
-     * The suggested deletion IDs. If empty, then there are no suggested deletions
-     * of this list.
-     *
-     * @param string[] $suggestedDeletionIds
-     */
-    public function setSuggestedDeletionIds($suggestedDeletionIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSuggestedDeletionIds()
-    {
-    }
-    /**
-     * The suggested insertion ID. If empty, then this is not a suggested
-     * insertion.
-     *
-     * @param string $suggestedInsertionId
-     */
-    public function setSuggestedInsertionId($suggestedInsertionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSuggestedInsertionId()
-    {
-    }
-    /**
-     * The suggested changes to the list properties, keyed by suggestion ID.
-     *
-     * @param SuggestedListProperties[] $suggestedListPropertiesChanges
-     */
-    public function setSuggestedListPropertiesChanges($suggestedListPropertiesChanges)
-    {
-    }
-    /**
-     * @return SuggestedListProperties[]
-     */
-    public function getSuggestedListPropertiesChanges()
+    class Google_Service_Docs_DocsList extends \Google\Service\Docs\DocsList
     {
     }
 }

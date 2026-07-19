@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class ParentalStatusAssignedTargetingOptionDetails extends \Google\Model
-{
-    /**
-     * Default value when parental status is not specified in this version. This
-     * enum is a place holder for default value and does not represent a real
-     * parental status option.
-     */
-    public const PARENTAL_STATUS_PARENTAL_STATUS_UNSPECIFIED = 'PARENTAL_STATUS_UNSPECIFIED';
-    /**
-     * The audience is a parent.
-     */
-    public const PARENTAL_STATUS_PARENTAL_STATUS_PARENT = 'PARENTAL_STATUS_PARENT';
-    /**
-     * The audience is not a parent.
-     */
-    public const PARENTAL_STATUS_PARENTAL_STATUS_NOT_A_PARENT = 'PARENTAL_STATUS_NOT_A_PARENT';
-    /**
-     * The parental status of the audience is unknown.
-     */
-    public const PARENTAL_STATUS_PARENTAL_STATUS_UNKNOWN = 'PARENTAL_STATUS_UNKNOWN';
-    /**
-     * Required. The parental status of the audience.
-     *
-     * @var string
-     */
-    public $parentalStatus;
-    /**
-     * Required. The parental status of the audience.
-     *
-     * Accepted values: PARENTAL_STATUS_UNSPECIFIED, PARENTAL_STATUS_PARENT,
-     * PARENTAL_STATUS_NOT_A_PARENT, PARENTAL_STATUS_UNKNOWN
-     *
-     * @param self::PARENTAL_STATUS_* $parentalStatus
-     */
-    public function setParentalStatus($parentalStatus)
+namespace Google\Service\DisplayVideo {
+    class ParentalStatusAssignedTargetingOptionDetails extends \Google\Model
     {
+        /**
+         * Default value when parental status is not specified in this version. This
+         * enum is a place holder for default value and does not represent a real
+         * parental status option.
+         */
+        public const PARENTAL_STATUS_PARENTAL_STATUS_UNSPECIFIED = 'PARENTAL_STATUS_UNSPECIFIED';
+        /**
+         * The audience is a parent.
+         */
+        public const PARENTAL_STATUS_PARENTAL_STATUS_PARENT = 'PARENTAL_STATUS_PARENT';
+        /**
+         * The audience is not a parent.
+         */
+        public const PARENTAL_STATUS_PARENTAL_STATUS_NOT_A_PARENT = 'PARENTAL_STATUS_NOT_A_PARENT';
+        /**
+         * The parental status of the audience is unknown.
+         */
+        public const PARENTAL_STATUS_PARENTAL_STATUS_UNKNOWN = 'PARENTAL_STATUS_UNKNOWN';
+        /**
+         * Required. The parental status of the audience.
+         *
+         * @var string
+         */
+        public $parentalStatus;
+        /**
+         * Required. The parental status of the audience.
+         *
+         * Accepted values: PARENTAL_STATUS_UNSPECIFIED, PARENTAL_STATUS_PARENT,
+         * PARENTAL_STATUS_NOT_A_PARENT, PARENTAL_STATUS_UNKNOWN
+         *
+         * @param self::PARENTAL_STATUS_* $parentalStatus
+         */
+        public function setParentalStatus($parentalStatus)
+        {
+        }
+        /**
+         * @return self::PARENTAL_STATUS_*
+         */
+        public function getParentalStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::PARENTAL_STATUS_*
+     * Runtime class alias of \Google\Service\DisplayVideo\ParentalStatusAssignedTargetingOptionDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParentalStatus()
+    class Google_Service_DisplayVideo_ParentalStatusAssignedTargetingOptionDetails extends \Google\Service\DisplayVideo\ParentalStatusAssignedTargetingOptionDetails
     {
     }
 }

@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1IntentMessageBrowseCarouselCardBrowseCarouselCardItemOpenUrlAction extends \Google\Model
-{
-    /**
-     * Unspecified
-     */
-    public const URL_TYPE_HINT_URL_TYPE_HINT_UNSPECIFIED = 'URL_TYPE_HINT_UNSPECIFIED';
-    /**
-     * Url would be an amp action
-     */
-    public const URL_TYPE_HINT_AMP_ACTION = 'AMP_ACTION';
-    /**
-     * URL that points directly to AMP content, or to a canonical URL which refers
-     * to AMP content via .
-     */
-    public const URL_TYPE_HINT_AMP_CONTENT = 'AMP_CONTENT';
-    /**
-     * Required. URL
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * Optional. Specifies the type of viewer that is used when opening the URL.
-     * Defaults to opening via web browser.
-     *
-     * @var string
-     */
-    public $urlTypeHint;
-    /**
-     * Required. URL
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1IntentMessageBrowseCarouselCardBrowseCarouselCardItemOpenUrlAction extends \Google\Model
     {
+        /**
+         * Unspecified
+         */
+        public const URL_TYPE_HINT_URL_TYPE_HINT_UNSPECIFIED = 'URL_TYPE_HINT_UNSPECIFIED';
+        /**
+         * Url would be an amp action
+         */
+        public const URL_TYPE_HINT_AMP_ACTION = 'AMP_ACTION';
+        /**
+         * URL that points directly to AMP content, or to a canonical URL which refers
+         * to AMP content via .
+         */
+        public const URL_TYPE_HINT_AMP_CONTENT = 'AMP_CONTENT';
+        /**
+         * Required. URL
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * Optional. Specifies the type of viewer that is used when opening the URL.
+         * Defaults to opening via web browser.
+         *
+         * @var string
+         */
+        public $urlTypeHint;
+        /**
+         * Required. URL
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
+        /**
+         * Optional. Specifies the type of viewer that is used when opening the URL.
+         * Defaults to opening via web browser.
+         *
+         * Accepted values: URL_TYPE_HINT_UNSPECIFIED, AMP_ACTION, AMP_CONTENT
+         *
+         * @param self::URL_TYPE_HINT_* $urlTypeHint
+         */
+        public function setUrlTypeHint($urlTypeHint)
+        {
+        }
+        /**
+         * @return self::URL_TYPE_HINT_*
+         */
+        public function getUrlTypeHint()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1IntentMessageBrowseCarouselCardBrowseCarouselCardItemOpenUrlAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUrl()
-    {
-    }
-    /**
-     * Optional. Specifies the type of viewer that is used when opening the URL.
-     * Defaults to opening via web browser.
-     *
-     * Accepted values: URL_TYPE_HINT_UNSPECIFIED, AMP_ACTION, AMP_CONTENT
-     *
-     * @param self::URL_TYPE_HINT_* $urlTypeHint
-     */
-    public function setUrlTypeHint($urlTypeHint)
-    {
-    }
-    /**
-     * @return self::URL_TYPE_HINT_*
-     */
-    public function getUrlTypeHint()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1IntentMessageBrowseCarouselCardBrowseCarouselCardItemOpenUrlAction extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1IntentMessageBrowseCarouselCardBrowseCarouselCardItemOpenUrlAction
     {
     }
 }

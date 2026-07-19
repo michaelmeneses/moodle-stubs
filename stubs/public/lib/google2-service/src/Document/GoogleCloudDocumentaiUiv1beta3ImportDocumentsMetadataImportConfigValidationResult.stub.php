@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiUiv1beta3ImportDocumentsMetadataImportConfigValidationResult extends \Google\Model
-{
-    /**
-     * The source Cloud Storage URI specified in the import config.
-     *
-     * @var string
-     */
-    public $inputGcsSource;
-    protected $statusType = GoogleRpcStatus::class;
-    protected $statusDataType = '';
-    /**
-     * The source Cloud Storage URI specified in the import config.
-     *
-     * @param string $inputGcsSource
-     */
-    public function setInputGcsSource($inputGcsSource)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiUiv1beta3ImportDocumentsMetadataImportConfigValidationResult extends \Google\Model
     {
+        /**
+         * The source Cloud Storage URI specified in the import config.
+         *
+         * @var string
+         */
+        public $inputGcsSource;
+        protected $statusType = GoogleRpcStatus::class;
+        protected $statusDataType = '';
+        /**
+         * The source Cloud Storage URI specified in the import config.
+         *
+         * @param string $inputGcsSource
+         */
+        public function setInputGcsSource($inputGcsSource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInputGcsSource()
+        {
+        }
+        /**
+         * The validation status of import config.
+         *
+         * @param GoogleRpcStatus $status
+         */
+        public function setStatus(GoogleRpcStatus $status)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3ImportDocumentsMetadataImportConfigValidationResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInputGcsSource()
-    {
-    }
-    /**
-     * The validation status of import config.
-     *
-     * @param GoogleRpcStatus $status
-     */
-    public function setStatus(GoogleRpcStatus $status)
-    {
-    }
-    /**
-     * @return GoogleRpcStatus
-     */
-    public function getStatus()
+    class Google_Service_Document_GoogleCloudDocumentaiUiv1beta3ImportDocumentsMetadataImportConfigValidationResult extends \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3ImportDocumentsMetadataImportConfigValidationResult
     {
     }
 }

@@ -21,79 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Webmasters;
-
-class SearchAnalyticsQueryRequest extends \Google\Collection
-{
-    protected $collection_key = 'dimensions';
-    public $aggregationType;
-    public $dataState;
-    protected $dimensionFilterGroupsType = ApiDimensionFilterGroup::class;
-    protected $dimensionFilterGroupsDataType = 'array';
-    public $dimensions;
-    public $endDate;
-    public $rowLimit;
-    public $searchType;
-    public $startDate;
-    public $startRow;
-    public function setAggregationType($aggregationType)
+namespace Google\Service\Webmasters {
+    class SearchAnalyticsQueryRequest extends \Google\Collection
     {
+        protected $collection_key = 'dimensions';
+        public $aggregationType;
+        public $dataState;
+        protected $dimensionFilterGroupsType = ApiDimensionFilterGroup::class;
+        protected $dimensionFilterGroupsDataType = 'array';
+        public $dimensions;
+        public $endDate;
+        public $rowLimit;
+        public $searchType;
+        public $startDate;
+        public $startRow;
+        public function setAggregationType($aggregationType)
+        {
+        }
+        public function getAggregationType()
+        {
+        }
+        public function setDataState($dataState)
+        {
+        }
+        public function getDataState()
+        {
+        }
+        /**
+         * @param ApiDimensionFilterGroup[]
+         */
+        public function setDimensionFilterGroups($dimensionFilterGroups)
+        {
+        }
+        /**
+         * @return ApiDimensionFilterGroup[]
+         */
+        public function getDimensionFilterGroups()
+        {
+        }
+        public function setDimensions($dimensions)
+        {
+        }
+        public function getDimensions()
+        {
+        }
+        public function setEndDate($endDate)
+        {
+        }
+        public function getEndDate()
+        {
+        }
+        public function setRowLimit($rowLimit)
+        {
+        }
+        public function getRowLimit()
+        {
+        }
+        public function setSearchType($searchType)
+        {
+        }
+        public function getSearchType()
+        {
+        }
+        public function setStartDate($startDate)
+        {
+        }
+        public function getStartDate()
+        {
+        }
+        public function setStartRow($startRow)
+        {
+        }
+        public function getStartRow()
+        {
+        }
     }
-    public function getAggregationType()
-    {
-    }
-    public function setDataState($dataState)
-    {
-    }
-    public function getDataState()
-    {
-    }
+}
+namespace {
     /**
-     * @param ApiDimensionFilterGroup[]
+     * Runtime class alias of \Google\Service\Webmasters\SearchAnalyticsQueryRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setDimensionFilterGroups($dimensionFilterGroups)
-    {
-    }
-    /**
-     * @return ApiDimensionFilterGroup[]
-     */
-    public function getDimensionFilterGroups()
-    {
-    }
-    public function setDimensions($dimensions)
-    {
-    }
-    public function getDimensions()
-    {
-    }
-    public function setEndDate($endDate)
-    {
-    }
-    public function getEndDate()
-    {
-    }
-    public function setRowLimit($rowLimit)
-    {
-    }
-    public function getRowLimit()
-    {
-    }
-    public function setSearchType($searchType)
-    {
-    }
-    public function getSearchType()
-    {
-    }
-    public function setStartDate($startDate)
-    {
-    }
-    public function getStartDate()
-    {
-    }
-    public function setStartRow($startRow)
-    {
-    }
-    public function getStartRow()
+    class Google_Service_Webmasters_SearchAnalyticsQueryRequest extends \Google\Service\Webmasters\SearchAnalyticsQueryRequest
     {
     }
 }

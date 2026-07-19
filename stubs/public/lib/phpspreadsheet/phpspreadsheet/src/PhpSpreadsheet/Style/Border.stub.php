@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Style;
 
+use PhpOffice\PhpSpreadsheet\Exception as PhpSpreadsheetException;
 class Border extends Supervisor
 {
     // Border style

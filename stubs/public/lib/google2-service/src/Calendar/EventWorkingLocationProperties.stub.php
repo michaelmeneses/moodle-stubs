@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Calendar;
-
-class EventWorkingLocationProperties extends \Google\Model
-{
-    protected $customLocationType = EventWorkingLocationPropertiesCustomLocation::class;
-    protected $customLocationDataType = '';
-    /**
-     * If present, specifies that the user is working at home.
-     *
-     * @var array
-     */
-    public $homeOffice;
-    protected $officeLocationType = EventWorkingLocationPropertiesOfficeLocation::class;
-    protected $officeLocationDataType = '';
-    /**
-     * Type of the working location. Possible values are: - "homeOffice" - The
-     * user is working at home.  - "officeLocation" - The user is working from an
-     * office.  - "customLocation" - The user is working from a custom location.
-     * Any details are specified in a sub-field of the specified name, but this
-     * field may be missing if empty. Any other fields are ignored. Required when
-     * adding working location properties.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * If present, specifies that the user is working from a custom location.
-     *
-     * @param EventWorkingLocationPropertiesCustomLocation $customLocation
-     */
-    public function setCustomLocation(EventWorkingLocationPropertiesCustomLocation $customLocation)
+namespace Google\Service\Calendar {
+    class EventWorkingLocationProperties extends \Google\Model
     {
+        protected $customLocationType = EventWorkingLocationPropertiesCustomLocation::class;
+        protected $customLocationDataType = '';
+        /**
+         * If present, specifies that the user is working at home.
+         *
+         * @var array
+         */
+        public $homeOffice;
+        protected $officeLocationType = EventWorkingLocationPropertiesOfficeLocation::class;
+        protected $officeLocationDataType = '';
+        /**
+         * Type of the working location. Possible values are: - "homeOffice" - The
+         * user is working at home.  - "officeLocation" - The user is working from an
+         * office.  - "customLocation" - The user is working from a custom location.
+         * Any details are specified in a sub-field of the specified name, but this
+         * field may be missing if empty. Any other fields are ignored. Required when
+         * adding working location properties.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * If present, specifies that the user is working from a custom location.
+         *
+         * @param EventWorkingLocationPropertiesCustomLocation $customLocation
+         */
+        public function setCustomLocation(EventWorkingLocationPropertiesCustomLocation $customLocation)
+        {
+        }
+        /**
+         * @return EventWorkingLocationPropertiesCustomLocation
+         */
+        public function getCustomLocation()
+        {
+        }
+        /**
+         * If present, specifies that the user is working at home.
+         *
+         * @param array $homeOffice
+         */
+        public function setHomeOffice($homeOffice)
+        {
+        }
+        /**
+         * @return array
+         */
+        public function getHomeOffice()
+        {
+        }
+        /**
+         * If present, specifies that the user is working from an office.
+         *
+         * @param EventWorkingLocationPropertiesOfficeLocation $officeLocation
+         */
+        public function setOfficeLocation(EventWorkingLocationPropertiesOfficeLocation $officeLocation)
+        {
+        }
+        /**
+         * @return EventWorkingLocationPropertiesOfficeLocation
+         */
+        public function getOfficeLocation()
+        {
+        }
+        /**
+         * Type of the working location. Possible values are: - "homeOffice" - The
+         * user is working at home.  - "officeLocation" - The user is working from an
+         * office.  - "customLocation" - The user is working from a custom location.
+         * Any details are specified in a sub-field of the specified name, but this
+         * field may be missing if empty. Any other fields are ignored. Required when
+         * adding working location properties.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EventWorkingLocationPropertiesCustomLocation
+     * Runtime class alias of \Google\Service\Calendar\EventWorkingLocationProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomLocation()
-    {
-    }
-    /**
-     * If present, specifies that the user is working at home.
-     *
-     * @param array $homeOffice
-     */
-    public function setHomeOffice($homeOffice)
-    {
-    }
-    /**
-     * @return array
-     */
-    public function getHomeOffice()
-    {
-    }
-    /**
-     * If present, specifies that the user is working from an office.
-     *
-     * @param EventWorkingLocationPropertiesOfficeLocation $officeLocation
-     */
-    public function setOfficeLocation(EventWorkingLocationPropertiesOfficeLocation $officeLocation)
-    {
-    }
-    /**
-     * @return EventWorkingLocationPropertiesOfficeLocation
-     */
-    public function getOfficeLocation()
-    {
-    }
-    /**
-     * Type of the working location. Possible values are: - "homeOffice" - The
-     * user is working at home.  - "officeLocation" - The user is working from an
-     * office.  - "customLocation" - The user is working from a custom location.
-     * Any details are specified in a sub-field of the specified name, but this
-     * field may be missing if empty. Any other fields are ignored. Required when
-     * adding working location properties.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Calendar_EventWorkingLocationProperties extends \Google\Service\Calendar\EventWorkingLocationProperties
     {
     }
 }

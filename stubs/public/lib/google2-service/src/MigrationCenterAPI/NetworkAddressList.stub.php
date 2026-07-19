@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class NetworkAddressList extends \Google\Collection
-{
-    protected $collection_key = 'entries';
-    protected $entriesType = NetworkAddress::class;
-    protected $entriesDataType = 'array';
-    /**
-     * Network address entries.
-     *
-     * @param NetworkAddress[] $entries
-     */
-    public function setEntries($entries)
+namespace Google\Service\MigrationCenterAPI {
+    class NetworkAddressList extends \Google\Collection
     {
+        protected $collection_key = 'entries';
+        protected $entriesType = NetworkAddress::class;
+        protected $entriesDataType = 'array';
+        /**
+         * Network address entries.
+         *
+         * @param NetworkAddress[] $entries
+         */
+        public function setEntries($entries)
+        {
+        }
+        /**
+         * @return NetworkAddress[]
+         */
+        public function getEntries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return NetworkAddress[]
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\NetworkAddressList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntries()
+    class Google_Service_MigrationCenterAPI_NetworkAddressList extends \Google\Service\MigrationCenterAPI\NetworkAddressList
     {
     }
 }

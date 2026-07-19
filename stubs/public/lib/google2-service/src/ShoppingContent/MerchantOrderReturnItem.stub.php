@@ -21,175 +21,184 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class MerchantOrderReturnItem extends \Google\Collection
-{
-    protected $collection_key = 'returnShipmentIds';
-    protected $customerReturnReasonType = CustomerReturnReason::class;
-    protected $customerReturnReasonDataType = '';
-    /**
-     * @var string
-     */
-    public $itemId;
-    protected $merchantRejectionReasonType = MerchantRejectionReason::class;
-    protected $merchantRejectionReasonDataType = '';
-    protected $merchantReturnReasonType = RefundReason::class;
-    protected $merchantReturnReasonDataType = '';
-    protected $productType = OrderLineItemProduct::class;
-    protected $productDataType = '';
-    protected $refundableAmountType = MonetaryAmount::class;
-    protected $refundableAmountDataType = '';
-    /**
-     * @var string
-     */
-    public $returnItemId;
-    /**
-     * @var string[]
-     */
-    public $returnShipmentIds;
-    /**
-     * @var string
-     */
-    public $shipmentGroupId;
-    /**
-     * @var string
-     */
-    public $shipmentUnitId;
-    /**
-     * @var string
-     */
-    public $state;
-    /**
-     * @param CustomerReturnReason
-     */
-    public function setCustomerReturnReason(CustomerReturnReason $customerReturnReason)
+namespace Google\Service\ShoppingContent {
+    class MerchantOrderReturnItem extends \Google\Collection
     {
+        protected $collection_key = 'returnShipmentIds';
+        protected $customerReturnReasonType = CustomerReturnReason::class;
+        protected $customerReturnReasonDataType = '';
+        /**
+         * @var string
+         */
+        public $itemId;
+        protected $merchantRejectionReasonType = MerchantRejectionReason::class;
+        protected $merchantRejectionReasonDataType = '';
+        protected $merchantReturnReasonType = RefundReason::class;
+        protected $merchantReturnReasonDataType = '';
+        protected $productType = OrderLineItemProduct::class;
+        protected $productDataType = '';
+        protected $refundableAmountType = MonetaryAmount::class;
+        protected $refundableAmountDataType = '';
+        /**
+         * @var string
+         */
+        public $returnItemId;
+        /**
+         * @var string[]
+         */
+        public $returnShipmentIds;
+        /**
+         * @var string
+         */
+        public $shipmentGroupId;
+        /**
+         * @var string
+         */
+        public $shipmentUnitId;
+        /**
+         * @var string
+         */
+        public $state;
+        /**
+         * @param CustomerReturnReason
+         */
+        public function setCustomerReturnReason(CustomerReturnReason $customerReturnReason)
+        {
+        }
+        /**
+         * @return CustomerReturnReason
+         */
+        public function getCustomerReturnReason()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setItemId($itemId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getItemId()
+        {
+        }
+        /**
+         * @param MerchantRejectionReason
+         */
+        public function setMerchantRejectionReason(MerchantRejectionReason $merchantRejectionReason)
+        {
+        }
+        /**
+         * @return MerchantRejectionReason
+         */
+        public function getMerchantRejectionReason()
+        {
+        }
+        /**
+         * @param RefundReason
+         */
+        public function setMerchantReturnReason(RefundReason $merchantReturnReason)
+        {
+        }
+        /**
+         * @return RefundReason
+         */
+        public function getMerchantReturnReason()
+        {
+        }
+        /**
+         * @param OrderLineItemProduct
+         */
+        public function setProduct(OrderLineItemProduct $product)
+        {
+        }
+        /**
+         * @return OrderLineItemProduct
+         */
+        public function getProduct()
+        {
+        }
+        /**
+         * @param MonetaryAmount
+         */
+        public function setRefundableAmount(MonetaryAmount $refundableAmount)
+        {
+        }
+        /**
+         * @return MonetaryAmount
+         */
+        public function getRefundableAmount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReturnItemId($returnItemId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReturnItemId()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setReturnShipmentIds($returnShipmentIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getReturnShipmentIds()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setShipmentGroupId($shipmentGroupId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShipmentGroupId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setShipmentUnitId($shipmentUnitId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShipmentUnitId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CustomerReturnReason
+     * Runtime class alias of \Google\Service\ShoppingContent\MerchantOrderReturnItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomerReturnReason()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setItemId($itemId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getItemId()
-    {
-    }
-    /**
-     * @param MerchantRejectionReason
-     */
-    public function setMerchantRejectionReason(MerchantRejectionReason $merchantRejectionReason)
-    {
-    }
-    /**
-     * @return MerchantRejectionReason
-     */
-    public function getMerchantRejectionReason()
-    {
-    }
-    /**
-     * @param RefundReason
-     */
-    public function setMerchantReturnReason(RefundReason $merchantReturnReason)
-    {
-    }
-    /**
-     * @return RefundReason
-     */
-    public function getMerchantReturnReason()
-    {
-    }
-    /**
-     * @param OrderLineItemProduct
-     */
-    public function setProduct(OrderLineItemProduct $product)
-    {
-    }
-    /**
-     * @return OrderLineItemProduct
-     */
-    public function getProduct()
-    {
-    }
-    /**
-     * @param MonetaryAmount
-     */
-    public function setRefundableAmount(MonetaryAmount $refundableAmount)
-    {
-    }
-    /**
-     * @return MonetaryAmount
-     */
-    public function getRefundableAmount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReturnItemId($returnItemId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReturnItemId()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setReturnShipmentIds($returnShipmentIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getReturnShipmentIds()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setShipmentGroupId($shipmentGroupId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShipmentGroupId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setShipmentUnitId($shipmentUnitId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShipmentUnitId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
+    class Google_Service_ShoppingContent_MerchantOrderReturnItem extends \Google\Service\ShoppingContent\MerchantOrderReturnItem
     {
     }
 }

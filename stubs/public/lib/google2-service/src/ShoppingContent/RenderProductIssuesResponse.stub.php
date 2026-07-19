@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class RenderProductIssuesResponse extends \Google\Collection
-{
-    protected $collection_key = 'issues';
-    protected $alternateDisputeResolutionType = AlternateDisputeResolution::class;
-    protected $alternateDisputeResolutionDataType = '';
-    protected $issuesType = ProductIssue::class;
-    protected $issuesDataType = 'array';
-    /**
-     * Alternate Dispute Resolution (ADR) is deprecated. Use
-     * `prerendered_out_of_court_dispute_settlement` instead.
-     *
-     * @deprecated
-     * @param AlternateDisputeResolution $alternateDisputeResolution
-     */
-    public function setAlternateDisputeResolution(AlternateDisputeResolution $alternateDisputeResolution)
+namespace Google\Service\ShoppingContent {
+    class RenderProductIssuesResponse extends \Google\Collection
     {
+        protected $collection_key = 'issues';
+        protected $alternateDisputeResolutionType = AlternateDisputeResolution::class;
+        protected $alternateDisputeResolutionDataType = '';
+        protected $issuesType = ProductIssue::class;
+        protected $issuesDataType = 'array';
+        /**
+         * Alternate Dispute Resolution (ADR) is deprecated. Use
+         * `prerendered_out_of_court_dispute_settlement` instead.
+         *
+         * @deprecated
+         * @param AlternateDisputeResolution $alternateDisputeResolution
+         */
+        public function setAlternateDisputeResolution(AlternateDisputeResolution $alternateDisputeResolution)
+        {
+        }
+        /**
+         * @deprecated
+         * @return AlternateDisputeResolution
+         */
+        public function getAlternateDisputeResolution()
+        {
+        }
+        /**
+         * List of issues for a given product. This list can be shown with compressed,
+         * expandable items. In the compressed form, the title and impact should be
+         * shown for each issue. Once the issue is expanded, the detailed content and
+         * available actions should be rendered.
+         *
+         * @param ProductIssue[] $issues
+         */
+        public function setIssues($issues)
+        {
+        }
+        /**
+         * @return ProductIssue[]
+         */
+        public function getIssues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return AlternateDisputeResolution
+     * Runtime class alias of \Google\Service\ShoppingContent\RenderProductIssuesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlternateDisputeResolution()
-    {
-    }
-    /**
-     * List of issues for a given product. This list can be shown with compressed,
-     * expandable items. In the compressed form, the title and impact should be
-     * shown for each issue. Once the issue is expanded, the detailed content and
-     * available actions should be rendered.
-     *
-     * @param ProductIssue[] $issues
-     */
-    public function setIssues($issues)
-    {
-    }
-    /**
-     * @return ProductIssue[]
-     */
-    public function getIssues()
+    class Google_Service_ShoppingContent_RenderProductIssuesResponse extends \Google\Service\ShoppingContent\RenderProductIssuesResponse
     {
     }
 }

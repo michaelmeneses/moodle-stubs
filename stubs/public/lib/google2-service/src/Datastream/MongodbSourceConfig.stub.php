@@ -21,98 +21,107 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class MongodbSourceConfig extends \Google\Model
-{
-    /**
-     * Unspecified JSON mode.
-     */
-    public const JSON_MODE_MONGODB_JSON_MODE_UNSPECIFIED = 'MONGODB_JSON_MODE_UNSPECIFIED';
-    /**
-     * Strict JSON mode.
-     */
-    public const JSON_MODE_STRICT = 'STRICT';
-    /**
-     * Canonical JSON mode.
-     */
-    public const JSON_MODE_CANONICAL = 'CANONICAL';
-    protected $excludeObjectsType = MongodbCluster::class;
-    protected $excludeObjectsDataType = '';
-    protected $includeObjectsType = MongodbCluster::class;
-    protected $includeObjectsDataType = '';
-    /**
-     * Optional. MongoDB JSON mode to use for the stream.
-     *
-     * @var string
-     */
-    public $jsonMode;
-    /**
-     * Optional. Maximum number of concurrent backfill tasks. The number should be
-     * non-negative and less than or equal to 50. If not set (or set to 0), the
-     * system's default value is used
-     *
-     * @var int
-     */
-    public $maxConcurrentBackfillTasks;
-    /**
-     * MongoDB collections to exclude from the stream.
-     *
-     * @param MongodbCluster $excludeObjects
-     */
-    public function setExcludeObjects(MongodbCluster $excludeObjects)
+namespace Google\Service\Datastream {
+    class MongodbSourceConfig extends \Google\Model
     {
+        /**
+         * Unspecified JSON mode.
+         */
+        public const JSON_MODE_MONGODB_JSON_MODE_UNSPECIFIED = 'MONGODB_JSON_MODE_UNSPECIFIED';
+        /**
+         * Strict JSON mode.
+         */
+        public const JSON_MODE_STRICT = 'STRICT';
+        /**
+         * Canonical JSON mode.
+         */
+        public const JSON_MODE_CANONICAL = 'CANONICAL';
+        protected $excludeObjectsType = MongodbCluster::class;
+        protected $excludeObjectsDataType = '';
+        protected $includeObjectsType = MongodbCluster::class;
+        protected $includeObjectsDataType = '';
+        /**
+         * Optional. MongoDB JSON mode to use for the stream.
+         *
+         * @var string
+         */
+        public $jsonMode;
+        /**
+         * Optional. Maximum number of concurrent backfill tasks. The number should be
+         * non-negative and less than or equal to 50. If not set (or set to 0), the
+         * system's default value is used
+         *
+         * @var int
+         */
+        public $maxConcurrentBackfillTasks;
+        /**
+         * MongoDB collections to exclude from the stream.
+         *
+         * @param MongodbCluster $excludeObjects
+         */
+        public function setExcludeObjects(MongodbCluster $excludeObjects)
+        {
+        }
+        /**
+         * @return MongodbCluster
+         */
+        public function getExcludeObjects()
+        {
+        }
+        /**
+         * MongoDB collections to include in the stream.
+         *
+         * @param MongodbCluster $includeObjects
+         */
+        public function setIncludeObjects(MongodbCluster $includeObjects)
+        {
+        }
+        /**
+         * @return MongodbCluster
+         */
+        public function getIncludeObjects()
+        {
+        }
+        /**
+         * Optional. MongoDB JSON mode to use for the stream.
+         *
+         * Accepted values: MONGODB_JSON_MODE_UNSPECIFIED, STRICT, CANONICAL
+         *
+         * @param self::JSON_MODE_* $jsonMode
+         */
+        public function setJsonMode($jsonMode)
+        {
+        }
+        /**
+         * @return self::JSON_MODE_*
+         */
+        public function getJsonMode()
+        {
+        }
+        /**
+         * Optional. Maximum number of concurrent backfill tasks. The number should be
+         * non-negative and less than or equal to 50. If not set (or set to 0), the
+         * system's default value is used
+         *
+         * @param int $maxConcurrentBackfillTasks
+         */
+        public function setMaxConcurrentBackfillTasks($maxConcurrentBackfillTasks)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxConcurrentBackfillTasks()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MongodbCluster
+     * Runtime class alias of \Google\Service\Datastream\MongodbSourceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExcludeObjects()
-    {
-    }
-    /**
-     * MongoDB collections to include in the stream.
-     *
-     * @param MongodbCluster $includeObjects
-     */
-    public function setIncludeObjects(MongodbCluster $includeObjects)
-    {
-    }
-    /**
-     * @return MongodbCluster
-     */
-    public function getIncludeObjects()
-    {
-    }
-    /**
-     * Optional. MongoDB JSON mode to use for the stream.
-     *
-     * Accepted values: MONGODB_JSON_MODE_UNSPECIFIED, STRICT, CANONICAL
-     *
-     * @param self::JSON_MODE_* $jsonMode
-     */
-    public function setJsonMode($jsonMode)
-    {
-    }
-    /**
-     * @return self::JSON_MODE_*
-     */
-    public function getJsonMode()
-    {
-    }
-    /**
-     * Optional. Maximum number of concurrent backfill tasks. The number should be
-     * non-negative and less than or equal to 50. If not set (or set to 0), the
-     * system's default value is used
-     *
-     * @param int $maxConcurrentBackfillTasks
-     */
-    public function setMaxConcurrentBackfillTasks($maxConcurrentBackfillTasks)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxConcurrentBackfillTasks()
+    class Google_Service_Datastream_MongodbSourceConfig extends \Google\Service\Datastream\MongodbSourceConfig
     {
     }
 }

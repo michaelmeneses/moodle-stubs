@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class GoogleBigtableAdminV2TypeStructEncoding extends \Google\Model
-{
-    protected $delimitedBytesType = GoogleBigtableAdminV2TypeStructEncodingDelimitedBytes::class;
-    protected $delimitedBytesDataType = '';
-    protected $orderedCodeBytesType = GoogleBigtableAdminV2TypeStructEncodingOrderedCodeBytes::class;
-    protected $orderedCodeBytesDataType = '';
-    protected $singletonType = GoogleBigtableAdminV2TypeStructEncodingSingleton::class;
-    protected $singletonDataType = '';
-    /**
-     * Use `DelimitedBytes` encoding.
-     *
-     * @param GoogleBigtableAdminV2TypeStructEncodingDelimitedBytes $delimitedBytes
-     */
-    public function setDelimitedBytes(GoogleBigtableAdminV2TypeStructEncodingDelimitedBytes $delimitedBytes)
+namespace Google\Service\BigtableAdmin {
+    class GoogleBigtableAdminV2TypeStructEncoding extends \Google\Model
     {
+        protected $delimitedBytesType = GoogleBigtableAdminV2TypeStructEncodingDelimitedBytes::class;
+        protected $delimitedBytesDataType = '';
+        protected $orderedCodeBytesType = GoogleBigtableAdminV2TypeStructEncodingOrderedCodeBytes::class;
+        protected $orderedCodeBytesDataType = '';
+        protected $singletonType = GoogleBigtableAdminV2TypeStructEncodingSingleton::class;
+        protected $singletonDataType = '';
+        /**
+         * Use `DelimitedBytes` encoding.
+         *
+         * @param GoogleBigtableAdminV2TypeStructEncodingDelimitedBytes $delimitedBytes
+         */
+        public function setDelimitedBytes(GoogleBigtableAdminV2TypeStructEncodingDelimitedBytes $delimitedBytes)
+        {
+        }
+        /**
+         * @return GoogleBigtableAdminV2TypeStructEncodingDelimitedBytes
+         */
+        public function getDelimitedBytes()
+        {
+        }
+        /**
+         * User `OrderedCodeBytes` encoding.
+         *
+         * @param GoogleBigtableAdminV2TypeStructEncodingOrderedCodeBytes $orderedCodeBytes
+         */
+        public function setOrderedCodeBytes(GoogleBigtableAdminV2TypeStructEncodingOrderedCodeBytes $orderedCodeBytes)
+        {
+        }
+        /**
+         * @return GoogleBigtableAdminV2TypeStructEncodingOrderedCodeBytes
+         */
+        public function getOrderedCodeBytes()
+        {
+        }
+        /**
+         * Use `Singleton` encoding.
+         *
+         * @param GoogleBigtableAdminV2TypeStructEncodingSingleton $singleton
+         */
+        public function setSingleton(GoogleBigtableAdminV2TypeStructEncodingSingleton $singleton)
+        {
+        }
+        /**
+         * @return GoogleBigtableAdminV2TypeStructEncodingSingleton
+         */
+        public function getSingleton()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleBigtableAdminV2TypeStructEncodingDelimitedBytes
+     * Runtime class alias of \Google\Service\BigtableAdmin\GoogleBigtableAdminV2TypeStructEncoding registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDelimitedBytes()
-    {
-    }
-    /**
-     * User `OrderedCodeBytes` encoding.
-     *
-     * @param GoogleBigtableAdminV2TypeStructEncodingOrderedCodeBytes $orderedCodeBytes
-     */
-    public function setOrderedCodeBytes(GoogleBigtableAdminV2TypeStructEncodingOrderedCodeBytes $orderedCodeBytes)
-    {
-    }
-    /**
-     * @return GoogleBigtableAdminV2TypeStructEncodingOrderedCodeBytes
-     */
-    public function getOrderedCodeBytes()
-    {
-    }
-    /**
-     * Use `Singleton` encoding.
-     *
-     * @param GoogleBigtableAdminV2TypeStructEncodingSingleton $singleton
-     */
-    public function setSingleton(GoogleBigtableAdminV2TypeStructEncodingSingleton $singleton)
-    {
-    }
-    /**
-     * @return GoogleBigtableAdminV2TypeStructEncodingSingleton
-     */
-    public function getSingleton()
+    class Google_Service_BigtableAdmin_GoogleBigtableAdminV2TypeStructEncoding extends \Google\Service\BigtableAdmin\GoogleBigtableAdminV2TypeStructEncoding
     {
     }
 }

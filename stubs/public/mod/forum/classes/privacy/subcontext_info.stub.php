@@ -29,6 +29,9 @@
  */
 namespace mod_forum\privacy;
 
+use core_privacy\request\approved_contextlist;
+use core_privacy\request\writer;
+use core_privacy\metadata\item_collection;
 /**
  * Subcontext helper trait.
  *

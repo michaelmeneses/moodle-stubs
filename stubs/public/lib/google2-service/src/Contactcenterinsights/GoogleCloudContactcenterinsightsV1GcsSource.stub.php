@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1GcsSource extends \Google\Model
-{
-    /**
-     * Cloud Storage URI that points to a file that contains the conversation
-     * audio.
-     *
-     * @var string
-     */
-    public $audioUri;
-    /**
-     * Immutable. Cloud Storage URI that points to a file that contains the
-     * conversation transcript.
-     *
-     * @var string
-     */
-    public $transcriptUri;
-    /**
-     * Cloud Storage URI that points to a file that contains the conversation
-     * audio.
-     *
-     * @param string $audioUri
-     */
-    public function setAudioUri($audioUri)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1GcsSource extends \Google\Model
     {
+        /**
+         * Cloud Storage URI that points to a file that contains the conversation
+         * audio.
+         *
+         * @var string
+         */
+        public $audioUri;
+        /**
+         * Immutable. Cloud Storage URI that points to a file that contains the
+         * conversation transcript.
+         *
+         * @var string
+         */
+        public $transcriptUri;
+        /**
+         * Cloud Storage URI that points to a file that contains the conversation
+         * audio.
+         *
+         * @param string $audioUri
+         */
+        public function setAudioUri($audioUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAudioUri()
+        {
+        }
+        /**
+         * Immutable. Cloud Storage URI that points to a file that contains the
+         * conversation transcript.
+         *
+         * @param string $transcriptUri
+         */
+        public function setTranscriptUri($transcriptUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTranscriptUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1GcsSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAudioUri()
-    {
-    }
-    /**
-     * Immutable. Cloud Storage URI that points to a file that contains the
-     * conversation transcript.
-     *
-     * @param string $transcriptUri
-     */
-    public function setTranscriptUri($transcriptUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTranscriptUri()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1GcsSource extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1GcsSource
     {
     }
 }

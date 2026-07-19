@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class ShareScope extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $domain;
-    /**
-     * @var string
-     */
-    public $scope;
-    /**
-     * @param string
-     */
-    public function setDomain($domain)
+namespace Google\Service\CloudSearch {
+    class ShareScope extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $domain;
+        /**
+         * @var string
+         */
+        public $scope;
+        /**
+         * @param string
+         */
+        public function setDomain($domain)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDomain()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setScope($scope)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScope()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\ShareScope registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDomain()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setScope($scope)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScope()
+    class Google_Service_CloudSearch_ShareScope extends \Google\Service\CloudSearch\ShareScope
     {
     }
 }

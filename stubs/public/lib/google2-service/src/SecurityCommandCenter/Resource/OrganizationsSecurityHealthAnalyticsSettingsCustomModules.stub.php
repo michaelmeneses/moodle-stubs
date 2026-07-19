@@ -21,155 +21,170 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter\Resource;
-
-/**
- * The "customModules" collection of methods.
- * Typical usage is:
- *  <code>
- *   $securitycenterService = new Google\Service\SecurityCommandCenter(...);
- *   $customModules = $securitycenterService->organizations_securityHealthAnalyticsSettings_customModules;
- *  </code>
- */
-class OrganizationsSecurityHealthAnalyticsSettingsCustomModules extends \Google\Service\Resource
-{
+namespace Google\Service\SecurityCommandCenter\Resource {
+    use Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV1SecurityHealthAnalyticsCustomModule;
+    use Google\Service\SecurityCommandCenter\ListDescendantSecurityHealthAnalyticsCustomModulesResponse;
+    use Google\Service\SecurityCommandCenter\ListSecurityHealthAnalyticsCustomModulesResponse;
+    use Google\Service\SecurityCommandCenter\SecuritycenterEmpty;
+    use Google\Service\SecurityCommandCenter\SimulateSecurityHealthAnalyticsCustomModuleRequest;
+    use Google\Service\SecurityCommandCenter\SimulateSecurityHealthAnalyticsCustomModuleResponse;
     /**
-     * Creates a resident SecurityHealthAnalyticsCustomModule at the scope of the
-     * given CRM parent, and also creates inherited
-     * SecurityHealthAnalyticsCustomModules for all CRM descendants of the given
-     * parent. These modules are enabled by default. (customModules.create)
-     *
-     * @param string $parent Required. Resource name of the new custom module's
-     * parent. Its format is
-     * `organizations/{organization}/securityHealthAnalyticsSettings`,
-     * `folders/{folder}/securityHealthAnalyticsSettings`, or
-     * `projects/{project}/securityHealthAnalyticsSettings`
-     * @param GoogleCloudSecuritycenterV1SecurityHealthAnalyticsCustomModule $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudSecuritycenterV1SecurityHealthAnalyticsCustomModule
-     * @throws \Google\Service\Exception
+     * The "customModules" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $securitycenterService = new Google\Service\SecurityCommandCenter(...);
+     *   $customModules = $securitycenterService->organizations_securityHealthAnalyticsSettings_customModules;
+     *  </code>
      */
-    public function create($parent, GoogleCloudSecuritycenterV1SecurityHealthAnalyticsCustomModule $postBody, $optParams = [])
+    class OrganizationsSecurityHealthAnalyticsSettingsCustomModules extends \Google\Service\Resource
     {
+        /**
+         * Creates a resident SecurityHealthAnalyticsCustomModule at the scope of the
+         * given CRM parent, and also creates inherited
+         * SecurityHealthAnalyticsCustomModules for all CRM descendants of the given
+         * parent. These modules are enabled by default. (customModules.create)
+         *
+         * @param string $parent Required. Resource name of the new custom module's
+         * parent. Its format is
+         * `organizations/{organization}/securityHealthAnalyticsSettings`,
+         * `folders/{folder}/securityHealthAnalyticsSettings`, or
+         * `projects/{project}/securityHealthAnalyticsSettings`
+         * @param GoogleCloudSecuritycenterV1SecurityHealthAnalyticsCustomModule $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudSecuritycenterV1SecurityHealthAnalyticsCustomModule
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudSecuritycenterV1SecurityHealthAnalyticsCustomModule $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes the specified SecurityHealthAnalyticsCustomModule and all of its
+         * descendants in the CRM hierarchy. This method is only supported for resident
+         * custom modules. (customModules.delete)
+         *
+         * @param string $name Required. Name of the custom module to delete. Its format
+         * is `organizations/{organization}/securityHealthAnalyticsSettings/customModule
+         * s/{customModule}`, `folders/{folder}/securityHealthAnalyticsSettings/customMo
+         * dules/{customModule}`, or `projects/{project}/securityHealthAnalyticsSettings
+         * /customModules/{customModule}`
+         * @param array $optParams Optional parameters.
+         * @return SecuritycenterEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a SecurityHealthAnalyticsCustomModule. (customModules.get)
+         *
+         * @param string $name Required. Name of the custom module to get. Its format is
+         * `organizations/{organization}/securityHealthAnalyticsSettings/customModules/{
+         * customModule}`, `folders/{folder}/securityHealthAnalyticsSettings/customModul
+         * es/{customModule}`, or `projects/{project}/securityHealthAnalyticsSettings/cu
+         * stomModules/{customModule}`
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudSecuritycenterV1SecurityHealthAnalyticsCustomModule
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Returns a list of all SecurityHealthAnalyticsCustomModules for the given
+         * parent. This includes resident modules defined at the scope of the parent,
+         * and inherited modules, inherited from CRM ancestors.
+         * (customModules.listOrganizationsSecurityHealthAnalyticsSettingsCustomModules)
+         *
+         * @param string $parent Required. Name of parent to list custom modules. Its
+         * format is `organizations/{organization}/securityHealthAnalyticsSettings`,
+         * `folders/{folder}/securityHealthAnalyticsSettings`, or
+         * `projects/{project}/securityHealthAnalyticsSettings`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of results to return in a single
+         * response. Default is 10, minimum is 1, maximum is 1000.
+         * @opt_param string pageToken The value returned by the last call indicating a
+         * continuation
+         * @return ListSecurityHealthAnalyticsCustomModulesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listOrganizationsSecurityHealthAnalyticsSettingsCustomModules($parent, $optParams = [])
+        {
+        }
+        /**
+         * Returns a list of all resident SecurityHealthAnalyticsCustomModules under the
+         * given CRM parent and all of the parent’s CRM descendants.
+         * (customModules.listDescendant)
+         *
+         * @param string $parent Required. Name of parent to list descendant custom
+         * modules. Its format is
+         * `organizations/{organization}/securityHealthAnalyticsSettings`,
+         * `folders/{folder}/securityHealthAnalyticsSettings`, or
+         * `projects/{project}/securityHealthAnalyticsSettings`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of results to return in a single
+         * response. Default is 10, minimum is 1, maximum is 1000.
+         * @opt_param string pageToken The value returned by the last call indicating a
+         * continuation
+         * @return ListDescendantSecurityHealthAnalyticsCustomModulesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listDescendant($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates the SecurityHealthAnalyticsCustomModule under the given name based on
+         * the given update mask. Updating the enablement state is supported on both
+         * resident and inherited modules (though resident modules cannot have an
+         * enablement state of "inherited"). Updating the display name and custom config
+         * of a module is supported on resident modules only. (customModules.patch)
+         *
+         * @param string $name Immutable. The resource name of the custom module. Its
+         * format is "organizations/{organization}/securityHealthAnalyticsSettings/custo
+         * mModules/{customModule}", or "folders/{folder}/securityHealthAnalyticsSetting
+         * s/customModules/{customModule}", or "projects/{project}/securityHealthAnalyti
+         * csSettings/customModules/{customModule}" The id {customModule} is server-
+         * generated and is not user settable. It will be a numeric id containing 1-20
+         * digits.
+         * @param GoogleCloudSecuritycenterV1SecurityHealthAnalyticsCustomModule $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask The list of fields to be updated. The only
+         * fields that can be updated are `enablement_state` and `custom_config`. If
+         * empty or set to the wildcard value `*`, both `enablement_state` and
+         * `custom_config` are updated.
+         * @return GoogleCloudSecuritycenterV1SecurityHealthAnalyticsCustomModule
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, GoogleCloudSecuritycenterV1SecurityHealthAnalyticsCustomModule $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Simulates a given SecurityHealthAnalyticsCustomModule and Resource.
+         * (customModules.simulate)
+         *
+         * @param string $parent Required. The relative resource name of the
+         * organization, project, or folder. For more information about relative
+         * resource names, see [Relative Resource Name](https://cloud.google.com/apis/de
+         * sign/resource_names#relative_resource_name) Example:
+         * `organizations/{organization_id}`
+         * @param SimulateSecurityHealthAnalyticsCustomModuleRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SimulateSecurityHealthAnalyticsCustomModuleResponse
+         * @throws \Google\Service\Exception
+         */
+        public function simulate($parent, SimulateSecurityHealthAnalyticsCustomModuleRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes the specified SecurityHealthAnalyticsCustomModule and all of its
-     * descendants in the CRM hierarchy. This method is only supported for resident
-     * custom modules. (customModules.delete)
-     *
-     * @param string $name Required. Name of the custom module to delete. Its format
-     * is `organizations/{organization}/securityHealthAnalyticsSettings/customModule
-     * s/{customModule}`, `folders/{folder}/securityHealthAnalyticsSettings/customMo
-     * dules/{customModule}`, or `projects/{project}/securityHealthAnalyticsSettings
-     * /customModules/{customModule}`
-     * @param array $optParams Optional parameters.
-     * @return SecuritycenterEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\Resource\OrganizationsSecurityHealthAnalyticsSettingsCustomModules registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves a SecurityHealthAnalyticsCustomModule. (customModules.get)
-     *
-     * @param string $name Required. Name of the custom module to get. Its format is
-     * `organizations/{organization}/securityHealthAnalyticsSettings/customModules/{
-     * customModule}`, `folders/{folder}/securityHealthAnalyticsSettings/customModul
-     * es/{customModule}`, or `projects/{project}/securityHealthAnalyticsSettings/cu
-     * stomModules/{customModule}`
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudSecuritycenterV1SecurityHealthAnalyticsCustomModule
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Returns a list of all SecurityHealthAnalyticsCustomModules for the given
-     * parent. This includes resident modules defined at the scope of the parent,
-     * and inherited modules, inherited from CRM ancestors.
-     * (customModules.listOrganizationsSecurityHealthAnalyticsSettingsCustomModules)
-     *
-     * @param string $parent Required. Name of parent to list custom modules. Its
-     * format is `organizations/{organization}/securityHealthAnalyticsSettings`,
-     * `folders/{folder}/securityHealthAnalyticsSettings`, or
-     * `projects/{project}/securityHealthAnalyticsSettings`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of results to return in a single
-     * response. Default is 10, minimum is 1, maximum is 1000.
-     * @opt_param string pageToken The value returned by the last call indicating a
-     * continuation
-     * @return ListSecurityHealthAnalyticsCustomModulesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listOrganizationsSecurityHealthAnalyticsSettingsCustomModules($parent, $optParams = [])
-    {
-    }
-    /**
-     * Returns a list of all resident SecurityHealthAnalyticsCustomModules under the
-     * given CRM parent and all of the parent’s CRM descendants.
-     * (customModules.listDescendant)
-     *
-     * @param string $parent Required. Name of parent to list descendant custom
-     * modules. Its format is
-     * `organizations/{organization}/securityHealthAnalyticsSettings`,
-     * `folders/{folder}/securityHealthAnalyticsSettings`, or
-     * `projects/{project}/securityHealthAnalyticsSettings`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of results to return in a single
-     * response. Default is 10, minimum is 1, maximum is 1000.
-     * @opt_param string pageToken The value returned by the last call indicating a
-     * continuation
-     * @return ListDescendantSecurityHealthAnalyticsCustomModulesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listDescendant($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates the SecurityHealthAnalyticsCustomModule under the given name based on
-     * the given update mask. Updating the enablement state is supported on both
-     * resident and inherited modules (though resident modules cannot have an
-     * enablement state of "inherited"). Updating the display name and custom config
-     * of a module is supported on resident modules only. (customModules.patch)
-     *
-     * @param string $name Immutable. The resource name of the custom module. Its
-     * format is "organizations/{organization}/securityHealthAnalyticsSettings/custo
-     * mModules/{customModule}", or "folders/{folder}/securityHealthAnalyticsSetting
-     * s/customModules/{customModule}", or "projects/{project}/securityHealthAnalyti
-     * csSettings/customModules/{customModule}" The id {customModule} is server-
-     * generated and is not user settable. It will be a numeric id containing 1-20
-     * digits.
-     * @param GoogleCloudSecuritycenterV1SecurityHealthAnalyticsCustomModule $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask The list of fields to be updated. The only
-     * fields that can be updated are `enablement_state` and `custom_config`. If
-     * empty or set to the wildcard value `*`, both `enablement_state` and
-     * `custom_config` are updated.
-     * @return GoogleCloudSecuritycenterV1SecurityHealthAnalyticsCustomModule
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, GoogleCloudSecuritycenterV1SecurityHealthAnalyticsCustomModule $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Simulates a given SecurityHealthAnalyticsCustomModule and Resource.
-     * (customModules.simulate)
-     *
-     * @param string $parent Required. The relative resource name of the
-     * organization, project, or folder. For more information about relative
-     * resource names, see [Relative Resource Name](https://cloud.google.com/apis/de
-     * sign/resource_names#relative_resource_name) Example:
-     * `organizations/{organization_id}`
-     * @param SimulateSecurityHealthAnalyticsCustomModuleRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SimulateSecurityHealthAnalyticsCustomModuleResponse
-     * @throws \Google\Service\Exception
-     */
-    public function simulate($parent, SimulateSecurityHealthAnalyticsCustomModuleRequest $postBody, $optParams = [])
+    class Google_Service_SecurityCommandCenter_Resource_OrganizationsSecurityHealthAnalyticsSettingsCustomModules extends \Google\Service\SecurityCommandCenter\Resource\OrganizationsSecurityHealthAnalyticsSettingsCustomModules
     {
     }
 }

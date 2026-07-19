@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Safebrowsing;
-
-class ThreatEntrySet extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $compressionType;
-    protected $rawHashesType = RawHashes::class;
-    protected $rawHashesDataType = '';
-    public $rawHashes;
-    protected $rawIndicesType = RawIndices::class;
-    protected $rawIndicesDataType = '';
-    public $rawIndices;
-    protected $riceHashesType = RiceDeltaEncoding::class;
-    protected $riceHashesDataType = '';
-    public $riceHashes;
-    protected $riceIndicesType = RiceDeltaEncoding::class;
-    protected $riceIndicesDataType = '';
-    public $riceIndices;
-    /**
-     * @param string
-     */
-    public function setCompressionType($compressionType)
+namespace Google\Service\Safebrowsing {
+    class ThreatEntrySet extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $compressionType;
+        protected $rawHashesType = RawHashes::class;
+        protected $rawHashesDataType = '';
+        public $rawHashes;
+        protected $rawIndicesType = RawIndices::class;
+        protected $rawIndicesDataType = '';
+        public $rawIndices;
+        protected $riceHashesType = RiceDeltaEncoding::class;
+        protected $riceHashesDataType = '';
+        public $riceHashes;
+        protected $riceIndicesType = RiceDeltaEncoding::class;
+        protected $riceIndicesDataType = '';
+        public $riceIndices;
+        /**
+         * @param string
+         */
+        public function setCompressionType($compressionType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCompressionType()
+        {
+        }
+        /**
+         * @param RawHashes
+         */
+        public function setRawHashes(RawHashes $rawHashes)
+        {
+        }
+        /**
+         * @return RawHashes
+         */
+        public function getRawHashes()
+        {
+        }
+        /**
+         * @param RawIndices
+         */
+        public function setRawIndices(RawIndices $rawIndices)
+        {
+        }
+        /**
+         * @return RawIndices
+         */
+        public function getRawIndices()
+        {
+        }
+        /**
+         * @param RiceDeltaEncoding
+         */
+        public function setRiceHashes(RiceDeltaEncoding $riceHashes)
+        {
+        }
+        /**
+         * @return RiceDeltaEncoding
+         */
+        public function getRiceHashes()
+        {
+        }
+        /**
+         * @param RiceDeltaEncoding
+         */
+        public function setRiceIndices(RiceDeltaEncoding $riceIndices)
+        {
+        }
+        /**
+         * @return RiceDeltaEncoding
+         */
+        public function getRiceIndices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Safebrowsing\ThreatEntrySet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCompressionType()
-    {
-    }
-    /**
-     * @param RawHashes
-     */
-    public function setRawHashes(RawHashes $rawHashes)
-    {
-    }
-    /**
-     * @return RawHashes
-     */
-    public function getRawHashes()
-    {
-    }
-    /**
-     * @param RawIndices
-     */
-    public function setRawIndices(RawIndices $rawIndices)
-    {
-    }
-    /**
-     * @return RawIndices
-     */
-    public function getRawIndices()
-    {
-    }
-    /**
-     * @param RiceDeltaEncoding
-     */
-    public function setRiceHashes(RiceDeltaEncoding $riceHashes)
-    {
-    }
-    /**
-     * @return RiceDeltaEncoding
-     */
-    public function getRiceHashes()
-    {
-    }
-    /**
-     * @param RiceDeltaEncoding
-     */
-    public function setRiceIndices(RiceDeltaEncoding $riceIndices)
-    {
-    }
-    /**
-     * @return RiceDeltaEncoding
-     */
-    public function getRiceIndices()
+    class Google_Service_Safebrowsing_ThreatEntrySet extends \Google\Service\Safebrowsing\ThreatEntrySet
     {
     }
 }

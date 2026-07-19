@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2RecordSuppression extends \Google\Model
-{
-    protected $conditionType = GooglePrivacyDlpV2RecordCondition::class;
-    protected $conditionDataType = '';
-    /**
-     * A condition that when it evaluates to true will result in the record being
-     * evaluated to be suppressed from the transformed content.
-     *
-     * @param GooglePrivacyDlpV2RecordCondition $condition
-     */
-    public function setCondition(GooglePrivacyDlpV2RecordCondition $condition)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2RecordSuppression extends \Google\Model
     {
+        protected $conditionType = GooglePrivacyDlpV2RecordCondition::class;
+        protected $conditionDataType = '';
+        /**
+         * A condition that when it evaluates to true will result in the record being
+         * evaluated to be suppressed from the transformed content.
+         *
+         * @param GooglePrivacyDlpV2RecordCondition $condition
+         */
+        public function setCondition(GooglePrivacyDlpV2RecordCondition $condition)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2RecordCondition
+         */
+        public function getCondition()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2RecordCondition
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2RecordSuppression registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCondition()
+    class Google_Service_DLP_GooglePrivacyDlpV2RecordSuppression extends \Google\Service\DLP\GooglePrivacyDlpV2RecordSuppression
     {
     }
 }

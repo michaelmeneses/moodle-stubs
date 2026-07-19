@@ -21,211 +21,220 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseDynamicLinks;
-
-class GetIosReopenAttributionResponse extends \Google\Collection
-{
-    protected $collection_key = 'warning';
-    /**
-     * The deep-link attributed the app universal link open. For both regular FDL
-     * links and invite FDL links.
-     *
-     * @var string
-     */
-    public $deepLink;
-    /**
-     * Optional invitation ID, for only invite typed requested FDL links.
-     *
-     * @var string
-     */
-    public $invitationId;
-    /**
-     * FDL input value of the "&imv=" parameter, minimum app version to be
-     * returned to Google Firebase SDK running on iOS-9.
-     *
-     * @var string
-     */
-    public $iosMinAppVersion;
-    /**
-     * The entire FDL, expanded from a short link. It is the same as the
-     * requested_link, if it is long.
-     *
-     * @var string
-     */
-    public $resolvedLink;
-    /**
-     * Scion campaign value to be propagated by iSDK to Scion at app-reopen.
-     *
-     * @var string
-     */
-    public $utmCampaign;
-    /**
-     * Scion content value to be propagated by iSDK to Scion at app-reopen.
-     *
-     * @var string
-     */
-    public $utmContent;
-    /**
-     * Scion medium value to be propagated by iSDK to Scion at app-reopen.
-     *
-     * @var string
-     */
-    public $utmMedium;
-    /**
-     * Scion source value to be propagated by iSDK to Scion at app-reopen.
-     *
-     * @var string
-     */
-    public $utmSource;
-    /**
-     * Scion term value to be propagated by iSDK to Scion at app-reopen.
-     *
-     * @var string
-     */
-    public $utmTerm;
-    protected $warningType = DynamicLinkWarning::class;
-    protected $warningDataType = 'array';
-    /**
-     * The deep-link attributed the app universal link open. For both regular FDL
-     * links and invite FDL links.
-     *
-     * @param string $deepLink
-     */
-    public function setDeepLink($deepLink)
+namespace Google\Service\FirebaseDynamicLinks {
+    class GetIosReopenAttributionResponse extends \Google\Collection
     {
+        protected $collection_key = 'warning';
+        /**
+         * The deep-link attributed the app universal link open. For both regular FDL
+         * links and invite FDL links.
+         *
+         * @var string
+         */
+        public $deepLink;
+        /**
+         * Optional invitation ID, for only invite typed requested FDL links.
+         *
+         * @var string
+         */
+        public $invitationId;
+        /**
+         * FDL input value of the "&imv=" parameter, minimum app version to be
+         * returned to Google Firebase SDK running on iOS-9.
+         *
+         * @var string
+         */
+        public $iosMinAppVersion;
+        /**
+         * The entire FDL, expanded from a short link. It is the same as the
+         * requested_link, if it is long.
+         *
+         * @var string
+         */
+        public $resolvedLink;
+        /**
+         * Scion campaign value to be propagated by iSDK to Scion at app-reopen.
+         *
+         * @var string
+         */
+        public $utmCampaign;
+        /**
+         * Scion content value to be propagated by iSDK to Scion at app-reopen.
+         *
+         * @var string
+         */
+        public $utmContent;
+        /**
+         * Scion medium value to be propagated by iSDK to Scion at app-reopen.
+         *
+         * @var string
+         */
+        public $utmMedium;
+        /**
+         * Scion source value to be propagated by iSDK to Scion at app-reopen.
+         *
+         * @var string
+         */
+        public $utmSource;
+        /**
+         * Scion term value to be propagated by iSDK to Scion at app-reopen.
+         *
+         * @var string
+         */
+        public $utmTerm;
+        protected $warningType = DynamicLinkWarning::class;
+        protected $warningDataType = 'array';
+        /**
+         * The deep-link attributed the app universal link open. For both regular FDL
+         * links and invite FDL links.
+         *
+         * @param string $deepLink
+         */
+        public function setDeepLink($deepLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeepLink()
+        {
+        }
+        /**
+         * Optional invitation ID, for only invite typed requested FDL links.
+         *
+         * @param string $invitationId
+         */
+        public function setInvitationId($invitationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInvitationId()
+        {
+        }
+        /**
+         * FDL input value of the "&imv=" parameter, minimum app version to be
+         * returned to Google Firebase SDK running on iOS-9.
+         *
+         * @param string $iosMinAppVersion
+         */
+        public function setIosMinAppVersion($iosMinAppVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIosMinAppVersion()
+        {
+        }
+        /**
+         * The entire FDL, expanded from a short link. It is the same as the
+         * requested_link, if it is long.
+         *
+         * @param string $resolvedLink
+         */
+        public function setResolvedLink($resolvedLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResolvedLink()
+        {
+        }
+        /**
+         * Scion campaign value to be propagated by iSDK to Scion at app-reopen.
+         *
+         * @param string $utmCampaign
+         */
+        public function setUtmCampaign($utmCampaign)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUtmCampaign()
+        {
+        }
+        /**
+         * Scion content value to be propagated by iSDK to Scion at app-reopen.
+         *
+         * @param string $utmContent
+         */
+        public function setUtmContent($utmContent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUtmContent()
+        {
+        }
+        /**
+         * Scion medium value to be propagated by iSDK to Scion at app-reopen.
+         *
+         * @param string $utmMedium
+         */
+        public function setUtmMedium($utmMedium)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUtmMedium()
+        {
+        }
+        /**
+         * Scion source value to be propagated by iSDK to Scion at app-reopen.
+         *
+         * @param string $utmSource
+         */
+        public function setUtmSource($utmSource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUtmSource()
+        {
+        }
+        /**
+         * Scion term value to be propagated by iSDK to Scion at app-reopen.
+         *
+         * @param string $utmTerm
+         */
+        public function setUtmTerm($utmTerm)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUtmTerm()
+        {
+        }
+        /**
+         * Optional warnings associated this API request.
+         *
+         * @param DynamicLinkWarning[] $warning
+         */
+        public function setWarning($warning)
+        {
+        }
+        /**
+         * @return DynamicLinkWarning[]
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\FirebaseDynamicLinks\GetIosReopenAttributionResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeepLink()
-    {
-    }
-    /**
-     * Optional invitation ID, for only invite typed requested FDL links.
-     *
-     * @param string $invitationId
-     */
-    public function setInvitationId($invitationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInvitationId()
-    {
-    }
-    /**
-     * FDL input value of the "&imv=" parameter, minimum app version to be
-     * returned to Google Firebase SDK running on iOS-9.
-     *
-     * @param string $iosMinAppVersion
-     */
-    public function setIosMinAppVersion($iosMinAppVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIosMinAppVersion()
-    {
-    }
-    /**
-     * The entire FDL, expanded from a short link. It is the same as the
-     * requested_link, if it is long.
-     *
-     * @param string $resolvedLink
-     */
-    public function setResolvedLink($resolvedLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResolvedLink()
-    {
-    }
-    /**
-     * Scion campaign value to be propagated by iSDK to Scion at app-reopen.
-     *
-     * @param string $utmCampaign
-     */
-    public function setUtmCampaign($utmCampaign)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUtmCampaign()
-    {
-    }
-    /**
-     * Scion content value to be propagated by iSDK to Scion at app-reopen.
-     *
-     * @param string $utmContent
-     */
-    public function setUtmContent($utmContent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUtmContent()
-    {
-    }
-    /**
-     * Scion medium value to be propagated by iSDK to Scion at app-reopen.
-     *
-     * @param string $utmMedium
-     */
-    public function setUtmMedium($utmMedium)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUtmMedium()
-    {
-    }
-    /**
-     * Scion source value to be propagated by iSDK to Scion at app-reopen.
-     *
-     * @param string $utmSource
-     */
-    public function setUtmSource($utmSource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUtmSource()
-    {
-    }
-    /**
-     * Scion term value to be propagated by iSDK to Scion at app-reopen.
-     *
-     * @param string $utmTerm
-     */
-    public function setUtmTerm($utmTerm)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUtmTerm()
-    {
-    }
-    /**
-     * Optional warnings associated this API request.
-     *
-     * @param DynamicLinkWarning[] $warning
-     */
-    public function setWarning($warning)
-    {
-    }
-    /**
-     * @return DynamicLinkWarning[]
-     */
-    public function getWarning()
+    class Google_Service_FirebaseDynamicLinks_GetIosReopenAttributionResponse extends \Google\Service\FirebaseDynamicLinks\GetIosReopenAttributionResponse
     {
     }
 }

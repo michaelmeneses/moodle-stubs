@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class ChannelGroupingRule extends \Google\Collection
-{
-    protected $collection_key = 'disjunctiveMatchStatements';
-    protected $disjunctiveMatchStatementsType = DisjunctiveMatchStatement::class;
-    protected $disjunctiveMatchStatementsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $kind;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @param DisjunctiveMatchStatement[]
-     */
-    public function setDisjunctiveMatchStatements($disjunctiveMatchStatements)
+namespace Google\Service\Dfareporting {
+    class ChannelGroupingRule extends \Google\Collection
     {
+        protected $collection_key = 'disjunctiveMatchStatements';
+        protected $disjunctiveMatchStatementsType = DisjunctiveMatchStatement::class;
+        protected $disjunctiveMatchStatementsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $kind;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @param DisjunctiveMatchStatement[]
+         */
+        public function setDisjunctiveMatchStatements($disjunctiveMatchStatements)
+        {
+        }
+        /**
+         * @return DisjunctiveMatchStatement[]
+         */
+        public function getDisjunctiveMatchStatements()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DisjunctiveMatchStatement[]
+     * Runtime class alias of \Google\Service\Dfareporting\ChannelGroupingRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisjunctiveMatchStatements()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Dfareporting_ChannelGroupingRule extends \Google\Service\Dfareporting\ChannelGroupingRule
     {
     }
 }

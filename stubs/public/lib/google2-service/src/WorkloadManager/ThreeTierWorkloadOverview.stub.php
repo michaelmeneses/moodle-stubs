@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class ThreeTierWorkloadOverview extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $threeTierSystemId;
-    /**
-     * @param string
-     */
-    public function setThreeTierSystemId($threeTierSystemId)
+namespace Google\Service\WorkloadManager {
+    class ThreeTierWorkloadOverview extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $threeTierSystemId;
+        /**
+         * @param string
+         */
+        public function setThreeTierSystemId($threeTierSystemId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThreeTierSystemId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WorkloadManager\ThreeTierWorkloadOverview registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getThreeTierSystemId()
+    class Google_Service_WorkloadManager_ThreeTierWorkloadOverview extends \Google\Service\WorkloadManager\ThreeTierWorkloadOverview
     {
     }
 }

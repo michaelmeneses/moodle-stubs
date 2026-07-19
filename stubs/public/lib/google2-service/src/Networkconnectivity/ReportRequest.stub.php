@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class ReportRequest extends \Google\Collection
-{
-    protected $collection_key = 'operations';
-    protected $operationsType = Operation::class;
-    protected $operationsDataType = 'array';
-    public $serviceConfigId;
-    public $serviceName;
+namespace Google\Service\Networkconnectivity {
+    class ReportRequest extends \Google\Collection
+    {
+        protected $collection_key = 'operations';
+        protected $operationsType = Operation::class;
+        protected $operationsDataType = 'array';
+        public $serviceConfigId;
+        public $serviceName;
+        /**
+         * @param Operation[]
+         */
+        public function setOperations($operations)
+        {
+        }
+        /**
+         * @return Operation[]
+         */
+        public function getOperations()
+        {
+        }
+        public function setServiceConfigId($serviceConfigId)
+        {
+        }
+        public function getServiceConfigId()
+        {
+        }
+        public function setServiceName($serviceName)
+        {
+        }
+        public function getServiceName()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param Operation[]
+     * Runtime class alias of \Google\Service\Networkconnectivity\ReportRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setOperations($operations)
-    {
-    }
-    /**
-     * @return Operation[]
-     */
-    public function getOperations()
-    {
-    }
-    public function setServiceConfigId($serviceConfigId)
-    {
-    }
-    public function getServiceConfigId()
-    {
-    }
-    public function setServiceName($serviceName)
-    {
-    }
-    public function getServiceName()
+    class Google_Service_Networkconnectivity_ReportRequest extends \Google\Service\Networkconnectivity\ReportRequest
     {
     }
 }

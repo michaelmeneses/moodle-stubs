@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1StreamQueryReasoningEngineRequest extends \Google\Model
-{
-    /**
-     * Optional. Class method to be used for the stream query. It is optional and
-     * defaults to "stream_query" if unspecified.
-     *
-     * @var string
-     */
-    public $classMethod;
-    /**
-     * Optional. Input content provided by users in JSON object format. Examples
-     * include text query, function calling parameters, media bytes, etc.
-     *
-     * @var array[]
-     */
-    public $input;
-    /**
-     * Optional. Class method to be used for the stream query. It is optional and
-     * defaults to "stream_query" if unspecified.
-     *
-     * @param string $classMethod
-     */
-    public function setClassMethod($classMethod)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1StreamQueryReasoningEngineRequest extends \Google\Model
     {
+        /**
+         * Optional. Class method to be used for the stream query. It is optional and
+         * defaults to "stream_query" if unspecified.
+         *
+         * @var string
+         */
+        public $classMethod;
+        /**
+         * Optional. Input content provided by users in JSON object format. Examples
+         * include text query, function calling parameters, media bytes, etc.
+         *
+         * @var array[]
+         */
+        public $input;
+        /**
+         * Optional. Class method to be used for the stream query. It is optional and
+         * defaults to "stream_query" if unspecified.
+         *
+         * @param string $classMethod
+         */
+        public function setClassMethod($classMethod)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClassMethod()
+        {
+        }
+        /**
+         * Optional. Input content provided by users in JSON object format. Examples
+         * include text query, function calling parameters, media bytes, etc.
+         *
+         * @param array[] $input
+         */
+        public function setInput($input)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getInput()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1StreamQueryReasoningEngineRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClassMethod()
-    {
-    }
-    /**
-     * Optional. Input content provided by users in JSON object format. Examples
-     * include text query, function calling parameters, media bytes, etc.
-     *
-     * @param array[] $input
-     */
-    public function setInput($input)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getInput()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1StreamQueryReasoningEngineRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1StreamQueryReasoningEngineRequest
     {
     }
 }

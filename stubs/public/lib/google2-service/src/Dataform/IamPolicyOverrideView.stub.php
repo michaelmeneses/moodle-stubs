@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class IamPolicyOverrideView extends \Google\Model
-{
-    protected $iamPolicyNameType = PolicyName::class;
-    protected $iamPolicyNameDataType = '';
-    /**
-     * Whether the IAM policy encoded in this view is active.
-     *
-     * @var bool
-     */
-    public $isActive;
-    /**
-     * The IAM policy name for the resource.
-     *
-     * @param PolicyName $iamPolicyName
-     */
-    public function setIamPolicyName(PolicyName $iamPolicyName)
+namespace Google\Service\Dataform {
+    class IamPolicyOverrideView extends \Google\Model
     {
+        protected $iamPolicyNameType = PolicyName::class;
+        protected $iamPolicyNameDataType = '';
+        /**
+         * Whether the IAM policy encoded in this view is active.
+         *
+         * @var bool
+         */
+        public $isActive;
+        /**
+         * The IAM policy name for the resource.
+         *
+         * @param PolicyName $iamPolicyName
+         */
+        public function setIamPolicyName(PolicyName $iamPolicyName)
+        {
+        }
+        /**
+         * @return PolicyName
+         */
+        public function getIamPolicyName()
+        {
+        }
+        /**
+         * Whether the IAM policy encoded in this view is active.
+         *
+         * @param bool $isActive
+         */
+        public function setIsActive($isActive)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsActive()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PolicyName
+     * Runtime class alias of \Google\Service\Dataform\IamPolicyOverrideView registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIamPolicyName()
-    {
-    }
-    /**
-     * Whether the IAM policy encoded in this view is active.
-     *
-     * @param bool $isActive
-     */
-    public function setIsActive($isActive)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsActive()
+    class Google_Service_Dataform_IamPolicyOverrideView extends \Google\Service\Dataform\IamPolicyOverrideView
     {
     }
 }

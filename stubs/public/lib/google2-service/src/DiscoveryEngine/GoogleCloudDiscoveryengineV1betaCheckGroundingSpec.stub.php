@@ -21,15 +21,24 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaCheckGroundingSpec extends \Google\Model
-{
-    public $citationThreshold;
-    public function setCitationThreshold($citationThreshold)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaCheckGroundingSpec extends \Google\Model
     {
+        public $citationThreshold;
+        public function setCitationThreshold($citationThreshold)
+        {
+        }
+        public function getCitationThreshold()
+        {
+        }
     }
-    public function getCitationThreshold()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaCheckGroundingSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaCheckGroundingSpec extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaCheckGroundingSpec
     {
     }
 }

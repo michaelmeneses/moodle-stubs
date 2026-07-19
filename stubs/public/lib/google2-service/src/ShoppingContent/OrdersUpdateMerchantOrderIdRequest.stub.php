@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OrdersUpdateMerchantOrderIdRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $merchantOrderId;
-    /**
-     * @var string
-     */
-    public $operationId;
-    /**
-     * @param string
-     */
-    public function setMerchantOrderId($merchantOrderId)
+namespace Google\Service\ShoppingContent {
+    class OrdersUpdateMerchantOrderIdRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $merchantOrderId;
+        /**
+         * @var string
+         */
+        public $operationId;
+        /**
+         * @param string
+         */
+        public function setMerchantOrderId($merchantOrderId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMerchantOrderId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOperationId($operationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperationId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\OrdersUpdateMerchantOrderIdRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMerchantOrderId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOperationId($operationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOperationId()
+    class Google_Service_ShoppingContent_OrdersUpdateMerchantOrderIdRequest extends \Google\Service\ShoppingContent\OrdersUpdateMerchantOrderIdRequest
     {
     }
 }

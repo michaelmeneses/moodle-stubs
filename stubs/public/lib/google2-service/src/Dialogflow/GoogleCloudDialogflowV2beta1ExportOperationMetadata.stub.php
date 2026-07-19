@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1ExportOperationMetadata extends \Google\Model
-{
-    protected $exportedGcsDestinationType = GoogleCloudDialogflowV2beta1GcsDestination::class;
-    protected $exportedGcsDestinationDataType = '';
-    /**
-     * Cloud Storage file path of the exported data.
-     *
-     * @param GoogleCloudDialogflowV2beta1GcsDestination $exportedGcsDestination
-     */
-    public function setExportedGcsDestination(GoogleCloudDialogflowV2beta1GcsDestination $exportedGcsDestination)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1ExportOperationMetadata extends \Google\Model
     {
+        protected $exportedGcsDestinationType = GoogleCloudDialogflowV2beta1GcsDestination::class;
+        protected $exportedGcsDestinationDataType = '';
+        /**
+         * Cloud Storage file path of the exported data.
+         *
+         * @param GoogleCloudDialogflowV2beta1GcsDestination $exportedGcsDestination
+         */
+        public function setExportedGcsDestination(GoogleCloudDialogflowV2beta1GcsDestination $exportedGcsDestination)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2beta1GcsDestination
+         */
+        public function getExportedGcsDestination()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowV2beta1GcsDestination
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1ExportOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExportedGcsDestination()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1ExportOperationMetadata extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1ExportOperationMetadata
     {
     }
 }

@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class ListEnrollmentTokensResponse extends \Google\Collection
-{
-    protected $collection_key = 'enrollmentTokens';
-    protected $enrollmentTokensType = EnrollmentToken::class;
-    protected $enrollmentTokensDataType = 'array';
-    /**
-     * If there are more results, a token to retrieve next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of enrollment tokens.
-     *
-     * @param EnrollmentToken[] $enrollmentTokens
-     */
-    public function setEnrollmentTokens($enrollmentTokens)
+namespace Google\Service\AndroidManagement {
+    class ListEnrollmentTokensResponse extends \Google\Collection
     {
+        protected $collection_key = 'enrollmentTokens';
+        protected $enrollmentTokensType = EnrollmentToken::class;
+        protected $enrollmentTokensDataType = 'array';
+        /**
+         * If there are more results, a token to retrieve next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of enrollment tokens.
+         *
+         * @param EnrollmentToken[] $enrollmentTokens
+         */
+        public function setEnrollmentTokens($enrollmentTokens)
+        {
+        }
+        /**
+         * @return EnrollmentToken[]
+         */
+        public function getEnrollmentTokens()
+        {
+        }
+        /**
+         * If there are more results, a token to retrieve next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnrollmentToken[]
+     * Runtime class alias of \Google\Service\AndroidManagement\ListEnrollmentTokensResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnrollmentTokens()
-    {
-    }
-    /**
-     * If there are more results, a token to retrieve next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_AndroidManagement_ListEnrollmentTokensResponse extends \Google\Service\AndroidManagement\ListEnrollmentTokensResponse
     {
     }
 }

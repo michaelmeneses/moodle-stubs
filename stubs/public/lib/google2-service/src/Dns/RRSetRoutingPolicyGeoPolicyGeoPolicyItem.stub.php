@@ -21,107 +21,116 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dns;
-
-class RRSetRoutingPolicyGeoPolicyGeoPolicyItem extends \Google\Collection
-{
-    protected $collection_key = 'signatureRrdatas';
-    protected $healthCheckedTargetsType = RRSetRoutingPolicyHealthCheckTargets::class;
-    protected $healthCheckedTargetsDataType = '';
-    /**
-     * @var string
-     */
-    public $kind;
-    /**
-     * The geo-location granularity is a GCP region. This location string should
-     * correspond to a GCP region. e.g. "us-east1", "southamerica-east1", "asia-
-     * east1", etc.
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * @var string[]
-     */
-    public $rrdatas;
-    /**
-     * DNSSEC generated signatures for all the `rrdata` within this item. When
-     * using health-checked targets for DNSSEC-enabled zones, you can only use at
-     * most one health-checked IP address per item.
-     *
-     * @var string[]
-     */
-    public $signatureRrdatas;
-    /**
-     * For A and AAAA types only. Endpoints to return in the query result only if
-     * they are healthy. These can be specified along with `rrdata` within this
-     * item.
-     *
-     * @param RRSetRoutingPolicyHealthCheckTargets $healthCheckedTargets
-     */
-    public function setHealthCheckedTargets(RRSetRoutingPolicyHealthCheckTargets $healthCheckedTargets)
+namespace Google\Service\Dns {
+    class RRSetRoutingPolicyGeoPolicyGeoPolicyItem extends \Google\Collection
     {
+        protected $collection_key = 'signatureRrdatas';
+        protected $healthCheckedTargetsType = RRSetRoutingPolicyHealthCheckTargets::class;
+        protected $healthCheckedTargetsDataType = '';
+        /**
+         * @var string
+         */
+        public $kind;
+        /**
+         * The geo-location granularity is a GCP region. This location string should
+         * correspond to a GCP region. e.g. "us-east1", "southamerica-east1", "asia-
+         * east1", etc.
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * @var string[]
+         */
+        public $rrdatas;
+        /**
+         * DNSSEC generated signatures for all the `rrdata` within this item. When
+         * using health-checked targets for DNSSEC-enabled zones, you can only use at
+         * most one health-checked IP address per item.
+         *
+         * @var string[]
+         */
+        public $signatureRrdatas;
+        /**
+         * For A and AAAA types only. Endpoints to return in the query result only if
+         * they are healthy. These can be specified along with `rrdata` within this
+         * item.
+         *
+         * @param RRSetRoutingPolicyHealthCheckTargets $healthCheckedTargets
+         */
+        public function setHealthCheckedTargets(RRSetRoutingPolicyHealthCheckTargets $healthCheckedTargets)
+        {
+        }
+        /**
+         * @return RRSetRoutingPolicyHealthCheckTargets
+         */
+        public function getHealthCheckedTargets()
+        {
+        }
+        /**
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The geo-location granularity is a GCP region. This location string should
+         * correspond to a GCP region. e.g. "us-east1", "southamerica-east1", "asia-
+         * east1", etc.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * @param string[] $rrdatas
+         */
+        public function setRrdatas($rrdatas)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRrdatas()
+        {
+        }
+        /**
+         * DNSSEC generated signatures for all the `rrdata` within this item. When
+         * using health-checked targets for DNSSEC-enabled zones, you can only use at
+         * most one health-checked IP address per item.
+         *
+         * @param string[] $signatureRrdatas
+         */
+        public function setSignatureRrdatas($signatureRrdatas)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSignatureRrdatas()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RRSetRoutingPolicyHealthCheckTargets
+     * Runtime class alias of \Google\Service\Dns\RRSetRoutingPolicyGeoPolicyGeoPolicyItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHealthCheckedTargets()
-    {
-    }
-    /**
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The geo-location granularity is a GCP region. This location string should
-     * correspond to a GCP region. e.g. "us-east1", "southamerica-east1", "asia-
-     * east1", etc.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * @param string[] $rrdatas
-     */
-    public function setRrdatas($rrdatas)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRrdatas()
-    {
-    }
-    /**
-     * DNSSEC generated signatures for all the `rrdata` within this item. When
-     * using health-checked targets for DNSSEC-enabled zones, you can only use at
-     * most one health-checked IP address per item.
-     *
-     * @param string[] $signatureRrdatas
-     */
-    public function setSignatureRrdatas($signatureRrdatas)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSignatureRrdatas()
+    class Google_Service_Dns_RRSetRoutingPolicyGeoPolicyGeoPolicyItem extends \Google\Service\Dns\RRSetRoutingPolicyGeoPolicyGeoPolicyItem
     {
     }
 }

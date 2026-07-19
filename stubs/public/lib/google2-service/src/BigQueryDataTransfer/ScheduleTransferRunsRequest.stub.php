@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryDataTransfer;
-
-class ScheduleTransferRunsRequest extends \Google\Model
-{
-    /**
-     * Required. End time of the range of transfer runs. For example,
-     * `"2017-05-30T00:00:00+00:00"`.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * Required. Start time of the range of transfer runs. For example,
-     * `"2017-05-25T00:00:00+00:00"`.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Required. End time of the range of transfer runs. For example,
-     * `"2017-05-30T00:00:00+00:00"`.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\BigQueryDataTransfer {
+    class ScheduleTransferRunsRequest extends \Google\Model
     {
+        /**
+         * Required. End time of the range of transfer runs. For example,
+         * `"2017-05-30T00:00:00+00:00"`.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * Required. Start time of the range of transfer runs. For example,
+         * `"2017-05-25T00:00:00+00:00"`.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Required. End time of the range of transfer runs. For example,
+         * `"2017-05-30T00:00:00+00:00"`.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Required. Start time of the range of transfer runs. For example,
+         * `"2017-05-25T00:00:00+00:00"`.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigQueryDataTransfer\ScheduleTransferRunsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Required. Start time of the range of transfer runs. For example,
-     * `"2017-05-25T00:00:00+00:00"`.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_BigQueryDataTransfer_ScheduleTransferRunsRequest extends \Google\Service\BigQueryDataTransfer\ScheduleTransferRunsRequest
     {
     }
 }

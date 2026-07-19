@@ -16,6 +16,7 @@
  */
 namespace Monolog\Formatter;
 
+use Monolog\LogRecord;
 /**
  * Interface for formatters
  *

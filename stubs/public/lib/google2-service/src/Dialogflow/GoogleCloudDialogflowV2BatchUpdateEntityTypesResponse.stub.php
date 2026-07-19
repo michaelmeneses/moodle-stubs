@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2BatchUpdateEntityTypesResponse extends \Google\Collection
-{
-    protected $collection_key = 'entityTypes';
-    protected $entityTypesType = GoogleCloudDialogflowV2EntityType::class;
-    protected $entityTypesDataType = 'array';
-    /**
-     * The collection of updated or created entity types.
-     *
-     * @param GoogleCloudDialogflowV2EntityType[] $entityTypes
-     */
-    public function setEntityTypes($entityTypes)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2BatchUpdateEntityTypesResponse extends \Google\Collection
     {
+        protected $collection_key = 'entityTypes';
+        protected $entityTypesType = GoogleCloudDialogflowV2EntityType::class;
+        protected $entityTypesDataType = 'array';
+        /**
+         * The collection of updated or created entity types.
+         *
+         * @param GoogleCloudDialogflowV2EntityType[] $entityTypes
+         */
+        public function setEntityTypes($entityTypes)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2EntityType[]
+         */
+        public function getEntityTypes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowV2EntityType[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2BatchUpdateEntityTypesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntityTypes()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2BatchUpdateEntityTypesResponse extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2BatchUpdateEntityTypesResponse
     {
     }
 }

@@ -21,32 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube\Resource;
-
-/**
- * The "v3" collection of methods.
- * Typical usage is:
- *  <code>
- *   $youtubeService = new Google\Service\YouTube(...);
- *   $v3 = $youtubeService->youtube_v3;
- *  </code>
- */
-class YoutubeV3 extends \Google\Service\Resource
-{
+namespace Google\Service\YouTube\Resource {
+    use Google\Service\YouTube\CommentThread;
     /**
-     * Updates an existing resource. (v3.updateCommentThreads)
-     *
-     * @param CommentThread $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string part The *part* parameter specifies a comma-separated list
-     * of commentThread resource properties that the API response will include. You
-     * must at least include the snippet part in the parameter value since that part
-     * contains all of the properties that the API request can update.
-     * @return CommentThread
-     * @throws \Google\Service\Exception
+     * The "v3" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $youtubeService = new Google\Service\YouTube(...);
+     *   $v3 = $youtubeService->youtube_v3;
+     *  </code>
      */
-    public function updateCommentThreads(CommentThread $postBody, $optParams = [])
+    class YoutubeV3 extends \Google\Service\Resource
+    {
+        /**
+         * Updates an existing resource. (v3.updateCommentThreads)
+         *
+         * @param CommentThread $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string part The *part* parameter specifies a comma-separated list
+         * of commentThread resource properties that the API response will include. You
+         * must at least include the snippet part in the parameter value since that part
+         * contains all of the properties that the API request can update.
+         * @return CommentThread
+         * @throws \Google\Service\Exception
+         */
+        public function updateCommentThreads(CommentThread $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\YouTube\Resource\YoutubeV3 registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_YouTube_Resource_YoutubeV3 extends \Google\Service\YouTube\Resource\YoutubeV3
     {
     }
 }

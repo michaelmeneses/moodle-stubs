@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SupervisedHyperParameters extends \Google\Model
-{
-    /**
-     * Adapter size is unspecified.
-     */
-    public const ADAPTER_SIZE_ADAPTER_SIZE_UNSPECIFIED = 'ADAPTER_SIZE_UNSPECIFIED';
-    /**
-     * Adapter size 1.
-     */
-    public const ADAPTER_SIZE_ADAPTER_SIZE_ONE = 'ADAPTER_SIZE_ONE';
-    /**
-     * Adapter size 2.
-     */
-    public const ADAPTER_SIZE_ADAPTER_SIZE_TWO = 'ADAPTER_SIZE_TWO';
-    /**
-     * Adapter size 4.
-     */
-    public const ADAPTER_SIZE_ADAPTER_SIZE_FOUR = 'ADAPTER_SIZE_FOUR';
-    /**
-     * Adapter size 8.
-     */
-    public const ADAPTER_SIZE_ADAPTER_SIZE_EIGHT = 'ADAPTER_SIZE_EIGHT';
-    /**
-     * Adapter size 16.
-     */
-    public const ADAPTER_SIZE_ADAPTER_SIZE_SIXTEEN = 'ADAPTER_SIZE_SIXTEEN';
-    /**
-     * Adapter size 32.
-     */
-    public const ADAPTER_SIZE_ADAPTER_SIZE_THIRTY_TWO = 'ADAPTER_SIZE_THIRTY_TWO';
-    /**
-     * Optional. Adapter size for tuning.
-     *
-     * @var string
-     */
-    public $adapterSize;
-    /**
-     * Optional. Number of complete passes the model makes over the entire
-     * training dataset during training.
-     *
-     * @var string
-     */
-    public $epochCount;
-    /**
-     * Optional. Multiplier for adjusting the default learning rate. Mutually
-     * exclusive with `learning_rate`. This feature is only available for 1P
-     * models.
-     *
-     * @var 
-     */
-    public $learningRateMultiplier;
-    /**
-     * Optional. Adapter size for tuning.
-     *
-     * Accepted values: ADAPTER_SIZE_UNSPECIFIED, ADAPTER_SIZE_ONE,
-     * ADAPTER_SIZE_TWO, ADAPTER_SIZE_FOUR, ADAPTER_SIZE_EIGHT,
-     * ADAPTER_SIZE_SIXTEEN, ADAPTER_SIZE_THIRTY_TWO
-     *
-     * @param self::ADAPTER_SIZE_* $adapterSize
-     */
-    public function setAdapterSize($adapterSize)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SupervisedHyperParameters extends \Google\Model
     {
+        /**
+         * Adapter size is unspecified.
+         */
+        public const ADAPTER_SIZE_ADAPTER_SIZE_UNSPECIFIED = 'ADAPTER_SIZE_UNSPECIFIED';
+        /**
+         * Adapter size 1.
+         */
+        public const ADAPTER_SIZE_ADAPTER_SIZE_ONE = 'ADAPTER_SIZE_ONE';
+        /**
+         * Adapter size 2.
+         */
+        public const ADAPTER_SIZE_ADAPTER_SIZE_TWO = 'ADAPTER_SIZE_TWO';
+        /**
+         * Adapter size 4.
+         */
+        public const ADAPTER_SIZE_ADAPTER_SIZE_FOUR = 'ADAPTER_SIZE_FOUR';
+        /**
+         * Adapter size 8.
+         */
+        public const ADAPTER_SIZE_ADAPTER_SIZE_EIGHT = 'ADAPTER_SIZE_EIGHT';
+        /**
+         * Adapter size 16.
+         */
+        public const ADAPTER_SIZE_ADAPTER_SIZE_SIXTEEN = 'ADAPTER_SIZE_SIXTEEN';
+        /**
+         * Adapter size 32.
+         */
+        public const ADAPTER_SIZE_ADAPTER_SIZE_THIRTY_TWO = 'ADAPTER_SIZE_THIRTY_TWO';
+        /**
+         * Optional. Adapter size for tuning.
+         *
+         * @var string
+         */
+        public $adapterSize;
+        /**
+         * Optional. Number of complete passes the model makes over the entire
+         * training dataset during training.
+         *
+         * @var string
+         */
+        public $epochCount;
+        /**
+         * Optional. Multiplier for adjusting the default learning rate. Mutually
+         * exclusive with `learning_rate`. This feature is only available for 1P
+         * models.
+         *
+         * @var 
+         */
+        public $learningRateMultiplier;
+        /**
+         * Optional. Adapter size for tuning.
+         *
+         * Accepted values: ADAPTER_SIZE_UNSPECIFIED, ADAPTER_SIZE_ONE,
+         * ADAPTER_SIZE_TWO, ADAPTER_SIZE_FOUR, ADAPTER_SIZE_EIGHT,
+         * ADAPTER_SIZE_SIXTEEN, ADAPTER_SIZE_THIRTY_TWO
+         *
+         * @param self::ADAPTER_SIZE_* $adapterSize
+         */
+        public function setAdapterSize($adapterSize)
+        {
+        }
+        /**
+         * @return self::ADAPTER_SIZE_*
+         */
+        public function getAdapterSize()
+        {
+        }
+        /**
+         * Optional. Number of complete passes the model makes over the entire
+         * training dataset during training.
+         *
+         * @param string $epochCount
+         */
+        public function setEpochCount($epochCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEpochCount()
+        {
+        }
+        public function setLearningRateMultiplier($learningRateMultiplier)
+        {
+        }
+        public function getLearningRateMultiplier()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ADAPTER_SIZE_*
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SupervisedHyperParameters registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdapterSize()
-    {
-    }
-    /**
-     * Optional. Number of complete passes the model makes over the entire
-     * training dataset during training.
-     *
-     * @param string $epochCount
-     */
-    public function setEpochCount($epochCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEpochCount()
-    {
-    }
-    public function setLearningRateMultiplier($learningRateMultiplier)
-    {
-    }
-    public function getLearningRateMultiplier()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SupervisedHyperParameters extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SupervisedHyperParameters
     {
     }
 }

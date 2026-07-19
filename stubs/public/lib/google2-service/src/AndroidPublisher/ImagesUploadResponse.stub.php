@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class ImagesUploadResponse extends \Google\Model
-{
-    protected $imageType = Image::class;
-    protected $imageDataType = '';
-    /**
-     * The uploaded image.
-     *
-     * @param Image $image
-     */
-    public function setImage(Image $image)
+namespace Google\Service\AndroidPublisher {
+    class ImagesUploadResponse extends \Google\Model
     {
+        protected $imageType = Image::class;
+        protected $imageDataType = '';
+        /**
+         * The uploaded image.
+         *
+         * @param Image $image
+         */
+        public function setImage(Image $image)
+        {
+        }
+        /**
+         * @return Image
+         */
+        public function getImage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Image
+     * Runtime class alias of \Google\Service\AndroidPublisher\ImagesUploadResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImage()
+    class Google_Service_AndroidPublisher_ImagesUploadResponse extends \Google\Service\AndroidPublisher\ImagesUploadResponse
     {
     }
 }

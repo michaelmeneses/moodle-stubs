@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkflowExecutions;
-
-class Position extends \Google\Model
-{
-    /**
-     * The source code column position (of the line) the current instruction was
-     * generated from.
-     *
-     * @var string
-     */
-    public $column;
-    /**
-     * The number of bytes of source code making up this stack trace element.
-     *
-     * @var string
-     */
-    public $length;
-    /**
-     * The source code line number the current instruction was generated from.
-     *
-     * @var string
-     */
-    public $line;
-    /**
-     * The source code column position (of the line) the current instruction was
-     * generated from.
-     *
-     * @param string $column
-     */
-    public function setColumn($column)
+namespace Google\Service\WorkflowExecutions {
+    class Position extends \Google\Model
     {
+        /**
+         * The source code column position (of the line) the current instruction was
+         * generated from.
+         *
+         * @var string
+         */
+        public $column;
+        /**
+         * The number of bytes of source code making up this stack trace element.
+         *
+         * @var string
+         */
+        public $length;
+        /**
+         * The source code line number the current instruction was generated from.
+         *
+         * @var string
+         */
+        public $line;
+        /**
+         * The source code column position (of the line) the current instruction was
+         * generated from.
+         *
+         * @param string $column
+         */
+        public function setColumn($column)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getColumn()
+        {
+        }
+        /**
+         * The number of bytes of source code making up this stack trace element.
+         *
+         * @param string $length
+         */
+        public function setLength($length)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLength()
+        {
+        }
+        /**
+         * The source code line number the current instruction was generated from.
+         *
+         * @param string $line
+         */
+        public function setLine($line)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLine()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WorkflowExecutions\Position registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumn()
-    {
-    }
-    /**
-     * The number of bytes of source code making up this stack trace element.
-     *
-     * @param string $length
-     */
-    public function setLength($length)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLength()
-    {
-    }
-    /**
-     * The source code line number the current instruction was generated from.
-     *
-     * @param string $line
-     */
-    public function setLine($line)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLine()
+    class Google_Service_WorkflowExecutions_Position extends \Google\Service\WorkflowExecutions\Position
     {
     }
 }

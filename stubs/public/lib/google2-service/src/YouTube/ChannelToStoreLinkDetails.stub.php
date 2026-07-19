@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class ChannelToStoreLinkDetails extends \Google\Model
-{
-    protected $billingDetailsType = ChannelToStoreLinkDetailsBillingDetails::class;
-    protected $billingDetailsDataType = '';
-    protected $merchantAffiliateProgramDetailsType = ChannelToStoreLinkDetailsMerchantAffiliateProgramDetails::class;
-    protected $merchantAffiliateProgramDetailsDataType = '';
-    /**
-     * Google Merchant Center id of the store.
-     *
-     * @var string
-     */
-    public $merchantId;
-    /**
-     * Name of the store.
-     *
-     * @var string
-     */
-    public $storeName;
-    /**
-     * Landing page of the store.
-     *
-     * @var string
-     */
-    public $storeUrl;
-    /**
-     * Information specific to billing (read-only).
-     *
-     * @param ChannelToStoreLinkDetailsBillingDetails $billingDetails
-     */
-    public function setBillingDetails(ChannelToStoreLinkDetailsBillingDetails $billingDetails)
+namespace Google\Service\YouTube {
+    class ChannelToStoreLinkDetails extends \Google\Model
     {
+        protected $billingDetailsType = ChannelToStoreLinkDetailsBillingDetails::class;
+        protected $billingDetailsDataType = '';
+        protected $merchantAffiliateProgramDetailsType = ChannelToStoreLinkDetailsMerchantAffiliateProgramDetails::class;
+        protected $merchantAffiliateProgramDetailsDataType = '';
+        /**
+         * Google Merchant Center id of the store.
+         *
+         * @var string
+         */
+        public $merchantId;
+        /**
+         * Name of the store.
+         *
+         * @var string
+         */
+        public $storeName;
+        /**
+         * Landing page of the store.
+         *
+         * @var string
+         */
+        public $storeUrl;
+        /**
+         * Information specific to billing (read-only).
+         *
+         * @param ChannelToStoreLinkDetailsBillingDetails $billingDetails
+         */
+        public function setBillingDetails(ChannelToStoreLinkDetailsBillingDetails $billingDetails)
+        {
+        }
+        /**
+         * @return ChannelToStoreLinkDetailsBillingDetails
+         */
+        public function getBillingDetails()
+        {
+        }
+        /**
+         * Information specific to merchant affiliate program (read-only).
+         *
+         * @param ChannelToStoreLinkDetailsMerchantAffiliateProgramDetails $merchantAffiliateProgramDetails
+         */
+        public function setMerchantAffiliateProgramDetails(ChannelToStoreLinkDetailsMerchantAffiliateProgramDetails $merchantAffiliateProgramDetails)
+        {
+        }
+        /**
+         * @return ChannelToStoreLinkDetailsMerchantAffiliateProgramDetails
+         */
+        public function getMerchantAffiliateProgramDetails()
+        {
+        }
+        /**
+         * Google Merchant Center id of the store.
+         *
+         * @param string $merchantId
+         */
+        public function setMerchantId($merchantId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMerchantId()
+        {
+        }
+        /**
+         * Name of the store.
+         *
+         * @param string $storeName
+         */
+        public function setStoreName($storeName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStoreName()
+        {
+        }
+        /**
+         * Landing page of the store.
+         *
+         * @param string $storeUrl
+         */
+        public function setStoreUrl($storeUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStoreUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ChannelToStoreLinkDetailsBillingDetails
+     * Runtime class alias of \Google\Service\YouTube\ChannelToStoreLinkDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBillingDetails()
-    {
-    }
-    /**
-     * Information specific to merchant affiliate program (read-only).
-     *
-     * @param ChannelToStoreLinkDetailsMerchantAffiliateProgramDetails $merchantAffiliateProgramDetails
-     */
-    public function setMerchantAffiliateProgramDetails(ChannelToStoreLinkDetailsMerchantAffiliateProgramDetails $merchantAffiliateProgramDetails)
-    {
-    }
-    /**
-     * @return ChannelToStoreLinkDetailsMerchantAffiliateProgramDetails
-     */
-    public function getMerchantAffiliateProgramDetails()
-    {
-    }
-    /**
-     * Google Merchant Center id of the store.
-     *
-     * @param string $merchantId
-     */
-    public function setMerchantId($merchantId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMerchantId()
-    {
-    }
-    /**
-     * Name of the store.
-     *
-     * @param string $storeName
-     */
-    public function setStoreName($storeName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStoreName()
-    {
-    }
-    /**
-     * Landing page of the store.
-     *
-     * @param string $storeUrl
-     */
-    public function setStoreUrl($storeUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStoreUrl()
+    class Google_Service_YouTube_ChannelToStoreLinkDetails extends \Google\Service\YouTube\ChannelToStoreLinkDetails
     {
     }
 }

@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMwareEngine;
-
-class AcceleratePrivateCloudDeletionRequest extends \Google\Model
-{
-    /**
-     * Optional. Checksum used to ensure that the user-provided value is up to
-     * date before the server processes the request. The server compares provided
-     * checksum with the current checksum of the resource. If the user-provided
-     * value is out of date, this request returns an `ABORTED` error.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Optional. The request ID must be a valid UUID with the exception that zero
-     * UUID is not supported (00000000-0000-0000-0000-000000000000).
-     *
-     * @var string
-     */
-    public $requestId;
-    /**
-     * Optional. Checksum used to ensure that the user-provided value is up to
-     * date before the server processes the request. The server compares provided
-     * checksum with the current checksum of the resource. If the user-provided
-     * value is out of date, this request returns an `ABORTED` error.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\VMwareEngine {
+    class AcceleratePrivateCloudDeletionRequest extends \Google\Model
     {
+        /**
+         * Optional. Checksum used to ensure that the user-provided value is up to
+         * date before the server processes the request. The server compares provided
+         * checksum with the current checksum of the resource. If the user-provided
+         * value is out of date, this request returns an `ABORTED` error.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Optional. The request ID must be a valid UUID with the exception that zero
+         * UUID is not supported (00000000-0000-0000-0000-000000000000).
+         *
+         * @var string
+         */
+        public $requestId;
+        /**
+         * Optional. Checksum used to ensure that the user-provided value is up to
+         * date before the server processes the request. The server compares provided
+         * checksum with the current checksum of the resource. If the user-provided
+         * value is out of date, this request returns an `ABORTED` error.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Optional. The request ID must be a valid UUID with the exception that zero
+         * UUID is not supported (00000000-0000-0000-0000-000000000000).
+         *
+         * @param string $requestId
+         */
+        public function setRequestId($requestId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\VMwareEngine\AcceleratePrivateCloudDeletionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * Optional. The request ID must be a valid UUID with the exception that zero
-     * UUID is not supported (00000000-0000-0000-0000-000000000000).
-     *
-     * @param string $requestId
-     */
-    public function setRequestId($requestId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestId()
+    class Google_Service_VMwareEngine_AcceleratePrivateCloudDeletionRequest extends \Google\Service\VMwareEngine\AcceleratePrivateCloudDeletionRequest
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1ListCmekConfigsResponse extends \Google\Collection
-{
-    protected $collection_key = 'cmekConfigs';
-    protected $cmekConfigsType = GoogleCloudDiscoveryengineV1CmekConfig::class;
-    protected $cmekConfigsDataType = 'array';
-    /**
-     * All the customer's CmekConfigs.
-     *
-     * @param GoogleCloudDiscoveryengineV1CmekConfig[] $cmekConfigs
-     */
-    public function setCmekConfigs($cmekConfigs)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1ListCmekConfigsResponse extends \Google\Collection
     {
+        protected $collection_key = 'cmekConfigs';
+        protected $cmekConfigsType = GoogleCloudDiscoveryengineV1CmekConfig::class;
+        protected $cmekConfigsDataType = 'array';
+        /**
+         * All the customer's CmekConfigs.
+         *
+         * @param GoogleCloudDiscoveryengineV1CmekConfig[] $cmekConfigs
+         */
+        public function setCmekConfigs($cmekConfigs)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1CmekConfig[]
+         */
+        public function getCmekConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1CmekConfig[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ListCmekConfigsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCmekConfigs()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1ListCmekConfigsResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ListCmekConfigsResponse
     {
     }
 }

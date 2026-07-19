@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class PubsubSnapshotMetadata extends \Google\Model
-{
-    /**
-     * The expire time of the Pubsub snapshot.
-     *
-     * @var string
-     */
-    public $expireTime;
-    /**
-     * The name of the Pubsub snapshot.
-     *
-     * @var string
-     */
-    public $snapshotName;
-    /**
-     * The name of the Pubsub topic.
-     *
-     * @var string
-     */
-    public $topicName;
-    /**
-     * The expire time of the Pubsub snapshot.
-     *
-     * @param string $expireTime
-     */
-    public function setExpireTime($expireTime)
+namespace Google\Service\Dataflow {
+    class PubsubSnapshotMetadata extends \Google\Model
     {
+        /**
+         * The expire time of the Pubsub snapshot.
+         *
+         * @var string
+         */
+        public $expireTime;
+        /**
+         * The name of the Pubsub snapshot.
+         *
+         * @var string
+         */
+        public $snapshotName;
+        /**
+         * The name of the Pubsub topic.
+         *
+         * @var string
+         */
+        public $topicName;
+        /**
+         * The expire time of the Pubsub snapshot.
+         *
+         * @param string $expireTime
+         */
+        public function setExpireTime($expireTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpireTime()
+        {
+        }
+        /**
+         * The name of the Pubsub snapshot.
+         *
+         * @param string $snapshotName
+         */
+        public function setSnapshotName($snapshotName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSnapshotName()
+        {
+        }
+        /**
+         * The name of the Pubsub topic.
+         *
+         * @param string $topicName
+         */
+        public function setTopicName($topicName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTopicName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\PubsubSnapshotMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExpireTime()
-    {
-    }
-    /**
-     * The name of the Pubsub snapshot.
-     *
-     * @param string $snapshotName
-     */
-    public function setSnapshotName($snapshotName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSnapshotName()
-    {
-    }
-    /**
-     * The name of the Pubsub topic.
-     *
-     * @param string $topicName
-     */
-    public function setTopicName($topicName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTopicName()
+    class Google_Service_Dataflow_PubsubSnapshotMetadata extends \Google\Service\Dataflow\PubsubSnapshotMetadata
     {
     }
 }

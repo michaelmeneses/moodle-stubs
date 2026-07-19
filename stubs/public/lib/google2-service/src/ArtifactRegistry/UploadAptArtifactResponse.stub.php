@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class UploadAptArtifactResponse extends \Google\Collection
-{
-    protected $collection_key = 'aptArtifacts';
-    protected $aptArtifactsType = AptArtifact::class;
-    protected $aptArtifactsDataType = 'array';
-    /**
-     * The Apt artifacts updated.
-     *
-     * @param AptArtifact[] $aptArtifacts
-     */
-    public function setAptArtifacts($aptArtifacts)
+namespace Google\Service\ArtifactRegistry {
+    class UploadAptArtifactResponse extends \Google\Collection
     {
+        protected $collection_key = 'aptArtifacts';
+        protected $aptArtifactsType = AptArtifact::class;
+        protected $aptArtifactsDataType = 'array';
+        /**
+         * The Apt artifacts updated.
+         *
+         * @param AptArtifact[] $aptArtifacts
+         */
+        public function setAptArtifacts($aptArtifacts)
+        {
+        }
+        /**
+         * @return AptArtifact[]
+         */
+        public function getAptArtifacts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AptArtifact[]
+     * Runtime class alias of \Google\Service\ArtifactRegistry\UploadAptArtifactResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAptArtifacts()
+    class Google_Service_ArtifactRegistry_UploadAptArtifactResponse extends \Google\Service\ArtifactRegistry\UploadAptArtifactResponse
     {
     }
 }

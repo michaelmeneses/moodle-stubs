@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecommendationsAI;
-
-class GoogleCloudRecommendationengineV1beta1FeatureMapStringList extends \Google\Collection
-{
-    protected $collection_key = 'value';
-    /**
-     * String feature value with a length limit of 128 bytes.
-     *
-     * @var string[]
-     */
-    public $value;
-    /**
-     * String feature value with a length limit of 128 bytes.
-     *
-     * @param string[] $value
-     */
-    public function setValue($value)
+namespace Google\Service\RecommendationsAI {
+    class GoogleCloudRecommendationengineV1beta1FeatureMapStringList extends \Google\Collection
     {
+        protected $collection_key = 'value';
+        /**
+         * String feature value with a length limit of 128 bytes.
+         *
+         * @var string[]
+         */
+        public $value;
+        /**
+         * String feature value with a length limit of 128 bytes.
+         *
+         * @param string[] $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1FeatureMapStringList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValue()
+    class Google_Service_RecommendationsAI_GoogleCloudRecommendationengineV1beta1FeatureMapStringList extends \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1FeatureMapStringList
     {
     }
 }

@@ -21,21 +21,30 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaDoubleParameterArray extends \Google\Collection
-{
-    protected $collection_key = 'doubleValues';
-    /**
-     * Double number array.
-     *
-     * @var []
-     */
-    public $doubleValues;
-    public function setDoubleValues($doubleValues)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaDoubleParameterArray extends \Google\Collection
     {
+        protected $collection_key = 'doubleValues';
+        /**
+         * Double number array.
+         *
+         * @var []
+         */
+        public $doubleValues;
+        public function setDoubleValues($doubleValues)
+        {
+        }
+        public function getDoubleValues()
+        {
+        }
     }
-    public function getDoubleValues()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaDoubleParameterArray registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaDoubleParameterArray extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaDoubleParameterArray
     {
     }
 }

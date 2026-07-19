@@ -21,40 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataManager\Resource;
-
-/**
- * The "audienceMembers" collection of methods.
- * Typical usage is:
- *  <code>
- *   $datamanagerService = new Google\Service\DataManager(...);
- *   $audienceMembers = $datamanagerService->audienceMembers;
- *  </code>
- */
-class AudienceMembers extends \Google\Service\Resource
-{
+namespace Google\Service\DataManager\Resource {
+    use Google\Service\DataManager\IngestAudienceMembersRequest;
+    use Google\Service\DataManager\IngestAudienceMembersResponse;
+    use Google\Service\DataManager\RemoveAudienceMembersRequest;
+    use Google\Service\DataManager\RemoveAudienceMembersResponse;
     /**
-     * Uploads a list of AudienceMember resources to the provided Destination.
-     * (audienceMembers.ingest)
-     *
-     * @param IngestAudienceMembersRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return IngestAudienceMembersResponse
-     * @throws \Google\Service\Exception
+     * The "audienceMembers" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $datamanagerService = new Google\Service\DataManager(...);
+     *   $audienceMembers = $datamanagerService->audienceMembers;
+     *  </code>
      */
-    public function ingest(IngestAudienceMembersRequest $postBody, $optParams = [])
+    class AudienceMembers extends \Google\Service\Resource
     {
+        /**
+         * Uploads a list of AudienceMember resources to the provided Destination.
+         * (audienceMembers.ingest)
+         *
+         * @param IngestAudienceMembersRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return IngestAudienceMembersResponse
+         * @throws \Google\Service\Exception
+         */
+        public function ingest(IngestAudienceMembersRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Removes a list of AudienceMember resources from the provided Destination.
+         * (audienceMembers.remove)
+         *
+         * @param RemoveAudienceMembersRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return RemoveAudienceMembersResponse
+         * @throws \Google\Service\Exception
+         */
+        public function remove(RemoveAudienceMembersRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Removes a list of AudienceMember resources from the provided Destination.
-     * (audienceMembers.remove)
-     *
-     * @param RemoveAudienceMembersRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return RemoveAudienceMembersResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\DataManager\Resource\AudienceMembers registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function remove(RemoveAudienceMembersRequest $postBody, $optParams = [])
+    class Google_Service_DataManager_Resource_AudienceMembers extends \Google\Service\DataManager\Resource\AudienceMembers
     {
     }
 }

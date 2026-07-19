@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1MutateDeployedModelResponse extends \Google\Model
-{
-    protected $deployedModelType = GoogleCloudAiplatformV1DeployedModel::class;
-    protected $deployedModelDataType = '';
-    /**
-     * The DeployedModel that's being mutated.
-     *
-     * @param GoogleCloudAiplatformV1DeployedModel $deployedModel
-     */
-    public function setDeployedModel(GoogleCloudAiplatformV1DeployedModel $deployedModel)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1MutateDeployedModelResponse extends \Google\Model
     {
+        protected $deployedModelType = GoogleCloudAiplatformV1DeployedModel::class;
+        protected $deployedModelDataType = '';
+        /**
+         * The DeployedModel that's being mutated.
+         *
+         * @param GoogleCloudAiplatformV1DeployedModel $deployedModel
+         */
+        public function setDeployedModel(GoogleCloudAiplatformV1DeployedModel $deployedModel)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1DeployedModel
+         */
+        public function getDeployedModel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1DeployedModel
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1MutateDeployedModelResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeployedModel()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1MutateDeployedModelResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1MutateDeployedModelResponse
     {
     }
 }

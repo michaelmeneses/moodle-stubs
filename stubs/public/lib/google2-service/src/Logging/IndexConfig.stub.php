@@ -21,93 +21,102 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Logging;
-
-class IndexConfig extends \Google\Model
-{
-    /**
-     * The index's type is unspecified.
-     */
-    public const TYPE_INDEX_TYPE_UNSPECIFIED = 'INDEX_TYPE_UNSPECIFIED';
-    /**
-     * The index is a string-type index.
-     */
-    public const TYPE_INDEX_TYPE_STRING = 'INDEX_TYPE_STRING';
-    /**
-     * The index is a integer-type index.
-     */
-    public const TYPE_INDEX_TYPE_INTEGER = 'INDEX_TYPE_INTEGER';
-    /**
-     * Output only. The timestamp when the index was last modified.This is used to
-     * return the timestamp, and will be ignored if supplied during update.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Required. The LogEntry field path to index.Note that some paths are
-     * automatically indexed, and other paths are not eligible for indexing. See
-     * indexing documentation(
-     * https://cloud.google.com/logging/docs/analyze/custom-index) for details.For
-     * example: jsonPayload.request.status
-     *
-     * @var string
-     */
-    public $fieldPath;
-    /**
-     * Required. The type of data in this index.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Output only. The timestamp when the index was last modified.This is used to
-     * return the timestamp, and will be ignored if supplied during update.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Logging {
+    class IndexConfig extends \Google\Model
     {
+        /**
+         * The index's type is unspecified.
+         */
+        public const TYPE_INDEX_TYPE_UNSPECIFIED = 'INDEX_TYPE_UNSPECIFIED';
+        /**
+         * The index is a string-type index.
+         */
+        public const TYPE_INDEX_TYPE_STRING = 'INDEX_TYPE_STRING';
+        /**
+         * The index is a integer-type index.
+         */
+        public const TYPE_INDEX_TYPE_INTEGER = 'INDEX_TYPE_INTEGER';
+        /**
+         * Output only. The timestamp when the index was last modified.This is used to
+         * return the timestamp, and will be ignored if supplied during update.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Required. The LogEntry field path to index.Note that some paths are
+         * automatically indexed, and other paths are not eligible for indexing. See
+         * indexing documentation(
+         * https://cloud.google.com/logging/docs/analyze/custom-index) for details.For
+         * example: jsonPayload.request.status
+         *
+         * @var string
+         */
+        public $fieldPath;
+        /**
+         * Required. The type of data in this index.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Output only. The timestamp when the index was last modified.This is used to
+         * return the timestamp, and will be ignored if supplied during update.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Required. The LogEntry field path to index.Note that some paths are
+         * automatically indexed, and other paths are not eligible for indexing. See
+         * indexing documentation(
+         * https://cloud.google.com/logging/docs/analyze/custom-index) for details.For
+         * example: jsonPayload.request.status
+         *
+         * @param string $fieldPath
+         */
+        public function setFieldPath($fieldPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFieldPath()
+        {
+        }
+        /**
+         * Required. The type of data in this index.
+         *
+         * Accepted values: INDEX_TYPE_UNSPECIFIED, INDEX_TYPE_STRING,
+         * INDEX_TYPE_INTEGER
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Logging\IndexConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Required. The LogEntry field path to index.Note that some paths are
-     * automatically indexed, and other paths are not eligible for indexing. See
-     * indexing documentation(
-     * https://cloud.google.com/logging/docs/analyze/custom-index) for details.For
-     * example: jsonPayload.request.status
-     *
-     * @param string $fieldPath
-     */
-    public function setFieldPath($fieldPath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFieldPath()
-    {
-    }
-    /**
-     * Required. The type of data in this index.
-     *
-     * Accepted values: INDEX_TYPE_UNSPECIFIED, INDEX_TYPE_STRING,
-     * INDEX_TYPE_INTEGER
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_Logging_IndexConfig extends \Google\Service\Logging\IndexConfig
     {
     }
 }

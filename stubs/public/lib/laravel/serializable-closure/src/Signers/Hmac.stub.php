@@ -8,6 +8,7 @@
  */
 namespace Laravel\SerializableClosure\Signers;
 
+use Laravel\SerializableClosure\Contracts\Signer;
 class Hmac implements Signer
 {
     /**

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1Session extends \Google\Model
-{
-    /**
-     * The debug session ID.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The first transaction creation timestamp in millisecond, recorded by UAP.
-     *
-     * @var string
-     */
-    public $timestampMs;
-    /**
-     * The debug session ID.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1Session extends \Google\Model
     {
+        /**
+         * The debug session ID.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The first transaction creation timestamp in millisecond, recorded by UAP.
+         *
+         * @var string
+         */
+        public $timestampMs;
+        /**
+         * The debug session ID.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The first transaction creation timestamp in millisecond, recorded by UAP.
+         *
+         * @param string $timestampMs
+         */
+        public function setTimestampMs($timestampMs)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimestampMs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1Session registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * The first transaction creation timestamp in millisecond, recorded by UAP.
-     *
-     * @param string $timestampMs
-     */
-    public function setTimestampMs($timestampMs)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimestampMs()
+    class Google_Service_Apigee_GoogleCloudApigeeV1Session extends \Google\Service\Apigee\GoogleCloudApigeeV1Session
     {
     }
 }

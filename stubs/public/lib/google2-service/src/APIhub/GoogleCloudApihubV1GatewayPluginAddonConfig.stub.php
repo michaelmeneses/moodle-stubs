@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1GatewayPluginAddonConfig extends \Google\Collection
-{
-    protected $collection_key = 'gatewayPluginConfigs';
-    protected $gatewayPluginConfigsType = GoogleCloudApihubV1GatewayPluginConfig::class;
-    protected $gatewayPluginConfigsDataType = 'array';
-    /**
-     * Required. The list of gateway plugin configs for which the addon is
-     * enabled. Each gateway plugin config should have a unique plugin instance.
-     *
-     * @param GoogleCloudApihubV1GatewayPluginConfig[] $gatewayPluginConfigs
-     */
-    public function setGatewayPluginConfigs($gatewayPluginConfigs)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1GatewayPluginAddonConfig extends \Google\Collection
     {
+        protected $collection_key = 'gatewayPluginConfigs';
+        protected $gatewayPluginConfigsType = GoogleCloudApihubV1GatewayPluginConfig::class;
+        protected $gatewayPluginConfigsDataType = 'array';
+        /**
+         * Required. The list of gateway plugin configs for which the addon is
+         * enabled. Each gateway plugin config should have a unique plugin instance.
+         *
+         * @param GoogleCloudApihubV1GatewayPluginConfig[] $gatewayPluginConfigs
+         */
+        public function setGatewayPluginConfigs($gatewayPluginConfigs)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1GatewayPluginConfig[]
+         */
+        public function getGatewayPluginConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApihubV1GatewayPluginConfig[]
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1GatewayPluginAddonConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGatewayPluginConfigs()
+    class Google_Service_APIhub_GoogleCloudApihubV1GatewayPluginAddonConfig extends \Google\Service\APIhub\GoogleCloudApihubV1GatewayPluginAddonConfig
     {
     }
 }

@@ -21,112 +21,121 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class PolicySnapshot extends \Google\Model
-{
-    /**
-     * No severity is specified. This is the default value.
-     */
-    public const SEVERITY_SEVERITY_UNSPECIFIED = 'SEVERITY_UNSPECIFIED';
-    /**
-     * This is the highest severity level. Use this if the problem could cause
-     * significant damage or downtime.
-     */
-    public const SEVERITY_CRITICAL = 'CRITICAL';
-    /**
-     * This is the medium severity level. Use this if the problem could cause
-     * minor damage or downtime.
-     */
-    public const SEVERITY_ERROR = 'ERROR';
-    /**
-     * This is the lowest severity level. Use this if the problem is not causing
-     * any damage or downtime, but could potentially lead to a problem in the
-     * future.
-     */
-    public const SEVERITY_WARNING = 'WARNING';
-    /**
-     * The display name of the alert policy.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The name of the alert policy resource. In the form of
-     * "projects/PROJECT_ID_OR_NUMBER/alertPolicies/ALERT_POLICY_ID".
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The severity of the alert policy.
-     *
-     * @var string
-     */
-    public $severity;
-    /**
-     * The user labels for the alert policy.
-     *
-     * @var string[]
-     */
-    public $userLabels;
-    /**
-     * The display name of the alert policy.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\Monitoring {
+    class PolicySnapshot extends \Google\Model
     {
+        /**
+         * No severity is specified. This is the default value.
+         */
+        public const SEVERITY_SEVERITY_UNSPECIFIED = 'SEVERITY_UNSPECIFIED';
+        /**
+         * This is the highest severity level. Use this if the problem could cause
+         * significant damage or downtime.
+         */
+        public const SEVERITY_CRITICAL = 'CRITICAL';
+        /**
+         * This is the medium severity level. Use this if the problem could cause
+         * minor damage or downtime.
+         */
+        public const SEVERITY_ERROR = 'ERROR';
+        /**
+         * This is the lowest severity level. Use this if the problem is not causing
+         * any damage or downtime, but could potentially lead to a problem in the
+         * future.
+         */
+        public const SEVERITY_WARNING = 'WARNING';
+        /**
+         * The display name of the alert policy.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The name of the alert policy resource. In the form of
+         * "projects/PROJECT_ID_OR_NUMBER/alertPolicies/ALERT_POLICY_ID".
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The severity of the alert policy.
+         *
+         * @var string
+         */
+        public $severity;
+        /**
+         * The user labels for the alert policy.
+         *
+         * @var string[]
+         */
+        public $userLabels;
+        /**
+         * The display name of the alert policy.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The name of the alert policy resource. In the form of
+         * "projects/PROJECT_ID_OR_NUMBER/alertPolicies/ALERT_POLICY_ID".
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The severity of the alert policy.
+         *
+         * Accepted values: SEVERITY_UNSPECIFIED, CRITICAL, ERROR, WARNING
+         *
+         * @param self::SEVERITY_* $severity
+         */
+        public function setSeverity($severity)
+        {
+        }
+        /**
+         * @return self::SEVERITY_*
+         */
+        public function getSeverity()
+        {
+        }
+        /**
+         * The user labels for the alert policy.
+         *
+         * @param string[] $userLabels
+         */
+        public function setUserLabels($userLabels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUserLabels()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Monitoring\PolicySnapshot registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The name of the alert policy resource. In the form of
-     * "projects/PROJECT_ID_OR_NUMBER/alertPolicies/ALERT_POLICY_ID".
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The severity of the alert policy.
-     *
-     * Accepted values: SEVERITY_UNSPECIFIED, CRITICAL, ERROR, WARNING
-     *
-     * @param self::SEVERITY_* $severity
-     */
-    public function setSeverity($severity)
-    {
-    }
-    /**
-     * @return self::SEVERITY_*
-     */
-    public function getSeverity()
-    {
-    }
-    /**
-     * The user labels for the alert policy.
-     *
-     * @param string[] $userLabels
-     */
-    public function setUserLabels($userLabels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUserLabels()
+    class Google_Service_Monitoring_PolicySnapshot extends \Google\Service\Monitoring\PolicySnapshot
     {
     }
 }

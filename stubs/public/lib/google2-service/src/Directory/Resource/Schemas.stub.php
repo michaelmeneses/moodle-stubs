@@ -21,100 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory\Resource;
-
-/**
- * The "schemas" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adminService = new Google\Service\Directory(...);
- *   $schemas = $adminService->schemas;
- *  </code>
- */
-class Schemas extends \Google\Service\Resource
-{
+namespace Google\Service\Directory\Resource {
+    use Google\Service\Directory\Schema;
+    use Google\Service\Directory\Schemas as SchemasModel;
     /**
-     * Deletes a schema. (schemas.delete)
-     *
-     * @param string $customerId Immutable ID of the Google Workspace account.
-     * @param string $schemaKey Name or immutable ID of the schema.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "schemas" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adminService = new Google\Service\Directory(...);
+     *   $schemas = $adminService->schemas;
+     *  </code>
      */
-    public function delete($customerId, $schemaKey, $optParams = [])
+    class Schemas extends \Google\Service\Resource
     {
+        /**
+         * Deletes a schema. (schemas.delete)
+         *
+         * @param string $customerId Immutable ID of the Google Workspace account.
+         * @param string $schemaKey Name or immutable ID of the schema.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($customerId, $schemaKey, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a schema. (schemas.get)
+         *
+         * @param string $customerId The unique ID for the customer's Google Workspace
+         * account. In case of a multi-domain account, to fetch all groups for a
+         * customer, use this field instead of `domain`. You can also use the
+         * `my_customer` alias to represent your account's `customerId`. The
+         * `customerId` is also returned as part of the [Users](https://developers.googl
+         * e.com/workspace/admin/directory/v1/reference/users) resource. You must
+         * provide either the `customer` or the `domain` parameter.
+         * @param string $schemaKey Name or immutable ID of the schema.
+         * @param array $optParams Optional parameters.
+         * @return Schema
+         * @throws \Google\Service\Exception
+         */
+        public function get($customerId, $schemaKey, $optParams = [])
+        {
+        }
+        /**
+         * Creates a schema. (schemas.insert)
+         *
+         * @param string $customerId Immutable ID of the Google Workspace account.
+         * @param Schema $postBody
+         * @param array $optParams Optional parameters.
+         * @return Schema
+         * @throws \Google\Service\Exception
+         */
+        public function insert($customerId, Schema $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves all schemas for a customer. (schemas.listSchemas)
+         *
+         * @param string $customerId The unique ID for the customer's Google Workspace
+         * account. In case of a multi-domain account, to fetch all groups for a
+         * customer, use this field instead of `domain`. You can also use the
+         * `my_customer` alias to represent your account's `customerId`. The
+         * `customerId` is also returned as part of the [Users](https://developers.googl
+         * e.com/workspace/admin/directory/v1/reference/users) resource. You must
+         * provide either the `customer` or the `domain` parameter.
+         * @param array $optParams Optional parameters.
+         * @return SchemasModel
+         * @throws \Google\Service\Exception
+         */
+        public function listSchemas($customerId, $optParams = [])
+        {
+        }
+        /**
+         * Patches a schema. (schemas.patch)
+         *
+         * @param string $customerId Immutable ID of the Google Workspace account.
+         * @param string $schemaKey Name or immutable ID of the schema.
+         * @param Schema $postBody
+         * @param array $optParams Optional parameters.
+         * @return Schema
+         * @throws \Google\Service\Exception
+         */
+        public function patch($customerId, $schemaKey, Schema $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates a schema. (schemas.update)
+         *
+         * @param string $customerId Immutable ID of the Google Workspace account.
+         * @param string $schemaKey Name or immutable ID of the schema.
+         * @param Schema $postBody
+         * @param array $optParams Optional parameters.
+         * @return Schema
+         * @throws \Google\Service\Exception
+         */
+        public function update($customerId, $schemaKey, Schema $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves a schema. (schemas.get)
-     *
-     * @param string $customerId The unique ID for the customer's Google Workspace
-     * account. In case of a multi-domain account, to fetch all groups for a
-     * customer, use this field instead of `domain`. You can also use the
-     * `my_customer` alias to represent your account's `customerId`. The
-     * `customerId` is also returned as part of the [Users](https://developers.googl
-     * e.com/workspace/admin/directory/v1/reference/users) resource. You must
-     * provide either the `customer` or the `domain` parameter.
-     * @param string $schemaKey Name or immutable ID of the schema.
-     * @param array $optParams Optional parameters.
-     * @return Schema
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Directory\Resource\Schemas registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($customerId, $schemaKey, $optParams = [])
-    {
-    }
-    /**
-     * Creates a schema. (schemas.insert)
-     *
-     * @param string $customerId Immutable ID of the Google Workspace account.
-     * @param Schema $postBody
-     * @param array $optParams Optional parameters.
-     * @return Schema
-     * @throws \Google\Service\Exception
-     */
-    public function insert($customerId, Schema $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves all schemas for a customer. (schemas.listSchemas)
-     *
-     * @param string $customerId The unique ID for the customer's Google Workspace
-     * account. In case of a multi-domain account, to fetch all groups for a
-     * customer, use this field instead of `domain`. You can also use the
-     * `my_customer` alias to represent your account's `customerId`. The
-     * `customerId` is also returned as part of the [Users](https://developers.googl
-     * e.com/workspace/admin/directory/v1/reference/users) resource. You must
-     * provide either the `customer` or the `domain` parameter.
-     * @param array $optParams Optional parameters.
-     * @return SchemasModel
-     * @throws \Google\Service\Exception
-     */
-    public function listSchemas($customerId, $optParams = [])
-    {
-    }
-    /**
-     * Patches a schema. (schemas.patch)
-     *
-     * @param string $customerId Immutable ID of the Google Workspace account.
-     * @param string $schemaKey Name or immutable ID of the schema.
-     * @param Schema $postBody
-     * @param array $optParams Optional parameters.
-     * @return Schema
-     * @throws \Google\Service\Exception
-     */
-    public function patch($customerId, $schemaKey, Schema $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates a schema. (schemas.update)
-     *
-     * @param string $customerId Immutable ID of the Google Workspace account.
-     * @param string $schemaKey Name or immutable ID of the schema.
-     * @param Schema $postBody
-     * @param array $optParams Optional parameters.
-     * @return Schema
-     * @throws \Google\Service\Exception
-     */
-    public function update($customerId, $schemaKey, Schema $postBody, $optParams = [])
+    class Google_Service_Directory_Resource_Schemas extends \Google\Service\Directory\Resource\Schemas
     {
     }
 }

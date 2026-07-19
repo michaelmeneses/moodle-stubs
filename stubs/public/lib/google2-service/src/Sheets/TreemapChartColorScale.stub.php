@@ -21,160 +21,169 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class TreemapChartColorScale extends \Google\Model
-{
-    protected $maxValueColorType = Color::class;
-    protected $maxValueColorDataType = '';
-    protected $maxValueColorStyleType = ColorStyle::class;
-    protected $maxValueColorStyleDataType = '';
-    protected $midValueColorType = Color::class;
-    protected $midValueColorDataType = '';
-    protected $midValueColorStyleType = ColorStyle::class;
-    protected $midValueColorStyleDataType = '';
-    protected $minValueColorType = Color::class;
-    protected $minValueColorDataType = '';
-    protected $minValueColorStyleType = ColorStyle::class;
-    protected $minValueColorStyleDataType = '';
-    protected $noDataColorType = Color::class;
-    protected $noDataColorDataType = '';
-    protected $noDataColorStyleType = ColorStyle::class;
-    protected $noDataColorStyleDataType = '';
-    /**
-     * The background color for cells with a color value greater than or equal to
-     * maxValue. Defaults to #109618 if not specified. Deprecated: Use
-     * max_value_color_style.
-     *
-     * @deprecated
-     * @param Color $maxValueColor
-     */
-    public function setMaxValueColor(Color $maxValueColor)
+namespace Google\Service\Sheets {
+    class TreemapChartColorScale extends \Google\Model
     {
+        protected $maxValueColorType = Color::class;
+        protected $maxValueColorDataType = '';
+        protected $maxValueColorStyleType = ColorStyle::class;
+        protected $maxValueColorStyleDataType = '';
+        protected $midValueColorType = Color::class;
+        protected $midValueColorDataType = '';
+        protected $midValueColorStyleType = ColorStyle::class;
+        protected $midValueColorStyleDataType = '';
+        protected $minValueColorType = Color::class;
+        protected $minValueColorDataType = '';
+        protected $minValueColorStyleType = ColorStyle::class;
+        protected $minValueColorStyleDataType = '';
+        protected $noDataColorType = Color::class;
+        protected $noDataColorDataType = '';
+        protected $noDataColorStyleType = ColorStyle::class;
+        protected $noDataColorStyleDataType = '';
+        /**
+         * The background color for cells with a color value greater than or equal to
+         * maxValue. Defaults to #109618 if not specified. Deprecated: Use
+         * max_value_color_style.
+         *
+         * @deprecated
+         * @param Color $maxValueColor
+         */
+        public function setMaxValueColor(Color $maxValueColor)
+        {
+        }
+        /**
+         * @deprecated
+         * @return Color
+         */
+        public function getMaxValueColor()
+        {
+        }
+        /**
+         * The background color for cells with a color value greater than or equal to
+         * maxValue. Defaults to #109618 if not specified. If max_value_color is also
+         * set, this field takes precedence.
+         *
+         * @param ColorStyle $maxValueColorStyle
+         */
+        public function setMaxValueColorStyle(ColorStyle $maxValueColorStyle)
+        {
+        }
+        /**
+         * @return ColorStyle
+         */
+        public function getMaxValueColorStyle()
+        {
+        }
+        /**
+         * The background color for cells with a color value at the midpoint between
+         * minValue and maxValue. Defaults to #efe6dc if not specified. Deprecated:
+         * Use mid_value_color_style.
+         *
+         * @deprecated
+         * @param Color $midValueColor
+         */
+        public function setMidValueColor(Color $midValueColor)
+        {
+        }
+        /**
+         * @deprecated
+         * @return Color
+         */
+        public function getMidValueColor()
+        {
+        }
+        /**
+         * The background color for cells with a color value at the midpoint between
+         * minValue and maxValue. Defaults to #efe6dc if not specified. If
+         * mid_value_color is also set, this field takes precedence.
+         *
+         * @param ColorStyle $midValueColorStyle
+         */
+        public function setMidValueColorStyle(ColorStyle $midValueColorStyle)
+        {
+        }
+        /**
+         * @return ColorStyle
+         */
+        public function getMidValueColorStyle()
+        {
+        }
+        /**
+         * The background color for cells with a color value less than or equal to
+         * minValue. Defaults to #dc3912 if not specified. Deprecated: Use
+         * min_value_color_style.
+         *
+         * @deprecated
+         * @param Color $minValueColor
+         */
+        public function setMinValueColor(Color $minValueColor)
+        {
+        }
+        /**
+         * @deprecated
+         * @return Color
+         */
+        public function getMinValueColor()
+        {
+        }
+        /**
+         * The background color for cells with a color value less than or equal to
+         * minValue. Defaults to #dc3912 if not specified. If min_value_color is also
+         * set, this field takes precedence.
+         *
+         * @param ColorStyle $minValueColorStyle
+         */
+        public function setMinValueColorStyle(ColorStyle $minValueColorStyle)
+        {
+        }
+        /**
+         * @return ColorStyle
+         */
+        public function getMinValueColorStyle()
+        {
+        }
+        /**
+         * The background color for cells that have no color data associated with
+         * them. Defaults to #000000 if not specified. Deprecated: Use
+         * no_data_color_style.
+         *
+         * @deprecated
+         * @param Color $noDataColor
+         */
+        public function setNoDataColor(Color $noDataColor)
+        {
+        }
+        /**
+         * @deprecated
+         * @return Color
+         */
+        public function getNoDataColor()
+        {
+        }
+        /**
+         * The background color for cells that have no color data associated with
+         * them. Defaults to #000000 if not specified. If no_data_color is also set,
+         * this field takes precedence.
+         *
+         * @param ColorStyle $noDataColorStyle
+         */
+        public function setNoDataColorStyle(ColorStyle $noDataColorStyle)
+        {
+        }
+        /**
+         * @return ColorStyle
+         */
+        public function getNoDataColorStyle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return Color
+     * Runtime class alias of \Google\Service\Sheets\TreemapChartColorScale registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxValueColor()
-    {
-    }
-    /**
-     * The background color for cells with a color value greater than or equal to
-     * maxValue. Defaults to #109618 if not specified. If max_value_color is also
-     * set, this field takes precedence.
-     *
-     * @param ColorStyle $maxValueColorStyle
-     */
-    public function setMaxValueColorStyle(ColorStyle $maxValueColorStyle)
-    {
-    }
-    /**
-     * @return ColorStyle
-     */
-    public function getMaxValueColorStyle()
-    {
-    }
-    /**
-     * The background color for cells with a color value at the midpoint between
-     * minValue and maxValue. Defaults to #efe6dc if not specified. Deprecated:
-     * Use mid_value_color_style.
-     *
-     * @deprecated
-     * @param Color $midValueColor
-     */
-    public function setMidValueColor(Color $midValueColor)
-    {
-    }
-    /**
-     * @deprecated
-     * @return Color
-     */
-    public function getMidValueColor()
-    {
-    }
-    /**
-     * The background color for cells with a color value at the midpoint between
-     * minValue and maxValue. Defaults to #efe6dc if not specified. If
-     * mid_value_color is also set, this field takes precedence.
-     *
-     * @param ColorStyle $midValueColorStyle
-     */
-    public function setMidValueColorStyle(ColorStyle $midValueColorStyle)
-    {
-    }
-    /**
-     * @return ColorStyle
-     */
-    public function getMidValueColorStyle()
-    {
-    }
-    /**
-     * The background color for cells with a color value less than or equal to
-     * minValue. Defaults to #dc3912 if not specified. Deprecated: Use
-     * min_value_color_style.
-     *
-     * @deprecated
-     * @param Color $minValueColor
-     */
-    public function setMinValueColor(Color $minValueColor)
-    {
-    }
-    /**
-     * @deprecated
-     * @return Color
-     */
-    public function getMinValueColor()
-    {
-    }
-    /**
-     * The background color for cells with a color value less than or equal to
-     * minValue. Defaults to #dc3912 if not specified. If min_value_color is also
-     * set, this field takes precedence.
-     *
-     * @param ColorStyle $minValueColorStyle
-     */
-    public function setMinValueColorStyle(ColorStyle $minValueColorStyle)
-    {
-    }
-    /**
-     * @return ColorStyle
-     */
-    public function getMinValueColorStyle()
-    {
-    }
-    /**
-     * The background color for cells that have no color data associated with
-     * them. Defaults to #000000 if not specified. Deprecated: Use
-     * no_data_color_style.
-     *
-     * @deprecated
-     * @param Color $noDataColor
-     */
-    public function setNoDataColor(Color $noDataColor)
-    {
-    }
-    /**
-     * @deprecated
-     * @return Color
-     */
-    public function getNoDataColor()
-    {
-    }
-    /**
-     * The background color for cells that have no color data associated with
-     * them. Defaults to #000000 if not specified. If no_data_color is also set,
-     * this field takes precedence.
-     *
-     * @param ColorStyle $noDataColorStyle
-     */
-    public function setNoDataColorStyle(ColorStyle $noDataColorStyle)
-    {
-    }
-    /**
-     * @return ColorStyle
-     */
-    public function getNoDataColorStyle()
+    class Google_Service_Sheets_TreemapChartColorScale extends \Google\Service\Sheets\TreemapChartColorScale
     {
     }
 }

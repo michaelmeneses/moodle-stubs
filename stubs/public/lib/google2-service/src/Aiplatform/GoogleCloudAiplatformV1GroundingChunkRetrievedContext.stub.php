@@ -21,113 +21,122 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1GroundingChunkRetrievedContext extends \Google\Model
-{
-    /**
-     * Output only. The full resource name of the referenced Vertex AI Search
-     * document. This is used to identify the specific document that was
-     * retrieved. The format is `projects/{project}/locations/{location}/collectio
-     * ns/{collection}/dataStores/{data_store}/branches/{branch}/documents/{docume
-     * nt}`.
-     *
-     * @var string
-     */
-    public $documentName;
-    protected $ragChunkType = GoogleCloudAiplatformV1RagChunk::class;
-    protected $ragChunkDataType = '';
-    /**
-     * The content of the retrieved data source.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * The title of the retrieved data source.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * The URI of the retrieved data source.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Output only. The full resource name of the referenced Vertex AI Search
-     * document. This is used to identify the specific document that was
-     * retrieved. The format is `projects/{project}/locations/{location}/collectio
-     * ns/{collection}/dataStores/{data_store}/branches/{branch}/documents/{docume
-     * nt}`.
-     *
-     * @param string $documentName
-     */
-    public function setDocumentName($documentName)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1GroundingChunkRetrievedContext extends \Google\Model
     {
+        /**
+         * Output only. The full resource name of the referenced Vertex AI Search
+         * document. This is used to identify the specific document that was
+         * retrieved. The format is `projects/{project}/locations/{location}/collectio
+         * ns/{collection}/dataStores/{data_store}/branches/{branch}/documents/{docume
+         * nt}`.
+         *
+         * @var string
+         */
+        public $documentName;
+        protected $ragChunkType = GoogleCloudAiplatformV1RagChunk::class;
+        protected $ragChunkDataType = '';
+        /**
+         * The content of the retrieved data source.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * The title of the retrieved data source.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * The URI of the retrieved data source.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Output only. The full resource name of the referenced Vertex AI Search
+         * document. This is used to identify the specific document that was
+         * retrieved. The format is `projects/{project}/locations/{location}/collectio
+         * ns/{collection}/dataStores/{data_store}/branches/{branch}/documents/{docume
+         * nt}`.
+         *
+         * @param string $documentName
+         */
+        public function setDocumentName($documentName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDocumentName()
+        {
+        }
+        /**
+         * Additional context for a Retrieval-Augmented Generation (RAG) retrieval
+         * result. This is populated only when the RAG retrieval tool is used.
+         *
+         * @param GoogleCloudAiplatformV1RagChunk $ragChunk
+         */
+        public function setRagChunk(GoogleCloudAiplatformV1RagChunk $ragChunk)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RagChunk
+         */
+        public function getRagChunk()
+        {
+        }
+        /**
+         * The content of the retrieved data source.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
+        /**
+         * The title of the retrieved data source.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * The URI of the retrieved data source.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1GroundingChunkRetrievedContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocumentName()
-    {
-    }
-    /**
-     * Additional context for a Retrieval-Augmented Generation (RAG) retrieval
-     * result. This is populated only when the RAG retrieval tool is used.
-     *
-     * @param GoogleCloudAiplatformV1RagChunk $ragChunk
-     */
-    public function setRagChunk(GoogleCloudAiplatformV1RagChunk $ragChunk)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1RagChunk
-     */
-    public function getRagChunk()
-    {
-    }
-    /**
-     * The content of the retrieved data source.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
-    {
-    }
-    /**
-     * The title of the retrieved data source.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * The URI of the retrieved data source.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1GroundingChunkRetrievedContext extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1GroundingChunkRetrievedContext
     {
     }
 }

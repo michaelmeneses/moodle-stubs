@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TrafficDirectorService;
-
-class ClientStatusResponse extends \Google\Collection
-{
-    protected $collection_key = 'config';
-    protected $configType = ClientConfig::class;
-    protected $configDataType = 'array';
-    /**
-     * Client configs for the clients specified in the ClientStatusRequest.
-     *
-     * @param ClientConfig[] $config
-     */
-    public function setConfig($config)
+namespace Google\Service\TrafficDirectorService {
+    class ClientStatusResponse extends \Google\Collection
     {
+        protected $collection_key = 'config';
+        protected $configType = ClientConfig::class;
+        protected $configDataType = 'array';
+        /**
+         * Client configs for the clients specified in the ClientStatusRequest.
+         *
+         * @param ClientConfig[] $config
+         */
+        public function setConfig($config)
+        {
+        }
+        /**
+         * @return ClientConfig[]
+         */
+        public function getConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ClientConfig[]
+     * Runtime class alias of \Google\Service\TrafficDirectorService\ClientStatusResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfig()
+    class Google_Service_TrafficDirectorService_ClientStatusResponse extends \Google\Service\TrafficDirectorService\ClientStatusResponse
     {
     }
 }

@@ -21,88 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidProvisioningPartner\Resource;
-
-/**
- * The "devices" collection of methods.
- * Typical usage is:
- *  <code>
- *   $androiddeviceprovisioningService = new Google\Service\AndroidProvisioningPartner(...);
- *   $devices = $androiddeviceprovisioningService->customers_devices;
- *  </code>
- */
-class CustomersDevices extends \Google\Service\Resource
-{
+namespace Google\Service\AndroidProvisioningPartner\Resource {
+    use Google\Service\AndroidProvisioningPartner\AndroiddeviceprovisioningEmpty;
+    use Google\Service\AndroidProvisioningPartner\CustomerApplyConfigurationRequest;
+    use Google\Service\AndroidProvisioningPartner\CustomerListDevicesResponse;
+    use Google\Service\AndroidProvisioningPartner\CustomerRemoveConfigurationRequest;
+    use Google\Service\AndroidProvisioningPartner\CustomerUnclaimDeviceRequest;
+    use Google\Service\AndroidProvisioningPartner\Device;
     /**
-     * Applies a Configuration to the device to register the device for zero-touch
-     * enrollment. After applying a configuration to a device, the device
-     * automatically provisions itself on first boot, or next factory reset.
-     * (devices.applyConfiguration)
-     *
-     * @param string $parent Required. The customer managing the device. An API
-     * resource name in the format `customers/[CUSTOMER_ID]`.
-     * @param CustomerApplyConfigurationRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return AndroiddeviceprovisioningEmpty
-     * @throws \Google\Service\Exception
+     * The "devices" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $androiddeviceprovisioningService = new Google\Service\AndroidProvisioningPartner(...);
+     *   $devices = $androiddeviceprovisioningService->customers_devices;
+     *  </code>
      */
-    public function applyConfiguration($parent, CustomerApplyConfigurationRequest $postBody, $optParams = [])
+    class CustomersDevices extends \Google\Service\Resource
     {
+        /**
+         * Applies a Configuration to the device to register the device for zero-touch
+         * enrollment. After applying a configuration to a device, the device
+         * automatically provisions itself on first boot, or next factory reset.
+         * (devices.applyConfiguration)
+         *
+         * @param string $parent Required. The customer managing the device. An API
+         * resource name in the format `customers/[CUSTOMER_ID]`.
+         * @param CustomerApplyConfigurationRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return AndroiddeviceprovisioningEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function applyConfiguration($parent, CustomerApplyConfigurationRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Gets the details of a device. (devices.get)
+         *
+         * @param string $name Required. The device to get. An API resource name in the
+         * format `customers/[CUSTOMER_ID]/devices/[DEVICE_ID]`.
+         * @param array $optParams Optional parameters.
+         * @return Device
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists a customer's devices. (devices.listCustomersDevices)
+         *
+         * @param string $parent Required. The customer managing the devices. An API
+         * resource name in the format `customers/[CUSTOMER_ID]`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string pageSize Required. The maximum number of devices to show in
+         * a page of results. Must be between 1 and 100 inclusive.
+         * @opt_param string pageToken A token specifying which result page to return.
+         * @return CustomerListDevicesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listCustomersDevices($parent, $optParams = [])
+        {
+        }
+        /**
+         * Removes a configuration from device. (devices.removeConfiguration)
+         *
+         * @param string $parent Required. The customer managing the device in the
+         * format `customers/[CUSTOMER_ID]`.
+         * @param CustomerRemoveConfigurationRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return AndroiddeviceprovisioningEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function removeConfiguration($parent, CustomerRemoveConfigurationRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Unclaims a device from a customer and removes it from zero-touch enrollment.
+         * After removing a device, a customer must contact their reseller to register
+         * the device into zero-touch enrollment again. (devices.unclaim)
+         *
+         * @param string $parent Required. The customer managing the device. An API
+         * resource name in the format `customers/[CUSTOMER_ID]`.
+         * @param CustomerUnclaimDeviceRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return AndroiddeviceprovisioningEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function unclaim($parent, CustomerUnclaimDeviceRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets the details of a device. (devices.get)
-     *
-     * @param string $name Required. The device to get. An API resource name in the
-     * format `customers/[CUSTOMER_ID]/devices/[DEVICE_ID]`.
-     * @param array $optParams Optional parameters.
-     * @return Device
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AndroidProvisioningPartner\Resource\CustomersDevices registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists a customer's devices. (devices.listCustomersDevices)
-     *
-     * @param string $parent Required. The customer managing the devices. An API
-     * resource name in the format `customers/[CUSTOMER_ID]`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string pageSize Required. The maximum number of devices to show in
-     * a page of results. Must be between 1 and 100 inclusive.
-     * @opt_param string pageToken A token specifying which result page to return.
-     * @return CustomerListDevicesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listCustomersDevices($parent, $optParams = [])
-    {
-    }
-    /**
-     * Removes a configuration from device. (devices.removeConfiguration)
-     *
-     * @param string $parent Required. The customer managing the device in the
-     * format `customers/[CUSTOMER_ID]`.
-     * @param CustomerRemoveConfigurationRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return AndroiddeviceprovisioningEmpty
-     * @throws \Google\Service\Exception
-     */
-    public function removeConfiguration($parent, CustomerRemoveConfigurationRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Unclaims a device from a customer and removes it from zero-touch enrollment.
-     * After removing a device, a customer must contact their reseller to register
-     * the device into zero-touch enrollment again. (devices.unclaim)
-     *
-     * @param string $parent Required. The customer managing the device. An API
-     * resource name in the format `customers/[CUSTOMER_ID]`.
-     * @param CustomerUnclaimDeviceRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return AndroiddeviceprovisioningEmpty
-     * @throws \Google\Service\Exception
-     */
-    public function unclaim($parent, CustomerUnclaimDeviceRequest $postBody, $optParams = [])
+    class Google_Service_AndroidProvisioningPartner_Resource_CustomersDevices extends \Google\Service\AndroidProvisioningPartner\Resource\CustomersDevices
     {
     }
 }

@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class JobMetrics extends \Google\Collection
-{
-    protected $collection_key = 'metrics';
-    /**
-     * Timestamp as of which metric values are current.
-     *
-     * @var string
-     */
-    public $metricTime;
-    protected $metricsType = MetricUpdate::class;
-    protected $metricsDataType = 'array';
-    /**
-     * Timestamp as of which metric values are current.
-     *
-     * @param string $metricTime
-     */
-    public function setMetricTime($metricTime)
+namespace Google\Service\Dataflow {
+    class JobMetrics extends \Google\Collection
     {
+        protected $collection_key = 'metrics';
+        /**
+         * Timestamp as of which metric values are current.
+         *
+         * @var string
+         */
+        public $metricTime;
+        protected $metricsType = MetricUpdate::class;
+        protected $metricsDataType = 'array';
+        /**
+         * Timestamp as of which metric values are current.
+         *
+         * @param string $metricTime
+         */
+        public function setMetricTime($metricTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMetricTime()
+        {
+        }
+        /**
+         * All metrics for this job.
+         *
+         * @param MetricUpdate[] $metrics
+         */
+        public function setMetrics($metrics)
+        {
+        }
+        /**
+         * @return MetricUpdate[]
+         */
+        public function getMetrics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\JobMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetricTime()
-    {
-    }
-    /**
-     * All metrics for this job.
-     *
-     * @param MetricUpdate[] $metrics
-     */
-    public function setMetrics($metrics)
-    {
-    }
-    /**
-     * @return MetricUpdate[]
-     */
-    public function getMetrics()
+    class Google_Service_Dataflow_JobMetrics extends \Google\Service\Dataflow\JobMetrics
     {
     }
 }

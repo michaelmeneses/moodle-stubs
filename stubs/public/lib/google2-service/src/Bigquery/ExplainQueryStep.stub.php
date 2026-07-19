@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class ExplainQueryStep extends \Google\Collection
-{
-    protected $collection_key = 'substeps';
-    /**
-     * Machine-readable operation type.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Human-readable description of the step(s).
-     *
-     * @var string[]
-     */
-    public $substeps;
-    /**
-     * Machine-readable operation type.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Bigquery {
+    class ExplainQueryStep extends \Google\Collection
     {
+        protected $collection_key = 'substeps';
+        /**
+         * Machine-readable operation type.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Human-readable description of the step(s).
+         *
+         * @var string[]
+         */
+        public $substeps;
+        /**
+         * Machine-readable operation type.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Human-readable description of the step(s).
+         *
+         * @param string[] $substeps
+         */
+        public function setSubsteps($substeps)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSubsteps()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\ExplainQueryStep registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * Human-readable description of the step(s).
-     *
-     * @param string[] $substeps
-     */
-    public function setSubsteps($substeps)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSubsteps()
+    class Google_Service_Bigquery_ExplainQueryStep extends \Google\Service\Bigquery\ExplainQueryStep
     {
     }
 }

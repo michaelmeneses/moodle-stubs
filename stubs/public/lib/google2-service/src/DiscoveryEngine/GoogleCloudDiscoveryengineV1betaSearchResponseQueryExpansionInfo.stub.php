@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaSearchResponseQueryExpansionInfo extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $expandedQuery;
-    /**
-     * @var string
-     */
-    public $pinnedResultCount;
-    /**
-     * @param bool
-     */
-    public function setExpandedQuery($expandedQuery)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaSearchResponseQueryExpansionInfo extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $expandedQuery;
+        /**
+         * @var string
+         */
+        public $pinnedResultCount;
+        /**
+         * @param bool
+         */
+        public function setExpandedQuery($expandedQuery)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getExpandedQuery()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPinnedResultCount($pinnedResultCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPinnedResultCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaSearchResponseQueryExpansionInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExpandedQuery()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPinnedResultCount($pinnedResultCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPinnedResultCount()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaSearchResponseQueryExpansionInfo extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaSearchResponseQueryExpansionInfo
     {
     }
 }

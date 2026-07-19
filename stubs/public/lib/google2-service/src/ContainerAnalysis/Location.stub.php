@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class Location extends \Google\Model
-{
-    /**
-     * Deprecated. The CPE URI in [CPE
-     * format](https://cpe.mitre.org/specification/)
-     *
-     * @var string
-     */
-    public $cpeUri;
-    /**
-     * The path from which we gathered that this package/version is installed.
-     *
-     * @var string
-     */
-    public $path;
-    protected $versionType = Version::class;
-    protected $versionDataType = '';
-    /**
-     * Deprecated. The CPE URI in [CPE
-     * format](https://cpe.mitre.org/specification/)
-     *
-     * @param string $cpeUri
-     */
-    public function setCpeUri($cpeUri)
+namespace Google\Service\ContainerAnalysis {
+    class Location extends \Google\Model
     {
+        /**
+         * Deprecated. The CPE URI in [CPE
+         * format](https://cpe.mitre.org/specification/)
+         *
+         * @var string
+         */
+        public $cpeUri;
+        /**
+         * The path from which we gathered that this package/version is installed.
+         *
+         * @var string
+         */
+        public $path;
+        protected $versionType = Version::class;
+        protected $versionDataType = '';
+        /**
+         * Deprecated. The CPE URI in [CPE
+         * format](https://cpe.mitre.org/specification/)
+         *
+         * @param string $cpeUri
+         */
+        public function setCpeUri($cpeUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCpeUri()
+        {
+        }
+        /**
+         * The path from which we gathered that this package/version is installed.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
+        /**
+         * Deprecated. The version installed at this location.
+         *
+         * @param Version $version
+         */
+        public function setVersion(Version $version)
+        {
+        }
+        /**
+         * @return Version
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ContainerAnalysis\Location registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCpeUri()
-    {
-    }
-    /**
-     * The path from which we gathered that this package/version is installed.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
-    {
-    }
-    /**
-     * Deprecated. The version installed at this location.
-     *
-     * @param Version $version
-     */
-    public function setVersion(Version $version)
-    {
-    }
-    /**
-     * @return Version
-     */
-    public function getVersion()
+    class Google_Service_ContainerAnalysis_Location extends \Google\Service\ContainerAnalysis\Location
     {
     }
 }

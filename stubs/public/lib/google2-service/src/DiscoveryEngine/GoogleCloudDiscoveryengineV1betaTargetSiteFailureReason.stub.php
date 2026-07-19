@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaTargetSiteFailureReason extends \Google\Model
-{
-    protected $quotaFailureType = GoogleCloudDiscoveryengineV1betaTargetSiteFailureReasonQuotaFailure::class;
-    protected $quotaFailureDataType = '';
-    /**
-     * Failed due to insufficient quota.
-     *
-     * @param GoogleCloudDiscoveryengineV1betaTargetSiteFailureReasonQuotaFailure $quotaFailure
-     */
-    public function setQuotaFailure(GoogleCloudDiscoveryengineV1betaTargetSiteFailureReasonQuotaFailure $quotaFailure)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaTargetSiteFailureReason extends \Google\Model
     {
+        protected $quotaFailureType = GoogleCloudDiscoveryengineV1betaTargetSiteFailureReasonQuotaFailure::class;
+        protected $quotaFailureDataType = '';
+        /**
+         * Failed due to insufficient quota.
+         *
+         * @param GoogleCloudDiscoveryengineV1betaTargetSiteFailureReasonQuotaFailure $quotaFailure
+         */
+        public function setQuotaFailure(GoogleCloudDiscoveryengineV1betaTargetSiteFailureReasonQuotaFailure $quotaFailure)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaTargetSiteFailureReasonQuotaFailure
+         */
+        public function getQuotaFailure()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1betaTargetSiteFailureReasonQuotaFailure
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaTargetSiteFailureReason registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getQuotaFailure()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaTargetSiteFailureReason extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaTargetSiteFailureReason
     {
     }
 }

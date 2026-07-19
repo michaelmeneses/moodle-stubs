@@ -21,33 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecommendationsAI;
-
-class GoogleCloudRecommendationengineV1beta1CatalogItemCategoryHierarchy extends \Google\Collection
-{
-    protected $collection_key = 'categories';
-    /**
-     * Required. Catalog item categories. Each category should be a UTF-8 encoded
-     * string with a length limit of 2 KiB. Note that the order in the list
-     * denotes the specificity (from least to most specific).
-     *
-     * @var string[]
-     */
-    public $categories;
-    /**
-     * Required. Catalog item categories. Each category should be a UTF-8 encoded
-     * string with a length limit of 2 KiB. Note that the order in the list
-     * denotes the specificity (from least to most specific).
-     *
-     * @param string[] $categories
-     */
-    public function setCategories($categories)
+namespace Google\Service\RecommendationsAI {
+    class GoogleCloudRecommendationengineV1beta1CatalogItemCategoryHierarchy extends \Google\Collection
     {
+        protected $collection_key = 'categories';
+        /**
+         * Required. Catalog item categories. Each category should be a UTF-8 encoded
+         * string with a length limit of 2 KiB. Note that the order in the list
+         * denotes the specificity (from least to most specific).
+         *
+         * @var string[]
+         */
+        public $categories;
+        /**
+         * Required. Catalog item categories. Each category should be a UTF-8 encoded
+         * string with a length limit of 2 KiB. Note that the order in the list
+         * denotes the specificity (from least to most specific).
+         *
+         * @param string[] $categories
+         */
+        public function setCategories($categories)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCategories()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1CatalogItemCategoryHierarchy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCategories()
+    class Google_Service_RecommendationsAI_GoogleCloudRecommendationengineV1beta1CatalogItemCategoryHierarchy extends \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1CatalogItemCategoryHierarchy
     {
     }
 }

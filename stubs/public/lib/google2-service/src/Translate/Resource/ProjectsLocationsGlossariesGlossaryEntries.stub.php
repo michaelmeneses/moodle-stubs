@@ -21,86 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Translate\Resource;
-
-/**
- * The "glossaryEntries" collection of methods.
- * Typical usage is:
- *  <code>
- *   $translateService = new Google\Service\Translate(...);
- *   $glossaryEntries = $translateService->projects_locations_glossaries_glossaryEntries;
- *  </code>
- */
-class ProjectsLocationsGlossariesGlossaryEntries extends \Google\Service\Resource
-{
+namespace Google\Service\Translate\Resource {
+    use Google\Service\Translate\GlossaryEntry;
+    use Google\Service\Translate\ListGlossaryEntriesResponse;
+    use Google\Service\Translate\TranslateEmpty;
     /**
-     * Creates a glossary entry. (glossaryEntries.create)
-     *
-     * @param string $parent Required. The resource name of the glossary to create
-     * the entry under.
-     * @param GlossaryEntry $postBody
-     * @param array $optParams Optional parameters.
-     * @return GlossaryEntry
-     * @throws \Google\Service\Exception
+     * The "glossaryEntries" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $translateService = new Google\Service\Translate(...);
+     *   $glossaryEntries = $translateService->projects_locations_glossaries_glossaryEntries;
+     *  </code>
      */
-    public function create($parent, GlossaryEntry $postBody, $optParams = [])
+    class ProjectsLocationsGlossariesGlossaryEntries extends \Google\Service\Resource
     {
+        /**
+         * Creates a glossary entry. (glossaryEntries.create)
+         *
+         * @param string $parent Required. The resource name of the glossary to create
+         * the entry under.
+         * @param GlossaryEntry $postBody
+         * @param array $optParams Optional parameters.
+         * @return GlossaryEntry
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GlossaryEntry $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a single entry from the glossary (glossaryEntries.delete)
+         *
+         * @param string $name Required. The resource name of the glossary entry to
+         * delete
+         * @param array $optParams Optional parameters.
+         * @return TranslateEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets a single glossary entry by the given id. (glossaryEntries.get)
+         *
+         * @param string $name Required. The resource name of the glossary entry to get
+         * @param array $optParams Optional parameters.
+         * @return GlossaryEntry
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * List the entries for the glossary.
+         * (glossaryEntries.listProjectsLocationsGlossariesGlossaryEntries)
+         *
+         * @param string $parent Required. The parent glossary resource name for listing
+         * the glossary's entries.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. Requested page size. The server may return
+         * fewer glossary entries than requested. If unspecified, the server picks an
+         * appropriate default.
+         * @opt_param string pageToken Optional. A token identifying a page of results
+         * the server should return. Typically, this is the value of
+         * [ListGlossaryEntriesResponse.next_page_token] returned from the previous
+         * call. The first page is returned if `page_token`is empty or missing.
+         * @return ListGlossaryEntriesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsGlossariesGlossaryEntries($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates a glossary entry. (glossaryEntries.patch)
+         *
+         * @param string $name Identifier. The resource name of the entry. Format:
+         * `projects/locations/glossaries/glossaryEntries`
+         * @param GlossaryEntry $postBody
+         * @param array $optParams Optional parameters.
+         * @return GlossaryEntry
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, GlossaryEntry $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a single entry from the glossary (glossaryEntries.delete)
-     *
-     * @param string $name Required. The resource name of the glossary entry to
-     * delete
-     * @param array $optParams Optional parameters.
-     * @return TranslateEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Translate\Resource\ProjectsLocationsGlossariesGlossaryEntries registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets a single glossary entry by the given id. (glossaryEntries.get)
-     *
-     * @param string $name Required. The resource name of the glossary entry to get
-     * @param array $optParams Optional parameters.
-     * @return GlossaryEntry
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * List the entries for the glossary.
-     * (glossaryEntries.listProjectsLocationsGlossariesGlossaryEntries)
-     *
-     * @param string $parent Required. The parent glossary resource name for listing
-     * the glossary's entries.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. Requested page size. The server may return
-     * fewer glossary entries than requested. If unspecified, the server picks an
-     * appropriate default.
-     * @opt_param string pageToken Optional. A token identifying a page of results
-     * the server should return. Typically, this is the value of
-     * [ListGlossaryEntriesResponse.next_page_token] returned from the previous
-     * call. The first page is returned if `page_token`is empty or missing.
-     * @return ListGlossaryEntriesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsGlossariesGlossaryEntries($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates a glossary entry. (glossaryEntries.patch)
-     *
-     * @param string $name Identifier. The resource name of the entry. Format:
-     * `projects/locations/glossaries/glossaryEntries`
-     * @param GlossaryEntry $postBody
-     * @param array $optParams Optional parameters.
-     * @return GlossaryEntry
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, GlossaryEntry $postBody, $optParams = [])
+    class Google_Service_Translate_Resource_ProjectsLocationsGlossariesGlossaryEntries extends \Google\Service\Translate\Resource\ProjectsLocationsGlossariesGlossaryEntries
     {
     }
 }

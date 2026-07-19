@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class GoogleCloudVisionV1p3beta1ProductSearchResultsResult extends \Google\Model
-{
-    /**
-     * The resource name of the image from the product that is the closest match
-     * to the query.
-     *
-     * @var string
-     */
-    public $image;
-    protected $productType = GoogleCloudVisionV1p3beta1Product::class;
-    protected $productDataType = '';
-    /**
-     * A confidence level on the match, ranging from 0 (no confidence) to 1 (full
-     * confidence).
-     *
-     * @var float
-     */
-    public $score;
-    /**
-     * The resource name of the image from the product that is the closest match
-     * to the query.
-     *
-     * @param string $image
-     */
-    public function setImage($image)
+namespace Google\Service\Vision {
+    class GoogleCloudVisionV1p3beta1ProductSearchResultsResult extends \Google\Model
     {
+        /**
+         * The resource name of the image from the product that is the closest match
+         * to the query.
+         *
+         * @var string
+         */
+        public $image;
+        protected $productType = GoogleCloudVisionV1p3beta1Product::class;
+        protected $productDataType = '';
+        /**
+         * A confidence level on the match, ranging from 0 (no confidence) to 1 (full
+         * confidence).
+         *
+         * @var float
+         */
+        public $score;
+        /**
+         * The resource name of the image from the product that is the closest match
+         * to the query.
+         *
+         * @param string $image
+         */
+        public function setImage($image)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImage()
+        {
+        }
+        /**
+         * The Product.
+         *
+         * @param GoogleCloudVisionV1p3beta1Product $product
+         */
+        public function setProduct(GoogleCloudVisionV1p3beta1Product $product)
+        {
+        }
+        /**
+         * @return GoogleCloudVisionV1p3beta1Product
+         */
+        public function getProduct()
+        {
+        }
+        /**
+         * A confidence level on the match, ranging from 0 (no confidence) to 1 (full
+         * confidence).
+         *
+         * @param float $score
+         */
+        public function setScore($score)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getScore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Vision\GoogleCloudVisionV1p3beta1ProductSearchResultsResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImage()
-    {
-    }
-    /**
-     * The Product.
-     *
-     * @param GoogleCloudVisionV1p3beta1Product $product
-     */
-    public function setProduct(GoogleCloudVisionV1p3beta1Product $product)
-    {
-    }
-    /**
-     * @return GoogleCloudVisionV1p3beta1Product
-     */
-    public function getProduct()
-    {
-    }
-    /**
-     * A confidence level on the match, ranging from 0 (no confidence) to 1 (full
-     * confidence).
-     *
-     * @param float $score
-     */
-    public function setScore($score)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getScore()
+    class Google_Service_Vision_GoogleCloudVisionV1p3beta1ProductSearchResultsResult extends \Google\Service\Vision\GoogleCloudVisionV1p3beta1ProductSearchResultsResult
     {
     }
 }

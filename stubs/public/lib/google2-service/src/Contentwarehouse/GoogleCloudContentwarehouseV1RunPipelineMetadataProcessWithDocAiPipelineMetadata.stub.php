@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1RunPipelineMetadataProcessWithDocAiPipelineMetadata extends \Google\Collection
-{
-    protected $collection_key = 'documents';
-    /**
-     * The input list of all the resource names of the documents to be processed.
-     *
-     * @var string[]
-     */
-    public $documents;
-    protected $processorInfoType = GoogleCloudContentwarehouseV1ProcessorInfo::class;
-    protected $processorInfoDataType = '';
-    /**
-     * The input list of all the resource names of the documents to be processed.
-     *
-     * @param string[] $documents
-     */
-    public function setDocuments($documents)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1RunPipelineMetadataProcessWithDocAiPipelineMetadata extends \Google\Collection
     {
+        protected $collection_key = 'documents';
+        /**
+         * The input list of all the resource names of the documents to be processed.
+         *
+         * @var string[]
+         */
+        public $documents;
+        protected $processorInfoType = GoogleCloudContentwarehouseV1ProcessorInfo::class;
+        protected $processorInfoDataType = '';
+        /**
+         * The input list of all the resource names of the documents to be processed.
+         *
+         * @param string[] $documents
+         */
+        public function setDocuments($documents)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDocuments()
+        {
+        }
+        /**
+         * The DocAI processor to process the documents with.
+         *
+         * @param GoogleCloudContentwarehouseV1ProcessorInfo $processorInfo
+         */
+        public function setProcessorInfo(GoogleCloudContentwarehouseV1ProcessorInfo $processorInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1ProcessorInfo
+         */
+        public function getProcessorInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1RunPipelineMetadataProcessWithDocAiPipelineMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocuments()
-    {
-    }
-    /**
-     * The DocAI processor to process the documents with.
-     *
-     * @param GoogleCloudContentwarehouseV1ProcessorInfo $processorInfo
-     */
-    public function setProcessorInfo(GoogleCloudContentwarehouseV1ProcessorInfo $processorInfo)
-    {
-    }
-    /**
-     * @return GoogleCloudContentwarehouseV1ProcessorInfo
-     */
-    public function getProcessorInfo()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1RunPipelineMetadataProcessWithDocAiPipelineMetadata extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1RunPipelineMetadataProcessWithDocAiPipelineMetadata
     {
     }
 }

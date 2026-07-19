@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class AccountsLinkResponse extends \Google\Model
-{
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "`content#accountsLinkResponse`".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "`content#accountsLinkResponse`".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\ShoppingContent {
+    class AccountsLinkResponse extends \Google\Model
     {
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "`content#accountsLinkResponse`".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "`content#accountsLinkResponse`".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\AccountsLinkResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
+    class Google_Service_ShoppingContent_AccountsLinkResponse extends \Google\Service\ShoppingContent\AccountsLinkResponse
     {
     }
 }

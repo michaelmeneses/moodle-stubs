@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WebRisk;
-
-class GoogleCloudWebriskV1ComputeThreatListDiffResponseChecksum extends \Google\Model
-{
-    /**
-     * The SHA256 hash of the client state; that is, of the sorted list of all
-     * hashes present in the database.
-     *
-     * @var string
-     */
-    public $sha256;
-    /**
-     * The SHA256 hash of the client state; that is, of the sorted list of all
-     * hashes present in the database.
-     *
-     * @param string $sha256
-     */
-    public function setSha256($sha256)
+namespace Google\Service\WebRisk {
+    class GoogleCloudWebriskV1ComputeThreatListDiffResponseChecksum extends \Google\Model
     {
+        /**
+         * The SHA256 hash of the client state; that is, of the sorted list of all
+         * hashes present in the database.
+         *
+         * @var string
+         */
+        public $sha256;
+        /**
+         * The SHA256 hash of the client state; that is, of the sorted list of all
+         * hashes present in the database.
+         *
+         * @param string $sha256
+         */
+        public function setSha256($sha256)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSha256()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WebRisk\GoogleCloudWebriskV1ComputeThreatListDiffResponseChecksum registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSha256()
+    class Google_Service_WebRisk_GoogleCloudWebriskV1ComputeThreatListDiffResponseChecksum extends \Google\Service\WebRisk\GoogleCloudWebriskV1ComputeThreatListDiffResponseChecksum
     {
     }
 }

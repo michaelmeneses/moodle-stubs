@@ -21,148 +21,157 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class PartitionQueryRequest extends \Google\Model
-{
-    /**
-     * The maximum number of partitions to return in this call, subject to
-     * `partition_count`. For example, if `partition_count` = 10 and `page_size` =
-     * 8, the first call to PartitionQuery will return up to 8 partitions and a
-     * `next_page_token` if more results exist. A second call to PartitionQuery
-     * will return up to 2 partitions, to complete the total of 10 specified in
-     * `partition_count`.
-     *
-     * @var int
-     */
-    public $pageSize;
-    /**
-     * The `next_page_token` value returned from a previous call to PartitionQuery
-     * that may be used to get an additional set of results. There are no ordering
-     * guarantees between sets of results. Thus, using multiple sets of results
-     * will require merging the different result sets. For example, two subsequent
-     * calls using a page_token may return: * cursor B, cursor M, cursor Q *
-     * cursor A, cursor U, cursor W To obtain a complete result set ordered with
-     * respect to the results of the query supplied to PartitionQuery, the results
-     * sets should be merged: cursor A, cursor B, cursor M, cursor Q, cursor U,
-     * cursor W
-     *
-     * @var string
-     */
-    public $pageToken;
-    /**
-     * The desired maximum number of partition points. The partitions may be
-     * returned across multiple pages of results. The number must be positive. The
-     * actual number of partitions returned may be fewer. For example, this may be
-     * set to one fewer than the number of parallel queries to be run, or in
-     * running a data pipeline job, one fewer than the number of workers or
-     * compute instances available.
-     *
-     * @var string
-     */
-    public $partitionCount;
-    /**
-     * Reads documents as they were at the given time. This must be a microsecond
-     * precision timestamp within the past one hour, or if Point-in-Time Recovery
-     * is enabled, can additionally be a whole minute timestamp within the past 7
-     * days.
-     *
-     * @var string
-     */
-    public $readTime;
-    protected $structuredQueryType = StructuredQuery::class;
-    protected $structuredQueryDataType = '';
-    /**
-     * The maximum number of partitions to return in this call, subject to
-     * `partition_count`. For example, if `partition_count` = 10 and `page_size` =
-     * 8, the first call to PartitionQuery will return up to 8 partitions and a
-     * `next_page_token` if more results exist. A second call to PartitionQuery
-     * will return up to 2 partitions, to complete the total of 10 specified in
-     * `partition_count`.
-     *
-     * @param int $pageSize
-     */
-    public function setPageSize($pageSize)
+namespace Google\Service\Firestore {
+    class PartitionQueryRequest extends \Google\Model
     {
+        /**
+         * The maximum number of partitions to return in this call, subject to
+         * `partition_count`. For example, if `partition_count` = 10 and `page_size` =
+         * 8, the first call to PartitionQuery will return up to 8 partitions and a
+         * `next_page_token` if more results exist. A second call to PartitionQuery
+         * will return up to 2 partitions, to complete the total of 10 specified in
+         * `partition_count`.
+         *
+         * @var int
+         */
+        public $pageSize;
+        /**
+         * The `next_page_token` value returned from a previous call to PartitionQuery
+         * that may be used to get an additional set of results. There are no ordering
+         * guarantees between sets of results. Thus, using multiple sets of results
+         * will require merging the different result sets. For example, two subsequent
+         * calls using a page_token may return: * cursor B, cursor M, cursor Q *
+         * cursor A, cursor U, cursor W To obtain a complete result set ordered with
+         * respect to the results of the query supplied to PartitionQuery, the results
+         * sets should be merged: cursor A, cursor B, cursor M, cursor Q, cursor U,
+         * cursor W
+         *
+         * @var string
+         */
+        public $pageToken;
+        /**
+         * The desired maximum number of partition points. The partitions may be
+         * returned across multiple pages of results. The number must be positive. The
+         * actual number of partitions returned may be fewer. For example, this may be
+         * set to one fewer than the number of parallel queries to be run, or in
+         * running a data pipeline job, one fewer than the number of workers or
+         * compute instances available.
+         *
+         * @var string
+         */
+        public $partitionCount;
+        /**
+         * Reads documents as they were at the given time. This must be a microsecond
+         * precision timestamp within the past one hour, or if Point-in-Time Recovery
+         * is enabled, can additionally be a whole minute timestamp within the past 7
+         * days.
+         *
+         * @var string
+         */
+        public $readTime;
+        protected $structuredQueryType = StructuredQuery::class;
+        protected $structuredQueryDataType = '';
+        /**
+         * The maximum number of partitions to return in this call, subject to
+         * `partition_count`. For example, if `partition_count` = 10 and `page_size` =
+         * 8, the first call to PartitionQuery will return up to 8 partitions and a
+         * `next_page_token` if more results exist. A second call to PartitionQuery
+         * will return up to 2 partitions, to complete the total of 10 specified in
+         * `partition_count`.
+         *
+         * @param int $pageSize
+         */
+        public function setPageSize($pageSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPageSize()
+        {
+        }
+        /**
+         * The `next_page_token` value returned from a previous call to PartitionQuery
+         * that may be used to get an additional set of results. There are no ordering
+         * guarantees between sets of results. Thus, using multiple sets of results
+         * will require merging the different result sets. For example, two subsequent
+         * calls using a page_token may return: * cursor B, cursor M, cursor Q *
+         * cursor A, cursor U, cursor W To obtain a complete result set ordered with
+         * respect to the results of the query supplied to PartitionQuery, the results
+         * sets should be merged: cursor A, cursor B, cursor M, cursor Q, cursor U,
+         * cursor W
+         *
+         * @param string $pageToken
+         */
+        public function setPageToken($pageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPageToken()
+        {
+        }
+        /**
+         * The desired maximum number of partition points. The partitions may be
+         * returned across multiple pages of results. The number must be positive. The
+         * actual number of partitions returned may be fewer. For example, this may be
+         * set to one fewer than the number of parallel queries to be run, or in
+         * running a data pipeline job, one fewer than the number of workers or
+         * compute instances available.
+         *
+         * @param string $partitionCount
+         */
+        public function setPartitionCount($partitionCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPartitionCount()
+        {
+        }
+        /**
+         * Reads documents as they were at the given time. This must be a microsecond
+         * precision timestamp within the past one hour, or if Point-in-Time Recovery
+         * is enabled, can additionally be a whole minute timestamp within the past 7
+         * days.
+         *
+         * @param string $readTime
+         */
+        public function setReadTime($readTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReadTime()
+        {
+        }
+        /**
+         * A structured query. Query must specify collection with all descendants and
+         * be ordered by name ascending. Other filters, order bys, limits, offsets,
+         * and start/end cursors are not supported.
+         *
+         * @param StructuredQuery $structuredQuery
+         */
+        public function setStructuredQuery(StructuredQuery $structuredQuery)
+        {
+        }
+        /**
+         * @return StructuredQuery
+         */
+        public function getStructuredQuery()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Firestore\PartitionQueryRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPageSize()
-    {
-    }
-    /**
-     * The `next_page_token` value returned from a previous call to PartitionQuery
-     * that may be used to get an additional set of results. There are no ordering
-     * guarantees between sets of results. Thus, using multiple sets of results
-     * will require merging the different result sets. For example, two subsequent
-     * calls using a page_token may return: * cursor B, cursor M, cursor Q *
-     * cursor A, cursor U, cursor W To obtain a complete result set ordered with
-     * respect to the results of the query supplied to PartitionQuery, the results
-     * sets should be merged: cursor A, cursor B, cursor M, cursor Q, cursor U,
-     * cursor W
-     *
-     * @param string $pageToken
-     */
-    public function setPageToken($pageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPageToken()
-    {
-    }
-    /**
-     * The desired maximum number of partition points. The partitions may be
-     * returned across multiple pages of results. The number must be positive. The
-     * actual number of partitions returned may be fewer. For example, this may be
-     * set to one fewer than the number of parallel queries to be run, or in
-     * running a data pipeline job, one fewer than the number of workers or
-     * compute instances available.
-     *
-     * @param string $partitionCount
-     */
-    public function setPartitionCount($partitionCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPartitionCount()
-    {
-    }
-    /**
-     * Reads documents as they were at the given time. This must be a microsecond
-     * precision timestamp within the past one hour, or if Point-in-Time Recovery
-     * is enabled, can additionally be a whole minute timestamp within the past 7
-     * days.
-     *
-     * @param string $readTime
-     */
-    public function setReadTime($readTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReadTime()
-    {
-    }
-    /**
-     * A structured query. Query must specify collection with all descendants and
-     * be ordered by name ascending. Other filters, order bys, limits, offsets,
-     * and start/end cursors are not supported.
-     *
-     * @param StructuredQuery $structuredQuery
-     */
-    public function setStructuredQuery(StructuredQuery $structuredQuery)
-    {
-    }
-    /**
-     * @return StructuredQuery
-     */
-    public function getStructuredQuery()
+    class Google_Service_Firestore_PartitionQueryRequest extends \Google\Service\Firestore\PartitionQueryRequest
     {
     }
 }

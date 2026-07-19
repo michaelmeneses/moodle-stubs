@@ -21,134 +21,143 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1ToolAnnotations extends \Google\Model
-{
-    /**
-     * Optional. Additional hints which may help tools and not covered in
-     * defaults.
-     *
-     * @var string[]
-     */
-    public $additionalHints;
-    /**
-     * Optional. Hint indicating if the tool may have destructive side effects.
-     *
-     * @var bool
-     */
-    public $destructiveHint;
-    /**
-     * Optional. Hint indicating if the tool is idempotent.
-     *
-     * @var bool
-     */
-    public $idempotentHint;
-    /**
-     * Optional. Hint indicating if the tool interacts with the open world (e.g.,
-     * internet).
-     *
-     * @var bool
-     */
-    public $openWorldHint;
-    /**
-     * Optional. Hint indicating if the tool is read-only.
-     *
-     * @var bool
-     */
-    public $readOnlyHint;
-    /**
-     * Optional. A human-readable title for the tool (if different from
-     * Tool.title).
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Optional. Additional hints which may help tools and not covered in
-     * defaults.
-     *
-     * @param string[] $additionalHints
-     */
-    public function setAdditionalHints($additionalHints)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1ToolAnnotations extends \Google\Model
     {
+        /**
+         * Optional. Additional hints which may help tools and not covered in
+         * defaults.
+         *
+         * @var string[]
+         */
+        public $additionalHints;
+        /**
+         * Optional. Hint indicating if the tool may have destructive side effects.
+         *
+         * @var bool
+         */
+        public $destructiveHint;
+        /**
+         * Optional. Hint indicating if the tool is idempotent.
+         *
+         * @var bool
+         */
+        public $idempotentHint;
+        /**
+         * Optional. Hint indicating if the tool interacts with the open world (e.g.,
+         * internet).
+         *
+         * @var bool
+         */
+        public $openWorldHint;
+        /**
+         * Optional. Hint indicating if the tool is read-only.
+         *
+         * @var bool
+         */
+        public $readOnlyHint;
+        /**
+         * Optional. A human-readable title for the tool (if different from
+         * Tool.title).
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Optional. Additional hints which may help tools and not covered in
+         * defaults.
+         *
+         * @param string[] $additionalHints
+         */
+        public function setAdditionalHints($additionalHints)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAdditionalHints()
+        {
+        }
+        /**
+         * Optional. Hint indicating if the tool may have destructive side effects.
+         *
+         * @param bool $destructiveHint
+         */
+        public function setDestructiveHint($destructiveHint)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDestructiveHint()
+        {
+        }
+        /**
+         * Optional. Hint indicating if the tool is idempotent.
+         *
+         * @param bool $idempotentHint
+         */
+        public function setIdempotentHint($idempotentHint)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIdempotentHint()
+        {
+        }
+        /**
+         * Optional. Hint indicating if the tool interacts with the open world (e.g.,
+         * internet).
+         *
+         * @param bool $openWorldHint
+         */
+        public function setOpenWorldHint($openWorldHint)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getOpenWorldHint()
+        {
+        }
+        /**
+         * Optional. Hint indicating if the tool is read-only.
+         *
+         * @param bool $readOnlyHint
+         */
+        public function setReadOnlyHint($readOnlyHint)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReadOnlyHint()
+        {
+        }
+        /**
+         * Optional. A human-readable title for the tool (if different from
+         * Tool.title).
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1ToolAnnotations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdditionalHints()
-    {
-    }
-    /**
-     * Optional. Hint indicating if the tool may have destructive side effects.
-     *
-     * @param bool $destructiveHint
-     */
-    public function setDestructiveHint($destructiveHint)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDestructiveHint()
-    {
-    }
-    /**
-     * Optional. Hint indicating if the tool is idempotent.
-     *
-     * @param bool $idempotentHint
-     */
-    public function setIdempotentHint($idempotentHint)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIdempotentHint()
-    {
-    }
-    /**
-     * Optional. Hint indicating if the tool interacts with the open world (e.g.,
-     * internet).
-     *
-     * @param bool $openWorldHint
-     */
-    public function setOpenWorldHint($openWorldHint)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getOpenWorldHint()
-    {
-    }
-    /**
-     * Optional. Hint indicating if the tool is read-only.
-     *
-     * @param bool $readOnlyHint
-     */
-    public function setReadOnlyHint($readOnlyHint)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReadOnlyHint()
-    {
-    }
-    /**
-     * Optional. A human-readable title for the tool (if different from
-     * Tool.title).
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_APIhub_GoogleCloudApihubV1ToolAnnotations extends \Google\Service\APIhub\GoogleCloudApihubV1ToolAnnotations
     {
     }
 }

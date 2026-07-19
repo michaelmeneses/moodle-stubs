@@ -21,134 +21,143 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1ContactInfo extends \Google\Model
-{
-    /**
-     * Output only. The customer account contact's display name, formatted as a
-     * combination of the customer's first and last name.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The customer account's contact email. Required for entitlements that create
-     * admin.google.com accounts, and serves as the customer's username for those
-     * accounts. Use this email to invite Team customers.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * The customer account contact's first name. Optional for Team customers.
-     *
-     * @var string
-     */
-    public $firstName;
-    /**
-     * The customer account contact's last name. Optional for Team customers.
-     *
-     * @var string
-     */
-    public $lastName;
-    /**
-     * The customer account's contact phone number.
-     *
-     * @var string
-     */
-    public $phone;
-    /**
-     * Optional. The customer account contact's job title.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Output only. The customer account contact's display name, formatted as a
-     * combination of the customer's first and last name.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1ContactInfo extends \Google\Model
     {
+        /**
+         * Output only. The customer account contact's display name, formatted as a
+         * combination of the customer's first and last name.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The customer account's contact email. Required for entitlements that create
+         * admin.google.com accounts, and serves as the customer's username for those
+         * accounts. Use this email to invite Team customers.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * The customer account contact's first name. Optional for Team customers.
+         *
+         * @var string
+         */
+        public $firstName;
+        /**
+         * The customer account contact's last name. Optional for Team customers.
+         *
+         * @var string
+         */
+        public $lastName;
+        /**
+         * The customer account's contact phone number.
+         *
+         * @var string
+         */
+        public $phone;
+        /**
+         * Optional. The customer account contact's job title.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Output only. The customer account contact's display name, formatted as a
+         * combination of the customer's first and last name.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The customer account's contact email. Required for entitlements that create
+         * admin.google.com accounts, and serves as the customer's username for those
+         * accounts. Use this email to invite Team customers.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * The customer account contact's first name. Optional for Team customers.
+         *
+         * @param string $firstName
+         */
+        public function setFirstName($firstName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFirstName()
+        {
+        }
+        /**
+         * The customer account contact's last name. Optional for Team customers.
+         *
+         * @param string $lastName
+         */
+        public function setLastName($lastName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastName()
+        {
+        }
+        /**
+         * The customer account's contact phone number.
+         *
+         * @param string $phone
+         */
+        public function setPhone($phone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhone()
+        {
+        }
+        /**
+         * Optional. The customer account contact's job title.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1ContactInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The customer account's contact email. Required for entitlements that create
-     * admin.google.com accounts, and serves as the customer's username for those
-     * accounts. Use this email to invite Team customers.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEmail()
-    {
-    }
-    /**
-     * The customer account contact's first name. Optional for Team customers.
-     *
-     * @param string $firstName
-     */
-    public function setFirstName($firstName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFirstName()
-    {
-    }
-    /**
-     * The customer account contact's last name. Optional for Team customers.
-     *
-     * @param string $lastName
-     */
-    public function setLastName($lastName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastName()
-    {
-    }
-    /**
-     * The customer account's contact phone number.
-     *
-     * @param string $phone
-     */
-    public function setPhone($phone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhone()
-    {
-    }
-    /**
-     * Optional. The customer account contact's job title.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1ContactInfo extends \Google\Service\Cloudchannel\GoogleCloudChannelV1ContactInfo
     {
     }
 }

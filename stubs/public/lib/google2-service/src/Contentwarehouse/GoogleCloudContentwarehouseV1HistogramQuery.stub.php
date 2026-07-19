@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1HistogramQuery extends \Google\Model
-{
-    protected $filtersType = GoogleCloudContentwarehouseV1HistogramQueryPropertyNameFilter::class;
-    protected $filtersDataType = '';
-    /**
-     * An expression specifies a histogram request against matching documents for
-     * searches. See SearchDocumentsRequest.histogram_queries for details about
-     * syntax.
-     *
-     * @var string
-     */
-    public $histogramQuery;
-    /**
-     * Controls if the histogram query requires the return of a precise count.
-     * Enable this flag may adversely impact performance. Defaults to true.
-     *
-     * @var bool
-     */
-    public $requirePreciseResultSize;
-    /**
-     * Optional. Filter the result of histogram query by the property names. It
-     * only works with histogram query count('FilterableProperties'). It is an
-     * optional. It will perform histogram on all the property names for all the
-     * document schemas. Setting this field will have a better performance.
-     *
-     * @param GoogleCloudContentwarehouseV1HistogramQueryPropertyNameFilter $filters
-     */
-    public function setFilters(GoogleCloudContentwarehouseV1HistogramQueryPropertyNameFilter $filters)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1HistogramQuery extends \Google\Model
     {
+        protected $filtersType = GoogleCloudContentwarehouseV1HistogramQueryPropertyNameFilter::class;
+        protected $filtersDataType = '';
+        /**
+         * An expression specifies a histogram request against matching documents for
+         * searches. See SearchDocumentsRequest.histogram_queries for details about
+         * syntax.
+         *
+         * @var string
+         */
+        public $histogramQuery;
+        /**
+         * Controls if the histogram query requires the return of a precise count.
+         * Enable this flag may adversely impact performance. Defaults to true.
+         *
+         * @var bool
+         */
+        public $requirePreciseResultSize;
+        /**
+         * Optional. Filter the result of histogram query by the property names. It
+         * only works with histogram query count('FilterableProperties'). It is an
+         * optional. It will perform histogram on all the property names for all the
+         * document schemas. Setting this field will have a better performance.
+         *
+         * @param GoogleCloudContentwarehouseV1HistogramQueryPropertyNameFilter $filters
+         */
+        public function setFilters(GoogleCloudContentwarehouseV1HistogramQueryPropertyNameFilter $filters)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1HistogramQueryPropertyNameFilter
+         */
+        public function getFilters()
+        {
+        }
+        /**
+         * An expression specifies a histogram request against matching documents for
+         * searches. See SearchDocumentsRequest.histogram_queries for details about
+         * syntax.
+         *
+         * @param string $histogramQuery
+         */
+        public function setHistogramQuery($histogramQuery)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHistogramQuery()
+        {
+        }
+        /**
+         * Controls if the histogram query requires the return of a precise count.
+         * Enable this flag may adversely impact performance. Defaults to true.
+         *
+         * @param bool $requirePreciseResultSize
+         */
+        public function setRequirePreciseResultSize($requirePreciseResultSize)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRequirePreciseResultSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContentwarehouseV1HistogramQueryPropertyNameFilter
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1HistogramQuery registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilters()
-    {
-    }
-    /**
-     * An expression specifies a histogram request against matching documents for
-     * searches. See SearchDocumentsRequest.histogram_queries for details about
-     * syntax.
-     *
-     * @param string $histogramQuery
-     */
-    public function setHistogramQuery($histogramQuery)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHistogramQuery()
-    {
-    }
-    /**
-     * Controls if the histogram query requires the return of a precise count.
-     * Enable this flag may adversely impact performance. Defaults to true.
-     *
-     * @param bool $requirePreciseResultSize
-     */
-    public function setRequirePreciseResultSize($requirePreciseResultSize)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getRequirePreciseResultSize()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1HistogramQuery extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1HistogramQuery
     {
     }
 }

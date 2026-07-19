@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Ideahub;
-
-class GoogleSearchIdeahubV1betaListIdeasResponse extends \Google\Collection
-{
-    protected $collection_key = 'ideas';
-    protected $ideasType = GoogleSearchIdeahubV1betaIdea::class;
-    protected $ideasDataType = 'array';
-    public $ideas;
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @param GoogleSearchIdeahubV1betaIdea[]
-     */
-    public function setIdeas($ideas)
+namespace Google\Service\Ideahub {
+    class GoogleSearchIdeahubV1betaListIdeasResponse extends \Google\Collection
     {
+        protected $collection_key = 'ideas';
+        protected $ideasType = GoogleSearchIdeahubV1betaIdea::class;
+        protected $ideasDataType = 'array';
+        public $ideas;
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @param GoogleSearchIdeahubV1betaIdea[]
+         */
+        public function setIdeas($ideas)
+        {
+        }
+        /**
+         * @return GoogleSearchIdeahubV1betaIdea[]
+         */
+        public function getIdeas()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleSearchIdeahubV1betaIdea[]
+     * Runtime class alias of \Google\Service\Ideahub\GoogleSearchIdeahubV1betaListIdeasResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIdeas()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Ideahub_GoogleSearchIdeahubV1betaListIdeasResponse extends \Google\Service\Ideahub\GoogleSearchIdeahubV1betaListIdeasResponse
     {
     }
 }

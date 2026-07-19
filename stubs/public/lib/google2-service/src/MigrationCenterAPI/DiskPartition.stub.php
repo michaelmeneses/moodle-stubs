@@ -21,144 +21,153 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class DiskPartition extends \Google\Model
-{
-    /**
-     * Partition capacity.
-     *
-     * @var string
-     */
-    public $capacityBytes;
-    /**
-     * Partition file system.
-     *
-     * @var string
-     */
-    public $fileSystem;
-    /**
-     * Partition free space.
-     *
-     * @var string
-     */
-    public $freeBytes;
-    /**
-     * Mount point (Linux/Windows) or drive letter (Windows).
-     *
-     * @var string
-     */
-    public $mountPoint;
-    protected $subPartitionsType = DiskPartitionList::class;
-    protected $subPartitionsDataType = '';
-    /**
-     * Partition type.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Partition UUID.
-     *
-     * @var string
-     */
-    public $uuid;
-    /**
-     * Partition capacity.
-     *
-     * @param string $capacityBytes
-     */
-    public function setCapacityBytes($capacityBytes)
+namespace Google\Service\MigrationCenterAPI {
+    class DiskPartition extends \Google\Model
     {
+        /**
+         * Partition capacity.
+         *
+         * @var string
+         */
+        public $capacityBytes;
+        /**
+         * Partition file system.
+         *
+         * @var string
+         */
+        public $fileSystem;
+        /**
+         * Partition free space.
+         *
+         * @var string
+         */
+        public $freeBytes;
+        /**
+         * Mount point (Linux/Windows) or drive letter (Windows).
+         *
+         * @var string
+         */
+        public $mountPoint;
+        protected $subPartitionsType = DiskPartitionList::class;
+        protected $subPartitionsDataType = '';
+        /**
+         * Partition type.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Partition UUID.
+         *
+         * @var string
+         */
+        public $uuid;
+        /**
+         * Partition capacity.
+         *
+         * @param string $capacityBytes
+         */
+        public function setCapacityBytes($capacityBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCapacityBytes()
+        {
+        }
+        /**
+         * Partition file system.
+         *
+         * @param string $fileSystem
+         */
+        public function setFileSystem($fileSystem)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFileSystem()
+        {
+        }
+        /**
+         * Partition free space.
+         *
+         * @param string $freeBytes
+         */
+        public function setFreeBytes($freeBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFreeBytes()
+        {
+        }
+        /**
+         * Mount point (Linux/Windows) or drive letter (Windows).
+         *
+         * @param string $mountPoint
+         */
+        public function setMountPoint($mountPoint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMountPoint()
+        {
+        }
+        /**
+         * Sub-partitions.
+         *
+         * @param DiskPartitionList $subPartitions
+         */
+        public function setSubPartitions(DiskPartitionList $subPartitions)
+        {
+        }
+        /**
+         * @return DiskPartitionList
+         */
+        public function getSubPartitions()
+        {
+        }
+        /**
+         * Partition type.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * Partition UUID.
+         *
+         * @param string $uuid
+         */
+        public function setUuid($uuid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUuid()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\DiskPartition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCapacityBytes()
-    {
-    }
-    /**
-     * Partition file system.
-     *
-     * @param string $fileSystem
-     */
-    public function setFileSystem($fileSystem)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFileSystem()
-    {
-    }
-    /**
-     * Partition free space.
-     *
-     * @param string $freeBytes
-     */
-    public function setFreeBytes($freeBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFreeBytes()
-    {
-    }
-    /**
-     * Mount point (Linux/Windows) or drive letter (Windows).
-     *
-     * @param string $mountPoint
-     */
-    public function setMountPoint($mountPoint)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMountPoint()
-    {
-    }
-    /**
-     * Sub-partitions.
-     *
-     * @param DiskPartitionList $subPartitions
-     */
-    public function setSubPartitions(DiskPartitionList $subPartitions)
-    {
-    }
-    /**
-     * @return DiskPartitionList
-     */
-    public function getSubPartitions()
-    {
-    }
-    /**
-     * Partition type.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-    }
-    /**
-     * Partition UUID.
-     *
-     * @param string $uuid
-     */
-    public function setUuid($uuid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUuid()
+    class Google_Service_MigrationCenterAPI_DiskPartition extends \Google\Service\MigrationCenterAPI\DiskPartition
     {
     }
 }

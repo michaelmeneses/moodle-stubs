@@ -21,99 +21,108 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Digitalassetlinks;
-
-class ListResponse extends \Google\Collection
-{
-    protected $collection_key = 'statements';
-    /**
-     * Human-readable message containing information intended to help end users
-     * understand, reproduce and debug the result. The message will be in English
-     * and we are currently not planning to offer any translations. Please note
-     * that no guarantees are made about the contents or format of this string.
-     * Any aspect of it may be subject to change without notice. You should not
-     * attempt to programmatically parse this data. For programmatic access, use
-     * the error_code field below.
-     *
-     * @var string
-     */
-    public $debugString;
-    /**
-     * Error codes that describe the result of the List operation.
-     *
-     * @var string[]
-     */
-    public $errorCode;
-    /**
-     * From serving time, how much longer the response should be considered valid
-     * barring further updates. REQUIRED
-     *
-     * @var string
-     */
-    public $maxAge;
-    protected $statementsType = Statement::class;
-    protected $statementsDataType = 'array';
-    /**
-     * Human-readable message containing information intended to help end users
-     * understand, reproduce and debug the result. The message will be in English
-     * and we are currently not planning to offer any translations. Please note
-     * that no guarantees are made about the contents or format of this string.
-     * Any aspect of it may be subject to change without notice. You should not
-     * attempt to programmatically parse this data. For programmatic access, use
-     * the error_code field below.
-     *
-     * @param string $debugString
-     */
-    public function setDebugString($debugString)
+namespace Google\Service\Digitalassetlinks {
+    class ListResponse extends \Google\Collection
     {
+        protected $collection_key = 'statements';
+        /**
+         * Human-readable message containing information intended to help end users
+         * understand, reproduce and debug the result. The message will be in English
+         * and we are currently not planning to offer any translations. Please note
+         * that no guarantees are made about the contents or format of this string.
+         * Any aspect of it may be subject to change without notice. You should not
+         * attempt to programmatically parse this data. For programmatic access, use
+         * the error_code field below.
+         *
+         * @var string
+         */
+        public $debugString;
+        /**
+         * Error codes that describe the result of the List operation.
+         *
+         * @var string[]
+         */
+        public $errorCode;
+        /**
+         * From serving time, how much longer the response should be considered valid
+         * barring further updates. REQUIRED
+         *
+         * @var string
+         */
+        public $maxAge;
+        protected $statementsType = Statement::class;
+        protected $statementsDataType = 'array';
+        /**
+         * Human-readable message containing information intended to help end users
+         * understand, reproduce and debug the result. The message will be in English
+         * and we are currently not planning to offer any translations. Please note
+         * that no guarantees are made about the contents or format of this string.
+         * Any aspect of it may be subject to change without notice. You should not
+         * attempt to programmatically parse this data. For programmatic access, use
+         * the error_code field below.
+         *
+         * @param string $debugString
+         */
+        public function setDebugString($debugString)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDebugString()
+        {
+        }
+        /**
+         * Error codes that describe the result of the List operation.
+         *
+         * @param string[] $errorCode
+         */
+        public function setErrorCode($errorCode)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getErrorCode()
+        {
+        }
+        /**
+         * From serving time, how much longer the response should be considered valid
+         * barring further updates. REQUIRED
+         *
+         * @param string $maxAge
+         */
+        public function setMaxAge($maxAge)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxAge()
+        {
+        }
+        /**
+         * A list of all the matching statements that have been found.
+         *
+         * @param Statement[] $statements
+         */
+        public function setStatements($statements)
+        {
+        }
+        /**
+         * @return Statement[]
+         */
+        public function getStatements()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Digitalassetlinks\ListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDebugString()
-    {
-    }
-    /**
-     * Error codes that describe the result of the List operation.
-     *
-     * @param string[] $errorCode
-     */
-    public function setErrorCode($errorCode)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getErrorCode()
-    {
-    }
-    /**
-     * From serving time, how much longer the response should be considered valid
-     * barring further updates. REQUIRED
-     *
-     * @param string $maxAge
-     */
-    public function setMaxAge($maxAge)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaxAge()
-    {
-    }
-    /**
-     * A list of all the matching statements that have been found.
-     *
-     * @param Statement[] $statements
-     */
-    public function setStatements($statements)
-    {
-    }
-    /**
-     * @return Statement[]
-     */
-    public function getStatements()
+    class Google_Service_Digitalassetlinks_ListResponse extends \Google\Service\Digitalassetlinks\ListResponse
     {
     }
 }

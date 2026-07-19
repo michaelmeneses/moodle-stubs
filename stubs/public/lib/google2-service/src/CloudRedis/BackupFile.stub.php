@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class BackupFile extends \Google\Model
-{
-    /**
-     * Output only. The time when the backup file was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. e.g: .rdb
-     *
-     * @var string
-     */
-    public $fileName;
-    /**
-     * Output only. Size of the backup file in bytes.
-     *
-     * @var string
-     */
-    public $sizeBytes;
-    /**
-     * Output only. The time when the backup file was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\CloudRedis {
+    class BackupFile extends \Google\Model
     {
+        /**
+         * Output only. The time when the backup file was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. e.g: .rdb
+         *
+         * @var string
+         */
+        public $fileName;
+        /**
+         * Output only. Size of the backup file in bytes.
+         *
+         * @var string
+         */
+        public $sizeBytes;
+        /**
+         * Output only. The time when the backup file was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. e.g: .rdb
+         *
+         * @param string $fileName
+         */
+        public function setFileName($fileName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFileName()
+        {
+        }
+        /**
+         * Output only. Size of the backup file in bytes.
+         *
+         * @param string $sizeBytes
+         */
+        public function setSizeBytes($sizeBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSizeBytes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRedis\BackupFile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. e.g: .rdb
-     *
-     * @param string $fileName
-     */
-    public function setFileName($fileName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFileName()
-    {
-    }
-    /**
-     * Output only. Size of the backup file in bytes.
-     *
-     * @param string $sizeBytes
-     */
-    public function setSizeBytes($sizeBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSizeBytes()
+    class Google_Service_CloudRedis_BackupFile extends \Google\Service\CloudRedis\BackupFile
     {
     }
 }

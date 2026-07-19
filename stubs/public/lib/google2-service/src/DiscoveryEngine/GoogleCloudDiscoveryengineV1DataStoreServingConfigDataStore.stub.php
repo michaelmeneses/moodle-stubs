@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1DataStoreServingConfigDataStore extends \Google\Model
-{
-    /**
-     * Optional. If set true, the DataStore will not be available for serving
-     * search requests.
-     *
-     * @var bool
-     */
-    public $disabledForServing;
-    /**
-     * Optional. If set true, the DataStore will not be available for serving
-     * search requests.
-     *
-     * @param bool $disabledForServing
-     */
-    public function setDisabledForServing($disabledForServing)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1DataStoreServingConfigDataStore extends \Google\Model
     {
+        /**
+         * Optional. If set true, the DataStore will not be available for serving
+         * search requests.
+         *
+         * @var bool
+         */
+        public $disabledForServing;
+        /**
+         * Optional. If set true, the DataStore will not be available for serving
+         * search requests.
+         *
+         * @param bool $disabledForServing
+         */
+        public function setDisabledForServing($disabledForServing)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisabledForServing()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1DataStoreServingConfigDataStore registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisabledForServing()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1DataStoreServingConfigDataStore extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1DataStoreServingConfigDataStore
     {
     }
 }

@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class CustomBiddingAlgorithmRulesRef extends \Google\Model
-{
-    /**
-     * A resource name to be used in media.download to download the rules files.
-     * Or media.upload to upload the rules files. Resource names have the format
-     * `customBiddingAlgorithms/{custom_bidding_algorithm_id}/rulesRef/{ref_id}`.
-     *
-     * @var string
-     */
-    public $resourceName;
-    /**
-     * A resource name to be used in media.download to download the rules files.
-     * Or media.upload to upload the rules files. Resource names have the format
-     * `customBiddingAlgorithms/{custom_bidding_algorithm_id}/rulesRef/{ref_id}`.
-     *
-     * @param string $resourceName
-     */
-    public function setResourceName($resourceName)
+namespace Google\Service\DisplayVideo {
+    class CustomBiddingAlgorithmRulesRef extends \Google\Model
     {
+        /**
+         * A resource name to be used in media.download to download the rules files.
+         * Or media.upload to upload the rules files. Resource names have the format
+         * `customBiddingAlgorithms/{custom_bidding_algorithm_id}/rulesRef/{ref_id}`.
+         *
+         * @var string
+         */
+        public $resourceName;
+        /**
+         * A resource name to be used in media.download to download the rules files.
+         * Or media.upload to upload the rules files. Resource names have the format
+         * `customBiddingAlgorithms/{custom_bidding_algorithm_id}/rulesRef/{ref_id}`.
+         *
+         * @param string $resourceName
+         */
+        public function setResourceName($resourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\CustomBiddingAlgorithmRulesRef registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResourceName()
+    class Google_Service_DisplayVideo_CustomBiddingAlgorithmRulesRef extends \Google\Service\DisplayVideo\CustomBiddingAlgorithmRulesRef
     {
     }
 }

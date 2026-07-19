@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigateway;
-
-class ApigatewayAuditConfig extends \Google\Collection
-{
-    protected $collection_key = 'auditLogConfigs';
-    protected $auditLogConfigsType = ApigatewayAuditLogConfig::class;
-    protected $auditLogConfigsDataType = 'array';
-    /**
-     * Specifies a service that will be enabled for audit logging. For example,
-     * `storage.googleapis.com`, `cloudsql.googleapis.com`. `allServices` is a
-     * special value that covers all services.
-     *
-     * @var string
-     */
-    public $service;
-    /**
-     * The configuration for logging of each type of permission.
-     *
-     * @param ApigatewayAuditLogConfig[] $auditLogConfigs
-     */
-    public function setAuditLogConfigs($auditLogConfigs)
+namespace Google\Service\Apigateway {
+    class ApigatewayAuditConfig extends \Google\Collection
     {
+        protected $collection_key = 'auditLogConfigs';
+        protected $auditLogConfigsType = ApigatewayAuditLogConfig::class;
+        protected $auditLogConfigsDataType = 'array';
+        /**
+         * Specifies a service that will be enabled for audit logging. For example,
+         * `storage.googleapis.com`, `cloudsql.googleapis.com`. `allServices` is a
+         * special value that covers all services.
+         *
+         * @var string
+         */
+        public $service;
+        /**
+         * The configuration for logging of each type of permission.
+         *
+         * @param ApigatewayAuditLogConfig[] $auditLogConfigs
+         */
+        public function setAuditLogConfigs($auditLogConfigs)
+        {
+        }
+        /**
+         * @return ApigatewayAuditLogConfig[]
+         */
+        public function getAuditLogConfigs()
+        {
+        }
+        /**
+         * Specifies a service that will be enabled for audit logging. For example,
+         * `storage.googleapis.com`, `cloudsql.googleapis.com`. `allServices` is a
+         * special value that covers all services.
+         *
+         * @param string $service
+         */
+        public function setService($service)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getService()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ApigatewayAuditLogConfig[]
+     * Runtime class alias of \Google\Service\Apigateway\ApigatewayAuditConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuditLogConfigs()
-    {
-    }
-    /**
-     * Specifies a service that will be enabled for audit logging. For example,
-     * `storage.googleapis.com`, `cloudsql.googleapis.com`. `allServices` is a
-     * special value that covers all services.
-     *
-     * @param string $service
-     */
-    public function setService($service)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getService()
+    class Google_Service_Apigateway_ApigatewayAuditConfig extends \Google\Service\Apigateway\ApigatewayAuditConfig
     {
     }
 }

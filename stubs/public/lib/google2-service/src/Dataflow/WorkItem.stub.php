@@ -21,278 +21,287 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class WorkItem extends \Google\Collection
-{
-    protected $collection_key = 'packages';
-    /**
-     * Work item-specific configuration as an opaque blob.
-     *
-     * @var string
-     */
-    public $configuration;
-    /**
-     * Identifies this WorkItem.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The initial index to use when reporting the status of the WorkItem.
-     *
-     * @var string
-     */
-    public $initialReportIndex;
-    /**
-     * Identifies the workflow job this WorkItem belongs to.
-     *
-     * @var string
-     */
-    public $jobId;
-    /**
-     * Time when the lease on this Work will expire.
-     *
-     * @var string
-     */
-    public $leaseExpireTime;
-    protected $mapTaskType = MapTask::class;
-    protected $mapTaskDataType = '';
-    protected $packagesType = Package::class;
-    protected $packagesDataType = 'array';
-    /**
-     * Identifies the cloud project this WorkItem belongs to.
-     *
-     * @var string
-     */
-    public $projectId;
-    /**
-     * Recommended reporting interval.
-     *
-     * @var string
-     */
-    public $reportStatusInterval;
-    protected $seqMapTaskType = SeqMapTask::class;
-    protected $seqMapTaskDataType = '';
-    protected $shellTaskType = ShellTask::class;
-    protected $shellTaskDataType = '';
-    protected $sourceOperationTaskType = SourceOperationRequest::class;
-    protected $sourceOperationTaskDataType = '';
-    protected $streamingComputationTaskType = StreamingComputationTask::class;
-    protected $streamingComputationTaskDataType = '';
-    protected $streamingConfigTaskType = StreamingConfigTask::class;
-    protected $streamingConfigTaskDataType = '';
-    protected $streamingSetupTaskType = StreamingSetupTask::class;
-    protected $streamingSetupTaskDataType = '';
-    /**
-     * Work item-specific configuration as an opaque blob.
-     *
-     * @param string $configuration
-     */
-    public function setConfiguration($configuration)
+namespace Google\Service\Dataflow {
+    class WorkItem extends \Google\Collection
     {
+        protected $collection_key = 'packages';
+        /**
+         * Work item-specific configuration as an opaque blob.
+         *
+         * @var string
+         */
+        public $configuration;
+        /**
+         * Identifies this WorkItem.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The initial index to use when reporting the status of the WorkItem.
+         *
+         * @var string
+         */
+        public $initialReportIndex;
+        /**
+         * Identifies the workflow job this WorkItem belongs to.
+         *
+         * @var string
+         */
+        public $jobId;
+        /**
+         * Time when the lease on this Work will expire.
+         *
+         * @var string
+         */
+        public $leaseExpireTime;
+        protected $mapTaskType = MapTask::class;
+        protected $mapTaskDataType = '';
+        protected $packagesType = Package::class;
+        protected $packagesDataType = 'array';
+        /**
+         * Identifies the cloud project this WorkItem belongs to.
+         *
+         * @var string
+         */
+        public $projectId;
+        /**
+         * Recommended reporting interval.
+         *
+         * @var string
+         */
+        public $reportStatusInterval;
+        protected $seqMapTaskType = SeqMapTask::class;
+        protected $seqMapTaskDataType = '';
+        protected $shellTaskType = ShellTask::class;
+        protected $shellTaskDataType = '';
+        protected $sourceOperationTaskType = SourceOperationRequest::class;
+        protected $sourceOperationTaskDataType = '';
+        protected $streamingComputationTaskType = StreamingComputationTask::class;
+        protected $streamingComputationTaskDataType = '';
+        protected $streamingConfigTaskType = StreamingConfigTask::class;
+        protected $streamingConfigTaskDataType = '';
+        protected $streamingSetupTaskType = StreamingSetupTask::class;
+        protected $streamingSetupTaskDataType = '';
+        /**
+         * Work item-specific configuration as an opaque blob.
+         *
+         * @param string $configuration
+         */
+        public function setConfiguration($configuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConfiguration()
+        {
+        }
+        /**
+         * Identifies this WorkItem.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The initial index to use when reporting the status of the WorkItem.
+         *
+         * @param string $initialReportIndex
+         */
+        public function setInitialReportIndex($initialReportIndex)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInitialReportIndex()
+        {
+        }
+        /**
+         * Identifies the workflow job this WorkItem belongs to.
+         *
+         * @param string $jobId
+         */
+        public function setJobId($jobId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJobId()
+        {
+        }
+        /**
+         * Time when the lease on this Work will expire.
+         *
+         * @param string $leaseExpireTime
+         */
+        public function setLeaseExpireTime($leaseExpireTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLeaseExpireTime()
+        {
+        }
+        /**
+         * Additional information for MapTask WorkItems.
+         *
+         * @param MapTask $mapTask
+         */
+        public function setMapTask(MapTask $mapTask)
+        {
+        }
+        /**
+         * @return MapTask
+         */
+        public function getMapTask()
+        {
+        }
+        /**
+         * Any required packages that need to be fetched in order to execute this
+         * WorkItem.
+         *
+         * @param Package[] $packages
+         */
+        public function setPackages($packages)
+        {
+        }
+        /**
+         * @return Package[]
+         */
+        public function getPackages()
+        {
+        }
+        /**
+         * Identifies the cloud project this WorkItem belongs to.
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * Recommended reporting interval.
+         *
+         * @param string $reportStatusInterval
+         */
+        public function setReportStatusInterval($reportStatusInterval)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReportStatusInterval()
+        {
+        }
+        /**
+         * Additional information for SeqMapTask WorkItems.
+         *
+         * @param SeqMapTask $seqMapTask
+         */
+        public function setSeqMapTask(SeqMapTask $seqMapTask)
+        {
+        }
+        /**
+         * @return SeqMapTask
+         */
+        public function getSeqMapTask()
+        {
+        }
+        /**
+         * Additional information for ShellTask WorkItems.
+         *
+         * @param ShellTask $shellTask
+         */
+        public function setShellTask(ShellTask $shellTask)
+        {
+        }
+        /**
+         * @return ShellTask
+         */
+        public function getShellTask()
+        {
+        }
+        /**
+         * Additional information for source operation WorkItems.
+         *
+         * @param SourceOperationRequest $sourceOperationTask
+         */
+        public function setSourceOperationTask(SourceOperationRequest $sourceOperationTask)
+        {
+        }
+        /**
+         * @return SourceOperationRequest
+         */
+        public function getSourceOperationTask()
+        {
+        }
+        /**
+         * Additional information for StreamingComputationTask WorkItems.
+         *
+         * @param StreamingComputationTask $streamingComputationTask
+         */
+        public function setStreamingComputationTask(StreamingComputationTask $streamingComputationTask)
+        {
+        }
+        /**
+         * @return StreamingComputationTask
+         */
+        public function getStreamingComputationTask()
+        {
+        }
+        /**
+         * Additional information for StreamingConfigTask WorkItems.
+         *
+         * @param StreamingConfigTask $streamingConfigTask
+         */
+        public function setStreamingConfigTask(StreamingConfigTask $streamingConfigTask)
+        {
+        }
+        /**
+         * @return StreamingConfigTask
+         */
+        public function getStreamingConfigTask()
+        {
+        }
+        /**
+         * Additional information for StreamingSetupTask WorkItems.
+         *
+         * @param StreamingSetupTask $streamingSetupTask
+         */
+        public function setStreamingSetupTask(StreamingSetupTask $streamingSetupTask)
+        {
+        }
+        /**
+         * @return StreamingSetupTask
+         */
+        public function getStreamingSetupTask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\WorkItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfiguration()
-    {
-    }
-    /**
-     * Identifies this WorkItem.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * The initial index to use when reporting the status of the WorkItem.
-     *
-     * @param string $initialReportIndex
-     */
-    public function setInitialReportIndex($initialReportIndex)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInitialReportIndex()
-    {
-    }
-    /**
-     * Identifies the workflow job this WorkItem belongs to.
-     *
-     * @param string $jobId
-     */
-    public function setJobId($jobId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getJobId()
-    {
-    }
-    /**
-     * Time when the lease on this Work will expire.
-     *
-     * @param string $leaseExpireTime
-     */
-    public function setLeaseExpireTime($leaseExpireTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLeaseExpireTime()
-    {
-    }
-    /**
-     * Additional information for MapTask WorkItems.
-     *
-     * @param MapTask $mapTask
-     */
-    public function setMapTask(MapTask $mapTask)
-    {
-    }
-    /**
-     * @return MapTask
-     */
-    public function getMapTask()
-    {
-    }
-    /**
-     * Any required packages that need to be fetched in order to execute this
-     * WorkItem.
-     *
-     * @param Package[] $packages
-     */
-    public function setPackages($packages)
-    {
-    }
-    /**
-     * @return Package[]
-     */
-    public function getPackages()
-    {
-    }
-    /**
-     * Identifies the cloud project this WorkItem belongs to.
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
-    {
-    }
-    /**
-     * Recommended reporting interval.
-     *
-     * @param string $reportStatusInterval
-     */
-    public function setReportStatusInterval($reportStatusInterval)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReportStatusInterval()
-    {
-    }
-    /**
-     * Additional information for SeqMapTask WorkItems.
-     *
-     * @param SeqMapTask $seqMapTask
-     */
-    public function setSeqMapTask(SeqMapTask $seqMapTask)
-    {
-    }
-    /**
-     * @return SeqMapTask
-     */
-    public function getSeqMapTask()
-    {
-    }
-    /**
-     * Additional information for ShellTask WorkItems.
-     *
-     * @param ShellTask $shellTask
-     */
-    public function setShellTask(ShellTask $shellTask)
-    {
-    }
-    /**
-     * @return ShellTask
-     */
-    public function getShellTask()
-    {
-    }
-    /**
-     * Additional information for source operation WorkItems.
-     *
-     * @param SourceOperationRequest $sourceOperationTask
-     */
-    public function setSourceOperationTask(SourceOperationRequest $sourceOperationTask)
-    {
-    }
-    /**
-     * @return SourceOperationRequest
-     */
-    public function getSourceOperationTask()
-    {
-    }
-    /**
-     * Additional information for StreamingComputationTask WorkItems.
-     *
-     * @param StreamingComputationTask $streamingComputationTask
-     */
-    public function setStreamingComputationTask(StreamingComputationTask $streamingComputationTask)
-    {
-    }
-    /**
-     * @return StreamingComputationTask
-     */
-    public function getStreamingComputationTask()
-    {
-    }
-    /**
-     * Additional information for StreamingConfigTask WorkItems.
-     *
-     * @param StreamingConfigTask $streamingConfigTask
-     */
-    public function setStreamingConfigTask(StreamingConfigTask $streamingConfigTask)
-    {
-    }
-    /**
-     * @return StreamingConfigTask
-     */
-    public function getStreamingConfigTask()
-    {
-    }
-    /**
-     * Additional information for StreamingSetupTask WorkItems.
-     *
-     * @param StreamingSetupTask $streamingSetupTask
-     */
-    public function setStreamingSetupTask(StreamingSetupTask $streamingSetupTask)
-    {
-    }
-    /**
-     * @return StreamingSetupTask
-     */
-    public function getStreamingSetupTask()
+    class Google_Service_Dataflow_WorkItem extends \Google\Service\Dataflow\WorkItem
     {
     }
 }

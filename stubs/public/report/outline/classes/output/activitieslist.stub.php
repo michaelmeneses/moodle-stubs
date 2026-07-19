@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace report_outline\output;
 
+use core_report\output\coursestructure;
+use course_modinfo;
 /**
  * Activities list page.
  *

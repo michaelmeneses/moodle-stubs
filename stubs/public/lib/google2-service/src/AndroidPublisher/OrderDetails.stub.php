@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class OrderDetails extends \Google\Model
-{
-    /**
-     * Indicates whether the listed price was tax inclusive or not.
-     *
-     * @var bool
-     */
-    public $taxInclusive;
-    /**
-     * Indicates whether the listed price was tax inclusive or not.
-     *
-     * @param bool $taxInclusive
-     */
-    public function setTaxInclusive($taxInclusive)
+namespace Google\Service\AndroidPublisher {
+    class OrderDetails extends \Google\Model
     {
+        /**
+         * Indicates whether the listed price was tax inclusive or not.
+         *
+         * @var bool
+         */
+        public $taxInclusive;
+        /**
+         * Indicates whether the listed price was tax inclusive or not.
+         *
+         * @param bool $taxInclusive
+         */
+        public function setTaxInclusive($taxInclusive)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getTaxInclusive()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\AndroidPublisher\OrderDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTaxInclusive()
+    class Google_Service_AndroidPublisher_OrderDetails extends \Google\Service\AndroidPublisher\OrderDetails
     {
     }
 }

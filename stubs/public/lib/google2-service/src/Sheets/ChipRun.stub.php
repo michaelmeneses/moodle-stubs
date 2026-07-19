@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class ChipRun extends \Google\Model
-{
-    protected $chipType = Chip::class;
-    protected $chipDataType = '';
-    /**
-     * Required. The zero-based character index where this run starts, in UTF-16
-     * code units.
-     *
-     * @var int
-     */
-    public $startIndex;
-    /**
-     * Optional. The chip of this run.
-     *
-     * @param Chip $chip
-     */
-    public function setChip(Chip $chip)
+namespace Google\Service\Sheets {
+    class ChipRun extends \Google\Model
     {
+        protected $chipType = Chip::class;
+        protected $chipDataType = '';
+        /**
+         * Required. The zero-based character index where this run starts, in UTF-16
+         * code units.
+         *
+         * @var int
+         */
+        public $startIndex;
+        /**
+         * Optional. The chip of this run.
+         *
+         * @param Chip $chip
+         */
+        public function setChip(Chip $chip)
+        {
+        }
+        /**
+         * @return Chip
+         */
+        public function getChip()
+        {
+        }
+        /**
+         * Required. The zero-based character index where this run starts, in UTF-16
+         * code units.
+         *
+         * @param int $startIndex
+         */
+        public function setStartIndex($startIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStartIndex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Chip
+     * Runtime class alias of \Google\Service\Sheets\ChipRun registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChip()
-    {
-    }
-    /**
-     * Required. The zero-based character index where this run starts, in UTF-16
-     * code units.
-     *
-     * @param int $startIndex
-     */
-    public function setStartIndex($startIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStartIndex()
+    class Google_Service_Sheets_ChipRun extends \Google\Service\Sheets\ChipRun
     {
     }
 }

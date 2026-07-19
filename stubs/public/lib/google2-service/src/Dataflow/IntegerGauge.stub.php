@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class IntegerGauge extends \Google\Model
-{
-    /**
-     * The time at which this value was measured. Measured as msecs from epoch.
-     *
-     * @var string
-     */
-    public $timestamp;
-    protected $valueType = SplitInt64::class;
-    protected $valueDataType = '';
-    /**
-     * The time at which this value was measured. Measured as msecs from epoch.
-     *
-     * @param string $timestamp
-     */
-    public function setTimestamp($timestamp)
+namespace Google\Service\Dataflow {
+    class IntegerGauge extends \Google\Model
     {
+        /**
+         * The time at which this value was measured. Measured as msecs from epoch.
+         *
+         * @var string
+         */
+        public $timestamp;
+        protected $valueType = SplitInt64::class;
+        protected $valueDataType = '';
+        /**
+         * The time at which this value was measured. Measured as msecs from epoch.
+         *
+         * @param string $timestamp
+         */
+        public function setTimestamp($timestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimestamp()
+        {
+        }
+        /**
+         * The value of the variable represented by this gauge.
+         *
+         * @param SplitInt64 $value
+         */
+        public function setValue(SplitInt64 $value)
+        {
+        }
+        /**
+         * @return SplitInt64
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\IntegerGauge registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTimestamp()
-    {
-    }
-    /**
-     * The value of the variable represented by this gauge.
-     *
-     * @param SplitInt64 $value
-     */
-    public function setValue(SplitInt64 $value)
-    {
-    }
-    /**
-     * @return SplitInt64
-     */
-    public function getValue()
+    class Google_Service_Dataflow_IntegerGauge extends \Google\Service\Dataflow\IntegerGauge
     {
     }
 }

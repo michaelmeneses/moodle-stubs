@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkManagement;
-
-class CloudRunRevisionEndpoint extends \Google\Model
-{
-    /**
-     * Output only. The URI of the Cloud Run service that the revision belongs to.
-     * The format is: projects/{project}/locations/{location}/services/{service}
-     *
-     * @var string
-     */
-    public $serviceUri;
-    /**
-     * A [Cloud Run](https://cloud.google.com/run) [revision](https://cloud.google
-     * .com/run/docs/reference/rest/v1/namespaces.revisions/get) URI. The format
-     * is: projects/{project}/locations/{location}/revisions/{revision}
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Output only. The URI of the Cloud Run service that the revision belongs to.
-     * The format is: projects/{project}/locations/{location}/services/{service}
-     *
-     * @param string $serviceUri
-     */
-    public function setServiceUri($serviceUri)
+namespace Google\Service\NetworkManagement {
+    class CloudRunRevisionEndpoint extends \Google\Model
     {
+        /**
+         * Output only. The URI of the Cloud Run service that the revision belongs to.
+         * The format is: projects/{project}/locations/{location}/services/{service}
+         *
+         * @var string
+         */
+        public $serviceUri;
+        /**
+         * A [Cloud Run](https://cloud.google.com/run) [revision](https://cloud.google
+         * .com/run/docs/reference/rest/v1/namespaces.revisions/get) URI. The format
+         * is: projects/{project}/locations/{location}/revisions/{revision}
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Output only. The URI of the Cloud Run service that the revision belongs to.
+         * The format is: projects/{project}/locations/{location}/services/{service}
+         *
+         * @param string $serviceUri
+         */
+        public function setServiceUri($serviceUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceUri()
+        {
+        }
+        /**
+         * A [Cloud Run](https://cloud.google.com/run) [revision](https://cloud.google
+         * .com/run/docs/reference/rest/v1/namespaces.revisions/get) URI. The format
+         * is: projects/{project}/locations/{location}/revisions/{revision}
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkManagement\CloudRunRevisionEndpoint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getServiceUri()
-    {
-    }
-    /**
-     * A [Cloud Run](https://cloud.google.com/run) [revision](https://cloud.google
-     * .com/run/docs/reference/rest/v1/namespaces.revisions/get) URI. The format
-     * is: projects/{project}/locations/{location}/revisions/{revision}
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_NetworkManagement_CloudRunRevisionEndpoint extends \Google\Service\NetworkManagement\CloudRunRevisionEndpoint
     {
     }
 }

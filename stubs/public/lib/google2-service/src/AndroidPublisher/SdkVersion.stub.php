@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class SdkVersion extends \Google\Model
-{
-    /**
-     * Inclusive minimum value of an sdk version.
-     *
-     * @var int
-     */
-    public $min;
-    /**
-     * Inclusive minimum value of an sdk version.
-     *
-     * @param int $min
-     */
-    public function setMin($min)
+namespace Google\Service\AndroidPublisher {
+    class SdkVersion extends \Google\Model
     {
+        /**
+         * Inclusive minimum value of an sdk version.
+         *
+         * @var int
+         */
+        public $min;
+        /**
+         * Inclusive minimum value of an sdk version.
+         *
+         * @param int $min
+         */
+        public function setMin($min)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMin()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\AndroidPublisher\SdkVersion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMin()
+    class Google_Service_AndroidPublisher_SdkVersion extends \Google\Service\AndroidPublisher\SdkVersion
     {
     }
 }

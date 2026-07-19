@@ -21,106 +21,115 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class Proto2DescriptorProto extends \Google\Collection
-{
-    public const VISIBILITY_VISIBILITY_UNSET = 'VISIBILITY_UNSET';
-    public const VISIBILITY_VISIBILITY_LOCAL = 'VISIBILITY_LOCAL';
-    public const VISIBILITY_VISIBILITY_EXPORT = 'VISIBILITY_EXPORT';
-    protected $collection_key = 'oneofDecl';
-    protected $enumTypeType = Proto2EnumDescriptorProto::class;
-    protected $enumTypeDataType = 'array';
-    protected $fieldType = Proto2FieldDescriptorProto::class;
-    protected $fieldDataType = 'array';
-    /**
-     * @var string
-     */
-    public $name;
-    protected $nestedTypeType = Proto2DescriptorProto::class;
-    protected $nestedTypeDataType = 'array';
-    protected $oneofDeclType = Proto2OneofDescriptorProto::class;
-    protected $oneofDeclDataType = 'array';
-    /**
-     * Support for `export` and `local` keywords on enums.
-     *
-     * @var string
-     */
-    public $visibility;
-    /**
-     * @param Proto2EnumDescriptorProto[] $enumType
-     */
-    public function setEnumType($enumType)
+namespace Google\Service\ChromePolicy {
+    class Proto2DescriptorProto extends \Google\Collection
     {
+        public const VISIBILITY_VISIBILITY_UNSET = 'VISIBILITY_UNSET';
+        public const VISIBILITY_VISIBILITY_LOCAL = 'VISIBILITY_LOCAL';
+        public const VISIBILITY_VISIBILITY_EXPORT = 'VISIBILITY_EXPORT';
+        protected $collection_key = 'oneofDecl';
+        protected $enumTypeType = Proto2EnumDescriptorProto::class;
+        protected $enumTypeDataType = 'array';
+        protected $fieldType = Proto2FieldDescriptorProto::class;
+        protected $fieldDataType = 'array';
+        /**
+         * @var string
+         */
+        public $name;
+        protected $nestedTypeType = Proto2DescriptorProto::class;
+        protected $nestedTypeDataType = 'array';
+        protected $oneofDeclType = Proto2OneofDescriptorProto::class;
+        protected $oneofDeclDataType = 'array';
+        /**
+         * Support for `export` and `local` keywords on enums.
+         *
+         * @var string
+         */
+        public $visibility;
+        /**
+         * @param Proto2EnumDescriptorProto[] $enumType
+         */
+        public function setEnumType($enumType)
+        {
+        }
+        /**
+         * @return Proto2EnumDescriptorProto[]
+         */
+        public function getEnumType()
+        {
+        }
+        /**
+         * @param Proto2FieldDescriptorProto[] $field
+         */
+        public function setField($field)
+        {
+        }
+        /**
+         * @return Proto2FieldDescriptorProto[]
+         */
+        public function getField()
+        {
+        }
+        /**
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param Proto2DescriptorProto[] $nestedType
+         */
+        public function setNestedType($nestedType)
+        {
+        }
+        /**
+         * @return Proto2DescriptorProto[]
+         */
+        public function getNestedType()
+        {
+        }
+        /**
+         * @param Proto2OneofDescriptorProto[] $oneofDecl
+         */
+        public function setOneofDecl($oneofDecl)
+        {
+        }
+        /**
+         * @return Proto2OneofDescriptorProto[]
+         */
+        public function getOneofDecl()
+        {
+        }
+        /**
+         * Support for `export` and `local` keywords on enums.
+         *
+         * Accepted values: VISIBILITY_UNSET, VISIBILITY_LOCAL, VISIBILITY_EXPORT
+         *
+         * @param self::VISIBILITY_* $visibility
+         */
+        public function setVisibility($visibility)
+        {
+        }
+        /**
+         * @return self::VISIBILITY_*
+         */
+        public function getVisibility()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Proto2EnumDescriptorProto[]
+     * Runtime class alias of \Google\Service\ChromePolicy\Proto2DescriptorProto registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnumType()
-    {
-    }
-    /**
-     * @param Proto2FieldDescriptorProto[] $field
-     */
-    public function setField($field)
-    {
-    }
-    /**
-     * @return Proto2FieldDescriptorProto[]
-     */
-    public function getField()
-    {
-    }
-    /**
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param Proto2DescriptorProto[] $nestedType
-     */
-    public function setNestedType($nestedType)
-    {
-    }
-    /**
-     * @return Proto2DescriptorProto[]
-     */
-    public function getNestedType()
-    {
-    }
-    /**
-     * @param Proto2OneofDescriptorProto[] $oneofDecl
-     */
-    public function setOneofDecl($oneofDecl)
-    {
-    }
-    /**
-     * @return Proto2OneofDescriptorProto[]
-     */
-    public function getOneofDecl()
-    {
-    }
-    /**
-     * Support for `export` and `local` keywords on enums.
-     *
-     * Accepted values: VISIBILITY_UNSET, VISIBILITY_LOCAL, VISIBILITY_EXPORT
-     *
-     * @param self::VISIBILITY_* $visibility
-     */
-    public function setVisibility($visibility)
-    {
-    }
-    /**
-     * @return self::VISIBILITY_*
-     */
-    public function getVisibility()
+    class Google_Service_ChromePolicy_Proto2DescriptorProto extends \Google\Service\ChromePolicy\Proto2DescriptorProto
     {
     }
 }

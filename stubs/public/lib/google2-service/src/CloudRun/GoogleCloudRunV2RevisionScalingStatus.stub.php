@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunV2RevisionScalingStatus extends \Google\Model
-{
-    /**
-     * The current number of min instances provisioned for this revision.
-     *
-     * @var int
-     */
-    public $desiredMinInstanceCount;
-    /**
-     * The current number of min instances provisioned for this revision.
-     *
-     * @param int $desiredMinInstanceCount
-     */
-    public function setDesiredMinInstanceCount($desiredMinInstanceCount)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunV2RevisionScalingStatus extends \Google\Model
     {
+        /**
+         * The current number of min instances provisioned for this revision.
+         *
+         * @var int
+         */
+        public $desiredMinInstanceCount;
+        /**
+         * The current number of min instances provisioned for this revision.
+         *
+         * @param int $desiredMinInstanceCount
+         */
+        public function setDesiredMinInstanceCount($desiredMinInstanceCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDesiredMinInstanceCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunV2RevisionScalingStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDesiredMinInstanceCount()
+    class Google_Service_CloudRun_GoogleCloudRunV2RevisionScalingStatus extends \Google\Service\CloudRun\GoogleCloudRunV2RevisionScalingStatus
     {
     }
 }

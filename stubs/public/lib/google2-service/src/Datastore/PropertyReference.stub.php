@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastore;
-
-class PropertyReference extends \Google\Model
-{
-    /**
-     * A reference to a property. Requires: * MUST be a dot-delimited (`.`) string
-     * of segments, where each segment conforms to entity property name
-     * limitations.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * A reference to a property. Requires: * MUST be a dot-delimited (`.`) string
-     * of segments, where each segment conforms to entity property name
-     * limitations.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Datastore {
+    class PropertyReference extends \Google\Model
     {
+        /**
+         * A reference to a property. Requires: * MUST be a dot-delimited (`.`) string
+         * of segments, where each segment conforms to entity property name
+         * limitations.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * A reference to a property. Requires: * MUST be a dot-delimited (`.`) string
+         * of segments, where each segment conforms to entity property name
+         * limitations.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastore\PropertyReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
+    class Google_Service_Datastore_PropertyReference extends \Google\Service\Datastore\PropertyReference
     {
     }
 }

@@ -21,158 +21,167 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vault;
-
-class ExportOptions extends \Google\Model
-{
-    /**
-     * The region is unspecified. Defaults to ANY.
-     */
-    public const REGION_EXPORT_REGION_UNSPECIFIED = 'EXPORT_REGION_UNSPECIFIED';
-    /**
-     * Any region.
-     */
-    public const REGION_ANY = 'ANY';
-    /**
-     * United States region.
-     */
-    public const REGION_US = 'US';
-    /**
-     * Europe region.
-     */
-    public const REGION_EUROPE = 'EUROPE';
-    protected $calendarOptionsType = CalendarExportOptions::class;
-    protected $calendarOptionsDataType = '';
-    protected $driveOptionsType = DriveExportOptions::class;
-    protected $driveOptionsDataType = '';
-    protected $geminiOptionsType = GeminiExportOptions::class;
-    protected $geminiOptionsDataType = '';
-    protected $groupsOptionsType = GroupsExportOptions::class;
-    protected $groupsOptionsDataType = '';
-    protected $hangoutsChatOptionsType = HangoutsChatExportOptions::class;
-    protected $hangoutsChatOptionsDataType = '';
-    protected $mailOptionsType = MailExportOptions::class;
-    protected $mailOptionsDataType = '';
-    /**
-     * The requested data region for the export.
-     *
-     * @var string
-     */
-    public $region;
-    protected $voiceOptionsType = VoiceExportOptions::class;
-    protected $voiceOptionsDataType = '';
-    /**
-     * Option available for Calendar export.
-     *
-     * @param CalendarExportOptions $calendarOptions
-     */
-    public function setCalendarOptions(CalendarExportOptions $calendarOptions)
+namespace Google\Service\Vault {
+    class ExportOptions extends \Google\Model
     {
+        /**
+         * The region is unspecified. Defaults to ANY.
+         */
+        public const REGION_EXPORT_REGION_UNSPECIFIED = 'EXPORT_REGION_UNSPECIFIED';
+        /**
+         * Any region.
+         */
+        public const REGION_ANY = 'ANY';
+        /**
+         * United States region.
+         */
+        public const REGION_US = 'US';
+        /**
+         * Europe region.
+         */
+        public const REGION_EUROPE = 'EUROPE';
+        protected $calendarOptionsType = CalendarExportOptions::class;
+        protected $calendarOptionsDataType = '';
+        protected $driveOptionsType = DriveExportOptions::class;
+        protected $driveOptionsDataType = '';
+        protected $geminiOptionsType = GeminiExportOptions::class;
+        protected $geminiOptionsDataType = '';
+        protected $groupsOptionsType = GroupsExportOptions::class;
+        protected $groupsOptionsDataType = '';
+        protected $hangoutsChatOptionsType = HangoutsChatExportOptions::class;
+        protected $hangoutsChatOptionsDataType = '';
+        protected $mailOptionsType = MailExportOptions::class;
+        protected $mailOptionsDataType = '';
+        /**
+         * The requested data region for the export.
+         *
+         * @var string
+         */
+        public $region;
+        protected $voiceOptionsType = VoiceExportOptions::class;
+        protected $voiceOptionsDataType = '';
+        /**
+         * Option available for Calendar export.
+         *
+         * @param CalendarExportOptions $calendarOptions
+         */
+        public function setCalendarOptions(CalendarExportOptions $calendarOptions)
+        {
+        }
+        /**
+         * @return CalendarExportOptions
+         */
+        public function getCalendarOptions()
+        {
+        }
+        /**
+         * Options for Drive exports.
+         *
+         * @param DriveExportOptions $driveOptions
+         */
+        public function setDriveOptions(DriveExportOptions $driveOptions)
+        {
+        }
+        /**
+         * @return DriveExportOptions
+         */
+        public function getDriveOptions()
+        {
+        }
+        /**
+         * Option available for Gemini export.
+         *
+         * @param GeminiExportOptions $geminiOptions
+         */
+        public function setGeminiOptions(GeminiExportOptions $geminiOptions)
+        {
+        }
+        /**
+         * @return GeminiExportOptions
+         */
+        public function getGeminiOptions()
+        {
+        }
+        /**
+         * Options for Groups exports.
+         *
+         * @param GroupsExportOptions $groupsOptions
+         */
+        public function setGroupsOptions(GroupsExportOptions $groupsOptions)
+        {
+        }
+        /**
+         * @return GroupsExportOptions
+         */
+        public function getGroupsOptions()
+        {
+        }
+        /**
+         * Options for Chat exports.
+         *
+         * @param HangoutsChatExportOptions $hangoutsChatOptions
+         */
+        public function setHangoutsChatOptions(HangoutsChatExportOptions $hangoutsChatOptions)
+        {
+        }
+        /**
+         * @return HangoutsChatExportOptions
+         */
+        public function getHangoutsChatOptions()
+        {
+        }
+        /**
+         * Options for Gmail exports.
+         *
+         * @param MailExportOptions $mailOptions
+         */
+        public function setMailOptions(MailExportOptions $mailOptions)
+        {
+        }
+        /**
+         * @return MailExportOptions
+         */
+        public function getMailOptions()
+        {
+        }
+        /**
+         * The requested data region for the export.
+         *
+         * Accepted values: EXPORT_REGION_UNSPECIFIED, ANY, US, EUROPE
+         *
+         * @param self::REGION_* $region
+         */
+        public function setRegion($region)
+        {
+        }
+        /**
+         * @return self::REGION_*
+         */
+        public function getRegion()
+        {
+        }
+        /**
+         * Options for Voice exports.
+         *
+         * @param VoiceExportOptions $voiceOptions
+         */
+        public function setVoiceOptions(VoiceExportOptions $voiceOptions)
+        {
+        }
+        /**
+         * @return VoiceExportOptions
+         */
+        public function getVoiceOptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CalendarExportOptions
+     * Runtime class alias of \Google\Service\Vault\ExportOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCalendarOptions()
-    {
-    }
-    /**
-     * Options for Drive exports.
-     *
-     * @param DriveExportOptions $driveOptions
-     */
-    public function setDriveOptions(DriveExportOptions $driveOptions)
-    {
-    }
-    /**
-     * @return DriveExportOptions
-     */
-    public function getDriveOptions()
-    {
-    }
-    /**
-     * Option available for Gemini export.
-     *
-     * @param GeminiExportOptions $geminiOptions
-     */
-    public function setGeminiOptions(GeminiExportOptions $geminiOptions)
-    {
-    }
-    /**
-     * @return GeminiExportOptions
-     */
-    public function getGeminiOptions()
-    {
-    }
-    /**
-     * Options for Groups exports.
-     *
-     * @param GroupsExportOptions $groupsOptions
-     */
-    public function setGroupsOptions(GroupsExportOptions $groupsOptions)
-    {
-    }
-    /**
-     * @return GroupsExportOptions
-     */
-    public function getGroupsOptions()
-    {
-    }
-    /**
-     * Options for Chat exports.
-     *
-     * @param HangoutsChatExportOptions $hangoutsChatOptions
-     */
-    public function setHangoutsChatOptions(HangoutsChatExportOptions $hangoutsChatOptions)
-    {
-    }
-    /**
-     * @return HangoutsChatExportOptions
-     */
-    public function getHangoutsChatOptions()
-    {
-    }
-    /**
-     * Options for Gmail exports.
-     *
-     * @param MailExportOptions $mailOptions
-     */
-    public function setMailOptions(MailExportOptions $mailOptions)
-    {
-    }
-    /**
-     * @return MailExportOptions
-     */
-    public function getMailOptions()
-    {
-    }
-    /**
-     * The requested data region for the export.
-     *
-     * Accepted values: EXPORT_REGION_UNSPECIFIED, ANY, US, EUROPE
-     *
-     * @param self::REGION_* $region
-     */
-    public function setRegion($region)
-    {
-    }
-    /**
-     * @return self::REGION_*
-     */
-    public function getRegion()
-    {
-    }
-    /**
-     * Options for Voice exports.
-     *
-     * @param VoiceExportOptions $voiceOptions
-     */
-    public function setVoiceOptions(VoiceExportOptions $voiceOptions)
-    {
-    }
-    /**
-     * @return VoiceExportOptions
-     */
-    public function getVoiceOptions()
+    class Google_Service_Vault_ExportOptions extends \Google\Service\Vault\ExportOptions
     {
     }
 }

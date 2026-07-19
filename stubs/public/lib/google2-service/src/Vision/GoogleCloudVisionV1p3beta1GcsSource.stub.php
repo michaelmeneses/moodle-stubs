@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class GoogleCloudVisionV1p3beta1GcsSource extends \Google\Model
-{
-    /**
-     * Google Cloud Storage URI for the input file. This must only be a Google
-     * Cloud Storage object. Wildcards are not currently supported.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Google Cloud Storage URI for the input file. This must only be a Google
-     * Cloud Storage object. Wildcards are not currently supported.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
+namespace Google\Service\Vision {
+    class GoogleCloudVisionV1p3beta1GcsSource extends \Google\Model
     {
+        /**
+         * Google Cloud Storage URI for the input file. This must only be a Google
+         * Cloud Storage object. Wildcards are not currently supported.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Google Cloud Storage URI for the input file. This must only be a Google
+         * Cloud Storage object. Wildcards are not currently supported.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Vision\GoogleCloudVisionV1p3beta1GcsSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUri()
+    class Google_Service_Vision_GoogleCloudVisionV1p3beta1GcsSource extends \Google\Service\Vision\GoogleCloudVisionV1p3beta1GcsSource
     {
     }
 }

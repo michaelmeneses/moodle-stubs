@@ -21,105 +21,114 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class IamPolicyAnalysisResult extends \Google\Collection
-{
-    protected $collection_key = 'accessControlLists';
-    protected $accessControlListsType = GoogleCloudAssetV1AccessControlList::class;
-    protected $accessControlListsDataType = 'array';
-    /**
-     * The [full resource name](https://cloud.google.com/asset-
-     * inventory/docs/resource-name-format) of the resource to which the
-     * iam_binding policy attaches.
-     *
-     * @var string
-     */
-    public $attachedResourceFullName;
-    /**
-     * Represents whether all analyses on the iam_binding have successfully
-     * finished.
-     *
-     * @var bool
-     */
-    public $fullyExplored;
-    protected $iamBindingType = Binding::class;
-    protected $iamBindingDataType = '';
-    protected $identityListType = GoogleCloudAssetV1IdentityList::class;
-    protected $identityListDataType = '';
-    /**
-     * The access control lists derived from the iam_binding that match or
-     * potentially match resource and access selectors specified in the request.
-     *
-     * @param GoogleCloudAssetV1AccessControlList[] $accessControlLists
-     */
-    public function setAccessControlLists($accessControlLists)
+namespace Google\Service\CloudAsset {
+    class IamPolicyAnalysisResult extends \Google\Collection
     {
+        protected $collection_key = 'accessControlLists';
+        protected $accessControlListsType = GoogleCloudAssetV1AccessControlList::class;
+        protected $accessControlListsDataType = 'array';
+        /**
+         * The [full resource name](https://cloud.google.com/asset-
+         * inventory/docs/resource-name-format) of the resource to which the
+         * iam_binding policy attaches.
+         *
+         * @var string
+         */
+        public $attachedResourceFullName;
+        /**
+         * Represents whether all analyses on the iam_binding have successfully
+         * finished.
+         *
+         * @var bool
+         */
+        public $fullyExplored;
+        protected $iamBindingType = Binding::class;
+        protected $iamBindingDataType = '';
+        protected $identityListType = GoogleCloudAssetV1IdentityList::class;
+        protected $identityListDataType = '';
+        /**
+         * The access control lists derived from the iam_binding that match or
+         * potentially match resource and access selectors specified in the request.
+         *
+         * @param GoogleCloudAssetV1AccessControlList[] $accessControlLists
+         */
+        public function setAccessControlLists($accessControlLists)
+        {
+        }
+        /**
+         * @return GoogleCloudAssetV1AccessControlList[]
+         */
+        public function getAccessControlLists()
+        {
+        }
+        /**
+         * The [full resource name](https://cloud.google.com/asset-
+         * inventory/docs/resource-name-format) of the resource to which the
+         * iam_binding policy attaches.
+         *
+         * @param string $attachedResourceFullName
+         */
+        public function setAttachedResourceFullName($attachedResourceFullName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAttachedResourceFullName()
+        {
+        }
+        /**
+         * Represents whether all analyses on the iam_binding have successfully
+         * finished.
+         *
+         * @param bool $fullyExplored
+         */
+        public function setFullyExplored($fullyExplored)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getFullyExplored()
+        {
+        }
+        /**
+         * The IAM policy binding under analysis.
+         *
+         * @param Binding $iamBinding
+         */
+        public function setIamBinding(Binding $iamBinding)
+        {
+        }
+        /**
+         * @return Binding
+         */
+        public function getIamBinding()
+        {
+        }
+        /**
+         * The identity list derived from members of the iam_binding that match or
+         * potentially match identity selector specified in the request.
+         *
+         * @param GoogleCloudAssetV1IdentityList $identityList
+         */
+        public function setIdentityList(GoogleCloudAssetV1IdentityList $identityList)
+        {
+        }
+        /**
+         * @return GoogleCloudAssetV1IdentityList
+         */
+        public function getIdentityList()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAssetV1AccessControlList[]
+     * Runtime class alias of \Google\Service\CloudAsset\IamPolicyAnalysisResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessControlLists()
-    {
-    }
-    /**
-     * The [full resource name](https://cloud.google.com/asset-
-     * inventory/docs/resource-name-format) of the resource to which the
-     * iam_binding policy attaches.
-     *
-     * @param string $attachedResourceFullName
-     */
-    public function setAttachedResourceFullName($attachedResourceFullName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAttachedResourceFullName()
-    {
-    }
-    /**
-     * Represents whether all analyses on the iam_binding have successfully
-     * finished.
-     *
-     * @param bool $fullyExplored
-     */
-    public function setFullyExplored($fullyExplored)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getFullyExplored()
-    {
-    }
-    /**
-     * The IAM policy binding under analysis.
-     *
-     * @param Binding $iamBinding
-     */
-    public function setIamBinding(Binding $iamBinding)
-    {
-    }
-    /**
-     * @return Binding
-     */
-    public function getIamBinding()
-    {
-    }
-    /**
-     * The identity list derived from members of the iam_binding that match or
-     * potentially match identity selector specified in the request.
-     *
-     * @param GoogleCloudAssetV1IdentityList $identityList
-     */
-    public function setIdentityList(GoogleCloudAssetV1IdentityList $identityList)
-    {
-    }
-    /**
-     * @return GoogleCloudAssetV1IdentityList
-     */
-    public function getIdentityList()
+    class Google_Service_CloudAsset_IamPolicyAnalysisResult extends \Google\Service\CloudAsset\IamPolicyAnalysisResult
     {
     }
 }

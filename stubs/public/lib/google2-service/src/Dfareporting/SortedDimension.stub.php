@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class SortedDimension extends \Google\Model
-{
-    public const SORT_ORDER_ASCENDING = 'ASCENDING';
-    public const SORT_ORDER_DESCENDING = 'DESCENDING';
-    /**
-     * The kind of resource this is, in this case dfareporting#sortedDimension.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The name of the dimension.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * An optional sort order for the dimension column.
-     *
-     * @var string
-     */
-    public $sortOrder;
-    /**
-     * The kind of resource this is, in this case dfareporting#sortedDimension.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Dfareporting {
+    class SortedDimension extends \Google\Model
     {
+        public const SORT_ORDER_ASCENDING = 'ASCENDING';
+        public const SORT_ORDER_DESCENDING = 'DESCENDING';
+        /**
+         * The kind of resource this is, in this case dfareporting#sortedDimension.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The name of the dimension.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * An optional sort order for the dimension column.
+         *
+         * @var string
+         */
+        public $sortOrder;
+        /**
+         * The kind of resource this is, in this case dfareporting#sortedDimension.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The name of the dimension.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * An optional sort order for the dimension column.
+         *
+         * Accepted values: ASCENDING, DESCENDING
+         *
+         * @param self::SORT_ORDER_* $sortOrder
+         */
+        public function setSortOrder($sortOrder)
+        {
+        }
+        /**
+         * @return self::SORT_ORDER_*
+         */
+        public function getSortOrder()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\SortedDimension registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * The name of the dimension.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * An optional sort order for the dimension column.
-     *
-     * Accepted values: ASCENDING, DESCENDING
-     *
-     * @param self::SORT_ORDER_* $sortOrder
-     */
-    public function setSortOrder($sortOrder)
-    {
-    }
-    /**
-     * @return self::SORT_ORDER_*
-     */
-    public function getSortOrder()
+    class Google_Service_Dfareporting_SortedDimension extends \Google\Service\Dfareporting\SortedDimension
     {
     }
 }

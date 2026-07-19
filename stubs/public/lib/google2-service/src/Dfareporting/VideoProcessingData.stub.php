@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class VideoProcessingData extends \Google\Model
-{
-    /**
-     * The processing state is unknown.
-     */
-    public const PROCESSING_STATE_UNKNOWN = 'UNKNOWN';
-    /**
-     * The asset is being processed.
-     */
-    public const PROCESSING_STATE_PROCESSING = 'PROCESSING';
-    /**
-     * The asset was successfully processed.
-     */
-    public const PROCESSING_STATE_SUCCEEDED = 'SUCCEEDED';
-    /**
-     * The asset failed to be processed.
-     */
-    public const PROCESSING_STATE_FAILED = 'FAILED';
-    /**
-     * For a FAILED processing state, the error reason discovered.
-     *
-     * @var string
-     */
-    public $errorReason;
-    /**
-     * Output only. The processing state of the studio creative asset.
-     *
-     * @var string
-     */
-    public $processingState;
-    /**
-     * For a FAILED processing state, the error reason discovered.
-     *
-     * @param string $errorReason
-     */
-    public function setErrorReason($errorReason)
+namespace Google\Service\Dfareporting {
+    class VideoProcessingData extends \Google\Model
     {
+        /**
+         * The processing state is unknown.
+         */
+        public const PROCESSING_STATE_UNKNOWN = 'UNKNOWN';
+        /**
+         * The asset is being processed.
+         */
+        public const PROCESSING_STATE_PROCESSING = 'PROCESSING';
+        /**
+         * The asset was successfully processed.
+         */
+        public const PROCESSING_STATE_SUCCEEDED = 'SUCCEEDED';
+        /**
+         * The asset failed to be processed.
+         */
+        public const PROCESSING_STATE_FAILED = 'FAILED';
+        /**
+         * For a FAILED processing state, the error reason discovered.
+         *
+         * @var string
+         */
+        public $errorReason;
+        /**
+         * Output only. The processing state of the studio creative asset.
+         *
+         * @var string
+         */
+        public $processingState;
+        /**
+         * For a FAILED processing state, the error reason discovered.
+         *
+         * @param string $errorReason
+         */
+        public function setErrorReason($errorReason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorReason()
+        {
+        }
+        /**
+         * Output only. The processing state of the studio creative asset.
+         *
+         * Accepted values: UNKNOWN, PROCESSING, SUCCEEDED, FAILED
+         *
+         * @param self::PROCESSING_STATE_* $processingState
+         */
+        public function setProcessingState($processingState)
+        {
+        }
+        /**
+         * @return self::PROCESSING_STATE_*
+         */
+        public function getProcessingState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\VideoProcessingData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorReason()
-    {
-    }
-    /**
-     * Output only. The processing state of the studio creative asset.
-     *
-     * Accepted values: UNKNOWN, PROCESSING, SUCCEEDED, FAILED
-     *
-     * @param self::PROCESSING_STATE_* $processingState
-     */
-    public function setProcessingState($processingState)
-    {
-    }
-    /**
-     * @return self::PROCESSING_STATE_*
-     */
-    public function getProcessingState()
+    class Google_Service_Dfareporting_VideoProcessingData extends \Google\Service\Dfareporting\VideoProcessingData
     {
     }
 }

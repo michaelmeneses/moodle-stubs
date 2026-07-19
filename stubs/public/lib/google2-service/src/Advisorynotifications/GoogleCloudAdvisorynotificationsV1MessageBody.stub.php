@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Advisorynotifications;
-
-class GoogleCloudAdvisorynotificationsV1MessageBody extends \Google\Model
-{
-    protected $textType = GoogleCloudAdvisorynotificationsV1Text::class;
-    protected $textDataType = '';
-    /**
-     * The text content of the message body.
-     *
-     * @param GoogleCloudAdvisorynotificationsV1Text $text
-     */
-    public function setText(GoogleCloudAdvisorynotificationsV1Text $text)
+namespace Google\Service\Advisorynotifications {
+    class GoogleCloudAdvisorynotificationsV1MessageBody extends \Google\Model
     {
+        protected $textType = GoogleCloudAdvisorynotificationsV1Text::class;
+        protected $textDataType = '';
+        /**
+         * The text content of the message body.
+         *
+         * @param GoogleCloudAdvisorynotificationsV1Text $text
+         */
+        public function setText(GoogleCloudAdvisorynotificationsV1Text $text)
+        {
+        }
+        /**
+         * @return GoogleCloudAdvisorynotificationsV1Text
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAdvisorynotificationsV1Text
+     * Runtime class alias of \Google\Service\Advisorynotifications\GoogleCloudAdvisorynotificationsV1MessageBody registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getText()
+    class Google_Service_Advisorynotifications_GoogleCloudAdvisorynotificationsV1MessageBody extends \Google\Service\Advisorynotifications\GoogleCloudAdvisorynotificationsV1MessageBody
     {
     }
 }

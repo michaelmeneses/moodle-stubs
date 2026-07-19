@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class Section extends \Google\Collection
-{
-    protected $collection_key = 'widgets';
-    /**
-     * The header of the section. Formatted text is supported. For more
-     * information about formatting text, see [Formatting text in Google Chat
-     * apps](https://developers.google.com/workspace/chat/format-messages#card-
-     * formatting) and [Formatting text in Google Workspace Add-
-     * ons](https://developers.google.com/apps-script/add-
-     * ons/concepts/widgets#text_formatting).
-     *
-     * @var string
-     */
-    public $header;
-    protected $widgetsType = WidgetMarkup::class;
-    protected $widgetsDataType = 'array';
-    /**
-     * The header of the section. Formatted text is supported. For more
-     * information about formatting text, see [Formatting text in Google Chat
-     * apps](https://developers.google.com/workspace/chat/format-messages#card-
-     * formatting) and [Formatting text in Google Workspace Add-
-     * ons](https://developers.google.com/apps-script/add-
-     * ons/concepts/widgets#text_formatting).
-     *
-     * @param string $header
-     */
-    public function setHeader($header)
+namespace Google\Service\HangoutsChat {
+    class Section extends \Google\Collection
     {
+        protected $collection_key = 'widgets';
+        /**
+         * The header of the section. Formatted text is supported. For more
+         * information about formatting text, see [Formatting text in Google Chat
+         * apps](https://developers.google.com/workspace/chat/format-messages#card-
+         * formatting) and [Formatting text in Google Workspace Add-
+         * ons](https://developers.google.com/apps-script/add-
+         * ons/concepts/widgets#text_formatting).
+         *
+         * @var string
+         */
+        public $header;
+        protected $widgetsType = WidgetMarkup::class;
+        protected $widgetsDataType = 'array';
+        /**
+         * The header of the section. Formatted text is supported. For more
+         * information about formatting text, see [Formatting text in Google Chat
+         * apps](https://developers.google.com/workspace/chat/format-messages#card-
+         * formatting) and [Formatting text in Google Workspace Add-
+         * ons](https://developers.google.com/apps-script/add-
+         * ons/concepts/widgets#text_formatting).
+         *
+         * @param string $header
+         */
+        public function setHeader($header)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHeader()
+        {
+        }
+        /**
+         * A section must contain at least one widget.
+         *
+         * @param WidgetMarkup[] $widgets
+         */
+        public function setWidgets($widgets)
+        {
+        }
+        /**
+         * @return WidgetMarkup[]
+         */
+        public function getWidgets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\HangoutsChat\Section registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHeader()
-    {
-    }
-    /**
-     * A section must contain at least one widget.
-     *
-     * @param WidgetMarkup[] $widgets
-     */
-    public function setWidgets($widgets)
-    {
-    }
-    /**
-     * @return WidgetMarkup[]
-     */
-    public function getWidgets()
+    class Google_Service_HangoutsChat_Section extends \Google\Service\HangoutsChat\Section
     {
     }
 }

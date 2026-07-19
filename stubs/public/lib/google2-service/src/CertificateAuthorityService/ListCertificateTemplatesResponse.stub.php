@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateAuthorityService;
-
-class ListCertificateTemplatesResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $certificateTemplatesType = CertificateTemplate::class;
-    protected $certificateTemplatesDataType = 'array';
-    /**
-     * A token to retrieve next page of results. Pass this value in
-     * ListCertificateTemplatesRequest.page_token to retrieve the next page of
-     * results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * A list of locations (e.g. "us-west1") that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * The list of CertificateTemplates.
-     *
-     * @param CertificateTemplate[] $certificateTemplates
-     */
-    public function setCertificateTemplates($certificateTemplates)
+namespace Google\Service\CertificateAuthorityService {
+    class ListCertificateTemplatesResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $certificateTemplatesType = CertificateTemplate::class;
+        protected $certificateTemplatesDataType = 'array';
+        /**
+         * A token to retrieve next page of results. Pass this value in
+         * ListCertificateTemplatesRequest.page_token to retrieve the next page of
+         * results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * A list of locations (e.g. "us-west1") that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * The list of CertificateTemplates.
+         *
+         * @param CertificateTemplate[] $certificateTemplates
+         */
+        public function setCertificateTemplates($certificateTemplates)
+        {
+        }
+        /**
+         * @return CertificateTemplate[]
+         */
+        public function getCertificateTemplates()
+        {
+        }
+        /**
+         * A token to retrieve next page of results. Pass this value in
+         * ListCertificateTemplatesRequest.page_token to retrieve the next page of
+         * results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * A list of locations (e.g. "us-west1") that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CertificateTemplate[]
+     * Runtime class alias of \Google\Service\CertificateAuthorityService\ListCertificateTemplatesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCertificateTemplates()
-    {
-    }
-    /**
-     * A token to retrieve next page of results. Pass this value in
-     * ListCertificateTemplatesRequest.page_token to retrieve the next page of
-     * results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * A list of locations (e.g. "us-west1") that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_CertificateAuthorityService_ListCertificateTemplatesResponse extends \Google\Service\CertificateAuthorityService\ListCertificateTemplatesResponse
     {
     }
 }

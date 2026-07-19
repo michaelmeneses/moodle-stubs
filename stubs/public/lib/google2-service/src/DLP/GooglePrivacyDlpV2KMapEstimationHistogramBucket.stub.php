@@ -21,106 +21,115 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2KMapEstimationHistogramBucket extends \Google\Collection
-{
-    protected $collection_key = 'bucketValues';
-    /**
-     * Number of records within these anonymity bounds.
-     *
-     * @var string
-     */
-    public $bucketSize;
-    /**
-     * Total number of distinct quasi-identifier tuple values in this bucket.
-     *
-     * @var string
-     */
-    public $bucketValueCount;
-    protected $bucketValuesType = GooglePrivacyDlpV2KMapEstimationQuasiIdValues::class;
-    protected $bucketValuesDataType = 'array';
-    /**
-     * Always greater than or equal to min_anonymity.
-     *
-     * @var string
-     */
-    public $maxAnonymity;
-    /**
-     * Always positive.
-     *
-     * @var string
-     */
-    public $minAnonymity;
-    /**
-     * Number of records within these anonymity bounds.
-     *
-     * @param string $bucketSize
-     */
-    public function setBucketSize($bucketSize)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2KMapEstimationHistogramBucket extends \Google\Collection
     {
+        protected $collection_key = 'bucketValues';
+        /**
+         * Number of records within these anonymity bounds.
+         *
+         * @var string
+         */
+        public $bucketSize;
+        /**
+         * Total number of distinct quasi-identifier tuple values in this bucket.
+         *
+         * @var string
+         */
+        public $bucketValueCount;
+        protected $bucketValuesType = GooglePrivacyDlpV2KMapEstimationQuasiIdValues::class;
+        protected $bucketValuesDataType = 'array';
+        /**
+         * Always greater than or equal to min_anonymity.
+         *
+         * @var string
+         */
+        public $maxAnonymity;
+        /**
+         * Always positive.
+         *
+         * @var string
+         */
+        public $minAnonymity;
+        /**
+         * Number of records within these anonymity bounds.
+         *
+         * @param string $bucketSize
+         */
+        public function setBucketSize($bucketSize)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBucketSize()
+        {
+        }
+        /**
+         * Total number of distinct quasi-identifier tuple values in this bucket.
+         *
+         * @param string $bucketValueCount
+         */
+        public function setBucketValueCount($bucketValueCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBucketValueCount()
+        {
+        }
+        /**
+         * Sample of quasi-identifier tuple values in this bucket. The total number of
+         * classes returned per bucket is capped at 20.
+         *
+         * @param GooglePrivacyDlpV2KMapEstimationQuasiIdValues[] $bucketValues
+         */
+        public function setBucketValues($bucketValues)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2KMapEstimationQuasiIdValues[]
+         */
+        public function getBucketValues()
+        {
+        }
+        /**
+         * Always greater than or equal to min_anonymity.
+         *
+         * @param string $maxAnonymity
+         */
+        public function setMaxAnonymity($maxAnonymity)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxAnonymity()
+        {
+        }
+        /**
+         * Always positive.
+         *
+         * @param string $minAnonymity
+         */
+        public function setMinAnonymity($minAnonymity)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMinAnonymity()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2KMapEstimationHistogramBucket registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBucketSize()
-    {
-    }
-    /**
-     * Total number of distinct quasi-identifier tuple values in this bucket.
-     *
-     * @param string $bucketValueCount
-     */
-    public function setBucketValueCount($bucketValueCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBucketValueCount()
-    {
-    }
-    /**
-     * Sample of quasi-identifier tuple values in this bucket. The total number of
-     * classes returned per bucket is capped at 20.
-     *
-     * @param GooglePrivacyDlpV2KMapEstimationQuasiIdValues[] $bucketValues
-     */
-    public function setBucketValues($bucketValues)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2KMapEstimationQuasiIdValues[]
-     */
-    public function getBucketValues()
-    {
-    }
-    /**
-     * Always greater than or equal to min_anonymity.
-     *
-     * @param string $maxAnonymity
-     */
-    public function setMaxAnonymity($maxAnonymity)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaxAnonymity()
-    {
-    }
-    /**
-     * Always positive.
-     *
-     * @param string $minAnonymity
-     */
-    public function setMinAnonymity($minAnonymity)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMinAnonymity()
+    class Google_Service_DLP_GooglePrivacyDlpV2KMapEstimationHistogramBucket extends \Google\Service\DLP\GooglePrivacyDlpV2KMapEstimationHistogramBucket
     {
     }
 }

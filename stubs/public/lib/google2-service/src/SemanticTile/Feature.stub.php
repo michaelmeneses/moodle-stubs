@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SemanticTile;
-
-class Feature extends \Google\Collection
-{
-    protected $collection_key = 'relations';
-    public $displayName;
-    protected $geometryType = Geometry::class;
-    protected $geometryDataType = '';
-    public $placeId;
-    protected $relationsType = Relation::class;
-    protected $relationsDataType = 'array';
-    protected $segmentInfoType = SegmentInfo::class;
-    protected $segmentInfoDataType = '';
-    public $type;
-    public function setDisplayName($displayName)
+namespace Google\Service\SemanticTile {
+    class Feature extends \Google\Collection
     {
+        protected $collection_key = 'relations';
+        public $displayName;
+        protected $geometryType = Geometry::class;
+        protected $geometryDataType = '';
+        public $placeId;
+        protected $relationsType = Relation::class;
+        protected $relationsDataType = 'array';
+        protected $segmentInfoType = SegmentInfo::class;
+        protected $segmentInfoDataType = '';
+        public $type;
+        public function setDisplayName($displayName)
+        {
+        }
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param Geometry
+         */
+        public function setGeometry(Geometry $geometry)
+        {
+        }
+        /**
+         * @return Geometry
+         */
+        public function getGeometry()
+        {
+        }
+        public function setPlaceId($placeId)
+        {
+        }
+        public function getPlaceId()
+        {
+        }
+        /**
+         * @param Relation[]
+         */
+        public function setRelations($relations)
+        {
+        }
+        /**
+         * @return Relation[]
+         */
+        public function getRelations()
+        {
+        }
+        /**
+         * @param SegmentInfo
+         */
+        public function setSegmentInfo(SegmentInfo $segmentInfo)
+        {
+        }
+        /**
+         * @return SegmentInfo
+         */
+        public function getSegmentInfo()
+        {
+        }
+        public function setType($type)
+        {
+        }
+        public function getType()
+        {
+        }
     }
-    public function getDisplayName()
-    {
-    }
+}
+namespace {
     /**
-     * @param Geometry
+     * Runtime class alias of \Google\Service\SemanticTile\Feature registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setGeometry(Geometry $geometry)
-    {
-    }
-    /**
-     * @return Geometry
-     */
-    public function getGeometry()
-    {
-    }
-    public function setPlaceId($placeId)
-    {
-    }
-    public function getPlaceId()
-    {
-    }
-    /**
-     * @param Relation[]
-     */
-    public function setRelations($relations)
-    {
-    }
-    /**
-     * @return Relation[]
-     */
-    public function getRelations()
-    {
-    }
-    /**
-     * @param SegmentInfo
-     */
-    public function setSegmentInfo(SegmentInfo $segmentInfo)
-    {
-    }
-    /**
-     * @return SegmentInfo
-     */
-    public function getSegmentInfo()
-    {
-    }
-    public function setType($type)
-    {
-    }
-    public function getType()
+    class Google_Service_SemanticTile_Feature extends \Google\Service\SemanticTile\Feature
     {
     }
 }

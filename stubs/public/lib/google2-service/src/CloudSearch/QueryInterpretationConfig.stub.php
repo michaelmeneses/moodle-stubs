@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class QueryInterpretationConfig extends \Google\Model
-{
-    /**
-     * Set this flag to disable supplemental results retrieval, setting a flag
-     * here will not retrieve supplemental results for queries associated with a
-     * given search application. If this flag is set to True, it will take
-     * precedence over the option set at Query level. For the default value of
-     * False, query level flag will set the correct interpretation for
-     * supplemental results.
-     *
-     * @var bool
-     */
-    public $forceDisableSupplementalResults;
-    /**
-     * Enable this flag to turn off all internal optimizations like natural
-     * language (NL) interpretation of queries, supplemental results retrieval,
-     * and usage of synonyms including custom ones. If this flag is set to True,
-     * it will take precedence over the option set at Query level. For the default
-     * value of False, query level flag will set the correct interpretation for
-     * verbatim mode.
-     *
-     * @var bool
-     */
-    public $forceVerbatimMode;
-    /**
-     * Set this flag to disable supplemental results retrieval, setting a flag
-     * here will not retrieve supplemental results for queries associated with a
-     * given search application. If this flag is set to True, it will take
-     * precedence over the option set at Query level. For the default value of
-     * False, query level flag will set the correct interpretation for
-     * supplemental results.
-     *
-     * @param bool $forceDisableSupplementalResults
-     */
-    public function setForceDisableSupplementalResults($forceDisableSupplementalResults)
+namespace Google\Service\CloudSearch {
+    class QueryInterpretationConfig extends \Google\Model
     {
+        /**
+         * Set this flag to disable supplemental results retrieval, setting a flag
+         * here will not retrieve supplemental results for queries associated with a
+         * given search application. If this flag is set to True, it will take
+         * precedence over the option set at Query level. For the default value of
+         * False, query level flag will set the correct interpretation for
+         * supplemental results.
+         *
+         * @var bool
+         */
+        public $forceDisableSupplementalResults;
+        /**
+         * Enable this flag to turn off all internal optimizations like natural
+         * language (NL) interpretation of queries, supplemental results retrieval,
+         * and usage of synonyms including custom ones. If this flag is set to True,
+         * it will take precedence over the option set at Query level. For the default
+         * value of False, query level flag will set the correct interpretation for
+         * verbatim mode.
+         *
+         * @var bool
+         */
+        public $forceVerbatimMode;
+        /**
+         * Set this flag to disable supplemental results retrieval, setting a flag
+         * here will not retrieve supplemental results for queries associated with a
+         * given search application. If this flag is set to True, it will take
+         * precedence over the option set at Query level. For the default value of
+         * False, query level flag will set the correct interpretation for
+         * supplemental results.
+         *
+         * @param bool $forceDisableSupplementalResults
+         */
+        public function setForceDisableSupplementalResults($forceDisableSupplementalResults)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getForceDisableSupplementalResults()
+        {
+        }
+        /**
+         * Enable this flag to turn off all internal optimizations like natural
+         * language (NL) interpretation of queries, supplemental results retrieval,
+         * and usage of synonyms including custom ones. If this flag is set to True,
+         * it will take precedence over the option set at Query level. For the default
+         * value of False, query level flag will set the correct interpretation for
+         * verbatim mode.
+         *
+         * @param bool $forceVerbatimMode
+         */
+        public function setForceVerbatimMode($forceVerbatimMode)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getForceVerbatimMode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudSearch\QueryInterpretationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getForceDisableSupplementalResults()
-    {
-    }
-    /**
-     * Enable this flag to turn off all internal optimizations like natural
-     * language (NL) interpretation of queries, supplemental results retrieval,
-     * and usage of synonyms including custom ones. If this flag is set to True,
-     * it will take precedence over the option set at Query level. For the default
-     * value of False, query level flag will set the correct interpretation for
-     * verbatim mode.
-     *
-     * @param bool $forceVerbatimMode
-     */
-    public function setForceVerbatimMode($forceVerbatimMode)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getForceVerbatimMode()
+    class Google_Service_CloudSearch_QueryInterpretationConfig extends \Google\Service\CloudSearch\QueryInterpretationConfig
     {
     }
 }

@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoCloudLoggingDetails extends \Google\Model
-{
-    /**
-     * Unspecified
-     */
-    public const CLOUD_LOGGING_SEVERITY_CLOUD_LOGGING_SEVERITY_UNSPECIFIED = 'CLOUD_LOGGING_SEVERITY_UNSPECIFIED';
-    /**
-     * If Severity selected is `INFO`, then all the Integration Execution States
-     * (`IN_PROCESS`, `ON_HOLD`, `SUCCEEDED`, `SUSPENDED`, `ERROR`, `CANCELLED`)
-     * will be sent to Cloud Logging.
-     */
-    public const CLOUD_LOGGING_SEVERITY_INFO = 'INFO';
-    /**
-     * If Severity selected is `ERROR`, then only the following Integration
-     * Execution States (`ERROR`, `CANCELLED`) will be sent to Cloud Logging.
-     */
-    public const CLOUD_LOGGING_SEVERITY_ERROR = 'ERROR';
-    /**
-     * If Severity selected is `WARNING`, then only the following Integration
-     * Execution States (`ERROR`, `CANCELLED`) will be sent to Cloud Logging.
-     */
-    public const CLOUD_LOGGING_SEVERITY_WARNING = 'WARNING';
-    /**
-     * Severity selected by the customer for the logs to be sent to Cloud Logging,
-     * for the integration version getting executed.
-     *
-     * @var string
-     */
-    public $cloudLoggingSeverity;
-    /**
-     * Status of whether Cloud Logging is enabled or not for the integration
-     * version getting executed.
-     *
-     * @var bool
-     */
-    public $enableCloudLogging;
-    /**
-     * Severity selected by the customer for the logs to be sent to Cloud Logging,
-     * for the integration version getting executed.
-     *
-     * Accepted values: CLOUD_LOGGING_SEVERITY_UNSPECIFIED, INFO, ERROR, WARNING
-     *
-     * @param self::CLOUD_LOGGING_SEVERITY_* $cloudLoggingSeverity
-     */
-    public function setCloudLoggingSeverity($cloudLoggingSeverity)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoCloudLoggingDetails extends \Google\Model
     {
+        /**
+         * Unspecified
+         */
+        public const CLOUD_LOGGING_SEVERITY_CLOUD_LOGGING_SEVERITY_UNSPECIFIED = 'CLOUD_LOGGING_SEVERITY_UNSPECIFIED';
+        /**
+         * If Severity selected is `INFO`, then all the Integration Execution States
+         * (`IN_PROCESS`, `ON_HOLD`, `SUCCEEDED`, `SUSPENDED`, `ERROR`, `CANCELLED`)
+         * will be sent to Cloud Logging.
+         */
+        public const CLOUD_LOGGING_SEVERITY_INFO = 'INFO';
+        /**
+         * If Severity selected is `ERROR`, then only the following Integration
+         * Execution States (`ERROR`, `CANCELLED`) will be sent to Cloud Logging.
+         */
+        public const CLOUD_LOGGING_SEVERITY_ERROR = 'ERROR';
+        /**
+         * If Severity selected is `WARNING`, then only the following Integration
+         * Execution States (`ERROR`, `CANCELLED`) will be sent to Cloud Logging.
+         */
+        public const CLOUD_LOGGING_SEVERITY_WARNING = 'WARNING';
+        /**
+         * Severity selected by the customer for the logs to be sent to Cloud Logging,
+         * for the integration version getting executed.
+         *
+         * @var string
+         */
+        public $cloudLoggingSeverity;
+        /**
+         * Status of whether Cloud Logging is enabled or not for the integration
+         * version getting executed.
+         *
+         * @var bool
+         */
+        public $enableCloudLogging;
+        /**
+         * Severity selected by the customer for the logs to be sent to Cloud Logging,
+         * for the integration version getting executed.
+         *
+         * Accepted values: CLOUD_LOGGING_SEVERITY_UNSPECIFIED, INFO, ERROR, WARNING
+         *
+         * @param self::CLOUD_LOGGING_SEVERITY_* $cloudLoggingSeverity
+         */
+        public function setCloudLoggingSeverity($cloudLoggingSeverity)
+        {
+        }
+        /**
+         * @return self::CLOUD_LOGGING_SEVERITY_*
+         */
+        public function getCloudLoggingSeverity()
+        {
+        }
+        /**
+         * Status of whether Cloud Logging is enabled or not for the integration
+         * version getting executed.
+         *
+         * @param bool $enableCloudLogging
+         */
+        public function setEnableCloudLogging($enableCloudLogging)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableCloudLogging()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CLOUD_LOGGING_SEVERITY_*
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoCloudLoggingDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudLoggingSeverity()
-    {
-    }
-    /**
-     * Status of whether Cloud Logging is enabled or not for the integration
-     * version getting executed.
-     *
-     * @param bool $enableCloudLogging
-     */
-    public function setEnableCloudLogging($enableCloudLogging)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableCloudLogging()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoCloudLoggingDetails extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoCloudLoggingDetails
     {
     }
 }

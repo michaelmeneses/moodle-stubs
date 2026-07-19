@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class TableColumnDataValidationRule extends \Google\Model
-{
-    protected $conditionType = BooleanCondition::class;
-    protected $conditionDataType = '';
-    /**
-     * The condition that data in the cell must match. Valid only if the
-     * [BooleanCondition.type] is ONE_OF_LIST.
-     *
-     * @param BooleanCondition $condition
-     */
-    public function setCondition(BooleanCondition $condition)
+namespace Google\Service\Sheets {
+    class TableColumnDataValidationRule extends \Google\Model
     {
+        protected $conditionType = BooleanCondition::class;
+        protected $conditionDataType = '';
+        /**
+         * The condition that data in the cell must match. Valid only if the
+         * [BooleanCondition.type] is ONE_OF_LIST.
+         *
+         * @param BooleanCondition $condition
+         */
+        public function setCondition(BooleanCondition $condition)
+        {
+        }
+        /**
+         * @return BooleanCondition
+         */
+        public function getCondition()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BooleanCondition
+     * Runtime class alias of \Google\Service\Sheets\TableColumnDataValidationRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCondition()
+    class Google_Service_Sheets_TableColumnDataValidationRule extends \Google\Service\Sheets\TableColumnDataValidationRule
     {
     }
 }

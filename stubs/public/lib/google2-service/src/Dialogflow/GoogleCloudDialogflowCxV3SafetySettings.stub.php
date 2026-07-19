@@ -21,112 +21,121 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3SafetySettings extends \Google\Collection
-{
-    /**
-     * Unspecified, defaults to PARTIAL_MATCH.
-     */
-    public const DEFAULT_BANNED_PHRASE_MATCH_STRATEGY_PHRASE_MATCH_STRATEGY_UNSPECIFIED = 'PHRASE_MATCH_STRATEGY_UNSPECIFIED';
-    /**
-     * Text that contains the phrase as a substring will be matched, e.g. "foo"
-     * will match "afoobar".
-     */
-    public const DEFAULT_BANNED_PHRASE_MATCH_STRATEGY_PARTIAL_MATCH = 'PARTIAL_MATCH';
-    /**
-     * Text that contains the tokenized words of the phrase will be matched, e.g.
-     * "foo" will match "a foo bar" and "foo bar", but not "foobar".
-     */
-    public const DEFAULT_BANNED_PHRASE_MATCH_STRATEGY_WORD_MATCH = 'WORD_MATCH';
-    protected $collection_key = 'bannedPhrases';
-    protected $bannedPhrasesType = GoogleCloudDialogflowCxV3SafetySettingsPhrase::class;
-    protected $bannedPhrasesDataType = 'array';
-    /**
-     * Optional. Default phrase match strategy for banned phrases.
-     *
-     * @var string
-     */
-    public $defaultBannedPhraseMatchStrategy;
-    protected $defaultRaiSettingsType = GoogleCloudDialogflowCxV3SafetySettingsRaiSettings::class;
-    protected $defaultRaiSettingsDataType = '';
-    protected $promptSecuritySettingsType = GoogleCloudDialogflowCxV3SafetySettingsPromptSecuritySettings::class;
-    protected $promptSecuritySettingsDataType = '';
-    protected $raiSettingsType = GoogleCloudDialogflowCxV3SafetySettingsRaiSettings::class;
-    protected $raiSettingsDataType = '';
-    /**
-     * Banned phrases for generated text.
-     *
-     * @param GoogleCloudDialogflowCxV3SafetySettingsPhrase[] $bannedPhrases
-     */
-    public function setBannedPhrases($bannedPhrases)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3SafetySettings extends \Google\Collection
     {
+        /**
+         * Unspecified, defaults to PARTIAL_MATCH.
+         */
+        public const DEFAULT_BANNED_PHRASE_MATCH_STRATEGY_PHRASE_MATCH_STRATEGY_UNSPECIFIED = 'PHRASE_MATCH_STRATEGY_UNSPECIFIED';
+        /**
+         * Text that contains the phrase as a substring will be matched, e.g. "foo"
+         * will match "afoobar".
+         */
+        public const DEFAULT_BANNED_PHRASE_MATCH_STRATEGY_PARTIAL_MATCH = 'PARTIAL_MATCH';
+        /**
+         * Text that contains the tokenized words of the phrase will be matched, e.g.
+         * "foo" will match "a foo bar" and "foo bar", but not "foobar".
+         */
+        public const DEFAULT_BANNED_PHRASE_MATCH_STRATEGY_WORD_MATCH = 'WORD_MATCH';
+        protected $collection_key = 'bannedPhrases';
+        protected $bannedPhrasesType = GoogleCloudDialogflowCxV3SafetySettingsPhrase::class;
+        protected $bannedPhrasesDataType = 'array';
+        /**
+         * Optional. Default phrase match strategy for banned phrases.
+         *
+         * @var string
+         */
+        public $defaultBannedPhraseMatchStrategy;
+        protected $defaultRaiSettingsType = GoogleCloudDialogflowCxV3SafetySettingsRaiSettings::class;
+        protected $defaultRaiSettingsDataType = '';
+        protected $promptSecuritySettingsType = GoogleCloudDialogflowCxV3SafetySettingsPromptSecuritySettings::class;
+        protected $promptSecuritySettingsDataType = '';
+        protected $raiSettingsType = GoogleCloudDialogflowCxV3SafetySettingsRaiSettings::class;
+        protected $raiSettingsDataType = '';
+        /**
+         * Banned phrases for generated text.
+         *
+         * @param GoogleCloudDialogflowCxV3SafetySettingsPhrase[] $bannedPhrases
+         */
+        public function setBannedPhrases($bannedPhrases)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3SafetySettingsPhrase[]
+         */
+        public function getBannedPhrases()
+        {
+        }
+        /**
+         * Optional. Default phrase match strategy for banned phrases.
+         *
+         * Accepted values: PHRASE_MATCH_STRATEGY_UNSPECIFIED, PARTIAL_MATCH,
+         * WORD_MATCH
+         *
+         * @param self::DEFAULT_BANNED_PHRASE_MATCH_STRATEGY_* $defaultBannedPhraseMatchStrategy
+         */
+        public function setDefaultBannedPhraseMatchStrategy($defaultBannedPhraseMatchStrategy)
+        {
+        }
+        /**
+         * @return self::DEFAULT_BANNED_PHRASE_MATCH_STRATEGY_*
+         */
+        public function getDefaultBannedPhraseMatchStrategy()
+        {
+        }
+        /**
+         * Optional. Immutable. Default RAI settings to be annotated on the agent, so
+         * that users will be able to restore their RAI configurations to the default
+         * settings. Read-only field for the API proto only.
+         *
+         * @param GoogleCloudDialogflowCxV3SafetySettingsRaiSettings $defaultRaiSettings
+         */
+        public function setDefaultRaiSettings(GoogleCloudDialogflowCxV3SafetySettingsRaiSettings $defaultRaiSettings)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3SafetySettingsRaiSettings
+         */
+        public function getDefaultRaiSettings()
+        {
+        }
+        /**
+         * Optional. Settings for prompt security checks.
+         *
+         * @param GoogleCloudDialogflowCxV3SafetySettingsPromptSecuritySettings $promptSecuritySettings
+         */
+        public function setPromptSecuritySettings(GoogleCloudDialogflowCxV3SafetySettingsPromptSecuritySettings $promptSecuritySettings)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3SafetySettingsPromptSecuritySettings
+         */
+        public function getPromptSecuritySettings()
+        {
+        }
+        /**
+         * Optional. Settings for Responsible AI checks.
+         *
+         * @param GoogleCloudDialogflowCxV3SafetySettingsRaiSettings $raiSettings
+         */
+        public function setRaiSettings(GoogleCloudDialogflowCxV3SafetySettingsRaiSettings $raiSettings)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3SafetySettingsRaiSettings
+         */
+        public function getRaiSettings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3SafetySettingsPhrase[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3SafetySettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBannedPhrases()
-    {
-    }
-    /**
-     * Optional. Default phrase match strategy for banned phrases.
-     *
-     * Accepted values: PHRASE_MATCH_STRATEGY_UNSPECIFIED, PARTIAL_MATCH,
-     * WORD_MATCH
-     *
-     * @param self::DEFAULT_BANNED_PHRASE_MATCH_STRATEGY_* $defaultBannedPhraseMatchStrategy
-     */
-    public function setDefaultBannedPhraseMatchStrategy($defaultBannedPhraseMatchStrategy)
-    {
-    }
-    /**
-     * @return self::DEFAULT_BANNED_PHRASE_MATCH_STRATEGY_*
-     */
-    public function getDefaultBannedPhraseMatchStrategy()
-    {
-    }
-    /**
-     * Optional. Immutable. Default RAI settings to be annotated on the agent, so
-     * that users will be able to restore their RAI configurations to the default
-     * settings. Read-only field for the API proto only.
-     *
-     * @param GoogleCloudDialogflowCxV3SafetySettingsRaiSettings $defaultRaiSettings
-     */
-    public function setDefaultRaiSettings(GoogleCloudDialogflowCxV3SafetySettingsRaiSettings $defaultRaiSettings)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3SafetySettingsRaiSettings
-     */
-    public function getDefaultRaiSettings()
-    {
-    }
-    /**
-     * Optional. Settings for prompt security checks.
-     *
-     * @param GoogleCloudDialogflowCxV3SafetySettingsPromptSecuritySettings $promptSecuritySettings
-     */
-    public function setPromptSecuritySettings(GoogleCloudDialogflowCxV3SafetySettingsPromptSecuritySettings $promptSecuritySettings)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3SafetySettingsPromptSecuritySettings
-     */
-    public function getPromptSecuritySettings()
-    {
-    }
-    /**
-     * Optional. Settings for Responsible AI checks.
-     *
-     * @param GoogleCloudDialogflowCxV3SafetySettingsRaiSettings $raiSettings
-     */
-    public function setRaiSettings(GoogleCloudDialogflowCxV3SafetySettingsRaiSettings $raiSettings)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3SafetySettingsRaiSettings
-     */
-    public function getRaiSettings()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3SafetySettings extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3SafetySettings
     {
     }
 }

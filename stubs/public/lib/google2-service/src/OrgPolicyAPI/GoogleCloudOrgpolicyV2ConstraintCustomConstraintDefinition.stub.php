@@ -21,129 +21,138 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OrgPolicyAPI;
-
-class GoogleCloudOrgpolicyV2ConstraintCustomConstraintDefinition extends \Google\Collection
-{
-    /**
-     * This is only used for distinguishing unset values and should never be used.
-     * Results in an error.
-     */
-    public const ACTION_TYPE_ACTION_TYPE_UNSPECIFIED = 'ACTION_TYPE_UNSPECIFIED';
-    /**
-     * Allowed action type.
-     */
-    public const ACTION_TYPE_ALLOW = 'ALLOW';
-    /**
-     * Deny action type.
-     */
-    public const ACTION_TYPE_DENY = 'DENY';
-    protected $collection_key = 'resourceTypes';
-    /**
-     * Allow or deny type.
-     *
-     * @var string
-     */
-    public $actionType;
-    /**
-     * Org policy condition/expression. For example:
-     * `resource.instanceName.matches("(production|test)_(.+_)?[\d]+")` or,
-     * `resource.management.auto_upgrade == true` The max length of the condition
-     * is 1000 characters.
-     *
-     * @var string
-     */
-    public $condition;
-    /**
-     * All the operations being applied for this constraint.
-     *
-     * @var string[]
-     */
-    public $methodTypes;
-    protected $parametersType = GoogleCloudOrgpolicyV2ConstraintCustomConstraintDefinitionParameter::class;
-    protected $parametersDataType = 'map';
-    /**
-     * The resource instance type on which this policy applies. Format will be of
-     * the form : `/` Example: * `compute.googleapis.com/Instance`.
-     *
-     * @var string[]
-     */
-    public $resourceTypes;
-    /**
-     * Allow or deny type.
-     *
-     * Accepted values: ACTION_TYPE_UNSPECIFIED, ALLOW, DENY
-     *
-     * @param self::ACTION_TYPE_* $actionType
-     */
-    public function setActionType($actionType)
+namespace Google\Service\OrgPolicyAPI {
+    class GoogleCloudOrgpolicyV2ConstraintCustomConstraintDefinition extends \Google\Collection
     {
+        /**
+         * This is only used for distinguishing unset values and should never be used.
+         * Results in an error.
+         */
+        public const ACTION_TYPE_ACTION_TYPE_UNSPECIFIED = 'ACTION_TYPE_UNSPECIFIED';
+        /**
+         * Allowed action type.
+         */
+        public const ACTION_TYPE_ALLOW = 'ALLOW';
+        /**
+         * Deny action type.
+         */
+        public const ACTION_TYPE_DENY = 'DENY';
+        protected $collection_key = 'resourceTypes';
+        /**
+         * Allow or deny type.
+         *
+         * @var string
+         */
+        public $actionType;
+        /**
+         * Org policy condition/expression. For example:
+         * `resource.instanceName.matches("(production|test)_(.+_)?[\d]+")` or,
+         * `resource.management.auto_upgrade == true` The max length of the condition
+         * is 1000 characters.
+         *
+         * @var string
+         */
+        public $condition;
+        /**
+         * All the operations being applied for this constraint.
+         *
+         * @var string[]
+         */
+        public $methodTypes;
+        protected $parametersType = GoogleCloudOrgpolicyV2ConstraintCustomConstraintDefinitionParameter::class;
+        protected $parametersDataType = 'map';
+        /**
+         * The resource instance type on which this policy applies. Format will be of
+         * the form : `/` Example: * `compute.googleapis.com/Instance`.
+         *
+         * @var string[]
+         */
+        public $resourceTypes;
+        /**
+         * Allow or deny type.
+         *
+         * Accepted values: ACTION_TYPE_UNSPECIFIED, ALLOW, DENY
+         *
+         * @param self::ACTION_TYPE_* $actionType
+         */
+        public function setActionType($actionType)
+        {
+        }
+        /**
+         * @return self::ACTION_TYPE_*
+         */
+        public function getActionType()
+        {
+        }
+        /**
+         * Org policy condition/expression. For example:
+         * `resource.instanceName.matches("(production|test)_(.+_)?[\d]+")` or,
+         * `resource.management.auto_upgrade == true` The max length of the condition
+         * is 1000 characters.
+         *
+         * @param string $condition
+         */
+        public function setCondition($condition)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCondition()
+        {
+        }
+        /**
+         * All the operations being applied for this constraint.
+         *
+         * @param string[] $methodTypes
+         */
+        public function setMethodTypes($methodTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMethodTypes()
+        {
+        }
+        /**
+         * Stores the structure of `Parameters` used by the constraint condition. The
+         * key of `map` represents the name of the parameter.
+         *
+         * @param GoogleCloudOrgpolicyV2ConstraintCustomConstraintDefinitionParameter[] $parameters
+         */
+        public function setParameters($parameters)
+        {
+        }
+        /**
+         * @return GoogleCloudOrgpolicyV2ConstraintCustomConstraintDefinitionParameter[]
+         */
+        public function getParameters()
+        {
+        }
+        /**
+         * The resource instance type on which this policy applies. Format will be of
+         * the form : `/` Example: * `compute.googleapis.com/Instance`.
+         *
+         * @param string[] $resourceTypes
+         */
+        public function setResourceTypes($resourceTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getResourceTypes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ACTION_TYPE_*
+     * Runtime class alias of \Google\Service\OrgPolicyAPI\GoogleCloudOrgpolicyV2ConstraintCustomConstraintDefinition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActionType()
-    {
-    }
-    /**
-     * Org policy condition/expression. For example:
-     * `resource.instanceName.matches("(production|test)_(.+_)?[\d]+")` or,
-     * `resource.management.auto_upgrade == true` The max length of the condition
-     * is 1000 characters.
-     *
-     * @param string $condition
-     */
-    public function setCondition($condition)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCondition()
-    {
-    }
-    /**
-     * All the operations being applied for this constraint.
-     *
-     * @param string[] $methodTypes
-     */
-    public function setMethodTypes($methodTypes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMethodTypes()
-    {
-    }
-    /**
-     * Stores the structure of `Parameters` used by the constraint condition. The
-     * key of `map` represents the name of the parameter.
-     *
-     * @param GoogleCloudOrgpolicyV2ConstraintCustomConstraintDefinitionParameter[] $parameters
-     */
-    public function setParameters($parameters)
-    {
-    }
-    /**
-     * @return GoogleCloudOrgpolicyV2ConstraintCustomConstraintDefinitionParameter[]
-     */
-    public function getParameters()
-    {
-    }
-    /**
-     * The resource instance type on which this policy applies. Format will be of
-     * the form : `/` Example: * `compute.googleapis.com/Instance`.
-     *
-     * @param string[] $resourceTypes
-     */
-    public function setResourceTypes($resourceTypes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getResourceTypes()
+    class Google_Service_OrgPolicyAPI_GoogleCloudOrgpolicyV2ConstraintCustomConstraintDefinition extends \Google\Service\OrgPolicyAPI\GoogleCloudOrgpolicyV2ConstraintCustomConstraintDefinition
     {
     }
 }

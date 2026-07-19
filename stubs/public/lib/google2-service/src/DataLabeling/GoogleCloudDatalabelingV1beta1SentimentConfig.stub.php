@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1SentimentConfig extends \Google\Model
-{
-    /**
-     * If set to true, contributors will have the option to select sentiment of
-     * the label they selected, to mark it as negative or positive label. Default
-     * is false.
-     *
-     * @var bool
-     */
-    public $enableLabelSentimentSelection;
-    /**
-     * If set to true, contributors will have the option to select sentiment of
-     * the label they selected, to mark it as negative or positive label. Default
-     * is false.
-     *
-     * @param bool $enableLabelSentimentSelection
-     */
-    public function setEnableLabelSentimentSelection($enableLabelSentimentSelection)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1SentimentConfig extends \Google\Model
     {
+        /**
+         * If set to true, contributors will have the option to select sentiment of
+         * the label they selected, to mark it as negative or positive label. Default
+         * is false.
+         *
+         * @var bool
+         */
+        public $enableLabelSentimentSelection;
+        /**
+         * If set to true, contributors will have the option to select sentiment of
+         * the label they selected, to mark it as negative or positive label. Default
+         * is false.
+         *
+         * @param bool $enableLabelSentimentSelection
+         */
+        public function setEnableLabelSentimentSelection($enableLabelSentimentSelection)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableLabelSentimentSelection()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1SentimentConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableLabelSentimentSelection()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1SentimentConfig extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1SentimentConfig
     {
     }
 }

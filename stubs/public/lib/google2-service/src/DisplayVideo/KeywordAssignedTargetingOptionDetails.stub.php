@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class KeywordAssignedTargetingOptionDetails extends \Google\Model
-{
-    /**
-     * Required. The keyword, for example `car insurance`. Positive keyword cannot
-     * be offensive word. Must be UTF-8 encoded with a maximum size of 255 bytes.
-     * Maximum number of characters is 80. Maximum number of words is 10.
-     *
-     * @var string
-     */
-    public $keyword;
-    /**
-     * Indicates if this option is being negatively targeted.
-     *
-     * @var bool
-     */
-    public $negative;
-    /**
-     * Required. The keyword, for example `car insurance`. Positive keyword cannot
-     * be offensive word. Must be UTF-8 encoded with a maximum size of 255 bytes.
-     * Maximum number of characters is 80. Maximum number of words is 10.
-     *
-     * @param string $keyword
-     */
-    public function setKeyword($keyword)
+namespace Google\Service\DisplayVideo {
+    class KeywordAssignedTargetingOptionDetails extends \Google\Model
     {
+        /**
+         * Required. The keyword, for example `car insurance`. Positive keyword cannot
+         * be offensive word. Must be UTF-8 encoded with a maximum size of 255 bytes.
+         * Maximum number of characters is 80. Maximum number of words is 10.
+         *
+         * @var string
+         */
+        public $keyword;
+        /**
+         * Indicates if this option is being negatively targeted.
+         *
+         * @var bool
+         */
+        public $negative;
+        /**
+         * Required. The keyword, for example `car insurance`. Positive keyword cannot
+         * be offensive word. Must be UTF-8 encoded with a maximum size of 255 bytes.
+         * Maximum number of characters is 80. Maximum number of words is 10.
+         *
+         * @param string $keyword
+         */
+        public function setKeyword($keyword)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKeyword()
+        {
+        }
+        /**
+         * Indicates if this option is being negatively targeted.
+         *
+         * @param bool $negative
+         */
+        public function setNegative($negative)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getNegative()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\KeywordAssignedTargetingOptionDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKeyword()
-    {
-    }
-    /**
-     * Indicates if this option is being negatively targeted.
-     *
-     * @param bool $negative
-     */
-    public function setNegative($negative)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getNegative()
+    class Google_Service_DisplayVideo_KeywordAssignedTargetingOptionDetails extends \Google\Service\DisplayVideo\KeywordAssignedTargetingOptionDetails
     {
     }
 }

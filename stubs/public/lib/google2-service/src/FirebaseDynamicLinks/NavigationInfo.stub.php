@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseDynamicLinks;
-
-class NavigationInfo extends \Google\Model
-{
-    /**
-     * If this option is on, FDL click will be forced to redirect rather than show
-     * an interstitial page.
-     *
-     * @var bool
-     */
-    public $enableForcedRedirect;
-    /**
-     * If this option is on, FDL click will be forced to redirect rather than show
-     * an interstitial page.
-     *
-     * @param bool $enableForcedRedirect
-     */
-    public function setEnableForcedRedirect($enableForcedRedirect)
+namespace Google\Service\FirebaseDynamicLinks {
+    class NavigationInfo extends \Google\Model
     {
+        /**
+         * If this option is on, FDL click will be forced to redirect rather than show
+         * an interstitial page.
+         *
+         * @var bool
+         */
+        public $enableForcedRedirect;
+        /**
+         * If this option is on, FDL click will be forced to redirect rather than show
+         * an interstitial page.
+         *
+         * @param bool $enableForcedRedirect
+         */
+        public function setEnableForcedRedirect($enableForcedRedirect)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableForcedRedirect()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\FirebaseDynamicLinks\NavigationInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableForcedRedirect()
+    class Google_Service_FirebaseDynamicLinks_NavigationInfo extends \Google\Service\FirebaseDynamicLinks\NavigationInfo
     {
     }
 }

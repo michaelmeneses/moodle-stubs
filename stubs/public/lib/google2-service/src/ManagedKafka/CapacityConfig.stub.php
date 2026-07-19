@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedKafka;
-
-class CapacityConfig extends \Google\Model
-{
-    /**
-     * Required. The memory to provision for the cluster in bytes. The CPU:memory
-     * ratio (vCPU:GiB) must be between 1:1 and 1:8. Minimum: 3221225472 (3 GiB).
-     *
-     * @var string
-     */
-    public $memoryBytes;
-    /**
-     * Required. The number of vCPUs to provision for the cluster. Minimum: 3.
-     *
-     * @var string
-     */
-    public $vcpuCount;
-    /**
-     * Required. The memory to provision for the cluster in bytes. The CPU:memory
-     * ratio (vCPU:GiB) must be between 1:1 and 1:8. Minimum: 3221225472 (3 GiB).
-     *
-     * @param string $memoryBytes
-     */
-    public function setMemoryBytes($memoryBytes)
+namespace Google\Service\ManagedKafka {
+    class CapacityConfig extends \Google\Model
     {
+        /**
+         * Required. The memory to provision for the cluster in bytes. The CPU:memory
+         * ratio (vCPU:GiB) must be between 1:1 and 1:8. Minimum: 3221225472 (3 GiB).
+         *
+         * @var string
+         */
+        public $memoryBytes;
+        /**
+         * Required. The number of vCPUs to provision for the cluster. Minimum: 3.
+         *
+         * @var string
+         */
+        public $vcpuCount;
+        /**
+         * Required. The memory to provision for the cluster in bytes. The CPU:memory
+         * ratio (vCPU:GiB) must be between 1:1 and 1:8. Minimum: 3221225472 (3 GiB).
+         *
+         * @param string $memoryBytes
+         */
+        public function setMemoryBytes($memoryBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMemoryBytes()
+        {
+        }
+        /**
+         * Required. The number of vCPUs to provision for the cluster. Minimum: 3.
+         *
+         * @param string $vcpuCount
+         */
+        public function setVcpuCount($vcpuCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVcpuCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ManagedKafka\CapacityConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMemoryBytes()
-    {
-    }
-    /**
-     * Required. The number of vCPUs to provision for the cluster. Minimum: 3.
-     *
-     * @param string $vcpuCount
-     */
-    public function setVcpuCount($vcpuCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVcpuCount()
+    class Google_Service_ManagedKafka_CapacityConfig extends \Google\Service\ManagedKafka\CapacityConfig
     {
     }
 }

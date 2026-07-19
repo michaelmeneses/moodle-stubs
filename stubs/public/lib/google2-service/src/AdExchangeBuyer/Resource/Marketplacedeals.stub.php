@@ -21,64 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer\Resource;
-
-/**
- * The "marketplacedeals" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adexchangebuyerService = new Google\Service\AdExchangeBuyer(...);
- *   $marketplacedeals = $adexchangebuyerService->marketplacedeals;
- *  </code>
- */
-class Marketplacedeals extends \Google\Service\Resource
-{
+namespace Google\Service\AdExchangeBuyer\Resource {
+    use Google\Service\AdExchangeBuyer\AddOrderDealsRequest;
+    use Google\Service\AdExchangeBuyer\AddOrderDealsResponse;
+    use Google\Service\AdExchangeBuyer\DeleteOrderDealsRequest;
+    use Google\Service\AdExchangeBuyer\DeleteOrderDealsResponse;
+    use Google\Service\AdExchangeBuyer\EditAllOrderDealsRequest;
+    use Google\Service\AdExchangeBuyer\EditAllOrderDealsResponse;
+    use Google\Service\AdExchangeBuyer\GetOrderDealsResponse;
     /**
-     * Delete the specified deals from the proposal (marketplacedeals.delete)
-     *
-     * @param string $proposalId The proposalId to delete deals from.
-     * @param DeleteOrderDealsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return DeleteOrderDealsResponse
+     * The "marketplacedeals" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adexchangebuyerService = new Google\Service\AdExchangeBuyer(...);
+     *   $marketplacedeals = $adexchangebuyerService->marketplacedeals;
+     *  </code>
      */
-    public function delete($proposalId, DeleteOrderDealsRequest $postBody, $optParams = [])
+    class Marketplacedeals extends \Google\Service\Resource
     {
+        /**
+         * Delete the specified deals from the proposal (marketplacedeals.delete)
+         *
+         * @param string $proposalId The proposalId to delete deals from.
+         * @param DeleteOrderDealsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return DeleteOrderDealsResponse
+         */
+        public function delete($proposalId, DeleteOrderDealsRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Add new deals for the specified proposal (marketplacedeals.insert)
+         *
+         * @param string $proposalId proposalId for which deals need to be added.
+         * @param AddOrderDealsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return AddOrderDealsResponse
+         */
+        public function insert($proposalId, AddOrderDealsRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * List all the deals for a given proposal
+         * (marketplacedeals.listMarketplacedeals)
+         *
+         * @param string $proposalId The proposalId to get deals for. To search across
+         * all proposals specify order_id = '-' as part of the URL.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string pqlQuery Query string to retrieve specific deals.
+         * @return GetOrderDealsResponse
+         */
+        public function listMarketplacedeals($proposalId, $optParams = [])
+        {
+        }
+        /**
+         * Replaces all the deals in the proposal with the passed in deals
+         * (marketplacedeals.update)
+         *
+         * @param string $proposalId The proposalId to edit deals on.
+         * @param EditAllOrderDealsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return EditAllOrderDealsResponse
+         */
+        public function update($proposalId, EditAllOrderDealsRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Add new deals for the specified proposal (marketplacedeals.insert)
-     *
-     * @param string $proposalId proposalId for which deals need to be added.
-     * @param AddOrderDealsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return AddOrderDealsResponse
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\Resource\Marketplacedeals registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function insert($proposalId, AddOrderDealsRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * List all the deals for a given proposal
-     * (marketplacedeals.listMarketplacedeals)
-     *
-     * @param string $proposalId The proposalId to get deals for. To search across
-     * all proposals specify order_id = '-' as part of the URL.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string pqlQuery Query string to retrieve specific deals.
-     * @return GetOrderDealsResponse
-     */
-    public function listMarketplacedeals($proposalId, $optParams = [])
-    {
-    }
-    /**
-     * Replaces all the deals in the proposal with the passed in deals
-     * (marketplacedeals.update)
-     *
-     * @param string $proposalId The proposalId to edit deals on.
-     * @param EditAllOrderDealsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return EditAllOrderDealsResponse
-     */
-    public function update($proposalId, EditAllOrderDealsRequest $postBody, $optParams = [])
+    class Google_Service_AdExchangeBuyer_Resource_Marketplacedeals extends \Google\Service\AdExchangeBuyer\Resource\Marketplacedeals
     {
     }
 }

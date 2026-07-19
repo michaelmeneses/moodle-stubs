@@ -21,170 +21,179 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkServices;
-
-class ServiceBinding extends \Google\Model
-{
-    /**
-     * Output only. The timestamp when the resource was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Optional. A free-text description of the resource. Max length 1024
-     * characters.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Optional. Set of label tags associated with the ServiceBinding resource.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Identifier. Name of the ServiceBinding resource. It matches pattern
-     * `projects/locations/serviceBindings/`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. The full Service Directory Service name of the format
-     * `projects/locations/namespaces/services`. This field is for Service
-     * Directory integration which will be deprecated soon.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $service;
-    /**
-     * Output only. The unique identifier of the Service Directory Service against
-     * which the ServiceBinding resource is validated. This is populated when the
-     * Service Binding resource is used in another resource (like Backend
-     * Service). This is of the UUID4 format. This field is for Service Directory
-     * integration which will be deprecated soon.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $serviceId;
-    /**
-     * Output only. The timestamp when the resource was updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. The timestamp when the resource was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\NetworkServices {
+    class ServiceBinding extends \Google\Model
     {
+        /**
+         * Output only. The timestamp when the resource was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Optional. A free-text description of the resource. Max length 1024
+         * characters.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Optional. Set of label tags associated with the ServiceBinding resource.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Identifier. Name of the ServiceBinding resource. It matches pattern
+         * `projects/locations/serviceBindings/`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. The full Service Directory Service name of the format
+         * `projects/locations/namespaces/services`. This field is for Service
+         * Directory integration which will be deprecated soon.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $service;
+        /**
+         * Output only. The unique identifier of the Service Directory Service against
+         * which the ServiceBinding resource is validated. This is populated when the
+         * Service Binding resource is used in another resource (like Backend
+         * Service). This is of the UUID4 format. This field is for Service Directory
+         * integration which will be deprecated soon.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $serviceId;
+        /**
+         * Output only. The timestamp when the resource was updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. The timestamp when the resource was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. A free-text description of the resource. Max length 1024
+         * characters.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Optional. Set of label tags associated with the ServiceBinding resource.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Identifier. Name of the ServiceBinding resource. It matches pattern
+         * `projects/locations/serviceBindings/`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. The full Service Directory Service name of the format
+         * `projects/locations/namespaces/services`. This field is for Service
+         * Directory integration which will be deprecated soon.
+         *
+         * @deprecated
+         * @param string $service
+         */
+        public function setService($service)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getService()
+        {
+        }
+        /**
+         * Output only. The unique identifier of the Service Directory Service against
+         * which the ServiceBinding resource is validated. This is populated when the
+         * Service Binding resource is used in another resource (like Backend
+         * Service). This is of the UUID4 format. This field is for Service Directory
+         * integration which will be deprecated soon.
+         *
+         * @deprecated
+         * @param string $serviceId
+         */
+        public function setServiceId($serviceId)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getServiceId()
+        {
+        }
+        /**
+         * Output only. The timestamp when the resource was updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkServices\ServiceBinding registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. A free-text description of the resource. Max length 1024
-     * characters.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Optional. Set of label tags associated with the ServiceBinding resource.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Identifier. Name of the ServiceBinding resource. It matches pattern
-     * `projects/locations/serviceBindings/`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. The full Service Directory Service name of the format
-     * `projects/locations/namespaces/services`. This field is for Service
-     * Directory integration which will be deprecated soon.
-     *
-     * @deprecated
-     * @param string $service
-     */
-    public function setService($service)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getService()
-    {
-    }
-    /**
-     * Output only. The unique identifier of the Service Directory Service against
-     * which the ServiceBinding resource is validated. This is populated when the
-     * Service Binding resource is used in another resource (like Backend
-     * Service). This is of the UUID4 format. This field is for Service Directory
-     * integration which will be deprecated soon.
-     *
-     * @deprecated
-     * @param string $serviceId
-     */
-    public function setServiceId($serviceId)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getServiceId()
-    {
-    }
-    /**
-     * Output only. The timestamp when the resource was updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_NetworkServices_ServiceBinding extends \Google\Service\NetworkServices\ServiceBinding
     {
     }
 }

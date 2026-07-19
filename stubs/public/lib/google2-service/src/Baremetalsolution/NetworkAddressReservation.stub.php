@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution;
-
-class NetworkAddressReservation extends \Google\Model
-{
-    /**
-     * The last address of this reservation block, inclusive. I.e., for cases when
-     * reservations are only single addresses, end_address and start_address will
-     * be the same. Must be specified as a single IPv4 address, e.g. 10.1.2.2.
-     *
-     * @var string
-     */
-    public $endAddress;
-    /**
-     * A note about this reservation, intended for human consumption.
-     *
-     * @var string
-     */
-    public $note;
-    /**
-     * The first address of this reservation block. Must be specified as a single
-     * IPv4 address, e.g. 10.1.2.2.
-     *
-     * @var string
-     */
-    public $startAddress;
-    /**
-     * The last address of this reservation block, inclusive. I.e., for cases when
-     * reservations are only single addresses, end_address and start_address will
-     * be the same. Must be specified as a single IPv4 address, e.g. 10.1.2.2.
-     *
-     * @param string $endAddress
-     */
-    public function setEndAddress($endAddress)
+namespace Google\Service\Baremetalsolution {
+    class NetworkAddressReservation extends \Google\Model
     {
+        /**
+         * The last address of this reservation block, inclusive. I.e., for cases when
+         * reservations are only single addresses, end_address and start_address will
+         * be the same. Must be specified as a single IPv4 address, e.g. 10.1.2.2.
+         *
+         * @var string
+         */
+        public $endAddress;
+        /**
+         * A note about this reservation, intended for human consumption.
+         *
+         * @var string
+         */
+        public $note;
+        /**
+         * The first address of this reservation block. Must be specified as a single
+         * IPv4 address, e.g. 10.1.2.2.
+         *
+         * @var string
+         */
+        public $startAddress;
+        /**
+         * The last address of this reservation block, inclusive. I.e., for cases when
+         * reservations are only single addresses, end_address and start_address will
+         * be the same. Must be specified as a single IPv4 address, e.g. 10.1.2.2.
+         *
+         * @param string $endAddress
+         */
+        public function setEndAddress($endAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndAddress()
+        {
+        }
+        /**
+         * A note about this reservation, intended for human consumption.
+         *
+         * @param string $note
+         */
+        public function setNote($note)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNote()
+        {
+        }
+        /**
+         * The first address of this reservation block. Must be specified as a single
+         * IPv4 address, e.g. 10.1.2.2.
+         *
+         * @param string $startAddress
+         */
+        public function setStartAddress($startAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartAddress()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Baremetalsolution\NetworkAddressReservation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndAddress()
-    {
-    }
-    /**
-     * A note about this reservation, intended for human consumption.
-     *
-     * @param string $note
-     */
-    public function setNote($note)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNote()
-    {
-    }
-    /**
-     * The first address of this reservation block. Must be specified as a single
-     * IPv4 address, e.g. 10.1.2.2.
-     *
-     * @param string $startAddress
-     */
-    public function setStartAddress($startAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartAddress()
+    class Google_Service_Baremetalsolution_NetworkAddressReservation extends \Google\Service\Baremetalsolution\NetworkAddressReservation
     {
     }
 }

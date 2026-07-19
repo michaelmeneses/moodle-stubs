@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Forms;
-
-class Feedback extends \Google\Collection
-{
-    protected $collection_key = 'material';
-    protected $materialType = ExtraMaterial::class;
-    protected $materialDataType = 'array';
-    /**
-     * Required. The main text of the feedback.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * Additional information provided as part of the feedback, often used to
-     * point the respondent to more reading and resources.
-     *
-     * @param ExtraMaterial[] $material
-     */
-    public function setMaterial($material)
+namespace Google\Service\Forms {
+    class Feedback extends \Google\Collection
     {
+        protected $collection_key = 'material';
+        protected $materialType = ExtraMaterial::class;
+        protected $materialDataType = 'array';
+        /**
+         * Required. The main text of the feedback.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * Additional information provided as part of the feedback, often used to
+         * point the respondent to more reading and resources.
+         *
+         * @param ExtraMaterial[] $material
+         */
+        public function setMaterial($material)
+        {
+        }
+        /**
+         * @return ExtraMaterial[]
+         */
+        public function getMaterial()
+        {
+        }
+        /**
+         * Required. The main text of the feedback.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ExtraMaterial[]
+     * Runtime class alias of \Google\Service\Forms\Feedback registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaterial()
-    {
-    }
-    /**
-     * Required. The main text of the feedback.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_Forms_Feedback extends \Google\Service\Forms\Feedback
     {
     }
 }

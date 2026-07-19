@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsHub;
-
-class ListSubscriptionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'subscriptions';
-    /**
-     * Next page token.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $subscriptionsType = Subscription::class;
-    protected $subscriptionsDataType = 'array';
-    /**
-     * Next page token.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\AnalyticsHub {
+    class ListSubscriptionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'subscriptions';
+        /**
+         * Next page token.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $subscriptionsType = Subscription::class;
+        protected $subscriptionsDataType = 'array';
+        /**
+         * Next page token.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of subscriptions.
+         *
+         * @param Subscription[] $subscriptions
+         */
+        public function setSubscriptions($subscriptions)
+        {
+        }
+        /**
+         * @return Subscription[]
+         */
+        public function getSubscriptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AnalyticsHub\ListSubscriptionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of subscriptions.
-     *
-     * @param Subscription[] $subscriptions
-     */
-    public function setSubscriptions($subscriptions)
-    {
-    }
-    /**
-     * @return Subscription[]
-     */
-    public function getSubscriptions()
+    class Google_Service_AnalyticsHub_ListSubscriptionsResponse extends \Google\Service\AnalyticsHub\ListSubscriptionsResponse
     {
     }
 }

@@ -21,113 +21,122 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudTalentSolution;
-
-class CustomAttribute extends \Google\Collection
-{
-    protected $collection_key = 'stringValues';
-    /**
-     * If the `filterable` flag is true, the custom field values may be used for
-     * custom attribute filters JobQuery.custom_attribute_filter. If false, these
-     * values may not be used for custom attribute filters. Default is false.
-     *
-     * @var bool
-     */
-    public $filterable;
-    /**
-     * If the `keyword_searchable` flag is true, the keywords in custom fields are
-     * searchable by keyword match. If false, the values are not searchable by
-     * keyword match. Default is false.
-     *
-     * @var bool
-     */
-    public $keywordSearchable;
-    /**
-     * Exactly one of string_values or long_values must be specified. This field
-     * is used to perform number range search. (`EQ`, `GT`, `GE`, `LE`, `LT`) over
-     * filterable `long_value`. Currently at most 1 long_values is supported.
-     *
-     * @var string[]
-     */
-    public $longValues;
-    /**
-     * Exactly one of string_values or long_values must be specified. This field
-     * is used to perform a string match (`CASE_SENSITIVE_MATCH` or
-     * `CASE_INSENSITIVE_MATCH`) search. For filterable `string_value`s, a maximum
-     * total number of 200 values is allowed, with each `string_value` has a byte
-     * size of no more than 500B. For unfilterable `string_values`, the maximum
-     * total byte size of unfilterable `string_values` is 50KB. Empty string isn't
-     * allowed.
-     *
-     * @var string[]
-     */
-    public $stringValues;
-    /**
-     * If the `filterable` flag is true, the custom field values may be used for
-     * custom attribute filters JobQuery.custom_attribute_filter. If false, these
-     * values may not be used for custom attribute filters. Default is false.
-     *
-     * @param bool $filterable
-     */
-    public function setFilterable($filterable)
+namespace Google\Service\CloudTalentSolution {
+    class CustomAttribute extends \Google\Collection
     {
+        protected $collection_key = 'stringValues';
+        /**
+         * If the `filterable` flag is true, the custom field values may be used for
+         * custom attribute filters JobQuery.custom_attribute_filter. If false, these
+         * values may not be used for custom attribute filters. Default is false.
+         *
+         * @var bool
+         */
+        public $filterable;
+        /**
+         * If the `keyword_searchable` flag is true, the keywords in custom fields are
+         * searchable by keyword match. If false, the values are not searchable by
+         * keyword match. Default is false.
+         *
+         * @var bool
+         */
+        public $keywordSearchable;
+        /**
+         * Exactly one of string_values or long_values must be specified. This field
+         * is used to perform number range search. (`EQ`, `GT`, `GE`, `LE`, `LT`) over
+         * filterable `long_value`. Currently at most 1 long_values is supported.
+         *
+         * @var string[]
+         */
+        public $longValues;
+        /**
+         * Exactly one of string_values or long_values must be specified. This field
+         * is used to perform a string match (`CASE_SENSITIVE_MATCH` or
+         * `CASE_INSENSITIVE_MATCH`) search. For filterable `string_value`s, a maximum
+         * total number of 200 values is allowed, with each `string_value` has a byte
+         * size of no more than 500B. For unfilterable `string_values`, the maximum
+         * total byte size of unfilterable `string_values` is 50KB. Empty string isn't
+         * allowed.
+         *
+         * @var string[]
+         */
+        public $stringValues;
+        /**
+         * If the `filterable` flag is true, the custom field values may be used for
+         * custom attribute filters JobQuery.custom_attribute_filter. If false, these
+         * values may not be used for custom attribute filters. Default is false.
+         *
+         * @param bool $filterable
+         */
+        public function setFilterable($filterable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getFilterable()
+        {
+        }
+        /**
+         * If the `keyword_searchable` flag is true, the keywords in custom fields are
+         * searchable by keyword match. If false, the values are not searchable by
+         * keyword match. Default is false.
+         *
+         * @param bool $keywordSearchable
+         */
+        public function setKeywordSearchable($keywordSearchable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getKeywordSearchable()
+        {
+        }
+        /**
+         * Exactly one of string_values or long_values must be specified. This field
+         * is used to perform number range search. (`EQ`, `GT`, `GE`, `LE`, `LT`) over
+         * filterable `long_value`. Currently at most 1 long_values is supported.
+         *
+         * @param string[] $longValues
+         */
+        public function setLongValues($longValues)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLongValues()
+        {
+        }
+        /**
+         * Exactly one of string_values or long_values must be specified. This field
+         * is used to perform a string match (`CASE_SENSITIVE_MATCH` or
+         * `CASE_INSENSITIVE_MATCH`) search. For filterable `string_value`s, a maximum
+         * total number of 200 values is allowed, with each `string_value` has a byte
+         * size of no more than 500B. For unfilterable `string_values`, the maximum
+         * total byte size of unfilterable `string_values` is 50KB. Empty string isn't
+         * allowed.
+         *
+         * @param string[] $stringValues
+         */
+        public function setStringValues($stringValues)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getStringValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudTalentSolution\CustomAttribute registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilterable()
-    {
-    }
-    /**
-     * If the `keyword_searchable` flag is true, the keywords in custom fields are
-     * searchable by keyword match. If false, the values are not searchable by
-     * keyword match. Default is false.
-     *
-     * @param bool $keywordSearchable
-     */
-    public function setKeywordSearchable($keywordSearchable)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getKeywordSearchable()
-    {
-    }
-    /**
-     * Exactly one of string_values or long_values must be specified. This field
-     * is used to perform number range search. (`EQ`, `GT`, `GE`, `LE`, `LT`) over
-     * filterable `long_value`. Currently at most 1 long_values is supported.
-     *
-     * @param string[] $longValues
-     */
-    public function setLongValues($longValues)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLongValues()
-    {
-    }
-    /**
-     * Exactly one of string_values or long_values must be specified. This field
-     * is used to perform a string match (`CASE_SENSITIVE_MATCH` or
-     * `CASE_INSENSITIVE_MATCH`) search. For filterable `string_value`s, a maximum
-     * total number of 200 values is allowed, with each `string_value` has a byte
-     * size of no more than 500B. For unfilterable `string_values`, the maximum
-     * total byte size of unfilterable `string_values` is 50KB. Empty string isn't
-     * allowed.
-     *
-     * @param string[] $stringValues
-     */
-    public function setStringValues($stringValues)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getStringValues()
+    class Google_Service_CloudTalentSolution_CustomAttribute extends \Google\Service\CloudTalentSolution\CustomAttribute
     {
     }
 }

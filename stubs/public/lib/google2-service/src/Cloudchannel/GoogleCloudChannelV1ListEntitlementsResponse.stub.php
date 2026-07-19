@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1ListEntitlementsResponse extends \Google\Collection
-{
-    protected $collection_key = 'entitlements';
-    protected $entitlementsType = GoogleCloudChannelV1Entitlement::class;
-    protected $entitlementsDataType = 'array';
-    /**
-     * A token to list the next page of results. Pass to
-     * ListEntitlementsRequest.page_token to obtain that page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The reseller customer's entitlements.
-     *
-     * @param GoogleCloudChannelV1Entitlement[] $entitlements
-     */
-    public function setEntitlements($entitlements)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1ListEntitlementsResponse extends \Google\Collection
     {
+        protected $collection_key = 'entitlements';
+        protected $entitlementsType = GoogleCloudChannelV1Entitlement::class;
+        protected $entitlementsDataType = 'array';
+        /**
+         * A token to list the next page of results. Pass to
+         * ListEntitlementsRequest.page_token to obtain that page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The reseller customer's entitlements.
+         *
+         * @param GoogleCloudChannelV1Entitlement[] $entitlements
+         */
+        public function setEntitlements($entitlements)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1Entitlement[]
+         */
+        public function getEntitlements()
+        {
+        }
+        /**
+         * A token to list the next page of results. Pass to
+         * ListEntitlementsRequest.page_token to obtain that page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudChannelV1Entitlement[]
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1ListEntitlementsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEntitlements()
-    {
-    }
-    /**
-     * A token to list the next page of results. Pass to
-     * ListEntitlementsRequest.page_token to obtain that page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1ListEntitlementsResponse extends \Google\Service\Cloudchannel\GoogleCloudChannelV1ListEntitlementsResponse
     {
     }
 }

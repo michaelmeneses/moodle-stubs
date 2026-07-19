@@ -21,114 +21,123 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games;
-
-class ScoreSubmission extends \Google\Model
-{
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#scoreSubmission`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The leaderboard this score is being submitted to.
-     *
-     * @var string
-     */
-    public $leaderboardId;
-    /**
-     * The new score being submitted.
-     *
-     * @var string
-     */
-    public $score;
-    /**
-     * Additional information about this score. Values will contain no more than
-     * 64 URI-safe characters as defined by section 2.3 of RFC 3986.
-     *
-     * @var string
-     */
-    public $scoreTag;
-    /**
-     * Signature Values will contain URI-safe characters as defined by section 2.3
-     * of RFC 3986.
-     *
-     * @var string
-     */
-    public $signature;
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `games#scoreSubmission`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Games {
+    class ScoreSubmission extends \Google\Model
     {
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#scoreSubmission`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The leaderboard this score is being submitted to.
+         *
+         * @var string
+         */
+        public $leaderboardId;
+        /**
+         * The new score being submitted.
+         *
+         * @var string
+         */
+        public $score;
+        /**
+         * Additional information about this score. Values will contain no more than
+         * 64 URI-safe characters as defined by section 2.3 of RFC 3986.
+         *
+         * @var string
+         */
+        public $scoreTag;
+        /**
+         * Signature Values will contain URI-safe characters as defined by section 2.3
+         * of RFC 3986.
+         *
+         * @var string
+         */
+        public $signature;
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `games#scoreSubmission`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The leaderboard this score is being submitted to.
+         *
+         * @param string $leaderboardId
+         */
+        public function setLeaderboardId($leaderboardId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLeaderboardId()
+        {
+        }
+        /**
+         * The new score being submitted.
+         *
+         * @param string $score
+         */
+        public function setScore($score)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScore()
+        {
+        }
+        /**
+         * Additional information about this score. Values will contain no more than
+         * 64 URI-safe characters as defined by section 2.3 of RFC 3986.
+         *
+         * @param string $scoreTag
+         */
+        public function setScoreTag($scoreTag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScoreTag()
+        {
+        }
+        /**
+         * Signature Values will contain URI-safe characters as defined by section 2.3
+         * of RFC 3986.
+         *
+         * @param string $signature
+         */
+        public function setSignature($signature)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSignature()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Games\ScoreSubmission registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * The leaderboard this score is being submitted to.
-     *
-     * @param string $leaderboardId
-     */
-    public function setLeaderboardId($leaderboardId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLeaderboardId()
-    {
-    }
-    /**
-     * The new score being submitted.
-     *
-     * @param string $score
-     */
-    public function setScore($score)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScore()
-    {
-    }
-    /**
-     * Additional information about this score. Values will contain no more than
-     * 64 URI-safe characters as defined by section 2.3 of RFC 3986.
-     *
-     * @param string $scoreTag
-     */
-    public function setScoreTag($scoreTag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScoreTag()
-    {
-    }
-    /**
-     * Signature Values will contain URI-safe characters as defined by section 2.3
-     * of RFC 3986.
-     *
-     * @param string $signature
-     */
-    public function setSignature($signature)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSignature()
+    class Google_Service_Games_ScoreSubmission extends \Google\Service\Games\ScoreSubmission
     {
     }
 }

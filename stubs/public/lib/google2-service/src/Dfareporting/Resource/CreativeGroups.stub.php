@@ -21,97 +21,108 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting\Resource;
-
-/**
- * The "creativeGroups" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dfareportingService = new Google\Service\Dfareporting(...);
- *   $creativeGroups = $dfareportingService->creativeGroups;
- *  </code>
- */
-class CreativeGroups extends \Google\Service\Resource
-{
+namespace Google\Service\Dfareporting\Resource {
+    use Google\Service\Dfareporting\CreativeGroup;
+    use Google\Service\Dfareporting\CreativeGroupsListResponse;
     /**
-     * Gets one creative group by ID. (creativeGroups.get)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param string $id Creative group ID.
-     * @param array $optParams Optional parameters.
-     * @return CreativeGroup
-     * @throws \Google\Service\Exception
+     * The "creativeGroups" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dfareportingService = new Google\Service\Dfareporting(...);
+     *   $creativeGroups = $dfareportingService->creativeGroups;
+     *  </code>
      */
-    public function get($profileId, $id, $optParams = [])
+    class CreativeGroups extends \Google\Service\Resource
     {
+        /**
+         * Gets one creative group by ID. (creativeGroups.get)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param string $id Creative group ID.
+         * @param array $optParams Optional parameters.
+         * @return CreativeGroup
+         * @throws \Google\Service\Exception
+         */
+        public function get($profileId, $id, $optParams = [])
+        {
+        }
+        /**
+         * Inserts a new creative group. (creativeGroups.insert)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param CreativeGroup $postBody
+         * @param array $optParams Optional parameters.
+         * @return CreativeGroup
+         * @throws \Google\Service\Exception
+         */
+        public function insert($profileId, CreativeGroup $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a list of creative groups, possibly filtered. This method supports
+         * paging. (creativeGroups.listCreativeGroups)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string advertiserIds Select only creative groups that belong to
+         * these advertisers.
+         * @opt_param int groupNumber Select only creative groups that belong to this
+         * subgroup.
+         * @opt_param string ids Select only creative groups with these IDs.
+         * @opt_param int maxResults Maximum number of results to return.
+         * @opt_param string pageToken Value of the nextPageToken from the previous
+         * result page.
+         * @opt_param string searchString Allows searching for creative groups by name
+         * or ID. Wildcards (*) are allowed. For example, "creativegroup*2015" will
+         * return creative groups with names like "creativegroup June 2015",
+         * "creativegroup April 2015", or simply "creativegroup 2015". Most of the
+         * searches also add wild-cards implicitly at the start and the end of the
+         * search string. For example, a search string of "creativegroup" will match
+         * creative groups with the name "my creativegroup", "creativegroup 2015", or
+         * simply "creativegroup".
+         * @opt_param string sortField Field by which to sort the list.
+         * @opt_param string sortOrder Order of sorted results.
+         * @return CreativeGroupsListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listCreativeGroups($profileId, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing creative group. This method supports patch semantics.
+         * (creativeGroups.patch)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param string $id Required. Creative Group ID.
+         * @param CreativeGroup $postBody
+         * @param array $optParams Optional parameters.
+         * @return CreativeGroup
+         * @throws \Google\Service\Exception
+         */
+        public function patch($profileId, $id, CreativeGroup $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing creative group. (creativeGroups.update)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param CreativeGroup $postBody
+         * @param array $optParams Optional parameters.
+         * @return CreativeGroup
+         * @throws \Google\Service\Exception
+         */
+        public function update($profileId, CreativeGroup $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Inserts a new creative group. (creativeGroups.insert)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param CreativeGroup $postBody
-     * @param array $optParams Optional parameters.
-     * @return CreativeGroup
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dfareporting\Resource\CreativeGroups registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function insert($profileId, CreativeGroup $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves a list of creative groups, possibly filtered. This method supports
-     * paging. (creativeGroups.listCreativeGroups)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string advertiserIds Select only creative groups that belong to
-     * these advertisers.
-     * @opt_param int groupNumber Select only creative groups that belong to this
-     * subgroup.
-     * @opt_param string ids Select only creative groups with these IDs.
-     * @opt_param int maxResults Maximum number of results to return.
-     * @opt_param string pageToken Value of the nextPageToken from the previous
-     * result page.
-     * @opt_param string searchString Allows searching for creative groups by name
-     * or ID. Wildcards (*) are allowed. For example, "creativegroup*2015" will
-     * return creative groups with names like "creativegroup June 2015",
-     * "creativegroup April 2015", or simply "creativegroup 2015". Most of the
-     * searches also add wild-cards implicitly at the start and the end of the
-     * search string. For example, a search string of "creativegroup" will match
-     * creative groups with the name "my creativegroup", "creativegroup 2015", or
-     * simply "creativegroup".
-     * @opt_param string sortField Field by which to sort the list.
-     * @opt_param string sortOrder Order of sorted results.
-     * @return CreativeGroupsListResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listCreativeGroups($profileId, $optParams = [])
-    {
-    }
-    /**
-     * Updates an existing creative group. This method supports patch semantics.
-     * (creativeGroups.patch)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param string $id Required. Creative Group ID.
-     * @param CreativeGroup $postBody
-     * @param array $optParams Optional parameters.
-     * @return CreativeGroup
-     * @throws \Google\Service\Exception
-     */
-    public function patch($profileId, $id, CreativeGroup $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates an existing creative group. (creativeGroups.update)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param CreativeGroup $postBody
-     * @param array $optParams Optional parameters.
-     * @return CreativeGroup
-     * @throws \Google\Service\Exception
-     */
-    public function update($profileId, CreativeGroup $postBody, $optParams = [])
+    class Google_Service_Dfareporting_Resource_CreativeGroups extends \Google\Service\Dfareporting\Resource\CreativeGroups
     {
     }
 }

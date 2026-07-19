@@ -21,231 +21,240 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class JobRunNotificationEvent extends \Google\Model
-{
-    /**
-     * Type is unspecified.
-     */
-    public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * A Pub/Sub notification failed to be sent.
-     */
-    public const TYPE_TYPE_PUBSUB_NOTIFICATION_FAILURE = 'TYPE_PUBSUB_NOTIFICATION_FAILURE';
-    /**
-     * Resource state changed.
-     */
-    public const TYPE_TYPE_RESOURCE_STATE_CHANGE = 'TYPE_RESOURCE_STATE_CHANGE';
-    /**
-     * A process aborted.
-     */
-    public const TYPE_TYPE_PROCESS_ABORTED = 'TYPE_PROCESS_ABORTED';
-    /**
-     * Restriction check failed.
-     */
-    public const TYPE_TYPE_RESTRICTION_VIOLATED = 'TYPE_RESTRICTION_VIOLATED';
-    /**
-     * Resource deleted.
-     */
-    public const TYPE_TYPE_RESOURCE_DELETED = 'TYPE_RESOURCE_DELETED';
-    /**
-     * Rollout updated.
-     */
-    public const TYPE_TYPE_ROLLOUT_UPDATE = 'TYPE_ROLLOUT_UPDATE';
-    /**
-     * Deploy Policy evaluation.
-     */
-    public const TYPE_TYPE_DEPLOY_POLICY_EVALUATION = 'TYPE_DEPLOY_POLICY_EVALUATION';
-    /**
-     * Deprecated: This field is never used. Use release_render log type instead.
-     *
-     * @deprecated
-     */
-    public const TYPE_TYPE_RENDER_STATUES_CHANGE = 'TYPE_RENDER_STATUES_CHANGE';
-    /**
-     * The name of the `JobRun`.
-     *
-     * @var string
-     */
-    public $jobRun;
-    /**
-     * Debug message for when a notification fails to send.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * Unique identifier of the `DeliveryPipeline`.
-     *
-     * @var string
-     */
-    public $pipelineUid;
-    /**
-     * The name of the `Release`.
-     *
-     * @var string
-     */
-    public $release;
-    /**
-     * Unique identifier of the `Release`.
-     *
-     * @var string
-     */
-    public $releaseUid;
-    /**
-     * The name of the `Rollout`.
-     *
-     * @var string
-     */
-    public $rollout;
-    /**
-     * Unique identifier of the `Rollout`.
-     *
-     * @var string
-     */
-    public $rolloutUid;
-    /**
-     * ID of the `Target`.
-     *
-     * @var string
-     */
-    public $targetId;
-    /**
-     * Type of this notification, e.g. for a Pub/Sub failure.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The name of the `JobRun`.
-     *
-     * @param string $jobRun
-     */
-    public function setJobRun($jobRun)
+namespace Google\Service\CloudDeploy {
+    class JobRunNotificationEvent extends \Google\Model
     {
+        /**
+         * Type is unspecified.
+         */
+        public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * A Pub/Sub notification failed to be sent.
+         */
+        public const TYPE_TYPE_PUBSUB_NOTIFICATION_FAILURE = 'TYPE_PUBSUB_NOTIFICATION_FAILURE';
+        /**
+         * Resource state changed.
+         */
+        public const TYPE_TYPE_RESOURCE_STATE_CHANGE = 'TYPE_RESOURCE_STATE_CHANGE';
+        /**
+         * A process aborted.
+         */
+        public const TYPE_TYPE_PROCESS_ABORTED = 'TYPE_PROCESS_ABORTED';
+        /**
+         * Restriction check failed.
+         */
+        public const TYPE_TYPE_RESTRICTION_VIOLATED = 'TYPE_RESTRICTION_VIOLATED';
+        /**
+         * Resource deleted.
+         */
+        public const TYPE_TYPE_RESOURCE_DELETED = 'TYPE_RESOURCE_DELETED';
+        /**
+         * Rollout updated.
+         */
+        public const TYPE_TYPE_ROLLOUT_UPDATE = 'TYPE_ROLLOUT_UPDATE';
+        /**
+         * Deploy Policy evaluation.
+         */
+        public const TYPE_TYPE_DEPLOY_POLICY_EVALUATION = 'TYPE_DEPLOY_POLICY_EVALUATION';
+        /**
+         * Deprecated: This field is never used. Use release_render log type instead.
+         *
+         * @deprecated
+         */
+        public const TYPE_TYPE_RENDER_STATUES_CHANGE = 'TYPE_RENDER_STATUES_CHANGE';
+        /**
+         * The name of the `JobRun`.
+         *
+         * @var string
+         */
+        public $jobRun;
+        /**
+         * Debug message for when a notification fails to send.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * Unique identifier of the `DeliveryPipeline`.
+         *
+         * @var string
+         */
+        public $pipelineUid;
+        /**
+         * The name of the `Release`.
+         *
+         * @var string
+         */
+        public $release;
+        /**
+         * Unique identifier of the `Release`.
+         *
+         * @var string
+         */
+        public $releaseUid;
+        /**
+         * The name of the `Rollout`.
+         *
+         * @var string
+         */
+        public $rollout;
+        /**
+         * Unique identifier of the `Rollout`.
+         *
+         * @var string
+         */
+        public $rolloutUid;
+        /**
+         * ID of the `Target`.
+         *
+         * @var string
+         */
+        public $targetId;
+        /**
+         * Type of this notification, e.g. for a Pub/Sub failure.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The name of the `JobRun`.
+         *
+         * @param string $jobRun
+         */
+        public function setJobRun($jobRun)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJobRun()
+        {
+        }
+        /**
+         * Debug message for when a notification fails to send.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * Unique identifier of the `DeliveryPipeline`.
+         *
+         * @param string $pipelineUid
+         */
+        public function setPipelineUid($pipelineUid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPipelineUid()
+        {
+        }
+        /**
+         * The name of the `Release`.
+         *
+         * @param string $release
+         */
+        public function setRelease($release)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRelease()
+        {
+        }
+        /**
+         * Unique identifier of the `Release`.
+         *
+         * @param string $releaseUid
+         */
+        public function setReleaseUid($releaseUid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReleaseUid()
+        {
+        }
+        /**
+         * The name of the `Rollout`.
+         *
+         * @param string $rollout
+         */
+        public function setRollout($rollout)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRollout()
+        {
+        }
+        /**
+         * Unique identifier of the `Rollout`.
+         *
+         * @param string $rolloutUid
+         */
+        public function setRolloutUid($rolloutUid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRolloutUid()
+        {
+        }
+        /**
+         * ID of the `Target`.
+         *
+         * @param string $targetId
+         */
+        public function setTargetId($targetId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetId()
+        {
+        }
+        /**
+         * Type of this notification, e.g. for a Pub/Sub failure.
+         *
+         * Accepted values: TYPE_UNSPECIFIED, TYPE_PUBSUB_NOTIFICATION_FAILURE,
+         * TYPE_RESOURCE_STATE_CHANGE, TYPE_PROCESS_ABORTED,
+         * TYPE_RESTRICTION_VIOLATED, TYPE_RESOURCE_DELETED, TYPE_ROLLOUT_UPDATE,
+         * TYPE_DEPLOY_POLICY_EVALUATION, TYPE_RENDER_STATUES_CHANGE
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDeploy\JobRunNotificationEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJobRun()
-    {
-    }
-    /**
-     * Debug message for when a notification fails to send.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
-    {
-    }
-    /**
-     * Unique identifier of the `DeliveryPipeline`.
-     *
-     * @param string $pipelineUid
-     */
-    public function setPipelineUid($pipelineUid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPipelineUid()
-    {
-    }
-    /**
-     * The name of the `Release`.
-     *
-     * @param string $release
-     */
-    public function setRelease($release)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRelease()
-    {
-    }
-    /**
-     * Unique identifier of the `Release`.
-     *
-     * @param string $releaseUid
-     */
-    public function setReleaseUid($releaseUid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReleaseUid()
-    {
-    }
-    /**
-     * The name of the `Rollout`.
-     *
-     * @param string $rollout
-     */
-    public function setRollout($rollout)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRollout()
-    {
-    }
-    /**
-     * Unique identifier of the `Rollout`.
-     *
-     * @param string $rolloutUid
-     */
-    public function setRolloutUid($rolloutUid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRolloutUid()
-    {
-    }
-    /**
-     * ID of the `Target`.
-     *
-     * @param string $targetId
-     */
-    public function setTargetId($targetId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetId()
-    {
-    }
-    /**
-     * Type of this notification, e.g. for a Pub/Sub failure.
-     *
-     * Accepted values: TYPE_UNSPECIFIED, TYPE_PUBSUB_NOTIFICATION_FAILURE,
-     * TYPE_RESOURCE_STATE_CHANGE, TYPE_PROCESS_ABORTED,
-     * TYPE_RESTRICTION_VIOLATED, TYPE_RESOURCE_DELETED, TYPE_ROLLOUT_UPDATE,
-     * TYPE_DEPLOY_POLICY_EVALUATION, TYPE_RENDER_STATUES_CHANGE
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_CloudDeploy_JobRunNotificationEvent extends \Google\Service\CloudDeploy\JobRunNotificationEvent
     {
     }
 }

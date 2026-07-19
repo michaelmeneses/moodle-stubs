@@ -21,121 +21,134 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee\Resource;
-
-/**
- * The "securityProfiles" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apigeeService = new Google\Service\Apigee(...);
- *   $securityProfiles = $apigeeService->organizations_securityProfiles;
- *  </code>
- */
-class OrganizationsSecurityProfiles extends \Google\Service\Resource
-{
+namespace Google\Service\Apigee\Resource {
+    use Google\Service\Apigee\GoogleCloudApigeeV1ListSecurityProfileRevisionsResponse;
+    use Google\Service\Apigee\GoogleCloudApigeeV1ListSecurityProfilesResponse;
+    use Google\Service\Apigee\GoogleCloudApigeeV1SecurityProfile;
+    use Google\Service\Apigee\GoogleProtobufEmpty;
     /**
-     * CreateSecurityProfile create a new custom security profile.
-     * (securityProfiles.create)
-     *
-     * @param string $parent Required. Name of organization. Format:
-     * organizations/{org}
-     * @param GoogleCloudApigeeV1SecurityProfile $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string securityProfileId Required. The ID to use for the
-     * SecurityProfile, which will become the final component of the action's
-     * resource name. This value should be 1-63 characters and validated by
-     * "(^[a-z]([a-z0-9-]{0,61}[a-z0-9])?$)".
-     * @return GoogleCloudApigeeV1SecurityProfile
-     * @throws \Google\Service\Exception
+     * The "securityProfiles" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apigeeService = new Google\Service\Apigee(...);
+     *   $securityProfiles = $apigeeService->organizations_securityProfiles;
+     *  </code>
      */
-    public function create($parent, GoogleCloudApigeeV1SecurityProfile $postBody, $optParams = [])
+    class OrganizationsSecurityProfiles extends \Google\Service\Resource
     {
+        /**
+         * CreateSecurityProfile create a new custom security profile.
+         * (securityProfiles.create)
+         *
+         * @param string $parent Required. Name of organization. Format:
+         * organizations/{org}
+         * @param GoogleCloudApigeeV1SecurityProfile $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string securityProfileId Required. The ID to use for the
+         * SecurityProfile, which will become the final component of the action's
+         * resource name. This value should be 1-63 characters and validated by
+         * "(^[a-z]([a-z0-9-]{0,61}[a-z0-9])?$)".
+         * @return GoogleCloudApigeeV1SecurityProfile
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudApigeeV1SecurityProfile $postBody, $optParams = [])
+        {
+        }
+        /**
+         * DeleteSecurityProfile delete a profile with all its revisions.
+         * (securityProfiles.delete)
+         *
+         * @param string $name Required. Name of profile. Format:
+         * organizations/{org}/securityProfiles/{profile}
+         * @param array $optParams Optional parameters.
+         * @return GoogleProtobufEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * GetSecurityProfile gets the specified security profile. Returns NOT_FOUND if
+         * security profile is not present for the specified organization.
+         * (securityProfiles.get)
+         *
+         * @param string $name Required. Security profile in the following format:
+         * `organizations/{org}/securityProfiles/{profile}'. Profile may optionally
+         * contain revision ID. If revision ID is not provided, the response will
+         * contain latest revision by default. Example:
+         * organizations/testOrg/securityProfiles/testProfile@5
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1SecurityProfile
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * ListSecurityProfiles lists all the security profiles associated with the org
+         * including attached and unattached profiles.
+         * (securityProfiles.listOrganizationsSecurityProfiles)
+         *
+         * @param string $parent Required. For a specific organization, list of all the
+         * security profiles. Format: `organizations/{org}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of profiles to return. The service
+         * may return fewer than this value. If unspecified, at most 50 profiles will be
+         * returned.
+         * @opt_param string pageToken A page token, received from a previous
+         * `ListSecurityProfiles` call. Provide this to retrieve the subsequent page.
+         * @return GoogleCloudApigeeV1ListSecurityProfilesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listOrganizationsSecurityProfiles($parent, $optParams = [])
+        {
+        }
+        /**
+         * ListSecurityProfileRevisions lists all the revisions of the security profile.
+         * (securityProfiles.listRevisions)
+         *
+         * @param string $name Required. For a specific profile, list all the revisions.
+         * Format: `organizations/{org}/securityProfiles/{profile}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of profile revisions to return.
+         * The service may return fewer than this value. If unspecified, at most 50
+         * revisions will be returned.
+         * @opt_param string pageToken A page token, received from a previous
+         * `ListSecurityProfileRevisions` call. Provide this to retrieve the subsequent
+         * page.
+         * @return GoogleCloudApigeeV1ListSecurityProfileRevisionsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listRevisions($name, $optParams = [])
+        {
+        }
+        /**
+         * UpdateSecurityProfile update the metadata of security profile.
+         * (securityProfiles.patch)
+         *
+         * @param string $name Immutable. Name of the security profile resource. Format:
+         * organizations/{org}/securityProfiles/{profile}
+         * @param GoogleCloudApigeeV1SecurityProfile $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Required. The list of fields to update.
+         * @return GoogleCloudApigeeV1SecurityProfile
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, GoogleCloudApigeeV1SecurityProfile $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * DeleteSecurityProfile delete a profile with all its revisions.
-     * (securityProfiles.delete)
-     *
-     * @param string $name Required. Name of profile. Format:
-     * organizations/{org}/securityProfiles/{profile}
-     * @param array $optParams Optional parameters.
-     * @return GoogleProtobufEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Apigee\Resource\OrganizationsSecurityProfiles registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * GetSecurityProfile gets the specified security profile. Returns NOT_FOUND if
-     * security profile is not present for the specified organization.
-     * (securityProfiles.get)
-     *
-     * @param string $name Required. Security profile in the following format:
-     * `organizations/{org}/securityProfiles/{profile}'. Profile may optionally
-     * contain revision ID. If revision ID is not provided, the response will
-     * contain latest revision by default. Example:
-     * organizations/testOrg/securityProfiles/testProfile@5
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1SecurityProfile
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * ListSecurityProfiles lists all the security profiles associated with the org
-     * including attached and unattached profiles.
-     * (securityProfiles.listOrganizationsSecurityProfiles)
-     *
-     * @param string $parent Required. For a specific organization, list of all the
-     * security profiles. Format: `organizations/{org}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of profiles to return. The service
-     * may return fewer than this value. If unspecified, at most 50 profiles will be
-     * returned.
-     * @opt_param string pageToken A page token, received from a previous
-     * `ListSecurityProfiles` call. Provide this to retrieve the subsequent page.
-     * @return GoogleCloudApigeeV1ListSecurityProfilesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listOrganizationsSecurityProfiles($parent, $optParams = [])
-    {
-    }
-    /**
-     * ListSecurityProfileRevisions lists all the revisions of the security profile.
-     * (securityProfiles.listRevisions)
-     *
-     * @param string $name Required. For a specific profile, list all the revisions.
-     * Format: `organizations/{org}/securityProfiles/{profile}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of profile revisions to return.
-     * The service may return fewer than this value. If unspecified, at most 50
-     * revisions will be returned.
-     * @opt_param string pageToken A page token, received from a previous
-     * `ListSecurityProfileRevisions` call. Provide this to retrieve the subsequent
-     * page.
-     * @return GoogleCloudApigeeV1ListSecurityProfileRevisionsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listRevisions($name, $optParams = [])
-    {
-    }
-    /**
-     * UpdateSecurityProfile update the metadata of security profile.
-     * (securityProfiles.patch)
-     *
-     * @param string $name Immutable. Name of the security profile resource. Format:
-     * organizations/{org}/securityProfiles/{profile}
-     * @param GoogleCloudApigeeV1SecurityProfile $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Required. The list of fields to update.
-     * @return GoogleCloudApigeeV1SecurityProfile
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, GoogleCloudApigeeV1SecurityProfile $postBody, $optParams = [])
+    class Google_Service_Apigee_Resource_OrganizationsSecurityProfiles extends \Google\Service\Apigee\Resource\OrganizationsSecurityProfiles
     {
     }
 }

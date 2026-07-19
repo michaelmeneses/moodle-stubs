@@ -21,137 +21,146 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSecurityToken;
-
-class GoogleIdentityStsV1IntrospectTokenResponse extends \Google\Model
-{
-    protected $internal_gapi_mappings = ["clientId" => "client_id"];
-    /**
-     * @var bool
-     */
-    public $active;
-    /**
-     * @var string
-     */
-    public $clientId;
-    /**
-     * @var string
-     */
-    public $exp;
-    /**
-     * @var string
-     */
-    public $iat;
-    /**
-     * @var string
-     */
-    public $iss;
-    /**
-     * @var string
-     */
-    public $scope;
-    /**
-     * @var string
-     */
-    public $sub;
-    /**
-     * @var string
-     */
-    public $username;
-    /**
-     * @param bool
-     */
-    public function setActive($active)
+namespace Google\Service\CloudSecurityToken {
+    class GoogleIdentityStsV1IntrospectTokenResponse extends \Google\Model
     {
+        protected $internal_gapi_mappings = ["clientId" => "client_id"];
+        /**
+         * @var bool
+         */
+        public $active;
+        /**
+         * @var string
+         */
+        public $clientId;
+        /**
+         * @var string
+         */
+        public $exp;
+        /**
+         * @var string
+         */
+        public $iat;
+        /**
+         * @var string
+         */
+        public $iss;
+        /**
+         * @var string
+         */
+        public $scope;
+        /**
+         * @var string
+         */
+        public $sub;
+        /**
+         * @var string
+         */
+        public $username;
+        /**
+         * @param bool
+         */
+        public function setActive($active)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getActive()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setClientId($clientId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setExp($exp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExp()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setIat($iat)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIat()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setIss($iss)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIss()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setScope($scope)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScope()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSub($sub)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSub()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUsername($username)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUsername()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudSecurityToken\GoogleIdentityStsV1IntrospectTokenResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActive()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setClientId($clientId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClientId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setExp($exp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExp()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setIat($iat)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIat()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setIss($iss)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIss()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setScope($scope)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScope()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSub($sub)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSub()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUsername($username)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUsername()
+    class Google_Service_CloudSecurityToken_GoogleIdentityStsV1IntrospectTokenResponse extends \Google\Service\CloudSecurityToken\GoogleIdentityStsV1IntrospectTokenResponse
     {
     }
 }

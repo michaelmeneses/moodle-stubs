@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1BigQueryDateShardedSpec extends \Google\Model
-{
-    /**
-     * Output only. The Data Catalog resource name of the dataset entry the
-     * current table belongs to. For example: `projects/{PROJECT_ID}/locations/{LO
-     * CATION}/entrygroups/{ENTRY_GROUP_ID}/entries/{ENTRY_ID}`.
-     *
-     * @var string
-     */
-    public $dataset;
-    /**
-     * Output only. BigQuery resource name of the latest shard.
-     *
-     * @var string
-     */
-    public $latestShardResource;
-    /**
-     * Output only. Total number of shards.
-     *
-     * @var string
-     */
-    public $shardCount;
-    /**
-     * Output only. The table name prefix of the shards. The name of any given
-     * shard is `[table_prefix]YYYYMMDD`. For example, for the `MyTable20180101`
-     * shard, the `table_prefix` is `MyTable`.
-     *
-     * @var string
-     */
-    public $tablePrefix;
-    /**
-     * Output only. The Data Catalog resource name of the dataset entry the
-     * current table belongs to. For example: `projects/{PROJECT_ID}/locations/{LO
-     * CATION}/entrygroups/{ENTRY_GROUP_ID}/entries/{ENTRY_ID}`.
-     *
-     * @param string $dataset
-     */
-    public function setDataset($dataset)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1BigQueryDateShardedSpec extends \Google\Model
     {
+        /**
+         * Output only. The Data Catalog resource name of the dataset entry the
+         * current table belongs to. For example: `projects/{PROJECT_ID}/locations/{LO
+         * CATION}/entrygroups/{ENTRY_GROUP_ID}/entries/{ENTRY_ID}`.
+         *
+         * @var string
+         */
+        public $dataset;
+        /**
+         * Output only. BigQuery resource name of the latest shard.
+         *
+         * @var string
+         */
+        public $latestShardResource;
+        /**
+         * Output only. Total number of shards.
+         *
+         * @var string
+         */
+        public $shardCount;
+        /**
+         * Output only. The table name prefix of the shards. The name of any given
+         * shard is `[table_prefix]YYYYMMDD`. For example, for the `MyTable20180101`
+         * shard, the `table_prefix` is `MyTable`.
+         *
+         * @var string
+         */
+        public $tablePrefix;
+        /**
+         * Output only. The Data Catalog resource name of the dataset entry the
+         * current table belongs to. For example: `projects/{PROJECT_ID}/locations/{LO
+         * CATION}/entrygroups/{ENTRY_GROUP_ID}/entries/{ENTRY_ID}`.
+         *
+         * @param string $dataset
+         */
+        public function setDataset($dataset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataset()
+        {
+        }
+        /**
+         * Output only. BigQuery resource name of the latest shard.
+         *
+         * @param string $latestShardResource
+         */
+        public function setLatestShardResource($latestShardResource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLatestShardResource()
+        {
+        }
+        /**
+         * Output only. Total number of shards.
+         *
+         * @param string $shardCount
+         */
+        public function setShardCount($shardCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShardCount()
+        {
+        }
+        /**
+         * Output only. The table name prefix of the shards. The name of any given
+         * shard is `[table_prefix]YYYYMMDD`. For example, for the `MyTable20180101`
+         * shard, the `table_prefix` is `MyTable`.
+         *
+         * @param string $tablePrefix
+         */
+        public function setTablePrefix($tablePrefix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTablePrefix()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1BigQueryDateShardedSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataset()
-    {
-    }
-    /**
-     * Output only. BigQuery resource name of the latest shard.
-     *
-     * @param string $latestShardResource
-     */
-    public function setLatestShardResource($latestShardResource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLatestShardResource()
-    {
-    }
-    /**
-     * Output only. Total number of shards.
-     *
-     * @param string $shardCount
-     */
-    public function setShardCount($shardCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShardCount()
-    {
-    }
-    /**
-     * Output only. The table name prefix of the shards. The name of any given
-     * shard is `[table_prefix]YYYYMMDD`. For example, for the `MyTable20180101`
-     * shard, the `table_prefix` is `MyTable`.
-     *
-     * @param string $tablePrefix
-     */
-    public function setTablePrefix($tablePrefix)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTablePrefix()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1BigQueryDateShardedSpec extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1BigQueryDateShardedSpec
     {
     }
 }

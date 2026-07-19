@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TrafficDirectorService;
-
-class TypedExtensionConfig extends \Google\Model
-{
-    /**
-     * The name of an extension. This is not used to select the extension, instead
-     * it serves the role of an opaque identifier.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The typed config for the extension. The type URL will be used to identify
-     * the extension. In the case that the type URL is *xds.type.v3.TypedStruct*
-     * (or, for historical reasons, *udpa.type.v1.TypedStruct*), the inner type
-     * URL of *TypedStruct* will be utilized. See the :ref:`extension
-     * configuration overview ` for further details.
-     *
-     * @var array[]
-     */
-    public $typedConfig;
-    /**
-     * The name of an extension. This is not used to select the extension, instead
-     * it serves the role of an opaque identifier.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\TrafficDirectorService {
+    class TypedExtensionConfig extends \Google\Model
     {
+        /**
+         * The name of an extension. This is not used to select the extension, instead
+         * it serves the role of an opaque identifier.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The typed config for the extension. The type URL will be used to identify
+         * the extension. In the case that the type URL is *xds.type.v3.TypedStruct*
+         * (or, for historical reasons, *udpa.type.v1.TypedStruct*), the inner type
+         * URL of *TypedStruct* will be utilized. See the :ref:`extension
+         * configuration overview ` for further details.
+         *
+         * @var array[]
+         */
+        public $typedConfig;
+        /**
+         * The name of an extension. This is not used to select the extension, instead
+         * it serves the role of an opaque identifier.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The typed config for the extension. The type URL will be used to identify
+         * the extension. In the case that the type URL is *xds.type.v3.TypedStruct*
+         * (or, for historical reasons, *udpa.type.v1.TypedStruct*), the inner type
+         * URL of *TypedStruct* will be utilized. See the :ref:`extension
+         * configuration overview ` for further details.
+         *
+         * @param array[] $typedConfig
+         */
+        public function setTypedConfig($typedConfig)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getTypedConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\TrafficDirectorService\TypedExtensionConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * The typed config for the extension. The type URL will be used to identify
-     * the extension. In the case that the type URL is *xds.type.v3.TypedStruct*
-     * (or, for historical reasons, *udpa.type.v1.TypedStruct*), the inner type
-     * URL of *TypedStruct* will be utilized. See the :ref:`extension
-     * configuration overview ` for further details.
-     *
-     * @param array[] $typedConfig
-     */
-    public function setTypedConfig($typedConfig)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getTypedConfig()
+    class Google_Service_TrafficDirectorService_TypedExtensionConfig extends \Google\Service\TrafficDirectorService\TypedExtensionConfig
     {
     }
 }

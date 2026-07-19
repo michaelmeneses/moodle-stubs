@@ -21,83 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class StateMetadata extends \Google\Model
-{
-    /**
-     * An invalid state, which is the default case.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The resource is being added.
-     */
-    public const STATE_ADDING = 'ADDING';
-    /**
-     * The resource is in use.
-     */
-    public const STATE_ACTIVE = 'ACTIVE';
-    /**
-     * The resource is being deleted.
-     */
-    public const STATE_DELETING = 'DELETING';
-    /**
-     * The resource is being suspended.
-     */
-    public const STATE_SUSPENDING = 'SUSPENDING';
-    /**
-     * The resource is suspended and not in use.
-     */
-    public const STATE_SUSPENDED = 'SUSPENDED';
-    /**
-     * Output only. Accompanies only the transient states, which include `ADDING`,
-     * `DELETING`, and `SUSPENDING`, to denote the time until which the transient
-     * state of the resource will be effective. For instance, if the state is
-     * `ADDING`, this field shows the time when the resource state transitions to
-     * `ACTIVE`.
-     *
-     * @var string
-     */
-    public $effectiveTime;
-    /**
-     * Output only. The state of the resource.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. Accompanies only the transient states, which include `ADDING`,
-     * `DELETING`, and `SUSPENDING`, to denote the time until which the transient
-     * state of the resource will be effective. For instance, if the state is
-     * `ADDING`, this field shows the time when the resource state transitions to
-     * `ACTIVE`.
-     *
-     * @param string $effectiveTime
-     */
-    public function setEffectiveTime($effectiveTime)
+namespace Google\Service\Networkconnectivity {
+    class StateMetadata extends \Google\Model
     {
+        /**
+         * An invalid state, which is the default case.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The resource is being added.
+         */
+        public const STATE_ADDING = 'ADDING';
+        /**
+         * The resource is in use.
+         */
+        public const STATE_ACTIVE = 'ACTIVE';
+        /**
+         * The resource is being deleted.
+         */
+        public const STATE_DELETING = 'DELETING';
+        /**
+         * The resource is being suspended.
+         */
+        public const STATE_SUSPENDING = 'SUSPENDING';
+        /**
+         * The resource is suspended and not in use.
+         */
+        public const STATE_SUSPENDED = 'SUSPENDED';
+        /**
+         * Output only. Accompanies only the transient states, which include `ADDING`,
+         * `DELETING`, and `SUSPENDING`, to denote the time until which the transient
+         * state of the resource will be effective. For instance, if the state is
+         * `ADDING`, this field shows the time when the resource state transitions to
+         * `ACTIVE`.
+         *
+         * @var string
+         */
+        public $effectiveTime;
+        /**
+         * Output only. The state of the resource.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. Accompanies only the transient states, which include `ADDING`,
+         * `DELETING`, and `SUSPENDING`, to denote the time until which the transient
+         * state of the resource will be effective. For instance, if the state is
+         * `ADDING`, this field shows the time when the resource state transitions to
+         * `ACTIVE`.
+         *
+         * @param string $effectiveTime
+         */
+        public function setEffectiveTime($effectiveTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEffectiveTime()
+        {
+        }
+        /**
+         * Output only. The state of the resource.
+         *
+         * Accepted values: STATE_UNSPECIFIED, ADDING, ACTIVE, DELETING, SUSPENDING,
+         * SUSPENDED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Networkconnectivity\StateMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEffectiveTime()
-    {
-    }
-    /**
-     * Output only. The state of the resource.
-     *
-     * Accepted values: STATE_UNSPECIFIED, ADDING, ACTIVE, DELETING, SUSPENDING,
-     * SUSPENDED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_Networkconnectivity_StateMetadata extends \Google\Service\Networkconnectivity\StateMetadata
     {
     }
 }

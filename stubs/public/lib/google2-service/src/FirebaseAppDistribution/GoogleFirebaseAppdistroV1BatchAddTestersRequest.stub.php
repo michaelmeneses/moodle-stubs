@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseAppDistribution;
-
-class GoogleFirebaseAppdistroV1BatchAddTestersRequest extends \Google\Collection
-{
-    protected $collection_key = 'emails';
-    /**
-     * Required. The email addresses of the tester resources to create. A maximum
-     * of 999 and a minimum of 1 tester can be created in a batch.
-     *
-     * @var string[]
-     */
-    public $emails;
-    /**
-     * Required. The email addresses of the tester resources to create. A maximum
-     * of 999 and a minimum of 1 tester can be created in a batch.
-     *
-     * @param string[] $emails
-     */
-    public function setEmails($emails)
+namespace Google\Service\FirebaseAppDistribution {
+    class GoogleFirebaseAppdistroV1BatchAddTestersRequest extends \Google\Collection
     {
+        protected $collection_key = 'emails';
+        /**
+         * Required. The email addresses of the tester resources to create. A maximum
+         * of 999 and a minimum of 1 tester can be created in a batch.
+         *
+         * @var string[]
+         */
+        public $emails;
+        /**
+         * Required. The email addresses of the tester resources to create. A maximum
+         * of 999 and a minimum of 1 tester can be created in a batch.
+         *
+         * @param string[] $emails
+         */
+        public function setEmails($emails)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEmails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\FirebaseAppDistribution\GoogleFirebaseAppdistroV1BatchAddTestersRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmails()
+    class Google_Service_FirebaseAppDistribution_GoogleFirebaseAppdistroV1BatchAddTestersRequest extends \Google\Service\FirebaseAppDistribution\GoogleFirebaseAppdistroV1BatchAddTestersRequest
     {
     }
 }

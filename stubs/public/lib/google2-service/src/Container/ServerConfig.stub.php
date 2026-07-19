@@ -21,125 +21,134 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class ServerConfig extends \Google\Collection
-{
-    protected $collection_key = 'validNodeVersions';
-    protected $channelsType = ReleaseChannelConfig::class;
-    protected $channelsDataType = 'array';
-    /**
-     * Version of Kubernetes the service deploys by default.
-     *
-     * @var string
-     */
-    public $defaultClusterVersion;
-    /**
-     * Default image type.
-     *
-     * @var string
-     */
-    public $defaultImageType;
-    /**
-     * List of valid image types.
-     *
-     * @var string[]
-     */
-    public $validImageTypes;
-    /**
-     * List of valid master versions, in descending order.
-     *
-     * @var string[]
-     */
-    public $validMasterVersions;
-    /**
-     * List of valid node upgrade target versions, in descending order.
-     *
-     * @var string[]
-     */
-    public $validNodeVersions;
-    /**
-     * List of release channel configurations.
-     *
-     * @param ReleaseChannelConfig[] $channels
-     */
-    public function setChannels($channels)
+namespace Google\Service\Container {
+    class ServerConfig extends \Google\Collection
     {
+        protected $collection_key = 'validNodeVersions';
+        protected $channelsType = ReleaseChannelConfig::class;
+        protected $channelsDataType = 'array';
+        /**
+         * Version of Kubernetes the service deploys by default.
+         *
+         * @var string
+         */
+        public $defaultClusterVersion;
+        /**
+         * Default image type.
+         *
+         * @var string
+         */
+        public $defaultImageType;
+        /**
+         * List of valid image types.
+         *
+         * @var string[]
+         */
+        public $validImageTypes;
+        /**
+         * List of valid master versions, in descending order.
+         *
+         * @var string[]
+         */
+        public $validMasterVersions;
+        /**
+         * List of valid node upgrade target versions, in descending order.
+         *
+         * @var string[]
+         */
+        public $validNodeVersions;
+        /**
+         * List of release channel configurations.
+         *
+         * @param ReleaseChannelConfig[] $channels
+         */
+        public function setChannels($channels)
+        {
+        }
+        /**
+         * @return ReleaseChannelConfig[]
+         */
+        public function getChannels()
+        {
+        }
+        /**
+         * Version of Kubernetes the service deploys by default.
+         *
+         * @param string $defaultClusterVersion
+         */
+        public function setDefaultClusterVersion($defaultClusterVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefaultClusterVersion()
+        {
+        }
+        /**
+         * Default image type.
+         *
+         * @param string $defaultImageType
+         */
+        public function setDefaultImageType($defaultImageType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefaultImageType()
+        {
+        }
+        /**
+         * List of valid image types.
+         *
+         * @param string[] $validImageTypes
+         */
+        public function setValidImageTypes($validImageTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getValidImageTypes()
+        {
+        }
+        /**
+         * List of valid master versions, in descending order.
+         *
+         * @param string[] $validMasterVersions
+         */
+        public function setValidMasterVersions($validMasterVersions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getValidMasterVersions()
+        {
+        }
+        /**
+         * List of valid node upgrade target versions, in descending order.
+         *
+         * @param string[] $validNodeVersions
+         */
+        public function setValidNodeVersions($validNodeVersions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getValidNodeVersions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ReleaseChannelConfig[]
+     * Runtime class alias of \Google\Service\Container\ServerConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChannels()
-    {
-    }
-    /**
-     * Version of Kubernetes the service deploys by default.
-     *
-     * @param string $defaultClusterVersion
-     */
-    public function setDefaultClusterVersion($defaultClusterVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDefaultClusterVersion()
-    {
-    }
-    /**
-     * Default image type.
-     *
-     * @param string $defaultImageType
-     */
-    public function setDefaultImageType($defaultImageType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDefaultImageType()
-    {
-    }
-    /**
-     * List of valid image types.
-     *
-     * @param string[] $validImageTypes
-     */
-    public function setValidImageTypes($validImageTypes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getValidImageTypes()
-    {
-    }
-    /**
-     * List of valid master versions, in descending order.
-     *
-     * @param string[] $validMasterVersions
-     */
-    public function setValidMasterVersions($validMasterVersions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getValidMasterVersions()
-    {
-    }
-    /**
-     * List of valid node upgrade target versions, in descending order.
-     *
-     * @param string[] $validNodeVersions
-     */
-    public function setValidNodeVersions($validNodeVersions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getValidNodeVersions()
+    class Google_Service_Container_ServerConfig extends \Google\Service\Container\ServerConfig
     {
     }
 }

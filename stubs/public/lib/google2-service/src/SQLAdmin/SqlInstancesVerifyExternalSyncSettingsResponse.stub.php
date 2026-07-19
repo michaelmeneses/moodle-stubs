@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class SqlInstancesVerifyExternalSyncSettingsResponse extends \Google\Collection
-{
-    protected $collection_key = 'warnings';
-    protected $errorsType = SqlExternalSyncSettingError::class;
-    protected $errorsDataType = 'array';
-    /**
-     * This is always `sql#migrationSettingErrorList`.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $warningsType = SqlExternalSyncSettingError::class;
-    protected $warningsDataType = 'array';
-    /**
-     * List of migration violations.
-     *
-     * @param SqlExternalSyncSettingError[] $errors
-     */
-    public function setErrors($errors)
+namespace Google\Service\SQLAdmin {
+    class SqlInstancesVerifyExternalSyncSettingsResponse extends \Google\Collection
     {
+        protected $collection_key = 'warnings';
+        protected $errorsType = SqlExternalSyncSettingError::class;
+        protected $errorsDataType = 'array';
+        /**
+         * This is always `sql#migrationSettingErrorList`.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $warningsType = SqlExternalSyncSettingError::class;
+        protected $warningsDataType = 'array';
+        /**
+         * List of migration violations.
+         *
+         * @param SqlExternalSyncSettingError[] $errors
+         */
+        public function setErrors($errors)
+        {
+        }
+        /**
+         * @return SqlExternalSyncSettingError[]
+         */
+        public function getErrors()
+        {
+        }
+        /**
+         * This is always `sql#migrationSettingErrorList`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * List of migration warnings.
+         *
+         * @param SqlExternalSyncSettingError[] $warnings
+         */
+        public function setWarnings($warnings)
+        {
+        }
+        /**
+         * @return SqlExternalSyncSettingError[]
+         */
+        public function getWarnings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SqlExternalSyncSettingError[]
+     * Runtime class alias of \Google\Service\SQLAdmin\SqlInstancesVerifyExternalSyncSettingsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrors()
-    {
-    }
-    /**
-     * This is always `sql#migrationSettingErrorList`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * List of migration warnings.
-     *
-     * @param SqlExternalSyncSettingError[] $warnings
-     */
-    public function setWarnings($warnings)
-    {
-    }
-    /**
-     * @return SqlExternalSyncSettingError[]
-     */
-    public function getWarnings()
+    class Google_Service_SQLAdmin_SqlInstancesVerifyExternalSyncSettingsResponse extends \Google\Service\SQLAdmin\SqlInstancesVerifyExternalSyncSettingsResponse
     {
     }
 }

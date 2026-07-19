@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class AggregationResultHistogramBucket extends \Google\Model
-{
-    /**
-     * Count of items in the bucket.
-     *
-     * @var string
-     */
-    public $count;
-    /**
-     * Lower bound - inclusive.
-     *
-     * @var 
-     */
-    public $lowerBound;
-    /**
-     * Upper bound - exclusive.
-     *
-     * @var 
-     */
-    public $upperBound;
-    /**
-     * Count of items in the bucket.
-     *
-     * @param string $count
-     */
-    public function setCount($count)
+namespace Google\Service\MigrationCenterAPI {
+    class AggregationResultHistogramBucket extends \Google\Model
     {
+        /**
+         * Count of items in the bucket.
+         *
+         * @var string
+         */
+        public $count;
+        /**
+         * Lower bound - inclusive.
+         *
+         * @var 
+         */
+        public $lowerBound;
+        /**
+         * Upper bound - exclusive.
+         *
+         * @var 
+         */
+        public $upperBound;
+        /**
+         * Count of items in the bucket.
+         *
+         * @param string $count
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCount()
+        {
+        }
+        public function setLowerBound($lowerBound)
+        {
+        }
+        public function getLowerBound()
+        {
+        }
+        public function setUpperBound($upperBound)
+        {
+        }
+        public function getUpperBound()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\AggregationResultHistogramBucket registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCount()
-    {
-    }
-    public function setLowerBound($lowerBound)
-    {
-    }
-    public function getLowerBound()
-    {
-    }
-    public function setUpperBound($upperBound)
-    {
-    }
-    public function getUpperBound()
+    class Google_Service_MigrationCenterAPI_AggregationResultHistogramBucket extends \Google\Service\MigrationCenterAPI\AggregationResultHistogramBucket
     {
     }
 }

@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class ListDataSourceReferencesResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $dataSourceReferencesType = DataSourceReference::class;
-    protected $dataSourceReferencesDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * The DataSourceReferences from the specified parent.
-     *
-     * @param DataSourceReference[] $dataSourceReferences
-     */
-    public function setDataSourceReferences($dataSourceReferences)
+namespace Google\Service\Backupdr {
+    class ListDataSourceReferencesResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $dataSourceReferencesType = DataSourceReference::class;
+        protected $dataSourceReferencesDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * The DataSourceReferences from the specified parent.
+         *
+         * @param DataSourceReference[] $dataSourceReferences
+         */
+        public function setDataSourceReferences($dataSourceReferences)
+        {
+        }
+        /**
+         * @return DataSourceReference[]
+         */
+        public function getDataSourceReferences()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DataSourceReference[]
+     * Runtime class alias of \Google\Service\Backupdr\ListDataSourceReferencesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataSourceReferences()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_Backupdr_ListDataSourceReferencesResponse extends \Google\Service\Backupdr\ListDataSourceReferencesResponse
     {
     }
 }

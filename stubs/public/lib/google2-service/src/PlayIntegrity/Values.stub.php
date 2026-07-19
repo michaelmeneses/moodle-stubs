@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PlayIntegrity;
-
-class Values extends \Google\Model
-{
-    /**
-     * Required. First recall bit value.
-     *
-     * @var bool
-     */
-    public $bitFirst;
-    /**
-     * Required. Second recall bit value.
-     *
-     * @var bool
-     */
-    public $bitSecond;
-    /**
-     * Required. Third recall bit value.
-     *
-     * @var bool
-     */
-    public $bitThird;
-    /**
-     * Required. First recall bit value.
-     *
-     * @param bool $bitFirst
-     */
-    public function setBitFirst($bitFirst)
+namespace Google\Service\PlayIntegrity {
+    class Values extends \Google\Model
     {
+        /**
+         * Required. First recall bit value.
+         *
+         * @var bool
+         */
+        public $bitFirst;
+        /**
+         * Required. Second recall bit value.
+         *
+         * @var bool
+         */
+        public $bitSecond;
+        /**
+         * Required. Third recall bit value.
+         *
+         * @var bool
+         */
+        public $bitThird;
+        /**
+         * Required. First recall bit value.
+         *
+         * @param bool $bitFirst
+         */
+        public function setBitFirst($bitFirst)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBitFirst()
+        {
+        }
+        /**
+         * Required. Second recall bit value.
+         *
+         * @param bool $bitSecond
+         */
+        public function setBitSecond($bitSecond)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBitSecond()
+        {
+        }
+        /**
+         * Required. Third recall bit value.
+         *
+         * @param bool $bitThird
+         */
+        public function setBitThird($bitThird)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBitThird()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\PlayIntegrity\Values registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBitFirst()
-    {
-    }
-    /**
-     * Required. Second recall bit value.
-     *
-     * @param bool $bitSecond
-     */
-    public function setBitSecond($bitSecond)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getBitSecond()
-    {
-    }
-    /**
-     * Required. Third recall bit value.
-     *
-     * @param bool $bitThird
-     */
-    public function setBitThird($bitThird)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getBitThird()
+    class Google_Service_PlayIntegrity_Values extends \Google\Service\PlayIntegrity\Values
     {
     }
 }

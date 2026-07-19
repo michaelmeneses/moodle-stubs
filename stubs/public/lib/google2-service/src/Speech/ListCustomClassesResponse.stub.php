@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Speech;
-
-class ListCustomClassesResponse extends \Google\Collection
-{
-    protected $collection_key = 'customClasses';
-    protected $customClassesType = CustomClass::class;
-    protected $customClassesDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The custom classes.
-     *
-     * @param CustomClass[] $customClasses
-     */
-    public function setCustomClasses($customClasses)
+namespace Google\Service\Speech {
+    class ListCustomClassesResponse extends \Google\Collection
     {
+        protected $collection_key = 'customClasses';
+        protected $customClassesType = CustomClass::class;
+        protected $customClassesDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The custom classes.
+         *
+         * @param CustomClass[] $customClasses
+         */
+        public function setCustomClasses($customClasses)
+        {
+        }
+        /**
+         * @return CustomClass[]
+         */
+        public function getCustomClasses()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CustomClass[]
+     * Runtime class alias of \Google\Service\Speech\ListCustomClassesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomClasses()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Speech_ListCustomClassesResponse extends \Google\Service\Speech\ListCustomClassesResponse
     {
     }
 }

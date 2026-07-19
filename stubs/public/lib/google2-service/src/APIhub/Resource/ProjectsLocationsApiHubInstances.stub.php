@@ -21,77 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub\Resource;
-
-/**
- * The "apiHubInstances" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apihubService = new Google\Service\APIhub(...);
- *   $apiHubInstances = $apihubService->projects_locations_apiHubInstances;
- *  </code>
- */
-class ProjectsLocationsApiHubInstances extends \Google\Service\Resource
-{
+namespace Google\Service\APIhub\Resource {
+    use Google\Service\APIhub\GoogleCloudApihubV1ApiHubInstance;
+    use Google\Service\APIhub\GoogleCloudApihubV1LookupApiHubInstanceResponse;
+    use Google\Service\APIhub\GoogleLongrunningOperation;
     /**
-     * Provisions instance resources for the API Hub. (apiHubInstances.create)
-     *
-     * @param string $parent Required. The parent resource for the Api Hub instance
-     * resource. Format: `projects/{project}/locations/{location}`
-     * @param GoogleCloudApihubV1ApiHubInstance $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string apiHubInstanceId Optional. Identifier to assign to the Api
-     * Hub instance. Must be unique within scope of the parent resource. If the
-     * field is not provided, system generated id will be used. This value should be
-     * 4-40 characters, and valid characters are `/a-z[0-9]-_/`.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * The "apiHubInstances" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apihubService = new Google\Service\APIhub(...);
+     *   $apiHubInstances = $apihubService->projects_locations_apiHubInstances;
+     *  </code>
      */
-    public function create($parent, GoogleCloudApihubV1ApiHubInstance $postBody, $optParams = [])
+    class ProjectsLocationsApiHubInstances extends \Google\Service\Resource
     {
+        /**
+         * Provisions instance resources for the API Hub. (apiHubInstances.create)
+         *
+         * @param string $parent Required. The parent resource for the Api Hub instance
+         * resource. Format: `projects/{project}/locations/{location}`
+         * @param GoogleCloudApihubV1ApiHubInstance $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string apiHubInstanceId Optional. Identifier to assign to the Api
+         * Hub instance. Must be unique within scope of the parent resource. If the
+         * field is not provided, system generated id will be used. This value should be
+         * 4-40 characters, and valid characters are `/a-z[0-9]-_/`.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudApihubV1ApiHubInstance $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes the API hub instance. Deleting the API hub instance will also result
+         * in the removal of all associated runtime project attachments and the host
+         * project registration. (apiHubInstances.delete)
+         *
+         * @param string $name Required. The name of the Api Hub instance to delete.
+         * Format:
+         * `projects/{project}/locations/{location}/apiHubInstances/{apiHubInstance}`.
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets details of a single API Hub instance. (apiHubInstances.get)
+         *
+         * @param string $name Required. The name of the Api Hub instance to retrieve.
+         * Format:
+         * `projects/{project}/locations/{location}/apiHubInstances/{apiHubInstance}`.
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApihubV1ApiHubInstance
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Looks up an Api Hub instance in a given GCP project. There will always be
+         * only one Api Hub instance for a GCP project across all locations.
+         * (apiHubInstances.lookup)
+         *
+         * @param string $parent Required. There will always be only one Api Hub
+         * instance for a GCP project across all locations. The parent resource for the
+         * Api Hub instance resource. Format: `projects/{project}/locations/{location}`
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApihubV1LookupApiHubInstanceResponse
+         * @throws \Google\Service\Exception
+         */
+        public function lookup($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes the API hub instance. Deleting the API hub instance will also result
-     * in the removal of all associated runtime project attachments and the host
-     * project registration. (apiHubInstances.delete)
-     *
-     * @param string $name Required. The name of the Api Hub instance to delete.
-     * Format:
-     * `projects/{project}/locations/{location}/apiHubInstances/{apiHubInstance}`.
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\APIhub\Resource\ProjectsLocationsApiHubInstances registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets details of a single API Hub instance. (apiHubInstances.get)
-     *
-     * @param string $name Required. The name of the Api Hub instance to retrieve.
-     * Format:
-     * `projects/{project}/locations/{location}/apiHubInstances/{apiHubInstance}`.
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApihubV1ApiHubInstance
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Looks up an Api Hub instance in a given GCP project. There will always be
-     * only one Api Hub instance for a GCP project across all locations.
-     * (apiHubInstances.lookup)
-     *
-     * @param string $parent Required. There will always be only one Api Hub
-     * instance for a GCP project across all locations. The parent resource for the
-     * Api Hub instance resource. Format: `projects/{project}/locations/{location}`
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApihubV1LookupApiHubInstanceResponse
-     * @throws \Google\Service\Exception
-     */
-    public function lookup($parent, $optParams = [])
+    class Google_Service_APIhub_Resource_ProjectsLocationsApiHubInstances extends \Google\Service\APIhub\Resource\ProjectsLocationsApiHubInstances
     {
     }
 }

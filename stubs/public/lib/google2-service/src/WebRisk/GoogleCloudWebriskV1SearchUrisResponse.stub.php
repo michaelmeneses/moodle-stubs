@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WebRisk;
-
-class GoogleCloudWebriskV1SearchUrisResponse extends \Google\Model
-{
-    protected $threatType = GoogleCloudWebriskV1SearchUrisResponseThreatUri::class;
-    protected $threatDataType = '';
-    /**
-     * The threat list matches. This might be empty if the URI is on no list.
-     *
-     * @param GoogleCloudWebriskV1SearchUrisResponseThreatUri $threat
-     */
-    public function setThreat(GoogleCloudWebriskV1SearchUrisResponseThreatUri $threat)
+namespace Google\Service\WebRisk {
+    class GoogleCloudWebriskV1SearchUrisResponse extends \Google\Model
     {
+        protected $threatType = GoogleCloudWebriskV1SearchUrisResponseThreatUri::class;
+        protected $threatDataType = '';
+        /**
+         * The threat list matches. This might be empty if the URI is on no list.
+         *
+         * @param GoogleCloudWebriskV1SearchUrisResponseThreatUri $threat
+         */
+        public function setThreat(GoogleCloudWebriskV1SearchUrisResponseThreatUri $threat)
+        {
+        }
+        /**
+         * @return GoogleCloudWebriskV1SearchUrisResponseThreatUri
+         */
+        public function getThreat()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudWebriskV1SearchUrisResponseThreatUri
+     * Runtime class alias of \Google\Service\WebRisk\GoogleCloudWebriskV1SearchUrisResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getThreat()
+    class Google_Service_WebRisk_GoogleCloudWebriskV1SearchUrisResponse extends \Google\Service\WebRisk\GoogleCloudWebriskV1SearchUrisResponse
     {
     }
 }

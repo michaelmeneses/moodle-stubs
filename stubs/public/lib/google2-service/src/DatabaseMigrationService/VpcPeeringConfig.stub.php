@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class VpcPeeringConfig extends \Google\Model
-{
-    /**
-     * Required. A free subnet for peering. (CIDR of /29)
-     *
-     * @var string
-     */
-    public $subnet;
-    /**
-     * Required. Fully qualified name of the VPC that Database Migration Service
-     * will peer to.
-     *
-     * @var string
-     */
-    public $vpcName;
-    /**
-     * Required. A free subnet for peering. (CIDR of /29)
-     *
-     * @param string $subnet
-     */
-    public function setSubnet($subnet)
+namespace Google\Service\DatabaseMigrationService {
+    class VpcPeeringConfig extends \Google\Model
     {
+        /**
+         * Required. A free subnet for peering. (CIDR of /29)
+         *
+         * @var string
+         */
+        public $subnet;
+        /**
+         * Required. Fully qualified name of the VPC that Database Migration Service
+         * will peer to.
+         *
+         * @var string
+         */
+        public $vpcName;
+        /**
+         * Required. A free subnet for peering. (CIDR of /29)
+         *
+         * @param string $subnet
+         */
+        public function setSubnet($subnet)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubnet()
+        {
+        }
+        /**
+         * Required. Fully qualified name of the VPC that Database Migration Service
+         * will peer to.
+         *
+         * @param string $vpcName
+         */
+        public function setVpcName($vpcName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVpcName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\VpcPeeringConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSubnet()
-    {
-    }
-    /**
-     * Required. Fully qualified name of the VPC that Database Migration Service
-     * will peer to.
-     *
-     * @param string $vpcName
-     */
-    public function setVpcName($vpcName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVpcName()
+    class Google_Service_DatabaseMigrationService_VpcPeeringConfig extends \Google\Service\DatabaseMigrationService\VpcPeeringConfig
     {
     }
 }

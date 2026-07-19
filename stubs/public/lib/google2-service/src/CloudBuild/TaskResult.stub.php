@@ -21,120 +21,129 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class TaskResult extends \Google\Model
-{
-    /**
-     * Default enum type; should not be used.
-     */
-    public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * Default
-     */
-    public const TYPE_STRING = 'STRING';
-    /**
-     * Array type
-     */
-    public const TYPE_ARRAY = 'ARRAY';
-    /**
-     * Object type
-     */
-    public const TYPE_OBJECT = 'OBJECT';
-    /**
-     * Description of the result.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Name of the result.
-     *
-     * @var string
-     */
-    public $name;
-    protected $propertiesType = PropertySpec::class;
-    protected $propertiesDataType = 'map';
-    /**
-     * The type of data that the result holds.
-     *
-     * @var string
-     */
-    public $type;
-    protected $valueType = ParamValue::class;
-    protected $valueDataType = '';
-    /**
-     * Description of the result.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\CloudBuild {
+    class TaskResult extends \Google\Model
     {
+        /**
+         * Default enum type; should not be used.
+         */
+        public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * Default
+         */
+        public const TYPE_STRING = 'STRING';
+        /**
+         * Array type
+         */
+        public const TYPE_ARRAY = 'ARRAY';
+        /**
+         * Object type
+         */
+        public const TYPE_OBJECT = 'OBJECT';
+        /**
+         * Description of the result.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Name of the result.
+         *
+         * @var string
+         */
+        public $name;
+        protected $propertiesType = PropertySpec::class;
+        protected $propertiesDataType = 'map';
+        /**
+         * The type of data that the result holds.
+         *
+         * @var string
+         */
+        public $type;
+        protected $valueType = ParamValue::class;
+        protected $valueDataType = '';
+        /**
+         * Description of the result.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Name of the result.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * When type is OBJECT, this map holds the names of fields inside that object
+         * along with the type of data each field holds.
+         *
+         * @param PropertySpec[] $properties
+         */
+        public function setProperties($properties)
+        {
+        }
+        /**
+         * @return PropertySpec[]
+         */
+        public function getProperties()
+        {
+        }
+        /**
+         * The type of data that the result holds.
+         *
+         * Accepted values: TYPE_UNSPECIFIED, STRING, ARRAY, OBJECT
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
+        /**
+         * Optional. Optionally used to initialize a Task's result with a Step's
+         * result.
+         *
+         * @param ParamValue $value
+         */
+        public function setValue(ParamValue $value)
+        {
+        }
+        /**
+         * @return ParamValue
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\TaskResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Name of the result.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * When type is OBJECT, this map holds the names of fields inside that object
-     * along with the type of data each field holds.
-     *
-     * @param PropertySpec[] $properties
-     */
-    public function setProperties($properties)
-    {
-    }
-    /**
-     * @return PropertySpec[]
-     */
-    public function getProperties()
-    {
-    }
-    /**
-     * The type of data that the result holds.
-     *
-     * Accepted values: TYPE_UNSPECIFIED, STRING, ARRAY, OBJECT
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
-    {
-    }
-    /**
-     * Optional. Optionally used to initialize a Task's result with a Step's
-     * result.
-     *
-     * @param ParamValue $value
-     */
-    public function setValue(ParamValue $value)
-    {
-    }
-    /**
-     * @return ParamValue
-     */
-    public function getValue()
+    class Google_Service_CloudBuild_TaskResult extends \Google\Service\CloudBuild\TaskResult
     {
     }
 }

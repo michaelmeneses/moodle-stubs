@@ -21,91 +21,100 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ServiceStoreConfig extends \Google\Collection
-{
-    protected $collection_key = 'storeCodes';
-    protected $cutoffConfigType = ServiceStoreConfigCutoffConfig::class;
-    protected $cutoffConfigDataType = '';
-    protected $serviceRadiusType = Distance::class;
-    protected $serviceRadiusDataType = '';
-    /**
-     * A list of store codes that provide local delivery. If empty, then
-     * `store_service_type` must be `all_stores`, or an error is thrown. If not
-     * empty, then `store_service_type` must be `selected_stores`, or an error is
-     * thrown.
-     *
-     * @var string[]
-     */
-    public $storeCodes;
-    /**
-     * Indicates whether all stores listed by this merchant provide local delivery
-     * or not. Acceptable values are `all stores` and `selected stores`
-     *
-     * @var string
-     */
-    public $storeServiceType;
-    /**
-     * Time local delivery ends for the day. This can be either
-     * `local_cutoff_time` or `store_close_offset_hours`, if both are provided an
-     * error is thrown.
-     *
-     * @param ServiceStoreConfigCutoffConfig $cutoffConfig
-     */
-    public function setCutoffConfig(ServiceStoreConfigCutoffConfig $cutoffConfig)
+namespace Google\Service\ShoppingContent {
+    class ServiceStoreConfig extends \Google\Collection
     {
+        protected $collection_key = 'storeCodes';
+        protected $cutoffConfigType = ServiceStoreConfigCutoffConfig::class;
+        protected $cutoffConfigDataType = '';
+        protected $serviceRadiusType = Distance::class;
+        protected $serviceRadiusDataType = '';
+        /**
+         * A list of store codes that provide local delivery. If empty, then
+         * `store_service_type` must be `all_stores`, or an error is thrown. If not
+         * empty, then `store_service_type` must be `selected_stores`, or an error is
+         * thrown.
+         *
+         * @var string[]
+         */
+        public $storeCodes;
+        /**
+         * Indicates whether all stores listed by this merchant provide local delivery
+         * or not. Acceptable values are `all stores` and `selected stores`
+         *
+         * @var string
+         */
+        public $storeServiceType;
+        /**
+         * Time local delivery ends for the day. This can be either
+         * `local_cutoff_time` or `store_close_offset_hours`, if both are provided an
+         * error is thrown.
+         *
+         * @param ServiceStoreConfigCutoffConfig $cutoffConfig
+         */
+        public function setCutoffConfig(ServiceStoreConfigCutoffConfig $cutoffConfig)
+        {
+        }
+        /**
+         * @return ServiceStoreConfigCutoffConfig
+         */
+        public function getCutoffConfig()
+        {
+        }
+        /**
+         * Maximum delivery radius. Only needed for local delivery fulfillment type.
+         *
+         * @param Distance $serviceRadius
+         */
+        public function setServiceRadius(Distance $serviceRadius)
+        {
+        }
+        /**
+         * @return Distance
+         */
+        public function getServiceRadius()
+        {
+        }
+        /**
+         * A list of store codes that provide local delivery. If empty, then
+         * `store_service_type` must be `all_stores`, or an error is thrown. If not
+         * empty, then `store_service_type` must be `selected_stores`, or an error is
+         * thrown.
+         *
+         * @param string[] $storeCodes
+         */
+        public function setStoreCodes($storeCodes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getStoreCodes()
+        {
+        }
+        /**
+         * Indicates whether all stores listed by this merchant provide local delivery
+         * or not. Acceptable values are `all stores` and `selected stores`
+         *
+         * @param string $storeServiceType
+         */
+        public function setStoreServiceType($storeServiceType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStoreServiceType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ServiceStoreConfigCutoffConfig
+     * Runtime class alias of \Google\Service\ShoppingContent\ServiceStoreConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCutoffConfig()
-    {
-    }
-    /**
-     * Maximum delivery radius. Only needed for local delivery fulfillment type.
-     *
-     * @param Distance $serviceRadius
-     */
-    public function setServiceRadius(Distance $serviceRadius)
-    {
-    }
-    /**
-     * @return Distance
-     */
-    public function getServiceRadius()
-    {
-    }
-    /**
-     * A list of store codes that provide local delivery. If empty, then
-     * `store_service_type` must be `all_stores`, or an error is thrown. If not
-     * empty, then `store_service_type` must be `selected_stores`, or an error is
-     * thrown.
-     *
-     * @param string[] $storeCodes
-     */
-    public function setStoreCodes($storeCodes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getStoreCodes()
-    {
-    }
-    /**
-     * Indicates whether all stores listed by this merchant provide local delivery
-     * or not. Acceptable values are `all stores` and `selected stores`
-     *
-     * @param string $storeServiceType
-     */
-    public function setStoreServiceType($storeServiceType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStoreServiceType()
+    class Google_Service_ShoppingContent_ServiceStoreConfig extends \Google\Service\ShoppingContent\ServiceStoreConfig
     {
     }
 }

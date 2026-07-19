@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ConfigManagementPolicyControllerVersion extends \Google\Model
-{
-    /**
-     * The gatekeeper image tag that is composed of ACM version, git tag, build
-     * number.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * The gatekeeper image tag that is composed of ACM version, git tag, build
-     * number.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
+namespace Google\Service\GKEHub {
+    class ConfigManagementPolicyControllerVersion extends \Google\Model
     {
+        /**
+         * The gatekeeper image tag that is composed of ACM version, git tag, build
+         * number.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * The gatekeeper image tag that is composed of ACM version, git tag, build
+         * number.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\ConfigManagementPolicyControllerVersion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVersion()
+    class Google_Service_GKEHub_ConfigManagementPolicyControllerVersion extends \Google\Service\GKEHub\ConfigManagementPolicyControllerVersion
     {
     }
 }

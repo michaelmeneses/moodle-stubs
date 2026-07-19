@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CCAIPlatform;
-
-class AdminUser extends \Google\Model
-{
-    /**
-     * Optional. Last/family name of the first admin user.
-     *
-     * @var string
-     */
-    public $familyName;
-    /**
-     * Optional. First/given name of the first admin user.
-     *
-     * @var string
-     */
-    public $givenName;
-    /**
-     * Optional. Last/family name of the first admin user.
-     *
-     * @param string $familyName
-     */
-    public function setFamilyName($familyName)
+namespace Google\Service\CCAIPlatform {
+    class AdminUser extends \Google\Model
     {
+        /**
+         * Optional. Last/family name of the first admin user.
+         *
+         * @var string
+         */
+        public $familyName;
+        /**
+         * Optional. First/given name of the first admin user.
+         *
+         * @var string
+         */
+        public $givenName;
+        /**
+         * Optional. Last/family name of the first admin user.
+         *
+         * @param string $familyName
+         */
+        public function setFamilyName($familyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFamilyName()
+        {
+        }
+        /**
+         * Optional. First/given name of the first admin user.
+         *
+         * @param string $givenName
+         */
+        public function setGivenName($givenName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGivenName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CCAIPlatform\AdminUser registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFamilyName()
-    {
-    }
-    /**
-     * Optional. First/given name of the first admin user.
-     *
-     * @param string $givenName
-     */
-    public function setGivenName($givenName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGivenName()
+    class Google_Service_CCAIPlatform_AdminUser extends \Google\Service\CCAIPlatform\AdminUser
     {
     }
 }

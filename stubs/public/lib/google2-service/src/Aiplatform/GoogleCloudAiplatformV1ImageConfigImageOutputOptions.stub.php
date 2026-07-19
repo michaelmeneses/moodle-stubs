@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ImageConfigImageOutputOptions extends \Google\Model
-{
-    /**
-     * Optional. The compression quality of the output image.
-     *
-     * @var int
-     */
-    public $compressionQuality;
-    /**
-     * Optional. The image format that the output should be saved as.
-     *
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * Optional. The compression quality of the output image.
-     *
-     * @param int $compressionQuality
-     */
-    public function setCompressionQuality($compressionQuality)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ImageConfigImageOutputOptions extends \Google\Model
     {
+        /**
+         * Optional. The compression quality of the output image.
+         *
+         * @var int
+         */
+        public $compressionQuality;
+        /**
+         * Optional. The image format that the output should be saved as.
+         *
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * Optional. The compression quality of the output image.
+         *
+         * @param int $compressionQuality
+         */
+        public function setCompressionQuality($compressionQuality)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCompressionQuality()
+        {
+        }
+        /**
+         * Optional. The image format that the output should be saved as.
+         *
+         * @param string $mimeType
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ImageConfigImageOutputOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCompressionQuality()
-    {
-    }
-    /**
-     * Optional. The image format that the output should be saved as.
-     *
-     * @param string $mimeType
-     */
-    public function setMimeType($mimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimeType()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ImageConfigImageOutputOptions extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ImageConfigImageOutputOptions
     {
     }
 }

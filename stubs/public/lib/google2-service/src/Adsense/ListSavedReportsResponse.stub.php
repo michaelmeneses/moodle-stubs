@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Adsense;
-
-class ListSavedReportsResponse extends \Google\Collection
-{
-    protected $collection_key = 'savedReports';
-    /**
-     * Continuation token used to page through reports. To retrieve the next page
-     * of the results, set the next request's "page_token" value to this.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $savedReportsType = SavedReport::class;
-    protected $savedReportsDataType = 'array';
-    /**
-     * Continuation token used to page through reports. To retrieve the next page
-     * of the results, set the next request's "page_token" value to this.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Adsense {
+    class ListSavedReportsResponse extends \Google\Collection
     {
+        protected $collection_key = 'savedReports';
+        /**
+         * Continuation token used to page through reports. To retrieve the next page
+         * of the results, set the next request's "page_token" value to this.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $savedReportsType = SavedReport::class;
+        protected $savedReportsDataType = 'array';
+        /**
+         * Continuation token used to page through reports. To retrieve the next page
+         * of the results, set the next request's "page_token" value to this.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The reports returned in this list response.
+         *
+         * @param SavedReport[] $savedReports
+         */
+        public function setSavedReports($savedReports)
+        {
+        }
+        /**
+         * @return SavedReport[]
+         */
+        public function getSavedReports()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Adsense\ListSavedReportsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The reports returned in this list response.
-     *
-     * @param SavedReport[] $savedReports
-     */
-    public function setSavedReports($savedReports)
-    {
-    }
-    /**
-     * @return SavedReport[]
-     */
-    public function getSavedReports()
+    class Google_Service_Adsense_ListSavedReportsResponse extends \Google\Service\Adsense\ListSavedReportsResponse
     {
     }
 }

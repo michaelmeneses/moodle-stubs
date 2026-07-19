@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class TargetingValue extends \Google\Model
-{
-    protected $creativeSizeValueType = TargetingValueCreativeSize::class;
-    protected $creativeSizeValueDataType = '';
-    protected $dayPartTargetingValueType = TargetingValueDayPartTargeting::class;
-    protected $dayPartTargetingValueDataType = '';
-    protected $demogAgeCriteriaValueType = TargetingValueDemogAgeCriteria::class;
-    protected $demogAgeCriteriaValueDataType = '';
-    protected $demogGenderCriteriaValueType = TargetingValueDemogGenderCriteria::class;
-    protected $demogGenderCriteriaValueDataType = '';
-    public $longValue;
-    protected $requestPlatformTargetingValueType = TargetingValueRequestPlatformTargeting::class;
-    protected $requestPlatformTargetingValueDataType = '';
-    public $stringValue;
+namespace Google\Service\AdExchangeBuyer {
+    class TargetingValue extends \Google\Model
+    {
+        protected $creativeSizeValueType = TargetingValueCreativeSize::class;
+        protected $creativeSizeValueDataType = '';
+        protected $dayPartTargetingValueType = TargetingValueDayPartTargeting::class;
+        protected $dayPartTargetingValueDataType = '';
+        protected $demogAgeCriteriaValueType = TargetingValueDemogAgeCriteria::class;
+        protected $demogAgeCriteriaValueDataType = '';
+        protected $demogGenderCriteriaValueType = TargetingValueDemogGenderCriteria::class;
+        protected $demogGenderCriteriaValueDataType = '';
+        public $longValue;
+        protected $requestPlatformTargetingValueType = TargetingValueRequestPlatformTargeting::class;
+        protected $requestPlatformTargetingValueDataType = '';
+        public $stringValue;
+        /**
+         * @param TargetingValueCreativeSize
+         */
+        public function setCreativeSizeValue(TargetingValueCreativeSize $creativeSizeValue)
+        {
+        }
+        /**
+         * @return TargetingValueCreativeSize
+         */
+        public function getCreativeSizeValue()
+        {
+        }
+        /**
+         * @param TargetingValueDayPartTargeting
+         */
+        public function setDayPartTargetingValue(TargetingValueDayPartTargeting $dayPartTargetingValue)
+        {
+        }
+        /**
+         * @return TargetingValueDayPartTargeting
+         */
+        public function getDayPartTargetingValue()
+        {
+        }
+        /**
+         * @param TargetingValueDemogAgeCriteria
+         */
+        public function setDemogAgeCriteriaValue(TargetingValueDemogAgeCriteria $demogAgeCriteriaValue)
+        {
+        }
+        /**
+         * @return TargetingValueDemogAgeCriteria
+         */
+        public function getDemogAgeCriteriaValue()
+        {
+        }
+        /**
+         * @param TargetingValueDemogGenderCriteria
+         */
+        public function setDemogGenderCriteriaValue(TargetingValueDemogGenderCriteria $demogGenderCriteriaValue)
+        {
+        }
+        /**
+         * @return TargetingValueDemogGenderCriteria
+         */
+        public function getDemogGenderCriteriaValue()
+        {
+        }
+        public function setLongValue($longValue)
+        {
+        }
+        public function getLongValue()
+        {
+        }
+        /**
+         * @param TargetingValueRequestPlatformTargeting
+         */
+        public function setRequestPlatformTargetingValue(TargetingValueRequestPlatformTargeting $requestPlatformTargetingValue)
+        {
+        }
+        /**
+         * @return TargetingValueRequestPlatformTargeting
+         */
+        public function getRequestPlatformTargetingValue()
+        {
+        }
+        public function setStringValue($stringValue)
+        {
+        }
+        public function getStringValue()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param TargetingValueCreativeSize
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\TargetingValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setCreativeSizeValue(TargetingValueCreativeSize $creativeSizeValue)
-    {
-    }
-    /**
-     * @return TargetingValueCreativeSize
-     */
-    public function getCreativeSizeValue()
-    {
-    }
-    /**
-     * @param TargetingValueDayPartTargeting
-     */
-    public function setDayPartTargetingValue(TargetingValueDayPartTargeting $dayPartTargetingValue)
-    {
-    }
-    /**
-     * @return TargetingValueDayPartTargeting
-     */
-    public function getDayPartTargetingValue()
-    {
-    }
-    /**
-     * @param TargetingValueDemogAgeCriteria
-     */
-    public function setDemogAgeCriteriaValue(TargetingValueDemogAgeCriteria $demogAgeCriteriaValue)
-    {
-    }
-    /**
-     * @return TargetingValueDemogAgeCriteria
-     */
-    public function getDemogAgeCriteriaValue()
-    {
-    }
-    /**
-     * @param TargetingValueDemogGenderCriteria
-     */
-    public function setDemogGenderCriteriaValue(TargetingValueDemogGenderCriteria $demogGenderCriteriaValue)
-    {
-    }
-    /**
-     * @return TargetingValueDemogGenderCriteria
-     */
-    public function getDemogGenderCriteriaValue()
-    {
-    }
-    public function setLongValue($longValue)
-    {
-    }
-    public function getLongValue()
-    {
-    }
-    /**
-     * @param TargetingValueRequestPlatformTargeting
-     */
-    public function setRequestPlatformTargetingValue(TargetingValueRequestPlatformTargeting $requestPlatformTargetingValue)
-    {
-    }
-    /**
-     * @return TargetingValueRequestPlatformTargeting
-     */
-    public function getRequestPlatformTargetingValue()
-    {
-    }
-    public function setStringValue($stringValue)
-    {
-    }
-    public function getStringValue()
+    class Google_Service_AdExchangeBuyer_TargetingValue extends \Google\Service\AdExchangeBuyer\TargetingValue
     {
     }
 }

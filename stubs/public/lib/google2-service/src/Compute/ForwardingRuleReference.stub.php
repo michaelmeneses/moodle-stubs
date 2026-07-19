@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ForwardingRuleReference extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $forwardingRule;
-    /**
-     * @param string $forwardingRule
-     */
-    public function setForwardingRule($forwardingRule)
+namespace Google\Service\Compute {
+    class ForwardingRuleReference extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $forwardingRule;
+        /**
+         * @param string $forwardingRule
+         */
+        public function setForwardingRule($forwardingRule)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getForwardingRule()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\ForwardingRuleReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getForwardingRule()
+    class Google_Service_Compute_ForwardingRuleReference extends \Google\Service\Compute\ForwardingRuleReference
     {
     }
 }

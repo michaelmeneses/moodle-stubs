@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storagetransfer;
-
-class ErrorLogEntry extends \Google\Collection
-{
-    protected $collection_key = 'errorDetails';
-    /**
-     * Optional. A list of messages that carry the error details.
-     *
-     * @var string[]
-     */
-    public $errorDetails;
-    /**
-     * Output only. A URL that refers to the target (a data source, a data sink,
-     * or an object) with which the error is associated.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * Optional. A list of messages that carry the error details.
-     *
-     * @param string[] $errorDetails
-     */
-    public function setErrorDetails($errorDetails)
+namespace Google\Service\Storagetransfer {
+    class ErrorLogEntry extends \Google\Collection
     {
+        protected $collection_key = 'errorDetails';
+        /**
+         * Optional. A list of messages that carry the error details.
+         *
+         * @var string[]
+         */
+        public $errorDetails;
+        /**
+         * Output only. A URL that refers to the target (a data source, a data sink,
+         * or an object) with which the error is associated.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * Optional. A list of messages that carry the error details.
+         *
+         * @param string[] $errorDetails
+         */
+        public function setErrorDetails($errorDetails)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getErrorDetails()
+        {
+        }
+        /**
+         * Output only. A URL that refers to the target (a data source, a data sink,
+         * or an object) with which the error is associated.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Storagetransfer\ErrorLogEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorDetails()
-    {
-    }
-    /**
-     * Output only. A URL that refers to the target (a data source, a data sink,
-     * or an object) with which the error is associated.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_Storagetransfer_ErrorLogEntry extends \Google\Service\Storagetransfer\ErrorLogEntry
     {
     }
 }

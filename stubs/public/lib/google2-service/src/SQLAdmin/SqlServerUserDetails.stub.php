@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class SqlServerUserDetails extends \Google\Collection
-{
-    protected $collection_key = 'serverRoles';
-    /**
-     * If the user has been disabled
-     *
-     * @var bool
-     */
-    public $disabled;
-    /**
-     * The server roles for this user
-     *
-     * @var string[]
-     */
-    public $serverRoles;
-    /**
-     * If the user has been disabled
-     *
-     * @param bool $disabled
-     */
-    public function setDisabled($disabled)
+namespace Google\Service\SQLAdmin {
+    class SqlServerUserDetails extends \Google\Collection
     {
+        protected $collection_key = 'serverRoles';
+        /**
+         * If the user has been disabled
+         *
+         * @var bool
+         */
+        public $disabled;
+        /**
+         * The server roles for this user
+         *
+         * @var string[]
+         */
+        public $serverRoles;
+        /**
+         * If the user has been disabled
+         *
+         * @param bool $disabled
+         */
+        public function setDisabled($disabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisabled()
+        {
+        }
+        /**
+         * The server roles for this user
+         *
+         * @param string[] $serverRoles
+         */
+        public function setServerRoles($serverRoles)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getServerRoles()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\SQLAdmin\SqlServerUserDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisabled()
-    {
-    }
-    /**
-     * The server roles for this user
-     *
-     * @param string[] $serverRoles
-     */
-    public function setServerRoles($serverRoles)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getServerRoles()
+    class Google_Service_SQLAdmin_SqlServerUserDetails extends \Google\Service\SQLAdmin\SqlServerUserDetails
     {
     }
 }

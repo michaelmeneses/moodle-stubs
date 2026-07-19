@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AreaInsights;
-
-class ComputeInsightsResponse extends \Google\Collection
-{
-    protected $collection_key = 'placeInsights';
-    /**
-     * Result for Insights.INSIGHT_COUNT.
-     *
-     * @var string
-     */
-    public $count;
-    protected $placeInsightsType = PlaceInsight::class;
-    protected $placeInsightsDataType = 'array';
-    /**
-     * Result for Insights.INSIGHT_COUNT.
-     *
-     * @param string $count
-     */
-    public function setCount($count)
+namespace Google\Service\AreaInsights {
+    class ComputeInsightsResponse extends \Google\Collection
     {
+        protected $collection_key = 'placeInsights';
+        /**
+         * Result for Insights.INSIGHT_COUNT.
+         *
+         * @var string
+         */
+        public $count;
+        protected $placeInsightsType = PlaceInsight::class;
+        protected $placeInsightsDataType = 'array';
+        /**
+         * Result for Insights.INSIGHT_COUNT.
+         *
+         * @param string $count
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCount()
+        {
+        }
+        /**
+         * Result for Insights.INSIGHT_PLACES.
+         *
+         * @param PlaceInsight[] $placeInsights
+         */
+        public function setPlaceInsights($placeInsights)
+        {
+        }
+        /**
+         * @return PlaceInsight[]
+         */
+        public function getPlaceInsights()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AreaInsights\ComputeInsightsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCount()
-    {
-    }
-    /**
-     * Result for Insights.INSIGHT_PLACES.
-     *
-     * @param PlaceInsight[] $placeInsights
-     */
-    public function setPlaceInsights($placeInsights)
-    {
-    }
-    /**
-     * @return PlaceInsight[]
-     */
-    public function getPlaceInsights()
+    class Google_Service_AreaInsights_ComputeInsightsResponse extends \Google\Service\AreaInsights\ComputeInsightsResponse
     {
     }
 }

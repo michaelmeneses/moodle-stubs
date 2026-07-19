@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedMeetMetadata extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $meetingCode;
-    /**
-     * @var string
-     */
-    public $meetingType;
-    /**
-     * @var string
-     */
-    public $meetingUrl;
-    /**
-     * @param string
-     */
-    public function setMeetingCode($meetingCode)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedMeetMetadata extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $meetingCode;
+        /**
+         * @var string
+         */
+        public $meetingType;
+        /**
+         * @var string
+         */
+        public $meetingUrl;
+        /**
+         * @param string
+         */
+        public function setMeetingCode($meetingCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMeetingCode()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMeetingType($meetingType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMeetingType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMeetingUrl($meetingUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMeetingUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedMeetMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMeetingCode()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMeetingType($meetingType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMeetingType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMeetingUrl($meetingUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMeetingUrl()
+    class Google_Service_CloudSearch_AppsDynamiteSharedMeetMetadata extends \Google\Service\CloudSearch\AppsDynamiteSharedMeetMetadata
     {
     }
 }

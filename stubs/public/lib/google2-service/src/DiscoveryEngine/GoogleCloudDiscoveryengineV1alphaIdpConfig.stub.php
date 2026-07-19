@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaIdpConfig extends \Google\Model
-{
-    /**
-     * Default value. ACL search not enabled.
-     */
-    public const IDP_TYPE_IDP_TYPE_UNSPECIFIED = 'IDP_TYPE_UNSPECIFIED';
-    /**
-     * Google 1P provider.
-     */
-    public const IDP_TYPE_GSUITE = 'GSUITE';
-    /**
-     * Third party provider.
-     */
-    public const IDP_TYPE_THIRD_PARTY = 'THIRD_PARTY';
-    protected $externalIdpConfigType = GoogleCloudDiscoveryengineV1alphaIdpConfigExternalIdpConfig::class;
-    protected $externalIdpConfigDataType = '';
-    /**
-     * Identity provider type configured.
-     *
-     * @var string
-     */
-    public $idpType;
-    /**
-     * External Identity provider config.
-     *
-     * @param GoogleCloudDiscoveryengineV1alphaIdpConfigExternalIdpConfig $externalIdpConfig
-     */
-    public function setExternalIdpConfig(GoogleCloudDiscoveryengineV1alphaIdpConfigExternalIdpConfig $externalIdpConfig)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaIdpConfig extends \Google\Model
     {
+        /**
+         * Default value. ACL search not enabled.
+         */
+        public const IDP_TYPE_IDP_TYPE_UNSPECIFIED = 'IDP_TYPE_UNSPECIFIED';
+        /**
+         * Google 1P provider.
+         */
+        public const IDP_TYPE_GSUITE = 'GSUITE';
+        /**
+         * Third party provider.
+         */
+        public const IDP_TYPE_THIRD_PARTY = 'THIRD_PARTY';
+        protected $externalIdpConfigType = GoogleCloudDiscoveryengineV1alphaIdpConfigExternalIdpConfig::class;
+        protected $externalIdpConfigDataType = '';
+        /**
+         * Identity provider type configured.
+         *
+         * @var string
+         */
+        public $idpType;
+        /**
+         * External Identity provider config.
+         *
+         * @param GoogleCloudDiscoveryengineV1alphaIdpConfigExternalIdpConfig $externalIdpConfig
+         */
+        public function setExternalIdpConfig(GoogleCloudDiscoveryengineV1alphaIdpConfigExternalIdpConfig $externalIdpConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaIdpConfigExternalIdpConfig
+         */
+        public function getExternalIdpConfig()
+        {
+        }
+        /**
+         * Identity provider type configured.
+         *
+         * Accepted values: IDP_TYPE_UNSPECIFIED, GSUITE, THIRD_PARTY
+         *
+         * @param self::IDP_TYPE_* $idpType
+         */
+        public function setIdpType($idpType)
+        {
+        }
+        /**
+         * @return self::IDP_TYPE_*
+         */
+        public function getIdpType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1alphaIdpConfigExternalIdpConfig
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaIdpConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExternalIdpConfig()
-    {
-    }
-    /**
-     * Identity provider type configured.
-     *
-     * Accepted values: IDP_TYPE_UNSPECIFIED, GSUITE, THIRD_PARTY
-     *
-     * @param self::IDP_TYPE_* $idpType
-     */
-    public function setIdpType($idpType)
-    {
-    }
-    /**
-     * @return self::IDP_TYPE_*
-     */
-    public function getIdpType()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaIdpConfig extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaIdpConfig
     {
     }
 }

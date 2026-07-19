@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1BatchCreateFeaturesResponse extends \Google\Collection
-{
-    protected $collection_key = 'features';
-    protected $featuresType = GoogleCloudAiplatformV1Feature::class;
-    protected $featuresDataType = 'array';
-    /**
-     * The Features created.
-     *
-     * @param GoogleCloudAiplatformV1Feature[] $features
-     */
-    public function setFeatures($features)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1BatchCreateFeaturesResponse extends \Google\Collection
     {
+        protected $collection_key = 'features';
+        protected $featuresType = GoogleCloudAiplatformV1Feature::class;
+        protected $featuresDataType = 'array';
+        /**
+         * The Features created.
+         *
+         * @param GoogleCloudAiplatformV1Feature[] $features
+         */
+        public function setFeatures($features)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Feature[]
+         */
+        public function getFeatures()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1Feature[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchCreateFeaturesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFeatures()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1BatchCreateFeaturesResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchCreateFeaturesResponse
     {
     }
 }

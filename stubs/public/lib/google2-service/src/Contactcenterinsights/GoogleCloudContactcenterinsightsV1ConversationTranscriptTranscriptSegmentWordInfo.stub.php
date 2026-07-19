@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1ConversationTranscriptTranscriptSegmentWordInfo extends \Google\Model
-{
-    /**
-     * A confidence estimate between 0.0 and 1.0 of the fidelity of this word. A
-     * default value of 0.0 indicates that the value is unset.
-     *
-     * @var float
-     */
-    public $confidence;
-    /**
-     * Time offset of the end of this word relative to the beginning of the total
-     * conversation.
-     *
-     * @var string
-     */
-    public $endOffset;
-    /**
-     * Time offset of the start of this word relative to the beginning of the
-     * total conversation.
-     *
-     * @var string
-     */
-    public $startOffset;
-    /**
-     * The word itself. Includes punctuation marks that surround the word.
-     *
-     * @var string
-     */
-    public $word;
-    /**
-     * A confidence estimate between 0.0 and 1.0 of the fidelity of this word. A
-     * default value of 0.0 indicates that the value is unset.
-     *
-     * @param float $confidence
-     */
-    public function setConfidence($confidence)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1ConversationTranscriptTranscriptSegmentWordInfo extends \Google\Model
     {
+        /**
+         * A confidence estimate between 0.0 and 1.0 of the fidelity of this word. A
+         * default value of 0.0 indicates that the value is unset.
+         *
+         * @var float
+         */
+        public $confidence;
+        /**
+         * Time offset of the end of this word relative to the beginning of the total
+         * conversation.
+         *
+         * @var string
+         */
+        public $endOffset;
+        /**
+         * Time offset of the start of this word relative to the beginning of the
+         * total conversation.
+         *
+         * @var string
+         */
+        public $startOffset;
+        /**
+         * The word itself. Includes punctuation marks that surround the word.
+         *
+         * @var string
+         */
+        public $word;
+        /**
+         * A confidence estimate between 0.0 and 1.0 of the fidelity of this word. A
+         * default value of 0.0 indicates that the value is unset.
+         *
+         * @param float $confidence
+         */
+        public function setConfidence($confidence)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidence()
+        {
+        }
+        /**
+         * Time offset of the end of this word relative to the beginning of the total
+         * conversation.
+         *
+         * @param string $endOffset
+         */
+        public function setEndOffset($endOffset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndOffset()
+        {
+        }
+        /**
+         * Time offset of the start of this word relative to the beginning of the
+         * total conversation.
+         *
+         * @param string $startOffset
+         */
+        public function setStartOffset($startOffset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartOffset()
+        {
+        }
+        /**
+         * The word itself. Includes punctuation marks that surround the word.
+         *
+         * @param string $word
+         */
+        public function setWord($word)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWord()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1ConversationTranscriptTranscriptSegmentWordInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfidence()
-    {
-    }
-    /**
-     * Time offset of the end of this word relative to the beginning of the total
-     * conversation.
-     *
-     * @param string $endOffset
-     */
-    public function setEndOffset($endOffset)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndOffset()
-    {
-    }
-    /**
-     * Time offset of the start of this word relative to the beginning of the
-     * total conversation.
-     *
-     * @param string $startOffset
-     */
-    public function setStartOffset($startOffset)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartOffset()
-    {
-    }
-    /**
-     * The word itself. Includes punctuation marks that surround the word.
-     *
-     * @param string $word
-     */
-    public function setWord($word)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWord()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1ConversationTranscriptTranscriptSegmentWordInfo extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1ConversationTranscriptTranscriptSegmentWordInfo
     {
     }
 }

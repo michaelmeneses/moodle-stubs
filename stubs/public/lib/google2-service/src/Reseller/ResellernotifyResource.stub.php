@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Reseller;
-
-class ResellernotifyResource extends \Google\Model
-{
-    /**
-     * Topic name of the PubSub
-     *
-     * @var string
-     */
-    public $topicName;
-    /**
-     * Topic name of the PubSub
-     *
-     * @param string $topicName
-     */
-    public function setTopicName($topicName)
+namespace Google\Service\Reseller {
+    class ResellernotifyResource extends \Google\Model
     {
+        /**
+         * Topic name of the PubSub
+         *
+         * @var string
+         */
+        public $topicName;
+        /**
+         * Topic name of the PubSub
+         *
+         * @param string $topicName
+         */
+        public function setTopicName($topicName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTopicName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Reseller\ResellernotifyResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTopicName()
+    class Google_Service_Reseller_ResellernotifyResource extends \Google\Service\Reseller\ResellernotifyResource
     {
     }
 }

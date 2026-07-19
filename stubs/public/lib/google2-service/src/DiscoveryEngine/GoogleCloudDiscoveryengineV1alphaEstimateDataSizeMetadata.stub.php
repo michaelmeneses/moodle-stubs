@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaEstimateDataSizeMetadata extends \Google\Model
-{
-    /**
-     * Operation create time.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Operation create time.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaEstimateDataSizeMetadata extends \Google\Model
     {
+        /**
+         * Operation create time.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Operation create time.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaEstimateDataSizeMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaEstimateDataSizeMetadata extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaEstimateDataSizeMetadata
     {
     }
 }

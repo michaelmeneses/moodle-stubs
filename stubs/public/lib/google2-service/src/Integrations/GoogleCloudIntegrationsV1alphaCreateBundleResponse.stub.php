@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaCreateBundleResponse extends \Google\Model
-{
-    protected $configType = GoogleCloudIntegrationsV1alphaIntegrationBundleConfig::class;
-    protected $configDataType = '';
-    public $config;
-    /**
-     * @var string
-     */
-    public $triggerId;
-    /**
-     * @param GoogleCloudIntegrationsV1alphaIntegrationBundleConfig
-     */
-    public function setConfig(GoogleCloudIntegrationsV1alphaIntegrationBundleConfig $config)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaCreateBundleResponse extends \Google\Model
     {
+        protected $configType = GoogleCloudIntegrationsV1alphaIntegrationBundleConfig::class;
+        protected $configDataType = '';
+        public $config;
+        /**
+         * @var string
+         */
+        public $triggerId;
+        /**
+         * @param GoogleCloudIntegrationsV1alphaIntegrationBundleConfig
+         */
+        public function setConfig(GoogleCloudIntegrationsV1alphaIntegrationBundleConfig $config)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaIntegrationBundleConfig
+         */
+        public function getConfig()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTriggerId($triggerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTriggerId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudIntegrationsV1alphaIntegrationBundleConfig
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaCreateBundleResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfig()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTriggerId($triggerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTriggerId()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaCreateBundleResponse extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaCreateBundleResponse
     {
     }
 }

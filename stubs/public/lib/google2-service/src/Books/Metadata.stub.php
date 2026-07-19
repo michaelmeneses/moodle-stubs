@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class Metadata extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = MetadataItems::class;
-    protected $itemsDataType = 'array';
-    /**
-     * Resource type.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * A list of offline dictionary metadata.
-     *
-     * @param MetadataItems[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\Books {
+    class Metadata extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = MetadataItems::class;
+        protected $itemsDataType = 'array';
+        /**
+         * Resource type.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * A list of offline dictionary metadata.
+         *
+         * @param MetadataItems[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return MetadataItems[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * Resource type.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MetadataItems[]
+     * Runtime class alias of \Google\Service\Books\Metadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
-    {
-    }
-    /**
-     * Resource type.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Books_Metadata extends \Google\Service\Books\Metadata
     {
     }
 }

@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class OrderreturnsPartialRefund extends \Google\Model
-{
-    protected $priceAmountType = Price::class;
-    protected $priceAmountDataType = '';
-    protected $taxAmountType = Price::class;
-    protected $taxAmountDataType = '';
-    /**
-     * @param Price
-     */
-    public function setPriceAmount(Price $priceAmount)
+namespace Google\Service\ShoppingContent {
+    class OrderreturnsPartialRefund extends \Google\Model
     {
+        protected $priceAmountType = Price::class;
+        protected $priceAmountDataType = '';
+        protected $taxAmountType = Price::class;
+        protected $taxAmountDataType = '';
+        /**
+         * @param Price
+         */
+        public function setPriceAmount(Price $priceAmount)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getPriceAmount()
+        {
+        }
+        /**
+         * @param Price
+         */
+        public function setTaxAmount(Price $taxAmount)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getTaxAmount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Price
+     * Runtime class alias of \Google\Service\ShoppingContent\OrderreturnsPartialRefund registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPriceAmount()
-    {
-    }
-    /**
-     * @param Price
-     */
-    public function setTaxAmount(Price $taxAmount)
-    {
-    }
-    /**
-     * @return Price
-     */
-    public function getTaxAmount()
+    class Google_Service_ShoppingContent_OrderreturnsPartialRefund extends \Google\Service\ShoppingContent\OrderreturnsPartialRefund
     {
     }
 }

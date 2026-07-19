@@ -21,107 +21,116 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vault;
-
-class GroupsCountResult extends \Google\Collection
-{
-    protected $collection_key = 'nonQueryableAccounts';
-    protected $accountCountErrorsType = AccountCountError::class;
-    protected $accountCountErrorsDataType = 'array';
-    protected $accountCountsType = AccountCount::class;
-    protected $accountCountsDataType = 'array';
-    /**
-     * Total number of accounts that can be queried and have more than zero
-     * messages.
-     *
-     * @var string
-     */
-    public $matchingAccountsCount;
-    /**
-     * When **DataScope** is **HELD_DATA**, these accounts in the request are not
-     * queried because they are not on hold. For other data scope, this field is
-     * not set.
-     *
-     * @var string[]
-     */
-    public $nonQueryableAccounts;
-    /**
-     * Total number of accounts involved in this count operation.
-     *
-     * @var string
-     */
-    public $queriedAccountsCount;
-    /**
-     * Error occurred when querying these accounts.
-     *
-     * @param AccountCountError[] $accountCountErrors
-     */
-    public function setAccountCountErrors($accountCountErrors)
+namespace Google\Service\Vault {
+    class GroupsCountResult extends \Google\Collection
     {
+        protected $collection_key = 'nonQueryableAccounts';
+        protected $accountCountErrorsType = AccountCountError::class;
+        protected $accountCountErrorsDataType = 'array';
+        protected $accountCountsType = AccountCount::class;
+        protected $accountCountsDataType = 'array';
+        /**
+         * Total number of accounts that can be queried and have more than zero
+         * messages.
+         *
+         * @var string
+         */
+        public $matchingAccountsCount;
+        /**
+         * When **DataScope** is **HELD_DATA**, these accounts in the request are not
+         * queried because they are not on hold. For other data scope, this field is
+         * not set.
+         *
+         * @var string[]
+         */
+        public $nonQueryableAccounts;
+        /**
+         * Total number of accounts involved in this count operation.
+         *
+         * @var string
+         */
+        public $queriedAccountsCount;
+        /**
+         * Error occurred when querying these accounts.
+         *
+         * @param AccountCountError[] $accountCountErrors
+         */
+        public function setAccountCountErrors($accountCountErrors)
+        {
+        }
+        /**
+         * @return AccountCountError[]
+         */
+        public function getAccountCountErrors()
+        {
+        }
+        /**
+         * Subtotal count per matching account that have more than zero messages.
+         *
+         * @param AccountCount[] $accountCounts
+         */
+        public function setAccountCounts($accountCounts)
+        {
+        }
+        /**
+         * @return AccountCount[]
+         */
+        public function getAccountCounts()
+        {
+        }
+        /**
+         * Total number of accounts that can be queried and have more than zero
+         * messages.
+         *
+         * @param string $matchingAccountsCount
+         */
+        public function setMatchingAccountsCount($matchingAccountsCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMatchingAccountsCount()
+        {
+        }
+        /**
+         * When **DataScope** is **HELD_DATA**, these accounts in the request are not
+         * queried because they are not on hold. For other data scope, this field is
+         * not set.
+         *
+         * @param string[] $nonQueryableAccounts
+         */
+        public function setNonQueryableAccounts($nonQueryableAccounts)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getNonQueryableAccounts()
+        {
+        }
+        /**
+         * Total number of accounts involved in this count operation.
+         *
+         * @param string $queriedAccountsCount
+         */
+        public function setQueriedAccountsCount($queriedAccountsCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQueriedAccountsCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AccountCountError[]
+     * Runtime class alias of \Google\Service\Vault\GroupsCountResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountCountErrors()
-    {
-    }
-    /**
-     * Subtotal count per matching account that have more than zero messages.
-     *
-     * @param AccountCount[] $accountCounts
-     */
-    public function setAccountCounts($accountCounts)
-    {
-    }
-    /**
-     * @return AccountCount[]
-     */
-    public function getAccountCounts()
-    {
-    }
-    /**
-     * Total number of accounts that can be queried and have more than zero
-     * messages.
-     *
-     * @param string $matchingAccountsCount
-     */
-    public function setMatchingAccountsCount($matchingAccountsCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMatchingAccountsCount()
-    {
-    }
-    /**
-     * When **DataScope** is **HELD_DATA**, these accounts in the request are not
-     * queried because they are not on hold. For other data scope, this field is
-     * not set.
-     *
-     * @param string[] $nonQueryableAccounts
-     */
-    public function setNonQueryableAccounts($nonQueryableAccounts)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getNonQueryableAccounts()
-    {
-    }
-    /**
-     * Total number of accounts involved in this count operation.
-     *
-     * @param string $queriedAccountsCount
-     */
-    public function setQueriedAccountsCount($queriedAccountsCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQueriedAccountsCount()
+    class Google_Service_Vault_GroupsCountResult extends \Google\Service\Vault\GroupsCountResult
     {
     }
 }

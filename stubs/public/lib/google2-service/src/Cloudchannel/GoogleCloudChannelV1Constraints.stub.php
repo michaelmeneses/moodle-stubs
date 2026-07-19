@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1Constraints extends \Google\Model
-{
-    protected $customerConstraintsType = GoogleCloudChannelV1CustomerConstraints::class;
-    protected $customerConstraintsDataType = '';
-    /**
-     * Represents constraints required to purchase the Offer for a customer.
-     *
-     * @param GoogleCloudChannelV1CustomerConstraints $customerConstraints
-     */
-    public function setCustomerConstraints(GoogleCloudChannelV1CustomerConstraints $customerConstraints)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1Constraints extends \Google\Model
     {
+        protected $customerConstraintsType = GoogleCloudChannelV1CustomerConstraints::class;
+        protected $customerConstraintsDataType = '';
+        /**
+         * Represents constraints required to purchase the Offer for a customer.
+         *
+         * @param GoogleCloudChannelV1CustomerConstraints $customerConstraints
+         */
+        public function setCustomerConstraints(GoogleCloudChannelV1CustomerConstraints $customerConstraints)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1CustomerConstraints
+         */
+        public function getCustomerConstraints()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudChannelV1CustomerConstraints
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1Constraints registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomerConstraints()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1Constraints extends \Google\Service\Cloudchannel\GoogleCloudChannelV1Constraints
     {
     }
 }

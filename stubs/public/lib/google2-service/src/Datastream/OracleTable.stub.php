@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class OracleTable extends \Google\Collection
-{
-    protected $collection_key = 'oracleColumns';
-    protected $oracleColumnsType = OracleColumn::class;
-    protected $oracleColumnsDataType = 'array';
-    /**
-     * Table name.
-     *
-     * @var string
-     */
-    public $table;
-    /**
-     * Oracle columns in the schema. When unspecified as part of include/exclude
-     * objects, includes/excludes everything.
-     *
-     * @param OracleColumn[] $oracleColumns
-     */
-    public function setOracleColumns($oracleColumns)
+namespace Google\Service\Datastream {
+    class OracleTable extends \Google\Collection
     {
+        protected $collection_key = 'oracleColumns';
+        protected $oracleColumnsType = OracleColumn::class;
+        protected $oracleColumnsDataType = 'array';
+        /**
+         * Table name.
+         *
+         * @var string
+         */
+        public $table;
+        /**
+         * Oracle columns in the schema. When unspecified as part of include/exclude
+         * objects, includes/excludes everything.
+         *
+         * @param OracleColumn[] $oracleColumns
+         */
+        public function setOracleColumns($oracleColumns)
+        {
+        }
+        /**
+         * @return OracleColumn[]
+         */
+        public function getOracleColumns()
+        {
+        }
+        /**
+         * Table name.
+         *
+         * @param string $table
+         */
+        public function setTable($table)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return OracleColumn[]
+     * Runtime class alias of \Google\Service\Datastream\OracleTable registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOracleColumns()
-    {
-    }
-    /**
-     * Table name.
-     *
-     * @param string $table
-     */
-    public function setTable($table)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTable()
+    class Google_Service_Datastream_OracleTable extends \Google\Service\Datastream\OracleTable
     {
     }
 }

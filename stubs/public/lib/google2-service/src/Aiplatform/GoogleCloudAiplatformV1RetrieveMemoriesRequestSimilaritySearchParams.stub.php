@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RetrieveMemoriesRequestSimilaritySearchParams extends \Google\Model
-{
-    /**
-     * Required. Query to use for similarity search retrieval. If provided, then
-     * the parent ReasoningEngine must have
-     * ReasoningEngineContextSpec.MemoryBankConfig.SimilaritySearchConfig set.
-     *
-     * @var string
-     */
-    public $searchQuery;
-    /**
-     * Optional. The maximum number of memories to return. The service may return
-     * fewer than this value. If unspecified, at most 3 memories will be returned.
-     * The maximum value is 100; values above 100 will be coerced to 100.
-     *
-     * @var int
-     */
-    public $topK;
-    /**
-     * Required. Query to use for similarity search retrieval. If provided, then
-     * the parent ReasoningEngine must have
-     * ReasoningEngineContextSpec.MemoryBankConfig.SimilaritySearchConfig set.
-     *
-     * @param string $searchQuery
-     */
-    public function setSearchQuery($searchQuery)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RetrieveMemoriesRequestSimilaritySearchParams extends \Google\Model
     {
+        /**
+         * Required. Query to use for similarity search retrieval. If provided, then
+         * the parent ReasoningEngine must have
+         * ReasoningEngineContextSpec.MemoryBankConfig.SimilaritySearchConfig set.
+         *
+         * @var string
+         */
+        public $searchQuery;
+        /**
+         * Optional. The maximum number of memories to return. The service may return
+         * fewer than this value. If unspecified, at most 3 memories will be returned.
+         * The maximum value is 100; values above 100 will be coerced to 100.
+         *
+         * @var int
+         */
+        public $topK;
+        /**
+         * Required. Query to use for similarity search retrieval. If provided, then
+         * the parent ReasoningEngine must have
+         * ReasoningEngineContextSpec.MemoryBankConfig.SimilaritySearchConfig set.
+         *
+         * @param string $searchQuery
+         */
+        public function setSearchQuery($searchQuery)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSearchQuery()
+        {
+        }
+        /**
+         * Optional. The maximum number of memories to return. The service may return
+         * fewer than this value. If unspecified, at most 3 memories will be returned.
+         * The maximum value is 100; values above 100 will be coerced to 100.
+         *
+         * @param int $topK
+         */
+        public function setTopK($topK)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTopK()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RetrieveMemoriesRequestSimilaritySearchParams registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSearchQuery()
-    {
-    }
-    /**
-     * Optional. The maximum number of memories to return. The service may return
-     * fewer than this value. If unspecified, at most 3 memories will be returned.
-     * The maximum value is 100; values above 100 will be coerced to 100.
-     *
-     * @param int $topK
-     */
-    public function setTopK($topK)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTopK()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RetrieveMemoriesRequestSimilaritySearchParams extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RetrieveMemoriesRequestSimilaritySearchParams
     {
     }
 }

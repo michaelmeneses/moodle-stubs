@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Logging;
-
-class LogErrorGroup extends \Google\Model
-{
-    /**
-     * The id is a unique identifier for a particular error group; it is the last
-     * part of the error group resource name:
-     * /project/[PROJECT_ID]/errors/[ERROR_GROUP_ID]. Example: COShysOX0r_51QE.
-     * The id is derived from key parts of the error-log content and is treated as
-     * Service Data. For information about how Service Data is handled, see Google
-     * Cloud Privacy Notice (https://cloud.google.com/terms/cloud-privacy-notice).
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The id is a unique identifier for a particular error group; it is the last
-     * part of the error group resource name:
-     * /project/[PROJECT_ID]/errors/[ERROR_GROUP_ID]. Example: COShysOX0r_51QE.
-     * The id is derived from key parts of the error-log content and is treated as
-     * Service Data. For information about how Service Data is handled, see Google
-     * Cloud Privacy Notice (https://cloud.google.com/terms/cloud-privacy-notice).
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\Logging {
+    class LogErrorGroup extends \Google\Model
     {
+        /**
+         * The id is a unique identifier for a particular error group; it is the last
+         * part of the error group resource name:
+         * /project/[PROJECT_ID]/errors/[ERROR_GROUP_ID]. Example: COShysOX0r_51QE.
+         * The id is derived from key parts of the error-log content and is treated as
+         * Service Data. For information about how Service Data is handled, see Google
+         * Cloud Privacy Notice (https://cloud.google.com/terms/cloud-privacy-notice).
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The id is a unique identifier for a particular error group; it is the last
+         * part of the error group resource name:
+         * /project/[PROJECT_ID]/errors/[ERROR_GROUP_ID]. Example: COShysOX0r_51QE.
+         * The id is derived from key parts of the error-log content and is treated as
+         * Service Data. For information about how Service Data is handled, see Google
+         * Cloud Privacy Notice (https://cloud.google.com/terms/cloud-privacy-notice).
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Logging\LogErrorGroup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
+    class Google_Service_Logging_LogErrorGroup extends \Google\Service\Logging\LogErrorGroup
     {
     }
 }

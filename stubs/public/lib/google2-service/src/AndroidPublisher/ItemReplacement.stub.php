@@ -21,121 +21,130 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class ItemReplacement extends \Google\Model
-{
-    /**
-     * Unspecified replacement mode.
-     */
-    public const REPLACEMENT_MODE_REPLACEMENT_MODE_UNSPECIFIED = 'REPLACEMENT_MODE_UNSPECIFIED';
-    /**
-     * The new plan will be prorated and credited from the old plan.
-     */
-    public const REPLACEMENT_MODE_WITH_TIME_PRORATION = 'WITH_TIME_PRORATION';
-    /**
-     * The user will be charged a prorated price for the new plan.
-     */
-    public const REPLACEMENT_MODE_CHARGE_PRORATED_PRICE = 'CHARGE_PRORATED_PRICE';
-    /**
-     * The new plan will replace the old one without prorating the time.
-     */
-    public const REPLACEMENT_MODE_WITHOUT_PRORATION = 'WITHOUT_PRORATION';
-    /**
-     * The user will be charged the full price for the new plan.
-     */
-    public const REPLACEMENT_MODE_CHARGE_FULL_PRICE = 'CHARGE_FULL_PRICE';
-    /**
-     * The old plan will be cancelled and the new plan will be effective after the
-     * old one expires.
-     */
-    public const REPLACEMENT_MODE_DEFERRED = 'DEFERRED';
-    /**
-     * The plan will remain unchanged with this replacement.
-     */
-    public const REPLACEMENT_MODE_KEEP_EXISTING = 'KEEP_EXISTING';
-    /**
-     * The base plan ID of the subscription line item being replaced.
-     *
-     * @var string
-     */
-    public $basePlanId;
-    /**
-     * The offer ID of the subscription line item being replaced, if applicable.
-     *
-     * @var string
-     */
-    public $offerId;
-    /**
-     * The product ID of the subscription line item being replaced.
-     *
-     * @var string
-     */
-    public $productId;
-    /**
-     * The replacement mode applied during the purchase.
-     *
-     * @var string
-     */
-    public $replacementMode;
-    /**
-     * The base plan ID of the subscription line item being replaced.
-     *
-     * @param string $basePlanId
-     */
-    public function setBasePlanId($basePlanId)
+namespace Google\Service\AndroidPublisher {
+    class ItemReplacement extends \Google\Model
     {
+        /**
+         * Unspecified replacement mode.
+         */
+        public const REPLACEMENT_MODE_REPLACEMENT_MODE_UNSPECIFIED = 'REPLACEMENT_MODE_UNSPECIFIED';
+        /**
+         * The new plan will be prorated and credited from the old plan.
+         */
+        public const REPLACEMENT_MODE_WITH_TIME_PRORATION = 'WITH_TIME_PRORATION';
+        /**
+         * The user will be charged a prorated price for the new plan.
+         */
+        public const REPLACEMENT_MODE_CHARGE_PRORATED_PRICE = 'CHARGE_PRORATED_PRICE';
+        /**
+         * The new plan will replace the old one without prorating the time.
+         */
+        public const REPLACEMENT_MODE_WITHOUT_PRORATION = 'WITHOUT_PRORATION';
+        /**
+         * The user will be charged the full price for the new plan.
+         */
+        public const REPLACEMENT_MODE_CHARGE_FULL_PRICE = 'CHARGE_FULL_PRICE';
+        /**
+         * The old plan will be cancelled and the new plan will be effective after the
+         * old one expires.
+         */
+        public const REPLACEMENT_MODE_DEFERRED = 'DEFERRED';
+        /**
+         * The plan will remain unchanged with this replacement.
+         */
+        public const REPLACEMENT_MODE_KEEP_EXISTING = 'KEEP_EXISTING';
+        /**
+         * The base plan ID of the subscription line item being replaced.
+         *
+         * @var string
+         */
+        public $basePlanId;
+        /**
+         * The offer ID of the subscription line item being replaced, if applicable.
+         *
+         * @var string
+         */
+        public $offerId;
+        /**
+         * The product ID of the subscription line item being replaced.
+         *
+         * @var string
+         */
+        public $productId;
+        /**
+         * The replacement mode applied during the purchase.
+         *
+         * @var string
+         */
+        public $replacementMode;
+        /**
+         * The base plan ID of the subscription line item being replaced.
+         *
+         * @param string $basePlanId
+         */
+        public function setBasePlanId($basePlanId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBasePlanId()
+        {
+        }
+        /**
+         * The offer ID of the subscription line item being replaced, if applicable.
+         *
+         * @param string $offerId
+         */
+        public function setOfferId($offerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOfferId()
+        {
+        }
+        /**
+         * The product ID of the subscription line item being replaced.
+         *
+         * @param string $productId
+         */
+        public function setProductId($productId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductId()
+        {
+        }
+        /**
+         * The replacement mode applied during the purchase.
+         *
+         * Accepted values: REPLACEMENT_MODE_UNSPECIFIED, WITH_TIME_PRORATION,
+         * CHARGE_PRORATED_PRICE, WITHOUT_PRORATION, CHARGE_FULL_PRICE, DEFERRED,
+         * KEEP_EXISTING
+         *
+         * @param self::REPLACEMENT_MODE_* $replacementMode
+         */
+        public function setReplacementMode($replacementMode)
+        {
+        }
+        /**
+         * @return self::REPLACEMENT_MODE_*
+         */
+        public function getReplacementMode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\ItemReplacement registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBasePlanId()
-    {
-    }
-    /**
-     * The offer ID of the subscription line item being replaced, if applicable.
-     *
-     * @param string $offerId
-     */
-    public function setOfferId($offerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOfferId()
-    {
-    }
-    /**
-     * The product ID of the subscription line item being replaced.
-     *
-     * @param string $productId
-     */
-    public function setProductId($productId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductId()
-    {
-    }
-    /**
-     * The replacement mode applied during the purchase.
-     *
-     * Accepted values: REPLACEMENT_MODE_UNSPECIFIED, WITH_TIME_PRORATION,
-     * CHARGE_PRORATED_PRICE, WITHOUT_PRORATION, CHARGE_FULL_PRICE, DEFERRED,
-     * KEEP_EXISTING
-     *
-     * @param self::REPLACEMENT_MODE_* $replacementMode
-     */
-    public function setReplacementMode($replacementMode)
-    {
-    }
-    /**
-     * @return self::REPLACEMENT_MODE_*
-     */
-    public function getReplacementMode()
+    class Google_Service_AndroidPublisher_ItemReplacement extends \Google\Service\AndroidPublisher\ItemReplacement
     {
     }
 }

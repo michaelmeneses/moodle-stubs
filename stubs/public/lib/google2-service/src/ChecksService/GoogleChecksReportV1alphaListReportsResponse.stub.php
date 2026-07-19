@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChecksService;
-
-class GoogleChecksReportV1alphaListReportsResponse extends \Google\Collection
-{
-    protected $collection_key = 'reports';
-    /**
-     * A token which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $reportsType = GoogleChecksReportV1alphaReport::class;
-    protected $reportsDataType = 'array';
-    /**
-     * A token which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\ChecksService {
+    class GoogleChecksReportV1alphaListReportsResponse extends \Google\Collection
     {
+        protected $collection_key = 'reports';
+        /**
+         * A token which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $reportsType = GoogleChecksReportV1alphaReport::class;
+        protected $reportsDataType = 'array';
+        /**
+         * A token which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The reports for the specified app.
+         *
+         * @param GoogleChecksReportV1alphaReport[] $reports
+         */
+        public function setReports($reports)
+        {
+        }
+        /**
+         * @return GoogleChecksReportV1alphaReport[]
+         */
+        public function getReports()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChecksService\GoogleChecksReportV1alphaListReportsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The reports for the specified app.
-     *
-     * @param GoogleChecksReportV1alphaReport[] $reports
-     */
-    public function setReports($reports)
-    {
-    }
-    /**
-     * @return GoogleChecksReportV1alphaReport[]
-     */
-    public function getReports()
+    class Google_Service_ChecksService_GoogleChecksReportV1alphaListReportsResponse extends \Google\Service\ChecksService\GoogleChecksReportV1alphaListReportsResponse
     {
     }
 }

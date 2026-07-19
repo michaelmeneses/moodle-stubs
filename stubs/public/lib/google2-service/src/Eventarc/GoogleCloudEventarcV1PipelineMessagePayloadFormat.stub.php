@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Eventarc;
-
-class GoogleCloudEventarcV1PipelineMessagePayloadFormat extends \Google\Model
-{
-    protected $avroType = GoogleCloudEventarcV1PipelineMessagePayloadFormatAvroFormat::class;
-    protected $avroDataType = '';
-    protected $jsonType = GoogleCloudEventarcV1PipelineMessagePayloadFormatJsonFormat::class;
-    protected $jsonDataType = '';
-    protected $protobufType = GoogleCloudEventarcV1PipelineMessagePayloadFormatProtobufFormat::class;
-    protected $protobufDataType = '';
-    /**
-     * Optional. Avro format.
-     *
-     * @param GoogleCloudEventarcV1PipelineMessagePayloadFormatAvroFormat $avro
-     */
-    public function setAvro(GoogleCloudEventarcV1PipelineMessagePayloadFormatAvroFormat $avro)
+namespace Google\Service\Eventarc {
+    class GoogleCloudEventarcV1PipelineMessagePayloadFormat extends \Google\Model
     {
+        protected $avroType = GoogleCloudEventarcV1PipelineMessagePayloadFormatAvroFormat::class;
+        protected $avroDataType = '';
+        protected $jsonType = GoogleCloudEventarcV1PipelineMessagePayloadFormatJsonFormat::class;
+        protected $jsonDataType = '';
+        protected $protobufType = GoogleCloudEventarcV1PipelineMessagePayloadFormatProtobufFormat::class;
+        protected $protobufDataType = '';
+        /**
+         * Optional. Avro format.
+         *
+         * @param GoogleCloudEventarcV1PipelineMessagePayloadFormatAvroFormat $avro
+         */
+        public function setAvro(GoogleCloudEventarcV1PipelineMessagePayloadFormatAvroFormat $avro)
+        {
+        }
+        /**
+         * @return GoogleCloudEventarcV1PipelineMessagePayloadFormatAvroFormat
+         */
+        public function getAvro()
+        {
+        }
+        /**
+         * Optional. JSON format.
+         *
+         * @param GoogleCloudEventarcV1PipelineMessagePayloadFormatJsonFormat $json
+         */
+        public function setJson(GoogleCloudEventarcV1PipelineMessagePayloadFormatJsonFormat $json)
+        {
+        }
+        /**
+         * @return GoogleCloudEventarcV1PipelineMessagePayloadFormatJsonFormat
+         */
+        public function getJson()
+        {
+        }
+        /**
+         * Optional. Protobuf format.
+         *
+         * @param GoogleCloudEventarcV1PipelineMessagePayloadFormatProtobufFormat $protobuf
+         */
+        public function setProtobuf(GoogleCloudEventarcV1PipelineMessagePayloadFormatProtobufFormat $protobuf)
+        {
+        }
+        /**
+         * @return GoogleCloudEventarcV1PipelineMessagePayloadFormatProtobufFormat
+         */
+        public function getProtobuf()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudEventarcV1PipelineMessagePayloadFormatAvroFormat
+     * Runtime class alias of \Google\Service\Eventarc\GoogleCloudEventarcV1PipelineMessagePayloadFormat registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAvro()
-    {
-    }
-    /**
-     * Optional. JSON format.
-     *
-     * @param GoogleCloudEventarcV1PipelineMessagePayloadFormatJsonFormat $json
-     */
-    public function setJson(GoogleCloudEventarcV1PipelineMessagePayloadFormatJsonFormat $json)
-    {
-    }
-    /**
-     * @return GoogleCloudEventarcV1PipelineMessagePayloadFormatJsonFormat
-     */
-    public function getJson()
-    {
-    }
-    /**
-     * Optional. Protobuf format.
-     *
-     * @param GoogleCloudEventarcV1PipelineMessagePayloadFormatProtobufFormat $protobuf
-     */
-    public function setProtobuf(GoogleCloudEventarcV1PipelineMessagePayloadFormatProtobufFormat $protobuf)
-    {
-    }
-    /**
-     * @return GoogleCloudEventarcV1PipelineMessagePayloadFormatProtobufFormat
-     */
-    public function getProtobuf()
+    class Google_Service_Eventarc_GoogleCloudEventarcV1PipelineMessagePayloadFormat extends \Google\Service\Eventarc\GoogleCloudEventarcV1PipelineMessagePayloadFormat
     {
     }
 }

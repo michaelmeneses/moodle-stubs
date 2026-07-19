@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GameServices;
-
-class DeployedClusterState extends \Google\Collection
-{
-    protected $collection_key = 'fleetDetails';
-    /**
-     * @var string
-     */
-    public $cluster;
-    protected $fleetDetailsType = DeployedFleetDetails::class;
-    protected $fleetDetailsDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setCluster($cluster)
+namespace Google\Service\GameServices {
+    class DeployedClusterState extends \Google\Collection
     {
+        protected $collection_key = 'fleetDetails';
+        /**
+         * @var string
+         */
+        public $cluster;
+        protected $fleetDetailsType = DeployedFleetDetails::class;
+        protected $fleetDetailsDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setCluster($cluster)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCluster()
+        {
+        }
+        /**
+         * @param DeployedFleetDetails[]
+         */
+        public function setFleetDetails($fleetDetails)
+        {
+        }
+        /**
+         * @return DeployedFleetDetails[]
+         */
+        public function getFleetDetails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GameServices\DeployedClusterState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCluster()
-    {
-    }
-    /**
-     * @param DeployedFleetDetails[]
-     */
-    public function setFleetDetails($fleetDetails)
-    {
-    }
-    /**
-     * @return DeployedFleetDetails[]
-     */
-    public function getFleetDetails()
+    class Google_Service_GameServices_DeployedClusterState extends \Google\Service\GameServices\DeployedClusterState
     {
     }
 }

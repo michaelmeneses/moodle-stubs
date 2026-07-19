@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataprocMetastore;
-
-class HiveMetastoreConfig extends \Google\Model
-{
-    protected $auxiliaryVersionsType = AuxiliaryVersionConfig::class;
-    protected $auxiliaryVersionsDataType = 'map';
-    /**
-     * @var string[]
-     */
-    public $configOverrides;
-    /**
-     * @var string
-     */
-    public $endpointProtocol;
-    protected $kerberosConfigType = KerberosConfig::class;
-    protected $kerberosConfigDataType = '';
-    /**
-     * @var string
-     */
-    public $version;
-    /**
-     * @param AuxiliaryVersionConfig[]
-     */
-    public function setAuxiliaryVersions($auxiliaryVersions)
+namespace Google\Service\DataprocMetastore {
+    class HiveMetastoreConfig extends \Google\Model
     {
+        protected $auxiliaryVersionsType = AuxiliaryVersionConfig::class;
+        protected $auxiliaryVersionsDataType = 'map';
+        /**
+         * @var string[]
+         */
+        public $configOverrides;
+        /**
+         * @var string
+         */
+        public $endpointProtocol;
+        protected $kerberosConfigType = KerberosConfig::class;
+        protected $kerberosConfigDataType = '';
+        /**
+         * @var string
+         */
+        public $version;
+        /**
+         * @param AuxiliaryVersionConfig[]
+         */
+        public function setAuxiliaryVersions($auxiliaryVersions)
+        {
+        }
+        /**
+         * @return AuxiliaryVersionConfig[]
+         */
+        public function getAuxiliaryVersions()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setConfigOverrides($configOverrides)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getConfigOverrides()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEndpointProtocol($endpointProtocol)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndpointProtocol()
+        {
+        }
+        /**
+         * @param KerberosConfig
+         */
+        public function setKerberosConfig(KerberosConfig $kerberosConfig)
+        {
+        }
+        /**
+         * @return KerberosConfig
+         */
+        public function getKerberosConfig()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AuxiliaryVersionConfig[]
+     * Runtime class alias of \Google\Service\DataprocMetastore\HiveMetastoreConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuxiliaryVersions()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setConfigOverrides($configOverrides)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getConfigOverrides()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEndpointProtocol($endpointProtocol)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndpointProtocol()
-    {
-    }
-    /**
-     * @param KerberosConfig
-     */
-    public function setKerberosConfig(KerberosConfig $kerberosConfig)
-    {
-    }
-    /**
-     * @return KerberosConfig
-     */
-    public function getKerberosConfig()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_DataprocMetastore_HiveMetastoreConfig extends \Google\Service\DataprocMetastore\HiveMetastoreConfig
     {
     }
 }

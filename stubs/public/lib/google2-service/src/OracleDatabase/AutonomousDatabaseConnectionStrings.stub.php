@@ -21,133 +21,142 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class AutonomousDatabaseConnectionStrings extends \Google\Collection
-{
-    protected $collection_key = 'profiles';
-    protected $allConnectionStringsType = AllConnectionStrings::class;
-    protected $allConnectionStringsDataType = '';
-    /**
-     * Output only. The database service provides the least level of resources to
-     * each SQL statement, but supports the most number of concurrent SQL
-     * statements.
-     *
-     * @var string
-     */
-    public $dedicated;
-    /**
-     * Output only. The database service provides the highest level of resources
-     * to each SQL statement.
-     *
-     * @var string
-     */
-    public $high;
-    /**
-     * Output only. The database service provides the least level of resources to
-     * each SQL statement.
-     *
-     * @var string
-     */
-    public $low;
-    /**
-     * Output only. The database service provides a lower level of resources to
-     * each SQL statement.
-     *
-     * @var string
-     */
-    public $medium;
-    protected $profilesType = DatabaseConnectionStringProfile::class;
-    protected $profilesDataType = 'array';
-    /**
-     * Output only. Returns all connection strings that can be used to connect to
-     * the Autonomous Database.
-     *
-     * @param AllConnectionStrings $allConnectionStrings
-     */
-    public function setAllConnectionStrings(AllConnectionStrings $allConnectionStrings)
+namespace Google\Service\OracleDatabase {
+    class AutonomousDatabaseConnectionStrings extends \Google\Collection
     {
+        protected $collection_key = 'profiles';
+        protected $allConnectionStringsType = AllConnectionStrings::class;
+        protected $allConnectionStringsDataType = '';
+        /**
+         * Output only. The database service provides the least level of resources to
+         * each SQL statement, but supports the most number of concurrent SQL
+         * statements.
+         *
+         * @var string
+         */
+        public $dedicated;
+        /**
+         * Output only. The database service provides the highest level of resources
+         * to each SQL statement.
+         *
+         * @var string
+         */
+        public $high;
+        /**
+         * Output only. The database service provides the least level of resources to
+         * each SQL statement.
+         *
+         * @var string
+         */
+        public $low;
+        /**
+         * Output only. The database service provides a lower level of resources to
+         * each SQL statement.
+         *
+         * @var string
+         */
+        public $medium;
+        protected $profilesType = DatabaseConnectionStringProfile::class;
+        protected $profilesDataType = 'array';
+        /**
+         * Output only. Returns all connection strings that can be used to connect to
+         * the Autonomous Database.
+         *
+         * @param AllConnectionStrings $allConnectionStrings
+         */
+        public function setAllConnectionStrings(AllConnectionStrings $allConnectionStrings)
+        {
+        }
+        /**
+         * @return AllConnectionStrings
+         */
+        public function getAllConnectionStrings()
+        {
+        }
+        /**
+         * Output only. The database service provides the least level of resources to
+         * each SQL statement, but supports the most number of concurrent SQL
+         * statements.
+         *
+         * @param string $dedicated
+         */
+        public function setDedicated($dedicated)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDedicated()
+        {
+        }
+        /**
+         * Output only. The database service provides the highest level of resources
+         * to each SQL statement.
+         *
+         * @param string $high
+         */
+        public function setHigh($high)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHigh()
+        {
+        }
+        /**
+         * Output only. The database service provides the least level of resources to
+         * each SQL statement.
+         *
+         * @param string $low
+         */
+        public function setLow($low)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLow()
+        {
+        }
+        /**
+         * Output only. The database service provides a lower level of resources to
+         * each SQL statement.
+         *
+         * @param string $medium
+         */
+        public function setMedium($medium)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMedium()
+        {
+        }
+        /**
+         * Output only. A list of connection string profiles to allow clients to
+         * group, filter, and select values based on the structured metadata.
+         *
+         * @param DatabaseConnectionStringProfile[] $profiles
+         */
+        public function setProfiles($profiles)
+        {
+        }
+        /**
+         * @return DatabaseConnectionStringProfile[]
+         */
+        public function getProfiles()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AllConnectionStrings
+     * Runtime class alias of \Google\Service\OracleDatabase\AutonomousDatabaseConnectionStrings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllConnectionStrings()
-    {
-    }
-    /**
-     * Output only. The database service provides the least level of resources to
-     * each SQL statement, but supports the most number of concurrent SQL
-     * statements.
-     *
-     * @param string $dedicated
-     */
-    public function setDedicated($dedicated)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDedicated()
-    {
-    }
-    /**
-     * Output only. The database service provides the highest level of resources
-     * to each SQL statement.
-     *
-     * @param string $high
-     */
-    public function setHigh($high)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHigh()
-    {
-    }
-    /**
-     * Output only. The database service provides the least level of resources to
-     * each SQL statement.
-     *
-     * @param string $low
-     */
-    public function setLow($low)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLow()
-    {
-    }
-    /**
-     * Output only. The database service provides a lower level of resources to
-     * each SQL statement.
-     *
-     * @param string $medium
-     */
-    public function setMedium($medium)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMedium()
-    {
-    }
-    /**
-     * Output only. A list of connection string profiles to allow clients to
-     * group, filter, and select values based on the structured metadata.
-     *
-     * @param DatabaseConnectionStringProfile[] $profiles
-     */
-    public function setProfiles($profiles)
-    {
-    }
-    /**
-     * @return DatabaseConnectionStringProfile[]
-     */
-    public function getProfiles()
+    class Google_Service_OracleDatabase_AutonomousDatabaseConnectionStrings extends \Google\Service\OracleDatabase\AutonomousDatabaseConnectionStrings
     {
     }
 }

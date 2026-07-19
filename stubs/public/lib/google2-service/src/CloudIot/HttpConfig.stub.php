@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIot;
-
-class HttpConfig extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $httpEnabledState;
-    /**
-     * @param string
-     */
-    public function setHttpEnabledState($httpEnabledState)
+namespace Google\Service\CloudIot {
+    class HttpConfig extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $httpEnabledState;
+        /**
+         * @param string
+         */
+        public function setHttpEnabledState($httpEnabledState)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHttpEnabledState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudIot\HttpConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHttpEnabledState()
+    class Google_Service_CloudIot_HttpConfig extends \Google\Service\CloudIot\HttpConfig
     {
     }
 }

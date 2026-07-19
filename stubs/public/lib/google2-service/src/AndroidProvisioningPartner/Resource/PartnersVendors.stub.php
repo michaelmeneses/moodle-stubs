@@ -21,32 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidProvisioningPartner\Resource;
-
-/**
- * The "vendors" collection of methods.
- * Typical usage is:
- *  <code>
- *   $androiddeviceprovisioningService = new Google\Service\AndroidProvisioningPartner(...);
- *   $vendors = $androiddeviceprovisioningService->partners_vendors;
- *  </code>
- */
-class PartnersVendors extends \Google\Service\Resource
-{
+namespace Google\Service\AndroidProvisioningPartner\Resource {
+    use Google\Service\AndroidProvisioningPartner\ListVendorsResponse;
     /**
-     * Lists the vendors of the partner. (vendors.listPartnersVendors)
-     *
-     * @param string $parent Required. The resource name in the format
-     * `partners/[PARTNER_ID]`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of results to be returned.
-     * @opt_param string pageToken A token identifying a page of results returned by
-     * the server.
-     * @return ListVendorsResponse
-     * @throws \Google\Service\Exception
+     * The "vendors" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $androiddeviceprovisioningService = new Google\Service\AndroidProvisioningPartner(...);
+     *   $vendors = $androiddeviceprovisioningService->partners_vendors;
+     *  </code>
      */
-    public function listPartnersVendors($parent, $optParams = [])
+    class PartnersVendors extends \Google\Service\Resource
+    {
+        /**
+         * Lists the vendors of the partner. (vendors.listPartnersVendors)
+         *
+         * @param string $parent Required. The resource name in the format
+         * `partners/[PARTNER_ID]`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of results to be returned.
+         * @opt_param string pageToken A token identifying a page of results returned by
+         * the server.
+         * @return ListVendorsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listPartnersVendors($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AndroidProvisioningPartner\Resource\PartnersVendors registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AndroidProvisioningPartner_Resource_PartnersVendors extends \Google\Service\AndroidProvisioningPartner\Resource\PartnersVendors
     {
     }
 }

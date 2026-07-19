@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class DiskResourceStatus extends \Google\Model
-{
-    protected $asyncPrimaryDiskType = DiskResourceStatusAsyncReplicationStatus::class;
-    protected $asyncPrimaryDiskDataType = '';
-    protected $asyncSecondaryDisksType = DiskResourceStatusAsyncReplicationStatus::class;
-    protected $asyncSecondaryDisksDataType = 'map';
-    /**
-     * @param DiskResourceStatusAsyncReplicationStatus $asyncPrimaryDisk
-     */
-    public function setAsyncPrimaryDisk(DiskResourceStatusAsyncReplicationStatus $asyncPrimaryDisk)
+namespace Google\Service\Compute {
+    class DiskResourceStatus extends \Google\Model
     {
+        protected $asyncPrimaryDiskType = DiskResourceStatusAsyncReplicationStatus::class;
+        protected $asyncPrimaryDiskDataType = '';
+        protected $asyncSecondaryDisksType = DiskResourceStatusAsyncReplicationStatus::class;
+        protected $asyncSecondaryDisksDataType = 'map';
+        /**
+         * @param DiskResourceStatusAsyncReplicationStatus $asyncPrimaryDisk
+         */
+        public function setAsyncPrimaryDisk(DiskResourceStatusAsyncReplicationStatus $asyncPrimaryDisk)
+        {
+        }
+        /**
+         * @return DiskResourceStatusAsyncReplicationStatus
+         */
+        public function getAsyncPrimaryDisk()
+        {
+        }
+        /**
+         * Key: disk, value: AsyncReplicationStatus message
+         *
+         * @param DiskResourceStatusAsyncReplicationStatus[] $asyncSecondaryDisks
+         */
+        public function setAsyncSecondaryDisks($asyncSecondaryDisks)
+        {
+        }
+        /**
+         * @return DiskResourceStatusAsyncReplicationStatus[]
+         */
+        public function getAsyncSecondaryDisks()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DiskResourceStatusAsyncReplicationStatus
+     * Runtime class alias of \Google\Service\Compute\DiskResourceStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAsyncPrimaryDisk()
-    {
-    }
-    /**
-     * Key: disk, value: AsyncReplicationStatus message
-     *
-     * @param DiskResourceStatusAsyncReplicationStatus[] $asyncSecondaryDisks
-     */
-    public function setAsyncSecondaryDisks($asyncSecondaryDisks)
-    {
-    }
-    /**
-     * @return DiskResourceStatusAsyncReplicationStatus[]
-     */
-    public function getAsyncSecondaryDisks()
+    class Google_Service_Compute_DiskResourceStatus extends \Google\Service\Compute\DiskResourceStatus
     {
     }
 }

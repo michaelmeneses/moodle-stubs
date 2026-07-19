@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class LayoutProperties extends \Google\Model
-{
-    /**
-     * The human-readable name of the layout.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The object ID of the master that this layout is based on.
-     *
-     * @var string
-     */
-    public $masterObjectId;
-    /**
-     * The name of the layout.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The human-readable name of the layout.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\Slides {
+    class LayoutProperties extends \Google\Model
     {
+        /**
+         * The human-readable name of the layout.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The object ID of the master that this layout is based on.
+         *
+         * @var string
+         */
+        public $masterObjectId;
+        /**
+         * The name of the layout.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The human-readable name of the layout.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The object ID of the master that this layout is based on.
+         *
+         * @param string $masterObjectId
+         */
+        public function setMasterObjectId($masterObjectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMasterObjectId()
+        {
+        }
+        /**
+         * The name of the layout.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Slides\LayoutProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The object ID of the master that this layout is based on.
-     *
-     * @param string $masterObjectId
-     */
-    public function setMasterObjectId($masterObjectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMasterObjectId()
-    {
-    }
-    /**
-     * The name of the layout.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Slides_LayoutProperties extends \Google\Service\Slides\LayoutProperties
     {
     }
 }

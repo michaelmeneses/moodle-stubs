@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataprocMetastore;
-
-class GoogleCloudMetastoreV1betaMultiRegionMetadata extends \Google\Collection
-{
-    protected $collection_key = 'constituentRegions';
-    /**
-     * @var string[]
-     */
-    public $constituentRegions;
-    /**
-     * @var string
-     */
-    public $continent;
-    /**
-     * @var string
-     */
-    public $witnessRegion;
-    /**
-     * @param string[]
-     */
-    public function setConstituentRegions($constituentRegions)
+namespace Google\Service\DataprocMetastore {
+    class GoogleCloudMetastoreV1betaMultiRegionMetadata extends \Google\Collection
     {
+        protected $collection_key = 'constituentRegions';
+        /**
+         * @var string[]
+         */
+        public $constituentRegions;
+        /**
+         * @var string
+         */
+        public $continent;
+        /**
+         * @var string
+         */
+        public $witnessRegion;
+        /**
+         * @param string[]
+         */
+        public function setConstituentRegions($constituentRegions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getConstituentRegions()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setContinent($continent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContinent()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setWitnessRegion($witnessRegion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWitnessRegion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DataprocMetastore\GoogleCloudMetastoreV1betaMultiRegionMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConstituentRegions()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setContinent($continent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContinent()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setWitnessRegion($witnessRegion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWitnessRegion()
+    class Google_Service_DataprocMetastore_GoogleCloudMetastoreV1betaMultiRegionMetadata extends \Google\Service\DataprocMetastore\GoogleCloudMetastoreV1betaMultiRegionMetadata
     {
     }
 }

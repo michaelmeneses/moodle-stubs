@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaPromptSpecTranslationSentenceFileInput extends \Google\Model
-{
-    protected $fileInputSourceType = GoogleCloudAiplatformV1SchemaPromptSpecTranslationFileInputSource::class;
-    protected $fileInputSourceDataType = '';
-    protected $gcsInputSourceType = GoogleCloudAiplatformV1SchemaPromptSpecTranslationGcsInputSource::class;
-    protected $gcsInputSourceDataType = '';
-    /**
-     * Inlined file source.
-     *
-     * @param GoogleCloudAiplatformV1SchemaPromptSpecTranslationFileInputSource $fileInputSource
-     */
-    public function setFileInputSource(GoogleCloudAiplatformV1SchemaPromptSpecTranslationFileInputSource $fileInputSource)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaPromptSpecTranslationSentenceFileInput extends \Google\Model
     {
+        protected $fileInputSourceType = GoogleCloudAiplatformV1SchemaPromptSpecTranslationFileInputSource::class;
+        protected $fileInputSourceDataType = '';
+        protected $gcsInputSourceType = GoogleCloudAiplatformV1SchemaPromptSpecTranslationGcsInputSource::class;
+        protected $gcsInputSourceDataType = '';
+        /**
+         * Inlined file source.
+         *
+         * @param GoogleCloudAiplatformV1SchemaPromptSpecTranslationFileInputSource $fileInputSource
+         */
+        public function setFileInputSource(GoogleCloudAiplatformV1SchemaPromptSpecTranslationFileInputSource $fileInputSource)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SchemaPromptSpecTranslationFileInputSource
+         */
+        public function getFileInputSource()
+        {
+        }
+        /**
+         * Cloud Storage file source.
+         *
+         * @param GoogleCloudAiplatformV1SchemaPromptSpecTranslationGcsInputSource $gcsInputSource
+         */
+        public function setGcsInputSource(GoogleCloudAiplatformV1SchemaPromptSpecTranslationGcsInputSource $gcsInputSource)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SchemaPromptSpecTranslationGcsInputSource
+         */
+        public function getGcsInputSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1SchemaPromptSpecTranslationFileInputSource
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPromptSpecTranslationSentenceFileInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFileInputSource()
-    {
-    }
-    /**
-     * Cloud Storage file source.
-     *
-     * @param GoogleCloudAiplatformV1SchemaPromptSpecTranslationGcsInputSource $gcsInputSource
-     */
-    public function setGcsInputSource(GoogleCloudAiplatformV1SchemaPromptSpecTranslationGcsInputSource $gcsInputSource)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1SchemaPromptSpecTranslationGcsInputSource
-     */
-    public function getGcsInputSource()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaPromptSpecTranslationSentenceFileInput extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPromptSpecTranslationSentenceFileInput
     {
     }
 }

@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class SecretStatus extends \Google\Model
-{
-    /**
-     * Unspecified
-     */
-    public const STATUS_STATUS_UNSPECIFIED = 'STATUS_UNSPECIFIED';
-    /**
-     * The status of the secret is unknown.
-     */
-    public const STATUS_UNKNOWN = 'UNKNOWN';
-    /**
-     * The secret is valid.
-     */
-    public const STATUS_VALID = 'VALID';
-    /**
-     * The secret is invalid.
-     */
-    public const STATUS_INVALID = 'INVALID';
-    /**
-     * Optional. Optional message about the status code.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * Optional. The status of the secret.
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * Optional. The time the secret status was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Optional. Optional message about the status code.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
+namespace Google\Service\ContainerAnalysis {
+    class SecretStatus extends \Google\Model
     {
+        /**
+         * Unspecified
+         */
+        public const STATUS_STATUS_UNSPECIFIED = 'STATUS_UNSPECIFIED';
+        /**
+         * The status of the secret is unknown.
+         */
+        public const STATUS_UNKNOWN = 'UNKNOWN';
+        /**
+         * The secret is valid.
+         */
+        public const STATUS_VALID = 'VALID';
+        /**
+         * The secret is invalid.
+         */
+        public const STATUS_INVALID = 'INVALID';
+        /**
+         * Optional. Optional message about the status code.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * Optional. The status of the secret.
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * Optional. The time the secret status was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Optional. Optional message about the status code.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * Optional. The status of the secret.
+         *
+         * Accepted values: STATUS_UNSPECIFIED, UNKNOWN, VALID, INVALID
+         *
+         * @param self::STATUS_* $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return self::STATUS_*
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * Optional. The time the secret status was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ContainerAnalysis\SecretStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMessage()
-    {
-    }
-    /**
-     * Optional. The status of the secret.
-     *
-     * Accepted values: STATUS_UNSPECIFIED, UNKNOWN, VALID, INVALID
-     *
-     * @param self::STATUS_* $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return self::STATUS_*
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * Optional. The time the secret status was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_ContainerAnalysis_SecretStatus extends \Google\Service\ContainerAnalysis\SecretStatus
     {
     }
 }

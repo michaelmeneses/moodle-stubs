@@ -21,120 +21,129 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class Response extends \Google\Model
-{
-    protected $createFooterType = CreateFooterResponse::class;
-    protected $createFooterDataType = '';
-    protected $createFootnoteType = CreateFootnoteResponse::class;
-    protected $createFootnoteDataType = '';
-    protected $createHeaderType = CreateHeaderResponse::class;
-    protected $createHeaderDataType = '';
-    protected $createNamedRangeType = CreateNamedRangeResponse::class;
-    protected $createNamedRangeDataType = '';
-    protected $insertInlineImageType = InsertInlineImageResponse::class;
-    protected $insertInlineImageDataType = '';
-    protected $insertInlineSheetsChartType = InsertInlineSheetsChartResponse::class;
-    protected $insertInlineSheetsChartDataType = '';
-    protected $replaceAllTextType = ReplaceAllTextResponse::class;
-    protected $replaceAllTextDataType = '';
-    /**
-     * The result of creating a footer.
-     *
-     * @param CreateFooterResponse $createFooter
-     */
-    public function setCreateFooter(CreateFooterResponse $createFooter)
+namespace Google\Service\Docs {
+    class Response extends \Google\Model
     {
+        protected $createFooterType = CreateFooterResponse::class;
+        protected $createFooterDataType = '';
+        protected $createFootnoteType = CreateFootnoteResponse::class;
+        protected $createFootnoteDataType = '';
+        protected $createHeaderType = CreateHeaderResponse::class;
+        protected $createHeaderDataType = '';
+        protected $createNamedRangeType = CreateNamedRangeResponse::class;
+        protected $createNamedRangeDataType = '';
+        protected $insertInlineImageType = InsertInlineImageResponse::class;
+        protected $insertInlineImageDataType = '';
+        protected $insertInlineSheetsChartType = InsertInlineSheetsChartResponse::class;
+        protected $insertInlineSheetsChartDataType = '';
+        protected $replaceAllTextType = ReplaceAllTextResponse::class;
+        protected $replaceAllTextDataType = '';
+        /**
+         * The result of creating a footer.
+         *
+         * @param CreateFooterResponse $createFooter
+         */
+        public function setCreateFooter(CreateFooterResponse $createFooter)
+        {
+        }
+        /**
+         * @return CreateFooterResponse
+         */
+        public function getCreateFooter()
+        {
+        }
+        /**
+         * The result of creating a footnote.
+         *
+         * @param CreateFootnoteResponse $createFootnote
+         */
+        public function setCreateFootnote(CreateFootnoteResponse $createFootnote)
+        {
+        }
+        /**
+         * @return CreateFootnoteResponse
+         */
+        public function getCreateFootnote()
+        {
+        }
+        /**
+         * The result of creating a header.
+         *
+         * @param CreateHeaderResponse $createHeader
+         */
+        public function setCreateHeader(CreateHeaderResponse $createHeader)
+        {
+        }
+        /**
+         * @return CreateHeaderResponse
+         */
+        public function getCreateHeader()
+        {
+        }
+        /**
+         * The result of creating a named range.
+         *
+         * @param CreateNamedRangeResponse $createNamedRange
+         */
+        public function setCreateNamedRange(CreateNamedRangeResponse $createNamedRange)
+        {
+        }
+        /**
+         * @return CreateNamedRangeResponse
+         */
+        public function getCreateNamedRange()
+        {
+        }
+        /**
+         * The result of inserting an inline image.
+         *
+         * @param InsertInlineImageResponse $insertInlineImage
+         */
+        public function setInsertInlineImage(InsertInlineImageResponse $insertInlineImage)
+        {
+        }
+        /**
+         * @return InsertInlineImageResponse
+         */
+        public function getInsertInlineImage()
+        {
+        }
+        /**
+         * The result of inserting an inline Google Sheets chart.
+         *
+         * @param InsertInlineSheetsChartResponse $insertInlineSheetsChart
+         */
+        public function setInsertInlineSheetsChart(InsertInlineSheetsChartResponse $insertInlineSheetsChart)
+        {
+        }
+        /**
+         * @return InsertInlineSheetsChartResponse
+         */
+        public function getInsertInlineSheetsChart()
+        {
+        }
+        /**
+         * The result of replacing text.
+         *
+         * @param ReplaceAllTextResponse $replaceAllText
+         */
+        public function setReplaceAllText(ReplaceAllTextResponse $replaceAllText)
+        {
+        }
+        /**
+         * @return ReplaceAllTextResponse
+         */
+        public function getReplaceAllText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CreateFooterResponse
+     * Runtime class alias of \Google\Service\Docs\Response registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateFooter()
-    {
-    }
-    /**
-     * The result of creating a footnote.
-     *
-     * @param CreateFootnoteResponse $createFootnote
-     */
-    public function setCreateFootnote(CreateFootnoteResponse $createFootnote)
-    {
-    }
-    /**
-     * @return CreateFootnoteResponse
-     */
-    public function getCreateFootnote()
-    {
-    }
-    /**
-     * The result of creating a header.
-     *
-     * @param CreateHeaderResponse $createHeader
-     */
-    public function setCreateHeader(CreateHeaderResponse $createHeader)
-    {
-    }
-    /**
-     * @return CreateHeaderResponse
-     */
-    public function getCreateHeader()
-    {
-    }
-    /**
-     * The result of creating a named range.
-     *
-     * @param CreateNamedRangeResponse $createNamedRange
-     */
-    public function setCreateNamedRange(CreateNamedRangeResponse $createNamedRange)
-    {
-    }
-    /**
-     * @return CreateNamedRangeResponse
-     */
-    public function getCreateNamedRange()
-    {
-    }
-    /**
-     * The result of inserting an inline image.
-     *
-     * @param InsertInlineImageResponse $insertInlineImage
-     */
-    public function setInsertInlineImage(InsertInlineImageResponse $insertInlineImage)
-    {
-    }
-    /**
-     * @return InsertInlineImageResponse
-     */
-    public function getInsertInlineImage()
-    {
-    }
-    /**
-     * The result of inserting an inline Google Sheets chart.
-     *
-     * @param InsertInlineSheetsChartResponse $insertInlineSheetsChart
-     */
-    public function setInsertInlineSheetsChart(InsertInlineSheetsChartResponse $insertInlineSheetsChart)
-    {
-    }
-    /**
-     * @return InsertInlineSheetsChartResponse
-     */
-    public function getInsertInlineSheetsChart()
-    {
-    }
-    /**
-     * The result of replacing text.
-     *
-     * @param ReplaceAllTextResponse $replaceAllText
-     */
-    public function setReplaceAllText(ReplaceAllTextResponse $replaceAllText)
-    {
-    }
-    /**
-     * @return ReplaceAllTextResponse
-     */
-    public function getReplaceAllText()
+    class Google_Service_Docs_Response extends \Google\Service\Docs\Response
     {
     }
 }

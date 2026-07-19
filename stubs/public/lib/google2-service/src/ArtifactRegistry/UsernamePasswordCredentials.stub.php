@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class UsernamePasswordCredentials extends \Google\Model
-{
-    /**
-     * The Secret Manager key version that holds the password to access the remote
-     * repository. Must be in the format of
-     * `projects/{project}/secrets/{secret}/versions/{version}`.
-     *
-     * @var string
-     */
-    public $passwordSecretVersion;
-    /**
-     * The username to access the remote repository.
-     *
-     * @var string
-     */
-    public $username;
-    /**
-     * The Secret Manager key version that holds the password to access the remote
-     * repository. Must be in the format of
-     * `projects/{project}/secrets/{secret}/versions/{version}`.
-     *
-     * @param string $passwordSecretVersion
-     */
-    public function setPasswordSecretVersion($passwordSecretVersion)
+namespace Google\Service\ArtifactRegistry {
+    class UsernamePasswordCredentials extends \Google\Model
     {
+        /**
+         * The Secret Manager key version that holds the password to access the remote
+         * repository. Must be in the format of
+         * `projects/{project}/secrets/{secret}/versions/{version}`.
+         *
+         * @var string
+         */
+        public $passwordSecretVersion;
+        /**
+         * The username to access the remote repository.
+         *
+         * @var string
+         */
+        public $username;
+        /**
+         * The Secret Manager key version that holds the password to access the remote
+         * repository. Must be in the format of
+         * `projects/{project}/secrets/{secret}/versions/{version}`.
+         *
+         * @param string $passwordSecretVersion
+         */
+        public function setPasswordSecretVersion($passwordSecretVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPasswordSecretVersion()
+        {
+        }
+        /**
+         * The username to access the remote repository.
+         *
+         * @param string $username
+         */
+        public function setUsername($username)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUsername()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ArtifactRegistry\UsernamePasswordCredentials registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPasswordSecretVersion()
-    {
-    }
-    /**
-     * The username to access the remote repository.
-     *
-     * @param string $username
-     */
-    public function setUsername($username)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUsername()
+    class Google_Service_ArtifactRegistry_UsernamePasswordCredentials extends \Google\Service\ArtifactRegistry\UsernamePasswordCredentials
     {
     }
 }

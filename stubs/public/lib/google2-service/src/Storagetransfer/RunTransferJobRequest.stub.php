@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storagetransfer;
-
-class RunTransferJobRequest extends \Google\Model
-{
-    /**
-     * Required. The ID of the Google Cloud project that owns the transfer job.
-     *
-     * @var string
-     */
-    public $projectId;
-    /**
-     * Required. The ID of the Google Cloud project that owns the transfer job.
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
+namespace Google\Service\Storagetransfer {
+    class RunTransferJobRequest extends \Google\Model
     {
+        /**
+         * Required. The ID of the Google Cloud project that owns the transfer job.
+         *
+         * @var string
+         */
+        public $projectId;
+        /**
+         * Required. The ID of the Google Cloud project that owns the transfer job.
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Storagetransfer\RunTransferJobRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProjectId()
+    class Google_Service_Storagetransfer_RunTransferJobRequest extends \Google\Service\Storagetransfer\RunTransferJobRequest
     {
     }
 }

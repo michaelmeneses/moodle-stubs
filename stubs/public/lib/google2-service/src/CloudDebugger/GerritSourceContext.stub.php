@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDebugger;
-
-class GerritSourceContext extends \Google\Model
-{
-    protected $aliasContextType = AliasContext::class;
-    protected $aliasContextDataType = '';
-    /**
-     * @var string
-     */
-    public $aliasName;
-    /**
-     * @var string
-     */
-    public $gerritProject;
-    /**
-     * @var string
-     */
-    public $hostUri;
-    /**
-     * @var string
-     */
-    public $revisionId;
-    /**
-     * @param AliasContext
-     */
-    public function setAliasContext(AliasContext $aliasContext)
+namespace Google\Service\CloudDebugger {
+    class GerritSourceContext extends \Google\Model
     {
+        protected $aliasContextType = AliasContext::class;
+        protected $aliasContextDataType = '';
+        /**
+         * @var string
+         */
+        public $aliasName;
+        /**
+         * @var string
+         */
+        public $gerritProject;
+        /**
+         * @var string
+         */
+        public $hostUri;
+        /**
+         * @var string
+         */
+        public $revisionId;
+        /**
+         * @param AliasContext
+         */
+        public function setAliasContext(AliasContext $aliasContext)
+        {
+        }
+        /**
+         * @return AliasContext
+         */
+        public function getAliasContext()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setAliasName($aliasName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAliasName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setGerritProject($gerritProject)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGerritProject()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setHostUri($hostUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHostUri()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRevisionId($revisionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRevisionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AliasContext
+     * Runtime class alias of \Google\Service\CloudDebugger\GerritSourceContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAliasContext()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setAliasName($aliasName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAliasName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setGerritProject($gerritProject)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGerritProject()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setHostUri($hostUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHostUri()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRevisionId($revisionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRevisionId()
+    class Google_Service_CloudDebugger_GerritSourceContext extends \Google\Service\CloudDebugger\GerritSourceContext
     {
     }
 }

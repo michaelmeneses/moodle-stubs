@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Iam;
-
-class SignBlobResponse extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $keyId;
-    /**
-     * @var string
-     */
-    public $signature;
-    /**
-     * @param string
-     */
-    public function setKeyId($keyId)
+namespace Google\Service\Iam {
+    class SignBlobResponse extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $keyId;
+        /**
+         * @var string
+         */
+        public $signature;
+        /**
+         * @param string
+         */
+        public function setKeyId($keyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKeyId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSignature($signature)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSignature()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Iam\SignBlobResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKeyId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSignature($signature)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSignature()
+    class Google_Service_Iam_SignBlobResponse extends \Google\Service\Iam\SignBlobResponse
     {
     }
 }

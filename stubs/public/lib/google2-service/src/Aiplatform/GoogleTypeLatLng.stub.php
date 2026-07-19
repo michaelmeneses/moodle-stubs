@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleTypeLatLng extends \Google\Model
-{
+namespace Google\Service\Aiplatform {
+    class GoogleTypeLatLng extends \Google\Model
+    {
+        /**
+         * The latitude in degrees. It must be in the range [-90.0, +90.0].
+         *
+         * @var 
+         */
+        public $latitude;
+        /**
+         * The longitude in degrees. It must be in the range [-180.0, +180.0].
+         *
+         * @var 
+         */
+        public $longitude;
+        public function setLatitude($latitude)
+        {
+        }
+        public function getLatitude()
+        {
+        }
+        public function setLongitude($longitude)
+        {
+        }
+        public function getLongitude()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * The latitude in degrees. It must be in the range [-90.0, +90.0].
-     *
-     * @var 
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleTypeLatLng registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $latitude;
-    /**
-     * The longitude in degrees. It must be in the range [-180.0, +180.0].
-     *
-     * @var 
-     */
-    public $longitude;
-    public function setLatitude($latitude)
-    {
-    }
-    public function getLatitude()
-    {
-    }
-    public function setLongitude($longitude)
-    {
-    }
-    public function getLongitude()
+    class Google_Service_Aiplatform_GoogleTypeLatLng extends \Google\Service\Aiplatform\GoogleTypeLatLng
     {
     }
 }

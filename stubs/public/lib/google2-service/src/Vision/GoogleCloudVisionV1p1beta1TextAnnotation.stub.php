@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class GoogleCloudVisionV1p1beta1TextAnnotation extends \Google\Collection
-{
-    protected $collection_key = 'pages';
-    protected $pagesType = GoogleCloudVisionV1p1beta1Page::class;
-    protected $pagesDataType = 'array';
-    /**
-     * UTF-8 text detected on the pages.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * List of pages detected by OCR.
-     *
-     * @param GoogleCloudVisionV1p1beta1Page[] $pages
-     */
-    public function setPages($pages)
+namespace Google\Service\Vision {
+    class GoogleCloudVisionV1p1beta1TextAnnotation extends \Google\Collection
     {
+        protected $collection_key = 'pages';
+        protected $pagesType = GoogleCloudVisionV1p1beta1Page::class;
+        protected $pagesDataType = 'array';
+        /**
+         * UTF-8 text detected on the pages.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * List of pages detected by OCR.
+         *
+         * @param GoogleCloudVisionV1p1beta1Page[] $pages
+         */
+        public function setPages($pages)
+        {
+        }
+        /**
+         * @return GoogleCloudVisionV1p1beta1Page[]
+         */
+        public function getPages()
+        {
+        }
+        /**
+         * UTF-8 text detected on the pages.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudVisionV1p1beta1Page[]
+     * Runtime class alias of \Google\Service\Vision\GoogleCloudVisionV1p1beta1TextAnnotation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPages()
-    {
-    }
-    /**
-     * UTF-8 text detected on the pages.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_Vision_GoogleCloudVisionV1p1beta1TextAnnotation extends \Google\Service\Vision\GoogleCloudVisionV1p1beta1TextAnnotation
     {
     }
 }

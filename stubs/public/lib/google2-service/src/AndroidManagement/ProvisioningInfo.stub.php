@@ -21,263 +21,272 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class ProvisioningInfo extends \Google\Model
-{
-    /**
-     * This value is disallowed.
-     */
-    public const MANAGEMENT_MODE_MANAGEMENT_MODE_UNSPECIFIED = 'MANAGEMENT_MODE_UNSPECIFIED';
-    /**
-     * Device owner. Android Device Policy has full control over the device.
-     */
-    public const MANAGEMENT_MODE_DEVICE_OWNER = 'DEVICE_OWNER';
-    /**
-     * Profile owner. Android Device Policy has control over a managed profile on
-     * the device.
-     */
-    public const MANAGEMENT_MODE_PROFILE_OWNER = 'PROFILE_OWNER';
-    /**
-     * Ownership is unspecified.
-     */
-    public const OWNERSHIP_OWNERSHIP_UNSPECIFIED = 'OWNERSHIP_UNSPECIFIED';
-    /**
-     * Device is company-owned.
-     */
-    public const OWNERSHIP_COMPANY_OWNED = 'COMPANY_OWNED';
-    /**
-     * Device is personally-owned.
-     */
-    public const OWNERSHIP_PERSONALLY_OWNED = 'PERSONALLY_OWNED';
-    /**
-     * The API level of the Android platform version running on the device.
-     *
-     * @var int
-     */
-    public $apiLevel;
-    /**
-     * The email address of the authenticated user (only present for Google
-     * Account provisioning method).
-     *
-     * @var string
-     */
-    public $authenticatedUserEmail;
-    /**
-     * The brand of the device. For example, Google.
-     *
-     * @var string
-     */
-    public $brand;
-    /**
-     * The name of the enterprise in the form enterprises/{enterprise}.
-     *
-     * @var string
-     */
-    public $enterprise;
-    /**
-     * For corporate-owned devices, IMEI number of the GSM device. For example,
-     * A1000031212.
-     *
-     * @var string
-     */
-    public $imei;
-    /**
-     * The management mode of the device or profile.
-     *
-     * @var string
-     */
-    public $managementMode;
-    /**
-     * For corporate-owned devices, MEID number of the CDMA device. For example,
-     * A00000292788E1.
-     *
-     * @var string
-     */
-    public $meid;
-    /**
-     * The model of the device. For example, Asus Nexus 7.
-     *
-     * @var string
-     */
-    public $model;
-    /**
-     * The name of this resource in the form provisioningInfo/{provisioning_info}.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Ownership of the managed device.
-     *
-     * @var string
-     */
-    public $ownership;
-    /**
-     * For corporate-owned devices, The device serial number.
-     *
-     * @var string
-     */
-    public $serialNumber;
-    /**
-     * The API level of the Android platform version running on the device.
-     *
-     * @param int $apiLevel
-     */
-    public function setApiLevel($apiLevel)
+namespace Google\Service\AndroidManagement {
+    class ProvisioningInfo extends \Google\Model
     {
+        /**
+         * This value is disallowed.
+         */
+        public const MANAGEMENT_MODE_MANAGEMENT_MODE_UNSPECIFIED = 'MANAGEMENT_MODE_UNSPECIFIED';
+        /**
+         * Device owner. Android Device Policy has full control over the device.
+         */
+        public const MANAGEMENT_MODE_DEVICE_OWNER = 'DEVICE_OWNER';
+        /**
+         * Profile owner. Android Device Policy has control over a managed profile on
+         * the device.
+         */
+        public const MANAGEMENT_MODE_PROFILE_OWNER = 'PROFILE_OWNER';
+        /**
+         * Ownership is unspecified.
+         */
+        public const OWNERSHIP_OWNERSHIP_UNSPECIFIED = 'OWNERSHIP_UNSPECIFIED';
+        /**
+         * Device is company-owned.
+         */
+        public const OWNERSHIP_COMPANY_OWNED = 'COMPANY_OWNED';
+        /**
+         * Device is personally-owned.
+         */
+        public const OWNERSHIP_PERSONALLY_OWNED = 'PERSONALLY_OWNED';
+        /**
+         * The API level of the Android platform version running on the device.
+         *
+         * @var int
+         */
+        public $apiLevel;
+        /**
+         * The email address of the authenticated user (only present for Google
+         * Account provisioning method).
+         *
+         * @var string
+         */
+        public $authenticatedUserEmail;
+        /**
+         * The brand of the device. For example, Google.
+         *
+         * @var string
+         */
+        public $brand;
+        /**
+         * The name of the enterprise in the form enterprises/{enterprise}.
+         *
+         * @var string
+         */
+        public $enterprise;
+        /**
+         * For corporate-owned devices, IMEI number of the GSM device. For example,
+         * A1000031212.
+         *
+         * @var string
+         */
+        public $imei;
+        /**
+         * The management mode of the device or profile.
+         *
+         * @var string
+         */
+        public $managementMode;
+        /**
+         * For corporate-owned devices, MEID number of the CDMA device. For example,
+         * A00000292788E1.
+         *
+         * @var string
+         */
+        public $meid;
+        /**
+         * The model of the device. For example, Asus Nexus 7.
+         *
+         * @var string
+         */
+        public $model;
+        /**
+         * The name of this resource in the form provisioningInfo/{provisioning_info}.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Ownership of the managed device.
+         *
+         * @var string
+         */
+        public $ownership;
+        /**
+         * For corporate-owned devices, The device serial number.
+         *
+         * @var string
+         */
+        public $serialNumber;
+        /**
+         * The API level of the Android platform version running on the device.
+         *
+         * @param int $apiLevel
+         */
+        public function setApiLevel($apiLevel)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getApiLevel()
+        {
+        }
+        /**
+         * The email address of the authenticated user (only present for Google
+         * Account provisioning method).
+         *
+         * @param string $authenticatedUserEmail
+         */
+        public function setAuthenticatedUserEmail($authenticatedUserEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAuthenticatedUserEmail()
+        {
+        }
+        /**
+         * The brand of the device. For example, Google.
+         *
+         * @param string $brand
+         */
+        public function setBrand($brand)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBrand()
+        {
+        }
+        /**
+         * The name of the enterprise in the form enterprises/{enterprise}.
+         *
+         * @param string $enterprise
+         */
+        public function setEnterprise($enterprise)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnterprise()
+        {
+        }
+        /**
+         * For corporate-owned devices, IMEI number of the GSM device. For example,
+         * A1000031212.
+         *
+         * @param string $imei
+         */
+        public function setImei($imei)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImei()
+        {
+        }
+        /**
+         * The management mode of the device or profile.
+         *
+         * Accepted values: MANAGEMENT_MODE_UNSPECIFIED, DEVICE_OWNER, PROFILE_OWNER
+         *
+         * @param self::MANAGEMENT_MODE_* $managementMode
+         */
+        public function setManagementMode($managementMode)
+        {
+        }
+        /**
+         * @return self::MANAGEMENT_MODE_*
+         */
+        public function getManagementMode()
+        {
+        }
+        /**
+         * For corporate-owned devices, MEID number of the CDMA device. For example,
+         * A00000292788E1.
+         *
+         * @param string $meid
+         */
+        public function setMeid($meid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMeid()
+        {
+        }
+        /**
+         * The model of the device. For example, Asus Nexus 7.
+         *
+         * @param string $model
+         */
+        public function setModel($model)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModel()
+        {
+        }
+        /**
+         * The name of this resource in the form provisioningInfo/{provisioning_info}.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Ownership of the managed device.
+         *
+         * Accepted values: OWNERSHIP_UNSPECIFIED, COMPANY_OWNED, PERSONALLY_OWNED
+         *
+         * @param self::OWNERSHIP_* $ownership
+         */
+        public function setOwnership($ownership)
+        {
+        }
+        /**
+         * @return self::OWNERSHIP_*
+         */
+        public function getOwnership()
+        {
+        }
+        /**
+         * For corporate-owned devices, The device serial number.
+         *
+         * @param string $serialNumber
+         */
+        public function setSerialNumber($serialNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSerialNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\AndroidManagement\ProvisioningInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiLevel()
-    {
-    }
-    /**
-     * The email address of the authenticated user (only present for Google
-     * Account provisioning method).
-     *
-     * @param string $authenticatedUserEmail
-     */
-    public function setAuthenticatedUserEmail($authenticatedUserEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAuthenticatedUserEmail()
-    {
-    }
-    /**
-     * The brand of the device. For example, Google.
-     *
-     * @param string $brand
-     */
-    public function setBrand($brand)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBrand()
-    {
-    }
-    /**
-     * The name of the enterprise in the form enterprises/{enterprise}.
-     *
-     * @param string $enterprise
-     */
-    public function setEnterprise($enterprise)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEnterprise()
-    {
-    }
-    /**
-     * For corporate-owned devices, IMEI number of the GSM device. For example,
-     * A1000031212.
-     *
-     * @param string $imei
-     */
-    public function setImei($imei)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImei()
-    {
-    }
-    /**
-     * The management mode of the device or profile.
-     *
-     * Accepted values: MANAGEMENT_MODE_UNSPECIFIED, DEVICE_OWNER, PROFILE_OWNER
-     *
-     * @param self::MANAGEMENT_MODE_* $managementMode
-     */
-    public function setManagementMode($managementMode)
-    {
-    }
-    /**
-     * @return self::MANAGEMENT_MODE_*
-     */
-    public function getManagementMode()
-    {
-    }
-    /**
-     * For corporate-owned devices, MEID number of the CDMA device. For example,
-     * A00000292788E1.
-     *
-     * @param string $meid
-     */
-    public function setMeid($meid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMeid()
-    {
-    }
-    /**
-     * The model of the device. For example, Asus Nexus 7.
-     *
-     * @param string $model
-     */
-    public function setModel($model)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getModel()
-    {
-    }
-    /**
-     * The name of this resource in the form provisioningInfo/{provisioning_info}.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Ownership of the managed device.
-     *
-     * Accepted values: OWNERSHIP_UNSPECIFIED, COMPANY_OWNED, PERSONALLY_OWNED
-     *
-     * @param self::OWNERSHIP_* $ownership
-     */
-    public function setOwnership($ownership)
-    {
-    }
-    /**
-     * @return self::OWNERSHIP_*
-     */
-    public function getOwnership()
-    {
-    }
-    /**
-     * For corporate-owned devices, The device serial number.
-     *
-     * @param string $serialNumber
-     */
-    public function setSerialNumber($serialNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSerialNumber()
+    class Google_Service_AndroidManagement_ProvisioningInfo extends \Google\Service\AndroidManagement\ProvisioningInfo
     {
     }
 }

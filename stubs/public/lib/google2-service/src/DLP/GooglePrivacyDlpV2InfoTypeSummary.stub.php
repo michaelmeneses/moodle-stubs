@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2InfoTypeSummary extends \Google\Model
-{
-    /**
-     * Not populated for predicted infotypes.
-     *
-     * @deprecated
-     * @var int
-     */
-    public $estimatedPrevalence;
-    protected $infoTypeType = GooglePrivacyDlpV2InfoType::class;
-    protected $infoTypeDataType = '';
-    /**
-     * Not populated for predicted infotypes.
-     *
-     * @deprecated
-     * @param int $estimatedPrevalence
-     */
-    public function setEstimatedPrevalence($estimatedPrevalence)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2InfoTypeSummary extends \Google\Model
     {
+        /**
+         * Not populated for predicted infotypes.
+         *
+         * @deprecated
+         * @var int
+         */
+        public $estimatedPrevalence;
+        protected $infoTypeType = GooglePrivacyDlpV2InfoType::class;
+        protected $infoTypeDataType = '';
+        /**
+         * Not populated for predicted infotypes.
+         *
+         * @deprecated
+         * @param int $estimatedPrevalence
+         */
+        public function setEstimatedPrevalence($estimatedPrevalence)
+        {
+        }
+        /**
+         * @deprecated
+         * @return int
+         */
+        public function getEstimatedPrevalence()
+        {
+        }
+        /**
+         * The infoType.
+         *
+         * @param GooglePrivacyDlpV2InfoType $infoType
+         */
+        public function setInfoType(GooglePrivacyDlpV2InfoType $infoType)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2InfoType
+         */
+        public function getInfoType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return int
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2InfoTypeSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEstimatedPrevalence()
-    {
-    }
-    /**
-     * The infoType.
-     *
-     * @param GooglePrivacyDlpV2InfoType $infoType
-     */
-    public function setInfoType(GooglePrivacyDlpV2InfoType $infoType)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2InfoType
-     */
-    public function getInfoType()
+    class Google_Service_DLP_GooglePrivacyDlpV2InfoTypeSummary extends \Google\Service\DLP\GooglePrivacyDlpV2InfoTypeSummary
     {
     }
 }

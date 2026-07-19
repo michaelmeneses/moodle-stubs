@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class QuorumType extends \Google\Model
-{
-    protected $dualRegionType = DualRegionQuorum::class;
-    protected $dualRegionDataType = '';
-    protected $singleRegionType = SingleRegionQuorum::class;
-    protected $singleRegionDataType = '';
-    /**
-     * Dual-region quorum type.
-     *
-     * @param DualRegionQuorum $dualRegion
-     */
-    public function setDualRegion(DualRegionQuorum $dualRegion)
+namespace Google\Service\Spanner {
+    class QuorumType extends \Google\Model
     {
+        protected $dualRegionType = DualRegionQuorum::class;
+        protected $dualRegionDataType = '';
+        protected $singleRegionType = SingleRegionQuorum::class;
+        protected $singleRegionDataType = '';
+        /**
+         * Dual-region quorum type.
+         *
+         * @param DualRegionQuorum $dualRegion
+         */
+        public function setDualRegion(DualRegionQuorum $dualRegion)
+        {
+        }
+        /**
+         * @return DualRegionQuorum
+         */
+        public function getDualRegion()
+        {
+        }
+        /**
+         * Single-region quorum type.
+         *
+         * @param SingleRegionQuorum $singleRegion
+         */
+        public function setSingleRegion(SingleRegionQuorum $singleRegion)
+        {
+        }
+        /**
+         * @return SingleRegionQuorum
+         */
+        public function getSingleRegion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DualRegionQuorum
+     * Runtime class alias of \Google\Service\Spanner\QuorumType registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDualRegion()
-    {
-    }
-    /**
-     * Single-region quorum type.
-     *
-     * @param SingleRegionQuorum $singleRegion
-     */
-    public function setSingleRegion(SingleRegionQuorum $singleRegion)
-    {
-    }
-    /**
-     * @return SingleRegionQuorum
-     */
-    public function getSingleRegion()
+    class Google_Service_Spanner_QuorumType extends \Google\Service\Spanner\QuorumType
     {
     }
 }

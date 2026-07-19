@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIAP\Resource;
-
-/**
- * The "locations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $iapService = new Google\Service\CloudIAP(...);
- *   $locations = $iapService->projects_iap_tunnel_locations;
- *  </code>
- */
-class ProjectsIapTunnelLocations extends \Google\Service\Resource
-{
+namespace Google\Service\CloudIAP\Resource {
+    /**
+     * The "locations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $iapService = new Google\Service\CloudIAP(...);
+     *   $locations = $iapService->projects_iap_tunnel_locations;
+     *  </code>
+     */
+    class ProjectsIapTunnelLocations extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudIAP\Resource\ProjectsIapTunnelLocations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudIAP_Resource_ProjectsIapTunnelLocations extends \Google\Service\CloudIAP\Resource\ProjectsIapTunnelLocations
+    {
+    }
 }

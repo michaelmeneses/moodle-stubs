@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3ListSessionEntityTypesResponse extends \Google\Collection
-{
-    protected $collection_key = 'sessionEntityTypes';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $sessionEntityTypesType = GoogleCloudDialogflowCxV3SessionEntityType::class;
-    protected $sessionEntityTypesDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3ListSessionEntityTypesResponse extends \Google\Collection
     {
+        protected $collection_key = 'sessionEntityTypes';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $sessionEntityTypesType = GoogleCloudDialogflowCxV3SessionEntityType::class;
+        protected $sessionEntityTypesDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of session entity types. There will be a maximum number of items
+         * returned based on the page_size field in the request.
+         *
+         * @param GoogleCloudDialogflowCxV3SessionEntityType[] $sessionEntityTypes
+         */
+        public function setSessionEntityTypes($sessionEntityTypes)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3SessionEntityType[]
+         */
+        public function getSessionEntityTypes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListSessionEntityTypesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of session entity types. There will be a maximum number of items
-     * returned based on the page_size field in the request.
-     *
-     * @param GoogleCloudDialogflowCxV3SessionEntityType[] $sessionEntityTypes
-     */
-    public function setSessionEntityTypes($sessionEntityTypes)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3SessionEntityType[]
-     */
-    public function getSessionEntityTypes()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3ListSessionEntityTypesResponse extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ListSessionEntityTypesResponse
     {
     }
 }

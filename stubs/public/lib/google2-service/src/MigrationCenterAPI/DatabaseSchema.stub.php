@@ -21,113 +21,122 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class DatabaseSchema extends \Google\Collection
-{
-    protected $collection_key = 'objects';
-    protected $mysqlType = MySqlSchemaDetails::class;
-    protected $mysqlDataType = '';
-    protected $objectsType = DatabaseObjects::class;
-    protected $objectsDataType = 'array';
-    protected $postgresqlType = PostgreSqlSchemaDetails::class;
-    protected $postgresqlDataType = '';
-    /**
-     * Required. The name of the schema.
-     *
-     * @var string
-     */
-    public $schemaName;
-    protected $sqlServerType = SqlServerSchemaDetails::class;
-    protected $sqlServerDataType = '';
-    /**
-     * Optional. The total size of tables in bytes.
-     *
-     * @var string
-     */
-    public $tablesSizeBytes;
-    /**
-     * Optional. Details of a Mysql schema.
-     *
-     * @param MySqlSchemaDetails $mysql
-     */
-    public function setMysql(MySqlSchemaDetails $mysql)
+namespace Google\Service\MigrationCenterAPI {
+    class DatabaseSchema extends \Google\Collection
     {
+        protected $collection_key = 'objects';
+        protected $mysqlType = MySqlSchemaDetails::class;
+        protected $mysqlDataType = '';
+        protected $objectsType = DatabaseObjects::class;
+        protected $objectsDataType = 'array';
+        protected $postgresqlType = PostgreSqlSchemaDetails::class;
+        protected $postgresqlDataType = '';
+        /**
+         * Required. The name of the schema.
+         *
+         * @var string
+         */
+        public $schemaName;
+        protected $sqlServerType = SqlServerSchemaDetails::class;
+        protected $sqlServerDataType = '';
+        /**
+         * Optional. The total size of tables in bytes.
+         *
+         * @var string
+         */
+        public $tablesSizeBytes;
+        /**
+         * Optional. Details of a Mysql schema.
+         *
+         * @param MySqlSchemaDetails $mysql
+         */
+        public function setMysql(MySqlSchemaDetails $mysql)
+        {
+        }
+        /**
+         * @return MySqlSchemaDetails
+         */
+        public function getMysql()
+        {
+        }
+        /**
+         * Optional. List of details of objects by category.
+         *
+         * @param DatabaseObjects[] $objects
+         */
+        public function setObjects($objects)
+        {
+        }
+        /**
+         * @return DatabaseObjects[]
+         */
+        public function getObjects()
+        {
+        }
+        /**
+         * Optional. Details of a PostgreSql schema.
+         *
+         * @param PostgreSqlSchemaDetails $postgresql
+         */
+        public function setPostgresql(PostgreSqlSchemaDetails $postgresql)
+        {
+        }
+        /**
+         * @return PostgreSqlSchemaDetails
+         */
+        public function getPostgresql()
+        {
+        }
+        /**
+         * Required. The name of the schema.
+         *
+         * @param string $schemaName
+         */
+        public function setSchemaName($schemaName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSchemaName()
+        {
+        }
+        /**
+         * Optional. Details of a SqlServer schema.
+         *
+         * @param SqlServerSchemaDetails $sqlServer
+         */
+        public function setSqlServer(SqlServerSchemaDetails $sqlServer)
+        {
+        }
+        /**
+         * @return SqlServerSchemaDetails
+         */
+        public function getSqlServer()
+        {
+        }
+        /**
+         * Optional. The total size of tables in bytes.
+         *
+         * @param string $tablesSizeBytes
+         */
+        public function setTablesSizeBytes($tablesSizeBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTablesSizeBytes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MySqlSchemaDetails
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\DatabaseSchema registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMysql()
-    {
-    }
-    /**
-     * Optional. List of details of objects by category.
-     *
-     * @param DatabaseObjects[] $objects
-     */
-    public function setObjects($objects)
-    {
-    }
-    /**
-     * @return DatabaseObjects[]
-     */
-    public function getObjects()
-    {
-    }
-    /**
-     * Optional. Details of a PostgreSql schema.
-     *
-     * @param PostgreSqlSchemaDetails $postgresql
-     */
-    public function setPostgresql(PostgreSqlSchemaDetails $postgresql)
-    {
-    }
-    /**
-     * @return PostgreSqlSchemaDetails
-     */
-    public function getPostgresql()
-    {
-    }
-    /**
-     * Required. The name of the schema.
-     *
-     * @param string $schemaName
-     */
-    public function setSchemaName($schemaName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSchemaName()
-    {
-    }
-    /**
-     * Optional. Details of a SqlServer schema.
-     *
-     * @param SqlServerSchemaDetails $sqlServer
-     */
-    public function setSqlServer(SqlServerSchemaDetails $sqlServer)
-    {
-    }
-    /**
-     * @return SqlServerSchemaDetails
-     */
-    public function getSqlServer()
-    {
-    }
-    /**
-     * Optional. The total size of tables in bytes.
-     *
-     * @param string $tablesSizeBytes
-     */
-    public function setTablesSizeBytes($tablesSizeBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTablesSizeBytes()
+    class Google_Service_MigrationCenterAPI_DatabaseSchema extends \Google\Service\MigrationCenterAPI\DatabaseSchema
     {
     }
 }

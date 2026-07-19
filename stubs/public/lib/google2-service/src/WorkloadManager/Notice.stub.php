@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class Notice extends \Google\Model
-{
-    /**
-     * Output only. Message of the notice
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * Output only. Message of the notice
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
+namespace Google\Service\WorkloadManager {
+    class Notice extends \Google\Model
     {
+        /**
+         * Output only. Message of the notice
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * Output only. Message of the notice
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WorkloadManager\Notice registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMessage()
+    class Google_Service_WorkloadManager_Notice extends \Google\Service\WorkloadManager\Notice
     {
     }
 }

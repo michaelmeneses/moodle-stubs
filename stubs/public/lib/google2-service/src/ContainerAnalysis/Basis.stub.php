@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class Basis extends \Google\Model
-{
-    protected $fingerprintType = Fingerprint::class;
-    protected $fingerprintDataType = '';
-    public $resourceUrl;
+namespace Google\Service\ContainerAnalysis {
+    class Basis extends \Google\Model
+    {
+        protected $fingerprintType = Fingerprint::class;
+        protected $fingerprintDataType = '';
+        public $resourceUrl;
+        /**
+         * @param Fingerprint
+         */
+        public function setFingerprint(Fingerprint $fingerprint)
+        {
+        }
+        /**
+         * @return Fingerprint
+         */
+        public function getFingerprint()
+        {
+        }
+        public function setResourceUrl($resourceUrl)
+        {
+        }
+        public function getResourceUrl()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param Fingerprint
+     * Runtime class alias of \Google\Service\ContainerAnalysis\Basis registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setFingerprint(Fingerprint $fingerprint)
-    {
-    }
-    /**
-     * @return Fingerprint
-     */
-    public function getFingerprint()
-    {
-    }
-    public function setResourceUrl($resourceUrl)
-    {
-    }
-    public function getResourceUrl()
+    class Google_Service_ContainerAnalysis_Basis extends \Google\Service\ContainerAnalysis\Basis
     {
     }
 }

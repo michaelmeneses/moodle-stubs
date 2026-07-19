@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkspaceEvents;
-
-class ListTaskPushNotificationConfigResponse extends \Google\Collection
-{
-    protected $collection_key = 'configs';
-    protected $configsType = TaskPushNotificationConfig::class;
-    protected $configsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of push notification configurations.
-     *
-     * @param TaskPushNotificationConfig[] $configs
-     */
-    public function setConfigs($configs)
+namespace Google\Service\WorkspaceEvents {
+    class ListTaskPushNotificationConfigResponse extends \Google\Collection
     {
+        protected $collection_key = 'configs';
+        protected $configsType = TaskPushNotificationConfig::class;
+        protected $configsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of push notification configurations.
+         *
+         * @param TaskPushNotificationConfig[] $configs
+         */
+        public function setConfigs($configs)
+        {
+        }
+        /**
+         * @return TaskPushNotificationConfig[]
+         */
+        public function getConfigs()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TaskPushNotificationConfig[]
+     * Runtime class alias of \Google\Service\WorkspaceEvents\ListTaskPushNotificationConfigResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfigs()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_WorkspaceEvents_ListTaskPushNotificationConfigResponse extends \Google\Service\WorkspaceEvents\ListTaskPushNotificationConfigResponse
     {
     }
 }

@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1IdentityMappingStore extends \Google\Model
-{
-    protected $cmekConfigType = GoogleCloudDiscoveryengineV1CmekConfig::class;
-    protected $cmekConfigDataType = '';
-    /**
-     * Input only. The KMS key to be used to protect this Identity Mapping Store
-     * at creation time. Must be set for requests that need to comply with CMEK
-     * Org Policy protections. If this field is set and processed successfully,
-     * the Identity Mapping Store will be protected by the KMS key, as indicated
-     * in the cmek_config field.
-     *
-     * @var string
-     */
-    public $kmsKeyName;
-    /**
-     * Immutable. The full resource name of the identity mapping store. Format: `p
-     * rojects/{project}/locations/{location}/identityMappingStores/{identity_mapp
-     * ing_store}`. This field must be a UTF-8 encoded string with a length limit
-     * of 1024 characters.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. CMEK-related information for the Identity Mapping Store.
-     *
-     * @param GoogleCloudDiscoveryengineV1CmekConfig $cmekConfig
-     */
-    public function setCmekConfig(GoogleCloudDiscoveryengineV1CmekConfig $cmekConfig)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1IdentityMappingStore extends \Google\Model
     {
+        protected $cmekConfigType = GoogleCloudDiscoveryengineV1CmekConfig::class;
+        protected $cmekConfigDataType = '';
+        /**
+         * Input only. The KMS key to be used to protect this Identity Mapping Store
+         * at creation time. Must be set for requests that need to comply with CMEK
+         * Org Policy protections. If this field is set and processed successfully,
+         * the Identity Mapping Store will be protected by the KMS key, as indicated
+         * in the cmek_config field.
+         *
+         * @var string
+         */
+        public $kmsKeyName;
+        /**
+         * Immutable. The full resource name of the identity mapping store. Format: `p
+         * rojects/{project}/locations/{location}/identityMappingStores/{identity_mapp
+         * ing_store}`. This field must be a UTF-8 encoded string with a length limit
+         * of 1024 characters.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. CMEK-related information for the Identity Mapping Store.
+         *
+         * @param GoogleCloudDiscoveryengineV1CmekConfig $cmekConfig
+         */
+        public function setCmekConfig(GoogleCloudDiscoveryengineV1CmekConfig $cmekConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1CmekConfig
+         */
+        public function getCmekConfig()
+        {
+        }
+        /**
+         * Input only. The KMS key to be used to protect this Identity Mapping Store
+         * at creation time. Must be set for requests that need to comply with CMEK
+         * Org Policy protections. If this field is set and processed successfully,
+         * the Identity Mapping Store will be protected by the KMS key, as indicated
+         * in the cmek_config field.
+         *
+         * @param string $kmsKeyName
+         */
+        public function setKmsKeyName($kmsKeyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKmsKeyName()
+        {
+        }
+        /**
+         * Immutable. The full resource name of the identity mapping store. Format: `p
+         * rojects/{project}/locations/{location}/identityMappingStores/{identity_mapp
+         * ing_store}`. This field must be a UTF-8 encoded string with a length limit
+         * of 1024 characters.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1CmekConfig
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1IdentityMappingStore registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCmekConfig()
-    {
-    }
-    /**
-     * Input only. The KMS key to be used to protect this Identity Mapping Store
-     * at creation time. Must be set for requests that need to comply with CMEK
-     * Org Policy protections. If this field is set and processed successfully,
-     * the Identity Mapping Store will be protected by the KMS key, as indicated
-     * in the cmek_config field.
-     *
-     * @param string $kmsKeyName
-     */
-    public function setKmsKeyName($kmsKeyName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKmsKeyName()
-    {
-    }
-    /**
-     * Immutable. The full resource name of the identity mapping store. Format: `p
-     * rojects/{project}/locations/{location}/identityMappingStores/{identity_mapp
-     * ing_store}`. This field must be a UTF-8 encoded string with a length limit
-     * of 1024 characters.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1IdentityMappingStore extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1IdentityMappingStore
     {
     }
 }

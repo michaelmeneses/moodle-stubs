@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineLoggingHttpRequestContext extends \Google\Model
-{
-    /**
-     * The HTTP response status code for the request.
-     *
-     * @var int
-     */
-    public $responseStatusCode;
-    /**
-     * The HTTP response status code for the request.
-     *
-     * @param int $responseStatusCode
-     */
-    public function setResponseStatusCode($responseStatusCode)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineLoggingHttpRequestContext extends \Google\Model
     {
+        /**
+         * The HTTP response status code for the request.
+         *
+         * @var int
+         */
+        public $responseStatusCode;
+        /**
+         * The HTTP response status code for the request.
+         *
+         * @param int $responseStatusCode
+         */
+        public function setResponseStatusCode($responseStatusCode)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getResponseStatusCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineLoggingHttpRequestContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResponseStatusCode()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineLoggingHttpRequestContext extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineLoggingHttpRequestContext
     {
     }
 }

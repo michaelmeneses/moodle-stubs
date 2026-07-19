@@ -21,287 +21,296 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class Volumeannotation extends \Google\Collection
-{
-    protected $collection_key = 'pageIds';
-    /**
-     * The annotation data id for this volume annotation.
-     *
-     * @var string
-     */
-    public $annotationDataId;
-    /**
-     * Link to get data for this annotation.
-     *
-     * @var string
-     */
-    public $annotationDataLink;
-    /**
-     * The type of annotation this is.
-     *
-     * @var string
-     */
-    public $annotationType;
-    protected $contentRangesType = VolumeannotationContentRanges::class;
-    protected $contentRangesDataType = '';
-    /**
-     * Data for this annotation.
-     *
-     * @var string
-     */
-    public $data;
-    /**
-     * Indicates that this annotation is deleted.
-     *
-     * @var bool
-     */
-    public $deleted;
-    /**
-     * Unique id of this volume annotation.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Resource Type
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The Layer this annotation is for.
-     *
-     * @var string
-     */
-    public $layerId;
-    /**
-     * Pages the annotation spans.
-     *
-     * @var string[]
-     */
-    public $pageIds;
-    /**
-     * Excerpt from the volume.
-     *
-     * @var string
-     */
-    public $selectedText;
-    /**
-     * URL to this resource.
-     *
-     * @var string
-     */
-    public $selfLink;
-    /**
-     * Timestamp for the last time this anntoation was updated. (RFC 3339 UTC
-     * date-time format).
-     *
-     * @var string
-     */
-    public $updated;
-    /**
-     * The Volume this annotation is for.
-     *
-     * @var string
-     */
-    public $volumeId;
-    /**
-     * The annotation data id for this volume annotation.
-     *
-     * @param string $annotationDataId
-     */
-    public function setAnnotationDataId($annotationDataId)
+namespace Google\Service\Books {
+    class Volumeannotation extends \Google\Collection
     {
+        protected $collection_key = 'pageIds';
+        /**
+         * The annotation data id for this volume annotation.
+         *
+         * @var string
+         */
+        public $annotationDataId;
+        /**
+         * Link to get data for this annotation.
+         *
+         * @var string
+         */
+        public $annotationDataLink;
+        /**
+         * The type of annotation this is.
+         *
+         * @var string
+         */
+        public $annotationType;
+        protected $contentRangesType = VolumeannotationContentRanges::class;
+        protected $contentRangesDataType = '';
+        /**
+         * Data for this annotation.
+         *
+         * @var string
+         */
+        public $data;
+        /**
+         * Indicates that this annotation is deleted.
+         *
+         * @var bool
+         */
+        public $deleted;
+        /**
+         * Unique id of this volume annotation.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Resource Type
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The Layer this annotation is for.
+         *
+         * @var string
+         */
+        public $layerId;
+        /**
+         * Pages the annotation spans.
+         *
+         * @var string[]
+         */
+        public $pageIds;
+        /**
+         * Excerpt from the volume.
+         *
+         * @var string
+         */
+        public $selectedText;
+        /**
+         * URL to this resource.
+         *
+         * @var string
+         */
+        public $selfLink;
+        /**
+         * Timestamp for the last time this anntoation was updated. (RFC 3339 UTC
+         * date-time format).
+         *
+         * @var string
+         */
+        public $updated;
+        /**
+         * The Volume this annotation is for.
+         *
+         * @var string
+         */
+        public $volumeId;
+        /**
+         * The annotation data id for this volume annotation.
+         *
+         * @param string $annotationDataId
+         */
+        public function setAnnotationDataId($annotationDataId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnnotationDataId()
+        {
+        }
+        /**
+         * Link to get data for this annotation.
+         *
+         * @param string $annotationDataLink
+         */
+        public function setAnnotationDataLink($annotationDataLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnnotationDataLink()
+        {
+        }
+        /**
+         * The type of annotation this is.
+         *
+         * @param string $annotationType
+         */
+        public function setAnnotationType($annotationType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnnotationType()
+        {
+        }
+        /**
+         * The content ranges to identify the selected text.
+         *
+         * @param VolumeannotationContentRanges $contentRanges
+         */
+        public function setContentRanges(VolumeannotationContentRanges $contentRanges)
+        {
+        }
+        /**
+         * @return VolumeannotationContentRanges
+         */
+        public function getContentRanges()
+        {
+        }
+        /**
+         * Data for this annotation.
+         *
+         * @param string $data
+         */
+        public function setData($data)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getData()
+        {
+        }
+        /**
+         * Indicates that this annotation is deleted.
+         *
+         * @param bool $deleted
+         */
+        public function setDeleted($deleted)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDeleted()
+        {
+        }
+        /**
+         * Unique id of this volume annotation.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Resource Type
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The Layer this annotation is for.
+         *
+         * @param string $layerId
+         */
+        public function setLayerId($layerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLayerId()
+        {
+        }
+        /**
+         * Pages the annotation spans.
+         *
+         * @param string[] $pageIds
+         */
+        public function setPageIds($pageIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPageIds()
+        {
+        }
+        /**
+         * Excerpt from the volume.
+         *
+         * @param string $selectedText
+         */
+        public function setSelectedText($selectedText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelectedText()
+        {
+        }
+        /**
+         * URL to this resource.
+         *
+         * @param string $selfLink
+         */
+        public function setSelfLink($selfLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLink()
+        {
+        }
+        /**
+         * Timestamp for the last time this anntoation was updated. (RFC 3339 UTC
+         * date-time format).
+         *
+         * @param string $updated
+         */
+        public function setUpdated($updated)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdated()
+        {
+        }
+        /**
+         * The Volume this annotation is for.
+         *
+         * @param string $volumeId
+         */
+        public function setVolumeId($volumeId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVolumeId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Books\Volumeannotation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotationDataId()
-    {
-    }
-    /**
-     * Link to get data for this annotation.
-     *
-     * @param string $annotationDataLink
-     */
-    public function setAnnotationDataLink($annotationDataLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAnnotationDataLink()
-    {
-    }
-    /**
-     * The type of annotation this is.
-     *
-     * @param string $annotationType
-     */
-    public function setAnnotationType($annotationType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAnnotationType()
-    {
-    }
-    /**
-     * The content ranges to identify the selected text.
-     *
-     * @param VolumeannotationContentRanges $contentRanges
-     */
-    public function setContentRanges(VolumeannotationContentRanges $contentRanges)
-    {
-    }
-    /**
-     * @return VolumeannotationContentRanges
-     */
-    public function getContentRanges()
-    {
-    }
-    /**
-     * Data for this annotation.
-     *
-     * @param string $data
-     */
-    public function setData($data)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getData()
-    {
-    }
-    /**
-     * Indicates that this annotation is deleted.
-     *
-     * @param bool $deleted
-     */
-    public function setDeleted($deleted)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDeleted()
-    {
-    }
-    /**
-     * Unique id of this volume annotation.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Resource Type
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The Layer this annotation is for.
-     *
-     * @param string $layerId
-     */
-    public function setLayerId($layerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLayerId()
-    {
-    }
-    /**
-     * Pages the annotation spans.
-     *
-     * @param string[] $pageIds
-     */
-    public function setPageIds($pageIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPageIds()
-    {
-    }
-    /**
-     * Excerpt from the volume.
-     *
-     * @param string $selectedText
-     */
-    public function setSelectedText($selectedText)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelectedText()
-    {
-    }
-    /**
-     * URL to this resource.
-     *
-     * @param string $selfLink
-     */
-    public function setSelfLink($selfLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLink()
-    {
-    }
-    /**
-     * Timestamp for the last time this anntoation was updated. (RFC 3339 UTC
-     * date-time format).
-     *
-     * @param string $updated
-     */
-    public function setUpdated($updated)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdated()
-    {
-    }
-    /**
-     * The Volume this annotation is for.
-     *
-     * @param string $volumeId
-     */
-    public function setVolumeId($volumeId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVolumeId()
+    class Google_Service_Books_Volumeannotation extends \Google\Service\Books\Volumeannotation
     {
     }
 }

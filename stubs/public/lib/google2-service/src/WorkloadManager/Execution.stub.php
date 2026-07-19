@@ -21,303 +21,312 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class Execution extends \Google\Collection
-{
-    /**
-     * The original CG
-     */
-    public const ENGINE_ENGINE_UNSPECIFIED = 'ENGINE_UNSPECIFIED';
-    /**
-     * SlimCG / Scanner
-     */
-    public const ENGINE_ENGINE_SCANNER = 'ENGINE_SCANNER';
-    /**
-     * Evaluation Engine V2
-     */
-    public const ENGINE_V2 = 'V2';
-    /**
-     * type of execution is unspecified
-     */
-    public const RUN_TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * type of execution is one time
-     */
-    public const RUN_TYPE_ONE_TIME = 'ONE_TIME';
-    /**
-     * type of execution is scheduled
-     */
-    public const RUN_TYPE_SCHEDULED = 'SCHEDULED';
-    /**
-     * state of execution is unspecified
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * the execution is running in backend service
-     */
-    public const STATE_RUNNING = 'RUNNING';
-    /**
-     * the execution run success
-     */
-    public const STATE_SUCCEEDED = 'SUCCEEDED';
-    /**
-     * the execution run failed
-     */
-    public const STATE_FAILED = 'FAILED';
-    protected $collection_key = 'ruleResults';
-    /**
-     * Output only. [Output only] End time stamp
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * Optional. Engine
-     *
-     * @var string
-     */
-    public $engine;
-    /**
-     * Output only. [Output only] Evaluation ID
-     *
-     * @var string
-     */
-    public $evaluationId;
-    protected $externalDataSourcesType = ExternalDataSources::class;
-    protected $externalDataSourcesDataType = 'array';
-    /**
-     * Output only. [Output only] Inventory time stamp
-     *
-     * @var string
-     */
-    public $inventoryTime;
-    /**
-     * Labels as key value pairs
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * The name of execution resource. The format is projects/{project}/locations/
-     * {location}/evaluations/{evaluation}/executions/{execution}
-     *
-     * @var string
-     */
-    public $name;
-    protected $noticesType = Notice::class;
-    protected $noticesDataType = 'array';
-    protected $resultSummaryType = Summary::class;
-    protected $resultSummaryDataType = '';
-    protected $ruleResultsType = RuleExecutionResult::class;
-    protected $ruleResultsDataType = 'array';
-    /**
-     * type represent whether the execution executed directly by user or scheduled
-     * according evaluation.schedule field.
-     *
-     * @var string
-     */
-    public $runType;
-    /**
-     * Output only. [Output only] Start time stamp
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Output only. [Output only] State
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. [Output only] End time stamp
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\WorkloadManager {
+    class Execution extends \Google\Collection
     {
+        /**
+         * The original CG
+         */
+        public const ENGINE_ENGINE_UNSPECIFIED = 'ENGINE_UNSPECIFIED';
+        /**
+         * SlimCG / Scanner
+         */
+        public const ENGINE_ENGINE_SCANNER = 'ENGINE_SCANNER';
+        /**
+         * Evaluation Engine V2
+         */
+        public const ENGINE_V2 = 'V2';
+        /**
+         * type of execution is unspecified
+         */
+        public const RUN_TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * type of execution is one time
+         */
+        public const RUN_TYPE_ONE_TIME = 'ONE_TIME';
+        /**
+         * type of execution is scheduled
+         */
+        public const RUN_TYPE_SCHEDULED = 'SCHEDULED';
+        /**
+         * state of execution is unspecified
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * the execution is running in backend service
+         */
+        public const STATE_RUNNING = 'RUNNING';
+        /**
+         * the execution run success
+         */
+        public const STATE_SUCCEEDED = 'SUCCEEDED';
+        /**
+         * the execution run failed
+         */
+        public const STATE_FAILED = 'FAILED';
+        protected $collection_key = 'ruleResults';
+        /**
+         * Output only. [Output only] End time stamp
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * Optional. Engine
+         *
+         * @var string
+         */
+        public $engine;
+        /**
+         * Output only. [Output only] Evaluation ID
+         *
+         * @var string
+         */
+        public $evaluationId;
+        protected $externalDataSourcesType = ExternalDataSources::class;
+        protected $externalDataSourcesDataType = 'array';
+        /**
+         * Output only. [Output only] Inventory time stamp
+         *
+         * @var string
+         */
+        public $inventoryTime;
+        /**
+         * Labels as key value pairs
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * The name of execution resource. The format is projects/{project}/locations/
+         * {location}/evaluations/{evaluation}/executions/{execution}
+         *
+         * @var string
+         */
+        public $name;
+        protected $noticesType = Notice::class;
+        protected $noticesDataType = 'array';
+        protected $resultSummaryType = Summary::class;
+        protected $resultSummaryDataType = '';
+        protected $ruleResultsType = RuleExecutionResult::class;
+        protected $ruleResultsDataType = 'array';
+        /**
+         * type represent whether the execution executed directly by user or scheduled
+         * according evaluation.schedule field.
+         *
+         * @var string
+         */
+        public $runType;
+        /**
+         * Output only. [Output only] Start time stamp
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Output only. [Output only] State
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. [Output only] End time stamp
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Optional. Engine
+         *
+         * Accepted values: ENGINE_UNSPECIFIED, ENGINE_SCANNER, V2
+         *
+         * @param self::ENGINE_* $engine
+         */
+        public function setEngine($engine)
+        {
+        }
+        /**
+         * @return self::ENGINE_*
+         */
+        public function getEngine()
+        {
+        }
+        /**
+         * Output only. [Output only] Evaluation ID
+         *
+         * @param string $evaluationId
+         */
+        public function setEvaluationId($evaluationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEvaluationId()
+        {
+        }
+        /**
+         * Optional. External data sources
+         *
+         * @param ExternalDataSources[] $externalDataSources
+         */
+        public function setExternalDataSources($externalDataSources)
+        {
+        }
+        /**
+         * @return ExternalDataSources[]
+         */
+        public function getExternalDataSources()
+        {
+        }
+        /**
+         * Output only. [Output only] Inventory time stamp
+         *
+         * @param string $inventoryTime
+         */
+        public function setInventoryTime($inventoryTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInventoryTime()
+        {
+        }
+        /**
+         * Labels as key value pairs
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * The name of execution resource. The format is projects/{project}/locations/
+         * {location}/evaluations/{evaluation}/executions/{execution}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Additional information generated by the execution
+         *
+         * @param Notice[] $notices
+         */
+        public function setNotices($notices)
+        {
+        }
+        /**
+         * @return Notice[]
+         */
+        public function getNotices()
+        {
+        }
+        /**
+         * Output only. [Output only] Result summary for the execution
+         *
+         * @param Summary $resultSummary
+         */
+        public function setResultSummary(Summary $resultSummary)
+        {
+        }
+        /**
+         * @return Summary
+         */
+        public function getResultSummary()
+        {
+        }
+        /**
+         * Output only. execution result summary per rule
+         *
+         * @param RuleExecutionResult[] $ruleResults
+         */
+        public function setRuleResults($ruleResults)
+        {
+        }
+        /**
+         * @return RuleExecutionResult[]
+         */
+        public function getRuleResults()
+        {
+        }
+        /**
+         * type represent whether the execution executed directly by user or scheduled
+         * according evaluation.schedule field.
+         *
+         * Accepted values: TYPE_UNSPECIFIED, ONE_TIME, SCHEDULED
+         *
+         * @param self::RUN_TYPE_* $runType
+         */
+        public function setRunType($runType)
+        {
+        }
+        /**
+         * @return self::RUN_TYPE_*
+         */
+        public function getRunType()
+        {
+        }
+        /**
+         * Output only. [Output only] Start time stamp
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * Output only. [Output only] State
+         *
+         * Accepted values: STATE_UNSPECIFIED, RUNNING, SUCCEEDED, FAILED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WorkloadManager\Execution registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Optional. Engine
-     *
-     * Accepted values: ENGINE_UNSPECIFIED, ENGINE_SCANNER, V2
-     *
-     * @param self::ENGINE_* $engine
-     */
-    public function setEngine($engine)
-    {
-    }
-    /**
-     * @return self::ENGINE_*
-     */
-    public function getEngine()
-    {
-    }
-    /**
-     * Output only. [Output only] Evaluation ID
-     *
-     * @param string $evaluationId
-     */
-    public function setEvaluationId($evaluationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEvaluationId()
-    {
-    }
-    /**
-     * Optional. External data sources
-     *
-     * @param ExternalDataSources[] $externalDataSources
-     */
-    public function setExternalDataSources($externalDataSources)
-    {
-    }
-    /**
-     * @return ExternalDataSources[]
-     */
-    public function getExternalDataSources()
-    {
-    }
-    /**
-     * Output only. [Output only] Inventory time stamp
-     *
-     * @param string $inventoryTime
-     */
-    public function setInventoryTime($inventoryTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInventoryTime()
-    {
-    }
-    /**
-     * Labels as key value pairs
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * The name of execution resource. The format is projects/{project}/locations/
-     * {location}/evaluations/{evaluation}/executions/{execution}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Additional information generated by the execution
-     *
-     * @param Notice[] $notices
-     */
-    public function setNotices($notices)
-    {
-    }
-    /**
-     * @return Notice[]
-     */
-    public function getNotices()
-    {
-    }
-    /**
-     * Output only. [Output only] Result summary for the execution
-     *
-     * @param Summary $resultSummary
-     */
-    public function setResultSummary(Summary $resultSummary)
-    {
-    }
-    /**
-     * @return Summary
-     */
-    public function getResultSummary()
-    {
-    }
-    /**
-     * Output only. execution result summary per rule
-     *
-     * @param RuleExecutionResult[] $ruleResults
-     */
-    public function setRuleResults($ruleResults)
-    {
-    }
-    /**
-     * @return RuleExecutionResult[]
-     */
-    public function getRuleResults()
-    {
-    }
-    /**
-     * type represent whether the execution executed directly by user or scheduled
-     * according evaluation.schedule field.
-     *
-     * Accepted values: TYPE_UNSPECIFIED, ONE_TIME, SCHEDULED
-     *
-     * @param self::RUN_TYPE_* $runType
-     */
-    public function setRunType($runType)
-    {
-    }
-    /**
-     * @return self::RUN_TYPE_*
-     */
-    public function getRunType()
-    {
-    }
-    /**
-     * Output only. [Output only] Start time stamp
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * Output only. [Output only] State
-     *
-     * Accepted values: STATE_UNSPECIFIED, RUNNING, SUCCEEDED, FAILED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_WorkloadManager_Execution extends \Google\Service\WorkloadManager\Execution
     {
     }
 }

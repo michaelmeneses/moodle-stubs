@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SearchConsole;
-
-class RunMobileFriendlyTestRequest extends \Google\Model
-{
-    /**
-     * Whether or not screenshot is requested. Default is false.
-     *
-     * @var bool
-     */
-    public $requestScreenshot;
-    /**
-     * URL for inspection.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * Whether or not screenshot is requested. Default is false.
-     *
-     * @param bool $requestScreenshot
-     */
-    public function setRequestScreenshot($requestScreenshot)
+namespace Google\Service\SearchConsole {
+    class RunMobileFriendlyTestRequest extends \Google\Model
     {
+        /**
+         * Whether or not screenshot is requested. Default is false.
+         *
+         * @var bool
+         */
+        public $requestScreenshot;
+        /**
+         * URL for inspection.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * Whether or not screenshot is requested. Default is false.
+         *
+         * @param bool $requestScreenshot
+         */
+        public function setRequestScreenshot($requestScreenshot)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRequestScreenshot()
+        {
+        }
+        /**
+         * URL for inspection.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\SearchConsole\RunMobileFriendlyTestRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequestScreenshot()
-    {
-    }
-    /**
-     * URL for inspection.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_SearchConsole_RunMobileFriendlyTestRequest extends \Google\Service\SearchConsole\RunMobileFriendlyTestRequest
     {
     }
 }

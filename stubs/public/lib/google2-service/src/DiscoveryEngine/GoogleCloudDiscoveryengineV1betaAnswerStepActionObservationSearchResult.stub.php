@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaAnswerStepActionObservationSearchResult extends \Google\Collection
-{
-    protected $collection_key = 'snippetInfo';
-    protected $chunkInfoType = GoogleCloudDiscoveryengineV1betaAnswerStepActionObservationSearchResultChunkInfo::class;
-    protected $chunkInfoDataType = 'array';
-    /**
-     * @var string
-     */
-    public $document;
-    protected $snippetInfoType = GoogleCloudDiscoveryengineV1betaAnswerStepActionObservationSearchResultSnippetInfo::class;
-    protected $snippetInfoDataType = 'array';
-    /**
-     * @var string
-     */
-    public $title;
-    /**
-     * @var string
-     */
-    public $uri;
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaAnswerStepActionObservationSearchResultChunkInfo[]
-     */
-    public function setChunkInfo($chunkInfo)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaAnswerStepActionObservationSearchResult extends \Google\Collection
     {
+        protected $collection_key = 'snippetInfo';
+        protected $chunkInfoType = GoogleCloudDiscoveryengineV1betaAnswerStepActionObservationSearchResultChunkInfo::class;
+        protected $chunkInfoDataType = 'array';
+        /**
+         * @var string
+         */
+        public $document;
+        protected $snippetInfoType = GoogleCloudDiscoveryengineV1betaAnswerStepActionObservationSearchResultSnippetInfo::class;
+        protected $snippetInfoDataType = 'array';
+        /**
+         * @var string
+         */
+        public $title;
+        /**
+         * @var string
+         */
+        public $uri;
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaAnswerStepActionObservationSearchResultChunkInfo[]
+         */
+        public function setChunkInfo($chunkInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaAnswerStepActionObservationSearchResultChunkInfo[]
+         */
+        public function getChunkInfo()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDocument($document)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDocument()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaAnswerStepActionObservationSearchResultSnippetInfo[]
+         */
+        public function setSnippetInfo($snippetInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaAnswerStepActionObservationSearchResultSnippetInfo[]
+         */
+        public function getSnippetInfo()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1betaAnswerStepActionObservationSearchResultChunkInfo[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaAnswerStepActionObservationSearchResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChunkInfo()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDocument($document)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDocument()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaAnswerStepActionObservationSearchResultSnippetInfo[]
-     */
-    public function setSnippetInfo($snippetInfo)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaAnswerStepActionObservationSearchResultSnippetInfo[]
-     */
-    public function getSnippetInfo()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaAnswerStepActionObservationSearchResult extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaAnswerStepActionObservationSearchResult
     {
     }
 }

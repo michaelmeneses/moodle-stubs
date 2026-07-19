@@ -21,60 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sasportal\Resource;
-
-/**
- * The "devices" collection of methods.
- * Typical usage is:
- *  <code>
- *   $sasportalService = new Google\Service\Sasportal(...);
- *   $devices = $sasportalService->nodes_deployments_devices;
- *  </code>
- */
-class NodesDeploymentsDevices extends \Google\Service\Resource
-{
+namespace Google\Service\Sasportal\Resource {
+    use Google\Service\Sasportal\SasPortalCreateSignedDeviceRequest;
+    use Google\Service\Sasportal\SasPortalDevice;
+    use Google\Service\Sasportal\SasPortalListDevicesResponse;
     /**
-     * Creates a device under a node or customer. (devices.create)
-     *
-     * @param string $parent Required. The name of the parent resource.
-     * @param SasPortalDevice $postBody
-     * @param array $optParams Optional parameters.
-     * @return SasPortalDevice
-     * @throws \Google\Service\Exception
+     * The "devices" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $sasportalService = new Google\Service\Sasportal(...);
+     *   $devices = $sasportalService->nodes_deployments_devices;
+     *  </code>
      */
-    public function create($parent, SasPortalDevice $postBody, $optParams = [])
+    class NodesDeploymentsDevices extends \Google\Service\Resource
     {
+        /**
+         * Creates a device under a node or customer. (devices.create)
+         *
+         * @param string $parent Required. The name of the parent resource.
+         * @param SasPortalDevice $postBody
+         * @param array $optParams Optional parameters.
+         * @return SasPortalDevice
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, SasPortalDevice $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Creates a signed device under a node or customer. (devices.createSigned)
+         *
+         * @param string $parent Required. The name of the parent resource.
+         * @param SasPortalCreateSignedDeviceRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SasPortalDevice
+         * @throws \Google\Service\Exception
+         */
+        public function createSigned($parent, SasPortalCreateSignedDeviceRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Lists devices under a node or customer. (devices.listNodesDeploymentsDevices)
+         *
+         * @param string $parent Required. The name of the parent resource.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter The filter expression. The filter should have one of
+         * the following formats: "sn=123454" or "display_name=MyDevice". sn corresponds
+         * to serial number of the device. The filter is case insensitive.
+         * @opt_param int pageSize The maximum number of devices to return in the
+         * response. If empty or zero, all devices will be listed. Must be in the range
+         * [0, 1000].
+         * @opt_param string pageToken A pagination token returned from a previous call
+         * to ListDevices that indicates where this listing should continue from.
+         * @return SasPortalListDevicesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listNodesDeploymentsDevices($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Creates a signed device under a node or customer. (devices.createSigned)
-     *
-     * @param string $parent Required. The name of the parent resource.
-     * @param SasPortalCreateSignedDeviceRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SasPortalDevice
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Sasportal\Resource\NodesDeploymentsDevices registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function createSigned($parent, SasPortalCreateSignedDeviceRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Lists devices under a node or customer. (devices.listNodesDeploymentsDevices)
-     *
-     * @param string $parent Required. The name of the parent resource.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter The filter expression. The filter should have one of
-     * the following formats: "sn=123454" or "display_name=MyDevice". sn corresponds
-     * to serial number of the device. The filter is case insensitive.
-     * @opt_param int pageSize The maximum number of devices to return in the
-     * response. If empty or zero, all devices will be listed. Must be in the range
-     * [0, 1000].
-     * @opt_param string pageToken A pagination token returned from a previous call
-     * to ListDevices that indicates where this listing should continue from.
-     * @return SasPortalListDevicesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listNodesDeploymentsDevices($parent, $optParams = [])
+    class Google_Service_Sasportal_Resource_NodesDeploymentsDevices extends \Google\Service\Sasportal\Resource\NodesDeploymentsDevices
     {
     }
 }

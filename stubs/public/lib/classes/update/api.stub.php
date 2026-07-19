@@ -29,6 +29,7 @@
  */
 namespace core\update;
 
+use curl;
 /**
  * General purpose client for https://download.moodle.org/api/
  *

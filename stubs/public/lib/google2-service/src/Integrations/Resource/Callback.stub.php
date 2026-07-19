@@ -21,34 +21,44 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations\Resource;
-
-/**
- * The "callback" collection of methods.
- * Typical usage is:
- *  <code>
- *   $integrationsService = new Google\Service\Integrations(...);
- *   $callback = $integrationsService->callback;
- *  </code>
- */
-class Callback extends \Google\Service\Resource
-{
+namespace Google\Service\Integrations\Resource {
+    use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaGenerateTokenResponse;
     /**
-     * Receives the auth code and auth config id to combine that with the client id
-     * and secret to retrieve access tokens from the token endpoint. Returns either
-     * a success or error message when it's done. (callback.generateToken)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string code The auth code for the given request
-     * @opt_param string gcpProjectId The gcp project id of the request
-     * @opt_param string product Which product sends the request
-     * @opt_param string redirectUri Redirect uri of the auth code request
-     * @opt_param string state The auth config id for the given request
-     * @return GoogleCloudIntegrationsV1alphaGenerateTokenResponse
-     * @throws \Google\Service\Exception
+     * The "callback" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $integrationsService = new Google\Service\Integrations(...);
+     *   $callback = $integrationsService->callback;
+     *  </code>
      */
-    public function generateToken($optParams = [])
+    class Callback extends \Google\Service\Resource
+    {
+        /**
+         * Receives the auth code and auth config id to combine that with the client id
+         * and secret to retrieve access tokens from the token endpoint. Returns either
+         * a success or error message when it's done. (callback.generateToken)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string code The auth code for the given request
+         * @opt_param string gcpProjectId The gcp project id of the request
+         * @opt_param string product Which product sends the request
+         * @opt_param string redirectUri Redirect uri of the auth code request
+         * @opt_param string state The auth config id for the given request
+         * @return GoogleCloudIntegrationsV1alphaGenerateTokenResponse
+         * @throws \Google\Service\Exception
+         */
+        public function generateToken($optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Integrations\Resource\Callback registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Integrations_Resource_Callback extends \Google\Service\Integrations\Resource\Callback
     {
     }
 }

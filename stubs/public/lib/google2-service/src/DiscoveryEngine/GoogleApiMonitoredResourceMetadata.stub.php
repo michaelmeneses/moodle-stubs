@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleApiMonitoredResourceMetadata extends \Google\Model
-{
-    /**
-     * Output only. Values for predefined system metadata labels. System labels
-     * are a kind of metadata extracted by Google, including "machine_image",
-     * "vpc", "subnet_id", "security_group", "name", etc. System label values can
-     * be only strings, Boolean values, or a list of strings. For example: {
-     * "name": "my-test-instance", "security_group": ["a", "b", "c"],
-     * "spot_instance": false }
-     *
-     * @var array[]
-     */
-    public $systemLabels;
-    /**
-     * Output only. A map of user-defined metadata labels.
-     *
-     * @var string[]
-     */
-    public $userLabels;
-    /**
-     * Output only. Values for predefined system metadata labels. System labels
-     * are a kind of metadata extracted by Google, including "machine_image",
-     * "vpc", "subnet_id", "security_group", "name", etc. System label values can
-     * be only strings, Boolean values, or a list of strings. For example: {
-     * "name": "my-test-instance", "security_group": ["a", "b", "c"],
-     * "spot_instance": false }
-     *
-     * @param array[] $systemLabels
-     */
-    public function setSystemLabels($systemLabels)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleApiMonitoredResourceMetadata extends \Google\Model
     {
+        /**
+         * Output only. Values for predefined system metadata labels. System labels
+         * are a kind of metadata extracted by Google, including "machine_image",
+         * "vpc", "subnet_id", "security_group", "name", etc. System label values can
+         * be only strings, Boolean values, or a list of strings. For example: {
+         * "name": "my-test-instance", "security_group": ["a", "b", "c"],
+         * "spot_instance": false }
+         *
+         * @var array[]
+         */
+        public $systemLabels;
+        /**
+         * Output only. A map of user-defined metadata labels.
+         *
+         * @var string[]
+         */
+        public $userLabels;
+        /**
+         * Output only. Values for predefined system metadata labels. System labels
+         * are a kind of metadata extracted by Google, including "machine_image",
+         * "vpc", "subnet_id", "security_group", "name", etc. System label values can
+         * be only strings, Boolean values, or a list of strings. For example: {
+         * "name": "my-test-instance", "security_group": ["a", "b", "c"],
+         * "spot_instance": false }
+         *
+         * @param array[] $systemLabels
+         */
+        public function setSystemLabels($systemLabels)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getSystemLabels()
+        {
+        }
+        /**
+         * Output only. A map of user-defined metadata labels.
+         *
+         * @param string[] $userLabels
+         */
+        public function setUserLabels($userLabels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUserLabels()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleApiMonitoredResourceMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSystemLabels()
-    {
-    }
-    /**
-     * Output only. A map of user-defined metadata labels.
-     *
-     * @param string[] $userLabels
-     */
-    public function setUserLabels($userLabels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUserLabels()
+    class Google_Service_DiscoveryEngine_GoogleApiMonitoredResourceMetadata extends \Google\Service\DiscoveryEngine\GoogleApiMonitoredResourceMetadata
     {
     }
 }

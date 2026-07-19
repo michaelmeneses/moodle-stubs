@@ -21,83 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class UpdateCellsRequest extends \Google\Collection
-{
-    protected $collection_key = 'rows';
-    /**
-     * The fields of CellData that should be updated. At least one field must be
-     * specified. The root is the CellData; 'row.values.' should not be specified.
-     * A single `"*"` can be used as short-hand for listing every field.
-     *
-     * @var string
-     */
-    public $fields;
-    protected $rangeType = GridRange::class;
-    protected $rangeDataType = '';
-    protected $rowsType = RowData::class;
-    protected $rowsDataType = 'array';
-    protected $startType = GridCoordinate::class;
-    protected $startDataType = '';
-    /**
-     * The fields of CellData that should be updated. At least one field must be
-     * specified. The root is the CellData; 'row.values.' should not be specified.
-     * A single `"*"` can be used as short-hand for listing every field.
-     *
-     * @param string $fields
-     */
-    public function setFields($fields)
+namespace Google\Service\Sheets {
+    class UpdateCellsRequest extends \Google\Collection
     {
+        protected $collection_key = 'rows';
+        /**
+         * The fields of CellData that should be updated. At least one field must be
+         * specified. The root is the CellData; 'row.values.' should not be specified.
+         * A single `"*"` can be used as short-hand for listing every field.
+         *
+         * @var string
+         */
+        public $fields;
+        protected $rangeType = GridRange::class;
+        protected $rangeDataType = '';
+        protected $rowsType = RowData::class;
+        protected $rowsDataType = 'array';
+        protected $startType = GridCoordinate::class;
+        protected $startDataType = '';
+        /**
+         * The fields of CellData that should be updated. At least one field must be
+         * specified. The root is the CellData; 'row.values.' should not be specified.
+         * A single `"*"` can be used as short-hand for listing every field.
+         *
+         * @param string $fields
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFields()
+        {
+        }
+        /**
+         * The range to write data to. If the data in rows does not cover the entire
+         * requested range, the fields matching those set in fields will be cleared.
+         *
+         * @param GridRange $range
+         */
+        public function setRange(GridRange $range)
+        {
+        }
+        /**
+         * @return GridRange
+         */
+        public function getRange()
+        {
+        }
+        /**
+         * The data to write.
+         *
+         * @param RowData[] $rows
+         */
+        public function setRows($rows)
+        {
+        }
+        /**
+         * @return RowData[]
+         */
+        public function getRows()
+        {
+        }
+        /**
+         * The coordinate to start writing data at. Any number of rows and columns
+         * (including a different number of columns per row) may be written.
+         *
+         * @param GridCoordinate $start
+         */
+        public function setStart(GridCoordinate $start)
+        {
+        }
+        /**
+         * @return GridCoordinate
+         */
+        public function getStart()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Sheets\UpdateCellsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFields()
-    {
-    }
-    /**
-     * The range to write data to. If the data in rows does not cover the entire
-     * requested range, the fields matching those set in fields will be cleared.
-     *
-     * @param GridRange $range
-     */
-    public function setRange(GridRange $range)
-    {
-    }
-    /**
-     * @return GridRange
-     */
-    public function getRange()
-    {
-    }
-    /**
-     * The data to write.
-     *
-     * @param RowData[] $rows
-     */
-    public function setRows($rows)
-    {
-    }
-    /**
-     * @return RowData[]
-     */
-    public function getRows()
-    {
-    }
-    /**
-     * The coordinate to start writing data at. Any number of rows and columns
-     * (including a different number of columns per row) may be written.
-     *
-     * @param GridCoordinate $start
-     */
-    public function setStart(GridCoordinate $start)
-    {
-    }
-    /**
-     * @return GridCoordinate
-     */
-    public function getStart()
+    class Google_Service_Sheets_UpdateCellsRequest extends \Google\Service\Sheets\UpdateCellsRequest
     {
     }
 }

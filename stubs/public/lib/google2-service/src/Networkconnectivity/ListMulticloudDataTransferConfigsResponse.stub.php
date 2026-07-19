@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class ListMulticloudDataTransferConfigsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $multicloudDataTransferConfigsType = MulticloudDataTransferConfig::class;
-    protected $multicloudDataTransferConfigsDataType = 'array';
-    /**
-     * The next page token.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * The list of `MulticloudDataTransferConfig` resources to be listed.
-     *
-     * @param MulticloudDataTransferConfig[] $multicloudDataTransferConfigs
-     */
-    public function setMulticloudDataTransferConfigs($multicloudDataTransferConfigs)
+namespace Google\Service\Networkconnectivity {
+    class ListMulticloudDataTransferConfigsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $multicloudDataTransferConfigsType = MulticloudDataTransferConfig::class;
+        protected $multicloudDataTransferConfigsDataType = 'array';
+        /**
+         * The next page token.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * The list of `MulticloudDataTransferConfig` resources to be listed.
+         *
+         * @param MulticloudDataTransferConfig[] $multicloudDataTransferConfigs
+         */
+        public function setMulticloudDataTransferConfigs($multicloudDataTransferConfigs)
+        {
+        }
+        /**
+         * @return MulticloudDataTransferConfig[]
+         */
+        public function getMulticloudDataTransferConfigs()
+        {
+        }
+        /**
+         * The next page token.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MulticloudDataTransferConfig[]
+     * Runtime class alias of \Google\Service\Networkconnectivity\ListMulticloudDataTransferConfigsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMulticloudDataTransferConfigs()
-    {
-    }
-    /**
-     * The next page token.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_Networkconnectivity_ListMulticloudDataTransferConfigsResponse extends \Google\Service\Networkconnectivity\ListMulticloudDataTransferConfigsResponse
     {
     }
 }

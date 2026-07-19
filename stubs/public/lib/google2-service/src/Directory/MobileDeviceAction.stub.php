@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class MobileDeviceAction extends \Google\Model
-{
-    /**
-     * The action to be performed on the device.
-     *
-     * @var string
-     */
-    public $action;
-    /**
-     * The action to be performed on the device.
-     *
-     * @param string $action
-     */
-    public function setAction($action)
+namespace Google\Service\Directory {
+    class MobileDeviceAction extends \Google\Model
     {
+        /**
+         * The action to be performed on the device.
+         *
+         * @var string
+         */
+        public $action;
+        /**
+         * The action to be performed on the device.
+         *
+         * @param string $action
+         */
+        public function setAction($action)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAction()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\MobileDeviceAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAction()
+    class Google_Service_Directory_MobileDeviceAction extends \Google\Service\Directory\MobileDeviceAction
     {
     }
 }

@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class TargetPoolInstanceHealth extends \Google\Collection
-{
-    protected $collection_key = 'healthStatus';
-    protected $healthStatusType = HealthStatus::class;
-    protected $healthStatusDataType = 'array';
-    /**
-     * Output only. [Output Only] Type of resource.
-     * Alwayscompute#targetPoolInstanceHealth when checking the health of an
-     * instance.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * @param HealthStatus[] $healthStatus
-     */
-    public function setHealthStatus($healthStatus)
+namespace Google\Service\Compute {
+    class TargetPoolInstanceHealth extends \Google\Collection
     {
+        protected $collection_key = 'healthStatus';
+        protected $healthStatusType = HealthStatus::class;
+        protected $healthStatusDataType = 'array';
+        /**
+         * Output only. [Output Only] Type of resource.
+         * Alwayscompute#targetPoolInstanceHealth when checking the health of an
+         * instance.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * @param HealthStatus[] $healthStatus
+         */
+        public function setHealthStatus($healthStatus)
+        {
+        }
+        /**
+         * @return HealthStatus[]
+         */
+        public function getHealthStatus()
+        {
+        }
+        /**
+         * Output only. [Output Only] Type of resource.
+         * Alwayscompute#targetPoolInstanceHealth when checking the health of an
+         * instance.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return HealthStatus[]
+     * Runtime class alias of \Google\Service\Compute\TargetPoolInstanceHealth registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHealthStatus()
-    {
-    }
-    /**
-     * Output only. [Output Only] Type of resource.
-     * Alwayscompute#targetPoolInstanceHealth when checking the health of an
-     * instance.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Compute_TargetPoolInstanceHealth extends \Google\Service\Compute\TargetPoolInstanceHealth
     {
     }
 }

@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1betaConversionEventDefaultConversionValue extends \Google\Model
-{
-    /**
-     * When a conversion event for this event_name has no set currency, this
-     * currency will be applied as the default. Must be in ISO 4217 currency code
-     * format. See https://en.wikipedia.org/wiki/ISO_4217 for more information.
-     *
-     * @var string
-     */
-    public $currencyCode;
-    /**
-     * This value will be used to populate the value for all conversions of the
-     * specified event_name where the event "value" parameter is unset.
-     *
-     * @var 
-     */
-    public $value;
-    /**
-     * When a conversion event for this event_name has no set currency, this
-     * currency will be applied as the default. Must be in ISO 4217 currency code
-     * format. See https://en.wikipedia.org/wiki/ISO_4217 for more information.
-     *
-     * @param string $currencyCode
-     */
-    public function setCurrencyCode($currencyCode)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1betaConversionEventDefaultConversionValue extends \Google\Model
     {
+        /**
+         * When a conversion event for this event_name has no set currency, this
+         * currency will be applied as the default. Must be in ISO 4217 currency code
+         * format. See https://en.wikipedia.org/wiki/ISO_4217 for more information.
+         *
+         * @var string
+         */
+        public $currencyCode;
+        /**
+         * This value will be used to populate the value for all conversions of the
+         * specified event_name where the event "value" parameter is unset.
+         *
+         * @var 
+         */
+        public $value;
+        /**
+         * When a conversion event for this event_name has no set currency, this
+         * currency will be applied as the default. Must be in ISO 4217 currency code
+         * format. See https://en.wikipedia.org/wiki/ISO_4217 for more information.
+         *
+         * @param string $currencyCode
+         */
+        public function setCurrencyCode($currencyCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrencyCode()
+        {
+        }
+        public function setValue($value)
+        {
+        }
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaConversionEventDefaultConversionValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCurrencyCode()
-    {
-    }
-    public function setValue($value)
-    {
-    }
-    public function getValue()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1betaConversionEventDefaultConversionValue extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaConversionEventDefaultConversionValue
     {
     }
 }

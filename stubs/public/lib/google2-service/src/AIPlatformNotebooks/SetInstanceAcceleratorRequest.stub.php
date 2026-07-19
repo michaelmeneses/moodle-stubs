@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class SetInstanceAcceleratorRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $coreCount;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param string
-     */
-    public function setCoreCount($coreCount)
+namespace Google\Service\AIPlatformNotebooks {
+    class SetInstanceAcceleratorRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $coreCount;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param string
+         */
+        public function setCoreCount($coreCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCoreCount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\SetInstanceAcceleratorRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCoreCount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_AIPlatformNotebooks_SetInstanceAcceleratorRequest extends \Google\Service\AIPlatformNotebooks\SetInstanceAcceleratorRequest
     {
     }
 }

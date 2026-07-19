@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class GoogleAppsCardV1NestedWidget extends \Google\Model
-{
-    protected $buttonListType = GoogleAppsCardV1ButtonList::class;
-    protected $buttonListDataType = '';
-    protected $imageType = GoogleAppsCardV1Image::class;
-    protected $imageDataType = '';
-    protected $textParagraphType = GoogleAppsCardV1TextParagraph::class;
-    protected $textParagraphDataType = '';
-    /**
-     * A button list widget.
-     *
-     * @param GoogleAppsCardV1ButtonList $buttonList
-     */
-    public function setButtonList(GoogleAppsCardV1ButtonList $buttonList)
+namespace Google\Service\HangoutsChat {
+    class GoogleAppsCardV1NestedWidget extends \Google\Model
     {
+        protected $buttonListType = GoogleAppsCardV1ButtonList::class;
+        protected $buttonListDataType = '';
+        protected $imageType = GoogleAppsCardV1Image::class;
+        protected $imageDataType = '';
+        protected $textParagraphType = GoogleAppsCardV1TextParagraph::class;
+        protected $textParagraphDataType = '';
+        /**
+         * A button list widget.
+         *
+         * @param GoogleAppsCardV1ButtonList $buttonList
+         */
+        public function setButtonList(GoogleAppsCardV1ButtonList $buttonList)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1ButtonList
+         */
+        public function getButtonList()
+        {
+        }
+        /**
+         * An image widget.
+         *
+         * @param GoogleAppsCardV1Image $image
+         */
+        public function setImage(GoogleAppsCardV1Image $image)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1Image
+         */
+        public function getImage()
+        {
+        }
+        /**
+         * A text paragraph widget.
+         *
+         * @param GoogleAppsCardV1TextParagraph $textParagraph
+         */
+        public function setTextParagraph(GoogleAppsCardV1TextParagraph $textParagraph)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1TextParagraph
+         */
+        public function getTextParagraph()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAppsCardV1ButtonList
+     * Runtime class alias of \Google\Service\HangoutsChat\GoogleAppsCardV1NestedWidget registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getButtonList()
-    {
-    }
-    /**
-     * An image widget.
-     *
-     * @param GoogleAppsCardV1Image $image
-     */
-    public function setImage(GoogleAppsCardV1Image $image)
-    {
-    }
-    /**
-     * @return GoogleAppsCardV1Image
-     */
-    public function getImage()
-    {
-    }
-    /**
-     * A text paragraph widget.
-     *
-     * @param GoogleAppsCardV1TextParagraph $textParagraph
-     */
-    public function setTextParagraph(GoogleAppsCardV1TextParagraph $textParagraph)
-    {
-    }
-    /**
-     * @return GoogleAppsCardV1TextParagraph
-     */
-    public function getTextParagraph()
+    class Google_Service_HangoutsChat_GoogleAppsCardV1NestedWidget extends \Google\Service\HangoutsChat\GoogleAppsCardV1NestedWidget
     {
     }
 }

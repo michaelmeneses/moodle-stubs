@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class GoogleCloudVisionV1p1beta1ProductSearchResultsGroupedResult extends \Google\Collection
-{
-    protected $collection_key = 'results';
-    protected $boundingPolyType = GoogleCloudVisionV1p1beta1BoundingPoly::class;
-    protected $boundingPolyDataType = '';
-    protected $objectAnnotationsType = GoogleCloudVisionV1p1beta1ProductSearchResultsObjectAnnotation::class;
-    protected $objectAnnotationsDataType = 'array';
-    protected $resultsType = GoogleCloudVisionV1p1beta1ProductSearchResultsResult::class;
-    protected $resultsDataType = 'array';
-    /**
-     * The bounding polygon around the product detected in the query image.
-     *
-     * @param GoogleCloudVisionV1p1beta1BoundingPoly $boundingPoly
-     */
-    public function setBoundingPoly(GoogleCloudVisionV1p1beta1BoundingPoly $boundingPoly)
+namespace Google\Service\Vision {
+    class GoogleCloudVisionV1p1beta1ProductSearchResultsGroupedResult extends \Google\Collection
     {
+        protected $collection_key = 'results';
+        protected $boundingPolyType = GoogleCloudVisionV1p1beta1BoundingPoly::class;
+        protected $boundingPolyDataType = '';
+        protected $objectAnnotationsType = GoogleCloudVisionV1p1beta1ProductSearchResultsObjectAnnotation::class;
+        protected $objectAnnotationsDataType = 'array';
+        protected $resultsType = GoogleCloudVisionV1p1beta1ProductSearchResultsResult::class;
+        protected $resultsDataType = 'array';
+        /**
+         * The bounding polygon around the product detected in the query image.
+         *
+         * @param GoogleCloudVisionV1p1beta1BoundingPoly $boundingPoly
+         */
+        public function setBoundingPoly(GoogleCloudVisionV1p1beta1BoundingPoly $boundingPoly)
+        {
+        }
+        /**
+         * @return GoogleCloudVisionV1p1beta1BoundingPoly
+         */
+        public function getBoundingPoly()
+        {
+        }
+        /**
+         * List of generic predictions for the object in the bounding box.
+         *
+         * @param GoogleCloudVisionV1p1beta1ProductSearchResultsObjectAnnotation[] $objectAnnotations
+         */
+        public function setObjectAnnotations($objectAnnotations)
+        {
+        }
+        /**
+         * @return GoogleCloudVisionV1p1beta1ProductSearchResultsObjectAnnotation[]
+         */
+        public function getObjectAnnotations()
+        {
+        }
+        /**
+         * List of results, one for each product match.
+         *
+         * @param GoogleCloudVisionV1p1beta1ProductSearchResultsResult[] $results
+         */
+        public function setResults($results)
+        {
+        }
+        /**
+         * @return GoogleCloudVisionV1p1beta1ProductSearchResultsResult[]
+         */
+        public function getResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudVisionV1p1beta1BoundingPoly
+     * Runtime class alias of \Google\Service\Vision\GoogleCloudVisionV1p1beta1ProductSearchResultsGroupedResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBoundingPoly()
-    {
-    }
-    /**
-     * List of generic predictions for the object in the bounding box.
-     *
-     * @param GoogleCloudVisionV1p1beta1ProductSearchResultsObjectAnnotation[] $objectAnnotations
-     */
-    public function setObjectAnnotations($objectAnnotations)
-    {
-    }
-    /**
-     * @return GoogleCloudVisionV1p1beta1ProductSearchResultsObjectAnnotation[]
-     */
-    public function getObjectAnnotations()
-    {
-    }
-    /**
-     * List of results, one for each product match.
-     *
-     * @param GoogleCloudVisionV1p1beta1ProductSearchResultsResult[] $results
-     */
-    public function setResults($results)
-    {
-    }
-    /**
-     * @return GoogleCloudVisionV1p1beta1ProductSearchResultsResult[]
-     */
-    public function getResults()
+    class Google_Service_Vision_GoogleCloudVisionV1p1beta1ProductSearchResultsGroupedResult extends \Google\Service\Vision\GoogleCloudVisionV1p1beta1ProductSearchResultsGroupedResult
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3RestoreAgentRequestGitSource extends \Google\Model
-{
-    /**
-     * tracking branch for the git pull
-     *
-     * @var string
-     */
-    public $trackingBranch;
-    /**
-     * tracking branch for the git pull
-     *
-     * @param string $trackingBranch
-     */
-    public function setTrackingBranch($trackingBranch)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3RestoreAgentRequestGitSource extends \Google\Model
     {
+        /**
+         * tracking branch for the git pull
+         *
+         * @var string
+         */
+        public $trackingBranch;
+        /**
+         * tracking branch for the git pull
+         *
+         * @param string $trackingBranch
+         */
+        public function setTrackingBranch($trackingBranch)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTrackingBranch()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3RestoreAgentRequestGitSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTrackingBranch()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3RestoreAgentRequestGitSource extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3RestoreAgentRequestGitSource
     {
     }
 }

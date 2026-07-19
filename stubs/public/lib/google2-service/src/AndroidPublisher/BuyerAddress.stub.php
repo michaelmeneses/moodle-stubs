@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class BuyerAddress extends \Google\Model
-{
-    /**
-     * Two letter country code based on ISO-3166-1 Alpha-2 (UN country codes).
-     *
-     * @var string
-     */
-    public $buyerCountry;
-    /**
-     * Postal code of an address. When Google is the Merchant of Record for the
-     * order, this information is not included.
-     *
-     * @var string
-     */
-    public $buyerPostcode;
-    /**
-     * Top-level administrative subdivision of the buyer address country. When
-     * Google is the Merchant of Record for the order, this information is not
-     * included.
-     *
-     * @var string
-     */
-    public $buyerState;
-    /**
-     * Two letter country code based on ISO-3166-1 Alpha-2 (UN country codes).
-     *
-     * @param string $buyerCountry
-     */
-    public function setBuyerCountry($buyerCountry)
+namespace Google\Service\AndroidPublisher {
+    class BuyerAddress extends \Google\Model
     {
+        /**
+         * Two letter country code based on ISO-3166-1 Alpha-2 (UN country codes).
+         *
+         * @var string
+         */
+        public $buyerCountry;
+        /**
+         * Postal code of an address. When Google is the Merchant of Record for the
+         * order, this information is not included.
+         *
+         * @var string
+         */
+        public $buyerPostcode;
+        /**
+         * Top-level administrative subdivision of the buyer address country. When
+         * Google is the Merchant of Record for the order, this information is not
+         * included.
+         *
+         * @var string
+         */
+        public $buyerState;
+        /**
+         * Two letter country code based on ISO-3166-1 Alpha-2 (UN country codes).
+         *
+         * @param string $buyerCountry
+         */
+        public function setBuyerCountry($buyerCountry)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBuyerCountry()
+        {
+        }
+        /**
+         * Postal code of an address. When Google is the Merchant of Record for the
+         * order, this information is not included.
+         *
+         * @param string $buyerPostcode
+         */
+        public function setBuyerPostcode($buyerPostcode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBuyerPostcode()
+        {
+        }
+        /**
+         * Top-level administrative subdivision of the buyer address country. When
+         * Google is the Merchant of Record for the order, this information is not
+         * included.
+         *
+         * @param string $buyerState
+         */
+        public function setBuyerState($buyerState)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBuyerState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\BuyerAddress registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBuyerCountry()
-    {
-    }
-    /**
-     * Postal code of an address. When Google is the Merchant of Record for the
-     * order, this information is not included.
-     *
-     * @param string $buyerPostcode
-     */
-    public function setBuyerPostcode($buyerPostcode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBuyerPostcode()
-    {
-    }
-    /**
-     * Top-level administrative subdivision of the buyer address country. When
-     * Google is the Merchant of Record for the order, this information is not
-     * included.
-     *
-     * @param string $buyerState
-     */
-    public function setBuyerState($buyerState)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBuyerState()
+    class Google_Service_AndroidPublisher_BuyerAddress extends \Google\Service\AndroidPublisher\BuyerAddress
     {
     }
 }

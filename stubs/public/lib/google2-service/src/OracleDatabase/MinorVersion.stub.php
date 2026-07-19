@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class MinorVersion extends \Google\Model
-{
-    /**
-     * Optional. The ID of the Grid Image.
-     *
-     * @var string
-     */
-    public $gridImageId;
-    /**
-     * Identifier. The name of the MinorVersion resource with the format: projects
-     * /{project}/locations/{region}/giVersions/{gi_version}/minorVersions/{minor_
-     * version}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. The valid Oracle grid infrastructure software version.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Optional. The ID of the Grid Image.
-     *
-     * @param string $gridImageId
-     */
-    public function setGridImageId($gridImageId)
+namespace Google\Service\OracleDatabase {
+    class MinorVersion extends \Google\Model
     {
+        /**
+         * Optional. The ID of the Grid Image.
+         *
+         * @var string
+         */
+        public $gridImageId;
+        /**
+         * Identifier. The name of the MinorVersion resource with the format: projects
+         * /{project}/locations/{region}/giVersions/{gi_version}/minorVersions/{minor_
+         * version}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. The valid Oracle grid infrastructure software version.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Optional. The ID of the Grid Image.
+         *
+         * @param string $gridImageId
+         */
+        public function setGridImageId($gridImageId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGridImageId()
+        {
+        }
+        /**
+         * Identifier. The name of the MinorVersion resource with the format: projects
+         * /{project}/locations/{region}/giVersions/{gi_version}/minorVersions/{minor_
+         * version}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. The valid Oracle grid infrastructure software version.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OracleDatabase\MinorVersion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGridImageId()
-    {
-    }
-    /**
-     * Identifier. The name of the MinorVersion resource with the format: projects
-     * /{project}/locations/{region}/giVersions/{gi_version}/minorVersions/{minor_
-     * version}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. The valid Oracle grid infrastructure software version.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_OracleDatabase_MinorVersion extends \Google\Service\OracleDatabase\MinorVersion
     {
     }
 }

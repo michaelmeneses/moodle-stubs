@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebaseappcheck;
-
-class GoogleFirebaseAppcheckV1GenerateAppAttestChallengeResponse extends \Google\Model
-{
-    /**
-     * A one-time use challenge for the client to pass to the App Attest API.
-     *
-     * @var string
-     */
-    public $challenge;
-    /**
-     * The duration from the time this challenge is minted until its expiration.
-     * This field is intended to ease client-side token management, since the
-     * client may have clock skew, but is still able to accurately measure a
-     * duration.
-     *
-     * @var string
-     */
-    public $ttl;
-    /**
-     * A one-time use challenge for the client to pass to the App Attest API.
-     *
-     * @param string $challenge
-     */
-    public function setChallenge($challenge)
+namespace Google\Service\Firebaseappcheck {
+    class GoogleFirebaseAppcheckV1GenerateAppAttestChallengeResponse extends \Google\Model
     {
+        /**
+         * A one-time use challenge for the client to pass to the App Attest API.
+         *
+         * @var string
+         */
+        public $challenge;
+        /**
+         * The duration from the time this challenge is minted until its expiration.
+         * This field is intended to ease client-side token management, since the
+         * client may have clock skew, but is still able to accurately measure a
+         * duration.
+         *
+         * @var string
+         */
+        public $ttl;
+        /**
+         * A one-time use challenge for the client to pass to the App Attest API.
+         *
+         * @param string $challenge
+         */
+        public function setChallenge($challenge)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChallenge()
+        {
+        }
+        /**
+         * The duration from the time this challenge is minted until its expiration.
+         * This field is intended to ease client-side token management, since the
+         * client may have clock skew, but is still able to accurately measure a
+         * duration.
+         *
+         * @param string $ttl
+         */
+        public function setTtl($ttl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTtl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1GenerateAppAttestChallengeResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChallenge()
-    {
-    }
-    /**
-     * The duration from the time this challenge is minted until its expiration.
-     * This field is intended to ease client-side token management, since the
-     * client may have clock skew, but is still able to accurately measure a
-     * duration.
-     *
-     * @param string $ttl
-     */
-    public function setTtl($ttl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTtl()
+    class Google_Service_Firebaseappcheck_GoogleFirebaseAppcheckV1GenerateAppAttestChallengeResponse extends \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1GenerateAppAttestChallengeResponse
     {
     }
 }

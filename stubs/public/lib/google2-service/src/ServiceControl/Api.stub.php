@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceControl;
-
-class Api extends \Google\Model
-{
-    /**
-     * The API operation name. For gRPC requests, it is the fully qualified API
-     * method name, such as "google.pubsub.v1.Publisher.Publish". For OpenAPI
-     * requests, it is the `operationId`, such as "getPet".
-     *
-     * @var string
-     */
-    public $operation;
-    /**
-     * The API protocol used for sending the request, such as "http", "https",
-     * "grpc", or "internal".
-     *
-     * @var string
-     */
-    public $protocol;
-    /**
-     * The API service name. It is a logical identifier for a networked API, such
-     * as "pubsub.googleapis.com". The naming syntax depends on the API management
-     * system being used for handling the request.
-     *
-     * @var string
-     */
-    public $service;
-    /**
-     * The API version associated with the API operation above, such as "v1" or
-     * "v1alpha1".
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * The API operation name. For gRPC requests, it is the fully qualified API
-     * method name, such as "google.pubsub.v1.Publisher.Publish". For OpenAPI
-     * requests, it is the `operationId`, such as "getPet".
-     *
-     * @param string $operation
-     */
-    public function setOperation($operation)
+namespace Google\Service\ServiceControl {
+    class Api extends \Google\Model
     {
+        /**
+         * The API operation name. For gRPC requests, it is the fully qualified API
+         * method name, such as "google.pubsub.v1.Publisher.Publish". For OpenAPI
+         * requests, it is the `operationId`, such as "getPet".
+         *
+         * @var string
+         */
+        public $operation;
+        /**
+         * The API protocol used for sending the request, such as "http", "https",
+         * "grpc", or "internal".
+         *
+         * @var string
+         */
+        public $protocol;
+        /**
+         * The API service name. It is a logical identifier for a networked API, such
+         * as "pubsub.googleapis.com". The naming syntax depends on the API management
+         * system being used for handling the request.
+         *
+         * @var string
+         */
+        public $service;
+        /**
+         * The API version associated with the API operation above, such as "v1" or
+         * "v1alpha1".
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * The API operation name. For gRPC requests, it is the fully qualified API
+         * method name, such as "google.pubsub.v1.Publisher.Publish". For OpenAPI
+         * requests, it is the `operationId`, such as "getPet".
+         *
+         * @param string $operation
+         */
+        public function setOperation($operation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperation()
+        {
+        }
+        /**
+         * The API protocol used for sending the request, such as "http", "https",
+         * "grpc", or "internal".
+         *
+         * @param string $protocol
+         */
+        public function setProtocol($protocol)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProtocol()
+        {
+        }
+        /**
+         * The API service name. It is a logical identifier for a networked API, such
+         * as "pubsub.googleapis.com". The naming syntax depends on the API management
+         * system being used for handling the request.
+         *
+         * @param string $service
+         */
+        public function setService($service)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getService()
+        {
+        }
+        /**
+         * The API version associated with the API operation above, such as "v1" or
+         * "v1alpha1".
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceControl\Api registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOperation()
-    {
-    }
-    /**
-     * The API protocol used for sending the request, such as "http", "https",
-     * "grpc", or "internal".
-     *
-     * @param string $protocol
-     */
-    public function setProtocol($protocol)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProtocol()
-    {
-    }
-    /**
-     * The API service name. It is a logical identifier for a networked API, such
-     * as "pubsub.googleapis.com". The naming syntax depends on the API management
-     * system being used for handling the request.
-     *
-     * @param string $service
-     */
-    public function setService($service)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getService()
-    {
-    }
-    /**
-     * The API version associated with the API operation above, such as "v1" or
-     * "v1alpha1".
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_ServiceControl_Api extends \Google\Service\ServiceControl\Api
     {
     }
 }

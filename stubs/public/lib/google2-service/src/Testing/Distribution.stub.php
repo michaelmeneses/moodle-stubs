@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class Distribution extends \Google\Model
-{
-    /**
-     * Output only. The estimated fraction (0-1) of the total market with this
-     * configuration.
-     *
-     * @var 
-     */
-    public $marketShare;
-    /**
-     * Output only. The time this distribution was measured.
-     *
-     * @var string
-     */
-    public $measurementTime;
-    public function setMarketShare($marketShare)
+namespace Google\Service\Testing {
+    class Distribution extends \Google\Model
     {
+        /**
+         * Output only. The estimated fraction (0-1) of the total market with this
+         * configuration.
+         *
+         * @var 
+         */
+        public $marketShare;
+        /**
+         * Output only. The time this distribution was measured.
+         *
+         * @var string
+         */
+        public $measurementTime;
+        public function setMarketShare($marketShare)
+        {
+        }
+        public function getMarketShare()
+        {
+        }
+        /**
+         * Output only. The time this distribution was measured.
+         *
+         * @param string $measurementTime
+         */
+        public function setMeasurementTime($measurementTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMeasurementTime()
+        {
+        }
     }
-    public function getMarketShare()
-    {
-    }
+}
+namespace {
     /**
-     * Output only. The time this distribution was measured.
-     *
-     * @param string $measurementTime
+     * Runtime class alias of \Google\Service\Testing\Distribution registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setMeasurementTime($measurementTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMeasurementTime()
+    class Google_Service_Testing_Distribution extends \Google\Service\Testing\Distribution
     {
     }
 }

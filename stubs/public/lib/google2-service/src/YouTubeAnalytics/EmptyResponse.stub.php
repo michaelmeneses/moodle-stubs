@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTubeAnalytics;
-
-class EmptyResponse extends \Google\Model
-{
-    protected $errorsType = Errors::class;
-    protected $errorsDataType = '';
-    /**
-     * Apiary error details
-     *
-     * @param Errors $errors
-     */
-    public function setErrors(Errors $errors)
+namespace Google\Service\YouTubeAnalytics {
+    class EmptyResponse extends \Google\Model
     {
+        protected $errorsType = Errors::class;
+        protected $errorsDataType = '';
+        /**
+         * Apiary error details
+         *
+         * @param Errors $errors
+         */
+        public function setErrors(Errors $errors)
+        {
+        }
+        /**
+         * @return Errors
+         */
+        public function getErrors()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Errors
+     * Runtime class alias of \Google\Service\YouTubeAnalytics\EmptyResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrors()
+    class Google_Service_YouTubeAnalytics_EmptyResponse extends \Google\Service\YouTubeAnalytics\EmptyResponse
     {
     }
 }

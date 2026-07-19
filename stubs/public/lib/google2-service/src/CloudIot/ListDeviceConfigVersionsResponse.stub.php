@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIot;
-
-class ListDeviceConfigVersionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'deviceConfigs';
-    protected $deviceConfigsType = DeviceConfig::class;
-    protected $deviceConfigsDataType = 'array';
-    /**
-     * @param DeviceConfig[]
-     */
-    public function setDeviceConfigs($deviceConfigs)
+namespace Google\Service\CloudIot {
+    class ListDeviceConfigVersionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'deviceConfigs';
+        protected $deviceConfigsType = DeviceConfig::class;
+        protected $deviceConfigsDataType = 'array';
+        /**
+         * @param DeviceConfig[]
+         */
+        public function setDeviceConfigs($deviceConfigs)
+        {
+        }
+        /**
+         * @return DeviceConfig[]
+         */
+        public function getDeviceConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DeviceConfig[]
+     * Runtime class alias of \Google\Service\CloudIot\ListDeviceConfigVersionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceConfigs()
+    class Google_Service_CloudIot_ListDeviceConfigVersionsResponse extends \Google\Service\CloudIot\ListDeviceConfigVersionsResponse
     {
     }
 }

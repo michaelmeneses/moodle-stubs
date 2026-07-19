@@ -8,6 +8,12 @@
  */
 namespace OpenSpout\Writer;
 
+use OpenSpout\Common\Entity\Row;
+use OpenSpout\Common\Exception\IOException;
+use OpenSpout\Writer\Common\Entity\Sheet;
+use OpenSpout\Writer\Common\Manager\WorkbookManagerInterface;
+use OpenSpout\Writer\Exception\SheetNotFoundException;
+use OpenSpout\Writer\Exception\WriterNotOpenedException;
 abstract class AbstractWriterMultiSheets extends AbstractWriter
 {
     private WorkbookManagerInterface $workbookManager;

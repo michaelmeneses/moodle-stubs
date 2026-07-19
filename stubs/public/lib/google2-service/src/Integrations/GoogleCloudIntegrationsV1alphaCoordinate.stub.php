@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaCoordinate extends \Google\Model
-{
-    /**
-     * Required. X axis of the coordinate
-     *
-     * @var int
-     */
-    public $x;
-    /**
-     * Required. Y axis of the coordinate
-     *
-     * @var int
-     */
-    public $y;
-    /**
-     * Required. X axis of the coordinate
-     *
-     * @param int $x
-     */
-    public function setX($x)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaCoordinate extends \Google\Model
     {
+        /**
+         * Required. X axis of the coordinate
+         *
+         * @var int
+         */
+        public $x;
+        /**
+         * Required. Y axis of the coordinate
+         *
+         * @var int
+         */
+        public $y;
+        /**
+         * Required. X axis of the coordinate
+         *
+         * @param int $x
+         */
+        public function setX($x)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getX()
+        {
+        }
+        /**
+         * Required. Y axis of the coordinate
+         *
+         * @param int $y
+         */
+        public function setY($y)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getY()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaCoordinate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getX()
-    {
-    }
-    /**
-     * Required. Y axis of the coordinate
-     *
-     * @param int $y
-     */
-    public function setY($y)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getY()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaCoordinate extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaCoordinate
     {
     }
 }

@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1AuthorizedViewSet extends \Google\Model
-{
-    /**
-     * Output only. Create time.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Display Name. Limit 64 characters.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Identifier. The resource name of the AuthorizedViewSet. Format: projects/{p
-     * roject}/locations/{location}/authorizedViewSets/{authorized_view_set}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Update time.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. Create time.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1AuthorizedViewSet extends \Google\Model
     {
+        /**
+         * Output only. Create time.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Display Name. Limit 64 characters.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Identifier. The resource name of the AuthorizedViewSet. Format: projects/{p
+         * roject}/locations/{location}/authorizedViewSets/{authorized_view_set}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Update time.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. Create time.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Display Name. Limit 64 characters.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Identifier. The resource name of the AuthorizedViewSet. Format: projects/{p
+         * roject}/locations/{location}/authorizedViewSets/{authorized_view_set}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Update time.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1AuthorizedViewSet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Display Name. Limit 64 characters.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Identifier. The resource name of the AuthorizedViewSet. Format: projects/{p
-     * roject}/locations/{location}/authorizedViewSets/{authorized_view_set}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Update time.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1AuthorizedViewSet extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1AuthorizedViewSet
     {
     }
 }

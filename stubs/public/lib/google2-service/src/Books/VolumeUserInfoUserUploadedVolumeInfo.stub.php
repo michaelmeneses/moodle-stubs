@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class VolumeUserInfoUserUploadedVolumeInfo extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $processingState;
-    /**
-     * @param string $processingState
-     */
-    public function setProcessingState($processingState)
+namespace Google\Service\Books {
+    class VolumeUserInfoUserUploadedVolumeInfo extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $processingState;
+        /**
+         * @param string $processingState
+         */
+        public function setProcessingState($processingState)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProcessingState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Books\VolumeUserInfoUserUploadedVolumeInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProcessingState()
+    class Google_Service_Books_VolumeUserInfoUserUploadedVolumeInfo extends \Google\Service\Books\VolumeUserInfoUserUploadedVolumeInfo
     {
     }
 }

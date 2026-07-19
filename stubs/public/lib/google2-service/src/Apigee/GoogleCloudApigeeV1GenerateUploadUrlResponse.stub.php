@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1GenerateUploadUrlResponse extends \Google\Model
-{
-    /**
-     * The Google Cloud Storage signed URL that can be used to upload a new
-     * Archive zip file.
-     *
-     * @var string
-     */
-    public $uploadUri;
-    /**
-     * The Google Cloud Storage signed URL that can be used to upload a new
-     * Archive zip file.
-     *
-     * @param string $uploadUri
-     */
-    public function setUploadUri($uploadUri)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1GenerateUploadUrlResponse extends \Google\Model
     {
+        /**
+         * The Google Cloud Storage signed URL that can be used to upload a new
+         * Archive zip file.
+         *
+         * @var string
+         */
+        public $uploadUri;
+        /**
+         * The Google Cloud Storage signed URL that can be used to upload a new
+         * Archive zip file.
+         *
+         * @param string $uploadUri
+         */
+        public function setUploadUri($uploadUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUploadUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1GenerateUploadUrlResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUploadUri()
+    class Google_Service_Apigee_GoogleCloudApigeeV1GenerateUploadUrlResponse extends \Google\Service\Apigee\GoogleCloudApigeeV1GenerateUploadUrlResponse
     {
     }
 }

@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ResourceRuntimeSpec extends \Google\Model
-{
-    protected $raySpecType = GoogleCloudAiplatformV1RaySpec::class;
-    protected $raySpecDataType = '';
-    protected $serviceAccountSpecType = GoogleCloudAiplatformV1ServiceAccountSpec::class;
-    protected $serviceAccountSpecDataType = '';
-    /**
-     * Optional. Ray cluster configuration. Required when creating a dedicated
-     * RayCluster on the PersistentResource.
-     *
-     * @param GoogleCloudAiplatformV1RaySpec $raySpec
-     */
-    public function setRaySpec(GoogleCloudAiplatformV1RaySpec $raySpec)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ResourceRuntimeSpec extends \Google\Model
     {
+        protected $raySpecType = GoogleCloudAiplatformV1RaySpec::class;
+        protected $raySpecDataType = '';
+        protected $serviceAccountSpecType = GoogleCloudAiplatformV1ServiceAccountSpec::class;
+        protected $serviceAccountSpecDataType = '';
+        /**
+         * Optional. Ray cluster configuration. Required when creating a dedicated
+         * RayCluster on the PersistentResource.
+         *
+         * @param GoogleCloudAiplatformV1RaySpec $raySpec
+         */
+        public function setRaySpec(GoogleCloudAiplatformV1RaySpec $raySpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RaySpec
+         */
+        public function getRaySpec()
+        {
+        }
+        /**
+         * Optional. Configure the use of workload identity on the PersistentResource
+         *
+         * @param GoogleCloudAiplatformV1ServiceAccountSpec $serviceAccountSpec
+         */
+        public function setServiceAccountSpec(GoogleCloudAiplatformV1ServiceAccountSpec $serviceAccountSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ServiceAccountSpec
+         */
+        public function getServiceAccountSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1RaySpec
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ResourceRuntimeSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRaySpec()
-    {
-    }
-    /**
-     * Optional. Configure the use of workload identity on the PersistentResource
-     *
-     * @param GoogleCloudAiplatformV1ServiceAccountSpec $serviceAccountSpec
-     */
-    public function setServiceAccountSpec(GoogleCloudAiplatformV1ServiceAccountSpec $serviceAccountSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1ServiceAccountSpec
-     */
-    public function getServiceAccountSpec()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ResourceRuntimeSpec extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ResourceRuntimeSpec
     {
     }
 }

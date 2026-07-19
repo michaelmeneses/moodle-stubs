@@ -21,33 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudKMS;
-
-class KeyAccessJustificationsPolicy extends \Google\Collection
-{
-    protected $collection_key = 'allowedAccessReasons';
-    /**
-     * The list of allowed reasons for access to a CryptoKey. Zero allowed access
-     * reasons means all encrypt, decrypt, and sign operations for the CryptoKey
-     * associated with this policy will fail.
-     *
-     * @var string[]
-     */
-    public $allowedAccessReasons;
-    /**
-     * The list of allowed reasons for access to a CryptoKey. Zero allowed access
-     * reasons means all encrypt, decrypt, and sign operations for the CryptoKey
-     * associated with this policy will fail.
-     *
-     * @param string[] $allowedAccessReasons
-     */
-    public function setAllowedAccessReasons($allowedAccessReasons)
+namespace Google\Service\CloudKMS {
+    class KeyAccessJustificationsPolicy extends \Google\Collection
     {
+        protected $collection_key = 'allowedAccessReasons';
+        /**
+         * The list of allowed reasons for access to a CryptoKey. Zero allowed access
+         * reasons means all encrypt, decrypt, and sign operations for the CryptoKey
+         * associated with this policy will fail.
+         *
+         * @var string[]
+         */
+        public $allowedAccessReasons;
+        /**
+         * The list of allowed reasons for access to a CryptoKey. Zero allowed access
+         * reasons means all encrypt, decrypt, and sign operations for the CryptoKey
+         * associated with this policy will fail.
+         *
+         * @param string[] $allowedAccessReasons
+         */
+        public function setAllowedAccessReasons($allowedAccessReasons)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAllowedAccessReasons()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudKMS\KeyAccessJustificationsPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowedAccessReasons()
+    class Google_Service_CloudKMS_KeyAccessJustificationsPolicy extends \Google\Service\CloudKMS\KeyAccessJustificationsPolicy
     {
     }
 }

@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class RepricingRuleEligibleOfferMatcher extends \Google\Model
-{
-    /**
-     * @var RepricingRuleEligibleOfferMatcherStringMatcher
-     */
-    public $brandMatcher;
-    protected $brandMatcherType = RepricingRuleEligibleOfferMatcherStringMatcher::class;
-    protected $brandMatcherDataType = '';
-    /**
-     * @var RepricingRuleEligibleOfferMatcherStringMatcher
-     */
-    public $itemGroupIdMatcher;
-    protected $itemGroupIdMatcherType = RepricingRuleEligibleOfferMatcherStringMatcher::class;
-    protected $itemGroupIdMatcherDataType = '';
-    /**
-     * @var string
-     */
-    public $matcherOption;
-    /**
-     * @var RepricingRuleEligibleOfferMatcherStringMatcher
-     */
-    public $offerIdMatcher;
-    protected $offerIdMatcherType = RepricingRuleEligibleOfferMatcherStringMatcher::class;
-    protected $offerIdMatcherDataType = '';
-    /**
-     * @var bool
-     */
-    public $skipWhenOnPromotion;
-    /**
-     * @param RepricingRuleEligibleOfferMatcherStringMatcher
-     */
-    public function setBrandMatcher(RepricingRuleEligibleOfferMatcherStringMatcher $brandMatcher)
+namespace Google\Service\ShoppingContent {
+    class RepricingRuleEligibleOfferMatcher extends \Google\Model
     {
+        /**
+         * @var RepricingRuleEligibleOfferMatcherStringMatcher
+         */
+        public $brandMatcher;
+        protected $brandMatcherType = RepricingRuleEligibleOfferMatcherStringMatcher::class;
+        protected $brandMatcherDataType = '';
+        /**
+         * @var RepricingRuleEligibleOfferMatcherStringMatcher
+         */
+        public $itemGroupIdMatcher;
+        protected $itemGroupIdMatcherType = RepricingRuleEligibleOfferMatcherStringMatcher::class;
+        protected $itemGroupIdMatcherDataType = '';
+        /**
+         * @var string
+         */
+        public $matcherOption;
+        /**
+         * @var RepricingRuleEligibleOfferMatcherStringMatcher
+         */
+        public $offerIdMatcher;
+        protected $offerIdMatcherType = RepricingRuleEligibleOfferMatcherStringMatcher::class;
+        protected $offerIdMatcherDataType = '';
+        /**
+         * @var bool
+         */
+        public $skipWhenOnPromotion;
+        /**
+         * @param RepricingRuleEligibleOfferMatcherStringMatcher
+         */
+        public function setBrandMatcher(RepricingRuleEligibleOfferMatcherStringMatcher $brandMatcher)
+        {
+        }
+        /**
+         * @return RepricingRuleEligibleOfferMatcherStringMatcher
+         */
+        public function getBrandMatcher()
+        {
+        }
+        /**
+         * @param RepricingRuleEligibleOfferMatcherStringMatcher
+         */
+        public function setItemGroupIdMatcher(RepricingRuleEligibleOfferMatcherStringMatcher $itemGroupIdMatcher)
+        {
+        }
+        /**
+         * @return RepricingRuleEligibleOfferMatcherStringMatcher
+         */
+        public function getItemGroupIdMatcher()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMatcherOption($matcherOption)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMatcherOption()
+        {
+        }
+        /**
+         * @param RepricingRuleEligibleOfferMatcherStringMatcher
+         */
+        public function setOfferIdMatcher(RepricingRuleEligibleOfferMatcherStringMatcher $offerIdMatcher)
+        {
+        }
+        /**
+         * @return RepricingRuleEligibleOfferMatcherStringMatcher
+         */
+        public function getOfferIdMatcher()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setSkipWhenOnPromotion($skipWhenOnPromotion)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSkipWhenOnPromotion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RepricingRuleEligibleOfferMatcherStringMatcher
+     * Runtime class alias of \Google\Service\ShoppingContent\RepricingRuleEligibleOfferMatcher registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBrandMatcher()
-    {
-    }
-    /**
-     * @param RepricingRuleEligibleOfferMatcherStringMatcher
-     */
-    public function setItemGroupIdMatcher(RepricingRuleEligibleOfferMatcherStringMatcher $itemGroupIdMatcher)
-    {
-    }
-    /**
-     * @return RepricingRuleEligibleOfferMatcherStringMatcher
-     */
-    public function getItemGroupIdMatcher()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMatcherOption($matcherOption)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMatcherOption()
-    {
-    }
-    /**
-     * @param RepricingRuleEligibleOfferMatcherStringMatcher
-     */
-    public function setOfferIdMatcher(RepricingRuleEligibleOfferMatcherStringMatcher $offerIdMatcher)
-    {
-    }
-    /**
-     * @return RepricingRuleEligibleOfferMatcherStringMatcher
-     */
-    public function getOfferIdMatcher()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setSkipWhenOnPromotion($skipWhenOnPromotion)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSkipWhenOnPromotion()
+    class Google_Service_ShoppingContent_RepricingRuleEligibleOfferMatcher extends \Google\Service\ShoppingContent\RepricingRuleEligibleOfferMatcher
     {
     }
 }

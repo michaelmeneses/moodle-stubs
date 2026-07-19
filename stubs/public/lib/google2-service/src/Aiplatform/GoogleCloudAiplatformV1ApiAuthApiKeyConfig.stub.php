@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ApiAuthApiKeyConfig extends \Google\Model
-{
-    /**
-     * Required. The SecretManager secret version resource name storing API key.
-     * e.g. projects/{project}/secrets/{secret}/versions/{version}
-     *
-     * @var string
-     */
-    public $apiKeySecretVersion;
-    /**
-     * The API key string. Either this or `api_key_secret_version` must be set.
-     *
-     * @var string
-     */
-    public $apiKeyString;
-    /**
-     * Required. The SecretManager secret version resource name storing API key.
-     * e.g. projects/{project}/secrets/{secret}/versions/{version}
-     *
-     * @param string $apiKeySecretVersion
-     */
-    public function setApiKeySecretVersion($apiKeySecretVersion)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ApiAuthApiKeyConfig extends \Google\Model
     {
+        /**
+         * Required. The SecretManager secret version resource name storing API key.
+         * e.g. projects/{project}/secrets/{secret}/versions/{version}
+         *
+         * @var string
+         */
+        public $apiKeySecretVersion;
+        /**
+         * The API key string. Either this or `api_key_secret_version` must be set.
+         *
+         * @var string
+         */
+        public $apiKeyString;
+        /**
+         * Required. The SecretManager secret version resource name storing API key.
+         * e.g. projects/{project}/secrets/{secret}/versions/{version}
+         *
+         * @param string $apiKeySecretVersion
+         */
+        public function setApiKeySecretVersion($apiKeySecretVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApiKeySecretVersion()
+        {
+        }
+        /**
+         * The API key string. Either this or `api_key_secret_version` must be set.
+         *
+         * @param string $apiKeyString
+         */
+        public function setApiKeyString($apiKeyString)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApiKeyString()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ApiAuthApiKeyConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiKeySecretVersion()
-    {
-    }
-    /**
-     * The API key string. Either this or `api_key_secret_version` must be set.
-     *
-     * @param string $apiKeyString
-     */
-    public function setApiKeyString($apiKeyString)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getApiKeyString()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ApiAuthApiKeyConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ApiAuthApiKeyConfig
     {
     }
 }

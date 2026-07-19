@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIManagement;
-
-class BatchEditTagsApiObservationsRequest extends \Google\Collection
-{
-    protected $collection_key = 'requests';
-    protected $requestsType = EditTagsApiObservationsRequest::class;
-    protected $requestsDataType = 'array';
-    /**
-     * Required. The request message specifying the resources to update. A maximum
-     * of 1000 apiObservations can be modified in a batch.
-     *
-     * @param EditTagsApiObservationsRequest[] $requests
-     */
-    public function setRequests($requests)
+namespace Google\Service\APIManagement {
+    class BatchEditTagsApiObservationsRequest extends \Google\Collection
     {
+        protected $collection_key = 'requests';
+        protected $requestsType = EditTagsApiObservationsRequest::class;
+        protected $requestsDataType = 'array';
+        /**
+         * Required. The request message specifying the resources to update. A maximum
+         * of 1000 apiObservations can be modified in a batch.
+         *
+         * @param EditTagsApiObservationsRequest[] $requests
+         */
+        public function setRequests($requests)
+        {
+        }
+        /**
+         * @return EditTagsApiObservationsRequest[]
+         */
+        public function getRequests()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EditTagsApiObservationsRequest[]
+     * Runtime class alias of \Google\Service\APIManagement\BatchEditTagsApiObservationsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequests()
+    class Google_Service_APIManagement_BatchEditTagsApiObservationsRequest extends \Google\Service\APIManagement\BatchEditTagsApiObservationsRequest
     {
     }
 }

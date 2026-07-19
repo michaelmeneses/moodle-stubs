@@ -21,109 +21,118 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class JobList extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    /**
-     * A hash of this page of results.
-     *
-     * @var string
-     */
-    public $etag;
-    protected $jobsType = JobListJobs::class;
-    protected $jobsDataType = 'array';
-    /**
-     * The resource type of the response.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * A token to request the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * A list of skipped locations that were unreachable. For more information
-     * about BigQuery locations, see:
-     * https://cloud.google.com/bigquery/docs/locations. Example: "europe-west5"
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * A hash of this page of results.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\Bigquery {
+    class JobList extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        /**
+         * A hash of this page of results.
+         *
+         * @var string
+         */
+        public $etag;
+        protected $jobsType = JobListJobs::class;
+        protected $jobsDataType = 'array';
+        /**
+         * The resource type of the response.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * A token to request the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * A list of skipped locations that were unreachable. For more information
+         * about BigQuery locations, see:
+         * https://cloud.google.com/bigquery/docs/locations. Example: "europe-west5"
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * A hash of this page of results.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * List of jobs that were requested.
+         *
+         * @param JobListJobs[] $jobs
+         */
+        public function setJobs($jobs)
+        {
+        }
+        /**
+         * @return JobListJobs[]
+         */
+        public function getJobs()
+        {
+        }
+        /**
+         * The resource type of the response.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * A token to request the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * A list of skipped locations that were unreachable. For more information
+         * about BigQuery locations, see:
+         * https://cloud.google.com/bigquery/docs/locations. Example: "europe-west5"
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\JobList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * List of jobs that were requested.
-     *
-     * @param JobListJobs[] $jobs
-     */
-    public function setJobs($jobs)
-    {
-    }
-    /**
-     * @return JobListJobs[]
-     */
-    public function getJobs()
-    {
-    }
-    /**
-     * The resource type of the response.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * A token to request the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * A list of skipped locations that were unreachable. For more information
-     * about BigQuery locations, see:
-     * https://cloud.google.com/bigquery/docs/locations. Example: "europe-west5"
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_Bigquery_JobList extends \Google\Service\Bigquery\JobList
     {
     }
 }

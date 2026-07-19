@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class CarrierAndIspTargetingOptionDetails extends \Google\Model
-{
-    /**
-     * Default value when type is not specified or is unknown in this version.
-     */
-    public const TYPE_CARRIER_AND_ISP_TYPE_UNSPECIFIED = 'CARRIER_AND_ISP_TYPE_UNSPECIFIED';
-    /**
-     * Indicates this targeting resource refers to an ISP.
-     */
-    public const TYPE_CARRIER_AND_ISP_TYPE_ISP = 'CARRIER_AND_ISP_TYPE_ISP';
-    /**
-     * Indicates this targeting resource refers to a mobile carrier.
-     */
-    public const TYPE_CARRIER_AND_ISP_TYPE_CARRIER = 'CARRIER_AND_ISP_TYPE_CARRIER';
-    /**
-     * Output only. The display name of the carrier or ISP.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. The type indicating if it's carrier or ISP.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Output only. The display name of the carrier or ISP.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\DisplayVideo {
+    class CarrierAndIspTargetingOptionDetails extends \Google\Model
     {
+        /**
+         * Default value when type is not specified or is unknown in this version.
+         */
+        public const TYPE_CARRIER_AND_ISP_TYPE_UNSPECIFIED = 'CARRIER_AND_ISP_TYPE_UNSPECIFIED';
+        /**
+         * Indicates this targeting resource refers to an ISP.
+         */
+        public const TYPE_CARRIER_AND_ISP_TYPE_ISP = 'CARRIER_AND_ISP_TYPE_ISP';
+        /**
+         * Indicates this targeting resource refers to a mobile carrier.
+         */
+        public const TYPE_CARRIER_AND_ISP_TYPE_CARRIER = 'CARRIER_AND_ISP_TYPE_CARRIER';
+        /**
+         * Output only. The display name of the carrier or ISP.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. The type indicating if it's carrier or ISP.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Output only. The display name of the carrier or ISP.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. The type indicating if it's carrier or ISP.
+         *
+         * Accepted values: CARRIER_AND_ISP_TYPE_UNSPECIFIED,
+         * CARRIER_AND_ISP_TYPE_ISP, CARRIER_AND_ISP_TYPE_CARRIER
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\CarrierAndIspTargetingOptionDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. The type indicating if it's carrier or ISP.
-     *
-     * Accepted values: CARRIER_AND_ISP_TYPE_UNSPECIFIED,
-     * CARRIER_AND_ISP_TYPE_ISP, CARRIER_AND_ISP_TYPE_CARRIER
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_DisplayVideo_CarrierAndIspTargetingOptionDetails extends \Google\Service\DisplayVideo\CarrierAndIspTargetingOptionDetails
     {
     }
 }

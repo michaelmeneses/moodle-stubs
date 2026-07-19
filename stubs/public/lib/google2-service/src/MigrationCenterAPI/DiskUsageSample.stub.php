@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class DiskUsageSample extends \Google\Model
-{
-    /**
-     * Optional. Average IOPS sampled over a short window. Must be non-negative.
-     * If read or write are set, the sum of read and write will override the value
-     * of the average_iops.
-     *
-     * @var float
-     */
-    public $averageIops;
-    /**
-     * Optional. Average read IOPS sampled over a short window. Must be non-
-     * negative. If both read and write are zero they are ignored.
-     *
-     * @var float
-     */
-    public $averageReadIops;
-    /**
-     * Optional. Average write IOPS sampled over a short window. Must be non-
-     * negative. If both read and write are zero they are ignored.
-     *
-     * @var float
-     */
-    public $averageWriteIops;
-    /**
-     * Optional. Average IOPS sampled over a short window. Must be non-negative.
-     * If read or write are set, the sum of read and write will override the value
-     * of the average_iops.
-     *
-     * @param float $averageIops
-     */
-    public function setAverageIops($averageIops)
+namespace Google\Service\MigrationCenterAPI {
+    class DiskUsageSample extends \Google\Model
     {
+        /**
+         * Optional. Average IOPS sampled over a short window. Must be non-negative.
+         * If read or write are set, the sum of read and write will override the value
+         * of the average_iops.
+         *
+         * @var float
+         */
+        public $averageIops;
+        /**
+         * Optional. Average read IOPS sampled over a short window. Must be non-
+         * negative. If both read and write are zero they are ignored.
+         *
+         * @var float
+         */
+        public $averageReadIops;
+        /**
+         * Optional. Average write IOPS sampled over a short window. Must be non-
+         * negative. If both read and write are zero they are ignored.
+         *
+         * @var float
+         */
+        public $averageWriteIops;
+        /**
+         * Optional. Average IOPS sampled over a short window. Must be non-negative.
+         * If read or write are set, the sum of read and write will override the value
+         * of the average_iops.
+         *
+         * @param float $averageIops
+         */
+        public function setAverageIops($averageIops)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getAverageIops()
+        {
+        }
+        /**
+         * Optional. Average read IOPS sampled over a short window. Must be non-
+         * negative. If both read and write are zero they are ignored.
+         *
+         * @param float $averageReadIops
+         */
+        public function setAverageReadIops($averageReadIops)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getAverageReadIops()
+        {
+        }
+        /**
+         * Optional. Average write IOPS sampled over a short window. Must be non-
+         * negative. If both read and write are zero they are ignored.
+         *
+         * @param float $averageWriteIops
+         */
+        public function setAverageWriteIops($averageWriteIops)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getAverageWriteIops()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\DiskUsageSample registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAverageIops()
-    {
-    }
-    /**
-     * Optional. Average read IOPS sampled over a short window. Must be non-
-     * negative. If both read and write are zero they are ignored.
-     *
-     * @param float $averageReadIops
-     */
-    public function setAverageReadIops($averageReadIops)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getAverageReadIops()
-    {
-    }
-    /**
-     * Optional. Average write IOPS sampled over a short window. Must be non-
-     * negative. If both read and write are zero they are ignored.
-     *
-     * @param float $averageWriteIops
-     */
-    public function setAverageWriteIops($averageWriteIops)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getAverageWriteIops()
+    class Google_Service_MigrationCenterAPI_DiskUsageSample extends \Google\Service\MigrationCenterAPI\DiskUsageSample
     {
     }
 }

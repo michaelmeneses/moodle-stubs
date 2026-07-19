@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class GoogleCloudPaymentsResellerSubscriptionV1ProductBundleDetailsBundleElement extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $product;
-    /**
-     * @param string
-     */
-    public function setProduct($product)
+namespace Google\Service\PaymentsResellerSubscription {
+    class GoogleCloudPaymentsResellerSubscriptionV1ProductBundleDetailsBundleElement extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $product;
+        /**
+         * @param string
+         */
+        public function setProduct($product)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProduct()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1ProductBundleDetailsBundleElement registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProduct()
+    class Google_Service_PaymentsResellerSubscription_GoogleCloudPaymentsResellerSubscriptionV1ProductBundleDetailsBundleElement extends \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1ProductBundleDetailsBundleElement
     {
     }
 }

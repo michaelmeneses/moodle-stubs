@@ -21,120 +21,129 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataprocMetastore;
-
-class CdcConfig extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $bucket;
-    /**
-     * @var string
-     */
-    public $password;
-    /**
-     * @var string
-     */
-    public $reverseProxySubnet;
-    /**
-     * @var string
-     */
-    public $rootPath;
-    /**
-     * @var string
-     */
-    public $subnetIpRange;
-    /**
-     * @var string
-     */
-    public $username;
-    /**
-     * @var string
-     */
-    public $vpcNetwork;
-    /**
-     * @param string
-     */
-    public function setBucket($bucket)
+namespace Google\Service\DataprocMetastore {
+    class CdcConfig extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $bucket;
+        /**
+         * @var string
+         */
+        public $password;
+        /**
+         * @var string
+         */
+        public $reverseProxySubnet;
+        /**
+         * @var string
+         */
+        public $rootPath;
+        /**
+         * @var string
+         */
+        public $subnetIpRange;
+        /**
+         * @var string
+         */
+        public $username;
+        /**
+         * @var string
+         */
+        public $vpcNetwork;
+        /**
+         * @param string
+         */
+        public function setBucket($bucket)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBucket()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPassword($password)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPassword()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReverseProxySubnet($reverseProxySubnet)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReverseProxySubnet()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRootPath($rootPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRootPath()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSubnetIpRange($subnetIpRange)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubnetIpRange()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUsername($username)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUsername()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setVpcNetwork($vpcNetwork)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVpcNetwork()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataprocMetastore\CdcConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBucket()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPassword($password)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPassword()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReverseProxySubnet($reverseProxySubnet)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReverseProxySubnet()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRootPath($rootPath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRootPath()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSubnetIpRange($subnetIpRange)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubnetIpRange()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUsername($username)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUsername()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setVpcNetwork($vpcNetwork)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVpcNetwork()
+    class Google_Service_DataprocMetastore_CdcConfig extends \Google\Service\DataprocMetastore\CdcConfig
     {
     }
 }

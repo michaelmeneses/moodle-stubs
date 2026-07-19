@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaListCertificatesResponse extends \Google\Collection
-{
-    protected $collection_key = 'certificates';
-    protected $certificatesType = GoogleCloudIntegrationsV1alphaCertificate::class;
-    protected $certificatesDataType = 'array';
-    /**
-     * The token used to retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of Certificates retrieved.
-     *
-     * @param GoogleCloudIntegrationsV1alphaCertificate[] $certificates
-     */
-    public function setCertificates($certificates)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaListCertificatesResponse extends \Google\Collection
     {
+        protected $collection_key = 'certificates';
+        protected $certificatesType = GoogleCloudIntegrationsV1alphaCertificate::class;
+        protected $certificatesDataType = 'array';
+        /**
+         * The token used to retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of Certificates retrieved.
+         *
+         * @param GoogleCloudIntegrationsV1alphaCertificate[] $certificates
+         */
+        public function setCertificates($certificates)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaCertificate[]
+         */
+        public function getCertificates()
+        {
+        }
+        /**
+         * The token used to retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudIntegrationsV1alphaCertificate[]
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListCertificatesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCertificates()
-    {
-    }
-    /**
-     * The token used to retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaListCertificatesResponse extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListCertificatesResponse
     {
     }
 }

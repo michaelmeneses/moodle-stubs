@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta3DatasetDocumentWarehouseConfig extends \Google\Model
-{
-    /**
-     * Output only. The collection in Document AI Warehouse associated with the
-     * dataset.
-     *
-     * @var string
-     */
-    public $collection;
-    /**
-     * Output only. The schema in Document AI Warehouse associated with the
-     * dataset.
-     *
-     * @var string
-     */
-    public $schema;
-    /**
-     * Output only. The collection in Document AI Warehouse associated with the
-     * dataset.
-     *
-     * @param string $collection
-     */
-    public function setCollection($collection)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta3DatasetDocumentWarehouseConfig extends \Google\Model
     {
+        /**
+         * Output only. The collection in Document AI Warehouse associated with the
+         * dataset.
+         *
+         * @var string
+         */
+        public $collection;
+        /**
+         * Output only. The schema in Document AI Warehouse associated with the
+         * dataset.
+         *
+         * @var string
+         */
+        public $schema;
+        /**
+         * Output only. The collection in Document AI Warehouse associated with the
+         * dataset.
+         *
+         * @param string $collection
+         */
+        public function setCollection($collection)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCollection()
+        {
+        }
+        /**
+         * Output only. The schema in Document AI Warehouse associated with the
+         * dataset.
+         *
+         * @param string $schema
+         */
+        public function setSchema($schema)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSchema()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta3DatasetDocumentWarehouseConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCollection()
-    {
-    }
-    /**
-     * Output only. The schema in Document AI Warehouse associated with the
-     * dataset.
-     *
-     * @param string $schema
-     */
-    public function setSchema($schema)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSchema()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta3DatasetDocumentWarehouseConfig extends \Google\Service\Document\GoogleCloudDocumentaiV1beta3DatasetDocumentWarehouseConfig
     {
     }
 }

@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity;
-
-class CloneAddressGroupItemsRequest extends \Google\Model
-{
-    /**
-     * Optional. An optional request ID to identify requests. Specify a unique
-     * request ID so that if you must retry your request, the server will know to
-     * ignore the request if it has already been completed. The server will
-     * guarantee that for at least 60 minutes since the first request. For
-     * example, consider a situation where you make an initial request and the
-     * request times out. If you make the request again with the same request ID,
-     * the server can check if original operation with the same request ID was
-     * received, and if so, will ignore the second request. This prevents clients
-     * from accidentally creating duplicate commitments. The request ID must be a
-     * valid UUID with the exception that zero UUID is not supported
-     * (00000000-0000-0000-0000-000000000000).
-     *
-     * @var string
-     */
-    public $requestId;
-    /**
-     * Required. Source address group to clone items from.
-     *
-     * @var string
-     */
-    public $sourceAddressGroup;
-    /**
-     * Optional. An optional request ID to identify requests. Specify a unique
-     * request ID so that if you must retry your request, the server will know to
-     * ignore the request if it has already been completed. The server will
-     * guarantee that for at least 60 minutes since the first request. For
-     * example, consider a situation where you make an initial request and the
-     * request times out. If you make the request again with the same request ID,
-     * the server can check if original operation with the same request ID was
-     * received, and if so, will ignore the second request. This prevents clients
-     * from accidentally creating duplicate commitments. The request ID must be a
-     * valid UUID with the exception that zero UUID is not supported
-     * (00000000-0000-0000-0000-000000000000).
-     *
-     * @param string $requestId
-     */
-    public function setRequestId($requestId)
+namespace Google\Service\NetworkSecurity {
+    class CloneAddressGroupItemsRequest extends \Google\Model
     {
+        /**
+         * Optional. An optional request ID to identify requests. Specify a unique
+         * request ID so that if you must retry your request, the server will know to
+         * ignore the request if it has already been completed. The server will
+         * guarantee that for at least 60 minutes since the first request. For
+         * example, consider a situation where you make an initial request and the
+         * request times out. If you make the request again with the same request ID,
+         * the server can check if original operation with the same request ID was
+         * received, and if so, will ignore the second request. This prevents clients
+         * from accidentally creating duplicate commitments. The request ID must be a
+         * valid UUID with the exception that zero UUID is not supported
+         * (00000000-0000-0000-0000-000000000000).
+         *
+         * @var string
+         */
+        public $requestId;
+        /**
+         * Required. Source address group to clone items from.
+         *
+         * @var string
+         */
+        public $sourceAddressGroup;
+        /**
+         * Optional. An optional request ID to identify requests. Specify a unique
+         * request ID so that if you must retry your request, the server will know to
+         * ignore the request if it has already been completed. The server will
+         * guarantee that for at least 60 minutes since the first request. For
+         * example, consider a situation where you make an initial request and the
+         * request times out. If you make the request again with the same request ID,
+         * the server can check if original operation with the same request ID was
+         * received, and if so, will ignore the second request. This prevents clients
+         * from accidentally creating duplicate commitments. The request ID must be a
+         * valid UUID with the exception that zero UUID is not supported
+         * (00000000-0000-0000-0000-000000000000).
+         *
+         * @param string $requestId
+         */
+        public function setRequestId($requestId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestId()
+        {
+        }
+        /**
+         * Required. Source address group to clone items from.
+         *
+         * @param string $sourceAddressGroup
+         */
+        public function setSourceAddressGroup($sourceAddressGroup)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceAddressGroup()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkSecurity\CloneAddressGroupItemsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequestId()
-    {
-    }
-    /**
-     * Required. Source address group to clone items from.
-     *
-     * @param string $sourceAddressGroup
-     */
-    public function setSourceAddressGroup($sourceAddressGroup)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceAddressGroup()
+    class Google_Service_NetworkSecurity_CloneAddressGroupItemsRequest extends \Google\Service\NetworkSecurity\CloneAddressGroupItemsRequest
     {
     }
 }

@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Css;
-
-class MethodDetails extends \Google\Model
-{
-    /**
-     * Output only. The name of the method for example
-     * `cssproductsservice.listcssproducts`.
-     *
-     * @var string
-     */
-    public $method;
-    /**
-     * Output only. The path for the method such as
-     * `v1/cssproductsservice.listcssproducts`.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * Output only. The sub-API that the method belongs to. In the CSS API, this
-     * is always `css`.
-     *
-     * @var string
-     */
-    public $subapi;
-    /**
-     * Output only. The API version that the method belongs to.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Output only. The name of the method for example
-     * `cssproductsservice.listcssproducts`.
-     *
-     * @param string $method
-     */
-    public function setMethod($method)
+namespace Google\Service\Css {
+    class MethodDetails extends \Google\Model
     {
+        /**
+         * Output only. The name of the method for example
+         * `cssproductsservice.listcssproducts`.
+         *
+         * @var string
+         */
+        public $method;
+        /**
+         * Output only. The path for the method such as
+         * `v1/cssproductsservice.listcssproducts`.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * Output only. The sub-API that the method belongs to. In the CSS API, this
+         * is always `css`.
+         *
+         * @var string
+         */
+        public $subapi;
+        /**
+         * Output only. The API version that the method belongs to.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Output only. The name of the method for example
+         * `cssproductsservice.listcssproducts`.
+         *
+         * @param string $method
+         */
+        public function setMethod($method)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMethod()
+        {
+        }
+        /**
+         * Output only. The path for the method such as
+         * `v1/cssproductsservice.listcssproducts`.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
+        /**
+         * Output only. The sub-API that the method belongs to. In the CSS API, this
+         * is always `css`.
+         *
+         * @param string $subapi
+         */
+        public function setSubapi($subapi)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubapi()
+        {
+        }
+        /**
+         * Output only. The API version that the method belongs to.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Css\MethodDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMethod()
-    {
-    }
-    /**
-     * Output only. The path for the method such as
-     * `v1/cssproductsservice.listcssproducts`.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
-    {
-    }
-    /**
-     * Output only. The sub-API that the method belongs to. In the CSS API, this
-     * is always `css`.
-     *
-     * @param string $subapi
-     */
-    public function setSubapi($subapi)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubapi()
-    {
-    }
-    /**
-     * Output only. The API version that the method belongs to.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_Css_MethodDetails extends \Google\Service\Css\MethodDetails
     {
     }
 }

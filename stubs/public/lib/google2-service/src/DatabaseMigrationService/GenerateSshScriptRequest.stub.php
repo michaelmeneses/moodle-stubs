@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class GenerateSshScriptRequest extends \Google\Model
-{
-    /**
-     * Required. Bastion VM Instance name to use or to create.
-     *
-     * @var string
-     */
-    public $vm;
-    protected $vmCreationConfigType = VmCreationConfig::class;
-    protected $vmCreationConfigDataType = '';
-    /**
-     * The port that will be open on the bastion host.
-     *
-     * @var int
-     */
-    public $vmPort;
-    protected $vmSelectionConfigType = VmSelectionConfig::class;
-    protected $vmSelectionConfigDataType = '';
-    /**
-     * Required. Bastion VM Instance name to use or to create.
-     *
-     * @param string $vm
-     */
-    public function setVm($vm)
+namespace Google\Service\DatabaseMigrationService {
+    class GenerateSshScriptRequest extends \Google\Model
     {
+        /**
+         * Required. Bastion VM Instance name to use or to create.
+         *
+         * @var string
+         */
+        public $vm;
+        protected $vmCreationConfigType = VmCreationConfig::class;
+        protected $vmCreationConfigDataType = '';
+        /**
+         * The port that will be open on the bastion host.
+         *
+         * @var int
+         */
+        public $vmPort;
+        protected $vmSelectionConfigType = VmSelectionConfig::class;
+        protected $vmSelectionConfigDataType = '';
+        /**
+         * Required. Bastion VM Instance name to use or to create.
+         *
+         * @param string $vm
+         */
+        public function setVm($vm)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVm()
+        {
+        }
+        /**
+         * The VM creation configuration
+         *
+         * @param VmCreationConfig $vmCreationConfig
+         */
+        public function setVmCreationConfig(VmCreationConfig $vmCreationConfig)
+        {
+        }
+        /**
+         * @return VmCreationConfig
+         */
+        public function getVmCreationConfig()
+        {
+        }
+        /**
+         * The port that will be open on the bastion host.
+         *
+         * @param int $vmPort
+         */
+        public function setVmPort($vmPort)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getVmPort()
+        {
+        }
+        /**
+         * The VM selection configuration
+         *
+         * @param VmSelectionConfig $vmSelectionConfig
+         */
+        public function setVmSelectionConfig(VmSelectionConfig $vmSelectionConfig)
+        {
+        }
+        /**
+         * @return VmSelectionConfig
+         */
+        public function getVmSelectionConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\GenerateSshScriptRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVm()
-    {
-    }
-    /**
-     * The VM creation configuration
-     *
-     * @param VmCreationConfig $vmCreationConfig
-     */
-    public function setVmCreationConfig(VmCreationConfig $vmCreationConfig)
-    {
-    }
-    /**
-     * @return VmCreationConfig
-     */
-    public function getVmCreationConfig()
-    {
-    }
-    /**
-     * The port that will be open on the bastion host.
-     *
-     * @param int $vmPort
-     */
-    public function setVmPort($vmPort)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getVmPort()
-    {
-    }
-    /**
-     * The VM selection configuration
-     *
-     * @param VmSelectionConfig $vmSelectionConfig
-     */
-    public function setVmSelectionConfig(VmSelectionConfig $vmSelectionConfig)
-    {
-    }
-    /**
-     * @return VmSelectionConfig
-     */
-    public function getVmSelectionConfig()
+    class Google_Service_DatabaseMigrationService_GenerateSshScriptRequest extends \Google\Service\DatabaseMigrationService\GenerateSshScriptRequest
     {
     }
 }

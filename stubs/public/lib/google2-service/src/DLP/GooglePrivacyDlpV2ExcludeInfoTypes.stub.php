@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2ExcludeInfoTypes extends \Google\Collection
-{
-    protected $collection_key = 'infoTypes';
-    protected $infoTypesType = GooglePrivacyDlpV2InfoType::class;
-    protected $infoTypesDataType = 'array';
-    /**
-     * InfoType list in ExclusionRule rule drops a finding when it overlaps or
-     * contained within with a finding of an infoType from this list. For example,
-     * for `InspectionRuleSet.info_types` containing "PHONE_NUMBER"` and
-     * `exclusion_rule` containing `exclude_info_types.info_types` with
-     * "EMAIL_ADDRESS" the phone number findings are dropped if they overlap with
-     * EMAIL_ADDRESS finding. That leads to "555-222-2222@example.org" to generate
-     * only a single finding, namely email address.
-     *
-     * @param GooglePrivacyDlpV2InfoType[] $infoTypes
-     */
-    public function setInfoTypes($infoTypes)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2ExcludeInfoTypes extends \Google\Collection
     {
+        protected $collection_key = 'infoTypes';
+        protected $infoTypesType = GooglePrivacyDlpV2InfoType::class;
+        protected $infoTypesDataType = 'array';
+        /**
+         * InfoType list in ExclusionRule rule drops a finding when it overlaps or
+         * contained within with a finding of an infoType from this list. For example,
+         * for `InspectionRuleSet.info_types` containing "PHONE_NUMBER"` and
+         * `exclusion_rule` containing `exclude_info_types.info_types` with
+         * "EMAIL_ADDRESS" the phone number findings are dropped if they overlap with
+         * EMAIL_ADDRESS finding. That leads to "555-222-2222@example.org" to generate
+         * only a single finding, namely email address.
+         *
+         * @param GooglePrivacyDlpV2InfoType[] $infoTypes
+         */
+        public function setInfoTypes($infoTypes)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2InfoType[]
+         */
+        public function getInfoTypes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2InfoType[]
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2ExcludeInfoTypes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInfoTypes()
+    class Google_Service_DLP_GooglePrivacyDlpV2ExcludeInfoTypes extends \Google\Service\DLP\GooglePrivacyDlpV2ExcludeInfoTypes
     {
     }
 }

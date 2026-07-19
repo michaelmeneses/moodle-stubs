@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution;
-
-class SSHKey extends \Google\Model
-{
-    /**
-     * Output only. The name of this SSH key. Currently, the only valid value for
-     * the location is "global".
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The public SSH key. This must be in OpenSSH .authorized_keys format.
-     *
-     * @var string
-     */
-    public $publicKey;
-    /**
-     * Output only. The name of this SSH key. Currently, the only valid value for
-     * the location is "global".
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Baremetalsolution {
+    class SSHKey extends \Google\Model
     {
+        /**
+         * Output only. The name of this SSH key. Currently, the only valid value for
+         * the location is "global".
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The public SSH key. This must be in OpenSSH .authorized_keys format.
+         *
+         * @var string
+         */
+        public $publicKey;
+        /**
+         * Output only. The name of this SSH key. Currently, the only valid value for
+         * the location is "global".
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The public SSH key. This must be in OpenSSH .authorized_keys format.
+         *
+         * @param string $publicKey
+         */
+        public function setPublicKey($publicKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPublicKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Baremetalsolution\SSHKey registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * The public SSH key. This must be in OpenSSH .authorized_keys format.
-     *
-     * @param string $publicKey
-     */
-    public function setPublicKey($publicKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPublicKey()
+    class Google_Service_Baremetalsolution_SSHKey extends \Google\Service\Baremetalsolution\SSHKey
     {
     }
 }

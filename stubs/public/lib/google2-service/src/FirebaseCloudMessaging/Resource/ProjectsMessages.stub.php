@@ -21,32 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseCloudMessaging\Resource;
-
-/**
- * The "messages" collection of methods.
- * Typical usage is:
- *  <code>
- *   $fcmService = new Google\Service\FirebaseCloudMessaging(...);
- *   $messages = $fcmService->projects_messages;
- *  </code>
- */
-class ProjectsMessages extends \Google\Service\Resource
-{
+namespace Google\Service\FirebaseCloudMessaging\Resource {
+    use Google\Service\FirebaseCloudMessaging\Message;
+    use Google\Service\FirebaseCloudMessaging\SendMessageRequest;
     /**
-     * Send a message to specified target (a registration token, topic or
-     * condition). (messages.send)
-     *
-     * @param string $parent Required. It contains the Firebase project id (i.e. the
-     * unique identifier for your Firebase project), in the format of
-     * `projects/{project_id}`. The numeric project number with no padding is also
-     * supported in the format of `projects/{project_number}`.
-     * @param SendMessageRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Message
-     * @throws \Google\Service\Exception
+     * The "messages" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $fcmService = new Google\Service\FirebaseCloudMessaging(...);
+     *   $messages = $fcmService->projects_messages;
+     *  </code>
      */
-    public function send($parent, SendMessageRequest $postBody, $optParams = [])
+    class ProjectsMessages extends \Google\Service\Resource
+    {
+        /**
+         * Send a message to specified target (a registration token, topic or
+         * condition). (messages.send)
+         *
+         * @param string $parent Required. It contains the Firebase project id (i.e. the
+         * unique identifier for your Firebase project), in the format of
+         * `projects/{project_id}`. The numeric project number with no padding is also
+         * supported in the format of `projects/{project_number}`.
+         * @param SendMessageRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Message
+         * @throws \Google\Service\Exception
+         */
+        public function send($parent, SendMessageRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\FirebaseCloudMessaging\Resource\ProjectsMessages registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_FirebaseCloudMessaging_Resource_ProjectsMessages extends \Google\Service\FirebaseCloudMessaging\Resource\ProjectsMessages
     {
     }
 }

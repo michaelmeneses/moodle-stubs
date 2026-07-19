@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class ListEnterprisesResponse extends \Google\Collection
-{
-    protected $collection_key = 'enterprises';
-    protected $enterprisesType = Enterprise::class;
-    protected $enterprisesDataType = 'array';
-    /**
-     * If there are more results, a token to retrieve next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of enterprises.
-     *
-     * @param Enterprise[] $enterprises
-     */
-    public function setEnterprises($enterprises)
+namespace Google\Service\AndroidManagement {
+    class ListEnterprisesResponse extends \Google\Collection
     {
+        protected $collection_key = 'enterprises';
+        protected $enterprisesType = Enterprise::class;
+        protected $enterprisesDataType = 'array';
+        /**
+         * If there are more results, a token to retrieve next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of enterprises.
+         *
+         * @param Enterprise[] $enterprises
+         */
+        public function setEnterprises($enterprises)
+        {
+        }
+        /**
+         * @return Enterprise[]
+         */
+        public function getEnterprises()
+        {
+        }
+        /**
+         * If there are more results, a token to retrieve next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Enterprise[]
+     * Runtime class alias of \Google\Service\AndroidManagement\ListEnterprisesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnterprises()
-    {
-    }
-    /**
-     * If there are more results, a token to retrieve next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_AndroidManagement_ListEnterprisesResponse extends \Google\Service\AndroidManagement\ListEnterprisesResponse
     {
     }
 }

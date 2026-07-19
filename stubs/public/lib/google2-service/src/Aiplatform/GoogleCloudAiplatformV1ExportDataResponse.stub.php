@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ExportDataResponse extends \Google\Collection
-{
-    protected $collection_key = 'exportedFiles';
-    protected $dataStatsType = GoogleCloudAiplatformV1ModelDataStats::class;
-    protected $dataStatsDataType = '';
-    /**
-     * All of the files that are exported in this export operation. For custom
-     * code training export, only three (training, validation and test) Cloud
-     * Storage paths in wildcard format are populated (for example,
-     * gs://.../training-*).
-     *
-     * @var string[]
-     */
-    public $exportedFiles;
-    /**
-     * Only present for custom code training export use case. Records data stats,
-     * i.e., train/validation/test item/annotation counts calculated during the
-     * export operation.
-     *
-     * @param GoogleCloudAiplatformV1ModelDataStats $dataStats
-     */
-    public function setDataStats(GoogleCloudAiplatformV1ModelDataStats $dataStats)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ExportDataResponse extends \Google\Collection
     {
+        protected $collection_key = 'exportedFiles';
+        protected $dataStatsType = GoogleCloudAiplatformV1ModelDataStats::class;
+        protected $dataStatsDataType = '';
+        /**
+         * All of the files that are exported in this export operation. For custom
+         * code training export, only three (training, validation and test) Cloud
+         * Storage paths in wildcard format are populated (for example,
+         * gs://.../training-*).
+         *
+         * @var string[]
+         */
+        public $exportedFiles;
+        /**
+         * Only present for custom code training export use case. Records data stats,
+         * i.e., train/validation/test item/annotation counts calculated during the
+         * export operation.
+         *
+         * @param GoogleCloudAiplatformV1ModelDataStats $dataStats
+         */
+        public function setDataStats(GoogleCloudAiplatformV1ModelDataStats $dataStats)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ModelDataStats
+         */
+        public function getDataStats()
+        {
+        }
+        /**
+         * All of the files that are exported in this export operation. For custom
+         * code training export, only three (training, validation and test) Cloud
+         * Storage paths in wildcard format are populated (for example,
+         * gs://.../training-*).
+         *
+         * @param string[] $exportedFiles
+         */
+        public function setExportedFiles($exportedFiles)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExportedFiles()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1ModelDataStats
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ExportDataResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataStats()
-    {
-    }
-    /**
-     * All of the files that are exported in this export operation. For custom
-     * code training export, only three (training, validation and test) Cloud
-     * Storage paths in wildcard format are populated (for example,
-     * gs://.../training-*).
-     *
-     * @param string[] $exportedFiles
-     */
-    public function setExportedFiles($exportedFiles)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getExportedFiles()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ExportDataResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ExportDataResponse
     {
     }
 }

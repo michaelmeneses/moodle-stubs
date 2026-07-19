@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class AuthConfigTemplate extends \Google\Collection
-{
-    protected $collection_key = 'configVariableTemplates';
-    /**
-     * @var string
-     */
-    public $authType;
-    protected $configVariableTemplatesType = ConfigVariableTemplate::class;
-    protected $configVariableTemplatesDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setAuthType($authType)
+namespace Google\Service\Connectors {
+    class AuthConfigTemplate extends \Google\Collection
     {
+        protected $collection_key = 'configVariableTemplates';
+        /**
+         * @var string
+         */
+        public $authType;
+        protected $configVariableTemplatesType = ConfigVariableTemplate::class;
+        protected $configVariableTemplatesDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setAuthType($authType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAuthType()
+        {
+        }
+        /**
+         * @param ConfigVariableTemplate[]
+         */
+        public function setConfigVariableTemplates($configVariableTemplates)
+        {
+        }
+        /**
+         * @return ConfigVariableTemplate[]
+         */
+        public function getConfigVariableTemplates()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Connectors\AuthConfigTemplate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthType()
-    {
-    }
-    /**
-     * @param ConfigVariableTemplate[]
-     */
-    public function setConfigVariableTemplates($configVariableTemplates)
-    {
-    }
-    /**
-     * @return ConfigVariableTemplate[]
-     */
-    public function getConfigVariableTemplates()
+    class Google_Service_Connectors_AuthConfigTemplate extends \Google\Service\Connectors\AuthConfigTemplate
     {
     }
 }

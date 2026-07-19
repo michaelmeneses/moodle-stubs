@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class MinimumOrderValueTableStoreCodeSetWithMov extends \Google\Collection
-{
-    protected $collection_key = 'storeCodes';
-    /**
-     * A list of unique store codes or empty for the catch all.
-     *
-     * @var string[]
-     */
-    public $storeCodes;
-    protected $valueType = Price::class;
-    protected $valueDataType = '';
-    /**
-     * A list of unique store codes or empty for the catch all.
-     *
-     * @param string[] $storeCodes
-     */
-    public function setStoreCodes($storeCodes)
+namespace Google\Service\ShoppingContent {
+    class MinimumOrderValueTableStoreCodeSetWithMov extends \Google\Collection
     {
+        protected $collection_key = 'storeCodes';
+        /**
+         * A list of unique store codes or empty for the catch all.
+         *
+         * @var string[]
+         */
+        public $storeCodes;
+        protected $valueType = Price::class;
+        protected $valueDataType = '';
+        /**
+         * A list of unique store codes or empty for the catch all.
+         *
+         * @param string[] $storeCodes
+         */
+        public function setStoreCodes($storeCodes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getStoreCodes()
+        {
+        }
+        /**
+         * The minimum order value for the given stores.
+         *
+         * @param Price $value
+         */
+        public function setValue(Price $value)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ShoppingContent\MinimumOrderValueTableStoreCodeSetWithMov registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStoreCodes()
-    {
-    }
-    /**
-     * The minimum order value for the given stores.
-     *
-     * @param Price $value
-     */
-    public function setValue(Price $value)
-    {
-    }
-    /**
-     * @return Price
-     */
-    public function getValue()
+    class Google_Service_ShoppingContent_MinimumOrderValueTableStoreCodeSetWithMov extends \Google\Service\ShoppingContent\MinimumOrderValueTableStoreCodeSetWithMov
     {
     }
 }

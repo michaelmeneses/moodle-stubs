@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class DeployParameters extends \Google\Model
-{
-    /**
-     * Optional. Deploy parameters are applied to targets with match labels. If
-     * unspecified, deploy parameters are applied to all targets (including child
-     * targets of a multi-target).
-     *
-     * @var string[]
-     */
-    public $matchTargetLabels;
-    /**
-     * Required. Values are deploy parameters in key-value pairs.
-     *
-     * @var string[]
-     */
-    public $values;
-    /**
-     * Optional. Deploy parameters are applied to targets with match labels. If
-     * unspecified, deploy parameters are applied to all targets (including child
-     * targets of a multi-target).
-     *
-     * @param string[] $matchTargetLabels
-     */
-    public function setMatchTargetLabels($matchTargetLabels)
+namespace Google\Service\CloudDeploy {
+    class DeployParameters extends \Google\Model
     {
+        /**
+         * Optional. Deploy parameters are applied to targets with match labels. If
+         * unspecified, deploy parameters are applied to all targets (including child
+         * targets of a multi-target).
+         *
+         * @var string[]
+         */
+        public $matchTargetLabels;
+        /**
+         * Required. Values are deploy parameters in key-value pairs.
+         *
+         * @var string[]
+         */
+        public $values;
+        /**
+         * Optional. Deploy parameters are applied to targets with match labels. If
+         * unspecified, deploy parameters are applied to all targets (including child
+         * targets of a multi-target).
+         *
+         * @param string[] $matchTargetLabels
+         */
+        public function setMatchTargetLabels($matchTargetLabels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMatchTargetLabels()
+        {
+        }
+        /**
+         * Required. Values are deploy parameters in key-value pairs.
+         *
+         * @param string[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudDeploy\DeployParameters registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMatchTargetLabels()
-    {
-    }
-    /**
-     * Required. Values are deploy parameters in key-value pairs.
-     *
-     * @param string[] $values
-     */
-    public function setValues($values)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getValues()
+    class Google_Service_CloudDeploy_DeployParameters extends \Google\Service\CloudDeploy\DeployParameters
     {
     }
 }

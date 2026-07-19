@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkspaceEvents;
-
-class FilePart extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $fileWithBytes;
-    /**
-     * @var string
-     */
-    public $fileWithUri;
-    /**
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @param string $fileWithBytes
-     */
-    public function setFileWithBytes($fileWithBytes)
+namespace Google\Service\WorkspaceEvents {
+    class FilePart extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $fileWithBytes;
+        /**
+         * @var string
+         */
+        public $fileWithUri;
+        /**
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @param string $fileWithBytes
+         */
+        public function setFileWithBytes($fileWithBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFileWithBytes()
+        {
+        }
+        /**
+         * @param string $fileWithUri
+         */
+        public function setFileWithUri($fileWithUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFileWithUri()
+        {
+        }
+        /**
+         * @param string $mimeType
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
+        /**
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WorkspaceEvents\FilePart registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFileWithBytes()
-    {
-    }
-    /**
-     * @param string $fileWithUri
-     */
-    public function setFileWithUri($fileWithUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFileWithUri()
-    {
-    }
-    /**
-     * @param string $mimeType
-     */
-    public function setMimeType($mimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimeType()
-    {
-    }
-    /**
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_WorkspaceEvents_FilePart extends \Google\Service\WorkspaceEvents\FilePart
     {
     }
 }

@@ -8,6 +8,21 @@
  */
 namespace Aws\S3\S3Transfer;
 
+use Aws\CommandInterface;
+use Aws\ResultInterface;
+use Aws\S3\S3ClientInterface;
+use Aws\S3\S3Transfer\Exception\S3TransferException;
+use Aws\S3\S3Transfer\Models\DownloadResult;
+use Aws\S3\S3Transfer\Models\S3TransferManagerConfig;
+use Aws\S3\S3Transfer\Progress\AbstractTransferListener;
+use Aws\S3\S3Transfer\Progress\TransferListenerNotifier;
+use Aws\S3\S3Transfer\Progress\TransferProgressSnapshot;
+use Aws\S3\S3Transfer\Utils\AbstractDownloadHandler;
+use Aws\S3\S3Transfer\Utils\StreamDownloadHandler;
+use GuzzleHttp\Promise\Coroutine;
+use GuzzleHttp\Promise\Create;
+use GuzzleHttp\Promise\PromiseInterface;
+use GuzzleHttp\Promise\PromisorInterface;
 abstract class AbstractMultipartDownloader implements PromisorInterface
 {
     public const GET_OBJECT_COMMAND = "GetObject";

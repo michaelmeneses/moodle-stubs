@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class DataCacheConfig extends \Google\Model
-{
-    /**
-     * Whether data cache is enabled for the instance.
-     *
-     * @var bool
-     */
-    public $dataCacheEnabled;
-    /**
-     * Whether data cache is enabled for the instance.
-     *
-     * @param bool $dataCacheEnabled
-     */
-    public function setDataCacheEnabled($dataCacheEnabled)
+namespace Google\Service\SQLAdmin {
+    class DataCacheConfig extends \Google\Model
     {
+        /**
+         * Whether data cache is enabled for the instance.
+         *
+         * @var bool
+         */
+        public $dataCacheEnabled;
+        /**
+         * Whether data cache is enabled for the instance.
+         *
+         * @param bool $dataCacheEnabled
+         */
+        public function setDataCacheEnabled($dataCacheEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDataCacheEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\SQLAdmin\DataCacheConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataCacheEnabled()
+    class Google_Service_SQLAdmin_DataCacheConfig extends \Google\Service\SQLAdmin\DataCacheConfig
     {
     }
 }

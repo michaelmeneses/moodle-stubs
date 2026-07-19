@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class Deployable extends \Google\Collection
-{
-    protected $collection_key = 'resourceUri';
-    public $resourceUri;
-    public function setResourceUri($resourceUri)
+namespace Google\Service\ContainerAnalysis {
+    class Deployable extends \Google\Collection
     {
+        protected $collection_key = 'resourceUri';
+        public $resourceUri;
+        public function setResourceUri($resourceUri)
+        {
+        }
+        public function getResourceUri()
+        {
+        }
     }
-    public function getResourceUri()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ContainerAnalysis\Deployable registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ContainerAnalysis_Deployable extends \Google\Service\ContainerAnalysis\Deployable
     {
     }
 }

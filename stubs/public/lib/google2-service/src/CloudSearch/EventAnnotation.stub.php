@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class EventAnnotation extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $type;
-    /**
-     * @var string
-     */
-    public $value;
-    /**
-     * @param int
-     */
-    public function setType($type)
+namespace Google\Service\CloudSearch {
+    class EventAnnotation extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $type;
+        /**
+         * @var string
+         */
+        public $value;
+        /**
+         * @param int
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudSearch\EventAnnotation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_CloudSearch_EventAnnotation extends \Google\Service\CloudSearch\EventAnnotation
     {
     }
 }

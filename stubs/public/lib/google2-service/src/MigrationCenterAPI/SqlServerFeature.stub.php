@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class SqlServerFeature extends \Google\Model
-{
-    /**
-     * Required. Field enabled is set when a feature is used on the source
-     * deployment.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * Required. The feature name.
-     *
-     * @var string
-     */
-    public $featureName;
-    /**
-     * Required. Field enabled is set when a feature is used on the source
-     * deployment.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\MigrationCenterAPI {
+    class SqlServerFeature extends \Google\Model
     {
+        /**
+         * Required. Field enabled is set when a feature is used on the source
+         * deployment.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * Required. The feature name.
+         *
+         * @var string
+         */
+        public $featureName;
+        /**
+         * Required. Field enabled is set when a feature is used on the source
+         * deployment.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
+        /**
+         * Required. The feature name.
+         *
+         * @param string $featureName
+         */
+        public function setFeatureName($featureName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFeatureName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\SqlServerFeature registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
-    {
-    }
-    /**
-     * Required. The feature name.
-     *
-     * @param string $featureName
-     */
-    public function setFeatureName($featureName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFeatureName()
+    class Google_Service_MigrationCenterAPI_SqlServerFeature extends \Google\Service\MigrationCenterAPI\SqlServerFeature
     {
     }
 }

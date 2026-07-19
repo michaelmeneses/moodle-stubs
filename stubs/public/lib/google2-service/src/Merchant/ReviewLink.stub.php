@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Merchant;
-
-class ReviewLink extends \Google\Model
-{
-    /**
-     * Type unspecified.
-     */
-    public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * The review page contains only this single review.
-     */
-    public const TYPE_SINGLETON = 'SINGLETON';
-    /**
-     * The review page contains a group of reviews including this review.
-     */
-    public const TYPE_GROUP = 'GROUP';
-    /**
-     * Optional. The URI of the review landing page. For example:
-     * `http://www.example.com/review_5.html`.
-     *
-     * @var string
-     */
-    public $link;
-    /**
-     * Optional. Type of the review URI.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Optional. The URI of the review landing page. For example:
-     * `http://www.example.com/review_5.html`.
-     *
-     * @param string $link
-     */
-    public function setLink($link)
+namespace Google\Service\Merchant {
+    class ReviewLink extends \Google\Model
     {
+        /**
+         * Type unspecified.
+         */
+        public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * The review page contains only this single review.
+         */
+        public const TYPE_SINGLETON = 'SINGLETON';
+        /**
+         * The review page contains a group of reviews including this review.
+         */
+        public const TYPE_GROUP = 'GROUP';
+        /**
+         * Optional. The URI of the review landing page. For example:
+         * `http://www.example.com/review_5.html`.
+         *
+         * @var string
+         */
+        public $link;
+        /**
+         * Optional. Type of the review URI.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Optional. The URI of the review landing page. For example:
+         * `http://www.example.com/review_5.html`.
+         *
+         * @param string $link
+         */
+        public function setLink($link)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLink()
+        {
+        }
+        /**
+         * Optional. Type of the review URI.
+         *
+         * Accepted values: TYPE_UNSPECIFIED, SINGLETON, GROUP
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Merchant\ReviewLink registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLink()
-    {
-    }
-    /**
-     * Optional. Type of the review URI.
-     *
-     * Accepted values: TYPE_UNSPECIFIED, SINGLETON, GROUP
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_Merchant_ReviewLink extends \Google\Service\Merchant\ReviewLink
     {
     }
 }

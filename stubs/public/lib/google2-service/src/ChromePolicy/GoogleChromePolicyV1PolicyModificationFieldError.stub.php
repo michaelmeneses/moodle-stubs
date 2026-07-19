@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyV1PolicyModificationFieldError extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $error;
-    /**
-     * @var string
-     */
-    public $field;
-    /**
-     * @param string
-     */
-    public function setError($error)
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyV1PolicyModificationFieldError extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $error;
+        /**
+         * @var string
+         */
+        public $field;
+        /**
+         * @param string
+         */
+        public function setError($error)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getError()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setField($field)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getField()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyV1PolicyModificationFieldError registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getError()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setField($field)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getField()
+    class Google_Service_ChromePolicy_GoogleChromePolicyV1PolicyModificationFieldError extends \Google\Service\ChromePolicy\GoogleChromePolicyV1PolicyModificationFieldError
     {
     }
 }

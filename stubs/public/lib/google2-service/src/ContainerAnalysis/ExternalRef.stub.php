@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class ExternalRef extends \Google\Model
-{
-    public $category;
-    public $comment;
-    public $locator;
-    public $type;
-    public function setCategory($category)
+namespace Google\Service\ContainerAnalysis {
+    class ExternalRef extends \Google\Model
     {
+        public $category;
+        public $comment;
+        public $locator;
+        public $type;
+        public function setCategory($category)
+        {
+        }
+        public function getCategory()
+        {
+        }
+        public function setComment($comment)
+        {
+        }
+        public function getComment()
+        {
+        }
+        public function setLocator($locator)
+        {
+        }
+        public function getLocator()
+        {
+        }
+        public function setType($type)
+        {
+        }
+        public function getType()
+        {
+        }
     }
-    public function getCategory()
-    {
-    }
-    public function setComment($comment)
-    {
-    }
-    public function getComment()
-    {
-    }
-    public function setLocator($locator)
-    {
-    }
-    public function getLocator()
-    {
-    }
-    public function setType($type)
-    {
-    }
-    public function getType()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ContainerAnalysis\ExternalRef registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ContainerAnalysis_ExternalRef extends \Google\Service\ContainerAnalysis\ExternalRef
     {
     }
 }

@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class UnitInvoiceAdditionalCharge extends \Google\Model
-{
-    protected $additionalChargeAmountType = Amount::class;
-    protected $additionalChargeAmountDataType = '';
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param Amount
-     */
-    public function setAdditionalChargeAmount(Amount $additionalChargeAmount)
+namespace Google\Service\ShoppingContent {
+    class UnitInvoiceAdditionalCharge extends \Google\Model
     {
+        protected $additionalChargeAmountType = Amount::class;
+        protected $additionalChargeAmountDataType = '';
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param Amount
+         */
+        public function setAdditionalChargeAmount(Amount $additionalChargeAmount)
+        {
+        }
+        /**
+         * @return Amount
+         */
+        public function getAdditionalChargeAmount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Amount
+     * Runtime class alias of \Google\Service\ShoppingContent\UnitInvoiceAdditionalCharge registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdditionalChargeAmount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_ShoppingContent_UnitInvoiceAdditionalCharge extends \Google\Service\ShoppingContent\UnitInvoiceAdditionalCharge
     {
     }
 }

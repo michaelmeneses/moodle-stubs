@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GameServices;
-
-class Schedule extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $cronJobDuration;
-    /**
-     * @var string
-     */
-    public $cronSpec;
-    /**
-     * @var string
-     */
-    public $endTime;
-    /**
-     * @var string
-     */
-    public $startTime;
-    /**
-     * @param string
-     */
-    public function setCronJobDuration($cronJobDuration)
+namespace Google\Service\GameServices {
+    class Schedule extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $cronJobDuration;
+        /**
+         * @var string
+         */
+        public $cronSpec;
+        /**
+         * @var string
+         */
+        public $endTime;
+        /**
+         * @var string
+         */
+        public $startTime;
+        /**
+         * @param string
+         */
+        public function setCronJobDuration($cronJobDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCronJobDuration()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCronSpec($cronSpec)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCronSpec()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GameServices\Schedule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCronJobDuration()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCronSpec($cronSpec)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCronSpec()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_GameServices_Schedule extends \Google\Service\GameServices\Schedule
     {
     }
 }

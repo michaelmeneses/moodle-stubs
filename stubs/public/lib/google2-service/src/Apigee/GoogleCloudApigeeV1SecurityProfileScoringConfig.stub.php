@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1SecurityProfileScoringConfig extends \Google\Model
-{
-    /**
-     * Description of the config.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Path of the component config used for scoring.
-     *
-     * @var string
-     */
-    public $scorePath;
-    /**
-     * Title of the config.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Description of the config.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1SecurityProfileScoringConfig extends \Google\Model
     {
+        /**
+         * Description of the config.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Path of the component config used for scoring.
+         *
+         * @var string
+         */
+        public $scorePath;
+        /**
+         * Title of the config.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Description of the config.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Path of the component config used for scoring.
+         *
+         * @param string $scorePath
+         */
+        public function setScorePath($scorePath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScorePath()
+        {
+        }
+        /**
+         * Title of the config.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1SecurityProfileScoringConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Path of the component config used for scoring.
-     *
-     * @param string $scorePath
-     */
-    public function setScorePath($scorePath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScorePath()
-    {
-    }
-    /**
-     * Title of the config.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_Apigee_GoogleCloudApigeeV1SecurityProfileScoringConfig extends \Google\Service\Apigee\GoogleCloudApigeeV1SecurityProfileScoringConfig
     {
     }
 }

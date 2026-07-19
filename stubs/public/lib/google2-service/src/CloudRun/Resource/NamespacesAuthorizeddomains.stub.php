@@ -21,31 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun\Resource;
-
-/**
- * The "authorizeddomains" collection of methods.
- * Typical usage is:
- *  <code>
- *   $runService = new Google\Service\CloudRun(...);
- *   $authorizeddomains = $runService->authorizeddomains;
- *  </code>
- */
-class NamespacesAuthorizeddomains extends \Google\Service\Resource
-{
+namespace Google\Service\CloudRun\Resource {
+    use Google\Service\CloudRun\ListAuthorizedDomainsResponse;
     /**
-     * List authorized domains. (authorizeddomains.listNamespacesAuthorizeddomains)
-     *
-     * @param string $parent Name of the parent Project resource. Example:
-     * `projects/myproject`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Maximum results to return per page.
-     * @opt_param string pageToken Continuation token for fetching the next page of
-     * results.
-     * @return ListAuthorizedDomainsResponse
+     * The "authorizeddomains" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $runService = new Google\Service\CloudRun(...);
+     *   $authorizeddomains = $runService->authorizeddomains;
+     *  </code>
      */
-    public function listNamespacesAuthorizeddomains($parent, $optParams = [])
+    class NamespacesAuthorizeddomains extends \Google\Service\Resource
+    {
+        /**
+         * List authorized domains. (authorizeddomains.listNamespacesAuthorizeddomains)
+         *
+         * @param string $parent Name of the parent Project resource. Example:
+         * `projects/myproject`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Maximum results to return per page.
+         * @opt_param string pageToken Continuation token for fetching the next page of
+         * results.
+         * @return ListAuthorizedDomainsResponse
+         */
+        public function listNamespacesAuthorizeddomains($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudRun\Resource\NamespacesAuthorizeddomains registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudRun_Resource_NamespacesAuthorizeddomains extends \Google\Service\CloudRun\Resource\NamespacesAuthorizeddomains
     {
     }
 }

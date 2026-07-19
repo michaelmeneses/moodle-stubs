@@ -21,125 +21,134 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1TelemetryUser extends \Google\Collection
-{
-    protected $collection_key = 'userDevice';
-    /**
-     * G Suite Customer whose enterprise enrolled the device.
-     *
-     * @var string
-     */
-    public $customer;
-    /**
-     * Resource name of the user.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Organization unit of the user.
-     *
-     * @var string
-     */
-    public $orgUnitId;
-    protected $userDeviceType = GoogleChromeManagementV1TelemetryUserDevice::class;
-    protected $userDeviceDataType = 'array';
-    /**
-     * Email address of the user.
-     *
-     * @var string
-     */
-    public $userEmail;
-    /**
-     * Directory ID of the user.
-     *
-     * @var string
-     */
-    public $userId;
-    /**
-     * G Suite Customer whose enterprise enrolled the device.
-     *
-     * @param string $customer
-     */
-    public function setCustomer($customer)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1TelemetryUser extends \Google\Collection
     {
+        protected $collection_key = 'userDevice';
+        /**
+         * G Suite Customer whose enterprise enrolled the device.
+         *
+         * @var string
+         */
+        public $customer;
+        /**
+         * Resource name of the user.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Organization unit of the user.
+         *
+         * @var string
+         */
+        public $orgUnitId;
+        protected $userDeviceType = GoogleChromeManagementV1TelemetryUserDevice::class;
+        protected $userDeviceDataType = 'array';
+        /**
+         * Email address of the user.
+         *
+         * @var string
+         */
+        public $userEmail;
+        /**
+         * Directory ID of the user.
+         *
+         * @var string
+         */
+        public $userId;
+        /**
+         * G Suite Customer whose enterprise enrolled the device.
+         *
+         * @param string $customer
+         */
+        public function setCustomer($customer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomer()
+        {
+        }
+        /**
+         * Resource name of the user.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Organization unit of the user.
+         *
+         * @param string $orgUnitId
+         */
+        public function setOrgUnitId($orgUnitId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrgUnitId()
+        {
+        }
+        /**
+         * Telemetry data collected from a managed user and device.
+         *
+         * @param GoogleChromeManagementV1TelemetryUserDevice[] $userDevice
+         */
+        public function setUserDevice($userDevice)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementV1TelemetryUserDevice[]
+         */
+        public function getUserDevice()
+        {
+        }
+        /**
+         * Email address of the user.
+         *
+         * @param string $userEmail
+         */
+        public function setUserEmail($userEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserEmail()
+        {
+        }
+        /**
+         * Directory ID of the user.
+         *
+         * @param string $userId
+         */
+        public function setUserId($userId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1TelemetryUser registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomer()
-    {
-    }
-    /**
-     * Resource name of the user.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Organization unit of the user.
-     *
-     * @param string $orgUnitId
-     */
-    public function setOrgUnitId($orgUnitId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrgUnitId()
-    {
-    }
-    /**
-     * Telemetry data collected from a managed user and device.
-     *
-     * @param GoogleChromeManagementV1TelemetryUserDevice[] $userDevice
-     */
-    public function setUserDevice($userDevice)
-    {
-    }
-    /**
-     * @return GoogleChromeManagementV1TelemetryUserDevice[]
-     */
-    public function getUserDevice()
-    {
-    }
-    /**
-     * Email address of the user.
-     *
-     * @param string $userEmail
-     */
-    public function setUserEmail($userEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserEmail()
-    {
-    }
-    /**
-     * Directory ID of the user.
-     *
-     * @param string $userId
-     */
-    public function setUserId($userId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserId()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1TelemetryUser extends \Google\Service\ChromeManagement\GoogleChromeManagementV1TelemetryUser
     {
     }
 }

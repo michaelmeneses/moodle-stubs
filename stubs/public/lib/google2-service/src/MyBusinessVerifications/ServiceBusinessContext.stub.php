@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessVerifications;
-
-class ServiceBusinessContext extends \Google\Model
-{
-    protected $addressType = PostalAddress::class;
-    protected $addressDataType = '';
-    /**
-     * The verification address of the location. It is used to either enable more
-     * verification options or send a postcard.
-     *
-     * @param PostalAddress $address
-     */
-    public function setAddress(PostalAddress $address)
+namespace Google\Service\MyBusinessVerifications {
+    class ServiceBusinessContext extends \Google\Model
     {
+        protected $addressType = PostalAddress::class;
+        protected $addressDataType = '';
+        /**
+         * The verification address of the location. It is used to either enable more
+         * verification options or send a postcard.
+         *
+         * @param PostalAddress $address
+         */
+        public function setAddress(PostalAddress $address)
+        {
+        }
+        /**
+         * @return PostalAddress
+         */
+        public function getAddress()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PostalAddress
+     * Runtime class alias of \Google\Service\MyBusinessVerifications\ServiceBusinessContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddress()
+    class Google_Service_MyBusinessVerifications_ServiceBusinessContext extends \Google\Service\MyBusinessVerifications\ServiceBusinessContext
     {
     }
 }

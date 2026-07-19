@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class StageExecutionDetails extends \Google\Collection
-{
-    protected $collection_key = 'workers';
-    /**
-     * If present, this response does not contain all requested tasks. To obtain
-     * the next page of results, repeat the request with page_token set to this
-     * value.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $workersType = WorkerDetails::class;
-    protected $workersDataType = 'array';
-    /**
-     * If present, this response does not contain all requested tasks. To obtain
-     * the next page of results, repeat the request with page_token set to this
-     * value.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Dataflow {
+    class StageExecutionDetails extends \Google\Collection
     {
+        protected $collection_key = 'workers';
+        /**
+         * If present, this response does not contain all requested tasks. To obtain
+         * the next page of results, repeat the request with page_token set to this
+         * value.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $workersType = WorkerDetails::class;
+        protected $workersDataType = 'array';
+        /**
+         * If present, this response does not contain all requested tasks. To obtain
+         * the next page of results, repeat the request with page_token set to this
+         * value.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Workers that have done work on the stage.
+         *
+         * @param WorkerDetails[] $workers
+         */
+        public function setWorkers($workers)
+        {
+        }
+        /**
+         * @return WorkerDetails[]
+         */
+        public function getWorkers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\StageExecutionDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Workers that have done work on the stage.
-     *
-     * @param WorkerDetails[] $workers
-     */
-    public function setWorkers($workers)
-    {
-    }
-    /**
-     * @return WorkerDetails[]
-     */
-    public function getWorkers()
+    class Google_Service_Dataflow_StageExecutionDetails extends \Google\Service\Dataflow\StageExecutionDetails
     {
     }
 }

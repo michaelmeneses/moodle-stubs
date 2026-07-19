@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class ProgressTimeseries extends \Google\Collection
-{
-    protected $collection_key = 'dataPoints';
-    /**
-     * The current progress of the component, in the range [0,1].
-     *
-     * @var 
-     */
-    public $currentProgress;
-    protected $dataPointsType = Point::class;
-    protected $dataPointsDataType = 'array';
-    public function setCurrentProgress($currentProgress)
+namespace Google\Service\Dataflow {
+    class ProgressTimeseries extends \Google\Collection
     {
+        protected $collection_key = 'dataPoints';
+        /**
+         * The current progress of the component, in the range [0,1].
+         *
+         * @var 
+         */
+        public $currentProgress;
+        protected $dataPointsType = Point::class;
+        protected $dataPointsDataType = 'array';
+        public function setCurrentProgress($currentProgress)
+        {
+        }
+        public function getCurrentProgress()
+        {
+        }
+        /**
+         * History of progress for the component. Points are sorted by time.
+         *
+         * @param Point[] $dataPoints
+         */
+        public function setDataPoints($dataPoints)
+        {
+        }
+        /**
+         * @return Point[]
+         */
+        public function getDataPoints()
+        {
+        }
     }
-    public function getCurrentProgress()
-    {
-    }
+}
+namespace {
     /**
-     * History of progress for the component. Points are sorted by time.
-     *
-     * @param Point[] $dataPoints
+     * Runtime class alias of \Google\Service\Dataflow\ProgressTimeseries registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setDataPoints($dataPoints)
-    {
-    }
-    /**
-     * @return Point[]
-     */
-    public function getDataPoints()
+    class Google_Service_Dataflow_ProgressTimeseries extends \Google\Service\Dataflow\ProgressTimeseries
     {
     }
 }

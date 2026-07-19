@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AuthorizedBuyersMarketplace;
-
-class PauseFinalizedDealRequest extends \Google\Model
-{
-    /**
-     * The reason to pause the finalized deal, will be displayed to the seller.
-     * Maximum length is 1000 characters.
-     *
-     * @var string
-     */
-    public $reason;
-    /**
-     * The reason to pause the finalized deal, will be displayed to the seller.
-     * Maximum length is 1000 characters.
-     *
-     * @param string $reason
-     */
-    public function setReason($reason)
+namespace Google\Service\AuthorizedBuyersMarketplace {
+    class PauseFinalizedDealRequest extends \Google\Model
     {
+        /**
+         * The reason to pause the finalized deal, will be displayed to the seller.
+         * Maximum length is 1000 characters.
+         *
+         * @var string
+         */
+        public $reason;
+        /**
+         * The reason to pause the finalized deal, will be displayed to the seller.
+         * Maximum length is 1000 characters.
+         *
+         * @param string $reason
+         */
+        public function setReason($reason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReason()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AuthorizedBuyersMarketplace\PauseFinalizedDealRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReason()
+    class Google_Service_AuthorizedBuyersMarketplace_PauseFinalizedDealRequest extends \Google\Service\AuthorizedBuyersMarketplace\PauseFinalizedDealRequest
     {
     }
 }

@@ -23,6 +23,28 @@
  */
 namespace Google\Auth;
 
+use DateTime;
+use Firebase\JWT\ExpiredException;
+use Firebase\JWT\JWT;
+use Firebase\JWT\Key;
+use Firebase\JWT\SignatureInvalidException;
+use Google\Auth\Cache\MemoryCacheItemPool;
+use Google\Auth\HttpHandler\HttpClientCache;
+use Google\Auth\HttpHandler\HttpHandlerFactory;
+use GuzzleHttp\Psr7\Request;
+use GuzzleHttp\Psr7\Utils;
+use InvalidArgumentException;
+use phpseclib3\Crypt\PublicKeyLoader;
+use phpseclib3\Crypt\RSA;
+use phpseclib3\Math\BigInteger;
+use Psr\Cache\CacheItemPoolInterface;
+use RuntimeException;
+use SimpleJWT\InvalidTokenException;
+use SimpleJWT\JWT as SimpleJWT;
+use SimpleJWT\Keys\KeyFactory;
+use SimpleJWT\Keys\KeySet;
+use TypeError;
+use UnexpectedValueException;
 /**
  * Wrapper around Google Access Tokens which provides convenience functions.
  *

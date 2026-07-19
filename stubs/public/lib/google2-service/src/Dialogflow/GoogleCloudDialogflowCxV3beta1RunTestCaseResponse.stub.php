@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3beta1RunTestCaseResponse extends \Google\Model
-{
-    protected $resultType = GoogleCloudDialogflowCxV3beta1TestCaseResult::class;
-    protected $resultDataType = '';
-    /**
-     * The result.
-     *
-     * @param GoogleCloudDialogflowCxV3beta1TestCaseResult $result
-     */
-    public function setResult(GoogleCloudDialogflowCxV3beta1TestCaseResult $result)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3beta1RunTestCaseResponse extends \Google\Model
     {
+        protected $resultType = GoogleCloudDialogflowCxV3beta1TestCaseResult::class;
+        protected $resultDataType = '';
+        /**
+         * The result.
+         *
+         * @param GoogleCloudDialogflowCxV3beta1TestCaseResult $result
+         */
+        public function setResult(GoogleCloudDialogflowCxV3beta1TestCaseResult $result)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3beta1TestCaseResult
+         */
+        public function getResult()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3beta1TestCaseResult
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1RunTestCaseResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResult()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3beta1RunTestCaseResponse extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1RunTestCaseResponse
     {
     }
 }

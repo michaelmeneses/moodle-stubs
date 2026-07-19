@@ -21,28 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch\Resource;
-
-/**
- * The "v1" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudsearchService = new Google\Service\CloudSearch(...);
- *   $v1 = $cloudsearchService->v1;
- *  </code>
- */
-class V1 extends \Google\Service\Resource
-{
+namespace Google\Service\CloudSearch\Resource {
+    use Google\Service\CloudSearch\InitializeCustomerRequest;
+    use Google\Service\CloudSearch\Operation;
     /**
-     * Enables `third party` support in Google Cloud Search. **Note:** This API
-     * requires an admin account to execute. (v1.initializeCustomer)
-     *
-     * @param InitializeCustomerRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "v1" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudsearchService = new Google\Service\CloudSearch(...);
+     *   $v1 = $cloudsearchService->v1;
+     *  </code>
      */
-    public function initializeCustomer(InitializeCustomerRequest $postBody, $optParams = [])
+    class V1 extends \Google\Service\Resource
+    {
+        /**
+         * Enables `third party` support in Google Cloud Search. **Note:** This API
+         * requires an admin account to execute. (v1.initializeCustomer)
+         *
+         * @param InitializeCustomerRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function initializeCustomer(InitializeCustomerRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudSearch\Resource\V1 registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudSearch_Resource_V1 extends \Google\Service\CloudSearch\Resource\V1
     {
     }
 }

@@ -8,6 +8,8 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Reader\Xml;
 
+use PhpOffice\PhpSpreadsheet\Style\Protection;
+use SimpleXMLElement;
 class Style
 {
     /**

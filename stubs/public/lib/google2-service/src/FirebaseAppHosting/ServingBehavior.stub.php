@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseAppHosting;
-
-class ServingBehavior extends \Google\Model
-{
-    protected $redirectType = Redirect::class;
-    protected $redirectDataType = '';
-    /**
-     * Optional. Redirect behavior for a domain, if provided.
-     *
-     * @param Redirect $redirect
-     */
-    public function setRedirect(Redirect $redirect)
+namespace Google\Service\FirebaseAppHosting {
+    class ServingBehavior extends \Google\Model
     {
+        protected $redirectType = Redirect::class;
+        protected $redirectDataType = '';
+        /**
+         * Optional. Redirect behavior for a domain, if provided.
+         *
+         * @param Redirect $redirect
+         */
+        public function setRedirect(Redirect $redirect)
+        {
+        }
+        /**
+         * @return Redirect
+         */
+        public function getRedirect()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Redirect
+     * Runtime class alias of \Google\Service\FirebaseAppHosting\ServingBehavior registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRedirect()
+    class Google_Service_FirebaseAppHosting_ServingBehavior extends \Google\Service\FirebaseAppHosting\ServingBehavior
     {
     }
 }

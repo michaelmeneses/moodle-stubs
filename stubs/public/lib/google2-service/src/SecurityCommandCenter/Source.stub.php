@@ -21,114 +21,123 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class Source extends \Google\Model
-{
-    /**
-     * The canonical name of the finding source. It's either
-     * "organizations/{organization_id}/sources/{source_id}",
-     * "folders/{folder_id}/sources/{source_id}", or
-     * "projects/{project_number}/sources/{source_id}", depending on the closest
-     * CRM ancestor of the resource associated with the finding.
-     *
-     * @var string
-     */
-    public $canonicalName;
-    /**
-     * The description of the source (max of 1024 characters). Example: "Web
-     * Security Scanner is a web security scanner for common vulnerabilities in
-     * App Engine applications. It can automatically scan and detect four common
-     * vulnerabilities, including cross-site-scripting (XSS), Flash injection,
-     * mixed content (HTTP in HTTPS), and outdated or insecure libraries."
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The source's display name. A source's display name must be unique amongst
-     * its siblings, for example, two sources with the same parent can't share the
-     * same display name. The display name must have a length between 1 and 64
-     * characters (inclusive).
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The relative resource name of this source. See:
-     * https://cloud.google.com/apis/design/resource_names#relative_resource_name
-     * Example: "organizations/{organization_id}/sources/{source_id}"
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The canonical name of the finding source. It's either
-     * "organizations/{organization_id}/sources/{source_id}",
-     * "folders/{folder_id}/sources/{source_id}", or
-     * "projects/{project_number}/sources/{source_id}", depending on the closest
-     * CRM ancestor of the resource associated with the finding.
-     *
-     * @param string $canonicalName
-     */
-    public function setCanonicalName($canonicalName)
+namespace Google\Service\SecurityCommandCenter {
+    class Source extends \Google\Model
     {
+        /**
+         * The canonical name of the finding source. It's either
+         * "organizations/{organization_id}/sources/{source_id}",
+         * "folders/{folder_id}/sources/{source_id}", or
+         * "projects/{project_number}/sources/{source_id}", depending on the closest
+         * CRM ancestor of the resource associated with the finding.
+         *
+         * @var string
+         */
+        public $canonicalName;
+        /**
+         * The description of the source (max of 1024 characters). Example: "Web
+         * Security Scanner is a web security scanner for common vulnerabilities in
+         * App Engine applications. It can automatically scan and detect four common
+         * vulnerabilities, including cross-site-scripting (XSS), Flash injection,
+         * mixed content (HTTP in HTTPS), and outdated or insecure libraries."
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The source's display name. A source's display name must be unique amongst
+         * its siblings, for example, two sources with the same parent can't share the
+         * same display name. The display name must have a length between 1 and 64
+         * characters (inclusive).
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The relative resource name of this source. See:
+         * https://cloud.google.com/apis/design/resource_names#relative_resource_name
+         * Example: "organizations/{organization_id}/sources/{source_id}"
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The canonical name of the finding source. It's either
+         * "organizations/{organization_id}/sources/{source_id}",
+         * "folders/{folder_id}/sources/{source_id}", or
+         * "projects/{project_number}/sources/{source_id}", depending on the closest
+         * CRM ancestor of the resource associated with the finding.
+         *
+         * @param string $canonicalName
+         */
+        public function setCanonicalName($canonicalName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCanonicalName()
+        {
+        }
+        /**
+         * The description of the source (max of 1024 characters). Example: "Web
+         * Security Scanner is a web security scanner for common vulnerabilities in
+         * App Engine applications. It can automatically scan and detect four common
+         * vulnerabilities, including cross-site-scripting (XSS), Flash injection,
+         * mixed content (HTTP in HTTPS), and outdated or insecure libraries."
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The source's display name. A source's display name must be unique amongst
+         * its siblings, for example, two sources with the same parent can't share the
+         * same display name. The display name must have a length between 1 and 64
+         * characters (inclusive).
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The relative resource name of this source. See:
+         * https://cloud.google.com/apis/design/resource_names#relative_resource_name
+         * Example: "organizations/{organization_id}/sources/{source_id}"
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\Source registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCanonicalName()
-    {
-    }
-    /**
-     * The description of the source (max of 1024 characters). Example: "Web
-     * Security Scanner is a web security scanner for common vulnerabilities in
-     * App Engine applications. It can automatically scan and detect four common
-     * vulnerabilities, including cross-site-scripting (XSS), Flash injection,
-     * mixed content (HTTP in HTTPS), and outdated or insecure libraries."
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * The source's display name. A source's display name must be unique amongst
-     * its siblings, for example, two sources with the same parent can't share the
-     * same display name. The display name must have a length between 1 and 64
-     * characters (inclusive).
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The relative resource name of this source. See:
-     * https://cloud.google.com/apis/design/resource_names#relative_resource_name
-     * Example: "organizations/{organization_id}/sources/{source_id}"
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_SecurityCommandCenter_Source extends \Google\Service\SecurityCommandCenter\Source
     {
     }
 }

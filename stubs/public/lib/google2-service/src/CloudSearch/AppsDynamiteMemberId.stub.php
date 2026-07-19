@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteMemberId extends \Google\Model
-{
-    protected $rosterIdType = AppsDynamiteRosterId::class;
-    protected $rosterIdDataType = '';
-    protected $userIdType = AppsDynamiteUserId::class;
-    protected $userIdDataType = '';
-    /**
-     * @param AppsDynamiteRosterId
-     */
-    public function setRosterId(AppsDynamiteRosterId $rosterId)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteMemberId extends \Google\Model
     {
+        protected $rosterIdType = AppsDynamiteRosterId::class;
+        protected $rosterIdDataType = '';
+        protected $userIdType = AppsDynamiteUserId::class;
+        protected $userIdDataType = '';
+        /**
+         * @param AppsDynamiteRosterId
+         */
+        public function setRosterId(AppsDynamiteRosterId $rosterId)
+        {
+        }
+        /**
+         * @return AppsDynamiteRosterId
+         */
+        public function getRosterId()
+        {
+        }
+        /**
+         * @param AppsDynamiteUserId
+         */
+        public function setUserId(AppsDynamiteUserId $userId)
+        {
+        }
+        /**
+         * @return AppsDynamiteUserId
+         */
+        public function getUserId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteRosterId
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteMemberId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRosterId()
-    {
-    }
-    /**
-     * @param AppsDynamiteUserId
-     */
-    public function setUserId(AppsDynamiteUserId $userId)
-    {
-    }
-    /**
-     * @return AppsDynamiteUserId
-     */
-    public function getUserId()
+    class Google_Service_CloudSearch_AppsDynamiteMemberId extends \Google\Service\CloudSearch\AppsDynamiteMemberId
     {
     }
 }

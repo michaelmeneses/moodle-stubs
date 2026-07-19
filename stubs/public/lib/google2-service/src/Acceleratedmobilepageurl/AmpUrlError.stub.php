@@ -21,103 +21,112 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Acceleratedmobilepageurl;
-
-class AmpUrlError extends \Google\Model
-{
-    /**
-     * Not specified error.
-     */
-    public const ERROR_CODE_ERROR_CODE_UNSPECIFIED = 'ERROR_CODE_UNSPECIFIED';
-    /**
-     * Indicates the requested URL is not found in the index, possibly because
-     * it's unable to be found, not able to be accessed by Googlebot, or some
-     * other error.
-     */
-    public const ERROR_CODE_INPUT_URL_NOT_FOUND = 'INPUT_URL_NOT_FOUND';
-    /**
-     * Indicates no AMP URL has been found that corresponds to the requested URL.
-     */
-    public const ERROR_CODE_NO_AMP_URL = 'NO_AMP_URL';
-    /**
-     * Indicates some kind of application error occurred at the server. Client
-     * advised to retry.
-     */
-    public const ERROR_CODE_APPLICATION_ERROR = 'APPLICATION_ERROR';
-    /**
-     * DEPRECATED: Indicates the requested URL is a valid AMP URL. This is a non-
-     * error state, should not be relied upon as a sign of success or failure. It
-     * will be removed in future versions of the API.
-     *
-     * @deprecated
-     */
-    public const ERROR_CODE_URL_IS_VALID_AMP = 'URL_IS_VALID_AMP';
-    /**
-     * Indicates that an AMP URL has been found that corresponds to the request
-     * URL, but it is not valid AMP HTML.
-     */
-    public const ERROR_CODE_URL_IS_INVALID_AMP = 'URL_IS_INVALID_AMP';
-    /**
-     * The error code of an API call.
-     *
-     * @var string
-     */
-    public $errorCode;
-    /**
-     * An optional descriptive error message.
-     *
-     * @var string
-     */
-    public $errorMessage;
-    /**
-     * The original non-AMP URL.
-     *
-     * @var string
-     */
-    public $originalUrl;
-    /**
-     * The error code of an API call.
-     *
-     * Accepted values: ERROR_CODE_UNSPECIFIED, INPUT_URL_NOT_FOUND, NO_AMP_URL,
-     * APPLICATION_ERROR, URL_IS_VALID_AMP, URL_IS_INVALID_AMP
-     *
-     * @param self::ERROR_CODE_* $errorCode
-     */
-    public function setErrorCode($errorCode)
+namespace Google\Service\Acceleratedmobilepageurl {
+    class AmpUrlError extends \Google\Model
     {
+        /**
+         * Not specified error.
+         */
+        public const ERROR_CODE_ERROR_CODE_UNSPECIFIED = 'ERROR_CODE_UNSPECIFIED';
+        /**
+         * Indicates the requested URL is not found in the index, possibly because
+         * it's unable to be found, not able to be accessed by Googlebot, or some
+         * other error.
+         */
+        public const ERROR_CODE_INPUT_URL_NOT_FOUND = 'INPUT_URL_NOT_FOUND';
+        /**
+         * Indicates no AMP URL has been found that corresponds to the requested URL.
+         */
+        public const ERROR_CODE_NO_AMP_URL = 'NO_AMP_URL';
+        /**
+         * Indicates some kind of application error occurred at the server. Client
+         * advised to retry.
+         */
+        public const ERROR_CODE_APPLICATION_ERROR = 'APPLICATION_ERROR';
+        /**
+         * DEPRECATED: Indicates the requested URL is a valid AMP URL. This is a non-
+         * error state, should not be relied upon as a sign of success or failure. It
+         * will be removed in future versions of the API.
+         *
+         * @deprecated
+         */
+        public const ERROR_CODE_URL_IS_VALID_AMP = 'URL_IS_VALID_AMP';
+        /**
+         * Indicates that an AMP URL has been found that corresponds to the request
+         * URL, but it is not valid AMP HTML.
+         */
+        public const ERROR_CODE_URL_IS_INVALID_AMP = 'URL_IS_INVALID_AMP';
+        /**
+         * The error code of an API call.
+         *
+         * @var string
+         */
+        public $errorCode;
+        /**
+         * An optional descriptive error message.
+         *
+         * @var string
+         */
+        public $errorMessage;
+        /**
+         * The original non-AMP URL.
+         *
+         * @var string
+         */
+        public $originalUrl;
+        /**
+         * The error code of an API call.
+         *
+         * Accepted values: ERROR_CODE_UNSPECIFIED, INPUT_URL_NOT_FOUND, NO_AMP_URL,
+         * APPLICATION_ERROR, URL_IS_VALID_AMP, URL_IS_INVALID_AMP
+         *
+         * @param self::ERROR_CODE_* $errorCode
+         */
+        public function setErrorCode($errorCode)
+        {
+        }
+        /**
+         * @return self::ERROR_CODE_*
+         */
+        public function getErrorCode()
+        {
+        }
+        /**
+         * An optional descriptive error message.
+         *
+         * @param string $errorMessage
+         */
+        public function setErrorMessage($errorMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorMessage()
+        {
+        }
+        /**
+         * The original non-AMP URL.
+         *
+         * @param string $originalUrl
+         */
+        public function setOriginalUrl($originalUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOriginalUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ERROR_CODE_*
+     * Runtime class alias of \Google\Service\Acceleratedmobilepageurl\AmpUrlError registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorCode()
-    {
-    }
-    /**
-     * An optional descriptive error message.
-     *
-     * @param string $errorMessage
-     */
-    public function setErrorMessage($errorMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getErrorMessage()
-    {
-    }
-    /**
-     * The original non-AMP URL.
-     *
-     * @param string $originalUrl
-     */
-    public function setOriginalUrl($originalUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOriginalUrl()
+    class Google_Service_Acceleratedmobilepageurl_AmpUrlError extends \Google\Service\Acceleratedmobilepageurl\AmpUrlError
     {
     }
 }

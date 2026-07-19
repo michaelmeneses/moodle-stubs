@@ -21,54 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for Cloudchannel (v1).
- *
- * <p>
- * The Cloud Channel API enables Google Cloud partners to have a single unified
- * resale platform and APIs across all of Google Cloud including GCP, Workspace,
- * Maps and Chrome.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://cloud.google.com/channel" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class Cloudchannel extends \Google\Service
-{
-    /** Manage users on your domain. */
-    const APPS_ORDER = "https://www.googleapis.com/auth/apps.order";
-    /** View usage reports for your Google Workspace domain. */
-    const APPS_REPORTS_USAGE_READONLY = "https://www.googleapis.com/auth/apps.reports.usage.readonly";
-    public $accounts;
-    public $accounts_channelPartnerLinks;
-    public $accounts_channelPartnerLinks_channelPartnerRepricingConfigs;
-    public $accounts_channelPartnerLinks_customers;
-    public $accounts_customers;
-    public $accounts_customers_customerRepricingConfigs;
-    public $accounts_customers_entitlements;
-    public $accounts_offers;
-    public $accounts_reportJobs;
-    public $accounts_reports;
-    public $accounts_skuGroups;
-    public $accounts_skuGroups_billableSkus;
-    public $integrators;
-    public $operations;
-    public $products;
-    public $products_skus;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the Cloudchannel service.
+     * Service definition for Cloudchannel (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * The Cloud Channel API enables Google Cloud partners to have a single unified
+     * resale platform and APIs across all of Google Cloud including GCP, Workspace,
+     * Maps and Chrome.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://cloud.google.com/channel" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class Cloudchannel extends \Google\Service
+    {
+        /** Manage users on your domain. */
+        const APPS_ORDER = "https://www.googleapis.com/auth/apps.order";
+        /** View usage reports for your Google Workspace domain. */
+        const APPS_REPORTS_USAGE_READONLY = "https://www.googleapis.com/auth/apps.reports.usage.readonly";
+        public $accounts;
+        public $accounts_channelPartnerLinks;
+        public $accounts_channelPartnerLinks_channelPartnerRepricingConfigs;
+        public $accounts_channelPartnerLinks_customers;
+        public $accounts_customers;
+        public $accounts_customers_customerRepricingConfigs;
+        public $accounts_customers_entitlements;
+        public $accounts_offers;
+        public $accounts_reportJobs;
+        public $accounts_reports;
+        public $accounts_skuGroups;
+        public $accounts_skuGroups_billableSkus;
+        public $integrators;
+        public $operations;
+        public $products;
+        public $products_skus;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the Cloudchannel service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Cloudchannel registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Cloudchannel extends \Google\Service\Cloudchannel
     {
     }
 }

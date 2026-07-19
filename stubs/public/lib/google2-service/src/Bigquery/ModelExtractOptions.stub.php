@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class ModelExtractOptions extends \Google\Model
-{
-    /**
-     * The 1-based ID of the trial to be exported from a hyperparameter tuning
-     * model. If not specified, the trial with id = [Model](https://cloud.google.c
-     * om/bigquery/docs/reference/rest/v2/models#resource:-model).defaultTrialId
-     * is exported. This field is ignored for models not trained with
-     * hyperparameter tuning.
-     *
-     * @var string
-     */
-    public $trialId;
-    /**
-     * The 1-based ID of the trial to be exported from a hyperparameter tuning
-     * model. If not specified, the trial with id = [Model](https://cloud.google.c
-     * om/bigquery/docs/reference/rest/v2/models#resource:-model).defaultTrialId
-     * is exported. This field is ignored for models not trained with
-     * hyperparameter tuning.
-     *
-     * @param string $trialId
-     */
-    public function setTrialId($trialId)
+namespace Google\Service\Bigquery {
+    class ModelExtractOptions extends \Google\Model
     {
+        /**
+         * The 1-based ID of the trial to be exported from a hyperparameter tuning
+         * model. If not specified, the trial with id = [Model](https://cloud.google.c
+         * om/bigquery/docs/reference/rest/v2/models#resource:-model).defaultTrialId
+         * is exported. This field is ignored for models not trained with
+         * hyperparameter tuning.
+         *
+         * @var string
+         */
+        public $trialId;
+        /**
+         * The 1-based ID of the trial to be exported from a hyperparameter tuning
+         * model. If not specified, the trial with id = [Model](https://cloud.google.c
+         * om/bigquery/docs/reference/rest/v2/models#resource:-model).defaultTrialId
+         * is exported. This field is ignored for models not trained with
+         * hyperparameter tuning.
+         *
+         * @param string $trialId
+         */
+        public function setTrialId($trialId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTrialId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Bigquery\ModelExtractOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTrialId()
+    class Google_Service_Bigquery_ModelExtractOptions extends \Google\Service\Bigquery\ModelExtractOptions
     {
     }
 }

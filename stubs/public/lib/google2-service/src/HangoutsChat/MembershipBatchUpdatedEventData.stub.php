@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class MembershipBatchUpdatedEventData extends \Google\Collection
-{
-    protected $collection_key = 'memberships';
-    protected $membershipsType = MembershipUpdatedEventData::class;
-    protected $membershipsDataType = 'array';
-    /**
-     * A list of updated memberships.
-     *
-     * @param MembershipUpdatedEventData[] $memberships
-     */
-    public function setMemberships($memberships)
+namespace Google\Service\HangoutsChat {
+    class MembershipBatchUpdatedEventData extends \Google\Collection
     {
+        protected $collection_key = 'memberships';
+        protected $membershipsType = MembershipUpdatedEventData::class;
+        protected $membershipsDataType = 'array';
+        /**
+         * A list of updated memberships.
+         *
+         * @param MembershipUpdatedEventData[] $memberships
+         */
+        public function setMemberships($memberships)
+        {
+        }
+        /**
+         * @return MembershipUpdatedEventData[]
+         */
+        public function getMemberships()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MembershipUpdatedEventData[]
+     * Runtime class alias of \Google\Service\HangoutsChat\MembershipBatchUpdatedEventData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMemberships()
+    class Google_Service_HangoutsChat_MembershipBatchUpdatedEventData extends \Google\Service\HangoutsChat\MembershipBatchUpdatedEventData
     {
     }
 }

@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class InstanceOperationProgress extends \Google\Model
-{
-    /**
-     * If set, the time at which this operation failed or was completed
-     * successfully.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * Percent completion of the operation. Values are between 0 and 100
-     * inclusive.
-     *
-     * @var int
-     */
-    public $progressPercent;
-    /**
-     * Time the request was received.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * If set, the time at which this operation failed or was completed
-     * successfully.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\Spanner {
+    class InstanceOperationProgress extends \Google\Model
     {
+        /**
+         * If set, the time at which this operation failed or was completed
+         * successfully.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * Percent completion of the operation. Values are between 0 and 100
+         * inclusive.
+         *
+         * @var int
+         */
+        public $progressPercent;
+        /**
+         * Time the request was received.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * If set, the time at which this operation failed or was completed
+         * successfully.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Percent completion of the operation. Values are between 0 and 100
+         * inclusive.
+         *
+         * @param int $progressPercent
+         */
+        public function setProgressPercent($progressPercent)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getProgressPercent()
+        {
+        }
+        /**
+         * Time the request was received.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Spanner\InstanceOperationProgress registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Percent completion of the operation. Values are between 0 and 100
-     * inclusive.
-     *
-     * @param int $progressPercent
-     */
-    public function setProgressPercent($progressPercent)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getProgressPercent()
-    {
-    }
-    /**
-     * Time the request was received.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_Spanner_InstanceOperationProgress extends \Google\Service\Spanner\InstanceOperationProgress
     {
     }
 }

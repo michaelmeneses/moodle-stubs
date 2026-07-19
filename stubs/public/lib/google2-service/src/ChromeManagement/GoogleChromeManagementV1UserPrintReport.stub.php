@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1UserPrintReport extends \Google\Model
-{
-    /**
-     * Number of chrome devices that have been used to initiate print jobs by the
-     * user.
-     *
-     * @var string
-     */
-    public $deviceCount;
-    /**
-     * Number of print jobs initiated by the user.
-     *
-     * @var string
-     */
-    public $jobCount;
-    /**
-     * Number of printers used by the user.
-     *
-     * @var string
-     */
-    public $printerCount;
-    /**
-     * The primary e-mail address of the user.
-     *
-     * @var string
-     */
-    public $userEmail;
-    /**
-     * The unique Directory API ID of the user.
-     *
-     * @var string
-     */
-    public $userId;
-    /**
-     * Number of chrome devices that have been used to initiate print jobs by the
-     * user.
-     *
-     * @param string $deviceCount
-     */
-    public function setDeviceCount($deviceCount)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1UserPrintReport extends \Google\Model
     {
+        /**
+         * Number of chrome devices that have been used to initiate print jobs by the
+         * user.
+         *
+         * @var string
+         */
+        public $deviceCount;
+        /**
+         * Number of print jobs initiated by the user.
+         *
+         * @var string
+         */
+        public $jobCount;
+        /**
+         * Number of printers used by the user.
+         *
+         * @var string
+         */
+        public $printerCount;
+        /**
+         * The primary e-mail address of the user.
+         *
+         * @var string
+         */
+        public $userEmail;
+        /**
+         * The unique Directory API ID of the user.
+         *
+         * @var string
+         */
+        public $userId;
+        /**
+         * Number of chrome devices that have been used to initiate print jobs by the
+         * user.
+         *
+         * @param string $deviceCount
+         */
+        public function setDeviceCount($deviceCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeviceCount()
+        {
+        }
+        /**
+         * Number of print jobs initiated by the user.
+         *
+         * @param string $jobCount
+         */
+        public function setJobCount($jobCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJobCount()
+        {
+        }
+        /**
+         * Number of printers used by the user.
+         *
+         * @param string $printerCount
+         */
+        public function setPrinterCount($printerCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrinterCount()
+        {
+        }
+        /**
+         * The primary e-mail address of the user.
+         *
+         * @param string $userEmail
+         */
+        public function setUserEmail($userEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserEmail()
+        {
+        }
+        /**
+         * The unique Directory API ID of the user.
+         *
+         * @param string $userId
+         */
+        public function setUserId($userId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1UserPrintReport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceCount()
-    {
-    }
-    /**
-     * Number of print jobs initiated by the user.
-     *
-     * @param string $jobCount
-     */
-    public function setJobCount($jobCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getJobCount()
-    {
-    }
-    /**
-     * Number of printers used by the user.
-     *
-     * @param string $printerCount
-     */
-    public function setPrinterCount($printerCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrinterCount()
-    {
-    }
-    /**
-     * The primary e-mail address of the user.
-     *
-     * @param string $userEmail
-     */
-    public function setUserEmail($userEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserEmail()
-    {
-    }
-    /**
-     * The unique Directory API ID of the user.
-     *
-     * @param string $userId
-     */
-    public function setUserId($userId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserId()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1UserPrintReport extends \Google\Service\ChromeManagement\GoogleChromeManagementV1UserPrintReport
     {
     }
 }

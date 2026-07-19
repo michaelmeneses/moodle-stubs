@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WebRisk;
-
-class GoogleCloudWebriskV1SearchHashesResponse extends \Google\Collection
-{
-    protected $collection_key = 'threats';
-    /**
-     * For requested entities that did not match the threat list, how long to
-     * cache the response until.
-     *
-     * @var string
-     */
-    public $negativeExpireTime;
-    protected $threatsType = GoogleCloudWebriskV1SearchHashesResponseThreatHash::class;
-    protected $threatsDataType = 'array';
-    /**
-     * For requested entities that did not match the threat list, how long to
-     * cache the response until.
-     *
-     * @param string $negativeExpireTime
-     */
-    public function setNegativeExpireTime($negativeExpireTime)
+namespace Google\Service\WebRisk {
+    class GoogleCloudWebriskV1SearchHashesResponse extends \Google\Collection
     {
+        protected $collection_key = 'threats';
+        /**
+         * For requested entities that did not match the threat list, how long to
+         * cache the response until.
+         *
+         * @var string
+         */
+        public $negativeExpireTime;
+        protected $threatsType = GoogleCloudWebriskV1SearchHashesResponseThreatHash::class;
+        protected $threatsDataType = 'array';
+        /**
+         * For requested entities that did not match the threat list, how long to
+         * cache the response until.
+         *
+         * @param string $negativeExpireTime
+         */
+        public function setNegativeExpireTime($negativeExpireTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNegativeExpireTime()
+        {
+        }
+        /**
+         * The full hashes that matched the requested prefixes. The hash will be
+         * populated in the key.
+         *
+         * @param GoogleCloudWebriskV1SearchHashesResponseThreatHash[] $threats
+         */
+        public function setThreats($threats)
+        {
+        }
+        /**
+         * @return GoogleCloudWebriskV1SearchHashesResponseThreatHash[]
+         */
+        public function getThreats()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WebRisk\GoogleCloudWebriskV1SearchHashesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNegativeExpireTime()
-    {
-    }
-    /**
-     * The full hashes that matched the requested prefixes. The hash will be
-     * populated in the key.
-     *
-     * @param GoogleCloudWebriskV1SearchHashesResponseThreatHash[] $threats
-     */
-    public function setThreats($threats)
-    {
-    }
-    /**
-     * @return GoogleCloudWebriskV1SearchHashesResponseThreatHash[]
-     */
-    public function getThreats()
+    class Google_Service_WebRisk_GoogleCloudWebriskV1SearchHashesResponse extends \Google\Service\WebRisk\GoogleCloudWebriskV1SearchHashesResponse
     {
     }
 }

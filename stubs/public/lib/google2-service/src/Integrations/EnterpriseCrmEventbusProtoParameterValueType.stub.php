@@ -21,163 +21,172 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoParameterValueType extends \Google\Model
-{
-    protected $booleanArrayType = EnterpriseCrmEventbusProtoBooleanParameterArray::class;
-    protected $booleanArrayDataType = '';
-    /**
-     * @var bool
-     */
-    public $booleanValue;
-    protected $doubleArrayType = EnterpriseCrmEventbusProtoDoubleParameterArray::class;
-    protected $doubleArrayDataType = '';
-    public $doubleValue;
-    protected $intArrayType = EnterpriseCrmEventbusProtoIntParameterArray::class;
-    protected $intArrayDataType = '';
-    /**
-     * @var string
-     */
-    public $intValue;
-    protected $protoArrayType = EnterpriseCrmEventbusProtoProtoParameterArray::class;
-    protected $protoArrayDataType = '';
-    /**
-     * @var array[]
-     */
-    public $protoValue;
-    protected $serializedObjectValueType = EnterpriseCrmEventbusProtoSerializedObjectParameter::class;
-    protected $serializedObjectValueDataType = '';
-    protected $stringArrayType = EnterpriseCrmEventbusProtoStringParameterArray::class;
-    protected $stringArrayDataType = '';
-    /**
-     * @var string
-     */
-    public $stringValue;
-    /**
-     * @param EnterpriseCrmEventbusProtoBooleanParameterArray $booleanArray
-     */
-    public function setBooleanArray(EnterpriseCrmEventbusProtoBooleanParameterArray $booleanArray)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoParameterValueType extends \Google\Model
     {
+        protected $booleanArrayType = EnterpriseCrmEventbusProtoBooleanParameterArray::class;
+        protected $booleanArrayDataType = '';
+        /**
+         * @var bool
+         */
+        public $booleanValue;
+        protected $doubleArrayType = EnterpriseCrmEventbusProtoDoubleParameterArray::class;
+        protected $doubleArrayDataType = '';
+        public $doubleValue;
+        protected $intArrayType = EnterpriseCrmEventbusProtoIntParameterArray::class;
+        protected $intArrayDataType = '';
+        /**
+         * @var string
+         */
+        public $intValue;
+        protected $protoArrayType = EnterpriseCrmEventbusProtoProtoParameterArray::class;
+        protected $protoArrayDataType = '';
+        /**
+         * @var array[]
+         */
+        public $protoValue;
+        protected $serializedObjectValueType = EnterpriseCrmEventbusProtoSerializedObjectParameter::class;
+        protected $serializedObjectValueDataType = '';
+        protected $stringArrayType = EnterpriseCrmEventbusProtoStringParameterArray::class;
+        protected $stringArrayDataType = '';
+        /**
+         * @var string
+         */
+        public $stringValue;
+        /**
+         * @param EnterpriseCrmEventbusProtoBooleanParameterArray $booleanArray
+         */
+        public function setBooleanArray(EnterpriseCrmEventbusProtoBooleanParameterArray $booleanArray)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoBooleanParameterArray
+         */
+        public function getBooleanArray()
+        {
+        }
+        /**
+         * @param bool $booleanValue
+         */
+        public function setBooleanValue($booleanValue)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBooleanValue()
+        {
+        }
+        /**
+         * @param EnterpriseCrmEventbusProtoDoubleParameterArray $doubleArray
+         */
+        public function setDoubleArray(EnterpriseCrmEventbusProtoDoubleParameterArray $doubleArray)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoDoubleParameterArray
+         */
+        public function getDoubleArray()
+        {
+        }
+        public function setDoubleValue($doubleValue)
+        {
+        }
+        public function getDoubleValue()
+        {
+        }
+        /**
+         * @param EnterpriseCrmEventbusProtoIntParameterArray $intArray
+         */
+        public function setIntArray(EnterpriseCrmEventbusProtoIntParameterArray $intArray)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoIntParameterArray
+         */
+        public function getIntArray()
+        {
+        }
+        /**
+         * @param string $intValue
+         */
+        public function setIntValue($intValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIntValue()
+        {
+        }
+        /**
+         * @param EnterpriseCrmEventbusProtoProtoParameterArray $protoArray
+         */
+        public function setProtoArray(EnterpriseCrmEventbusProtoProtoParameterArray $protoArray)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoProtoParameterArray
+         */
+        public function getProtoArray()
+        {
+        }
+        /**
+         * @param array[] $protoValue
+         */
+        public function setProtoValue($protoValue)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getProtoValue()
+        {
+        }
+        /**
+         * @param EnterpriseCrmEventbusProtoSerializedObjectParameter $serializedObjectValue
+         */
+        public function setSerializedObjectValue(EnterpriseCrmEventbusProtoSerializedObjectParameter $serializedObjectValue)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoSerializedObjectParameter
+         */
+        public function getSerializedObjectValue()
+        {
+        }
+        /**
+         * @param EnterpriseCrmEventbusProtoStringParameterArray $stringArray
+         */
+        public function setStringArray(EnterpriseCrmEventbusProtoStringParameterArray $stringArray)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoStringParameterArray
+         */
+        public function getStringArray()
+        {
+        }
+        /**
+         * @param string $stringValue
+         */
+        public function setStringValue($stringValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStringValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnterpriseCrmEventbusProtoBooleanParameterArray
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoParameterValueType registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBooleanArray()
-    {
-    }
-    /**
-     * @param bool $booleanValue
-     */
-    public function setBooleanValue($booleanValue)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getBooleanValue()
-    {
-    }
-    /**
-     * @param EnterpriseCrmEventbusProtoDoubleParameterArray $doubleArray
-     */
-    public function setDoubleArray(EnterpriseCrmEventbusProtoDoubleParameterArray $doubleArray)
-    {
-    }
-    /**
-     * @return EnterpriseCrmEventbusProtoDoubleParameterArray
-     */
-    public function getDoubleArray()
-    {
-    }
-    public function setDoubleValue($doubleValue)
-    {
-    }
-    public function getDoubleValue()
-    {
-    }
-    /**
-     * @param EnterpriseCrmEventbusProtoIntParameterArray $intArray
-     */
-    public function setIntArray(EnterpriseCrmEventbusProtoIntParameterArray $intArray)
-    {
-    }
-    /**
-     * @return EnterpriseCrmEventbusProtoIntParameterArray
-     */
-    public function getIntArray()
-    {
-    }
-    /**
-     * @param string $intValue
-     */
-    public function setIntValue($intValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIntValue()
-    {
-    }
-    /**
-     * @param EnterpriseCrmEventbusProtoProtoParameterArray $protoArray
-     */
-    public function setProtoArray(EnterpriseCrmEventbusProtoProtoParameterArray $protoArray)
-    {
-    }
-    /**
-     * @return EnterpriseCrmEventbusProtoProtoParameterArray
-     */
-    public function getProtoArray()
-    {
-    }
-    /**
-     * @param array[] $protoValue
-     */
-    public function setProtoValue($protoValue)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getProtoValue()
-    {
-    }
-    /**
-     * @param EnterpriseCrmEventbusProtoSerializedObjectParameter $serializedObjectValue
-     */
-    public function setSerializedObjectValue(EnterpriseCrmEventbusProtoSerializedObjectParameter $serializedObjectValue)
-    {
-    }
-    /**
-     * @return EnterpriseCrmEventbusProtoSerializedObjectParameter
-     */
-    public function getSerializedObjectValue()
-    {
-    }
-    /**
-     * @param EnterpriseCrmEventbusProtoStringParameterArray $stringArray
-     */
-    public function setStringArray(EnterpriseCrmEventbusProtoStringParameterArray $stringArray)
-    {
-    }
-    /**
-     * @return EnterpriseCrmEventbusProtoStringParameterArray
-     */
-    public function getStringArray()
-    {
-    }
-    /**
-     * @param string $stringValue
-     */
-    public function setStringValue($stringValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStringValue()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoParameterValueType extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoParameterValueType
     {
     }
 }

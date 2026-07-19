@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaAnswerReferenceStructuredDocumentInfo extends \Google\Model
-{
-    /**
-     * Document resource name.
-     *
-     * @var string
-     */
-    public $document;
-    /**
-     * Structured search data.
-     *
-     * @var array[]
-     */
-    public $structData;
-    /**
-     * Output only. The title of the document.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Output only. The URI of the document.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Document resource name.
-     *
-     * @param string $document
-     */
-    public function setDocument($document)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaAnswerReferenceStructuredDocumentInfo extends \Google\Model
     {
+        /**
+         * Document resource name.
+         *
+         * @var string
+         */
+        public $document;
+        /**
+         * Structured search data.
+         *
+         * @var array[]
+         */
+        public $structData;
+        /**
+         * Output only. The title of the document.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Output only. The URI of the document.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Document resource name.
+         *
+         * @param string $document
+         */
+        public function setDocument($document)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDocument()
+        {
+        }
+        /**
+         * Structured search data.
+         *
+         * @param array[] $structData
+         */
+        public function setStructData($structData)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getStructData()
+        {
+        }
+        /**
+         * Output only. The title of the document.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * Output only. The URI of the document.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaAnswerReferenceStructuredDocumentInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocument()
-    {
-    }
-    /**
-     * Structured search data.
-     *
-     * @param array[] $structData
-     */
-    public function setStructData($structData)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getStructData()
-    {
-    }
-    /**
-     * Output only. The title of the document.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * Output only. The URI of the document.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaAnswerReferenceStructuredDocumentInfo extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaAnswerReferenceStructuredDocumentInfo
     {
     }
 }

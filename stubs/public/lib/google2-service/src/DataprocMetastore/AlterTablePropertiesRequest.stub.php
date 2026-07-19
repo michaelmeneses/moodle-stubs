@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataprocMetastore;
-
-class AlterTablePropertiesRequest extends \Google\Model
-{
-    /**
-     * @var string[]
-     */
-    public $properties;
-    /**
-     * @var string
-     */
-    public $tableName;
-    /**
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * @param string[]
-     */
-    public function setProperties($properties)
+namespace Google\Service\DataprocMetastore {
+    class AlterTablePropertiesRequest extends \Google\Model
     {
+        /**
+         * @var string[]
+         */
+        public $properties;
+        /**
+         * @var string
+         */
+        public $tableName;
+        /**
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * @param string[]
+         */
+        public function setProperties($properties)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getProperties()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTableName($tableName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTableName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DataprocMetastore\AlterTablePropertiesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProperties()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTableName($tableName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTableName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_DataprocMetastore_AlterTablePropertiesRequest extends \Google\Service\DataprocMetastore\AlterTablePropertiesRequest
     {
     }
 }

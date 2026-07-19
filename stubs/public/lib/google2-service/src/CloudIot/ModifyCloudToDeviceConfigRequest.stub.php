@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIot;
-
-class ModifyCloudToDeviceConfigRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $binaryData;
-    /**
-     * @var string
-     */
-    public $versionToUpdate;
-    /**
-     * @param string
-     */
-    public function setBinaryData($binaryData)
+namespace Google\Service\CloudIot {
+    class ModifyCloudToDeviceConfigRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $binaryData;
+        /**
+         * @var string
+         */
+        public $versionToUpdate;
+        /**
+         * @param string
+         */
+        public function setBinaryData($binaryData)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBinaryData()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setVersionToUpdate($versionToUpdate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersionToUpdate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudIot\ModifyCloudToDeviceConfigRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBinaryData()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setVersionToUpdate($versionToUpdate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersionToUpdate()
+    class Google_Service_CloudIot_ModifyCloudToDeviceConfigRequest extends \Google\Service\CloudIot\ModifyCloudToDeviceConfigRequest
     {
     }
 }

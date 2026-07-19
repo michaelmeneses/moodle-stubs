@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Safebrowsing;
-
-class GoogleSecuritySafebrowsingV5FullHash extends \Google\Collection
-{
-    protected $collection_key = 'fullHashDetails';
-    /**
-     * The matching full hash. This is the SHA256 hash. The length will be exactly
-     * 32 bytes.
-     *
-     * @var string
-     */
-    public $fullHash;
-    protected $fullHashDetailsType = GoogleSecuritySafebrowsingV5FullHashFullHashDetail::class;
-    protected $fullHashDetailsDataType = 'array';
-    /**
-     * The matching full hash. This is the SHA256 hash. The length will be exactly
-     * 32 bytes.
-     *
-     * @param string $fullHash
-     */
-    public function setFullHash($fullHash)
+namespace Google\Service\Safebrowsing {
+    class GoogleSecuritySafebrowsingV5FullHash extends \Google\Collection
     {
+        protected $collection_key = 'fullHashDetails';
+        /**
+         * The matching full hash. This is the SHA256 hash. The length will be exactly
+         * 32 bytes.
+         *
+         * @var string
+         */
+        public $fullHash;
+        protected $fullHashDetailsType = GoogleSecuritySafebrowsingV5FullHashFullHashDetail::class;
+        protected $fullHashDetailsDataType = 'array';
+        /**
+         * The matching full hash. This is the SHA256 hash. The length will be exactly
+         * 32 bytes.
+         *
+         * @param string $fullHash
+         */
+        public function setFullHash($fullHash)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFullHash()
+        {
+        }
+        /**
+         * Unordered list. A repeated field identifying the details relevant to this
+         * full hash.
+         *
+         * @param GoogleSecuritySafebrowsingV5FullHashFullHashDetail[] $fullHashDetails
+         */
+        public function setFullHashDetails($fullHashDetails)
+        {
+        }
+        /**
+         * @return GoogleSecuritySafebrowsingV5FullHashFullHashDetail[]
+         */
+        public function getFullHashDetails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV5FullHash registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFullHash()
-    {
-    }
-    /**
-     * Unordered list. A repeated field identifying the details relevant to this
-     * full hash.
-     *
-     * @param GoogleSecuritySafebrowsingV5FullHashFullHashDetail[] $fullHashDetails
-     */
-    public function setFullHashDetails($fullHashDetails)
-    {
-    }
-    /**
-     * @return GoogleSecuritySafebrowsingV5FullHashFullHashDetail[]
-     */
-    public function getFullHashDetails()
+    class Google_Service_Safebrowsing_GoogleSecuritySafebrowsingV5FullHash extends \Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV5FullHash
     {
     }
 }

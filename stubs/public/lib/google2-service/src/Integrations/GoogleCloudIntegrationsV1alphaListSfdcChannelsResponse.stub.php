@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaListSfdcChannelsResponse extends \Google\Collection
-{
-    protected $collection_key = 'sfdcChannels';
-    /**
-     * The token used to retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $sfdcChannelsType = GoogleCloudIntegrationsV1alphaSfdcChannel::class;
-    protected $sfdcChannelsDataType = 'array';
-    /**
-     * The token used to retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaListSfdcChannelsResponse extends \Google\Collection
     {
+        protected $collection_key = 'sfdcChannels';
+        /**
+         * The token used to retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $sfdcChannelsType = GoogleCloudIntegrationsV1alphaSfdcChannel::class;
+        protected $sfdcChannelsDataType = 'array';
+        /**
+         * The token used to retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of SfdcChannels retrieved.
+         *
+         * @param GoogleCloudIntegrationsV1alphaSfdcChannel[] $sfdcChannels
+         */
+        public function setSfdcChannels($sfdcChannels)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaSfdcChannel[]
+         */
+        public function getSfdcChannels()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListSfdcChannelsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of SfdcChannels retrieved.
-     *
-     * @param GoogleCloudIntegrationsV1alphaSfdcChannel[] $sfdcChannels
-     */
-    public function setSfdcChannels($sfdcChannels)
-    {
-    }
-    /**
-     * @return GoogleCloudIntegrationsV1alphaSfdcChannel[]
-     */
-    public function getSfdcChannels()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaListSfdcChannelsResponse extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListSfdcChannelsResponse
     {
     }
 }

@@ -21,117 +21,126 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PagespeedInsights;
-
-class ConfigSettings extends \Google\Model
-{
-    /**
-     * How Lighthouse was run, e.g. from the Chrome extension or from the npm
-     * module.
-     *
-     * @var string
-     */
-    public $channel;
-    /**
-     * The form factor the emulation should use. This field is deprecated,
-     * form_factor should be used instead.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $emulatedFormFactor;
-    /**
-     * How Lighthouse should interpret this run in regards to scoring performance
-     * metrics and skipping mobile-only tests in desktop.
-     *
-     * @var string
-     */
-    public $formFactor;
-    /**
-     * The locale setting.
-     *
-     * @var string
-     */
-    public $locale;
-    /**
-     * List of categories of audits the run should conduct.
-     *
-     * @var array
-     */
-    public $onlyCategories;
-    /**
-     * How Lighthouse was run, e.g. from the Chrome extension or from the npm
-     * module.
-     *
-     * @param string $channel
-     */
-    public function setChannel($channel)
+namespace Google\Service\PagespeedInsights {
+    class ConfigSettings extends \Google\Model
     {
+        /**
+         * How Lighthouse was run, e.g. from the Chrome extension or from the npm
+         * module.
+         *
+         * @var string
+         */
+        public $channel;
+        /**
+         * The form factor the emulation should use. This field is deprecated,
+         * form_factor should be used instead.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $emulatedFormFactor;
+        /**
+         * How Lighthouse should interpret this run in regards to scoring performance
+         * metrics and skipping mobile-only tests in desktop.
+         *
+         * @var string
+         */
+        public $formFactor;
+        /**
+         * The locale setting.
+         *
+         * @var string
+         */
+        public $locale;
+        /**
+         * List of categories of audits the run should conduct.
+         *
+         * @var array
+         */
+        public $onlyCategories;
+        /**
+         * How Lighthouse was run, e.g. from the Chrome extension or from the npm
+         * module.
+         *
+         * @param string $channel
+         */
+        public function setChannel($channel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChannel()
+        {
+        }
+        /**
+         * The form factor the emulation should use. This field is deprecated,
+         * form_factor should be used instead.
+         *
+         * @deprecated
+         * @param string $emulatedFormFactor
+         */
+        public function setEmulatedFormFactor($emulatedFormFactor)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getEmulatedFormFactor()
+        {
+        }
+        /**
+         * How Lighthouse should interpret this run in regards to scoring performance
+         * metrics and skipping mobile-only tests in desktop.
+         *
+         * @param string $formFactor
+         */
+        public function setFormFactor($formFactor)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFormFactor()
+        {
+        }
+        /**
+         * The locale setting.
+         *
+         * @param string $locale
+         */
+        public function setLocale($locale)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocale()
+        {
+        }
+        /**
+         * List of categories of audits the run should conduct.
+         *
+         * @param array $onlyCategories
+         */
+        public function setOnlyCategories($onlyCategories)
+        {
+        }
+        /**
+         * @return array
+         */
+        public function getOnlyCategories()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PagespeedInsights\ConfigSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChannel()
-    {
-    }
-    /**
-     * The form factor the emulation should use. This field is deprecated,
-     * form_factor should be used instead.
-     *
-     * @deprecated
-     * @param string $emulatedFormFactor
-     */
-    public function setEmulatedFormFactor($emulatedFormFactor)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getEmulatedFormFactor()
-    {
-    }
-    /**
-     * How Lighthouse should interpret this run in regards to scoring performance
-     * metrics and skipping mobile-only tests in desktop.
-     *
-     * @param string $formFactor
-     */
-    public function setFormFactor($formFactor)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFormFactor()
-    {
-    }
-    /**
-     * The locale setting.
-     *
-     * @param string $locale
-     */
-    public function setLocale($locale)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocale()
-    {
-    }
-    /**
-     * List of categories of audits the run should conduct.
-     *
-     * @param array $onlyCategories
-     */
-    public function setOnlyCategories($onlyCategories)
-    {
-    }
-    /**
-     * @return array
-     */
-    public function getOnlyCategories()
+    class Google_Service_PagespeedInsights_ConfigSettings extends \Google\Service\PagespeedInsights\ConfigSettings
     {
     }
 }

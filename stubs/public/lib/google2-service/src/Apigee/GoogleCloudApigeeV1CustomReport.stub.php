@@ -21,453 +21,462 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1CustomReport extends \Google\Collection
-{
-    protected $collection_key = 'tags';
-    /**
-     * This field contains the chart type for the report
-     *
-     * @var string
-     */
-    public $chartType;
-    /**
-     * Legacy field: not used. This field contains a list of comments associated
-     * with custom report
-     *
-     * @var string[]
-     */
-    public $comments;
-    /**
-     * Output only. Unix time when the app was created json key: createdAt
-     *
-     * @var string
-     */
-    public $createdAt;
-    /**
-     * This contains the list of dimensions for the report
-     *
-     * @var string[]
-     */
-    public $dimensions;
-    /**
-     * This is the display name for the report
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. Environment name
-     *
-     * @var string
-     */
-    public $environment;
-    /**
-     * This field contains the filter expression
-     *
-     * @var string
-     */
-    public $filter;
-    /**
-     * Legacy field: not used. Contains the from time for the report
-     *
-     * @var string
-     */
-    public $fromTime;
-    /**
-     * Output only. Modified time of this entity as milliseconds since epoch. json
-     * key: lastModifiedAt
-     *
-     * @var string
-     */
-    public $lastModifiedAt;
-    /**
-     * Output only. Last viewed time of this entity as milliseconds since epoch
-     *
-     * @var string
-     */
-    public $lastViewedAt;
-    /**
-     * Legacy field: not used This field contains the limit for the result
-     * retrieved
-     *
-     * @var string
-     */
-    public $limit;
-    protected $metricsType = GoogleCloudApigeeV1CustomReportMetric::class;
-    protected $metricsDataType = 'array';
-    /**
-     * Required. Unique identifier for the report T his is a legacy field used to
-     * encode custom report unique id
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Legacy field: not used. This field contains the offset for the data
-     *
-     * @var string
-     */
-    public $offset;
-    /**
-     * Output only. Organization name
-     *
-     * @var string
-     */
-    public $organization;
-    protected $propertiesType = GoogleCloudApigeeV1ReportProperty::class;
-    protected $propertiesDataType = 'array';
-    /**
-     * Legacy field: not used much. Contains the list of sort by columns
-     *
-     * @var string[]
-     */
-    public $sortByCols;
-    /**
-     * Legacy field: not used much. Contains the sort order for the sort columns
-     *
-     * @var string
-     */
-    public $sortOrder;
-    /**
-     * Legacy field: not used. This field contains a list of tags associated with
-     * custom report
-     *
-     * @var string[]
-     */
-    public $tags;
-    /**
-     * This field contains the time unit of aggregation for the report
-     *
-     * @var string
-     */
-    public $timeUnit;
-    /**
-     * Legacy field: not used. Contains the end time for the report
-     *
-     * @var string
-     */
-    public $toTime;
-    /**
-     * Legacy field: not used. This field contains the top k parameter value for
-     * restricting the result
-     *
-     * @var string
-     */
-    public $topk;
-    /**
-     * This field contains the chart type for the report
-     *
-     * @param string $chartType
-     */
-    public function setChartType($chartType)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1CustomReport extends \Google\Collection
     {
+        protected $collection_key = 'tags';
+        /**
+         * This field contains the chart type for the report
+         *
+         * @var string
+         */
+        public $chartType;
+        /**
+         * Legacy field: not used. This field contains a list of comments associated
+         * with custom report
+         *
+         * @var string[]
+         */
+        public $comments;
+        /**
+         * Output only. Unix time when the app was created json key: createdAt
+         *
+         * @var string
+         */
+        public $createdAt;
+        /**
+         * This contains the list of dimensions for the report
+         *
+         * @var string[]
+         */
+        public $dimensions;
+        /**
+         * This is the display name for the report
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. Environment name
+         *
+         * @var string
+         */
+        public $environment;
+        /**
+         * This field contains the filter expression
+         *
+         * @var string
+         */
+        public $filter;
+        /**
+         * Legacy field: not used. Contains the from time for the report
+         *
+         * @var string
+         */
+        public $fromTime;
+        /**
+         * Output only. Modified time of this entity as milliseconds since epoch. json
+         * key: lastModifiedAt
+         *
+         * @var string
+         */
+        public $lastModifiedAt;
+        /**
+         * Output only. Last viewed time of this entity as milliseconds since epoch
+         *
+         * @var string
+         */
+        public $lastViewedAt;
+        /**
+         * Legacy field: not used This field contains the limit for the result
+         * retrieved
+         *
+         * @var string
+         */
+        public $limit;
+        protected $metricsType = GoogleCloudApigeeV1CustomReportMetric::class;
+        protected $metricsDataType = 'array';
+        /**
+         * Required. Unique identifier for the report T his is a legacy field used to
+         * encode custom report unique id
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Legacy field: not used. This field contains the offset for the data
+         *
+         * @var string
+         */
+        public $offset;
+        /**
+         * Output only. Organization name
+         *
+         * @var string
+         */
+        public $organization;
+        protected $propertiesType = GoogleCloudApigeeV1ReportProperty::class;
+        protected $propertiesDataType = 'array';
+        /**
+         * Legacy field: not used much. Contains the list of sort by columns
+         *
+         * @var string[]
+         */
+        public $sortByCols;
+        /**
+         * Legacy field: not used much. Contains the sort order for the sort columns
+         *
+         * @var string
+         */
+        public $sortOrder;
+        /**
+         * Legacy field: not used. This field contains a list of tags associated with
+         * custom report
+         *
+         * @var string[]
+         */
+        public $tags;
+        /**
+         * This field contains the time unit of aggregation for the report
+         *
+         * @var string
+         */
+        public $timeUnit;
+        /**
+         * Legacy field: not used. Contains the end time for the report
+         *
+         * @var string
+         */
+        public $toTime;
+        /**
+         * Legacy field: not used. This field contains the top k parameter value for
+         * restricting the result
+         *
+         * @var string
+         */
+        public $topk;
+        /**
+         * This field contains the chart type for the report
+         *
+         * @param string $chartType
+         */
+        public function setChartType($chartType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChartType()
+        {
+        }
+        /**
+         * Legacy field: not used. This field contains a list of comments associated
+         * with custom report
+         *
+         * @param string[] $comments
+         */
+        public function setComments($comments)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getComments()
+        {
+        }
+        /**
+         * Output only. Unix time when the app was created json key: createdAt
+         *
+         * @param string $createdAt
+         */
+        public function setCreatedAt($createdAt)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreatedAt()
+        {
+        }
+        /**
+         * This contains the list of dimensions for the report
+         *
+         * @param string[] $dimensions
+         */
+        public function setDimensions($dimensions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDimensions()
+        {
+        }
+        /**
+         * This is the display name for the report
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. Environment name
+         *
+         * @param string $environment
+         */
+        public function setEnvironment($environment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnvironment()
+        {
+        }
+        /**
+         * This field contains the filter expression
+         *
+         * @param string $filter
+         */
+        public function setFilter($filter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilter()
+        {
+        }
+        /**
+         * Legacy field: not used. Contains the from time for the report
+         *
+         * @param string $fromTime
+         */
+        public function setFromTime($fromTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFromTime()
+        {
+        }
+        /**
+         * Output only. Modified time of this entity as milliseconds since epoch. json
+         * key: lastModifiedAt
+         *
+         * @param string $lastModifiedAt
+         */
+        public function setLastModifiedAt($lastModifiedAt)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastModifiedAt()
+        {
+        }
+        /**
+         * Output only. Last viewed time of this entity as milliseconds since epoch
+         *
+         * @param string $lastViewedAt
+         */
+        public function setLastViewedAt($lastViewedAt)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastViewedAt()
+        {
+        }
+        /**
+         * Legacy field: not used This field contains the limit for the result
+         * retrieved
+         *
+         * @param string $limit
+         */
+        public function setLimit($limit)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLimit()
+        {
+        }
+        /**
+         * Required. This contains the list of metrics
+         *
+         * @param GoogleCloudApigeeV1CustomReportMetric[] $metrics
+         */
+        public function setMetrics($metrics)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1CustomReportMetric[]
+         */
+        public function getMetrics()
+        {
+        }
+        /**
+         * Required. Unique identifier for the report T his is a legacy field used to
+         * encode custom report unique id
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Legacy field: not used. This field contains the offset for the data
+         *
+         * @param string $offset
+         */
+        public function setOffset($offset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOffset()
+        {
+        }
+        /**
+         * Output only. Organization name
+         *
+         * @param string $organization
+         */
+        public function setOrganization($organization)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrganization()
+        {
+        }
+        /**
+         * This field contains report properties such as ui metadata etc.
+         *
+         * @param GoogleCloudApigeeV1ReportProperty[] $properties
+         */
+        public function setProperties($properties)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1ReportProperty[]
+         */
+        public function getProperties()
+        {
+        }
+        /**
+         * Legacy field: not used much. Contains the list of sort by columns
+         *
+         * @param string[] $sortByCols
+         */
+        public function setSortByCols($sortByCols)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSortByCols()
+        {
+        }
+        /**
+         * Legacy field: not used much. Contains the sort order for the sort columns
+         *
+         * @param string $sortOrder
+         */
+        public function setSortOrder($sortOrder)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSortOrder()
+        {
+        }
+        /**
+         * Legacy field: not used. This field contains a list of tags associated with
+         * custom report
+         *
+         * @param string[] $tags
+         */
+        public function setTags($tags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTags()
+        {
+        }
+        /**
+         * This field contains the time unit of aggregation for the report
+         *
+         * @param string $timeUnit
+         */
+        public function setTimeUnit($timeUnit)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeUnit()
+        {
+        }
+        /**
+         * Legacy field: not used. Contains the end time for the report
+         *
+         * @param string $toTime
+         */
+        public function setToTime($toTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getToTime()
+        {
+        }
+        /**
+         * Legacy field: not used. This field contains the top k parameter value for
+         * restricting the result
+         *
+         * @param string $topk
+         */
+        public function setTopk($topk)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTopk()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1CustomReport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChartType()
-    {
-    }
-    /**
-     * Legacy field: not used. This field contains a list of comments associated
-     * with custom report
-     *
-     * @param string[] $comments
-     */
-    public function setComments($comments)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getComments()
-    {
-    }
-    /**
-     * Output only. Unix time when the app was created json key: createdAt
-     *
-     * @param string $createdAt
-     */
-    public function setCreatedAt($createdAt)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreatedAt()
-    {
-    }
-    /**
-     * This contains the list of dimensions for the report
-     *
-     * @param string[] $dimensions
-     */
-    public function setDimensions($dimensions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDimensions()
-    {
-    }
-    /**
-     * This is the display name for the report
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. Environment name
-     *
-     * @param string $environment
-     */
-    public function setEnvironment($environment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEnvironment()
-    {
-    }
-    /**
-     * This field contains the filter expression
-     *
-     * @param string $filter
-     */
-    public function setFilter($filter)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFilter()
-    {
-    }
-    /**
-     * Legacy field: not used. Contains the from time for the report
-     *
-     * @param string $fromTime
-     */
-    public function setFromTime($fromTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFromTime()
-    {
-    }
-    /**
-     * Output only. Modified time of this entity as milliseconds since epoch. json
-     * key: lastModifiedAt
-     *
-     * @param string $lastModifiedAt
-     */
-    public function setLastModifiedAt($lastModifiedAt)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastModifiedAt()
-    {
-    }
-    /**
-     * Output only. Last viewed time of this entity as milliseconds since epoch
-     *
-     * @param string $lastViewedAt
-     */
-    public function setLastViewedAt($lastViewedAt)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastViewedAt()
-    {
-    }
-    /**
-     * Legacy field: not used This field contains the limit for the result
-     * retrieved
-     *
-     * @param string $limit
-     */
-    public function setLimit($limit)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLimit()
-    {
-    }
-    /**
-     * Required. This contains the list of metrics
-     *
-     * @param GoogleCloudApigeeV1CustomReportMetric[] $metrics
-     */
-    public function setMetrics($metrics)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1CustomReportMetric[]
-     */
-    public function getMetrics()
-    {
-    }
-    /**
-     * Required. Unique identifier for the report T his is a legacy field used to
-     * encode custom report unique id
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Legacy field: not used. This field contains the offset for the data
-     *
-     * @param string $offset
-     */
-    public function setOffset($offset)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOffset()
-    {
-    }
-    /**
-     * Output only. Organization name
-     *
-     * @param string $organization
-     */
-    public function setOrganization($organization)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrganization()
-    {
-    }
-    /**
-     * This field contains report properties such as ui metadata etc.
-     *
-     * @param GoogleCloudApigeeV1ReportProperty[] $properties
-     */
-    public function setProperties($properties)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1ReportProperty[]
-     */
-    public function getProperties()
-    {
-    }
-    /**
-     * Legacy field: not used much. Contains the list of sort by columns
-     *
-     * @param string[] $sortByCols
-     */
-    public function setSortByCols($sortByCols)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSortByCols()
-    {
-    }
-    /**
-     * Legacy field: not used much. Contains the sort order for the sort columns
-     *
-     * @param string $sortOrder
-     */
-    public function setSortOrder($sortOrder)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSortOrder()
-    {
-    }
-    /**
-     * Legacy field: not used. This field contains a list of tags associated with
-     * custom report
-     *
-     * @param string[] $tags
-     */
-    public function setTags($tags)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTags()
-    {
-    }
-    /**
-     * This field contains the time unit of aggregation for the report
-     *
-     * @param string $timeUnit
-     */
-    public function setTimeUnit($timeUnit)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeUnit()
-    {
-    }
-    /**
-     * Legacy field: not used. Contains the end time for the report
-     *
-     * @param string $toTime
-     */
-    public function setToTime($toTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getToTime()
-    {
-    }
-    /**
-     * Legacy field: not used. This field contains the top k parameter value for
-     * restricting the result
-     *
-     * @param string $topk
-     */
-    public function setTopk($topk)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTopk()
+    class Google_Service_Apigee_GoogleCloudApigeeV1CustomReport extends \Google\Service\Apigee\GoogleCloudApigeeV1CustomReport
     {
     }
 }

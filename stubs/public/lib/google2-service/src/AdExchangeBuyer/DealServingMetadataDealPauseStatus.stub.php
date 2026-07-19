@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class DealServingMetadataDealPauseStatus extends \Google\Model
-{
-    public $buyerPauseReason;
-    public $firstPausedBy;
-    public $hasBuyerPaused;
-    public $hasSellerPaused;
-    public $sellerPauseReason;
-    public function setBuyerPauseReason($buyerPauseReason)
+namespace Google\Service\AdExchangeBuyer {
+    class DealServingMetadataDealPauseStatus extends \Google\Model
     {
+        public $buyerPauseReason;
+        public $firstPausedBy;
+        public $hasBuyerPaused;
+        public $hasSellerPaused;
+        public $sellerPauseReason;
+        public function setBuyerPauseReason($buyerPauseReason)
+        {
+        }
+        public function getBuyerPauseReason()
+        {
+        }
+        public function setFirstPausedBy($firstPausedBy)
+        {
+        }
+        public function getFirstPausedBy()
+        {
+        }
+        public function setHasBuyerPaused($hasBuyerPaused)
+        {
+        }
+        public function getHasBuyerPaused()
+        {
+        }
+        public function setHasSellerPaused($hasSellerPaused)
+        {
+        }
+        public function getHasSellerPaused()
+        {
+        }
+        public function setSellerPauseReason($sellerPauseReason)
+        {
+        }
+        public function getSellerPauseReason()
+        {
+        }
     }
-    public function getBuyerPauseReason()
-    {
-    }
-    public function setFirstPausedBy($firstPausedBy)
-    {
-    }
-    public function getFirstPausedBy()
-    {
-    }
-    public function setHasBuyerPaused($hasBuyerPaused)
-    {
-    }
-    public function getHasBuyerPaused()
-    {
-    }
-    public function setHasSellerPaused($hasSellerPaused)
-    {
-    }
-    public function getHasSellerPaused()
-    {
-    }
-    public function setSellerPauseReason($sellerPauseReason)
-    {
-    }
-    public function getSellerPauseReason()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\DealServingMetadataDealPauseStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AdExchangeBuyer_DealServingMetadataDealPauseStatus extends \Google\Service\AdExchangeBuyer\DealServingMetadataDealPauseStatus
     {
     }
 }

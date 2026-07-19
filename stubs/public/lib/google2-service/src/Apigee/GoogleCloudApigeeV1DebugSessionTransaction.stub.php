@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1DebugSessionTransaction extends \Google\Collection
-{
-    protected $collection_key = 'point';
-    /**
-     * Flag indicating whether a transaction is completed or not
-     *
-     * @var bool
-     */
-    public $completed;
-    protected $pointType = GoogleCloudApigeeV1Point::class;
-    protected $pointDataType = 'array';
-    /**
-     * Flag indicating whether a transaction is completed or not
-     *
-     * @param bool $completed
-     */
-    public function setCompleted($completed)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1DebugSessionTransaction extends \Google\Collection
     {
+        protected $collection_key = 'point';
+        /**
+         * Flag indicating whether a transaction is completed or not
+         *
+         * @var bool
+         */
+        public $completed;
+        protected $pointType = GoogleCloudApigeeV1Point::class;
+        protected $pointDataType = 'array';
+        /**
+         * Flag indicating whether a transaction is completed or not
+         *
+         * @param bool $completed
+         */
+        public function setCompleted($completed)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCompleted()
+        {
+        }
+        /**
+         * List of debug data collected by runtime plane at various defined points in
+         * the flow.
+         *
+         * @param GoogleCloudApigeeV1Point[] $point
+         */
+        public function setPoint($point)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1Point[]
+         */
+        public function getPoint()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1DebugSessionTransaction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCompleted()
-    {
-    }
-    /**
-     * List of debug data collected by runtime plane at various defined points in
-     * the flow.
-     *
-     * @param GoogleCloudApigeeV1Point[] $point
-     */
-    public function setPoint($point)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1Point[]
-     */
-    public function getPoint()
+    class Google_Service_Apigee_GoogleCloudApigeeV1DebugSessionTransaction extends \Google\Service\Apigee\GoogleCloudApigeeV1DebugSessionTransaction
     {
     }
 }

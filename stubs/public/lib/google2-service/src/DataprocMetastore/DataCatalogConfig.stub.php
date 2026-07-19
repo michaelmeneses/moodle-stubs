@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataprocMetastore;
-
-class DataCatalogConfig extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * @param bool
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\DataprocMetastore {
+    class DataCatalogConfig extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * @param bool
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DataprocMetastore\DataCatalogConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
+    class Google_Service_DataprocMetastore_DataCatalogConfig extends \Google\Service\DataprocMetastore\DataCatalogConfig
     {
     }
 }

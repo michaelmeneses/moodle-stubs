@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RetrievalConfig extends \Google\Model
-{
-    /**
-     * The language code of the user.
-     *
-     * @var string
-     */
-    public $languageCode;
-    protected $latLngType = GoogleTypeLatLng::class;
-    protected $latLngDataType = '';
-    /**
-     * The language code of the user.
-     *
-     * @param string $languageCode
-     */
-    public function setLanguageCode($languageCode)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RetrievalConfig extends \Google\Model
     {
+        /**
+         * The language code of the user.
+         *
+         * @var string
+         */
+        public $languageCode;
+        protected $latLngType = GoogleTypeLatLng::class;
+        protected $latLngDataType = '';
+        /**
+         * The language code of the user.
+         *
+         * @param string $languageCode
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
+        /**
+         * The location of the user.
+         *
+         * @param GoogleTypeLatLng $latLng
+         */
+        public function setLatLng(GoogleTypeLatLng $latLng)
+        {
+        }
+        /**
+         * @return GoogleTypeLatLng
+         */
+        public function getLatLng()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RetrievalConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLanguageCode()
-    {
-    }
-    /**
-     * The location of the user.
-     *
-     * @param GoogleTypeLatLng $latLng
-     */
-    public function setLatLng(GoogleTypeLatLng $latLng)
-    {
-    }
-    /**
-     * @return GoogleTypeLatLng
-     */
-    public function getLatLng()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RetrievalConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RetrievalConfig
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaParameterMapEntry extends \Google\Model
-{
-    protected $keyType = GoogleCloudIntegrationsV1alphaParameterMapField::class;
-    protected $keyDataType = '';
-    protected $valueType = GoogleCloudIntegrationsV1alphaParameterMapField::class;
-    protected $valueDataType = '';
-    /**
-     * Key of the map entry.
-     *
-     * @param GoogleCloudIntegrationsV1alphaParameterMapField $key
-     */
-    public function setKey(GoogleCloudIntegrationsV1alphaParameterMapField $key)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaParameterMapEntry extends \Google\Model
     {
+        protected $keyType = GoogleCloudIntegrationsV1alphaParameterMapField::class;
+        protected $keyDataType = '';
+        protected $valueType = GoogleCloudIntegrationsV1alphaParameterMapField::class;
+        protected $valueDataType = '';
+        /**
+         * Key of the map entry.
+         *
+         * @param GoogleCloudIntegrationsV1alphaParameterMapField $key
+         */
+        public function setKey(GoogleCloudIntegrationsV1alphaParameterMapField $key)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaParameterMapField
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * Value of the map entry.
+         *
+         * @param GoogleCloudIntegrationsV1alphaParameterMapField $value
+         */
+        public function setValue(GoogleCloudIntegrationsV1alphaParameterMapField $value)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaParameterMapField
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudIntegrationsV1alphaParameterMapField
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaParameterMapEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKey()
-    {
-    }
-    /**
-     * Value of the map entry.
-     *
-     * @param GoogleCloudIntegrationsV1alphaParameterMapField $value
-     */
-    public function setValue(GoogleCloudIntegrationsV1alphaParameterMapField $value)
-    {
-    }
-    /**
-     * @return GoogleCloudIntegrationsV1alphaParameterMapField
-     */
-    public function getValue()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaParameterMapEntry extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaParameterMapEntry
     {
     }
 }

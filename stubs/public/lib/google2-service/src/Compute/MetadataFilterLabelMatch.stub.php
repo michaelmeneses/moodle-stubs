@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class MetadataFilterLabelMatch extends \Google\Model
-{
-    /**
-     * Name of metadata label.
-     *
-     *  The name can have a maximum length of 1024 characters and must be at least
-     * 1 character long.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The value of the label must match the specified value.
-     *
-     * value can have a maximum length of 1024 characters.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Name of metadata label.
-     *
-     *  The name can have a maximum length of 1024 characters and must be at least
-     * 1 character long.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Compute {
+    class MetadataFilterLabelMatch extends \Google\Model
     {
+        /**
+         * Name of metadata label.
+         *
+         *  The name can have a maximum length of 1024 characters and must be at least
+         * 1 character long.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The value of the label must match the specified value.
+         *
+         * value can have a maximum length of 1024 characters.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Name of metadata label.
+         *
+         *  The name can have a maximum length of 1024 characters and must be at least
+         * 1 character long.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The value of the label must match the specified value.
+         *
+         * value can have a maximum length of 1024 characters.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\MetadataFilterLabelMatch registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * The value of the label must match the specified value.
-     *
-     * value can have a maximum length of 1024 characters.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_Compute_MetadataFilterLabelMatch extends \Google\Service\Compute\MetadataFilterLabelMatch
     {
     }
 }

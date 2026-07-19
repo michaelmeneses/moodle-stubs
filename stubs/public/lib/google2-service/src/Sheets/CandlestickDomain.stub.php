@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class CandlestickDomain extends \Google\Model
-{
-    protected $dataType = ChartData::class;
-    protected $dataDataType = '';
-    /**
-     * True to reverse the order of the domain values (horizontal axis).
-     *
-     * @var bool
-     */
-    public $reversed;
-    /**
-     * The data of the CandlestickDomain.
-     *
-     * @param ChartData $data
-     */
-    public function setData(ChartData $data)
+namespace Google\Service\Sheets {
+    class CandlestickDomain extends \Google\Model
     {
+        protected $dataType = ChartData::class;
+        protected $dataDataType = '';
+        /**
+         * True to reverse the order of the domain values (horizontal axis).
+         *
+         * @var bool
+         */
+        public $reversed;
+        /**
+         * The data of the CandlestickDomain.
+         *
+         * @param ChartData $data
+         */
+        public function setData(ChartData $data)
+        {
+        }
+        /**
+         * @return ChartData
+         */
+        public function getData()
+        {
+        }
+        /**
+         * True to reverse the order of the domain values (horizontal axis).
+         *
+         * @param bool $reversed
+         */
+        public function setReversed($reversed)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReversed()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ChartData
+     * Runtime class alias of \Google\Service\Sheets\CandlestickDomain registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getData()
-    {
-    }
-    /**
-     * True to reverse the order of the domain values (horizontal axis).
-     *
-     * @param bool $reversed
-     */
-    public function setReversed($reversed)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReversed()
+    class Google_Service_Sheets_CandlestickDomain extends \Google\Service\Sheets\CandlestickDomain
     {
     }
 }

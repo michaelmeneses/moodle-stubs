@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class SpaceReadState extends \Google\Model
-{
-    /**
-     * Optional. The time when the user's space read state was updated. Usually
-     * this corresponds with either the timestamp of the last read message, or a
-     * timestamp specified by the user to mark the last read position in a space.
-     *
-     * @var string
-     */
-    public $lastReadTime;
-    /**
-     * Resource name of the space read state. Format:
-     * `users/{user}/spaces/{space}/spaceReadState`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. The time when the user's space read state was updated. Usually
-     * this corresponds with either the timestamp of the last read message, or a
-     * timestamp specified by the user to mark the last read position in a space.
-     *
-     * @param string $lastReadTime
-     */
-    public function setLastReadTime($lastReadTime)
+namespace Google\Service\HangoutsChat {
+    class SpaceReadState extends \Google\Model
     {
+        /**
+         * Optional. The time when the user's space read state was updated. Usually
+         * this corresponds with either the timestamp of the last read message, or a
+         * timestamp specified by the user to mark the last read position in a space.
+         *
+         * @var string
+         */
+        public $lastReadTime;
+        /**
+         * Resource name of the space read state. Format:
+         * `users/{user}/spaces/{space}/spaceReadState`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. The time when the user's space read state was updated. Usually
+         * this corresponds with either the timestamp of the last read message, or a
+         * timestamp specified by the user to mark the last read position in a space.
+         *
+         * @param string $lastReadTime
+         */
+        public function setLastReadTime($lastReadTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastReadTime()
+        {
+        }
+        /**
+         * Resource name of the space read state. Format:
+         * `users/{user}/spaces/{space}/spaceReadState`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\HangoutsChat\SpaceReadState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLastReadTime()
-    {
-    }
-    /**
-     * Resource name of the space read state. Format:
-     * `users/{user}/spaces/{space}/spaceReadState`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_HangoutsChat_SpaceReadState extends \Google\Service\HangoutsChat\SpaceReadState
     {
     }
 }

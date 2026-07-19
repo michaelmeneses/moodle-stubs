@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1PhysicalSchemaProtobufSchema extends \Google\Model
-{
-    /**
-     * Protocol buffer source of the schema.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * Protocol buffer source of the schema.
-     *
-     * @param string $text
-     */
-    public function setText($text)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1PhysicalSchemaProtobufSchema extends \Google\Model
     {
+        /**
+         * Protocol buffer source of the schema.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * Protocol buffer source of the schema.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1PhysicalSchemaProtobufSchema registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getText()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1PhysicalSchemaProtobufSchema extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1PhysicalSchemaProtobufSchema
     {
     }
 }

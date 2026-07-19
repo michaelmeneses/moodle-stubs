@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceConsumerManagement;
-
-class SearchTenancyUnitsResponse extends \Google\Collection
-{
-    protected $collection_key = 'tenancyUnits';
-    /**
-     * Pagination token for large results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $tenancyUnitsType = TenancyUnit::class;
-    protected $tenancyUnitsDataType = 'array';
-    /**
-     * Pagination token for large results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\ServiceConsumerManagement {
+    class SearchTenancyUnitsResponse extends \Google\Collection
     {
+        protected $collection_key = 'tenancyUnits';
+        /**
+         * Pagination token for large results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $tenancyUnitsType = TenancyUnit::class;
+        protected $tenancyUnitsDataType = 'array';
+        /**
+         * Pagination token for large results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Tenancy Units matching the request.
+         *
+         * @param TenancyUnit[] $tenancyUnits
+         */
+        public function setTenancyUnits($tenancyUnits)
+        {
+        }
+        /**
+         * @return TenancyUnit[]
+         */
+        public function getTenancyUnits()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceConsumerManagement\SearchTenancyUnitsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Tenancy Units matching the request.
-     *
-     * @param TenancyUnit[] $tenancyUnits
-     */
-    public function setTenancyUnits($tenancyUnits)
-    {
-    }
-    /**
-     * @return TenancyUnit[]
-     */
-    public function getTenancyUnits()
+    class Google_Service_ServiceConsumerManagement_SearchTenancyUnitsResponse extends \Google\Service\ServiceConsumerManagement\SearchTenancyUnitsResponse
     {
     }
 }

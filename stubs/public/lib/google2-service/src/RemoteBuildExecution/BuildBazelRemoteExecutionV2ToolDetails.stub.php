@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class BuildBazelRemoteExecutionV2ToolDetails extends \Google\Model
-{
-    public $toolName;
-    public $toolVersion;
-    public function setToolName($toolName)
+namespace Google\Service\RemoteBuildExecution {
+    class BuildBazelRemoteExecutionV2ToolDetails extends \Google\Model
     {
+        public $toolName;
+        public $toolVersion;
+        public function setToolName($toolName)
+        {
+        }
+        public function getToolName()
+        {
+        }
+        public function setToolVersion($toolVersion)
+        {
+        }
+        public function getToolVersion()
+        {
+        }
     }
-    public function getToolName()
-    {
-    }
-    public function setToolVersion($toolVersion)
-    {
-    }
-    public function getToolVersion()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2ToolDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_RemoteBuildExecution_BuildBazelRemoteExecutionV2ToolDetails extends \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2ToolDetails
     {
     }
 }

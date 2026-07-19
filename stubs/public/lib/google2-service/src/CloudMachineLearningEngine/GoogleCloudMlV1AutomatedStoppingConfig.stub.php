@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMachineLearningEngine;
-
-class GoogleCloudMlV1AutomatedStoppingConfig extends \Google\Model
-{
-    protected $decayCurveStoppingConfigType = GoogleCloudMlV1AutomatedStoppingConfigDecayCurveAutomatedStoppingConfig::class;
-    protected $decayCurveStoppingConfigDataType = '';
-    protected $medianAutomatedStoppingConfigType = GoogleCloudMlV1AutomatedStoppingConfigMedianAutomatedStoppingConfig::class;
-    protected $medianAutomatedStoppingConfigDataType = '';
-    /**
-     * @param GoogleCloudMlV1AutomatedStoppingConfigDecayCurveAutomatedStoppingConfig $decayCurveStoppingConfig
-     */
-    public function setDecayCurveStoppingConfig(GoogleCloudMlV1AutomatedStoppingConfigDecayCurveAutomatedStoppingConfig $decayCurveStoppingConfig)
+namespace Google\Service\CloudMachineLearningEngine {
+    class GoogleCloudMlV1AutomatedStoppingConfig extends \Google\Model
     {
+        protected $decayCurveStoppingConfigType = GoogleCloudMlV1AutomatedStoppingConfigDecayCurveAutomatedStoppingConfig::class;
+        protected $decayCurveStoppingConfigDataType = '';
+        protected $medianAutomatedStoppingConfigType = GoogleCloudMlV1AutomatedStoppingConfigMedianAutomatedStoppingConfig::class;
+        protected $medianAutomatedStoppingConfigDataType = '';
+        /**
+         * @param GoogleCloudMlV1AutomatedStoppingConfigDecayCurveAutomatedStoppingConfig $decayCurveStoppingConfig
+         */
+        public function setDecayCurveStoppingConfig(GoogleCloudMlV1AutomatedStoppingConfigDecayCurveAutomatedStoppingConfig $decayCurveStoppingConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudMlV1AutomatedStoppingConfigDecayCurveAutomatedStoppingConfig
+         */
+        public function getDecayCurveStoppingConfig()
+        {
+        }
+        /**
+         * @param GoogleCloudMlV1AutomatedStoppingConfigMedianAutomatedStoppingConfig $medianAutomatedStoppingConfig
+         */
+        public function setMedianAutomatedStoppingConfig(GoogleCloudMlV1AutomatedStoppingConfigMedianAutomatedStoppingConfig $medianAutomatedStoppingConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudMlV1AutomatedStoppingConfigMedianAutomatedStoppingConfig
+         */
+        public function getMedianAutomatedStoppingConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudMlV1AutomatedStoppingConfigDecayCurveAutomatedStoppingConfig
+     * Runtime class alias of \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1AutomatedStoppingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDecayCurveStoppingConfig()
-    {
-    }
-    /**
-     * @param GoogleCloudMlV1AutomatedStoppingConfigMedianAutomatedStoppingConfig $medianAutomatedStoppingConfig
-     */
-    public function setMedianAutomatedStoppingConfig(GoogleCloudMlV1AutomatedStoppingConfigMedianAutomatedStoppingConfig $medianAutomatedStoppingConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudMlV1AutomatedStoppingConfigMedianAutomatedStoppingConfig
-     */
-    public function getMedianAutomatedStoppingConfig()
+    class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1AutomatedStoppingConfig extends \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1AutomatedStoppingConfig
     {
     }
 }

@@ -21,35 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine\Resource;
-
-/**
- * The "branches" collection of methods.
- * Typical usage is:
- *  <code>
- *   $discoveryengineService = new Google\Service\DiscoveryEngine(...);
- *   $branches = $discoveryengineService->projects_locations_collections_dataStores_branches;
- *  </code>
- */
-class ProjectsLocationsCollectionsDataStoresBranches extends \Google\Service\Resource
-{
+namespace Google\Service\DiscoveryEngine\Resource {
+    use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1BatchGetDocumentsMetadataResponse;
     /**
-     * Gets index freshness metadata for Documents. Supported for website search
-     * only. (branches.batchGetDocumentsMetadata)
-     *
-     * @param string $parent Required. The parent branch resource name, such as `pro
-     * jects/{project}/locations/{location}/collections/{collection}/dataStores/{dat
-     * a_store}/branches/{branch}`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string matcher.fhirMatcher.fhirResources Required. The FHIR
-     * resources to match by. Format: projects/{project}/locations/{location}/datase
-     * ts/{dataset}/fhirStores/{fhir_store}/fhir/{resource_type}/{fhir_resource_id}
-     * @opt_param string matcher.urisMatcher.uris The exact URIs to match by.
-     * @return GoogleCloudDiscoveryengineV1BatchGetDocumentsMetadataResponse
-     * @throws \Google\Service\Exception
+     * The "branches" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $discoveryengineService = new Google\Service\DiscoveryEngine(...);
+     *   $branches = $discoveryengineService->projects_locations_collections_dataStores_branches;
+     *  </code>
      */
-    public function batchGetDocumentsMetadata($parent, $optParams = [])
+    class ProjectsLocationsCollectionsDataStoresBranches extends \Google\Service\Resource
+    {
+        /**
+         * Gets index freshness metadata for Documents. Supported for website search
+         * only. (branches.batchGetDocumentsMetadata)
+         *
+         * @param string $parent Required. The parent branch resource name, such as `pro
+         * jects/{project}/locations/{location}/collections/{collection}/dataStores/{dat
+         * a_store}/branches/{branch}`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string matcher.fhirMatcher.fhirResources Required. The FHIR
+         * resources to match by. Format: projects/{project}/locations/{location}/datase
+         * ts/{dataset}/fhirStores/{fhir_store}/fhir/{resource_type}/{fhir_resource_id}
+         * @opt_param string matcher.urisMatcher.uris The exact URIs to match by.
+         * @return GoogleCloudDiscoveryengineV1BatchGetDocumentsMetadataResponse
+         * @throws \Google\Service\Exception
+         */
+        public function batchGetDocumentsMetadata($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DiscoveryEngine\Resource\ProjectsLocationsCollectionsDataStoresBranches registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DiscoveryEngine_Resource_ProjectsLocationsCollectionsDataStoresBranches extends \Google\Service\DiscoveryEngine\Resource\ProjectsLocationsCollectionsDataStoresBranches
     {
     }
 }

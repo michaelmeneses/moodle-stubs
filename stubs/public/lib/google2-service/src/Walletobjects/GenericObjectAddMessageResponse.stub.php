@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class GenericObjectAddMessageResponse extends \Google\Model
-{
-    protected $resourceType = GenericObject::class;
-    protected $resourceDataType = '';
-    /**
-     * The updated GenericObject resource.
-     *
-     * @param GenericObject $resource
-     */
-    public function setResource(GenericObject $resource)
+namespace Google\Service\Walletobjects {
+    class GenericObjectAddMessageResponse extends \Google\Model
     {
+        protected $resourceType = GenericObject::class;
+        protected $resourceDataType = '';
+        /**
+         * The updated GenericObject resource.
+         *
+         * @param GenericObject $resource
+         */
+        public function setResource(GenericObject $resource)
+        {
+        }
+        /**
+         * @return GenericObject
+         */
+        public function getResource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GenericObject
+     * Runtime class alias of \Google\Service\Walletobjects\GenericObjectAddMessageResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResource()
+    class Google_Service_Walletobjects_GenericObjectAddMessageResponse extends \Google\Service\Walletobjects\GenericObjectAddMessageResponse
     {
     }
 }

@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceManagement;
-
-class Context extends \Google\Collection
-{
-    protected $collection_key = 'rules';
-    protected $rulesType = ContextRule::class;
-    protected $rulesDataType = 'array';
-    /**
-     * A list of RPC context rules that apply to individual API methods. **NOTE:**
-     * All service configuration rules follow "last one wins" order.
-     *
-     * @param ContextRule[] $rules
-     */
-    public function setRules($rules)
+namespace Google\Service\ServiceManagement {
+    class Context extends \Google\Collection
     {
+        protected $collection_key = 'rules';
+        protected $rulesType = ContextRule::class;
+        protected $rulesDataType = 'array';
+        /**
+         * A list of RPC context rules that apply to individual API methods. **NOTE:**
+         * All service configuration rules follow "last one wins" order.
+         *
+         * @param ContextRule[] $rules
+         */
+        public function setRules($rules)
+        {
+        }
+        /**
+         * @return ContextRule[]
+         */
+        public function getRules()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ContextRule[]
+     * Runtime class alias of \Google\Service\ServiceManagement\Context registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRules()
+    class Google_Service_ServiceManagement_Context extends \Google\Service\ServiceManagement\Context
     {
     }
 }

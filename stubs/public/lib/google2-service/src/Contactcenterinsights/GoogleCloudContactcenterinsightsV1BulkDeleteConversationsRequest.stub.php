@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1BulkDeleteConversationsRequest extends \Google\Model
-{
-    /**
-     * Filter used to select the subset of conversations to delete.
-     *
-     * @var string
-     */
-    public $filter;
-    /**
-     * If set to true, all of this conversation's analyses will also be deleted.
-     * Otherwise, the request will only succeed if the conversation has no
-     * analyses.
-     *
-     * @var bool
-     */
-    public $force;
-    /**
-     * Maximum number of conversations to delete.
-     *
-     * @var int
-     */
-    public $maxDeleteCount;
-    /**
-     * Required. The parent resource to delete conversations from. Format:
-     * projects/{project}/locations/{location}
-     *
-     * @var string
-     */
-    public $parent;
-    /**
-     * Filter used to select the subset of conversations to delete.
-     *
-     * @param string $filter
-     */
-    public function setFilter($filter)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1BulkDeleteConversationsRequest extends \Google\Model
     {
+        /**
+         * Filter used to select the subset of conversations to delete.
+         *
+         * @var string
+         */
+        public $filter;
+        /**
+         * If set to true, all of this conversation's analyses will also be deleted.
+         * Otherwise, the request will only succeed if the conversation has no
+         * analyses.
+         *
+         * @var bool
+         */
+        public $force;
+        /**
+         * Maximum number of conversations to delete.
+         *
+         * @var int
+         */
+        public $maxDeleteCount;
+        /**
+         * Required. The parent resource to delete conversations from. Format:
+         * projects/{project}/locations/{location}
+         *
+         * @var string
+         */
+        public $parent;
+        /**
+         * Filter used to select the subset of conversations to delete.
+         *
+         * @param string $filter
+         */
+        public function setFilter($filter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilter()
+        {
+        }
+        /**
+         * If set to true, all of this conversation's analyses will also be deleted.
+         * Otherwise, the request will only succeed if the conversation has no
+         * analyses.
+         *
+         * @param bool $force
+         */
+        public function setForce($force)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getForce()
+        {
+        }
+        /**
+         * Maximum number of conversations to delete.
+         *
+         * @param int $maxDeleteCount
+         */
+        public function setMaxDeleteCount($maxDeleteCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxDeleteCount()
+        {
+        }
+        /**
+         * Required. The parent resource to delete conversations from. Format:
+         * projects/{project}/locations/{location}
+         *
+         * @param string $parent
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1BulkDeleteConversationsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilter()
-    {
-    }
-    /**
-     * If set to true, all of this conversation's analyses will also be deleted.
-     * Otherwise, the request will only succeed if the conversation has no
-     * analyses.
-     *
-     * @param bool $force
-     */
-    public function setForce($force)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getForce()
-    {
-    }
-    /**
-     * Maximum number of conversations to delete.
-     *
-     * @param int $maxDeleteCount
-     */
-    public function setMaxDeleteCount($maxDeleteCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxDeleteCount()
-    {
-    }
-    /**
-     * Required. The parent resource to delete conversations from. Format:
-     * projects/{project}/locations/{location}
-     *
-     * @param string $parent
-     */
-    public function setParent($parent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParent()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1BulkDeleteConversationsRequest extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1BulkDeleteConversationsRequest
     {
     }
 }

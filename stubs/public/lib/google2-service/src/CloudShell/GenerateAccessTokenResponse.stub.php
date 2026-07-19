@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudShell;
-
-class GenerateAccessTokenResponse extends \Google\Model
-{
-    /**
-     * The access token.
-     *
-     * @var string
-     */
-    public $accessToken;
-    /**
-     * The access token.
-     *
-     * @param string $accessToken
-     */
-    public function setAccessToken($accessToken)
+namespace Google\Service\CloudShell {
+    class GenerateAccessTokenResponse extends \Google\Model
     {
+        /**
+         * The access token.
+         *
+         * @var string
+         */
+        public $accessToken;
+        /**
+         * The access token.
+         *
+         * @param string $accessToken
+         */
+        public function setAccessToken($accessToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccessToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudShell\GenerateAccessTokenResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessToken()
+    class Google_Service_CloudShell_GenerateAccessTokenResponse extends \Google\Service\CloudShell\GenerateAccessTokenResponse
     {
     }
 }

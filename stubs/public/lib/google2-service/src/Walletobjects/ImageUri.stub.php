@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class ImageUri extends \Google\Model
-{
-    /**
-     * Additional information about the image, which is unused and retained only
-     * for backward compatibility.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $description;
-    protected $localizedDescriptionType = LocalizedString::class;
-    protected $localizedDescriptionDataType = '';
-    /**
-     * The location of the image. URIs must have a scheme.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Additional information about the image, which is unused and retained only
-     * for backward compatibility.
-     *
-     * @deprecated
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Walletobjects {
+    class ImageUri extends \Google\Model
     {
+        /**
+         * Additional information about the image, which is unused and retained only
+         * for backward compatibility.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $description;
+        protected $localizedDescriptionType = LocalizedString::class;
+        protected $localizedDescriptionDataType = '';
+        /**
+         * The location of the image. URIs must have a scheme.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Additional information about the image, which is unused and retained only
+         * for backward compatibility.
+         *
+         * @deprecated
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Translated strings for the description, which are unused and retained only
+         * for backward compatibility.
+         *
+         * @deprecated
+         * @param LocalizedString $localizedDescription
+         */
+        public function setLocalizedDescription(LocalizedString $localizedDescription)
+        {
+        }
+        /**
+         * @deprecated
+         * @return LocalizedString
+         */
+        public function getLocalizedDescription()
+        {
+        }
+        /**
+         * The location of the image. URIs must have a scheme.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return string
+     * Runtime class alias of \Google\Service\Walletobjects\ImageUri registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Translated strings for the description, which are unused and retained only
-     * for backward compatibility.
-     *
-     * @deprecated
-     * @param LocalizedString $localizedDescription
-     */
-    public function setLocalizedDescription(LocalizedString $localizedDescription)
-    {
-    }
-    /**
-     * @deprecated
-     * @return LocalizedString
-     */
-    public function getLocalizedDescription()
-    {
-    }
-    /**
-     * The location of the image. URIs must have a scheme.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_Walletobjects_ImageUri extends \Google\Service\Walletobjects\ImageUri
     {
     }
 }

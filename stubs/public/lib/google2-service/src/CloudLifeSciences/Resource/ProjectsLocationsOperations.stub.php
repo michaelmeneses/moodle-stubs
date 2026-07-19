@@ -21,76 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudLifeSciences\Resource;
-
-/**
- * The "operations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $lifesciencesService = new Google\Service\CloudLifeSciences(...);
- *   $operations = $lifesciencesService->projects_locations_operations;
- *  </code>
- */
-class ProjectsLocationsOperations extends \Google\Service\Resource
-{
+namespace Google\Service\CloudLifeSciences\Resource {
+    use Google\Service\CloudLifeSciences\CancelOperationRequest;
+    use Google\Service\CloudLifeSciences\LifesciencesEmpty;
+    use Google\Service\CloudLifeSciences\ListOperationsResponse;
+    use Google\Service\CloudLifeSciences\Operation;
     /**
-     * Starts asynchronous cancellation on a long-running operation. The server
-     * makes a best effort to cancel the operation, but success is not guaranteed.
-     * Clients may use Operations.GetOperation or Operations.ListOperations to check
-     * whether the cancellation succeeded or the operation completed despite
-     * cancellation. Authorization requires the following [Google
-     * IAM](https://cloud.google.com/iam) permission: *
-     * `lifesciences.operations.cancel` (operations.cancel)
-     *
-     * @param string $name The name of the operation resource to be cancelled.
-     * @param CancelOperationRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return LifesciencesEmpty
-     * @throws \Google\Service\Exception
+     * The "operations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $lifesciencesService = new Google\Service\CloudLifeSciences(...);
+     *   $operations = $lifesciencesService->projects_locations_operations;
+     *  </code>
      */
-    public function cancel($name, CancelOperationRequest $postBody, $optParams = [])
+    class ProjectsLocationsOperations extends \Google\Service\Resource
     {
+        /**
+         * Starts asynchronous cancellation on a long-running operation. The server
+         * makes a best effort to cancel the operation, but success is not guaranteed.
+         * Clients may use Operations.GetOperation or Operations.ListOperations to check
+         * whether the cancellation succeeded or the operation completed despite
+         * cancellation. Authorization requires the following [Google
+         * IAM](https://cloud.google.com/iam) permission: *
+         * `lifesciences.operations.cancel` (operations.cancel)
+         *
+         * @param string $name The name of the operation resource to be cancelled.
+         * @param CancelOperationRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return LifesciencesEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function cancel($name, CancelOperationRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Gets the latest state of a long-running operation. Clients can use this
+         * method to poll the operation result at intervals as recommended by the API
+         * service. Authorization requires the following [Google
+         * IAM](https://cloud.google.com/iam) permission: *
+         * `lifesciences.operations.get` (operations.get)
+         *
+         * @param string $name The name of the operation resource.
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists operations that match the specified filter in the request.
+         * Authorization requires the following [Google
+         * IAM](https://cloud.google.com/iam) permission: *
+         * `lifesciences.operations.list` (operations.listProjectsLocationsOperations)
+         *
+         * @param string $name The name of the operation's parent resource.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter A string for filtering Operations. The following
+         * filter fields are supported: * createTime: The time this job was created *
+         * events: The set of event (names) that have occurred while running the
+         * pipeline. The : operator can be used to determine if a particular event has
+         * occurred. * error: If the pipeline is running, this value is NULL. Once the
+         * pipeline finishes, the value is the standard Google error code. * labels.key
+         * or labels."key with space" where key is a label key. * done: If the pipeline
+         * is running, this value is false. Once the pipeline finishes, the value is
+         * true.
+         * @opt_param int pageSize The maximum number of results to return. The maximum
+         * value is 256.
+         * @opt_param string pageToken The standard list page token.
+         * @return ListOperationsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsOperations($name, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets the latest state of a long-running operation. Clients can use this
-     * method to poll the operation result at intervals as recommended by the API
-     * service. Authorization requires the following [Google
-     * IAM](https://cloud.google.com/iam) permission: *
-     * `lifesciences.operations.get` (operations.get)
-     *
-     * @param string $name The name of the operation resource.
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\CloudLifeSciences\Resource\ProjectsLocationsOperations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists operations that match the specified filter in the request.
-     * Authorization requires the following [Google
-     * IAM](https://cloud.google.com/iam) permission: *
-     * `lifesciences.operations.list` (operations.listProjectsLocationsOperations)
-     *
-     * @param string $name The name of the operation's parent resource.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter A string for filtering Operations. The following
-     * filter fields are supported: * createTime: The time this job was created *
-     * events: The set of event (names) that have occurred while running the
-     * pipeline. The : operator can be used to determine if a particular event has
-     * occurred. * error: If the pipeline is running, this value is NULL. Once the
-     * pipeline finishes, the value is the standard Google error code. * labels.key
-     * or labels."key with space" where key is a label key. * done: If the pipeline
-     * is running, this value is false. Once the pipeline finishes, the value is
-     * true.
-     * @opt_param int pageSize The maximum number of results to return. The maximum
-     * value is 256.
-     * @opt_param string pageToken The standard list page token.
-     * @return ListOperationsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsOperations($name, $optParams = [])
+    class Google_Service_CloudLifeSciences_Resource_ProjectsLocationsOperations extends \Google\Service\CloudLifeSciences\Resource\ProjectsLocationsOperations
     {
     }
 }

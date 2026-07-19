@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1ResponseMessageText extends \Google\Collection
-{
-    protected $collection_key = 'text';
-    /**
-     * A collection of text response variants. If multiple variants are defined,
-     * only one text response variant is returned at runtime.
-     *
-     * @var string[]
-     */
-    public $text;
-    /**
-     * A collection of text response variants. If multiple variants are defined,
-     * only one text response variant is returned at runtime.
-     *
-     * @param string[] $text
-     */
-    public function setText($text)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1ResponseMessageText extends \Google\Collection
     {
+        protected $collection_key = 'text';
+        /**
+         * A collection of text response variants. If multiple variants are defined,
+         * only one text response variant is returned at runtime.
+         *
+         * @var string[]
+         */
+        public $text;
+        /**
+         * A collection of text response variants. If multiple variants are defined,
+         * only one text response variant is returned at runtime.
+         *
+         * @param string[] $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1ResponseMessageText registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getText()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1ResponseMessageText extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1ResponseMessageText
     {
     }
 }

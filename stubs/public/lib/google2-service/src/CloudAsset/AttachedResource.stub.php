@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class AttachedResource extends \Google\Collection
-{
-    protected $collection_key = 'versionedResources';
-    /**
-     * The type of this attached resource. Example:
-     * `osconfig.googleapis.com/Inventory` You can find the supported attached
-     * asset types of each resource in this table:
-     * `https://cloud.google.com/asset-inventory/docs/supported-asset-types`
-     *
-     * @var string
-     */
-    public $assetType;
-    protected $versionedResourcesType = VersionedResource::class;
-    protected $versionedResourcesDataType = 'array';
-    /**
-     * The type of this attached resource. Example:
-     * `osconfig.googleapis.com/Inventory` You can find the supported attached
-     * asset types of each resource in this table:
-     * `https://cloud.google.com/asset-inventory/docs/supported-asset-types`
-     *
-     * @param string $assetType
-     */
-    public function setAssetType($assetType)
+namespace Google\Service\CloudAsset {
+    class AttachedResource extends \Google\Collection
     {
+        protected $collection_key = 'versionedResources';
+        /**
+         * The type of this attached resource. Example:
+         * `osconfig.googleapis.com/Inventory` You can find the supported attached
+         * asset types of each resource in this table:
+         * `https://cloud.google.com/asset-inventory/docs/supported-asset-types`
+         *
+         * @var string
+         */
+        public $assetType;
+        protected $versionedResourcesType = VersionedResource::class;
+        protected $versionedResourcesDataType = 'array';
+        /**
+         * The type of this attached resource. Example:
+         * `osconfig.googleapis.com/Inventory` You can find the supported attached
+         * asset types of each resource in this table:
+         * `https://cloud.google.com/asset-inventory/docs/supported-asset-types`
+         *
+         * @param string $assetType
+         */
+        public function setAssetType($assetType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAssetType()
+        {
+        }
+        /**
+         * Versioned resource representations of this attached resource. This is
+         * repeated because there could be multiple versions of the attached resource
+         * representations during version migration.
+         *
+         * @param VersionedResource[] $versionedResources
+         */
+        public function setVersionedResources($versionedResources)
+        {
+        }
+        /**
+         * @return VersionedResource[]
+         */
+        public function getVersionedResources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAsset\AttachedResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssetType()
-    {
-    }
-    /**
-     * Versioned resource representations of this attached resource. This is
-     * repeated because there could be multiple versions of the attached resource
-     * representations during version migration.
-     *
-     * @param VersionedResource[] $versionedResources
-     */
-    public function setVersionedResources($versionedResources)
-    {
-    }
-    /**
-     * @return VersionedResource[]
-     */
-    public function getVersionedResources()
+    class Google_Service_CloudAsset_AttachedResource extends \Google\Service\CloudAsset\AttachedResource
     {
     }
 }

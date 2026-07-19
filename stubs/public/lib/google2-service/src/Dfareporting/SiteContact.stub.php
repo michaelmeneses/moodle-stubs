@@ -21,172 +21,181 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class SiteContact extends \Google\Model
-{
-    public const CONTACT_TYPE_SALES_PERSON = 'SALES_PERSON';
-    public const CONTACT_TYPE_TRAFFICKER = 'TRAFFICKER';
-    /**
-     * Address of this site contact.
-     *
-     * @var string
-     */
-    public $address;
-    /**
-     * Site contact type.
-     *
-     * @var string
-     */
-    public $contactType;
-    /**
-     * Email address of this site contact. This is a required field.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * First name of this site contact.
-     *
-     * @var string
-     */
-    public $firstName;
-    /**
-     * ID of this site contact. This is a read-only, auto-generated field.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Last name of this site contact.
-     *
-     * @var string
-     */
-    public $lastName;
-    /**
-     * Primary phone number of this site contact.
-     *
-     * @var string
-     */
-    public $phone;
-    /**
-     * Title or designation of this site contact.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Address of this site contact.
-     *
-     * @param string $address
-     */
-    public function setAddress($address)
+namespace Google\Service\Dfareporting {
+    class SiteContact extends \Google\Model
     {
+        public const CONTACT_TYPE_SALES_PERSON = 'SALES_PERSON';
+        public const CONTACT_TYPE_TRAFFICKER = 'TRAFFICKER';
+        /**
+         * Address of this site contact.
+         *
+         * @var string
+         */
+        public $address;
+        /**
+         * Site contact type.
+         *
+         * @var string
+         */
+        public $contactType;
+        /**
+         * Email address of this site contact. This is a required field.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * First name of this site contact.
+         *
+         * @var string
+         */
+        public $firstName;
+        /**
+         * ID of this site contact. This is a read-only, auto-generated field.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Last name of this site contact.
+         *
+         * @var string
+         */
+        public $lastName;
+        /**
+         * Primary phone number of this site contact.
+         *
+         * @var string
+         */
+        public $phone;
+        /**
+         * Title or designation of this site contact.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Address of this site contact.
+         *
+         * @param string $address
+         */
+        public function setAddress($address)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAddress()
+        {
+        }
+        /**
+         * Site contact type.
+         *
+         * Accepted values: SALES_PERSON, TRAFFICKER
+         *
+         * @param self::CONTACT_TYPE_* $contactType
+         */
+        public function setContactType($contactType)
+        {
+        }
+        /**
+         * @return self::CONTACT_TYPE_*
+         */
+        public function getContactType()
+        {
+        }
+        /**
+         * Email address of this site contact. This is a required field.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * First name of this site contact.
+         *
+         * @param string $firstName
+         */
+        public function setFirstName($firstName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFirstName()
+        {
+        }
+        /**
+         * ID of this site contact. This is a read-only, auto-generated field.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Last name of this site contact.
+         *
+         * @param string $lastName
+         */
+        public function setLastName($lastName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastName()
+        {
+        }
+        /**
+         * Primary phone number of this site contact.
+         *
+         * @param string $phone
+         */
+        public function setPhone($phone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhone()
+        {
+        }
+        /**
+         * Title or designation of this site contact.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\SiteContact registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddress()
-    {
-    }
-    /**
-     * Site contact type.
-     *
-     * Accepted values: SALES_PERSON, TRAFFICKER
-     *
-     * @param self::CONTACT_TYPE_* $contactType
-     */
-    public function setContactType($contactType)
-    {
-    }
-    /**
-     * @return self::CONTACT_TYPE_*
-     */
-    public function getContactType()
-    {
-    }
-    /**
-     * Email address of this site contact. This is a required field.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEmail()
-    {
-    }
-    /**
-     * First name of this site contact.
-     *
-     * @param string $firstName
-     */
-    public function setFirstName($firstName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFirstName()
-    {
-    }
-    /**
-     * ID of this site contact. This is a read-only, auto-generated field.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Last name of this site contact.
-     *
-     * @param string $lastName
-     */
-    public function setLastName($lastName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastName()
-    {
-    }
-    /**
-     * Primary phone number of this site contact.
-     *
-     * @param string $phone
-     */
-    public function setPhone($phone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhone()
-    {
-    }
-    /**
-     * Title or designation of this site contact.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_Dfareporting_SiteContact extends \Google\Service\Dfareporting\SiteContact
     {
     }
 }

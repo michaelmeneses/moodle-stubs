@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class SourceSplitShard extends \Google\Model
-{
-    /**
-     * The source derivation is unknown, or unspecified.
-     */
-    public const DERIVATION_MODE_SOURCE_DERIVATION_MODE_UNKNOWN = 'SOURCE_DERIVATION_MODE_UNKNOWN';
-    /**
-     * Produce a completely independent Source with no base.
-     */
-    public const DERIVATION_MODE_SOURCE_DERIVATION_MODE_INDEPENDENT = 'SOURCE_DERIVATION_MODE_INDEPENDENT';
-    /**
-     * Produce a Source based on the Source being split.
-     */
-    public const DERIVATION_MODE_SOURCE_DERIVATION_MODE_CHILD_OF_CURRENT = 'SOURCE_DERIVATION_MODE_CHILD_OF_CURRENT';
-    /**
-     * Produce a Source based on the base of the Source being split.
-     */
-    public const DERIVATION_MODE_SOURCE_DERIVATION_MODE_SIBLING_OF_CURRENT = 'SOURCE_DERIVATION_MODE_SIBLING_OF_CURRENT';
-    /**
-     * DEPRECATED
-     *
-     * @var string
-     */
-    public $derivationMode;
-    protected $sourceType = Source::class;
-    protected $sourceDataType = '';
-    /**
-     * DEPRECATED
-     *
-     * Accepted values: SOURCE_DERIVATION_MODE_UNKNOWN,
-     * SOURCE_DERIVATION_MODE_INDEPENDENT,
-     * SOURCE_DERIVATION_MODE_CHILD_OF_CURRENT,
-     * SOURCE_DERIVATION_MODE_SIBLING_OF_CURRENT
-     *
-     * @param self::DERIVATION_MODE_* $derivationMode
-     */
-    public function setDerivationMode($derivationMode)
+namespace Google\Service\Dataflow {
+    class SourceSplitShard extends \Google\Model
     {
+        /**
+         * The source derivation is unknown, or unspecified.
+         */
+        public const DERIVATION_MODE_SOURCE_DERIVATION_MODE_UNKNOWN = 'SOURCE_DERIVATION_MODE_UNKNOWN';
+        /**
+         * Produce a completely independent Source with no base.
+         */
+        public const DERIVATION_MODE_SOURCE_DERIVATION_MODE_INDEPENDENT = 'SOURCE_DERIVATION_MODE_INDEPENDENT';
+        /**
+         * Produce a Source based on the Source being split.
+         */
+        public const DERIVATION_MODE_SOURCE_DERIVATION_MODE_CHILD_OF_CURRENT = 'SOURCE_DERIVATION_MODE_CHILD_OF_CURRENT';
+        /**
+         * Produce a Source based on the base of the Source being split.
+         */
+        public const DERIVATION_MODE_SOURCE_DERIVATION_MODE_SIBLING_OF_CURRENT = 'SOURCE_DERIVATION_MODE_SIBLING_OF_CURRENT';
+        /**
+         * DEPRECATED
+         *
+         * @var string
+         */
+        public $derivationMode;
+        protected $sourceType = Source::class;
+        protected $sourceDataType = '';
+        /**
+         * DEPRECATED
+         *
+         * Accepted values: SOURCE_DERIVATION_MODE_UNKNOWN,
+         * SOURCE_DERIVATION_MODE_INDEPENDENT,
+         * SOURCE_DERIVATION_MODE_CHILD_OF_CURRENT,
+         * SOURCE_DERIVATION_MODE_SIBLING_OF_CURRENT
+         *
+         * @param self::DERIVATION_MODE_* $derivationMode
+         */
+        public function setDerivationMode($derivationMode)
+        {
+        }
+        /**
+         * @return self::DERIVATION_MODE_*
+         */
+        public function getDerivationMode()
+        {
+        }
+        /**
+         * DEPRECATED
+         *
+         * @param Source $source
+         */
+        public function setSource(Source $source)
+        {
+        }
+        /**
+         * @return Source
+         */
+        public function getSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::DERIVATION_MODE_*
+     * Runtime class alias of \Google\Service\Dataflow\SourceSplitShard registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDerivationMode()
-    {
-    }
-    /**
-     * DEPRECATED
-     *
-     * @param Source $source
-     */
-    public function setSource(Source $source)
-    {
-    }
-    /**
-     * @return Source
-     */
-    public function getSource()
+    class Google_Service_Dataflow_SourceSplitShard extends \Google\Service\Dataflow\SourceSplitShard
     {
     }
 }

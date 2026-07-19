@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleAlignmentRule extends \Google\Model
-{
-    public const ALIGNMENT_TYPE_ALIGNMENT_TYPE_UNSPECIFIED = 'ALIGNMENT_TYPE_UNSPECIFIED';
-    public const ALIGNMENT_TYPE_ALIGNMENT_TYPE_HORIZONTAL = 'ALIGNMENT_TYPE_HORIZONTAL';
-    public const ALIGNMENT_TYPE_ALIGNMENT_TYPE_VERTICAL = 'ALIGNMENT_TYPE_VERTICAL';
-    /**
-     * @var string
-     */
-    public $alignmentType;
-    /**
-     * The tolerance to use when comparing coordinates.
-     *
-     * @var float
-     */
-    public $tolerance;
-    /**
-     * @param self::ALIGNMENT_TYPE_* $alignmentType
-     */
-    public function setAlignmentType($alignmentType)
+namespace Google\Service\Document {
+    class CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleAlignmentRule extends \Google\Model
     {
+        public const ALIGNMENT_TYPE_ALIGNMENT_TYPE_UNSPECIFIED = 'ALIGNMENT_TYPE_UNSPECIFIED';
+        public const ALIGNMENT_TYPE_ALIGNMENT_TYPE_HORIZONTAL = 'ALIGNMENT_TYPE_HORIZONTAL';
+        public const ALIGNMENT_TYPE_ALIGNMENT_TYPE_VERTICAL = 'ALIGNMENT_TYPE_VERTICAL';
+        /**
+         * @var string
+         */
+        public $alignmentType;
+        /**
+         * The tolerance to use when comparing coordinates.
+         *
+         * @var float
+         */
+        public $tolerance;
+        /**
+         * @param self::ALIGNMENT_TYPE_* $alignmentType
+         */
+        public function setAlignmentType($alignmentType)
+        {
+        }
+        /**
+         * @return self::ALIGNMENT_TYPE_*
+         */
+        public function getAlignmentType()
+        {
+        }
+        /**
+         * The tolerance to use when comparing coordinates.
+         *
+         * @param float $tolerance
+         */
+        public function setTolerance($tolerance)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getTolerance()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ALIGNMENT_TYPE_*
+     * Runtime class alias of \Google\Service\Document\CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleAlignmentRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlignmentType()
-    {
-    }
-    /**
-     * The tolerance to use when comparing coordinates.
-     *
-     * @param float $tolerance
-     */
-    public function setTolerance($tolerance)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getTolerance()
+    class Google_Service_Document_CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleAlignmentRule extends \Google\Service\Document\CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleAlignmentRule
     {
     }
 }

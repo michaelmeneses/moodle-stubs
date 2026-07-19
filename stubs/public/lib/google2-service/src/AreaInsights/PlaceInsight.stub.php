@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AreaInsights;
-
-class PlaceInsight extends \Google\Model
-{
-    /**
-     * The unique identifier of the place. This resource name can be used to
-     * retrieve details about the place using the [Places
-     * API](https://developers.google.com/maps/documentation/places/web-
-     * service/reference/rest/v1/places/get).
-     *
-     * @var string
-     */
-    public $place;
-    /**
-     * The unique identifier of the place. This resource name can be used to
-     * retrieve details about the place using the [Places
-     * API](https://developers.google.com/maps/documentation/places/web-
-     * service/reference/rest/v1/places/get).
-     *
-     * @param string $place
-     */
-    public function setPlace($place)
+namespace Google\Service\AreaInsights {
+    class PlaceInsight extends \Google\Model
     {
+        /**
+         * The unique identifier of the place. This resource name can be used to
+         * retrieve details about the place using the [Places
+         * API](https://developers.google.com/maps/documentation/places/web-
+         * service/reference/rest/v1/places/get).
+         *
+         * @var string
+         */
+        public $place;
+        /**
+         * The unique identifier of the place. This resource name can be used to
+         * retrieve details about the place using the [Places
+         * API](https://developers.google.com/maps/documentation/places/web-
+         * service/reference/rest/v1/places/get).
+         *
+         * @param string $place
+         */
+        public function setPlace($place)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlace()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AreaInsights\PlaceInsight registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPlace()
+    class Google_Service_AreaInsights_PlaceInsight extends \Google\Service\AreaInsights\PlaceInsight
     {
     }
 }

@@ -21,99 +21,108 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class PathToConversionReportCompatibleFields extends \Google\Collection
-{
-    protected $collection_key = 'perInteractionDimensions';
-    protected $conversionDimensionsType = Dimension::class;
-    protected $conversionDimensionsDataType = 'array';
-    protected $customFloodlightVariablesType = Dimension::class;
-    protected $customFloodlightVariablesDataType = 'array';
-    /**
-     * The kind of resource this is, in this case
-     * dfareporting#pathToConversionReportCompatibleFields.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $metricsType = Metric::class;
-    protected $metricsDataType = 'array';
-    protected $perInteractionDimensionsType = Dimension::class;
-    protected $perInteractionDimensionsDataType = 'array';
-    /**
-     * Conversion dimensions which are compatible to be selected in the
-     * "conversionDimensions" section of the report.
-     *
-     * @param Dimension[] $conversionDimensions
-     */
-    public function setConversionDimensions($conversionDimensions)
+namespace Google\Service\Dfareporting {
+    class PathToConversionReportCompatibleFields extends \Google\Collection
     {
+        protected $collection_key = 'perInteractionDimensions';
+        protected $conversionDimensionsType = Dimension::class;
+        protected $conversionDimensionsDataType = 'array';
+        protected $customFloodlightVariablesType = Dimension::class;
+        protected $customFloodlightVariablesDataType = 'array';
+        /**
+         * The kind of resource this is, in this case
+         * dfareporting#pathToConversionReportCompatibleFields.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $metricsType = Metric::class;
+        protected $metricsDataType = 'array';
+        protected $perInteractionDimensionsType = Dimension::class;
+        protected $perInteractionDimensionsDataType = 'array';
+        /**
+         * Conversion dimensions which are compatible to be selected in the
+         * "conversionDimensions" section of the report.
+         *
+         * @param Dimension[] $conversionDimensions
+         */
+        public function setConversionDimensions($conversionDimensions)
+        {
+        }
+        /**
+         * @return Dimension[]
+         */
+        public function getConversionDimensions()
+        {
+        }
+        /**
+         * Custom floodlight variables which are compatible to be selected in the
+         * "customFloodlightVariables" section of the report.
+         *
+         * @param Dimension[] $customFloodlightVariables
+         */
+        public function setCustomFloodlightVariables($customFloodlightVariables)
+        {
+        }
+        /**
+         * @return Dimension[]
+         */
+        public function getCustomFloodlightVariables()
+        {
+        }
+        /**
+         * The kind of resource this is, in this case
+         * dfareporting#pathToConversionReportCompatibleFields.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Metrics which are compatible to be selected in the "metricNames" section of
+         * the report.
+         *
+         * @param Metric[] $metrics
+         */
+        public function setMetrics($metrics)
+        {
+        }
+        /**
+         * @return Metric[]
+         */
+        public function getMetrics()
+        {
+        }
+        /**
+         * Per-interaction dimensions which are compatible to be selected in the
+         * "perInteractionDimensions" section of the report.
+         *
+         * @param Dimension[] $perInteractionDimensions
+         */
+        public function setPerInteractionDimensions($perInteractionDimensions)
+        {
+        }
+        /**
+         * @return Dimension[]
+         */
+        public function getPerInteractionDimensions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Dimension[]
+     * Runtime class alias of \Google\Service\Dfareporting\PathToConversionReportCompatibleFields registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConversionDimensions()
-    {
-    }
-    /**
-     * Custom floodlight variables which are compatible to be selected in the
-     * "customFloodlightVariables" section of the report.
-     *
-     * @param Dimension[] $customFloodlightVariables
-     */
-    public function setCustomFloodlightVariables($customFloodlightVariables)
-    {
-    }
-    /**
-     * @return Dimension[]
-     */
-    public function getCustomFloodlightVariables()
-    {
-    }
-    /**
-     * The kind of resource this is, in this case
-     * dfareporting#pathToConversionReportCompatibleFields.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Metrics which are compatible to be selected in the "metricNames" section of
-     * the report.
-     *
-     * @param Metric[] $metrics
-     */
-    public function setMetrics($metrics)
-    {
-    }
-    /**
-     * @return Metric[]
-     */
-    public function getMetrics()
-    {
-    }
-    /**
-     * Per-interaction dimensions which are compatible to be selected in the
-     * "perInteractionDimensions" section of the report.
-     *
-     * @param Dimension[] $perInteractionDimensions
-     */
-    public function setPerInteractionDimensions($perInteractionDimensions)
-    {
-    }
-    /**
-     * @return Dimension[]
-     */
-    public function getPerInteractionDimensions()
+    class Google_Service_Dfareporting_PathToConversionReportCompatibleFields extends \Google\Service\Dfareporting\PathToConversionReportCompatibleFields
     {
     }
 }

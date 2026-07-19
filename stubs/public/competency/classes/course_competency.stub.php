@@ -29,6 +29,9 @@
  */
 namespace core_competency;
 
+use coding_exception;
+use lang_string;
+use core_course\external\course_summary_exporter;
 /**
  * Class for loading/storing course_competencies from the DB.
  *

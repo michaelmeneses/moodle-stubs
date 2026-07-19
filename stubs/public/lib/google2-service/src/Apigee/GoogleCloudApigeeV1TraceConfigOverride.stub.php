@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1TraceConfigOverride extends \Google\Model
-{
-    /**
-     * ID of the API proxy that will have its trace configuration overridden.
-     *
-     * @var string
-     */
-    public $apiProxy;
-    /**
-     * ID of the trace configuration override specified as a system-generated
-     * UUID.
-     *
-     * @var string
-     */
-    public $name;
-    protected $samplingConfigType = GoogleCloudApigeeV1TraceSamplingConfig::class;
-    protected $samplingConfigDataType = '';
-    /**
-     * ID of the API proxy that will have its trace configuration overridden.
-     *
-     * @param string $apiProxy
-     */
-    public function setApiProxy($apiProxy)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1TraceConfigOverride extends \Google\Model
     {
+        /**
+         * ID of the API proxy that will have its trace configuration overridden.
+         *
+         * @var string
+         */
+        public $apiProxy;
+        /**
+         * ID of the trace configuration override specified as a system-generated
+         * UUID.
+         *
+         * @var string
+         */
+        public $name;
+        protected $samplingConfigType = GoogleCloudApigeeV1TraceSamplingConfig::class;
+        protected $samplingConfigDataType = '';
+        /**
+         * ID of the API proxy that will have its trace configuration overridden.
+         *
+         * @param string $apiProxy
+         */
+        public function setApiProxy($apiProxy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApiProxy()
+        {
+        }
+        /**
+         * ID of the trace configuration override specified as a system-generated
+         * UUID.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Trace configuration to override.
+         *
+         * @param GoogleCloudApigeeV1TraceSamplingConfig $samplingConfig
+         */
+        public function setSamplingConfig(GoogleCloudApigeeV1TraceSamplingConfig $samplingConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1TraceSamplingConfig
+         */
+        public function getSamplingConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1TraceConfigOverride registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiProxy()
-    {
-    }
-    /**
-     * ID of the trace configuration override specified as a system-generated
-     * UUID.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Trace configuration to override.
-     *
-     * @param GoogleCloudApigeeV1TraceSamplingConfig $samplingConfig
-     */
-    public function setSamplingConfig(GoogleCloudApigeeV1TraceSamplingConfig $samplingConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1TraceSamplingConfig
-     */
-    public function getSamplingConfig()
+    class Google_Service_Apigee_GoogleCloudApigeeV1TraceConfigOverride extends \Google\Service\Apigee\GoogleCloudApigeeV1TraceConfigOverride
     {
     }
 }

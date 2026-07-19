@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class ReplaceNegativeKeywordsResponse extends \Google\Collection
-{
-    protected $collection_key = 'negativeKeywords';
-    protected $negativeKeywordsType = NegativeKeyword::class;
-    protected $negativeKeywordsDataType = 'array';
-    /**
-     * The full list of negative keywords now present in the negative keyword
-     * list.
-     *
-     * @param NegativeKeyword[] $negativeKeywords
-     */
-    public function setNegativeKeywords($negativeKeywords)
+namespace Google\Service\DisplayVideo {
+    class ReplaceNegativeKeywordsResponse extends \Google\Collection
     {
+        protected $collection_key = 'negativeKeywords';
+        protected $negativeKeywordsType = NegativeKeyword::class;
+        protected $negativeKeywordsDataType = 'array';
+        /**
+         * The full list of negative keywords now present in the negative keyword
+         * list.
+         *
+         * @param NegativeKeyword[] $negativeKeywords
+         */
+        public function setNegativeKeywords($negativeKeywords)
+        {
+        }
+        /**
+         * @return NegativeKeyword[]
+         */
+        public function getNegativeKeywords()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return NegativeKeyword[]
+     * Runtime class alias of \Google\Service\DisplayVideo\ReplaceNegativeKeywordsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNegativeKeywords()
+    class Google_Service_DisplayVideo_ReplaceNegativeKeywordsResponse extends \Google\Service\DisplayVideo\ReplaceNegativeKeywordsResponse
     {
     }
 }

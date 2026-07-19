@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class RegionInstanceGroupManagerDeleteInstanceConfigReq extends \Google\Collection
-{
-    protected $collection_key = 'names';
-    /**
-     * The list of instance names for which we want to delete per-instance configs
-     * on this managed instance group.
-     *
-     * @var string[]
-     */
-    public $names;
-    /**
-     * The list of instance names for which we want to delete per-instance configs
-     * on this managed instance group.
-     *
-     * @param string[] $names
-     */
-    public function setNames($names)
+namespace Google\Service\Compute {
+    class RegionInstanceGroupManagerDeleteInstanceConfigReq extends \Google\Collection
     {
+        protected $collection_key = 'names';
+        /**
+         * The list of instance names for which we want to delete per-instance configs
+         * on this managed instance group.
+         *
+         * @var string[]
+         */
+        public $names;
+        /**
+         * The list of instance names for which we want to delete per-instance configs
+         * on this managed instance group.
+         *
+         * @param string[] $names
+         */
+        public function setNames($names)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getNames()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Compute\RegionInstanceGroupManagerDeleteInstanceConfigReq registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNames()
+    class Google_Service_Compute_RegionInstanceGroupManagerDeleteInstanceConfigReq extends \Google\Service\Compute\RegionInstanceGroupManagerDeleteInstanceConfigReq
     {
     }
 }

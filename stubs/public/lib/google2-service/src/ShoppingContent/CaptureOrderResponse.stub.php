@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class CaptureOrderResponse extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $executionStatus;
-    /**
-     * @param string
-     */
-    public function setExecutionStatus($executionStatus)
+namespace Google\Service\ShoppingContent {
+    class CaptureOrderResponse extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $executionStatus;
+        /**
+         * @param string
+         */
+        public function setExecutionStatus($executionStatus)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExecutionStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\CaptureOrderResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExecutionStatus()
+    class Google_Service_ShoppingContent_CaptureOrderResponse extends \Google\Service\ShoppingContent\CaptureOrderResponse
     {
     }
 }

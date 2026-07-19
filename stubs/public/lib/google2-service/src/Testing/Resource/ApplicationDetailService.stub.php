@@ -21,32 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing\Resource;
-
-/**
- * The "applicationDetailService" collection of methods.
- * Typical usage is:
- *  <code>
- *   $testingService = new Google\Service\Testing(...);
- *   $applicationDetailService = $testingService->applicationDetailService;
- *  </code>
- */
-class ApplicationDetailService extends \Google\Service\Resource
-{
+namespace Google\Service\Testing\Resource {
+    use Google\Service\Testing\FileReference;
+    use Google\Service\Testing\GetApkDetailsResponse;
     /**
-     * Gets the details of an Android application APK.
-     * (applicationDetailService.getApkDetails)
-     *
-     * @param FileReference $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string bundleLocation.gcsPath A path to a file in Google Cloud
-     * Storage. Example: gs://build-app-1414623860166/app%40debug-unaligned.apk
-     * These paths are expected to be url encoded (percent encoding)
-     * @return GetApkDetailsResponse
-     * @throws \Google\Service\Exception
+     * The "applicationDetailService" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $testingService = new Google\Service\Testing(...);
+     *   $applicationDetailService = $testingService->applicationDetailService;
+     *  </code>
      */
-    public function getApkDetails(FileReference $postBody, $optParams = [])
+    class ApplicationDetailService extends \Google\Service\Resource
+    {
+        /**
+         * Gets the details of an Android application APK.
+         * (applicationDetailService.getApkDetails)
+         *
+         * @param FileReference $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string bundleLocation.gcsPath A path to a file in Google Cloud
+         * Storage. Example: gs://build-app-1414623860166/app%40debug-unaligned.apk
+         * These paths are expected to be url encoded (percent encoding)
+         * @return GetApkDetailsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function getApkDetails(FileReference $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Testing\Resource\ApplicationDetailService registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Testing_Resource_ApplicationDetailService extends \Google\Service\Testing\Resource\ApplicationDetailService
     {
     }
 }

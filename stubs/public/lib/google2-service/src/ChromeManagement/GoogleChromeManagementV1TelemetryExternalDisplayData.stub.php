@@ -21,128 +21,137 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1TelemetryExternalDisplayData extends \Google\Model
-{
-    /**
-     * The display name.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The EDID version.
-     *
-     * @var string
-     */
-    public $edidVersion;
-    /**
-     * The refresh rate.
-     *
-     * @var string
-     */
-    public $refreshRate;
-    /**
-     * The horizontal resolution.
-     *
-     * @var int
-     */
-    public $resolutionHorizontal;
-    /**
-     * The vertical resolution.
-     *
-     * @var int
-     */
-    public $resolutionVertical;
-    /**
-     * The serial number.
-     *
-     * @var int
-     */
-    public $serialNumber;
-    /**
-     * The display name.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1TelemetryExternalDisplayData extends \Google\Model
     {
+        /**
+         * The display name.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The EDID version.
+         *
+         * @var string
+         */
+        public $edidVersion;
+        /**
+         * The refresh rate.
+         *
+         * @var string
+         */
+        public $refreshRate;
+        /**
+         * The horizontal resolution.
+         *
+         * @var int
+         */
+        public $resolutionHorizontal;
+        /**
+         * The vertical resolution.
+         *
+         * @var int
+         */
+        public $resolutionVertical;
+        /**
+         * The serial number.
+         *
+         * @var int
+         */
+        public $serialNumber;
+        /**
+         * The display name.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The EDID version.
+         *
+         * @param string $edidVersion
+         */
+        public function setEdidVersion($edidVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEdidVersion()
+        {
+        }
+        /**
+         * The refresh rate.
+         *
+         * @param string $refreshRate
+         */
+        public function setRefreshRate($refreshRate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRefreshRate()
+        {
+        }
+        /**
+         * The horizontal resolution.
+         *
+         * @param int $resolutionHorizontal
+         */
+        public function setResolutionHorizontal($resolutionHorizontal)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getResolutionHorizontal()
+        {
+        }
+        /**
+         * The vertical resolution.
+         *
+         * @param int $resolutionVertical
+         */
+        public function setResolutionVertical($resolutionVertical)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getResolutionVertical()
+        {
+        }
+        /**
+         * The serial number.
+         *
+         * @param int $serialNumber
+         */
+        public function setSerialNumber($serialNumber)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSerialNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1TelemetryExternalDisplayData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The EDID version.
-     *
-     * @param string $edidVersion
-     */
-    public function setEdidVersion($edidVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEdidVersion()
-    {
-    }
-    /**
-     * The refresh rate.
-     *
-     * @param string $refreshRate
-     */
-    public function setRefreshRate($refreshRate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRefreshRate()
-    {
-    }
-    /**
-     * The horizontal resolution.
-     *
-     * @param int $resolutionHorizontal
-     */
-    public function setResolutionHorizontal($resolutionHorizontal)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getResolutionHorizontal()
-    {
-    }
-    /**
-     * The vertical resolution.
-     *
-     * @param int $resolutionVertical
-     */
-    public function setResolutionVertical($resolutionVertical)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getResolutionVertical()
-    {
-    }
-    /**
-     * The serial number.
-     *
-     * @param int $serialNumber
-     */
-    public function setSerialNumber($serialNumber)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSerialNumber()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1TelemetryExternalDisplayData extends \Google\Service\ChromeManagement\GoogleChromeManagementV1TelemetryExternalDisplayData
     {
     }
 }

@@ -21,48 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Assuredworkloads\Resource;
-
-/**
- * The "updates" collection of methods.
- * Typical usage is:
- *  <code>
- *   $assuredworkloadsService = new Google\Service\Assuredworkloads(...);
- *   $updates = $assuredworkloadsService->organizations_locations_workloads_updates;
- *  </code>
- */
-class OrganizationsLocationsWorkloadsUpdates extends \Google\Service\Resource
-{
+namespace Google\Service\Assuredworkloads\Resource {
+    use Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1ApplyWorkloadUpdateRequest;
+    use Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1ListWorkloadUpdatesResponse;
+    use Google\Service\Assuredworkloads\GoogleLongrunningOperation;
     /**
-     * This endpoint creates a new operation to apply the given update.
-     * (updates.apply)
-     *
-     * @param string $name Required. The resource name of the update. Format: organi
-     * zations/{org_id}/locations/{location_id}/workloads/{workload_id}/updates/{upd
-     * ate_id}
-     * @param GoogleCloudAssuredworkloadsV1ApplyWorkloadUpdateRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * The "updates" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $assuredworkloadsService = new Google\Service\Assuredworkloads(...);
+     *   $updates = $assuredworkloadsService->organizations_locations_workloads_updates;
+     *  </code>
      */
-    public function apply($name, GoogleCloudAssuredworkloadsV1ApplyWorkloadUpdateRequest $postBody, $optParams = [])
+    class OrganizationsLocationsWorkloadsUpdates extends \Google\Service\Resource
     {
+        /**
+         * This endpoint creates a new operation to apply the given update.
+         * (updates.apply)
+         *
+         * @param string $name Required. The resource name of the update. Format: organi
+         * zations/{org_id}/locations/{location_id}/workloads/{workload_id}/updates/{upd
+         * ate_id}
+         * @param GoogleCloudAssuredworkloadsV1ApplyWorkloadUpdateRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function apply($name, GoogleCloudAssuredworkloadsV1ApplyWorkloadUpdateRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * This endpoint lists all updates for the given workload.
+         * (updates.listOrganizationsLocationsWorkloadsUpdates)
+         *
+         * @param string $parent Required.
+         * organizations/{org_id}/locations/{location_id}/workloads/{workload_id}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Page size. The default value is 20 and the max
+         * allowed value is 100.
+         * @opt_param string pageToken Page token returned from previous request.
+         * @return GoogleCloudAssuredworkloadsV1ListWorkloadUpdatesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listOrganizationsLocationsWorkloadsUpdates($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * This endpoint lists all updates for the given workload.
-     * (updates.listOrganizationsLocationsWorkloadsUpdates)
-     *
-     * @param string $parent Required.
-     * organizations/{org_id}/locations/{location_id}/workloads/{workload_id}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Page size. The default value is 20 and the max
-     * allowed value is 100.
-     * @opt_param string pageToken Page token returned from previous request.
-     * @return GoogleCloudAssuredworkloadsV1ListWorkloadUpdatesResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Assuredworkloads\Resource\OrganizationsLocationsWorkloadsUpdates registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listOrganizationsLocationsWorkloadsUpdates($parent, $optParams = [])
+    class Google_Service_Assuredworkloads_Resource_OrganizationsLocationsWorkloadsUpdates extends \Google\Service\Assuredworkloads\Resource\OrganizationsLocationsWorkloadsUpdates
     {
     }
 }

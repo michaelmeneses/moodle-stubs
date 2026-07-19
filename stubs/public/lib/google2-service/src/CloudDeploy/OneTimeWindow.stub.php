@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class OneTimeWindow extends \Google\Model
-{
-    protected $endDateType = Date::class;
-    protected $endDateDataType = '';
-    protected $endTimeType = TimeOfDay::class;
-    protected $endTimeDataType = '';
-    protected $startDateType = Date::class;
-    protected $startDateDataType = '';
-    protected $startTimeType = TimeOfDay::class;
-    protected $startTimeDataType = '';
-    /**
-     * Required. End date.
-     *
-     * @param Date $endDate
-     */
-    public function setEndDate(Date $endDate)
+namespace Google\Service\CloudDeploy {
+    class OneTimeWindow extends \Google\Model
     {
+        protected $endDateType = Date::class;
+        protected $endDateDataType = '';
+        protected $endTimeType = TimeOfDay::class;
+        protected $endTimeDataType = '';
+        protected $startDateType = Date::class;
+        protected $startDateDataType = '';
+        protected $startTimeType = TimeOfDay::class;
+        protected $startTimeDataType = '';
+        /**
+         * Required. End date.
+         *
+         * @param Date $endDate
+         */
+        public function setEndDate(Date $endDate)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getEndDate()
+        {
+        }
+        /**
+         * Required. End time (exclusive). You may use 24:00 for the end of the day.
+         *
+         * @param TimeOfDay $endTime
+         */
+        public function setEndTime(TimeOfDay $endTime)
+        {
+        }
+        /**
+         * @return TimeOfDay
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Required. Start date.
+         *
+         * @param Date $startDate
+         */
+        public function setStartDate(Date $startDate)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getStartDate()
+        {
+        }
+        /**
+         * Required. Start time (inclusive). Use 00:00 for the beginning of the day.
+         *
+         * @param TimeOfDay $startTime
+         */
+        public function setStartTime(TimeOfDay $startTime)
+        {
+        }
+        /**
+         * @return TimeOfDay
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Date
+     * Runtime class alias of \Google\Service\CloudDeploy\OneTimeWindow registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndDate()
-    {
-    }
-    /**
-     * Required. End time (exclusive). You may use 24:00 for the end of the day.
-     *
-     * @param TimeOfDay $endTime
-     */
-    public function setEndTime(TimeOfDay $endTime)
-    {
-    }
-    /**
-     * @return TimeOfDay
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Required. Start date.
-     *
-     * @param Date $startDate
-     */
-    public function setStartDate(Date $startDate)
-    {
-    }
-    /**
-     * @return Date
-     */
-    public function getStartDate()
-    {
-    }
-    /**
-     * Required. Start time (inclusive). Use 00:00 for the beginning of the day.
-     *
-     * @param TimeOfDay $startTime
-     */
-    public function setStartTime(TimeOfDay $startTime)
-    {
-    }
-    /**
-     * @return TimeOfDay
-     */
-    public function getStartTime()
+    class Google_Service_CloudDeploy_OneTimeWindow extends \Google\Service\CloudDeploy\OneTimeWindow
     {
     }
 }

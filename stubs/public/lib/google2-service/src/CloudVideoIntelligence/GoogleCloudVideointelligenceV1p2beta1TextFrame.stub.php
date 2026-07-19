@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudVideoIntelligence;
-
-class GoogleCloudVideointelligenceV1p2beta1TextFrame extends \Google\Model
-{
-    protected $rotatedBoundingBoxType = GoogleCloudVideointelligenceV1p2beta1NormalizedBoundingPoly::class;
-    protected $rotatedBoundingBoxDataType = '';
-    /**
-     * Timestamp of this frame.
-     *
-     * @var string
-     */
-    public $timeOffset;
-    /**
-     * Bounding polygon of the detected text for this frame.
-     *
-     * @param GoogleCloudVideointelligenceV1p2beta1NormalizedBoundingPoly $rotatedBoundingBox
-     */
-    public function setRotatedBoundingBox(GoogleCloudVideointelligenceV1p2beta1NormalizedBoundingPoly $rotatedBoundingBox)
+namespace Google\Service\CloudVideoIntelligence {
+    class GoogleCloudVideointelligenceV1p2beta1TextFrame extends \Google\Model
     {
+        protected $rotatedBoundingBoxType = GoogleCloudVideointelligenceV1p2beta1NormalizedBoundingPoly::class;
+        protected $rotatedBoundingBoxDataType = '';
+        /**
+         * Timestamp of this frame.
+         *
+         * @var string
+         */
+        public $timeOffset;
+        /**
+         * Bounding polygon of the detected text for this frame.
+         *
+         * @param GoogleCloudVideointelligenceV1p2beta1NormalizedBoundingPoly $rotatedBoundingBox
+         */
+        public function setRotatedBoundingBox(GoogleCloudVideointelligenceV1p2beta1NormalizedBoundingPoly $rotatedBoundingBox)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1p2beta1NormalizedBoundingPoly
+         */
+        public function getRotatedBoundingBox()
+        {
+        }
+        /**
+         * Timestamp of this frame.
+         *
+         * @param string $timeOffset
+         */
+        public function setTimeOffset($timeOffset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeOffset()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudVideointelligenceV1p2beta1NormalizedBoundingPoly
+     * Runtime class alias of \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1p2beta1TextFrame registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRotatedBoundingBox()
-    {
-    }
-    /**
-     * Timestamp of this frame.
-     *
-     * @param string $timeOffset
-     */
-    public function setTimeOffset($timeOffset)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeOffset()
+    class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p2beta1TextFrame extends \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1p2beta1TextFrame
     {
     }
 }

@@ -21,150 +21,159 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TPU;
-
-class OperationMetadata extends \Google\Model
-{
-    /**
-     * API version.
-     *
-     * @var string
-     */
-    public $apiVersion;
-    /**
-     * Specifies if cancellation was requested for the operation.
-     *
-     * @var bool
-     */
-    public $cancelRequested;
-    /**
-     * The time the operation was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * The time the operation finished running.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * Human-readable status of the operation, if any.
-     *
-     * @var string
-     */
-    public $statusDetail;
-    /**
-     * Target of the operation - for example
-     * projects/project-1/connectivityTests/test-1
-     *
-     * @var string
-     */
-    public $target;
-    /**
-     * Name of the verb executed by the operation.
-     *
-     * @var string
-     */
-    public $verb;
-    /**
-     * API version.
-     *
-     * @param string $apiVersion
-     */
-    public function setApiVersion($apiVersion)
+namespace Google\Service\TPU {
+    class OperationMetadata extends \Google\Model
     {
+        /**
+         * API version.
+         *
+         * @var string
+         */
+        public $apiVersion;
+        /**
+         * Specifies if cancellation was requested for the operation.
+         *
+         * @var bool
+         */
+        public $cancelRequested;
+        /**
+         * The time the operation was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * The time the operation finished running.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * Human-readable status of the operation, if any.
+         *
+         * @var string
+         */
+        public $statusDetail;
+        /**
+         * Target of the operation - for example
+         * projects/project-1/connectivityTests/test-1
+         *
+         * @var string
+         */
+        public $target;
+        /**
+         * Name of the verb executed by the operation.
+         *
+         * @var string
+         */
+        public $verb;
+        /**
+         * API version.
+         *
+         * @param string $apiVersion
+         */
+        public function setApiVersion($apiVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApiVersion()
+        {
+        }
+        /**
+         * Specifies if cancellation was requested for the operation.
+         *
+         * @param bool $cancelRequested
+         */
+        public function setCancelRequested($cancelRequested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCancelRequested()
+        {
+        }
+        /**
+         * The time the operation was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The time the operation finished running.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Human-readable status of the operation, if any.
+         *
+         * @param string $statusDetail
+         */
+        public function setStatusDetail($statusDetail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatusDetail()
+        {
+        }
+        /**
+         * Target of the operation - for example
+         * projects/project-1/connectivityTests/test-1
+         *
+         * @param string $target
+         */
+        public function setTarget($target)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTarget()
+        {
+        }
+        /**
+         * Name of the verb executed by the operation.
+         *
+         * @param string $verb
+         */
+        public function setVerb($verb)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVerb()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\TPU\OperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiVersion()
-    {
-    }
-    /**
-     * Specifies if cancellation was requested for the operation.
-     *
-     * @param bool $cancelRequested
-     */
-    public function setCancelRequested($cancelRequested)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCancelRequested()
-    {
-    }
-    /**
-     * The time the operation was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The time the operation finished running.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Human-readable status of the operation, if any.
-     *
-     * @param string $statusDetail
-     */
-    public function setStatusDetail($statusDetail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatusDetail()
-    {
-    }
-    /**
-     * Target of the operation - for example
-     * projects/project-1/connectivityTests/test-1
-     *
-     * @param string $target
-     */
-    public function setTarget($target)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTarget()
-    {
-    }
-    /**
-     * Name of the verb executed by the operation.
-     *
-     * @param string $verb
-     */
-    public function setVerb($verb)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVerb()
+    class Google_Service_TPU_OperationMetadata extends \Google\Service\TPU\OperationMetadata
     {
     }
 }

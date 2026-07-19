@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class ExfilResource extends \Google\Collection
-{
-    protected $collection_key = 'components';
-    /**
-     * Subcomponents of the asset that was exfiltrated, like URIs used during
-     * exfiltration, table names, databases, and filenames. For example, multiple
-     * tables might have been exfiltrated from the same Cloud SQL instance, or
-     * multiple files might have been exfiltrated from the same Cloud Storage
-     * bucket.
-     *
-     * @var string[]
-     */
-    public $components;
-    /**
-     * The resource's [full resource name](https://cloud.google.com/apis/design/re
-     * source_names#full_resource_name).
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Subcomponents of the asset that was exfiltrated, like URIs used during
-     * exfiltration, table names, databases, and filenames. For example, multiple
-     * tables might have been exfiltrated from the same Cloud SQL instance, or
-     * multiple files might have been exfiltrated from the same Cloud Storage
-     * bucket.
-     *
-     * @param string[] $components
-     */
-    public function setComponents($components)
+namespace Google\Service\SecurityCommandCenter {
+    class ExfilResource extends \Google\Collection
     {
+        protected $collection_key = 'components';
+        /**
+         * Subcomponents of the asset that was exfiltrated, like URIs used during
+         * exfiltration, table names, databases, and filenames. For example, multiple
+         * tables might have been exfiltrated from the same Cloud SQL instance, or
+         * multiple files might have been exfiltrated from the same Cloud Storage
+         * bucket.
+         *
+         * @var string[]
+         */
+        public $components;
+        /**
+         * The resource's [full resource name](https://cloud.google.com/apis/design/re
+         * source_names#full_resource_name).
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Subcomponents of the asset that was exfiltrated, like URIs used during
+         * exfiltration, table names, databases, and filenames. For example, multiple
+         * tables might have been exfiltrated from the same Cloud SQL instance, or
+         * multiple files might have been exfiltrated from the same Cloud Storage
+         * bucket.
+         *
+         * @param string[] $components
+         */
+        public function setComponents($components)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getComponents()
+        {
+        }
+        /**
+         * The resource's [full resource name](https://cloud.google.com/apis/design/re
+         * source_names#full_resource_name).
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\ExfilResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getComponents()
-    {
-    }
-    /**
-     * The resource's [full resource name](https://cloud.google.com/apis/design/re
-     * source_names#full_resource_name).
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_SecurityCommandCenter_ExfilResource extends \Google\Service\SecurityCommandCenter\ExfilResource
     {
     }
 }

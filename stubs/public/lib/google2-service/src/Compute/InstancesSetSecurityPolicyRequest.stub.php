@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InstancesSetSecurityPolicyRequest extends \Google\Collection
-{
-    protected $collection_key = 'networkInterfaces';
-    /**
-     * The network interfaces that the security policy will be applied to. Network
-     * interfaces use the nicN naming format. You can only set a security policy
-     * for network interfaces with an access config.
-     *
-     * @var string[]
-     */
-    public $networkInterfaces;
-    /**
-     * A full or partial URL to a security policy to add to this instance. If this
-     * field is set to an empty string it will remove the associated security
-     * policy.
-     *
-     * @var string
-     */
-    public $securityPolicy;
-    /**
-     * The network interfaces that the security policy will be applied to. Network
-     * interfaces use the nicN naming format. You can only set a security policy
-     * for network interfaces with an access config.
-     *
-     * @param string[] $networkInterfaces
-     */
-    public function setNetworkInterfaces($networkInterfaces)
+namespace Google\Service\Compute {
+    class InstancesSetSecurityPolicyRequest extends \Google\Collection
     {
+        protected $collection_key = 'networkInterfaces';
+        /**
+         * The network interfaces that the security policy will be applied to. Network
+         * interfaces use the nicN naming format. You can only set a security policy
+         * for network interfaces with an access config.
+         *
+         * @var string[]
+         */
+        public $networkInterfaces;
+        /**
+         * A full or partial URL to a security policy to add to this instance. If this
+         * field is set to an empty string it will remove the associated security
+         * policy.
+         *
+         * @var string
+         */
+        public $securityPolicy;
+        /**
+         * The network interfaces that the security policy will be applied to. Network
+         * interfaces use the nicN naming format. You can only set a security policy
+         * for network interfaces with an access config.
+         *
+         * @param string[] $networkInterfaces
+         */
+        public function setNetworkInterfaces($networkInterfaces)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getNetworkInterfaces()
+        {
+        }
+        /**
+         * A full or partial URL to a security policy to add to this instance. If this
+         * field is set to an empty string it will remove the associated security
+         * policy.
+         *
+         * @param string $securityPolicy
+         */
+        public function setSecurityPolicy($securityPolicy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecurityPolicy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Compute\InstancesSetSecurityPolicyRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNetworkInterfaces()
-    {
-    }
-    /**
-     * A full or partial URL to a security policy to add to this instance. If this
-     * field is set to an empty string it will remove the associated security
-     * policy.
-     *
-     * @param string $securityPolicy
-     */
-    public function setSecurityPolicy($securityPolicy)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSecurityPolicy()
+    class Google_Service_Compute_InstancesSetSecurityPolicyRequest extends \Google\Service\Compute\InstancesSetSecurityPolicyRequest
     {
     }
 }

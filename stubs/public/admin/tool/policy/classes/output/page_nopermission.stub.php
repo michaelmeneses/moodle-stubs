@@ -30,6 +30,17 @@
  */
 namespace tool_policy\output;
 
+use core\session\manager;
+use moodle_exception;
+use context_system;
+use core_user;
+use html_writer;
+use moodle_url;
+use renderable;
+use renderer_base;
+use templatable;
+use tool_policy\api;
+use tool_policy\policy_version;
 /**
  * Represents a page for showing the error messages.
  *

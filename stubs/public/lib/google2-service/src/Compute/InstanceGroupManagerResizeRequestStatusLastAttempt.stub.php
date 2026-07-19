@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InstanceGroupManagerResizeRequestStatusLastAttempt extends \Google\Model
-{
-    protected $errorType = InstanceGroupManagerResizeRequestStatusLastAttemptError::class;
-    protected $errorDataType = '';
-    /**
-     * Output only. Errors that prevented the ResizeRequest to be fulfilled.
-     *
-     * @param InstanceGroupManagerResizeRequestStatusLastAttemptError $error
-     */
-    public function setError(InstanceGroupManagerResizeRequestStatusLastAttemptError $error)
+namespace Google\Service\Compute {
+    class InstanceGroupManagerResizeRequestStatusLastAttempt extends \Google\Model
     {
+        protected $errorType = InstanceGroupManagerResizeRequestStatusLastAttemptError::class;
+        protected $errorDataType = '';
+        /**
+         * Output only. Errors that prevented the ResizeRequest to be fulfilled.
+         *
+         * @param InstanceGroupManagerResizeRequestStatusLastAttemptError $error
+         */
+        public function setError(InstanceGroupManagerResizeRequestStatusLastAttemptError $error)
+        {
+        }
+        /**
+         * @return InstanceGroupManagerResizeRequestStatusLastAttemptError
+         */
+        public function getError()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InstanceGroupManagerResizeRequestStatusLastAttemptError
+     * Runtime class alias of \Google\Service\Compute\InstanceGroupManagerResizeRequestStatusLastAttempt registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getError()
+    class Google_Service_Compute_InstanceGroupManagerResizeRequestStatusLastAttempt extends \Google\Service\Compute\InstanceGroupManagerResizeRequestStatusLastAttempt
     {
     }
 }

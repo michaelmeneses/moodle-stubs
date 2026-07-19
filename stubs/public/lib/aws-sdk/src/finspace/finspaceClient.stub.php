@@ -8,6 +8,9 @@
  */
 namespace Aws\finspace;
 
+use Aws\AwsClient;
+use Aws\CommandInterface;
+use Psr\Http\Message\RequestInterface;
 /**
  * This client is used to interact with the **FinSpace User Environment Management service** service.
  * @method \Aws\Result createEnvironment(array $args = [])

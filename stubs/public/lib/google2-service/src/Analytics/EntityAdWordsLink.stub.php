@@ -21,142 +21,151 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class EntityAdWordsLink extends \Google\Collection
-{
-    protected $collection_key = 'profileIds';
-    protected $adWordsAccountsType = AdWordsAccount::class;
-    protected $adWordsAccountsDataType = 'array';
-    protected $entityType = EntityAdWordsLinkEntity::class;
-    protected $entityDataType = '';
-    /**
-     * Entity Google Ads link ID
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Resource type for entity Google Ads link.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Name of the link. This field is required when creating a Google Ads link.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * IDs of linked Views (Profiles) represented as strings.
-     *
-     * @var string[]
-     */
-    public $profileIds;
-    /**
-     * URL link for this Google Analytics - Google Ads link.
-     *
-     * @var string
-     */
-    public $selfLink;
-    /**
-     * A list of Google Ads client accounts. These cannot be MCC accounts. This
-     * field is required when creating a Google Ads link. It cannot be empty.
-     *
-     * @param AdWordsAccount[] $adWordsAccounts
-     */
-    public function setAdWordsAccounts($adWordsAccounts)
+namespace Google\Service\Analytics {
+    class EntityAdWordsLink extends \Google\Collection
     {
+        protected $collection_key = 'profileIds';
+        protected $adWordsAccountsType = AdWordsAccount::class;
+        protected $adWordsAccountsDataType = 'array';
+        protected $entityType = EntityAdWordsLinkEntity::class;
+        protected $entityDataType = '';
+        /**
+         * Entity Google Ads link ID
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Resource type for entity Google Ads link.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Name of the link. This field is required when creating a Google Ads link.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * IDs of linked Views (Profiles) represented as strings.
+         *
+         * @var string[]
+         */
+        public $profileIds;
+        /**
+         * URL link for this Google Analytics - Google Ads link.
+         *
+         * @var string
+         */
+        public $selfLink;
+        /**
+         * A list of Google Ads client accounts. These cannot be MCC accounts. This
+         * field is required when creating a Google Ads link. It cannot be empty.
+         *
+         * @param AdWordsAccount[] $adWordsAccounts
+         */
+        public function setAdWordsAccounts($adWordsAccounts)
+        {
+        }
+        /**
+         * @return AdWordsAccount[]
+         */
+        public function getAdWordsAccounts()
+        {
+        }
+        /**
+         * Web property being linked.
+         *
+         * @param EntityAdWordsLinkEntity $entity
+         */
+        public function setEntity(EntityAdWordsLinkEntity $entity)
+        {
+        }
+        /**
+         * @return EntityAdWordsLinkEntity
+         */
+        public function getEntity()
+        {
+        }
+        /**
+         * Entity Google Ads link ID
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Resource type for entity Google Ads link.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Name of the link. This field is required when creating a Google Ads link.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * IDs of linked Views (Profiles) represented as strings.
+         *
+         * @param string[] $profileIds
+         */
+        public function setProfileIds($profileIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getProfileIds()
+        {
+        }
+        /**
+         * URL link for this Google Analytics - Google Ads link.
+         *
+         * @param string $selfLink
+         */
+        public function setSelfLink($selfLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLink()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AdWordsAccount[]
+     * Runtime class alias of \Google\Service\Analytics\EntityAdWordsLink registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdWordsAccounts()
-    {
-    }
-    /**
-     * Web property being linked.
-     *
-     * @param EntityAdWordsLinkEntity $entity
-     */
-    public function setEntity(EntityAdWordsLinkEntity $entity)
-    {
-    }
-    /**
-     * @return EntityAdWordsLinkEntity
-     */
-    public function getEntity()
-    {
-    }
-    /**
-     * Entity Google Ads link ID
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Resource type for entity Google Ads link.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Name of the link. This field is required when creating a Google Ads link.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * IDs of linked Views (Profiles) represented as strings.
-     *
-     * @param string[] $profileIds
-     */
-    public function setProfileIds($profileIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getProfileIds()
-    {
-    }
-    /**
-     * URL link for this Google Analytics - Google Ads link.
-     *
-     * @param string $selfLink
-     */
-    public function setSelfLink($selfLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLink()
+    class Google_Service_Analytics_EntityAdWordsLink extends \Google\Service\Analytics\EntityAdWordsLink
     {
     }
 }

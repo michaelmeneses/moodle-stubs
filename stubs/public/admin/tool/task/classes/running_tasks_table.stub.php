@@ -30,6 +30,7 @@
  */
 namespace tool_task;
 
+use core\task\manager;
 /**
  * Table to display list of running task.
  *

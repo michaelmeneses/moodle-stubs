@@ -21,111 +21,120 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class ActivityContentDetailsSocial extends \Google\Model
-{
-    public const TYPE_unspecified = 'unspecified';
-    public const TYPE_googlePlus = 'googlePlus';
-    public const TYPE_facebook = 'facebook';
-    public const TYPE_twitter = 'twitter';
-    /**
-     * The author of the social network post.
-     *
-     * @var string
-     */
-    public $author;
-    /**
-     * An image of the post's author.
-     *
-     * @var string
-     */
-    public $imageUrl;
-    /**
-     * The URL of the social network post.
-     *
-     * @var string
-     */
-    public $referenceUrl;
-    protected $resourceIdType = ResourceId::class;
-    protected $resourceIdDataType = '';
-    /**
-     * The name of the social network.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The author of the social network post.
-     *
-     * @param string $author
-     */
-    public function setAuthor($author)
+namespace Google\Service\YouTube {
+    class ActivityContentDetailsSocial extends \Google\Model
     {
+        public const TYPE_unspecified = 'unspecified';
+        public const TYPE_googlePlus = 'googlePlus';
+        public const TYPE_facebook = 'facebook';
+        public const TYPE_twitter = 'twitter';
+        /**
+         * The author of the social network post.
+         *
+         * @var string
+         */
+        public $author;
+        /**
+         * An image of the post's author.
+         *
+         * @var string
+         */
+        public $imageUrl;
+        /**
+         * The URL of the social network post.
+         *
+         * @var string
+         */
+        public $referenceUrl;
+        protected $resourceIdType = ResourceId::class;
+        protected $resourceIdDataType = '';
+        /**
+         * The name of the social network.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The author of the social network post.
+         *
+         * @param string $author
+         */
+        public function setAuthor($author)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAuthor()
+        {
+        }
+        /**
+         * An image of the post's author.
+         *
+         * @param string $imageUrl
+         */
+        public function setImageUrl($imageUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageUrl()
+        {
+        }
+        /**
+         * The URL of the social network post.
+         *
+         * @param string $referenceUrl
+         */
+        public function setReferenceUrl($referenceUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReferenceUrl()
+        {
+        }
+        /**
+         * The resourceId object encapsulates information that identifies the resource
+         * associated with a social network post.
+         *
+         * @param ResourceId $resourceId
+         */
+        public function setResourceId(ResourceId $resourceId)
+        {
+        }
+        /**
+         * @return ResourceId
+         */
+        public function getResourceId()
+        {
+        }
+        /**
+         * The name of the social network.
+         *
+         * Accepted values: unspecified, googlePlus, facebook, twitter
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\ActivityContentDetailsSocial registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthor()
-    {
-    }
-    /**
-     * An image of the post's author.
-     *
-     * @param string $imageUrl
-     */
-    public function setImageUrl($imageUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImageUrl()
-    {
-    }
-    /**
-     * The URL of the social network post.
-     *
-     * @param string $referenceUrl
-     */
-    public function setReferenceUrl($referenceUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReferenceUrl()
-    {
-    }
-    /**
-     * The resourceId object encapsulates information that identifies the resource
-     * associated with a social network post.
-     *
-     * @param ResourceId $resourceId
-     */
-    public function setResourceId(ResourceId $resourceId)
-    {
-    }
-    /**
-     * @return ResourceId
-     */
-    public function getResourceId()
-    {
-    }
-    /**
-     * The name of the social network.
-     *
-     * Accepted values: unspecified, googlePlus, facebook, twitter
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_YouTube_ActivityContentDetailsSocial extends \Google\Service\YouTube\ActivityContentDetailsSocial
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta2GcsDestination extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $uri;
-    /**
-     * @param string
-     */
-    public function setUri($uri)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta2GcsDestination extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $uri;
+        /**
+         * @param string
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta2GcsDestination registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUri()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta2GcsDestination extends \Google\Service\Document\GoogleCloudDocumentaiV1beta2GcsDestination
     {
     }
 }

@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMwareEngine;
-
-class StretchedClusterConfig extends \Google\Model
-{
-    /**
-     * Required. Zone that will remain operational when connection between the two
-     * zones is lost. Specify the resource name of a zone that belongs to the
-     * region of the private cloud. For example:
-     * `projects/{project}/locations/europe-west3-a` where `{project}` can either
-     * be a project number or a project ID.
-     *
-     * @var string
-     */
-    public $preferredLocation;
-    /**
-     * Required. Additional zone for a higher level of availability and load
-     * balancing. Specify the resource name of a zone that belongs to the region
-     * of the private cloud. For example: `projects/{project}/locations/europe-
-     * west3-b` where `{project}` can either be a project number or a project ID.
-     *
-     * @var string
-     */
-    public $secondaryLocation;
-    /**
-     * Required. Zone that will remain operational when connection between the two
-     * zones is lost. Specify the resource name of a zone that belongs to the
-     * region of the private cloud. For example:
-     * `projects/{project}/locations/europe-west3-a` where `{project}` can either
-     * be a project number or a project ID.
-     *
-     * @param string $preferredLocation
-     */
-    public function setPreferredLocation($preferredLocation)
+namespace Google\Service\VMwareEngine {
+    class StretchedClusterConfig extends \Google\Model
     {
+        /**
+         * Required. Zone that will remain operational when connection between the two
+         * zones is lost. Specify the resource name of a zone that belongs to the
+         * region of the private cloud. For example:
+         * `projects/{project}/locations/europe-west3-a` where `{project}` can either
+         * be a project number or a project ID.
+         *
+         * @var string
+         */
+        public $preferredLocation;
+        /**
+         * Required. Additional zone for a higher level of availability and load
+         * balancing. Specify the resource name of a zone that belongs to the region
+         * of the private cloud. For example: `projects/{project}/locations/europe-
+         * west3-b` where `{project}` can either be a project number or a project ID.
+         *
+         * @var string
+         */
+        public $secondaryLocation;
+        /**
+         * Required. Zone that will remain operational when connection between the two
+         * zones is lost. Specify the resource name of a zone that belongs to the
+         * region of the private cloud. For example:
+         * `projects/{project}/locations/europe-west3-a` where `{project}` can either
+         * be a project number or a project ID.
+         *
+         * @param string $preferredLocation
+         */
+        public function setPreferredLocation($preferredLocation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPreferredLocation()
+        {
+        }
+        /**
+         * Required. Additional zone for a higher level of availability and load
+         * balancing. Specify the resource name of a zone that belongs to the region
+         * of the private cloud. For example: `projects/{project}/locations/europe-
+         * west3-b` where `{project}` can either be a project number or a project ID.
+         *
+         * @param string $secondaryLocation
+         */
+        public function setSecondaryLocation($secondaryLocation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecondaryLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\VMwareEngine\StretchedClusterConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPreferredLocation()
-    {
-    }
-    /**
-     * Required. Additional zone for a higher level of availability and load
-     * balancing. Specify the resource name of a zone that belongs to the region
-     * of the private cloud. For example: `projects/{project}/locations/europe-
-     * west3-b` where `{project}` can either be a project number or a project ID.
-     *
-     * @param string $secondaryLocation
-     */
-    public function setSecondaryLocation($secondaryLocation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSecondaryLocation()
+    class Google_Service_VMwareEngine_StretchedClusterConfig extends \Google\Service\VMwareEngine\StretchedClusterConfig
     {
     }
 }

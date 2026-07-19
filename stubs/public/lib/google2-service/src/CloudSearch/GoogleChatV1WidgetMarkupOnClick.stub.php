@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class GoogleChatV1WidgetMarkupOnClick extends \Google\Model
-{
-    protected $actionType = GoogleChatV1WidgetMarkupFormAction::class;
-    protected $actionDataType = '';
-    protected $openLinkType = GoogleChatV1WidgetMarkupOpenLink::class;
-    protected $openLinkDataType = '';
-    /**
-     * @param GoogleChatV1WidgetMarkupFormAction
-     */
-    public function setAction(GoogleChatV1WidgetMarkupFormAction $action)
+namespace Google\Service\CloudSearch {
+    class GoogleChatV1WidgetMarkupOnClick extends \Google\Model
     {
+        protected $actionType = GoogleChatV1WidgetMarkupFormAction::class;
+        protected $actionDataType = '';
+        protected $openLinkType = GoogleChatV1WidgetMarkupOpenLink::class;
+        protected $openLinkDataType = '';
+        /**
+         * @param GoogleChatV1WidgetMarkupFormAction
+         */
+        public function setAction(GoogleChatV1WidgetMarkupFormAction $action)
+        {
+        }
+        /**
+         * @return GoogleChatV1WidgetMarkupFormAction
+         */
+        public function getAction()
+        {
+        }
+        /**
+         * @param GoogleChatV1WidgetMarkupOpenLink
+         */
+        public function setOpenLink(GoogleChatV1WidgetMarkupOpenLink $openLink)
+        {
+        }
+        /**
+         * @return GoogleChatV1WidgetMarkupOpenLink
+         */
+        public function getOpenLink()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChatV1WidgetMarkupFormAction
+     * Runtime class alias of \Google\Service\CloudSearch\GoogleChatV1WidgetMarkupOnClick registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAction()
-    {
-    }
-    /**
-     * @param GoogleChatV1WidgetMarkupOpenLink
-     */
-    public function setOpenLink(GoogleChatV1WidgetMarkupOpenLink $openLink)
-    {
-    }
-    /**
-     * @return GoogleChatV1WidgetMarkupOpenLink
-     */
-    public function getOpenLink()
+    class Google_Service_CloudSearch_GoogleChatV1WidgetMarkupOnClick extends \Google\Service\CloudSearch\GoogleChatV1WidgetMarkupOnClick
     {
     }
 }

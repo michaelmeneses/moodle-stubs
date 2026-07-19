@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InstancesScopedList extends \Google\Collection
-{
-    protected $collection_key = 'instances';
-    protected $instancesType = Instance::class;
-    protected $instancesDataType = 'array';
-    protected $warningType = InstancesScopedListWarning::class;
-    protected $warningDataType = '';
-    /**
-     * [Output Only] A list of instances contained in this scope.
-     *
-     * @param Instance[] $instances
-     */
-    public function setInstances($instances)
+namespace Google\Service\Compute {
+    class InstancesScopedList extends \Google\Collection
     {
+        protected $collection_key = 'instances';
+        protected $instancesType = Instance::class;
+        protected $instancesDataType = 'array';
+        protected $warningType = InstancesScopedListWarning::class;
+        protected $warningDataType = '';
+        /**
+         * [Output Only] A list of instances contained in this scope.
+         *
+         * @param Instance[] $instances
+         */
+        public function setInstances($instances)
+        {
+        }
+        /**
+         * @return Instance[]
+         */
+        public function getInstances()
+        {
+        }
+        /**
+         * [Output Only] Informational warning which replaces the list of instances
+         * when the list is empty.
+         *
+         * @param InstancesScopedListWarning $warning
+         */
+        public function setWarning(InstancesScopedListWarning $warning)
+        {
+        }
+        /**
+         * @return InstancesScopedListWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Instance[]
+     * Runtime class alias of \Google\Service\Compute\InstancesScopedList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstances()
-    {
-    }
-    /**
-     * [Output Only] Informational warning which replaces the list of instances
-     * when the list is empty.
-     *
-     * @param InstancesScopedListWarning $warning
-     */
-    public function setWarning(InstancesScopedListWarning $warning)
-    {
-    }
-    /**
-     * @return InstancesScopedListWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_InstancesScopedList extends \Google\Service\Compute\InstancesScopedList
     {
     }
 }

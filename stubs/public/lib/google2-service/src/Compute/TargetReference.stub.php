@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class TargetReference extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $target;
-    /**
-     * @param string $target
-     */
-    public function setTarget($target)
+namespace Google\Service\Compute {
+    class TargetReference extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $target;
+        /**
+         * @param string $target
+         */
+        public function setTarget($target)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTarget()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\TargetReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTarget()
+    class Google_Service_Compute_TargetReference extends \Google\Service\Compute\TargetReference
     {
     }
 }

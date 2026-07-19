@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudComposer;
-
-class StopAirflowCommandResponse extends \Google\Collection
-{
-    protected $collection_key = 'output';
-    /**
-     * Whether the execution is still running.
-     *
-     * @var bool
-     */
-    public $isDone;
-    /**
-     * Output message from stopping execution request.
-     *
-     * @var string[]
-     */
-    public $output;
-    /**
-     * Whether the execution is still running.
-     *
-     * @param bool $isDone
-     */
-    public function setIsDone($isDone)
+namespace Google\Service\CloudComposer {
+    class StopAirflowCommandResponse extends \Google\Collection
     {
+        protected $collection_key = 'output';
+        /**
+         * Whether the execution is still running.
+         *
+         * @var bool
+         */
+        public $isDone;
+        /**
+         * Output message from stopping execution request.
+         *
+         * @var string[]
+         */
+        public $output;
+        /**
+         * Whether the execution is still running.
+         *
+         * @param bool $isDone
+         */
+        public function setIsDone($isDone)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsDone()
+        {
+        }
+        /**
+         * Output message from stopping execution request.
+         *
+         * @param string[] $output
+         */
+        public function setOutput($output)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getOutput()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudComposer\StopAirflowCommandResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIsDone()
-    {
-    }
-    /**
-     * Output message from stopping execution request.
-     *
-     * @param string[] $output
-     */
-    public function setOutput($output)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getOutput()
+    class Google_Service_CloudComposer_StopAirflowCommandResponse extends \Google\Service\CloudComposer\StopAirflowCommandResponse
     {
     }
 }

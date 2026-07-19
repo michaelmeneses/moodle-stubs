@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class SecretKeySelector extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $key;
-    protected $localObjectReferenceType = LocalObjectReference::class;
-    protected $localObjectReferenceDataType = '';
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var bool
-     */
-    public $optional;
-    /**
-     * @param string
-     */
-    public function setKey($key)
+namespace Google\Service\CloudRun {
+    class SecretKeySelector extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $key;
+        protected $localObjectReferenceType = LocalObjectReference::class;
+        protected $localObjectReferenceDataType = '';
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var bool
+         */
+        public $optional;
+        /**
+         * @param string
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * @param LocalObjectReference
+         */
+        public function setLocalObjectReference(LocalObjectReference $localObjectReference)
+        {
+        }
+        /**
+         * @return LocalObjectReference
+         */
+        public function getLocalObjectReference()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setOptional($optional)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getOptional()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRun\SecretKeySelector registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKey()
-    {
-    }
-    /**
-     * @param LocalObjectReference
-     */
-    public function setLocalObjectReference(LocalObjectReference $localObjectReference)
-    {
-    }
-    /**
-     * @return LocalObjectReference
-     */
-    public function getLocalObjectReference()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setOptional($optional)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getOptional()
+    class Google_Service_CloudRun_SecretKeySelector extends \Google\Service\CloudRun\SecretKeySelector
     {
     }
 }

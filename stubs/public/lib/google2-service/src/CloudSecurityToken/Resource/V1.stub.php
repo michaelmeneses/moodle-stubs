@@ -21,33 +21,44 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSecurityToken\Resource;
-
-/**
- * The "v1" collection of methods.
- * Typical usage is:
- *  <code>
- *   $stsService = new Google\Service\CloudSecurityToken(...);
- *   $v1 = $stsService->v1;
- *  </code>
- */
-class V1 extends \Google\Service\Resource
-{
+namespace Google\Service\CloudSecurityToken\Resource {
+    use Google\Service\CloudSecurityToken\GoogleIdentityStsV1ExchangeTokenRequest;
+    use Google\Service\CloudSecurityToken\GoogleIdentityStsV1ExchangeTokenResponse;
     /**
-     * Exchanges a credential for a Google OAuth 2.0 access token. The token asserts
-     * an external identity within an identity pool, or it applies a Credential
-     * Access Boundary to a Google access token. Note that workforce pools do not
-     * support Credential Access Boundaries. When you call this method, do not send
-     * the `Authorization` HTTP header in the request. This method does not require
-     * the `Authorization` header, and using the header can cause the request to
-     * fail. (v1.token)
-     *
-     * @param GoogleIdentityStsV1ExchangeTokenRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleIdentityStsV1ExchangeTokenResponse
-     * @throws \Google\Service\Exception
+     * The "v1" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $stsService = new Google\Service\CloudSecurityToken(...);
+     *   $v1 = $stsService->v1;
+     *  </code>
      */
-    public function token(GoogleIdentityStsV1ExchangeTokenRequest $postBody, $optParams = [])
+    class V1 extends \Google\Service\Resource
+    {
+        /**
+         * Exchanges a credential for a Google OAuth 2.0 access token. The token asserts
+         * an external identity within an identity pool, or it applies a Credential
+         * Access Boundary to a Google access token. Note that workforce pools do not
+         * support Credential Access Boundaries. When you call this method, do not send
+         * the `Authorization` HTTP header in the request. This method does not require
+         * the `Authorization` header, and using the header can cause the request to
+         * fail. (v1.token)
+         *
+         * @param GoogleIdentityStsV1ExchangeTokenRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleIdentityStsV1ExchangeTokenResponse
+         * @throws \Google\Service\Exception
+         */
+        public function token(GoogleIdentityStsV1ExchangeTokenRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudSecurityToken\Resource\V1 registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudSecurityToken_Resource_V1 extends \Google\Service\CloudSecurityToken\Resource\V1
     {
     }
 }

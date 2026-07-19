@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2LDiversityResult extends \Google\Collection
-{
-    protected $collection_key = 'sensitiveValueFrequencyHistogramBuckets';
-    protected $sensitiveValueFrequencyHistogramBucketsType = GooglePrivacyDlpV2LDiversityHistogramBucket::class;
-    protected $sensitiveValueFrequencyHistogramBucketsDataType = 'array';
-    /**
-     * Histogram of l-diversity equivalence class sensitive value frequencies.
-     *
-     * @param GooglePrivacyDlpV2LDiversityHistogramBucket[] $sensitiveValueFrequencyHistogramBuckets
-     */
-    public function setSensitiveValueFrequencyHistogramBuckets($sensitiveValueFrequencyHistogramBuckets)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2LDiversityResult extends \Google\Collection
     {
+        protected $collection_key = 'sensitiveValueFrequencyHistogramBuckets';
+        protected $sensitiveValueFrequencyHistogramBucketsType = GooglePrivacyDlpV2LDiversityHistogramBucket::class;
+        protected $sensitiveValueFrequencyHistogramBucketsDataType = 'array';
+        /**
+         * Histogram of l-diversity equivalence class sensitive value frequencies.
+         *
+         * @param GooglePrivacyDlpV2LDiversityHistogramBucket[] $sensitiveValueFrequencyHistogramBuckets
+         */
+        public function setSensitiveValueFrequencyHistogramBuckets($sensitiveValueFrequencyHistogramBuckets)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2LDiversityHistogramBucket[]
+         */
+        public function getSensitiveValueFrequencyHistogramBuckets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2LDiversityHistogramBucket[]
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2LDiversityResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSensitiveValueFrequencyHistogramBuckets()
+    class Google_Service_DLP_GooglePrivacyDlpV2LDiversityResult extends \Google\Service\DLP\GooglePrivacyDlpV2LDiversityResult
     {
     }
 }

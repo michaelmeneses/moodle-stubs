@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TPU;
-
-class ServiceIdentity extends \Google\Model
-{
-    /**
-     * The email address of the service identity.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * The email address of the service identity.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
+namespace Google\Service\TPU {
+    class ServiceIdentity extends \Google\Model
     {
+        /**
+         * The email address of the service identity.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * The email address of the service identity.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\TPU\ServiceIdentity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmail()
+    class Google_Service_TPU_ServiceIdentity extends \Google\Service\TPU\ServiceIdentity
     {
     }
 }

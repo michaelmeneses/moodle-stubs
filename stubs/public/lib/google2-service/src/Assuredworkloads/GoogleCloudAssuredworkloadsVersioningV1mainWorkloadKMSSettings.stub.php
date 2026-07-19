@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Assuredworkloads;
-
-class GoogleCloudAssuredworkloadsVersioningV1mainWorkloadKMSSettings extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $nextRotationTime;
-    /**
-     * @var string
-     */
-    public $rotationPeriod;
-    /**
-     * @param string
-     */
-    public function setNextRotationTime($nextRotationTime)
+namespace Google\Service\Assuredworkloads {
+    class GoogleCloudAssuredworkloadsVersioningV1mainWorkloadKMSSettings extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $nextRotationTime;
+        /**
+         * @var string
+         */
+        public $rotationPeriod;
+        /**
+         * @param string
+         */
+        public function setNextRotationTime($nextRotationTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextRotationTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRotationPeriod($rotationPeriod)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRotationPeriod()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsVersioningV1mainWorkloadKMSSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextRotationTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRotationPeriod($rotationPeriod)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRotationPeriod()
+    class Google_Service_Assuredworkloads_GoogleCloudAssuredworkloadsVersioningV1mainWorkloadKMSSettings extends \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsVersioningV1mainWorkloadKMSSettings
     {
     }
 }

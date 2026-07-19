@@ -21,56 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis\Resource;
-
-/**
- * The "scanConfigs" collection of methods.
- * Typical usage is:
- *  <code>
- *   $containeranalysisService = new Google\Service\ContainerAnalysis(...);
- *   $scanConfigs = $containeranalysisService->scanConfigs;
- *  </code>
- */
-class ProjectsScanConfigs extends \Google\Service\Resource
-{
+namespace Google\Service\ContainerAnalysis\Resource {
+    use Google\Service\ContainerAnalysis\ListScanConfigsResponse;
+    use Google\Service\ContainerAnalysis\ScanConfig;
     /**
-     * Gets the specified scan configuration. (scanConfigs.get)
-     *
-     * @param string $name Required. The name of the scan configuration in the form
-     * of `projects/[PROJECT_ID]/scanConfigs/[SCAN_CONFIG_ID]`.
-     * @param array $optParams Optional parameters.
-     * @return ScanConfig
+     * The "scanConfigs" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $containeranalysisService = new Google\Service\ContainerAnalysis(...);
+     *   $scanConfigs = $containeranalysisService->scanConfigs;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsScanConfigs extends \Google\Service\Resource
     {
+        /**
+         * Gets the specified scan configuration. (scanConfigs.get)
+         *
+         * @param string $name Required. The name of the scan configuration in the form
+         * of `projects/[PROJECT_ID]/scanConfigs/[SCAN_CONFIG_ID]`.
+         * @param array $optParams Optional parameters.
+         * @return ScanConfig
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists scan configurations for the specified project.
+         * (scanConfigs.listProjectsScanConfigs)
+         *
+         * @param string $parent Required. The name of the project to list scan
+         * configurations for in the form of `projects/[PROJECT_ID]`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Required. The filter expression.
+         * @opt_param int pageSize The number of scan configs to return in the list.
+         * @opt_param string pageToken Token to provide to skip to a particular spot in
+         * the list.
+         * @return ListScanConfigsResponse
+         */
+        public function listProjectsScanConfigs($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates the specified scan configuration. (scanConfigs.update)
+         *
+         * @param string $name Required. The name of the scan configuration in the form
+         * of `projects/[PROJECT_ID]/scanConfigs/[SCAN_CONFIG_ID]`.
+         * @param ScanConfig $postBody
+         * @param array $optParams Optional parameters.
+         * @return ScanConfig
+         */
+        public function update($name, ScanConfig $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists scan configurations for the specified project.
-     * (scanConfigs.listProjectsScanConfigs)
-     *
-     * @param string $parent Required. The name of the project to list scan
-     * configurations for in the form of `projects/[PROJECT_ID]`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Required. The filter expression.
-     * @opt_param int pageSize The number of scan configs to return in the list.
-     * @opt_param string pageToken Token to provide to skip to a particular spot in
-     * the list.
-     * @return ListScanConfigsResponse
+     * Runtime class alias of \Google\Service\ContainerAnalysis\Resource\ProjectsScanConfigs registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listProjectsScanConfigs($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates the specified scan configuration. (scanConfigs.update)
-     *
-     * @param string $name Required. The name of the scan configuration in the form
-     * of `projects/[PROJECT_ID]/scanConfigs/[SCAN_CONFIG_ID]`.
-     * @param ScanConfig $postBody
-     * @param array $optParams Optional parameters.
-     * @return ScanConfig
-     */
-    public function update($name, ScanConfig $postBody, $optParams = [])
+    class Google_Service_ContainerAnalysis_Resource_ProjectsScanConfigs extends \Google\Service\ContainerAnalysis\Resource\ProjectsScanConfigs
     {
     }
 }

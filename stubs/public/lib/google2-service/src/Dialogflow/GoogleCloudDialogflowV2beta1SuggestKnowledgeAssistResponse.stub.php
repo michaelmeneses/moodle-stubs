@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1SuggestKnowledgeAssistResponse extends \Google\Model
-{
-    /**
-     * Number of messages prior to and including latest_message to compile the
-     * suggestion. It may be smaller than the
-     * SuggestKnowledgeAssistRequest.context_size field in the request if there
-     * are fewer messages in the conversation.
-     *
-     * @var int
-     */
-    public $contextSize;
-    protected $knowledgeAssistAnswerType = GoogleCloudDialogflowV2beta1KnowledgeAssistAnswer::class;
-    protected $knowledgeAssistAnswerDataType = '';
-    /**
-     * The name of the latest conversation message used to compile suggestion for.
-     * Format: `projects//locations//conversations//messages/`.
-     *
-     * @var string
-     */
-    public $latestMessage;
-    /**
-     * Number of messages prior to and including latest_message to compile the
-     * suggestion. It may be smaller than the
-     * SuggestKnowledgeAssistRequest.context_size field in the request if there
-     * are fewer messages in the conversation.
-     *
-     * @param int $contextSize
-     */
-    public function setContextSize($contextSize)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1SuggestKnowledgeAssistResponse extends \Google\Model
     {
+        /**
+         * Number of messages prior to and including latest_message to compile the
+         * suggestion. It may be smaller than the
+         * SuggestKnowledgeAssistRequest.context_size field in the request if there
+         * are fewer messages in the conversation.
+         *
+         * @var int
+         */
+        public $contextSize;
+        protected $knowledgeAssistAnswerType = GoogleCloudDialogflowV2beta1KnowledgeAssistAnswer::class;
+        protected $knowledgeAssistAnswerDataType = '';
+        /**
+         * The name of the latest conversation message used to compile suggestion for.
+         * Format: `projects//locations//conversations//messages/`.
+         *
+         * @var string
+         */
+        public $latestMessage;
+        /**
+         * Number of messages prior to and including latest_message to compile the
+         * suggestion. It may be smaller than the
+         * SuggestKnowledgeAssistRequest.context_size field in the request if there
+         * are fewer messages in the conversation.
+         *
+         * @param int $contextSize
+         */
+        public function setContextSize($contextSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getContextSize()
+        {
+        }
+        /**
+         * Output only. Knowledge Assist suggestion.
+         *
+         * @param GoogleCloudDialogflowV2beta1KnowledgeAssistAnswer $knowledgeAssistAnswer
+         */
+        public function setKnowledgeAssistAnswer(GoogleCloudDialogflowV2beta1KnowledgeAssistAnswer $knowledgeAssistAnswer)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2beta1KnowledgeAssistAnswer
+         */
+        public function getKnowledgeAssistAnswer()
+        {
+        }
+        /**
+         * The name of the latest conversation message used to compile suggestion for.
+         * Format: `projects//locations//conversations//messages/`.
+         *
+         * @param string $latestMessage
+         */
+        public function setLatestMessage($latestMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLatestMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1SuggestKnowledgeAssistResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContextSize()
-    {
-    }
-    /**
-     * Output only. Knowledge Assist suggestion.
-     *
-     * @param GoogleCloudDialogflowV2beta1KnowledgeAssistAnswer $knowledgeAssistAnswer
-     */
-    public function setKnowledgeAssistAnswer(GoogleCloudDialogflowV2beta1KnowledgeAssistAnswer $knowledgeAssistAnswer)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2beta1KnowledgeAssistAnswer
-     */
-    public function getKnowledgeAssistAnswer()
-    {
-    }
-    /**
-     * The name of the latest conversation message used to compile suggestion for.
-     * Format: `projects//locations//conversations//messages/`.
-     *
-     * @param string $latestMessage
-     */
-    public function setLatestMessage($latestMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLatestMessage()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1SuggestKnowledgeAssistResponse extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1SuggestKnowledgeAssistResponse
     {
     }
 }

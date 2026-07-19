@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class DataflowHistogramValue extends \Google\Collection
-{
-    protected $collection_key = 'bucketCounts';
-    /**
-     * Optional. The number of values in each bucket of the histogram, as
-     * described in `bucket_options`. `bucket_counts` should contain N values,
-     * where N is the number of buckets specified in `bucket_options`. If
-     * `bucket_counts` has fewer than N values, the remaining values are assumed
-     * to be 0.
-     *
-     * @var string[]
-     */
-    public $bucketCounts;
-    protected $bucketOptionsType = BucketOptions::class;
-    protected $bucketOptionsDataType = '';
-    /**
-     * Number of values recorded in this histogram.
-     *
-     * @var string
-     */
-    public $count;
-    protected $outlierStatsType = OutlierStats::class;
-    protected $outlierStatsDataType = '';
-    /**
-     * Optional. The number of values in each bucket of the histogram, as
-     * described in `bucket_options`. `bucket_counts` should contain N values,
-     * where N is the number of buckets specified in `bucket_options`. If
-     * `bucket_counts` has fewer than N values, the remaining values are assumed
-     * to be 0.
-     *
-     * @param string[] $bucketCounts
-     */
-    public function setBucketCounts($bucketCounts)
+namespace Google\Service\Dataflow {
+    class DataflowHistogramValue extends \Google\Collection
     {
+        protected $collection_key = 'bucketCounts';
+        /**
+         * Optional. The number of values in each bucket of the histogram, as
+         * described in `bucket_options`. `bucket_counts` should contain N values,
+         * where N is the number of buckets specified in `bucket_options`. If
+         * `bucket_counts` has fewer than N values, the remaining values are assumed
+         * to be 0.
+         *
+         * @var string[]
+         */
+        public $bucketCounts;
+        protected $bucketOptionsType = BucketOptions::class;
+        protected $bucketOptionsDataType = '';
+        /**
+         * Number of values recorded in this histogram.
+         *
+         * @var string
+         */
+        public $count;
+        protected $outlierStatsType = OutlierStats::class;
+        protected $outlierStatsDataType = '';
+        /**
+         * Optional. The number of values in each bucket of the histogram, as
+         * described in `bucket_options`. `bucket_counts` should contain N values,
+         * where N is the number of buckets specified in `bucket_options`. If
+         * `bucket_counts` has fewer than N values, the remaining values are assumed
+         * to be 0.
+         *
+         * @param string[] $bucketCounts
+         */
+        public function setBucketCounts($bucketCounts)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getBucketCounts()
+        {
+        }
+        /**
+         * Describes the bucket boundaries used in the histogram.
+         *
+         * @param BucketOptions $bucketOptions
+         */
+        public function setBucketOptions(BucketOptions $bucketOptions)
+        {
+        }
+        /**
+         * @return BucketOptions
+         */
+        public function getBucketOptions()
+        {
+        }
+        /**
+         * Number of values recorded in this histogram.
+         *
+         * @param string $count
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCount()
+        {
+        }
+        /**
+         * Statistics on the values recorded in the histogram that fall out of the
+         * bucket boundaries.
+         *
+         * @param OutlierStats $outlierStats
+         */
+        public function setOutlierStats(OutlierStats $outlierStats)
+        {
+        }
+        /**
+         * @return OutlierStats
+         */
+        public function getOutlierStats()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Dataflow\DataflowHistogramValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBucketCounts()
-    {
-    }
-    /**
-     * Describes the bucket boundaries used in the histogram.
-     *
-     * @param BucketOptions $bucketOptions
-     */
-    public function setBucketOptions(BucketOptions $bucketOptions)
-    {
-    }
-    /**
-     * @return BucketOptions
-     */
-    public function getBucketOptions()
-    {
-    }
-    /**
-     * Number of values recorded in this histogram.
-     *
-     * @param string $count
-     */
-    public function setCount($count)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCount()
-    {
-    }
-    /**
-     * Statistics on the values recorded in the histogram that fall out of the
-     * bucket boundaries.
-     *
-     * @param OutlierStats $outlierStats
-     */
-    public function setOutlierStats(OutlierStats $outlierStats)
-    {
-    }
-    /**
-     * @return OutlierStats
-     */
-    public function getOutlierStats()
+    class Google_Service_Dataflow_DataflowHistogramValue extends \Google\Service\Dataflow\DataflowHistogramValue
     {
     }
 }

@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class DisksAddResourcePoliciesRequest extends \Google\Collection
-{
-    protected $collection_key = 'resourcePolicies';
-    /**
-     * Full or relative path to the resource policy to be added to this disk. You
-     * can only specify one resource policy.
-     *
-     * @var string[]
-     */
-    public $resourcePolicies;
-    /**
-     * Full or relative path to the resource policy to be added to this disk. You
-     * can only specify one resource policy.
-     *
-     * @param string[] $resourcePolicies
-     */
-    public function setResourcePolicies($resourcePolicies)
+namespace Google\Service\Compute {
+    class DisksAddResourcePoliciesRequest extends \Google\Collection
     {
+        protected $collection_key = 'resourcePolicies';
+        /**
+         * Full or relative path to the resource policy to be added to this disk. You
+         * can only specify one resource policy.
+         *
+         * @var string[]
+         */
+        public $resourcePolicies;
+        /**
+         * Full or relative path to the resource policy to be added to this disk. You
+         * can only specify one resource policy.
+         *
+         * @param string[] $resourcePolicies
+         */
+        public function setResourcePolicies($resourcePolicies)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getResourcePolicies()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Compute\DisksAddResourcePoliciesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResourcePolicies()
+    class Google_Service_Compute_DisksAddResourcePoliciesRequest extends \Google\Service\Compute\DisksAddResourcePoliciesRequest
     {
     }
 }

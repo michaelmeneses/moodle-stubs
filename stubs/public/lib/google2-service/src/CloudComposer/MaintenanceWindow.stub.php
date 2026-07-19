@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudComposer;
-
-class MaintenanceWindow extends \Google\Model
-{
-    /**
-     * Required. Maintenance window end time. It is used only to calculate the
-     * duration of the maintenance window. The value for end-time must be in the
-     * future, relative to `start_time`.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * Required. Maintenance window recurrence. Format is a subset of
-     * [RFC-5545](https://tools.ietf.org/html/rfc5545) `RRULE`. The only allowed
-     * values for `FREQ` field are `FREQ=DAILY` and `FREQ=WEEKLY;BYDAY=...`
-     * Example values: `FREQ=WEEKLY;BYDAY=TU,WE`, `FREQ=DAILY`.
-     *
-     * @var string
-     */
-    public $recurrence;
-    /**
-     * Required. Start time of the first recurrence of the maintenance window.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Required. Maintenance window end time. It is used only to calculate the
-     * duration of the maintenance window. The value for end-time must be in the
-     * future, relative to `start_time`.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\CloudComposer {
+    class MaintenanceWindow extends \Google\Model
     {
+        /**
+         * Required. Maintenance window end time. It is used only to calculate the
+         * duration of the maintenance window. The value for end-time must be in the
+         * future, relative to `start_time`.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * Required. Maintenance window recurrence. Format is a subset of
+         * [RFC-5545](https://tools.ietf.org/html/rfc5545) `RRULE`. The only allowed
+         * values for `FREQ` field are `FREQ=DAILY` and `FREQ=WEEKLY;BYDAY=...`
+         * Example values: `FREQ=WEEKLY;BYDAY=TU,WE`, `FREQ=DAILY`.
+         *
+         * @var string
+         */
+        public $recurrence;
+        /**
+         * Required. Start time of the first recurrence of the maintenance window.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Required. Maintenance window end time. It is used only to calculate the
+         * duration of the maintenance window. The value for end-time must be in the
+         * future, relative to `start_time`.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Required. Maintenance window recurrence. Format is a subset of
+         * [RFC-5545](https://tools.ietf.org/html/rfc5545) `RRULE`. The only allowed
+         * values for `FREQ` field are `FREQ=DAILY` and `FREQ=WEEKLY;BYDAY=...`
+         * Example values: `FREQ=WEEKLY;BYDAY=TU,WE`, `FREQ=DAILY`.
+         *
+         * @param string $recurrence
+         */
+        public function setRecurrence($recurrence)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRecurrence()
+        {
+        }
+        /**
+         * Required. Start time of the first recurrence of the maintenance window.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudComposer\MaintenanceWindow registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Required. Maintenance window recurrence. Format is a subset of
-     * [RFC-5545](https://tools.ietf.org/html/rfc5545) `RRULE`. The only allowed
-     * values for `FREQ` field are `FREQ=DAILY` and `FREQ=WEEKLY;BYDAY=...`
-     * Example values: `FREQ=WEEKLY;BYDAY=TU,WE`, `FREQ=DAILY`.
-     *
-     * @param string $recurrence
-     */
-    public function setRecurrence($recurrence)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRecurrence()
-    {
-    }
-    /**
-     * Required. Start time of the first recurrence of the maintenance window.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_CloudComposer_MaintenanceWindow extends \Google\Service\CloudComposer\MaintenanceWindow
     {
     }
 }

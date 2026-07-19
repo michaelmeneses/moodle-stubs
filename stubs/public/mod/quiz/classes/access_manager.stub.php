@@ -22,6 +22,16 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_quiz;
 
+use core_component;
+use mod_quiz\form\preflight_check_form;
+use mod_quiz\local\access_rule_base;
+use mod_quiz\output\renderer;
+use mod_quiz\question\display_options;
+use mod_quiz_mod_form;
+use moodle_page;
+use moodle_url;
+use MoodleQuickForm;
+use stdClass;
 /**
  * This class aggregates the access rules that apply to a particular quiz.
  *

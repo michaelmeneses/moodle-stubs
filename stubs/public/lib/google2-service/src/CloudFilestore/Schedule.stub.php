@@ -21,99 +21,108 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudFilestore;
-
-class Schedule extends \Google\Model
-{
-    /**
-     * The day of the week is unspecified.
-     */
-    public const DAY_DAY_OF_WEEK_UNSPECIFIED = 'DAY_OF_WEEK_UNSPECIFIED';
-    /**
-     * Monday
-     */
-    public const DAY_MONDAY = 'MONDAY';
-    /**
-     * Tuesday
-     */
-    public const DAY_TUESDAY = 'TUESDAY';
-    /**
-     * Wednesday
-     */
-    public const DAY_WEDNESDAY = 'WEDNESDAY';
-    /**
-     * Thursday
-     */
-    public const DAY_THURSDAY = 'THURSDAY';
-    /**
-     * Friday
-     */
-    public const DAY_FRIDAY = 'FRIDAY';
-    /**
-     * Saturday
-     */
-    public const DAY_SATURDAY = 'SATURDAY';
-    /**
-     * Sunday
-     */
-    public const DAY_SUNDAY = 'SUNDAY';
-    /**
-     * Allows to define schedule that runs specified day of the week.
-     *
-     * @var string
-     */
-    public $day;
-    /**
-     * Output only. Duration of the time window, set by service producer.
-     *
-     * @var string
-     */
-    public $duration;
-    protected $startTimeType = TimeOfDay::class;
-    protected $startTimeDataType = '';
-    /**
-     * Allows to define schedule that runs specified day of the week.
-     *
-     * Accepted values: DAY_OF_WEEK_UNSPECIFIED, MONDAY, TUESDAY, WEDNESDAY,
-     * THURSDAY, FRIDAY, SATURDAY, SUNDAY
-     *
-     * @param self::DAY_* $day
-     */
-    public function setDay($day)
+namespace Google\Service\CloudFilestore {
+    class Schedule extends \Google\Model
     {
+        /**
+         * The day of the week is unspecified.
+         */
+        public const DAY_DAY_OF_WEEK_UNSPECIFIED = 'DAY_OF_WEEK_UNSPECIFIED';
+        /**
+         * Monday
+         */
+        public const DAY_MONDAY = 'MONDAY';
+        /**
+         * Tuesday
+         */
+        public const DAY_TUESDAY = 'TUESDAY';
+        /**
+         * Wednesday
+         */
+        public const DAY_WEDNESDAY = 'WEDNESDAY';
+        /**
+         * Thursday
+         */
+        public const DAY_THURSDAY = 'THURSDAY';
+        /**
+         * Friday
+         */
+        public const DAY_FRIDAY = 'FRIDAY';
+        /**
+         * Saturday
+         */
+        public const DAY_SATURDAY = 'SATURDAY';
+        /**
+         * Sunday
+         */
+        public const DAY_SUNDAY = 'SUNDAY';
+        /**
+         * Allows to define schedule that runs specified day of the week.
+         *
+         * @var string
+         */
+        public $day;
+        /**
+         * Output only. Duration of the time window, set by service producer.
+         *
+         * @var string
+         */
+        public $duration;
+        protected $startTimeType = TimeOfDay::class;
+        protected $startTimeDataType = '';
+        /**
+         * Allows to define schedule that runs specified day of the week.
+         *
+         * Accepted values: DAY_OF_WEEK_UNSPECIFIED, MONDAY, TUESDAY, WEDNESDAY,
+         * THURSDAY, FRIDAY, SATURDAY, SUNDAY
+         *
+         * @param self::DAY_* $day
+         */
+        public function setDay($day)
+        {
+        }
+        /**
+         * @return self::DAY_*
+         */
+        public function getDay()
+        {
+        }
+        /**
+         * Output only. Duration of the time window, set by service producer.
+         *
+         * @param string $duration
+         */
+        public function setDuration($duration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDuration()
+        {
+        }
+        /**
+         * Time within the window to start the operations.
+         *
+         * @param TimeOfDay $startTime
+         */
+        public function setStartTime(TimeOfDay $startTime)
+        {
+        }
+        /**
+         * @return TimeOfDay
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::DAY_*
+     * Runtime class alias of \Google\Service\CloudFilestore\Schedule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDay()
-    {
-    }
-    /**
-     * Output only. Duration of the time window, set by service producer.
-     *
-     * @param string $duration
-     */
-    public function setDuration($duration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDuration()
-    {
-    }
-    /**
-     * Time within the window to start the operations.
-     *
-     * @param TimeOfDay $startTime
-     */
-    public function setStartTime(TimeOfDay $startTime)
-    {
-    }
-    /**
-     * @return TimeOfDay
-     */
-    public function getStartTime()
+    class Google_Service_CloudFilestore_Schedule extends \Google\Service\CloudFilestore\Schedule
     {
     }
 }

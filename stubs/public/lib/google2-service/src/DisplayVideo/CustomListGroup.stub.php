@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class CustomListGroup extends \Google\Collection
-{
-    protected $collection_key = 'settings';
-    protected $settingsType = CustomListTargetingSetting::class;
-    protected $settingsDataType = 'array';
-    /**
-     * Required. All custom list targeting settings in custom list group. Repeated
-     * settings with the same id will be ignored.
-     *
-     * @param CustomListTargetingSetting[] $settings
-     */
-    public function setSettings($settings)
+namespace Google\Service\DisplayVideo {
+    class CustomListGroup extends \Google\Collection
     {
+        protected $collection_key = 'settings';
+        protected $settingsType = CustomListTargetingSetting::class;
+        protected $settingsDataType = 'array';
+        /**
+         * Required. All custom list targeting settings in custom list group. Repeated
+         * settings with the same id will be ignored.
+         *
+         * @param CustomListTargetingSetting[] $settings
+         */
+        public function setSettings($settings)
+        {
+        }
+        /**
+         * @return CustomListTargetingSetting[]
+         */
+        public function getSettings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CustomListTargetingSetting[]
+     * Runtime class alias of \Google\Service\DisplayVideo\CustomListGroup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSettings()
+    class Google_Service_DisplayVideo_CustomListGroup extends \Google\Service\DisplayVideo\CustomListGroup
     {
     }
 }

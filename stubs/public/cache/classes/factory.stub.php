@@ -20,354 +20,366 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core_cache;
-
-/**
- * The cache factory class.
- *
- * This factory class is important because it stores instances of objects used by the cache API and returns them upon requests.
- * This allows us to both reuse objects saving on overhead, and gives us an easy place to "reset" the cache API in situations that
- * we need such as unit testing.
- *
- * @copyright  2012 Sam Hemelryk
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @package core_cache
- */
-class factory
-{
-    /** The cache has not been initialised yet. */
-    const STATE_UNINITIALISED = 0;
-    /** The cache is in the process of initialising itself. */
-    const STATE_INITIALISING = 1;
-    /** The cache is in the process of saving its configuration file. */
-    const STATE_SAVING = 2;
-    /** The cache is ready to use. */
-    const STATE_READY = 3;
-    /** The cache is currently updating itself */
-    const STATE_UPDATING = 4;
-    /** The cache encountered an error while initialising. */
-    const STATE_ERROR_INITIALISING = 9;
-    /** The cache has been disabled. */
-    const STATE_DISABLED = 10;
-    /** The cache stores have been disabled */
-    const STATE_STORES_DISABLED = 11;
+namespace core_cache {
+    use core\exception\coding_exception;
+    use cache_config_testing;
+    use cache_phpunit_factory;
     /**
-     * An instance of the factory class created upon the first request.
-     * @var factory
-     */
-    protected static $instance;
-    /**
-     * An array containing caches created for definitions
-     * @var array
-     */
-    protected $cachesfromdefinitions = [];
-    /**
-     * Array of caches created by parameters, ad-hoc definitions will have been used.
-     * @var array
-     */
-    protected $cachesfromparams = [];
-    /**
-     * An array of stores organised by definitions.
-     * @var array
-     */
-    protected $definitionstores = [];
-    /**
-     * An array of instantiated stores.
-     * @var array
-     */
-    protected $stores = [];
-    /**
-     * An array of configuration instances
-     * @var array
-     */
-    protected $configs = [];
-    /**
-     * An array of initialised definitions
-     * @var array
-     */
-    protected $definitions = [];
-    /**
-     * An array of lock plugins.
-     * @var array
-     */
-    protected $lockplugins = [];
-    /**
-     * The current state of the cache API.
-     * @var int
-     */
-    protected $state = 0;
-    /**
-     * The current cache display helper.
-     * @var core_cache\local\administration_display_helper
-     */
-    protected static $displayhelper = null;
-    /**
-     * Returns an instance of the factory class.
+     * The cache factory class.
      *
-     * @param bool $forcereload If set to true a new factory instance will be created and used.
-     * @return factory
+     * This factory class is important because it stores instances of objects used by the cache API and returns them upon requests.
+     * This allows us to both reuse objects saving on overhead, and gives us an easy place to "reset" the cache API in situations that
+     * we need such as unit testing.
+     *
+     * @copyright  2012 Sam Hemelryk
+     * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     * @package core_cache
      */
-    public static function instance($forcereload = false)
+    class factory
     {
+        /** The cache has not been initialised yet. */
+        const STATE_UNINITIALISED = 0;
+        /** The cache is in the process of initialising itself. */
+        const STATE_INITIALISING = 1;
+        /** The cache is in the process of saving its configuration file. */
+        const STATE_SAVING = 2;
+        /** The cache is ready to use. */
+        const STATE_READY = 3;
+        /** The cache is currently updating itself */
+        const STATE_UPDATING = 4;
+        /** The cache encountered an error while initialising. */
+        const STATE_ERROR_INITIALISING = 9;
+        /** The cache has been disabled. */
+        const STATE_DISABLED = 10;
+        /** The cache stores have been disabled */
+        const STATE_STORES_DISABLED = 11;
+        /**
+         * An instance of the factory class created upon the first request.
+         * @var factory
+         */
+        protected static $instance;
+        /**
+         * An array containing caches created for definitions
+         * @var array
+         */
+        protected $cachesfromdefinitions = [];
+        /**
+         * Array of caches created by parameters, ad-hoc definitions will have been used.
+         * @var array
+         */
+        protected $cachesfromparams = [];
+        /**
+         * An array of stores organised by definitions.
+         * @var array
+         */
+        protected $definitionstores = [];
+        /**
+         * An array of instantiated stores.
+         * @var array
+         */
+        protected $stores = [];
+        /**
+         * An array of configuration instances
+         * @var array
+         */
+        protected $configs = [];
+        /**
+         * An array of initialised definitions
+         * @var array
+         */
+        protected $definitions = [];
+        /**
+         * An array of lock plugins.
+         * @var array
+         */
+        protected $lockplugins = [];
+        /**
+         * The current state of the cache API.
+         * @var int
+         */
+        protected $state = 0;
+        /**
+         * The current cache display helper.
+         * @var core_cache\local\administration_display_helper
+         */
+        protected static $displayhelper = null;
+        /**
+         * Returns an instance of the factory class.
+         *
+         * @param bool $forcereload If set to true a new factory instance will be created and used.
+         * @return factory
+         */
+        public static function instance($forcereload = false)
+        {
+        }
+        /**
+         * Protected constructor, please use the static instance method.
+         */
+        protected function __construct()
+        {
+        }
+        /**
+         * Resets the arrays containing instantiated caches, stores, and config instances.
+         */
+        public static function reset()
+        {
+        }
+        /**
+         * Resets the stores, clearing the array of created stores.
+         *
+         * Cache objects still held onto by the code that initialised them will remain as is
+         * however all future requests for a cache/store will lead to a new instance being re-initialised.
+         */
+        public function reset_cache_instances()
+        {
+        }
+        /**
+         * Creates a cache object given the parameters for a definition.
+         *
+         * If a cache has already been created for the given definition then that cache instance will be returned.
+         *
+         * @param string $component
+         * @param string $area
+         * @param array $identifiers
+         * @param string $unused Used to be data source aggregate however that was removed and this is now unused.
+         * @return application_cache|session_cache|request_cache
+         */
+        public function create_cache_from_definition($component, $area, array $identifiers = [], $unused = null)
+        {
+        }
+        /**
+         * Creates an ad-hoc cache from the given param.
+         *
+         * If a cache has already been created using the same params then that cache instance will be returned.
+         *
+         * @param int $mode
+         * @param string $component
+         * @param string $area
+         * @param array $identifiers
+         * @param array $options An array of options, available options are:
+         *   - simplekeys : Set to true if the keys you will use are a-zA-Z0-9_
+         *   - simpledata : Set to true if the type of the data you are going to store is scalar, or an array of scalar vars
+         *   - staticacceleration : If set to true the cache will hold onto data passing through it.
+         *   - staticaccelerationsize : The maximum number of items to hold onto for acceleration purposes.
+         * @return application_cache|session_cache|request_cache
+         */
+        public function create_cache_from_params($mode, $component, $area, array $identifiers = [], array $options = [])
+        {
+        }
+        /**
+         * Common public method to create a cache instance given a definition.
+         *
+         * This is used by the static make methods.
+         *
+         * @param definition $definition
+         * @return application_cache|session_cache|store
+         * @throws coding_exception
+         */
+        public function create_cache(definition $definition)
+        {
+        }
+        /**
+         * Creates a store instance given its name and configuration.
+         *
+         * If the store has already been instantiated then the original object will be returned. (reused)
+         *
+         * @param string $name The name of the store (must be unique remember)
+         * @param array $details
+         * @param definition $definition The definition to instantiate it for.
+         * @return boolean|store
+         */
+        public function create_store_from_config($name, array $details, definition $definition)
+        {
+        }
+        /**
+         * Returns an array of cache stores that have been initialised for use in definitions.
+         * @param definition $definition
+         * @return array
+         */
+        public function get_store_instances_in_use(definition $definition)
+        {
+        }
+        /**
+         * Returns the cache instances that have been used within this request.
+         * @since Moodle 2.6
+         * @return array
+         */
+        public function get_caches_in_use()
+        {
+        }
+        /**
+         * Gets all adhoc caches that have been used within this request.
+         *
+         * @return store[] Caches currently in use
+         */
+        public function get_adhoc_caches_in_use()
+        {
+        }
+        /**
+         * Creates a cache config instance with the ability to write if required.
+         *
+         * @param bool $writer If set to true an instance that can update the configuration will be returned.
+         * @return config|config_writer
+         */
+        public function create_config_instance($writer = false)
+        {
+        }
+        /**
+         * Creates a definition instance or returns the existing one if it has already been created.
+         * @param string $component
+         * @param string $area
+         * @param string $unused This used to be data source aggregate - however that functionality has been removed and
+         *        this argument is now unused.
+         * @return definition
+         * @throws coding_exception If the definition cannot be found.
+         */
+        public function create_definition($component, $area, $unused = null)
+        {
+        }
+        /**
+         * Creates a dummy store object for use when a loader has no potential stores to use.
+         *
+         * @param definition $definition
+         * @return dummy_cachestore
+         */
+        protected function create_dummy_store(definition $definition)
+        {
+        }
+        /**
+         * Returns a lock instance ready for use.
+         *
+         * @param array $config
+         * @return lockable_cache_interface
+         */
+        public function create_lock_instance(array $config)
+        {
+        }
+        /**
+         * Returns the current state of the cache API.
+         *
+         * @return int
+         */
+        public function get_state()
+        {
+        }
+        /**
+         * Updates the state fo the cache API.
+         *
+         * @param int $state
+         * @return bool
+         */
+        public function set_state($state)
+        {
+        }
+        /**
+         * Informs the factory that the cache is currently updating itself.
+         *
+         * This forces the state to upgrading and can only be called once the cache is ready to use.
+         * Calling it ensure we don't try to reinstantite things when requesting cache definitions that don't exist yet.
+         */
+        public function updating_started()
+        {
+        }
+        /**
+         * Informs the factory that the upgrading has finished.
+         *
+         * This forces the state back to ready.
+         */
+        public function updating_finished()
+        {
+        }
+        /**
+         * Returns true if the cache API has been disabled.
+         *
+         * @return bool
+         */
+        public function is_disabled()
+        {
+        }
+        /**
+         * Returns true if the cache is currently initialising itself.
+         *
+         * This includes both initialisation and saving the cache config file as part of that initialisation.
+         *
+         * @return bool
+         */
+        public function is_initialising()
+        {
+        }
+        /**
+         * Returns true if the cache is currently updating itself.
+         *
+         * @return bool
+         */
+        public function is_updating()
+        {
+        }
+        /**
+         * Disables as much of the cache API as possible.
+         *
+         * All of the magic associated with the disabled cache is wrapped into this function.
+         * In switching out the factory for the disabled factory it gains full control over the initialisation of objects
+         * and can use all of the disabled alternatives.
+         * Simple!
+         *
+         * This function has been marked as protected so that it cannot be abused through the public API presently.
+         * Perhaps in the future we will allow this, however as per the build up to the first release containing
+         * MUC it was decided that this was just to risky and abusable.
+         */
+        protected static function disable()
+        {
+        }
+        /**
+         * Returns true if the cache stores have been disabled.
+         *
+         * @return bool
+         */
+        public function stores_disabled()
+        {
+        }
+        /**
+         * Disables cache stores.
+         *
+         * The cache API will continue to function however none of the actual stores will be used.
+         * Instead the dummy store will be provided for all cache requests.
+         * This is useful in situations where you cannot be sure any stores are working.
+         *
+         * In order to re-enable the cache you must call the cache factories static reset method:
+         * <code>
+         * // Disable the cache factory.
+         * factory::disable_stores();
+         * // Re-enable the cache factory by resetting it.
+         * factory::reset();
+         * </code>
+         */
+        public static function disable_stores()
+        {
+        }
+        /**
+         * Returns an instance of the current display_helper.
+         *
+         * @return administration_helper
+         */
+        public static function get_administration_display_helper(): administration_helper
+        {
+        }
+        /**
+         * Gets the config_writer to use when caching is disabled.
+         * This should only be called from disabled_factory.
+         *
+         * @return config_writer
+         */
+        public static function get_disabled_writer(): config_writer
+        {
+        }
     }
+}
+namespace {
     /**
-     * Protected constructor, please use the static instance method.
+     * Runtime class alias of \core_cache\factory registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    protected function __construct()
-    {
-    }
-    /**
-     * Resets the arrays containing instantiated caches, stores, and config instances.
-     */
-    public static function reset()
-    {
-    }
-    /**
-     * Resets the stores, clearing the array of created stores.
-     *
-     * Cache objects still held onto by the code that initialised them will remain as is
-     * however all future requests for a cache/store will lead to a new instance being re-initialised.
-     */
-    public function reset_cache_instances()
-    {
-    }
-    /**
-     * Creates a cache object given the parameters for a definition.
-     *
-     * If a cache has already been created for the given definition then that cache instance will be returned.
-     *
-     * @param string $component
-     * @param string $area
-     * @param array $identifiers
-     * @param string $unused Used to be data source aggregate however that was removed and this is now unused.
-     * @return application_cache|session_cache|request_cache
-     */
-    public function create_cache_from_definition($component, $area, array $identifiers = [], $unused = null)
-    {
-    }
-    /**
-     * Creates an ad-hoc cache from the given param.
-     *
-     * If a cache has already been created using the same params then that cache instance will be returned.
-     *
-     * @param int $mode
-     * @param string $component
-     * @param string $area
-     * @param array $identifiers
-     * @param array $options An array of options, available options are:
-     *   - simplekeys : Set to true if the keys you will use are a-zA-Z0-9_
-     *   - simpledata : Set to true if the type of the data you are going to store is scalar, or an array of scalar vars
-     *   - staticacceleration : If set to true the cache will hold onto data passing through it.
-     *   - staticaccelerationsize : The maximum number of items to hold onto for acceleration purposes.
-     * @return application_cache|session_cache|request_cache
-     */
-    public function create_cache_from_params($mode, $component, $area, array $identifiers = [], array $options = [])
-    {
-    }
-    /**
-     * Common public method to create a cache instance given a definition.
-     *
-     * This is used by the static make methods.
-     *
-     * @param definition $definition
-     * @return application_cache|session_cache|store
-     * @throws coding_exception
-     */
-    public function create_cache(definition $definition)
-    {
-    }
-    /**
-     * Creates a store instance given its name and configuration.
-     *
-     * If the store has already been instantiated then the original object will be returned. (reused)
-     *
-     * @param string $name The name of the store (must be unique remember)
-     * @param array $details
-     * @param definition $definition The definition to instantiate it for.
-     * @return boolean|store
-     */
-    public function create_store_from_config($name, array $details, definition $definition)
-    {
-    }
-    /**
-     * Returns an array of cache stores that have been initialised for use in definitions.
-     * @param definition $definition
-     * @return array
-     */
-    public function get_store_instances_in_use(definition $definition)
-    {
-    }
-    /**
-     * Returns the cache instances that have been used within this request.
-     * @since Moodle 2.6
-     * @return array
-     */
-    public function get_caches_in_use()
-    {
-    }
-    /**
-     * Gets all adhoc caches that have been used within this request.
-     *
-     * @return store[] Caches currently in use
-     */
-    public function get_adhoc_caches_in_use()
-    {
-    }
-    /**
-     * Creates a cache config instance with the ability to write if required.
-     *
-     * @param bool $writer If set to true an instance that can update the configuration will be returned.
-     * @return config|config_writer
-     */
-    public function create_config_instance($writer = false)
-    {
-    }
-    /**
-     * Creates a definition instance or returns the existing one if it has already been created.
-     * @param string $component
-     * @param string $area
-     * @param string $unused This used to be data source aggregate - however that functionality has been removed and
-     *        this argument is now unused.
-     * @return definition
-     * @throws coding_exception If the definition cannot be found.
-     */
-    public function create_definition($component, $area, $unused = null)
-    {
-    }
-    /**
-     * Creates a dummy store object for use when a loader has no potential stores to use.
-     *
-     * @param definition $definition
-     * @return dummy_cachestore
-     */
-    protected function create_dummy_store(definition $definition)
-    {
-    }
-    /**
-     * Returns a lock instance ready for use.
-     *
-     * @param array $config
-     * @return lockable_cache_interface
-     */
-    public function create_lock_instance(array $config)
-    {
-    }
-    /**
-     * Returns the current state of the cache API.
-     *
-     * @return int
-     */
-    public function get_state()
-    {
-    }
-    /**
-     * Updates the state fo the cache API.
-     *
-     * @param int $state
-     * @return bool
-     */
-    public function set_state($state)
-    {
-    }
-    /**
-     * Informs the factory that the cache is currently updating itself.
-     *
-     * This forces the state to upgrading and can only be called once the cache is ready to use.
-     * Calling it ensure we don't try to reinstantite things when requesting cache definitions that don't exist yet.
-     */
-    public function updating_started()
-    {
-    }
-    /**
-     * Informs the factory that the upgrading has finished.
-     *
-     * This forces the state back to ready.
-     */
-    public function updating_finished()
-    {
-    }
-    /**
-     * Returns true if the cache API has been disabled.
-     *
-     * @return bool
-     */
-    public function is_disabled()
-    {
-    }
-    /**
-     * Returns true if the cache is currently initialising itself.
-     *
-     * This includes both initialisation and saving the cache config file as part of that initialisation.
-     *
-     * @return bool
-     */
-    public function is_initialising()
-    {
-    }
-    /**
-     * Returns true if the cache is currently updating itself.
-     *
-     * @return bool
-     */
-    public function is_updating()
-    {
-    }
-    /**
-     * Disables as much of the cache API as possible.
-     *
-     * All of the magic associated with the disabled cache is wrapped into this function.
-     * In switching out the factory for the disabled factory it gains full control over the initialisation of objects
-     * and can use all of the disabled alternatives.
-     * Simple!
-     *
-     * This function has been marked as protected so that it cannot be abused through the public API presently.
-     * Perhaps in the future we will allow this, however as per the build up to the first release containing
-     * MUC it was decided that this was just to risky and abusable.
-     */
-    protected static function disable()
-    {
-    }
-    /**
-     * Returns true if the cache stores have been disabled.
-     *
-     * @return bool
-     */
-    public function stores_disabled()
-    {
-    }
-    /**
-     * Disables cache stores.
-     *
-     * The cache API will continue to function however none of the actual stores will be used.
-     * Instead the dummy store will be provided for all cache requests.
-     * This is useful in situations where you cannot be sure any stores are working.
-     *
-     * In order to re-enable the cache you must call the cache factories static reset method:
-     * <code>
-     * // Disable the cache factory.
-     * factory::disable_stores();
-     * // Re-enable the cache factory by resetting it.
-     * factory::reset();
-     * </code>
-     */
-    public static function disable_stores()
-    {
-    }
-    /**
-     * Returns an instance of the current display_helper.
-     *
-     * @return administration_helper
-     */
-    public static function get_administration_display_helper(): administration_helper
-    {
-    }
-    /**
-     * Gets the config_writer to use when caching is disabled.
-     * This should only be called from disabled_factory.
-     *
-     * @return config_writer
-     */
-    public static function get_disabled_writer(): config_writer
+    class cache_factory extends \core_cache\factory
     {
     }
 }

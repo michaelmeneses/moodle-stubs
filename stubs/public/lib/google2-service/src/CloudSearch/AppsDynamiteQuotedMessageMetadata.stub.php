@@ -21,157 +21,166 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteQuotedMessageMetadata extends \Google\Collection
-{
-    protected $collection_key = 'uploadMetadata';
-    protected $annotationsType = AppsDynamiteAnnotation::class;
-    protected $annotationsDataType = 'array';
-    protected $appProfileType = AppsDynamiteSharedAppProfile::class;
-    protected $appProfileDataType = '';
-    /**
-     * @var string
-     */
-    public $botAttachmentState;
-    protected $creatorIdType = AppsDynamiteUserId::class;
-    protected $creatorIdDataType = '';
-    /**
-     * @var string
-     */
-    public $lastUpdateTimeWhenQuotedMicros;
-    protected $messageIdType = AppsDynamiteMessageId::class;
-    protected $messageIdDataType = '';
-    /**
-     * @var string
-     */
-    public $messageState;
-    protected $retentionSettingsType = AppsDynamiteSharedRetentionSettings::class;
-    protected $retentionSettingsDataType = '';
-    /**
-     * @var string
-     */
-    public $textBody;
-    protected $uploadMetadataType = AppsDynamiteUploadMetadata::class;
-    protected $uploadMetadataDataType = 'array';
-    /**
-     * @param AppsDynamiteAnnotation[]
-     */
-    public function setAnnotations($annotations)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteQuotedMessageMetadata extends \Google\Collection
     {
+        protected $collection_key = 'uploadMetadata';
+        protected $annotationsType = AppsDynamiteAnnotation::class;
+        protected $annotationsDataType = 'array';
+        protected $appProfileType = AppsDynamiteSharedAppProfile::class;
+        protected $appProfileDataType = '';
+        /**
+         * @var string
+         */
+        public $botAttachmentState;
+        protected $creatorIdType = AppsDynamiteUserId::class;
+        protected $creatorIdDataType = '';
+        /**
+         * @var string
+         */
+        public $lastUpdateTimeWhenQuotedMicros;
+        protected $messageIdType = AppsDynamiteMessageId::class;
+        protected $messageIdDataType = '';
+        /**
+         * @var string
+         */
+        public $messageState;
+        protected $retentionSettingsType = AppsDynamiteSharedRetentionSettings::class;
+        protected $retentionSettingsDataType = '';
+        /**
+         * @var string
+         */
+        public $textBody;
+        protected $uploadMetadataType = AppsDynamiteUploadMetadata::class;
+        protected $uploadMetadataDataType = 'array';
+        /**
+         * @param AppsDynamiteAnnotation[]
+         */
+        public function setAnnotations($annotations)
+        {
+        }
+        /**
+         * @return AppsDynamiteAnnotation[]
+         */
+        public function getAnnotations()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedAppProfile
+         */
+        public function setAppProfile(AppsDynamiteSharedAppProfile $appProfile)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedAppProfile
+         */
+        public function getAppProfile()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setBotAttachmentState($botAttachmentState)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBotAttachmentState()
+        {
+        }
+        /**
+         * @param AppsDynamiteUserId
+         */
+        public function setCreatorId(AppsDynamiteUserId $creatorId)
+        {
+        }
+        /**
+         * @return AppsDynamiteUserId
+         */
+        public function getCreatorId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLastUpdateTimeWhenQuotedMicros($lastUpdateTimeWhenQuotedMicros)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastUpdateTimeWhenQuotedMicros()
+        {
+        }
+        /**
+         * @param AppsDynamiteMessageId
+         */
+        public function setMessageId(AppsDynamiteMessageId $messageId)
+        {
+        }
+        /**
+         * @return AppsDynamiteMessageId
+         */
+        public function getMessageId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMessageState($messageState)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessageState()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedRetentionSettings
+         */
+        public function setRetentionSettings(AppsDynamiteSharedRetentionSettings $retentionSettings)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedRetentionSettings
+         */
+        public function getRetentionSettings()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTextBody($textBody)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTextBody()
+        {
+        }
+        /**
+         * @param AppsDynamiteUploadMetadata[]
+         */
+        public function setUploadMetadata($uploadMetadata)
+        {
+        }
+        /**
+         * @return AppsDynamiteUploadMetadata[]
+         */
+        public function getUploadMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteAnnotation[]
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteQuotedMessageMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotations()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedAppProfile
-     */
-    public function setAppProfile(AppsDynamiteSharedAppProfile $appProfile)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedAppProfile
-     */
-    public function getAppProfile()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setBotAttachmentState($botAttachmentState)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBotAttachmentState()
-    {
-    }
-    /**
-     * @param AppsDynamiteUserId
-     */
-    public function setCreatorId(AppsDynamiteUserId $creatorId)
-    {
-    }
-    /**
-     * @return AppsDynamiteUserId
-     */
-    public function getCreatorId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLastUpdateTimeWhenQuotedMicros($lastUpdateTimeWhenQuotedMicros)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastUpdateTimeWhenQuotedMicros()
-    {
-    }
-    /**
-     * @param AppsDynamiteMessageId
-     */
-    public function setMessageId(AppsDynamiteMessageId $messageId)
-    {
-    }
-    /**
-     * @return AppsDynamiteMessageId
-     */
-    public function getMessageId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMessageState($messageState)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessageState()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedRetentionSettings
-     */
-    public function setRetentionSettings(AppsDynamiteSharedRetentionSettings $retentionSettings)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedRetentionSettings
-     */
-    public function getRetentionSettings()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTextBody($textBody)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTextBody()
-    {
-    }
-    /**
-     * @param AppsDynamiteUploadMetadata[]
-     */
-    public function setUploadMetadata($uploadMetadata)
-    {
-    }
-    /**
-     * @return AppsDynamiteUploadMetadata[]
-     */
-    public function getUploadMetadata()
+    class Google_Service_CloudSearch_AppsDynamiteQuotedMessageMetadata extends \Google\Service\CloudSearch\AppsDynamiteQuotedMessageMetadata
     {
     }
 }

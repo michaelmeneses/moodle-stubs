@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudKMS;
-
-class EkmConfig extends \Google\Model
-{
-    /**
-     * Optional. Resource name of the default EkmConnection. Setting this field to
-     * the empty string removes the default.
-     *
-     * @var string
-     */
-    public $defaultEkmConnection;
-    /**
-     * Output only. The resource name for the EkmConfig in the format
-     * `projects/locations/ekmConfig`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. Resource name of the default EkmConnection. Setting this field to
-     * the empty string removes the default.
-     *
-     * @param string $defaultEkmConnection
-     */
-    public function setDefaultEkmConnection($defaultEkmConnection)
+namespace Google\Service\CloudKMS {
+    class EkmConfig extends \Google\Model
     {
+        /**
+         * Optional. Resource name of the default EkmConnection. Setting this field to
+         * the empty string removes the default.
+         *
+         * @var string
+         */
+        public $defaultEkmConnection;
+        /**
+         * Output only. The resource name for the EkmConfig in the format
+         * `projects/locations/ekmConfig`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. Resource name of the default EkmConnection. Setting this field to
+         * the empty string removes the default.
+         *
+         * @param string $defaultEkmConnection
+         */
+        public function setDefaultEkmConnection($defaultEkmConnection)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefaultEkmConnection()
+        {
+        }
+        /**
+         * Output only. The resource name for the EkmConfig in the format
+         * `projects/locations/ekmConfig`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudKMS\EkmConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefaultEkmConnection()
-    {
-    }
-    /**
-     * Output only. The resource name for the EkmConfig in the format
-     * `projects/locations/ekmConfig`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_CloudKMS_EkmConfig extends \Google\Service\CloudKMS\EkmConfig
     {
     }
 }

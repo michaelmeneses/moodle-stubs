@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1beta1PolicyTag extends \Google\Collection
-{
-    protected $collection_key = 'childPolicyTags';
-    public $childPolicyTags;
-    public $description;
-    public $displayName;
-    public $name;
-    public $parentPolicyTag;
-    public function setChildPolicyTags($childPolicyTags)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1beta1PolicyTag extends \Google\Collection
     {
+        protected $collection_key = 'childPolicyTags';
+        public $childPolicyTags;
+        public $description;
+        public $displayName;
+        public $name;
+        public $parentPolicyTag;
+        public function setChildPolicyTags($childPolicyTags)
+        {
+        }
+        public function getChildPolicyTags()
+        {
+        }
+        public function setDescription($description)
+        {
+        }
+        public function getDescription()
+        {
+        }
+        public function setDisplayName($displayName)
+        {
+        }
+        public function getDisplayName()
+        {
+        }
+        public function setName($name)
+        {
+        }
+        public function getName()
+        {
+        }
+        public function setParentPolicyTag($parentPolicyTag)
+        {
+        }
+        public function getParentPolicyTag()
+        {
+        }
     }
-    public function getChildPolicyTags()
-    {
-    }
-    public function setDescription($description)
-    {
-    }
-    public function getDescription()
-    {
-    }
-    public function setDisplayName($displayName)
-    {
-    }
-    public function getDisplayName()
-    {
-    }
-    public function setName($name)
-    {
-    }
-    public function getName()
-    {
-    }
-    public function setParentPolicyTag($parentPolicyTag)
-    {
-    }
-    public function getParentPolicyTag()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1PolicyTag registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1beta1PolicyTag extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1PolicyTag
     {
     }
 }

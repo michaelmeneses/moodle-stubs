@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1IssueMatchData extends \Google\Model
-{
-    protected $issueAssignmentType = GoogleCloudContactcenterinsightsV1IssueAssignment::class;
-    protected $issueAssignmentDataType = '';
-    /**
-     * Information about the issue's assignment.
-     *
-     * @param GoogleCloudContactcenterinsightsV1IssueAssignment $issueAssignment
-     */
-    public function setIssueAssignment(GoogleCloudContactcenterinsightsV1IssueAssignment $issueAssignment)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1IssueMatchData extends \Google\Model
     {
+        protected $issueAssignmentType = GoogleCloudContactcenterinsightsV1IssueAssignment::class;
+        protected $issueAssignmentDataType = '';
+        /**
+         * Information about the issue's assignment.
+         *
+         * @param GoogleCloudContactcenterinsightsV1IssueAssignment $issueAssignment
+         */
+        public function setIssueAssignment(GoogleCloudContactcenterinsightsV1IssueAssignment $issueAssignment)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1IssueAssignment
+         */
+        public function getIssueAssignment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContactcenterinsightsV1IssueAssignment
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1IssueMatchData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIssueAssignment()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1IssueMatchData extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1IssueMatchData
     {
     }
 }

@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CivicInfo;
-
-class ElectionsQueryResponse extends \Google\Collection
-{
-    protected $collection_key = 'elections';
-    protected $electionsType = Election::class;
-    protected $electionsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $kind;
-    /**
-     * @param Election[]
-     */
-    public function setElections($elections)
+namespace Google\Service\CivicInfo {
+    class ElectionsQueryResponse extends \Google\Collection
     {
+        protected $collection_key = 'elections';
+        protected $electionsType = Election::class;
+        protected $electionsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $kind;
+        /**
+         * @param Election[]
+         */
+        public function setElections($elections)
+        {
+        }
+        /**
+         * @return Election[]
+         */
+        public function getElections()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Election[]
+     * Runtime class alias of \Google\Service\CivicInfo\ElectionsQueryResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getElections()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_CivicInfo_ElectionsQueryResponse extends \Google\Service\CivicInfo\ElectionsQueryResponse
     {
     }
 }

@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecommendationsAI;
-
-class GoogleCloudRecommendationengineV1alphaTuningResponse extends \Google\Model
-{
+namespace Google\Service\RecommendationsAI {
+    class GoogleCloudRecommendationengineV1alphaTuningResponse extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1alphaTuningResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_RecommendationsAI_GoogleCloudRecommendationengineV1alphaTuningResponse extends \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1alphaTuningResponse
+    {
+    }
 }

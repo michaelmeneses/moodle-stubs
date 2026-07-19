@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class RelatedResources extends \Google\Collection
-{
-    protected $collection_key = 'relatedResources';
-    protected $relatedResourcesType = RelatedResource::class;
-    protected $relatedResourcesDataType = 'array';
-    /**
-     * The detailed related resources of the primary resource.
-     *
-     * @param RelatedResource[] $relatedResources
-     */
-    public function setRelatedResources($relatedResources)
+namespace Google\Service\CloudAsset {
+    class RelatedResources extends \Google\Collection
     {
+        protected $collection_key = 'relatedResources';
+        protected $relatedResourcesType = RelatedResource::class;
+        protected $relatedResourcesDataType = 'array';
+        /**
+         * The detailed related resources of the primary resource.
+         *
+         * @param RelatedResource[] $relatedResources
+         */
+        public function setRelatedResources($relatedResources)
+        {
+        }
+        /**
+         * @return RelatedResource[]
+         */
+        public function getRelatedResources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RelatedResource[]
+     * Runtime class alias of \Google\Service\CloudAsset\RelatedResources registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRelatedResources()
+    class Google_Service_CloudAsset_RelatedResources extends \Google\Service\CloudAsset\RelatedResources
     {
     }
 }

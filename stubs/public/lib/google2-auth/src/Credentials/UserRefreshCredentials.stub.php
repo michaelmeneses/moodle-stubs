@@ -23,6 +23,11 @@
  */
 namespace Google\Auth\Credentials;
 
+use Google\Auth\CredentialsLoader;
+use Google\Auth\GetQuotaProjectInterface;
+use Google\Auth\OAuth2;
+use InvalidArgumentException;
+use LogicException;
 /**
  * Authenticates requests using User Refresh credentials.
  *

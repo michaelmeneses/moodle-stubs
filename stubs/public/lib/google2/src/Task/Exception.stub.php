@@ -23,6 +23,7 @@
  */
 namespace Google\Task;
 
+use Google\Exception as GoogleException;
 class Exception extends GoogleException
 {
 }

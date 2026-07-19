@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Playcustomapp;
-
-class Organization extends \Google\Model
-{
-    /**
-     * Required. ID of the organization.
-     *
-     * @var string
-     */
-    public $organizationId;
-    /**
-     * Optional. A human-readable name of the organization, to help recognize the
-     * organization.
-     *
-     * @var string
-     */
-    public $organizationName;
-    /**
-     * Required. ID of the organization.
-     *
-     * @param string $organizationId
-     */
-    public function setOrganizationId($organizationId)
+namespace Google\Service\Playcustomapp {
+    class Organization extends \Google\Model
     {
+        /**
+         * Required. ID of the organization.
+         *
+         * @var string
+         */
+        public $organizationId;
+        /**
+         * Optional. A human-readable name of the organization, to help recognize the
+         * organization.
+         *
+         * @var string
+         */
+        public $organizationName;
+        /**
+         * Required. ID of the organization.
+         *
+         * @param string $organizationId
+         */
+        public function setOrganizationId($organizationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrganizationId()
+        {
+        }
+        /**
+         * Optional. A human-readable name of the organization, to help recognize the
+         * organization.
+         *
+         * @param string $organizationName
+         */
+        public function setOrganizationName($organizationName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrganizationName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Playcustomapp\Organization registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOrganizationId()
-    {
-    }
-    /**
-     * Optional. A human-readable name of the organization, to help recognize the
-     * organization.
-     *
-     * @param string $organizationName
-     */
-    public function setOrganizationName($organizationName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrganizationName()
+    class Google_Service_Playcustomapp_Organization extends \Google\Service\Playcustomapp\Organization
     {
     }
 }

@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV3alpha1ReloadDocumentOperationMetadata extends \Google\Model
-{
-    protected $genericMetadataType = GoogleCloudDialogflowV3alpha1GenericKnowledgeOperationMetadata::class;
-    protected $genericMetadataDataType = '';
-    /**
-     * @param GoogleCloudDialogflowV3alpha1GenericKnowledgeOperationMetadata
-     */
-    public function setGenericMetadata(GoogleCloudDialogflowV3alpha1GenericKnowledgeOperationMetadata $genericMetadata)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV3alpha1ReloadDocumentOperationMetadata extends \Google\Model
     {
+        protected $genericMetadataType = GoogleCloudDialogflowV3alpha1GenericKnowledgeOperationMetadata::class;
+        protected $genericMetadataDataType = '';
+        /**
+         * @param GoogleCloudDialogflowV3alpha1GenericKnowledgeOperationMetadata
+         */
+        public function setGenericMetadata(GoogleCloudDialogflowV3alpha1GenericKnowledgeOperationMetadata $genericMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV3alpha1GenericKnowledgeOperationMetadata
+         */
+        public function getGenericMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowV3alpha1GenericKnowledgeOperationMetadata
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV3alpha1ReloadDocumentOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGenericMetadata()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV3alpha1ReloadDocumentOperationMetadata extends \Google\Service\Dialogflow\GoogleCloudDialogflowV3alpha1ReloadDocumentOperationMetadata
     {
     }
 }

@@ -21,93 +21,102 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2TransformationLocation extends \Google\Model
-{
-    /**
-     * Unused.
-     */
-    public const CONTAINER_TYPE_TRANSFORM_UNKNOWN_CONTAINER = 'TRANSFORM_UNKNOWN_CONTAINER';
-    /**
-     * Body of a file.
-     */
-    public const CONTAINER_TYPE_TRANSFORM_BODY = 'TRANSFORM_BODY';
-    /**
-     * Metadata for a file.
-     */
-    public const CONTAINER_TYPE_TRANSFORM_METADATA = 'TRANSFORM_METADATA';
-    /**
-     * A table.
-     */
-    public const CONTAINER_TYPE_TRANSFORM_TABLE = 'TRANSFORM_TABLE';
-    /**
-     * Information about the functionality of the container where this finding
-     * occurred, if available.
-     *
-     * @var string
-     */
-    public $containerType;
-    /**
-     * For infotype transformations, link to the corresponding findings ID so that
-     * location information does not need to be duplicated. Each findings ID
-     * correlates to an entry in the findings output table, this table only gets
-     * created when users specify to save findings (add the save findings action
-     * to the request).
-     *
-     * @var string
-     */
-    public $findingId;
-    protected $recordTransformationType = GooglePrivacyDlpV2RecordTransformation::class;
-    protected $recordTransformationDataType = '';
-    /**
-     * Information about the functionality of the container where this finding
-     * occurred, if available.
-     *
-     * Accepted values: TRANSFORM_UNKNOWN_CONTAINER, TRANSFORM_BODY,
-     * TRANSFORM_METADATA, TRANSFORM_TABLE
-     *
-     * @param self::CONTAINER_TYPE_* $containerType
-     */
-    public function setContainerType($containerType)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2TransformationLocation extends \Google\Model
     {
+        /**
+         * Unused.
+         */
+        public const CONTAINER_TYPE_TRANSFORM_UNKNOWN_CONTAINER = 'TRANSFORM_UNKNOWN_CONTAINER';
+        /**
+         * Body of a file.
+         */
+        public const CONTAINER_TYPE_TRANSFORM_BODY = 'TRANSFORM_BODY';
+        /**
+         * Metadata for a file.
+         */
+        public const CONTAINER_TYPE_TRANSFORM_METADATA = 'TRANSFORM_METADATA';
+        /**
+         * A table.
+         */
+        public const CONTAINER_TYPE_TRANSFORM_TABLE = 'TRANSFORM_TABLE';
+        /**
+         * Information about the functionality of the container where this finding
+         * occurred, if available.
+         *
+         * @var string
+         */
+        public $containerType;
+        /**
+         * For infotype transformations, link to the corresponding findings ID so that
+         * location information does not need to be duplicated. Each findings ID
+         * correlates to an entry in the findings output table, this table only gets
+         * created when users specify to save findings (add the save findings action
+         * to the request).
+         *
+         * @var string
+         */
+        public $findingId;
+        protected $recordTransformationType = GooglePrivacyDlpV2RecordTransformation::class;
+        protected $recordTransformationDataType = '';
+        /**
+         * Information about the functionality of the container where this finding
+         * occurred, if available.
+         *
+         * Accepted values: TRANSFORM_UNKNOWN_CONTAINER, TRANSFORM_BODY,
+         * TRANSFORM_METADATA, TRANSFORM_TABLE
+         *
+         * @param self::CONTAINER_TYPE_* $containerType
+         */
+        public function setContainerType($containerType)
+        {
+        }
+        /**
+         * @return self::CONTAINER_TYPE_*
+         */
+        public function getContainerType()
+        {
+        }
+        /**
+         * For infotype transformations, link to the corresponding findings ID so that
+         * location information does not need to be duplicated. Each findings ID
+         * correlates to an entry in the findings output table, this table only gets
+         * created when users specify to save findings (add the save findings action
+         * to the request).
+         *
+         * @param string $findingId
+         */
+        public function setFindingId($findingId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFindingId()
+        {
+        }
+        /**
+         * For record transformations, provide a field and container information.
+         *
+         * @param GooglePrivacyDlpV2RecordTransformation $recordTransformation
+         */
+        public function setRecordTransformation(GooglePrivacyDlpV2RecordTransformation $recordTransformation)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2RecordTransformation
+         */
+        public function getRecordTransformation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CONTAINER_TYPE_*
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2TransformationLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContainerType()
-    {
-    }
-    /**
-     * For infotype transformations, link to the corresponding findings ID so that
-     * location information does not need to be duplicated. Each findings ID
-     * correlates to an entry in the findings output table, this table only gets
-     * created when users specify to save findings (add the save findings action
-     * to the request).
-     *
-     * @param string $findingId
-     */
-    public function setFindingId($findingId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFindingId()
-    {
-    }
-    /**
-     * For record transformations, provide a field and container information.
-     *
-     * @param GooglePrivacyDlpV2RecordTransformation $recordTransformation
-     */
-    public function setRecordTransformation(GooglePrivacyDlpV2RecordTransformation $recordTransformation)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2RecordTransformation
-     */
-    public function getRecordTransformation()
+    class Google_Service_DLP_GooglePrivacyDlpV2TransformationLocation extends \Google\Service\DLP\GooglePrivacyDlpV2TransformationLocation
     {
     }
 }

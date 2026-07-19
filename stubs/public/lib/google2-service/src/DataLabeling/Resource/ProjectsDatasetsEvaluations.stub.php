@@ -21,29 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling\Resource;
-
-/**
- * The "evaluations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $datalabelingService = new Google\Service\DataLabeling(...);
- *   $evaluations = $datalabelingService->projects_datasets_evaluations;
- *  </code>
- */
-class ProjectsDatasetsEvaluations extends \Google\Service\Resource
-{
+namespace Google\Service\DataLabeling\Resource {
+    use Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1Evaluation;
     /**
-     * Gets an evaluation by resource name (to search, use
-     * projects.evaluations.search). (evaluations.get)
-     *
-     * @param string $name Required. Name of the evaluation. Format:
-     * "projects/{project_id}/datasets/ {dataset_id}/evaluations/{evaluation_id}'
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudDatalabelingV1beta1Evaluation
-     * @throws \Google\Service\Exception
+     * The "evaluations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $datalabelingService = new Google\Service\DataLabeling(...);
+     *   $evaluations = $datalabelingService->projects_datasets_evaluations;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsDatasetsEvaluations extends \Google\Service\Resource
+    {
+        /**
+         * Gets an evaluation by resource name (to search, use
+         * projects.evaluations.search). (evaluations.get)
+         *
+         * @param string $name Required. Name of the evaluation. Format:
+         * "projects/{project_id}/datasets/ {dataset_id}/evaluations/{evaluation_id}'
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudDatalabelingV1beta1Evaluation
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DataLabeling\Resource\ProjectsDatasetsEvaluations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DataLabeling_Resource_ProjectsDatasetsEvaluations extends \Google\Service\DataLabeling\Resource\ProjectsDatasetsEvaluations
     {
     }
 }

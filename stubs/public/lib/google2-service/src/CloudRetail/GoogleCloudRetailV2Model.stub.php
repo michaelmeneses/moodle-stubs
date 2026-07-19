@@ -21,475 +21,484 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2Model extends \Google\Collection
-{
-    /**
-     * Unspecified default value, should never be explicitly set.
-     */
-    public const DATA_STATE_DATA_STATE_UNSPECIFIED = 'DATA_STATE_UNSPECIFIED';
-    /**
-     * The model has sufficient training data.
-     */
-    public const DATA_STATE_DATA_OK = 'DATA_OK';
-    /**
-     * The model does not have sufficient training data. Error messages can be
-     * queried via Stackdriver.
-     */
-    public const DATA_STATE_DATA_ERROR = 'DATA_ERROR';
-    /**
-     * Value used when unset. In this case, server behavior defaults to
-     * RECOMMENDATIONS_FILTERING_DISABLED.
-     */
-    public const FILTERING_OPTION_RECOMMENDATIONS_FILTERING_OPTION_UNSPECIFIED = 'RECOMMENDATIONS_FILTERING_OPTION_UNSPECIFIED';
-    /**
-     * Recommendation filtering is disabled.
-     */
-    public const FILTERING_OPTION_RECOMMENDATIONS_FILTERING_DISABLED = 'RECOMMENDATIONS_FILTERING_DISABLED';
-    /**
-     * Recommendation filtering is enabled.
-     */
-    public const FILTERING_OPTION_RECOMMENDATIONS_FILTERING_ENABLED = 'RECOMMENDATIONS_FILTERING_ENABLED';
-    /**
-     * Unspecified default value, should never be explicitly set.
-     */
-    public const PERIODIC_TUNING_STATE_PERIODIC_TUNING_STATE_UNSPECIFIED = 'PERIODIC_TUNING_STATE_UNSPECIFIED';
-    /**
-     * The model has periodic tuning disabled. Tuning can be reenabled by calling
-     * the `EnableModelPeriodicTuning` method or by calling the `TuneModel`
-     * method.
-     */
-    public const PERIODIC_TUNING_STATE_PERIODIC_TUNING_DISABLED = 'PERIODIC_TUNING_DISABLED';
-    /**
-     * The model cannot be tuned with periodic tuning OR the `TuneModel` method.
-     * Hide the options in customer UI and reject any requests through the backend
-     * self serve API.
-     */
-    public const PERIODIC_TUNING_STATE_ALL_TUNING_DISABLED = 'ALL_TUNING_DISABLED';
-    /**
-     * The model has periodic tuning enabled. Tuning can be disabled by calling
-     * the `DisableModelPeriodicTuning` method.
-     */
-    public const PERIODIC_TUNING_STATE_PERIODIC_TUNING_ENABLED = 'PERIODIC_TUNING_ENABLED';
-    /**
-     * Unspecified serving state.
-     */
-    public const SERVING_STATE_SERVING_STATE_UNSPECIFIED = 'SERVING_STATE_UNSPECIFIED';
-    /**
-     * The model is not serving.
-     */
-    public const SERVING_STATE_INACTIVE = 'INACTIVE';
-    /**
-     * The model is serving and can be queried.
-     */
-    public const SERVING_STATE_ACTIVE = 'ACTIVE';
-    /**
-     * The model is trained on tuned hyperparameters and can be queried.
-     */
-    public const SERVING_STATE_TUNED = 'TUNED';
-    /**
-     * Unspecified training state.
-     */
-    public const TRAINING_STATE_TRAINING_STATE_UNSPECIFIED = 'TRAINING_STATE_UNSPECIFIED';
-    /**
-     * The model training is paused.
-     */
-    public const TRAINING_STATE_PAUSED = 'PAUSED';
-    /**
-     * The model is training.
-     */
-    public const TRAINING_STATE_TRAINING = 'TRAINING';
-    protected $collection_key = 'servingConfigLists';
-    /**
-     * Output only. Timestamp the Recommendation Model was created at.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. The state of data requirements for this model: `DATA_OK` and
-     * `DATA_ERROR`. Recommendation model cannot be trained if the data is in
-     * `DATA_ERROR` state. Recommendation model can have `DATA_ERROR` state even
-     * if serving state is `ACTIVE`: models were trained successfully before, but
-     * cannot be refreshed because model no longer has sufficient data for
-     * training.
-     *
-     * @var string
-     */
-    public $dataState;
-    /**
-     * Required. The display name of the model. Should be human readable, used to
-     * display Recommendation Models in the Retail Cloud Console Dashboard. UTF-8
-     * encoded string with limit of 1024 characters.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Optional. If `RECOMMENDATIONS_FILTERING_ENABLED`, recommendation filtering
-     * by attributes is enabled for the model.
-     *
-     * @var string
-     */
-    public $filteringOption;
-    /**
-     * Output only. The timestamp when the latest successful tune finished.
-     *
-     * @var string
-     */
-    public $lastTuneTime;
-    protected $modelFeaturesConfigType = GoogleCloudRetailV2ModelModelFeaturesConfig::class;
-    protected $modelFeaturesConfigDataType = '';
-    /**
-     * Required. The fully qualified resource name of the model. Format: `projects
-     * /{project_number}/locations/{location_id}/catalogs/{catalog_id}/models/{mod
-     * el_id}` catalog_id has char limit of 50. recommendation_model_id has char
-     * limit of 40.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. The optimization objective e.g. `cvr`. Currently supported
-     * values: `ctr`, `cvr`, `revenue-per-order`. If not specified, we choose
-     * default based on model type. Default depends on type of recommendation:
-     * `recommended-for-you` => `ctr` `others-you-may-like` => `ctr` `frequently-
-     * bought-together` => `revenue_per_order` This field together with
-     * optimization_objective describe model metadata to use to control model
-     * training and serving. See https://cloud.google.com/retail/docs/models for
-     * more details on what the model metadata control and which combination of
-     * parameters are valid. For invalid combinations of parameters (e.g. type =
-     * `frequently-bought-together` and optimization_objective = `ctr`), you
-     * receive an error 400 if you try to create/update a recommendation with this
-     * set of knobs.
-     *
-     * @var string
-     */
-    public $optimizationObjective;
-    /**
-     * Optional. The state of periodic tuning. The period we use is 3 months - to
-     * do a one-off tune earlier use the `TuneModel` method. Default value is
-     * `PERIODIC_TUNING_ENABLED`.
-     *
-     * @var string
-     */
-    public $periodicTuningState;
-    protected $servingConfigListsType = GoogleCloudRetailV2ModelServingConfigList::class;
-    protected $servingConfigListsDataType = 'array';
-    /**
-     * Output only. The serving state of the model: `ACTIVE`, `NOT_ACTIVE`.
-     *
-     * @var string
-     */
-    public $servingState;
-    /**
-     * Optional. The training state that the model is in (e.g. `TRAINING` or
-     * `PAUSED`). Since part of the cost of running the service is frequency of
-     * training - this can be used to determine when to train model in order to
-     * control cost. If not specified: the default value for `CreateModel` method
-     * is `TRAINING`. The default value for `UpdateModel` method is to keep the
-     * state the same as before.
-     *
-     * @var string
-     */
-    public $trainingState;
-    /**
-     * Output only. The tune operation associated with the model. Can be used to
-     * determine if there is an ongoing tune for this recommendation. Empty field
-     * implies no tune is goig on.
-     *
-     * @var string
-     */
-    public $tuningOperation;
-    /**
-     * Required. The type of model e.g. `home-page`. Currently supported values:
-     * `recommended-for-you`, `others-you-may-like`, `frequently-bought-together`,
-     * `page-optimization`, `similar-items`, `buy-it-again`, `on-sale-items`, and
-     * `recently-viewed`(readonly value). This field together with
-     * optimization_objective describe model metadata to use to control model
-     * training and serving. See https://cloud.google.com/retail/docs/models for
-     * more details on what the model metadata control and which combination of
-     * parameters are valid. For invalid combinations of parameters (e.g. type =
-     * `frequently-bought-together` and optimization_objective = `ctr`), you
-     * receive an error 400 if you try to create/update a recommendation with this
-     * set of knobs.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Output only. Timestamp the Recommendation Model was last updated. E.g. if a
-     * Recommendation Model was paused - this would be the time the pause was
-     * initiated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. Timestamp the Recommendation Model was created at.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2Model extends \Google\Collection
     {
+        /**
+         * Unspecified default value, should never be explicitly set.
+         */
+        public const DATA_STATE_DATA_STATE_UNSPECIFIED = 'DATA_STATE_UNSPECIFIED';
+        /**
+         * The model has sufficient training data.
+         */
+        public const DATA_STATE_DATA_OK = 'DATA_OK';
+        /**
+         * The model does not have sufficient training data. Error messages can be
+         * queried via Stackdriver.
+         */
+        public const DATA_STATE_DATA_ERROR = 'DATA_ERROR';
+        /**
+         * Value used when unset. In this case, server behavior defaults to
+         * RECOMMENDATIONS_FILTERING_DISABLED.
+         */
+        public const FILTERING_OPTION_RECOMMENDATIONS_FILTERING_OPTION_UNSPECIFIED = 'RECOMMENDATIONS_FILTERING_OPTION_UNSPECIFIED';
+        /**
+         * Recommendation filtering is disabled.
+         */
+        public const FILTERING_OPTION_RECOMMENDATIONS_FILTERING_DISABLED = 'RECOMMENDATIONS_FILTERING_DISABLED';
+        /**
+         * Recommendation filtering is enabled.
+         */
+        public const FILTERING_OPTION_RECOMMENDATIONS_FILTERING_ENABLED = 'RECOMMENDATIONS_FILTERING_ENABLED';
+        /**
+         * Unspecified default value, should never be explicitly set.
+         */
+        public const PERIODIC_TUNING_STATE_PERIODIC_TUNING_STATE_UNSPECIFIED = 'PERIODIC_TUNING_STATE_UNSPECIFIED';
+        /**
+         * The model has periodic tuning disabled. Tuning can be reenabled by calling
+         * the `EnableModelPeriodicTuning` method or by calling the `TuneModel`
+         * method.
+         */
+        public const PERIODIC_TUNING_STATE_PERIODIC_TUNING_DISABLED = 'PERIODIC_TUNING_DISABLED';
+        /**
+         * The model cannot be tuned with periodic tuning OR the `TuneModel` method.
+         * Hide the options in customer UI and reject any requests through the backend
+         * self serve API.
+         */
+        public const PERIODIC_TUNING_STATE_ALL_TUNING_DISABLED = 'ALL_TUNING_DISABLED';
+        /**
+         * The model has periodic tuning enabled. Tuning can be disabled by calling
+         * the `DisableModelPeriodicTuning` method.
+         */
+        public const PERIODIC_TUNING_STATE_PERIODIC_TUNING_ENABLED = 'PERIODIC_TUNING_ENABLED';
+        /**
+         * Unspecified serving state.
+         */
+        public const SERVING_STATE_SERVING_STATE_UNSPECIFIED = 'SERVING_STATE_UNSPECIFIED';
+        /**
+         * The model is not serving.
+         */
+        public const SERVING_STATE_INACTIVE = 'INACTIVE';
+        /**
+         * The model is serving and can be queried.
+         */
+        public const SERVING_STATE_ACTIVE = 'ACTIVE';
+        /**
+         * The model is trained on tuned hyperparameters and can be queried.
+         */
+        public const SERVING_STATE_TUNED = 'TUNED';
+        /**
+         * Unspecified training state.
+         */
+        public const TRAINING_STATE_TRAINING_STATE_UNSPECIFIED = 'TRAINING_STATE_UNSPECIFIED';
+        /**
+         * The model training is paused.
+         */
+        public const TRAINING_STATE_PAUSED = 'PAUSED';
+        /**
+         * The model is training.
+         */
+        public const TRAINING_STATE_TRAINING = 'TRAINING';
+        protected $collection_key = 'servingConfigLists';
+        /**
+         * Output only. Timestamp the Recommendation Model was created at.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. The state of data requirements for this model: `DATA_OK` and
+         * `DATA_ERROR`. Recommendation model cannot be trained if the data is in
+         * `DATA_ERROR` state. Recommendation model can have `DATA_ERROR` state even
+         * if serving state is `ACTIVE`: models were trained successfully before, but
+         * cannot be refreshed because model no longer has sufficient data for
+         * training.
+         *
+         * @var string
+         */
+        public $dataState;
+        /**
+         * Required. The display name of the model. Should be human readable, used to
+         * display Recommendation Models in the Retail Cloud Console Dashboard. UTF-8
+         * encoded string with limit of 1024 characters.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Optional. If `RECOMMENDATIONS_FILTERING_ENABLED`, recommendation filtering
+         * by attributes is enabled for the model.
+         *
+         * @var string
+         */
+        public $filteringOption;
+        /**
+         * Output only. The timestamp when the latest successful tune finished.
+         *
+         * @var string
+         */
+        public $lastTuneTime;
+        protected $modelFeaturesConfigType = GoogleCloudRetailV2ModelModelFeaturesConfig::class;
+        protected $modelFeaturesConfigDataType = '';
+        /**
+         * Required. The fully qualified resource name of the model. Format: `projects
+         * /{project_number}/locations/{location_id}/catalogs/{catalog_id}/models/{mod
+         * el_id}` catalog_id has char limit of 50. recommendation_model_id has char
+         * limit of 40.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. The optimization objective e.g. `cvr`. Currently supported
+         * values: `ctr`, `cvr`, `revenue-per-order`. If not specified, we choose
+         * default based on model type. Default depends on type of recommendation:
+         * `recommended-for-you` => `ctr` `others-you-may-like` => `ctr` `frequently-
+         * bought-together` => `revenue_per_order` This field together with
+         * optimization_objective describe model metadata to use to control model
+         * training and serving. See https://cloud.google.com/retail/docs/models for
+         * more details on what the model metadata control and which combination of
+         * parameters are valid. For invalid combinations of parameters (e.g. type =
+         * `frequently-bought-together` and optimization_objective = `ctr`), you
+         * receive an error 400 if you try to create/update a recommendation with this
+         * set of knobs.
+         *
+         * @var string
+         */
+        public $optimizationObjective;
+        /**
+         * Optional. The state of periodic tuning. The period we use is 3 months - to
+         * do a one-off tune earlier use the `TuneModel` method. Default value is
+         * `PERIODIC_TUNING_ENABLED`.
+         *
+         * @var string
+         */
+        public $periodicTuningState;
+        protected $servingConfigListsType = GoogleCloudRetailV2ModelServingConfigList::class;
+        protected $servingConfigListsDataType = 'array';
+        /**
+         * Output only. The serving state of the model: `ACTIVE`, `NOT_ACTIVE`.
+         *
+         * @var string
+         */
+        public $servingState;
+        /**
+         * Optional. The training state that the model is in (e.g. `TRAINING` or
+         * `PAUSED`). Since part of the cost of running the service is frequency of
+         * training - this can be used to determine when to train model in order to
+         * control cost. If not specified: the default value for `CreateModel` method
+         * is `TRAINING`. The default value for `UpdateModel` method is to keep the
+         * state the same as before.
+         *
+         * @var string
+         */
+        public $trainingState;
+        /**
+         * Output only. The tune operation associated with the model. Can be used to
+         * determine if there is an ongoing tune for this recommendation. Empty field
+         * implies no tune is goig on.
+         *
+         * @var string
+         */
+        public $tuningOperation;
+        /**
+         * Required. The type of model e.g. `home-page`. Currently supported values:
+         * `recommended-for-you`, `others-you-may-like`, `frequently-bought-together`,
+         * `page-optimization`, `similar-items`, `buy-it-again`, `on-sale-items`, and
+         * `recently-viewed`(readonly value). This field together with
+         * optimization_objective describe model metadata to use to control model
+         * training and serving. See https://cloud.google.com/retail/docs/models for
+         * more details on what the model metadata control and which combination of
+         * parameters are valid. For invalid combinations of parameters (e.g. type =
+         * `frequently-bought-together` and optimization_objective = `ctr`), you
+         * receive an error 400 if you try to create/update a recommendation with this
+         * set of knobs.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Output only. Timestamp the Recommendation Model was last updated. E.g. if a
+         * Recommendation Model was paused - this would be the time the pause was
+         * initiated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. Timestamp the Recommendation Model was created at.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. The state of data requirements for this model: `DATA_OK` and
+         * `DATA_ERROR`. Recommendation model cannot be trained if the data is in
+         * `DATA_ERROR` state. Recommendation model can have `DATA_ERROR` state even
+         * if serving state is `ACTIVE`: models were trained successfully before, but
+         * cannot be refreshed because model no longer has sufficient data for
+         * training.
+         *
+         * Accepted values: DATA_STATE_UNSPECIFIED, DATA_OK, DATA_ERROR
+         *
+         * @param self::DATA_STATE_* $dataState
+         */
+        public function setDataState($dataState)
+        {
+        }
+        /**
+         * @return self::DATA_STATE_*
+         */
+        public function getDataState()
+        {
+        }
+        /**
+         * Required. The display name of the model. Should be human readable, used to
+         * display Recommendation Models in the Retail Cloud Console Dashboard. UTF-8
+         * encoded string with limit of 1024 characters.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Optional. If `RECOMMENDATIONS_FILTERING_ENABLED`, recommendation filtering
+         * by attributes is enabled for the model.
+         *
+         * Accepted values: RECOMMENDATIONS_FILTERING_OPTION_UNSPECIFIED,
+         * RECOMMENDATIONS_FILTERING_DISABLED, RECOMMENDATIONS_FILTERING_ENABLED
+         *
+         * @param self::FILTERING_OPTION_* $filteringOption
+         */
+        public function setFilteringOption($filteringOption)
+        {
+        }
+        /**
+         * @return self::FILTERING_OPTION_*
+         */
+        public function getFilteringOption()
+        {
+        }
+        /**
+         * Output only. The timestamp when the latest successful tune finished.
+         *
+         * @param string $lastTuneTime
+         */
+        public function setLastTuneTime($lastTuneTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastTuneTime()
+        {
+        }
+        /**
+         * Optional. Additional model features config.
+         *
+         * @param GoogleCloudRetailV2ModelModelFeaturesConfig $modelFeaturesConfig
+         */
+        public function setModelFeaturesConfig(GoogleCloudRetailV2ModelModelFeaturesConfig $modelFeaturesConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2ModelModelFeaturesConfig
+         */
+        public function getModelFeaturesConfig()
+        {
+        }
+        /**
+         * Required. The fully qualified resource name of the model. Format: `projects
+         * /{project_number}/locations/{location_id}/catalogs/{catalog_id}/models/{mod
+         * el_id}` catalog_id has char limit of 50. recommendation_model_id has char
+         * limit of 40.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. The optimization objective e.g. `cvr`. Currently supported
+         * values: `ctr`, `cvr`, `revenue-per-order`. If not specified, we choose
+         * default based on model type. Default depends on type of recommendation:
+         * `recommended-for-you` => `ctr` `others-you-may-like` => `ctr` `frequently-
+         * bought-together` => `revenue_per_order` This field together with
+         * optimization_objective describe model metadata to use to control model
+         * training and serving. See https://cloud.google.com/retail/docs/models for
+         * more details on what the model metadata control and which combination of
+         * parameters are valid. For invalid combinations of parameters (e.g. type =
+         * `frequently-bought-together` and optimization_objective = `ctr`), you
+         * receive an error 400 if you try to create/update a recommendation with this
+         * set of knobs.
+         *
+         * @param string $optimizationObjective
+         */
+        public function setOptimizationObjective($optimizationObjective)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOptimizationObjective()
+        {
+        }
+        /**
+         * Optional. The state of periodic tuning. The period we use is 3 months - to
+         * do a one-off tune earlier use the `TuneModel` method. Default value is
+         * `PERIODIC_TUNING_ENABLED`.
+         *
+         * Accepted values: PERIODIC_TUNING_STATE_UNSPECIFIED,
+         * PERIODIC_TUNING_DISABLED, ALL_TUNING_DISABLED, PERIODIC_TUNING_ENABLED
+         *
+         * @param self::PERIODIC_TUNING_STATE_* $periodicTuningState
+         */
+        public function setPeriodicTuningState($periodicTuningState)
+        {
+        }
+        /**
+         * @return self::PERIODIC_TUNING_STATE_*
+         */
+        public function getPeriodicTuningState()
+        {
+        }
+        /**
+         * Output only. The list of valid serving configs associated with the
+         * PageOptimizationConfig.
+         *
+         * @param GoogleCloudRetailV2ModelServingConfigList[] $servingConfigLists
+         */
+        public function setServingConfigLists($servingConfigLists)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2ModelServingConfigList[]
+         */
+        public function getServingConfigLists()
+        {
+        }
+        /**
+         * Output only. The serving state of the model: `ACTIVE`, `NOT_ACTIVE`.
+         *
+         * Accepted values: SERVING_STATE_UNSPECIFIED, INACTIVE, ACTIVE, TUNED
+         *
+         * @param self::SERVING_STATE_* $servingState
+         */
+        public function setServingState($servingState)
+        {
+        }
+        /**
+         * @return self::SERVING_STATE_*
+         */
+        public function getServingState()
+        {
+        }
+        /**
+         * Optional. The training state that the model is in (e.g. `TRAINING` or
+         * `PAUSED`). Since part of the cost of running the service is frequency of
+         * training - this can be used to determine when to train model in order to
+         * control cost. If not specified: the default value for `CreateModel` method
+         * is `TRAINING`. The default value for `UpdateModel` method is to keep the
+         * state the same as before.
+         *
+         * Accepted values: TRAINING_STATE_UNSPECIFIED, PAUSED, TRAINING
+         *
+         * @param self::TRAINING_STATE_* $trainingState
+         */
+        public function setTrainingState($trainingState)
+        {
+        }
+        /**
+         * @return self::TRAINING_STATE_*
+         */
+        public function getTrainingState()
+        {
+        }
+        /**
+         * Output only. The tune operation associated with the model. Can be used to
+         * determine if there is an ongoing tune for this recommendation. Empty field
+         * implies no tune is goig on.
+         *
+         * @param string $tuningOperation
+         */
+        public function setTuningOperation($tuningOperation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTuningOperation()
+        {
+        }
+        /**
+         * Required. The type of model e.g. `home-page`. Currently supported values:
+         * `recommended-for-you`, `others-you-may-like`, `frequently-bought-together`,
+         * `page-optimization`, `similar-items`, `buy-it-again`, `on-sale-items`, and
+         * `recently-viewed`(readonly value). This field together with
+         * optimization_objective describe model metadata to use to control model
+         * training and serving. See https://cloud.google.com/retail/docs/models for
+         * more details on what the model metadata control and which combination of
+         * parameters are valid. For invalid combinations of parameters (e.g. type =
+         * `frequently-bought-together` and optimization_objective = `ctr`), you
+         * receive an error 400 if you try to create/update a recommendation with this
+         * set of knobs.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * Output only. Timestamp the Recommendation Model was last updated. E.g. if a
+         * Recommendation Model was paused - this would be the time the pause was
+         * initiated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2Model registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. The state of data requirements for this model: `DATA_OK` and
-     * `DATA_ERROR`. Recommendation model cannot be trained if the data is in
-     * `DATA_ERROR` state. Recommendation model can have `DATA_ERROR` state even
-     * if serving state is `ACTIVE`: models were trained successfully before, but
-     * cannot be refreshed because model no longer has sufficient data for
-     * training.
-     *
-     * Accepted values: DATA_STATE_UNSPECIFIED, DATA_OK, DATA_ERROR
-     *
-     * @param self::DATA_STATE_* $dataState
-     */
-    public function setDataState($dataState)
-    {
-    }
-    /**
-     * @return self::DATA_STATE_*
-     */
-    public function getDataState()
-    {
-    }
-    /**
-     * Required. The display name of the model. Should be human readable, used to
-     * display Recommendation Models in the Retail Cloud Console Dashboard. UTF-8
-     * encoded string with limit of 1024 characters.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Optional. If `RECOMMENDATIONS_FILTERING_ENABLED`, recommendation filtering
-     * by attributes is enabled for the model.
-     *
-     * Accepted values: RECOMMENDATIONS_FILTERING_OPTION_UNSPECIFIED,
-     * RECOMMENDATIONS_FILTERING_DISABLED, RECOMMENDATIONS_FILTERING_ENABLED
-     *
-     * @param self::FILTERING_OPTION_* $filteringOption
-     */
-    public function setFilteringOption($filteringOption)
-    {
-    }
-    /**
-     * @return self::FILTERING_OPTION_*
-     */
-    public function getFilteringOption()
-    {
-    }
-    /**
-     * Output only. The timestamp when the latest successful tune finished.
-     *
-     * @param string $lastTuneTime
-     */
-    public function setLastTuneTime($lastTuneTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastTuneTime()
-    {
-    }
-    /**
-     * Optional. Additional model features config.
-     *
-     * @param GoogleCloudRetailV2ModelModelFeaturesConfig $modelFeaturesConfig
-     */
-    public function setModelFeaturesConfig(GoogleCloudRetailV2ModelModelFeaturesConfig $modelFeaturesConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2ModelModelFeaturesConfig
-     */
-    public function getModelFeaturesConfig()
-    {
-    }
-    /**
-     * Required. The fully qualified resource name of the model. Format: `projects
-     * /{project_number}/locations/{location_id}/catalogs/{catalog_id}/models/{mod
-     * el_id}` catalog_id has char limit of 50. recommendation_model_id has char
-     * limit of 40.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. The optimization objective e.g. `cvr`. Currently supported
-     * values: `ctr`, `cvr`, `revenue-per-order`. If not specified, we choose
-     * default based on model type. Default depends on type of recommendation:
-     * `recommended-for-you` => `ctr` `others-you-may-like` => `ctr` `frequently-
-     * bought-together` => `revenue_per_order` This field together with
-     * optimization_objective describe model metadata to use to control model
-     * training and serving. See https://cloud.google.com/retail/docs/models for
-     * more details on what the model metadata control and which combination of
-     * parameters are valid. For invalid combinations of parameters (e.g. type =
-     * `frequently-bought-together` and optimization_objective = `ctr`), you
-     * receive an error 400 if you try to create/update a recommendation with this
-     * set of knobs.
-     *
-     * @param string $optimizationObjective
-     */
-    public function setOptimizationObjective($optimizationObjective)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOptimizationObjective()
-    {
-    }
-    /**
-     * Optional. The state of periodic tuning. The period we use is 3 months - to
-     * do a one-off tune earlier use the `TuneModel` method. Default value is
-     * `PERIODIC_TUNING_ENABLED`.
-     *
-     * Accepted values: PERIODIC_TUNING_STATE_UNSPECIFIED,
-     * PERIODIC_TUNING_DISABLED, ALL_TUNING_DISABLED, PERIODIC_TUNING_ENABLED
-     *
-     * @param self::PERIODIC_TUNING_STATE_* $periodicTuningState
-     */
-    public function setPeriodicTuningState($periodicTuningState)
-    {
-    }
-    /**
-     * @return self::PERIODIC_TUNING_STATE_*
-     */
-    public function getPeriodicTuningState()
-    {
-    }
-    /**
-     * Output only. The list of valid serving configs associated with the
-     * PageOptimizationConfig.
-     *
-     * @param GoogleCloudRetailV2ModelServingConfigList[] $servingConfigLists
-     */
-    public function setServingConfigLists($servingConfigLists)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2ModelServingConfigList[]
-     */
-    public function getServingConfigLists()
-    {
-    }
-    /**
-     * Output only. The serving state of the model: `ACTIVE`, `NOT_ACTIVE`.
-     *
-     * Accepted values: SERVING_STATE_UNSPECIFIED, INACTIVE, ACTIVE, TUNED
-     *
-     * @param self::SERVING_STATE_* $servingState
-     */
-    public function setServingState($servingState)
-    {
-    }
-    /**
-     * @return self::SERVING_STATE_*
-     */
-    public function getServingState()
-    {
-    }
-    /**
-     * Optional. The training state that the model is in (e.g. `TRAINING` or
-     * `PAUSED`). Since part of the cost of running the service is frequency of
-     * training - this can be used to determine when to train model in order to
-     * control cost. If not specified: the default value for `CreateModel` method
-     * is `TRAINING`. The default value for `UpdateModel` method is to keep the
-     * state the same as before.
-     *
-     * Accepted values: TRAINING_STATE_UNSPECIFIED, PAUSED, TRAINING
-     *
-     * @param self::TRAINING_STATE_* $trainingState
-     */
-    public function setTrainingState($trainingState)
-    {
-    }
-    /**
-     * @return self::TRAINING_STATE_*
-     */
-    public function getTrainingState()
-    {
-    }
-    /**
-     * Output only. The tune operation associated with the model. Can be used to
-     * determine if there is an ongoing tune for this recommendation. Empty field
-     * implies no tune is goig on.
-     *
-     * @param string $tuningOperation
-     */
-    public function setTuningOperation($tuningOperation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTuningOperation()
-    {
-    }
-    /**
-     * Required. The type of model e.g. `home-page`. Currently supported values:
-     * `recommended-for-you`, `others-you-may-like`, `frequently-bought-together`,
-     * `page-optimization`, `similar-items`, `buy-it-again`, `on-sale-items`, and
-     * `recently-viewed`(readonly value). This field together with
-     * optimization_objective describe model metadata to use to control model
-     * training and serving. See https://cloud.google.com/retail/docs/models for
-     * more details on what the model metadata control and which combination of
-     * parameters are valid. For invalid combinations of parameters (e.g. type =
-     * `frequently-bought-together` and optimization_objective = `ctr`), you
-     * receive an error 400 if you try to create/update a recommendation with this
-     * set of knobs.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-    }
-    /**
-     * Output only. Timestamp the Recommendation Model was last updated. E.g. if a
-     * Recommendation Model was paused - this would be the time the pause was
-     * initiated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2Model extends \Google\Service\CloudRetail\GoogleCloudRetailV2Model
     {
     }
 }

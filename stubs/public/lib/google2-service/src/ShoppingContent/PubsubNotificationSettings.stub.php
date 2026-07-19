@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class PubsubNotificationSettings extends \Google\Collection
-{
-    protected $collection_key = 'registeredEvents';
-    /**
-     * Cloud pub/sub topic to which notifications are sent (read-only).
-     *
-     * @var string
-     */
-    public $cloudTopicName;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "`content#pubsubNotificationSettings`"
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * List of event types. Acceptable values are: - "`orderPendingShipment`"
-     *
-     * @var string[]
-     */
-    public $registeredEvents;
-    /**
-     * Cloud pub/sub topic to which notifications are sent (read-only).
-     *
-     * @param string $cloudTopicName
-     */
-    public function setCloudTopicName($cloudTopicName)
+namespace Google\Service\ShoppingContent {
+    class PubsubNotificationSettings extends \Google\Collection
     {
+        protected $collection_key = 'registeredEvents';
+        /**
+         * Cloud pub/sub topic to which notifications are sent (read-only).
+         *
+         * @var string
+         */
+        public $cloudTopicName;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "`content#pubsubNotificationSettings`"
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * List of event types. Acceptable values are: - "`orderPendingShipment`"
+         *
+         * @var string[]
+         */
+        public $registeredEvents;
+        /**
+         * Cloud pub/sub topic to which notifications are sent (read-only).
+         *
+         * @param string $cloudTopicName
+         */
+        public function setCloudTopicName($cloudTopicName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCloudTopicName()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "`content#pubsubNotificationSettings`"
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * List of event types. Acceptable values are: - "`orderPendingShipment`"
+         *
+         * @param string[] $registeredEvents
+         */
+        public function setRegisteredEvents($registeredEvents)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRegisteredEvents()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\PubsubNotificationSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudTopicName()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "`content#pubsubNotificationSettings`"
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * List of event types. Acceptable values are: - "`orderPendingShipment`"
-     *
-     * @param string[] $registeredEvents
-     */
-    public function setRegisteredEvents($registeredEvents)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRegisteredEvents()
+    class Google_Service_ShoppingContent_PubsubNotificationSettings extends \Google\Service\ShoppingContent\PubsubNotificationSettings
     {
     }
 }

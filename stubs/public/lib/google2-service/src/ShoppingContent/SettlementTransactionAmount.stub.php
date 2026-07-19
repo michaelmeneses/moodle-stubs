@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class SettlementTransactionAmount extends \Google\Model
-{
-    protected $commissionType = SettlementTransactionAmountCommission::class;
-    protected $commissionDataType = '';
-    /**
-     * @var string
-     */
-    public $description;
-    protected $transactionAmountType = Price::class;
-    protected $transactionAmountDataType = '';
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param SettlementTransactionAmountCommission
-     */
-    public function setCommission(SettlementTransactionAmountCommission $commission)
+namespace Google\Service\ShoppingContent {
+    class SettlementTransactionAmount extends \Google\Model
     {
+        protected $commissionType = SettlementTransactionAmountCommission::class;
+        protected $commissionDataType = '';
+        /**
+         * @var string
+         */
+        public $description;
+        protected $transactionAmountType = Price::class;
+        protected $transactionAmountDataType = '';
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param SettlementTransactionAmountCommission
+         */
+        public function setCommission(SettlementTransactionAmountCommission $commission)
+        {
+        }
+        /**
+         * @return SettlementTransactionAmountCommission
+         */
+        public function getCommission()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param Price
+         */
+        public function setTransactionAmount(Price $transactionAmount)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getTransactionAmount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SettlementTransactionAmountCommission
+     * Runtime class alias of \Google\Service\ShoppingContent\SettlementTransactionAmount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommission()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param Price
-     */
-    public function setTransactionAmount(Price $transactionAmount)
-    {
-    }
-    /**
-     * @return Price
-     */
-    public function getTransactionAmount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_ShoppingContent_SettlementTransactionAmount extends \Google\Service\ShoppingContent\SettlementTransactionAmount
     {
     }
 }

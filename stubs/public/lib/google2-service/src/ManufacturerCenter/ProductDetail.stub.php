@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManufacturerCenter;
-
-class ProductDetail extends \Google\Model
-{
-    /**
-     * The name of the attribute.
-     *
-     * @var string
-     */
-    public $attributeName;
-    /**
-     * The value of the attribute.
-     *
-     * @var string
-     */
-    public $attributeValue;
-    /**
-     * A short section name that can be reused between multiple product details.
-     *
-     * @var string
-     */
-    public $sectionName;
-    /**
-     * The name of the attribute.
-     *
-     * @param string $attributeName
-     */
-    public function setAttributeName($attributeName)
+namespace Google\Service\ManufacturerCenter {
+    class ProductDetail extends \Google\Model
     {
+        /**
+         * The name of the attribute.
+         *
+         * @var string
+         */
+        public $attributeName;
+        /**
+         * The value of the attribute.
+         *
+         * @var string
+         */
+        public $attributeValue;
+        /**
+         * A short section name that can be reused between multiple product details.
+         *
+         * @var string
+         */
+        public $sectionName;
+        /**
+         * The name of the attribute.
+         *
+         * @param string $attributeName
+         */
+        public function setAttributeName($attributeName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAttributeName()
+        {
+        }
+        /**
+         * The value of the attribute.
+         *
+         * @param string $attributeValue
+         */
+        public function setAttributeValue($attributeValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAttributeValue()
+        {
+        }
+        /**
+         * A short section name that can be reused between multiple product details.
+         *
+         * @param string $sectionName
+         */
+        public function setSectionName($sectionName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSectionName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ManufacturerCenter\ProductDetail registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributeName()
-    {
-    }
-    /**
-     * The value of the attribute.
-     *
-     * @param string $attributeValue
-     */
-    public function setAttributeValue($attributeValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAttributeValue()
-    {
-    }
-    /**
-     * A short section name that can be reused between multiple product details.
-     *
-     * @param string $sectionName
-     */
-    public function setSectionName($sectionName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSectionName()
+    class Google_Service_ManufacturerCenter_ProductDetail extends \Google\Service\ManufacturerCenter\ProductDetail
     {
     }
 }

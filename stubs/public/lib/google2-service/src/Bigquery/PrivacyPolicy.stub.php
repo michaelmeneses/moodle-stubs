@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class PrivacyPolicy extends \Google\Model
-{
-    protected $aggregationThresholdPolicyType = AggregationThresholdPolicy::class;
-    protected $aggregationThresholdPolicyDataType = '';
-    protected $differentialPrivacyPolicyType = DifferentialPrivacyPolicy::class;
-    protected $differentialPrivacyPolicyDataType = '';
-    protected $joinRestrictionPolicyType = JoinRestrictionPolicy::class;
-    protected $joinRestrictionPolicyDataType = '';
-    /**
-     * Optional. Policy used for aggregation thresholds.
-     *
-     * @param AggregationThresholdPolicy $aggregationThresholdPolicy
-     */
-    public function setAggregationThresholdPolicy(AggregationThresholdPolicy $aggregationThresholdPolicy)
+namespace Google\Service\Bigquery {
+    class PrivacyPolicy extends \Google\Model
     {
+        protected $aggregationThresholdPolicyType = AggregationThresholdPolicy::class;
+        protected $aggregationThresholdPolicyDataType = '';
+        protected $differentialPrivacyPolicyType = DifferentialPrivacyPolicy::class;
+        protected $differentialPrivacyPolicyDataType = '';
+        protected $joinRestrictionPolicyType = JoinRestrictionPolicy::class;
+        protected $joinRestrictionPolicyDataType = '';
+        /**
+         * Optional. Policy used for aggregation thresholds.
+         *
+         * @param AggregationThresholdPolicy $aggregationThresholdPolicy
+         */
+        public function setAggregationThresholdPolicy(AggregationThresholdPolicy $aggregationThresholdPolicy)
+        {
+        }
+        /**
+         * @return AggregationThresholdPolicy
+         */
+        public function getAggregationThresholdPolicy()
+        {
+        }
+        /**
+         * Optional. Policy used for differential privacy.
+         *
+         * @param DifferentialPrivacyPolicy $differentialPrivacyPolicy
+         */
+        public function setDifferentialPrivacyPolicy(DifferentialPrivacyPolicy $differentialPrivacyPolicy)
+        {
+        }
+        /**
+         * @return DifferentialPrivacyPolicy
+         */
+        public function getDifferentialPrivacyPolicy()
+        {
+        }
+        /**
+         * Optional. Join restriction policy is outside of the one of policies, since
+         * this policy can be set along with other policies. This policy gives data
+         * providers the ability to enforce joins on the 'join_allowed_columns' when
+         * data is queried from a privacy protected view.
+         *
+         * @param JoinRestrictionPolicy $joinRestrictionPolicy
+         */
+        public function setJoinRestrictionPolicy(JoinRestrictionPolicy $joinRestrictionPolicy)
+        {
+        }
+        /**
+         * @return JoinRestrictionPolicy
+         */
+        public function getJoinRestrictionPolicy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AggregationThresholdPolicy
+     * Runtime class alias of \Google\Service\Bigquery\PrivacyPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAggregationThresholdPolicy()
-    {
-    }
-    /**
-     * Optional. Policy used for differential privacy.
-     *
-     * @param DifferentialPrivacyPolicy $differentialPrivacyPolicy
-     */
-    public function setDifferentialPrivacyPolicy(DifferentialPrivacyPolicy $differentialPrivacyPolicy)
-    {
-    }
-    /**
-     * @return DifferentialPrivacyPolicy
-     */
-    public function getDifferentialPrivacyPolicy()
-    {
-    }
-    /**
-     * Optional. Join restriction policy is outside of the one of policies, since
-     * this policy can be set along with other policies. This policy gives data
-     * providers the ability to enforce joins on the 'join_allowed_columns' when
-     * data is queried from a privacy protected view.
-     *
-     * @param JoinRestrictionPolicy $joinRestrictionPolicy
-     */
-    public function setJoinRestrictionPolicy(JoinRestrictionPolicy $joinRestrictionPolicy)
-    {
-    }
-    /**
-     * @return JoinRestrictionPolicy
-     */
-    public function getJoinRestrictionPolicy()
+    class Google_Service_Bigquery_PrivacyPolicy extends \Google\Service\Bigquery\PrivacyPolicy
     {
     }
 }

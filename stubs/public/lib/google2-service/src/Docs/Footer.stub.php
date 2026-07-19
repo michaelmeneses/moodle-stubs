@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class Footer extends \Google\Collection
-{
-    protected $collection_key = 'content';
-    protected $contentType = StructuralElement::class;
-    protected $contentDataType = 'array';
-    /**
-     * The ID of the footer.
-     *
-     * @var string
-     */
-    public $footerId;
-    /**
-     * The contents of the footer. The indexes for a footer's content begin at
-     * zero.
-     *
-     * @param StructuralElement[] $content
-     */
-    public function setContent($content)
+namespace Google\Service\Docs {
+    class Footer extends \Google\Collection
     {
+        protected $collection_key = 'content';
+        protected $contentType = StructuralElement::class;
+        protected $contentDataType = 'array';
+        /**
+         * The ID of the footer.
+         *
+         * @var string
+         */
+        public $footerId;
+        /**
+         * The contents of the footer. The indexes for a footer's content begin at
+         * zero.
+         *
+         * @param StructuralElement[] $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return StructuralElement[]
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * The ID of the footer.
+         *
+         * @param string $footerId
+         */
+        public function setFooterId($footerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFooterId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return StructuralElement[]
+     * Runtime class alias of \Google\Service\Docs\Footer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
-    {
-    }
-    /**
-     * The ID of the footer.
-     *
-     * @param string $footerId
-     */
-    public function setFooterId($footerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFooterId()
+    class Google_Service_Docs_Footer extends \Google\Service\Docs\Footer
     {
     }
 }

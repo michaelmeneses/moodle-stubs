@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class ResultSet extends \Google\Collection
-{
-    protected $collection_key = 'rows';
-    protected $metadataType = ResultSetMetadata::class;
-    protected $metadataDataType = '';
-    protected $precommitTokenType = MultiplexedSessionPrecommitToken::class;
-    protected $precommitTokenDataType = '';
-    /**
-     * Each element in `rows` is a row whose format is defined by
-     * metadata.row_type. The ith element in each row matches the ith field in
-     * metadata.row_type. Elements are encoded based on type as described here.
-     *
-     * @var array[]
-     */
-    public $rows;
-    protected $statsType = ResultSetStats::class;
-    protected $statsDataType = '';
-    /**
-     * Metadata about the result set, such as row type information.
-     *
-     * @param ResultSetMetadata $metadata
-     */
-    public function setMetadata(ResultSetMetadata $metadata)
+namespace Google\Service\Spanner {
+    class ResultSet extends \Google\Collection
     {
+        protected $collection_key = 'rows';
+        protected $metadataType = ResultSetMetadata::class;
+        protected $metadataDataType = '';
+        protected $precommitTokenType = MultiplexedSessionPrecommitToken::class;
+        protected $precommitTokenDataType = '';
+        /**
+         * Each element in `rows` is a row whose format is defined by
+         * metadata.row_type. The ith element in each row matches the ith field in
+         * metadata.row_type. Elements are encoded based on type as described here.
+         *
+         * @var array[]
+         */
+        public $rows;
+        protected $statsType = ResultSetStats::class;
+        protected $statsDataType = '';
+        /**
+         * Metadata about the result set, such as row type information.
+         *
+         * @param ResultSetMetadata $metadata
+         */
+        public function setMetadata(ResultSetMetadata $metadata)
+        {
+        }
+        /**
+         * @return ResultSetMetadata
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * Optional. A precommit token is included if the read-write transaction is on
+         * a multiplexed session. Pass the precommit token with the highest sequence
+         * number from this transaction attempt to the Commit request for this
+         * transaction.
+         *
+         * @param MultiplexedSessionPrecommitToken $precommitToken
+         */
+        public function setPrecommitToken(MultiplexedSessionPrecommitToken $precommitToken)
+        {
+        }
+        /**
+         * @return MultiplexedSessionPrecommitToken
+         */
+        public function getPrecommitToken()
+        {
+        }
+        /**
+         * Each element in `rows` is a row whose format is defined by
+         * metadata.row_type. The ith element in each row matches the ith field in
+         * metadata.row_type. Elements are encoded based on type as described here.
+         *
+         * @param array[] $rows
+         */
+        public function setRows($rows)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getRows()
+        {
+        }
+        /**
+         * Query plan and execution statistics for the SQL statement that produced
+         * this result set. These can be requested by setting
+         * ExecuteSqlRequest.query_mode. DML statements always produce stats
+         * containing the number of rows modified, unless executed using the
+         * ExecuteSqlRequest.QueryMode.PLAN ExecuteSqlRequest.query_mode. Other fields
+         * might or might not be populated, based on the ExecuteSqlRequest.query_mode.
+         *
+         * @param ResultSetStats $stats
+         */
+        public function setStats(ResultSetStats $stats)
+        {
+        }
+        /**
+         * @return ResultSetStats
+         */
+        public function getStats()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ResultSetMetadata
+     * Runtime class alias of \Google\Service\Spanner\ResultSet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetadata()
-    {
-    }
-    /**
-     * Optional. A precommit token is included if the read-write transaction is on
-     * a multiplexed session. Pass the precommit token with the highest sequence
-     * number from this transaction attempt to the Commit request for this
-     * transaction.
-     *
-     * @param MultiplexedSessionPrecommitToken $precommitToken
-     */
-    public function setPrecommitToken(MultiplexedSessionPrecommitToken $precommitToken)
-    {
-    }
-    /**
-     * @return MultiplexedSessionPrecommitToken
-     */
-    public function getPrecommitToken()
-    {
-    }
-    /**
-     * Each element in `rows` is a row whose format is defined by
-     * metadata.row_type. The ith element in each row matches the ith field in
-     * metadata.row_type. Elements are encoded based on type as described here.
-     *
-     * @param array[] $rows
-     */
-    public function setRows($rows)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getRows()
-    {
-    }
-    /**
-     * Query plan and execution statistics for the SQL statement that produced
-     * this result set. These can be requested by setting
-     * ExecuteSqlRequest.query_mode. DML statements always produce stats
-     * containing the number of rows modified, unless executed using the
-     * ExecuteSqlRequest.QueryMode.PLAN ExecuteSqlRequest.query_mode. Other fields
-     * might or might not be populated, based on the ExecuteSqlRequest.query_mode.
-     *
-     * @param ResultSetStats $stats
-     */
-    public function setStats(ResultSetStats $stats)
-    {
-    }
-    /**
-     * @return ResultSetStats
-     */
-    public function getStats()
+    class Google_Service_Spanner_ResultSet extends \Google\Service\Spanner\ResultSet
     {
     }
 }

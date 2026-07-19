@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class PluggableDatabase extends \Google\Model
-{
-    /**
-     * Output only. The date and time that the PluggableDatabase was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Identifier. The name of the PluggableDatabase resource in the following
-     * format: projects/{project}/locations/{region}/pluggableDatabases/{pluggable
-     * _database}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. HTTPS link to OCI resources exposed to Customer via UI
-     * Interface.
-     *
-     * @var string
-     */
-    public $ociUrl;
-    protected $propertiesType = PluggableDatabaseProperties::class;
-    protected $propertiesDataType = '';
-    /**
-     * Output only. The date and time that the PluggableDatabase was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\OracleDatabase {
+    class PluggableDatabase extends \Google\Model
     {
+        /**
+         * Output only. The date and time that the PluggableDatabase was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Identifier. The name of the PluggableDatabase resource in the following
+         * format: projects/{project}/locations/{region}/pluggableDatabases/{pluggable
+         * _database}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. HTTPS link to OCI resources exposed to Customer via UI
+         * Interface.
+         *
+         * @var string
+         */
+        public $ociUrl;
+        protected $propertiesType = PluggableDatabaseProperties::class;
+        protected $propertiesDataType = '';
+        /**
+         * Output only. The date and time that the PluggableDatabase was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Identifier. The name of the PluggableDatabase resource in the following
+         * format: projects/{project}/locations/{region}/pluggableDatabases/{pluggable
+         * _database}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. HTTPS link to OCI resources exposed to Customer via UI
+         * Interface.
+         *
+         * @param string $ociUrl
+         */
+        public function setOciUrl($ociUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOciUrl()
+        {
+        }
+        /**
+         * Optional. The properties of the PluggableDatabase.
+         *
+         * @param PluggableDatabaseProperties $properties
+         */
+        public function setProperties(PluggableDatabaseProperties $properties)
+        {
+        }
+        /**
+         * @return PluggableDatabaseProperties
+         */
+        public function getProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OracleDatabase\PluggableDatabase registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Identifier. The name of the PluggableDatabase resource in the following
-     * format: projects/{project}/locations/{region}/pluggableDatabases/{pluggable
-     * _database}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. HTTPS link to OCI resources exposed to Customer via UI
-     * Interface.
-     *
-     * @param string $ociUrl
-     */
-    public function setOciUrl($ociUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOciUrl()
-    {
-    }
-    /**
-     * Optional. The properties of the PluggableDatabase.
-     *
-     * @param PluggableDatabaseProperties $properties
-     */
-    public function setProperties(PluggableDatabaseProperties $properties)
-    {
-    }
-    /**
-     * @return PluggableDatabaseProperties
-     */
-    public function getProperties()
+    class Google_Service_OracleDatabase_PluggableDatabase extends \Google\Service\OracleDatabase\PluggableDatabase
     {
     }
 }

@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class SearchSessionSparkApplicationSqlQueriesResponse extends \Google\Collection
-{
-    protected $collection_key = 'sparkApplicationSqlQueries';
-    /**
-     * This token is included in the response if there are more results to fetch.
-     * To fetch additional results, provide this value as the page_token in a
-     * subsequent SearchSessionSparkApplicationSqlQueriesRequest.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $sparkApplicationSqlQueriesType = SqlExecutionUiData::class;
-    protected $sparkApplicationSqlQueriesDataType = 'array';
-    /**
-     * This token is included in the response if there are more results to fetch.
-     * To fetch additional results, provide this value as the page_token in a
-     * subsequent SearchSessionSparkApplicationSqlQueriesRequest.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Dataproc {
+    class SearchSessionSparkApplicationSqlQueriesResponse extends \Google\Collection
     {
+        protected $collection_key = 'sparkApplicationSqlQueries';
+        /**
+         * This token is included in the response if there are more results to fetch.
+         * To fetch additional results, provide this value as the page_token in a
+         * subsequent SearchSessionSparkApplicationSqlQueriesRequest.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $sparkApplicationSqlQueriesType = SqlExecutionUiData::class;
+        protected $sparkApplicationSqlQueriesDataType = 'array';
+        /**
+         * This token is included in the response if there are more results to fetch.
+         * To fetch additional results, provide this value as the page_token in a
+         * subsequent SearchSessionSparkApplicationSqlQueriesRequest.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Output only. SQL Execution Data
+         *
+         * @param SqlExecutionUiData[] $sparkApplicationSqlQueries
+         */
+        public function setSparkApplicationSqlQueries($sparkApplicationSqlQueries)
+        {
+        }
+        /**
+         * @return SqlExecutionUiData[]
+         */
+        public function getSparkApplicationSqlQueries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\SearchSessionSparkApplicationSqlQueriesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Output only. SQL Execution Data
-     *
-     * @param SqlExecutionUiData[] $sparkApplicationSqlQueries
-     */
-    public function setSparkApplicationSqlQueries($sparkApplicationSqlQueries)
-    {
-    }
-    /**
-     * @return SqlExecutionUiData[]
-     */
-    public function getSparkApplicationSqlQueries()
+    class Google_Service_Dataproc_SearchSessionSparkApplicationSqlQueriesResponse extends \Google\Service\Dataproc\SearchSessionSparkApplicationSqlQueriesResponse
     {
     }
 }

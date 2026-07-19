@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class TransactionOptions extends \Google\Model
-{
-    protected $readOnlyType = FirestoreReadOnly::class;
-    protected $readOnlyDataType = '';
-    protected $readWriteType = ReadWrite::class;
-    protected $readWriteDataType = '';
-    /**
-     * The transaction can only be used for read operations.
-     *
-     * @param FirestoreReadOnly $readOnly
-     */
-    public function setReadOnly(FirestoreReadOnly $readOnly)
+namespace Google\Service\Firestore {
+    class TransactionOptions extends \Google\Model
     {
+        protected $readOnlyType = FirestoreReadOnly::class;
+        protected $readOnlyDataType = '';
+        protected $readWriteType = ReadWrite::class;
+        protected $readWriteDataType = '';
+        /**
+         * The transaction can only be used for read operations.
+         *
+         * @param FirestoreReadOnly $readOnly
+         */
+        public function setReadOnly(FirestoreReadOnly $readOnly)
+        {
+        }
+        /**
+         * @return FirestoreReadOnly
+         */
+        public function getReadOnly()
+        {
+        }
+        /**
+         * The transaction can be used for both read and write operations.
+         *
+         * @param ReadWrite $readWrite
+         */
+        public function setReadWrite(ReadWrite $readWrite)
+        {
+        }
+        /**
+         * @return ReadWrite
+         */
+        public function getReadWrite()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FirestoreReadOnly
+     * Runtime class alias of \Google\Service\Firestore\TransactionOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReadOnly()
-    {
-    }
-    /**
-     * The transaction can be used for both read and write operations.
-     *
-     * @param ReadWrite $readWrite
-     */
-    public function setReadWrite(ReadWrite $readWrite)
-    {
-    }
-    /**
-     * @return ReadWrite
-     */
-    public function getReadWrite()
+    class Google_Service_Firestore_TransactionOptions extends \Google\Service\Firestore\TransactionOptions
     {
     }
 }

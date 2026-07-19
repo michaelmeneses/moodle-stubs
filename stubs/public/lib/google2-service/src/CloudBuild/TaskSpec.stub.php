@@ -21,164 +21,173 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class TaskSpec extends \Google\Collection
-{
-    protected $collection_key = 'workspaces';
-    /**
-     * Description of the task.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Sidecars that run alongside the Task’s step containers that should be added
-     * to this Task.
-     *
-     * @var string[]
-     */
-    public $managedSidecars;
-    protected $paramsType = ParamSpec::class;
-    protected $paramsDataType = 'array';
-    protected $resultsType = TaskResult::class;
-    protected $resultsDataType = 'array';
-    protected $sidecarsType = Sidecar::class;
-    protected $sidecarsDataType = 'array';
-    protected $stepTemplateType = StepTemplate::class;
-    protected $stepTemplateDataType = '';
-    protected $stepsType = Step::class;
-    protected $stepsDataType = 'array';
-    protected $volumesType = VolumeSource::class;
-    protected $volumesDataType = 'array';
-    protected $workspacesType = WorkspaceDeclaration::class;
-    protected $workspacesDataType = 'array';
-    /**
-     * Description of the task.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\CloudBuild {
+    class TaskSpec extends \Google\Collection
     {
+        protected $collection_key = 'workspaces';
+        /**
+         * Description of the task.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Sidecars that run alongside the Task’s step containers that should be added
+         * to this Task.
+         *
+         * @var string[]
+         */
+        public $managedSidecars;
+        protected $paramsType = ParamSpec::class;
+        protected $paramsDataType = 'array';
+        protected $resultsType = TaskResult::class;
+        protected $resultsDataType = 'array';
+        protected $sidecarsType = Sidecar::class;
+        protected $sidecarsDataType = 'array';
+        protected $stepTemplateType = StepTemplate::class;
+        protected $stepTemplateDataType = '';
+        protected $stepsType = Step::class;
+        protected $stepsDataType = 'array';
+        protected $volumesType = VolumeSource::class;
+        protected $volumesDataType = 'array';
+        protected $workspacesType = WorkspaceDeclaration::class;
+        protected $workspacesDataType = 'array';
+        /**
+         * Description of the task.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Sidecars that run alongside the Task’s step containers that should be added
+         * to this Task.
+         *
+         * @param string[] $managedSidecars
+         */
+        public function setManagedSidecars($managedSidecars)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getManagedSidecars()
+        {
+        }
+        /**
+         * List of parameters.
+         *
+         * @param ParamSpec[] $params
+         */
+        public function setParams($params)
+        {
+        }
+        /**
+         * @return ParamSpec[]
+         */
+        public function getParams()
+        {
+        }
+        /**
+         * Values that this Task can output.
+         *
+         * @param TaskResult[] $results
+         */
+        public function setResults($results)
+        {
+        }
+        /**
+         * @return TaskResult[]
+         */
+        public function getResults()
+        {
+        }
+        /**
+         * Sidecars that run alongside the Task's step containers.
+         *
+         * @param Sidecar[] $sidecars
+         */
+        public function setSidecars($sidecars)
+        {
+        }
+        /**
+         * @return Sidecar[]
+         */
+        public function getSidecars()
+        {
+        }
+        /**
+         * Optional. StepTemplate can be used as the basis for all step containers
+         * within the Task, so that the steps inherit settings on the base container.
+         *
+         * @param StepTemplate $stepTemplate
+         */
+        public function setStepTemplate(StepTemplate $stepTemplate)
+        {
+        }
+        /**
+         * @return StepTemplate
+         */
+        public function getStepTemplate()
+        {
+        }
+        /**
+         * Steps of the task.
+         *
+         * @param Step[] $steps
+         */
+        public function setSteps($steps)
+        {
+        }
+        /**
+         * @return Step[]
+         */
+        public function getSteps()
+        {
+        }
+        /**
+         * A collection of volumes that are available to mount into steps.
+         *
+         * @param VolumeSource[] $volumes
+         */
+        public function setVolumes($volumes)
+        {
+        }
+        /**
+         * @return VolumeSource[]
+         */
+        public function getVolumes()
+        {
+        }
+        /**
+         * The volumes that this Task requires.
+         *
+         * @param WorkspaceDeclaration[] $workspaces
+         */
+        public function setWorkspaces($workspaces)
+        {
+        }
+        /**
+         * @return WorkspaceDeclaration[]
+         */
+        public function getWorkspaces()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\TaskSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Sidecars that run alongside the Task’s step containers that should be added
-     * to this Task.
-     *
-     * @param string[] $managedSidecars
-     */
-    public function setManagedSidecars($managedSidecars)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getManagedSidecars()
-    {
-    }
-    /**
-     * List of parameters.
-     *
-     * @param ParamSpec[] $params
-     */
-    public function setParams($params)
-    {
-    }
-    /**
-     * @return ParamSpec[]
-     */
-    public function getParams()
-    {
-    }
-    /**
-     * Values that this Task can output.
-     *
-     * @param TaskResult[] $results
-     */
-    public function setResults($results)
-    {
-    }
-    /**
-     * @return TaskResult[]
-     */
-    public function getResults()
-    {
-    }
-    /**
-     * Sidecars that run alongside the Task's step containers.
-     *
-     * @param Sidecar[] $sidecars
-     */
-    public function setSidecars($sidecars)
-    {
-    }
-    /**
-     * @return Sidecar[]
-     */
-    public function getSidecars()
-    {
-    }
-    /**
-     * Optional. StepTemplate can be used as the basis for all step containers
-     * within the Task, so that the steps inherit settings on the base container.
-     *
-     * @param StepTemplate $stepTemplate
-     */
-    public function setStepTemplate(StepTemplate $stepTemplate)
-    {
-    }
-    /**
-     * @return StepTemplate
-     */
-    public function getStepTemplate()
-    {
-    }
-    /**
-     * Steps of the task.
-     *
-     * @param Step[] $steps
-     */
-    public function setSteps($steps)
-    {
-    }
-    /**
-     * @return Step[]
-     */
-    public function getSteps()
-    {
-    }
-    /**
-     * A collection of volumes that are available to mount into steps.
-     *
-     * @param VolumeSource[] $volumes
-     */
-    public function setVolumes($volumes)
-    {
-    }
-    /**
-     * @return VolumeSource[]
-     */
-    public function getVolumes()
-    {
-    }
-    /**
-     * The volumes that this Task requires.
-     *
-     * @param WorkspaceDeclaration[] $workspaces
-     */
-    public function setWorkspaces($workspaces)
-    {
-    }
-    /**
-     * @return WorkspaceDeclaration[]
-     */
-    public function getWorkspaces()
+    class Google_Service_CloudBuild_TaskSpec extends \Google\Service\CloudBuild\TaskSpec
     {
     }
 }

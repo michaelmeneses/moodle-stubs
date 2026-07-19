@@ -21,162 +21,171 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Keep;
-
-class Permission extends \Google\Model
-{
-    /**
-     * An undefined role.
-     */
-    public const ROLE_ROLE_UNSPECIFIED = 'ROLE_UNSPECIFIED';
-    /**
-     * A role granting full access. This role cannot be added or removed. Defined
-     * by the creator of the note.
-     */
-    public const ROLE_OWNER = 'OWNER';
-    /**
-     * A role granting the ability to contribute content and modify note
-     * permissions.
-     */
-    public const ROLE_WRITER = 'WRITER';
-    /**
-     * Output only. Whether this member has been deleted. If the member is
-     * recovered, this value is set to false and the recovered member retains the
-     * role on the note.
-     *
-     * @var bool
-     */
-    public $deleted;
-    /**
-     * The email associated with the member. If set on create, the `email` field
-     * in the `User` or `Group` message must either be empty or match this field.
-     * On read, may be unset if the member does not have an associated email.
-     *
-     * @var string
-     */
-    public $email;
-    protected $familyType = Family::class;
-    protected $familyDataType = '';
-    protected $groupType = Group::class;
-    protected $groupDataType = '';
-    /**
-     * Output only. The resource name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The role granted by this permission. The role determines the entity’s
-     * ability to read, write, and share notes.
-     *
-     * @var string
-     */
-    public $role;
-    protected $userType = User::class;
-    protected $userDataType = '';
-    /**
-     * Output only. Whether this member has been deleted. If the member is
-     * recovered, this value is set to false and the recovered member retains the
-     * role on the note.
-     *
-     * @param bool $deleted
-     */
-    public function setDeleted($deleted)
+namespace Google\Service\Keep {
+    class Permission extends \Google\Model
     {
+        /**
+         * An undefined role.
+         */
+        public const ROLE_ROLE_UNSPECIFIED = 'ROLE_UNSPECIFIED';
+        /**
+         * A role granting full access. This role cannot be added or removed. Defined
+         * by the creator of the note.
+         */
+        public const ROLE_OWNER = 'OWNER';
+        /**
+         * A role granting the ability to contribute content and modify note
+         * permissions.
+         */
+        public const ROLE_WRITER = 'WRITER';
+        /**
+         * Output only. Whether this member has been deleted. If the member is
+         * recovered, this value is set to false and the recovered member retains the
+         * role on the note.
+         *
+         * @var bool
+         */
+        public $deleted;
+        /**
+         * The email associated with the member. If set on create, the `email` field
+         * in the `User` or `Group` message must either be empty or match this field.
+         * On read, may be unset if the member does not have an associated email.
+         *
+         * @var string
+         */
+        public $email;
+        protected $familyType = Family::class;
+        protected $familyDataType = '';
+        protected $groupType = Group::class;
+        protected $groupDataType = '';
+        /**
+         * Output only. The resource name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The role granted by this permission. The role determines the entity’s
+         * ability to read, write, and share notes.
+         *
+         * @var string
+         */
+        public $role;
+        protected $userType = User::class;
+        protected $userDataType = '';
+        /**
+         * Output only. Whether this member has been deleted. If the member is
+         * recovered, this value is set to false and the recovered member retains the
+         * role on the note.
+         *
+         * @param bool $deleted
+         */
+        public function setDeleted($deleted)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDeleted()
+        {
+        }
+        /**
+         * The email associated with the member. If set on create, the `email` field
+         * in the `User` or `Group` message must either be empty or match this field.
+         * On read, may be unset if the member does not have an associated email.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * Output only. The Google Family to which this role applies.
+         *
+         * @param Family $family
+         */
+        public function setFamily(Family $family)
+        {
+        }
+        /**
+         * @return Family
+         */
+        public function getFamily()
+        {
+        }
+        /**
+         * Output only. The group to which this role applies.
+         *
+         * @param Group $group
+         */
+        public function setGroup(Group $group)
+        {
+        }
+        /**
+         * @return Group
+         */
+        public function getGroup()
+        {
+        }
+        /**
+         * Output only. The resource name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The role granted by this permission. The role determines the entity’s
+         * ability to read, write, and share notes.
+         *
+         * Accepted values: ROLE_UNSPECIFIED, OWNER, WRITER
+         *
+         * @param self::ROLE_* $role
+         */
+        public function setRole($role)
+        {
+        }
+        /**
+         * @return self::ROLE_*
+         */
+        public function getRole()
+        {
+        }
+        /**
+         * Output only. The user to whom this role applies.
+         *
+         * @param User $user
+         */
+        public function setUser(User $user)
+        {
+        }
+        /**
+         * @return User
+         */
+        public function getUser()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Keep\Permission registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeleted()
-    {
-    }
-    /**
-     * The email associated with the member. If set on create, the `email` field
-     * in the `User` or `Group` message must either be empty or match this field.
-     * On read, may be unset if the member does not have an associated email.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEmail()
-    {
-    }
-    /**
-     * Output only. The Google Family to which this role applies.
-     *
-     * @param Family $family
-     */
-    public function setFamily(Family $family)
-    {
-    }
-    /**
-     * @return Family
-     */
-    public function getFamily()
-    {
-    }
-    /**
-     * Output only. The group to which this role applies.
-     *
-     * @param Group $group
-     */
-    public function setGroup(Group $group)
-    {
-    }
-    /**
-     * @return Group
-     */
-    public function getGroup()
-    {
-    }
-    /**
-     * Output only. The resource name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The role granted by this permission. The role determines the entity’s
-     * ability to read, write, and share notes.
-     *
-     * Accepted values: ROLE_UNSPECIFIED, OWNER, WRITER
-     *
-     * @param self::ROLE_* $role
-     */
-    public function setRole($role)
-    {
-    }
-    /**
-     * @return self::ROLE_*
-     */
-    public function getRole()
-    {
-    }
-    /**
-     * Output only. The user to whom this role applies.
-     *
-     * @param User $user
-     */
-    public function setUser(User $user)
-    {
-    }
-    /**
-     * @return User
-     */
-    public function getUser()
+    class Google_Service_Keep_Permission extends \Google\Service\Keep\Permission
     {
     }
 }

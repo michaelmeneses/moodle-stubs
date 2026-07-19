@@ -21,35 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudComposer\Resource;
-
-/**
- * The "imageVersions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $composerService = new Google\Service\CloudComposer(...);
- *   $imageVersions = $composerService->projects_locations_imageVersions;
- *  </code>
- */
-class ProjectsLocationsImageVersions extends \Google\Service\Resource
-{
+namespace Google\Service\CloudComposer\Resource {
+    use Google\Service\CloudComposer\ListImageVersionsResponse;
     /**
-     * List ImageVersions for provided location.
-     * (imageVersions.listProjectsLocationsImageVersions)
-     *
-     * @param string $parent List ImageVersions in the given project and location,
-     * in the form: "projects/{projectId}/locations/{locationId}"
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param bool includePastReleases Whether or not image versions from old
-     * releases should be included.
-     * @opt_param int pageSize The maximum number of image_versions to return.
-     * @opt_param string pageToken The next_page_token value returned from a
-     * previous List request, if any.
-     * @return ListImageVersionsResponse
-     * @throws \Google\Service\Exception
+     * The "imageVersions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $composerService = new Google\Service\CloudComposer(...);
+     *   $imageVersions = $composerService->projects_locations_imageVersions;
+     *  </code>
      */
-    public function listProjectsLocationsImageVersions($parent, $optParams = [])
+    class ProjectsLocationsImageVersions extends \Google\Service\Resource
+    {
+        /**
+         * List ImageVersions for provided location.
+         * (imageVersions.listProjectsLocationsImageVersions)
+         *
+         * @param string $parent List ImageVersions in the given project and location,
+         * in the form: "projects/{projectId}/locations/{locationId}"
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param bool includePastReleases Whether or not image versions from old
+         * releases should be included.
+         * @opt_param int pageSize The maximum number of image_versions to return.
+         * @opt_param string pageToken The next_page_token value returned from a
+         * previous List request, if any.
+         * @return ListImageVersionsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsImageVersions($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudComposer\Resource\ProjectsLocationsImageVersions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudComposer_Resource_ProjectsLocationsImageVersions extends \Google\Service\CloudComposer\Resource\ProjectsLocationsImageVersions
     {
     }
 }

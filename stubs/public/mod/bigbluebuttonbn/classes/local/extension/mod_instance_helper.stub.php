@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_bigbluebuttonbn\local\extension;
 
+use stdClass;
 /**
  * Class defining a way to deal with instance save/update/delete in extension
  *

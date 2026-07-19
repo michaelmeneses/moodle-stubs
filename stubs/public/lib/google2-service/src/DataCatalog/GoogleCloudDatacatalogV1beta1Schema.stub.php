@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1beta1Schema extends \Google\Collection
-{
-    protected $collection_key = 'columns';
-    protected $columnsType = GoogleCloudDatacatalogV1beta1ColumnSchema::class;
-    protected $columnsDataType = 'array';
-    /**
-     * @param GoogleCloudDatacatalogV1beta1ColumnSchema[]
-     */
-    public function setColumns($columns)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1beta1Schema extends \Google\Collection
     {
+        protected $collection_key = 'columns';
+        protected $columnsType = GoogleCloudDatacatalogV1beta1ColumnSchema::class;
+        protected $columnsDataType = 'array';
+        /**
+         * @param GoogleCloudDatacatalogV1beta1ColumnSchema[]
+         */
+        public function setColumns($columns)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1beta1ColumnSchema[]
+         */
+        public function getColumns()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatacatalogV1beta1ColumnSchema[]
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1Schema registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumns()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1beta1Schema extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1Schema
     {
     }
 }

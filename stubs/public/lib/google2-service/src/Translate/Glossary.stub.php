@@ -21,161 +21,170 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Translate;
-
-class Glossary extends \Google\Model
-{
-    /**
-     * Optional. The display name of the glossary.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. When the glossary creation was finished.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * Output only. The number of entries defined in the glossary.
-     *
-     * @var int
-     */
-    public $entryCount;
-    protected $inputConfigType = GlossaryInputConfig::class;
-    protected $inputConfigDataType = '';
-    protected $languageCodesSetType = LanguageCodesSet::class;
-    protected $languageCodesSetDataType = '';
-    protected $languagePairType = LanguageCodePair::class;
-    protected $languagePairDataType = '';
-    /**
-     * Required. The resource name of the glossary. Glossary names have the form
-     * `projects/{project-number-or-id}/locations/{location-
-     * id}/glossaries/{glossary-id}`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. When CreateGlossary was called.
-     *
-     * @var string
-     */
-    public $submitTime;
-    /**
-     * Optional. The display name of the glossary.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\Translate {
+    class Glossary extends \Google\Model
     {
+        /**
+         * Optional. The display name of the glossary.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. When the glossary creation was finished.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * Output only. The number of entries defined in the glossary.
+         *
+         * @var int
+         */
+        public $entryCount;
+        protected $inputConfigType = GlossaryInputConfig::class;
+        protected $inputConfigDataType = '';
+        protected $languageCodesSetType = LanguageCodesSet::class;
+        protected $languageCodesSetDataType = '';
+        protected $languagePairType = LanguageCodePair::class;
+        protected $languagePairDataType = '';
+        /**
+         * Required. The resource name of the glossary. Glossary names have the form
+         * `projects/{project-number-or-id}/locations/{location-
+         * id}/glossaries/{glossary-id}`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. When CreateGlossary was called.
+         *
+         * @var string
+         */
+        public $submitTime;
+        /**
+         * Optional. The display name of the glossary.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. When the glossary creation was finished.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Output only. The number of entries defined in the glossary.
+         *
+         * @param int $entryCount
+         */
+        public function setEntryCount($entryCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getEntryCount()
+        {
+        }
+        /**
+         * Required. Provides examples to build the glossary from. Total glossary must
+         * not exceed 10M Unicode codepoints.
+         *
+         * @param GlossaryInputConfig $inputConfig
+         */
+        public function setInputConfig(GlossaryInputConfig $inputConfig)
+        {
+        }
+        /**
+         * @return GlossaryInputConfig
+         */
+        public function getInputConfig()
+        {
+        }
+        /**
+         * Used with equivalent term set glossaries.
+         *
+         * @param LanguageCodesSet $languageCodesSet
+         */
+        public function setLanguageCodesSet(LanguageCodesSet $languageCodesSet)
+        {
+        }
+        /**
+         * @return LanguageCodesSet
+         */
+        public function getLanguageCodesSet()
+        {
+        }
+        /**
+         * Used with unidirectional glossaries.
+         *
+         * @param LanguageCodePair $languagePair
+         */
+        public function setLanguagePair(LanguageCodePair $languagePair)
+        {
+        }
+        /**
+         * @return LanguageCodePair
+         */
+        public function getLanguagePair()
+        {
+        }
+        /**
+         * Required. The resource name of the glossary. Glossary names have the form
+         * `projects/{project-number-or-id}/locations/{location-
+         * id}/glossaries/{glossary-id}`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. When CreateGlossary was called.
+         *
+         * @param string $submitTime
+         */
+        public function setSubmitTime($submitTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubmitTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Translate\Glossary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. When the glossary creation was finished.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Output only. The number of entries defined in the glossary.
-     *
-     * @param int $entryCount
-     */
-    public function setEntryCount($entryCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getEntryCount()
-    {
-    }
-    /**
-     * Required. Provides examples to build the glossary from. Total glossary must
-     * not exceed 10M Unicode codepoints.
-     *
-     * @param GlossaryInputConfig $inputConfig
-     */
-    public function setInputConfig(GlossaryInputConfig $inputConfig)
-    {
-    }
-    /**
-     * @return GlossaryInputConfig
-     */
-    public function getInputConfig()
-    {
-    }
-    /**
-     * Used with equivalent term set glossaries.
-     *
-     * @param LanguageCodesSet $languageCodesSet
-     */
-    public function setLanguageCodesSet(LanguageCodesSet $languageCodesSet)
-    {
-    }
-    /**
-     * @return LanguageCodesSet
-     */
-    public function getLanguageCodesSet()
-    {
-    }
-    /**
-     * Used with unidirectional glossaries.
-     *
-     * @param LanguageCodePair $languagePair
-     */
-    public function setLanguagePair(LanguageCodePair $languagePair)
-    {
-    }
-    /**
-     * @return LanguageCodePair
-     */
-    public function getLanguagePair()
-    {
-    }
-    /**
-     * Required. The resource name of the glossary. Glossary names have the form
-     * `projects/{project-number-or-id}/locations/{location-
-     * id}/glossaries/{glossary-id}`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. When CreateGlossary was called.
-     *
-     * @param string $submitTime
-     */
-    public function setSubmitTime($submitTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubmitTime()
+    class Google_Service_Translate_Glossary extends \Google\Service\Translate\Glossary
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2BucketingConfig extends \Google\Collection
-{
-    protected $collection_key = 'buckets';
-    protected $bucketsType = GooglePrivacyDlpV2Bucket::class;
-    protected $bucketsDataType = 'array';
-    /**
-     * Set of buckets. Ranges must be non-overlapping.
-     *
-     * @param GooglePrivacyDlpV2Bucket[] $buckets
-     */
-    public function setBuckets($buckets)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2BucketingConfig extends \Google\Collection
     {
+        protected $collection_key = 'buckets';
+        protected $bucketsType = GooglePrivacyDlpV2Bucket::class;
+        protected $bucketsDataType = 'array';
+        /**
+         * Set of buckets. Ranges must be non-overlapping.
+         *
+         * @param GooglePrivacyDlpV2Bucket[] $buckets
+         */
+        public function setBuckets($buckets)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2Bucket[]
+         */
+        public function getBuckets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2Bucket[]
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2BucketingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBuckets()
+    class Google_Service_DLP_GooglePrivacyDlpV2BucketingConfig extends \Google\Service\DLP\GooglePrivacyDlpV2BucketingConfig
     {
     }
 }

@@ -21,164 +21,173 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class StorageDatabasecenterPartnerapiV1mainBigQueryResourceMetadata extends \Google\Model
-{
-    /**
-     * The creation time of the resource, i.e. the time when resource is created
-     * and recorded in partner service.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Required. Full resource name of this instance.
-     *
-     * @var string
-     */
-    public $fullResourceName;
-    /**
-     * Required. location of the resource
-     *
-     * @var string
-     */
-    public $location;
-    protected $productType = StorageDatabasecenterProtoCommonProduct::class;
-    protected $productDataType = '';
-    /**
-     * Closest parent Cloud Resource Manager container of this resource. It must
-     * be resource name of a Cloud Resource Manager project with the format of
-     * "/", such as "projects/123". For GCP provided resources, number should be
-     * project number.
-     *
-     * @var string
-     */
-    public $resourceContainer;
-    protected $resourceIdType = StorageDatabasecenterPartnerapiV1mainDatabaseResourceId::class;
-    protected $resourceIdDataType = '';
-    /**
-     * The time at which the resource was updated and recorded at partner service.
-     *
-     * @var string
-     */
-    public $updateTime;
-    protected $userLabelSetType = StorageDatabasecenterPartnerapiV1mainUserLabels::class;
-    protected $userLabelSetDataType = '';
-    /**
-     * The creation time of the resource, i.e. the time when resource is created
-     * and recorded in partner service.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class StorageDatabasecenterPartnerapiV1mainBigQueryResourceMetadata extends \Google\Model
     {
+        /**
+         * The creation time of the resource, i.e. the time when resource is created
+         * and recorded in partner service.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Required. Full resource name of this instance.
+         *
+         * @var string
+         */
+        public $fullResourceName;
+        /**
+         * Required. location of the resource
+         *
+         * @var string
+         */
+        public $location;
+        protected $productType = StorageDatabasecenterProtoCommonProduct::class;
+        protected $productDataType = '';
+        /**
+         * Closest parent Cloud Resource Manager container of this resource. It must
+         * be resource name of a Cloud Resource Manager project with the format of
+         * "/", such as "projects/123". For GCP provided resources, number should be
+         * project number.
+         *
+         * @var string
+         */
+        public $resourceContainer;
+        protected $resourceIdType = StorageDatabasecenterPartnerapiV1mainDatabaseResourceId::class;
+        protected $resourceIdDataType = '';
+        /**
+         * The time at which the resource was updated and recorded at partner service.
+         *
+         * @var string
+         */
+        public $updateTime;
+        protected $userLabelSetType = StorageDatabasecenterPartnerapiV1mainUserLabels::class;
+        protected $userLabelSetDataType = '';
+        /**
+         * The creation time of the resource, i.e. the time when resource is created
+         * and recorded in partner service.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Required. Full resource name of this instance.
+         *
+         * @param string $fullResourceName
+         */
+        public function setFullResourceName($fullResourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFullResourceName()
+        {
+        }
+        /**
+         * Required. location of the resource
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * The product this resource represents.
+         *
+         * @param StorageDatabasecenterProtoCommonProduct $product
+         */
+        public function setProduct(StorageDatabasecenterProtoCommonProduct $product)
+        {
+        }
+        /**
+         * @return StorageDatabasecenterProtoCommonProduct
+         */
+        public function getProduct()
+        {
+        }
+        /**
+         * Closest parent Cloud Resource Manager container of this resource. It must
+         * be resource name of a Cloud Resource Manager project with the format of
+         * "/", such as "projects/123". For GCP provided resources, number should be
+         * project number.
+         *
+         * @param string $resourceContainer
+         */
+        public function setResourceContainer($resourceContainer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceContainer()
+        {
+        }
+        /**
+         * Required. Database resource id.
+         *
+         * @param StorageDatabasecenterPartnerapiV1mainDatabaseResourceId $resourceId
+         */
+        public function setResourceId(StorageDatabasecenterPartnerapiV1mainDatabaseResourceId $resourceId)
+        {
+        }
+        /**
+         * @return StorageDatabasecenterPartnerapiV1mainDatabaseResourceId
+         */
+        public function getResourceId()
+        {
+        }
+        /**
+         * The time at which the resource was updated and recorded at partner service.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * User-provided labels associated with the resource
+         *
+         * @param StorageDatabasecenterPartnerapiV1mainUserLabels $userLabelSet
+         */
+        public function setUserLabelSet(StorageDatabasecenterPartnerapiV1mainUserLabels $userLabelSet)
+        {
+        }
+        /**
+         * @return StorageDatabasecenterPartnerapiV1mainUserLabels
+         */
+        public function getUserLabelSet()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\StorageDatabasecenterPartnerapiV1mainBigQueryResourceMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Required. Full resource name of this instance.
-     *
-     * @param string $fullResourceName
-     */
-    public function setFullResourceName($fullResourceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFullResourceName()
-    {
-    }
-    /**
-     * Required. location of the resource
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * The product this resource represents.
-     *
-     * @param StorageDatabasecenterProtoCommonProduct $product
-     */
-    public function setProduct(StorageDatabasecenterProtoCommonProduct $product)
-    {
-    }
-    /**
-     * @return StorageDatabasecenterProtoCommonProduct
-     */
-    public function getProduct()
-    {
-    }
-    /**
-     * Closest parent Cloud Resource Manager container of this resource. It must
-     * be resource name of a Cloud Resource Manager project with the format of
-     * "/", such as "projects/123". For GCP provided resources, number should be
-     * project number.
-     *
-     * @param string $resourceContainer
-     */
-    public function setResourceContainer($resourceContainer)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceContainer()
-    {
-    }
-    /**
-     * Required. Database resource id.
-     *
-     * @param StorageDatabasecenterPartnerapiV1mainDatabaseResourceId $resourceId
-     */
-    public function setResourceId(StorageDatabasecenterPartnerapiV1mainDatabaseResourceId $resourceId)
-    {
-    }
-    /**
-     * @return StorageDatabasecenterPartnerapiV1mainDatabaseResourceId
-     */
-    public function getResourceId()
-    {
-    }
-    /**
-     * The time at which the resource was updated and recorded at partner service.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
-    {
-    }
-    /**
-     * User-provided labels associated with the resource
-     *
-     * @param StorageDatabasecenterPartnerapiV1mainUserLabels $userLabelSet
-     */
-    public function setUserLabelSet(StorageDatabasecenterPartnerapiV1mainUserLabels $userLabelSet)
-    {
-    }
-    /**
-     * @return StorageDatabasecenterPartnerapiV1mainUserLabels
-     */
-    public function getUserLabelSet()
+    class Google_Service_CloudAlloyDBAdmin_StorageDatabasecenterPartnerapiV1mainBigQueryResourceMetadata extends \Google\Service\CloudAlloyDBAdmin\StorageDatabasecenterPartnerapiV1mainBigQueryResourceMetadata
     {
     }
 }

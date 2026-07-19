@@ -8,6 +8,9 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Cell;
 
+use PhpOffice\PhpSpreadsheet\Exception;
+use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
+use Stringable;
 class CellAddress implements Stringable
 {
     protected ?Worksheet $worksheet;

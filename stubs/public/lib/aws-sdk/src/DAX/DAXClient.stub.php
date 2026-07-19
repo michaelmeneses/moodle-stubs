@@ -8,6 +8,7 @@
  */
 namespace Aws\DAX;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon DynamoDB Accelerator (DAX)** service.
  * @method \Aws\Result createCluster(array $args = [])

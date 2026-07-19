@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataQualityRuleSetExpectation extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    /**
-     * Optional. Expected values for the column value.
-     *
-     * @var string[]
-     */
-    public $values;
-    /**
-     * Optional. Expected values for the column value.
-     *
-     * @param string[] $values
-     */
-    public function setValues($values)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataQualityRuleSetExpectation extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        /**
+         * Optional. Expected values for the column value.
+         *
+         * @var string[]
+         */
+        public $values;
+        /**
+         * Optional. Expected values for the column value.
+         *
+         * @param string[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataQualityRuleSetExpectation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValues()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataQualityRuleSetExpectation extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataQualityRuleSetExpectation
     {
     }
 }

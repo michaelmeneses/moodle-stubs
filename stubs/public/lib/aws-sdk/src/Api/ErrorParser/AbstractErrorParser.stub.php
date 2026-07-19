@@ -8,6 +8,12 @@
  */
 namespace Aws\Api\ErrorParser;
 
+use Aws\Api\Parser\MetadataParserTrait;
+use Aws\Api\Parser\PayloadParserTrait;
+use Aws\Api\Service;
+use Aws\Api\StructureShape;
+use Aws\CommandInterface;
+use Psr\Http\Message\ResponseInterface;
 abstract class AbstractErrorParser
 {
     use MetadataParserTrait;

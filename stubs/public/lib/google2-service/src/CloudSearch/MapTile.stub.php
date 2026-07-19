@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class MapTile extends \Google\Model
-{
-    protected $imageUrlType = SafeUrlProto::class;
-    protected $imageUrlDataType = '';
+namespace Google\Service\CloudSearch {
+    class MapTile extends \Google\Model
+    {
+        protected $imageUrlType = SafeUrlProto::class;
+        protected $imageUrlDataType = '';
+        /**
+         * Map tile x coordinate
+         *
+         * @var 
+         */
+        public $tileX;
+        /**
+         * Map tile y coordinate
+         *
+         * @var 
+         */
+        public $tileY;
+        /**
+         * URL to an image file containing an office layout of the user's location for
+         * their organization, if one is available. For google.com, this image is from
+         * Corp Campus Maps.
+         *
+         * @param SafeUrlProto $imageUrl
+         */
+        public function setImageUrl(SafeUrlProto $imageUrl)
+        {
+        }
+        /**
+         * @return SafeUrlProto
+         */
+        public function getImageUrl()
+        {
+        }
+        public function setTileX($tileX)
+        {
+        }
+        public function getTileX()
+        {
+        }
+        public function setTileY($tileY)
+        {
+        }
+        public function getTileY()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * Map tile x coordinate
-     *
-     * @var 
+     * Runtime class alias of \Google\Service\CloudSearch\MapTile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $tileX;
-    /**
-     * Map tile y coordinate
-     *
-     * @var 
-     */
-    public $tileY;
-    /**
-     * URL to an image file containing an office layout of the user's location for
-     * their organization, if one is available. For google.com, this image is from
-     * Corp Campus Maps.
-     *
-     * @param SafeUrlProto $imageUrl
-     */
-    public function setImageUrl(SafeUrlProto $imageUrl)
-    {
-    }
-    /**
-     * @return SafeUrlProto
-     */
-    public function getImageUrl()
-    {
-    }
-    public function setTileX($tileX)
-    {
-    }
-    public function getTileX()
-    {
-    }
-    public function setTileY($tileY)
-    {
-    }
-    public function getTileY()
+    class Google_Service_CloudSearch_MapTile extends \Google\Service\CloudSearch\MapTile
     {
     }
 }

@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class AnnotationCurrentVersionRanges extends \Google\Model
-{
-    protected $cfiRangeType = BooksAnnotationsRange::class;
-    protected $cfiRangeDataType = '';
-    /**
-     * Content version applicable to ranges below.
-     *
-     * @var string
-     */
-    public $contentVersion;
-    protected $gbImageRangeType = BooksAnnotationsRange::class;
-    protected $gbImageRangeDataType = '';
-    protected $gbTextRangeType = BooksAnnotationsRange::class;
-    protected $gbTextRangeDataType = '';
-    protected $imageCfiRangeType = BooksAnnotationsRange::class;
-    protected $imageCfiRangeDataType = '';
-    /**
-     * Range in CFI format for this annotation for version above.
-     *
-     * @param BooksAnnotationsRange $cfiRange
-     */
-    public function setCfiRange(BooksAnnotationsRange $cfiRange)
+namespace Google\Service\Books {
+    class AnnotationCurrentVersionRanges extends \Google\Model
     {
+        protected $cfiRangeType = BooksAnnotationsRange::class;
+        protected $cfiRangeDataType = '';
+        /**
+         * Content version applicable to ranges below.
+         *
+         * @var string
+         */
+        public $contentVersion;
+        protected $gbImageRangeType = BooksAnnotationsRange::class;
+        protected $gbImageRangeDataType = '';
+        protected $gbTextRangeType = BooksAnnotationsRange::class;
+        protected $gbTextRangeDataType = '';
+        protected $imageCfiRangeType = BooksAnnotationsRange::class;
+        protected $imageCfiRangeDataType = '';
+        /**
+         * Range in CFI format for this annotation for version above.
+         *
+         * @param BooksAnnotationsRange $cfiRange
+         */
+        public function setCfiRange(BooksAnnotationsRange $cfiRange)
+        {
+        }
+        /**
+         * @return BooksAnnotationsRange
+         */
+        public function getCfiRange()
+        {
+        }
+        /**
+         * Content version applicable to ranges below.
+         *
+         * @param string $contentVersion
+         */
+        public function setContentVersion($contentVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContentVersion()
+        {
+        }
+        /**
+         * Range in GB image format for this annotation for version above.
+         *
+         * @param BooksAnnotationsRange $gbImageRange
+         */
+        public function setGbImageRange(BooksAnnotationsRange $gbImageRange)
+        {
+        }
+        /**
+         * @return BooksAnnotationsRange
+         */
+        public function getGbImageRange()
+        {
+        }
+        /**
+         * Range in GB text format for this annotation for version above.
+         *
+         * @param BooksAnnotationsRange $gbTextRange
+         */
+        public function setGbTextRange(BooksAnnotationsRange $gbTextRange)
+        {
+        }
+        /**
+         * @return BooksAnnotationsRange
+         */
+        public function getGbTextRange()
+        {
+        }
+        /**
+         * Range in image CFI format for this annotation for version above.
+         *
+         * @param BooksAnnotationsRange $imageCfiRange
+         */
+        public function setImageCfiRange(BooksAnnotationsRange $imageCfiRange)
+        {
+        }
+        /**
+         * @return BooksAnnotationsRange
+         */
+        public function getImageCfiRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BooksAnnotationsRange
+     * Runtime class alias of \Google\Service\Books\AnnotationCurrentVersionRanges registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCfiRange()
-    {
-    }
-    /**
-     * Content version applicable to ranges below.
-     *
-     * @param string $contentVersion
-     */
-    public function setContentVersion($contentVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContentVersion()
-    {
-    }
-    /**
-     * Range in GB image format for this annotation for version above.
-     *
-     * @param BooksAnnotationsRange $gbImageRange
-     */
-    public function setGbImageRange(BooksAnnotationsRange $gbImageRange)
-    {
-    }
-    /**
-     * @return BooksAnnotationsRange
-     */
-    public function getGbImageRange()
-    {
-    }
-    /**
-     * Range in GB text format for this annotation for version above.
-     *
-     * @param BooksAnnotationsRange $gbTextRange
-     */
-    public function setGbTextRange(BooksAnnotationsRange $gbTextRange)
-    {
-    }
-    /**
-     * @return BooksAnnotationsRange
-     */
-    public function getGbTextRange()
-    {
-    }
-    /**
-     * Range in image CFI format for this annotation for version above.
-     *
-     * @param BooksAnnotationsRange $imageCfiRange
-     */
-    public function setImageCfiRange(BooksAnnotationsRange $imageCfiRange)
-    {
-    }
-    /**
-     * @return BooksAnnotationsRange
-     */
-    public function getImageCfiRange()
+    class Google_Service_Books_AnnotationCurrentVersionRanges extends \Google\Service\Books\AnnotationCurrentVersionRanges
     {
     }
 }

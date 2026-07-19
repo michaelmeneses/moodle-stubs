@@ -29,6 +29,7 @@
  */
 namespace tool_langimport;
 
+use moodle_url;
 /**
  * Lang import controller
  *

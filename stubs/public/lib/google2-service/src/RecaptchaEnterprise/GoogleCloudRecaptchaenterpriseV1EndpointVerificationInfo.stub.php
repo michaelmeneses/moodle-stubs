@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecaptchaEnterprise;
-
-class GoogleCloudRecaptchaenterpriseV1EndpointVerificationInfo extends \Google\Model
-{
-    /**
-     * Email address for which to trigger a verification request.
-     *
-     * @var string
-     */
-    public $emailAddress;
-    /**
-     * Output only. Timestamp of the last successful verification for the
-     * endpoint, if any.
-     *
-     * @var string
-     */
-    public $lastVerificationTime;
-    /**
-     * Phone number for which to trigger a verification request. Should be given
-     * in E.164 format.
-     *
-     * @var string
-     */
-    public $phoneNumber;
-    /**
-     * Output only. Token to provide to the client to trigger endpoint
-     * verification. It must be used within 15 minutes.
-     *
-     * @var string
-     */
-    public $requestToken;
-    /**
-     * Email address for which to trigger a verification request.
-     *
-     * @param string $emailAddress
-     */
-    public function setEmailAddress($emailAddress)
+namespace Google\Service\RecaptchaEnterprise {
+    class GoogleCloudRecaptchaenterpriseV1EndpointVerificationInfo extends \Google\Model
     {
+        /**
+         * Email address for which to trigger a verification request.
+         *
+         * @var string
+         */
+        public $emailAddress;
+        /**
+         * Output only. Timestamp of the last successful verification for the
+         * endpoint, if any.
+         *
+         * @var string
+         */
+        public $lastVerificationTime;
+        /**
+         * Phone number for which to trigger a verification request. Should be given
+         * in E.164 format.
+         *
+         * @var string
+         */
+        public $phoneNumber;
+        /**
+         * Output only. Token to provide to the client to trigger endpoint
+         * verification. It must be used within 15 minutes.
+         *
+         * @var string
+         */
+        public $requestToken;
+        /**
+         * Email address for which to trigger a verification request.
+         *
+         * @param string $emailAddress
+         */
+        public function setEmailAddress($emailAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmailAddress()
+        {
+        }
+        /**
+         * Output only. Timestamp of the last successful verification for the
+         * endpoint, if any.
+         *
+         * @param string $lastVerificationTime
+         */
+        public function setLastVerificationTime($lastVerificationTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastVerificationTime()
+        {
+        }
+        /**
+         * Phone number for which to trigger a verification request. Should be given
+         * in E.164 format.
+         *
+         * @param string $phoneNumber
+         */
+        public function setPhoneNumber($phoneNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhoneNumber()
+        {
+        }
+        /**
+         * Output only. Token to provide to the client to trigger endpoint
+         * verification. It must be used within 15 minutes.
+         *
+         * @param string $requestToken
+         */
+        public function setRequestToken($requestToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1EndpointVerificationInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmailAddress()
-    {
-    }
-    /**
-     * Output only. Timestamp of the last successful verification for the
-     * endpoint, if any.
-     *
-     * @param string $lastVerificationTime
-     */
-    public function setLastVerificationTime($lastVerificationTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastVerificationTime()
-    {
-    }
-    /**
-     * Phone number for which to trigger a verification request. Should be given
-     * in E.164 format.
-     *
-     * @param string $phoneNumber
-     */
-    public function setPhoneNumber($phoneNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhoneNumber()
-    {
-    }
-    /**
-     * Output only. Token to provide to the client to trigger endpoint
-     * verification. It must be used within 15 minutes.
-     *
-     * @param string $requestToken
-     */
-    public function setRequestToken($requestToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestToken()
+    class Google_Service_RecaptchaEnterprise_GoogleCloudRecaptchaenterpriseV1EndpointVerificationInfo extends \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1EndpointVerificationInfo
     {
     }
 }

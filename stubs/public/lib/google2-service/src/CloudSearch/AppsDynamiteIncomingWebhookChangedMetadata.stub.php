@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteIncomingWebhookChangedMetadata extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $incomingWebhookName;
-    protected $initiatorIdType = AppsDynamiteUserId::class;
-    protected $initiatorIdDataType = '';
-    protected $initiatorProfileType = AppsDynamiteFrontendUser::class;
-    protected $initiatorProfileDataType = '';
-    /**
-     * @var string
-     */
-    public $obfuscatedIncomingWebhookId;
-    /**
-     * @var string
-     */
-    public $oldIncomingWebhookName;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param string
-     */
-    public function setIncomingWebhookName($incomingWebhookName)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteIncomingWebhookChangedMetadata extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $incomingWebhookName;
+        protected $initiatorIdType = AppsDynamiteUserId::class;
+        protected $initiatorIdDataType = '';
+        protected $initiatorProfileType = AppsDynamiteFrontendUser::class;
+        protected $initiatorProfileDataType = '';
+        /**
+         * @var string
+         */
+        public $obfuscatedIncomingWebhookId;
+        /**
+         * @var string
+         */
+        public $oldIncomingWebhookName;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param string
+         */
+        public function setIncomingWebhookName($incomingWebhookName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIncomingWebhookName()
+        {
+        }
+        /**
+         * @param AppsDynamiteUserId
+         */
+        public function setInitiatorId(AppsDynamiteUserId $initiatorId)
+        {
+        }
+        /**
+         * @return AppsDynamiteUserId
+         */
+        public function getInitiatorId()
+        {
+        }
+        /**
+         * @param AppsDynamiteFrontendUser
+         */
+        public function setInitiatorProfile(AppsDynamiteFrontendUser $initiatorProfile)
+        {
+        }
+        /**
+         * @return AppsDynamiteFrontendUser
+         */
+        public function getInitiatorProfile()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setObfuscatedIncomingWebhookId($obfuscatedIncomingWebhookId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObfuscatedIncomingWebhookId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOldIncomingWebhookName($oldIncomingWebhookName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOldIncomingWebhookName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteIncomingWebhookChangedMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIncomingWebhookName()
-    {
-    }
-    /**
-     * @param AppsDynamiteUserId
-     */
-    public function setInitiatorId(AppsDynamiteUserId $initiatorId)
-    {
-    }
-    /**
-     * @return AppsDynamiteUserId
-     */
-    public function getInitiatorId()
-    {
-    }
-    /**
-     * @param AppsDynamiteFrontendUser
-     */
-    public function setInitiatorProfile(AppsDynamiteFrontendUser $initiatorProfile)
-    {
-    }
-    /**
-     * @return AppsDynamiteFrontendUser
-     */
-    public function getInitiatorProfile()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setObfuscatedIncomingWebhookId($obfuscatedIncomingWebhookId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObfuscatedIncomingWebhookId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOldIncomingWebhookName($oldIncomingWebhookName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOldIncomingWebhookName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_CloudSearch_AppsDynamiteIncomingWebhookChangedMetadata extends \Google\Service\CloudSearch\AppsDynamiteIncomingWebhookChangedMetadata
     {
     }
 }

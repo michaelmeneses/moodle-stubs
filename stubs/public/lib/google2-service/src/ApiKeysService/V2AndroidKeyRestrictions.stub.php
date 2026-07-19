@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ApiKeysService;
-
-class V2AndroidKeyRestrictions extends \Google\Collection
-{
-    protected $collection_key = 'allowedApplications';
-    protected $allowedApplicationsType = V2AndroidApplication::class;
-    protected $allowedApplicationsDataType = 'array';
-    /**
-     * A list of Android applications that are allowed to make API calls with this
-     * key.
-     *
-     * @param V2AndroidApplication[] $allowedApplications
-     */
-    public function setAllowedApplications($allowedApplications)
+namespace Google\Service\ApiKeysService {
+    class V2AndroidKeyRestrictions extends \Google\Collection
     {
+        protected $collection_key = 'allowedApplications';
+        protected $allowedApplicationsType = V2AndroidApplication::class;
+        protected $allowedApplicationsDataType = 'array';
+        /**
+         * A list of Android applications that are allowed to make API calls with this
+         * key.
+         *
+         * @param V2AndroidApplication[] $allowedApplications
+         */
+        public function setAllowedApplications($allowedApplications)
+        {
+        }
+        /**
+         * @return V2AndroidApplication[]
+         */
+        public function getAllowedApplications()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return V2AndroidApplication[]
+     * Runtime class alias of \Google\Service\ApiKeysService\V2AndroidKeyRestrictions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowedApplications()
+    class Google_Service_ApiKeysService_V2AndroidKeyRestrictions extends \Google\Service\ApiKeysService\V2AndroidKeyRestrictions
     {
     }
 }

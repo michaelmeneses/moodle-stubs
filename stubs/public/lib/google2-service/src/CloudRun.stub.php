@@ -21,47 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for CloudRun (v2).
- *
- * <p>
- * Deploy and manage user provided container images that scale automatically
- * based on incoming requests. The Cloud Run Admin API v1 follows the Knative
- * Serving API specification, while v2 is aligned with Google Cloud AIP-based
- * API standards, as described in https://google.aip.dev/.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://cloud.google.com/run/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class CloudRun extends \Google\Service
-{
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    public $projects_locations;
-    public $projects_locations_builds;
-    public $projects_locations_jobs;
-    public $projects_locations_jobs_executions;
-    public $projects_locations_jobs_executions_tasks;
-    public $projects_locations_operations;
-    public $projects_locations_services;
-    public $projects_locations_services_revisions;
-    public $projects_locations_workerPools;
-    public $projects_locations_workerPools_revisions;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the CloudRun service.
+     * Service definition for CloudRun (v2).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Deploy and manage user provided container images that scale automatically
+     * based on incoming requests. The Cloud Run Admin API v1 follows the Knative
+     * Serving API specification, while v2 is aligned with Google Cloud AIP-based
+     * API standards, as described in https://google.aip.dev/.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://cloud.google.com/run/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class CloudRun extends \Google\Service
+    {
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        public $projects_locations;
+        public $projects_locations_builds;
+        public $projects_locations_jobs;
+        public $projects_locations_jobs_executions;
+        public $projects_locations_jobs_executions_tasks;
+        public $projects_locations_operations;
+        public $projects_locations_services;
+        public $projects_locations_services_revisions;
+        public $projects_locations_workerPools;
+        public $projects_locations_workerPools_revisions;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the CloudRun service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudRun registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudRun extends \Google\Service\CloudRun
     {
     }
 }

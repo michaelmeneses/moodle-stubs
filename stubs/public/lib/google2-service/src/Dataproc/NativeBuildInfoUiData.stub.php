@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class NativeBuildInfoUiData extends \Google\Collection
-{
-    protected $collection_key = 'buildInfo';
-    /**
-     * Optional. Build class of Native.
-     *
-     * @var string
-     */
-    public $buildClass;
-    protected $buildInfoType = BuildInfo::class;
-    protected $buildInfoDataType = 'array';
-    /**
-     * Optional. Build class of Native.
-     *
-     * @param string $buildClass
-     */
-    public function setBuildClass($buildClass)
+namespace Google\Service\Dataproc {
+    class NativeBuildInfoUiData extends \Google\Collection
     {
+        protected $collection_key = 'buildInfo';
+        /**
+         * Optional. Build class of Native.
+         *
+         * @var string
+         */
+        public $buildClass;
+        protected $buildInfoType = BuildInfo::class;
+        protected $buildInfoDataType = 'array';
+        /**
+         * Optional. Build class of Native.
+         *
+         * @param string $buildClass
+         */
+        public function setBuildClass($buildClass)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBuildClass()
+        {
+        }
+        /**
+         * Optional. Build related details.
+         *
+         * @param BuildInfo[] $buildInfo
+         */
+        public function setBuildInfo($buildInfo)
+        {
+        }
+        /**
+         * @return BuildInfo[]
+         */
+        public function getBuildInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\NativeBuildInfoUiData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBuildClass()
-    {
-    }
-    /**
-     * Optional. Build related details.
-     *
-     * @param BuildInfo[] $buildInfo
-     */
-    public function setBuildInfo($buildInfo)
-    {
-    }
-    /**
-     * @return BuildInfo[]
-     */
-    public function getBuildInfo()
+    class Google_Service_Dataproc_NativeBuildInfoUiData extends \Google\Service\Dataproc\NativeBuildInfoUiData
     {
     }
 }

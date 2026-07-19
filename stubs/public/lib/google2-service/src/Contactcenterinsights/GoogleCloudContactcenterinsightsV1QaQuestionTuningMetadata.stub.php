@@ -21,75 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1QaQuestionTuningMetadata extends \Google\Collection
-{
-    protected $collection_key = 'datasetValidationWarnings';
-    /**
-     * A list of any applicable data validation warnings about the question's
-     * feedback labels.
-     *
-     * @var string[]
-     */
-    public $datasetValidationWarnings;
-    /**
-     * Total number of valid labels provided for the question at the time of
-     * tuining.
-     *
-     * @var string
-     */
-    public $totalValidLabelCount;
-    /**
-     * Error status of the tuning operation for the question. Will only be set if
-     * the tuning operation failed.
-     *
-     * @var string
-     */
-    public $tuningError;
-    /**
-     * A list of any applicable data validation warnings about the question's
-     * feedback labels.
-     *
-     * @param string[] $datasetValidationWarnings
-     */
-    public function setDatasetValidationWarnings($datasetValidationWarnings)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1QaQuestionTuningMetadata extends \Google\Collection
     {
+        protected $collection_key = 'datasetValidationWarnings';
+        /**
+         * A list of any applicable data validation warnings about the question's
+         * feedback labels.
+         *
+         * @var string[]
+         */
+        public $datasetValidationWarnings;
+        /**
+         * Total number of valid labels provided for the question at the time of
+         * tuining.
+         *
+         * @var string
+         */
+        public $totalValidLabelCount;
+        /**
+         * Error status of the tuning operation for the question. Will only be set if
+         * the tuning operation failed.
+         *
+         * @var string
+         */
+        public $tuningError;
+        /**
+         * A list of any applicable data validation warnings about the question's
+         * feedback labels.
+         *
+         * @param string[] $datasetValidationWarnings
+         */
+        public function setDatasetValidationWarnings($datasetValidationWarnings)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDatasetValidationWarnings()
+        {
+        }
+        /**
+         * Total number of valid labels provided for the question at the time of
+         * tuining.
+         *
+         * @param string $totalValidLabelCount
+         */
+        public function setTotalValidLabelCount($totalValidLabelCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalValidLabelCount()
+        {
+        }
+        /**
+         * Error status of the tuning operation for the question. Will only be set if
+         * the tuning operation failed.
+         *
+         * @param string $tuningError
+         */
+        public function setTuningError($tuningError)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTuningError()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1QaQuestionTuningMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatasetValidationWarnings()
-    {
-    }
-    /**
-     * Total number of valid labels provided for the question at the time of
-     * tuining.
-     *
-     * @param string $totalValidLabelCount
-     */
-    public function setTotalValidLabelCount($totalValidLabelCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalValidLabelCount()
-    {
-    }
-    /**
-     * Error status of the tuning operation for the question. Will only be set if
-     * the tuning operation failed.
-     *
-     * @param string $tuningError
-     */
-    public function setTuningError($tuningError)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTuningError()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1QaQuestionTuningMetadata extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1QaQuestionTuningMetadata
     {
     }
 }

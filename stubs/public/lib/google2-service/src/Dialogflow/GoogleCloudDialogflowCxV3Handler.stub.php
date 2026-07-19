@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3Handler extends \Google\Model
-{
-    protected $eventHandlerType = GoogleCloudDialogflowCxV3HandlerEventHandler::class;
-    protected $eventHandlerDataType = '';
-    protected $lifecycleHandlerType = GoogleCloudDialogflowCxV3HandlerLifecycleHandler::class;
-    protected $lifecycleHandlerDataType = '';
-    /**
-     * A handler triggered by event.
-     *
-     * @param GoogleCloudDialogflowCxV3HandlerEventHandler $eventHandler
-     */
-    public function setEventHandler(GoogleCloudDialogflowCxV3HandlerEventHandler $eventHandler)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3Handler extends \Google\Model
     {
+        protected $eventHandlerType = GoogleCloudDialogflowCxV3HandlerEventHandler::class;
+        protected $eventHandlerDataType = '';
+        protected $lifecycleHandlerType = GoogleCloudDialogflowCxV3HandlerLifecycleHandler::class;
+        protected $lifecycleHandlerDataType = '';
+        /**
+         * A handler triggered by event.
+         *
+         * @param GoogleCloudDialogflowCxV3HandlerEventHandler $eventHandler
+         */
+        public function setEventHandler(GoogleCloudDialogflowCxV3HandlerEventHandler $eventHandler)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3HandlerEventHandler
+         */
+        public function getEventHandler()
+        {
+        }
+        /**
+         * A handler triggered during specific lifecycle of the playbook execution.
+         *
+         * @param GoogleCloudDialogflowCxV3HandlerLifecycleHandler $lifecycleHandler
+         */
+        public function setLifecycleHandler(GoogleCloudDialogflowCxV3HandlerLifecycleHandler $lifecycleHandler)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3HandlerLifecycleHandler
+         */
+        public function getLifecycleHandler()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3HandlerEventHandler
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Handler registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEventHandler()
-    {
-    }
-    /**
-     * A handler triggered during specific lifecycle of the playbook execution.
-     *
-     * @param GoogleCloudDialogflowCxV3HandlerLifecycleHandler $lifecycleHandler
-     */
-    public function setLifecycleHandler(GoogleCloudDialogflowCxV3HandlerLifecycleHandler $lifecycleHandler)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3HandlerLifecycleHandler
-     */
-    public function getLifecycleHandler()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3Handler extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3Handler
     {
     }
 }

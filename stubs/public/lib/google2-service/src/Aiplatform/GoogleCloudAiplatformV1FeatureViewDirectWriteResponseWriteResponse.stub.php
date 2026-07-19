@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1FeatureViewDirectWriteResponseWriteResponse extends \Google\Model
-{
-    protected $dataKeyType = GoogleCloudAiplatformV1FeatureViewDataKey::class;
-    protected $dataKeyDataType = '';
-    /**
-     * When the feature values were written to the online store. If
-     * FeatureViewDirectWriteResponse.status is not OK, this field is not
-     * populated.
-     *
-     * @var string
-     */
-    public $onlineStoreWriteTime;
-    /**
-     * What key is this write response associated with.
-     *
-     * @param GoogleCloudAiplatformV1FeatureViewDataKey $dataKey
-     */
-    public function setDataKey(GoogleCloudAiplatformV1FeatureViewDataKey $dataKey)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1FeatureViewDirectWriteResponseWriteResponse extends \Google\Model
     {
+        protected $dataKeyType = GoogleCloudAiplatformV1FeatureViewDataKey::class;
+        protected $dataKeyDataType = '';
+        /**
+         * When the feature values were written to the online store. If
+         * FeatureViewDirectWriteResponse.status is not OK, this field is not
+         * populated.
+         *
+         * @var string
+         */
+        public $onlineStoreWriteTime;
+        /**
+         * What key is this write response associated with.
+         *
+         * @param GoogleCloudAiplatformV1FeatureViewDataKey $dataKey
+         */
+        public function setDataKey(GoogleCloudAiplatformV1FeatureViewDataKey $dataKey)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1FeatureViewDataKey
+         */
+        public function getDataKey()
+        {
+        }
+        /**
+         * When the feature values were written to the online store. If
+         * FeatureViewDirectWriteResponse.status is not OK, this field is not
+         * populated.
+         *
+         * @param string $onlineStoreWriteTime
+         */
+        public function setOnlineStoreWriteTime($onlineStoreWriteTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOnlineStoreWriteTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1FeatureViewDataKey
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureViewDirectWriteResponseWriteResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataKey()
-    {
-    }
-    /**
-     * When the feature values were written to the online store. If
-     * FeatureViewDirectWriteResponse.status is not OK, this field is not
-     * populated.
-     *
-     * @param string $onlineStoreWriteTime
-     */
-    public function setOnlineStoreWriteTime($onlineStoreWriteTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOnlineStoreWriteTime()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1FeatureViewDirectWriteResponseWriteResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureViewDirectWriteResponseWriteResponse
     {
     }
 }

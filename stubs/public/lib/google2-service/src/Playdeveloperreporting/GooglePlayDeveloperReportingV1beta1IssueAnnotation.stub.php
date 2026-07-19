@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Playdeveloperreporting;
-
-class GooglePlayDeveloperReportingV1beta1IssueAnnotation extends \Google\Model
-{
-    /**
-     * Contains the contents of the annotation message.
-     *
-     * @var string
-     */
-    public $body;
-    /**
-     * Category that the annotation belongs to. An annotation will belong to a
-     * single category. Example categories: "Potential fix", "Insight".
-     *
-     * @var string
-     */
-    public $category;
-    /**
-     * Title for the annotation.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Contains the contents of the annotation message.
-     *
-     * @param string $body
-     */
-    public function setBody($body)
+namespace Google\Service\Playdeveloperreporting {
+    class GooglePlayDeveloperReportingV1beta1IssueAnnotation extends \Google\Model
     {
+        /**
+         * Contains the contents of the annotation message.
+         *
+         * @var string
+         */
+        public $body;
+        /**
+         * Category that the annotation belongs to. An annotation will belong to a
+         * single category. Example categories: "Potential fix", "Insight".
+         *
+         * @var string
+         */
+        public $category;
+        /**
+         * Title for the annotation.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Contains the contents of the annotation message.
+         *
+         * @param string $body
+         */
+        public function setBody($body)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBody()
+        {
+        }
+        /**
+         * Category that the annotation belongs to. An annotation will belong to a
+         * single category. Example categories: "Potential fix", "Insight".
+         *
+         * @param string $category
+         */
+        public function setCategory($category)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCategory()
+        {
+        }
+        /**
+         * Title for the annotation.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1IssueAnnotation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBody()
-    {
-    }
-    /**
-     * Category that the annotation belongs to. An annotation will belong to a
-     * single category. Example categories: "Potential fix", "Insight".
-     *
-     * @param string $category
-     */
-    public function setCategory($category)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCategory()
-    {
-    }
-    /**
-     * Title for the annotation.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_Playdeveloperreporting_GooglePlayDeveloperReportingV1beta1IssueAnnotation extends \Google\Service\Playdeveloperreporting\GooglePlayDeveloperReportingV1beta1IssueAnnotation
     {
     }
 }

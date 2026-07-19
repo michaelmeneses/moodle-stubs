@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ApigeeRegistry;
-
-class Build extends \Google\Model
-{
-    /**
-     * Output only. Commit ID of the latest commit in the build.
-     *
-     * @var string
-     */
-    public $commitId;
-    /**
-     * Output only. Commit time of the latest commit in the build.
-     *
-     * @var string
-     */
-    public $commitTime;
-    /**
-     * Output only. Path of the open source repository:
-     * github.com/apigee/registry.
-     *
-     * @var string
-     */
-    public $repo;
-    /**
-     * Output only. Commit ID of the latest commit in the build.
-     *
-     * @param string $commitId
-     */
-    public function setCommitId($commitId)
+namespace Google\Service\ApigeeRegistry {
+    class Build extends \Google\Model
     {
+        /**
+         * Output only. Commit ID of the latest commit in the build.
+         *
+         * @var string
+         */
+        public $commitId;
+        /**
+         * Output only. Commit time of the latest commit in the build.
+         *
+         * @var string
+         */
+        public $commitTime;
+        /**
+         * Output only. Path of the open source repository:
+         * github.com/apigee/registry.
+         *
+         * @var string
+         */
+        public $repo;
+        /**
+         * Output only. Commit ID of the latest commit in the build.
+         *
+         * @param string $commitId
+         */
+        public function setCommitId($commitId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCommitId()
+        {
+        }
+        /**
+         * Output only. Commit time of the latest commit in the build.
+         *
+         * @param string $commitTime
+         */
+        public function setCommitTime($commitTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCommitTime()
+        {
+        }
+        /**
+         * Output only. Path of the open source repository:
+         * github.com/apigee/registry.
+         *
+         * @param string $repo
+         */
+        public function setRepo($repo)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRepo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ApigeeRegistry\Build registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommitId()
-    {
-    }
-    /**
-     * Output only. Commit time of the latest commit in the build.
-     *
-     * @param string $commitTime
-     */
-    public function setCommitTime($commitTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCommitTime()
-    {
-    }
-    /**
-     * Output only. Path of the open source repository:
-     * github.com/apigee/registry.
-     *
-     * @param string $repo
-     */
-    public function setRepo($repo)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRepo()
+    class Google_Service_ApigeeRegistry_Build extends \Google\Service\ApigeeRegistry\Build
     {
     }
 }

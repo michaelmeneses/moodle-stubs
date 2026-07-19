@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunOpV2SecretKeySelector extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $secret;
-    /**
-     * @var string
-     */
-    public $version;
-    /**
-     * @param string
-     */
-    public function setSecret($secret)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunOpV2SecretKeySelector extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $secret;
+        /**
+         * @var string
+         */
+        public $version;
+        /**
+         * @param string
+         */
+        public function setSecret($secret)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecret()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunOpV2SecretKeySelector registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSecret()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_CloudRun_GoogleCloudRunOpV2SecretKeySelector extends \Google\Service\CloudRun\GoogleCloudRunOpV2SecretKeySelector
     {
     }
 }

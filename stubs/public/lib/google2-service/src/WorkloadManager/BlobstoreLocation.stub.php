@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class BlobstoreLocation extends \Google\Collection
-{
-    protected $collection_key = 'policyId';
-    /**
-     * @var string[]
-     */
-    public $policyId;
-    /**
-     * @param string[]
-     */
-    public function setPolicyId($policyId)
+namespace Google\Service\WorkloadManager {
+    class BlobstoreLocation extends \Google\Collection
     {
+        protected $collection_key = 'policyId';
+        /**
+         * @var string[]
+         */
+        public $policyId;
+        /**
+         * @param string[]
+         */
+        public function setPolicyId($policyId)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPolicyId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\WorkloadManager\BlobstoreLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPolicyId()
+    class Google_Service_WorkloadManager_BlobstoreLocation extends \Google\Service\WorkloadManager\BlobstoreLocation
     {
     }
 }

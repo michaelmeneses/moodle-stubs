@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2AwsAccountRegex extends \Google\Model
-{
-    /**
-     * Optional. Regex to test the AWS account ID against. If empty, all accounts
-     * match.
-     *
-     * @var string
-     */
-    public $accountIdRegex;
-    /**
-     * Optional. Regex to test the AWS account ID against. If empty, all accounts
-     * match.
-     *
-     * @param string $accountIdRegex
-     */
-    public function setAccountIdRegex($accountIdRegex)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2AwsAccountRegex extends \Google\Model
     {
+        /**
+         * Optional. Regex to test the AWS account ID against. If empty, all accounts
+         * match.
+         *
+         * @var string
+         */
+        public $accountIdRegex;
+        /**
+         * Optional. Regex to test the AWS account ID against. If empty, all accounts
+         * match.
+         *
+         * @param string $accountIdRegex
+         */
+        public function setAccountIdRegex($accountIdRegex)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountIdRegex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2AwsAccountRegex registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountIdRegex()
+    class Google_Service_DLP_GooglePrivacyDlpV2AwsAccountRegex extends \Google\Service\DLP\GooglePrivacyDlpV2AwsAccountRegex
     {
     }
 }

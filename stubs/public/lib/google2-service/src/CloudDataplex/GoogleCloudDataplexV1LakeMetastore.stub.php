@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1LakeMetastore extends \Google\Model
-{
-    /**
-     * Optional. A relative reference to the Dataproc Metastore
-     * (https://cloud.google.com/dataproc-metastore/docs) service associated with
-     * the lake:
-     * projects/{project_id}/locations/{location_id}/services/{service_id}
-     *
-     * @var string
-     */
-    public $service;
-    /**
-     * Optional. A relative reference to the Dataproc Metastore
-     * (https://cloud.google.com/dataproc-metastore/docs) service associated with
-     * the lake:
-     * projects/{project_id}/locations/{location_id}/services/{service_id}
-     *
-     * @param string $service
-     */
-    public function setService($service)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1LakeMetastore extends \Google\Model
     {
+        /**
+         * Optional. A relative reference to the Dataproc Metastore
+         * (https://cloud.google.com/dataproc-metastore/docs) service associated with
+         * the lake:
+         * projects/{project_id}/locations/{location_id}/services/{service_id}
+         *
+         * @var string
+         */
+        public $service;
+        /**
+         * Optional. A relative reference to the Dataproc Metastore
+         * (https://cloud.google.com/dataproc-metastore/docs) service associated with
+         * the lake:
+         * projects/{project_id}/locations/{location_id}/services/{service_id}
+         *
+         * @param string $service
+         */
+        public function setService($service)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getService()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1LakeMetastore registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getService()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1LakeMetastore extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1LakeMetastore
     {
     }
 }

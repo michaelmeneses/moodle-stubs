@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2PinControlMetadataProductPins extends \Google\Collection
-{
-    protected $collection_key = 'productId';
-    /**
-     * List of product ids which have associated pins.
-     *
-     * @var string[]
-     */
-    public $productId;
-    /**
-     * List of product ids which have associated pins.
-     *
-     * @param string[] $productId
-     */
-    public function setProductId($productId)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2PinControlMetadataProductPins extends \Google\Collection
     {
+        protected $collection_key = 'productId';
+        /**
+         * List of product ids which have associated pins.
+         *
+         * @var string[]
+         */
+        public $productId;
+        /**
+         * List of product ids which have associated pins.
+         *
+         * @param string[] $productId
+         */
+        public function setProductId($productId)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getProductId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2PinControlMetadataProductPins registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProductId()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2PinControlMetadataProductPins extends \Google\Service\CloudRetail\GoogleCloudRetailV2PinControlMetadataProductPins
     {
     }
 }

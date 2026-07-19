@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class EnterpriseTopazFrontendTeamsLink extends \Google\Model
-{
-    /**
-     * The identifying link type
-     *
-     * @var string
-     */
-    public $type;
-    protected $urlType = SafeUrlProto::class;
-    protected $urlDataType = '';
-    /**
-     * The identifying link type
-     *
-     * @param string $type
-     */
-    public function setType($type)
+namespace Google\Service\CloudSearch {
+    class EnterpriseTopazFrontendTeamsLink extends \Google\Model
     {
+        /**
+         * The identifying link type
+         *
+         * @var string
+         */
+        public $type;
+        protected $urlType = SafeUrlProto::class;
+        protected $urlDataType = '';
+        /**
+         * The identifying link type
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * @param SafeUrlProto $url
+         */
+        public function setUrl(SafeUrlProto $url)
+        {
+        }
+        /**
+         * @return SafeUrlProto
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\EnterpriseTopazFrontendTeamsLink registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getType()
-    {
-    }
-    /**
-     * @param SafeUrlProto $url
-     */
-    public function setUrl(SafeUrlProto $url)
-    {
-    }
-    /**
-     * @return SafeUrlProto
-     */
-    public function getUrl()
+    class Google_Service_CloudSearch_EnterpriseTopazFrontendTeamsLink extends \Google\Service\CloudSearch\EnterpriseTopazFrontendTeamsLink
     {
     }
 }

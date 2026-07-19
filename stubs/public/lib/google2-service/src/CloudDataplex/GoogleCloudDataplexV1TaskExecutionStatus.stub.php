@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1TaskExecutionStatus extends \Google\Model
-{
-    protected $latestJobType = GoogleCloudDataplexV1Job::class;
-    protected $latestJobDataType = '';
-    /**
-     * Output only. Last update time of the status.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. latest job execution
-     *
-     * @param GoogleCloudDataplexV1Job $latestJob
-     */
-    public function setLatestJob(GoogleCloudDataplexV1Job $latestJob)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1TaskExecutionStatus extends \Google\Model
     {
+        protected $latestJobType = GoogleCloudDataplexV1Job::class;
+        protected $latestJobDataType = '';
+        /**
+         * Output only. Last update time of the status.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. latest job execution
+         *
+         * @param GoogleCloudDataplexV1Job $latestJob
+         */
+        public function setLatestJob(GoogleCloudDataplexV1Job $latestJob)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1Job
+         */
+        public function getLatestJob()
+        {
+        }
+        /**
+         * Output only. Last update time of the status.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDataplexV1Job
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1TaskExecutionStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLatestJob()
-    {
-    }
-    /**
-     * Output only. Last update time of the status.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1TaskExecutionStatus extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1TaskExecutionStatus
     {
     }
 }

@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class GoogleDevtoolsRemoteworkersV1test2CommandResult extends \Google\Collection
-{
-    protected $collection_key = 'metadata';
-    public $duration;
-    public $exitCode;
-    public $metadata;
-    protected $outputsType = GoogleDevtoolsRemoteworkersV1test2Digest::class;
-    protected $outputsDataType = '';
-    public $overhead;
-    protected $statusType = GoogleRpcStatus::class;
-    protected $statusDataType = '';
-    public function setDuration($duration)
+namespace Google\Service\RemoteBuildExecution {
+    class GoogleDevtoolsRemoteworkersV1test2CommandResult extends \Google\Collection
     {
+        protected $collection_key = 'metadata';
+        public $duration;
+        public $exitCode;
+        public $metadata;
+        protected $outputsType = GoogleDevtoolsRemoteworkersV1test2Digest::class;
+        protected $outputsDataType = '';
+        public $overhead;
+        protected $statusType = GoogleRpcStatus::class;
+        protected $statusDataType = '';
+        public function setDuration($duration)
+        {
+        }
+        public function getDuration()
+        {
+        }
+        public function setExitCode($exitCode)
+        {
+        }
+        public function getExitCode()
+        {
+        }
+        public function setMetadata($metadata)
+        {
+        }
+        public function getMetadata()
+        {
+        }
+        /**
+         * @param GoogleDevtoolsRemoteworkersV1test2Digest
+         */
+        public function setOutputs(GoogleDevtoolsRemoteworkersV1test2Digest $outputs)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsRemoteworkersV1test2Digest
+         */
+        public function getOutputs()
+        {
+        }
+        public function setOverhead($overhead)
+        {
+        }
+        public function getOverhead()
+        {
+        }
+        /**
+         * @param GoogleRpcStatus
+         */
+        public function setStatus(GoogleRpcStatus $status)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus
+         */
+        public function getStatus()
+        {
+        }
     }
-    public function getDuration()
-    {
-    }
-    public function setExitCode($exitCode)
-    {
-    }
-    public function getExitCode()
-    {
-    }
-    public function setMetadata($metadata)
-    {
-    }
-    public function getMetadata()
-    {
-    }
+}
+namespace {
     /**
-     * @param GoogleDevtoolsRemoteworkersV1test2Digest
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemoteworkersV1test2CommandResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setOutputs(GoogleDevtoolsRemoteworkersV1test2Digest $outputs)
-    {
-    }
-    /**
-     * @return GoogleDevtoolsRemoteworkersV1test2Digest
-     */
-    public function getOutputs()
-    {
-    }
-    public function setOverhead($overhead)
-    {
-    }
-    public function getOverhead()
-    {
-    }
-    /**
-     * @param GoogleRpcStatus
-     */
-    public function setStatus(GoogleRpcStatus $status)
-    {
-    }
-    /**
-     * @return GoogleRpcStatus
-     */
-    public function getStatus()
+    class Google_Service_RemoteBuildExecution_GoogleDevtoolsRemoteworkersV1test2CommandResult extends \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemoteworkersV1test2CommandResult
     {
     }
 }

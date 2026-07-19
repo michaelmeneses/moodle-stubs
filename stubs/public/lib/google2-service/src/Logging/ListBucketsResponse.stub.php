@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Logging;
-
-class ListBucketsResponse extends \Google\Collection
-{
-    protected $collection_key = 'buckets';
-    protected $bucketsType = LogBucket::class;
-    protected $bucketsDataType = 'array';
-    /**
-     * If there might be more results than appear in this response, then
-     * nextPageToken is included. To get the next set of results, call the same
-     * method again using the value of nextPageToken as pageToken.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * A list of buckets.
-     *
-     * @param LogBucket[] $buckets
-     */
-    public function setBuckets($buckets)
+namespace Google\Service\Logging {
+    class ListBucketsResponse extends \Google\Collection
     {
+        protected $collection_key = 'buckets';
+        protected $bucketsType = LogBucket::class;
+        protected $bucketsDataType = 'array';
+        /**
+         * If there might be more results than appear in this response, then
+         * nextPageToken is included. To get the next set of results, call the same
+         * method again using the value of nextPageToken as pageToken.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * A list of buckets.
+         *
+         * @param LogBucket[] $buckets
+         */
+        public function setBuckets($buckets)
+        {
+        }
+        /**
+         * @return LogBucket[]
+         */
+        public function getBuckets()
+        {
+        }
+        /**
+         * If there might be more results than appear in this response, then
+         * nextPageToken is included. To get the next set of results, call the same
+         * method again using the value of nextPageToken as pageToken.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LogBucket[]
+     * Runtime class alias of \Google\Service\Logging\ListBucketsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBuckets()
-    {
-    }
-    /**
-     * If there might be more results than appear in this response, then
-     * nextPageToken is included. To get the next set of results, call the same
-     * method again using the value of nextPageToken as pageToken.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Logging_ListBucketsResponse extends \Google\Service\Logging\ListBucketsResponse
     {
     }
 }

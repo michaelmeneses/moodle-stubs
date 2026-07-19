@@ -21,45 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudOSLogin\Resource;
-
-/**
- * The "projects" collection of methods.
- * Typical usage is:
- *  <code>
- *   $osloginService = new Google\Service\CloudOSLogin(...);
- *   $projects = $osloginService->users_projects;
- *  </code>
- */
-class UsersProjects extends \Google\Service\Resource
-{
+namespace Google\Service\CloudOSLogin\Resource {
+    use Google\Service\CloudOSLogin\OsloginEmpty;
+    use Google\Service\CloudOSLogin\PosixAccount;
+    use Google\Service\CloudOSLogin\ProvisionPosixAccountRequest;
     /**
-     * Deletes a POSIX account. (projects.delete)
-     *
-     * @param string $name Required. A reference to the POSIX account to update.
-     * POSIX accounts are identified by the project ID they are associated with. A
-     * reference to the POSIX account is in format
-     * `users/{user}/projects/{project}`.
-     * @param array $optParams Optional parameters.
-     * @return OsloginEmpty
-     * @throws \Google\Service\Exception
+     * The "projects" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $osloginService = new Google\Service\CloudOSLogin(...);
+     *   $projects = $osloginService->users_projects;
+     *  </code>
      */
-    public function delete($name, $optParams = [])
+    class UsersProjects extends \Google\Service\Resource
     {
+        /**
+         * Deletes a POSIX account. (projects.delete)
+         *
+         * @param string $name Required. A reference to the POSIX account to update.
+         * POSIX accounts are identified by the project ID they are associated with. A
+         * reference to the POSIX account is in format
+         * `users/{user}/projects/{project}`.
+         * @param array $optParams Optional parameters.
+         * @return OsloginEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Adds a POSIX account and returns the profile information. Default POSIX
+         * account information is set when no username and UID exist as part of the
+         * login profile. (projects.provisionPosixAccount)
+         *
+         * @param string $name Required. The unique ID for the user in format
+         * `users/{user}/projects/{project}`.
+         * @param ProvisionPosixAccountRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return PosixAccount
+         * @throws \Google\Service\Exception
+         */
+        public function provisionPosixAccount($name, ProvisionPosixAccountRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Adds a POSIX account and returns the profile information. Default POSIX
-     * account information is set when no username and UID exist as part of the
-     * login profile. (projects.provisionPosixAccount)
-     *
-     * @param string $name Required. The unique ID for the user in format
-     * `users/{user}/projects/{project}`.
-     * @param ProvisionPosixAccountRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return PosixAccount
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\CloudOSLogin\Resource\UsersProjects registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function provisionPosixAccount($name, ProvisionPosixAccountRequest $postBody, $optParams = [])
+    class Google_Service_CloudOSLogin_Resource_UsersProjects extends \Google\Service\CloudOSLogin\Resource\UsersProjects
     {
     }
 }

@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1alpha1SampleRule extends \Google\Model
-{
-    /**
-     * To specify the filter for the conversions that should apply this sample
-     * rule. An empty filter means this sample rule applies to all conversations.
-     *
-     * @var string
-     */
-    public $conversationFilter;
-    /**
-     * Optional. Group by dimension to sample the conversation. If no dimension is
-     * provided, the sampling will be applied to the project level. Current
-     * supported dimensions is 'quality_metadata.agent_info.agent_id'.
-     *
-     * @var string
-     */
-    public $dimension;
-    /**
-     * Percentage of conversations that we should sample based on the dimension
-     * between [0, 100].
-     *
-     * @var 
-     */
-    public $samplePercentage;
-    /**
-     * Number of the conversations that we should sample based on the dimension.
-     *
-     * @var string
-     */
-    public $sampleRow;
-    /**
-     * To specify the filter for the conversions that should apply this sample
-     * rule. An empty filter means this sample rule applies to all conversations.
-     *
-     * @param string $conversationFilter
-     */
-    public function setConversationFilter($conversationFilter)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1alpha1SampleRule extends \Google\Model
     {
+        /**
+         * To specify the filter for the conversions that should apply this sample
+         * rule. An empty filter means this sample rule applies to all conversations.
+         *
+         * @var string
+         */
+        public $conversationFilter;
+        /**
+         * Optional. Group by dimension to sample the conversation. If no dimension is
+         * provided, the sampling will be applied to the project level. Current
+         * supported dimensions is 'quality_metadata.agent_info.agent_id'.
+         *
+         * @var string
+         */
+        public $dimension;
+        /**
+         * Percentage of conversations that we should sample based on the dimension
+         * between [0, 100].
+         *
+         * @var 
+         */
+        public $samplePercentage;
+        /**
+         * Number of the conversations that we should sample based on the dimension.
+         *
+         * @var string
+         */
+        public $sampleRow;
+        /**
+         * To specify the filter for the conversions that should apply this sample
+         * rule. An empty filter means this sample rule applies to all conversations.
+         *
+         * @param string $conversationFilter
+         */
+        public function setConversationFilter($conversationFilter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConversationFilter()
+        {
+        }
+        /**
+         * Optional. Group by dimension to sample the conversation. If no dimension is
+         * provided, the sampling will be applied to the project level. Current
+         * supported dimensions is 'quality_metadata.agent_info.agent_id'.
+         *
+         * @param string $dimension
+         */
+        public function setDimension($dimension)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDimension()
+        {
+        }
+        public function setSamplePercentage($samplePercentage)
+        {
+        }
+        public function getSamplePercentage()
+        {
+        }
+        /**
+         * Number of the conversations that we should sample based on the dimension.
+         *
+         * @param string $sampleRow
+         */
+        public function setSampleRow($sampleRow)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSampleRow()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1SampleRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConversationFilter()
-    {
-    }
-    /**
-     * Optional. Group by dimension to sample the conversation. If no dimension is
-     * provided, the sampling will be applied to the project level. Current
-     * supported dimensions is 'quality_metadata.agent_info.agent_id'.
-     *
-     * @param string $dimension
-     */
-    public function setDimension($dimension)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDimension()
-    {
-    }
-    public function setSamplePercentage($samplePercentage)
-    {
-    }
-    public function getSamplePercentage()
-    {
-    }
-    /**
-     * Number of the conversations that we should sample based on the dimension.
-     *
-     * @param string $sampleRow
-     */
-    public function setSampleRow($sampleRow)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSampleRow()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1alpha1SampleRule extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1SampleRule
     {
     }
 }

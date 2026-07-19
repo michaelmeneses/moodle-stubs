@@ -21,148 +21,157 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1SetSuggestionFeatureConfigOperationMetadata extends \Google\Model
-{
-    /**
-     * Participant role not set.
-     */
-    public const PARTICIPANT_ROLE_ROLE_UNSPECIFIED = 'ROLE_UNSPECIFIED';
-    /**
-     * Participant is a human agent.
-     */
-    public const PARTICIPANT_ROLE_HUMAN_AGENT = 'HUMAN_AGENT';
-    /**
-     * Participant is an automated agent, such as a Dialogflow agent.
-     */
-    public const PARTICIPANT_ROLE_AUTOMATED_AGENT = 'AUTOMATED_AGENT';
-    /**
-     * Participant is an end user that has called or chatted with Dialogflow
-     * services.
-     */
-    public const PARTICIPANT_ROLE_END_USER = 'END_USER';
-    /**
-     * Unspecified feature type.
-     */
-    public const SUGGESTION_FEATURE_TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * Run article suggestion model for chat.
-     */
-    public const SUGGESTION_FEATURE_TYPE_ARTICLE_SUGGESTION = 'ARTICLE_SUGGESTION';
-    /**
-     * Run FAQ model.
-     */
-    public const SUGGESTION_FEATURE_TYPE_FAQ = 'FAQ';
-    /**
-     * Run smart reply model for chat.
-     */
-    public const SUGGESTION_FEATURE_TYPE_SMART_REPLY = 'SMART_REPLY';
-    /**
-     * Run Dialogflow assist model for chat, which will return automated agent
-     * response as suggestion.
-     */
-    public const SUGGESTION_FEATURE_TYPE_DIALOGFLOW_ASSIST = 'DIALOGFLOW_ASSIST';
-    /**
-     * Run conversation summarization model for chat.
-     */
-    public const SUGGESTION_FEATURE_TYPE_CONVERSATION_SUMMARIZATION = 'CONVERSATION_SUMMARIZATION';
-    /**
-     * Run knowledge search with text input from agent or text generated query.
-     */
-    public const SUGGESTION_FEATURE_TYPE_KNOWLEDGE_SEARCH = 'KNOWLEDGE_SEARCH';
-    /**
-     * Run knowledge assist with automatic query generation.
-     */
-    public const SUGGESTION_FEATURE_TYPE_KNOWLEDGE_ASSIST = 'KNOWLEDGE_ASSIST';
-    /**
-     * The resource name of the conversation profile. Format:
-     * `projects//locations//conversationProfiles/`
-     *
-     * @var string
-     */
-    public $conversationProfile;
-    /**
-     * Timestamp whe the request was created. The time is measured on server side.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Required. The participant role to add or update the suggestion feature
-     * config. Only HUMAN_AGENT or END_USER can be used.
-     *
-     * @var string
-     */
-    public $participantRole;
-    /**
-     * Required. The type of the suggestion feature to add or update.
-     *
-     * @var string
-     */
-    public $suggestionFeatureType;
-    /**
-     * The resource name of the conversation profile. Format:
-     * `projects//locations//conversationProfiles/`
-     *
-     * @param string $conversationProfile
-     */
-    public function setConversationProfile($conversationProfile)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1SetSuggestionFeatureConfigOperationMetadata extends \Google\Model
     {
+        /**
+         * Participant role not set.
+         */
+        public const PARTICIPANT_ROLE_ROLE_UNSPECIFIED = 'ROLE_UNSPECIFIED';
+        /**
+         * Participant is a human agent.
+         */
+        public const PARTICIPANT_ROLE_HUMAN_AGENT = 'HUMAN_AGENT';
+        /**
+         * Participant is an automated agent, such as a Dialogflow agent.
+         */
+        public const PARTICIPANT_ROLE_AUTOMATED_AGENT = 'AUTOMATED_AGENT';
+        /**
+         * Participant is an end user that has called or chatted with Dialogflow
+         * services.
+         */
+        public const PARTICIPANT_ROLE_END_USER = 'END_USER';
+        /**
+         * Unspecified feature type.
+         */
+        public const SUGGESTION_FEATURE_TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * Run article suggestion model for chat.
+         */
+        public const SUGGESTION_FEATURE_TYPE_ARTICLE_SUGGESTION = 'ARTICLE_SUGGESTION';
+        /**
+         * Run FAQ model.
+         */
+        public const SUGGESTION_FEATURE_TYPE_FAQ = 'FAQ';
+        /**
+         * Run smart reply model for chat.
+         */
+        public const SUGGESTION_FEATURE_TYPE_SMART_REPLY = 'SMART_REPLY';
+        /**
+         * Run Dialogflow assist model for chat, which will return automated agent
+         * response as suggestion.
+         */
+        public const SUGGESTION_FEATURE_TYPE_DIALOGFLOW_ASSIST = 'DIALOGFLOW_ASSIST';
+        /**
+         * Run conversation summarization model for chat.
+         */
+        public const SUGGESTION_FEATURE_TYPE_CONVERSATION_SUMMARIZATION = 'CONVERSATION_SUMMARIZATION';
+        /**
+         * Run knowledge search with text input from agent or text generated query.
+         */
+        public const SUGGESTION_FEATURE_TYPE_KNOWLEDGE_SEARCH = 'KNOWLEDGE_SEARCH';
+        /**
+         * Run knowledge assist with automatic query generation.
+         */
+        public const SUGGESTION_FEATURE_TYPE_KNOWLEDGE_ASSIST = 'KNOWLEDGE_ASSIST';
+        /**
+         * The resource name of the conversation profile. Format:
+         * `projects//locations//conversationProfiles/`
+         *
+         * @var string
+         */
+        public $conversationProfile;
+        /**
+         * Timestamp whe the request was created. The time is measured on server side.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Required. The participant role to add or update the suggestion feature
+         * config. Only HUMAN_AGENT or END_USER can be used.
+         *
+         * @var string
+         */
+        public $participantRole;
+        /**
+         * Required. The type of the suggestion feature to add or update.
+         *
+         * @var string
+         */
+        public $suggestionFeatureType;
+        /**
+         * The resource name of the conversation profile. Format:
+         * `projects//locations//conversationProfiles/`
+         *
+         * @param string $conversationProfile
+         */
+        public function setConversationProfile($conversationProfile)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConversationProfile()
+        {
+        }
+        /**
+         * Timestamp whe the request was created. The time is measured on server side.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Required. The participant role to add or update the suggestion feature
+         * config. Only HUMAN_AGENT or END_USER can be used.
+         *
+         * Accepted values: ROLE_UNSPECIFIED, HUMAN_AGENT, AUTOMATED_AGENT, END_USER
+         *
+         * @param self::PARTICIPANT_ROLE_* $participantRole
+         */
+        public function setParticipantRole($participantRole)
+        {
+        }
+        /**
+         * @return self::PARTICIPANT_ROLE_*
+         */
+        public function getParticipantRole()
+        {
+        }
+        /**
+         * Required. The type of the suggestion feature to add or update.
+         *
+         * Accepted values: TYPE_UNSPECIFIED, ARTICLE_SUGGESTION, FAQ, SMART_REPLY,
+         * DIALOGFLOW_ASSIST, CONVERSATION_SUMMARIZATION, KNOWLEDGE_SEARCH,
+         * KNOWLEDGE_ASSIST
+         *
+         * @param self::SUGGESTION_FEATURE_TYPE_* $suggestionFeatureType
+         */
+        public function setSuggestionFeatureType($suggestionFeatureType)
+        {
+        }
+        /**
+         * @return self::SUGGESTION_FEATURE_TYPE_*
+         */
+        public function getSuggestionFeatureType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1SetSuggestionFeatureConfigOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConversationProfile()
-    {
-    }
-    /**
-     * Timestamp whe the request was created. The time is measured on server side.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Required. The participant role to add or update the suggestion feature
-     * config. Only HUMAN_AGENT or END_USER can be used.
-     *
-     * Accepted values: ROLE_UNSPECIFIED, HUMAN_AGENT, AUTOMATED_AGENT, END_USER
-     *
-     * @param self::PARTICIPANT_ROLE_* $participantRole
-     */
-    public function setParticipantRole($participantRole)
-    {
-    }
-    /**
-     * @return self::PARTICIPANT_ROLE_*
-     */
-    public function getParticipantRole()
-    {
-    }
-    /**
-     * Required. The type of the suggestion feature to add or update.
-     *
-     * Accepted values: TYPE_UNSPECIFIED, ARTICLE_SUGGESTION, FAQ, SMART_REPLY,
-     * DIALOGFLOW_ASSIST, CONVERSATION_SUMMARIZATION, KNOWLEDGE_SEARCH,
-     * KNOWLEDGE_ASSIST
-     *
-     * @param self::SUGGESTION_FEATURE_TYPE_* $suggestionFeatureType
-     */
-    public function setSuggestionFeatureType($suggestionFeatureType)
-    {
-    }
-    /**
-     * @return self::SUGGESTION_FEATURE_TYPE_*
-     */
-    public function getSuggestionFeatureType()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1SetSuggestionFeatureConfigOperationMetadata extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1SetSuggestionFeatureConfigOperationMetadata
     {
     }
 }

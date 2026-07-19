@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class GoogleDevtoolsRemoteworkersV1test2DirectoryMetadata extends \Google\Model
-{
-    protected $digestType = GoogleDevtoolsRemoteworkersV1test2Digest::class;
-    protected $digestDataType = '';
-    public $path;
+namespace Google\Service\RemoteBuildExecution {
+    class GoogleDevtoolsRemoteworkersV1test2DirectoryMetadata extends \Google\Model
+    {
+        protected $digestType = GoogleDevtoolsRemoteworkersV1test2Digest::class;
+        protected $digestDataType = '';
+        public $path;
+        /**
+         * @param GoogleDevtoolsRemoteworkersV1test2Digest
+         */
+        public function setDigest(GoogleDevtoolsRemoteworkersV1test2Digest $digest)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsRemoteworkersV1test2Digest
+         */
+        public function getDigest()
+        {
+        }
+        public function setPath($path)
+        {
+        }
+        public function getPath()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param GoogleDevtoolsRemoteworkersV1test2Digest
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemoteworkersV1test2DirectoryMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setDigest(GoogleDevtoolsRemoteworkersV1test2Digest $digest)
-    {
-    }
-    /**
-     * @return GoogleDevtoolsRemoteworkersV1test2Digest
-     */
-    public function getDigest()
-    {
-    }
-    public function setPath($path)
-    {
-    }
-    public function getPath()
+    class Google_Service_RemoteBuildExecution_GoogleDevtoolsRemoteworkersV1test2DirectoryMetadata extends \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemoteworkersV1test2DirectoryMetadata
     {
     }
 }

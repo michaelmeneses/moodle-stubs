@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedOpenLinkAppUri extends \Google\Model
-{
-    protected $androidIntentType = AppsDynamiteSharedOpenLinkAppUriIntent::class;
-    protected $androidIntentDataType = '';
-    public $androidIntent;
-    /**
-     * @var string
-     */
-    public $companionUri;
-    /**
-     * @var string
-     */
-    public $iosUri;
-    /**
-     * @param AppsDynamiteSharedOpenLinkAppUriIntent
-     */
-    public function setAndroidIntent(AppsDynamiteSharedOpenLinkAppUriIntent $androidIntent)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedOpenLinkAppUri extends \Google\Model
     {
+        protected $androidIntentType = AppsDynamiteSharedOpenLinkAppUriIntent::class;
+        protected $androidIntentDataType = '';
+        public $androidIntent;
+        /**
+         * @var string
+         */
+        public $companionUri;
+        /**
+         * @var string
+         */
+        public $iosUri;
+        /**
+         * @param AppsDynamiteSharedOpenLinkAppUriIntent
+         */
+        public function setAndroidIntent(AppsDynamiteSharedOpenLinkAppUriIntent $androidIntent)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedOpenLinkAppUriIntent
+         */
+        public function getAndroidIntent()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCompanionUri($companionUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCompanionUri()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setIosUri($iosUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIosUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteSharedOpenLinkAppUriIntent
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedOpenLinkAppUri registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAndroidIntent()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCompanionUri($companionUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCompanionUri()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setIosUri($iosUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIosUri()
+    class Google_Service_CloudSearch_AppsDynamiteSharedOpenLinkAppUri extends \Google\Service\CloudSearch\AppsDynamiteSharedOpenLinkAppUri
     {
     }
 }

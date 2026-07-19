@@ -21,439 +21,448 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1NotebookRuntimeTemplate extends \Google\Collection
-{
-    /**
-     * Unspecified notebook runtime type, NotebookRuntimeType will default to
-     * USER_DEFINED.
-     */
-    public const NOTEBOOK_RUNTIME_TYPE_NOTEBOOK_RUNTIME_TYPE_UNSPECIFIED = 'NOTEBOOK_RUNTIME_TYPE_UNSPECIFIED';
-    /**
-     * runtime or template with coustomized configurations from user.
-     */
-    public const NOTEBOOK_RUNTIME_TYPE_USER_DEFINED = 'USER_DEFINED';
-    /**
-     * runtime or template with system defined configurations.
-     */
-    public const NOTEBOOK_RUNTIME_TYPE_ONE_CLICK = 'ONE_CLICK';
-    protected $collection_key = 'networkTags';
-    /**
-     * Output only. Timestamp when this NotebookRuntimeTemplate was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    protected $dataPersistentDiskSpecType = GoogleCloudAiplatformV1PersistentDiskSpec::class;
-    protected $dataPersistentDiskSpecDataType = '';
-    /**
-     * The description of the NotebookRuntimeTemplate.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Required. The display name of the NotebookRuntimeTemplate. The name can be
-     * up to 128 characters long and can consist of any UTF-8 characters.
-     *
-     * @var string
-     */
-    public $displayName;
-    protected $encryptionSpecType = GoogleCloudAiplatformV1EncryptionSpec::class;
-    protected $encryptionSpecDataType = '';
-    /**
-     * Used to perform consistent read-modify-write updates. If not set, a blind
-     * "overwrite" update happens.
-     *
-     * @var string
-     */
-    public $etag;
-    protected $eucConfigType = GoogleCloudAiplatformV1NotebookEucConfig::class;
-    protected $eucConfigDataType = '';
-    protected $idleShutdownConfigType = GoogleCloudAiplatformV1NotebookIdleShutdownConfig::class;
-    protected $idleShutdownConfigDataType = '';
-    /**
-     * Output only. Deprecated: This field has no behavior. Use
-     * notebook_runtime_type = 'ONE_CLICK' instead. The default template to use if
-     * not specified.
-     *
-     * @deprecated
-     * @var bool
-     */
-    public $isDefault;
-    /**
-     * The labels with user-defined metadata to organize the
-     * NotebookRuntimeTemplates. Label keys and values can be no longer than 64
-     * characters (Unicode codepoints), can only contain lowercase letters,
-     * numeric characters, underscores and dashes. International characters are
-     * allowed. See https://goo.gl/xmQnxf for more information and examples of
-     * labels.
-     *
-     * @var string[]
-     */
-    public $labels;
-    protected $machineSpecType = GoogleCloudAiplatformV1MachineSpec::class;
-    protected $machineSpecDataType = '';
-    /**
-     * The resource name of the NotebookRuntimeTemplate.
-     *
-     * @var string
-     */
-    public $name;
-    protected $networkSpecType = GoogleCloudAiplatformV1NetworkSpec::class;
-    protected $networkSpecDataType = '';
-    /**
-     * Optional. The Compute Engine tags to add to runtime (see [Tagging
-     * instances](https://cloud.google.com/vpc/docs/add-remove-network-tags)).
-     *
-     * @var string[]
-     */
-    public $networkTags;
-    /**
-     * Optional. Immutable. The type of the notebook runtime template.
-     *
-     * @var string
-     */
-    public $notebookRuntimeType;
-    protected $reservationAffinityType = GoogleCloudAiplatformV1NotebookReservationAffinity::class;
-    protected $reservationAffinityDataType = '';
-    /**
-     * Deprecated: This field is ignored and the "Vertex AI Notebook Service
-     * Account" (service-PROJECT_NUMBER@gcp-sa-aiplatform-
-     * vm.iam.gserviceaccount.com) is used for the runtime workload identity. See
-     * https://cloud.google.com/iam/docs/service-agents#vertex-ai-notebook-
-     * service-account for more details. For NotebookExecutionJob, use
-     * NotebookExecutionJob.service_account instead. The service account that the
-     * runtime workload runs as. You can use any service account within the same
-     * project, but you must have the service account user permission to use the
-     * instance. If not specified, the [Compute Engine default service
-     * account](https://cloud.google.com/compute/docs/access/service-
-     * accounts#default_service_account) is used.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $serviceAccount;
-    protected $shieldedVmConfigType = GoogleCloudAiplatformV1ShieldedVmConfig::class;
-    protected $shieldedVmConfigDataType = '';
-    protected $softwareConfigType = GoogleCloudAiplatformV1NotebookSoftwareConfig::class;
-    protected $softwareConfigDataType = '';
-    /**
-     * Output only. Timestamp when this NotebookRuntimeTemplate was most recently
-     * updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. Timestamp when this NotebookRuntimeTemplate was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1NotebookRuntimeTemplate extends \Google\Collection
     {
+        /**
+         * Unspecified notebook runtime type, NotebookRuntimeType will default to
+         * USER_DEFINED.
+         */
+        public const NOTEBOOK_RUNTIME_TYPE_NOTEBOOK_RUNTIME_TYPE_UNSPECIFIED = 'NOTEBOOK_RUNTIME_TYPE_UNSPECIFIED';
+        /**
+         * runtime or template with coustomized configurations from user.
+         */
+        public const NOTEBOOK_RUNTIME_TYPE_USER_DEFINED = 'USER_DEFINED';
+        /**
+         * runtime or template with system defined configurations.
+         */
+        public const NOTEBOOK_RUNTIME_TYPE_ONE_CLICK = 'ONE_CLICK';
+        protected $collection_key = 'networkTags';
+        /**
+         * Output only. Timestamp when this NotebookRuntimeTemplate was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        protected $dataPersistentDiskSpecType = GoogleCloudAiplatformV1PersistentDiskSpec::class;
+        protected $dataPersistentDiskSpecDataType = '';
+        /**
+         * The description of the NotebookRuntimeTemplate.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Required. The display name of the NotebookRuntimeTemplate. The name can be
+         * up to 128 characters long and can consist of any UTF-8 characters.
+         *
+         * @var string
+         */
+        public $displayName;
+        protected $encryptionSpecType = GoogleCloudAiplatformV1EncryptionSpec::class;
+        protected $encryptionSpecDataType = '';
+        /**
+         * Used to perform consistent read-modify-write updates. If not set, a blind
+         * "overwrite" update happens.
+         *
+         * @var string
+         */
+        public $etag;
+        protected $eucConfigType = GoogleCloudAiplatformV1NotebookEucConfig::class;
+        protected $eucConfigDataType = '';
+        protected $idleShutdownConfigType = GoogleCloudAiplatformV1NotebookIdleShutdownConfig::class;
+        protected $idleShutdownConfigDataType = '';
+        /**
+         * Output only. Deprecated: This field has no behavior. Use
+         * notebook_runtime_type = 'ONE_CLICK' instead. The default template to use if
+         * not specified.
+         *
+         * @deprecated
+         * @var bool
+         */
+        public $isDefault;
+        /**
+         * The labels with user-defined metadata to organize the
+         * NotebookRuntimeTemplates. Label keys and values can be no longer than 64
+         * characters (Unicode codepoints), can only contain lowercase letters,
+         * numeric characters, underscores and dashes. International characters are
+         * allowed. See https://goo.gl/xmQnxf for more information and examples of
+         * labels.
+         *
+         * @var string[]
+         */
+        public $labels;
+        protected $machineSpecType = GoogleCloudAiplatformV1MachineSpec::class;
+        protected $machineSpecDataType = '';
+        /**
+         * The resource name of the NotebookRuntimeTemplate.
+         *
+         * @var string
+         */
+        public $name;
+        protected $networkSpecType = GoogleCloudAiplatformV1NetworkSpec::class;
+        protected $networkSpecDataType = '';
+        /**
+         * Optional. The Compute Engine tags to add to runtime (see [Tagging
+         * instances](https://cloud.google.com/vpc/docs/add-remove-network-tags)).
+         *
+         * @var string[]
+         */
+        public $networkTags;
+        /**
+         * Optional. Immutable. The type of the notebook runtime template.
+         *
+         * @var string
+         */
+        public $notebookRuntimeType;
+        protected $reservationAffinityType = GoogleCloudAiplatformV1NotebookReservationAffinity::class;
+        protected $reservationAffinityDataType = '';
+        /**
+         * Deprecated: This field is ignored and the "Vertex AI Notebook Service
+         * Account" (service-PROJECT_NUMBER@gcp-sa-aiplatform-
+         * vm.iam.gserviceaccount.com) is used for the runtime workload identity. See
+         * https://cloud.google.com/iam/docs/service-agents#vertex-ai-notebook-
+         * service-account for more details. For NotebookExecutionJob, use
+         * NotebookExecutionJob.service_account instead. The service account that the
+         * runtime workload runs as. You can use any service account within the same
+         * project, but you must have the service account user permission to use the
+         * instance. If not specified, the [Compute Engine default service
+         * account](https://cloud.google.com/compute/docs/access/service-
+         * accounts#default_service_account) is used.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $serviceAccount;
+        protected $shieldedVmConfigType = GoogleCloudAiplatformV1ShieldedVmConfig::class;
+        protected $shieldedVmConfigDataType = '';
+        protected $softwareConfigType = GoogleCloudAiplatformV1NotebookSoftwareConfig::class;
+        protected $softwareConfigDataType = '';
+        /**
+         * Output only. Timestamp when this NotebookRuntimeTemplate was most recently
+         * updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. Timestamp when this NotebookRuntimeTemplate was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. The specification of persistent disk attached to the runtime as
+         * data disk storage.
+         *
+         * @param GoogleCloudAiplatformV1PersistentDiskSpec $dataPersistentDiskSpec
+         */
+        public function setDataPersistentDiskSpec(GoogleCloudAiplatformV1PersistentDiskSpec $dataPersistentDiskSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1PersistentDiskSpec
+         */
+        public function getDataPersistentDiskSpec()
+        {
+        }
+        /**
+         * The description of the NotebookRuntimeTemplate.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Required. The display name of the NotebookRuntimeTemplate. The name can be
+         * up to 128 characters long and can consist of any UTF-8 characters.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Customer-managed encryption key spec for the notebook runtime.
+         *
+         * @param GoogleCloudAiplatformV1EncryptionSpec $encryptionSpec
+         */
+        public function setEncryptionSpec(GoogleCloudAiplatformV1EncryptionSpec $encryptionSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1EncryptionSpec
+         */
+        public function getEncryptionSpec()
+        {
+        }
+        /**
+         * Used to perform consistent read-modify-write updates. If not set, a blind
+         * "overwrite" update happens.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * EUC configuration of the NotebookRuntimeTemplate.
+         *
+         * @param GoogleCloudAiplatformV1NotebookEucConfig $eucConfig
+         */
+        public function setEucConfig(GoogleCloudAiplatformV1NotebookEucConfig $eucConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1NotebookEucConfig
+         */
+        public function getEucConfig()
+        {
+        }
+        /**
+         * The idle shutdown configuration of NotebookRuntimeTemplate. This config
+         * will only be set when idle shutdown is enabled.
+         *
+         * @param GoogleCloudAiplatformV1NotebookIdleShutdownConfig $idleShutdownConfig
+         */
+        public function setIdleShutdownConfig(GoogleCloudAiplatformV1NotebookIdleShutdownConfig $idleShutdownConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1NotebookIdleShutdownConfig
+         */
+        public function getIdleShutdownConfig()
+        {
+        }
+        /**
+         * Output only. Deprecated: This field has no behavior. Use
+         * notebook_runtime_type = 'ONE_CLICK' instead. The default template to use if
+         * not specified.
+         *
+         * @deprecated
+         * @param bool $isDefault
+         */
+        public function setIsDefault($isDefault)
+        {
+        }
+        /**
+         * @deprecated
+         * @return bool
+         */
+        public function getIsDefault()
+        {
+        }
+        /**
+         * The labels with user-defined metadata to organize the
+         * NotebookRuntimeTemplates. Label keys and values can be no longer than 64
+         * characters (Unicode codepoints), can only contain lowercase letters,
+         * numeric characters, underscores and dashes. International characters are
+         * allowed. See https://goo.gl/xmQnxf for more information and examples of
+         * labels.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Optional. Immutable. The specification of a single machine for the
+         * template.
+         *
+         * @param GoogleCloudAiplatformV1MachineSpec $machineSpec
+         */
+        public function setMachineSpec(GoogleCloudAiplatformV1MachineSpec $machineSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1MachineSpec
+         */
+        public function getMachineSpec()
+        {
+        }
+        /**
+         * The resource name of the NotebookRuntimeTemplate.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. Network spec.
+         *
+         * @param GoogleCloudAiplatformV1NetworkSpec $networkSpec
+         */
+        public function setNetworkSpec(GoogleCloudAiplatformV1NetworkSpec $networkSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1NetworkSpec
+         */
+        public function getNetworkSpec()
+        {
+        }
+        /**
+         * Optional. The Compute Engine tags to add to runtime (see [Tagging
+         * instances](https://cloud.google.com/vpc/docs/add-remove-network-tags)).
+         *
+         * @param string[] $networkTags
+         */
+        public function setNetworkTags($networkTags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getNetworkTags()
+        {
+        }
+        /**
+         * Optional. Immutable. The type of the notebook runtime template.
+         *
+         * Accepted values: NOTEBOOK_RUNTIME_TYPE_UNSPECIFIED, USER_DEFINED, ONE_CLICK
+         *
+         * @param self::NOTEBOOK_RUNTIME_TYPE_* $notebookRuntimeType
+         */
+        public function setNotebookRuntimeType($notebookRuntimeType)
+        {
+        }
+        /**
+         * @return self::NOTEBOOK_RUNTIME_TYPE_*
+         */
+        public function getNotebookRuntimeType()
+        {
+        }
+        /**
+         * Optional. Reservation Affinity of the notebook runtime template.
+         *
+         * @param GoogleCloudAiplatformV1NotebookReservationAffinity $reservationAffinity
+         */
+        public function setReservationAffinity(GoogleCloudAiplatformV1NotebookReservationAffinity $reservationAffinity)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1NotebookReservationAffinity
+         */
+        public function getReservationAffinity()
+        {
+        }
+        /**
+         * Deprecated: This field is ignored and the "Vertex AI Notebook Service
+         * Account" (service-PROJECT_NUMBER@gcp-sa-aiplatform-
+         * vm.iam.gserviceaccount.com) is used for the runtime workload identity. See
+         * https://cloud.google.com/iam/docs/service-agents#vertex-ai-notebook-
+         * service-account for more details. For NotebookExecutionJob, use
+         * NotebookExecutionJob.service_account instead. The service account that the
+         * runtime workload runs as. You can use any service account within the same
+         * project, but you must have the service account user permission to use the
+         * instance. If not specified, the [Compute Engine default service
+         * account](https://cloud.google.com/compute/docs/access/service-
+         * accounts#default_service_account) is used.
+         *
+         * @deprecated
+         * @param string $serviceAccount
+         */
+        public function setServiceAccount($serviceAccount)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getServiceAccount()
+        {
+        }
+        /**
+         * Optional. Immutable. Runtime Shielded VM spec.
+         *
+         * @param GoogleCloudAiplatformV1ShieldedVmConfig $shieldedVmConfig
+         */
+        public function setShieldedVmConfig(GoogleCloudAiplatformV1ShieldedVmConfig $shieldedVmConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ShieldedVmConfig
+         */
+        public function getShieldedVmConfig()
+        {
+        }
+        /**
+         * Optional. The notebook software configuration of the notebook runtime.
+         *
+         * @param GoogleCloudAiplatformV1NotebookSoftwareConfig $softwareConfig
+         */
+        public function setSoftwareConfig(GoogleCloudAiplatformV1NotebookSoftwareConfig $softwareConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1NotebookSoftwareConfig
+         */
+        public function getSoftwareConfig()
+        {
+        }
+        /**
+         * Output only. Timestamp when this NotebookRuntimeTemplate was most recently
+         * updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1NotebookRuntimeTemplate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. The specification of persistent disk attached to the runtime as
-     * data disk storage.
-     *
-     * @param GoogleCloudAiplatformV1PersistentDiskSpec $dataPersistentDiskSpec
-     */
-    public function setDataPersistentDiskSpec(GoogleCloudAiplatformV1PersistentDiskSpec $dataPersistentDiskSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1PersistentDiskSpec
-     */
-    public function getDataPersistentDiskSpec()
-    {
-    }
-    /**
-     * The description of the NotebookRuntimeTemplate.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Required. The display name of the NotebookRuntimeTemplate. The name can be
-     * up to 128 characters long and can consist of any UTF-8 characters.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Customer-managed encryption key spec for the notebook runtime.
-     *
-     * @param GoogleCloudAiplatformV1EncryptionSpec $encryptionSpec
-     */
-    public function setEncryptionSpec(GoogleCloudAiplatformV1EncryptionSpec $encryptionSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1EncryptionSpec
-     */
-    public function getEncryptionSpec()
-    {
-    }
-    /**
-     * Used to perform consistent read-modify-write updates. If not set, a blind
-     * "overwrite" update happens.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * EUC configuration of the NotebookRuntimeTemplate.
-     *
-     * @param GoogleCloudAiplatformV1NotebookEucConfig $eucConfig
-     */
-    public function setEucConfig(GoogleCloudAiplatformV1NotebookEucConfig $eucConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1NotebookEucConfig
-     */
-    public function getEucConfig()
-    {
-    }
-    /**
-     * The idle shutdown configuration of NotebookRuntimeTemplate. This config
-     * will only be set when idle shutdown is enabled.
-     *
-     * @param GoogleCloudAiplatformV1NotebookIdleShutdownConfig $idleShutdownConfig
-     */
-    public function setIdleShutdownConfig(GoogleCloudAiplatformV1NotebookIdleShutdownConfig $idleShutdownConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1NotebookIdleShutdownConfig
-     */
-    public function getIdleShutdownConfig()
-    {
-    }
-    /**
-     * Output only. Deprecated: This field has no behavior. Use
-     * notebook_runtime_type = 'ONE_CLICK' instead. The default template to use if
-     * not specified.
-     *
-     * @deprecated
-     * @param bool $isDefault
-     */
-    public function setIsDefault($isDefault)
-    {
-    }
-    /**
-     * @deprecated
-     * @return bool
-     */
-    public function getIsDefault()
-    {
-    }
-    /**
-     * The labels with user-defined metadata to organize the
-     * NotebookRuntimeTemplates. Label keys and values can be no longer than 64
-     * characters (Unicode codepoints), can only contain lowercase letters,
-     * numeric characters, underscores and dashes. International characters are
-     * allowed. See https://goo.gl/xmQnxf for more information and examples of
-     * labels.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Optional. Immutable. The specification of a single machine for the
-     * template.
-     *
-     * @param GoogleCloudAiplatformV1MachineSpec $machineSpec
-     */
-    public function setMachineSpec(GoogleCloudAiplatformV1MachineSpec $machineSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1MachineSpec
-     */
-    public function getMachineSpec()
-    {
-    }
-    /**
-     * The resource name of the NotebookRuntimeTemplate.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. Network spec.
-     *
-     * @param GoogleCloudAiplatformV1NetworkSpec $networkSpec
-     */
-    public function setNetworkSpec(GoogleCloudAiplatformV1NetworkSpec $networkSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1NetworkSpec
-     */
-    public function getNetworkSpec()
-    {
-    }
-    /**
-     * Optional. The Compute Engine tags to add to runtime (see [Tagging
-     * instances](https://cloud.google.com/vpc/docs/add-remove-network-tags)).
-     *
-     * @param string[] $networkTags
-     */
-    public function setNetworkTags($networkTags)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getNetworkTags()
-    {
-    }
-    /**
-     * Optional. Immutable. The type of the notebook runtime template.
-     *
-     * Accepted values: NOTEBOOK_RUNTIME_TYPE_UNSPECIFIED, USER_DEFINED, ONE_CLICK
-     *
-     * @param self::NOTEBOOK_RUNTIME_TYPE_* $notebookRuntimeType
-     */
-    public function setNotebookRuntimeType($notebookRuntimeType)
-    {
-    }
-    /**
-     * @return self::NOTEBOOK_RUNTIME_TYPE_*
-     */
-    public function getNotebookRuntimeType()
-    {
-    }
-    /**
-     * Optional. Reservation Affinity of the notebook runtime template.
-     *
-     * @param GoogleCloudAiplatformV1NotebookReservationAffinity $reservationAffinity
-     */
-    public function setReservationAffinity(GoogleCloudAiplatformV1NotebookReservationAffinity $reservationAffinity)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1NotebookReservationAffinity
-     */
-    public function getReservationAffinity()
-    {
-    }
-    /**
-     * Deprecated: This field is ignored and the "Vertex AI Notebook Service
-     * Account" (service-PROJECT_NUMBER@gcp-sa-aiplatform-
-     * vm.iam.gserviceaccount.com) is used for the runtime workload identity. See
-     * https://cloud.google.com/iam/docs/service-agents#vertex-ai-notebook-
-     * service-account for more details. For NotebookExecutionJob, use
-     * NotebookExecutionJob.service_account instead. The service account that the
-     * runtime workload runs as. You can use any service account within the same
-     * project, but you must have the service account user permission to use the
-     * instance. If not specified, the [Compute Engine default service
-     * account](https://cloud.google.com/compute/docs/access/service-
-     * accounts#default_service_account) is used.
-     *
-     * @deprecated
-     * @param string $serviceAccount
-     */
-    public function setServiceAccount($serviceAccount)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getServiceAccount()
-    {
-    }
-    /**
-     * Optional. Immutable. Runtime Shielded VM spec.
-     *
-     * @param GoogleCloudAiplatformV1ShieldedVmConfig $shieldedVmConfig
-     */
-    public function setShieldedVmConfig(GoogleCloudAiplatformV1ShieldedVmConfig $shieldedVmConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1ShieldedVmConfig
-     */
-    public function getShieldedVmConfig()
-    {
-    }
-    /**
-     * Optional. The notebook software configuration of the notebook runtime.
-     *
-     * @param GoogleCloudAiplatformV1NotebookSoftwareConfig $softwareConfig
-     */
-    public function setSoftwareConfig(GoogleCloudAiplatformV1NotebookSoftwareConfig $softwareConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1NotebookSoftwareConfig
-     */
-    public function getSoftwareConfig()
-    {
-    }
-    /**
-     * Output only. Timestamp when this NotebookRuntimeTemplate was most recently
-     * updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1NotebookRuntimeTemplate extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1NotebookRuntimeTemplate
     {
     }
 }

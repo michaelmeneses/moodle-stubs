@@ -21,131 +21,140 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Calendar;
-
-class FreeBusyRequest extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    /**
-     * Maximal number of calendars for which FreeBusy information is to be
-     * provided. Optional. Maximum value is 50.
-     *
-     * @var int
-     */
-    public $calendarExpansionMax;
-    /**
-     * Maximal number of calendar identifiers to be provided for a single group.
-     * Optional. An error is returned for a group with more members than this
-     * value. Maximum value is 100.
-     *
-     * @var int
-     */
-    public $groupExpansionMax;
-    protected $itemsType = FreeBusyRequestItem::class;
-    protected $itemsDataType = 'array';
-    /**
-     * The end of the interval for the query formatted as per RFC3339.
-     *
-     * @var string
-     */
-    public $timeMax;
-    /**
-     * The start of the interval for the query formatted as per RFC3339.
-     *
-     * @var string
-     */
-    public $timeMin;
-    /**
-     * Time zone used in the response. Optional. The default is UTC.
-     *
-     * @var string
-     */
-    public $timeZone;
-    /**
-     * Maximal number of calendars for which FreeBusy information is to be
-     * provided. Optional. Maximum value is 50.
-     *
-     * @param int $calendarExpansionMax
-     */
-    public function setCalendarExpansionMax($calendarExpansionMax)
+namespace Google\Service\Calendar {
+    class FreeBusyRequest extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        /**
+         * Maximal number of calendars for which FreeBusy information is to be
+         * provided. Optional. Maximum value is 50.
+         *
+         * @var int
+         */
+        public $calendarExpansionMax;
+        /**
+         * Maximal number of calendar identifiers to be provided for a single group.
+         * Optional. An error is returned for a group with more members than this
+         * value. Maximum value is 100.
+         *
+         * @var int
+         */
+        public $groupExpansionMax;
+        protected $itemsType = FreeBusyRequestItem::class;
+        protected $itemsDataType = 'array';
+        /**
+         * The end of the interval for the query formatted as per RFC3339.
+         *
+         * @var string
+         */
+        public $timeMax;
+        /**
+         * The start of the interval for the query formatted as per RFC3339.
+         *
+         * @var string
+         */
+        public $timeMin;
+        /**
+         * Time zone used in the response. Optional. The default is UTC.
+         *
+         * @var string
+         */
+        public $timeZone;
+        /**
+         * Maximal number of calendars for which FreeBusy information is to be
+         * provided. Optional. Maximum value is 50.
+         *
+         * @param int $calendarExpansionMax
+         */
+        public function setCalendarExpansionMax($calendarExpansionMax)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCalendarExpansionMax()
+        {
+        }
+        /**
+         * Maximal number of calendar identifiers to be provided for a single group.
+         * Optional. An error is returned for a group with more members than this
+         * value. Maximum value is 100.
+         *
+         * @param int $groupExpansionMax
+         */
+        public function setGroupExpansionMax($groupExpansionMax)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getGroupExpansionMax()
+        {
+        }
+        /**
+         * List of calendars and/or groups to query.
+         *
+         * @param FreeBusyRequestItem[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return FreeBusyRequestItem[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * The end of the interval for the query formatted as per RFC3339.
+         *
+         * @param string $timeMax
+         */
+        public function setTimeMax($timeMax)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeMax()
+        {
+        }
+        /**
+         * The start of the interval for the query formatted as per RFC3339.
+         *
+         * @param string $timeMin
+         */
+        public function setTimeMin($timeMin)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeMin()
+        {
+        }
+        /**
+         * Time zone used in the response. Optional. The default is UTC.
+         *
+         * @param string $timeZone
+         */
+        public function setTimeZone($timeZone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Calendar\FreeBusyRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCalendarExpansionMax()
-    {
-    }
-    /**
-     * Maximal number of calendar identifiers to be provided for a single group.
-     * Optional. An error is returned for a group with more members than this
-     * value. Maximum value is 100.
-     *
-     * @param int $groupExpansionMax
-     */
-    public function setGroupExpansionMax($groupExpansionMax)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getGroupExpansionMax()
-    {
-    }
-    /**
-     * List of calendars and/or groups to query.
-     *
-     * @param FreeBusyRequestItem[] $items
-     */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return FreeBusyRequestItem[]
-     */
-    public function getItems()
-    {
-    }
-    /**
-     * The end of the interval for the query formatted as per RFC3339.
-     *
-     * @param string $timeMax
-     */
-    public function setTimeMax($timeMax)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeMax()
-    {
-    }
-    /**
-     * The start of the interval for the query formatted as per RFC3339.
-     *
-     * @param string $timeMin
-     */
-    public function setTimeMin($timeMin)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeMin()
-    {
-    }
-    /**
-     * Time zone used in the response. Optional. The default is UTC.
-     *
-     * @param string $timeZone
-     */
-    public function setTimeZone($timeZone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeZone()
+    class Google_Service_Calendar_FreeBusyRequest extends \Google\Service\Calendar\FreeBusyRequest
     {
     }
 }

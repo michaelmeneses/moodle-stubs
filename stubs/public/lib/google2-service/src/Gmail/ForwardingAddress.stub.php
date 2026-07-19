@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Gmail;
-
-class ForwardingAddress extends \Google\Model
-{
-    /**
-     * Unspecified verification status.
-     */
-    public const VERIFICATION_STATUS_verificationStatusUnspecified = 'verificationStatusUnspecified';
-    /**
-     * The address is ready to use for forwarding.
-     */
-    public const VERIFICATION_STATUS_accepted = 'accepted';
-    /**
-     * The address is awaiting verification by the owner.
-     */
-    public const VERIFICATION_STATUS_pending = 'pending';
-    /**
-     * An email address to which messages can be forwarded.
-     *
-     * @var string
-     */
-    public $forwardingEmail;
-    /**
-     * Indicates whether this address has been verified and is usable for
-     * forwarding. Read-only.
-     *
-     * @var string
-     */
-    public $verificationStatus;
-    /**
-     * An email address to which messages can be forwarded.
-     *
-     * @param string $forwardingEmail
-     */
-    public function setForwardingEmail($forwardingEmail)
+namespace Google\Service\Gmail {
+    class ForwardingAddress extends \Google\Model
     {
+        /**
+         * Unspecified verification status.
+         */
+        public const VERIFICATION_STATUS_verificationStatusUnspecified = 'verificationStatusUnspecified';
+        /**
+         * The address is ready to use for forwarding.
+         */
+        public const VERIFICATION_STATUS_accepted = 'accepted';
+        /**
+         * The address is awaiting verification by the owner.
+         */
+        public const VERIFICATION_STATUS_pending = 'pending';
+        /**
+         * An email address to which messages can be forwarded.
+         *
+         * @var string
+         */
+        public $forwardingEmail;
+        /**
+         * Indicates whether this address has been verified and is usable for
+         * forwarding. Read-only.
+         *
+         * @var string
+         */
+        public $verificationStatus;
+        /**
+         * An email address to which messages can be forwarded.
+         *
+         * @param string $forwardingEmail
+         */
+        public function setForwardingEmail($forwardingEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getForwardingEmail()
+        {
+        }
+        /**
+         * Indicates whether this address has been verified and is usable for
+         * forwarding. Read-only.
+         *
+         * Accepted values: verificationStatusUnspecified, accepted, pending
+         *
+         * @param self::VERIFICATION_STATUS_* $verificationStatus
+         */
+        public function setVerificationStatus($verificationStatus)
+        {
+        }
+        /**
+         * @return self::VERIFICATION_STATUS_*
+         */
+        public function getVerificationStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Gmail\ForwardingAddress registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getForwardingEmail()
-    {
-    }
-    /**
-     * Indicates whether this address has been verified and is usable for
-     * forwarding. Read-only.
-     *
-     * Accepted values: verificationStatusUnspecified, accepted, pending
-     *
-     * @param self::VERIFICATION_STATUS_* $verificationStatus
-     */
-    public function setVerificationStatus($verificationStatus)
-    {
-    }
-    /**
-     * @return self::VERIFICATION_STATUS_*
-     */
-    public function getVerificationStatus()
+    class Google_Service_Gmail_ForwardingAddress extends \Google\Service\Gmail\ForwardingAddress
     {
     }
 }

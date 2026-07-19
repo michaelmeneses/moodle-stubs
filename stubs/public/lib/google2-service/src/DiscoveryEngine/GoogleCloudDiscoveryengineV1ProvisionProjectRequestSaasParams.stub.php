@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1ProvisionProjectRequestSaasParams extends \Google\Model
-{
-    /**
-     * Optional. Set to `true` to specify that caller has read and would like to
-     * give consent to the [Terms for Agent Space quality of service].
-     *
-     * @var bool
-     */
-    public $acceptBizQos;
-    /**
-     * Optional. Indicates if the current request is for Biz edition (= true) or
-     * not (= false).
-     *
-     * @var bool
-     */
-    public $isBiz;
-    /**
-     * Optional. Set to `true` to specify that caller has read and would like to
-     * give consent to the [Terms for Agent Space quality of service].
-     *
-     * @param bool $acceptBizQos
-     */
-    public function setAcceptBizQos($acceptBizQos)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1ProvisionProjectRequestSaasParams extends \Google\Model
     {
+        /**
+         * Optional. Set to `true` to specify that caller has read and would like to
+         * give consent to the [Terms for Agent Space quality of service].
+         *
+         * @var bool
+         */
+        public $acceptBizQos;
+        /**
+         * Optional. Indicates if the current request is for Biz edition (= true) or
+         * not (= false).
+         *
+         * @var bool
+         */
+        public $isBiz;
+        /**
+         * Optional. Set to `true` to specify that caller has read and would like to
+         * give consent to the [Terms for Agent Space quality of service].
+         *
+         * @param bool $acceptBizQos
+         */
+        public function setAcceptBizQos($acceptBizQos)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAcceptBizQos()
+        {
+        }
+        /**
+         * Optional. Indicates if the current request is for Biz edition (= true) or
+         * not (= false).
+         *
+         * @param bool $isBiz
+         */
+        public function setIsBiz($isBiz)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsBiz()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ProvisionProjectRequestSaasParams registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAcceptBizQos()
-    {
-    }
-    /**
-     * Optional. Indicates if the current request is for Biz edition (= true) or
-     * not (= false).
-     *
-     * @param bool $isBiz
-     */
-    public function setIsBiz($isBiz)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsBiz()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1ProvisionProjectRequestSaasParams extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ProvisionProjectRequestSaasParams
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class LatencyCriteria extends \Google\Model
-{
-    /**
-     * Good service is defined to be the count of requests made to this service
-     * that return in no more than threshold.
-     *
-     * @var string
-     */
-    public $threshold;
-    /**
-     * Good service is defined to be the count of requests made to this service
-     * that return in no more than threshold.
-     *
-     * @param string $threshold
-     */
-    public function setThreshold($threshold)
+namespace Google\Service\Monitoring {
+    class LatencyCriteria extends \Google\Model
     {
+        /**
+         * Good service is defined to be the count of requests made to this service
+         * that return in no more than threshold.
+         *
+         * @var string
+         */
+        public $threshold;
+        /**
+         * Good service is defined to be the count of requests made to this service
+         * that return in no more than threshold.
+         *
+         * @param string $threshold
+         */
+        public function setThreshold($threshold)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThreshold()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Monitoring\LatencyCriteria registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getThreshold()
+    class Google_Service_Monitoring_LatencyCriteria extends \Google\Service\Monitoring\LatencyCriteria
     {
     }
 }

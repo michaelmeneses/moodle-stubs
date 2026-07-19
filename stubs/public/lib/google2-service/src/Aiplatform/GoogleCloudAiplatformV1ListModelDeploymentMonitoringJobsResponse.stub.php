@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ListModelDeploymentMonitoringJobsResponse extends \Google\Collection
-{
-    protected $collection_key = 'modelDeploymentMonitoringJobs';
-    protected $modelDeploymentMonitoringJobsType = GoogleCloudAiplatformV1ModelDeploymentMonitoringJob::class;
-    protected $modelDeploymentMonitoringJobsDataType = 'array';
-    /**
-     * The standard List next-page token.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * A list of ModelDeploymentMonitoringJobs that matches the specified filter
-     * in the request.
-     *
-     * @param GoogleCloudAiplatformV1ModelDeploymentMonitoringJob[] $modelDeploymentMonitoringJobs
-     */
-    public function setModelDeploymentMonitoringJobs($modelDeploymentMonitoringJobs)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ListModelDeploymentMonitoringJobsResponse extends \Google\Collection
     {
+        protected $collection_key = 'modelDeploymentMonitoringJobs';
+        protected $modelDeploymentMonitoringJobsType = GoogleCloudAiplatformV1ModelDeploymentMonitoringJob::class;
+        protected $modelDeploymentMonitoringJobsDataType = 'array';
+        /**
+         * The standard List next-page token.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * A list of ModelDeploymentMonitoringJobs that matches the specified filter
+         * in the request.
+         *
+         * @param GoogleCloudAiplatformV1ModelDeploymentMonitoringJob[] $modelDeploymentMonitoringJobs
+         */
+        public function setModelDeploymentMonitoringJobs($modelDeploymentMonitoringJobs)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ModelDeploymentMonitoringJob[]
+         */
+        public function getModelDeploymentMonitoringJobs()
+        {
+        }
+        /**
+         * The standard List next-page token.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1ModelDeploymentMonitoringJob[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListModelDeploymentMonitoringJobsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getModelDeploymentMonitoringJobs()
-    {
-    }
-    /**
-     * The standard List next-page token.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ListModelDeploymentMonitoringJobsResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListModelDeploymentMonitoringJobsResponse
     {
     }
 }

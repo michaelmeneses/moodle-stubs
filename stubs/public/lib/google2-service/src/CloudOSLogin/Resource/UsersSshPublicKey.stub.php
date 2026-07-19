@@ -21,28 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudOSLogin\Resource;
-
-/**
- * The "sshPublicKey" collection of methods.
- * Typical usage is:
- *  <code>
- *   $osloginService = new Google\Service\CloudOSLogin(...);
- *   $sshPublicKey = $osloginService->sshPublicKey;
- *  </code>
- */
-class UsersSshPublicKey extends \Google\Service\Resource
-{
+namespace Google\Service\CloudOSLogin\Resource {
+    use Google\Service\CloudOSLogin\SshPublicKey;
     /**
-     * Create an SSH public key (sshPublicKey.create)
-     *
-     * @param string $parent Required. The unique ID for the user in format
-     * `users/{user}`.
-     * @param SshPublicKey $postBody
-     * @param array $optParams Optional parameters.
-     * @return SshPublicKey
+     * The "sshPublicKey" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $osloginService = new Google\Service\CloudOSLogin(...);
+     *   $sshPublicKey = $osloginService->sshPublicKey;
+     *  </code>
      */
-    public function create($parent, SshPublicKey $postBody, $optParams = [])
+    class UsersSshPublicKey extends \Google\Service\Resource
+    {
+        /**
+         * Create an SSH public key (sshPublicKey.create)
+         *
+         * @param string $parent Required. The unique ID for the user in format
+         * `users/{user}`.
+         * @param SshPublicKey $postBody
+         * @param array $optParams Optional parameters.
+         * @return SshPublicKey
+         */
+        public function create($parent, SshPublicKey $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudOSLogin\Resource\UsersSshPublicKey registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudOSLogin_Resource_UsersSshPublicKey extends \Google\Service\CloudOSLogin\Resource\UsersSshPublicKey
     {
     }
 }

@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaBigtableOptions extends \Google\Model
-{
-    protected $familiesType = GoogleCloudDiscoveryengineV1betaBigtableOptionsBigtableColumnFamily::class;
-    protected $familiesDataType = 'map';
-    /**
-     * @var string
-     */
-    public $keyFieldName;
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaBigtableOptionsBigtableColumnFamily[]
-     */
-    public function setFamilies($families)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaBigtableOptions extends \Google\Model
     {
+        protected $familiesType = GoogleCloudDiscoveryengineV1betaBigtableOptionsBigtableColumnFamily::class;
+        protected $familiesDataType = 'map';
+        /**
+         * @var string
+         */
+        public $keyFieldName;
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaBigtableOptionsBigtableColumnFamily[]
+         */
+        public function setFamilies($families)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaBigtableOptionsBigtableColumnFamily[]
+         */
+        public function getFamilies()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKeyFieldName($keyFieldName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKeyFieldName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1betaBigtableOptionsBigtableColumnFamily[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaBigtableOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFamilies()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKeyFieldName($keyFieldName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKeyFieldName()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaBigtableOptions extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaBigtableOptions
     {
     }
 }

@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseAppHosting;
-
-class ListBackendsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $backendsType = Backend::class;
-    protected $backendsDataType = 'array';
-    /**
-     * A token identifying the next page of results the server should return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * The list of backends
-     *
-     * @param Backend[] $backends
-     */
-    public function setBackends($backends)
+namespace Google\Service\FirebaseAppHosting {
+    class ListBackendsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $backendsType = Backend::class;
+        protected $backendsDataType = 'array';
+        /**
+         * A token identifying the next page of results the server should return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * The list of backends
+         *
+         * @param Backend[] $backends
+         */
+        public function setBackends($backends)
+        {
+        }
+        /**
+         * @return Backend[]
+         */
+        public function getBackends()
+        {
+        }
+        /**
+         * A token identifying the next page of results the server should return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Backend[]
+     * Runtime class alias of \Google\Service\FirebaseAppHosting\ListBackendsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackends()
-    {
-    }
-    /**
-     * A token identifying the next page of results the server should return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_FirebaseAppHosting_ListBackendsResponse extends \Google\Service\FirebaseAppHosting\ListBackendsResponse
     {
     }
 }

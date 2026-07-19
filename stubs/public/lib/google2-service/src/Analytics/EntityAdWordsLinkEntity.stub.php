@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class EntityAdWordsLinkEntity extends \Google\Model
-{
-    protected $webPropertyRefType = WebPropertyRef::class;
-    protected $webPropertyRefDataType = '';
-    /**
-     * @param WebPropertyRef $webPropertyRef
-     */
-    public function setWebPropertyRef(WebPropertyRef $webPropertyRef)
+namespace Google\Service\Analytics {
+    class EntityAdWordsLinkEntity extends \Google\Model
     {
+        protected $webPropertyRefType = WebPropertyRef::class;
+        protected $webPropertyRefDataType = '';
+        /**
+         * @param WebPropertyRef $webPropertyRef
+         */
+        public function setWebPropertyRef(WebPropertyRef $webPropertyRef)
+        {
+        }
+        /**
+         * @return WebPropertyRef
+         */
+        public function getWebPropertyRef()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return WebPropertyRef
+     * Runtime class alias of \Google\Service\Analytics\EntityAdWordsLinkEntity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getWebPropertyRef()
+    class Google_Service_Analytics_EntityAdWordsLinkEntity extends \Google\Service\Analytics\EntityAdWordsLinkEntity
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Translate;
-
-class ImportAdaptiveMtFileRequest extends \Google\Model
-{
-    protected $fileInputSourceType = FileInputSource::class;
-    protected $fileInputSourceDataType = '';
-    protected $gcsInputSourceType = GcsInputSource::class;
-    protected $gcsInputSourceDataType = '';
-    /**
-     * Inline file source.
-     *
-     * @param FileInputSource $fileInputSource
-     */
-    public function setFileInputSource(FileInputSource $fileInputSource)
+namespace Google\Service\Translate {
+    class ImportAdaptiveMtFileRequest extends \Google\Model
     {
+        protected $fileInputSourceType = FileInputSource::class;
+        protected $fileInputSourceDataType = '';
+        protected $gcsInputSourceType = GcsInputSource::class;
+        protected $gcsInputSourceDataType = '';
+        /**
+         * Inline file source.
+         *
+         * @param FileInputSource $fileInputSource
+         */
+        public function setFileInputSource(FileInputSource $fileInputSource)
+        {
+        }
+        /**
+         * @return FileInputSource
+         */
+        public function getFileInputSource()
+        {
+        }
+        /**
+         * Google Cloud Storage file source.
+         *
+         * @param GcsInputSource $gcsInputSource
+         */
+        public function setGcsInputSource(GcsInputSource $gcsInputSource)
+        {
+        }
+        /**
+         * @return GcsInputSource
+         */
+        public function getGcsInputSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FileInputSource
+     * Runtime class alias of \Google\Service\Translate\ImportAdaptiveMtFileRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFileInputSource()
-    {
-    }
-    /**
-     * Google Cloud Storage file source.
-     *
-     * @param GcsInputSource $gcsInputSource
-     */
-    public function setGcsInputSource(GcsInputSource $gcsInputSource)
-    {
-    }
-    /**
-     * @return GcsInputSource
-     */
-    public function getGcsInputSource()
+    class Google_Service_Translate_ImportAdaptiveMtFileRequest extends \Google\Service\Translate\ImportAdaptiveMtFileRequest
     {
     }
 }

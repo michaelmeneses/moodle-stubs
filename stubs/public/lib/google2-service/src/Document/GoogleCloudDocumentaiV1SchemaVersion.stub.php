@@ -21,106 +21,115 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1SchemaVersion extends \Google\Model
-{
-    /**
-     * Output only. The time when the SchemaVersion was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Required. The user-defined name of the SchemaVersion.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Optional. The GCP labels for the SchemaVersion.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Identifier. The resource name of the SchemaVersion. Format: `projects/{proj
-     * ect}/locations/{location}/schemas/{schema}/schemaVersions/{schema_version}`
-     *
-     * @var string
-     */
-    public $name;
-    protected $schemaType = GoogleCloudDocumentaiV1DocumentSchema::class;
-    protected $schemaDataType = '';
-    /**
-     * Output only. The time when the SchemaVersion was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1SchemaVersion extends \Google\Model
     {
+        /**
+         * Output only. The time when the SchemaVersion was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Required. The user-defined name of the SchemaVersion.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Optional. The GCP labels for the SchemaVersion.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Identifier. The resource name of the SchemaVersion. Format: `projects/{proj
+         * ect}/locations/{location}/schemas/{schema}/schemaVersions/{schema_version}`
+         *
+         * @var string
+         */
+        public $name;
+        protected $schemaType = GoogleCloudDocumentaiV1DocumentSchema::class;
+        protected $schemaDataType = '';
+        /**
+         * Output only. The time when the SchemaVersion was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Required. The user-defined name of the SchemaVersion.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Optional. The GCP labels for the SchemaVersion.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Identifier. The resource name of the SchemaVersion. Format: `projects/{proj
+         * ect}/locations/{location}/schemas/{schema}/schemaVersions/{schema_version}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. The schema of the SchemaVersion.
+         *
+         * @param GoogleCloudDocumentaiV1DocumentSchema $schema
+         */
+        public function setSchema(GoogleCloudDocumentaiV1DocumentSchema $schema)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1DocumentSchema
+         */
+        public function getSchema()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1SchemaVersion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Required. The user-defined name of the SchemaVersion.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Optional. The GCP labels for the SchemaVersion.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Identifier. The resource name of the SchemaVersion. Format: `projects/{proj
-     * ect}/locations/{location}/schemas/{schema}/schemaVersions/{schema_version}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Required. The schema of the SchemaVersion.
-     *
-     * @param GoogleCloudDocumentaiV1DocumentSchema $schema
-     */
-    public function setSchema(GoogleCloudDocumentaiV1DocumentSchema $schema)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1DocumentSchema
-     */
-    public function getSchema()
+    class Google_Service_Document_GoogleCloudDocumentaiV1SchemaVersion extends \Google\Service\Document\GoogleCloudDocumentaiV1SchemaVersion
     {
     }
 }

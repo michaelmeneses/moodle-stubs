@@ -21,126 +21,146 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations\Resource;
-
-/**
- * The "clients" collection of methods.
- * Typical usage is:
- *  <code>
- *   $integrationsService = new Google\Service\Integrations(...);
- *   $clients = $integrationsService->projects_locations_clients;
- *  </code>
- */
-class ProjectsLocationsClients extends \Google\Service\Resource
-{
+namespace Google\Service\Integrations\Resource {
+    use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaChangeCustomerConfigRequest;
+    use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaChangeCustomerConfigResponse;
+    use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaDeprovisionClientRequest;
+    use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaProvisionClientPostProcessorRequest;
+    use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaProvisionClientPostProcessorResponse;
+    use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaProvisionClientRequest;
+    use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaReplaceServiceAccountRequest;
+    use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaSwitchEncryptionRequest;
+    use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaSwitchVariableMaskingRequest;
+    use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaToggleHttpRequest;
+    use Google\Service\Integrations\GoogleProtobufEmpty;
     /**
-     * Updates the client customer configuration for the given project and location
-     * resource name (clients.changeConfig)
-     *
-     * @param string $parent Required. Required: Format -
-     * projects/{project}/locations/{location}
-     * @param GoogleCloudIntegrationsV1alphaChangeCustomerConfigRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudIntegrationsV1alphaChangeCustomerConfigResponse
-     * @throws \Google\Service\Exception
+     * The "clients" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $integrationsService = new Google\Service\Integrations(...);
+     *   $clients = $integrationsService->projects_locations_clients;
+     *  </code>
      */
-    public function changeConfig($parent, GoogleCloudIntegrationsV1alphaChangeCustomerConfigRequest $postBody, $optParams = [])
+    class ProjectsLocationsClients extends \Google\Service\Resource
     {
+        /**
+         * Updates the client customer configuration for the given project and location
+         * resource name (clients.changeConfig)
+         *
+         * @param string $parent Required. Required: Format -
+         * projects/{project}/locations/{location}
+         * @param GoogleCloudIntegrationsV1alphaChangeCustomerConfigRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudIntegrationsV1alphaChangeCustomerConfigResponse
+         * @throws \Google\Service\Exception
+         */
+        public function changeConfig($parent, GoogleCloudIntegrationsV1alphaChangeCustomerConfigRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Perform the deprovisioning steps to disable a user GCP project to use IP and
+         * purge all related data in a wipeout-compliant way. (clients.deprovision)
+         *
+         * @param string $parent Required. Required: The ID of the GCP Project to be
+         * deprovisioned.
+         * @param GoogleCloudIntegrationsV1alphaDeprovisionClientRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleProtobufEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function deprovision($parent, GoogleCloudIntegrationsV1alphaDeprovisionClientRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Perform the provisioning steps to enable a user GCP project to use IP. If GCP
+         * project already registered on IP end via Apigee Integration, provisioning
+         * will fail. (clients.provision)
+         *
+         * @param string $parent Required. Required: The ID of the GCP Project to be
+         * provisioned.
+         * @param GoogleCloudIntegrationsV1alphaProvisionClientRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleProtobufEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function provision($parent, GoogleCloudIntegrationsV1alphaProvisionClientRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Perform post provisioning steps after client is provisioned.
+         * (clients.provisionClientPostProcessor)
+         *
+         * @param string $parent Required. Required: The ID of the GCP Project to be
+         * provisioned.
+         * @param GoogleCloudIntegrationsV1alphaProvisionClientPostProcessorRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudIntegrationsV1alphaProvisionClientPostProcessorResponse
+         * @throws \Google\Service\Exception
+         */
+        public function provisionClientPostProcessor($parent, GoogleCloudIntegrationsV1alphaProvisionClientPostProcessorRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Update run-as service account for provisioned client (clients.replace)
+         *
+         * @param string $parent Required. Required: The ID of the GCP Project to be
+         * provisioned.
+         * @param GoogleCloudIntegrationsV1alphaReplaceServiceAccountRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleProtobufEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function replace($parent, GoogleCloudIntegrationsV1alphaReplaceServiceAccountRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Update client from GMEK to CMEK (clients.switchProjectsLocationsClients)
+         *
+         * @param string $parent Required. Required: The ID of the GCP Project to be
+         * provisioned.
+         * @param GoogleCloudIntegrationsV1alphaSwitchEncryptionRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleProtobufEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function switchProjectsLocationsClients($parent, GoogleCloudIntegrationsV1alphaSwitchEncryptionRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Update variable masking for provisioned client
+         * (clients.switchVariableMasking)
+         *
+         * @param string $parent Required. Required: The ID of the GCP Project to be
+         * provisioned.
+         * @param GoogleCloudIntegrationsV1alphaSwitchVariableMaskingRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleProtobufEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function switchVariableMasking($parent, GoogleCloudIntegrationsV1alphaSwitchVariableMaskingRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Enable/Disable http call for provisioned client (clients.toggleHttp)
+         *
+         * @param string $parent Required. Required: The ID of the GCP Project to be
+         * provisioned.
+         * @param GoogleCloudIntegrationsV1alphaToggleHttpRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleProtobufEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function toggleHttp($parent, GoogleCloudIntegrationsV1alphaToggleHttpRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Perform the deprovisioning steps to disable a user GCP project to use IP and
-     * purge all related data in a wipeout-compliant way. (clients.deprovision)
-     *
-     * @param string $parent Required. Required: The ID of the GCP Project to be
-     * deprovisioned.
-     * @param GoogleCloudIntegrationsV1alphaDeprovisionClientRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleProtobufEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Integrations\Resource\ProjectsLocationsClients registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function deprovision($parent, GoogleCloudIntegrationsV1alphaDeprovisionClientRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Perform the provisioning steps to enable a user GCP project to use IP. If GCP
-     * project already registered on IP end via Apigee Integration, provisioning
-     * will fail. (clients.provision)
-     *
-     * @param string $parent Required. Required: The ID of the GCP Project to be
-     * provisioned.
-     * @param GoogleCloudIntegrationsV1alphaProvisionClientRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleProtobufEmpty
-     * @throws \Google\Service\Exception
-     */
-    public function provision($parent, GoogleCloudIntegrationsV1alphaProvisionClientRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Perform post provisioning steps after client is provisioned.
-     * (clients.provisionClientPostProcessor)
-     *
-     * @param string $parent Required. Required: The ID of the GCP Project to be
-     * provisioned.
-     * @param GoogleCloudIntegrationsV1alphaProvisionClientPostProcessorRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudIntegrationsV1alphaProvisionClientPostProcessorResponse
-     * @throws \Google\Service\Exception
-     */
-    public function provisionClientPostProcessor($parent, GoogleCloudIntegrationsV1alphaProvisionClientPostProcessorRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Update run-as service account for provisioned client (clients.replace)
-     *
-     * @param string $parent Required. Required: The ID of the GCP Project to be
-     * provisioned.
-     * @param GoogleCloudIntegrationsV1alphaReplaceServiceAccountRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleProtobufEmpty
-     * @throws \Google\Service\Exception
-     */
-    public function replace($parent, GoogleCloudIntegrationsV1alphaReplaceServiceAccountRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Update client from GMEK to CMEK (clients.switchProjectsLocationsClients)
-     *
-     * @param string $parent Required. Required: The ID of the GCP Project to be
-     * provisioned.
-     * @param GoogleCloudIntegrationsV1alphaSwitchEncryptionRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleProtobufEmpty
-     * @throws \Google\Service\Exception
-     */
-    public function switchProjectsLocationsClients($parent, GoogleCloudIntegrationsV1alphaSwitchEncryptionRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Update variable masking for provisioned client
-     * (clients.switchVariableMasking)
-     *
-     * @param string $parent Required. Required: The ID of the GCP Project to be
-     * provisioned.
-     * @param GoogleCloudIntegrationsV1alphaSwitchVariableMaskingRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleProtobufEmpty
-     * @throws \Google\Service\Exception
-     */
-    public function switchVariableMasking($parent, GoogleCloudIntegrationsV1alphaSwitchVariableMaskingRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Enable/Disable http call for provisioned client (clients.toggleHttp)
-     *
-     * @param string $parent Required. Required: The ID of the GCP Project to be
-     * provisioned.
-     * @param GoogleCloudIntegrationsV1alphaToggleHttpRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleProtobufEmpty
-     * @throws \Google\Service\Exception
-     */
-    public function toggleHttp($parent, GoogleCloudIntegrationsV1alphaToggleHttpRequest $postBody, $optParams = [])
+    class Google_Service_Integrations_Resource_ProjectsLocationsClients extends \Google\Service\Integrations\Resource\ProjectsLocationsClients
     {
     }
 }

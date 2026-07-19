@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedOriginAppSuggestion extends \Google\Model
-{
-    protected $appIdType = AppId::class;
-    protected $appIdDataType = '';
-    protected $cardClickSuggestionType = AppsDynamiteSharedCardClickSuggestion::class;
-    protected $cardClickSuggestionDataType = '';
-    /**
-     * @param AppId
-     */
-    public function setAppId(AppId $appId)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedOriginAppSuggestion extends \Google\Model
     {
+        protected $appIdType = AppId::class;
+        protected $appIdDataType = '';
+        protected $cardClickSuggestionType = AppsDynamiteSharedCardClickSuggestion::class;
+        protected $cardClickSuggestionDataType = '';
+        /**
+         * @param AppId
+         */
+        public function setAppId(AppId $appId)
+        {
+        }
+        /**
+         * @return AppId
+         */
+        public function getAppId()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedCardClickSuggestion
+         */
+        public function setCardClickSuggestion(AppsDynamiteSharedCardClickSuggestion $cardClickSuggestion)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedCardClickSuggestion
+         */
+        public function getCardClickSuggestion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppId
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedOriginAppSuggestion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppId()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedCardClickSuggestion
-     */
-    public function setCardClickSuggestion(AppsDynamiteSharedCardClickSuggestion $cardClickSuggestion)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedCardClickSuggestion
-     */
-    public function getCardClickSuggestion()
+    class Google_Service_CloudSearch_AppsDynamiteSharedOriginAppSuggestion extends \Google\Service\CloudSearch\AppsDynamiteSharedOriginAppSuggestion
     {
     }
 }

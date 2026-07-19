@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class RemoteInAppUpdate extends \Google\Model
-{
-    /**
-     * Required. Set to true if Remote In-App Update action type is needed.
-     *
-     * @var bool
-     */
-    public $isRemoteInAppUpdateRequested;
-    /**
-     * Required. Set to true if Remote In-App Update action type is needed.
-     *
-     * @param bool $isRemoteInAppUpdateRequested
-     */
-    public function setIsRemoteInAppUpdateRequested($isRemoteInAppUpdateRequested)
+namespace Google\Service\AndroidPublisher {
+    class RemoteInAppUpdate extends \Google\Model
     {
+        /**
+         * Required. Set to true if Remote In-App Update action type is needed.
+         *
+         * @var bool
+         */
+        public $isRemoteInAppUpdateRequested;
+        /**
+         * Required. Set to true if Remote In-App Update action type is needed.
+         *
+         * @param bool $isRemoteInAppUpdateRequested
+         */
+        public function setIsRemoteInAppUpdateRequested($isRemoteInAppUpdateRequested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsRemoteInAppUpdateRequested()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\AndroidPublisher\RemoteInAppUpdate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIsRemoteInAppUpdateRequested()
+    class Google_Service_AndroidPublisher_RemoteInAppUpdate extends \Google\Service\AndroidPublisher\RemoteInAppUpdate
     {
     }
 }

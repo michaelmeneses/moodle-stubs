@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2BigQueryKey extends \Google\Model
-{
-    /**
-     * Row number inferred at the time the table was scanned. This value is
-     * nondeterministic, cannot be queried, and may be null for inspection jobs.
-     * To locate findings within a table, specify
-     * `inspect_job.storage_config.big_query_options.identifying_fields` in
-     * `CreateDlpJobRequest`.
-     *
-     * @var string
-     */
-    public $rowNumber;
-    protected $tableReferenceType = GooglePrivacyDlpV2BigQueryTable::class;
-    protected $tableReferenceDataType = '';
-    /**
-     * Row number inferred at the time the table was scanned. This value is
-     * nondeterministic, cannot be queried, and may be null for inspection jobs.
-     * To locate findings within a table, specify
-     * `inspect_job.storage_config.big_query_options.identifying_fields` in
-     * `CreateDlpJobRequest`.
-     *
-     * @param string $rowNumber
-     */
-    public function setRowNumber($rowNumber)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2BigQueryKey extends \Google\Model
     {
+        /**
+         * Row number inferred at the time the table was scanned. This value is
+         * nondeterministic, cannot be queried, and may be null for inspection jobs.
+         * To locate findings within a table, specify
+         * `inspect_job.storage_config.big_query_options.identifying_fields` in
+         * `CreateDlpJobRequest`.
+         *
+         * @var string
+         */
+        public $rowNumber;
+        protected $tableReferenceType = GooglePrivacyDlpV2BigQueryTable::class;
+        protected $tableReferenceDataType = '';
+        /**
+         * Row number inferred at the time the table was scanned. This value is
+         * nondeterministic, cannot be queried, and may be null for inspection jobs.
+         * To locate findings within a table, specify
+         * `inspect_job.storage_config.big_query_options.identifying_fields` in
+         * `CreateDlpJobRequest`.
+         *
+         * @param string $rowNumber
+         */
+        public function setRowNumber($rowNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRowNumber()
+        {
+        }
+        /**
+         * Complete BigQuery table reference.
+         *
+         * @param GooglePrivacyDlpV2BigQueryTable $tableReference
+         */
+        public function setTableReference(GooglePrivacyDlpV2BigQueryTable $tableReference)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2BigQueryTable
+         */
+        public function getTableReference()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2BigQueryKey registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRowNumber()
-    {
-    }
-    /**
-     * Complete BigQuery table reference.
-     *
-     * @param GooglePrivacyDlpV2BigQueryTable $tableReference
-     */
-    public function setTableReference(GooglePrivacyDlpV2BigQueryTable $tableReference)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2BigQueryTable
-     */
-    public function getTableReference()
+    class Google_Service_DLP_GooglePrivacyDlpV2BigQueryKey extends \Google\Service\DLP\GooglePrivacyDlpV2BigQueryKey
     {
     }
 }

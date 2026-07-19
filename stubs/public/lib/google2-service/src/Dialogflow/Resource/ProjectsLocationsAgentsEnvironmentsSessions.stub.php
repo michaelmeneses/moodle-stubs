@@ -21,112 +21,127 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow\Resource;
-
-/**
- * The "sessions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dialogflowService = new Google\Service\Dialogflow(...);
- *   $sessions = $dialogflowService->projects_locations_agents_environments_sessions;
- *  </code>
- */
-class ProjectsLocationsAgentsEnvironmentsSessions extends \Google\Service\Resource
-{
+namespace Google\Service\Dialogflow\Resource {
+    use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3DetectIntentRequest;
+    use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3DetectIntentResponse;
+    use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3FulfillIntentRequest;
+    use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3FulfillIntentResponse;
+    use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3MatchIntentRequest;
+    use Google\Service\Dialogflow\GoogleCloudDialogflowCxV3MatchIntentResponse;
     /**
-     * Processes a natural language query and returns structured, actionable data as
-     * a result. This method is not idempotent, because it may cause session entity
-     * types to be updated, which in turn might affect results of future queries.
-     * Note: Always use agent versions for production traffic. See [Versions and
-     * environments](https://cloud.google.com/dialogflow/cx/docs/concept/version).
-     * (sessions.detectIntent)
-     *
-     * @param string $session Required. The name of the session this query is sent
-     * to. Format: `projects//locations//agents//sessions/` or
-     * `projects//locations//agents//environments//sessions/`. If `Environment ID`
-     * is not specified, we assume default 'draft' environment. It's up to the API
-     * caller to choose an appropriate `Session ID`. It can be a random number or
-     * some type of session identifiers (preferably hashed). The length of the
-     * `Session ID` must not exceed 36 characters. For more information, see the
-     * [sessions
-     * guide](https://cloud.google.com/dialogflow/cx/docs/concept/session). Note:
-     * Always use agent versions for production traffic. See [Versions and
-     * environments](https://cloud.google.com/dialogflow/cx/docs/concept/version).
-     * @param GoogleCloudDialogflowCxV3DetectIntentRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudDialogflowCxV3DetectIntentResponse
-     * @throws \Google\Service\Exception
+     * The "sessions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dialogflowService = new Google\Service\Dialogflow(...);
+     *   $sessions = $dialogflowService->projects_locations_agents_environments_sessions;
+     *  </code>
      */
-    public function detectIntent($session, GoogleCloudDialogflowCxV3DetectIntentRequest $postBody, $optParams = [])
+    class ProjectsLocationsAgentsEnvironmentsSessions extends \Google\Service\Resource
     {
+        /**
+         * Processes a natural language query and returns structured, actionable data as
+         * a result. This method is not idempotent, because it may cause session entity
+         * types to be updated, which in turn might affect results of future queries.
+         * Note: Always use agent versions for production traffic. See [Versions and
+         * environments](https://cloud.google.com/dialogflow/cx/docs/concept/version).
+         * (sessions.detectIntent)
+         *
+         * @param string $session Required. The name of the session this query is sent
+         * to. Format: `projects//locations//agents//sessions/` or
+         * `projects//locations//agents//environments//sessions/`. If `Environment ID`
+         * is not specified, we assume default 'draft' environment. It's up to the API
+         * caller to choose an appropriate `Session ID`. It can be a random number or
+         * some type of session identifiers (preferably hashed). The length of the
+         * `Session ID` must not exceed 36 characters. For more information, see the
+         * [sessions
+         * guide](https://cloud.google.com/dialogflow/cx/docs/concept/session). Note:
+         * Always use agent versions for production traffic. See [Versions and
+         * environments](https://cloud.google.com/dialogflow/cx/docs/concept/version).
+         * @param GoogleCloudDialogflowCxV3DetectIntentRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudDialogflowCxV3DetectIntentResponse
+         * @throws \Google\Service\Exception
+         */
+        public function detectIntent($session, GoogleCloudDialogflowCxV3DetectIntentRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Fulfills a matched intent returned by MatchIntent. Must be called after
+         * MatchIntent, with input from MatchIntentResponse. Otherwise, the behavior is
+         * undefined. (sessions.fulfillIntent)
+         *
+         * @param string $session Required. The name of the session this query is sent
+         * to. Format: `projects//locations//agents//sessions/` or
+         * `projects//locations//agents//environments//sessions/`. If `Environment ID`
+         * is not specified, we assume default 'draft' environment. It's up to the API
+         * caller to choose an appropriate `Session ID`. It can be a random number or
+         * some type of session identifiers (preferably hashed). The length of the
+         * `Session ID` must not exceed 36 characters. For more information, see the
+         * [sessions
+         * guide](https://cloud.google.com/dialogflow/cx/docs/concept/session).
+         * @param GoogleCloudDialogflowCxV3FulfillIntentRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudDialogflowCxV3FulfillIntentResponse
+         * @throws \Google\Service\Exception
+         */
+        public function fulfillIntent($session, GoogleCloudDialogflowCxV3FulfillIntentRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Returns preliminary intent match results, doesn't change the session status.
+         * (sessions.matchIntent)
+         *
+         * @param string $session Required. The name of the session this query is sent
+         * to. Format: `projects//locations//agents//sessions/` or
+         * `projects//locations//agents//environments//sessions/`. If `Environment ID`
+         * is not specified, we assume default 'draft' environment. It's up to the API
+         * caller to choose an appropriate `Session ID`. It can be a random number or
+         * some type of session identifiers (preferably hashed). The length of the
+         * `Session ID` must not exceed 36 characters. For more information, see the
+         * [sessions
+         * guide](https://cloud.google.com/dialogflow/cx/docs/concept/session).
+         * @param GoogleCloudDialogflowCxV3MatchIntentRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudDialogflowCxV3MatchIntentResponse
+         * @throws \Google\Service\Exception
+         */
+        public function matchIntent($session, GoogleCloudDialogflowCxV3MatchIntentRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Processes a natural language query and returns structured, actionable data as
+         * a result through server-side streaming. Server-side streaming allows
+         * Dialogflow to send [partial responses](https://cloud.google.com/dialogflow/cx
+         * /docs/concept/fulfillment#partial-response) earlier in a single request.
+         * (sessions.serverStreamingDetectIntent)
+         *
+         * @param string $session Required. The name of the session this query is sent
+         * to. Format: `projects//locations//agents//sessions/` or
+         * `projects//locations//agents//environments//sessions/`. If `Environment ID`
+         * is not specified, we assume default 'draft' environment. It's up to the API
+         * caller to choose an appropriate `Session ID`. It can be a random number or
+         * some type of session identifiers (preferably hashed). The length of the
+         * `Session ID` must not exceed 36 characters. For more information, see the
+         * [sessions
+         * guide](https://cloud.google.com/dialogflow/cx/docs/concept/session). Note:
+         * Always use agent versions for production traffic. See [Versions and
+         * environments](https://cloud.google.com/dialogflow/cx/docs/concept/version).
+         * @param GoogleCloudDialogflowCxV3DetectIntentRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudDialogflowCxV3DetectIntentResponse
+         * @throws \Google\Service\Exception
+         */
+        public function serverStreamingDetectIntent($session, GoogleCloudDialogflowCxV3DetectIntentRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Fulfills a matched intent returned by MatchIntent. Must be called after
-     * MatchIntent, with input from MatchIntentResponse. Otherwise, the behavior is
-     * undefined. (sessions.fulfillIntent)
-     *
-     * @param string $session Required. The name of the session this query is sent
-     * to. Format: `projects//locations//agents//sessions/` or
-     * `projects//locations//agents//environments//sessions/`. If `Environment ID`
-     * is not specified, we assume default 'draft' environment. It's up to the API
-     * caller to choose an appropriate `Session ID`. It can be a random number or
-     * some type of session identifiers (preferably hashed). The length of the
-     * `Session ID` must not exceed 36 characters. For more information, see the
-     * [sessions
-     * guide](https://cloud.google.com/dialogflow/cx/docs/concept/session).
-     * @param GoogleCloudDialogflowCxV3FulfillIntentRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudDialogflowCxV3FulfillIntentResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dialogflow\Resource\ProjectsLocationsAgentsEnvironmentsSessions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function fulfillIntent($session, GoogleCloudDialogflowCxV3FulfillIntentRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Returns preliminary intent match results, doesn't change the session status.
-     * (sessions.matchIntent)
-     *
-     * @param string $session Required. The name of the session this query is sent
-     * to. Format: `projects//locations//agents//sessions/` or
-     * `projects//locations//agents//environments//sessions/`. If `Environment ID`
-     * is not specified, we assume default 'draft' environment. It's up to the API
-     * caller to choose an appropriate `Session ID`. It can be a random number or
-     * some type of session identifiers (preferably hashed). The length of the
-     * `Session ID` must not exceed 36 characters. For more information, see the
-     * [sessions
-     * guide](https://cloud.google.com/dialogflow/cx/docs/concept/session).
-     * @param GoogleCloudDialogflowCxV3MatchIntentRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudDialogflowCxV3MatchIntentResponse
-     * @throws \Google\Service\Exception
-     */
-    public function matchIntent($session, GoogleCloudDialogflowCxV3MatchIntentRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Processes a natural language query and returns structured, actionable data as
-     * a result through server-side streaming. Server-side streaming allows
-     * Dialogflow to send [partial responses](https://cloud.google.com/dialogflow/cx
-     * /docs/concept/fulfillment#partial-response) earlier in a single request.
-     * (sessions.serverStreamingDetectIntent)
-     *
-     * @param string $session Required. The name of the session this query is sent
-     * to. Format: `projects//locations//agents//sessions/` or
-     * `projects//locations//agents//environments//sessions/`. If `Environment ID`
-     * is not specified, we assume default 'draft' environment. It's up to the API
-     * caller to choose an appropriate `Session ID`. It can be a random number or
-     * some type of session identifiers (preferably hashed). The length of the
-     * `Session ID` must not exceed 36 characters. For more information, see the
-     * [sessions
-     * guide](https://cloud.google.com/dialogflow/cx/docs/concept/session). Note:
-     * Always use agent versions for production traffic. See [Versions and
-     * environments](https://cloud.google.com/dialogflow/cx/docs/concept/version).
-     * @param GoogleCloudDialogflowCxV3DetectIntentRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudDialogflowCxV3DetectIntentResponse
-     * @throws \Google\Service\Exception
-     */
-    public function serverStreamingDetectIntent($session, GoogleCloudDialogflowCxV3DetectIntentRequest $postBody, $optParams = [])
+    class Google_Service_Dialogflow_Resource_ProjectsLocationsAgentsEnvironmentsSessions extends \Google\Service\Dialogflow\Resource\ProjectsLocationsAgentsEnvironmentsSessions
     {
     }
 }

@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterNumericFilter extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $operation;
-    protected $valueType = GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterNumericValue::class;
-    protected $valueDataType = '';
-    /**
-     * @param string
-     */
-    public function setOperation($operation)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterNumericFilter extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $operation;
+        protected $valueType = GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterNumericValue::class;
+        protected $valueDataType = '';
+        /**
+         * @param string
+         */
+        public function setOperation($operation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperation()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterNumericValue
+         */
+        public function setValue(GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterNumericValue $value)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterNumericValue
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterNumericFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOperation()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterNumericValue
-     */
-    public function setValue(GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterNumericValue $value)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterNumericValue
-     */
-    public function getValue()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterNumericFilter extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterNumericFilter
     {
     }
 }

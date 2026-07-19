@@ -21,300 +21,309 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2IntentMessage extends \Google\Model
-{
-    /**
-     * Default platform.
-     */
-    public const PLATFORM_PLATFORM_UNSPECIFIED = 'PLATFORM_UNSPECIFIED';
-    /**
-     * Facebook.
-     */
-    public const PLATFORM_FACEBOOK = 'FACEBOOK';
-    /**
-     * Slack.
-     */
-    public const PLATFORM_SLACK = 'SLACK';
-    /**
-     * Telegram.
-     */
-    public const PLATFORM_TELEGRAM = 'TELEGRAM';
-    /**
-     * Kik.
-     */
-    public const PLATFORM_KIK = 'KIK';
-    /**
-     * Skype.
-     */
-    public const PLATFORM_SKYPE = 'SKYPE';
-    /**
-     * Line.
-     */
-    public const PLATFORM_LINE = 'LINE';
-    /**
-     * Viber.
-     */
-    public const PLATFORM_VIBER = 'VIBER';
-    /**
-     * Google Assistant See [Dialogflow webhook format](https://developers.google.
-     * com/assistant/actions/build/json/dialogflow-webhook-json)
-     */
-    public const PLATFORM_ACTIONS_ON_GOOGLE = 'ACTIONS_ON_GOOGLE';
-    /**
-     * Google Hangouts.
-     */
-    public const PLATFORM_GOOGLE_HANGOUTS = 'GOOGLE_HANGOUTS';
-    protected $basicCardType = GoogleCloudDialogflowV2IntentMessageBasicCard::class;
-    protected $basicCardDataType = '';
-    protected $browseCarouselCardType = GoogleCloudDialogflowV2IntentMessageBrowseCarouselCard::class;
-    protected $browseCarouselCardDataType = '';
-    protected $cardType = GoogleCloudDialogflowV2IntentMessageCard::class;
-    protected $cardDataType = '';
-    protected $carouselSelectType = GoogleCloudDialogflowV2IntentMessageCarouselSelect::class;
-    protected $carouselSelectDataType = '';
-    protected $imageType = GoogleCloudDialogflowV2IntentMessageImage::class;
-    protected $imageDataType = '';
-    protected $linkOutSuggestionType = GoogleCloudDialogflowV2IntentMessageLinkOutSuggestion::class;
-    protected $linkOutSuggestionDataType = '';
-    protected $listSelectType = GoogleCloudDialogflowV2IntentMessageListSelect::class;
-    protected $listSelectDataType = '';
-    protected $mediaContentType = GoogleCloudDialogflowV2IntentMessageMediaContent::class;
-    protected $mediaContentDataType = '';
-    /**
-     * A custom platform-specific response.
-     *
-     * @var array[]
-     */
-    public $payload;
-    /**
-     * Optional. The platform that this message is intended for.
-     *
-     * @var string
-     */
-    public $platform;
-    protected $quickRepliesType = GoogleCloudDialogflowV2IntentMessageQuickReplies::class;
-    protected $quickRepliesDataType = '';
-    protected $simpleResponsesType = GoogleCloudDialogflowV2IntentMessageSimpleResponses::class;
-    protected $simpleResponsesDataType = '';
-    protected $suggestionsType = GoogleCloudDialogflowV2IntentMessageSuggestions::class;
-    protected $suggestionsDataType = '';
-    protected $tableCardType = GoogleCloudDialogflowV2IntentMessageTableCard::class;
-    protected $tableCardDataType = '';
-    protected $textType = GoogleCloudDialogflowV2IntentMessageText::class;
-    protected $textDataType = '';
-    /**
-     * The basic card response for Actions on Google.
-     *
-     * @param GoogleCloudDialogflowV2IntentMessageBasicCard $basicCard
-     */
-    public function setBasicCard(GoogleCloudDialogflowV2IntentMessageBasicCard $basicCard)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2IntentMessage extends \Google\Model
     {
+        /**
+         * Default platform.
+         */
+        public const PLATFORM_PLATFORM_UNSPECIFIED = 'PLATFORM_UNSPECIFIED';
+        /**
+         * Facebook.
+         */
+        public const PLATFORM_FACEBOOK = 'FACEBOOK';
+        /**
+         * Slack.
+         */
+        public const PLATFORM_SLACK = 'SLACK';
+        /**
+         * Telegram.
+         */
+        public const PLATFORM_TELEGRAM = 'TELEGRAM';
+        /**
+         * Kik.
+         */
+        public const PLATFORM_KIK = 'KIK';
+        /**
+         * Skype.
+         */
+        public const PLATFORM_SKYPE = 'SKYPE';
+        /**
+         * Line.
+         */
+        public const PLATFORM_LINE = 'LINE';
+        /**
+         * Viber.
+         */
+        public const PLATFORM_VIBER = 'VIBER';
+        /**
+         * Google Assistant See [Dialogflow webhook format](https://developers.google.
+         * com/assistant/actions/build/json/dialogflow-webhook-json)
+         */
+        public const PLATFORM_ACTIONS_ON_GOOGLE = 'ACTIONS_ON_GOOGLE';
+        /**
+         * Google Hangouts.
+         */
+        public const PLATFORM_GOOGLE_HANGOUTS = 'GOOGLE_HANGOUTS';
+        protected $basicCardType = GoogleCloudDialogflowV2IntentMessageBasicCard::class;
+        protected $basicCardDataType = '';
+        protected $browseCarouselCardType = GoogleCloudDialogflowV2IntentMessageBrowseCarouselCard::class;
+        protected $browseCarouselCardDataType = '';
+        protected $cardType = GoogleCloudDialogflowV2IntentMessageCard::class;
+        protected $cardDataType = '';
+        protected $carouselSelectType = GoogleCloudDialogflowV2IntentMessageCarouselSelect::class;
+        protected $carouselSelectDataType = '';
+        protected $imageType = GoogleCloudDialogflowV2IntentMessageImage::class;
+        protected $imageDataType = '';
+        protected $linkOutSuggestionType = GoogleCloudDialogflowV2IntentMessageLinkOutSuggestion::class;
+        protected $linkOutSuggestionDataType = '';
+        protected $listSelectType = GoogleCloudDialogflowV2IntentMessageListSelect::class;
+        protected $listSelectDataType = '';
+        protected $mediaContentType = GoogleCloudDialogflowV2IntentMessageMediaContent::class;
+        protected $mediaContentDataType = '';
+        /**
+         * A custom platform-specific response.
+         *
+         * @var array[]
+         */
+        public $payload;
+        /**
+         * Optional. The platform that this message is intended for.
+         *
+         * @var string
+         */
+        public $platform;
+        protected $quickRepliesType = GoogleCloudDialogflowV2IntentMessageQuickReplies::class;
+        protected $quickRepliesDataType = '';
+        protected $simpleResponsesType = GoogleCloudDialogflowV2IntentMessageSimpleResponses::class;
+        protected $simpleResponsesDataType = '';
+        protected $suggestionsType = GoogleCloudDialogflowV2IntentMessageSuggestions::class;
+        protected $suggestionsDataType = '';
+        protected $tableCardType = GoogleCloudDialogflowV2IntentMessageTableCard::class;
+        protected $tableCardDataType = '';
+        protected $textType = GoogleCloudDialogflowV2IntentMessageText::class;
+        protected $textDataType = '';
+        /**
+         * The basic card response for Actions on Google.
+         *
+         * @param GoogleCloudDialogflowV2IntentMessageBasicCard $basicCard
+         */
+        public function setBasicCard(GoogleCloudDialogflowV2IntentMessageBasicCard $basicCard)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2IntentMessageBasicCard
+         */
+        public function getBasicCard()
+        {
+        }
+        /**
+         * Browse carousel card for Actions on Google.
+         *
+         * @param GoogleCloudDialogflowV2IntentMessageBrowseCarouselCard $browseCarouselCard
+         */
+        public function setBrowseCarouselCard(GoogleCloudDialogflowV2IntentMessageBrowseCarouselCard $browseCarouselCard)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2IntentMessageBrowseCarouselCard
+         */
+        public function getBrowseCarouselCard()
+        {
+        }
+        /**
+         * The card response.
+         *
+         * @param GoogleCloudDialogflowV2IntentMessageCard $card
+         */
+        public function setCard(GoogleCloudDialogflowV2IntentMessageCard $card)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2IntentMessageCard
+         */
+        public function getCard()
+        {
+        }
+        /**
+         * The carousel card response for Actions on Google.
+         *
+         * @param GoogleCloudDialogflowV2IntentMessageCarouselSelect $carouselSelect
+         */
+        public function setCarouselSelect(GoogleCloudDialogflowV2IntentMessageCarouselSelect $carouselSelect)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2IntentMessageCarouselSelect
+         */
+        public function getCarouselSelect()
+        {
+        }
+        /**
+         * The image response.
+         *
+         * @param GoogleCloudDialogflowV2IntentMessageImage $image
+         */
+        public function setImage(GoogleCloudDialogflowV2IntentMessageImage $image)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2IntentMessageImage
+         */
+        public function getImage()
+        {
+        }
+        /**
+         * The link out suggestion chip for Actions on Google.
+         *
+         * @param GoogleCloudDialogflowV2IntentMessageLinkOutSuggestion $linkOutSuggestion
+         */
+        public function setLinkOutSuggestion(GoogleCloudDialogflowV2IntentMessageLinkOutSuggestion $linkOutSuggestion)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2IntentMessageLinkOutSuggestion
+         */
+        public function getLinkOutSuggestion()
+        {
+        }
+        /**
+         * The list card response for Actions on Google.
+         *
+         * @param GoogleCloudDialogflowV2IntentMessageListSelect $listSelect
+         */
+        public function setListSelect(GoogleCloudDialogflowV2IntentMessageListSelect $listSelect)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2IntentMessageListSelect
+         */
+        public function getListSelect()
+        {
+        }
+        /**
+         * The media content card for Actions on Google.
+         *
+         * @param GoogleCloudDialogflowV2IntentMessageMediaContent $mediaContent
+         */
+        public function setMediaContent(GoogleCloudDialogflowV2IntentMessageMediaContent $mediaContent)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2IntentMessageMediaContent
+         */
+        public function getMediaContent()
+        {
+        }
+        /**
+         * A custom platform-specific response.
+         *
+         * @param array[] $payload
+         */
+        public function setPayload($payload)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getPayload()
+        {
+        }
+        /**
+         * Optional. The platform that this message is intended for.
+         *
+         * Accepted values: PLATFORM_UNSPECIFIED, FACEBOOK, SLACK, TELEGRAM, KIK,
+         * SKYPE, LINE, VIBER, ACTIONS_ON_GOOGLE, GOOGLE_HANGOUTS
+         *
+         * @param self::PLATFORM_* $platform
+         */
+        public function setPlatform($platform)
+        {
+        }
+        /**
+         * @return self::PLATFORM_*
+         */
+        public function getPlatform()
+        {
+        }
+        /**
+         * The quick replies response.
+         *
+         * @param GoogleCloudDialogflowV2IntentMessageQuickReplies $quickReplies
+         */
+        public function setQuickReplies(GoogleCloudDialogflowV2IntentMessageQuickReplies $quickReplies)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2IntentMessageQuickReplies
+         */
+        public function getQuickReplies()
+        {
+        }
+        /**
+         * The voice and text-only responses for Actions on Google.
+         *
+         * @param GoogleCloudDialogflowV2IntentMessageSimpleResponses $simpleResponses
+         */
+        public function setSimpleResponses(GoogleCloudDialogflowV2IntentMessageSimpleResponses $simpleResponses)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2IntentMessageSimpleResponses
+         */
+        public function getSimpleResponses()
+        {
+        }
+        /**
+         * The suggestion chips for Actions on Google.
+         *
+         * @param GoogleCloudDialogflowV2IntentMessageSuggestions $suggestions
+         */
+        public function setSuggestions(GoogleCloudDialogflowV2IntentMessageSuggestions $suggestions)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2IntentMessageSuggestions
+         */
+        public function getSuggestions()
+        {
+        }
+        /**
+         * Table card for Actions on Google.
+         *
+         * @param GoogleCloudDialogflowV2IntentMessageTableCard $tableCard
+         */
+        public function setTableCard(GoogleCloudDialogflowV2IntentMessageTableCard $tableCard)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2IntentMessageTableCard
+         */
+        public function getTableCard()
+        {
+        }
+        /**
+         * The text response.
+         *
+         * @param GoogleCloudDialogflowV2IntentMessageText $text
+         */
+        public function setText(GoogleCloudDialogflowV2IntentMessageText $text)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2IntentMessageText
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowV2IntentMessageBasicCard
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2IntentMessage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBasicCard()
-    {
-    }
-    /**
-     * Browse carousel card for Actions on Google.
-     *
-     * @param GoogleCloudDialogflowV2IntentMessageBrowseCarouselCard $browseCarouselCard
-     */
-    public function setBrowseCarouselCard(GoogleCloudDialogflowV2IntentMessageBrowseCarouselCard $browseCarouselCard)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2IntentMessageBrowseCarouselCard
-     */
-    public function getBrowseCarouselCard()
-    {
-    }
-    /**
-     * The card response.
-     *
-     * @param GoogleCloudDialogflowV2IntentMessageCard $card
-     */
-    public function setCard(GoogleCloudDialogflowV2IntentMessageCard $card)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2IntentMessageCard
-     */
-    public function getCard()
-    {
-    }
-    /**
-     * The carousel card response for Actions on Google.
-     *
-     * @param GoogleCloudDialogflowV2IntentMessageCarouselSelect $carouselSelect
-     */
-    public function setCarouselSelect(GoogleCloudDialogflowV2IntentMessageCarouselSelect $carouselSelect)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2IntentMessageCarouselSelect
-     */
-    public function getCarouselSelect()
-    {
-    }
-    /**
-     * The image response.
-     *
-     * @param GoogleCloudDialogflowV2IntentMessageImage $image
-     */
-    public function setImage(GoogleCloudDialogflowV2IntentMessageImage $image)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2IntentMessageImage
-     */
-    public function getImage()
-    {
-    }
-    /**
-     * The link out suggestion chip for Actions on Google.
-     *
-     * @param GoogleCloudDialogflowV2IntentMessageLinkOutSuggestion $linkOutSuggestion
-     */
-    public function setLinkOutSuggestion(GoogleCloudDialogflowV2IntentMessageLinkOutSuggestion $linkOutSuggestion)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2IntentMessageLinkOutSuggestion
-     */
-    public function getLinkOutSuggestion()
-    {
-    }
-    /**
-     * The list card response for Actions on Google.
-     *
-     * @param GoogleCloudDialogflowV2IntentMessageListSelect $listSelect
-     */
-    public function setListSelect(GoogleCloudDialogflowV2IntentMessageListSelect $listSelect)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2IntentMessageListSelect
-     */
-    public function getListSelect()
-    {
-    }
-    /**
-     * The media content card for Actions on Google.
-     *
-     * @param GoogleCloudDialogflowV2IntentMessageMediaContent $mediaContent
-     */
-    public function setMediaContent(GoogleCloudDialogflowV2IntentMessageMediaContent $mediaContent)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2IntentMessageMediaContent
-     */
-    public function getMediaContent()
-    {
-    }
-    /**
-     * A custom platform-specific response.
-     *
-     * @param array[] $payload
-     */
-    public function setPayload($payload)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getPayload()
-    {
-    }
-    /**
-     * Optional. The platform that this message is intended for.
-     *
-     * Accepted values: PLATFORM_UNSPECIFIED, FACEBOOK, SLACK, TELEGRAM, KIK,
-     * SKYPE, LINE, VIBER, ACTIONS_ON_GOOGLE, GOOGLE_HANGOUTS
-     *
-     * @param self::PLATFORM_* $platform
-     */
-    public function setPlatform($platform)
-    {
-    }
-    /**
-     * @return self::PLATFORM_*
-     */
-    public function getPlatform()
-    {
-    }
-    /**
-     * The quick replies response.
-     *
-     * @param GoogleCloudDialogflowV2IntentMessageQuickReplies $quickReplies
-     */
-    public function setQuickReplies(GoogleCloudDialogflowV2IntentMessageQuickReplies $quickReplies)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2IntentMessageQuickReplies
-     */
-    public function getQuickReplies()
-    {
-    }
-    /**
-     * The voice and text-only responses for Actions on Google.
-     *
-     * @param GoogleCloudDialogflowV2IntentMessageSimpleResponses $simpleResponses
-     */
-    public function setSimpleResponses(GoogleCloudDialogflowV2IntentMessageSimpleResponses $simpleResponses)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2IntentMessageSimpleResponses
-     */
-    public function getSimpleResponses()
-    {
-    }
-    /**
-     * The suggestion chips for Actions on Google.
-     *
-     * @param GoogleCloudDialogflowV2IntentMessageSuggestions $suggestions
-     */
-    public function setSuggestions(GoogleCloudDialogflowV2IntentMessageSuggestions $suggestions)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2IntentMessageSuggestions
-     */
-    public function getSuggestions()
-    {
-    }
-    /**
-     * Table card for Actions on Google.
-     *
-     * @param GoogleCloudDialogflowV2IntentMessageTableCard $tableCard
-     */
-    public function setTableCard(GoogleCloudDialogflowV2IntentMessageTableCard $tableCard)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2IntentMessageTableCard
-     */
-    public function getTableCard()
-    {
-    }
-    /**
-     * The text response.
-     *
-     * @param GoogleCloudDialogflowV2IntentMessageText $text
-     */
-    public function setText(GoogleCloudDialogflowV2IntentMessageText $text)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2IntentMessageText
-     */
-    public function getText()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2IntentMessage extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2IntentMessage
     {
     }
 }

@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1WriteFeatureValuesRequest extends \Google\Collection
-{
-    protected $collection_key = 'payloads';
-    protected $payloadsType = GoogleCloudAiplatformV1WriteFeatureValuesPayload::class;
-    protected $payloadsDataType = 'array';
-    /**
-     * Required. The entities to be written. Up to 100,000 feature values can be
-     * written across all `payloads`.
-     *
-     * @param GoogleCloudAiplatformV1WriteFeatureValuesPayload[] $payloads
-     */
-    public function setPayloads($payloads)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1WriteFeatureValuesRequest extends \Google\Collection
     {
+        protected $collection_key = 'payloads';
+        protected $payloadsType = GoogleCloudAiplatformV1WriteFeatureValuesPayload::class;
+        protected $payloadsDataType = 'array';
+        /**
+         * Required. The entities to be written. Up to 100,000 feature values can be
+         * written across all `payloads`.
+         *
+         * @param GoogleCloudAiplatformV1WriteFeatureValuesPayload[] $payloads
+         */
+        public function setPayloads($payloads)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1WriteFeatureValuesPayload[]
+         */
+        public function getPayloads()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1WriteFeatureValuesPayload[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1WriteFeatureValuesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPayloads()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1WriteFeatureValuesRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1WriteFeatureValuesRequest
     {
     }
 }

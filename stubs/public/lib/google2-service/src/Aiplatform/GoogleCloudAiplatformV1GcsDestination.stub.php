@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1GcsDestination extends \Google\Model
-{
-    /**
-     * Required. Google Cloud Storage URI to output directory. If the uri doesn't
-     * end with '/', a '/' will be automatically appended. The directory is
-     * created if it doesn't exist.
-     *
-     * @var string
-     */
-    public $outputUriPrefix;
-    /**
-     * Required. Google Cloud Storage URI to output directory. If the uri doesn't
-     * end with '/', a '/' will be automatically appended. The directory is
-     * created if it doesn't exist.
-     *
-     * @param string $outputUriPrefix
-     */
-    public function setOutputUriPrefix($outputUriPrefix)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1GcsDestination extends \Google\Model
     {
+        /**
+         * Required. Google Cloud Storage URI to output directory. If the uri doesn't
+         * end with '/', a '/' will be automatically appended. The directory is
+         * created if it doesn't exist.
+         *
+         * @var string
+         */
+        public $outputUriPrefix;
+        /**
+         * Required. Google Cloud Storage URI to output directory. If the uri doesn't
+         * end with '/', a '/' will be automatically appended. The directory is
+         * created if it doesn't exist.
+         *
+         * @param string $outputUriPrefix
+         */
+        public function setOutputUriPrefix($outputUriPrefix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOutputUriPrefix()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1GcsDestination registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOutputUriPrefix()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1GcsDestination extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1GcsDestination
     {
     }
 }

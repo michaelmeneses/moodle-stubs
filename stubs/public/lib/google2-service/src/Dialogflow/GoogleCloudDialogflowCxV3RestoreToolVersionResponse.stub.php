@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3RestoreToolVersionResponse extends \Google\Model
-{
-    protected $toolType = GoogleCloudDialogflowCxV3Tool::class;
-    protected $toolDataType = '';
-    /**
-     * The updated tool.
-     *
-     * @param GoogleCloudDialogflowCxV3Tool $tool
-     */
-    public function setTool(GoogleCloudDialogflowCxV3Tool $tool)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3RestoreToolVersionResponse extends \Google\Model
     {
+        protected $toolType = GoogleCloudDialogflowCxV3Tool::class;
+        protected $toolDataType = '';
+        /**
+         * The updated tool.
+         *
+         * @param GoogleCloudDialogflowCxV3Tool $tool
+         */
+        public function setTool(GoogleCloudDialogflowCxV3Tool $tool)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3Tool
+         */
+        public function getTool()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3Tool
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3RestoreToolVersionResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTool()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3RestoreToolVersionResponse extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3RestoreToolVersionResponse
     {
     }
 }

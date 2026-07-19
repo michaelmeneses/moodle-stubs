@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ModelEvaluationSliceSliceSliceSpecValue extends \Google\Model
-{
-    /**
-     * Float type.
-     *
-     * @var float
-     */
-    public $floatValue;
-    /**
-     * String type.
-     *
-     * @var string
-     */
-    public $stringValue;
-    /**
-     * Float type.
-     *
-     * @param float $floatValue
-     */
-    public function setFloatValue($floatValue)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ModelEvaluationSliceSliceSliceSpecValue extends \Google\Model
     {
+        /**
+         * Float type.
+         *
+         * @var float
+         */
+        public $floatValue;
+        /**
+         * String type.
+         *
+         * @var string
+         */
+        public $stringValue;
+        /**
+         * Float type.
+         *
+         * @param float $floatValue
+         */
+        public function setFloatValue($floatValue)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getFloatValue()
+        {
+        }
+        /**
+         * String type.
+         *
+         * @param string $stringValue
+         */
+        public function setStringValue($stringValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStringValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ModelEvaluationSliceSliceSliceSpecValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFloatValue()
-    {
-    }
-    /**
-     * String type.
-     *
-     * @param string $stringValue
-     */
-    public function setStringValue($stringValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStringValue()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ModelEvaluationSliceSliceSliceSpecValue extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ModelEvaluationSliceSliceSliceSpecValue
     {
     }
 }

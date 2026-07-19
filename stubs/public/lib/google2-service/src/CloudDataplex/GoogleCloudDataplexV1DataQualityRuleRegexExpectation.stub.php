@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataQualityRuleRegexExpectation extends \Google\Model
-{
-    /**
-     * Optional. A regular expression the column value is expected to match.
-     *
-     * @var string
-     */
-    public $regex;
-    /**
-     * Optional. A regular expression the column value is expected to match.
-     *
-     * @param string $regex
-     */
-    public function setRegex($regex)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataQualityRuleRegexExpectation extends \Google\Model
     {
+        /**
+         * Optional. A regular expression the column value is expected to match.
+         *
+         * @var string
+         */
+        public $regex;
+        /**
+         * Optional. A regular expression the column value is expected to match.
+         *
+         * @param string $regex
+         */
+        public function setRegex($regex)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataQualityRuleRegexExpectation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRegex()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataQualityRuleRegexExpectation extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataQualityRuleRegexExpectation
     {
     }
 }

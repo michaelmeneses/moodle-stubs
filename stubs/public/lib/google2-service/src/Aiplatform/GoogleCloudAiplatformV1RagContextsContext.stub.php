@@ -21,106 +21,115 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RagContextsContext extends \Google\Model
-{
-    protected $chunkType = GoogleCloudAiplatformV1RagChunk::class;
-    protected $chunkDataType = '';
-    /**
-     * According to the underlying Vector DB and the selected metric type, the
-     * score can be either the distance or the similarity between the query and
-     * the context and its range depends on the metric type. For example, if the
-     * metric type is COSINE_DISTANCE, it represents the distance between the
-     * query and the context. The larger the distance, the less relevant the
-     * context is to the query. The range is [0, 2], while 0 means the most
-     * relevant and 2 means the least relevant.
-     *
-     * @var 
-     */
-    public $score;
-    /**
-     * The file display name.
-     *
-     * @var string
-     */
-    public $sourceDisplayName;
-    /**
-     * If the file is imported from Cloud Storage or Google Drive, source_uri will
-     * be original file URI in Cloud Storage or Google Drive; if file is uploaded,
-     * source_uri will be file display name.
-     *
-     * @var string
-     */
-    public $sourceUri;
-    /**
-     * The text chunk.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * Context of the retrieved chunk.
-     *
-     * @param GoogleCloudAiplatformV1RagChunk $chunk
-     */
-    public function setChunk(GoogleCloudAiplatformV1RagChunk $chunk)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RagContextsContext extends \Google\Model
     {
+        protected $chunkType = GoogleCloudAiplatformV1RagChunk::class;
+        protected $chunkDataType = '';
+        /**
+         * According to the underlying Vector DB and the selected metric type, the
+         * score can be either the distance or the similarity between the query and
+         * the context and its range depends on the metric type. For example, if the
+         * metric type is COSINE_DISTANCE, it represents the distance between the
+         * query and the context. The larger the distance, the less relevant the
+         * context is to the query. The range is [0, 2], while 0 means the most
+         * relevant and 2 means the least relevant.
+         *
+         * @var 
+         */
+        public $score;
+        /**
+         * The file display name.
+         *
+         * @var string
+         */
+        public $sourceDisplayName;
+        /**
+         * If the file is imported from Cloud Storage or Google Drive, source_uri will
+         * be original file URI in Cloud Storage or Google Drive; if file is uploaded,
+         * source_uri will be file display name.
+         *
+         * @var string
+         */
+        public $sourceUri;
+        /**
+         * The text chunk.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * Context of the retrieved chunk.
+         *
+         * @param GoogleCloudAiplatformV1RagChunk $chunk
+         */
+        public function setChunk(GoogleCloudAiplatformV1RagChunk $chunk)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1RagChunk
+         */
+        public function getChunk()
+        {
+        }
+        public function setScore($score)
+        {
+        }
+        public function getScore()
+        {
+        }
+        /**
+         * The file display name.
+         *
+         * @param string $sourceDisplayName
+         */
+        public function setSourceDisplayName($sourceDisplayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceDisplayName()
+        {
+        }
+        /**
+         * If the file is imported from Cloud Storage or Google Drive, source_uri will
+         * be original file URI in Cloud Storage or Google Drive; if file is uploaded,
+         * source_uri will be file display name.
+         *
+         * @param string $sourceUri
+         */
+        public function setSourceUri($sourceUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceUri()
+        {
+        }
+        /**
+         * The text chunk.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1RagChunk
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagContextsContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChunk()
-    {
-    }
-    public function setScore($score)
-    {
-    }
-    public function getScore()
-    {
-    }
-    /**
-     * The file display name.
-     *
-     * @param string $sourceDisplayName
-     */
-    public function setSourceDisplayName($sourceDisplayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceDisplayName()
-    {
-    }
-    /**
-     * If the file is imported from Cloud Storage or Google Drive, source_uri will
-     * be original file URI in Cloud Storage or Google Drive; if file is uploaded,
-     * source_uri will be file display name.
-     *
-     * @param string $sourceUri
-     */
-    public function setSourceUri($sourceUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceUri()
-    {
-    }
-    /**
-     * The text chunk.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RagContextsContext extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RagContextsContext
     {
     }
 }

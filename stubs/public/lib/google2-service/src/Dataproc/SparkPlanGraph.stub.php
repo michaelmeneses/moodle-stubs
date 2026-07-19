@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class SparkPlanGraph extends \Google\Collection
-{
-    protected $collection_key = 'nodes';
-    protected $edgesType = SparkPlanGraphEdge::class;
-    protected $edgesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $executionId;
-    protected $nodesType = SparkPlanGraphNodeWrapper::class;
-    protected $nodesDataType = 'array';
-    /**
-     * @param SparkPlanGraphEdge[] $edges
-     */
-    public function setEdges($edges)
+namespace Google\Service\Dataproc {
+    class SparkPlanGraph extends \Google\Collection
     {
+        protected $collection_key = 'nodes';
+        protected $edgesType = SparkPlanGraphEdge::class;
+        protected $edgesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $executionId;
+        protected $nodesType = SparkPlanGraphNodeWrapper::class;
+        protected $nodesDataType = 'array';
+        /**
+         * @param SparkPlanGraphEdge[] $edges
+         */
+        public function setEdges($edges)
+        {
+        }
+        /**
+         * @return SparkPlanGraphEdge[]
+         */
+        public function getEdges()
+        {
+        }
+        /**
+         * @param string $executionId
+         */
+        public function setExecutionId($executionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExecutionId()
+        {
+        }
+        /**
+         * @param SparkPlanGraphNodeWrapper[] $nodes
+         */
+        public function setNodes($nodes)
+        {
+        }
+        /**
+         * @return SparkPlanGraphNodeWrapper[]
+         */
+        public function getNodes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SparkPlanGraphEdge[]
+     * Runtime class alias of \Google\Service\Dataproc\SparkPlanGraph registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEdges()
-    {
-    }
-    /**
-     * @param string $executionId
-     */
-    public function setExecutionId($executionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExecutionId()
-    {
-    }
-    /**
-     * @param SparkPlanGraphNodeWrapper[] $nodes
-     */
-    public function setNodes($nodes)
-    {
-    }
-    /**
-     * @return SparkPlanGraphNodeWrapper[]
-     */
-    public function getNodes()
+    class Google_Service_Dataproc_SparkPlanGraph extends \Google\Service\Dataproc\SparkPlanGraph
     {
     }
 }

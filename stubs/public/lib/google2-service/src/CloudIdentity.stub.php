@@ -21,63 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for CloudIdentity (v1).
- *
- * <p>
- * API for provisioning and managing identity resources.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://cloud.google.com/identity/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class CloudIdentity extends \Google\Service
-{
-    /** Private Service: https://www.googleapis.com/auth/cloud-identity.devices. */
-    const CLOUD_IDENTITY_DEVICES = "https://www.googleapis.com/auth/cloud-identity.devices";
-    /** See your device details. */
-    const CLOUD_IDENTITY_DEVICES_LOOKUP = "https://www.googleapis.com/auth/cloud-identity.devices.lookup";
-    /** Private Service: https://www.googleapis.com/auth/cloud-identity.devices.readonly. */
-    const CLOUD_IDENTITY_DEVICES_READONLY = "https://www.googleapis.com/auth/cloud-identity.devices.readonly";
-    /** See, change, create, and delete any of the Cloud Identity Groups that you can access, including the members of each group. */
-    const CLOUD_IDENTITY_GROUPS = "https://www.googleapis.com/auth/cloud-identity.groups";
-    /** See any Cloud Identity Groups that you can access, including group members and their emails. */
-    const CLOUD_IDENTITY_GROUPS_READONLY = "https://www.googleapis.com/auth/cloud-identity.groups.readonly";
-    /** See and edit all of the Inbound SSO profiles and their assignments to any Org Units or Google Groups in your Cloud Identity Organization.. */
-    const CLOUD_IDENTITY_INBOUNDSSO = "https://www.googleapis.com/auth/cloud-identity.inboundsso";
-    /** See all of the Inbound SSO profiles and their assignments to any Org Units or Google Groups in your Cloud Identity Organization.. */
-    const CLOUD_IDENTITY_INBOUNDSSO_READONLY = "https://www.googleapis.com/auth/cloud-identity.inboundsso.readonly";
-    /** See and edit policies in your Cloud Identity Organization.. */
-    const CLOUD_IDENTITY_POLICIES = "https://www.googleapis.com/auth/cloud-identity.policies";
-    /** See policies in your Cloud Identity Organization.. */
-    const CLOUD_IDENTITY_POLICIES_READONLY = "https://www.googleapis.com/auth/cloud-identity.policies.readonly";
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    public $customers_userinvitations;
-    public $devices;
-    public $devices_deviceUsers;
-    public $devices_deviceUsers_clientStates;
-    public $groups;
-    public $groups_memberships;
-    public $inboundOidcSsoProfiles;
-    public $inboundSamlSsoProfiles;
-    public $inboundSamlSsoProfiles_idpCredentials;
-    public $inboundSsoAssignments;
-    public $policies;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the CloudIdentity service.
+     * Service definition for CloudIdentity (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * API for provisioning and managing identity resources.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://cloud.google.com/identity/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class CloudIdentity extends \Google\Service
+    {
+        /** Private Service: https://www.googleapis.com/auth/cloud-identity.devices. */
+        const CLOUD_IDENTITY_DEVICES = "https://www.googleapis.com/auth/cloud-identity.devices";
+        /** See your device details. */
+        const CLOUD_IDENTITY_DEVICES_LOOKUP = "https://www.googleapis.com/auth/cloud-identity.devices.lookup";
+        /** Private Service: https://www.googleapis.com/auth/cloud-identity.devices.readonly. */
+        const CLOUD_IDENTITY_DEVICES_READONLY = "https://www.googleapis.com/auth/cloud-identity.devices.readonly";
+        /** See, change, create, and delete any of the Cloud Identity Groups that you can access, including the members of each group. */
+        const CLOUD_IDENTITY_GROUPS = "https://www.googleapis.com/auth/cloud-identity.groups";
+        /** See any Cloud Identity Groups that you can access, including group members and their emails. */
+        const CLOUD_IDENTITY_GROUPS_READONLY = "https://www.googleapis.com/auth/cloud-identity.groups.readonly";
+        /** See and edit all of the Inbound SSO profiles and their assignments to any Org Units or Google Groups in your Cloud Identity Organization.. */
+        const CLOUD_IDENTITY_INBOUNDSSO = "https://www.googleapis.com/auth/cloud-identity.inboundsso";
+        /** See all of the Inbound SSO profiles and their assignments to any Org Units or Google Groups in your Cloud Identity Organization.. */
+        const CLOUD_IDENTITY_INBOUNDSSO_READONLY = "https://www.googleapis.com/auth/cloud-identity.inboundsso.readonly";
+        /** See and edit policies in your Cloud Identity Organization.. */
+        const CLOUD_IDENTITY_POLICIES = "https://www.googleapis.com/auth/cloud-identity.policies";
+        /** See policies in your Cloud Identity Organization.. */
+        const CLOUD_IDENTITY_POLICIES_READONLY = "https://www.googleapis.com/auth/cloud-identity.policies.readonly";
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        public $customers_userinvitations;
+        public $devices;
+        public $devices_deviceUsers;
+        public $devices_deviceUsers_clientStates;
+        public $groups;
+        public $groups_memberships;
+        public $inboundOidcSsoProfiles;
+        public $inboundSamlSsoProfiles;
+        public $inboundSamlSsoProfiles_idpCredentials;
+        public $inboundSsoAssignments;
+        public $policies;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the CloudIdentity service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudIdentity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudIdentity extends \Google\Service\CloudIdentity
     {
     }
 }

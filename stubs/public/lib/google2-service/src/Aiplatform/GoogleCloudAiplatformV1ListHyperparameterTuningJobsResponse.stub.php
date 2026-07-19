@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ListHyperparameterTuningJobsResponse extends \Google\Collection
-{
-    protected $collection_key = 'hyperparameterTuningJobs';
-    protected $hyperparameterTuningJobsType = GoogleCloudAiplatformV1HyperparameterTuningJob::class;
-    protected $hyperparameterTuningJobsDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass to
-     * ListHyperparameterTuningJobsRequest.page_token to obtain that page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of HyperparameterTuningJobs in the requested page.
-     * HyperparameterTuningJob.trials of the jobs will be not be returned.
-     *
-     * @param GoogleCloudAiplatformV1HyperparameterTuningJob[] $hyperparameterTuningJobs
-     */
-    public function setHyperparameterTuningJobs($hyperparameterTuningJobs)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ListHyperparameterTuningJobsResponse extends \Google\Collection
     {
+        protected $collection_key = 'hyperparameterTuningJobs';
+        protected $hyperparameterTuningJobsType = GoogleCloudAiplatformV1HyperparameterTuningJob::class;
+        protected $hyperparameterTuningJobsDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass to
+         * ListHyperparameterTuningJobsRequest.page_token to obtain that page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of HyperparameterTuningJobs in the requested page.
+         * HyperparameterTuningJob.trials of the jobs will be not be returned.
+         *
+         * @param GoogleCloudAiplatformV1HyperparameterTuningJob[] $hyperparameterTuningJobs
+         */
+        public function setHyperparameterTuningJobs($hyperparameterTuningJobs)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1HyperparameterTuningJob[]
+         */
+        public function getHyperparameterTuningJobs()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results. Pass to
+         * ListHyperparameterTuningJobsRequest.page_token to obtain that page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1HyperparameterTuningJob[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListHyperparameterTuningJobsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHyperparameterTuningJobs()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results. Pass to
-     * ListHyperparameterTuningJobsRequest.page_token to obtain that page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ListHyperparameterTuningJobsResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListHyperparameterTuningJobsResponse
     {
     }
 }

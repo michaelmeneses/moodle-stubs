@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1DocumentPageImageQualityScoresDetectedDefect extends \Google\Model
-{
-    /**
-     * Confidence of detected defect. Range `[0, 1]` where `1` indicates strong
-     * confidence that the defect exists.
-     *
-     * @var float
-     */
-    public $confidence;
-    /**
-     * Name of the defect type. Supported values are: - `quality/defect_blurry` -
-     * `quality/defect_noisy` - `quality/defect_dark` - `quality/defect_faint` -
-     * `quality/defect_text_too_small` - `quality/defect_document_cutoff` -
-     * `quality/defect_text_cutoff` - `quality/defect_glare`
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Confidence of detected defect. Range `[0, 1]` where `1` indicates strong
-     * confidence that the defect exists.
-     *
-     * @param float $confidence
-     */
-    public function setConfidence($confidence)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1DocumentPageImageQualityScoresDetectedDefect extends \Google\Model
     {
+        /**
+         * Confidence of detected defect. Range `[0, 1]` where `1` indicates strong
+         * confidence that the defect exists.
+         *
+         * @var float
+         */
+        public $confidence;
+        /**
+         * Name of the defect type. Supported values are: - `quality/defect_blurry` -
+         * `quality/defect_noisy` - `quality/defect_dark` - `quality/defect_faint` -
+         * `quality/defect_text_too_small` - `quality/defect_document_cutoff` -
+         * `quality/defect_text_cutoff` - `quality/defect_glare`
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Confidence of detected defect. Range `[0, 1]` where `1` indicates strong
+         * confidence that the defect exists.
+         *
+         * @param float $confidence
+         */
+        public function setConfidence($confidence)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidence()
+        {
+        }
+        /**
+         * Name of the defect type. Supported values are: - `quality/defect_blurry` -
+         * `quality/defect_noisy` - `quality/defect_dark` - `quality/defect_faint` -
+         * `quality/defect_text_too_small` - `quality/defect_document_cutoff` -
+         * `quality/defect_text_cutoff` - `quality/defect_glare`
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1DocumentPageImageQualityScoresDetectedDefect registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfidence()
-    {
-    }
-    /**
-     * Name of the defect type. Supported values are: - `quality/defect_blurry` -
-     * `quality/defect_noisy` - `quality/defect_dark` - `quality/defect_faint` -
-     * `quality/defect_text_too_small` - `quality/defect_document_cutoff` -
-     * `quality/defect_text_cutoff` - `quality/defect_glare`
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Document_GoogleCloudDocumentaiV1DocumentPageImageQualityScoresDetectedDefect extends \Google\Service\Document\GoogleCloudDocumentaiV1DocumentPageImageQualityScoresDetectedDefect
     {
     }
 }

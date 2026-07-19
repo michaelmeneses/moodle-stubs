@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class EncryptionConfig extends \Google\Model
-{
-    /**
-     * Optional. The Cloud KMS key name to encrypt backups in this backup vault.
-     * Must be in the same region as the vault. Some workload backups like compute
-     * disk backups may use their inherited source key instead. Format:
-     * projects/{project}/locations/{location}/keyRings/{ring}/cryptoKeys/{key}
-     *
-     * @var string
-     */
-    public $kmsKeyName;
-    /**
-     * Optional. The Cloud KMS key name to encrypt backups in this backup vault.
-     * Must be in the same region as the vault. Some workload backups like compute
-     * disk backups may use their inherited source key instead. Format:
-     * projects/{project}/locations/{location}/keyRings/{ring}/cryptoKeys/{key}
-     *
-     * @param string $kmsKeyName
-     */
-    public function setKmsKeyName($kmsKeyName)
+namespace Google\Service\Backupdr {
+    class EncryptionConfig extends \Google\Model
     {
+        /**
+         * Optional. The Cloud KMS key name to encrypt backups in this backup vault.
+         * Must be in the same region as the vault. Some workload backups like compute
+         * disk backups may use their inherited source key instead. Format:
+         * projects/{project}/locations/{location}/keyRings/{ring}/cryptoKeys/{key}
+         *
+         * @var string
+         */
+        public $kmsKeyName;
+        /**
+         * Optional. The Cloud KMS key name to encrypt backups in this backup vault.
+         * Must be in the same region as the vault. Some workload backups like compute
+         * disk backups may use their inherited source key instead. Format:
+         * projects/{project}/locations/{location}/keyRings/{ring}/cryptoKeys/{key}
+         *
+         * @param string $kmsKeyName
+         */
+        public function setKmsKeyName($kmsKeyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKmsKeyName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Backupdr\EncryptionConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKmsKeyName()
+    class Google_Service_Backupdr_EncryptionConfig extends \Google\Service\Backupdr\EncryptionConfig
     {
     }
 }

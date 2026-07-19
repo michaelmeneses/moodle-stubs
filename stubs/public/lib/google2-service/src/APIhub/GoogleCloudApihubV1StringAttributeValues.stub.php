@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1StringAttributeValues extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    /**
-     * Required. The attribute values in case attribute data type is string or
-     * JSON.
-     *
-     * @var string[]
-     */
-    public $values;
-    /**
-     * Required. The attribute values in case attribute data type is string or
-     * JSON.
-     *
-     * @param string[] $values
-     */
-    public function setValues($values)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1StringAttributeValues extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        /**
+         * Required. The attribute values in case attribute data type is string or
+         * JSON.
+         *
+         * @var string[]
+         */
+        public $values;
+        /**
+         * Required. The attribute values in case attribute data type is string or
+         * JSON.
+         *
+         * @param string[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1StringAttributeValues registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValues()
+    class Google_Service_APIhub_GoogleCloudApihubV1StringAttributeValues extends \Google\Service\APIhub\GoogleCloudApihubV1StringAttributeValues
     {
     }
 }

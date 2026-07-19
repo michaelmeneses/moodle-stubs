@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveActivity;
-
-class Copy extends \Google\Model
-{
-    protected $originalObjectType = TargetReference::class;
-    protected $originalObjectDataType = '';
-    /**
-     * The original object.
-     *
-     * @param TargetReference $originalObject
-     */
-    public function setOriginalObject(TargetReference $originalObject)
+namespace Google\Service\DriveActivity {
+    class Copy extends \Google\Model
     {
+        protected $originalObjectType = TargetReference::class;
+        protected $originalObjectDataType = '';
+        /**
+         * The original object.
+         *
+         * @param TargetReference $originalObject
+         */
+        public function setOriginalObject(TargetReference $originalObject)
+        {
+        }
+        /**
+         * @return TargetReference
+         */
+        public function getOriginalObject()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TargetReference
+     * Runtime class alias of \Google\Service\DriveActivity\Copy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOriginalObject()
+    class Google_Service_DriveActivity_Copy extends \Google\Service\DriveActivity\Copy
     {
     }
 }

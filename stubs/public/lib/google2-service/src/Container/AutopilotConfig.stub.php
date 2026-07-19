@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class AutopilotConfig extends \Google\Model
-{
-    /**
-     * Denotes that nodes belonging to this node pool are Autopilot nodes.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * Denotes that nodes belonging to this node pool are Autopilot nodes.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\Container {
+    class AutopilotConfig extends \Google\Model
     {
+        /**
+         * Denotes that nodes belonging to this node pool are Autopilot nodes.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * Denotes that nodes belonging to this node pool are Autopilot nodes.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Container\AutopilotConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
+    class Google_Service_Container_AutopilotConfig extends \Google\Service\Container\AutopilotConfig
     {
     }
 }

@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class BusinessChainSearchTerms extends \Google\Model
-{
-    /**
-     * The search query for the desired business chain. The query must be the full
-     * name of the business, e.g. "KFC", "mercedes-benz".
-     *
-     * @var string
-     */
-    public $businessChainQuery;
-    /**
-     * The search query for the desired geo region, e.g. "Seattle", "United
-     * State".
-     *
-     * @var string
-     */
-    public $regionQuery;
-    /**
-     * The search query for the desired business chain. The query must be the full
-     * name of the business, e.g. "KFC", "mercedes-benz".
-     *
-     * @param string $businessChainQuery
-     */
-    public function setBusinessChainQuery($businessChainQuery)
+namespace Google\Service\DisplayVideo {
+    class BusinessChainSearchTerms extends \Google\Model
     {
+        /**
+         * The search query for the desired business chain. The query must be the full
+         * name of the business, e.g. "KFC", "mercedes-benz".
+         *
+         * @var string
+         */
+        public $businessChainQuery;
+        /**
+         * The search query for the desired geo region, e.g. "Seattle", "United
+         * State".
+         *
+         * @var string
+         */
+        public $regionQuery;
+        /**
+         * The search query for the desired business chain. The query must be the full
+         * name of the business, e.g. "KFC", "mercedes-benz".
+         *
+         * @param string $businessChainQuery
+         */
+        public function setBusinessChainQuery($businessChainQuery)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBusinessChainQuery()
+        {
+        }
+        /**
+         * The search query for the desired geo region, e.g. "Seattle", "United
+         * State".
+         *
+         * @param string $regionQuery
+         */
+        public function setRegionQuery($regionQuery)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegionQuery()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\BusinessChainSearchTerms registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBusinessChainQuery()
-    {
-    }
-    /**
-     * The search query for the desired geo region, e.g. "Seattle", "United
-     * State".
-     *
-     * @param string $regionQuery
-     */
-    public function setRegionQuery($regionQuery)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegionQuery()
+    class Google_Service_DisplayVideo_BusinessChainSearchTerms extends \Google\Service\DisplayVideo\BusinessChainSearchTerms
     {
     }
 }

@@ -8,6 +8,7 @@
  */
 namespace Aws\PartnerCentralAccount;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Partner Central Account API** service.
  * @method \Aws\Result acceptConnectionInvitation(array $args = [])

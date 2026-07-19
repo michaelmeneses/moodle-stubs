@@ -21,120 +21,129 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CivicInfo;
-
-class SimpleAddressType extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $city;
-    /**
-     * @var string
-     */
-    public $line1;
-    /**
-     * @var string
-     */
-    public $line2;
-    /**
-     * @var string
-     */
-    public $line3;
-    /**
-     * @var string
-     */
-    public $locationName;
-    /**
-     * @var string
-     */
-    public $state;
-    /**
-     * @var string
-     */
-    public $zip;
-    /**
-     * @param string
-     */
-    public function setCity($city)
+namespace Google\Service\CivicInfo {
+    class SimpleAddressType extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $city;
+        /**
+         * @var string
+         */
+        public $line1;
+        /**
+         * @var string
+         */
+        public $line2;
+        /**
+         * @var string
+         */
+        public $line3;
+        /**
+         * @var string
+         */
+        public $locationName;
+        /**
+         * @var string
+         */
+        public $state;
+        /**
+         * @var string
+         */
+        public $zip;
+        /**
+         * @param string
+         */
+        public function setCity($city)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCity()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLine1($line1)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLine1()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLine2($line2)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLine2()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLine3($line3)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLine3()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLocationName($locationName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocationName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setZip($zip)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getZip()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CivicInfo\SimpleAddressType registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCity()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLine1($line1)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLine1()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLine2($line2)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLine2()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLine3($line3)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLine3()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLocationName($locationName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocationName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setZip($zip)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getZip()
+    class Google_Service_CivicInfo_SimpleAddressType extends \Google\Service\CivicInfo\SimpleAddressType
     {
     }
 }

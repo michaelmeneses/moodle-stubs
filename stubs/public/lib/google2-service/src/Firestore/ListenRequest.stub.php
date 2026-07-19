@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class ListenRequest extends \Google\Model
-{
-    protected $addTargetType = Target::class;
-    protected $addTargetDataType = '';
-    /**
-     * Labels associated with this target change.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * The ID of a target to remove from this stream.
-     *
-     * @var int
-     */
-    public $removeTarget;
-    /**
-     * A target to add to this stream.
-     *
-     * @param Target $addTarget
-     */
-    public function setAddTarget(Target $addTarget)
+namespace Google\Service\Firestore {
+    class ListenRequest extends \Google\Model
     {
+        protected $addTargetType = Target::class;
+        protected $addTargetDataType = '';
+        /**
+         * Labels associated with this target change.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * The ID of a target to remove from this stream.
+         *
+         * @var int
+         */
+        public $removeTarget;
+        /**
+         * A target to add to this stream.
+         *
+         * @param Target $addTarget
+         */
+        public function setAddTarget(Target $addTarget)
+        {
+        }
+        /**
+         * @return Target
+         */
+        public function getAddTarget()
+        {
+        }
+        /**
+         * Labels associated with this target change.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * The ID of a target to remove from this stream.
+         *
+         * @param int $removeTarget
+         */
+        public function setRemoveTarget($removeTarget)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRemoveTarget()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Target
+     * Runtime class alias of \Google\Service\Firestore\ListenRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddTarget()
-    {
-    }
-    /**
-     * Labels associated with this target change.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * The ID of a target to remove from this stream.
-     *
-     * @param int $removeTarget
-     */
-    public function setRemoveTarget($removeTarget)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRemoveTarget()
+    class Google_Service_Firestore_ListenRequest extends \Google\Service\Firestore\ListenRequest
     {
     }
 }

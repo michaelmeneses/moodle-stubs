@@ -21,93 +21,102 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AuthorizedBuyersMarketplace;
-
-class ClientUser extends \Google\Model
-{
-    /**
-     * A placeholder for an undefined user state.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * A user who was created but hasn't accepted the invitation yet, not allowed
-     * to access the Authorized Buyers UI.
-     */
-    public const STATE_INVITED = 'INVITED';
-    /**
-     * A user that is currently active and allowed to access the Authorized Buyers
-     * UI.
-     */
-    public const STATE_ACTIVE = 'ACTIVE';
-    /**
-     * A user that is currently inactive and not allowed to access the Authorized
-     * Buyers UI.
-     */
-    public const STATE_INACTIVE = 'INACTIVE';
-    /**
-     * Required. The client user's email address that has to be unique across all
-     * users for the same client.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * Output only. The resource name of the client user. Format:
-     * `buyers/{accountId}/clients/{clientAccountId}/users/{userId}`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The state of the client user.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Required. The client user's email address that has to be unique across all
-     * users for the same client.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
+namespace Google\Service\AuthorizedBuyersMarketplace {
+    class ClientUser extends \Google\Model
     {
+        /**
+         * A placeholder for an undefined user state.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * A user who was created but hasn't accepted the invitation yet, not allowed
+         * to access the Authorized Buyers UI.
+         */
+        public const STATE_INVITED = 'INVITED';
+        /**
+         * A user that is currently active and allowed to access the Authorized Buyers
+         * UI.
+         */
+        public const STATE_ACTIVE = 'ACTIVE';
+        /**
+         * A user that is currently inactive and not allowed to access the Authorized
+         * Buyers UI.
+         */
+        public const STATE_INACTIVE = 'INACTIVE';
+        /**
+         * Required. The client user's email address that has to be unique across all
+         * users for the same client.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * Output only. The resource name of the client user. Format:
+         * `buyers/{accountId}/clients/{clientAccountId}/users/{userId}`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The state of the client user.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Required. The client user's email address that has to be unique across all
+         * users for the same client.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * Output only. The resource name of the client user. Format:
+         * `buyers/{accountId}/clients/{clientAccountId}/users/{userId}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The state of the client user.
+         *
+         * Accepted values: STATE_UNSPECIFIED, INVITED, ACTIVE, INACTIVE
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AuthorizedBuyersMarketplace\ClientUser registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmail()
-    {
-    }
-    /**
-     * Output only. The resource name of the client user. Format:
-     * `buyers/{accountId}/clients/{clientAccountId}/users/{userId}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The state of the client user.
-     *
-     * Accepted values: STATE_UNSPECIFIED, INVITED, ACTIVE, INACTIVE
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_AuthorizedBuyersMarketplace_ClientUser extends \Google\Service\AuthorizedBuyersMarketplace\ClientUser
     {
     }
 }

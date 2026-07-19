@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceConsumerManagement;
-
-class V1AddVisibilityLabelsResponse extends \Google\Collection
-{
-    protected $collection_key = 'labels';
-    /**
-     * The updated set of visibility labels for this consumer on this service.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * The updated set of visibility labels for this consumer on this service.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
+namespace Google\Service\ServiceConsumerManagement {
+    class V1AddVisibilityLabelsResponse extends \Google\Collection
     {
+        protected $collection_key = 'labels';
+        /**
+         * The updated set of visibility labels for this consumer on this service.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * The updated set of visibility labels for this consumer on this service.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ServiceConsumerManagement\V1AddVisibilityLabelsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabels()
+    class Google_Service_ServiceConsumerManagement_V1AddVisibilityLabelsResponse extends \Google\Service\ServiceConsumerManagement\V1AddVisibilityLabelsResponse
     {
     }
 }

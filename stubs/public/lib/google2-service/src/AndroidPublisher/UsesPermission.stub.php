@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class UsesPermission extends \Google\Model
-{
-    /**
-     * Optionally, the maximum SDK version for which the permission is required.
-     *
-     * @var int
-     */
-    public $maxSdkVersion;
-    /**
-     * The name of the permission requested.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optionally, the maximum SDK version for which the permission is required.
-     *
-     * @param int $maxSdkVersion
-     */
-    public function setMaxSdkVersion($maxSdkVersion)
+namespace Google\Service\AndroidPublisher {
+    class UsesPermission extends \Google\Model
     {
+        /**
+         * Optionally, the maximum SDK version for which the permission is required.
+         *
+         * @var int
+         */
+        public $maxSdkVersion;
+        /**
+         * The name of the permission requested.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optionally, the maximum SDK version for which the permission is required.
+         *
+         * @param int $maxSdkVersion
+         */
+        public function setMaxSdkVersion($maxSdkVersion)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxSdkVersion()
+        {
+        }
+        /**
+         * The name of the permission requested.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\AndroidPublisher\UsesPermission registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxSdkVersion()
-    {
-    }
-    /**
-     * The name of the permission requested.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_AndroidPublisher_UsesPermission extends \Google\Service\AndroidPublisher\UsesPermission
     {
     }
 }

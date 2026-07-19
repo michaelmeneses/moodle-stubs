@@ -22,6 +22,13 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\session;
 
+use coding_exception;
+use core\di;
+use core\clock;
+use RedisCluster;
+use RedisClusterException;
+use RedisException;
+use SessionHandlerInterface;
 /**
  * Redis based session handler.
  *

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\StreetViewPublish;
-
-class NotOutdoorsFailureDetails extends \Google\Model
-{
-    /**
-     * Relative time (from the start of the video stream) when an indoor frame was
-     * found.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Relative time (from the start of the video stream) when an indoor frame was
-     * found.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
+namespace Google\Service\StreetViewPublish {
+    class NotOutdoorsFailureDetails extends \Google\Model
     {
+        /**
+         * Relative time (from the start of the video stream) when an indoor frame was
+         * found.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Relative time (from the start of the video stream) when an indoor frame was
+         * found.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\StreetViewPublish\NotOutdoorsFailureDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStartTime()
+    class Google_Service_StreetViewPublish_NotOutdoorsFailureDetails extends \Google\Service\StreetViewPublish\NotOutdoorsFailureDetails
     {
     }
 }

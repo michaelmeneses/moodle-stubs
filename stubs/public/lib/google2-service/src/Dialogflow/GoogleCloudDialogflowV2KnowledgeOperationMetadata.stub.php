@@ -21,102 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2KnowledgeOperationMetadata extends \Google\Model
-{
-    /**
-     * State unspecified.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The operation has been created.
-     */
-    public const STATE_PENDING = 'PENDING';
-    /**
-     * The operation is currently running.
-     */
-    public const STATE_RUNNING = 'RUNNING';
-    /**
-     * The operation is done, either cancelled or completed.
-     */
-    public const STATE_DONE = 'DONE';
-    /**
-     * The time when the operation finished.
-     *
-     * @var string
-     */
-    public $doneTime;
-    protected $exportOperationMetadataType = GoogleCloudDialogflowV2ExportOperationMetadata::class;
-    protected $exportOperationMetadataDataType = '';
-    /**
-     * The name of the knowledge base interacted with during the operation.
-     *
-     * @var string
-     */
-    public $knowledgeBase;
-    /**
-     * Output only. The current state of this operation.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * The time when the operation finished.
-     *
-     * @param string $doneTime
-     */
-    public function setDoneTime($doneTime)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2KnowledgeOperationMetadata extends \Google\Model
     {
+        /**
+         * State unspecified.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The operation has been created.
+         */
+        public const STATE_PENDING = 'PENDING';
+        /**
+         * The operation is currently running.
+         */
+        public const STATE_RUNNING = 'RUNNING';
+        /**
+         * The operation is done, either cancelled or completed.
+         */
+        public const STATE_DONE = 'DONE';
+        /**
+         * The time when the operation finished.
+         *
+         * @var string
+         */
+        public $doneTime;
+        protected $exportOperationMetadataType = GoogleCloudDialogflowV2ExportOperationMetadata::class;
+        protected $exportOperationMetadataDataType = '';
+        /**
+         * The name of the knowledge base interacted with during the operation.
+         *
+         * @var string
+         */
+        public $knowledgeBase;
+        /**
+         * Output only. The current state of this operation.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * The time when the operation finished.
+         *
+         * @param string $doneTime
+         */
+        public function setDoneTime($doneTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDoneTime()
+        {
+        }
+        /**
+         * Metadata for the Export Data Operation such as the destination of export.
+         *
+         * @param GoogleCloudDialogflowV2ExportOperationMetadata $exportOperationMetadata
+         */
+        public function setExportOperationMetadata(GoogleCloudDialogflowV2ExportOperationMetadata $exportOperationMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2ExportOperationMetadata
+         */
+        public function getExportOperationMetadata()
+        {
+        }
+        /**
+         * The name of the knowledge base interacted with during the operation.
+         *
+         * @param string $knowledgeBase
+         */
+        public function setKnowledgeBase($knowledgeBase)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKnowledgeBase()
+        {
+        }
+        /**
+         * Output only. The current state of this operation.
+         *
+         * Accepted values: STATE_UNSPECIFIED, PENDING, RUNNING, DONE
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2KnowledgeOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDoneTime()
-    {
-    }
-    /**
-     * Metadata for the Export Data Operation such as the destination of export.
-     *
-     * @param GoogleCloudDialogflowV2ExportOperationMetadata $exportOperationMetadata
-     */
-    public function setExportOperationMetadata(GoogleCloudDialogflowV2ExportOperationMetadata $exportOperationMetadata)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowV2ExportOperationMetadata
-     */
-    public function getExportOperationMetadata()
-    {
-    }
-    /**
-     * The name of the knowledge base interacted with during the operation.
-     *
-     * @param string $knowledgeBase
-     */
-    public function setKnowledgeBase($knowledgeBase)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKnowledgeBase()
-    {
-    }
-    /**
-     * Output only. The current state of this operation.
-     *
-     * Accepted values: STATE_UNSPECIFIED, PENDING, RUNNING, DONE
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2KnowledgeOperationMetadata extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2KnowledgeOperationMetadata
     {
     }
 }

@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\StorageBatchOperations;
-
-class Counters extends \Google\Model
-{
-    /**
-     * Output only. Number of objects failed.
-     *
-     * @var string
-     */
-    public $failedObjectCount;
-    /**
-     * Output only. Number of objects completed.
-     *
-     * @var string
-     */
-    public $succeededObjectCount;
-    /**
-     * Output only. Number of bytes found from source. This field is only
-     * populated for jobs with a prefix list object configuration.
-     *
-     * @var string
-     */
-    public $totalBytesFound;
-    /**
-     * Output only. Number of objects listed.
-     *
-     * @var string
-     */
-    public $totalObjectCount;
-    /**
-     * Output only. Number of objects failed.
-     *
-     * @param string $failedObjectCount
-     */
-    public function setFailedObjectCount($failedObjectCount)
+namespace Google\Service\StorageBatchOperations {
+    class Counters extends \Google\Model
     {
+        /**
+         * Output only. Number of objects failed.
+         *
+         * @var string
+         */
+        public $failedObjectCount;
+        /**
+         * Output only. Number of objects completed.
+         *
+         * @var string
+         */
+        public $succeededObjectCount;
+        /**
+         * Output only. Number of bytes found from source. This field is only
+         * populated for jobs with a prefix list object configuration.
+         *
+         * @var string
+         */
+        public $totalBytesFound;
+        /**
+         * Output only. Number of objects listed.
+         *
+         * @var string
+         */
+        public $totalObjectCount;
+        /**
+         * Output only. Number of objects failed.
+         *
+         * @param string $failedObjectCount
+         */
+        public function setFailedObjectCount($failedObjectCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFailedObjectCount()
+        {
+        }
+        /**
+         * Output only. Number of objects completed.
+         *
+         * @param string $succeededObjectCount
+         */
+        public function setSucceededObjectCount($succeededObjectCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSucceededObjectCount()
+        {
+        }
+        /**
+         * Output only. Number of bytes found from source. This field is only
+         * populated for jobs with a prefix list object configuration.
+         *
+         * @param string $totalBytesFound
+         */
+        public function setTotalBytesFound($totalBytesFound)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalBytesFound()
+        {
+        }
+        /**
+         * Output only. Number of objects listed.
+         *
+         * @param string $totalObjectCount
+         */
+        public function setTotalObjectCount($totalObjectCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalObjectCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\StorageBatchOperations\Counters registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFailedObjectCount()
-    {
-    }
-    /**
-     * Output only. Number of objects completed.
-     *
-     * @param string $succeededObjectCount
-     */
-    public function setSucceededObjectCount($succeededObjectCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSucceededObjectCount()
-    {
-    }
-    /**
-     * Output only. Number of bytes found from source. This field is only
-     * populated for jobs with a prefix list object configuration.
-     *
-     * @param string $totalBytesFound
-     */
-    public function setTotalBytesFound($totalBytesFound)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalBytesFound()
-    {
-    }
-    /**
-     * Output only. Number of objects listed.
-     *
-     * @param string $totalObjectCount
-     */
-    public function setTotalObjectCount($totalObjectCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalObjectCount()
+    class Google_Service_StorageBatchOperations_Counters extends \Google\Service\StorageBatchOperations\Counters
     {
     }
 }

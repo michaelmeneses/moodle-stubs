@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Safebrowsing;
-
-class Checksum extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $sha256;
-    /**
-     * @param string
-     */
-    public function setSha256($sha256)
+namespace Google\Service\Safebrowsing {
+    class Checksum extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $sha256;
+        /**
+         * @param string
+         */
+        public function setSha256($sha256)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSha256()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Safebrowsing\Checksum registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSha256()
+    class Google_Service_Safebrowsing_Checksum extends \Google\Service\Safebrowsing\Checksum
     {
     }
 }

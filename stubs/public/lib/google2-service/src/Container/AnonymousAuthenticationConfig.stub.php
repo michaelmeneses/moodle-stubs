@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class AnonymousAuthenticationConfig extends \Google\Model
-{
-    /**
-     * Default value not specified.
-     */
-    public const MODE_MODE_UNSPECIFIED = 'MODE_UNSPECIFIED';
-    /**
-     * Anonymous authentication is allowed for all endpoints.
-     */
-    public const MODE_ENABLED = 'ENABLED';
-    /**
-     * Anonymous authentication is allowed for only health check endpoints.
-     */
-    public const MODE_LIMITED = 'LIMITED';
-    /**
-     * Defines the mode of limiting anonymous access in the cluster.
-     *
-     * @var string
-     */
-    public $mode;
-    /**
-     * Defines the mode of limiting anonymous access in the cluster.
-     *
-     * Accepted values: MODE_UNSPECIFIED, ENABLED, LIMITED
-     *
-     * @param self::MODE_* $mode
-     */
-    public function setMode($mode)
+namespace Google\Service\Container {
+    class AnonymousAuthenticationConfig extends \Google\Model
     {
+        /**
+         * Default value not specified.
+         */
+        public const MODE_MODE_UNSPECIFIED = 'MODE_UNSPECIFIED';
+        /**
+         * Anonymous authentication is allowed for all endpoints.
+         */
+        public const MODE_ENABLED = 'ENABLED';
+        /**
+         * Anonymous authentication is allowed for only health check endpoints.
+         */
+        public const MODE_LIMITED = 'LIMITED';
+        /**
+         * Defines the mode of limiting anonymous access in the cluster.
+         *
+         * @var string
+         */
+        public $mode;
+        /**
+         * Defines the mode of limiting anonymous access in the cluster.
+         *
+         * Accepted values: MODE_UNSPECIFIED, ENABLED, LIMITED
+         *
+         * @param self::MODE_* $mode
+         */
+        public function setMode($mode)
+        {
+        }
+        /**
+         * @return self::MODE_*
+         */
+        public function getMode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::MODE_*
+     * Runtime class alias of \Google\Service\Container\AnonymousAuthenticationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMode()
+    class Google_Service_Container_AnonymousAuthenticationConfig extends \Google\Service\Container\AnonymousAuthenticationConfig
     {
     }
 }

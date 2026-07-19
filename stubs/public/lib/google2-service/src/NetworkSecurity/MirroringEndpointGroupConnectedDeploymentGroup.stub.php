@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity;
-
-class MirroringEndpointGroupConnectedDeploymentGroup extends \Google\Collection
-{
-    protected $collection_key = 'locations';
-    protected $locationsType = MirroringLocation::class;
-    protected $locationsDataType = 'array';
-    /**
-     * Output only. The connected deployment group's resource name, for example:
-     * `projects/123456789/locations/global/mirroringDeploymentGroups/my-dg`. See
-     * https://google.aip.dev/124.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The list of locations where the deployment group is present.
-     *
-     * @param MirroringLocation[] $locations
-     */
-    public function setLocations($locations)
+namespace Google\Service\NetworkSecurity {
+    class MirroringEndpointGroupConnectedDeploymentGroup extends \Google\Collection
     {
+        protected $collection_key = 'locations';
+        protected $locationsType = MirroringLocation::class;
+        protected $locationsDataType = 'array';
+        /**
+         * Output only. The connected deployment group's resource name, for example:
+         * `projects/123456789/locations/global/mirroringDeploymentGroups/my-dg`. See
+         * https://google.aip.dev/124.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The list of locations where the deployment group is present.
+         *
+         * @param MirroringLocation[] $locations
+         */
+        public function setLocations($locations)
+        {
+        }
+        /**
+         * @return MirroringLocation[]
+         */
+        public function getLocations()
+        {
+        }
+        /**
+         * Output only. The connected deployment group's resource name, for example:
+         * `projects/123456789/locations/global/mirroringDeploymentGroups/my-dg`. See
+         * https://google.aip.dev/124.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MirroringLocation[]
+     * Runtime class alias of \Google\Service\NetworkSecurity\MirroringEndpointGroupConnectedDeploymentGroup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocations()
-    {
-    }
-    /**
-     * Output only. The connected deployment group's resource name, for example:
-     * `projects/123456789/locations/global/mirroringDeploymentGroups/my-dg`. See
-     * https://google.aip.dev/124.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_NetworkSecurity_MirroringEndpointGroupConnectedDeploymentGroup extends \Google\Service\NetworkSecurity\MirroringEndpointGroupConnectedDeploymentGroup
     {
     }
 }

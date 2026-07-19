@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SaaSServiceManagement;
-
-class Blueprint extends \Google\Model
-{
-    /**
-     * Output only. Type of the engine used to actuate the blueprint. e.g.
-     * terraform, helm etc.
-     *
-     * @var string
-     */
-    public $engine;
-    /**
-     * Optional. Immutable. URI to a blueprint used by the Unit (required unless
-     * unitKind or release is set).
-     *
-     * @var string
-     */
-    public $package;
-    /**
-     * Output only. Version metadata if present on the blueprint.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Output only. Type of the engine used to actuate the blueprint. e.g.
-     * terraform, helm etc.
-     *
-     * @param string $engine
-     */
-    public function setEngine($engine)
+namespace Google\Service\SaaSServiceManagement {
+    class Blueprint extends \Google\Model
     {
+        /**
+         * Output only. Type of the engine used to actuate the blueprint. e.g.
+         * terraform, helm etc.
+         *
+         * @var string
+         */
+        public $engine;
+        /**
+         * Optional. Immutable. URI to a blueprint used by the Unit (required unless
+         * unitKind or release is set).
+         *
+         * @var string
+         */
+        public $package;
+        /**
+         * Output only. Version metadata if present on the blueprint.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Output only. Type of the engine used to actuate the blueprint. e.g.
+         * terraform, helm etc.
+         *
+         * @param string $engine
+         */
+        public function setEngine($engine)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEngine()
+        {
+        }
+        /**
+         * Optional. Immutable. URI to a blueprint used by the Unit (required unless
+         * unitKind or release is set).
+         *
+         * @param string $package
+         */
+        public function setPackage($package)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackage()
+        {
+        }
+        /**
+         * Output only. Version metadata if present on the blueprint.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SaaSServiceManagement\Blueprint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEngine()
-    {
-    }
-    /**
-     * Optional. Immutable. URI to a blueprint used by the Unit (required unless
-     * unitKind or release is set).
-     *
-     * @param string $package
-     */
-    public function setPackage($package)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPackage()
-    {
-    }
-    /**
-     * Output only. Version metadata if present on the blueprint.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_SaaSServiceManagement_Blueprint extends \Google\Service\SaaSServiceManagement\Blueprint
     {
     }
 }

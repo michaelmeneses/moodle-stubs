@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2betaOutputResult extends \Google\Collection
-{
-    protected $collection_key = 'gcsResult';
-    protected $bigqueryResultType = GoogleCloudRetailV2betaBigQueryOutputResult::class;
-    protected $bigqueryResultDataType = 'array';
-    protected $gcsResultType = GoogleCloudRetailV2betaGcsOutputResult::class;
-    protected $gcsResultDataType = 'array';
-    /**
-     * The BigQuery location where the result is stored.
-     *
-     * @param GoogleCloudRetailV2betaBigQueryOutputResult[] $bigqueryResult
-     */
-    public function setBigqueryResult($bigqueryResult)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2betaOutputResult extends \Google\Collection
     {
+        protected $collection_key = 'gcsResult';
+        protected $bigqueryResultType = GoogleCloudRetailV2betaBigQueryOutputResult::class;
+        protected $bigqueryResultDataType = 'array';
+        protected $gcsResultType = GoogleCloudRetailV2betaGcsOutputResult::class;
+        protected $gcsResultDataType = 'array';
+        /**
+         * The BigQuery location where the result is stored.
+         *
+         * @param GoogleCloudRetailV2betaBigQueryOutputResult[] $bigqueryResult
+         */
+        public function setBigqueryResult($bigqueryResult)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2betaBigQueryOutputResult[]
+         */
+        public function getBigqueryResult()
+        {
+        }
+        /**
+         * The Google Cloud Storage location where the result is stored.
+         *
+         * @param GoogleCloudRetailV2betaGcsOutputResult[] $gcsResult
+         */
+        public function setGcsResult($gcsResult)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2betaGcsOutputResult[]
+         */
+        public function getGcsResult()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRetailV2betaBigQueryOutputResult[]
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2betaOutputResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBigqueryResult()
-    {
-    }
-    /**
-     * The Google Cloud Storage location where the result is stored.
-     *
-     * @param GoogleCloudRetailV2betaGcsOutputResult[] $gcsResult
-     */
-    public function setGcsResult($gcsResult)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2betaGcsOutputResult[]
-     */
-    public function getGcsResult()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2betaOutputResult extends \Google\Service\CloudRetail\GoogleCloudRetailV2betaOutputResult
     {
     }
 }

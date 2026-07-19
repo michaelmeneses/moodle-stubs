@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2VersionDescription extends \Google\Model
-{
-    /**
-     * Description of the version.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Name of the version
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Description of the version.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2VersionDescription extends \Google\Model
     {
+        /**
+         * Description of the version.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Name of the version
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Description of the version.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Name of the version
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2VersionDescription registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Name of the version
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_DLP_GooglePrivacyDlpV2VersionDescription extends \Google\Service\DLP\GooglePrivacyDlpV2VersionDescription
     {
     }
 }

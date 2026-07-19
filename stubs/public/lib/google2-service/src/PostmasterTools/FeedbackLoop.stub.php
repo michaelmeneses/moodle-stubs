@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PostmasterTools;
-
-class FeedbackLoop extends \Google\Model
-{
-    /**
-     * Feedback loop identifier that uniquely identifies individual campaigns.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The ratio of user marked spam messages with the identifier vs the total
-     * number of inboxed messages with that identifier.
-     *
-     * @var 
-     */
-    public $spamRatio;
-    /**
-     * Feedback loop identifier that uniquely identifies individual campaigns.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\PostmasterTools {
+    class FeedbackLoop extends \Google\Model
     {
+        /**
+         * Feedback loop identifier that uniquely identifies individual campaigns.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The ratio of user marked spam messages with the identifier vs the total
+         * number of inboxed messages with that identifier.
+         *
+         * @var 
+         */
+        public $spamRatio;
+        /**
+         * Feedback loop identifier that uniquely identifies individual campaigns.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        public function setSpamRatio($spamRatio)
+        {
+        }
+        public function getSpamRatio()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PostmasterTools\FeedbackLoop registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    public function setSpamRatio($spamRatio)
-    {
-    }
-    public function getSpamRatio()
+    class Google_Service_PostmasterTools_FeedbackLoop extends \Google\Service\PostmasterTools\FeedbackLoop
     {
     }
 }

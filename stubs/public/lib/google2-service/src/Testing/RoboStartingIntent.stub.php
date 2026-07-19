@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class RoboStartingIntent extends \Google\Model
-{
-    protected $launcherActivityType = LauncherActivityIntent::class;
-    protected $launcherActivityDataType = '';
-    protected $noActivityType = NoActivityIntent::class;
-    protected $noActivityDataType = '';
-    protected $startActivityType = StartActivityIntent::class;
-    protected $startActivityDataType = '';
-    /**
-     * Timeout in seconds for each intent.
-     *
-     * @var string
-     */
-    public $timeout;
-    /**
-     * An intent that starts the main launcher activity.
-     *
-     * @param LauncherActivityIntent $launcherActivity
-     */
-    public function setLauncherActivity(LauncherActivityIntent $launcherActivity)
+namespace Google\Service\Testing {
+    class RoboStartingIntent extends \Google\Model
     {
+        protected $launcherActivityType = LauncherActivityIntent::class;
+        protected $launcherActivityDataType = '';
+        protected $noActivityType = NoActivityIntent::class;
+        protected $noActivityDataType = '';
+        protected $startActivityType = StartActivityIntent::class;
+        protected $startActivityDataType = '';
+        /**
+         * Timeout in seconds for each intent.
+         *
+         * @var string
+         */
+        public $timeout;
+        /**
+         * An intent that starts the main launcher activity.
+         *
+         * @param LauncherActivityIntent $launcherActivity
+         */
+        public function setLauncherActivity(LauncherActivityIntent $launcherActivity)
+        {
+        }
+        /**
+         * @return LauncherActivityIntent
+         */
+        public function getLauncherActivity()
+        {
+        }
+        /**
+         * Skips the starting activity
+         *
+         * @param NoActivityIntent $noActivity
+         */
+        public function setNoActivity(NoActivityIntent $noActivity)
+        {
+        }
+        /**
+         * @return NoActivityIntent
+         */
+        public function getNoActivity()
+        {
+        }
+        /**
+         * An intent that starts an activity with specific details.
+         *
+         * @param StartActivityIntent $startActivity
+         */
+        public function setStartActivity(StartActivityIntent $startActivity)
+        {
+        }
+        /**
+         * @return StartActivityIntent
+         */
+        public function getStartActivity()
+        {
+        }
+        /**
+         * Timeout in seconds for each intent.
+         *
+         * @param string $timeout
+         */
+        public function setTimeout($timeout)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeout()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LauncherActivityIntent
+     * Runtime class alias of \Google\Service\Testing\RoboStartingIntent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLauncherActivity()
-    {
-    }
-    /**
-     * Skips the starting activity
-     *
-     * @param NoActivityIntent $noActivity
-     */
-    public function setNoActivity(NoActivityIntent $noActivity)
-    {
-    }
-    /**
-     * @return NoActivityIntent
-     */
-    public function getNoActivity()
-    {
-    }
-    /**
-     * An intent that starts an activity with specific details.
-     *
-     * @param StartActivityIntent $startActivity
-     */
-    public function setStartActivity(StartActivityIntent $startActivity)
-    {
-    }
-    /**
-     * @return StartActivityIntent
-     */
-    public function getStartActivity()
-    {
-    }
-    /**
-     * Timeout in seconds for each intent.
-     *
-     * @param string $timeout
-     */
-    public function setTimeout($timeout)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeout()
+    class Google_Service_Testing_RoboStartingIntent extends \Google\Service\Testing\RoboStartingIntent
     {
     }
 }

@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class ResetWorkspaceChangesRequest extends \Google\Collection
-{
-    protected $collection_key = 'paths';
-    /**
-     * Optional. If set to true, untracked files will be deleted.
-     *
-     * @var bool
-     */
-    public $clean;
-    /**
-     * Optional. Full file paths to reset back to their committed state including
-     * filename, rooted at workspace root. If left empty, all files will be reset.
-     *
-     * @var string[]
-     */
-    public $paths;
-    /**
-     * Optional. If set to true, untracked files will be deleted.
-     *
-     * @param bool $clean
-     */
-    public function setClean($clean)
+namespace Google\Service\Dataform {
+    class ResetWorkspaceChangesRequest extends \Google\Collection
     {
+        protected $collection_key = 'paths';
+        /**
+         * Optional. If set to true, untracked files will be deleted.
+         *
+         * @var bool
+         */
+        public $clean;
+        /**
+         * Optional. Full file paths to reset back to their committed state including
+         * filename, rooted at workspace root. If left empty, all files will be reset.
+         *
+         * @var string[]
+         */
+        public $paths;
+        /**
+         * Optional. If set to true, untracked files will be deleted.
+         *
+         * @param bool $clean
+         */
+        public function setClean($clean)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getClean()
+        {
+        }
+        /**
+         * Optional. Full file paths to reset back to their committed state including
+         * filename, rooted at workspace root. If left empty, all files will be reset.
+         *
+         * @param string[] $paths
+         */
+        public function setPaths($paths)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPaths()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Dataform\ResetWorkspaceChangesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClean()
-    {
-    }
-    /**
-     * Optional. Full file paths to reset back to their committed state including
-     * filename, rooted at workspace root. If left empty, all files will be reset.
-     *
-     * @param string[] $paths
-     */
-    public function setPaths($paths)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPaths()
+    class Google_Service_Dataform_ResetWorkspaceChangesRequest extends \Google\Service\Dataform\ResetWorkspaceChangesRequest
     {
     }
 }

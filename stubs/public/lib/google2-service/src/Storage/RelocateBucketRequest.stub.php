@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage;
-
-class RelocateBucketRequest extends \Google\Model
-{
-    protected $destinationCustomPlacementConfigType = RelocateBucketRequestDestinationCustomPlacementConfig::class;
-    protected $destinationCustomPlacementConfigDataType = '';
-    /**
-     * The new location the bucket will be relocated to.
-     *
-     * @var string
-     */
-    public $destinationLocation;
-    /**
-     * If true, validate the operation, but do not actually relocate the bucket.
-     *
-     * @var bool
-     */
-    public $validateOnly;
-    /**
-     * The bucket's new custom placement configuration if relocating to a Custom
-     * Dual Region.
-     *
-     * @param RelocateBucketRequestDestinationCustomPlacementConfig $destinationCustomPlacementConfig
-     */
-    public function setDestinationCustomPlacementConfig(RelocateBucketRequestDestinationCustomPlacementConfig $destinationCustomPlacementConfig)
+namespace Google\Service\Storage {
+    class RelocateBucketRequest extends \Google\Model
     {
+        protected $destinationCustomPlacementConfigType = RelocateBucketRequestDestinationCustomPlacementConfig::class;
+        protected $destinationCustomPlacementConfigDataType = '';
+        /**
+         * The new location the bucket will be relocated to.
+         *
+         * @var string
+         */
+        public $destinationLocation;
+        /**
+         * If true, validate the operation, but do not actually relocate the bucket.
+         *
+         * @var bool
+         */
+        public $validateOnly;
+        /**
+         * The bucket's new custom placement configuration if relocating to a Custom
+         * Dual Region.
+         *
+         * @param RelocateBucketRequestDestinationCustomPlacementConfig $destinationCustomPlacementConfig
+         */
+        public function setDestinationCustomPlacementConfig(RelocateBucketRequestDestinationCustomPlacementConfig $destinationCustomPlacementConfig)
+        {
+        }
+        /**
+         * @return RelocateBucketRequestDestinationCustomPlacementConfig
+         */
+        public function getDestinationCustomPlacementConfig()
+        {
+        }
+        /**
+         * The new location the bucket will be relocated to.
+         *
+         * @param string $destinationLocation
+         */
+        public function setDestinationLocation($destinationLocation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestinationLocation()
+        {
+        }
+        /**
+         * If true, validate the operation, but do not actually relocate the bucket.
+         *
+         * @param bool $validateOnly
+         */
+        public function setValidateOnly($validateOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getValidateOnly()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RelocateBucketRequestDestinationCustomPlacementConfig
+     * Runtime class alias of \Google\Service\Storage\RelocateBucketRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDestinationCustomPlacementConfig()
-    {
-    }
-    /**
-     * The new location the bucket will be relocated to.
-     *
-     * @param string $destinationLocation
-     */
-    public function setDestinationLocation($destinationLocation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDestinationLocation()
-    {
-    }
-    /**
-     * If true, validate the operation, but do not actually relocate the bucket.
-     *
-     * @param bool $validateOnly
-     */
-    public function setValidateOnly($validateOnly)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getValidateOnly()
+    class Google_Service_Storage_RelocateBucketRequest extends \Google\Service\Storage\RelocateBucketRequest
     {
     }
 }

@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class GaDataDataTableRows extends \Google\Collection
-{
-    protected $collection_key = 'c';
-    protected $cType = GaDataDataTableRowsC::class;
-    protected $cDataType = 'array';
-    /**
-     * @param GaDataDataTableRowsC[] $c
-     */
-    public function setC($c)
+namespace Google\Service\Analytics {
+    class GaDataDataTableRows extends \Google\Collection
     {
+        protected $collection_key = 'c';
+        protected $cType = GaDataDataTableRowsC::class;
+        protected $cDataType = 'array';
+        /**
+         * @param GaDataDataTableRowsC[] $c
+         */
+        public function setC($c)
+        {
+        }
+        /**
+         * @return GaDataDataTableRowsC[]
+         */
+        public function getC()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GaDataDataTableRowsC[]
+     * Runtime class alias of \Google\Service\Analytics\GaDataDataTableRows registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getC()
+    class Google_Service_Analytics_GaDataDataTableRows extends \Google\Service\Analytics\GaDataDataTableRows
     {
     }
 }

@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteYoutubeMetadata extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $id;
-    /**
-     * @var bool
-     */
-    public $shouldNotRender;
-    /**
-     * @var int
-     */
-    public $startTime;
-    /**
-     * @param string
-     */
-    public function setId($id)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteYoutubeMetadata extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $id;
+        /**
+         * @var bool
+         */
+        public $shouldNotRender;
+        /**
+         * @var int
+         */
+        public $startTime;
+        /**
+         * @param string
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setShouldNotRender($shouldNotRender)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getShouldNotRender()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteYoutubeMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setShouldNotRender($shouldNotRender)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getShouldNotRender()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStartTime()
+    class Google_Service_CloudSearch_AppsDynamiteYoutubeMetadata extends \Google\Service\CloudSearch\AppsDynamiteYoutubeMetadata
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessAccountManagement;
-
-class TransferLocationRequest extends \Google\Model
-{
-    /**
-     * Required. Name of the account resource to transfer the location to (for
-     * example, "accounts/{account}").
-     *
-     * @var string
-     */
-    public $destinationAccount;
-    /**
-     * Required. Name of the account resource to transfer the location to (for
-     * example, "accounts/{account}").
-     *
-     * @param string $destinationAccount
-     */
-    public function setDestinationAccount($destinationAccount)
+namespace Google\Service\MyBusinessAccountManagement {
+    class TransferLocationRequest extends \Google\Model
     {
+        /**
+         * Required. Name of the account resource to transfer the location to (for
+         * example, "accounts/{account}").
+         *
+         * @var string
+         */
+        public $destinationAccount;
+        /**
+         * Required. Name of the account resource to transfer the location to (for
+         * example, "accounts/{account}").
+         *
+         * @param string $destinationAccount
+         */
+        public function setDestinationAccount($destinationAccount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestinationAccount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MyBusinessAccountManagement\TransferLocationRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDestinationAccount()
+    class Google_Service_MyBusinessAccountManagement_TransferLocationRequest extends \Google\Service\MyBusinessAccountManagement\TransferLocationRequest
     {
     }
 }

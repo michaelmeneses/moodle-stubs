@@ -21,144 +21,157 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo\Resource;
-
-/**
- * The "manualTriggers" collection of methods.
- * Typical usage is:
- *  <code>
- *   $displayvideoService = new Google\Service\DisplayVideo(...);
- *   $manualTriggers = $displayvideoService->advertisers_manualTriggers;
- *  </code>
- */
-class AdvertisersManualTriggers extends \Google\Service\Resource
-{
+namespace Google\Service\DisplayVideo\Resource {
+    use Google\Service\DisplayVideo\ActivateManualTriggerRequest;
+    use Google\Service\DisplayVideo\DeactivateManualTriggerRequest;
+    use Google\Service\DisplayVideo\ListManualTriggersResponse;
+    use Google\Service\DisplayVideo\ManualTrigger;
     /**
-     * Activates a manual trigger. Each activation of the manual trigger must be at
-     * least 5 minutes apart, otherwise an error will be returned. **Warning:** Line
-     * Items using manual triggers no longer serve in Display & Video 360. This
-     * method will sunset on August 1, 2023. Read our [feature deprecation
-     * announcement](/display-video/api/deprecations#features.manual_triggers) for
-     * more information. (manualTriggers.activate)
-     *
-     * @param string $advertiserId Required. The ID of the advertiser that the
-     * manual trigger belongs.
-     * @param string $triggerId Required. The ID of the manual trigger to activate.
-     * @param ActivateManualTriggerRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return ManualTrigger
+     * The "manualTriggers" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $displayvideoService = new Google\Service\DisplayVideo(...);
+     *   $manualTriggers = $displayvideoService->advertisers_manualTriggers;
+     *  </code>
      */
-    public function activate($advertiserId, $triggerId, ActivateManualTriggerRequest $postBody, $optParams = [])
+    class AdvertisersManualTriggers extends \Google\Service\Resource
     {
+        /**
+         * Activates a manual trigger. Each activation of the manual trigger must be at
+         * least 5 minutes apart, otherwise an error will be returned. **Warning:** Line
+         * Items using manual triggers no longer serve in Display & Video 360. This
+         * method will sunset on August 1, 2023. Read our [feature deprecation
+         * announcement](/display-video/api/deprecations#features.manual_triggers) for
+         * more information. (manualTriggers.activate)
+         *
+         * @param string $advertiserId Required. The ID of the advertiser that the
+         * manual trigger belongs.
+         * @param string $triggerId Required. The ID of the manual trigger to activate.
+         * @param ActivateManualTriggerRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return ManualTrigger
+         */
+        public function activate($advertiserId, $triggerId, ActivateManualTriggerRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Creates a new manual trigger. Returns the newly created manual trigger if
+         * successful. **Warning:** Line Items using manual triggers no longer serve in
+         * Display & Video 360. This method will sunset on August 1, 2023. Read our
+         * [feature deprecation announcement](/display-
+         * video/api/deprecations#features.manual_triggers) for more information.
+         * (manualTriggers.create)
+         *
+         * @param string $advertiserId Required. Immutable. The unique ID of the
+         * advertiser that the manual trigger belongs to.
+         * @param ManualTrigger $postBody
+         * @param array $optParams Optional parameters.
+         * @return ManualTrigger
+         */
+        public function create($advertiserId, ManualTrigger $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deactivates a manual trigger. **Warning:** Line Items using manual triggers
+         * no longer serve in Display & Video 360. This method will sunset on August 1,
+         * 2023. Read our [feature deprecation announcement](/display-
+         * video/api/deprecations#features.manual_triggers) for more information.
+         * (manualTriggers.deactivate)
+         *
+         * @param string $advertiserId Required. The ID of the advertiser that the
+         * manual trigger belongs.
+         * @param string $triggerId Required. The ID of the manual trigger to
+         * deactivate.
+         * @param DeactivateManualTriggerRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return ManualTrigger
+         */
+        public function deactivate($advertiserId, $triggerId, DeactivateManualTriggerRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Gets a manual trigger. **Warning:** Line Items using manual triggers no
+         * longer serve in Display & Video 360. This method will sunset on August 1,
+         * 2023. Read our [feature deprecation announcement](/display-
+         * video/api/deprecations#features.manual_triggers) for more information.
+         * (manualTriggers.get)
+         *
+         * @param string $advertiserId Required. The ID of the advertiser this manual
+         * trigger belongs to.
+         * @param string $triggerId Required. The ID of the manual trigger to fetch.
+         * @param array $optParams Optional parameters.
+         * @return ManualTrigger
+         */
+        public function get($advertiserId, $triggerId, $optParams = [])
+        {
+        }
+        /**
+         * Lists manual triggers that are accessible to the current user for a given
+         * advertiser ID. The order is defined by the order_by parameter. A single
+         * advertiser_id is required. **Warning:** Line Items using manual triggers no
+         * longer serve in Display & Video 360. This method will sunset on August 1,
+         * 2023. Read our [feature deprecation announcement](/display-
+         * video/api/deprecations#features.manual_triggers) for more information.
+         * (manualTriggers.listAdvertisersManualTriggers)
+         *
+         * @param string $advertiserId Required. The ID of the advertiser that the
+         * fetched manual triggers belong to.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Allows filtering by manual trigger fields. Supported
+         * syntax: * Filter expressions are made up of one or more restrictions. *
+         * Restrictions can be combined by `AND` or `OR` logical operators. A sequence
+         * of restrictions implicitly uses `AND`. * A restriction has the form of
+         * `{field} {operator} {value}`. * All fields must use the `EQUALS (=)`
+         * operator. Supported fields: * `displayName` * `state` Examples: * All active
+         * manual triggers under an advertiser: `state="ACTIVE"` The length of this
+         * field should be no more than 500 characters. Reference our [filter `LIST`
+         * requests](/display-video/api/guides/how-tos/filters) guide for more
+         * information.
+         * @opt_param string orderBy Field by which to sort the list. Acceptable values
+         * are: * `displayName` (default) * `state` The default sorting order is
+         * ascending. To specify descending order for a field, a suffix "desc" should be
+         * added to the field name. For example, `displayName desc`.
+         * @opt_param int pageSize Requested page size. Must be between `1` and `200`.
+         * If unspecified will default to `100`.
+         * @opt_param string pageToken A token identifying a page of results the server
+         * should return. Typically, this is the value of next_page_token returned from
+         * the previous call to `ListManualTriggers` method. If not specified, the first
+         * page of results will be returned.
+         * @return ListManualTriggersResponse
+         */
+        public function listAdvertisersManualTriggers($advertiserId, $optParams = [])
+        {
+        }
+        /**
+         * Updates a manual trigger. Returns the updated manual trigger if successful.
+         * **Warning:** Line Items using manual triggers no longer serve in Display &
+         * Video 360. This method will sunset on August 1, 2023. Read our [feature
+         * deprecation announcement](/display-
+         * video/api/deprecations#features.manual_triggers) for more information.
+         * (manualTriggers.patch)
+         *
+         * @param string $advertiserId Required. Immutable. The unique ID of the
+         * advertiser that the manual trigger belongs to.
+         * @param string $triggerId Output only. The unique ID of the manual trigger.
+         * @param ManualTrigger $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Required. The mask to control which fields to
+         * update.
+         * @return ManualTrigger
+         */
+        public function patch($advertiserId, $triggerId, ManualTrigger $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Creates a new manual trigger. Returns the newly created manual trigger if
-     * successful. **Warning:** Line Items using manual triggers no longer serve in
-     * Display & Video 360. This method will sunset on August 1, 2023. Read our
-     * [feature deprecation announcement](/display-
-     * video/api/deprecations#features.manual_triggers) for more information.
-     * (manualTriggers.create)
-     *
-     * @param string $advertiserId Required. Immutable. The unique ID of the
-     * advertiser that the manual trigger belongs to.
-     * @param ManualTrigger $postBody
-     * @param array $optParams Optional parameters.
-     * @return ManualTrigger
+     * Runtime class alias of \Google\Service\DisplayVideo\Resource\AdvertisersManualTriggers registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function create($advertiserId, ManualTrigger $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Deactivates a manual trigger. **Warning:** Line Items using manual triggers
-     * no longer serve in Display & Video 360. This method will sunset on August 1,
-     * 2023. Read our [feature deprecation announcement](/display-
-     * video/api/deprecations#features.manual_triggers) for more information.
-     * (manualTriggers.deactivate)
-     *
-     * @param string $advertiserId Required. The ID of the advertiser that the
-     * manual trigger belongs.
-     * @param string $triggerId Required. The ID of the manual trigger to
-     * deactivate.
-     * @param DeactivateManualTriggerRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return ManualTrigger
-     */
-    public function deactivate($advertiserId, $triggerId, DeactivateManualTriggerRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Gets a manual trigger. **Warning:** Line Items using manual triggers no
-     * longer serve in Display & Video 360. This method will sunset on August 1,
-     * 2023. Read our [feature deprecation announcement](/display-
-     * video/api/deprecations#features.manual_triggers) for more information.
-     * (manualTriggers.get)
-     *
-     * @param string $advertiserId Required. The ID of the advertiser this manual
-     * trigger belongs to.
-     * @param string $triggerId Required. The ID of the manual trigger to fetch.
-     * @param array $optParams Optional parameters.
-     * @return ManualTrigger
-     */
-    public function get($advertiserId, $triggerId, $optParams = [])
-    {
-    }
-    /**
-     * Lists manual triggers that are accessible to the current user for a given
-     * advertiser ID. The order is defined by the order_by parameter. A single
-     * advertiser_id is required. **Warning:** Line Items using manual triggers no
-     * longer serve in Display & Video 360. This method will sunset on August 1,
-     * 2023. Read our [feature deprecation announcement](/display-
-     * video/api/deprecations#features.manual_triggers) for more information.
-     * (manualTriggers.listAdvertisersManualTriggers)
-     *
-     * @param string $advertiserId Required. The ID of the advertiser that the
-     * fetched manual triggers belong to.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Allows filtering by manual trigger fields. Supported
-     * syntax: * Filter expressions are made up of one or more restrictions. *
-     * Restrictions can be combined by `AND` or `OR` logical operators. A sequence
-     * of restrictions implicitly uses `AND`. * A restriction has the form of
-     * `{field} {operator} {value}`. * All fields must use the `EQUALS (=)`
-     * operator. Supported fields: * `displayName` * `state` Examples: * All active
-     * manual triggers under an advertiser: `state="ACTIVE"` The length of this
-     * field should be no more than 500 characters. Reference our [filter `LIST`
-     * requests](/display-video/api/guides/how-tos/filters) guide for more
-     * information.
-     * @opt_param string orderBy Field by which to sort the list. Acceptable values
-     * are: * `displayName` (default) * `state` The default sorting order is
-     * ascending. To specify descending order for a field, a suffix "desc" should be
-     * added to the field name. For example, `displayName desc`.
-     * @opt_param int pageSize Requested page size. Must be between `1` and `200`.
-     * If unspecified will default to `100`.
-     * @opt_param string pageToken A token identifying a page of results the server
-     * should return. Typically, this is the value of next_page_token returned from
-     * the previous call to `ListManualTriggers` method. If not specified, the first
-     * page of results will be returned.
-     * @return ListManualTriggersResponse
-     */
-    public function listAdvertisersManualTriggers($advertiserId, $optParams = [])
-    {
-    }
-    /**
-     * Updates a manual trigger. Returns the updated manual trigger if successful.
-     * **Warning:** Line Items using manual triggers no longer serve in Display &
-     * Video 360. This method will sunset on August 1, 2023. Read our [feature
-     * deprecation announcement](/display-
-     * video/api/deprecations#features.manual_triggers) for more information.
-     * (manualTriggers.patch)
-     *
-     * @param string $advertiserId Required. Immutable. The unique ID of the
-     * advertiser that the manual trigger belongs to.
-     * @param string $triggerId Output only. The unique ID of the manual trigger.
-     * @param ManualTrigger $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Required. The mask to control which fields to
-     * update.
-     * @return ManualTrigger
-     */
-    public function patch($advertiserId, $triggerId, ManualTrigger $postBody, $optParams = [])
+    class Google_Service_DisplayVideo_Resource_AdvertisersManualTriggers extends \Google\Service\DisplayVideo\Resource\AdvertisersManualTriggers
     {
     }
 }

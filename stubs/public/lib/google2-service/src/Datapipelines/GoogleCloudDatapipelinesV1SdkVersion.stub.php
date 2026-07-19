@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datapipelines;
-
-class GoogleCloudDatapipelinesV1SdkVersion extends \Google\Model
-{
-    /**
-     * Dataflow is unaware of this version.
-     */
-    public const SDK_SUPPORT_STATUS_UNKNOWN = 'UNKNOWN';
-    /**
-     * This is a known version of an SDK, and is supported.
-     */
-    public const SDK_SUPPORT_STATUS_SUPPORTED = 'SUPPORTED';
-    /**
-     * A newer version of the SDK exists, and an update is recommended.
-     */
-    public const SDK_SUPPORT_STATUS_STALE = 'STALE';
-    /**
-     * This version of the SDK is deprecated and will eventually be unsupported.
-     */
-    public const SDK_SUPPORT_STATUS_DEPRECATED = 'DEPRECATED';
-    /**
-     * Support for this SDK version has ended and it should no longer be used.
-     */
-    public const SDK_SUPPORT_STATUS_UNSUPPORTED = 'UNSUPPORTED';
-    /**
-     * The support status for this SDK version.
-     *
-     * @var string
-     */
-    public $sdkSupportStatus;
-    /**
-     * The version of the SDK used to run the job.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * A readable string describing the version of the SDK.
-     *
-     * @var string
-     */
-    public $versionDisplayName;
-    /**
-     * The support status for this SDK version.
-     *
-     * Accepted values: UNKNOWN, SUPPORTED, STALE, DEPRECATED, UNSUPPORTED
-     *
-     * @param self::SDK_SUPPORT_STATUS_* $sdkSupportStatus
-     */
-    public function setSdkSupportStatus($sdkSupportStatus)
+namespace Google\Service\Datapipelines {
+    class GoogleCloudDatapipelinesV1SdkVersion extends \Google\Model
     {
+        /**
+         * Dataflow is unaware of this version.
+         */
+        public const SDK_SUPPORT_STATUS_UNKNOWN = 'UNKNOWN';
+        /**
+         * This is a known version of an SDK, and is supported.
+         */
+        public const SDK_SUPPORT_STATUS_SUPPORTED = 'SUPPORTED';
+        /**
+         * A newer version of the SDK exists, and an update is recommended.
+         */
+        public const SDK_SUPPORT_STATUS_STALE = 'STALE';
+        /**
+         * This version of the SDK is deprecated and will eventually be unsupported.
+         */
+        public const SDK_SUPPORT_STATUS_DEPRECATED = 'DEPRECATED';
+        /**
+         * Support for this SDK version has ended and it should no longer be used.
+         */
+        public const SDK_SUPPORT_STATUS_UNSUPPORTED = 'UNSUPPORTED';
+        /**
+         * The support status for this SDK version.
+         *
+         * @var string
+         */
+        public $sdkSupportStatus;
+        /**
+         * The version of the SDK used to run the job.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * A readable string describing the version of the SDK.
+         *
+         * @var string
+         */
+        public $versionDisplayName;
+        /**
+         * The support status for this SDK version.
+         *
+         * Accepted values: UNKNOWN, SUPPORTED, STALE, DEPRECATED, UNSUPPORTED
+         *
+         * @param self::SDK_SUPPORT_STATUS_* $sdkSupportStatus
+         */
+        public function setSdkSupportStatus($sdkSupportStatus)
+        {
+        }
+        /**
+         * @return self::SDK_SUPPORT_STATUS_*
+         */
+        public function getSdkSupportStatus()
+        {
+        }
+        /**
+         * The version of the SDK used to run the job.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
+        /**
+         * A readable string describing the version of the SDK.
+         *
+         * @param string $versionDisplayName
+         */
+        public function setVersionDisplayName($versionDisplayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersionDisplayName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::SDK_SUPPORT_STATUS_*
+     * Runtime class alias of \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1SdkVersion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSdkSupportStatus()
-    {
-    }
-    /**
-     * The version of the SDK used to run the job.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
-    {
-    }
-    /**
-     * A readable string describing the version of the SDK.
-     *
-     * @param string $versionDisplayName
-     */
-    public function setVersionDisplayName($versionDisplayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersionDisplayName()
+    class Google_Service_Datapipelines_GoogleCloudDatapipelinesV1SdkVersion extends \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1SdkVersion
     {
     }
 }

@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Iam;
-
-class AdminAuditData extends \Google\Model
-{
-    protected $permissionDeltaType = PermissionDelta::class;
-    protected $permissionDeltaDataType = '';
-    public $permissionDelta;
-    /**
-     * @param PermissionDelta
-     */
-    public function setPermissionDelta(PermissionDelta $permissionDelta)
+namespace Google\Service\Iam {
+    class AdminAuditData extends \Google\Model
     {
+        protected $permissionDeltaType = PermissionDelta::class;
+        protected $permissionDeltaDataType = '';
+        public $permissionDelta;
+        /**
+         * @param PermissionDelta
+         */
+        public function setPermissionDelta(PermissionDelta $permissionDelta)
+        {
+        }
+        /**
+         * @return PermissionDelta
+         */
+        public function getPermissionDelta()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PermissionDelta
+     * Runtime class alias of \Google\Service\Iam\AdminAuditData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPermissionDelta()
+    class Google_Service_Iam_AdminAuditData extends \Google\Service\Iam\AdminAuditData
     {
     }
 }

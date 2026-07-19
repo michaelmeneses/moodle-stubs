@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutTableBlock extends \Google\Collection
-{
-    protected $collection_key = 'headerRows';
-    protected $bodyRowsType = GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutTableRow::class;
-    protected $bodyRowsDataType = 'array';
-    /**
-     * Table caption/title.
-     *
-     * @var string
-     */
-    public $caption;
-    protected $headerRowsType = GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutTableRow::class;
-    protected $headerRowsDataType = 'array';
-    /**
-     * Body rows containing main table content.
-     *
-     * @param GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutTableRow[] $bodyRows
-     */
-    public function setBodyRows($bodyRows)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutTableBlock extends \Google\Collection
     {
+        protected $collection_key = 'headerRows';
+        protected $bodyRowsType = GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutTableRow::class;
+        protected $bodyRowsDataType = 'array';
+        /**
+         * Table caption/title.
+         *
+         * @var string
+         */
+        public $caption;
+        protected $headerRowsType = GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutTableRow::class;
+        protected $headerRowsDataType = 'array';
+        /**
+         * Body rows containing main table content.
+         *
+         * @param GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutTableRow[] $bodyRows
+         */
+        public function setBodyRows($bodyRows)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutTableRow[]
+         */
+        public function getBodyRows()
+        {
+        }
+        /**
+         * Table caption/title.
+         *
+         * @param string $caption
+         */
+        public function setCaption($caption)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCaption()
+        {
+        }
+        /**
+         * Header rows at the top of the table.
+         *
+         * @param GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutTableRow[] $headerRows
+         */
+        public function setHeaderRows($headerRows)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutTableRow[]
+         */
+        public function getHeaderRows()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutTableRow[]
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutTableBlock registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBodyRows()
-    {
-    }
-    /**
-     * Table caption/title.
-     *
-     * @param string $caption
-     */
-    public function setCaption($caption)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCaption()
-    {
-    }
-    /**
-     * Header rows at the top of the table.
-     *
-     * @param GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutTableRow[] $headerRows
-     */
-    public function setHeaderRows($headerRows)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutTableRow[]
-     */
-    public function getHeaderRows()
+    class Google_Service_Document_GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutTableBlock extends \Google\Service\Document\GoogleCloudDocumentaiV1DocumentDocumentLayoutDocumentLayoutBlockLayoutTableBlock
     {
     }
 }

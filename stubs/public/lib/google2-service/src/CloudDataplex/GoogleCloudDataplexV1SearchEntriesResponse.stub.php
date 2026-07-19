@@ -21,91 +21,100 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1SearchEntriesResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $resultsType = GoogleCloudDataplexV1SearchEntriesResult::class;
-    protected $resultsDataType = 'array';
-    /**
-     * The estimated total number of matching entries. This number isn't
-     * guaranteed to be accurate.
-     *
-     * @var int
-     */
-    public $totalSize;
-    /**
-     * Locations that the service couldn't reach. Search results don't include
-     * data from these locations.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1SearchEntriesResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $resultsType = GoogleCloudDataplexV1SearchEntriesResult::class;
+        protected $resultsDataType = 'array';
+        /**
+         * The estimated total number of matching entries. This number isn't
+         * guaranteed to be accurate.
+         *
+         * @var int
+         */
+        public $totalSize;
+        /**
+         * Locations that the service couldn't reach. Search results don't include
+         * data from these locations.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The results matching the search query.
+         *
+         * @param GoogleCloudDataplexV1SearchEntriesResult[] $results
+         */
+        public function setResults($results)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1SearchEntriesResult[]
+         */
+        public function getResults()
+        {
+        }
+        /**
+         * The estimated total number of matching entries. This number isn't
+         * guaranteed to be accurate.
+         *
+         * @param int $totalSize
+         */
+        public function setTotalSize($totalSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalSize()
+        {
+        }
+        /**
+         * Locations that the service couldn't reach. Search results don't include
+         * data from these locations.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1SearchEntriesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The results matching the search query.
-     *
-     * @param GoogleCloudDataplexV1SearchEntriesResult[] $results
-     */
-    public function setResults($results)
-    {
-    }
-    /**
-     * @return GoogleCloudDataplexV1SearchEntriesResult[]
-     */
-    public function getResults()
-    {
-    }
-    /**
-     * The estimated total number of matching entries. This number isn't
-     * guaranteed to be accurate.
-     *
-     * @param int $totalSize
-     */
-    public function setTotalSize($totalSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalSize()
-    {
-    }
-    /**
-     * Locations that the service couldn't reach. Search results don't include
-     * data from these locations.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1SearchEntriesResponse extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1SearchEntriesResponse
     {
     }
 }

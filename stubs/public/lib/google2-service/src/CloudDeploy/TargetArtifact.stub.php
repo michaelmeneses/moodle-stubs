@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class TargetArtifact extends \Google\Model
-{
-    /**
-     * Output only. URI of a directory containing the artifacts. This contains
-     * deployment configuration used by Skaffold during a rollout, and all paths
-     * are relative to this location.
-     *
-     * @var string
-     */
-    public $artifactUri;
-    /**
-     * Output only. File path of the rendered manifest relative to the URI for the
-     * stable phase.
-     *
-     * @var string
-     */
-    public $manifestPath;
-    protected $phaseArtifactsType = PhaseArtifact::class;
-    protected $phaseArtifactsDataType = 'map';
-    /**
-     * Output only. File path of the resolved Skaffold configuration for the
-     * stable phase, relative to the URI.
-     *
-     * @var string
-     */
-    public $skaffoldConfigPath;
-    /**
-     * Output only. URI of a directory containing the artifacts. This contains
-     * deployment configuration used by Skaffold during a rollout, and all paths
-     * are relative to this location.
-     *
-     * @param string $artifactUri
-     */
-    public function setArtifactUri($artifactUri)
+namespace Google\Service\CloudDeploy {
+    class TargetArtifact extends \Google\Model
     {
+        /**
+         * Output only. URI of a directory containing the artifacts. This contains
+         * deployment configuration used by Skaffold during a rollout, and all paths
+         * are relative to this location.
+         *
+         * @var string
+         */
+        public $artifactUri;
+        /**
+         * Output only. File path of the rendered manifest relative to the URI for the
+         * stable phase.
+         *
+         * @var string
+         */
+        public $manifestPath;
+        protected $phaseArtifactsType = PhaseArtifact::class;
+        protected $phaseArtifactsDataType = 'map';
+        /**
+         * Output only. File path of the resolved Skaffold configuration for the
+         * stable phase, relative to the URI.
+         *
+         * @var string
+         */
+        public $skaffoldConfigPath;
+        /**
+         * Output only. URI of a directory containing the artifacts. This contains
+         * deployment configuration used by Skaffold during a rollout, and all paths
+         * are relative to this location.
+         *
+         * @param string $artifactUri
+         */
+        public function setArtifactUri($artifactUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getArtifactUri()
+        {
+        }
+        /**
+         * Output only. File path of the rendered manifest relative to the URI for the
+         * stable phase.
+         *
+         * @param string $manifestPath
+         */
+        public function setManifestPath($manifestPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getManifestPath()
+        {
+        }
+        /**
+         * Output only. Map from the phase ID to the phase artifacts for the `Target`.
+         *
+         * @param PhaseArtifact[] $phaseArtifacts
+         */
+        public function setPhaseArtifacts($phaseArtifacts)
+        {
+        }
+        /**
+         * @return PhaseArtifact[]
+         */
+        public function getPhaseArtifacts()
+        {
+        }
+        /**
+         * Output only. File path of the resolved Skaffold configuration for the
+         * stable phase, relative to the URI.
+         *
+         * @param string $skaffoldConfigPath
+         */
+        public function setSkaffoldConfigPath($skaffoldConfigPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSkaffoldConfigPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDeploy\TargetArtifact registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArtifactUri()
-    {
-    }
-    /**
-     * Output only. File path of the rendered manifest relative to the URI for the
-     * stable phase.
-     *
-     * @param string $manifestPath
-     */
-    public function setManifestPath($manifestPath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getManifestPath()
-    {
-    }
-    /**
-     * Output only. Map from the phase ID to the phase artifacts for the `Target`.
-     *
-     * @param PhaseArtifact[] $phaseArtifacts
-     */
-    public function setPhaseArtifacts($phaseArtifacts)
-    {
-    }
-    /**
-     * @return PhaseArtifact[]
-     */
-    public function getPhaseArtifacts()
-    {
-    }
-    /**
-     * Output only. File path of the resolved Skaffold configuration for the
-     * stable phase, relative to the URI.
-     *
-     * @param string $skaffoldConfigPath
-     */
-    public function setSkaffoldConfigPath($skaffoldConfigPath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSkaffoldConfigPath()
+    class Google_Service_CloudDeploy_TargetArtifact extends \Google\Service\CloudDeploy\TargetArtifact
     {
     }
 }

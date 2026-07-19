@@ -21,126 +21,135 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Adsense;
-
-class AdUnit extends \Google\Model
-{
-    /**
-     * State unspecified.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * Ad unit has been activated by the user.
-     */
-    public const STATE_ACTIVE = 'ACTIVE';
-    /**
-     * Ad unit has been archived by the user. Note that archived ad units are only
-     * removed from the default view in the UI. Archived ad units can still serve
-     * ads.
-     */
-    public const STATE_ARCHIVED = 'ARCHIVED';
-    protected $contentAdsSettingsType = ContentAdsSettings::class;
-    protected $contentAdsSettingsDataType = '';
-    /**
-     * Required. Display name of the ad unit, as provided when the ad unit was
-     * created.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. Resource name of the ad unit. Format:
-     * accounts/{account}/adclients/{adclient}/adunits/{adunit}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Unique ID of the ad unit as used in the `AD_UNIT_ID` reporting
-     * dimension.
-     *
-     * @var string
-     */
-    public $reportingDimensionId;
-    /**
-     * Required. State of the ad unit.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Required. Settings specific to content ads (AFC).
-     *
-     * @param ContentAdsSettings $contentAdsSettings
-     */
-    public function setContentAdsSettings(ContentAdsSettings $contentAdsSettings)
+namespace Google\Service\Adsense {
+    class AdUnit extends \Google\Model
     {
+        /**
+         * State unspecified.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * Ad unit has been activated by the user.
+         */
+        public const STATE_ACTIVE = 'ACTIVE';
+        /**
+         * Ad unit has been archived by the user. Note that archived ad units are only
+         * removed from the default view in the UI. Archived ad units can still serve
+         * ads.
+         */
+        public const STATE_ARCHIVED = 'ARCHIVED';
+        protected $contentAdsSettingsType = ContentAdsSettings::class;
+        protected $contentAdsSettingsDataType = '';
+        /**
+         * Required. Display name of the ad unit, as provided when the ad unit was
+         * created.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. Resource name of the ad unit. Format:
+         * accounts/{account}/adclients/{adclient}/adunits/{adunit}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Unique ID of the ad unit as used in the `AD_UNIT_ID` reporting
+         * dimension.
+         *
+         * @var string
+         */
+        public $reportingDimensionId;
+        /**
+         * Required. State of the ad unit.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Required. Settings specific to content ads (AFC).
+         *
+         * @param ContentAdsSettings $contentAdsSettings
+         */
+        public function setContentAdsSettings(ContentAdsSettings $contentAdsSettings)
+        {
+        }
+        /**
+         * @return ContentAdsSettings
+         */
+        public function getContentAdsSettings()
+        {
+        }
+        /**
+         * Required. Display name of the ad unit, as provided when the ad unit was
+         * created.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. Resource name of the ad unit. Format:
+         * accounts/{account}/adclients/{adclient}/adunits/{adunit}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Unique ID of the ad unit as used in the `AD_UNIT_ID` reporting
+         * dimension.
+         *
+         * @param string $reportingDimensionId
+         */
+        public function setReportingDimensionId($reportingDimensionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReportingDimensionId()
+        {
+        }
+        /**
+         * Required. State of the ad unit.
+         *
+         * Accepted values: STATE_UNSPECIFIED, ACTIVE, ARCHIVED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ContentAdsSettings
+     * Runtime class alias of \Google\Service\Adsense\AdUnit registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContentAdsSettings()
-    {
-    }
-    /**
-     * Required. Display name of the ad unit, as provided when the ad unit was
-     * created.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. Resource name of the ad unit. Format:
-     * accounts/{account}/adclients/{adclient}/adunits/{adunit}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Unique ID of the ad unit as used in the `AD_UNIT_ID` reporting
-     * dimension.
-     *
-     * @param string $reportingDimensionId
-     */
-    public function setReportingDimensionId($reportingDimensionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReportingDimensionId()
-    {
-    }
-    /**
-     * Required. State of the ad unit.
-     *
-     * Accepted values: STATE_UNSPECIFIED, ACTIVE, ARCHIVED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_Adsense_AdUnit extends \Google\Service\Adsense\AdUnit
     {
     }
 }

@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMwareEngine;
-
-class Interval extends \Google\Model
-{
-    /**
-     * Optional. Exclusive end of the interval. If specified, a Timestamp matching
-     * this interval will have to be before the end.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * Optional. Inclusive start of the interval. If specified, a Timestamp
-     * matching this interval will have to be the same or after the start.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Optional. Exclusive end of the interval. If specified, a Timestamp matching
-     * this interval will have to be before the end.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\VMwareEngine {
+    class Interval extends \Google\Model
     {
+        /**
+         * Optional. Exclusive end of the interval. If specified, a Timestamp matching
+         * this interval will have to be before the end.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * Optional. Inclusive start of the interval. If specified, a Timestamp
+         * matching this interval will have to be the same or after the start.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Optional. Exclusive end of the interval. If specified, a Timestamp matching
+         * this interval will have to be before the end.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Optional. Inclusive start of the interval. If specified, a Timestamp
+         * matching this interval will have to be the same or after the start.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\VMwareEngine\Interval registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Optional. Inclusive start of the interval. If specified, a Timestamp
-     * matching this interval will have to be the same or after the start.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_VMwareEngine_Interval extends \Google\Service\VMwareEngine\Interval
     {
     }
 }

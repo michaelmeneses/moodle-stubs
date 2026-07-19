@@ -21,149 +21,158 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution;
-
-class VlanAttachment extends \Google\Model
-{
-    /**
-     * Immutable. The identifier of the attachment within vrf.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Optional. The name of the vlan attachment within vrf. This is of the form p
-     * rojects/{project_number}/regions/{region}/interconnectAttachments/{intercon
-     * nect_attachment}
-     *
-     * @var string
-     */
-    public $interconnectAttachment;
-    /**
-     * Input only. Pairing key.
-     *
-     * @var string
-     */
-    public $pairingKey;
-    /**
-     * The peer IP of the attachment.
-     *
-     * @var string
-     */
-    public $peerIp;
-    /**
-     * The peer vlan ID of the attachment.
-     *
-     * @var string
-     */
-    public $peerVlanId;
-    protected $qosPolicyType = QosPolicy::class;
-    protected $qosPolicyDataType = '';
-    /**
-     * The router IP of the attachment.
-     *
-     * @var string
-     */
-    public $routerIp;
-    /**
-     * Immutable. The identifier of the attachment within vrf.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\Baremetalsolution {
+    class VlanAttachment extends \Google\Model
     {
+        /**
+         * Immutable. The identifier of the attachment within vrf.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Optional. The name of the vlan attachment within vrf. This is of the form p
+         * rojects/{project_number}/regions/{region}/interconnectAttachments/{intercon
+         * nect_attachment}
+         *
+         * @var string
+         */
+        public $interconnectAttachment;
+        /**
+         * Input only. Pairing key.
+         *
+         * @var string
+         */
+        public $pairingKey;
+        /**
+         * The peer IP of the attachment.
+         *
+         * @var string
+         */
+        public $peerIp;
+        /**
+         * The peer vlan ID of the attachment.
+         *
+         * @var string
+         */
+        public $peerVlanId;
+        protected $qosPolicyType = QosPolicy::class;
+        protected $qosPolicyDataType = '';
+        /**
+         * The router IP of the attachment.
+         *
+         * @var string
+         */
+        public $routerIp;
+        /**
+         * Immutable. The identifier of the attachment within vrf.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Optional. The name of the vlan attachment within vrf. This is of the form p
+         * rojects/{project_number}/regions/{region}/interconnectAttachments/{intercon
+         * nect_attachment}
+         *
+         * @param string $interconnectAttachment
+         */
+        public function setInterconnectAttachment($interconnectAttachment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInterconnectAttachment()
+        {
+        }
+        /**
+         * Input only. Pairing key.
+         *
+         * @param string $pairingKey
+         */
+        public function setPairingKey($pairingKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPairingKey()
+        {
+        }
+        /**
+         * The peer IP of the attachment.
+         *
+         * @param string $peerIp
+         */
+        public function setPeerIp($peerIp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPeerIp()
+        {
+        }
+        /**
+         * The peer vlan ID of the attachment.
+         *
+         * @param string $peerVlanId
+         */
+        public function setPeerVlanId($peerVlanId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPeerVlanId()
+        {
+        }
+        /**
+         * The QOS policy applied to this VLAN attachment. This value should be
+         * preferred to using qos at vrf level.
+         *
+         * @param QosPolicy $qosPolicy
+         */
+        public function setQosPolicy(QosPolicy $qosPolicy)
+        {
+        }
+        /**
+         * @return QosPolicy
+         */
+        public function getQosPolicy()
+        {
+        }
+        /**
+         * The router IP of the attachment.
+         *
+         * @param string $routerIp
+         */
+        public function setRouterIp($routerIp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRouterIp()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Baremetalsolution\VlanAttachment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * Optional. The name of the vlan attachment within vrf. This is of the form p
-     * rojects/{project_number}/regions/{region}/interconnectAttachments/{intercon
-     * nect_attachment}
-     *
-     * @param string $interconnectAttachment
-     */
-    public function setInterconnectAttachment($interconnectAttachment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInterconnectAttachment()
-    {
-    }
-    /**
-     * Input only. Pairing key.
-     *
-     * @param string $pairingKey
-     */
-    public function setPairingKey($pairingKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPairingKey()
-    {
-    }
-    /**
-     * The peer IP of the attachment.
-     *
-     * @param string $peerIp
-     */
-    public function setPeerIp($peerIp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPeerIp()
-    {
-    }
-    /**
-     * The peer vlan ID of the attachment.
-     *
-     * @param string $peerVlanId
-     */
-    public function setPeerVlanId($peerVlanId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPeerVlanId()
-    {
-    }
-    /**
-     * The QOS policy applied to this VLAN attachment. This value should be
-     * preferred to using qos at vrf level.
-     *
-     * @param QosPolicy $qosPolicy
-     */
-    public function setQosPolicy(QosPolicy $qosPolicy)
-    {
-    }
-    /**
-     * @return QosPolicy
-     */
-    public function getQosPolicy()
-    {
-    }
-    /**
-     * The router IP of the attachment.
-     *
-     * @param string $routerIp
-     */
-    public function setRouterIp($routerIp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRouterIp()
+    class Google_Service_Baremetalsolution_VlanAttachment extends \Google\Service\Baremetalsolution\VlanAttachment
     {
     }
 }

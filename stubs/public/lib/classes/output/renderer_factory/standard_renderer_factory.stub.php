@@ -20,31 +20,43 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\output\renderer_factory;
-
-/**
- * This is the default renderer factory for Moodle.
- *
- * It simply returns an instance of the appropriate standard renderer class.
- *
- * @copyright 2009 Tim Hunt
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @since Moodle 2.0
- * @package core
- * @category output
- */
-class standard_renderer_factory extends renderer_factory_base
-{
+namespace core\output\renderer_factory {
+    use core\exception\coding_exception;
+    use core\output\renderer_base;
+    use moodle_page;
     /**
-     * Implement the subclass method
+     * This is the default renderer factory for Moodle.
      *
-     * @param moodle_page $page the page the renderer is outputting content for.
-     * @param string $component name such as 'core', 'mod_forum' or 'qtype_multichoice'.
-     * @param string $subtype optional subtype such as 'news' resulting to 'mod_forum_news'
-     * @param string $target one of rendering target constants
-     * @return renderer_base an object implementing the requested renderer interface.
+     * It simply returns an instance of the appropriate standard renderer class.
+     *
+     * @copyright 2009 Tim Hunt
+     * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     * @since Moodle 2.0
+     * @package core
+     * @category output
      */
-    public function get_renderer(moodle_page $page, $component, $subtype = null, $target = null)
+    class standard_renderer_factory extends renderer_factory_base
+    {
+        /**
+         * Implement the subclass method
+         *
+         * @param moodle_page $page the page the renderer is outputting content for.
+         * @param string $component name such as 'core', 'mod_forum' or 'qtype_multichoice'.
+         * @param string $subtype optional subtype such as 'news' resulting to 'mod_forum_news'
+         * @param string $target one of rendering target constants
+         * @return renderer_base an object implementing the requested renderer interface.
+         */
+        public function get_renderer(moodle_page $page, $component, $subtype = null, $target = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \core\output\renderer_factory\standard_renderer_factory registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class standard_renderer_factory extends \core\output\renderer_factory\standard_renderer_factory
     {
     }
 }

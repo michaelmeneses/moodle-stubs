@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class AccessSparkApplicationStageRddOperationGraphResponse extends \Google\Model
-{
-    protected $rddOperationGraphType = RddOperationGraph::class;
-    protected $rddOperationGraphDataType = '';
-    /**
-     * RDD operation graph for a Spark Application Stage.
-     *
-     * @param RddOperationGraph $rddOperationGraph
-     */
-    public function setRddOperationGraph(RddOperationGraph $rddOperationGraph)
+namespace Google\Service\Dataproc {
+    class AccessSparkApplicationStageRddOperationGraphResponse extends \Google\Model
     {
+        protected $rddOperationGraphType = RddOperationGraph::class;
+        protected $rddOperationGraphDataType = '';
+        /**
+         * RDD operation graph for a Spark Application Stage.
+         *
+         * @param RddOperationGraph $rddOperationGraph
+         */
+        public function setRddOperationGraph(RddOperationGraph $rddOperationGraph)
+        {
+        }
+        /**
+         * @return RddOperationGraph
+         */
+        public function getRddOperationGraph()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RddOperationGraph
+     * Runtime class alias of \Google\Service\Dataproc\AccessSparkApplicationStageRddOperationGraphResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRddOperationGraph()
+    class Google_Service_Dataproc_AccessSparkApplicationStageRddOperationGraphResponse extends \Google\Service\Dataproc\AccessSparkApplicationStageRddOperationGraphResponse
     {
     }
 }

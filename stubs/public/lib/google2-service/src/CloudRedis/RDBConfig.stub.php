@@ -21,75 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class RDBConfig extends \Google\Model
-{
-    /**
-     * Not set.
-     */
-    public const RDB_SNAPSHOT_PERIOD_SNAPSHOT_PERIOD_UNSPECIFIED = 'SNAPSHOT_PERIOD_UNSPECIFIED';
-    /**
-     * One hour.
-     */
-    public const RDB_SNAPSHOT_PERIOD_ONE_HOUR = 'ONE_HOUR';
-    /**
-     * Six hours.
-     */
-    public const RDB_SNAPSHOT_PERIOD_SIX_HOURS = 'SIX_HOURS';
-    /**
-     * Twelve hours.
-     */
-    public const RDB_SNAPSHOT_PERIOD_TWELVE_HOURS = 'TWELVE_HOURS';
-    /**
-     * Twenty four hours.
-     */
-    public const RDB_SNAPSHOT_PERIOD_TWENTY_FOUR_HOURS = 'TWENTY_FOUR_HOURS';
-    /**
-     * Optional. Period between RDB snapshots.
-     *
-     * @var string
-     */
-    public $rdbSnapshotPeriod;
-    /**
-     * Optional. The time that the first snapshot was/will be attempted, and to
-     * which future snapshots will be aligned. If not provided, the current time
-     * will be used.
-     *
-     * @var string
-     */
-    public $rdbSnapshotStartTime;
-    /**
-     * Optional. Period between RDB snapshots.
-     *
-     * Accepted values: SNAPSHOT_PERIOD_UNSPECIFIED, ONE_HOUR, SIX_HOURS,
-     * TWELVE_HOURS, TWENTY_FOUR_HOURS
-     *
-     * @param self::RDB_SNAPSHOT_PERIOD_* $rdbSnapshotPeriod
-     */
-    public function setRdbSnapshotPeriod($rdbSnapshotPeriod)
+namespace Google\Service\CloudRedis {
+    class RDBConfig extends \Google\Model
     {
+        /**
+         * Not set.
+         */
+        public const RDB_SNAPSHOT_PERIOD_SNAPSHOT_PERIOD_UNSPECIFIED = 'SNAPSHOT_PERIOD_UNSPECIFIED';
+        /**
+         * One hour.
+         */
+        public const RDB_SNAPSHOT_PERIOD_ONE_HOUR = 'ONE_HOUR';
+        /**
+         * Six hours.
+         */
+        public const RDB_SNAPSHOT_PERIOD_SIX_HOURS = 'SIX_HOURS';
+        /**
+         * Twelve hours.
+         */
+        public const RDB_SNAPSHOT_PERIOD_TWELVE_HOURS = 'TWELVE_HOURS';
+        /**
+         * Twenty four hours.
+         */
+        public const RDB_SNAPSHOT_PERIOD_TWENTY_FOUR_HOURS = 'TWENTY_FOUR_HOURS';
+        /**
+         * Optional. Period between RDB snapshots.
+         *
+         * @var string
+         */
+        public $rdbSnapshotPeriod;
+        /**
+         * Optional. The time that the first snapshot was/will be attempted, and to
+         * which future snapshots will be aligned. If not provided, the current time
+         * will be used.
+         *
+         * @var string
+         */
+        public $rdbSnapshotStartTime;
+        /**
+         * Optional. Period between RDB snapshots.
+         *
+         * Accepted values: SNAPSHOT_PERIOD_UNSPECIFIED, ONE_HOUR, SIX_HOURS,
+         * TWELVE_HOURS, TWENTY_FOUR_HOURS
+         *
+         * @param self::RDB_SNAPSHOT_PERIOD_* $rdbSnapshotPeriod
+         */
+        public function setRdbSnapshotPeriod($rdbSnapshotPeriod)
+        {
+        }
+        /**
+         * @return self::RDB_SNAPSHOT_PERIOD_*
+         */
+        public function getRdbSnapshotPeriod()
+        {
+        }
+        /**
+         * Optional. The time that the first snapshot was/will be attempted, and to
+         * which future snapshots will be aligned. If not provided, the current time
+         * will be used.
+         *
+         * @param string $rdbSnapshotStartTime
+         */
+        public function setRdbSnapshotStartTime($rdbSnapshotStartTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRdbSnapshotStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::RDB_SNAPSHOT_PERIOD_*
+     * Runtime class alias of \Google\Service\CloudRedis\RDBConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRdbSnapshotPeriod()
-    {
-    }
-    /**
-     * Optional. The time that the first snapshot was/will be attempted, and to
-     * which future snapshots will be aligned. If not provided, the current time
-     * will be used.
-     *
-     * @param string $rdbSnapshotStartTime
-     */
-    public function setRdbSnapshotStartTime($rdbSnapshotStartTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRdbSnapshotStartTime()
+    class Google_Service_CloudRedis_RDBConfig extends \Google\Service\CloudRedis\RDBConfig
     {
     }
 }

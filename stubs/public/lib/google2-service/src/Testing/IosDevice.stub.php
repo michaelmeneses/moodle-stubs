@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class IosDevice extends \Google\Model
-{
-    /**
-     * Required. The id of the iOS device to be used. Use the
-     * TestEnvironmentDiscoveryService to get supported options.
-     *
-     * @var string
-     */
-    public $iosModelId;
-    /**
-     * Required. The id of the iOS major software version to be used. Use the
-     * TestEnvironmentDiscoveryService to get supported options.
-     *
-     * @var string
-     */
-    public $iosVersionId;
-    /**
-     * Required. The locale the test device used for testing. Use the
-     * TestEnvironmentDiscoveryService to get supported options.
-     *
-     * @var string
-     */
-    public $locale;
-    /**
-     * Required. How the device is oriented during the test. Use the
-     * TestEnvironmentDiscoveryService to get supported options.
-     *
-     * @var string
-     */
-    public $orientation;
-    /**
-     * Required. The id of the iOS device to be used. Use the
-     * TestEnvironmentDiscoveryService to get supported options.
-     *
-     * @param string $iosModelId
-     */
-    public function setIosModelId($iosModelId)
+namespace Google\Service\Testing {
+    class IosDevice extends \Google\Model
     {
+        /**
+         * Required. The id of the iOS device to be used. Use the
+         * TestEnvironmentDiscoveryService to get supported options.
+         *
+         * @var string
+         */
+        public $iosModelId;
+        /**
+         * Required. The id of the iOS major software version to be used. Use the
+         * TestEnvironmentDiscoveryService to get supported options.
+         *
+         * @var string
+         */
+        public $iosVersionId;
+        /**
+         * Required. The locale the test device used for testing. Use the
+         * TestEnvironmentDiscoveryService to get supported options.
+         *
+         * @var string
+         */
+        public $locale;
+        /**
+         * Required. How the device is oriented during the test. Use the
+         * TestEnvironmentDiscoveryService to get supported options.
+         *
+         * @var string
+         */
+        public $orientation;
+        /**
+         * Required. The id of the iOS device to be used. Use the
+         * TestEnvironmentDiscoveryService to get supported options.
+         *
+         * @param string $iosModelId
+         */
+        public function setIosModelId($iosModelId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIosModelId()
+        {
+        }
+        /**
+         * Required. The id of the iOS major software version to be used. Use the
+         * TestEnvironmentDiscoveryService to get supported options.
+         *
+         * @param string $iosVersionId
+         */
+        public function setIosVersionId($iosVersionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIosVersionId()
+        {
+        }
+        /**
+         * Required. The locale the test device used for testing. Use the
+         * TestEnvironmentDiscoveryService to get supported options.
+         *
+         * @param string $locale
+         */
+        public function setLocale($locale)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocale()
+        {
+        }
+        /**
+         * Required. How the device is oriented during the test. Use the
+         * TestEnvironmentDiscoveryService to get supported options.
+         *
+         * @param string $orientation
+         */
+        public function setOrientation($orientation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrientation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Testing\IosDevice registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIosModelId()
-    {
-    }
-    /**
-     * Required. The id of the iOS major software version to be used. Use the
-     * TestEnvironmentDiscoveryService to get supported options.
-     *
-     * @param string $iosVersionId
-     */
-    public function setIosVersionId($iosVersionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIosVersionId()
-    {
-    }
-    /**
-     * Required. The locale the test device used for testing. Use the
-     * TestEnvironmentDiscoveryService to get supported options.
-     *
-     * @param string $locale
-     */
-    public function setLocale($locale)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocale()
-    {
-    }
-    /**
-     * Required. How the device is oriented during the test. Use the
-     * TestEnvironmentDiscoveryService to get supported options.
-     *
-     * @param string $orientation
-     */
-    public function setOrientation($orientation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrientation()
+    class Google_Service_Testing_IosDevice extends \Google\Service\Testing\IosDevice
     {
     }
 }

@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudComposer;
-
-class WebServerConfig extends \Google\Model
-{
-    /**
-     * Optional. Machine type on which Airflow web server is running. It has to be
-     * one of: composer-n1-webserver-2, composer-n1-webserver-4 or
-     * composer-n1-webserver-8. If not specified, composer-n1-webserver-2 will be
-     * used. Value custom is returned only in response, if Airflow web server
-     * parameters were manually changed to a non-standard values.
-     *
-     * @var string
-     */
-    public $machineType;
-    /**
-     * Optional. Machine type on which Airflow web server is running. It has to be
-     * one of: composer-n1-webserver-2, composer-n1-webserver-4 or
-     * composer-n1-webserver-8. If not specified, composer-n1-webserver-2 will be
-     * used. Value custom is returned only in response, if Airflow web server
-     * parameters were manually changed to a non-standard values.
-     *
-     * @param string $machineType
-     */
-    public function setMachineType($machineType)
+namespace Google\Service\CloudComposer {
+    class WebServerConfig extends \Google\Model
     {
+        /**
+         * Optional. Machine type on which Airflow web server is running. It has to be
+         * one of: composer-n1-webserver-2, composer-n1-webserver-4 or
+         * composer-n1-webserver-8. If not specified, composer-n1-webserver-2 will be
+         * used. Value custom is returned only in response, if Airflow web server
+         * parameters were manually changed to a non-standard values.
+         *
+         * @var string
+         */
+        public $machineType;
+        /**
+         * Optional. Machine type on which Airflow web server is running. It has to be
+         * one of: composer-n1-webserver-2, composer-n1-webserver-4 or
+         * composer-n1-webserver-8. If not specified, composer-n1-webserver-2 will be
+         * used. Value custom is returned only in response, if Airflow web server
+         * parameters were manually changed to a non-standard values.
+         *
+         * @param string $machineType
+         */
+        public function setMachineType($machineType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMachineType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudComposer\WebServerConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMachineType()
+    class Google_Service_CloudComposer_WebServerConfig extends \Google\Service\CloudComposer\WebServerConfig
     {
     }
 }

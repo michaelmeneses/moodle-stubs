@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecaptchaEnterprise;
-
-class GoogleCloudRecaptchaenterpriseV1PhoneAuthenticationEvent extends \Google\Model
-{
-    /**
-     * Optional. The time at which the multi-factor authentication event
-     * (challenge or verification) occurred.
-     *
-     * @var string
-     */
-    public $eventTime;
-    /**
-     * Required. Phone number in E.164 format for which a multi-factor
-     * authentication challenge was initiated, succeeded, or failed.
-     *
-     * @var string
-     */
-    public $phoneNumber;
-    /**
-     * Optional. The time at which the multi-factor authentication event
-     * (challenge or verification) occurred.
-     *
-     * @param string $eventTime
-     */
-    public function setEventTime($eventTime)
+namespace Google\Service\RecaptchaEnterprise {
+    class GoogleCloudRecaptchaenterpriseV1PhoneAuthenticationEvent extends \Google\Model
     {
+        /**
+         * Optional. The time at which the multi-factor authentication event
+         * (challenge or verification) occurred.
+         *
+         * @var string
+         */
+        public $eventTime;
+        /**
+         * Required. Phone number in E.164 format for which a multi-factor
+         * authentication challenge was initiated, succeeded, or failed.
+         *
+         * @var string
+         */
+        public $phoneNumber;
+        /**
+         * Optional. The time at which the multi-factor authentication event
+         * (challenge or verification) occurred.
+         *
+         * @param string $eventTime
+         */
+        public function setEventTime($eventTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEventTime()
+        {
+        }
+        /**
+         * Required. Phone number in E.164 format for which a multi-factor
+         * authentication challenge was initiated, succeeded, or failed.
+         *
+         * @param string $phoneNumber
+         */
+        public function setPhoneNumber($phoneNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhoneNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1PhoneAuthenticationEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEventTime()
-    {
-    }
-    /**
-     * Required. Phone number in E.164 format for which a multi-factor
-     * authentication challenge was initiated, succeeded, or failed.
-     *
-     * @param string $phoneNumber
-     */
-    public function setPhoneNumber($phoneNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhoneNumber()
+    class Google_Service_RecaptchaEnterprise_GoogleCloudRecaptchaenterpriseV1PhoneAuthenticationEvent extends \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1PhoneAuthenticationEvent
     {
     }
 }

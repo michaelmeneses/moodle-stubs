@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class ConvertRegionPricesResponse extends \Google\Model
-{
-    protected $convertedOtherRegionsPriceType = ConvertedOtherRegionsPrice::class;
-    protected $convertedOtherRegionsPriceDataType = '';
-    protected $convertedRegionPricesType = ConvertedRegionPrice::class;
-    protected $convertedRegionPricesDataType = 'map';
-    protected $regionVersionType = RegionsVersion::class;
-    protected $regionVersionDataType = '';
-    /**
-     * Converted other regions prices in USD and EUR, to use for countries where
-     * Play doesn't support a country's local currency.
-     *
-     * @param ConvertedOtherRegionsPrice $convertedOtherRegionsPrice
-     */
-    public function setConvertedOtherRegionsPrice(ConvertedOtherRegionsPrice $convertedOtherRegionsPrice)
+namespace Google\Service\AndroidPublisher {
+    class ConvertRegionPricesResponse extends \Google\Model
     {
+        protected $convertedOtherRegionsPriceType = ConvertedOtherRegionsPrice::class;
+        protected $convertedOtherRegionsPriceDataType = '';
+        protected $convertedRegionPricesType = ConvertedRegionPrice::class;
+        protected $convertedRegionPricesDataType = 'map';
+        protected $regionVersionType = RegionsVersion::class;
+        protected $regionVersionDataType = '';
+        /**
+         * Converted other regions prices in USD and EUR, to use for countries where
+         * Play doesn't support a country's local currency.
+         *
+         * @param ConvertedOtherRegionsPrice $convertedOtherRegionsPrice
+         */
+        public function setConvertedOtherRegionsPrice(ConvertedOtherRegionsPrice $convertedOtherRegionsPrice)
+        {
+        }
+        /**
+         * @return ConvertedOtherRegionsPrice
+         */
+        public function getConvertedOtherRegionsPrice()
+        {
+        }
+        /**
+         * Map from region code to converted region price.
+         *
+         * @param ConvertedRegionPrice[] $convertedRegionPrices
+         */
+        public function setConvertedRegionPrices($convertedRegionPrices)
+        {
+        }
+        /**
+         * @return ConvertedRegionPrice[]
+         */
+        public function getConvertedRegionPrices()
+        {
+        }
+        /**
+         * The region version at which the prices were generated.
+         *
+         * @param RegionsVersion $regionVersion
+         */
+        public function setRegionVersion(RegionsVersion $regionVersion)
+        {
+        }
+        /**
+         * @return RegionsVersion
+         */
+        public function getRegionVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ConvertedOtherRegionsPrice
+     * Runtime class alias of \Google\Service\AndroidPublisher\ConvertRegionPricesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConvertedOtherRegionsPrice()
-    {
-    }
-    /**
-     * Map from region code to converted region price.
-     *
-     * @param ConvertedRegionPrice[] $convertedRegionPrices
-     */
-    public function setConvertedRegionPrices($convertedRegionPrices)
-    {
-    }
-    /**
-     * @return ConvertedRegionPrice[]
-     */
-    public function getConvertedRegionPrices()
-    {
-    }
-    /**
-     * The region version at which the prices were generated.
-     *
-     * @param RegionsVersion $regionVersion
-     */
-    public function setRegionVersion(RegionsVersion $regionVersion)
-    {
-    }
-    /**
-     * @return RegionsVersion
-     */
-    public function getRegionVersion()
+    class Google_Service_AndroidPublisher_ConvertRegionPricesResponse extends \Google\Service\AndroidPublisher\ConvertRegionPricesResponse
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class ExportBackupRequest extends \Google\Model
-{
-    /**
-     * Google Cloud Storage bucket, like "my-bucket".
-     *
-     * @var string
-     */
-    public $gcsBucket;
-    /**
-     * Google Cloud Storage bucket, like "my-bucket".
-     *
-     * @param string $gcsBucket
-     */
-    public function setGcsBucket($gcsBucket)
+namespace Google\Service\CloudRedis {
+    class ExportBackupRequest extends \Google\Model
     {
+        /**
+         * Google Cloud Storage bucket, like "my-bucket".
+         *
+         * @var string
+         */
+        public $gcsBucket;
+        /**
+         * Google Cloud Storage bucket, like "my-bucket".
+         *
+         * @param string $gcsBucket
+         */
+        public function setGcsBucket($gcsBucket)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcsBucket()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRedis\ExportBackupRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcsBucket()
+    class Google_Service_CloudRedis_ExportBackupRequest extends \Google\Service\CloudRedis\ExportBackupRequest
     {
     }
 }

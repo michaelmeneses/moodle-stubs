@@ -21,79 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class Config extends \Google\Collection
-{
-    protected $collection_key = 'availableImages';
-    protected $availableImagesType = ImageRelease::class;
-    protected $availableImagesDataType = 'array';
-    protected $defaultValuesType = DefaultValues::class;
-    protected $defaultValuesDataType = '';
-    /**
-     * Output only. Flag to disable the creation of legacy Workbench notebooks
-     * (User-managed notebooks and Google-managed notebooks).
-     *
-     * @var bool
-     */
-    public $disableWorkbenchLegacyCreation;
-    protected $supportedValuesType = SupportedValues::class;
-    protected $supportedValuesDataType = '';
-    /**
-     * Output only. The list of available images to create a WbI.
-     *
-     * @param ImageRelease[] $availableImages
-     */
-    public function setAvailableImages($availableImages)
+namespace Google\Service\AIPlatformNotebooks {
+    class Config extends \Google\Collection
     {
+        protected $collection_key = 'availableImages';
+        protected $availableImagesType = ImageRelease::class;
+        protected $availableImagesDataType = 'array';
+        protected $defaultValuesType = DefaultValues::class;
+        protected $defaultValuesDataType = '';
+        /**
+         * Output only. Flag to disable the creation of legacy Workbench notebooks
+         * (User-managed notebooks and Google-managed notebooks).
+         *
+         * @var bool
+         */
+        public $disableWorkbenchLegacyCreation;
+        protected $supportedValuesType = SupportedValues::class;
+        protected $supportedValuesDataType = '';
+        /**
+         * Output only. The list of available images to create a WbI.
+         *
+         * @param ImageRelease[] $availableImages
+         */
+        public function setAvailableImages($availableImages)
+        {
+        }
+        /**
+         * @return ImageRelease[]
+         */
+        public function getAvailableImages()
+        {
+        }
+        /**
+         * Output only. The default values for configuration.
+         *
+         * @param DefaultValues $defaultValues
+         */
+        public function setDefaultValues(DefaultValues $defaultValues)
+        {
+        }
+        /**
+         * @return DefaultValues
+         */
+        public function getDefaultValues()
+        {
+        }
+        /**
+         * Output only. Flag to disable the creation of legacy Workbench notebooks
+         * (User-managed notebooks and Google-managed notebooks).
+         *
+         * @param bool $disableWorkbenchLegacyCreation
+         */
+        public function setDisableWorkbenchLegacyCreation($disableWorkbenchLegacyCreation)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisableWorkbenchLegacyCreation()
+        {
+        }
+        /**
+         * Output only. The supported values for configuration.
+         *
+         * @param SupportedValues $supportedValues
+         */
+        public function setSupportedValues(SupportedValues $supportedValues)
+        {
+        }
+        /**
+         * @return SupportedValues
+         */
+        public function getSupportedValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ImageRelease[]
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\Config registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAvailableImages()
-    {
-    }
-    /**
-     * Output only. The default values for configuration.
-     *
-     * @param DefaultValues $defaultValues
-     */
-    public function setDefaultValues(DefaultValues $defaultValues)
-    {
-    }
-    /**
-     * @return DefaultValues
-     */
-    public function getDefaultValues()
-    {
-    }
-    /**
-     * Output only. Flag to disable the creation of legacy Workbench notebooks
-     * (User-managed notebooks and Google-managed notebooks).
-     *
-     * @param bool $disableWorkbenchLegacyCreation
-     */
-    public function setDisableWorkbenchLegacyCreation($disableWorkbenchLegacyCreation)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDisableWorkbenchLegacyCreation()
-    {
-    }
-    /**
-     * Output only. The supported values for configuration.
-     *
-     * @param SupportedValues $supportedValues
-     */
-    public function setSupportedValues(SupportedValues $supportedValues)
-    {
-    }
-    /**
-     * @return SupportedValues
-     */
-    public function getSupportedValues()
+    class Google_Service_AIPlatformNotebooks_Config extends \Google\Service\AIPlatformNotebooks\Config
     {
     }
 }

@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class PolicyInfo extends \Google\Model
-{
-    /**
-     * The full resource name the policy is directly attached to.
-     *
-     * @var string
-     */
-    public $attachedResource;
-    protected $policyType = Policy::class;
-    protected $policyDataType = '';
-    /**
-     * The full resource name the policy is directly attached to.
-     *
-     * @param string $attachedResource
-     */
-    public function setAttachedResource($attachedResource)
+namespace Google\Service\CloudAsset {
+    class PolicyInfo extends \Google\Model
     {
+        /**
+         * The full resource name the policy is directly attached to.
+         *
+         * @var string
+         */
+        public $attachedResource;
+        protected $policyType = Policy::class;
+        protected $policyDataType = '';
+        /**
+         * The full resource name the policy is directly attached to.
+         *
+         * @param string $attachedResource
+         */
+        public function setAttachedResource($attachedResource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAttachedResource()
+        {
+        }
+        /**
+         * The IAM policy that's directly attached to the attached_resource.
+         *
+         * @param Policy $policy
+         */
+        public function setPolicy(Policy $policy)
+        {
+        }
+        /**
+         * @return Policy
+         */
+        public function getPolicy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAsset\PolicyInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttachedResource()
-    {
-    }
-    /**
-     * The IAM policy that's directly attached to the attached_resource.
-     *
-     * @param Policy $policy
-     */
-    public function setPolicy(Policy $policy)
-    {
-    }
-    /**
-     * @return Policy
-     */
-    public function getPolicy()
+    class Google_Service_CloudAsset_PolicyInfo extends \Google\Service\CloudAsset\PolicyInfo
     {
     }
 }

@@ -21,83 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Genomics;
-
-class Pipeline extends \Google\Collection
-{
-    protected $collection_key = 'actions';
-    protected $actionsType = Action::class;
-    protected $actionsDataType = 'array';
-    protected $encryptedEnvironmentType = Secret::class;
-    protected $encryptedEnvironmentDataType = '';
-    /**
-     * @var string[]
-     */
-    public $environment;
-    protected $resourcesType = Resources::class;
-    protected $resourcesDataType = '';
-    /**
-     * @var string
-     */
-    public $timeout;
-    /**
-     * @param Action[]
-     */
-    public function setActions($actions)
+namespace Google\Service\Genomics {
+    class Pipeline extends \Google\Collection
     {
+        protected $collection_key = 'actions';
+        protected $actionsType = Action::class;
+        protected $actionsDataType = 'array';
+        protected $encryptedEnvironmentType = Secret::class;
+        protected $encryptedEnvironmentDataType = '';
+        /**
+         * @var string[]
+         */
+        public $environment;
+        protected $resourcesType = Resources::class;
+        protected $resourcesDataType = '';
+        /**
+         * @var string
+         */
+        public $timeout;
+        /**
+         * @param Action[]
+         */
+        public function setActions($actions)
+        {
+        }
+        /**
+         * @return Action[]
+         */
+        public function getActions()
+        {
+        }
+        /**
+         * @param Secret
+         */
+        public function setEncryptedEnvironment(Secret $encryptedEnvironment)
+        {
+        }
+        /**
+         * @return Secret
+         */
+        public function getEncryptedEnvironment()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setEnvironment($environment)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEnvironment()
+        {
+        }
+        /**
+         * @param Resources
+         */
+        public function setResources(Resources $resources)
+        {
+        }
+        /**
+         * @return Resources
+         */
+        public function getResources()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTimeout($timeout)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeout()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Action[]
+     * Runtime class alias of \Google\Service\Genomics\Pipeline registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActions()
-    {
-    }
-    /**
-     * @param Secret
-     */
-    public function setEncryptedEnvironment(Secret $encryptedEnvironment)
-    {
-    }
-    /**
-     * @return Secret
-     */
-    public function getEncryptedEnvironment()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setEnvironment($environment)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getEnvironment()
-    {
-    }
-    /**
-     * @param Resources
-     */
-    public function setResources(Resources $resources)
-    {
-    }
-    /**
-     * @return Resources
-     */
-    public function getResources()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTimeout($timeout)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeout()
+    class Google_Service_Genomics_Pipeline extends \Google\Service\Genomics\Pipeline
     {
     }
 }

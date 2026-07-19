@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storagetransfer;
-
-class EventStream extends \Google\Model
-{
-    /**
-     * Specifies the data and time at which Storage Transfer Service stops
-     * listening for events from this stream. After this time, any transfers in
-     * progress will complete, but no new transfers are initiated.
-     *
-     * @var string
-     */
-    public $eventStreamExpirationTime;
-    /**
-     * Specifies the date and time that Storage Transfer Service starts listening
-     * for events from this stream. If no start time is specified or start time is
-     * in the past, Storage Transfer Service starts listening immediately.
-     *
-     * @var string
-     */
-    public $eventStreamStartTime;
-    /**
-     * Required. Specifies a unique name of the resource such as AWS SQS ARN in
-     * the form 'arn:aws:sqs:region:account_id:queue_name', or Pub/Sub
-     * subscription resource name in the form
-     * 'projects/{project}/subscriptions/{sub}'.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Specifies the data and time at which Storage Transfer Service stops
-     * listening for events from this stream. After this time, any transfers in
-     * progress will complete, but no new transfers are initiated.
-     *
-     * @param string $eventStreamExpirationTime
-     */
-    public function setEventStreamExpirationTime($eventStreamExpirationTime)
+namespace Google\Service\Storagetransfer {
+    class EventStream extends \Google\Model
     {
+        /**
+         * Specifies the data and time at which Storage Transfer Service stops
+         * listening for events from this stream. After this time, any transfers in
+         * progress will complete, but no new transfers are initiated.
+         *
+         * @var string
+         */
+        public $eventStreamExpirationTime;
+        /**
+         * Specifies the date and time that Storage Transfer Service starts listening
+         * for events from this stream. If no start time is specified or start time is
+         * in the past, Storage Transfer Service starts listening immediately.
+         *
+         * @var string
+         */
+        public $eventStreamStartTime;
+        /**
+         * Required. Specifies a unique name of the resource such as AWS SQS ARN in
+         * the form 'arn:aws:sqs:region:account_id:queue_name', or Pub/Sub
+         * subscription resource name in the form
+         * 'projects/{project}/subscriptions/{sub}'.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Specifies the data and time at which Storage Transfer Service stops
+         * listening for events from this stream. After this time, any transfers in
+         * progress will complete, but no new transfers are initiated.
+         *
+         * @param string $eventStreamExpirationTime
+         */
+        public function setEventStreamExpirationTime($eventStreamExpirationTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEventStreamExpirationTime()
+        {
+        }
+        /**
+         * Specifies the date and time that Storage Transfer Service starts listening
+         * for events from this stream. If no start time is specified or start time is
+         * in the past, Storage Transfer Service starts listening immediately.
+         *
+         * @param string $eventStreamStartTime
+         */
+        public function setEventStreamStartTime($eventStreamStartTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEventStreamStartTime()
+        {
+        }
+        /**
+         * Required. Specifies a unique name of the resource such as AWS SQS ARN in
+         * the form 'arn:aws:sqs:region:account_id:queue_name', or Pub/Sub
+         * subscription resource name in the form
+         * 'projects/{project}/subscriptions/{sub}'.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Storagetransfer\EventStream registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEventStreamExpirationTime()
-    {
-    }
-    /**
-     * Specifies the date and time that Storage Transfer Service starts listening
-     * for events from this stream. If no start time is specified or start time is
-     * in the past, Storage Transfer Service starts listening immediately.
-     *
-     * @param string $eventStreamStartTime
-     */
-    public function setEventStreamStartTime($eventStreamStartTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEventStreamStartTime()
-    {
-    }
-    /**
-     * Required. Specifies a unique name of the resource such as AWS SQS ARN in
-     * the form 'arn:aws:sqs:region:account_id:queue_name', or Pub/Sub
-     * subscription resource name in the form
-     * 'projects/{project}/subscriptions/{sub}'.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Storagetransfer_EventStream extends \Google\Service\Storagetransfer\EventStream
     {
     }
 }

@@ -21,97 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin\Resource;
-
-/**
- * The "measurementProtocolSecrets" collection of methods.
- * Typical usage is:
- *  <code>
- *   $analyticsadminService = new Google\Service\GoogleAnalyticsAdmin(...);
- *   $measurementProtocolSecrets = $analyticsadminService->measurementProtocolSecrets;
- *  </code>
- */
-class PropertiesWebDataStreamsMeasurementProtocolSecrets extends \Google\Service\Resource
-{
+namespace Google\Service\GoogleAnalyticsAdmin\Resource {
+    use Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaListMeasurementProtocolSecretsResponse;
+    use Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaMeasurementProtocolSecret;
+    use Google\Service\GoogleAnalyticsAdmin\GoogleProtobufEmpty;
     /**
-     * Creates a measurement protocol secret. (measurementProtocolSecrets.create)
-     *
-     * @param string $parent Required. The parent resource where this secret will be
-     * created. Any type of stream (WebDataStream, IosAppDataStream,
-     * AndroidAppDataStream) may be a parent. Format:
-     * properties/{property}/webDataStreams/{webDataStream}
-     * @param GoogleAnalyticsAdminV1alphaMeasurementProtocolSecret $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleAnalyticsAdminV1alphaMeasurementProtocolSecret
+     * The "measurementProtocolSecrets" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $analyticsadminService = new Google\Service\GoogleAnalyticsAdmin(...);
+     *   $measurementProtocolSecrets = $analyticsadminService->measurementProtocolSecrets;
+     *  </code>
      */
-    public function create($parent, GoogleAnalyticsAdminV1alphaMeasurementProtocolSecret $postBody, $optParams = [])
+    class PropertiesWebDataStreamsMeasurementProtocolSecrets extends \Google\Service\Resource
     {
+        /**
+         * Creates a measurement protocol secret. (measurementProtocolSecrets.create)
+         *
+         * @param string $parent Required. The parent resource where this secret will be
+         * created. Any type of stream (WebDataStream, IosAppDataStream,
+         * AndroidAppDataStream) may be a parent. Format:
+         * properties/{property}/webDataStreams/{webDataStream}
+         * @param GoogleAnalyticsAdminV1alphaMeasurementProtocolSecret $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleAnalyticsAdminV1alphaMeasurementProtocolSecret
+         */
+        public function create($parent, GoogleAnalyticsAdminV1alphaMeasurementProtocolSecret $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes target MeasurementProtocolSecret. (measurementProtocolSecrets.delete)
+         *
+         * @param string $name Required. The name of the MeasurementProtocolSecret to
+         * delete. Format: properties/{property}/webDataStreams/{webDataStream}/measurem
+         * entProtocolSecrets/{measurementProtocolSecret} Note: Any type of stream
+         * (WebDataStream, IosAppDataStream, AndroidAppDataStream) may be a parent.
+         * @param array $optParams Optional parameters.
+         * @return GoogleProtobufEmpty
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Lookup for a single "GA4" MeasurementProtocolSecret.
+         * (measurementProtocolSecrets.get)
+         *
+         * @param string $name Required. The name of the measurement protocol secret to
+         * lookup. Format: properties/{property}/webDataStreams/{webDataStream}/measurem
+         * entProtocolSecrets/{measurementProtocolSecret} Note: Any type of stream
+         * (WebDataStream, IosAppDataStream, AndroidAppDataStream) may be a parent.
+         * @param array $optParams Optional parameters.
+         * @return GoogleAnalyticsAdminV1alphaMeasurementProtocolSecret
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Returns child MeasurementProtocolSecrets under the specified parent Property.
+         * (measurementProtocolSecrets.listPropertiesWebDataStreamsMeasurementProtocolSe
+         * crets)
+         *
+         * @param string $parent Required. The resource name of the parent stream. Any
+         * type of stream (WebDataStream, IosAppDataStream, AndroidAppDataStream) may be
+         * a parent. Format: properties/{property}/webDataStreams/{webDataStream}/measur
+         * ementProtocolSecrets
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of resources to return. If
+         * unspecified, at most 10 resources will be returned. The maximum value is 10.
+         * Higher values will be coerced to the maximum.
+         * @opt_param string pageToken A page token, received from a previous
+         * `ListMeasurementProtocolSecrets` call. Provide this to retrieve the
+         * subsequent page. When paginating, all other parameters provided to
+         * `ListMeasurementProtocolSecrets` must match the call that provided the page
+         * token.
+         * @return GoogleAnalyticsAdminV1alphaListMeasurementProtocolSecretsResponse
+         */
+        public function listPropertiesWebDataStreamsMeasurementProtocolSecrets($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates a measurement protocol secret. (measurementProtocolSecrets.patch)
+         *
+         * @param string $name Output only. Resource name of this secret. This secret
+         * may be a child of any type of stream. Format: properties/{property}/webDataSt
+         * reams/{webDataStream}/measurementProtocolSecrets/{measurementProtocolSecret}
+         * @param GoogleAnalyticsAdminV1alphaMeasurementProtocolSecret $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask The list of fields to be updated. Omitted fields
+         * will not be updated.
+         * @return GoogleAnalyticsAdminV1alphaMeasurementProtocolSecret
+         */
+        public function patch($name, GoogleAnalyticsAdminV1alphaMeasurementProtocolSecret $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes target MeasurementProtocolSecret. (measurementProtocolSecrets.delete)
-     *
-     * @param string $name Required. The name of the MeasurementProtocolSecret to
-     * delete. Format: properties/{property}/webDataStreams/{webDataStream}/measurem
-     * entProtocolSecrets/{measurementProtocolSecret} Note: Any type of stream
-     * (WebDataStream, IosAppDataStream, AndroidAppDataStream) may be a parent.
-     * @param array $optParams Optional parameters.
-     * @return GoogleProtobufEmpty
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\Resource\PropertiesWebDataStreamsMeasurementProtocolSecrets registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Lookup for a single "GA4" MeasurementProtocolSecret.
-     * (measurementProtocolSecrets.get)
-     *
-     * @param string $name Required. The name of the measurement protocol secret to
-     * lookup. Format: properties/{property}/webDataStreams/{webDataStream}/measurem
-     * entProtocolSecrets/{measurementProtocolSecret} Note: Any type of stream
-     * (WebDataStream, IosAppDataStream, AndroidAppDataStream) may be a parent.
-     * @param array $optParams Optional parameters.
-     * @return GoogleAnalyticsAdminV1alphaMeasurementProtocolSecret
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Returns child MeasurementProtocolSecrets under the specified parent Property.
-     * (measurementProtocolSecrets.listPropertiesWebDataStreamsMeasurementProtocolSe
-     * crets)
-     *
-     * @param string $parent Required. The resource name of the parent stream. Any
-     * type of stream (WebDataStream, IosAppDataStream, AndroidAppDataStream) may be
-     * a parent. Format: properties/{property}/webDataStreams/{webDataStream}/measur
-     * ementProtocolSecrets
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of resources to return. If
-     * unspecified, at most 10 resources will be returned. The maximum value is 10.
-     * Higher values will be coerced to the maximum.
-     * @opt_param string pageToken A page token, received from a previous
-     * `ListMeasurementProtocolSecrets` call. Provide this to retrieve the
-     * subsequent page. When paginating, all other parameters provided to
-     * `ListMeasurementProtocolSecrets` must match the call that provided the page
-     * token.
-     * @return GoogleAnalyticsAdminV1alphaListMeasurementProtocolSecretsResponse
-     */
-    public function listPropertiesWebDataStreamsMeasurementProtocolSecrets($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates a measurement protocol secret. (measurementProtocolSecrets.patch)
-     *
-     * @param string $name Output only. Resource name of this secret. This secret
-     * may be a child of any type of stream. Format: properties/{property}/webDataSt
-     * reams/{webDataStream}/measurementProtocolSecrets/{measurementProtocolSecret}
-     * @param GoogleAnalyticsAdminV1alphaMeasurementProtocolSecret $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask The list of fields to be updated. Omitted fields
-     * will not be updated.
-     * @return GoogleAnalyticsAdminV1alphaMeasurementProtocolSecret
-     */
-    public function patch($name, GoogleAnalyticsAdminV1alphaMeasurementProtocolSecret $postBody, $optParams = [])
+    class Google_Service_GoogleAnalyticsAdmin_Resource_PropertiesWebDataStreamsMeasurementProtocolSecrets extends \Google\Service\GoogleAnalyticsAdmin\Resource\PropertiesWebDataStreamsMeasurementProtocolSecrets
     {
     }
 }

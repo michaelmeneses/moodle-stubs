@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class RestrictionConfig extends \Google\Model
-{
-    /**
-     * Should never be used.
-     */
-    public const TYPE_RESTRICTION_TYPE_UNSPECIFIED = 'RESTRICTION_TYPE_UNSPECIFIED';
-    /**
-     * Restrict data egress. See [Data
-     * egress](https://cloud.google.com/bigquery/docs/analytics-hub-
-     * introduction#data_egress) for more details.
-     */
-    public const TYPE_RESTRICTED_DATA_EGRESS = 'RESTRICTED_DATA_EGRESS';
-    /**
-     * Output only. Specifies the type of dataset/table restriction.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Output only. Specifies the type of dataset/table restriction.
-     *
-     * Accepted values: RESTRICTION_TYPE_UNSPECIFIED, RESTRICTED_DATA_EGRESS
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
+namespace Google\Service\Bigquery {
+    class RestrictionConfig extends \Google\Model
     {
+        /**
+         * Should never be used.
+         */
+        public const TYPE_RESTRICTION_TYPE_UNSPECIFIED = 'RESTRICTION_TYPE_UNSPECIFIED';
+        /**
+         * Restrict data egress. See [Data
+         * egress](https://cloud.google.com/bigquery/docs/analytics-hub-
+         * introduction#data_egress) for more details.
+         */
+        public const TYPE_RESTRICTED_DATA_EGRESS = 'RESTRICTED_DATA_EGRESS';
+        /**
+         * Output only. Specifies the type of dataset/table restriction.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Output only. Specifies the type of dataset/table restriction.
+         *
+         * Accepted values: RESTRICTION_TYPE_UNSPECIFIED, RESTRICTED_DATA_EGRESS
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::TYPE_*
+     * Runtime class alias of \Google\Service\Bigquery\RestrictionConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getType()
+    class Google_Service_Bigquery_RestrictionConfig extends \Google\Service\Bigquery\RestrictionConfig
     {
     }
 }

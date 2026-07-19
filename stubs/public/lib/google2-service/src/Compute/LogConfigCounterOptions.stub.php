@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class LogConfigCounterOptions extends \Google\Collection
-{
-    protected $collection_key = 'customFields';
-    protected $customFieldsType = LogConfigCounterOptionsCustomField::class;
-    protected $customFieldsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $field;
-    /**
-     * @var string
-     */
-    public $metric;
-    /**
-     * @param LogConfigCounterOptionsCustomField[]
-     */
-    public function setCustomFields($customFields)
+namespace Google\Service\Compute {
+    class LogConfigCounterOptions extends \Google\Collection
     {
+        protected $collection_key = 'customFields';
+        protected $customFieldsType = LogConfigCounterOptionsCustomField::class;
+        protected $customFieldsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $field;
+        /**
+         * @var string
+         */
+        public $metric;
+        /**
+         * @param LogConfigCounterOptionsCustomField[]
+         */
+        public function setCustomFields($customFields)
+        {
+        }
+        /**
+         * @return LogConfigCounterOptionsCustomField[]
+         */
+        public function getCustomFields()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setField($field)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getField()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMetric($metric)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMetric()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LogConfigCounterOptionsCustomField[]
+     * Runtime class alias of \Google\Service\Compute\LogConfigCounterOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomFields()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setField($field)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getField()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMetric($metric)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMetric()
+    class Google_Service_Compute_LogConfigCounterOptions extends \Google\Service\Compute\LogConfigCounterOptions
     {
     }
 }

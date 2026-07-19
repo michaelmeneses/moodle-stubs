@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class Size extends \Google\Model
-{
-    protected $heightType = Dimension::class;
-    protected $heightDataType = '';
-    protected $widthType = Dimension::class;
-    protected $widthDataType = '';
-    /**
-     * The height of the object.
-     *
-     * @param Dimension $height
-     */
-    public function setHeight(Dimension $height)
+namespace Google\Service\Slides {
+    class Size extends \Google\Model
     {
+        protected $heightType = Dimension::class;
+        protected $heightDataType = '';
+        protected $widthType = Dimension::class;
+        protected $widthDataType = '';
+        /**
+         * The height of the object.
+         *
+         * @param Dimension $height
+         */
+        public function setHeight(Dimension $height)
+        {
+        }
+        /**
+         * @return Dimension
+         */
+        public function getHeight()
+        {
+        }
+        /**
+         * The width of the object.
+         *
+         * @param Dimension $width
+         */
+        public function setWidth(Dimension $width)
+        {
+        }
+        /**
+         * @return Dimension
+         */
+        public function getWidth()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Dimension
+     * Runtime class alias of \Google\Service\Slides\Size registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHeight()
-    {
-    }
-    /**
-     * The width of the object.
-     *
-     * @param Dimension $width
-     */
-    public function setWidth(Dimension $width)
-    {
-    }
-    /**
-     * @return Dimension
-     */
-    public function getWidth()
+    class Google_Service_Slides_Size extends \Google\Service\Slides\Size
     {
     }
 }

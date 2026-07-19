@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1BatchMigrateResourcesRequest extends \Google\Collection
-{
-    protected $collection_key = 'migrateResourceRequests';
-    protected $migrateResourceRequestsType = GoogleCloudAiplatformV1MigrateResourceRequest::class;
-    protected $migrateResourceRequestsDataType = 'array';
-    /**
-     * Required. The request messages specifying the resources to migrate. They
-     * must be in the same location as the destination. Up to 50 resources can be
-     * migrated in one batch.
-     *
-     * @param GoogleCloudAiplatformV1MigrateResourceRequest[] $migrateResourceRequests
-     */
-    public function setMigrateResourceRequests($migrateResourceRequests)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1BatchMigrateResourcesRequest extends \Google\Collection
     {
+        protected $collection_key = 'migrateResourceRequests';
+        protected $migrateResourceRequestsType = GoogleCloudAiplatformV1MigrateResourceRequest::class;
+        protected $migrateResourceRequestsDataType = 'array';
+        /**
+         * Required. The request messages specifying the resources to migrate. They
+         * must be in the same location as the destination. Up to 50 resources can be
+         * migrated in one batch.
+         *
+         * @param GoogleCloudAiplatformV1MigrateResourceRequest[] $migrateResourceRequests
+         */
+        public function setMigrateResourceRequests($migrateResourceRequests)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1MigrateResourceRequest[]
+         */
+        public function getMigrateResourceRequests()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1MigrateResourceRequest[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchMigrateResourcesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMigrateResourceRequests()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1BatchMigrateResourcesRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1BatchMigrateResourcesRequest
     {
     }
 }

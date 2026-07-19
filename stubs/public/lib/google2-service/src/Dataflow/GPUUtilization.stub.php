@@ -21,21 +21,30 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class GPUUtilization extends \Google\Model
-{
-    /**
-     * Required. GPU utilization rate of any kernel over the last sample period in
-     * the range of [0, 1].
-     *
-     * @var 
-     */
-    public $rate;
-    public function setRate($rate)
+namespace Google\Service\Dataflow {
+    class GPUUtilization extends \Google\Model
     {
+        /**
+         * Required. GPU utilization rate of any kernel over the last sample period in
+         * the range of [0, 1].
+         *
+         * @var 
+         */
+        public $rate;
+        public function setRate($rate)
+        {
+        }
+        public function getRate()
+        {
+        }
     }
-    public function getRate()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Dataflow\GPUUtilization registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Dataflow_GPUUtilization extends \Google\Service\Dataflow\GPUUtilization
     {
     }
 }

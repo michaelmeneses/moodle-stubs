@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2SearchConnectionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'connections';
-    protected $connectionsType = GooglePrivacyDlpV2Connection::class;
-    protected $connectionsDataType = 'array';
-    /**
-     * Token to retrieve the next page of results. An empty value means there are
-     * no more results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of connections that match the search query. Note that only a subset of
-     * the fields will be populated, and only "name" is guaranteed to be set. For
-     * full details of a Connection, call GetConnection with the name.
-     *
-     * @param GooglePrivacyDlpV2Connection[] $connections
-     */
-    public function setConnections($connections)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2SearchConnectionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'connections';
+        protected $connectionsType = GooglePrivacyDlpV2Connection::class;
+        protected $connectionsDataType = 'array';
+        /**
+         * Token to retrieve the next page of results. An empty value means there are
+         * no more results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of connections that match the search query. Note that only a subset of
+         * the fields will be populated, and only "name" is guaranteed to be set. For
+         * full details of a Connection, call GetConnection with the name.
+         *
+         * @param GooglePrivacyDlpV2Connection[] $connections
+         */
+        public function setConnections($connections)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2Connection[]
+         */
+        public function getConnections()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results. An empty value means there are
+         * no more results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2Connection[]
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2SearchConnectionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConnections()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results. An empty value means there are
-     * no more results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DLP_GooglePrivacyDlpV2SearchConnectionsResponse extends \Google\Service\DLP\GooglePrivacyDlpV2SearchConnectionsResponse
     {
     }
 }

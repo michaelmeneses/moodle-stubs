@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceUsage;
-
-class Aspect extends \Google\Model
-{
-    /**
-     * The type of this aspect configuration.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Content of the configuration. The underlying schema should be defined by
-     * Aspect owners as protobuf message under `google/api/configaspects/proto`.
-     *
-     * @var array[]
-     */
-    public $spec;
-    /**
-     * The type of this aspect configuration.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\ServiceUsage {
+    class Aspect extends \Google\Model
     {
+        /**
+         * The type of this aspect configuration.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Content of the configuration. The underlying schema should be defined by
+         * Aspect owners as protobuf message under `google/api/configaspects/proto`.
+         *
+         * @var array[]
+         */
+        public $spec;
+        /**
+         * The type of this aspect configuration.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Content of the configuration. The underlying schema should be defined by
+         * Aspect owners as protobuf message under `google/api/configaspects/proto`.
+         *
+         * @param array[] $spec
+         */
+        public function setSpec($spec)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceUsage\Aspect registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * Content of the configuration. The underlying schema should be defined by
-     * Aspect owners as protobuf message under `google/api/configaspects/proto`.
-     *
-     * @param array[] $spec
-     */
-    public function setSpec($spec)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getSpec()
+    class Google_Service_ServiceUsage_Aspect extends \Google\Service\ServiceUsage\Aspect
     {
     }
 }

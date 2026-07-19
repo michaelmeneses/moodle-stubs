@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class ServiceLockInfo extends \Google\Model
-{
-    /**
-     * Output only. The name of the operation that created this lock. The lock
-     * will automatically be released when the operation completes.
-     *
-     * @var string
-     */
-    public $operation;
-    /**
-     * Output only. The name of the operation that created this lock. The lock
-     * will automatically be released when the operation completes.
-     *
-     * @param string $operation
-     */
-    public function setOperation($operation)
+namespace Google\Service\Backupdr {
+    class ServiceLockInfo extends \Google\Model
     {
+        /**
+         * Output only. The name of the operation that created this lock. The lock
+         * will automatically be released when the operation completes.
+         *
+         * @var string
+         */
+        public $operation;
+        /**
+         * Output only. The name of the operation that created this lock. The lock
+         * will automatically be released when the operation completes.
+         *
+         * @param string $operation
+         */
+        public function setOperation($operation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Backupdr\ServiceLockInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOperation()
+    class Google_Service_Backupdr_ServiceLockInfo extends \Google\Service\Backupdr\ServiceLockInfo
     {
     }
 }

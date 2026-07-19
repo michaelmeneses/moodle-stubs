@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class ReactionInfo extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $emoji;
-    /**
-     * @param string
-     */
-    public function setEmoji($emoji)
+namespace Google\Service\CloudSearch {
+    class ReactionInfo extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $emoji;
+        /**
+         * @param string
+         */
+        public function setEmoji($emoji)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmoji()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\ReactionInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmoji()
+    class Google_Service_CloudSearch_ReactionInfo extends \Google\Service\CloudSearch\ReactionInfo
     {
     }
 }

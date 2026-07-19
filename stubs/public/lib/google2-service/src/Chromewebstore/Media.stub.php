@@ -21,469 +21,478 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Chromewebstore;
-
-class Media extends \Google\Collection
-{
-    protected $collection_key = 'compositeMedia';
-    /**
-     * @var string
-     */
-    public $algorithm;
-    /**
-     * @var string
-     */
-    public $bigstoreObjectRef;
-    /**
-     * @var string
-     */
-    public $blobRef;
-    protected $blobstore2InfoType = Blobstore2Info::class;
-    protected $blobstore2InfoDataType = '';
-    protected $compositeMediaType = CompositeMedia::class;
-    protected $compositeMediaDataType = 'array';
-    /**
-     * @var string
-     */
-    public $contentType;
-    protected $contentTypeInfoType = ContentTypeInfo::class;
-    protected $contentTypeInfoDataType = '';
-    /**
-     * @var string
-     */
-    public $cosmoBinaryReference;
-    /**
-     * @var string
-     */
-    public $crc32cHash;
-    protected $diffChecksumsResponseType = DiffChecksumsResponse::class;
-    protected $diffChecksumsResponseDataType = '';
-    protected $diffDownloadResponseType = DiffDownloadResponse::class;
-    protected $diffDownloadResponseDataType = '';
-    protected $diffUploadRequestType = DiffUploadRequest::class;
-    protected $diffUploadRequestDataType = '';
-    protected $diffUploadResponseType = DiffUploadResponse::class;
-    protected $diffUploadResponseDataType = '';
-    protected $diffVersionResponseType = DiffVersionResponse::class;
-    protected $diffVersionResponseDataType = '';
-    protected $downloadParametersType = DownloadParameters::class;
-    protected $downloadParametersDataType = '';
-    /**
-     * @var string
-     */
-    public $filename;
-    /**
-     * @var string
-     */
-    public $hash;
-    /**
-     * @var bool
-     */
-    public $hashVerified;
-    /**
-     * @var string
-     */
-    public $inline;
-    /**
-     * @var bool
-     */
-    public $isPotentialRetry;
-    /**
-     * @var string
-     */
-    public $length;
-    /**
-     * @var string
-     */
-    public $md5Hash;
-    /**
-     * @var string
-     */
-    public $mediaId;
-    protected $objectIdType = ObjectId::class;
-    protected $objectIdDataType = '';
-    /**
-     * @var string
-     */
-    public $path;
-    /**
-     * @var string
-     */
-    public $referenceType;
-    /**
-     * @var string
-     */
-    public $sha1Hash;
-    /**
-     * @var string
-     */
-    public $sha256Hash;
-    /**
-     * @var string
-     */
-    public $timestamp;
-    /**
-     * @var string
-     */
-    public $token;
-    /**
-     * @param string
-     */
-    public function setAlgorithm($algorithm)
+namespace Google\Service\Chromewebstore {
+    class Media extends \Google\Collection
     {
+        protected $collection_key = 'compositeMedia';
+        /**
+         * @var string
+         */
+        public $algorithm;
+        /**
+         * @var string
+         */
+        public $bigstoreObjectRef;
+        /**
+         * @var string
+         */
+        public $blobRef;
+        protected $blobstore2InfoType = Blobstore2Info::class;
+        protected $blobstore2InfoDataType = '';
+        protected $compositeMediaType = CompositeMedia::class;
+        protected $compositeMediaDataType = 'array';
+        /**
+         * @var string
+         */
+        public $contentType;
+        protected $contentTypeInfoType = ContentTypeInfo::class;
+        protected $contentTypeInfoDataType = '';
+        /**
+         * @var string
+         */
+        public $cosmoBinaryReference;
+        /**
+         * @var string
+         */
+        public $crc32cHash;
+        protected $diffChecksumsResponseType = DiffChecksumsResponse::class;
+        protected $diffChecksumsResponseDataType = '';
+        protected $diffDownloadResponseType = DiffDownloadResponse::class;
+        protected $diffDownloadResponseDataType = '';
+        protected $diffUploadRequestType = DiffUploadRequest::class;
+        protected $diffUploadRequestDataType = '';
+        protected $diffUploadResponseType = DiffUploadResponse::class;
+        protected $diffUploadResponseDataType = '';
+        protected $diffVersionResponseType = DiffVersionResponse::class;
+        protected $diffVersionResponseDataType = '';
+        protected $downloadParametersType = DownloadParameters::class;
+        protected $downloadParametersDataType = '';
+        /**
+         * @var string
+         */
+        public $filename;
+        /**
+         * @var string
+         */
+        public $hash;
+        /**
+         * @var bool
+         */
+        public $hashVerified;
+        /**
+         * @var string
+         */
+        public $inline;
+        /**
+         * @var bool
+         */
+        public $isPotentialRetry;
+        /**
+         * @var string
+         */
+        public $length;
+        /**
+         * @var string
+         */
+        public $md5Hash;
+        /**
+         * @var string
+         */
+        public $mediaId;
+        protected $objectIdType = ObjectId::class;
+        protected $objectIdDataType = '';
+        /**
+         * @var string
+         */
+        public $path;
+        /**
+         * @var string
+         */
+        public $referenceType;
+        /**
+         * @var string
+         */
+        public $sha1Hash;
+        /**
+         * @var string
+         */
+        public $sha256Hash;
+        /**
+         * @var string
+         */
+        public $timestamp;
+        /**
+         * @var string
+         */
+        public $token;
+        /**
+         * @param string
+         */
+        public function setAlgorithm($algorithm)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAlgorithm()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setBigstoreObjectRef($bigstoreObjectRef)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBigstoreObjectRef()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setBlobRef($blobRef)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBlobRef()
+        {
+        }
+        /**
+         * @param Blobstore2Info
+         */
+        public function setBlobstore2Info(Blobstore2Info $blobstore2Info)
+        {
+        }
+        /**
+         * @return Blobstore2Info
+         */
+        public function getBlobstore2Info()
+        {
+        }
+        /**
+         * @param CompositeMedia[]
+         */
+        public function setCompositeMedia($compositeMedia)
+        {
+        }
+        /**
+         * @return CompositeMedia[]
+         */
+        public function getCompositeMedia()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setContentType($contentType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContentType()
+        {
+        }
+        /**
+         * @param ContentTypeInfo
+         */
+        public function setContentTypeInfo(ContentTypeInfo $contentTypeInfo)
+        {
+        }
+        /**
+         * @return ContentTypeInfo
+         */
+        public function getContentTypeInfo()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCosmoBinaryReference($cosmoBinaryReference)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCosmoBinaryReference()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCrc32cHash($crc32cHash)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCrc32cHash()
+        {
+        }
+        /**
+         * @param DiffChecksumsResponse
+         */
+        public function setDiffChecksumsResponse(DiffChecksumsResponse $diffChecksumsResponse)
+        {
+        }
+        /**
+         * @return DiffChecksumsResponse
+         */
+        public function getDiffChecksumsResponse()
+        {
+        }
+        /**
+         * @param DiffDownloadResponse
+         */
+        public function setDiffDownloadResponse(DiffDownloadResponse $diffDownloadResponse)
+        {
+        }
+        /**
+         * @return DiffDownloadResponse
+         */
+        public function getDiffDownloadResponse()
+        {
+        }
+        /**
+         * @param DiffUploadRequest
+         */
+        public function setDiffUploadRequest(DiffUploadRequest $diffUploadRequest)
+        {
+        }
+        /**
+         * @return DiffUploadRequest
+         */
+        public function getDiffUploadRequest()
+        {
+        }
+        /**
+         * @param DiffUploadResponse
+         */
+        public function setDiffUploadResponse(DiffUploadResponse $diffUploadResponse)
+        {
+        }
+        /**
+         * @return DiffUploadResponse
+         */
+        public function getDiffUploadResponse()
+        {
+        }
+        /**
+         * @param DiffVersionResponse
+         */
+        public function setDiffVersionResponse(DiffVersionResponse $diffVersionResponse)
+        {
+        }
+        /**
+         * @return DiffVersionResponse
+         */
+        public function getDiffVersionResponse()
+        {
+        }
+        /**
+         * @param DownloadParameters
+         */
+        public function setDownloadParameters(DownloadParameters $downloadParameters)
+        {
+        }
+        /**
+         * @return DownloadParameters
+         */
+        public function getDownloadParameters()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFilename($filename)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilename()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setHash($hash)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHash()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setHashVerified($hashVerified)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHashVerified()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setInline($inline)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInline()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setIsPotentialRetry($isPotentialRetry)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsPotentialRetry()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLength($length)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLength()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMd5Hash($md5Hash)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMd5Hash()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMediaId($mediaId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMediaId()
+        {
+        }
+        /**
+         * @param ObjectId
+         */
+        public function setObjectId(ObjectId $objectId)
+        {
+        }
+        /**
+         * @return ObjectId
+         */
+        public function getObjectId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReferenceType($referenceType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReferenceType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSha1Hash($sha1Hash)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSha1Hash()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSha256Hash($sha256Hash)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSha256Hash()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTimestamp($timestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimestamp()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setToken($token)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Chromewebstore\Media registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlgorithm()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setBigstoreObjectRef($bigstoreObjectRef)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBigstoreObjectRef()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setBlobRef($blobRef)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBlobRef()
-    {
-    }
-    /**
-     * @param Blobstore2Info
-     */
-    public function setBlobstore2Info(Blobstore2Info $blobstore2Info)
-    {
-    }
-    /**
-     * @return Blobstore2Info
-     */
-    public function getBlobstore2Info()
-    {
-    }
-    /**
-     * @param CompositeMedia[]
-     */
-    public function setCompositeMedia($compositeMedia)
-    {
-    }
-    /**
-     * @return CompositeMedia[]
-     */
-    public function getCompositeMedia()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setContentType($contentType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContentType()
-    {
-    }
-    /**
-     * @param ContentTypeInfo
-     */
-    public function setContentTypeInfo(ContentTypeInfo $contentTypeInfo)
-    {
-    }
-    /**
-     * @return ContentTypeInfo
-     */
-    public function getContentTypeInfo()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCosmoBinaryReference($cosmoBinaryReference)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCosmoBinaryReference()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCrc32cHash($crc32cHash)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCrc32cHash()
-    {
-    }
-    /**
-     * @param DiffChecksumsResponse
-     */
-    public function setDiffChecksumsResponse(DiffChecksumsResponse $diffChecksumsResponse)
-    {
-    }
-    /**
-     * @return DiffChecksumsResponse
-     */
-    public function getDiffChecksumsResponse()
-    {
-    }
-    /**
-     * @param DiffDownloadResponse
-     */
-    public function setDiffDownloadResponse(DiffDownloadResponse $diffDownloadResponse)
-    {
-    }
-    /**
-     * @return DiffDownloadResponse
-     */
-    public function getDiffDownloadResponse()
-    {
-    }
-    /**
-     * @param DiffUploadRequest
-     */
-    public function setDiffUploadRequest(DiffUploadRequest $diffUploadRequest)
-    {
-    }
-    /**
-     * @return DiffUploadRequest
-     */
-    public function getDiffUploadRequest()
-    {
-    }
-    /**
-     * @param DiffUploadResponse
-     */
-    public function setDiffUploadResponse(DiffUploadResponse $diffUploadResponse)
-    {
-    }
-    /**
-     * @return DiffUploadResponse
-     */
-    public function getDiffUploadResponse()
-    {
-    }
-    /**
-     * @param DiffVersionResponse
-     */
-    public function setDiffVersionResponse(DiffVersionResponse $diffVersionResponse)
-    {
-    }
-    /**
-     * @return DiffVersionResponse
-     */
-    public function getDiffVersionResponse()
-    {
-    }
-    /**
-     * @param DownloadParameters
-     */
-    public function setDownloadParameters(DownloadParameters $downloadParameters)
-    {
-    }
-    /**
-     * @return DownloadParameters
-     */
-    public function getDownloadParameters()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFilename($filename)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFilename()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setHash($hash)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHash()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setHashVerified($hashVerified)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getHashVerified()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setInline($inline)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInline()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setIsPotentialRetry($isPotentialRetry)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsPotentialRetry()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLength($length)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLength()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMd5Hash($md5Hash)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMd5Hash()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMediaId($mediaId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMediaId()
-    {
-    }
-    /**
-     * @param ObjectId
-     */
-    public function setObjectId(ObjectId $objectId)
-    {
-    }
-    /**
-     * @return ObjectId
-     */
-    public function getObjectId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPath($path)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPath()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReferenceType($referenceType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReferenceType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSha1Hash($sha1Hash)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSha1Hash()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSha256Hash($sha256Hash)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSha256Hash()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTimestamp($timestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimestamp()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setToken($token)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getToken()
+    class Google_Service_Chromewebstore_Media extends \Google\Service\Chromewebstore\Media
     {
     }
 }

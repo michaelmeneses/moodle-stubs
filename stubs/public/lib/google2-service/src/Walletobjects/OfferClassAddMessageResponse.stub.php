@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class OfferClassAddMessageResponse extends \Google\Model
-{
-    protected $resourceType = OfferClass::class;
-    protected $resourceDataType = '';
-    /**
-     * The updated OfferClass resource.
-     *
-     * @param OfferClass $resource
-     */
-    public function setResource(OfferClass $resource)
+namespace Google\Service\Walletobjects {
+    class OfferClassAddMessageResponse extends \Google\Model
     {
+        protected $resourceType = OfferClass::class;
+        protected $resourceDataType = '';
+        /**
+         * The updated OfferClass resource.
+         *
+         * @param OfferClass $resource
+         */
+        public function setResource(OfferClass $resource)
+        {
+        }
+        /**
+         * @return OfferClass
+         */
+        public function getResource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return OfferClass
+     * Runtime class alias of \Google\Service\Walletobjects\OfferClassAddMessageResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResource()
+    class Google_Service_Walletobjects_OfferClassAddMessageResponse extends \Google\Service\Walletobjects\OfferClassAddMessageResponse
     {
     }
 }

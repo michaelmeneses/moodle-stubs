@@ -21,50 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting\Resource;
-
-/**
- * The "campaignCreativeAssociations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dfareportingService = new Google\Service\Dfareporting(...);
- *   $campaignCreativeAssociations = $dfareportingService->campaignCreativeAssociations;
- *  </code>
- */
-class CampaignCreativeAssociations extends \Google\Service\Resource
-{
+namespace Google\Service\Dfareporting\Resource {
+    use Google\Service\Dfareporting\CampaignCreativeAssociation;
+    use Google\Service\Dfareporting\CampaignCreativeAssociationsListResponse;
     /**
-     * Associates a creative with the specified campaign. This method creates a
-     * default ad with dimensions matching the creative in the campaign if such a
-     * default ad does not exist already. (campaignCreativeAssociations.insert)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param string $campaignId Campaign ID in this association.
-     * @param CampaignCreativeAssociation $postBody
-     * @param array $optParams Optional parameters.
-     * @return CampaignCreativeAssociation
-     * @throws \Google\Service\Exception
+     * The "campaignCreativeAssociations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dfareportingService = new Google\Service\Dfareporting(...);
+     *   $campaignCreativeAssociations = $dfareportingService->campaignCreativeAssociations;
+     *  </code>
      */
-    public function insert($profileId, $campaignId, CampaignCreativeAssociation $postBody, $optParams = [])
+    class CampaignCreativeAssociations extends \Google\Service\Resource
     {
+        /**
+         * Associates a creative with the specified campaign. This method creates a
+         * default ad with dimensions matching the creative in the campaign if such a
+         * default ad does not exist already. (campaignCreativeAssociations.insert)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param string $campaignId Campaign ID in this association.
+         * @param CampaignCreativeAssociation $postBody
+         * @param array $optParams Optional parameters.
+         * @return CampaignCreativeAssociation
+         * @throws \Google\Service\Exception
+         */
+        public function insert($profileId, $campaignId, CampaignCreativeAssociation $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves the list of creative IDs associated with the specified campaign.
+         * This method supports paging.
+         * (campaignCreativeAssociations.listCampaignCreativeAssociations)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param string $campaignId Campaign ID in this association.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int maxResults Maximum number of results to return.
+         * @opt_param string pageToken Value of the nextPageToken from the previous
+         * result page.
+         * @opt_param string sortOrder Order of sorted results.
+         * @return CampaignCreativeAssociationsListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listCampaignCreativeAssociations($profileId, $campaignId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves the list of creative IDs associated with the specified campaign.
-     * This method supports paging.
-     * (campaignCreativeAssociations.listCampaignCreativeAssociations)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param string $campaignId Campaign ID in this association.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int maxResults Maximum number of results to return.
-     * @opt_param string pageToken Value of the nextPageToken from the previous
-     * result page.
-     * @opt_param string sortOrder Order of sorted results.
-     * @return CampaignCreativeAssociationsListResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dfareporting\Resource\CampaignCreativeAssociations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listCampaignCreativeAssociations($profileId, $campaignId, $optParams = [])
+    class Google_Service_Dfareporting_Resource_CampaignCreativeAssociations extends \Google\Service\Dfareporting\Resource\CampaignCreativeAssociations
     {
     }
 }

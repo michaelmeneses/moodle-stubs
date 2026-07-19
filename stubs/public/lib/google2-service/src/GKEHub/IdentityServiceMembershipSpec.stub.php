@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class IdentityServiceMembershipSpec extends \Google\Collection
-{
-    protected $collection_key = 'authMethods';
-    protected $authMethodsType = IdentityServiceAuthMethod::class;
-    protected $authMethodsDataType = 'array';
-    protected $identityServiceOptionsType = IdentityServiceIdentityServiceOptions::class;
-    protected $identityServiceOptionsDataType = '';
-    /**
-     * @param IdentityServiceAuthMethod[]
-     */
-    public function setAuthMethods($authMethods)
+namespace Google\Service\GKEHub {
+    class IdentityServiceMembershipSpec extends \Google\Collection
     {
+        protected $collection_key = 'authMethods';
+        protected $authMethodsType = IdentityServiceAuthMethod::class;
+        protected $authMethodsDataType = 'array';
+        protected $identityServiceOptionsType = IdentityServiceIdentityServiceOptions::class;
+        protected $identityServiceOptionsDataType = '';
+        /**
+         * @param IdentityServiceAuthMethod[]
+         */
+        public function setAuthMethods($authMethods)
+        {
+        }
+        /**
+         * @return IdentityServiceAuthMethod[]
+         */
+        public function getAuthMethods()
+        {
+        }
+        /**
+         * @param IdentityServiceIdentityServiceOptions
+         */
+        public function setIdentityServiceOptions(IdentityServiceIdentityServiceOptions $identityServiceOptions)
+        {
+        }
+        /**
+         * @return IdentityServiceIdentityServiceOptions
+         */
+        public function getIdentityServiceOptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return IdentityServiceAuthMethod[]
+     * Runtime class alias of \Google\Service\GKEHub\IdentityServiceMembershipSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthMethods()
-    {
-    }
-    /**
-     * @param IdentityServiceIdentityServiceOptions
-     */
-    public function setIdentityServiceOptions(IdentityServiceIdentityServiceOptions $identityServiceOptions)
-    {
-    }
-    /**
-     * @return IdentityServiceIdentityServiceOptions
-     */
-    public function getIdentityServiceOptions()
+    class Google_Service_GKEHub_IdentityServiceMembershipSpec extends \Google\Service\GKEHub\IdentityServiceMembershipSpec
     {
     }
 }

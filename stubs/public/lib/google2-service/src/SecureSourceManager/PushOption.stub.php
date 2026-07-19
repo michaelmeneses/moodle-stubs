@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecureSourceManager;
-
-class PushOption extends \Google\Model
-{
-    /**
-     * Optional. Trigger hook for matching branches only. Specified as glob
-     * pattern. If empty or *, events for all branches are reported. Examples:
-     * main, {main,release*}. See https://pkg.go.dev/github.com/gobwas/glob
-     * documentation.
-     *
-     * @var string
-     */
-    public $branchFilter;
-    /**
-     * Optional. Trigger hook for matching branches only. Specified as glob
-     * pattern. If empty or *, events for all branches are reported. Examples:
-     * main, {main,release*}. See https://pkg.go.dev/github.com/gobwas/glob
-     * documentation.
-     *
-     * @param string $branchFilter
-     */
-    public function setBranchFilter($branchFilter)
+namespace Google\Service\SecureSourceManager {
+    class PushOption extends \Google\Model
     {
+        /**
+         * Optional. Trigger hook for matching branches only. Specified as glob
+         * pattern. If empty or *, events for all branches are reported. Examples:
+         * main, {main,release*}. See https://pkg.go.dev/github.com/gobwas/glob
+         * documentation.
+         *
+         * @var string
+         */
+        public $branchFilter;
+        /**
+         * Optional. Trigger hook for matching branches only. Specified as glob
+         * pattern. If empty or *, events for all branches are reported. Examples:
+         * main, {main,release*}. See https://pkg.go.dev/github.com/gobwas/glob
+         * documentation.
+         *
+         * @param string $branchFilter
+         */
+        public function setBranchFilter($branchFilter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBranchFilter()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecureSourceManager\PushOption registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBranchFilter()
+    class Google_Service_SecureSourceManager_PushOption extends \Google\Service\SecureSourceManager\PushOption
     {
     }
 }

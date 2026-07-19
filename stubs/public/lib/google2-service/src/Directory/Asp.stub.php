@@ -21,154 +21,163 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class Asp extends \Google\Model
-{
-    /**
-     * The unique ID of the ASP.
-     *
-     * @var int
-     */
-    public $codeId;
-    /**
-     * The time when the ASP was created. Expressed in [Unix
-     * time](https://en.wikipedia.org/wiki/Epoch_time) format.
-     *
-     * @var string
-     */
-    public $creationTime;
-    /**
-     * ETag of the ASP.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * The type of the API resource. This is always `admin#directory#asp`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The time when the ASP was last used. Expressed in [Unix
-     * time](https://en.wikipedia.org/wiki/Epoch_time) format.
-     *
-     * @var string
-     */
-    public $lastTimeUsed;
-    /**
-     * The name of the application that the user, represented by their `userId`,
-     * entered when the ASP was created.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The unique ID of the user who issued the ASP.
-     *
-     * @var string
-     */
-    public $userKey;
-    /**
-     * The unique ID of the ASP.
-     *
-     * @param int $codeId
-     */
-    public function setCodeId($codeId)
+namespace Google\Service\Directory {
+    class Asp extends \Google\Model
     {
+        /**
+         * The unique ID of the ASP.
+         *
+         * @var int
+         */
+        public $codeId;
+        /**
+         * The time when the ASP was created. Expressed in [Unix
+         * time](https://en.wikipedia.org/wiki/Epoch_time) format.
+         *
+         * @var string
+         */
+        public $creationTime;
+        /**
+         * ETag of the ASP.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * The type of the API resource. This is always `admin#directory#asp`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The time when the ASP was last used. Expressed in [Unix
+         * time](https://en.wikipedia.org/wiki/Epoch_time) format.
+         *
+         * @var string
+         */
+        public $lastTimeUsed;
+        /**
+         * The name of the application that the user, represented by their `userId`,
+         * entered when the ASP was created.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The unique ID of the user who issued the ASP.
+         *
+         * @var string
+         */
+        public $userKey;
+        /**
+         * The unique ID of the ASP.
+         *
+         * @param int $codeId
+         */
+        public function setCodeId($codeId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCodeId()
+        {
+        }
+        /**
+         * The time when the ASP was created. Expressed in [Unix
+         * time](https://en.wikipedia.org/wiki/Epoch_time) format.
+         *
+         * @param string $creationTime
+         */
+        public function setCreationTime($creationTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreationTime()
+        {
+        }
+        /**
+         * ETag of the ASP.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * The type of the API resource. This is always `admin#directory#asp`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The time when the ASP was last used. Expressed in [Unix
+         * time](https://en.wikipedia.org/wiki/Epoch_time) format.
+         *
+         * @param string $lastTimeUsed
+         */
+        public function setLastTimeUsed($lastTimeUsed)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastTimeUsed()
+        {
+        }
+        /**
+         * The name of the application that the user, represented by their `userId`,
+         * entered when the ASP was created.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The unique ID of the user who issued the ASP.
+         *
+         * @param string $userKey
+         */
+        public function setUserKey($userKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Directory\Asp registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCodeId()
-    {
-    }
-    /**
-     * The time when the ASP was created. Expressed in [Unix
-     * time](https://en.wikipedia.org/wiki/Epoch_time) format.
-     *
-     * @param string $creationTime
-     */
-    public function setCreationTime($creationTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreationTime()
-    {
-    }
-    /**
-     * ETag of the ASP.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * The type of the API resource. This is always `admin#directory#asp`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The time when the ASP was last used. Expressed in [Unix
-     * time](https://en.wikipedia.org/wiki/Epoch_time) format.
-     *
-     * @param string $lastTimeUsed
-     */
-    public function setLastTimeUsed($lastTimeUsed)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastTimeUsed()
-    {
-    }
-    /**
-     * The name of the application that the user, represented by their `userId`,
-     * entered when the ASP was created.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The unique ID of the user who issued the ASP.
-     *
-     * @param string $userKey
-     */
-    public function setUserKey($userKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserKey()
+    class Google_Service_Directory_Asp extends \Google\Service\Directory\Asp
     {
     }
 }

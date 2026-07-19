@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleDevtoolsCloudbuildV1UploadedNpmPackage extends \Google\Model
-{
-    /**
-     * Output only. Path to the artifact in Artifact Registry.
-     *
-     * @var string
-     */
-    public $artifactRegistryPackage;
-    protected $fileHashesType = GoogleDevtoolsCloudbuildV1FileHashes::class;
-    protected $fileHashesDataType = '';
-    protected $pushTimingType = GoogleDevtoolsCloudbuildV1TimeSpan::class;
-    protected $pushTimingDataType = '';
-    /**
-     * URI of the uploaded npm package.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Output only. Path to the artifact in Artifact Registry.
-     *
-     * @param string $artifactRegistryPackage
-     */
-    public function setArtifactRegistryPackage($artifactRegistryPackage)
+namespace Google\Service\CloudRun {
+    class GoogleDevtoolsCloudbuildV1UploadedNpmPackage extends \Google\Model
     {
+        /**
+         * Output only. Path to the artifact in Artifact Registry.
+         *
+         * @var string
+         */
+        public $artifactRegistryPackage;
+        protected $fileHashesType = GoogleDevtoolsCloudbuildV1FileHashes::class;
+        protected $fileHashesDataType = '';
+        protected $pushTimingType = GoogleDevtoolsCloudbuildV1TimeSpan::class;
+        protected $pushTimingDataType = '';
+        /**
+         * URI of the uploaded npm package.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Output only. Path to the artifact in Artifact Registry.
+         *
+         * @param string $artifactRegistryPackage
+         */
+        public function setArtifactRegistryPackage($artifactRegistryPackage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getArtifactRegistryPackage()
+        {
+        }
+        /**
+         * Hash types and values of the npm package.
+         *
+         * @param GoogleDevtoolsCloudbuildV1FileHashes $fileHashes
+         */
+        public function setFileHashes(GoogleDevtoolsCloudbuildV1FileHashes $fileHashes)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsCloudbuildV1FileHashes
+         */
+        public function getFileHashes()
+        {
+        }
+        /**
+         * Output only. Stores timing information for pushing the specified artifact.
+         *
+         * @param GoogleDevtoolsCloudbuildV1TimeSpan $pushTiming
+         */
+        public function setPushTiming(GoogleDevtoolsCloudbuildV1TimeSpan $pushTiming)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsCloudbuildV1TimeSpan
+         */
+        public function getPushTiming()
+        {
+        }
+        /**
+         * URI of the uploaded npm package.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRun\GoogleDevtoolsCloudbuildV1UploadedNpmPackage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArtifactRegistryPackage()
-    {
-    }
-    /**
-     * Hash types and values of the npm package.
-     *
-     * @param GoogleDevtoolsCloudbuildV1FileHashes $fileHashes
-     */
-    public function setFileHashes(GoogleDevtoolsCloudbuildV1FileHashes $fileHashes)
-    {
-    }
-    /**
-     * @return GoogleDevtoolsCloudbuildV1FileHashes
-     */
-    public function getFileHashes()
-    {
-    }
-    /**
-     * Output only. Stores timing information for pushing the specified artifact.
-     *
-     * @param GoogleDevtoolsCloudbuildV1TimeSpan $pushTiming
-     */
-    public function setPushTiming(GoogleDevtoolsCloudbuildV1TimeSpan $pushTiming)
-    {
-    }
-    /**
-     * @return GoogleDevtoolsCloudbuildV1TimeSpan
-     */
-    public function getPushTiming()
-    {
-    }
-    /**
-     * URI of the uploaded npm package.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_CloudRun_GoogleDevtoolsCloudbuildV1UploadedNpmPackage extends \Google\Service\CloudRun\GoogleDevtoolsCloudbuildV1UploadedNpmPackage
     {
     }
 }

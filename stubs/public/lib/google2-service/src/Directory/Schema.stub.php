@@ -21,127 +21,136 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class Schema extends \Google\Collection
-{
-    protected $collection_key = 'fields';
-    /**
-     * Display name for the schema.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The ETag of the resource.
-     *
-     * @var string
-     */
-    public $etag;
-    protected $fieldsType = SchemaFieldSpec::class;
-    protected $fieldsDataType = 'array';
-    /**
-     * Kind of resource this is.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The unique identifier of the schema (Read-only)
-     *
-     * @var string
-     */
-    public $schemaId;
-    /**
-     * The schema's name. Each `schema_name` must be unique within a customer.
-     * Reusing a name results in a `409: Entity already exists` error.
-     *
-     * @var string
-     */
-    public $schemaName;
-    /**
-     * Display name for the schema.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\Directory {
+    class Schema extends \Google\Collection
     {
+        protected $collection_key = 'fields';
+        /**
+         * Display name for the schema.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The ETag of the resource.
+         *
+         * @var string
+         */
+        public $etag;
+        protected $fieldsType = SchemaFieldSpec::class;
+        protected $fieldsDataType = 'array';
+        /**
+         * Kind of resource this is.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The unique identifier of the schema (Read-only)
+         *
+         * @var string
+         */
+        public $schemaId;
+        /**
+         * The schema's name. Each `schema_name` must be unique within a customer.
+         * Reusing a name results in a `409: Entity already exists` error.
+         *
+         * @var string
+         */
+        public $schemaName;
+        /**
+         * Display name for the schema.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The ETag of the resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * A list of fields in the schema.
+         *
+         * @param SchemaFieldSpec[] $fields
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return SchemaFieldSpec[]
+         */
+        public function getFields()
+        {
+        }
+        /**
+         * Kind of resource this is.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The unique identifier of the schema (Read-only)
+         *
+         * @param string $schemaId
+         */
+        public function setSchemaId($schemaId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSchemaId()
+        {
+        }
+        /**
+         * The schema's name. Each `schema_name` must be unique within a customer.
+         * Reusing a name results in a `409: Entity already exists` error.
+         *
+         * @param string $schemaName
+         */
+        public function setSchemaName($schemaName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSchemaName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\Schema registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The ETag of the resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * A list of fields in the schema.
-     *
-     * @param SchemaFieldSpec[] $fields
-     */
-    public function setFields($fields)
-    {
-    }
-    /**
-     * @return SchemaFieldSpec[]
-     */
-    public function getFields()
-    {
-    }
-    /**
-     * Kind of resource this is.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The unique identifier of the schema (Read-only)
-     *
-     * @param string $schemaId
-     */
-    public function setSchemaId($schemaId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSchemaId()
-    {
-    }
-    /**
-     * The schema's name. Each `schema_name` must be unique within a customer.
-     * Reusing a name results in a `409: Entity already exists` error.
-     *
-     * @param string $schemaName
-     */
-    public function setSchemaName($schemaName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSchemaName()
+    class Google_Service_Directory_Schema extends \Google\Service\Directory\Schema
     {
     }
 }

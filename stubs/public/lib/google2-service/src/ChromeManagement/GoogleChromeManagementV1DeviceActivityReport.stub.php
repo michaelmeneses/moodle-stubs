@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1DeviceActivityReport extends \Google\Model
-{
-    /**
-     * Device activity state is unspecified.
-     */
-    public const DEVICE_ACTIVITY_STATE_DEVICE_ACTIVITY_STATE_UNSPECIFIED = 'DEVICE_ACTIVITY_STATE_UNSPECIFIED';
-    /**
-     * Device is currently being used.
-     */
-    public const DEVICE_ACTIVITY_STATE_ACTIVE = 'ACTIVE';
-    /**
-     * Device is currently idle.
-     */
-    public const DEVICE_ACTIVITY_STATE_IDLE = 'IDLE';
-    /**
-     * Device is currently locked.
-     */
-    public const DEVICE_ACTIVITY_STATE_LOCKED = 'LOCKED';
-    /**
-     * Output only. Device activity state.
-     *
-     * @var string
-     */
-    public $deviceActivityState;
-    /**
-     * Output only. Timestamp of when the report was collected.
-     *
-     * @var string
-     */
-    public $reportTime;
-    /**
-     * Output only. Device activity state.
-     *
-     * Accepted values: DEVICE_ACTIVITY_STATE_UNSPECIFIED, ACTIVE, IDLE, LOCKED
-     *
-     * @param self::DEVICE_ACTIVITY_STATE_* $deviceActivityState
-     */
-    public function setDeviceActivityState($deviceActivityState)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1DeviceActivityReport extends \Google\Model
     {
+        /**
+         * Device activity state is unspecified.
+         */
+        public const DEVICE_ACTIVITY_STATE_DEVICE_ACTIVITY_STATE_UNSPECIFIED = 'DEVICE_ACTIVITY_STATE_UNSPECIFIED';
+        /**
+         * Device is currently being used.
+         */
+        public const DEVICE_ACTIVITY_STATE_ACTIVE = 'ACTIVE';
+        /**
+         * Device is currently idle.
+         */
+        public const DEVICE_ACTIVITY_STATE_IDLE = 'IDLE';
+        /**
+         * Device is currently locked.
+         */
+        public const DEVICE_ACTIVITY_STATE_LOCKED = 'LOCKED';
+        /**
+         * Output only. Device activity state.
+         *
+         * @var string
+         */
+        public $deviceActivityState;
+        /**
+         * Output only. Timestamp of when the report was collected.
+         *
+         * @var string
+         */
+        public $reportTime;
+        /**
+         * Output only. Device activity state.
+         *
+         * Accepted values: DEVICE_ACTIVITY_STATE_UNSPECIFIED, ACTIVE, IDLE, LOCKED
+         *
+         * @param self::DEVICE_ACTIVITY_STATE_* $deviceActivityState
+         */
+        public function setDeviceActivityState($deviceActivityState)
+        {
+        }
+        /**
+         * @return self::DEVICE_ACTIVITY_STATE_*
+         */
+        public function getDeviceActivityState()
+        {
+        }
+        /**
+         * Output only. Timestamp of when the report was collected.
+         *
+         * @param string $reportTime
+         */
+        public function setReportTime($reportTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReportTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::DEVICE_ACTIVITY_STATE_*
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1DeviceActivityReport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceActivityState()
-    {
-    }
-    /**
-     * Output only. Timestamp of when the report was collected.
-     *
-     * @param string $reportTime
-     */
-    public function setReportTime($reportTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReportTime()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1DeviceActivityReport extends \Google\Service\ChromeManagement\GoogleChromeManagementV1DeviceActivityReport
     {
     }
 }

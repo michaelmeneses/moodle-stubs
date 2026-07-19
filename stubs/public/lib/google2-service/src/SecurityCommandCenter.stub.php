@@ -21,89 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for SecurityCommandCenter (v1).
- *
- * <p>
- * Security Command Center API provides access to temporal views of assets and
- * findings within an organization.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://cloud.google.com/security-command-center" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class SecurityCommandCenter extends \Google\Service
-{
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    public $folders_assets;
-    public $folders_bigQueryExports;
-    public $folders_eventThreatDetectionSettings;
-    public $folders_eventThreatDetectionSettings_customModules;
-    public $folders_eventThreatDetectionSettings_effectiveCustomModules;
-    public $folders_findings;
-    public $folders_locations_muteConfigs;
-    public $folders_muteConfigs;
-    public $folders_notificationConfigs;
-    public $folders_securityHealthAnalyticsSettings_customModules;
-    public $folders_securityHealthAnalyticsSettings_effectiveCustomModules;
-    public $folders_sources;
-    public $folders_sources_findings;
-    public $folders_sources_findings_externalSystems;
-    public $organizations;
-    public $organizations_assets;
-    public $organizations_attackPaths;
-    public $organizations_bigQueryExports;
-    public $organizations_eventThreatDetectionSettings;
-    public $organizations_eventThreatDetectionSettings_customModules;
-    public $organizations_eventThreatDetectionSettings_effectiveCustomModules;
-    public $organizations_findings;
-    public $organizations_locations_muteConfigs;
-    public $organizations_muteConfigs;
-    public $organizations_notificationConfigs;
-    public $organizations_operations;
-    public $organizations_resourceValueConfigs;
-    public $organizations_securityHealthAnalyticsSettings_customModules;
-    public $organizations_securityHealthAnalyticsSettings_effectiveCustomModules;
-    public $organizations_simulations;
-    public $organizations_simulations_attackExposureResults_attackPaths;
-    public $organizations_simulations_attackExposureResults_valuedResources;
-    public $organizations_simulations_attackPaths;
-    public $organizations_simulations_valuedResources;
-    public $organizations_simulations_valuedResources_attackPaths;
-    public $organizations_sources;
-    public $organizations_sources_findings;
-    public $organizations_sources_findings_externalSystems;
-    public $organizations_valuedResources;
-    public $projects_assets;
-    public $projects_bigQueryExports;
-    public $projects_eventThreatDetectionSettings;
-    public $projects_eventThreatDetectionSettings_customModules;
-    public $projects_eventThreatDetectionSettings_effectiveCustomModules;
-    public $projects_findings;
-    public $projects_locations_muteConfigs;
-    public $projects_muteConfigs;
-    public $projects_notificationConfigs;
-    public $projects_securityHealthAnalyticsSettings_customModules;
-    public $projects_securityHealthAnalyticsSettings_effectiveCustomModules;
-    public $projects_sources;
-    public $projects_sources_findings;
-    public $projects_sources_findings_externalSystems;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the SecurityCommandCenter
-     * service.
+     * Service definition for SecurityCommandCenter (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Security Command Center API provides access to temporal views of assets and
+     * findings within an organization.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://cloud.google.com/security-command-center" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class SecurityCommandCenter extends \Google\Service
+    {
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        public $folders_assets;
+        public $folders_bigQueryExports;
+        public $folders_eventThreatDetectionSettings;
+        public $folders_eventThreatDetectionSettings_customModules;
+        public $folders_eventThreatDetectionSettings_effectiveCustomModules;
+        public $folders_findings;
+        public $folders_locations_muteConfigs;
+        public $folders_muteConfigs;
+        public $folders_notificationConfigs;
+        public $folders_securityHealthAnalyticsSettings_customModules;
+        public $folders_securityHealthAnalyticsSettings_effectiveCustomModules;
+        public $folders_sources;
+        public $folders_sources_findings;
+        public $folders_sources_findings_externalSystems;
+        public $organizations;
+        public $organizations_assets;
+        public $organizations_attackPaths;
+        public $organizations_bigQueryExports;
+        public $organizations_eventThreatDetectionSettings;
+        public $organizations_eventThreatDetectionSettings_customModules;
+        public $organizations_eventThreatDetectionSettings_effectiveCustomModules;
+        public $organizations_findings;
+        public $organizations_locations_muteConfigs;
+        public $organizations_muteConfigs;
+        public $organizations_notificationConfigs;
+        public $organizations_operations;
+        public $organizations_resourceValueConfigs;
+        public $organizations_securityHealthAnalyticsSettings_customModules;
+        public $organizations_securityHealthAnalyticsSettings_effectiveCustomModules;
+        public $organizations_simulations;
+        public $organizations_simulations_attackExposureResults_attackPaths;
+        public $organizations_simulations_attackExposureResults_valuedResources;
+        public $organizations_simulations_attackPaths;
+        public $organizations_simulations_valuedResources;
+        public $organizations_simulations_valuedResources_attackPaths;
+        public $organizations_sources;
+        public $organizations_sources_findings;
+        public $organizations_sources_findings_externalSystems;
+        public $organizations_valuedResources;
+        public $projects_assets;
+        public $projects_bigQueryExports;
+        public $projects_eventThreatDetectionSettings;
+        public $projects_eventThreatDetectionSettings_customModules;
+        public $projects_eventThreatDetectionSettings_effectiveCustomModules;
+        public $projects_findings;
+        public $projects_locations_muteConfigs;
+        public $projects_muteConfigs;
+        public $projects_notificationConfigs;
+        public $projects_securityHealthAnalyticsSettings_customModules;
+        public $projects_securityHealthAnalyticsSettings_effectiveCustomModules;
+        public $projects_sources;
+        public $projects_sources_findings;
+        public $projects_sources_findings_externalSystems;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the SecurityCommandCenter
+         * service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\SecurityCommandCenter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_SecurityCommandCenter extends \Google\Service\SecurityCommandCenter
     {
     }
 }

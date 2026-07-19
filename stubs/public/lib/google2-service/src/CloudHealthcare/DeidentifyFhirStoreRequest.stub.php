@@ -21,128 +21,137 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class DeidentifyFhirStoreRequest extends \Google\Model
-{
-    protected $configType = DeidentifyConfig::class;
-    protected $configDataType = '';
-    /**
-     * Required. The name of the FHIR store to create and write the redacted data
-     * to. For example, `projects/{project_id}/locations/{location_id}/datasets/{d
-     * ataset_id}/fhirStores/{fhir_store_id}`. * The destination dataset must
-     * exist. * The source dataset and destination dataset must both reside in the
-     * same location. De-identifying data across multiple locations is not
-     * supported. * The destination FHIR store must exist. * The caller must have
-     * the healthcare.fhirResources.update permission to write to the destination
-     * FHIR store.
-     *
-     * @var string
-     */
-    public $destinationStore;
-    /**
-     * Cloud Storage location to read the JSON
-     * cloud.healthcare.deidentify.DeidentifyConfig from, overriding the default
-     * config. Must be of the form `gs://{bucket_id}/path/to/object`. The Cloud
-     * Storage location must grant the Cloud IAM role `roles/storage.objectViewer`
-     * to the project's Cloud Healthcare Service Agent service account. Only one
-     * of `config` and `gcs_config_uri` can be specified.
-     *
-     * @var string
-     */
-    public $gcsConfigUri;
-    protected $resourceFilterType = FhirFilter::class;
-    protected $resourceFilterDataType = '';
-    /**
-     * If true, skips resources that are created or modified after the de-identify
-     * operation is created.
-     *
-     * @var bool
-     */
-    public $skipModifiedResources;
-    /**
-     * Deidentify configuration. Only one of `config` and `gcs_config_uri` can be
-     * specified.
-     *
-     * @param DeidentifyConfig $config
-     */
-    public function setConfig(DeidentifyConfig $config)
+namespace Google\Service\CloudHealthcare {
+    class DeidentifyFhirStoreRequest extends \Google\Model
     {
+        protected $configType = DeidentifyConfig::class;
+        protected $configDataType = '';
+        /**
+         * Required. The name of the FHIR store to create and write the redacted data
+         * to. For example, `projects/{project_id}/locations/{location_id}/datasets/{d
+         * ataset_id}/fhirStores/{fhir_store_id}`. * The destination dataset must
+         * exist. * The source dataset and destination dataset must both reside in the
+         * same location. De-identifying data across multiple locations is not
+         * supported. * The destination FHIR store must exist. * The caller must have
+         * the healthcare.fhirResources.update permission to write to the destination
+         * FHIR store.
+         *
+         * @var string
+         */
+        public $destinationStore;
+        /**
+         * Cloud Storage location to read the JSON
+         * cloud.healthcare.deidentify.DeidentifyConfig from, overriding the default
+         * config. Must be of the form `gs://{bucket_id}/path/to/object`. The Cloud
+         * Storage location must grant the Cloud IAM role `roles/storage.objectViewer`
+         * to the project's Cloud Healthcare Service Agent service account. Only one
+         * of `config` and `gcs_config_uri` can be specified.
+         *
+         * @var string
+         */
+        public $gcsConfigUri;
+        protected $resourceFilterType = FhirFilter::class;
+        protected $resourceFilterDataType = '';
+        /**
+         * If true, skips resources that are created or modified after the de-identify
+         * operation is created.
+         *
+         * @var bool
+         */
+        public $skipModifiedResources;
+        /**
+         * Deidentify configuration. Only one of `config` and `gcs_config_uri` can be
+         * specified.
+         *
+         * @param DeidentifyConfig $config
+         */
+        public function setConfig(DeidentifyConfig $config)
+        {
+        }
+        /**
+         * @return DeidentifyConfig
+         */
+        public function getConfig()
+        {
+        }
+        /**
+         * Required. The name of the FHIR store to create and write the redacted data
+         * to. For example, `projects/{project_id}/locations/{location_id}/datasets/{d
+         * ataset_id}/fhirStores/{fhir_store_id}`. * The destination dataset must
+         * exist. * The source dataset and destination dataset must both reside in the
+         * same location. De-identifying data across multiple locations is not
+         * supported. * The destination FHIR store must exist. * The caller must have
+         * the healthcare.fhirResources.update permission to write to the destination
+         * FHIR store.
+         *
+         * @param string $destinationStore
+         */
+        public function setDestinationStore($destinationStore)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestinationStore()
+        {
+        }
+        /**
+         * Cloud Storage location to read the JSON
+         * cloud.healthcare.deidentify.DeidentifyConfig from, overriding the default
+         * config. Must be of the form `gs://{bucket_id}/path/to/object`. The Cloud
+         * Storage location must grant the Cloud IAM role `roles/storage.objectViewer`
+         * to the project's Cloud Healthcare Service Agent service account. Only one
+         * of `config` and `gcs_config_uri` can be specified.
+         *
+         * @param string $gcsConfigUri
+         */
+        public function setGcsConfigUri($gcsConfigUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcsConfigUri()
+        {
+        }
+        /**
+         * A filter specifying the resources to include in the output. If not
+         * specified, all resources are included in the output.
+         *
+         * @param FhirFilter $resourceFilter
+         */
+        public function setResourceFilter(FhirFilter $resourceFilter)
+        {
+        }
+        /**
+         * @return FhirFilter
+         */
+        public function getResourceFilter()
+        {
+        }
+        /**
+         * If true, skips resources that are created or modified after the de-identify
+         * operation is created.
+         *
+         * @param bool $skipModifiedResources
+         */
+        public function setSkipModifiedResources($skipModifiedResources)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSkipModifiedResources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DeidentifyConfig
+     * Runtime class alias of \Google\Service\CloudHealthcare\DeidentifyFhirStoreRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfig()
-    {
-    }
-    /**
-     * Required. The name of the FHIR store to create and write the redacted data
-     * to. For example, `projects/{project_id}/locations/{location_id}/datasets/{d
-     * ataset_id}/fhirStores/{fhir_store_id}`. * The destination dataset must
-     * exist. * The source dataset and destination dataset must both reside in the
-     * same location. De-identifying data across multiple locations is not
-     * supported. * The destination FHIR store must exist. * The caller must have
-     * the healthcare.fhirResources.update permission to write to the destination
-     * FHIR store.
-     *
-     * @param string $destinationStore
-     */
-    public function setDestinationStore($destinationStore)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDestinationStore()
-    {
-    }
-    /**
-     * Cloud Storage location to read the JSON
-     * cloud.healthcare.deidentify.DeidentifyConfig from, overriding the default
-     * config. Must be of the form `gs://{bucket_id}/path/to/object`. The Cloud
-     * Storage location must grant the Cloud IAM role `roles/storage.objectViewer`
-     * to the project's Cloud Healthcare Service Agent service account. Only one
-     * of `config` and `gcs_config_uri` can be specified.
-     *
-     * @param string $gcsConfigUri
-     */
-    public function setGcsConfigUri($gcsConfigUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGcsConfigUri()
-    {
-    }
-    /**
-     * A filter specifying the resources to include in the output. If not
-     * specified, all resources are included in the output.
-     *
-     * @param FhirFilter $resourceFilter
-     */
-    public function setResourceFilter(FhirFilter $resourceFilter)
-    {
-    }
-    /**
-     * @return FhirFilter
-     */
-    public function getResourceFilter()
-    {
-    }
-    /**
-     * If true, skips resources that are created or modified after the de-identify
-     * operation is created.
-     *
-     * @param bool $skipModifiedResources
-     */
-    public function setSkipModifiedResources($skipModifiedResources)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSkipModifiedResources()
+    class Google_Service_CloudHealthcare_DeidentifyFhirStoreRequest extends \Google\Service\CloudHealthcare\DeidentifyFhirStoreRequest
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class IntegerMean extends \Google\Model
-{
-    protected $countType = SplitInt64::class;
-    protected $countDataType = '';
-    protected $sumType = SplitInt64::class;
-    protected $sumDataType = '';
-    /**
-     * The number of values being aggregated.
-     *
-     * @param SplitInt64 $count
-     */
-    public function setCount(SplitInt64 $count)
+namespace Google\Service\Dataflow {
+    class IntegerMean extends \Google\Model
     {
+        protected $countType = SplitInt64::class;
+        protected $countDataType = '';
+        protected $sumType = SplitInt64::class;
+        protected $sumDataType = '';
+        /**
+         * The number of values being aggregated.
+         *
+         * @param SplitInt64 $count
+         */
+        public function setCount(SplitInt64 $count)
+        {
+        }
+        /**
+         * @return SplitInt64
+         */
+        public function getCount()
+        {
+        }
+        /**
+         * The sum of all values being aggregated.
+         *
+         * @param SplitInt64 $sum
+         */
+        public function setSum(SplitInt64 $sum)
+        {
+        }
+        /**
+         * @return SplitInt64
+         */
+        public function getSum()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SplitInt64
+     * Runtime class alias of \Google\Service\Dataflow\IntegerMean registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCount()
-    {
-    }
-    /**
-     * The sum of all values being aggregated.
-     *
-     * @param SplitInt64 $sum
-     */
-    public function setSum(SplitInt64 $sum)
-    {
-    }
-    /**
-     * @return SplitInt64
-     */
-    public function getSum()
+    class Google_Service_Dataflow_IntegerMean extends \Google\Service\Dataflow\IntegerMean
     {
     }
 }

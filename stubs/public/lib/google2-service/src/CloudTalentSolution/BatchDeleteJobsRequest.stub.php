@@ -21,35 +21,44 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudTalentSolution;
-
-class BatchDeleteJobsRequest extends \Google\Collection
-{
-    protected $collection_key = 'names';
-    /**
-     * The names of the jobs to delete. The format is
-     * "projects/{project_id}/tenants/{tenant_id}/jobs/{job_id}". For example,
-     * "projects/foo/tenants/bar/jobs/baz". A maximum of 200 jobs can be deleted
-     * in a batch.
-     *
-     * @var string[]
-     */
-    public $names;
-    /**
-     * The names of the jobs to delete. The format is
-     * "projects/{project_id}/tenants/{tenant_id}/jobs/{job_id}". For example,
-     * "projects/foo/tenants/bar/jobs/baz". A maximum of 200 jobs can be deleted
-     * in a batch.
-     *
-     * @param string[] $names
-     */
-    public function setNames($names)
+namespace Google\Service\CloudTalentSolution {
+    class BatchDeleteJobsRequest extends \Google\Collection
     {
+        protected $collection_key = 'names';
+        /**
+         * The names of the jobs to delete. The format is
+         * "projects/{project_id}/tenants/{tenant_id}/jobs/{job_id}". For example,
+         * "projects/foo/tenants/bar/jobs/baz". A maximum of 200 jobs can be deleted
+         * in a batch.
+         *
+         * @var string[]
+         */
+        public $names;
+        /**
+         * The names of the jobs to delete. The format is
+         * "projects/{project_id}/tenants/{tenant_id}/jobs/{job_id}". For example,
+         * "projects/foo/tenants/bar/jobs/baz". A maximum of 200 jobs can be deleted
+         * in a batch.
+         *
+         * @param string[] $names
+         */
+        public function setNames($names)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getNames()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudTalentSolution\BatchDeleteJobsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNames()
+    class Google_Service_CloudTalentSolution_BatchDeleteJobsRequest extends \Google\Service\CloudTalentSolution\BatchDeleteJobsRequest
     {
     }
 }

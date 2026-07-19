@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecaptchaEnterprise;
-
-class GoogleCloudRecaptchaenterpriseV1RemoveIpOverrideRequest extends \Google\Model
-{
-    protected $ipOverrideDataType = GoogleCloudRecaptchaenterpriseV1IpOverrideData::class;
-    protected $ipOverrideDataDataType = '';
-    /**
-     * Required. IP override to be removed from the key.
-     *
-     * @param GoogleCloudRecaptchaenterpriseV1IpOverrideData $ipOverrideData
-     */
-    public function setIpOverrideData(GoogleCloudRecaptchaenterpriseV1IpOverrideData $ipOverrideData)
+namespace Google\Service\RecaptchaEnterprise {
+    class GoogleCloudRecaptchaenterpriseV1RemoveIpOverrideRequest extends \Google\Model
     {
+        protected $ipOverrideDataType = GoogleCloudRecaptchaenterpriseV1IpOverrideData::class;
+        protected $ipOverrideDataDataType = '';
+        /**
+         * Required. IP override to be removed from the key.
+         *
+         * @param GoogleCloudRecaptchaenterpriseV1IpOverrideData $ipOverrideData
+         */
+        public function setIpOverrideData(GoogleCloudRecaptchaenterpriseV1IpOverrideData $ipOverrideData)
+        {
+        }
+        /**
+         * @return GoogleCloudRecaptchaenterpriseV1IpOverrideData
+         */
+        public function getIpOverrideData()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRecaptchaenterpriseV1IpOverrideData
+     * Runtime class alias of \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1RemoveIpOverrideRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIpOverrideData()
+    class Google_Service_RecaptchaEnterprise_GoogleCloudRecaptchaenterpriseV1RemoveIpOverrideRequest extends \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1RemoveIpOverrideRequest
     {
     }
 }

@@ -21,146 +21,155 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseDynamicLinks;
-
-class ManagedShortLink extends \Google\Collection
-{
-    /**
-     * Visibility of the link is not specified.
-     */
-    public const VISIBILITY_UNSPECIFIED_VISIBILITY = 'UNSPECIFIED_VISIBILITY';
-    /**
-     * Link created in console and should be shown in console.
-     */
-    public const VISIBILITY_UNARCHIVED = 'UNARCHIVED';
-    /**
-     * Link created in console and should not be shown in console (but can be
-     * shown in the console again if it is unarchived).
-     */
-    public const VISIBILITY_ARCHIVED = 'ARCHIVED';
-    /**
-     * Link created outside of console and should never be shown in console.
-     */
-    public const VISIBILITY_NEVER_SHOWN = 'NEVER_SHOWN';
-    protected $collection_key = 'flaggedAttribute';
-    /**
-     * Creation timestamp of the short link.
-     *
-     * @var string
-     */
-    public $creationTime;
-    /**
-     * Attributes that have been flagged about this short url.
-     *
-     * @var string[]
-     */
-    public $flaggedAttribute;
-    protected $infoType = DynamicLinkInfo::class;
-    protected $infoDataType = '';
-    /**
-     * Short durable link url, for example, "https://sample.app.goo.gl/xyz123".
-     * Required.
-     *
-     * @var string
-     */
-    public $link;
-    /**
-     * Link name defined by the creator. Required.
-     *
-     * @var string
-     */
-    public $linkName;
-    /**
-     * Visibility status of link.
-     *
-     * @var string
-     */
-    public $visibility;
-    /**
-     * Creation timestamp of the short link.
-     *
-     * @param string $creationTime
-     */
-    public function setCreationTime($creationTime)
+namespace Google\Service\FirebaseDynamicLinks {
+    class ManagedShortLink extends \Google\Collection
     {
+        /**
+         * Visibility of the link is not specified.
+         */
+        public const VISIBILITY_UNSPECIFIED_VISIBILITY = 'UNSPECIFIED_VISIBILITY';
+        /**
+         * Link created in console and should be shown in console.
+         */
+        public const VISIBILITY_UNARCHIVED = 'UNARCHIVED';
+        /**
+         * Link created in console and should not be shown in console (but can be
+         * shown in the console again if it is unarchived).
+         */
+        public const VISIBILITY_ARCHIVED = 'ARCHIVED';
+        /**
+         * Link created outside of console and should never be shown in console.
+         */
+        public const VISIBILITY_NEVER_SHOWN = 'NEVER_SHOWN';
+        protected $collection_key = 'flaggedAttribute';
+        /**
+         * Creation timestamp of the short link.
+         *
+         * @var string
+         */
+        public $creationTime;
+        /**
+         * Attributes that have been flagged about this short url.
+         *
+         * @var string[]
+         */
+        public $flaggedAttribute;
+        protected $infoType = DynamicLinkInfo::class;
+        protected $infoDataType = '';
+        /**
+         * Short durable link url, for example, "https://sample.app.goo.gl/xyz123".
+         * Required.
+         *
+         * @var string
+         */
+        public $link;
+        /**
+         * Link name defined by the creator. Required.
+         *
+         * @var string
+         */
+        public $linkName;
+        /**
+         * Visibility status of link.
+         *
+         * @var string
+         */
+        public $visibility;
+        /**
+         * Creation timestamp of the short link.
+         *
+         * @param string $creationTime
+         */
+        public function setCreationTime($creationTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreationTime()
+        {
+        }
+        /**
+         * Attributes that have been flagged about this short url.
+         *
+         * @param string[] $flaggedAttribute
+         */
+        public function setFlaggedAttribute($flaggedAttribute)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFlaggedAttribute()
+        {
+        }
+        /**
+         * Full Dyamic Link info
+         *
+         * @param DynamicLinkInfo $info
+         */
+        public function setInfo(DynamicLinkInfo $info)
+        {
+        }
+        /**
+         * @return DynamicLinkInfo
+         */
+        public function getInfo()
+        {
+        }
+        /**
+         * Short durable link url, for example, "https://sample.app.goo.gl/xyz123".
+         * Required.
+         *
+         * @param string $link
+         */
+        public function setLink($link)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLink()
+        {
+        }
+        /**
+         * Link name defined by the creator. Required.
+         *
+         * @param string $linkName
+         */
+        public function setLinkName($linkName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLinkName()
+        {
+        }
+        /**
+         * Visibility status of link.
+         *
+         * Accepted values: UNSPECIFIED_VISIBILITY, UNARCHIVED, ARCHIVED, NEVER_SHOWN
+         *
+         * @param self::VISIBILITY_* $visibility
+         */
+        public function setVisibility($visibility)
+        {
+        }
+        /**
+         * @return self::VISIBILITY_*
+         */
+        public function getVisibility()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\FirebaseDynamicLinks\ManagedShortLink registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreationTime()
-    {
-    }
-    /**
-     * Attributes that have been flagged about this short url.
-     *
-     * @param string[] $flaggedAttribute
-     */
-    public function setFlaggedAttribute($flaggedAttribute)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getFlaggedAttribute()
-    {
-    }
-    /**
-     * Full Dyamic Link info
-     *
-     * @param DynamicLinkInfo $info
-     */
-    public function setInfo(DynamicLinkInfo $info)
-    {
-    }
-    /**
-     * @return DynamicLinkInfo
-     */
-    public function getInfo()
-    {
-    }
-    /**
-     * Short durable link url, for example, "https://sample.app.goo.gl/xyz123".
-     * Required.
-     *
-     * @param string $link
-     */
-    public function setLink($link)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLink()
-    {
-    }
-    /**
-     * Link name defined by the creator. Required.
-     *
-     * @param string $linkName
-     */
-    public function setLinkName($linkName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLinkName()
-    {
-    }
-    /**
-     * Visibility status of link.
-     *
-     * Accepted values: UNSPECIFIED_VISIBILITY, UNARCHIVED, ARCHIVED, NEVER_SHOWN
-     *
-     * @param self::VISIBILITY_* $visibility
-     */
-    public function setVisibility($visibility)
-    {
-    }
-    /**
-     * @return self::VISIBILITY_*
-     */
-    public function getVisibility()
+    class Google_Service_FirebaseDynamicLinks_ManagedShortLink extends \Google\Service\FirebaseDynamicLinks\ManagedShortLink
     {
     }
 }

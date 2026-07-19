@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dns;
-
-class ManagedZonePrivateVisibilityConfigNetwork extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $kind;
-    /**
-     * The fully qualified URL of the VPC network to bind to. Format this URL like
-     * `https://www.googleapis.com/compute/v1/projects/{project}/global/networks/{
-     * network}`
-     *
-     * @var string
-     */
-    public $networkUrl;
-    /**
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Dns {
+    class ManagedZonePrivateVisibilityConfigNetwork extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $kind;
+        /**
+         * The fully qualified URL of the VPC network to bind to. Format this URL like
+         * `https://www.googleapis.com/compute/v1/projects/{project}/global/networks/{
+         * network}`
+         *
+         * @var string
+         */
+        public $networkUrl;
+        /**
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The fully qualified URL of the VPC network to bind to. Format this URL like
+         * `https://www.googleapis.com/compute/v1/projects/{project}/global/networks/{
+         * network}`
+         *
+         * @param string $networkUrl
+         */
+        public function setNetworkUrl($networkUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetworkUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dns\ManagedZonePrivateVisibilityConfigNetwork registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * The fully qualified URL of the VPC network to bind to. Format this URL like
-     * `https://www.googleapis.com/compute/v1/projects/{project}/global/networks/{
-     * network}`
-     *
-     * @param string $networkUrl
-     */
-    public function setNetworkUrl($networkUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNetworkUrl()
+    class Google_Service_Dns_ManagedZonePrivateVisibilityConfigNetwork extends \Google\Service\Dns\ManagedZonePrivateVisibilityConfigNetwork
     {
     }
 }

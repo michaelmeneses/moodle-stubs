@@ -21,106 +21,115 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class ClusterOperationStatus extends \Google\Model
-{
-    /**
-     * Unused.
-     */
-    public const STATE_UNKNOWN = 'UNKNOWN';
-    /**
-     * The operation has been created.
-     */
-    public const STATE_PENDING = 'PENDING';
-    /**
-     * The operation is running.
-     */
-    public const STATE_RUNNING = 'RUNNING';
-    /**
-     * The operation is done; either cancelled or completed.
-     */
-    public const STATE_DONE = 'DONE';
-    /**
-     * Output only. A message containing any operation metadata details.
-     *
-     * @var string
-     */
-    public $details;
-    /**
-     * Output only. A message containing the detailed operation state.
-     *
-     * @var string
-     */
-    public $innerState;
-    /**
-     * Output only. A message containing the operation state.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. The time this state was entered.
-     *
-     * @var string
-     */
-    public $stateStartTime;
-    /**
-     * Output only. A message containing any operation metadata details.
-     *
-     * @param string $details
-     */
-    public function setDetails($details)
+namespace Google\Service\Dataproc {
+    class ClusterOperationStatus extends \Google\Model
     {
+        /**
+         * Unused.
+         */
+        public const STATE_UNKNOWN = 'UNKNOWN';
+        /**
+         * The operation has been created.
+         */
+        public const STATE_PENDING = 'PENDING';
+        /**
+         * The operation is running.
+         */
+        public const STATE_RUNNING = 'RUNNING';
+        /**
+         * The operation is done; either cancelled or completed.
+         */
+        public const STATE_DONE = 'DONE';
+        /**
+         * Output only. A message containing any operation metadata details.
+         *
+         * @var string
+         */
+        public $details;
+        /**
+         * Output only. A message containing the detailed operation state.
+         *
+         * @var string
+         */
+        public $innerState;
+        /**
+         * Output only. A message containing the operation state.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. The time this state was entered.
+         *
+         * @var string
+         */
+        public $stateStartTime;
+        /**
+         * Output only. A message containing any operation metadata details.
+         *
+         * @param string $details
+         */
+        public function setDetails($details)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDetails()
+        {
+        }
+        /**
+         * Output only. A message containing the detailed operation state.
+         *
+         * @param string $innerState
+         */
+        public function setInnerState($innerState)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInnerState()
+        {
+        }
+        /**
+         * Output only. A message containing the operation state.
+         *
+         * Accepted values: UNKNOWN, PENDING, RUNNING, DONE
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Output only. The time this state was entered.
+         *
+         * @param string $stateStartTime
+         */
+        public function setStateStartTime($stateStartTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStateStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\ClusterOperationStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDetails()
-    {
-    }
-    /**
-     * Output only. A message containing the detailed operation state.
-     *
-     * @param string $innerState
-     */
-    public function setInnerState($innerState)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInnerState()
-    {
-    }
-    /**
-     * Output only. A message containing the operation state.
-     *
-     * Accepted values: UNKNOWN, PENDING, RUNNING, DONE
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Output only. The time this state was entered.
-     *
-     * @param string $stateStartTime
-     */
-    public function setStateStartTime($stateStartTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStateStartTime()
+    class Google_Service_Dataproc_ClusterOperationStatus extends \Google\Service\Dataproc\ClusterOperationStatus
     {
     }
 }

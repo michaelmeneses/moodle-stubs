@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class Duration extends \Google\Model
-{
-    /**
-     * Span of time that's a fraction of a second at nanosecond resolution.
-     * Durations less than one second are represented with a 0 `seconds` field and
-     * a positive `nanos` field. Must be from 0 to 999,999,999 inclusive.
-     *
-     * @var int
-     */
-    public $nanos;
-    /**
-     * Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-     * inclusive. Note: these bounds are computed from: 60 sec/min * 60 min/hr *
-     * 24 hr/day * 365.25 days/year * 10000 years
-     *
-     * @var string
-     */
-    public $seconds;
-    /**
-     * Span of time that's a fraction of a second at nanosecond resolution.
-     * Durations less than one second are represented with a 0 `seconds` field and
-     * a positive `nanos` field. Must be from 0 to 999,999,999 inclusive.
-     *
-     * @param int $nanos
-     */
-    public function setNanos($nanos)
+namespace Google\Service\Compute {
+    class Duration extends \Google\Model
     {
+        /**
+         * Span of time that's a fraction of a second at nanosecond resolution.
+         * Durations less than one second are represented with a 0 `seconds` field and
+         * a positive `nanos` field. Must be from 0 to 999,999,999 inclusive.
+         *
+         * @var int
+         */
+        public $nanos;
+        /**
+         * Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
+         * inclusive. Note: these bounds are computed from: 60 sec/min * 60 min/hr *
+         * 24 hr/day * 365.25 days/year * 10000 years
+         *
+         * @var string
+         */
+        public $seconds;
+        /**
+         * Span of time that's a fraction of a second at nanosecond resolution.
+         * Durations less than one second are represented with a 0 `seconds` field and
+         * a positive `nanos` field. Must be from 0 to 999,999,999 inclusive.
+         *
+         * @param int $nanos
+         */
+        public function setNanos($nanos)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNanos()
+        {
+        }
+        /**
+         * Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
+         * inclusive. Note: these bounds are computed from: 60 sec/min * 60 min/hr *
+         * 24 hr/day * 365.25 days/year * 10000 years
+         *
+         * @param string $seconds
+         */
+        public function setSeconds($seconds)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSeconds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Compute\Duration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNanos()
-    {
-    }
-    /**
-     * Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
-     * inclusive. Note: these bounds are computed from: 60 sec/min * 60 min/hr *
-     * 24 hr/day * 365.25 days/year * 10000 years
-     *
-     * @param string $seconds
-     */
-    public function setSeconds($seconds)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSeconds()
+    class Google_Service_Compute_Duration extends \Google\Service\Compute\Duration
     {
     }
 }

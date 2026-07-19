@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaImageBoundingBoxAnnotation extends \Google\Model
-{
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaImageBoundingBoxAnnotation extends \Google\Model
+    {
+        /**
+         * The resource Id of the AnnotationSpec that this Annotation pertains to.
+         *
+         * @var string
+         */
+        public $annotationSpecId;
+        /**
+         * The display name of the AnnotationSpec that this Annotation pertains to.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The rightmost coordinate of the bounding box.
+         *
+         * @var 
+         */
+        public $xMax;
+        /**
+         * The leftmost coordinate of the bounding box.
+         *
+         * @var 
+         */
+        public $xMin;
+        /**
+         * The bottommost coordinate of the bounding box.
+         *
+         * @var 
+         */
+        public $yMax;
+        /**
+         * The topmost coordinate of the bounding box.
+         *
+         * @var 
+         */
+        public $yMin;
+        /**
+         * The resource Id of the AnnotationSpec that this Annotation pertains to.
+         *
+         * @param string $annotationSpecId
+         */
+        public function setAnnotationSpecId($annotationSpecId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnnotationSpecId()
+        {
+        }
+        /**
+         * The display name of the AnnotationSpec that this Annotation pertains to.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        public function setXMax($xMax)
+        {
+        }
+        public function getXMax()
+        {
+        }
+        public function setXMin($xMin)
+        {
+        }
+        public function getXMin()
+        {
+        }
+        public function setYMax($yMax)
+        {
+        }
+        public function getYMax()
+        {
+        }
+        public function setYMin($yMin)
+        {
+        }
+        public function getYMin()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * The resource Id of the AnnotationSpec that this Annotation pertains to.
-     *
-     * @var string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaImageBoundingBoxAnnotation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $annotationSpecId;
-    /**
-     * The display name of the AnnotationSpec that this Annotation pertains to.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The rightmost coordinate of the bounding box.
-     *
-     * @var 
-     */
-    public $xMax;
-    /**
-     * The leftmost coordinate of the bounding box.
-     *
-     * @var 
-     */
-    public $xMin;
-    /**
-     * The bottommost coordinate of the bounding box.
-     *
-     * @var 
-     */
-    public $yMax;
-    /**
-     * The topmost coordinate of the bounding box.
-     *
-     * @var 
-     */
-    public $yMin;
-    /**
-     * The resource Id of the AnnotationSpec that this Annotation pertains to.
-     *
-     * @param string $annotationSpecId
-     */
-    public function setAnnotationSpecId($annotationSpecId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAnnotationSpecId()
-    {
-    }
-    /**
-     * The display name of the AnnotationSpec that this Annotation pertains to.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    public function setXMax($xMax)
-    {
-    }
-    public function getXMax()
-    {
-    }
-    public function setXMin($xMin)
-    {
-    }
-    public function getXMin()
-    {
-    }
-    public function setYMax($yMax)
-    {
-    }
-    public function getYMax()
-    {
-    }
-    public function setYMin($yMin)
-    {
-    }
-    public function getYMin()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaImageBoundingBoxAnnotation extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaImageBoundingBoxAnnotation
     {
     }
 }

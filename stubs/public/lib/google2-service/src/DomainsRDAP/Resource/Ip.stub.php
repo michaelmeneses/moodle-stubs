@@ -21,29 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DomainsRDAP\Resource;
-
-/**
- * The "ip" collection of methods.
- * Typical usage is:
- *  <code>
- *   $domainsrdapService = new Google\Service\DomainsRDAP(...);
- *   $ip = $domainsrdapService->ip;
- *  </code>
- */
-class Ip extends \Google\Service\Resource
-{
+namespace Google\Service\DomainsRDAP\Resource {
+    use Google\Service\DomainsRDAP\RdapResponse;
     /**
-     * The RDAP API recognizes this command from the RDAP specification but does not
-     * support it. The response is a formatted 501 error. (ip.get)
-     *
-     * @param string $ipId
-     * @param string $ipId1
-     * @param array $optParams Optional parameters.
-     * @return RdapResponse
-     * @throws \Google\Service\Exception
+     * The "ip" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $domainsrdapService = new Google\Service\DomainsRDAP(...);
+     *   $ip = $domainsrdapService->ip;
+     *  </code>
      */
-    public function get($ipId, $ipId1, $optParams = [])
+    class Ip extends \Google\Service\Resource
+    {
+        /**
+         * The RDAP API recognizes this command from the RDAP specification but does not
+         * support it. The response is a formatted 501 error. (ip.get)
+         *
+         * @param string $ipId
+         * @param string $ipId1
+         * @param array $optParams Optional parameters.
+         * @return RdapResponse
+         * @throws \Google\Service\Exception
+         */
+        public function get($ipId, $ipId1, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DomainsRDAP\Resource\Ip registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DomainsRDAP_Resource_Ip extends \Google\Service\DomainsRDAP\Resource\Ip
     {
     }
 }

@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaImportDocumentsMetadata extends \Google\Model
-{
-    /**
-     * Operation create time.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Count of entries that encountered errors while processing.
-     *
-     * @var string
-     */
-    public $failureCount;
-    /**
-     * Count of entries that were processed successfully.
-     *
-     * @var string
-     */
-    public $successCount;
-    /**
-     * Total count of entries that were processed.
-     *
-     * @var string
-     */
-    public $totalCount;
-    /**
-     * Operation last update time. If the operation is done, this is also the
-     * finish time.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Operation create time.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaImportDocumentsMetadata extends \Google\Model
     {
+        /**
+         * Operation create time.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Count of entries that encountered errors while processing.
+         *
+         * @var string
+         */
+        public $failureCount;
+        /**
+         * Count of entries that were processed successfully.
+         *
+         * @var string
+         */
+        public $successCount;
+        /**
+         * Total count of entries that were processed.
+         *
+         * @var string
+         */
+        public $totalCount;
+        /**
+         * Operation last update time. If the operation is done, this is also the
+         * finish time.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Operation create time.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Count of entries that encountered errors while processing.
+         *
+         * @param string $failureCount
+         */
+        public function setFailureCount($failureCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFailureCount()
+        {
+        }
+        /**
+         * Count of entries that were processed successfully.
+         *
+         * @param string $successCount
+         */
+        public function setSuccessCount($successCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSuccessCount()
+        {
+        }
+        /**
+         * Total count of entries that were processed.
+         *
+         * @param string $totalCount
+         */
+        public function setTotalCount($totalCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalCount()
+        {
+        }
+        /**
+         * Operation last update time. If the operation is done, this is also the
+         * finish time.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaImportDocumentsMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Count of entries that encountered errors while processing.
-     *
-     * @param string $failureCount
-     */
-    public function setFailureCount($failureCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFailureCount()
-    {
-    }
-    /**
-     * Count of entries that were processed successfully.
-     *
-     * @param string $successCount
-     */
-    public function setSuccessCount($successCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSuccessCount()
-    {
-    }
-    /**
-     * Total count of entries that were processed.
-     *
-     * @param string $totalCount
-     */
-    public function setTotalCount($totalCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalCount()
-    {
-    }
-    /**
-     * Operation last update time. If the operation is done, this is also the
-     * finish time.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaImportDocumentsMetadata extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaImportDocumentsMetadata
     {
     }
 }

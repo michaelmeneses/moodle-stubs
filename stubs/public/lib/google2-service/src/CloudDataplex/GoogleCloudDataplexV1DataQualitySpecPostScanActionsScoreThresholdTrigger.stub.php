@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataQualitySpecPostScanActionsScoreThresholdTrigger extends \Google\Model
-{
-    /**
-     * Optional. The score range is in 0,100.
-     *
-     * @var float
-     */
-    public $scoreThreshold;
-    /**
-     * Optional. The score range is in 0,100.
-     *
-     * @param float $scoreThreshold
-     */
-    public function setScoreThreshold($scoreThreshold)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataQualitySpecPostScanActionsScoreThresholdTrigger extends \Google\Model
     {
+        /**
+         * Optional. The score range is in 0,100.
+         *
+         * @var float
+         */
+        public $scoreThreshold;
+        /**
+         * Optional. The score range is in 0,100.
+         *
+         * @param float $scoreThreshold
+         */
+        public function setScoreThreshold($scoreThreshold)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getScoreThreshold()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataQualitySpecPostScanActionsScoreThresholdTrigger registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getScoreThreshold()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataQualitySpecPostScanActionsScoreThresholdTrigger extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataQualitySpecPostScanActionsScoreThresholdTrigger
     {
     }
 }

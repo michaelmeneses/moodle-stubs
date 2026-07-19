@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RayLogsSpec extends \Google\Model
-{
-    /**
-     * Optional. Flag to disable the export of Ray OSS logs to Cloud Logging.
-     *
-     * @var bool
-     */
-    public $disabled;
-    /**
-     * Optional. Flag to disable the export of Ray OSS logs to Cloud Logging.
-     *
-     * @param bool $disabled
-     */
-    public function setDisabled($disabled)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RayLogsSpec extends \Google\Model
     {
+        /**
+         * Optional. Flag to disable the export of Ray OSS logs to Cloud Logging.
+         *
+         * @var bool
+         */
+        public $disabled;
+        /**
+         * Optional. Flag to disable the export of Ray OSS logs to Cloud Logging.
+         *
+         * @param bool $disabled
+         */
+        public function setDisabled($disabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RayLogsSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisabled()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RayLogsSpec extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RayLogsSpec
     {
     }
 }

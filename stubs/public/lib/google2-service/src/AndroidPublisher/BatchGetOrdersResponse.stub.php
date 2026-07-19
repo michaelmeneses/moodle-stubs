@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class BatchGetOrdersResponse extends \Google\Collection
-{
-    protected $collection_key = 'orders';
-    protected $ordersType = Order::class;
-    protected $ordersDataType = 'array';
-    /**
-     * Details for the requested order IDs.
-     *
-     * @param Order[] $orders
-     */
-    public function setOrders($orders)
+namespace Google\Service\AndroidPublisher {
+    class BatchGetOrdersResponse extends \Google\Collection
     {
+        protected $collection_key = 'orders';
+        protected $ordersType = Order::class;
+        protected $ordersDataType = 'array';
+        /**
+         * Details for the requested order IDs.
+         *
+         * @param Order[] $orders
+         */
+        public function setOrders($orders)
+        {
+        }
+        /**
+         * @return Order[]
+         */
+        public function getOrders()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Order[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\BatchGetOrdersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOrders()
+    class Google_Service_AndroidPublisher_BatchGetOrdersResponse extends \Google\Service\AndroidPublisher\BatchGetOrdersResponse
     {
     }
 }

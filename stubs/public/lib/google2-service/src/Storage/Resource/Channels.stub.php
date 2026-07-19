@@ -21,26 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage\Resource;
-
-/**
- * The "channels" collection of methods.
- * Typical usage is:
- *  <code>
- *   $storageService = new Google\Service\Storage(...);
- *   $channels = $storageService->channels;
- *  </code>
- */
-class Channels extends \Google\Service\Resource
-{
+namespace Google\Service\Storage\Resource {
+    use Google\Service\Storage\Channel;
     /**
-     * Stop watching resources through this channel (channels.stop)
-     *
-     * @param Channel $postBody
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "channels" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $storageService = new Google\Service\Storage(...);
+     *   $channels = $storageService->channels;
+     *  </code>
      */
-    public function stop(Channel $postBody, $optParams = [])
+    class Channels extends \Google\Service\Resource
+    {
+        /**
+         * Stop watching resources through this channel (channels.stop)
+         *
+         * @param Channel $postBody
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function stop(Channel $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Storage\Resource\Channels registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Storage_Resource_Channels extends \Google\Service\Storage\Resource\Channels
     {
     }
 }

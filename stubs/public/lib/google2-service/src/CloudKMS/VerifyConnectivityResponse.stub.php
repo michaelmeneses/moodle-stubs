@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudKMS;
-
-class VerifyConnectivityResponse extends \Google\Model
-{
+namespace Google\Service\CloudKMS {
+    class VerifyConnectivityResponse extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudKMS\VerifyConnectivityResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudKMS_VerifyConnectivityResponse extends \Google\Service\CloudKMS\VerifyConnectivityResponse
+    {
+    }
 }

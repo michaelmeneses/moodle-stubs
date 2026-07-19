@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1CheckGroundingResponseFactChunk extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $chunkText;
-    /**
-     * @var string
-     */
-    public $source;
-    /**
-     * @param string
-     */
-    public function setChunkText($chunkText)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1CheckGroundingResponseFactChunk extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $chunkText;
+        /**
+         * @var string
+         */
+        public $source;
+        /**
+         * @param string
+         */
+        public function setChunkText($chunkText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChunkText()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSource($source)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1CheckGroundingResponseFactChunk registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChunkText()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSource($source)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSource()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1CheckGroundingResponseFactChunk extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1CheckGroundingResponseFactChunk
     {
     }
 }

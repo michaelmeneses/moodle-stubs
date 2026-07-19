@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkspaceEvents;
-
-class StreamResponse extends \Google\Model
-{
-    protected $artifactUpdateType = TaskArtifactUpdateEvent::class;
-    protected $artifactUpdateDataType = '';
-    protected $messageType = Message::class;
-    protected $messageDataType = '';
-    protected $statusUpdateType = TaskStatusUpdateEvent::class;
-    protected $statusUpdateDataType = '';
-    protected $taskType = Task::class;
-    protected $taskDataType = '';
-    /**
-     * @param TaskArtifactUpdateEvent $artifactUpdate
-     */
-    public function setArtifactUpdate(TaskArtifactUpdateEvent $artifactUpdate)
+namespace Google\Service\WorkspaceEvents {
+    class StreamResponse extends \Google\Model
     {
+        protected $artifactUpdateType = TaskArtifactUpdateEvent::class;
+        protected $artifactUpdateDataType = '';
+        protected $messageType = Message::class;
+        protected $messageDataType = '';
+        protected $statusUpdateType = TaskStatusUpdateEvent::class;
+        protected $statusUpdateDataType = '';
+        protected $taskType = Task::class;
+        protected $taskDataType = '';
+        /**
+         * @param TaskArtifactUpdateEvent $artifactUpdate
+         */
+        public function setArtifactUpdate(TaskArtifactUpdateEvent $artifactUpdate)
+        {
+        }
+        /**
+         * @return TaskArtifactUpdateEvent
+         */
+        public function getArtifactUpdate()
+        {
+        }
+        /**
+         * @param Message $message
+         */
+        public function setMessage(Message $message)
+        {
+        }
+        /**
+         * @return Message
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * @param TaskStatusUpdateEvent $statusUpdate
+         */
+        public function setStatusUpdate(TaskStatusUpdateEvent $statusUpdate)
+        {
+        }
+        /**
+         * @return TaskStatusUpdateEvent
+         */
+        public function getStatusUpdate()
+        {
+        }
+        /**
+         * @param Task $task
+         */
+        public function setTask(Task $task)
+        {
+        }
+        /**
+         * @return Task
+         */
+        public function getTask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TaskArtifactUpdateEvent
+     * Runtime class alias of \Google\Service\WorkspaceEvents\StreamResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArtifactUpdate()
-    {
-    }
-    /**
-     * @param Message $message
-     */
-    public function setMessage(Message $message)
-    {
-    }
-    /**
-     * @return Message
-     */
-    public function getMessage()
-    {
-    }
-    /**
-     * @param TaskStatusUpdateEvent $statusUpdate
-     */
-    public function setStatusUpdate(TaskStatusUpdateEvent $statusUpdate)
-    {
-    }
-    /**
-     * @return TaskStatusUpdateEvent
-     */
-    public function getStatusUpdate()
-    {
-    }
-    /**
-     * @param Task $task
-     */
-    public function setTask(Task $task)
-    {
-    }
-    /**
-     * @return Task
-     */
-    public function getTask()
+    class Google_Service_WorkspaceEvents_StreamResponse extends \Google\Service\WorkspaceEvents\StreamResponse
     {
     }
 }

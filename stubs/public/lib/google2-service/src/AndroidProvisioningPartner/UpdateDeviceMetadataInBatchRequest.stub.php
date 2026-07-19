@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidProvisioningPartner;
-
-class UpdateDeviceMetadataInBatchRequest extends \Google\Collection
-{
-    protected $collection_key = 'updates';
-    protected $updatesType = UpdateMetadataArguments::class;
-    protected $updatesDataType = 'array';
-    /**
-     * Required. The list of metadata updates.
-     *
-     * @param UpdateMetadataArguments[] $updates
-     */
-    public function setUpdates($updates)
+namespace Google\Service\AndroidProvisioningPartner {
+    class UpdateDeviceMetadataInBatchRequest extends \Google\Collection
     {
+        protected $collection_key = 'updates';
+        protected $updatesType = UpdateMetadataArguments::class;
+        protected $updatesDataType = 'array';
+        /**
+         * Required. The list of metadata updates.
+         *
+         * @param UpdateMetadataArguments[] $updates
+         */
+        public function setUpdates($updates)
+        {
+        }
+        /**
+         * @return UpdateMetadataArguments[]
+         */
+        public function getUpdates()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return UpdateMetadataArguments[]
+     * Runtime class alias of \Google\Service\AndroidProvisioningPartner\UpdateDeviceMetadataInBatchRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUpdates()
+    class Google_Service_AndroidProvisioningPartner_UpdateDeviceMetadataInBatchRequest extends \Google\Service\AndroidProvisioningPartner\UpdateDeviceMetadataInBatchRequest
     {
     }
 }

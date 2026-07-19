@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class SupportedValues extends \Google\Collection
-{
-    protected $collection_key = 'machineTypes';
-    /**
-     * Output only. The accelerator types supported by WbI.
-     *
-     * @var string[]
-     */
-    public $acceleratorTypes;
-    /**
-     * Output only. The machine types supported by WbI.
-     *
-     * @var string[]
-     */
-    public $machineTypes;
-    /**
-     * Output only. The accelerator types supported by WbI.
-     *
-     * @param string[] $acceleratorTypes
-     */
-    public function setAcceleratorTypes($acceleratorTypes)
+namespace Google\Service\AIPlatformNotebooks {
+    class SupportedValues extends \Google\Collection
     {
+        protected $collection_key = 'machineTypes';
+        /**
+         * Output only. The accelerator types supported by WbI.
+         *
+         * @var string[]
+         */
+        public $acceleratorTypes;
+        /**
+         * Output only. The machine types supported by WbI.
+         *
+         * @var string[]
+         */
+        public $machineTypes;
+        /**
+         * Output only. The accelerator types supported by WbI.
+         *
+         * @param string[] $acceleratorTypes
+         */
+        public function setAcceleratorTypes($acceleratorTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAcceleratorTypes()
+        {
+        }
+        /**
+         * Output only. The machine types supported by WbI.
+         *
+         * @param string[] $machineTypes
+         */
+        public function setMachineTypes($machineTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMachineTypes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\SupportedValues registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAcceleratorTypes()
-    {
-    }
-    /**
-     * Output only. The machine types supported by WbI.
-     *
-     * @param string[] $machineTypes
-     */
-    public function setMachineTypes($machineTypes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMachineTypes()
+    class Google_Service_AIPlatformNotebooks_SupportedValues extends \Google\Service\AIPlatformNotebooks\SupportedValues
     {
     }
 }

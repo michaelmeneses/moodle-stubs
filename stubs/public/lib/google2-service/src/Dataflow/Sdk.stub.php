@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class Sdk extends \Google\Collection
-{
-    protected $collection_key = 'stacks';
-    /**
-     * The SDK harness id.
-     *
-     * @var string
-     */
-    public $sdkId;
-    protected $stacksType = Stack::class;
-    protected $stacksDataType = 'array';
-    /**
-     * The SDK harness id.
-     *
-     * @param string $sdkId
-     */
-    public function setSdkId($sdkId)
+namespace Google\Service\Dataflow {
+    class Sdk extends \Google\Collection
     {
+        protected $collection_key = 'stacks';
+        /**
+         * The SDK harness id.
+         *
+         * @var string
+         */
+        public $sdkId;
+        protected $stacksType = Stack::class;
+        protected $stacksDataType = 'array';
+        /**
+         * The SDK harness id.
+         *
+         * @param string $sdkId
+         */
+        public function setSdkId($sdkId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSdkId()
+        {
+        }
+        /**
+         * The stacktraces for the processes running on the SDK harness.
+         *
+         * @param Stack[] $stacks
+         */
+        public function setStacks($stacks)
+        {
+        }
+        /**
+         * @return Stack[]
+         */
+        public function getStacks()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\Sdk registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSdkId()
-    {
-    }
-    /**
-     * The stacktraces for the processes running on the SDK harness.
-     *
-     * @param Stack[] $stacks
-     */
-    public function setStacks($stacks)
-    {
-    }
-    /**
-     * @return Stack[]
-     */
-    public function getStacks()
+    class Google_Service_Dataflow_Sdk extends \Google\Service\Dataflow\Sdk
     {
     }
 }

@@ -21,168 +21,177 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\IdentityToolkit;
-
-class IdentitytoolkitRelyingpartyVerifyPhoneNumberResponse extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $expiresIn;
-    /**
-     * @var string
-     */
-    public $idToken;
-    /**
-     * @var bool
-     */
-    public $isNewUser;
-    /**
-     * @var string
-     */
-    public $localId;
-    /**
-     * @var string
-     */
-    public $phoneNumber;
-    /**
-     * @var string
-     */
-    public $refreshToken;
-    /**
-     * @var string
-     */
-    public $temporaryProof;
-    /**
-     * @var string
-     */
-    public $temporaryProofExpiresIn;
-    /**
-     * @var string
-     */
-    public $verificationProof;
-    /**
-     * @var string
-     */
-    public $verificationProofExpiresIn;
-    /**
-     * @param string $expiresIn
-     */
-    public function setExpiresIn($expiresIn)
+namespace Google\Service\IdentityToolkit {
+    class IdentitytoolkitRelyingpartyVerifyPhoneNumberResponse extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $expiresIn;
+        /**
+         * @var string
+         */
+        public $idToken;
+        /**
+         * @var bool
+         */
+        public $isNewUser;
+        /**
+         * @var string
+         */
+        public $localId;
+        /**
+         * @var string
+         */
+        public $phoneNumber;
+        /**
+         * @var string
+         */
+        public $refreshToken;
+        /**
+         * @var string
+         */
+        public $temporaryProof;
+        /**
+         * @var string
+         */
+        public $temporaryProofExpiresIn;
+        /**
+         * @var string
+         */
+        public $verificationProof;
+        /**
+         * @var string
+         */
+        public $verificationProofExpiresIn;
+        /**
+         * @param string $expiresIn
+         */
+        public function setExpiresIn($expiresIn)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpiresIn()
+        {
+        }
+        /**
+         * @param string $idToken
+         */
+        public function setIdToken($idToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIdToken()
+        {
+        }
+        /**
+         * @param bool $isNewUser
+         */
+        public function setIsNewUser($isNewUser)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsNewUser()
+        {
+        }
+        /**
+         * @param string $localId
+         */
+        public function setLocalId($localId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocalId()
+        {
+        }
+        /**
+         * @param string $phoneNumber
+         */
+        public function setPhoneNumber($phoneNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhoneNumber()
+        {
+        }
+        /**
+         * @param string $refreshToken
+         */
+        public function setRefreshToken($refreshToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRefreshToken()
+        {
+        }
+        /**
+         * @param string $temporaryProof
+         */
+        public function setTemporaryProof($temporaryProof)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTemporaryProof()
+        {
+        }
+        /**
+         * @param string $temporaryProofExpiresIn
+         */
+        public function setTemporaryProofExpiresIn($temporaryProofExpiresIn)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTemporaryProofExpiresIn()
+        {
+        }
+        /**
+         * @param string $verificationProof
+         */
+        public function setVerificationProof($verificationProof)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVerificationProof()
+        {
+        }
+        /**
+         * @param string $verificationProofExpiresIn
+         */
+        public function setVerificationProofExpiresIn($verificationProofExpiresIn)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVerificationProofExpiresIn()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartyVerifyPhoneNumberResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExpiresIn()
-    {
-    }
-    /**
-     * @param string $idToken
-     */
-    public function setIdToken($idToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIdToken()
-    {
-    }
-    /**
-     * @param bool $isNewUser
-     */
-    public function setIsNewUser($isNewUser)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsNewUser()
-    {
-    }
-    /**
-     * @param string $localId
-     */
-    public function setLocalId($localId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocalId()
-    {
-    }
-    /**
-     * @param string $phoneNumber
-     */
-    public function setPhoneNumber($phoneNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhoneNumber()
-    {
-    }
-    /**
-     * @param string $refreshToken
-     */
-    public function setRefreshToken($refreshToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRefreshToken()
-    {
-    }
-    /**
-     * @param string $temporaryProof
-     */
-    public function setTemporaryProof($temporaryProof)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTemporaryProof()
-    {
-    }
-    /**
-     * @param string $temporaryProofExpiresIn
-     */
-    public function setTemporaryProofExpiresIn($temporaryProofExpiresIn)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTemporaryProofExpiresIn()
-    {
-    }
-    /**
-     * @param string $verificationProof
-     */
-    public function setVerificationProof($verificationProof)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVerificationProof()
-    {
-    }
-    /**
-     * @param string $verificationProofExpiresIn
-     */
-    public function setVerificationProofExpiresIn($verificationProofExpiresIn)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVerificationProofExpiresIn()
+    class Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartyVerifyPhoneNumberResponse extends \Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartyVerifyPhoneNumberResponse
     {
     }
 }

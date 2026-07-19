@@ -21,222 +21,231 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class UpgradeHistoryEntry extends \Google\Model
-{
-    /**
-     * Operation is not specified.
-     */
-    public const ACTION_ACTION_UNSPECIFIED = 'ACTION_UNSPECIFIED';
-    /**
-     * Upgrade.
-     */
-    public const ACTION_UPGRADE = 'UPGRADE';
-    /**
-     * Rollback.
-     */
-    public const ACTION_ROLLBACK = 'ROLLBACK';
-    /**
-     * State is not specified.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The instance upgrade is started.
-     */
-    public const STATE_STARTED = 'STARTED';
-    /**
-     * The instance upgrade is succeeded.
-     */
-    public const STATE_SUCCEEDED = 'SUCCEEDED';
-    /**
-     * The instance upgrade is failed.
-     */
-    public const STATE_FAILED = 'FAILED';
-    /**
-     * Optional. Action. Rolloback or Upgrade.
-     *
-     * @var string
-     */
-    public $action;
-    /**
-     * Optional. The container image before this instance upgrade.
-     *
-     * @var string
-     */
-    public $containerImage;
-    /**
-     * Immutable. The time that this instance upgrade history entry is created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Optional. The framework of this notebook instance.
-     *
-     * @var string
-     */
-    public $framework;
-    /**
-     * Optional. The snapshot of the boot disk of this notebook instance before
-     * upgrade.
-     *
-     * @var string
-     */
-    public $snapshot;
-    /**
-     * Output only. The state of this instance upgrade history entry.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Optional. Target VM Version, like m63.
-     *
-     * @var string
-     */
-    public $targetVersion;
-    /**
-     * Optional. The version of the notebook instance before this upgrade.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Optional. The VM image before this instance upgrade.
-     *
-     * @var string
-     */
-    public $vmImage;
-    /**
-     * Optional. Action. Rolloback or Upgrade.
-     *
-     * Accepted values: ACTION_UNSPECIFIED, UPGRADE, ROLLBACK
-     *
-     * @param self::ACTION_* $action
-     */
-    public function setAction($action)
+namespace Google\Service\AIPlatformNotebooks {
+    class UpgradeHistoryEntry extends \Google\Model
     {
+        /**
+         * Operation is not specified.
+         */
+        public const ACTION_ACTION_UNSPECIFIED = 'ACTION_UNSPECIFIED';
+        /**
+         * Upgrade.
+         */
+        public const ACTION_UPGRADE = 'UPGRADE';
+        /**
+         * Rollback.
+         */
+        public const ACTION_ROLLBACK = 'ROLLBACK';
+        /**
+         * State is not specified.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The instance upgrade is started.
+         */
+        public const STATE_STARTED = 'STARTED';
+        /**
+         * The instance upgrade is succeeded.
+         */
+        public const STATE_SUCCEEDED = 'SUCCEEDED';
+        /**
+         * The instance upgrade is failed.
+         */
+        public const STATE_FAILED = 'FAILED';
+        /**
+         * Optional. Action. Rolloback or Upgrade.
+         *
+         * @var string
+         */
+        public $action;
+        /**
+         * Optional. The container image before this instance upgrade.
+         *
+         * @var string
+         */
+        public $containerImage;
+        /**
+         * Immutable. The time that this instance upgrade history entry is created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Optional. The framework of this notebook instance.
+         *
+         * @var string
+         */
+        public $framework;
+        /**
+         * Optional. The snapshot of the boot disk of this notebook instance before
+         * upgrade.
+         *
+         * @var string
+         */
+        public $snapshot;
+        /**
+         * Output only. The state of this instance upgrade history entry.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Optional. Target VM Version, like m63.
+         *
+         * @var string
+         */
+        public $targetVersion;
+        /**
+         * Optional. The version of the notebook instance before this upgrade.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Optional. The VM image before this instance upgrade.
+         *
+         * @var string
+         */
+        public $vmImage;
+        /**
+         * Optional. Action. Rolloback or Upgrade.
+         *
+         * Accepted values: ACTION_UNSPECIFIED, UPGRADE, ROLLBACK
+         *
+         * @param self::ACTION_* $action
+         */
+        public function setAction($action)
+        {
+        }
+        /**
+         * @return self::ACTION_*
+         */
+        public function getAction()
+        {
+        }
+        /**
+         * Optional. The container image before this instance upgrade.
+         *
+         * @param string $containerImage
+         */
+        public function setContainerImage($containerImage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContainerImage()
+        {
+        }
+        /**
+         * Immutable. The time that this instance upgrade history entry is created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. The framework of this notebook instance.
+         *
+         * @param string $framework
+         */
+        public function setFramework($framework)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFramework()
+        {
+        }
+        /**
+         * Optional. The snapshot of the boot disk of this notebook instance before
+         * upgrade.
+         *
+         * @param string $snapshot
+         */
+        public function setSnapshot($snapshot)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSnapshot()
+        {
+        }
+        /**
+         * Output only. The state of this instance upgrade history entry.
+         *
+         * Accepted values: STATE_UNSPECIFIED, STARTED, SUCCEEDED, FAILED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Optional. Target VM Version, like m63.
+         *
+         * @param string $targetVersion
+         */
+        public function setTargetVersion($targetVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetVersion()
+        {
+        }
+        /**
+         * Optional. The version of the notebook instance before this upgrade.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
+        /**
+         * Optional. The VM image before this instance upgrade.
+         *
+         * @param string $vmImage
+         */
+        public function setVmImage($vmImage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVmImage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ACTION_*
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\UpgradeHistoryEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAction()
-    {
-    }
-    /**
-     * Optional. The container image before this instance upgrade.
-     *
-     * @param string $containerImage
-     */
-    public function setContainerImage($containerImage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContainerImage()
-    {
-    }
-    /**
-     * Immutable. The time that this instance upgrade history entry is created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. The framework of this notebook instance.
-     *
-     * @param string $framework
-     */
-    public function setFramework($framework)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFramework()
-    {
-    }
-    /**
-     * Optional. The snapshot of the boot disk of this notebook instance before
-     * upgrade.
-     *
-     * @param string $snapshot
-     */
-    public function setSnapshot($snapshot)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSnapshot()
-    {
-    }
-    /**
-     * Output only. The state of this instance upgrade history entry.
-     *
-     * Accepted values: STATE_UNSPECIFIED, STARTED, SUCCEEDED, FAILED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Optional. Target VM Version, like m63.
-     *
-     * @param string $targetVersion
-     */
-    public function setTargetVersion($targetVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetVersion()
-    {
-    }
-    /**
-     * Optional. The version of the notebook instance before this upgrade.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
-    {
-    }
-    /**
-     * Optional. The VM image before this instance upgrade.
-     *
-     * @param string $vmImage
-     */
-    public function setVmImage($vmImage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVmImage()
+    class Google_Service_AIPlatformNotebooks_UpgradeHistoryEntry extends \Google\Service\AIPlatformNotebooks\UpgradeHistoryEntry
     {
     }
 }

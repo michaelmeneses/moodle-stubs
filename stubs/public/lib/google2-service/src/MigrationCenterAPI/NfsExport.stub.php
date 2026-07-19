@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class NfsExport extends \Google\Collection
-{
-    protected $collection_key = 'hosts';
-    /**
-     * The directory being exported.
-     *
-     * @var string
-     */
-    public $exportDirectory;
-    /**
-     * The hosts or networks to which the export is being shared.
-     *
-     * @var string[]
-     */
-    public $hosts;
-    /**
-     * The directory being exported.
-     *
-     * @param string $exportDirectory
-     */
-    public function setExportDirectory($exportDirectory)
+namespace Google\Service\MigrationCenterAPI {
+    class NfsExport extends \Google\Collection
     {
+        protected $collection_key = 'hosts';
+        /**
+         * The directory being exported.
+         *
+         * @var string
+         */
+        public $exportDirectory;
+        /**
+         * The hosts or networks to which the export is being shared.
+         *
+         * @var string[]
+         */
+        public $hosts;
+        /**
+         * The directory being exported.
+         *
+         * @param string $exportDirectory
+         */
+        public function setExportDirectory($exportDirectory)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExportDirectory()
+        {
+        }
+        /**
+         * The hosts or networks to which the export is being shared.
+         *
+         * @param string[] $hosts
+         */
+        public function setHosts($hosts)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getHosts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\NfsExport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExportDirectory()
-    {
-    }
-    /**
-     * The hosts or networks to which the export is being shared.
-     *
-     * @param string[] $hosts
-     */
-    public function setHosts($hosts)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getHosts()
+    class Google_Service_MigrationCenterAPI_NfsExport extends \Google\Service\MigrationCenterAPI\NfsExport
     {
     }
 }

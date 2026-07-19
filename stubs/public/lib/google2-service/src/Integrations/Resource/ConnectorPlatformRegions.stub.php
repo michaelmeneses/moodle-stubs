@@ -21,27 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations\Resource;
-
-/**
- * The "connectorPlatformRegions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $integrationsService = new Google\Service\Integrations(...);
- *   $connectorPlatformRegions = $integrationsService->connectorPlatformRegions;
- *  </code>
- */
-class ConnectorPlatformRegions extends \Google\Service\Resource
-{
+namespace Google\Service\Integrations\Resource {
+    use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaEnumerateConnectorPlatformRegionsResponse;
     /**
-     * Enumerates the regions for which Connector Platform is provisioned.
-     * (connectorPlatformRegions.enumerate)
-     *
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudIntegrationsV1alphaEnumerateConnectorPlatformRegionsResponse
-     * @throws \Google\Service\Exception
+     * The "connectorPlatformRegions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $integrationsService = new Google\Service\Integrations(...);
+     *   $connectorPlatformRegions = $integrationsService->connectorPlatformRegions;
+     *  </code>
      */
-    public function enumerate($optParams = [])
+    class ConnectorPlatformRegions extends \Google\Service\Resource
+    {
+        /**
+         * Enumerates the regions for which Connector Platform is provisioned.
+         * (connectorPlatformRegions.enumerate)
+         *
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudIntegrationsV1alphaEnumerateConnectorPlatformRegionsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function enumerate($optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Integrations\Resource\ConnectorPlatformRegions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Integrations_Resource_ConnectorPlatformRegions extends \Google\Service\Integrations\Resource\ConnectorPlatformRegions
     {
     }
 }

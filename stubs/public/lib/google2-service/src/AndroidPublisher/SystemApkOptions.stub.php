@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class SystemApkOptions extends \Google\Model
-{
-    /**
-     * Whether to use the rotated key for signing the system APK.
-     *
-     * @var bool
-     */
-    public $rotated;
-    /**
-     * Whether system APK was generated with uncompressed dex files.
-     *
-     * @var bool
-     */
-    public $uncompressedDexFiles;
-    /**
-     * Whether system APK was generated with uncompressed native libraries.
-     *
-     * @var bool
-     */
-    public $uncompressedNativeLibraries;
-    /**
-     * Whether to use the rotated key for signing the system APK.
-     *
-     * @param bool $rotated
-     */
-    public function setRotated($rotated)
+namespace Google\Service\AndroidPublisher {
+    class SystemApkOptions extends \Google\Model
     {
+        /**
+         * Whether to use the rotated key for signing the system APK.
+         *
+         * @var bool
+         */
+        public $rotated;
+        /**
+         * Whether system APK was generated with uncompressed dex files.
+         *
+         * @var bool
+         */
+        public $uncompressedDexFiles;
+        /**
+         * Whether system APK was generated with uncompressed native libraries.
+         *
+         * @var bool
+         */
+        public $uncompressedNativeLibraries;
+        /**
+         * Whether to use the rotated key for signing the system APK.
+         *
+         * @param bool $rotated
+         */
+        public function setRotated($rotated)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRotated()
+        {
+        }
+        /**
+         * Whether system APK was generated with uncompressed dex files.
+         *
+         * @param bool $uncompressedDexFiles
+         */
+        public function setUncompressedDexFiles($uncompressedDexFiles)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUncompressedDexFiles()
+        {
+        }
+        /**
+         * Whether system APK was generated with uncompressed native libraries.
+         *
+         * @param bool $uncompressedNativeLibraries
+         */
+        public function setUncompressedNativeLibraries($uncompressedNativeLibraries)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUncompressedNativeLibraries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\AndroidPublisher\SystemApkOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRotated()
-    {
-    }
-    /**
-     * Whether system APK was generated with uncompressed dex files.
-     *
-     * @param bool $uncompressedDexFiles
-     */
-    public function setUncompressedDexFiles($uncompressedDexFiles)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUncompressedDexFiles()
-    {
-    }
-    /**
-     * Whether system APK was generated with uncompressed native libraries.
-     *
-     * @param bool $uncompressedNativeLibraries
-     */
-    public function setUncompressedNativeLibraries($uncompressedNativeLibraries)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUncompressedNativeLibraries()
+    class Google_Service_AndroidPublisher_SystemApkOptions extends \Google\Service\AndroidPublisher\SystemApkOptions
     {
     }
 }

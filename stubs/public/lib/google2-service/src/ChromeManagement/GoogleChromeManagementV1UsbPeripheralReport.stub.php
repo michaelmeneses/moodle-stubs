@@ -21,171 +21,180 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1UsbPeripheralReport extends \Google\Collection
-{
-    protected $collection_key = 'categories';
-    /**
-     * Output only. Categories the device belongs to https://www.usb.org/defined-
-     * class-codes
-     *
-     * @var string[]
-     */
-    public $categories;
-    /**
-     * Output only. Class ID https://www.usb.org/defined-class-codes
-     *
-     * @var int
-     */
-    public $classId;
-    /**
-     * Output only. Firmware version
-     *
-     * @var string
-     */
-    public $firmwareVersion;
-    /**
-     * Output only. Device name, model name, or product name
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Product ID
-     *
-     * @var int
-     */
-    public $pid;
-    /**
-     * Output only. Subclass ID https://www.usb.org/defined-class-codes
-     *
-     * @var int
-     */
-    public $subclassId;
-    /**
-     * Output only. Vendor name
-     *
-     * @var string
-     */
-    public $vendor;
-    /**
-     * Output only. Vendor ID
-     *
-     * @var int
-     */
-    public $vid;
-    /**
-     * Output only. Categories the device belongs to https://www.usb.org/defined-
-     * class-codes
-     *
-     * @param string[] $categories
-     */
-    public function setCategories($categories)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1UsbPeripheralReport extends \Google\Collection
     {
+        protected $collection_key = 'categories';
+        /**
+         * Output only. Categories the device belongs to https://www.usb.org/defined-
+         * class-codes
+         *
+         * @var string[]
+         */
+        public $categories;
+        /**
+         * Output only. Class ID https://www.usb.org/defined-class-codes
+         *
+         * @var int
+         */
+        public $classId;
+        /**
+         * Output only. Firmware version
+         *
+         * @var string
+         */
+        public $firmwareVersion;
+        /**
+         * Output only. Device name, model name, or product name
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Product ID
+         *
+         * @var int
+         */
+        public $pid;
+        /**
+         * Output only. Subclass ID https://www.usb.org/defined-class-codes
+         *
+         * @var int
+         */
+        public $subclassId;
+        /**
+         * Output only. Vendor name
+         *
+         * @var string
+         */
+        public $vendor;
+        /**
+         * Output only. Vendor ID
+         *
+         * @var int
+         */
+        public $vid;
+        /**
+         * Output only. Categories the device belongs to https://www.usb.org/defined-
+         * class-codes
+         *
+         * @param string[] $categories
+         */
+        public function setCategories($categories)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCategories()
+        {
+        }
+        /**
+         * Output only. Class ID https://www.usb.org/defined-class-codes
+         *
+         * @param int $classId
+         */
+        public function setClassId($classId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getClassId()
+        {
+        }
+        /**
+         * Output only. Firmware version
+         *
+         * @param string $firmwareVersion
+         */
+        public function setFirmwareVersion($firmwareVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFirmwareVersion()
+        {
+        }
+        /**
+         * Output only. Device name, model name, or product name
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Product ID
+         *
+         * @param int $pid
+         */
+        public function setPid($pid)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPid()
+        {
+        }
+        /**
+         * Output only. Subclass ID https://www.usb.org/defined-class-codes
+         *
+         * @param int $subclassId
+         */
+        public function setSubclassId($subclassId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSubclassId()
+        {
+        }
+        /**
+         * Output only. Vendor name
+         *
+         * @param string $vendor
+         */
+        public function setVendor($vendor)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVendor()
+        {
+        }
+        /**
+         * Output only. Vendor ID
+         *
+         * @param int $vid
+         */
+        public function setVid($vid)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getVid()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1UsbPeripheralReport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCategories()
-    {
-    }
-    /**
-     * Output only. Class ID https://www.usb.org/defined-class-codes
-     *
-     * @param int $classId
-     */
-    public function setClassId($classId)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getClassId()
-    {
-    }
-    /**
-     * Output only. Firmware version
-     *
-     * @param string $firmwareVersion
-     */
-    public function setFirmwareVersion($firmwareVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFirmwareVersion()
-    {
-    }
-    /**
-     * Output only. Device name, model name, or product name
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Product ID
-     *
-     * @param int $pid
-     */
-    public function setPid($pid)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPid()
-    {
-    }
-    /**
-     * Output only. Subclass ID https://www.usb.org/defined-class-codes
-     *
-     * @param int $subclassId
-     */
-    public function setSubclassId($subclassId)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSubclassId()
-    {
-    }
-    /**
-     * Output only. Vendor name
-     *
-     * @param string $vendor
-     */
-    public function setVendor($vendor)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVendor()
-    {
-    }
-    /**
-     * Output only. Vendor ID
-     *
-     * @param int $vid
-     */
-    public function setVid($vid)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getVid()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1UsbPeripheralReport extends \Google\Service\ChromeManagement\GoogleChromeManagementV1UsbPeripheralReport
     {
     }
 }

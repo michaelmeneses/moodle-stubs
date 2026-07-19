@@ -21,51 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedKafka\Resource;
-
-/**
- * The "schemas" collection of methods.
- * Typical usage is:
- *  <code>
- *   $managedkafkaService = new Google\Service\ManagedKafka(...);
- *   $schemas = $managedkafkaService->projects_locations_schemaRegistries_schemas;
- *  </code>
- */
-class ProjectsLocationsSchemaRegistriesSchemas extends \Google\Service\Resource
-{
+namespace Google\Service\ManagedKafka\Resource {
+    use Google\Service\ManagedKafka\HttpBody;
+    use Google\Service\ManagedKafka\Schema;
     /**
-     * Get the schema for the given schema id. (schemas.get)
-     *
-     * @param string $name Required. The name of the schema to return. Structured
-     * like: `projects/{project}/locations/{location}/schemaRegistries/{schema_regis
-     * try}/schemas/ids/{schema}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string subject Optional. Used to limit the search for the schema
-     * ID to a specific subject, otherwise the schema ID will be searched for in all
-     * subjects in the given specified context.
-     * @return Schema
-     * @throws \Google\Service\Exception
+     * The "schemas" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $managedkafkaService = new Google\Service\ManagedKafka(...);
+     *   $schemas = $managedkafkaService->projects_locations_schemaRegistries_schemas;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocationsSchemaRegistriesSchemas extends \Google\Service\Resource
     {
+        /**
+         * Get the schema for the given schema id. (schemas.get)
+         *
+         * @param string $name Required. The name of the schema to return. Structured
+         * like: `projects/{project}/locations/{location}/schemaRegistries/{schema_regis
+         * try}/schemas/ids/{schema}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string subject Optional. Used to limit the search for the schema
+         * ID to a specific subject, otherwise the schema ID will be searched for in all
+         * subjects in the given specified context.
+         * @return Schema
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Get the schema string for the given schema id. The response will be the
+         * schema string. (schemas.getSchema)
+         *
+         * @param string $name Required. The name of the schema to return. Structured
+         * like: `projects/{project}/locations/{location}/schemaRegistries/{schema_regis
+         * try}/schemas/ids/{schema}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string subject Optional. Used to limit the search for the schema
+         * ID to a specific subject, otherwise the schema ID will be searched for in all
+         * subjects in the given specified context.
+         * @return HttpBody
+         * @throws \Google\Service\Exception
+         */
+        public function getSchema($name, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Get the schema string for the given schema id. The response will be the
-     * schema string. (schemas.getSchema)
-     *
-     * @param string $name Required. The name of the schema to return. Structured
-     * like: `projects/{project}/locations/{location}/schemaRegistries/{schema_regis
-     * try}/schemas/ids/{schema}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string subject Optional. Used to limit the search for the schema
-     * ID to a specific subject, otherwise the schema ID will be searched for in all
-     * subjects in the given specified context.
-     * @return HttpBody
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ManagedKafka\Resource\ProjectsLocationsSchemaRegistriesSchemas registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSchema($name, $optParams = [])
+    class Google_Service_ManagedKafka_Resource_ProjectsLocationsSchemaRegistriesSchemas extends \Google\Service\ManagedKafka\Resource\ProjectsLocationsSchemaRegistriesSchemas
     {
     }
 }

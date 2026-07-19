@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class NextHopRouterApplianceInstance extends \Google\Model
-{
-    /**
-     * Indicates whether site-to-site data transfer is allowed for this Router
-     * appliance instance resource. Data transfer is available only in [supported
-     * locations](https://cloud.google.com/network-connectivity/docs/network-
-     * connectivity-center/concepts/locations).
-     *
-     * @var bool
-     */
-    public $siteToSiteDataTransfer;
-    /**
-     * The URI of the Router appliance instance.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * The VPC network where this VM is located.
-     *
-     * @var string
-     */
-    public $vpcNetwork;
-    /**
-     * Indicates whether site-to-site data transfer is allowed for this Router
-     * appliance instance resource. Data transfer is available only in [supported
-     * locations](https://cloud.google.com/network-connectivity/docs/network-
-     * connectivity-center/concepts/locations).
-     *
-     * @param bool $siteToSiteDataTransfer
-     */
-    public function setSiteToSiteDataTransfer($siteToSiteDataTransfer)
+namespace Google\Service\Networkconnectivity {
+    class NextHopRouterApplianceInstance extends \Google\Model
     {
+        /**
+         * Indicates whether site-to-site data transfer is allowed for this Router
+         * appliance instance resource. Data transfer is available only in [supported
+         * locations](https://cloud.google.com/network-connectivity/docs/network-
+         * connectivity-center/concepts/locations).
+         *
+         * @var bool
+         */
+        public $siteToSiteDataTransfer;
+        /**
+         * The URI of the Router appliance instance.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * The VPC network where this VM is located.
+         *
+         * @var string
+         */
+        public $vpcNetwork;
+        /**
+         * Indicates whether site-to-site data transfer is allowed for this Router
+         * appliance instance resource. Data transfer is available only in [supported
+         * locations](https://cloud.google.com/network-connectivity/docs/network-
+         * connectivity-center/concepts/locations).
+         *
+         * @param bool $siteToSiteDataTransfer
+         */
+        public function setSiteToSiteDataTransfer($siteToSiteDataTransfer)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSiteToSiteDataTransfer()
+        {
+        }
+        /**
+         * The URI of the Router appliance instance.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
+        /**
+         * The VPC network where this VM is located.
+         *
+         * @param string $vpcNetwork
+         */
+        public function setVpcNetwork($vpcNetwork)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVpcNetwork()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Networkconnectivity\NextHopRouterApplianceInstance registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSiteToSiteDataTransfer()
-    {
-    }
-    /**
-     * The URI of the Router appliance instance.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
-    {
-    }
-    /**
-     * The VPC network where this VM is located.
-     *
-     * @param string $vpcNetwork
-     */
-    public function setVpcNetwork($vpcNetwork)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVpcNetwork()
+    class Google_Service_Networkconnectivity_NextHopRouterApplianceInstance extends \Google\Service\Networkconnectivity\NextHopRouterApplianceInstance
     {
     }
 }

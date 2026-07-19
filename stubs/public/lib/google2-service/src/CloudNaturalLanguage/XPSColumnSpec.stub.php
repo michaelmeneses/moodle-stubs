@@ -21,125 +21,134 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSColumnSpec extends \Google\Collection
-{
-    protected $collection_key = 'topCorrelatedColumns';
-    /**
-     * The unique id of the column. When Preprocess, the Tables BE will popuate
-     * the order id of the column, which reflects the order of the column inside
-     * the table, i.e. 0 means the first column in the table, N-1 means the last
-     * column. AutoML BE will persist this order id in Spanner and set the order
-     * id here when calling RefreshTablesStats and Train. Note: it's different
-     * than the column_spec_id that is generated in AutoML BE.
-     *
-     * @var int
-     */
-    public $columnId;
-    protected $dataStatsType = XPSDataStats::class;
-    protected $dataStatsDataType = '';
-    protected $dataTypeType = XPSDataType::class;
-    protected $dataTypeDataType = '';
-    /**
-     * The display name of the column. It's outputed in Preprocess and a required
-     * input for RefreshTablesStats and Train.
-     *
-     * @var string
-     */
-    public $displayName;
-    protected $forecastingMetadataType = XPSColumnSpecForecastingMetadata::class;
-    protected $forecastingMetadataDataType = '';
-    protected $topCorrelatedColumnsType = XPSColumnSpecCorrelatedColumn::class;
-    protected $topCorrelatedColumnsDataType = 'array';
-    /**
-     * The unique id of the column. When Preprocess, the Tables BE will popuate
-     * the order id of the column, which reflects the order of the column inside
-     * the table, i.e. 0 means the first column in the table, N-1 means the last
-     * column. AutoML BE will persist this order id in Spanner and set the order
-     * id here when calling RefreshTablesStats and Train. Note: it's different
-     * than the column_spec_id that is generated in AutoML BE.
-     *
-     * @param int $columnId
-     */
-    public function setColumnId($columnId)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSColumnSpec extends \Google\Collection
     {
+        protected $collection_key = 'topCorrelatedColumns';
+        /**
+         * The unique id of the column. When Preprocess, the Tables BE will popuate
+         * the order id of the column, which reflects the order of the column inside
+         * the table, i.e. 0 means the first column in the table, N-1 means the last
+         * column. AutoML BE will persist this order id in Spanner and set the order
+         * id here when calling RefreshTablesStats and Train. Note: it's different
+         * than the column_spec_id that is generated in AutoML BE.
+         *
+         * @var int
+         */
+        public $columnId;
+        protected $dataStatsType = XPSDataStats::class;
+        protected $dataStatsDataType = '';
+        protected $dataTypeType = XPSDataType::class;
+        protected $dataTypeDataType = '';
+        /**
+         * The display name of the column. It's outputed in Preprocess and a required
+         * input for RefreshTablesStats and Train.
+         *
+         * @var string
+         */
+        public $displayName;
+        protected $forecastingMetadataType = XPSColumnSpecForecastingMetadata::class;
+        protected $forecastingMetadataDataType = '';
+        protected $topCorrelatedColumnsType = XPSColumnSpecCorrelatedColumn::class;
+        protected $topCorrelatedColumnsDataType = 'array';
+        /**
+         * The unique id of the column. When Preprocess, the Tables BE will popuate
+         * the order id of the column, which reflects the order of the column inside
+         * the table, i.e. 0 means the first column in the table, N-1 means the last
+         * column. AutoML BE will persist this order id in Spanner and set the order
+         * id here when calling RefreshTablesStats and Train. Note: it's different
+         * than the column_spec_id that is generated in AutoML BE.
+         *
+         * @param int $columnId
+         */
+        public function setColumnId($columnId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getColumnId()
+        {
+        }
+        /**
+         * The data stats of the column. It's outputed in RefreshTablesStats and a
+         * required input for Train.
+         *
+         * @param XPSDataStats $dataStats
+         */
+        public function setDataStats(XPSDataStats $dataStats)
+        {
+        }
+        /**
+         * @return XPSDataStats
+         */
+        public function getDataStats()
+        {
+        }
+        /**
+         * The data type of the column. It's outputed in Preprocess rpc and a required
+         * input for RefreshTablesStats and Train.
+         *
+         * @param XPSDataType $dataType
+         */
+        public function setDataType(XPSDataType $dataType)
+        {
+        }
+        /**
+         * @return XPSDataType
+         */
+        public function getDataType()
+        {
+        }
+        /**
+         * The display name of the column. It's outputed in Preprocess and a required
+         * input for RefreshTablesStats and Train.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param XPSColumnSpecForecastingMetadata $forecastingMetadata
+         */
+        public function setForecastingMetadata(XPSColumnSpecForecastingMetadata $forecastingMetadata)
+        {
+        }
+        /**
+         * @return XPSColumnSpecForecastingMetadata
+         */
+        public function getForecastingMetadata()
+        {
+        }
+        /**
+         * It's outputed in RefreshTablesStats, and a required input in Train.
+         *
+         * @param XPSColumnSpecCorrelatedColumn[] $topCorrelatedColumns
+         */
+        public function setTopCorrelatedColumns($topCorrelatedColumns)
+        {
+        }
+        /**
+         * @return XPSColumnSpecCorrelatedColumn[]
+         */
+        public function getTopCorrelatedColumns()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSColumnSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumnId()
-    {
-    }
-    /**
-     * The data stats of the column. It's outputed in RefreshTablesStats and a
-     * required input for Train.
-     *
-     * @param XPSDataStats $dataStats
-     */
-    public function setDataStats(XPSDataStats $dataStats)
-    {
-    }
-    /**
-     * @return XPSDataStats
-     */
-    public function getDataStats()
-    {
-    }
-    /**
-     * The data type of the column. It's outputed in Preprocess rpc and a required
-     * input for RefreshTablesStats and Train.
-     *
-     * @param XPSDataType $dataType
-     */
-    public function setDataType(XPSDataType $dataType)
-    {
-    }
-    /**
-     * @return XPSDataType
-     */
-    public function getDataType()
-    {
-    }
-    /**
-     * The display name of the column. It's outputed in Preprocess and a required
-     * input for RefreshTablesStats and Train.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * @param XPSColumnSpecForecastingMetadata $forecastingMetadata
-     */
-    public function setForecastingMetadata(XPSColumnSpecForecastingMetadata $forecastingMetadata)
-    {
-    }
-    /**
-     * @return XPSColumnSpecForecastingMetadata
-     */
-    public function getForecastingMetadata()
-    {
-    }
-    /**
-     * It's outputed in RefreshTablesStats, and a required input in Train.
-     *
-     * @param XPSColumnSpecCorrelatedColumn[] $topCorrelatedColumns
-     */
-    public function setTopCorrelatedColumns($topCorrelatedColumns)
-    {
-    }
-    /**
-     * @return XPSColumnSpecCorrelatedColumn[]
-     */
-    public function getTopCorrelatedColumns()
+    class Google_Service_CloudNaturalLanguage_XPSColumnSpec extends \Google\Service\CloudNaturalLanguage\XPSColumnSpec
     {
     }
 }

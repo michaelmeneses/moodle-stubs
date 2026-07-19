@@ -21,123 +21,132 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Transcoder;
-
-class AudioMapping extends \Google\Model
-{
-    /**
-     * Required. The EditAtom.key that references the atom with audio inputs in
-     * the JobConfig.edit_list.
-     *
-     * @var string
-     */
-    public $atomKey;
-    /**
-     * Audio volume control in dB. Negative values decrease volume, positive
-     * values increase. The default is 0.
-     *
-     * @var 
-     */
-    public $gainDb;
-    /**
-     * Required. The zero-based index of the channel in the input audio stream.
-     *
-     * @var int
-     */
-    public $inputChannel;
-    /**
-     * Required. The Input.key that identifies the input file.
-     *
-     * @var string
-     */
-    public $inputKey;
-    /**
-     * Required. The zero-based index of the track in the input file.
-     *
-     * @var int
-     */
-    public $inputTrack;
-    /**
-     * Required. The zero-based index of the channel in the output audio stream.
-     *
-     * @var int
-     */
-    public $outputChannel;
-    /**
-     * Required. The EditAtom.key that references the atom with audio inputs in
-     * the JobConfig.edit_list.
-     *
-     * @param string $atomKey
-     */
-    public function setAtomKey($atomKey)
+namespace Google\Service\Transcoder {
+    class AudioMapping extends \Google\Model
     {
+        /**
+         * Required. The EditAtom.key that references the atom with audio inputs in
+         * the JobConfig.edit_list.
+         *
+         * @var string
+         */
+        public $atomKey;
+        /**
+         * Audio volume control in dB. Negative values decrease volume, positive
+         * values increase. The default is 0.
+         *
+         * @var 
+         */
+        public $gainDb;
+        /**
+         * Required. The zero-based index of the channel in the input audio stream.
+         *
+         * @var int
+         */
+        public $inputChannel;
+        /**
+         * Required. The Input.key that identifies the input file.
+         *
+         * @var string
+         */
+        public $inputKey;
+        /**
+         * Required. The zero-based index of the track in the input file.
+         *
+         * @var int
+         */
+        public $inputTrack;
+        /**
+         * Required. The zero-based index of the channel in the output audio stream.
+         *
+         * @var int
+         */
+        public $outputChannel;
+        /**
+         * Required. The EditAtom.key that references the atom with audio inputs in
+         * the JobConfig.edit_list.
+         *
+         * @param string $atomKey
+         */
+        public function setAtomKey($atomKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAtomKey()
+        {
+        }
+        public function setGainDb($gainDb)
+        {
+        }
+        public function getGainDb()
+        {
+        }
+        /**
+         * Required. The zero-based index of the channel in the input audio stream.
+         *
+         * @param int $inputChannel
+         */
+        public function setInputChannel($inputChannel)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getInputChannel()
+        {
+        }
+        /**
+         * Required. The Input.key that identifies the input file.
+         *
+         * @param string $inputKey
+         */
+        public function setInputKey($inputKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInputKey()
+        {
+        }
+        /**
+         * Required. The zero-based index of the track in the input file.
+         *
+         * @param int $inputTrack
+         */
+        public function setInputTrack($inputTrack)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getInputTrack()
+        {
+        }
+        /**
+         * Required. The zero-based index of the channel in the output audio stream.
+         *
+         * @param int $outputChannel
+         */
+        public function setOutputChannel($outputChannel)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getOutputChannel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Transcoder\AudioMapping registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAtomKey()
-    {
-    }
-    public function setGainDb($gainDb)
-    {
-    }
-    public function getGainDb()
-    {
-    }
-    /**
-     * Required. The zero-based index of the channel in the input audio stream.
-     *
-     * @param int $inputChannel
-     */
-    public function setInputChannel($inputChannel)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getInputChannel()
-    {
-    }
-    /**
-     * Required. The Input.key that identifies the input file.
-     *
-     * @param string $inputKey
-     */
-    public function setInputKey($inputKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInputKey()
-    {
-    }
-    /**
-     * Required. The zero-based index of the track in the input file.
-     *
-     * @param int $inputTrack
-     */
-    public function setInputTrack($inputTrack)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getInputTrack()
-    {
-    }
-    /**
-     * Required. The zero-based index of the channel in the output audio stream.
-     *
-     * @param int $outputChannel
-     */
-    public function setOutputChannel($outputChannel)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getOutputChannel()
+    class Google_Service_Transcoder_AudioMapping extends \Google\Service\Transcoder\AudioMapping
     {
     }
 }

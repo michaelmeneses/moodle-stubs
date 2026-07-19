@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class AdPolicyCriterionRestriction extends \Google\Model
-{
-    /**
-     * The country criterion id.
-     *
-     * @var string
-     */
-    public $countryCriterionId;
-    /**
-     * Localized name for the country. May be empty.
-     *
-     * @var string
-     */
-    public $countryLabel;
-    /**
-     * The country criterion id.
-     *
-     * @param string $countryCriterionId
-     */
-    public function setCountryCriterionId($countryCriterionId)
+namespace Google\Service\DisplayVideo {
+    class AdPolicyCriterionRestriction extends \Google\Model
     {
+        /**
+         * The country criterion id.
+         *
+         * @var string
+         */
+        public $countryCriterionId;
+        /**
+         * Localized name for the country. May be empty.
+         *
+         * @var string
+         */
+        public $countryLabel;
+        /**
+         * The country criterion id.
+         *
+         * @param string $countryCriterionId
+         */
+        public function setCountryCriterionId($countryCriterionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCountryCriterionId()
+        {
+        }
+        /**
+         * Localized name for the country. May be empty.
+         *
+         * @param string $countryLabel
+         */
+        public function setCountryLabel($countryLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCountryLabel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\AdPolicyCriterionRestriction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCountryCriterionId()
-    {
-    }
-    /**
-     * Localized name for the country. May be empty.
-     *
-     * @param string $countryLabel
-     */
-    public function setCountryLabel($countryLabel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCountryLabel()
+    class Google_Service_DisplayVideo_AdPolicyCriterionRestriction extends \Google\Service\DisplayVideo\AdPolicyCriterionRestriction
     {
     }
 }

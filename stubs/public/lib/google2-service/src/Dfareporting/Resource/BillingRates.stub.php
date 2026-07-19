@@ -21,29 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting\Resource;
-
-/**
- * The "billingRates" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dfareportingService = new Google\Service\Dfareporting(...);
- *   $billingRates = $dfareportingService->billingRates;
- *  </code>
- */
-class BillingRates extends \Google\Service\Resource
-{
+namespace Google\Service\Dfareporting\Resource {
+    use Google\Service\Dfareporting\BillingRatesListResponse;
     /**
-     * Retrieves a list of billing rates. This method supports paging.
-     * (billingRates.listBillingRates)
-     *
-     * @param string $profileId User profile ID associated with this request.
-     * @param string $billingProfileId Billing profile ID of this billing rate.
-     * @param array $optParams Optional parameters.
-     * @return BillingRatesListResponse
-     * @throws \Google\Service\Exception
+     * The "billingRates" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dfareportingService = new Google\Service\Dfareporting(...);
+     *   $billingRates = $dfareportingService->billingRates;
+     *  </code>
      */
-    public function listBillingRates($profileId, $billingProfileId, $optParams = [])
+    class BillingRates extends \Google\Service\Resource
+    {
+        /**
+         * Retrieves a list of billing rates. This method supports paging.
+         * (billingRates.listBillingRates)
+         *
+         * @param string $profileId User profile ID associated with this request.
+         * @param string $billingProfileId Billing profile ID of this billing rate.
+         * @param array $optParams Optional parameters.
+         * @return BillingRatesListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listBillingRates($profileId, $billingProfileId, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Dfareporting\Resource\BillingRates registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Dfareporting_Resource_BillingRates extends \Google\Service\Dfareporting\Resource\BillingRates
     {
     }
 }

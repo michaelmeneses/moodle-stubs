@@ -21,148 +21,157 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1EmbedContentRequest extends \Google\Model
-{
-    /**
-     * Unset value, which will default to one of the other enum values.
-     */
-    public const TASK_TYPE_UNSPECIFIED = 'UNSPECIFIED';
-    /**
-     * Specifies the given text is a query in a search/retrieval setting.
-     */
-    public const TASK_TYPE_RETRIEVAL_QUERY = 'RETRIEVAL_QUERY';
-    /**
-     * Specifies the given text is a document from the corpus being searched.
-     */
-    public const TASK_TYPE_RETRIEVAL_DOCUMENT = 'RETRIEVAL_DOCUMENT';
-    /**
-     * Specifies the given text will be used for STS.
-     */
-    public const TASK_TYPE_SEMANTIC_SIMILARITY = 'SEMANTIC_SIMILARITY';
-    /**
-     * Specifies that the given text will be classified.
-     */
-    public const TASK_TYPE_CLASSIFICATION = 'CLASSIFICATION';
-    /**
-     * Specifies that the embeddings will be used for clustering.
-     */
-    public const TASK_TYPE_CLUSTERING = 'CLUSTERING';
-    /**
-     * Specifies that the embeddings will be used for question answering.
-     */
-    public const TASK_TYPE_QUESTION_ANSWERING = 'QUESTION_ANSWERING';
-    /**
-     * Specifies that the embeddings will be used for fact verification.
-     */
-    public const TASK_TYPE_FACT_VERIFICATION = 'FACT_VERIFICATION';
-    /**
-     * Specifies that the embeddings will be used for code retrieval.
-     */
-    public const TASK_TYPE_CODE_RETRIEVAL_QUERY = 'CODE_RETRIEVAL_QUERY';
-    /**
-     * Optional. Whether to silently truncate the input content if it's longer
-     * than the maximum sequence length.
-     *
-     * @var bool
-     */
-    public $autoTruncate;
-    protected $contentType = GoogleCloudAiplatformV1Content::class;
-    protected $contentDataType = '';
-    /**
-     * Optional. Optional reduced dimension for the output embedding. If set,
-     * excessive values in the output embedding are truncated from the end.
-     *
-     * @var int
-     */
-    public $outputDimensionality;
-    /**
-     * Optional. The task type of the embedding.
-     *
-     * @var string
-     */
-    public $taskType;
-    /**
-     * Optional. An optional title for the text.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Optional. Whether to silently truncate the input content if it's longer
-     * than the maximum sequence length.
-     *
-     * @param bool $autoTruncate
-     */
-    public function setAutoTruncate($autoTruncate)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1EmbedContentRequest extends \Google\Model
     {
+        /**
+         * Unset value, which will default to one of the other enum values.
+         */
+        public const TASK_TYPE_UNSPECIFIED = 'UNSPECIFIED';
+        /**
+         * Specifies the given text is a query in a search/retrieval setting.
+         */
+        public const TASK_TYPE_RETRIEVAL_QUERY = 'RETRIEVAL_QUERY';
+        /**
+         * Specifies the given text is a document from the corpus being searched.
+         */
+        public const TASK_TYPE_RETRIEVAL_DOCUMENT = 'RETRIEVAL_DOCUMENT';
+        /**
+         * Specifies the given text will be used for STS.
+         */
+        public const TASK_TYPE_SEMANTIC_SIMILARITY = 'SEMANTIC_SIMILARITY';
+        /**
+         * Specifies that the given text will be classified.
+         */
+        public const TASK_TYPE_CLASSIFICATION = 'CLASSIFICATION';
+        /**
+         * Specifies that the embeddings will be used for clustering.
+         */
+        public const TASK_TYPE_CLUSTERING = 'CLUSTERING';
+        /**
+         * Specifies that the embeddings will be used for question answering.
+         */
+        public const TASK_TYPE_QUESTION_ANSWERING = 'QUESTION_ANSWERING';
+        /**
+         * Specifies that the embeddings will be used for fact verification.
+         */
+        public const TASK_TYPE_FACT_VERIFICATION = 'FACT_VERIFICATION';
+        /**
+         * Specifies that the embeddings will be used for code retrieval.
+         */
+        public const TASK_TYPE_CODE_RETRIEVAL_QUERY = 'CODE_RETRIEVAL_QUERY';
+        /**
+         * Optional. Whether to silently truncate the input content if it's longer
+         * than the maximum sequence length.
+         *
+         * @var bool
+         */
+        public $autoTruncate;
+        protected $contentType = GoogleCloudAiplatformV1Content::class;
+        protected $contentDataType = '';
+        /**
+         * Optional. Optional reduced dimension for the output embedding. If set,
+         * excessive values in the output embedding are truncated from the end.
+         *
+         * @var int
+         */
+        public $outputDimensionality;
+        /**
+         * Optional. The task type of the embedding.
+         *
+         * @var string
+         */
+        public $taskType;
+        /**
+         * Optional. An optional title for the text.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Optional. Whether to silently truncate the input content if it's longer
+         * than the maximum sequence length.
+         *
+         * @param bool $autoTruncate
+         */
+        public function setAutoTruncate($autoTruncate)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAutoTruncate()
+        {
+        }
+        /**
+         * Required. Input content to be embedded. Required.
+         *
+         * @param GoogleCloudAiplatformV1Content $content
+         */
+        public function setContent(GoogleCloudAiplatformV1Content $content)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Content
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * Optional. Optional reduced dimension for the output embedding. If set,
+         * excessive values in the output embedding are truncated from the end.
+         *
+         * @param int $outputDimensionality
+         */
+        public function setOutputDimensionality($outputDimensionality)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getOutputDimensionality()
+        {
+        }
+        /**
+         * Optional. The task type of the embedding.
+         *
+         * Accepted values: UNSPECIFIED, RETRIEVAL_QUERY, RETRIEVAL_DOCUMENT,
+         * SEMANTIC_SIMILARITY, CLASSIFICATION, CLUSTERING, QUESTION_ANSWERING,
+         * FACT_VERIFICATION, CODE_RETRIEVAL_QUERY
+         *
+         * @param self::TASK_TYPE_* $taskType
+         */
+        public function setTaskType($taskType)
+        {
+        }
+        /**
+         * @return self::TASK_TYPE_*
+         */
+        public function getTaskType()
+        {
+        }
+        /**
+         * Optional. An optional title for the text.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1EmbedContentRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutoTruncate()
-    {
-    }
-    /**
-     * Required. Input content to be embedded. Required.
-     *
-     * @param GoogleCloudAiplatformV1Content $content
-     */
-    public function setContent(GoogleCloudAiplatformV1Content $content)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1Content
-     */
-    public function getContent()
-    {
-    }
-    /**
-     * Optional. Optional reduced dimension for the output embedding. If set,
-     * excessive values in the output embedding are truncated from the end.
-     *
-     * @param int $outputDimensionality
-     */
-    public function setOutputDimensionality($outputDimensionality)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getOutputDimensionality()
-    {
-    }
-    /**
-     * Optional. The task type of the embedding.
-     *
-     * Accepted values: UNSPECIFIED, RETRIEVAL_QUERY, RETRIEVAL_DOCUMENT,
-     * SEMANTIC_SIMILARITY, CLASSIFICATION, CLUSTERING, QUESTION_ANSWERING,
-     * FACT_VERIFICATION, CODE_RETRIEVAL_QUERY
-     *
-     * @param self::TASK_TYPE_* $taskType
-     */
-    public function setTaskType($taskType)
-    {
-    }
-    /**
-     * @return self::TASK_TYPE_*
-     */
-    public function getTaskType()
-    {
-    }
-    /**
-     * Optional. An optional title for the text.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1EmbedContentRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1EmbedContentRequest
     {
     }
 }

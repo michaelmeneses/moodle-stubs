@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkspaceEvents;
-
-class AgentExtension extends \Google\Model
-{
-    /**
-     * A description of how this agent uses this extension. Example: "Google OAuth
-     * 2.0 authentication"
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Optional configuration for the extension.
-     *
-     * @var array[]
-     */
-    public $params;
-    /**
-     * Whether the client must follow specific requirements of the extension.
-     * Example: false
-     *
-     * @var bool
-     */
-    public $required;
-    /**
-     * The URI of the extension. Example:
-     * "https://developers.google.com/identity/protocols/oauth2"
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * A description of how this agent uses this extension. Example: "Google OAuth
-     * 2.0 authentication"
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\WorkspaceEvents {
+    class AgentExtension extends \Google\Model
     {
+        /**
+         * A description of how this agent uses this extension. Example: "Google OAuth
+         * 2.0 authentication"
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Optional configuration for the extension.
+         *
+         * @var array[]
+         */
+        public $params;
+        /**
+         * Whether the client must follow specific requirements of the extension.
+         * Example: false
+         *
+         * @var bool
+         */
+        public $required;
+        /**
+         * The URI of the extension. Example:
+         * "https://developers.google.com/identity/protocols/oauth2"
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * A description of how this agent uses this extension. Example: "Google OAuth
+         * 2.0 authentication"
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Optional configuration for the extension.
+         *
+         * @param array[] $params
+         */
+        public function setParams($params)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getParams()
+        {
+        }
+        /**
+         * Whether the client must follow specific requirements of the extension.
+         * Example: false
+         *
+         * @param bool $required
+         */
+        public function setRequired($required)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRequired()
+        {
+        }
+        /**
+         * The URI of the extension. Example:
+         * "https://developers.google.com/identity/protocols/oauth2"
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WorkspaceEvents\AgentExtension registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Optional configuration for the extension.
-     *
-     * @param array[] $params
-     */
-    public function setParams($params)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getParams()
-    {
-    }
-    /**
-     * Whether the client must follow specific requirements of the extension.
-     * Example: false
-     *
-     * @param bool $required
-     */
-    public function setRequired($required)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getRequired()
-    {
-    }
-    /**
-     * The URI of the extension. Example:
-     * "https://developers.google.com/identity/protocols/oauth2"
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_WorkspaceEvents_AgentExtension extends \Google\Service\WorkspaceEvents\AgentExtension
     {
     }
 }

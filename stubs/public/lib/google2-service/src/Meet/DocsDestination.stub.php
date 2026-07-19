@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Meet;
-
-class DocsDestination extends \Google\Model
-{
-    /**
-     * Output only. The document ID for the underlying Google Docs transcript
-     * file. For example, "1kuceFZohVoCh6FulBHxwy6I15Ogpc4hP". Use the
-     * `documents.get` method of the Google Docs API
-     * (https://developers.google.com/docs/api/reference/rest/v1/documents/get) to
-     * fetch the content.
-     *
-     * @var string
-     */
-    public $document;
-    /**
-     * Output only. URI for the Google Docs transcript file. Use
-     * `https://docs.google.com/document/d/{$DocumentId}/view` to browse the
-     * transcript in the browser.
-     *
-     * @var string
-     */
-    public $exportUri;
-    /**
-     * Output only. The document ID for the underlying Google Docs transcript
-     * file. For example, "1kuceFZohVoCh6FulBHxwy6I15Ogpc4hP". Use the
-     * `documents.get` method of the Google Docs API
-     * (https://developers.google.com/docs/api/reference/rest/v1/documents/get) to
-     * fetch the content.
-     *
-     * @param string $document
-     */
-    public function setDocument($document)
+namespace Google\Service\Meet {
+    class DocsDestination extends \Google\Model
     {
+        /**
+         * Output only. The document ID for the underlying Google Docs transcript
+         * file. For example, "1kuceFZohVoCh6FulBHxwy6I15Ogpc4hP". Use the
+         * `documents.get` method of the Google Docs API
+         * (https://developers.google.com/docs/api/reference/rest/v1/documents/get) to
+         * fetch the content.
+         *
+         * @var string
+         */
+        public $document;
+        /**
+         * Output only. URI for the Google Docs transcript file. Use
+         * `https://docs.google.com/document/d/{$DocumentId}/view` to browse the
+         * transcript in the browser.
+         *
+         * @var string
+         */
+        public $exportUri;
+        /**
+         * Output only. The document ID for the underlying Google Docs transcript
+         * file. For example, "1kuceFZohVoCh6FulBHxwy6I15Ogpc4hP". Use the
+         * `documents.get` method of the Google Docs API
+         * (https://developers.google.com/docs/api/reference/rest/v1/documents/get) to
+         * fetch the content.
+         *
+         * @param string $document
+         */
+        public function setDocument($document)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDocument()
+        {
+        }
+        /**
+         * Output only. URI for the Google Docs transcript file. Use
+         * `https://docs.google.com/document/d/{$DocumentId}/view` to browse the
+         * transcript in the browser.
+         *
+         * @param string $exportUri
+         */
+        public function setExportUri($exportUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExportUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Meet\DocsDestination registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocument()
-    {
-    }
-    /**
-     * Output only. URI for the Google Docs transcript file. Use
-     * `https://docs.google.com/document/d/{$DocumentId}/view` to browse the
-     * transcript in the browser.
-     *
-     * @param string $exportUri
-     */
-    public function setExportUri($exportUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExportUri()
+    class Google_Service_Meet_DocsDestination extends \Google\Service\Meet\DocsDestination
     {
     }
 }

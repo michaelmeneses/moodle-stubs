@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class ListHl7V2StoresResponse extends \Google\Collection
-{
-    protected $collection_key = 'hl7V2Stores';
-    protected $hl7V2StoresType = Hl7V2Store::class;
-    protected $hl7V2StoresDataType = 'array';
-    /**
-     * Token to retrieve the next page of results or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The returned HL7v2 stores. Won't be more HL7v2 stores than the value of
-     * page_size in the request.
-     *
-     * @param Hl7V2Store[] $hl7V2Stores
-     */
-    public function setHl7V2Stores($hl7V2Stores)
+namespace Google\Service\CloudHealthcare {
+    class ListHl7V2StoresResponse extends \Google\Collection
     {
+        protected $collection_key = 'hl7V2Stores';
+        protected $hl7V2StoresType = Hl7V2Store::class;
+        protected $hl7V2StoresDataType = 'array';
+        /**
+         * Token to retrieve the next page of results or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The returned HL7v2 stores. Won't be more HL7v2 stores than the value of
+         * page_size in the request.
+         *
+         * @param Hl7V2Store[] $hl7V2Stores
+         */
+        public function setHl7V2Stores($hl7V2Stores)
+        {
+        }
+        /**
+         * @return Hl7V2Store[]
+         */
+        public function getHl7V2Stores()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Hl7V2Store[]
+     * Runtime class alias of \Google\Service\CloudHealthcare\ListHl7V2StoresResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHl7V2Stores()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudHealthcare_ListHl7V2StoresResponse extends \Google\Service\CloudHealthcare\ListHl7V2StoresResponse
     {
     }
 }

@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class Attributes extends \Google\Collection
-{
-    protected $collection_key = 'attribute';
-    protected $attributeType = Attribute::class;
-    protected $attributeDataType = 'array';
-    /**
-     * @param Attribute[]
-     */
-    public function setAttribute($attribute)
+namespace Google\Service\CloudSearch {
+    class Attributes extends \Google\Collection
     {
+        protected $collection_key = 'attribute';
+        protected $attributeType = Attribute::class;
+        protected $attributeDataType = 'array';
+        /**
+         * @param Attribute[]
+         */
+        public function setAttribute($attribute)
+        {
+        }
+        /**
+         * @return Attribute[]
+         */
+        public function getAttribute()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Attribute[]
+     * Runtime class alias of \Google\Service\CloudSearch\Attributes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttribute()
+    class Google_Service_CloudSearch_Attributes extends \Google\Service\CloudSearch\Attributes
     {
     }
 }

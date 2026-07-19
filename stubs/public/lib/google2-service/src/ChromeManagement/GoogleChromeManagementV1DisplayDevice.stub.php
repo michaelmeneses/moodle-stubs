@@ -21,188 +21,197 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1DisplayDevice extends \Google\Model
-{
-    /**
-     * Output only. Display height in millimeters.
-     *
-     * @var int
-     */
-    public $displayHeightMm;
-    /**
-     * Output only. Display device name.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. Display width in millimeters.
-     *
-     * @var int
-     */
-    public $displayWidthMm;
-    /**
-     * Output only. EDID version.
-     *
-     * @var string
-     */
-    public $edidVersion;
-    /**
-     * Output only. Is display internal or not.
-     *
-     * @var bool
-     */
-    public $internal;
-    /**
-     * Output only. Year of manufacture.
-     *
-     * @var int
-     */
-    public $manufactureYear;
-    /**
-     * Output only. Three letter manufacturer ID.
-     *
-     * @var string
-     */
-    public $manufacturerId;
-    /**
-     * Output only. Manufacturer product code.
-     *
-     * @var int
-     */
-    public $modelId;
-    /**
-     * Output only. Serial number.
-     *
-     * @var int
-     */
-    public $serialNumber;
-    /**
-     * Output only. Display height in millimeters.
-     *
-     * @param int $displayHeightMm
-     */
-    public function setDisplayHeightMm($displayHeightMm)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1DisplayDevice extends \Google\Model
     {
+        /**
+         * Output only. Display height in millimeters.
+         *
+         * @var int
+         */
+        public $displayHeightMm;
+        /**
+         * Output only. Display device name.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. Display width in millimeters.
+         *
+         * @var int
+         */
+        public $displayWidthMm;
+        /**
+         * Output only. EDID version.
+         *
+         * @var string
+         */
+        public $edidVersion;
+        /**
+         * Output only. Is display internal or not.
+         *
+         * @var bool
+         */
+        public $internal;
+        /**
+         * Output only. Year of manufacture.
+         *
+         * @var int
+         */
+        public $manufactureYear;
+        /**
+         * Output only. Three letter manufacturer ID.
+         *
+         * @var string
+         */
+        public $manufacturerId;
+        /**
+         * Output only. Manufacturer product code.
+         *
+         * @var int
+         */
+        public $modelId;
+        /**
+         * Output only. Serial number.
+         *
+         * @var int
+         */
+        public $serialNumber;
+        /**
+         * Output only. Display height in millimeters.
+         *
+         * @param int $displayHeightMm
+         */
+        public function setDisplayHeightMm($displayHeightMm)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDisplayHeightMm()
+        {
+        }
+        /**
+         * Output only. Display device name.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. Display width in millimeters.
+         *
+         * @param int $displayWidthMm
+         */
+        public function setDisplayWidthMm($displayWidthMm)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDisplayWidthMm()
+        {
+        }
+        /**
+         * Output only. EDID version.
+         *
+         * @param string $edidVersion
+         */
+        public function setEdidVersion($edidVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEdidVersion()
+        {
+        }
+        /**
+         * Output only. Is display internal or not.
+         *
+         * @param bool $internal
+         */
+        public function setInternal($internal)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getInternal()
+        {
+        }
+        /**
+         * Output only. Year of manufacture.
+         *
+         * @param int $manufactureYear
+         */
+        public function setManufactureYear($manufactureYear)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getManufactureYear()
+        {
+        }
+        /**
+         * Output only. Three letter manufacturer ID.
+         *
+         * @param string $manufacturerId
+         */
+        public function setManufacturerId($manufacturerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getManufacturerId()
+        {
+        }
+        /**
+         * Output only. Manufacturer product code.
+         *
+         * @param int $modelId
+         */
+        public function setModelId($modelId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getModelId()
+        {
+        }
+        /**
+         * Output only. Serial number.
+         *
+         * @param int $serialNumber
+         */
+        public function setSerialNumber($serialNumber)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSerialNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1DisplayDevice registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayHeightMm()
-    {
-    }
-    /**
-     * Output only. Display device name.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. Display width in millimeters.
-     *
-     * @param int $displayWidthMm
-     */
-    public function setDisplayWidthMm($displayWidthMm)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getDisplayWidthMm()
-    {
-    }
-    /**
-     * Output only. EDID version.
-     *
-     * @param string $edidVersion
-     */
-    public function setEdidVersion($edidVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEdidVersion()
-    {
-    }
-    /**
-     * Output only. Is display internal or not.
-     *
-     * @param bool $internal
-     */
-    public function setInternal($internal)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getInternal()
-    {
-    }
-    /**
-     * Output only. Year of manufacture.
-     *
-     * @param int $manufactureYear
-     */
-    public function setManufactureYear($manufactureYear)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getManufactureYear()
-    {
-    }
-    /**
-     * Output only. Three letter manufacturer ID.
-     *
-     * @param string $manufacturerId
-     */
-    public function setManufacturerId($manufacturerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getManufacturerId()
-    {
-    }
-    /**
-     * Output only. Manufacturer product code.
-     *
-     * @param int $modelId
-     */
-    public function setModelId($modelId)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getModelId()
-    {
-    }
-    /**
-     * Output only. Serial number.
-     *
-     * @param int $serialNumber
-     */
-    public function setSerialNumber($serialNumber)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSerialNumber()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1DisplayDevice extends \Google\Service\ChromeManagement\GoogleChromeManagementV1DisplayDevice
     {
     }
 }

@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class WipeAction extends \Google\Model
-{
-    /**
-     * Whether the factory-reset protection data is preserved on the device. This
-     * setting doesn’t apply to work profiles.
-     *
-     * @var bool
-     */
-    public $preserveFrp;
-    /**
-     * Number of days the policy is non-compliant before the device or work
-     * profile is wiped. wipeAfterDays must be greater than blockAfterDays.
-     *
-     * @var int
-     */
-    public $wipeAfterDays;
-    /**
-     * Whether the factory-reset protection data is preserved on the device. This
-     * setting doesn’t apply to work profiles.
-     *
-     * @param bool $preserveFrp
-     */
-    public function setPreserveFrp($preserveFrp)
+namespace Google\Service\AndroidManagement {
+    class WipeAction extends \Google\Model
     {
+        /**
+         * Whether the factory-reset protection data is preserved on the device. This
+         * setting doesn’t apply to work profiles.
+         *
+         * @var bool
+         */
+        public $preserveFrp;
+        /**
+         * Number of days the policy is non-compliant before the device or work
+         * profile is wiped. wipeAfterDays must be greater than blockAfterDays.
+         *
+         * @var int
+         */
+        public $wipeAfterDays;
+        /**
+         * Whether the factory-reset protection data is preserved on the device. This
+         * setting doesn’t apply to work profiles.
+         *
+         * @param bool $preserveFrp
+         */
+        public function setPreserveFrp($preserveFrp)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPreserveFrp()
+        {
+        }
+        /**
+         * Number of days the policy is non-compliant before the device or work
+         * profile is wiped. wipeAfterDays must be greater than blockAfterDays.
+         *
+         * @param int $wipeAfterDays
+         */
+        public function setWipeAfterDays($wipeAfterDays)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getWipeAfterDays()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\AndroidManagement\WipeAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPreserveFrp()
-    {
-    }
-    /**
-     * Number of days the policy is non-compliant before the device or work
-     * profile is wiped. wipeAfterDays must be greater than blockAfterDays.
-     *
-     * @param int $wipeAfterDays
-     */
-    public function setWipeAfterDays($wipeAfterDays)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getWipeAfterDays()
+    class Google_Service_AndroidManagement_WipeAction extends \Google\Service\AndroidManagement\WipeAction
     {
     }
 }

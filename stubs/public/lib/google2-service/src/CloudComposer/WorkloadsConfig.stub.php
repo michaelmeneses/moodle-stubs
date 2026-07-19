@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudComposer;
-
-class WorkloadsConfig extends \Google\Model
-{
-    protected $dagProcessorType = DagProcessorResource::class;
-    protected $dagProcessorDataType = '';
-    protected $schedulerType = SchedulerResource::class;
-    protected $schedulerDataType = '';
-    protected $triggererType = TriggererResource::class;
-    protected $triggererDataType = '';
-    protected $webServerType = WebServerResource::class;
-    protected $webServerDataType = '';
-    protected $workerType = WorkerResource::class;
-    protected $workerDataType = '';
-    /**
-     * Optional. Resources used by Airflow DAG processors. This field is supported
-     * for Cloud Composer environments in versions
-     * composer-3-airflow-*.*.*-build.* and newer.
-     *
-     * @param DagProcessorResource $dagProcessor
-     */
-    public function setDagProcessor(DagProcessorResource $dagProcessor)
+namespace Google\Service\CloudComposer {
+    class WorkloadsConfig extends \Google\Model
     {
+        protected $dagProcessorType = DagProcessorResource::class;
+        protected $dagProcessorDataType = '';
+        protected $schedulerType = SchedulerResource::class;
+        protected $schedulerDataType = '';
+        protected $triggererType = TriggererResource::class;
+        protected $triggererDataType = '';
+        protected $webServerType = WebServerResource::class;
+        protected $webServerDataType = '';
+        protected $workerType = WorkerResource::class;
+        protected $workerDataType = '';
+        /**
+         * Optional. Resources used by Airflow DAG processors. This field is supported
+         * for Cloud Composer environments in versions
+         * composer-3-airflow-*.*.*-build.* and newer.
+         *
+         * @param DagProcessorResource $dagProcessor
+         */
+        public function setDagProcessor(DagProcessorResource $dagProcessor)
+        {
+        }
+        /**
+         * @return DagProcessorResource
+         */
+        public function getDagProcessor()
+        {
+        }
+        /**
+         * Optional. Resources used by Airflow schedulers.
+         *
+         * @param SchedulerResource $scheduler
+         */
+        public function setScheduler(SchedulerResource $scheduler)
+        {
+        }
+        /**
+         * @return SchedulerResource
+         */
+        public function getScheduler()
+        {
+        }
+        /**
+         * Optional. Resources used by Airflow triggerers.
+         *
+         * @param TriggererResource $triggerer
+         */
+        public function setTriggerer(TriggererResource $triggerer)
+        {
+        }
+        /**
+         * @return TriggererResource
+         */
+        public function getTriggerer()
+        {
+        }
+        /**
+         * Optional. Resources used by Airflow web server.
+         *
+         * @param WebServerResource $webServer
+         */
+        public function setWebServer(WebServerResource $webServer)
+        {
+        }
+        /**
+         * @return WebServerResource
+         */
+        public function getWebServer()
+        {
+        }
+        /**
+         * Optional. Resources used by Airflow workers.
+         *
+         * @param WorkerResource $worker
+         */
+        public function setWorker(WorkerResource $worker)
+        {
+        }
+        /**
+         * @return WorkerResource
+         */
+        public function getWorker()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DagProcessorResource
+     * Runtime class alias of \Google\Service\CloudComposer\WorkloadsConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDagProcessor()
-    {
-    }
-    /**
-     * Optional. Resources used by Airflow schedulers.
-     *
-     * @param SchedulerResource $scheduler
-     */
-    public function setScheduler(SchedulerResource $scheduler)
-    {
-    }
-    /**
-     * @return SchedulerResource
-     */
-    public function getScheduler()
-    {
-    }
-    /**
-     * Optional. Resources used by Airflow triggerers.
-     *
-     * @param TriggererResource $triggerer
-     */
-    public function setTriggerer(TriggererResource $triggerer)
-    {
-    }
-    /**
-     * @return TriggererResource
-     */
-    public function getTriggerer()
-    {
-    }
-    /**
-     * Optional. Resources used by Airflow web server.
-     *
-     * @param WebServerResource $webServer
-     */
-    public function setWebServer(WebServerResource $webServer)
-    {
-    }
-    /**
-     * @return WebServerResource
-     */
-    public function getWebServer()
-    {
-    }
-    /**
-     * Optional. Resources used by Airflow workers.
-     *
-     * @param WorkerResource $worker
-     */
-    public function setWorker(WorkerResource $worker)
-    {
-    }
-    /**
-     * @return WorkerResource
-     */
-    public function getWorker()
+    class Google_Service_CloudComposer_WorkloadsConfig extends \Google\Service\CloudComposer\WorkloadsConfig
     {
     }
 }

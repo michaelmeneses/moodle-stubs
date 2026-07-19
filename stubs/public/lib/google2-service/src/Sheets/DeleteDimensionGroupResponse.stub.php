@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class DeleteDimensionGroupResponse extends \Google\Collection
-{
-    protected $collection_key = 'dimensionGroups';
-    protected $dimensionGroupsType = DimensionGroup::class;
-    protected $dimensionGroupsDataType = 'array';
-    /**
-     * All groups of a dimension after deleting a group from that dimension.
-     *
-     * @param DimensionGroup[] $dimensionGroups
-     */
-    public function setDimensionGroups($dimensionGroups)
+namespace Google\Service\Sheets {
+    class DeleteDimensionGroupResponse extends \Google\Collection
     {
+        protected $collection_key = 'dimensionGroups';
+        protected $dimensionGroupsType = DimensionGroup::class;
+        protected $dimensionGroupsDataType = 'array';
+        /**
+         * All groups of a dimension after deleting a group from that dimension.
+         *
+         * @param DimensionGroup[] $dimensionGroups
+         */
+        public function setDimensionGroups($dimensionGroups)
+        {
+        }
+        /**
+         * @return DimensionGroup[]
+         */
+        public function getDimensionGroups()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DimensionGroup[]
+     * Runtime class alias of \Google\Service\Sheets\DeleteDimensionGroupResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDimensionGroups()
+    class Google_Service_Sheets_DeleteDimensionGroupResponse extends \Google\Service\Sheets\DeleteDimensionGroupResponse
     {
     }
 }

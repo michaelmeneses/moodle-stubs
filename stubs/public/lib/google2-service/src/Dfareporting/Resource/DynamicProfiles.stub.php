@@ -21,70 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting\Resource;
-
-/**
- * The "dynamicProfiles" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dfareportingService = new Google\Service\Dfareporting(...);
- *   $dynamicProfiles = $dfareportingService->dynamicProfiles;
- *  </code>
- */
-class DynamicProfiles extends \Google\Service\Resource
-{
+namespace Google\Service\Dfareporting\Resource {
+    use Google\Service\Dfareporting\DynamicProfile;
+    use Google\Service\Dfareporting\DynamicProfileGenerateCodeResponse;
     /**
-     * Generates code for a dynamic profile. (dynamicProfiles.generateCode)
-     *
-     * @param string $dynamicProfileId Required. Dynamic profile ID.
-     * @param array $optParams Optional parameters.
-     * @return DynamicProfileGenerateCodeResponse
-     * @throws \Google\Service\Exception
+     * The "dynamicProfiles" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dfareportingService = new Google\Service\Dfareporting(...);
+     *   $dynamicProfiles = $dfareportingService->dynamicProfiles;
+     *  </code>
      */
-    public function generateCode($dynamicProfileId, $optParams = [])
+    class DynamicProfiles extends \Google\Service\Resource
     {
+        /**
+         * Generates code for a dynamic profile. (dynamicProfiles.generateCode)
+         *
+         * @param string $dynamicProfileId Required. Dynamic profile ID.
+         * @param array $optParams Optional parameters.
+         * @return DynamicProfileGenerateCodeResponse
+         * @throws \Google\Service\Exception
+         */
+        public function generateCode($dynamicProfileId, $optParams = [])
+        {
+        }
+        /**
+         * Gets a dynamic profile by ID. (dynamicProfiles.get)
+         *
+         * @param string $dynamicProfileId Required. Dynamic profile ID.
+         * @param array $optParams Optional parameters.
+         * @return DynamicProfile
+         * @throws \Google\Service\Exception
+         */
+        public function get($dynamicProfileId, $optParams = [])
+        {
+        }
+        /**
+         * Inserts a new dynamic profile. (dynamicProfiles.insert)
+         *
+         * @param DynamicProfile $postBody
+         * @param array $optParams Optional parameters.
+         * @return DynamicProfile
+         * @throws \Google\Service\Exception
+         */
+        public function insert(DynamicProfile $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Publish for a dynamic profile. (dynamicProfiles.publish)
+         *
+         * @param string $dynamicProfileId Required. Dynamic profile ID.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function publish($dynamicProfileId, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing dynamic profile. (dynamicProfiles.update)
+         *
+         * @param DynamicProfile $postBody
+         * @param array $optParams Optional parameters.
+         * @return DynamicProfile
+         * @throws \Google\Service\Exception
+         */
+        public function update(DynamicProfile $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets a dynamic profile by ID. (dynamicProfiles.get)
-     *
-     * @param string $dynamicProfileId Required. Dynamic profile ID.
-     * @param array $optParams Optional parameters.
-     * @return DynamicProfile
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dfareporting\Resource\DynamicProfiles registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($dynamicProfileId, $optParams = [])
-    {
-    }
-    /**
-     * Inserts a new dynamic profile. (dynamicProfiles.insert)
-     *
-     * @param DynamicProfile $postBody
-     * @param array $optParams Optional parameters.
-     * @return DynamicProfile
-     * @throws \Google\Service\Exception
-     */
-    public function insert(DynamicProfile $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Publish for a dynamic profile. (dynamicProfiles.publish)
-     *
-     * @param string $dynamicProfileId Required. Dynamic profile ID.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
-     */
-    public function publish($dynamicProfileId, $optParams = [])
-    {
-    }
-    /**
-     * Updates an existing dynamic profile. (dynamicProfiles.update)
-     *
-     * @param DynamicProfile $postBody
-     * @param array $optParams Optional parameters.
-     * @return DynamicProfile
-     * @throws \Google\Service\Exception
-     */
-    public function update(DynamicProfile $postBody, $optParams = [])
+    class Google_Service_Dfareporting_Resource_DynamicProfiles extends \Google\Service\Dfareporting\Resource\DynamicProfiles
     {
     }
 }

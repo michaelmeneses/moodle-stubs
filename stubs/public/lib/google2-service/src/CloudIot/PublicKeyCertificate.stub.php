@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIot;
-
-class PublicKeyCertificate extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $certificate;
-    /**
-     * @var string
-     */
-    public $format;
-    protected $x509DetailsType = X509CertificateDetails::class;
-    protected $x509DetailsDataType = '';
-    /**
-     * @param string
-     */
-    public function setCertificate($certificate)
+namespace Google\Service\CloudIot {
+    class PublicKeyCertificate extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $certificate;
+        /**
+         * @var string
+         */
+        public $format;
+        protected $x509DetailsType = X509CertificateDetails::class;
+        protected $x509DetailsDataType = '';
+        /**
+         * @param string
+         */
+        public function setCertificate($certificate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCertificate()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setFormat($format)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFormat()
+        {
+        }
+        /**
+         * @param X509CertificateDetails
+         */
+        public function setX509Details(X509CertificateDetails $x509Details)
+        {
+        }
+        /**
+         * @return X509CertificateDetails
+         */
+        public function getX509Details()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudIot\PublicKeyCertificate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCertificate()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setFormat($format)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFormat()
-    {
-    }
-    /**
-     * @param X509CertificateDetails
-     */
-    public function setX509Details(X509CertificateDetails $x509Details)
-    {
-    }
-    /**
-     * @return X509CertificateDetails
-     */
-    public function getX509Details()
+    class Google_Service_CloudIot_PublicKeyCertificate extends \Google\Service\CloudIot\PublicKeyCertificate
     {
     }
 }

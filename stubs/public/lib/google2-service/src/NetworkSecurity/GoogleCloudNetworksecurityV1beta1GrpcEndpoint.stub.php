@@ -21,15 +21,24 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity;
-
-class GoogleCloudNetworksecurityV1beta1GrpcEndpoint extends \Google\Model
-{
-    public $targetUri;
-    public function setTargetUri($targetUri)
+namespace Google\Service\NetworkSecurity {
+    class GoogleCloudNetworksecurityV1beta1GrpcEndpoint extends \Google\Model
     {
+        public $targetUri;
+        public function setTargetUri($targetUri)
+        {
+        }
+        public function getTargetUri()
+        {
+        }
     }
-    public function getTargetUri()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\NetworkSecurity\GoogleCloudNetworksecurityV1beta1GrpcEndpoint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_NetworkSecurity_GoogleCloudNetworksecurityV1beta1GrpcEndpoint extends \Google\Service\NetworkSecurity\GoogleCloudNetworksecurityV1beta1GrpcEndpoint
     {
     }
 }

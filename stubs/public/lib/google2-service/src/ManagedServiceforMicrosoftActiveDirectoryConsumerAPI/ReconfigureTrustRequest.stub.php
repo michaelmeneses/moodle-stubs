@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI;
-
-class ReconfigureTrustRequest extends \Google\Collection
-{
-    protected $collection_key = 'targetDnsIpAddresses';
-    /**
-     * Required. The target DNS server IP addresses to resolve the remote domain
-     * involved in the trust.
-     *
-     * @var string[]
-     */
-    public $targetDnsIpAddresses;
-    /**
-     * Required. The fully-qualified target domain name which will be in trust
-     * with current domain.
-     *
-     * @var string
-     */
-    public $targetDomainName;
-    /**
-     * Required. The target DNS server IP addresses to resolve the remote domain
-     * involved in the trust.
-     *
-     * @param string[] $targetDnsIpAddresses
-     */
-    public function setTargetDnsIpAddresses($targetDnsIpAddresses)
+namespace Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI {
+    class ReconfigureTrustRequest extends \Google\Collection
     {
+        protected $collection_key = 'targetDnsIpAddresses';
+        /**
+         * Required. The target DNS server IP addresses to resolve the remote domain
+         * involved in the trust.
+         *
+         * @var string[]
+         */
+        public $targetDnsIpAddresses;
+        /**
+         * Required. The fully-qualified target domain name which will be in trust
+         * with current domain.
+         *
+         * @var string
+         */
+        public $targetDomainName;
+        /**
+         * Required. The target DNS server IP addresses to resolve the remote domain
+         * involved in the trust.
+         *
+         * @param string[] $targetDnsIpAddresses
+         */
+        public function setTargetDnsIpAddresses($targetDnsIpAddresses)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTargetDnsIpAddresses()
+        {
+        }
+        /**
+         * Required. The fully-qualified target domain name which will be in trust
+         * with current domain.
+         *
+         * @param string $targetDomainName
+         */
+        public function setTargetDomainName($targetDomainName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetDomainName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\ReconfigureTrustRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTargetDnsIpAddresses()
-    {
-    }
-    /**
-     * Required. The fully-qualified target domain name which will be in trust
-     * with current domain.
-     *
-     * @param string $targetDomainName
-     */
-    public function setTargetDomainName($targetDomainName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetDomainName()
+    class Google_Service_ManagedServiceforMicrosoftActiveDirectoryConsumerAPI_ReconfigureTrustRequest extends \Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\ReconfigureTrustRequest
     {
     }
 }

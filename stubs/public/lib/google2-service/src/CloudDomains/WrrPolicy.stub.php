@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDomains;
-
-class WrrPolicy extends \Google\Collection
-{
-    protected $collection_key = 'item';
-    protected $itemType = WrrPolicyItem::class;
-    protected $itemDataType = 'array';
-    /**
-     * @param WrrPolicyItem[] $item
-     */
-    public function setItem($item)
+namespace Google\Service\CloudDomains {
+    class WrrPolicy extends \Google\Collection
     {
+        protected $collection_key = 'item';
+        protected $itemType = WrrPolicyItem::class;
+        protected $itemDataType = 'array';
+        /**
+         * @param WrrPolicyItem[] $item
+         */
+        public function setItem($item)
+        {
+        }
+        /**
+         * @return WrrPolicyItem[]
+         */
+        public function getItem()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return WrrPolicyItem[]
+     * Runtime class alias of \Google\Service\CloudDomains\WrrPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItem()
+    class Google_Service_CloudDomains_WrrPolicy extends \Google\Service\CloudDomains\WrrPolicy
     {
     }
 }

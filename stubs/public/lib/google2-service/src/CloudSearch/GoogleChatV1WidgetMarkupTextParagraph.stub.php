@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class GoogleChatV1WidgetMarkupTextParagraph extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $text;
-    /**
-     * @param string
-     */
-    public function setText($text)
+namespace Google\Service\CloudSearch {
+    class GoogleChatV1WidgetMarkupTextParagraph extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $text;
+        /**
+         * @param string
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\GoogleChatV1WidgetMarkupTextParagraph registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getText()
+    class Google_Service_CloudSearch_GoogleChatV1WidgetMarkupTextParagraph extends \Google\Service\CloudSearch\GoogleChatV1WidgetMarkupTextParagraph
     {
     }
 }

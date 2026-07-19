@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class UpdateTableRequest extends \Google\Model
-{
-    /**
-     * Required. The fields that should be updated. At least one field must be
-     * specified. The root `table` is implied and should not be specified. A
-     * single `"*"` can be used as short-hand for listing every field.
-     *
-     * @var string
-     */
-    public $fields;
-    protected $tableType = Table::class;
-    protected $tableDataType = '';
-    /**
-     * Required. The fields that should be updated. At least one field must be
-     * specified. The root `table` is implied and should not be specified. A
-     * single `"*"` can be used as short-hand for listing every field.
-     *
-     * @param string $fields
-     */
-    public function setFields($fields)
+namespace Google\Service\Sheets {
+    class UpdateTableRequest extends \Google\Model
     {
+        /**
+         * Required. The fields that should be updated. At least one field must be
+         * specified. The root `table` is implied and should not be specified. A
+         * single `"*"` can be used as short-hand for listing every field.
+         *
+         * @var string
+         */
+        public $fields;
+        protected $tableType = Table::class;
+        protected $tableDataType = '';
+        /**
+         * Required. The fields that should be updated. At least one field must be
+         * specified. The root `table` is implied and should not be specified. A
+         * single `"*"` can be used as short-hand for listing every field.
+         *
+         * @param string $fields
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFields()
+        {
+        }
+        /**
+         * Required. The table to update.
+         *
+         * @param Table $table
+         */
+        public function setTable(Table $table)
+        {
+        }
+        /**
+         * @return Table
+         */
+        public function getTable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Sheets\UpdateTableRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFields()
-    {
-    }
-    /**
-     * Required. The table to update.
-     *
-     * @param Table $table
-     */
-    public function setTable(Table $table)
-    {
-    }
-    /**
-     * @return Table
-     */
-    public function getTable()
+    class Google_Service_Sheets_UpdateTableRequest extends \Google\Service\Sheets\UpdateTableRequest
     {
     }
 }

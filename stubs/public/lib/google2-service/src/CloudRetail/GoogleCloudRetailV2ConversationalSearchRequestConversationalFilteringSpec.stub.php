@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2ConversationalSearchRequestConversationalFilteringSpec extends \Google\Model
-{
-    /**
-     * Default value.
-     */
-    public const CONVERSATIONAL_FILTERING_MODE_MODE_UNSPECIFIED = 'MODE_UNSPECIFIED';
-    /**
-     * Disables Conversational Filtering when using Conversational Search.
-     */
-    public const CONVERSATIONAL_FILTERING_MODE_DISABLED = 'DISABLED';
-    /**
-     * Enables Conversational Filtering when using Conversational Search.
-     */
-    public const CONVERSATIONAL_FILTERING_MODE_ENABLED = 'ENABLED';
-    /**
-     * Enables Conversational Filtering without Conversational Search.
-     */
-    public const CONVERSATIONAL_FILTERING_MODE_CONVERSATIONAL_FILTER_ONLY = 'CONVERSATIONAL_FILTER_ONLY';
-    /**
-     * Optional. Mode to control Conversational Filtering. Defaults to
-     * Mode.DISABLED if it's unset.
-     *
-     * @var string
-     */
-    public $conversationalFilteringMode;
-    /**
-     * Optional. This field is deprecated. Please use
-     * ConversationalFilteringSpec.conversational_filtering_mode instead.
-     *
-     * @deprecated
-     * @var bool
-     */
-    public $enableConversationalFiltering;
-    protected $userAnswerType = GoogleCloudRetailV2ConversationalSearchRequestUserAnswer::class;
-    protected $userAnswerDataType = '';
-    /**
-     * Optional. Mode to control Conversational Filtering. Defaults to
-     * Mode.DISABLED if it's unset.
-     *
-     * Accepted values: MODE_UNSPECIFIED, DISABLED, ENABLED,
-     * CONVERSATIONAL_FILTER_ONLY
-     *
-     * @param self::CONVERSATIONAL_FILTERING_MODE_* $conversationalFilteringMode
-     */
-    public function setConversationalFilteringMode($conversationalFilteringMode)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2ConversationalSearchRequestConversationalFilteringSpec extends \Google\Model
     {
+        /**
+         * Default value.
+         */
+        public const CONVERSATIONAL_FILTERING_MODE_MODE_UNSPECIFIED = 'MODE_UNSPECIFIED';
+        /**
+         * Disables Conversational Filtering when using Conversational Search.
+         */
+        public const CONVERSATIONAL_FILTERING_MODE_DISABLED = 'DISABLED';
+        /**
+         * Enables Conversational Filtering when using Conversational Search.
+         */
+        public const CONVERSATIONAL_FILTERING_MODE_ENABLED = 'ENABLED';
+        /**
+         * Enables Conversational Filtering without Conversational Search.
+         */
+        public const CONVERSATIONAL_FILTERING_MODE_CONVERSATIONAL_FILTER_ONLY = 'CONVERSATIONAL_FILTER_ONLY';
+        /**
+         * Optional. Mode to control Conversational Filtering. Defaults to
+         * Mode.DISABLED if it's unset.
+         *
+         * @var string
+         */
+        public $conversationalFilteringMode;
+        /**
+         * Optional. This field is deprecated. Please use
+         * ConversationalFilteringSpec.conversational_filtering_mode instead.
+         *
+         * @deprecated
+         * @var bool
+         */
+        public $enableConversationalFiltering;
+        protected $userAnswerType = GoogleCloudRetailV2ConversationalSearchRequestUserAnswer::class;
+        protected $userAnswerDataType = '';
+        /**
+         * Optional. Mode to control Conversational Filtering. Defaults to
+         * Mode.DISABLED if it's unset.
+         *
+         * Accepted values: MODE_UNSPECIFIED, DISABLED, ENABLED,
+         * CONVERSATIONAL_FILTER_ONLY
+         *
+         * @param self::CONVERSATIONAL_FILTERING_MODE_* $conversationalFilteringMode
+         */
+        public function setConversationalFilteringMode($conversationalFilteringMode)
+        {
+        }
+        /**
+         * @return self::CONVERSATIONAL_FILTERING_MODE_*
+         */
+        public function getConversationalFilteringMode()
+        {
+        }
+        /**
+         * Optional. This field is deprecated. Please use
+         * ConversationalFilteringSpec.conversational_filtering_mode instead.
+         *
+         * @deprecated
+         * @param bool $enableConversationalFiltering
+         */
+        public function setEnableConversationalFiltering($enableConversationalFiltering)
+        {
+        }
+        /**
+         * @deprecated
+         * @return bool
+         */
+        public function getEnableConversationalFiltering()
+        {
+        }
+        /**
+         * Optional. This field specifies the current user answer during the
+         * conversational filtering search. It can be either user selected from
+         * suggested answers or user input plain text.
+         *
+         * @param GoogleCloudRetailV2ConversationalSearchRequestUserAnswer $userAnswer
+         */
+        public function setUserAnswer(GoogleCloudRetailV2ConversationalSearchRequestUserAnswer $userAnswer)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2ConversationalSearchRequestUserAnswer
+         */
+        public function getUserAnswer()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CONVERSATIONAL_FILTERING_MODE_*
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2ConversationalSearchRequestConversationalFilteringSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConversationalFilteringMode()
-    {
-    }
-    /**
-     * Optional. This field is deprecated. Please use
-     * ConversationalFilteringSpec.conversational_filtering_mode instead.
-     *
-     * @deprecated
-     * @param bool $enableConversationalFiltering
-     */
-    public function setEnableConversationalFiltering($enableConversationalFiltering)
-    {
-    }
-    /**
-     * @deprecated
-     * @return bool
-     */
-    public function getEnableConversationalFiltering()
-    {
-    }
-    /**
-     * Optional. This field specifies the current user answer during the
-     * conversational filtering search. It can be either user selected from
-     * suggested answers or user input plain text.
-     *
-     * @param GoogleCloudRetailV2ConversationalSearchRequestUserAnswer $userAnswer
-     */
-    public function setUserAnswer(GoogleCloudRetailV2ConversationalSearchRequestUserAnswer $userAnswer)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2ConversationalSearchRequestUserAnswer
-     */
-    public function getUserAnswer()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2ConversationalSearchRequestConversationalFilteringSpec extends \Google\Service\CloudRetail\GoogleCloudRetailV2ConversationalSearchRequestConversationalFilteringSpec
     {
     }
 }

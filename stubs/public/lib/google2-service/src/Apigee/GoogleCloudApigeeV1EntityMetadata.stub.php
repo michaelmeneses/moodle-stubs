@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1EntityMetadata extends \Google\Model
-{
-    /**
-     * Time at which the API proxy was created, in milliseconds since epoch.
-     *
-     * @var string
-     */
-    public $createdAt;
-    /**
-     * Time at which the API proxy was most recently modified, in milliseconds
-     * since epoch.
-     *
-     * @var string
-     */
-    public $lastModifiedAt;
-    /**
-     * The type of entity described
-     *
-     * @var string
-     */
-    public $subType;
-    /**
-     * Time at which the API proxy was created, in milliseconds since epoch.
-     *
-     * @param string $createdAt
-     */
-    public function setCreatedAt($createdAt)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1EntityMetadata extends \Google\Model
     {
+        /**
+         * Time at which the API proxy was created, in milliseconds since epoch.
+         *
+         * @var string
+         */
+        public $createdAt;
+        /**
+         * Time at which the API proxy was most recently modified, in milliseconds
+         * since epoch.
+         *
+         * @var string
+         */
+        public $lastModifiedAt;
+        /**
+         * The type of entity described
+         *
+         * @var string
+         */
+        public $subType;
+        /**
+         * Time at which the API proxy was created, in milliseconds since epoch.
+         *
+         * @param string $createdAt
+         */
+        public function setCreatedAt($createdAt)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreatedAt()
+        {
+        }
+        /**
+         * Time at which the API proxy was most recently modified, in milliseconds
+         * since epoch.
+         *
+         * @param string $lastModifiedAt
+         */
+        public function setLastModifiedAt($lastModifiedAt)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastModifiedAt()
+        {
+        }
+        /**
+         * The type of entity described
+         *
+         * @param string $subType
+         */
+        public function setSubType($subType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1EntityMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreatedAt()
-    {
-    }
-    /**
-     * Time at which the API proxy was most recently modified, in milliseconds
-     * since epoch.
-     *
-     * @param string $lastModifiedAt
-     */
-    public function setLastModifiedAt($lastModifiedAt)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastModifiedAt()
-    {
-    }
-    /**
-     * The type of entity described
-     *
-     * @param string $subType
-     */
-    public function setSubType($subType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubType()
+    class Google_Service_Apigee_GoogleCloudApigeeV1EntityMetadata extends \Google\Service\Apigee\GoogleCloudApigeeV1EntityMetadata
     {
     }
 }

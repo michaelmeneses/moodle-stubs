@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class BigQueryPartitioning extends \Google\Model
-{
-    protected $ingestionTimePartitionType = IngestionTimePartition::class;
-    protected $ingestionTimePartitionDataType = '';
-    protected $integerRangePartitionType = IntegerRangePartition::class;
-    protected $integerRangePartitionDataType = '';
-    /**
-     * Optional. If true, queries over the table require a partition filter.
-     *
-     * @var bool
-     */
-    public $requirePartitionFilter;
-    protected $timeUnitPartitionType = TimeUnitPartition::class;
-    protected $timeUnitPartitionDataType = '';
-    /**
-     * Ingestion time partitioning.
-     *
-     * @param IngestionTimePartition $ingestionTimePartition
-     */
-    public function setIngestionTimePartition(IngestionTimePartition $ingestionTimePartition)
+namespace Google\Service\Datastream {
+    class BigQueryPartitioning extends \Google\Model
     {
+        protected $ingestionTimePartitionType = IngestionTimePartition::class;
+        protected $ingestionTimePartitionDataType = '';
+        protected $integerRangePartitionType = IntegerRangePartition::class;
+        protected $integerRangePartitionDataType = '';
+        /**
+         * Optional. If true, queries over the table require a partition filter.
+         *
+         * @var bool
+         */
+        public $requirePartitionFilter;
+        protected $timeUnitPartitionType = TimeUnitPartition::class;
+        protected $timeUnitPartitionDataType = '';
+        /**
+         * Ingestion time partitioning.
+         *
+         * @param IngestionTimePartition $ingestionTimePartition
+         */
+        public function setIngestionTimePartition(IngestionTimePartition $ingestionTimePartition)
+        {
+        }
+        /**
+         * @return IngestionTimePartition
+         */
+        public function getIngestionTimePartition()
+        {
+        }
+        /**
+         * Integer range partitioning.
+         *
+         * @param IntegerRangePartition $integerRangePartition
+         */
+        public function setIntegerRangePartition(IntegerRangePartition $integerRangePartition)
+        {
+        }
+        /**
+         * @return IntegerRangePartition
+         */
+        public function getIntegerRangePartition()
+        {
+        }
+        /**
+         * Optional. If true, queries over the table require a partition filter.
+         *
+         * @param bool $requirePartitionFilter
+         */
+        public function setRequirePartitionFilter($requirePartitionFilter)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRequirePartitionFilter()
+        {
+        }
+        /**
+         * Time unit column partitioning.
+         *
+         * @param TimeUnitPartition $timeUnitPartition
+         */
+        public function setTimeUnitPartition(TimeUnitPartition $timeUnitPartition)
+        {
+        }
+        /**
+         * @return TimeUnitPartition
+         */
+        public function getTimeUnitPartition()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return IngestionTimePartition
+     * Runtime class alias of \Google\Service\Datastream\BigQueryPartitioning registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIngestionTimePartition()
-    {
-    }
-    /**
-     * Integer range partitioning.
-     *
-     * @param IntegerRangePartition $integerRangePartition
-     */
-    public function setIntegerRangePartition(IntegerRangePartition $integerRangePartition)
-    {
-    }
-    /**
-     * @return IntegerRangePartition
-     */
-    public function getIntegerRangePartition()
-    {
-    }
-    /**
-     * Optional. If true, queries over the table require a partition filter.
-     *
-     * @param bool $requirePartitionFilter
-     */
-    public function setRequirePartitionFilter($requirePartitionFilter)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getRequirePartitionFilter()
-    {
-    }
-    /**
-     * Time unit column partitioning.
-     *
-     * @param TimeUnitPartition $timeUnitPartition
-     */
-    public function setTimeUnitPartition(TimeUnitPartition $timeUnitPartition)
-    {
-    }
-    /**
-     * @return TimeUnitPartition
-     */
-    public function getTimeUnitPartition()
+    class Google_Service_Datastream_BigQueryPartitioning extends \Google\Service\Datastream\BigQueryPartitioning
     {
     }
 }

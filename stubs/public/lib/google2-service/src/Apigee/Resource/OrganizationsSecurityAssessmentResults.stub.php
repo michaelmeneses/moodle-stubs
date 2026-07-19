@@ -21,31 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee\Resource;
-
-/**
- * The "securityAssessmentResults" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apigeeService = new Google\Service\Apigee(...);
- *   $securityAssessmentResults = $apigeeService->organizations_securityAssessmentResults;
- *  </code>
- */
-class OrganizationsSecurityAssessmentResults extends \Google\Service\Resource
-{
+namespace Google\Service\Apigee\Resource {
+    use Google\Service\Apigee\GoogleCloudApigeeV1BatchComputeSecurityAssessmentResultsRequest;
+    use Google\Service\Apigee\GoogleCloudApigeeV1BatchComputeSecurityAssessmentResultsResponse;
     /**
-     * Compute RAV2 security scores for a set of resources.
-     * (securityAssessmentResults.batchCompute)
-     *
-     * @param string $name Required. Name of the organization for which the score
-     * needs to be computed in the following format:
-     * `organizations/{org}/securityAssessmentResults`
-     * @param GoogleCloudApigeeV1BatchComputeSecurityAssessmentResultsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1BatchComputeSecurityAssessmentResultsResponse
-     * @throws \Google\Service\Exception
+     * The "securityAssessmentResults" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apigeeService = new Google\Service\Apigee(...);
+     *   $securityAssessmentResults = $apigeeService->organizations_securityAssessmentResults;
+     *  </code>
      */
-    public function batchCompute($name, GoogleCloudApigeeV1BatchComputeSecurityAssessmentResultsRequest $postBody, $optParams = [])
+    class OrganizationsSecurityAssessmentResults extends \Google\Service\Resource
+    {
+        /**
+         * Compute RAV2 security scores for a set of resources.
+         * (securityAssessmentResults.batchCompute)
+         *
+         * @param string $name Required. Name of the organization for which the score
+         * needs to be computed in the following format:
+         * `organizations/{org}/securityAssessmentResults`
+         * @param GoogleCloudApigeeV1BatchComputeSecurityAssessmentResultsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1BatchComputeSecurityAssessmentResultsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function batchCompute($name, GoogleCloudApigeeV1BatchComputeSecurityAssessmentResultsRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Apigee\Resource\OrganizationsSecurityAssessmentResults registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Apigee_Resource_OrganizationsSecurityAssessmentResults extends \Google\Service\Apigee\Resource\OrganizationsSecurityAssessmentResults
     {
     }
 }

@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2RecordTransformations extends \Google\Collection
-{
-    protected $collection_key = 'recordSuppressions';
-    protected $fieldTransformationsType = GooglePrivacyDlpV2FieldTransformation::class;
-    protected $fieldTransformationsDataType = 'array';
-    protected $recordSuppressionsType = GooglePrivacyDlpV2RecordSuppression::class;
-    protected $recordSuppressionsDataType = 'array';
-    /**
-     * Transform the record by applying various field transformations.
-     *
-     * @param GooglePrivacyDlpV2FieldTransformation[] $fieldTransformations
-     */
-    public function setFieldTransformations($fieldTransformations)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2RecordTransformations extends \Google\Collection
     {
+        protected $collection_key = 'recordSuppressions';
+        protected $fieldTransformationsType = GooglePrivacyDlpV2FieldTransformation::class;
+        protected $fieldTransformationsDataType = 'array';
+        protected $recordSuppressionsType = GooglePrivacyDlpV2RecordSuppression::class;
+        protected $recordSuppressionsDataType = 'array';
+        /**
+         * Transform the record by applying various field transformations.
+         *
+         * @param GooglePrivacyDlpV2FieldTransformation[] $fieldTransformations
+         */
+        public function setFieldTransformations($fieldTransformations)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2FieldTransformation[]
+         */
+        public function getFieldTransformations()
+        {
+        }
+        /**
+         * Configuration defining which records get suppressed entirely. Records that
+         * match any suppression rule are omitted from the output.
+         *
+         * @param GooglePrivacyDlpV2RecordSuppression[] $recordSuppressions
+         */
+        public function setRecordSuppressions($recordSuppressions)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2RecordSuppression[]
+         */
+        public function getRecordSuppressions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2FieldTransformation[]
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2RecordTransformations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFieldTransformations()
-    {
-    }
-    /**
-     * Configuration defining which records get suppressed entirely. Records that
-     * match any suppression rule are omitted from the output.
-     *
-     * @param GooglePrivacyDlpV2RecordSuppression[] $recordSuppressions
-     */
-    public function setRecordSuppressions($recordSuppressions)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2RecordSuppression[]
-     */
-    public function getRecordSuppressions()
+    class Google_Service_DLP_GooglePrivacyDlpV2RecordTransformations extends \Google\Service\DLP\GooglePrivacyDlpV2RecordTransformations
     {
     }
 }

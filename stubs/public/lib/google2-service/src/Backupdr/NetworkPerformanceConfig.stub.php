@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class NetworkPerformanceConfig extends \Google\Model
-{
-    /**
-     * This value is unused.
-     */
-    public const TOTAL_EGRESS_BANDWIDTH_TIER_TIER_UNSPECIFIED = 'TIER_UNSPECIFIED';
-    /**
-     * Default network performance config.
-     */
-    public const TOTAL_EGRESS_BANDWIDTH_TIER_DEFAULT = 'DEFAULT';
-    /**
-     * Tier 1 network performance config.
-     */
-    public const TOTAL_EGRESS_BANDWIDTH_TIER_TIER_1 = 'TIER_1';
-    /**
-     * Optional. The tier of the total egress bandwidth.
-     *
-     * @var string
-     */
-    public $totalEgressBandwidthTier;
-    /**
-     * Optional. The tier of the total egress bandwidth.
-     *
-     * Accepted values: TIER_UNSPECIFIED, DEFAULT, TIER_1
-     *
-     * @param self::TOTAL_EGRESS_BANDWIDTH_TIER_* $totalEgressBandwidthTier
-     */
-    public function setTotalEgressBandwidthTier($totalEgressBandwidthTier)
+namespace Google\Service\Backupdr {
+    class NetworkPerformanceConfig extends \Google\Model
     {
+        /**
+         * This value is unused.
+         */
+        public const TOTAL_EGRESS_BANDWIDTH_TIER_TIER_UNSPECIFIED = 'TIER_UNSPECIFIED';
+        /**
+         * Default network performance config.
+         */
+        public const TOTAL_EGRESS_BANDWIDTH_TIER_DEFAULT = 'DEFAULT';
+        /**
+         * Tier 1 network performance config.
+         */
+        public const TOTAL_EGRESS_BANDWIDTH_TIER_TIER_1 = 'TIER_1';
+        /**
+         * Optional. The tier of the total egress bandwidth.
+         *
+         * @var string
+         */
+        public $totalEgressBandwidthTier;
+        /**
+         * Optional. The tier of the total egress bandwidth.
+         *
+         * Accepted values: TIER_UNSPECIFIED, DEFAULT, TIER_1
+         *
+         * @param self::TOTAL_EGRESS_BANDWIDTH_TIER_* $totalEgressBandwidthTier
+         */
+        public function setTotalEgressBandwidthTier($totalEgressBandwidthTier)
+        {
+        }
+        /**
+         * @return self::TOTAL_EGRESS_BANDWIDTH_TIER_*
+         */
+        public function getTotalEgressBandwidthTier()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::TOTAL_EGRESS_BANDWIDTH_TIER_*
+     * Runtime class alias of \Google\Service\Backupdr\NetworkPerformanceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTotalEgressBandwidthTier()
+    class Google_Service_Backupdr_NetworkPerformanceConfig extends \Google\Service\Backupdr\NetworkPerformanceConfig
     {
     }
 }

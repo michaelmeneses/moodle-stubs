@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1AuthConfigTemplate extends \Google\Collection
-{
-    protected $collection_key = 'supportedAuthTypes';
-    protected $serviceAccountType = GoogleCloudApihubV1GoogleServiceAccountConfig::class;
-    protected $serviceAccountDataType = '';
-    /**
-     * Required. The list of authentication types supported by the plugin.
-     *
-     * @var string[]
-     */
-    public $supportedAuthTypes;
-    /**
-     * Optional. The service account of the plugin hosting service. This service
-     * account should be granted the required permissions on the Auth Config
-     * parameters provided while creating the plugin instances corresponding to
-     * this plugin. For example, if the plugin instance auth config requires a
-     * secret manager secret, the service account should be granted the
-     * secretmanager.versions.access permission on the corresponding secret, if
-     * the plugin instance auth config contains a service account, the service
-     * account should be granted the iam.serviceAccounts.getAccessToken permission
-     * on the corresponding service account.
-     *
-     * @param GoogleCloudApihubV1GoogleServiceAccountConfig $serviceAccount
-     */
-    public function setServiceAccount(GoogleCloudApihubV1GoogleServiceAccountConfig $serviceAccount)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1AuthConfigTemplate extends \Google\Collection
     {
+        protected $collection_key = 'supportedAuthTypes';
+        protected $serviceAccountType = GoogleCloudApihubV1GoogleServiceAccountConfig::class;
+        protected $serviceAccountDataType = '';
+        /**
+         * Required. The list of authentication types supported by the plugin.
+         *
+         * @var string[]
+         */
+        public $supportedAuthTypes;
+        /**
+         * Optional. The service account of the plugin hosting service. This service
+         * account should be granted the required permissions on the Auth Config
+         * parameters provided while creating the plugin instances corresponding to
+         * this plugin. For example, if the plugin instance auth config requires a
+         * secret manager secret, the service account should be granted the
+         * secretmanager.versions.access permission on the corresponding secret, if
+         * the plugin instance auth config contains a service account, the service
+         * account should be granted the iam.serviceAccounts.getAccessToken permission
+         * on the corresponding service account.
+         *
+         * @param GoogleCloudApihubV1GoogleServiceAccountConfig $serviceAccount
+         */
+        public function setServiceAccount(GoogleCloudApihubV1GoogleServiceAccountConfig $serviceAccount)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1GoogleServiceAccountConfig
+         */
+        public function getServiceAccount()
+        {
+        }
+        /**
+         * Required. The list of authentication types supported by the plugin.
+         *
+         * @param string[] $supportedAuthTypes
+         */
+        public function setSupportedAuthTypes($supportedAuthTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSupportedAuthTypes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApihubV1GoogleServiceAccountConfig
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1AuthConfigTemplate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getServiceAccount()
-    {
-    }
-    /**
-     * Required. The list of authentication types supported by the plugin.
-     *
-     * @param string[] $supportedAuthTypes
-     */
-    public function setSupportedAuthTypes($supportedAuthTypes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSupportedAuthTypes()
+    class Google_Service_APIhub_GoogleCloudApihubV1AuthConfigTemplate extends \Google\Service\APIhub\GoogleCloudApihubV1AuthConfigTemplate
     {
     }
 }

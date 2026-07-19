@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseRules;
-
-class ValueCount extends \Google\Model
-{
-    /**
-     * The amount of times that expression returned.
-     *
-     * @var int
-     */
-    public $count;
-    /**
-     * The return value of the expression
-     *
-     * @var array
-     */
-    public $value;
-    /**
-     * The amount of times that expression returned.
-     *
-     * @param int $count
-     */
-    public function setCount($count)
+namespace Google\Service\FirebaseRules {
+    class ValueCount extends \Google\Model
     {
+        /**
+         * The amount of times that expression returned.
+         *
+         * @var int
+         */
+        public $count;
+        /**
+         * The return value of the expression
+         *
+         * @var array
+         */
+        public $value;
+        /**
+         * The amount of times that expression returned.
+         *
+         * @param int $count
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCount()
+        {
+        }
+        /**
+         * The return value of the expression
+         *
+         * @param array $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return array
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\FirebaseRules\ValueCount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCount()
-    {
-    }
-    /**
-     * The return value of the expression
-     *
-     * @param array $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return array
-     */
-    public function getValue()
+    class Google_Service_FirebaseRules_ValueCount extends \Google\Service\FirebaseRules\ValueCount
     {
     }
 }

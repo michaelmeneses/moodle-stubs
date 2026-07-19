@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductItemId extends \Google\Model
-{
-    /**
-     * Value of the id.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Value of the id.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductItemId extends \Google\Model
     {
+        /**
+         * Value of the id.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Value of the id.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductItemId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValue()
+    class Google_Service_SA360_GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductItemId extends \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesListingGroupFilterDimensionProductItemId
     {
     }
 }

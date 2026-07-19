@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class VideoCallMetadata extends \Google\Model
-{
-    protected $meetingSpaceType = MeetingSpace::class;
-    protected $meetingSpaceDataType = '';
-    /**
-     * @var bool
-     */
-    public $shouldNotRender;
-    /**
-     * @var bool
-     */
-    public $wasCreatedInCurrentGroup;
-    /**
-     * @param MeetingSpace
-     */
-    public function setMeetingSpace(MeetingSpace $meetingSpace)
+namespace Google\Service\CloudSearch {
+    class VideoCallMetadata extends \Google\Model
     {
+        protected $meetingSpaceType = MeetingSpace::class;
+        protected $meetingSpaceDataType = '';
+        /**
+         * @var bool
+         */
+        public $shouldNotRender;
+        /**
+         * @var bool
+         */
+        public $wasCreatedInCurrentGroup;
+        /**
+         * @param MeetingSpace
+         */
+        public function setMeetingSpace(MeetingSpace $meetingSpace)
+        {
+        }
+        /**
+         * @return MeetingSpace
+         */
+        public function getMeetingSpace()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setShouldNotRender($shouldNotRender)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getShouldNotRender()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setWasCreatedInCurrentGroup($wasCreatedInCurrentGroup)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getWasCreatedInCurrentGroup()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MeetingSpace
+     * Runtime class alias of \Google\Service\CloudSearch\VideoCallMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMeetingSpace()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setShouldNotRender($shouldNotRender)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getShouldNotRender()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setWasCreatedInCurrentGroup($wasCreatedInCurrentGroup)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getWasCreatedInCurrentGroup()
+    class Google_Service_CloudSearch_VideoCallMetadata extends \Google\Service\CloudSearch\VideoCallMetadata
     {
     }
 }

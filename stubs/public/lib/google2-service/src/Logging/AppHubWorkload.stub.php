@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Logging;
-
-class AppHubWorkload extends \Google\Model
-{
-    /**
-     * Workload criticality type Example: "CRITICAL"
-     *
-     * @var string
-     */
-    public $criticalityType;
-    /**
-     * Workload environment type Example: "DEV"
-     *
-     * @var string
-     */
-    public $environmentType;
-    /**
-     * Workload Id. Example: "my-workload"
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Workload criticality type Example: "CRITICAL"
-     *
-     * @param string $criticalityType
-     */
-    public function setCriticalityType($criticalityType)
+namespace Google\Service\Logging {
+    class AppHubWorkload extends \Google\Model
     {
+        /**
+         * Workload criticality type Example: "CRITICAL"
+         *
+         * @var string
+         */
+        public $criticalityType;
+        /**
+         * Workload environment type Example: "DEV"
+         *
+         * @var string
+         */
+        public $environmentType;
+        /**
+         * Workload Id. Example: "my-workload"
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Workload criticality type Example: "CRITICAL"
+         *
+         * @param string $criticalityType
+         */
+        public function setCriticalityType($criticalityType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCriticalityType()
+        {
+        }
+        /**
+         * Workload environment type Example: "DEV"
+         *
+         * @param string $environmentType
+         */
+        public function setEnvironmentType($environmentType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnvironmentType()
+        {
+        }
+        /**
+         * Workload Id. Example: "my-workload"
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Logging\AppHubWorkload registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCriticalityType()
-    {
-    }
-    /**
-     * Workload environment type Example: "DEV"
-     *
-     * @param string $environmentType
-     */
-    public function setEnvironmentType($environmentType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEnvironmentType()
-    {
-    }
-    /**
-     * Workload Id. Example: "my-workload"
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
+    class Google_Service_Logging_AppHubWorkload extends \Google\Service\Logging\AppHubWorkload
     {
     }
 }

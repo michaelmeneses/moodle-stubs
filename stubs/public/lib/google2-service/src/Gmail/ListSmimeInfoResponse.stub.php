@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Gmail;
-
-class ListSmimeInfoResponse extends \Google\Collection
-{
-    protected $collection_key = 'smimeInfo';
-    protected $smimeInfoType = SmimeInfo::class;
-    protected $smimeInfoDataType = 'array';
-    /**
-     * List of SmimeInfo.
-     *
-     * @param SmimeInfo[] $smimeInfo
-     */
-    public function setSmimeInfo($smimeInfo)
+namespace Google\Service\Gmail {
+    class ListSmimeInfoResponse extends \Google\Collection
     {
+        protected $collection_key = 'smimeInfo';
+        protected $smimeInfoType = SmimeInfo::class;
+        protected $smimeInfoDataType = 'array';
+        /**
+         * List of SmimeInfo.
+         *
+         * @param SmimeInfo[] $smimeInfo
+         */
+        public function setSmimeInfo($smimeInfo)
+        {
+        }
+        /**
+         * @return SmimeInfo[]
+         */
+        public function getSmimeInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SmimeInfo[]
+     * Runtime class alias of \Google\Service\Gmail\ListSmimeInfoResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSmimeInfo()
+    class Google_Service_Gmail_ListSmimeInfoResponse extends \Google\Service\Gmail\ListSmimeInfoResponse
     {
     }
 }

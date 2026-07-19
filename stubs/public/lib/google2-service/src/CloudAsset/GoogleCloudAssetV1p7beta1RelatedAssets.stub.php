@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class GoogleCloudAssetV1p7beta1RelatedAssets extends \Google\Collection
-{
-    protected $collection_key = 'assets';
-    protected $assetsType = GoogleCloudAssetV1p7beta1RelatedAsset::class;
-    protected $assetsDataType = 'array';
-    protected $relationshipAttributesType = GoogleCloudAssetV1p7beta1RelationshipAttributes::class;
-    protected $relationshipAttributesDataType = '';
-    /**
-     * The peer resources of the relationship.
-     *
-     * @param GoogleCloudAssetV1p7beta1RelatedAsset[] $assets
-     */
-    public function setAssets($assets)
+namespace Google\Service\CloudAsset {
+    class GoogleCloudAssetV1p7beta1RelatedAssets extends \Google\Collection
     {
+        protected $collection_key = 'assets';
+        protected $assetsType = GoogleCloudAssetV1p7beta1RelatedAsset::class;
+        protected $assetsDataType = 'array';
+        protected $relationshipAttributesType = GoogleCloudAssetV1p7beta1RelationshipAttributes::class;
+        protected $relationshipAttributesDataType = '';
+        /**
+         * The peer resources of the relationship.
+         *
+         * @param GoogleCloudAssetV1p7beta1RelatedAsset[] $assets
+         */
+        public function setAssets($assets)
+        {
+        }
+        /**
+         * @return GoogleCloudAssetV1p7beta1RelatedAsset[]
+         */
+        public function getAssets()
+        {
+        }
+        /**
+         * The detailed relation attributes.
+         *
+         * @param GoogleCloudAssetV1p7beta1RelationshipAttributes $relationshipAttributes
+         */
+        public function setRelationshipAttributes(GoogleCloudAssetV1p7beta1RelationshipAttributes $relationshipAttributes)
+        {
+        }
+        /**
+         * @return GoogleCloudAssetV1p7beta1RelationshipAttributes
+         */
+        public function getRelationshipAttributes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAssetV1p7beta1RelatedAsset[]
+     * Runtime class alias of \Google\Service\CloudAsset\GoogleCloudAssetV1p7beta1RelatedAssets registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssets()
-    {
-    }
-    /**
-     * The detailed relation attributes.
-     *
-     * @param GoogleCloudAssetV1p7beta1RelationshipAttributes $relationshipAttributes
-     */
-    public function setRelationshipAttributes(GoogleCloudAssetV1p7beta1RelationshipAttributes $relationshipAttributes)
-    {
-    }
-    /**
-     * @return GoogleCloudAssetV1p7beta1RelationshipAttributes
-     */
-    public function getRelationshipAttributes()
+    class Google_Service_CloudAsset_GoogleCloudAssetV1p7beta1RelatedAssets extends \Google\Service\CloudAsset\GoogleCloudAssetV1p7beta1RelatedAssets
     {
     }
 }

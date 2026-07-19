@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class ExportInstanceRequest extends \Google\Model
-{
-    protected $outputConfigType = OutputConfig::class;
-    protected $outputConfigDataType = '';
-    /**
-     * Required. Specify data to be exported.
-     *
-     * @param OutputConfig $outputConfig
-     */
-    public function setOutputConfig(OutputConfig $outputConfig)
+namespace Google\Service\CloudRedis {
+    class ExportInstanceRequest extends \Google\Model
     {
+        protected $outputConfigType = OutputConfig::class;
+        protected $outputConfigDataType = '';
+        /**
+         * Required. Specify data to be exported.
+         *
+         * @param OutputConfig $outputConfig
+         */
+        public function setOutputConfig(OutputConfig $outputConfig)
+        {
+        }
+        /**
+         * @return OutputConfig
+         */
+        public function getOutputConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return OutputConfig
+     * Runtime class alias of \Google\Service\CloudRedis\ExportInstanceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOutputConfig()
+    class Google_Service_CloudRedis_ExportInstanceRequest extends \Google\Service\CloudRedis\ExportInstanceRequest
     {
     }
 }

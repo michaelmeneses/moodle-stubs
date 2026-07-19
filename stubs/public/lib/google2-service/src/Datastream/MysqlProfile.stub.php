@@ -21,128 +21,137 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class MysqlProfile extends \Google\Model
-{
-    /**
-     * Required. Hostname for the MySQL connection.
-     *
-     * @var string
-     */
-    public $hostname;
-    /**
-     * Optional. Input only. Password for the MySQL connection. Mutually exclusive
-     * with the `secret_manager_stored_password` field.
-     *
-     * @var string
-     */
-    public $password;
-    /**
-     * Port for the MySQL connection, default value is 3306.
-     *
-     * @var int
-     */
-    public $port;
-    /**
-     * Optional. A reference to a Secret Manager resource name storing the MySQL
-     * connection password. Mutually exclusive with the `password` field.
-     *
-     * @var string
-     */
-    public $secretManagerStoredPassword;
-    protected $sslConfigType = MysqlSslConfig::class;
-    protected $sslConfigDataType = '';
-    /**
-     * Required. Username for the MySQL connection.
-     *
-     * @var string
-     */
-    public $username;
-    /**
-     * Required. Hostname for the MySQL connection.
-     *
-     * @param string $hostname
-     */
-    public function setHostname($hostname)
+namespace Google\Service\Datastream {
+    class MysqlProfile extends \Google\Model
     {
+        /**
+         * Required. Hostname for the MySQL connection.
+         *
+         * @var string
+         */
+        public $hostname;
+        /**
+         * Optional. Input only. Password for the MySQL connection. Mutually exclusive
+         * with the `secret_manager_stored_password` field.
+         *
+         * @var string
+         */
+        public $password;
+        /**
+         * Port for the MySQL connection, default value is 3306.
+         *
+         * @var int
+         */
+        public $port;
+        /**
+         * Optional. A reference to a Secret Manager resource name storing the MySQL
+         * connection password. Mutually exclusive with the `password` field.
+         *
+         * @var string
+         */
+        public $secretManagerStoredPassword;
+        protected $sslConfigType = MysqlSslConfig::class;
+        protected $sslConfigDataType = '';
+        /**
+         * Required. Username for the MySQL connection.
+         *
+         * @var string
+         */
+        public $username;
+        /**
+         * Required. Hostname for the MySQL connection.
+         *
+         * @param string $hostname
+         */
+        public function setHostname($hostname)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHostname()
+        {
+        }
+        /**
+         * Optional. Input only. Password for the MySQL connection. Mutually exclusive
+         * with the `secret_manager_stored_password` field.
+         *
+         * @param string $password
+         */
+        public function setPassword($password)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPassword()
+        {
+        }
+        /**
+         * Port for the MySQL connection, default value is 3306.
+         *
+         * @param int $port
+         */
+        public function setPort($port)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPort()
+        {
+        }
+        /**
+         * Optional. A reference to a Secret Manager resource name storing the MySQL
+         * connection password. Mutually exclusive with the `password` field.
+         *
+         * @param string $secretManagerStoredPassword
+         */
+        public function setSecretManagerStoredPassword($secretManagerStoredPassword)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecretManagerStoredPassword()
+        {
+        }
+        /**
+         * SSL configuration for the MySQL connection.
+         *
+         * @param MysqlSslConfig $sslConfig
+         */
+        public function setSslConfig(MysqlSslConfig $sslConfig)
+        {
+        }
+        /**
+         * @return MysqlSslConfig
+         */
+        public function getSslConfig()
+        {
+        }
+        /**
+         * Required. Username for the MySQL connection.
+         *
+         * @param string $username
+         */
+        public function setUsername($username)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUsername()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastream\MysqlProfile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHostname()
-    {
-    }
-    /**
-     * Optional. Input only. Password for the MySQL connection. Mutually exclusive
-     * with the `secret_manager_stored_password` field.
-     *
-     * @param string $password
-     */
-    public function setPassword($password)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPassword()
-    {
-    }
-    /**
-     * Port for the MySQL connection, default value is 3306.
-     *
-     * @param int $port
-     */
-    public function setPort($port)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPort()
-    {
-    }
-    /**
-     * Optional. A reference to a Secret Manager resource name storing the MySQL
-     * connection password. Mutually exclusive with the `password` field.
-     *
-     * @param string $secretManagerStoredPassword
-     */
-    public function setSecretManagerStoredPassword($secretManagerStoredPassword)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSecretManagerStoredPassword()
-    {
-    }
-    /**
-     * SSL configuration for the MySQL connection.
-     *
-     * @param MysqlSslConfig $sslConfig
-     */
-    public function setSslConfig(MysqlSslConfig $sslConfig)
-    {
-    }
-    /**
-     * @return MysqlSslConfig
-     */
-    public function getSslConfig()
-    {
-    }
-    /**
-     * Required. Username for the MySQL connection.
-     *
-     * @param string $username
-     */
-    public function setUsername($username)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUsername()
+    class Google_Service_Datastream_MysqlProfile extends \Google\Service\Datastream\MysqlProfile
     {
     }
 }

@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecaptchaEnterprise;
-
-class GoogleCloudRecaptchaenterpriseV1ListRelatedAccountGroupsResponse extends \Google\Collection
-{
-    protected $collection_key = 'relatedAccountGroups';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $relatedAccountGroupsType = GoogleCloudRecaptchaenterpriseV1RelatedAccountGroup::class;
-    protected $relatedAccountGroupsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\RecaptchaEnterprise {
+    class GoogleCloudRecaptchaenterpriseV1ListRelatedAccountGroupsResponse extends \Google\Collection
     {
+        protected $collection_key = 'relatedAccountGroups';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $relatedAccountGroupsType = GoogleCloudRecaptchaenterpriseV1RelatedAccountGroup::class;
+        protected $relatedAccountGroupsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The groups of related accounts listed by the query.
+         *
+         * @param GoogleCloudRecaptchaenterpriseV1RelatedAccountGroup[] $relatedAccountGroups
+         */
+        public function setRelatedAccountGroups($relatedAccountGroups)
+        {
+        }
+        /**
+         * @return GoogleCloudRecaptchaenterpriseV1RelatedAccountGroup[]
+         */
+        public function getRelatedAccountGroups()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1ListRelatedAccountGroupsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The groups of related accounts listed by the query.
-     *
-     * @param GoogleCloudRecaptchaenterpriseV1RelatedAccountGroup[] $relatedAccountGroups
-     */
-    public function setRelatedAccountGroups($relatedAccountGroups)
-    {
-    }
-    /**
-     * @return GoogleCloudRecaptchaenterpriseV1RelatedAccountGroup[]
-     */
-    public function getRelatedAccountGroups()
+    class Google_Service_RecaptchaEnterprise_GoogleCloudRecaptchaenterpriseV1ListRelatedAccountGroupsResponse extends \Google\Service\RecaptchaEnterprise\GoogleCloudRecaptchaenterpriseV1ListRelatedAccountGroupsResponse
     {
     }
 }

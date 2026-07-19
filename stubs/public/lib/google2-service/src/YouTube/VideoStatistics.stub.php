@@ -21,117 +21,126 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class VideoStatistics extends \Google\Model
-{
-    /**
-     * The number of comments for the video.
-     *
-     * @var string
-     */
-    public $commentCount;
-    /**
-     * The number of users who have indicated that they disliked the video by
-     * giving it a negative rating.
-     *
-     * @var string
-     */
-    public $dislikeCount;
-    /**
-     * The number of users who currently have the video marked as a favorite
-     * video.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $favoriteCount;
-    /**
-     * The number of users who have indicated that they liked the video by giving
-     * it a positive rating.
-     *
-     * @var string
-     */
-    public $likeCount;
-    /**
-     * The number of times the video has been viewed.
-     *
-     * @var string
-     */
-    public $viewCount;
-    /**
-     * The number of comments for the video.
-     *
-     * @param string $commentCount
-     */
-    public function setCommentCount($commentCount)
+namespace Google\Service\YouTube {
+    class VideoStatistics extends \Google\Model
     {
+        /**
+         * The number of comments for the video.
+         *
+         * @var string
+         */
+        public $commentCount;
+        /**
+         * The number of users who have indicated that they disliked the video by
+         * giving it a negative rating.
+         *
+         * @var string
+         */
+        public $dislikeCount;
+        /**
+         * The number of users who currently have the video marked as a favorite
+         * video.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $favoriteCount;
+        /**
+         * The number of users who have indicated that they liked the video by giving
+         * it a positive rating.
+         *
+         * @var string
+         */
+        public $likeCount;
+        /**
+         * The number of times the video has been viewed.
+         *
+         * @var string
+         */
+        public $viewCount;
+        /**
+         * The number of comments for the video.
+         *
+         * @param string $commentCount
+         */
+        public function setCommentCount($commentCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCommentCount()
+        {
+        }
+        /**
+         * The number of users who have indicated that they disliked the video by
+         * giving it a negative rating.
+         *
+         * @param string $dislikeCount
+         */
+        public function setDislikeCount($dislikeCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDislikeCount()
+        {
+        }
+        /**
+         * The number of users who currently have the video marked as a favorite
+         * video.
+         *
+         * @deprecated
+         * @param string $favoriteCount
+         */
+        public function setFavoriteCount($favoriteCount)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getFavoriteCount()
+        {
+        }
+        /**
+         * The number of users who have indicated that they liked the video by giving
+         * it a positive rating.
+         *
+         * @param string $likeCount
+         */
+        public function setLikeCount($likeCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLikeCount()
+        {
+        }
+        /**
+         * The number of times the video has been viewed.
+         *
+         * @param string $viewCount
+         */
+        public function setViewCount($viewCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getViewCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\VideoStatistics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommentCount()
-    {
-    }
-    /**
-     * The number of users who have indicated that they disliked the video by
-     * giving it a negative rating.
-     *
-     * @param string $dislikeCount
-     */
-    public function setDislikeCount($dislikeCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDislikeCount()
-    {
-    }
-    /**
-     * The number of users who currently have the video marked as a favorite
-     * video.
-     *
-     * @deprecated
-     * @param string $favoriteCount
-     */
-    public function setFavoriteCount($favoriteCount)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getFavoriteCount()
-    {
-    }
-    /**
-     * The number of users who have indicated that they liked the video by giving
-     * it a positive rating.
-     *
-     * @param string $likeCount
-     */
-    public function setLikeCount($likeCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLikeCount()
-    {
-    }
-    /**
-     * The number of times the video has been viewed.
-     *
-     * @param string $viewCount
-     */
-    public function setViewCount($viewCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getViewCount()
+    class Google_Service_YouTube_VideoStatistics extends \Google\Service\YouTube\VideoStatistics
     {
     }
 }

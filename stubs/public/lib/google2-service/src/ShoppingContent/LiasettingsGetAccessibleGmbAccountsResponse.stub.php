@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class LiasettingsGetAccessibleGmbAccountsResponse extends \Google\Collection
-{
-    protected $collection_key = 'gmbAccounts';
-    /**
-     * The ID of the Merchant Center account.
-     *
-     * @var string
-     */
-    public $accountId;
-    protected $gmbAccountsType = GmbAccountsGmbAccount::class;
-    protected $gmbAccountsDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "`content#liasettingsGetAccessibleGmbAccountsResponse`".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The ID of the Merchant Center account.
-     *
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\ShoppingContent {
+    class LiasettingsGetAccessibleGmbAccountsResponse extends \Google\Collection
     {
+        protected $collection_key = 'gmbAccounts';
+        /**
+         * The ID of the Merchant Center account.
+         *
+         * @var string
+         */
+        public $accountId;
+        protected $gmbAccountsType = GmbAccountsGmbAccount::class;
+        protected $gmbAccountsDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "`content#liasettingsGetAccessibleGmbAccountsResponse`".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The ID of the Merchant Center account.
+         *
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * A list of Business Profiles which are available to the merchant.
+         *
+         * @param GmbAccountsGmbAccount[] $gmbAccounts
+         */
+        public function setGmbAccounts($gmbAccounts)
+        {
+        }
+        /**
+         * @return GmbAccountsGmbAccount[]
+         */
+        public function getGmbAccounts()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "`content#liasettingsGetAccessibleGmbAccountsResponse`".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\LiasettingsGetAccessibleGmbAccountsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * A list of Business Profiles which are available to the merchant.
-     *
-     * @param GmbAccountsGmbAccount[] $gmbAccounts
-     */
-    public function setGmbAccounts($gmbAccounts)
-    {
-    }
-    /**
-     * @return GmbAccountsGmbAccount[]
-     */
-    public function getGmbAccounts()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "`content#liasettingsGetAccessibleGmbAccountsResponse`".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_ShoppingContent_LiasettingsGetAccessibleGmbAccountsResponse extends \Google\Service\ShoppingContent\LiasettingsGetAccessibleGmbAccountsResponse
     {
     }
 }

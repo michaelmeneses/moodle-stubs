@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryDataTransfer;
-
-class UnenrollDataSourcesRequest extends \Google\Collection
-{
-    protected $collection_key = 'dataSourceIds';
-    /**
-     * Data sources that are unenrolled. It is required to provide at least one
-     * data source id.
-     *
-     * @var string[]
-     */
-    public $dataSourceIds;
-    /**
-     * Data sources that are unenrolled. It is required to provide at least one
-     * data source id.
-     *
-     * @param string[] $dataSourceIds
-     */
-    public function setDataSourceIds($dataSourceIds)
+namespace Google\Service\BigQueryDataTransfer {
+    class UnenrollDataSourcesRequest extends \Google\Collection
     {
+        protected $collection_key = 'dataSourceIds';
+        /**
+         * Data sources that are unenrolled. It is required to provide at least one
+         * data source id.
+         *
+         * @var string[]
+         */
+        public $dataSourceIds;
+        /**
+         * Data sources that are unenrolled. It is required to provide at least one
+         * data source id.
+         *
+         * @param string[] $dataSourceIds
+         */
+        public function setDataSourceIds($dataSourceIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDataSourceIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\BigQueryDataTransfer\UnenrollDataSourcesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataSourceIds()
+    class Google_Service_BigQueryDataTransfer_UnenrollDataSourcesRequest extends \Google\Service\BigQueryDataTransfer\UnenrollDataSourcesRequest
     {
     }
 }

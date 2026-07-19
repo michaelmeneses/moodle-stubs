@@ -21,154 +21,163 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Translate;
-
-class AdaptiveMtDataset extends \Google\Model
-{
-    /**
-     * Output only. Timestamp when this dataset was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * The name of the dataset to show in the interface. The name can be up to 32
-     * characters long and can consist only of ASCII Latin letters A-Z and a-z,
-     * underscores (_), and ASCII digits 0-9.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The number of examples in the dataset.
-     *
-     * @var int
-     */
-    public $exampleCount;
-    /**
-     * Required. The resource name of the dataset, in form of `projects/{project-
-     * number-or-id}/locations/{location_id}/adaptiveMtDatasets/{dataset_id}`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The BCP-47 language code of the source language.
-     *
-     * @var string
-     */
-    public $sourceLanguageCode;
-    /**
-     * The BCP-47 language code of the target language.
-     *
-     * @var string
-     */
-    public $targetLanguageCode;
-    /**
-     * Output only. Timestamp when this dataset was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. Timestamp when this dataset was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Translate {
+    class AdaptiveMtDataset extends \Google\Model
     {
+        /**
+         * Output only. Timestamp when this dataset was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * The name of the dataset to show in the interface. The name can be up to 32
+         * characters long and can consist only of ASCII Latin letters A-Z and a-z,
+         * underscores (_), and ASCII digits 0-9.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The number of examples in the dataset.
+         *
+         * @var int
+         */
+        public $exampleCount;
+        /**
+         * Required. The resource name of the dataset, in form of `projects/{project-
+         * number-or-id}/locations/{location_id}/adaptiveMtDatasets/{dataset_id}`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The BCP-47 language code of the source language.
+         *
+         * @var string
+         */
+        public $sourceLanguageCode;
+        /**
+         * The BCP-47 language code of the target language.
+         *
+         * @var string
+         */
+        public $targetLanguageCode;
+        /**
+         * Output only. Timestamp when this dataset was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. Timestamp when this dataset was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The name of the dataset to show in the interface. The name can be up to 32
+         * characters long and can consist only of ASCII Latin letters A-Z and a-z,
+         * underscores (_), and ASCII digits 0-9.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The number of examples in the dataset.
+         *
+         * @param int $exampleCount
+         */
+        public function setExampleCount($exampleCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getExampleCount()
+        {
+        }
+        /**
+         * Required. The resource name of the dataset, in form of `projects/{project-
+         * number-or-id}/locations/{location_id}/adaptiveMtDatasets/{dataset_id}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The BCP-47 language code of the source language.
+         *
+         * @param string $sourceLanguageCode
+         */
+        public function setSourceLanguageCode($sourceLanguageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceLanguageCode()
+        {
+        }
+        /**
+         * The BCP-47 language code of the target language.
+         *
+         * @param string $targetLanguageCode
+         */
+        public function setTargetLanguageCode($targetLanguageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetLanguageCode()
+        {
+        }
+        /**
+         * Output only. Timestamp when this dataset was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Translate\AdaptiveMtDataset registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The name of the dataset to show in the interface. The name can be up to 32
-     * characters long and can consist only of ASCII Latin letters A-Z and a-z,
-     * underscores (_), and ASCII digits 0-9.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The number of examples in the dataset.
-     *
-     * @param int $exampleCount
-     */
-    public function setExampleCount($exampleCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getExampleCount()
-    {
-    }
-    /**
-     * Required. The resource name of the dataset, in form of `projects/{project-
-     * number-or-id}/locations/{location_id}/adaptiveMtDatasets/{dataset_id}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The BCP-47 language code of the source language.
-     *
-     * @param string $sourceLanguageCode
-     */
-    public function setSourceLanguageCode($sourceLanguageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceLanguageCode()
-    {
-    }
-    /**
-     * The BCP-47 language code of the target language.
-     *
-     * @param string $targetLanguageCode
-     */
-    public function setTargetLanguageCode($targetLanguageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetLanguageCode()
-    {
-    }
-    /**
-     * Output only. Timestamp when this dataset was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Translate_AdaptiveMtDataset extends \Google\Service\Translate\AdaptiveMtDataset
     {
     }
 }

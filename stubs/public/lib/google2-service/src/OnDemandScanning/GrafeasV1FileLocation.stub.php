@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OnDemandScanning;
-
-class GrafeasV1FileLocation extends \Google\Model
-{
-    /**
-     * For jars that are contained inside .war files, this filepath can indicate
-     * the path to war file combined with the path to jar file.
-     *
-     * @var string
-     */
-    public $filePath;
-    protected $layerDetailsType = GrafeasV1LayerDetails::class;
-    protected $layerDetailsDataType = '';
-    /**
-     * For jars that are contained inside .war files, this filepath can indicate
-     * the path to war file combined with the path to jar file.
-     *
-     * @param string $filePath
-     */
-    public function setFilePath($filePath)
+namespace Google\Service\OnDemandScanning {
+    class GrafeasV1FileLocation extends \Google\Model
     {
+        /**
+         * For jars that are contained inside .war files, this filepath can indicate
+         * the path to war file combined with the path to jar file.
+         *
+         * @var string
+         */
+        public $filePath;
+        protected $layerDetailsType = GrafeasV1LayerDetails::class;
+        protected $layerDetailsDataType = '';
+        /**
+         * For jars that are contained inside .war files, this filepath can indicate
+         * the path to war file combined with the path to jar file.
+         *
+         * @param string $filePath
+         */
+        public function setFilePath($filePath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilePath()
+        {
+        }
+        /**
+         * Each package found in a file should have its own layer metadata (that is,
+         * information from the origin layer of the package).
+         *
+         * @param GrafeasV1LayerDetails $layerDetails
+         */
+        public function setLayerDetails(GrafeasV1LayerDetails $layerDetails)
+        {
+        }
+        /**
+         * @return GrafeasV1LayerDetails
+         */
+        public function getLayerDetails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OnDemandScanning\GrafeasV1FileLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilePath()
-    {
-    }
-    /**
-     * Each package found in a file should have its own layer metadata (that is,
-     * information from the origin layer of the package).
-     *
-     * @param GrafeasV1LayerDetails $layerDetails
-     */
-    public function setLayerDetails(GrafeasV1LayerDetails $layerDetails)
-    {
-    }
-    /**
-     * @return GrafeasV1LayerDetails
-     */
-    public function getLayerDetails()
+    class Google_Service_OnDemandScanning_GrafeasV1FileLocation extends \Google\Service\OnDemandScanning\GrafeasV1FileLocation
     {
     }
 }

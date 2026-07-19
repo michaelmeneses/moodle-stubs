@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class YumSettings extends \Google\Collection
-{
-    protected $collection_key = 'exclusivePackages';
-    /**
-     * @var string[]
-     */
-    public $excludes;
-    /**
-     * @var string[]
-     */
-    public $exclusivePackages;
-    /**
-     * @var bool
-     */
-    public $minimal;
-    /**
-     * @var bool
-     */
-    public $security;
-    /**
-     * @param string[]
-     */
-    public function setExcludes($excludes)
+namespace Google\Service\OSConfig {
+    class YumSettings extends \Google\Collection
     {
+        protected $collection_key = 'exclusivePackages';
+        /**
+         * @var string[]
+         */
+        public $excludes;
+        /**
+         * @var string[]
+         */
+        public $exclusivePackages;
+        /**
+         * @var bool
+         */
+        public $minimal;
+        /**
+         * @var bool
+         */
+        public $security;
+        /**
+         * @param string[]
+         */
+        public function setExcludes($excludes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExcludes()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setExclusivePackages($exclusivePackages)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExclusivePackages()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setMinimal($minimal)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getMinimal()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setSecurity($security)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSecurity()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\OSConfig\YumSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExcludes()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setExclusivePackages($exclusivePackages)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getExclusivePackages()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setMinimal($minimal)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getMinimal()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setSecurity($security)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSecurity()
+    class Google_Service_OSConfig_YumSettings extends \Google\Service\OSConfig\YumSettings
     {
     }
 }

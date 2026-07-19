@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class GoogleDevtoolsRemotebuildexecutionAdminV1alphaCreateInstanceRequest extends \Google\Model
-{
-    protected $instanceType = GoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance::class;
-    protected $instanceDataType = '';
-    public $instanceId;
-    public $parent;
+namespace Google\Service\RemoteBuildExecution {
+    class GoogleDevtoolsRemotebuildexecutionAdminV1alphaCreateInstanceRequest extends \Google\Model
+    {
+        protected $instanceType = GoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance::class;
+        protected $instanceDataType = '';
+        public $instanceId;
+        public $parent;
+        /**
+         * @param GoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance
+         */
+        public function setInstance(GoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance $instance)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance
+         */
+        public function getInstance()
+        {
+        }
+        public function setInstanceId($instanceId)
+        {
+        }
+        public function getInstanceId()
+        {
+        }
+        public function setParent($parent)
+        {
+        }
+        public function getParent()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * @param GoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemotebuildexecutionAdminV1alphaCreateInstanceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setInstance(GoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance $instance)
-    {
-    }
-    /**
-     * @return GoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance
-     */
-    public function getInstance()
-    {
-    }
-    public function setInstanceId($instanceId)
-    {
-    }
-    public function getInstanceId()
-    {
-    }
-    public function setParent($parent)
-    {
-    }
-    public function getParent()
+    class Google_Service_RemoteBuildExecution_GoogleDevtoolsRemotebuildexecutionAdminV1alphaCreateInstanceRequest extends \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemotebuildexecutionAdminV1alphaCreateInstanceRequest
     {
     }
 }

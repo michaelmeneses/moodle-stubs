@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution;
-
-class NetworkMountPoint extends \Google\Model
-{
-    /**
-     * Network should be a default gateway.
-     *
-     * @var bool
-     */
-    public $defaultGateway;
-    /**
-     * Instance to attach network to.
-     *
-     * @var string
-     */
-    public $instance;
-    /**
-     * Ip address of the server.
-     *
-     * @var string
-     */
-    public $ipAddress;
-    /**
-     * Logical interface to detach from.
-     *
-     * @var string
-     */
-    public $logicalInterface;
-    /**
-     * Network should be a default gateway.
-     *
-     * @param bool $defaultGateway
-     */
-    public function setDefaultGateway($defaultGateway)
+namespace Google\Service\Baremetalsolution {
+    class NetworkMountPoint extends \Google\Model
     {
+        /**
+         * Network should be a default gateway.
+         *
+         * @var bool
+         */
+        public $defaultGateway;
+        /**
+         * Instance to attach network to.
+         *
+         * @var string
+         */
+        public $instance;
+        /**
+         * Ip address of the server.
+         *
+         * @var string
+         */
+        public $ipAddress;
+        /**
+         * Logical interface to detach from.
+         *
+         * @var string
+         */
+        public $logicalInterface;
+        /**
+         * Network should be a default gateway.
+         *
+         * @param bool $defaultGateway
+         */
+        public function setDefaultGateway($defaultGateway)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDefaultGateway()
+        {
+        }
+        /**
+         * Instance to attach network to.
+         *
+         * @param string $instance
+         */
+        public function setInstance($instance)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstance()
+        {
+        }
+        /**
+         * Ip address of the server.
+         *
+         * @param string $ipAddress
+         */
+        public function setIpAddress($ipAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIpAddress()
+        {
+        }
+        /**
+         * Logical interface to detach from.
+         *
+         * @param string $logicalInterface
+         */
+        public function setLogicalInterface($logicalInterface)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLogicalInterface()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Baremetalsolution\NetworkMountPoint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefaultGateway()
-    {
-    }
-    /**
-     * Instance to attach network to.
-     *
-     * @param string $instance
-     */
-    public function setInstance($instance)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstance()
-    {
-    }
-    /**
-     * Ip address of the server.
-     *
-     * @param string $ipAddress
-     */
-    public function setIpAddress($ipAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIpAddress()
-    {
-    }
-    /**
-     * Logical interface to detach from.
-     *
-     * @param string $logicalInterface
-     */
-    public function setLogicalInterface($logicalInterface)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLogicalInterface()
+    class Google_Service_Baremetalsolution_NetworkMountPoint extends \Google\Service\Baremetalsolution\NetworkMountPoint
     {
     }
 }

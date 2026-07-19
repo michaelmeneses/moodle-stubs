@@ -21,148 +21,157 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1AssetDiscoveryStatus extends \Google\Model
-{
-    /**
-     * State is unspecified.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * Discovery for the asset is scheduled.
-     */
-    public const STATE_SCHEDULED = 'SCHEDULED';
-    /**
-     * Discovery for the asset is running.
-     */
-    public const STATE_IN_PROGRESS = 'IN_PROGRESS';
-    /**
-     * Discovery for the asset is currently paused (e.g. due to a lack of
-     * available resources). It will be automatically resumed.
-     */
-    public const STATE_PAUSED = 'PAUSED';
-    /**
-     * Discovery for the asset is disabled.
-     */
-    public const STATE_DISABLED = 'DISABLED';
-    /**
-     * The duration of the last discovery run.
-     *
-     * @var string
-     */
-    public $lastRunDuration;
-    /**
-     * The start time of the last discovery run.
-     *
-     * @var string
-     */
-    public $lastRunTime;
-    /**
-     * Additional information about the current state.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * The current status of the discovery feature.
-     *
-     * @var string
-     */
-    public $state;
-    protected $statsType = GoogleCloudDataplexV1AssetDiscoveryStatusStats::class;
-    protected $statsDataType = '';
-    /**
-     * Last update time of the status.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * The duration of the last discovery run.
-     *
-     * @param string $lastRunDuration
-     */
-    public function setLastRunDuration($lastRunDuration)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1AssetDiscoveryStatus extends \Google\Model
     {
+        /**
+         * State is unspecified.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * Discovery for the asset is scheduled.
+         */
+        public const STATE_SCHEDULED = 'SCHEDULED';
+        /**
+         * Discovery for the asset is running.
+         */
+        public const STATE_IN_PROGRESS = 'IN_PROGRESS';
+        /**
+         * Discovery for the asset is currently paused (e.g. due to a lack of
+         * available resources). It will be automatically resumed.
+         */
+        public const STATE_PAUSED = 'PAUSED';
+        /**
+         * Discovery for the asset is disabled.
+         */
+        public const STATE_DISABLED = 'DISABLED';
+        /**
+         * The duration of the last discovery run.
+         *
+         * @var string
+         */
+        public $lastRunDuration;
+        /**
+         * The start time of the last discovery run.
+         *
+         * @var string
+         */
+        public $lastRunTime;
+        /**
+         * Additional information about the current state.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * The current status of the discovery feature.
+         *
+         * @var string
+         */
+        public $state;
+        protected $statsType = GoogleCloudDataplexV1AssetDiscoveryStatusStats::class;
+        protected $statsDataType = '';
+        /**
+         * Last update time of the status.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * The duration of the last discovery run.
+         *
+         * @param string $lastRunDuration
+         */
+        public function setLastRunDuration($lastRunDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastRunDuration()
+        {
+        }
+        /**
+         * The start time of the last discovery run.
+         *
+         * @param string $lastRunTime
+         */
+        public function setLastRunTime($lastRunTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastRunTime()
+        {
+        }
+        /**
+         * Additional information about the current state.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * The current status of the discovery feature.
+         *
+         * Accepted values: STATE_UNSPECIFIED, SCHEDULED, IN_PROGRESS, PAUSED,
+         * DISABLED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Data Stats of the asset reported by discovery.
+         *
+         * @param GoogleCloudDataplexV1AssetDiscoveryStatusStats $stats
+         */
+        public function setStats(GoogleCloudDataplexV1AssetDiscoveryStatusStats $stats)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1AssetDiscoveryStatusStats
+         */
+        public function getStats()
+        {
+        }
+        /**
+         * Last update time of the status.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1AssetDiscoveryStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLastRunDuration()
-    {
-    }
-    /**
-     * The start time of the last discovery run.
-     *
-     * @param string $lastRunTime
-     */
-    public function setLastRunTime($lastRunTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastRunTime()
-    {
-    }
-    /**
-     * Additional information about the current state.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
-    {
-    }
-    /**
-     * The current status of the discovery feature.
-     *
-     * Accepted values: STATE_UNSPECIFIED, SCHEDULED, IN_PROGRESS, PAUSED,
-     * DISABLED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Data Stats of the asset reported by discovery.
-     *
-     * @param GoogleCloudDataplexV1AssetDiscoveryStatusStats $stats
-     */
-    public function setStats(GoogleCloudDataplexV1AssetDiscoveryStatusStats $stats)
-    {
-    }
-    /**
-     * @return GoogleCloudDataplexV1AssetDiscoveryStatusStats
-     */
-    public function getStats()
-    {
-    }
-    /**
-     * Last update time of the status.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1AssetDiscoveryStatus extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1AssetDiscoveryStatus
     {
     }
 }

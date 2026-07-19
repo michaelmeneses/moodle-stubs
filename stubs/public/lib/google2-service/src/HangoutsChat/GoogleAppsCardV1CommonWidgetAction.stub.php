@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class GoogleAppsCardV1CommonWidgetAction extends \Google\Model
-{
-    protected $updateVisibilityActionType = GoogleAppsCardV1UpdateVisibilityAction::class;
-    protected $updateVisibilityActionDataType = '';
-    /**
-     * The action to update the visibility of a widget.
-     *
-     * @param GoogleAppsCardV1UpdateVisibilityAction $updateVisibilityAction
-     */
-    public function setUpdateVisibilityAction(GoogleAppsCardV1UpdateVisibilityAction $updateVisibilityAction)
+namespace Google\Service\HangoutsChat {
+    class GoogleAppsCardV1CommonWidgetAction extends \Google\Model
     {
+        protected $updateVisibilityActionType = GoogleAppsCardV1UpdateVisibilityAction::class;
+        protected $updateVisibilityActionDataType = '';
+        /**
+         * The action to update the visibility of a widget.
+         *
+         * @param GoogleAppsCardV1UpdateVisibilityAction $updateVisibilityAction
+         */
+        public function setUpdateVisibilityAction(GoogleAppsCardV1UpdateVisibilityAction $updateVisibilityAction)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1UpdateVisibilityAction
+         */
+        public function getUpdateVisibilityAction()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAppsCardV1UpdateVisibilityAction
+     * Runtime class alias of \Google\Service\HangoutsChat\GoogleAppsCardV1CommonWidgetAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUpdateVisibilityAction()
+    class Google_Service_HangoutsChat_GoogleAppsCardV1CommonWidgetAction extends \Google\Service\HangoutsChat\GoogleAppsCardV1CommonWidgetAction
     {
     }
 }

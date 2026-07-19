@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Texttospeech;
-
-class TexttospeechEmpty extends \Google\Model
-{
+namespace Google\Service\Texttospeech {
+    class TexttospeechEmpty extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Texttospeech\TexttospeechEmpty registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Texttospeech_TexttospeechEmpty extends \Google\Service\Texttospeech\TexttospeechEmpty
+    {
+    }
 }

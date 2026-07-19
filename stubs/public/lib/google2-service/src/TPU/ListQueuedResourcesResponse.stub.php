@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TPU;
-
-class ListQueuedResourcesResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    /**
-     * The next page token or empty if none.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $queuedResourcesType = QueuedResource::class;
-    protected $queuedResourcesDataType = 'array';
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * The next page token or empty if none.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\TPU {
+    class ListQueuedResourcesResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        /**
+         * The next page token or empty if none.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $queuedResourcesType = QueuedResource::class;
+        protected $queuedResourcesDataType = 'array';
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * The next page token or empty if none.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The listed queued resources.
+         *
+         * @param QueuedResource[] $queuedResources
+         */
+        public function setQueuedResources($queuedResources)
+        {
+        }
+        /**
+         * @return QueuedResource[]
+         */
+        public function getQueuedResources()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\TPU\ListQueuedResourcesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The listed queued resources.
-     *
-     * @param QueuedResource[] $queuedResources
-     */
-    public function setQueuedResources($queuedResources)
-    {
-    }
-    /**
-     * @return QueuedResource[]
-     */
-    public function getQueuedResources()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_TPU_ListQueuedResourcesResponse extends \Google\Service\TPU\ListQueuedResourcesResponse
     {
     }
 }

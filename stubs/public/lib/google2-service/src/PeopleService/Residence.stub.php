@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PeopleService;
-
-class Residence extends \Google\Model
-{
-    /**
-     * True if the residence is the person's current residence; false if the
-     * residence is a past residence.
-     *
-     * @var bool
-     */
-    public $current;
-    protected $metadataType = FieldMetadata::class;
-    protected $metadataDataType = '';
-    /**
-     * The address of the residence.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * True if the residence is the person's current residence; false if the
-     * residence is a past residence.
-     *
-     * @param bool $current
-     */
-    public function setCurrent($current)
+namespace Google\Service\PeopleService {
+    class Residence extends \Google\Model
     {
+        /**
+         * True if the residence is the person's current residence; false if the
+         * residence is a past residence.
+         *
+         * @var bool
+         */
+        public $current;
+        protected $metadataType = FieldMetadata::class;
+        protected $metadataDataType = '';
+        /**
+         * The address of the residence.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * True if the residence is the person's current residence; false if the
+         * residence is a past residence.
+         *
+         * @param bool $current
+         */
+        public function setCurrent($current)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCurrent()
+        {
+        }
+        /**
+         * Metadata about the residence.
+         *
+         * @param FieldMetadata $metadata
+         */
+        public function setMetadata(FieldMetadata $metadata)
+        {
+        }
+        /**
+         * @return FieldMetadata
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * The address of the residence.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\PeopleService\Residence registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCurrent()
-    {
-    }
-    /**
-     * Metadata about the residence.
-     *
-     * @param FieldMetadata $metadata
-     */
-    public function setMetadata(FieldMetadata $metadata)
-    {
-    }
-    /**
-     * @return FieldMetadata
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * The address of the residence.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_PeopleService_Residence extends \Google\Service\PeopleService\Residence
     {
     }
 }

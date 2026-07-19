@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1QueryTimeSeriesStatsResponse extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    /**
-     * Column names corresponding to the same order as the inner values in the
-     * stats field.
-     *
-     * @var string[]
-     */
-    public $columns;
-    /**
-     * Next page token.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $valuesType = GoogleCloudApigeeV1QueryTimeSeriesStatsResponseSequence::class;
-    protected $valuesDataType = 'array';
-    /**
-     * Column names corresponding to the same order as the inner values in the
-     * stats field.
-     *
-     * @param string[] $columns
-     */
-    public function setColumns($columns)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1QueryTimeSeriesStatsResponse extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        /**
+         * Column names corresponding to the same order as the inner values in the
+         * stats field.
+         *
+         * @var string[]
+         */
+        public $columns;
+        /**
+         * Next page token.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $valuesType = GoogleCloudApigeeV1QueryTimeSeriesStatsResponseSequence::class;
+        protected $valuesDataType = 'array';
+        /**
+         * Column names corresponding to the same order as the inner values in the
+         * stats field.
+         *
+         * @param string[] $columns
+         */
+        public function setColumns($columns)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getColumns()
+        {
+        }
+        /**
+         * Next page token.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Results of the query returned as a JSON array.
+         *
+         * @param GoogleCloudApigeeV1QueryTimeSeriesStatsResponseSequence[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1QueryTimeSeriesStatsResponseSequence[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1QueryTimeSeriesStatsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumns()
-    {
-    }
-    /**
-     * Next page token.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Results of the query returned as a JSON array.
-     *
-     * @param GoogleCloudApigeeV1QueryTimeSeriesStatsResponseSequence[] $values
-     */
-    public function setValues($values)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1QueryTimeSeriesStatsResponseSequence[]
-     */
-    public function getValues()
+    class Google_Service_Apigee_GoogleCloudApigeeV1QueryTimeSeriesStatsResponse extends \Google\Service\Apigee\GoogleCloudApigeeV1QueryTimeSeriesStatsResponse
     {
     }
 }

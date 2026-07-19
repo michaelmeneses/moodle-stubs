@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class StandardConnectionFormat extends \Google\Model
-{
-    /**
-     * Optional. Deprecated: Use the `additional_options` map to specify the
-     * `directConnection` parameter instead. For example: `additional_options =
-     * {"directConnection": "true"}`. Specifies whether the client connects
-     * directly to the host[:port] in the connection URI.
-     *
-     * @deprecated
-     * @var bool
-     */
-    public $directConnection;
-    /**
-     * Optional. Deprecated: Use the `additional_options` map to specify the
-     * `directConnection` parameter instead. For example: `additional_options =
-     * {"directConnection": "true"}`. Specifies whether the client connects
-     * directly to the host[:port] in the connection URI.
-     *
-     * @deprecated
-     * @param bool $directConnection
-     */
-    public function setDirectConnection($directConnection)
+namespace Google\Service\Datastream {
+    class StandardConnectionFormat extends \Google\Model
     {
+        /**
+         * Optional. Deprecated: Use the `additional_options` map to specify the
+         * `directConnection` parameter instead. For example: `additional_options =
+         * {"directConnection": "true"}`. Specifies whether the client connects
+         * directly to the host[:port] in the connection URI.
+         *
+         * @deprecated
+         * @var bool
+         */
+        public $directConnection;
+        /**
+         * Optional. Deprecated: Use the `additional_options` map to specify the
+         * `directConnection` parameter instead. For example: `additional_options =
+         * {"directConnection": "true"}`. Specifies whether the client connects
+         * directly to the host[:port] in the connection URI.
+         *
+         * @deprecated
+         * @param bool $directConnection
+         */
+        public function setDirectConnection($directConnection)
+        {
+        }
+        /**
+         * @deprecated
+         * @return bool
+         */
+        public function getDirectConnection()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return bool
+     * Runtime class alias of \Google\Service\Datastream\StandardConnectionFormat registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDirectConnection()
+    class Google_Service_Datastream_StandardConnectionFormat extends \Google\Service\Datastream\StandardConnectionFormat
     {
     }
 }

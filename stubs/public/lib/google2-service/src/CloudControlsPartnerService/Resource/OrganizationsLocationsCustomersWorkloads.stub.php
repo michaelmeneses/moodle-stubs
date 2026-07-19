@@ -21,76 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudControlsPartnerService\Resource;
-
-/**
- * The "workloads" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudcontrolspartnerService = new Google\Service\CloudControlsPartnerService(...);
- *   $workloads = $cloudcontrolspartnerService->organizations_locations_customers_workloads;
- *  </code>
- */
-class OrganizationsLocationsCustomersWorkloads extends \Google\Service\Resource
-{
+namespace Google\Service\CloudControlsPartnerService\Resource {
+    use Google\Service\CloudControlsPartnerService\EkmConnections;
+    use Google\Service\CloudControlsPartnerService\ListWorkloadsResponse;
+    use Google\Service\CloudControlsPartnerService\PartnerPermissions;
+    use Google\Service\CloudControlsPartnerService\Workload;
     /**
-     * Gets details of a single workload (workloads.get)
-     *
-     * @param string $name Required. Format: `organizations/{organization}/locations
-     * /{location}/customers/{customer}/workloads/{workload}`
-     * @param array $optParams Optional parameters.
-     * @return Workload
-     * @throws \Google\Service\Exception
+     * The "workloads" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudcontrolspartnerService = new Google\Service\CloudControlsPartnerService(...);
+     *   $workloads = $cloudcontrolspartnerService->organizations_locations_customers_workloads;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class OrganizationsLocationsCustomersWorkloads extends \Google\Service\Resource
     {
+        /**
+         * Gets details of a single workload (workloads.get)
+         *
+         * @param string $name Required. Format: `organizations/{organization}/locations
+         * /{location}/customers/{customer}/workloads/{workload}`
+         * @param array $optParams Optional parameters.
+         * @return Workload
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets the EKM connections associated with a workload
+         * (workloads.getEkmConnections)
+         *
+         * @param string $name Required. Format: `organizations/{organization}/locations
+         * /{location}/customers/{customer}/workloads/{workload}/ekmConnections`
+         * @param array $optParams Optional parameters.
+         * @return EkmConnections
+         * @throws \Google\Service\Exception
+         */
+        public function getEkmConnections($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets the partner permissions granted for a workload
+         * (workloads.getPartnerPermissions)
+         *
+         * @param string $name Required. Name of the resource to get in the format: `org
+         * anizations/{organization}/locations/{location}/customers/{customer}/workloads
+         * /{workload}/partnerPermissions`
+         * @param array $optParams Optional parameters.
+         * @return PartnerPermissions
+         * @throws \Google\Service\Exception
+         */
+        public function getPartnerPermissions($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists customer workloads for a given customer org id
+         * (workloads.listOrganizationsLocationsCustomersWorkloads)
+         *
+         * @param string $parent Required. Parent resource Format:
+         * `organizations/{organization}/locations/{location}/customers/{customer}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. Filtering results.
+         * @opt_param string orderBy Optional. Hint for how to order the results.
+         * @opt_param int pageSize The maximum number of workloads to return. The
+         * service may return fewer than this value. If unspecified, at most 500
+         * workloads will be returned.
+         * @opt_param string pageToken A page token, received from a previous
+         * `ListWorkloads` call. Provide this to retrieve the subsequent page.
+         * @return ListWorkloadsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listOrganizationsLocationsCustomersWorkloads($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets the EKM connections associated with a workload
-     * (workloads.getEkmConnections)
-     *
-     * @param string $name Required. Format: `organizations/{organization}/locations
-     * /{location}/customers/{customer}/workloads/{workload}/ekmConnections`
-     * @param array $optParams Optional parameters.
-     * @return EkmConnections
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\CloudControlsPartnerService\Resource\OrganizationsLocationsCustomersWorkloads registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEkmConnections($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets the partner permissions granted for a workload
-     * (workloads.getPartnerPermissions)
-     *
-     * @param string $name Required. Name of the resource to get in the format: `org
-     * anizations/{organization}/locations/{location}/customers/{customer}/workloads
-     * /{workload}/partnerPermissions`
-     * @param array $optParams Optional parameters.
-     * @return PartnerPermissions
-     * @throws \Google\Service\Exception
-     */
-    public function getPartnerPermissions($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists customer workloads for a given customer org id
-     * (workloads.listOrganizationsLocationsCustomersWorkloads)
-     *
-     * @param string $parent Required. Parent resource Format:
-     * `organizations/{organization}/locations/{location}/customers/{customer}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. Filtering results.
-     * @opt_param string orderBy Optional. Hint for how to order the results.
-     * @opt_param int pageSize The maximum number of workloads to return. The
-     * service may return fewer than this value. If unspecified, at most 500
-     * workloads will be returned.
-     * @opt_param string pageToken A page token, received from a previous
-     * `ListWorkloads` call. Provide this to retrieve the subsequent page.
-     * @return ListWorkloadsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listOrganizationsLocationsCustomersWorkloads($parent, $optParams = [])
+    class Google_Service_CloudControlsPartnerService_Resource_OrganizationsLocationsCustomersWorkloads extends \Google\Service\CloudControlsPartnerService\Resource\OrganizationsLocationsCustomersWorkloads
     {
     }
 }

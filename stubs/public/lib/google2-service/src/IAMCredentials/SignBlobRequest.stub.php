@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\IAMCredentials;
-
-class SignBlobRequest extends \Google\Collection
-{
-    protected $collection_key = 'delegates';
-    /**
-     * The sequence of service accounts in a delegation chain. Each service
-     * account must be granted the `roles/iam.serviceAccountTokenCreator` role on
-     * its next service account in the chain. The last service account in the
-     * chain must be granted the `roles/iam.serviceAccountTokenCreator` role on
-     * the service account that is specified in the `name` field of the request.
-     * The delegates must have the following format:
-     * `projects/-/serviceAccounts/{ACCOUNT_EMAIL_OR_UNIQUEID}`. The `-` wildcard
-     * character is required; replacing it with a project ID is invalid.
-     *
-     * @var string[]
-     */
-    public $delegates;
-    /**
-     * Required. The bytes to sign.
-     *
-     * @var string
-     */
-    public $payload;
-    /**
-     * The sequence of service accounts in a delegation chain. Each service
-     * account must be granted the `roles/iam.serviceAccountTokenCreator` role on
-     * its next service account in the chain. The last service account in the
-     * chain must be granted the `roles/iam.serviceAccountTokenCreator` role on
-     * the service account that is specified in the `name` field of the request.
-     * The delegates must have the following format:
-     * `projects/-/serviceAccounts/{ACCOUNT_EMAIL_OR_UNIQUEID}`. The `-` wildcard
-     * character is required; replacing it with a project ID is invalid.
-     *
-     * @param string[] $delegates
-     */
-    public function setDelegates($delegates)
+namespace Google\Service\IAMCredentials {
+    class SignBlobRequest extends \Google\Collection
     {
+        protected $collection_key = 'delegates';
+        /**
+         * The sequence of service accounts in a delegation chain. Each service
+         * account must be granted the `roles/iam.serviceAccountTokenCreator` role on
+         * its next service account in the chain. The last service account in the
+         * chain must be granted the `roles/iam.serviceAccountTokenCreator` role on
+         * the service account that is specified in the `name` field of the request.
+         * The delegates must have the following format:
+         * `projects/-/serviceAccounts/{ACCOUNT_EMAIL_OR_UNIQUEID}`. The `-` wildcard
+         * character is required; replacing it with a project ID is invalid.
+         *
+         * @var string[]
+         */
+        public $delegates;
+        /**
+         * Required. The bytes to sign.
+         *
+         * @var string
+         */
+        public $payload;
+        /**
+         * The sequence of service accounts in a delegation chain. Each service
+         * account must be granted the `roles/iam.serviceAccountTokenCreator` role on
+         * its next service account in the chain. The last service account in the
+         * chain must be granted the `roles/iam.serviceAccountTokenCreator` role on
+         * the service account that is specified in the `name` field of the request.
+         * The delegates must have the following format:
+         * `projects/-/serviceAccounts/{ACCOUNT_EMAIL_OR_UNIQUEID}`. The `-` wildcard
+         * character is required; replacing it with a project ID is invalid.
+         *
+         * @param string[] $delegates
+         */
+        public function setDelegates($delegates)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDelegates()
+        {
+        }
+        /**
+         * Required. The bytes to sign.
+         *
+         * @param string $payload
+         */
+        public function setPayload($payload)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPayload()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\IAMCredentials\SignBlobRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDelegates()
-    {
-    }
-    /**
-     * Required. The bytes to sign.
-     *
-     * @param string $payload
-     */
-    public function setPayload($payload)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPayload()
+    class Google_Service_IAMCredentials_SignBlobRequest extends \Google\Service\IAMCredentials\SignBlobRequest
     {
     }
 }

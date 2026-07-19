@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class BatchUpdatePresentationResponse extends \Google\Collection
-{
-    protected $collection_key = 'replies';
-    /**
-     * The presentation the updates were applied to.
-     *
-     * @var string
-     */
-    public $presentationId;
-    protected $repliesType = Response::class;
-    protected $repliesDataType = 'array';
-    protected $writeControlType = WriteControl::class;
-    protected $writeControlDataType = '';
-    /**
-     * The presentation the updates were applied to.
-     *
-     * @param string $presentationId
-     */
-    public function setPresentationId($presentationId)
+namespace Google\Service\Slides {
+    class BatchUpdatePresentationResponse extends \Google\Collection
     {
+        protected $collection_key = 'replies';
+        /**
+         * The presentation the updates were applied to.
+         *
+         * @var string
+         */
+        public $presentationId;
+        protected $repliesType = Response::class;
+        protected $repliesDataType = 'array';
+        protected $writeControlType = WriteControl::class;
+        protected $writeControlDataType = '';
+        /**
+         * The presentation the updates were applied to.
+         *
+         * @param string $presentationId
+         */
+        public function setPresentationId($presentationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPresentationId()
+        {
+        }
+        /**
+         * The reply of the updates. This maps 1:1 with the updates, although replies
+         * to some requests may be empty.
+         *
+         * @param Response[] $replies
+         */
+        public function setReplies($replies)
+        {
+        }
+        /**
+         * @return Response[]
+         */
+        public function getReplies()
+        {
+        }
+        /**
+         * The updated write control after applying the request.
+         *
+         * @param WriteControl $writeControl
+         */
+        public function setWriteControl(WriteControl $writeControl)
+        {
+        }
+        /**
+         * @return WriteControl
+         */
+        public function getWriteControl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Slides\BatchUpdatePresentationResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPresentationId()
-    {
-    }
-    /**
-     * The reply of the updates. This maps 1:1 with the updates, although replies
-     * to some requests may be empty.
-     *
-     * @param Response[] $replies
-     */
-    public function setReplies($replies)
-    {
-    }
-    /**
-     * @return Response[]
-     */
-    public function getReplies()
-    {
-    }
-    /**
-     * The updated write control after applying the request.
-     *
-     * @param WriteControl $writeControl
-     */
-    public function setWriteControl(WriteControl $writeControl)
-    {
-    }
-    /**
-     * @return WriteControl
-     */
-    public function getWriteControl()
+    class Google_Service_Slides_BatchUpdatePresentationResponse extends \Google\Service\Slides\BatchUpdatePresentationResponse
     {
     }
 }

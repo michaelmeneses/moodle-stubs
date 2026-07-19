@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InitialStateConfig extends \Google\Collection
-{
-    protected $collection_key = 'keks';
-    protected $dbsType = FileContentBuffer::class;
-    protected $dbsDataType = 'array';
-    protected $dbxsType = FileContentBuffer::class;
-    protected $dbxsDataType = 'array';
-    protected $keksType = FileContentBuffer::class;
-    protected $keksDataType = 'array';
-    protected $pkType = FileContentBuffer::class;
-    protected $pkDataType = '';
-    /**
-     * The Key Database (db).
-     *
-     * @param FileContentBuffer[] $dbs
-     */
-    public function setDbs($dbs)
+namespace Google\Service\Compute {
+    class InitialStateConfig extends \Google\Collection
     {
+        protected $collection_key = 'keks';
+        protected $dbsType = FileContentBuffer::class;
+        protected $dbsDataType = 'array';
+        protected $dbxsType = FileContentBuffer::class;
+        protected $dbxsDataType = 'array';
+        protected $keksType = FileContentBuffer::class;
+        protected $keksDataType = 'array';
+        protected $pkType = FileContentBuffer::class;
+        protected $pkDataType = '';
+        /**
+         * The Key Database (db).
+         *
+         * @param FileContentBuffer[] $dbs
+         */
+        public function setDbs($dbs)
+        {
+        }
+        /**
+         * @return FileContentBuffer[]
+         */
+        public function getDbs()
+        {
+        }
+        /**
+         * The forbidden key database (dbx).
+         *
+         * @param FileContentBuffer[] $dbxs
+         */
+        public function setDbxs($dbxs)
+        {
+        }
+        /**
+         * @return FileContentBuffer[]
+         */
+        public function getDbxs()
+        {
+        }
+        /**
+         * The Key Exchange Key (KEK).
+         *
+         * @param FileContentBuffer[] $keks
+         */
+        public function setKeks($keks)
+        {
+        }
+        /**
+         * @return FileContentBuffer[]
+         */
+        public function getKeks()
+        {
+        }
+        /**
+         * The Platform Key (PK).
+         *
+         * @param FileContentBuffer $pk
+         */
+        public function setPk(FileContentBuffer $pk)
+        {
+        }
+        /**
+         * @return FileContentBuffer
+         */
+        public function getPk()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FileContentBuffer[]
+     * Runtime class alias of \Google\Service\Compute\InitialStateConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDbs()
-    {
-    }
-    /**
-     * The forbidden key database (dbx).
-     *
-     * @param FileContentBuffer[] $dbxs
-     */
-    public function setDbxs($dbxs)
-    {
-    }
-    /**
-     * @return FileContentBuffer[]
-     */
-    public function getDbxs()
-    {
-    }
-    /**
-     * The Key Exchange Key (KEK).
-     *
-     * @param FileContentBuffer[] $keks
-     */
-    public function setKeks($keks)
-    {
-    }
-    /**
-     * @return FileContentBuffer[]
-     */
-    public function getKeks()
-    {
-    }
-    /**
-     * The Platform Key (PK).
-     *
-     * @param FileContentBuffer $pk
-     */
-    public function setPk(FileContentBuffer $pk)
-    {
-    }
-    /**
-     * @return FileContentBuffer
-     */
-    public function getPk()
+    class Google_Service_Compute_InitialStateConfig extends \Google\Service\Compute\InitialStateConfig
     {
     }
 }

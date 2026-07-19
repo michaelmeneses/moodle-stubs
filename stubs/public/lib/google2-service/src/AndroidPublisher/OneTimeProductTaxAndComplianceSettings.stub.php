@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class OneTimeProductTaxAndComplianceSettings extends \Google\Collection
-{
-    protected $collection_key = 'regionalTaxConfigs';
-    /**
-     * Whether this one-time product is declared as a product representing a
-     * tokenized digital asset.
-     *
-     * @var bool
-     */
-    public $isTokenizedDigitalAsset;
-    /**
-     * Product tax category code to assign to the one-time product. Product tax
-     * category determines the transaction tax rates applied to the product. Refer
-     * to the [Help Center article](https://support.google.com/googleplay/android-
-     * developer/answer/16408159) for more information.
-     *
-     * @var string
-     */
-    public $productTaxCategoryCode;
-    protected $regionalTaxConfigsType = RegionalTaxConfig::class;
-    protected $regionalTaxConfigsDataType = 'array';
-    /**
-     * Whether this one-time product is declared as a product representing a
-     * tokenized digital asset.
-     *
-     * @param bool $isTokenizedDigitalAsset
-     */
-    public function setIsTokenizedDigitalAsset($isTokenizedDigitalAsset)
+namespace Google\Service\AndroidPublisher {
+    class OneTimeProductTaxAndComplianceSettings extends \Google\Collection
     {
+        protected $collection_key = 'regionalTaxConfigs';
+        /**
+         * Whether this one-time product is declared as a product representing a
+         * tokenized digital asset.
+         *
+         * @var bool
+         */
+        public $isTokenizedDigitalAsset;
+        /**
+         * Product tax category code to assign to the one-time product. Product tax
+         * category determines the transaction tax rates applied to the product. Refer
+         * to the [Help Center article](https://support.google.com/googleplay/android-
+         * developer/answer/16408159) for more information.
+         *
+         * @var string
+         */
+        public $productTaxCategoryCode;
+        protected $regionalTaxConfigsType = RegionalTaxConfig::class;
+        protected $regionalTaxConfigsDataType = 'array';
+        /**
+         * Whether this one-time product is declared as a product representing a
+         * tokenized digital asset.
+         *
+         * @param bool $isTokenizedDigitalAsset
+         */
+        public function setIsTokenizedDigitalAsset($isTokenizedDigitalAsset)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsTokenizedDigitalAsset()
+        {
+        }
+        /**
+         * Product tax category code to assign to the one-time product. Product tax
+         * category determines the transaction tax rates applied to the product. Refer
+         * to the [Help Center article](https://support.google.com/googleplay/android-
+         * developer/answer/16408159) for more information.
+         *
+         * @param string $productTaxCategoryCode
+         */
+        public function setProductTaxCategoryCode($productTaxCategoryCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductTaxCategoryCode()
+        {
+        }
+        /**
+         * Regional tax configuration.
+         *
+         * @param RegionalTaxConfig[] $regionalTaxConfigs
+         */
+        public function setRegionalTaxConfigs($regionalTaxConfigs)
+        {
+        }
+        /**
+         * @return RegionalTaxConfig[]
+         */
+        public function getRegionalTaxConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\AndroidPublisher\OneTimeProductTaxAndComplianceSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIsTokenizedDigitalAsset()
-    {
-    }
-    /**
-     * Product tax category code to assign to the one-time product. Product tax
-     * category determines the transaction tax rates applied to the product. Refer
-     * to the [Help Center article](https://support.google.com/googleplay/android-
-     * developer/answer/16408159) for more information.
-     *
-     * @param string $productTaxCategoryCode
-     */
-    public function setProductTaxCategoryCode($productTaxCategoryCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductTaxCategoryCode()
-    {
-    }
-    /**
-     * Regional tax configuration.
-     *
-     * @param RegionalTaxConfig[] $regionalTaxConfigs
-     */
-    public function setRegionalTaxConfigs($regionalTaxConfigs)
-    {
-    }
-    /**
-     * @return RegionalTaxConfig[]
-     */
-    public function getRegionalTaxConfigs()
+    class Google_Service_AndroidPublisher_OneTimeProductTaxAndComplianceSettings extends \Google\Service\AndroidPublisher\OneTimeProductTaxAndComplianceSettings
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class DeleteDuplicatesResponse extends \Google\Model
-{
-    /**
-     * The number of duplicate rows removed.
-     *
-     * @var int
-     */
-    public $duplicatesRemovedCount;
-    /**
-     * The number of duplicate rows removed.
-     *
-     * @param int $duplicatesRemovedCount
-     */
-    public function setDuplicatesRemovedCount($duplicatesRemovedCount)
+namespace Google\Service\Sheets {
+    class DeleteDuplicatesResponse extends \Google\Model
     {
+        /**
+         * The number of duplicate rows removed.
+         *
+         * @var int
+         */
+        public $duplicatesRemovedCount;
+        /**
+         * The number of duplicate rows removed.
+         *
+         * @param int $duplicatesRemovedCount
+         */
+        public function setDuplicatesRemovedCount($duplicatesRemovedCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDuplicatesRemovedCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Sheets\DeleteDuplicatesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDuplicatesRemovedCount()
+    class Google_Service_Sheets_DeleteDuplicatesResponse extends \Google\Service\Sheets\DeleteDuplicatesResponse
     {
     }
 }

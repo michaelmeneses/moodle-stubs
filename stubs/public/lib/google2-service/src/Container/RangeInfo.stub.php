@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class RangeInfo extends \Google\Model
-{
-    /**
-     * Output only. Name of a range.
-     *
-     * @var string
-     */
-    public $rangeName;
-    /**
-     * Output only. The utilization of the range.
-     *
-     * @var 
-     */
-    public $utilization;
-    /**
-     * Output only. Name of a range.
-     *
-     * @param string $rangeName
-     */
-    public function setRangeName($rangeName)
+namespace Google\Service\Container {
+    class RangeInfo extends \Google\Model
     {
+        /**
+         * Output only. Name of a range.
+         *
+         * @var string
+         */
+        public $rangeName;
+        /**
+         * Output only. The utilization of the range.
+         *
+         * @var 
+         */
+        public $utilization;
+        /**
+         * Output only. Name of a range.
+         *
+         * @param string $rangeName
+         */
+        public function setRangeName($rangeName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRangeName()
+        {
+        }
+        public function setUtilization($utilization)
+        {
+        }
+        public function getUtilization()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Container\RangeInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRangeName()
-    {
-    }
-    public function setUtilization($utilization)
-    {
-    }
-    public function getUtilization()
+    class Google_Service_Container_RangeInfo extends \Google\Service\Container\RangeInfo
     {
     }
 }

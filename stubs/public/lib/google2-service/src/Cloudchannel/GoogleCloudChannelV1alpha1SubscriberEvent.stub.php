@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1alpha1SubscriberEvent extends \Google\Model
-{
-    protected $channelPartnerEventType = GoogleCloudChannelV1alpha1ChannelPartnerEvent::class;
-    protected $channelPartnerEventDataType = '';
-    protected $customerEventType = GoogleCloudChannelV1alpha1CustomerEvent::class;
-    protected $customerEventDataType = '';
-    protected $entitlementEventType = GoogleCloudChannelV1alpha1EntitlementEvent::class;
-    protected $entitlementEventDataType = '';
-    protected $opportunityEventType = GoogleCloudChannelV1alpha1OpportunityEvent::class;
-    protected $opportunityEventDataType = '';
-    /**
-     * Channel Partner event sent as part of Pub/Sub event to partners.
-     *
-     * @param GoogleCloudChannelV1alpha1ChannelPartnerEvent $channelPartnerEvent
-     */
-    public function setChannelPartnerEvent(GoogleCloudChannelV1alpha1ChannelPartnerEvent $channelPartnerEvent)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1alpha1SubscriberEvent extends \Google\Model
     {
+        protected $channelPartnerEventType = GoogleCloudChannelV1alpha1ChannelPartnerEvent::class;
+        protected $channelPartnerEventDataType = '';
+        protected $customerEventType = GoogleCloudChannelV1alpha1CustomerEvent::class;
+        protected $customerEventDataType = '';
+        protected $entitlementEventType = GoogleCloudChannelV1alpha1EntitlementEvent::class;
+        protected $entitlementEventDataType = '';
+        protected $opportunityEventType = GoogleCloudChannelV1alpha1OpportunityEvent::class;
+        protected $opportunityEventDataType = '';
+        /**
+         * Channel Partner event sent as part of Pub/Sub event to partners.
+         *
+         * @param GoogleCloudChannelV1alpha1ChannelPartnerEvent $channelPartnerEvent
+         */
+        public function setChannelPartnerEvent(GoogleCloudChannelV1alpha1ChannelPartnerEvent $channelPartnerEvent)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1alpha1ChannelPartnerEvent
+         */
+        public function getChannelPartnerEvent()
+        {
+        }
+        /**
+         * Customer event sent as part of Pub/Sub event to partners.
+         *
+         * @param GoogleCloudChannelV1alpha1CustomerEvent $customerEvent
+         */
+        public function setCustomerEvent(GoogleCloudChannelV1alpha1CustomerEvent $customerEvent)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1alpha1CustomerEvent
+         */
+        public function getCustomerEvent()
+        {
+        }
+        /**
+         * Entitlement event sent as part of Pub/Sub event to partners.
+         *
+         * @param GoogleCloudChannelV1alpha1EntitlementEvent $entitlementEvent
+         */
+        public function setEntitlementEvent(GoogleCloudChannelV1alpha1EntitlementEvent $entitlementEvent)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1alpha1EntitlementEvent
+         */
+        public function getEntitlementEvent()
+        {
+        }
+        /**
+         * Opportunity event sent as part of Pub/Sub event to partners/integrators.
+         *
+         * @param GoogleCloudChannelV1alpha1OpportunityEvent $opportunityEvent
+         */
+        public function setOpportunityEvent(GoogleCloudChannelV1alpha1OpportunityEvent $opportunityEvent)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1alpha1OpportunityEvent
+         */
+        public function getOpportunityEvent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudChannelV1alpha1ChannelPartnerEvent
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1alpha1SubscriberEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChannelPartnerEvent()
-    {
-    }
-    /**
-     * Customer event sent as part of Pub/Sub event to partners.
-     *
-     * @param GoogleCloudChannelV1alpha1CustomerEvent $customerEvent
-     */
-    public function setCustomerEvent(GoogleCloudChannelV1alpha1CustomerEvent $customerEvent)
-    {
-    }
-    /**
-     * @return GoogleCloudChannelV1alpha1CustomerEvent
-     */
-    public function getCustomerEvent()
-    {
-    }
-    /**
-     * Entitlement event sent as part of Pub/Sub event to partners.
-     *
-     * @param GoogleCloudChannelV1alpha1EntitlementEvent $entitlementEvent
-     */
-    public function setEntitlementEvent(GoogleCloudChannelV1alpha1EntitlementEvent $entitlementEvent)
-    {
-    }
-    /**
-     * @return GoogleCloudChannelV1alpha1EntitlementEvent
-     */
-    public function getEntitlementEvent()
-    {
-    }
-    /**
-     * Opportunity event sent as part of Pub/Sub event to partners/integrators.
-     *
-     * @param GoogleCloudChannelV1alpha1OpportunityEvent $opportunityEvent
-     */
-    public function setOpportunityEvent(GoogleCloudChannelV1alpha1OpportunityEvent $opportunityEvent)
-    {
-    }
-    /**
-     * @return GoogleCloudChannelV1alpha1OpportunityEvent
-     */
-    public function getOpportunityEvent()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1alpha1SubscriberEvent extends \Google\Service\Cloudchannel\GoogleCloudChannelV1alpha1SubscriberEvent
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaAnswerQueryUnderstandingInfo extends \Google\Collection
-{
-    protected $collection_key = 'queryClassificationInfo';
-    protected $queryClassificationInfoType = GoogleCloudDiscoveryengineV1alphaAnswerQueryUnderstandingInfoQueryClassificationInfo::class;
-    protected $queryClassificationInfoDataType = 'array';
-    /**
-     * Query classification information.
-     *
-     * @param GoogleCloudDiscoveryengineV1alphaAnswerQueryUnderstandingInfoQueryClassificationInfo[] $queryClassificationInfo
-     */
-    public function setQueryClassificationInfo($queryClassificationInfo)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaAnswerQueryUnderstandingInfo extends \Google\Collection
     {
+        protected $collection_key = 'queryClassificationInfo';
+        protected $queryClassificationInfoType = GoogleCloudDiscoveryengineV1alphaAnswerQueryUnderstandingInfoQueryClassificationInfo::class;
+        protected $queryClassificationInfoDataType = 'array';
+        /**
+         * Query classification information.
+         *
+         * @param GoogleCloudDiscoveryengineV1alphaAnswerQueryUnderstandingInfoQueryClassificationInfo[] $queryClassificationInfo
+         */
+        public function setQueryClassificationInfo($queryClassificationInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaAnswerQueryUnderstandingInfoQueryClassificationInfo[]
+         */
+        public function getQueryClassificationInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1alphaAnswerQueryUnderstandingInfoQueryClassificationInfo[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaAnswerQueryUnderstandingInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getQueryClassificationInfo()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaAnswerQueryUnderstandingInfo extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaAnswerQueryUnderstandingInfo
     {
     }
 }

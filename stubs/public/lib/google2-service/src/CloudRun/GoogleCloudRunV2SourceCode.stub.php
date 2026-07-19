@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunV2SourceCode extends \Google\Model
-{
-    protected $cloudStorageSourceType = GoogleCloudRunV2CloudStorageSource::class;
-    protected $cloudStorageSourceDataType = '';
-    /**
-     * The source is a Cloud Storage bucket.
-     *
-     * @param GoogleCloudRunV2CloudStorageSource $cloudStorageSource
-     */
-    public function setCloudStorageSource(GoogleCloudRunV2CloudStorageSource $cloudStorageSource)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunV2SourceCode extends \Google\Model
     {
+        protected $cloudStorageSourceType = GoogleCloudRunV2CloudStorageSource::class;
+        protected $cloudStorageSourceDataType = '';
+        /**
+         * The source is a Cloud Storage bucket.
+         *
+         * @param GoogleCloudRunV2CloudStorageSource $cloudStorageSource
+         */
+        public function setCloudStorageSource(GoogleCloudRunV2CloudStorageSource $cloudStorageSource)
+        {
+        }
+        /**
+         * @return GoogleCloudRunV2CloudStorageSource
+         */
+        public function getCloudStorageSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRunV2CloudStorageSource
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunV2SourceCode registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudStorageSource()
+    class Google_Service_CloudRun_GoogleCloudRunV2SourceCode extends \Google\Service\CloudRun\GoogleCloudRunV2SourceCode
     {
     }
 }

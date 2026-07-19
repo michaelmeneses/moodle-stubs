@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1betaListCustomDimensionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'customDimensions';
-    protected $customDimensionsType = GoogleAnalyticsAdminV1betaCustomDimension::class;
-    protected $customDimensionsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of CustomDimensions.
-     *
-     * @param GoogleAnalyticsAdminV1betaCustomDimension[] $customDimensions
-     */
-    public function setCustomDimensions($customDimensions)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1betaListCustomDimensionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'customDimensions';
+        protected $customDimensionsType = GoogleAnalyticsAdminV1betaCustomDimension::class;
+        protected $customDimensionsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of CustomDimensions.
+         *
+         * @param GoogleAnalyticsAdminV1betaCustomDimension[] $customDimensions
+         */
+        public function setCustomDimensions($customDimensions)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1betaCustomDimension[]
+         */
+        public function getCustomDimensions()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAnalyticsAdminV1betaCustomDimension[]
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaListCustomDimensionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomDimensions()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1betaListCustomDimensionsResponse extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaListCustomDimensionsResponse
     {
     }
 }

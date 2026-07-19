@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Gmail;
-
-class ListCseIdentitiesResponse extends \Google\Collection
-{
-    protected $collection_key = 'cseIdentities';
-    protected $cseIdentitiesType = CseIdentity::class;
-    protected $cseIdentitiesDataType = 'array';
-    /**
-     * Pagination token to be passed to a subsequent ListCseIdentities call in
-     * order to retrieve the next page of identities. If this value is not
-     * returned or is the empty string, then no further pages remain.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * One page of the list of CSE identities configured for the user.
-     *
-     * @param CseIdentity[] $cseIdentities
-     */
-    public function setCseIdentities($cseIdentities)
+namespace Google\Service\Gmail {
+    class ListCseIdentitiesResponse extends \Google\Collection
     {
+        protected $collection_key = 'cseIdentities';
+        protected $cseIdentitiesType = CseIdentity::class;
+        protected $cseIdentitiesDataType = 'array';
+        /**
+         * Pagination token to be passed to a subsequent ListCseIdentities call in
+         * order to retrieve the next page of identities. If this value is not
+         * returned or is the empty string, then no further pages remain.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * One page of the list of CSE identities configured for the user.
+         *
+         * @param CseIdentity[] $cseIdentities
+         */
+        public function setCseIdentities($cseIdentities)
+        {
+        }
+        /**
+         * @return CseIdentity[]
+         */
+        public function getCseIdentities()
+        {
+        }
+        /**
+         * Pagination token to be passed to a subsequent ListCseIdentities call in
+         * order to retrieve the next page of identities. If this value is not
+         * returned or is the empty string, then no further pages remain.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CseIdentity[]
+     * Runtime class alias of \Google\Service\Gmail\ListCseIdentitiesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCseIdentities()
-    {
-    }
-    /**
-     * Pagination token to be passed to a subsequent ListCseIdentities call in
-     * order to retrieve the next page of identities. If this value is not
-     * returned or is the empty string, then no further pages remain.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Gmail_ListCseIdentitiesResponse extends \Google\Service\Gmail\ListCseIdentitiesResponse
     {
     }
 }

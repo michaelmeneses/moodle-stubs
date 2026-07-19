@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1GroundednessInstance extends \Google\Model
-{
-    /**
-     * Required. Background information provided in context used to compare
-     * against the prediction.
-     *
-     * @var string
-     */
-    public $context;
-    /**
-     * Required. Output of the evaluated model.
-     *
-     * @var string
-     */
-    public $prediction;
-    /**
-     * Required. Background information provided in context used to compare
-     * against the prediction.
-     *
-     * @param string $context
-     */
-    public function setContext($context)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1GroundednessInstance extends \Google\Model
     {
+        /**
+         * Required. Background information provided in context used to compare
+         * against the prediction.
+         *
+         * @var string
+         */
+        public $context;
+        /**
+         * Required. Output of the evaluated model.
+         *
+         * @var string
+         */
+        public $prediction;
+        /**
+         * Required. Background information provided in context used to compare
+         * against the prediction.
+         *
+         * @param string $context
+         */
+        public function setContext($context)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContext()
+        {
+        }
+        /**
+         * Required. Output of the evaluated model.
+         *
+         * @param string $prediction
+         */
+        public function setPrediction($prediction)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrediction()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1GroundednessInstance registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContext()
-    {
-    }
-    /**
-     * Required. Output of the evaluated model.
-     *
-     * @param string $prediction
-     */
-    public function setPrediction($prediction)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrediction()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1GroundednessInstance extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1GroundednessInstance
     {
     }
 }

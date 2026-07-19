@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataManager;
-
-class EventParameter extends \Google\Model
-{
-    /**
-     * Required. The name of the parameter to use.
-     *
-     * @var string
-     */
-    public $parameterName;
-    /**
-     * Required. The string representation of the value of the parameter to set.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Required. The name of the parameter to use.
-     *
-     * @param string $parameterName
-     */
-    public function setParameterName($parameterName)
+namespace Google\Service\DataManager {
+    class EventParameter extends \Google\Model
     {
+        /**
+         * Required. The name of the parameter to use.
+         *
+         * @var string
+         */
+        public $parameterName;
+        /**
+         * Required. The string representation of the value of the parameter to set.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Required. The name of the parameter to use.
+         *
+         * @param string $parameterName
+         */
+        public function setParameterName($parameterName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParameterName()
+        {
+        }
+        /**
+         * Required. The string representation of the value of the parameter to set.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataManager\EventParameter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParameterName()
-    {
-    }
-    /**
-     * Required. The string representation of the value of the parameter to set.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_DataManager_EventParameter extends \Google\Service\DataManager\EventParameter
     {
     }
 }

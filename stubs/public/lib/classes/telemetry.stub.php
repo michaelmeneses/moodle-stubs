@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core;
 
+use OpenTelemetry\API\Globals;
+use OpenTelemetry\API\Trace\LocalRootSpan;
+use OpenTelemetry\API\Trace\Propagation\TraceContextPropagator;
+use OpenTelemetry\API\Trace\Span;
+use OpenTelemetry\Context\Context;
 /**
  * OpenTelemetry Telemetry manager class for Moodle.
  *

@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution;
-
-class ServerNetworkTemplate extends \Google\Collection
-{
-    protected $collection_key = 'logicalInterfaces';
-    /**
-     * Instance types this template is applicable to.
-     *
-     * @var string[]
-     */
-    public $applicableInstanceTypes;
-    protected $logicalInterfacesType = GoogleCloudBaremetalsolutionV2ServerNetworkTemplateLogicalInterface::class;
-    protected $logicalInterfacesDataType = 'array';
-    /**
-     * Output only. Template's unique name. The full resource name follows the
-     * pattern: `projects/{project}/locations/{location}/serverNetworkTemplate/{se
-     * rver_network_template}` Generally, the {server_network_template} follows
-     * the syntax of "bond" or "nic".
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Instance types this template is applicable to.
-     *
-     * @param string[] $applicableInstanceTypes
-     */
-    public function setApplicableInstanceTypes($applicableInstanceTypes)
+namespace Google\Service\Baremetalsolution {
+    class ServerNetworkTemplate extends \Google\Collection
     {
+        protected $collection_key = 'logicalInterfaces';
+        /**
+         * Instance types this template is applicable to.
+         *
+         * @var string[]
+         */
+        public $applicableInstanceTypes;
+        protected $logicalInterfacesType = GoogleCloudBaremetalsolutionV2ServerNetworkTemplateLogicalInterface::class;
+        protected $logicalInterfacesDataType = 'array';
+        /**
+         * Output only. Template's unique name. The full resource name follows the
+         * pattern: `projects/{project}/locations/{location}/serverNetworkTemplate/{se
+         * rver_network_template}` Generally, the {server_network_template} follows
+         * the syntax of "bond" or "nic".
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Instance types this template is applicable to.
+         *
+         * @param string[] $applicableInstanceTypes
+         */
+        public function setApplicableInstanceTypes($applicableInstanceTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getApplicableInstanceTypes()
+        {
+        }
+        /**
+         * Logical interfaces.
+         *
+         * @param GoogleCloudBaremetalsolutionV2ServerNetworkTemplateLogicalInterface[] $logicalInterfaces
+         */
+        public function setLogicalInterfaces($logicalInterfaces)
+        {
+        }
+        /**
+         * @return GoogleCloudBaremetalsolutionV2ServerNetworkTemplateLogicalInterface[]
+         */
+        public function getLogicalInterfaces()
+        {
+        }
+        /**
+         * Output only. Template's unique name. The full resource name follows the
+         * pattern: `projects/{project}/locations/{location}/serverNetworkTemplate/{se
+         * rver_network_template}` Generally, the {server_network_template} follows
+         * the syntax of "bond" or "nic".
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Baremetalsolution\ServerNetworkTemplate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApplicableInstanceTypes()
-    {
-    }
-    /**
-     * Logical interfaces.
-     *
-     * @param GoogleCloudBaremetalsolutionV2ServerNetworkTemplateLogicalInterface[] $logicalInterfaces
-     */
-    public function setLogicalInterfaces($logicalInterfaces)
-    {
-    }
-    /**
-     * @return GoogleCloudBaremetalsolutionV2ServerNetworkTemplateLogicalInterface[]
-     */
-    public function getLogicalInterfaces()
-    {
-    }
-    /**
-     * Output only. Template's unique name. The full resource name follows the
-     * pattern: `projects/{project}/locations/{location}/serverNetworkTemplate/{se
-     * rver_network_template}` Generally, the {server_network_template} follows
-     * the syntax of "bond" or "nic".
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Baremetalsolution_ServerNetworkTemplate extends \Google\Service\Baremetalsolution\ServerNetworkTemplate
     {
     }
 }

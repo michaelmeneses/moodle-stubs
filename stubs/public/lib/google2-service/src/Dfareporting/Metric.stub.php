@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class Metric extends \Google\Model
-{
-    /**
-     * The kind of resource this is, in this case dfareporting#metric.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The metric name, e.g. impressions
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The kind of resource this is, in this case dfareporting#metric.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Dfareporting {
+    class Metric extends \Google\Model
     {
+        /**
+         * The kind of resource this is, in this case dfareporting#metric.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The metric name, e.g. impressions
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The kind of resource this is, in this case dfareporting#metric.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The metric name, e.g. impressions
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\Metric registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * The metric name, e.g. impressions
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Dfareporting_Metric extends \Google\Service\Dfareporting\Metric
     {
     }
 }

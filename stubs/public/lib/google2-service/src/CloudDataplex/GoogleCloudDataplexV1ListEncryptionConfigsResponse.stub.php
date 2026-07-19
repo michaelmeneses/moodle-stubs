@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1ListEncryptionConfigsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachableLocations';
-    protected $encryptionConfigsType = GoogleCloudDataplexV1EncryptionConfig::class;
-    protected $encryptionConfigsDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachableLocations;
-    /**
-     * The list of EncryptionConfigs under the given parent location.
-     *
-     * @param GoogleCloudDataplexV1EncryptionConfig[] $encryptionConfigs
-     */
-    public function setEncryptionConfigs($encryptionConfigs)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1ListEncryptionConfigsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachableLocations';
+        protected $encryptionConfigsType = GoogleCloudDataplexV1EncryptionConfig::class;
+        protected $encryptionConfigsDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachableLocations;
+        /**
+         * The list of EncryptionConfigs under the given parent location.
+         *
+         * @param GoogleCloudDataplexV1EncryptionConfig[] $encryptionConfigs
+         */
+        public function setEncryptionConfigs($encryptionConfigs)
+        {
+        }
+        /**
+         * @return GoogleCloudDataplexV1EncryptionConfig[]
+         */
+        public function getEncryptionConfigs()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachableLocations
+         */
+        public function setUnreachableLocations($unreachableLocations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachableLocations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDataplexV1EncryptionConfig[]
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1ListEncryptionConfigsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEncryptionConfigs()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachableLocations
-     */
-    public function setUnreachableLocations($unreachableLocations)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachableLocations()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1ListEncryptionConfigsResponse extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1ListEncryptionConfigsResponse
     {
     }
 }

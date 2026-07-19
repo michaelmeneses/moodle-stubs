@@ -20,78 +20,89 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core;
-
-/**
- * Provides core support for plugins that have to deal with emoticons (like HTML editor or emoticon filter).
- *
- * Whenever this manager mentiones 'emoticon object', the following data structure is expected:
- * stdClass with properties text, imagename, imagecomponent, altidentifier and altcomponent
- *
- * @see \admin_setting_emoticons
- *
- * @package     core
- * @copyright   2010 David Mudrak
- * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-class emoticon_manager
-{
+namespace core {
+    use pix_emoticon;
+    use stdClass;
     /**
-     * Returns the currently enabled emoticons
+     * Provides core support for plugins that have to deal with emoticons (like HTML editor or emoticon filter).
      *
-     * @param bool $selectable If true, only return emoticons that should be selectable from a list
-     * @return stdClass[] array of emoticon objects
+     * Whenever this manager mentiones 'emoticon object', the following data structure is expected:
+     * stdClass with properties text, imagename, imagecomponent, altidentifier and altcomponent
+     *
+     * @see \admin_setting_emoticons
+     *
+     * @package     core
+     * @copyright   2010 David Mudrak
+     * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    public function get_emoticons(bool $selectable = false): array
+    class emoticon_manager
     {
+        /**
+         * Returns the currently enabled emoticons
+         *
+         * @param bool $selectable If true, only return emoticons that should be selectable from a list
+         * @return stdClass[] array of emoticon objects
+         */
+        public function get_emoticons(bool $selectable = false): array
+        {
+        }
+        /**
+         * Converts emoticon object into renderable pix_emoticon object
+         *
+         * @param stdClass $emoticon emoticon object
+         * @param array $attributes explicit HTML attributes to set
+         * @return pix_emoticon
+         */
+        public function prepare_renderable_emoticon(stdClass $emoticon, array $attributes = []): pix_emoticon
+        {
+        }
+        /**
+         * Encodes the array of emoticon objects into a string storable in config table
+         *
+         * @param stdClass[] $emoticons array of emoticon objects
+         * @return string
+         */
+        public function encode_stored_config(array $emoticons): string
+        {
+        }
+        /**
+         * Decodes the string into an array of emoticon objects
+         *
+         * @param string $encoded
+         * @return ?array
+         */
+        public function decode_stored_config(string $encoded): ?array
+        {
+        }
+        /**
+         * Returns default set of emoticons supported by Moodle
+         *
+         * @return stdClass[] array of emoticon objects
+         */
+        public function default_emoticons(): array
+        {
+        }
+        /**
+         * Helper method preparing an emoticon object
+         *
+         * @param string|string[] $text
+         * @param string $imagename to be used by {@see pix_emoticon}
+         * @param ?string $altidentifier alternative string identifier, null for no alt
+         * @param string $altcomponent where the alternative string is defined
+         * @param string $imagecomponent to be used by {@see pix_emoticon}
+         * @return stdClass
+         */
+        protected function prepare_emoticon_object(string|array $text, string $imagename, ?string $altidentifier = null, string $altcomponent = 'core_pix', string $imagecomponent = 'core'): stdClass
+        {
+        }
     }
+}
+namespace {
     /**
-     * Converts emoticon object into renderable pix_emoticon object
-     *
-     * @param stdClass $emoticon emoticon object
-     * @param array $attributes explicit HTML attributes to set
-     * @return pix_emoticon
+     * Runtime class alias of \core\emoticon_manager registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function prepare_renderable_emoticon(stdClass $emoticon, array $attributes = []): pix_emoticon
-    {
-    }
-    /**
-     * Encodes the array of emoticon objects into a string storable in config table
-     *
-     * @param stdClass[] $emoticons array of emoticon objects
-     * @return string
-     */
-    public function encode_stored_config(array $emoticons): string
-    {
-    }
-    /**
-     * Decodes the string into an array of emoticon objects
-     *
-     * @param string $encoded
-     * @return ?array
-     */
-    public function decode_stored_config(string $encoded): ?array
-    {
-    }
-    /**
-     * Returns default set of emoticons supported by Moodle
-     *
-     * @return stdClass[] array of emoticon objects
-     */
-    public function default_emoticons(): array
-    {
-    }
-    /**
-     * Helper method preparing an emoticon object
-     *
-     * @param string|string[] $text
-     * @param string $imagename to be used by {@see pix_emoticon}
-     * @param ?string $altidentifier alternative string identifier, null for no alt
-     * @param string $altcomponent where the alternative string is defined
-     * @param string $imagecomponent to be used by {@see pix_emoticon}
-     * @return stdClass
-     */
-    protected function prepare_emoticon_object(string|array $text, string $imagename, ?string $altidentifier = null, string $altcomponent = 'core_pix', string $imagecomponent = 'core'): stdClass
+    class emoticon_manager extends \core\emoticon_manager
     {
     }
 }

@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class LoyaltyPointsBalance extends \Google\Model
-{
-    /**
-     * The double form of a balance. Only one of these subtypes (string, int,
-     * double, money) should be populated.
-     *
-     * @var 
-     */
-    public $double;
-    /**
-     * The integer form of a balance. Only one of these subtypes (string, int,
-     * double, money) should be populated.
-     *
-     * @var int
-     */
-    public $int;
-    protected $moneyType = Money::class;
-    protected $moneyDataType = '';
-    /**
-     * The string form of a balance. Only one of these subtypes (string, int,
-     * double, money) should be populated.
-     *
-     * @var string
-     */
-    public $string;
-    public function setDouble($double)
+namespace Google\Service\Walletobjects {
+    class LoyaltyPointsBalance extends \Google\Model
     {
+        /**
+         * The double form of a balance. Only one of these subtypes (string, int,
+         * double, money) should be populated.
+         *
+         * @var 
+         */
+        public $double;
+        /**
+         * The integer form of a balance. Only one of these subtypes (string, int,
+         * double, money) should be populated.
+         *
+         * @var int
+         */
+        public $int;
+        protected $moneyType = Money::class;
+        protected $moneyDataType = '';
+        /**
+         * The string form of a balance. Only one of these subtypes (string, int,
+         * double, money) should be populated.
+         *
+         * @var string
+         */
+        public $string;
+        public function setDouble($double)
+        {
+        }
+        public function getDouble()
+        {
+        }
+        /**
+         * The integer form of a balance. Only one of these subtypes (string, int,
+         * double, money) should be populated.
+         *
+         * @param int $int
+         */
+        public function setInt($int)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getInt()
+        {
+        }
+        /**
+         * The money form of a balance. Only one of these subtypes (string, int,
+         * double, money) should be populated.
+         *
+         * @param Money $money
+         */
+        public function setMoney(Money $money)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getMoney()
+        {
+        }
+        /**
+         * The string form of a balance. Only one of these subtypes (string, int,
+         * double, money) should be populated.
+         *
+         * @param string $string
+         */
+        public function setString($string)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getString()
+        {
+        }
     }
-    public function getDouble()
-    {
-    }
+}
+namespace {
     /**
-     * The integer form of a balance. Only one of these subtypes (string, int,
-     * double, money) should be populated.
-     *
-     * @param int $int
+     * Runtime class alias of \Google\Service\Walletobjects\LoyaltyPointsBalance registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setInt($int)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getInt()
-    {
-    }
-    /**
-     * The money form of a balance. Only one of these subtypes (string, int,
-     * double, money) should be populated.
-     *
-     * @param Money $money
-     */
-    public function setMoney(Money $money)
-    {
-    }
-    /**
-     * @return Money
-     */
-    public function getMoney()
-    {
-    }
-    /**
-     * The string form of a balance. Only one of these subtypes (string, int,
-     * double, money) should be populated.
-     *
-     * @param string $string
-     */
-    public function setString($string)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getString()
+    class Google_Service_Walletobjects_LoyaltyPointsBalance extends \Google\Service\Walletobjects\LoyaltyPointsBalance
     {
     }
 }

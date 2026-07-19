@@ -21,148 +21,157 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Batch;
-
-class InstancePolicyOrTemplate extends \Google\Model
-{
-    /**
-     * Optional. Set this field to `true` if you want Batch to block project-level
-     * SSH keys from accessing this job's VMs. Alternatively, you can configure
-     * the job to specify a VM instance template that blocks project-level SSH
-     * keys. In either case, Batch blocks project-level SSH keys while creating
-     * the VMs for this job. Batch allows project-level SSH keys for a job's VMs
-     * only if all the following are true: + This field is undefined or set to
-     * `false`. + The job's VM instance template (if any) doesn't block project-
-     * level SSH keys. Notably, you can override this behavior by manually
-     * updating a VM to block or allow project-level SSH keys. For more
-     * information about blocking project-level SSH keys, see the Compute Engine
-     * documentation: https://cloud.google.com/compute/docs/connect/restrict-ssh-
-     * keys#block-keys
-     *
-     * @var bool
-     */
-    public $blockProjectSshKeys;
-    /**
-     * Set this field true if you want Batch to help fetch drivers from a third
-     * party location and install them for GPUs specified in `policy.accelerators`
-     * or `instance_template` on your behalf. Default is false. For Container-
-     * Optimized Image cases, Batch will install the accelerator driver following
-     * milestones of https://cloud.google.com/container-optimized-os/docs/release-
-     * notes. For non Container-Optimized Image cases, following
-     * https://github.com/GoogleCloudPlatform/compute-gpu-
-     * installation/blob/main/linux/install_gpu_driver.py.
-     *
-     * @var bool
-     */
-    public $installGpuDrivers;
-    /**
-     * Optional. Set this field true if you want Batch to install Ops Agent on
-     * your behalf. Default is false.
-     *
-     * @var bool
-     */
-    public $installOpsAgent;
-    /**
-     * Name of an instance template used to create VMs. Named the field as
-     * 'instance_template' instead of 'template' to avoid C++ keyword conflict.
-     * Batch only supports global instance templates from the same project as the
-     * job. You can specify the global instance template as a full or partial URL.
-     *
-     * @var string
-     */
-    public $instanceTemplate;
-    protected $policyType = InstancePolicy::class;
-    protected $policyDataType = '';
-    /**
-     * Optional. Set this field to `true` if you want Batch to block project-level
-     * SSH keys from accessing this job's VMs. Alternatively, you can configure
-     * the job to specify a VM instance template that blocks project-level SSH
-     * keys. In either case, Batch blocks project-level SSH keys while creating
-     * the VMs for this job. Batch allows project-level SSH keys for a job's VMs
-     * only if all the following are true: + This field is undefined or set to
-     * `false`. + The job's VM instance template (if any) doesn't block project-
-     * level SSH keys. Notably, you can override this behavior by manually
-     * updating a VM to block or allow project-level SSH keys. For more
-     * information about blocking project-level SSH keys, see the Compute Engine
-     * documentation: https://cloud.google.com/compute/docs/connect/restrict-ssh-
-     * keys#block-keys
-     *
-     * @param bool $blockProjectSshKeys
-     */
-    public function setBlockProjectSshKeys($blockProjectSshKeys)
+namespace Google\Service\Batch {
+    class InstancePolicyOrTemplate extends \Google\Model
     {
+        /**
+         * Optional. Set this field to `true` if you want Batch to block project-level
+         * SSH keys from accessing this job's VMs. Alternatively, you can configure
+         * the job to specify a VM instance template that blocks project-level SSH
+         * keys. In either case, Batch blocks project-level SSH keys while creating
+         * the VMs for this job. Batch allows project-level SSH keys for a job's VMs
+         * only if all the following are true: + This field is undefined or set to
+         * `false`. + The job's VM instance template (if any) doesn't block project-
+         * level SSH keys. Notably, you can override this behavior by manually
+         * updating a VM to block or allow project-level SSH keys. For more
+         * information about blocking project-level SSH keys, see the Compute Engine
+         * documentation: https://cloud.google.com/compute/docs/connect/restrict-ssh-
+         * keys#block-keys
+         *
+         * @var bool
+         */
+        public $blockProjectSshKeys;
+        /**
+         * Set this field true if you want Batch to help fetch drivers from a third
+         * party location and install them for GPUs specified in `policy.accelerators`
+         * or `instance_template` on your behalf. Default is false. For Container-
+         * Optimized Image cases, Batch will install the accelerator driver following
+         * milestones of https://cloud.google.com/container-optimized-os/docs/release-
+         * notes. For non Container-Optimized Image cases, following
+         * https://github.com/GoogleCloudPlatform/compute-gpu-
+         * installation/blob/main/linux/install_gpu_driver.py.
+         *
+         * @var bool
+         */
+        public $installGpuDrivers;
+        /**
+         * Optional. Set this field true if you want Batch to install Ops Agent on
+         * your behalf. Default is false.
+         *
+         * @var bool
+         */
+        public $installOpsAgent;
+        /**
+         * Name of an instance template used to create VMs. Named the field as
+         * 'instance_template' instead of 'template' to avoid C++ keyword conflict.
+         * Batch only supports global instance templates from the same project as the
+         * job. You can specify the global instance template as a full or partial URL.
+         *
+         * @var string
+         */
+        public $instanceTemplate;
+        protected $policyType = InstancePolicy::class;
+        protected $policyDataType = '';
+        /**
+         * Optional. Set this field to `true` if you want Batch to block project-level
+         * SSH keys from accessing this job's VMs. Alternatively, you can configure
+         * the job to specify a VM instance template that blocks project-level SSH
+         * keys. In either case, Batch blocks project-level SSH keys while creating
+         * the VMs for this job. Batch allows project-level SSH keys for a job's VMs
+         * only if all the following are true: + This field is undefined or set to
+         * `false`. + The job's VM instance template (if any) doesn't block project-
+         * level SSH keys. Notably, you can override this behavior by manually
+         * updating a VM to block or allow project-level SSH keys. For more
+         * information about blocking project-level SSH keys, see the Compute Engine
+         * documentation: https://cloud.google.com/compute/docs/connect/restrict-ssh-
+         * keys#block-keys
+         *
+         * @param bool $blockProjectSshKeys
+         */
+        public function setBlockProjectSshKeys($blockProjectSshKeys)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBlockProjectSshKeys()
+        {
+        }
+        /**
+         * Set this field true if you want Batch to help fetch drivers from a third
+         * party location and install them for GPUs specified in `policy.accelerators`
+         * or `instance_template` on your behalf. Default is false. For Container-
+         * Optimized Image cases, Batch will install the accelerator driver following
+         * milestones of https://cloud.google.com/container-optimized-os/docs/release-
+         * notes. For non Container-Optimized Image cases, following
+         * https://github.com/GoogleCloudPlatform/compute-gpu-
+         * installation/blob/main/linux/install_gpu_driver.py.
+         *
+         * @param bool $installGpuDrivers
+         */
+        public function setInstallGpuDrivers($installGpuDrivers)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getInstallGpuDrivers()
+        {
+        }
+        /**
+         * Optional. Set this field true if you want Batch to install Ops Agent on
+         * your behalf. Default is false.
+         *
+         * @param bool $installOpsAgent
+         */
+        public function setInstallOpsAgent($installOpsAgent)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getInstallOpsAgent()
+        {
+        }
+        /**
+         * Name of an instance template used to create VMs. Named the field as
+         * 'instance_template' instead of 'template' to avoid C++ keyword conflict.
+         * Batch only supports global instance templates from the same project as the
+         * job. You can specify the global instance template as a full or partial URL.
+         *
+         * @param string $instanceTemplate
+         */
+        public function setInstanceTemplate($instanceTemplate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstanceTemplate()
+        {
+        }
+        /**
+         * InstancePolicy.
+         *
+         * @param InstancePolicy $policy
+         */
+        public function setPolicy(InstancePolicy $policy)
+        {
+        }
+        /**
+         * @return InstancePolicy
+         */
+        public function getPolicy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Batch\InstancePolicyOrTemplate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlockProjectSshKeys()
-    {
-    }
-    /**
-     * Set this field true if you want Batch to help fetch drivers from a third
-     * party location and install them for GPUs specified in `policy.accelerators`
-     * or `instance_template` on your behalf. Default is false. For Container-
-     * Optimized Image cases, Batch will install the accelerator driver following
-     * milestones of https://cloud.google.com/container-optimized-os/docs/release-
-     * notes. For non Container-Optimized Image cases, following
-     * https://github.com/GoogleCloudPlatform/compute-gpu-
-     * installation/blob/main/linux/install_gpu_driver.py.
-     *
-     * @param bool $installGpuDrivers
-     */
-    public function setInstallGpuDrivers($installGpuDrivers)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getInstallGpuDrivers()
-    {
-    }
-    /**
-     * Optional. Set this field true if you want Batch to install Ops Agent on
-     * your behalf. Default is false.
-     *
-     * @param bool $installOpsAgent
-     */
-    public function setInstallOpsAgent($installOpsAgent)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getInstallOpsAgent()
-    {
-    }
-    /**
-     * Name of an instance template used to create VMs. Named the field as
-     * 'instance_template' instead of 'template' to avoid C++ keyword conflict.
-     * Batch only supports global instance templates from the same project as the
-     * job. You can specify the global instance template as a full or partial URL.
-     *
-     * @param string $instanceTemplate
-     */
-    public function setInstanceTemplate($instanceTemplate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstanceTemplate()
-    {
-    }
-    /**
-     * InstancePolicy.
-     *
-     * @param InstancePolicy $policy
-     */
-    public function setPolicy(InstancePolicy $policy)
-    {
-    }
-    /**
-     * @return InstancePolicy
-     */
-    public function getPolicy()
+    class Google_Service_Batch_InstancePolicyOrTemplate extends \Google\Service\Batch\InstancePolicyOrTemplate
     {
     }
 }

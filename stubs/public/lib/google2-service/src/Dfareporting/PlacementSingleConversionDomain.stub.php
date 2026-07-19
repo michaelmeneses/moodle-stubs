@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class PlacementSingleConversionDomain extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $conversionDomainId;
-    /**
-     * @var string
-     */
-    public $conversionDomainValue;
-    /**
-     * @param string $conversionDomainId
-     */
-    public function setConversionDomainId($conversionDomainId)
+namespace Google\Service\Dfareporting {
+    class PlacementSingleConversionDomain extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $conversionDomainId;
+        /**
+         * @var string
+         */
+        public $conversionDomainValue;
+        /**
+         * @param string $conversionDomainId
+         */
+        public function setConversionDomainId($conversionDomainId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConversionDomainId()
+        {
+        }
+        /**
+         * @param string $conversionDomainValue
+         */
+        public function setConversionDomainValue($conversionDomainValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConversionDomainValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\PlacementSingleConversionDomain registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConversionDomainId()
-    {
-    }
-    /**
-     * @param string $conversionDomainValue
-     */
-    public function setConversionDomainValue($conversionDomainValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getConversionDomainValue()
+    class Google_Service_Dfareporting_PlacementSingleConversionDomain extends \Google\Service\Dfareporting\PlacementSingleConversionDomain
     {
     }
 }

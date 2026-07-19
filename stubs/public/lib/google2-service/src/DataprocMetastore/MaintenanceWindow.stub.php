@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataprocMetastore;
-
-class MaintenanceWindow extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $dayOfWeek;
-    /**
-     * @var int
-     */
-    public $hourOfDay;
-    /**
-     * @param string
-     */
-    public function setDayOfWeek($dayOfWeek)
+namespace Google\Service\DataprocMetastore {
+    class MaintenanceWindow extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $dayOfWeek;
+        /**
+         * @var int
+         */
+        public $hourOfDay;
+        /**
+         * @param string
+         */
+        public function setDayOfWeek($dayOfWeek)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDayOfWeek()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setHourOfDay($hourOfDay)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHourOfDay()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataprocMetastore\MaintenanceWindow registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDayOfWeek()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setHourOfDay($hourOfDay)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getHourOfDay()
+    class Google_Service_DataprocMetastore_MaintenanceWindow extends \Google\Service\DataprocMetastore\MaintenanceWindow
     {
     }
 }

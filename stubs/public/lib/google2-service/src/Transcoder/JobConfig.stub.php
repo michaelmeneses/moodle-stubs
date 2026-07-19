@@ -21,190 +21,199 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Transcoder;
-
-class JobConfig extends \Google\Collection
-{
-    protected $collection_key = 'spriteSheets';
-    protected $adBreaksType = AdBreak::class;
-    protected $adBreaksDataType = 'array';
-    protected $editListType = EditAtom::class;
-    protected $editListDataType = 'array';
-    protected $elementaryStreamsType = ElementaryStream::class;
-    protected $elementaryStreamsDataType = 'array';
-    protected $encryptionsType = Encryption::class;
-    protected $encryptionsDataType = 'array';
-    protected $inputsType = Input::class;
-    protected $inputsDataType = 'array';
-    protected $manifestsType = Manifest::class;
-    protected $manifestsDataType = 'array';
-    protected $muxStreamsType = MuxStream::class;
-    protected $muxStreamsDataType = 'array';
-    protected $outputType = Output::class;
-    protected $outputDataType = '';
-    protected $overlaysType = Overlay::class;
-    protected $overlaysDataType = 'array';
-    protected $pubsubDestinationType = PubsubDestination::class;
-    protected $pubsubDestinationDataType = '';
-    protected $spriteSheetsType = SpriteSheet::class;
-    protected $spriteSheetsDataType = 'array';
-    /**
-     * List of ad breaks. Specifies where to insert ad break tags in the output
-     * manifests.
-     *
-     * @param AdBreak[] $adBreaks
-     */
-    public function setAdBreaks($adBreaks)
+namespace Google\Service\Transcoder {
+    class JobConfig extends \Google\Collection
     {
+        protected $collection_key = 'spriteSheets';
+        protected $adBreaksType = AdBreak::class;
+        protected $adBreaksDataType = 'array';
+        protected $editListType = EditAtom::class;
+        protected $editListDataType = 'array';
+        protected $elementaryStreamsType = ElementaryStream::class;
+        protected $elementaryStreamsDataType = 'array';
+        protected $encryptionsType = Encryption::class;
+        protected $encryptionsDataType = 'array';
+        protected $inputsType = Input::class;
+        protected $inputsDataType = 'array';
+        protected $manifestsType = Manifest::class;
+        protected $manifestsDataType = 'array';
+        protected $muxStreamsType = MuxStream::class;
+        protected $muxStreamsDataType = 'array';
+        protected $outputType = Output::class;
+        protected $outputDataType = '';
+        protected $overlaysType = Overlay::class;
+        protected $overlaysDataType = 'array';
+        protected $pubsubDestinationType = PubsubDestination::class;
+        protected $pubsubDestinationDataType = '';
+        protected $spriteSheetsType = SpriteSheet::class;
+        protected $spriteSheetsDataType = 'array';
+        /**
+         * List of ad breaks. Specifies where to insert ad break tags in the output
+         * manifests.
+         *
+         * @param AdBreak[] $adBreaks
+         */
+        public function setAdBreaks($adBreaks)
+        {
+        }
+        /**
+         * @return AdBreak[]
+         */
+        public function getAdBreaks()
+        {
+        }
+        /**
+         * List of edit atoms. Defines the ultimate timeline of the resulting file or
+         * manifest.
+         *
+         * @param EditAtom[] $editList
+         */
+        public function setEditList($editList)
+        {
+        }
+        /**
+         * @return EditAtom[]
+         */
+        public function getEditList()
+        {
+        }
+        /**
+         * List of elementary streams.
+         *
+         * @param ElementaryStream[] $elementaryStreams
+         */
+        public function setElementaryStreams($elementaryStreams)
+        {
+        }
+        /**
+         * @return ElementaryStream[]
+         */
+        public function getElementaryStreams()
+        {
+        }
+        /**
+         * List of encryption configurations for the content. Each configuration has
+         * an ID. Specify this ID in the MuxStream.encryption_id field to indicate the
+         * configuration to use for that `MuxStream` output.
+         *
+         * @param Encryption[] $encryptions
+         */
+        public function setEncryptions($encryptions)
+        {
+        }
+        /**
+         * @return Encryption[]
+         */
+        public function getEncryptions()
+        {
+        }
+        /**
+         * List of input assets stored in Cloud Storage.
+         *
+         * @param Input[] $inputs
+         */
+        public function setInputs($inputs)
+        {
+        }
+        /**
+         * @return Input[]
+         */
+        public function getInputs()
+        {
+        }
+        /**
+         * List of output manifests.
+         *
+         * @param Manifest[] $manifests
+         */
+        public function setManifests($manifests)
+        {
+        }
+        /**
+         * @return Manifest[]
+         */
+        public function getManifests()
+        {
+        }
+        /**
+         * List of multiplexing settings for output streams.
+         *
+         * @param MuxStream[] $muxStreams
+         */
+        public function setMuxStreams($muxStreams)
+        {
+        }
+        /**
+         * @return MuxStream[]
+         */
+        public function getMuxStreams()
+        {
+        }
+        /**
+         * Output configuration.
+         *
+         * @param Output $output
+         */
+        public function setOutput(Output $output)
+        {
+        }
+        /**
+         * @return Output
+         */
+        public function getOutput()
+        {
+        }
+        /**
+         * List of overlays on the output video, in descending Z-order.
+         *
+         * @param Overlay[] $overlays
+         */
+        public function setOverlays($overlays)
+        {
+        }
+        /**
+         * @return Overlay[]
+         */
+        public function getOverlays()
+        {
+        }
+        /**
+         * Destination on Pub/Sub.
+         *
+         * @param PubsubDestination $pubsubDestination
+         */
+        public function setPubsubDestination(PubsubDestination $pubsubDestination)
+        {
+        }
+        /**
+         * @return PubsubDestination
+         */
+        public function getPubsubDestination()
+        {
+        }
+        /**
+         * List of output sprite sheets. Spritesheets require at least one VideoStream
+         * in the Jobconfig.
+         *
+         * @param SpriteSheet[] $spriteSheets
+         */
+        public function setSpriteSheets($spriteSheets)
+        {
+        }
+        /**
+         * @return SpriteSheet[]
+         */
+        public function getSpriteSheets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AdBreak[]
+     * Runtime class alias of \Google\Service\Transcoder\JobConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdBreaks()
-    {
-    }
-    /**
-     * List of edit atoms. Defines the ultimate timeline of the resulting file or
-     * manifest.
-     *
-     * @param EditAtom[] $editList
-     */
-    public function setEditList($editList)
-    {
-    }
-    /**
-     * @return EditAtom[]
-     */
-    public function getEditList()
-    {
-    }
-    /**
-     * List of elementary streams.
-     *
-     * @param ElementaryStream[] $elementaryStreams
-     */
-    public function setElementaryStreams($elementaryStreams)
-    {
-    }
-    /**
-     * @return ElementaryStream[]
-     */
-    public function getElementaryStreams()
-    {
-    }
-    /**
-     * List of encryption configurations for the content. Each configuration has
-     * an ID. Specify this ID in the MuxStream.encryption_id field to indicate the
-     * configuration to use for that `MuxStream` output.
-     *
-     * @param Encryption[] $encryptions
-     */
-    public function setEncryptions($encryptions)
-    {
-    }
-    /**
-     * @return Encryption[]
-     */
-    public function getEncryptions()
-    {
-    }
-    /**
-     * List of input assets stored in Cloud Storage.
-     *
-     * @param Input[] $inputs
-     */
-    public function setInputs($inputs)
-    {
-    }
-    /**
-     * @return Input[]
-     */
-    public function getInputs()
-    {
-    }
-    /**
-     * List of output manifests.
-     *
-     * @param Manifest[] $manifests
-     */
-    public function setManifests($manifests)
-    {
-    }
-    /**
-     * @return Manifest[]
-     */
-    public function getManifests()
-    {
-    }
-    /**
-     * List of multiplexing settings for output streams.
-     *
-     * @param MuxStream[] $muxStreams
-     */
-    public function setMuxStreams($muxStreams)
-    {
-    }
-    /**
-     * @return MuxStream[]
-     */
-    public function getMuxStreams()
-    {
-    }
-    /**
-     * Output configuration.
-     *
-     * @param Output $output
-     */
-    public function setOutput(Output $output)
-    {
-    }
-    /**
-     * @return Output
-     */
-    public function getOutput()
-    {
-    }
-    /**
-     * List of overlays on the output video, in descending Z-order.
-     *
-     * @param Overlay[] $overlays
-     */
-    public function setOverlays($overlays)
-    {
-    }
-    /**
-     * @return Overlay[]
-     */
-    public function getOverlays()
-    {
-    }
-    /**
-     * Destination on Pub/Sub.
-     *
-     * @param PubsubDestination $pubsubDestination
-     */
-    public function setPubsubDestination(PubsubDestination $pubsubDestination)
-    {
-    }
-    /**
-     * @return PubsubDestination
-     */
-    public function getPubsubDestination()
-    {
-    }
-    /**
-     * List of output sprite sheets. Spritesheets require at least one VideoStream
-     * in the Jobconfig.
-     *
-     * @param SpriteSheet[] $spriteSheets
-     */
-    public function setSpriteSheets($spriteSheets)
-    {
-    }
-    /**
-     * @return SpriteSheet[]
-     */
-    public function getSpriteSheets()
+    class Google_Service_Transcoder_JobConfig extends \Google\Service\Transcoder\JobConfig
     {
     }
 }

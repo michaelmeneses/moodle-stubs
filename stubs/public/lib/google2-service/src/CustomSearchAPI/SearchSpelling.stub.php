@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CustomSearchAPI;
-
-class SearchSpelling extends \Google\Model
-{
-    /**
-     * The corrected query.
-     *
-     * @var string
-     */
-    public $correctedQuery;
-    /**
-     * The corrected query, formatted in HTML.
-     *
-     * @var string
-     */
-    public $htmlCorrectedQuery;
-    /**
-     * The corrected query.
-     *
-     * @param string $correctedQuery
-     */
-    public function setCorrectedQuery($correctedQuery)
+namespace Google\Service\CustomSearchAPI {
+    class SearchSpelling extends \Google\Model
     {
+        /**
+         * The corrected query.
+         *
+         * @var string
+         */
+        public $correctedQuery;
+        /**
+         * The corrected query, formatted in HTML.
+         *
+         * @var string
+         */
+        public $htmlCorrectedQuery;
+        /**
+         * The corrected query.
+         *
+         * @param string $correctedQuery
+         */
+        public function setCorrectedQuery($correctedQuery)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCorrectedQuery()
+        {
+        }
+        /**
+         * The corrected query, formatted in HTML.
+         *
+         * @param string $htmlCorrectedQuery
+         */
+        public function setHtmlCorrectedQuery($htmlCorrectedQuery)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHtmlCorrectedQuery()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CustomSearchAPI\SearchSpelling registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCorrectedQuery()
-    {
-    }
-    /**
-     * The corrected query, formatted in HTML.
-     *
-     * @param string $htmlCorrectedQuery
-     */
-    public function setHtmlCorrectedQuery($htmlCorrectedQuery)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHtmlCorrectedQuery()
+    class Google_Service_CustomSearchAPI_SearchSpelling extends \Google\Service\CustomSearchAPI\SearchSpelling
     {
     }
 }

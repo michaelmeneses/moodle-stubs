@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class MountedDataDisk extends \Google\Model
-{
-    /**
-     * The name of the data disk. This name is local to the Google Cloud Platform
-     * project and uniquely identifies the disk within that project, for example
-     * "myproject-1014-104817-4c2-harness-0-disk-1".
-     *
-     * @var string
-     */
-    public $dataDisk;
-    /**
-     * The name of the data disk. This name is local to the Google Cloud Platform
-     * project and uniquely identifies the disk within that project, for example
-     * "myproject-1014-104817-4c2-harness-0-disk-1".
-     *
-     * @param string $dataDisk
-     */
-    public function setDataDisk($dataDisk)
+namespace Google\Service\Dataflow {
+    class MountedDataDisk extends \Google\Model
     {
+        /**
+         * The name of the data disk. This name is local to the Google Cloud Platform
+         * project and uniquely identifies the disk within that project, for example
+         * "myproject-1014-104817-4c2-harness-0-disk-1".
+         *
+         * @var string
+         */
+        public $dataDisk;
+        /**
+         * The name of the data disk. This name is local to the Google Cloud Platform
+         * project and uniquely identifies the disk within that project, for example
+         * "myproject-1014-104817-4c2-harness-0-disk-1".
+         *
+         * @param string $dataDisk
+         */
+        public function setDataDisk($dataDisk)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataDisk()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\MountedDataDisk registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataDisk()
+    class Google_Service_Dataflow_MountedDataDisk extends \Google\Service\Dataflow\MountedDataDisk
     {
     }
 }

@@ -21,75 +21,84 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class AutomationRolloutMetadata extends \Google\Collection
-{
-    protected $collection_key = 'repairAutomationRuns';
-    /**
-     * Output only. The names of the AutomationRuns initiated by an advance
-     * rollout rule.
-     *
-     * @var string[]
-     */
-    public $advanceAutomationRuns;
-    /**
-     * Output only. The name of the AutomationRun initiated by a promote release
-     * rule.
-     *
-     * @var string
-     */
-    public $promoteAutomationRun;
-    /**
-     * Output only. The names of the AutomationRuns initiated by a repair rollout
-     * rule.
-     *
-     * @var string[]
-     */
-    public $repairAutomationRuns;
-    /**
-     * Output only. The names of the AutomationRuns initiated by an advance
-     * rollout rule.
-     *
-     * @param string[] $advanceAutomationRuns
-     */
-    public function setAdvanceAutomationRuns($advanceAutomationRuns)
+namespace Google\Service\CloudDeploy {
+    class AutomationRolloutMetadata extends \Google\Collection
     {
+        protected $collection_key = 'repairAutomationRuns';
+        /**
+         * Output only. The names of the AutomationRuns initiated by an advance
+         * rollout rule.
+         *
+         * @var string[]
+         */
+        public $advanceAutomationRuns;
+        /**
+         * Output only. The name of the AutomationRun initiated by a promote release
+         * rule.
+         *
+         * @var string
+         */
+        public $promoteAutomationRun;
+        /**
+         * Output only. The names of the AutomationRuns initiated by a repair rollout
+         * rule.
+         *
+         * @var string[]
+         */
+        public $repairAutomationRuns;
+        /**
+         * Output only. The names of the AutomationRuns initiated by an advance
+         * rollout rule.
+         *
+         * @param string[] $advanceAutomationRuns
+         */
+        public function setAdvanceAutomationRuns($advanceAutomationRuns)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAdvanceAutomationRuns()
+        {
+        }
+        /**
+         * Output only. The name of the AutomationRun initiated by a promote release
+         * rule.
+         *
+         * @param string $promoteAutomationRun
+         */
+        public function setPromoteAutomationRun($promoteAutomationRun)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPromoteAutomationRun()
+        {
+        }
+        /**
+         * Output only. The names of the AutomationRuns initiated by a repair rollout
+         * rule.
+         *
+         * @param string[] $repairAutomationRuns
+         */
+        public function setRepairAutomationRuns($repairAutomationRuns)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRepairAutomationRuns()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudDeploy\AutomationRolloutMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdvanceAutomationRuns()
-    {
-    }
-    /**
-     * Output only. The name of the AutomationRun initiated by a promote release
-     * rule.
-     *
-     * @param string $promoteAutomationRun
-     */
-    public function setPromoteAutomationRun($promoteAutomationRun)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPromoteAutomationRun()
-    {
-    }
-    /**
-     * Output only. The names of the AutomationRuns initiated by a repair rollout
-     * rule.
-     *
-     * @param string[] $repairAutomationRuns
-     */
-    public function setRepairAutomationRuns($repairAutomationRuns)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRepairAutomationRuns()
+    class Google_Service_CloudDeploy_AutomationRolloutMetadata extends \Google\Service\CloudDeploy\AutomationRolloutMetadata
     {
     }
 }

@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class Cwe extends \Google\Collection
-{
-    protected $collection_key = 'references';
-    /**
-     * The CWE identifier, e.g. CWE-94
-     *
-     * @var string
-     */
-    public $id;
-    protected $referencesType = Reference::class;
-    protected $referencesDataType = 'array';
-    /**
-     * The CWE identifier, e.g. CWE-94
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\SecurityCommandCenter {
+    class Cwe extends \Google\Collection
     {
+        protected $collection_key = 'references';
+        /**
+         * The CWE identifier, e.g. CWE-94
+         *
+         * @var string
+         */
+        public $id;
+        protected $referencesType = Reference::class;
+        protected $referencesDataType = 'array';
+        /**
+         * The CWE identifier, e.g. CWE-94
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Any reference to the details on the CWE, for example,
+         * https://cwe.mitre.org/data/definitions/94.html
+         *
+         * @param Reference[] $references
+         */
+        public function setReferences($references)
+        {
+        }
+        /**
+         * @return Reference[]
+         */
+        public function getReferences()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\Cwe registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * Any reference to the details on the CWE, for example,
-     * https://cwe.mitre.org/data/definitions/94.html
-     *
-     * @param Reference[] $references
-     */
-    public function setReferences($references)
-    {
-    }
-    /**
-     * @return Reference[]
-     */
-    public function getReferences()
+    class Google_Service_SecurityCommandCenter_Cwe extends \Google\Service\SecurityCommandCenter\Cwe
     {
     }
 }

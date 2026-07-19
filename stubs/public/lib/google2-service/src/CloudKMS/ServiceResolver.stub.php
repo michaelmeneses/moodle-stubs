@@ -21,97 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudKMS;
-
-class ServiceResolver extends \Google\Collection
-{
-    protected $collection_key = 'serverCertificates';
-    /**
-     * Optional. The filter applied to the endpoints of the resolved service. If
-     * no filter is specified, all endpoints will be considered. An endpoint will
-     * be chosen arbitrarily from the filtered list for each request. For endpoint
-     * filter syntax and examples, see https://cloud.google.com/service-directory/
-     * docs/reference/rpc/google.cloud.servicedirectory.v1#resolveservicerequest.
-     *
-     * @var string
-     */
-    public $endpointFilter;
-    /**
-     * Required. The hostname of the EKM replica used at TLS and HTTP layers.
-     *
-     * @var string
-     */
-    public $hostname;
-    protected $serverCertificatesType = Certificate::class;
-    protected $serverCertificatesDataType = 'array';
-    /**
-     * Required. The resource name of the Service Directory service pointing to an
-     * EKM replica, in the format `projects/locations/namespaces/services`.
-     *
-     * @var string
-     */
-    public $serviceDirectoryService;
-    /**
-     * Optional. The filter applied to the endpoints of the resolved service. If
-     * no filter is specified, all endpoints will be considered. An endpoint will
-     * be chosen arbitrarily from the filtered list for each request. For endpoint
-     * filter syntax and examples, see https://cloud.google.com/service-directory/
-     * docs/reference/rpc/google.cloud.servicedirectory.v1#resolveservicerequest.
-     *
-     * @param string $endpointFilter
-     */
-    public function setEndpointFilter($endpointFilter)
+namespace Google\Service\CloudKMS {
+    class ServiceResolver extends \Google\Collection
     {
+        protected $collection_key = 'serverCertificates';
+        /**
+         * Optional. The filter applied to the endpoints of the resolved service. If
+         * no filter is specified, all endpoints will be considered. An endpoint will
+         * be chosen arbitrarily from the filtered list for each request. For endpoint
+         * filter syntax and examples, see https://cloud.google.com/service-directory/
+         * docs/reference/rpc/google.cloud.servicedirectory.v1#resolveservicerequest.
+         *
+         * @var string
+         */
+        public $endpointFilter;
+        /**
+         * Required. The hostname of the EKM replica used at TLS and HTTP layers.
+         *
+         * @var string
+         */
+        public $hostname;
+        protected $serverCertificatesType = Certificate::class;
+        protected $serverCertificatesDataType = 'array';
+        /**
+         * Required. The resource name of the Service Directory service pointing to an
+         * EKM replica, in the format `projects/locations/namespaces/services`.
+         *
+         * @var string
+         */
+        public $serviceDirectoryService;
+        /**
+         * Optional. The filter applied to the endpoints of the resolved service. If
+         * no filter is specified, all endpoints will be considered. An endpoint will
+         * be chosen arbitrarily from the filtered list for each request. For endpoint
+         * filter syntax and examples, see https://cloud.google.com/service-directory/
+         * docs/reference/rpc/google.cloud.servicedirectory.v1#resolveservicerequest.
+         *
+         * @param string $endpointFilter
+         */
+        public function setEndpointFilter($endpointFilter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndpointFilter()
+        {
+        }
+        /**
+         * Required. The hostname of the EKM replica used at TLS and HTTP layers.
+         *
+         * @param string $hostname
+         */
+        public function setHostname($hostname)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHostname()
+        {
+        }
+        /**
+         * Required. A list of leaf server certificates used to authenticate HTTPS
+         * connections to the EKM replica. Currently, a maximum of 10 Certificate is
+         * supported.
+         *
+         * @param Certificate[] $serverCertificates
+         */
+        public function setServerCertificates($serverCertificates)
+        {
+        }
+        /**
+         * @return Certificate[]
+         */
+        public function getServerCertificates()
+        {
+        }
+        /**
+         * Required. The resource name of the Service Directory service pointing to an
+         * EKM replica, in the format `projects/locations/namespaces/services`.
+         *
+         * @param string $serviceDirectoryService
+         */
+        public function setServiceDirectoryService($serviceDirectoryService)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceDirectoryService()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudKMS\ServiceResolver registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndpointFilter()
-    {
-    }
-    /**
-     * Required. The hostname of the EKM replica used at TLS and HTTP layers.
-     *
-     * @param string $hostname
-     */
-    public function setHostname($hostname)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHostname()
-    {
-    }
-    /**
-     * Required. A list of leaf server certificates used to authenticate HTTPS
-     * connections to the EKM replica. Currently, a maximum of 10 Certificate is
-     * supported.
-     *
-     * @param Certificate[] $serverCertificates
-     */
-    public function setServerCertificates($serverCertificates)
-    {
-    }
-    /**
-     * @return Certificate[]
-     */
-    public function getServerCertificates()
-    {
-    }
-    /**
-     * Required. The resource name of the Service Directory service pointing to an
-     * EKM replica, in the format `projects/locations/namespaces/services`.
-     *
-     * @param string $serviceDirectoryService
-     */
-    public function setServiceDirectoryService($serviceDirectoryService)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceDirectoryService()
+    class Google_Service_CloudKMS_ServiceResolver extends \Google\Service\CloudKMS\ServiceResolver
     {
     }
 }

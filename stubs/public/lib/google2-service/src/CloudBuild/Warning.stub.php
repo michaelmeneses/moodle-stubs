@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class Warning extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $priority;
-    /**
-     * @var string
-     */
-    public $text;
-    /**
-     * @param string
-     */
-    public function setPriority($priority)
+namespace Google\Service\CloudBuild {
+    class Warning extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $priority;
+        /**
+         * @var string
+         */
+        public $text;
+        /**
+         * @param string
+         */
+        public function setPriority($priority)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPriority()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\Warning registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPriority()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_CloudBuild_Warning extends \Google\Service\CloudBuild\Warning
     {
     }
 }

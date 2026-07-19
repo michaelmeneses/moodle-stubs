@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class NatIpInfoNatIpInfoMapping extends \Google\Model
-{
-    public const MODE_AUTO = 'AUTO';
-    public const MODE_MANUAL = 'MANUAL';
-    public const USAGE_IN_USE = 'IN_USE';
-    public const USAGE_UNUSED = 'UNUSED';
-    /**
-     * Output only. Specifies whether NAT IP is auto or manual.
-     *
-     * @var string
-     */
-    public $mode;
-    /**
-     * Output only. NAT IP address. For example: 203.0.113.11.
-     *
-     * @var string
-     */
-    public $natIp;
-    /**
-     * Output only. Specifies whether NAT IP is currently serving at least one
-     * endpoint or not.
-     *
-     * @var string
-     */
-    public $usage;
-    /**
-     * Output only. Specifies whether NAT IP is auto or manual.
-     *
-     * Accepted values: AUTO, MANUAL
-     *
-     * @param self::MODE_* $mode
-     */
-    public function setMode($mode)
+namespace Google\Service\Compute {
+    class NatIpInfoNatIpInfoMapping extends \Google\Model
     {
+        public const MODE_AUTO = 'AUTO';
+        public const MODE_MANUAL = 'MANUAL';
+        public const USAGE_IN_USE = 'IN_USE';
+        public const USAGE_UNUSED = 'UNUSED';
+        /**
+         * Output only. Specifies whether NAT IP is auto or manual.
+         *
+         * @var string
+         */
+        public $mode;
+        /**
+         * Output only. NAT IP address. For example: 203.0.113.11.
+         *
+         * @var string
+         */
+        public $natIp;
+        /**
+         * Output only. Specifies whether NAT IP is currently serving at least one
+         * endpoint or not.
+         *
+         * @var string
+         */
+        public $usage;
+        /**
+         * Output only. Specifies whether NAT IP is auto or manual.
+         *
+         * Accepted values: AUTO, MANUAL
+         *
+         * @param self::MODE_* $mode
+         */
+        public function setMode($mode)
+        {
+        }
+        /**
+         * @return self::MODE_*
+         */
+        public function getMode()
+        {
+        }
+        /**
+         * Output only. NAT IP address. For example: 203.0.113.11.
+         *
+         * @param string $natIp
+         */
+        public function setNatIp($natIp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNatIp()
+        {
+        }
+        /**
+         * Output only. Specifies whether NAT IP is currently serving at least one
+         * endpoint or not.
+         *
+         * Accepted values: IN_USE, UNUSED
+         *
+         * @param self::USAGE_* $usage
+         */
+        public function setUsage($usage)
+        {
+        }
+        /**
+         * @return self::USAGE_*
+         */
+        public function getUsage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::MODE_*
+     * Runtime class alias of \Google\Service\Compute\NatIpInfoNatIpInfoMapping registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMode()
-    {
-    }
-    /**
-     * Output only. NAT IP address. For example: 203.0.113.11.
-     *
-     * @param string $natIp
-     */
-    public function setNatIp($natIp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNatIp()
-    {
-    }
-    /**
-     * Output only. Specifies whether NAT IP is currently serving at least one
-     * endpoint or not.
-     *
-     * Accepted values: IN_USE, UNUSED
-     *
-     * @param self::USAGE_* $usage
-     */
-    public function setUsage($usage)
-    {
-    }
-    /**
-     * @return self::USAGE_*
-     */
-    public function getUsage()
+    class Google_Service_Compute_NatIpInfoNatIpInfoMapping extends \Google\Service\Compute\NatIpInfoNatIpInfoMapping
     {
     }
 }

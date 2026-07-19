@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaExecuteTestCasesResponse extends \Google\Collection
-{
-    protected $collection_key = 'executeTestCaseResponses';
-    protected $executeTestCaseResponsesType = GoogleCloudIntegrationsV1alphaExecuteTestCaseResponse::class;
-    protected $executeTestCaseResponsesDataType = 'array';
-    /**
-     * Results of each execution of test cases in an integration version.
-     *
-     * @param GoogleCloudIntegrationsV1alphaExecuteTestCaseResponse[] $executeTestCaseResponses
-     */
-    public function setExecuteTestCaseResponses($executeTestCaseResponses)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaExecuteTestCasesResponse extends \Google\Collection
     {
+        protected $collection_key = 'executeTestCaseResponses';
+        protected $executeTestCaseResponsesType = GoogleCloudIntegrationsV1alphaExecuteTestCaseResponse::class;
+        protected $executeTestCaseResponsesDataType = 'array';
+        /**
+         * Results of each execution of test cases in an integration version.
+         *
+         * @param GoogleCloudIntegrationsV1alphaExecuteTestCaseResponse[] $executeTestCaseResponses
+         */
+        public function setExecuteTestCaseResponses($executeTestCaseResponses)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaExecuteTestCaseResponse[]
+         */
+        public function getExecuteTestCaseResponses()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudIntegrationsV1alphaExecuteTestCaseResponse[]
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaExecuteTestCasesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExecuteTestCaseResponses()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaExecuteTestCasesResponse extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaExecuteTestCasesResponse
     {
     }
 }

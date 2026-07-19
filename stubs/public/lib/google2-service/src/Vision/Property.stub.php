@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class Property extends \Google\Model
-{
-    /**
-     * Name of the property.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Value of numeric properties.
-     *
-     * @var string
-     */
-    public $uint64Value;
-    /**
-     * Value of the property.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Name of the property.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Vision {
+    class Property extends \Google\Model
     {
+        /**
+         * Name of the property.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Value of numeric properties.
+         *
+         * @var string
+         */
+        public $uint64Value;
+        /**
+         * Value of the property.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Name of the property.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Value of numeric properties.
+         *
+         * @param string $uint64Value
+         */
+        public function setUint64Value($uint64Value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUint64Value()
+        {
+        }
+        /**
+         * Value of the property.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Vision\Property registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Value of numeric properties.
-     *
-     * @param string $uint64Value
-     */
-    public function setUint64Value($uint64Value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUint64Value()
-    {
-    }
-    /**
-     * Value of the property.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_Vision_Property extends \Google\Service\Vision\Property
     {
     }
 }

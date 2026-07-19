@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudVideoIntelligence;
-
-class GoogleCloudVideointelligenceV1p3beta1DetectedLandmark extends \Google\Model
-{
-    /**
-     * The confidence score of the detected landmark. Range [0, 1].
-     *
-     * @var float
-     */
-    public $confidence;
-    /**
-     * The name of this landmark, for example, left_hand, right_shoulder.
-     *
-     * @var string
-     */
-    public $name;
-    protected $pointType = GoogleCloudVideointelligenceV1p3beta1NormalizedVertex::class;
-    protected $pointDataType = '';
-    /**
-     * The confidence score of the detected landmark. Range [0, 1].
-     *
-     * @param float $confidence
-     */
-    public function setConfidence($confidence)
+namespace Google\Service\CloudVideoIntelligence {
+    class GoogleCloudVideointelligenceV1p3beta1DetectedLandmark extends \Google\Model
     {
+        /**
+         * The confidence score of the detected landmark. Range [0, 1].
+         *
+         * @var float
+         */
+        public $confidence;
+        /**
+         * The name of this landmark, for example, left_hand, right_shoulder.
+         *
+         * @var string
+         */
+        public $name;
+        protected $pointType = GoogleCloudVideointelligenceV1p3beta1NormalizedVertex::class;
+        protected $pointDataType = '';
+        /**
+         * The confidence score of the detected landmark. Range [0, 1].
+         *
+         * @param float $confidence
+         */
+        public function setConfidence($confidence)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidence()
+        {
+        }
+        /**
+         * The name of this landmark, for example, left_hand, right_shoulder.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The 2D point of the detected landmark using the normalized image coordinate
+         * system. The normalized coordinates have the range from 0 to 1.
+         *
+         * @param GoogleCloudVideointelligenceV1p3beta1NormalizedVertex $point
+         */
+        public function setPoint(GoogleCloudVideointelligenceV1p3beta1NormalizedVertex $point)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1p3beta1NormalizedVertex
+         */
+        public function getPoint()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1p3beta1DetectedLandmark registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfidence()
-    {
-    }
-    /**
-     * The name of this landmark, for example, left_hand, right_shoulder.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The 2D point of the detected landmark using the normalized image coordinate
-     * system. The normalized coordinates have the range from 0 to 1.
-     *
-     * @param GoogleCloudVideointelligenceV1p3beta1NormalizedVertex $point
-     */
-    public function setPoint(GoogleCloudVideointelligenceV1p3beta1NormalizedVertex $point)
-    {
-    }
-    /**
-     * @return GoogleCloudVideointelligenceV1p3beta1NormalizedVertex
-     */
-    public function getPoint()
+    class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1DetectedLandmark extends \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1p3beta1DetectedLandmark
     {
     }
 }

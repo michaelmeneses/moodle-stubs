@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteInviteeInfo extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $email;
-    protected $userIdType = AppsDynamiteUserId::class;
-    protected $userIdDataType = '';
-    /**
-     * @param string
-     */
-    public function setEmail($email)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteInviteeInfo extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $email;
+        protected $userIdType = AppsDynamiteUserId::class;
+        protected $userIdDataType = '';
+        /**
+         * @param string
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * @param AppsDynamiteUserId
+         */
+        public function setUserId(AppsDynamiteUserId $userId)
+        {
+        }
+        /**
+         * @return AppsDynamiteUserId
+         */
+        public function getUserId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteInviteeInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmail()
-    {
-    }
-    /**
-     * @param AppsDynamiteUserId
-     */
-    public function setUserId(AppsDynamiteUserId $userId)
-    {
-    }
-    /**
-     * @return AppsDynamiteUserId
-     */
-    public function getUserId()
+    class Google_Service_CloudSearch_AppsDynamiteInviteeInfo extends \Google\Service\CloudSearch\AppsDynamiteInviteeInfo
     {
     }
 }

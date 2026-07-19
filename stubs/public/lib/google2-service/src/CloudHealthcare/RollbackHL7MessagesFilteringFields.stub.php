@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class RollbackHL7MessagesFilteringFields extends \Google\Collection
-{
-    protected $collection_key = 'operationIds';
-    /**
-     * Optional. A list of operation IDs to roll back.
-     *
-     * @var string[]
-     */
-    public $operationIds;
-    /**
-     * Optional. A list of operation IDs to roll back.
-     *
-     * @param string[] $operationIds
-     */
-    public function setOperationIds($operationIds)
+namespace Google\Service\CloudHealthcare {
+    class RollbackHL7MessagesFilteringFields extends \Google\Collection
     {
+        protected $collection_key = 'operationIds';
+        /**
+         * Optional. A list of operation IDs to roll back.
+         *
+         * @var string[]
+         */
+        public $operationIds;
+        /**
+         * Optional. A list of operation IDs to roll back.
+         *
+         * @param string[] $operationIds
+         */
+        public function setOperationIds($operationIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getOperationIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudHealthcare\RollbackHL7MessagesFilteringFields registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOperationIds()
+    class Google_Service_CloudHealthcare_RollbackHL7MessagesFilteringFields extends \Google\Service\CloudHealthcare\RollbackHL7MessagesFilteringFields
     {
     }
 }

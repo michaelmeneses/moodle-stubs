@@ -21,28 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GamesConfiguration\Resource;
-
-/**
- * The "imageConfigurations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $gamesConfigurationService = new Google\Service\GamesConfiguration(...);
- *   $imageConfigurations = $gamesConfigurationService->imageConfigurations;
- *  </code>
- */
-class ImageConfigurations extends \Google\Service\Resource
-{
+namespace Google\Service\GamesConfiguration\Resource {
+    use Google\Service\GamesConfiguration\ImageConfiguration;
     /**
-     * Uploads an image for a resource with the given ID and image type.
-     * (imageConfigurations.upload)
-     *
-     * @param string $resourceId The ID of the resource used by this method.
-     * @param string $imageType Selects which image in a resource for this method.
-     * @param array $optParams Optional parameters.
-     * @return ImageConfiguration
+     * The "imageConfigurations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $gamesConfigurationService = new Google\Service\GamesConfiguration(...);
+     *   $imageConfigurations = $gamesConfigurationService->imageConfigurations;
+     *  </code>
      */
-    public function upload($resourceId, $imageType, $optParams = [])
+    class ImageConfigurations extends \Google\Service\Resource
+    {
+        /**
+         * Uploads an image for a resource with the given ID and image type.
+         * (imageConfigurations.upload)
+         *
+         * @param string $resourceId The ID of the resource used by this method.
+         * @param string $imageType Selects which image in a resource for this method.
+         * @param array $optParams Optional parameters.
+         * @return ImageConfiguration
+         */
+        public function upload($resourceId, $imageType, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\GamesConfiguration\Resource\ImageConfigurations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_GamesConfiguration_Resource_ImageConfigurations extends \Google\Service\GamesConfiguration\Resource\ImageConfigurations
     {
     }
 }

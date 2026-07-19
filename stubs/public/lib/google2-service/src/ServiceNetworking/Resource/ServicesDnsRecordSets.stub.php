@@ -21,111 +21,126 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceNetworking\Resource;
-
-/**
- * The "dnsRecordSets" collection of methods.
- * Typical usage is:
- *  <code>
- *   $servicenetworkingService = new Google\Service\ServiceNetworking(...);
- *   $dnsRecordSets = $servicenetworkingService->services_dnsRecordSets;
- *  </code>
- */
-class ServicesDnsRecordSets extends \Google\Service\Resource
-{
+namespace Google\Service\ServiceNetworking\Resource {
+    use Google\Service\ServiceNetworking\AddDnsRecordSetRequest;
+    use Google\Service\ServiceNetworking\DnsRecordSet;
+    use Google\Service\ServiceNetworking\ListDnsRecordSetsResponse;
+    use Google\Service\ServiceNetworking\Operation;
+    use Google\Service\ServiceNetworking\RemoveDnsRecordSetRequest;
+    use Google\Service\ServiceNetworking\UpdateDnsRecordSetRequest;
     /**
-     * Service producers can use this method to add DNS record sets to private DNS
-     * zones in the shared producer host project. (dnsRecordSets.add)
-     *
-     * @param string $parent Required. The service that is managing peering
-     * connectivity for a service producer's organization. For Google services that
-     * support this functionality, this value is
-     * `services/servicenetworking.googleapis.com`.
-     * @param AddDnsRecordSetRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "dnsRecordSets" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $servicenetworkingService = new Google\Service\ServiceNetworking(...);
+     *   $dnsRecordSets = $servicenetworkingService->services_dnsRecordSets;
+     *  </code>
      */
-    public function add($parent, AddDnsRecordSetRequest $postBody, $optParams = [])
+    class ServicesDnsRecordSets extends \Google\Service\Resource
     {
+        /**
+         * Service producers can use this method to add DNS record sets to private DNS
+         * zones in the shared producer host project. (dnsRecordSets.add)
+         *
+         * @param string $parent Required. The service that is managing peering
+         * connectivity for a service producer's organization. For Google services that
+         * support this functionality, this value is
+         * `services/servicenetworking.googleapis.com`.
+         * @param AddDnsRecordSetRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function add($parent, AddDnsRecordSetRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Producers can use this method to retrieve information about the DNS record
+         * set added to the private zone inside the shared tenant host project
+         * associated with a consumer network. (dnsRecordSets.get)
+         *
+         * @param string $parent Required. Parent resource identifying the connection
+         * which owns this collection of DNS zones in the format services/{service}.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string consumerNetwork Required. The consumer network containing
+         * the record set. Must be in the form of
+         * projects/{project}/global/networks/{network}
+         * @opt_param string domain Required. The domain name of the zone containing the
+         * recordset.
+         * @opt_param string type Required. RecordSet Type eg. type='A'. See the list of
+         * [Supported DNS Types](https://cloud.google.com/dns/records/json-record).
+         * @opt_param string zone Required. The name of the zone containing the record
+         * set.
+         * @return DnsRecordSet
+         * @throws \Google\Service\Exception
+         */
+        public function get($parent, $optParams = [])
+        {
+        }
+        /**
+         * Producers can use this method to retrieve a list of available DNS RecordSets
+         * available inside the private zone on the tenant host project accessible from
+         * their network. (dnsRecordSets.listServicesDnsRecordSets)
+         *
+         * @param string $parent Required. The service that is managing peering
+         * connectivity for a service producer's organization. For Google services that
+         * support this functionality, this value is
+         * `services/servicenetworking.googleapis.com`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string consumerNetwork Required. The network that the consumer is
+         * using to connect with services. Must be in the form of
+         * projects/{project}/global/networks/{network} {project} is the project number,
+         * as in '12345' {network} is the network name.
+         * @opt_param string zone Required. The name of the private DNS zone in the
+         * shared producer host project from which the record set will be removed.
+         * @return ListDnsRecordSetsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listServicesDnsRecordSets($parent, $optParams = [])
+        {
+        }
+        /**
+         * Service producers can use this method to remove DNS record sets from private
+         * DNS zones in the shared producer host project. (dnsRecordSets.remove)
+         *
+         * @param string $parent Required. The service that is managing peering
+         * connectivity for a service producer's organization. For Google services that
+         * support this functionality, this value is
+         * `services/servicenetworking.googleapis.com`.
+         * @param RemoveDnsRecordSetRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function remove($parent, RemoveDnsRecordSetRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Service producers can use this method to update DNS record sets from private
+         * DNS zones in the shared producer host project. (dnsRecordSets.update)
+         *
+         * @param string $parent Required. The service that is managing peering
+         * connectivity for a service producer's organization. For Google services that
+         * support this functionality, this value is
+         * `services/servicenetworking.googleapis.com`.
+         * @param UpdateDnsRecordSetRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function update($parent, UpdateDnsRecordSetRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Producers can use this method to retrieve information about the DNS record
-     * set added to the private zone inside the shared tenant host project
-     * associated with a consumer network. (dnsRecordSets.get)
-     *
-     * @param string $parent Required. Parent resource identifying the connection
-     * which owns this collection of DNS zones in the format services/{service}.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string consumerNetwork Required. The consumer network containing
-     * the record set. Must be in the form of
-     * projects/{project}/global/networks/{network}
-     * @opt_param string domain Required. The domain name of the zone containing the
-     * recordset.
-     * @opt_param string type Required. RecordSet Type eg. type='A'. See the list of
-     * [Supported DNS Types](https://cloud.google.com/dns/records/json-record).
-     * @opt_param string zone Required. The name of the zone containing the record
-     * set.
-     * @return DnsRecordSet
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ServiceNetworking\Resource\ServicesDnsRecordSets registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($parent, $optParams = [])
-    {
-    }
-    /**
-     * Producers can use this method to retrieve a list of available DNS RecordSets
-     * available inside the private zone on the tenant host project accessible from
-     * their network. (dnsRecordSets.listServicesDnsRecordSets)
-     *
-     * @param string $parent Required. The service that is managing peering
-     * connectivity for a service producer's organization. For Google services that
-     * support this functionality, this value is
-     * `services/servicenetworking.googleapis.com`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string consumerNetwork Required. The network that the consumer is
-     * using to connect with services. Must be in the form of
-     * projects/{project}/global/networks/{network} {project} is the project number,
-     * as in '12345' {network} is the network name.
-     * @opt_param string zone Required. The name of the private DNS zone in the
-     * shared producer host project from which the record set will be removed.
-     * @return ListDnsRecordSetsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listServicesDnsRecordSets($parent, $optParams = [])
-    {
-    }
-    /**
-     * Service producers can use this method to remove DNS record sets from private
-     * DNS zones in the shared producer host project. (dnsRecordSets.remove)
-     *
-     * @param string $parent Required. The service that is managing peering
-     * connectivity for a service producer's organization. For Google services that
-     * support this functionality, this value is
-     * `services/servicenetworking.googleapis.com`.
-     * @param RemoveDnsRecordSetRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function remove($parent, RemoveDnsRecordSetRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Service producers can use this method to update DNS record sets from private
-     * DNS zones in the shared producer host project. (dnsRecordSets.update)
-     *
-     * @param string $parent Required. The service that is managing peering
-     * connectivity for a service producer's organization. For Google services that
-     * support this functionality, this value is
-     * `services/servicenetworking.googleapis.com`.
-     * @param UpdateDnsRecordSetRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function update($parent, UpdateDnsRecordSetRequest $postBody, $optParams = [])
+    class Google_Service_ServiceNetworking_Resource_ServicesDnsRecordSets extends \Google\Service\ServiceNetworking\Resource\ServicesDnsRecordSets
     {
     }
 }

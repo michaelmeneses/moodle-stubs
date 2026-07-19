@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class TableStyle extends \Google\Collection
-{
-    protected $collection_key = 'tableColumnProperties';
-    protected $tableColumnPropertiesType = TableColumnProperties::class;
-    protected $tableColumnPropertiesDataType = 'array';
-    /**
-     * The properties of each column. Note that in Docs, tables contain rows and
-     * rows contain cells, similar to HTML. So the properties for a row can be
-     * found on the row's table_row_style.
-     *
-     * @param TableColumnProperties[] $tableColumnProperties
-     */
-    public function setTableColumnProperties($tableColumnProperties)
+namespace Google\Service\Docs {
+    class TableStyle extends \Google\Collection
     {
+        protected $collection_key = 'tableColumnProperties';
+        protected $tableColumnPropertiesType = TableColumnProperties::class;
+        protected $tableColumnPropertiesDataType = 'array';
+        /**
+         * The properties of each column. Note that in Docs, tables contain rows and
+         * rows contain cells, similar to HTML. So the properties for a row can be
+         * found on the row's table_row_style.
+         *
+         * @param TableColumnProperties[] $tableColumnProperties
+         */
+        public function setTableColumnProperties($tableColumnProperties)
+        {
+        }
+        /**
+         * @return TableColumnProperties[]
+         */
+        public function getTableColumnProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TableColumnProperties[]
+     * Runtime class alias of \Google\Service\Docs\TableStyle registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTableColumnProperties()
+    class Google_Service_Docs_TableStyle extends \Google\Service\Docs\TableStyle
     {
     }
 }

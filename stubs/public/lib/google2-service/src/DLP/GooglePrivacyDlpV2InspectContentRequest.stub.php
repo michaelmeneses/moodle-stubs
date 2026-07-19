@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2InspectContentRequest extends \Google\Model
-{
-    protected $inspectConfigType = GooglePrivacyDlpV2InspectConfig::class;
-    protected $inspectConfigDataType = '';
-    /**
-     * Template to use. Any configuration directly specified in inspect_config
-     * will override those set in the template. Singular fields that are set in
-     * this request will replace their corresponding fields in the template.
-     * Repeated fields are appended. Singular sub-messages and groups are
-     * recursively merged.
-     *
-     * @var string
-     */
-    public $inspectTemplateName;
-    protected $itemType = GooglePrivacyDlpV2ContentItem::class;
-    protected $itemDataType = '';
-    /**
-     * Deprecated. This field has no effect.
-     *
-     * @var string
-     */
-    public $locationId;
-    /**
-     * Configuration for the inspector. What specified here will override the
-     * template referenced by the inspect_template_name argument.
-     *
-     * @param GooglePrivacyDlpV2InspectConfig $inspectConfig
-     */
-    public function setInspectConfig(GooglePrivacyDlpV2InspectConfig $inspectConfig)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2InspectContentRequest extends \Google\Model
     {
+        protected $inspectConfigType = GooglePrivacyDlpV2InspectConfig::class;
+        protected $inspectConfigDataType = '';
+        /**
+         * Template to use. Any configuration directly specified in inspect_config
+         * will override those set in the template. Singular fields that are set in
+         * this request will replace their corresponding fields in the template.
+         * Repeated fields are appended. Singular sub-messages and groups are
+         * recursively merged.
+         *
+         * @var string
+         */
+        public $inspectTemplateName;
+        protected $itemType = GooglePrivacyDlpV2ContentItem::class;
+        protected $itemDataType = '';
+        /**
+         * Deprecated. This field has no effect.
+         *
+         * @var string
+         */
+        public $locationId;
+        /**
+         * Configuration for the inspector. What specified here will override the
+         * template referenced by the inspect_template_name argument.
+         *
+         * @param GooglePrivacyDlpV2InspectConfig $inspectConfig
+         */
+        public function setInspectConfig(GooglePrivacyDlpV2InspectConfig $inspectConfig)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2InspectConfig
+         */
+        public function getInspectConfig()
+        {
+        }
+        /**
+         * Template to use. Any configuration directly specified in inspect_config
+         * will override those set in the template. Singular fields that are set in
+         * this request will replace their corresponding fields in the template.
+         * Repeated fields are appended. Singular sub-messages and groups are
+         * recursively merged.
+         *
+         * @param string $inspectTemplateName
+         */
+        public function setInspectTemplateName($inspectTemplateName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInspectTemplateName()
+        {
+        }
+        /**
+         * The item to inspect.
+         *
+         * @param GooglePrivacyDlpV2ContentItem $item
+         */
+        public function setItem(GooglePrivacyDlpV2ContentItem $item)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2ContentItem
+         */
+        public function getItem()
+        {
+        }
+        /**
+         * Deprecated. This field has no effect.
+         *
+         * @param string $locationId
+         */
+        public function setLocationId($locationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocationId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2InspectConfig
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2InspectContentRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInspectConfig()
-    {
-    }
-    /**
-     * Template to use. Any configuration directly specified in inspect_config
-     * will override those set in the template. Singular fields that are set in
-     * this request will replace their corresponding fields in the template.
-     * Repeated fields are appended. Singular sub-messages and groups are
-     * recursively merged.
-     *
-     * @param string $inspectTemplateName
-     */
-    public function setInspectTemplateName($inspectTemplateName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInspectTemplateName()
-    {
-    }
-    /**
-     * The item to inspect.
-     *
-     * @param GooglePrivacyDlpV2ContentItem $item
-     */
-    public function setItem(GooglePrivacyDlpV2ContentItem $item)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2ContentItem
-     */
-    public function getItem()
-    {
-    }
-    /**
-     * Deprecated. This field has no effect.
-     *
-     * @param string $locationId
-     */
-    public function setLocationId($locationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocationId()
+    class Google_Service_DLP_GooglePrivacyDlpV2InspectContentRequest extends \Google\Service\DLP\GooglePrivacyDlpV2InspectContentRequest
     {
     }
 }

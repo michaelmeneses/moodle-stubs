@@ -21,194 +21,203 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class AdPolicyTopicEvidence extends \Google\Model
-{
-    protected $counterfeitType = AdPolicyTopicEvidenceCounterfeit::class;
-    protected $counterfeitDataType = '';
-    protected $destinationMismatchType = AdPolicyTopicEvidenceDestinationMismatch::class;
-    protected $destinationMismatchDataType = '';
-    protected $destinationNotWorkingType = AdPolicyTopicEvidenceDestinationNotWorking::class;
-    protected $destinationNotWorkingDataType = '';
-    protected $destinationTextListType = AdPolicyTopicEvidenceDestinationTextList::class;
-    protected $destinationTextListDataType = '';
-    /**
-     * HTTP code returned when the final URL was crawled.
-     *
-     * @var int
-     */
-    public $httpCode;
-    /**
-     * The language the ad was detected to be written in. This field uses IETF
-     * language tags, such as "en-US".
-     *
-     * @var string
-     */
-    public $languageCode;
-    protected $legalRemovalType = AdPolicyTopicEvidenceLegalRemoval::class;
-    protected $legalRemovalDataType = '';
-    protected $regionalRequirementsType = AdPolicyTopicEvidenceRegionalRequirements::class;
-    protected $regionalRequirementsDataType = '';
-    protected $textListType = AdPolicyTopicEvidenceTextList::class;
-    protected $textListDataType = '';
-    protected $trademarkType = AdPolicyTopicEvidenceTrademark::class;
-    protected $trademarkDataType = '';
-    protected $websiteListType = AdPolicyTopicEvidenceWebsiteList::class;
-    protected $websiteListDataType = '';
-    /**
-     * Counterfeit enforcement that caused a policy violation.
-     *
-     * @param AdPolicyTopicEvidenceCounterfeit $counterfeit
-     */
-    public function setCounterfeit(AdPolicyTopicEvidenceCounterfeit $counterfeit)
+namespace Google\Service\DisplayVideo {
+    class AdPolicyTopicEvidence extends \Google\Model
     {
+        protected $counterfeitType = AdPolicyTopicEvidenceCounterfeit::class;
+        protected $counterfeitDataType = '';
+        protected $destinationMismatchType = AdPolicyTopicEvidenceDestinationMismatch::class;
+        protected $destinationMismatchDataType = '';
+        protected $destinationNotWorkingType = AdPolicyTopicEvidenceDestinationNotWorking::class;
+        protected $destinationNotWorkingDataType = '';
+        protected $destinationTextListType = AdPolicyTopicEvidenceDestinationTextList::class;
+        protected $destinationTextListDataType = '';
+        /**
+         * HTTP code returned when the final URL was crawled.
+         *
+         * @var int
+         */
+        public $httpCode;
+        /**
+         * The language the ad was detected to be written in. This field uses IETF
+         * language tags, such as "en-US".
+         *
+         * @var string
+         */
+        public $languageCode;
+        protected $legalRemovalType = AdPolicyTopicEvidenceLegalRemoval::class;
+        protected $legalRemovalDataType = '';
+        protected $regionalRequirementsType = AdPolicyTopicEvidenceRegionalRequirements::class;
+        protected $regionalRequirementsDataType = '';
+        protected $textListType = AdPolicyTopicEvidenceTextList::class;
+        protected $textListDataType = '';
+        protected $trademarkType = AdPolicyTopicEvidenceTrademark::class;
+        protected $trademarkDataType = '';
+        protected $websiteListType = AdPolicyTopicEvidenceWebsiteList::class;
+        protected $websiteListDataType = '';
+        /**
+         * Counterfeit enforcement that caused a policy violation.
+         *
+         * @param AdPolicyTopicEvidenceCounterfeit $counterfeit
+         */
+        public function setCounterfeit(AdPolicyTopicEvidenceCounterfeit $counterfeit)
+        {
+        }
+        /**
+         * @return AdPolicyTopicEvidenceCounterfeit
+         */
+        public function getCounterfeit()
+        {
+        }
+        /**
+         * A mismatch between the ad destination URLs.
+         *
+         * @param AdPolicyTopicEvidenceDestinationMismatch $destinationMismatch
+         */
+        public function setDestinationMismatch(AdPolicyTopicEvidenceDestinationMismatch $destinationMismatch)
+        {
+        }
+        /**
+         * @return AdPolicyTopicEvidenceDestinationMismatch
+         */
+        public function getDestinationMismatch()
+        {
+        }
+        /**
+         * Information on HTTP or DNS errors related to the ad destination.
+         *
+         * @param AdPolicyTopicEvidenceDestinationNotWorking $destinationNotWorking
+         */
+        public function setDestinationNotWorking(AdPolicyTopicEvidenceDestinationNotWorking $destinationNotWorking)
+        {
+        }
+        /**
+         * @return AdPolicyTopicEvidenceDestinationNotWorking
+         */
+        public function getDestinationNotWorking()
+        {
+        }
+        /**
+         * The text in the destination of the ad that is causing a policy violation.
+         *
+         * @param AdPolicyTopicEvidenceDestinationTextList $destinationTextList
+         */
+        public function setDestinationTextList(AdPolicyTopicEvidenceDestinationTextList $destinationTextList)
+        {
+        }
+        /**
+         * @return AdPolicyTopicEvidenceDestinationTextList
+         */
+        public function getDestinationTextList()
+        {
+        }
+        /**
+         * HTTP code returned when the final URL was crawled.
+         *
+         * @param int $httpCode
+         */
+        public function setHttpCode($httpCode)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHttpCode()
+        {
+        }
+        /**
+         * The language the ad was detected to be written in. This field uses IETF
+         * language tags, such as "en-US".
+         *
+         * @param string $languageCode
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
+        /**
+         * Legal related regulation enforcement that caused a policy violation.
+         *
+         * @param AdPolicyTopicEvidenceLegalRemoval $legalRemoval
+         */
+        public function setLegalRemoval(AdPolicyTopicEvidenceLegalRemoval $legalRemoval)
+        {
+        }
+        /**
+         * @return AdPolicyTopicEvidenceLegalRemoval
+         */
+        public function getLegalRemoval()
+        {
+        }
+        /**
+         * T&S proactive enforcement that caused a policy violation.
+         *
+         * @param AdPolicyTopicEvidenceRegionalRequirements $regionalRequirements
+         */
+        public function setRegionalRequirements(AdPolicyTopicEvidenceRegionalRequirements $regionalRequirements)
+        {
+        }
+        /**
+         * @return AdPolicyTopicEvidenceRegionalRequirements
+         */
+        public function getRegionalRequirements()
+        {
+        }
+        /**
+         * List of evidence found in the text of the ad.
+         *
+         * @param AdPolicyTopicEvidenceTextList $textList
+         */
+        public function setTextList(AdPolicyTopicEvidenceTextList $textList)
+        {
+        }
+        /**
+         * @return AdPolicyTopicEvidenceTextList
+         */
+        public function getTextList()
+        {
+        }
+        /**
+         * Trademark terms that caused a policy violation.
+         *
+         * @param AdPolicyTopicEvidenceTrademark $trademark
+         */
+        public function setTrademark(AdPolicyTopicEvidenceTrademark $trademark)
+        {
+        }
+        /**
+         * @return AdPolicyTopicEvidenceTrademark
+         */
+        public function getTrademark()
+        {
+        }
+        /**
+         * List of websites linked with the ad.
+         *
+         * @param AdPolicyTopicEvidenceWebsiteList $websiteList
+         */
+        public function setWebsiteList(AdPolicyTopicEvidenceWebsiteList $websiteList)
+        {
+        }
+        /**
+         * @return AdPolicyTopicEvidenceWebsiteList
+         */
+        public function getWebsiteList()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AdPolicyTopicEvidenceCounterfeit
+     * Runtime class alias of \Google\Service\DisplayVideo\AdPolicyTopicEvidence registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCounterfeit()
-    {
-    }
-    /**
-     * A mismatch between the ad destination URLs.
-     *
-     * @param AdPolicyTopicEvidenceDestinationMismatch $destinationMismatch
-     */
-    public function setDestinationMismatch(AdPolicyTopicEvidenceDestinationMismatch $destinationMismatch)
-    {
-    }
-    /**
-     * @return AdPolicyTopicEvidenceDestinationMismatch
-     */
-    public function getDestinationMismatch()
-    {
-    }
-    /**
-     * Information on HTTP or DNS errors related to the ad destination.
-     *
-     * @param AdPolicyTopicEvidenceDestinationNotWorking $destinationNotWorking
-     */
-    public function setDestinationNotWorking(AdPolicyTopicEvidenceDestinationNotWorking $destinationNotWorking)
-    {
-    }
-    /**
-     * @return AdPolicyTopicEvidenceDestinationNotWorking
-     */
-    public function getDestinationNotWorking()
-    {
-    }
-    /**
-     * The text in the destination of the ad that is causing a policy violation.
-     *
-     * @param AdPolicyTopicEvidenceDestinationTextList $destinationTextList
-     */
-    public function setDestinationTextList(AdPolicyTopicEvidenceDestinationTextList $destinationTextList)
-    {
-    }
-    /**
-     * @return AdPolicyTopicEvidenceDestinationTextList
-     */
-    public function getDestinationTextList()
-    {
-    }
-    /**
-     * HTTP code returned when the final URL was crawled.
-     *
-     * @param int $httpCode
-     */
-    public function setHttpCode($httpCode)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getHttpCode()
-    {
-    }
-    /**
-     * The language the ad was detected to be written in. This field uses IETF
-     * language tags, such as "en-US".
-     *
-     * @param string $languageCode
-     */
-    public function setLanguageCode($languageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguageCode()
-    {
-    }
-    /**
-     * Legal related regulation enforcement that caused a policy violation.
-     *
-     * @param AdPolicyTopicEvidenceLegalRemoval $legalRemoval
-     */
-    public function setLegalRemoval(AdPolicyTopicEvidenceLegalRemoval $legalRemoval)
-    {
-    }
-    /**
-     * @return AdPolicyTopicEvidenceLegalRemoval
-     */
-    public function getLegalRemoval()
-    {
-    }
-    /**
-     * T&S proactive enforcement that caused a policy violation.
-     *
-     * @param AdPolicyTopicEvidenceRegionalRequirements $regionalRequirements
-     */
-    public function setRegionalRequirements(AdPolicyTopicEvidenceRegionalRequirements $regionalRequirements)
-    {
-    }
-    /**
-     * @return AdPolicyTopicEvidenceRegionalRequirements
-     */
-    public function getRegionalRequirements()
-    {
-    }
-    /**
-     * List of evidence found in the text of the ad.
-     *
-     * @param AdPolicyTopicEvidenceTextList $textList
-     */
-    public function setTextList(AdPolicyTopicEvidenceTextList $textList)
-    {
-    }
-    /**
-     * @return AdPolicyTopicEvidenceTextList
-     */
-    public function getTextList()
-    {
-    }
-    /**
-     * Trademark terms that caused a policy violation.
-     *
-     * @param AdPolicyTopicEvidenceTrademark $trademark
-     */
-    public function setTrademark(AdPolicyTopicEvidenceTrademark $trademark)
-    {
-    }
-    /**
-     * @return AdPolicyTopicEvidenceTrademark
-     */
-    public function getTrademark()
-    {
-    }
-    /**
-     * List of websites linked with the ad.
-     *
-     * @param AdPolicyTopicEvidenceWebsiteList $websiteList
-     */
-    public function setWebsiteList(AdPolicyTopicEvidenceWebsiteList $websiteList)
-    {
-    }
-    /**
-     * @return AdPolicyTopicEvidenceWebsiteList
-     */
-    public function getWebsiteList()
+    class Google_Service_DisplayVideo_AdPolicyTopicEvidence extends \Google\Service\DisplayVideo\AdPolicyTopicEvidence
     {
     }
 }

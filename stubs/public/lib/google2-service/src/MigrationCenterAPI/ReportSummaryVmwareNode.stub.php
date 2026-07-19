@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class ReportSummaryVmwareNode extends \Google\Model
-{
-    /**
-     * Code to identify VMware Engine node series, e.g. "ve1-standard-72". Based
-     * on the displayName of cloud.google.com/vmware-
-     * engine/docs/reference/rest/v1/projects.locations.nodeTypes
-     *
-     * @var string
-     */
-    public $code;
-    /**
-     * Code to identify VMware Engine node series, e.g. "ve1-standard-72". Based
-     * on the displayName of cloud.google.com/vmware-
-     * engine/docs/reference/rest/v1/projects.locations.nodeTypes
-     *
-     * @param string $code
-     */
-    public function setCode($code)
+namespace Google\Service\MigrationCenterAPI {
+    class ReportSummaryVmwareNode extends \Google\Model
     {
+        /**
+         * Code to identify VMware Engine node series, e.g. "ve1-standard-72". Based
+         * on the displayName of cloud.google.com/vmware-
+         * engine/docs/reference/rest/v1/projects.locations.nodeTypes
+         *
+         * @var string
+         */
+        public $code;
+        /**
+         * Code to identify VMware Engine node series, e.g. "ve1-standard-72". Based
+         * on the displayName of cloud.google.com/vmware-
+         * engine/docs/reference/rest/v1/projects.locations.nodeTypes
+         *
+         * @param string $code
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\ReportSummaryVmwareNode registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCode()
+    class Google_Service_MigrationCenterAPI_ReportSummaryVmwareNode extends \Google\Service\MigrationCenterAPI\ReportSummaryVmwareNode
     {
     }
 }

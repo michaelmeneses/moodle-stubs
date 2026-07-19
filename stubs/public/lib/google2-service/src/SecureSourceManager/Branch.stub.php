@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecureSourceManager;
-
-class Branch extends \Google\Model
-{
-    /**
-     * Required. Name of the branch.
-     *
-     * @var string
-     */
-    public $ref;
-    /**
-     * Output only. The commit at the tip of the branch.
-     *
-     * @var string
-     */
-    public $sha;
-    /**
-     * Required. Name of the branch.
-     *
-     * @param string $ref
-     */
-    public function setRef($ref)
+namespace Google\Service\SecureSourceManager {
+    class Branch extends \Google\Model
     {
+        /**
+         * Required. Name of the branch.
+         *
+         * @var string
+         */
+        public $ref;
+        /**
+         * Output only. The commit at the tip of the branch.
+         *
+         * @var string
+         */
+        public $sha;
+        /**
+         * Required. Name of the branch.
+         *
+         * @param string $ref
+         */
+        public function setRef($ref)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRef()
+        {
+        }
+        /**
+         * Output only. The commit at the tip of the branch.
+         *
+         * @param string $sha
+         */
+        public function setSha($sha)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSha()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecureSourceManager\Branch registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRef()
-    {
-    }
-    /**
-     * Output only. The commit at the tip of the branch.
-     *
-     * @param string $sha
-     */
-    public function setSha($sha)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSha()
+    class Google_Service_SecureSourceManager_Branch extends \Google\Service\SecureSourceManager\Branch
     {
     }
 }

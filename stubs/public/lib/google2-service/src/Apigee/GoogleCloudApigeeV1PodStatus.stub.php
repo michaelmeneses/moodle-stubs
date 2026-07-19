@@ -21,194 +21,203 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1PodStatus extends \Google\Model
-{
-    /**
-     * Version of the application running in the pod.
-     *
-     * @var string
-     */
-    public $appVersion;
-    /**
-     * Status of the deployment. Valid values include: - `deployed`: Successful. -
-     * `error` : Failed. - `pending` : Pod has not yet reported on the deployment.
-     *
-     * @var string
-     */
-    public $deploymentStatus;
-    /**
-     * Time the deployment status was reported in milliseconds since epoch.
-     *
-     * @var string
-     */
-    public $deploymentStatusTime;
-    /**
-     * Time the proxy was deployed in milliseconds since epoch.
-     *
-     * @var string
-     */
-    public $deploymentTime;
-    /**
-     * Name of the pod which is reporting the status.
-     *
-     * @var string
-     */
-    public $podName;
-    /**
-     * Overall status of the pod (not this specific deployment). Valid values
-     * include: - `active`: Up to date. - `stale` : Recently out of date. Pods
-     * that have not reported status in a long time are excluded from the output.
-     *
-     * @var string
-     */
-    public $podStatus;
-    /**
-     * Time the pod status was reported in milliseconds since epoch.
-     *
-     * @var string
-     */
-    public $podStatusTime;
-    /**
-     * Code associated with the deployment status.
-     *
-     * @var string
-     */
-    public $statusCode;
-    /**
-     * Human-readable message associated with the status code.
-     *
-     * @var string
-     */
-    public $statusCodeDetails;
-    /**
-     * Version of the application running in the pod.
-     *
-     * @param string $appVersion
-     */
-    public function setAppVersion($appVersion)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1PodStatus extends \Google\Model
     {
+        /**
+         * Version of the application running in the pod.
+         *
+         * @var string
+         */
+        public $appVersion;
+        /**
+         * Status of the deployment. Valid values include: - `deployed`: Successful. -
+         * `error` : Failed. - `pending` : Pod has not yet reported on the deployment.
+         *
+         * @var string
+         */
+        public $deploymentStatus;
+        /**
+         * Time the deployment status was reported in milliseconds since epoch.
+         *
+         * @var string
+         */
+        public $deploymentStatusTime;
+        /**
+         * Time the proxy was deployed in milliseconds since epoch.
+         *
+         * @var string
+         */
+        public $deploymentTime;
+        /**
+         * Name of the pod which is reporting the status.
+         *
+         * @var string
+         */
+        public $podName;
+        /**
+         * Overall status of the pod (not this specific deployment). Valid values
+         * include: - `active`: Up to date. - `stale` : Recently out of date. Pods
+         * that have not reported status in a long time are excluded from the output.
+         *
+         * @var string
+         */
+        public $podStatus;
+        /**
+         * Time the pod status was reported in milliseconds since epoch.
+         *
+         * @var string
+         */
+        public $podStatusTime;
+        /**
+         * Code associated with the deployment status.
+         *
+         * @var string
+         */
+        public $statusCode;
+        /**
+         * Human-readable message associated with the status code.
+         *
+         * @var string
+         */
+        public $statusCodeDetails;
+        /**
+         * Version of the application running in the pod.
+         *
+         * @param string $appVersion
+         */
+        public function setAppVersion($appVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAppVersion()
+        {
+        }
+        /**
+         * Status of the deployment. Valid values include: - `deployed`: Successful. -
+         * `error` : Failed. - `pending` : Pod has not yet reported on the deployment.
+         *
+         * @param string $deploymentStatus
+         */
+        public function setDeploymentStatus($deploymentStatus)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeploymentStatus()
+        {
+        }
+        /**
+         * Time the deployment status was reported in milliseconds since epoch.
+         *
+         * @param string $deploymentStatusTime
+         */
+        public function setDeploymentStatusTime($deploymentStatusTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeploymentStatusTime()
+        {
+        }
+        /**
+         * Time the proxy was deployed in milliseconds since epoch.
+         *
+         * @param string $deploymentTime
+         */
+        public function setDeploymentTime($deploymentTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeploymentTime()
+        {
+        }
+        /**
+         * Name of the pod which is reporting the status.
+         *
+         * @param string $podName
+         */
+        public function setPodName($podName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPodName()
+        {
+        }
+        /**
+         * Overall status of the pod (not this specific deployment). Valid values
+         * include: - `active`: Up to date. - `stale` : Recently out of date. Pods
+         * that have not reported status in a long time are excluded from the output.
+         *
+         * @param string $podStatus
+         */
+        public function setPodStatus($podStatus)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPodStatus()
+        {
+        }
+        /**
+         * Time the pod status was reported in milliseconds since epoch.
+         *
+         * @param string $podStatusTime
+         */
+        public function setPodStatusTime($podStatusTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPodStatusTime()
+        {
+        }
+        /**
+         * Code associated with the deployment status.
+         *
+         * @param string $statusCode
+         */
+        public function setStatusCode($statusCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatusCode()
+        {
+        }
+        /**
+         * Human-readable message associated with the status code.
+         *
+         * @param string $statusCodeDetails
+         */
+        public function setStatusCodeDetails($statusCodeDetails)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatusCodeDetails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1PodStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppVersion()
-    {
-    }
-    /**
-     * Status of the deployment. Valid values include: - `deployed`: Successful. -
-     * `error` : Failed. - `pending` : Pod has not yet reported on the deployment.
-     *
-     * @param string $deploymentStatus
-     */
-    public function setDeploymentStatus($deploymentStatus)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeploymentStatus()
-    {
-    }
-    /**
-     * Time the deployment status was reported in milliseconds since epoch.
-     *
-     * @param string $deploymentStatusTime
-     */
-    public function setDeploymentStatusTime($deploymentStatusTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeploymentStatusTime()
-    {
-    }
-    /**
-     * Time the proxy was deployed in milliseconds since epoch.
-     *
-     * @param string $deploymentTime
-     */
-    public function setDeploymentTime($deploymentTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeploymentTime()
-    {
-    }
-    /**
-     * Name of the pod which is reporting the status.
-     *
-     * @param string $podName
-     */
-    public function setPodName($podName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPodName()
-    {
-    }
-    /**
-     * Overall status of the pod (not this specific deployment). Valid values
-     * include: - `active`: Up to date. - `stale` : Recently out of date. Pods
-     * that have not reported status in a long time are excluded from the output.
-     *
-     * @param string $podStatus
-     */
-    public function setPodStatus($podStatus)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPodStatus()
-    {
-    }
-    /**
-     * Time the pod status was reported in milliseconds since epoch.
-     *
-     * @param string $podStatusTime
-     */
-    public function setPodStatusTime($podStatusTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPodStatusTime()
-    {
-    }
-    /**
-     * Code associated with the deployment status.
-     *
-     * @param string $statusCode
-     */
-    public function setStatusCode($statusCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatusCode()
-    {
-    }
-    /**
-     * Human-readable message associated with the status code.
-     *
-     * @param string $statusCodeDetails
-     */
-    public function setStatusCodeDetails($statusCodeDetails)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatusCodeDetails()
+    class Google_Service_Apigee_GoogleCloudApigeeV1PodStatus extends \Google\Service\Apigee\GoogleCloudApigeeV1PodStatus
     {
     }
 }

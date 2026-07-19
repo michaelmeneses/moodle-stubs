@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class ListResourceValueConfigsResponse extends \Google\Collection
-{
-    protected $collection_key = 'resourceValueConfigs';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is empty, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $resourceValueConfigsType = GoogleCloudSecuritycenterV1ResourceValueConfig::class;
-    protected $resourceValueConfigsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is empty, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\SecurityCommandCenter {
+    class ListResourceValueConfigsResponse extends \Google\Collection
     {
+        protected $collection_key = 'resourceValueConfigs';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is empty, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $resourceValueConfigsType = GoogleCloudSecuritycenterV1ResourceValueConfig::class;
+        protected $resourceValueConfigsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is empty, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The resource value configs from the specified parent.
+         *
+         * @param GoogleCloudSecuritycenterV1ResourceValueConfig[] $resourceValueConfigs
+         */
+        public function setResourceValueConfigs($resourceValueConfigs)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV1ResourceValueConfig[]
+         */
+        public function getResourceValueConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\ListResourceValueConfigsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The resource value configs from the specified parent.
-     *
-     * @param GoogleCloudSecuritycenterV1ResourceValueConfig[] $resourceValueConfigs
-     */
-    public function setResourceValueConfigs($resourceValueConfigs)
-    {
-    }
-    /**
-     * @return GoogleCloudSecuritycenterV1ResourceValueConfig[]
-     */
-    public function getResourceValueConfigs()
+    class Google_Service_SecurityCommandCenter_ListResourceValueConfigsResponse extends \Google\Service\SecurityCommandCenter\ListResourceValueConfigsResponse
     {
     }
 }

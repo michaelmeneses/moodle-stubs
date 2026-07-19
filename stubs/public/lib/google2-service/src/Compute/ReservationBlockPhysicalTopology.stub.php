@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ReservationBlockPhysicalTopology extends \Google\Collection
-{
-    protected $collection_key = 'instances';
-    /**
-     * The hash of the capacity block within the cluster.
-     *
-     * @var string
-     */
-    public $block;
-    /**
-     * The cluster name of the reservation block.
-     *
-     * @var string
-     */
-    public $cluster;
-    protected $instancesType = ReservationBlockPhysicalTopologyInstance::class;
-    protected $instancesDataType = 'array';
-    /**
-     * The hash of the capacity block within the cluster.
-     *
-     * @param string $block
-     */
-    public function setBlock($block)
+namespace Google\Service\Compute {
+    class ReservationBlockPhysicalTopology extends \Google\Collection
     {
+        protected $collection_key = 'instances';
+        /**
+         * The hash of the capacity block within the cluster.
+         *
+         * @var string
+         */
+        public $block;
+        /**
+         * The cluster name of the reservation block.
+         *
+         * @var string
+         */
+        public $cluster;
+        protected $instancesType = ReservationBlockPhysicalTopologyInstance::class;
+        protected $instancesDataType = 'array';
+        /**
+         * The hash of the capacity block within the cluster.
+         *
+         * @param string $block
+         */
+        public function setBlock($block)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBlock()
+        {
+        }
+        /**
+         * The cluster name of the reservation block.
+         *
+         * @param string $cluster
+         */
+        public function setCluster($cluster)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCluster()
+        {
+        }
+        /**
+         * Output only. The detailed instances information for a given Block
+         *
+         * @param ReservationBlockPhysicalTopologyInstance[] $instances
+         */
+        public function setInstances($instances)
+        {
+        }
+        /**
+         * @return ReservationBlockPhysicalTopologyInstance[]
+         */
+        public function getInstances()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\ReservationBlockPhysicalTopology registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlock()
-    {
-    }
-    /**
-     * The cluster name of the reservation block.
-     *
-     * @param string $cluster
-     */
-    public function setCluster($cluster)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCluster()
-    {
-    }
-    /**
-     * Output only. The detailed instances information for a given Block
-     *
-     * @param ReservationBlockPhysicalTopologyInstance[] $instances
-     */
-    public function setInstances($instances)
-    {
-    }
-    /**
-     * @return ReservationBlockPhysicalTopologyInstance[]
-     */
-    public function getInstances()
+    class Google_Service_Compute_ReservationBlockPhysicalTopology extends \Google\Service\Compute\ReservationBlockPhysicalTopology
     {
     }
 }

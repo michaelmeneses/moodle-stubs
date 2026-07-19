@@ -8,6 +8,7 @@
  */
 namespace Slim\Factory\Psr17;
 
+use Slim\Interfaces\ServerRequestCreatorInterface;
 class NyholmPsr17Factory extends Psr17Factory
 {
     protected static string $responseFactoryClass = 'Nyholm\Psr7\Factory\Psr17Factory';

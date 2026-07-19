@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class ListMigrationJobObjectsResponse extends \Google\Collection
-{
-    protected $collection_key = 'migrationJobObjects';
-    protected $migrationJobObjectsType = MigrationJobObject::class;
-    protected $migrationJobObjectsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of migration job objects.
-     *
-     * @param MigrationJobObject[] $migrationJobObjects
-     */
-    public function setMigrationJobObjects($migrationJobObjects)
+namespace Google\Service\DatabaseMigrationService {
+    class ListMigrationJobObjectsResponse extends \Google\Collection
     {
+        protected $collection_key = 'migrationJobObjects';
+        protected $migrationJobObjectsType = MigrationJobObject::class;
+        protected $migrationJobObjectsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of migration job objects.
+         *
+         * @param MigrationJobObject[] $migrationJobObjects
+         */
+        public function setMigrationJobObjects($migrationJobObjects)
+        {
+        }
+        /**
+         * @return MigrationJobObject[]
+         */
+        public function getMigrationJobObjects()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MigrationJobObject[]
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\ListMigrationJobObjectsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMigrationJobObjects()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DatabaseMigrationService_ListMigrationJobObjectsResponse extends \Google\Service\DatabaseMigrationService\ListMigrationJobObjectsResponse
     {
     }
 }

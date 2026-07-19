@@ -8,6 +8,7 @@
  */
 namespace Aws\Omics;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Omics** service.
  * @method \Aws\Result abortMultipartReadSetUpload(array $args = [])

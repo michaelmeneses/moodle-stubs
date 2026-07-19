@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InstanceGroupManagersCreateInstancesRequest extends \Google\Collection
-{
-    protected $collection_key = 'instances';
-    protected $instancesType = PerInstanceConfig::class;
-    protected $instancesDataType = 'array';
-    /**
-     * [Required] List of specifications of per-instance configs.
-     *
-     * @param PerInstanceConfig[] $instances
-     */
-    public function setInstances($instances)
+namespace Google\Service\Compute {
+    class InstanceGroupManagersCreateInstancesRequest extends \Google\Collection
     {
+        protected $collection_key = 'instances';
+        protected $instancesType = PerInstanceConfig::class;
+        protected $instancesDataType = 'array';
+        /**
+         * [Required] List of specifications of per-instance configs.
+         *
+         * @param PerInstanceConfig[] $instances
+         */
+        public function setInstances($instances)
+        {
+        }
+        /**
+         * @return PerInstanceConfig[]
+         */
+        public function getInstances()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PerInstanceConfig[]
+     * Runtime class alias of \Google\Service\Compute\InstanceGroupManagersCreateInstancesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstances()
+    class Google_Service_Compute_InstanceGroupManagersCreateInstancesRequest extends \Google\Service\Compute\InstanceGroupManagersCreateInstancesRequest
     {
     }
 }

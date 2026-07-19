@@ -8,6 +8,7 @@
  */
 namespace Aws\VoiceID;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Voice ID** service.
  * @method \Aws\Result associateFraudster(array $args = [])

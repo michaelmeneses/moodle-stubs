@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessBusinessInformation;
-
-class BusinessHours extends \Google\Collection
-{
-    protected $collection_key = 'periods';
-    protected $periodsType = TimePeriod::class;
-    protected $periodsDataType = 'array';
-    /**
-     * Required. A collection of times that this location is open for business.
-     * Each period represents a range of hours when the location is open during
-     * the week.
-     *
-     * @param TimePeriod[] $periods
-     */
-    public function setPeriods($periods)
+namespace Google\Service\MyBusinessBusinessInformation {
+    class BusinessHours extends \Google\Collection
     {
+        protected $collection_key = 'periods';
+        protected $periodsType = TimePeriod::class;
+        protected $periodsDataType = 'array';
+        /**
+         * Required. A collection of times that this location is open for business.
+         * Each period represents a range of hours when the location is open during
+         * the week.
+         *
+         * @param TimePeriod[] $periods
+         */
+        public function setPeriods($periods)
+        {
+        }
+        /**
+         * @return TimePeriod[]
+         */
+        public function getPeriods()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TimePeriod[]
+     * Runtime class alias of \Google\Service\MyBusinessBusinessInformation\BusinessHours registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPeriods()
+    class Google_Service_MyBusinessBusinessInformation_BusinessHours extends \Google\Service\MyBusinessBusinessInformation\BusinessHours
     {
     }
 }

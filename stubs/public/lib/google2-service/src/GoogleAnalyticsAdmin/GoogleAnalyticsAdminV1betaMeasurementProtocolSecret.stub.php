@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1betaMeasurementProtocolSecret extends \Google\Model
-{
-    /**
-     * Required. Human-readable display name for this secret.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. Resource name of this secret. This secret may be a child of
-     * any type of stream. Format: properties/{property}/dataStreams/{dataStream}/
-     * measurementProtocolSecrets/{measurementProtocolSecret}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The measurement protocol secret value. Pass this value to the
-     * api_secret field of the Measurement Protocol API when sending hits to this
-     * secret's parent property.
-     *
-     * @var string
-     */
-    public $secretValue;
-    /**
-     * Required. Human-readable display name for this secret.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1betaMeasurementProtocolSecret extends \Google\Model
     {
+        /**
+         * Required. Human-readable display name for this secret.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. Resource name of this secret. This secret may be a child of
+         * any type of stream. Format: properties/{property}/dataStreams/{dataStream}/
+         * measurementProtocolSecrets/{measurementProtocolSecret}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The measurement protocol secret value. Pass this value to the
+         * api_secret field of the Measurement Protocol API when sending hits to this
+         * secret's parent property.
+         *
+         * @var string
+         */
+        public $secretValue;
+        /**
+         * Required. Human-readable display name for this secret.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. Resource name of this secret. This secret may be a child of
+         * any type of stream. Format: properties/{property}/dataStreams/{dataStream}/
+         * measurementProtocolSecrets/{measurementProtocolSecret}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The measurement protocol secret value. Pass this value to the
+         * api_secret field of the Measurement Protocol API when sending hits to this
+         * secret's parent property.
+         *
+         * @param string $secretValue
+         */
+        public function setSecretValue($secretValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecretValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaMeasurementProtocolSecret registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. Resource name of this secret. This secret may be a child of
-     * any type of stream. Format: properties/{property}/dataStreams/{dataStream}/
-     * measurementProtocolSecrets/{measurementProtocolSecret}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The measurement protocol secret value. Pass this value to the
-     * api_secret field of the Measurement Protocol API when sending hits to this
-     * secret's parent property.
-     *
-     * @param string $secretValue
-     */
-    public function setSecretValue($secretValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSecretValue()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1betaMeasurementProtocolSecret extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaMeasurementProtocolSecret
     {
     }
 }

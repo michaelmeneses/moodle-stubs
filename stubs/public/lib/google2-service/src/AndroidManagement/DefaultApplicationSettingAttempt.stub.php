@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class DefaultApplicationSettingAttempt extends \Google\Model
-{
-    /**
-     * Attempt outcome is unspecified. This is not used.
-     */
-    public const ATTEMPT_OUTCOME_ATTEMPT_OUTCOME_UNSPECIFIED = 'ATTEMPT_OUTCOME_UNSPECIFIED';
-    /**
-     * App is successfully set as the default.
-     */
-    public const ATTEMPT_OUTCOME_SUCCESS = 'SUCCESS';
-    /**
-     * Attempt failed as the app is not installed.
-     */
-    public const ATTEMPT_OUTCOME_APP_NOT_INSTALLED = 'APP_NOT_INSTALLED';
-    /**
-     * Attempt failed as the signing key certificate fingerprint of the app from
-     * Play Store or from ApplicationPolicy.signingKeyCerts does not match the one
-     * on the device.
-     */
-    public const ATTEMPT_OUTCOME_APP_SIGNING_CERT_MISMATCH = 'APP_SIGNING_CERT_MISMATCH';
-    /**
-     * Attempt failed due to other reasons.
-     */
-    public const ATTEMPT_OUTCOME_OTHER_FAILURE = 'OTHER_FAILURE';
-    /**
-     * Output only. The outcome of setting the app as the default.
-     *
-     * @var string
-     */
-    public $attemptOutcome;
-    /**
-     * Output only. The package name of the attempted application.
-     *
-     * @var string
-     */
-    public $packageName;
-    /**
-     * Output only. The outcome of setting the app as the default.
-     *
-     * Accepted values: ATTEMPT_OUTCOME_UNSPECIFIED, SUCCESS, APP_NOT_INSTALLED,
-     * APP_SIGNING_CERT_MISMATCH, OTHER_FAILURE
-     *
-     * @param self::ATTEMPT_OUTCOME_* $attemptOutcome
-     */
-    public function setAttemptOutcome($attemptOutcome)
+namespace Google\Service\AndroidManagement {
+    class DefaultApplicationSettingAttempt extends \Google\Model
     {
+        /**
+         * Attempt outcome is unspecified. This is not used.
+         */
+        public const ATTEMPT_OUTCOME_ATTEMPT_OUTCOME_UNSPECIFIED = 'ATTEMPT_OUTCOME_UNSPECIFIED';
+        /**
+         * App is successfully set as the default.
+         */
+        public const ATTEMPT_OUTCOME_SUCCESS = 'SUCCESS';
+        /**
+         * Attempt failed as the app is not installed.
+         */
+        public const ATTEMPT_OUTCOME_APP_NOT_INSTALLED = 'APP_NOT_INSTALLED';
+        /**
+         * Attempt failed as the signing key certificate fingerprint of the app from
+         * Play Store or from ApplicationPolicy.signingKeyCerts does not match the one
+         * on the device.
+         */
+        public const ATTEMPT_OUTCOME_APP_SIGNING_CERT_MISMATCH = 'APP_SIGNING_CERT_MISMATCH';
+        /**
+         * Attempt failed due to other reasons.
+         */
+        public const ATTEMPT_OUTCOME_OTHER_FAILURE = 'OTHER_FAILURE';
+        /**
+         * Output only. The outcome of setting the app as the default.
+         *
+         * @var string
+         */
+        public $attemptOutcome;
+        /**
+         * Output only. The package name of the attempted application.
+         *
+         * @var string
+         */
+        public $packageName;
+        /**
+         * Output only. The outcome of setting the app as the default.
+         *
+         * Accepted values: ATTEMPT_OUTCOME_UNSPECIFIED, SUCCESS, APP_NOT_INSTALLED,
+         * APP_SIGNING_CERT_MISMATCH, OTHER_FAILURE
+         *
+         * @param self::ATTEMPT_OUTCOME_* $attemptOutcome
+         */
+        public function setAttemptOutcome($attemptOutcome)
+        {
+        }
+        /**
+         * @return self::ATTEMPT_OUTCOME_*
+         */
+        public function getAttemptOutcome()
+        {
+        }
+        /**
+         * Output only. The package name of the attempted application.
+         *
+         * @param string $packageName
+         */
+        public function setPackageName($packageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackageName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ATTEMPT_OUTCOME_*
+     * Runtime class alias of \Google\Service\AndroidManagement\DefaultApplicationSettingAttempt registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttemptOutcome()
-    {
-    }
-    /**
-     * Output only. The package name of the attempted application.
-     *
-     * @param string $packageName
-     */
-    public function setPackageName($packageName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPackageName()
+    class Google_Service_AndroidManagement_DefaultApplicationSettingAttempt extends \Google\Service\AndroidManagement\DefaultApplicationSettingAttempt
     {
     }
 }

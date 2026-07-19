@@ -21,133 +21,142 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Reports;
-
-class UsageReportParameters extends \Google\Collection
-{
-    protected $collection_key = 'msgValue';
-    /**
-     * Output only. Boolean value of the parameter.
-     *
-     * @var bool
-     */
-    public $boolValue;
-    /**
-     * The RFC 3339 formatted value of the parameter, for example
-     * 2010-10-28T10:26:35.000Z.
-     *
-     * @var string
-     */
-    public $datetimeValue;
-    /**
-     * Output only. Integer value of the parameter.
-     *
-     * @var string
-     */
-    public $intValue;
-    /**
-     * Output only. Nested message value of the parameter.
-     *
-     * @var array[]
-     */
-    public $msgValue;
-    /**
-     * The name of the parameter. For the User Usage Report parameter names, see
-     * the User Usage parameters reference.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. String value of the parameter.
-     *
-     * @var string
-     */
-    public $stringValue;
-    /**
-     * Output only. Boolean value of the parameter.
-     *
-     * @param bool $boolValue
-     */
-    public function setBoolValue($boolValue)
+namespace Google\Service\Reports {
+    class UsageReportParameters extends \Google\Collection
     {
+        protected $collection_key = 'msgValue';
+        /**
+         * Output only. Boolean value of the parameter.
+         *
+         * @var bool
+         */
+        public $boolValue;
+        /**
+         * The RFC 3339 formatted value of the parameter, for example
+         * 2010-10-28T10:26:35.000Z.
+         *
+         * @var string
+         */
+        public $datetimeValue;
+        /**
+         * Output only. Integer value of the parameter.
+         *
+         * @var string
+         */
+        public $intValue;
+        /**
+         * Output only. Nested message value of the parameter.
+         *
+         * @var array[]
+         */
+        public $msgValue;
+        /**
+         * The name of the parameter. For the User Usage Report parameter names, see
+         * the User Usage parameters reference.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. String value of the parameter.
+         *
+         * @var string
+         */
+        public $stringValue;
+        /**
+         * Output only. Boolean value of the parameter.
+         *
+         * @param bool $boolValue
+         */
+        public function setBoolValue($boolValue)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBoolValue()
+        {
+        }
+        /**
+         * The RFC 3339 formatted value of the parameter, for example
+         * 2010-10-28T10:26:35.000Z.
+         *
+         * @param string $datetimeValue
+         */
+        public function setDatetimeValue($datetimeValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatetimeValue()
+        {
+        }
+        /**
+         * Output only. Integer value of the parameter.
+         *
+         * @param string $intValue
+         */
+        public function setIntValue($intValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIntValue()
+        {
+        }
+        /**
+         * Output only. Nested message value of the parameter.
+         *
+         * @param array[] $msgValue
+         */
+        public function setMsgValue($msgValue)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getMsgValue()
+        {
+        }
+        /**
+         * The name of the parameter. For the User Usage Report parameter names, see
+         * the User Usage parameters reference.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. String value of the parameter.
+         *
+         * @param string $stringValue
+         */
+        public function setStringValue($stringValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStringValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Reports\UsageReportParameters registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBoolValue()
-    {
-    }
-    /**
-     * The RFC 3339 formatted value of the parameter, for example
-     * 2010-10-28T10:26:35.000Z.
-     *
-     * @param string $datetimeValue
-     */
-    public function setDatetimeValue($datetimeValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDatetimeValue()
-    {
-    }
-    /**
-     * Output only. Integer value of the parameter.
-     *
-     * @param string $intValue
-     */
-    public function setIntValue($intValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIntValue()
-    {
-    }
-    /**
-     * Output only. Nested message value of the parameter.
-     *
-     * @param array[] $msgValue
-     */
-    public function setMsgValue($msgValue)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getMsgValue()
-    {
-    }
-    /**
-     * The name of the parameter. For the User Usage Report parameter names, see
-     * the User Usage parameters reference.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. String value of the parameter.
-     *
-     * @param string $stringValue
-     */
-    public function setStringValue($stringValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStringValue()
+    class Google_Service_Reports_UsageReportParameters extends \Google\Service\Reports\UsageReportParameters
     {
     }
 }

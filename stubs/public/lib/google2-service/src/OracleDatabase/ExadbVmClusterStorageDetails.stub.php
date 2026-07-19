@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class ExadbVmClusterStorageDetails extends \Google\Model
-{
-    /**
-     * Required. The storage allocation for the exadbvmcluster per node, in
-     * gigabytes (GB). This field is used to calculate the total storage
-     * allocation for the exadbvmcluster.
-     *
-     * @var int
-     */
-    public $sizeInGbsPerNode;
-    /**
-     * Required. The storage allocation for the exadbvmcluster per node, in
-     * gigabytes (GB). This field is used to calculate the total storage
-     * allocation for the exadbvmcluster.
-     *
-     * @param int $sizeInGbsPerNode
-     */
-    public function setSizeInGbsPerNode($sizeInGbsPerNode)
+namespace Google\Service\OracleDatabase {
+    class ExadbVmClusterStorageDetails extends \Google\Model
     {
+        /**
+         * Required. The storage allocation for the exadbvmcluster per node, in
+         * gigabytes (GB). This field is used to calculate the total storage
+         * allocation for the exadbvmcluster.
+         *
+         * @var int
+         */
+        public $sizeInGbsPerNode;
+        /**
+         * Required. The storage allocation for the exadbvmcluster per node, in
+         * gigabytes (GB). This field is used to calculate the total storage
+         * allocation for the exadbvmcluster.
+         *
+         * @param int $sizeInGbsPerNode
+         */
+        public function setSizeInGbsPerNode($sizeInGbsPerNode)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSizeInGbsPerNode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\OracleDatabase\ExadbVmClusterStorageDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSizeInGbsPerNode()
+    class Google_Service_OracleDatabase_ExadbVmClusterStorageDetails extends \Google\Service\OracleDatabase\ExadbVmClusterStorageDetails
     {
     }
 }

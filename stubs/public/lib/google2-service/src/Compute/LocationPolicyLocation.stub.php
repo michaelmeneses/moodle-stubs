@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class LocationPolicyLocation extends \Google\Model
-{
-    /**
-     * Location is allowed for use.
-     */
-    public const PREFERENCE_ALLOW = 'ALLOW';
-    /**
-     * Location is prohibited.
-     */
-    public const PREFERENCE_DENY = 'DENY';
-    /**
-     * Default value, unused.
-     */
-    public const PREFERENCE_PREFERENCE_UNSPECIFIED = 'PREFERENCE_UNSPECIFIED';
-    protected $constraintsType = LocationPolicyLocationConstraints::class;
-    protected $constraintsDataType = '';
-    /**
-     * Preference for a given location. Set to either ALLOW orDENY.
-     *
-     * @var string
-     */
-    public $preference;
-    /**
-     * Constraints that the caller requires on the result distribution in this
-     * zone.
-     *
-     * @param LocationPolicyLocationConstraints $constraints
-     */
-    public function setConstraints(LocationPolicyLocationConstraints $constraints)
+namespace Google\Service\Compute {
+    class LocationPolicyLocation extends \Google\Model
     {
+        /**
+         * Location is allowed for use.
+         */
+        public const PREFERENCE_ALLOW = 'ALLOW';
+        /**
+         * Location is prohibited.
+         */
+        public const PREFERENCE_DENY = 'DENY';
+        /**
+         * Default value, unused.
+         */
+        public const PREFERENCE_PREFERENCE_UNSPECIFIED = 'PREFERENCE_UNSPECIFIED';
+        protected $constraintsType = LocationPolicyLocationConstraints::class;
+        protected $constraintsDataType = '';
+        /**
+         * Preference for a given location. Set to either ALLOW orDENY.
+         *
+         * @var string
+         */
+        public $preference;
+        /**
+         * Constraints that the caller requires on the result distribution in this
+         * zone.
+         *
+         * @param LocationPolicyLocationConstraints $constraints
+         */
+        public function setConstraints(LocationPolicyLocationConstraints $constraints)
+        {
+        }
+        /**
+         * @return LocationPolicyLocationConstraints
+         */
+        public function getConstraints()
+        {
+        }
+        /**
+         * Preference for a given location. Set to either ALLOW orDENY.
+         *
+         * Accepted values: ALLOW, DENY, PREFERENCE_UNSPECIFIED
+         *
+         * @param self::PREFERENCE_* $preference
+         */
+        public function setPreference($preference)
+        {
+        }
+        /**
+         * @return self::PREFERENCE_*
+         */
+        public function getPreference()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LocationPolicyLocationConstraints
+     * Runtime class alias of \Google\Service\Compute\LocationPolicyLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConstraints()
-    {
-    }
-    /**
-     * Preference for a given location. Set to either ALLOW orDENY.
-     *
-     * Accepted values: ALLOW, DENY, PREFERENCE_UNSPECIFIED
-     *
-     * @param self::PREFERENCE_* $preference
-     */
-    public function setPreference($preference)
-    {
-    }
-    /**
-     * @return self::PREFERENCE_*
-     */
-    public function getPreference()
+    class Google_Service_Compute_LocationPolicyLocation extends \Google\Service\Compute\LocationPolicyLocation
     {
     }
 }

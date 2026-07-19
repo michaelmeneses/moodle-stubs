@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP\Resource;
-
-/**
- * The "locations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dlpService = new Google\Service\DLP(...);
- *   $locations = $dlpService->organizations_locations;
- *  </code>
- */
-class OrganizationsLocations extends \Google\Service\Resource
-{
+namespace Google\Service\DLP\Resource {
+    /**
+     * The "locations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dlpService = new Google\Service\DLP(...);
+     *   $locations = $dlpService->organizations_locations;
+     *  </code>
+     */
+    class OrganizationsLocations extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DLP\Resource\OrganizationsLocations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DLP_Resource_OrganizationsLocations extends \Google\Service\DLP\Resource\OrganizationsLocations
+    {
+    }
 }

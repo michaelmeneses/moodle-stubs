@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Recommender;
-
-class GoogleCloudRecommenderV1MarkInsightAcceptedRequest extends \Google\Model
-{
-    /**
-     * Required. Fingerprint of the Insight. Provides optimistic locking.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Optional. State properties user wish to include with this state. Full
-     * replace of the current state_metadata.
-     *
-     * @var string[]
-     */
-    public $stateMetadata;
-    /**
-     * Required. Fingerprint of the Insight. Provides optimistic locking.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\Recommender {
+    class GoogleCloudRecommenderV1MarkInsightAcceptedRequest extends \Google\Model
     {
+        /**
+         * Required. Fingerprint of the Insight. Provides optimistic locking.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Optional. State properties user wish to include with this state. Full
+         * replace of the current state_metadata.
+         *
+         * @var string[]
+         */
+        public $stateMetadata;
+        /**
+         * Required. Fingerprint of the Insight. Provides optimistic locking.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Optional. State properties user wish to include with this state. Full
+         * replace of the current state_metadata.
+         *
+         * @param string[] $stateMetadata
+         */
+        public function setStateMetadata($stateMetadata)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getStateMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Recommender\GoogleCloudRecommenderV1MarkInsightAcceptedRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * Optional. State properties user wish to include with this state. Full
-     * replace of the current state_metadata.
-     *
-     * @param string[] $stateMetadata
-     */
-    public function setStateMetadata($stateMetadata)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getStateMetadata()
+    class Google_Service_Recommender_GoogleCloudRecommenderV1MarkInsightAcceptedRequest extends \Google\Service\Recommender\GoogleCloudRecommenderV1MarkInsightAcceptedRequest
     {
     }
 }

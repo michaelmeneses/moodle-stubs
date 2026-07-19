@@ -21,77 +21,90 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent\Resource;
-
-/**
- * The "accounttax" collection of methods.
- * Typical usage is:
- *  <code>
- *   $contentService = new Google\Service\ShoppingContent(...);
- *   $accounttax = $contentService->accounttax;
- *  </code>
- */
-class Accounttax extends \Google\Service\Resource
-{
+namespace Google\Service\ShoppingContent\Resource {
+    use Google\Service\ShoppingContent\AccountTax as AccountTaxModel;
+    use Google\Service\ShoppingContent\AccounttaxCustomBatchRequest;
+    use Google\Service\ShoppingContent\AccounttaxCustomBatchResponse;
+    use Google\Service\ShoppingContent\AccounttaxListResponse;
     /**
-     * Retrieves and updates tax settings of multiple accounts in a single request.
-     * (accounttax.custombatch)
-     *
-     * @param AccounttaxCustomBatchRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return AccounttaxCustomBatchResponse
-     * @throws \Google\Service\Exception
+     * The "accounttax" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $contentService = new Google\Service\ShoppingContent(...);
+     *   $accounttax = $contentService->accounttax;
+     *  </code>
      */
-    public function custombatch(AccounttaxCustomBatchRequest $postBody, $optParams = [])
+    class Accounttax extends \Google\Service\Resource
     {
+        /**
+         * Retrieves and updates tax settings of multiple accounts in a single request.
+         * (accounttax.custombatch)
+         *
+         * @param AccounttaxCustomBatchRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return AccounttaxCustomBatchResponse
+         * @throws \Google\Service\Exception
+         */
+        public function custombatch(AccounttaxCustomBatchRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves the tax settings of the account. (accounttax.get)
+         *
+         * @param string $merchantId The ID of the managing account. If this parameter
+         * is not the same as accountId, then this account must be a multi-client
+         * account and `accountId` must be the ID of a sub-account of this account.
+         * @param string $accountId The ID of the account for which to get/update
+         * account tax settings.
+         * @param array $optParams Optional parameters.
+         * @return AccountTaxModel
+         * @throws \Google\Service\Exception
+         */
+        public function get($merchantId, $accountId, $optParams = [])
+        {
+        }
+        /**
+         * Lists the tax settings of the sub-accounts in your Merchant Center account.
+         * (accounttax.listAccounttax)
+         *
+         * @param string $merchantId The ID of the managing account. This must be a
+         * multi-client account.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string maxResults The maximum number of tax settings to return in
+         * the response, used for paging.
+         * @opt_param string pageToken The token returned by the previous request.
+         * @return AccounttaxListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAccounttax($merchantId, $optParams = [])
+        {
+        }
+        /**
+         * Updates the tax settings of the account. Any fields that are not provided are
+         * deleted from the resource. (accounttax.update)
+         *
+         * @param string $merchantId The ID of the managing account. If this parameter
+         * is not the same as accountId, then this account must be a multi-client
+         * account and `accountId` must be the ID of a sub-account of this account.
+         * @param string $accountId The ID of the account for which to get/update
+         * account tax settings.
+         * @param AccountTaxModel $postBody
+         * @param array $optParams Optional parameters.
+         * @return AccountTaxModel
+         * @throws \Google\Service\Exception
+         */
+        public function update($merchantId, $accountId, AccountTaxModel $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves the tax settings of the account. (accounttax.get)
-     *
-     * @param string $merchantId The ID of the managing account. If this parameter
-     * is not the same as accountId, then this account must be a multi-client
-     * account and `accountId` must be the ID of a sub-account of this account.
-     * @param string $accountId The ID of the account for which to get/update
-     * account tax settings.
-     * @param array $optParams Optional parameters.
-     * @return AccountTaxModel
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ShoppingContent\Resource\Accounttax registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($merchantId, $accountId, $optParams = [])
-    {
-    }
-    /**
-     * Lists the tax settings of the sub-accounts in your Merchant Center account.
-     * (accounttax.listAccounttax)
-     *
-     * @param string $merchantId The ID of the managing account. This must be a
-     * multi-client account.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string maxResults The maximum number of tax settings to return in
-     * the response, used for paging.
-     * @opt_param string pageToken The token returned by the previous request.
-     * @return AccounttaxListResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listAccounttax($merchantId, $optParams = [])
-    {
-    }
-    /**
-     * Updates the tax settings of the account. Any fields that are not provided are
-     * deleted from the resource. (accounttax.update)
-     *
-     * @param string $merchantId The ID of the managing account. If this parameter
-     * is not the same as accountId, then this account must be a multi-client
-     * account and `accountId` must be the ID of a sub-account of this account.
-     * @param string $accountId The ID of the account for which to get/update
-     * account tax settings.
-     * @param AccountTaxModel $postBody
-     * @param array $optParams Optional parameters.
-     * @return AccountTaxModel
-     * @throws \Google\Service\Exception
-     */
-    public function update($merchantId, $accountId, AccountTaxModel $postBody, $optParams = [])
+    class Google_Service_ShoppingContent_Resource_Accounttax extends \Google\Service\ShoppingContent\Resource\Accounttax
     {
     }
 }

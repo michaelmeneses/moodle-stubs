@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1PublisherModelCallToActionOpenFineTuningPipelines extends \Google\Collection
-{
-    protected $collection_key = 'fineTuningPipelines';
-    protected $fineTuningPipelinesType = GoogleCloudAiplatformV1PublisherModelCallToActionRegionalResourceReferences::class;
-    protected $fineTuningPipelinesDataType = 'array';
-    /**
-     * Required. Regional resource references to fine tuning pipelines.
-     *
-     * @param GoogleCloudAiplatformV1PublisherModelCallToActionRegionalResourceReferences[] $fineTuningPipelines
-     */
-    public function setFineTuningPipelines($fineTuningPipelines)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1PublisherModelCallToActionOpenFineTuningPipelines extends \Google\Collection
     {
+        protected $collection_key = 'fineTuningPipelines';
+        protected $fineTuningPipelinesType = GoogleCloudAiplatformV1PublisherModelCallToActionRegionalResourceReferences::class;
+        protected $fineTuningPipelinesDataType = 'array';
+        /**
+         * Required. Regional resource references to fine tuning pipelines.
+         *
+         * @param GoogleCloudAiplatformV1PublisherModelCallToActionRegionalResourceReferences[] $fineTuningPipelines
+         */
+        public function setFineTuningPipelines($fineTuningPipelines)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1PublisherModelCallToActionRegionalResourceReferences[]
+         */
+        public function getFineTuningPipelines()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1PublisherModelCallToActionRegionalResourceReferences[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1PublisherModelCallToActionOpenFineTuningPipelines registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFineTuningPipelines()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1PublisherModelCallToActionOpenFineTuningPipelines extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1PublisherModelCallToActionOpenFineTuningPipelines
     {
     }
 }

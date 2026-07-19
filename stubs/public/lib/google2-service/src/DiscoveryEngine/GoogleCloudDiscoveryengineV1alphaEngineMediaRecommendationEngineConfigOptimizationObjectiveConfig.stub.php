@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaEngineMediaRecommendationEngineConfigOptimizationObjectiveConfig extends \Google\Model
-{
-    /**
-     * Required. The name of the field to target. Currently supported values:
-     * `watch-percentage`, `watch-time`.
-     *
-     * @var string
-     */
-    public $targetField;
-    /**
-     * Required. The threshold to be applied to the target (e.g., 0.5).
-     *
-     * @var float
-     */
-    public $targetFieldValueFloat;
-    /**
-     * Required. The name of the field to target. Currently supported values:
-     * `watch-percentage`, `watch-time`.
-     *
-     * @param string $targetField
-     */
-    public function setTargetField($targetField)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaEngineMediaRecommendationEngineConfigOptimizationObjectiveConfig extends \Google\Model
     {
+        /**
+         * Required. The name of the field to target. Currently supported values:
+         * `watch-percentage`, `watch-time`.
+         *
+         * @var string
+         */
+        public $targetField;
+        /**
+         * Required. The threshold to be applied to the target (e.g., 0.5).
+         *
+         * @var float
+         */
+        public $targetFieldValueFloat;
+        /**
+         * Required. The name of the field to target. Currently supported values:
+         * `watch-percentage`, `watch-time`.
+         *
+         * @param string $targetField
+         */
+        public function setTargetField($targetField)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetField()
+        {
+        }
+        /**
+         * Required. The threshold to be applied to the target (e.g., 0.5).
+         *
+         * @param float $targetFieldValueFloat
+         */
+        public function setTargetFieldValueFloat($targetFieldValueFloat)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getTargetFieldValueFloat()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaEngineMediaRecommendationEngineConfigOptimizationObjectiveConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTargetField()
-    {
-    }
-    /**
-     * Required. The threshold to be applied to the target (e.g., 0.5).
-     *
-     * @param float $targetFieldValueFloat
-     */
-    public function setTargetFieldValueFloat($targetFieldValueFloat)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getTargetFieldValueFloat()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaEngineMediaRecommendationEngineConfigOptimizationObjectiveConfig extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaEngineMediaRecommendationEngineConfigOptimizationObjectiveConfig
     {
     }
 }

@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ShareSettings extends \Google\Model
-{
-    /**
-     * Default value.
-     */
-    public const SHARE_TYPE_LOCAL = 'LOCAL';
-    /**
-     * Shared-reservation is open to entire Organization
-     */
-    public const SHARE_TYPE_ORGANIZATION = 'ORGANIZATION';
-    /**
-     * Default value. This value is unused.
-     */
-    public const SHARE_TYPE_SHARE_TYPE_UNSPECIFIED = 'SHARE_TYPE_UNSPECIFIED';
-    /**
-     * Shared-reservation is open to specific projects
-     */
-    public const SHARE_TYPE_SPECIFIC_PROJECTS = 'SPECIFIC_PROJECTS';
-    protected $projectMapType = ShareSettingsProjectConfig::class;
-    protected $projectMapDataType = 'map';
-    /**
-     * Type of sharing for this shared-reservation
-     *
-     * @var string
-     */
-    public $shareType;
-    /**
-     * A map of project id and project config. This is only valid when
-     * share_type's value is SPECIFIC_PROJECTS.
-     *
-     * @param ShareSettingsProjectConfig[] $projectMap
-     */
-    public function setProjectMap($projectMap)
+namespace Google\Service\Compute {
+    class ShareSettings extends \Google\Model
     {
+        /**
+         * Default value.
+         */
+        public const SHARE_TYPE_LOCAL = 'LOCAL';
+        /**
+         * Shared-reservation is open to entire Organization
+         */
+        public const SHARE_TYPE_ORGANIZATION = 'ORGANIZATION';
+        /**
+         * Default value. This value is unused.
+         */
+        public const SHARE_TYPE_SHARE_TYPE_UNSPECIFIED = 'SHARE_TYPE_UNSPECIFIED';
+        /**
+         * Shared-reservation is open to specific projects
+         */
+        public const SHARE_TYPE_SPECIFIC_PROJECTS = 'SPECIFIC_PROJECTS';
+        protected $projectMapType = ShareSettingsProjectConfig::class;
+        protected $projectMapDataType = 'map';
+        /**
+         * Type of sharing for this shared-reservation
+         *
+         * @var string
+         */
+        public $shareType;
+        /**
+         * A map of project id and project config. This is only valid when
+         * share_type's value is SPECIFIC_PROJECTS.
+         *
+         * @param ShareSettingsProjectConfig[] $projectMap
+         */
+        public function setProjectMap($projectMap)
+        {
+        }
+        /**
+         * @return ShareSettingsProjectConfig[]
+         */
+        public function getProjectMap()
+        {
+        }
+        /**
+         * Type of sharing for this shared-reservation
+         *
+         * Accepted values: LOCAL, ORGANIZATION, SHARE_TYPE_UNSPECIFIED,
+         * SPECIFIC_PROJECTS
+         *
+         * @param self::SHARE_TYPE_* $shareType
+         */
+        public function setShareType($shareType)
+        {
+        }
+        /**
+         * @return self::SHARE_TYPE_*
+         */
+        public function getShareType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ShareSettingsProjectConfig[]
+     * Runtime class alias of \Google\Service\Compute\ShareSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProjectMap()
-    {
-    }
-    /**
-     * Type of sharing for this shared-reservation
-     *
-     * Accepted values: LOCAL, ORGANIZATION, SHARE_TYPE_UNSPECIFIED,
-     * SPECIFIC_PROJECTS
-     *
-     * @param self::SHARE_TYPE_* $shareType
-     */
-    public function setShareType($shareType)
-    {
-    }
-    /**
-     * @return self::SHARE_TYPE_*
-     */
-    public function getShareType()
+    class Google_Service_Compute_ShareSettings extends \Google\Service\Compute\ShareSettings
     {
     }
 }

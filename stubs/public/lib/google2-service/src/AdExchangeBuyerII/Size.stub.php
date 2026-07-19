@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class Size extends \Google\Model
-{
-    /**
-     * The height of the creative.
-     *
-     * @var int
-     */
-    public $height;
-    /**
-     * The width of the creative
-     *
-     * @var int
-     */
-    public $width;
-    /**
-     * The height of the creative.
-     *
-     * @param int $height
-     */
-    public function setHeight($height)
+namespace Google\Service\AdExchangeBuyerII {
+    class Size extends \Google\Model
     {
+        /**
+         * The height of the creative.
+         *
+         * @var int
+         */
+        public $height;
+        /**
+         * The width of the creative
+         *
+         * @var int
+         */
+        public $width;
+        /**
+         * The height of the creative.
+         *
+         * @param int $height
+         */
+        public function setHeight($height)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getHeight()
+        {
+        }
+        /**
+         * The width of the creative
+         *
+         * @param int $width
+         */
+        public function setWidth($width)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getWidth()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\Size registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHeight()
-    {
-    }
-    /**
-     * The width of the creative
-     *
-     * @param int $width
-     */
-    public function setWidth($width)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getWidth()
+    class Google_Service_AdExchangeBuyerII_Size extends \Google\Service\AdExchangeBuyerII\Size
     {
     }
 }

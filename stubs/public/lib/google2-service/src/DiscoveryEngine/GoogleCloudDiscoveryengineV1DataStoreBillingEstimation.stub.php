@@ -21,128 +21,137 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1DataStoreBillingEstimation extends \Google\Model
-{
-    /**
-     * Data size for structured data in terms of bytes.
-     *
-     * @var string
-     */
-    public $structuredDataSize;
-    /**
-     * Last updated timestamp for structured data.
-     *
-     * @var string
-     */
-    public $structuredDataUpdateTime;
-    /**
-     * Data size for unstructured data in terms of bytes.
-     *
-     * @var string
-     */
-    public $unstructuredDataSize;
-    /**
-     * Last updated timestamp for unstructured data.
-     *
-     * @var string
-     */
-    public $unstructuredDataUpdateTime;
-    /**
-     * Data size for websites in terms of bytes.
-     *
-     * @var string
-     */
-    public $websiteDataSize;
-    /**
-     * Last updated timestamp for websites.
-     *
-     * @var string
-     */
-    public $websiteDataUpdateTime;
-    /**
-     * Data size for structured data in terms of bytes.
-     *
-     * @param string $structuredDataSize
-     */
-    public function setStructuredDataSize($structuredDataSize)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1DataStoreBillingEstimation extends \Google\Model
     {
+        /**
+         * Data size for structured data in terms of bytes.
+         *
+         * @var string
+         */
+        public $structuredDataSize;
+        /**
+         * Last updated timestamp for structured data.
+         *
+         * @var string
+         */
+        public $structuredDataUpdateTime;
+        /**
+         * Data size for unstructured data in terms of bytes.
+         *
+         * @var string
+         */
+        public $unstructuredDataSize;
+        /**
+         * Last updated timestamp for unstructured data.
+         *
+         * @var string
+         */
+        public $unstructuredDataUpdateTime;
+        /**
+         * Data size for websites in terms of bytes.
+         *
+         * @var string
+         */
+        public $websiteDataSize;
+        /**
+         * Last updated timestamp for websites.
+         *
+         * @var string
+         */
+        public $websiteDataUpdateTime;
+        /**
+         * Data size for structured data in terms of bytes.
+         *
+         * @param string $structuredDataSize
+         */
+        public function setStructuredDataSize($structuredDataSize)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStructuredDataSize()
+        {
+        }
+        /**
+         * Last updated timestamp for structured data.
+         *
+         * @param string $structuredDataUpdateTime
+         */
+        public function setStructuredDataUpdateTime($structuredDataUpdateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStructuredDataUpdateTime()
+        {
+        }
+        /**
+         * Data size for unstructured data in terms of bytes.
+         *
+         * @param string $unstructuredDataSize
+         */
+        public function setUnstructuredDataSize($unstructuredDataSize)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUnstructuredDataSize()
+        {
+        }
+        /**
+         * Last updated timestamp for unstructured data.
+         *
+         * @param string $unstructuredDataUpdateTime
+         */
+        public function setUnstructuredDataUpdateTime($unstructuredDataUpdateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUnstructuredDataUpdateTime()
+        {
+        }
+        /**
+         * Data size for websites in terms of bytes.
+         *
+         * @param string $websiteDataSize
+         */
+        public function setWebsiteDataSize($websiteDataSize)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWebsiteDataSize()
+        {
+        }
+        /**
+         * Last updated timestamp for websites.
+         *
+         * @param string $websiteDataUpdateTime
+         */
+        public function setWebsiteDataUpdateTime($websiteDataUpdateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWebsiteDataUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1DataStoreBillingEstimation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStructuredDataSize()
-    {
-    }
-    /**
-     * Last updated timestamp for structured data.
-     *
-     * @param string $structuredDataUpdateTime
-     */
-    public function setStructuredDataUpdateTime($structuredDataUpdateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStructuredDataUpdateTime()
-    {
-    }
-    /**
-     * Data size for unstructured data in terms of bytes.
-     *
-     * @param string $unstructuredDataSize
-     */
-    public function setUnstructuredDataSize($unstructuredDataSize)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUnstructuredDataSize()
-    {
-    }
-    /**
-     * Last updated timestamp for unstructured data.
-     *
-     * @param string $unstructuredDataUpdateTime
-     */
-    public function setUnstructuredDataUpdateTime($unstructuredDataUpdateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUnstructuredDataUpdateTime()
-    {
-    }
-    /**
-     * Data size for websites in terms of bytes.
-     *
-     * @param string $websiteDataSize
-     */
-    public function setWebsiteDataSize($websiteDataSize)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWebsiteDataSize()
-    {
-    }
-    /**
-     * Last updated timestamp for websites.
-     *
-     * @param string $websiteDataUpdateTime
-     */
-    public function setWebsiteDataUpdateTime($websiteDataUpdateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWebsiteDataUpdateTime()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1DataStoreBillingEstimation extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1DataStoreBillingEstimation
     {
     }
 }

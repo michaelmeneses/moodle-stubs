@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class ListChannelsResponse extends \Google\Collection
-{
-    protected $collection_key = 'channels';
-    protected $channelsType = Channel::class;
-    protected $channelsDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * page_token field in the subsequent call to `ListChannels` method to
-     * retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of channels. This list will be absent if empty.
-     *
-     * @param Channel[] $channels
-     */
-    public function setChannels($channels)
+namespace Google\Service\DisplayVideo {
+    class ListChannelsResponse extends \Google\Collection
     {
+        protected $collection_key = 'channels';
+        protected $channelsType = Channel::class;
+        protected $channelsDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * page_token field in the subsequent call to `ListChannels` method to
+         * retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of channels. This list will be absent if empty.
+         *
+         * @param Channel[] $channels
+         */
+        public function setChannels($channels)
+        {
+        }
+        /**
+         * @return Channel[]
+         */
+        public function getChannels()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * page_token field in the subsequent call to `ListChannels` method to
+         * retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Channel[]
+     * Runtime class alias of \Google\Service\DisplayVideo\ListChannelsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChannels()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * page_token field in the subsequent call to `ListChannels` method to
-     * retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DisplayVideo_ListChannelsResponse extends \Google\Service\DisplayVideo\ListChannelsResponse
     {
     }
 }

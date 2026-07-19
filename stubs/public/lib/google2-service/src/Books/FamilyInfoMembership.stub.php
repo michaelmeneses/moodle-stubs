@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class FamilyInfoMembership extends \Google\Model
-{
-    /**
-     * Restrictions on user buying and acquiring content.
-     *
-     * @var string
-     */
-    public $acquirePermission;
-    /**
-     * The age group of the user.
-     *
-     * @var string
-     */
-    public $ageGroup;
-    /**
-     * The maximum allowed maturity rating for the user.
-     *
-     * @var string
-     */
-    public $allowedMaturityRating;
-    /**
-     * @var bool
-     */
-    public $isInFamily;
-    /**
-     * The role of the user in the family.
-     *
-     * @var string
-     */
-    public $role;
-    /**
-     * Restrictions on user buying and acquiring content.
-     *
-     * @param string $acquirePermission
-     */
-    public function setAcquirePermission($acquirePermission)
+namespace Google\Service\Books {
+    class FamilyInfoMembership extends \Google\Model
     {
+        /**
+         * Restrictions on user buying and acquiring content.
+         *
+         * @var string
+         */
+        public $acquirePermission;
+        /**
+         * The age group of the user.
+         *
+         * @var string
+         */
+        public $ageGroup;
+        /**
+         * The maximum allowed maturity rating for the user.
+         *
+         * @var string
+         */
+        public $allowedMaturityRating;
+        /**
+         * @var bool
+         */
+        public $isInFamily;
+        /**
+         * The role of the user in the family.
+         *
+         * @var string
+         */
+        public $role;
+        /**
+         * Restrictions on user buying and acquiring content.
+         *
+         * @param string $acquirePermission
+         */
+        public function setAcquirePermission($acquirePermission)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAcquirePermission()
+        {
+        }
+        /**
+         * The age group of the user.
+         *
+         * @param string $ageGroup
+         */
+        public function setAgeGroup($ageGroup)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAgeGroup()
+        {
+        }
+        /**
+         * The maximum allowed maturity rating for the user.
+         *
+         * @param string $allowedMaturityRating
+         */
+        public function setAllowedMaturityRating($allowedMaturityRating)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAllowedMaturityRating()
+        {
+        }
+        /**
+         * @param bool $isInFamily
+         */
+        public function setIsInFamily($isInFamily)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsInFamily()
+        {
+        }
+        /**
+         * The role of the user in the family.
+         *
+         * @param string $role
+         */
+        public function setRole($role)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRole()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Books\FamilyInfoMembership registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAcquirePermission()
-    {
-    }
-    /**
-     * The age group of the user.
-     *
-     * @param string $ageGroup
-     */
-    public function setAgeGroup($ageGroup)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAgeGroup()
-    {
-    }
-    /**
-     * The maximum allowed maturity rating for the user.
-     *
-     * @param string $allowedMaturityRating
-     */
-    public function setAllowedMaturityRating($allowedMaturityRating)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAllowedMaturityRating()
-    {
-    }
-    /**
-     * @param bool $isInFamily
-     */
-    public function setIsInFamily($isInFamily)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsInFamily()
-    {
-    }
-    /**
-     * The role of the user in the family.
-     *
-     * @param string $role
-     */
-    public function setRole($role)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRole()
+    class Google_Service_Books_FamilyInfoMembership extends \Google\Service\Books\FamilyInfoMembership
     {
     }
 }

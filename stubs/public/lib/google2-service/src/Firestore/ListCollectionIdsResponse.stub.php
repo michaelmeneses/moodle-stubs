@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class ListCollectionIdsResponse extends \Google\Collection
-{
-    protected $collection_key = 'collectionIds';
-    /**
-     * The collection ids.
-     *
-     * @var string[]
-     */
-    public $collectionIds;
-    /**
-     * A page token that may be used to continue the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The collection ids.
-     *
-     * @param string[] $collectionIds
-     */
-    public function setCollectionIds($collectionIds)
+namespace Google\Service\Firestore {
+    class ListCollectionIdsResponse extends \Google\Collection
     {
+        protected $collection_key = 'collectionIds';
+        /**
+         * The collection ids.
+         *
+         * @var string[]
+         */
+        public $collectionIds;
+        /**
+         * A page token that may be used to continue the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The collection ids.
+         *
+         * @param string[] $collectionIds
+         */
+        public function setCollectionIds($collectionIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCollectionIds()
+        {
+        }
+        /**
+         * A page token that may be used to continue the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Firestore\ListCollectionIdsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCollectionIds()
-    {
-    }
-    /**
-     * A page token that may be used to continue the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Firestore_ListCollectionIdsResponse extends \Google\Service\Firestore\ListCollectionIdsResponse
     {
     }
 }

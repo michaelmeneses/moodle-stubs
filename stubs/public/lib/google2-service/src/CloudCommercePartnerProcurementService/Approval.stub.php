@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudCommercePartnerProcurementService;
-
-class Approval extends \Google\Model
-{
-    /**
-     * Sentinel value; do not use.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The approval is pending response from the provider. The approval state can
-     * transition to Account.Approval.State.APPROVED or
-     * Account.Approval.State.REJECTED.
-     */
-    public const STATE_PENDING = 'PENDING';
-    /**
-     * The approval has been granted by the provider.
-     */
-    public const STATE_APPROVED = 'APPROVED';
-    /**
-     * The approval has been rejected by the provider. A provider may choose to
-     * approve a previously rejected approval, so is it possible to transition to
-     * Account.Approval.State.APPROVED.
-     */
-    public const STATE_REJECTED = 'REJECTED';
-    /**
-     * Output only. The name of the approval.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. An explanation for the state of the approval.
-     *
-     * @var string
-     */
-    public $reason;
-    /**
-     * Output only. The state of the approval.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Optional. The last update timestamp of the approval.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. The name of the approval.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\CloudCommercePartnerProcurementService {
+    class Approval extends \Google\Model
     {
+        /**
+         * Sentinel value; do not use.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The approval is pending response from the provider. The approval state can
+         * transition to Account.Approval.State.APPROVED or
+         * Account.Approval.State.REJECTED.
+         */
+        public const STATE_PENDING = 'PENDING';
+        /**
+         * The approval has been granted by the provider.
+         */
+        public const STATE_APPROVED = 'APPROVED';
+        /**
+         * The approval has been rejected by the provider. A provider may choose to
+         * approve a previously rejected approval, so is it possible to transition to
+         * Account.Approval.State.APPROVED.
+         */
+        public const STATE_REJECTED = 'REJECTED';
+        /**
+         * Output only. The name of the approval.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. An explanation for the state of the approval.
+         *
+         * @var string
+         */
+        public $reason;
+        /**
+         * Output only. The state of the approval.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Optional. The last update timestamp of the approval.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. The name of the approval.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. An explanation for the state of the approval.
+         *
+         * @param string $reason
+         */
+        public function setReason($reason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReason()
+        {
+        }
+        /**
+         * Output only. The state of the approval.
+         *
+         * Accepted values: STATE_UNSPECIFIED, PENDING, APPROVED, REJECTED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Optional. The last update timestamp of the approval.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudCommercePartnerProcurementService\Approval registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. An explanation for the state of the approval.
-     *
-     * @param string $reason
-     */
-    public function setReason($reason)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReason()
-    {
-    }
-    /**
-     * Output only. The state of the approval.
-     *
-     * Accepted values: STATE_UNSPECIFIED, PENDING, APPROVED, REJECTED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Optional. The last update timestamp of the approval.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_CloudCommercePartnerProcurementService_Approval extends \Google\Service\CloudCommercePartnerProcurementService\Approval
     {
     }
 }

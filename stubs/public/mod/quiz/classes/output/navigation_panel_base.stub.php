@@ -22,6 +22,13 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_quiz\output;
 
+use mod_quiz\quiz_attempt;
+use moodle_url;
+use question_attempt;
+use question_display_options;
+use question_state;
+use renderable;
+use user_picture;
 /**
  * Represents the navigation panel, and builds a {@see block_contents} to allow it to be output.
  *

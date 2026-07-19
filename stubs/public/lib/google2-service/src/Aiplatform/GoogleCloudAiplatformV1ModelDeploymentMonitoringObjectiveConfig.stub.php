@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ModelDeploymentMonitoringObjectiveConfig extends \Google\Model
-{
-    /**
-     * The DeployedModel ID of the objective config.
-     *
-     * @var string
-     */
-    public $deployedModelId;
-    protected $objectiveConfigType = GoogleCloudAiplatformV1ModelMonitoringObjectiveConfig::class;
-    protected $objectiveConfigDataType = '';
-    /**
-     * The DeployedModel ID of the objective config.
-     *
-     * @param string $deployedModelId
-     */
-    public function setDeployedModelId($deployedModelId)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ModelDeploymentMonitoringObjectiveConfig extends \Google\Model
     {
+        /**
+         * The DeployedModel ID of the objective config.
+         *
+         * @var string
+         */
+        public $deployedModelId;
+        protected $objectiveConfigType = GoogleCloudAiplatformV1ModelMonitoringObjectiveConfig::class;
+        protected $objectiveConfigDataType = '';
+        /**
+         * The DeployedModel ID of the objective config.
+         *
+         * @param string $deployedModelId
+         */
+        public function setDeployedModelId($deployedModelId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeployedModelId()
+        {
+        }
+        /**
+         * The objective config of for the modelmonitoring job of this deployed model.
+         *
+         * @param GoogleCloudAiplatformV1ModelMonitoringObjectiveConfig $objectiveConfig
+         */
+        public function setObjectiveConfig(GoogleCloudAiplatformV1ModelMonitoringObjectiveConfig $objectiveConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ModelMonitoringObjectiveConfig
+         */
+        public function getObjectiveConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ModelDeploymentMonitoringObjectiveConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeployedModelId()
-    {
-    }
-    /**
-     * The objective config of for the modelmonitoring job of this deployed model.
-     *
-     * @param GoogleCloudAiplatformV1ModelMonitoringObjectiveConfig $objectiveConfig
-     */
-    public function setObjectiveConfig(GoogleCloudAiplatformV1ModelMonitoringObjectiveConfig $objectiveConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1ModelMonitoringObjectiveConfig
-     */
-    public function getObjectiveConfig()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ModelDeploymentMonitoringObjectiveConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ModelDeploymentMonitoringObjectiveConfig
     {
     }
 }

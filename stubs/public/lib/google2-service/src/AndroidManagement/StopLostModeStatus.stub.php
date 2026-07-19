@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class StopLostModeStatus extends \Google\Model
-{
-    /**
-     * Unspecified. This value is not used.
-     */
-    public const STATUS_STATUS_UNSPECIFIED = 'STATUS_UNSPECIFIED';
-    /**
-     * The device was taken out of lost mode.
-     */
-    public const STATUS_SUCCESS = 'SUCCESS';
-    /**
-     * The device is not in lost mode.
-     */
-    public const STATUS_NOT_IN_LOST_MODE = 'NOT_IN_LOST_MODE';
-    /**
-     * The status. See StopLostModeStatus.
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * The status. See StopLostModeStatus.
-     *
-     * Accepted values: STATUS_UNSPECIFIED, SUCCESS, NOT_IN_LOST_MODE
-     *
-     * @param self::STATUS_* $status
-     */
-    public function setStatus($status)
+namespace Google\Service\AndroidManagement {
+    class StopLostModeStatus extends \Google\Model
     {
+        /**
+         * Unspecified. This value is not used.
+         */
+        public const STATUS_STATUS_UNSPECIFIED = 'STATUS_UNSPECIFIED';
+        /**
+         * The device was taken out of lost mode.
+         */
+        public const STATUS_SUCCESS = 'SUCCESS';
+        /**
+         * The device is not in lost mode.
+         */
+        public const STATUS_NOT_IN_LOST_MODE = 'NOT_IN_LOST_MODE';
+        /**
+         * The status. See StopLostModeStatus.
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * The status. See StopLostModeStatus.
+         *
+         * Accepted values: STATUS_UNSPECIFIED, SUCCESS, NOT_IN_LOST_MODE
+         *
+         * @param self::STATUS_* $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return self::STATUS_*
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::STATUS_*
+     * Runtime class alias of \Google\Service\AndroidManagement\StopLostModeStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStatus()
+    class Google_Service_AndroidManagement_StopLostModeStatus extends \Google\Service\AndroidManagement\StopLostModeStatus
     {
     }
 }

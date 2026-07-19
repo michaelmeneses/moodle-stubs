@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\output\local;
 
+use core\output\named_templatable;
+use core\output\renderable;
 /**
  * Collapsable section output.
  *

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class ExecuteActionRequest extends \Google\Model
-{
-    /**
-     * Parameters for executing the action. The parameters can be key/value pairs
-     * or nested structs.
-     *
-     * @var array[]
-     */
-    public $parameters;
-    /**
-     * Parameters for executing the action. The parameters can be key/value pairs
-     * or nested structs.
-     *
-     * @param array[] $parameters
-     */
-    public function setParameters($parameters)
+namespace Google\Service\Connectors {
+    class ExecuteActionRequest extends \Google\Model
     {
+        /**
+         * Parameters for executing the action. The parameters can be key/value pairs
+         * or nested structs.
+         *
+         * @var array[]
+         */
+        public $parameters;
+        /**
+         * Parameters for executing the action. The parameters can be key/value pairs
+         * or nested structs.
+         *
+         * @param array[] $parameters
+         */
+        public function setParameters($parameters)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getParameters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\Connectors\ExecuteActionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParameters()
+    class Google_Service_Connectors_ExecuteActionRequest extends \Google\Service\Connectors\ExecuteActionRequest
     {
     }
 }

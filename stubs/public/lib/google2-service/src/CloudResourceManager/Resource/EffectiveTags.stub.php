@@ -21,38 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudResourceManager\Resource;
-
-/**
- * The "effectiveTags" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudresourcemanagerService = new Google\Service\CloudResourceManager(...);
- *   $effectiveTags = $cloudresourcemanagerService->effectiveTags;
- *  </code>
- */
-class EffectiveTags extends \Google\Service\Resource
-{
+namespace Google\Service\CloudResourceManager\Resource {
+    use Google\Service\CloudResourceManager\ListEffectiveTagsResponse;
     /**
-     * Return a list of effective tags for the given Google Cloud resource, as
-     * specified in `parent`. (effectiveTags.listEffectiveTags)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. The maximum number of effective tags to
-     * return in the response. The server allows a maximum of 300 effective tags to
-     * return in a single page. If unspecified, the server will use 100 as the
-     * default.
-     * @opt_param string pageToken Optional. A pagination token returned from a
-     * previous call to `ListEffectiveTags` that indicates from where this listing
-     * should continue.
-     * @opt_param string parent Required. The full resource name of a resource for
-     * which you want to list the effective tags. E.g.
-     * "//cloudresourcemanager.googleapis.com/projects/123"
-     * @return ListEffectiveTagsResponse
-     * @throws \Google\Service\Exception
+     * The "effectiveTags" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudresourcemanagerService = new Google\Service\CloudResourceManager(...);
+     *   $effectiveTags = $cloudresourcemanagerService->effectiveTags;
+     *  </code>
      */
-    public function listEffectiveTags($optParams = [])
+    class EffectiveTags extends \Google\Service\Resource
+    {
+        /**
+         * Return a list of effective tags for the given Google Cloud resource, as
+         * specified in `parent`. (effectiveTags.listEffectiveTags)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. The maximum number of effective tags to
+         * return in the response. The server allows a maximum of 300 effective tags to
+         * return in a single page. If unspecified, the server will use 100 as the
+         * default.
+         * @opt_param string pageToken Optional. A pagination token returned from a
+         * previous call to `ListEffectiveTags` that indicates from where this listing
+         * should continue.
+         * @opt_param string parent Required. The full resource name of a resource for
+         * which you want to list the effective tags. E.g.
+         * "//cloudresourcemanager.googleapis.com/projects/123"
+         * @return ListEffectiveTagsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listEffectiveTags($optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudResourceManager\Resource\EffectiveTags registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudResourceManager_Resource_EffectiveTags extends \Google\Service\CloudResourceManager\Resource\EffectiveTags
     {
     }
 }

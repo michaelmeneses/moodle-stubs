@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTablesInputsTransformationNumericArrayTransformation extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $columnName;
-    /**
-     * If invalid values is allowed, the training pipeline will create a boolean
-     * feature that indicated whether the value is valid. Otherwise, the training
-     * pipeline will discard the input row from trainining data.
-     *
-     * @var bool
-     */
-    public $invalidValuesAllowed;
-    /**
-     * @param string $columnName
-     */
-    public function setColumnName($columnName)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTablesInputsTransformationNumericArrayTransformation extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $columnName;
+        /**
+         * If invalid values is allowed, the training pipeline will create a boolean
+         * feature that indicated whether the value is valid. Otherwise, the training
+         * pipeline will discard the input row from trainining data.
+         *
+         * @var bool
+         */
+        public $invalidValuesAllowed;
+        /**
+         * @param string $columnName
+         */
+        public function setColumnName($columnName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getColumnName()
+        {
+        }
+        /**
+         * If invalid values is allowed, the training pipeline will create a boolean
+         * feature that indicated whether the value is valid. Otherwise, the training
+         * pipeline will discard the input row from trainining data.
+         *
+         * @param bool $invalidValuesAllowed
+         */
+        public function setInvalidValuesAllowed($invalidValuesAllowed)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getInvalidValuesAllowed()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTablesInputsTransformationNumericArrayTransformation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumnName()
-    {
-    }
-    /**
-     * If invalid values is allowed, the training pipeline will create a boolean
-     * feature that indicated whether the value is valid. Otherwise, the training
-     * pipeline will discard the input row from trainining data.
-     *
-     * @param bool $invalidValuesAllowed
-     */
-    public function setInvalidValuesAllowed($invalidValuesAllowed)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getInvalidValuesAllowed()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTablesInputsTransformationNumericArrayTransformation extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlTablesInputsTransformationNumericArrayTransformation
     {
     }
 }

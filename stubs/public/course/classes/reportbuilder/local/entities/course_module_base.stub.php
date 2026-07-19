@@ -8,6 +8,8 @@
  */
 namespace core_course\reportbuilder\local\entities;
 
+use core_reportbuilder\local\entities\base;
+use core_reportbuilder\local\helpers\database;
 /**
  * Abstract base course module entity, to be extended by all course module specific entities
  *

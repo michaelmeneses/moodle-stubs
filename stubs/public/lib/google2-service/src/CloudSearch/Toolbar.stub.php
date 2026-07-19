@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class Toolbar extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $color;
-    /**
-     * @var string
-     */
-    public $iconUrl;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @param string
-     */
-    public function setColor($color)
+namespace Google\Service\CloudSearch {
+    class Toolbar extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $color;
+        /**
+         * @var string
+         */
+        public $iconUrl;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @param string
+         */
+        public function setColor($color)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getColor()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setIconUrl($iconUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIconUrl()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\Toolbar registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColor()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setIconUrl($iconUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIconUrl()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_CloudSearch_Toolbar extends \Google\Service\CloudSearch\Toolbar
     {
     }
 }

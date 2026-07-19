@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class AddressesScopedList extends \Google\Collection
-{
-    protected $collection_key = 'addresses';
-    protected $addressesType = Address::class;
-    protected $addressesDataType = 'array';
-    protected $warningType = AddressesScopedListWarning::class;
-    protected $warningDataType = '';
-    /**
-     * [Output Only] A list of addresses contained in this scope.
-     *
-     * @param Address[] $addresses
-     */
-    public function setAddresses($addresses)
+namespace Google\Service\Compute {
+    class AddressesScopedList extends \Google\Collection
     {
+        protected $collection_key = 'addresses';
+        protected $addressesType = Address::class;
+        protected $addressesDataType = 'array';
+        protected $warningType = AddressesScopedListWarning::class;
+        protected $warningDataType = '';
+        /**
+         * [Output Only] A list of addresses contained in this scope.
+         *
+         * @param Address[] $addresses
+         */
+        public function setAddresses($addresses)
+        {
+        }
+        /**
+         * @return Address[]
+         */
+        public function getAddresses()
+        {
+        }
+        /**
+         * [Output Only] Informational warning which replaces the list of addresses
+         * when the list is empty.
+         *
+         * @param AddressesScopedListWarning $warning
+         */
+        public function setWarning(AddressesScopedListWarning $warning)
+        {
+        }
+        /**
+         * @return AddressesScopedListWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Address[]
+     * Runtime class alias of \Google\Service\Compute\AddressesScopedList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddresses()
-    {
-    }
-    /**
-     * [Output Only] Informational warning which replaces the list of addresses
-     * when the list is empty.
-     *
-     * @param AddressesScopedListWarning $warning
-     */
-    public function setWarning(AddressesScopedListWarning $warning)
-    {
-    }
-    /**
-     * @return AddressesScopedListWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_AddressesScopedList extends \Google\Service\Compute\AddressesScopedList
     {
     }
 }

@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaBigtableSource extends \Google\Model
-{
-    protected $bigtableOptionsType = GoogleCloudDiscoveryengineV1betaBigtableOptions::class;
-    protected $bigtableOptionsDataType = '';
-    /**
-     * @var string
-     */
-    public $instanceId;
-    /**
-     * @var string
-     */
-    public $projectId;
-    /**
-     * @var string
-     */
-    public $tableId;
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaBigtableOptions
-     */
-    public function setBigtableOptions(GoogleCloudDiscoveryengineV1betaBigtableOptions $bigtableOptions)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaBigtableSource extends \Google\Model
     {
+        protected $bigtableOptionsType = GoogleCloudDiscoveryengineV1betaBigtableOptions::class;
+        protected $bigtableOptionsDataType = '';
+        /**
+         * @var string
+         */
+        public $instanceId;
+        /**
+         * @var string
+         */
+        public $projectId;
+        /**
+         * @var string
+         */
+        public $tableId;
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaBigtableOptions
+         */
+        public function setBigtableOptions(GoogleCloudDiscoveryengineV1betaBigtableOptions $bigtableOptions)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaBigtableOptions
+         */
+        public function getBigtableOptions()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setInstanceId($instanceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstanceId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTableId($tableId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTableId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1betaBigtableOptions
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaBigtableSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBigtableOptions()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setInstanceId($instanceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstanceId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTableId($tableId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTableId()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaBigtableSource extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaBigtableSource
     {
     }
 }

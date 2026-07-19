@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class Equation extends \Google\Collection
-{
-    protected $collection_key = 'suggestedInsertionIds';
-    /**
-     * The suggested deletion IDs. If empty, then there are no suggested deletions
-     * of this content.
-     *
-     * @var string[]
-     */
-    public $suggestedDeletionIds;
-    /**
-     * The suggested insertion IDs. An Equation may have multiple insertion IDs if
-     * it's a nested suggested change. If empty, then this is not a suggested
-     * insertion.
-     *
-     * @var string[]
-     */
-    public $suggestedInsertionIds;
-    /**
-     * The suggested deletion IDs. If empty, then there are no suggested deletions
-     * of this content.
-     *
-     * @param string[] $suggestedDeletionIds
-     */
-    public function setSuggestedDeletionIds($suggestedDeletionIds)
+namespace Google\Service\Docs {
+    class Equation extends \Google\Collection
     {
+        protected $collection_key = 'suggestedInsertionIds';
+        /**
+         * The suggested deletion IDs. If empty, then there are no suggested deletions
+         * of this content.
+         *
+         * @var string[]
+         */
+        public $suggestedDeletionIds;
+        /**
+         * The suggested insertion IDs. An Equation may have multiple insertion IDs if
+         * it's a nested suggested change. If empty, then this is not a suggested
+         * insertion.
+         *
+         * @var string[]
+         */
+        public $suggestedInsertionIds;
+        /**
+         * The suggested deletion IDs. If empty, then there are no suggested deletions
+         * of this content.
+         *
+         * @param string[] $suggestedDeletionIds
+         */
+        public function setSuggestedDeletionIds($suggestedDeletionIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSuggestedDeletionIds()
+        {
+        }
+        /**
+         * The suggested insertion IDs. An Equation may have multiple insertion IDs if
+         * it's a nested suggested change. If empty, then this is not a suggested
+         * insertion.
+         *
+         * @param string[] $suggestedInsertionIds
+         */
+        public function setSuggestedInsertionIds($suggestedInsertionIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSuggestedInsertionIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Docs\Equation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSuggestedDeletionIds()
-    {
-    }
-    /**
-     * The suggested insertion IDs. An Equation may have multiple insertion IDs if
-     * it's a nested suggested change. If empty, then this is not a suggested
-     * insertion.
-     *
-     * @param string[] $suggestedInsertionIds
-     */
-    public function setSuggestedInsertionIds($suggestedInsertionIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSuggestedInsertionIds()
+    class Google_Service_Docs_Equation extends \Google\Service\Docs\Equation
     {
     }
 }

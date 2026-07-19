@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class VmwareVmsDetails extends \Google\Collection
-{
-    protected $collection_key = 'details';
-    protected $detailsType = VmwareVmDetails::class;
-    protected $detailsDataType = 'array';
-    /**
-     * The details of the vmware VMs.
-     *
-     * @param VmwareVmDetails[] $details
-     */
-    public function setDetails($details)
+namespace Google\Service\VMMigrationService {
+    class VmwareVmsDetails extends \Google\Collection
     {
+        protected $collection_key = 'details';
+        protected $detailsType = VmwareVmDetails::class;
+        protected $detailsDataType = 'array';
+        /**
+         * The details of the vmware VMs.
+         *
+         * @param VmwareVmDetails[] $details
+         */
+        public function setDetails($details)
+        {
+        }
+        /**
+         * @return VmwareVmDetails[]
+         */
+        public function getDetails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return VmwareVmDetails[]
+     * Runtime class alias of \Google\Service\VMMigrationService\VmwareVmsDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDetails()
+    class Google_Service_VMMigrationService_VmwareVmsDetails extends \Google\Service\VMMigrationService\VmwareVmsDetails
     {
     }
 }

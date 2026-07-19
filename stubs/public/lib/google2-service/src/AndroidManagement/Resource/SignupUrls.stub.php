@@ -21,47 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement\Resource;
-
-/**
- * The "signupUrls" collection of methods.
- * Typical usage is:
- *  <code>
- *   $androidmanagementService = new Google\Service\AndroidManagement(...);
- *   $signupUrls = $androidmanagementService->signupUrls;
- *  </code>
- */
-class SignupUrls extends \Google\Service\Resource
-{
+namespace Google\Service\AndroidManagement\Resource {
+    use Google\Service\AndroidManagement\SignupUrl;
     /**
-     * Creates an enterprise signup URL. (signupUrls.create)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string adminEmail Optional. Email address used to prefill the
-     * admin field of the enterprise signup form. This value is a hint only and can
-     * be altered by the user. If allowedDomains is non-empty then this must belong
-     * to one of the allowedDomains.
-     * @opt_param string allowedDomains Optional. A list of domains that are
-     * permitted for the admin email. The IT admin cannot enter an email address
-     * with a domain name that is not in this list. Subdomains of domains in this
-     * list are not allowed but can be allowed by adding a second entry which has *.
-     * prefixed to the domain name (e.g. *.example.com). If the field is not present
-     * or is an empty list then the IT admin is free to use any valid domain name.
-     * Personal email domains are always allowed, but will result in the creation of
-     * a managed Google Play Accounts enterprise.
-     * @opt_param string callbackUrl The callback URL that the admin will be
-     * redirected to after successfully creating an enterprise. Before redirecting
-     * there the system will add a query parameter to this URL named enterpriseToken
-     * which will contain an opaque token to be used for the create enterprise
-     * request. The URL will be parsed then reformatted in order to add the
-     * enterpriseToken parameter, so there may be some minor formatting changes.
-     * @opt_param string projectId The ID of the Google Cloud Platform project which
-     * will own the enterprise.
-     * @return SignupUrl
-     * @throws \Google\Service\Exception
+     * The "signupUrls" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $androidmanagementService = new Google\Service\AndroidManagement(...);
+     *   $signupUrls = $androidmanagementService->signupUrls;
+     *  </code>
      */
-    public function create($optParams = [])
+    class SignupUrls extends \Google\Service\Resource
+    {
+        /**
+         * Creates an enterprise signup URL. (signupUrls.create)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string adminEmail Optional. Email address used to prefill the
+         * admin field of the enterprise signup form. This value is a hint only and can
+         * be altered by the user. If allowedDomains is non-empty then this must belong
+         * to one of the allowedDomains.
+         * @opt_param string allowedDomains Optional. A list of domains that are
+         * permitted for the admin email. The IT admin cannot enter an email address
+         * with a domain name that is not in this list. Subdomains of domains in this
+         * list are not allowed but can be allowed by adding a second entry which has *.
+         * prefixed to the domain name (e.g. *.example.com). If the field is not present
+         * or is an empty list then the IT admin is free to use any valid domain name.
+         * Personal email domains are always allowed, but will result in the creation of
+         * a managed Google Play Accounts enterprise.
+         * @opt_param string callbackUrl The callback URL that the admin will be
+         * redirected to after successfully creating an enterprise. Before redirecting
+         * there the system will add a query parameter to this URL named enterpriseToken
+         * which will contain an opaque token to be used for the create enterprise
+         * request. The URL will be parsed then reformatted in order to add the
+         * enterpriseToken parameter, so there may be some minor formatting changes.
+         * @opt_param string projectId The ID of the Google Cloud Platform project which
+         * will own the enterprise.
+         * @return SignupUrl
+         * @throws \Google\Service\Exception
+         */
+        public function create($optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AndroidManagement\Resource\SignupUrls registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AndroidManagement_Resource_SignupUrls extends \Google\Service\AndroidManagement\Resource\SignupUrls
     {
     }
 }

@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3AgentClientCertificateSettings extends \Google\Model
-{
-    /**
-     * Optional. The name of the SecretManager secret version resource storing the
-     * passphrase. 'passphrase' should be left unset if the private key is not
-     * encrypted. Format: `projects/{project}/secrets/{secret}/versions/{version}`
-     *
-     * @var string
-     */
-    public $passphrase;
-    /**
-     * Required. The name of the SecretManager secret version resource storing the
-     * private key encoded in PEM format. Format:
-     * `projects/{project}/secrets/{secret}/versions/{version}`
-     *
-     * @var string
-     */
-    public $privateKey;
-    /**
-     * Required. The ssl certificate encoded in PEM format. This string must
-     * include the begin header and end footer lines.
-     *
-     * @var string
-     */
-    public $sslCertificate;
-    /**
-     * Optional. The name of the SecretManager secret version resource storing the
-     * passphrase. 'passphrase' should be left unset if the private key is not
-     * encrypted. Format: `projects/{project}/secrets/{secret}/versions/{version}`
-     *
-     * @param string $passphrase
-     */
-    public function setPassphrase($passphrase)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3AgentClientCertificateSettings extends \Google\Model
     {
+        /**
+         * Optional. The name of the SecretManager secret version resource storing the
+         * passphrase. 'passphrase' should be left unset if the private key is not
+         * encrypted. Format: `projects/{project}/secrets/{secret}/versions/{version}`
+         *
+         * @var string
+         */
+        public $passphrase;
+        /**
+         * Required. The name of the SecretManager secret version resource storing the
+         * private key encoded in PEM format. Format:
+         * `projects/{project}/secrets/{secret}/versions/{version}`
+         *
+         * @var string
+         */
+        public $privateKey;
+        /**
+         * Required. The ssl certificate encoded in PEM format. This string must
+         * include the begin header and end footer lines.
+         *
+         * @var string
+         */
+        public $sslCertificate;
+        /**
+         * Optional. The name of the SecretManager secret version resource storing the
+         * passphrase. 'passphrase' should be left unset if the private key is not
+         * encrypted. Format: `projects/{project}/secrets/{secret}/versions/{version}`
+         *
+         * @param string $passphrase
+         */
+        public function setPassphrase($passphrase)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPassphrase()
+        {
+        }
+        /**
+         * Required. The name of the SecretManager secret version resource storing the
+         * private key encoded in PEM format. Format:
+         * `projects/{project}/secrets/{secret}/versions/{version}`
+         *
+         * @param string $privateKey
+         */
+        public function setPrivateKey($privateKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrivateKey()
+        {
+        }
+        /**
+         * Required. The ssl certificate encoded in PEM format. This string must
+         * include the begin header and end footer lines.
+         *
+         * @param string $sslCertificate
+         */
+        public function setSslCertificate($sslCertificate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSslCertificate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3AgentClientCertificateSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPassphrase()
-    {
-    }
-    /**
-     * Required. The name of the SecretManager secret version resource storing the
-     * private key encoded in PEM format. Format:
-     * `projects/{project}/secrets/{secret}/versions/{version}`
-     *
-     * @param string $privateKey
-     */
-    public function setPrivateKey($privateKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrivateKey()
-    {
-    }
-    /**
-     * Required. The ssl certificate encoded in PEM format. This string must
-     * include the begin header and end footer lines.
-     *
-     * @param string $sslCertificate
-     */
-    public function setSslCertificate($sslCertificate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSslCertificate()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3AgentClientCertificateSettings extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3AgentClientCertificateSettings
     {
     }
 }

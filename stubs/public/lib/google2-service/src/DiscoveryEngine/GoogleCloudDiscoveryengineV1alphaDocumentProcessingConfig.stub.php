@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfig extends \Google\Model
-{
-    protected $chunkingConfigType = GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigChunkingConfig::class;
-    protected $chunkingConfigDataType = '';
-    protected $defaultParsingConfigType = GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigParsingConfig::class;
-    protected $defaultParsingConfigDataType = '';
-    /**
-     * The full resource name of the Document Processing Config. Format:
-     * `projects/locations/collections/dataStores/documentProcessingConfig`.
-     *
-     * @var string
-     */
-    public $name;
-    protected $parsingConfigOverridesType = GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigParsingConfig::class;
-    protected $parsingConfigOverridesDataType = 'map';
-    /**
-     * Whether chunking mode is enabled.
-     *
-     * @param GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigChunkingConfig $chunkingConfig
-     */
-    public function setChunkingConfig(GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigChunkingConfig $chunkingConfig)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfig extends \Google\Model
     {
+        protected $chunkingConfigType = GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigChunkingConfig::class;
+        protected $chunkingConfigDataType = '';
+        protected $defaultParsingConfigType = GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigParsingConfig::class;
+        protected $defaultParsingConfigDataType = '';
+        /**
+         * The full resource name of the Document Processing Config. Format:
+         * `projects/locations/collections/dataStores/documentProcessingConfig`.
+         *
+         * @var string
+         */
+        public $name;
+        protected $parsingConfigOverridesType = GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigParsingConfig::class;
+        protected $parsingConfigOverridesDataType = 'map';
+        /**
+         * Whether chunking mode is enabled.
+         *
+         * @param GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigChunkingConfig $chunkingConfig
+         */
+        public function setChunkingConfig(GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigChunkingConfig $chunkingConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigChunkingConfig
+         */
+        public function getChunkingConfig()
+        {
+        }
+        /**
+         * Configurations for default Document parser. If not specified, we will
+         * configure it as default DigitalParsingConfig, and the default parsing
+         * config will be applied to all file types for Document parsing.
+         *
+         * @param GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigParsingConfig $defaultParsingConfig
+         */
+        public function setDefaultParsingConfig(GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigParsingConfig $defaultParsingConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigParsingConfig
+         */
+        public function getDefaultParsingConfig()
+        {
+        }
+        /**
+         * The full resource name of the Document Processing Config. Format:
+         * `projects/locations/collections/dataStores/documentProcessingConfig`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Map from file type to override the default parsing configuration based on
+         * the file type. Supported keys: * `pdf`: Override parsing config for PDF
+         * files, either digital parsing, ocr parsing or layout parsing is supported.
+         * * `html`: Override parsing config for HTML files, only digital parsing and
+         * layout parsing are supported. * `docx`: Override parsing config for DOCX
+         * files, only digital parsing and layout parsing are supported. * `pptx`:
+         * Override parsing config for PPTX files, only digital parsing and layout
+         * parsing are supported. * `xlsm`: Override parsing config for XLSM files,
+         * only digital parsing and layout parsing are supported. * `xlsx`: Override
+         * parsing config for XLSX files, only digital parsing and layout parsing are
+         * supported.
+         *
+         * @param GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigParsingConfig[] $parsingConfigOverrides
+         */
+        public function setParsingConfigOverrides($parsingConfigOverrides)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigParsingConfig[]
+         */
+        public function getParsingConfigOverrides()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigChunkingConfig
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChunkingConfig()
-    {
-    }
-    /**
-     * Configurations for default Document parser. If not specified, we will
-     * configure it as default DigitalParsingConfig, and the default parsing
-     * config will be applied to all file types for Document parsing.
-     *
-     * @param GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigParsingConfig $defaultParsingConfig
-     */
-    public function setDefaultParsingConfig(GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigParsingConfig $defaultParsingConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigParsingConfig
-     */
-    public function getDefaultParsingConfig()
-    {
-    }
-    /**
-     * The full resource name of the Document Processing Config. Format:
-     * `projects/locations/collections/dataStores/documentProcessingConfig`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Map from file type to override the default parsing configuration based on
-     * the file type. Supported keys: * `pdf`: Override parsing config for PDF
-     * files, either digital parsing, ocr parsing or layout parsing is supported.
-     * * `html`: Override parsing config for HTML files, only digital parsing and
-     * layout parsing are supported. * `docx`: Override parsing config for DOCX
-     * files, only digital parsing and layout parsing are supported. * `pptx`:
-     * Override parsing config for PPTX files, only digital parsing and layout
-     * parsing are supported. * `xlsm`: Override parsing config for XLSM files,
-     * only digital parsing and layout parsing are supported. * `xlsx`: Override
-     * parsing config for XLSX files, only digital parsing and layout parsing are
-     * supported.
-     *
-     * @param GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigParsingConfig[] $parsingConfigOverrides
-     */
-    public function setParsingConfigOverrides($parsingConfigOverrides)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigParsingConfig[]
-     */
-    public function getParsingConfigOverrides()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfig extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfig
     {
     }
 }

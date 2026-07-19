@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class EnvironmentAssignedTargetingOptionDetails extends \Google\Model
-{
-    /**
-     * Default value when environment is not specified in this version. This enum
-     * is a placeholder for default value and does not represent a real
-     * environment option.
-     */
-    public const ENVIRONMENT_ENVIRONMENT_UNSPECIFIED = 'ENVIRONMENT_UNSPECIFIED';
-    /**
-     * Target inventory displayed in browsers. This includes inventory that was
-     * designed for the device it was viewed on, such as mobile websites viewed on
-     * a mobile device. ENVIRONMENT_WEB_NOT_OPTIMIZED, if targeted, should be
-     * deleted prior to the deletion of this targeting option.
-     */
-    public const ENVIRONMENT_ENVIRONMENT_WEB_OPTIMIZED = 'ENVIRONMENT_WEB_OPTIMIZED';
-    /**
-     * Target inventory displayed in browsers. This includes inventory that was
-     * not designed for the device but viewed on it, such as websites optimized
-     * for desktop but viewed on a mobile device. ENVIRONMENT_WEB_OPTIMIZED should
-     * be targeted prior to the addition of this targeting option.
-     */
-    public const ENVIRONMENT_ENVIRONMENT_WEB_NOT_OPTIMIZED = 'ENVIRONMENT_WEB_NOT_OPTIMIZED';
-    /**
-     * Target inventory displayed in apps.
-     */
-    public const ENVIRONMENT_ENVIRONMENT_APP = 'ENVIRONMENT_APP';
-    /**
-     * Required. The serving environment.
-     *
-     * @var string
-     */
-    public $environment;
-    /**
-     * Required. The serving environment.
-     *
-     * Accepted values: ENVIRONMENT_UNSPECIFIED, ENVIRONMENT_WEB_OPTIMIZED,
-     * ENVIRONMENT_WEB_NOT_OPTIMIZED, ENVIRONMENT_APP
-     *
-     * @param self::ENVIRONMENT_* $environment
-     */
-    public function setEnvironment($environment)
+namespace Google\Service\DisplayVideo {
+    class EnvironmentAssignedTargetingOptionDetails extends \Google\Model
     {
+        /**
+         * Default value when environment is not specified in this version. This enum
+         * is a placeholder for default value and does not represent a real
+         * environment option.
+         */
+        public const ENVIRONMENT_ENVIRONMENT_UNSPECIFIED = 'ENVIRONMENT_UNSPECIFIED';
+        /**
+         * Target inventory displayed in browsers. This includes inventory that was
+         * designed for the device it was viewed on, such as mobile websites viewed on
+         * a mobile device. ENVIRONMENT_WEB_NOT_OPTIMIZED, if targeted, should be
+         * deleted prior to the deletion of this targeting option.
+         */
+        public const ENVIRONMENT_ENVIRONMENT_WEB_OPTIMIZED = 'ENVIRONMENT_WEB_OPTIMIZED';
+        /**
+         * Target inventory displayed in browsers. This includes inventory that was
+         * not designed for the device but viewed on it, such as websites optimized
+         * for desktop but viewed on a mobile device. ENVIRONMENT_WEB_OPTIMIZED should
+         * be targeted prior to the addition of this targeting option.
+         */
+        public const ENVIRONMENT_ENVIRONMENT_WEB_NOT_OPTIMIZED = 'ENVIRONMENT_WEB_NOT_OPTIMIZED';
+        /**
+         * Target inventory displayed in apps.
+         */
+        public const ENVIRONMENT_ENVIRONMENT_APP = 'ENVIRONMENT_APP';
+        /**
+         * Required. The serving environment.
+         *
+         * @var string
+         */
+        public $environment;
+        /**
+         * Required. The serving environment.
+         *
+         * Accepted values: ENVIRONMENT_UNSPECIFIED, ENVIRONMENT_WEB_OPTIMIZED,
+         * ENVIRONMENT_WEB_NOT_OPTIMIZED, ENVIRONMENT_APP
+         *
+         * @param self::ENVIRONMENT_* $environment
+         */
+        public function setEnvironment($environment)
+        {
+        }
+        /**
+         * @return self::ENVIRONMENT_*
+         */
+        public function getEnvironment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ENVIRONMENT_*
+     * Runtime class alias of \Google\Service\DisplayVideo\EnvironmentAssignedTargetingOptionDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnvironment()
+    class Google_Service_DisplayVideo_EnvironmentAssignedTargetingOptionDetails extends \Google\Service\DisplayVideo\EnvironmentAssignedTargetingOptionDetails
     {
     }
 }

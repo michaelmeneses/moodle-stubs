@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter;
-
-class RuleInfo extends \Google\Model
-{
-    /**
-     * User provided name of the rule.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Resource name that uniquely identifies the rule.
-     *
-     * @var string
-     */
-    public $resourceName;
-    /**
-     * User provided name of the rule.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\AlertCenter {
+    class RuleInfo extends \Google\Model
     {
+        /**
+         * User provided name of the rule.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Resource name that uniquely identifies the rule.
+         *
+         * @var string
+         */
+        public $resourceName;
+        /**
+         * User provided name of the rule.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Resource name that uniquely identifies the rule.
+         *
+         * @param string $resourceName
+         */
+        public function setResourceName($resourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AlertCenter\RuleInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Resource name that uniquely identifies the rule.
-     *
-     * @param string $resourceName
-     */
-    public function setResourceName($resourceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceName()
+    class Google_Service_AlertCenter_RuleInfo extends \Google\Service\AlertCenter\RuleInfo
     {
     }
 }

@@ -21,75 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Merchant\Resource;
-
-/**
- * The "productReviews" collection of methods.
- * Typical usage is:
- *  <code>
- *   $merchantapiService = new Google\Service\Merchant(...);
- *   $productReviews = $merchantapiService->accounts_productReviews;
- *  </code>
- */
-class AccountsProductReviews extends \Google\Service\Resource
-{
+namespace Google\Service\Merchant\Resource {
+    use Google\Service\Merchant\ListProductReviewsResponse;
+    use Google\Service\Merchant\MerchantapiEmpty;
+    use Google\Service\Merchant\ProductReview;
     /**
-     * Deletes a product review. (productReviews.delete)
-     *
-     * @param string $name Required. The ID of the Product review. Format:
-     * accounts/{account}/productReviews/{productReview}
-     * @param array $optParams Optional parameters.
-     * @return MerchantapiEmpty
-     * @throws \Google\Service\Exception
+     * The "productReviews" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $merchantapiService = new Google\Service\Merchant(...);
+     *   $productReviews = $merchantapiService->accounts_productReviews;
+     *  </code>
      */
-    public function delete($name, $optParams = [])
+    class AccountsProductReviews extends \Google\Service\Resource
     {
+        /**
+         * Deletes a product review. (productReviews.delete)
+         *
+         * @param string $name Required. The ID of the Product review. Format:
+         * accounts/{account}/productReviews/{productReview}
+         * @param array $optParams Optional parameters.
+         * @return MerchantapiEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets a product review. (productReviews.get)
+         *
+         * @param string $name Required. The ID of the merchant review. Format:
+         * accounts/{account}/productReviews/{productReview}
+         * @param array $optParams Optional parameters.
+         * @return ProductReview
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Inserts a product review. (productReviews.insert)
+         *
+         * @param string $parent Required. The account where the product review will be
+         * inserted. Format: accounts/{account}
+         * @param ProductReview $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string dataSource Required. Format:
+         * `accounts/{account}/dataSources/{datasource}`.
+         * @return ProductReview
+         * @throws \Google\Service\Exception
+         */
+        public function insert($parent, ProductReview $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Lists product reviews. (productReviews.listAccountsProductReviews)
+         *
+         * @param string $parent Required. The account to list product reviews for.
+         * Format: accounts/{account}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. The maximum number of products to return.
+         * The service may return fewer than this value.
+         * @opt_param string pageToken Optional. A page token, received from a previous
+         * `ListProductReviews` call. Provide this to retrieve the subsequent page. When
+         * paginating, all other parameters provided to `ListProductReviews` must match
+         * the call that provided the page token.
+         * @return ListProductReviewsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAccountsProductReviews($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets a product review. (productReviews.get)
-     *
-     * @param string $name Required. The ID of the merchant review. Format:
-     * accounts/{account}/productReviews/{productReview}
-     * @param array $optParams Optional parameters.
-     * @return ProductReview
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Merchant\Resource\AccountsProductReviews registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Inserts a product review. (productReviews.insert)
-     *
-     * @param string $parent Required. The account where the product review will be
-     * inserted. Format: accounts/{account}
-     * @param ProductReview $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string dataSource Required. Format:
-     * `accounts/{account}/dataSources/{datasource}`.
-     * @return ProductReview
-     * @throws \Google\Service\Exception
-     */
-    public function insert($parent, ProductReview $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Lists product reviews. (productReviews.listAccountsProductReviews)
-     *
-     * @param string $parent Required. The account to list product reviews for.
-     * Format: accounts/{account}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. The maximum number of products to return.
-     * The service may return fewer than this value.
-     * @opt_param string pageToken Optional. A page token, received from a previous
-     * `ListProductReviews` call. Provide this to retrieve the subsequent page. When
-     * paginating, all other parameters provided to `ListProductReviews` must match
-     * the call that provided the page token.
-     * @return ListProductReviewsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listAccountsProductReviews($parent, $optParams = [])
+    class Google_Service_Merchant_Resource_AccountsProductReviews extends \Google\Service\Merchant\Resource\AccountsProductReviews
     {
     }
 }

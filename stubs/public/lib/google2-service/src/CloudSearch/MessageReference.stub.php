@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class MessageReference extends \Google\Model
-{
-    protected $sourceInfoType = SourceMessageInfo::class;
-    protected $sourceInfoDataType = '';
-    /**
-     * @param SourceMessageInfo
-     */
-    public function setSourceInfo(SourceMessageInfo $sourceInfo)
+namespace Google\Service\CloudSearch {
+    class MessageReference extends \Google\Model
     {
+        protected $sourceInfoType = SourceMessageInfo::class;
+        protected $sourceInfoDataType = '';
+        /**
+         * @param SourceMessageInfo
+         */
+        public function setSourceInfo(SourceMessageInfo $sourceInfo)
+        {
+        }
+        /**
+         * @return SourceMessageInfo
+         */
+        public function getSourceInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SourceMessageInfo
+     * Runtime class alias of \Google\Service\CloudSearch\MessageReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSourceInfo()
+    class Google_Service_CloudSearch_MessageReference extends \Google\Service\CloudSearch\MessageReference
     {
     }
 }

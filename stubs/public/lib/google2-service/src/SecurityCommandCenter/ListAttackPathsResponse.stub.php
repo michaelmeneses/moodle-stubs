@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class ListAttackPathsResponse extends \Google\Collection
-{
-    protected $collection_key = 'attackPaths';
-    protected $attackPathsType = AttackPath::class;
-    protected $attackPathsDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The attack paths that the attack path simulation identified.
-     *
-     * @param AttackPath[] $attackPaths
-     */
-    public function setAttackPaths($attackPaths)
+namespace Google\Service\SecurityCommandCenter {
+    class ListAttackPathsResponse extends \Google\Collection
     {
+        protected $collection_key = 'attackPaths';
+        protected $attackPathsType = AttackPath::class;
+        protected $attackPathsDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The attack paths that the attack path simulation identified.
+         *
+         * @param AttackPath[] $attackPaths
+         */
+        public function setAttackPaths($attackPaths)
+        {
+        }
+        /**
+         * @return AttackPath[]
+         */
+        public function getAttackPaths()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AttackPath[]
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\ListAttackPathsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttackPaths()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_SecurityCommandCenter_ListAttackPathsResponse extends \Google\Service\SecurityCommandCenter\ListAttackPathsResponse
     {
     }
 }

@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaVideoDataItem extends \Google\Model
-{
-    /**
-     * Required. Google Cloud Storage URI points to the original video in user's
-     * bucket. The video is up to 50 GB in size and up to 3 hour in duration.
-     *
-     * @var string
-     */
-    public $gcsUri;
-    /**
-     * Output only. The mime type of the content of the video. Only the videos in
-     * below listed mime types are supported. Supported mime_type: - video/mp4 -
-     * video/avi - video/quicktime
-     *
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * Required. Google Cloud Storage URI points to the original video in user's
-     * bucket. The video is up to 50 GB in size and up to 3 hour in duration.
-     *
-     * @param string $gcsUri
-     */
-    public function setGcsUri($gcsUri)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaVideoDataItem extends \Google\Model
     {
+        /**
+         * Required. Google Cloud Storage URI points to the original video in user's
+         * bucket. The video is up to 50 GB in size and up to 3 hour in duration.
+         *
+         * @var string
+         */
+        public $gcsUri;
+        /**
+         * Output only. The mime type of the content of the video. Only the videos in
+         * below listed mime types are supported. Supported mime_type: - video/mp4 -
+         * video/avi - video/quicktime
+         *
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * Required. Google Cloud Storage URI points to the original video in user's
+         * bucket. The video is up to 50 GB in size and up to 3 hour in duration.
+         *
+         * @param string $gcsUri
+         */
+        public function setGcsUri($gcsUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcsUri()
+        {
+        }
+        /**
+         * Output only. The mime type of the content of the video. Only the videos in
+         * below listed mime types are supported. Supported mime_type: - video/mp4 -
+         * video/avi - video/quicktime
+         *
+         * @param string $mimeType
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaVideoDataItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcsUri()
-    {
-    }
-    /**
-     * Output only. The mime type of the content of the video. Only the videos in
-     * below listed mime types are supported. Supported mime_type: - video/mp4 -
-     * video/avi - video/quicktime
-     *
-     * @param string $mimeType
-     */
-    public function setMimeType($mimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimeType()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaVideoDataItem extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaVideoDataItem
     {
     }
 }

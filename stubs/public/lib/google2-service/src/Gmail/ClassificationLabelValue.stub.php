@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Gmail;
-
-class ClassificationLabelValue extends \Google\Collection
-{
-    protected $collection_key = 'fields';
-    protected $fieldsType = ClassificationLabelFieldValue::class;
-    protected $fieldsDataType = 'array';
-    /**
-     * Required. The canonical or raw alphanumeric classification label ID. Maps
-     * to the ID field of the Google Drive Label resource.
-     *
-     * @var string
-     */
-    public $labelId;
-    /**
-     * Field values for the given classification label ID.
-     *
-     * @param ClassificationLabelFieldValue[] $fields
-     */
-    public function setFields($fields)
+namespace Google\Service\Gmail {
+    class ClassificationLabelValue extends \Google\Collection
     {
+        protected $collection_key = 'fields';
+        protected $fieldsType = ClassificationLabelFieldValue::class;
+        protected $fieldsDataType = 'array';
+        /**
+         * Required. The canonical or raw alphanumeric classification label ID. Maps
+         * to the ID field of the Google Drive Label resource.
+         *
+         * @var string
+         */
+        public $labelId;
+        /**
+         * Field values for the given classification label ID.
+         *
+         * @param ClassificationLabelFieldValue[] $fields
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return ClassificationLabelFieldValue[]
+         */
+        public function getFields()
+        {
+        }
+        /**
+         * Required. The canonical or raw alphanumeric classification label ID. Maps
+         * to the ID field of the Google Drive Label resource.
+         *
+         * @param string $labelId
+         */
+        public function setLabelId($labelId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabelId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ClassificationLabelFieldValue[]
+     * Runtime class alias of \Google\Service\Gmail\ClassificationLabelValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFields()
-    {
-    }
-    /**
-     * Required. The canonical or raw alphanumeric classification label ID. Maps
-     * to the ID field of the Google Drive Label resource.
-     *
-     * @param string $labelId
-     */
-    public function setLabelId($labelId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLabelId()
+    class Google_Service_Gmail_ClassificationLabelValue extends \Google\Service\Gmail\ClassificationLabelValue
     {
     }
 }

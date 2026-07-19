@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FactCheckTools;
-
-class GoogleFactcheckingFactchecktoolsV1alpha1FactCheckedClaimImageSearchResponse extends \Google\Collection
-{
-    protected $collection_key = 'results';
-    /**
-     * The next pagination token in the Search response. It should be used as the
-     * `page_token` for the following request. An empty value means no more
-     * results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $resultsType = GoogleFactcheckingFactchecktoolsV1alpha1FactCheckedClaimImageSearchResponseResult::class;
-    protected $resultsDataType = 'array';
-    /**
-     * The next pagination token in the Search response. It should be used as the
-     * `page_token` for the following request. An empty value means no more
-     * results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\FactCheckTools {
+    class GoogleFactcheckingFactchecktoolsV1alpha1FactCheckedClaimImageSearchResponse extends \Google\Collection
     {
+        protected $collection_key = 'results';
+        /**
+         * The next pagination token in the Search response. It should be used as the
+         * `page_token` for the following request. An empty value means no more
+         * results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $resultsType = GoogleFactcheckingFactchecktoolsV1alpha1FactCheckedClaimImageSearchResponseResult::class;
+        protected $resultsDataType = 'array';
+        /**
+         * The next pagination token in the Search response. It should be used as the
+         * `page_token` for the following request. An empty value means no more
+         * results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of claims and all of their associated information.
+         *
+         * @param GoogleFactcheckingFactchecktoolsV1alpha1FactCheckedClaimImageSearchResponseResult[] $results
+         */
+        public function setResults($results)
+        {
+        }
+        /**
+         * @return GoogleFactcheckingFactchecktoolsV1alpha1FactCheckedClaimImageSearchResponseResult[]
+         */
+        public function getResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\FactCheckTools\GoogleFactcheckingFactchecktoolsV1alpha1FactCheckedClaimImageSearchResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of claims and all of their associated information.
-     *
-     * @param GoogleFactcheckingFactchecktoolsV1alpha1FactCheckedClaimImageSearchResponseResult[] $results
-     */
-    public function setResults($results)
-    {
-    }
-    /**
-     * @return GoogleFactcheckingFactchecktoolsV1alpha1FactCheckedClaimImageSearchResponseResult[]
-     */
-    public function getResults()
+    class Google_Service_FactCheckTools_GoogleFactcheckingFactchecktoolsV1alpha1FactCheckedClaimImageSearchResponse extends \Google\Service\FactCheckTools\GoogleFactcheckingFactchecktoolsV1alpha1FactCheckedClaimImageSearchResponse
     {
     }
 }

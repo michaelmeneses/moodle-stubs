@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Reports;
-
-class FieldValueUserListValue extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    protected $valuesType = FieldValueUserValue::class;
-    protected $valuesDataType = 'array';
-    /**
-     * List of users.
-     *
-     * @param FieldValueUserValue[] $values
-     */
-    public function setValues($values)
+namespace Google\Service\Reports {
+    class FieldValueUserListValue extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        protected $valuesType = FieldValueUserValue::class;
+        protected $valuesDataType = 'array';
+        /**
+         * List of users.
+         *
+         * @param FieldValueUserValue[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return FieldValueUserValue[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FieldValueUserValue[]
+     * Runtime class alias of \Google\Service\Reports\FieldValueUserListValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValues()
+    class Google_Service_Reports_FieldValueUserListValue extends \Google\Service\Reports\FieldValueUserListValue
     {
     }
 }

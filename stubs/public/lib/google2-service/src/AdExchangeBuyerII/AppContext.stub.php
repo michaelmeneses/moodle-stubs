@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class AppContext extends \Google\Collection
-{
-    protected $collection_key = 'appTypes';
-    /**
-     * The app types this restriction applies to.
-     *
-     * @var string[]
-     */
-    public $appTypes;
-    /**
-     * The app types this restriction applies to.
-     *
-     * @param string[] $appTypes
-     */
-    public function setAppTypes($appTypes)
+namespace Google\Service\AdExchangeBuyerII {
+    class AppContext extends \Google\Collection
     {
+        protected $collection_key = 'appTypes';
+        /**
+         * The app types this restriction applies to.
+         *
+         * @var string[]
+         */
+        public $appTypes;
+        /**
+         * The app types this restriction applies to.
+         *
+         * @param string[] $appTypes
+         */
+        public function setAppTypes($appTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAppTypes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\AppContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppTypes()
+    class Google_Service_AdExchangeBuyerII_AppContext extends \Google\Service\AdExchangeBuyerII\AppContext
     {
     }
 }

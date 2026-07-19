@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataManager;
-
-class AudienceMember extends \Google\Collection
-{
-    protected $collection_key = 'destinationReferences';
-    protected $consentType = Consent::class;
-    protected $consentDataType = '';
-    /**
-     * Optional. Defines which Destination to send the audience member to.
-     *
-     * @var string[]
-     */
-    public $destinationReferences;
-    protected $mobileDataType = MobileData::class;
-    protected $mobileDataDataType = '';
-    protected $pairDataType = PairData::class;
-    protected $pairDataDataType = '';
-    protected $userDataType = UserData::class;
-    protected $userDataDataType = '';
-    /**
-     * Optional. The consent setting for the user.
-     *
-     * @param Consent $consent
-     */
-    public function setConsent(Consent $consent)
+namespace Google\Service\DataManager {
+    class AudienceMember extends \Google\Collection
     {
+        protected $collection_key = 'destinationReferences';
+        protected $consentType = Consent::class;
+        protected $consentDataType = '';
+        /**
+         * Optional. Defines which Destination to send the audience member to.
+         *
+         * @var string[]
+         */
+        public $destinationReferences;
+        protected $mobileDataType = MobileData::class;
+        protected $mobileDataDataType = '';
+        protected $pairDataType = PairData::class;
+        protected $pairDataDataType = '';
+        protected $userDataType = UserData::class;
+        protected $userDataDataType = '';
+        /**
+         * Optional. The consent setting for the user.
+         *
+         * @param Consent $consent
+         */
+        public function setConsent(Consent $consent)
+        {
+        }
+        /**
+         * @return Consent
+         */
+        public function getConsent()
+        {
+        }
+        /**
+         * Optional. Defines which Destination to send the audience member to.
+         *
+         * @param string[] $destinationReferences
+         */
+        public function setDestinationReferences($destinationReferences)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDestinationReferences()
+        {
+        }
+        /**
+         * Data identifying the user's mobile devices.
+         *
+         * @param MobileData $mobileData
+         */
+        public function setMobileData(MobileData $mobileData)
+        {
+        }
+        /**
+         * @return MobileData
+         */
+        public function getMobileData()
+        {
+        }
+        /**
+         * [Publisher Advertiser Identity Reconciliation (PAIR)
+         * IDs](//support.google.com/admanager/answer/15067908).
+         *
+         * @param PairData $pairData
+         */
+        public function setPairData(PairData $pairData)
+        {
+        }
+        /**
+         * @return PairData
+         */
+        public function getPairData()
+        {
+        }
+        /**
+         * User-provided data that identifies the user.
+         *
+         * @param UserData $userData
+         */
+        public function setUserData(UserData $userData)
+        {
+        }
+        /**
+         * @return UserData
+         */
+        public function getUserData()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Consent
+     * Runtime class alias of \Google\Service\DataManager\AudienceMember registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConsent()
-    {
-    }
-    /**
-     * Optional. Defines which Destination to send the audience member to.
-     *
-     * @param string[] $destinationReferences
-     */
-    public function setDestinationReferences($destinationReferences)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDestinationReferences()
-    {
-    }
-    /**
-     * Data identifying the user's mobile devices.
-     *
-     * @param MobileData $mobileData
-     */
-    public function setMobileData(MobileData $mobileData)
-    {
-    }
-    /**
-     * @return MobileData
-     */
-    public function getMobileData()
-    {
-    }
-    /**
-     * [Publisher Advertiser Identity Reconciliation (PAIR)
-     * IDs](//support.google.com/admanager/answer/15067908).
-     *
-     * @param PairData $pairData
-     */
-    public function setPairData(PairData $pairData)
-    {
-    }
-    /**
-     * @return PairData
-     */
-    public function getPairData()
-    {
-    }
-    /**
-     * User-provided data that identifies the user.
-     *
-     * @param UserData $userData
-     */
-    public function setUserData(UserData $userData)
-    {
-    }
-    /**
-     * @return UserData
-     */
-    public function getUserData()
+    class Google_Service_DataManager_AudienceMember extends \Google\Service\DataManager\AudienceMember
     {
     }
 }

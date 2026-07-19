@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class EdgeConfigstoreBundleBadBundle extends \Google\Collection
-{
-    protected $collection_key = 'violations';
-    protected $violationsType = EdgeConfigstoreBundleBadBundleViolation::class;
-    protected $violationsDataType = 'array';
-    /**
-     * Describes all precondition violations.
-     *
-     * @param EdgeConfigstoreBundleBadBundleViolation[] $violations
-     */
-    public function setViolations($violations)
+namespace Google\Service\Apigee {
+    class EdgeConfigstoreBundleBadBundle extends \Google\Collection
     {
+        protected $collection_key = 'violations';
+        protected $violationsType = EdgeConfigstoreBundleBadBundleViolation::class;
+        protected $violationsDataType = 'array';
+        /**
+         * Describes all precondition violations.
+         *
+         * @param EdgeConfigstoreBundleBadBundleViolation[] $violations
+         */
+        public function setViolations($violations)
+        {
+        }
+        /**
+         * @return EdgeConfigstoreBundleBadBundleViolation[]
+         */
+        public function getViolations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EdgeConfigstoreBundleBadBundleViolation[]
+     * Runtime class alias of \Google\Service\Apigee\EdgeConfigstoreBundleBadBundle registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getViolations()
+    class Google_Service_Apigee_EdgeConfigstoreBundleBadBundle extends \Google\Service\Apigee\EdgeConfigstoreBundleBadBundle
     {
     }
 }

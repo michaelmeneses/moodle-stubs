@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity;
-
-class CertificateProviderInstance extends \Google\Model
-{
-    /**
-     * Required. Plugin instance name, used to locate and load CertificateProvider
-     * instance configuration. Set to "google_cloud_private_spiffe" to use
-     * Certificate Authority Service certificate provider instance.
-     *
-     * @var string
-     */
-    public $pluginInstance;
-    /**
-     * Required. Plugin instance name, used to locate and load CertificateProvider
-     * instance configuration. Set to "google_cloud_private_spiffe" to use
-     * Certificate Authority Service certificate provider instance.
-     *
-     * @param string $pluginInstance
-     */
-    public function setPluginInstance($pluginInstance)
+namespace Google\Service\NetworkSecurity {
+    class CertificateProviderInstance extends \Google\Model
     {
+        /**
+         * Required. Plugin instance name, used to locate and load CertificateProvider
+         * instance configuration. Set to "google_cloud_private_spiffe" to use
+         * Certificate Authority Service certificate provider instance.
+         *
+         * @var string
+         */
+        public $pluginInstance;
+        /**
+         * Required. Plugin instance name, used to locate and load CertificateProvider
+         * instance configuration. Set to "google_cloud_private_spiffe" to use
+         * Certificate Authority Service certificate provider instance.
+         *
+         * @param string $pluginInstance
+         */
+        public function setPluginInstance($pluginInstance)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPluginInstance()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkSecurity\CertificateProviderInstance registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPluginInstance()
+    class Google_Service_NetworkSecurity_CertificateProviderInstance extends \Google\Service\NetworkSecurity\CertificateProviderInstance
     {
     }
 }

@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2RuleIgnoreAction extends \Google\Collection
-{
-    protected $collection_key = 'ignoreTerms';
-    /**
-     * Terms to ignore in the search query.
-     *
-     * @var string[]
-     */
-    public $ignoreTerms;
-    /**
-     * Terms to ignore in the search query.
-     *
-     * @param string[] $ignoreTerms
-     */
-    public function setIgnoreTerms($ignoreTerms)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2RuleIgnoreAction extends \Google\Collection
     {
+        protected $collection_key = 'ignoreTerms';
+        /**
+         * Terms to ignore in the search query.
+         *
+         * @var string[]
+         */
+        public $ignoreTerms;
+        /**
+         * Terms to ignore in the search query.
+         *
+         * @param string[] $ignoreTerms
+         */
+        public function setIgnoreTerms($ignoreTerms)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIgnoreTerms()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2RuleIgnoreAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIgnoreTerms()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2RuleIgnoreAction extends \Google\Service\CloudRetail\GoogleCloudRetailV2RuleIgnoreAction
     {
     }
 }

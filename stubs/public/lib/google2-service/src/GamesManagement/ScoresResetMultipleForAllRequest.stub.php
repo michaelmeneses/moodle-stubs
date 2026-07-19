@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GamesManagement;
-
-class ScoresResetMultipleForAllRequest extends \Google\Collection
-{
-    protected $collection_key = 'leaderboard_ids';
-    protected $internal_gapi_mappings = ["leaderboardIds" => "leaderboard_ids"];
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `gamesManagement#scoresResetMultipleForAllRequest`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The IDs of leaderboards to reset.
-     *
-     * @var string[]
-     */
-    public $leaderboardIds;
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `gamesManagement#scoresResetMultipleForAllRequest`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\GamesManagement {
+    class ScoresResetMultipleForAllRequest extends \Google\Collection
     {
+        protected $collection_key = 'leaderboard_ids';
+        protected $internal_gapi_mappings = ["leaderboardIds" => "leaderboard_ids"];
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `gamesManagement#scoresResetMultipleForAllRequest`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The IDs of leaderboards to reset.
+         *
+         * @var string[]
+         */
+        public $leaderboardIds;
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `gamesManagement#scoresResetMultipleForAllRequest`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The IDs of leaderboards to reset.
+         *
+         * @param string[] $leaderboardIds
+         */
+        public function setLeaderboardIds($leaderboardIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLeaderboardIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GamesManagement\ScoresResetMultipleForAllRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * The IDs of leaderboards to reset.
-     *
-     * @param string[] $leaderboardIds
-     */
-    public function setLeaderboardIds($leaderboardIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLeaderboardIds()
+    class Google_Service_GamesManagement_ScoresResetMultipleForAllRequest extends \Google\Service\GamesManagement\ScoresResetMultipleForAllRequest
     {
     }
 }

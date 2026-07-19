@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class BareMetalLvpConfig extends \Google\Model
-{
-    /**
-     * Required. The host machine path.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * Required. The StorageClass name that PVs will be created with.
-     *
-     * @var string
-     */
-    public $storageClass;
-    /**
-     * Required. The host machine path.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
+namespace Google\Service\GKEOnPrem {
+    class BareMetalLvpConfig extends \Google\Model
     {
+        /**
+         * Required. The host machine path.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * Required. The StorageClass name that PVs will be created with.
+         *
+         * @var string
+         */
+        public $storageClass;
+        /**
+         * Required. The host machine path.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
+        /**
+         * Required. The StorageClass name that PVs will be created with.
+         *
+         * @param string $storageClass
+         */
+        public function setStorageClass($storageClass)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStorageClass()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEOnPrem\BareMetalLvpConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPath()
-    {
-    }
-    /**
-     * Required. The StorageClass name that PVs will be created with.
-     *
-     * @param string $storageClass
-     */
-    public function setStorageClass($storageClass)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStorageClass()
+    class Google_Service_GKEOnPrem_BareMetalLvpConfig extends \Google\Service\GKEOnPrem\BareMetalLvpConfig
     {
     }
 }

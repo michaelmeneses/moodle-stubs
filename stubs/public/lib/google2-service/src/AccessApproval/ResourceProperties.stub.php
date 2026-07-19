@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AccessApproval;
-
-class ResourceProperties extends \Google\Model
-{
-    /**
-     * Whether an approval will exclude the descendants of the resource being
-     * requested.
-     *
-     * @var bool
-     */
-    public $excludesDescendants;
-    /**
-     * Whether an approval will exclude the descendants of the resource being
-     * requested.
-     *
-     * @param bool $excludesDescendants
-     */
-    public function setExcludesDescendants($excludesDescendants)
+namespace Google\Service\AccessApproval {
+    class ResourceProperties extends \Google\Model
     {
+        /**
+         * Whether an approval will exclude the descendants of the resource being
+         * requested.
+         *
+         * @var bool
+         */
+        public $excludesDescendants;
+        /**
+         * Whether an approval will exclude the descendants of the resource being
+         * requested.
+         *
+         * @param bool $excludesDescendants
+         */
+        public function setExcludesDescendants($excludesDescendants)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getExcludesDescendants()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\AccessApproval\ResourceProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExcludesDescendants()
+    class Google_Service_AccessApproval_ResourceProperties extends \Google\Service\AccessApproval\ResourceProperties
     {
     }
 }

@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Tasks;
-
-class Tasks extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    /**
-     * ETag of the resource.
-     *
-     * @var string
-     */
-    public $etag;
-    protected $itemsType = Task::class;
-    protected $itemsDataType = 'array';
-    /**
-     * Type of the resource. This is always "tasks#tasks".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Token used to access the next page of this result.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * ETag of the resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\Tasks {
+    class Tasks extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        /**
+         * ETag of the resource.
+         *
+         * @var string
+         */
+        public $etag;
+        protected $itemsType = Task::class;
+        protected $itemsDataType = 'array';
+        /**
+         * Type of the resource. This is always "tasks#tasks".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Token used to access the next page of this result.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * ETag of the resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Collection of tasks.
+         *
+         * @param Task[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return Task[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * Type of the resource. This is always "tasks#tasks".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Token used to access the next page of this result.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Tasks\Tasks registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * Collection of tasks.
-     *
-     * @param Task[] $items
-     */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return Task[]
-     */
-    public function getItems()
-    {
-    }
-    /**
-     * Type of the resource. This is always "tasks#tasks".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Token used to access the next page of this result.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Tasks_Tasks extends \Google\Service\Tasks\Tasks
     {
     }
 }

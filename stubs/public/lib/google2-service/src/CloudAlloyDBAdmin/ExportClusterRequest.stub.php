@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class ExportClusterRequest extends \Google\Model
-{
-    protected $csvExportOptionsType = CsvExportOptions::class;
-    protected $csvExportOptionsDataType = '';
-    /**
-     * Required. Name of the database where the export command will be executed.
-     * Note - Value provided should be the same as expected from `SELECT
-     * current_database();` and NOT as a resource reference.
-     *
-     * @var string
-     */
-    public $database;
-    protected $gcsDestinationType = GcsDestination::class;
-    protected $gcsDestinationDataType = '';
-    protected $sqlExportOptionsType = SqlExportOptions::class;
-    protected $sqlExportOptionsDataType = '';
-    /**
-     * Options for exporting data in CSV format. Required field to be set for CSV
-     * file type.
-     *
-     * @param CsvExportOptions $csvExportOptions
-     */
-    public function setCsvExportOptions(CsvExportOptions $csvExportOptions)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class ExportClusterRequest extends \Google\Model
     {
+        protected $csvExportOptionsType = CsvExportOptions::class;
+        protected $csvExportOptionsDataType = '';
+        /**
+         * Required. Name of the database where the export command will be executed.
+         * Note - Value provided should be the same as expected from `SELECT
+         * current_database();` and NOT as a resource reference.
+         *
+         * @var string
+         */
+        public $database;
+        protected $gcsDestinationType = GcsDestination::class;
+        protected $gcsDestinationDataType = '';
+        protected $sqlExportOptionsType = SqlExportOptions::class;
+        protected $sqlExportOptionsDataType = '';
+        /**
+         * Options for exporting data in CSV format. Required field to be set for CSV
+         * file type.
+         *
+         * @param CsvExportOptions $csvExportOptions
+         */
+        public function setCsvExportOptions(CsvExportOptions $csvExportOptions)
+        {
+        }
+        /**
+         * @return CsvExportOptions
+         */
+        public function getCsvExportOptions()
+        {
+        }
+        /**
+         * Required. Name of the database where the export command will be executed.
+         * Note - Value provided should be the same as expected from `SELECT
+         * current_database();` and NOT as a resource reference.
+         *
+         * @param string $database
+         */
+        public function setDatabase($database)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatabase()
+        {
+        }
+        /**
+         * Required. Option to export data to cloud storage.
+         *
+         * @param GcsDestination $gcsDestination
+         */
+        public function setGcsDestination(GcsDestination $gcsDestination)
+        {
+        }
+        /**
+         * @return GcsDestination
+         */
+        public function getGcsDestination()
+        {
+        }
+        /**
+         * Options for exporting data in SQL format. Required field to be set for SQL
+         * file type.
+         *
+         * @param SqlExportOptions $sqlExportOptions
+         */
+        public function setSqlExportOptions(SqlExportOptions $sqlExportOptions)
+        {
+        }
+        /**
+         * @return SqlExportOptions
+         */
+        public function getSqlExportOptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CsvExportOptions
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\ExportClusterRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCsvExportOptions()
-    {
-    }
-    /**
-     * Required. Name of the database where the export command will be executed.
-     * Note - Value provided should be the same as expected from `SELECT
-     * current_database();` and NOT as a resource reference.
-     *
-     * @param string $database
-     */
-    public function setDatabase($database)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDatabase()
-    {
-    }
-    /**
-     * Required. Option to export data to cloud storage.
-     *
-     * @param GcsDestination $gcsDestination
-     */
-    public function setGcsDestination(GcsDestination $gcsDestination)
-    {
-    }
-    /**
-     * @return GcsDestination
-     */
-    public function getGcsDestination()
-    {
-    }
-    /**
-     * Options for exporting data in SQL format. Required field to be set for SQL
-     * file type.
-     *
-     * @param SqlExportOptions $sqlExportOptions
-     */
-    public function setSqlExportOptions(SqlExportOptions $sqlExportOptions)
-    {
-    }
-    /**
-     * @return SqlExportOptions
-     */
-    public function getSqlExportOptions()
+    class Google_Service_CloudAlloyDBAdmin_ExportClusterRequest extends \Google\Service\CloudAlloyDBAdmin\ExportClusterRequest
     {
     }
 }

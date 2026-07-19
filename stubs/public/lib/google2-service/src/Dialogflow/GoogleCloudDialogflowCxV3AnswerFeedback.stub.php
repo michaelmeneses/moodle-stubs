@@ -21,83 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3AnswerFeedback extends \Google\Model
-{
-    /**
-     * Rating not specified.
-     */
-    public const RATING_RATING_UNSPECIFIED = 'RATING_UNSPECIFIED';
-    /**
-     * Thumbs up feedback from user.
-     */
-    public const RATING_THUMBS_UP = 'THUMBS_UP';
-    /**
-     * Thumbs down feedback from user.
-     */
-    public const RATING_THUMBS_DOWN = 'THUMBS_DOWN';
-    /**
-     * Optional. Custom rating from the user about the provided answer, with
-     * maximum length of 1024 characters. For example, client could use a
-     * customized JSON object to indicate the rating.
-     *
-     * @var string
-     */
-    public $customRating;
-    /**
-     * Optional. Rating from user for the specific Dialogflow response.
-     *
-     * @var string
-     */
-    public $rating;
-    protected $ratingReasonType = GoogleCloudDialogflowCxV3AnswerFeedbackRatingReason::class;
-    protected $ratingReasonDataType = '';
-    /**
-     * Optional. Custom rating from the user about the provided answer, with
-     * maximum length of 1024 characters. For example, client could use a
-     * customized JSON object to indicate the rating.
-     *
-     * @param string $customRating
-     */
-    public function setCustomRating($customRating)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3AnswerFeedback extends \Google\Model
     {
+        /**
+         * Rating not specified.
+         */
+        public const RATING_RATING_UNSPECIFIED = 'RATING_UNSPECIFIED';
+        /**
+         * Thumbs up feedback from user.
+         */
+        public const RATING_THUMBS_UP = 'THUMBS_UP';
+        /**
+         * Thumbs down feedback from user.
+         */
+        public const RATING_THUMBS_DOWN = 'THUMBS_DOWN';
+        /**
+         * Optional. Custom rating from the user about the provided answer, with
+         * maximum length of 1024 characters. For example, client could use a
+         * customized JSON object to indicate the rating.
+         *
+         * @var string
+         */
+        public $customRating;
+        /**
+         * Optional. Rating from user for the specific Dialogflow response.
+         *
+         * @var string
+         */
+        public $rating;
+        protected $ratingReasonType = GoogleCloudDialogflowCxV3AnswerFeedbackRatingReason::class;
+        protected $ratingReasonDataType = '';
+        /**
+         * Optional. Custom rating from the user about the provided answer, with
+         * maximum length of 1024 characters. For example, client could use a
+         * customized JSON object to indicate the rating.
+         *
+         * @param string $customRating
+         */
+        public function setCustomRating($customRating)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomRating()
+        {
+        }
+        /**
+         * Optional. Rating from user for the specific Dialogflow response.
+         *
+         * Accepted values: RATING_UNSPECIFIED, THUMBS_UP, THUMBS_DOWN
+         *
+         * @param self::RATING_* $rating
+         */
+        public function setRating($rating)
+        {
+        }
+        /**
+         * @return self::RATING_*
+         */
+        public function getRating()
+        {
+        }
+        /**
+         * Optional. In case of thumbs down rating provided, users can optionally
+         * provide context about the rating.
+         *
+         * @param GoogleCloudDialogflowCxV3AnswerFeedbackRatingReason $ratingReason
+         */
+        public function setRatingReason(GoogleCloudDialogflowCxV3AnswerFeedbackRatingReason $ratingReason)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3AnswerFeedbackRatingReason
+         */
+        public function getRatingReason()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3AnswerFeedback registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomRating()
-    {
-    }
-    /**
-     * Optional. Rating from user for the specific Dialogflow response.
-     *
-     * Accepted values: RATING_UNSPECIFIED, THUMBS_UP, THUMBS_DOWN
-     *
-     * @param self::RATING_* $rating
-     */
-    public function setRating($rating)
-    {
-    }
-    /**
-     * @return self::RATING_*
-     */
-    public function getRating()
-    {
-    }
-    /**
-     * Optional. In case of thumbs down rating provided, users can optionally
-     * provide context about the rating.
-     *
-     * @param GoogleCloudDialogflowCxV3AnswerFeedbackRatingReason $ratingReason
-     */
-    public function setRatingReason(GoogleCloudDialogflowCxV3AnswerFeedbackRatingReason $ratingReason)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3AnswerFeedbackRatingReason
-     */
-    public function getRatingReason()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3AnswerFeedback extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3AnswerFeedback
     {
     }
 }

@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1OriginalDetectIntentRequest extends \Google\Model
-{
-    /**
-     * Optional. This field is set to the value of the `QueryParameters.payload`
-     * field passed in the request. Some integrations that query a Dialogflow
-     * agent may provide additional information in the payload. In particular, for
-     * the Dialogflow Phone Gateway integration, this field has the form: {
-     * "telephony": { "caller_id": "+18558363987" } } Note: The caller ID field
-     * (`caller_id`) will be redacted for Trial Edition agents and populated with
-     * the caller ID in [E.164 format](https://en.wikipedia.org/wiki/E.164) for
-     * Essentials Edition agents.
-     *
-     * @var array[]
-     */
-    public $payload;
-    /**
-     * The source of this request, e.g., `google`, `facebook`, `slack`. It is set
-     * by Dialogflow-owned servers.
-     *
-     * @var string
-     */
-    public $source;
-    /**
-     * Optional. The version of the protocol used for this request. This field is
-     * AoG-specific.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Optional. This field is set to the value of the `QueryParameters.payload`
-     * field passed in the request. Some integrations that query a Dialogflow
-     * agent may provide additional information in the payload. In particular, for
-     * the Dialogflow Phone Gateway integration, this field has the form: {
-     * "telephony": { "caller_id": "+18558363987" } } Note: The caller ID field
-     * (`caller_id`) will be redacted for Trial Edition agents and populated with
-     * the caller ID in [E.164 format](https://en.wikipedia.org/wiki/E.164) for
-     * Essentials Edition agents.
-     *
-     * @param array[] $payload
-     */
-    public function setPayload($payload)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1OriginalDetectIntentRequest extends \Google\Model
     {
+        /**
+         * Optional. This field is set to the value of the `QueryParameters.payload`
+         * field passed in the request. Some integrations that query a Dialogflow
+         * agent may provide additional information in the payload. In particular, for
+         * the Dialogflow Phone Gateway integration, this field has the form: {
+         * "telephony": { "caller_id": "+18558363987" } } Note: The caller ID field
+         * (`caller_id`) will be redacted for Trial Edition agents and populated with
+         * the caller ID in [E.164 format](https://en.wikipedia.org/wiki/E.164) for
+         * Essentials Edition agents.
+         *
+         * @var array[]
+         */
+        public $payload;
+        /**
+         * The source of this request, e.g., `google`, `facebook`, `slack`. It is set
+         * by Dialogflow-owned servers.
+         *
+         * @var string
+         */
+        public $source;
+        /**
+         * Optional. The version of the protocol used for this request. This field is
+         * AoG-specific.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Optional. This field is set to the value of the `QueryParameters.payload`
+         * field passed in the request. Some integrations that query a Dialogflow
+         * agent may provide additional information in the payload. In particular, for
+         * the Dialogflow Phone Gateway integration, this field has the form: {
+         * "telephony": { "caller_id": "+18558363987" } } Note: The caller ID field
+         * (`caller_id`) will be redacted for Trial Edition agents and populated with
+         * the caller ID in [E.164 format](https://en.wikipedia.org/wiki/E.164) for
+         * Essentials Edition agents.
+         *
+         * @param array[] $payload
+         */
+        public function setPayload($payload)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getPayload()
+        {
+        }
+        /**
+         * The source of this request, e.g., `google`, `facebook`, `slack`. It is set
+         * by Dialogflow-owned servers.
+         *
+         * @param string $source
+         */
+        public function setSource($source)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSource()
+        {
+        }
+        /**
+         * Optional. The version of the protocol used for this request. This field is
+         * AoG-specific.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1OriginalDetectIntentRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPayload()
-    {
-    }
-    /**
-     * The source of this request, e.g., `google`, `facebook`, `slack`. It is set
-     * by Dialogflow-owned servers.
-     *
-     * @param string $source
-     */
-    public function setSource($source)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSource()
-    {
-    }
-    /**
-     * Optional. The version of the protocol used for this request. This field is
-     * AoG-specific.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1OriginalDetectIntentRequest extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1OriginalDetectIntentRequest
     {
     }
 }

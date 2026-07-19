@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class BareMetalIslandModeCidrConfig extends \Google\Collection
-{
-    protected $collection_key = 'serviceAddressCidrBlocks';
-    /**
-     * Required. All pods in the cluster are assigned an RFC1918 IPv4 address from
-     * these ranges. This field cannot be changed after creation.
-     *
-     * @var string[]
-     */
-    public $podAddressCidrBlocks;
-    /**
-     * Required. All services in the cluster are assigned an RFC1918 IPv4 address
-     * from these ranges. This field is mutable after creation starting with
-     * version 1.15.
-     *
-     * @var string[]
-     */
-    public $serviceAddressCidrBlocks;
-    /**
-     * Required. All pods in the cluster are assigned an RFC1918 IPv4 address from
-     * these ranges. This field cannot be changed after creation.
-     *
-     * @param string[] $podAddressCidrBlocks
-     */
-    public function setPodAddressCidrBlocks($podAddressCidrBlocks)
+namespace Google\Service\GKEOnPrem {
+    class BareMetalIslandModeCidrConfig extends \Google\Collection
     {
+        protected $collection_key = 'serviceAddressCidrBlocks';
+        /**
+         * Required. All pods in the cluster are assigned an RFC1918 IPv4 address from
+         * these ranges. This field cannot be changed after creation.
+         *
+         * @var string[]
+         */
+        public $podAddressCidrBlocks;
+        /**
+         * Required. All services in the cluster are assigned an RFC1918 IPv4 address
+         * from these ranges. This field is mutable after creation starting with
+         * version 1.15.
+         *
+         * @var string[]
+         */
+        public $serviceAddressCidrBlocks;
+        /**
+         * Required. All pods in the cluster are assigned an RFC1918 IPv4 address from
+         * these ranges. This field cannot be changed after creation.
+         *
+         * @param string[] $podAddressCidrBlocks
+         */
+        public function setPodAddressCidrBlocks($podAddressCidrBlocks)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPodAddressCidrBlocks()
+        {
+        }
+        /**
+         * Required. All services in the cluster are assigned an RFC1918 IPv4 address
+         * from these ranges. This field is mutable after creation starting with
+         * version 1.15.
+         *
+         * @param string[] $serviceAddressCidrBlocks
+         */
+        public function setServiceAddressCidrBlocks($serviceAddressCidrBlocks)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getServiceAddressCidrBlocks()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\GKEOnPrem\BareMetalIslandModeCidrConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPodAddressCidrBlocks()
-    {
-    }
-    /**
-     * Required. All services in the cluster are assigned an RFC1918 IPv4 address
-     * from these ranges. This field is mutable after creation starting with
-     * version 1.15.
-     *
-     * @param string[] $serviceAddressCidrBlocks
-     */
-    public function setServiceAddressCidrBlocks($serviceAddressCidrBlocks)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getServiceAddressCidrBlocks()
+    class Google_Service_GKEOnPrem_BareMetalIslandModeCidrConfig extends \Google\Service\GKEOnPrem\BareMetalIslandModeCidrConfig
     {
     }
 }

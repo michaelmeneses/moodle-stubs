@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseDataConnect;
-
-class Datasource extends \Google\Model
-{
-    protected $postgresqlType = PostgreSql::class;
-    protected $postgresqlDataType = '';
-    /**
-     * PostgreSQL configurations.
-     *
-     * @param PostgreSql $postgresql
-     */
-    public function setPostgresql(PostgreSql $postgresql)
+namespace Google\Service\FirebaseDataConnect {
+    class Datasource extends \Google\Model
     {
+        protected $postgresqlType = PostgreSql::class;
+        protected $postgresqlDataType = '';
+        /**
+         * PostgreSQL configurations.
+         *
+         * @param PostgreSql $postgresql
+         */
+        public function setPostgresql(PostgreSql $postgresql)
+        {
+        }
+        /**
+         * @return PostgreSql
+         */
+        public function getPostgresql()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PostgreSql
+     * Runtime class alias of \Google\Service\FirebaseDataConnect\Datasource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPostgresql()
+    class Google_Service_FirebaseDataConnect_Datasource extends \Google\Service\FirebaseDataConnect\Datasource
     {
     }
 }

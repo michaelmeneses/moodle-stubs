@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ColabImage extends \Google\Model
-{
-    /**
-     * Output only. A human-readable description of the specified colab image
-     * release, populated by the system. Example: "Python 3.10", "Latest - current
-     * Python 3.11"
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Optional. The release name of the NotebookRuntime Colab image, e.g.
-     * "py310". If not specified, detault to the latest release.
-     *
-     * @var string
-     */
-    public $releaseName;
-    /**
-     * Output only. A human-readable description of the specified colab image
-     * release, populated by the system. Example: "Python 3.10", "Latest - current
-     * Python 3.11"
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ColabImage extends \Google\Model
     {
+        /**
+         * Output only. A human-readable description of the specified colab image
+         * release, populated by the system. Example: "Python 3.10", "Latest - current
+         * Python 3.11"
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Optional. The release name of the NotebookRuntime Colab image, e.g.
+         * "py310". If not specified, detault to the latest release.
+         *
+         * @var string
+         */
+        public $releaseName;
+        /**
+         * Output only. A human-readable description of the specified colab image
+         * release, populated by the system. Example: "Python 3.10", "Latest - current
+         * Python 3.11"
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Optional. The release name of the NotebookRuntime Colab image, e.g.
+         * "py310". If not specified, detault to the latest release.
+         *
+         * @param string $releaseName
+         */
+        public function setReleaseName($releaseName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReleaseName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ColabImage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Optional. The release name of the NotebookRuntime Colab image, e.g.
-     * "py310". If not specified, detault to the latest release.
-     *
-     * @param string $releaseName
-     */
-    public function setReleaseName($releaseName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReleaseName()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ColabImage extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ColabImage
     {
     }
 }

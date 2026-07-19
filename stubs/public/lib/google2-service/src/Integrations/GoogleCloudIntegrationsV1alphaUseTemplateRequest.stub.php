@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaUseTemplateRequest extends \Google\Model
-{
-    protected $integrationDetailsType = GoogleCloudIntegrationsV1alphaUseTemplateRequestIntegrationDetails::class;
-    protected $integrationDetailsDataType = '';
-    /**
-     * Required. The region of the Integration to be created.
-     *
-     * @var string
-     */
-    public $integrationRegion;
-    protected $subIntegrationsType = GoogleCloudIntegrationsV1alphaUseTemplateRequestIntegrationDetails::class;
-    protected $subIntegrationsDataType = 'map';
-    /**
-     * Required. Integration details which would be created via templates.
-     *
-     * @param GoogleCloudIntegrationsV1alphaUseTemplateRequestIntegrationDetails $integrationDetails
-     */
-    public function setIntegrationDetails(GoogleCloudIntegrationsV1alphaUseTemplateRequestIntegrationDetails $integrationDetails)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaUseTemplateRequest extends \Google\Model
     {
+        protected $integrationDetailsType = GoogleCloudIntegrationsV1alphaUseTemplateRequestIntegrationDetails::class;
+        protected $integrationDetailsDataType = '';
+        /**
+         * Required. The region of the Integration to be created.
+         *
+         * @var string
+         */
+        public $integrationRegion;
+        protected $subIntegrationsType = GoogleCloudIntegrationsV1alphaUseTemplateRequestIntegrationDetails::class;
+        protected $subIntegrationsDataType = 'map';
+        /**
+         * Required. Integration details which would be created via templates.
+         *
+         * @param GoogleCloudIntegrationsV1alphaUseTemplateRequestIntegrationDetails $integrationDetails
+         */
+        public function setIntegrationDetails(GoogleCloudIntegrationsV1alphaUseTemplateRequestIntegrationDetails $integrationDetails)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaUseTemplateRequestIntegrationDetails
+         */
+        public function getIntegrationDetails()
+        {
+        }
+        /**
+         * Required. The region of the Integration to be created.
+         *
+         * @param string $integrationRegion
+         */
+        public function setIntegrationRegion($integrationRegion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIntegrationRegion()
+        {
+        }
+        /**
+         * Optional. Sub Integration which would be created via templates.
+         *
+         * @param GoogleCloudIntegrationsV1alphaUseTemplateRequestIntegrationDetails[] $subIntegrations
+         */
+        public function setSubIntegrations($subIntegrations)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaUseTemplateRequestIntegrationDetails[]
+         */
+        public function getSubIntegrations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudIntegrationsV1alphaUseTemplateRequestIntegrationDetails
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaUseTemplateRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIntegrationDetails()
-    {
-    }
-    /**
-     * Required. The region of the Integration to be created.
-     *
-     * @param string $integrationRegion
-     */
-    public function setIntegrationRegion($integrationRegion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIntegrationRegion()
-    {
-    }
-    /**
-     * Optional. Sub Integration which would be created via templates.
-     *
-     * @param GoogleCloudIntegrationsV1alphaUseTemplateRequestIntegrationDetails[] $subIntegrations
-     */
-    public function setSubIntegrations($subIntegrations)
-    {
-    }
-    /**
-     * @return GoogleCloudIntegrationsV1alphaUseTemplateRequestIntegrationDetails[]
-     */
-    public function getSubIntegrations()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaUseTemplateRequest extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaUseTemplateRequest
     {
     }
 }

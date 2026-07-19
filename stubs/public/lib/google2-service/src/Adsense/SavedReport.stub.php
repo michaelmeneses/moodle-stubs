@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Adsense;
-
-class SavedReport extends \Google\Model
-{
-    /**
-     * Output only. Resource name of the report. Format:
-     * accounts/{account}/reports/{report}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Report title as specified by publisher.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Output only. Resource name of the report. Format:
-     * accounts/{account}/reports/{report}
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Adsense {
+    class SavedReport extends \Google\Model
     {
+        /**
+         * Output only. Resource name of the report. Format:
+         * accounts/{account}/reports/{report}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Report title as specified by publisher.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Output only. Resource name of the report. Format:
+         * accounts/{account}/reports/{report}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Report title as specified by publisher.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Adsense\SavedReport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Report title as specified by publisher.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_Adsense_SavedReport extends \Google\Service\Adsense\SavedReport
     {
     }
 }

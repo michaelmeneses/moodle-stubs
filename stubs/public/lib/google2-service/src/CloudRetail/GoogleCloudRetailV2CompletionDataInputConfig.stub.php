@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2CompletionDataInputConfig extends \Google\Model
-{
-    protected $bigQuerySourceType = GoogleCloudRetailV2BigQuerySource::class;
-    protected $bigQuerySourceDataType = '';
-    /**
-     * Required. BigQuery input source. Add the IAM permission "BigQuery Data
-     * Viewer" for cloud-retail-customer-data-access@system.gserviceaccount.com
-     * before using this feature otherwise an error is thrown.
-     *
-     * @param GoogleCloudRetailV2BigQuerySource $bigQuerySource
-     */
-    public function setBigQuerySource(GoogleCloudRetailV2BigQuerySource $bigQuerySource)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2CompletionDataInputConfig extends \Google\Model
     {
+        protected $bigQuerySourceType = GoogleCloudRetailV2BigQuerySource::class;
+        protected $bigQuerySourceDataType = '';
+        /**
+         * Required. BigQuery input source. Add the IAM permission "BigQuery Data
+         * Viewer" for cloud-retail-customer-data-access@system.gserviceaccount.com
+         * before using this feature otherwise an error is thrown.
+         *
+         * @param GoogleCloudRetailV2BigQuerySource $bigQuerySource
+         */
+        public function setBigQuerySource(GoogleCloudRetailV2BigQuerySource $bigQuerySource)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2BigQuerySource
+         */
+        public function getBigQuerySource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRetailV2BigQuerySource
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2CompletionDataInputConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBigQuerySource()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2CompletionDataInputConfig extends \Google\Service\CloudRetail\GoogleCloudRetailV2CompletionDataInputConfig
     {
     }
 }

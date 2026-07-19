@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class BulkEditAssignedLocationsRequest extends \Google\Collection
-{
-    protected $collection_key = 'deletedAssignedLocations';
-    protected $createdAssignedLocationsType = AssignedLocation::class;
-    protected $createdAssignedLocationsDataType = 'array';
-    /**
-     * The IDs of the assigned locations to delete in bulk, specified as a list of
-     * assignedLocationId values.
-     *
-     * @var string[]
-     */
-    public $deletedAssignedLocations;
-    /**
-     * The assigned locations to create in bulk, specified as a list of
-     * AssignedLocation resources.
-     *
-     * @param AssignedLocation[] $createdAssignedLocations
-     */
-    public function setCreatedAssignedLocations($createdAssignedLocations)
+namespace Google\Service\DisplayVideo {
+    class BulkEditAssignedLocationsRequest extends \Google\Collection
     {
+        protected $collection_key = 'deletedAssignedLocations';
+        protected $createdAssignedLocationsType = AssignedLocation::class;
+        protected $createdAssignedLocationsDataType = 'array';
+        /**
+         * The IDs of the assigned locations to delete in bulk, specified as a list of
+         * assignedLocationId values.
+         *
+         * @var string[]
+         */
+        public $deletedAssignedLocations;
+        /**
+         * The assigned locations to create in bulk, specified as a list of
+         * AssignedLocation resources.
+         *
+         * @param AssignedLocation[] $createdAssignedLocations
+         */
+        public function setCreatedAssignedLocations($createdAssignedLocations)
+        {
+        }
+        /**
+         * @return AssignedLocation[]
+         */
+        public function getCreatedAssignedLocations()
+        {
+        }
+        /**
+         * The IDs of the assigned locations to delete in bulk, specified as a list of
+         * assignedLocationId values.
+         *
+         * @param string[] $deletedAssignedLocations
+         */
+        public function setDeletedAssignedLocations($deletedAssignedLocations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDeletedAssignedLocations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AssignedLocation[]
+     * Runtime class alias of \Google\Service\DisplayVideo\BulkEditAssignedLocationsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreatedAssignedLocations()
-    {
-    }
-    /**
-     * The IDs of the assigned locations to delete in bulk, specified as a list of
-     * assignedLocationId values.
-     *
-     * @param string[] $deletedAssignedLocations
-     */
-    public function setDeletedAssignedLocations($deletedAssignedLocations)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDeletedAssignedLocations()
+    class Google_Service_DisplayVideo_BulkEditAssignedLocationsRequest extends \Google\Service\DisplayVideo\BulkEditAssignedLocationsRequest
     {
     }
 }

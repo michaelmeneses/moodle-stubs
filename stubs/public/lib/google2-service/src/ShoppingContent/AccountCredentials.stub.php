@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class AccountCredentials extends \Google\Model
-{
-    /**
-     * Unknown purpose.
-     */
-    public const PURPOSE_ACCOUNT_CREDENTIALS_PURPOSE_UNSPECIFIED = 'ACCOUNT_CREDENTIALS_PURPOSE_UNSPECIFIED';
-    /**
-     * The credentials allow Google to manage Shopify orders on behalf of the
-     * merchant (deprecated).
-     *
-     * @deprecated
-     */
-    public const PURPOSE_SHOPIFY_ORDER_MANAGEMENT = 'SHOPIFY_ORDER_MANAGEMENT';
-    /**
-     * The credentials allow Google to manage Shopify integration on behalf of the
-     * merchant.
-     */
-    public const PURPOSE_SHOPIFY_INTEGRATION = 'SHOPIFY_INTEGRATION';
-    /**
-     * An OAuth access token.
-     *
-     * @var string
-     */
-    public $accessToken;
-    /**
-     * The amount of time, in seconds, after which the access token is no longer
-     * valid.
-     *
-     * @var string
-     */
-    public $expiresIn;
-    /**
-     * Indicates to Google how Google should use these OAuth tokens.
-     *
-     * @var string
-     */
-    public $purpose;
-    /**
-     * An OAuth access token.
-     *
-     * @param string $accessToken
-     */
-    public function setAccessToken($accessToken)
+namespace Google\Service\ShoppingContent {
+    class AccountCredentials extends \Google\Model
     {
+        /**
+         * Unknown purpose.
+         */
+        public const PURPOSE_ACCOUNT_CREDENTIALS_PURPOSE_UNSPECIFIED = 'ACCOUNT_CREDENTIALS_PURPOSE_UNSPECIFIED';
+        /**
+         * The credentials allow Google to manage Shopify orders on behalf of the
+         * merchant (deprecated).
+         *
+         * @deprecated
+         */
+        public const PURPOSE_SHOPIFY_ORDER_MANAGEMENT = 'SHOPIFY_ORDER_MANAGEMENT';
+        /**
+         * The credentials allow Google to manage Shopify integration on behalf of the
+         * merchant.
+         */
+        public const PURPOSE_SHOPIFY_INTEGRATION = 'SHOPIFY_INTEGRATION';
+        /**
+         * An OAuth access token.
+         *
+         * @var string
+         */
+        public $accessToken;
+        /**
+         * The amount of time, in seconds, after which the access token is no longer
+         * valid.
+         *
+         * @var string
+         */
+        public $expiresIn;
+        /**
+         * Indicates to Google how Google should use these OAuth tokens.
+         *
+         * @var string
+         */
+        public $purpose;
+        /**
+         * An OAuth access token.
+         *
+         * @param string $accessToken
+         */
+        public function setAccessToken($accessToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccessToken()
+        {
+        }
+        /**
+         * The amount of time, in seconds, after which the access token is no longer
+         * valid.
+         *
+         * @param string $expiresIn
+         */
+        public function setExpiresIn($expiresIn)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpiresIn()
+        {
+        }
+        /**
+         * Indicates to Google how Google should use these OAuth tokens.
+         *
+         * Accepted values: ACCOUNT_CREDENTIALS_PURPOSE_UNSPECIFIED,
+         * SHOPIFY_ORDER_MANAGEMENT, SHOPIFY_INTEGRATION
+         *
+         * @param self::PURPOSE_* $purpose
+         */
+        public function setPurpose($purpose)
+        {
+        }
+        /**
+         * @return self::PURPOSE_*
+         */
+        public function getPurpose()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\AccountCredentials registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessToken()
-    {
-    }
-    /**
-     * The amount of time, in seconds, after which the access token is no longer
-     * valid.
-     *
-     * @param string $expiresIn
-     */
-    public function setExpiresIn($expiresIn)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpiresIn()
-    {
-    }
-    /**
-     * Indicates to Google how Google should use these OAuth tokens.
-     *
-     * Accepted values: ACCOUNT_CREDENTIALS_PURPOSE_UNSPECIFIED,
-     * SHOPIFY_ORDER_MANAGEMENT, SHOPIFY_INTEGRATION
-     *
-     * @param self::PURPOSE_* $purpose
-     */
-    public function setPurpose($purpose)
-    {
-    }
-    /**
-     * @return self::PURPOSE_*
-     */
-    public function getPurpose()
+    class Google_Service_ShoppingContent_AccountCredentials extends \Google\Service\ShoppingContent\AccountCredentials
     {
     }
 }

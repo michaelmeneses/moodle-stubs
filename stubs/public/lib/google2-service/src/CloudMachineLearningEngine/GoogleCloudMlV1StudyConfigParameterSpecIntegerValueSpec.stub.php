@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMachineLearningEngine;
-
-class GoogleCloudMlV1StudyConfigParameterSpecIntegerValueSpec extends \Google\Model
-{
-    /**
-     * Must be specified if type is `INTEGER`. Maximum value of the parameter.
-     *
-     * @var string
-     */
-    public $maxValue;
-    /**
-     * Must be specified if type is `INTEGER`. Minimum value of the parameter.
-     *
-     * @var string
-     */
-    public $minValue;
-    /**
-     * Must be specified if type is `INTEGER`. Maximum value of the parameter.
-     *
-     * @param string $maxValue
-     */
-    public function setMaxValue($maxValue)
+namespace Google\Service\CloudMachineLearningEngine {
+    class GoogleCloudMlV1StudyConfigParameterSpecIntegerValueSpec extends \Google\Model
     {
+        /**
+         * Must be specified if type is `INTEGER`. Maximum value of the parameter.
+         *
+         * @var string
+         */
+        public $maxValue;
+        /**
+         * Must be specified if type is `INTEGER`. Minimum value of the parameter.
+         *
+         * @var string
+         */
+        public $minValue;
+        /**
+         * Must be specified if type is `INTEGER`. Maximum value of the parameter.
+         *
+         * @param string $maxValue
+         */
+        public function setMaxValue($maxValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxValue()
+        {
+        }
+        /**
+         * Must be specified if type is `INTEGER`. Minimum value of the parameter.
+         *
+         * @param string $minValue
+         */
+        public function setMinValue($minValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMinValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1StudyConfigParameterSpecIntegerValueSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxValue()
-    {
-    }
-    /**
-     * Must be specified if type is `INTEGER`. Minimum value of the parameter.
-     *
-     * @param string $minValue
-     */
-    public function setMinValue($minValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMinValue()
+    class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1StudyConfigParameterSpecIntegerValueSpec extends \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1StudyConfigParameterSpecIntegerValueSpec
     {
     }
 }

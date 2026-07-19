@@ -21,53 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun\Resource;
-
-/**
- * The "configurations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $runService = new Google\Service\CloudRun(...);
- *   $configurations = $runService->configurations;
- *  </code>
- */
-class NamespacesConfigurations extends \Google\Service\Resource
-{
+namespace Google\Service\CloudRun\Resource {
+    use Google\Service\CloudRun\Configuration;
+    use Google\Service\CloudRun\ListConfigurationsResponse;
     /**
-     * Get information about a configuration. (configurations.get)
-     *
-     * @param string $name The name of the configuration to retrieve. For Cloud Run
-     * (fully managed), replace {namespace_id} with the project ID or number.
-     * @param array $optParams Optional parameters.
-     * @return Configuration
+     * The "configurations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $runService = new Google\Service\CloudRun(...);
+     *   $configurations = $runService->configurations;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class NamespacesConfigurations extends \Google\Service\Resource
     {
+        /**
+         * Get information about a configuration. (configurations.get)
+         *
+         * @param string $name The name of the configuration to retrieve. For Cloud Run
+         * (fully managed), replace {namespace_id} with the project ID or number.
+         * @param array $optParams Optional parameters.
+         * @return Configuration
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * List configurations. (configurations.listNamespacesConfigurations)
+         *
+         * @param string $parent The namespace from which the configurations should be
+         * listed. For Cloud Run (fully managed), replace {namespace_id} with the
+         * project ID or number.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string continue Optional. Encoded string to continue paging.
+         * @opt_param string fieldSelector Allows to filter resources based on a
+         * specific value for a field name. Send this in a query string format. i.e.
+         * 'metadata.name%3Dlorem'. Not currently used by Cloud Run.
+         * @opt_param bool includeUninitialized Not currently used by Cloud Run.
+         * @opt_param string labelSelector Allows to filter resources based on a label.
+         * Supported operations are =, !=, exists, in, and notIn.
+         * @opt_param int limit Optional. The maximum number of records that should be
+         * returned.
+         * @opt_param string resourceVersion The baseline resource version from which
+         * the list or watch operation should start. Not currently used by Cloud Run.
+         * @opt_param bool watch Flag that indicates that the client expects to watch
+         * this resource as well. Not currently used by Cloud Run.
+         * @return ListConfigurationsResponse
+         */
+        public function listNamespacesConfigurations($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * List configurations. (configurations.listNamespacesConfigurations)
-     *
-     * @param string $parent The namespace from which the configurations should be
-     * listed. For Cloud Run (fully managed), replace {namespace_id} with the
-     * project ID or number.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string continue Optional. Encoded string to continue paging.
-     * @opt_param string fieldSelector Allows to filter resources based on a
-     * specific value for a field name. Send this in a query string format. i.e.
-     * 'metadata.name%3Dlorem'. Not currently used by Cloud Run.
-     * @opt_param bool includeUninitialized Not currently used by Cloud Run.
-     * @opt_param string labelSelector Allows to filter resources based on a label.
-     * Supported operations are =, !=, exists, in, and notIn.
-     * @opt_param int limit Optional. The maximum number of records that should be
-     * returned.
-     * @opt_param string resourceVersion The baseline resource version from which
-     * the list or watch operation should start. Not currently used by Cloud Run.
-     * @opt_param bool watch Flag that indicates that the client expects to watch
-     * this resource as well. Not currently used by Cloud Run.
-     * @return ListConfigurationsResponse
+     * Runtime class alias of \Google\Service\CloudRun\Resource\NamespacesConfigurations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listNamespacesConfigurations($parent, $optParams = [])
+    class Google_Service_CloudRun_Resource_NamespacesConfigurations extends \Google\Service\CloudRun\Resource\NamespacesConfigurations
     {
     }
 }

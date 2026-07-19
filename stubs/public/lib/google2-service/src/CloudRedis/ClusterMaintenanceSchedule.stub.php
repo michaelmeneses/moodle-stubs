@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class ClusterMaintenanceSchedule extends \Google\Model
-{
-    /**
-     * Output only. The end time of any upcoming scheduled maintenance for this
-     * instance.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * Output only. The start time of any upcoming scheduled maintenance for this
-     * instance.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Output only. The end time of any upcoming scheduled maintenance for this
-     * instance.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\CloudRedis {
+    class ClusterMaintenanceSchedule extends \Google\Model
     {
+        /**
+         * Output only. The end time of any upcoming scheduled maintenance for this
+         * instance.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * Output only. The start time of any upcoming scheduled maintenance for this
+         * instance.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Output only. The end time of any upcoming scheduled maintenance for this
+         * instance.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Output only. The start time of any upcoming scheduled maintenance for this
+         * instance.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRedis\ClusterMaintenanceSchedule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Output only. The start time of any upcoming scheduled maintenance for this
-     * instance.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_CloudRedis_ClusterMaintenanceSchedule extends \Google\Service\CloudRedis\ClusterMaintenanceSchedule
     {
     }
 }

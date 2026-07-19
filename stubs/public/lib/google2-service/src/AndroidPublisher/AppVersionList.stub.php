@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class AppVersionList extends \Google\Collection
-{
-    protected $collection_key = 'versionCodes';
-    /**
-     * List of app version codes.
-     *
-     * @var string[]
-     */
-    public $versionCodes;
-    /**
-     * List of app version codes.
-     *
-     * @param string[] $versionCodes
-     */
-    public function setVersionCodes($versionCodes)
+namespace Google\Service\AndroidPublisher {
+    class AppVersionList extends \Google\Collection
     {
+        protected $collection_key = 'versionCodes';
+        /**
+         * List of app version codes.
+         *
+         * @var string[]
+         */
+        public $versionCodes;
+        /**
+         * List of app version codes.
+         *
+         * @param string[] $versionCodes
+         */
+        public function setVersionCodes($versionCodes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getVersionCodes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\AppVersionList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVersionCodes()
+    class Google_Service_AndroidPublisher_AppVersionList extends \Google\Service\AndroidPublisher\AppVersionList
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ResourceSettings;
-
-class GoogleCloudResourcesettingsV1ValueEnumValue extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $value;
-    /**
-     * @param string
-     */
-    public function setValue($value)
+namespace Google\Service\ResourceSettings {
+    class GoogleCloudResourcesettingsV1ValueEnumValue extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $value;
+        /**
+         * @param string
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ResourceSettings\GoogleCloudResourcesettingsV1ValueEnumValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValue()
+    class Google_Service_ResourceSettings_GoogleCloudResourcesettingsV1ValueEnumValue extends \Google\Service\ResourceSettings\GoogleCloudResourcesettingsV1ValueEnumValue
     {
     }
 }

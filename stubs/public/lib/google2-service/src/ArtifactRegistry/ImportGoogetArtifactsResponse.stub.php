@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class ImportGoogetArtifactsResponse extends \Google\Collection
-{
-    protected $collection_key = 'googetArtifacts';
-    protected $errorsType = ImportGoogetArtifactsErrorInfo::class;
-    protected $errorsDataType = 'array';
-    protected $googetArtifactsType = GoogetArtifact::class;
-    protected $googetArtifactsDataType = 'array';
-    /**
-     * Detailed error info for packages that were not imported.
-     *
-     * @param ImportGoogetArtifactsErrorInfo[] $errors
-     */
-    public function setErrors($errors)
+namespace Google\Service\ArtifactRegistry {
+    class ImportGoogetArtifactsResponse extends \Google\Collection
     {
+        protected $collection_key = 'googetArtifacts';
+        protected $errorsType = ImportGoogetArtifactsErrorInfo::class;
+        protected $errorsDataType = 'array';
+        protected $googetArtifactsType = GoogetArtifact::class;
+        protected $googetArtifactsDataType = 'array';
+        /**
+         * Detailed error info for packages that were not imported.
+         *
+         * @param ImportGoogetArtifactsErrorInfo[] $errors
+         */
+        public function setErrors($errors)
+        {
+        }
+        /**
+         * @return ImportGoogetArtifactsErrorInfo[]
+         */
+        public function getErrors()
+        {
+        }
+        /**
+         * The GooGet artifacts updated.
+         *
+         * @param GoogetArtifact[] $googetArtifacts
+         */
+        public function setGoogetArtifacts($googetArtifacts)
+        {
+        }
+        /**
+         * @return GoogetArtifact[]
+         */
+        public function getGoogetArtifacts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ImportGoogetArtifactsErrorInfo[]
+     * Runtime class alias of \Google\Service\ArtifactRegistry\ImportGoogetArtifactsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrors()
-    {
-    }
-    /**
-     * The GooGet artifacts updated.
-     *
-     * @param GoogetArtifact[] $googetArtifacts
-     */
-    public function setGoogetArtifacts($googetArtifacts)
-    {
-    }
-    /**
-     * @return GoogetArtifact[]
-     */
-    public function getGoogetArtifacts()
+    class Google_Service_ArtifactRegistry_ImportGoogetArtifactsResponse extends \Google\Service\ArtifactRegistry\ImportGoogetArtifactsResponse
     {
     }
 }

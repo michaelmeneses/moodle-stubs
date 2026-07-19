@@ -21,101 +21,110 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Batch;
-
-class Accelerator extends \Google\Model
-{
-    /**
-     * The number of accelerators of this type.
-     *
-     * @var string
-     */
-    public $count;
-    /**
-     * Optional. The NVIDIA GPU driver version that should be installed for this
-     * type. You can define the specific driver version such as "470.103.01",
-     * following the driver version requirements in
-     * https://cloud.google.com/compute/docs/gpus/install-drivers-gpu#minimum-
-     * driver. Batch will install the specific accelerator driver if qualified.
-     *
-     * @var string
-     */
-    public $driverVersion;
-    /**
-     * Deprecated: please use instances[0].install_gpu_drivers instead.
-     *
-     * @deprecated
-     * @var bool
-     */
-    public $installGpuDrivers;
-    /**
-     * The accelerator type. For example, "nvidia-tesla-t4". See `gcloud compute
-     * accelerator-types list`.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The number of accelerators of this type.
-     *
-     * @param string $count
-     */
-    public function setCount($count)
+namespace Google\Service\Batch {
+    class Accelerator extends \Google\Model
     {
+        /**
+         * The number of accelerators of this type.
+         *
+         * @var string
+         */
+        public $count;
+        /**
+         * Optional. The NVIDIA GPU driver version that should be installed for this
+         * type. You can define the specific driver version such as "470.103.01",
+         * following the driver version requirements in
+         * https://cloud.google.com/compute/docs/gpus/install-drivers-gpu#minimum-
+         * driver. Batch will install the specific accelerator driver if qualified.
+         *
+         * @var string
+         */
+        public $driverVersion;
+        /**
+         * Deprecated: please use instances[0].install_gpu_drivers instead.
+         *
+         * @deprecated
+         * @var bool
+         */
+        public $installGpuDrivers;
+        /**
+         * The accelerator type. For example, "nvidia-tesla-t4". See `gcloud compute
+         * accelerator-types list`.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The number of accelerators of this type.
+         *
+         * @param string $count
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCount()
+        {
+        }
+        /**
+         * Optional. The NVIDIA GPU driver version that should be installed for this
+         * type. You can define the specific driver version such as "470.103.01",
+         * following the driver version requirements in
+         * https://cloud.google.com/compute/docs/gpus/install-drivers-gpu#minimum-
+         * driver. Batch will install the specific accelerator driver if qualified.
+         *
+         * @param string $driverVersion
+         */
+        public function setDriverVersion($driverVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDriverVersion()
+        {
+        }
+        /**
+         * Deprecated: please use instances[0].install_gpu_drivers instead.
+         *
+         * @deprecated
+         * @param bool $installGpuDrivers
+         */
+        public function setInstallGpuDrivers($installGpuDrivers)
+        {
+        }
+        /**
+         * @deprecated
+         * @return bool
+         */
+        public function getInstallGpuDrivers()
+        {
+        }
+        /**
+         * The accelerator type. For example, "nvidia-tesla-t4". See `gcloud compute
+         * accelerator-types list`.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Batch\Accelerator registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCount()
-    {
-    }
-    /**
-     * Optional. The NVIDIA GPU driver version that should be installed for this
-     * type. You can define the specific driver version such as "470.103.01",
-     * following the driver version requirements in
-     * https://cloud.google.com/compute/docs/gpus/install-drivers-gpu#minimum-
-     * driver. Batch will install the specific accelerator driver if qualified.
-     *
-     * @param string $driverVersion
-     */
-    public function setDriverVersion($driverVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDriverVersion()
-    {
-    }
-    /**
-     * Deprecated: please use instances[0].install_gpu_drivers instead.
-     *
-     * @deprecated
-     * @param bool $installGpuDrivers
-     */
-    public function setInstallGpuDrivers($installGpuDrivers)
-    {
-    }
-    /**
-     * @deprecated
-     * @return bool
-     */
-    public function getInstallGpuDrivers()
-    {
-    }
-    /**
-     * The accelerator type. For example, "nvidia-tesla-t4". See `gcloud compute
-     * accelerator-types list`.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Batch_Accelerator extends \Google\Service\Batch\Accelerator
     {
     }
 }

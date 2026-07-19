@@ -21,73 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Games\Resource;
-
-/**
- * The "applications" collection of methods.
- * Typical usage is:
- *  <code>
- *   $gamesService = new Google\Service\Games(...);
- *   $applications = $gamesService->applications;
- *  </code>
- */
-class Applications extends \Google\Service\Resource
-{
+namespace Google\Service\Games\Resource {
+    use Google\Service\Games\Application;
+    use Google\Service\Games\ApplicationVerifyResponse;
+    use Google\Service\Games\EndPoint;
     /**
-     * Retrieves the metadata of the application with the given ID. If the requested
-     * application is not available for the specified `platformType`, the returned
-     * response will not include any instance data. (applications.get)
-     *
-     * @param string $applicationId The application ID from the Google Play
-     * developer console.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string language The preferred language to use for strings returned
-     * by this method.
-     * @opt_param string platformType Restrict application details returned to the
-     * specific platform.
-     * @return Application
-     * @throws \Google\Service\Exception
+     * The "applications" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $gamesService = new Google\Service\Games(...);
+     *   $applications = $gamesService->applications;
+     *  </code>
      */
-    public function get($applicationId, $optParams = [])
+    class Applications extends \Google\Service\Resource
     {
+        /**
+         * Retrieves the metadata of the application with the given ID. If the requested
+         * application is not available for the specified `platformType`, the returned
+         * response will not include any instance data. (applications.get)
+         *
+         * @param string $applicationId The application ID from the Google Play
+         * developer console.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string language The preferred language to use for strings returned
+         * by this method.
+         * @opt_param string platformType Restrict application details returned to the
+         * specific platform.
+         * @return Application
+         * @throws \Google\Service\Exception
+         */
+        public function get($applicationId, $optParams = [])
+        {
+        }
+        /**
+         * Returns a URL for the requested end point type. (applications.getEndPoint)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string applicationId The application ID from the Google Play
+         * developer console.
+         * @opt_param string endPointType Type of endpoint being requested.
+         * @return EndPoint
+         * @throws \Google\Service\Exception
+         */
+        public function getEndPoint($optParams = [])
+        {
+        }
+        /**
+         * Indicate that the currently authenticated user is playing your application.
+         * (applications.played)
+         *
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function played($optParams = [])
+        {
+        }
+        /**
+         * Verifies the auth token provided with this request is for the application
+         * with the specified ID, and returns the ID of the player it was granted for.
+         * (applications.verify)
+         *
+         * @param string $applicationId The application ID from the Google Play
+         * developer console.
+         * @param array $optParams Optional parameters.
+         * @return ApplicationVerifyResponse
+         * @throws \Google\Service\Exception
+         */
+        public function verify($applicationId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Returns a URL for the requested end point type. (applications.getEndPoint)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string applicationId The application ID from the Google Play
-     * developer console.
-     * @opt_param string endPointType Type of endpoint being requested.
-     * @return EndPoint
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Games\Resource\Applications registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndPoint($optParams = [])
-    {
-    }
-    /**
-     * Indicate that the currently authenticated user is playing your application.
-     * (applications.played)
-     *
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
-     */
-    public function played($optParams = [])
-    {
-    }
-    /**
-     * Verifies the auth token provided with this request is for the application
-     * with the specified ID, and returns the ID of the player it was granted for.
-     * (applications.verify)
-     *
-     * @param string $applicationId The application ID from the Google Play
-     * developer console.
-     * @param array $optParams Optional parameters.
-     * @return ApplicationVerifyResponse
-     * @throws \Google\Service\Exception
-     */
-    public function verify($applicationId, $optParams = [])
+    class Google_Service_Games_Resource_Applications extends \Google\Service\Games\Resource\Applications
     {
     }
 }

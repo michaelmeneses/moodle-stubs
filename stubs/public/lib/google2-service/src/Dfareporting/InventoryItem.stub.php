@@ -21,323 +21,332 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class InventoryItem extends \Google\Collection
-{
-    protected $collection_key = 'adSlots';
-    /**
-     * @var string
-     */
-    public $accountId;
-    protected $adSlotsType = AdSlot::class;
-    protected $adSlotsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $advertiserId;
-    /**
-     * @var string
-     */
-    public $contentCategoryId;
-    /**
-     * @var string
-     */
-    public $estimatedClickThroughRate;
-    /**
-     * @var string
-     */
-    public $estimatedConversionRate;
-    /**
-     * @var string
-     */
-    public $id;
-    /**
-     * @var bool
-     */
-    public $inPlan;
-    /**
-     * @var string
-     */
-    public $kind;
-    protected $lastModifiedInfoType = LastModifiedInfo::class;
-    protected $lastModifiedInfoDataType = '';
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $negotiationChannelId;
-    /**
-     * @var string
-     */
-    public $orderId;
-    /**
-     * @var string
-     */
-    public $placementStrategyId;
-    protected $pricingType = Pricing::class;
-    protected $pricingDataType = '';
-    /**
-     * @var string
-     */
-    public $projectId;
-    /**
-     * @var string
-     */
-    public $rfpId;
-    /**
-     * @var string
-     */
-    public $siteId;
-    /**
-     * @var string
-     */
-    public $subaccountId;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param string
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\Dfareporting {
+    class InventoryItem extends \Google\Collection
     {
+        protected $collection_key = 'adSlots';
+        /**
+         * @var string
+         */
+        public $accountId;
+        protected $adSlotsType = AdSlot::class;
+        protected $adSlotsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $advertiserId;
+        /**
+         * @var string
+         */
+        public $contentCategoryId;
+        /**
+         * @var string
+         */
+        public $estimatedClickThroughRate;
+        /**
+         * @var string
+         */
+        public $estimatedConversionRate;
+        /**
+         * @var string
+         */
+        public $id;
+        /**
+         * @var bool
+         */
+        public $inPlan;
+        /**
+         * @var string
+         */
+        public $kind;
+        protected $lastModifiedInfoType = LastModifiedInfo::class;
+        protected $lastModifiedInfoDataType = '';
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $negotiationChannelId;
+        /**
+         * @var string
+         */
+        public $orderId;
+        /**
+         * @var string
+         */
+        public $placementStrategyId;
+        protected $pricingType = Pricing::class;
+        protected $pricingDataType = '';
+        /**
+         * @var string
+         */
+        public $projectId;
+        /**
+         * @var string
+         */
+        public $rfpId;
+        /**
+         * @var string
+         */
+        public $siteId;
+        /**
+         * @var string
+         */
+        public $subaccountId;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param string
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * @param AdSlot[]
+         */
+        public function setAdSlots($adSlots)
+        {
+        }
+        /**
+         * @return AdSlot[]
+         */
+        public function getAdSlots()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setAdvertiserId($advertiserId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdvertiserId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setContentCategoryId($contentCategoryId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContentCategoryId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEstimatedClickThroughRate($estimatedClickThroughRate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEstimatedClickThroughRate()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEstimatedConversionRate($estimatedConversionRate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEstimatedConversionRate()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setInPlan($inPlan)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getInPlan()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param LastModifiedInfo
+         */
+        public function setLastModifiedInfo(LastModifiedInfo $lastModifiedInfo)
+        {
+        }
+        /**
+         * @return LastModifiedInfo
+         */
+        public function getLastModifiedInfo()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNegotiationChannelId($negotiationChannelId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNegotiationChannelId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOrderId($orderId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrderId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPlacementStrategyId($placementStrategyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlacementStrategyId()
+        {
+        }
+        /**
+         * @param Pricing
+         */
+        public function setPricing(Pricing $pricing)
+        {
+        }
+        /**
+         * @return Pricing
+         */
+        public function getPricing()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRfpId($rfpId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRfpId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSiteId($siteId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSiteId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSubaccountId($subaccountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubaccountId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\InventoryItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * @param AdSlot[]
-     */
-    public function setAdSlots($adSlots)
-    {
-    }
-    /**
-     * @return AdSlot[]
-     */
-    public function getAdSlots()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setAdvertiserId($advertiserId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAdvertiserId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setContentCategoryId($contentCategoryId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContentCategoryId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEstimatedClickThroughRate($estimatedClickThroughRate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEstimatedClickThroughRate()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEstimatedConversionRate($estimatedConversionRate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEstimatedConversionRate()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setInPlan($inPlan)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getInPlan()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * @param LastModifiedInfo
-     */
-    public function setLastModifiedInfo(LastModifiedInfo $lastModifiedInfo)
-    {
-    }
-    /**
-     * @return LastModifiedInfo
-     */
-    public function getLastModifiedInfo()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNegotiationChannelId($negotiationChannelId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNegotiationChannelId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOrderId($orderId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrderId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPlacementStrategyId($placementStrategyId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPlacementStrategyId()
-    {
-    }
-    /**
-     * @param Pricing
-     */
-    public function setPricing(Pricing $pricing)
-    {
-    }
-    /**
-     * @return Pricing
-     */
-    public function getPricing()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRfpId($rfpId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRfpId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSiteId($siteId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSiteId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSubaccountId($subaccountId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubaccountId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Dfareporting_InventoryItem extends \Google\Service\Dfareporting\InventoryItem
     {
     }
 }

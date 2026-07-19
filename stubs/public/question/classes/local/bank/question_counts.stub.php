@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_question\local\bank;
 
+use core\context\course;
+use core\context\module;
+use core\di;
+use core\exception\required_capability_exception;
 /**
  * Methods for counting the questions in different contexts
  *

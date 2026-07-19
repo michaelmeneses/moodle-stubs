@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1ListReportsResponse extends \Google\Collection
-{
-    protected $collection_key = 'reports';
-    /**
-     * Pass this token to FetchReportResultsRequest.page_token to retrieve the
-     * next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $reportsType = GoogleCloudChannelV1Report::class;
-    protected $reportsDataType = 'array';
-    /**
-     * Pass this token to FetchReportResultsRequest.page_token to retrieve the
-     * next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1ListReportsResponse extends \Google\Collection
     {
+        protected $collection_key = 'reports';
+        /**
+         * Pass this token to FetchReportResultsRequest.page_token to retrieve the
+         * next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $reportsType = GoogleCloudChannelV1Report::class;
+        protected $reportsDataType = 'array';
+        /**
+         * Pass this token to FetchReportResultsRequest.page_token to retrieve the
+         * next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The reports available to the partner.
+         *
+         * @param GoogleCloudChannelV1Report[] $reports
+         */
+        public function setReports($reports)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1Report[]
+         */
+        public function getReports()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1ListReportsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The reports available to the partner.
-     *
-     * @param GoogleCloudChannelV1Report[] $reports
-     */
-    public function setReports($reports)
-    {
-    }
-    /**
-     * @return GoogleCloudChannelV1Report[]
-     */
-    public function getReports()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1ListReportsResponse extends \Google\Service\Cloudchannel\GoogleCloudChannelV1ListReportsResponse
     {
     }
 }

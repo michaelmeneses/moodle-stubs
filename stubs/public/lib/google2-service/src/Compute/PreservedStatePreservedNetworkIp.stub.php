@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class PreservedStatePreservedNetworkIp extends \Google\Model
-{
-    public const AUTO_DELETE_NEVER = 'NEVER';
-    public const AUTO_DELETE_ON_PERMANENT_INSTANCE_DELETION = 'ON_PERMANENT_INSTANCE_DELETION';
-    /**
-     * These stateful IPs will never be released during autohealing, update or VM
-     * instance recreate operations. This flag is used to configure if the IP
-     * reservation should be deleted after it is no longer used by the group, e.g.
-     * when the given instance or the whole group is deleted.
-     *
-     * @var string
-     */
-    public $autoDelete;
-    protected $ipAddressType = PreservedStatePreservedNetworkIpIpAddress::class;
-    protected $ipAddressDataType = '';
-    /**
-     * These stateful IPs will never be released during autohealing, update or VM
-     * instance recreate operations. This flag is used to configure if the IP
-     * reservation should be deleted after it is no longer used by the group, e.g.
-     * when the given instance or the whole group is deleted.
-     *
-     * Accepted values: NEVER, ON_PERMANENT_INSTANCE_DELETION
-     *
-     * @param self::AUTO_DELETE_* $autoDelete
-     */
-    public function setAutoDelete($autoDelete)
+namespace Google\Service\Compute {
+    class PreservedStatePreservedNetworkIp extends \Google\Model
     {
+        public const AUTO_DELETE_NEVER = 'NEVER';
+        public const AUTO_DELETE_ON_PERMANENT_INSTANCE_DELETION = 'ON_PERMANENT_INSTANCE_DELETION';
+        /**
+         * These stateful IPs will never be released during autohealing, update or VM
+         * instance recreate operations. This flag is used to configure if the IP
+         * reservation should be deleted after it is no longer used by the group, e.g.
+         * when the given instance or the whole group is deleted.
+         *
+         * @var string
+         */
+        public $autoDelete;
+        protected $ipAddressType = PreservedStatePreservedNetworkIpIpAddress::class;
+        protected $ipAddressDataType = '';
+        /**
+         * These stateful IPs will never be released during autohealing, update or VM
+         * instance recreate operations. This flag is used to configure if the IP
+         * reservation should be deleted after it is no longer used by the group, e.g.
+         * when the given instance or the whole group is deleted.
+         *
+         * Accepted values: NEVER, ON_PERMANENT_INSTANCE_DELETION
+         *
+         * @param self::AUTO_DELETE_* $autoDelete
+         */
+        public function setAutoDelete($autoDelete)
+        {
+        }
+        /**
+         * @return self::AUTO_DELETE_*
+         */
+        public function getAutoDelete()
+        {
+        }
+        /**
+         * Ip address representation
+         *
+         * @param PreservedStatePreservedNetworkIpIpAddress $ipAddress
+         */
+        public function setIpAddress(PreservedStatePreservedNetworkIpIpAddress $ipAddress)
+        {
+        }
+        /**
+         * @return PreservedStatePreservedNetworkIpIpAddress
+         */
+        public function getIpAddress()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::AUTO_DELETE_*
+     * Runtime class alias of \Google\Service\Compute\PreservedStatePreservedNetworkIp registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutoDelete()
-    {
-    }
-    /**
-     * Ip address representation
-     *
-     * @param PreservedStatePreservedNetworkIpIpAddress $ipAddress
-     */
-    public function setIpAddress(PreservedStatePreservedNetworkIpIpAddress $ipAddress)
-    {
-    }
-    /**
-     * @return PreservedStatePreservedNetworkIpIpAddress
-     */
-    public function getIpAddress()
+    class Google_Service_Compute_PreservedStatePreservedNetworkIp extends \Google\Service\Compute\PreservedStatePreservedNetworkIp
     {
     }
 }

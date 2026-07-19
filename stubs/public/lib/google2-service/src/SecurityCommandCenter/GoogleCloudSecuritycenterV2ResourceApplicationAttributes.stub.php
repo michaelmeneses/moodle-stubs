@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2ResourceApplicationAttributes extends \Google\Collection
-{
-    protected $collection_key = 'operatorOwners';
-    protected $businessOwnersType = GoogleCloudSecuritycenterV2ResourceApplicationAttributesContactInfo::class;
-    protected $businessOwnersDataType = 'array';
-    protected $criticalityType = GoogleCloudSecuritycenterV2ResourceApplicationAttributesCriticality::class;
-    protected $criticalityDataType = '';
-    protected $developerOwnersType = GoogleCloudSecuritycenterV2ResourceApplicationAttributesContactInfo::class;
-    protected $developerOwnersDataType = 'array';
-    protected $environmentType = GoogleCloudSecuritycenterV2ResourceApplicationAttributesEnvironment::class;
-    protected $environmentDataType = '';
-    protected $operatorOwnersType = GoogleCloudSecuritycenterV2ResourceApplicationAttributesContactInfo::class;
-    protected $operatorOwnersDataType = 'array';
-    /**
-     * Business team that ensures user needs are met and value is delivered
-     *
-     * @param GoogleCloudSecuritycenterV2ResourceApplicationAttributesContactInfo[] $businessOwners
-     */
-    public function setBusinessOwners($businessOwners)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2ResourceApplicationAttributes extends \Google\Collection
     {
+        protected $collection_key = 'operatorOwners';
+        protected $businessOwnersType = GoogleCloudSecuritycenterV2ResourceApplicationAttributesContactInfo::class;
+        protected $businessOwnersDataType = 'array';
+        protected $criticalityType = GoogleCloudSecuritycenterV2ResourceApplicationAttributesCriticality::class;
+        protected $criticalityDataType = '';
+        protected $developerOwnersType = GoogleCloudSecuritycenterV2ResourceApplicationAttributesContactInfo::class;
+        protected $developerOwnersDataType = 'array';
+        protected $environmentType = GoogleCloudSecuritycenterV2ResourceApplicationAttributesEnvironment::class;
+        protected $environmentDataType = '';
+        protected $operatorOwnersType = GoogleCloudSecuritycenterV2ResourceApplicationAttributesContactInfo::class;
+        protected $operatorOwnersDataType = 'array';
+        /**
+         * Business team that ensures user needs are met and value is delivered
+         *
+         * @param GoogleCloudSecuritycenterV2ResourceApplicationAttributesContactInfo[] $businessOwners
+         */
+        public function setBusinessOwners($businessOwners)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2ResourceApplicationAttributesContactInfo[]
+         */
+        public function getBusinessOwners()
+        {
+        }
+        /**
+         * User-defined criticality information.
+         *
+         * @param GoogleCloudSecuritycenterV2ResourceApplicationAttributesCriticality $criticality
+         */
+        public function setCriticality(GoogleCloudSecuritycenterV2ResourceApplicationAttributesCriticality $criticality)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2ResourceApplicationAttributesCriticality
+         */
+        public function getCriticality()
+        {
+        }
+        /**
+         * Developer team that owns development and coding.
+         *
+         * @param GoogleCloudSecuritycenterV2ResourceApplicationAttributesContactInfo[] $developerOwners
+         */
+        public function setDeveloperOwners($developerOwners)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2ResourceApplicationAttributesContactInfo[]
+         */
+        public function getDeveloperOwners()
+        {
+        }
+        /**
+         * User-defined environment information.
+         *
+         * @param GoogleCloudSecuritycenterV2ResourceApplicationAttributesEnvironment $environment
+         */
+        public function setEnvironment(GoogleCloudSecuritycenterV2ResourceApplicationAttributesEnvironment $environment)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2ResourceApplicationAttributesEnvironment
+         */
+        public function getEnvironment()
+        {
+        }
+        /**
+         * Operator team that ensures runtime and operations.
+         *
+         * @param GoogleCloudSecuritycenterV2ResourceApplicationAttributesContactInfo[] $operatorOwners
+         */
+        public function setOperatorOwners($operatorOwners)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2ResourceApplicationAttributesContactInfo[]
+         */
+        public function getOperatorOwners()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudSecuritycenterV2ResourceApplicationAttributesContactInfo[]
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2ResourceApplicationAttributes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBusinessOwners()
-    {
-    }
-    /**
-     * User-defined criticality information.
-     *
-     * @param GoogleCloudSecuritycenterV2ResourceApplicationAttributesCriticality $criticality
-     */
-    public function setCriticality(GoogleCloudSecuritycenterV2ResourceApplicationAttributesCriticality $criticality)
-    {
-    }
-    /**
-     * @return GoogleCloudSecuritycenterV2ResourceApplicationAttributesCriticality
-     */
-    public function getCriticality()
-    {
-    }
-    /**
-     * Developer team that owns development and coding.
-     *
-     * @param GoogleCloudSecuritycenterV2ResourceApplicationAttributesContactInfo[] $developerOwners
-     */
-    public function setDeveloperOwners($developerOwners)
-    {
-    }
-    /**
-     * @return GoogleCloudSecuritycenterV2ResourceApplicationAttributesContactInfo[]
-     */
-    public function getDeveloperOwners()
-    {
-    }
-    /**
-     * User-defined environment information.
-     *
-     * @param GoogleCloudSecuritycenterV2ResourceApplicationAttributesEnvironment $environment
-     */
-    public function setEnvironment(GoogleCloudSecuritycenterV2ResourceApplicationAttributesEnvironment $environment)
-    {
-    }
-    /**
-     * @return GoogleCloudSecuritycenterV2ResourceApplicationAttributesEnvironment
-     */
-    public function getEnvironment()
-    {
-    }
-    /**
-     * Operator team that ensures runtime and operations.
-     *
-     * @param GoogleCloudSecuritycenterV2ResourceApplicationAttributesContactInfo[] $operatorOwners
-     */
-    public function setOperatorOwners($operatorOwners)
-    {
-    }
-    /**
-     * @return GoogleCloudSecuritycenterV2ResourceApplicationAttributesContactInfo[]
-     */
-    public function getOperatorOwners()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2ResourceApplicationAttributes extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2ResourceApplicationAttributes
     {
     }
 }

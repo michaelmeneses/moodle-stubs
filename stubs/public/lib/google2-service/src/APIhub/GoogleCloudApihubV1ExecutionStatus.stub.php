@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1ExecutionStatus extends \Google\Model
-{
-    /**
-     * Default unspecified execution state.
-     */
-    public const CURRENT_EXECUTION_STATE_CURRENT_EXECUTION_STATE_UNSPECIFIED = 'CURRENT_EXECUTION_STATE_UNSPECIFIED';
-    /**
-     * The plugin instance is executing.
-     */
-    public const CURRENT_EXECUTION_STATE_RUNNING = 'RUNNING';
-    /**
-     * The plugin instance is not running an execution.
-     */
-    public const CURRENT_EXECUTION_STATE_NOT_RUNNING = 'NOT_RUNNING';
-    /**
-     * Output only. The current state of the execution.
-     *
-     * @var string
-     */
-    public $currentExecutionState;
-    protected $lastExecutionType = GoogleCloudApihubV1LastExecution::class;
-    protected $lastExecutionDataType = '';
-    /**
-     * Output only. The current state of the execution.
-     *
-     * Accepted values: CURRENT_EXECUTION_STATE_UNSPECIFIED, RUNNING, NOT_RUNNING
-     *
-     * @param self::CURRENT_EXECUTION_STATE_* $currentExecutionState
-     */
-    public function setCurrentExecutionState($currentExecutionState)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1ExecutionStatus extends \Google\Model
     {
+        /**
+         * Default unspecified execution state.
+         */
+        public const CURRENT_EXECUTION_STATE_CURRENT_EXECUTION_STATE_UNSPECIFIED = 'CURRENT_EXECUTION_STATE_UNSPECIFIED';
+        /**
+         * The plugin instance is executing.
+         */
+        public const CURRENT_EXECUTION_STATE_RUNNING = 'RUNNING';
+        /**
+         * The plugin instance is not running an execution.
+         */
+        public const CURRENT_EXECUTION_STATE_NOT_RUNNING = 'NOT_RUNNING';
+        /**
+         * Output only. The current state of the execution.
+         *
+         * @var string
+         */
+        public $currentExecutionState;
+        protected $lastExecutionType = GoogleCloudApihubV1LastExecution::class;
+        protected $lastExecutionDataType = '';
+        /**
+         * Output only. The current state of the execution.
+         *
+         * Accepted values: CURRENT_EXECUTION_STATE_UNSPECIFIED, RUNNING, NOT_RUNNING
+         *
+         * @param self::CURRENT_EXECUTION_STATE_* $currentExecutionState
+         */
+        public function setCurrentExecutionState($currentExecutionState)
+        {
+        }
+        /**
+         * @return self::CURRENT_EXECUTION_STATE_*
+         */
+        public function getCurrentExecutionState()
+        {
+        }
+        /**
+         * Output only. The last execution of the plugin instance.
+         *
+         * @param GoogleCloudApihubV1LastExecution $lastExecution
+         */
+        public function setLastExecution(GoogleCloudApihubV1LastExecution $lastExecution)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1LastExecution
+         */
+        public function getLastExecution()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CURRENT_EXECUTION_STATE_*
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1ExecutionStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCurrentExecutionState()
-    {
-    }
-    /**
-     * Output only. The last execution of the plugin instance.
-     *
-     * @param GoogleCloudApihubV1LastExecution $lastExecution
-     */
-    public function setLastExecution(GoogleCloudApihubV1LastExecution $lastExecution)
-    {
-    }
-    /**
-     * @return GoogleCloudApihubV1LastExecution
-     */
-    public function getLastExecution()
+    class Google_Service_APIhub_GoogleCloudApihubV1ExecutionStatus extends \Google\Service\APIhub\GoogleCloudApihubV1ExecutionStatus
     {
     }
 }

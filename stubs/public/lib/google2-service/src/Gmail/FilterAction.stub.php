@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Gmail;
-
-class FilterAction extends \Google\Collection
-{
-    protected $collection_key = 'removeLabelIds';
-    /**
-     * List of labels to add to the message.
-     *
-     * @var string[]
-     */
-    public $addLabelIds;
-    /**
-     * Email address that the message should be forwarded to.
-     *
-     * @var string
-     */
-    public $forward;
-    /**
-     * List of labels to remove from the message.
-     *
-     * @var string[]
-     */
-    public $removeLabelIds;
-    /**
-     * List of labels to add to the message.
-     *
-     * @param string[] $addLabelIds
-     */
-    public function setAddLabelIds($addLabelIds)
+namespace Google\Service\Gmail {
+    class FilterAction extends \Google\Collection
     {
+        protected $collection_key = 'removeLabelIds';
+        /**
+         * List of labels to add to the message.
+         *
+         * @var string[]
+         */
+        public $addLabelIds;
+        /**
+         * Email address that the message should be forwarded to.
+         *
+         * @var string
+         */
+        public $forward;
+        /**
+         * List of labels to remove from the message.
+         *
+         * @var string[]
+         */
+        public $removeLabelIds;
+        /**
+         * List of labels to add to the message.
+         *
+         * @param string[] $addLabelIds
+         */
+        public function setAddLabelIds($addLabelIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAddLabelIds()
+        {
+        }
+        /**
+         * Email address that the message should be forwarded to.
+         *
+         * @param string $forward
+         */
+        public function setForward($forward)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getForward()
+        {
+        }
+        /**
+         * List of labels to remove from the message.
+         *
+         * @param string[] $removeLabelIds
+         */
+        public function setRemoveLabelIds($removeLabelIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRemoveLabelIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Gmail\FilterAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddLabelIds()
-    {
-    }
-    /**
-     * Email address that the message should be forwarded to.
-     *
-     * @param string $forward
-     */
-    public function setForward($forward)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getForward()
-    {
-    }
-    /**
-     * List of labels to remove from the message.
-     *
-     * @param string[] $removeLabelIds
-     */
-    public function setRemoveLabelIds($removeLabelIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRemoveLabelIds()
+    class Google_Service_Gmail_FilterAction extends \Google\Service\Gmail\FilterAction
     {
     }
 }

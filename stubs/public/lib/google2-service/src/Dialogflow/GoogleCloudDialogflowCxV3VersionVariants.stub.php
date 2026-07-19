@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3VersionVariants extends \Google\Collection
-{
-    protected $collection_key = 'variants';
-    protected $variantsType = GoogleCloudDialogflowCxV3VersionVariantsVariant::class;
-    protected $variantsDataType = 'array';
-    /**
-     * A list of flow version variants.
-     *
-     * @param GoogleCloudDialogflowCxV3VersionVariantsVariant[] $variants
-     */
-    public function setVariants($variants)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3VersionVariants extends \Google\Collection
     {
+        protected $collection_key = 'variants';
+        protected $variantsType = GoogleCloudDialogflowCxV3VersionVariantsVariant::class;
+        protected $variantsDataType = 'array';
+        /**
+         * A list of flow version variants.
+         *
+         * @param GoogleCloudDialogflowCxV3VersionVariantsVariant[] $variants
+         */
+        public function setVariants($variants)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3VersionVariantsVariant[]
+         */
+        public function getVariants()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3VersionVariantsVariant[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3VersionVariants registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVariants()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3VersionVariants extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3VersionVariants
     {
     }
 }

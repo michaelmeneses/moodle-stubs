@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1EnvironmentFilter extends \Google\Collection
-{
-    protected $collection_key = 'environments';
-    /**
-     * Optional. Indicates if this filter should match all environments or only a
-     * subset of environments. If set to true, all environments are matched.
-     *
-     * @var bool
-     */
-    public $allEnvironments;
-    /**
-     * Optional. If provided, only environments in this list are matched. This
-     * field is ignored if `all_environments` is true.
-     *
-     * @var string[]
-     */
-    public $environments;
-    /**
-     * Optional. Indicates if this filter should match all environments or only a
-     * subset of environments. If set to true, all environments are matched.
-     *
-     * @param bool $allEnvironments
-     */
-    public function setAllEnvironments($allEnvironments)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1EnvironmentFilter extends \Google\Collection
     {
+        protected $collection_key = 'environments';
+        /**
+         * Optional. Indicates if this filter should match all environments or only a
+         * subset of environments. If set to true, all environments are matched.
+         *
+         * @var bool
+         */
+        public $allEnvironments;
+        /**
+         * Optional. If provided, only environments in this list are matched. This
+         * field is ignored if `all_environments` is true.
+         *
+         * @var string[]
+         */
+        public $environments;
+        /**
+         * Optional. Indicates if this filter should match all environments or only a
+         * subset of environments. If set to true, all environments are matched.
+         *
+         * @param bool $allEnvironments
+         */
+        public function setAllEnvironments($allEnvironments)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllEnvironments()
+        {
+        }
+        /**
+         * Optional. If provided, only environments in this list are matched. This
+         * field is ignored if `all_environments` is true.
+         *
+         * @param string[] $environments
+         */
+        public function setEnvironments($environments)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEnvironments()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1EnvironmentFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllEnvironments()
-    {
-    }
-    /**
-     * Optional. If provided, only environments in this list are matched. This
-     * field is ignored if `all_environments` is true.
-     *
-     * @param string[] $environments
-     */
-    public function setEnvironments($environments)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getEnvironments()
+    class Google_Service_APIhub_GoogleCloudApihubV1EnvironmentFilter extends \Google\Service\APIhub\GoogleCloudApihubV1EnvironmentFilter
     {
     }
 }

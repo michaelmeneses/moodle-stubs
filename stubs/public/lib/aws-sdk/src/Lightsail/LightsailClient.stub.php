@@ -8,6 +8,7 @@
  */
 namespace Aws\Lightsail;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Lightsail** service.
  * @method \Aws\Result allocateStaticIp(array $args = [])

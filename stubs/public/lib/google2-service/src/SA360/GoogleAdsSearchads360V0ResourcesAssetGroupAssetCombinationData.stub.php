@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0ResourcesAssetGroupAssetCombinationData extends \Google\Collection
-{
-    protected $collection_key = 'assetCombinationServedAssets';
-    protected $assetCombinationServedAssetsType = GoogleAdsSearchads360V0CommonAssetUsage::class;
-    protected $assetCombinationServedAssetsDataType = 'array';
-    /**
-     * Output only. Served assets.
-     *
-     * @param GoogleAdsSearchads360V0CommonAssetUsage[] $assetCombinationServedAssets
-     */
-    public function setAssetCombinationServedAssets($assetCombinationServedAssets)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0ResourcesAssetGroupAssetCombinationData extends \Google\Collection
     {
+        protected $collection_key = 'assetCombinationServedAssets';
+        protected $assetCombinationServedAssetsType = GoogleAdsSearchads360V0CommonAssetUsage::class;
+        protected $assetCombinationServedAssetsDataType = 'array';
+        /**
+         * Output only. Served assets.
+         *
+         * @param GoogleAdsSearchads360V0CommonAssetUsage[] $assetCombinationServedAssets
+         */
+        public function setAssetCombinationServedAssets($assetCombinationServedAssets)
+        {
+        }
+        /**
+         * @return GoogleAdsSearchads360V0CommonAssetUsage[]
+         */
+        public function getAssetCombinationServedAssets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAdsSearchads360V0CommonAssetUsage[]
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesAssetGroupAssetCombinationData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssetCombinationServedAssets()
+    class Google_Service_SA360_GoogleAdsSearchads360V0ResourcesAssetGroupAssetCombinationData extends \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesAssetGroupAssetCombinationData
     {
     }
 }

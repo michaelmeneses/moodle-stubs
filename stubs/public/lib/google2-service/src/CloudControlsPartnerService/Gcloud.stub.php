@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudControlsPartnerService;
-
-class Gcloud extends \Google\Collection
-{
-    protected $collection_key = 'steps';
-    /**
-     * Additional urls for more information about steps
-     *
-     * @var string[]
-     */
-    public $additionalLinks;
-    /**
-     * Gcloud command to resolve violation
-     *
-     * @var string[]
-     */
-    public $gcloudCommands;
-    /**
-     * Steps to resolve violation via gcloud cli
-     *
-     * @var string[]
-     */
-    public $steps;
-    /**
-     * Additional urls for more information about steps
-     *
-     * @param string[] $additionalLinks
-     */
-    public function setAdditionalLinks($additionalLinks)
+namespace Google\Service\CloudControlsPartnerService {
+    class Gcloud extends \Google\Collection
     {
+        protected $collection_key = 'steps';
+        /**
+         * Additional urls for more information about steps
+         *
+         * @var string[]
+         */
+        public $additionalLinks;
+        /**
+         * Gcloud command to resolve violation
+         *
+         * @var string[]
+         */
+        public $gcloudCommands;
+        /**
+         * Steps to resolve violation via gcloud cli
+         *
+         * @var string[]
+         */
+        public $steps;
+        /**
+         * Additional urls for more information about steps
+         *
+         * @param string[] $additionalLinks
+         */
+        public function setAdditionalLinks($additionalLinks)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAdditionalLinks()
+        {
+        }
+        /**
+         * Gcloud command to resolve violation
+         *
+         * @param string[] $gcloudCommands
+         */
+        public function setGcloudCommands($gcloudCommands)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getGcloudCommands()
+        {
+        }
+        /**
+         * Steps to resolve violation via gcloud cli
+         *
+         * @param string[] $steps
+         */
+        public function setSteps($steps)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSteps()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudControlsPartnerService\Gcloud registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdditionalLinks()
-    {
-    }
-    /**
-     * Gcloud command to resolve violation
-     *
-     * @param string[] $gcloudCommands
-     */
-    public function setGcloudCommands($gcloudCommands)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getGcloudCommands()
-    {
-    }
-    /**
-     * Steps to resolve violation via gcloud cli
-     *
-     * @param string[] $steps
-     */
-    public function setSteps($steps)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSteps()
+    class Google_Service_CloudControlsPartnerService_Gcloud extends \Google\Service\CloudControlsPartnerService\Gcloud
     {
     }
 }

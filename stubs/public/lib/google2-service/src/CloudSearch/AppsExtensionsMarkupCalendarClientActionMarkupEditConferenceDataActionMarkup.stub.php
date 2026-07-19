@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsExtensionsMarkupCalendarClientActionMarkupEditConferenceDataActionMarkup extends \Google\Model
-{
-    protected $conferenceDataType = AppsExtensionsMarkupCalendarClientActionMarkupConferenceDataMarkup::class;
-    protected $conferenceDataDataType = '';
-    /**
-     * @param AppsExtensionsMarkupCalendarClientActionMarkupConferenceDataMarkup
-     */
-    public function setConferenceData(AppsExtensionsMarkupCalendarClientActionMarkupConferenceDataMarkup $conferenceData)
+namespace Google\Service\CloudSearch {
+    class AppsExtensionsMarkupCalendarClientActionMarkupEditConferenceDataActionMarkup extends \Google\Model
     {
+        protected $conferenceDataType = AppsExtensionsMarkupCalendarClientActionMarkupConferenceDataMarkup::class;
+        protected $conferenceDataDataType = '';
+        /**
+         * @param AppsExtensionsMarkupCalendarClientActionMarkupConferenceDataMarkup
+         */
+        public function setConferenceData(AppsExtensionsMarkupCalendarClientActionMarkupConferenceDataMarkup $conferenceData)
+        {
+        }
+        /**
+         * @return AppsExtensionsMarkupCalendarClientActionMarkupConferenceDataMarkup
+         */
+        public function getConferenceData()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsExtensionsMarkupCalendarClientActionMarkupConferenceDataMarkup
+     * Runtime class alias of \Google\Service\CloudSearch\AppsExtensionsMarkupCalendarClientActionMarkupEditConferenceDataActionMarkup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConferenceData()
+    class Google_Service_CloudSearch_AppsExtensionsMarkupCalendarClientActionMarkupEditConferenceDataActionMarkup extends \Google\Service\CloudSearch\AppsExtensionsMarkupCalendarClientActionMarkupEditConferenceDataActionMarkup
     {
     }
 }

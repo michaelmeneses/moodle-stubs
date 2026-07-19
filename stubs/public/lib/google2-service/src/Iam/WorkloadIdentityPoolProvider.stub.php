@@ -21,165 +21,174 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Iam;
-
-class WorkloadIdentityPoolProvider extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $attributeCondition;
-    /**
-     * @var string[]
-     */
-    public $attributeMapping;
-    protected $awsType = Aws::class;
-    protected $awsDataType = '';
-    public $aws;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var bool
-     */
-    public $disabled;
-    /**
-     * @var string
-     */
-    public $displayName;
-    /**
-     * @var string
-     */
-    public $name;
-    protected $oidcType = Oidc::class;
-    protected $oidcDataType = '';
-    public $oidc;
-    protected $samlType = Saml::class;
-    protected $samlDataType = '';
-    public $saml;
-    /**
-     * @var string
-     */
-    public $state;
-    /**
-     * @param string
-     */
-    public function setAttributeCondition($attributeCondition)
+namespace Google\Service\Iam {
+    class WorkloadIdentityPoolProvider extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $attributeCondition;
+        /**
+         * @var string[]
+         */
+        public $attributeMapping;
+        protected $awsType = Aws::class;
+        protected $awsDataType = '';
+        public $aws;
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @var bool
+         */
+        public $disabled;
+        /**
+         * @var string
+         */
+        public $displayName;
+        /**
+         * @var string
+         */
+        public $name;
+        protected $oidcType = Oidc::class;
+        protected $oidcDataType = '';
+        public $oidc;
+        protected $samlType = Saml::class;
+        protected $samlDataType = '';
+        public $saml;
+        /**
+         * @var string
+         */
+        public $state;
+        /**
+         * @param string
+         */
+        public function setAttributeCondition($attributeCondition)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAttributeCondition()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setAttributeMapping($attributeMapping)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAttributeMapping()
+        {
+        }
+        /**
+         * @param Aws
+         */
+        public function setAws(Aws $aws)
+        {
+        }
+        /**
+         * @return Aws
+         */
+        public function getAws()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setDisabled($disabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisabled()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param Oidc
+         */
+        public function setOidc(Oidc $oidc)
+        {
+        }
+        /**
+         * @return Oidc
+         */
+        public function getOidc()
+        {
+        }
+        /**
+         * @param Saml
+         */
+        public function setSaml(Saml $saml)
+        {
+        }
+        /**
+         * @return Saml
+         */
+        public function getSaml()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Iam\WorkloadIdentityPoolProvider registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributeCondition()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setAttributeMapping($attributeMapping)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getAttributeMapping()
-    {
-    }
-    /**
-     * @param Aws
-     */
-    public function setAws(Aws $aws)
-    {
-    }
-    /**
-     * @return Aws
-     */
-    public function getAws()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setDisabled($disabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDisabled()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param Oidc
-     */
-    public function setOidc(Oidc $oidc)
-    {
-    }
-    /**
-     * @return Oidc
-     */
-    public function getOidc()
-    {
-    }
-    /**
-     * @param Saml
-     */
-    public function setSaml(Saml $saml)
-    {
-    }
-    /**
-     * @return Saml
-     */
-    public function getSaml()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
+    class Google_Service_Iam_WorkloadIdentityPoolProvider extends \Google\Service\Iam\WorkloadIdentityPoolProvider
     {
     }
 }

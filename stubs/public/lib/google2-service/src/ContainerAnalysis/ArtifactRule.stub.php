@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class ArtifactRule extends \Google\Collection
-{
-    protected $collection_key = 'artifactRule';
-    public $artifactRule;
-    public function setArtifactRule($artifactRule)
+namespace Google\Service\ContainerAnalysis {
+    class ArtifactRule extends \Google\Collection
     {
+        protected $collection_key = 'artifactRule';
+        public $artifactRule;
+        public function setArtifactRule($artifactRule)
+        {
+        }
+        public function getArtifactRule()
+        {
+        }
     }
-    public function getArtifactRule()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ContainerAnalysis\ArtifactRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ContainerAnalysis_ArtifactRule extends \Google\Service\ContainerAnalysis\ArtifactRule
     {
     }
 }

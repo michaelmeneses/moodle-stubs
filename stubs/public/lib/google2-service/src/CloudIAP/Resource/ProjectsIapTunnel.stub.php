@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIAP\Resource;
-
-/**
- * The "iap_tunnel" collection of methods.
- * Typical usage is:
- *  <code>
- *   $iapService = new Google\Service\CloudIAP(...);
- *   $iap_tunnel = $iapService->projects_iap_tunnel;
- *  </code>
- */
-class ProjectsIapTunnel extends \Google\Service\Resource
-{
+namespace Google\Service\CloudIAP\Resource {
+    /**
+     * The "iap_tunnel" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $iapService = new Google\Service\CloudIAP(...);
+     *   $iap_tunnel = $iapService->projects_iap_tunnel;
+     *  </code>
+     */
+    class ProjectsIapTunnel extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudIAP\Resource\ProjectsIapTunnel registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudIAP_Resource_ProjectsIapTunnel extends \Google\Service\CloudIAP\Resource\ProjectsIapTunnel
+    {
+    }
 }

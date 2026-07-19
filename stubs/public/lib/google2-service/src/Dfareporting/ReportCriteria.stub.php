@@ -21,111 +21,120 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class ReportCriteria extends \Google\Collection
-{
-    protected $collection_key = 'metricNames';
-    protected $activitiesType = Activities::class;
-    protected $activitiesDataType = '';
-    protected $customRichMediaEventsType = CustomRichMediaEvents::class;
-    protected $customRichMediaEventsDataType = '';
-    protected $dateRangeType = DateRange::class;
-    protected $dateRangeDataType = '';
-    protected $dimensionFiltersType = DimensionValue::class;
-    protected $dimensionFiltersDataType = 'array';
-    protected $dimensionsType = SortedDimension::class;
-    protected $dimensionsDataType = 'array';
-    /**
-     * The list of names of metrics the report should include.
-     *
-     * @var string[]
-     */
-    public $metricNames;
-    /**
-     * Activity group.
-     *
-     * @param Activities $activities
-     */
-    public function setActivities(Activities $activities)
+namespace Google\Service\Dfareporting {
+    class ReportCriteria extends \Google\Collection
     {
+        protected $collection_key = 'metricNames';
+        protected $activitiesType = Activities::class;
+        protected $activitiesDataType = '';
+        protected $customRichMediaEventsType = CustomRichMediaEvents::class;
+        protected $customRichMediaEventsDataType = '';
+        protected $dateRangeType = DateRange::class;
+        protected $dateRangeDataType = '';
+        protected $dimensionFiltersType = DimensionValue::class;
+        protected $dimensionFiltersDataType = 'array';
+        protected $dimensionsType = SortedDimension::class;
+        protected $dimensionsDataType = 'array';
+        /**
+         * The list of names of metrics the report should include.
+         *
+         * @var string[]
+         */
+        public $metricNames;
+        /**
+         * Activity group.
+         *
+         * @param Activities $activities
+         */
+        public function setActivities(Activities $activities)
+        {
+        }
+        /**
+         * @return Activities
+         */
+        public function getActivities()
+        {
+        }
+        /**
+         * Custom Rich Media Events group.
+         *
+         * @param CustomRichMediaEvents $customRichMediaEvents
+         */
+        public function setCustomRichMediaEvents(CustomRichMediaEvents $customRichMediaEvents)
+        {
+        }
+        /**
+         * @return CustomRichMediaEvents
+         */
+        public function getCustomRichMediaEvents()
+        {
+        }
+        /**
+         * The date range for which this report should be run.
+         *
+         * @param DateRange $dateRange
+         */
+        public function setDateRange(DateRange $dateRange)
+        {
+        }
+        /**
+         * @return DateRange
+         */
+        public function getDateRange()
+        {
+        }
+        /**
+         * The list of filters on which dimensions are filtered. Filters for different
+         * dimensions are ANDed, filters for the same dimension are grouped together
+         * and ORed.
+         *
+         * @param DimensionValue[] $dimensionFilters
+         */
+        public function setDimensionFilters($dimensionFilters)
+        {
+        }
+        /**
+         * @return DimensionValue[]
+         */
+        public function getDimensionFilters()
+        {
+        }
+        /**
+         * The list of standard dimensions the report should include.
+         *
+         * @param SortedDimension[] $dimensions
+         */
+        public function setDimensions($dimensions)
+        {
+        }
+        /**
+         * @return SortedDimension[]
+         */
+        public function getDimensions()
+        {
+        }
+        /**
+         * The list of names of metrics the report should include.
+         *
+         * @param string[] $metricNames
+         */
+        public function setMetricNames($metricNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMetricNames()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Activities
+     * Runtime class alias of \Google\Service\Dfareporting\ReportCriteria registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActivities()
-    {
-    }
-    /**
-     * Custom Rich Media Events group.
-     *
-     * @param CustomRichMediaEvents $customRichMediaEvents
-     */
-    public function setCustomRichMediaEvents(CustomRichMediaEvents $customRichMediaEvents)
-    {
-    }
-    /**
-     * @return CustomRichMediaEvents
-     */
-    public function getCustomRichMediaEvents()
-    {
-    }
-    /**
-     * The date range for which this report should be run.
-     *
-     * @param DateRange $dateRange
-     */
-    public function setDateRange(DateRange $dateRange)
-    {
-    }
-    /**
-     * @return DateRange
-     */
-    public function getDateRange()
-    {
-    }
-    /**
-     * The list of filters on which dimensions are filtered. Filters for different
-     * dimensions are ANDed, filters for the same dimension are grouped together
-     * and ORed.
-     *
-     * @param DimensionValue[] $dimensionFilters
-     */
-    public function setDimensionFilters($dimensionFilters)
-    {
-    }
-    /**
-     * @return DimensionValue[]
-     */
-    public function getDimensionFilters()
-    {
-    }
-    /**
-     * The list of standard dimensions the report should include.
-     *
-     * @param SortedDimension[] $dimensions
-     */
-    public function setDimensions($dimensions)
-    {
-    }
-    /**
-     * @return SortedDimension[]
-     */
-    public function getDimensions()
-    {
-    }
-    /**
-     * The list of names of metrics the report should include.
-     *
-     * @param string[] $metricNames
-     */
-    public function setMetricNames($metricNames)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMetricNames()
+    class Google_Service_Dfareporting_ReportCriteria extends \Google\Service\Dfareporting\ReportCriteria
     {
     }
 }

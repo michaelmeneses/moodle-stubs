@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1EvaluationRunEvaluationConfigOutputConfig extends \Google\Model
-{
-    protected $bigqueryDestinationType = GoogleCloudAiplatformV1BigQueryDestination::class;
-    protected $bigqueryDestinationDataType = '';
-    protected $gcsDestinationType = GoogleCloudAiplatformV1GcsDestination::class;
-    protected $gcsDestinationDataType = '';
-    /**
-     * BigQuery destination for evaluation output.
-     *
-     * @param GoogleCloudAiplatformV1BigQueryDestination $bigqueryDestination
-     */
-    public function setBigqueryDestination(GoogleCloudAiplatformV1BigQueryDestination $bigqueryDestination)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1EvaluationRunEvaluationConfigOutputConfig extends \Google\Model
     {
+        protected $bigqueryDestinationType = GoogleCloudAiplatformV1BigQueryDestination::class;
+        protected $bigqueryDestinationDataType = '';
+        protected $gcsDestinationType = GoogleCloudAiplatformV1GcsDestination::class;
+        protected $gcsDestinationDataType = '';
+        /**
+         * BigQuery destination for evaluation output.
+         *
+         * @param GoogleCloudAiplatformV1BigQueryDestination $bigqueryDestination
+         */
+        public function setBigqueryDestination(GoogleCloudAiplatformV1BigQueryDestination $bigqueryDestination)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1BigQueryDestination
+         */
+        public function getBigqueryDestination()
+        {
+        }
+        /**
+         * Cloud Storage destination for evaluation output.
+         *
+         * @param GoogleCloudAiplatformV1GcsDestination $gcsDestination
+         */
+        public function setGcsDestination(GoogleCloudAiplatformV1GcsDestination $gcsDestination)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1GcsDestination
+         */
+        public function getGcsDestination()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1BigQueryDestination
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationRunEvaluationConfigOutputConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBigqueryDestination()
-    {
-    }
-    /**
-     * Cloud Storage destination for evaluation output.
-     *
-     * @param GoogleCloudAiplatformV1GcsDestination $gcsDestination
-     */
-    public function setGcsDestination(GoogleCloudAiplatformV1GcsDestination $gcsDestination)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1GcsDestination
-     */
-    public function getGcsDestination()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1EvaluationRunEvaluationConfigOutputConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationRunEvaluationConfigOutputConfig
     {
     }
 }

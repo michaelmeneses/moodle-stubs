@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class GetDatabaseDdlResponse extends \Google\Collection
-{
-    protected $collection_key = 'statements';
-    /**
-     * Proto descriptors stored in the database. Contains a protobuf-serialized [g
-     * oogle.protobuf.FileDescriptorSet](https://github.com/protocolbuffers/protob
-     * uf/blob/main/src/google/protobuf/descriptor.proto). For more details, see
-     * protobuffer [self description](https://developers.google.com/protocol-
-     * buffers/docs/techniques#self-description).
-     *
-     * @var string
-     */
-    public $protoDescriptors;
-    /**
-     * A list of formatted DDL statements defining the schema of the database
-     * specified in the request.
-     *
-     * @var string[]
-     */
-    public $statements;
-    /**
-     * Proto descriptors stored in the database. Contains a protobuf-serialized [g
-     * oogle.protobuf.FileDescriptorSet](https://github.com/protocolbuffers/protob
-     * uf/blob/main/src/google/protobuf/descriptor.proto). For more details, see
-     * protobuffer [self description](https://developers.google.com/protocol-
-     * buffers/docs/techniques#self-description).
-     *
-     * @param string $protoDescriptors
-     */
-    public function setProtoDescriptors($protoDescriptors)
+namespace Google\Service\Spanner {
+    class GetDatabaseDdlResponse extends \Google\Collection
     {
+        protected $collection_key = 'statements';
+        /**
+         * Proto descriptors stored in the database. Contains a protobuf-serialized [g
+         * oogle.protobuf.FileDescriptorSet](https://github.com/protocolbuffers/protob
+         * uf/blob/main/src/google/protobuf/descriptor.proto). For more details, see
+         * protobuffer [self description](https://developers.google.com/protocol-
+         * buffers/docs/techniques#self-description).
+         *
+         * @var string
+         */
+        public $protoDescriptors;
+        /**
+         * A list of formatted DDL statements defining the schema of the database
+         * specified in the request.
+         *
+         * @var string[]
+         */
+        public $statements;
+        /**
+         * Proto descriptors stored in the database. Contains a protobuf-serialized [g
+         * oogle.protobuf.FileDescriptorSet](https://github.com/protocolbuffers/protob
+         * uf/blob/main/src/google/protobuf/descriptor.proto). For more details, see
+         * protobuffer [self description](https://developers.google.com/protocol-
+         * buffers/docs/techniques#self-description).
+         *
+         * @param string $protoDescriptors
+         */
+        public function setProtoDescriptors($protoDescriptors)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProtoDescriptors()
+        {
+        }
+        /**
+         * A list of formatted DDL statements defining the schema of the database
+         * specified in the request.
+         *
+         * @param string[] $statements
+         */
+        public function setStatements($statements)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getStatements()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Spanner\GetDatabaseDdlResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProtoDescriptors()
-    {
-    }
-    /**
-     * A list of formatted DDL statements defining the schema of the database
-     * specified in the request.
-     *
-     * @param string[] $statements
-     */
-    public function setStatements($statements)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getStatements()
+    class Google_Service_Spanner_GetDatabaseDdlResponse extends \Google\Service\Spanner\GetDatabaseDdlResponse
     {
     }
 }

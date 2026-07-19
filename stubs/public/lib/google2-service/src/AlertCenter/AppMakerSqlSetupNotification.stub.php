@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter;
-
-class AppMakerSqlSetupNotification extends \Google\Collection
-{
-    protected $collection_key = 'requestInfo';
-    protected $requestInfoType = RequestInfo::class;
-    protected $requestInfoDataType = 'array';
-    /**
-     * List of applications with requests for default SQL set up.
-     *
-     * @param RequestInfo[] $requestInfo
-     */
-    public function setRequestInfo($requestInfo)
+namespace Google\Service\AlertCenter {
+    class AppMakerSqlSetupNotification extends \Google\Collection
     {
+        protected $collection_key = 'requestInfo';
+        protected $requestInfoType = RequestInfo::class;
+        protected $requestInfoDataType = 'array';
+        /**
+         * List of applications with requests for default SQL set up.
+         *
+         * @param RequestInfo[] $requestInfo
+         */
+        public function setRequestInfo($requestInfo)
+        {
+        }
+        /**
+         * @return RequestInfo[]
+         */
+        public function getRequestInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RequestInfo[]
+     * Runtime class alias of \Google\Service\AlertCenter\AppMakerSqlSetupNotification registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequestInfo()
+    class Google_Service_AlertCenter_AppMakerSqlSetupNotification extends \Google\Service\AlertCenter\AppMakerSqlSetupNotification
     {
     }
 }

@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class OnPremCluster extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $adminCluster;
-    /**
-     * @var bool
-     */
-    public $clusterMissing;
-    /**
-     * @var string
-     */
-    public $clusterType;
-    /**
-     * @var string
-     */
-    public $resourceLink;
-    /**
-     * @param bool
-     */
-    public function setAdminCluster($adminCluster)
+namespace Google\Service\GKEHub {
+    class OnPremCluster extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $adminCluster;
+        /**
+         * @var bool
+         */
+        public $clusterMissing;
+        /**
+         * @var string
+         */
+        public $clusterType;
+        /**
+         * @var string
+         */
+        public $resourceLink;
+        /**
+         * @param bool
+         */
+        public function setAdminCluster($adminCluster)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAdminCluster()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setClusterMissing($clusterMissing)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getClusterMissing()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setClusterType($clusterType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClusterType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setResourceLink($resourceLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceLink()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\GKEHub\OnPremCluster registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdminCluster()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setClusterMissing($clusterMissing)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getClusterMissing()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setClusterType($clusterType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClusterType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setResourceLink($resourceLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceLink()
+    class Google_Service_GKEHub_OnPremCluster extends \Google\Service\GKEHub\OnPremCluster
     {
     }
 }

@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class UserName extends \Google\Model
-{
-    /**
-     * The user's display name. Limit: 256 characters.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The user's last name. Required when creating a user account.
-     *
-     * @var string
-     */
-    public $familyName;
-    /**
-     * The user's full name formed by concatenating the first and last name
-     * values.
-     *
-     * @var string
-     */
-    public $fullName;
-    /**
-     * The user's first name. Required when creating a user account.
-     *
-     * @var string
-     */
-    public $givenName;
-    /**
-     * The user's display name. Limit: 256 characters.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\Directory {
+    class UserName extends \Google\Model
     {
+        /**
+         * The user's display name. Limit: 256 characters.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The user's last name. Required when creating a user account.
+         *
+         * @var string
+         */
+        public $familyName;
+        /**
+         * The user's full name formed by concatenating the first and last name
+         * values.
+         *
+         * @var string
+         */
+        public $fullName;
+        /**
+         * The user's first name. Required when creating a user account.
+         *
+         * @var string
+         */
+        public $givenName;
+        /**
+         * The user's display name. Limit: 256 characters.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The user's last name. Required when creating a user account.
+         *
+         * @param string $familyName
+         */
+        public function setFamilyName($familyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFamilyName()
+        {
+        }
+        /**
+         * The user's full name formed by concatenating the first and last name
+         * values.
+         *
+         * @param string $fullName
+         */
+        public function setFullName($fullName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFullName()
+        {
+        }
+        /**
+         * The user's first name. Required when creating a user account.
+         *
+         * @param string $givenName
+         */
+        public function setGivenName($givenName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGivenName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\UserName registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The user's last name. Required when creating a user account.
-     *
-     * @param string $familyName
-     */
-    public function setFamilyName($familyName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFamilyName()
-    {
-    }
-    /**
-     * The user's full name formed by concatenating the first and last name
-     * values.
-     *
-     * @param string $fullName
-     */
-    public function setFullName($fullName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFullName()
-    {
-    }
-    /**
-     * The user's first name. Required when creating a user account.
-     *
-     * @param string $givenName
-     */
-    public function setGivenName($givenName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGivenName()
+    class Google_Service_Directory_UserName extends \Google\Service\Directory\UserName
     {
     }
 }

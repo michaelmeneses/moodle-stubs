@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class GoogleCloudAssetV1ListConstraint extends \Google\Model
-{
-    /**
-     * Indicates whether values grouped into categories can be used in
-     * `Policy.allowed_values` and `Policy.denied_values`. For example,
-     * `"in:Python"` would match any value in the 'Python' group.
-     *
-     * @var bool
-     */
-    public $supportsIn;
-    /**
-     * Indicates whether subtrees of Cloud Resource Manager resource hierarchy can
-     * be used in `Policy.allowed_values` and `Policy.denied_values`. For example,
-     * `"under:folders/123"` would match any resource under the 'folders/123'
-     * folder.
-     *
-     * @var bool
-     */
-    public $supportsUnder;
-    /**
-     * Indicates whether values grouped into categories can be used in
-     * `Policy.allowed_values` and `Policy.denied_values`. For example,
-     * `"in:Python"` would match any value in the 'Python' group.
-     *
-     * @param bool $supportsIn
-     */
-    public function setSupportsIn($supportsIn)
+namespace Google\Service\CloudAsset {
+    class GoogleCloudAssetV1ListConstraint extends \Google\Model
     {
+        /**
+         * Indicates whether values grouped into categories can be used in
+         * `Policy.allowed_values` and `Policy.denied_values`. For example,
+         * `"in:Python"` would match any value in the 'Python' group.
+         *
+         * @var bool
+         */
+        public $supportsIn;
+        /**
+         * Indicates whether subtrees of Cloud Resource Manager resource hierarchy can
+         * be used in `Policy.allowed_values` and `Policy.denied_values`. For example,
+         * `"under:folders/123"` would match any resource under the 'folders/123'
+         * folder.
+         *
+         * @var bool
+         */
+        public $supportsUnder;
+        /**
+         * Indicates whether values grouped into categories can be used in
+         * `Policy.allowed_values` and `Policy.denied_values`. For example,
+         * `"in:Python"` would match any value in the 'Python' group.
+         *
+         * @param bool $supportsIn
+         */
+        public function setSupportsIn($supportsIn)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSupportsIn()
+        {
+        }
+        /**
+         * Indicates whether subtrees of Cloud Resource Manager resource hierarchy can
+         * be used in `Policy.allowed_values` and `Policy.denied_values`. For example,
+         * `"under:folders/123"` would match any resource under the 'folders/123'
+         * folder.
+         *
+         * @param bool $supportsUnder
+         */
+        public function setSupportsUnder($supportsUnder)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSupportsUnder()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudAsset\GoogleCloudAssetV1ListConstraint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSupportsIn()
-    {
-    }
-    /**
-     * Indicates whether subtrees of Cloud Resource Manager resource hierarchy can
-     * be used in `Policy.allowed_values` and `Policy.denied_values`. For example,
-     * `"under:folders/123"` would match any resource under the 'folders/123'
-     * folder.
-     *
-     * @param bool $supportsUnder
-     */
-    public function setSupportsUnder($supportsUnder)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSupportsUnder()
+    class Google_Service_CloudAsset_GoogleCloudAssetV1ListConstraint extends \Google\Service\CloudAsset\GoogleCloudAssetV1ListConstraint
     {
     }
 }

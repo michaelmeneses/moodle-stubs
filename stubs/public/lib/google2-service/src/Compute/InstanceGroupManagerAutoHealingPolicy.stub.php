@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InstanceGroupManagerAutoHealingPolicy extends \Google\Model
-{
-    /**
-     * The URL for the health check that signals autohealing.
-     *
-     * @var string
-     */
-    public $healthCheck;
-    /**
-     * The initial delay is the number of seconds that a new VM takes to
-     * initialize and run its startup script. During a VM's initial delay period,
-     * the MIG ignores unsuccessful health checks because the VM might be in the
-     * startup process. This prevents the MIG from prematurely recreating a VM. If
-     * the health check receives a healthy response during the initial delay, it
-     * indicates that the startup process is complete and the VM is ready. The
-     * value of initial delay must be between 0 and 3600 seconds. The default
-     * value is 0.
-     *
-     * @var int
-     */
-    public $initialDelaySec;
-    /**
-     * The URL for the health check that signals autohealing.
-     *
-     * @param string $healthCheck
-     */
-    public function setHealthCheck($healthCheck)
+namespace Google\Service\Compute {
+    class InstanceGroupManagerAutoHealingPolicy extends \Google\Model
     {
+        /**
+         * The URL for the health check that signals autohealing.
+         *
+         * @var string
+         */
+        public $healthCheck;
+        /**
+         * The initial delay is the number of seconds that a new VM takes to
+         * initialize and run its startup script. During a VM's initial delay period,
+         * the MIG ignores unsuccessful health checks because the VM might be in the
+         * startup process. This prevents the MIG from prematurely recreating a VM. If
+         * the health check receives a healthy response during the initial delay, it
+         * indicates that the startup process is complete and the VM is ready. The
+         * value of initial delay must be between 0 and 3600 seconds. The default
+         * value is 0.
+         *
+         * @var int
+         */
+        public $initialDelaySec;
+        /**
+         * The URL for the health check that signals autohealing.
+         *
+         * @param string $healthCheck
+         */
+        public function setHealthCheck($healthCheck)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHealthCheck()
+        {
+        }
+        /**
+         * The initial delay is the number of seconds that a new VM takes to
+         * initialize and run its startup script. During a VM's initial delay period,
+         * the MIG ignores unsuccessful health checks because the VM might be in the
+         * startup process. This prevents the MIG from prematurely recreating a VM. If
+         * the health check receives a healthy response during the initial delay, it
+         * indicates that the startup process is complete and the VM is ready. The
+         * value of initial delay must be between 0 and 3600 seconds. The default
+         * value is 0.
+         *
+         * @param int $initialDelaySec
+         */
+        public function setInitialDelaySec($initialDelaySec)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getInitialDelaySec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\InstanceGroupManagerAutoHealingPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHealthCheck()
-    {
-    }
-    /**
-     * The initial delay is the number of seconds that a new VM takes to
-     * initialize and run its startup script. During a VM's initial delay period,
-     * the MIG ignores unsuccessful health checks because the VM might be in the
-     * startup process. This prevents the MIG from prematurely recreating a VM. If
-     * the health check receives a healthy response during the initial delay, it
-     * indicates that the startup process is complete and the VM is ready. The
-     * value of initial delay must be between 0 and 3600 seconds. The default
-     * value is 0.
-     *
-     * @param int $initialDelaySec
-     */
-    public function setInitialDelaySec($initialDelaySec)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getInitialDelaySec()
+    class Google_Service_Compute_InstanceGroupManagerAutoHealingPolicy extends \Google\Service\Compute\InstanceGroupManagerAutoHealingPolicy
     {
     }
 }

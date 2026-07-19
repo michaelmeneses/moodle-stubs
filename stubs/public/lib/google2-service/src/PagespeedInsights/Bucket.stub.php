@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PagespeedInsights;
-
-class Bucket extends \Google\Model
-{
-    /**
-     * Upper bound for a bucket's range.
-     *
-     * @var int
-     */
-    public $max;
-    /**
-     * Lower bound for a bucket's range.
-     *
-     * @var int
-     */
-    public $min;
-    /**
-     * The proportion of data in this bucket.
-     *
-     * @var 
-     */
-    public $proportion;
-    /**
-     * Upper bound for a bucket's range.
-     *
-     * @param int $max
-     */
-    public function setMax($max)
+namespace Google\Service\PagespeedInsights {
+    class Bucket extends \Google\Model
     {
+        /**
+         * Upper bound for a bucket's range.
+         *
+         * @var int
+         */
+        public $max;
+        /**
+         * Lower bound for a bucket's range.
+         *
+         * @var int
+         */
+        public $min;
+        /**
+         * The proportion of data in this bucket.
+         *
+         * @var 
+         */
+        public $proportion;
+        /**
+         * Upper bound for a bucket's range.
+         *
+         * @param int $max
+         */
+        public function setMax($max)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMax()
+        {
+        }
+        /**
+         * Lower bound for a bucket's range.
+         *
+         * @param int $min
+         */
+        public function setMin($min)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMin()
+        {
+        }
+        public function setProportion($proportion)
+        {
+        }
+        public function getProportion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\PagespeedInsights\Bucket registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMax()
-    {
-    }
-    /**
-     * Lower bound for a bucket's range.
-     *
-     * @param int $min
-     */
-    public function setMin($min)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMin()
-    {
-    }
-    public function setProportion($proportion)
-    {
-    }
-    public function getProportion()
+    class Google_Service_PagespeedInsights_Bucket extends \Google\Service\PagespeedInsights\Bucket
     {
     }
 }

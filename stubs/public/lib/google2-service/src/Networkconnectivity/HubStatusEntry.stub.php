@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class HubStatusEntry extends \Google\Model
-{
-    /**
-     * The number of propagated Private Service Connect connections with this
-     * status. If the `group_by` field was not set in the request message, the
-     * value of this field is 1.
-     *
-     * @var int
-     */
-    public $count;
-    /**
-     * The fields that this entry is grouped by. This has the same value as the
-     * `group_by` field in the request message.
-     *
-     * @var string
-     */
-    public $groupBy;
-    protected $pscPropagationStatusType = PscPropagationStatus::class;
-    protected $pscPropagationStatusDataType = '';
-    /**
-     * The number of propagated Private Service Connect connections with this
-     * status. If the `group_by` field was not set in the request message, the
-     * value of this field is 1.
-     *
-     * @param int $count
-     */
-    public function setCount($count)
+namespace Google\Service\Networkconnectivity {
+    class HubStatusEntry extends \Google\Model
     {
+        /**
+         * The number of propagated Private Service Connect connections with this
+         * status. If the `group_by` field was not set in the request message, the
+         * value of this field is 1.
+         *
+         * @var int
+         */
+        public $count;
+        /**
+         * The fields that this entry is grouped by. This has the same value as the
+         * `group_by` field in the request message.
+         *
+         * @var string
+         */
+        public $groupBy;
+        protected $pscPropagationStatusType = PscPropagationStatus::class;
+        protected $pscPropagationStatusDataType = '';
+        /**
+         * The number of propagated Private Service Connect connections with this
+         * status. If the `group_by` field was not set in the request message, the
+         * value of this field is 1.
+         *
+         * @param int $count
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCount()
+        {
+        }
+        /**
+         * The fields that this entry is grouped by. This has the same value as the
+         * `group_by` field in the request message.
+         *
+         * @param string $groupBy
+         */
+        public function setGroupBy($groupBy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGroupBy()
+        {
+        }
+        /**
+         * The Private Service Connect propagation status.
+         *
+         * @param PscPropagationStatus $pscPropagationStatus
+         */
+        public function setPscPropagationStatus(PscPropagationStatus $pscPropagationStatus)
+        {
+        }
+        /**
+         * @return PscPropagationStatus
+         */
+        public function getPscPropagationStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Networkconnectivity\HubStatusEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCount()
-    {
-    }
-    /**
-     * The fields that this entry is grouped by. This has the same value as the
-     * `group_by` field in the request message.
-     *
-     * @param string $groupBy
-     */
-    public function setGroupBy($groupBy)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGroupBy()
-    {
-    }
-    /**
-     * The Private Service Connect propagation status.
-     *
-     * @param PscPropagationStatus $pscPropagationStatus
-     */
-    public function setPscPropagationStatus(PscPropagationStatus $pscPropagationStatus)
-    {
-    }
-    /**
-     * @return PscPropagationStatus
-     */
-    public function getPscPropagationStatus()
+    class Google_Service_Networkconnectivity_HubStatusEntry extends \Google\Service\Networkconnectivity\HubStatusEntry
     {
     }
 }

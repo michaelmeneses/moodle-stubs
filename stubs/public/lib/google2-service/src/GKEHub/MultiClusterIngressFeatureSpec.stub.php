@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class MultiClusterIngressFeatureSpec extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $configMembership;
-    /**
-     * @param string
-     */
-    public function setConfigMembership($configMembership)
+namespace Google\Service\GKEHub {
+    class MultiClusterIngressFeatureSpec extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $configMembership;
+        /**
+         * @param string
+         */
+        public function setConfigMembership($configMembership)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConfigMembership()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\MultiClusterIngressFeatureSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfigMembership()
+    class Google_Service_GKEHub_MultiClusterIngressFeatureSpec extends \Google\Service\GKEHub\MultiClusterIngressFeatureSpec
     {
     }
 }

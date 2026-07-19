@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution;
-
-class TestIamPermissionsRequest extends \Google\Collection
-{
-    protected $collection_key = 'permissions';
-    public $permissions;
-    public function setPermissions($permissions)
+namespace Google\Service\Baremetalsolution {
+    class TestIamPermissionsRequest extends \Google\Collection
     {
+        protected $collection_key = 'permissions';
+        public $permissions;
+        public function setPermissions($permissions)
+        {
+        }
+        public function getPermissions()
+        {
+        }
     }
-    public function getPermissions()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Baremetalsolution\TestIamPermissionsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Baremetalsolution_TestIamPermissionsRequest extends \Google\Service\Baremetalsolution\TestIamPermissionsRequest
     {
     }
 }

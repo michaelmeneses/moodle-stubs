@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class CheckAuthorizationResponse extends \Google\Model
-{
-    protected $internal_gapi_mappings = ["oauthUri" => "oauth_uri"];
-    /**
-     * Output only. Timestamp when this Authorization request was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * If the user has not completed OAuth consent, then the oauth_url is
-     * returned. Otherwise, this field is not set.
-     *
-     * @var string
-     */
-    public $oauthUri;
-    /**
-     * Success indicates that the user completed OAuth consent and access tokens
-     * can be generated.
-     *
-     * @var bool
-     */
-    public $success;
-    /**
-     * Output only. Timestamp when this Authorization request was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\AIPlatformNotebooks {
+    class CheckAuthorizationResponse extends \Google\Model
     {
+        protected $internal_gapi_mappings = ["oauthUri" => "oauth_uri"];
+        /**
+         * Output only. Timestamp when this Authorization request was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * If the user has not completed OAuth consent, then the oauth_url is
+         * returned. Otherwise, this field is not set.
+         *
+         * @var string
+         */
+        public $oauthUri;
+        /**
+         * Success indicates that the user completed OAuth consent and access tokens
+         * can be generated.
+         *
+         * @var bool
+         */
+        public $success;
+        /**
+         * Output only. Timestamp when this Authorization request was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * If the user has not completed OAuth consent, then the oauth_url is
+         * returned. Otherwise, this field is not set.
+         *
+         * @param string $oauthUri
+         */
+        public function setOauthUri($oauthUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOauthUri()
+        {
+        }
+        /**
+         * Success indicates that the user completed OAuth consent and access tokens
+         * can be generated.
+         *
+         * @param bool $success
+         */
+        public function setSuccess($success)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSuccess()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\CheckAuthorizationResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * If the user has not completed OAuth consent, then the oauth_url is
-     * returned. Otherwise, this field is not set.
-     *
-     * @param string $oauthUri
-     */
-    public function setOauthUri($oauthUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOauthUri()
-    {
-    }
-    /**
-     * Success indicates that the user completed OAuth consent and access tokens
-     * can be generated.
-     *
-     * @param bool $success
-     */
-    public function setSuccess($success)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSuccess()
+    class Google_Service_AIPlatformNotebooks_CheckAuthorizationResponse extends \Google\Service\AIPlatformNotebooks\CheckAuthorizationResponse
     {
     }
 }

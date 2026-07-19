@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class ImportProductSetsRequest extends \Google\Model
-{
-    protected $inputConfigType = ImportProductSetsInputConfig::class;
-    protected $inputConfigDataType = '';
-    /**
-     * Required. The input content for the list of requests.
-     *
-     * @param ImportProductSetsInputConfig $inputConfig
-     */
-    public function setInputConfig(ImportProductSetsInputConfig $inputConfig)
+namespace Google\Service\Vision {
+    class ImportProductSetsRequest extends \Google\Model
     {
+        protected $inputConfigType = ImportProductSetsInputConfig::class;
+        protected $inputConfigDataType = '';
+        /**
+         * Required. The input content for the list of requests.
+         *
+         * @param ImportProductSetsInputConfig $inputConfig
+         */
+        public function setInputConfig(ImportProductSetsInputConfig $inputConfig)
+        {
+        }
+        /**
+         * @return ImportProductSetsInputConfig
+         */
+        public function getInputConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ImportProductSetsInputConfig
+     * Runtime class alias of \Google\Service\Vision\ImportProductSetsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInputConfig()
+    class Google_Service_Vision_ImportProductSetsRequest extends \Google\Service\Vision\ImportProductSetsRequest
     {
     }
 }

@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1ListAnalysesResponse extends \Google\Collection
-{
-    protected $collection_key = 'analyses';
-    protected $analysesType = GoogleCloudContactcenterinsightsV1Analysis::class;
-    protected $analysesDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The analyses that match the request.
-     *
-     * @param GoogleCloudContactcenterinsightsV1Analysis[] $analyses
-     */
-    public function setAnalyses($analyses)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1ListAnalysesResponse extends \Google\Collection
     {
+        protected $collection_key = 'analyses';
+        protected $analysesType = GoogleCloudContactcenterinsightsV1Analysis::class;
+        protected $analysesDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The analyses that match the request.
+         *
+         * @param GoogleCloudContactcenterinsightsV1Analysis[] $analyses
+         */
+        public function setAnalyses($analyses)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1Analysis[]
+         */
+        public function getAnalyses()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContactcenterinsightsV1Analysis[]
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1ListAnalysesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnalyses()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1ListAnalysesResponse extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1ListAnalysesResponse
     {
     }
 }

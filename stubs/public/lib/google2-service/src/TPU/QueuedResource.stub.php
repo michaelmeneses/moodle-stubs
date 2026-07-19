@@ -21,152 +21,161 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TPU;
-
-class QueuedResource extends \Google\Model
-{
-    /**
-     * Output only. The time when the QueuedResource was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    protected $guaranteedType = Guaranteed::class;
-    protected $guaranteedDataType = '';
-    /**
-     * Output only. Immutable. The name of the QueuedResource.
-     *
-     * @var string
-     */
-    public $name;
-    protected $queueingPolicyType = QueueingPolicy::class;
-    protected $queueingPolicyDataType = '';
-    /**
-     * Optional. Name of the reservation in which the resource should be
-     * provisioned. Format:
-     * projects/{project}/locations/{zone}/reservations/{reservation}
-     *
-     * @var string
-     */
-    public $reservationName;
-    protected $spotType = Spot::class;
-    protected $spotDataType = '';
-    protected $stateType = QueuedResourceState::class;
-    protected $stateDataType = '';
-    protected $tpuType = Tpu::class;
-    protected $tpuDataType = '';
-    /**
-     * Output only. The time when the QueuedResource was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\TPU {
+    class QueuedResource extends \Google\Model
     {
+        /**
+         * Output only. The time when the QueuedResource was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        protected $guaranteedType = Guaranteed::class;
+        protected $guaranteedDataType = '';
+        /**
+         * Output only. Immutable. The name of the QueuedResource.
+         *
+         * @var string
+         */
+        public $name;
+        protected $queueingPolicyType = QueueingPolicy::class;
+        protected $queueingPolicyDataType = '';
+        /**
+         * Optional. Name of the reservation in which the resource should be
+         * provisioned. Format:
+         * projects/{project}/locations/{zone}/reservations/{reservation}
+         *
+         * @var string
+         */
+        public $reservationName;
+        protected $spotType = Spot::class;
+        protected $spotDataType = '';
+        protected $stateType = QueuedResourceState::class;
+        protected $stateDataType = '';
+        protected $tpuType = Tpu::class;
+        protected $tpuDataType = '';
+        /**
+         * Output only. The time when the QueuedResource was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. The Guaranteed tier
+         *
+         * @param Guaranteed $guaranteed
+         */
+        public function setGuaranteed(Guaranteed $guaranteed)
+        {
+        }
+        /**
+         * @return Guaranteed
+         */
+        public function getGuaranteed()
+        {
+        }
+        /**
+         * Output only. Immutable. The name of the QueuedResource.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. The queueing policy of the QueuedRequest.
+         *
+         * @param QueueingPolicy $queueingPolicy
+         */
+        public function setQueueingPolicy(QueueingPolicy $queueingPolicy)
+        {
+        }
+        /**
+         * @return QueueingPolicy
+         */
+        public function getQueueingPolicy()
+        {
+        }
+        /**
+         * Optional. Name of the reservation in which the resource should be
+         * provisioned. Format:
+         * projects/{project}/locations/{zone}/reservations/{reservation}
+         *
+         * @param string $reservationName
+         */
+        public function setReservationName($reservationName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReservationName()
+        {
+        }
+        /**
+         * Optional. The Spot tier.
+         *
+         * @param Spot $spot
+         */
+        public function setSpot(Spot $spot)
+        {
+        }
+        /**
+         * @return Spot
+         */
+        public function getSpot()
+        {
+        }
+        /**
+         * Output only. State of the QueuedResource request.
+         *
+         * @param QueuedResourceState $state
+         */
+        public function setState(QueuedResourceState $state)
+        {
+        }
+        /**
+         * @return QueuedResourceState
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Optional. Defines a TPU resource.
+         *
+         * @param Tpu $tpu
+         */
+        public function setTpu(Tpu $tpu)
+        {
+        }
+        /**
+         * @return Tpu
+         */
+        public function getTpu()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\TPU\QueuedResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. The Guaranteed tier
-     *
-     * @param Guaranteed $guaranteed
-     */
-    public function setGuaranteed(Guaranteed $guaranteed)
-    {
-    }
-    /**
-     * @return Guaranteed
-     */
-    public function getGuaranteed()
-    {
-    }
-    /**
-     * Output only. Immutable. The name of the QueuedResource.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. The queueing policy of the QueuedRequest.
-     *
-     * @param QueueingPolicy $queueingPolicy
-     */
-    public function setQueueingPolicy(QueueingPolicy $queueingPolicy)
-    {
-    }
-    /**
-     * @return QueueingPolicy
-     */
-    public function getQueueingPolicy()
-    {
-    }
-    /**
-     * Optional. Name of the reservation in which the resource should be
-     * provisioned. Format:
-     * projects/{project}/locations/{zone}/reservations/{reservation}
-     *
-     * @param string $reservationName
-     */
-    public function setReservationName($reservationName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReservationName()
-    {
-    }
-    /**
-     * Optional. The Spot tier.
-     *
-     * @param Spot $spot
-     */
-    public function setSpot(Spot $spot)
-    {
-    }
-    /**
-     * @return Spot
-     */
-    public function getSpot()
-    {
-    }
-    /**
-     * Output only. State of the QueuedResource request.
-     *
-     * @param QueuedResourceState $state
-     */
-    public function setState(QueuedResourceState $state)
-    {
-    }
-    /**
-     * @return QueuedResourceState
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Optional. Defines a TPU resource.
-     *
-     * @param Tpu $tpu
-     */
-    public function setTpu(Tpu $tpu)
-    {
-    }
-    /**
-     * @return Tpu
-     */
-    public function getTpu()
+    class Google_Service_TPU_QueuedResource extends \Google\Service\TPU\QueuedResource
     {
     }
 }

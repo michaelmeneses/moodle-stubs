@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ImportFeatureValuesRequestFeatureSpec extends \Google\Model
-{
-    /**
-     * Required. ID of the Feature to import values of. This Feature must exist in
-     * the target EntityType, or the request will fail.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Source column to get the Feature values from. If not set, uses the column
-     * with the same name as the Feature ID.
-     *
-     * @var string
-     */
-    public $sourceField;
-    /**
-     * Required. ID of the Feature to import values of. This Feature must exist in
-     * the target EntityType, or the request will fail.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ImportFeatureValuesRequestFeatureSpec extends \Google\Model
     {
+        /**
+         * Required. ID of the Feature to import values of. This Feature must exist in
+         * the target EntityType, or the request will fail.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Source column to get the Feature values from. If not set, uses the column
+         * with the same name as the Feature ID.
+         *
+         * @var string
+         */
+        public $sourceField;
+        /**
+         * Required. ID of the Feature to import values of. This Feature must exist in
+         * the target EntityType, or the request will fail.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Source column to get the Feature values from. If not set, uses the column
+         * with the same name as the Feature ID.
+         *
+         * @param string $sourceField
+         */
+        public function setSourceField($sourceField)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceField()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ImportFeatureValuesRequestFeatureSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * Source column to get the Feature values from. If not set, uses the column
-     * with the same name as the Feature ID.
-     *
-     * @param string $sourceField
-     */
-    public function setSourceField($sourceField)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceField()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ImportFeatureValuesRequestFeatureSpec extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ImportFeatureValuesRequestFeatureSpec
     {
     }
 }

@@ -21,97 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkflowExecutions;
-
-class TriggerPubsubExecutionRequest extends \Google\Model
-{
-    protected $internal_gapi_mappings = ["gCPCloudEventsMode" => "GCPCloudEventsMode"];
-    /**
-     * Required. LINT: LEGACY_NAMES The query parameter value for
-     * __GCP_CloudEventsMode, set by the Eventarc service when configuring
-     * triggers.
-     *
-     * @var string
-     */
-    public $gCPCloudEventsMode;
-    /**
-     * The number of attempts that have been made to deliver this message. This is
-     * set by Pub/Sub for subscriptions that have the "dead letter" feature
-     * enabled, and hence provided here for compatibility, but is ignored by
-     * Workflows.
-     *
-     * @var int
-     */
-    public $deliveryAttempt;
-    protected $messageType = PubsubMessage::class;
-    protected $messageDataType = '';
-    /**
-     * Required. The subscription of the Pub/Sub push notification. Format:
-     * projects/{project}/subscriptions/{sub}
-     *
-     * @var string
-     */
-    public $subscription;
-    /**
-     * Required. LINT: LEGACY_NAMES The query parameter value for
-     * __GCP_CloudEventsMode, set by the Eventarc service when configuring
-     * triggers.
-     *
-     * @param string $gCPCloudEventsMode
-     */
-    public function setGCPCloudEventsMode($gCPCloudEventsMode)
+namespace Google\Service\WorkflowExecutions {
+    class TriggerPubsubExecutionRequest extends \Google\Model
     {
+        protected $internal_gapi_mappings = ["gCPCloudEventsMode" => "GCPCloudEventsMode"];
+        /**
+         * Required. LINT: LEGACY_NAMES The query parameter value for
+         * __GCP_CloudEventsMode, set by the Eventarc service when configuring
+         * triggers.
+         *
+         * @var string
+         */
+        public $gCPCloudEventsMode;
+        /**
+         * The number of attempts that have been made to deliver this message. This is
+         * set by Pub/Sub for subscriptions that have the "dead letter" feature
+         * enabled, and hence provided here for compatibility, but is ignored by
+         * Workflows.
+         *
+         * @var int
+         */
+        public $deliveryAttempt;
+        protected $messageType = PubsubMessage::class;
+        protected $messageDataType = '';
+        /**
+         * Required. The subscription of the Pub/Sub push notification. Format:
+         * projects/{project}/subscriptions/{sub}
+         *
+         * @var string
+         */
+        public $subscription;
+        /**
+         * Required. LINT: LEGACY_NAMES The query parameter value for
+         * __GCP_CloudEventsMode, set by the Eventarc service when configuring
+         * triggers.
+         *
+         * @param string $gCPCloudEventsMode
+         */
+        public function setGCPCloudEventsMode($gCPCloudEventsMode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGCPCloudEventsMode()
+        {
+        }
+        /**
+         * The number of attempts that have been made to deliver this message. This is
+         * set by Pub/Sub for subscriptions that have the "dead letter" feature
+         * enabled, and hence provided here for compatibility, but is ignored by
+         * Workflows.
+         *
+         * @param int $deliveryAttempt
+         */
+        public function setDeliveryAttempt($deliveryAttempt)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDeliveryAttempt()
+        {
+        }
+        /**
+         * Required. The message of the Pub/Sub push notification.
+         *
+         * @param PubsubMessage $message
+         */
+        public function setMessage(PubsubMessage $message)
+        {
+        }
+        /**
+         * @return PubsubMessage
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * Required. The subscription of the Pub/Sub push notification. Format:
+         * projects/{project}/subscriptions/{sub}
+         *
+         * @param string $subscription
+         */
+        public function setSubscription($subscription)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubscription()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WorkflowExecutions\TriggerPubsubExecutionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGCPCloudEventsMode()
-    {
-    }
-    /**
-     * The number of attempts that have been made to deliver this message. This is
-     * set by Pub/Sub for subscriptions that have the "dead letter" feature
-     * enabled, and hence provided here for compatibility, but is ignored by
-     * Workflows.
-     *
-     * @param int $deliveryAttempt
-     */
-    public function setDeliveryAttempt($deliveryAttempt)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getDeliveryAttempt()
-    {
-    }
-    /**
-     * Required. The message of the Pub/Sub push notification.
-     *
-     * @param PubsubMessage $message
-     */
-    public function setMessage(PubsubMessage $message)
-    {
-    }
-    /**
-     * @return PubsubMessage
-     */
-    public function getMessage()
-    {
-    }
-    /**
-     * Required. The subscription of the Pub/Sub push notification. Format:
-     * projects/{project}/subscriptions/{sub}
-     *
-     * @param string $subscription
-     */
-    public function setSubscription($subscription)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubscription()
+    class Google_Service_WorkflowExecutions_TriggerPubsubExecutionRequest extends \Google\Service\WorkflowExecutions\TriggerPubsubExecutionRequest
     {
     }
 }

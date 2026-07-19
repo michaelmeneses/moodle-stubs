@@ -21,118 +21,127 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaAssertionResult extends \Google\Model
-{
-    /**
-     * Unspecified assertion status
-     */
-    public const STATUS_ASSERTION_STATUS_UNSPECIFIED = 'ASSERTION_STATUS_UNSPECIFIED';
-    /**
-     * Assertion succeeded
-     */
-    public const STATUS_SUCCEEDED = 'SUCCEEDED';
-    /**
-     * Assertion failed
-     */
-    public const STATUS_FAILED = 'FAILED';
-    protected $assertionType = GoogleCloudIntegrationsV1alphaAssertion::class;
-    protected $assertionDataType = '';
-    /**
-     * Details of the assertion failure
-     *
-     * @var string
-     */
-    public $failureMessage;
-    /**
-     * Status of assertion to signify if the assertion succeeded or failed
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * Task name of task where the assertion was run.
-     *
-     * @var string
-     */
-    public $taskName;
-    /**
-     * Task number of task where the assertion was run.
-     *
-     * @var string
-     */
-    public $taskNumber;
-    /**
-     * Assertion that was run.
-     *
-     * @param GoogleCloudIntegrationsV1alphaAssertion $assertion
-     */
-    public function setAssertion(GoogleCloudIntegrationsV1alphaAssertion $assertion)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaAssertionResult extends \Google\Model
     {
+        /**
+         * Unspecified assertion status
+         */
+        public const STATUS_ASSERTION_STATUS_UNSPECIFIED = 'ASSERTION_STATUS_UNSPECIFIED';
+        /**
+         * Assertion succeeded
+         */
+        public const STATUS_SUCCEEDED = 'SUCCEEDED';
+        /**
+         * Assertion failed
+         */
+        public const STATUS_FAILED = 'FAILED';
+        protected $assertionType = GoogleCloudIntegrationsV1alphaAssertion::class;
+        protected $assertionDataType = '';
+        /**
+         * Details of the assertion failure
+         *
+         * @var string
+         */
+        public $failureMessage;
+        /**
+         * Status of assertion to signify if the assertion succeeded or failed
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * Task name of task where the assertion was run.
+         *
+         * @var string
+         */
+        public $taskName;
+        /**
+         * Task number of task where the assertion was run.
+         *
+         * @var string
+         */
+        public $taskNumber;
+        /**
+         * Assertion that was run.
+         *
+         * @param GoogleCloudIntegrationsV1alphaAssertion $assertion
+         */
+        public function setAssertion(GoogleCloudIntegrationsV1alphaAssertion $assertion)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaAssertion
+         */
+        public function getAssertion()
+        {
+        }
+        /**
+         * Details of the assertion failure
+         *
+         * @param string $failureMessage
+         */
+        public function setFailureMessage($failureMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFailureMessage()
+        {
+        }
+        /**
+         * Status of assertion to signify if the assertion succeeded or failed
+         *
+         * Accepted values: ASSERTION_STATUS_UNSPECIFIED, SUCCEEDED, FAILED
+         *
+         * @param self::STATUS_* $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return self::STATUS_*
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * Task name of task where the assertion was run.
+         *
+         * @param string $taskName
+         */
+        public function setTaskName($taskName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTaskName()
+        {
+        }
+        /**
+         * Task number of task where the assertion was run.
+         *
+         * @param string $taskNumber
+         */
+        public function setTaskNumber($taskNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTaskNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudIntegrationsV1alphaAssertion
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaAssertionResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssertion()
-    {
-    }
-    /**
-     * Details of the assertion failure
-     *
-     * @param string $failureMessage
-     */
-    public function setFailureMessage($failureMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFailureMessage()
-    {
-    }
-    /**
-     * Status of assertion to signify if the assertion succeeded or failed
-     *
-     * Accepted values: ASSERTION_STATUS_UNSPECIFIED, SUCCEEDED, FAILED
-     *
-     * @param self::STATUS_* $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return self::STATUS_*
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * Task name of task where the assertion was run.
-     *
-     * @param string $taskName
-     */
-    public function setTaskName($taskName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTaskName()
-    {
-    }
-    /**
-     * Task number of task where the assertion was run.
-     *
-     * @param string $taskNumber
-     */
-    public function setTaskNumber($taskNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTaskNumber()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaAssertionResult extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaAssertionResult
     {
     }
 }

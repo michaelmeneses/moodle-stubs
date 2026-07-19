@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class BillingRatesListResponse extends \Google\Collection
-{
-    protected $collection_key = 'billingRates';
-    protected $billingRatesType = BillingRate::class;
-    protected $billingRatesDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#billingRatesListResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Pagination token to be used for the next list operation.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Billing rates collection.
-     *
-     * @param BillingRate[] $billingRates
-     */
-    public function setBillingRates($billingRates)
+namespace Google\Service\Dfareporting {
+    class BillingRatesListResponse extends \Google\Collection
     {
+        protected $collection_key = 'billingRates';
+        protected $billingRatesType = BillingRate::class;
+        protected $billingRatesDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#billingRatesListResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Pagination token to be used for the next list operation.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Billing rates collection.
+         *
+         * @param BillingRate[] $billingRates
+         */
+        public function setBillingRates($billingRates)
+        {
+        }
+        /**
+         * @return BillingRate[]
+         */
+        public function getBillingRates()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#billingRatesListResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Pagination token to be used for the next list operation.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BillingRate[]
+     * Runtime class alias of \Google\Service\Dfareporting\BillingRatesListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBillingRates()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#billingRatesListResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Pagination token to be used for the next list operation.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Dfareporting_BillingRatesListResponse extends \Google\Service\Dfareporting\BillingRatesListResponse
     {
     }
 }

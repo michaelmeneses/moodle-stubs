@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseRules;
-
-class Result extends \Google\Model
-{
-    protected $undefinedType = FirebaserulesEmpty::class;
-    protected $undefinedDataType = '';
-    /**
-     * The result is an actual value. The type of the value must match that of the
-     * type declared by the service.
-     *
-     * @var array
-     */
-    public $value;
-    /**
-     * The result is undefined, meaning the result could not be computed.
-     *
-     * @param FirebaserulesEmpty $undefined
-     */
-    public function setUndefined(FirebaserulesEmpty $undefined)
+namespace Google\Service\FirebaseRules {
+    class Result extends \Google\Model
     {
+        protected $undefinedType = FirebaserulesEmpty::class;
+        protected $undefinedDataType = '';
+        /**
+         * The result is an actual value. The type of the value must match that of the
+         * type declared by the service.
+         *
+         * @var array
+         */
+        public $value;
+        /**
+         * The result is undefined, meaning the result could not be computed.
+         *
+         * @param FirebaserulesEmpty $undefined
+         */
+        public function setUndefined(FirebaserulesEmpty $undefined)
+        {
+        }
+        /**
+         * @return FirebaserulesEmpty
+         */
+        public function getUndefined()
+        {
+        }
+        /**
+         * The result is an actual value. The type of the value must match that of the
+         * type declared by the service.
+         *
+         * @param array $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return array
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FirebaserulesEmpty
+     * Runtime class alias of \Google\Service\FirebaseRules\Result registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUndefined()
-    {
-    }
-    /**
-     * The result is an actual value. The type of the value must match that of the
-     * type declared by the service.
-     *
-     * @param array $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return array
-     */
-    public function getValue()
+    class Google_Service_FirebaseRules_Result extends \Google\Service\FirebaseRules\Result
     {
     }
 }

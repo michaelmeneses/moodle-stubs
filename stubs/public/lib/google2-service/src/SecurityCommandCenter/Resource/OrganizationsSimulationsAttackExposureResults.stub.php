@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter\Resource;
-
-/**
- * The "attackExposureResults" collection of methods.
- * Typical usage is:
- *  <code>
- *   $securitycenterService = new Google\Service\SecurityCommandCenter(...);
- *   $attackExposureResults = $securitycenterService->organizations_simulations_attackExposureResults;
- *  </code>
- */
-class OrganizationsSimulationsAttackExposureResults extends \Google\Service\Resource
-{
+namespace Google\Service\SecurityCommandCenter\Resource {
+    /**
+     * The "attackExposureResults" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $securitycenterService = new Google\Service\SecurityCommandCenter(...);
+     *   $attackExposureResults = $securitycenterService->organizations_simulations_attackExposureResults;
+     *  </code>
+     */
+    class OrganizationsSimulationsAttackExposureResults extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\Resource\OrganizationsSimulationsAttackExposureResults registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_SecurityCommandCenter_Resource_OrganizationsSimulationsAttackExposureResults extends \Google\Service\SecurityCommandCenter\Resource\OrganizationsSimulationsAttackExposureResults
+    {
+    }
 }

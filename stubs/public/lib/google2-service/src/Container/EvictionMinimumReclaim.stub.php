@@ -21,164 +21,173 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class EvictionMinimumReclaim extends \Google\Model
-{
-    /**
-     * Optional. Minimum reclaim for eviction due to imagefs available signal.
-     * Only take percentage value for now. Sample format: "10%". Must be <=10%.
-     * See https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
-     * eviction/#eviction-signals
-     *
-     * @var string
-     */
-    public $imagefsAvailable;
-    /**
-     * Optional. Minimum reclaim for eviction due to imagefs inodes free signal.
-     * Only take percentage value for now. Sample format: "10%". Must be <=10%.
-     * See https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
-     * eviction/#eviction-signals
-     *
-     * @var string
-     */
-    public $imagefsInodesFree;
-    /**
-     * Optional. Minimum reclaim for eviction due to memory available signal. Only
-     * take percentage value for now. Sample format: "10%". Must be <=10%. See
-     * https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
-     * eviction/#eviction-signals
-     *
-     * @var string
-     */
-    public $memoryAvailable;
-    /**
-     * Optional. Minimum reclaim for eviction due to nodefs available signal. Only
-     * take percentage value for now. Sample format: "10%". Must be <=10%. See
-     * https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
-     * eviction/#eviction-signals
-     *
-     * @var string
-     */
-    public $nodefsAvailable;
-    /**
-     * Optional. Minimum reclaim for eviction due to nodefs inodes free signal.
-     * Only take percentage value for now. Sample format: "10%". Must be <=10%.
-     * See https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
-     * eviction/#eviction-signals
-     *
-     * @var string
-     */
-    public $nodefsInodesFree;
-    /**
-     * Optional. Minimum reclaim for eviction due to pid available signal. Only
-     * take percentage value for now. Sample format: "10%". Must be <=10%. See
-     * https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
-     * eviction/#eviction-signals
-     *
-     * @var string
-     */
-    public $pidAvailable;
-    /**
-     * Optional. Minimum reclaim for eviction due to imagefs available signal.
-     * Only take percentage value for now. Sample format: "10%". Must be <=10%.
-     * See https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
-     * eviction/#eviction-signals
-     *
-     * @param string $imagefsAvailable
-     */
-    public function setImagefsAvailable($imagefsAvailable)
+namespace Google\Service\Container {
+    class EvictionMinimumReclaim extends \Google\Model
     {
+        /**
+         * Optional. Minimum reclaim for eviction due to imagefs available signal.
+         * Only take percentage value for now. Sample format: "10%". Must be <=10%.
+         * See https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
+         * eviction/#eviction-signals
+         *
+         * @var string
+         */
+        public $imagefsAvailable;
+        /**
+         * Optional. Minimum reclaim for eviction due to imagefs inodes free signal.
+         * Only take percentage value for now. Sample format: "10%". Must be <=10%.
+         * See https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
+         * eviction/#eviction-signals
+         *
+         * @var string
+         */
+        public $imagefsInodesFree;
+        /**
+         * Optional. Minimum reclaim for eviction due to memory available signal. Only
+         * take percentage value for now. Sample format: "10%". Must be <=10%. See
+         * https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
+         * eviction/#eviction-signals
+         *
+         * @var string
+         */
+        public $memoryAvailable;
+        /**
+         * Optional. Minimum reclaim for eviction due to nodefs available signal. Only
+         * take percentage value for now. Sample format: "10%". Must be <=10%. See
+         * https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
+         * eviction/#eviction-signals
+         *
+         * @var string
+         */
+        public $nodefsAvailable;
+        /**
+         * Optional. Minimum reclaim for eviction due to nodefs inodes free signal.
+         * Only take percentage value for now. Sample format: "10%". Must be <=10%.
+         * See https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
+         * eviction/#eviction-signals
+         *
+         * @var string
+         */
+        public $nodefsInodesFree;
+        /**
+         * Optional. Minimum reclaim for eviction due to pid available signal. Only
+         * take percentage value for now. Sample format: "10%". Must be <=10%. See
+         * https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
+         * eviction/#eviction-signals
+         *
+         * @var string
+         */
+        public $pidAvailable;
+        /**
+         * Optional. Minimum reclaim for eviction due to imagefs available signal.
+         * Only take percentage value for now. Sample format: "10%". Must be <=10%.
+         * See https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
+         * eviction/#eviction-signals
+         *
+         * @param string $imagefsAvailable
+         */
+        public function setImagefsAvailable($imagefsAvailable)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImagefsAvailable()
+        {
+        }
+        /**
+         * Optional. Minimum reclaim for eviction due to imagefs inodes free signal.
+         * Only take percentage value for now. Sample format: "10%". Must be <=10%.
+         * See https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
+         * eviction/#eviction-signals
+         *
+         * @param string $imagefsInodesFree
+         */
+        public function setImagefsInodesFree($imagefsInodesFree)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImagefsInodesFree()
+        {
+        }
+        /**
+         * Optional. Minimum reclaim for eviction due to memory available signal. Only
+         * take percentage value for now. Sample format: "10%". Must be <=10%. See
+         * https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
+         * eviction/#eviction-signals
+         *
+         * @param string $memoryAvailable
+         */
+        public function setMemoryAvailable($memoryAvailable)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMemoryAvailable()
+        {
+        }
+        /**
+         * Optional. Minimum reclaim for eviction due to nodefs available signal. Only
+         * take percentage value for now. Sample format: "10%". Must be <=10%. See
+         * https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
+         * eviction/#eviction-signals
+         *
+         * @param string $nodefsAvailable
+         */
+        public function setNodefsAvailable($nodefsAvailable)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNodefsAvailable()
+        {
+        }
+        /**
+         * Optional. Minimum reclaim for eviction due to nodefs inodes free signal.
+         * Only take percentage value for now. Sample format: "10%". Must be <=10%.
+         * See https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
+         * eviction/#eviction-signals
+         *
+         * @param string $nodefsInodesFree
+         */
+        public function setNodefsInodesFree($nodefsInodesFree)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNodefsInodesFree()
+        {
+        }
+        /**
+         * Optional. Minimum reclaim for eviction due to pid available signal. Only
+         * take percentage value for now. Sample format: "10%". Must be <=10%. See
+         * https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
+         * eviction/#eviction-signals
+         *
+         * @param string $pidAvailable
+         */
+        public function setPidAvailable($pidAvailable)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPidAvailable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Container\EvictionMinimumReclaim registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImagefsAvailable()
-    {
-    }
-    /**
-     * Optional. Minimum reclaim for eviction due to imagefs inodes free signal.
-     * Only take percentage value for now. Sample format: "10%". Must be <=10%.
-     * See https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
-     * eviction/#eviction-signals
-     *
-     * @param string $imagefsInodesFree
-     */
-    public function setImagefsInodesFree($imagefsInodesFree)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImagefsInodesFree()
-    {
-    }
-    /**
-     * Optional. Minimum reclaim for eviction due to memory available signal. Only
-     * take percentage value for now. Sample format: "10%". Must be <=10%. See
-     * https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
-     * eviction/#eviction-signals
-     *
-     * @param string $memoryAvailable
-     */
-    public function setMemoryAvailable($memoryAvailable)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMemoryAvailable()
-    {
-    }
-    /**
-     * Optional. Minimum reclaim for eviction due to nodefs available signal. Only
-     * take percentage value for now. Sample format: "10%". Must be <=10%. See
-     * https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
-     * eviction/#eviction-signals
-     *
-     * @param string $nodefsAvailable
-     */
-    public function setNodefsAvailable($nodefsAvailable)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNodefsAvailable()
-    {
-    }
-    /**
-     * Optional. Minimum reclaim for eviction due to nodefs inodes free signal.
-     * Only take percentage value for now. Sample format: "10%". Must be <=10%.
-     * See https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
-     * eviction/#eviction-signals
-     *
-     * @param string $nodefsInodesFree
-     */
-    public function setNodefsInodesFree($nodefsInodesFree)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNodefsInodesFree()
-    {
-    }
-    /**
-     * Optional. Minimum reclaim for eviction due to pid available signal. Only
-     * take percentage value for now. Sample format: "10%". Must be <=10%. See
-     * https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-
-     * eviction/#eviction-signals
-     *
-     * @param string $pidAvailable
-     */
-    public function setPidAvailable($pidAvailable)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPidAvailable()
+    class Google_Service_Container_EvictionMinimumReclaim extends \Google\Service\Container\EvictionMinimumReclaim
     {
     }
 }

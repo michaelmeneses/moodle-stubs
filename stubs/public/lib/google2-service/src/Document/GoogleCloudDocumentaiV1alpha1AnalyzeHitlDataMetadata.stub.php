@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1alpha1AnalyzeHitlDataMetadata extends \Google\Model
-{
-    protected $commonMetadataType = GoogleCloudDocumentaiV1alpha1CommonOperationMetadata::class;
-    protected $commonMetadataDataType = '';
-    public $commonMetadata;
-    /**
-     * @param GoogleCloudDocumentaiV1alpha1CommonOperationMetadata
-     */
-    public function setCommonMetadata(GoogleCloudDocumentaiV1alpha1CommonOperationMetadata $commonMetadata)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1alpha1AnalyzeHitlDataMetadata extends \Google\Model
     {
+        protected $commonMetadataType = GoogleCloudDocumentaiV1alpha1CommonOperationMetadata::class;
+        protected $commonMetadataDataType = '';
+        public $commonMetadata;
+        /**
+         * @param GoogleCloudDocumentaiV1alpha1CommonOperationMetadata
+         */
+        public function setCommonMetadata(GoogleCloudDocumentaiV1alpha1CommonOperationMetadata $commonMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1alpha1CommonOperationMetadata
+         */
+        public function getCommonMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1alpha1CommonOperationMetadata
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1alpha1AnalyzeHitlDataMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommonMetadata()
+    class Google_Service_Document_GoogleCloudDocumentaiV1alpha1AnalyzeHitlDataMetadata extends \Google\Service\Document\GoogleCloudDocumentaiV1alpha1AnalyzeHitlDataMetadata
     {
     }
 }

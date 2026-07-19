@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class LiveChatFanFundingEventDetails extends \Google\Model
-{
-    /**
-     * A rendered string that displays the fund amount and currency to the user.
-     *
-     * @var string
-     */
-    public $amountDisplayString;
-    /**
-     * The amount of the fund.
-     *
-     * @var string
-     */
-    public $amountMicros;
-    /**
-     * The currency in which the fund was made.
-     *
-     * @var string
-     */
-    public $currency;
-    /**
-     * The comment added by the user to this fan funding event.
-     *
-     * @var string
-     */
-    public $userComment;
-    /**
-     * A rendered string that displays the fund amount and currency to the user.
-     *
-     * @param string $amountDisplayString
-     */
-    public function setAmountDisplayString($amountDisplayString)
+namespace Google\Service\YouTube {
+    class LiveChatFanFundingEventDetails extends \Google\Model
     {
+        /**
+         * A rendered string that displays the fund amount and currency to the user.
+         *
+         * @var string
+         */
+        public $amountDisplayString;
+        /**
+         * The amount of the fund.
+         *
+         * @var string
+         */
+        public $amountMicros;
+        /**
+         * The currency in which the fund was made.
+         *
+         * @var string
+         */
+        public $currency;
+        /**
+         * The comment added by the user to this fan funding event.
+         *
+         * @var string
+         */
+        public $userComment;
+        /**
+         * A rendered string that displays the fund amount and currency to the user.
+         *
+         * @param string $amountDisplayString
+         */
+        public function setAmountDisplayString($amountDisplayString)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAmountDisplayString()
+        {
+        }
+        /**
+         * The amount of the fund.
+         *
+         * @param string $amountMicros
+         */
+        public function setAmountMicros($amountMicros)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAmountMicros()
+        {
+        }
+        /**
+         * The currency in which the fund was made.
+         *
+         * @param string $currency
+         */
+        public function setCurrency($currency)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCurrency()
+        {
+        }
+        /**
+         * The comment added by the user to this fan funding event.
+         *
+         * @param string $userComment
+         */
+        public function setUserComment($userComment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserComment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\LiveChatFanFundingEventDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAmountDisplayString()
-    {
-    }
-    /**
-     * The amount of the fund.
-     *
-     * @param string $amountMicros
-     */
-    public function setAmountMicros($amountMicros)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAmountMicros()
-    {
-    }
-    /**
-     * The currency in which the fund was made.
-     *
-     * @param string $currency
-     */
-    public function setCurrency($currency)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCurrency()
-    {
-    }
-    /**
-     * The comment added by the user to this fan funding event.
-     *
-     * @param string $userComment
-     */
-    public function setUserComment($userComment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserComment()
+    class Google_Service_YouTube_LiveChatFanFundingEventDetails extends \Google\Service\YouTube\LiveChatFanFundingEventDetails
     {
     }
 }

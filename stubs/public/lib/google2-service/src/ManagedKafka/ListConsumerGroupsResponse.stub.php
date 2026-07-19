@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedKafka;
-
-class ListConsumerGroupsResponse extends \Google\Collection
-{
-    protected $collection_key = 'consumerGroups';
-    protected $consumerGroupsType = ConsumerGroup::class;
-    protected $consumerGroupsDataType = 'array';
-    /**
-     * A token that can be sent as `page_token` to retrieve the next page of
-     * results. If this field is omitted, there are no more results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of consumer group in the requested parent. The order of the
-     * consumer groups is unspecified.
-     *
-     * @param ConsumerGroup[] $consumerGroups
-     */
-    public function setConsumerGroups($consumerGroups)
+namespace Google\Service\ManagedKafka {
+    class ListConsumerGroupsResponse extends \Google\Collection
     {
+        protected $collection_key = 'consumerGroups';
+        protected $consumerGroupsType = ConsumerGroup::class;
+        protected $consumerGroupsDataType = 'array';
+        /**
+         * A token that can be sent as `page_token` to retrieve the next page of
+         * results. If this field is omitted, there are no more results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of consumer group in the requested parent. The order of the
+         * consumer groups is unspecified.
+         *
+         * @param ConsumerGroup[] $consumerGroups
+         */
+        public function setConsumerGroups($consumerGroups)
+        {
+        }
+        /**
+         * @return ConsumerGroup[]
+         */
+        public function getConsumerGroups()
+        {
+        }
+        /**
+         * A token that can be sent as `page_token` to retrieve the next page of
+         * results. If this field is omitted, there are no more results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ConsumerGroup[]
+     * Runtime class alias of \Google\Service\ManagedKafka\ListConsumerGroupsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConsumerGroups()
-    {
-    }
-    /**
-     * A token that can be sent as `page_token` to retrieve the next page of
-     * results. If this field is omitted, there are no more results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_ManagedKafka_ListConsumerGroupsResponse extends \Google\Service\ManagedKafka\ListConsumerGroupsResponse
     {
     }
 }

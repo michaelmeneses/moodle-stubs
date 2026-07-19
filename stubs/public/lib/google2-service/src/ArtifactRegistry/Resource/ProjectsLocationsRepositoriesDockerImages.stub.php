@@ -21,46 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry\Resource;
-
-/**
- * The "dockerImages" collection of methods.
- * Typical usage is:
- *  <code>
- *   $artifactregistryService = new Google\Service\ArtifactRegistry(...);
- *   $dockerImages = $artifactregistryService->projects_locations_repositories_dockerImages;
- *  </code>
- */
-class ProjectsLocationsRepositoriesDockerImages extends \Google\Service\Resource
-{
+namespace Google\Service\ArtifactRegistry\Resource {
+    use Google\Service\ArtifactRegistry\DockerImage;
+    use Google\Service\ArtifactRegistry\ListDockerImagesResponse;
     /**
-     * Gets a docker image. (dockerImages.get)
-     *
-     * @param string $name Required. The name of the docker images.
-     * @param array $optParams Optional parameters.
-     * @return DockerImage
-     * @throws \Google\Service\Exception
+     * The "dockerImages" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $artifactregistryService = new Google\Service\ArtifactRegistry(...);
+     *   $dockerImages = $artifactregistryService->projects_locations_repositories_dockerImages;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocationsRepositoriesDockerImages extends \Google\Service\Resource
     {
+        /**
+         * Gets a docker image. (dockerImages.get)
+         *
+         * @param string $name Required. The name of the docker images.
+         * @param array $optParams Optional parameters.
+         * @return DockerImage
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists docker images.
+         * (dockerImages.listProjectsLocationsRepositoriesDockerImages)
+         *
+         * @param string $parent Required. The name of the parent resource whose docker
+         * images will be listed.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string orderBy The field to order the results by.
+         * @opt_param int pageSize The maximum number of artifacts to return. Maximum
+         * page size is 1,000.
+         * @opt_param string pageToken The next_page_token value returned from a
+         * previous list request, if any.
+         * @return ListDockerImagesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsRepositoriesDockerImages($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists docker images.
-     * (dockerImages.listProjectsLocationsRepositoriesDockerImages)
-     *
-     * @param string $parent Required. The name of the parent resource whose docker
-     * images will be listed.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string orderBy The field to order the results by.
-     * @opt_param int pageSize The maximum number of artifacts to return. Maximum
-     * page size is 1,000.
-     * @opt_param string pageToken The next_page_token value returned from a
-     * previous list request, if any.
-     * @return ListDockerImagesResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ArtifactRegistry\Resource\ProjectsLocationsRepositoriesDockerImages registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listProjectsLocationsRepositoriesDockerImages($parent, $optParams = [])
+    class Google_Service_ArtifactRegistry_Resource_ProjectsLocationsRepositoriesDockerImages extends \Google\Service\ArtifactRegistry\Resource\ProjectsLocationsRepositoriesDockerImages
     {
     }
 }

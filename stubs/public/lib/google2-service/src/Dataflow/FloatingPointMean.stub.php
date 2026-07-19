@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class FloatingPointMean extends \Google\Model
-{
-    protected $countType = SplitInt64::class;
-    protected $countDataType = '';
-    /**
-     * The sum of all values being aggregated.
-     *
-     * @var 
-     */
-    public $sum;
-    /**
-     * The number of values being aggregated.
-     *
-     * @param SplitInt64 $count
-     */
-    public function setCount(SplitInt64 $count)
+namespace Google\Service\Dataflow {
+    class FloatingPointMean extends \Google\Model
     {
+        protected $countType = SplitInt64::class;
+        protected $countDataType = '';
+        /**
+         * The sum of all values being aggregated.
+         *
+         * @var 
+         */
+        public $sum;
+        /**
+         * The number of values being aggregated.
+         *
+         * @param SplitInt64 $count
+         */
+        public function setCount(SplitInt64 $count)
+        {
+        }
+        /**
+         * @return SplitInt64
+         */
+        public function getCount()
+        {
+        }
+        public function setSum($sum)
+        {
+        }
+        public function getSum()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SplitInt64
+     * Runtime class alias of \Google\Service\Dataflow\FloatingPointMean registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCount()
-    {
-    }
-    public function setSum($sum)
-    {
-    }
-    public function getSum()
+    class Google_Service_Dataflow_FloatingPointMean extends \Google\Service\Dataflow\FloatingPointMean
     {
     }
 }

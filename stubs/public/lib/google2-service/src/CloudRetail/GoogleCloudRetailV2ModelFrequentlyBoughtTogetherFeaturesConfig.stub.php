@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2ModelFrequentlyBoughtTogetherFeaturesConfig extends \Google\Model
-{
-    /**
-     * Unspecified default value, should never be explicitly set. Defaults to
-     * MULTIPLE_CONTEXT_PRODUCTS.
-     */
-    public const CONTEXT_PRODUCTS_TYPE_CONTEXT_PRODUCTS_TYPE_UNSPECIFIED = 'CONTEXT_PRODUCTS_TYPE_UNSPECIFIED';
-    /**
-     * Use only a single product as context for the recommendation. Typically used
-     * on pages like add-to-cart or product details.
-     */
-    public const CONTEXT_PRODUCTS_TYPE_SINGLE_CONTEXT_PRODUCT = 'SINGLE_CONTEXT_PRODUCT';
-    /**
-     * Use one or multiple products as context for the recommendation. Typically
-     * used on shopping cart pages.
-     */
-    public const CONTEXT_PRODUCTS_TYPE_MULTIPLE_CONTEXT_PRODUCTS = 'MULTIPLE_CONTEXT_PRODUCTS';
-    /**
-     * Optional. Specifies the context of the model when it is used in predict
-     * requests. Can only be set for the `frequently-bought-together` type. If it
-     * isn't specified, it defaults to MULTIPLE_CONTEXT_PRODUCTS.
-     *
-     * @var string
-     */
-    public $contextProductsType;
-    /**
-     * Optional. Specifies the context of the model when it is used in predict
-     * requests. Can only be set for the `frequently-bought-together` type. If it
-     * isn't specified, it defaults to MULTIPLE_CONTEXT_PRODUCTS.
-     *
-     * Accepted values: CONTEXT_PRODUCTS_TYPE_UNSPECIFIED, SINGLE_CONTEXT_PRODUCT,
-     * MULTIPLE_CONTEXT_PRODUCTS
-     *
-     * @param self::CONTEXT_PRODUCTS_TYPE_* $contextProductsType
-     */
-    public function setContextProductsType($contextProductsType)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2ModelFrequentlyBoughtTogetherFeaturesConfig extends \Google\Model
     {
+        /**
+         * Unspecified default value, should never be explicitly set. Defaults to
+         * MULTIPLE_CONTEXT_PRODUCTS.
+         */
+        public const CONTEXT_PRODUCTS_TYPE_CONTEXT_PRODUCTS_TYPE_UNSPECIFIED = 'CONTEXT_PRODUCTS_TYPE_UNSPECIFIED';
+        /**
+         * Use only a single product as context for the recommendation. Typically used
+         * on pages like add-to-cart or product details.
+         */
+        public const CONTEXT_PRODUCTS_TYPE_SINGLE_CONTEXT_PRODUCT = 'SINGLE_CONTEXT_PRODUCT';
+        /**
+         * Use one or multiple products as context for the recommendation. Typically
+         * used on shopping cart pages.
+         */
+        public const CONTEXT_PRODUCTS_TYPE_MULTIPLE_CONTEXT_PRODUCTS = 'MULTIPLE_CONTEXT_PRODUCTS';
+        /**
+         * Optional. Specifies the context of the model when it is used in predict
+         * requests. Can only be set for the `frequently-bought-together` type. If it
+         * isn't specified, it defaults to MULTIPLE_CONTEXT_PRODUCTS.
+         *
+         * @var string
+         */
+        public $contextProductsType;
+        /**
+         * Optional. Specifies the context of the model when it is used in predict
+         * requests. Can only be set for the `frequently-bought-together` type. If it
+         * isn't specified, it defaults to MULTIPLE_CONTEXT_PRODUCTS.
+         *
+         * Accepted values: CONTEXT_PRODUCTS_TYPE_UNSPECIFIED, SINGLE_CONTEXT_PRODUCT,
+         * MULTIPLE_CONTEXT_PRODUCTS
+         *
+         * @param self::CONTEXT_PRODUCTS_TYPE_* $contextProductsType
+         */
+        public function setContextProductsType($contextProductsType)
+        {
+        }
+        /**
+         * @return self::CONTEXT_PRODUCTS_TYPE_*
+         */
+        public function getContextProductsType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CONTEXT_PRODUCTS_TYPE_*
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2ModelFrequentlyBoughtTogetherFeaturesConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContextProductsType()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2ModelFrequentlyBoughtTogetherFeaturesConfig extends \Google\Service\CloudRetail\GoogleCloudRetailV2ModelFrequentlyBoughtTogetherFeaturesConfig
     {
     }
 }

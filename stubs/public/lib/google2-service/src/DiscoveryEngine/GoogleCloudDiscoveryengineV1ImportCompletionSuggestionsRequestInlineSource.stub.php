@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1ImportCompletionSuggestionsRequestInlineSource extends \Google\Collection
-{
-    protected $collection_key = 'suggestions';
-    protected $suggestionsType = GoogleCloudDiscoveryengineV1CompletionSuggestion::class;
-    protected $suggestionsDataType = 'array';
-    /**
-     * Required. A list of all denylist entries to import. Max of 1000 items.
-     *
-     * @param GoogleCloudDiscoveryengineV1CompletionSuggestion[] $suggestions
-     */
-    public function setSuggestions($suggestions)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1ImportCompletionSuggestionsRequestInlineSource extends \Google\Collection
     {
+        protected $collection_key = 'suggestions';
+        protected $suggestionsType = GoogleCloudDiscoveryengineV1CompletionSuggestion::class;
+        protected $suggestionsDataType = 'array';
+        /**
+         * Required. A list of all denylist entries to import. Max of 1000 items.
+         *
+         * @param GoogleCloudDiscoveryengineV1CompletionSuggestion[] $suggestions
+         */
+        public function setSuggestions($suggestions)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1CompletionSuggestion[]
+         */
+        public function getSuggestions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1CompletionSuggestion[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ImportCompletionSuggestionsRequestInlineSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSuggestions()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1ImportCompletionSuggestionsRequestInlineSource extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ImportCompletionSuggestionsRequestInlineSource
     {
     }
 }

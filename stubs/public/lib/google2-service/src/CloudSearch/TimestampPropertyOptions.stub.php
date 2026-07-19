@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class TimestampPropertyOptions extends \Google\Model
-{
-    protected $operatorOptionsType = TimestampOperatorOptions::class;
-    protected $operatorOptionsDataType = '';
-    /**
-     * If set, describes how the timestamp should be used as a search operator.
-     *
-     * @param TimestampOperatorOptions $operatorOptions
-     */
-    public function setOperatorOptions(TimestampOperatorOptions $operatorOptions)
+namespace Google\Service\CloudSearch {
+    class TimestampPropertyOptions extends \Google\Model
     {
+        protected $operatorOptionsType = TimestampOperatorOptions::class;
+        protected $operatorOptionsDataType = '';
+        /**
+         * If set, describes how the timestamp should be used as a search operator.
+         *
+         * @param TimestampOperatorOptions $operatorOptions
+         */
+        public function setOperatorOptions(TimestampOperatorOptions $operatorOptions)
+        {
+        }
+        /**
+         * @return TimestampOperatorOptions
+         */
+        public function getOperatorOptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TimestampOperatorOptions
+     * Runtime class alias of \Google\Service\CloudSearch\TimestampPropertyOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOperatorOptions()
+    class Google_Service_CloudSearch_TimestampPropertyOptions extends \Google\Service\CloudSearch\TimestampPropertyOptions
     {
     }
 }

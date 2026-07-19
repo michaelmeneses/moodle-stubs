@@ -21,77 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee\Resource;
-
-/**
- * The "attachments" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apigeeService = new Google\Service\Apigee(...);
- *   $attachments = $apigeeService->organizations_instances_attachments;
- *  </code>
- */
-class OrganizationsInstancesAttachments extends \Google\Service\Resource
-{
+namespace Google\Service\Apigee\Resource {
+    use Google\Service\Apigee\GoogleCloudApigeeV1InstanceAttachment;
+    use Google\Service\Apigee\GoogleCloudApigeeV1ListInstanceAttachmentsResponse;
+    use Google\Service\Apigee\GoogleLongrunningOperation;
     /**
-     * Creates a new attachment of an environment to an instance. **Note:** Not
-     * supported for Apigee hybrid. (attachments.create)
-     *
-     * @param string $parent Required. Name of the instance. Use the following
-     * structure in your request: `organizations/{org}/instances/{instance}`.
-     * @param GoogleCloudApigeeV1InstanceAttachment $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * The "attachments" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apigeeService = new Google\Service\Apigee(...);
+     *   $attachments = $apigeeService->organizations_instances_attachments;
+     *  </code>
      */
-    public function create($parent, GoogleCloudApigeeV1InstanceAttachment $postBody, $optParams = [])
+    class OrganizationsInstancesAttachments extends \Google\Service\Resource
     {
+        /**
+         * Creates a new attachment of an environment to an instance. **Note:** Not
+         * supported for Apigee hybrid. (attachments.create)
+         *
+         * @param string $parent Required. Name of the instance. Use the following
+         * structure in your request: `organizations/{org}/instances/{instance}`.
+         * @param GoogleCloudApigeeV1InstanceAttachment $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudApigeeV1InstanceAttachment $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes an attachment. **Note:** Not supported for Apigee hybrid.
+         * (attachments.delete)
+         *
+         * @param string $name Required. Name of the attachment. Use the following
+         * structure in your request:
+         * `organizations/{org}/instances/{instance}/attachments/{attachment}`.
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets an attachment. **Note:** Not supported for Apigee hybrid.
+         * (attachments.get)
+         *
+         * @param string $name Required. Name of the attachment. Use the following
+         * structure in your request:
+         * `organizations/{org}/instances/{instance}/attachments/{attachment}`
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1InstanceAttachment
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists all attachments to an instance. **Note:** Not supported for Apigee
+         * hybrid. (attachments.listOrganizationsInstancesAttachments)
+         *
+         * @param string $parent Required. Name of the organization. Use the following
+         * structure in your request: `organizations/{org}/instances/{instance}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Maximum number of instance attachments to return.
+         * Defaults to 25.
+         * @opt_param string pageToken Page token, returned by a previous
+         * ListInstanceAttachments call, that you can use to retrieve the next page of
+         * content.
+         * @return GoogleCloudApigeeV1ListInstanceAttachmentsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listOrganizationsInstancesAttachments($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes an attachment. **Note:** Not supported for Apigee hybrid.
-     * (attachments.delete)
-     *
-     * @param string $name Required. Name of the attachment. Use the following
-     * structure in your request:
-     * `organizations/{org}/instances/{instance}/attachments/{attachment}`.
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Apigee\Resource\OrganizationsInstancesAttachments registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets an attachment. **Note:** Not supported for Apigee hybrid.
-     * (attachments.get)
-     *
-     * @param string $name Required. Name of the attachment. Use the following
-     * structure in your request:
-     * `organizations/{org}/instances/{instance}/attachments/{attachment}`
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1InstanceAttachment
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists all attachments to an instance. **Note:** Not supported for Apigee
-     * hybrid. (attachments.listOrganizationsInstancesAttachments)
-     *
-     * @param string $parent Required. Name of the organization. Use the following
-     * structure in your request: `organizations/{org}/instances/{instance}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Maximum number of instance attachments to return.
-     * Defaults to 25.
-     * @opt_param string pageToken Page token, returned by a previous
-     * ListInstanceAttachments call, that you can use to retrieve the next page of
-     * content.
-     * @return GoogleCloudApigeeV1ListInstanceAttachmentsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listOrganizationsInstancesAttachments($parent, $optParams = [])
+    class Google_Service_Apigee_Resource_OrganizationsInstancesAttachments extends \Google\Service\Apigee\Resource\OrganizationsInstancesAttachments
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Iam;
-
-class GoogleIamV1LoggingAuditData extends \Google\Model
-{
-    protected $policyDeltaType = GoogleIamV1PolicyDelta::class;
-    protected $policyDeltaDataType = '';
-    /**
-     * Policy delta between the original policy and the newly set policy.
-     *
-     * @param GoogleIamV1PolicyDelta $policyDelta
-     */
-    public function setPolicyDelta(GoogleIamV1PolicyDelta $policyDelta)
+namespace Google\Service\Iam {
+    class GoogleIamV1LoggingAuditData extends \Google\Model
     {
+        protected $policyDeltaType = GoogleIamV1PolicyDelta::class;
+        protected $policyDeltaDataType = '';
+        /**
+         * Policy delta between the original policy and the newly set policy.
+         *
+         * @param GoogleIamV1PolicyDelta $policyDelta
+         */
+        public function setPolicyDelta(GoogleIamV1PolicyDelta $policyDelta)
+        {
+        }
+        /**
+         * @return GoogleIamV1PolicyDelta
+         */
+        public function getPolicyDelta()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleIamV1PolicyDelta
+     * Runtime class alias of \Google\Service\Iam\GoogleIamV1LoggingAuditData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPolicyDelta()
+    class Google_Service_Iam_GoogleIamV1LoggingAuditData extends \Google\Service\Iam\GoogleIamV1LoggingAuditData
     {
     }
 }

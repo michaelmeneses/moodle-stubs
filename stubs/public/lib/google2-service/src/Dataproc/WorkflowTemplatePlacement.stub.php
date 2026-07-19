@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class WorkflowTemplatePlacement extends \Google\Model
-{
-    protected $clusterSelectorType = ClusterSelector::class;
-    protected $clusterSelectorDataType = '';
-    protected $managedClusterType = ManagedCluster::class;
-    protected $managedClusterDataType = '';
-    /**
-     * Optional. A selector that chooses target cluster for jobs based on
-     * metadata.The selector is evaluated at the time each job is submitted.
-     *
-     * @param ClusterSelector $clusterSelector
-     */
-    public function setClusterSelector(ClusterSelector $clusterSelector)
+namespace Google\Service\Dataproc {
+    class WorkflowTemplatePlacement extends \Google\Model
     {
+        protected $clusterSelectorType = ClusterSelector::class;
+        protected $clusterSelectorDataType = '';
+        protected $managedClusterType = ManagedCluster::class;
+        protected $managedClusterDataType = '';
+        /**
+         * Optional. A selector that chooses target cluster for jobs based on
+         * metadata.The selector is evaluated at the time each job is submitted.
+         *
+         * @param ClusterSelector $clusterSelector
+         */
+        public function setClusterSelector(ClusterSelector $clusterSelector)
+        {
+        }
+        /**
+         * @return ClusterSelector
+         */
+        public function getClusterSelector()
+        {
+        }
+        /**
+         * A cluster that is managed by the workflow.
+         *
+         * @param ManagedCluster $managedCluster
+         */
+        public function setManagedCluster(ManagedCluster $managedCluster)
+        {
+        }
+        /**
+         * @return ManagedCluster
+         */
+        public function getManagedCluster()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ClusterSelector
+     * Runtime class alias of \Google\Service\Dataproc\WorkflowTemplatePlacement registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClusterSelector()
-    {
-    }
-    /**
-     * A cluster that is managed by the workflow.
-     *
-     * @param ManagedCluster $managedCluster
-     */
-    public function setManagedCluster(ManagedCluster $managedCluster)
-    {
-    }
-    /**
-     * @return ManagedCluster
-     */
-    public function getManagedCluster()
+    class Google_Service_Dataproc_WorkflowTemplatePlacement extends \Google\Service\Dataproc\WorkflowTemplatePlacement
     {
     }
 }

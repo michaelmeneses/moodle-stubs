@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class Summary extends \Google\Model
-{
-    /**
-     * Output only. Number of failures
-     *
-     * @var string
-     */
-    public $failures;
-    /**
-     * Output only. Number of new failures compared to the previous execution
-     *
-     * @var string
-     */
-    public $newFailures;
-    /**
-     * Output only. Number of new fixes compared to the previous execution
-     *
-     * @var string
-     */
-    public $newFixes;
-    /**
-     * Output only. Number of failures
-     *
-     * @param string $failures
-     */
-    public function setFailures($failures)
+namespace Google\Service\WorkloadManager {
+    class Summary extends \Google\Model
     {
+        /**
+         * Output only. Number of failures
+         *
+         * @var string
+         */
+        public $failures;
+        /**
+         * Output only. Number of new failures compared to the previous execution
+         *
+         * @var string
+         */
+        public $newFailures;
+        /**
+         * Output only. Number of new fixes compared to the previous execution
+         *
+         * @var string
+         */
+        public $newFixes;
+        /**
+         * Output only. Number of failures
+         *
+         * @param string $failures
+         */
+        public function setFailures($failures)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFailures()
+        {
+        }
+        /**
+         * Output only. Number of new failures compared to the previous execution
+         *
+         * @param string $newFailures
+         */
+        public function setNewFailures($newFailures)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNewFailures()
+        {
+        }
+        /**
+         * Output only. Number of new fixes compared to the previous execution
+         *
+         * @param string $newFixes
+         */
+        public function setNewFixes($newFixes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNewFixes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WorkloadManager\Summary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFailures()
-    {
-    }
-    /**
-     * Output only. Number of new failures compared to the previous execution
-     *
-     * @param string $newFailures
-     */
-    public function setNewFailures($newFailures)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNewFailures()
-    {
-    }
-    /**
-     * Output only. Number of new fixes compared to the previous execution
-     *
-     * @param string $newFixes
-     */
-    public function setNewFixes($newFixes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNewFixes()
+    class Google_Service_WorkloadManager_Summary extends \Google\Service\WorkloadManager\Summary
     {
     }
 }

@@ -21,39 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudControlsPartnerService\Resource;
-
-/**
- * The "accessApprovalRequests" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudcontrolspartnerService = new Google\Service\CloudControlsPartnerService(...);
- *   $accessApprovalRequests = $cloudcontrolspartnerService->organizations_locations_customers_workloads_accessApprovalRequests;
- *  </code>
- */
-class OrganizationsLocationsCustomersWorkloadsAccessApprovalRequests extends \Google\Service\Resource
-{
+namespace Google\Service\CloudControlsPartnerService\Resource {
+    use Google\Service\CloudControlsPartnerService\ListAccessApprovalRequestsResponse;
     /**
-     * Deprecated: Only returns access approval requests directly associated with an
-     * assured workload folder. (accessApprovalRequests.listOrganizationsLocationsCu
-     * stomersWorkloadsAccessApprovalRequests)
-     *
-     * @param string $parent Required. Parent resource Format: `organizations/{organ
-     * ization}/locations/{location}/customers/{customer}/workloads/{workload}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. Filtering results.
-     * @opt_param string orderBy Optional. Hint for how to order the results.
-     * @opt_param int pageSize Optional. The maximum number of access requests to
-     * return. The service may return fewer than this value. If unspecified, at most
-     * 500 access requests will be returned.
-     * @opt_param string pageToken Optional. A page token, received from a previous
-     * `ListAccessApprovalRequests` call. Provide this to retrieve the subsequent
-     * page.
-     * @return ListAccessApprovalRequestsResponse
-     * @throws \Google\Service\Exception
+     * The "accessApprovalRequests" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudcontrolspartnerService = new Google\Service\CloudControlsPartnerService(...);
+     *   $accessApprovalRequests = $cloudcontrolspartnerService->organizations_locations_customers_workloads_accessApprovalRequests;
+     *  </code>
      */
-    public function listOrganizationsLocationsCustomersWorkloadsAccessApprovalRequests($parent, $optParams = [])
+    class OrganizationsLocationsCustomersWorkloadsAccessApprovalRequests extends \Google\Service\Resource
+    {
+        /**
+         * Deprecated: Only returns access approval requests directly associated with an
+         * assured workload folder. (accessApprovalRequests.listOrganizationsLocationsCu
+         * stomersWorkloadsAccessApprovalRequests)
+         *
+         * @param string $parent Required. Parent resource Format: `organizations/{organ
+         * ization}/locations/{location}/customers/{customer}/workloads/{workload}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. Filtering results.
+         * @opt_param string orderBy Optional. Hint for how to order the results.
+         * @opt_param int pageSize Optional. The maximum number of access requests to
+         * return. The service may return fewer than this value. If unspecified, at most
+         * 500 access requests will be returned.
+         * @opt_param string pageToken Optional. A page token, received from a previous
+         * `ListAccessApprovalRequests` call. Provide this to retrieve the subsequent
+         * page.
+         * @return ListAccessApprovalRequestsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listOrganizationsLocationsCustomersWorkloadsAccessApprovalRequests($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudControlsPartnerService\Resource\OrganizationsLocationsCustomersWorkloadsAccessApprovalRequests registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudControlsPartnerService_Resource_OrganizationsLocationsCustomersWorkloadsAccessApprovalRequests extends \Google\Service\CloudControlsPartnerService\Resource\OrganizationsLocationsCustomersWorkloadsAccessApprovalRequests
     {
     }
 }

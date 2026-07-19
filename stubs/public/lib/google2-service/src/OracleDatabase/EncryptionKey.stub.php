@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class EncryptionKey extends \Google\Model
-{
-    /**
-     * Default unspecified value.
-     */
-    public const PROVIDER_PROVIDER_UNSPECIFIED = 'PROVIDER_UNSPECIFIED';
-    /**
-     * Google Managed KMS key, if selected, please provide the KMS key name.
-     */
-    public const PROVIDER_GOOGLE_MANAGED = 'GOOGLE_MANAGED';
-    /**
-     * Oracle Managed.
-     */
-    public const PROVIDER_ORACLE_MANAGED = 'ORACLE_MANAGED';
-    /**
-     * Optional. The KMS key used to encrypt the Autonomous Database. This field
-     * is required if the provider is GOOGLE_MANAGED. The name of the KMS key
-     * resource in the following format: `projects/{project}/locations/{location}/
-     * keyRings/{key_ring}/cryptoKeys/{crypto_key}`.
-     *
-     * @var string
-     */
-    public $kmsKey;
-    /**
-     * Optional. The provider of the encryption key.
-     *
-     * @var string
-     */
-    public $provider;
-    /**
-     * Optional. The KMS key used to encrypt the Autonomous Database. This field
-     * is required if the provider is GOOGLE_MANAGED. The name of the KMS key
-     * resource in the following format: `projects/{project}/locations/{location}/
-     * keyRings/{key_ring}/cryptoKeys/{crypto_key}`.
-     *
-     * @param string $kmsKey
-     */
-    public function setKmsKey($kmsKey)
+namespace Google\Service\OracleDatabase {
+    class EncryptionKey extends \Google\Model
     {
+        /**
+         * Default unspecified value.
+         */
+        public const PROVIDER_PROVIDER_UNSPECIFIED = 'PROVIDER_UNSPECIFIED';
+        /**
+         * Google Managed KMS key, if selected, please provide the KMS key name.
+         */
+        public const PROVIDER_GOOGLE_MANAGED = 'GOOGLE_MANAGED';
+        /**
+         * Oracle Managed.
+         */
+        public const PROVIDER_ORACLE_MANAGED = 'ORACLE_MANAGED';
+        /**
+         * Optional. The KMS key used to encrypt the Autonomous Database. This field
+         * is required if the provider is GOOGLE_MANAGED. The name of the KMS key
+         * resource in the following format: `projects/{project}/locations/{location}/
+         * keyRings/{key_ring}/cryptoKeys/{crypto_key}`.
+         *
+         * @var string
+         */
+        public $kmsKey;
+        /**
+         * Optional. The provider of the encryption key.
+         *
+         * @var string
+         */
+        public $provider;
+        /**
+         * Optional. The KMS key used to encrypt the Autonomous Database. This field
+         * is required if the provider is GOOGLE_MANAGED. The name of the KMS key
+         * resource in the following format: `projects/{project}/locations/{location}/
+         * keyRings/{key_ring}/cryptoKeys/{crypto_key}`.
+         *
+         * @param string $kmsKey
+         */
+        public function setKmsKey($kmsKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKmsKey()
+        {
+        }
+        /**
+         * Optional. The provider of the encryption key.
+         *
+         * Accepted values: PROVIDER_UNSPECIFIED, GOOGLE_MANAGED, ORACLE_MANAGED
+         *
+         * @param self::PROVIDER_* $provider
+         */
+        public function setProvider($provider)
+        {
+        }
+        /**
+         * @return self::PROVIDER_*
+         */
+        public function getProvider()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OracleDatabase\EncryptionKey registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKmsKey()
-    {
-    }
-    /**
-     * Optional. The provider of the encryption key.
-     *
-     * Accepted values: PROVIDER_UNSPECIFIED, GOOGLE_MANAGED, ORACLE_MANAGED
-     *
-     * @param self::PROVIDER_* $provider
-     */
-    public function setProvider($provider)
-    {
-    }
-    /**
-     * @return self::PROVIDER_*
-     */
-    public function getProvider()
+    class Google_Service_OracleDatabase_EncryptionKey extends \Google\Service\OracleDatabase\EncryptionKey
     {
     }
 }

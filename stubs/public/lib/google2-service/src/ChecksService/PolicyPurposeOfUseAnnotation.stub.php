@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChecksService;
-
-class PolicyPurposeOfUseAnnotation extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $endOffset;
-    /**
-     * @var string
-     */
-    public $purposeOfUse;
-    /**
-     * @var float
-     */
-    public $score;
-    /**
-     * @var string
-     */
-    public $startOffset;
-    /**
-     * @var string
-     */
-    public $textContent;
-    /**
-     * @param string
-     */
-    public function setEndOffset($endOffset)
+namespace Google\Service\ChecksService {
+    class PolicyPurposeOfUseAnnotation extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $endOffset;
+        /**
+         * @var string
+         */
+        public $purposeOfUse;
+        /**
+         * @var float
+         */
+        public $score;
+        /**
+         * @var string
+         */
+        public $startOffset;
+        /**
+         * @var string
+         */
+        public $textContent;
+        /**
+         * @param string
+         */
+        public function setEndOffset($endOffset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndOffset()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPurposeOfUse($purposeOfUse)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPurposeOfUse()
+        {
+        }
+        /**
+         * @param float
+         */
+        public function setScore($score)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getScore()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStartOffset($startOffset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartOffset()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTextContent($textContent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTextContent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChecksService\PolicyPurposeOfUseAnnotation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndOffset()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPurposeOfUse($purposeOfUse)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPurposeOfUse()
-    {
-    }
-    /**
-     * @param float
-     */
-    public function setScore($score)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getScore()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStartOffset($startOffset)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartOffset()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTextContent($textContent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTextContent()
+    class Google_Service_ChecksService_PolicyPurposeOfUseAnnotation extends \Google\Service\ChecksService\PolicyPurposeOfUseAnnotation
     {
     }
 }

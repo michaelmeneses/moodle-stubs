@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class BareMetalAdminWorkloadNodeConfig extends \Google\Model
-{
-    /**
-     * The maximum number of pods a node can run. The size of the CIDR range
-     * assigned to the node will be derived from this parameter. By default 110
-     * Pods are created per Node. Upper bound is 250 for both HA and non-HA admin
-     * cluster. Lower bound is 64 for non-HA admin cluster and 32 for HA admin
-     * cluster.
-     *
-     * @var string
-     */
-    public $maxPodsPerNode;
-    /**
-     * The maximum number of pods a node can run. The size of the CIDR range
-     * assigned to the node will be derived from this parameter. By default 110
-     * Pods are created per Node. Upper bound is 250 for both HA and non-HA admin
-     * cluster. Lower bound is 64 for non-HA admin cluster and 32 for HA admin
-     * cluster.
-     *
-     * @param string $maxPodsPerNode
-     */
-    public function setMaxPodsPerNode($maxPodsPerNode)
+namespace Google\Service\GKEOnPrem {
+    class BareMetalAdminWorkloadNodeConfig extends \Google\Model
     {
+        /**
+         * The maximum number of pods a node can run. The size of the CIDR range
+         * assigned to the node will be derived from this parameter. By default 110
+         * Pods are created per Node. Upper bound is 250 for both HA and non-HA admin
+         * cluster. Lower bound is 64 for non-HA admin cluster and 32 for HA admin
+         * cluster.
+         *
+         * @var string
+         */
+        public $maxPodsPerNode;
+        /**
+         * The maximum number of pods a node can run. The size of the CIDR range
+         * assigned to the node will be derived from this parameter. By default 110
+         * Pods are created per Node. Upper bound is 250 for both HA and non-HA admin
+         * cluster. Lower bound is 64 for non-HA admin cluster and 32 for HA admin
+         * cluster.
+         *
+         * @param string $maxPodsPerNode
+         */
+        public function setMaxPodsPerNode($maxPodsPerNode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxPodsPerNode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEOnPrem\BareMetalAdminWorkloadNodeConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxPodsPerNode()
+    class Google_Service_GKEOnPrem_BareMetalAdminWorkloadNodeConfig extends \Google\Service\GKEOnPrem\BareMetalAdminWorkloadNodeConfig
     {
     }
 }

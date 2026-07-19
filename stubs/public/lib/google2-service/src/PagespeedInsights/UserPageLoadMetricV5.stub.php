@@ -21,127 +21,136 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PagespeedInsights;
-
-class UserPageLoadMetricV5 extends \Google\Collection
-{
-    protected $collection_key = 'distributions';
-    /**
-     * The category of the specific time metric.
-     *
-     * @var string
-     */
-    public $category;
-    protected $distributionsType = Bucket::class;
-    protected $distributionsDataType = 'array';
-    /**
-     * Identifies the form factor of the metric being collected.
-     *
-     * @var string
-     */
-    public $formFactor;
-    /**
-     * The median number of the metric, in millisecond.
-     *
-     * @var int
-     */
-    public $median;
-    /**
-     * Identifies the type of the metric.
-     *
-     * @var string
-     */
-    public $metricId;
-    /**
-     * We use this field to store certain percentile value for this metric. For
-     * v4, this field contains pc50. For v5, this field contains pc90.
-     *
-     * @var int
-     */
-    public $percentile;
-    /**
-     * The category of the specific time metric.
-     *
-     * @param string $category
-     */
-    public function setCategory($category)
+namespace Google\Service\PagespeedInsights {
+    class UserPageLoadMetricV5 extends \Google\Collection
     {
+        protected $collection_key = 'distributions';
+        /**
+         * The category of the specific time metric.
+         *
+         * @var string
+         */
+        public $category;
+        protected $distributionsType = Bucket::class;
+        protected $distributionsDataType = 'array';
+        /**
+         * Identifies the form factor of the metric being collected.
+         *
+         * @var string
+         */
+        public $formFactor;
+        /**
+         * The median number of the metric, in millisecond.
+         *
+         * @var int
+         */
+        public $median;
+        /**
+         * Identifies the type of the metric.
+         *
+         * @var string
+         */
+        public $metricId;
+        /**
+         * We use this field to store certain percentile value for this metric. For
+         * v4, this field contains pc50. For v5, this field contains pc90.
+         *
+         * @var int
+         */
+        public $percentile;
+        /**
+         * The category of the specific time metric.
+         *
+         * @param string $category
+         */
+        public function setCategory($category)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCategory()
+        {
+        }
+        /**
+         * Metric distributions. Proportions should sum up to 1.
+         *
+         * @param Bucket[] $distributions
+         */
+        public function setDistributions($distributions)
+        {
+        }
+        /**
+         * @return Bucket[]
+         */
+        public function getDistributions()
+        {
+        }
+        /**
+         * Identifies the form factor of the metric being collected.
+         *
+         * @param string $formFactor
+         */
+        public function setFormFactor($formFactor)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFormFactor()
+        {
+        }
+        /**
+         * The median number of the metric, in millisecond.
+         *
+         * @param int $median
+         */
+        public function setMedian($median)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMedian()
+        {
+        }
+        /**
+         * Identifies the type of the metric.
+         *
+         * @param string $metricId
+         */
+        public function setMetricId($metricId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMetricId()
+        {
+        }
+        /**
+         * We use this field to store certain percentile value for this metric. For
+         * v4, this field contains pc50. For v5, this field contains pc90.
+         *
+         * @param int $percentile
+         */
+        public function setPercentile($percentile)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPercentile()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PagespeedInsights\UserPageLoadMetricV5 registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCategory()
-    {
-    }
-    /**
-     * Metric distributions. Proportions should sum up to 1.
-     *
-     * @param Bucket[] $distributions
-     */
-    public function setDistributions($distributions)
-    {
-    }
-    /**
-     * @return Bucket[]
-     */
-    public function getDistributions()
-    {
-    }
-    /**
-     * Identifies the form factor of the metric being collected.
-     *
-     * @param string $formFactor
-     */
-    public function setFormFactor($formFactor)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFormFactor()
-    {
-    }
-    /**
-     * The median number of the metric, in millisecond.
-     *
-     * @param int $median
-     */
-    public function setMedian($median)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMedian()
-    {
-    }
-    /**
-     * Identifies the type of the metric.
-     *
-     * @param string $metricId
-     */
-    public function setMetricId($metricId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMetricId()
-    {
-    }
-    /**
-     * We use this field to store certain percentile value for this metric. For
-     * v4, this field contains pc50. For v5, this field contains pc90.
-     *
-     * @param int $percentile
-     */
-    public function setPercentile($percentile)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPercentile()
+    class Google_Service_PagespeedInsights_UserPageLoadMetricV5 extends \Google\Service\PagespeedInsights\UserPageLoadMetricV5
     {
     }
 }

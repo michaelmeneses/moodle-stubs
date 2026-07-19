@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1StudySpecParameterSpecConditionalParameterSpecDiscreteValueCondition extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    /**
-     * Required. Matches values of the parent parameter of 'DISCRETE' type. All
-     * values must exist in `discrete_value_spec` of parent parameter. The Epsilon
-     * of the value matching is 1e-10.
-     *
-     * @var []
-     */
-    public $values;
-    public function setValues($values)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1StudySpecParameterSpecConditionalParameterSpecDiscreteValueCondition extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        /**
+         * Required. Matches values of the parent parameter of 'DISCRETE' type. All
+         * values must exist in `discrete_value_spec` of parent parameter. The Epsilon
+         * of the value matching is 1e-10.
+         *
+         * @var []
+         */
+        public $values;
+        public function setValues($values)
+        {
+        }
+        public function getValues()
+        {
+        }
     }
-    public function getValues()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1StudySpecParameterSpecConditionalParameterSpecDiscreteValueCondition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1StudySpecParameterSpecConditionalParameterSpecDiscreteValueCondition extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1StudySpecParameterSpecConditionalParameterSpecDiscreteValueCondition
     {
     }
 }

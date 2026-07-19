@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMachineLearningEngine;
-
-class GoogleCloudMlV1SampledShapleyAttribution extends \Google\Model
-{
-    /**
-     * The number of feature permutations to consider when approximating the
-     * Shapley values.
-     *
-     * @var int
-     */
-    public $numPaths;
-    /**
-     * The number of feature permutations to consider when approximating the
-     * Shapley values.
-     *
-     * @param int $numPaths
-     */
-    public function setNumPaths($numPaths)
+namespace Google\Service\CloudMachineLearningEngine {
+    class GoogleCloudMlV1SampledShapleyAttribution extends \Google\Model
     {
+        /**
+         * The number of feature permutations to consider when approximating the
+         * Shapley values.
+         *
+         * @var int
+         */
+        public $numPaths;
+        /**
+         * The number of feature permutations to consider when approximating the
+         * Shapley values.
+         *
+         * @param int $numPaths
+         */
+        public function setNumPaths($numPaths)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumPaths()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1SampledShapleyAttribution registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNumPaths()
+    class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1SampledShapleyAttribution extends \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1SampledShapleyAttribution
     {
     }
 }

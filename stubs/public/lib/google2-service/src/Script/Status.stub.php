@@ -21,79 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Script;
-
-class Status extends \Google\Collection
-{
-    protected $collection_key = 'details';
-    /**
-     * The status code. For this API, this value either: - 10, indicating a
-     * `SCRIPT_TIMEOUT` error, - 3, indicating an `INVALID_ARGUMENT` error, or -
-     * 1, indicating a `CANCELLED` execution.
-     *
-     * @var int
-     */
-    public $code;
-    /**
-     * An array that contains a single ExecutionError object that provides
-     * information about the nature of the error.
-     *
-     * @var array[]
-     */
-    public $details;
-    /**
-     * A developer-facing error message, which is in English. Any user-facing
-     * error message is localized and sent in the details field, or localized by
-     * the client.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * The status code. For this API, this value either: - 10, indicating a
-     * `SCRIPT_TIMEOUT` error, - 3, indicating an `INVALID_ARGUMENT` error, or -
-     * 1, indicating a `CANCELLED` execution.
-     *
-     * @param int $code
-     */
-    public function setCode($code)
+namespace Google\Service\Script {
+    class Status extends \Google\Collection
     {
+        protected $collection_key = 'details';
+        /**
+         * The status code. For this API, this value either: - 10, indicating a
+         * `SCRIPT_TIMEOUT` error, - 3, indicating an `INVALID_ARGUMENT` error, or -
+         * 1, indicating a `CANCELLED` execution.
+         *
+         * @var int
+         */
+        public $code;
+        /**
+         * An array that contains a single ExecutionError object that provides
+         * information about the nature of the error.
+         *
+         * @var array[]
+         */
+        public $details;
+        /**
+         * A developer-facing error message, which is in English. Any user-facing
+         * error message is localized and sent in the details field, or localized by
+         * the client.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * The status code. For this API, this value either: - 10, indicating a
+         * `SCRIPT_TIMEOUT` error, - 3, indicating an `INVALID_ARGUMENT` error, or -
+         * 1, indicating a `CANCELLED` execution.
+         *
+         * @param int $code
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCode()
+        {
+        }
+        /**
+         * An array that contains a single ExecutionError object that provides
+         * information about the nature of the error.
+         *
+         * @param array[] $details
+         */
+        public function setDetails($details)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getDetails()
+        {
+        }
+        /**
+         * A developer-facing error message, which is in English. Any user-facing
+         * error message is localized and sent in the details field, or localized by
+         * the client.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Script\Status registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCode()
-    {
-    }
-    /**
-     * An array that contains a single ExecutionError object that provides
-     * information about the nature of the error.
-     *
-     * @param array[] $details
-     */
-    public function setDetails($details)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getDetails()
-    {
-    }
-    /**
-     * A developer-facing error message, which is in English. Any user-facing
-     * error message is localized and sent in the details field, or localized by
-     * the client.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
+    class Google_Service_Script_Status extends \Google\Service\Script\Status
     {
     }
 }

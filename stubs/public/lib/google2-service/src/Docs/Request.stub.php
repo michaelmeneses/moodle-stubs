@@ -21,568 +21,577 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class Request extends \Google\Model
-{
-    protected $createFooterType = CreateFooterRequest::class;
-    protected $createFooterDataType = '';
-    protected $createFootnoteType = CreateFootnoteRequest::class;
-    protected $createFootnoteDataType = '';
-    protected $createHeaderType = CreateHeaderRequest::class;
-    protected $createHeaderDataType = '';
-    protected $createNamedRangeType = CreateNamedRangeRequest::class;
-    protected $createNamedRangeDataType = '';
-    protected $createParagraphBulletsType = CreateParagraphBulletsRequest::class;
-    protected $createParagraphBulletsDataType = '';
-    protected $deleteContentRangeType = DeleteContentRangeRequest::class;
-    protected $deleteContentRangeDataType = '';
-    protected $deleteFooterType = DeleteFooterRequest::class;
-    protected $deleteFooterDataType = '';
-    protected $deleteHeaderType = DeleteHeaderRequest::class;
-    protected $deleteHeaderDataType = '';
-    protected $deleteNamedRangeType = DeleteNamedRangeRequest::class;
-    protected $deleteNamedRangeDataType = '';
-    protected $deleteParagraphBulletsType = DeleteParagraphBulletsRequest::class;
-    protected $deleteParagraphBulletsDataType = '';
-    protected $deletePositionedObjectType = DeletePositionedObjectRequest::class;
-    protected $deletePositionedObjectDataType = '';
-    protected $deleteTableColumnType = DeleteTableColumnRequest::class;
-    protected $deleteTableColumnDataType = '';
-    protected $deleteTableRowType = DeleteTableRowRequest::class;
-    protected $deleteTableRowDataType = '';
-    protected $insertDateType = InsertDateRequest::class;
-    protected $insertDateDataType = '';
-    protected $insertInlineImageType = InsertInlineImageRequest::class;
-    protected $insertInlineImageDataType = '';
-    protected $insertPageBreakType = InsertPageBreakRequest::class;
-    protected $insertPageBreakDataType = '';
-    protected $insertPersonType = InsertPersonRequest::class;
-    protected $insertPersonDataType = '';
-    protected $insertSectionBreakType = InsertSectionBreakRequest::class;
-    protected $insertSectionBreakDataType = '';
-    protected $insertTableType = InsertTableRequest::class;
-    protected $insertTableDataType = '';
-    protected $insertTableColumnType = InsertTableColumnRequest::class;
-    protected $insertTableColumnDataType = '';
-    protected $insertTableRowType = InsertTableRowRequest::class;
-    protected $insertTableRowDataType = '';
-    protected $insertTextType = InsertTextRequest::class;
-    protected $insertTextDataType = '';
-    protected $mergeTableCellsType = MergeTableCellsRequest::class;
-    protected $mergeTableCellsDataType = '';
-    protected $pinTableHeaderRowsType = PinTableHeaderRowsRequest::class;
-    protected $pinTableHeaderRowsDataType = '';
-    protected $replaceAllTextType = ReplaceAllTextRequest::class;
-    protected $replaceAllTextDataType = '';
-    protected $replaceImageType = ReplaceImageRequest::class;
-    protected $replaceImageDataType = '';
-    protected $replaceNamedRangeContentType = ReplaceNamedRangeContentRequest::class;
-    protected $replaceNamedRangeContentDataType = '';
-    protected $unmergeTableCellsType = UnmergeTableCellsRequest::class;
-    protected $unmergeTableCellsDataType = '';
-    protected $updateDocumentStyleType = UpdateDocumentStyleRequest::class;
-    protected $updateDocumentStyleDataType = '';
-    protected $updateParagraphStyleType = UpdateParagraphStyleRequest::class;
-    protected $updateParagraphStyleDataType = '';
-    protected $updateSectionStyleType = UpdateSectionStyleRequest::class;
-    protected $updateSectionStyleDataType = '';
-    protected $updateTableCellStyleType = UpdateTableCellStyleRequest::class;
-    protected $updateTableCellStyleDataType = '';
-    protected $updateTableColumnPropertiesType = UpdateTableColumnPropertiesRequest::class;
-    protected $updateTableColumnPropertiesDataType = '';
-    protected $updateTableRowStyleType = UpdateTableRowStyleRequest::class;
-    protected $updateTableRowStyleDataType = '';
-    protected $updateTextStyleType = UpdateTextStyleRequest::class;
-    protected $updateTextStyleDataType = '';
-    /**
-     * Creates a footer.
-     *
-     * @param CreateFooterRequest $createFooter
-     */
-    public function setCreateFooter(CreateFooterRequest $createFooter)
-    {
-    }
-    /**
-     * @return CreateFooterRequest
-     */
-    public function getCreateFooter()
-    {
-    }
-    /**
-     * Creates a footnote.
-     *
-     * @param CreateFootnoteRequest $createFootnote
-     */
-    public function setCreateFootnote(CreateFootnoteRequest $createFootnote)
-    {
-    }
-    /**
-     * @return CreateFootnoteRequest
-     */
-    public function getCreateFootnote()
-    {
-    }
-    /**
-     * Creates a header.
-     *
-     * @param CreateHeaderRequest $createHeader
-     */
-    public function setCreateHeader(CreateHeaderRequest $createHeader)
-    {
-    }
-    /**
-     * @return CreateHeaderRequest
-     */
-    public function getCreateHeader()
-    {
-    }
-    /**
-     * Creates a named range.
-     *
-     * @param CreateNamedRangeRequest $createNamedRange
-     */
-    public function setCreateNamedRange(CreateNamedRangeRequest $createNamedRange)
-    {
-    }
-    /**
-     * @return CreateNamedRangeRequest
-     */
-    public function getCreateNamedRange()
-    {
-    }
-    /**
-     * Creates bullets for paragraphs.
-     *
-     * @param CreateParagraphBulletsRequest $createParagraphBullets
-     */
-    public function setCreateParagraphBullets(CreateParagraphBulletsRequest $createParagraphBullets)
-    {
-    }
-    /**
-     * @return CreateParagraphBulletsRequest
-     */
-    public function getCreateParagraphBullets()
-    {
-    }
-    /**
-     * Deletes content from the document.
-     *
-     * @param DeleteContentRangeRequest $deleteContentRange
-     */
-    public function setDeleteContentRange(DeleteContentRangeRequest $deleteContentRange)
-    {
-    }
-    /**
-     * @return DeleteContentRangeRequest
-     */
-    public function getDeleteContentRange()
-    {
-    }
-    /**
-     * Deletes a footer from the document.
-     *
-     * @param DeleteFooterRequest $deleteFooter
-     */
-    public function setDeleteFooter(DeleteFooterRequest $deleteFooter)
-    {
-    }
-    /**
-     * @return DeleteFooterRequest
-     */
-    public function getDeleteFooter()
-    {
-    }
-    /**
-     * Deletes a header from the document.
-     *
-     * @param DeleteHeaderRequest $deleteHeader
-     */
-    public function setDeleteHeader(DeleteHeaderRequest $deleteHeader)
-    {
-    }
-    /**
-     * @return DeleteHeaderRequest
-     */
-    public function getDeleteHeader()
-    {
-    }
-    /**
-     * Deletes a named range.
-     *
-     * @param DeleteNamedRangeRequest $deleteNamedRange
-     */
-    public function setDeleteNamedRange(DeleteNamedRangeRequest $deleteNamedRange)
-    {
-    }
-    /**
-     * @return DeleteNamedRangeRequest
-     */
-    public function getDeleteNamedRange()
-    {
-    }
-    /**
-     * Deletes bullets from paragraphs.
-     *
-     * @param DeleteParagraphBulletsRequest $deleteParagraphBullets
-     */
-    public function setDeleteParagraphBullets(DeleteParagraphBulletsRequest $deleteParagraphBullets)
-    {
-    }
-    /**
-     * @return DeleteParagraphBulletsRequest
-     */
-    public function getDeleteParagraphBullets()
-    {
-    }
-    /**
-     * Deletes a positioned object from the document.
-     *
-     * @param DeletePositionedObjectRequest $deletePositionedObject
-     */
-    public function setDeletePositionedObject(DeletePositionedObjectRequest $deletePositionedObject)
-    {
-    }
-    /**
-     * @return DeletePositionedObjectRequest
-     */
-    public function getDeletePositionedObject()
-    {
-    }
-    /**
-     * Deletes a column from a table.
-     *
-     * @param DeleteTableColumnRequest $deleteTableColumn
-     */
-    public function setDeleteTableColumn(DeleteTableColumnRequest $deleteTableColumn)
-    {
-    }
-    /**
-     * @return DeleteTableColumnRequest
-     */
-    public function getDeleteTableColumn()
-    {
-    }
-    /**
-     * Deletes a row from a table.
-     *
-     * @param DeleteTableRowRequest $deleteTableRow
-     */
-    public function setDeleteTableRow(DeleteTableRowRequest $deleteTableRow)
-    {
-    }
-    /**
-     * @return DeleteTableRowRequest
-     */
-    public function getDeleteTableRow()
-    {
-    }
-    /**
-     * Inserts a date.
-     *
-     * @param InsertDateRequest $insertDate
-     */
-    public function setInsertDate(InsertDateRequest $insertDate)
-    {
-    }
-    /**
-     * @return InsertDateRequest
-     */
-    public function getInsertDate()
-    {
-    }
-    /**
-     * Inserts an inline image at the specified location.
-     *
-     * @param InsertInlineImageRequest $insertInlineImage
-     */
-    public function setInsertInlineImage(InsertInlineImageRequest $insertInlineImage)
-    {
-    }
-    /**
-     * @return InsertInlineImageRequest
-     */
-    public function getInsertInlineImage()
-    {
-    }
-    /**
-     * Inserts a page break at the specified location.
-     *
-     * @param InsertPageBreakRequest $insertPageBreak
-     */
-    public function setInsertPageBreak(InsertPageBreakRequest $insertPageBreak)
-    {
-    }
-    /**
-     * @return InsertPageBreakRequest
-     */
-    public function getInsertPageBreak()
-    {
-    }
-    /**
-     * Inserts a person mention.
-     *
-     * @param InsertPersonRequest $insertPerson
-     */
-    public function setInsertPerson(InsertPersonRequest $insertPerson)
-    {
-    }
-    /**
-     * @return InsertPersonRequest
-     */
-    public function getInsertPerson()
-    {
-    }
-    /**
-     * Inserts a section break at the specified location.
-     *
-     * @param InsertSectionBreakRequest $insertSectionBreak
-     */
-    public function setInsertSectionBreak(InsertSectionBreakRequest $insertSectionBreak)
-    {
-    }
-    /**
-     * @return InsertSectionBreakRequest
-     */
-    public function getInsertSectionBreak()
-    {
-    }
-    /**
-     * Inserts a table at the specified location.
-     *
-     * @param InsertTableRequest $insertTable
-     */
-    public function setInsertTable(InsertTableRequest $insertTable)
-    {
-    }
-    /**
-     * @return InsertTableRequest
-     */
-    public function getInsertTable()
-    {
-    }
-    /**
-     * Inserts an empty column into a table.
-     *
-     * @param InsertTableColumnRequest $insertTableColumn
-     */
-    public function setInsertTableColumn(InsertTableColumnRequest $insertTableColumn)
-    {
-    }
-    /**
-     * @return InsertTableColumnRequest
-     */
-    public function getInsertTableColumn()
-    {
-    }
-    /**
-     * Inserts an empty row into a table.
-     *
-     * @param InsertTableRowRequest $insertTableRow
-     */
-    public function setInsertTableRow(InsertTableRowRequest $insertTableRow)
-    {
-    }
-    /**
-     * @return InsertTableRowRequest
-     */
-    public function getInsertTableRow()
-    {
-    }
-    /**
-     * Inserts text at the specified location.
-     *
-     * @param InsertTextRequest $insertText
-     */
-    public function setInsertText(InsertTextRequest $insertText)
-    {
-    }
-    /**
-     * @return InsertTextRequest
-     */
-    public function getInsertText()
-    {
-    }
-    /**
-     * Merges cells in a table.
-     *
-     * @param MergeTableCellsRequest $mergeTableCells
-     */
-    public function setMergeTableCells(MergeTableCellsRequest $mergeTableCells)
-    {
-    }
-    /**
-     * @return MergeTableCellsRequest
-     */
-    public function getMergeTableCells()
-    {
-    }
-    /**
-     * Updates the number of pinned header rows in a table.
-     *
-     * @param PinTableHeaderRowsRequest $pinTableHeaderRows
-     */
-    public function setPinTableHeaderRows(PinTableHeaderRowsRequest $pinTableHeaderRows)
-    {
-    }
-    /**
-     * @return PinTableHeaderRowsRequest
-     */
-    public function getPinTableHeaderRows()
-    {
-    }
-    /**
-     * Replaces all instances of the specified text.
-     *
-     * @param ReplaceAllTextRequest $replaceAllText
-     */
-    public function setReplaceAllText(ReplaceAllTextRequest $replaceAllText)
-    {
-    }
-    /**
-     * @return ReplaceAllTextRequest
-     */
-    public function getReplaceAllText()
-    {
-    }
-    /**
-     * Replaces an image in the document.
-     *
-     * @param ReplaceImageRequest $replaceImage
-     */
-    public function setReplaceImage(ReplaceImageRequest $replaceImage)
-    {
-    }
-    /**
-     * @return ReplaceImageRequest
-     */
-    public function getReplaceImage()
-    {
-    }
-    /**
-     * Replaces the content in a named range.
-     *
-     * @param ReplaceNamedRangeContentRequest $replaceNamedRangeContent
-     */
-    public function setReplaceNamedRangeContent(ReplaceNamedRangeContentRequest $replaceNamedRangeContent)
-    {
-    }
-    /**
-     * @return ReplaceNamedRangeContentRequest
-     */
-    public function getReplaceNamedRangeContent()
-    {
-    }
-    /**
-     * Unmerges cells in a table.
-     *
-     * @param UnmergeTableCellsRequest $unmergeTableCells
-     */
-    public function setUnmergeTableCells(UnmergeTableCellsRequest $unmergeTableCells)
-    {
-    }
-    /**
-     * @return UnmergeTableCellsRequest
-     */
-    public function getUnmergeTableCells()
-    {
-    }
-    /**
-     * Updates the style of the document.
-     *
-     * @param UpdateDocumentStyleRequest $updateDocumentStyle
-     */
-    public function setUpdateDocumentStyle(UpdateDocumentStyleRequest $updateDocumentStyle)
-    {
-    }
-    /**
-     * @return UpdateDocumentStyleRequest
-     */
-    public function getUpdateDocumentStyle()
-    {
-    }
-    /**
-     * Updates the paragraph style at the specified range.
-     *
-     * @param UpdateParagraphStyleRequest $updateParagraphStyle
-     */
-    public function setUpdateParagraphStyle(UpdateParagraphStyleRequest $updateParagraphStyle)
-    {
-    }
-    /**
-     * @return UpdateParagraphStyleRequest
-     */
-    public function getUpdateParagraphStyle()
-    {
-    }
-    /**
-     * Updates the section style of the specified range.
-     *
-     * @param UpdateSectionStyleRequest $updateSectionStyle
-     */
-    public function setUpdateSectionStyle(UpdateSectionStyleRequest $updateSectionStyle)
-    {
-    }
-    /**
-     * @return UpdateSectionStyleRequest
-     */
-    public function getUpdateSectionStyle()
-    {
-    }
-    /**
-     * Updates the style of table cells.
-     *
-     * @param UpdateTableCellStyleRequest $updateTableCellStyle
-     */
-    public function setUpdateTableCellStyle(UpdateTableCellStyleRequest $updateTableCellStyle)
-    {
-    }
-    /**
-     * @return UpdateTableCellStyleRequest
-     */
-    public function getUpdateTableCellStyle()
-    {
-    }
-    /**
-     * Updates the properties of columns in a table.
-     *
-     * @param UpdateTableColumnPropertiesRequest $updateTableColumnProperties
-     */
-    public function setUpdateTableColumnProperties(UpdateTableColumnPropertiesRequest $updateTableColumnProperties)
-    {
-    }
-    /**
-     * @return UpdateTableColumnPropertiesRequest
-     */
-    public function getUpdateTableColumnProperties()
-    {
-    }
-    /**
-     * Updates the row style in a table.
-     *
-     * @param UpdateTableRowStyleRequest $updateTableRowStyle
-     */
-    public function setUpdateTableRowStyle(UpdateTableRowStyleRequest $updateTableRowStyle)
-    {
-    }
-    /**
-     * @return UpdateTableRowStyleRequest
-     */
-    public function getUpdateTableRowStyle()
-    {
-    }
-    /**
-     * Updates the text style at the specified range.
-     *
-     * @param UpdateTextStyleRequest $updateTextStyle
-     */
-    public function setUpdateTextStyle(UpdateTextStyleRequest $updateTextStyle)
-    {
-    }
-    /**
-     * @return UpdateTextStyleRequest
-     */
-    public function getUpdateTextStyle()
+namespace Google\Service\Docs {
+    class Request extends \Google\Model
+    {
+        protected $createFooterType = CreateFooterRequest::class;
+        protected $createFooterDataType = '';
+        protected $createFootnoteType = CreateFootnoteRequest::class;
+        protected $createFootnoteDataType = '';
+        protected $createHeaderType = CreateHeaderRequest::class;
+        protected $createHeaderDataType = '';
+        protected $createNamedRangeType = CreateNamedRangeRequest::class;
+        protected $createNamedRangeDataType = '';
+        protected $createParagraphBulletsType = CreateParagraphBulletsRequest::class;
+        protected $createParagraphBulletsDataType = '';
+        protected $deleteContentRangeType = DeleteContentRangeRequest::class;
+        protected $deleteContentRangeDataType = '';
+        protected $deleteFooterType = DeleteFooterRequest::class;
+        protected $deleteFooterDataType = '';
+        protected $deleteHeaderType = DeleteHeaderRequest::class;
+        protected $deleteHeaderDataType = '';
+        protected $deleteNamedRangeType = DeleteNamedRangeRequest::class;
+        protected $deleteNamedRangeDataType = '';
+        protected $deleteParagraphBulletsType = DeleteParagraphBulletsRequest::class;
+        protected $deleteParagraphBulletsDataType = '';
+        protected $deletePositionedObjectType = DeletePositionedObjectRequest::class;
+        protected $deletePositionedObjectDataType = '';
+        protected $deleteTableColumnType = DeleteTableColumnRequest::class;
+        protected $deleteTableColumnDataType = '';
+        protected $deleteTableRowType = DeleteTableRowRequest::class;
+        protected $deleteTableRowDataType = '';
+        protected $insertDateType = InsertDateRequest::class;
+        protected $insertDateDataType = '';
+        protected $insertInlineImageType = InsertInlineImageRequest::class;
+        protected $insertInlineImageDataType = '';
+        protected $insertPageBreakType = InsertPageBreakRequest::class;
+        protected $insertPageBreakDataType = '';
+        protected $insertPersonType = InsertPersonRequest::class;
+        protected $insertPersonDataType = '';
+        protected $insertSectionBreakType = InsertSectionBreakRequest::class;
+        protected $insertSectionBreakDataType = '';
+        protected $insertTableType = InsertTableRequest::class;
+        protected $insertTableDataType = '';
+        protected $insertTableColumnType = InsertTableColumnRequest::class;
+        protected $insertTableColumnDataType = '';
+        protected $insertTableRowType = InsertTableRowRequest::class;
+        protected $insertTableRowDataType = '';
+        protected $insertTextType = InsertTextRequest::class;
+        protected $insertTextDataType = '';
+        protected $mergeTableCellsType = MergeTableCellsRequest::class;
+        protected $mergeTableCellsDataType = '';
+        protected $pinTableHeaderRowsType = PinTableHeaderRowsRequest::class;
+        protected $pinTableHeaderRowsDataType = '';
+        protected $replaceAllTextType = ReplaceAllTextRequest::class;
+        protected $replaceAllTextDataType = '';
+        protected $replaceImageType = ReplaceImageRequest::class;
+        protected $replaceImageDataType = '';
+        protected $replaceNamedRangeContentType = ReplaceNamedRangeContentRequest::class;
+        protected $replaceNamedRangeContentDataType = '';
+        protected $unmergeTableCellsType = UnmergeTableCellsRequest::class;
+        protected $unmergeTableCellsDataType = '';
+        protected $updateDocumentStyleType = UpdateDocumentStyleRequest::class;
+        protected $updateDocumentStyleDataType = '';
+        protected $updateParagraphStyleType = UpdateParagraphStyleRequest::class;
+        protected $updateParagraphStyleDataType = '';
+        protected $updateSectionStyleType = UpdateSectionStyleRequest::class;
+        protected $updateSectionStyleDataType = '';
+        protected $updateTableCellStyleType = UpdateTableCellStyleRequest::class;
+        protected $updateTableCellStyleDataType = '';
+        protected $updateTableColumnPropertiesType = UpdateTableColumnPropertiesRequest::class;
+        protected $updateTableColumnPropertiesDataType = '';
+        protected $updateTableRowStyleType = UpdateTableRowStyleRequest::class;
+        protected $updateTableRowStyleDataType = '';
+        protected $updateTextStyleType = UpdateTextStyleRequest::class;
+        protected $updateTextStyleDataType = '';
+        /**
+         * Creates a footer.
+         *
+         * @param CreateFooterRequest $createFooter
+         */
+        public function setCreateFooter(CreateFooterRequest $createFooter)
+        {
+        }
+        /**
+         * @return CreateFooterRequest
+         */
+        public function getCreateFooter()
+        {
+        }
+        /**
+         * Creates a footnote.
+         *
+         * @param CreateFootnoteRequest $createFootnote
+         */
+        public function setCreateFootnote(CreateFootnoteRequest $createFootnote)
+        {
+        }
+        /**
+         * @return CreateFootnoteRequest
+         */
+        public function getCreateFootnote()
+        {
+        }
+        /**
+         * Creates a header.
+         *
+         * @param CreateHeaderRequest $createHeader
+         */
+        public function setCreateHeader(CreateHeaderRequest $createHeader)
+        {
+        }
+        /**
+         * @return CreateHeaderRequest
+         */
+        public function getCreateHeader()
+        {
+        }
+        /**
+         * Creates a named range.
+         *
+         * @param CreateNamedRangeRequest $createNamedRange
+         */
+        public function setCreateNamedRange(CreateNamedRangeRequest $createNamedRange)
+        {
+        }
+        /**
+         * @return CreateNamedRangeRequest
+         */
+        public function getCreateNamedRange()
+        {
+        }
+        /**
+         * Creates bullets for paragraphs.
+         *
+         * @param CreateParagraphBulletsRequest $createParagraphBullets
+         */
+        public function setCreateParagraphBullets(CreateParagraphBulletsRequest $createParagraphBullets)
+        {
+        }
+        /**
+         * @return CreateParagraphBulletsRequest
+         */
+        public function getCreateParagraphBullets()
+        {
+        }
+        /**
+         * Deletes content from the document.
+         *
+         * @param DeleteContentRangeRequest $deleteContentRange
+         */
+        public function setDeleteContentRange(DeleteContentRangeRequest $deleteContentRange)
+        {
+        }
+        /**
+         * @return DeleteContentRangeRequest
+         */
+        public function getDeleteContentRange()
+        {
+        }
+        /**
+         * Deletes a footer from the document.
+         *
+         * @param DeleteFooterRequest $deleteFooter
+         */
+        public function setDeleteFooter(DeleteFooterRequest $deleteFooter)
+        {
+        }
+        /**
+         * @return DeleteFooterRequest
+         */
+        public function getDeleteFooter()
+        {
+        }
+        /**
+         * Deletes a header from the document.
+         *
+         * @param DeleteHeaderRequest $deleteHeader
+         */
+        public function setDeleteHeader(DeleteHeaderRequest $deleteHeader)
+        {
+        }
+        /**
+         * @return DeleteHeaderRequest
+         */
+        public function getDeleteHeader()
+        {
+        }
+        /**
+         * Deletes a named range.
+         *
+         * @param DeleteNamedRangeRequest $deleteNamedRange
+         */
+        public function setDeleteNamedRange(DeleteNamedRangeRequest $deleteNamedRange)
+        {
+        }
+        /**
+         * @return DeleteNamedRangeRequest
+         */
+        public function getDeleteNamedRange()
+        {
+        }
+        /**
+         * Deletes bullets from paragraphs.
+         *
+         * @param DeleteParagraphBulletsRequest $deleteParagraphBullets
+         */
+        public function setDeleteParagraphBullets(DeleteParagraphBulletsRequest $deleteParagraphBullets)
+        {
+        }
+        /**
+         * @return DeleteParagraphBulletsRequest
+         */
+        public function getDeleteParagraphBullets()
+        {
+        }
+        /**
+         * Deletes a positioned object from the document.
+         *
+         * @param DeletePositionedObjectRequest $deletePositionedObject
+         */
+        public function setDeletePositionedObject(DeletePositionedObjectRequest $deletePositionedObject)
+        {
+        }
+        /**
+         * @return DeletePositionedObjectRequest
+         */
+        public function getDeletePositionedObject()
+        {
+        }
+        /**
+         * Deletes a column from a table.
+         *
+         * @param DeleteTableColumnRequest $deleteTableColumn
+         */
+        public function setDeleteTableColumn(DeleteTableColumnRequest $deleteTableColumn)
+        {
+        }
+        /**
+         * @return DeleteTableColumnRequest
+         */
+        public function getDeleteTableColumn()
+        {
+        }
+        /**
+         * Deletes a row from a table.
+         *
+         * @param DeleteTableRowRequest $deleteTableRow
+         */
+        public function setDeleteTableRow(DeleteTableRowRequest $deleteTableRow)
+        {
+        }
+        /**
+         * @return DeleteTableRowRequest
+         */
+        public function getDeleteTableRow()
+        {
+        }
+        /**
+         * Inserts a date.
+         *
+         * @param InsertDateRequest $insertDate
+         */
+        public function setInsertDate(InsertDateRequest $insertDate)
+        {
+        }
+        /**
+         * @return InsertDateRequest
+         */
+        public function getInsertDate()
+        {
+        }
+        /**
+         * Inserts an inline image at the specified location.
+         *
+         * @param InsertInlineImageRequest $insertInlineImage
+         */
+        public function setInsertInlineImage(InsertInlineImageRequest $insertInlineImage)
+        {
+        }
+        /**
+         * @return InsertInlineImageRequest
+         */
+        public function getInsertInlineImage()
+        {
+        }
+        /**
+         * Inserts a page break at the specified location.
+         *
+         * @param InsertPageBreakRequest $insertPageBreak
+         */
+        public function setInsertPageBreak(InsertPageBreakRequest $insertPageBreak)
+        {
+        }
+        /**
+         * @return InsertPageBreakRequest
+         */
+        public function getInsertPageBreak()
+        {
+        }
+        /**
+         * Inserts a person mention.
+         *
+         * @param InsertPersonRequest $insertPerson
+         */
+        public function setInsertPerson(InsertPersonRequest $insertPerson)
+        {
+        }
+        /**
+         * @return InsertPersonRequest
+         */
+        public function getInsertPerson()
+        {
+        }
+        /**
+         * Inserts a section break at the specified location.
+         *
+         * @param InsertSectionBreakRequest $insertSectionBreak
+         */
+        public function setInsertSectionBreak(InsertSectionBreakRequest $insertSectionBreak)
+        {
+        }
+        /**
+         * @return InsertSectionBreakRequest
+         */
+        public function getInsertSectionBreak()
+        {
+        }
+        /**
+         * Inserts a table at the specified location.
+         *
+         * @param InsertTableRequest $insertTable
+         */
+        public function setInsertTable(InsertTableRequest $insertTable)
+        {
+        }
+        /**
+         * @return InsertTableRequest
+         */
+        public function getInsertTable()
+        {
+        }
+        /**
+         * Inserts an empty column into a table.
+         *
+         * @param InsertTableColumnRequest $insertTableColumn
+         */
+        public function setInsertTableColumn(InsertTableColumnRequest $insertTableColumn)
+        {
+        }
+        /**
+         * @return InsertTableColumnRequest
+         */
+        public function getInsertTableColumn()
+        {
+        }
+        /**
+         * Inserts an empty row into a table.
+         *
+         * @param InsertTableRowRequest $insertTableRow
+         */
+        public function setInsertTableRow(InsertTableRowRequest $insertTableRow)
+        {
+        }
+        /**
+         * @return InsertTableRowRequest
+         */
+        public function getInsertTableRow()
+        {
+        }
+        /**
+         * Inserts text at the specified location.
+         *
+         * @param InsertTextRequest $insertText
+         */
+        public function setInsertText(InsertTextRequest $insertText)
+        {
+        }
+        /**
+         * @return InsertTextRequest
+         */
+        public function getInsertText()
+        {
+        }
+        /**
+         * Merges cells in a table.
+         *
+         * @param MergeTableCellsRequest $mergeTableCells
+         */
+        public function setMergeTableCells(MergeTableCellsRequest $mergeTableCells)
+        {
+        }
+        /**
+         * @return MergeTableCellsRequest
+         */
+        public function getMergeTableCells()
+        {
+        }
+        /**
+         * Updates the number of pinned header rows in a table.
+         *
+         * @param PinTableHeaderRowsRequest $pinTableHeaderRows
+         */
+        public function setPinTableHeaderRows(PinTableHeaderRowsRequest $pinTableHeaderRows)
+        {
+        }
+        /**
+         * @return PinTableHeaderRowsRequest
+         */
+        public function getPinTableHeaderRows()
+        {
+        }
+        /**
+         * Replaces all instances of the specified text.
+         *
+         * @param ReplaceAllTextRequest $replaceAllText
+         */
+        public function setReplaceAllText(ReplaceAllTextRequest $replaceAllText)
+        {
+        }
+        /**
+         * @return ReplaceAllTextRequest
+         */
+        public function getReplaceAllText()
+        {
+        }
+        /**
+         * Replaces an image in the document.
+         *
+         * @param ReplaceImageRequest $replaceImage
+         */
+        public function setReplaceImage(ReplaceImageRequest $replaceImage)
+        {
+        }
+        /**
+         * @return ReplaceImageRequest
+         */
+        public function getReplaceImage()
+        {
+        }
+        /**
+         * Replaces the content in a named range.
+         *
+         * @param ReplaceNamedRangeContentRequest $replaceNamedRangeContent
+         */
+        public function setReplaceNamedRangeContent(ReplaceNamedRangeContentRequest $replaceNamedRangeContent)
+        {
+        }
+        /**
+         * @return ReplaceNamedRangeContentRequest
+         */
+        public function getReplaceNamedRangeContent()
+        {
+        }
+        /**
+         * Unmerges cells in a table.
+         *
+         * @param UnmergeTableCellsRequest $unmergeTableCells
+         */
+        public function setUnmergeTableCells(UnmergeTableCellsRequest $unmergeTableCells)
+        {
+        }
+        /**
+         * @return UnmergeTableCellsRequest
+         */
+        public function getUnmergeTableCells()
+        {
+        }
+        /**
+         * Updates the style of the document.
+         *
+         * @param UpdateDocumentStyleRequest $updateDocumentStyle
+         */
+        public function setUpdateDocumentStyle(UpdateDocumentStyleRequest $updateDocumentStyle)
+        {
+        }
+        /**
+         * @return UpdateDocumentStyleRequest
+         */
+        public function getUpdateDocumentStyle()
+        {
+        }
+        /**
+         * Updates the paragraph style at the specified range.
+         *
+         * @param UpdateParagraphStyleRequest $updateParagraphStyle
+         */
+        public function setUpdateParagraphStyle(UpdateParagraphStyleRequest $updateParagraphStyle)
+        {
+        }
+        /**
+         * @return UpdateParagraphStyleRequest
+         */
+        public function getUpdateParagraphStyle()
+        {
+        }
+        /**
+         * Updates the section style of the specified range.
+         *
+         * @param UpdateSectionStyleRequest $updateSectionStyle
+         */
+        public function setUpdateSectionStyle(UpdateSectionStyleRequest $updateSectionStyle)
+        {
+        }
+        /**
+         * @return UpdateSectionStyleRequest
+         */
+        public function getUpdateSectionStyle()
+        {
+        }
+        /**
+         * Updates the style of table cells.
+         *
+         * @param UpdateTableCellStyleRequest $updateTableCellStyle
+         */
+        public function setUpdateTableCellStyle(UpdateTableCellStyleRequest $updateTableCellStyle)
+        {
+        }
+        /**
+         * @return UpdateTableCellStyleRequest
+         */
+        public function getUpdateTableCellStyle()
+        {
+        }
+        /**
+         * Updates the properties of columns in a table.
+         *
+         * @param UpdateTableColumnPropertiesRequest $updateTableColumnProperties
+         */
+        public function setUpdateTableColumnProperties(UpdateTableColumnPropertiesRequest $updateTableColumnProperties)
+        {
+        }
+        /**
+         * @return UpdateTableColumnPropertiesRequest
+         */
+        public function getUpdateTableColumnProperties()
+        {
+        }
+        /**
+         * Updates the row style in a table.
+         *
+         * @param UpdateTableRowStyleRequest $updateTableRowStyle
+         */
+        public function setUpdateTableRowStyle(UpdateTableRowStyleRequest $updateTableRowStyle)
+        {
+        }
+        /**
+         * @return UpdateTableRowStyleRequest
+         */
+        public function getUpdateTableRowStyle()
+        {
+        }
+        /**
+         * Updates the text style at the specified range.
+         *
+         * @param UpdateTextStyleRequest $updateTextStyle
+         */
+        public function setUpdateTextStyle(UpdateTextStyleRequest $updateTextStyle)
+        {
+        }
+        /**
+         * @return UpdateTextStyleRequest
+         */
+        public function getUpdateTextStyle()
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Docs\Request registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Docs_Request extends \Google\Service\Docs\Request
     {
     }
 }

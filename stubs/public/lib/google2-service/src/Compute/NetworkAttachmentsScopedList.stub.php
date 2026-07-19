@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class NetworkAttachmentsScopedList extends \Google\Collection
-{
-    protected $collection_key = 'networkAttachments';
-    protected $networkAttachmentsType = NetworkAttachment::class;
-    protected $networkAttachmentsDataType = 'array';
-    protected $warningType = NetworkAttachmentsScopedListWarning::class;
-    protected $warningDataType = '';
-    /**
-     * A list of NetworkAttachments contained in this scope.
-     *
-     * @param NetworkAttachment[] $networkAttachments
-     */
-    public function setNetworkAttachments($networkAttachments)
+namespace Google\Service\Compute {
+    class NetworkAttachmentsScopedList extends \Google\Collection
     {
+        protected $collection_key = 'networkAttachments';
+        protected $networkAttachmentsType = NetworkAttachment::class;
+        protected $networkAttachmentsDataType = 'array';
+        protected $warningType = NetworkAttachmentsScopedListWarning::class;
+        protected $warningDataType = '';
+        /**
+         * A list of NetworkAttachments contained in this scope.
+         *
+         * @param NetworkAttachment[] $networkAttachments
+         */
+        public function setNetworkAttachments($networkAttachments)
+        {
+        }
+        /**
+         * @return NetworkAttachment[]
+         */
+        public function getNetworkAttachments()
+        {
+        }
+        /**
+         * Informational warning which replaces the list of network attachments when
+         * the list is empty.
+         *
+         * @param NetworkAttachmentsScopedListWarning $warning
+         */
+        public function setWarning(NetworkAttachmentsScopedListWarning $warning)
+        {
+        }
+        /**
+         * @return NetworkAttachmentsScopedListWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return NetworkAttachment[]
+     * Runtime class alias of \Google\Service\Compute\NetworkAttachmentsScopedList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNetworkAttachments()
-    {
-    }
-    /**
-     * Informational warning which replaces the list of network attachments when
-     * the list is empty.
-     *
-     * @param NetworkAttachmentsScopedListWarning $warning
-     */
-    public function setWarning(NetworkAttachmentsScopedListWarning $warning)
-    {
-    }
-    /**
-     * @return NetworkAttachmentsScopedListWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_NetworkAttachmentsScopedList extends \Google\Service\Compute\NetworkAttachmentsScopedList
     {
     }
 }

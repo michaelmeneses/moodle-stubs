@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1mainAnswerFeedback extends \Google\Model
-{
-    /**
-     * Correctness level unspecified.
-     */
-    public const CORRECTNESS_LEVEL_CORRECTNESS_LEVEL_UNSPECIFIED = 'CORRECTNESS_LEVEL_UNSPECIFIED';
-    /**
-     * Answer is totally wrong.
-     */
-    public const CORRECTNESS_LEVEL_NOT_CORRECT = 'NOT_CORRECT';
-    /**
-     * Answer is partially correct.
-     */
-    public const CORRECTNESS_LEVEL_PARTIALLY_CORRECT = 'PARTIALLY_CORRECT';
-    /**
-     * Answer is fully correct.
-     */
-    public const CORRECTNESS_LEVEL_FULLY_CORRECT = 'FULLY_CORRECT';
-    /**
-     * Indicates whether an answer or item was clicked by the human agent.
-     *
-     * @var bool
-     */
-    public $clicked;
-    /**
-     * The correctness level of an answer.
-     *
-     * @var string
-     */
-    public $correctnessLevel;
-    /**
-     * Indicates whether an answer or item was displayed to the human agent in the
-     * agent desktop UI.
-     *
-     * @var bool
-     */
-    public $displayed;
-    /**
-     * Indicates whether an answer or item was clicked by the human agent.
-     *
-     * @param bool $clicked
-     */
-    public function setClicked($clicked)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1mainAnswerFeedback extends \Google\Model
     {
+        /**
+         * Correctness level unspecified.
+         */
+        public const CORRECTNESS_LEVEL_CORRECTNESS_LEVEL_UNSPECIFIED = 'CORRECTNESS_LEVEL_UNSPECIFIED';
+        /**
+         * Answer is totally wrong.
+         */
+        public const CORRECTNESS_LEVEL_NOT_CORRECT = 'NOT_CORRECT';
+        /**
+         * Answer is partially correct.
+         */
+        public const CORRECTNESS_LEVEL_PARTIALLY_CORRECT = 'PARTIALLY_CORRECT';
+        /**
+         * Answer is fully correct.
+         */
+        public const CORRECTNESS_LEVEL_FULLY_CORRECT = 'FULLY_CORRECT';
+        /**
+         * Indicates whether an answer or item was clicked by the human agent.
+         *
+         * @var bool
+         */
+        public $clicked;
+        /**
+         * The correctness level of an answer.
+         *
+         * @var string
+         */
+        public $correctnessLevel;
+        /**
+         * Indicates whether an answer or item was displayed to the human agent in the
+         * agent desktop UI.
+         *
+         * @var bool
+         */
+        public $displayed;
+        /**
+         * Indicates whether an answer or item was clicked by the human agent.
+         *
+         * @param bool $clicked
+         */
+        public function setClicked($clicked)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getClicked()
+        {
+        }
+        /**
+         * The correctness level of an answer.
+         *
+         * Accepted values: CORRECTNESS_LEVEL_UNSPECIFIED, NOT_CORRECT,
+         * PARTIALLY_CORRECT, FULLY_CORRECT
+         *
+         * @param self::CORRECTNESS_LEVEL_* $correctnessLevel
+         */
+        public function setCorrectnessLevel($correctnessLevel)
+        {
+        }
+        /**
+         * @return self::CORRECTNESS_LEVEL_*
+         */
+        public function getCorrectnessLevel()
+        {
+        }
+        /**
+         * Indicates whether an answer or item was displayed to the human agent in the
+         * agent desktop UI.
+         *
+         * @param bool $displayed
+         */
+        public function setDisplayed($displayed)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisplayed()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainAnswerFeedback registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClicked()
-    {
-    }
-    /**
-     * The correctness level of an answer.
-     *
-     * Accepted values: CORRECTNESS_LEVEL_UNSPECIFIED, NOT_CORRECT,
-     * PARTIALLY_CORRECT, FULLY_CORRECT
-     *
-     * @param self::CORRECTNESS_LEVEL_* $correctnessLevel
-     */
-    public function setCorrectnessLevel($correctnessLevel)
-    {
-    }
-    /**
-     * @return self::CORRECTNESS_LEVEL_*
-     */
-    public function getCorrectnessLevel()
-    {
-    }
-    /**
-     * Indicates whether an answer or item was displayed to the human agent in the
-     * agent desktop UI.
-     *
-     * @param bool $displayed
-     */
-    public function setDisplayed($displayed)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDisplayed()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1mainAnswerFeedback extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainAnswerFeedback
     {
     }
 }

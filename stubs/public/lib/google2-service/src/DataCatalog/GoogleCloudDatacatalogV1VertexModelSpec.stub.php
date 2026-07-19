@@ -21,109 +21,118 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1VertexModelSpec extends \Google\Collection
-{
-    protected $collection_key = 'versionAliases';
-    /**
-     * URI of the Docker image to be used as the custom container for serving
-     * predictions.
-     *
-     * @var string
-     */
-    public $containerImageUri;
-    /**
-     * User provided version aliases so that a model version can be referenced via
-     * alias
-     *
-     * @var string[]
-     */
-    public $versionAliases;
-    /**
-     * The description of this version.
-     *
-     * @var string
-     */
-    public $versionDescription;
-    /**
-     * The version ID of the model.
-     *
-     * @var string
-     */
-    public $versionId;
-    protected $vertexModelSourceInfoType = GoogleCloudDatacatalogV1VertexModelSourceInfo::class;
-    protected $vertexModelSourceInfoDataType = '';
-    /**
-     * URI of the Docker image to be used as the custom container for serving
-     * predictions.
-     *
-     * @param string $containerImageUri
-     */
-    public function setContainerImageUri($containerImageUri)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1VertexModelSpec extends \Google\Collection
     {
+        protected $collection_key = 'versionAliases';
+        /**
+         * URI of the Docker image to be used as the custom container for serving
+         * predictions.
+         *
+         * @var string
+         */
+        public $containerImageUri;
+        /**
+         * User provided version aliases so that a model version can be referenced via
+         * alias
+         *
+         * @var string[]
+         */
+        public $versionAliases;
+        /**
+         * The description of this version.
+         *
+         * @var string
+         */
+        public $versionDescription;
+        /**
+         * The version ID of the model.
+         *
+         * @var string
+         */
+        public $versionId;
+        protected $vertexModelSourceInfoType = GoogleCloudDatacatalogV1VertexModelSourceInfo::class;
+        protected $vertexModelSourceInfoDataType = '';
+        /**
+         * URI of the Docker image to be used as the custom container for serving
+         * predictions.
+         *
+         * @param string $containerImageUri
+         */
+        public function setContainerImageUri($containerImageUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContainerImageUri()
+        {
+        }
+        /**
+         * User provided version aliases so that a model version can be referenced via
+         * alias
+         *
+         * @param string[] $versionAliases
+         */
+        public function setVersionAliases($versionAliases)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getVersionAliases()
+        {
+        }
+        /**
+         * The description of this version.
+         *
+         * @param string $versionDescription
+         */
+        public function setVersionDescription($versionDescription)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersionDescription()
+        {
+        }
+        /**
+         * The version ID of the model.
+         *
+         * @param string $versionId
+         */
+        public function setVersionId($versionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersionId()
+        {
+        }
+        /**
+         * Source of a Vertex model.
+         *
+         * @param GoogleCloudDatacatalogV1VertexModelSourceInfo $vertexModelSourceInfo
+         */
+        public function setVertexModelSourceInfo(GoogleCloudDatacatalogV1VertexModelSourceInfo $vertexModelSourceInfo)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1VertexModelSourceInfo
+         */
+        public function getVertexModelSourceInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1VertexModelSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContainerImageUri()
-    {
-    }
-    /**
-     * User provided version aliases so that a model version can be referenced via
-     * alias
-     *
-     * @param string[] $versionAliases
-     */
-    public function setVersionAliases($versionAliases)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getVersionAliases()
-    {
-    }
-    /**
-     * The description of this version.
-     *
-     * @param string $versionDescription
-     */
-    public function setVersionDescription($versionDescription)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersionDescription()
-    {
-    }
-    /**
-     * The version ID of the model.
-     *
-     * @param string $versionId
-     */
-    public function setVersionId($versionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersionId()
-    {
-    }
-    /**
-     * Source of a Vertex model.
-     *
-     * @param GoogleCloudDatacatalogV1VertexModelSourceInfo $vertexModelSourceInfo
-     */
-    public function setVertexModelSourceInfo(GoogleCloudDatacatalogV1VertexModelSourceInfo $vertexModelSourceInfo)
-    {
-    }
-    /**
-     * @return GoogleCloudDatacatalogV1VertexModelSourceInfo
-     */
-    public function getVertexModelSourceInfo()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1VertexModelSpec extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1VertexModelSpec
     {
     }
 }

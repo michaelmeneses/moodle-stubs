@@ -21,114 +21,123 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BackupforGKE;
-
-class ClusterMetadata extends \Google\Model
-{
-    /**
-     * Output only. Anthos version
-     *
-     * @var string
-     */
-    public $anthosVersion;
-    /**
-     * Output only. A list of the Backup for GKE CRD versions found in the
-     * cluster.
-     *
-     * @var string[]
-     */
-    public $backupCrdVersions;
-    /**
-     * Output only. The source cluster from which this Backup was created. Valid
-     * formats: - `projects/locations/clusters` - `projects/zones/clusters` This
-     * is inherited from the parent BackupPlan's cluster field.
-     *
-     * @var string
-     */
-    public $cluster;
-    /**
-     * Output only. GKE version
-     *
-     * @var string
-     */
-    public $gkeVersion;
-    /**
-     * Output only. The Kubernetes server version of the source cluster.
-     *
-     * @var string
-     */
-    public $k8sVersion;
-    /**
-     * Output only. Anthos version
-     *
-     * @param string $anthosVersion
-     */
-    public function setAnthosVersion($anthosVersion)
+namespace Google\Service\BackupforGKE {
+    class ClusterMetadata extends \Google\Model
     {
+        /**
+         * Output only. Anthos version
+         *
+         * @var string
+         */
+        public $anthosVersion;
+        /**
+         * Output only. A list of the Backup for GKE CRD versions found in the
+         * cluster.
+         *
+         * @var string[]
+         */
+        public $backupCrdVersions;
+        /**
+         * Output only. The source cluster from which this Backup was created. Valid
+         * formats: - `projects/locations/clusters` - `projects/zones/clusters` This
+         * is inherited from the parent BackupPlan's cluster field.
+         *
+         * @var string
+         */
+        public $cluster;
+        /**
+         * Output only. GKE version
+         *
+         * @var string
+         */
+        public $gkeVersion;
+        /**
+         * Output only. The Kubernetes server version of the source cluster.
+         *
+         * @var string
+         */
+        public $k8sVersion;
+        /**
+         * Output only. Anthos version
+         *
+         * @param string $anthosVersion
+         */
+        public function setAnthosVersion($anthosVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnthosVersion()
+        {
+        }
+        /**
+         * Output only. A list of the Backup for GKE CRD versions found in the
+         * cluster.
+         *
+         * @param string[] $backupCrdVersions
+         */
+        public function setBackupCrdVersions($backupCrdVersions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getBackupCrdVersions()
+        {
+        }
+        /**
+         * Output only. The source cluster from which this Backup was created. Valid
+         * formats: - `projects/locations/clusters` - `projects/zones/clusters` This
+         * is inherited from the parent BackupPlan's cluster field.
+         *
+         * @param string $cluster
+         */
+        public function setCluster($cluster)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCluster()
+        {
+        }
+        /**
+         * Output only. GKE version
+         *
+         * @param string $gkeVersion
+         */
+        public function setGkeVersion($gkeVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGkeVersion()
+        {
+        }
+        /**
+         * Output only. The Kubernetes server version of the source cluster.
+         *
+         * @param string $k8sVersion
+         */
+        public function setK8sVersion($k8sVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getK8sVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BackupforGKE\ClusterMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnthosVersion()
-    {
-    }
-    /**
-     * Output only. A list of the Backup for GKE CRD versions found in the
-     * cluster.
-     *
-     * @param string[] $backupCrdVersions
-     */
-    public function setBackupCrdVersions($backupCrdVersions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getBackupCrdVersions()
-    {
-    }
-    /**
-     * Output only. The source cluster from which this Backup was created. Valid
-     * formats: - `projects/locations/clusters` - `projects/zones/clusters` This
-     * is inherited from the parent BackupPlan's cluster field.
-     *
-     * @param string $cluster
-     */
-    public function setCluster($cluster)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCluster()
-    {
-    }
-    /**
-     * Output only. GKE version
-     *
-     * @param string $gkeVersion
-     */
-    public function setGkeVersion($gkeVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGkeVersion()
-    {
-    }
-    /**
-     * Output only. The Kubernetes server version of the source cluster.
-     *
-     * @param string $k8sVersion
-     */
-    public function setK8sVersion($k8sVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getK8sVersion()
+    class Google_Service_BackupforGKE_ClusterMetadata extends \Google\Service\BackupforGKE\ClusterMetadata
     {
     }
 }

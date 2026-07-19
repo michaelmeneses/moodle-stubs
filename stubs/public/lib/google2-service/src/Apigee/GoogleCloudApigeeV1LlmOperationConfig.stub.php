@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1LlmOperationConfig extends \Google\Collection
-{
-    protected $collection_key = 'llmOperations';
-    /**
-     * Required. Name of the API proxy or remote service with which the resources,
-     * methods, and quota are associated.
-     *
-     * @var string
-     */
-    public $apiSource;
-    protected $attributesType = GoogleCloudApigeeV1Attribute::class;
-    protected $attributesDataType = 'array';
-    protected $llmOperationsType = GoogleCloudApigeeV1LlmOperation::class;
-    protected $llmOperationsDataType = 'array';
-    protected $llmTokenQuotaType = GoogleCloudApigeeV1LlmTokenQuota::class;
-    protected $llmTokenQuotaDataType = '';
-    /**
-     * Required. Name of the API proxy or remote service with which the resources,
-     * methods, and quota are associated.
-     *
-     * @param string $apiSource
-     */
-    public function setApiSource($apiSource)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1LlmOperationConfig extends \Google\Collection
     {
+        protected $collection_key = 'llmOperations';
+        /**
+         * Required. Name of the API proxy or remote service with which the resources,
+         * methods, and quota are associated.
+         *
+         * @var string
+         */
+        public $apiSource;
+        protected $attributesType = GoogleCloudApigeeV1Attribute::class;
+        protected $attributesDataType = 'array';
+        protected $llmOperationsType = GoogleCloudApigeeV1LlmOperation::class;
+        protected $llmOperationsDataType = 'array';
+        protected $llmTokenQuotaType = GoogleCloudApigeeV1LlmTokenQuota::class;
+        protected $llmTokenQuotaDataType = '';
+        /**
+         * Required. Name of the API proxy or remote service with which the resources,
+         * methods, and quota are associated.
+         *
+         * @param string $apiSource
+         */
+        public function setApiSource($apiSource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApiSource()
+        {
+        }
+        /**
+         * Optional. Custom attributes associated with the operation.
+         *
+         * @param GoogleCloudApigeeV1Attribute[] $attributes
+         */
+        public function setAttributes($attributes)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1Attribute[]
+         */
+        public function getAttributes()
+        {
+        }
+        /**
+         * Required. List of resource/method/model for the API proxy to which quota
+         * will applied. **Note**: Currently, you can specify only a single
+         * resource/method/model mapping. The call will fail if more than one
+         * resource/method/model mappings are provided.
+         *
+         * @param GoogleCloudApigeeV1LlmOperation[] $llmOperations
+         */
+        public function setLlmOperations($llmOperations)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1LlmOperation[]
+         */
+        public function getLlmOperations()
+        {
+        }
+        /**
+         * Required. LLM token Quota parameters to be enforced for the resources,
+         * methods, and API source & LLM model combination. If none are specified,
+         * quota enforcement will not be done.
+         *
+         * @param GoogleCloudApigeeV1LlmTokenQuota $llmTokenQuota
+         */
+        public function setLlmTokenQuota(GoogleCloudApigeeV1LlmTokenQuota $llmTokenQuota)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1LlmTokenQuota
+         */
+        public function getLlmTokenQuota()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1LlmOperationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiSource()
-    {
-    }
-    /**
-     * Optional. Custom attributes associated with the operation.
-     *
-     * @param GoogleCloudApigeeV1Attribute[] $attributes
-     */
-    public function setAttributes($attributes)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1Attribute[]
-     */
-    public function getAttributes()
-    {
-    }
-    /**
-     * Required. List of resource/method/model for the API proxy to which quota
-     * will applied. **Note**: Currently, you can specify only a single
-     * resource/method/model mapping. The call will fail if more than one
-     * resource/method/model mappings are provided.
-     *
-     * @param GoogleCloudApigeeV1LlmOperation[] $llmOperations
-     */
-    public function setLlmOperations($llmOperations)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1LlmOperation[]
-     */
-    public function getLlmOperations()
-    {
-    }
-    /**
-     * Required. LLM token Quota parameters to be enforced for the resources,
-     * methods, and API source & LLM model combination. If none are specified,
-     * quota enforcement will not be done.
-     *
-     * @param GoogleCloudApigeeV1LlmTokenQuota $llmTokenQuota
-     */
-    public function setLlmTokenQuota(GoogleCloudApigeeV1LlmTokenQuota $llmTokenQuota)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1LlmTokenQuota
-     */
-    public function getLlmTokenQuota()
+    class Google_Service_Apigee_GoogleCloudApigeeV1LlmOperationConfig extends \Google\Service\Apigee\GoogleCloudApigeeV1LlmOperationConfig
     {
     }
 }

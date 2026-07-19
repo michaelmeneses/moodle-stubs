@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class FunctionEntity extends \Google\Model
-{
-    /**
-     * Custom engine specific features.
-     *
-     * @var array[]
-     */
-    public $customFeatures;
-    /**
-     * The SQL code which creates the function.
-     *
-     * @var string
-     */
-    public $sqlCode;
-    /**
-     * Custom engine specific features.
-     *
-     * @param array[] $customFeatures
-     */
-    public function setCustomFeatures($customFeatures)
+namespace Google\Service\DatabaseMigrationService {
+    class FunctionEntity extends \Google\Model
     {
+        /**
+         * Custom engine specific features.
+         *
+         * @var array[]
+         */
+        public $customFeatures;
+        /**
+         * The SQL code which creates the function.
+         *
+         * @var string
+         */
+        public $sqlCode;
+        /**
+         * Custom engine specific features.
+         *
+         * @param array[] $customFeatures
+         */
+        public function setCustomFeatures($customFeatures)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getCustomFeatures()
+        {
+        }
+        /**
+         * The SQL code which creates the function.
+         *
+         * @param string $sqlCode
+         */
+        public function setSqlCode($sqlCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSqlCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\FunctionEntity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomFeatures()
-    {
-    }
-    /**
-     * The SQL code which creates the function.
-     *
-     * @param string $sqlCode
-     */
-    public function setSqlCode($sqlCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSqlCode()
+    class Google_Service_DatabaseMigrationService_FunctionEntity extends \Google\Service\DatabaseMigrationService\FunctionEntity
     {
     }
 }

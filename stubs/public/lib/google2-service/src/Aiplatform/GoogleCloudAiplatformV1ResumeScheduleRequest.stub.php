@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ResumeScheduleRequest extends \Google\Model
-{
-    /**
-     * Optional. Whether to backfill missed runs when the schedule is resumed from
-     * PAUSED state. If set to true, all missed runs will be scheduled. New runs
-     * will be scheduled after the backfill is complete. This will also update
-     * Schedule.catch_up field. Default to false.
-     *
-     * @var bool
-     */
-    public $catchUp;
-    /**
-     * Optional. Whether to backfill missed runs when the schedule is resumed from
-     * PAUSED state. If set to true, all missed runs will be scheduled. New runs
-     * will be scheduled after the backfill is complete. This will also update
-     * Schedule.catch_up field. Default to false.
-     *
-     * @param bool $catchUp
-     */
-    public function setCatchUp($catchUp)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ResumeScheduleRequest extends \Google\Model
     {
+        /**
+         * Optional. Whether to backfill missed runs when the schedule is resumed from
+         * PAUSED state. If set to true, all missed runs will be scheduled. New runs
+         * will be scheduled after the backfill is complete. This will also update
+         * Schedule.catch_up field. Default to false.
+         *
+         * @var bool
+         */
+        public $catchUp;
+        /**
+         * Optional. Whether to backfill missed runs when the schedule is resumed from
+         * PAUSED state. If set to true, all missed runs will be scheduled. New runs
+         * will be scheduled after the backfill is complete. This will also update
+         * Schedule.catch_up field. Default to false.
+         *
+         * @param bool $catchUp
+         */
+        public function setCatchUp($catchUp)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCatchUp()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ResumeScheduleRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCatchUp()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ResumeScheduleRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ResumeScheduleRequest
     {
     }
 }

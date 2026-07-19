@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsData;
-
-class BatchRunPivotReportsResponse extends \Google\Collection
-{
-    protected $collection_key = 'pivotReports';
-    /**
-     * Identifies what kind of resource this message is. This `kind` is always the
-     * fixed string "analyticsData#batchRunPivotReports". Useful to distinguish
-     * between response types in JSON.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $pivotReportsType = RunPivotReportResponse::class;
-    protected $pivotReportsDataType = 'array';
-    /**
-     * Identifies what kind of resource this message is. This `kind` is always the
-     * fixed string "analyticsData#batchRunPivotReports". Useful to distinguish
-     * between response types in JSON.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\AnalyticsData {
+    class BatchRunPivotReportsResponse extends \Google\Collection
     {
+        protected $collection_key = 'pivotReports';
+        /**
+         * Identifies what kind of resource this message is. This `kind` is always the
+         * fixed string "analyticsData#batchRunPivotReports". Useful to distinguish
+         * between response types in JSON.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $pivotReportsType = RunPivotReportResponse::class;
+        protected $pivotReportsDataType = 'array';
+        /**
+         * Identifies what kind of resource this message is. This `kind` is always the
+         * fixed string "analyticsData#batchRunPivotReports". Useful to distinguish
+         * between response types in JSON.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Individual responses. Each response has a separate pivot report request.
+         *
+         * @param RunPivotReportResponse[] $pivotReports
+         */
+        public function setPivotReports($pivotReports)
+        {
+        }
+        /**
+         * @return RunPivotReportResponse[]
+         */
+        public function getPivotReports()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AnalyticsData\BatchRunPivotReportsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * Individual responses. Each response has a separate pivot report request.
-     *
-     * @param RunPivotReportResponse[] $pivotReports
-     */
-    public function setPivotReports($pivotReports)
-    {
-    }
-    /**
-     * @return RunPivotReportResponse[]
-     */
-    public function getPivotReports()
+    class Google_Service_AnalyticsData_BatchRunPivotReportsResponse extends \Google\Service\AnalyticsData\BatchRunPivotReportsResponse
     {
     }
 }

@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveActivity;
-
-class Actor extends \Google\Model
-{
-    protected $administratorType = Administrator::class;
-    protected $administratorDataType = '';
-    protected $anonymousType = AnonymousUser::class;
-    protected $anonymousDataType = '';
-    protected $impersonationType = Impersonation::class;
-    protected $impersonationDataType = '';
-    protected $systemType = SystemEvent::class;
-    protected $systemDataType = '';
-    protected $userType = User::class;
-    protected $userDataType = '';
-    /**
-     * An administrator.
-     *
-     * @param Administrator $administrator
-     */
-    public function setAdministrator(Administrator $administrator)
+namespace Google\Service\DriveActivity {
+    class Actor extends \Google\Model
     {
+        protected $administratorType = Administrator::class;
+        protected $administratorDataType = '';
+        protected $anonymousType = AnonymousUser::class;
+        protected $anonymousDataType = '';
+        protected $impersonationType = Impersonation::class;
+        protected $impersonationDataType = '';
+        protected $systemType = SystemEvent::class;
+        protected $systemDataType = '';
+        protected $userType = User::class;
+        protected $userDataType = '';
+        /**
+         * An administrator.
+         *
+         * @param Administrator $administrator
+         */
+        public function setAdministrator(Administrator $administrator)
+        {
+        }
+        /**
+         * @return Administrator
+         */
+        public function getAdministrator()
+        {
+        }
+        /**
+         * An anonymous user.
+         *
+         * @param AnonymousUser $anonymous
+         */
+        public function setAnonymous(AnonymousUser $anonymous)
+        {
+        }
+        /**
+         * @return AnonymousUser
+         */
+        public function getAnonymous()
+        {
+        }
+        /**
+         * An account acting on behalf of another.
+         *
+         * @param Impersonation $impersonation
+         */
+        public function setImpersonation(Impersonation $impersonation)
+        {
+        }
+        /**
+         * @return Impersonation
+         */
+        public function getImpersonation()
+        {
+        }
+        /**
+         * A non-user actor (i.e. system triggered).
+         *
+         * @param SystemEvent $system
+         */
+        public function setSystem(SystemEvent $system)
+        {
+        }
+        /**
+         * @return SystemEvent
+         */
+        public function getSystem()
+        {
+        }
+        /**
+         * An end user.
+         *
+         * @param User $user
+         */
+        public function setUser(User $user)
+        {
+        }
+        /**
+         * @return User
+         */
+        public function getUser()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Administrator
+     * Runtime class alias of \Google\Service\DriveActivity\Actor registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdministrator()
-    {
-    }
-    /**
-     * An anonymous user.
-     *
-     * @param AnonymousUser $anonymous
-     */
-    public function setAnonymous(AnonymousUser $anonymous)
-    {
-    }
-    /**
-     * @return AnonymousUser
-     */
-    public function getAnonymous()
-    {
-    }
-    /**
-     * An account acting on behalf of another.
-     *
-     * @param Impersonation $impersonation
-     */
-    public function setImpersonation(Impersonation $impersonation)
-    {
-    }
-    /**
-     * @return Impersonation
-     */
-    public function getImpersonation()
-    {
-    }
-    /**
-     * A non-user actor (i.e. system triggered).
-     *
-     * @param SystemEvent $system
-     */
-    public function setSystem(SystemEvent $system)
-    {
-    }
-    /**
-     * @return SystemEvent
-     */
-    public function getSystem()
-    {
-    }
-    /**
-     * An end user.
-     *
-     * @param User $user
-     */
-    public function setUser(User $user)
-    {
-    }
-    /**
-     * @return User
-     */
-    public function getUser()
+    class Google_Service_DriveActivity_Actor extends \Google\Service\DriveActivity\Actor
     {
     }
 }

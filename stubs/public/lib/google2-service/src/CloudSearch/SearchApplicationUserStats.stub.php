@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class SearchApplicationUserStats extends \Google\Model
-{
-    protected $dateType = Date::class;
-    protected $dateDataType = '';
-    /**
-     * The count of unique active users in the past one day
-     *
-     * @var string
-     */
-    public $oneDayActiveUsersCount;
-    /**
-     * The count of unique active users in the past seven days
-     *
-     * @var string
-     */
-    public $sevenDaysActiveUsersCount;
-    /**
-     * The count of unique active users in the past thirty days
-     *
-     * @var string
-     */
-    public $thirtyDaysActiveUsersCount;
-    /**
-     * The date for which session stats were calculated. Stats calculated on the
-     * next day close to midnight are returned.
-     *
-     * @param Date $date
-     */
-    public function setDate(Date $date)
+namespace Google\Service\CloudSearch {
+    class SearchApplicationUserStats extends \Google\Model
     {
+        protected $dateType = Date::class;
+        protected $dateDataType = '';
+        /**
+         * The count of unique active users in the past one day
+         *
+         * @var string
+         */
+        public $oneDayActiveUsersCount;
+        /**
+         * The count of unique active users in the past seven days
+         *
+         * @var string
+         */
+        public $sevenDaysActiveUsersCount;
+        /**
+         * The count of unique active users in the past thirty days
+         *
+         * @var string
+         */
+        public $thirtyDaysActiveUsersCount;
+        /**
+         * The date for which session stats were calculated. Stats calculated on the
+         * next day close to midnight are returned.
+         *
+         * @param Date $date
+         */
+        public function setDate(Date $date)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getDate()
+        {
+        }
+        /**
+         * The count of unique active users in the past one day
+         *
+         * @param string $oneDayActiveUsersCount
+         */
+        public function setOneDayActiveUsersCount($oneDayActiveUsersCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOneDayActiveUsersCount()
+        {
+        }
+        /**
+         * The count of unique active users in the past seven days
+         *
+         * @param string $sevenDaysActiveUsersCount
+         */
+        public function setSevenDaysActiveUsersCount($sevenDaysActiveUsersCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSevenDaysActiveUsersCount()
+        {
+        }
+        /**
+         * The count of unique active users in the past thirty days
+         *
+         * @param string $thirtyDaysActiveUsersCount
+         */
+        public function setThirtyDaysActiveUsersCount($thirtyDaysActiveUsersCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getThirtyDaysActiveUsersCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Date
+     * Runtime class alias of \Google\Service\CloudSearch\SearchApplicationUserStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDate()
-    {
-    }
-    /**
-     * The count of unique active users in the past one day
-     *
-     * @param string $oneDayActiveUsersCount
-     */
-    public function setOneDayActiveUsersCount($oneDayActiveUsersCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOneDayActiveUsersCount()
-    {
-    }
-    /**
-     * The count of unique active users in the past seven days
-     *
-     * @param string $sevenDaysActiveUsersCount
-     */
-    public function setSevenDaysActiveUsersCount($sevenDaysActiveUsersCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSevenDaysActiveUsersCount()
-    {
-    }
-    /**
-     * The count of unique active users in the past thirty days
-     *
-     * @param string $thirtyDaysActiveUsersCount
-     */
-    public function setThirtyDaysActiveUsersCount($thirtyDaysActiveUsersCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getThirtyDaysActiveUsersCount()
+    class Google_Service_CloudSearch_SearchApplicationUserStats extends \Google\Service\CloudSearch\SearchApplicationUserStats
     {
     }
 }

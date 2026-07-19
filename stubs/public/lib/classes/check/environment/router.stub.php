@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\check\environment;
 
+use core\check\check;
+use core\check\result;
+use core\output\action_link;
+use GuzzleHttp\HandlerStack;
 /**
  * Checks status of router by making test requests to shimmed and API pages.
  *

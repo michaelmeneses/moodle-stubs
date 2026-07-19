@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class CombinedAudienceGroup extends \Google\Collection
-{
-    protected $collection_key = 'settings';
-    protected $settingsType = CombinedAudienceTargetingSetting::class;
-    protected $settingsDataType = 'array';
-    /**
-     * Required. All combined audience targeting settings in combined audience
-     * group. Repeated settings with the same id will be ignored. The number of
-     * combined audience settings should be no more than five, error will be
-     * thrown otherwise.
-     *
-     * @param CombinedAudienceTargetingSetting[] $settings
-     */
-    public function setSettings($settings)
+namespace Google\Service\DisplayVideo {
+    class CombinedAudienceGroup extends \Google\Collection
     {
+        protected $collection_key = 'settings';
+        protected $settingsType = CombinedAudienceTargetingSetting::class;
+        protected $settingsDataType = 'array';
+        /**
+         * Required. All combined audience targeting settings in combined audience
+         * group. Repeated settings with the same id will be ignored. The number of
+         * combined audience settings should be no more than five, error will be
+         * thrown otherwise.
+         *
+         * @param CombinedAudienceTargetingSetting[] $settings
+         */
+        public function setSettings($settings)
+        {
+        }
+        /**
+         * @return CombinedAudienceTargetingSetting[]
+         */
+        public function getSettings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CombinedAudienceTargetingSetting[]
+     * Runtime class alias of \Google\Service\DisplayVideo\CombinedAudienceGroup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSettings()
+    class Google_Service_DisplayVideo_CombinedAudienceGroup extends \Google\Service\DisplayVideo\CombinedAudienceGroup
     {
     }
 }

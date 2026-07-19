@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig\Resource;
-
-/**
- * The "locations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $osconfigService = new Google\Service\OSConfig(...);
- *   $locations = $osconfigService->folders_locations;
- *  </code>
- */
-class FoldersLocations extends \Google\Service\Resource
-{
+namespace Google\Service\OSConfig\Resource {
+    /**
+     * The "locations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $osconfigService = new Google\Service\OSConfig(...);
+     *   $locations = $osconfigService->folders_locations;
+     *  </code>
+     */
+    class FoldersLocations extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\OSConfig\Resource\FoldersLocations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_OSConfig_Resource_FoldersLocations extends \Google\Service\OSConfig\Resource\FoldersLocations
+    {
+    }
 }

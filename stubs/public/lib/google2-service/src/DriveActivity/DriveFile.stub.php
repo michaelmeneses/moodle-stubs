@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveActivity;
-
-class DriveFile extends \Google\Model
-{
+namespace Google\Service\DriveActivity {
+    class DriveFile extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DriveActivity\DriveFile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DriveActivity_DriveFile extends \Google\Service\DriveActivity\DriveFile
+    {
+    }
 }

@@ -21,148 +21,157 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class WorkerSettings extends \Google\Model
-{
-    /**
-     * The base URL for accessing Google Cloud APIs. When workers access Google
-     * Cloud APIs, they logically do so via relative URLs. If this field is
-     * specified, it supplies the base URL to use for resolving these relative
-     * URLs. The normative algorithm used is defined by RFC 1808, "Relative
-     * Uniform Resource Locators". If not specified, the default value is
-     * "http://www.googleapis.com/"
-     *
-     * @var string
-     */
-    public $baseUrl;
-    /**
-     * Whether to send work progress updates to the service.
-     *
-     * @var bool
-     */
-    public $reportingEnabled;
-    /**
-     * The Cloud Dataflow service path relative to the root URL, for example,
-     * "dataflow/v1b3/projects".
-     *
-     * @var string
-     */
-    public $servicePath;
-    /**
-     * The Shuffle service path relative to the root URL, for example,
-     * "shuffle/v1beta1".
-     *
-     * @var string
-     */
-    public $shuffleServicePath;
-    /**
-     * The prefix of the resources the system should use for temporary storage.
-     * The supported resource type is: Google Cloud Storage:
-     * storage.googleapis.com/{bucket}/{object}
-     * bucket.storage.googleapis.com/{object}
-     *
-     * @var string
-     */
-    public $tempStoragePrefix;
-    /**
-     * The ID of the worker running this pipeline.
-     *
-     * @var string
-     */
-    public $workerId;
-    /**
-     * The base URL for accessing Google Cloud APIs. When workers access Google
-     * Cloud APIs, they logically do so via relative URLs. If this field is
-     * specified, it supplies the base URL to use for resolving these relative
-     * URLs. The normative algorithm used is defined by RFC 1808, "Relative
-     * Uniform Resource Locators". If not specified, the default value is
-     * "http://www.googleapis.com/"
-     *
-     * @param string $baseUrl
-     */
-    public function setBaseUrl($baseUrl)
+namespace Google\Service\Dataflow {
+    class WorkerSettings extends \Google\Model
     {
+        /**
+         * The base URL for accessing Google Cloud APIs. When workers access Google
+         * Cloud APIs, they logically do so via relative URLs. If this field is
+         * specified, it supplies the base URL to use for resolving these relative
+         * URLs. The normative algorithm used is defined by RFC 1808, "Relative
+         * Uniform Resource Locators". If not specified, the default value is
+         * "http://www.googleapis.com/"
+         *
+         * @var string
+         */
+        public $baseUrl;
+        /**
+         * Whether to send work progress updates to the service.
+         *
+         * @var bool
+         */
+        public $reportingEnabled;
+        /**
+         * The Cloud Dataflow service path relative to the root URL, for example,
+         * "dataflow/v1b3/projects".
+         *
+         * @var string
+         */
+        public $servicePath;
+        /**
+         * The Shuffle service path relative to the root URL, for example,
+         * "shuffle/v1beta1".
+         *
+         * @var string
+         */
+        public $shuffleServicePath;
+        /**
+         * The prefix of the resources the system should use for temporary storage.
+         * The supported resource type is: Google Cloud Storage:
+         * storage.googleapis.com/{bucket}/{object}
+         * bucket.storage.googleapis.com/{object}
+         *
+         * @var string
+         */
+        public $tempStoragePrefix;
+        /**
+         * The ID of the worker running this pipeline.
+         *
+         * @var string
+         */
+        public $workerId;
+        /**
+         * The base URL for accessing Google Cloud APIs. When workers access Google
+         * Cloud APIs, they logically do so via relative URLs. If this field is
+         * specified, it supplies the base URL to use for resolving these relative
+         * URLs. The normative algorithm used is defined by RFC 1808, "Relative
+         * Uniform Resource Locators". If not specified, the default value is
+         * "http://www.googleapis.com/"
+         *
+         * @param string $baseUrl
+         */
+        public function setBaseUrl($baseUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBaseUrl()
+        {
+        }
+        /**
+         * Whether to send work progress updates to the service.
+         *
+         * @param bool $reportingEnabled
+         */
+        public function setReportingEnabled($reportingEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReportingEnabled()
+        {
+        }
+        /**
+         * The Cloud Dataflow service path relative to the root URL, for example,
+         * "dataflow/v1b3/projects".
+         *
+         * @param string $servicePath
+         */
+        public function setServicePath($servicePath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServicePath()
+        {
+        }
+        /**
+         * The Shuffle service path relative to the root URL, for example,
+         * "shuffle/v1beta1".
+         *
+         * @param string $shuffleServicePath
+         */
+        public function setShuffleServicePath($shuffleServicePath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShuffleServicePath()
+        {
+        }
+        /**
+         * The prefix of the resources the system should use for temporary storage.
+         * The supported resource type is: Google Cloud Storage:
+         * storage.googleapis.com/{bucket}/{object}
+         * bucket.storage.googleapis.com/{object}
+         *
+         * @param string $tempStoragePrefix
+         */
+        public function setTempStoragePrefix($tempStoragePrefix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTempStoragePrefix()
+        {
+        }
+        /**
+         * The ID of the worker running this pipeline.
+         *
+         * @param string $workerId
+         */
+        public function setWorkerId($workerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWorkerId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\WorkerSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBaseUrl()
-    {
-    }
-    /**
-     * Whether to send work progress updates to the service.
-     *
-     * @param bool $reportingEnabled
-     */
-    public function setReportingEnabled($reportingEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReportingEnabled()
-    {
-    }
-    /**
-     * The Cloud Dataflow service path relative to the root URL, for example,
-     * "dataflow/v1b3/projects".
-     *
-     * @param string $servicePath
-     */
-    public function setServicePath($servicePath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServicePath()
-    {
-    }
-    /**
-     * The Shuffle service path relative to the root URL, for example,
-     * "shuffle/v1beta1".
-     *
-     * @param string $shuffleServicePath
-     */
-    public function setShuffleServicePath($shuffleServicePath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShuffleServicePath()
-    {
-    }
-    /**
-     * The prefix of the resources the system should use for temporary storage.
-     * The supported resource type is: Google Cloud Storage:
-     * storage.googleapis.com/{bucket}/{object}
-     * bucket.storage.googleapis.com/{object}
-     *
-     * @param string $tempStoragePrefix
-     */
-    public function setTempStoragePrefix($tempStoragePrefix)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTempStoragePrefix()
-    {
-    }
-    /**
-     * The ID of the worker running this pipeline.
-     *
-     * @param string $workerId
-     */
-    public function setWorkerId($workerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWorkerId()
+    class Google_Service_Dataflow_WorkerSettings extends \Google\Service\Dataflow\WorkerSettings
     {
     }
 }

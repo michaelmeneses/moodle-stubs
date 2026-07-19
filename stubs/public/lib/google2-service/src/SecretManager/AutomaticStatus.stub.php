@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecretManager;
-
-class AutomaticStatus extends \Google\Model
-{
-    protected $customerManagedEncryptionType = CustomerManagedEncryptionStatus::class;
-    protected $customerManagedEncryptionDataType = '';
-    /**
-     * Output only. The customer-managed encryption status of the SecretVersion.
-     * Only populated if customer-managed encryption is used.
-     *
-     * @param CustomerManagedEncryptionStatus $customerManagedEncryption
-     */
-    public function setCustomerManagedEncryption(CustomerManagedEncryptionStatus $customerManagedEncryption)
+namespace Google\Service\SecretManager {
+    class AutomaticStatus extends \Google\Model
     {
+        protected $customerManagedEncryptionType = CustomerManagedEncryptionStatus::class;
+        protected $customerManagedEncryptionDataType = '';
+        /**
+         * Output only. The customer-managed encryption status of the SecretVersion.
+         * Only populated if customer-managed encryption is used.
+         *
+         * @param CustomerManagedEncryptionStatus $customerManagedEncryption
+         */
+        public function setCustomerManagedEncryption(CustomerManagedEncryptionStatus $customerManagedEncryption)
+        {
+        }
+        /**
+         * @return CustomerManagedEncryptionStatus
+         */
+        public function getCustomerManagedEncryption()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CustomerManagedEncryptionStatus
+     * Runtime class alias of \Google\Service\SecretManager\AutomaticStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomerManagedEncryption()
+    class Google_Service_SecretManager_AutomaticStatus extends \Google\Service\SecretManager\AutomaticStatus
     {
     }
 }

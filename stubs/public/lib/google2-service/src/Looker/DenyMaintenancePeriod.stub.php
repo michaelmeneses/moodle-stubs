@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Looker;
-
-class DenyMaintenancePeriod extends \Google\Model
-{
-    protected $endDateType = Date::class;
-    protected $endDateDataType = '';
-    protected $startDateType = Date::class;
-    protected $startDateDataType = '';
-    protected $timeType = TimeOfDay::class;
-    protected $timeDataType = '';
-    /**
-     * Required. End date of the deny maintenance period.
-     *
-     * @param Date $endDate
-     */
-    public function setEndDate(Date $endDate)
+namespace Google\Service\Looker {
+    class DenyMaintenancePeriod extends \Google\Model
     {
+        protected $endDateType = Date::class;
+        protected $endDateDataType = '';
+        protected $startDateType = Date::class;
+        protected $startDateDataType = '';
+        protected $timeType = TimeOfDay::class;
+        protected $timeDataType = '';
+        /**
+         * Required. End date of the deny maintenance period.
+         *
+         * @param Date $endDate
+         */
+        public function setEndDate(Date $endDate)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getEndDate()
+        {
+        }
+        /**
+         * Required. Start date of the deny maintenance period.
+         *
+         * @param Date $startDate
+         */
+        public function setStartDate(Date $startDate)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getStartDate()
+        {
+        }
+        /**
+         * Required. Time in UTC when the period starts and ends.
+         *
+         * @param TimeOfDay $time
+         */
+        public function setTime(TimeOfDay $time)
+        {
+        }
+        /**
+         * @return TimeOfDay
+         */
+        public function getTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Date
+     * Runtime class alias of \Google\Service\Looker\DenyMaintenancePeriod registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndDate()
-    {
-    }
-    /**
-     * Required. Start date of the deny maintenance period.
-     *
-     * @param Date $startDate
-     */
-    public function setStartDate(Date $startDate)
-    {
-    }
-    /**
-     * @return Date
-     */
-    public function getStartDate()
-    {
-    }
-    /**
-     * Required. Time in UTC when the period starts and ends.
-     *
-     * @param TimeOfDay $time
-     */
-    public function setTime(TimeOfDay $time)
-    {
-    }
-    /**
-     * @return TimeOfDay
-     */
-    public function getTime()
+    class Google_Service_Looker_DenyMaintenancePeriod extends \Google\Service\Looker\DenyMaintenancePeriod
     {
     }
 }

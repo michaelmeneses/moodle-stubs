@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class ListGithubEnterpriseConfigsResponse extends \Google\Collection
-{
-    protected $collection_key = 'configs';
-    protected $configsType = GitHubEnterpriseConfig::class;
-    protected $configsDataType = 'array';
-    /**
-     * @param GitHubEnterpriseConfig[]
-     */
-    public function setConfigs($configs)
+namespace Google\Service\CloudBuild {
+    class ListGithubEnterpriseConfigsResponse extends \Google\Collection
     {
+        protected $collection_key = 'configs';
+        protected $configsType = GitHubEnterpriseConfig::class;
+        protected $configsDataType = 'array';
+        /**
+         * @param GitHubEnterpriseConfig[]
+         */
+        public function setConfigs($configs)
+        {
+        }
+        /**
+         * @return GitHubEnterpriseConfig[]
+         */
+        public function getConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GitHubEnterpriseConfig[]
+     * Runtime class alias of \Google\Service\CloudBuild\ListGithubEnterpriseConfigsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfigs()
+    class Google_Service_CloudBuild_ListGithubEnterpriseConfigsResponse extends \Google\Service\CloudBuild\ListGithubEnterpriseConfigsResponse
     {
     }
 }

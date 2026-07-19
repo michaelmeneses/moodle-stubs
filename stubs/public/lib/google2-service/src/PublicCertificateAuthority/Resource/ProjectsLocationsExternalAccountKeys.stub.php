@@ -21,32 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PublicCertificateAuthority\Resource;
-
-/**
- * The "externalAccountKeys" collection of methods.
- * Typical usage is:
- *  <code>
- *   $publiccaService = new Google\Service\PublicCertificateAuthority(...);
- *   $externalAccountKeys = $publiccaService->projects_locations_externalAccountKeys;
- *  </code>
- */
-class ProjectsLocationsExternalAccountKeys extends \Google\Service\Resource
-{
+namespace Google\Service\PublicCertificateAuthority\Resource {
+    use Google\Service\PublicCertificateAuthority\ExternalAccountKey;
     /**
-     * Creates a new ExternalAccountKey bound to the project.
-     * (externalAccountKeys.create)
-     *
-     * @param string $parent Required. The parent resource where this
-     * external_account_key will be created. Format:
-     * projects/[project_id]/locations/[location]. At present only the "global"
-     * location is supported.
-     * @param ExternalAccountKey $postBody
-     * @param array $optParams Optional parameters.
-     * @return ExternalAccountKey
-     * @throws \Google\Service\Exception
+     * The "externalAccountKeys" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $publiccaService = new Google\Service\PublicCertificateAuthority(...);
+     *   $externalAccountKeys = $publiccaService->projects_locations_externalAccountKeys;
+     *  </code>
      */
-    public function create($parent, ExternalAccountKey $postBody, $optParams = [])
+    class ProjectsLocationsExternalAccountKeys extends \Google\Service\Resource
+    {
+        /**
+         * Creates a new ExternalAccountKey bound to the project.
+         * (externalAccountKeys.create)
+         *
+         * @param string $parent Required. The parent resource where this
+         * external_account_key will be created. Format:
+         * projects/[project_id]/locations/[location]. At present only the "global"
+         * location is supported.
+         * @param ExternalAccountKey $postBody
+         * @param array $optParams Optional parameters.
+         * @return ExternalAccountKey
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, ExternalAccountKey $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\PublicCertificateAuthority\Resource\ProjectsLocationsExternalAccountKeys registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_PublicCertificateAuthority_Resource_ProjectsLocationsExternalAccountKeys extends \Google\Service\PublicCertificateAuthority\Resource\ProjectsLocationsExternalAccountKeys
     {
     }
 }

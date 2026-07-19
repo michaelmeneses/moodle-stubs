@@ -21,117 +21,129 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory\Resource;
-
-/**
- * The "features" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adminService = new Google\Service\Directory(...);
- *   $features = $adminService->resources_features;
- *  </code>
- */
-class ResourcesFeatures extends \Google\Service\Resource
-{
+namespace Google\Service\Directory\Resource {
+    use Google\Service\Directory\Feature;
+    use Google\Service\Directory\FeatureRename;
+    use Google\Service\Directory\Features;
     /**
-     * Deletes a feature. (features.delete)
-     *
-     * @param string $customer The unique ID for the customer's Google Workspace
-     * account. As an account administrator, you can also use the `my_customer`
-     * alias to represent your account's customer ID.
-     * @param string $featureKey The unique ID of the feature to delete.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "features" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adminService = new Google\Service\Directory(...);
+     *   $features = $adminService->resources_features;
+     *  </code>
      */
-    public function delete($customer, $featureKey, $optParams = [])
+    class ResourcesFeatures extends \Google\Service\Resource
     {
+        /**
+         * Deletes a feature. (features.delete)
+         *
+         * @param string $customer The unique ID for the customer's Google Workspace
+         * account. As an account administrator, you can also use the `my_customer`
+         * alias to represent your account's customer ID.
+         * @param string $featureKey The unique ID of the feature to delete.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($customer, $featureKey, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a feature. (features.get)
+         *
+         * @param string $customer The unique ID for the customer's Google Workspace
+         * account. As an account administrator, you can also use the `my_customer`
+         * alias to represent your account's customer ID.
+         * @param string $featureKey The unique ID of the feature to retrieve.
+         * @param array $optParams Optional parameters.
+         * @return Feature
+         * @throws \Google\Service\Exception
+         */
+        public function get($customer, $featureKey, $optParams = [])
+        {
+        }
+        /**
+         * Inserts a feature. (features.insert)
+         *
+         * @param string $customer The unique ID for the customer's Google Workspace
+         * account. As an account administrator, you can also use the `my_customer`
+         * alias to represent your account's customer ID.
+         * @param Feature $postBody
+         * @param array $optParams Optional parameters.
+         * @return Feature
+         * @throws \Google\Service\Exception
+         */
+        public function insert($customer, Feature $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a list of features for an account. (features.listResourcesFeatures)
+         *
+         * @param string $customer The unique ID for the customer's Google Workspace
+         * account. As an account administrator, you can also use the `my_customer`
+         * alias to represent your account's customer ID.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int maxResults Maximum number of results to return.
+         * @opt_param string pageToken Token to specify the next page in the list.
+         * @return Features
+         * @throws \Google\Service\Exception
+         */
+        public function listResourcesFeatures($customer, $optParams = [])
+        {
+        }
+        /**
+         * Patches a feature. (features.patch)
+         *
+         * @param string $customer The unique ID for the customer's Google Workspace
+         * account. As an account administrator, you can also use the `my_customer`
+         * alias to represent your account's customer ID.
+         * @param string $featureKey The unique ID of the feature to update.
+         * @param Feature $postBody
+         * @param array $optParams Optional parameters.
+         * @return Feature
+         * @throws \Google\Service\Exception
+         */
+        public function patch($customer, $featureKey, Feature $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Renames a feature. (features.rename)
+         *
+         * @param string $customer The unique ID for the customer's Google Workspace
+         * account. As an account administrator, you can also use the `my_customer`
+         * alias to represent your account's customer ID.
+         * @param string $oldName The unique ID of the feature to rename.
+         * @param FeatureRename $postBody
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function rename($customer, $oldName, FeatureRename $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates a feature. (features.update)
+         *
+         * @param string $customer The unique ID for the customer's Google Workspace
+         * account. As an account administrator, you can also use the `my_customer`
+         * alias to represent your account's customer ID.
+         * @param string $featureKey The unique ID of the feature to update.
+         * @param Feature $postBody
+         * @param array $optParams Optional parameters.
+         * @return Feature
+         * @throws \Google\Service\Exception
+         */
+        public function update($customer, $featureKey, Feature $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves a feature. (features.get)
-     *
-     * @param string $customer The unique ID for the customer's Google Workspace
-     * account. As an account administrator, you can also use the `my_customer`
-     * alias to represent your account's customer ID.
-     * @param string $featureKey The unique ID of the feature to retrieve.
-     * @param array $optParams Optional parameters.
-     * @return Feature
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Directory\Resource\ResourcesFeatures registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($customer, $featureKey, $optParams = [])
-    {
-    }
-    /**
-     * Inserts a feature. (features.insert)
-     *
-     * @param string $customer The unique ID for the customer's Google Workspace
-     * account. As an account administrator, you can also use the `my_customer`
-     * alias to represent your account's customer ID.
-     * @param Feature $postBody
-     * @param array $optParams Optional parameters.
-     * @return Feature
-     * @throws \Google\Service\Exception
-     */
-    public function insert($customer, Feature $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves a list of features for an account. (features.listResourcesFeatures)
-     *
-     * @param string $customer The unique ID for the customer's Google Workspace
-     * account. As an account administrator, you can also use the `my_customer`
-     * alias to represent your account's customer ID.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int maxResults Maximum number of results to return.
-     * @opt_param string pageToken Token to specify the next page in the list.
-     * @return Features
-     * @throws \Google\Service\Exception
-     */
-    public function listResourcesFeatures($customer, $optParams = [])
-    {
-    }
-    /**
-     * Patches a feature. (features.patch)
-     *
-     * @param string $customer The unique ID for the customer's Google Workspace
-     * account. As an account administrator, you can also use the `my_customer`
-     * alias to represent your account's customer ID.
-     * @param string $featureKey The unique ID of the feature to update.
-     * @param Feature $postBody
-     * @param array $optParams Optional parameters.
-     * @return Feature
-     * @throws \Google\Service\Exception
-     */
-    public function patch($customer, $featureKey, Feature $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Renames a feature. (features.rename)
-     *
-     * @param string $customer The unique ID for the customer's Google Workspace
-     * account. As an account administrator, you can also use the `my_customer`
-     * alias to represent your account's customer ID.
-     * @param string $oldName The unique ID of the feature to rename.
-     * @param FeatureRename $postBody
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
-     */
-    public function rename($customer, $oldName, FeatureRename $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates a feature. (features.update)
-     *
-     * @param string $customer The unique ID for the customer's Google Workspace
-     * account. As an account administrator, you can also use the `my_customer`
-     * alias to represent your account's customer ID.
-     * @param string $featureKey The unique ID of the feature to update.
-     * @param Feature $postBody
-     * @param array $optParams Optional parameters.
-     * @return Feature
-     * @throws \Google\Service\Exception
-     */
-    public function update($customer, $featureKey, Feature $postBody, $optParams = [])
+    class Google_Service_Directory_Resource_ResourcesFeatures extends \Google\Service\Directory\Resource\ResourcesFeatures
     {
     }
 }

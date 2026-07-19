@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkServices;
-
-class HttpRouteRequestMirrorPolicy extends \Google\Model
-{
-    protected $destinationType = HttpRouteDestination::class;
-    protected $destinationDataType = '';
-    /**
-     * Optional. The percentage of requests to get mirrored to the desired
-     * destination.
-     *
-     * @var float
-     */
-    public $mirrorPercent;
-    /**
-     * The destination the requests will be mirrored to. The weight of the
-     * destination will be ignored.
-     *
-     * @param HttpRouteDestination $destination
-     */
-    public function setDestination(HttpRouteDestination $destination)
+namespace Google\Service\NetworkServices {
+    class HttpRouteRequestMirrorPolicy extends \Google\Model
     {
+        protected $destinationType = HttpRouteDestination::class;
+        protected $destinationDataType = '';
+        /**
+         * Optional. The percentage of requests to get mirrored to the desired
+         * destination.
+         *
+         * @var float
+         */
+        public $mirrorPercent;
+        /**
+         * The destination the requests will be mirrored to. The weight of the
+         * destination will be ignored.
+         *
+         * @param HttpRouteDestination $destination
+         */
+        public function setDestination(HttpRouteDestination $destination)
+        {
+        }
+        /**
+         * @return HttpRouteDestination
+         */
+        public function getDestination()
+        {
+        }
+        /**
+         * Optional. The percentage of requests to get mirrored to the desired
+         * destination.
+         *
+         * @param float $mirrorPercent
+         */
+        public function setMirrorPercent($mirrorPercent)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getMirrorPercent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return HttpRouteDestination
+     * Runtime class alias of \Google\Service\NetworkServices\HttpRouteRequestMirrorPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDestination()
-    {
-    }
-    /**
-     * Optional. The percentage of requests to get mirrored to the desired
-     * destination.
-     *
-     * @param float $mirrorPercent
-     */
-    public function setMirrorPercent($mirrorPercent)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getMirrorPercent()
+    class Google_Service_NetworkServices_HttpRouteRequestMirrorPolicy extends \Google\Service\NetworkServices\HttpRouteRequestMirrorPolicy
     {
     }
 }

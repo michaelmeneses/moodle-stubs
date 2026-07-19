@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class BatchGetOneTimeProductOffersRequest extends \Google\Collection
-{
-    protected $collection_key = 'requests';
-    protected $requestsType = GetOneTimeProductOfferRequest::class;
-    protected $requestsDataType = 'array';
-    /**
-     * Required. A list of get requests of up to 100 elements. All requests must
-     * retrieve different offers.
-     *
-     * @param GetOneTimeProductOfferRequest[] $requests
-     */
-    public function setRequests($requests)
+namespace Google\Service\AndroidPublisher {
+    class BatchGetOneTimeProductOffersRequest extends \Google\Collection
     {
+        protected $collection_key = 'requests';
+        protected $requestsType = GetOneTimeProductOfferRequest::class;
+        protected $requestsDataType = 'array';
+        /**
+         * Required. A list of get requests of up to 100 elements. All requests must
+         * retrieve different offers.
+         *
+         * @param GetOneTimeProductOfferRequest[] $requests
+         */
+        public function setRequests($requests)
+        {
+        }
+        /**
+         * @return GetOneTimeProductOfferRequest[]
+         */
+        public function getRequests()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GetOneTimeProductOfferRequest[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\BatchGetOneTimeProductOffersRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequests()
+    class Google_Service_AndroidPublisher_BatchGetOneTimeProductOffersRequest extends \Google\Service\AndroidPublisher\BatchGetOneTimeProductOffersRequest
     {
     }
 }

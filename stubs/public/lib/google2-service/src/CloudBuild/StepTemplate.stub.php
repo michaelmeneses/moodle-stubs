@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class StepTemplate extends \Google\Collection
-{
-    protected $collection_key = 'volumeMounts';
-    protected $envType = EnvVar::class;
-    protected $envDataType = 'array';
-    protected $volumeMountsType = VolumeMount::class;
-    protected $volumeMountsDataType = 'array';
-    /**
-     * Optional. List of environment variables to set in the Step. Cannot be
-     * updated.
-     *
-     * @param EnvVar[] $env
-     */
-    public function setEnv($env)
+namespace Google\Service\CloudBuild {
+    class StepTemplate extends \Google\Collection
     {
+        protected $collection_key = 'volumeMounts';
+        protected $envType = EnvVar::class;
+        protected $envDataType = 'array';
+        protected $volumeMountsType = VolumeMount::class;
+        protected $volumeMountsDataType = 'array';
+        /**
+         * Optional. List of environment variables to set in the Step. Cannot be
+         * updated.
+         *
+         * @param EnvVar[] $env
+         */
+        public function setEnv($env)
+        {
+        }
+        /**
+         * @return EnvVar[]
+         */
+        public function getEnv()
+        {
+        }
+        /**
+         * Optional. Pod volumes to mount into the container's filesystem.
+         *
+         * @param VolumeMount[] $volumeMounts
+         */
+        public function setVolumeMounts($volumeMounts)
+        {
+        }
+        /**
+         * @return VolumeMount[]
+         */
+        public function getVolumeMounts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnvVar[]
+     * Runtime class alias of \Google\Service\CloudBuild\StepTemplate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnv()
-    {
-    }
-    /**
-     * Optional. Pod volumes to mount into the container's filesystem.
-     *
-     * @param VolumeMount[] $volumeMounts
-     */
-    public function setVolumeMounts($volumeMounts)
-    {
-    }
-    /**
-     * @return VolumeMount[]
-     */
-    public function getVolumeMounts()
+    class Google_Service_CloudBuild_StepTemplate extends \Google\Service\CloudBuild\StepTemplate
     {
     }
 }

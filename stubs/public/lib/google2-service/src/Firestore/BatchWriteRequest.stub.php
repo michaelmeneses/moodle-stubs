@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class BatchWriteRequest extends \Google\Collection
-{
-    protected $collection_key = 'writes';
-    /**
-     * Labels associated with this batch write.
-     *
-     * @var string[]
-     */
-    public $labels;
-    protected $writesType = Write::class;
-    protected $writesDataType = 'array';
-    /**
-     * Labels associated with this batch write.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
+namespace Google\Service\Firestore {
+    class BatchWriteRequest extends \Google\Collection
     {
+        protected $collection_key = 'writes';
+        /**
+         * Labels associated with this batch write.
+         *
+         * @var string[]
+         */
+        public $labels;
+        protected $writesType = Write::class;
+        protected $writesDataType = 'array';
+        /**
+         * Labels associated with this batch write.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * The writes to apply. Method does not apply writes atomically and does not
+         * guarantee ordering. Each write succeeds or fails independently. You cannot
+         * write to the same document more than once per request.
+         *
+         * @param Write[] $writes
+         */
+        public function setWrites($writes)
+        {
+        }
+        /**
+         * @return Write[]
+         */
+        public function getWrites()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Firestore\BatchWriteRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabels()
-    {
-    }
-    /**
-     * The writes to apply. Method does not apply writes atomically and does not
-     * guarantee ordering. Each write succeeds or fails independently. You cannot
-     * write to the same document more than once per request.
-     *
-     * @param Write[] $writes
-     */
-    public function setWrites($writes)
-    {
-    }
-    /**
-     * @return Write[]
-     */
-    public function getWrites()
+    class Google_Service_Firestore_BatchWriteRequest extends \Google\Service\Firestore\BatchWriteRequest
     {
     }
 }

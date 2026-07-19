@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2TableOptions extends \Google\Collection
-{
-    protected $collection_key = 'identifyingFields';
-    protected $identifyingFieldsType = GooglePrivacyDlpV2FieldId::class;
-    protected $identifyingFieldsDataType = 'array';
-    /**
-     * The columns that are the primary keys for table objects included in
-     * ContentItem. A copy of this cell's value will stored alongside alongside
-     * each finding so that the finding can be traced to the specific row it came
-     * from. No more than 3 may be provided.
-     *
-     * @param GooglePrivacyDlpV2FieldId[] $identifyingFields
-     */
-    public function setIdentifyingFields($identifyingFields)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2TableOptions extends \Google\Collection
     {
+        protected $collection_key = 'identifyingFields';
+        protected $identifyingFieldsType = GooglePrivacyDlpV2FieldId::class;
+        protected $identifyingFieldsDataType = 'array';
+        /**
+         * The columns that are the primary keys for table objects included in
+         * ContentItem. A copy of this cell's value will stored alongside alongside
+         * each finding so that the finding can be traced to the specific row it came
+         * from. No more than 3 may be provided.
+         *
+         * @param GooglePrivacyDlpV2FieldId[] $identifyingFields
+         */
+        public function setIdentifyingFields($identifyingFields)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2FieldId[]
+         */
+        public function getIdentifyingFields()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2FieldId[]
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2TableOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIdentifyingFields()
+    class Google_Service_DLP_GooglePrivacyDlpV2TableOptions extends \Google\Service\DLP\GooglePrivacyDlpV2TableOptions
     {
     }
 }

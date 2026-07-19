@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2ToxicCombination extends \Google\Collection
-{
-    protected $collection_key = 'relatedFindings';
-    /**
-     * The [Attack exposure score](https://cloud.google.com/security-command-
-     * center/docs/attack-exposure-learn#attack_exposure_scores) of this toxic
-     * combination. The score is a measure of how much this toxic combination
-     * exposes one or more high-value resources to potential attack.
-     *
-     * @var 
-     */
-    public $attackExposureScore;
-    /**
-     * List of resource names of findings associated with this toxic combination.
-     * For example, `organizations/123/sources/456/findings/789`.
-     *
-     * @var string[]
-     */
-    public $relatedFindings;
-    public function setAttackExposureScore($attackExposureScore)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2ToxicCombination extends \Google\Collection
     {
+        protected $collection_key = 'relatedFindings';
+        /**
+         * The [Attack exposure score](https://cloud.google.com/security-command-
+         * center/docs/attack-exposure-learn#attack_exposure_scores) of this toxic
+         * combination. The score is a measure of how much this toxic combination
+         * exposes one or more high-value resources to potential attack.
+         *
+         * @var 
+         */
+        public $attackExposureScore;
+        /**
+         * List of resource names of findings associated with this toxic combination.
+         * For example, `organizations/123/sources/456/findings/789`.
+         *
+         * @var string[]
+         */
+        public $relatedFindings;
+        public function setAttackExposureScore($attackExposureScore)
+        {
+        }
+        public function getAttackExposureScore()
+        {
+        }
+        /**
+         * List of resource names of findings associated with this toxic combination.
+         * For example, `organizations/123/sources/456/findings/789`.
+         *
+         * @param string[] $relatedFindings
+         */
+        public function setRelatedFindings($relatedFindings)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRelatedFindings()
+        {
+        }
     }
-    public function getAttackExposureScore()
-    {
-    }
+}
+namespace {
     /**
-     * List of resource names of findings associated with this toxic combination.
-     * For example, `organizations/123/sources/456/findings/789`.
-     *
-     * @param string[] $relatedFindings
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2ToxicCombination registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setRelatedFindings($relatedFindings)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRelatedFindings()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2ToxicCombination extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2ToxicCombination
     {
     }
 }

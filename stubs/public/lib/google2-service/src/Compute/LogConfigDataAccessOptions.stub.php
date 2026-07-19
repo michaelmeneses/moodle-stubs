@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class LogConfigDataAccessOptions extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $logMode;
-    /**
-     * @param string
-     */
-    public function setLogMode($logMode)
+namespace Google\Service\Compute {
+    class LogConfigDataAccessOptions extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $logMode;
+        /**
+         * @param string
+         */
+        public function setLogMode($logMode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLogMode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\LogConfigDataAccessOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLogMode()
+    class Google_Service_Compute_LogConfigDataAccessOptions extends \Google\Service\Compute\LogConfigDataAccessOptions
     {
     }
 }

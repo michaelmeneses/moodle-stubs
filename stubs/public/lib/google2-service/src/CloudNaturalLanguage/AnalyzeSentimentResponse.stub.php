@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class AnalyzeSentimentResponse extends \Google\Collection
-{
-    protected $collection_key = 'sentences';
-    protected $documentSentimentType = Sentiment::class;
-    protected $documentSentimentDataType = '';
-    /**
-     * The language of the text, which will be the same as the language specified
-     * in the request or, if not specified, the automatically-detected language.
-     * See Document.language_code field for more details.
-     *
-     * @var string
-     */
-    public $languageCode;
-    /**
-     * Whether the language is officially supported. The API may still return a
-     * response when the language is not supported, but it is on a best effort
-     * basis.
-     *
-     * @var bool
-     */
-    public $languageSupported;
-    protected $sentencesType = Sentence::class;
-    protected $sentencesDataType = 'array';
-    /**
-     * The overall sentiment of the input document.
-     *
-     * @param Sentiment $documentSentiment
-     */
-    public function setDocumentSentiment(Sentiment $documentSentiment)
+namespace Google\Service\CloudNaturalLanguage {
+    class AnalyzeSentimentResponse extends \Google\Collection
     {
+        protected $collection_key = 'sentences';
+        protected $documentSentimentType = Sentiment::class;
+        protected $documentSentimentDataType = '';
+        /**
+         * The language of the text, which will be the same as the language specified
+         * in the request or, if not specified, the automatically-detected language.
+         * See Document.language_code field for more details.
+         *
+         * @var string
+         */
+        public $languageCode;
+        /**
+         * Whether the language is officially supported. The API may still return a
+         * response when the language is not supported, but it is on a best effort
+         * basis.
+         *
+         * @var bool
+         */
+        public $languageSupported;
+        protected $sentencesType = Sentence::class;
+        protected $sentencesDataType = 'array';
+        /**
+         * The overall sentiment of the input document.
+         *
+         * @param Sentiment $documentSentiment
+         */
+        public function setDocumentSentiment(Sentiment $documentSentiment)
+        {
+        }
+        /**
+         * @return Sentiment
+         */
+        public function getDocumentSentiment()
+        {
+        }
+        /**
+         * The language of the text, which will be the same as the language specified
+         * in the request or, if not specified, the automatically-detected language.
+         * See Document.language_code field for more details.
+         *
+         * @param string $languageCode
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
+        /**
+         * Whether the language is officially supported. The API may still return a
+         * response when the language is not supported, but it is on a best effort
+         * basis.
+         *
+         * @param bool $languageSupported
+         */
+        public function setLanguageSupported($languageSupported)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getLanguageSupported()
+        {
+        }
+        /**
+         * The sentiment for all the sentences in the document.
+         *
+         * @param Sentence[] $sentences
+         */
+        public function setSentences($sentences)
+        {
+        }
+        /**
+         * @return Sentence[]
+         */
+        public function getSentences()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Sentiment
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\AnalyzeSentimentResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocumentSentiment()
-    {
-    }
-    /**
-     * The language of the text, which will be the same as the language specified
-     * in the request or, if not specified, the automatically-detected language.
-     * See Document.language_code field for more details.
-     *
-     * @param string $languageCode
-     */
-    public function setLanguageCode($languageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguageCode()
-    {
-    }
-    /**
-     * Whether the language is officially supported. The API may still return a
-     * response when the language is not supported, but it is on a best effort
-     * basis.
-     *
-     * @param bool $languageSupported
-     */
-    public function setLanguageSupported($languageSupported)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getLanguageSupported()
-    {
-    }
-    /**
-     * The sentiment for all the sentences in the document.
-     *
-     * @param Sentence[] $sentences
-     */
-    public function setSentences($sentences)
-    {
-    }
-    /**
-     * @return Sentence[]
-     */
-    public function getSentences()
+    class Google_Service_CloudNaturalLanguage_AnalyzeSentimentResponse extends \Google\Service\CloudNaturalLanguage\AnalyzeSentimentResponse
     {
     }
 }

@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace aiprovider_azureai\form;
 
+use core_ai\form\action_settings_form;
 /**
  * Generate text action provider settings form.
  *

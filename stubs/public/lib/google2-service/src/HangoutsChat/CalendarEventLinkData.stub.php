@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class CalendarEventLinkData extends \Google\Model
-{
-    /**
-     * The [Calendar identifier](https://developers.google.com/workspace/calendar/
-     * api/v3/reference/calendars) of the linked Calendar.
-     *
-     * @var string
-     */
-    public $calendarId;
-    /**
-     * The [Event identifier](https://developers.google.com/workspace/calendar/api
-     * /v3/reference/events) of the linked Calendar event.
-     *
-     * @var string
-     */
-    public $eventId;
-    /**
-     * The [Calendar identifier](https://developers.google.com/workspace/calendar/
-     * api/v3/reference/calendars) of the linked Calendar.
-     *
-     * @param string $calendarId
-     */
-    public function setCalendarId($calendarId)
+namespace Google\Service\HangoutsChat {
+    class CalendarEventLinkData extends \Google\Model
     {
+        /**
+         * The [Calendar identifier](https://developers.google.com/workspace/calendar/
+         * api/v3/reference/calendars) of the linked Calendar.
+         *
+         * @var string
+         */
+        public $calendarId;
+        /**
+         * The [Event identifier](https://developers.google.com/workspace/calendar/api
+         * /v3/reference/events) of the linked Calendar event.
+         *
+         * @var string
+         */
+        public $eventId;
+        /**
+         * The [Calendar identifier](https://developers.google.com/workspace/calendar/
+         * api/v3/reference/calendars) of the linked Calendar.
+         *
+         * @param string $calendarId
+         */
+        public function setCalendarId($calendarId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCalendarId()
+        {
+        }
+        /**
+         * The [Event identifier](https://developers.google.com/workspace/calendar/api
+         * /v3/reference/events) of the linked Calendar event.
+         *
+         * @param string $eventId
+         */
+        public function setEventId($eventId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEventId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\HangoutsChat\CalendarEventLinkData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCalendarId()
-    {
-    }
-    /**
-     * The [Event identifier](https://developers.google.com/workspace/calendar/api
-     * /v3/reference/events) of the linked Calendar event.
-     *
-     * @param string $eventId
-     */
-    public function setEventId($eventId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEventId()
+    class Google_Service_HangoutsChat_CalendarEventLinkData extends \Google\Service\HangoutsChat\CalendarEventLinkData
     {
     }
 }

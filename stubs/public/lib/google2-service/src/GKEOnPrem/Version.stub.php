@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class Version extends \Google\Model
-{
-    /**
-     * Number of machines under the above version.
-     *
-     * @var string
-     */
-    public $count;
-    /**
-     * Resource version.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Number of machines under the above version.
-     *
-     * @param string $count
-     */
-    public function setCount($count)
+namespace Google\Service\GKEOnPrem {
+    class Version extends \Google\Model
     {
+        /**
+         * Number of machines under the above version.
+         *
+         * @var string
+         */
+        public $count;
+        /**
+         * Resource version.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Number of machines under the above version.
+         *
+         * @param string $count
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCount()
+        {
+        }
+        /**
+         * Resource version.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEOnPrem\Version registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCount()
-    {
-    }
-    /**
-     * Resource version.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_GKEOnPrem_Version extends \Google\Service\GKEOnPrem\Version
     {
     }
 }

@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdSenseHost;
-
-class AdUnitContentAdsSettings extends \Google\Model
-{
-    protected $backupOptionType = AdUnitContentAdsSettingsBackupOption::class;
-    protected $backupOptionDataType = '';
-    /**
-     * @var string
-     */
-    public $size;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param AdUnitContentAdsSettingsBackupOption
-     */
-    public function setBackupOption(AdUnitContentAdsSettingsBackupOption $backupOption)
+namespace Google\Service\AdSenseHost {
+    class AdUnitContentAdsSettings extends \Google\Model
     {
+        protected $backupOptionType = AdUnitContentAdsSettingsBackupOption::class;
+        protected $backupOptionDataType = '';
+        /**
+         * @var string
+         */
+        public $size;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param AdUnitContentAdsSettingsBackupOption
+         */
+        public function setBackupOption(AdUnitContentAdsSettingsBackupOption $backupOption)
+        {
+        }
+        /**
+         * @return AdUnitContentAdsSettingsBackupOption
+         */
+        public function getBackupOption()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSize($size)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSize()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AdUnitContentAdsSettingsBackupOption
+     * Runtime class alias of \Google\Service\AdSenseHost\AdUnitContentAdsSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackupOption()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSize($size)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSize()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_AdSenseHost_AdUnitContentAdsSettings extends \Google\Service\AdSenseHost\AdUnitContentAdsSettings
     {
     }
 }

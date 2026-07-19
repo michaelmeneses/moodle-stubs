@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Translate;
-
-class DetectedLanguage extends \Google\Model
-{
-    /**
-     * The confidence of the detection result for this language.
-     *
-     * @var float
-     */
-    public $confidence;
-    /**
-     * The ISO-639 language code of the source content in the request, detected
-     * automatically.
-     *
-     * @var string
-     */
-    public $languageCode;
-    /**
-     * The confidence of the detection result for this language.
-     *
-     * @param float $confidence
-     */
-    public function setConfidence($confidence)
+namespace Google\Service\Translate {
+    class DetectedLanguage extends \Google\Model
     {
+        /**
+         * The confidence of the detection result for this language.
+         *
+         * @var float
+         */
+        public $confidence;
+        /**
+         * The ISO-639 language code of the source content in the request, detected
+         * automatically.
+         *
+         * @var string
+         */
+        public $languageCode;
+        /**
+         * The confidence of the detection result for this language.
+         *
+         * @param float $confidence
+         */
+        public function setConfidence($confidence)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidence()
+        {
+        }
+        /**
+         * The ISO-639 language code of the source content in the request, detected
+         * automatically.
+         *
+         * @param string $languageCode
+         */
+        public function setLanguageCode($languageCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguageCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Translate\DetectedLanguage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfidence()
-    {
-    }
-    /**
-     * The ISO-639 language code of the source content in the request, detected
-     * automatically.
-     *
-     * @param string $languageCode
-     */
-    public function setLanguageCode($languageCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguageCode()
+    class Google_Service_Translate_DetectedLanguage extends \Google\Service\Translate\DetectedLanguage
     {
     }
 }

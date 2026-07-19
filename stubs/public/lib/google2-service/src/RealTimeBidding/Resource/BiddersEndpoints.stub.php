@@ -21,64 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RealTimeBidding\Resource;
-
-/**
- * The "endpoints" collection of methods.
- * Typical usage is:
- *  <code>
- *   $realtimebiddingService = new Google\Service\RealTimeBidding(...);
- *   $endpoints = $realtimebiddingService->bidders_endpoints;
- *  </code>
- */
-class BiddersEndpoints extends \Google\Service\Resource
-{
+namespace Google\Service\RealTimeBidding\Resource {
+    use Google\Service\RealTimeBidding\Endpoint;
+    use Google\Service\RealTimeBidding\ListEndpointsResponse;
     /**
-     * Gets a bidder endpoint by its name. (endpoints.get)
-     *
-     * @param string $name Required. Name of the bidder endpoint to get. Format:
-     * `bidders/{bidderAccountId}/endpoints/{endpointId}`
-     * @param array $optParams Optional parameters.
-     * @return Endpoint
-     * @throws \Google\Service\Exception
+     * The "endpoints" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $realtimebiddingService = new Google\Service\RealTimeBidding(...);
+     *   $endpoints = $realtimebiddingService->bidders_endpoints;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class BiddersEndpoints extends \Google\Service\Resource
     {
+        /**
+         * Gets a bidder endpoint by its name. (endpoints.get)
+         *
+         * @param string $name Required. Name of the bidder endpoint to get. Format:
+         * `bidders/{bidderAccountId}/endpoints/{endpointId}`
+         * @param array $optParams Optional parameters.
+         * @return Endpoint
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists all the bidder's endpoints. (endpoints.listBiddersEndpoints)
+         *
+         * @param string $parent Required. Name of the bidder whose endpoints will be
+         * listed. Format: `bidders/{bidderAccountId}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of endpoints to return. If
+         * unspecified, at most 100 endpoints will be returned. The maximum value is
+         * 500; values above 500 will be coerced to 500.
+         * @opt_param string pageToken A token identifying a page of results the server
+         * should return. This value is received from a previous `ListEndpoints` call in
+         * ListEndpointsResponse.nextPageToken.
+         * @return ListEndpointsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listBiddersEndpoints($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates a bidder's endpoint. (endpoints.patch)
+         *
+         * @param string $name Output only. Name of the endpoint resource that must
+         * follow the pattern `bidders/{bidderAccountId}/endpoints/{endpointId}`, where
+         * {bidderAccountId} is the account ID of the bidder who operates this endpoint,
+         * and {endpointId} is a unique ID assigned by the server.
+         * @param Endpoint $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Field mask to use for partial in-place updates.
+         * @return Endpoint
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, Endpoint $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists all the bidder's endpoints. (endpoints.listBiddersEndpoints)
-     *
-     * @param string $parent Required. Name of the bidder whose endpoints will be
-     * listed. Format: `bidders/{bidderAccountId}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of endpoints to return. If
-     * unspecified, at most 100 endpoints will be returned. The maximum value is
-     * 500; values above 500 will be coerced to 500.
-     * @opt_param string pageToken A token identifying a page of results the server
-     * should return. This value is received from a previous `ListEndpoints` call in
-     * ListEndpointsResponse.nextPageToken.
-     * @return ListEndpointsResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\RealTimeBidding\Resource\BiddersEndpoints registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listBiddersEndpoints($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates a bidder's endpoint. (endpoints.patch)
-     *
-     * @param string $name Output only. Name of the endpoint resource that must
-     * follow the pattern `bidders/{bidderAccountId}/endpoints/{endpointId}`, where
-     * {bidderAccountId} is the account ID of the bidder who operates this endpoint,
-     * and {endpointId} is a unique ID assigned by the server.
-     * @param Endpoint $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Field mask to use for partial in-place updates.
-     * @return Endpoint
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, Endpoint $postBody, $optParams = [])
+    class Google_Service_RealTimeBidding_Resource_BiddersEndpoints extends \Google\Service\RealTimeBidding\Resource\BiddersEndpoints
     {
     }
 }

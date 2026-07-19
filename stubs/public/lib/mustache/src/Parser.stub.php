@@ -16,6 +16,7 @@
  */
 namespace Mustache;
 
+use Mustache\Exception\SyntaxException;
 /**
  * Mustache Parser class.
  *

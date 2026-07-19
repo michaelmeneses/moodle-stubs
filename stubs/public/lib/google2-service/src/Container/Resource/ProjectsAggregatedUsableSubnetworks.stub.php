@@ -21,42 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container\Resource;
-
-/**
- * The "usableSubnetworks" collection of methods.
- * Typical usage is:
- *  <code>
- *   $containerService = new Google\Service\Container(...);
- *   $usableSubnetworks = $containerService->projects_aggregated_usableSubnetworks;
- *  </code>
- */
-class ProjectsAggregatedUsableSubnetworks extends \Google\Service\Resource
-{
+namespace Google\Service\Container\Resource {
+    use Google\Service\Container\ListUsableSubnetworksResponse;
     /**
-     * Lists subnetworks that are usable for creating clusters in a project.
-     * (usableSubnetworks.listProjectsAggregatedUsableSubnetworks)
-     *
-     * @param string $parent The parent project where subnetworks are usable.
-     * Specified in the format `projects`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Filtering currently only supports equality on the
-     * networkProjectId and must be in the form: "networkProjectId=[PROJECTID]",
-     * where `networkProjectId` is the project which owns the listed subnetworks.
-     * This defaults to the parent project ID.
-     * @opt_param int pageSize The max number of results per page that should be
-     * returned. If the number of available results is larger than `page_size`, a
-     * `next_page_token` is returned which can be used to get the next page of
-     * results in subsequent requests. Acceptable values are 0 to 500, inclusive.
-     * (Default: 500)
-     * @opt_param string pageToken Specifies a page token to use. Set this to the
-     * nextPageToken returned by previous list requests to get the next page of
-     * results.
-     * @return ListUsableSubnetworksResponse
-     * @throws \Google\Service\Exception
+     * The "usableSubnetworks" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $containerService = new Google\Service\Container(...);
+     *   $usableSubnetworks = $containerService->projects_aggregated_usableSubnetworks;
+     *  </code>
      */
-    public function listProjectsAggregatedUsableSubnetworks($parent, $optParams = [])
+    class ProjectsAggregatedUsableSubnetworks extends \Google\Service\Resource
+    {
+        /**
+         * Lists subnetworks that are usable for creating clusters in a project.
+         * (usableSubnetworks.listProjectsAggregatedUsableSubnetworks)
+         *
+         * @param string $parent The parent project where subnetworks are usable.
+         * Specified in the format `projects`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Filtering currently only supports equality on the
+         * networkProjectId and must be in the form: "networkProjectId=[PROJECTID]",
+         * where `networkProjectId` is the project which owns the listed subnetworks.
+         * This defaults to the parent project ID.
+         * @opt_param int pageSize The max number of results per page that should be
+         * returned. If the number of available results is larger than `page_size`, a
+         * `next_page_token` is returned which can be used to get the next page of
+         * results in subsequent requests. Acceptable values are 0 to 500, inclusive.
+         * (Default: 500)
+         * @opt_param string pageToken Specifies a page token to use. Set this to the
+         * nextPageToken returned by previous list requests to get the next page of
+         * results.
+         * @return ListUsableSubnetworksResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsAggregatedUsableSubnetworks($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Container\Resource\ProjectsAggregatedUsableSubnetworks registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Container_Resource_ProjectsAggregatedUsableSubnetworks extends \Google\Service\Container\Resource\ProjectsAggregatedUsableSubnetworks
     {
     }
 }

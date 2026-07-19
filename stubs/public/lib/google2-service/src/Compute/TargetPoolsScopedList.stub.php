@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class TargetPoolsScopedList extends \Google\Collection
-{
-    protected $collection_key = 'targetPools';
-    protected $targetPoolsType = TargetPool::class;
-    protected $targetPoolsDataType = 'array';
-    protected $warningType = TargetPoolsScopedListWarning::class;
-    protected $warningDataType = '';
-    /**
-     * A list of target pools contained in this scope.
-     *
-     * @param TargetPool[] $targetPools
-     */
-    public function setTargetPools($targetPools)
+namespace Google\Service\Compute {
+    class TargetPoolsScopedList extends \Google\Collection
     {
+        protected $collection_key = 'targetPools';
+        protected $targetPoolsType = TargetPool::class;
+        protected $targetPoolsDataType = 'array';
+        protected $warningType = TargetPoolsScopedListWarning::class;
+        protected $warningDataType = '';
+        /**
+         * A list of target pools contained in this scope.
+         *
+         * @param TargetPool[] $targetPools
+         */
+        public function setTargetPools($targetPools)
+        {
+        }
+        /**
+         * @return TargetPool[]
+         */
+        public function getTargetPools()
+        {
+        }
+        /**
+         * Informational warning which replaces the list of addresses when the list is
+         * empty.
+         *
+         * @param TargetPoolsScopedListWarning $warning
+         */
+        public function setWarning(TargetPoolsScopedListWarning $warning)
+        {
+        }
+        /**
+         * @return TargetPoolsScopedListWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TargetPool[]
+     * Runtime class alias of \Google\Service\Compute\TargetPoolsScopedList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTargetPools()
-    {
-    }
-    /**
-     * Informational warning which replaces the list of addresses when the list is
-     * empty.
-     *
-     * @param TargetPoolsScopedListWarning $warning
-     */
-    public function setWarning(TargetPoolsScopedListWarning $warning)
-    {
-    }
-    /**
-     * @return TargetPoolsScopedListWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_TargetPoolsScopedList extends \Google\Service\Compute\TargetPoolsScopedList
     {
     }
 }

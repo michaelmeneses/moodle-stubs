@@ -21,99 +21,108 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class DimensionValueRequest extends \Google\Collection
-{
-    protected $collection_key = 'filters';
-    /**
-     * The name of the dimension for which values should be requested.
-     *
-     * @var string
-     */
-    public $dimensionName;
-    /**
-     * @var string
-     */
-    public $endDate;
-    protected $filtersType = DimensionFilter::class;
-    protected $filtersDataType = 'array';
-    /**
-     * The kind of request this is, in this case
-     * dfareporting#dimensionValueRequest .
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * @var string
-     */
-    public $startDate;
-    /**
-     * The name of the dimension for which values should be requested.
-     *
-     * @param string $dimensionName
-     */
-    public function setDimensionName($dimensionName)
+namespace Google\Service\Dfareporting {
+    class DimensionValueRequest extends \Google\Collection
     {
+        protected $collection_key = 'filters';
+        /**
+         * The name of the dimension for which values should be requested.
+         *
+         * @var string
+         */
+        public $dimensionName;
+        /**
+         * @var string
+         */
+        public $endDate;
+        protected $filtersType = DimensionFilter::class;
+        protected $filtersDataType = 'array';
+        /**
+         * The kind of request this is, in this case
+         * dfareporting#dimensionValueRequest .
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * @var string
+         */
+        public $startDate;
+        /**
+         * The name of the dimension for which values should be requested.
+         *
+         * @param string $dimensionName
+         */
+        public function setDimensionName($dimensionName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDimensionName()
+        {
+        }
+        /**
+         * @param string $endDate
+         */
+        public function setEndDate($endDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndDate()
+        {
+        }
+        /**
+         * The list of filters by which to filter values. The filters are ANDed.
+         *
+         * @param DimensionFilter[] $filters
+         */
+        public function setFilters($filters)
+        {
+        }
+        /**
+         * @return DimensionFilter[]
+         */
+        public function getFilters()
+        {
+        }
+        /**
+         * The kind of request this is, in this case
+         * dfareporting#dimensionValueRequest .
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param string $startDate
+         */
+        public function setStartDate($startDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartDate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\DimensionValueRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDimensionName()
-    {
-    }
-    /**
-     * @param string $endDate
-     */
-    public function setEndDate($endDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndDate()
-    {
-    }
-    /**
-     * The list of filters by which to filter values. The filters are ANDed.
-     *
-     * @param DimensionFilter[] $filters
-     */
-    public function setFilters($filters)
-    {
-    }
-    /**
-     * @return DimensionFilter[]
-     */
-    public function getFilters()
-    {
-    }
-    /**
-     * The kind of request this is, in this case
-     * dfareporting#dimensionValueRequest .
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * @param string $startDate
-     */
-    public function setStartDate($startDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartDate()
+    class Google_Service_Dfareporting_DimensionValueRequest extends \Google\Service\Dfareporting\DimensionValueRequest
     {
     }
 }

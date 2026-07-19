@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunV2Volume extends \Google\Model
-{
-    protected $cloudSqlInstanceType = GoogleCloudRunV2CloudSqlInstance::class;
-    protected $cloudSqlInstanceDataType = '';
-    protected $emptyDirType = GoogleCloudRunV2EmptyDirVolumeSource::class;
-    protected $emptyDirDataType = '';
-    protected $gcsType = GoogleCloudRunV2GCSVolumeSource::class;
-    protected $gcsDataType = '';
-    /**
-     * Required. Volume's name.
-     *
-     * @var string
-     */
-    public $name;
-    protected $nfsType = GoogleCloudRunV2NFSVolumeSource::class;
-    protected $nfsDataType = '';
-    protected $secretType = GoogleCloudRunV2SecretVolumeSource::class;
-    protected $secretDataType = '';
-    /**
-     * For Cloud SQL volumes, contains the specific instances that should be
-     * mounted. Visit https://cloud.google.com/sql/docs/mysql/connect-run for more
-     * information on how to connect Cloud SQL and Cloud Run.
-     *
-     * @param GoogleCloudRunV2CloudSqlInstance $cloudSqlInstance
-     */
-    public function setCloudSqlInstance(GoogleCloudRunV2CloudSqlInstance $cloudSqlInstance)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunV2Volume extends \Google\Model
     {
+        protected $cloudSqlInstanceType = GoogleCloudRunV2CloudSqlInstance::class;
+        protected $cloudSqlInstanceDataType = '';
+        protected $emptyDirType = GoogleCloudRunV2EmptyDirVolumeSource::class;
+        protected $emptyDirDataType = '';
+        protected $gcsType = GoogleCloudRunV2GCSVolumeSource::class;
+        protected $gcsDataType = '';
+        /**
+         * Required. Volume's name.
+         *
+         * @var string
+         */
+        public $name;
+        protected $nfsType = GoogleCloudRunV2NFSVolumeSource::class;
+        protected $nfsDataType = '';
+        protected $secretType = GoogleCloudRunV2SecretVolumeSource::class;
+        protected $secretDataType = '';
+        /**
+         * For Cloud SQL volumes, contains the specific instances that should be
+         * mounted. Visit https://cloud.google.com/sql/docs/mysql/connect-run for more
+         * information on how to connect Cloud SQL and Cloud Run.
+         *
+         * @param GoogleCloudRunV2CloudSqlInstance $cloudSqlInstance
+         */
+        public function setCloudSqlInstance(GoogleCloudRunV2CloudSqlInstance $cloudSqlInstance)
+        {
+        }
+        /**
+         * @return GoogleCloudRunV2CloudSqlInstance
+         */
+        public function getCloudSqlInstance()
+        {
+        }
+        /**
+         * Ephemeral storage used as a shared volume.
+         *
+         * @param GoogleCloudRunV2EmptyDirVolumeSource $emptyDir
+         */
+        public function setEmptyDir(GoogleCloudRunV2EmptyDirVolumeSource $emptyDir)
+        {
+        }
+        /**
+         * @return GoogleCloudRunV2EmptyDirVolumeSource
+         */
+        public function getEmptyDir()
+        {
+        }
+        /**
+         * Persistent storage backed by a Google Cloud Storage bucket.
+         *
+         * @param GoogleCloudRunV2GCSVolumeSource $gcs
+         */
+        public function setGcs(GoogleCloudRunV2GCSVolumeSource $gcs)
+        {
+        }
+        /**
+         * @return GoogleCloudRunV2GCSVolumeSource
+         */
+        public function getGcs()
+        {
+        }
+        /**
+         * Required. Volume's name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * For NFS Voumes, contains the path to the nfs Volume
+         *
+         * @param GoogleCloudRunV2NFSVolumeSource $nfs
+         */
+        public function setNfs(GoogleCloudRunV2NFSVolumeSource $nfs)
+        {
+        }
+        /**
+         * @return GoogleCloudRunV2NFSVolumeSource
+         */
+        public function getNfs()
+        {
+        }
+        /**
+         * Secret represents a secret that should populate this volume.
+         *
+         * @param GoogleCloudRunV2SecretVolumeSource $secret
+         */
+        public function setSecret(GoogleCloudRunV2SecretVolumeSource $secret)
+        {
+        }
+        /**
+         * @return GoogleCloudRunV2SecretVolumeSource
+         */
+        public function getSecret()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRunV2CloudSqlInstance
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunV2Volume registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudSqlInstance()
-    {
-    }
-    /**
-     * Ephemeral storage used as a shared volume.
-     *
-     * @param GoogleCloudRunV2EmptyDirVolumeSource $emptyDir
-     */
-    public function setEmptyDir(GoogleCloudRunV2EmptyDirVolumeSource $emptyDir)
-    {
-    }
-    /**
-     * @return GoogleCloudRunV2EmptyDirVolumeSource
-     */
-    public function getEmptyDir()
-    {
-    }
-    /**
-     * Persistent storage backed by a Google Cloud Storage bucket.
-     *
-     * @param GoogleCloudRunV2GCSVolumeSource $gcs
-     */
-    public function setGcs(GoogleCloudRunV2GCSVolumeSource $gcs)
-    {
-    }
-    /**
-     * @return GoogleCloudRunV2GCSVolumeSource
-     */
-    public function getGcs()
-    {
-    }
-    /**
-     * Required. Volume's name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * For NFS Voumes, contains the path to the nfs Volume
-     *
-     * @param GoogleCloudRunV2NFSVolumeSource $nfs
-     */
-    public function setNfs(GoogleCloudRunV2NFSVolumeSource $nfs)
-    {
-    }
-    /**
-     * @return GoogleCloudRunV2NFSVolumeSource
-     */
-    public function getNfs()
-    {
-    }
-    /**
-     * Secret represents a secret that should populate this volume.
-     *
-     * @param GoogleCloudRunV2SecretVolumeSource $secret
-     */
-    public function setSecret(GoogleCloudRunV2SecretVolumeSource $secret)
-    {
-    }
-    /**
-     * @return GoogleCloudRunV2SecretVolumeSource
-     */
-    public function getSecret()
+    class Google_Service_CloudRun_GoogleCloudRunV2Volume extends \Google\Service\CloudRun\GoogleCloudRunV2Volume
     {
     }
 }

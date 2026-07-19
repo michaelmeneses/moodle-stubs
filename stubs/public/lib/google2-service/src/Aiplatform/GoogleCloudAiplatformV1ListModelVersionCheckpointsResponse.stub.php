@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ListModelVersionCheckpointsResponse extends \Google\Collection
-{
-    protected $collection_key = 'checkpoints';
-    protected $checkpointsType = GoogleCloudAiplatformV1ModelVersionCheckpoint::class;
-    protected $checkpointsDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass to
-     * ListModelVersionCheckpointsRequest.page_token to obtain that page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of Model Version checkpoints.
-     *
-     * @param GoogleCloudAiplatformV1ModelVersionCheckpoint[] $checkpoints
-     */
-    public function setCheckpoints($checkpoints)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ListModelVersionCheckpointsResponse extends \Google\Collection
     {
+        protected $collection_key = 'checkpoints';
+        protected $checkpointsType = GoogleCloudAiplatformV1ModelVersionCheckpoint::class;
+        protected $checkpointsDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass to
+         * ListModelVersionCheckpointsRequest.page_token to obtain that page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of Model Version checkpoints.
+         *
+         * @param GoogleCloudAiplatformV1ModelVersionCheckpoint[] $checkpoints
+         */
+        public function setCheckpoints($checkpoints)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ModelVersionCheckpoint[]
+         */
+        public function getCheckpoints()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results. Pass to
+         * ListModelVersionCheckpointsRequest.page_token to obtain that page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1ModelVersionCheckpoint[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListModelVersionCheckpointsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCheckpoints()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results. Pass to
-     * ListModelVersionCheckpointsRequest.page_token to obtain that page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ListModelVersionCheckpointsResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListModelVersionCheckpointsResponse
     {
     }
 }

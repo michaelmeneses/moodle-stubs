@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class TrackingFloodlightActivityConfig extends \Google\Model
-{
-    /**
-     * Required. The ID of the Floodlight activity.
-     *
-     * @var string
-     */
-    public $floodlightActivityId;
-    /**
-     * Required. The number of days after an ad has been clicked in which a
-     * conversion may be counted. Must be between 0 and 90 inclusive.
-     *
-     * @var int
-     */
-    public $postClickLookbackWindowDays;
-    /**
-     * Required. The number of days after an ad has been viewed in which a
-     * conversion may be counted. Must be between 0 and 90 inclusive.
-     *
-     * @var int
-     */
-    public $postViewLookbackWindowDays;
-    /**
-     * Required. The ID of the Floodlight activity.
-     *
-     * @param string $floodlightActivityId
-     */
-    public function setFloodlightActivityId($floodlightActivityId)
+namespace Google\Service\DisplayVideo {
+    class TrackingFloodlightActivityConfig extends \Google\Model
     {
+        /**
+         * Required. The ID of the Floodlight activity.
+         *
+         * @var string
+         */
+        public $floodlightActivityId;
+        /**
+         * Required. The number of days after an ad has been clicked in which a
+         * conversion may be counted. Must be between 0 and 90 inclusive.
+         *
+         * @var int
+         */
+        public $postClickLookbackWindowDays;
+        /**
+         * Required. The number of days after an ad has been viewed in which a
+         * conversion may be counted. Must be between 0 and 90 inclusive.
+         *
+         * @var int
+         */
+        public $postViewLookbackWindowDays;
+        /**
+         * Required. The ID of the Floodlight activity.
+         *
+         * @param string $floodlightActivityId
+         */
+        public function setFloodlightActivityId($floodlightActivityId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFloodlightActivityId()
+        {
+        }
+        /**
+         * Required. The number of days after an ad has been clicked in which a
+         * conversion may be counted. Must be between 0 and 90 inclusive.
+         *
+         * @param int $postClickLookbackWindowDays
+         */
+        public function setPostClickLookbackWindowDays($postClickLookbackWindowDays)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPostClickLookbackWindowDays()
+        {
+        }
+        /**
+         * Required. The number of days after an ad has been viewed in which a
+         * conversion may be counted. Must be between 0 and 90 inclusive.
+         *
+         * @param int $postViewLookbackWindowDays
+         */
+        public function setPostViewLookbackWindowDays($postViewLookbackWindowDays)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPostViewLookbackWindowDays()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\TrackingFloodlightActivityConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFloodlightActivityId()
-    {
-    }
-    /**
-     * Required. The number of days after an ad has been clicked in which a
-     * conversion may be counted. Must be between 0 and 90 inclusive.
-     *
-     * @param int $postClickLookbackWindowDays
-     */
-    public function setPostClickLookbackWindowDays($postClickLookbackWindowDays)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPostClickLookbackWindowDays()
-    {
-    }
-    /**
-     * Required. The number of days after an ad has been viewed in which a
-     * conversion may be counted. Must be between 0 and 90 inclusive.
-     *
-     * @param int $postViewLookbackWindowDays
-     */
-    public function setPostViewLookbackWindowDays($postViewLookbackWindowDays)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPostViewLookbackWindowDays()
+    class Google_Service_DisplayVideo_TrackingFloodlightActivityConfig extends \Google\Service\DisplayVideo\TrackingFloodlightActivityConfig
     {
     }
 }

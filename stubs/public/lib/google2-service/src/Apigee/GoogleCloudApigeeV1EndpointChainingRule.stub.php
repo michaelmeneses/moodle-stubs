@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1EndpointChainingRule extends \Google\Collection
-{
-    protected $collection_key = 'proxyIds';
-    /**
-     * The deployment group to target for cross-shard chaining calls to these
-     * proxies.
-     *
-     * @var string
-     */
-    public $deploymentGroup;
-    /**
-     * List of proxy ids which may be found in the given deployment group.
-     *
-     * @var string[]
-     */
-    public $proxyIds;
-    /**
-     * The deployment group to target for cross-shard chaining calls to these
-     * proxies.
-     *
-     * @param string $deploymentGroup
-     */
-    public function setDeploymentGroup($deploymentGroup)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1EndpointChainingRule extends \Google\Collection
     {
+        protected $collection_key = 'proxyIds';
+        /**
+         * The deployment group to target for cross-shard chaining calls to these
+         * proxies.
+         *
+         * @var string
+         */
+        public $deploymentGroup;
+        /**
+         * List of proxy ids which may be found in the given deployment group.
+         *
+         * @var string[]
+         */
+        public $proxyIds;
+        /**
+         * The deployment group to target for cross-shard chaining calls to these
+         * proxies.
+         *
+         * @param string $deploymentGroup
+         */
+        public function setDeploymentGroup($deploymentGroup)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeploymentGroup()
+        {
+        }
+        /**
+         * List of proxy ids which may be found in the given deployment group.
+         *
+         * @param string[] $proxyIds
+         */
+        public function setProxyIds($proxyIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getProxyIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1EndpointChainingRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeploymentGroup()
-    {
-    }
-    /**
-     * List of proxy ids which may be found in the given deployment group.
-     *
-     * @param string[] $proxyIds
-     */
-    public function setProxyIds($proxyIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getProxyIds()
+    class Google_Service_Apigee_GoogleCloudApigeeV1EndpointChainingRule extends \Google\Service\Apigee\GoogleCloudApigeeV1EndpointChainingRule
     {
     }
 }

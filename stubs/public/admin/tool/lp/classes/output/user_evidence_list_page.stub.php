@@ -29,6 +29,16 @@
  */
 namespace tool_lp\output;
 
+use renderable;
+use templatable;
+use renderer_base;
+use stdClass;
+use single_button;
+use moodle_url;
+use core_competency\api;
+use tool_lp\external\user_evidence_summary_exporter;
+use core_competency\user_evidence;
+use context_user;
 /**
  * Class for the page listing the evidence of prior learning of a user.
  *

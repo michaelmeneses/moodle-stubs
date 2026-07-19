@@ -21,73 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII\Resource;
-
-/**
- * The "dealAssociations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $adexchangebuyer2Service = new Google\Service\AdExchangeBuyerII(...);
- *   $dealAssociations = $adexchangebuyer2Service->accounts_creatives_dealAssociations;
- *  </code>
- */
-class AccountsCreativesDealAssociations extends \Google\Service\Resource
-{
+namespace Google\Service\AdExchangeBuyerII\Resource {
+    use Google\Service\AdExchangeBuyerII\AddDealAssociationRequest;
+    use Google\Service\AdExchangeBuyerII\Adexchangebuyer2Empty;
+    use Google\Service\AdExchangeBuyerII\ListDealAssociationsResponse;
+    use Google\Service\AdExchangeBuyerII\RemoveDealAssociationRequest;
     /**
-     * Associate an existing deal with a creative. (dealAssociations.add)
-     *
-     * @param string $accountId The account the creative belongs to.
-     * @param string $creativeId The ID of the creative associated with the deal.
-     * @param AddDealAssociationRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Adexchangebuyer2Empty
-     * @throws \Google\Service\Exception
+     * The "dealAssociations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $adexchangebuyer2Service = new Google\Service\AdExchangeBuyerII(...);
+     *   $dealAssociations = $adexchangebuyer2Service->accounts_creatives_dealAssociations;
+     *  </code>
      */
-    public function add($accountId, $creativeId, AddDealAssociationRequest $postBody, $optParams = [])
+    class AccountsCreativesDealAssociations extends \Google\Service\Resource
     {
+        /**
+         * Associate an existing deal with a creative. (dealAssociations.add)
+         *
+         * @param string $accountId The account the creative belongs to.
+         * @param string $creativeId The ID of the creative associated with the deal.
+         * @param AddDealAssociationRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Adexchangebuyer2Empty
+         * @throws \Google\Service\Exception
+         */
+        public function add($accountId, $creativeId, AddDealAssociationRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * List all creative-deal associations.
+         * (dealAssociations.listAccountsCreativesDealAssociations)
+         *
+         * @param string $accountId The account to list the associations from. Specify
+         * "-" to list all creatives the current user has access to.
+         * @param string $creativeId The creative ID to list the associations from.
+         * Specify "-" to list all creatives under the above account.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Requested page size. Server may return fewer
+         * associations than requested. If unspecified, server will pick an appropriate
+         * default.
+         * @opt_param string pageToken A token identifying a page of results the server
+         * should return. Typically, this is the value of
+         * ListDealAssociationsResponse.next_page_token returned from the previous call
+         * to 'ListDealAssociations' method.
+         * @opt_param string query An optional query string to filter deal associations.
+         * If no filter is specified, all associations will be returned. Supported
+         * queries are: - accountId=*account_id_string* -
+         * creativeId=*creative_id_string* - dealsId=*deals_id_string* -
+         * dealsStatus:{approved, conditionally_approved, disapproved, not_checked} -
+         * openAuctionStatus:{approved, conditionally_approved, disapproved,
+         * not_checked} Example: 'dealsId=12345 AND dealsStatus:disapproved'
+         * @return ListDealAssociationsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAccountsCreativesDealAssociations($accountId, $creativeId, $optParams = [])
+        {
+        }
+        /**
+         * Remove the association between a deal and a creative.
+         * (dealAssociations.remove)
+         *
+         * @param string $accountId The account the creative belongs to.
+         * @param string $creativeId The ID of the creative associated with the deal.
+         * @param RemoveDealAssociationRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Adexchangebuyer2Empty
+         * @throws \Google\Service\Exception
+         */
+        public function remove($accountId, $creativeId, RemoveDealAssociationRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * List all creative-deal associations.
-     * (dealAssociations.listAccountsCreativesDealAssociations)
-     *
-     * @param string $accountId The account to list the associations from. Specify
-     * "-" to list all creatives the current user has access to.
-     * @param string $creativeId The creative ID to list the associations from.
-     * Specify "-" to list all creatives under the above account.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Requested page size. Server may return fewer
-     * associations than requested. If unspecified, server will pick an appropriate
-     * default.
-     * @opt_param string pageToken A token identifying a page of results the server
-     * should return. Typically, this is the value of
-     * ListDealAssociationsResponse.next_page_token returned from the previous call
-     * to 'ListDealAssociations' method.
-     * @opt_param string query An optional query string to filter deal associations.
-     * If no filter is specified, all associations will be returned. Supported
-     * queries are: - accountId=*account_id_string* -
-     * creativeId=*creative_id_string* - dealsId=*deals_id_string* -
-     * dealsStatus:{approved, conditionally_approved, disapproved, not_checked} -
-     * openAuctionStatus:{approved, conditionally_approved, disapproved,
-     * not_checked} Example: 'dealsId=12345 AND dealsStatus:disapproved'
-     * @return ListDealAssociationsResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\Resource\AccountsCreativesDealAssociations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listAccountsCreativesDealAssociations($accountId, $creativeId, $optParams = [])
-    {
-    }
-    /**
-     * Remove the association between a deal and a creative.
-     * (dealAssociations.remove)
-     *
-     * @param string $accountId The account the creative belongs to.
-     * @param string $creativeId The ID of the creative associated with the deal.
-     * @param RemoveDealAssociationRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Adexchangebuyer2Empty
-     * @throws \Google\Service\Exception
-     */
-    public function remove($accountId, $creativeId, RemoveDealAssociationRequest $postBody, $optParams = [])
+    class Google_Service_AdExchangeBuyerII_Resource_AccountsCreativesDealAssociations extends \Google\Service\AdExchangeBuyerII\Resource\AccountsCreativesDealAssociations
     {
     }
 }

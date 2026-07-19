@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class AWSV4Signature extends \Google\Model
-{
-    /**
-     * The access key used for s3 bucket authentication. Required for updating or
-     * creating a backend that uses AWS v4 signature authentication, but will not
-     * be returned as part of the configuration when queried with a REST API GET
-     * request.
-     *
-     * @InputOnly
-     *
-     * @var string
-     */
-    public $accessKey;
-    /**
-     * The identifier of an access key used for s3 bucket authentication.
-     *
-     * @var string
-     */
-    public $accessKeyId;
-    /**
-     * The optional version identifier for the access key. You can use this to
-     * keep track of different iterations of your access key.
-     *
-     * @var string
-     */
-    public $accessKeyVersion;
-    /**
-     * The name of the cloud region of your origin. This is a free-form field with
-     * the name of the region your cloud uses to host your origin.  For example,
-     * "us-east-1" for AWS or "us-ashburn-1" for OCI.
-     *
-     * @var string
-     */
-    public $originRegion;
-    /**
-     * The access key used for s3 bucket authentication. Required for updating or
-     * creating a backend that uses AWS v4 signature authentication, but will not
-     * be returned as part of the configuration when queried with a REST API GET
-     * request.
-     *
-     * @InputOnly
-     *
-     * @param string $accessKey
-     */
-    public function setAccessKey($accessKey)
+namespace Google\Service\Compute {
+    class AWSV4Signature extends \Google\Model
     {
+        /**
+         * The access key used for s3 bucket authentication. Required for updating or
+         * creating a backend that uses AWS v4 signature authentication, but will not
+         * be returned as part of the configuration when queried with a REST API GET
+         * request.
+         *
+         * @InputOnly
+         *
+         * @var string
+         */
+        public $accessKey;
+        /**
+         * The identifier of an access key used for s3 bucket authentication.
+         *
+         * @var string
+         */
+        public $accessKeyId;
+        /**
+         * The optional version identifier for the access key. You can use this to
+         * keep track of different iterations of your access key.
+         *
+         * @var string
+         */
+        public $accessKeyVersion;
+        /**
+         * The name of the cloud region of your origin. This is a free-form field with
+         * the name of the region your cloud uses to host your origin.  For example,
+         * "us-east-1" for AWS or "us-ashburn-1" for OCI.
+         *
+         * @var string
+         */
+        public $originRegion;
+        /**
+         * The access key used for s3 bucket authentication. Required for updating or
+         * creating a backend that uses AWS v4 signature authentication, but will not
+         * be returned as part of the configuration when queried with a REST API GET
+         * request.
+         *
+         * @InputOnly
+         *
+         * @param string $accessKey
+         */
+        public function setAccessKey($accessKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccessKey()
+        {
+        }
+        /**
+         * The identifier of an access key used for s3 bucket authentication.
+         *
+         * @param string $accessKeyId
+         */
+        public function setAccessKeyId($accessKeyId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccessKeyId()
+        {
+        }
+        /**
+         * The optional version identifier for the access key. You can use this to
+         * keep track of different iterations of your access key.
+         *
+         * @param string $accessKeyVersion
+         */
+        public function setAccessKeyVersion($accessKeyVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccessKeyVersion()
+        {
+        }
+        /**
+         * The name of the cloud region of your origin. This is a free-form field with
+         * the name of the region your cloud uses to host your origin.  For example,
+         * "us-east-1" for AWS or "us-ashburn-1" for OCI.
+         *
+         * @param string $originRegion
+         */
+        public function setOriginRegion($originRegion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOriginRegion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\AWSV4Signature registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessKey()
-    {
-    }
-    /**
-     * The identifier of an access key used for s3 bucket authentication.
-     *
-     * @param string $accessKeyId
-     */
-    public function setAccessKeyId($accessKeyId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAccessKeyId()
-    {
-    }
-    /**
-     * The optional version identifier for the access key. You can use this to
-     * keep track of different iterations of your access key.
-     *
-     * @param string $accessKeyVersion
-     */
-    public function setAccessKeyVersion($accessKeyVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAccessKeyVersion()
-    {
-    }
-    /**
-     * The name of the cloud region of your origin. This is a free-form field with
-     * the name of the region your cloud uses to host your origin.  For example,
-     * "us-east-1" for AWS or "us-ashburn-1" for OCI.
-     *
-     * @param string $originRegion
-     */
-    public function setOriginRegion($originRegion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOriginRegion()
+    class Google_Service_Compute_AWSV4Signature extends \Google\Service\Compute\AWSV4Signature
     {
     }
 }

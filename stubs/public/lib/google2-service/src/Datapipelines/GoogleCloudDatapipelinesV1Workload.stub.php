@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datapipelines;
-
-class GoogleCloudDatapipelinesV1Workload extends \Google\Model
-{
-    protected $dataflowFlexTemplateRequestType = GoogleCloudDatapipelinesV1LaunchFlexTemplateRequest::class;
-    protected $dataflowFlexTemplateRequestDataType = '';
-    protected $dataflowLaunchTemplateRequestType = GoogleCloudDatapipelinesV1LaunchTemplateRequest::class;
-    protected $dataflowLaunchTemplateRequestDataType = '';
-    /**
-     * Template information and additional parameters needed to launch a Dataflow
-     * job using the flex launch API.
-     *
-     * @param GoogleCloudDatapipelinesV1LaunchFlexTemplateRequest $dataflowFlexTemplateRequest
-     */
-    public function setDataflowFlexTemplateRequest(GoogleCloudDatapipelinesV1LaunchFlexTemplateRequest $dataflowFlexTemplateRequest)
+namespace Google\Service\Datapipelines {
+    class GoogleCloudDatapipelinesV1Workload extends \Google\Model
     {
+        protected $dataflowFlexTemplateRequestType = GoogleCloudDatapipelinesV1LaunchFlexTemplateRequest::class;
+        protected $dataflowFlexTemplateRequestDataType = '';
+        protected $dataflowLaunchTemplateRequestType = GoogleCloudDatapipelinesV1LaunchTemplateRequest::class;
+        protected $dataflowLaunchTemplateRequestDataType = '';
+        /**
+         * Template information and additional parameters needed to launch a Dataflow
+         * job using the flex launch API.
+         *
+         * @param GoogleCloudDatapipelinesV1LaunchFlexTemplateRequest $dataflowFlexTemplateRequest
+         */
+        public function setDataflowFlexTemplateRequest(GoogleCloudDatapipelinesV1LaunchFlexTemplateRequest $dataflowFlexTemplateRequest)
+        {
+        }
+        /**
+         * @return GoogleCloudDatapipelinesV1LaunchFlexTemplateRequest
+         */
+        public function getDataflowFlexTemplateRequest()
+        {
+        }
+        /**
+         * Template information and additional parameters needed to launch a Dataflow
+         * job using the standard launch API.
+         *
+         * @param GoogleCloudDatapipelinesV1LaunchTemplateRequest $dataflowLaunchTemplateRequest
+         */
+        public function setDataflowLaunchTemplateRequest(GoogleCloudDatapipelinesV1LaunchTemplateRequest $dataflowLaunchTemplateRequest)
+        {
+        }
+        /**
+         * @return GoogleCloudDatapipelinesV1LaunchTemplateRequest
+         */
+        public function getDataflowLaunchTemplateRequest()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatapipelinesV1LaunchFlexTemplateRequest
+     * Runtime class alias of \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1Workload registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataflowFlexTemplateRequest()
-    {
-    }
-    /**
-     * Template information and additional parameters needed to launch a Dataflow
-     * job using the standard launch API.
-     *
-     * @param GoogleCloudDatapipelinesV1LaunchTemplateRequest $dataflowLaunchTemplateRequest
-     */
-    public function setDataflowLaunchTemplateRequest(GoogleCloudDatapipelinesV1LaunchTemplateRequest $dataflowLaunchTemplateRequest)
-    {
-    }
-    /**
-     * @return GoogleCloudDatapipelinesV1LaunchTemplateRequest
-     */
-    public function getDataflowLaunchTemplateRequest()
+    class Google_Service_Datapipelines_GoogleCloudDatapipelinesV1Workload extends \Google\Service\Datapipelines\GoogleCloudDatapipelinesV1Workload
     {
     }
 }

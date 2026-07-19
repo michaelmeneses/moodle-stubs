@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class CreativeGroupAssignment extends \Google\Model
-{
-    public const CREATIVE_GROUP_NUMBER_CREATIVE_GROUP_ONE = 'CREATIVE_GROUP_ONE';
-    public const CREATIVE_GROUP_NUMBER_CREATIVE_GROUP_TWO = 'CREATIVE_GROUP_TWO';
-    /**
-     * ID of the creative group to be assigned.
-     *
-     * @var string
-     */
-    public $creativeGroupId;
-    /**
-     * Creative group number of the creative group assignment.
-     *
-     * @var string
-     */
-    public $creativeGroupNumber;
-    /**
-     * ID of the creative group to be assigned.
-     *
-     * @param string $creativeGroupId
-     */
-    public function setCreativeGroupId($creativeGroupId)
+namespace Google\Service\Dfareporting {
+    class CreativeGroupAssignment extends \Google\Model
     {
+        public const CREATIVE_GROUP_NUMBER_CREATIVE_GROUP_ONE = 'CREATIVE_GROUP_ONE';
+        public const CREATIVE_GROUP_NUMBER_CREATIVE_GROUP_TWO = 'CREATIVE_GROUP_TWO';
+        /**
+         * ID of the creative group to be assigned.
+         *
+         * @var string
+         */
+        public $creativeGroupId;
+        /**
+         * Creative group number of the creative group assignment.
+         *
+         * @var string
+         */
+        public $creativeGroupNumber;
+        /**
+         * ID of the creative group to be assigned.
+         *
+         * @param string $creativeGroupId
+         */
+        public function setCreativeGroupId($creativeGroupId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreativeGroupId()
+        {
+        }
+        /**
+         * Creative group number of the creative group assignment.
+         *
+         * Accepted values: CREATIVE_GROUP_ONE, CREATIVE_GROUP_TWO
+         *
+         * @param self::CREATIVE_GROUP_NUMBER_* $creativeGroupNumber
+         */
+        public function setCreativeGroupNumber($creativeGroupNumber)
+        {
+        }
+        /**
+         * @return self::CREATIVE_GROUP_NUMBER_*
+         */
+        public function getCreativeGroupNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\CreativeGroupAssignment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreativeGroupId()
-    {
-    }
-    /**
-     * Creative group number of the creative group assignment.
-     *
-     * Accepted values: CREATIVE_GROUP_ONE, CREATIVE_GROUP_TWO
-     *
-     * @param self::CREATIVE_GROUP_NUMBER_* $creativeGroupNumber
-     */
-    public function setCreativeGroupNumber($creativeGroupNumber)
-    {
-    }
-    /**
-     * @return self::CREATIVE_GROUP_NUMBER_*
-     */
-    public function getCreativeGroupNumber()
+    class Google_Service_Dfareporting_CreativeGroupAssignment extends \Google\Service\Dfareporting\CreativeGroupAssignment
     {
     }
 }

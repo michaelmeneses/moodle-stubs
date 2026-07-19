@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class SheetsChart extends \Google\Model
-{
-    /**
-     * The ID of the specific chart in the Google Sheets spreadsheet that is
-     * embedded.
-     *
-     * @var int
-     */
-    public $chartId;
-    /**
-     * The URL of an image of the embedded chart, with a default lifetime of 30
-     * minutes. This URL is tagged with the account of the requester. Anyone with
-     * the URL effectively accesses the image as the original requester. Access to
-     * the image may be lost if the presentation's sharing settings change.
-     *
-     * @var string
-     */
-    public $contentUrl;
-    protected $sheetsChartPropertiesType = SheetsChartProperties::class;
-    protected $sheetsChartPropertiesDataType = '';
-    /**
-     * The ID of the Google Sheets spreadsheet that contains the source chart.
-     *
-     * @var string
-     */
-    public $spreadsheetId;
-    /**
-     * The ID of the specific chart in the Google Sheets spreadsheet that is
-     * embedded.
-     *
-     * @param int $chartId
-     */
-    public function setChartId($chartId)
+namespace Google\Service\Slides {
+    class SheetsChart extends \Google\Model
     {
+        /**
+         * The ID of the specific chart in the Google Sheets spreadsheet that is
+         * embedded.
+         *
+         * @var int
+         */
+        public $chartId;
+        /**
+         * The URL of an image of the embedded chart, with a default lifetime of 30
+         * minutes. This URL is tagged with the account of the requester. Anyone with
+         * the URL effectively accesses the image as the original requester. Access to
+         * the image may be lost if the presentation's sharing settings change.
+         *
+         * @var string
+         */
+        public $contentUrl;
+        protected $sheetsChartPropertiesType = SheetsChartProperties::class;
+        protected $sheetsChartPropertiesDataType = '';
+        /**
+         * The ID of the Google Sheets spreadsheet that contains the source chart.
+         *
+         * @var string
+         */
+        public $spreadsheetId;
+        /**
+         * The ID of the specific chart in the Google Sheets spreadsheet that is
+         * embedded.
+         *
+         * @param int $chartId
+         */
+        public function setChartId($chartId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getChartId()
+        {
+        }
+        /**
+         * The URL of an image of the embedded chart, with a default lifetime of 30
+         * minutes. This URL is tagged with the account of the requester. Anyone with
+         * the URL effectively accesses the image as the original requester. Access to
+         * the image may be lost if the presentation's sharing settings change.
+         *
+         * @param string $contentUrl
+         */
+        public function setContentUrl($contentUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContentUrl()
+        {
+        }
+        /**
+         * The properties of the Sheets chart.
+         *
+         * @param SheetsChartProperties $sheetsChartProperties
+         */
+        public function setSheetsChartProperties(SheetsChartProperties $sheetsChartProperties)
+        {
+        }
+        /**
+         * @return SheetsChartProperties
+         */
+        public function getSheetsChartProperties()
+        {
+        }
+        /**
+         * The ID of the Google Sheets spreadsheet that contains the source chart.
+         *
+         * @param string $spreadsheetId
+         */
+        public function setSpreadsheetId($spreadsheetId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSpreadsheetId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Slides\SheetsChart registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChartId()
-    {
-    }
-    /**
-     * The URL of an image of the embedded chart, with a default lifetime of 30
-     * minutes. This URL is tagged with the account of the requester. Anyone with
-     * the URL effectively accesses the image as the original requester. Access to
-     * the image may be lost if the presentation's sharing settings change.
-     *
-     * @param string $contentUrl
-     */
-    public function setContentUrl($contentUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContentUrl()
-    {
-    }
-    /**
-     * The properties of the Sheets chart.
-     *
-     * @param SheetsChartProperties $sheetsChartProperties
-     */
-    public function setSheetsChartProperties(SheetsChartProperties $sheetsChartProperties)
-    {
-    }
-    /**
-     * @return SheetsChartProperties
-     */
-    public function getSheetsChartProperties()
-    {
-    }
-    /**
-     * The ID of the Google Sheets spreadsheet that contains the source chart.
-     *
-     * @param string $spreadsheetId
-     */
-    public function setSpreadsheetId($spreadsheetId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSpreadsheetId()
+    class Google_Service_Slides_SheetsChart extends \Google\Service\Slides\SheetsChart
     {
     }
 }

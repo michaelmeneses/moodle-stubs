@@ -21,102 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Iam;
-
-class GoogleIamV1BindingDelta extends \Google\Model
-{
-    /**
-     * Unspecified.
-     */
-    public const ACTION_ACTION_UNSPECIFIED = 'ACTION_UNSPECIFIED';
-    /**
-     * Addition of a Binding.
-     */
-    public const ACTION_ADD = 'ADD';
-    /**
-     * Removal of a Binding.
-     */
-    public const ACTION_REMOVE = 'REMOVE';
-    /**
-     * The action that was performed on a Binding. Required
-     *
-     * @var string
-     */
-    public $action;
-    protected $conditionType = GoogleTypeExpr::class;
-    protected $conditionDataType = '';
-    /**
-     * A single identity requesting access for a Google Cloud resource. Follows
-     * the same format of Binding.members. Required
-     *
-     * @var string
-     */
-    public $member;
-    /**
-     * Role that is assigned to `members`. For example, `roles/viewer`,
-     * `roles/editor`, or `roles/owner`. Required
-     *
-     * @var string
-     */
-    public $role;
-    /**
-     * The action that was performed on a Binding. Required
-     *
-     * Accepted values: ACTION_UNSPECIFIED, ADD, REMOVE
-     *
-     * @param self::ACTION_* $action
-     */
-    public function setAction($action)
+namespace Google\Service\Iam {
+    class GoogleIamV1BindingDelta extends \Google\Model
     {
+        /**
+         * Unspecified.
+         */
+        public const ACTION_ACTION_UNSPECIFIED = 'ACTION_UNSPECIFIED';
+        /**
+         * Addition of a Binding.
+         */
+        public const ACTION_ADD = 'ADD';
+        /**
+         * Removal of a Binding.
+         */
+        public const ACTION_REMOVE = 'REMOVE';
+        /**
+         * The action that was performed on a Binding. Required
+         *
+         * @var string
+         */
+        public $action;
+        protected $conditionType = GoogleTypeExpr::class;
+        protected $conditionDataType = '';
+        /**
+         * A single identity requesting access for a Google Cloud resource. Follows
+         * the same format of Binding.members. Required
+         *
+         * @var string
+         */
+        public $member;
+        /**
+         * Role that is assigned to `members`. For example, `roles/viewer`,
+         * `roles/editor`, or `roles/owner`. Required
+         *
+         * @var string
+         */
+        public $role;
+        /**
+         * The action that was performed on a Binding. Required
+         *
+         * Accepted values: ACTION_UNSPECIFIED, ADD, REMOVE
+         *
+         * @param self::ACTION_* $action
+         */
+        public function setAction($action)
+        {
+        }
+        /**
+         * @return self::ACTION_*
+         */
+        public function getAction()
+        {
+        }
+        /**
+         * The condition that is associated with this binding.
+         *
+         * @param GoogleTypeExpr $condition
+         */
+        public function setCondition(GoogleTypeExpr $condition)
+        {
+        }
+        /**
+         * @return GoogleTypeExpr
+         */
+        public function getCondition()
+        {
+        }
+        /**
+         * A single identity requesting access for a Google Cloud resource. Follows
+         * the same format of Binding.members. Required
+         *
+         * @param string $member
+         */
+        public function setMember($member)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMember()
+        {
+        }
+        /**
+         * Role that is assigned to `members`. For example, `roles/viewer`,
+         * `roles/editor`, or `roles/owner`. Required
+         *
+         * @param string $role
+         */
+        public function setRole($role)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRole()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ACTION_*
+     * Runtime class alias of \Google\Service\Iam\GoogleIamV1BindingDelta registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAction()
-    {
-    }
-    /**
-     * The condition that is associated with this binding.
-     *
-     * @param GoogleTypeExpr $condition
-     */
-    public function setCondition(GoogleTypeExpr $condition)
-    {
-    }
-    /**
-     * @return GoogleTypeExpr
-     */
-    public function getCondition()
-    {
-    }
-    /**
-     * A single identity requesting access for a Google Cloud resource. Follows
-     * the same format of Binding.members. Required
-     *
-     * @param string $member
-     */
-    public function setMember($member)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMember()
-    {
-    }
-    /**
-     * Role that is assigned to `members`. For example, `roles/viewer`,
-     * `roles/editor`, or `roles/owner`. Required
-     *
-     * @param string $role
-     */
-    public function setRole($role)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRole()
+    class Google_Service_Iam_GoogleIamV1BindingDelta extends \Google\Service\Iam\GoogleIamV1BindingDelta
     {
     }
 }

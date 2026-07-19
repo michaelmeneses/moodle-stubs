@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudControlsPartnerService\Resource;
-
-/**
- * The "organizations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudcontrolspartnerService = new Google\Service\CloudControlsPartnerService(...);
- *   $organizations = $cloudcontrolspartnerService->organizations;
- *  </code>
- */
-class Organizations extends \Google\Service\Resource
-{
+namespace Google\Service\CloudControlsPartnerService\Resource {
+    /**
+     * The "organizations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudcontrolspartnerService = new Google\Service\CloudControlsPartnerService(...);
+     *   $organizations = $cloudcontrolspartnerService->organizations;
+     *  </code>
+     */
+    class Organizations extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudControlsPartnerService\Resource\Organizations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudControlsPartnerService_Resource_Organizations extends \Google\Service\CloudControlsPartnerService\Resource\Organizations
+    {
+    }
 }

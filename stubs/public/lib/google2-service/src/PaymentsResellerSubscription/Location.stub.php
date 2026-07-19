@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class Location extends \Google\Model
-{
-    /**
-     * The postal code this location refers to. Ex. "94043"
-     *
-     * @var string
-     */
-    public $postalCode;
-    /**
-     * 2-letter ISO region code for current content region. Ex. “US” Please refers
-     * to: https://en.wikipedia.org/wiki/ISO_3166-1
-     *
-     * @var string
-     */
-    public $regionCode;
-    /**
-     * The postal code this location refers to. Ex. "94043"
-     *
-     * @param string $postalCode
-     */
-    public function setPostalCode($postalCode)
+namespace Google\Service\PaymentsResellerSubscription {
+    class Location extends \Google\Model
     {
+        /**
+         * The postal code this location refers to. Ex. "94043"
+         *
+         * @var string
+         */
+        public $postalCode;
+        /**
+         * 2-letter ISO region code for current content region. Ex. “US” Please refers
+         * to: https://en.wikipedia.org/wiki/ISO_3166-1
+         *
+         * @var string
+         */
+        public $regionCode;
+        /**
+         * The postal code this location refers to. Ex. "94043"
+         *
+         * @param string $postalCode
+         */
+        public function setPostalCode($postalCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPostalCode()
+        {
+        }
+        /**
+         * 2-letter ISO region code for current content region. Ex. “US” Please refers
+         * to: https://en.wikipedia.org/wiki/ISO_3166-1
+         *
+         * @param string $regionCode
+         */
+        public function setRegionCode($regionCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegionCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\Location registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPostalCode()
-    {
-    }
-    /**
-     * 2-letter ISO region code for current content region. Ex. “US” Please refers
-     * to: https://en.wikipedia.org/wiki/ISO_3166-1
-     *
-     * @param string $regionCode
-     */
-    public function setRegionCode($regionCode)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegionCode()
+    class Google_Service_PaymentsResellerSubscription_Location extends \Google\Service\PaymentsResellerSubscription\Location
     {
     }
 }

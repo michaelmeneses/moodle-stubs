@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class OsStartupEvent extends \Google\Model
-{
-    /**
-     * Unknown value.
-     */
-    public const VERIFIED_BOOT_STATE_VERIFIED_BOOT_STATE_UNSPECIFIED = 'VERIFIED_BOOT_STATE_UNSPECIFIED';
-    /**
-     * Indicates that there is a full chain of trust extending from the bootloader
-     * to verified partitions including the bootloader, boot partition, and all
-     * verified partitions.
-     */
-    public const VERIFIED_BOOT_STATE_GREEN = 'GREEN';
-    /**
-     * Indicates that the boot partition has been verified using the embedded
-     * certificate and the signature is valid.
-     */
-    public const VERIFIED_BOOT_STATE_YELLOW = 'YELLOW';
-    /**
-     * Indicates that the device may be freely modified. Device integrity is left
-     * to the user to verify out-of-band.
-     */
-    public const VERIFIED_BOOT_STATE_ORANGE = 'ORANGE';
-    /**
-     * Unknown value.
-     */
-    public const VERITY_MODE_DM_VERITY_MODE_UNSPECIFIED = 'DM_VERITY_MODE_UNSPECIFIED';
-    /**
-     * Indicates that the device will be restarted when corruption is detected.
-     */
-    public const VERITY_MODE_ENFORCING = 'ENFORCING';
-    /**
-     * Indicates that an I/O error will be returned for an attempt to read
-     * corrupted data blocks (also known as eio boot state).
-     */
-    public const VERITY_MODE_IO_ERROR = 'IO_ERROR';
-    /**
-     * Indicates that dm-verity is disabled on device.
-     */
-    public const VERITY_MODE_DISABLED = 'DISABLED';
-    /**
-     * Verified Boot state.
-     *
-     * @var string
-     */
-    public $verifiedBootState;
-    /**
-     * dm-verity mode.
-     *
-     * @var string
-     */
-    public $verityMode;
-    /**
-     * Verified Boot state.
-     *
-     * Accepted values: VERIFIED_BOOT_STATE_UNSPECIFIED, GREEN, YELLOW, ORANGE
-     *
-     * @param self::VERIFIED_BOOT_STATE_* $verifiedBootState
-     */
-    public function setVerifiedBootState($verifiedBootState)
+namespace Google\Service\AndroidManagement {
+    class OsStartupEvent extends \Google\Model
     {
+        /**
+         * Unknown value.
+         */
+        public const VERIFIED_BOOT_STATE_VERIFIED_BOOT_STATE_UNSPECIFIED = 'VERIFIED_BOOT_STATE_UNSPECIFIED';
+        /**
+         * Indicates that there is a full chain of trust extending from the bootloader
+         * to verified partitions including the bootloader, boot partition, and all
+         * verified partitions.
+         */
+        public const VERIFIED_BOOT_STATE_GREEN = 'GREEN';
+        /**
+         * Indicates that the boot partition has been verified using the embedded
+         * certificate and the signature is valid.
+         */
+        public const VERIFIED_BOOT_STATE_YELLOW = 'YELLOW';
+        /**
+         * Indicates that the device may be freely modified. Device integrity is left
+         * to the user to verify out-of-band.
+         */
+        public const VERIFIED_BOOT_STATE_ORANGE = 'ORANGE';
+        /**
+         * Unknown value.
+         */
+        public const VERITY_MODE_DM_VERITY_MODE_UNSPECIFIED = 'DM_VERITY_MODE_UNSPECIFIED';
+        /**
+         * Indicates that the device will be restarted when corruption is detected.
+         */
+        public const VERITY_MODE_ENFORCING = 'ENFORCING';
+        /**
+         * Indicates that an I/O error will be returned for an attempt to read
+         * corrupted data blocks (also known as eio boot state).
+         */
+        public const VERITY_MODE_IO_ERROR = 'IO_ERROR';
+        /**
+         * Indicates that dm-verity is disabled on device.
+         */
+        public const VERITY_MODE_DISABLED = 'DISABLED';
+        /**
+         * Verified Boot state.
+         *
+         * @var string
+         */
+        public $verifiedBootState;
+        /**
+         * dm-verity mode.
+         *
+         * @var string
+         */
+        public $verityMode;
+        /**
+         * Verified Boot state.
+         *
+         * Accepted values: VERIFIED_BOOT_STATE_UNSPECIFIED, GREEN, YELLOW, ORANGE
+         *
+         * @param self::VERIFIED_BOOT_STATE_* $verifiedBootState
+         */
+        public function setVerifiedBootState($verifiedBootState)
+        {
+        }
+        /**
+         * @return self::VERIFIED_BOOT_STATE_*
+         */
+        public function getVerifiedBootState()
+        {
+        }
+        /**
+         * dm-verity mode.
+         *
+         * Accepted values: DM_VERITY_MODE_UNSPECIFIED, ENFORCING, IO_ERROR, DISABLED
+         *
+         * @param self::VERITY_MODE_* $verityMode
+         */
+        public function setVerityMode($verityMode)
+        {
+        }
+        /**
+         * @return self::VERITY_MODE_*
+         */
+        public function getVerityMode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::VERIFIED_BOOT_STATE_*
+     * Runtime class alias of \Google\Service\AndroidManagement\OsStartupEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVerifiedBootState()
-    {
-    }
-    /**
-     * dm-verity mode.
-     *
-     * Accepted values: DM_VERITY_MODE_UNSPECIFIED, ENFORCING, IO_ERROR, DISABLED
-     *
-     * @param self::VERITY_MODE_* $verityMode
-     */
-    public function setVerityMode($verityMode)
-    {
-    }
-    /**
-     * @return self::VERITY_MODE_*
-     */
-    public function getVerityMode()
+    class Google_Service_AndroidManagement_OsStartupEvent extends \Google\Service\AndroidManagement\OsStartupEvent
     {
     }
 }

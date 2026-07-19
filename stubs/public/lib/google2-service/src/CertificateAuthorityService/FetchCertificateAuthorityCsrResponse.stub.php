@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateAuthorityService;
-
-class FetchCertificateAuthorityCsrResponse extends \Google\Model
-{
-    /**
-     * Output only. The PEM-encoded signed certificate signing request (CSR).
-     *
-     * @var string
-     */
-    public $pemCsr;
-    /**
-     * Output only. The PEM-encoded signed certificate signing request (CSR).
-     *
-     * @param string $pemCsr
-     */
-    public function setPemCsr($pemCsr)
+namespace Google\Service\CertificateAuthorityService {
+    class FetchCertificateAuthorityCsrResponse extends \Google\Model
     {
+        /**
+         * Output only. The PEM-encoded signed certificate signing request (CSR).
+         *
+         * @var string
+         */
+        public $pemCsr;
+        /**
+         * Output only. The PEM-encoded signed certificate signing request (CSR).
+         *
+         * @param string $pemCsr
+         */
+        public function setPemCsr($pemCsr)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPemCsr()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CertificateAuthorityService\FetchCertificateAuthorityCsrResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPemCsr()
+    class Google_Service_CertificateAuthorityService_FetchCertificateAuthorityCsrResponse extends \Google\Service\CertificateAuthorityService\FetchCertificateAuthorityCsrResponse
     {
     }
 }

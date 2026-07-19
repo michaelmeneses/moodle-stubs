@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class AttachedGif extends \Google\Model
-{
-    /**
-     * Output only. The URL that hosts the GIF image.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Output only. The URL that hosts the GIF image.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
+namespace Google\Service\HangoutsChat {
+    class AttachedGif extends \Google\Model
     {
+        /**
+         * Output only. The URL that hosts the GIF image.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Output only. The URL that hosts the GIF image.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\HangoutsChat\AttachedGif registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUri()
+    class Google_Service_HangoutsChat_AttachedGif extends \Google\Service\HangoutsChat\AttachedGif
     {
     }
 }

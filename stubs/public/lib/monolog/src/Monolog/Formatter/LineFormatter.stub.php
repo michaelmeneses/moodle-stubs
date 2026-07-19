@@ -16,6 +16,9 @@
  */
 namespace Monolog\Formatter;
 
+use Closure;
+use Monolog\Utils;
+use Monolog\LogRecord;
 /**
  * Formats incoming records into a one-line string
  *

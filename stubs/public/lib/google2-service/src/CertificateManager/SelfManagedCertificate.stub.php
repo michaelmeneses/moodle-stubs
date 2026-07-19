@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateManager;
-
-class SelfManagedCertificate extends \Google\Model
-{
-    /**
-     * Optional. Input only. The PEM-encoded certificate chain. Leaf certificate
-     * comes first, followed by intermediate ones if any.
-     *
-     * @var string
-     */
-    public $pemCertificate;
-    /**
-     * Optional. Input only. The PEM-encoded private key of the leaf certificate.
-     *
-     * @var string
-     */
-    public $pemPrivateKey;
-    /**
-     * Optional. Input only. The PEM-encoded certificate chain. Leaf certificate
-     * comes first, followed by intermediate ones if any.
-     *
-     * @param string $pemCertificate
-     */
-    public function setPemCertificate($pemCertificate)
+namespace Google\Service\CertificateManager {
+    class SelfManagedCertificate extends \Google\Model
     {
+        /**
+         * Optional. Input only. The PEM-encoded certificate chain. Leaf certificate
+         * comes first, followed by intermediate ones if any.
+         *
+         * @var string
+         */
+        public $pemCertificate;
+        /**
+         * Optional. Input only. The PEM-encoded private key of the leaf certificate.
+         *
+         * @var string
+         */
+        public $pemPrivateKey;
+        /**
+         * Optional. Input only. The PEM-encoded certificate chain. Leaf certificate
+         * comes first, followed by intermediate ones if any.
+         *
+         * @param string $pemCertificate
+         */
+        public function setPemCertificate($pemCertificate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPemCertificate()
+        {
+        }
+        /**
+         * Optional. Input only. The PEM-encoded private key of the leaf certificate.
+         *
+         * @param string $pemPrivateKey
+         */
+        public function setPemPrivateKey($pemPrivateKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPemPrivateKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CertificateManager\SelfManagedCertificate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPemCertificate()
-    {
-    }
-    /**
-     * Optional. Input only. The PEM-encoded private key of the leaf certificate.
-     *
-     * @param string $pemPrivateKey
-     */
-    public function setPemPrivateKey($pemPrivateKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPemPrivateKey()
+    class Google_Service_CertificateManager_SelfManagedCertificate extends \Google\Service\CertificateManager\SelfManagedCertificate
     {
     }
 }

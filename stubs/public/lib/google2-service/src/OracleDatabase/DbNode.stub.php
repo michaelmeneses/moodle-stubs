@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class DbNode extends \Google\Model
-{
-    /**
-     * Identifier. The name of the database node resource in the following format:
-     * projects/{project}/locations/{location}/cloudVmClusters/{cloud_vm_cluster}/
-     * dbNodes/{db_node}
-     *
-     * @var string
-     */
-    public $name;
-    protected $propertiesType = DbNodeProperties::class;
-    protected $propertiesDataType = '';
-    /**
-     * Identifier. The name of the database node resource in the following format:
-     * projects/{project}/locations/{location}/cloudVmClusters/{cloud_vm_cluster}/
-     * dbNodes/{db_node}
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\OracleDatabase {
+    class DbNode extends \Google\Model
     {
+        /**
+         * Identifier. The name of the database node resource in the following format:
+         * projects/{project}/locations/{location}/cloudVmClusters/{cloud_vm_cluster}/
+         * dbNodes/{db_node}
+         *
+         * @var string
+         */
+        public $name;
+        protected $propertiesType = DbNodeProperties::class;
+        protected $propertiesDataType = '';
+        /**
+         * Identifier. The name of the database node resource in the following format:
+         * projects/{project}/locations/{location}/cloudVmClusters/{cloud_vm_cluster}/
+         * dbNodes/{db_node}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. Various properties of the database node.
+         *
+         * @param DbNodeProperties $properties
+         */
+        public function setProperties(DbNodeProperties $properties)
+        {
+        }
+        /**
+         * @return DbNodeProperties
+         */
+        public function getProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OracleDatabase\DbNode registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. Various properties of the database node.
-     *
-     * @param DbNodeProperties $properties
-     */
-    public function setProperties(DbNodeProperties $properties)
-    {
-    }
-    /**
-     * @return DbNodeProperties
-     */
-    public function getProperties()
+    class Google_Service_OracleDatabase_DbNode extends \Google\Service\OracleDatabase\DbNode
     {
     }
 }

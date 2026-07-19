@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3DataStoreConnectionSignalsCitedSnippet extends \Google\Model
-{
-    protected $searchSnippetType = GoogleCloudDialogflowCxV3DataStoreConnectionSignalsSearchSnippet::class;
-    protected $searchSnippetDataType = '';
-    /**
-     * Index of the snippet in `search_snippets` field.
-     *
-     * @var int
-     */
-    public $snippetIndex;
-    /**
-     * Details of the snippet.
-     *
-     * @param GoogleCloudDialogflowCxV3DataStoreConnectionSignalsSearchSnippet $searchSnippet
-     */
-    public function setSearchSnippet(GoogleCloudDialogflowCxV3DataStoreConnectionSignalsSearchSnippet $searchSnippet)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3DataStoreConnectionSignalsCitedSnippet extends \Google\Model
     {
+        protected $searchSnippetType = GoogleCloudDialogflowCxV3DataStoreConnectionSignalsSearchSnippet::class;
+        protected $searchSnippetDataType = '';
+        /**
+         * Index of the snippet in `search_snippets` field.
+         *
+         * @var int
+         */
+        public $snippetIndex;
+        /**
+         * Details of the snippet.
+         *
+         * @param GoogleCloudDialogflowCxV3DataStoreConnectionSignalsSearchSnippet $searchSnippet
+         */
+        public function setSearchSnippet(GoogleCloudDialogflowCxV3DataStoreConnectionSignalsSearchSnippet $searchSnippet)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3DataStoreConnectionSignalsSearchSnippet
+         */
+        public function getSearchSnippet()
+        {
+        }
+        /**
+         * Index of the snippet in `search_snippets` field.
+         *
+         * @param int $snippetIndex
+         */
+        public function setSnippetIndex($snippetIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSnippetIndex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3DataStoreConnectionSignalsSearchSnippet
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3DataStoreConnectionSignalsCitedSnippet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSearchSnippet()
-    {
-    }
-    /**
-     * Index of the snippet in `search_snippets` field.
-     *
-     * @param int $snippetIndex
-     */
-    public function setSnippetIndex($snippetIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSnippetIndex()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3DataStoreConnectionSignalsCitedSnippet extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3DataStoreConnectionSignalsCitedSnippet
     {
     }
 }

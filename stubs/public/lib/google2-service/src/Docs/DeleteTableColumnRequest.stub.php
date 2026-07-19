@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class DeleteTableColumnRequest extends \Google\Model
-{
-    protected $tableCellLocationType = TableCellLocation::class;
-    protected $tableCellLocationDataType = '';
-    /**
-     * The reference table cell location from which the column will be deleted.
-     * The column this cell spans will be deleted. If this is a merged cell that
-     * spans multiple columns, all columns that the cell spans will be deleted. If
-     * no columns remain in the table after this deletion, the whole table is
-     * deleted.
-     *
-     * @param TableCellLocation $tableCellLocation
-     */
-    public function setTableCellLocation(TableCellLocation $tableCellLocation)
+namespace Google\Service\Docs {
+    class DeleteTableColumnRequest extends \Google\Model
     {
+        protected $tableCellLocationType = TableCellLocation::class;
+        protected $tableCellLocationDataType = '';
+        /**
+         * The reference table cell location from which the column will be deleted.
+         * The column this cell spans will be deleted. If this is a merged cell that
+         * spans multiple columns, all columns that the cell spans will be deleted. If
+         * no columns remain in the table after this deletion, the whole table is
+         * deleted.
+         *
+         * @param TableCellLocation $tableCellLocation
+         */
+        public function setTableCellLocation(TableCellLocation $tableCellLocation)
+        {
+        }
+        /**
+         * @return TableCellLocation
+         */
+        public function getTableCellLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TableCellLocation
+     * Runtime class alias of \Google\Service\Docs\DeleteTableColumnRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTableCellLocation()
+    class Google_Service_Docs_DeleteTableColumnRequest extends \Google\Service\Docs\DeleteTableColumnRequest
     {
     }
 }

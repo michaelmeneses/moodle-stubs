@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class ResultsStorage extends \Google\Model
-{
-    protected $resultsStoragePathType = FileReference::class;
-    protected $resultsStoragePathDataType = '';
-    protected $xunitXmlFileType = FileReference::class;
-    protected $xunitXmlFileDataType = '';
-    /**
-     * The root directory for test results.
-     *
-     * @param FileReference $resultsStoragePath
-     */
-    public function setResultsStoragePath(FileReference $resultsStoragePath)
+namespace Google\Service\ToolResults {
+    class ResultsStorage extends \Google\Model
     {
+        protected $resultsStoragePathType = FileReference::class;
+        protected $resultsStoragePathDataType = '';
+        protected $xunitXmlFileType = FileReference::class;
+        protected $xunitXmlFileDataType = '';
+        /**
+         * The root directory for test results.
+         *
+         * @param FileReference $resultsStoragePath
+         */
+        public function setResultsStoragePath(FileReference $resultsStoragePath)
+        {
+        }
+        /**
+         * @return FileReference
+         */
+        public function getResultsStoragePath()
+        {
+        }
+        /**
+         * The path to the Xunit XML file.
+         *
+         * @param FileReference $xunitXmlFile
+         */
+        public function setXunitXmlFile(FileReference $xunitXmlFile)
+        {
+        }
+        /**
+         * @return FileReference
+         */
+        public function getXunitXmlFile()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FileReference
+     * Runtime class alias of \Google\Service\ToolResults\ResultsStorage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResultsStoragePath()
-    {
-    }
-    /**
-     * The path to the Xunit XML file.
-     *
-     * @param FileReference $xunitXmlFile
-     */
-    public function setXunitXmlFile(FileReference $xunitXmlFile)
-    {
-    }
-    /**
-     * @return FileReference
-     */
-    public function getXunitXmlFile()
+    class Google_Service_ToolResults_ResultsStorage extends \Google\Service\ToolResults\ResultsStorage
     {
     }
 }

@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsData;
-
-class Comparison extends \Google\Model
-{
-    /**
-     * A saved comparison identified by the comparison's resource name. For
-     * example, 'comparisons/1234'.
-     *
-     * @var string
-     */
-    public $comparison;
-    protected $dimensionFilterType = FilterExpression::class;
-    protected $dimensionFilterDataType = '';
-    /**
-     * Each comparison produces separate rows in the response. In the response,
-     * this comparison is identified by this name. If name is unspecified, we will
-     * use the saved comparisons display name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * A saved comparison identified by the comparison's resource name. For
-     * example, 'comparisons/1234'.
-     *
-     * @param string $comparison
-     */
-    public function setComparison($comparison)
+namespace Google\Service\AnalyticsData {
+    class Comparison extends \Google\Model
     {
+        /**
+         * A saved comparison identified by the comparison's resource name. For
+         * example, 'comparisons/1234'.
+         *
+         * @var string
+         */
+        public $comparison;
+        protected $dimensionFilterType = FilterExpression::class;
+        protected $dimensionFilterDataType = '';
+        /**
+         * Each comparison produces separate rows in the response. In the response,
+         * this comparison is identified by this name. If name is unspecified, we will
+         * use the saved comparisons display name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * A saved comparison identified by the comparison's resource name. For
+         * example, 'comparisons/1234'.
+         *
+         * @param string $comparison
+         */
+        public function setComparison($comparison)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getComparison()
+        {
+        }
+        /**
+         * A basic comparison.
+         *
+         * @param FilterExpression $dimensionFilter
+         */
+        public function setDimensionFilter(FilterExpression $dimensionFilter)
+        {
+        }
+        /**
+         * @return FilterExpression
+         */
+        public function getDimensionFilter()
+        {
+        }
+        /**
+         * Each comparison produces separate rows in the response. In the response,
+         * this comparison is identified by this name. If name is unspecified, we will
+         * use the saved comparisons display name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AnalyticsData\Comparison registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getComparison()
-    {
-    }
-    /**
-     * A basic comparison.
-     *
-     * @param FilterExpression $dimensionFilter
-     */
-    public function setDimensionFilter(FilterExpression $dimensionFilter)
-    {
-    }
-    /**
-     * @return FilterExpression
-     */
-    public function getDimensionFilter()
-    {
-    }
-    /**
-     * Each comparison produces separate rows in the response. In the response,
-     * this comparison is identified by this name. If name is unspecified, we will
-     * use the saved comparisons display name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_AnalyticsData_Comparison extends \Google\Service\AnalyticsData\Comparison
     {
     }
 }

@@ -21,93 +21,102 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class GoogleAppsCardV1OnClick extends \Google\Model
-{
-    protected $actionType = GoogleAppsCardV1Action::class;
-    protected $actionDataType = '';
-    protected $cardType = GoogleAppsCardV1Card::class;
-    protected $cardDataType = '';
-    protected $openDynamicLinkActionType = GoogleAppsCardV1Action::class;
-    protected $openDynamicLinkActionDataType = '';
-    protected $openLinkType = GoogleAppsCardV1OpenLink::class;
-    protected $openLinkDataType = '';
-    protected $overflowMenuType = GoogleAppsCardV1OverflowMenu::class;
-    protected $overflowMenuDataType = '';
-    /**
-     * If specified, an action is triggered by this `onClick`.
-     *
-     * @param GoogleAppsCardV1Action $action
-     */
-    public function setAction(GoogleAppsCardV1Action $action)
+namespace Google\Service\HangoutsChat {
+    class GoogleAppsCardV1OnClick extends \Google\Model
     {
+        protected $actionType = GoogleAppsCardV1Action::class;
+        protected $actionDataType = '';
+        protected $cardType = GoogleAppsCardV1Card::class;
+        protected $cardDataType = '';
+        protected $openDynamicLinkActionType = GoogleAppsCardV1Action::class;
+        protected $openDynamicLinkActionDataType = '';
+        protected $openLinkType = GoogleAppsCardV1OpenLink::class;
+        protected $openLinkDataType = '';
+        protected $overflowMenuType = GoogleAppsCardV1OverflowMenu::class;
+        protected $overflowMenuDataType = '';
+        /**
+         * If specified, an action is triggered by this `onClick`.
+         *
+         * @param GoogleAppsCardV1Action $action
+         */
+        public function setAction(GoogleAppsCardV1Action $action)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1Action
+         */
+        public function getAction()
+        {
+        }
+        /**
+         * A new card is pushed to the card stack after clicking if specified. [Google
+         * Workspace add-ons](https://developers.google.com/workspace/add-ons):
+         *
+         * @param GoogleAppsCardV1Card $card
+         */
+        public function setCard(GoogleAppsCardV1Card $card)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1Card
+         */
+        public function getCard()
+        {
+        }
+        /**
+         * An add-on triggers this action when the action needs to open a link. This
+         * differs from the `open_link` above in that this needs to talk to server to
+         * get the link. Thus some preparation work is required for web client to do
+         * before the open link action response comes back. [Google Workspace add-
+         * ons](https://developers.google.com/workspace/add-ons):
+         *
+         * @param GoogleAppsCardV1Action $openDynamicLinkAction
+         */
+        public function setOpenDynamicLinkAction(GoogleAppsCardV1Action $openDynamicLinkAction)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1Action
+         */
+        public function getOpenDynamicLinkAction()
+        {
+        }
+        /**
+         * If specified, this `onClick` triggers an open link action.
+         *
+         * @param GoogleAppsCardV1OpenLink $openLink
+         */
+        public function setOpenLink(GoogleAppsCardV1OpenLink $openLink)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1OpenLink
+         */
+        public function getOpenLink()
+        {
+        }
+        /**
+         * If specified, this `onClick` opens an overflow menu.
+         *
+         * @param GoogleAppsCardV1OverflowMenu $overflowMenu
+         */
+        public function setOverflowMenu(GoogleAppsCardV1OverflowMenu $overflowMenu)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1OverflowMenu
+         */
+        public function getOverflowMenu()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAppsCardV1Action
+     * Runtime class alias of \Google\Service\HangoutsChat\GoogleAppsCardV1OnClick registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAction()
-    {
-    }
-    /**
-     * A new card is pushed to the card stack after clicking if specified. [Google
-     * Workspace add-ons](https://developers.google.com/workspace/add-ons):
-     *
-     * @param GoogleAppsCardV1Card $card
-     */
-    public function setCard(GoogleAppsCardV1Card $card)
-    {
-    }
-    /**
-     * @return GoogleAppsCardV1Card
-     */
-    public function getCard()
-    {
-    }
-    /**
-     * An add-on triggers this action when the action needs to open a link. This
-     * differs from the `open_link` above in that this needs to talk to server to
-     * get the link. Thus some preparation work is required for web client to do
-     * before the open link action response comes back. [Google Workspace add-
-     * ons](https://developers.google.com/workspace/add-ons):
-     *
-     * @param GoogleAppsCardV1Action $openDynamicLinkAction
-     */
-    public function setOpenDynamicLinkAction(GoogleAppsCardV1Action $openDynamicLinkAction)
-    {
-    }
-    /**
-     * @return GoogleAppsCardV1Action
-     */
-    public function getOpenDynamicLinkAction()
-    {
-    }
-    /**
-     * If specified, this `onClick` triggers an open link action.
-     *
-     * @param GoogleAppsCardV1OpenLink $openLink
-     */
-    public function setOpenLink(GoogleAppsCardV1OpenLink $openLink)
-    {
-    }
-    /**
-     * @return GoogleAppsCardV1OpenLink
-     */
-    public function getOpenLink()
-    {
-    }
-    /**
-     * If specified, this `onClick` opens an overflow menu.
-     *
-     * @param GoogleAppsCardV1OverflowMenu $overflowMenu
-     */
-    public function setOverflowMenu(GoogleAppsCardV1OverflowMenu $overflowMenu)
-    {
-    }
-    /**
-     * @return GoogleAppsCardV1OverflowMenu
-     */
-    public function getOverflowMenu()
+    class Google_Service_HangoutsChat_GoogleAppsCardV1OnClick extends \Google\Service\HangoutsChat\GoogleAppsCardV1OnClick
     {
     }
 }

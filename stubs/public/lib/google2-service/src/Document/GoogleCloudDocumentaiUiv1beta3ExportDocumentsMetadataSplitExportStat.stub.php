@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiUiv1beta3ExportDocumentsMetadataSplitExportStat extends \Google\Model
-{
-    /**
-     * Default value if the enum is not set.
-     */
-    public const SPLIT_TYPE_DATASET_SPLIT_TYPE_UNSPECIFIED = 'DATASET_SPLIT_TYPE_UNSPECIFIED';
-    /**
-     * Identifies the train documents.
-     */
-    public const SPLIT_TYPE_DATASET_SPLIT_TRAIN = 'DATASET_SPLIT_TRAIN';
-    /**
-     * Identifies the test documents.
-     */
-    public const SPLIT_TYPE_DATASET_SPLIT_TEST = 'DATASET_SPLIT_TEST';
-    /**
-     * Identifies the unassigned documents.
-     */
-    public const SPLIT_TYPE_DATASET_SPLIT_UNASSIGNED = 'DATASET_SPLIT_UNASSIGNED';
-    /**
-     * The dataset split type.
-     *
-     * @var string
-     */
-    public $splitType;
-    /**
-     * Total number of documents with the given dataset split type to be exported.
-     *
-     * @var int
-     */
-    public $totalDocumentCount;
-    /**
-     * The dataset split type.
-     *
-     * Accepted values: DATASET_SPLIT_TYPE_UNSPECIFIED, DATASET_SPLIT_TRAIN,
-     * DATASET_SPLIT_TEST, DATASET_SPLIT_UNASSIGNED
-     *
-     * @param self::SPLIT_TYPE_* $splitType
-     */
-    public function setSplitType($splitType)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiUiv1beta3ExportDocumentsMetadataSplitExportStat extends \Google\Model
     {
+        /**
+         * Default value if the enum is not set.
+         */
+        public const SPLIT_TYPE_DATASET_SPLIT_TYPE_UNSPECIFIED = 'DATASET_SPLIT_TYPE_UNSPECIFIED';
+        /**
+         * Identifies the train documents.
+         */
+        public const SPLIT_TYPE_DATASET_SPLIT_TRAIN = 'DATASET_SPLIT_TRAIN';
+        /**
+         * Identifies the test documents.
+         */
+        public const SPLIT_TYPE_DATASET_SPLIT_TEST = 'DATASET_SPLIT_TEST';
+        /**
+         * Identifies the unassigned documents.
+         */
+        public const SPLIT_TYPE_DATASET_SPLIT_UNASSIGNED = 'DATASET_SPLIT_UNASSIGNED';
+        /**
+         * The dataset split type.
+         *
+         * @var string
+         */
+        public $splitType;
+        /**
+         * Total number of documents with the given dataset split type to be exported.
+         *
+         * @var int
+         */
+        public $totalDocumentCount;
+        /**
+         * The dataset split type.
+         *
+         * Accepted values: DATASET_SPLIT_TYPE_UNSPECIFIED, DATASET_SPLIT_TRAIN,
+         * DATASET_SPLIT_TEST, DATASET_SPLIT_UNASSIGNED
+         *
+         * @param self::SPLIT_TYPE_* $splitType
+         */
+        public function setSplitType($splitType)
+        {
+        }
+        /**
+         * @return self::SPLIT_TYPE_*
+         */
+        public function getSplitType()
+        {
+        }
+        /**
+         * Total number of documents with the given dataset split type to be exported.
+         *
+         * @param int $totalDocumentCount
+         */
+        public function setTotalDocumentCount($totalDocumentCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalDocumentCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::SPLIT_TYPE_*
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3ExportDocumentsMetadataSplitExportStat registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSplitType()
-    {
-    }
-    /**
-     * Total number of documents with the given dataset split type to be exported.
-     *
-     * @param int $totalDocumentCount
-     */
-    public function setTotalDocumentCount($totalDocumentCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalDocumentCount()
+    class Google_Service_Document_GoogleCloudDocumentaiUiv1beta3ExportDocumentsMetadataSplitExportStat extends \Google\Service\Document\GoogleCloudDocumentaiUiv1beta3ExportDocumentsMetadataSplitExportStat
     {
     }
 }

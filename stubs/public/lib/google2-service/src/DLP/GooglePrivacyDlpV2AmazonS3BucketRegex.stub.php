@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2AmazonS3BucketRegex extends \Google\Model
-{
-    protected $awsAccountRegexType = GooglePrivacyDlpV2AwsAccountRegex::class;
-    protected $awsAccountRegexDataType = '';
-    /**
-     * Optional. Regex to test the bucket name against. If empty, all buckets
-     * match.
-     *
-     * @var string
-     */
-    public $bucketNameRegex;
-    /**
-     * The AWS account regex.
-     *
-     * @param GooglePrivacyDlpV2AwsAccountRegex $awsAccountRegex
-     */
-    public function setAwsAccountRegex(GooglePrivacyDlpV2AwsAccountRegex $awsAccountRegex)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2AmazonS3BucketRegex extends \Google\Model
     {
+        protected $awsAccountRegexType = GooglePrivacyDlpV2AwsAccountRegex::class;
+        protected $awsAccountRegexDataType = '';
+        /**
+         * Optional. Regex to test the bucket name against. If empty, all buckets
+         * match.
+         *
+         * @var string
+         */
+        public $bucketNameRegex;
+        /**
+         * The AWS account regex.
+         *
+         * @param GooglePrivacyDlpV2AwsAccountRegex $awsAccountRegex
+         */
+        public function setAwsAccountRegex(GooglePrivacyDlpV2AwsAccountRegex $awsAccountRegex)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2AwsAccountRegex
+         */
+        public function getAwsAccountRegex()
+        {
+        }
+        /**
+         * Optional. Regex to test the bucket name against. If empty, all buckets
+         * match.
+         *
+         * @param string $bucketNameRegex
+         */
+        public function setBucketNameRegex($bucketNameRegex)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBucketNameRegex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2AwsAccountRegex
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2AmazonS3BucketRegex registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAwsAccountRegex()
-    {
-    }
-    /**
-     * Optional. Regex to test the bucket name against. If empty, all buckets
-     * match.
-     *
-     * @param string $bucketNameRegex
-     */
-    public function setBucketNameRegex($bucketNameRegex)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBucketNameRegex()
+    class Google_Service_DLP_GooglePrivacyDlpV2AmazonS3BucketRegex extends \Google\Service\DLP\GooglePrivacyDlpV2AmazonS3BucketRegex
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmFrontendsEventbusProtoBooleanParameterArray extends \Google\Collection
-{
-    protected $collection_key = 'booleanValues';
-    /**
-     * @var bool[]
-     */
-    public $booleanValues;
-    /**
-     * @param bool[] $booleanValues
-     */
-    public function setBooleanValues($booleanValues)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmFrontendsEventbusProtoBooleanParameterArray extends \Google\Collection
     {
+        protected $collection_key = 'booleanValues';
+        /**
+         * @var bool[]
+         */
+        public $booleanValues;
+        /**
+         * @param bool[] $booleanValues
+         */
+        public function setBooleanValues($booleanValues)
+        {
+        }
+        /**
+         * @return bool[]
+         */
+        public function getBooleanValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool[]
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmFrontendsEventbusProtoBooleanParameterArray registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBooleanValues()
+    class Google_Service_Integrations_EnterpriseCrmFrontendsEventbusProtoBooleanParameterArray extends \Google\Service\Integrations\EnterpriseCrmFrontendsEventbusProtoBooleanParameterArray
     {
     }
 }

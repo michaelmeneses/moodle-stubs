@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class WireGroupEndpoint extends \Google\Model
-{
-    protected $interconnectsType = WireGroupEndpointInterconnect::class;
-    protected $interconnectsDataType = 'map';
-    /**
-     * A map that contains the redundant Interconnect connections. Specify key-
-     * value pairs for the map as follows:        - Key: an RFC1035 user-specified
-     * label.    - Value: an Interconnect object.
-     *
-     * @param WireGroupEndpointInterconnect[] $interconnects
-     */
-    public function setInterconnects($interconnects)
+namespace Google\Service\Compute {
+    class WireGroupEndpoint extends \Google\Model
     {
+        protected $interconnectsType = WireGroupEndpointInterconnect::class;
+        protected $interconnectsDataType = 'map';
+        /**
+         * A map that contains the redundant Interconnect connections. Specify key-
+         * value pairs for the map as follows:        - Key: an RFC1035 user-specified
+         * label.    - Value: an Interconnect object.
+         *
+         * @param WireGroupEndpointInterconnect[] $interconnects
+         */
+        public function setInterconnects($interconnects)
+        {
+        }
+        /**
+         * @return WireGroupEndpointInterconnect[]
+         */
+        public function getInterconnects()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return WireGroupEndpointInterconnect[]
+     * Runtime class alias of \Google\Service\Compute\WireGroupEndpoint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInterconnects()
+    class Google_Service_Compute_WireGroupEndpoint extends \Google\Service\Compute\WireGroupEndpoint
     {
     }
 }

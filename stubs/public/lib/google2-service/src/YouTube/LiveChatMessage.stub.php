@@ -21,103 +21,112 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class LiveChatMessage extends \Google\Model
-{
-    protected $authorDetailsType = LiveChatMessageAuthorDetails::class;
-    protected $authorDetailsDataType = '';
-    /**
-     * Etag of this resource.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * The ID that YouTube assigns to uniquely identify the message.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "youtube#liveChatMessage".
-     *
-     * @var string
-     */
-    public $kind;
-    protected $snippetType = LiveChatMessageSnippet::class;
-    protected $snippetDataType = '';
-    /**
-     * The authorDetails object contains basic details about the user that posted
-     * this message.
-     *
-     * @param LiveChatMessageAuthorDetails $authorDetails
-     */
-    public function setAuthorDetails(LiveChatMessageAuthorDetails $authorDetails)
+namespace Google\Service\YouTube {
+    class LiveChatMessage extends \Google\Model
     {
+        protected $authorDetailsType = LiveChatMessageAuthorDetails::class;
+        protected $authorDetailsDataType = '';
+        /**
+         * Etag of this resource.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * The ID that YouTube assigns to uniquely identify the message.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "youtube#liveChatMessage".
+         *
+         * @var string
+         */
+        public $kind;
+        protected $snippetType = LiveChatMessageSnippet::class;
+        protected $snippetDataType = '';
+        /**
+         * The authorDetails object contains basic details about the user that posted
+         * this message.
+         *
+         * @param LiveChatMessageAuthorDetails $authorDetails
+         */
+        public function setAuthorDetails(LiveChatMessageAuthorDetails $authorDetails)
+        {
+        }
+        /**
+         * @return LiveChatMessageAuthorDetails
+         */
+        public function getAuthorDetails()
+        {
+        }
+        /**
+         * Etag of this resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * The ID that YouTube assigns to uniquely identify the message.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "youtube#liveChatMessage".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The snippet object contains basic details about the message.
+         *
+         * @param LiveChatMessageSnippet $snippet
+         */
+        public function setSnippet(LiveChatMessageSnippet $snippet)
+        {
+        }
+        /**
+         * @return LiveChatMessageSnippet
+         */
+        public function getSnippet()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LiveChatMessageAuthorDetails
+     * Runtime class alias of \Google\Service\YouTube\LiveChatMessage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthorDetails()
-    {
-    }
-    /**
-     * Etag of this resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * The ID that YouTube assigns to uniquely identify the message.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "youtube#liveChatMessage".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The snippet object contains basic details about the message.
-     *
-     * @param LiveChatMessageSnippet $snippet
-     */
-    public function setSnippet(LiveChatMessageSnippet $snippet)
-    {
-    }
-    /**
-     * @return LiveChatMessageSnippet
-     */
-    public function getSnippet()
+    class Google_Service_YouTube_LiveChatMessage extends \Google\Service\YouTube\LiveChatMessage
     {
     }
 }

@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Script;
-
-class GoogleAppsScriptTypeExecutionApiConfig extends \Google\Model
-{
-    /**
-     * Default value, should not be used.
-     */
-    public const ACCESS_UNKNOWN_ACCESS = 'UNKNOWN_ACCESS';
-    /**
-     * Only the user who deployed the web app or executable can access it. Note
-     * that this is not necessarily the owner of the script project.
-     */
-    public const ACCESS_MYSELF = 'MYSELF';
-    /**
-     * Only users in the same domain as the user who deployed the web app or
-     * executable can access it.
-     */
-    public const ACCESS_DOMAIN = 'DOMAIN';
-    /**
-     * Any logged in user can access the web app or executable.
-     */
-    public const ACCESS_ANYONE = 'ANYONE';
-    /**
-     * Any user, logged in or not, can access the web app or executable.
-     */
-    public const ACCESS_ANYONE_ANONYMOUS = 'ANYONE_ANONYMOUS';
-    /**
-     * Who has permission to run the API executable.
-     *
-     * @var string
-     */
-    public $access;
-    /**
-     * Who has permission to run the API executable.
-     *
-     * Accepted values: UNKNOWN_ACCESS, MYSELF, DOMAIN, ANYONE, ANYONE_ANONYMOUS
-     *
-     * @param self::ACCESS_* $access
-     */
-    public function setAccess($access)
+namespace Google\Service\Script {
+    class GoogleAppsScriptTypeExecutionApiConfig extends \Google\Model
     {
+        /**
+         * Default value, should not be used.
+         */
+        public const ACCESS_UNKNOWN_ACCESS = 'UNKNOWN_ACCESS';
+        /**
+         * Only the user who deployed the web app or executable can access it. Note
+         * that this is not necessarily the owner of the script project.
+         */
+        public const ACCESS_MYSELF = 'MYSELF';
+        /**
+         * Only users in the same domain as the user who deployed the web app or
+         * executable can access it.
+         */
+        public const ACCESS_DOMAIN = 'DOMAIN';
+        /**
+         * Any logged in user can access the web app or executable.
+         */
+        public const ACCESS_ANYONE = 'ANYONE';
+        /**
+         * Any user, logged in or not, can access the web app or executable.
+         */
+        public const ACCESS_ANYONE_ANONYMOUS = 'ANYONE_ANONYMOUS';
+        /**
+         * Who has permission to run the API executable.
+         *
+         * @var string
+         */
+        public $access;
+        /**
+         * Who has permission to run the API executable.
+         *
+         * Accepted values: UNKNOWN_ACCESS, MYSELF, DOMAIN, ANYONE, ANYONE_ANONYMOUS
+         *
+         * @param self::ACCESS_* $access
+         */
+        public function setAccess($access)
+        {
+        }
+        /**
+         * @return self::ACCESS_*
+         */
+        public function getAccess()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ACCESS_*
+     * Runtime class alias of \Google\Service\Script\GoogleAppsScriptTypeExecutionApiConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccess()
+    class Google_Service_Script_GoogleAppsScriptTypeExecutionApiConfig extends \Google\Service\Script\GoogleAppsScriptTypeExecutionApiConfig
     {
     }
 }

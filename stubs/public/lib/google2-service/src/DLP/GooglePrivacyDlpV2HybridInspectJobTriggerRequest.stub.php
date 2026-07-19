@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2HybridInspectJobTriggerRequest extends \Google\Model
-{
-    protected $hybridItemType = GooglePrivacyDlpV2HybridContentItem::class;
-    protected $hybridItemDataType = '';
-    /**
-     * The item to inspect.
-     *
-     * @param GooglePrivacyDlpV2HybridContentItem $hybridItem
-     */
-    public function setHybridItem(GooglePrivacyDlpV2HybridContentItem $hybridItem)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2HybridInspectJobTriggerRequest extends \Google\Model
     {
+        protected $hybridItemType = GooglePrivacyDlpV2HybridContentItem::class;
+        protected $hybridItemDataType = '';
+        /**
+         * The item to inspect.
+         *
+         * @param GooglePrivacyDlpV2HybridContentItem $hybridItem
+         */
+        public function setHybridItem(GooglePrivacyDlpV2HybridContentItem $hybridItem)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2HybridContentItem
+         */
+        public function getHybridItem()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2HybridContentItem
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2HybridInspectJobTriggerRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHybridItem()
+    class Google_Service_DLP_GooglePrivacyDlpV2HybridInspectJobTriggerRequest extends \Google\Service\DLP\GooglePrivacyDlpV2HybridInspectJobTriggerRequest
     {
     }
 }

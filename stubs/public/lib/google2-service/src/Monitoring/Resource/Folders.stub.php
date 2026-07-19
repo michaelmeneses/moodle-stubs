@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring\Resource;
-
-/**
- * The "folders" collection of methods.
- * Typical usage is:
- *  <code>
- *   $monitoringService = new Google\Service\Monitoring(...);
- *   $folders = $monitoringService->folders;
- *  </code>
- */
-class Folders extends \Google\Service\Resource
-{
+namespace Google\Service\Monitoring\Resource {
+    /**
+     * The "folders" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $monitoringService = new Google\Service\Monitoring(...);
+     *   $folders = $monitoringService->folders;
+     *  </code>
+     */
+    class Folders extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Monitoring\Resource\Folders registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Monitoring_Resource_Folders extends \Google\Service\Monitoring\Resource\Folders
+    {
+    }
 }

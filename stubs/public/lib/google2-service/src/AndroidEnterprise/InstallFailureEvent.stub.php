@@ -21,122 +21,131 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class InstallFailureEvent extends \Google\Model
-{
-    /**
-     * Used whenever no better reason for failure can be provided.
-     */
-    public const FAILURE_REASON_unknown = 'unknown';
-    /**
-     * Used when the installation timed out. This can cover a number of
-     * situations, for example when the device did not have connectivity at any
-     * point during the retry period, or if the device is OOM.
-     */
-    public const FAILURE_REASON_timeout = 'timeout';
-    /**
-     * The Android ID of the device. This field will always be present.
-     *
-     * @var string
-     */
-    public $deviceId;
-    /**
-     * Additional details on the failure if applicable.
-     *
-     * @var string
-     */
-    public $failureDetails;
-    /**
-     * The reason for the installation failure. This field will always be present.
-     *
-     * @var string
-     */
-    public $failureReason;
-    /**
-     * The id of the product (e.g. "app:com.google.android.gm") for which the
-     * install failure event occured. This field will always be present.
-     *
-     * @var string
-     */
-    public $productId;
-    /**
-     * The ID of the user. This field will always be present.
-     *
-     * @var string
-     */
-    public $userId;
-    /**
-     * The Android ID of the device. This field will always be present.
-     *
-     * @param string $deviceId
-     */
-    public function setDeviceId($deviceId)
+namespace Google\Service\AndroidEnterprise {
+    class InstallFailureEvent extends \Google\Model
     {
+        /**
+         * Used whenever no better reason for failure can be provided.
+         */
+        public const FAILURE_REASON_unknown = 'unknown';
+        /**
+         * Used when the installation timed out. This can cover a number of
+         * situations, for example when the device did not have connectivity at any
+         * point during the retry period, or if the device is OOM.
+         */
+        public const FAILURE_REASON_timeout = 'timeout';
+        /**
+         * The Android ID of the device. This field will always be present.
+         *
+         * @var string
+         */
+        public $deviceId;
+        /**
+         * Additional details on the failure if applicable.
+         *
+         * @var string
+         */
+        public $failureDetails;
+        /**
+         * The reason for the installation failure. This field will always be present.
+         *
+         * @var string
+         */
+        public $failureReason;
+        /**
+         * The id of the product (e.g. "app:com.google.android.gm") for which the
+         * install failure event occured. This field will always be present.
+         *
+         * @var string
+         */
+        public $productId;
+        /**
+         * The ID of the user. This field will always be present.
+         *
+         * @var string
+         */
+        public $userId;
+        /**
+         * The Android ID of the device. This field will always be present.
+         *
+         * @param string $deviceId
+         */
+        public function setDeviceId($deviceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeviceId()
+        {
+        }
+        /**
+         * Additional details on the failure if applicable.
+         *
+         * @param string $failureDetails
+         */
+        public function setFailureDetails($failureDetails)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFailureDetails()
+        {
+        }
+        /**
+         * The reason for the installation failure. This field will always be present.
+         *
+         * Accepted values: unknown, timeout
+         *
+         * @param self::FAILURE_REASON_* $failureReason
+         */
+        public function setFailureReason($failureReason)
+        {
+        }
+        /**
+         * @return self::FAILURE_REASON_*
+         */
+        public function getFailureReason()
+        {
+        }
+        /**
+         * The id of the product (e.g. "app:com.google.android.gm") for which the
+         * install failure event occured. This field will always be present.
+         *
+         * @param string $productId
+         */
+        public function setProductId($productId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductId()
+        {
+        }
+        /**
+         * The ID of the user. This field will always be present.
+         *
+         * @param string $userId
+         */
+        public function setUserId($userId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidEnterprise\InstallFailureEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceId()
-    {
-    }
-    /**
-     * Additional details on the failure if applicable.
-     *
-     * @param string $failureDetails
-     */
-    public function setFailureDetails($failureDetails)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFailureDetails()
-    {
-    }
-    /**
-     * The reason for the installation failure. This field will always be present.
-     *
-     * Accepted values: unknown, timeout
-     *
-     * @param self::FAILURE_REASON_* $failureReason
-     */
-    public function setFailureReason($failureReason)
-    {
-    }
-    /**
-     * @return self::FAILURE_REASON_*
-     */
-    public function getFailureReason()
-    {
-    }
-    /**
-     * The id of the product (e.g. "app:com.google.android.gm") for which the
-     * install failure event occured. This field will always be present.
-     *
-     * @param string $productId
-     */
-    public function setProductId($productId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductId()
-    {
-    }
-    /**
-     * The ID of the user. This field will always be present.
-     *
-     * @param string $userId
-     */
-    public function setUserId($userId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserId()
+    class Google_Service_AndroidEnterprise_InstallFailureEvent extends \Google\Service\AndroidEnterprise\InstallFailureEvent
     {
     }
 }

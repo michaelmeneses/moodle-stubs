@@ -21,38 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PubsubLite\Resource;
-
-/**
- * The "cursors" collection of methods.
- * Typical usage is:
- *  <code>
- *   $pubsubliteService = new Google\Service\PubsubLite(...);
- *   $cursors = $pubsubliteService->cursor_projects_locations_subscriptions_cursors;
- *  </code>
- */
-class CursorProjectsLocationsSubscriptionsCursors extends \Google\Service\Resource
-{
+namespace Google\Service\PubsubLite\Resource {
+    use Google\Service\PubsubLite\ListPartitionCursorsResponse;
     /**
-     * Returns all committed cursor information for a subscription.
-     * (cursors.listCursorProjectsLocationsSubscriptionsCursors)
-     *
-     * @param string $parent Required. The subscription for which to retrieve
-     * cursors. Structured like `projects/{project_number}/locations/{location}/subs
-     * criptions/{subscription_id}`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of cursors to return. The service
-     * may return fewer than this value. If unset or zero, all cursors for the
-     * parent will be returned.
-     * @opt_param string pageToken A page token, received from a previous
-     * `ListPartitionCursors` call. Provide this to retrieve the subsequent page.
-     * When paginating, all other parameters provided to `ListPartitionCursors` must
-     * match the call that provided the page token.
-     * @return ListPartitionCursorsResponse
-     * @throws \Google\Service\Exception
+     * The "cursors" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $pubsubliteService = new Google\Service\PubsubLite(...);
+     *   $cursors = $pubsubliteService->cursor_projects_locations_subscriptions_cursors;
+     *  </code>
      */
-    public function listCursorProjectsLocationsSubscriptionsCursors($parent, $optParams = [])
+    class CursorProjectsLocationsSubscriptionsCursors extends \Google\Service\Resource
+    {
+        /**
+         * Returns all committed cursor information for a subscription.
+         * (cursors.listCursorProjectsLocationsSubscriptionsCursors)
+         *
+         * @param string $parent Required. The subscription for which to retrieve
+         * cursors. Structured like `projects/{project_number}/locations/{location}/subs
+         * criptions/{subscription_id}`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of cursors to return. The service
+         * may return fewer than this value. If unset or zero, all cursors for the
+         * parent will be returned.
+         * @opt_param string pageToken A page token, received from a previous
+         * `ListPartitionCursors` call. Provide this to retrieve the subsequent page.
+         * When paginating, all other parameters provided to `ListPartitionCursors` must
+         * match the call that provided the page token.
+         * @return ListPartitionCursorsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listCursorProjectsLocationsSubscriptionsCursors($parent, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\PubsubLite\Resource\CursorProjectsLocationsSubscriptionsCursors registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_PubsubLite_Resource_CursorProjectsLocationsSubscriptionsCursors extends \Google\Service\PubsubLite\Resource\CursorProjectsLocationsSubscriptionsCursors
     {
     }
 }

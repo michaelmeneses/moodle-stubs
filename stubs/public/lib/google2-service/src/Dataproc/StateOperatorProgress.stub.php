@@ -21,200 +21,209 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class StateOperatorProgress extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $allRemovalsTimeMs;
-    /**
-     * @var string
-     */
-    public $allUpdatesTimeMs;
-    /**
-     * @var string
-     */
-    public $commitTimeMs;
-    /**
-     * @var string[]
-     */
-    public $customMetrics;
-    /**
-     * @var string
-     */
-    public $memoryUsedBytes;
-    /**
-     * @var string
-     */
-    public $numRowsDroppedByWatermark;
-    /**
-     * @var string
-     */
-    public $numRowsRemoved;
-    /**
-     * @var string
-     */
-    public $numRowsTotal;
-    /**
-     * @var string
-     */
-    public $numRowsUpdated;
-    /**
-     * @var string
-     */
-    public $numShufflePartitions;
-    /**
-     * @var string
-     */
-    public $numStateStoreInstances;
-    /**
-     * @var string
-     */
-    public $operatorName;
-    /**
-     * @param string $allRemovalsTimeMs
-     */
-    public function setAllRemovalsTimeMs($allRemovalsTimeMs)
+namespace Google\Service\Dataproc {
+    class StateOperatorProgress extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $allRemovalsTimeMs;
+        /**
+         * @var string
+         */
+        public $allUpdatesTimeMs;
+        /**
+         * @var string
+         */
+        public $commitTimeMs;
+        /**
+         * @var string[]
+         */
+        public $customMetrics;
+        /**
+         * @var string
+         */
+        public $memoryUsedBytes;
+        /**
+         * @var string
+         */
+        public $numRowsDroppedByWatermark;
+        /**
+         * @var string
+         */
+        public $numRowsRemoved;
+        /**
+         * @var string
+         */
+        public $numRowsTotal;
+        /**
+         * @var string
+         */
+        public $numRowsUpdated;
+        /**
+         * @var string
+         */
+        public $numShufflePartitions;
+        /**
+         * @var string
+         */
+        public $numStateStoreInstances;
+        /**
+         * @var string
+         */
+        public $operatorName;
+        /**
+         * @param string $allRemovalsTimeMs
+         */
+        public function setAllRemovalsTimeMs($allRemovalsTimeMs)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAllRemovalsTimeMs()
+        {
+        }
+        /**
+         * @param string $allUpdatesTimeMs
+         */
+        public function setAllUpdatesTimeMs($allUpdatesTimeMs)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAllUpdatesTimeMs()
+        {
+        }
+        /**
+         * @param string $commitTimeMs
+         */
+        public function setCommitTimeMs($commitTimeMs)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCommitTimeMs()
+        {
+        }
+        /**
+         * @param string[] $customMetrics
+         */
+        public function setCustomMetrics($customMetrics)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCustomMetrics()
+        {
+        }
+        /**
+         * @param string $memoryUsedBytes
+         */
+        public function setMemoryUsedBytes($memoryUsedBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMemoryUsedBytes()
+        {
+        }
+        /**
+         * @param string $numRowsDroppedByWatermark
+         */
+        public function setNumRowsDroppedByWatermark($numRowsDroppedByWatermark)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNumRowsDroppedByWatermark()
+        {
+        }
+        /**
+         * @param string $numRowsRemoved
+         */
+        public function setNumRowsRemoved($numRowsRemoved)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNumRowsRemoved()
+        {
+        }
+        /**
+         * @param string $numRowsTotal
+         */
+        public function setNumRowsTotal($numRowsTotal)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNumRowsTotal()
+        {
+        }
+        /**
+         * @param string $numRowsUpdated
+         */
+        public function setNumRowsUpdated($numRowsUpdated)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNumRowsUpdated()
+        {
+        }
+        /**
+         * @param string $numShufflePartitions
+         */
+        public function setNumShufflePartitions($numShufflePartitions)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNumShufflePartitions()
+        {
+        }
+        /**
+         * @param string $numStateStoreInstances
+         */
+        public function setNumStateStoreInstances($numStateStoreInstances)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNumStateStoreInstances()
+        {
+        }
+        /**
+         * @param string $operatorName
+         */
+        public function setOperatorName($operatorName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperatorName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\StateOperatorProgress registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllRemovalsTimeMs()
-    {
-    }
-    /**
-     * @param string $allUpdatesTimeMs
-     */
-    public function setAllUpdatesTimeMs($allUpdatesTimeMs)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAllUpdatesTimeMs()
-    {
-    }
-    /**
-     * @param string $commitTimeMs
-     */
-    public function setCommitTimeMs($commitTimeMs)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCommitTimeMs()
-    {
-    }
-    /**
-     * @param string[] $customMetrics
-     */
-    public function setCustomMetrics($customMetrics)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getCustomMetrics()
-    {
-    }
-    /**
-     * @param string $memoryUsedBytes
-     */
-    public function setMemoryUsedBytes($memoryUsedBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMemoryUsedBytes()
-    {
-    }
-    /**
-     * @param string $numRowsDroppedByWatermark
-     */
-    public function setNumRowsDroppedByWatermark($numRowsDroppedByWatermark)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNumRowsDroppedByWatermark()
-    {
-    }
-    /**
-     * @param string $numRowsRemoved
-     */
-    public function setNumRowsRemoved($numRowsRemoved)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNumRowsRemoved()
-    {
-    }
-    /**
-     * @param string $numRowsTotal
-     */
-    public function setNumRowsTotal($numRowsTotal)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNumRowsTotal()
-    {
-    }
-    /**
-     * @param string $numRowsUpdated
-     */
-    public function setNumRowsUpdated($numRowsUpdated)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNumRowsUpdated()
-    {
-    }
-    /**
-     * @param string $numShufflePartitions
-     */
-    public function setNumShufflePartitions($numShufflePartitions)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNumShufflePartitions()
-    {
-    }
-    /**
-     * @param string $numStateStoreInstances
-     */
-    public function setNumStateStoreInstances($numStateStoreInstances)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNumStateStoreInstances()
-    {
-    }
-    /**
-     * @param string $operatorName
-     */
-    public function setOperatorName($operatorName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOperatorName()
+    class Google_Service_Dataproc_StateOperatorProgress extends \Google\Service\Dataproc\StateOperatorProgress
     {
     }
 }

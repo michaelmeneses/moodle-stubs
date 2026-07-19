@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class OutlierStats extends \Google\Model
-{
-    /**
-     * Number of values that are larger than the upper bound of the largest
-     * bucket.
-     *
-     * @var string
-     */
-    public $overflowCount;
-    /**
-     * Mean of values in the overflow bucket.
-     *
-     * @var 
-     */
-    public $overflowMean;
-    /**
-     * Number of values that are smaller than the lower bound of the smallest
-     * bucket.
-     *
-     * @var string
-     */
-    public $underflowCount;
-    /**
-     * Mean of values in the undeflow bucket.
-     *
-     * @var 
-     */
-    public $underflowMean;
-    /**
-     * Number of values that are larger than the upper bound of the largest
-     * bucket.
-     *
-     * @param string $overflowCount
-     */
-    public function setOverflowCount($overflowCount)
+namespace Google\Service\Dataflow {
+    class OutlierStats extends \Google\Model
     {
+        /**
+         * Number of values that are larger than the upper bound of the largest
+         * bucket.
+         *
+         * @var string
+         */
+        public $overflowCount;
+        /**
+         * Mean of values in the overflow bucket.
+         *
+         * @var 
+         */
+        public $overflowMean;
+        /**
+         * Number of values that are smaller than the lower bound of the smallest
+         * bucket.
+         *
+         * @var string
+         */
+        public $underflowCount;
+        /**
+         * Mean of values in the undeflow bucket.
+         *
+         * @var 
+         */
+        public $underflowMean;
+        /**
+         * Number of values that are larger than the upper bound of the largest
+         * bucket.
+         *
+         * @param string $overflowCount
+         */
+        public function setOverflowCount($overflowCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOverflowCount()
+        {
+        }
+        public function setOverflowMean($overflowMean)
+        {
+        }
+        public function getOverflowMean()
+        {
+        }
+        /**
+         * Number of values that are smaller than the lower bound of the smallest
+         * bucket.
+         *
+         * @param string $underflowCount
+         */
+        public function setUnderflowCount($underflowCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUnderflowCount()
+        {
+        }
+        public function setUnderflowMean($underflowMean)
+        {
+        }
+        public function getUnderflowMean()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\OutlierStats registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOverflowCount()
-    {
-    }
-    public function setOverflowMean($overflowMean)
-    {
-    }
-    public function getOverflowMean()
-    {
-    }
-    /**
-     * Number of values that are smaller than the lower bound of the smallest
-     * bucket.
-     *
-     * @param string $underflowCount
-     */
-    public function setUnderflowCount($underflowCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUnderflowCount()
-    {
-    }
-    public function setUnderflowMean($underflowMean)
-    {
-    }
-    public function getUnderflowMean()
+    class Google_Service_Dataflow_OutlierStats extends \Google\Service\Dataflow\OutlierStats
     {
     }
 }

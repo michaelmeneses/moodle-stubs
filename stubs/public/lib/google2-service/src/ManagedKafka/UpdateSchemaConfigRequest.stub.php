@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedKafka;
-
-class UpdateSchemaConfigRequest extends \Google\Model
-{
-    /**
-     * No compatibility check.
-     */
-    public const COMPATIBILITY_NONE = 'NONE';
-    /**
-     * Backwards compatible with the most recent version.
-     */
-    public const COMPATIBILITY_BACKWARD = 'BACKWARD';
-    /**
-     * Backwards compatible with all previous versions.
-     */
-    public const COMPATIBILITY_BACKWARD_TRANSITIVE = 'BACKWARD_TRANSITIVE';
-    /**
-     * Forwards compatible with the most recent version.
-     */
-    public const COMPATIBILITY_FORWARD = 'FORWARD';
-    /**
-     * Forwards compatible with all previous versions.
-     */
-    public const COMPATIBILITY_FORWARD_TRANSITIVE = 'FORWARD_TRANSITIVE';
-    /**
-     * Backwards and forwards compatible with the most recent version.
-     */
-    public const COMPATIBILITY_FULL = 'FULL';
-    /**
-     * Backwards and forwards compatible with all previous versions.
-     */
-    public const COMPATIBILITY_FULL_TRANSITIVE = 'FULL_TRANSITIVE';
-    /**
-     * Required. The compatibility type of the schemas. Cannot be unset for a
-     * SchemaRegistry-level SchemaConfig. If unset on a SchemaSubject-level
-     * SchemaConfig, removes the compatibility field for the SchemaConfig.
-     *
-     * @var string
-     */
-    public $compatibility;
-    /**
-     * Optional. If true, the schema will be normalized before being stored or
-     * looked up. The default is false. Cannot be unset for a SchemaRegistry-level
-     * SchemaConfig. If unset on a SchemaSubject-level SchemaConfig, removes the
-     * normalize field for the SchemaConfig.
-     *
-     * @var bool
-     */
-    public $normalize;
-    /**
-     * Required. The compatibility type of the schemas. Cannot be unset for a
-     * SchemaRegistry-level SchemaConfig. If unset on a SchemaSubject-level
-     * SchemaConfig, removes the compatibility field for the SchemaConfig.
-     *
-     * Accepted values: NONE, BACKWARD, BACKWARD_TRANSITIVE, FORWARD,
-     * FORWARD_TRANSITIVE, FULL, FULL_TRANSITIVE
-     *
-     * @param self::COMPATIBILITY_* $compatibility
-     */
-    public function setCompatibility($compatibility)
+namespace Google\Service\ManagedKafka {
+    class UpdateSchemaConfigRequest extends \Google\Model
     {
+        /**
+         * No compatibility check.
+         */
+        public const COMPATIBILITY_NONE = 'NONE';
+        /**
+         * Backwards compatible with the most recent version.
+         */
+        public const COMPATIBILITY_BACKWARD = 'BACKWARD';
+        /**
+         * Backwards compatible with all previous versions.
+         */
+        public const COMPATIBILITY_BACKWARD_TRANSITIVE = 'BACKWARD_TRANSITIVE';
+        /**
+         * Forwards compatible with the most recent version.
+         */
+        public const COMPATIBILITY_FORWARD = 'FORWARD';
+        /**
+         * Forwards compatible with all previous versions.
+         */
+        public const COMPATIBILITY_FORWARD_TRANSITIVE = 'FORWARD_TRANSITIVE';
+        /**
+         * Backwards and forwards compatible with the most recent version.
+         */
+        public const COMPATIBILITY_FULL = 'FULL';
+        /**
+         * Backwards and forwards compatible with all previous versions.
+         */
+        public const COMPATIBILITY_FULL_TRANSITIVE = 'FULL_TRANSITIVE';
+        /**
+         * Required. The compatibility type of the schemas. Cannot be unset for a
+         * SchemaRegistry-level SchemaConfig. If unset on a SchemaSubject-level
+         * SchemaConfig, removes the compatibility field for the SchemaConfig.
+         *
+         * @var string
+         */
+        public $compatibility;
+        /**
+         * Optional. If true, the schema will be normalized before being stored or
+         * looked up. The default is false. Cannot be unset for a SchemaRegistry-level
+         * SchemaConfig. If unset on a SchemaSubject-level SchemaConfig, removes the
+         * normalize field for the SchemaConfig.
+         *
+         * @var bool
+         */
+        public $normalize;
+        /**
+         * Required. The compatibility type of the schemas. Cannot be unset for a
+         * SchemaRegistry-level SchemaConfig. If unset on a SchemaSubject-level
+         * SchemaConfig, removes the compatibility field for the SchemaConfig.
+         *
+         * Accepted values: NONE, BACKWARD, BACKWARD_TRANSITIVE, FORWARD,
+         * FORWARD_TRANSITIVE, FULL, FULL_TRANSITIVE
+         *
+         * @param self::COMPATIBILITY_* $compatibility
+         */
+        public function setCompatibility($compatibility)
+        {
+        }
+        /**
+         * @return self::COMPATIBILITY_*
+         */
+        public function getCompatibility()
+        {
+        }
+        /**
+         * Optional. If true, the schema will be normalized before being stored or
+         * looked up. The default is false. Cannot be unset for a SchemaRegistry-level
+         * SchemaConfig. If unset on a SchemaSubject-level SchemaConfig, removes the
+         * normalize field for the SchemaConfig.
+         *
+         * @param bool $normalize
+         */
+        public function setNormalize($normalize)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getNormalize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::COMPATIBILITY_*
+     * Runtime class alias of \Google\Service\ManagedKafka\UpdateSchemaConfigRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCompatibility()
-    {
-    }
-    /**
-     * Optional. If true, the schema will be normalized before being stored or
-     * looked up. The default is false. Cannot be unset for a SchemaRegistry-level
-     * SchemaConfig. If unset on a SchemaSubject-level SchemaConfig, removes the
-     * normalize field for the SchemaConfig.
-     *
-     * @param bool $normalize
-     */
-    public function setNormalize($normalize)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getNormalize()
+    class Google_Service_ManagedKafka_UpdateSchemaConfigRequest extends \Google\Service\ManagedKafka\UpdateSchemaConfigRequest
     {
     }
 }

@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class StatefulPolicy extends \Google\Model
-{
-    protected $preservedStateType = StatefulPolicyPreservedState::class;
-    protected $preservedStateDataType = '';
-    /**
-     * @param StatefulPolicyPreservedState $preservedState
-     */
-    public function setPreservedState(StatefulPolicyPreservedState $preservedState)
+namespace Google\Service\Compute {
+    class StatefulPolicy extends \Google\Model
     {
+        protected $preservedStateType = StatefulPolicyPreservedState::class;
+        protected $preservedStateDataType = '';
+        /**
+         * @param StatefulPolicyPreservedState $preservedState
+         */
+        public function setPreservedState(StatefulPolicyPreservedState $preservedState)
+        {
+        }
+        /**
+         * @return StatefulPolicyPreservedState
+         */
+        public function getPreservedState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return StatefulPolicyPreservedState
+     * Runtime class alias of \Google\Service\Compute\StatefulPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPreservedState()
+    class Google_Service_Compute_StatefulPolicy extends \Google\Service\Compute\StatefulPolicy
     {
     }
 }

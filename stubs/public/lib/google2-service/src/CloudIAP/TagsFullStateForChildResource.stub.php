@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIAP;
-
-class TagsFullStateForChildResource extends \Google\Model
-{
-    /**
-     * If TagsFullStateForChildResource is initialized, the values in this field
-     * represent all the tags in the next state for the child resource. Only one
-     * type of tags reference (numeric or namespace) is required to be passed.
-     * IMPORTANT: This field should only be used when the target resource IAM
-     * policy name is UNKNOWN and the resource's parent IAM policy name is being
-     * passed in the request.
-     *
-     * @var string[]
-     */
-    public $tags;
-    /**
-     * If TagsFullStateForChildResource is initialized, the values in this field
-     * represent all the tags in the next state for the child resource. Only one
-     * type of tags reference (numeric or namespace) is required to be passed.
-     * IMPORTANT: This field should only be used when the target resource IAM
-     * policy name is UNKNOWN and the resource's parent IAM policy name is being
-     * passed in the request.
-     *
-     * @param string[] $tags
-     */
-    public function setTags($tags)
+namespace Google\Service\CloudIAP {
+    class TagsFullStateForChildResource extends \Google\Model
     {
+        /**
+         * If TagsFullStateForChildResource is initialized, the values in this field
+         * represent all the tags in the next state for the child resource. Only one
+         * type of tags reference (numeric or namespace) is required to be passed.
+         * IMPORTANT: This field should only be used when the target resource IAM
+         * policy name is UNKNOWN and the resource's parent IAM policy name is being
+         * passed in the request.
+         *
+         * @var string[]
+         */
+        public $tags;
+        /**
+         * If TagsFullStateForChildResource is initialized, the values in this field
+         * represent all the tags in the next state for the child resource. Only one
+         * type of tags reference (numeric or namespace) is required to be passed.
+         * IMPORTANT: This field should only be used when the target resource IAM
+         * policy name is UNKNOWN and the resource's parent IAM policy name is being
+         * passed in the request.
+         *
+         * @param string[] $tags
+         */
+        public function setTags($tags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTags()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudIAP\TagsFullStateForChildResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTags()
+    class Google_Service_CloudIAP_TagsFullStateForChildResource extends \Google\Service\CloudIAP\TagsFullStateForChildResource
     {
     }
 }

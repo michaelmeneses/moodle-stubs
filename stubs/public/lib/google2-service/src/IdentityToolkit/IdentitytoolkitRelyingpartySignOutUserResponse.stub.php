@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\IdentityToolkit;
-
-class IdentitytoolkitRelyingpartySignOutUserResponse extends \Google\Model
-{
-    /**
-     * The local ID of the user.
-     *
-     * @var string
-     */
-    public $localId;
-    /**
-     * The local ID of the user.
-     *
-     * @param string $localId
-     */
-    public function setLocalId($localId)
+namespace Google\Service\IdentityToolkit {
+    class IdentitytoolkitRelyingpartySignOutUserResponse extends \Google\Model
     {
+        /**
+         * The local ID of the user.
+         *
+         * @var string
+         */
+        public $localId;
+        /**
+         * The local ID of the user.
+         *
+         * @param string $localId
+         */
+        public function setLocalId($localId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocalId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartySignOutUserResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocalId()
+    class Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartySignOutUserResponse extends \Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartySignOutUserResponse
     {
     }
 }

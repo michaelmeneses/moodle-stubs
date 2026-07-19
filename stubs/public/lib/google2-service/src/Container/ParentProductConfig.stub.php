@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class ParentProductConfig extends \Google\Model
-{
-    /**
-     * Labels contain the configuration of the parent product.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Name of the parent product associated with the cluster.
-     *
-     * @var string
-     */
-    public $productName;
-    /**
-     * Labels contain the configuration of the parent product.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
+namespace Google\Service\Container {
+    class ParentProductConfig extends \Google\Model
     {
+        /**
+         * Labels contain the configuration of the parent product.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Name of the parent product associated with the cluster.
+         *
+         * @var string
+         */
+        public $productName;
+        /**
+         * Labels contain the configuration of the parent product.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Name of the parent product associated with the cluster.
+         *
+         * @param string $productName
+         */
+        public function setProductName($productName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Container\ParentProductConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabels()
-    {
-    }
-    /**
-     * Name of the parent product associated with the cluster.
-     *
-     * @param string $productName
-     */
-    public function setProductName($productName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductName()
+    class Google_Service_Container_ParentProductConfig extends \Google\Service\Container\ParentProductConfig
     {
     }
 }

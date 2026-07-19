@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1KeyAliasReference extends \Google\Model
-{
-    /**
-     * Alias ID. Must exist in the keystore referred to by the reference.
-     *
-     * @var string
-     */
-    public $aliasId;
-    /**
-     * Reference name in the following format:
-     * `organizations/{org}/environments/{env}/references/{reference}`
-     *
-     * @var string
-     */
-    public $reference;
-    /**
-     * Alias ID. Must exist in the keystore referred to by the reference.
-     *
-     * @param string $aliasId
-     */
-    public function setAliasId($aliasId)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1KeyAliasReference extends \Google\Model
     {
+        /**
+         * Alias ID. Must exist in the keystore referred to by the reference.
+         *
+         * @var string
+         */
+        public $aliasId;
+        /**
+         * Reference name in the following format:
+         * `organizations/{org}/environments/{env}/references/{reference}`
+         *
+         * @var string
+         */
+        public $reference;
+        /**
+         * Alias ID. Must exist in the keystore referred to by the reference.
+         *
+         * @param string $aliasId
+         */
+        public function setAliasId($aliasId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAliasId()
+        {
+        }
+        /**
+         * Reference name in the following format:
+         * `organizations/{org}/environments/{env}/references/{reference}`
+         *
+         * @param string $reference
+         */
+        public function setReference($reference)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReference()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1KeyAliasReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAliasId()
-    {
-    }
-    /**
-     * Reference name in the following format:
-     * `organizations/{org}/environments/{env}/references/{reference}`
-     *
-     * @param string $reference
-     */
-    public function setReference($reference)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReference()
+    class Google_Service_Apigee_GoogleCloudApigeeV1KeyAliasReference extends \Google\Service\Apigee\GoogleCloudApigeeV1KeyAliasReference
     {
     }
 }

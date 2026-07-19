@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class SuggestedDocumentStyle extends \Google\Model
-{
-    protected $documentStyleType = DocumentStyle::class;
-    protected $documentStyleDataType = '';
-    protected $documentStyleSuggestionStateType = DocumentStyleSuggestionState::class;
-    protected $documentStyleSuggestionStateDataType = '';
-    /**
-     * A DocumentStyle that only includes the changes made in this suggestion.
-     * This can be used along with the document_style_suggestion_state to see
-     * which fields have changed and their new values.
-     *
-     * @param DocumentStyle $documentStyle
-     */
-    public function setDocumentStyle(DocumentStyle $documentStyle)
+namespace Google\Service\Docs {
+    class SuggestedDocumentStyle extends \Google\Model
     {
+        protected $documentStyleType = DocumentStyle::class;
+        protected $documentStyleDataType = '';
+        protected $documentStyleSuggestionStateType = DocumentStyleSuggestionState::class;
+        protected $documentStyleSuggestionStateDataType = '';
+        /**
+         * A DocumentStyle that only includes the changes made in this suggestion.
+         * This can be used along with the document_style_suggestion_state to see
+         * which fields have changed and their new values.
+         *
+         * @param DocumentStyle $documentStyle
+         */
+        public function setDocumentStyle(DocumentStyle $documentStyle)
+        {
+        }
+        /**
+         * @return DocumentStyle
+         */
+        public function getDocumentStyle()
+        {
+        }
+        /**
+         * A mask that indicates which of the fields on the base DocumentStyle have
+         * been changed in this suggestion.
+         *
+         * @param DocumentStyleSuggestionState $documentStyleSuggestionState
+         */
+        public function setDocumentStyleSuggestionState(DocumentStyleSuggestionState $documentStyleSuggestionState)
+        {
+        }
+        /**
+         * @return DocumentStyleSuggestionState
+         */
+        public function getDocumentStyleSuggestionState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DocumentStyle
+     * Runtime class alias of \Google\Service\Docs\SuggestedDocumentStyle registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocumentStyle()
-    {
-    }
-    /**
-     * A mask that indicates which of the fields on the base DocumentStyle have
-     * been changed in this suggestion.
-     *
-     * @param DocumentStyleSuggestionState $documentStyleSuggestionState
-     */
-    public function setDocumentStyleSuggestionState(DocumentStyleSuggestionState $documentStyleSuggestionState)
-    {
-    }
-    /**
-     * @return DocumentStyleSuggestionState
-     */
-    public function getDocumentStyleSuggestionState()
+    class Google_Service_Docs_SuggestedDocumentStyle extends \Google\Service\Docs\SuggestedDocumentStyle
     {
     }
 }

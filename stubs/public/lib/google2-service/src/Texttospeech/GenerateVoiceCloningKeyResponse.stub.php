@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Texttospeech;
-
-class GenerateVoiceCloningKeyResponse extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $voiceCloningKey;
-    /**
-     * @param string
-     */
-    public function setVoiceCloningKey($voiceCloningKey)
+namespace Google\Service\Texttospeech {
+    class GenerateVoiceCloningKeyResponse extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $voiceCloningKey;
+        /**
+         * @param string
+         */
+        public function setVoiceCloningKey($voiceCloningKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVoiceCloningKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Texttospeech\GenerateVoiceCloningKeyResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVoiceCloningKey()
+    class Google_Service_Texttospeech_GenerateVoiceCloningKeyResponse extends \Google\Service\Texttospeech\GenerateVoiceCloningKeyResponse
     {
     }
 }

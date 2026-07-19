@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class EnterpriseTopazSidekickMeetingNotesCardRequest extends \Google\Collection
-{
-    protected $collection_key = 'canCreateFor';
-    /**
-     * Who are the meeting notes created for.
-     *
-     * @var string[]
-     */
-    public $canCreateFor;
-    protected $errorType = EnterpriseTopazSidekickMeetingNotesCardError::class;
-    protected $errorDataType = '';
-    protected $eventType = EnterpriseTopazSidekickAgendaEntry::class;
-    protected $eventDataType = '';
-    /**
-     * Who are the meeting notes created for.
-     *
-     * @param string[] $canCreateFor
-     */
-    public function setCanCreateFor($canCreateFor)
+namespace Google\Service\CloudSearch {
+    class EnterpriseTopazSidekickMeetingNotesCardRequest extends \Google\Collection
     {
+        protected $collection_key = 'canCreateFor';
+        /**
+         * Who are the meeting notes created for.
+         *
+         * @var string[]
+         */
+        public $canCreateFor;
+        protected $errorType = EnterpriseTopazSidekickMeetingNotesCardError::class;
+        protected $errorDataType = '';
+        protected $eventType = EnterpriseTopazSidekickAgendaEntry::class;
+        protected $eventDataType = '';
+        /**
+         * Who are the meeting notes created for.
+         *
+         * @param string[] $canCreateFor
+         */
+        public function setCanCreateFor($canCreateFor)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCanCreateFor()
+        {
+        }
+        /**
+         * The error and reason if known error occured.
+         *
+         * @param EnterpriseTopazSidekickMeetingNotesCardError $error
+         */
+        public function setError(EnterpriseTopazSidekickMeetingNotesCardError $error)
+        {
+        }
+        /**
+         * @return EnterpriseTopazSidekickMeetingNotesCardError
+         */
+        public function getError()
+        {
+        }
+        /**
+         * The event to request meeting notes creation
+         *
+         * @param EnterpriseTopazSidekickAgendaEntry $event
+         */
+        public function setEvent(EnterpriseTopazSidekickAgendaEntry $event)
+        {
+        }
+        /**
+         * @return EnterpriseTopazSidekickAgendaEntry
+         */
+        public function getEvent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudSearch\EnterpriseTopazSidekickMeetingNotesCardRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCanCreateFor()
-    {
-    }
-    /**
-     * The error and reason if known error occured.
-     *
-     * @param EnterpriseTopazSidekickMeetingNotesCardError $error
-     */
-    public function setError(EnterpriseTopazSidekickMeetingNotesCardError $error)
-    {
-    }
-    /**
-     * @return EnterpriseTopazSidekickMeetingNotesCardError
-     */
-    public function getError()
-    {
-    }
-    /**
-     * The event to request meeting notes creation
-     *
-     * @param EnterpriseTopazSidekickAgendaEntry $event
-     */
-    public function setEvent(EnterpriseTopazSidekickAgendaEntry $event)
-    {
-    }
-    /**
-     * @return EnterpriseTopazSidekickAgendaEntry
-     */
-    public function getEvent()
+    class Google_Service_CloudSearch_EnterpriseTopazSidekickMeetingNotesCardRequest extends \Google\Service\CloudSearch\EnterpriseTopazSidekickMeetingNotesCardRequest
     {
     }
 }

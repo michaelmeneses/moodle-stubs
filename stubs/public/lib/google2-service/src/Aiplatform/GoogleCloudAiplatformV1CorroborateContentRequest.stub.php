@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1CorroborateContentRequest extends \Google\Collection
-{
-    protected $collection_key = 'facts';
-    protected $contentType = GoogleCloudAiplatformV1Content::class;
-    protected $contentDataType = '';
-    protected $factsType = GoogleCloudAiplatformV1Fact::class;
-    protected $factsDataType = 'array';
-    protected $parametersType = GoogleCloudAiplatformV1CorroborateContentRequestParameters::class;
-    protected $parametersDataType = '';
-    /**
-     * Optional. Input content to corroborate, only text format is supported for
-     * now.
-     *
-     * @param GoogleCloudAiplatformV1Content $content
-     */
-    public function setContent(GoogleCloudAiplatformV1Content $content)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1CorroborateContentRequest extends \Google\Collection
     {
+        protected $collection_key = 'facts';
+        protected $contentType = GoogleCloudAiplatformV1Content::class;
+        protected $contentDataType = '';
+        protected $factsType = GoogleCloudAiplatformV1Fact::class;
+        protected $factsDataType = 'array';
+        protected $parametersType = GoogleCloudAiplatformV1CorroborateContentRequestParameters::class;
+        protected $parametersDataType = '';
+        /**
+         * Optional. Input content to corroborate, only text format is supported for
+         * now.
+         *
+         * @param GoogleCloudAiplatformV1Content $content
+         */
+        public function setContent(GoogleCloudAiplatformV1Content $content)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Content
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * Optional. Facts used to generate the text can also be used to corroborate
+         * the text.
+         *
+         * @param GoogleCloudAiplatformV1Fact[] $facts
+         */
+        public function setFacts($facts)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Fact[]
+         */
+        public function getFacts()
+        {
+        }
+        /**
+         * Optional. Parameters that can be set to override default settings per
+         * request.
+         *
+         * @param GoogleCloudAiplatformV1CorroborateContentRequestParameters $parameters
+         */
+        public function setParameters(GoogleCloudAiplatformV1CorroborateContentRequestParameters $parameters)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1CorroborateContentRequestParameters
+         */
+        public function getParameters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1Content
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1CorroborateContentRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
-    {
-    }
-    /**
-     * Optional. Facts used to generate the text can also be used to corroborate
-     * the text.
-     *
-     * @param GoogleCloudAiplatformV1Fact[] $facts
-     */
-    public function setFacts($facts)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1Fact[]
-     */
-    public function getFacts()
-    {
-    }
-    /**
-     * Optional. Parameters that can be set to override default settings per
-     * request.
-     *
-     * @param GoogleCloudAiplatformV1CorroborateContentRequestParameters $parameters
-     */
-    public function setParameters(GoogleCloudAiplatformV1CorroborateContentRequestParameters $parameters)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1CorroborateContentRequestParameters
-     */
-    public function getParameters()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1CorroborateContentRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1CorroborateContentRequest
     {
     }
 }

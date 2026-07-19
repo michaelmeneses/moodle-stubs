@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class NetworkConfiguration extends \Google\Model
-{
-    protected $downRuleType = TrafficRule::class;
-    protected $downRuleDataType = '';
-    /**
-     * The unique opaque id for this network traffic configuration.
-     *
-     * @var string
-     */
-    public $id;
-    protected $upRuleType = TrafficRule::class;
-    protected $upRuleDataType = '';
-    /**
-     * The emulation rule applying to the download traffic.
-     *
-     * @param TrafficRule $downRule
-     */
-    public function setDownRule(TrafficRule $downRule)
+namespace Google\Service\Testing {
+    class NetworkConfiguration extends \Google\Model
     {
+        protected $downRuleType = TrafficRule::class;
+        protected $downRuleDataType = '';
+        /**
+         * The unique opaque id for this network traffic configuration.
+         *
+         * @var string
+         */
+        public $id;
+        protected $upRuleType = TrafficRule::class;
+        protected $upRuleDataType = '';
+        /**
+         * The emulation rule applying to the download traffic.
+         *
+         * @param TrafficRule $downRule
+         */
+        public function setDownRule(TrafficRule $downRule)
+        {
+        }
+        /**
+         * @return TrafficRule
+         */
+        public function getDownRule()
+        {
+        }
+        /**
+         * The unique opaque id for this network traffic configuration.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * The emulation rule applying to the upload traffic.
+         *
+         * @param TrafficRule $upRule
+         */
+        public function setUpRule(TrafficRule $upRule)
+        {
+        }
+        /**
+         * @return TrafficRule
+         */
+        public function getUpRule()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TrafficRule
+     * Runtime class alias of \Google\Service\Testing\NetworkConfiguration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDownRule()
-    {
-    }
-    /**
-     * The unique opaque id for this network traffic configuration.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * The emulation rule applying to the upload traffic.
-     *
-     * @param TrafficRule $upRule
-     */
-    public function setUpRule(TrafficRule $upRule)
-    {
-    }
-    /**
-     * @return TrafficRule
-     */
-    public function getUpRule()
+    class Google_Service_Testing_NetworkConfiguration extends \Google\Service\Testing\NetworkConfiguration
     {
     }
 }

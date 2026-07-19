@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class StartActivityNotFound extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $action;
-    /**
-     * @var string
-     */
-    public $uri;
-    /**
-     * @param string $action
-     */
-    public function setAction($action)
+namespace Google\Service\ToolResults {
+    class StartActivityNotFound extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $action;
+        /**
+         * @var string
+         */
+        public $uri;
+        /**
+         * @param string $action
+         */
+        public function setAction($action)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAction()
+        {
+        }
+        /**
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ToolResults\StartActivityNotFound registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAction()
-    {
-    }
-    /**
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_ToolResults_StartActivityNotFound extends \Google\Service\ToolResults\StartActivityNotFound
     {
     }
 }

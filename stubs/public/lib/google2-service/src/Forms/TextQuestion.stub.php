@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Forms;
-
-class TextQuestion extends \Google\Model
-{
-    /**
-     * Whether the question is a paragraph question or not. If not, the question
-     * is a short text question.
-     *
-     * @var bool
-     */
-    public $paragraph;
-    /**
-     * Whether the question is a paragraph question or not. If not, the question
-     * is a short text question.
-     *
-     * @param bool $paragraph
-     */
-    public function setParagraph($paragraph)
+namespace Google\Service\Forms {
+    class TextQuestion extends \Google\Model
     {
+        /**
+         * Whether the question is a paragraph question or not. If not, the question
+         * is a short text question.
+         *
+         * @var bool
+         */
+        public $paragraph;
+        /**
+         * Whether the question is a paragraph question or not. If not, the question
+         * is a short text question.
+         *
+         * @param bool $paragraph
+         */
+        public function setParagraph($paragraph)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getParagraph()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Forms\TextQuestion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParagraph()
+    class Google_Service_Forms_TextQuestion extends \Google\Service\Forms\TextQuestion
     {
     }
 }

@@ -21,144 +21,153 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class Region extends \Google\Model
-{
-    /**
-     * The display name of the region.
-     *
-     * @var string
-     */
-    public $displayName;
-    protected $geotargetAreaType = RegionGeoTargetArea::class;
-    protected $geotargetAreaDataType = '';
-    /**
-     * Output only. Immutable. Merchant that owns the region.
-     *
-     * @var string
-     */
-    public $merchantId;
-    protected $postalCodeAreaType = RegionPostalCodeArea::class;
-    protected $postalCodeAreaDataType = '';
-    /**
-     * Output only. Immutable. The ID uniquely identifying each region.
-     *
-     * @var string
-     */
-    public $regionId;
-    /**
-     * Output only. Indicates if the region is eligible to use in the Regional
-     * Inventory configuration.
-     *
-     * @var bool
-     */
-    public $regionalInventoryEligible;
-    /**
-     * Output only. Indicates if the region is eligible to use in the Shipping
-     * Services configuration.
-     *
-     * @var bool
-     */
-    public $shippingEligible;
-    /**
-     * The display name of the region.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\ShoppingContent {
+    class Region extends \Google\Model
     {
+        /**
+         * The display name of the region.
+         *
+         * @var string
+         */
+        public $displayName;
+        protected $geotargetAreaType = RegionGeoTargetArea::class;
+        protected $geotargetAreaDataType = '';
+        /**
+         * Output only. Immutable. Merchant that owns the region.
+         *
+         * @var string
+         */
+        public $merchantId;
+        protected $postalCodeAreaType = RegionPostalCodeArea::class;
+        protected $postalCodeAreaDataType = '';
+        /**
+         * Output only. Immutable. The ID uniquely identifying each region.
+         *
+         * @var string
+         */
+        public $regionId;
+        /**
+         * Output only. Indicates if the region is eligible to use in the Regional
+         * Inventory configuration.
+         *
+         * @var bool
+         */
+        public $regionalInventoryEligible;
+        /**
+         * Output only. Indicates if the region is eligible to use in the Shipping
+         * Services configuration.
+         *
+         * @var bool
+         */
+        public $shippingEligible;
+        /**
+         * The display name of the region.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * A list of geotargets that defines the region area.
+         *
+         * @param RegionGeoTargetArea $geotargetArea
+         */
+        public function setGeotargetArea(RegionGeoTargetArea $geotargetArea)
+        {
+        }
+        /**
+         * @return RegionGeoTargetArea
+         */
+        public function getGeotargetArea()
+        {
+        }
+        /**
+         * Output only. Immutable. Merchant that owns the region.
+         *
+         * @param string $merchantId
+         */
+        public function setMerchantId($merchantId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMerchantId()
+        {
+        }
+        /**
+         * A list of postal codes that defines the region area.
+         *
+         * @param RegionPostalCodeArea $postalCodeArea
+         */
+        public function setPostalCodeArea(RegionPostalCodeArea $postalCodeArea)
+        {
+        }
+        /**
+         * @return RegionPostalCodeArea
+         */
+        public function getPostalCodeArea()
+        {
+        }
+        /**
+         * Output only. Immutable. The ID uniquely identifying each region.
+         *
+         * @param string $regionId
+         */
+        public function setRegionId($regionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegionId()
+        {
+        }
+        /**
+         * Output only. Indicates if the region is eligible to use in the Regional
+         * Inventory configuration.
+         *
+         * @param bool $regionalInventoryEligible
+         */
+        public function setRegionalInventoryEligible($regionalInventoryEligible)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRegionalInventoryEligible()
+        {
+        }
+        /**
+         * Output only. Indicates if the region is eligible to use in the Shipping
+         * Services configuration.
+         *
+         * @param bool $shippingEligible
+         */
+        public function setShippingEligible($shippingEligible)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getShippingEligible()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\Region registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * A list of geotargets that defines the region area.
-     *
-     * @param RegionGeoTargetArea $geotargetArea
-     */
-    public function setGeotargetArea(RegionGeoTargetArea $geotargetArea)
-    {
-    }
-    /**
-     * @return RegionGeoTargetArea
-     */
-    public function getGeotargetArea()
-    {
-    }
-    /**
-     * Output only. Immutable. Merchant that owns the region.
-     *
-     * @param string $merchantId
-     */
-    public function setMerchantId($merchantId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMerchantId()
-    {
-    }
-    /**
-     * A list of postal codes that defines the region area.
-     *
-     * @param RegionPostalCodeArea $postalCodeArea
-     */
-    public function setPostalCodeArea(RegionPostalCodeArea $postalCodeArea)
-    {
-    }
-    /**
-     * @return RegionPostalCodeArea
-     */
-    public function getPostalCodeArea()
-    {
-    }
-    /**
-     * Output only. Immutable. The ID uniquely identifying each region.
-     *
-     * @param string $regionId
-     */
-    public function setRegionId($regionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegionId()
-    {
-    }
-    /**
-     * Output only. Indicates if the region is eligible to use in the Regional
-     * Inventory configuration.
-     *
-     * @param bool $regionalInventoryEligible
-     */
-    public function setRegionalInventoryEligible($regionalInventoryEligible)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getRegionalInventoryEligible()
-    {
-    }
-    /**
-     * Output only. Indicates if the region is eligible to use in the Shipping
-     * Services configuration.
-     *
-     * @param bool $shippingEligible
-     */
-    public function setShippingEligible($shippingEligible)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getShippingEligible()
+    class Google_Service_ShoppingContent_Region extends \Google\Service\ShoppingContent\Region
     {
     }
 }

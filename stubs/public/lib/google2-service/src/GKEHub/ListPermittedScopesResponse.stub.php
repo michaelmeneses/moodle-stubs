@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ListPermittedScopesResponse extends \Google\Collection
-{
-    protected $collection_key = 'scopes';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    protected $scopesType = Scope::class;
-    protected $scopesDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\GKEHub {
+    class ListPermittedScopesResponse extends \Google\Collection
     {
+        protected $collection_key = 'scopes';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        protected $scopesType = Scope::class;
+        protected $scopesDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * @param Scope[]
+         */
+        public function setScopes($scopes)
+        {
+        }
+        /**
+         * @return Scope[]
+         */
+        public function getScopes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\ListPermittedScopesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * @param Scope[]
-     */
-    public function setScopes($scopes)
-    {
-    }
-    /**
-     * @return Scope[]
-     */
-    public function getScopes()
+    class Google_Service_GKEHub_ListPermittedScopesResponse extends \Google\Service\GKEHub\ListPermittedScopesResponse
     {
     }
 }

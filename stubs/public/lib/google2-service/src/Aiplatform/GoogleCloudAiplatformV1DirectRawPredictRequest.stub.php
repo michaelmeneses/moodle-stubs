@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1DirectRawPredictRequest extends \Google\Model
-{
-    /**
-     * The prediction input.
-     *
-     * @var string
-     */
-    public $input;
-    /**
-     * Fully qualified name of the API method being invoked to perform
-     * predictions. Format: `/namespace.Service/Method/` Example:
-     * `/tensorflow.serving.PredictionService/Predict`
-     *
-     * @var string
-     */
-    public $methodName;
-    /**
-     * The prediction input.
-     *
-     * @param string $input
-     */
-    public function setInput($input)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1DirectRawPredictRequest extends \Google\Model
     {
+        /**
+         * The prediction input.
+         *
+         * @var string
+         */
+        public $input;
+        /**
+         * Fully qualified name of the API method being invoked to perform
+         * predictions. Format: `/namespace.Service/Method/` Example:
+         * `/tensorflow.serving.PredictionService/Predict`
+         *
+         * @var string
+         */
+        public $methodName;
+        /**
+         * The prediction input.
+         *
+         * @param string $input
+         */
+        public function setInput($input)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInput()
+        {
+        }
+        /**
+         * Fully qualified name of the API method being invoked to perform
+         * predictions. Format: `/namespace.Service/Method/` Example:
+         * `/tensorflow.serving.PredictionService/Predict`
+         *
+         * @param string $methodName
+         */
+        public function setMethodName($methodName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMethodName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1DirectRawPredictRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInput()
-    {
-    }
-    /**
-     * Fully qualified name of the API method being invoked to perform
-     * predictions. Format: `/namespace.Service/Method/` Example:
-     * `/tensorflow.serving.PredictionService/Predict`
-     *
-     * @param string $methodName
-     */
-    public function setMethodName($methodName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMethodName()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1DirectRawPredictRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1DirectRawPredictRequest
     {
     }
 }

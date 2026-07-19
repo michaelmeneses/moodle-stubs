@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class Customer extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $emailAddress;
-    protected $loyaltyDataType = CustomerLoyaltyData::class;
-    protected $loyaltyDataDataType = '';
-    /**
-     * @param string
-     */
-    public function setEmailAddress($emailAddress)
+namespace Google\Service\ShoppingContent {
+    class Customer extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $emailAddress;
+        protected $loyaltyDataType = CustomerLoyaltyData::class;
+        protected $loyaltyDataDataType = '';
+        /**
+         * @param string
+         */
+        public function setEmailAddress($emailAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmailAddress()
+        {
+        }
+        /**
+         * @param CustomerLoyaltyData
+         */
+        public function setLoyaltyData(CustomerLoyaltyData $loyaltyData)
+        {
+        }
+        /**
+         * @return CustomerLoyaltyData
+         */
+        public function getLoyaltyData()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\Customer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmailAddress()
-    {
-    }
-    /**
-     * @param CustomerLoyaltyData
-     */
-    public function setLoyaltyData(CustomerLoyaltyData $loyaltyData)
-    {
-    }
-    /**
-     * @return CustomerLoyaltyData
-     */
-    public function getLoyaltyData()
+    class Google_Service_ShoppingContent_Customer extends \Google\Service\ShoppingContent\Customer
     {
     }
 }

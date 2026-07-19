@@ -21,168 +21,177 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1DisplayInfo extends \Google\Model
-{
-    /**
-     * Output only. Represents the graphics card device id.
-     *
-     * @var string
-     */
-    public $deviceId;
-    /**
-     * Output only. Display device name.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. EDID version.
-     *
-     * @var string
-     */
-    public $edidVersion;
-    /**
-     * Output only. Indicates if display is internal or not.
-     *
-     * @var bool
-     */
-    public $isInternal;
-    /**
-     * Output only. Refresh rate in Hz.
-     *
-     * @var int
-     */
-    public $refreshRate;
-    /**
-     * Output only. Resolution height in pixels.
-     *
-     * @var int
-     */
-    public $resolutionHeight;
-    /**
-     * Output only. Resolution width in pixels.
-     *
-     * @var int
-     */
-    public $resolutionWidth;
-    /**
-     * Output only. Serial number.
-     *
-     * @var int
-     */
-    public $serialNumber;
-    /**
-     * Output only. Represents the graphics card device id.
-     *
-     * @param string $deviceId
-     */
-    public function setDeviceId($deviceId)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1DisplayInfo extends \Google\Model
     {
+        /**
+         * Output only. Represents the graphics card device id.
+         *
+         * @var string
+         */
+        public $deviceId;
+        /**
+         * Output only. Display device name.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. EDID version.
+         *
+         * @var string
+         */
+        public $edidVersion;
+        /**
+         * Output only. Indicates if display is internal or not.
+         *
+         * @var bool
+         */
+        public $isInternal;
+        /**
+         * Output only. Refresh rate in Hz.
+         *
+         * @var int
+         */
+        public $refreshRate;
+        /**
+         * Output only. Resolution height in pixels.
+         *
+         * @var int
+         */
+        public $resolutionHeight;
+        /**
+         * Output only. Resolution width in pixels.
+         *
+         * @var int
+         */
+        public $resolutionWidth;
+        /**
+         * Output only. Serial number.
+         *
+         * @var int
+         */
+        public $serialNumber;
+        /**
+         * Output only. Represents the graphics card device id.
+         *
+         * @param string $deviceId
+         */
+        public function setDeviceId($deviceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeviceId()
+        {
+        }
+        /**
+         * Output only. Display device name.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. EDID version.
+         *
+         * @param string $edidVersion
+         */
+        public function setEdidVersion($edidVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEdidVersion()
+        {
+        }
+        /**
+         * Output only. Indicates if display is internal or not.
+         *
+         * @param bool $isInternal
+         */
+        public function setIsInternal($isInternal)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsInternal()
+        {
+        }
+        /**
+         * Output only. Refresh rate in Hz.
+         *
+         * @param int $refreshRate
+         */
+        public function setRefreshRate($refreshRate)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRefreshRate()
+        {
+        }
+        /**
+         * Output only. Resolution height in pixels.
+         *
+         * @param int $resolutionHeight
+         */
+        public function setResolutionHeight($resolutionHeight)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getResolutionHeight()
+        {
+        }
+        /**
+         * Output only. Resolution width in pixels.
+         *
+         * @param int $resolutionWidth
+         */
+        public function setResolutionWidth($resolutionWidth)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getResolutionWidth()
+        {
+        }
+        /**
+         * Output only. Serial number.
+         *
+         * @param int $serialNumber
+         */
+        public function setSerialNumber($serialNumber)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSerialNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1DisplayInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceId()
-    {
-    }
-    /**
-     * Output only. Display device name.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. EDID version.
-     *
-     * @param string $edidVersion
-     */
-    public function setEdidVersion($edidVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEdidVersion()
-    {
-    }
-    /**
-     * Output only. Indicates if display is internal or not.
-     *
-     * @param bool $isInternal
-     */
-    public function setIsInternal($isInternal)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsInternal()
-    {
-    }
-    /**
-     * Output only. Refresh rate in Hz.
-     *
-     * @param int $refreshRate
-     */
-    public function setRefreshRate($refreshRate)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRefreshRate()
-    {
-    }
-    /**
-     * Output only. Resolution height in pixels.
-     *
-     * @param int $resolutionHeight
-     */
-    public function setResolutionHeight($resolutionHeight)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getResolutionHeight()
-    {
-    }
-    /**
-     * Output only. Resolution width in pixels.
-     *
-     * @param int $resolutionWidth
-     */
-    public function setResolutionWidth($resolutionWidth)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getResolutionWidth()
-    {
-    }
-    /**
-     * Output only. Serial number.
-     *
-     * @param int $serialNumber
-     */
-    public function setSerialNumber($serialNumber)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSerialNumber()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1DisplayInfo extends \Google\Service\ChromeManagement\GoogleChromeManagementV1DisplayInfo
     {
     }
 }

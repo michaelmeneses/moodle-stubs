@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ResourcePolicyInstanceSchedulePolicy extends \Google\Model
-{
-    /**
-     * The expiration time of the schedule. The timestamp is an RFC3339 string.
-     *
-     * @var string
-     */
-    public $expirationTime;
-    /**
-     * The start time of the schedule. The timestamp is an RFC3339 string.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Specifies the time zone to be used in interpreting Schedule.schedule. The
-     * value of this field must be a time zone name from the tz database:
-     * https://wikipedia.org/wiki/Tz_database.
-     *
-     * @var string
-     */
-    public $timeZone;
-    protected $vmStartScheduleType = ResourcePolicyInstanceSchedulePolicySchedule::class;
-    protected $vmStartScheduleDataType = '';
-    protected $vmStopScheduleType = ResourcePolicyInstanceSchedulePolicySchedule::class;
-    protected $vmStopScheduleDataType = '';
-    /**
-     * The expiration time of the schedule. The timestamp is an RFC3339 string.
-     *
-     * @param string $expirationTime
-     */
-    public function setExpirationTime($expirationTime)
+namespace Google\Service\Compute {
+    class ResourcePolicyInstanceSchedulePolicy extends \Google\Model
     {
+        /**
+         * The expiration time of the schedule. The timestamp is an RFC3339 string.
+         *
+         * @var string
+         */
+        public $expirationTime;
+        /**
+         * The start time of the schedule. The timestamp is an RFC3339 string.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Specifies the time zone to be used in interpreting Schedule.schedule. The
+         * value of this field must be a time zone name from the tz database:
+         * https://wikipedia.org/wiki/Tz_database.
+         *
+         * @var string
+         */
+        public $timeZone;
+        protected $vmStartScheduleType = ResourcePolicyInstanceSchedulePolicySchedule::class;
+        protected $vmStartScheduleDataType = '';
+        protected $vmStopScheduleType = ResourcePolicyInstanceSchedulePolicySchedule::class;
+        protected $vmStopScheduleDataType = '';
+        /**
+         * The expiration time of the schedule. The timestamp is an RFC3339 string.
+         *
+         * @param string $expirationTime
+         */
+        public function setExpirationTime($expirationTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpirationTime()
+        {
+        }
+        /**
+         * The start time of the schedule. The timestamp is an RFC3339 string.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * Specifies the time zone to be used in interpreting Schedule.schedule. The
+         * value of this field must be a time zone name from the tz database:
+         * https://wikipedia.org/wiki/Tz_database.
+         *
+         * @param string $timeZone
+         */
+        public function setTimeZone($timeZone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeZone()
+        {
+        }
+        /**
+         * Specifies the schedule for starting instances.
+         *
+         * @param ResourcePolicyInstanceSchedulePolicySchedule $vmStartSchedule
+         */
+        public function setVmStartSchedule(ResourcePolicyInstanceSchedulePolicySchedule $vmStartSchedule)
+        {
+        }
+        /**
+         * @return ResourcePolicyInstanceSchedulePolicySchedule
+         */
+        public function getVmStartSchedule()
+        {
+        }
+        /**
+         * Specifies the schedule for stopping instances.
+         *
+         * @param ResourcePolicyInstanceSchedulePolicySchedule $vmStopSchedule
+         */
+        public function setVmStopSchedule(ResourcePolicyInstanceSchedulePolicySchedule $vmStopSchedule)
+        {
+        }
+        /**
+         * @return ResourcePolicyInstanceSchedulePolicySchedule
+         */
+        public function getVmStopSchedule()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\ResourcePolicyInstanceSchedulePolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExpirationTime()
-    {
-    }
-    /**
-     * The start time of the schedule. The timestamp is an RFC3339 string.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * Specifies the time zone to be used in interpreting Schedule.schedule. The
-     * value of this field must be a time zone name from the tz database:
-     * https://wikipedia.org/wiki/Tz_database.
-     *
-     * @param string $timeZone
-     */
-    public function setTimeZone($timeZone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeZone()
-    {
-    }
-    /**
-     * Specifies the schedule for starting instances.
-     *
-     * @param ResourcePolicyInstanceSchedulePolicySchedule $vmStartSchedule
-     */
-    public function setVmStartSchedule(ResourcePolicyInstanceSchedulePolicySchedule $vmStartSchedule)
-    {
-    }
-    /**
-     * @return ResourcePolicyInstanceSchedulePolicySchedule
-     */
-    public function getVmStartSchedule()
-    {
-    }
-    /**
-     * Specifies the schedule for stopping instances.
-     *
-     * @param ResourcePolicyInstanceSchedulePolicySchedule $vmStopSchedule
-     */
-    public function setVmStopSchedule(ResourcePolicyInstanceSchedulePolicySchedule $vmStopSchedule)
-    {
-    }
-    /**
-     * @return ResourcePolicyInstanceSchedulePolicySchedule
-     */
-    public function getVmStopSchedule()
+    class Google_Service_Compute_ResourcePolicyInstanceSchedulePolicy extends \Google\Service\Compute\ResourcePolicyInstanceSchedulePolicy
     {
     }
 }

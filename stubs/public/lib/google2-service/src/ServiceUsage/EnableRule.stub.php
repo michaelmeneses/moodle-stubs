@@ -21,131 +21,140 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceUsage;
-
-class EnableRule extends \Google\Collection
-{
-    /**
-     * Unspecified enable type, which means enabled as both client and resource
-     * project.
-     */
-    public const ENABLE_TYPE_ENABLE_TYPE_UNSPECIFIED = 'ENABLE_TYPE_UNSPECIFIED';
-    /**
-     * Enable all clients under the CRM node specified by `ConsumerPolicy.name` to
-     * use the listed services. A client can be an API key, an OAuth client, or a
-     * service account.
-     */
-    public const ENABLE_TYPE_CLIENT = 'CLIENT';
-    /**
-     * Enable resources in the list services to be created and used under the CRM
-     * node specified by the `ConsumerPolicy.name`.
-     */
-    public const ENABLE_TYPE_RESOURCE = 'RESOURCE';
-    /**
-     * Activation made by Service Usage v1 API. This will be how consumers
-     * differentiate between policy changes made by v1 and v2 clients and
-     * understand what is actually possible based on those different policies.
-     */
-    public const ENABLE_TYPE_V1_COMPATIBLE = 'V1_COMPATIBLE';
-    protected $collection_key = 'values';
-    /**
-     * Client and resource project enable type.
-     *
-     * @var string
-     */
-    public $enableType;
-    /**
-     * DEPRECATED: Please use field `values`. Service group should have prefix
-     * `groups/`. The names of the service groups that are enabled (Not
-     * Implemented). Example: `groups/googleServices`.
-     *
-     * @deprecated
-     * @var string[]
-     */
-    public $groups;
-    /**
-     * DEPRECATED: Please use field `values`. Service should have prefix
-     * `services/`. The names of the services that are enabled. Example:
-     * `storage.googleapis.com`.
-     *
-     * @deprecated
-     * @var string[]
-     */
-    public $services;
-    /**
-     * The names of the services or service groups that are enabled. Example:
-     * `services/storage.googleapis.com`, `groups/googleServices`,
-     * `groups/allServices`.
-     *
-     * @var string[]
-     */
-    public $values;
-    /**
-     * Client and resource project enable type.
-     *
-     * Accepted values: ENABLE_TYPE_UNSPECIFIED, CLIENT, RESOURCE, V1_COMPATIBLE
-     *
-     * @param self::ENABLE_TYPE_* $enableType
-     */
-    public function setEnableType($enableType)
+namespace Google\Service\ServiceUsage {
+    class EnableRule extends \Google\Collection
     {
+        /**
+         * Unspecified enable type, which means enabled as both client and resource
+         * project.
+         */
+        public const ENABLE_TYPE_ENABLE_TYPE_UNSPECIFIED = 'ENABLE_TYPE_UNSPECIFIED';
+        /**
+         * Enable all clients under the CRM node specified by `ConsumerPolicy.name` to
+         * use the listed services. A client can be an API key, an OAuth client, or a
+         * service account.
+         */
+        public const ENABLE_TYPE_CLIENT = 'CLIENT';
+        /**
+         * Enable resources in the list services to be created and used under the CRM
+         * node specified by the `ConsumerPolicy.name`.
+         */
+        public const ENABLE_TYPE_RESOURCE = 'RESOURCE';
+        /**
+         * Activation made by Service Usage v1 API. This will be how consumers
+         * differentiate between policy changes made by v1 and v2 clients and
+         * understand what is actually possible based on those different policies.
+         */
+        public const ENABLE_TYPE_V1_COMPATIBLE = 'V1_COMPATIBLE';
+        protected $collection_key = 'values';
+        /**
+         * Client and resource project enable type.
+         *
+         * @var string
+         */
+        public $enableType;
+        /**
+         * DEPRECATED: Please use field `values`. Service group should have prefix
+         * `groups/`. The names of the service groups that are enabled (Not
+         * Implemented). Example: `groups/googleServices`.
+         *
+         * @deprecated
+         * @var string[]
+         */
+        public $groups;
+        /**
+         * DEPRECATED: Please use field `values`. Service should have prefix
+         * `services/`. The names of the services that are enabled. Example:
+         * `storage.googleapis.com`.
+         *
+         * @deprecated
+         * @var string[]
+         */
+        public $services;
+        /**
+         * The names of the services or service groups that are enabled. Example:
+         * `services/storage.googleapis.com`, `groups/googleServices`,
+         * `groups/allServices`.
+         *
+         * @var string[]
+         */
+        public $values;
+        /**
+         * Client and resource project enable type.
+         *
+         * Accepted values: ENABLE_TYPE_UNSPECIFIED, CLIENT, RESOURCE, V1_COMPATIBLE
+         *
+         * @param self::ENABLE_TYPE_* $enableType
+         */
+        public function setEnableType($enableType)
+        {
+        }
+        /**
+         * @return self::ENABLE_TYPE_*
+         */
+        public function getEnableType()
+        {
+        }
+        /**
+         * DEPRECATED: Please use field `values`. Service group should have prefix
+         * `groups/`. The names of the service groups that are enabled (Not
+         * Implemented). Example: `groups/googleServices`.
+         *
+         * @deprecated
+         * @param string[] $groups
+         */
+        public function setGroups($groups)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string[]
+         */
+        public function getGroups()
+        {
+        }
+        /**
+         * DEPRECATED: Please use field `values`. Service should have prefix
+         * `services/`. The names of the services that are enabled. Example:
+         * `storage.googleapis.com`.
+         *
+         * @deprecated
+         * @param string[] $services
+         */
+        public function setServices($services)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string[]
+         */
+        public function getServices()
+        {
+        }
+        /**
+         * The names of the services or service groups that are enabled. Example:
+         * `services/storage.googleapis.com`, `groups/googleServices`,
+         * `groups/allServices`.
+         *
+         * @param string[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ENABLE_TYPE_*
+     * Runtime class alias of \Google\Service\ServiceUsage\EnableRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableType()
-    {
-    }
-    /**
-     * DEPRECATED: Please use field `values`. Service group should have prefix
-     * `groups/`. The names of the service groups that are enabled (Not
-     * Implemented). Example: `groups/googleServices`.
-     *
-     * @deprecated
-     * @param string[] $groups
-     */
-    public function setGroups($groups)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string[]
-     */
-    public function getGroups()
-    {
-    }
-    /**
-     * DEPRECATED: Please use field `values`. Service should have prefix
-     * `services/`. The names of the services that are enabled. Example:
-     * `storage.googleapis.com`.
-     *
-     * @deprecated
-     * @param string[] $services
-     */
-    public function setServices($services)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string[]
-     */
-    public function getServices()
-    {
-    }
-    /**
-     * The names of the services or service groups that are enabled. Example:
-     * `services/storage.googleapis.com`, `groups/googleServices`,
-     * `groups/allServices`.
-     *
-     * @param string[] $values
-     */
-    public function setValues($values)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getValues()
+    class Google_Service_ServiceUsage_EnableRule extends \Google\Service\ServiceUsage\EnableRule
     {
     }
 }

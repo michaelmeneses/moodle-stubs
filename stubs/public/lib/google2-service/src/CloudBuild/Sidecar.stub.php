@@ -21,196 +21,205 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class Sidecar extends \Google\Collection
-{
-    protected $collection_key = 'volumeMounts';
-    /**
-     * Arguments to the entrypoint.
-     *
-     * @var string[]
-     */
-    public $args;
-    /**
-     * Entrypoint array.
-     *
-     * @var string[]
-     */
-    public $command;
-    protected $envType = EnvVar::class;
-    protected $envDataType = 'array';
-    /**
-     * Docker image name.
-     *
-     * @var string
-     */
-    public $image;
-    /**
-     * Name of the Sidecar.
-     *
-     * @var string
-     */
-    public $name;
-    protected $readinessProbeType = Probe::class;
-    protected $readinessProbeDataType = '';
-    /**
-     * The contents of an executable file to execute.
-     *
-     * @var string
-     */
-    public $script;
-    protected $securityContextType = SecurityContext::class;
-    protected $securityContextDataType = '';
-    protected $volumeMountsType = VolumeMount::class;
-    protected $volumeMountsDataType = 'array';
-    /**
-     * Container's working directory.
-     *
-     * @var string
-     */
-    public $workingDir;
-    /**
-     * Arguments to the entrypoint.
-     *
-     * @param string[] $args
-     */
-    public function setArgs($args)
+namespace Google\Service\CloudBuild {
+    class Sidecar extends \Google\Collection
     {
+        protected $collection_key = 'volumeMounts';
+        /**
+         * Arguments to the entrypoint.
+         *
+         * @var string[]
+         */
+        public $args;
+        /**
+         * Entrypoint array.
+         *
+         * @var string[]
+         */
+        public $command;
+        protected $envType = EnvVar::class;
+        protected $envDataType = 'array';
+        /**
+         * Docker image name.
+         *
+         * @var string
+         */
+        public $image;
+        /**
+         * Name of the Sidecar.
+         *
+         * @var string
+         */
+        public $name;
+        protected $readinessProbeType = Probe::class;
+        protected $readinessProbeDataType = '';
+        /**
+         * The contents of an executable file to execute.
+         *
+         * @var string
+         */
+        public $script;
+        protected $securityContextType = SecurityContext::class;
+        protected $securityContextDataType = '';
+        protected $volumeMountsType = VolumeMount::class;
+        protected $volumeMountsDataType = 'array';
+        /**
+         * Container's working directory.
+         *
+         * @var string
+         */
+        public $workingDir;
+        /**
+         * Arguments to the entrypoint.
+         *
+         * @param string[] $args
+         */
+        public function setArgs($args)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getArgs()
+        {
+        }
+        /**
+         * Entrypoint array.
+         *
+         * @param string[] $command
+         */
+        public function setCommand($command)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCommand()
+        {
+        }
+        /**
+         * List of environment variables to set in the container.
+         *
+         * @param EnvVar[] $env
+         */
+        public function setEnv($env)
+        {
+        }
+        /**
+         * @return EnvVar[]
+         */
+        public function getEnv()
+        {
+        }
+        /**
+         * Docker image name.
+         *
+         * @param string $image
+         */
+        public function setImage($image)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImage()
+        {
+        }
+        /**
+         * Name of the Sidecar.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. Periodic probe of Sidecar service readiness. Container will be
+         * removed from service endpoints if the probe fails. Cannot be updated. More
+         * info: https://kubernetes.io/docs/concepts/workloads/pods/pod-
+         * lifecycle#container-probes +optional
+         *
+         * @param Probe $readinessProbe
+         */
+        public function setReadinessProbe(Probe $readinessProbe)
+        {
+        }
+        /**
+         * @return Probe
+         */
+        public function getReadinessProbe()
+        {
+        }
+        /**
+         * The contents of an executable file to execute.
+         *
+         * @param string $script
+         */
+        public function setScript($script)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScript()
+        {
+        }
+        /**
+         * Optional. Security options the container should be run with.
+         *
+         * @param SecurityContext $securityContext
+         */
+        public function setSecurityContext(SecurityContext $securityContext)
+        {
+        }
+        /**
+         * @return SecurityContext
+         */
+        public function getSecurityContext()
+        {
+        }
+        /**
+         * Pod volumes to mount into the container's filesystem.
+         *
+         * @param VolumeMount[] $volumeMounts
+         */
+        public function setVolumeMounts($volumeMounts)
+        {
+        }
+        /**
+         * @return VolumeMount[]
+         */
+        public function getVolumeMounts()
+        {
+        }
+        /**
+         * Container's working directory.
+         *
+         * @param string $workingDir
+         */
+        public function setWorkingDir($workingDir)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWorkingDir()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudBuild\Sidecar registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArgs()
-    {
-    }
-    /**
-     * Entrypoint array.
-     *
-     * @param string[] $command
-     */
-    public function setCommand($command)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getCommand()
-    {
-    }
-    /**
-     * List of environment variables to set in the container.
-     *
-     * @param EnvVar[] $env
-     */
-    public function setEnv($env)
-    {
-    }
-    /**
-     * @return EnvVar[]
-     */
-    public function getEnv()
-    {
-    }
-    /**
-     * Docker image name.
-     *
-     * @param string $image
-     */
-    public function setImage($image)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImage()
-    {
-    }
-    /**
-     * Name of the Sidecar.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. Periodic probe of Sidecar service readiness. Container will be
-     * removed from service endpoints if the probe fails. Cannot be updated. More
-     * info: https://kubernetes.io/docs/concepts/workloads/pods/pod-
-     * lifecycle#container-probes +optional
-     *
-     * @param Probe $readinessProbe
-     */
-    public function setReadinessProbe(Probe $readinessProbe)
-    {
-    }
-    /**
-     * @return Probe
-     */
-    public function getReadinessProbe()
-    {
-    }
-    /**
-     * The contents of an executable file to execute.
-     *
-     * @param string $script
-     */
-    public function setScript($script)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScript()
-    {
-    }
-    /**
-     * Optional. Security options the container should be run with.
-     *
-     * @param SecurityContext $securityContext
-     */
-    public function setSecurityContext(SecurityContext $securityContext)
-    {
-    }
-    /**
-     * @return SecurityContext
-     */
-    public function getSecurityContext()
-    {
-    }
-    /**
-     * Pod volumes to mount into the container's filesystem.
-     *
-     * @param VolumeMount[] $volumeMounts
-     */
-    public function setVolumeMounts($volumeMounts)
-    {
-    }
-    /**
-     * @return VolumeMount[]
-     */
-    public function getVolumeMounts()
-    {
-    }
-    /**
-     * Container's working directory.
-     *
-     * @param string $workingDir
-     */
-    public function setWorkingDir($workingDir)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWorkingDir()
+    class Google_Service_CloudBuild_Sidecar extends \Google\Service\CloudBuild\Sidecar
     {
     }
 }

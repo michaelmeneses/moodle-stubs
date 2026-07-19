@@ -21,83 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ActiveLearningConfig extends \Google\Model
-{
-    /**
-     * Max number of human labeled DataItems.
-     *
-     * @var string
-     */
-    public $maxDataItemCount;
-    /**
-     * Max percent of total DataItems for human labeling.
-     *
-     * @var int
-     */
-    public $maxDataItemPercentage;
-    protected $sampleConfigType = GoogleCloudAiplatformV1SampleConfig::class;
-    protected $sampleConfigDataType = '';
-    protected $trainingConfigType = GoogleCloudAiplatformV1TrainingConfig::class;
-    protected $trainingConfigDataType = '';
-    /**
-     * Max number of human labeled DataItems.
-     *
-     * @param string $maxDataItemCount
-     */
-    public function setMaxDataItemCount($maxDataItemCount)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ActiveLearningConfig extends \Google\Model
     {
+        /**
+         * Max number of human labeled DataItems.
+         *
+         * @var string
+         */
+        public $maxDataItemCount;
+        /**
+         * Max percent of total DataItems for human labeling.
+         *
+         * @var int
+         */
+        public $maxDataItemPercentage;
+        protected $sampleConfigType = GoogleCloudAiplatformV1SampleConfig::class;
+        protected $sampleConfigDataType = '';
+        protected $trainingConfigType = GoogleCloudAiplatformV1TrainingConfig::class;
+        protected $trainingConfigDataType = '';
+        /**
+         * Max number of human labeled DataItems.
+         *
+         * @param string $maxDataItemCount
+         */
+        public function setMaxDataItemCount($maxDataItemCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxDataItemCount()
+        {
+        }
+        /**
+         * Max percent of total DataItems for human labeling.
+         *
+         * @param int $maxDataItemPercentage
+         */
+        public function setMaxDataItemPercentage($maxDataItemPercentage)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxDataItemPercentage()
+        {
+        }
+        /**
+         * Active learning data sampling config. For every active learning labeling
+         * iteration, it will select a batch of data based on the sampling strategy.
+         *
+         * @param GoogleCloudAiplatformV1SampleConfig $sampleConfig
+         */
+        public function setSampleConfig(GoogleCloudAiplatformV1SampleConfig $sampleConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SampleConfig
+         */
+        public function getSampleConfig()
+        {
+        }
+        /**
+         * CMLE training config. For every active learning labeling iteration, system
+         * will train a machine learning model on CMLE. The trained model will be used
+         * by data sampling algorithm to select DataItems.
+         *
+         * @param GoogleCloudAiplatformV1TrainingConfig $trainingConfig
+         */
+        public function setTrainingConfig(GoogleCloudAiplatformV1TrainingConfig $trainingConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1TrainingConfig
+         */
+        public function getTrainingConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ActiveLearningConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxDataItemCount()
-    {
-    }
-    /**
-     * Max percent of total DataItems for human labeling.
-     *
-     * @param int $maxDataItemPercentage
-     */
-    public function setMaxDataItemPercentage($maxDataItemPercentage)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxDataItemPercentage()
-    {
-    }
-    /**
-     * Active learning data sampling config. For every active learning labeling
-     * iteration, it will select a batch of data based on the sampling strategy.
-     *
-     * @param GoogleCloudAiplatformV1SampleConfig $sampleConfig
-     */
-    public function setSampleConfig(GoogleCloudAiplatformV1SampleConfig $sampleConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1SampleConfig
-     */
-    public function getSampleConfig()
-    {
-    }
-    /**
-     * CMLE training config. For every active learning labeling iteration, system
-     * will train a machine learning model on CMLE. The trained model will be used
-     * by data sampling algorithm to select DataItems.
-     *
-     * @param GoogleCloudAiplatformV1TrainingConfig $trainingConfig
-     */
-    public function setTrainingConfig(GoogleCloudAiplatformV1TrainingConfig $trainingConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1TrainingConfig
-     */
-    public function getTrainingConfig()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ActiveLearningConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ActiveLearningConfig
     {
     }
 }

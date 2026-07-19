@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class OperationsScopedList extends \Google\Collection
-{
-    protected $collection_key = 'operations';
-    protected $operationsType = Operation::class;
-    protected $operationsDataType = 'array';
-    protected $warningType = OperationsScopedListWarning::class;
-    protected $warningDataType = '';
-    /**
-     * [Output Only] A list of operations contained in this scope.
-     *
-     * @param Operation[] $operations
-     */
-    public function setOperations($operations)
+namespace Google\Service\Compute {
+    class OperationsScopedList extends \Google\Collection
     {
+        protected $collection_key = 'operations';
+        protected $operationsType = Operation::class;
+        protected $operationsDataType = 'array';
+        protected $warningType = OperationsScopedListWarning::class;
+        protected $warningDataType = '';
+        /**
+         * [Output Only] A list of operations contained in this scope.
+         *
+         * @param Operation[] $operations
+         */
+        public function setOperations($operations)
+        {
+        }
+        /**
+         * @return Operation[]
+         */
+        public function getOperations()
+        {
+        }
+        /**
+         * [Output Only] Informational warning which replaces the list of operations
+         * when the list is empty.
+         *
+         * @param OperationsScopedListWarning $warning
+         */
+        public function setWarning(OperationsScopedListWarning $warning)
+        {
+        }
+        /**
+         * @return OperationsScopedListWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Operation[]
+     * Runtime class alias of \Google\Service\Compute\OperationsScopedList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOperations()
-    {
-    }
-    /**
-     * [Output Only] Informational warning which replaces the list of operations
-     * when the list is empty.
-     *
-     * @param OperationsScopedListWarning $warning
-     */
-    public function setWarning(OperationsScopedListWarning $warning)
-    {
-    }
-    /**
-     * @return OperationsScopedListWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_OperationsScopedList extends \Google\Service\Compute\OperationsScopedList
     {
     }
 }

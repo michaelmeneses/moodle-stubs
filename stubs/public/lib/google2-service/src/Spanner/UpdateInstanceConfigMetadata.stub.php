@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class UpdateInstanceConfigMetadata extends \Google\Model
-{
-    /**
-     * The time at which this operation was cancelled.
-     *
-     * @var string
-     */
-    public $cancelTime;
-    protected $instanceConfigType = InstanceConfig::class;
-    protected $instanceConfigDataType = '';
-    protected $progressType = InstanceOperationProgress::class;
-    protected $progressDataType = '';
-    /**
-     * The time at which this operation was cancelled.
-     *
-     * @param string $cancelTime
-     */
-    public function setCancelTime($cancelTime)
+namespace Google\Service\Spanner {
+    class UpdateInstanceConfigMetadata extends \Google\Model
     {
+        /**
+         * The time at which this operation was cancelled.
+         *
+         * @var string
+         */
+        public $cancelTime;
+        protected $instanceConfigType = InstanceConfig::class;
+        protected $instanceConfigDataType = '';
+        protected $progressType = InstanceOperationProgress::class;
+        protected $progressDataType = '';
+        /**
+         * The time at which this operation was cancelled.
+         *
+         * @param string $cancelTime
+         */
+        public function setCancelTime($cancelTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCancelTime()
+        {
+        }
+        /**
+         * The desired instance configuration after updating.
+         *
+         * @param InstanceConfig $instanceConfig
+         */
+        public function setInstanceConfig(InstanceConfig $instanceConfig)
+        {
+        }
+        /**
+         * @return InstanceConfig
+         */
+        public function getInstanceConfig()
+        {
+        }
+        /**
+         * The progress of the UpdateInstanceConfig operation.
+         *
+         * @param InstanceOperationProgress $progress
+         */
+        public function setProgress(InstanceOperationProgress $progress)
+        {
+        }
+        /**
+         * @return InstanceOperationProgress
+         */
+        public function getProgress()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Spanner\UpdateInstanceConfigMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCancelTime()
-    {
-    }
-    /**
-     * The desired instance configuration after updating.
-     *
-     * @param InstanceConfig $instanceConfig
-     */
-    public function setInstanceConfig(InstanceConfig $instanceConfig)
-    {
-    }
-    /**
-     * @return InstanceConfig
-     */
-    public function getInstanceConfig()
-    {
-    }
-    /**
-     * The progress of the UpdateInstanceConfig operation.
-     *
-     * @param InstanceOperationProgress $progress
-     */
-    public function setProgress(InstanceOperationProgress $progress)
-    {
-    }
-    /**
-     * @return InstanceOperationProgress
-     */
-    public function getProgress()
+    class Google_Service_Spanner_UpdateInstanceConfigMetadata extends \Google\Service\Spanner\UpdateInstanceConfigMetadata
     {
     }
 }

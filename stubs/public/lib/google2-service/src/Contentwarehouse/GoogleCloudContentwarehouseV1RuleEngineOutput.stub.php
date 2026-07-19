@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1RuleEngineOutput extends \Google\Model
-{
-    protected $actionExecutorOutputType = GoogleCloudContentwarehouseV1ActionExecutorOutput::class;
-    protected $actionExecutorOutputDataType = '';
-    /**
-     * Name of the document against which the rules and actions were evaluated.
-     *
-     * @var string
-     */
-    public $documentName;
-    protected $ruleEvaluatorOutputType = GoogleCloudContentwarehouseV1RuleEvaluatorOutput::class;
-    protected $ruleEvaluatorOutputDataType = '';
-    /**
-     * Output from Action Executor containing rule and corresponding actions
-     * execution result.
-     *
-     * @param GoogleCloudContentwarehouseV1ActionExecutorOutput $actionExecutorOutput
-     */
-    public function setActionExecutorOutput(GoogleCloudContentwarehouseV1ActionExecutorOutput $actionExecutorOutput)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1RuleEngineOutput extends \Google\Model
     {
+        protected $actionExecutorOutputType = GoogleCloudContentwarehouseV1ActionExecutorOutput::class;
+        protected $actionExecutorOutputDataType = '';
+        /**
+         * Name of the document against which the rules and actions were evaluated.
+         *
+         * @var string
+         */
+        public $documentName;
+        protected $ruleEvaluatorOutputType = GoogleCloudContentwarehouseV1RuleEvaluatorOutput::class;
+        protected $ruleEvaluatorOutputDataType = '';
+        /**
+         * Output from Action Executor containing rule and corresponding actions
+         * execution result.
+         *
+         * @param GoogleCloudContentwarehouseV1ActionExecutorOutput $actionExecutorOutput
+         */
+        public function setActionExecutorOutput(GoogleCloudContentwarehouseV1ActionExecutorOutput $actionExecutorOutput)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1ActionExecutorOutput
+         */
+        public function getActionExecutorOutput()
+        {
+        }
+        /**
+         * Name of the document against which the rules and actions were evaluated.
+         *
+         * @param string $documentName
+         */
+        public function setDocumentName($documentName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDocumentName()
+        {
+        }
+        /**
+         * Output from Rule Evaluator containing matched, unmatched and invalid rules.
+         *
+         * @param GoogleCloudContentwarehouseV1RuleEvaluatorOutput $ruleEvaluatorOutput
+         */
+        public function setRuleEvaluatorOutput(GoogleCloudContentwarehouseV1RuleEvaluatorOutput $ruleEvaluatorOutput)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1RuleEvaluatorOutput
+         */
+        public function getRuleEvaluatorOutput()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContentwarehouseV1ActionExecutorOutput
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1RuleEngineOutput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActionExecutorOutput()
-    {
-    }
-    /**
-     * Name of the document against which the rules and actions were evaluated.
-     *
-     * @param string $documentName
-     */
-    public function setDocumentName($documentName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDocumentName()
-    {
-    }
-    /**
-     * Output from Rule Evaluator containing matched, unmatched and invalid rules.
-     *
-     * @param GoogleCloudContentwarehouseV1RuleEvaluatorOutput $ruleEvaluatorOutput
-     */
-    public function setRuleEvaluatorOutput(GoogleCloudContentwarehouseV1RuleEvaluatorOutput $ruleEvaluatorOutput)
-    {
-    }
-    /**
-     * @return GoogleCloudContentwarehouseV1RuleEvaluatorOutput
-     */
-    public function getRuleEvaluatorOutput()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1RuleEngineOutput extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1RuleEngineOutput
     {
     }
 }

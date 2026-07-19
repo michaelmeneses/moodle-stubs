@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2alphaRejoinUserEventsResponse extends \Google\Model
-{
-    /**
-     * Number of user events that were joined with latest product catalog.
-     *
-     * @var string
-     */
-    public $rejoinedUserEventsCount;
-    /**
-     * Number of user events that were joined with latest product catalog.
-     *
-     * @param string $rejoinedUserEventsCount
-     */
-    public function setRejoinedUserEventsCount($rejoinedUserEventsCount)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2alphaRejoinUserEventsResponse extends \Google\Model
     {
+        /**
+         * Number of user events that were joined with latest product catalog.
+         *
+         * @var string
+         */
+        public $rejoinedUserEventsCount;
+        /**
+         * Number of user events that were joined with latest product catalog.
+         *
+         * @param string $rejoinedUserEventsCount
+         */
+        public function setRejoinedUserEventsCount($rejoinedUserEventsCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRejoinedUserEventsCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2alphaRejoinUserEventsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRejoinedUserEventsCount()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2alphaRejoinUserEventsResponse extends \Google\Service\CloudRetail\GoogleCloudRetailV2alphaRejoinUserEventsResponse
     {
     }
 }

@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1BulkDownloadFeedbackLabelsRequestSheetsDestination extends \Google\Model
-{
-    /**
-     * Optional. The title of the new sheet to write the feedback labels to.
-     *
-     * @var string
-     */
-    public $sheetTitle;
-    /**
-     * Required. The Google Sheets document to write the feedback labels to.
-     * Retrieved from Google Sheets URI. E.g.
-     * `https://docs.google.com/spreadsheets/d/1234567890` The spreadsheet must be
-     * shared with the Insights P4SA. The spreadsheet ID written to will be
-     * returned as `file_names` in the BulkDownloadFeedbackLabelsMetadata.
-     *
-     * @var string
-     */
-    public $spreadsheetUri;
-    /**
-     * Optional. The title of the new sheet to write the feedback labels to.
-     *
-     * @param string $sheetTitle
-     */
-    public function setSheetTitle($sheetTitle)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1BulkDownloadFeedbackLabelsRequestSheetsDestination extends \Google\Model
     {
+        /**
+         * Optional. The title of the new sheet to write the feedback labels to.
+         *
+         * @var string
+         */
+        public $sheetTitle;
+        /**
+         * Required. The Google Sheets document to write the feedback labels to.
+         * Retrieved from Google Sheets URI. E.g.
+         * `https://docs.google.com/spreadsheets/d/1234567890` The spreadsheet must be
+         * shared with the Insights P4SA. The spreadsheet ID written to will be
+         * returned as `file_names` in the BulkDownloadFeedbackLabelsMetadata.
+         *
+         * @var string
+         */
+        public $spreadsheetUri;
+        /**
+         * Optional. The title of the new sheet to write the feedback labels to.
+         *
+         * @param string $sheetTitle
+         */
+        public function setSheetTitle($sheetTitle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSheetTitle()
+        {
+        }
+        /**
+         * Required. The Google Sheets document to write the feedback labels to.
+         * Retrieved from Google Sheets URI. E.g.
+         * `https://docs.google.com/spreadsheets/d/1234567890` The spreadsheet must be
+         * shared with the Insights P4SA. The spreadsheet ID written to will be
+         * returned as `file_names` in the BulkDownloadFeedbackLabelsMetadata.
+         *
+         * @param string $spreadsheetUri
+         */
+        public function setSpreadsheetUri($spreadsheetUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSpreadsheetUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1BulkDownloadFeedbackLabelsRequestSheetsDestination registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSheetTitle()
-    {
-    }
-    /**
-     * Required. The Google Sheets document to write the feedback labels to.
-     * Retrieved from Google Sheets URI. E.g.
-     * `https://docs.google.com/spreadsheets/d/1234567890` The spreadsheet must be
-     * shared with the Insights P4SA. The spreadsheet ID written to will be
-     * returned as `file_names` in the BulkDownloadFeedbackLabelsMetadata.
-     *
-     * @param string $spreadsheetUri
-     */
-    public function setSpreadsheetUri($spreadsheetUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSpreadsheetUri()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1BulkDownloadFeedbackLabelsRequestSheetsDestination extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1BulkDownloadFeedbackLabelsRequestSheetsDestination
     {
     }
 }

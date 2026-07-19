@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class AddTargetingRequest extends \Google\Model
-{
-    protected $targetingUpdateType = TargetingUpdate::class;
-    protected $targetingUpdateDataType = '';
-    /**
-     * Specifies targeting updates such as regions, android sdk versions etc.
-     *
-     * @param TargetingUpdate $targetingUpdate
-     */
-    public function setTargetingUpdate(TargetingUpdate $targetingUpdate)
+namespace Google\Service\AndroidPublisher {
+    class AddTargetingRequest extends \Google\Model
     {
+        protected $targetingUpdateType = TargetingUpdate::class;
+        protected $targetingUpdateDataType = '';
+        /**
+         * Specifies targeting updates such as regions, android sdk versions etc.
+         *
+         * @param TargetingUpdate $targetingUpdate
+         */
+        public function setTargetingUpdate(TargetingUpdate $targetingUpdate)
+        {
+        }
+        /**
+         * @return TargetingUpdate
+         */
+        public function getTargetingUpdate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TargetingUpdate
+     * Runtime class alias of \Google\Service\AndroidPublisher\AddTargetingRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTargetingUpdate()
+    class Google_Service_AndroidPublisher_AddTargetingRequest extends \Google\Service\AndroidPublisher\AddTargetingRequest
     {
     }
 }

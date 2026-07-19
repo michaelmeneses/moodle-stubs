@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class Range extends \Google\Model
-{
-    /**
-     * The zero-based end index of this range, exclusive, in UTF-16 code units. In
-     * all current uses, an end index must be provided. This field is an
-     * Int32Value in order to accommodate future use cases with open-ended ranges.
-     *
-     * @var int
-     */
-    public $endIndex;
-    /**
-     * The ID of the header, footer, or footnote that this range is contained in.
-     * An empty segment ID signifies the document's body.
-     *
-     * @var string
-     */
-    public $segmentId;
-    /**
-     * The zero-based start index of this range, in UTF-16 code units. In all
-     * current uses, a start index must be provided. This field is an Int32Value
-     * in order to accommodate future use cases with open-ended ranges.
-     *
-     * @var int
-     */
-    public $startIndex;
-    /**
-     * The tab that contains this range. When omitted, the request applies to the
-     * first tab. In a document containing a single tab: - If provided, must match
-     * the singular tab's ID. - If omitted, the request applies to the singular
-     * tab. In a document containing multiple tabs: - If provided, the request
-     * applies to the specified tab. - If omitted, the request applies to the
-     * first tab in the document.
-     *
-     * @var string
-     */
-    public $tabId;
-    /**
-     * The zero-based end index of this range, exclusive, in UTF-16 code units. In
-     * all current uses, an end index must be provided. This field is an
-     * Int32Value in order to accommodate future use cases with open-ended ranges.
-     *
-     * @param int $endIndex
-     */
-    public function setEndIndex($endIndex)
+namespace Google\Service\Docs {
+    class Range extends \Google\Model
     {
+        /**
+         * The zero-based end index of this range, exclusive, in UTF-16 code units. In
+         * all current uses, an end index must be provided. This field is an
+         * Int32Value in order to accommodate future use cases with open-ended ranges.
+         *
+         * @var int
+         */
+        public $endIndex;
+        /**
+         * The ID of the header, footer, or footnote that this range is contained in.
+         * An empty segment ID signifies the document's body.
+         *
+         * @var string
+         */
+        public $segmentId;
+        /**
+         * The zero-based start index of this range, in UTF-16 code units. In all
+         * current uses, a start index must be provided. This field is an Int32Value
+         * in order to accommodate future use cases with open-ended ranges.
+         *
+         * @var int
+         */
+        public $startIndex;
+        /**
+         * The tab that contains this range. When omitted, the request applies to the
+         * first tab. In a document containing a single tab: - If provided, must match
+         * the singular tab's ID. - If omitted, the request applies to the singular
+         * tab. In a document containing multiple tabs: - If provided, the request
+         * applies to the specified tab. - If omitted, the request applies to the
+         * first tab in the document.
+         *
+         * @var string
+         */
+        public $tabId;
+        /**
+         * The zero-based end index of this range, exclusive, in UTF-16 code units. In
+         * all current uses, an end index must be provided. This field is an
+         * Int32Value in order to accommodate future use cases with open-ended ranges.
+         *
+         * @param int $endIndex
+         */
+        public function setEndIndex($endIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getEndIndex()
+        {
+        }
+        /**
+         * The ID of the header, footer, or footnote that this range is contained in.
+         * An empty segment ID signifies the document's body.
+         *
+         * @param string $segmentId
+         */
+        public function setSegmentId($segmentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSegmentId()
+        {
+        }
+        /**
+         * The zero-based start index of this range, in UTF-16 code units. In all
+         * current uses, a start index must be provided. This field is an Int32Value
+         * in order to accommodate future use cases with open-ended ranges.
+         *
+         * @param int $startIndex
+         */
+        public function setStartIndex($startIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStartIndex()
+        {
+        }
+        /**
+         * The tab that contains this range. When omitted, the request applies to the
+         * first tab. In a document containing a single tab: - If provided, must match
+         * the singular tab's ID. - If omitted, the request applies to the singular
+         * tab. In a document containing multiple tabs: - If provided, the request
+         * applies to the specified tab. - If omitted, the request applies to the
+         * first tab in the document.
+         *
+         * @param string $tabId
+         */
+        public function setTabId($tabId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTabId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Docs\Range registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndIndex()
-    {
-    }
-    /**
-     * The ID of the header, footer, or footnote that this range is contained in.
-     * An empty segment ID signifies the document's body.
-     *
-     * @param string $segmentId
-     */
-    public function setSegmentId($segmentId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSegmentId()
-    {
-    }
-    /**
-     * The zero-based start index of this range, in UTF-16 code units. In all
-     * current uses, a start index must be provided. This field is an Int32Value
-     * in order to accommodate future use cases with open-ended ranges.
-     *
-     * @param int $startIndex
-     */
-    public function setStartIndex($startIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStartIndex()
-    {
-    }
-    /**
-     * The tab that contains this range. When omitted, the request applies to the
-     * first tab. In a document containing a single tab: - If provided, must match
-     * the singular tab's ID. - If omitted, the request applies to the singular
-     * tab. In a document containing multiple tabs: - If provided, the request
-     * applies to the specified tab. - If omitted, the request applies to the
-     * first tab in the document.
-     *
-     * @param string $tabId
-     */
-    public function setTabId($tabId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTabId()
+    class Google_Service_Docs_Range extends \Google\Service\Docs\Range
     {
     }
 }

@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Area120Tables;
-
-class CreateRowRequest extends \Google\Model
-{
-    /**
-     * Defaults to user entered text.
-     */
-    public const VIEW_VIEW_UNSPECIFIED = 'VIEW_UNSPECIFIED';
-    /**
-     * Uses internally generated column id to identify values.
-     */
-    public const VIEW_COLUMN_ID_VIEW = 'COLUMN_ID_VIEW';
-    /**
-     * Required. The parent table where this row will be created. Format:
-     * tables/{table}
-     *
-     * @var string
-     */
-    public $parent;
-    protected $rowType = Row::class;
-    protected $rowDataType = '';
-    /**
-     * Optional. Column key to use for values in the row. Defaults to user entered
-     * name.
-     *
-     * @var string
-     */
-    public $view;
-    /**
-     * Required. The parent table where this row will be created. Format:
-     * tables/{table}
-     *
-     * @param string $parent
-     */
-    public function setParent($parent)
+namespace Google\Service\Area120Tables {
+    class CreateRowRequest extends \Google\Model
     {
+        /**
+         * Defaults to user entered text.
+         */
+        public const VIEW_VIEW_UNSPECIFIED = 'VIEW_UNSPECIFIED';
+        /**
+         * Uses internally generated column id to identify values.
+         */
+        public const VIEW_COLUMN_ID_VIEW = 'COLUMN_ID_VIEW';
+        /**
+         * Required. The parent table where this row will be created. Format:
+         * tables/{table}
+         *
+         * @var string
+         */
+        public $parent;
+        protected $rowType = Row::class;
+        protected $rowDataType = '';
+        /**
+         * Optional. Column key to use for values in the row. Defaults to user entered
+         * name.
+         *
+         * @var string
+         */
+        public $view;
+        /**
+         * Required. The parent table where this row will be created. Format:
+         * tables/{table}
+         *
+         * @param string $parent
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
+        /**
+         * Required. The row to create.
+         *
+         * @param Row $row
+         */
+        public function setRow(Row $row)
+        {
+        }
+        /**
+         * @return Row
+         */
+        public function getRow()
+        {
+        }
+        /**
+         * Optional. Column key to use for values in the row. Defaults to user entered
+         * name.
+         *
+         * Accepted values: VIEW_UNSPECIFIED, COLUMN_ID_VIEW
+         *
+         * @param self::VIEW_* $view
+         */
+        public function setView($view)
+        {
+        }
+        /**
+         * @return self::VIEW_*
+         */
+        public function getView()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Area120Tables\CreateRowRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParent()
-    {
-    }
-    /**
-     * Required. The row to create.
-     *
-     * @param Row $row
-     */
-    public function setRow(Row $row)
-    {
-    }
-    /**
-     * @return Row
-     */
-    public function getRow()
-    {
-    }
-    /**
-     * Optional. Column key to use for values in the row. Defaults to user entered
-     * name.
-     *
-     * Accepted values: VIEW_UNSPECIFIED, COLUMN_ID_VIEW
-     *
-     * @param self::VIEW_* $view
-     */
-    public function setView($view)
-    {
-    }
-    /**
-     * @return self::VIEW_*
-     */
-    public function getView()
+    class Google_Service_Area120Tables_CreateRowRequest extends \Google\Service\Area120Tables\CreateRowRequest
     {
     }
 }

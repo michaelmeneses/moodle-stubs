@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class GetCustomerIndexStatsResponse extends \Google\Collection
-{
-    protected $collection_key = 'stats';
-    /**
-     * Average item count for the given date range for which billing is done.
-     *
-     * @var string
-     */
-    public $averageIndexedItemCount;
-    protected $statsType = CustomerIndexStats::class;
-    protected $statsDataType = 'array';
-    /**
-     * Average item count for the given date range for which billing is done.
-     *
-     * @param string $averageIndexedItemCount
-     */
-    public function setAverageIndexedItemCount($averageIndexedItemCount)
+namespace Google\Service\CloudSearch {
+    class GetCustomerIndexStatsResponse extends \Google\Collection
     {
+        protected $collection_key = 'stats';
+        /**
+         * Average item count for the given date range for which billing is done.
+         *
+         * @var string
+         */
+        public $averageIndexedItemCount;
+        protected $statsType = CustomerIndexStats::class;
+        protected $statsDataType = 'array';
+        /**
+         * Average item count for the given date range for which billing is done.
+         *
+         * @param string $averageIndexedItemCount
+         */
+        public function setAverageIndexedItemCount($averageIndexedItemCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAverageIndexedItemCount()
+        {
+        }
+        /**
+         * Summary of indexed item counts, one for each day in the requested range.
+         *
+         * @param CustomerIndexStats[] $stats
+         */
+        public function setStats($stats)
+        {
+        }
+        /**
+         * @return CustomerIndexStats[]
+         */
+        public function getStats()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\GetCustomerIndexStatsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAverageIndexedItemCount()
-    {
-    }
-    /**
-     * Summary of indexed item counts, one for each day in the requested range.
-     *
-     * @param CustomerIndexStats[] $stats
-     */
-    public function setStats($stats)
-    {
-    }
-    /**
-     * @return CustomerIndexStats[]
-     */
-    public function getStats()
+    class Google_Service_CloudSearch_GetCustomerIndexStatsResponse extends \Google\Service\CloudSearch\GetCustomerIndexStatsResponse
     {
     }
 }

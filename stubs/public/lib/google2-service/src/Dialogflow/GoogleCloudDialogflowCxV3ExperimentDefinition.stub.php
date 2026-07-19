@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3ExperimentDefinition extends \Google\Model
-{
-    /**
-     * The condition defines which subset of sessions are selected for this
-     * experiment. If not specified, all sessions are eligible. E.g.
-     * "query_input.language_code=en" See the [conditions reference](https://cloud
-     * .google.com/dialogflow/cx/docs/reference/condition).
-     *
-     * @var string
-     */
-    public $condition;
-    protected $versionVariantsType = GoogleCloudDialogflowCxV3VersionVariants::class;
-    protected $versionVariantsDataType = '';
-    /**
-     * The condition defines which subset of sessions are selected for this
-     * experiment. If not specified, all sessions are eligible. E.g.
-     * "query_input.language_code=en" See the [conditions reference](https://cloud
-     * .google.com/dialogflow/cx/docs/reference/condition).
-     *
-     * @param string $condition
-     */
-    public function setCondition($condition)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3ExperimentDefinition extends \Google\Model
     {
+        /**
+         * The condition defines which subset of sessions are selected for this
+         * experiment. If not specified, all sessions are eligible. E.g.
+         * "query_input.language_code=en" See the [conditions reference](https://cloud
+         * .google.com/dialogflow/cx/docs/reference/condition).
+         *
+         * @var string
+         */
+        public $condition;
+        protected $versionVariantsType = GoogleCloudDialogflowCxV3VersionVariants::class;
+        protected $versionVariantsDataType = '';
+        /**
+         * The condition defines which subset of sessions are selected for this
+         * experiment. If not specified, all sessions are eligible. E.g.
+         * "query_input.language_code=en" See the [conditions reference](https://cloud
+         * .google.com/dialogflow/cx/docs/reference/condition).
+         *
+         * @param string $condition
+         */
+        public function setCondition($condition)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCondition()
+        {
+        }
+        /**
+         * The flow versions as the variants of this experiment.
+         *
+         * @param GoogleCloudDialogflowCxV3VersionVariants $versionVariants
+         */
+        public function setVersionVariants(GoogleCloudDialogflowCxV3VersionVariants $versionVariants)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3VersionVariants
+         */
+        public function getVersionVariants()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ExperimentDefinition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCondition()
-    {
-    }
-    /**
-     * The flow versions as the variants of this experiment.
-     *
-     * @param GoogleCloudDialogflowCxV3VersionVariants $versionVariants
-     */
-    public function setVersionVariants(GoogleCloudDialogflowCxV3VersionVariants $versionVariants)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3VersionVariants
-     */
-    public function getVersionVariants()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3ExperimentDefinition extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ExperimentDefinition
     {
     }
 }

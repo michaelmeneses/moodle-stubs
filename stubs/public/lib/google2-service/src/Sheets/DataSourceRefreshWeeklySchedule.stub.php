@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class DataSourceRefreshWeeklySchedule extends \Google\Collection
-{
-    protected $collection_key = 'daysOfWeek';
-    /**
-     * Days of the week to refresh. At least one day must be specified.
-     *
-     * @var string[]
-     */
-    public $daysOfWeek;
-    protected $startTimeType = TimeOfDay::class;
-    protected $startTimeDataType = '';
-    /**
-     * Days of the week to refresh. At least one day must be specified.
-     *
-     * @param string[] $daysOfWeek
-     */
-    public function setDaysOfWeek($daysOfWeek)
+namespace Google\Service\Sheets {
+    class DataSourceRefreshWeeklySchedule extends \Google\Collection
     {
+        protected $collection_key = 'daysOfWeek';
+        /**
+         * Days of the week to refresh. At least one day must be specified.
+         *
+         * @var string[]
+         */
+        public $daysOfWeek;
+        protected $startTimeType = TimeOfDay::class;
+        protected $startTimeDataType = '';
+        /**
+         * Days of the week to refresh. At least one day must be specified.
+         *
+         * @param string[] $daysOfWeek
+         */
+        public function setDaysOfWeek($daysOfWeek)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDaysOfWeek()
+        {
+        }
+        /**
+         * The start time of a time interval in which a data source refresh is
+         * scheduled. Only `hours` part is used. The time interval size defaults to
+         * that in the Sheets editor.
+         *
+         * @param TimeOfDay $startTime
+         */
+        public function setStartTime(TimeOfDay $startTime)
+        {
+        }
+        /**
+         * @return TimeOfDay
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Sheets\DataSourceRefreshWeeklySchedule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDaysOfWeek()
-    {
-    }
-    /**
-     * The start time of a time interval in which a data source refresh is
-     * scheduled. Only `hours` part is used. The time interval size defaults to
-     * that in the Sheets editor.
-     *
-     * @param TimeOfDay $startTime
-     */
-    public function setStartTime(TimeOfDay $startTime)
-    {
-    }
-    /**
-     * @return TimeOfDay
-     */
-    public function getStartTime()
+    class Google_Service_Sheets_DataSourceRefreshWeeklySchedule extends \Google\Service\Sheets\DataSourceRefreshWeeklySchedule
     {
     }
 }

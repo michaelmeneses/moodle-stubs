@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class LineItemAssignedTargetingOption extends \Google\Model
-{
-    protected $assignedTargetingOptionType = AssignedTargetingOption::class;
-    protected $assignedTargetingOptionDataType = '';
-    /**
-     * The ID of the line item the assigned targeting option is assigned to.
-     *
-     * @var string
-     */
-    public $lineItemId;
-    /**
-     * The assigned targeting option resource.
-     *
-     * @param AssignedTargetingOption $assignedTargetingOption
-     */
-    public function setAssignedTargetingOption(AssignedTargetingOption $assignedTargetingOption)
+namespace Google\Service\DisplayVideo {
+    class LineItemAssignedTargetingOption extends \Google\Model
     {
+        protected $assignedTargetingOptionType = AssignedTargetingOption::class;
+        protected $assignedTargetingOptionDataType = '';
+        /**
+         * The ID of the line item the assigned targeting option is assigned to.
+         *
+         * @var string
+         */
+        public $lineItemId;
+        /**
+         * The assigned targeting option resource.
+         *
+         * @param AssignedTargetingOption $assignedTargetingOption
+         */
+        public function setAssignedTargetingOption(AssignedTargetingOption $assignedTargetingOption)
+        {
+        }
+        /**
+         * @return AssignedTargetingOption
+         */
+        public function getAssignedTargetingOption()
+        {
+        }
+        /**
+         * The ID of the line item the assigned targeting option is assigned to.
+         *
+         * @param string $lineItemId
+         */
+        public function setLineItemId($lineItemId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLineItemId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AssignedTargetingOption
+     * Runtime class alias of \Google\Service\DisplayVideo\LineItemAssignedTargetingOption registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssignedTargetingOption()
-    {
-    }
-    /**
-     * The ID of the line item the assigned targeting option is assigned to.
-     *
-     * @param string $lineItemId
-     */
-    public function setLineItemId($lineItemId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLineItemId()
+    class Google_Service_DisplayVideo_LineItemAssignedTargetingOption extends \Google\Service\DisplayVideo\LineItemAssignedTargetingOption
     {
     }
 }

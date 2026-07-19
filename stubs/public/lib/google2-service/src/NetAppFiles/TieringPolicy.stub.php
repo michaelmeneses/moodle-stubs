@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetAppFiles;
-
-class TieringPolicy extends \Google\Model
-{
-    /**
-     * Unspecified.
-     */
-    public const TIER_ACTION_TIER_ACTION_UNSPECIFIED = 'TIER_ACTION_UNSPECIFIED';
-    /**
-     * When tiering is enabled, new cold data will be tiered.
-     */
-    public const TIER_ACTION_ENABLED = 'ENABLED';
-    /**
-     * When paused, tiering won't be performed on new data. Existing data stays
-     * tiered until accessed.
-     */
-    public const TIER_ACTION_PAUSED = 'PAUSED';
-    /**
-     * Optional. Time in days to mark the volume's data block as cold and make it
-     * eligible for tiering, can be range from 2-183. Default is 31.
-     *
-     * @var int
-     */
-    public $coolingThresholdDays;
-    /**
-     * Optional. Flag indicating that the hot tier bypass mode is enabled. Default
-     * is false. This is only applicable to Flex service level.
-     *
-     * @var bool
-     */
-    public $hotTierBypassModeEnabled;
-    /**
-     * Optional. Flag indicating if the volume has tiering policy enable/pause.
-     * Default is PAUSED.
-     *
-     * @var string
-     */
-    public $tierAction;
-    /**
-     * Optional. Time in days to mark the volume's data block as cold and make it
-     * eligible for tiering, can be range from 2-183. Default is 31.
-     *
-     * @param int $coolingThresholdDays
-     */
-    public function setCoolingThresholdDays($coolingThresholdDays)
+namespace Google\Service\NetAppFiles {
+    class TieringPolicy extends \Google\Model
     {
+        /**
+         * Unspecified.
+         */
+        public const TIER_ACTION_TIER_ACTION_UNSPECIFIED = 'TIER_ACTION_UNSPECIFIED';
+        /**
+         * When tiering is enabled, new cold data will be tiered.
+         */
+        public const TIER_ACTION_ENABLED = 'ENABLED';
+        /**
+         * When paused, tiering won't be performed on new data. Existing data stays
+         * tiered until accessed.
+         */
+        public const TIER_ACTION_PAUSED = 'PAUSED';
+        /**
+         * Optional. Time in days to mark the volume's data block as cold and make it
+         * eligible for tiering, can be range from 2-183. Default is 31.
+         *
+         * @var int
+         */
+        public $coolingThresholdDays;
+        /**
+         * Optional. Flag indicating that the hot tier bypass mode is enabled. Default
+         * is false. This is only applicable to Flex service level.
+         *
+         * @var bool
+         */
+        public $hotTierBypassModeEnabled;
+        /**
+         * Optional. Flag indicating if the volume has tiering policy enable/pause.
+         * Default is PAUSED.
+         *
+         * @var string
+         */
+        public $tierAction;
+        /**
+         * Optional. Time in days to mark the volume's data block as cold and make it
+         * eligible for tiering, can be range from 2-183. Default is 31.
+         *
+         * @param int $coolingThresholdDays
+         */
+        public function setCoolingThresholdDays($coolingThresholdDays)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCoolingThresholdDays()
+        {
+        }
+        /**
+         * Optional. Flag indicating that the hot tier bypass mode is enabled. Default
+         * is false. This is only applicable to Flex service level.
+         *
+         * @param bool $hotTierBypassModeEnabled
+         */
+        public function setHotTierBypassModeEnabled($hotTierBypassModeEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHotTierBypassModeEnabled()
+        {
+        }
+        /**
+         * Optional. Flag indicating if the volume has tiering policy enable/pause.
+         * Default is PAUSED.
+         *
+         * Accepted values: TIER_ACTION_UNSPECIFIED, ENABLED, PAUSED
+         *
+         * @param self::TIER_ACTION_* $tierAction
+         */
+        public function setTierAction($tierAction)
+        {
+        }
+        /**
+         * @return self::TIER_ACTION_*
+         */
+        public function getTierAction()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\NetAppFiles\TieringPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCoolingThresholdDays()
-    {
-    }
-    /**
-     * Optional. Flag indicating that the hot tier bypass mode is enabled. Default
-     * is false. This is only applicable to Flex service level.
-     *
-     * @param bool $hotTierBypassModeEnabled
-     */
-    public function setHotTierBypassModeEnabled($hotTierBypassModeEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getHotTierBypassModeEnabled()
-    {
-    }
-    /**
-     * Optional. Flag indicating if the volume has tiering policy enable/pause.
-     * Default is PAUSED.
-     *
-     * Accepted values: TIER_ACTION_UNSPECIFIED, ENABLED, PAUSED
-     *
-     * @param self::TIER_ACTION_* $tierAction
-     */
-    public function setTierAction($tierAction)
-    {
-    }
-    /**
-     * @return self::TIER_ACTION_*
-     */
-    public function getTierAction()
+    class Google_Service_NetAppFiles_TieringPolicy extends \Google\Service\NetAppFiles\TieringPolicy
     {
     }
 }

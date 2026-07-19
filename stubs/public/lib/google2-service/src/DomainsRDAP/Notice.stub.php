@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DomainsRDAP;
-
-class Notice extends \Google\Collection
-{
-    protected $collection_key = 'links';
-    /**
-     * @var string[]
-     */
-    public $description;
-    protected $linksType = Link::class;
-    protected $linksDataType = 'array';
-    /**
-     * @var string
-     */
-    public $title;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param string[]
-     */
-    public function setDescription($description)
+namespace Google\Service\DomainsRDAP {
+    class Notice extends \Google\Collection
     {
+        protected $collection_key = 'links';
+        /**
+         * @var string[]
+         */
+        public $description;
+        protected $linksType = Link::class;
+        protected $linksDataType = 'array';
+        /**
+         * @var string
+         */
+        public $title;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param string[]
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param Link[]
+         */
+        public function setLinks($links)
+        {
+        }
+        /**
+         * @return Link[]
+         */
+        public function getLinks()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DomainsRDAP\Notice registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param Link[]
-     */
-    public function setLinks($links)
-    {
-    }
-    /**
-     * @return Link[]
-     */
-    public function getLinks()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_DomainsRDAP_Notice extends \Google\Service\DomainsRDAP\Notice
     {
     }
 }

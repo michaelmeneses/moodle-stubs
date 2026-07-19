@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaModelevaluationMetricsGeneralTextGenerationEvaluationMetrics extends \Google\Model
-{
-    /**
-     * BLEU (bilingual evaluation understudy) scores based on sacrebleu
-     * implementation.
-     *
-     * @var float
-     */
-    public $bleu;
-    /**
-     * ROUGE-L (Longest Common Subsequence) scoring at summary level.
-     *
-     * @var float
-     */
-    public $rougeLSum;
-    /**
-     * BLEU (bilingual evaluation understudy) scores based on sacrebleu
-     * implementation.
-     *
-     * @param float $bleu
-     */
-    public function setBleu($bleu)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaModelevaluationMetricsGeneralTextGenerationEvaluationMetrics extends \Google\Model
     {
+        /**
+         * BLEU (bilingual evaluation understudy) scores based on sacrebleu
+         * implementation.
+         *
+         * @var float
+         */
+        public $bleu;
+        /**
+         * ROUGE-L (Longest Common Subsequence) scoring at summary level.
+         *
+         * @var float
+         */
+        public $rougeLSum;
+        /**
+         * BLEU (bilingual evaluation understudy) scores based on sacrebleu
+         * implementation.
+         *
+         * @param float $bleu
+         */
+        public function setBleu($bleu)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getBleu()
+        {
+        }
+        /**
+         * ROUGE-L (Longest Common Subsequence) scoring at summary level.
+         *
+         * @param float $rougeLSum
+         */
+        public function setRougeLSum($rougeLSum)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getRougeLSum()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaModelevaluationMetricsGeneralTextGenerationEvaluationMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBleu()
-    {
-    }
-    /**
-     * ROUGE-L (Longest Common Subsequence) scoring at summary level.
-     *
-     * @param float $rougeLSum
-     */
-    public function setRougeLSum($rougeLSum)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getRougeLSum()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaModelevaluationMetricsGeneralTextGenerationEvaluationMetrics extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaModelevaluationMetricsGeneralTextGenerationEvaluationMetrics
     {
     }
 }

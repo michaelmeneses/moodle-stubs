@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudTalentSolution;
-
-class SpellingCorrection extends \Google\Model
-{
-    /**
-     * Indicates if the query was corrected by the spell checker.
-     *
-     * @var bool
-     */
-    public $corrected;
-    /**
-     * Corrected output with html tags to highlight the corrected words. Corrected
-     * words are called out with the "*...*" html tags. For example, the user
-     * input query is "software enginear", where the second word, "enginear," is
-     * incorrect. It should be "engineer". When spelling correction is enabled,
-     * this value is "software *engineer*".
-     *
-     * @var string
-     */
-    public $correctedHtml;
-    /**
-     * Correction output consisting of the corrected keyword string.
-     *
-     * @var string
-     */
-    public $correctedText;
-    /**
-     * Indicates if the query was corrected by the spell checker.
-     *
-     * @param bool $corrected
-     */
-    public function setCorrected($corrected)
+namespace Google\Service\CloudTalentSolution {
+    class SpellingCorrection extends \Google\Model
     {
+        /**
+         * Indicates if the query was corrected by the spell checker.
+         *
+         * @var bool
+         */
+        public $corrected;
+        /**
+         * Corrected output with html tags to highlight the corrected words. Corrected
+         * words are called out with the "*...*" html tags. For example, the user
+         * input query is "software enginear", where the second word, "enginear," is
+         * incorrect. It should be "engineer". When spelling correction is enabled,
+         * this value is "software *engineer*".
+         *
+         * @var string
+         */
+        public $correctedHtml;
+        /**
+         * Correction output consisting of the corrected keyword string.
+         *
+         * @var string
+         */
+        public $correctedText;
+        /**
+         * Indicates if the query was corrected by the spell checker.
+         *
+         * @param bool $corrected
+         */
+        public function setCorrected($corrected)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCorrected()
+        {
+        }
+        /**
+         * Corrected output with html tags to highlight the corrected words. Corrected
+         * words are called out with the "*...*" html tags. For example, the user
+         * input query is "software enginear", where the second word, "enginear," is
+         * incorrect. It should be "engineer". When spelling correction is enabled,
+         * this value is "software *engineer*".
+         *
+         * @param string $correctedHtml
+         */
+        public function setCorrectedHtml($correctedHtml)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCorrectedHtml()
+        {
+        }
+        /**
+         * Correction output consisting of the corrected keyword string.
+         *
+         * @param string $correctedText
+         */
+        public function setCorrectedText($correctedText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCorrectedText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudTalentSolution\SpellingCorrection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCorrected()
-    {
-    }
-    /**
-     * Corrected output with html tags to highlight the corrected words. Corrected
-     * words are called out with the "*...*" html tags. For example, the user
-     * input query is "software enginear", where the second word, "enginear," is
-     * incorrect. It should be "engineer". When spelling correction is enabled,
-     * this value is "software *engineer*".
-     *
-     * @param string $correctedHtml
-     */
-    public function setCorrectedHtml($correctedHtml)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCorrectedHtml()
-    {
-    }
-    /**
-     * Correction output consisting of the corrected keyword string.
-     *
-     * @param string $correctedText
-     */
-    public function setCorrectedText($correctedText)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCorrectedText()
+    class Google_Service_CloudTalentSolution_SpellingCorrection extends \Google\Service\CloudTalentSolution\SpellingCorrection
     {
     }
 }

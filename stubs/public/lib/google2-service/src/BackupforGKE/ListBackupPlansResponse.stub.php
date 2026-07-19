@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BackupforGKE;
-
-class ListBackupPlansResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $backupPlansType = BackupPlan::class;
-    protected $backupPlansDataType = 'array';
-    /**
-     * A token which may be sent as page_token in a subsequent `ListBackupPlans`
-     * call to retrieve the next page of results. If this field is omitted or
-     * empty, then there are no more results to return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * The list of BackupPlans matching the given criteria.
-     *
-     * @param BackupPlan[] $backupPlans
-     */
-    public function setBackupPlans($backupPlans)
+namespace Google\Service\BackupforGKE {
+    class ListBackupPlansResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $backupPlansType = BackupPlan::class;
+        protected $backupPlansDataType = 'array';
+        /**
+         * A token which may be sent as page_token in a subsequent `ListBackupPlans`
+         * call to retrieve the next page of results. If this field is omitted or
+         * empty, then there are no more results to return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * The list of BackupPlans matching the given criteria.
+         *
+         * @param BackupPlan[] $backupPlans
+         */
+        public function setBackupPlans($backupPlans)
+        {
+        }
+        /**
+         * @return BackupPlan[]
+         */
+        public function getBackupPlans()
+        {
+        }
+        /**
+         * A token which may be sent as page_token in a subsequent `ListBackupPlans`
+         * call to retrieve the next page of results. If this field is omitted or
+         * empty, then there are no more results to return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BackupPlan[]
+     * Runtime class alias of \Google\Service\BackupforGKE\ListBackupPlansResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackupPlans()
-    {
-    }
-    /**
-     * A token which may be sent as page_token in a subsequent `ListBackupPlans`
-     * call to retrieve the next page of results. If this field is omitted or
-     * empty, then there are no more results to return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_BackupforGKE_ListBackupPlansResponse extends \Google\Service\BackupforGKE\ListBackupPlansResponse
     {
     }
 }

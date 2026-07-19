@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaTakeoverEditLockResponse extends \Google\Model
-{
-    protected $integrationVersionType = GoogleCloudIntegrationsV1alphaIntegrationVersion::class;
-    protected $integrationVersionDataType = '';
-    /**
-     * Version after the lock is acquired by the new user.
-     *
-     * @param GoogleCloudIntegrationsV1alphaIntegrationVersion $integrationVersion
-     */
-    public function setIntegrationVersion(GoogleCloudIntegrationsV1alphaIntegrationVersion $integrationVersion)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaTakeoverEditLockResponse extends \Google\Model
     {
+        protected $integrationVersionType = GoogleCloudIntegrationsV1alphaIntegrationVersion::class;
+        protected $integrationVersionDataType = '';
+        /**
+         * Version after the lock is acquired by the new user.
+         *
+         * @param GoogleCloudIntegrationsV1alphaIntegrationVersion $integrationVersion
+         */
+        public function setIntegrationVersion(GoogleCloudIntegrationsV1alphaIntegrationVersion $integrationVersion)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaIntegrationVersion
+         */
+        public function getIntegrationVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudIntegrationsV1alphaIntegrationVersion
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaTakeoverEditLockResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIntegrationVersion()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaTakeoverEditLockResponse extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaTakeoverEditLockResponse
     {
     }
 }

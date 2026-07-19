@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class BuildBazelRemoteExecutionV2Tree extends \Google\Collection
-{
-    protected $collection_key = 'children';
-    protected $childrenType = BuildBazelRemoteExecutionV2Directory::class;
-    protected $childrenDataType = 'array';
-    protected $rootType = BuildBazelRemoteExecutionV2Directory::class;
-    protected $rootDataType = '';
-    /**
-     * @param BuildBazelRemoteExecutionV2Directory[]
-     */
-    public function setChildren($children)
+namespace Google\Service\RemoteBuildExecution {
+    class BuildBazelRemoteExecutionV2Tree extends \Google\Collection
     {
+        protected $collection_key = 'children';
+        protected $childrenType = BuildBazelRemoteExecutionV2Directory::class;
+        protected $childrenDataType = 'array';
+        protected $rootType = BuildBazelRemoteExecutionV2Directory::class;
+        protected $rootDataType = '';
+        /**
+         * @param BuildBazelRemoteExecutionV2Directory[]
+         */
+        public function setChildren($children)
+        {
+        }
+        /**
+         * @return BuildBazelRemoteExecutionV2Directory[]
+         */
+        public function getChildren()
+        {
+        }
+        /**
+         * @param BuildBazelRemoteExecutionV2Directory
+         */
+        public function setRoot(BuildBazelRemoteExecutionV2Directory $root)
+        {
+        }
+        /**
+         * @return BuildBazelRemoteExecutionV2Directory
+         */
+        public function getRoot()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BuildBazelRemoteExecutionV2Directory[]
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2Tree registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChildren()
-    {
-    }
-    /**
-     * @param BuildBazelRemoteExecutionV2Directory
-     */
-    public function setRoot(BuildBazelRemoteExecutionV2Directory $root)
-    {
-    }
-    /**
-     * @return BuildBazelRemoteExecutionV2Directory
-     */
-    public function getRoot()
+    class Google_Service_RemoteBuildExecution_BuildBazelRemoteExecutionV2Tree extends \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2Tree
     {
     }
 }

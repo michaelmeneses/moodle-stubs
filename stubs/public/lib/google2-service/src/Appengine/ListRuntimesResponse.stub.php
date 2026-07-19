@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine;
-
-class ListRuntimesResponse extends \Google\Collection
-{
-    protected $collection_key = 'runtimes';
-    /**
-     * Continuation token for fetching the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $runtimesType = Runtime::class;
-    protected $runtimesDataType = 'array';
-    /**
-     * Continuation token for fetching the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Appengine {
+    class ListRuntimesResponse extends \Google\Collection
     {
+        protected $collection_key = 'runtimes';
+        /**
+         * Continuation token for fetching the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $runtimesType = Runtime::class;
+        protected $runtimesDataType = 'array';
+        /**
+         * Continuation token for fetching the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The runtimes available to the requested application.
+         *
+         * @param Runtime[] $runtimes
+         */
+        public function setRuntimes($runtimes)
+        {
+        }
+        /**
+         * @return Runtime[]
+         */
+        public function getRuntimes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Appengine\ListRuntimesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The runtimes available to the requested application.
-     *
-     * @param Runtime[] $runtimes
-     */
-    public function setRuntimes($runtimes)
-    {
-    }
-    /**
-     * @return Runtime[]
-     */
-    public function getRuntimes()
+    class Google_Service_Appengine_ListRuntimesResponse extends \Google\Service\Appengine\ListRuntimesResponse
     {
     }
 }

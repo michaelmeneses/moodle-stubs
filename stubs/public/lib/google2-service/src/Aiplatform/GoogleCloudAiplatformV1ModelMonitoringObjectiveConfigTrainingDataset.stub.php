@@ -21,126 +21,135 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ModelMonitoringObjectiveConfigTrainingDataset extends \Google\Model
-{
-    protected $bigquerySourceType = GoogleCloudAiplatformV1BigQuerySource::class;
-    protected $bigquerySourceDataType = '';
-    /**
-     * Data format of the dataset, only applicable if the input is from Google
-     * Cloud Storage. The possible formats are: "tf-record" The source file is a
-     * TFRecord file. "csv" The source file is a CSV file. "jsonl" The source file
-     * is a JSONL file.
-     *
-     * @var string
-     */
-    public $dataFormat;
-    /**
-     * The resource name of the Dataset used to train this Model.
-     *
-     * @var string
-     */
-    public $dataset;
-    protected $gcsSourceType = GoogleCloudAiplatformV1GcsSource::class;
-    protected $gcsSourceDataType = '';
-    protected $loggingSamplingStrategyType = GoogleCloudAiplatformV1SamplingStrategy::class;
-    protected $loggingSamplingStrategyDataType = '';
-    /**
-     * The target field name the model is to predict. This field will be excluded
-     * when doing Predict and (or) Explain for the training data.
-     *
-     * @var string
-     */
-    public $targetField;
-    /**
-     * The BigQuery table of the unmanaged Dataset used to train this Model.
-     *
-     * @param GoogleCloudAiplatformV1BigQuerySource $bigquerySource
-     */
-    public function setBigquerySource(GoogleCloudAiplatformV1BigQuerySource $bigquerySource)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ModelMonitoringObjectiveConfigTrainingDataset extends \Google\Model
     {
+        protected $bigquerySourceType = GoogleCloudAiplatformV1BigQuerySource::class;
+        protected $bigquerySourceDataType = '';
+        /**
+         * Data format of the dataset, only applicable if the input is from Google
+         * Cloud Storage. The possible formats are: "tf-record" The source file is a
+         * TFRecord file. "csv" The source file is a CSV file. "jsonl" The source file
+         * is a JSONL file.
+         *
+         * @var string
+         */
+        public $dataFormat;
+        /**
+         * The resource name of the Dataset used to train this Model.
+         *
+         * @var string
+         */
+        public $dataset;
+        protected $gcsSourceType = GoogleCloudAiplatformV1GcsSource::class;
+        protected $gcsSourceDataType = '';
+        protected $loggingSamplingStrategyType = GoogleCloudAiplatformV1SamplingStrategy::class;
+        protected $loggingSamplingStrategyDataType = '';
+        /**
+         * The target field name the model is to predict. This field will be excluded
+         * when doing Predict and (or) Explain for the training data.
+         *
+         * @var string
+         */
+        public $targetField;
+        /**
+         * The BigQuery table of the unmanaged Dataset used to train this Model.
+         *
+         * @param GoogleCloudAiplatformV1BigQuerySource $bigquerySource
+         */
+        public function setBigquerySource(GoogleCloudAiplatformV1BigQuerySource $bigquerySource)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1BigQuerySource
+         */
+        public function getBigquerySource()
+        {
+        }
+        /**
+         * Data format of the dataset, only applicable if the input is from Google
+         * Cloud Storage. The possible formats are: "tf-record" The source file is a
+         * TFRecord file. "csv" The source file is a CSV file. "jsonl" The source file
+         * is a JSONL file.
+         *
+         * @param string $dataFormat
+         */
+        public function setDataFormat($dataFormat)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataFormat()
+        {
+        }
+        /**
+         * The resource name of the Dataset used to train this Model.
+         *
+         * @param string $dataset
+         */
+        public function setDataset($dataset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataset()
+        {
+        }
+        /**
+         * The Google Cloud Storage uri of the unmanaged Dataset used to train this
+         * Model.
+         *
+         * @param GoogleCloudAiplatformV1GcsSource $gcsSource
+         */
+        public function setGcsSource(GoogleCloudAiplatformV1GcsSource $gcsSource)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1GcsSource
+         */
+        public function getGcsSource()
+        {
+        }
+        /**
+         * Strategy to sample data from Training Dataset. If not set, we process the
+         * whole dataset.
+         *
+         * @param GoogleCloudAiplatformV1SamplingStrategy $loggingSamplingStrategy
+         */
+        public function setLoggingSamplingStrategy(GoogleCloudAiplatformV1SamplingStrategy $loggingSamplingStrategy)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SamplingStrategy
+         */
+        public function getLoggingSamplingStrategy()
+        {
+        }
+        /**
+         * The target field name the model is to predict. This field will be excluded
+         * when doing Predict and (or) Explain for the training data.
+         *
+         * @param string $targetField
+         */
+        public function setTargetField($targetField)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetField()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1BigQuerySource
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ModelMonitoringObjectiveConfigTrainingDataset registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBigquerySource()
-    {
-    }
-    /**
-     * Data format of the dataset, only applicable if the input is from Google
-     * Cloud Storage. The possible formats are: "tf-record" The source file is a
-     * TFRecord file. "csv" The source file is a CSV file. "jsonl" The source file
-     * is a JSONL file.
-     *
-     * @param string $dataFormat
-     */
-    public function setDataFormat($dataFormat)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDataFormat()
-    {
-    }
-    /**
-     * The resource name of the Dataset used to train this Model.
-     *
-     * @param string $dataset
-     */
-    public function setDataset($dataset)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDataset()
-    {
-    }
-    /**
-     * The Google Cloud Storage uri of the unmanaged Dataset used to train this
-     * Model.
-     *
-     * @param GoogleCloudAiplatformV1GcsSource $gcsSource
-     */
-    public function setGcsSource(GoogleCloudAiplatformV1GcsSource $gcsSource)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1GcsSource
-     */
-    public function getGcsSource()
-    {
-    }
-    /**
-     * Strategy to sample data from Training Dataset. If not set, we process the
-     * whole dataset.
-     *
-     * @param GoogleCloudAiplatformV1SamplingStrategy $loggingSamplingStrategy
-     */
-    public function setLoggingSamplingStrategy(GoogleCloudAiplatformV1SamplingStrategy $loggingSamplingStrategy)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1SamplingStrategy
-     */
-    public function getLoggingSamplingStrategy()
-    {
-    }
-    /**
-     * The target field name the model is to predict. This field will be excluded
-     * when doing Predict and (or) Explain for the training data.
-     *
-     * @param string $targetField
-     */
-    public function setTargetField($targetField)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetField()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ModelMonitoringObjectiveConfigTrainingDataset extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ModelMonitoringObjectiveConfigTrainingDataset
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2ListDeidentifyTemplatesResponse extends \Google\Collection
-{
-    protected $collection_key = 'deidentifyTemplates';
-    protected $deidentifyTemplatesType = GooglePrivacyDlpV2DeidentifyTemplate::class;
-    protected $deidentifyTemplatesDataType = 'array';
-    /**
-     * If the next page is available then the next page token to be used in the
-     * following ListDeidentifyTemplates request.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of deidentify templates, up to page_size in
-     * ListDeidentifyTemplatesRequest.
-     *
-     * @param GooglePrivacyDlpV2DeidentifyTemplate[] $deidentifyTemplates
-     */
-    public function setDeidentifyTemplates($deidentifyTemplates)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2ListDeidentifyTemplatesResponse extends \Google\Collection
     {
+        protected $collection_key = 'deidentifyTemplates';
+        protected $deidentifyTemplatesType = GooglePrivacyDlpV2DeidentifyTemplate::class;
+        protected $deidentifyTemplatesDataType = 'array';
+        /**
+         * If the next page is available then the next page token to be used in the
+         * following ListDeidentifyTemplates request.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of deidentify templates, up to page_size in
+         * ListDeidentifyTemplatesRequest.
+         *
+         * @param GooglePrivacyDlpV2DeidentifyTemplate[] $deidentifyTemplates
+         */
+        public function setDeidentifyTemplates($deidentifyTemplates)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2DeidentifyTemplate[]
+         */
+        public function getDeidentifyTemplates()
+        {
+        }
+        /**
+         * If the next page is available then the next page token to be used in the
+         * following ListDeidentifyTemplates request.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2DeidentifyTemplate[]
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2ListDeidentifyTemplatesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeidentifyTemplates()
-    {
-    }
-    /**
-     * If the next page is available then the next page token to be used in the
-     * following ListDeidentifyTemplates request.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DLP_GooglePrivacyDlpV2ListDeidentifyTemplatesResponse extends \Google\Service\DLP\GooglePrivacyDlpV2ListDeidentifyTemplatesResponse
     {
     }
 }

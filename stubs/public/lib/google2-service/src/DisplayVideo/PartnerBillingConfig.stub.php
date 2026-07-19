@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class PartnerBillingConfig extends \Google\Model
-{
-    /**
-     * The ID of a partner default billing profile.
-     *
-     * @var string
-     */
-    public $billingProfileId;
-    /**
-     * The ID of a partner default billing profile.
-     *
-     * @param string $billingProfileId
-     */
-    public function setBillingProfileId($billingProfileId)
+namespace Google\Service\DisplayVideo {
+    class PartnerBillingConfig extends \Google\Model
     {
+        /**
+         * The ID of a partner default billing profile.
+         *
+         * @var string
+         */
+        public $billingProfileId;
+        /**
+         * The ID of a partner default billing profile.
+         *
+         * @param string $billingProfileId
+         */
+        public function setBillingProfileId($billingProfileId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBillingProfileId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\PartnerBillingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBillingProfileId()
+    class Google_Service_DisplayVideo_PartnerBillingConfig extends \Google\Service\DisplayVideo\PartnerBillingConfig
     {
     }
 }

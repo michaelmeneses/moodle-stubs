@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class Assignment extends \Google\Model
-{
-    protected $studentWorkFolderType = DriveFolder::class;
-    protected $studentWorkFolderDataType = '';
-    /**
-     * Drive folder where attachments from student submissions are placed. This is
-     * only populated for course teachers and administrators.
-     *
-     * @param DriveFolder $studentWorkFolder
-     */
-    public function setStudentWorkFolder(DriveFolder $studentWorkFolder)
+namespace Google\Service\Classroom {
+    class Assignment extends \Google\Model
     {
+        protected $studentWorkFolderType = DriveFolder::class;
+        protected $studentWorkFolderDataType = '';
+        /**
+         * Drive folder where attachments from student submissions are placed. This is
+         * only populated for course teachers and administrators.
+         *
+         * @param DriveFolder $studentWorkFolder
+         */
+        public function setStudentWorkFolder(DriveFolder $studentWorkFolder)
+        {
+        }
+        /**
+         * @return DriveFolder
+         */
+        public function getStudentWorkFolder()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DriveFolder
+     * Runtime class alias of \Google\Service\Classroom\Assignment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStudentWorkFolder()
+    class Google_Service_Classroom_Assignment extends \Google\Service\Classroom\Assignment
     {
     }
 }

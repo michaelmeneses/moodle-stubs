@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlVideoClassificationInputs extends \Google\Model
-{
-    /**
-     * Should not be set.
-     */
-    public const MODEL_TYPE_MODEL_TYPE_UNSPECIFIED = 'MODEL_TYPE_UNSPECIFIED';
-    /**
-     * A model best tailored to be used within Google Cloud, and which cannot be
-     * exported. Default.
-     */
-    public const MODEL_TYPE_CLOUD = 'CLOUD';
-    /**
-     * A model that, in addition to being available within Google Cloud, can also
-     * be exported (see ModelService.ExportModel) as a TensorFlow or TensorFlow
-     * Lite model and used on a mobile or edge device afterwards.
-     */
-    public const MODEL_TYPE_MOBILE_VERSATILE_1 = 'MOBILE_VERSATILE_1';
-    /**
-     * A model that, in addition to being available within Google Cloud, can also
-     * be exported (see ModelService.ExportModel) to a Jetson device afterwards.
-     */
-    public const MODEL_TYPE_MOBILE_JETSON_VERSATILE_1 = 'MOBILE_JETSON_VERSATILE_1';
-    /**
-     * @var string
-     */
-    public $modelType;
-    /**
-     * @param self::MODEL_TYPE_* $modelType
-     */
-    public function setModelType($modelType)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlVideoClassificationInputs extends \Google\Model
     {
+        /**
+         * Should not be set.
+         */
+        public const MODEL_TYPE_MODEL_TYPE_UNSPECIFIED = 'MODEL_TYPE_UNSPECIFIED';
+        /**
+         * A model best tailored to be used within Google Cloud, and which cannot be
+         * exported. Default.
+         */
+        public const MODEL_TYPE_CLOUD = 'CLOUD';
+        /**
+         * A model that, in addition to being available within Google Cloud, can also
+         * be exported (see ModelService.ExportModel) as a TensorFlow or TensorFlow
+         * Lite model and used on a mobile or edge device afterwards.
+         */
+        public const MODEL_TYPE_MOBILE_VERSATILE_1 = 'MOBILE_VERSATILE_1';
+        /**
+         * A model that, in addition to being available within Google Cloud, can also
+         * be exported (see ModelService.ExportModel) to a Jetson device afterwards.
+         */
+        public const MODEL_TYPE_MOBILE_JETSON_VERSATILE_1 = 'MOBILE_JETSON_VERSATILE_1';
+        /**
+         * @var string
+         */
+        public $modelType;
+        /**
+         * @param self::MODEL_TYPE_* $modelType
+         */
+        public function setModelType($modelType)
+        {
+        }
+        /**
+         * @return self::MODEL_TYPE_*
+         */
+        public function getModelType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::MODEL_TYPE_*
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlVideoClassificationInputs registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getModelType()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlVideoClassificationInputs extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaTrainingjobDefinitionAutoMlVideoClassificationInputs
     {
     }
 }

@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1ListPurchasableOffersResponse extends \Google\Collection
-{
-    protected $collection_key = 'purchasableOffers';
-    /**
-     * A token to retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $purchasableOffersType = GoogleCloudChannelV1PurchasableOffer::class;
-    protected $purchasableOffersDataType = 'array';
-    /**
-     * A token to retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1ListPurchasableOffersResponse extends \Google\Collection
     {
+        protected $collection_key = 'purchasableOffers';
+        /**
+         * A token to retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $purchasableOffersType = GoogleCloudChannelV1PurchasableOffer::class;
+        protected $purchasableOffersDataType = 'array';
+        /**
+         * A token to retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of Offers requested.
+         *
+         * @param GoogleCloudChannelV1PurchasableOffer[] $purchasableOffers
+         */
+        public function setPurchasableOffers($purchasableOffers)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1PurchasableOffer[]
+         */
+        public function getPurchasableOffers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1ListPurchasableOffersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of Offers requested.
-     *
-     * @param GoogleCloudChannelV1PurchasableOffer[] $purchasableOffers
-     */
-    public function setPurchasableOffers($purchasableOffers)
-    {
-    }
-    /**
-     * @return GoogleCloudChannelV1PurchasableOffer[]
-     */
-    public function getPurchasableOffers()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1ListPurchasableOffersResponse extends \Google\Service\Cloudchannel\GoogleCloudChannelV1ListPurchasableOffersResponse
     {
     }
 }

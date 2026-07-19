@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\IdentityToolkit;
-
-class IdentitytoolkitRelyingpartySendVerificationCodeRequest extends \Google\Model
-{
-    /**
-     * Receipt of successful app token validation with APNS.
-     *
-     * @var string
-     */
-    public $iosReceipt;
-    /**
-     * Secret delivered to iOS app via APNS.
-     *
-     * @var string
-     */
-    public $iosSecret;
-    /**
-     * The phone number to send the verification code to in E.164 format.
-     *
-     * @var string
-     */
-    public $phoneNumber;
-    /**
-     * Recaptcha solution.
-     *
-     * @var string
-     */
-    public $recaptchaToken;
-    /**
-     * Receipt of successful app token validation with APNS.
-     *
-     * @param string $iosReceipt
-     */
-    public function setIosReceipt($iosReceipt)
+namespace Google\Service\IdentityToolkit {
+    class IdentitytoolkitRelyingpartySendVerificationCodeRequest extends \Google\Model
     {
+        /**
+         * Receipt of successful app token validation with APNS.
+         *
+         * @var string
+         */
+        public $iosReceipt;
+        /**
+         * Secret delivered to iOS app via APNS.
+         *
+         * @var string
+         */
+        public $iosSecret;
+        /**
+         * The phone number to send the verification code to in E.164 format.
+         *
+         * @var string
+         */
+        public $phoneNumber;
+        /**
+         * Recaptcha solution.
+         *
+         * @var string
+         */
+        public $recaptchaToken;
+        /**
+         * Receipt of successful app token validation with APNS.
+         *
+         * @param string $iosReceipt
+         */
+        public function setIosReceipt($iosReceipt)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIosReceipt()
+        {
+        }
+        /**
+         * Secret delivered to iOS app via APNS.
+         *
+         * @param string $iosSecret
+         */
+        public function setIosSecret($iosSecret)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIosSecret()
+        {
+        }
+        /**
+         * The phone number to send the verification code to in E.164 format.
+         *
+         * @param string $phoneNumber
+         */
+        public function setPhoneNumber($phoneNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhoneNumber()
+        {
+        }
+        /**
+         * Recaptcha solution.
+         *
+         * @param string $recaptchaToken
+         */
+        public function setRecaptchaToken($recaptchaToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRecaptchaToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartySendVerificationCodeRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIosReceipt()
-    {
-    }
-    /**
-     * Secret delivered to iOS app via APNS.
-     *
-     * @param string $iosSecret
-     */
-    public function setIosSecret($iosSecret)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIosSecret()
-    {
-    }
-    /**
-     * The phone number to send the verification code to in E.164 format.
-     *
-     * @param string $phoneNumber
-     */
-    public function setPhoneNumber($phoneNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhoneNumber()
-    {
-    }
-    /**
-     * Recaptcha solution.
-     *
-     * @param string $recaptchaToken
-     */
-    public function setRecaptchaToken($recaptchaToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRecaptchaToken()
+    class Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartySendVerificationCodeRequest extends \Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartySendVerificationCodeRequest
     {
     }
 }

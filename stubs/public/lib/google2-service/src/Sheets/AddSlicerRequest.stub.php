@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class AddSlicerRequest extends \Google\Model
-{
-    protected $slicerType = Slicer::class;
-    protected $slicerDataType = '';
-    /**
-     * The slicer that should be added to the spreadsheet, including the position
-     * where it should be placed. The slicerId field is optional; if one is not
-     * set, an id will be randomly generated. (It is an error to specify the ID of
-     * a slicer that already exists.)
-     *
-     * @param Slicer $slicer
-     */
-    public function setSlicer(Slicer $slicer)
+namespace Google\Service\Sheets {
+    class AddSlicerRequest extends \Google\Model
     {
+        protected $slicerType = Slicer::class;
+        protected $slicerDataType = '';
+        /**
+         * The slicer that should be added to the spreadsheet, including the position
+         * where it should be placed. The slicerId field is optional; if one is not
+         * set, an id will be randomly generated. (It is an error to specify the ID of
+         * a slicer that already exists.)
+         *
+         * @param Slicer $slicer
+         */
+        public function setSlicer(Slicer $slicer)
+        {
+        }
+        /**
+         * @return Slicer
+         */
+        public function getSlicer()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Slicer
+     * Runtime class alias of \Google\Service\Sheets\AddSlicerRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSlicer()
+    class Google_Service_Sheets_AddSlicerRequest extends \Google\Service\Sheets\AddSlicerRequest
     {
     }
 }

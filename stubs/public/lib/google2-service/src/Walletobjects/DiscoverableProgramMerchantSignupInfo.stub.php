@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class DiscoverableProgramMerchantSignupInfo extends \Google\Collection
-{
-    protected $collection_key = 'signupSharedDatas';
-    /**
-     * User data that is sent in a POST request to the signup website URL. This
-     * information is encoded and then shared so that the merchant's website can
-     * prefill fields used to enroll the user for the discoverable program.
-     *
-     * @var string[]
-     */
-    public $signupSharedDatas;
-    protected $signupWebsiteType = Uri::class;
-    protected $signupWebsiteDataType = '';
-    /**
-     * User data that is sent in a POST request to the signup website URL. This
-     * information is encoded and then shared so that the merchant's website can
-     * prefill fields used to enroll the user for the discoverable program.
-     *
-     * @param string[] $signupSharedDatas
-     */
-    public function setSignupSharedDatas($signupSharedDatas)
+namespace Google\Service\Walletobjects {
+    class DiscoverableProgramMerchantSignupInfo extends \Google\Collection
     {
+        protected $collection_key = 'signupSharedDatas';
+        /**
+         * User data that is sent in a POST request to the signup website URL. This
+         * information is encoded and then shared so that the merchant's website can
+         * prefill fields used to enroll the user for the discoverable program.
+         *
+         * @var string[]
+         */
+        public $signupSharedDatas;
+        protected $signupWebsiteType = Uri::class;
+        protected $signupWebsiteDataType = '';
+        /**
+         * User data that is sent in a POST request to the signup website URL. This
+         * information is encoded and then shared so that the merchant's website can
+         * prefill fields used to enroll the user for the discoverable program.
+         *
+         * @param string[] $signupSharedDatas
+         */
+        public function setSignupSharedDatas($signupSharedDatas)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSignupSharedDatas()
+        {
+        }
+        /**
+         * The URL to direct the user to for the merchant's signup site.
+         *
+         * @param Uri $signupWebsite
+         */
+        public function setSignupWebsite(Uri $signupWebsite)
+        {
+        }
+        /**
+         * @return Uri
+         */
+        public function getSignupWebsite()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Walletobjects\DiscoverableProgramMerchantSignupInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSignupSharedDatas()
-    {
-    }
-    /**
-     * The URL to direct the user to for the merchant's signup site.
-     *
-     * @param Uri $signupWebsite
-     */
-    public function setSignupWebsite(Uri $signupWebsite)
-    {
-    }
-    /**
-     * @return Uri
-     */
-    public function getSignupWebsite()
+    class Google_Service_Walletobjects_DiscoverableProgramMerchantSignupInfo extends \Google\Service\Walletobjects\DiscoverableProgramMerchantSignupInfo
     {
     }
 }

@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyVersionsV1PolicySchemaFieldDependencies extends \Google\Model
-{
-    /**
-     * The source field which this field depends on.
-     *
-     * @var string
-     */
-    public $sourceField;
-    /**
-     * The value which the source field must have for this field to be allowed to
-     * be set.
-     *
-     * @var string
-     */
-    public $sourceFieldValue;
-    /**
-     * The source field which this field depends on.
-     *
-     * @param string $sourceField
-     */
-    public function setSourceField($sourceField)
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyVersionsV1PolicySchemaFieldDependencies extends \Google\Model
     {
+        /**
+         * The source field which this field depends on.
+         *
+         * @var string
+         */
+        public $sourceField;
+        /**
+         * The value which the source field must have for this field to be allowed to
+         * be set.
+         *
+         * @var string
+         */
+        public $sourceFieldValue;
+        /**
+         * The source field which this field depends on.
+         *
+         * @param string $sourceField
+         */
+        public function setSourceField($sourceField)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceField()
+        {
+        }
+        /**
+         * The value which the source field must have for this field to be allowed to
+         * be set.
+         *
+         * @param string $sourceFieldValue
+         */
+        public function setSourceFieldValue($sourceFieldValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceFieldValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1PolicySchemaFieldDependencies registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSourceField()
-    {
-    }
-    /**
-     * The value which the source field must have for this field to be allowed to
-     * be set.
-     *
-     * @param string $sourceFieldValue
-     */
-    public function setSourceFieldValue($sourceFieldValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSourceFieldValue()
+    class Google_Service_ChromePolicy_GoogleChromePolicyVersionsV1PolicySchemaFieldDependencies extends \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1PolicySchemaFieldDependencies
     {
     }
 }

@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestGroupBy extends \Google\Collection
-{
-    protected $collection_key = 'fields';
-    /**
-     * @var string[]
-     */
-    public $fields;
-    /**
-     * @var string
-     */
-    public $reducer;
-    /**
-     * @param string[]
-     */
-    public function setFields($fields)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestGroupBy extends \Google\Collection
     {
+        protected $collection_key = 'fields';
+        /**
+         * @var string[]
+         */
+        public $fields;
+        /**
+         * @var string
+         */
+        public $reducer;
+        /**
+         * @param string[]
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFields()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReducer($reducer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReducer()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestGroupBy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFields()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReducer($reducer)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReducer()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestGroupBy extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaMonitorExecutionStatsRequestGroupBy
     {
     }
 }

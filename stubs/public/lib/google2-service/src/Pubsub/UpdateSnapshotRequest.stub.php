@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Pubsub;
-
-class UpdateSnapshotRequest extends \Google\Model
-{
-    protected $snapshotType = Snapshot::class;
-    protected $snapshotDataType = '';
-    /**
-     * Required. Indicates which fields in the provided snapshot to update. Must
-     * be specified and non-empty.
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * Required. The updated snapshot object.
-     *
-     * @param Snapshot $snapshot
-     */
-    public function setSnapshot(Snapshot $snapshot)
+namespace Google\Service\Pubsub {
+    class UpdateSnapshotRequest extends \Google\Model
     {
+        protected $snapshotType = Snapshot::class;
+        protected $snapshotDataType = '';
+        /**
+         * Required. Indicates which fields in the provided snapshot to update. Must
+         * be specified and non-empty.
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * Required. The updated snapshot object.
+         *
+         * @param Snapshot $snapshot
+         */
+        public function setSnapshot(Snapshot $snapshot)
+        {
+        }
+        /**
+         * @return Snapshot
+         */
+        public function getSnapshot()
+        {
+        }
+        /**
+         * Required. Indicates which fields in the provided snapshot to update. Must
+         * be specified and non-empty.
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Snapshot
+     * Runtime class alias of \Google\Service\Pubsub\UpdateSnapshotRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSnapshot()
-    {
-    }
-    /**
-     * Required. Indicates which fields in the provided snapshot to update. Must
-     * be specified and non-empty.
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_Pubsub_UpdateSnapshotRequest extends \Google\Service\Pubsub\UpdateSnapshotRequest
     {
     }
 }

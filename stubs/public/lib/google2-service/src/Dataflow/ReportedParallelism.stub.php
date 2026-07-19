@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class ReportedParallelism extends \Google\Model
-{
-    /**
-     * Specifies whether the parallelism is infinite. If true, "value" is ignored.
-     * Infinite parallelism means the service will assume that the work item can
-     * always be split into more non-empty work items by dynamic splitting. This
-     * is a work-around for lack of support for infinity by the current JSON-based
-     * Java RPC stack.
-     *
-     * @var bool
-     */
-    public $isInfinite;
-    /**
-     * Specifies the level of parallelism in case it is finite.
-     *
-     * @var 
-     */
-    public $value;
-    /**
-     * Specifies whether the parallelism is infinite. If true, "value" is ignored.
-     * Infinite parallelism means the service will assume that the work item can
-     * always be split into more non-empty work items by dynamic splitting. This
-     * is a work-around for lack of support for infinity by the current JSON-based
-     * Java RPC stack.
-     *
-     * @param bool $isInfinite
-     */
-    public function setIsInfinite($isInfinite)
+namespace Google\Service\Dataflow {
+    class ReportedParallelism extends \Google\Model
     {
+        /**
+         * Specifies whether the parallelism is infinite. If true, "value" is ignored.
+         * Infinite parallelism means the service will assume that the work item can
+         * always be split into more non-empty work items by dynamic splitting. This
+         * is a work-around for lack of support for infinity by the current JSON-based
+         * Java RPC stack.
+         *
+         * @var bool
+         */
+        public $isInfinite;
+        /**
+         * Specifies the level of parallelism in case it is finite.
+         *
+         * @var 
+         */
+        public $value;
+        /**
+         * Specifies whether the parallelism is infinite. If true, "value" is ignored.
+         * Infinite parallelism means the service will assume that the work item can
+         * always be split into more non-empty work items by dynamic splitting. This
+         * is a work-around for lack of support for infinity by the current JSON-based
+         * Java RPC stack.
+         *
+         * @param bool $isInfinite
+         */
+        public function setIsInfinite($isInfinite)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsInfinite()
+        {
+        }
+        public function setValue($value)
+        {
+        }
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Dataflow\ReportedParallelism registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIsInfinite()
-    {
-    }
-    public function setValue($value)
-    {
-    }
-    public function getValue()
+    class Google_Service_Dataflow_ReportedParallelism extends \Google\Service\Dataflow\ReportedParallelism
     {
     }
 }

@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class TextWithTooltip extends \Google\Model
-{
-    /**
-     * Default value. Will never be provided by the API.
-     */
-    public const TOOLTIP_ICON_STYLE_TOOLTIP_ICON_STYLE_UNSPECIFIED = 'TOOLTIP_ICON_STYLE_UNSPECIFIED';
-    /**
-     * Used when the tooltip adds additional information to the context, the 'i'
-     * can be used as an icon.
-     */
-    public const TOOLTIP_ICON_STYLE_INFO = 'INFO';
-    /**
-     * Used when the tooltip shows helpful information, the '?' can be used as an
-     * icon.
-     */
-    public const TOOLTIP_ICON_STYLE_QUESTION = 'QUESTION';
-    /**
-     * Value of the tooltip as a simple text.
-     *
-     * @var string
-     */
-    public $simpleTooltipValue;
-    /**
-     * Value of the message as a simple text.
-     *
-     * @var string
-     */
-    public $simpleValue;
-    /**
-     * The suggested type of an icon for tooltip, if a tooltip is present.
-     *
-     * @var string
-     */
-    public $tooltipIconStyle;
-    /**
-     * Value of the tooltip as a simple text.
-     *
-     * @param string $simpleTooltipValue
-     */
-    public function setSimpleTooltipValue($simpleTooltipValue)
+namespace Google\Service\ShoppingContent {
+    class TextWithTooltip extends \Google\Model
     {
+        /**
+         * Default value. Will never be provided by the API.
+         */
+        public const TOOLTIP_ICON_STYLE_TOOLTIP_ICON_STYLE_UNSPECIFIED = 'TOOLTIP_ICON_STYLE_UNSPECIFIED';
+        /**
+         * Used when the tooltip adds additional information to the context, the 'i'
+         * can be used as an icon.
+         */
+        public const TOOLTIP_ICON_STYLE_INFO = 'INFO';
+        /**
+         * Used when the tooltip shows helpful information, the '?' can be used as an
+         * icon.
+         */
+        public const TOOLTIP_ICON_STYLE_QUESTION = 'QUESTION';
+        /**
+         * Value of the tooltip as a simple text.
+         *
+         * @var string
+         */
+        public $simpleTooltipValue;
+        /**
+         * Value of the message as a simple text.
+         *
+         * @var string
+         */
+        public $simpleValue;
+        /**
+         * The suggested type of an icon for tooltip, if a tooltip is present.
+         *
+         * @var string
+         */
+        public $tooltipIconStyle;
+        /**
+         * Value of the tooltip as a simple text.
+         *
+         * @param string $simpleTooltipValue
+         */
+        public function setSimpleTooltipValue($simpleTooltipValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSimpleTooltipValue()
+        {
+        }
+        /**
+         * Value of the message as a simple text.
+         *
+         * @param string $simpleValue
+         */
+        public function setSimpleValue($simpleValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSimpleValue()
+        {
+        }
+        /**
+         * The suggested type of an icon for tooltip, if a tooltip is present.
+         *
+         * Accepted values: TOOLTIP_ICON_STYLE_UNSPECIFIED, INFO, QUESTION
+         *
+         * @param self::TOOLTIP_ICON_STYLE_* $tooltipIconStyle
+         */
+        public function setTooltipIconStyle($tooltipIconStyle)
+        {
+        }
+        /**
+         * @return self::TOOLTIP_ICON_STYLE_*
+         */
+        public function getTooltipIconStyle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\TextWithTooltip registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSimpleTooltipValue()
-    {
-    }
-    /**
-     * Value of the message as a simple text.
-     *
-     * @param string $simpleValue
-     */
-    public function setSimpleValue($simpleValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSimpleValue()
-    {
-    }
-    /**
-     * The suggested type of an icon for tooltip, if a tooltip is present.
-     *
-     * Accepted values: TOOLTIP_ICON_STYLE_UNSPECIFIED, INFO, QUESTION
-     *
-     * @param self::TOOLTIP_ICON_STYLE_* $tooltipIconStyle
-     */
-    public function setTooltipIconStyle($tooltipIconStyle)
-    {
-    }
-    /**
-     * @return self::TOOLTIP_ICON_STYLE_*
-     */
-    public function getTooltipIconStyle()
+    class Google_Service_ShoppingContent_TextWithTooltip extends \Google\Service\ShoppingContent\TextWithTooltip
     {
     }
 }

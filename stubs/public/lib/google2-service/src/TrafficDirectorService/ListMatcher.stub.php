@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TrafficDirectorService;
-
-class ListMatcher extends \Google\Model
-{
-    protected $oneOfType = ValueMatcher::class;
-    protected $oneOfDataType = '';
-    /**
-     * If specified, at least one of the values in the list must match the value
-     * specified.
-     *
-     * @param ValueMatcher $oneOf
-     */
-    public function setOneOf(ValueMatcher $oneOf)
+namespace Google\Service\TrafficDirectorService {
+    class ListMatcher extends \Google\Model
     {
+        protected $oneOfType = ValueMatcher::class;
+        protected $oneOfDataType = '';
+        /**
+         * If specified, at least one of the values in the list must match the value
+         * specified.
+         *
+         * @param ValueMatcher $oneOf
+         */
+        public function setOneOf(ValueMatcher $oneOf)
+        {
+        }
+        /**
+         * @return ValueMatcher
+         */
+        public function getOneOf()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ValueMatcher
+     * Runtime class alias of \Google\Service\TrafficDirectorService\ListMatcher registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOneOf()
+    class Google_Service_TrafficDirectorService_ListMatcher extends \Google\Service\TrafficDirectorService\ListMatcher
     {
     }
 }

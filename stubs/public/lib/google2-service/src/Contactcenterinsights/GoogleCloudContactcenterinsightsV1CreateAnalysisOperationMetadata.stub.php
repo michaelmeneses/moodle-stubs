@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1CreateAnalysisOperationMetadata extends \Google\Model
-{
-    protected $annotatorSelectorType = GoogleCloudContactcenterinsightsV1AnnotatorSelector::class;
-    protected $annotatorSelectorDataType = '';
-    /**
-     * Output only. The Conversation that this Analysis Operation belongs to.
-     *
-     * @var string
-     */
-    public $conversation;
-    /**
-     * Output only. The time the operation was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. The time the operation finished running.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * Output only. The annotator selector used for the analysis (if any).
-     *
-     * @param GoogleCloudContactcenterinsightsV1AnnotatorSelector $annotatorSelector
-     */
-    public function setAnnotatorSelector(GoogleCloudContactcenterinsightsV1AnnotatorSelector $annotatorSelector)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1CreateAnalysisOperationMetadata extends \Google\Model
     {
+        protected $annotatorSelectorType = GoogleCloudContactcenterinsightsV1AnnotatorSelector::class;
+        protected $annotatorSelectorDataType = '';
+        /**
+         * Output only. The Conversation that this Analysis Operation belongs to.
+         *
+         * @var string
+         */
+        public $conversation;
+        /**
+         * Output only. The time the operation was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. The time the operation finished running.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * Output only. The annotator selector used for the analysis (if any).
+         *
+         * @param GoogleCloudContactcenterinsightsV1AnnotatorSelector $annotatorSelector
+         */
+        public function setAnnotatorSelector(GoogleCloudContactcenterinsightsV1AnnotatorSelector $annotatorSelector)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1AnnotatorSelector
+         */
+        public function getAnnotatorSelector()
+        {
+        }
+        /**
+         * Output only. The Conversation that this Analysis Operation belongs to.
+         *
+         * @param string $conversation
+         */
+        public function setConversation($conversation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConversation()
+        {
+        }
+        /**
+         * Output only. The time the operation was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. The time the operation finished running.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContactcenterinsightsV1AnnotatorSelector
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1CreateAnalysisOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotatorSelector()
-    {
-    }
-    /**
-     * Output only. The Conversation that this Analysis Operation belongs to.
-     *
-     * @param string $conversation
-     */
-    public function setConversation($conversation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getConversation()
-    {
-    }
-    /**
-     * Output only. The time the operation was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. The time the operation finished running.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1CreateAnalysisOperationMetadata extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1CreateAnalysisOperationMetadata
     {
     }
 }

@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityPosture;
-
-class SecurityHealthAnalyticsModule extends \Google\Model
-{
-    /**
-     * Default value. This value is unused.
-     */
-    public const MODULE_ENABLEMENT_STATE_ENABLEMENT_STATE_UNSPECIFIED = 'ENABLEMENT_STATE_UNSPECIFIED';
-    /**
-     * The detector or custom module is enabled.
-     */
-    public const MODULE_ENABLEMENT_STATE_ENABLED = 'ENABLED';
-    /**
-     * The detector or custom module is disabled.
-     */
-    public const MODULE_ENABLEMENT_STATE_DISABLED = 'DISABLED';
-    /**
-     * Whether the detector is enabled at a specified level of the resource
-     * hierarchy.
-     *
-     * @var string
-     */
-    public $moduleEnablementState;
-    /**
-     * Required. The name of the detector. For example,
-     * `BIGQUERY_TABLE_CMEK_DISABLED`. This field is also used as the finding
-     * category for all the asset violation findings that the detector returns.
-     *
-     * @var string
-     */
-    public $moduleName;
-    /**
-     * Whether the detector is enabled at a specified level of the resource
-     * hierarchy.
-     *
-     * Accepted values: ENABLEMENT_STATE_UNSPECIFIED, ENABLED, DISABLED
-     *
-     * @param self::MODULE_ENABLEMENT_STATE_* $moduleEnablementState
-     */
-    public function setModuleEnablementState($moduleEnablementState)
+namespace Google\Service\SecurityPosture {
+    class SecurityHealthAnalyticsModule extends \Google\Model
     {
+        /**
+         * Default value. This value is unused.
+         */
+        public const MODULE_ENABLEMENT_STATE_ENABLEMENT_STATE_UNSPECIFIED = 'ENABLEMENT_STATE_UNSPECIFIED';
+        /**
+         * The detector or custom module is enabled.
+         */
+        public const MODULE_ENABLEMENT_STATE_ENABLED = 'ENABLED';
+        /**
+         * The detector or custom module is disabled.
+         */
+        public const MODULE_ENABLEMENT_STATE_DISABLED = 'DISABLED';
+        /**
+         * Whether the detector is enabled at a specified level of the resource
+         * hierarchy.
+         *
+         * @var string
+         */
+        public $moduleEnablementState;
+        /**
+         * Required. The name of the detector. For example,
+         * `BIGQUERY_TABLE_CMEK_DISABLED`. This field is also used as the finding
+         * category for all the asset violation findings that the detector returns.
+         *
+         * @var string
+         */
+        public $moduleName;
+        /**
+         * Whether the detector is enabled at a specified level of the resource
+         * hierarchy.
+         *
+         * Accepted values: ENABLEMENT_STATE_UNSPECIFIED, ENABLED, DISABLED
+         *
+         * @param self::MODULE_ENABLEMENT_STATE_* $moduleEnablementState
+         */
+        public function setModuleEnablementState($moduleEnablementState)
+        {
+        }
+        /**
+         * @return self::MODULE_ENABLEMENT_STATE_*
+         */
+        public function getModuleEnablementState()
+        {
+        }
+        /**
+         * Required. The name of the detector. For example,
+         * `BIGQUERY_TABLE_CMEK_DISABLED`. This field is also used as the finding
+         * category for all the asset violation findings that the detector returns.
+         *
+         * @param string $moduleName
+         */
+        public function setModuleName($moduleName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModuleName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::MODULE_ENABLEMENT_STATE_*
+     * Runtime class alias of \Google\Service\SecurityPosture\SecurityHealthAnalyticsModule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getModuleEnablementState()
-    {
-    }
-    /**
-     * Required. The name of the detector. For example,
-     * `BIGQUERY_TABLE_CMEK_DISABLED`. This field is also used as the finding
-     * category for all the asset violation findings that the detector returns.
-     *
-     * @param string $moduleName
-     */
-    public function setModuleName($moduleName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getModuleName()
+    class Google_Service_SecurityPosture_SecurityHealthAnalyticsModule extends \Google\Service\SecurityPosture\SecurityHealthAnalyticsModule
     {
     }
 }

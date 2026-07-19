@@ -21,121 +21,130 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChecksService;
-
-class GoogleChecksRepoScanV1alphaRepoScan extends \Google\Collection
-{
-    protected $collection_key = 'sources';
-    /**
-     * CLI version.
-     *
-     * @var string
-     */
-    public $cliVersion;
-    /**
-     * Local scan path.
-     *
-     * @var string
-     */
-    public $localScanPath;
-    /**
-     * Identifier. Resource name of the scan.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * A URL to view results.
-     *
-     * @var string
-     */
-    public $resultsUri;
-    protected $scmMetadataType = GoogleChecksRepoScanV1alphaScmMetadata::class;
-    protected $scmMetadataDataType = '';
-    protected $sourcesType = GoogleChecksRepoScanV1alphaSource::class;
-    protected $sourcesDataType = 'array';
-    /**
-     * CLI version.
-     *
-     * @param string $cliVersion
-     */
-    public function setCliVersion($cliVersion)
+namespace Google\Service\ChecksService {
+    class GoogleChecksRepoScanV1alphaRepoScan extends \Google\Collection
     {
+        protected $collection_key = 'sources';
+        /**
+         * CLI version.
+         *
+         * @var string
+         */
+        public $cliVersion;
+        /**
+         * Local scan path.
+         *
+         * @var string
+         */
+        public $localScanPath;
+        /**
+         * Identifier. Resource name of the scan.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * A URL to view results.
+         *
+         * @var string
+         */
+        public $resultsUri;
+        protected $scmMetadataType = GoogleChecksRepoScanV1alphaScmMetadata::class;
+        protected $scmMetadataDataType = '';
+        protected $sourcesType = GoogleChecksRepoScanV1alphaSource::class;
+        protected $sourcesDataType = 'array';
+        /**
+         * CLI version.
+         *
+         * @param string $cliVersion
+         */
+        public function setCliVersion($cliVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCliVersion()
+        {
+        }
+        /**
+         * Local scan path.
+         *
+         * @param string $localScanPath
+         */
+        public function setLocalScanPath($localScanPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocalScanPath()
+        {
+        }
+        /**
+         * Identifier. Resource name of the scan.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * A URL to view results.
+         *
+         * @param string $resultsUri
+         */
+        public function setResultsUri($resultsUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResultsUri()
+        {
+        }
+        /**
+         * SCM metadata.
+         *
+         * @param GoogleChecksRepoScanV1alphaScmMetadata $scmMetadata
+         */
+        public function setScmMetadata(GoogleChecksRepoScanV1alphaScmMetadata $scmMetadata)
+        {
+        }
+        /**
+         * @return GoogleChecksRepoScanV1alphaScmMetadata
+         */
+        public function getScmMetadata()
+        {
+        }
+        /**
+         * Data sources detected.
+         *
+         * @param GoogleChecksRepoScanV1alphaSource[] $sources
+         */
+        public function setSources($sources)
+        {
+        }
+        /**
+         * @return GoogleChecksRepoScanV1alphaSource[]
+         */
+        public function getSources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChecksService\GoogleChecksRepoScanV1alphaRepoScan registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCliVersion()
-    {
-    }
-    /**
-     * Local scan path.
-     *
-     * @param string $localScanPath
-     */
-    public function setLocalScanPath($localScanPath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocalScanPath()
-    {
-    }
-    /**
-     * Identifier. Resource name of the scan.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * A URL to view results.
-     *
-     * @param string $resultsUri
-     */
-    public function setResultsUri($resultsUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResultsUri()
-    {
-    }
-    /**
-     * SCM metadata.
-     *
-     * @param GoogleChecksRepoScanV1alphaScmMetadata $scmMetadata
-     */
-    public function setScmMetadata(GoogleChecksRepoScanV1alphaScmMetadata $scmMetadata)
-    {
-    }
-    /**
-     * @return GoogleChecksRepoScanV1alphaScmMetadata
-     */
-    public function getScmMetadata()
-    {
-    }
-    /**
-     * Data sources detected.
-     *
-     * @param GoogleChecksRepoScanV1alphaSource[] $sources
-     */
-    public function setSources($sources)
-    {
-    }
-    /**
-     * @return GoogleChecksRepoScanV1alphaSource[]
-     */
-    public function getSources()
+    class Google_Service_ChecksService_GoogleChecksRepoScanV1alphaRepoScan extends \Google\Service\ChecksService\GoogleChecksRepoScanV1alphaRepoScan
     {
     }
 }

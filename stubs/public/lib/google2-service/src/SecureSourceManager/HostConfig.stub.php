@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecureSourceManager;
-
-class HostConfig extends \Google\Model
-{
-    /**
-     * Output only. API hostname.
-     *
-     * @var string
-     */
-    public $api;
-    /**
-     * Output only. Git HTTP hostname.
-     *
-     * @var string
-     */
-    public $gitHttp;
-    /**
-     * Output only. Git SSH hostname.
-     *
-     * @var string
-     */
-    public $gitSsh;
-    /**
-     * Output only. HTML hostname.
-     *
-     * @var string
-     */
-    public $html;
-    /**
-     * Output only. API hostname.
-     *
-     * @param string $api
-     */
-    public function setApi($api)
+namespace Google\Service\SecureSourceManager {
+    class HostConfig extends \Google\Model
     {
+        /**
+         * Output only. API hostname.
+         *
+         * @var string
+         */
+        public $api;
+        /**
+         * Output only. Git HTTP hostname.
+         *
+         * @var string
+         */
+        public $gitHttp;
+        /**
+         * Output only. Git SSH hostname.
+         *
+         * @var string
+         */
+        public $gitSsh;
+        /**
+         * Output only. HTML hostname.
+         *
+         * @var string
+         */
+        public $html;
+        /**
+         * Output only. API hostname.
+         *
+         * @param string $api
+         */
+        public function setApi($api)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApi()
+        {
+        }
+        /**
+         * Output only. Git HTTP hostname.
+         *
+         * @param string $gitHttp
+         */
+        public function setGitHttp($gitHttp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGitHttp()
+        {
+        }
+        /**
+         * Output only. Git SSH hostname.
+         *
+         * @param string $gitSsh
+         */
+        public function setGitSsh($gitSsh)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGitSsh()
+        {
+        }
+        /**
+         * Output only. HTML hostname.
+         *
+         * @param string $html
+         */
+        public function setHtml($html)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHtml()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecureSourceManager\HostConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApi()
-    {
-    }
-    /**
-     * Output only. Git HTTP hostname.
-     *
-     * @param string $gitHttp
-     */
-    public function setGitHttp($gitHttp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGitHttp()
-    {
-    }
-    /**
-     * Output only. Git SSH hostname.
-     *
-     * @param string $gitSsh
-     */
-    public function setGitSsh($gitSsh)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGitSsh()
-    {
-    }
-    /**
-     * Output only. HTML hostname.
-     *
-     * @param string $html
-     */
-    public function setHtml($html)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHtml()
+    class Google_Service_SecureSourceManager_HostConfig extends \Google\Service\SecureSourceManager\HostConfig
     {
     }
 }

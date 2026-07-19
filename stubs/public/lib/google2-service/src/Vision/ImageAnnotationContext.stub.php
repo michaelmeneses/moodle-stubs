@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class ImageAnnotationContext extends \Google\Model
-{
-    /**
-     * If the file was a PDF or TIFF, this field gives the page number within the
-     * file used to produce the image.
-     *
-     * @var int
-     */
-    public $pageNumber;
-    /**
-     * The URI of the file used to produce the image.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * If the file was a PDF or TIFF, this field gives the page number within the
-     * file used to produce the image.
-     *
-     * @param int $pageNumber
-     */
-    public function setPageNumber($pageNumber)
+namespace Google\Service\Vision {
+    class ImageAnnotationContext extends \Google\Model
     {
+        /**
+         * If the file was a PDF or TIFF, this field gives the page number within the
+         * file used to produce the image.
+         *
+         * @var int
+         */
+        public $pageNumber;
+        /**
+         * The URI of the file used to produce the image.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * If the file was a PDF or TIFF, this field gives the page number within the
+         * file used to produce the image.
+         *
+         * @param int $pageNumber
+         */
+        public function setPageNumber($pageNumber)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPageNumber()
+        {
+        }
+        /**
+         * The URI of the file used to produce the image.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Vision\ImageAnnotationContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPageNumber()
-    {
-    }
-    /**
-     * The URI of the file used to produce the image.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_Vision_ImageAnnotationContext extends \Google\Service\Vision\ImageAnnotationContext
     {
     }
 }

@@ -21,120 +21,129 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class IncludeConditions extends \Google\Model
-{
-    /**
-     * The look-back window lets you specify a time frame for evaluating the
-     * behavior that qualifies users for your audience. For example, if your
-     * filters include users from Central Asia, and Transactions Greater than 2,
-     * and you set the look-back window to 14 days, then any user from Central
-     * Asia whose cumulative transactions exceed 2 during the last 14 days is
-     * added to the audience.
-     *
-     * @var int
-     */
-    public $daysToLookBack;
-    /**
-     * Boolean indicating whether this segment is a smart list.
-     * https://support.google.com/analytics/answer/4628577
-     *
-     * @var bool
-     */
-    public $isSmartList;
-    /**
-     * Resource type for include conditions.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Number of days (in the range 1 to 540) a user remains in the audience.
-     *
-     * @var int
-     */
-    public $membershipDurationDays;
-    /**
-     * The segment condition that will cause a user to be added to an audience.
-     *
-     * @var string
-     */
-    public $segment;
-    /**
-     * The look-back window lets you specify a time frame for evaluating the
-     * behavior that qualifies users for your audience. For example, if your
-     * filters include users from Central Asia, and Transactions Greater than 2,
-     * and you set the look-back window to 14 days, then any user from Central
-     * Asia whose cumulative transactions exceed 2 during the last 14 days is
-     * added to the audience.
-     *
-     * @param int $daysToLookBack
-     */
-    public function setDaysToLookBack($daysToLookBack)
+namespace Google\Service\Analytics {
+    class IncludeConditions extends \Google\Model
     {
+        /**
+         * The look-back window lets you specify a time frame for evaluating the
+         * behavior that qualifies users for your audience. For example, if your
+         * filters include users from Central Asia, and Transactions Greater than 2,
+         * and you set the look-back window to 14 days, then any user from Central
+         * Asia whose cumulative transactions exceed 2 during the last 14 days is
+         * added to the audience.
+         *
+         * @var int
+         */
+        public $daysToLookBack;
+        /**
+         * Boolean indicating whether this segment is a smart list.
+         * https://support.google.com/analytics/answer/4628577
+         *
+         * @var bool
+         */
+        public $isSmartList;
+        /**
+         * Resource type for include conditions.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Number of days (in the range 1 to 540) a user remains in the audience.
+         *
+         * @var int
+         */
+        public $membershipDurationDays;
+        /**
+         * The segment condition that will cause a user to be added to an audience.
+         *
+         * @var string
+         */
+        public $segment;
+        /**
+         * The look-back window lets you specify a time frame for evaluating the
+         * behavior that qualifies users for your audience. For example, if your
+         * filters include users from Central Asia, and Transactions Greater than 2,
+         * and you set the look-back window to 14 days, then any user from Central
+         * Asia whose cumulative transactions exceed 2 during the last 14 days is
+         * added to the audience.
+         *
+         * @param int $daysToLookBack
+         */
+        public function setDaysToLookBack($daysToLookBack)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDaysToLookBack()
+        {
+        }
+        /**
+         * Boolean indicating whether this segment is a smart list.
+         * https://support.google.com/analytics/answer/4628577
+         *
+         * @param bool $isSmartList
+         */
+        public function setIsSmartList($isSmartList)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsSmartList()
+        {
+        }
+        /**
+         * Resource type for include conditions.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Number of days (in the range 1 to 540) a user remains in the audience.
+         *
+         * @param int $membershipDurationDays
+         */
+        public function setMembershipDurationDays($membershipDurationDays)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMembershipDurationDays()
+        {
+        }
+        /**
+         * The segment condition that will cause a user to be added to an audience.
+         *
+         * @param string $segment
+         */
+        public function setSegment($segment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSegment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Analytics\IncludeConditions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDaysToLookBack()
-    {
-    }
-    /**
-     * Boolean indicating whether this segment is a smart list.
-     * https://support.google.com/analytics/answer/4628577
-     *
-     * @param bool $isSmartList
-     */
-    public function setIsSmartList($isSmartList)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsSmartList()
-    {
-    }
-    /**
-     * Resource type for include conditions.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Number of days (in the range 1 to 540) a user remains in the audience.
-     *
-     * @param int $membershipDurationDays
-     */
-    public function setMembershipDurationDays($membershipDurationDays)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMembershipDurationDays()
-    {
-    }
-    /**
-     * The segment condition that will cause a user to be added to an audience.
-     *
-     * @param string $segment
-     */
-    public function setSegment($segment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSegment()
+    class Google_Service_Analytics_IncludeConditions extends \Google\Service\Analytics\IncludeConditions
     {
     }
 }

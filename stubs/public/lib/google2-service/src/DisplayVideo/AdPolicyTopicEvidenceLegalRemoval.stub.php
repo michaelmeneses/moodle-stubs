@@ -21,117 +21,126 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class AdPolicyTopicEvidenceLegalRemoval extends \Google\Collection
-{
-    /**
-     * Not specified or unknown.
-     */
-    public const COMPLAINT_TYPE_AD_POLICY_TOPIC_EVIDENCE_LEGAL_REMOVAL_COMPLAINT_TYPE_UNKNOWN = 'AD_POLICY_TOPIC_EVIDENCE_LEGAL_REMOVAL_COMPLAINT_TYPE_UNKNOWN';
-    /**
-     * Copyright. Only applies to DMCA.
-     */
-    public const COMPLAINT_TYPE_COPYRIGHT = 'COPYRIGHT';
-    /**
-     * Court order. Only applies to local legal.
-     */
-    public const COMPLAINT_TYPE_COURT_ORDER = 'COURT_ORDER';
-    /**
-     * Local legal regulation. Only applies to local legal.
-     */
-    public const COMPLAINT_TYPE_LOCAL_LEGAL = 'LOCAL_LEGAL';
-    protected $collection_key = 'restrictedUris';
-    /**
-     * The type of complaint causing the legal removal.
-     *
-     * @var string
-     */
-    public $complaintType;
-    protected $countryRestrictionsType = AdPolicyCriterionRestriction::class;
-    protected $countryRestrictionsDataType = 'array';
-    protected $dmcaType = AdPolicyTopicEvidenceLegalRemovalDmca::class;
-    protected $dmcaDataType = '';
-    protected $localLegalType = AdPolicyTopicEvidenceLegalRemovalLocalLegal::class;
-    protected $localLegalDataType = '';
-    /**
-     * The urls restricted due to the legal removal.
-     *
-     * @var string[]
-     */
-    public $restrictedUris;
-    /**
-     * The type of complaint causing the legal removal.
-     *
-     * Accepted values:
-     * AD_POLICY_TOPIC_EVIDENCE_LEGAL_REMOVAL_COMPLAINT_TYPE_UNKNOWN, COPYRIGHT,
-     * COURT_ORDER, LOCAL_LEGAL
-     *
-     * @param self::COMPLAINT_TYPE_* $complaintType
-     */
-    public function setComplaintType($complaintType)
+namespace Google\Service\DisplayVideo {
+    class AdPolicyTopicEvidenceLegalRemoval extends \Google\Collection
     {
+        /**
+         * Not specified or unknown.
+         */
+        public const COMPLAINT_TYPE_AD_POLICY_TOPIC_EVIDENCE_LEGAL_REMOVAL_COMPLAINT_TYPE_UNKNOWN = 'AD_POLICY_TOPIC_EVIDENCE_LEGAL_REMOVAL_COMPLAINT_TYPE_UNKNOWN';
+        /**
+         * Copyright. Only applies to DMCA.
+         */
+        public const COMPLAINT_TYPE_COPYRIGHT = 'COPYRIGHT';
+        /**
+         * Court order. Only applies to local legal.
+         */
+        public const COMPLAINT_TYPE_COURT_ORDER = 'COURT_ORDER';
+        /**
+         * Local legal regulation. Only applies to local legal.
+         */
+        public const COMPLAINT_TYPE_LOCAL_LEGAL = 'LOCAL_LEGAL';
+        protected $collection_key = 'restrictedUris';
+        /**
+         * The type of complaint causing the legal removal.
+         *
+         * @var string
+         */
+        public $complaintType;
+        protected $countryRestrictionsType = AdPolicyCriterionRestriction::class;
+        protected $countryRestrictionsDataType = 'array';
+        protected $dmcaType = AdPolicyTopicEvidenceLegalRemovalDmca::class;
+        protected $dmcaDataType = '';
+        protected $localLegalType = AdPolicyTopicEvidenceLegalRemovalLocalLegal::class;
+        protected $localLegalDataType = '';
+        /**
+         * The urls restricted due to the legal removal.
+         *
+         * @var string[]
+         */
+        public $restrictedUris;
+        /**
+         * The type of complaint causing the legal removal.
+         *
+         * Accepted values:
+         * AD_POLICY_TOPIC_EVIDENCE_LEGAL_REMOVAL_COMPLAINT_TYPE_UNKNOWN, COPYRIGHT,
+         * COURT_ORDER, LOCAL_LEGAL
+         *
+         * @param self::COMPLAINT_TYPE_* $complaintType
+         */
+        public function setComplaintType($complaintType)
+        {
+        }
+        /**
+         * @return self::COMPLAINT_TYPE_*
+         */
+        public function getComplaintType()
+        {
+        }
+        /**
+         * The countries restricted due to the legal removal.
+         *
+         * @param AdPolicyCriterionRestriction[] $countryRestrictions
+         */
+        public function setCountryRestrictions($countryRestrictions)
+        {
+        }
+        /**
+         * @return AdPolicyCriterionRestriction[]
+         */
+        public function getCountryRestrictions()
+        {
+        }
+        /**
+         * Details on the DMCA regulation legal removal.
+         *
+         * @param AdPolicyTopicEvidenceLegalRemovalDmca $dmca
+         */
+        public function setDmca(AdPolicyTopicEvidenceLegalRemovalDmca $dmca)
+        {
+        }
+        /**
+         * @return AdPolicyTopicEvidenceLegalRemovalDmca
+         */
+        public function getDmca()
+        {
+        }
+        /**
+         * Details on the local legal regulation legal removal.
+         *
+         * @param AdPolicyTopicEvidenceLegalRemovalLocalLegal $localLegal
+         */
+        public function setLocalLegal(AdPolicyTopicEvidenceLegalRemovalLocalLegal $localLegal)
+        {
+        }
+        /**
+         * @return AdPolicyTopicEvidenceLegalRemovalLocalLegal
+         */
+        public function getLocalLegal()
+        {
+        }
+        /**
+         * The urls restricted due to the legal removal.
+         *
+         * @param string[] $restrictedUris
+         */
+        public function setRestrictedUris($restrictedUris)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRestrictedUris()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::COMPLAINT_TYPE_*
+     * Runtime class alias of \Google\Service\DisplayVideo\AdPolicyTopicEvidenceLegalRemoval registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getComplaintType()
-    {
-    }
-    /**
-     * The countries restricted due to the legal removal.
-     *
-     * @param AdPolicyCriterionRestriction[] $countryRestrictions
-     */
-    public function setCountryRestrictions($countryRestrictions)
-    {
-    }
-    /**
-     * @return AdPolicyCriterionRestriction[]
-     */
-    public function getCountryRestrictions()
-    {
-    }
-    /**
-     * Details on the DMCA regulation legal removal.
-     *
-     * @param AdPolicyTopicEvidenceLegalRemovalDmca $dmca
-     */
-    public function setDmca(AdPolicyTopicEvidenceLegalRemovalDmca $dmca)
-    {
-    }
-    /**
-     * @return AdPolicyTopicEvidenceLegalRemovalDmca
-     */
-    public function getDmca()
-    {
-    }
-    /**
-     * Details on the local legal regulation legal removal.
-     *
-     * @param AdPolicyTopicEvidenceLegalRemovalLocalLegal $localLegal
-     */
-    public function setLocalLegal(AdPolicyTopicEvidenceLegalRemovalLocalLegal $localLegal)
-    {
-    }
-    /**
-     * @return AdPolicyTopicEvidenceLegalRemovalLocalLegal
-     */
-    public function getLocalLegal()
-    {
-    }
-    /**
-     * The urls restricted due to the legal removal.
-     *
-     * @param string[] $restrictedUris
-     */
-    public function setRestrictedUris($restrictedUris)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRestrictedUris()
+    class Google_Service_DisplayVideo_AdPolicyTopicEvidenceLegalRemoval extends \Google\Service\DisplayVideo\AdPolicyTopicEvidenceLegalRemoval
     {
     }
 }

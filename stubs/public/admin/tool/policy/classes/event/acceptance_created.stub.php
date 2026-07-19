@@ -29,6 +29,7 @@
  */
 namespace tool_policy\event;
 
+use core\event\base;
 /**
  * Event acceptance_created
  *

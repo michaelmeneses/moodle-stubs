@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class VideoCategorySnippet extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $assignable;
-    /**
-     * The YouTube channel that created the video category.
-     *
-     * @var string
-     */
-    public $channelId;
-    /**
-     * The video category's title.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * @param bool $assignable
-     */
-    public function setAssignable($assignable)
+namespace Google\Service\YouTube {
+    class VideoCategorySnippet extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $assignable;
+        /**
+         * The YouTube channel that created the video category.
+         *
+         * @var string
+         */
+        public $channelId;
+        /**
+         * The video category's title.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * @param bool $assignable
+         */
+        public function setAssignable($assignable)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAssignable()
+        {
+        }
+        /**
+         * The YouTube channel that created the video category.
+         *
+         * @param string $channelId
+         */
+        public function setChannelId($channelId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChannelId()
+        {
+        }
+        /**
+         * The video category's title.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\YouTube\VideoCategorySnippet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssignable()
-    {
-    }
-    /**
-     * The YouTube channel that created the video category.
-     *
-     * @param string $channelId
-     */
-    public function setChannelId($channelId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getChannelId()
-    {
-    }
-    /**
-     * The video category's title.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_YouTube_VideoCategorySnippet extends \Google\Service\YouTube\VideoCategorySnippet
     {
     }
 }

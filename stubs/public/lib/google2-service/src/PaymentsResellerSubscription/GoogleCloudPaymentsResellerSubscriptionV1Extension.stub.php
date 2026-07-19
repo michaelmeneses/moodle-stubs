@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class GoogleCloudPaymentsResellerSubscriptionV1Extension extends \Google\Model
-{
-    protected $durationType = GoogleCloudPaymentsResellerSubscriptionV1Duration::class;
-    protected $durationDataType = '';
-    /**
-     * @var string
-     */
-    public $partnerUserToken;
-    /**
-     * @param GoogleCloudPaymentsResellerSubscriptionV1Duration
-     */
-    public function setDuration(GoogleCloudPaymentsResellerSubscriptionV1Duration $duration)
+namespace Google\Service\PaymentsResellerSubscription {
+    class GoogleCloudPaymentsResellerSubscriptionV1Extension extends \Google\Model
     {
+        protected $durationType = GoogleCloudPaymentsResellerSubscriptionV1Duration::class;
+        protected $durationDataType = '';
+        /**
+         * @var string
+         */
+        public $partnerUserToken;
+        /**
+         * @param GoogleCloudPaymentsResellerSubscriptionV1Duration
+         */
+        public function setDuration(GoogleCloudPaymentsResellerSubscriptionV1Duration $duration)
+        {
+        }
+        /**
+         * @return GoogleCloudPaymentsResellerSubscriptionV1Duration
+         */
+        public function getDuration()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPartnerUserToken($partnerUserToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPartnerUserToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudPaymentsResellerSubscriptionV1Duration
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1Extension registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDuration()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPartnerUserToken($partnerUserToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPartnerUserToken()
+    class Google_Service_PaymentsResellerSubscription_GoogleCloudPaymentsResellerSubscriptionV1Extension extends \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1Extension
     {
     }
 }

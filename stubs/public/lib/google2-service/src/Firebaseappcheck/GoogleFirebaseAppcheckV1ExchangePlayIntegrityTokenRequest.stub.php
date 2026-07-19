@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebaseappcheck;
-
-class GoogleFirebaseAppcheckV1ExchangePlayIntegrityTokenRequest extends \Google\Model
-{
-    /**
-     * Specifies whether this attestation is for use in a *limited use* (`true`)
-     * or *session based* (`false`) context. To enable this attestation to be used
-     * with the *replay protection* feature, set this to `true`. The default value
-     * is `false`.
-     *
-     * @var bool
-     */
-    public $limitedUse;
-    /**
-     * Required. The [integrity verdict response token from Play Integrity](https:
-     * //developer.android.com/google/play/integrity/verdict#decrypt-verify)
-     * issued to your app.
-     *
-     * @var string
-     */
-    public $playIntegrityToken;
-    /**
-     * Specifies whether this attestation is for use in a *limited use* (`true`)
-     * or *session based* (`false`) context. To enable this attestation to be used
-     * with the *replay protection* feature, set this to `true`. The default value
-     * is `false`.
-     *
-     * @param bool $limitedUse
-     */
-    public function setLimitedUse($limitedUse)
+namespace Google\Service\Firebaseappcheck {
+    class GoogleFirebaseAppcheckV1ExchangePlayIntegrityTokenRequest extends \Google\Model
     {
+        /**
+         * Specifies whether this attestation is for use in a *limited use* (`true`)
+         * or *session based* (`false`) context. To enable this attestation to be used
+         * with the *replay protection* feature, set this to `true`. The default value
+         * is `false`.
+         *
+         * @var bool
+         */
+        public $limitedUse;
+        /**
+         * Required. The [integrity verdict response token from Play Integrity](https:
+         * //developer.android.com/google/play/integrity/verdict#decrypt-verify)
+         * issued to your app.
+         *
+         * @var string
+         */
+        public $playIntegrityToken;
+        /**
+         * Specifies whether this attestation is for use in a *limited use* (`true`)
+         * or *session based* (`false`) context. To enable this attestation to be used
+         * with the *replay protection* feature, set this to `true`. The default value
+         * is `false`.
+         *
+         * @param bool $limitedUse
+         */
+        public function setLimitedUse($limitedUse)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getLimitedUse()
+        {
+        }
+        /**
+         * Required. The [integrity verdict response token from Play Integrity](https:
+         * //developer.android.com/google/play/integrity/verdict#decrypt-verify)
+         * issued to your app.
+         *
+         * @param string $playIntegrityToken
+         */
+        public function setPlayIntegrityToken($playIntegrityToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlayIntegrityToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangePlayIntegrityTokenRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLimitedUse()
-    {
-    }
-    /**
-     * Required. The [integrity verdict response token from Play Integrity](https:
-     * //developer.android.com/google/play/integrity/verdict#decrypt-verify)
-     * issued to your app.
-     *
-     * @param string $playIntegrityToken
-     */
-    public function setPlayIntegrityToken($playIntegrityToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPlayIntegrityToken()
+    class Google_Service_Firebaseappcheck_GoogleFirebaseAppcheckV1ExchangePlayIntegrityTokenRequest extends \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1ExchangePlayIntegrityTokenRequest
     {
     }
 }

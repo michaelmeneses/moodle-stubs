@@ -21,81 +21,90 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyVersionsV1PolicyModificationError extends \Google\Collection
-{
-    protected $collection_key = 'fieldErrors';
-    /**
-     * Output only. The non-field errors related to the modification.
-     *
-     * @var string[]
-     */
-    public $errors;
-    protected $fieldErrorsType = GoogleChromePolicyVersionsV1PolicyModificationFieldError::class;
-    protected $fieldErrorsDataType = 'array';
-    /**
-     * Output only. The specific policy schema modification that had an error.
-     *
-     * @var string
-     */
-    public $policySchema;
-    protected $policyTargetKeyType = GoogleChromePolicyVersionsV1PolicyTargetKey::class;
-    protected $policyTargetKeyDataType = '';
-    /**
-     * Output only. The non-field errors related to the modification.
-     *
-     * @param string[] $errors
-     */
-    public function setErrors($errors)
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyVersionsV1PolicyModificationError extends \Google\Collection
     {
+        protected $collection_key = 'fieldErrors';
+        /**
+         * Output only. The non-field errors related to the modification.
+         *
+         * @var string[]
+         */
+        public $errors;
+        protected $fieldErrorsType = GoogleChromePolicyVersionsV1PolicyModificationFieldError::class;
+        protected $fieldErrorsDataType = 'array';
+        /**
+         * Output only. The specific policy schema modification that had an error.
+         *
+         * @var string
+         */
+        public $policySchema;
+        protected $policyTargetKeyType = GoogleChromePolicyVersionsV1PolicyTargetKey::class;
+        protected $policyTargetKeyDataType = '';
+        /**
+         * Output only. The non-field errors related to the modification.
+         *
+         * @param string[] $errors
+         */
+        public function setErrors($errors)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getErrors()
+        {
+        }
+        /**
+         * Output only. The error messages related to the modification.
+         *
+         * @param GoogleChromePolicyVersionsV1PolicyModificationFieldError[] $fieldErrors
+         */
+        public function setFieldErrors($fieldErrors)
+        {
+        }
+        /**
+         * @return GoogleChromePolicyVersionsV1PolicyModificationFieldError[]
+         */
+        public function getFieldErrors()
+        {
+        }
+        /**
+         * Output only. The specific policy schema modification that had an error.
+         *
+         * @param string $policySchema
+         */
+        public function setPolicySchema($policySchema)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPolicySchema()
+        {
+        }
+        /**
+         * Output only. The specific policy target modification that had error.
+         *
+         * @param GoogleChromePolicyVersionsV1PolicyTargetKey $policyTargetKey
+         */
+        public function setPolicyTargetKey(GoogleChromePolicyVersionsV1PolicyTargetKey $policyTargetKey)
+        {
+        }
+        /**
+         * @return GoogleChromePolicyVersionsV1PolicyTargetKey
+         */
+        public function getPolicyTargetKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1PolicyModificationError registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrors()
-    {
-    }
-    /**
-     * Output only. The error messages related to the modification.
-     *
-     * @param GoogleChromePolicyVersionsV1PolicyModificationFieldError[] $fieldErrors
-     */
-    public function setFieldErrors($fieldErrors)
-    {
-    }
-    /**
-     * @return GoogleChromePolicyVersionsV1PolicyModificationFieldError[]
-     */
-    public function getFieldErrors()
-    {
-    }
-    /**
-     * Output only. The specific policy schema modification that had an error.
-     *
-     * @param string $policySchema
-     */
-    public function setPolicySchema($policySchema)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPolicySchema()
-    {
-    }
-    /**
-     * Output only. The specific policy target modification that had error.
-     *
-     * @param GoogleChromePolicyVersionsV1PolicyTargetKey $policyTargetKey
-     */
-    public function setPolicyTargetKey(GoogleChromePolicyVersionsV1PolicyTargetKey $policyTargetKey)
-    {
-    }
-    /**
-     * @return GoogleChromePolicyVersionsV1PolicyTargetKey
-     */
-    public function getPolicyTargetKey()
+    class Google_Service_ChromePolicy_GoogleChromePolicyVersionsV1PolicyModificationError extends \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1PolicyModificationError
     {
     }
 }

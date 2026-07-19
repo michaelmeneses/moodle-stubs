@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DeploymentManager;
-
-class DeploymentUpdate extends \Google\Collection
-{
-    protected $collection_key = 'labels';
-    /**
-     * Output only. An optional user-provided description of the deployment after
-     * the current update has been applied.
-     *
-     * @var string
-     */
-    public $description;
-    protected $labelsType = DeploymentUpdateLabelEntry::class;
-    protected $labelsDataType = 'array';
-    /**
-     * Output only. URL of the manifest representing the update configuration of
-     * this deployment.
-     *
-     * @var string
-     */
-    public $manifest;
-    /**
-     * Output only. An optional user-provided description of the deployment after
-     * the current update has been applied.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\DeploymentManager {
+    class DeploymentUpdate extends \Google\Collection
     {
+        protected $collection_key = 'labels';
+        /**
+         * Output only. An optional user-provided description of the deployment after
+         * the current update has been applied.
+         *
+         * @var string
+         */
+        public $description;
+        protected $labelsType = DeploymentUpdateLabelEntry::class;
+        protected $labelsDataType = 'array';
+        /**
+         * Output only. URL of the manifest representing the update configuration of
+         * this deployment.
+         *
+         * @var string
+         */
+        public $manifest;
+        /**
+         * Output only. An optional user-provided description of the deployment after
+         * the current update has been applied.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Map of One Platform labels; provided by the client when the resource is
+         * created or updated. Specifically: Label keys must be between 1 and 63
+         * characters long and must conform to the following regular expression:
+         * `[a-z]([-a-z0-9]*[a-z0-9])?` Label values must be between 0 and 63
+         * characters long and must conform to the regular expression
+         * `([a-z]([-a-z0-9]*[a-z0-9])?)?`.
+         *
+         * @param DeploymentUpdateLabelEntry[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return DeploymentUpdateLabelEntry[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Output only. URL of the manifest representing the update configuration of
+         * this deployment.
+         *
+         * @param string $manifest
+         */
+        public function setManifest($manifest)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getManifest()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DeploymentManager\DeploymentUpdate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Map of One Platform labels; provided by the client when the resource is
-     * created or updated. Specifically: Label keys must be between 1 and 63
-     * characters long and must conform to the following regular expression:
-     * `[a-z]([-a-z0-9]*[a-z0-9])?` Label values must be between 0 and 63
-     * characters long and must conform to the regular expression
-     * `([a-z]([-a-z0-9]*[a-z0-9])?)?`.
-     *
-     * @param DeploymentUpdateLabelEntry[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return DeploymentUpdateLabelEntry[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Output only. URL of the manifest representing the update configuration of
-     * this deployment.
-     *
-     * @param string $manifest
-     */
-    public function setManifest($manifest)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getManifest()
+    class Google_Service_DeploymentManager_DeploymentUpdate extends \Google\Service\DeploymentManager\DeploymentUpdate
     {
     }
 }

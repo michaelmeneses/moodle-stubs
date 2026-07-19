@@ -21,200 +21,209 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class FindReplaceRequest extends \Google\Model
-{
-    /**
-     * True to find/replace over all sheets.
-     *
-     * @var bool
-     */
-    public $allSheets;
-    /**
-     * The value to search.
-     *
-     * @var string
-     */
-    public $find;
-    /**
-     * True if the search should include cells with formulas. False to skip cells
-     * with formulas.
-     *
-     * @var bool
-     */
-    public $includeFormulas;
-    /**
-     * True if the search is case sensitive.
-     *
-     * @var bool
-     */
-    public $matchCase;
-    /**
-     * True if the find value should match the entire cell.
-     *
-     * @var bool
-     */
-    public $matchEntireCell;
-    protected $rangeType = GridRange::class;
-    protected $rangeDataType = '';
-    /**
-     * The value to use as the replacement.
-     *
-     * @var string
-     */
-    public $replacement;
-    /**
-     * True if the find value is a regex. The regular expression and replacement
-     * should follow Java regex rules at
-     * https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html. The
-     * replacement string is allowed to refer to capturing groups. For example, if
-     * one cell has the contents `"Google Sheets"` and another has `"Google
-     * Docs"`, then searching for `"o.* (.*)"` with a replacement of `"$1 Rocks"`
-     * would change the contents of the cells to `"GSheets Rocks"` and `"GDocs
-     * Rocks"` respectively.
-     *
-     * @var bool
-     */
-    public $searchByRegex;
-    /**
-     * The sheet to find/replace over.
-     *
-     * @var int
-     */
-    public $sheetId;
-    /**
-     * True to find/replace over all sheets.
-     *
-     * @param bool $allSheets
-     */
-    public function setAllSheets($allSheets)
+namespace Google\Service\Sheets {
+    class FindReplaceRequest extends \Google\Model
     {
+        /**
+         * True to find/replace over all sheets.
+         *
+         * @var bool
+         */
+        public $allSheets;
+        /**
+         * The value to search.
+         *
+         * @var string
+         */
+        public $find;
+        /**
+         * True if the search should include cells with formulas. False to skip cells
+         * with formulas.
+         *
+         * @var bool
+         */
+        public $includeFormulas;
+        /**
+         * True if the search is case sensitive.
+         *
+         * @var bool
+         */
+        public $matchCase;
+        /**
+         * True if the find value should match the entire cell.
+         *
+         * @var bool
+         */
+        public $matchEntireCell;
+        protected $rangeType = GridRange::class;
+        protected $rangeDataType = '';
+        /**
+         * The value to use as the replacement.
+         *
+         * @var string
+         */
+        public $replacement;
+        /**
+         * True if the find value is a regex. The regular expression and replacement
+         * should follow Java regex rules at
+         * https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html. The
+         * replacement string is allowed to refer to capturing groups. For example, if
+         * one cell has the contents `"Google Sheets"` and another has `"Google
+         * Docs"`, then searching for `"o.* (.*)"` with a replacement of `"$1 Rocks"`
+         * would change the contents of the cells to `"GSheets Rocks"` and `"GDocs
+         * Rocks"` respectively.
+         *
+         * @var bool
+         */
+        public $searchByRegex;
+        /**
+         * The sheet to find/replace over.
+         *
+         * @var int
+         */
+        public $sheetId;
+        /**
+         * True to find/replace over all sheets.
+         *
+         * @param bool $allSheets
+         */
+        public function setAllSheets($allSheets)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllSheets()
+        {
+        }
+        /**
+         * The value to search.
+         *
+         * @param string $find
+         */
+        public function setFind($find)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFind()
+        {
+        }
+        /**
+         * True if the search should include cells with formulas. False to skip cells
+         * with formulas.
+         *
+         * @param bool $includeFormulas
+         */
+        public function setIncludeFormulas($includeFormulas)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIncludeFormulas()
+        {
+        }
+        /**
+         * True if the search is case sensitive.
+         *
+         * @param bool $matchCase
+         */
+        public function setMatchCase($matchCase)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getMatchCase()
+        {
+        }
+        /**
+         * True if the find value should match the entire cell.
+         *
+         * @param bool $matchEntireCell
+         */
+        public function setMatchEntireCell($matchEntireCell)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getMatchEntireCell()
+        {
+        }
+        /**
+         * The range to find/replace over.
+         *
+         * @param GridRange $range
+         */
+        public function setRange(GridRange $range)
+        {
+        }
+        /**
+         * @return GridRange
+         */
+        public function getRange()
+        {
+        }
+        /**
+         * The value to use as the replacement.
+         *
+         * @param string $replacement
+         */
+        public function setReplacement($replacement)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReplacement()
+        {
+        }
+        /**
+         * True if the find value is a regex. The regular expression and replacement
+         * should follow Java regex rules at
+         * https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html. The
+         * replacement string is allowed to refer to capturing groups. For example, if
+         * one cell has the contents `"Google Sheets"` and another has `"Google
+         * Docs"`, then searching for `"o.* (.*)"` with a replacement of `"$1 Rocks"`
+         * would change the contents of the cells to `"GSheets Rocks"` and `"GDocs
+         * Rocks"` respectively.
+         *
+         * @param bool $searchByRegex
+         */
+        public function setSearchByRegex($searchByRegex)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSearchByRegex()
+        {
+        }
+        /**
+         * The sheet to find/replace over.
+         *
+         * @param int $sheetId
+         */
+        public function setSheetId($sheetId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSheetId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Sheets\FindReplaceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllSheets()
-    {
-    }
-    /**
-     * The value to search.
-     *
-     * @param string $find
-     */
-    public function setFind($find)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFind()
-    {
-    }
-    /**
-     * True if the search should include cells with formulas. False to skip cells
-     * with formulas.
-     *
-     * @param bool $includeFormulas
-     */
-    public function setIncludeFormulas($includeFormulas)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIncludeFormulas()
-    {
-    }
-    /**
-     * True if the search is case sensitive.
-     *
-     * @param bool $matchCase
-     */
-    public function setMatchCase($matchCase)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getMatchCase()
-    {
-    }
-    /**
-     * True if the find value should match the entire cell.
-     *
-     * @param bool $matchEntireCell
-     */
-    public function setMatchEntireCell($matchEntireCell)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getMatchEntireCell()
-    {
-    }
-    /**
-     * The range to find/replace over.
-     *
-     * @param GridRange $range
-     */
-    public function setRange(GridRange $range)
-    {
-    }
-    /**
-     * @return GridRange
-     */
-    public function getRange()
-    {
-    }
-    /**
-     * The value to use as the replacement.
-     *
-     * @param string $replacement
-     */
-    public function setReplacement($replacement)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReplacement()
-    {
-    }
-    /**
-     * True if the find value is a regex. The regular expression and replacement
-     * should follow Java regex rules at
-     * https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html. The
-     * replacement string is allowed to refer to capturing groups. For example, if
-     * one cell has the contents `"Google Sheets"` and another has `"Google
-     * Docs"`, then searching for `"o.* (.*)"` with a replacement of `"$1 Rocks"`
-     * would change the contents of the cells to `"GSheets Rocks"` and `"GDocs
-     * Rocks"` respectively.
-     *
-     * @param bool $searchByRegex
-     */
-    public function setSearchByRegex($searchByRegex)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSearchByRegex()
-    {
-    }
-    /**
-     * The sheet to find/replace over.
-     *
-     * @param int $sheetId
-     */
-    public function setSheetId($sheetId)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSheetId()
+    class Google_Service_Sheets_FindReplaceRequest extends \Google\Service\Sheets\FindReplaceRequest
     {
     }
 }

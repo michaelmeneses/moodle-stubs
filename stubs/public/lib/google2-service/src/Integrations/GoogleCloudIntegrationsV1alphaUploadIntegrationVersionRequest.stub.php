@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaUploadIntegrationVersionRequest extends \Google\Model
-{
-    /**
-     * Unspecified file format
-     */
-    public const FILE_FORMAT_FILE_FORMAT_UNSPECIFIED = 'FILE_FORMAT_UNSPECIFIED';
-    /**
-     * JSON File Format
-     */
-    public const FILE_FORMAT_JSON = 'JSON';
-    /**
-     * YAML File Format
-     */
-    public const FILE_FORMAT_YAML = 'YAML';
-    /**
-     * The textproto of the IntegrationVersion.
-     *
-     * @var string
-     */
-    public $content;
-    /**
-     * File format for upload request.
-     *
-     * @var string
-     */
-    public $fileFormat;
-    /**
-     * The textproto of the IntegrationVersion.
-     *
-     * @param string $content
-     */
-    public function setContent($content)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaUploadIntegrationVersionRequest extends \Google\Model
     {
+        /**
+         * Unspecified file format
+         */
+        public const FILE_FORMAT_FILE_FORMAT_UNSPECIFIED = 'FILE_FORMAT_UNSPECIFIED';
+        /**
+         * JSON File Format
+         */
+        public const FILE_FORMAT_JSON = 'JSON';
+        /**
+         * YAML File Format
+         */
+        public const FILE_FORMAT_YAML = 'YAML';
+        /**
+         * The textproto of the IntegrationVersion.
+         *
+         * @var string
+         */
+        public $content;
+        /**
+         * File format for upload request.
+         *
+         * @var string
+         */
+        public $fileFormat;
+        /**
+         * The textproto of the IntegrationVersion.
+         *
+         * @param string $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * File format for upload request.
+         *
+         * Accepted values: FILE_FORMAT_UNSPECIFIED, JSON, YAML
+         *
+         * @param self::FILE_FORMAT_* $fileFormat
+         */
+        public function setFileFormat($fileFormat)
+        {
+        }
+        /**
+         * @return self::FILE_FORMAT_*
+         */
+        public function getFileFormat()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaUploadIntegrationVersionRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
-    {
-    }
-    /**
-     * File format for upload request.
-     *
-     * Accepted values: FILE_FORMAT_UNSPECIFIED, JSON, YAML
-     *
-     * @param self::FILE_FORMAT_* $fileFormat
-     */
-    public function setFileFormat($fileFormat)
-    {
-    }
-    /**
-     * @return self::FILE_FORMAT_*
-     */
-    public function getFileFormat()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaUploadIntegrationVersionRequest extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaUploadIntegrationVersionRequest
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SmartDeviceManagement;
-
-class GoogleHomeEnterpriseSdmV1ListStructuresResponse extends \Google\Collection
-{
-    protected $collection_key = 'structures';
-    protected $structuresType = GoogleHomeEnterpriseSdmV1Structure::class;
-    protected $structuresDataType = 'array';
-    /**
-     * The list of structures.
-     *
-     * @param GoogleHomeEnterpriseSdmV1Structure[] $structures
-     */
-    public function setStructures($structures)
+namespace Google\Service\SmartDeviceManagement {
+    class GoogleHomeEnterpriseSdmV1ListStructuresResponse extends \Google\Collection
     {
+        protected $collection_key = 'structures';
+        protected $structuresType = GoogleHomeEnterpriseSdmV1Structure::class;
+        protected $structuresDataType = 'array';
+        /**
+         * The list of structures.
+         *
+         * @param GoogleHomeEnterpriseSdmV1Structure[] $structures
+         */
+        public function setStructures($structures)
+        {
+        }
+        /**
+         * @return GoogleHomeEnterpriseSdmV1Structure[]
+         */
+        public function getStructures()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleHomeEnterpriseSdmV1Structure[]
+     * Runtime class alias of \Google\Service\SmartDeviceManagement\GoogleHomeEnterpriseSdmV1ListStructuresResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStructures()
+    class Google_Service_SmartDeviceManagement_GoogleHomeEnterpriseSdmV1ListStructuresResponse extends \Google\Service\SmartDeviceManagement\GoogleHomeEnterpriseSdmV1ListStructuresResponse
     {
     }
 }

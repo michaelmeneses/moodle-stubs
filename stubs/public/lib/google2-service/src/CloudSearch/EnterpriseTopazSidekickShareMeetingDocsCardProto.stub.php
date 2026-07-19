@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class EnterpriseTopazSidekickShareMeetingDocsCardProto extends \Google\Collection
-{
-    protected $collection_key = 'document';
-    protected $documentType = EnterpriseTopazSidekickCommonDocument::class;
-    protected $documentDataType = 'array';
-    protected $eventType = EnterpriseTopazSidekickAgendaEntry::class;
-    protected $eventDataType = '';
-    /**
-     * Documents to share for the given meeting.
-     *
-     * @param EnterpriseTopazSidekickCommonDocument[] $document
-     */
-    public function setDocument($document)
+namespace Google\Service\CloudSearch {
+    class EnterpriseTopazSidekickShareMeetingDocsCardProto extends \Google\Collection
     {
+        protected $collection_key = 'document';
+        protected $documentType = EnterpriseTopazSidekickCommonDocument::class;
+        protected $documentDataType = 'array';
+        protected $eventType = EnterpriseTopazSidekickAgendaEntry::class;
+        protected $eventDataType = '';
+        /**
+         * Documents to share for the given meeting.
+         *
+         * @param EnterpriseTopazSidekickCommonDocument[] $document
+         */
+        public function setDocument($document)
+        {
+        }
+        /**
+         * @return EnterpriseTopazSidekickCommonDocument[]
+         */
+        public function getDocument()
+        {
+        }
+        /**
+         * Event.
+         *
+         * @param EnterpriseTopazSidekickAgendaEntry $event
+         */
+        public function setEvent(EnterpriseTopazSidekickAgendaEntry $event)
+        {
+        }
+        /**
+         * @return EnterpriseTopazSidekickAgendaEntry
+         */
+        public function getEvent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnterpriseTopazSidekickCommonDocument[]
+     * Runtime class alias of \Google\Service\CloudSearch\EnterpriseTopazSidekickShareMeetingDocsCardProto registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocument()
-    {
-    }
-    /**
-     * Event.
-     *
-     * @param EnterpriseTopazSidekickAgendaEntry $event
-     */
-    public function setEvent(EnterpriseTopazSidekickAgendaEntry $event)
-    {
-    }
-    /**
-     * @return EnterpriseTopazSidekickAgendaEntry
-     */
-    public function getEvent()
+    class Google_Service_CloudSearch_EnterpriseTopazSidekickShareMeetingDocsCardProto extends \Google\Service\CloudSearch\EnterpriseTopazSidekickShareMeetingDocsCardProto
     {
     }
 }

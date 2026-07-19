@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class VideoAgeGating extends \Google\Model
-{
-    public const VIDEO_GAME_RATING_anyone = 'anyone';
-    public const VIDEO_GAME_RATING_m15Plus = 'm15Plus';
-    public const VIDEO_GAME_RATING_m16Plus = 'm16Plus';
-    public const VIDEO_GAME_RATING_m17Plus = 'm17Plus';
-    /**
-     * Indicates whether or not the video has alcoholic beverage content. Only
-     * users of legal purchasing age in a particular country, as identified by
-     * ICAP, can view the content.
-     *
-     * @var bool
-     */
-    public $alcoholContent;
-    /**
-     * Age-restricted trailers. For redband trailers and adult-rated video-games.
-     * Only users aged 18+ can view the content. The the field is true the content
-     * is restricted to viewers aged 18+. Otherwise The field won't be present.
-     *
-     * @var bool
-     */
-    public $restricted;
-    /**
-     * Video game rating, if any.
-     *
-     * @var string
-     */
-    public $videoGameRating;
-    /**
-     * Indicates whether or not the video has alcoholic beverage content. Only
-     * users of legal purchasing age in a particular country, as identified by
-     * ICAP, can view the content.
-     *
-     * @param bool $alcoholContent
-     */
-    public function setAlcoholContent($alcoholContent)
+namespace Google\Service\YouTube {
+    class VideoAgeGating extends \Google\Model
     {
+        public const VIDEO_GAME_RATING_anyone = 'anyone';
+        public const VIDEO_GAME_RATING_m15Plus = 'm15Plus';
+        public const VIDEO_GAME_RATING_m16Plus = 'm16Plus';
+        public const VIDEO_GAME_RATING_m17Plus = 'm17Plus';
+        /**
+         * Indicates whether or not the video has alcoholic beverage content. Only
+         * users of legal purchasing age in a particular country, as identified by
+         * ICAP, can view the content.
+         *
+         * @var bool
+         */
+        public $alcoholContent;
+        /**
+         * Age-restricted trailers. For redband trailers and adult-rated video-games.
+         * Only users aged 18+ can view the content. The the field is true the content
+         * is restricted to viewers aged 18+. Otherwise The field won't be present.
+         *
+         * @var bool
+         */
+        public $restricted;
+        /**
+         * Video game rating, if any.
+         *
+         * @var string
+         */
+        public $videoGameRating;
+        /**
+         * Indicates whether or not the video has alcoholic beverage content. Only
+         * users of legal purchasing age in a particular country, as identified by
+         * ICAP, can view the content.
+         *
+         * @param bool $alcoholContent
+         */
+        public function setAlcoholContent($alcoholContent)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAlcoholContent()
+        {
+        }
+        /**
+         * Age-restricted trailers. For redband trailers and adult-rated video-games.
+         * Only users aged 18+ can view the content. The the field is true the content
+         * is restricted to viewers aged 18+. Otherwise The field won't be present.
+         *
+         * @param bool $restricted
+         */
+        public function setRestricted($restricted)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRestricted()
+        {
+        }
+        /**
+         * Video game rating, if any.
+         *
+         * Accepted values: anyone, m15Plus, m16Plus, m17Plus
+         *
+         * @param self::VIDEO_GAME_RATING_* $videoGameRating
+         */
+        public function setVideoGameRating($videoGameRating)
+        {
+        }
+        /**
+         * @return self::VIDEO_GAME_RATING_*
+         */
+        public function getVideoGameRating()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\YouTube\VideoAgeGating registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlcoholContent()
-    {
-    }
-    /**
-     * Age-restricted trailers. For redband trailers and adult-rated video-games.
-     * Only users aged 18+ can view the content. The the field is true the content
-     * is restricted to viewers aged 18+. Otherwise The field won't be present.
-     *
-     * @param bool $restricted
-     */
-    public function setRestricted($restricted)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getRestricted()
-    {
-    }
-    /**
-     * Video game rating, if any.
-     *
-     * Accepted values: anyone, m15Plus, m16Plus, m17Plus
-     *
-     * @param self::VIDEO_GAME_RATING_* $videoGameRating
-     */
-    public function setVideoGameRating($videoGameRating)
-    {
-    }
-    /**
-     * @return self::VIDEO_GAME_RATING_*
-     */
-    public function getVideoGameRating()
+    class Google_Service_YouTube_VideoAgeGating extends \Google\Service\YouTube\VideoAgeGating
     {
     }
 }

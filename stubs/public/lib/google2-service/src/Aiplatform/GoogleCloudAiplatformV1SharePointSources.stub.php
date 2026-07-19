@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SharePointSources extends \Google\Collection
-{
-    protected $collection_key = 'sharePointSources';
-    protected $sharePointSourcesType = GoogleCloudAiplatformV1SharePointSourcesSharePointSource::class;
-    protected $sharePointSourcesDataType = 'array';
-    /**
-     * The SharePoint sources.
-     *
-     * @param GoogleCloudAiplatformV1SharePointSourcesSharePointSource[] $sharePointSources
-     */
-    public function setSharePointSources($sharePointSources)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SharePointSources extends \Google\Collection
     {
+        protected $collection_key = 'sharePointSources';
+        protected $sharePointSourcesType = GoogleCloudAiplatformV1SharePointSourcesSharePointSource::class;
+        protected $sharePointSourcesDataType = 'array';
+        /**
+         * The SharePoint sources.
+         *
+         * @param GoogleCloudAiplatformV1SharePointSourcesSharePointSource[] $sharePointSources
+         */
+        public function setSharePointSources($sharePointSources)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SharePointSourcesSharePointSource[]
+         */
+        public function getSharePointSources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1SharePointSourcesSharePointSource[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SharePointSources registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSharePointSources()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SharePointSources extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SharePointSources
     {
     }
 }

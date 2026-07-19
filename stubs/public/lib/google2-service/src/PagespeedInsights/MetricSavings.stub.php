@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PagespeedInsights;
-
-class MetricSavings extends \Google\Model
-{
-    protected $internal_gapi_mappings = ["cLS" => "CLS", "fCP" => "FCP", "iNP" => "INP", "lCP" => "LCP", "tBT" => "TBT"];
+namespace Google\Service\PagespeedInsights {
+    class MetricSavings extends \Google\Model
+    {
+        protected $internal_gapi_mappings = ["cLS" => "CLS", "fCP" => "FCP", "iNP" => "INP", "lCP" => "LCP", "tBT" => "TBT"];
+        /**
+         * Optional. Optional numeric value representing the audit's savings for the
+         * CLS metric.
+         *
+         * @var 
+         */
+        public $cLS;
+        /**
+         * Optional. Optional numeric value representing the audit's savings for the
+         * FCP metric.
+         *
+         * @var 
+         */
+        public $fCP;
+        /**
+         * Optional. Optional numeric value representing the audit's savings for the
+         * INP metric.
+         *
+         * @var 
+         */
+        public $iNP;
+        /**
+         * Optional. Optional numeric value representing the audit's savings for the
+         * LCP metric.
+         *
+         * @var 
+         */
+        public $lCP;
+        /**
+         * Optional. Optional numeric value representing the audit's savings for the
+         * TBT metric.
+         *
+         * @var 
+         */
+        public $tBT;
+        public function setCLS($cLS)
+        {
+        }
+        public function getCLS()
+        {
+        }
+        public function setFCP($fCP)
+        {
+        }
+        public function getFCP()
+        {
+        }
+        public function setINP($iNP)
+        {
+        }
+        public function getINP()
+        {
+        }
+        public function setLCP($lCP)
+        {
+        }
+        public function getLCP()
+        {
+        }
+        public function setTBT($tBT)
+        {
+        }
+        public function getTBT()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * Optional. Optional numeric value representing the audit's savings for the
-     * CLS metric.
-     *
-     * @var 
+     * Runtime class alias of \Google\Service\PagespeedInsights\MetricSavings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $cLS;
-    /**
-     * Optional. Optional numeric value representing the audit's savings for the
-     * FCP metric.
-     *
-     * @var 
-     */
-    public $fCP;
-    /**
-     * Optional. Optional numeric value representing the audit's savings for the
-     * INP metric.
-     *
-     * @var 
-     */
-    public $iNP;
-    /**
-     * Optional. Optional numeric value representing the audit's savings for the
-     * LCP metric.
-     *
-     * @var 
-     */
-    public $lCP;
-    /**
-     * Optional. Optional numeric value representing the audit's savings for the
-     * TBT metric.
-     *
-     * @var 
-     */
-    public $tBT;
-    public function setCLS($cLS)
-    {
-    }
-    public function getCLS()
-    {
-    }
-    public function setFCP($fCP)
-    {
-    }
-    public function getFCP()
-    {
-    }
-    public function setINP($iNP)
-    {
-    }
-    public function getINP()
-    {
-    }
-    public function setLCP($lCP)
-    {
-    }
-    public function getLCP()
-    {
-    }
-    public function setTBT($tBT)
-    {
-    }
-    public function getTBT()
+    class Google_Service_PagespeedInsights_MetricSavings extends \Google\Service\PagespeedInsights\MetricSavings
     {
     }
 }

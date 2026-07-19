@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleDevtoolsCloudbuildV1HttpConfig extends \Google\Model
-{
-    /**
-     * SecretVersion resource of the HTTP proxy URL. The Service Account used in
-     * the build (either the default Service Account or user-specified Service
-     * Account) should have `secretmanager.versions.access` permissions on this
-     * secret. The proxy URL should be in format `protocol://@]proxyhost[:port]`.
-     *
-     * @var string
-     */
-    public $proxySecretVersionName;
-    /**
-     * SecretVersion resource of the HTTP proxy URL. The Service Account used in
-     * the build (either the default Service Account or user-specified Service
-     * Account) should have `secretmanager.versions.access` permissions on this
-     * secret. The proxy URL should be in format `protocol://@]proxyhost[:port]`.
-     *
-     * @param string $proxySecretVersionName
-     */
-    public function setProxySecretVersionName($proxySecretVersionName)
+namespace Google\Service\CloudRun {
+    class GoogleDevtoolsCloudbuildV1HttpConfig extends \Google\Model
     {
+        /**
+         * SecretVersion resource of the HTTP proxy URL. The Service Account used in
+         * the build (either the default Service Account or user-specified Service
+         * Account) should have `secretmanager.versions.access` permissions on this
+         * secret. The proxy URL should be in format `protocol://@]proxyhost[:port]`.
+         *
+         * @var string
+         */
+        public $proxySecretVersionName;
+        /**
+         * SecretVersion resource of the HTTP proxy URL. The Service Account used in
+         * the build (either the default Service Account or user-specified Service
+         * Account) should have `secretmanager.versions.access` permissions on this
+         * secret. The proxy URL should be in format `protocol://@]proxyhost[:port]`.
+         *
+         * @param string $proxySecretVersionName
+         */
+        public function setProxySecretVersionName($proxySecretVersionName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProxySecretVersionName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRun\GoogleDevtoolsCloudbuildV1HttpConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProxySecretVersionName()
+    class Google_Service_CloudRun_GoogleDevtoolsCloudbuildV1HttpConfig extends \Google\Service\CloudRun\GoogleDevtoolsCloudbuildV1HttpConfig
     {
     }
 }

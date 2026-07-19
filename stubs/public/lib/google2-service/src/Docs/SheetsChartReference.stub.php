@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class SheetsChartReference extends \Google\Model
-{
-    /**
-     * The ID of the specific chart in the Google Sheets spreadsheet that's
-     * embedded.
-     *
-     * @var int
-     */
-    public $chartId;
-    /**
-     * The ID of the Google Sheets spreadsheet that contains the source chart.
-     *
-     * @var string
-     */
-    public $spreadsheetId;
-    /**
-     * The ID of the specific chart in the Google Sheets spreadsheet that's
-     * embedded.
-     *
-     * @param int $chartId
-     */
-    public function setChartId($chartId)
+namespace Google\Service\Docs {
+    class SheetsChartReference extends \Google\Model
     {
+        /**
+         * The ID of the specific chart in the Google Sheets spreadsheet that's
+         * embedded.
+         *
+         * @var int
+         */
+        public $chartId;
+        /**
+         * The ID of the Google Sheets spreadsheet that contains the source chart.
+         *
+         * @var string
+         */
+        public $spreadsheetId;
+        /**
+         * The ID of the specific chart in the Google Sheets spreadsheet that's
+         * embedded.
+         *
+         * @param int $chartId
+         */
+        public function setChartId($chartId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getChartId()
+        {
+        }
+        /**
+         * The ID of the Google Sheets spreadsheet that contains the source chart.
+         *
+         * @param string $spreadsheetId
+         */
+        public function setSpreadsheetId($spreadsheetId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSpreadsheetId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Docs\SheetsChartReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChartId()
-    {
-    }
-    /**
-     * The ID of the Google Sheets spreadsheet that contains the source chart.
-     *
-     * @param string $spreadsheetId
-     */
-    public function setSpreadsheetId($spreadsheetId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSpreadsheetId()
+    class Google_Service_Docs_SheetsChartReference extends \Google\Service\Docs\SheetsChartReference
     {
     }
 }

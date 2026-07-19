@@ -21,65 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin\Resource;
-
-/**
- * The "firebaseLinks" collection of methods.
- * Typical usage is:
- *  <code>
- *   $analyticsadminService = new Google\Service\GoogleAnalyticsAdmin(...);
- *   $firebaseLinks = $analyticsadminService->properties_firebaseLinks;
- *  </code>
- */
-class PropertiesFirebaseLinks extends \Google\Service\Resource
-{
+namespace Google\Service\GoogleAnalyticsAdmin\Resource {
+    use Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaFirebaseLink;
+    use Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaListFirebaseLinksResponse;
+    use Google\Service\GoogleAnalyticsAdmin\GoogleProtobufEmpty;
     /**
-     * Creates a FirebaseLink. Properties can have at most one FirebaseLink.
-     * (firebaseLinks.create)
-     *
-     * @param string $parent Required. Format: properties/{property_id} Example:
-     * `properties/1234`
-     * @param GoogleAnalyticsAdminV1betaFirebaseLink $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleAnalyticsAdminV1betaFirebaseLink
-     * @throws \Google\Service\Exception
+     * The "firebaseLinks" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $analyticsadminService = new Google\Service\GoogleAnalyticsAdmin(...);
+     *   $firebaseLinks = $analyticsadminService->properties_firebaseLinks;
+     *  </code>
      */
-    public function create($parent, GoogleAnalyticsAdminV1betaFirebaseLink $postBody, $optParams = [])
+    class PropertiesFirebaseLinks extends \Google\Service\Resource
     {
+        /**
+         * Creates a FirebaseLink. Properties can have at most one FirebaseLink.
+         * (firebaseLinks.create)
+         *
+         * @param string $parent Required. Format: properties/{property_id} Example:
+         * `properties/1234`
+         * @param GoogleAnalyticsAdminV1betaFirebaseLink $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleAnalyticsAdminV1betaFirebaseLink
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleAnalyticsAdminV1betaFirebaseLink $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a FirebaseLink on a property (firebaseLinks.delete)
+         *
+         * @param string $name Required. Format:
+         * properties/{property_id}/firebaseLinks/{firebase_link_id} Example:
+         * `properties/1234/firebaseLinks/5678`
+         * @param array $optParams Optional parameters.
+         * @return GoogleProtobufEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists FirebaseLinks on a property. Properties can have at most one
+         * FirebaseLink. (firebaseLinks.listPropertiesFirebaseLinks)
+         *
+         * @param string $parent Required. Format: properties/{property_id} Example:
+         * `properties/1234`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of resources to return. The
+         * service may return fewer than this value, even if there are additional pages.
+         * If unspecified, at most 50 resources will be returned. The maximum value is
+         * 200; (higher values will be coerced to the maximum)
+         * @opt_param string pageToken A page token, received from a previous
+         * `ListFirebaseLinks` call. Provide this to retrieve the subsequent page. When
+         * paginating, all other parameters provided to `ListFirebaseLinks` must match
+         * the call that provided the page token.
+         * @return GoogleAnalyticsAdminV1betaListFirebaseLinksResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listPropertiesFirebaseLinks($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a FirebaseLink on a property (firebaseLinks.delete)
-     *
-     * @param string $name Required. Format:
-     * properties/{property_id}/firebaseLinks/{firebase_link_id} Example:
-     * `properties/1234/firebaseLinks/5678`
-     * @param array $optParams Optional parameters.
-     * @return GoogleProtobufEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\Resource\PropertiesFirebaseLinks registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists FirebaseLinks on a property. Properties can have at most one
-     * FirebaseLink. (firebaseLinks.listPropertiesFirebaseLinks)
-     *
-     * @param string $parent Required. Format: properties/{property_id} Example:
-     * `properties/1234`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of resources to return. The
-     * service may return fewer than this value, even if there are additional pages.
-     * If unspecified, at most 50 resources will be returned. The maximum value is
-     * 200; (higher values will be coerced to the maximum)
-     * @opt_param string pageToken A page token, received from a previous
-     * `ListFirebaseLinks` call. Provide this to retrieve the subsequent page. When
-     * paginating, all other parameters provided to `ListFirebaseLinks` must match
-     * the call that provided the page token.
-     * @return GoogleAnalyticsAdminV1betaListFirebaseLinksResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listPropertiesFirebaseLinks($parent, $optParams = [])
+    class Google_Service_GoogleAnalyticsAdmin_Resource_PropertiesFirebaseLinks extends \Google\Service\GoogleAnalyticsAdmin\Resource\PropertiesFirebaseLinks
     {
     }
 }

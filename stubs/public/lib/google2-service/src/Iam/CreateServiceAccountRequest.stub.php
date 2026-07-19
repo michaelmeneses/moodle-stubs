@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Iam;
-
-class CreateServiceAccountRequest extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $accountId;
-    protected $serviceAccountType = ServiceAccount::class;
-    protected $serviceAccountDataType = '';
-    public $serviceAccount;
-    /**
-     * @param string
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\Iam {
+    class CreateServiceAccountRequest extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $accountId;
+        protected $serviceAccountType = ServiceAccount::class;
+        protected $serviceAccountDataType = '';
+        public $serviceAccount;
+        /**
+         * @param string
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * @param ServiceAccount
+         */
+        public function setServiceAccount(ServiceAccount $serviceAccount)
+        {
+        }
+        /**
+         * @return ServiceAccount
+         */
+        public function getServiceAccount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Iam\CreateServiceAccountRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * @param ServiceAccount
-     */
-    public function setServiceAccount(ServiceAccount $serviceAccount)
-    {
-    }
-    /**
-     * @return ServiceAccount
-     */
-    public function getServiceAccount()
+    class Google_Service_Iam_CreateServiceAccountRequest extends \Google\Service\Iam\CreateServiceAccountRequest
     {
     }
 }

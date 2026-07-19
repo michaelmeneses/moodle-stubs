@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ListReasoningEnginesResponse extends \Google\Collection
-{
-    protected $collection_key = 'reasoningEngines';
-    /**
-     * A token to retrieve the next page of results. Pass to
-     * ListReasoningEnginesRequest.page_token to obtain that page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $reasoningEnginesType = GoogleCloudAiplatformV1ReasoningEngine::class;
-    protected $reasoningEnginesDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass to
-     * ListReasoningEnginesRequest.page_token to obtain that page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ListReasoningEnginesResponse extends \Google\Collection
     {
+        protected $collection_key = 'reasoningEngines';
+        /**
+         * A token to retrieve the next page of results. Pass to
+         * ListReasoningEnginesRequest.page_token to obtain that page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $reasoningEnginesType = GoogleCloudAiplatformV1ReasoningEngine::class;
+        protected $reasoningEnginesDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass to
+         * ListReasoningEnginesRequest.page_token to obtain that page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of ReasoningEngines in the requested page.
+         *
+         * @param GoogleCloudAiplatformV1ReasoningEngine[] $reasoningEngines
+         */
+        public function setReasoningEngines($reasoningEngines)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ReasoningEngine[]
+         */
+        public function getReasoningEngines()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListReasoningEnginesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of ReasoningEngines in the requested page.
-     *
-     * @param GoogleCloudAiplatformV1ReasoningEngine[] $reasoningEngines
-     */
-    public function setReasoningEngines($reasoningEngines)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1ReasoningEngine[]
-     */
-    public function getReasoningEngines()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ListReasoningEnginesResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListReasoningEnginesResponse
     {
     }
 }

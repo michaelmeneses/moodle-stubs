@@ -20,31 +20,40 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\output\actions;
-
-/**
- * Confirm action
- *
- * @copyright 2009 Nicolas Connault
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @since Moodle 2.0
- * @package core
- * @category output
- */
-class confirm_action extends component_action
-{
+namespace core\output\actions {
     /**
-     * Constructs the confirm action object
+     * Confirm action
      *
-     * @param string $message The message to display to the user when they are shown
-     *    the confirm dialogue.
-     * @param string $callback Deprecated since 2.7
-     * @param string $continuelabel The string to use for he continue button
-     * @param string $cancellabel The string to use for the cancel button
-     * @param string|null $title The title of the confirmation dialog
-     * @param string|null $dialogtype The type of dialog (primary button style). E.g. 'delete'
+     * @copyright 2009 Nicolas Connault
+     * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     * @since Moodle 2.0
+     * @package core
+     * @category output
      */
-    public function __construct($message, $callback = null, $continuelabel = null, $cancellabel = null, ?string $title = null, ?string $dialogtype = null)
+    class confirm_action extends component_action
+    {
+        /**
+         * Constructs the confirm action object
+         *
+         * @param string $message The message to display to the user when they are shown
+         *    the confirm dialogue.
+         * @param string $callback Deprecated since 2.7
+         * @param string $continuelabel The string to use for he continue button
+         * @param string $cancellabel The string to use for the cancel button
+         * @param string|null $title The title of the confirmation dialog
+         * @param string|null $dialogtype The type of dialog (primary button style). E.g. 'delete'
+         */
+        public function __construct($message, $callback = null, $continuelabel = null, $cancellabel = null, ?string $title = null, ?string $dialogtype = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \core\output\actions\confirm_action registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class confirm_action extends \core\output\actions\confirm_action
     {
     }
 }

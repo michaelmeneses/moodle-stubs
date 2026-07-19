@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1GenerateVideoResponseVideo extends \Google\Model
-{
-    /**
-     * Base64 encoded bytes string representing the video.
-     *
-     * @var string
-     */
-    public $bytesBase64Encoded;
-    /**
-     * Cloud Storage URI where the generated video is written.
-     *
-     * @var string
-     */
-    public $gcsUri;
-    /**
-     * The MIME type of the content of the video. - video/mp4
-     *
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * Base64 encoded bytes string representing the video.
-     *
-     * @param string $bytesBase64Encoded
-     */
-    public function setBytesBase64Encoded($bytesBase64Encoded)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1GenerateVideoResponseVideo extends \Google\Model
     {
+        /**
+         * Base64 encoded bytes string representing the video.
+         *
+         * @var string
+         */
+        public $bytesBase64Encoded;
+        /**
+         * Cloud Storage URI where the generated video is written.
+         *
+         * @var string
+         */
+        public $gcsUri;
+        /**
+         * The MIME type of the content of the video. - video/mp4
+         *
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * Base64 encoded bytes string representing the video.
+         *
+         * @param string $bytesBase64Encoded
+         */
+        public function setBytesBase64Encoded($bytesBase64Encoded)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBytesBase64Encoded()
+        {
+        }
+        /**
+         * Cloud Storage URI where the generated video is written.
+         *
+         * @param string $gcsUri
+         */
+        public function setGcsUri($gcsUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcsUri()
+        {
+        }
+        /**
+         * The MIME type of the content of the video. - video/mp4
+         *
+         * @param string $mimeType
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1GenerateVideoResponseVideo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBytesBase64Encoded()
-    {
-    }
-    /**
-     * Cloud Storage URI where the generated video is written.
-     *
-     * @param string $gcsUri
-     */
-    public function setGcsUri($gcsUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGcsUri()
-    {
-    }
-    /**
-     * The MIME type of the content of the video. - video/mp4
-     *
-     * @param string $mimeType
-     */
-    public function setMimeType($mimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimeType()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1GenerateVideoResponseVideo extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1GenerateVideoResponseVideo
     {
     }
 }

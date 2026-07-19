@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceConsumerManagement;
-
-class BillingConfig extends \Google\Model
-{
-    /**
-     * Name of the billing account. For example
-     * `billingAccounts/012345-567890-ABCDEF`.
-     *
-     * @var string
-     */
-    public $billingAccount;
-    /**
-     * Name of the billing account. For example
-     * `billingAccounts/012345-567890-ABCDEF`.
-     *
-     * @param string $billingAccount
-     */
-    public function setBillingAccount($billingAccount)
+namespace Google\Service\ServiceConsumerManagement {
+    class BillingConfig extends \Google\Model
     {
+        /**
+         * Name of the billing account. For example
+         * `billingAccounts/012345-567890-ABCDEF`.
+         *
+         * @var string
+         */
+        public $billingAccount;
+        /**
+         * Name of the billing account. For example
+         * `billingAccounts/012345-567890-ABCDEF`.
+         *
+         * @param string $billingAccount
+         */
+        public function setBillingAccount($billingAccount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBillingAccount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceConsumerManagement\BillingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBillingAccount()
+    class Google_Service_ServiceConsumerManagement_BillingConfig extends \Google\Service\ServiceConsumerManagement\BillingConfig
     {
     }
 }

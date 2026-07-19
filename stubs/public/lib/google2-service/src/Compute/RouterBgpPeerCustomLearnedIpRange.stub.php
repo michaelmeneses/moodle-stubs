@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class RouterBgpPeerCustomLearnedIpRange extends \Google\Model
-{
-    /**
-     * The custom learned route IP address range. Must be a valid CIDR-formatted
-     * prefix. If an IP address is provided without a subnet mask, it is
-     * interpreted as, for IPv4, a `/32` singular IP address range, and, for IPv6,
-     * `/128`.
-     *
-     * @var string
-     */
-    public $range;
-    /**
-     * The custom learned route IP address range. Must be a valid CIDR-formatted
-     * prefix. If an IP address is provided without a subnet mask, it is
-     * interpreted as, for IPv4, a `/32` singular IP address range, and, for IPv6,
-     * `/128`.
-     *
-     * @param string $range
-     */
-    public function setRange($range)
+namespace Google\Service\Compute {
+    class RouterBgpPeerCustomLearnedIpRange extends \Google\Model
     {
+        /**
+         * The custom learned route IP address range. Must be a valid CIDR-formatted
+         * prefix. If an IP address is provided without a subnet mask, it is
+         * interpreted as, for IPv4, a `/32` singular IP address range, and, for IPv6,
+         * `/128`.
+         *
+         * @var string
+         */
+        public $range;
+        /**
+         * The custom learned route IP address range. Must be a valid CIDR-formatted
+         * prefix. If an IP address is provided without a subnet mask, it is
+         * interpreted as, for IPv4, a `/32` singular IP address range, and, for IPv6,
+         * `/128`.
+         *
+         * @param string $range
+         */
+        public function setRange($range)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\RouterBgpPeerCustomLearnedIpRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRange()
+    class Google_Service_Compute_RouterBgpPeerCustomLearnedIpRange extends \Google\Service\Compute\RouterBgpPeerCustomLearnedIpRange
     {
     }
 }

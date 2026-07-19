@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkServices;
-
-class GrpcRouteRetryPolicy extends \Google\Collection
-{
-    protected $collection_key = 'retryConditions';
-    /**
-     * Specifies the allowed number of retries. This number must be > 0. If not
-     * specified, default to 1.
-     *
-     * @var string
-     */
-    public $numRetries;
-    /**
-     * - connect-failure: Router will retry on failures connecting to Backend
-     * Services, for example due to connection timeouts. - refused-stream: Router
-     * will retry if the backend service resets the stream with a REFUSED_STREAM
-     * error code. This reset type indicates that it is safe to retry. -
-     * cancelled: Router will retry if the gRPC status code in the response header
-     * is set to cancelled - deadline-exceeded: Router will retry if the gRPC
-     * status code in the response header is set to deadline-exceeded - resource-
-     * exhausted: Router will retry if the gRPC status code in the response header
-     * is set to resource-exhausted - unavailable: Router will retry if the gRPC
-     * status code in the response header is set to unavailable
-     *
-     * @var string[]
-     */
-    public $retryConditions;
-    /**
-     * Specifies the allowed number of retries. This number must be > 0. If not
-     * specified, default to 1.
-     *
-     * @param string $numRetries
-     */
-    public function setNumRetries($numRetries)
+namespace Google\Service\NetworkServices {
+    class GrpcRouteRetryPolicy extends \Google\Collection
     {
+        protected $collection_key = 'retryConditions';
+        /**
+         * Specifies the allowed number of retries. This number must be > 0. If not
+         * specified, default to 1.
+         *
+         * @var string
+         */
+        public $numRetries;
+        /**
+         * - connect-failure: Router will retry on failures connecting to Backend
+         * Services, for example due to connection timeouts. - refused-stream: Router
+         * will retry if the backend service resets the stream with a REFUSED_STREAM
+         * error code. This reset type indicates that it is safe to retry. -
+         * cancelled: Router will retry if the gRPC status code in the response header
+         * is set to cancelled - deadline-exceeded: Router will retry if the gRPC
+         * status code in the response header is set to deadline-exceeded - resource-
+         * exhausted: Router will retry if the gRPC status code in the response header
+         * is set to resource-exhausted - unavailable: Router will retry if the gRPC
+         * status code in the response header is set to unavailable
+         *
+         * @var string[]
+         */
+        public $retryConditions;
+        /**
+         * Specifies the allowed number of retries. This number must be > 0. If not
+         * specified, default to 1.
+         *
+         * @param string $numRetries
+         */
+        public function setNumRetries($numRetries)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNumRetries()
+        {
+        }
+        /**
+         * - connect-failure: Router will retry on failures connecting to Backend
+         * Services, for example due to connection timeouts. - refused-stream: Router
+         * will retry if the backend service resets the stream with a REFUSED_STREAM
+         * error code. This reset type indicates that it is safe to retry. -
+         * cancelled: Router will retry if the gRPC status code in the response header
+         * is set to cancelled - deadline-exceeded: Router will retry if the gRPC
+         * status code in the response header is set to deadline-exceeded - resource-
+         * exhausted: Router will retry if the gRPC status code in the response header
+         * is set to resource-exhausted - unavailable: Router will retry if the gRPC
+         * status code in the response header is set to unavailable
+         *
+         * @param string[] $retryConditions
+         */
+        public function setRetryConditions($retryConditions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRetryConditions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkServices\GrpcRouteRetryPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNumRetries()
-    {
-    }
-    /**
-     * - connect-failure: Router will retry on failures connecting to Backend
-     * Services, for example due to connection timeouts. - refused-stream: Router
-     * will retry if the backend service resets the stream with a REFUSED_STREAM
-     * error code. This reset type indicates that it is safe to retry. -
-     * cancelled: Router will retry if the gRPC status code in the response header
-     * is set to cancelled - deadline-exceeded: Router will retry if the gRPC
-     * status code in the response header is set to deadline-exceeded - resource-
-     * exhausted: Router will retry if the gRPC status code in the response header
-     * is set to resource-exhausted - unavailable: Router will retry if the gRPC
-     * status code in the response header is set to unavailable
-     *
-     * @param string[] $retryConditions
-     */
-    public function setRetryConditions($retryConditions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRetryConditions()
+    class Google_Service_NetworkServices_GrpcRouteRetryPolicy extends \Google\Service\NetworkServices\GrpcRouteRetryPolicy
     {
     }
 }

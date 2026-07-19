@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_data\output;
 
+use mod_data\manager;
+use mod_data\preset;
+use moodle_url;
+use url_select;
 /**
  * Class responsible for generating the action bar elements in the database module pages.
  *

@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class SecretVolumeSource extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    /**
-     * @var int
-     */
-    public $defaultMode;
-    protected $itemsType = KeyToPath::class;
-    protected $itemsDataType = 'array';
-    /**
-     * @var bool
-     */
-    public $optional;
-    /**
-     * @var string
-     */
-    public $secretName;
-    /**
-     * @param int
-     */
-    public function setDefaultMode($defaultMode)
+namespace Google\Service\CloudRun {
+    class SecretVolumeSource extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        /**
+         * @var int
+         */
+        public $defaultMode;
+        protected $itemsType = KeyToPath::class;
+        protected $itemsDataType = 'array';
+        /**
+         * @var bool
+         */
+        public $optional;
+        /**
+         * @var string
+         */
+        public $secretName;
+        /**
+         * @param int
+         */
+        public function setDefaultMode($defaultMode)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDefaultMode()
+        {
+        }
+        /**
+         * @param KeyToPath[]
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return KeyToPath[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setOptional($optional)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getOptional()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSecretName($secretName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecretName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudRun\SecretVolumeSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefaultMode()
-    {
-    }
-    /**
-     * @param KeyToPath[]
-     */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return KeyToPath[]
-     */
-    public function getItems()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setOptional($optional)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getOptional()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSecretName($secretName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSecretName()
+    class Google_Service_CloudRun_SecretVolumeSource extends \Google\Service\CloudRun\SecretVolumeSource
     {
     }
 }

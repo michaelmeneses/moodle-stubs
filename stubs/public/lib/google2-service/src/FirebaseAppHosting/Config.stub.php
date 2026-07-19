@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseAppHosting;
-
-class Config extends \Google\Collection
-{
-    protected $collection_key = 'env';
-    protected $envType = EnvironmentVariable::class;
-    protected $envDataType = 'array';
-    protected $runConfigType = RunConfig::class;
-    protected $runConfigDataType = '';
-    /**
-     * Optional. Supplied environment variables for a specific build. Provided at
-     * Build creation time and immutable afterwards. This field is only applicable
-     * for Builds using a build image - (e.g., ContainerSource or ArchiveSource
-     * with locally_build_source) Attempts to set this for other build types will
-     * result in an error
-     *
-     * @param EnvironmentVariable[] $env
-     */
-    public function setEnv($env)
+namespace Google\Service\FirebaseAppHosting {
+    class Config extends \Google\Collection
     {
+        protected $collection_key = 'env';
+        protected $envType = EnvironmentVariable::class;
+        protected $envDataType = 'array';
+        protected $runConfigType = RunConfig::class;
+        protected $runConfigDataType = '';
+        /**
+         * Optional. Supplied environment variables for a specific build. Provided at
+         * Build creation time and immutable afterwards. This field is only applicable
+         * for Builds using a build image - (e.g., ContainerSource or ArchiveSource
+         * with locally_build_source) Attempts to set this for other build types will
+         * result in an error
+         *
+         * @param EnvironmentVariable[] $env
+         */
+        public function setEnv($env)
+        {
+        }
+        /**
+         * @return EnvironmentVariable[]
+         */
+        public function getEnv()
+        {
+        }
+        /**
+         * Optional. Additional configuration of the Cloud Run [`service`](https://clo
+         * ud.google.com/run/docs/reference/rest/v2/projects.locations.services#resour
+         * ce:-service).
+         *
+         * @param RunConfig $runConfig
+         */
+        public function setRunConfig(RunConfig $runConfig)
+        {
+        }
+        /**
+         * @return RunConfig
+         */
+        public function getRunConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnvironmentVariable[]
+     * Runtime class alias of \Google\Service\FirebaseAppHosting\Config registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnv()
-    {
-    }
-    /**
-     * Optional. Additional configuration of the Cloud Run [`service`](https://clo
-     * ud.google.com/run/docs/reference/rest/v2/projects.locations.services#resour
-     * ce:-service).
-     *
-     * @param RunConfig $runConfig
-     */
-    public function setRunConfig(RunConfig $runConfig)
-    {
-    }
-    /**
-     * @return RunConfig
-     */
-    public function getRunConfig()
+    class Google_Service_FirebaseAppHosting_Config extends \Google\Service\FirebaseAppHosting\Config
     {
     }
 }

@@ -21,212 +21,221 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudCommercePartnerProcurementService;
-
-class Account extends \Google\Collection
-{
-    /**
-     * Default state of the account. It's only set to this value when the account
-     * is first created and has not been initialized.
-     */
-    public const STATE_ACCOUNT_STATE_UNSPECIFIED = 'ACCOUNT_STATE_UNSPECIFIED';
-    /**
-     * The customer has requested the creation of the account resource, and the
-     * provider notification message is dispatched. This state has been
-     * deprecated, as accounts now immediately transition to
-     * AccountState.ACCOUNT_ACTIVE.
-     */
-    public const STATE_ACCOUNT_ACTIVATION_REQUESTED = 'ACCOUNT_ACTIVATION_REQUESTED';
-    /**
-     * The account is active and ready for use. The next possible states are: -
-     * Account getting deleted: After the user invokes delete from another API.
-     */
-    public const STATE_ACCOUNT_ACTIVE = 'ACCOUNT_ACTIVE';
-    protected $collection_key = 'approvals';
-    protected $approvalsType = Approval::class;
-    protected $approvalsDataType = 'array';
-    /**
-     * Output only. The creation timestamp.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. The custom properties that were collected from the user to
-     * create this account.
-     *
-     * @deprecated
-     * @var array[]
-     */
-    public $inputProperties;
-    /**
-     * Output only. The resource name of the account. Account names have the form
-     * `accounts/{account_id}`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The identifier of the service provider that this account was
-     * created against. Each service provider is assigned a unique provider value
-     * when they onboard with Cloud Commerce platform.
-     *
-     * @var string
-     */
-    public $provider;
-    /**
-     * Output only. The reseller parent billing account of the account's
-     * corresponding billing account, applicable only when the corresponding
-     * billing account is a subaccount of a reseller. Included in responses only
-     * for view: ACCOUNT_VIEW_FULL. Format: billingAccounts/{billing_account_id}
-     *
-     * @var string
-     */
-    public $resellerParentBillingAccount;
-    /**
-     * Output only. The state of the account. This is used to decide whether the
-     * customer is in good standing with the provider and is able to make
-     * purchases. An account might not be able to make a purchase if the billing
-     * account is suspended, for example.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. The last update timestamp.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. The approvals for this account. These approvals are used to
-     * track actions that are permitted or have been completed by a customer
-     * within the context of the provider. This might include a sign up flow or a
-     * provisioning step, for example, that the provider can admit to having
-     * happened.
-     *
-     * @param Approval[] $approvals
-     */
-    public function setApprovals($approvals)
+namespace Google\Service\CloudCommercePartnerProcurementService {
+    class Account extends \Google\Collection
     {
+        /**
+         * Default state of the account. It's only set to this value when the account
+         * is first created and has not been initialized.
+         */
+        public const STATE_ACCOUNT_STATE_UNSPECIFIED = 'ACCOUNT_STATE_UNSPECIFIED';
+        /**
+         * The customer has requested the creation of the account resource, and the
+         * provider notification message is dispatched. This state has been
+         * deprecated, as accounts now immediately transition to
+         * AccountState.ACCOUNT_ACTIVE.
+         */
+        public const STATE_ACCOUNT_ACTIVATION_REQUESTED = 'ACCOUNT_ACTIVATION_REQUESTED';
+        /**
+         * The account is active and ready for use. The next possible states are: -
+         * Account getting deleted: After the user invokes delete from another API.
+         */
+        public const STATE_ACCOUNT_ACTIVE = 'ACCOUNT_ACTIVE';
+        protected $collection_key = 'approvals';
+        protected $approvalsType = Approval::class;
+        protected $approvalsDataType = 'array';
+        /**
+         * Output only. The creation timestamp.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. The custom properties that were collected from the user to
+         * create this account.
+         *
+         * @deprecated
+         * @var array[]
+         */
+        public $inputProperties;
+        /**
+         * Output only. The resource name of the account. Account names have the form
+         * `accounts/{account_id}`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The identifier of the service provider that this account was
+         * created against. Each service provider is assigned a unique provider value
+         * when they onboard with Cloud Commerce platform.
+         *
+         * @var string
+         */
+        public $provider;
+        /**
+         * Output only. The reseller parent billing account of the account's
+         * corresponding billing account, applicable only when the corresponding
+         * billing account is a subaccount of a reseller. Included in responses only
+         * for view: ACCOUNT_VIEW_FULL. Format: billingAccounts/{billing_account_id}
+         *
+         * @var string
+         */
+        public $resellerParentBillingAccount;
+        /**
+         * Output only. The state of the account. This is used to decide whether the
+         * customer is in good standing with the provider and is able to make
+         * purchases. An account might not be able to make a purchase if the billing
+         * account is suspended, for example.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. The last update timestamp.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. The approvals for this account. These approvals are used to
+         * track actions that are permitted or have been completed by a customer
+         * within the context of the provider. This might include a sign up flow or a
+         * provisioning step, for example, that the provider can admit to having
+         * happened.
+         *
+         * @param Approval[] $approvals
+         */
+        public function setApprovals($approvals)
+        {
+        }
+        /**
+         * @return Approval[]
+         */
+        public function getApprovals()
+        {
+        }
+        /**
+         * Output only. The creation timestamp.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. The custom properties that were collected from the user to
+         * create this account.
+         *
+         * @deprecated
+         * @param array[] $inputProperties
+         */
+        public function setInputProperties($inputProperties)
+        {
+        }
+        /**
+         * @deprecated
+         * @return array[]
+         */
+        public function getInputProperties()
+        {
+        }
+        /**
+         * Output only. The resource name of the account. Account names have the form
+         * `accounts/{account_id}`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The identifier of the service provider that this account was
+         * created against. Each service provider is assigned a unique provider value
+         * when they onboard with Cloud Commerce platform.
+         *
+         * @param string $provider
+         */
+        public function setProvider($provider)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProvider()
+        {
+        }
+        /**
+         * Output only. The reseller parent billing account of the account's
+         * corresponding billing account, applicable only when the corresponding
+         * billing account is a subaccount of a reseller. Included in responses only
+         * for view: ACCOUNT_VIEW_FULL. Format: billingAccounts/{billing_account_id}
+         *
+         * @param string $resellerParentBillingAccount
+         */
+        public function setResellerParentBillingAccount($resellerParentBillingAccount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResellerParentBillingAccount()
+        {
+        }
+        /**
+         * Output only. The state of the account. This is used to decide whether the
+         * customer is in good standing with the provider and is able to make
+         * purchases. An account might not be able to make a purchase if the billing
+         * account is suspended, for example.
+         *
+         * Accepted values: ACCOUNT_STATE_UNSPECIFIED, ACCOUNT_ACTIVATION_REQUESTED,
+         * ACCOUNT_ACTIVE
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Output only. The last update timestamp.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Approval[]
+     * Runtime class alias of \Google\Service\CloudCommercePartnerProcurementService\Account registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApprovals()
-    {
-    }
-    /**
-     * Output only. The creation timestamp.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. The custom properties that were collected from the user to
-     * create this account.
-     *
-     * @deprecated
-     * @param array[] $inputProperties
-     */
-    public function setInputProperties($inputProperties)
-    {
-    }
-    /**
-     * @deprecated
-     * @return array[]
-     */
-    public function getInputProperties()
-    {
-    }
-    /**
-     * Output only. The resource name of the account. Account names have the form
-     * `accounts/{account_id}`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The identifier of the service provider that this account was
-     * created against. Each service provider is assigned a unique provider value
-     * when they onboard with Cloud Commerce platform.
-     *
-     * @param string $provider
-     */
-    public function setProvider($provider)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProvider()
-    {
-    }
-    /**
-     * Output only. The reseller parent billing account of the account's
-     * corresponding billing account, applicable only when the corresponding
-     * billing account is a subaccount of a reseller. Included in responses only
-     * for view: ACCOUNT_VIEW_FULL. Format: billingAccounts/{billing_account_id}
-     *
-     * @param string $resellerParentBillingAccount
-     */
-    public function setResellerParentBillingAccount($resellerParentBillingAccount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResellerParentBillingAccount()
-    {
-    }
-    /**
-     * Output only. The state of the account. This is used to decide whether the
-     * customer is in good standing with the provider and is able to make
-     * purchases. An account might not be able to make a purchase if the billing
-     * account is suspended, for example.
-     *
-     * Accepted values: ACCOUNT_STATE_UNSPECIFIED, ACCOUNT_ACTIVATION_REQUESTED,
-     * ACCOUNT_ACTIVE
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Output only. The last update timestamp.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_CloudCommercePartnerProcurementService_Account extends \Google\Service\CloudCommercePartnerProcurementService\Account
     {
     }
 }

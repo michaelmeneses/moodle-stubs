@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidProvisioningPartner;
-
-class FindDevicesByDeviceIdentifierResponse extends \Google\Collection
-{
-    protected $collection_key = 'devices';
-    protected $devicesType = Device::class;
-    protected $devicesDataType = 'array';
-    /**
-     * A token used to access the next page of results. Omitted if no further
-     * results are available.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The total count of items in the list irrespective of pagination.
-     *
-     * @var int
-     */
-    public $totalSize;
-    /**
-     * Found devices.
-     *
-     * @param Device[] $devices
-     */
-    public function setDevices($devices)
+namespace Google\Service\AndroidProvisioningPartner {
+    class FindDevicesByDeviceIdentifierResponse extends \Google\Collection
     {
+        protected $collection_key = 'devices';
+        protected $devicesType = Device::class;
+        protected $devicesDataType = 'array';
+        /**
+         * A token used to access the next page of results. Omitted if no further
+         * results are available.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The total count of items in the list irrespective of pagination.
+         *
+         * @var int
+         */
+        public $totalSize;
+        /**
+         * Found devices.
+         *
+         * @param Device[] $devices
+         */
+        public function setDevices($devices)
+        {
+        }
+        /**
+         * @return Device[]
+         */
+        public function getDevices()
+        {
+        }
+        /**
+         * A token used to access the next page of results. Omitted if no further
+         * results are available.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The total count of items in the list irrespective of pagination.
+         *
+         * @param int $totalSize
+         */
+        public function setTotalSize($totalSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Device[]
+     * Runtime class alias of \Google\Service\AndroidProvisioningPartner\FindDevicesByDeviceIdentifierResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDevices()
-    {
-    }
-    /**
-     * A token used to access the next page of results. Omitted if no further
-     * results are available.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The total count of items in the list irrespective of pagination.
-     *
-     * @param int $totalSize
-     */
-    public function setTotalSize($totalSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalSize()
+    class Google_Service_AndroidProvisioningPartner_FindDevicesByDeviceIdentifierResponse extends \Google\Service\AndroidProvisioningPartner\FindDevicesByDeviceIdentifierResponse
     {
     }
 }

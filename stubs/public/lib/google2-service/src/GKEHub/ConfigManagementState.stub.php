@@ -21,150 +21,159 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ConfigManagementState extends \Google\Model
-{
-    protected $binauthzStateType = ConfigManagementBinauthzState::class;
-    protected $binauthzStateDataType = '';
-    /**
-     * Output only. This field is set to the `cluster_name` field of the
-     * Membership Spec if it is not empty. Otherwise, it is set to the cluster's
-     * fleet membership name.
-     *
-     * @var string
-     */
-    public $clusterName;
-    protected $configSyncStateType = ConfigManagementConfigSyncState::class;
-    protected $configSyncStateDataType = '';
-    protected $hierarchyControllerStateType = ConfigManagementHierarchyControllerState::class;
-    protected $hierarchyControllerStateDataType = '';
-    /**
-     * Output only. The Kubernetes API server version of the cluster.
-     *
-     * @var string
-     */
-    public $kubernetesApiServerVersion;
-    protected $membershipSpecType = ConfigManagementSpec::class;
-    protected $membershipSpecDataType = '';
-    protected $operatorStateType = ConfigManagementOperatorState::class;
-    protected $operatorStateDataType = '';
-    protected $policyControllerStateType = ConfigManagementPolicyControllerState::class;
-    protected $policyControllerStateDataType = '';
-    /**
-     * Output only. Binauthz status.
-     *
-     * @param ConfigManagementBinauthzState $binauthzState
-     */
-    public function setBinauthzState(ConfigManagementBinauthzState $binauthzState)
+namespace Google\Service\GKEHub {
+    class ConfigManagementState extends \Google\Model
     {
+        protected $binauthzStateType = ConfigManagementBinauthzState::class;
+        protected $binauthzStateDataType = '';
+        /**
+         * Output only. This field is set to the `cluster_name` field of the
+         * Membership Spec if it is not empty. Otherwise, it is set to the cluster's
+         * fleet membership name.
+         *
+         * @var string
+         */
+        public $clusterName;
+        protected $configSyncStateType = ConfigManagementConfigSyncState::class;
+        protected $configSyncStateDataType = '';
+        protected $hierarchyControllerStateType = ConfigManagementHierarchyControllerState::class;
+        protected $hierarchyControllerStateDataType = '';
+        /**
+         * Output only. The Kubernetes API server version of the cluster.
+         *
+         * @var string
+         */
+        public $kubernetesApiServerVersion;
+        protected $membershipSpecType = ConfigManagementSpec::class;
+        protected $membershipSpecDataType = '';
+        protected $operatorStateType = ConfigManagementOperatorState::class;
+        protected $operatorStateDataType = '';
+        protected $policyControllerStateType = ConfigManagementPolicyControllerState::class;
+        protected $policyControllerStateDataType = '';
+        /**
+         * Output only. Binauthz status.
+         *
+         * @param ConfigManagementBinauthzState $binauthzState
+         */
+        public function setBinauthzState(ConfigManagementBinauthzState $binauthzState)
+        {
+        }
+        /**
+         * @return ConfigManagementBinauthzState
+         */
+        public function getBinauthzState()
+        {
+        }
+        /**
+         * Output only. This field is set to the `cluster_name` field of the
+         * Membership Spec if it is not empty. Otherwise, it is set to the cluster's
+         * fleet membership name.
+         *
+         * @param string $clusterName
+         */
+        public function setClusterName($clusterName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClusterName()
+        {
+        }
+        /**
+         * Output only. Current sync status.
+         *
+         * @param ConfigManagementConfigSyncState $configSyncState
+         */
+        public function setConfigSyncState(ConfigManagementConfigSyncState $configSyncState)
+        {
+        }
+        /**
+         * @return ConfigManagementConfigSyncState
+         */
+        public function getConfigSyncState()
+        {
+        }
+        /**
+         * Output only. Hierarchy Controller status.
+         *
+         * @param ConfigManagementHierarchyControllerState $hierarchyControllerState
+         */
+        public function setHierarchyControllerState(ConfigManagementHierarchyControllerState $hierarchyControllerState)
+        {
+        }
+        /**
+         * @return ConfigManagementHierarchyControllerState
+         */
+        public function getHierarchyControllerState()
+        {
+        }
+        /**
+         * Output only. The Kubernetes API server version of the cluster.
+         *
+         * @param string $kubernetesApiServerVersion
+         */
+        public function setKubernetesApiServerVersion($kubernetesApiServerVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKubernetesApiServerVersion()
+        {
+        }
+        /**
+         * Output only. Membership configuration in the cluster. This represents the
+         * actual state in the cluster, while the MembershipSpec in the FeatureSpec
+         * represents the intended state.
+         *
+         * @param ConfigManagementSpec $membershipSpec
+         */
+        public function setMembershipSpec(ConfigManagementSpec $membershipSpec)
+        {
+        }
+        /**
+         * @return ConfigManagementSpec
+         */
+        public function getMembershipSpec()
+        {
+        }
+        /**
+         * Output only. Current install status of ACM's Operator.
+         *
+         * @param ConfigManagementOperatorState $operatorState
+         */
+        public function setOperatorState(ConfigManagementOperatorState $operatorState)
+        {
+        }
+        /**
+         * @return ConfigManagementOperatorState
+         */
+        public function getOperatorState()
+        {
+        }
+        /**
+         * Output only. PolicyController status.
+         *
+         * @param ConfigManagementPolicyControllerState $policyControllerState
+         */
+        public function setPolicyControllerState(ConfigManagementPolicyControllerState $policyControllerState)
+        {
+        }
+        /**
+         * @return ConfigManagementPolicyControllerState
+         */
+        public function getPolicyControllerState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ConfigManagementBinauthzState
+     * Runtime class alias of \Google\Service\GKEHub\ConfigManagementState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBinauthzState()
-    {
-    }
-    /**
-     * Output only. This field is set to the `cluster_name` field of the
-     * Membership Spec if it is not empty. Otherwise, it is set to the cluster's
-     * fleet membership name.
-     *
-     * @param string $clusterName
-     */
-    public function setClusterName($clusterName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getClusterName()
-    {
-    }
-    /**
-     * Output only. Current sync status.
-     *
-     * @param ConfigManagementConfigSyncState $configSyncState
-     */
-    public function setConfigSyncState(ConfigManagementConfigSyncState $configSyncState)
-    {
-    }
-    /**
-     * @return ConfigManagementConfigSyncState
-     */
-    public function getConfigSyncState()
-    {
-    }
-    /**
-     * Output only. Hierarchy Controller status.
-     *
-     * @param ConfigManagementHierarchyControllerState $hierarchyControllerState
-     */
-    public function setHierarchyControllerState(ConfigManagementHierarchyControllerState $hierarchyControllerState)
-    {
-    }
-    /**
-     * @return ConfigManagementHierarchyControllerState
-     */
-    public function getHierarchyControllerState()
-    {
-    }
-    /**
-     * Output only. The Kubernetes API server version of the cluster.
-     *
-     * @param string $kubernetesApiServerVersion
-     */
-    public function setKubernetesApiServerVersion($kubernetesApiServerVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKubernetesApiServerVersion()
-    {
-    }
-    /**
-     * Output only. Membership configuration in the cluster. This represents the
-     * actual state in the cluster, while the MembershipSpec in the FeatureSpec
-     * represents the intended state.
-     *
-     * @param ConfigManagementSpec $membershipSpec
-     */
-    public function setMembershipSpec(ConfigManagementSpec $membershipSpec)
-    {
-    }
-    /**
-     * @return ConfigManagementSpec
-     */
-    public function getMembershipSpec()
-    {
-    }
-    /**
-     * Output only. Current install status of ACM's Operator.
-     *
-     * @param ConfigManagementOperatorState $operatorState
-     */
-    public function setOperatorState(ConfigManagementOperatorState $operatorState)
-    {
-    }
-    /**
-     * @return ConfigManagementOperatorState
-     */
-    public function getOperatorState()
-    {
-    }
-    /**
-     * Output only. PolicyController status.
-     *
-     * @param ConfigManagementPolicyControllerState $policyControllerState
-     */
-    public function setPolicyControllerState(ConfigManagementPolicyControllerState $policyControllerState)
-    {
-    }
-    /**
-     * @return ConfigManagementPolicyControllerState
-     */
-    public function getPolicyControllerState()
+    class Google_Service_GKEHub_ConfigManagementState extends \Google\Service\GKEHub\ConfigManagementState
     {
     }
 }

@@ -21,150 +21,159 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class GitHubEnterpriseConfig extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $appId;
-    /**
-     * @var string
-     */
-    public $createTime;
-    /**
-     * @var string
-     */
-    public $displayName;
-    /**
-     * @var string
-     */
-    public $hostUrl;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $peeredNetwork;
-    protected $secretsType = GitHubEnterpriseSecrets::class;
-    protected $secretsDataType = '';
-    /**
-     * @var string
-     */
-    public $sslCa;
-    /**
-     * @var string
-     */
-    public $webhookKey;
-    /**
-     * @param string
-     */
-    public function setAppId($appId)
+namespace Google\Service\CloudBuild {
+    class GitHubEnterpriseConfig extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $appId;
+        /**
+         * @var string
+         */
+        public $createTime;
+        /**
+         * @var string
+         */
+        public $displayName;
+        /**
+         * @var string
+         */
+        public $hostUrl;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $peeredNetwork;
+        protected $secretsType = GitHubEnterpriseSecrets::class;
+        protected $secretsDataType = '';
+        /**
+         * @var string
+         */
+        public $sslCa;
+        /**
+         * @var string
+         */
+        public $webhookKey;
+        /**
+         * @param string
+         */
+        public function setAppId($appId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAppId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setHostUrl($hostUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHostUrl()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPeeredNetwork($peeredNetwork)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPeeredNetwork()
+        {
+        }
+        /**
+         * @param GitHubEnterpriseSecrets
+         */
+        public function setSecrets(GitHubEnterpriseSecrets $secrets)
+        {
+        }
+        /**
+         * @return GitHubEnterpriseSecrets
+         */
+        public function getSecrets()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSslCa($sslCa)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSslCa()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setWebhookKey($webhookKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWebhookKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\GitHubEnterpriseConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setHostUrl($hostUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHostUrl()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPeeredNetwork($peeredNetwork)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPeeredNetwork()
-    {
-    }
-    /**
-     * @param GitHubEnterpriseSecrets
-     */
-    public function setSecrets(GitHubEnterpriseSecrets $secrets)
-    {
-    }
-    /**
-     * @return GitHubEnterpriseSecrets
-     */
-    public function getSecrets()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSslCa($sslCa)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSslCa()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setWebhookKey($webhookKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWebhookKey()
+    class Google_Service_CloudBuild_GitHubEnterpriseConfig extends \Google\Service\CloudBuild\GitHubEnterpriseConfig
     {
     }
 }

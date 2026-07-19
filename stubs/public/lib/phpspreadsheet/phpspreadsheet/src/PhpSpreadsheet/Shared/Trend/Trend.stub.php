@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Shared\Trend;
 
+use PhpOffice\PhpSpreadsheet\Exception as SpreadsheetException;
 class Trend
 {
     const TREND_LINEAR = 'Linear';

@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkManagement;
-
-class CloudRunRevisionInfo extends \Google\Model
-{
-    /**
-     * Name of a Cloud Run revision.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Location in which this revision is deployed.
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * URI of Cloud Run service this revision belongs to.
-     *
-     * @var string
-     */
-    public $serviceUri;
-    /**
-     * URI of a Cloud Run revision.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Name of a Cloud Run revision.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\NetworkManagement {
+    class CloudRunRevisionInfo extends \Google\Model
     {
+        /**
+         * Name of a Cloud Run revision.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Location in which this revision is deployed.
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * URI of Cloud Run service this revision belongs to.
+         *
+         * @var string
+         */
+        public $serviceUri;
+        /**
+         * URI of a Cloud Run revision.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Name of a Cloud Run revision.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Location in which this revision is deployed.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * URI of Cloud Run service this revision belongs to.
+         *
+         * @param string $serviceUri
+         */
+        public function setServiceUri($serviceUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceUri()
+        {
+        }
+        /**
+         * URI of a Cloud Run revision.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkManagement\CloudRunRevisionInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Location in which this revision is deployed.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * URI of Cloud Run service this revision belongs to.
-     *
-     * @param string $serviceUri
-     */
-    public function setServiceUri($serviceUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceUri()
-    {
-    }
-    /**
-     * URI of a Cloud Run revision.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_NetworkManagement_CloudRunRevisionInfo extends \Google\Service\NetworkManagement\CloudRunRevisionInfo
     {
     }
 }

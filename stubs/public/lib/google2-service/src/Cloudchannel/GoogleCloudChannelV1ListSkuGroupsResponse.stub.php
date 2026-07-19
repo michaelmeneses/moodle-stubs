@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1ListSkuGroupsResponse extends \Google\Collection
-{
-    protected $collection_key = 'skuGroups';
-    /**
-     * A token to retrieve the next page of results. Pass to
-     * ListSkuGroupsRequest.page_token to obtain that page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $skuGroupsType = GoogleCloudChannelV1SkuGroup::class;
-    protected $skuGroupsDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass to
-     * ListSkuGroupsRequest.page_token to obtain that page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1ListSkuGroupsResponse extends \Google\Collection
     {
+        protected $collection_key = 'skuGroups';
+        /**
+         * A token to retrieve the next page of results. Pass to
+         * ListSkuGroupsRequest.page_token to obtain that page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $skuGroupsType = GoogleCloudChannelV1SkuGroup::class;
+        protected $skuGroupsDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass to
+         * ListSkuGroupsRequest.page_token to obtain that page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of SKU groups requested.
+         *
+         * @param GoogleCloudChannelV1SkuGroup[] $skuGroups
+         */
+        public function setSkuGroups($skuGroups)
+        {
+        }
+        /**
+         * @return GoogleCloudChannelV1SkuGroup[]
+         */
+        public function getSkuGroups()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1ListSkuGroupsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of SKU groups requested.
-     *
-     * @param GoogleCloudChannelV1SkuGroup[] $skuGroups
-     */
-    public function setSkuGroups($skuGroups)
-    {
-    }
-    /**
-     * @return GoogleCloudChannelV1SkuGroup[]
-     */
-    public function getSkuGroups()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1ListSkuGroupsResponse extends \Google\Service\Cloudchannel\GoogleCloudChannelV1ListSkuGroupsResponse
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SlackSource extends \Google\Collection
-{
-    protected $collection_key = 'channels';
-    protected $channelsType = GoogleCloudAiplatformV1SlackSourceSlackChannels::class;
-    protected $channelsDataType = 'array';
-    /**
-     * Required. The Slack channels.
-     *
-     * @param GoogleCloudAiplatformV1SlackSourceSlackChannels[] $channels
-     */
-    public function setChannels($channels)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SlackSource extends \Google\Collection
     {
+        protected $collection_key = 'channels';
+        protected $channelsType = GoogleCloudAiplatformV1SlackSourceSlackChannels::class;
+        protected $channelsDataType = 'array';
+        /**
+         * Required. The Slack channels.
+         *
+         * @param GoogleCloudAiplatformV1SlackSourceSlackChannels[] $channels
+         */
+        public function setChannels($channels)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SlackSourceSlackChannels[]
+         */
+        public function getChannels()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1SlackSourceSlackChannels[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SlackSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChannels()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SlackSource extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SlackSource
     {
     }
 }

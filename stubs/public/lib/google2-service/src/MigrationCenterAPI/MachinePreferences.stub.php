@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class MachinePreferences extends \Google\Collection
-{
-    protected $collection_key = 'allowedMachineSeries';
-    protected $allowedMachineSeriesType = MachineSeries::class;
-    protected $allowedMachineSeriesDataType = 'array';
-    /**
-     * Compute Engine machine series to consider for insights and recommendations.
-     * If empty, no restriction is applied on the machine series.
-     *
-     * @param MachineSeries[] $allowedMachineSeries
-     */
-    public function setAllowedMachineSeries($allowedMachineSeries)
+namespace Google\Service\MigrationCenterAPI {
+    class MachinePreferences extends \Google\Collection
     {
+        protected $collection_key = 'allowedMachineSeries';
+        protected $allowedMachineSeriesType = MachineSeries::class;
+        protected $allowedMachineSeriesDataType = 'array';
+        /**
+         * Compute Engine machine series to consider for insights and recommendations.
+         * If empty, no restriction is applied on the machine series.
+         *
+         * @param MachineSeries[] $allowedMachineSeries
+         */
+        public function setAllowedMachineSeries($allowedMachineSeries)
+        {
+        }
+        /**
+         * @return MachineSeries[]
+         */
+        public function getAllowedMachineSeries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MachineSeries[]
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\MachinePreferences registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowedMachineSeries()
+    class Google_Service_MigrationCenterAPI_MachinePreferences extends \Google\Service\MigrationCenterAPI\MachinePreferences
     {
     }
 }

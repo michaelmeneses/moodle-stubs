@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class AdPolicyTopicEvidenceLegalRemovalLocalLegal extends \Google\Model
-{
-    /**
-     * Type of law for the legal notice.
-     *
-     * @var string
-     */
-    public $lawType;
-    /**
-     * Type of law for the legal notice.
-     *
-     * @param string $lawType
-     */
-    public function setLawType($lawType)
+namespace Google\Service\DisplayVideo {
+    class AdPolicyTopicEvidenceLegalRemovalLocalLegal extends \Google\Model
     {
+        /**
+         * Type of law for the legal notice.
+         *
+         * @var string
+         */
+        public $lawType;
+        /**
+         * Type of law for the legal notice.
+         *
+         * @param string $lawType
+         */
+        public function setLawType($lawType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLawType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\AdPolicyTopicEvidenceLegalRemovalLocalLegal registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLawType()
+    class Google_Service_DisplayVideo_AdPolicyTopicEvidenceLegalRemovalLocalLegal extends \Google\Service\DisplayVideo\AdPolicyTopicEvidenceLegalRemovalLocalLegal
     {
     }
 }

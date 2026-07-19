@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SemanticTile;
-
-class SecondDerivativeElevationGrid extends \Google\Model
-{
-    public $altitudeMultiplier;
-    public $columnCount;
-    public $encodedData;
-    public $rowCount;
-    public function setAltitudeMultiplier($altitudeMultiplier)
+namespace Google\Service\SemanticTile {
+    class SecondDerivativeElevationGrid extends \Google\Model
     {
+        public $altitudeMultiplier;
+        public $columnCount;
+        public $encodedData;
+        public $rowCount;
+        public function setAltitudeMultiplier($altitudeMultiplier)
+        {
+        }
+        public function getAltitudeMultiplier()
+        {
+        }
+        public function setColumnCount($columnCount)
+        {
+        }
+        public function getColumnCount()
+        {
+        }
+        public function setEncodedData($encodedData)
+        {
+        }
+        public function getEncodedData()
+        {
+        }
+        public function setRowCount($rowCount)
+        {
+        }
+        public function getRowCount()
+        {
+        }
     }
-    public function getAltitudeMultiplier()
-    {
-    }
-    public function setColumnCount($columnCount)
-    {
-    }
-    public function getColumnCount()
-    {
-    }
-    public function setEncodedData($encodedData)
-    {
-    }
-    public function getEncodedData()
-    {
-    }
-    public function setRowCount($rowCount)
-    {
-    }
-    public function getRowCount()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\SemanticTile\SecondDerivativeElevationGrid registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_SemanticTile_SecondDerivativeElevationGrid extends \Google\Service\SemanticTile\SecondDerivativeElevationGrid
     {
     }
 }

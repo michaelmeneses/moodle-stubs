@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessPlaceActions;
-
-class MinimumFee extends \Google\Model
-{
-    protected $baseFeeAmountType = Money::class;
-    protected $baseFeeAmountDataType = '';
-    /**
-     * @param Money
-     */
-    public function setBaseFeeAmount(Money $baseFeeAmount)
+namespace Google\Service\MyBusinessPlaceActions {
+    class MinimumFee extends \Google\Model
     {
+        protected $baseFeeAmountType = Money::class;
+        protected $baseFeeAmountDataType = '';
+        /**
+         * @param Money
+         */
+        public function setBaseFeeAmount(Money $baseFeeAmount)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getBaseFeeAmount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Money
+     * Runtime class alias of \Google\Service\MyBusinessPlaceActions\MinimumFee registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBaseFeeAmount()
+    class Google_Service_MyBusinessPlaceActions_MinimumFee extends \Google\Service\MyBusinessPlaceActions\MinimumFee
     {
     }
 }

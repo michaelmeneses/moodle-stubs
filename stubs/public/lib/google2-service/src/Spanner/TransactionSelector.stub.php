@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class TransactionSelector extends \Google\Model
-{
-    protected $beginType = TransactionOptions::class;
-    protected $beginDataType = '';
-    /**
-     * Execute the read or SQL query in a previously-started transaction.
-     *
-     * @var string
-     */
-    public $id;
-    protected $singleUseType = TransactionOptions::class;
-    protected $singleUseDataType = '';
-    /**
-     * Begin a new transaction and execute this read or SQL query in it. The
-     * transaction ID of the new transaction is returned in
-     * ResultSetMetadata.transaction, which is a Transaction.
-     *
-     * @param TransactionOptions $begin
-     */
-    public function setBegin(TransactionOptions $begin)
+namespace Google\Service\Spanner {
+    class TransactionSelector extends \Google\Model
     {
+        protected $beginType = TransactionOptions::class;
+        protected $beginDataType = '';
+        /**
+         * Execute the read or SQL query in a previously-started transaction.
+         *
+         * @var string
+         */
+        public $id;
+        protected $singleUseType = TransactionOptions::class;
+        protected $singleUseDataType = '';
+        /**
+         * Begin a new transaction and execute this read or SQL query in it. The
+         * transaction ID of the new transaction is returned in
+         * ResultSetMetadata.transaction, which is a Transaction.
+         *
+         * @param TransactionOptions $begin
+         */
+        public function setBegin(TransactionOptions $begin)
+        {
+        }
+        /**
+         * @return TransactionOptions
+         */
+        public function getBegin()
+        {
+        }
+        /**
+         * Execute the read or SQL query in a previously-started transaction.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Execute the read or SQL query in a temporary transaction. This is the most
+         * efficient way to execute a transaction that consists of a single SQL query.
+         *
+         * @param TransactionOptions $singleUse
+         */
+        public function setSingleUse(TransactionOptions $singleUse)
+        {
+        }
+        /**
+         * @return TransactionOptions
+         */
+        public function getSingleUse()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TransactionOptions
+     * Runtime class alias of \Google\Service\Spanner\TransactionSelector registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBegin()
-    {
-    }
-    /**
-     * Execute the read or SQL query in a previously-started transaction.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Execute the read or SQL query in a temporary transaction. This is the most
-     * efficient way to execute a transaction that consists of a single SQL query.
-     *
-     * @param TransactionOptions $singleUse
-     */
-    public function setSingleUse(TransactionOptions $singleUse)
-    {
-    }
-    /**
-     * @return TransactionOptions
-     */
-    public function getSingleUse()
+    class Google_Service_Spanner_TransactionSelector extends \Google\Service\Spanner\TransactionSelector
     {
     }
 }

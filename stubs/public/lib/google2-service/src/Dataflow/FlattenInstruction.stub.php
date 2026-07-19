@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class FlattenInstruction extends \Google\Collection
-{
-    protected $collection_key = 'inputs';
-    protected $inputsType = InstructionInput::class;
-    protected $inputsDataType = 'array';
-    /**
-     * Describes the inputs to the flatten instruction.
-     *
-     * @param InstructionInput[] $inputs
-     */
-    public function setInputs($inputs)
+namespace Google\Service\Dataflow {
+    class FlattenInstruction extends \Google\Collection
     {
+        protected $collection_key = 'inputs';
+        protected $inputsType = InstructionInput::class;
+        protected $inputsDataType = 'array';
+        /**
+         * Describes the inputs to the flatten instruction.
+         *
+         * @param InstructionInput[] $inputs
+         */
+        public function setInputs($inputs)
+        {
+        }
+        /**
+         * @return InstructionInput[]
+         */
+        public function getInputs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InstructionInput[]
+     * Runtime class alias of \Google\Service\Dataflow\FlattenInstruction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInputs()
+    class Google_Service_Dataflow_FlattenInstruction extends \Google\Service\Dataflow\FlattenInstruction
     {
     }
 }

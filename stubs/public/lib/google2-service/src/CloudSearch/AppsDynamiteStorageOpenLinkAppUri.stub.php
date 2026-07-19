@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteStorageOpenLinkAppUri extends \Google\Model
-{
-    protected $androidIntentType = AppsDynamiteStorageOpenLinkAppUriIntent::class;
-    protected $androidIntentDataType = '';
-    /**
-     * @var string
-     */
-    public $companionUri;
-    /**
-     * @var string
-     */
-    public $iosUri;
-    /**
-     * @param AppsDynamiteStorageOpenLinkAppUriIntent
-     */
-    public function setAndroidIntent(AppsDynamiteStorageOpenLinkAppUriIntent $androidIntent)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteStorageOpenLinkAppUri extends \Google\Model
     {
+        protected $androidIntentType = AppsDynamiteStorageOpenLinkAppUriIntent::class;
+        protected $androidIntentDataType = '';
+        /**
+         * @var string
+         */
+        public $companionUri;
+        /**
+         * @var string
+         */
+        public $iosUri;
+        /**
+         * @param AppsDynamiteStorageOpenLinkAppUriIntent
+         */
+        public function setAndroidIntent(AppsDynamiteStorageOpenLinkAppUriIntent $androidIntent)
+        {
+        }
+        /**
+         * @return AppsDynamiteStorageOpenLinkAppUriIntent
+         */
+        public function getAndroidIntent()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCompanionUri($companionUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCompanionUri()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setIosUri($iosUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIosUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteStorageOpenLinkAppUriIntent
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteStorageOpenLinkAppUri registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAndroidIntent()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCompanionUri($companionUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCompanionUri()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setIosUri($iosUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIosUri()
+    class Google_Service_CloudSearch_AppsDynamiteStorageOpenLinkAppUri extends \Google\Service\CloudSearch\AppsDynamiteStorageOpenLinkAppUri
     {
     }
 }

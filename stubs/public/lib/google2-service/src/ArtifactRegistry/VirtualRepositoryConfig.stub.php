@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class VirtualRepositoryConfig extends \Google\Collection
-{
-    protected $collection_key = 'upstreamPolicies';
-    protected $upstreamPoliciesType = UpstreamPolicy::class;
-    protected $upstreamPoliciesDataType = 'array';
-    /**
-     * Policies that configure the upstream artifacts distributed by the Virtual
-     * Repository. Upstream policies cannot be set on a standard repository.
-     *
-     * @param UpstreamPolicy[] $upstreamPolicies
-     */
-    public function setUpstreamPolicies($upstreamPolicies)
+namespace Google\Service\ArtifactRegistry {
+    class VirtualRepositoryConfig extends \Google\Collection
     {
+        protected $collection_key = 'upstreamPolicies';
+        protected $upstreamPoliciesType = UpstreamPolicy::class;
+        protected $upstreamPoliciesDataType = 'array';
+        /**
+         * Policies that configure the upstream artifacts distributed by the Virtual
+         * Repository. Upstream policies cannot be set on a standard repository.
+         *
+         * @param UpstreamPolicy[] $upstreamPolicies
+         */
+        public function setUpstreamPolicies($upstreamPolicies)
+        {
+        }
+        /**
+         * @return UpstreamPolicy[]
+         */
+        public function getUpstreamPolicies()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return UpstreamPolicy[]
+     * Runtime class alias of \Google\Service\ArtifactRegistry\VirtualRepositoryConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUpstreamPolicies()
+    class Google_Service_ArtifactRegistry_VirtualRepositoryConfig extends \Google\Service\ArtifactRegistry\VirtualRepositoryConfig
     {
     }
 }

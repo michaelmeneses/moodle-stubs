@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ExportModelRequest extends \Google\Model
-{
-    protected $outputConfigType = GoogleCloudAiplatformV1ExportModelRequestOutputConfig::class;
-    protected $outputConfigDataType = '';
-    /**
-     * Required. The desired output location and configuration.
-     *
-     * @param GoogleCloudAiplatformV1ExportModelRequestOutputConfig $outputConfig
-     */
-    public function setOutputConfig(GoogleCloudAiplatformV1ExportModelRequestOutputConfig $outputConfig)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ExportModelRequest extends \Google\Model
     {
+        protected $outputConfigType = GoogleCloudAiplatformV1ExportModelRequestOutputConfig::class;
+        protected $outputConfigDataType = '';
+        /**
+         * Required. The desired output location and configuration.
+         *
+         * @param GoogleCloudAiplatformV1ExportModelRequestOutputConfig $outputConfig
+         */
+        public function setOutputConfig(GoogleCloudAiplatformV1ExportModelRequestOutputConfig $outputConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1ExportModelRequestOutputConfig
+         */
+        public function getOutputConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1ExportModelRequestOutputConfig
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ExportModelRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOutputConfig()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ExportModelRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ExportModelRequest
     {
     }
 }

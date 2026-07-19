@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceUsage;
-
-class CommonLanguageSettings extends \Google\Collection
-{
-    protected $collection_key = 'destinations';
-    /**
-     * The destination where API teams want this client library to be published.
-     *
-     * @var string[]
-     */
-    public $destinations;
-    /**
-     * Link to automatically generated reference documentation. Example:
-     * https://cloud.google.com/nodejs/docs/reference/asset/latest
-     *
-     * @deprecated
-     * @var string
-     */
-    public $referenceDocsUri;
-    protected $selectiveGapicGenerationType = SelectiveGapicGeneration::class;
-    protected $selectiveGapicGenerationDataType = '';
-    /**
-     * The destination where API teams want this client library to be published.
-     *
-     * @param string[] $destinations
-     */
-    public function setDestinations($destinations)
+namespace Google\Service\ServiceUsage {
+    class CommonLanguageSettings extends \Google\Collection
     {
+        protected $collection_key = 'destinations';
+        /**
+         * The destination where API teams want this client library to be published.
+         *
+         * @var string[]
+         */
+        public $destinations;
+        /**
+         * Link to automatically generated reference documentation. Example:
+         * https://cloud.google.com/nodejs/docs/reference/asset/latest
+         *
+         * @deprecated
+         * @var string
+         */
+        public $referenceDocsUri;
+        protected $selectiveGapicGenerationType = SelectiveGapicGeneration::class;
+        protected $selectiveGapicGenerationDataType = '';
+        /**
+         * The destination where API teams want this client library to be published.
+         *
+         * @param string[] $destinations
+         */
+        public function setDestinations($destinations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDestinations()
+        {
+        }
+        /**
+         * Link to automatically generated reference documentation. Example:
+         * https://cloud.google.com/nodejs/docs/reference/asset/latest
+         *
+         * @deprecated
+         * @param string $referenceDocsUri
+         */
+        public function setReferenceDocsUri($referenceDocsUri)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getReferenceDocsUri()
+        {
+        }
+        /**
+         * Configuration for which RPCs should be generated in the GAPIC client.
+         *
+         * @param SelectiveGapicGeneration $selectiveGapicGeneration
+         */
+        public function setSelectiveGapicGeneration(SelectiveGapicGeneration $selectiveGapicGeneration)
+        {
+        }
+        /**
+         * @return SelectiveGapicGeneration
+         */
+        public function getSelectiveGapicGeneration()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ServiceUsage\CommonLanguageSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDestinations()
-    {
-    }
-    /**
-     * Link to automatically generated reference documentation. Example:
-     * https://cloud.google.com/nodejs/docs/reference/asset/latest
-     *
-     * @deprecated
-     * @param string $referenceDocsUri
-     */
-    public function setReferenceDocsUri($referenceDocsUri)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getReferenceDocsUri()
-    {
-    }
-    /**
-     * Configuration for which RPCs should be generated in the GAPIC client.
-     *
-     * @param SelectiveGapicGeneration $selectiveGapicGeneration
-     */
-    public function setSelectiveGapicGeneration(SelectiveGapicGeneration $selectiveGapicGeneration)
-    {
-    }
-    /**
-     * @return SelectiveGapicGeneration
-     */
-    public function getSelectiveGapicGeneration()
+    class Google_Service_ServiceUsage_CommonLanguageSettings extends \Google\Service\ServiceUsage\CommonLanguageSettings
     {
     }
 }

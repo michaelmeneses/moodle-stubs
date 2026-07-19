@@ -21,143 +21,152 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class TableCell extends \Google\Collection
-{
-    protected $collection_key = 'suggestedInsertionIds';
-    protected $contentType = StructuralElement::class;
-    protected $contentDataType = 'array';
-    /**
-     * The zero-based end index of this cell, exclusive, in UTF-16 code units.
-     *
-     * @var int
-     */
-    public $endIndex;
-    /**
-     * The zero-based start index of this cell, in UTF-16 code units.
-     *
-     * @var int
-     */
-    public $startIndex;
-    /**
-     * The suggested deletion IDs. If empty, then there are no suggested deletions
-     * of this content.
-     *
-     * @var string[]
-     */
-    public $suggestedDeletionIds;
-    /**
-     * The suggested insertion IDs. A TableCell may have multiple insertion IDs if
-     * it's a nested suggested change. If empty, then this is not a suggested
-     * insertion.
-     *
-     * @var string[]
-     */
-    public $suggestedInsertionIds;
-    protected $suggestedTableCellStyleChangesType = SuggestedTableCellStyle::class;
-    protected $suggestedTableCellStyleChangesDataType = 'map';
-    protected $tableCellStyleType = TableCellStyle::class;
-    protected $tableCellStyleDataType = '';
-    /**
-     * The content of the cell.
-     *
-     * @param StructuralElement[] $content
-     */
-    public function setContent($content)
+namespace Google\Service\Docs {
+    class TableCell extends \Google\Collection
     {
+        protected $collection_key = 'suggestedInsertionIds';
+        protected $contentType = StructuralElement::class;
+        protected $contentDataType = 'array';
+        /**
+         * The zero-based end index of this cell, exclusive, in UTF-16 code units.
+         *
+         * @var int
+         */
+        public $endIndex;
+        /**
+         * The zero-based start index of this cell, in UTF-16 code units.
+         *
+         * @var int
+         */
+        public $startIndex;
+        /**
+         * The suggested deletion IDs. If empty, then there are no suggested deletions
+         * of this content.
+         *
+         * @var string[]
+         */
+        public $suggestedDeletionIds;
+        /**
+         * The suggested insertion IDs. A TableCell may have multiple insertion IDs if
+         * it's a nested suggested change. If empty, then this is not a suggested
+         * insertion.
+         *
+         * @var string[]
+         */
+        public $suggestedInsertionIds;
+        protected $suggestedTableCellStyleChangesType = SuggestedTableCellStyle::class;
+        protected $suggestedTableCellStyleChangesDataType = 'map';
+        protected $tableCellStyleType = TableCellStyle::class;
+        protected $tableCellStyleDataType = '';
+        /**
+         * The content of the cell.
+         *
+         * @param StructuralElement[] $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return StructuralElement[]
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * The zero-based end index of this cell, exclusive, in UTF-16 code units.
+         *
+         * @param int $endIndex
+         */
+        public function setEndIndex($endIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getEndIndex()
+        {
+        }
+        /**
+         * The zero-based start index of this cell, in UTF-16 code units.
+         *
+         * @param int $startIndex
+         */
+        public function setStartIndex($startIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStartIndex()
+        {
+        }
+        /**
+         * The suggested deletion IDs. If empty, then there are no suggested deletions
+         * of this content.
+         *
+         * @param string[] $suggestedDeletionIds
+         */
+        public function setSuggestedDeletionIds($suggestedDeletionIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSuggestedDeletionIds()
+        {
+        }
+        /**
+         * The suggested insertion IDs. A TableCell may have multiple insertion IDs if
+         * it's a nested suggested change. If empty, then this is not a suggested
+         * insertion.
+         *
+         * @param string[] $suggestedInsertionIds
+         */
+        public function setSuggestedInsertionIds($suggestedInsertionIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSuggestedInsertionIds()
+        {
+        }
+        /**
+         * The suggested changes to the table cell style, keyed by suggestion ID.
+         *
+         * @param SuggestedTableCellStyle[] $suggestedTableCellStyleChanges
+         */
+        public function setSuggestedTableCellStyleChanges($suggestedTableCellStyleChanges)
+        {
+        }
+        /**
+         * @return SuggestedTableCellStyle[]
+         */
+        public function getSuggestedTableCellStyleChanges()
+        {
+        }
+        /**
+         * The style of the cell.
+         *
+         * @param TableCellStyle $tableCellStyle
+         */
+        public function setTableCellStyle(TableCellStyle $tableCellStyle)
+        {
+        }
+        /**
+         * @return TableCellStyle
+         */
+        public function getTableCellStyle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return StructuralElement[]
+     * Runtime class alias of \Google\Service\Docs\TableCell registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
-    {
-    }
-    /**
-     * The zero-based end index of this cell, exclusive, in UTF-16 code units.
-     *
-     * @param int $endIndex
-     */
-    public function setEndIndex($endIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getEndIndex()
-    {
-    }
-    /**
-     * The zero-based start index of this cell, in UTF-16 code units.
-     *
-     * @param int $startIndex
-     */
-    public function setStartIndex($startIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStartIndex()
-    {
-    }
-    /**
-     * The suggested deletion IDs. If empty, then there are no suggested deletions
-     * of this content.
-     *
-     * @param string[] $suggestedDeletionIds
-     */
-    public function setSuggestedDeletionIds($suggestedDeletionIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSuggestedDeletionIds()
-    {
-    }
-    /**
-     * The suggested insertion IDs. A TableCell may have multiple insertion IDs if
-     * it's a nested suggested change. If empty, then this is not a suggested
-     * insertion.
-     *
-     * @param string[] $suggestedInsertionIds
-     */
-    public function setSuggestedInsertionIds($suggestedInsertionIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSuggestedInsertionIds()
-    {
-    }
-    /**
-     * The suggested changes to the table cell style, keyed by suggestion ID.
-     *
-     * @param SuggestedTableCellStyle[] $suggestedTableCellStyleChanges
-     */
-    public function setSuggestedTableCellStyleChanges($suggestedTableCellStyleChanges)
-    {
-    }
-    /**
-     * @return SuggestedTableCellStyle[]
-     */
-    public function getSuggestedTableCellStyleChanges()
-    {
-    }
-    /**
-     * The style of the cell.
-     *
-     * @param TableCellStyle $tableCellStyle
-     */
-    public function setTableCellStyle(TableCellStyle $tableCellStyle)
-    {
-    }
-    /**
-     * @return TableCellStyle
-     */
-    public function getTableCellStyle()
+    class Google_Service_Docs_TableCell extends \Google\Service\Docs\TableCell
     {
     }
 }

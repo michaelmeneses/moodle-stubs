@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class Secret extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $kmsKeyName;
-    /**
-     * @var string[]
-     */
-    public $secretEnv;
-    /**
-     * @param string
-     */
-    public function setKmsKeyName($kmsKeyName)
+namespace Google\Service\CloudBuild {
+    class Secret extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $kmsKeyName;
+        /**
+         * @var string[]
+         */
+        public $secretEnv;
+        /**
+         * @param string
+         */
+        public function setKmsKeyName($kmsKeyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKmsKeyName()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setSecretEnv($secretEnv)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSecretEnv()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\Secret registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKmsKeyName()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setSecretEnv($secretEnv)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSecretEnv()
+    class Google_Service_CloudBuild_Secret extends \Google\Service\CloudBuild\Secret
     {
     }
 }

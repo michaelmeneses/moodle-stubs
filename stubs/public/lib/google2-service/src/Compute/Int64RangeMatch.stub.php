@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class Int64RangeMatch extends \Google\Model
-{
-    /**
-     * The end of the range (exclusive) in signed long integer format.
-     *
-     * @var string
-     */
-    public $rangeEnd;
-    /**
-     * The start of the range (inclusive) in signed long integer format.
-     *
-     * @var string
-     */
-    public $rangeStart;
-    /**
-     * The end of the range (exclusive) in signed long integer format.
-     *
-     * @param string $rangeEnd
-     */
-    public function setRangeEnd($rangeEnd)
+namespace Google\Service\Compute {
+    class Int64RangeMatch extends \Google\Model
     {
+        /**
+         * The end of the range (exclusive) in signed long integer format.
+         *
+         * @var string
+         */
+        public $rangeEnd;
+        /**
+         * The start of the range (inclusive) in signed long integer format.
+         *
+         * @var string
+         */
+        public $rangeStart;
+        /**
+         * The end of the range (exclusive) in signed long integer format.
+         *
+         * @param string $rangeEnd
+         */
+        public function setRangeEnd($rangeEnd)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRangeEnd()
+        {
+        }
+        /**
+         * The start of the range (inclusive) in signed long integer format.
+         *
+         * @param string $rangeStart
+         */
+        public function setRangeStart($rangeStart)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRangeStart()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\Int64RangeMatch registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRangeEnd()
-    {
-    }
-    /**
-     * The start of the range (inclusive) in signed long integer format.
-     *
-     * @param string $rangeStart
-     */
-    public function setRangeStart($rangeStart)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRangeStart()
+    class Google_Service_Compute_Int64RangeMatch extends \Google\Service\Compute\Int64RangeMatch
     {
     }
 }

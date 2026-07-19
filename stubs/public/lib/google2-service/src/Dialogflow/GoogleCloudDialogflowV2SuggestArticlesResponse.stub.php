@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2SuggestArticlesResponse extends \Google\Collection
-{
-    protected $collection_key = 'articleAnswers';
-    protected $articleAnswersType = GoogleCloudDialogflowV2ArticleAnswer::class;
-    protected $articleAnswersDataType = 'array';
-    /**
-     * Number of messages prior to and including latest_message to compile the
-     * suggestion. It may be smaller than the SuggestArticlesRequest.context_size
-     * field in the request if there aren't that many messages in the
-     * conversation.
-     *
-     * @var int
-     */
-    public $contextSize;
-    /**
-     * The name of the latest conversation message used to compile suggestion for.
-     * Format: `projects//locations//conversations//messages/`.
-     *
-     * @var string
-     */
-    public $latestMessage;
-    /**
-     * Articles ordered by score in descending order.
-     *
-     * @param GoogleCloudDialogflowV2ArticleAnswer[] $articleAnswers
-     */
-    public function setArticleAnswers($articleAnswers)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2SuggestArticlesResponse extends \Google\Collection
     {
+        protected $collection_key = 'articleAnswers';
+        protected $articleAnswersType = GoogleCloudDialogflowV2ArticleAnswer::class;
+        protected $articleAnswersDataType = 'array';
+        /**
+         * Number of messages prior to and including latest_message to compile the
+         * suggestion. It may be smaller than the SuggestArticlesRequest.context_size
+         * field in the request if there aren't that many messages in the
+         * conversation.
+         *
+         * @var int
+         */
+        public $contextSize;
+        /**
+         * The name of the latest conversation message used to compile suggestion for.
+         * Format: `projects//locations//conversations//messages/`.
+         *
+         * @var string
+         */
+        public $latestMessage;
+        /**
+         * Articles ordered by score in descending order.
+         *
+         * @param GoogleCloudDialogflowV2ArticleAnswer[] $articleAnswers
+         */
+        public function setArticleAnswers($articleAnswers)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2ArticleAnswer[]
+         */
+        public function getArticleAnswers()
+        {
+        }
+        /**
+         * Number of messages prior to and including latest_message to compile the
+         * suggestion. It may be smaller than the SuggestArticlesRequest.context_size
+         * field in the request if there aren't that many messages in the
+         * conversation.
+         *
+         * @param int $contextSize
+         */
+        public function setContextSize($contextSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getContextSize()
+        {
+        }
+        /**
+         * The name of the latest conversation message used to compile suggestion for.
+         * Format: `projects//locations//conversations//messages/`.
+         *
+         * @param string $latestMessage
+         */
+        public function setLatestMessage($latestMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLatestMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowV2ArticleAnswer[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2SuggestArticlesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArticleAnswers()
-    {
-    }
-    /**
-     * Number of messages prior to and including latest_message to compile the
-     * suggestion. It may be smaller than the SuggestArticlesRequest.context_size
-     * field in the request if there aren't that many messages in the
-     * conversation.
-     *
-     * @param int $contextSize
-     */
-    public function setContextSize($contextSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getContextSize()
-    {
-    }
-    /**
-     * The name of the latest conversation message used to compile suggestion for.
-     * Format: `projects//locations//conversations//messages/`.
-     *
-     * @param string $latestMessage
-     */
-    public function setLatestMessage($latestMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLatestMessage()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2SuggestArticlesResponse extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2SuggestArticlesResponse
     {
     }
 }

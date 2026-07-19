@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class Volumes extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = Volume::class;
-    protected $itemsDataType = 'array';
-    /**
-     * Resource type.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Total number of volumes found. This might be greater than the number of
-     * volumes returned in this response if results have been paginated.
-     *
-     * @var int
-     */
-    public $totalItems;
-    /**
-     * A list of volumes.
-     *
-     * @param Volume[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\Books {
+    class Volumes extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = Volume::class;
+        protected $itemsDataType = 'array';
+        /**
+         * Resource type.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Total number of volumes found. This might be greater than the number of
+         * volumes returned in this response if results have been paginated.
+         *
+         * @var int
+         */
+        public $totalItems;
+        /**
+         * A list of volumes.
+         *
+         * @param Volume[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return Volume[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * Resource type.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Total number of volumes found. This might be greater than the number of
+         * volumes returned in this response if results have been paginated.
+         *
+         * @param int $totalItems
+         */
+        public function setTotalItems($totalItems)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalItems()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Volume[]
+     * Runtime class alias of \Google\Service\Books\Volumes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
-    {
-    }
-    /**
-     * Resource type.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Total number of volumes found. This might be greater than the number of
-     * volumes returned in this response if results have been paginated.
-     *
-     * @param int $totalItems
-     */
-    public function setTotalItems($totalItems)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalItems()
+    class Google_Service_Books_Volumes extends \Google\Service\Books\Volumes
     {
     }
 }

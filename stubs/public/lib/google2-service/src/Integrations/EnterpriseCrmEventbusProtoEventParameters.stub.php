@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoEventParameters extends \Google\Collection
-{
-    protected $collection_key = 'parameters';
-    protected $parametersType = EnterpriseCrmEventbusProtoParameterEntry::class;
-    protected $parametersDataType = 'array';
-    /**
-     * Parameters are a part of Event and can be used to communicate between
-     * different tasks that are part of the same integration execution.
-     *
-     * @param EnterpriseCrmEventbusProtoParameterEntry[] $parameters
-     */
-    public function setParameters($parameters)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoEventParameters extends \Google\Collection
     {
+        protected $collection_key = 'parameters';
+        protected $parametersType = EnterpriseCrmEventbusProtoParameterEntry::class;
+        protected $parametersDataType = 'array';
+        /**
+         * Parameters are a part of Event and can be used to communicate between
+         * different tasks that are part of the same integration execution.
+         *
+         * @param EnterpriseCrmEventbusProtoParameterEntry[] $parameters
+         */
+        public function setParameters($parameters)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoParameterEntry[]
+         */
+        public function getParameters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnterpriseCrmEventbusProtoParameterEntry[]
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoEventParameters registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getParameters()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoEventParameters extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoEventParameters
     {
     }
 }

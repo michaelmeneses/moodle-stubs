@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class SearchTargetingOptionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'targetingOptions';
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * page_token field in the subsequent call to `SearchTargetingOptions` method
-     * to retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $targetingOptionsType = TargetingOption::class;
-    protected $targetingOptionsDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * page_token field in the subsequent call to `SearchTargetingOptions` method
-     * to retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\DisplayVideo {
+    class SearchTargetingOptionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'targetingOptions';
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * page_token field in the subsequent call to `SearchTargetingOptions` method
+         * to retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $targetingOptionsType = TargetingOption::class;
+        protected $targetingOptionsDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * page_token field in the subsequent call to `SearchTargetingOptions` method
+         * to retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of targeting options that match the search criteria. This list
+         * will be absent if empty.
+         *
+         * @param TargetingOption[] $targetingOptions
+         */
+        public function setTargetingOptions($targetingOptions)
+        {
+        }
+        /**
+         * @return TargetingOption[]
+         */
+        public function getTargetingOptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\SearchTargetingOptionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of targeting options that match the search criteria. This list
-     * will be absent if empty.
-     *
-     * @param TargetingOption[] $targetingOptions
-     */
-    public function setTargetingOptions($targetingOptions)
-    {
-    }
-    /**
-     * @return TargetingOption[]
-     */
-    public function getTargetingOptions()
+    class Google_Service_DisplayVideo_SearchTargetingOptionsResponse extends \Google\Service\DisplayVideo\SearchTargetingOptionsResponse
     {
     }
 }

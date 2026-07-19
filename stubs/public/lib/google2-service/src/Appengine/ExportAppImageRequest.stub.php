@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine;
-
-class ExportAppImageRequest extends \Google\Model
-{
-    /**
-     * Optional. The full resource name of the AR repository to export to. Format:
-     * projects/{project}/locations/{location}/repositories/{repository} If not
-     * specified, defaults to
-     * projects/{project}/locations/{location}/repositories/gae-standard in the
-     * same region as the app. The default repository will be created if it does
-     * not exist.
-     *
-     * @var string
-     */
-    public $destinationRepository;
-    /**
-     * Optional. Optional: A service account to use for authenticating to Artifact
-     * Registry.
-     *
-     * @var string
-     */
-    public $serviceAccount;
-    /**
-     * Optional. The full resource name of the AR repository to export to. Format:
-     * projects/{project}/locations/{location}/repositories/{repository} If not
-     * specified, defaults to
-     * projects/{project}/locations/{location}/repositories/gae-standard in the
-     * same region as the app. The default repository will be created if it does
-     * not exist.
-     *
-     * @param string $destinationRepository
-     */
-    public function setDestinationRepository($destinationRepository)
+namespace Google\Service\Appengine {
+    class ExportAppImageRequest extends \Google\Model
     {
+        /**
+         * Optional. The full resource name of the AR repository to export to. Format:
+         * projects/{project}/locations/{location}/repositories/{repository} If not
+         * specified, defaults to
+         * projects/{project}/locations/{location}/repositories/gae-standard in the
+         * same region as the app. The default repository will be created if it does
+         * not exist.
+         *
+         * @var string
+         */
+        public $destinationRepository;
+        /**
+         * Optional. Optional: A service account to use for authenticating to Artifact
+         * Registry.
+         *
+         * @var string
+         */
+        public $serviceAccount;
+        /**
+         * Optional. The full resource name of the AR repository to export to. Format:
+         * projects/{project}/locations/{location}/repositories/{repository} If not
+         * specified, defaults to
+         * projects/{project}/locations/{location}/repositories/gae-standard in the
+         * same region as the app. The default repository will be created if it does
+         * not exist.
+         *
+         * @param string $destinationRepository
+         */
+        public function setDestinationRepository($destinationRepository)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestinationRepository()
+        {
+        }
+        /**
+         * Optional. Optional: A service account to use for authenticating to Artifact
+         * Registry.
+         *
+         * @param string $serviceAccount
+         */
+        public function setServiceAccount($serviceAccount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceAccount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Appengine\ExportAppImageRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDestinationRepository()
-    {
-    }
-    /**
-     * Optional. Optional: A service account to use for authenticating to Artifact
-     * Registry.
-     *
-     * @param string $serviceAccount
-     */
-    public function setServiceAccount($serviceAccount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceAccount()
+    class Google_Service_Appengine_ExportAppImageRequest extends \Google\Service\Appengine\ExportAppImageRequest
     {
     }
 }

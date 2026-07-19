@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class FhirStoreMetric extends \Google\Model
-{
-    /**
-     * The total count of FHIR resources in the store of this resource type.
-     *
-     * @var string
-     */
-    public $count;
-    /**
-     * The FHIR resource type this metric applies to.
-     *
-     * @var string
-     */
-    public $resourceType;
-    /**
-     * The total amount of structured storage used by FHIR resources of this
-     * resource type in the store.
-     *
-     * @var string
-     */
-    public $structuredStorageSizeBytes;
-    /**
-     * The total amount of versioned storage used by versioned FHIR resources of
-     * this resource type in the store.
-     *
-     * @var string
-     */
-    public $versionedStorageSizeBytes;
-    /**
-     * The total count of FHIR resources in the store of this resource type.
-     *
-     * @param string $count
-     */
-    public function setCount($count)
+namespace Google\Service\CloudHealthcare {
+    class FhirStoreMetric extends \Google\Model
     {
+        /**
+         * The total count of FHIR resources in the store of this resource type.
+         *
+         * @var string
+         */
+        public $count;
+        /**
+         * The FHIR resource type this metric applies to.
+         *
+         * @var string
+         */
+        public $resourceType;
+        /**
+         * The total amount of structured storage used by FHIR resources of this
+         * resource type in the store.
+         *
+         * @var string
+         */
+        public $structuredStorageSizeBytes;
+        /**
+         * The total amount of versioned storage used by versioned FHIR resources of
+         * this resource type in the store.
+         *
+         * @var string
+         */
+        public $versionedStorageSizeBytes;
+        /**
+         * The total count of FHIR resources in the store of this resource type.
+         *
+         * @param string $count
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCount()
+        {
+        }
+        /**
+         * The FHIR resource type this metric applies to.
+         *
+         * @param string $resourceType
+         */
+        public function setResourceType($resourceType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceType()
+        {
+        }
+        /**
+         * The total amount of structured storage used by FHIR resources of this
+         * resource type in the store.
+         *
+         * @param string $structuredStorageSizeBytes
+         */
+        public function setStructuredStorageSizeBytes($structuredStorageSizeBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStructuredStorageSizeBytes()
+        {
+        }
+        /**
+         * The total amount of versioned storage used by versioned FHIR resources of
+         * this resource type in the store.
+         *
+         * @param string $versionedStorageSizeBytes
+         */
+        public function setVersionedStorageSizeBytes($versionedStorageSizeBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersionedStorageSizeBytes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudHealthcare\FhirStoreMetric registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCount()
-    {
-    }
-    /**
-     * The FHIR resource type this metric applies to.
-     *
-     * @param string $resourceType
-     */
-    public function setResourceType($resourceType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceType()
-    {
-    }
-    /**
-     * The total amount of structured storage used by FHIR resources of this
-     * resource type in the store.
-     *
-     * @param string $structuredStorageSizeBytes
-     */
-    public function setStructuredStorageSizeBytes($structuredStorageSizeBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStructuredStorageSizeBytes()
-    {
-    }
-    /**
-     * The total amount of versioned storage used by versioned FHIR resources of
-     * this resource type in the store.
-     *
-     * @param string $versionedStorageSizeBytes
-     */
-    public function setVersionedStorageSizeBytes($versionedStorageSizeBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersionedStorageSizeBytes()
+    class Google_Service_CloudHealthcare_FhirStoreMetric extends \Google\Service\CloudHealthcare\FhirStoreMetric
     {
     }
 }

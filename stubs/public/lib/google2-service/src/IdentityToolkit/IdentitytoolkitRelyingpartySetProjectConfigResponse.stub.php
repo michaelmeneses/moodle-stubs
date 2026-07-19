@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\IdentityToolkit;
-
-class IdentitytoolkitRelyingpartySetProjectConfigResponse extends \Google\Model
-{
-    /**
-     * Project ID of the relying party.
-     *
-     * @var string
-     */
-    public $projectId;
-    /**
-     * Project ID of the relying party.
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
+namespace Google\Service\IdentityToolkit {
+    class IdentitytoolkitRelyingpartySetProjectConfigResponse extends \Google\Model
     {
+        /**
+         * Project ID of the relying party.
+         *
+         * @var string
+         */
+        public $projectId;
+        /**
+         * Project ID of the relying party.
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartySetProjectConfigResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProjectId()
+    class Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartySetProjectConfigResponse extends \Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartySetProjectConfigResponse
     {
     }
 }

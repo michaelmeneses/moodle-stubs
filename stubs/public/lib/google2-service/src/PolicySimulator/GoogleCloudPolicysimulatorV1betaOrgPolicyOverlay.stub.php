@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PolicySimulator;
-
-class GoogleCloudPolicysimulatorV1betaOrgPolicyOverlay extends \Google\Collection
-{
-    protected $collection_key = 'policies';
-    protected $customConstraintsType = GoogleCloudPolicysimulatorV1betaOrgPolicyOverlayCustomConstraintOverlay::class;
-    protected $customConstraintsDataType = 'array';
-    protected $policiesType = GoogleCloudPolicysimulatorV1betaOrgPolicyOverlayPolicyOverlay::class;
-    protected $policiesDataType = 'array';
-    /**
-     * Optional. The OrgPolicy CustomConstraint changes to preview violations for.
-     * Any existing CustomConstraints with the same name will be overridden in the
-     * simulation. That is, violations will be determined as if all custom
-     * constraints in the overlay were instantiated. Only a single
-     * custom_constraint is supported in the overlay at a time. For evaluating
-     * multiple constraints, multiple `GenerateOrgPolicyViolationsPreview`
-     * requests are made, where each request evaluates a single constraint.
-     *
-     * @param GoogleCloudPolicysimulatorV1betaOrgPolicyOverlayCustomConstraintOverlay[] $customConstraints
-     */
-    public function setCustomConstraints($customConstraints)
+namespace Google\Service\PolicySimulator {
+    class GoogleCloudPolicysimulatorV1betaOrgPolicyOverlay extends \Google\Collection
     {
+        protected $collection_key = 'policies';
+        protected $customConstraintsType = GoogleCloudPolicysimulatorV1betaOrgPolicyOverlayCustomConstraintOverlay::class;
+        protected $customConstraintsDataType = 'array';
+        protected $policiesType = GoogleCloudPolicysimulatorV1betaOrgPolicyOverlayPolicyOverlay::class;
+        protected $policiesDataType = 'array';
+        /**
+         * Optional. The OrgPolicy CustomConstraint changes to preview violations for.
+         * Any existing CustomConstraints with the same name will be overridden in the
+         * simulation. That is, violations will be determined as if all custom
+         * constraints in the overlay were instantiated. Only a single
+         * custom_constraint is supported in the overlay at a time. For evaluating
+         * multiple constraints, multiple `GenerateOrgPolicyViolationsPreview`
+         * requests are made, where each request evaluates a single constraint.
+         *
+         * @param GoogleCloudPolicysimulatorV1betaOrgPolicyOverlayCustomConstraintOverlay[] $customConstraints
+         */
+        public function setCustomConstraints($customConstraints)
+        {
+        }
+        /**
+         * @return GoogleCloudPolicysimulatorV1betaOrgPolicyOverlayCustomConstraintOverlay[]
+         */
+        public function getCustomConstraints()
+        {
+        }
+        /**
+         * Optional. The OrgPolicy changes to preview violations for. Any existing
+         * OrgPolicies with the same name will be overridden in the simulation. That
+         * is, violations will be determined as if all policies in the overlay were
+         * created or updated.
+         *
+         * @param GoogleCloudPolicysimulatorV1betaOrgPolicyOverlayPolicyOverlay[] $policies
+         */
+        public function setPolicies($policies)
+        {
+        }
+        /**
+         * @return GoogleCloudPolicysimulatorV1betaOrgPolicyOverlayPolicyOverlay[]
+         */
+        public function getPolicies()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudPolicysimulatorV1betaOrgPolicyOverlayCustomConstraintOverlay[]
+     * Runtime class alias of \Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1betaOrgPolicyOverlay registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomConstraints()
-    {
-    }
-    /**
-     * Optional. The OrgPolicy changes to preview violations for. Any existing
-     * OrgPolicies with the same name will be overridden in the simulation. That
-     * is, violations will be determined as if all policies in the overlay were
-     * created or updated.
-     *
-     * @param GoogleCloudPolicysimulatorV1betaOrgPolicyOverlayPolicyOverlay[] $policies
-     */
-    public function setPolicies($policies)
-    {
-    }
-    /**
-     * @return GoogleCloudPolicysimulatorV1betaOrgPolicyOverlayPolicyOverlay[]
-     */
-    public function getPolicies()
+    class Google_Service_PolicySimulator_GoogleCloudPolicysimulatorV1betaOrgPolicyOverlay extends \Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1betaOrgPolicyOverlay
     {
     }
 }

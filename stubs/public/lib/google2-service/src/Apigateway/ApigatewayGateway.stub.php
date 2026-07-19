@@ -21,205 +21,214 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigateway;
-
-class ApigatewayGateway extends \Google\Model
-{
-    /**
-     * Gateway does not have a state yet.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * Gateway is being created.
-     */
-    public const STATE_CREATING = 'CREATING';
-    /**
-     * Gateway is running and ready for requests.
-     */
-    public const STATE_ACTIVE = 'ACTIVE';
-    /**
-     * Gateway creation failed.
-     */
-    public const STATE_FAILED = 'FAILED';
-    /**
-     * Gateway is being deleted.
-     */
-    public const STATE_DELETING = 'DELETING';
-    /**
-     * Gateway is being updated.
-     */
-    public const STATE_UPDATING = 'UPDATING';
-    /**
-     * Required. Resource name of the API Config for this Gateway. Format:
-     * projects/{project}/locations/global/apis/{api}/configs/{apiConfig}
-     *
-     * @var string
-     */
-    public $apiConfig;
-    /**
-     * Output only. Created time.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. The default API Gateway host name of the form
-     * `{gateway_id}-{hash}.{region_code}.gateway.dev`.
-     *
-     * @var string
-     */
-    public $defaultHostname;
-    /**
-     * Optional. Display name.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Optional. Resource labels to represent user-provided metadata. Refer to
-     * cloud documentation on labels for more details.
-     * https://cloud.google.com/compute/docs/labeling-resources
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Output only. Resource name of the Gateway. Format:
-     * projects/{project}/locations/{location}/gateways/{gateway}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The current state of the Gateway.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. Updated time.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Required. Resource name of the API Config for this Gateway. Format:
-     * projects/{project}/locations/global/apis/{api}/configs/{apiConfig}
-     *
-     * @param string $apiConfig
-     */
-    public function setApiConfig($apiConfig)
+namespace Google\Service\Apigateway {
+    class ApigatewayGateway extends \Google\Model
     {
+        /**
+         * Gateway does not have a state yet.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * Gateway is being created.
+         */
+        public const STATE_CREATING = 'CREATING';
+        /**
+         * Gateway is running and ready for requests.
+         */
+        public const STATE_ACTIVE = 'ACTIVE';
+        /**
+         * Gateway creation failed.
+         */
+        public const STATE_FAILED = 'FAILED';
+        /**
+         * Gateway is being deleted.
+         */
+        public const STATE_DELETING = 'DELETING';
+        /**
+         * Gateway is being updated.
+         */
+        public const STATE_UPDATING = 'UPDATING';
+        /**
+         * Required. Resource name of the API Config for this Gateway. Format:
+         * projects/{project}/locations/global/apis/{api}/configs/{apiConfig}
+         *
+         * @var string
+         */
+        public $apiConfig;
+        /**
+         * Output only. Created time.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. The default API Gateway host name of the form
+         * `{gateway_id}-{hash}.{region_code}.gateway.dev`.
+         *
+         * @var string
+         */
+        public $defaultHostname;
+        /**
+         * Optional. Display name.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Optional. Resource labels to represent user-provided metadata. Refer to
+         * cloud documentation on labels for more details.
+         * https://cloud.google.com/compute/docs/labeling-resources
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Output only. Resource name of the Gateway. Format:
+         * projects/{project}/locations/{location}/gateways/{gateway}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The current state of the Gateway.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. Updated time.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Required. Resource name of the API Config for this Gateway. Format:
+         * projects/{project}/locations/global/apis/{api}/configs/{apiConfig}
+         *
+         * @param string $apiConfig
+         */
+        public function setApiConfig($apiConfig)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApiConfig()
+        {
+        }
+        /**
+         * Output only. Created time.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. The default API Gateway host name of the form
+         * `{gateway_id}-{hash}.{region_code}.gateway.dev`.
+         *
+         * @param string $defaultHostname
+         */
+        public function setDefaultHostname($defaultHostname)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefaultHostname()
+        {
+        }
+        /**
+         * Optional. Display name.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Optional. Resource labels to represent user-provided metadata. Refer to
+         * cloud documentation on labels for more details.
+         * https://cloud.google.com/compute/docs/labeling-resources
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Output only. Resource name of the Gateway. Format:
+         * projects/{project}/locations/{location}/gateways/{gateway}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The current state of the Gateway.
+         *
+         * Accepted values: STATE_UNSPECIFIED, CREATING, ACTIVE, FAILED, DELETING,
+         * UPDATING
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Output only. Updated time.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigateway\ApigatewayGateway registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiConfig()
-    {
-    }
-    /**
-     * Output only. Created time.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. The default API Gateway host name of the form
-     * `{gateway_id}-{hash}.{region_code}.gateway.dev`.
-     *
-     * @param string $defaultHostname
-     */
-    public function setDefaultHostname($defaultHostname)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDefaultHostname()
-    {
-    }
-    /**
-     * Optional. Display name.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Optional. Resource labels to represent user-provided metadata. Refer to
-     * cloud documentation on labels for more details.
-     * https://cloud.google.com/compute/docs/labeling-resources
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Output only. Resource name of the Gateway. Format:
-     * projects/{project}/locations/{location}/gateways/{gateway}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The current state of the Gateway.
-     *
-     * Accepted values: STATE_UNSPECIFIED, CREATING, ACTIVE, FAILED, DELETING,
-     * UPDATING
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Output only. Updated time.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Apigateway_ApigatewayGateway extends \Google\Service\Apigateway\ApigatewayGateway
     {
     }
 }

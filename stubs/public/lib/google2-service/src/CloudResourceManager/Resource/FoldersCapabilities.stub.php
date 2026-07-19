@@ -21,48 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudResourceManager\Resource;
-
-/**
- * The "capabilities" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudresourcemanagerService = new Google\Service\CloudResourceManager(...);
- *   $capabilities = $cloudresourcemanagerService->folders_capabilities;
- *  </code>
- */
-class FoldersCapabilities extends \Google\Service\Resource
-{
+namespace Google\Service\CloudResourceManager\Resource {
+    use Google\Service\CloudResourceManager\Capability;
+    use Google\Service\CloudResourceManager\Operation;
     /**
-     * Retrieves the Capability identified by the supplied resource name.
-     * (capabilities.get)
-     *
-     * @param string $name Required. The name of the capability to get. For example,
-     * `folders/123/capabilities/app-management`
-     * @param array $optParams Optional parameters.
-     * @return Capability
-     * @throws \Google\Service\Exception
+     * The "capabilities" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudresourcemanagerService = new Google\Service\CloudResourceManager(...);
+     *   $capabilities = $cloudresourcemanagerService->folders_capabilities;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class FoldersCapabilities extends \Google\Service\Resource
     {
+        /**
+         * Retrieves the Capability identified by the supplied resource name.
+         * (capabilities.get)
+         *
+         * @param string $name Required. The name of the capability to get. For example,
+         * `folders/123/capabilities/app-management`
+         * @param array $optParams Optional parameters.
+         * @return Capability
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Updates the Capability. (capabilities.patch)
+         *
+         * @param string $name Immutable. Identifier. The resource name of the
+         * capability. Must be in the following form: *
+         * `folders/{folder_id}/capabilities/{capability_name}` For example,
+         * `folders/123/capabilities/app-management` Following are the allowed
+         * {capability_name} values: * `app-management`
+         * @param Capability $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Optional. The list of fields to update. Only
+         * [Capability.value] can be updated.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, Capability $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Updates the Capability. (capabilities.patch)
-     *
-     * @param string $name Immutable. Identifier. The resource name of the
-     * capability. Must be in the following form: *
-     * `folders/{folder_id}/capabilities/{capability_name}` For example,
-     * `folders/123/capabilities/app-management` Following are the allowed
-     * {capability_name} values: * `app-management`
-     * @param Capability $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Optional. The list of fields to update. Only
-     * [Capability.value] can be updated.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\CloudResourceManager\Resource\FoldersCapabilities registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function patch($name, Capability $postBody, $optParams = [])
+    class Google_Service_CloudResourceManager_Resource_FoldersCapabilities extends \Google\Service\CloudResourceManager\Resource\FoldersCapabilities
     {
     }
 }

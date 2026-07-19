@@ -29,6 +29,8 @@
  */
 namespace tool_dataprivacy;
 
+use context_system;
+use moodle_url;
 /**
  * Page helper.
  *

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2TransformationDetailsStorageConfig extends \Google\Model
-{
-    protected $tableType = GooglePrivacyDlpV2BigQueryTable::class;
-    protected $tableDataType = '';
-    /**
-     * The BigQuery table in which to store the output. This may be an existing
-     * table or in a new table in an existing dataset. If table_id is not set a
-     * new one will be generated for you with the following format:
-     * dlp_googleapis_transformation_details_yyyy_mm_dd_[dlp_job_id]. Pacific time
-     * zone will be used for generating the date details.
-     *
-     * @param GooglePrivacyDlpV2BigQueryTable $table
-     */
-    public function setTable(GooglePrivacyDlpV2BigQueryTable $table)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2TransformationDetailsStorageConfig extends \Google\Model
     {
+        protected $tableType = GooglePrivacyDlpV2BigQueryTable::class;
+        protected $tableDataType = '';
+        /**
+         * The BigQuery table in which to store the output. This may be an existing
+         * table or in a new table in an existing dataset. If table_id is not set a
+         * new one will be generated for you with the following format:
+         * dlp_googleapis_transformation_details_yyyy_mm_dd_[dlp_job_id]. Pacific time
+         * zone will be used for generating the date details.
+         *
+         * @param GooglePrivacyDlpV2BigQueryTable $table
+         */
+        public function setTable(GooglePrivacyDlpV2BigQueryTable $table)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2BigQueryTable
+         */
+        public function getTable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2BigQueryTable
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2TransformationDetailsStorageConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTable()
+    class Google_Service_DLP_GooglePrivacyDlpV2TransformationDetailsStorageConfig extends \Google\Service\DLP\GooglePrivacyDlpV2TransformationDetailsStorageConfig
     {
     }
 }

@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Assuredworkloads;
-
-class GoogleCloudAssuredworkloadsV1AnalyzeWorkloadMoveResponse extends \Google\Collection
-{
-    protected $collection_key = 'assetMoveAnalyses';
-    protected $assetMoveAnalysesType = GoogleCloudAssuredworkloadsV1AssetMoveAnalysis::class;
-    protected $assetMoveAnalysesDataType = 'array';
-    /**
-     * The next page token. Is empty if the last page is reached.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of analysis results for each asset in scope.
-     *
-     * @param GoogleCloudAssuredworkloadsV1AssetMoveAnalysis[] $assetMoveAnalyses
-     */
-    public function setAssetMoveAnalyses($assetMoveAnalyses)
+namespace Google\Service\Assuredworkloads {
+    class GoogleCloudAssuredworkloadsV1AnalyzeWorkloadMoveResponse extends \Google\Collection
     {
+        protected $collection_key = 'assetMoveAnalyses';
+        protected $assetMoveAnalysesType = GoogleCloudAssuredworkloadsV1AssetMoveAnalysis::class;
+        protected $assetMoveAnalysesDataType = 'array';
+        /**
+         * The next page token. Is empty if the last page is reached.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of analysis results for each asset in scope.
+         *
+         * @param GoogleCloudAssuredworkloadsV1AssetMoveAnalysis[] $assetMoveAnalyses
+         */
+        public function setAssetMoveAnalyses($assetMoveAnalyses)
+        {
+        }
+        /**
+         * @return GoogleCloudAssuredworkloadsV1AssetMoveAnalysis[]
+         */
+        public function getAssetMoveAnalyses()
+        {
+        }
+        /**
+         * The next page token. Is empty if the last page is reached.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAssuredworkloadsV1AssetMoveAnalysis[]
+     * Runtime class alias of \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1AnalyzeWorkloadMoveResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAssetMoveAnalyses()
-    {
-    }
-    /**
-     * The next page token. Is empty if the last page is reached.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Assuredworkloads_GoogleCloudAssuredworkloadsV1AnalyzeWorkloadMoveResponse extends \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1AnalyzeWorkloadMoveResponse
     {
     }
 }

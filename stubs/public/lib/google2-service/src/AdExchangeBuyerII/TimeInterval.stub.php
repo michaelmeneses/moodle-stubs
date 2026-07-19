@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class TimeInterval extends \Google\Model
-{
-    /**
-     * The timestamp marking the end of the range (exclusive) for which data is
-     * included.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * The timestamp marking the start of the range (inclusive) for which data is
-     * included.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * The timestamp marking the end of the range (exclusive) for which data is
-     * included.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
+namespace Google\Service\AdExchangeBuyerII {
+    class TimeInterval extends \Google\Model
     {
+        /**
+         * The timestamp marking the end of the range (exclusive) for which data is
+         * included.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * The timestamp marking the start of the range (inclusive) for which data is
+         * included.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * The timestamp marking the end of the range (exclusive) for which data is
+         * included.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * The timestamp marking the start of the range (inclusive) for which data is
+         * included.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\TimeInterval registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndTime()
-    {
-    }
-    /**
-     * The timestamp marking the start of the range (inclusive) for which data is
-     * included.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_AdExchangeBuyerII_TimeInterval extends \Google\Service\AdExchangeBuyerII\TimeInterval
     {
     }
 }

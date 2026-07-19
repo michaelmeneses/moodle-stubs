@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMwareEngine;
-
-class DnsBindPermission extends \Google\Collection
-{
-    protected $collection_key = 'principals';
-    /**
-     * Required. Output only. The name of the resource which stores the
-     * users/service accounts having the permission to bind to the corresponding
-     * intranet VPC of the consumer project. DnsBindPermission is a global
-     * resource and location can only be global. Resource names are schemeless
-     * URIs that follow the conventions in
-     * https://cloud.google.com/apis/design/resource_names. For example:
-     * `projects/my-project/locations/global/dnsBindPermission`
-     *
-     * @var string
-     */
-    public $name;
-    protected $principalsType = Principal::class;
-    protected $principalsDataType = 'array';
-    /**
-     * Required. Output only. The name of the resource which stores the
-     * users/service accounts having the permission to bind to the corresponding
-     * intranet VPC of the consumer project. DnsBindPermission is a global
-     * resource and location can only be global. Resource names are schemeless
-     * URIs that follow the conventions in
-     * https://cloud.google.com/apis/design/resource_names. For example:
-     * `projects/my-project/locations/global/dnsBindPermission`
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\VMwareEngine {
+    class DnsBindPermission extends \Google\Collection
     {
+        protected $collection_key = 'principals';
+        /**
+         * Required. Output only. The name of the resource which stores the
+         * users/service accounts having the permission to bind to the corresponding
+         * intranet VPC of the consumer project. DnsBindPermission is a global
+         * resource and location can only be global. Resource names are schemeless
+         * URIs that follow the conventions in
+         * https://cloud.google.com/apis/design/resource_names. For example:
+         * `projects/my-project/locations/global/dnsBindPermission`
+         *
+         * @var string
+         */
+        public $name;
+        protected $principalsType = Principal::class;
+        protected $principalsDataType = 'array';
+        /**
+         * Required. Output only. The name of the resource which stores the
+         * users/service accounts having the permission to bind to the corresponding
+         * intranet VPC of the consumer project. DnsBindPermission is a global
+         * resource and location can only be global. Resource names are schemeless
+         * URIs that follow the conventions in
+         * https://cloud.google.com/apis/design/resource_names. For example:
+         * `projects/my-project/locations/global/dnsBindPermission`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Users/Service accounts which have access for binding on the
+         * intranet VPC project corresponding to the consumer project.
+         *
+         * @param Principal[] $principals
+         */
+        public function setPrincipals($principals)
+        {
+        }
+        /**
+         * @return Principal[]
+         */
+        public function getPrincipals()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\VMwareEngine\DnsBindPermission registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Users/Service accounts which have access for binding on the
-     * intranet VPC project corresponding to the consumer project.
-     *
-     * @param Principal[] $principals
-     */
-    public function setPrincipals($principals)
-    {
-    }
-    /**
-     * @return Principal[]
-     */
-    public function getPrincipals()
+    class Google_Service_VMwareEngine_DnsBindPermission extends \Google\Service\VMwareEngine\DnsBindPermission
     {
     }
 }

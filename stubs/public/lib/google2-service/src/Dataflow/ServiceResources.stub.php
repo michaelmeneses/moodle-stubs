@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class ServiceResources extends \Google\Collection
-{
-    protected $collection_key = 'zones';
-    /**
-     * Output only. List of Cloud Zones being used by the Dataflow Service for
-     * this job. Example: us-central1-c
-     *
-     * @var string[]
-     */
-    public $zones;
-    /**
-     * Output only. List of Cloud Zones being used by the Dataflow Service for
-     * this job. Example: us-central1-c
-     *
-     * @param string[] $zones
-     */
-    public function setZones($zones)
+namespace Google\Service\Dataflow {
+    class ServiceResources extends \Google\Collection
     {
+        protected $collection_key = 'zones';
+        /**
+         * Output only. List of Cloud Zones being used by the Dataflow Service for
+         * this job. Example: us-central1-c
+         *
+         * @var string[]
+         */
+        public $zones;
+        /**
+         * Output only. List of Cloud Zones being used by the Dataflow Service for
+         * this job. Example: us-central1-c
+         *
+         * @param string[] $zones
+         */
+        public function setZones($zones)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getZones()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Dataflow\ServiceResources registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getZones()
+    class Google_Service_Dataflow_ServiceResources extends \Google\Service\Dataflow\ServiceResources
     {
     }
 }

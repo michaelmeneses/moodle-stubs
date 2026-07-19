@@ -21,102 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class DestinationEndpoint extends \Google\Model
-{
-    /**
-     * An invalid state, which is the default case.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The `DestinationEndpoint` resource is valid.
-     */
-    public const STATE_VALID = 'VALID';
-    /**
-     * The `DestinationEndpoint` resource is invalid.
-     */
-    public const STATE_INVALID = 'INVALID';
-    /**
-     * Required. The ASN of the remote IP prefix.
-     *
-     * @var string
-     */
-    public $asn;
-    /**
-     * Required. The CSP of the remote IP prefix.
-     *
-     * @var string
-     */
-    public $csp;
-    /**
-     * Output only. The state of the `DestinationEndpoint` resource.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. Time when the `DestinationEndpoint` resource was updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Required. The ASN of the remote IP prefix.
-     *
-     * @param string $asn
-     */
-    public function setAsn($asn)
+namespace Google\Service\Networkconnectivity {
+    class DestinationEndpoint extends \Google\Model
     {
+        /**
+         * An invalid state, which is the default case.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The `DestinationEndpoint` resource is valid.
+         */
+        public const STATE_VALID = 'VALID';
+        /**
+         * The `DestinationEndpoint` resource is invalid.
+         */
+        public const STATE_INVALID = 'INVALID';
+        /**
+         * Required. The ASN of the remote IP prefix.
+         *
+         * @var string
+         */
+        public $asn;
+        /**
+         * Required. The CSP of the remote IP prefix.
+         *
+         * @var string
+         */
+        public $csp;
+        /**
+         * Output only. The state of the `DestinationEndpoint` resource.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. Time when the `DestinationEndpoint` resource was updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Required. The ASN of the remote IP prefix.
+         *
+         * @param string $asn
+         */
+        public function setAsn($asn)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAsn()
+        {
+        }
+        /**
+         * Required. The CSP of the remote IP prefix.
+         *
+         * @param string $csp
+         */
+        public function setCsp($csp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCsp()
+        {
+        }
+        /**
+         * Output only. The state of the `DestinationEndpoint` resource.
+         *
+         * Accepted values: STATE_UNSPECIFIED, VALID, INVALID
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Output only. Time when the `DestinationEndpoint` resource was updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Networkconnectivity\DestinationEndpoint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAsn()
-    {
-    }
-    /**
-     * Required. The CSP of the remote IP prefix.
-     *
-     * @param string $csp
-     */
-    public function setCsp($csp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCsp()
-    {
-    }
-    /**
-     * Output only. The state of the `DestinationEndpoint` resource.
-     *
-     * Accepted values: STATE_UNSPECIFIED, VALID, INVALID
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Output only. Time when the `DestinationEndpoint` resource was updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Networkconnectivity_DestinationEndpoint extends \Google\Service\Networkconnectivity\DestinationEndpoint
     {
     }
 }

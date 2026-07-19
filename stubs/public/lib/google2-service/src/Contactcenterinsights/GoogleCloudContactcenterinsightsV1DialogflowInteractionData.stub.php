@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1DialogflowInteractionData extends \Google\Model
-{
-    /**
-     * The confidence of the match ranging from 0.0 (completely uncertain) to 1.0
-     * (completely certain).
-     *
-     * @var float
-     */
-    public $confidence;
-    /**
-     * The Dialogflow intent resource path. Format:
-     * projects/{project}/agent/{agent}/intents/{intent}
-     *
-     * @var string
-     */
-    public $dialogflowIntentId;
-    /**
-     * The confidence of the match ranging from 0.0 (completely uncertain) to 1.0
-     * (completely certain).
-     *
-     * @param float $confidence
-     */
-    public function setConfidence($confidence)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1DialogflowInteractionData extends \Google\Model
     {
+        /**
+         * The confidence of the match ranging from 0.0 (completely uncertain) to 1.0
+         * (completely certain).
+         *
+         * @var float
+         */
+        public $confidence;
+        /**
+         * The Dialogflow intent resource path. Format:
+         * projects/{project}/agent/{agent}/intents/{intent}
+         *
+         * @var string
+         */
+        public $dialogflowIntentId;
+        /**
+         * The confidence of the match ranging from 0.0 (completely uncertain) to 1.0
+         * (completely certain).
+         *
+         * @param float $confidence
+         */
+        public function setConfidence($confidence)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidence()
+        {
+        }
+        /**
+         * The Dialogflow intent resource path. Format:
+         * projects/{project}/agent/{agent}/intents/{intent}
+         *
+         * @param string $dialogflowIntentId
+         */
+        public function setDialogflowIntentId($dialogflowIntentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDialogflowIntentId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1DialogflowInteractionData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfidence()
-    {
-    }
-    /**
-     * The Dialogflow intent resource path. Format:
-     * projects/{project}/agent/{agent}/intents/{intent}
-     *
-     * @param string $dialogflowIntentId
-     */
-    public function setDialogflowIntentId($dialogflowIntentId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDialogflowIntentId()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1DialogflowInteractionData extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1DialogflowInteractionData
     {
     }
 }

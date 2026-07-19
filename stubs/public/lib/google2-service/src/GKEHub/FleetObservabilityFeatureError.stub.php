@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class FleetObservabilityFeatureError extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $code;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @param string
-     */
-    public function setCode($code)
+namespace Google\Service\GKEHub {
+    class FleetObservabilityFeatureError extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $code;
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @param string
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCode()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\FleetObservabilityFeatureError registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCode()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
+    class Google_Service_GKEHub_FleetObservabilityFeatureError extends \Google\Service\GKEHub\FleetObservabilityFeatureError
     {
     }
 }

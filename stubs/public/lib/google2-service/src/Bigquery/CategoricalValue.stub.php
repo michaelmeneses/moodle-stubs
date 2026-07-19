@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class CategoricalValue extends \Google\Collection
-{
-    protected $collection_key = 'categoryCounts';
-    protected $categoryCountsType = CategoryCount::class;
-    protected $categoryCountsDataType = 'array';
-    /**
-     * Counts of all categories for the categorical feature. If there are more
-     * than ten categories, we return top ten (by count) and return one more
-     * CategoryCount with category "_OTHER_" and count as aggregate counts of
-     * remaining categories.
-     *
-     * @param CategoryCount[] $categoryCounts
-     */
-    public function setCategoryCounts($categoryCounts)
+namespace Google\Service\Bigquery {
+    class CategoricalValue extends \Google\Collection
     {
+        protected $collection_key = 'categoryCounts';
+        protected $categoryCountsType = CategoryCount::class;
+        protected $categoryCountsDataType = 'array';
+        /**
+         * Counts of all categories for the categorical feature. If there are more
+         * than ten categories, we return top ten (by count) and return one more
+         * CategoryCount with category "_OTHER_" and count as aggregate counts of
+         * remaining categories.
+         *
+         * @param CategoryCount[] $categoryCounts
+         */
+        public function setCategoryCounts($categoryCounts)
+        {
+        }
+        /**
+         * @return CategoryCount[]
+         */
+        public function getCategoryCounts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CategoryCount[]
+     * Runtime class alias of \Google\Service\Bigquery\CategoricalValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCategoryCounts()
+    class Google_Service_Bigquery_CategoricalValue extends \Google\Service\Bigquery\CategoricalValue
     {
     }
 }

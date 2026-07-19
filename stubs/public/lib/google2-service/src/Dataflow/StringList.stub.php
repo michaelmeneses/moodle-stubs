@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class StringList extends \Google\Collection
-{
-    protected $collection_key = 'elements';
-    /**
-     * Elements of the list.
-     *
-     * @var string[]
-     */
-    public $elements;
-    /**
-     * Elements of the list.
-     *
-     * @param string[] $elements
-     */
-    public function setElements($elements)
+namespace Google\Service\Dataflow {
+    class StringList extends \Google\Collection
     {
+        protected $collection_key = 'elements';
+        /**
+         * Elements of the list.
+         *
+         * @var string[]
+         */
+        public $elements;
+        /**
+         * Elements of the list.
+         *
+         * @param string[] $elements
+         */
+        public function setElements($elements)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getElements()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Dataflow\StringList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getElements()
+    class Google_Service_Dataflow_StringList extends \Google\Service\Dataflow\StringList
     {
     }
 }

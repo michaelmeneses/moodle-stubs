@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class PgpSignedAttestation extends \Google\Model
-{
-    public $contentType;
-    public $pgpKeyId;
-    public $signature;
-    public function setContentType($contentType)
+namespace Google\Service\ContainerAnalysis {
+    class PgpSignedAttestation extends \Google\Model
     {
+        public $contentType;
+        public $pgpKeyId;
+        public $signature;
+        public function setContentType($contentType)
+        {
+        }
+        public function getContentType()
+        {
+        }
+        public function setPgpKeyId($pgpKeyId)
+        {
+        }
+        public function getPgpKeyId()
+        {
+        }
+        public function setSignature($signature)
+        {
+        }
+        public function getSignature()
+        {
+        }
     }
-    public function getContentType()
-    {
-    }
-    public function setPgpKeyId($pgpKeyId)
-    {
-    }
-    public function getPgpKeyId()
-    {
-    }
-    public function setSignature($signature)
-    {
-    }
-    public function getSignature()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ContainerAnalysis\PgpSignedAttestation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ContainerAnalysis_PgpSignedAttestation extends \Google\Service\ContainerAnalysis\PgpSignedAttestation
     {
     }
 }

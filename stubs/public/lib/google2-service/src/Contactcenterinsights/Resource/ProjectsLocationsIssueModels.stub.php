@@ -21,139 +21,156 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights\Resource;
-
-/**
- * The "issueModels" collection of methods.
- * Typical usage is:
- *  <code>
- *   $contactcenterinsightsService = new Google\Service\Contactcenterinsights(...);
- *   $issueModels = $contactcenterinsightsService->projects_locations_issueModels;
- *  </code>
- */
-class ProjectsLocationsIssueModels extends \Google\Service\Resource
-{
+namespace Google\Service\Contactcenterinsights\Resource {
+    use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1CalculateIssueModelStatsResponse;
+    use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1DeployIssueModelRequest;
+    use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1ExportIssueModelRequest;
+    use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1ImportIssueModelRequest;
+    use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1IssueModel;
+    use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1ListIssueModelsResponse;
+    use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1UndeployIssueModelRequest;
+    use Google\Service\Contactcenterinsights\GoogleLongrunningOperation;
     /**
-     * Gets an issue model's statistics. (issueModels.calculateIssueModelStats)
-     *
-     * @param string $issueModel Required. The resource name of the issue model to
-     * query against.
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudContactcenterinsightsV1CalculateIssueModelStatsResponse
-     * @throws \Google\Service\Exception
+     * The "issueModels" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $contactcenterinsightsService = new Google\Service\Contactcenterinsights(...);
+     *   $issueModels = $contactcenterinsightsService->projects_locations_issueModels;
+     *  </code>
      */
-    public function calculateIssueModelStats($issueModel, $optParams = [])
+    class ProjectsLocationsIssueModels extends \Google\Service\Resource
     {
+        /**
+         * Gets an issue model's statistics. (issueModels.calculateIssueModelStats)
+         *
+         * @param string $issueModel Required. The resource name of the issue model to
+         * query against.
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudContactcenterinsightsV1CalculateIssueModelStatsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function calculateIssueModelStats($issueModel, $optParams = [])
+        {
+        }
+        /**
+         * Creates an issue model. (issueModels.create)
+         *
+         * @param string $parent Required. The parent resource of the issue model.
+         * @param GoogleCloudContactcenterinsightsV1IssueModel $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudContactcenterinsightsV1IssueModel $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes an issue model. (issueModels.delete)
+         *
+         * @param string $name Required. The name of the issue model to delete.
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Deploys an issue model. Returns an error if a model is already deployed. An
+         * issue model can only be used in analysis after it has been deployed.
+         * (issueModels.deploy)
+         *
+         * @param string $name Required. The issue model to deploy.
+         * @param GoogleCloudContactcenterinsightsV1DeployIssueModelRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function deploy($name, GoogleCloudContactcenterinsightsV1DeployIssueModelRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Exports an issue model to the provided destination. (issueModels.export)
+         *
+         * @param string $name Required. The issue model to export.
+         * @param GoogleCloudContactcenterinsightsV1ExportIssueModelRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function export($name, GoogleCloudContactcenterinsightsV1ExportIssueModelRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Gets an issue model. (issueModels.get)
+         *
+         * @param string $name Required. The name of the issue model to get.
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudContactcenterinsightsV1IssueModel
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Imports an issue model from a Cloud Storage bucket. (issueModels.import)
+         *
+         * @param string $parent Required. The parent resource of the issue model.
+         * @param GoogleCloudContactcenterinsightsV1ImportIssueModelRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function import($parent, GoogleCloudContactcenterinsightsV1ImportIssueModelRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Lists issue models. (issueModels.listProjectsLocationsIssueModels)
+         *
+         * @param string $parent Required. The parent resource of the issue model.
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudContactcenterinsightsV1ListIssueModelsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsIssueModels($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates an issue model. (issueModels.patch)
+         *
+         * @param string $name Immutable. The resource name of the issue model. Format:
+         * projects/{project}/locations/{location}/issueModels/{issue_model}
+         * @param GoogleCloudContactcenterinsightsV1IssueModel $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask The list of fields to be updated.
+         * @return GoogleCloudContactcenterinsightsV1IssueModel
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, GoogleCloudContactcenterinsightsV1IssueModel $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Undeploys an issue model. An issue model can not be used in analysis after it
+         * has been undeployed. (issueModels.undeploy)
+         *
+         * @param string $name Required. The issue model to undeploy.
+         * @param GoogleCloudContactcenterinsightsV1UndeployIssueModelRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function undeploy($name, GoogleCloudContactcenterinsightsV1UndeployIssueModelRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Creates an issue model. (issueModels.create)
-     *
-     * @param string $parent Required. The parent resource of the issue model.
-     * @param GoogleCloudContactcenterinsightsV1IssueModel $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Contactcenterinsights\Resource\ProjectsLocationsIssueModels registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function create($parent, GoogleCloudContactcenterinsightsV1IssueModel $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Deletes an issue model. (issueModels.delete)
-     *
-     * @param string $name Required. The name of the issue model to delete.
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
-     */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Deploys an issue model. Returns an error if a model is already deployed. An
-     * issue model can only be used in analysis after it has been deployed.
-     * (issueModels.deploy)
-     *
-     * @param string $name Required. The issue model to deploy.
-     * @param GoogleCloudContactcenterinsightsV1DeployIssueModelRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
-     */
-    public function deploy($name, GoogleCloudContactcenterinsightsV1DeployIssueModelRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Exports an issue model to the provided destination. (issueModels.export)
-     *
-     * @param string $name Required. The issue model to export.
-     * @param GoogleCloudContactcenterinsightsV1ExportIssueModelRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
-     */
-    public function export($name, GoogleCloudContactcenterinsightsV1ExportIssueModelRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Gets an issue model. (issueModels.get)
-     *
-     * @param string $name Required. The name of the issue model to get.
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudContactcenterinsightsV1IssueModel
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Imports an issue model from a Cloud Storage bucket. (issueModels.import)
-     *
-     * @param string $parent Required. The parent resource of the issue model.
-     * @param GoogleCloudContactcenterinsightsV1ImportIssueModelRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
-     */
-    public function import($parent, GoogleCloudContactcenterinsightsV1ImportIssueModelRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Lists issue models. (issueModels.listProjectsLocationsIssueModels)
-     *
-     * @param string $parent Required. The parent resource of the issue model.
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudContactcenterinsightsV1ListIssueModelsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsIssueModels($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates an issue model. (issueModels.patch)
-     *
-     * @param string $name Immutable. The resource name of the issue model. Format:
-     * projects/{project}/locations/{location}/issueModels/{issue_model}
-     * @param GoogleCloudContactcenterinsightsV1IssueModel $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask The list of fields to be updated.
-     * @return GoogleCloudContactcenterinsightsV1IssueModel
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, GoogleCloudContactcenterinsightsV1IssueModel $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Undeploys an issue model. An issue model can not be used in analysis after it
-     * has been undeployed. (issueModels.undeploy)
-     *
-     * @param string $name Required. The issue model to undeploy.
-     * @param GoogleCloudContactcenterinsightsV1UndeployIssueModelRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
-     */
-    public function undeploy($name, GoogleCloudContactcenterinsightsV1UndeployIssueModelRequest $postBody, $optParams = [])
+    class Google_Service_Contactcenterinsights_Resource_ProjectsLocationsIssueModels extends \Google\Service\Contactcenterinsights\Resource\ProjectsLocationsIssueModels
     {
     }
 }

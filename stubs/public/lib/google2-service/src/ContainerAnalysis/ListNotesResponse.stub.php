@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class ListNotesResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    /**
-     * The next pagination token in the list response. It should be used as
-     * `page_token` for the following request. An empty value means no more
-     * results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $notesType = Note::class;
-    protected $notesDataType = 'array';
-    /**
-     * Unordered list. Unreachable regions. Populated for requests from the global
-     * region when `return_partial_success` is set. Format:
-     * `projects/[PROJECT_ID]/locations/[LOCATION]`
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * The next pagination token in the list response. It should be used as
-     * `page_token` for the following request. An empty value means no more
-     * results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\ContainerAnalysis {
+    class ListNotesResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        /**
+         * The next pagination token in the list response. It should be used as
+         * `page_token` for the following request. An empty value means no more
+         * results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $notesType = Note::class;
+        protected $notesDataType = 'array';
+        /**
+         * Unordered list. Unreachable regions. Populated for requests from the global
+         * region when `return_partial_success` is set. Format:
+         * `projects/[PROJECT_ID]/locations/[LOCATION]`
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * The next pagination token in the list response. It should be used as
+         * `page_token` for the following request. An empty value means no more
+         * results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The notes requested.
+         *
+         * @param Note[] $notes
+         */
+        public function setNotes($notes)
+        {
+        }
+        /**
+         * @return Note[]
+         */
+        public function getNotes()
+        {
+        }
+        /**
+         * Unordered list. Unreachable regions. Populated for requests from the global
+         * region when `return_partial_success` is set. Format:
+         * `projects/[PROJECT_ID]/locations/[LOCATION]`
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ContainerAnalysis\ListNotesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The notes requested.
-     *
-     * @param Note[] $notes
-     */
-    public function setNotes($notes)
-    {
-    }
-    /**
-     * @return Note[]
-     */
-    public function getNotes()
-    {
-    }
-    /**
-     * Unordered list. Unreachable regions. Populated for requests from the global
-     * region when `return_partial_success` is set. Format:
-     * `projects/[PROJECT_ID]/locations/[LOCATION]`
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_ContainerAnalysis_ListNotesResponse extends \Google\Service\ContainerAnalysis\ListNotesResponse
     {
     }
 }

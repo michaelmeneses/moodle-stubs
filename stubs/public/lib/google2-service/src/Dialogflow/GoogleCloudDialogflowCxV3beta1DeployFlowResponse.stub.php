@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3beta1DeployFlowResponse extends \Google\Model
-{
-    /**
-     * The name of the flow version deployment. Format:
-     * `projects//locations//agents//environments//deployments/`.
-     *
-     * @var string
-     */
-    public $deployment;
-    protected $environmentType = GoogleCloudDialogflowCxV3beta1Environment::class;
-    protected $environmentDataType = '';
-    /**
-     * The name of the flow version deployment. Format:
-     * `projects//locations//agents//environments//deployments/`.
-     *
-     * @param string $deployment
-     */
-    public function setDeployment($deployment)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3beta1DeployFlowResponse extends \Google\Model
     {
+        /**
+         * The name of the flow version deployment. Format:
+         * `projects//locations//agents//environments//deployments/`.
+         *
+         * @var string
+         */
+        public $deployment;
+        protected $environmentType = GoogleCloudDialogflowCxV3beta1Environment::class;
+        protected $environmentDataType = '';
+        /**
+         * The name of the flow version deployment. Format:
+         * `projects//locations//agents//environments//deployments/`.
+         *
+         * @param string $deployment
+         */
+        public function setDeployment($deployment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeployment()
+        {
+        }
+        /**
+         * The updated environment where the flow is deployed.
+         *
+         * @param GoogleCloudDialogflowCxV3beta1Environment $environment
+         */
+        public function setEnvironment(GoogleCloudDialogflowCxV3beta1Environment $environment)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3beta1Environment
+         */
+        public function getEnvironment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1DeployFlowResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeployment()
-    {
-    }
-    /**
-     * The updated environment where the flow is deployed.
-     *
-     * @param GoogleCloudDialogflowCxV3beta1Environment $environment
-     */
-    public function setEnvironment(GoogleCloudDialogflowCxV3beta1Environment $environment)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3beta1Environment
-     */
-    public function getEnvironment()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3beta1DeployFlowResponse extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3beta1DeployFlowResponse
     {
     }
 }

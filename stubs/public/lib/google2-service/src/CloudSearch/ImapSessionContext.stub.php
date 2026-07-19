@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class ImapSessionContext extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $app;
-    /**
-     * @var string
-     */
-    public $deviceType;
-    /**
-     * @var string
-     */
-    public $guidFingerprint;
-    /**
-     * @var string
-     */
-    public $os;
-    protected $osVersionType = OsVersion::class;
-    protected $osVersionDataType = '';
-    protected $possiblyTrimmedModelType = PossiblyTrimmedModel::class;
-    protected $possiblyTrimmedModelDataType = '';
-    /**
-     * @param string
-     */
-    public function setApp($app)
+namespace Google\Service\CloudSearch {
+    class ImapSessionContext extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $app;
+        /**
+         * @var string
+         */
+        public $deviceType;
+        /**
+         * @var string
+         */
+        public $guidFingerprint;
+        /**
+         * @var string
+         */
+        public $os;
+        protected $osVersionType = OsVersion::class;
+        protected $osVersionDataType = '';
+        protected $possiblyTrimmedModelType = PossiblyTrimmedModel::class;
+        protected $possiblyTrimmedModelDataType = '';
+        /**
+         * @param string
+         */
+        public function setApp($app)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApp()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDeviceType($deviceType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeviceType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setGuidFingerprint($guidFingerprint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGuidFingerprint()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOs($os)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOs()
+        {
+        }
+        /**
+         * @param OsVersion
+         */
+        public function setOsVersion(OsVersion $osVersion)
+        {
+        }
+        /**
+         * @return OsVersion
+         */
+        public function getOsVersion()
+        {
+        }
+        /**
+         * @param PossiblyTrimmedModel
+         */
+        public function setPossiblyTrimmedModel(PossiblyTrimmedModel $possiblyTrimmedModel)
+        {
+        }
+        /**
+         * @return PossiblyTrimmedModel
+         */
+        public function getPossiblyTrimmedModel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\ImapSessionContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApp()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDeviceType($deviceType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeviceType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setGuidFingerprint($guidFingerprint)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGuidFingerprint()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOs($os)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOs()
-    {
-    }
-    /**
-     * @param OsVersion
-     */
-    public function setOsVersion(OsVersion $osVersion)
-    {
-    }
-    /**
-     * @return OsVersion
-     */
-    public function getOsVersion()
-    {
-    }
-    /**
-     * @param PossiblyTrimmedModel
-     */
-    public function setPossiblyTrimmedModel(PossiblyTrimmedModel $possiblyTrimmedModel)
-    {
-    }
-    /**
-     * @return PossiblyTrimmedModel
-     */
-    public function getPossiblyTrimmedModel()
+    class Google_Service_CloudSearch_ImapSessionContext extends \Google\Service\CloudSearch\ImapSessionContext
     {
     }
 }

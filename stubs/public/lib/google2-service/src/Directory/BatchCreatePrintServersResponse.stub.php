@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class BatchCreatePrintServersResponse extends \Google\Collection
-{
-    protected $collection_key = 'printServers';
-    protected $failuresType = PrintServerFailureInfo::class;
-    protected $failuresDataType = 'array';
-    protected $printServersType = PrintServer::class;
-    protected $printServersDataType = 'array';
-    /**
-     * A list of create failures. `PrintServer` IDs are not populated, as print
-     * servers were not created.
-     *
-     * @param PrintServerFailureInfo[] $failures
-     */
-    public function setFailures($failures)
+namespace Google\Service\Directory {
+    class BatchCreatePrintServersResponse extends \Google\Collection
     {
+        protected $collection_key = 'printServers';
+        protected $failuresType = PrintServerFailureInfo::class;
+        protected $failuresDataType = 'array';
+        protected $printServersType = PrintServer::class;
+        protected $printServersDataType = 'array';
+        /**
+         * A list of create failures. `PrintServer` IDs are not populated, as print
+         * servers were not created.
+         *
+         * @param PrintServerFailureInfo[] $failures
+         */
+        public function setFailures($failures)
+        {
+        }
+        /**
+         * @return PrintServerFailureInfo[]
+         */
+        public function getFailures()
+        {
+        }
+        /**
+         * A list of successfully created print servers with their IDs populated.
+         *
+         * @param PrintServer[] $printServers
+         */
+        public function setPrintServers($printServers)
+        {
+        }
+        /**
+         * @return PrintServer[]
+         */
+        public function getPrintServers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PrintServerFailureInfo[]
+     * Runtime class alias of \Google\Service\Directory\BatchCreatePrintServersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFailures()
-    {
-    }
-    /**
-     * A list of successfully created print servers with their IDs populated.
-     *
-     * @param PrintServer[] $printServers
-     */
-    public function setPrintServers($printServers)
-    {
-    }
-    /**
-     * @return PrintServer[]
-     */
-    public function getPrintServers()
+    class Google_Service_Directory_BatchCreatePrintServersResponse extends \Google\Service\Directory\BatchCreatePrintServersResponse
     {
     }
 }

@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class MembershipCount extends \Google\Model
-{
-    /**
-     * Output only. Count of human users that have directly joined the space, not
-     * counting users joined by having membership in a joined group.
-     *
-     * @var int
-     */
-    public $joinedDirectHumanUserCount;
-    /**
-     * Output only. Count of all groups that have directly joined the space.
-     *
-     * @var int
-     */
-    public $joinedGroupCount;
-    /**
-     * Output only. Count of human users that have directly joined the space, not
-     * counting users joined by having membership in a joined group.
-     *
-     * @param int $joinedDirectHumanUserCount
-     */
-    public function setJoinedDirectHumanUserCount($joinedDirectHumanUserCount)
+namespace Google\Service\HangoutsChat {
+    class MembershipCount extends \Google\Model
     {
+        /**
+         * Output only. Count of human users that have directly joined the space, not
+         * counting users joined by having membership in a joined group.
+         *
+         * @var int
+         */
+        public $joinedDirectHumanUserCount;
+        /**
+         * Output only. Count of all groups that have directly joined the space.
+         *
+         * @var int
+         */
+        public $joinedGroupCount;
+        /**
+         * Output only. Count of human users that have directly joined the space, not
+         * counting users joined by having membership in a joined group.
+         *
+         * @param int $joinedDirectHumanUserCount
+         */
+        public function setJoinedDirectHumanUserCount($joinedDirectHumanUserCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getJoinedDirectHumanUserCount()
+        {
+        }
+        /**
+         * Output only. Count of all groups that have directly joined the space.
+         *
+         * @param int $joinedGroupCount
+         */
+        public function setJoinedGroupCount($joinedGroupCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getJoinedGroupCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\HangoutsChat\MembershipCount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJoinedDirectHumanUserCount()
-    {
-    }
-    /**
-     * Output only. Count of all groups that have directly joined the space.
-     *
-     * @param int $joinedGroupCount
-     */
-    public function setJoinedGroupCount($joinedGroupCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getJoinedGroupCount()
+    class Google_Service_HangoutsChat_MembershipCount extends \Google\Service\HangoutsChat\MembershipCount
     {
     }
 }

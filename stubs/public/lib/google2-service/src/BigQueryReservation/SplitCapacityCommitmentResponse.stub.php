@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryReservation;
-
-class SplitCapacityCommitmentResponse extends \Google\Model
-{
-    protected $firstType = CapacityCommitment::class;
-    protected $firstDataType = '';
-    protected $secondType = CapacityCommitment::class;
-    protected $secondDataType = '';
-    /**
-     * First capacity commitment, result of a split.
-     *
-     * @param CapacityCommitment $first
-     */
-    public function setFirst(CapacityCommitment $first)
+namespace Google\Service\BigQueryReservation {
+    class SplitCapacityCommitmentResponse extends \Google\Model
     {
+        protected $firstType = CapacityCommitment::class;
+        protected $firstDataType = '';
+        protected $secondType = CapacityCommitment::class;
+        protected $secondDataType = '';
+        /**
+         * First capacity commitment, result of a split.
+         *
+         * @param CapacityCommitment $first
+         */
+        public function setFirst(CapacityCommitment $first)
+        {
+        }
+        /**
+         * @return CapacityCommitment
+         */
+        public function getFirst()
+        {
+        }
+        /**
+         * Second capacity commitment, result of a split.
+         *
+         * @param CapacityCommitment $second
+         */
+        public function setSecond(CapacityCommitment $second)
+        {
+        }
+        /**
+         * @return CapacityCommitment
+         */
+        public function getSecond()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CapacityCommitment
+     * Runtime class alias of \Google\Service\BigQueryReservation\SplitCapacityCommitmentResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFirst()
-    {
-    }
-    /**
-     * Second capacity commitment, result of a split.
-     *
-     * @param CapacityCommitment $second
-     */
-    public function setSecond(CapacityCommitment $second)
-    {
-    }
-    /**
-     * @return CapacityCommitment
-     */
-    public function getSecond()
+    class Google_Service_BigQueryReservation_SplitCapacityCommitmentResponse extends \Google\Service\BigQueryReservation\SplitCapacityCommitmentResponse
     {
     }
 }

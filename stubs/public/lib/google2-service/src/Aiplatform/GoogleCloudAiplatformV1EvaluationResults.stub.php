@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1EvaluationResults extends \Google\Model
-{
-    /**
-     * The evaluation set where item level results are stored.
-     *
-     * @var string
-     */
-    public $evaluationSet;
-    protected $summaryMetricsType = GoogleCloudAiplatformV1SummaryMetrics::class;
-    protected $summaryMetricsDataType = '';
-    /**
-     * The evaluation set where item level results are stored.
-     *
-     * @param string $evaluationSet
-     */
-    public function setEvaluationSet($evaluationSet)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1EvaluationResults extends \Google\Model
     {
+        /**
+         * The evaluation set where item level results are stored.
+         *
+         * @var string
+         */
+        public $evaluationSet;
+        protected $summaryMetricsType = GoogleCloudAiplatformV1SummaryMetrics::class;
+        protected $summaryMetricsDataType = '';
+        /**
+         * The evaluation set where item level results are stored.
+         *
+         * @param string $evaluationSet
+         */
+        public function setEvaluationSet($evaluationSet)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEvaluationSet()
+        {
+        }
+        /**
+         * Optional. The summary metrics for the evaluation run.
+         *
+         * @param GoogleCloudAiplatformV1SummaryMetrics $summaryMetrics
+         */
+        public function setSummaryMetrics(GoogleCloudAiplatformV1SummaryMetrics $summaryMetrics)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SummaryMetrics
+         */
+        public function getSummaryMetrics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationResults registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEvaluationSet()
-    {
-    }
-    /**
-     * Optional. The summary metrics for the evaluation run.
-     *
-     * @param GoogleCloudAiplatformV1SummaryMetrics $summaryMetrics
-     */
-    public function setSummaryMetrics(GoogleCloudAiplatformV1SummaryMetrics $summaryMetrics)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1SummaryMetrics
-     */
-    public function getSummaryMetrics()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1EvaluationResults extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1EvaluationResults
     {
     }
 }

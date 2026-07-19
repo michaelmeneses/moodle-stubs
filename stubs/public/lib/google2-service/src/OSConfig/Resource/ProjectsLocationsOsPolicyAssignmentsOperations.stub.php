@@ -21,49 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig\Resource;
-
-/**
- * The "operations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $osconfigService = new Google\Service\OSConfig(...);
- *   $operations = $osconfigService->projects_locations_osPolicyAssignments_operations;
- *  </code>
- */
-class ProjectsLocationsOsPolicyAssignmentsOperations extends \Google\Service\Resource
-{
+namespace Google\Service\OSConfig\Resource {
+    use Google\Service\OSConfig\CancelOperationRequest;
+    use Google\Service\OSConfig\Operation;
+    use Google\Service\OSConfig\OsconfigEmpty;
     /**
-     * Starts asynchronous cancellation on a long-running operation. The server
-     * makes a best effort to cancel the operation, but success is not guaranteed.
-     * If the server doesn't support this method, it returns
-     * `google.rpc.Code.UNIMPLEMENTED`. Clients can use Operations.GetOperation or
-     * other methods to check whether the cancellation succeeded or whether the
-     * operation completed despite cancellation. On successful cancellation, the
-     * operation is not deleted; instead, it becomes an operation with an
-     * Operation.error value with a google.rpc.Status.code of `1`, corresponding to
-     * `Code.CANCELLED`. (operations.cancel)
-     *
-     * @param string $name The name of the operation resource to be cancelled.
-     * @param CancelOperationRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return OsconfigEmpty
-     * @throws \Google\Service\Exception
+     * The "operations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $osconfigService = new Google\Service\OSConfig(...);
+     *   $operations = $osconfigService->projects_locations_osPolicyAssignments_operations;
+     *  </code>
      */
-    public function cancel($name, CancelOperationRequest $postBody, $optParams = [])
+    class ProjectsLocationsOsPolicyAssignmentsOperations extends \Google\Service\Resource
     {
+        /**
+         * Starts asynchronous cancellation on a long-running operation. The server
+         * makes a best effort to cancel the operation, but success is not guaranteed.
+         * If the server doesn't support this method, it returns
+         * `google.rpc.Code.UNIMPLEMENTED`. Clients can use Operations.GetOperation or
+         * other methods to check whether the cancellation succeeded or whether the
+         * operation completed despite cancellation. On successful cancellation, the
+         * operation is not deleted; instead, it becomes an operation with an
+         * Operation.error value with a google.rpc.Status.code of `1`, corresponding to
+         * `Code.CANCELLED`. (operations.cancel)
+         *
+         * @param string $name The name of the operation resource to be cancelled.
+         * @param CancelOperationRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return OsconfigEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function cancel($name, CancelOperationRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Gets the latest state of a long-running operation. Clients can use this
+         * method to poll the operation result at intervals as recommended by the API
+         * service. (operations.get)
+         *
+         * @param string $name The name of the operation resource.
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets the latest state of a long-running operation. Clients can use this
-     * method to poll the operation result at intervals as recommended by the API
-     * service. (operations.get)
-     *
-     * @param string $name The name of the operation resource.
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\OSConfig\Resource\ProjectsLocationsOsPolicyAssignmentsOperations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($name, $optParams = [])
+    class Google_Service_OSConfig_Resource_ProjectsLocationsOsPolicyAssignmentsOperations extends \Google\Service\OSConfig\Resource\ProjectsLocationsOsPolicyAssignmentsOperations
     {
     }
 }

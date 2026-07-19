@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceControl;
-
-class ServiceDelegationHistory extends \Google\Collection
-{
-    protected $collection_key = 'serviceMetadata';
-    /**
-     * The original end user who initiated the request to GCP.
-     *
-     * @var string
-     */
-    public $originalPrincipal;
-    protected $serviceMetadataType = ServiceMetadata::class;
-    protected $serviceMetadataDataType = 'array';
-    /**
-     * The original end user who initiated the request to GCP.
-     *
-     * @param string $originalPrincipal
-     */
-    public function setOriginalPrincipal($originalPrincipal)
+namespace Google\Service\ServiceControl {
+    class ServiceDelegationHistory extends \Google\Collection
     {
+        protected $collection_key = 'serviceMetadata';
+        /**
+         * The original end user who initiated the request to GCP.
+         *
+         * @var string
+         */
+        public $originalPrincipal;
+        protected $serviceMetadataType = ServiceMetadata::class;
+        protected $serviceMetadataDataType = 'array';
+        /**
+         * The original end user who initiated the request to GCP.
+         *
+         * @param string $originalPrincipal
+         */
+        public function setOriginalPrincipal($originalPrincipal)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOriginalPrincipal()
+        {
+        }
+        /**
+         * Data identifying the service specific jobs or units of work that were
+         * involved in a chain of service calls.
+         *
+         * @param ServiceMetadata[] $serviceMetadata
+         */
+        public function setServiceMetadata($serviceMetadata)
+        {
+        }
+        /**
+         * @return ServiceMetadata[]
+         */
+        public function getServiceMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceControl\ServiceDelegationHistory registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOriginalPrincipal()
-    {
-    }
-    /**
-     * Data identifying the service specific jobs or units of work that were
-     * involved in a chain of service calls.
-     *
-     * @param ServiceMetadata[] $serviceMetadata
-     */
-    public function setServiceMetadata($serviceMetadata)
-    {
-    }
-    /**
-     * @return ServiceMetadata[]
-     */
-    public function getServiceMetadata()
+    class Google_Service_ServiceControl_ServiceDelegationHistory extends \Google\Service\ServiceControl\ServiceDelegationHistory
     {
     }
 }

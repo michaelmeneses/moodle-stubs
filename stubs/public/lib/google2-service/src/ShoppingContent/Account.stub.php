@@ -21,356 +21,365 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class Account extends \Google\Collection
-{
-    protected $collection_key = 'youtubeChannelLinks';
-    /**
-     * Output only. How the account is managed. Acceptable values are: -
-     * "`manual`" - "`automatic`"
-     *
-     * @var string
-     */
-    public $accountManagement;
-    protected $adsLinksType = AccountAdsLink::class;
-    protected $adsLinksDataType = 'array';
-    /**
-     * Indicates whether the merchant sells adult content.
-     *
-     * @var bool
-     */
-    public $adultContent;
-    protected $automaticImprovementsType = AccountAutomaticImprovements::class;
-    protected $automaticImprovementsDataType = '';
-    /**
-     * Automatically created label IDs that are assigned to the account by CSS
-     * Center.
-     *
-     * @var string[]
-     */
-    public $automaticLabelIds;
-    protected $businessIdentityType = AccountBusinessIdentity::class;
-    protected $businessIdentityDataType = '';
-    protected $businessInformationType = AccountBusinessInformation::class;
-    protected $businessInformationDataType = '';
-    protected $conversionSettingsType = AccountConversionSettings::class;
-    protected $conversionSettingsDataType = '';
-    /**
-     * ID of CSS the account belongs to.
-     *
-     * @var string
-     */
-    public $cssId;
-    protected $googleMyBusinessLinkType = AccountGoogleMyBusinessLink::class;
-    protected $googleMyBusinessLinkDataType = '';
-    /**
-     * Required. 64-bit Merchant Center account ID.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "`content#account`".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Manually created label IDs that are assigned to the account by CSS.
-     *
-     * @var string[]
-     */
-    public $labelIds;
-    /**
-     * Required. Display name for the account.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Client-specific, locally-unique, internal ID for the child account.
-     *
-     * @var string
-     */
-    public $sellerId;
-    protected $usersType = AccountUser::class;
-    protected $usersDataType = 'array';
-    /**
-     * The merchant's website.
-     *
-     * @var string
-     */
-    public $websiteUrl;
-    protected $youtubeChannelLinksType = AccountYouTubeChannelLink::class;
-    protected $youtubeChannelLinksDataType = 'array';
-    /**
-     * Output only. How the account is managed. Acceptable values are: -
-     * "`manual`" - "`automatic`"
-     *
-     * @param string $accountManagement
-     */
-    public function setAccountManagement($accountManagement)
+namespace Google\Service\ShoppingContent {
+    class Account extends \Google\Collection
     {
+        protected $collection_key = 'youtubeChannelLinks';
+        /**
+         * Output only. How the account is managed. Acceptable values are: -
+         * "`manual`" - "`automatic`"
+         *
+         * @var string
+         */
+        public $accountManagement;
+        protected $adsLinksType = AccountAdsLink::class;
+        protected $adsLinksDataType = 'array';
+        /**
+         * Indicates whether the merchant sells adult content.
+         *
+         * @var bool
+         */
+        public $adultContent;
+        protected $automaticImprovementsType = AccountAutomaticImprovements::class;
+        protected $automaticImprovementsDataType = '';
+        /**
+         * Automatically created label IDs that are assigned to the account by CSS
+         * Center.
+         *
+         * @var string[]
+         */
+        public $automaticLabelIds;
+        protected $businessIdentityType = AccountBusinessIdentity::class;
+        protected $businessIdentityDataType = '';
+        protected $businessInformationType = AccountBusinessInformation::class;
+        protected $businessInformationDataType = '';
+        protected $conversionSettingsType = AccountConversionSettings::class;
+        protected $conversionSettingsDataType = '';
+        /**
+         * ID of CSS the account belongs to.
+         *
+         * @var string
+         */
+        public $cssId;
+        protected $googleMyBusinessLinkType = AccountGoogleMyBusinessLink::class;
+        protected $googleMyBusinessLinkDataType = '';
+        /**
+         * Required. 64-bit Merchant Center account ID.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "`content#account`".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Manually created label IDs that are assigned to the account by CSS.
+         *
+         * @var string[]
+         */
+        public $labelIds;
+        /**
+         * Required. Display name for the account.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Client-specific, locally-unique, internal ID for the child account.
+         *
+         * @var string
+         */
+        public $sellerId;
+        protected $usersType = AccountUser::class;
+        protected $usersDataType = 'array';
+        /**
+         * The merchant's website.
+         *
+         * @var string
+         */
+        public $websiteUrl;
+        protected $youtubeChannelLinksType = AccountYouTubeChannelLink::class;
+        protected $youtubeChannelLinksDataType = 'array';
+        /**
+         * Output only. How the account is managed. Acceptable values are: -
+         * "`manual`" - "`automatic`"
+         *
+         * @param string $accountManagement
+         */
+        public function setAccountManagement($accountManagement)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountManagement()
+        {
+        }
+        /**
+         * Linked Ads accounts that are active or pending approval. To create a new
+         * link request, add a new link with status `active` to the list. It will
+         * remain in a `pending` state until approved or rejected either in the Ads
+         * interface or through the Google Ads API. To delete an active link, or to
+         * cancel a link request, remove it from the list.
+         *
+         * @param AccountAdsLink[] $adsLinks
+         */
+        public function setAdsLinks($adsLinks)
+        {
+        }
+        /**
+         * @return AccountAdsLink[]
+         */
+        public function getAdsLinks()
+        {
+        }
+        /**
+         * Indicates whether the merchant sells adult content.
+         *
+         * @param bool $adultContent
+         */
+        public function setAdultContent($adultContent)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAdultContent()
+        {
+        }
+        /**
+         * The automatic improvements of the account can be used to automatically
+         * update items, improve images and shipping. Each section inside
+         * AutomaticImprovements is updated separately.
+         *
+         * @param AccountAutomaticImprovements $automaticImprovements
+         */
+        public function setAutomaticImprovements(AccountAutomaticImprovements $automaticImprovements)
+        {
+        }
+        /**
+         * @return AccountAutomaticImprovements
+         */
+        public function getAutomaticImprovements()
+        {
+        }
+        /**
+         * Automatically created label IDs that are assigned to the account by CSS
+         * Center.
+         *
+         * @param string[] $automaticLabelIds
+         */
+        public function setAutomaticLabelIds($automaticLabelIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAutomaticLabelIds()
+        {
+        }
+        /**
+         * The business identity attributes can be used to self-declare attributes
+         * that let customers know more about your business.
+         *
+         * @param AccountBusinessIdentity $businessIdentity
+         */
+        public function setBusinessIdentity(AccountBusinessIdentity $businessIdentity)
+        {
+        }
+        /**
+         * @return AccountBusinessIdentity
+         */
+        public function getBusinessIdentity()
+        {
+        }
+        /**
+         * The business information of the account.
+         *
+         * @param AccountBusinessInformation $businessInformation
+         */
+        public function setBusinessInformation(AccountBusinessInformation $businessInformation)
+        {
+        }
+        /**
+         * @return AccountBusinessInformation
+         */
+        public function getBusinessInformation()
+        {
+        }
+        /**
+         * Settings for conversion tracking.
+         *
+         * @param AccountConversionSettings $conversionSettings
+         */
+        public function setConversionSettings(AccountConversionSettings $conversionSettings)
+        {
+        }
+        /**
+         * @return AccountConversionSettings
+         */
+        public function getConversionSettings()
+        {
+        }
+        /**
+         * ID of CSS the account belongs to.
+         *
+         * @param string $cssId
+         */
+        public function setCssId($cssId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCssId()
+        {
+        }
+        /**
+         * The Business Profile which is linked or in the process of being linked with
+         * the Merchant Center account.
+         *
+         * @param AccountGoogleMyBusinessLink $googleMyBusinessLink
+         */
+        public function setGoogleMyBusinessLink(AccountGoogleMyBusinessLink $googleMyBusinessLink)
+        {
+        }
+        /**
+         * @return AccountGoogleMyBusinessLink
+         */
+        public function getGoogleMyBusinessLink()
+        {
+        }
+        /**
+         * Required. 64-bit Merchant Center account ID.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "`content#account`".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Manually created label IDs that are assigned to the account by CSS.
+         *
+         * @param string[] $labelIds
+         */
+        public function setLabelIds($labelIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabelIds()
+        {
+        }
+        /**
+         * Required. Display name for the account.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Client-specific, locally-unique, internal ID for the child account.
+         *
+         * @param string $sellerId
+         */
+        public function setSellerId($sellerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSellerId()
+        {
+        }
+        /**
+         * Users with access to the account. Every account (except for subaccounts)
+         * must have at least one admin user.
+         *
+         * @param AccountUser[] $users
+         */
+        public function setUsers($users)
+        {
+        }
+        /**
+         * @return AccountUser[]
+         */
+        public function getUsers()
+        {
+        }
+        /**
+         * The merchant's website.
+         *
+         * @param string $websiteUrl
+         */
+        public function setWebsiteUrl($websiteUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWebsiteUrl()
+        {
+        }
+        /**
+         * Linked YouTube channels that are active or pending approval. To create a
+         * new link request, add a new link with status `active` to the list. It will
+         * remain in a `pending` state until approved or rejected in the YT Creator
+         * Studio interface. To delete an active link, or to cancel a link request,
+         * remove it from the list.
+         *
+         * @param AccountYouTubeChannelLink[] $youtubeChannelLinks
+         */
+        public function setYoutubeChannelLinks($youtubeChannelLinks)
+        {
+        }
+        /**
+         * @return AccountYouTubeChannelLink[]
+         */
+        public function getYoutubeChannelLinks()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\Account registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountManagement()
-    {
-    }
-    /**
-     * Linked Ads accounts that are active or pending approval. To create a new
-     * link request, add a new link with status `active` to the list. It will
-     * remain in a `pending` state until approved or rejected either in the Ads
-     * interface or through the Google Ads API. To delete an active link, or to
-     * cancel a link request, remove it from the list.
-     *
-     * @param AccountAdsLink[] $adsLinks
-     */
-    public function setAdsLinks($adsLinks)
-    {
-    }
-    /**
-     * @return AccountAdsLink[]
-     */
-    public function getAdsLinks()
-    {
-    }
-    /**
-     * Indicates whether the merchant sells adult content.
-     *
-     * @param bool $adultContent
-     */
-    public function setAdultContent($adultContent)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getAdultContent()
-    {
-    }
-    /**
-     * The automatic improvements of the account can be used to automatically
-     * update items, improve images and shipping. Each section inside
-     * AutomaticImprovements is updated separately.
-     *
-     * @param AccountAutomaticImprovements $automaticImprovements
-     */
-    public function setAutomaticImprovements(AccountAutomaticImprovements $automaticImprovements)
-    {
-    }
-    /**
-     * @return AccountAutomaticImprovements
-     */
-    public function getAutomaticImprovements()
-    {
-    }
-    /**
-     * Automatically created label IDs that are assigned to the account by CSS
-     * Center.
-     *
-     * @param string[] $automaticLabelIds
-     */
-    public function setAutomaticLabelIds($automaticLabelIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getAutomaticLabelIds()
-    {
-    }
-    /**
-     * The business identity attributes can be used to self-declare attributes
-     * that let customers know more about your business.
-     *
-     * @param AccountBusinessIdentity $businessIdentity
-     */
-    public function setBusinessIdentity(AccountBusinessIdentity $businessIdentity)
-    {
-    }
-    /**
-     * @return AccountBusinessIdentity
-     */
-    public function getBusinessIdentity()
-    {
-    }
-    /**
-     * The business information of the account.
-     *
-     * @param AccountBusinessInformation $businessInformation
-     */
-    public function setBusinessInformation(AccountBusinessInformation $businessInformation)
-    {
-    }
-    /**
-     * @return AccountBusinessInformation
-     */
-    public function getBusinessInformation()
-    {
-    }
-    /**
-     * Settings for conversion tracking.
-     *
-     * @param AccountConversionSettings $conversionSettings
-     */
-    public function setConversionSettings(AccountConversionSettings $conversionSettings)
-    {
-    }
-    /**
-     * @return AccountConversionSettings
-     */
-    public function getConversionSettings()
-    {
-    }
-    /**
-     * ID of CSS the account belongs to.
-     *
-     * @param string $cssId
-     */
-    public function setCssId($cssId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCssId()
-    {
-    }
-    /**
-     * The Business Profile which is linked or in the process of being linked with
-     * the Merchant Center account.
-     *
-     * @param AccountGoogleMyBusinessLink $googleMyBusinessLink
-     */
-    public function setGoogleMyBusinessLink(AccountGoogleMyBusinessLink $googleMyBusinessLink)
-    {
-    }
-    /**
-     * @return AccountGoogleMyBusinessLink
-     */
-    public function getGoogleMyBusinessLink()
-    {
-    }
-    /**
-     * Required. 64-bit Merchant Center account ID.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "`content#account`".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Manually created label IDs that are assigned to the account by CSS.
-     *
-     * @param string[] $labelIds
-     */
-    public function setLabelIds($labelIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabelIds()
-    {
-    }
-    /**
-     * Required. Display name for the account.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Client-specific, locally-unique, internal ID for the child account.
-     *
-     * @param string $sellerId
-     */
-    public function setSellerId($sellerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSellerId()
-    {
-    }
-    /**
-     * Users with access to the account. Every account (except for subaccounts)
-     * must have at least one admin user.
-     *
-     * @param AccountUser[] $users
-     */
-    public function setUsers($users)
-    {
-    }
-    /**
-     * @return AccountUser[]
-     */
-    public function getUsers()
-    {
-    }
-    /**
-     * The merchant's website.
-     *
-     * @param string $websiteUrl
-     */
-    public function setWebsiteUrl($websiteUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWebsiteUrl()
-    {
-    }
-    /**
-     * Linked YouTube channels that are active or pending approval. To create a
-     * new link request, add a new link with status `active` to the list. It will
-     * remain in a `pending` state until approved or rejected in the YT Creator
-     * Studio interface. To delete an active link, or to cancel a link request,
-     * remove it from the list.
-     *
-     * @param AccountYouTubeChannelLink[] $youtubeChannelLinks
-     */
-    public function setYoutubeChannelLinks($youtubeChannelLinks)
-    {
-    }
-    /**
-     * @return AccountYouTubeChannelLink[]
-     */
-    public function getYoutubeChannelLinks()
+    class Google_Service_ShoppingContent_Account extends \Google\Service\ShoppingContent\Account
     {
     }
 }

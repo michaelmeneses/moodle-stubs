@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage;
-
-class AnywhereCaches extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    protected $itemsType = AnywhereCache::class;
-    protected $itemsDataType = 'array';
-    /**
-     * The kind of item this is. For lists of Anywhere Caches, this is always
-     * storage#anywhereCaches.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The continuation token, used to page through large result sets. Provide
-     * this value in a subsequent request to return the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of items.
-     *
-     * @param AnywhereCache[] $items
-     */
-    public function setItems($items)
+namespace Google\Service\Storage {
+    class AnywhereCaches extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        protected $itemsType = AnywhereCache::class;
+        protected $itemsDataType = 'array';
+        /**
+         * The kind of item this is. For lists of Anywhere Caches, this is always
+         * storage#anywhereCaches.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The continuation token, used to page through large result sets. Provide
+         * this value in a subsequent request to return the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of items.
+         *
+         * @param AnywhereCache[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return AnywhereCache[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * The kind of item this is. For lists of Anywhere Caches, this is always
+         * storage#anywhereCaches.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The continuation token, used to page through large result sets. Provide
+         * this value in a subsequent request to return the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AnywhereCache[]
+     * Runtime class alias of \Google\Service\Storage\AnywhereCaches registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getItems()
-    {
-    }
-    /**
-     * The kind of item this is. For lists of Anywhere Caches, this is always
-     * storage#anywhereCaches.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The continuation token, used to page through large result sets. Provide
-     * this value in a subsequent request to return the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Storage_AnywhereCaches extends \Google\Service\Storage\AnywhereCaches
     {
     }
 }

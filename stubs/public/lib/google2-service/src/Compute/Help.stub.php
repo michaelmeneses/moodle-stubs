@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class Help extends \Google\Collection
-{
-    protected $collection_key = 'links';
-    protected $linksType = HelpLink::class;
-    protected $linksDataType = 'array';
-    /**
-     * URL(s) pointing to additional information on handling the current error.
-     *
-     * @param HelpLink[] $links
-     */
-    public function setLinks($links)
+namespace Google\Service\Compute {
+    class Help extends \Google\Collection
     {
+        protected $collection_key = 'links';
+        protected $linksType = HelpLink::class;
+        protected $linksDataType = 'array';
+        /**
+         * URL(s) pointing to additional information on handling the current error.
+         *
+         * @param HelpLink[] $links
+         */
+        public function setLinks($links)
+        {
+        }
+        /**
+         * @return HelpLink[]
+         */
+        public function getLinks()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return HelpLink[]
+     * Runtime class alias of \Google\Service\Compute\Help registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLinks()
+    class Google_Service_Compute_Help extends \Google\Service\Compute\Help
     {
     }
 }

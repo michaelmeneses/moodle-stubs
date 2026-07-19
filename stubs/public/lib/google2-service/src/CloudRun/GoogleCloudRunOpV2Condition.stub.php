@@ -21,168 +21,177 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleCloudRunOpV2Condition extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $domainMappingReason;
-    /**
-     * @var string
-     */
-    public $executionReason;
-    /**
-     * @var string
-     */
-    public $internalReason;
-    /**
-     * @var string
-     */
-    public $lastTransitionTime;
-    /**
-     * @var string
-     */
-    public $message;
-    /**
-     * @var string
-     */
-    public $reason;
-    /**
-     * @var string
-     */
-    public $revisionReason;
-    /**
-     * @var string
-     */
-    public $severity;
-    /**
-     * @var string
-     */
-    public $state;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param string
-     */
-    public function setDomainMappingReason($domainMappingReason)
+namespace Google\Service\CloudRun {
+    class GoogleCloudRunOpV2Condition extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $domainMappingReason;
+        /**
+         * @var string
+         */
+        public $executionReason;
+        /**
+         * @var string
+         */
+        public $internalReason;
+        /**
+         * @var string
+         */
+        public $lastTransitionTime;
+        /**
+         * @var string
+         */
+        public $message;
+        /**
+         * @var string
+         */
+        public $reason;
+        /**
+         * @var string
+         */
+        public $revisionReason;
+        /**
+         * @var string
+         */
+        public $severity;
+        /**
+         * @var string
+         */
+        public $state;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param string
+         */
+        public function setDomainMappingReason($domainMappingReason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDomainMappingReason()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setExecutionReason($executionReason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExecutionReason()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setInternalReason($internalReason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInternalReason()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setLastTransitionTime($lastTransitionTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastTransitionTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReason($reason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReason()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRevisionReason($revisionReason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRevisionReason()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSeverity($severity)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSeverity()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRun\GoogleCloudRunOpV2Condition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDomainMappingReason()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setExecutionReason($executionReason)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExecutionReason()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setInternalReason($internalReason)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInternalReason()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setLastTransitionTime($lastTransitionTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastTransitionTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReason($reason)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReason()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRevisionReason($revisionReason)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRevisionReason()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSeverity($severity)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSeverity()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_CloudRun_GoogleCloudRunOpV2Condition extends \Google\Service\CloudRun\GoogleCloudRunOpV2Condition
     {
     }
 }

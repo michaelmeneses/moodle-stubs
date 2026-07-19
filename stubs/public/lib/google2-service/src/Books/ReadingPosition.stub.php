@@ -21,150 +21,159 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class ReadingPosition extends \Google\Model
-{
-    /**
-     * Position in an EPUB as a CFI.
-     *
-     * @var string
-     */
-    public $epubCfiPosition;
-    /**
-     * Position in a volume for image-based content.
-     *
-     * @var string
-     */
-    public $gbImagePosition;
-    /**
-     * Position in a volume for text-based content.
-     *
-     * @var string
-     */
-    public $gbTextPosition;
-    /**
-     * Resource type for a reading position.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Position in a PDF file.
-     *
-     * @var string
-     */
-    public $pdfPosition;
-    /**
-     * Timestamp when this reading position was last updated (formatted UTC
-     * timestamp with millisecond resolution).
-     *
-     * @var string
-     */
-    public $updated;
-    /**
-     * Volume id associated with this reading position.
-     *
-     * @var string
-     */
-    public $volumeId;
-    /**
-     * Position in an EPUB as a CFI.
-     *
-     * @param string $epubCfiPosition
-     */
-    public function setEpubCfiPosition($epubCfiPosition)
+namespace Google\Service\Books {
+    class ReadingPosition extends \Google\Model
     {
+        /**
+         * Position in an EPUB as a CFI.
+         *
+         * @var string
+         */
+        public $epubCfiPosition;
+        /**
+         * Position in a volume for image-based content.
+         *
+         * @var string
+         */
+        public $gbImagePosition;
+        /**
+         * Position in a volume for text-based content.
+         *
+         * @var string
+         */
+        public $gbTextPosition;
+        /**
+         * Resource type for a reading position.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Position in a PDF file.
+         *
+         * @var string
+         */
+        public $pdfPosition;
+        /**
+         * Timestamp when this reading position was last updated (formatted UTC
+         * timestamp with millisecond resolution).
+         *
+         * @var string
+         */
+        public $updated;
+        /**
+         * Volume id associated with this reading position.
+         *
+         * @var string
+         */
+        public $volumeId;
+        /**
+         * Position in an EPUB as a CFI.
+         *
+         * @param string $epubCfiPosition
+         */
+        public function setEpubCfiPosition($epubCfiPosition)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEpubCfiPosition()
+        {
+        }
+        /**
+         * Position in a volume for image-based content.
+         *
+         * @param string $gbImagePosition
+         */
+        public function setGbImagePosition($gbImagePosition)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGbImagePosition()
+        {
+        }
+        /**
+         * Position in a volume for text-based content.
+         *
+         * @param string $gbTextPosition
+         */
+        public function setGbTextPosition($gbTextPosition)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGbTextPosition()
+        {
+        }
+        /**
+         * Resource type for a reading position.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Position in a PDF file.
+         *
+         * @param string $pdfPosition
+         */
+        public function setPdfPosition($pdfPosition)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPdfPosition()
+        {
+        }
+        /**
+         * Timestamp when this reading position was last updated (formatted UTC
+         * timestamp with millisecond resolution).
+         *
+         * @param string $updated
+         */
+        public function setUpdated($updated)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdated()
+        {
+        }
+        /**
+         * Volume id associated with this reading position.
+         *
+         * @param string $volumeId
+         */
+        public function setVolumeId($volumeId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVolumeId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Books\ReadingPosition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEpubCfiPosition()
-    {
-    }
-    /**
-     * Position in a volume for image-based content.
-     *
-     * @param string $gbImagePosition
-     */
-    public function setGbImagePosition($gbImagePosition)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGbImagePosition()
-    {
-    }
-    /**
-     * Position in a volume for text-based content.
-     *
-     * @param string $gbTextPosition
-     */
-    public function setGbTextPosition($gbTextPosition)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGbTextPosition()
-    {
-    }
-    /**
-     * Resource type for a reading position.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Position in a PDF file.
-     *
-     * @param string $pdfPosition
-     */
-    public function setPdfPosition($pdfPosition)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPdfPosition()
-    {
-    }
-    /**
-     * Timestamp when this reading position was last updated (formatted UTC
-     * timestamp with millisecond resolution).
-     *
-     * @param string $updated
-     */
-    public function setUpdated($updated)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdated()
-    {
-    }
-    /**
-     * Volume id associated with this reading position.
-     *
-     * @param string $volumeId
-     */
-    public function setVolumeId($volumeId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVolumeId()
+    class Google_Service_Books_ReadingPosition extends \Google\Service\Books\ReadingPosition
     {
     }
 }

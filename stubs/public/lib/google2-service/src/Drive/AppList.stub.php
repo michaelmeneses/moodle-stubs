@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Drive;
-
-class AppList extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    /**
-     * The list of app IDs that the user has specified to use by default. The list
-     * is in reverse-priority order (lowest to highest).
-     *
-     * @var string[]
-     */
-    public $defaultAppIds;
-    protected $itemsType = App::class;
-    protected $itemsDataType = 'array';
-    /**
-     * Output only. Identifies what kind of resource this is. Value: the fixed
-     * string "drive#appList".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * A link back to this list.
-     *
-     * @var string
-     */
-    public $selfLink;
-    /**
-     * The list of app IDs that the user has specified to use by default. The list
-     * is in reverse-priority order (lowest to highest).
-     *
-     * @param string[] $defaultAppIds
-     */
-    public function setDefaultAppIds($defaultAppIds)
+namespace Google\Service\Drive {
+    class AppList extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        /**
+         * The list of app IDs that the user has specified to use by default. The list
+         * is in reverse-priority order (lowest to highest).
+         *
+         * @var string[]
+         */
+        public $defaultAppIds;
+        protected $itemsType = App::class;
+        protected $itemsDataType = 'array';
+        /**
+         * Output only. Identifies what kind of resource this is. Value: the fixed
+         * string "drive#appList".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * A link back to this list.
+         *
+         * @var string
+         */
+        public $selfLink;
+        /**
+         * The list of app IDs that the user has specified to use by default. The list
+         * is in reverse-priority order (lowest to highest).
+         *
+         * @param string[] $defaultAppIds
+         */
+        public function setDefaultAppIds($defaultAppIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDefaultAppIds()
+        {
+        }
+        /**
+         * The list of apps.
+         *
+         * @param App[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return App[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * Output only. Identifies what kind of resource this is. Value: the fixed
+         * string "drive#appList".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * A link back to this list.
+         *
+         * @param string $selfLink
+         */
+        public function setSelfLink($selfLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLink()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Drive\AppList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefaultAppIds()
-    {
-    }
-    /**
-     * The list of apps.
-     *
-     * @param App[] $items
-     */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return App[]
-     */
-    public function getItems()
-    {
-    }
-    /**
-     * Output only. Identifies what kind of resource this is. Value: the fixed
-     * string "drive#appList".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * A link back to this list.
-     *
-     * @param string $selfLink
-     */
-    public function setSelfLink($selfLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLink()
+    class Google_Service_Drive_AppList extends \Google\Service\Drive\AppList
     {
     }
 }

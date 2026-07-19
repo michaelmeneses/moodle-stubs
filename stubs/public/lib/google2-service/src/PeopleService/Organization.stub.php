@@ -21,328 +21,337 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PeopleService;
-
-class Organization extends \Google\Model
-{
-    /**
-     * The person's cost center at the organization.
-     *
-     * @var string
-     */
-    public $costCenter;
-    /**
-     * True if the organization is the person's current organization; false if the
-     * organization is a past organization.
-     *
-     * @var bool
-     */
-    public $current;
-    /**
-     * The person's department at the organization.
-     *
-     * @var string
-     */
-    public $department;
-    /**
-     * The domain name associated with the organization; for example,
-     * `google.com`.
-     *
-     * @var string
-     */
-    public $domain;
-    protected $endDateType = Date::class;
-    protected $endDateDataType = '';
-    /**
-     * Output only. The type of the organization translated and formatted in the
-     * viewer's account locale or the `Accept-Language` HTTP header locale.
-     *
-     * @var string
-     */
-    public $formattedType;
-    /**
-     * The person's full-time equivalent millipercent within the organization
-     * (100000 = 100%).
-     *
-     * @var int
-     */
-    public $fullTimeEquivalentMillipercent;
-    /**
-     * The person's job description at the organization.
-     *
-     * @var string
-     */
-    public $jobDescription;
-    /**
-     * The location of the organization office the person works at.
-     *
-     * @var string
-     */
-    public $location;
-    protected $metadataType = FieldMetadata::class;
-    protected $metadataDataType = '';
-    /**
-     * The name of the organization.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The phonetic name of the organization.
-     *
-     * @var string
-     */
-    public $phoneticName;
-    protected $startDateType = Date::class;
-    protected $startDateDataType = '';
-    /**
-     * The symbol associated with the organization; for example, a stock ticker
-     * symbol, abbreviation, or acronym.
-     *
-     * @var string
-     */
-    public $symbol;
-    /**
-     * The person's job title at the organization.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * The type of the organization. The type can be custom or one of these
-     * predefined values: * `work` * `school`
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The person's cost center at the organization.
-     *
-     * @param string $costCenter
-     */
-    public function setCostCenter($costCenter)
+namespace Google\Service\PeopleService {
+    class Organization extends \Google\Model
     {
+        /**
+         * The person's cost center at the organization.
+         *
+         * @var string
+         */
+        public $costCenter;
+        /**
+         * True if the organization is the person's current organization; false if the
+         * organization is a past organization.
+         *
+         * @var bool
+         */
+        public $current;
+        /**
+         * The person's department at the organization.
+         *
+         * @var string
+         */
+        public $department;
+        /**
+         * The domain name associated with the organization; for example,
+         * `google.com`.
+         *
+         * @var string
+         */
+        public $domain;
+        protected $endDateType = Date::class;
+        protected $endDateDataType = '';
+        /**
+         * Output only. The type of the organization translated and formatted in the
+         * viewer's account locale or the `Accept-Language` HTTP header locale.
+         *
+         * @var string
+         */
+        public $formattedType;
+        /**
+         * The person's full-time equivalent millipercent within the organization
+         * (100000 = 100%).
+         *
+         * @var int
+         */
+        public $fullTimeEquivalentMillipercent;
+        /**
+         * The person's job description at the organization.
+         *
+         * @var string
+         */
+        public $jobDescription;
+        /**
+         * The location of the organization office the person works at.
+         *
+         * @var string
+         */
+        public $location;
+        protected $metadataType = FieldMetadata::class;
+        protected $metadataDataType = '';
+        /**
+         * The name of the organization.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The phonetic name of the organization.
+         *
+         * @var string
+         */
+        public $phoneticName;
+        protected $startDateType = Date::class;
+        protected $startDateDataType = '';
+        /**
+         * The symbol associated with the organization; for example, a stock ticker
+         * symbol, abbreviation, or acronym.
+         *
+         * @var string
+         */
+        public $symbol;
+        /**
+         * The person's job title at the organization.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * The type of the organization. The type can be custom or one of these
+         * predefined values: * `work` * `school`
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The person's cost center at the organization.
+         *
+         * @param string $costCenter
+         */
+        public function setCostCenter($costCenter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCostCenter()
+        {
+        }
+        /**
+         * True if the organization is the person's current organization; false if the
+         * organization is a past organization.
+         *
+         * @param bool $current
+         */
+        public function setCurrent($current)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCurrent()
+        {
+        }
+        /**
+         * The person's department at the organization.
+         *
+         * @param string $department
+         */
+        public function setDepartment($department)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDepartment()
+        {
+        }
+        /**
+         * The domain name associated with the organization; for example,
+         * `google.com`.
+         *
+         * @param string $domain
+         */
+        public function setDomain($domain)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDomain()
+        {
+        }
+        /**
+         * The end date when the person left the organization.
+         *
+         * @param Date $endDate
+         */
+        public function setEndDate(Date $endDate)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getEndDate()
+        {
+        }
+        /**
+         * Output only. The type of the organization translated and formatted in the
+         * viewer's account locale or the `Accept-Language` HTTP header locale.
+         *
+         * @param string $formattedType
+         */
+        public function setFormattedType($formattedType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFormattedType()
+        {
+        }
+        /**
+         * The person's full-time equivalent millipercent within the organization
+         * (100000 = 100%).
+         *
+         * @param int $fullTimeEquivalentMillipercent
+         */
+        public function setFullTimeEquivalentMillipercent($fullTimeEquivalentMillipercent)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFullTimeEquivalentMillipercent()
+        {
+        }
+        /**
+         * The person's job description at the organization.
+         *
+         * @param string $jobDescription
+         */
+        public function setJobDescription($jobDescription)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJobDescription()
+        {
+        }
+        /**
+         * The location of the organization office the person works at.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * Metadata about the organization.
+         *
+         * @param FieldMetadata $metadata
+         */
+        public function setMetadata(FieldMetadata $metadata)
+        {
+        }
+        /**
+         * @return FieldMetadata
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * The name of the organization.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The phonetic name of the organization.
+         *
+         * @param string $phoneticName
+         */
+        public function setPhoneticName($phoneticName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhoneticName()
+        {
+        }
+        /**
+         * The start date when the person joined the organization.
+         *
+         * @param Date $startDate
+         */
+        public function setStartDate(Date $startDate)
+        {
+        }
+        /**
+         * @return Date
+         */
+        public function getStartDate()
+        {
+        }
+        /**
+         * The symbol associated with the organization; for example, a stock ticker
+         * symbol, abbreviation, or acronym.
+         *
+         * @param string $symbol
+         */
+        public function setSymbol($symbol)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSymbol()
+        {
+        }
+        /**
+         * The person's job title at the organization.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * The type of the organization. The type can be custom or one of these
+         * predefined values: * `work` * `school`
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PeopleService\Organization registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCostCenter()
-    {
-    }
-    /**
-     * True if the organization is the person's current organization; false if the
-     * organization is a past organization.
-     *
-     * @param bool $current
-     */
-    public function setCurrent($current)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getCurrent()
-    {
-    }
-    /**
-     * The person's department at the organization.
-     *
-     * @param string $department
-     */
-    public function setDepartment($department)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDepartment()
-    {
-    }
-    /**
-     * The domain name associated with the organization; for example,
-     * `google.com`.
-     *
-     * @param string $domain
-     */
-    public function setDomain($domain)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDomain()
-    {
-    }
-    /**
-     * The end date when the person left the organization.
-     *
-     * @param Date $endDate
-     */
-    public function setEndDate(Date $endDate)
-    {
-    }
-    /**
-     * @return Date
-     */
-    public function getEndDate()
-    {
-    }
-    /**
-     * Output only. The type of the organization translated and formatted in the
-     * viewer's account locale or the `Accept-Language` HTTP header locale.
-     *
-     * @param string $formattedType
-     */
-    public function setFormattedType($formattedType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFormattedType()
-    {
-    }
-    /**
-     * The person's full-time equivalent millipercent within the organization
-     * (100000 = 100%).
-     *
-     * @param int $fullTimeEquivalentMillipercent
-     */
-    public function setFullTimeEquivalentMillipercent($fullTimeEquivalentMillipercent)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getFullTimeEquivalentMillipercent()
-    {
-    }
-    /**
-     * The person's job description at the organization.
-     *
-     * @param string $jobDescription
-     */
-    public function setJobDescription($jobDescription)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getJobDescription()
-    {
-    }
-    /**
-     * The location of the organization office the person works at.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * Metadata about the organization.
-     *
-     * @param FieldMetadata $metadata
-     */
-    public function setMetadata(FieldMetadata $metadata)
-    {
-    }
-    /**
-     * @return FieldMetadata
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * The name of the organization.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The phonetic name of the organization.
-     *
-     * @param string $phoneticName
-     */
-    public function setPhoneticName($phoneticName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhoneticName()
-    {
-    }
-    /**
-     * The start date when the person joined the organization.
-     *
-     * @param Date $startDate
-     */
-    public function setStartDate(Date $startDate)
-    {
-    }
-    /**
-     * @return Date
-     */
-    public function getStartDate()
-    {
-    }
-    /**
-     * The symbol associated with the organization; for example, a stock ticker
-     * symbol, abbreviation, or acronym.
-     *
-     * @param string $symbol
-     */
-    public function setSymbol($symbol)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSymbol()
-    {
-    }
-    /**
-     * The person's job title at the organization.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * The type of the organization. The type can be custom or one of these
-     * predefined values: * `work` * `school`
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_PeopleService_Organization extends \Google\Service\PeopleService\Organization
     {
     }
 }

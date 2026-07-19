@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataDiscoverySpecStorageConfigJsonOptions extends \Google\Model
-{
-    /**
-     * Optional. The character encoding of the data. The default is UTF-8.
-     *
-     * @var string
-     */
-    public $encoding;
-    /**
-     * Optional. Whether to disable the inference of data types for JSON data. If
-     * true, all columns are registered as their primitive types (strings, number,
-     * or boolean).
-     *
-     * @var bool
-     */
-    public $typeInferenceDisabled;
-    /**
-     * Optional. The character encoding of the data. The default is UTF-8.
-     *
-     * @param string $encoding
-     */
-    public function setEncoding($encoding)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataDiscoverySpecStorageConfigJsonOptions extends \Google\Model
     {
+        /**
+         * Optional. The character encoding of the data. The default is UTF-8.
+         *
+         * @var string
+         */
+        public $encoding;
+        /**
+         * Optional. Whether to disable the inference of data types for JSON data. If
+         * true, all columns are registered as their primitive types (strings, number,
+         * or boolean).
+         *
+         * @var bool
+         */
+        public $typeInferenceDisabled;
+        /**
+         * Optional. The character encoding of the data. The default is UTF-8.
+         *
+         * @param string $encoding
+         */
+        public function setEncoding($encoding)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEncoding()
+        {
+        }
+        /**
+         * Optional. Whether to disable the inference of data types for JSON data. If
+         * true, all columns are registered as their primitive types (strings, number,
+         * or boolean).
+         *
+         * @param bool $typeInferenceDisabled
+         */
+        public function setTypeInferenceDisabled($typeInferenceDisabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getTypeInferenceDisabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataDiscoverySpecStorageConfigJsonOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEncoding()
-    {
-    }
-    /**
-     * Optional. Whether to disable the inference of data types for JSON data. If
-     * true, all columns are registered as their primitive types (strings, number,
-     * or boolean).
-     *
-     * @param bool $typeInferenceDisabled
-     */
-    public function setTypeInferenceDisabled($typeInferenceDisabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getTypeInferenceDisabled()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataDiscoverySpecStorageConfigJsonOptions extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataDiscoverySpecStorageConfigJsonOptions
     {
     }
 }

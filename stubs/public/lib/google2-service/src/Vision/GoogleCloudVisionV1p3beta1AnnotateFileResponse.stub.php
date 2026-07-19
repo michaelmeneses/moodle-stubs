@@ -21,79 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class GoogleCloudVisionV1p3beta1AnnotateFileResponse extends \Google\Collection
-{
-    protected $collection_key = 'responses';
-    protected $errorType = Status::class;
-    protected $errorDataType = '';
-    protected $inputConfigType = GoogleCloudVisionV1p3beta1InputConfig::class;
-    protected $inputConfigDataType = '';
-    protected $responsesType = GoogleCloudVisionV1p3beta1AnnotateImageResponse::class;
-    protected $responsesDataType = 'array';
-    /**
-     * This field gives the total number of pages in the file.
-     *
-     * @var int
-     */
-    public $totalPages;
-    /**
-     * If set, represents the error message for the failed request. The
-     * `responses` field will not be set in this case.
-     *
-     * @param Status $error
-     */
-    public function setError(Status $error)
+namespace Google\Service\Vision {
+    class GoogleCloudVisionV1p3beta1AnnotateFileResponse extends \Google\Collection
     {
+        protected $collection_key = 'responses';
+        protected $errorType = Status::class;
+        protected $errorDataType = '';
+        protected $inputConfigType = GoogleCloudVisionV1p3beta1InputConfig::class;
+        protected $inputConfigDataType = '';
+        protected $responsesType = GoogleCloudVisionV1p3beta1AnnotateImageResponse::class;
+        protected $responsesDataType = 'array';
+        /**
+         * This field gives the total number of pages in the file.
+         *
+         * @var int
+         */
+        public $totalPages;
+        /**
+         * If set, represents the error message for the failed request. The
+         * `responses` field will not be set in this case.
+         *
+         * @param Status $error
+         */
+        public function setError(Status $error)
+        {
+        }
+        /**
+         * @return Status
+         */
+        public function getError()
+        {
+        }
+        /**
+         * Information about the file for which this response is generated.
+         *
+         * @param GoogleCloudVisionV1p3beta1InputConfig $inputConfig
+         */
+        public function setInputConfig(GoogleCloudVisionV1p3beta1InputConfig $inputConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudVisionV1p3beta1InputConfig
+         */
+        public function getInputConfig()
+        {
+        }
+        /**
+         * Individual responses to images found within the file. This field will be
+         * empty if the `error` field is set.
+         *
+         * @param GoogleCloudVisionV1p3beta1AnnotateImageResponse[] $responses
+         */
+        public function setResponses($responses)
+        {
+        }
+        /**
+         * @return GoogleCloudVisionV1p3beta1AnnotateImageResponse[]
+         */
+        public function getResponses()
+        {
+        }
+        /**
+         * This field gives the total number of pages in the file.
+         *
+         * @param int $totalPages
+         */
+        public function setTotalPages($totalPages)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalPages()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Status
+     * Runtime class alias of \Google\Service\Vision\GoogleCloudVisionV1p3beta1AnnotateFileResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getError()
-    {
-    }
-    /**
-     * Information about the file for which this response is generated.
-     *
-     * @param GoogleCloudVisionV1p3beta1InputConfig $inputConfig
-     */
-    public function setInputConfig(GoogleCloudVisionV1p3beta1InputConfig $inputConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudVisionV1p3beta1InputConfig
-     */
-    public function getInputConfig()
-    {
-    }
-    /**
-     * Individual responses to images found within the file. This field will be
-     * empty if the `error` field is set.
-     *
-     * @param GoogleCloudVisionV1p3beta1AnnotateImageResponse[] $responses
-     */
-    public function setResponses($responses)
-    {
-    }
-    /**
-     * @return GoogleCloudVisionV1p3beta1AnnotateImageResponse[]
-     */
-    public function getResponses()
-    {
-    }
-    /**
-     * This field gives the total number of pages in the file.
-     *
-     * @param int $totalPages
-     */
-    public function setTotalPages($totalPages)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalPages()
+    class Google_Service_Vision_GoogleCloudVisionV1p3beta1AnnotateFileResponse extends \Google\Service\Vision\GoogleCloudVisionV1p3beta1AnnotateFileResponse
     {
     }
 }

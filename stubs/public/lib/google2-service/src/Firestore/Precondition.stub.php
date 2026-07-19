@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class Precondition extends \Google\Model
-{
-    /**
-     * When set to `true`, the target document must exist. When set to `false`,
-     * the target document must not exist.
-     *
-     * @var bool
-     */
-    public $exists;
-    /**
-     * When set, the target document must exist and have been last updated at that
-     * time. Timestamp must be microsecond aligned.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * When set to `true`, the target document must exist. When set to `false`,
-     * the target document must not exist.
-     *
-     * @param bool $exists
-     */
-    public function setExists($exists)
+namespace Google\Service\Firestore {
+    class Precondition extends \Google\Model
     {
+        /**
+         * When set to `true`, the target document must exist. When set to `false`,
+         * the target document must not exist.
+         *
+         * @var bool
+         */
+        public $exists;
+        /**
+         * When set, the target document must exist and have been last updated at that
+         * time. Timestamp must be microsecond aligned.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * When set to `true`, the target document must exist. When set to `false`,
+         * the target document must not exist.
+         *
+         * @param bool $exists
+         */
+        public function setExists($exists)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getExists()
+        {
+        }
+        /**
+         * When set, the target document must exist and have been last updated at that
+         * time. Timestamp must be microsecond aligned.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Firestore\Precondition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExists()
-    {
-    }
-    /**
-     * When set, the target document must exist and have been last updated at that
-     * time. Timestamp must be microsecond aligned.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_Firestore_Precondition extends \Google\Service\Firestore\Precondition
     {
     }
 }

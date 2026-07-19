@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class PolicyRule extends \Google\Model
-{
-    protected $rolloutRestrictionType = RolloutRestriction::class;
-    protected $rolloutRestrictionDataType = '';
-    /**
-     * Optional. Rollout restrictions.
-     *
-     * @param RolloutRestriction $rolloutRestriction
-     */
-    public function setRolloutRestriction(RolloutRestriction $rolloutRestriction)
+namespace Google\Service\CloudDeploy {
+    class PolicyRule extends \Google\Model
     {
+        protected $rolloutRestrictionType = RolloutRestriction::class;
+        protected $rolloutRestrictionDataType = '';
+        /**
+         * Optional. Rollout restrictions.
+         *
+         * @param RolloutRestriction $rolloutRestriction
+         */
+        public function setRolloutRestriction(RolloutRestriction $rolloutRestriction)
+        {
+        }
+        /**
+         * @return RolloutRestriction
+         */
+        public function getRolloutRestriction()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RolloutRestriction
+     * Runtime class alias of \Google\Service\CloudDeploy\PolicyRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRolloutRestriction()
+    class Google_Service_CloudDeploy_PolicyRule extends \Google\Service\CloudDeploy\PolicyRule
     {
     }
 }

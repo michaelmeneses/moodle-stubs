@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyVersionsV1NumericRangeConstraint extends \Google\Model
-{
-    /**
-     * Maximum value.
-     *
-     * @var string
-     */
-    public $maximum;
-    /**
-     * Minimum value.
-     *
-     * @var string
-     */
-    public $minimum;
-    /**
-     * Maximum value.
-     *
-     * @param string $maximum
-     */
-    public function setMaximum($maximum)
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyVersionsV1NumericRangeConstraint extends \Google\Model
     {
+        /**
+         * Maximum value.
+         *
+         * @var string
+         */
+        public $maximum;
+        /**
+         * Minimum value.
+         *
+         * @var string
+         */
+        public $minimum;
+        /**
+         * Maximum value.
+         *
+         * @param string $maximum
+         */
+        public function setMaximum($maximum)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaximum()
+        {
+        }
+        /**
+         * Minimum value.
+         *
+         * @param string $minimum
+         */
+        public function setMinimum($minimum)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMinimum()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1NumericRangeConstraint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaximum()
-    {
-    }
-    /**
-     * Minimum value.
-     *
-     * @param string $minimum
-     */
-    public function setMinimum($minimum)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMinimum()
+    class Google_Service_ChromePolicy_GoogleChromePolicyVersionsV1NumericRangeConstraint extends \Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1NumericRangeConstraint
     {
     }
 }

@@ -21,28 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PubsubLite\Resource;
-
-/**
- * The "subscriptions" collection of methods.
- * Typical usage is:
- *  <code>
- *   $pubsubliteService = new Google\Service\PubsubLite(...);
- *   $subscriptions = $pubsubliteService->cursor_projects_locations_subscriptions;
- *  </code>
- */
-class CursorProjectsLocationsSubscriptions extends \Google\Service\Resource
-{
+namespace Google\Service\PubsubLite\Resource {
+    use Google\Service\PubsubLite\CommitCursorRequest;
+    use Google\Service\PubsubLite\CommitCursorResponse;
     /**
-     * Updates the committed cursor. (subscriptions.commitCursor)
-     *
-     * @param string $subscription The subscription for which to update the cursor.
-     * @param CommitCursorRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return CommitCursorResponse
-     * @throws \Google\Service\Exception
+     * The "subscriptions" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $pubsubliteService = new Google\Service\PubsubLite(...);
+     *   $subscriptions = $pubsubliteService->cursor_projects_locations_subscriptions;
+     *  </code>
      */
-    public function commitCursor($subscription, CommitCursorRequest $postBody, $optParams = [])
+    class CursorProjectsLocationsSubscriptions extends \Google\Service\Resource
+    {
+        /**
+         * Updates the committed cursor. (subscriptions.commitCursor)
+         *
+         * @param string $subscription The subscription for which to update the cursor.
+         * @param CommitCursorRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return CommitCursorResponse
+         * @throws \Google\Service\Exception
+         */
+        public function commitCursor($subscription, CommitCursorRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\PubsubLite\Resource\CursorProjectsLocationsSubscriptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_PubsubLite_Resource_CursorProjectsLocationsSubscriptions extends \Google\Service\PubsubLite\Resource\CursorProjectsLocationsSubscriptions
     {
     }
 }

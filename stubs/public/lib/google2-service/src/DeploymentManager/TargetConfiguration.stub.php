@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DeploymentManager;
-
-class TargetConfiguration extends \Google\Collection
-{
-    protected $collection_key = 'imports';
-    protected $configType = ConfigFile::class;
-    protected $configDataType = '';
-    protected $importsType = ImportFile::class;
-    protected $importsDataType = 'array';
-    /**
-     * The configuration to use for this deployment.
-     *
-     * @param ConfigFile $config
-     */
-    public function setConfig(ConfigFile $config)
+namespace Google\Service\DeploymentManager {
+    class TargetConfiguration extends \Google\Collection
     {
+        protected $collection_key = 'imports';
+        protected $configType = ConfigFile::class;
+        protected $configDataType = '';
+        protected $importsType = ImportFile::class;
+        protected $importsDataType = 'array';
+        /**
+         * The configuration to use for this deployment.
+         *
+         * @param ConfigFile $config
+         */
+        public function setConfig(ConfigFile $config)
+        {
+        }
+        /**
+         * @return ConfigFile
+         */
+        public function getConfig()
+        {
+        }
+        /**
+         * Specifies any files to import for this configuration. This can be used to
+         * import templates or other files. For example, you might import a text file
+         * in order to use the file in a template.
+         *
+         * @param ImportFile[] $imports
+         */
+        public function setImports($imports)
+        {
+        }
+        /**
+         * @return ImportFile[]
+         */
+        public function getImports()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ConfigFile
+     * Runtime class alias of \Google\Service\DeploymentManager\TargetConfiguration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfig()
-    {
-    }
-    /**
-     * Specifies any files to import for this configuration. This can be used to
-     * import templates or other files. For example, you might import a text file
-     * in order to use the file in a template.
-     *
-     * @param ImportFile[] $imports
-     */
-    public function setImports($imports)
-    {
-    }
-    /**
-     * @return ImportFile[]
-     */
-    public function getImports()
+    class Google_Service_DeploymentManager_TargetConfiguration extends \Google\Service\DeploymentManager\TargetConfiguration
     {
     }
 }

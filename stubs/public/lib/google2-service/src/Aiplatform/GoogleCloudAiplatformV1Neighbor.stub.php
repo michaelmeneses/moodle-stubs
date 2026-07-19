@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1Neighbor extends \Google\Model
-{
-    /**
-     * Output only. The neighbor distance.
-     *
-     * @var 
-     */
-    public $neighborDistance;
-    /**
-     * Output only. The neighbor id.
-     *
-     * @var string
-     */
-    public $neighborId;
-    public function setNeighborDistance($neighborDistance)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1Neighbor extends \Google\Model
     {
+        /**
+         * Output only. The neighbor distance.
+         *
+         * @var 
+         */
+        public $neighborDistance;
+        /**
+         * Output only. The neighbor id.
+         *
+         * @var string
+         */
+        public $neighborId;
+        public function setNeighborDistance($neighborDistance)
+        {
+        }
+        public function getNeighborDistance()
+        {
+        }
+        /**
+         * Output only. The neighbor id.
+         *
+         * @param string $neighborId
+         */
+        public function setNeighborId($neighborId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNeighborId()
+        {
+        }
     }
-    public function getNeighborDistance()
-    {
-    }
+}
+namespace {
     /**
-     * Output only. The neighbor id.
-     *
-     * @param string $neighborId
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1Neighbor registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setNeighborId($neighborId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNeighborId()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1Neighbor extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1Neighbor
     {
     }
 }

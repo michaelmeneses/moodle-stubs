@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine;
-
-class ListDomainMappingsResponse extends \Google\Collection
-{
-    protected $collection_key = 'domainMappings';
-    protected $domainMappingsType = DomainMapping::class;
-    protected $domainMappingsDataType = 'array';
-    /**
-     * Continuation token for fetching the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The domain mappings for the application.
-     *
-     * @param DomainMapping[] $domainMappings
-     */
-    public function setDomainMappings($domainMappings)
+namespace Google\Service\Appengine {
+    class ListDomainMappingsResponse extends \Google\Collection
     {
+        protected $collection_key = 'domainMappings';
+        protected $domainMappingsType = DomainMapping::class;
+        protected $domainMappingsDataType = 'array';
+        /**
+         * Continuation token for fetching the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The domain mappings for the application.
+         *
+         * @param DomainMapping[] $domainMappings
+         */
+        public function setDomainMappings($domainMappings)
+        {
+        }
+        /**
+         * @return DomainMapping[]
+         */
+        public function getDomainMappings()
+        {
+        }
+        /**
+         * Continuation token for fetching the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DomainMapping[]
+     * Runtime class alias of \Google\Service\Appengine\ListDomainMappingsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDomainMappings()
-    {
-    }
-    /**
-     * Continuation token for fetching the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Appengine_ListDomainMappingsResponse extends \Google\Service\Appengine\ListDomainMappingsResponse
     {
     }
 }

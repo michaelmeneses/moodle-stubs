@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class Database extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $backupFile;
-    /**
-     * @var string
-     */
-    public $backupSchedule;
-    /**
-     * @var string
-     */
-    public $hostVm;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @param string
-     */
-    public function setBackupFile($backupFile)
+namespace Google\Service\WorkloadManager {
+    class Database extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $backupFile;
+        /**
+         * @var string
+         */
+        public $backupSchedule;
+        /**
+         * @var string
+         */
+        public $hostVm;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @param string
+         */
+        public function setBackupFile($backupFile)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBackupFile()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setBackupSchedule($backupSchedule)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBackupSchedule()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setHostVm($hostVm)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHostVm()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WorkloadManager\Database registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackupFile()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setBackupSchedule($backupSchedule)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBackupSchedule()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setHostVm($hostVm)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHostVm()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_WorkloadManager_Database extends \Google\Service\WorkloadManager\Database
     {
     }
 }

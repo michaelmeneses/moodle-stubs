@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1TelemetryDeviceInfo extends \Google\Model
-{
-    /**
-     * Output only. The unique Directory API ID of the device. This value is the
-     * same as the Admin Console's Directory API ID in the ChromeOS Devices tab.
-     *
-     * @var string
-     */
-    public $deviceId;
-    /**
-     * Output only. Organization unit ID of the device.
-     *
-     * @var string
-     */
-    public $orgUnitId;
-    /**
-     * Output only. The unique Directory API ID of the device. This value is the
-     * same as the Admin Console's Directory API ID in the ChromeOS Devices tab.
-     *
-     * @param string $deviceId
-     */
-    public function setDeviceId($deviceId)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1TelemetryDeviceInfo extends \Google\Model
     {
+        /**
+         * Output only. The unique Directory API ID of the device. This value is the
+         * same as the Admin Console's Directory API ID in the ChromeOS Devices tab.
+         *
+         * @var string
+         */
+        public $deviceId;
+        /**
+         * Output only. Organization unit ID of the device.
+         *
+         * @var string
+         */
+        public $orgUnitId;
+        /**
+         * Output only. The unique Directory API ID of the device. This value is the
+         * same as the Admin Console's Directory API ID in the ChromeOS Devices tab.
+         *
+         * @param string $deviceId
+         */
+        public function setDeviceId($deviceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeviceId()
+        {
+        }
+        /**
+         * Output only. Organization unit ID of the device.
+         *
+         * @param string $orgUnitId
+         */
+        public function setOrgUnitId($orgUnitId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrgUnitId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1TelemetryDeviceInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceId()
-    {
-    }
-    /**
-     * Output only. Organization unit ID of the device.
-     *
-     * @param string $orgUnitId
-     */
-    public function setOrgUnitId($orgUnitId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrgUnitId()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1TelemetryDeviceInfo extends \Google\Service\ChromeManagement\GoogleChromeManagementV1TelemetryDeviceInfo
     {
     }
 }

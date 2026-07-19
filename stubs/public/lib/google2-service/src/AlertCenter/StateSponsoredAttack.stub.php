@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AlertCenter;
-
-class StateSponsoredAttack extends \Google\Model
-{
-    /**
-     * The email of the user this incident was created for.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * The email of the user this incident was created for.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
+namespace Google\Service\AlertCenter {
+    class StateSponsoredAttack extends \Google\Model
     {
+        /**
+         * The email of the user this incident was created for.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * The email of the user this incident was created for.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AlertCenter\StateSponsoredAttack registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmail()
+    class Google_Service_AlertCenter_StateSponsoredAttack extends \Google\Service\AlertCenter\StateSponsoredAttack
     {
     }
 }

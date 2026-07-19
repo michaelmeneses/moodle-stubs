@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class ResultSetMetadata extends \Google\Model
-{
-    protected $rowTypeType = StructType::class;
-    protected $rowTypeDataType = '';
-    protected $transactionType = Transaction::class;
-    protected $transactionDataType = '';
-    protected $undeclaredParametersType = StructType::class;
-    protected $undeclaredParametersDataType = '';
-    /**
-     * Indicates the field names and types for the rows in the result set. For
-     * example, a SQL query like `"SELECT UserId, UserName FROM Users"` could
-     * return a `row_type` value like: "fields": [ { "name": "UserId", "type": {
-     * "code": "INT64" } }, { "name": "UserName", "type": { "code": "STRING" } },
-     * ]
-     *
-     * @param StructType $rowType
-     */
-    public function setRowType(StructType $rowType)
+namespace Google\Service\Spanner {
+    class ResultSetMetadata extends \Google\Model
     {
+        protected $rowTypeType = StructType::class;
+        protected $rowTypeDataType = '';
+        protected $transactionType = Transaction::class;
+        protected $transactionDataType = '';
+        protected $undeclaredParametersType = StructType::class;
+        protected $undeclaredParametersDataType = '';
+        /**
+         * Indicates the field names and types for the rows in the result set. For
+         * example, a SQL query like `"SELECT UserId, UserName FROM Users"` could
+         * return a `row_type` value like: "fields": [ { "name": "UserId", "type": {
+         * "code": "INT64" } }, { "name": "UserName", "type": { "code": "STRING" } },
+         * ]
+         *
+         * @param StructType $rowType
+         */
+        public function setRowType(StructType $rowType)
+        {
+        }
+        /**
+         * @return StructType
+         */
+        public function getRowType()
+        {
+        }
+        /**
+         * If the read or SQL query began a transaction as a side-effect, the
+         * information about the new transaction is yielded here.
+         *
+         * @param Transaction $transaction
+         */
+        public function setTransaction(Transaction $transaction)
+        {
+        }
+        /**
+         * @return Transaction
+         */
+        public function getTransaction()
+        {
+        }
+        /**
+         * A SQL query can be parameterized. In PLAN mode, these parameters can be
+         * undeclared. This indicates the field names and types for those undeclared
+         * parameters in the SQL query. For example, a SQL query like `"SELECT * FROM
+         * Users where UserId = @userId and UserName = @userName "` could return a
+         * `undeclared_parameters` value like: "fields": [ { "name": "UserId", "type":
+         * { "code": "INT64" } }, { "name": "UserName", "type": { "code": "STRING" }
+         * }, ]
+         *
+         * @param StructType $undeclaredParameters
+         */
+        public function setUndeclaredParameters(StructType $undeclaredParameters)
+        {
+        }
+        /**
+         * @return StructType
+         */
+        public function getUndeclaredParameters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return StructType
+     * Runtime class alias of \Google\Service\Spanner\ResultSetMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRowType()
-    {
-    }
-    /**
-     * If the read or SQL query began a transaction as a side-effect, the
-     * information about the new transaction is yielded here.
-     *
-     * @param Transaction $transaction
-     */
-    public function setTransaction(Transaction $transaction)
-    {
-    }
-    /**
-     * @return Transaction
-     */
-    public function getTransaction()
-    {
-    }
-    /**
-     * A SQL query can be parameterized. In PLAN mode, these parameters can be
-     * undeclared. This indicates the field names and types for those undeclared
-     * parameters in the SQL query. For example, a SQL query like `"SELECT * FROM
-     * Users where UserId = @userId and UserName = @userName "` could return a
-     * `undeclared_parameters` value like: "fields": [ { "name": "UserId", "type":
-     * { "code": "INT64" } }, { "name": "UserName", "type": { "code": "STRING" }
-     * }, ]
-     *
-     * @param StructType $undeclaredParameters
-     */
-    public function setUndeclaredParameters(StructType $undeclaredParameters)
-    {
-    }
-    /**
-     * @return StructType
-     */
-    public function getUndeclaredParameters()
+    class Google_Service_Spanner_ResultSetMetadata extends \Google\Service\Spanner\ResultSetMetadata
     {
     }
 }

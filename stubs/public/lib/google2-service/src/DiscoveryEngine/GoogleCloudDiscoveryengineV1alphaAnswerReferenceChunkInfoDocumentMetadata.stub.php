@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaAnswerReferenceChunkInfoDocumentMetadata extends \Google\Model
-{
-    /**
-     * Document resource name.
-     *
-     * @var string
-     */
-    public $document;
-    /**
-     * Page identifier.
-     *
-     * @var string
-     */
-    public $pageIdentifier;
-    /**
-     * The structured JSON metadata for the document. It is populated from the
-     * struct data from the Chunk in search result.
-     *
-     * @var array[]
-     */
-    public $structData;
-    /**
-     * Title.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * URI for the document.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Document resource name.
-     *
-     * @param string $document
-     */
-    public function setDocument($document)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaAnswerReferenceChunkInfoDocumentMetadata extends \Google\Model
     {
+        /**
+         * Document resource name.
+         *
+         * @var string
+         */
+        public $document;
+        /**
+         * Page identifier.
+         *
+         * @var string
+         */
+        public $pageIdentifier;
+        /**
+         * The structured JSON metadata for the document. It is populated from the
+         * struct data from the Chunk in search result.
+         *
+         * @var array[]
+         */
+        public $structData;
+        /**
+         * Title.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * URI for the document.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Document resource name.
+         *
+         * @param string $document
+         */
+        public function setDocument($document)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDocument()
+        {
+        }
+        /**
+         * Page identifier.
+         *
+         * @param string $pageIdentifier
+         */
+        public function setPageIdentifier($pageIdentifier)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPageIdentifier()
+        {
+        }
+        /**
+         * The structured JSON metadata for the document. It is populated from the
+         * struct data from the Chunk in search result.
+         *
+         * @param array[] $structData
+         */
+        public function setStructData($structData)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getStructData()
+        {
+        }
+        /**
+         * Title.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
+        /**
+         * URI for the document.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaAnswerReferenceChunkInfoDocumentMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocument()
-    {
-    }
-    /**
-     * Page identifier.
-     *
-     * @param string $pageIdentifier
-     */
-    public function setPageIdentifier($pageIdentifier)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPageIdentifier()
-    {
-    }
-    /**
-     * The structured JSON metadata for the document. It is populated from the
-     * struct data from the Chunk in search result.
-     *
-     * @param array[] $structData
-     */
-    public function setStructData($structData)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getStructData()
-    {
-    }
-    /**
-     * Title.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
-    {
-    }
-    /**
-     * URI for the document.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaAnswerReferenceChunkInfoDocumentMetadata extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaAnswerReferenceChunkInfoDocumentMetadata
     {
     }
 }

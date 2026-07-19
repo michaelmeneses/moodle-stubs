@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ProductViewItemIssueItemIssueType extends \Google\Model
-{
-    /**
-     * Canonical attribute name for attribute-specific issues.
-     *
-     * @var string
-     */
-    public $canonicalAttribute;
-    /**
-     * Error code of the issue.
-     *
-     * @var string
-     */
-    public $code;
-    /**
-     * Canonical attribute name for attribute-specific issues.
-     *
-     * @param string $canonicalAttribute
-     */
-    public function setCanonicalAttribute($canonicalAttribute)
+namespace Google\Service\ShoppingContent {
+    class ProductViewItemIssueItemIssueType extends \Google\Model
     {
+        /**
+         * Canonical attribute name for attribute-specific issues.
+         *
+         * @var string
+         */
+        public $canonicalAttribute;
+        /**
+         * Error code of the issue.
+         *
+         * @var string
+         */
+        public $code;
+        /**
+         * Canonical attribute name for attribute-specific issues.
+         *
+         * @param string $canonicalAttribute
+         */
+        public function setCanonicalAttribute($canonicalAttribute)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCanonicalAttribute()
+        {
+        }
+        /**
+         * Error code of the issue.
+         *
+         * @param string $code
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCode()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\ProductViewItemIssueItemIssueType registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCanonicalAttribute()
-    {
-    }
-    /**
-     * Error code of the issue.
-     *
-     * @param string $code
-     */
-    public function setCode($code)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCode()
+    class Google_Service_ShoppingContent_ProductViewItemIssueItemIssueType extends \Google\Service\ShoppingContent\ProductViewItemIssueItemIssueType
     {
     }
 }

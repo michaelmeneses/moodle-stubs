@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class EnvironmentVariable extends \Google\Model
-{
-    /**
-     * Key for the environment variable.
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * Value for the environment variable.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Key for the environment variable.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
+namespace Google\Service\Testing {
+    class EnvironmentVariable extends \Google\Model
     {
+        /**
+         * Key for the environment variable.
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * Value for the environment variable.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Key for the environment variable.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * Value for the environment variable.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Testing\EnvironmentVariable registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKey()
-    {
-    }
-    /**
-     * Value for the environment variable.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_Testing_EnvironmentVariable extends \Google\Service\Testing\EnvironmentVariable
     {
     }
 }

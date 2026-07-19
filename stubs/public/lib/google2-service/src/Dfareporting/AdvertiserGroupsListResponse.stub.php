@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class AdvertiserGroupsListResponse extends \Google\Collection
-{
-    protected $collection_key = 'advertiserGroups';
-    protected $advertiserGroupsType = AdvertiserGroup::class;
-    protected $advertiserGroupsDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#advertiserGroupsListResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Pagination token to be used for the next list operation.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Advertiser group collection.
-     *
-     * @param AdvertiserGroup[] $advertiserGroups
-     */
-    public function setAdvertiserGroups($advertiserGroups)
+namespace Google\Service\Dfareporting {
+    class AdvertiserGroupsListResponse extends \Google\Collection
     {
+        protected $collection_key = 'advertiserGroups';
+        protected $advertiserGroupsType = AdvertiserGroup::class;
+        protected $advertiserGroupsDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#advertiserGroupsListResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Pagination token to be used for the next list operation.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Advertiser group collection.
+         *
+         * @param AdvertiserGroup[] $advertiserGroups
+         */
+        public function setAdvertiserGroups($advertiserGroups)
+        {
+        }
+        /**
+         * @return AdvertiserGroup[]
+         */
+        public function getAdvertiserGroups()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#advertiserGroupsListResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Pagination token to be used for the next list operation.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AdvertiserGroup[]
+     * Runtime class alias of \Google\Service\Dfareporting\AdvertiserGroupsListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAdvertiserGroups()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#advertiserGroupsListResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Pagination token to be used for the next list operation.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Dfareporting_AdvertiserGroupsListResponse extends \Google\Service\Dfareporting\AdvertiserGroupsListResponse
     {
     }
 }

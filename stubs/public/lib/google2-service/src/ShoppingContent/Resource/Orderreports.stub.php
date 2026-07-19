@@ -21,60 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent\Resource;
-
-/**
- * The "orderreports" collection of methods.
- * Typical usage is:
- *  <code>
- *   $contentService = new Google\Service\ShoppingContent(...);
- *   $orderreports = $contentService->orderreports;
- *  </code>
- */
-class Orderreports extends \Google\Service\Resource
-{
+namespace Google\Service\ShoppingContent\Resource {
+    use Google\Service\ShoppingContent\OrderreportsListDisbursementsResponse;
+    use Google\Service\ShoppingContent\OrderreportsListTransactionsResponse;
     /**
-     * Retrieves a report for disbursements from your Merchant Center account.
-     * (orderreports.listdisbursements)
-     *
-     * @param string $merchantId The ID of the account that manages the order. This
-     * cannot be a multi-client account.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string disbursementEndDate The last date which disbursements
-     * occurred. In ISO 8601 format. Default: current date.
-     * @opt_param string disbursementStartDate The first date which disbursements
-     * occurred. In ISO 8601 format.
-     * @opt_param string maxResults The maximum number of disbursements to return in
-     * the response, used for paging.
-     * @opt_param string pageToken The token returned by the previous request.
-     * @return OrderreportsListDisbursementsResponse
-     * @throws \Google\Service\Exception
+     * The "orderreports" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $contentService = new Google\Service\ShoppingContent(...);
+     *   $orderreports = $contentService->orderreports;
+     *  </code>
      */
-    public function listdisbursements($merchantId, $optParams = [])
+    class Orderreports extends \Google\Service\Resource
     {
+        /**
+         * Retrieves a report for disbursements from your Merchant Center account.
+         * (orderreports.listdisbursements)
+         *
+         * @param string $merchantId The ID of the account that manages the order. This
+         * cannot be a multi-client account.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string disbursementEndDate The last date which disbursements
+         * occurred. In ISO 8601 format. Default: current date.
+         * @opt_param string disbursementStartDate The first date which disbursements
+         * occurred. In ISO 8601 format.
+         * @opt_param string maxResults The maximum number of disbursements to return in
+         * the response, used for paging.
+         * @opt_param string pageToken The token returned by the previous request.
+         * @return OrderreportsListDisbursementsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listdisbursements($merchantId, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a list of transactions for a disbursement from your Merchant Center
+         * account. (orderreports.listtransactions)
+         *
+         * @param string $merchantId The ID of the account that manages the order. This
+         * cannot be a multi-client account.
+         * @param string $disbursementId The Google-provided ID of the disbursement
+         * (found in Wallet).
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string maxResults The maximum number of disbursements to return in
+         * the response, used for paging.
+         * @opt_param string pageToken The token returned by the previous request.
+         * @opt_param string transactionEndDate The last date in which transaction
+         * occurred. In ISO 8601 format. Default: current date.
+         * @opt_param string transactionStartDate The first date in which transaction
+         * occurred. In ISO 8601 format.
+         * @return OrderreportsListTransactionsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listtransactions($merchantId, $disbursementId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves a list of transactions for a disbursement from your Merchant Center
-     * account. (orderreports.listtransactions)
-     *
-     * @param string $merchantId The ID of the account that manages the order. This
-     * cannot be a multi-client account.
-     * @param string $disbursementId The Google-provided ID of the disbursement
-     * (found in Wallet).
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string maxResults The maximum number of disbursements to return in
-     * the response, used for paging.
-     * @opt_param string pageToken The token returned by the previous request.
-     * @opt_param string transactionEndDate The last date in which transaction
-     * occurred. In ISO 8601 format. Default: current date.
-     * @opt_param string transactionStartDate The first date in which transaction
-     * occurred. In ISO 8601 format.
-     * @return OrderreportsListTransactionsResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ShoppingContent\Resource\Orderreports registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listtransactions($merchantId, $disbursementId, $optParams = [])
+    class Google_Service_ShoppingContent_Resource_Orderreports extends \Google\Service\ShoppingContent\Resource\Orderreports
     {
     }
 }

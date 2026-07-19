@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class RegionalMigDistributionPolicy extends \Google\Collection
-{
-    protected $collection_key = 'zones';
-    /**
-     * @var int
-     */
-    public $targetShape;
-    protected $zonesType = ZoneConfiguration::class;
-    protected $zonesDataType = 'array';
-    /**
-     * @param int
-     */
-    public function setTargetShape($targetShape)
+namespace Google\Service\WorkloadManager {
+    class RegionalMigDistributionPolicy extends \Google\Collection
     {
+        protected $collection_key = 'zones';
+        /**
+         * @var int
+         */
+        public $targetShape;
+        protected $zonesType = ZoneConfiguration::class;
+        protected $zonesDataType = 'array';
+        /**
+         * @param int
+         */
+        public function setTargetShape($targetShape)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTargetShape()
+        {
+        }
+        /**
+         * @param ZoneConfiguration[]
+         */
+        public function setZones($zones)
+        {
+        }
+        /**
+         * @return ZoneConfiguration[]
+         */
+        public function getZones()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\WorkloadManager\RegionalMigDistributionPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTargetShape()
-    {
-    }
-    /**
-     * @param ZoneConfiguration[]
-     */
-    public function setZones($zones)
-    {
-    }
-    /**
-     * @return ZoneConfiguration[]
-     */
-    public function getZones()
+    class Google_Service_WorkloadManager_RegionalMigDistributionPolicy extends \Google\Service\WorkloadManager\RegionalMigDistributionPolicy
     {
     }
 }

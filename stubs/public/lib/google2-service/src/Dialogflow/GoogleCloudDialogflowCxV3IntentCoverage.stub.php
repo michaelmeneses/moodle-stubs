@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3IntentCoverage extends \Google\Collection
-{
-    protected $collection_key = 'intents';
-    /**
-     * The percent of intents in the agent that are covered.
-     *
-     * @var float
-     */
-    public $coverageScore;
-    protected $intentsType = GoogleCloudDialogflowCxV3IntentCoverageIntent::class;
-    protected $intentsDataType = 'array';
-    /**
-     * The percent of intents in the agent that are covered.
-     *
-     * @param float $coverageScore
-     */
-    public function setCoverageScore($coverageScore)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3IntentCoverage extends \Google\Collection
     {
+        protected $collection_key = 'intents';
+        /**
+         * The percent of intents in the agent that are covered.
+         *
+         * @var float
+         */
+        public $coverageScore;
+        protected $intentsType = GoogleCloudDialogflowCxV3IntentCoverageIntent::class;
+        protected $intentsDataType = 'array';
+        /**
+         * The percent of intents in the agent that are covered.
+         *
+         * @param float $coverageScore
+         */
+        public function setCoverageScore($coverageScore)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getCoverageScore()
+        {
+        }
+        /**
+         * The list of Intents present in the agent
+         *
+         * @param GoogleCloudDialogflowCxV3IntentCoverageIntent[] $intents
+         */
+        public function setIntents($intents)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3IntentCoverageIntent[]
+         */
+        public function getIntents()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3IntentCoverage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCoverageScore()
-    {
-    }
-    /**
-     * The list of Intents present in the agent
-     *
-     * @param GoogleCloudDialogflowCxV3IntentCoverageIntent[] $intents
-     */
-    public function setIntents($intents)
-    {
-    }
-    /**
-     * @return GoogleCloudDialogflowCxV3IntentCoverageIntent[]
-     */
-    public function getIntents()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3IntentCoverage extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3IntentCoverage
     {
     }
 }

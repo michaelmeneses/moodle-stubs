@@ -21,129 +21,138 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkManagement;
-
-class LoadBalancerBackend extends \Google\Collection
-{
-    /**
-     * State is unspecified. Default state if not populated.
-     */
-    public const HEALTH_CHECK_FIREWALL_STATE_HEALTH_CHECK_FIREWALL_STATE_UNSPECIFIED = 'HEALTH_CHECK_FIREWALL_STATE_UNSPECIFIED';
-    /**
-     * There are configured firewall rules to allow health check probes to the
-     * backend.
-     */
-    public const HEALTH_CHECK_FIREWALL_STATE_CONFIGURED = 'CONFIGURED';
-    /**
-     * There are firewall rules configured to allow partial health check ranges or
-     * block all health check ranges. If a health check probe is sent from denied
-     * IP ranges, the health check to the backend will fail. Then, the backend
-     * will be marked unhealthy and will not receive traffic sent to the load
-     * balancer.
-     */
-    public const HEALTH_CHECK_FIREWALL_STATE_MISCONFIGURED = 'MISCONFIGURED';
-    protected $collection_key = 'healthCheckBlockingFirewallRules';
-    /**
-     * Name of a Compute Engine instance or network endpoint.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * A list of firewall rule URIs allowing probes from health check IP ranges.
-     *
-     * @var string[]
-     */
-    public $healthCheckAllowingFirewallRules;
-    /**
-     * A list of firewall rule URIs blocking probes from health check IP ranges.
-     *
-     * @var string[]
-     */
-    public $healthCheckBlockingFirewallRules;
-    /**
-     * State of the health check firewall configuration.
-     *
-     * @var string
-     */
-    public $healthCheckFirewallState;
-    /**
-     * URI of a Compute Engine instance or network endpoint.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Name of a Compute Engine instance or network endpoint.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\NetworkManagement {
+    class LoadBalancerBackend extends \Google\Collection
     {
+        /**
+         * State is unspecified. Default state if not populated.
+         */
+        public const HEALTH_CHECK_FIREWALL_STATE_HEALTH_CHECK_FIREWALL_STATE_UNSPECIFIED = 'HEALTH_CHECK_FIREWALL_STATE_UNSPECIFIED';
+        /**
+         * There are configured firewall rules to allow health check probes to the
+         * backend.
+         */
+        public const HEALTH_CHECK_FIREWALL_STATE_CONFIGURED = 'CONFIGURED';
+        /**
+         * There are firewall rules configured to allow partial health check ranges or
+         * block all health check ranges. If a health check probe is sent from denied
+         * IP ranges, the health check to the backend will fail. Then, the backend
+         * will be marked unhealthy and will not receive traffic sent to the load
+         * balancer.
+         */
+        public const HEALTH_CHECK_FIREWALL_STATE_MISCONFIGURED = 'MISCONFIGURED';
+        protected $collection_key = 'healthCheckBlockingFirewallRules';
+        /**
+         * Name of a Compute Engine instance or network endpoint.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * A list of firewall rule URIs allowing probes from health check IP ranges.
+         *
+         * @var string[]
+         */
+        public $healthCheckAllowingFirewallRules;
+        /**
+         * A list of firewall rule URIs blocking probes from health check IP ranges.
+         *
+         * @var string[]
+         */
+        public $healthCheckBlockingFirewallRules;
+        /**
+         * State of the health check firewall configuration.
+         *
+         * @var string
+         */
+        public $healthCheckFirewallState;
+        /**
+         * URI of a Compute Engine instance or network endpoint.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Name of a Compute Engine instance or network endpoint.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * A list of firewall rule URIs allowing probes from health check IP ranges.
+         *
+         * @param string[] $healthCheckAllowingFirewallRules
+         */
+        public function setHealthCheckAllowingFirewallRules($healthCheckAllowingFirewallRules)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getHealthCheckAllowingFirewallRules()
+        {
+        }
+        /**
+         * A list of firewall rule URIs blocking probes from health check IP ranges.
+         *
+         * @param string[] $healthCheckBlockingFirewallRules
+         */
+        public function setHealthCheckBlockingFirewallRules($healthCheckBlockingFirewallRules)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getHealthCheckBlockingFirewallRules()
+        {
+        }
+        /**
+         * State of the health check firewall configuration.
+         *
+         * Accepted values: HEALTH_CHECK_FIREWALL_STATE_UNSPECIFIED, CONFIGURED,
+         * MISCONFIGURED
+         *
+         * @param self::HEALTH_CHECK_FIREWALL_STATE_* $healthCheckFirewallState
+         */
+        public function setHealthCheckFirewallState($healthCheckFirewallState)
+        {
+        }
+        /**
+         * @return self::HEALTH_CHECK_FIREWALL_STATE_*
+         */
+        public function getHealthCheckFirewallState()
+        {
+        }
+        /**
+         * URI of a Compute Engine instance or network endpoint.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkManagement\LoadBalancerBackend registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * A list of firewall rule URIs allowing probes from health check IP ranges.
-     *
-     * @param string[] $healthCheckAllowingFirewallRules
-     */
-    public function setHealthCheckAllowingFirewallRules($healthCheckAllowingFirewallRules)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getHealthCheckAllowingFirewallRules()
-    {
-    }
-    /**
-     * A list of firewall rule URIs blocking probes from health check IP ranges.
-     *
-     * @param string[] $healthCheckBlockingFirewallRules
-     */
-    public function setHealthCheckBlockingFirewallRules($healthCheckBlockingFirewallRules)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getHealthCheckBlockingFirewallRules()
-    {
-    }
-    /**
-     * State of the health check firewall configuration.
-     *
-     * Accepted values: HEALTH_CHECK_FIREWALL_STATE_UNSPECIFIED, CONFIGURED,
-     * MISCONFIGURED
-     *
-     * @param self::HEALTH_CHECK_FIREWALL_STATE_* $healthCheckFirewallState
-     */
-    public function setHealthCheckFirewallState($healthCheckFirewallState)
-    {
-    }
-    /**
-     * @return self::HEALTH_CHECK_FIREWALL_STATE_*
-     */
-    public function getHealthCheckFirewallState()
-    {
-    }
-    /**
-     * URI of a Compute Engine instance or network endpoint.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_NetworkManagement_LoadBalancerBackend extends \Google\Service\NetworkManagement\LoadBalancerBackend
     {
     }
 }

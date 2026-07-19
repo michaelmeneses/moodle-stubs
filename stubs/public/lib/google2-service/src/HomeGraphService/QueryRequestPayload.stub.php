@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HomeGraphService;
-
-class QueryRequestPayload extends \Google\Collection
-{
-    protected $collection_key = 'devices';
-    protected $devicesType = AgentDeviceId::class;
-    protected $devicesDataType = 'array';
-    /**
-     * Third-party device IDs for which to get the device states.
-     *
-     * @param AgentDeviceId[] $devices
-     */
-    public function setDevices($devices)
+namespace Google\Service\HomeGraphService {
+    class QueryRequestPayload extends \Google\Collection
     {
+        protected $collection_key = 'devices';
+        protected $devicesType = AgentDeviceId::class;
+        protected $devicesDataType = 'array';
+        /**
+         * Third-party device IDs for which to get the device states.
+         *
+         * @param AgentDeviceId[] $devices
+         */
+        public function setDevices($devices)
+        {
+        }
+        /**
+         * @return AgentDeviceId[]
+         */
+        public function getDevices()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AgentDeviceId[]
+     * Runtime class alias of \Google\Service\HomeGraphService\QueryRequestPayload registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDevices()
+    class Google_Service_HomeGraphService_QueryRequestPayload extends \Google\Service\HomeGraphService\QueryRequestPayload
     {
     }
 }

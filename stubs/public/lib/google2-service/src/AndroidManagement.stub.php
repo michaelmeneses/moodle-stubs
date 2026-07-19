@@ -21,46 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for AndroidManagement (v1).
- *
- * <p>
- * The Android Management API provides remote enterprise management of Android
- * devices and apps.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://developers.google.com/android/management" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class AndroidManagement extends \Google\Service
-{
-    /** Manage Android devices and apps for your customers. */
-    const ANDROIDMANAGEMENT = "https://www.googleapis.com/auth/androidmanagement";
-    public $enterprises;
-    public $enterprises_applications;
-    public $enterprises_devices;
-    public $enterprises_devices_operations;
-    public $enterprises_enrollmentTokens;
-    public $enterprises_migrationTokens;
-    public $enterprises_policies;
-    public $enterprises_webApps;
-    public $enterprises_webTokens;
-    public $provisioningInfo;
-    public $signupUrls;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the AndroidManagement service.
+     * Service definition for AndroidManagement (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * The Android Management API provides remote enterprise management of Android
+     * devices and apps.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://developers.google.com/android/management" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class AndroidManagement extends \Google\Service
+    {
+        /** Manage Android devices and apps for your customers. */
+        const ANDROIDMANAGEMENT = "https://www.googleapis.com/auth/androidmanagement";
+        public $enterprises;
+        public $enterprises_applications;
+        public $enterprises_devices;
+        public $enterprises_devices_operations;
+        public $enterprises_enrollmentTokens;
+        public $enterprises_migrationTokens;
+        public $enterprises_policies;
+        public $enterprises_webApps;
+        public $enterprises_webTokens;
+        public $provisioningInfo;
+        public $signupUrls;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the AndroidManagement service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AndroidManagement registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AndroidManagement extends \Google\Service\AndroidManagement
     {
     }
 }

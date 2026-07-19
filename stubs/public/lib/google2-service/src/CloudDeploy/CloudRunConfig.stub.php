@@ -21,101 +21,110 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class CloudRunConfig extends \Google\Collection
-{
-    protected $collection_key = 'stableRevisionTags';
-    /**
-     * Optional. Whether Cloud Deploy should update the traffic stanza in a Cloud
-     * Run Service on the user's behalf to facilitate traffic splitting. This is
-     * required to be true for CanaryDeployments, but optional for
-     * CustomCanaryDeployments.
-     *
-     * @var bool
-     */
-    public $automaticTrafficControl;
-    /**
-     * Optional. A list of tags that are added to the canary revision while the
-     * canary phase is in progress.
-     *
-     * @var string[]
-     */
-    public $canaryRevisionTags;
-    /**
-     * Optional. A list of tags that are added to the prior revision while the
-     * canary phase is in progress.
-     *
-     * @var string[]
-     */
-    public $priorRevisionTags;
-    /**
-     * Optional. A list of tags that are added to the final stable revision when
-     * the stable phase is applied.
-     *
-     * @var string[]
-     */
-    public $stableRevisionTags;
-    /**
-     * Optional. Whether Cloud Deploy should update the traffic stanza in a Cloud
-     * Run Service on the user's behalf to facilitate traffic splitting. This is
-     * required to be true for CanaryDeployments, but optional for
-     * CustomCanaryDeployments.
-     *
-     * @param bool $automaticTrafficControl
-     */
-    public function setAutomaticTrafficControl($automaticTrafficControl)
+namespace Google\Service\CloudDeploy {
+    class CloudRunConfig extends \Google\Collection
     {
+        protected $collection_key = 'stableRevisionTags';
+        /**
+         * Optional. Whether Cloud Deploy should update the traffic stanza in a Cloud
+         * Run Service on the user's behalf to facilitate traffic splitting. This is
+         * required to be true for CanaryDeployments, but optional for
+         * CustomCanaryDeployments.
+         *
+         * @var bool
+         */
+        public $automaticTrafficControl;
+        /**
+         * Optional. A list of tags that are added to the canary revision while the
+         * canary phase is in progress.
+         *
+         * @var string[]
+         */
+        public $canaryRevisionTags;
+        /**
+         * Optional. A list of tags that are added to the prior revision while the
+         * canary phase is in progress.
+         *
+         * @var string[]
+         */
+        public $priorRevisionTags;
+        /**
+         * Optional. A list of tags that are added to the final stable revision when
+         * the stable phase is applied.
+         *
+         * @var string[]
+         */
+        public $stableRevisionTags;
+        /**
+         * Optional. Whether Cloud Deploy should update the traffic stanza in a Cloud
+         * Run Service on the user's behalf to facilitate traffic splitting. This is
+         * required to be true for CanaryDeployments, but optional for
+         * CustomCanaryDeployments.
+         *
+         * @param bool $automaticTrafficControl
+         */
+        public function setAutomaticTrafficControl($automaticTrafficControl)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAutomaticTrafficControl()
+        {
+        }
+        /**
+         * Optional. A list of tags that are added to the canary revision while the
+         * canary phase is in progress.
+         *
+         * @param string[] $canaryRevisionTags
+         */
+        public function setCanaryRevisionTags($canaryRevisionTags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCanaryRevisionTags()
+        {
+        }
+        /**
+         * Optional. A list of tags that are added to the prior revision while the
+         * canary phase is in progress.
+         *
+         * @param string[] $priorRevisionTags
+         */
+        public function setPriorRevisionTags($priorRevisionTags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPriorRevisionTags()
+        {
+        }
+        /**
+         * Optional. A list of tags that are added to the final stable revision when
+         * the stable phase is applied.
+         *
+         * @param string[] $stableRevisionTags
+         */
+        public function setStableRevisionTags($stableRevisionTags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getStableRevisionTags()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudDeploy\CloudRunConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAutomaticTrafficControl()
-    {
-    }
-    /**
-     * Optional. A list of tags that are added to the canary revision while the
-     * canary phase is in progress.
-     *
-     * @param string[] $canaryRevisionTags
-     */
-    public function setCanaryRevisionTags($canaryRevisionTags)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getCanaryRevisionTags()
-    {
-    }
-    /**
-     * Optional. A list of tags that are added to the prior revision while the
-     * canary phase is in progress.
-     *
-     * @param string[] $priorRevisionTags
-     */
-    public function setPriorRevisionTags($priorRevisionTags)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPriorRevisionTags()
-    {
-    }
-    /**
-     * Optional. A list of tags that are added to the final stable revision when
-     * the stable phase is applied.
-     *
-     * @param string[] $stableRevisionTags
-     */
-    public function setStableRevisionTags($stableRevisionTags)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getStableRevisionTags()
+    class Google_Service_CloudDeploy_CloudRunConfig extends \Google\Service\CloudDeploy\CloudRunConfig
     {
     }
 }

@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ListEndpointAttachmentsResponse extends \Google\Collection
-{
-    protected $collection_key = 'endpointAttachments';
-    protected $endpointAttachmentsType = GoogleCloudApigeeV1EndpointAttachment::class;
-    protected $endpointAttachmentsDataType = 'array';
-    /**
-     * Page token that you can include in an `ListEndpointAttachments` request to
-     * retrieve the next page. If omitted, no subsequent pages exist.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Endpoint attachments in the specified organization.
-     *
-     * @param GoogleCloudApigeeV1EndpointAttachment[] $endpointAttachments
-     */
-    public function setEndpointAttachments($endpointAttachments)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ListEndpointAttachmentsResponse extends \Google\Collection
     {
+        protected $collection_key = 'endpointAttachments';
+        protected $endpointAttachmentsType = GoogleCloudApigeeV1EndpointAttachment::class;
+        protected $endpointAttachmentsDataType = 'array';
+        /**
+         * Page token that you can include in an `ListEndpointAttachments` request to
+         * retrieve the next page. If omitted, no subsequent pages exist.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Endpoint attachments in the specified organization.
+         *
+         * @param GoogleCloudApigeeV1EndpointAttachment[] $endpointAttachments
+         */
+        public function setEndpointAttachments($endpointAttachments)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1EndpointAttachment[]
+         */
+        public function getEndpointAttachments()
+        {
+        }
+        /**
+         * Page token that you can include in an `ListEndpointAttachments` request to
+         * retrieve the next page. If omitted, no subsequent pages exist.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1EndpointAttachment[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ListEndpointAttachmentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndpointAttachments()
-    {
-    }
-    /**
-     * Page token that you can include in an `ListEndpointAttachments` request to
-     * retrieve the next page. If omitted, no subsequent pages exist.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ListEndpointAttachmentsResponse extends \Google\Service\Apigee\GoogleCloudApigeeV1ListEndpointAttachmentsResponse
     {
     }
 }

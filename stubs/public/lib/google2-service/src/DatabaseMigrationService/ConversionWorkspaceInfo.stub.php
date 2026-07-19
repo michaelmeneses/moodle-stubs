@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class ConversionWorkspaceInfo extends \Google\Model
-{
-    /**
-     * The commit ID of the conversion workspace.
-     *
-     * @var string
-     */
-    public $commitId;
-    /**
-     * The resource name (URI) of the conversion workspace.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The commit ID of the conversion workspace.
-     *
-     * @param string $commitId
-     */
-    public function setCommitId($commitId)
+namespace Google\Service\DatabaseMigrationService {
+    class ConversionWorkspaceInfo extends \Google\Model
     {
+        /**
+         * The commit ID of the conversion workspace.
+         *
+         * @var string
+         */
+        public $commitId;
+        /**
+         * The resource name (URI) of the conversion workspace.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The commit ID of the conversion workspace.
+         *
+         * @param string $commitId
+         */
+        public function setCommitId($commitId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCommitId()
+        {
+        }
+        /**
+         * The resource name (URI) of the conversion workspace.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\ConversionWorkspaceInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommitId()
-    {
-    }
-    /**
-     * The resource name (URI) of the conversion workspace.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_DatabaseMigrationService_ConversionWorkspaceInfo extends \Google\Service\DatabaseMigrationService\ConversionWorkspaceInfo
     {
     }
 }

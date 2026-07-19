@@ -21,138 +21,147 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1FaqAnswerData extends \Google\Model
-{
-    /**
-     * The piece of text from the `source` knowledge base document.
-     *
-     * @var string
-     */
-    public $answer;
-    /**
-     * The system's confidence score that this answer is a good match for this
-     * conversation, ranging from 0.0 (completely uncertain) to 1.0 (completely
-     * certain).
-     *
-     * @var float
-     */
-    public $confidenceScore;
-    /**
-     * Map that contains metadata about the FAQ answer and the document that it
-     * originates from.
-     *
-     * @var string[]
-     */
-    public $metadata;
-    /**
-     * The name of the answer record. Format:
-     * projects/{project}/locations/{location}/answerRecords/{answer_record}
-     *
-     * @var string
-     */
-    public $queryRecord;
-    /**
-     * The corresponding FAQ question.
-     *
-     * @var string
-     */
-    public $question;
-    /**
-     * The knowledge document that this answer was extracted from. Format:
-     * projects/{project}/knowledgeBases/{knowledge_base}/documents/{document}.
-     *
-     * @var string
-     */
-    public $source;
-    /**
-     * The piece of text from the `source` knowledge base document.
-     *
-     * @param string $answer
-     */
-    public function setAnswer($answer)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1FaqAnswerData extends \Google\Model
     {
+        /**
+         * The piece of text from the `source` knowledge base document.
+         *
+         * @var string
+         */
+        public $answer;
+        /**
+         * The system's confidence score that this answer is a good match for this
+         * conversation, ranging from 0.0 (completely uncertain) to 1.0 (completely
+         * certain).
+         *
+         * @var float
+         */
+        public $confidenceScore;
+        /**
+         * Map that contains metadata about the FAQ answer and the document that it
+         * originates from.
+         *
+         * @var string[]
+         */
+        public $metadata;
+        /**
+         * The name of the answer record. Format:
+         * projects/{project}/locations/{location}/answerRecords/{answer_record}
+         *
+         * @var string
+         */
+        public $queryRecord;
+        /**
+         * The corresponding FAQ question.
+         *
+         * @var string
+         */
+        public $question;
+        /**
+         * The knowledge document that this answer was extracted from. Format:
+         * projects/{project}/knowledgeBases/{knowledge_base}/documents/{document}.
+         *
+         * @var string
+         */
+        public $source;
+        /**
+         * The piece of text from the `source` knowledge base document.
+         *
+         * @param string $answer
+         */
+        public function setAnswer($answer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnswer()
+        {
+        }
+        /**
+         * The system's confidence score that this answer is a good match for this
+         * conversation, ranging from 0.0 (completely uncertain) to 1.0 (completely
+         * certain).
+         *
+         * @param float $confidenceScore
+         */
+        public function setConfidenceScore($confidenceScore)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidenceScore()
+        {
+        }
+        /**
+         * Map that contains metadata about the FAQ answer and the document that it
+         * originates from.
+         *
+         * @param string[] $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * The name of the answer record. Format:
+         * projects/{project}/locations/{location}/answerRecords/{answer_record}
+         *
+         * @param string $queryRecord
+         */
+        public function setQueryRecord($queryRecord)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQueryRecord()
+        {
+        }
+        /**
+         * The corresponding FAQ question.
+         *
+         * @param string $question
+         */
+        public function setQuestion($question)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuestion()
+        {
+        }
+        /**
+         * The knowledge document that this answer was extracted from. Format:
+         * projects/{project}/knowledgeBases/{knowledge_base}/documents/{document}.
+         *
+         * @param string $source
+         */
+        public function setSource($source)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1FaqAnswerData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnswer()
-    {
-    }
-    /**
-     * The system's confidence score that this answer is a good match for this
-     * conversation, ranging from 0.0 (completely uncertain) to 1.0 (completely
-     * certain).
-     *
-     * @param float $confidenceScore
-     */
-    public function setConfidenceScore($confidenceScore)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getConfidenceScore()
-    {
-    }
-    /**
-     * Map that contains metadata about the FAQ answer and the document that it
-     * originates from.
-     *
-     * @param string[] $metadata
-     */
-    public function setMetadata($metadata)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * The name of the answer record. Format:
-     * projects/{project}/locations/{location}/answerRecords/{answer_record}
-     *
-     * @param string $queryRecord
-     */
-    public function setQueryRecord($queryRecord)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQueryRecord()
-    {
-    }
-    /**
-     * The corresponding FAQ question.
-     *
-     * @param string $question
-     */
-    public function setQuestion($question)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuestion()
-    {
-    }
-    /**
-     * The knowledge document that this answer was extracted from. Format:
-     * projects/{project}/knowledgeBases/{knowledge_base}/documents/{document}.
-     *
-     * @param string $source
-     */
-    public function setSource($source)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSource()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1FaqAnswerData extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1FaqAnswerData
     {
     }
 }

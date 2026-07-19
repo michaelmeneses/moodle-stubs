@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Shared\Escher;
 
+use PhpOffice\PhpSpreadsheet\Exception as SpreadsheetException;
 class DggContainer
 {
     /**

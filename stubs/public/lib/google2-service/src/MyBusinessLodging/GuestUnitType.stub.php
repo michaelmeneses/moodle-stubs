@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MyBusinessLodging;
-
-class GuestUnitType extends \Google\Collection
-{
-    protected $collection_key = 'codes';
-    /**
-     * Required. Unit or room code identifiers for a single GuestUnitType. Each
-     * code must be unique within a Lodging instance.
-     *
-     * @var string[]
-     */
-    public $codes;
-    protected $featuresType = GuestUnitFeatures::class;
-    protected $featuresDataType = '';
-    /**
-     * Required. Short, English label or name of the GuestUnitType. Target <50
-     * chars.
-     *
-     * @var string
-     */
-    public $label;
-    /**
-     * Required. Unit or room code identifiers for a single GuestUnitType. Each
-     * code must be unique within a Lodging instance.
-     *
-     * @param string[] $codes
-     */
-    public function setCodes($codes)
+namespace Google\Service\MyBusinessLodging {
+    class GuestUnitType extends \Google\Collection
     {
+        protected $collection_key = 'codes';
+        /**
+         * Required. Unit or room code identifiers for a single GuestUnitType. Each
+         * code must be unique within a Lodging instance.
+         *
+         * @var string[]
+         */
+        public $codes;
+        protected $featuresType = GuestUnitFeatures::class;
+        protected $featuresDataType = '';
+        /**
+         * Required. Short, English label or name of the GuestUnitType. Target <50
+         * chars.
+         *
+         * @var string
+         */
+        public $label;
+        /**
+         * Required. Unit or room code identifiers for a single GuestUnitType. Each
+         * code must be unique within a Lodging instance.
+         *
+         * @param string[] $codes
+         */
+        public function setCodes($codes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCodes()
+        {
+        }
+        /**
+         * Features and available amenities of the GuestUnitType.
+         *
+         * @param GuestUnitFeatures $features
+         */
+        public function setFeatures(GuestUnitFeatures $features)
+        {
+        }
+        /**
+         * @return GuestUnitFeatures
+         */
+        public function getFeatures()
+        {
+        }
+        /**
+         * Required. Short, English label or name of the GuestUnitType. Target <50
+         * chars.
+         *
+         * @param string $label
+         */
+        public function setLabel($label)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\MyBusinessLodging\GuestUnitType registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCodes()
-    {
-    }
-    /**
-     * Features and available amenities of the GuestUnitType.
-     *
-     * @param GuestUnitFeatures $features
-     */
-    public function setFeatures(GuestUnitFeatures $features)
-    {
-    }
-    /**
-     * @return GuestUnitFeatures
-     */
-    public function getFeatures()
-    {
-    }
-    /**
-     * Required. Short, English label or name of the GuestUnitType. Target <50
-     * chars.
-     *
-     * @param string $label
-     */
-    public function setLabel($label)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLabel()
+    class Google_Service_MyBusinessLodging_GuestUnitType extends \Google\Service\MyBusinessLodging\GuestUnitType
     {
     }
 }

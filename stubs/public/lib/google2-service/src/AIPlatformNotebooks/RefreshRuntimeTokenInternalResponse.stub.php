@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class RefreshRuntimeTokenInternalResponse extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $accessToken;
-    /**
-     * @var string
-     */
-    public $expireTime;
-    /**
-     * @param string
-     */
-    public function setAccessToken($accessToken)
+namespace Google\Service\AIPlatformNotebooks {
+    class RefreshRuntimeTokenInternalResponse extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $accessToken;
+        /**
+         * @var string
+         */
+        public $expireTime;
+        /**
+         * @param string
+         */
+        public function setAccessToken($accessToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccessToken()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setExpireTime($expireTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpireTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\RefreshRuntimeTokenInternalResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessToken()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setExpireTime($expireTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpireTime()
+    class Google_Service_AIPlatformNotebooks_RefreshRuntimeTokenInternalResponse extends \Google\Service\AIPlatformNotebooks\RefreshRuntimeTokenInternalResponse
     {
     }
 }

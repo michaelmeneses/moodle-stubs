@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0ResourcesAdGroupAudienceView extends \Google\Model
-{
-    /**
-     * Output only. The resource name of the ad group audience view. Ad group
-     * audience view resource names have the form:
-     * `customers/{customer_id}/adGroupAudienceViews/{ad_group_id}~{criterion_id}`
-     *
-     * @var string
-     */
-    public $resourceName;
-    /**
-     * Output only. The resource name of the ad group audience view. Ad group
-     * audience view resource names have the form:
-     * `customers/{customer_id}/adGroupAudienceViews/{ad_group_id}~{criterion_id}`
-     *
-     * @param string $resourceName
-     */
-    public function setResourceName($resourceName)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0ResourcesAdGroupAudienceView extends \Google\Model
     {
+        /**
+         * Output only. The resource name of the ad group audience view. Ad group
+         * audience view resource names have the form:
+         * `customers/{customer_id}/adGroupAudienceViews/{ad_group_id}~{criterion_id}`
+         *
+         * @var string
+         */
+        public $resourceName;
+        /**
+         * Output only. The resource name of the ad group audience view. Ad group
+         * audience view resource names have the form:
+         * `customers/{customer_id}/adGroupAudienceViews/{ad_group_id}~{criterion_id}`
+         *
+         * @param string $resourceName
+         */
+        public function setResourceName($resourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesAdGroupAudienceView registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResourceName()
+    class Google_Service_SA360_GoogleAdsSearchads360V0ResourcesAdGroupAudienceView extends \Google\Service\SA360\GoogleAdsSearchads360V0ResourcesAdGroupAudienceView
     {
     }
 }

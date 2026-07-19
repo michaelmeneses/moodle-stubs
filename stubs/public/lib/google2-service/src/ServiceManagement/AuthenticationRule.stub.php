@@ -21,85 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceManagement;
-
-class AuthenticationRule extends \Google\Collection
-{
-    protected $collection_key = 'requirements';
-    /**
-     * If true, the service accepts API keys without any other credential. This
-     * flag only applies to HTTP and gRPC requests.
-     *
-     * @var bool
-     */
-    public $allowWithoutCredential;
-    protected $oauthType = OAuthRequirements::class;
-    protected $oauthDataType = '';
-    protected $requirementsType = AuthRequirement::class;
-    protected $requirementsDataType = 'array';
-    /**
-     * Selects the methods to which this rule applies. Refer to selector for
-     * syntax details.
-     *
-     * @var string
-     */
-    public $selector;
-    /**
-     * If true, the service accepts API keys without any other credential. This
-     * flag only applies to HTTP and gRPC requests.
-     *
-     * @param bool $allowWithoutCredential
-     */
-    public function setAllowWithoutCredential($allowWithoutCredential)
+namespace Google\Service\ServiceManagement {
+    class AuthenticationRule extends \Google\Collection
     {
+        protected $collection_key = 'requirements';
+        /**
+         * If true, the service accepts API keys without any other credential. This
+         * flag only applies to HTTP and gRPC requests.
+         *
+         * @var bool
+         */
+        public $allowWithoutCredential;
+        protected $oauthType = OAuthRequirements::class;
+        protected $oauthDataType = '';
+        protected $requirementsType = AuthRequirement::class;
+        protected $requirementsDataType = 'array';
+        /**
+         * Selects the methods to which this rule applies. Refer to selector for
+         * syntax details.
+         *
+         * @var string
+         */
+        public $selector;
+        /**
+         * If true, the service accepts API keys without any other credential. This
+         * flag only applies to HTTP and gRPC requests.
+         *
+         * @param bool $allowWithoutCredential
+         */
+        public function setAllowWithoutCredential($allowWithoutCredential)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowWithoutCredential()
+        {
+        }
+        /**
+         * The requirements for OAuth credentials.
+         *
+         * @param OAuthRequirements $oauth
+         */
+        public function setOauth(OAuthRequirements $oauth)
+        {
+        }
+        /**
+         * @return OAuthRequirements
+         */
+        public function getOauth()
+        {
+        }
+        /**
+         * Requirements for additional authentication providers.
+         *
+         * @param AuthRequirement[] $requirements
+         */
+        public function setRequirements($requirements)
+        {
+        }
+        /**
+         * @return AuthRequirement[]
+         */
+        public function getRequirements()
+        {
+        }
+        /**
+         * Selects the methods to which this rule applies. Refer to selector for
+         * syntax details.
+         *
+         * @param string $selector
+         */
+        public function setSelector($selector)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelector()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\ServiceManagement\AuthenticationRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowWithoutCredential()
-    {
-    }
-    /**
-     * The requirements for OAuth credentials.
-     *
-     * @param OAuthRequirements $oauth
-     */
-    public function setOauth(OAuthRequirements $oauth)
-    {
-    }
-    /**
-     * @return OAuthRequirements
-     */
-    public function getOauth()
-    {
-    }
-    /**
-     * Requirements for additional authentication providers.
-     *
-     * @param AuthRequirement[] $requirements
-     */
-    public function setRequirements($requirements)
-    {
-    }
-    /**
-     * @return AuthRequirement[]
-     */
-    public function getRequirements()
-    {
-    }
-    /**
-     * Selects the methods to which this rule applies. Refer to selector for
-     * syntax details.
-     *
-     * @param string $selector
-     */
-    public function setSelector($selector)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelector()
+    class Google_Service_ServiceManagement_AuthenticationRule extends \Google\Service\ServiceManagement\AuthenticationRule
     {
     }
 }

@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class StoredColumnsUsage extends \Google\Collection
-{
-    protected $collection_key = 'storedColumnsUnusedReasons';
-    protected $baseTableType = TableReference::class;
-    protected $baseTableDataType = '';
-    /**
-     * Specifies whether the query was accelerated with stored columns.
-     *
-     * @var bool
-     */
-    public $isQueryAccelerated;
-    protected $storedColumnsUnusedReasonsType = StoredColumnsUnusedReason::class;
-    protected $storedColumnsUnusedReasonsDataType = 'array';
-    /**
-     * Specifies the base table.
-     *
-     * @param TableReference $baseTable
-     */
-    public function setBaseTable(TableReference $baseTable)
+namespace Google\Service\Bigquery {
+    class StoredColumnsUsage extends \Google\Collection
     {
+        protected $collection_key = 'storedColumnsUnusedReasons';
+        protected $baseTableType = TableReference::class;
+        protected $baseTableDataType = '';
+        /**
+         * Specifies whether the query was accelerated with stored columns.
+         *
+         * @var bool
+         */
+        public $isQueryAccelerated;
+        protected $storedColumnsUnusedReasonsType = StoredColumnsUnusedReason::class;
+        protected $storedColumnsUnusedReasonsDataType = 'array';
+        /**
+         * Specifies the base table.
+         *
+         * @param TableReference $baseTable
+         */
+        public function setBaseTable(TableReference $baseTable)
+        {
+        }
+        /**
+         * @return TableReference
+         */
+        public function getBaseTable()
+        {
+        }
+        /**
+         * Specifies whether the query was accelerated with stored columns.
+         *
+         * @param bool $isQueryAccelerated
+         */
+        public function setIsQueryAccelerated($isQueryAccelerated)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsQueryAccelerated()
+        {
+        }
+        /**
+         * If stored columns were not used, explain why.
+         *
+         * @param StoredColumnsUnusedReason[] $storedColumnsUnusedReasons
+         */
+        public function setStoredColumnsUnusedReasons($storedColumnsUnusedReasons)
+        {
+        }
+        /**
+         * @return StoredColumnsUnusedReason[]
+         */
+        public function getStoredColumnsUnusedReasons()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return TableReference
+     * Runtime class alias of \Google\Service\Bigquery\StoredColumnsUsage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBaseTable()
-    {
-    }
-    /**
-     * Specifies whether the query was accelerated with stored columns.
-     *
-     * @param bool $isQueryAccelerated
-     */
-    public function setIsQueryAccelerated($isQueryAccelerated)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsQueryAccelerated()
-    {
-    }
-    /**
-     * If stored columns were not used, explain why.
-     *
-     * @param StoredColumnsUnusedReason[] $storedColumnsUnusedReasons
-     */
-    public function setStoredColumnsUnusedReasons($storedColumnsUnusedReasons)
-    {
-    }
-    /**
-     * @return StoredColumnsUnusedReason[]
-     */
-    public function getStoredColumnsUnusedReasons()
+    class Google_Service_Bigquery_StoredColumnsUsage extends \Google\Service\Bigquery\StoredColumnsUsage
     {
     }
 }

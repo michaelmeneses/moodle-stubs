@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class I18nLanguageListResponse extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    /**
-     * Etag of this resource.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Serialized EventId of the request which produced this response.
-     *
-     * @var string
-     */
-    public $eventId;
-    protected $itemsType = I18nLanguage::class;
-    protected $itemsDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "youtube#i18nLanguageListResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The visitorId identifies the visitor.
-     *
-     * @var string
-     */
-    public $visitorId;
-    /**
-     * Etag of this resource.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\YouTube {
+    class I18nLanguageListResponse extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        /**
+         * Etag of this resource.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Serialized EventId of the request which produced this response.
+         *
+         * @var string
+         */
+        public $eventId;
+        protected $itemsType = I18nLanguage::class;
+        protected $itemsDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "youtube#i18nLanguageListResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The visitorId identifies the visitor.
+         *
+         * @var string
+         */
+        public $visitorId;
+        /**
+         * Etag of this resource.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Serialized EventId of the request which produced this response.
+         *
+         * @param string $eventId
+         */
+        public function setEventId($eventId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEventId()
+        {
+        }
+        /**
+         * A list of supported i18n languages. In this map, the i18n language ID is
+         * the map key, and its value is the corresponding i18nLanguage resource.
+         *
+         * @param I18nLanguage[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return I18nLanguage[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "youtube#i18nLanguageListResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The visitorId identifies the visitor.
+         *
+         * @param string $visitorId
+         */
+        public function setVisitorId($visitorId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVisitorId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\I18nLanguageListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * Serialized EventId of the request which produced this response.
-     *
-     * @param string $eventId
-     */
-    public function setEventId($eventId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEventId()
-    {
-    }
-    /**
-     * A list of supported i18n languages. In this map, the i18n language ID is
-     * the map key, and its value is the corresponding i18nLanguage resource.
-     *
-     * @param I18nLanguage[] $items
-     */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return I18nLanguage[]
-     */
-    public function getItems()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "youtube#i18nLanguageListResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The visitorId identifies the visitor.
-     *
-     * @param string $visitorId
-     */
-    public function setVisitorId($visitorId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVisitorId()
+    class Google_Service_YouTube_I18nLanguageListResponse extends \Google\Service\YouTube\I18nLanguageListResponse
     {
     }
 }

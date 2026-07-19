@@ -21,107 +21,116 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Css;
-
-class CssProductStatus extends \Google\Collection
-{
-    protected $collection_key = 'itemLevelIssues';
-    /**
-     * Date on which the item has been created, in [ISO
-     * 8601](http://en.wikipedia.org/wiki/ISO_8601) format.
-     *
-     * @var string
-     */
-    public $creationDate;
-    protected $destinationStatusesType = DestinationStatus::class;
-    protected $destinationStatusesDataType = 'array';
-    /**
-     * Date on which the item expires, in [ISO
-     * 8601](http://en.wikipedia.org/wiki/ISO_8601) format.
-     *
-     * @var string
-     */
-    public $googleExpirationDate;
-    protected $itemLevelIssuesType = ItemLevelIssue::class;
-    protected $itemLevelIssuesDataType = 'array';
-    /**
-     * Date on which the item has been last updated, in [ISO
-     * 8601](http://en.wikipedia.org/wiki/ISO_8601) format.
-     *
-     * @var string
-     */
-    public $lastUpdateDate;
-    /**
-     * Date on which the item has been created, in [ISO
-     * 8601](http://en.wikipedia.org/wiki/ISO_8601) format.
-     *
-     * @param string $creationDate
-     */
-    public function setCreationDate($creationDate)
+namespace Google\Service\Css {
+    class CssProductStatus extends \Google\Collection
     {
+        protected $collection_key = 'itemLevelIssues';
+        /**
+         * Date on which the item has been created, in [ISO
+         * 8601](http://en.wikipedia.org/wiki/ISO_8601) format.
+         *
+         * @var string
+         */
+        public $creationDate;
+        protected $destinationStatusesType = DestinationStatus::class;
+        protected $destinationStatusesDataType = 'array';
+        /**
+         * Date on which the item expires, in [ISO
+         * 8601](http://en.wikipedia.org/wiki/ISO_8601) format.
+         *
+         * @var string
+         */
+        public $googleExpirationDate;
+        protected $itemLevelIssuesType = ItemLevelIssue::class;
+        protected $itemLevelIssuesDataType = 'array';
+        /**
+         * Date on which the item has been last updated, in [ISO
+         * 8601](http://en.wikipedia.org/wiki/ISO_8601) format.
+         *
+         * @var string
+         */
+        public $lastUpdateDate;
+        /**
+         * Date on which the item has been created, in [ISO
+         * 8601](http://en.wikipedia.org/wiki/ISO_8601) format.
+         *
+         * @param string $creationDate
+         */
+        public function setCreationDate($creationDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreationDate()
+        {
+        }
+        /**
+         * The intended destinations for the product.
+         *
+         * @param DestinationStatus[] $destinationStatuses
+         */
+        public function setDestinationStatuses($destinationStatuses)
+        {
+        }
+        /**
+         * @return DestinationStatus[]
+         */
+        public function getDestinationStatuses()
+        {
+        }
+        /**
+         * Date on which the item expires, in [ISO
+         * 8601](http://en.wikipedia.org/wiki/ISO_8601) format.
+         *
+         * @param string $googleExpirationDate
+         */
+        public function setGoogleExpirationDate($googleExpirationDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGoogleExpirationDate()
+        {
+        }
+        /**
+         * A list of all issues associated with the product.
+         *
+         * @param ItemLevelIssue[] $itemLevelIssues
+         */
+        public function setItemLevelIssues($itemLevelIssues)
+        {
+        }
+        /**
+         * @return ItemLevelIssue[]
+         */
+        public function getItemLevelIssues()
+        {
+        }
+        /**
+         * Date on which the item has been last updated, in [ISO
+         * 8601](http://en.wikipedia.org/wiki/ISO_8601) format.
+         *
+         * @param string $lastUpdateDate
+         */
+        public function setLastUpdateDate($lastUpdateDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastUpdateDate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Css\CssProductStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreationDate()
-    {
-    }
-    /**
-     * The intended destinations for the product.
-     *
-     * @param DestinationStatus[] $destinationStatuses
-     */
-    public function setDestinationStatuses($destinationStatuses)
-    {
-    }
-    /**
-     * @return DestinationStatus[]
-     */
-    public function getDestinationStatuses()
-    {
-    }
-    /**
-     * Date on which the item expires, in [ISO
-     * 8601](http://en.wikipedia.org/wiki/ISO_8601) format.
-     *
-     * @param string $googleExpirationDate
-     */
-    public function setGoogleExpirationDate($googleExpirationDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGoogleExpirationDate()
-    {
-    }
-    /**
-     * A list of all issues associated with the product.
-     *
-     * @param ItemLevelIssue[] $itemLevelIssues
-     */
-    public function setItemLevelIssues($itemLevelIssues)
-    {
-    }
-    /**
-     * @return ItemLevelIssue[]
-     */
-    public function getItemLevelIssues()
-    {
-    }
-    /**
-     * Date on which the item has been last updated, in [ISO
-     * 8601](http://en.wikipedia.org/wiki/ISO_8601) format.
-     *
-     * @param string $lastUpdateDate
-     */
-    public function setLastUpdateDate($lastUpdateDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastUpdateDate()
+    class Google_Service_Css_CssProductStatus extends \Google\Service\Css\CssProductStatus
     {
     }
 }

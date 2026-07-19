@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class DestinationRoute extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $address;
-    /**
-     * @var string
-     */
-    public $netmask;
-    /**
-     * @param string
-     */
-    public function setAddress($address)
+namespace Google\Service\BeyondCorp {
+    class DestinationRoute extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $address;
+        /**
+         * @var string
+         */
+        public $netmask;
+        /**
+         * @param string
+         */
+        public function setAddress($address)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAddress()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNetmask($netmask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetmask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BeyondCorp\DestinationRoute registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddress()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNetmask($netmask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNetmask()
+    class Google_Service_BeyondCorp_DestinationRoute extends \Google\Service\BeyondCorp\DestinationRoute
     {
     }
 }

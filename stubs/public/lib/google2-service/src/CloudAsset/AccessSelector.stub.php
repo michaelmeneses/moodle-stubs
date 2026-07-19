@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class AccessSelector extends \Google\Collection
-{
-    protected $collection_key = 'roles';
-    /**
-     * Optional. The permissions to appear in result.
-     *
-     * @var string[]
-     */
-    public $permissions;
-    /**
-     * Optional. The roles to appear in result.
-     *
-     * @var string[]
-     */
-    public $roles;
-    /**
-     * Optional. The permissions to appear in result.
-     *
-     * @param string[] $permissions
-     */
-    public function setPermissions($permissions)
+namespace Google\Service\CloudAsset {
+    class AccessSelector extends \Google\Collection
     {
+        protected $collection_key = 'roles';
+        /**
+         * Optional. The permissions to appear in result.
+         *
+         * @var string[]
+         */
+        public $permissions;
+        /**
+         * Optional. The roles to appear in result.
+         *
+         * @var string[]
+         */
+        public $roles;
+        /**
+         * Optional. The permissions to appear in result.
+         *
+         * @param string[] $permissions
+         */
+        public function setPermissions($permissions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPermissions()
+        {
+        }
+        /**
+         * Optional. The roles to appear in result.
+         *
+         * @param string[] $roles
+         */
+        public function setRoles($roles)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRoles()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudAsset\AccessSelector registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPermissions()
-    {
-    }
-    /**
-     * Optional. The roles to appear in result.
-     *
-     * @param string[] $roles
-     */
-    public function setRoles($roles)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRoles()
+    class Google_Service_CloudAsset_AccessSelector extends \Google\Service\CloudAsset\AccessSelector
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class ByteUsage extends \Google\Model
-{
-    /**
-     * Output only. The total capacity value, in bytes.
-     *
-     * @var string
-     */
-    public $capacityBytes;
-    /**
-     * Output only. The current usage value, in bytes.
-     *
-     * @var string
-     */
-    public $usedBytes;
-    /**
-     * Output only. The total capacity value, in bytes.
-     *
-     * @param string $capacityBytes
-     */
-    public function setCapacityBytes($capacityBytes)
+namespace Google\Service\Directory {
+    class ByteUsage extends \Google\Model
     {
+        /**
+         * Output only. The total capacity value, in bytes.
+         *
+         * @var string
+         */
+        public $capacityBytes;
+        /**
+         * Output only. The current usage value, in bytes.
+         *
+         * @var string
+         */
+        public $usedBytes;
+        /**
+         * Output only. The total capacity value, in bytes.
+         *
+         * @param string $capacityBytes
+         */
+        public function setCapacityBytes($capacityBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCapacityBytes()
+        {
+        }
+        /**
+         * Output only. The current usage value, in bytes.
+         *
+         * @param string $usedBytes
+         */
+        public function setUsedBytes($usedBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUsedBytes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\ByteUsage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCapacityBytes()
-    {
-    }
-    /**
-     * Output only. The current usage value, in bytes.
-     *
-     * @param string $usedBytes
-     */
-    public function setUsedBytes($usedBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUsedBytes()
+    class Google_Service_Directory_ByteUsage extends \Google\Service\Directory\ByteUsage
     {
     }
 }

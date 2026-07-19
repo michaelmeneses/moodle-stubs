@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity;
-
-class MirroringLocation extends \Google\Model
-{
-    /**
-     * State not set (this is not a valid state).
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The resource is ready and in sync in the location.
-     */
-    public const STATE_ACTIVE = 'ACTIVE';
-    /**
-     * The resource is out of sync in the location. In most cases, this is a
-     * result of a transient issue within the system (e.g. an inaccessible
-     * location) and the system is expected to recover automatically.
-     */
-    public const STATE_OUT_OF_SYNC = 'OUT_OF_SYNC';
-    /**
-     * Output only. The cloud location, e.g. "us-central1-a" or "asia-south1".
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * Output only. The current state of the association in this location.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. The cloud location, e.g. "us-central1-a" or "asia-south1".
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
+namespace Google\Service\NetworkSecurity {
+    class MirroringLocation extends \Google\Model
     {
+        /**
+         * State not set (this is not a valid state).
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The resource is ready and in sync in the location.
+         */
+        public const STATE_ACTIVE = 'ACTIVE';
+        /**
+         * The resource is out of sync in the location. In most cases, this is a
+         * result of a transient issue within the system (e.g. an inaccessible
+         * location) and the system is expected to recover automatically.
+         */
+        public const STATE_OUT_OF_SYNC = 'OUT_OF_SYNC';
+        /**
+         * Output only. The cloud location, e.g. "us-central1-a" or "asia-south1".
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * Output only. The current state of the association in this location.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. The cloud location, e.g. "us-central1-a" or "asia-south1".
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * Output only. The current state of the association in this location.
+         *
+         * Accepted values: STATE_UNSPECIFIED, ACTIVE, OUT_OF_SYNC
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkSecurity\MirroringLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocation()
-    {
-    }
-    /**
-     * Output only. The current state of the association in this location.
-     *
-     * Accepted values: STATE_UNSPECIFIED, ACTIVE, OUT_OF_SYNC
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_NetworkSecurity_MirroringLocation extends \Google\Service\NetworkSecurity\MirroringLocation
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1BatchUpdateUserLicensesRequest extends \Google\Model
-{
-    /**
-     * Optional. If true, if user licenses removed associated license config, the
-     * user license will be deleted. By default which is false, the user license
-     * will be updated to unassigned state.
-     *
-     * @var bool
-     */
-    public $deleteUnassignedUserLicenses;
-    protected $inlineSourceType = GoogleCloudDiscoveryengineV1BatchUpdateUserLicensesRequestInlineSource::class;
-    protected $inlineSourceDataType = '';
-    /**
-     * Optional. If true, if user licenses removed associated license config, the
-     * user license will be deleted. By default which is false, the user license
-     * will be updated to unassigned state.
-     *
-     * @param bool $deleteUnassignedUserLicenses
-     */
-    public function setDeleteUnassignedUserLicenses($deleteUnassignedUserLicenses)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1BatchUpdateUserLicensesRequest extends \Google\Model
     {
+        /**
+         * Optional. If true, if user licenses removed associated license config, the
+         * user license will be deleted. By default which is false, the user license
+         * will be updated to unassigned state.
+         *
+         * @var bool
+         */
+        public $deleteUnassignedUserLicenses;
+        protected $inlineSourceType = GoogleCloudDiscoveryengineV1BatchUpdateUserLicensesRequestInlineSource::class;
+        protected $inlineSourceDataType = '';
+        /**
+         * Optional. If true, if user licenses removed associated license config, the
+         * user license will be deleted. By default which is false, the user license
+         * will be updated to unassigned state.
+         *
+         * @param bool $deleteUnassignedUserLicenses
+         */
+        public function setDeleteUnassignedUserLicenses($deleteUnassignedUserLicenses)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDeleteUnassignedUserLicenses()
+        {
+        }
+        /**
+         * The inline source for the input content for document embeddings.
+         *
+         * @param GoogleCloudDiscoveryengineV1BatchUpdateUserLicensesRequestInlineSource $inlineSource
+         */
+        public function setInlineSource(GoogleCloudDiscoveryengineV1BatchUpdateUserLicensesRequestInlineSource $inlineSource)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1BatchUpdateUserLicensesRequestInlineSource
+         */
+        public function getInlineSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1BatchUpdateUserLicensesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeleteUnassignedUserLicenses()
-    {
-    }
-    /**
-     * The inline source for the input content for document embeddings.
-     *
-     * @param GoogleCloudDiscoveryengineV1BatchUpdateUserLicensesRequestInlineSource $inlineSource
-     */
-    public function setInlineSource(GoogleCloudDiscoveryengineV1BatchUpdateUserLicensesRequestInlineSource $inlineSource)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1BatchUpdateUserLicensesRequestInlineSource
-     */
-    public function getInlineSource()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1BatchUpdateUserLicensesRequest extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1BatchUpdateUserLicensesRequest
     {
     }
 }

@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Gmail;
-
-class HistoryLabelRemoved extends \Google\Collection
-{
-    protected $collection_key = 'labelIds';
-    /**
-     * Label IDs removed from the message.
-     *
-     * @var string[]
-     */
-    public $labelIds;
-    protected $messageType = Message::class;
-    protected $messageDataType = '';
-    /**
-     * Label IDs removed from the message.
-     *
-     * @param string[] $labelIds
-     */
-    public function setLabelIds($labelIds)
+namespace Google\Service\Gmail {
+    class HistoryLabelRemoved extends \Google\Collection
     {
+        protected $collection_key = 'labelIds';
+        /**
+         * Label IDs removed from the message.
+         *
+         * @var string[]
+         */
+        public $labelIds;
+        protected $messageType = Message::class;
+        protected $messageDataType = '';
+        /**
+         * Label IDs removed from the message.
+         *
+         * @param string[] $labelIds
+         */
+        public function setLabelIds($labelIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabelIds()
+        {
+        }
+        /**
+         * @param Message $message
+         */
+        public function setMessage(Message $message)
+        {
+        }
+        /**
+         * @return Message
+         */
+        public function getMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Gmail\HistoryLabelRemoved registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabelIds()
-    {
-    }
-    /**
-     * @param Message $message
-     */
-    public function setMessage(Message $message)
-    {
-    }
-    /**
-     * @return Message
-     */
-    public function getMessage()
+    class Google_Service_Gmail_HistoryLabelRemoved extends \Google\Service\Gmail\HistoryLabelRemoved
     {
     }
 }

@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp;
-
-class Egress extends \Google\Model
-{
-    protected $peeredVpcType = PeeredVpc::class;
-    protected $peeredVpcDataType = '';
-    /**
-     * @param PeeredVpc
-     */
-    public function setPeeredVpc(PeeredVpc $peeredVpc)
+namespace Google\Service\BeyondCorp {
+    class Egress extends \Google\Model
     {
+        protected $peeredVpcType = PeeredVpc::class;
+        protected $peeredVpcDataType = '';
+        /**
+         * @param PeeredVpc
+         */
+        public function setPeeredVpc(PeeredVpc $peeredVpc)
+        {
+        }
+        /**
+         * @return PeeredVpc
+         */
+        public function getPeeredVpc()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PeeredVpc
+     * Runtime class alias of \Google\Service\BeyondCorp\Egress registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPeeredVpc()
+    class Google_Service_BeyondCorp_Egress extends \Google\Service\BeyondCorp\Egress
     {
     }
 }

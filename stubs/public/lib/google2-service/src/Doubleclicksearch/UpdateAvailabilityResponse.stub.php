@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Doubleclicksearch;
-
-class UpdateAvailabilityResponse extends \Google\Collection
-{
-    protected $collection_key = 'availabilities';
-    protected $availabilitiesType = Availability::class;
-    protected $availabilitiesDataType = 'array';
-    /**
-     * The availabilities being returned.
-     *
-     * @param Availability[] $availabilities
-     */
-    public function setAvailabilities($availabilities)
+namespace Google\Service\Doubleclicksearch {
+    class UpdateAvailabilityResponse extends \Google\Collection
     {
+        protected $collection_key = 'availabilities';
+        protected $availabilitiesType = Availability::class;
+        protected $availabilitiesDataType = 'array';
+        /**
+         * The availabilities being returned.
+         *
+         * @param Availability[] $availabilities
+         */
+        public function setAvailabilities($availabilities)
+        {
+        }
+        /**
+         * @return Availability[]
+         */
+        public function getAvailabilities()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Availability[]
+     * Runtime class alias of \Google\Service\Doubleclicksearch\UpdateAvailabilityResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAvailabilities()
+    class Google_Service_Doubleclicksearch_UpdateAvailabilityResponse extends \Google\Service\Doubleclicksearch\UpdateAvailabilityResponse
     {
     }
 }

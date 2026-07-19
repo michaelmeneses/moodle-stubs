@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class TableRow extends \Google\Collection
-{
-    protected $collection_key = 'tableCells';
-    protected $rowHeightType = Dimension::class;
-    protected $rowHeightDataType = '';
-    protected $tableCellsType = TableCell::class;
-    protected $tableCellsDataType = 'array';
-    protected $tableRowPropertiesType = TableRowProperties::class;
-    protected $tableRowPropertiesDataType = '';
-    /**
-     * Height of a row.
-     *
-     * @param Dimension $rowHeight
-     */
-    public function setRowHeight(Dimension $rowHeight)
+namespace Google\Service\Slides {
+    class TableRow extends \Google\Collection
     {
+        protected $collection_key = 'tableCells';
+        protected $rowHeightType = Dimension::class;
+        protected $rowHeightDataType = '';
+        protected $tableCellsType = TableCell::class;
+        protected $tableCellsDataType = 'array';
+        protected $tableRowPropertiesType = TableRowProperties::class;
+        protected $tableRowPropertiesDataType = '';
+        /**
+         * Height of a row.
+         *
+         * @param Dimension $rowHeight
+         */
+        public function setRowHeight(Dimension $rowHeight)
+        {
+        }
+        /**
+         * @return Dimension
+         */
+        public function getRowHeight()
+        {
+        }
+        /**
+         * Properties and contents of each cell. Cells that span multiple columns are
+         * represented only once with a column_span greater than 1. As a result, the
+         * length of this collection does not always match the number of columns of
+         * the entire table.
+         *
+         * @param TableCell[] $tableCells
+         */
+        public function setTableCells($tableCells)
+        {
+        }
+        /**
+         * @return TableCell[]
+         */
+        public function getTableCells()
+        {
+        }
+        /**
+         * Properties of the row.
+         *
+         * @param TableRowProperties $tableRowProperties
+         */
+        public function setTableRowProperties(TableRowProperties $tableRowProperties)
+        {
+        }
+        /**
+         * @return TableRowProperties
+         */
+        public function getTableRowProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Dimension
+     * Runtime class alias of \Google\Service\Slides\TableRow registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRowHeight()
-    {
-    }
-    /**
-     * Properties and contents of each cell. Cells that span multiple columns are
-     * represented only once with a column_span greater than 1. As a result, the
-     * length of this collection does not always match the number of columns of
-     * the entire table.
-     *
-     * @param TableCell[] $tableCells
-     */
-    public function setTableCells($tableCells)
-    {
-    }
-    /**
-     * @return TableCell[]
-     */
-    public function getTableCells()
-    {
-    }
-    /**
-     * Properties of the row.
-     *
-     * @param TableRowProperties $tableRowProperties
-     */
-    public function setTableRowProperties(TableRowProperties $tableRowProperties)
-    {
-    }
-    /**
-     * @return TableRowProperties
-     */
-    public function getTableRowProperties()
+    class Google_Service_Slides_TableRow extends \Google\Service\Slides\TableRow
     {
     }
 }

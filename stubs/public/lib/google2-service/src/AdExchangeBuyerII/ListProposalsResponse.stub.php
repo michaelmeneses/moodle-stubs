@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class ListProposalsResponse extends \Google\Collection
-{
-    protected $collection_key = 'proposals';
-    /**
-     * Continuation token for fetching the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $proposalsType = Proposal::class;
-    protected $proposalsDataType = 'array';
-    /**
-     * Continuation token for fetching the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\AdExchangeBuyerII {
+    class ListProposalsResponse extends \Google\Collection
     {
+        protected $collection_key = 'proposals';
+        /**
+         * Continuation token for fetching the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $proposalsType = Proposal::class;
+        protected $proposalsDataType = 'array';
+        /**
+         * Continuation token for fetching the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of proposals.
+         *
+         * @param Proposal[] $proposals
+         */
+        public function setProposals($proposals)
+        {
+        }
+        /**
+         * @return Proposal[]
+         */
+        public function getProposals()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\ListProposalsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of proposals.
-     *
-     * @param Proposal[] $proposals
-     */
-    public function setProposals($proposals)
-    {
-    }
-    /**
-     * @return Proposal[]
-     */
-    public function getProposals()
+    class Google_Service_AdExchangeBuyerII_ListProposalsResponse extends \Google\Service\AdExchangeBuyerII\ListProposalsResponse
     {
     }
 }

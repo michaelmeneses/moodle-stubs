@@ -21,150 +21,159 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class LineItem extends \Google\Model
-{
-    protected $listingPriceType = Money::class;
-    protected $listingPriceDataType = '';
-    protected $oneTimePurchaseDetailsType = OneTimePurchaseDetails::class;
-    protected $oneTimePurchaseDetailsDataType = '';
-    protected $paidAppDetailsType = PaidAppDetails::class;
-    protected $paidAppDetailsDataType = '';
-    /**
-     * The purchased product ID or in-app SKU (for example, 'monthly001' or
-     * 'com.some.thing.inapp1').
-     *
-     * @var string
-     */
-    public $productId;
-    /**
-     * Developer-specified name of the product. Displayed in buyer's locale.
-     * Example: coins, monthly subscription, etc.
-     *
-     * @var string
-     */
-    public $productTitle;
-    protected $subscriptionDetailsType = SubscriptionDetails::class;
-    protected $subscriptionDetailsDataType = '';
-    protected $taxType = Money::class;
-    protected $taxDataType = '';
-    protected $totalType = Money::class;
-    protected $totalDataType = '';
-    /**
-     * Item's listed price on Play Store, this may or may not include tax.
-     * Excludes any discounts or promotions.
-     *
-     * @param Money $listingPrice
-     */
-    public function setListingPrice(Money $listingPrice)
+namespace Google\Service\AndroidPublisher {
+    class LineItem extends \Google\Model
     {
+        protected $listingPriceType = Money::class;
+        protected $listingPriceDataType = '';
+        protected $oneTimePurchaseDetailsType = OneTimePurchaseDetails::class;
+        protected $oneTimePurchaseDetailsDataType = '';
+        protected $paidAppDetailsType = PaidAppDetails::class;
+        protected $paidAppDetailsDataType = '';
+        /**
+         * The purchased product ID or in-app SKU (for example, 'monthly001' or
+         * 'com.some.thing.inapp1').
+         *
+         * @var string
+         */
+        public $productId;
+        /**
+         * Developer-specified name of the product. Displayed in buyer's locale.
+         * Example: coins, monthly subscription, etc.
+         *
+         * @var string
+         */
+        public $productTitle;
+        protected $subscriptionDetailsType = SubscriptionDetails::class;
+        protected $subscriptionDetailsDataType = '';
+        protected $taxType = Money::class;
+        protected $taxDataType = '';
+        protected $totalType = Money::class;
+        protected $totalDataType = '';
+        /**
+         * Item's listed price on Play Store, this may or may not include tax.
+         * Excludes any discounts or promotions.
+         *
+         * @param Money $listingPrice
+         */
+        public function setListingPrice(Money $listingPrice)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getListingPrice()
+        {
+        }
+        /**
+         * Details of a one-time purchase.
+         *
+         * @param OneTimePurchaseDetails $oneTimePurchaseDetails
+         */
+        public function setOneTimePurchaseDetails(OneTimePurchaseDetails $oneTimePurchaseDetails)
+        {
+        }
+        /**
+         * @return OneTimePurchaseDetails
+         */
+        public function getOneTimePurchaseDetails()
+        {
+        }
+        /**
+         * Details of a paid app purchase.
+         *
+         * @param PaidAppDetails $paidAppDetails
+         */
+        public function setPaidAppDetails(PaidAppDetails $paidAppDetails)
+        {
+        }
+        /**
+         * @return PaidAppDetails
+         */
+        public function getPaidAppDetails()
+        {
+        }
+        /**
+         * The purchased product ID or in-app SKU (for example, 'monthly001' or
+         * 'com.some.thing.inapp1').
+         *
+         * @param string $productId
+         */
+        public function setProductId($productId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductId()
+        {
+        }
+        /**
+         * Developer-specified name of the product. Displayed in buyer's locale.
+         * Example: coins, monthly subscription, etc.
+         *
+         * @param string $productTitle
+         */
+        public function setProductTitle($productTitle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductTitle()
+        {
+        }
+        /**
+         * Details of a subscription purchase.
+         *
+         * @param SubscriptionDetails $subscriptionDetails
+         */
+        public function setSubscriptionDetails(SubscriptionDetails $subscriptionDetails)
+        {
+        }
+        /**
+         * @return SubscriptionDetails
+         */
+        public function getSubscriptionDetails()
+        {
+        }
+        /**
+         * The tax paid for this line item.
+         *
+         * @param Money $tax
+         */
+        public function setTax(Money $tax)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getTax()
+        {
+        }
+        /**
+         * The total amount paid by the user for this line item, taking into account
+         * discounts and tax.
+         *
+         * @param Money $total
+         */
+        public function setTotal(Money $total)
+        {
+        }
+        /**
+         * @return Money
+         */
+        public function getTotal()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Money
+     * Runtime class alias of \Google\Service\AndroidPublisher\LineItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getListingPrice()
-    {
-    }
-    /**
-     * Details of a one-time purchase.
-     *
-     * @param OneTimePurchaseDetails $oneTimePurchaseDetails
-     */
-    public function setOneTimePurchaseDetails(OneTimePurchaseDetails $oneTimePurchaseDetails)
-    {
-    }
-    /**
-     * @return OneTimePurchaseDetails
-     */
-    public function getOneTimePurchaseDetails()
-    {
-    }
-    /**
-     * Details of a paid app purchase.
-     *
-     * @param PaidAppDetails $paidAppDetails
-     */
-    public function setPaidAppDetails(PaidAppDetails $paidAppDetails)
-    {
-    }
-    /**
-     * @return PaidAppDetails
-     */
-    public function getPaidAppDetails()
-    {
-    }
-    /**
-     * The purchased product ID or in-app SKU (for example, 'monthly001' or
-     * 'com.some.thing.inapp1').
-     *
-     * @param string $productId
-     */
-    public function setProductId($productId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductId()
-    {
-    }
-    /**
-     * Developer-specified name of the product. Displayed in buyer's locale.
-     * Example: coins, monthly subscription, etc.
-     *
-     * @param string $productTitle
-     */
-    public function setProductTitle($productTitle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductTitle()
-    {
-    }
-    /**
-     * Details of a subscription purchase.
-     *
-     * @param SubscriptionDetails $subscriptionDetails
-     */
-    public function setSubscriptionDetails(SubscriptionDetails $subscriptionDetails)
-    {
-    }
-    /**
-     * @return SubscriptionDetails
-     */
-    public function getSubscriptionDetails()
-    {
-    }
-    /**
-     * The tax paid for this line item.
-     *
-     * @param Money $tax
-     */
-    public function setTax(Money $tax)
-    {
-    }
-    /**
-     * @return Money
-     */
-    public function getTax()
-    {
-    }
-    /**
-     * The total amount paid by the user for this line item, taking into account
-     * discounts and tax.
-     *
-     * @param Money $total
-     */
-    public function setTotal(Money $total)
-    {
-    }
-    /**
-     * @return Money
-     */
-    public function getTotal()
+    class Google_Service_AndroidPublisher_LineItem extends \Google\Service\AndroidPublisher\LineItem
     {
     }
 }

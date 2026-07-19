@@ -21,84 +21,93 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta3TrainProcessorVersionMetadataDatasetValidation extends \Google\Collection
-{
-    protected $collection_key = 'documentErrors';
-    /**
-     * The total number of dataset errors.
-     *
-     * @var int
-     */
-    public $datasetErrorCount;
-    protected $datasetErrorsType = GoogleRpcStatus::class;
-    protected $datasetErrorsDataType = 'array';
-    /**
-     * The total number of document errors.
-     *
-     * @var int
-     */
-    public $documentErrorCount;
-    protected $documentErrorsType = GoogleRpcStatus::class;
-    protected $documentErrorsDataType = 'array';
-    /**
-     * The total number of dataset errors.
-     *
-     * @param int $datasetErrorCount
-     */
-    public function setDatasetErrorCount($datasetErrorCount)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta3TrainProcessorVersionMetadataDatasetValidation extends \Google\Collection
     {
+        protected $collection_key = 'documentErrors';
+        /**
+         * The total number of dataset errors.
+         *
+         * @var int
+         */
+        public $datasetErrorCount;
+        protected $datasetErrorsType = GoogleRpcStatus::class;
+        protected $datasetErrorsDataType = 'array';
+        /**
+         * The total number of document errors.
+         *
+         * @var int
+         */
+        public $documentErrorCount;
+        protected $documentErrorsType = GoogleRpcStatus::class;
+        protected $documentErrorsDataType = 'array';
+        /**
+         * The total number of dataset errors.
+         *
+         * @param int $datasetErrorCount
+         */
+        public function setDatasetErrorCount($datasetErrorCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDatasetErrorCount()
+        {
+        }
+        /**
+         * Error information for the dataset as a whole. A maximum of 10 dataset
+         * errors will be returned. A single dataset error is terminal for training.
+         *
+         * @param GoogleRpcStatus[] $datasetErrors
+         */
+        public function setDatasetErrors($datasetErrors)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus[]
+         */
+        public function getDatasetErrors()
+        {
+        }
+        /**
+         * The total number of document errors.
+         *
+         * @param int $documentErrorCount
+         */
+        public function setDocumentErrorCount($documentErrorCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDocumentErrorCount()
+        {
+        }
+        /**
+         * Error information pertaining to specific documents. A maximum of 10
+         * document errors will be returned. Any document with errors will not be used
+         * throughout training.
+         *
+         * @param GoogleRpcStatus[] $documentErrors
+         */
+        public function setDocumentErrors($documentErrors)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus[]
+         */
+        public function getDocumentErrors()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta3TrainProcessorVersionMetadataDatasetValidation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatasetErrorCount()
-    {
-    }
-    /**
-     * Error information for the dataset as a whole. A maximum of 10 dataset
-     * errors will be returned. A single dataset error is terminal for training.
-     *
-     * @param GoogleRpcStatus[] $datasetErrors
-     */
-    public function setDatasetErrors($datasetErrors)
-    {
-    }
-    /**
-     * @return GoogleRpcStatus[]
-     */
-    public function getDatasetErrors()
-    {
-    }
-    /**
-     * The total number of document errors.
-     *
-     * @param int $documentErrorCount
-     */
-    public function setDocumentErrorCount($documentErrorCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getDocumentErrorCount()
-    {
-    }
-    /**
-     * Error information pertaining to specific documents. A maximum of 10
-     * document errors will be returned. Any document with errors will not be used
-     * throughout training.
-     *
-     * @param GoogleRpcStatus[] $documentErrors
-     */
-    public function setDocumentErrors($documentErrors)
-    {
-    }
-    /**
-     * @return GoogleRpcStatus[]
-     */
-    public function getDocumentErrors()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta3TrainProcessorVersionMetadataDatasetValidation extends \Google\Service\Document\GoogleCloudDocumentaiV1beta3TrainProcessorVersionMetadataDatasetValidation
     {
     }
 }

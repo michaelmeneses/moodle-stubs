@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class BatchCreateOccurrencesRequest extends \Google\Collection
-{
-    protected $collection_key = 'occurrences';
-    protected $occurrencesType = Occurrence::class;
-    protected $occurrencesDataType = 'array';
-    /**
-     * Required. The occurrences to create. Max allowed length is 1000.
-     *
-     * @param Occurrence[] $occurrences
-     */
-    public function setOccurrences($occurrences)
+namespace Google\Service\ContainerAnalysis {
+    class BatchCreateOccurrencesRequest extends \Google\Collection
     {
+        protected $collection_key = 'occurrences';
+        protected $occurrencesType = Occurrence::class;
+        protected $occurrencesDataType = 'array';
+        /**
+         * Required. The occurrences to create. Max allowed length is 1000.
+         *
+         * @param Occurrence[] $occurrences
+         */
+        public function setOccurrences($occurrences)
+        {
+        }
+        /**
+         * @return Occurrence[]
+         */
+        public function getOccurrences()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Occurrence[]
+     * Runtime class alias of \Google\Service\ContainerAnalysis\BatchCreateOccurrencesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOccurrences()
+    class Google_Service_ContainerAnalysis_BatchCreateOccurrencesRequest extends \Google\Service\ContainerAnalysis\BatchCreateOccurrencesRequest
     {
     }
 }

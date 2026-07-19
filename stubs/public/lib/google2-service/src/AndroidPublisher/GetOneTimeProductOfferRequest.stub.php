@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class GetOneTimeProductOfferRequest extends \Google\Model
-{
-    /**
-     * Required. The unique offer ID of the offer to get.
-     *
-     * @var string
-     */
-    public $offerId;
-    /**
-     * Required. The parent app (package name) of the offer to get.
-     *
-     * @var string
-     */
-    public $packageName;
-    /**
-     * Required. The parent one-time product (ID) of the offer to get.
-     *
-     * @var string
-     */
-    public $productId;
-    /**
-     * Required. The parent purchase option (ID) of the offer to get.
-     *
-     * @var string
-     */
-    public $purchaseOptionId;
-    /**
-     * Required. The unique offer ID of the offer to get.
-     *
-     * @param string $offerId
-     */
-    public function setOfferId($offerId)
+namespace Google\Service\AndroidPublisher {
+    class GetOneTimeProductOfferRequest extends \Google\Model
     {
+        /**
+         * Required. The unique offer ID of the offer to get.
+         *
+         * @var string
+         */
+        public $offerId;
+        /**
+         * Required. The parent app (package name) of the offer to get.
+         *
+         * @var string
+         */
+        public $packageName;
+        /**
+         * Required. The parent one-time product (ID) of the offer to get.
+         *
+         * @var string
+         */
+        public $productId;
+        /**
+         * Required. The parent purchase option (ID) of the offer to get.
+         *
+         * @var string
+         */
+        public $purchaseOptionId;
+        /**
+         * Required. The unique offer ID of the offer to get.
+         *
+         * @param string $offerId
+         */
+        public function setOfferId($offerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOfferId()
+        {
+        }
+        /**
+         * Required. The parent app (package name) of the offer to get.
+         *
+         * @param string $packageName
+         */
+        public function setPackageName($packageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackageName()
+        {
+        }
+        /**
+         * Required. The parent one-time product (ID) of the offer to get.
+         *
+         * @param string $productId
+         */
+        public function setProductId($productId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductId()
+        {
+        }
+        /**
+         * Required. The parent purchase option (ID) of the offer to get.
+         *
+         * @param string $purchaseOptionId
+         */
+        public function setPurchaseOptionId($purchaseOptionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPurchaseOptionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\GetOneTimeProductOfferRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOfferId()
-    {
-    }
-    /**
-     * Required. The parent app (package name) of the offer to get.
-     *
-     * @param string $packageName
-     */
-    public function setPackageName($packageName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPackageName()
-    {
-    }
-    /**
-     * Required. The parent one-time product (ID) of the offer to get.
-     *
-     * @param string $productId
-     */
-    public function setProductId($productId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductId()
-    {
-    }
-    /**
-     * Required. The parent purchase option (ID) of the offer to get.
-     *
-     * @param string $purchaseOptionId
-     */
-    public function setPurchaseOptionId($purchaseOptionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPurchaseOptionId()
+    class Google_Service_AndroidPublisher_GetOneTimeProductOfferRequest extends \Google\Service\AndroidPublisher\GetOneTimeProductOfferRequest
     {
     }
 }

@@ -20,34 +20,43 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\test\phpunit;
-
-/**
- * Event mock class.
- *
- * @package    core
- * @category   test
- * @copyright  2013 Frédéric Massart
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-abstract class event_mock extends \core\event\base
-{
+namespace core\test\phpunit {
     /**
-     * Returns event context.
+     * Event mock class.
      *
-     * @param \core\event\base $event event to get context for.
-     * @return \core\context event context
+     * @package    core
+     * @category   test
+     * @copyright  2013 Frédéric Massart
+     * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    public static function testable_get_event_context($event)
+    abstract class event_mock extends \core\event\base
     {
+        /**
+         * Returns event context.
+         *
+         * @param \core\event\base $event event to get context for.
+         * @return \core\context event context
+         */
+        public static function testable_get_event_context($event)
+        {
+        }
+        /**
+         * Sets event context.
+         *
+         * @param \core\event\base $event event to set context for.
+         * @param \core\context $context context to set.
+         */
+        public static function testable_set_event_context($event, $context)
+        {
+        }
     }
+}
+namespace {
     /**
-     * Sets event context.
-     *
-     * @param \core\event\base $event event to set context for.
-     * @param \core\context $context context to set.
+     * Runtime class alias of \core\test\phpunit\event_mock registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public static function testable_set_event_context($event, $context)
+    abstract class phpunit_event_mock extends \core\test\phpunit\event_mock
     {
     }
 }

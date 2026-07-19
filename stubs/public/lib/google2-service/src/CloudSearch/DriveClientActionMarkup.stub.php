@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class DriveClientActionMarkup extends \Google\Model
-{
-    protected $requestFileScopeType = RequestFileScope::class;
-    protected $requestFileScopeDataType = '';
-    /**
-     * @param RequestFileScope
-     */
-    public function setRequestFileScope(RequestFileScope $requestFileScope)
+namespace Google\Service\CloudSearch {
+    class DriveClientActionMarkup extends \Google\Model
     {
+        protected $requestFileScopeType = RequestFileScope::class;
+        protected $requestFileScopeDataType = '';
+        /**
+         * @param RequestFileScope
+         */
+        public function setRequestFileScope(RequestFileScope $requestFileScope)
+        {
+        }
+        /**
+         * @return RequestFileScope
+         */
+        public function getRequestFileScope()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RequestFileScope
+     * Runtime class alias of \Google\Service\CloudSearch\DriveClientActionMarkup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequestFileScope()
+    class Google_Service_CloudSearch_DriveClientActionMarkup extends \Google\Service\CloudSearch\DriveClientActionMarkup
     {
     }
 }

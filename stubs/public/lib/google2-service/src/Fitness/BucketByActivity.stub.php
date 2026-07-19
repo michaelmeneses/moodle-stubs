@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Fitness;
-
-class BucketByActivity extends \Google\Model
-{
-    /**
-     * The default activity stream will be used if a specific activityDataSourceId
-     * is not specified.
-     *
-     * @var string
-     */
-    public $activityDataSourceId;
-    /**
-     * Specifies that only activity segments of duration longer than
-     * minDurationMillis are considered and used as a container for aggregated
-     * data.
-     *
-     * @var string
-     */
-    public $minDurationMillis;
-    /**
-     * The default activity stream will be used if a specific activityDataSourceId
-     * is not specified.
-     *
-     * @param string $activityDataSourceId
-     */
-    public function setActivityDataSourceId($activityDataSourceId)
+namespace Google\Service\Fitness {
+    class BucketByActivity extends \Google\Model
     {
+        /**
+         * The default activity stream will be used if a specific activityDataSourceId
+         * is not specified.
+         *
+         * @var string
+         */
+        public $activityDataSourceId;
+        /**
+         * Specifies that only activity segments of duration longer than
+         * minDurationMillis are considered and used as a container for aggregated
+         * data.
+         *
+         * @var string
+         */
+        public $minDurationMillis;
+        /**
+         * The default activity stream will be used if a specific activityDataSourceId
+         * is not specified.
+         *
+         * @param string $activityDataSourceId
+         */
+        public function setActivityDataSourceId($activityDataSourceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActivityDataSourceId()
+        {
+        }
+        /**
+         * Specifies that only activity segments of duration longer than
+         * minDurationMillis are considered and used as a container for aggregated
+         * data.
+         *
+         * @param string $minDurationMillis
+         */
+        public function setMinDurationMillis($minDurationMillis)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMinDurationMillis()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Fitness\BucketByActivity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActivityDataSourceId()
-    {
-    }
-    /**
-     * Specifies that only activity segments of duration longer than
-     * minDurationMillis are considered and used as a container for aggregated
-     * data.
-     *
-     * @param string $minDurationMillis
-     */
-    public function setMinDurationMillis($minDurationMillis)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMinDurationMillis()
+    class Google_Service_Fitness_BucketByActivity extends \Google\Service\Fitness\BucketByActivity
     {
     }
 }

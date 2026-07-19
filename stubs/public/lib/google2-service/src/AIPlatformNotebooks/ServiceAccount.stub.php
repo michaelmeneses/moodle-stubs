@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class ServiceAccount extends \Google\Collection
-{
-    protected $collection_key = 'scopes';
-    /**
-     * Optional. Email address of the service account.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * Output only. The list of scopes to be made available for this service
-     * account. Set by the CLH to https://www.googleapis.com/auth/cloud-platform
-     *
-     * @var string[]
-     */
-    public $scopes;
-    /**
-     * Optional. Email address of the service account.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
+namespace Google\Service\AIPlatformNotebooks {
+    class ServiceAccount extends \Google\Collection
     {
+        protected $collection_key = 'scopes';
+        /**
+         * Optional. Email address of the service account.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * Output only. The list of scopes to be made available for this service
+         * account. Set by the CLH to https://www.googleapis.com/auth/cloud-platform
+         *
+         * @var string[]
+         */
+        public $scopes;
+        /**
+         * Optional. Email address of the service account.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * Output only. The list of scopes to be made available for this service
+         * account. Set by the CLH to https://www.googleapis.com/auth/cloud-platform
+         *
+         * @param string[] $scopes
+         */
+        public function setScopes($scopes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getScopes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\ServiceAccount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmail()
-    {
-    }
-    /**
-     * Output only. The list of scopes to be made available for this service
-     * account. Set by the CLH to https://www.googleapis.com/auth/cloud-platform
-     *
-     * @param string[] $scopes
-     */
-    public function setScopes($scopes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getScopes()
+    class Google_Service_AIPlatformNotebooks_ServiceAccount extends \Google\Service\AIPlatformNotebooks\ServiceAccount
     {
     }
 }

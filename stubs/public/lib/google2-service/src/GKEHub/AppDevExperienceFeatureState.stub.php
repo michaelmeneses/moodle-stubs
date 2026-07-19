@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class AppDevExperienceFeatureState extends \Google\Model
-{
-    protected $networkingInstallSucceededType = Status::class;
-    protected $networkingInstallSucceededDataType = '';
-    /**
-     * @param Status
-     */
-    public function setNetworkingInstallSucceeded(Status $networkingInstallSucceeded)
+namespace Google\Service\GKEHub {
+    class AppDevExperienceFeatureState extends \Google\Model
     {
+        protected $networkingInstallSucceededType = Status::class;
+        protected $networkingInstallSucceededDataType = '';
+        /**
+         * @param Status
+         */
+        public function setNetworkingInstallSucceeded(Status $networkingInstallSucceeded)
+        {
+        }
+        /**
+         * @return Status
+         */
+        public function getNetworkingInstallSucceeded()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Status
+     * Runtime class alias of \Google\Service\GKEHub\AppDevExperienceFeatureState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNetworkingInstallSucceeded()
+    class Google_Service_GKEHub_AppDevExperienceFeatureState extends \Google\Service\GKEHub\AppDevExperienceFeatureState
     {
     }
 }

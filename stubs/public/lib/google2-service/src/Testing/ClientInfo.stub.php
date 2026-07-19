@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Testing;
-
-class ClientInfo extends \Google\Collection
-{
-    protected $collection_key = 'clientInfoDetails';
-    protected $clientInfoDetailsType = ClientInfoDetail::class;
-    protected $clientInfoDetailsDataType = 'array';
-    /**
-     * Required. Client name, such as gcloud.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The list of detailed information about client.
-     *
-     * @param ClientInfoDetail[] $clientInfoDetails
-     */
-    public function setClientInfoDetails($clientInfoDetails)
+namespace Google\Service\Testing {
+    class ClientInfo extends \Google\Collection
     {
+        protected $collection_key = 'clientInfoDetails';
+        protected $clientInfoDetailsType = ClientInfoDetail::class;
+        protected $clientInfoDetailsDataType = 'array';
+        /**
+         * Required. Client name, such as gcloud.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The list of detailed information about client.
+         *
+         * @param ClientInfoDetail[] $clientInfoDetails
+         */
+        public function setClientInfoDetails($clientInfoDetails)
+        {
+        }
+        /**
+         * @return ClientInfoDetail[]
+         */
+        public function getClientInfoDetails()
+        {
+        }
+        /**
+         * Required. Client name, such as gcloud.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ClientInfoDetail[]
+     * Runtime class alias of \Google\Service\Testing\ClientInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClientInfoDetails()
-    {
-    }
-    /**
-     * Required. Client name, such as gcloud.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Testing_ClientInfo extends \Google\Service\Testing\ClientInfo
     {
     }
 }

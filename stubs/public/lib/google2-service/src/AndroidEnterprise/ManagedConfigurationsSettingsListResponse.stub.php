@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class ManagedConfigurationsSettingsListResponse extends \Google\Collection
-{
-    protected $collection_key = 'managedConfigurationsSettings';
-    protected $managedConfigurationsSettingsType = ManagedConfigurationsSettings::class;
-    protected $managedConfigurationsSettingsDataType = 'array';
-    /**
-     * A managed configurations settings for an app that may be assigned to a
-     * group of users in an enterprise.
-     *
-     * @param ManagedConfigurationsSettings[] $managedConfigurationsSettings
-     */
-    public function setManagedConfigurationsSettings($managedConfigurationsSettings)
+namespace Google\Service\AndroidEnterprise {
+    class ManagedConfigurationsSettingsListResponse extends \Google\Collection
     {
+        protected $collection_key = 'managedConfigurationsSettings';
+        protected $managedConfigurationsSettingsType = ManagedConfigurationsSettings::class;
+        protected $managedConfigurationsSettingsDataType = 'array';
+        /**
+         * A managed configurations settings for an app that may be assigned to a
+         * group of users in an enterprise.
+         *
+         * @param ManagedConfigurationsSettings[] $managedConfigurationsSettings
+         */
+        public function setManagedConfigurationsSettings($managedConfigurationsSettings)
+        {
+        }
+        /**
+         * @return ManagedConfigurationsSettings[]
+         */
+        public function getManagedConfigurationsSettings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ManagedConfigurationsSettings[]
+     * Runtime class alias of \Google\Service\AndroidEnterprise\ManagedConfigurationsSettingsListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getManagedConfigurationsSettings()
+    class Google_Service_AndroidEnterprise_ManagedConfigurationsSettingsListResponse extends \Google\Service\AndroidEnterprise\ManagedConfigurationsSettingsListResponse
     {
     }
 }

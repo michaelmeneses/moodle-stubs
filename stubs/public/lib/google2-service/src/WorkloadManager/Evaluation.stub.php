@@ -21,310 +21,319 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class Evaluation extends \Google\Collection
-{
-    /**
-     * Not specified
-     */
-    public const EVALUATION_TYPE_EVALUATION_TYPE_UNSPECIFIED = 'EVALUATION_TYPE_UNSPECIFIED';
-    /**
-     * SAP best practices
-     */
-    public const EVALUATION_TYPE_SAP = 'SAP';
-    /**
-     * SQL best practices
-     */
-    public const EVALUATION_TYPE_SQL_SERVER = 'SQL_SERVER';
-    /**
-     * Customized best practices
-     */
-    public const EVALUATION_TYPE_OTHER = 'OTHER';
-    /**
-     * SCC IaC (Infra as Code) best practices.
-     *
-     * @deprecated
-     */
-    public const EVALUATION_TYPE_SCC_IAC = 'SCC_IAC';
-    protected $collection_key = 'ruleVersions';
-    protected $bigQueryDestinationType = BigQueryDestination::class;
-    protected $bigQueryDestinationDataType = '';
-    /**
-     * Output only. [Output only] Create time stamp
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * The Cloud Storage bucket name for custom rules.
-     *
-     * @var string
-     */
-    public $customRulesBucket;
-    /**
-     * Description of the Evaluation
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Evaluation type
-     *
-     * @var string
-     */
-    public $evaluationType;
-    /**
-     * Optional. Immutable. Customer-managed encryption key name, in the format
-     * projects/locations/keyRings/cryptoKeys.
-     *
-     * @var string
-     */
-    public $kmsKey;
-    /**
-     * Labels as key value pairs
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * name of resource names have the form
-     * 'projects/{project_id}/locations/{location_id}/evaluations/{evaluation_id}'
-     *
-     * @var string
-     */
-    public $name;
-    protected $resourceFilterType = ResourceFilter::class;
-    protected $resourceFilterDataType = '';
-    protected $resourceStatusType = ResourceStatus::class;
-    protected $resourceStatusDataType = '';
-    /**
-     * the name of the rule
-     *
-     * @var string[]
-     */
-    public $ruleNames;
-    /**
-     * Output only. [Output only] The updated rule ids if exist.
-     *
-     * @var string[]
-     */
-    public $ruleVersions;
-    /**
-     * crontab format schedule for scheduled evaluation, currently only support
-     * the following schedule: "0 1 * * *", "0 6 * * *", "0 12 * * *", "0 0 1 *
-     * *", "0 0 7 * *",
-     *
-     * @var string
-     */
-    public $schedule;
-    /**
-     * Output only. [Output only] Update time stamp
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Optional. BigQuery destination
-     *
-     * @param BigQueryDestination $bigQueryDestination
-     */
-    public function setBigQueryDestination(BigQueryDestination $bigQueryDestination)
+namespace Google\Service\WorkloadManager {
+    class Evaluation extends \Google\Collection
     {
+        /**
+         * Not specified
+         */
+        public const EVALUATION_TYPE_EVALUATION_TYPE_UNSPECIFIED = 'EVALUATION_TYPE_UNSPECIFIED';
+        /**
+         * SAP best practices
+         */
+        public const EVALUATION_TYPE_SAP = 'SAP';
+        /**
+         * SQL best practices
+         */
+        public const EVALUATION_TYPE_SQL_SERVER = 'SQL_SERVER';
+        /**
+         * Customized best practices
+         */
+        public const EVALUATION_TYPE_OTHER = 'OTHER';
+        /**
+         * SCC IaC (Infra as Code) best practices.
+         *
+         * @deprecated
+         */
+        public const EVALUATION_TYPE_SCC_IAC = 'SCC_IAC';
+        protected $collection_key = 'ruleVersions';
+        protected $bigQueryDestinationType = BigQueryDestination::class;
+        protected $bigQueryDestinationDataType = '';
+        /**
+         * Output only. [Output only] Create time stamp
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * The Cloud Storage bucket name for custom rules.
+         *
+         * @var string
+         */
+        public $customRulesBucket;
+        /**
+         * Description of the Evaluation
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Evaluation type
+         *
+         * @var string
+         */
+        public $evaluationType;
+        /**
+         * Optional. Immutable. Customer-managed encryption key name, in the format
+         * projects/locations/keyRings/cryptoKeys.
+         *
+         * @var string
+         */
+        public $kmsKey;
+        /**
+         * Labels as key value pairs
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * name of resource names have the form
+         * 'projects/{project_id}/locations/{location_id}/evaluations/{evaluation_id}'
+         *
+         * @var string
+         */
+        public $name;
+        protected $resourceFilterType = ResourceFilter::class;
+        protected $resourceFilterDataType = '';
+        protected $resourceStatusType = ResourceStatus::class;
+        protected $resourceStatusDataType = '';
+        /**
+         * the name of the rule
+         *
+         * @var string[]
+         */
+        public $ruleNames;
+        /**
+         * Output only. [Output only] The updated rule ids if exist.
+         *
+         * @var string[]
+         */
+        public $ruleVersions;
+        /**
+         * crontab format schedule for scheduled evaluation, currently only support
+         * the following schedule: "0 1 * * *", "0 6 * * *", "0 12 * * *", "0 0 1 *
+         * *", "0 0 7 * *",
+         *
+         * @var string
+         */
+        public $schedule;
+        /**
+         * Output only. [Output only] Update time stamp
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Optional. BigQuery destination
+         *
+         * @param BigQueryDestination $bigQueryDestination
+         */
+        public function setBigQueryDestination(BigQueryDestination $bigQueryDestination)
+        {
+        }
+        /**
+         * @return BigQueryDestination
+         */
+        public function getBigQueryDestination()
+        {
+        }
+        /**
+         * Output only. [Output only] Create time stamp
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The Cloud Storage bucket name for custom rules.
+         *
+         * @param string $customRulesBucket
+         */
+        public function setCustomRulesBucket($customRulesBucket)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCustomRulesBucket()
+        {
+        }
+        /**
+         * Description of the Evaluation
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Evaluation type
+         *
+         * Accepted values: EVALUATION_TYPE_UNSPECIFIED, SAP, SQL_SERVER, OTHER,
+         * SCC_IAC
+         *
+         * @param self::EVALUATION_TYPE_* $evaluationType
+         */
+        public function setEvaluationType($evaluationType)
+        {
+        }
+        /**
+         * @return self::EVALUATION_TYPE_*
+         */
+        public function getEvaluationType()
+        {
+        }
+        /**
+         * Optional. Immutable. Customer-managed encryption key name, in the format
+         * projects/locations/keyRings/cryptoKeys.
+         *
+         * @param string $kmsKey
+         */
+        public function setKmsKey($kmsKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKmsKey()
+        {
+        }
+        /**
+         * Labels as key value pairs
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * name of resource names have the form
+         * 'projects/{project_id}/locations/{location_id}/evaluations/{evaluation_id}'
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * annotations as key value pairs
+         *
+         * @param ResourceFilter $resourceFilter
+         */
+        public function setResourceFilter(ResourceFilter $resourceFilter)
+        {
+        }
+        /**
+         * @return ResourceFilter
+         */
+        public function getResourceFilter()
+        {
+        }
+        /**
+         * Output only. [Output only] The updated rule ids if exist.
+         *
+         * @param ResourceStatus $resourceStatus
+         */
+        public function setResourceStatus(ResourceStatus $resourceStatus)
+        {
+        }
+        /**
+         * @return ResourceStatus
+         */
+        public function getResourceStatus()
+        {
+        }
+        /**
+         * the name of the rule
+         *
+         * @param string[] $ruleNames
+         */
+        public function setRuleNames($ruleNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRuleNames()
+        {
+        }
+        /**
+         * Output only. [Output only] The updated rule ids if exist.
+         *
+         * @param string[] $ruleVersions
+         */
+        public function setRuleVersions($ruleVersions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRuleVersions()
+        {
+        }
+        /**
+         * crontab format schedule for scheduled evaluation, currently only support
+         * the following schedule: "0 1 * * *", "0 6 * * *", "0 12 * * *", "0 0 1 *
+         * *", "0 0 7 * *",
+         *
+         * @param string $schedule
+         */
+        public function setSchedule($schedule)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSchedule()
+        {
+        }
+        /**
+         * Output only. [Output only] Update time stamp
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BigQueryDestination
+     * Runtime class alias of \Google\Service\WorkloadManager\Evaluation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBigQueryDestination()
-    {
-    }
-    /**
-     * Output only. [Output only] Create time stamp
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The Cloud Storage bucket name for custom rules.
-     *
-     * @param string $customRulesBucket
-     */
-    public function setCustomRulesBucket($customRulesBucket)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCustomRulesBucket()
-    {
-    }
-    /**
-     * Description of the Evaluation
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * Evaluation type
-     *
-     * Accepted values: EVALUATION_TYPE_UNSPECIFIED, SAP, SQL_SERVER, OTHER,
-     * SCC_IAC
-     *
-     * @param self::EVALUATION_TYPE_* $evaluationType
-     */
-    public function setEvaluationType($evaluationType)
-    {
-    }
-    /**
-     * @return self::EVALUATION_TYPE_*
-     */
-    public function getEvaluationType()
-    {
-    }
-    /**
-     * Optional. Immutable. Customer-managed encryption key name, in the format
-     * projects/locations/keyRings/cryptoKeys.
-     *
-     * @param string $kmsKey
-     */
-    public function setKmsKey($kmsKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKmsKey()
-    {
-    }
-    /**
-     * Labels as key value pairs
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * name of resource names have the form
-     * 'projects/{project_id}/locations/{location_id}/evaluations/{evaluation_id}'
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * annotations as key value pairs
-     *
-     * @param ResourceFilter $resourceFilter
-     */
-    public function setResourceFilter(ResourceFilter $resourceFilter)
-    {
-    }
-    /**
-     * @return ResourceFilter
-     */
-    public function getResourceFilter()
-    {
-    }
-    /**
-     * Output only. [Output only] The updated rule ids if exist.
-     *
-     * @param ResourceStatus $resourceStatus
-     */
-    public function setResourceStatus(ResourceStatus $resourceStatus)
-    {
-    }
-    /**
-     * @return ResourceStatus
-     */
-    public function getResourceStatus()
-    {
-    }
-    /**
-     * the name of the rule
-     *
-     * @param string[] $ruleNames
-     */
-    public function setRuleNames($ruleNames)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRuleNames()
-    {
-    }
-    /**
-     * Output only. [Output only] The updated rule ids if exist.
-     *
-     * @param string[] $ruleVersions
-     */
-    public function setRuleVersions($ruleVersions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRuleVersions()
-    {
-    }
-    /**
-     * crontab format schedule for scheduled evaluation, currently only support
-     * the following schedule: "0 1 * * *", "0 6 * * *", "0 12 * * *", "0 0 1 *
-     * *", "0 0 7 * *",
-     *
-     * @param string $schedule
-     */
-    public function setSchedule($schedule)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSchedule()
-    {
-    }
-    /**
-     * Output only. [Output only] Update time stamp
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_WorkloadManager_Evaluation extends \Google\Service\WorkloadManager\Evaluation
     {
     }
 }

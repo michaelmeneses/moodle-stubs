@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SummarizationHelpfulnessInput extends \Google\Model
-{
-    protected $instanceType = GoogleCloudAiplatformV1SummarizationHelpfulnessInstance::class;
-    protected $instanceDataType = '';
-    protected $metricSpecType = GoogleCloudAiplatformV1SummarizationHelpfulnessSpec::class;
-    protected $metricSpecDataType = '';
-    /**
-     * Required. Summarization helpfulness instance.
-     *
-     * @param GoogleCloudAiplatformV1SummarizationHelpfulnessInstance $instance
-     */
-    public function setInstance(GoogleCloudAiplatformV1SummarizationHelpfulnessInstance $instance)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SummarizationHelpfulnessInput extends \Google\Model
     {
+        protected $instanceType = GoogleCloudAiplatformV1SummarizationHelpfulnessInstance::class;
+        protected $instanceDataType = '';
+        protected $metricSpecType = GoogleCloudAiplatformV1SummarizationHelpfulnessSpec::class;
+        protected $metricSpecDataType = '';
+        /**
+         * Required. Summarization helpfulness instance.
+         *
+         * @param GoogleCloudAiplatformV1SummarizationHelpfulnessInstance $instance
+         */
+        public function setInstance(GoogleCloudAiplatformV1SummarizationHelpfulnessInstance $instance)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SummarizationHelpfulnessInstance
+         */
+        public function getInstance()
+        {
+        }
+        /**
+         * Required. Spec for summarization helpfulness score metric.
+         *
+         * @param GoogleCloudAiplatformV1SummarizationHelpfulnessSpec $metricSpec
+         */
+        public function setMetricSpec(GoogleCloudAiplatformV1SummarizationHelpfulnessSpec $metricSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SummarizationHelpfulnessSpec
+         */
+        public function getMetricSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1SummarizationHelpfulnessInstance
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SummarizationHelpfulnessInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstance()
-    {
-    }
-    /**
-     * Required. Spec for summarization helpfulness score metric.
-     *
-     * @param GoogleCloudAiplatformV1SummarizationHelpfulnessSpec $metricSpec
-     */
-    public function setMetricSpec(GoogleCloudAiplatformV1SummarizationHelpfulnessSpec $metricSpec)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1SummarizationHelpfulnessSpec
-     */
-    public function getMetricSpec()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SummarizationHelpfulnessInput extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SummarizationHelpfulnessInput
     {
     }
 }

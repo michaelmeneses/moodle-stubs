@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class DealTermsNonGuaranteedAuctionTerms extends \Google\Collection
-{
-    protected $collection_key = 'reservePricePerBuyers';
-    public $autoOptimizePrivateAuction;
-    protected $reservePricePerBuyersType = PricePerBuyer::class;
-    protected $reservePricePerBuyersDataType = 'array';
-    public function setAutoOptimizePrivateAuction($autoOptimizePrivateAuction)
+namespace Google\Service\AdExchangeBuyer {
+    class DealTermsNonGuaranteedAuctionTerms extends \Google\Collection
     {
+        protected $collection_key = 'reservePricePerBuyers';
+        public $autoOptimizePrivateAuction;
+        protected $reservePricePerBuyersType = PricePerBuyer::class;
+        protected $reservePricePerBuyersDataType = 'array';
+        public function setAutoOptimizePrivateAuction($autoOptimizePrivateAuction)
+        {
+        }
+        public function getAutoOptimizePrivateAuction()
+        {
+        }
+        /**
+         * @param PricePerBuyer[]
+         */
+        public function setReservePricePerBuyers($reservePricePerBuyers)
+        {
+        }
+        /**
+         * @return PricePerBuyer[]
+         */
+        public function getReservePricePerBuyers()
+        {
+        }
     }
-    public function getAutoOptimizePrivateAuction()
-    {
-    }
+}
+namespace {
     /**
-     * @param PricePerBuyer[]
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\DealTermsNonGuaranteedAuctionTerms registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setReservePricePerBuyers($reservePricePerBuyers)
-    {
-    }
-    /**
-     * @return PricePerBuyer[]
-     */
-    public function getReservePricePerBuyers()
+    class Google_Service_AdExchangeBuyer_DealTermsNonGuaranteedAuctionTerms extends \Google\Service\AdExchangeBuyer\DealTermsNonGuaranteedAuctionTerms
     {
     }
 }

@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class IterativeCalculationSettings extends \Google\Model
-{
-    /**
-     * When iterative calculation is enabled and successive results differ by less
-     * than this threshold value, the calculation rounds stop.
-     *
-     * @var 
-     */
-    public $convergenceThreshold;
-    /**
-     * When iterative calculation is enabled, the maximum number of calculation
-     * rounds to perform.
-     *
-     * @var int
-     */
-    public $maxIterations;
-    public function setConvergenceThreshold($convergenceThreshold)
+namespace Google\Service\Sheets {
+    class IterativeCalculationSettings extends \Google\Model
     {
+        /**
+         * When iterative calculation is enabled and successive results differ by less
+         * than this threshold value, the calculation rounds stop.
+         *
+         * @var 
+         */
+        public $convergenceThreshold;
+        /**
+         * When iterative calculation is enabled, the maximum number of calculation
+         * rounds to perform.
+         *
+         * @var int
+         */
+        public $maxIterations;
+        public function setConvergenceThreshold($convergenceThreshold)
+        {
+        }
+        public function getConvergenceThreshold()
+        {
+        }
+        /**
+         * When iterative calculation is enabled, the maximum number of calculation
+         * rounds to perform.
+         *
+         * @param int $maxIterations
+         */
+        public function setMaxIterations($maxIterations)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxIterations()
+        {
+        }
     }
-    public function getConvergenceThreshold()
-    {
-    }
+}
+namespace {
     /**
-     * When iterative calculation is enabled, the maximum number of calculation
-     * rounds to perform.
-     *
-     * @param int $maxIterations
+     * Runtime class alias of \Google\Service\Sheets\IterativeCalculationSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setMaxIterations($maxIterations)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxIterations()
+    class Google_Service_Sheets_IterativeCalculationSettings extends \Google\Service\Sheets\IterativeCalculationSettings
     {
     }
 }

@@ -21,226 +21,235 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Drive;
-
-class Approval extends \Google\Collection
-{
-    /**
-     * Approval status has not been set or was set to an invalid value.
-     */
-    public const STATUS_STATUS_UNSPECIFIED = 'STATUS_UNSPECIFIED';
-    /**
-     * The approval process has started and not finished.
-     */
-    public const STATUS_IN_PROGRESS = 'IN_PROGRESS';
-    /**
-     * The approval process is finished and the target was approved.
-     */
-    public const STATUS_APPROVED = 'APPROVED';
-    /**
-     * The approval process was cancelled before it finished.
-     */
-    public const STATUS_CANCELLED = 'CANCELLED';
-    /**
-     * The approval process is finished and the target was declined.
-     */
-    public const STATUS_DECLINED = 'DECLINED';
-    protected $collection_key = 'reviewerResponses';
-    /**
-     * The Approval ID.
-     *
-     * @var string
-     */
-    public $approvalId;
-    /**
-     * Output only. The time time the approval was completed.
-     *
-     * @var string
-     */
-    public $completeTime;
-    /**
-     * Output only. The time the approval was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * The time that the approval is due.
-     *
-     * @var string
-     */
-    public $dueTime;
-    protected $initiatorType = User::class;
-    protected $initiatorDataType = '';
-    /**
-     * This is always drive#approval.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Output only. The most recent time the approval was modified.
-     *
-     * @var string
-     */
-    public $modifyTime;
-    protected $reviewerResponsesType = ReviewerResponse::class;
-    protected $reviewerResponsesDataType = 'array';
-    /**
-     * Output only. The status of the approval at the time this resource was
-     * requested.
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * Target file id of the approval.
-     *
-     * @var string
-     */
-    public $targetFileId;
-    /**
-     * The Approval ID.
-     *
-     * @param string $approvalId
-     */
-    public function setApprovalId($approvalId)
+namespace Google\Service\Drive {
+    class Approval extends \Google\Collection
     {
+        /**
+         * Approval status has not been set or was set to an invalid value.
+         */
+        public const STATUS_STATUS_UNSPECIFIED = 'STATUS_UNSPECIFIED';
+        /**
+         * The approval process has started and not finished.
+         */
+        public const STATUS_IN_PROGRESS = 'IN_PROGRESS';
+        /**
+         * The approval process is finished and the target was approved.
+         */
+        public const STATUS_APPROVED = 'APPROVED';
+        /**
+         * The approval process was cancelled before it finished.
+         */
+        public const STATUS_CANCELLED = 'CANCELLED';
+        /**
+         * The approval process is finished and the target was declined.
+         */
+        public const STATUS_DECLINED = 'DECLINED';
+        protected $collection_key = 'reviewerResponses';
+        /**
+         * The Approval ID.
+         *
+         * @var string
+         */
+        public $approvalId;
+        /**
+         * Output only. The time time the approval was completed.
+         *
+         * @var string
+         */
+        public $completeTime;
+        /**
+         * Output only. The time the approval was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * The time that the approval is due.
+         *
+         * @var string
+         */
+        public $dueTime;
+        protected $initiatorType = User::class;
+        protected $initiatorDataType = '';
+        /**
+         * This is always drive#approval.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Output only. The most recent time the approval was modified.
+         *
+         * @var string
+         */
+        public $modifyTime;
+        protected $reviewerResponsesType = ReviewerResponse::class;
+        protected $reviewerResponsesDataType = 'array';
+        /**
+         * Output only. The status of the approval at the time this resource was
+         * requested.
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * Target file id of the approval.
+         *
+         * @var string
+         */
+        public $targetFileId;
+        /**
+         * The Approval ID.
+         *
+         * @param string $approvalId
+         */
+        public function setApprovalId($approvalId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApprovalId()
+        {
+        }
+        /**
+         * Output only. The time time the approval was completed.
+         *
+         * @param string $completeTime
+         */
+        public function setCompleteTime($completeTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCompleteTime()
+        {
+        }
+        /**
+         * Output only. The time the approval was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The time that the approval is due.
+         *
+         * @param string $dueTime
+         */
+        public function setDueTime($dueTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDueTime()
+        {
+        }
+        /**
+         * The user that requested the Approval.
+         *
+         * @param User $initiator
+         */
+        public function setInitiator(User $initiator)
+        {
+        }
+        /**
+         * @return User
+         */
+        public function getInitiator()
+        {
+        }
+        /**
+         * This is always drive#approval.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Output only. The most recent time the approval was modified.
+         *
+         * @param string $modifyTime
+         */
+        public function setModifyTime($modifyTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModifyTime()
+        {
+        }
+        /**
+         * The responses made on the Approval by reviewers.
+         *
+         * @param ReviewerResponse[] $reviewerResponses
+         */
+        public function setReviewerResponses($reviewerResponses)
+        {
+        }
+        /**
+         * @return ReviewerResponse[]
+         */
+        public function getReviewerResponses()
+        {
+        }
+        /**
+         * Output only. The status of the approval at the time this resource was
+         * requested.
+         *
+         * Accepted values: STATUS_UNSPECIFIED, IN_PROGRESS, APPROVED, CANCELLED,
+         * DECLINED
+         *
+         * @param self::STATUS_* $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return self::STATUS_*
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * Target file id of the approval.
+         *
+         * @param string $targetFileId
+         */
+        public function setTargetFileId($targetFileId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetFileId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Drive\Approval registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApprovalId()
-    {
-    }
-    /**
-     * Output only. The time time the approval was completed.
-     *
-     * @param string $completeTime
-     */
-    public function setCompleteTime($completeTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCompleteTime()
-    {
-    }
-    /**
-     * Output only. The time the approval was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The time that the approval is due.
-     *
-     * @param string $dueTime
-     */
-    public function setDueTime($dueTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDueTime()
-    {
-    }
-    /**
-     * The user that requested the Approval.
-     *
-     * @param User $initiator
-     */
-    public function setInitiator(User $initiator)
-    {
-    }
-    /**
-     * @return User
-     */
-    public function getInitiator()
-    {
-    }
-    /**
-     * This is always drive#approval.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Output only. The most recent time the approval was modified.
-     *
-     * @param string $modifyTime
-     */
-    public function setModifyTime($modifyTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getModifyTime()
-    {
-    }
-    /**
-     * The responses made on the Approval by reviewers.
-     *
-     * @param ReviewerResponse[] $reviewerResponses
-     */
-    public function setReviewerResponses($reviewerResponses)
-    {
-    }
-    /**
-     * @return ReviewerResponse[]
-     */
-    public function getReviewerResponses()
-    {
-    }
-    /**
-     * Output only. The status of the approval at the time this resource was
-     * requested.
-     *
-     * Accepted values: STATUS_UNSPECIFIED, IN_PROGRESS, APPROVED, CANCELLED,
-     * DECLINED
-     *
-     * @param self::STATUS_* $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return self::STATUS_*
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * Target file id of the approval.
-     *
-     * @param string $targetFileId
-     */
-    public function setTargetFileId($targetFileId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetFileId()
+    class Google_Service_Drive_Approval extends \Google\Service\Drive\Approval
     {
     }
 }

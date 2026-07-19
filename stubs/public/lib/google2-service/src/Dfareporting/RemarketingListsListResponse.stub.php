@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class RemarketingListsListResponse extends \Google\Collection
-{
-    protected $collection_key = 'remarketingLists';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#remarketingListsListResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Pagination token to be used for the next list operation.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $remarketingListsType = RemarketingList::class;
-    protected $remarketingListsDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#remarketingListsListResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Dfareporting {
+    class RemarketingListsListResponse extends \Google\Collection
     {
+        protected $collection_key = 'remarketingLists';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#remarketingListsListResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Pagination token to be used for the next list operation.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $remarketingListsType = RemarketingList::class;
+        protected $remarketingListsDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#remarketingListsListResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Pagination token to be used for the next list operation.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Remarketing list collection.
+         *
+         * @param RemarketingList[] $remarketingLists
+         */
+        public function setRemarketingLists($remarketingLists)
+        {
+        }
+        /**
+         * @return RemarketingList[]
+         */
+        public function getRemarketingLists()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\RemarketingListsListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * Pagination token to be used for the next list operation.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Remarketing list collection.
-     *
-     * @param RemarketingList[] $remarketingLists
-     */
-    public function setRemarketingLists($remarketingLists)
-    {
-    }
-    /**
-     * @return RemarketingList[]
-     */
-    public function getRemarketingLists()
+    class Google_Service_Dfareporting_RemarketingListsListResponse extends \Google\Service\Dfareporting\RemarketingListsListResponse
     {
     }
 }

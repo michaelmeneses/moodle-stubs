@@ -16,6 +16,9 @@
  */
 namespace Monolog\Handler;
 
+use Monolog\Level;
+use Monolog\Formatter\FormatterInterface;
+use Monolog\LogRecord;
 /**
  * Handler to only pass log messages when a certain threshold of number of messages is reached.
  *

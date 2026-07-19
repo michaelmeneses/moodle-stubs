@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1OrganizationProjectMapping extends \Google\Collection
-{
-    protected $collection_key = 'projectIds';
-    /**
-     * Output only. The Google Cloud region where control plane data is located.
-     * For more information, see https://cloud.google.com/about/locations/.
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * Name of the Apigee organization.
-     *
-     * @var string
-     */
-    public $organization;
-    /**
-     * Google Cloud project associated with the Apigee organization
-     *
-     * @var string
-     */
-    public $projectId;
-    /**
-     * DEPRECATED: Use `project_id`. An Apigee Organization is mapped to a single
-     * project.
-     *
-     * @deprecated
-     * @var string[]
-     */
-    public $projectIds;
-    /**
-     * Output only. The Google Cloud region where control plane data is located.
-     * For more information, see https://cloud.google.com/about/locations/.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1OrganizationProjectMapping extends \Google\Collection
     {
+        protected $collection_key = 'projectIds';
+        /**
+         * Output only. The Google Cloud region where control plane data is located.
+         * For more information, see https://cloud.google.com/about/locations/.
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * Name of the Apigee organization.
+         *
+         * @var string
+         */
+        public $organization;
+        /**
+         * Google Cloud project associated with the Apigee organization
+         *
+         * @var string
+         */
+        public $projectId;
+        /**
+         * DEPRECATED: Use `project_id`. An Apigee Organization is mapped to a single
+         * project.
+         *
+         * @deprecated
+         * @var string[]
+         */
+        public $projectIds;
+        /**
+         * Output only. The Google Cloud region where control plane data is located.
+         * For more information, see https://cloud.google.com/about/locations/.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * Name of the Apigee organization.
+         *
+         * @param string $organization
+         */
+        public function setOrganization($organization)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrganization()
+        {
+        }
+        /**
+         * Google Cloud project associated with the Apigee organization
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * DEPRECATED: Use `project_id`. An Apigee Organization is mapped to a single
+         * project.
+         *
+         * @deprecated
+         * @param string[] $projectIds
+         */
+        public function setProjectIds($projectIds)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string[]
+         */
+        public function getProjectIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1OrganizationProjectMapping registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocation()
-    {
-    }
-    /**
-     * Name of the Apigee organization.
-     *
-     * @param string $organization
-     */
-    public function setOrganization($organization)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrganization()
-    {
-    }
-    /**
-     * Google Cloud project associated with the Apigee organization
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
-    {
-    }
-    /**
-     * DEPRECATED: Use `project_id`. An Apigee Organization is mapped to a single
-     * project.
-     *
-     * @deprecated
-     * @param string[] $projectIds
-     */
-    public function setProjectIds($projectIds)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string[]
-     */
-    public function getProjectIds()
+    class Google_Service_Apigee_GoogleCloudApigeeV1OrganizationProjectMapping extends \Google\Service\Apigee\GoogleCloudApigeeV1OrganizationProjectMapping
     {
     }
 }

@@ -21,132 +21,141 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkManagement;
-
-class VpnGatewayInfo extends \Google\Model
-{
-    /**
-     * Name of a VPN gateway.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * IP address of the VPN gateway.
-     *
-     * @var string
-     */
-    public $ipAddress;
-    /**
-     * URI of a Compute Engine network where the VPN gateway is configured.
-     *
-     * @var string
-     */
-    public $networkUri;
-    /**
-     * Name of a Google Cloud region where this VPN gateway is configured.
-     *
-     * @var string
-     */
-    public $region;
-    /**
-     * URI of a VPN gateway.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * A VPN tunnel that is associated with this VPN gateway. There may be
-     * multiple VPN tunnels configured on a VPN gateway, and only the one relevant
-     * to the test is displayed.
-     *
-     * @var string
-     */
-    public $vpnTunnelUri;
-    /**
-     * Name of a VPN gateway.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\NetworkManagement {
+    class VpnGatewayInfo extends \Google\Model
     {
+        /**
+         * Name of a VPN gateway.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * IP address of the VPN gateway.
+         *
+         * @var string
+         */
+        public $ipAddress;
+        /**
+         * URI of a Compute Engine network where the VPN gateway is configured.
+         *
+         * @var string
+         */
+        public $networkUri;
+        /**
+         * Name of a Google Cloud region where this VPN gateway is configured.
+         *
+         * @var string
+         */
+        public $region;
+        /**
+         * URI of a VPN gateway.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * A VPN tunnel that is associated with this VPN gateway. There may be
+         * multiple VPN tunnels configured on a VPN gateway, and only the one relevant
+         * to the test is displayed.
+         *
+         * @var string
+         */
+        public $vpnTunnelUri;
+        /**
+         * Name of a VPN gateway.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * IP address of the VPN gateway.
+         *
+         * @param string $ipAddress
+         */
+        public function setIpAddress($ipAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIpAddress()
+        {
+        }
+        /**
+         * URI of a Compute Engine network where the VPN gateway is configured.
+         *
+         * @param string $networkUri
+         */
+        public function setNetworkUri($networkUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetworkUri()
+        {
+        }
+        /**
+         * Name of a Google Cloud region where this VPN gateway is configured.
+         *
+         * @param string $region
+         */
+        public function setRegion($region)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRegion()
+        {
+        }
+        /**
+         * URI of a VPN gateway.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
+        /**
+         * A VPN tunnel that is associated with this VPN gateway. There may be
+         * multiple VPN tunnels configured on a VPN gateway, and only the one relevant
+         * to the test is displayed.
+         *
+         * @param string $vpnTunnelUri
+         */
+        public function setVpnTunnelUri($vpnTunnelUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVpnTunnelUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkManagement\VpnGatewayInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * IP address of the VPN gateway.
-     *
-     * @param string $ipAddress
-     */
-    public function setIpAddress($ipAddress)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIpAddress()
-    {
-    }
-    /**
-     * URI of a Compute Engine network where the VPN gateway is configured.
-     *
-     * @param string $networkUri
-     */
-    public function setNetworkUri($networkUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNetworkUri()
-    {
-    }
-    /**
-     * Name of a Google Cloud region where this VPN gateway is configured.
-     *
-     * @param string $region
-     */
-    public function setRegion($region)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRegion()
-    {
-    }
-    /**
-     * URI of a VPN gateway.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
-    {
-    }
-    /**
-     * A VPN tunnel that is associated with this VPN gateway. There may be
-     * multiple VPN tunnels configured on a VPN gateway, and only the one relevant
-     * to the test is displayed.
-     *
-     * @param string $vpnTunnelUri
-     */
-    public function setVpnTunnelUri($vpnTunnelUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVpnTunnelUri()
+    class Google_Service_NetworkManagement_VpnGatewayInfo extends \Google\Service\NetworkManagement\VpnGatewayInfo
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Config;
-
-class TerraformVariable extends \Google\Model
-{
-    /**
-     * Optional. Input variable value.
-     *
-     * @var array
-     */
-    public $inputValue;
-    /**
-     * Optional. Input variable value.
-     *
-     * @param array $inputValue
-     */
-    public function setInputValue($inputValue)
+namespace Google\Service\Config {
+    class TerraformVariable extends \Google\Model
     {
+        /**
+         * Optional. Input variable value.
+         *
+         * @var array
+         */
+        public $inputValue;
+        /**
+         * Optional. Input variable value.
+         *
+         * @param array $inputValue
+         */
+        public function setInputValue($inputValue)
+        {
+        }
+        /**
+         * @return array
+         */
+        public function getInputValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array
+     * Runtime class alias of \Google\Service\Config\TerraformVariable registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInputValue()
+    class Google_Service_Config_TerraformVariable extends \Google\Service\Config\TerraformVariable
     {
     }
 }

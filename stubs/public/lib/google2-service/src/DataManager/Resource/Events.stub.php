@@ -21,28 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataManager\Resource;
-
-/**
- * The "events" collection of methods.
- * Typical usage is:
- *  <code>
- *   $datamanagerService = new Google\Service\DataManager(...);
- *   $events = $datamanagerService->events;
- *  </code>
- */
-class Events extends \Google\Service\Resource
-{
+namespace Google\Service\DataManager\Resource {
+    use Google\Service\DataManager\IngestEventsRequest;
+    use Google\Service\DataManager\IngestEventsResponse;
     /**
-     * Uploads a list of Event resources from the provided Destination.
-     * (events.ingest)
-     *
-     * @param IngestEventsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return IngestEventsResponse
-     * @throws \Google\Service\Exception
+     * The "events" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $datamanagerService = new Google\Service\DataManager(...);
+     *   $events = $datamanagerService->events;
+     *  </code>
      */
-    public function ingest(IngestEventsRequest $postBody, $optParams = [])
+    class Events extends \Google\Service\Resource
+    {
+        /**
+         * Uploads a list of Event resources from the provided Destination.
+         * (events.ingest)
+         *
+         * @param IngestEventsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return IngestEventsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function ingest(IngestEventsRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DataManager\Resource\Events registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DataManager_Resource_Events extends \Google\Service\DataManager\Resource\Events
     {
     }
 }

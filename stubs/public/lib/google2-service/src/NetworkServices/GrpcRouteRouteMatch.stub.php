@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkServices;
-
-class GrpcRouteRouteMatch extends \Google\Collection
-{
-    protected $collection_key = 'headers';
-    protected $headersType = GrpcRouteHeaderMatch::class;
-    protected $headersDataType = 'array';
-    protected $methodType = GrpcRouteMethodMatch::class;
-    protected $methodDataType = '';
-    /**
-     * Optional. Specifies a collection of headers to match.
-     *
-     * @param GrpcRouteHeaderMatch[] $headers
-     */
-    public function setHeaders($headers)
+namespace Google\Service\NetworkServices {
+    class GrpcRouteRouteMatch extends \Google\Collection
     {
+        protected $collection_key = 'headers';
+        protected $headersType = GrpcRouteHeaderMatch::class;
+        protected $headersDataType = 'array';
+        protected $methodType = GrpcRouteMethodMatch::class;
+        protected $methodDataType = '';
+        /**
+         * Optional. Specifies a collection of headers to match.
+         *
+         * @param GrpcRouteHeaderMatch[] $headers
+         */
+        public function setHeaders($headers)
+        {
+        }
+        /**
+         * @return GrpcRouteHeaderMatch[]
+         */
+        public function getHeaders()
+        {
+        }
+        /**
+         * Optional. A gRPC method to match against. If this field is empty or
+         * omitted, will match all methods.
+         *
+         * @param GrpcRouteMethodMatch $method
+         */
+        public function setMethod(GrpcRouteMethodMatch $method)
+        {
+        }
+        /**
+         * @return GrpcRouteMethodMatch
+         */
+        public function getMethod()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GrpcRouteHeaderMatch[]
+     * Runtime class alias of \Google\Service\NetworkServices\GrpcRouteRouteMatch registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHeaders()
-    {
-    }
-    /**
-     * Optional. A gRPC method to match against. If this field is empty or
-     * omitted, will match all methods.
-     *
-     * @param GrpcRouteMethodMatch $method
-     */
-    public function setMethod(GrpcRouteMethodMatch $method)
-    {
-    }
-    /**
-     * @return GrpcRouteMethodMatch
-     */
-    public function getMethod()
+    class Google_Service_NetworkServices_GrpcRouteRouteMatch extends \Google\Service\NetworkServices\GrpcRouteRouteMatch
     {
     }
 }

@@ -21,135 +21,144 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class GoogleAppsCardV1Chip extends \Google\Model
-{
-    /**
-     * The alternative text that's used for accessibility. Set descriptive text
-     * that lets users know what the chip does. For example, if a chip opens a
-     * hyperlink, write: "Opens a new browser tab and navigates to the Google Chat
-     * developer documentation at https://developers.google.com/workspace/chat".
-     *
-     * @var string
-     */
-    public $altText;
-    /**
-     * Whether the chip is in an inactive state and ignores user actions. Defaults
-     * to `false`.
-     *
-     * @var bool
-     */
-    public $disabled;
-    /**
-     * Whether the chip is in an active state and responds to user actions.
-     * Defaults to `true`. Deprecated. Use `disabled` instead.
-     *
-     * @deprecated
-     * @var bool
-     */
-    public $enabled;
-    protected $iconType = GoogleAppsCardV1Icon::class;
-    protected $iconDataType = '';
-    /**
-     * The text displayed inside the chip.
-     *
-     * @var string
-     */
-    public $label;
-    protected $onClickType = GoogleAppsCardV1OnClick::class;
-    protected $onClickDataType = '';
-    /**
-     * The alternative text that's used for accessibility. Set descriptive text
-     * that lets users know what the chip does. For example, if a chip opens a
-     * hyperlink, write: "Opens a new browser tab and navigates to the Google Chat
-     * developer documentation at https://developers.google.com/workspace/chat".
-     *
-     * @param string $altText
-     */
-    public function setAltText($altText)
+namespace Google\Service\HangoutsChat {
+    class GoogleAppsCardV1Chip extends \Google\Model
     {
+        /**
+         * The alternative text that's used for accessibility. Set descriptive text
+         * that lets users know what the chip does. For example, if a chip opens a
+         * hyperlink, write: "Opens a new browser tab and navigates to the Google Chat
+         * developer documentation at https://developers.google.com/workspace/chat".
+         *
+         * @var string
+         */
+        public $altText;
+        /**
+         * Whether the chip is in an inactive state and ignores user actions. Defaults
+         * to `false`.
+         *
+         * @var bool
+         */
+        public $disabled;
+        /**
+         * Whether the chip is in an active state and responds to user actions.
+         * Defaults to `true`. Deprecated. Use `disabled` instead.
+         *
+         * @deprecated
+         * @var bool
+         */
+        public $enabled;
+        protected $iconType = GoogleAppsCardV1Icon::class;
+        protected $iconDataType = '';
+        /**
+         * The text displayed inside the chip.
+         *
+         * @var string
+         */
+        public $label;
+        protected $onClickType = GoogleAppsCardV1OnClick::class;
+        protected $onClickDataType = '';
+        /**
+         * The alternative text that's used for accessibility. Set descriptive text
+         * that lets users know what the chip does. For example, if a chip opens a
+         * hyperlink, write: "Opens a new browser tab and navigates to the Google Chat
+         * developer documentation at https://developers.google.com/workspace/chat".
+         *
+         * @param string $altText
+         */
+        public function setAltText($altText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAltText()
+        {
+        }
+        /**
+         * Whether the chip is in an inactive state and ignores user actions. Defaults
+         * to `false`.
+         *
+         * @param bool $disabled
+         */
+        public function setDisabled($disabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisabled()
+        {
+        }
+        /**
+         * Whether the chip is in an active state and responds to user actions.
+         * Defaults to `true`. Deprecated. Use `disabled` instead.
+         *
+         * @deprecated
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @deprecated
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
+        /**
+         * The icon image. If both `icon` and `text` are set, then the icon appears
+         * before the text.
+         *
+         * @param GoogleAppsCardV1Icon $icon
+         */
+        public function setIcon(GoogleAppsCardV1Icon $icon)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1Icon
+         */
+        public function getIcon()
+        {
+        }
+        /**
+         * The text displayed inside the chip.
+         *
+         * @param string $label
+         */
+        public function setLabel($label)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabel()
+        {
+        }
+        /**
+         * Optional. The action to perform when a user clicks the chip, such as
+         * opening a hyperlink or running a custom function.
+         *
+         * @param GoogleAppsCardV1OnClick $onClick
+         */
+        public function setOnClick(GoogleAppsCardV1OnClick $onClick)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1OnClick
+         */
+        public function getOnClick()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\HangoutsChat\GoogleAppsCardV1Chip registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAltText()
-    {
-    }
-    /**
-     * Whether the chip is in an inactive state and ignores user actions. Defaults
-     * to `false`.
-     *
-     * @param bool $disabled
-     */
-    public function setDisabled($disabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDisabled()
-    {
-    }
-    /**
-     * Whether the chip is in an active state and responds to user actions.
-     * Defaults to `true`. Deprecated. Use `disabled` instead.
-     *
-     * @deprecated
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
-    {
-    }
-    /**
-     * @deprecated
-     * @return bool
-     */
-    public function getEnabled()
-    {
-    }
-    /**
-     * The icon image. If both `icon` and `text` are set, then the icon appears
-     * before the text.
-     *
-     * @param GoogleAppsCardV1Icon $icon
-     */
-    public function setIcon(GoogleAppsCardV1Icon $icon)
-    {
-    }
-    /**
-     * @return GoogleAppsCardV1Icon
-     */
-    public function getIcon()
-    {
-    }
-    /**
-     * The text displayed inside the chip.
-     *
-     * @param string $label
-     */
-    public function setLabel($label)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLabel()
-    {
-    }
-    /**
-     * Optional. The action to perform when a user clicks the chip, such as
-     * opening a hyperlink or running a custom function.
-     *
-     * @param GoogleAppsCardV1OnClick $onClick
-     */
-    public function setOnClick(GoogleAppsCardV1OnClick $onClick)
-    {
-    }
-    /**
-     * @return GoogleAppsCardV1OnClick
-     */
-    public function getOnClick()
+    class Google_Service_HangoutsChat_GoogleAppsCardV1Chip extends \Google\Service\HangoutsChat\GoogleAppsCardV1Chip
     {
     }
 }

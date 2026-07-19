@@ -21,81 +21,90 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChecksService;
-
-class AnalyzePrivacyPolicyResponse extends \Google\Collection
-{
-    protected $collection_key = 'sectionAnnotations';
-    protected $dataPurposeAnnotationsType = PolicyPurposeOfUseAnnotation::class;
-    protected $dataPurposeAnnotationsDataType = 'array';
-    protected $dataTypeAnnotationsType = PolicyDataTypeAnnotation::class;
-    protected $dataTypeAnnotationsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $htmlContent;
-    protected $lastUpdatedDateInfoType = LastUpdatedDate::class;
-    protected $lastUpdatedDateInfoDataType = '';
-    protected $sectionAnnotationsType = PolicySectionAnnotation::class;
-    protected $sectionAnnotationsDataType = 'array';
-    /**
-     * @param PolicyPurposeOfUseAnnotation[]
-     */
-    public function setDataPurposeAnnotations($dataPurposeAnnotations)
+namespace Google\Service\ChecksService {
+    class AnalyzePrivacyPolicyResponse extends \Google\Collection
     {
+        protected $collection_key = 'sectionAnnotations';
+        protected $dataPurposeAnnotationsType = PolicyPurposeOfUseAnnotation::class;
+        protected $dataPurposeAnnotationsDataType = 'array';
+        protected $dataTypeAnnotationsType = PolicyDataTypeAnnotation::class;
+        protected $dataTypeAnnotationsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $htmlContent;
+        protected $lastUpdatedDateInfoType = LastUpdatedDate::class;
+        protected $lastUpdatedDateInfoDataType = '';
+        protected $sectionAnnotationsType = PolicySectionAnnotation::class;
+        protected $sectionAnnotationsDataType = 'array';
+        /**
+         * @param PolicyPurposeOfUseAnnotation[]
+         */
+        public function setDataPurposeAnnotations($dataPurposeAnnotations)
+        {
+        }
+        /**
+         * @return PolicyPurposeOfUseAnnotation[]
+         */
+        public function getDataPurposeAnnotations()
+        {
+        }
+        /**
+         * @param PolicyDataTypeAnnotation[]
+         */
+        public function setDataTypeAnnotations($dataTypeAnnotations)
+        {
+        }
+        /**
+         * @return PolicyDataTypeAnnotation[]
+         */
+        public function getDataTypeAnnotations()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setHtmlContent($htmlContent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHtmlContent()
+        {
+        }
+        /**
+         * @param LastUpdatedDate
+         */
+        public function setLastUpdatedDateInfo(LastUpdatedDate $lastUpdatedDateInfo)
+        {
+        }
+        /**
+         * @return LastUpdatedDate
+         */
+        public function getLastUpdatedDateInfo()
+        {
+        }
+        /**
+         * @param PolicySectionAnnotation[]
+         */
+        public function setSectionAnnotations($sectionAnnotations)
+        {
+        }
+        /**
+         * @return PolicySectionAnnotation[]
+         */
+        public function getSectionAnnotations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PolicyPurposeOfUseAnnotation[]
+     * Runtime class alias of \Google\Service\ChecksService\AnalyzePrivacyPolicyResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataPurposeAnnotations()
-    {
-    }
-    /**
-     * @param PolicyDataTypeAnnotation[]
-     */
-    public function setDataTypeAnnotations($dataTypeAnnotations)
-    {
-    }
-    /**
-     * @return PolicyDataTypeAnnotation[]
-     */
-    public function getDataTypeAnnotations()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setHtmlContent($htmlContent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHtmlContent()
-    {
-    }
-    /**
-     * @param LastUpdatedDate
-     */
-    public function setLastUpdatedDateInfo(LastUpdatedDate $lastUpdatedDateInfo)
-    {
-    }
-    /**
-     * @return LastUpdatedDate
-     */
-    public function getLastUpdatedDateInfo()
-    {
-    }
-    /**
-     * @param PolicySectionAnnotation[]
-     */
-    public function setSectionAnnotations($sectionAnnotations)
-    {
-    }
-    /**
-     * @return PolicySectionAnnotation[]
-     */
-    public function getSectionAnnotations()
+    class Google_Service_ChecksService_AnalyzePrivacyPolicyResponse extends \Google\Service\ChecksService\AnalyzePrivacyPolicyResponse
     {
     }
 }

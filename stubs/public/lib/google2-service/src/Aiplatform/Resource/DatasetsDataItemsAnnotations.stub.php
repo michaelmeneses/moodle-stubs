@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform\Resource;
-
-/**
- * The "annotations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $aiplatformService = new Google\Service\Aiplatform(...);
- *   $annotations = $aiplatformService->datasets_dataItems_annotations;
- *  </code>
- */
-class DatasetsDataItemsAnnotations extends \Google\Service\Resource
-{
+namespace Google\Service\Aiplatform\Resource {
+    /**
+     * The "annotations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $aiplatformService = new Google\Service\Aiplatform(...);
+     *   $annotations = $aiplatformService->datasets_dataItems_annotations;
+     *  </code>
+     */
+    class DatasetsDataItemsAnnotations extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Aiplatform\Resource\DatasetsDataItemsAnnotations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Aiplatform_Resource_DatasetsDataItemsAnnotations extends \Google\Service\Aiplatform\Resource\DatasetsDataItemsAnnotations
+    {
+    }
 }

@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class SuggestedNamedStyles extends \Google\Model
-{
-    protected $namedStylesType = NamedStyles::class;
-    protected $namedStylesDataType = '';
-    protected $namedStylesSuggestionStateType = NamedStylesSuggestionState::class;
-    protected $namedStylesSuggestionStateDataType = '';
-    /**
-     * A NamedStyles that only includes the changes made in this suggestion. This
-     * can be used along with the named_styles_suggestion_state to see which
-     * fields have changed and their new values.
-     *
-     * @param NamedStyles $namedStyles
-     */
-    public function setNamedStyles(NamedStyles $namedStyles)
+namespace Google\Service\Docs {
+    class SuggestedNamedStyles extends \Google\Model
     {
+        protected $namedStylesType = NamedStyles::class;
+        protected $namedStylesDataType = '';
+        protected $namedStylesSuggestionStateType = NamedStylesSuggestionState::class;
+        protected $namedStylesSuggestionStateDataType = '';
+        /**
+         * A NamedStyles that only includes the changes made in this suggestion. This
+         * can be used along with the named_styles_suggestion_state to see which
+         * fields have changed and their new values.
+         *
+         * @param NamedStyles $namedStyles
+         */
+        public function setNamedStyles(NamedStyles $namedStyles)
+        {
+        }
+        /**
+         * @return NamedStyles
+         */
+        public function getNamedStyles()
+        {
+        }
+        /**
+         * A mask that indicates which of the fields on the base NamedStyles have been
+         * changed in this suggestion.
+         *
+         * @param NamedStylesSuggestionState $namedStylesSuggestionState
+         */
+        public function setNamedStylesSuggestionState(NamedStylesSuggestionState $namedStylesSuggestionState)
+        {
+        }
+        /**
+         * @return NamedStylesSuggestionState
+         */
+        public function getNamedStylesSuggestionState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return NamedStyles
+     * Runtime class alias of \Google\Service\Docs\SuggestedNamedStyles registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNamedStyles()
-    {
-    }
-    /**
-     * A mask that indicates which of the fields on the base NamedStyles have been
-     * changed in this suggestion.
-     *
-     * @param NamedStylesSuggestionState $namedStylesSuggestionState
-     */
-    public function setNamedStylesSuggestionState(NamedStylesSuggestionState $namedStylesSuggestionState)
-    {
-    }
-    /**
-     * @return NamedStylesSuggestionState
-     */
-    public function getNamedStylesSuggestionState()
+    class Google_Service_Docs_SuggestedNamedStyles extends \Google\Service\Docs\SuggestedNamedStyles
     {
     }
 }

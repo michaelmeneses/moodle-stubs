@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseDynamicLinks;
-
-class DesktopInfo extends \Google\Model
-{
-    /**
-     * Link to open on desktop.
-     *
-     * @var string
-     */
-    public $desktopFallbackLink;
-    /**
-     * Link to open on desktop.
-     *
-     * @param string $desktopFallbackLink
-     */
-    public function setDesktopFallbackLink($desktopFallbackLink)
+namespace Google\Service\FirebaseDynamicLinks {
+    class DesktopInfo extends \Google\Model
     {
+        /**
+         * Link to open on desktop.
+         *
+         * @var string
+         */
+        public $desktopFallbackLink;
+        /**
+         * Link to open on desktop.
+         *
+         * @param string $desktopFallbackLink
+         */
+        public function setDesktopFallbackLink($desktopFallbackLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDesktopFallbackLink()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\FirebaseDynamicLinks\DesktopInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDesktopFallbackLink()
+    class Google_Service_FirebaseDynamicLinks_DesktopInfo extends \Google\Service\FirebaseDynamicLinks\DesktopInfo
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class GoalVisitTimeOnSiteDetails extends \Google\Model
-{
-    /**
-     * Type of comparison. Possible values are LESS_THAN or GREATER_THAN.
-     *
-     * @var string
-     */
-    public $comparisonType;
-    /**
-     * Value used for this comparison.
-     *
-     * @var string
-     */
-    public $comparisonValue;
-    /**
-     * Type of comparison. Possible values are LESS_THAN or GREATER_THAN.
-     *
-     * @param string $comparisonType
-     */
-    public function setComparisonType($comparisonType)
+namespace Google\Service\Analytics {
+    class GoalVisitTimeOnSiteDetails extends \Google\Model
     {
+        /**
+         * Type of comparison. Possible values are LESS_THAN or GREATER_THAN.
+         *
+         * @var string
+         */
+        public $comparisonType;
+        /**
+         * Value used for this comparison.
+         *
+         * @var string
+         */
+        public $comparisonValue;
+        /**
+         * Type of comparison. Possible values are LESS_THAN or GREATER_THAN.
+         *
+         * @param string $comparisonType
+         */
+        public function setComparisonType($comparisonType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getComparisonType()
+        {
+        }
+        /**
+         * Value used for this comparison.
+         *
+         * @param string $comparisonValue
+         */
+        public function setComparisonValue($comparisonValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getComparisonValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Analytics\GoalVisitTimeOnSiteDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getComparisonType()
-    {
-    }
-    /**
-     * Value used for this comparison.
-     *
-     * @param string $comparisonValue
-     */
-    public function setComparisonValue($comparisonValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getComparisonValue()
+    class Google_Service_Analytics_GoalVisitTimeOnSiteDetails extends \Google\Service\Analytics\GoalVisitTimeOnSiteDetails
     {
     }
 }

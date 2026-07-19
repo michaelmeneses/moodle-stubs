@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BackupforGKE;
-
-class ListVolumeRestoresResponse extends \Google\Collection
-{
-    protected $collection_key = 'volumeRestores';
-    /**
-     * A token which may be sent as page_token in a subsequent
-     * `ListVolumeRestores` call to retrieve the next page of results. If this
-     * field is omitted or empty, then there are no more results to return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $volumeRestoresType = VolumeRestore::class;
-    protected $volumeRestoresDataType = 'array';
-    /**
-     * A token which may be sent as page_token in a subsequent
-     * `ListVolumeRestores` call to retrieve the next page of results. If this
-     * field is omitted or empty, then there are no more results to return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\BackupforGKE {
+    class ListVolumeRestoresResponse extends \Google\Collection
     {
+        protected $collection_key = 'volumeRestores';
+        /**
+         * A token which may be sent as page_token in a subsequent
+         * `ListVolumeRestores` call to retrieve the next page of results. If this
+         * field is omitted or empty, then there are no more results to return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $volumeRestoresType = VolumeRestore::class;
+        protected $volumeRestoresDataType = 'array';
+        /**
+         * A token which may be sent as page_token in a subsequent
+         * `ListVolumeRestores` call to retrieve the next page of results. If this
+         * field is omitted or empty, then there are no more results to return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of VolumeRestores matching the given criteria.
+         *
+         * @param VolumeRestore[] $volumeRestores
+         */
+        public function setVolumeRestores($volumeRestores)
+        {
+        }
+        /**
+         * @return VolumeRestore[]
+         */
+        public function getVolumeRestores()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BackupforGKE\ListVolumeRestoresResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of VolumeRestores matching the given criteria.
-     *
-     * @param VolumeRestore[] $volumeRestores
-     */
-    public function setVolumeRestores($volumeRestores)
-    {
-    }
-    /**
-     * @return VolumeRestore[]
-     */
-    public function getVolumeRestores()
+    class Google_Service_BackupforGKE_ListVolumeRestoresResponse extends \Google\Service\BackupforGKE\ListVolumeRestoresResponse
     {
     }
 }

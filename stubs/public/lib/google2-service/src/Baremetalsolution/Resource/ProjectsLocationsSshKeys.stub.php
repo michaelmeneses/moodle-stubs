@@ -21,64 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution\Resource;
-
-/**
- * The "sshKeys" collection of methods.
- * Typical usage is:
- *  <code>
- *   $baremetalsolutionService = new Google\Service\Baremetalsolution(...);
- *   $sshKeys = $baremetalsolutionService->projects_locations_sshKeys;
- *  </code>
- */
-class ProjectsLocationsSshKeys extends \Google\Service\Resource
-{
+namespace Google\Service\Baremetalsolution\Resource {
+    use Google\Service\Baremetalsolution\BaremetalsolutionEmpty;
+    use Google\Service\Baremetalsolution\ListSSHKeysResponse;
+    use Google\Service\Baremetalsolution\SSHKey;
     /**
-     * Register a public SSH key in the specified project for use with the
-     * interactive serial console feature. (sshKeys.create)
-     *
-     * @param string $parent Required. The parent containing the SSH keys.
-     * @param SSHKey $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string sshKeyId Required. The ID to use for the key, which will
-     * become the final component of the key's resource name. This value must match
-     * the regex: [a-zA-Z0-9@.\-_]{1,64}
-     * @return SSHKey
-     * @throws \Google\Service\Exception
+     * The "sshKeys" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $baremetalsolutionService = new Google\Service\Baremetalsolution(...);
+     *   $sshKeys = $baremetalsolutionService->projects_locations_sshKeys;
+     *  </code>
      */
-    public function create($parent, SSHKey $postBody, $optParams = [])
+    class ProjectsLocationsSshKeys extends \Google\Service\Resource
     {
+        /**
+         * Register a public SSH key in the specified project for use with the
+         * interactive serial console feature. (sshKeys.create)
+         *
+         * @param string $parent Required. The parent containing the SSH keys.
+         * @param SSHKey $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string sshKeyId Required. The ID to use for the key, which will
+         * become the final component of the key's resource name. This value must match
+         * the regex: [a-zA-Z0-9@.\-_]{1,64}
+         * @return SSHKey
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, SSHKey $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a public SSH key registered in the specified project.
+         * (sshKeys.delete)
+         *
+         * @param string $name Required. The name of the SSH key to delete. Currently,
+         * the only valid value for the location is "global".
+         * @param array $optParams Optional parameters.
+         * @return BaremetalsolutionEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists the public SSH keys registered for the specified project. These SSH
+         * keys are used only for the interactive serial console feature.
+         * (sshKeys.listProjectsLocationsSshKeys)
+         *
+         * @param string $parent Required. The parent containing the SSH keys.
+         * Currently, the only valid value for the location is "global".
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of items to return.
+         * @opt_param string pageToken The next_page_token value returned from a
+         * previous List request, if any.
+         * @return ListSSHKeysResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsSshKeys($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a public SSH key registered in the specified project.
-     * (sshKeys.delete)
-     *
-     * @param string $name Required. The name of the SSH key to delete. Currently,
-     * the only valid value for the location is "global".
-     * @param array $optParams Optional parameters.
-     * @return BaremetalsolutionEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Baremetalsolution\Resource\ProjectsLocationsSshKeys registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists the public SSH keys registered for the specified project. These SSH
-     * keys are used only for the interactive serial console feature.
-     * (sshKeys.listProjectsLocationsSshKeys)
-     *
-     * @param string $parent Required. The parent containing the SSH keys.
-     * Currently, the only valid value for the location is "global".
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of items to return.
-     * @opt_param string pageToken The next_page_token value returned from a
-     * previous List request, if any.
-     * @return ListSSHKeysResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsSshKeys($parent, $optParams = [])
+    class Google_Service_Baremetalsolution_Resource_ProjectsLocationsSshKeys extends \Google\Service\Baremetalsolution\Resource\ProjectsLocationsSshKeys
     {
     }
 }

@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class ConnectionPoolConfig extends \Google\Collection
-{
-    protected $collection_key = 'flags';
-    /**
-     * Whether managed connection pooling is enabled.
-     *
-     * @var bool
-     */
-    public $connectionPoolingEnabled;
-    protected $flagsType = ConnectionPoolFlags::class;
-    protected $flagsDataType = 'array';
-    /**
-     * Output only. Number of connection poolers.
-     *
-     * @var int
-     */
-    public $poolerCount;
-    /**
-     * Whether managed connection pooling is enabled.
-     *
-     * @param bool $connectionPoolingEnabled
-     */
-    public function setConnectionPoolingEnabled($connectionPoolingEnabled)
+namespace Google\Service\SQLAdmin {
+    class ConnectionPoolConfig extends \Google\Collection
     {
+        protected $collection_key = 'flags';
+        /**
+         * Whether managed connection pooling is enabled.
+         *
+         * @var bool
+         */
+        public $connectionPoolingEnabled;
+        protected $flagsType = ConnectionPoolFlags::class;
+        protected $flagsDataType = 'array';
+        /**
+         * Output only. Number of connection poolers.
+         *
+         * @var int
+         */
+        public $poolerCount;
+        /**
+         * Whether managed connection pooling is enabled.
+         *
+         * @param bool $connectionPoolingEnabled
+         */
+        public function setConnectionPoolingEnabled($connectionPoolingEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getConnectionPoolingEnabled()
+        {
+        }
+        /**
+         * Optional. List of connection pool configuration flags.
+         *
+         * @param ConnectionPoolFlags[] $flags
+         */
+        public function setFlags($flags)
+        {
+        }
+        /**
+         * @return ConnectionPoolFlags[]
+         */
+        public function getFlags()
+        {
+        }
+        /**
+         * Output only. Number of connection poolers.
+         *
+         * @param int $poolerCount
+         */
+        public function setPoolerCount($poolerCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPoolerCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\SQLAdmin\ConnectionPoolConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConnectionPoolingEnabled()
-    {
-    }
-    /**
-     * Optional. List of connection pool configuration flags.
-     *
-     * @param ConnectionPoolFlags[] $flags
-     */
-    public function setFlags($flags)
-    {
-    }
-    /**
-     * @return ConnectionPoolFlags[]
-     */
-    public function getFlags()
-    {
-    }
-    /**
-     * Output only. Number of connection poolers.
-     *
-     * @param int $poolerCount
-     */
-    public function setPoolerCount($poolerCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPoolerCount()
+    class Google_Service_SQLAdmin_ConnectionPoolConfig extends \Google\Service\SQLAdmin\ConnectionPoolConfig
     {
     }
 }

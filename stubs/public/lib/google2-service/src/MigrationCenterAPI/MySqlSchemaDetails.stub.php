@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class MySqlSchemaDetails extends \Google\Collection
-{
-    protected $collection_key = 'storageEngines';
-    protected $storageEnginesType = MySqlStorageEngineDetails::class;
-    protected $storageEnginesDataType = 'array';
-    /**
-     * Optional. Mysql storage engine tables.
-     *
-     * @param MySqlStorageEngineDetails[] $storageEngines
-     */
-    public function setStorageEngines($storageEngines)
+namespace Google\Service\MigrationCenterAPI {
+    class MySqlSchemaDetails extends \Google\Collection
     {
+        protected $collection_key = 'storageEngines';
+        protected $storageEnginesType = MySqlStorageEngineDetails::class;
+        protected $storageEnginesDataType = 'array';
+        /**
+         * Optional. Mysql storage engine tables.
+         *
+         * @param MySqlStorageEngineDetails[] $storageEngines
+         */
+        public function setStorageEngines($storageEngines)
+        {
+        }
+        /**
+         * @return MySqlStorageEngineDetails[]
+         */
+        public function getStorageEngines()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MySqlStorageEngineDetails[]
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\MySqlSchemaDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStorageEngines()
+    class Google_Service_MigrationCenterAPI_MySqlSchemaDetails extends \Google\Service\MigrationCenterAPI\MySqlSchemaDetails
     {
     }
 }

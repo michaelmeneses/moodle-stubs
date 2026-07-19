@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaImageSegmentationAnnotationPolygonAnnotation extends \Google\Collection
-{
-    protected $collection_key = 'vertexes';
-    /**
-     * The resource Id of the AnnotationSpec that this Annotation pertains to.
-     *
-     * @var string
-     */
-    public $annotationSpecId;
-    /**
-     * The display name of the AnnotationSpec that this Annotation pertains to.
-     *
-     * @var string
-     */
-    public $displayName;
-    protected $vertexesType = GoogleCloudAiplatformV1SchemaVertex::class;
-    protected $vertexesDataType = 'array';
-    /**
-     * The resource Id of the AnnotationSpec that this Annotation pertains to.
-     *
-     * @param string $annotationSpecId
-     */
-    public function setAnnotationSpecId($annotationSpecId)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaImageSegmentationAnnotationPolygonAnnotation extends \Google\Collection
     {
+        protected $collection_key = 'vertexes';
+        /**
+         * The resource Id of the AnnotationSpec that this Annotation pertains to.
+         *
+         * @var string
+         */
+        public $annotationSpecId;
+        /**
+         * The display name of the AnnotationSpec that this Annotation pertains to.
+         *
+         * @var string
+         */
+        public $displayName;
+        protected $vertexesType = GoogleCloudAiplatformV1SchemaVertex::class;
+        protected $vertexesDataType = 'array';
+        /**
+         * The resource Id of the AnnotationSpec that this Annotation pertains to.
+         *
+         * @param string $annotationSpecId
+         */
+        public function setAnnotationSpecId($annotationSpecId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnnotationSpecId()
+        {
+        }
+        /**
+         * The display name of the AnnotationSpec that this Annotation pertains to.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The vertexes are connected one by one and the last vertex is connected to
+         * the first one to represent a polygon.
+         *
+         * @param GoogleCloudAiplatformV1SchemaVertex[] $vertexes
+         */
+        public function setVertexes($vertexes)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1SchemaVertex[]
+         */
+        public function getVertexes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaImageSegmentationAnnotationPolygonAnnotation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotationSpecId()
-    {
-    }
-    /**
-     * The display name of the AnnotationSpec that this Annotation pertains to.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The vertexes are connected one by one and the last vertex is connected to
-     * the first one to represent a polygon.
-     *
-     * @param GoogleCloudAiplatformV1SchemaVertex[] $vertexes
-     */
-    public function setVertexes($vertexes)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1SchemaVertex[]
-     */
-    public function getVertexes()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaImageSegmentationAnnotationPolygonAnnotation extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaImageSegmentationAnnotationPolygonAnnotation
     {
     }
 }

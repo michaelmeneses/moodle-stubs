@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Batch;
-
-class LocationPolicy extends \Google\Collection
-{
-    protected $collection_key = 'allowedLocations';
-    /**
-     * A list of allowed location names represented by internal URLs. Each
-     * location can be a region or a zone. Only one region or multiple zones in
-     * one region is supported now. For example, ["regions/us-central1"] allow VMs
-     * in any zones in region us-central1. ["zones/us-central1-a", "zones/us-
-     * central1-c"] only allow VMs in zones us-central1-a and us-central1-c.
-     * Mixing locations from different regions would cause errors. For example,
-     * ["regions/us-central1", "zones/us-central1-a", "zones/us-central1-b",
-     * "zones/us-west1-a"] contains locations from two distinct regions: us-
-     * central1 and us-west1. This combination will trigger an error.
-     *
-     * @var string[]
-     */
-    public $allowedLocations;
-    /**
-     * A list of allowed location names represented by internal URLs. Each
-     * location can be a region or a zone. Only one region or multiple zones in
-     * one region is supported now. For example, ["regions/us-central1"] allow VMs
-     * in any zones in region us-central1. ["zones/us-central1-a", "zones/us-
-     * central1-c"] only allow VMs in zones us-central1-a and us-central1-c.
-     * Mixing locations from different regions would cause errors. For example,
-     * ["regions/us-central1", "zones/us-central1-a", "zones/us-central1-b",
-     * "zones/us-west1-a"] contains locations from two distinct regions: us-
-     * central1 and us-west1. This combination will trigger an error.
-     *
-     * @param string[] $allowedLocations
-     */
-    public function setAllowedLocations($allowedLocations)
+namespace Google\Service\Batch {
+    class LocationPolicy extends \Google\Collection
     {
+        protected $collection_key = 'allowedLocations';
+        /**
+         * A list of allowed location names represented by internal URLs. Each
+         * location can be a region or a zone. Only one region or multiple zones in
+         * one region is supported now. For example, ["regions/us-central1"] allow VMs
+         * in any zones in region us-central1. ["zones/us-central1-a", "zones/us-
+         * central1-c"] only allow VMs in zones us-central1-a and us-central1-c.
+         * Mixing locations from different regions would cause errors. For example,
+         * ["regions/us-central1", "zones/us-central1-a", "zones/us-central1-b",
+         * "zones/us-west1-a"] contains locations from two distinct regions: us-
+         * central1 and us-west1. This combination will trigger an error.
+         *
+         * @var string[]
+         */
+        public $allowedLocations;
+        /**
+         * A list of allowed location names represented by internal URLs. Each
+         * location can be a region or a zone. Only one region or multiple zones in
+         * one region is supported now. For example, ["regions/us-central1"] allow VMs
+         * in any zones in region us-central1. ["zones/us-central1-a", "zones/us-
+         * central1-c"] only allow VMs in zones us-central1-a and us-central1-c.
+         * Mixing locations from different regions would cause errors. For example,
+         * ["regions/us-central1", "zones/us-central1-a", "zones/us-central1-b",
+         * "zones/us-west1-a"] contains locations from two distinct regions: us-
+         * central1 and us-west1. This combination will trigger an error.
+         *
+         * @param string[] $allowedLocations
+         */
+        public function setAllowedLocations($allowedLocations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAllowedLocations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Batch\LocationPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllowedLocations()
+    class Google_Service_Batch_LocationPolicy extends \Google\Service\Batch\LocationPolicy
     {
     }
 }

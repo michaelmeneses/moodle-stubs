@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3PlaybookOutput extends \Google\Model
-{
-    /**
-     * Optional. Summary string of the execution result of the child playbook.
-     *
-     * @var string
-     */
-    public $executionSummary;
-    /**
-     * Optional. Summary string of the execution result of the child playbook.
-     *
-     * @param string $executionSummary
-     */
-    public function setExecutionSummary($executionSummary)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3PlaybookOutput extends \Google\Model
     {
+        /**
+         * Optional. Summary string of the execution result of the child playbook.
+         *
+         * @var string
+         */
+        public $executionSummary;
+        /**
+         * Optional. Summary string of the execution result of the child playbook.
+         *
+         * @param string $executionSummary
+         */
+        public function setExecutionSummary($executionSummary)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExecutionSummary()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3PlaybookOutput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExecutionSummary()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3PlaybookOutput extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3PlaybookOutput
     {
     }
 }

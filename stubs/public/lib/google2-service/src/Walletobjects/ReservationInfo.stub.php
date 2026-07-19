@@ -21,93 +21,102 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class ReservationInfo extends \Google\Model
-{
-    /**
-     * Confirmation code needed to check into this flight. This is the number that
-     * the passenger would enter into a kiosk at the airport to look up the flight
-     * and print a boarding pass.
-     *
-     * @var string
-     */
-    public $confirmationCode;
-    /**
-     * E-ticket number.
-     *
-     * @var string
-     */
-    public $eticketNumber;
-    protected $frequentFlyerInfoType = FrequentFlyerInfo::class;
-    protected $frequentFlyerInfoDataType = '';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * `"walletobjects#reservationInfo"`.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $kind;
-    /**
-     * Confirmation code needed to check into this flight. This is the number that
-     * the passenger would enter into a kiosk at the airport to look up the flight
-     * and print a boarding pass.
-     *
-     * @param string $confirmationCode
-     */
-    public function setConfirmationCode($confirmationCode)
+namespace Google\Service\Walletobjects {
+    class ReservationInfo extends \Google\Model
     {
+        /**
+         * Confirmation code needed to check into this flight. This is the number that
+         * the passenger would enter into a kiosk at the airport to look up the flight
+         * and print a boarding pass.
+         *
+         * @var string
+         */
+        public $confirmationCode;
+        /**
+         * E-ticket number.
+         *
+         * @var string
+         */
+        public $eticketNumber;
+        protected $frequentFlyerInfoType = FrequentFlyerInfo::class;
+        protected $frequentFlyerInfoDataType = '';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * `"walletobjects#reservationInfo"`.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $kind;
+        /**
+         * Confirmation code needed to check into this flight. This is the number that
+         * the passenger would enter into a kiosk at the airport to look up the flight
+         * and print a boarding pass.
+         *
+         * @param string $confirmationCode
+         */
+        public function setConfirmationCode($confirmationCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConfirmationCode()
+        {
+        }
+        /**
+         * E-ticket number.
+         *
+         * @param string $eticketNumber
+         */
+        public function setEticketNumber($eticketNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEticketNumber()
+        {
+        }
+        /**
+         * Frequent flyer membership information.
+         *
+         * @param FrequentFlyerInfo $frequentFlyerInfo
+         */
+        public function setFrequentFlyerInfo(FrequentFlyerInfo $frequentFlyerInfo)
+        {
+        }
+        /**
+         * @return FrequentFlyerInfo
+         */
+        public function getFrequentFlyerInfo()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * `"walletobjects#reservationInfo"`.
+         *
+         * @deprecated
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Walletobjects\ReservationInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfirmationCode()
-    {
-    }
-    /**
-     * E-ticket number.
-     *
-     * @param string $eticketNumber
-     */
-    public function setEticketNumber($eticketNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEticketNumber()
-    {
-    }
-    /**
-     * Frequent flyer membership information.
-     *
-     * @param FrequentFlyerInfo $frequentFlyerInfo
-     */
-    public function setFrequentFlyerInfo(FrequentFlyerInfo $frequentFlyerInfo)
-    {
-    }
-    /**
-     * @return FrequentFlyerInfo
-     */
-    public function getFrequentFlyerInfo()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * `"walletobjects#reservationInfo"`.
-     *
-     * @deprecated
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Walletobjects_ReservationInfo extends \Google\Service\Walletobjects\ReservationInfo
     {
     }
 }

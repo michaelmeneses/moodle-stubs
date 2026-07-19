@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class ListGiVersionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'giVersions';
-    protected $giVersionsType = GiVersion::class;
-    protected $giVersionsDataType = 'array';
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of Oracle Grid Infrastructure (GI) versions.
-     *
-     * @param GiVersion[] $giVersions
-     */
-    public function setGiVersions($giVersions)
+namespace Google\Service\OracleDatabase {
+    class ListGiVersionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'giVersions';
+        protected $giVersionsType = GiVersion::class;
+        protected $giVersionsDataType = 'array';
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of Oracle Grid Infrastructure (GI) versions.
+         *
+         * @param GiVersion[] $giVersions
+         */
+        public function setGiVersions($giVersions)
+        {
+        }
+        /**
+         * @return GiVersion[]
+         */
+        public function getGiVersions()
+        {
+        }
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GiVersion[]
+     * Runtime class alias of \Google\Service\OracleDatabase\ListGiVersionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGiVersions()
-    {
-    }
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_OracleDatabase_ListGiVersionsResponse extends \Google\Service\OracleDatabase\ListGiVersionsResponse
     {
     }
 }

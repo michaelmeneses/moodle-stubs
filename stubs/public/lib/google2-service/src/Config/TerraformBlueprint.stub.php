@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Config;
-
-class TerraformBlueprint extends \Google\Model
-{
-    /**
-     * URI of an object in Google Cloud Storage. Format: `gs://{bucket}/{object}`
-     * URI may also specify an object version for zipped objects. Format:
-     * `gs://{bucket}/{object}#{version}`
-     *
-     * @var string
-     */
-    public $gcsSource;
-    protected $gitSourceType = GitSource::class;
-    protected $gitSourceDataType = '';
-    protected $inputValuesType = TerraformVariable::class;
-    protected $inputValuesDataType = 'map';
-    /**
-     * URI of an object in Google Cloud Storage. Format: `gs://{bucket}/{object}`
-     * URI may also specify an object version for zipped objects. Format:
-     * `gs://{bucket}/{object}#{version}`
-     *
-     * @param string $gcsSource
-     */
-    public function setGcsSource($gcsSource)
+namespace Google\Service\Config {
+    class TerraformBlueprint extends \Google\Model
     {
+        /**
+         * URI of an object in Google Cloud Storage. Format: `gs://{bucket}/{object}`
+         * URI may also specify an object version for zipped objects. Format:
+         * `gs://{bucket}/{object}#{version}`
+         *
+         * @var string
+         */
+        public $gcsSource;
+        protected $gitSourceType = GitSource::class;
+        protected $gitSourceDataType = '';
+        protected $inputValuesType = TerraformVariable::class;
+        protected $inputValuesDataType = 'map';
+        /**
+         * URI of an object in Google Cloud Storage. Format: `gs://{bucket}/{object}`
+         * URI may also specify an object version for zipped objects. Format:
+         * `gs://{bucket}/{object}#{version}`
+         *
+         * @param string $gcsSource
+         */
+        public function setGcsSource($gcsSource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcsSource()
+        {
+        }
+        /**
+         * URI of a public Git repo.
+         *
+         * @param GitSource $gitSource
+         */
+        public function setGitSource(GitSource $gitSource)
+        {
+        }
+        /**
+         * @return GitSource
+         */
+        public function getGitSource()
+        {
+        }
+        /**
+         * Optional. Input variable values for the Terraform blueprint.
+         *
+         * @param TerraformVariable[] $inputValues
+         */
+        public function setInputValues($inputValues)
+        {
+        }
+        /**
+         * @return TerraformVariable[]
+         */
+        public function getInputValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Config\TerraformBlueprint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcsSource()
-    {
-    }
-    /**
-     * URI of a public Git repo.
-     *
-     * @param GitSource $gitSource
-     */
-    public function setGitSource(GitSource $gitSource)
-    {
-    }
-    /**
-     * @return GitSource
-     */
-    public function getGitSource()
-    {
-    }
-    /**
-     * Optional. Input variable values for the Terraform blueprint.
-     *
-     * @param TerraformVariable[] $inputValues
-     */
-    public function setInputValues($inputValues)
-    {
-    }
-    /**
-     * @return TerraformVariable[]
-     */
-    public function getInputValues()
+    class Google_Service_Config_TerraformBlueprint extends \Google\Service\Config\TerraformBlueprint
     {
     }
 }

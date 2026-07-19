@@ -21,164 +21,173 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RealTimeBidding;
-
-class VideoMetadata extends \Google\Collection
-{
-    /**
-     * Default value that should never be used.
-     */
-    public const VAST_VERSION_VAST_VERSION_UNSPECIFIED = 'VAST_VERSION_UNSPECIFIED';
-    /**
-     * VAST 1.0
-     */
-    public const VAST_VERSION_VAST_VERSION_1_0 = 'VAST_VERSION_1_0';
-    /**
-     * VAST 2.0
-     */
-    public const VAST_VERSION_VAST_VERSION_2_0 = 'VAST_VERSION_2_0';
-    /**
-     * VAST 3.0
-     */
-    public const VAST_VERSION_VAST_VERSION_3_0 = 'VAST_VERSION_3_0';
-    /**
-     * VAST 4.0
-     */
-    public const VAST_VERSION_VAST_VERSION_4_0 = 'VAST_VERSION_4_0';
-    protected $collection_key = 'mediaFiles';
-    /**
-     * The duration of the ad. Can be used to filter the response of the
-     * creatives.list method.
-     *
-     * @var string
-     */
-    public $duration;
-    /**
-     * Is this a valid VAST ad? Can be used to filter the response of the
-     * creatives.list method.
-     *
-     * @var bool
-     */
-    public $isValidVast;
-    /**
-     * Is this a VPAID ad? Can be used to filter the response of the
-     * creatives.list method.
-     *
-     * @var bool
-     */
-    public $isVpaid;
-    protected $mediaFilesType = MediaFile::class;
-    protected $mediaFilesDataType = 'array';
-    /**
-     * The minimum duration that the user has to watch before being able to skip
-     * this ad. If the field is not set, the ad is not skippable. If the field is
-     * set, the ad is skippable. Can be used to filter the response of the
-     * creatives.list method.
-     *
-     * @var string
-     */
-    public $skipOffset;
-    /**
-     * The maximum VAST version across all wrapped VAST documents. Can be used to
-     * filter the response of the creatives.list method.
-     *
-     * @var string
-     */
-    public $vastVersion;
-    /**
-     * The duration of the ad. Can be used to filter the response of the
-     * creatives.list method.
-     *
-     * @param string $duration
-     */
-    public function setDuration($duration)
+namespace Google\Service\RealTimeBidding {
+    class VideoMetadata extends \Google\Collection
     {
+        /**
+         * Default value that should never be used.
+         */
+        public const VAST_VERSION_VAST_VERSION_UNSPECIFIED = 'VAST_VERSION_UNSPECIFIED';
+        /**
+         * VAST 1.0
+         */
+        public const VAST_VERSION_VAST_VERSION_1_0 = 'VAST_VERSION_1_0';
+        /**
+         * VAST 2.0
+         */
+        public const VAST_VERSION_VAST_VERSION_2_0 = 'VAST_VERSION_2_0';
+        /**
+         * VAST 3.0
+         */
+        public const VAST_VERSION_VAST_VERSION_3_0 = 'VAST_VERSION_3_0';
+        /**
+         * VAST 4.0
+         */
+        public const VAST_VERSION_VAST_VERSION_4_0 = 'VAST_VERSION_4_0';
+        protected $collection_key = 'mediaFiles';
+        /**
+         * The duration of the ad. Can be used to filter the response of the
+         * creatives.list method.
+         *
+         * @var string
+         */
+        public $duration;
+        /**
+         * Is this a valid VAST ad? Can be used to filter the response of the
+         * creatives.list method.
+         *
+         * @var bool
+         */
+        public $isValidVast;
+        /**
+         * Is this a VPAID ad? Can be used to filter the response of the
+         * creatives.list method.
+         *
+         * @var bool
+         */
+        public $isVpaid;
+        protected $mediaFilesType = MediaFile::class;
+        protected $mediaFilesDataType = 'array';
+        /**
+         * The minimum duration that the user has to watch before being able to skip
+         * this ad. If the field is not set, the ad is not skippable. If the field is
+         * set, the ad is skippable. Can be used to filter the response of the
+         * creatives.list method.
+         *
+         * @var string
+         */
+        public $skipOffset;
+        /**
+         * The maximum VAST version across all wrapped VAST documents. Can be used to
+         * filter the response of the creatives.list method.
+         *
+         * @var string
+         */
+        public $vastVersion;
+        /**
+         * The duration of the ad. Can be used to filter the response of the
+         * creatives.list method.
+         *
+         * @param string $duration
+         */
+        public function setDuration($duration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDuration()
+        {
+        }
+        /**
+         * Is this a valid VAST ad? Can be used to filter the response of the
+         * creatives.list method.
+         *
+         * @param bool $isValidVast
+         */
+        public function setIsValidVast($isValidVast)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsValidVast()
+        {
+        }
+        /**
+         * Is this a VPAID ad? Can be used to filter the response of the
+         * creatives.list method.
+         *
+         * @param bool $isVpaid
+         */
+        public function setIsVpaid($isVpaid)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsVpaid()
+        {
+        }
+        /**
+         * The list of all media files declared in the VAST. If there are multiple
+         * VASTs in a wrapper chain, this includes the media files from the deepest
+         * one in the chain.
+         *
+         * @param MediaFile[] $mediaFiles
+         */
+        public function setMediaFiles($mediaFiles)
+        {
+        }
+        /**
+         * @return MediaFile[]
+         */
+        public function getMediaFiles()
+        {
+        }
+        /**
+         * The minimum duration that the user has to watch before being able to skip
+         * this ad. If the field is not set, the ad is not skippable. If the field is
+         * set, the ad is skippable. Can be used to filter the response of the
+         * creatives.list method.
+         *
+         * @param string $skipOffset
+         */
+        public function setSkipOffset($skipOffset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSkipOffset()
+        {
+        }
+        /**
+         * The maximum VAST version across all wrapped VAST documents. Can be used to
+         * filter the response of the creatives.list method.
+         *
+         * Accepted values: VAST_VERSION_UNSPECIFIED, VAST_VERSION_1_0,
+         * VAST_VERSION_2_0, VAST_VERSION_3_0, VAST_VERSION_4_0
+         *
+         * @param self::VAST_VERSION_* $vastVersion
+         */
+        public function setVastVersion($vastVersion)
+        {
+        }
+        /**
+         * @return self::VAST_VERSION_*
+         */
+        public function getVastVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\RealTimeBidding\VideoMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDuration()
-    {
-    }
-    /**
-     * Is this a valid VAST ad? Can be used to filter the response of the
-     * creatives.list method.
-     *
-     * @param bool $isValidVast
-     */
-    public function setIsValidVast($isValidVast)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsValidVast()
-    {
-    }
-    /**
-     * Is this a VPAID ad? Can be used to filter the response of the
-     * creatives.list method.
-     *
-     * @param bool $isVpaid
-     */
-    public function setIsVpaid($isVpaid)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsVpaid()
-    {
-    }
-    /**
-     * The list of all media files declared in the VAST. If there are multiple
-     * VASTs in a wrapper chain, this includes the media files from the deepest
-     * one in the chain.
-     *
-     * @param MediaFile[] $mediaFiles
-     */
-    public function setMediaFiles($mediaFiles)
-    {
-    }
-    /**
-     * @return MediaFile[]
-     */
-    public function getMediaFiles()
-    {
-    }
-    /**
-     * The minimum duration that the user has to watch before being able to skip
-     * this ad. If the field is not set, the ad is not skippable. If the field is
-     * set, the ad is skippable. Can be used to filter the response of the
-     * creatives.list method.
-     *
-     * @param string $skipOffset
-     */
-    public function setSkipOffset($skipOffset)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSkipOffset()
-    {
-    }
-    /**
-     * The maximum VAST version across all wrapped VAST documents. Can be used to
-     * filter the response of the creatives.list method.
-     *
-     * Accepted values: VAST_VERSION_UNSPECIFIED, VAST_VERSION_1_0,
-     * VAST_VERSION_2_0, VAST_VERSION_3_0, VAST_VERSION_4_0
-     *
-     * @param self::VAST_VERSION_* $vastVersion
-     */
-    public function setVastVersion($vastVersion)
-    {
-    }
-    /**
-     * @return self::VAST_VERSION_*
-     */
-    public function getVastVersion()
+    class Google_Service_RealTimeBidding_VideoMetadata extends \Google\Service\RealTimeBidding\VideoMetadata
     {
     }
 }

@@ -8,6 +8,11 @@
  */
 namespace Aws\Auth;
 
+use Aws\Api\Service;
+use Aws\Auth\Exception\UnresolvedAuthSchemeException;
+use Aws\CommandInterface;
+use Closure;
+use GuzzleHttp\Promise\Promise;
 /**
  * Handles auth scheme resolution. If a service models and auth scheme using
  * the `auth` trait and the operation or metadata levels, this middleware will

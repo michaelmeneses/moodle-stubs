@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class GoogleFirestoreAdminV1ExportDocumentsResponse extends \Google\Model
-{
-    /**
-     * Location of the output files. This can be used to begin an import into
-     * Cloud Firestore (this project or another project) after the operation
-     * completes successfully.
-     *
-     * @var string
-     */
-    public $outputUriPrefix;
-    /**
-     * Location of the output files. This can be used to begin an import into
-     * Cloud Firestore (this project or another project) after the operation
-     * completes successfully.
-     *
-     * @param string $outputUriPrefix
-     */
-    public function setOutputUriPrefix($outputUriPrefix)
+namespace Google\Service\Firestore {
+    class GoogleFirestoreAdminV1ExportDocumentsResponse extends \Google\Model
     {
+        /**
+         * Location of the output files. This can be used to begin an import into
+         * Cloud Firestore (this project or another project) after the operation
+         * completes successfully.
+         *
+         * @var string
+         */
+        public $outputUriPrefix;
+        /**
+         * Location of the output files. This can be used to begin an import into
+         * Cloud Firestore (this project or another project) after the operation
+         * completes successfully.
+         *
+         * @param string $outputUriPrefix
+         */
+        public function setOutputUriPrefix($outputUriPrefix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOutputUriPrefix()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Firestore\GoogleFirestoreAdminV1ExportDocumentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOutputUriPrefix()
+    class Google_Service_Firestore_GoogleFirestoreAdminV1ExportDocumentsResponse extends \Google\Service\Firestore\GoogleFirestoreAdminV1ExportDocumentsResponse
     {
     }
 }

@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Script;
-
-class ExecuteStreamResponse extends \Google\Model
-{
-    protected $resultType = ScriptExecutionResult::class;
-    protected $resultDataType = '';
-    /**
-     * @param ScriptExecutionResult
-     */
-    public function setResult(ScriptExecutionResult $result)
+namespace Google\Service\Script {
+    class ExecuteStreamResponse extends \Google\Model
     {
+        protected $resultType = ScriptExecutionResult::class;
+        protected $resultDataType = '';
+        /**
+         * @param ScriptExecutionResult
+         */
+        public function setResult(ScriptExecutionResult $result)
+        {
+        }
+        /**
+         * @return ScriptExecutionResult
+         */
+        public function getResult()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ScriptExecutionResult
+     * Runtime class alias of \Google\Service\Script\ExecuteStreamResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResult()
+    class Google_Service_Script_ExecuteStreamResponse extends \Google\Service\Script\ExecuteStreamResponse
     {
     }
 }

@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1ScannedDataIncrementalField extends \Google\Model
-{
-    /**
-     * Output only. Value that marks the end of the range.
-     *
-     * @var string
-     */
-    public $end;
-    /**
-     * Output only. The field that contains values which monotonically increases
-     * over time (e.g. a timestamp column).
-     *
-     * @var string
-     */
-    public $field;
-    /**
-     * Output only. Value that marks the start of the range.
-     *
-     * @var string
-     */
-    public $start;
-    /**
-     * Output only. Value that marks the end of the range.
-     *
-     * @param string $end
-     */
-    public function setEnd($end)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1ScannedDataIncrementalField extends \Google\Model
     {
+        /**
+         * Output only. Value that marks the end of the range.
+         *
+         * @var string
+         */
+        public $end;
+        /**
+         * Output only. The field that contains values which monotonically increases
+         * over time (e.g. a timestamp column).
+         *
+         * @var string
+         */
+        public $field;
+        /**
+         * Output only. Value that marks the start of the range.
+         *
+         * @var string
+         */
+        public $start;
+        /**
+         * Output only. Value that marks the end of the range.
+         *
+         * @param string $end
+         */
+        public function setEnd($end)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnd()
+        {
+        }
+        /**
+         * Output only. The field that contains values which monotonically increases
+         * over time (e.g. a timestamp column).
+         *
+         * @param string $field
+         */
+        public function setField($field)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getField()
+        {
+        }
+        /**
+         * Output only. Value that marks the start of the range.
+         *
+         * @param string $start
+         */
+        public function setStart($start)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStart()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1ScannedDataIncrementalField registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnd()
-    {
-    }
-    /**
-     * Output only. The field that contains values which monotonically increases
-     * over time (e.g. a timestamp column).
-     *
-     * @param string $field
-     */
-    public function setField($field)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getField()
-    {
-    }
-    /**
-     * Output only. Value that marks the start of the range.
-     *
-     * @param string $start
-     */
-    public function setStart($start)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStart()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1ScannedDataIncrementalField extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1ScannedDataIncrementalField
     {
     }
 }

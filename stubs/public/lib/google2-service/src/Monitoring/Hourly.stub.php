@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class Hourly extends \Google\Model
-{
-    /**
-     * Optional. The number of minutes after the hour (in UTC) to run the query.
-     * Must be greater than or equal to 0 minutes and less than or equal to 59
-     * minutes. If left unspecified, then an arbitrary offset is used.
-     *
-     * @var int
-     */
-    public $minuteOffset;
-    /**
-     * Required. The number of hours between runs. Must be greater than or equal
-     * to 1 hour and less than or equal to 48 hours.
-     *
-     * @var int
-     */
-    public $periodicity;
-    /**
-     * Optional. The number of minutes after the hour (in UTC) to run the query.
-     * Must be greater than or equal to 0 minutes and less than or equal to 59
-     * minutes. If left unspecified, then an arbitrary offset is used.
-     *
-     * @param int $minuteOffset
-     */
-    public function setMinuteOffset($minuteOffset)
+namespace Google\Service\Monitoring {
+    class Hourly extends \Google\Model
     {
+        /**
+         * Optional. The number of minutes after the hour (in UTC) to run the query.
+         * Must be greater than or equal to 0 minutes and less than or equal to 59
+         * minutes. If left unspecified, then an arbitrary offset is used.
+         *
+         * @var int
+         */
+        public $minuteOffset;
+        /**
+         * Required. The number of hours between runs. Must be greater than or equal
+         * to 1 hour and less than or equal to 48 hours.
+         *
+         * @var int
+         */
+        public $periodicity;
+        /**
+         * Optional. The number of minutes after the hour (in UTC) to run the query.
+         * Must be greater than or equal to 0 minutes and less than or equal to 59
+         * minutes. If left unspecified, then an arbitrary offset is used.
+         *
+         * @param int $minuteOffset
+         */
+        public function setMinuteOffset($minuteOffset)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinuteOffset()
+        {
+        }
+        /**
+         * Required. The number of hours between runs. Must be greater than or equal
+         * to 1 hour and less than or equal to 48 hours.
+         *
+         * @param int $periodicity
+         */
+        public function setPeriodicity($periodicity)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPeriodicity()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Monitoring\Hourly registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMinuteOffset()
-    {
-    }
-    /**
-     * Required. The number of hours between runs. Must be greater than or equal
-     * to 1 hour and less than or equal to 48 hours.
-     *
-     * @param int $periodicity
-     */
-    public function setPeriodicity($periodicity)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPeriodicity()
+    class Google_Service_Monitoring_Hourly extends \Google\Service\Monitoring\Hourly
     {
     }
 }

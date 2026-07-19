@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1VertexAISearchDataStoreSpec extends \Google\Model
-{
-    /**
-     * Full resource name of DataStore, such as Format: `projects/{project}/locati
-     * ons/{location}/collections/{collection}/dataStores/{dataStore}`
-     *
-     * @var string
-     */
-    public $dataStore;
-    /**
-     * Optional. Filter specification to filter documents in the data store
-     * specified by data_store field. For more information on filtering, see
-     * [Filtering](https://cloud.google.com/generative-ai-app-builder/docs/filter-
-     * search-metadata)
-     *
-     * @var string
-     */
-    public $filter;
-    /**
-     * Full resource name of DataStore, such as Format: `projects/{project}/locati
-     * ons/{location}/collections/{collection}/dataStores/{dataStore}`
-     *
-     * @param string $dataStore
-     */
-    public function setDataStore($dataStore)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1VertexAISearchDataStoreSpec extends \Google\Model
     {
+        /**
+         * Full resource name of DataStore, such as Format: `projects/{project}/locati
+         * ons/{location}/collections/{collection}/dataStores/{dataStore}`
+         *
+         * @var string
+         */
+        public $dataStore;
+        /**
+         * Optional. Filter specification to filter documents in the data store
+         * specified by data_store field. For more information on filtering, see
+         * [Filtering](https://cloud.google.com/generative-ai-app-builder/docs/filter-
+         * search-metadata)
+         *
+         * @var string
+         */
+        public $filter;
+        /**
+         * Full resource name of DataStore, such as Format: `projects/{project}/locati
+         * ons/{location}/collections/{collection}/dataStores/{dataStore}`
+         *
+         * @param string $dataStore
+         */
+        public function setDataStore($dataStore)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataStore()
+        {
+        }
+        /**
+         * Optional. Filter specification to filter documents in the data store
+         * specified by data_store field. For more information on filtering, see
+         * [Filtering](https://cloud.google.com/generative-ai-app-builder/docs/filter-
+         * search-metadata)
+         *
+         * @param string $filter
+         */
+        public function setFilter($filter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilter()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1VertexAISearchDataStoreSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataStore()
-    {
-    }
-    /**
-     * Optional. Filter specification to filter documents in the data store
-     * specified by data_store field. For more information on filtering, see
-     * [Filtering](https://cloud.google.com/generative-ai-app-builder/docs/filter-
-     * search-metadata)
-     *
-     * @param string $filter
-     */
-    public function setFilter($filter)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFilter()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1VertexAISearchDataStoreSpec extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1VertexAISearchDataStoreSpec
     {
     }
 }

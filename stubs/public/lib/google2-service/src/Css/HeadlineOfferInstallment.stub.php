@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Css;
-
-class HeadlineOfferInstallment extends \Google\Model
-{
-    protected $amountType = Price::class;
-    protected $amountDataType = '';
-    protected $downpaymentType = Price::class;
-    protected $downpaymentDataType = '';
-    /**
-     * The number of installments the buyer has to pay.
-     *
-     * @var string
-     */
-    public $months;
-    /**
-     * The amount the buyer has to pay per month.
-     *
-     * @param Price $amount
-     */
-    public function setAmount(Price $amount)
+namespace Google\Service\Css {
+    class HeadlineOfferInstallment extends \Google\Model
     {
+        protected $amountType = Price::class;
+        protected $amountDataType = '';
+        protected $downpaymentType = Price::class;
+        protected $downpaymentDataType = '';
+        /**
+         * The number of installments the buyer has to pay.
+         *
+         * @var string
+         */
+        public $months;
+        /**
+         * The amount the buyer has to pay per month.
+         *
+         * @param Price $amount
+         */
+        public function setAmount(Price $amount)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getAmount()
+        {
+        }
+        /**
+         * The up-front down payment amount the buyer has to pay.
+         *
+         * @param Price $downpayment
+         */
+        public function setDownpayment(Price $downpayment)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getDownpayment()
+        {
+        }
+        /**
+         * The number of installments the buyer has to pay.
+         *
+         * @param string $months
+         */
+        public function setMonths($months)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMonths()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Price
+     * Runtime class alias of \Google\Service\Css\HeadlineOfferInstallment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAmount()
-    {
-    }
-    /**
-     * The up-front down payment amount the buyer has to pay.
-     *
-     * @param Price $downpayment
-     */
-    public function setDownpayment(Price $downpayment)
-    {
-    }
-    /**
-     * @return Price
-     */
-    public function getDownpayment()
-    {
-    }
-    /**
-     * The number of installments the buyer has to pay.
-     *
-     * @param string $months
-     */
-    public function setMonths($months)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMonths()
+    class Google_Service_Css_HeadlineOfferInstallment extends \Google\Service\Css\HeadlineOfferInstallment
     {
     }
 }

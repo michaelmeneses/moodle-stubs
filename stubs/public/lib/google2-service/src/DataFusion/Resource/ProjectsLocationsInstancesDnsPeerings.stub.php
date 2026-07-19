@@ -21,67 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataFusion\Resource;
-
-/**
- * The "dnsPeerings" collection of methods.
- * Typical usage is:
- *  <code>
- *   $datafusionService = new Google\Service\DataFusion(...);
- *   $dnsPeerings = $datafusionService->projects_locations_instances_dnsPeerings;
- *  </code>
- */
-class ProjectsLocationsInstancesDnsPeerings extends \Google\Service\Resource
-{
+namespace Google\Service\DataFusion\Resource {
+    use Google\Service\DataFusion\DatafusionEmpty;
+    use Google\Service\DataFusion\DnsPeering;
+    use Google\Service\DataFusion\ListDnsPeeringsResponse;
     /**
-     * Creates DNS peering on the given resource. (dnsPeerings.create)
-     *
-     * @param string $parent Required. The resource on which DNS peering will be
-     * created.
-     * @param DnsPeering $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string dnsPeeringId Required. The name of the peering to create.
-     * @return DnsPeering
-     * @throws \Google\Service\Exception
+     * The "dnsPeerings" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $datafusionService = new Google\Service\DataFusion(...);
+     *   $dnsPeerings = $datafusionService->projects_locations_instances_dnsPeerings;
+     *  </code>
      */
-    public function create($parent, DnsPeering $postBody, $optParams = [])
+    class ProjectsLocationsInstancesDnsPeerings extends \Google\Service\Resource
     {
+        /**
+         * Creates DNS peering on the given resource. (dnsPeerings.create)
+         *
+         * @param string $parent Required. The resource on which DNS peering will be
+         * created.
+         * @param DnsPeering $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string dnsPeeringId Required. The name of the peering to create.
+         * @return DnsPeering
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, DnsPeering $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes DNS peering on the given resource. (dnsPeerings.delete)
+         *
+         * @param string $name Required. The name of the DNS peering zone to delete.
+         * Format: projects/{project}/locations/{location}/instances/{instance}/dnsPeeri
+         * ngs/{dns_peering}
+         * @param array $optParams Optional parameters.
+         * @return DatafusionEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists DNS peerings for a given resource.
+         * (dnsPeerings.listProjectsLocationsInstancesDnsPeerings)
+         *
+         * @param string $parent Required. The parent, which owns this collection of dns
+         * peerings. Format:
+         * projects/{project}/locations/{location}/instances/{instance}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of dns peerings to return. The
+         * service may return fewer than this value. If unspecified, at most 50 dns
+         * peerings will be returned. The maximum value is 200; values above 200 will be
+         * coerced to 200.
+         * @opt_param string pageToken A page token, received from a previous
+         * `ListDnsPeerings` call. Provide this to retrieve the subsequent page. When
+         * paginating, all other parameters provided to `ListDnsPeerings` must match the
+         * call that provided the page token.
+         * @return ListDnsPeeringsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsInstancesDnsPeerings($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes DNS peering on the given resource. (dnsPeerings.delete)
-     *
-     * @param string $name Required. The name of the DNS peering zone to delete.
-     * Format: projects/{project}/locations/{location}/instances/{instance}/dnsPeeri
-     * ngs/{dns_peering}
-     * @param array $optParams Optional parameters.
-     * @return DatafusionEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\DataFusion\Resource\ProjectsLocationsInstancesDnsPeerings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists DNS peerings for a given resource.
-     * (dnsPeerings.listProjectsLocationsInstancesDnsPeerings)
-     *
-     * @param string $parent Required. The parent, which owns this collection of dns
-     * peerings. Format:
-     * projects/{project}/locations/{location}/instances/{instance}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of dns peerings to return. The
-     * service may return fewer than this value. If unspecified, at most 50 dns
-     * peerings will be returned. The maximum value is 200; values above 200 will be
-     * coerced to 200.
-     * @opt_param string pageToken A page token, received from a previous
-     * `ListDnsPeerings` call. Provide this to retrieve the subsequent page. When
-     * paginating, all other parameters provided to `ListDnsPeerings` must match the
-     * call that provided the page token.
-     * @return ListDnsPeeringsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsInstancesDnsPeerings($parent, $optParams = [])
+    class Google_Service_DataFusion_Resource_ProjectsLocationsInstancesDnsPeerings extends \Google\Service\DataFusion\Resource\ProjectsLocationsInstancesDnsPeerings
     {
     }
 }

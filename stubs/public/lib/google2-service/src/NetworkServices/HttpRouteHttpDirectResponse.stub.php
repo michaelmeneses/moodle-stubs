@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkServices;
-
-class HttpRouteHttpDirectResponse extends \Google\Model
-{
-    /**
-     * Optional. Response body as bytes. Maximum body size is 4096B.
-     *
-     * @var string
-     */
-    public $bytesBody;
-    /**
-     * Required. Status to return as part of HTTP Response. Must be a positive
-     * integer.
-     *
-     * @var int
-     */
-    public $status;
-    /**
-     * Optional. Response body as a string. Maximum body length is 1024
-     * characters.
-     *
-     * @var string
-     */
-    public $stringBody;
-    /**
-     * Optional. Response body as bytes. Maximum body size is 4096B.
-     *
-     * @param string $bytesBody
-     */
-    public function setBytesBody($bytesBody)
+namespace Google\Service\NetworkServices {
+    class HttpRouteHttpDirectResponse extends \Google\Model
     {
+        /**
+         * Optional. Response body as bytes. Maximum body size is 4096B.
+         *
+         * @var string
+         */
+        public $bytesBody;
+        /**
+         * Required. Status to return as part of HTTP Response. Must be a positive
+         * integer.
+         *
+         * @var int
+         */
+        public $status;
+        /**
+         * Optional. Response body as a string. Maximum body length is 1024
+         * characters.
+         *
+         * @var string
+         */
+        public $stringBody;
+        /**
+         * Optional. Response body as bytes. Maximum body size is 4096B.
+         *
+         * @param string $bytesBody
+         */
+        public function setBytesBody($bytesBody)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBytesBody()
+        {
+        }
+        /**
+         * Required. Status to return as part of HTTP Response. Must be a positive
+         * integer.
+         *
+         * @param int $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * Optional. Response body as a string. Maximum body length is 1024
+         * characters.
+         *
+         * @param string $stringBody
+         */
+        public function setStringBody($stringBody)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStringBody()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkServices\HttpRouteHttpDirectResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBytesBody()
-    {
-    }
-    /**
-     * Required. Status to return as part of HTTP Response. Must be a positive
-     * integer.
-     *
-     * @param int $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * Optional. Response body as a string. Maximum body length is 1024
-     * characters.
-     *
-     * @param string $stringBody
-     */
-    public function setStringBody($stringBody)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStringBody()
+    class Google_Service_NetworkServices_HttpRouteHttpDirectResponse extends \Google\Service\NetworkServices\HttpRouteHttpDirectResponse
     {
     }
 }

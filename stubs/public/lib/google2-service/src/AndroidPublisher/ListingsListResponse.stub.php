@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class ListingsListResponse extends \Google\Collection
-{
-    protected $collection_key = 'listings';
-    /**
-     * The kind of this response ("androidpublisher#listingsListResponse").
-     *
-     * @var string
-     */
-    public $kind;
-    protected $listingsType = Listing::class;
-    protected $listingsDataType = 'array';
-    /**
-     * The kind of this response ("androidpublisher#listingsListResponse").
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\AndroidPublisher {
+    class ListingsListResponse extends \Google\Collection
     {
+        protected $collection_key = 'listings';
+        /**
+         * The kind of this response ("androidpublisher#listingsListResponse").
+         *
+         * @var string
+         */
+        public $kind;
+        protected $listingsType = Listing::class;
+        protected $listingsDataType = 'array';
+        /**
+         * The kind of this response ("androidpublisher#listingsListResponse").
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * All localized listings.
+         *
+         * @param Listing[] $listings
+         */
+        public function setListings($listings)
+        {
+        }
+        /**
+         * @return Listing[]
+         */
+        public function getListings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\ListingsListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * All localized listings.
-     *
-     * @param Listing[] $listings
-     */
-    public function setListings($listings)
-    {
-    }
-    /**
-     * @return Listing[]
-     */
-    public function getListings()
+    class Google_Service_AndroidPublisher_ListingsListResponse extends \Google\Service\AndroidPublisher\ListingsListResponse
     {
     }
 }

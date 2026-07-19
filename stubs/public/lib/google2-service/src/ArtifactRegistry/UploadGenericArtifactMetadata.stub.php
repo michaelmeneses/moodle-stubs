@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class UploadGenericArtifactMetadata extends \Google\Model
-{
+namespace Google\Service\ArtifactRegistry {
+    class UploadGenericArtifactMetadata extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ArtifactRegistry\UploadGenericArtifactMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ArtifactRegistry_UploadGenericArtifactMetadata extends \Google\Service\ArtifactRegistry\UploadGenericArtifactMetadata
+    {
+    }
 }

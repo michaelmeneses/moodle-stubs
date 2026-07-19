@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityPosture;
-
-class AssetDetails extends \Google\Model
-{
-    /**
-     * Information about the Cloud Asset Inventory asset that violated a policy.
-     * The format of this information can change at any time without prior notice.
-     * Your application must not depend on this information in any way.
-     *
-     * @var string
-     */
-    public $asset;
-    /**
-     * The type of Cloud Asset Inventory asset. For a list of asset types, see
-     * [Supported asset types](https://cloud.google.com/asset-
-     * inventory/docs/supported-asset-types).
-     *
-     * @var string
-     */
-    public $assetType;
-    /**
-     * Information about the Cloud Asset Inventory asset that violated a policy.
-     * The format of this information can change at any time without prior notice.
-     * Your application must not depend on this information in any way.
-     *
-     * @param string $asset
-     */
-    public function setAsset($asset)
+namespace Google\Service\SecurityPosture {
+    class AssetDetails extends \Google\Model
     {
+        /**
+         * Information about the Cloud Asset Inventory asset that violated a policy.
+         * The format of this information can change at any time without prior notice.
+         * Your application must not depend on this information in any way.
+         *
+         * @var string
+         */
+        public $asset;
+        /**
+         * The type of Cloud Asset Inventory asset. For a list of asset types, see
+         * [Supported asset types](https://cloud.google.com/asset-
+         * inventory/docs/supported-asset-types).
+         *
+         * @var string
+         */
+        public $assetType;
+        /**
+         * Information about the Cloud Asset Inventory asset that violated a policy.
+         * The format of this information can change at any time without prior notice.
+         * Your application must not depend on this information in any way.
+         *
+         * @param string $asset
+         */
+        public function setAsset($asset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAsset()
+        {
+        }
+        /**
+         * The type of Cloud Asset Inventory asset. For a list of asset types, see
+         * [Supported asset types](https://cloud.google.com/asset-
+         * inventory/docs/supported-asset-types).
+         *
+         * @param string $assetType
+         */
+        public function setAssetType($assetType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAssetType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityPosture\AssetDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAsset()
-    {
-    }
-    /**
-     * The type of Cloud Asset Inventory asset. For a list of asset types, see
-     * [Supported asset types](https://cloud.google.com/asset-
-     * inventory/docs/supported-asset-types).
-     *
-     * @param string $assetType
-     */
-    public function setAssetType($assetType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAssetType()
+    class Google_Service_SecurityPosture_AssetDetails extends \Google\Service\SecurityPosture\AssetDetails
     {
     }
 }

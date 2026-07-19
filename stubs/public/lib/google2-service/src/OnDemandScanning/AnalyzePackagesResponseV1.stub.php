@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OnDemandScanning;
-
-class AnalyzePackagesResponseV1 extends \Google\Model
-{
-    /**
-     * The name of the scan resource created by this successful scan.
-     *
-     * @var string
-     */
-    public $scan;
-    /**
-     * The name of the scan resource created by this successful scan.
-     *
-     * @param string $scan
-     */
-    public function setScan($scan)
+namespace Google\Service\OnDemandScanning {
+    class AnalyzePackagesResponseV1 extends \Google\Model
     {
+        /**
+         * The name of the scan resource created by this successful scan.
+         *
+         * @var string
+         */
+        public $scan;
+        /**
+         * The name of the scan resource created by this successful scan.
+         *
+         * @param string $scan
+         */
+        public function setScan($scan)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScan()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OnDemandScanning\AnalyzePackagesResponseV1 registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getScan()
+    class Google_Service_OnDemandScanning_AnalyzePackagesResponseV1 extends \Google\Service\OnDemandScanning\AnalyzePackagesResponseV1
     {
     }
 }

@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TravelImpactModel;
-
-class ModelVersion extends \Google\Model
-{
-    /**
-     * Dated versions: Model datasets are recreated with refreshed input data but
-     * no change to the algorithms regularly.
-     *
-     * @var string
-     */
-    public $dated;
-    /**
-     * Major versions: Major changes to methodology (e.g. adding new data sources
-     * to the model that lead to major output changes). Such changes will be
-     * infrequent and announced well in advance. Might involve API version
-     * changes, which will respect [Google Cloud API
-     * guidelines](https://cloud.google.com/endpoints/docs/openapi/versioning-an-
-     * api#backwards-incompatible)
-     *
-     * @var int
-     */
-    public $major;
-    /**
-     * Minor versions: Changes to the model that, while being consistent across
-     * schema versions, change the model parameters or implementation.
-     *
-     * @var int
-     */
-    public $minor;
-    /**
-     * Patch versions: Implementation changes meant to address bugs or
-     * inaccuracies in the model implementation.
-     *
-     * @var int
-     */
-    public $patch;
-    /**
-     * Dated versions: Model datasets are recreated with refreshed input data but
-     * no change to the algorithms regularly.
-     *
-     * @param string $dated
-     */
-    public function setDated($dated)
+namespace Google\Service\TravelImpactModel {
+    class ModelVersion extends \Google\Model
     {
+        /**
+         * Dated versions: Model datasets are recreated with refreshed input data but
+         * no change to the algorithms regularly.
+         *
+         * @var string
+         */
+        public $dated;
+        /**
+         * Major versions: Major changes to methodology (e.g. adding new data sources
+         * to the model that lead to major output changes). Such changes will be
+         * infrequent and announced well in advance. Might involve API version
+         * changes, which will respect [Google Cloud API
+         * guidelines](https://cloud.google.com/endpoints/docs/openapi/versioning-an-
+         * api#backwards-incompatible)
+         *
+         * @var int
+         */
+        public $major;
+        /**
+         * Minor versions: Changes to the model that, while being consistent across
+         * schema versions, change the model parameters or implementation.
+         *
+         * @var int
+         */
+        public $minor;
+        /**
+         * Patch versions: Implementation changes meant to address bugs or
+         * inaccuracies in the model implementation.
+         *
+         * @var int
+         */
+        public $patch;
+        /**
+         * Dated versions: Model datasets are recreated with refreshed input data but
+         * no change to the algorithms regularly.
+         *
+         * @param string $dated
+         */
+        public function setDated($dated)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDated()
+        {
+        }
+        /**
+         * Major versions: Major changes to methodology (e.g. adding new data sources
+         * to the model that lead to major output changes). Such changes will be
+         * infrequent and announced well in advance. Might involve API version
+         * changes, which will respect [Google Cloud API
+         * guidelines](https://cloud.google.com/endpoints/docs/openapi/versioning-an-
+         * api#backwards-incompatible)
+         *
+         * @param int $major
+         */
+        public function setMajor($major)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMajor()
+        {
+        }
+        /**
+         * Minor versions: Changes to the model that, while being consistent across
+         * schema versions, change the model parameters or implementation.
+         *
+         * @param int $minor
+         */
+        public function setMinor($minor)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinor()
+        {
+        }
+        /**
+         * Patch versions: Implementation changes meant to address bugs or
+         * inaccuracies in the model implementation.
+         *
+         * @param int $patch
+         */
+        public function setPatch($patch)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPatch()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\TravelImpactModel\ModelVersion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDated()
-    {
-    }
-    /**
-     * Major versions: Major changes to methodology (e.g. adding new data sources
-     * to the model that lead to major output changes). Such changes will be
-     * infrequent and announced well in advance. Might involve API version
-     * changes, which will respect [Google Cloud API
-     * guidelines](https://cloud.google.com/endpoints/docs/openapi/versioning-an-
-     * api#backwards-incompatible)
-     *
-     * @param int $major
-     */
-    public function setMajor($major)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMajor()
-    {
-    }
-    /**
-     * Minor versions: Changes to the model that, while being consistent across
-     * schema versions, change the model parameters or implementation.
-     *
-     * @param int $minor
-     */
-    public function setMinor($minor)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinor()
-    {
-    }
-    /**
-     * Patch versions: Implementation changes meant to address bugs or
-     * inaccuracies in the model implementation.
-     *
-     * @param int $patch
-     */
-    public function setPatch($patch)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPatch()
+    class Google_Service_TravelImpactModel_ModelVersion extends \Google\Service\TravelImpactModel\ModelVersion
     {
     }
 }

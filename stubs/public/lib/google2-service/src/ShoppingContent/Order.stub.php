@@ -21,335 +21,344 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class Order extends \Google\Collection
-{
-    protected $collection_key = 'shipments';
-    /**
-     * @var bool
-     */
-    public $acknowledged;
-    protected $annotationsType = OrderOrderAnnotation::class;
-    protected $annotationsDataType = 'array';
-    protected $billingAddressType = OrderAddress::class;
-    protected $billingAddressDataType = '';
-    protected $customerType = OrderCustomer::class;
-    protected $customerDataType = '';
-    protected $deliveryDetailsType = OrderDeliveryDetails::class;
-    protected $deliveryDetailsDataType = '';
-    /**
-     * @var string
-     */
-    public $id;
-    /**
-     * @var string
-     */
-    public $kind;
-    protected $lineItemsType = OrderLineItem::class;
-    protected $lineItemsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $merchantId;
-    /**
-     * @var string
-     */
-    public $merchantOrderId;
-    protected $netPriceAmountType = Price::class;
-    protected $netPriceAmountDataType = '';
-    protected $netTaxAmountType = Price::class;
-    protected $netTaxAmountDataType = '';
-    /**
-     * @var string
-     */
-    public $paymentStatus;
-    protected $pickupDetailsType = OrderPickupDetails::class;
-    protected $pickupDetailsDataType = '';
-    /**
-     * @var string
-     */
-    public $placedDate;
-    protected $promotionsType = OrderPromotion::class;
-    protected $promotionsDataType = 'array';
-    protected $refundsType = OrderRefund::class;
-    protected $refundsDataType = 'array';
-    protected $shipmentsType = OrderShipment::class;
-    protected $shipmentsDataType = 'array';
-    protected $shippingCostType = Price::class;
-    protected $shippingCostDataType = '';
-    protected $shippingCostTaxType = Price::class;
-    protected $shippingCostTaxDataType = '';
-    /**
-     * @var string
-     */
-    public $status;
-    /**
-     * @var string
-     */
-    public $taxCollector;
-    /**
-     * @param bool
-     */
-    public function setAcknowledged($acknowledged)
+namespace Google\Service\ShoppingContent {
+    class Order extends \Google\Collection
     {
+        protected $collection_key = 'shipments';
+        /**
+         * @var bool
+         */
+        public $acknowledged;
+        protected $annotationsType = OrderOrderAnnotation::class;
+        protected $annotationsDataType = 'array';
+        protected $billingAddressType = OrderAddress::class;
+        protected $billingAddressDataType = '';
+        protected $customerType = OrderCustomer::class;
+        protected $customerDataType = '';
+        protected $deliveryDetailsType = OrderDeliveryDetails::class;
+        protected $deliveryDetailsDataType = '';
+        /**
+         * @var string
+         */
+        public $id;
+        /**
+         * @var string
+         */
+        public $kind;
+        protected $lineItemsType = OrderLineItem::class;
+        protected $lineItemsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $merchantId;
+        /**
+         * @var string
+         */
+        public $merchantOrderId;
+        protected $netPriceAmountType = Price::class;
+        protected $netPriceAmountDataType = '';
+        protected $netTaxAmountType = Price::class;
+        protected $netTaxAmountDataType = '';
+        /**
+         * @var string
+         */
+        public $paymentStatus;
+        protected $pickupDetailsType = OrderPickupDetails::class;
+        protected $pickupDetailsDataType = '';
+        /**
+         * @var string
+         */
+        public $placedDate;
+        protected $promotionsType = OrderPromotion::class;
+        protected $promotionsDataType = 'array';
+        protected $refundsType = OrderRefund::class;
+        protected $refundsDataType = 'array';
+        protected $shipmentsType = OrderShipment::class;
+        protected $shipmentsDataType = 'array';
+        protected $shippingCostType = Price::class;
+        protected $shippingCostDataType = '';
+        protected $shippingCostTaxType = Price::class;
+        protected $shippingCostTaxDataType = '';
+        /**
+         * @var string
+         */
+        public $status;
+        /**
+         * @var string
+         */
+        public $taxCollector;
+        /**
+         * @param bool
+         */
+        public function setAcknowledged($acknowledged)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAcknowledged()
+        {
+        }
+        /**
+         * @param OrderOrderAnnotation[]
+         */
+        public function setAnnotations($annotations)
+        {
+        }
+        /**
+         * @return OrderOrderAnnotation[]
+         */
+        public function getAnnotations()
+        {
+        }
+        /**
+         * @param OrderAddress
+         */
+        public function setBillingAddress(OrderAddress $billingAddress)
+        {
+        }
+        /**
+         * @return OrderAddress
+         */
+        public function getBillingAddress()
+        {
+        }
+        /**
+         * @param OrderCustomer
+         */
+        public function setCustomer(OrderCustomer $customer)
+        {
+        }
+        /**
+         * @return OrderCustomer
+         */
+        public function getCustomer()
+        {
+        }
+        /**
+         * @param OrderDeliveryDetails
+         */
+        public function setDeliveryDetails(OrderDeliveryDetails $deliveryDetails)
+        {
+        }
+        /**
+         * @return OrderDeliveryDetails
+         */
+        public function getDeliveryDetails()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param OrderLineItem[]
+         */
+        public function setLineItems($lineItems)
+        {
+        }
+        /**
+         * @return OrderLineItem[]
+         */
+        public function getLineItems()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMerchantId($merchantId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMerchantId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMerchantOrderId($merchantOrderId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMerchantOrderId()
+        {
+        }
+        /**
+         * @param Price
+         */
+        public function setNetPriceAmount(Price $netPriceAmount)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getNetPriceAmount()
+        {
+        }
+        /**
+         * @param Price
+         */
+        public function setNetTaxAmount(Price $netTaxAmount)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getNetTaxAmount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPaymentStatus($paymentStatus)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPaymentStatus()
+        {
+        }
+        /**
+         * @param OrderPickupDetails
+         */
+        public function setPickupDetails(OrderPickupDetails $pickupDetails)
+        {
+        }
+        /**
+         * @return OrderPickupDetails
+         */
+        public function getPickupDetails()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPlacedDate($placedDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlacedDate()
+        {
+        }
+        /**
+         * @param OrderPromotion[]
+         */
+        public function setPromotions($promotions)
+        {
+        }
+        /**
+         * @return OrderPromotion[]
+         */
+        public function getPromotions()
+        {
+        }
+        /**
+         * @param OrderRefund[]
+         */
+        public function setRefunds($refunds)
+        {
+        }
+        /**
+         * @return OrderRefund[]
+         */
+        public function getRefunds()
+        {
+        }
+        /**
+         * @param OrderShipment[]
+         */
+        public function setShipments($shipments)
+        {
+        }
+        /**
+         * @return OrderShipment[]
+         */
+        public function getShipments()
+        {
+        }
+        /**
+         * @param Price
+         */
+        public function setShippingCost(Price $shippingCost)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getShippingCost()
+        {
+        }
+        /**
+         * @param Price
+         */
+        public function setShippingCostTax(Price $shippingCostTax)
+        {
+        }
+        /**
+         * @return Price
+         */
+        public function getShippingCostTax()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTaxCollector($taxCollector)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTaxCollector()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\ShoppingContent\Order registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAcknowledged()
-    {
-    }
-    /**
-     * @param OrderOrderAnnotation[]
-     */
-    public function setAnnotations($annotations)
-    {
-    }
-    /**
-     * @return OrderOrderAnnotation[]
-     */
-    public function getAnnotations()
-    {
-    }
-    /**
-     * @param OrderAddress
-     */
-    public function setBillingAddress(OrderAddress $billingAddress)
-    {
-    }
-    /**
-     * @return OrderAddress
-     */
-    public function getBillingAddress()
-    {
-    }
-    /**
-     * @param OrderCustomer
-     */
-    public function setCustomer(OrderCustomer $customer)
-    {
-    }
-    /**
-     * @return OrderCustomer
-     */
-    public function getCustomer()
-    {
-    }
-    /**
-     * @param OrderDeliveryDetails
-     */
-    public function setDeliveryDetails(OrderDeliveryDetails $deliveryDetails)
-    {
-    }
-    /**
-     * @return OrderDeliveryDetails
-     */
-    public function getDeliveryDetails()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * @param OrderLineItem[]
-     */
-    public function setLineItems($lineItems)
-    {
-    }
-    /**
-     * @return OrderLineItem[]
-     */
-    public function getLineItems()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMerchantId($merchantId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMerchantId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMerchantOrderId($merchantOrderId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMerchantOrderId()
-    {
-    }
-    /**
-     * @param Price
-     */
-    public function setNetPriceAmount(Price $netPriceAmount)
-    {
-    }
-    /**
-     * @return Price
-     */
-    public function getNetPriceAmount()
-    {
-    }
-    /**
-     * @param Price
-     */
-    public function setNetTaxAmount(Price $netTaxAmount)
-    {
-    }
-    /**
-     * @return Price
-     */
-    public function getNetTaxAmount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPaymentStatus($paymentStatus)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPaymentStatus()
-    {
-    }
-    /**
-     * @param OrderPickupDetails
-     */
-    public function setPickupDetails(OrderPickupDetails $pickupDetails)
-    {
-    }
-    /**
-     * @return OrderPickupDetails
-     */
-    public function getPickupDetails()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPlacedDate($placedDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPlacedDate()
-    {
-    }
-    /**
-     * @param OrderPromotion[]
-     */
-    public function setPromotions($promotions)
-    {
-    }
-    /**
-     * @return OrderPromotion[]
-     */
-    public function getPromotions()
-    {
-    }
-    /**
-     * @param OrderRefund[]
-     */
-    public function setRefunds($refunds)
-    {
-    }
-    /**
-     * @return OrderRefund[]
-     */
-    public function getRefunds()
-    {
-    }
-    /**
-     * @param OrderShipment[]
-     */
-    public function setShipments($shipments)
-    {
-    }
-    /**
-     * @return OrderShipment[]
-     */
-    public function getShipments()
-    {
-    }
-    /**
-     * @param Price
-     */
-    public function setShippingCost(Price $shippingCost)
-    {
-    }
-    /**
-     * @return Price
-     */
-    public function getShippingCost()
-    {
-    }
-    /**
-     * @param Price
-     */
-    public function setShippingCostTax(Price $shippingCostTax)
-    {
-    }
-    /**
-     * @return Price
-     */
-    public function getShippingCostTax()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatus()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTaxCollector($taxCollector)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTaxCollector()
+    class Google_Service_ShoppingContent_Order extends \Google\Service\ShoppingContent\Order
     {
     }
 }

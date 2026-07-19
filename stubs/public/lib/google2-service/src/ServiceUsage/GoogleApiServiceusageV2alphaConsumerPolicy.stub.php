@@ -21,143 +21,152 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceUsage;
-
-class GoogleApiServiceusageV2alphaConsumerPolicy extends \Google\Collection
-{
-    protected $collection_key = 'enableRules';
-    /**
-     * Optional. Annotations is an unstructured key-value map stored with a policy
-     * that may be set by external tools to store and retrieve arbitrary metadata.
-     * They are not queryable and should be preserved when modifying objects.
-     * [AIP-128](https://google.aip.dev/128#annotations)
-     *
-     * @var string[]
-     */
-    public $annotations;
-    /**
-     * Output only. The time the policy was created. For singleton policies, this
-     * is the first touch of the policy.
-     *
-     * @var string
-     */
-    public $createTime;
-    protected $enableRulesType = GoogleApiServiceusageV2alphaEnableRule::class;
-    protected $enableRulesDataType = 'array';
-    /**
-     * Output only. An opaque tag indicating the current version of the policy,
-     * used for concurrency control.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Output only. The resource name of the policy. Only the `default` policy is
-     * supported: `projects/12345/consumerPolicies/default`,
-     * `folders/12345/consumerPolicies/default`,
-     * `organizations/12345/consumerPolicies/default`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. The time the policy was last updated.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Optional. Annotations is an unstructured key-value map stored with a policy
-     * that may be set by external tools to store and retrieve arbitrary metadata.
-     * They are not queryable and should be preserved when modifying objects.
-     * [AIP-128](https://google.aip.dev/128#annotations)
-     *
-     * @param string[] $annotations
-     */
-    public function setAnnotations($annotations)
+namespace Google\Service\ServiceUsage {
+    class GoogleApiServiceusageV2alphaConsumerPolicy extends \Google\Collection
     {
+        protected $collection_key = 'enableRules';
+        /**
+         * Optional. Annotations is an unstructured key-value map stored with a policy
+         * that may be set by external tools to store and retrieve arbitrary metadata.
+         * They are not queryable and should be preserved when modifying objects.
+         * [AIP-128](https://google.aip.dev/128#annotations)
+         *
+         * @var string[]
+         */
+        public $annotations;
+        /**
+         * Output only. The time the policy was created. For singleton policies, this
+         * is the first touch of the policy.
+         *
+         * @var string
+         */
+        public $createTime;
+        protected $enableRulesType = GoogleApiServiceusageV2alphaEnableRule::class;
+        protected $enableRulesDataType = 'array';
+        /**
+         * Output only. An opaque tag indicating the current version of the policy,
+         * used for concurrency control.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Output only. The resource name of the policy. Only the `default` policy is
+         * supported: `projects/12345/consumerPolicies/default`,
+         * `folders/12345/consumerPolicies/default`,
+         * `organizations/12345/consumerPolicies/default`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. The time the policy was last updated.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Optional. Annotations is an unstructured key-value map stored with a policy
+         * that may be set by external tools to store and retrieve arbitrary metadata.
+         * They are not queryable and should be preserved when modifying objects.
+         * [AIP-128](https://google.aip.dev/128#annotations)
+         *
+         * @param string[] $annotations
+         */
+        public function setAnnotations($annotations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAnnotations()
+        {
+        }
+        /**
+         * Output only. The time the policy was created. For singleton policies, this
+         * is the first touch of the policy.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Enable rules define usable services, groups, and categories. There can
+         * currently be at most one `EnableRule`. This restriction will be lifted in
+         * later releases.
+         *
+         * @param GoogleApiServiceusageV2alphaEnableRule[] $enableRules
+         */
+        public function setEnableRules($enableRules)
+        {
+        }
+        /**
+         * @return GoogleApiServiceusageV2alphaEnableRule[]
+         */
+        public function getEnableRules()
+        {
+        }
+        /**
+         * Output only. An opaque tag indicating the current version of the policy,
+         * used for concurrency control.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Output only. The resource name of the policy. Only the `default` policy is
+         * supported: `projects/12345/consumerPolicies/default`,
+         * `folders/12345/consumerPolicies/default`,
+         * `organizations/12345/consumerPolicies/default`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. The time the policy was last updated.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ServiceUsage\GoogleApiServiceusageV2alphaConsumerPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotations()
-    {
-    }
-    /**
-     * Output only. The time the policy was created. For singleton policies, this
-     * is the first touch of the policy.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Enable rules define usable services, groups, and categories. There can
-     * currently be at most one `EnableRule`. This restriction will be lifted in
-     * later releases.
-     *
-     * @param GoogleApiServiceusageV2alphaEnableRule[] $enableRules
-     */
-    public function setEnableRules($enableRules)
-    {
-    }
-    /**
-     * @return GoogleApiServiceusageV2alphaEnableRule[]
-     */
-    public function getEnableRules()
-    {
-    }
-    /**
-     * Output only. An opaque tag indicating the current version of the policy,
-     * used for concurrency control.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * Output only. The resource name of the policy. Only the `default` policy is
-     * supported: `projects/12345/consumerPolicies/default`,
-     * `folders/12345/consumerPolicies/default`,
-     * `organizations/12345/consumerPolicies/default`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. The time the policy was last updated.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_ServiceUsage_GoogleApiServiceusageV2alphaConsumerPolicy extends \Google\Service\ServiceUsage\GoogleApiServiceusageV2alphaConsumerPolicy
     {
     }
 }

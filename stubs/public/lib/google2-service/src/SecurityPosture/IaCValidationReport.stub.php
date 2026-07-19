@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityPosture;
-
-class IaCValidationReport extends \Google\Collection
-{
-    protected $collection_key = 'violations';
-    /**
-     * Additional information about the report.
-     *
-     * @var string
-     */
-    public $note;
-    protected $violationsType = Violation::class;
-    protected $violationsDataType = 'array';
-    /**
-     * Additional information about the report.
-     *
-     * @param string $note
-     */
-    public function setNote($note)
+namespace Google\Service\SecurityPosture {
+    class IaCValidationReport extends \Google\Collection
     {
+        protected $collection_key = 'violations';
+        /**
+         * Additional information about the report.
+         *
+         * @var string
+         */
+        public $note;
+        protected $violationsType = Violation::class;
+        protected $violationsDataType = 'array';
+        /**
+         * Additional information about the report.
+         *
+         * @param string $note
+         */
+        public function setNote($note)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNote()
+        {
+        }
+        /**
+         * A list of every Violation found in the IaC configuration.
+         *
+         * @param Violation[] $violations
+         */
+        public function setViolations($violations)
+        {
+        }
+        /**
+         * @return Violation[]
+         */
+        public function getViolations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityPosture\IaCValidationReport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNote()
-    {
-    }
-    /**
-     * A list of every Violation found in the IaC configuration.
-     *
-     * @param Violation[] $violations
-     */
-    public function setViolations($violations)
-    {
-    }
-    /**
-     * @return Violation[]
-     */
-    public function getViolations()
+    class Google_Service_SecurityPosture_IaCValidationReport extends \Google\Service\SecurityPosture\IaCValidationReport
     {
     }
 }

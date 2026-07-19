@@ -21,77 +21,86 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Drive;
-
-class AboutTeamDriveThemes extends \Google\Model
-{
-    /**
-     * Deprecated: Use `driveThemes/backgroundImageLink` instead.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $backgroundImageLink;
-    /**
-     * Deprecated: Use `driveThemes/colorRgb` instead.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $colorRgb;
-    /**
-     * Deprecated: Use `driveThemes/id` instead.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $id;
-    /**
-     * Deprecated: Use `driveThemes/backgroundImageLink` instead.
-     *
-     * @deprecated
-     * @param string $backgroundImageLink
-     */
-    public function setBackgroundImageLink($backgroundImageLink)
+namespace Google\Service\Drive {
+    class AboutTeamDriveThemes extends \Google\Model
     {
+        /**
+         * Deprecated: Use `driveThemes/backgroundImageLink` instead.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $backgroundImageLink;
+        /**
+         * Deprecated: Use `driveThemes/colorRgb` instead.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $colorRgb;
+        /**
+         * Deprecated: Use `driveThemes/id` instead.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $id;
+        /**
+         * Deprecated: Use `driveThemes/backgroundImageLink` instead.
+         *
+         * @deprecated
+         * @param string $backgroundImageLink
+         */
+        public function setBackgroundImageLink($backgroundImageLink)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getBackgroundImageLink()
+        {
+        }
+        /**
+         * Deprecated: Use `driveThemes/colorRgb` instead.
+         *
+         * @deprecated
+         * @param string $colorRgb
+         */
+        public function setColorRgb($colorRgb)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getColorRgb()
+        {
+        }
+        /**
+         * Deprecated: Use `driveThemes/id` instead.
+         *
+         * @deprecated
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return string
+     * Runtime class alias of \Google\Service\Drive\AboutTeamDriveThemes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackgroundImageLink()
-    {
-    }
-    /**
-     * Deprecated: Use `driveThemes/colorRgb` instead.
-     *
-     * @deprecated
-     * @param string $colorRgb
-     */
-    public function setColorRgb($colorRgb)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getColorRgb()
-    {
-    }
-    /**
-     * Deprecated: Use `driveThemes/id` instead.
-     *
-     * @deprecated
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getId()
+    class Google_Service_Drive_AboutTeamDriveThemes extends \Google\Service\Drive\AboutTeamDriveThemes
     {
     }
 }

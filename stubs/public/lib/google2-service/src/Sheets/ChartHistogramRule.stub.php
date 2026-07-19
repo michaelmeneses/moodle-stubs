@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class ChartHistogramRule extends \Google\Model
-{
+namespace Google\Service\Sheets {
+    class ChartHistogramRule extends \Google\Model
+    {
+        /**
+         * The size of the buckets that are created. Must be positive.
+         *
+         * @var 
+         */
+        public $intervalSize;
+        /**
+         * The maximum value at which items are placed into buckets. Values greater
+         * than the maximum are grouped into a single bucket. If omitted, it is
+         * determined by the maximum item value.
+         *
+         * @var 
+         */
+        public $maxValue;
+        /**
+         * The minimum value at which items are placed into buckets. Values that are
+         * less than the minimum are grouped into a single bucket. If omitted, it is
+         * determined by the minimum item value.
+         *
+         * @var 
+         */
+        public $minValue;
+        public function setIntervalSize($intervalSize)
+        {
+        }
+        public function getIntervalSize()
+        {
+        }
+        public function setMaxValue($maxValue)
+        {
+        }
+        public function getMaxValue()
+        {
+        }
+        public function setMinValue($minValue)
+        {
+        }
+        public function getMinValue()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * The size of the buckets that are created. Must be positive.
-     *
-     * @var 
+     * Runtime class alias of \Google\Service\Sheets\ChartHistogramRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $intervalSize;
-    /**
-     * The maximum value at which items are placed into buckets. Values greater
-     * than the maximum are grouped into a single bucket. If omitted, it is
-     * determined by the maximum item value.
-     *
-     * @var 
-     */
-    public $maxValue;
-    /**
-     * The minimum value at which items are placed into buckets. Values that are
-     * less than the minimum are grouped into a single bucket. If omitted, it is
-     * determined by the minimum item value.
-     *
-     * @var 
-     */
-    public $minValue;
-    public function setIntervalSize($intervalSize)
-    {
-    }
-    public function getIntervalSize()
-    {
-    }
-    public function setMaxValue($maxValue)
-    {
-    }
-    public function getMaxValue()
-    {
-    }
-    public function setMinValue($minValue)
-    {
-    }
-    public function getMinValue()
+    class Google_Service_Sheets_ChartHistogramRule extends \Google\Service\Sheets\ChartHistogramRule
     {
     }
 }

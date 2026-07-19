@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaExecuteEventRequest extends \Google\Model
-{
-    protected $cloudEventType = IoCloudeventsV1CloudEvent::class;
-    protected $cloudEventDataType = '';
-    /**
-     * @param IoCloudeventsV1CloudEvent
-     */
-    public function setCloudEvent(IoCloudeventsV1CloudEvent $cloudEvent)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaExecuteEventRequest extends \Google\Model
     {
+        protected $cloudEventType = IoCloudeventsV1CloudEvent::class;
+        protected $cloudEventDataType = '';
+        /**
+         * @param IoCloudeventsV1CloudEvent
+         */
+        public function setCloudEvent(IoCloudeventsV1CloudEvent $cloudEvent)
+        {
+        }
+        /**
+         * @return IoCloudeventsV1CloudEvent
+         */
+        public function getCloudEvent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return IoCloudeventsV1CloudEvent
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaExecuteEventRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudEvent()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaExecuteEventRequest extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaExecuteEventRequest
     {
     }
 }

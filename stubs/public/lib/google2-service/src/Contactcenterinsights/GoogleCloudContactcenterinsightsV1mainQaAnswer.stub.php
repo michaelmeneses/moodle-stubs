@@ -21,125 +21,134 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1mainQaAnswer extends \Google\Collection
-{
-    protected $collection_key = 'tags';
-    protected $answerSourcesType = GoogleCloudContactcenterinsightsV1mainQaAnswerAnswerSource::class;
-    protected $answerSourcesDataType = 'array';
-    protected $answerValueType = GoogleCloudContactcenterinsightsV1mainQaAnswerAnswerValue::class;
-    protected $answerValueDataType = '';
-    /**
-     * The conversation the answer applies to.
-     *
-     * @var string
-     */
-    public $conversation;
-    /**
-     * The QaQuestion answered by this answer.
-     *
-     * @var string
-     */
-    public $qaQuestion;
-    /**
-     * Question text. E.g., "Did the agent greet the customer?"
-     *
-     * @var string
-     */
-    public $questionBody;
-    /**
-     * User-defined list of arbitrary tags. Matches the value from
-     * QaScorecard.ScorecardQuestion.tags. Used for grouping/organization and for
-     * weighting the score of each answer.
-     *
-     * @var string[]
-     */
-    public $tags;
-    /**
-     * List of all individual answers given to the question.
-     *
-     * @param GoogleCloudContactcenterinsightsV1mainQaAnswerAnswerSource[] $answerSources
-     */
-    public function setAnswerSources($answerSources)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1mainQaAnswer extends \Google\Collection
     {
+        protected $collection_key = 'tags';
+        protected $answerSourcesType = GoogleCloudContactcenterinsightsV1mainQaAnswerAnswerSource::class;
+        protected $answerSourcesDataType = 'array';
+        protected $answerValueType = GoogleCloudContactcenterinsightsV1mainQaAnswerAnswerValue::class;
+        protected $answerValueDataType = '';
+        /**
+         * The conversation the answer applies to.
+         *
+         * @var string
+         */
+        public $conversation;
+        /**
+         * The QaQuestion answered by this answer.
+         *
+         * @var string
+         */
+        public $qaQuestion;
+        /**
+         * Question text. E.g., "Did the agent greet the customer?"
+         *
+         * @var string
+         */
+        public $questionBody;
+        /**
+         * User-defined list of arbitrary tags. Matches the value from
+         * QaScorecard.ScorecardQuestion.tags. Used for grouping/organization and for
+         * weighting the score of each answer.
+         *
+         * @var string[]
+         */
+        public $tags;
+        /**
+         * List of all individual answers given to the question.
+         *
+         * @param GoogleCloudContactcenterinsightsV1mainQaAnswerAnswerSource[] $answerSources
+         */
+        public function setAnswerSources($answerSources)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1mainQaAnswerAnswerSource[]
+         */
+        public function getAnswerSources()
+        {
+        }
+        /**
+         * The main answer value, incorporating any manual edits if they exist.
+         *
+         * @param GoogleCloudContactcenterinsightsV1mainQaAnswerAnswerValue $answerValue
+         */
+        public function setAnswerValue(GoogleCloudContactcenterinsightsV1mainQaAnswerAnswerValue $answerValue)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1mainQaAnswerAnswerValue
+         */
+        public function getAnswerValue()
+        {
+        }
+        /**
+         * The conversation the answer applies to.
+         *
+         * @param string $conversation
+         */
+        public function setConversation($conversation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConversation()
+        {
+        }
+        /**
+         * The QaQuestion answered by this answer.
+         *
+         * @param string $qaQuestion
+         */
+        public function setQaQuestion($qaQuestion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQaQuestion()
+        {
+        }
+        /**
+         * Question text. E.g., "Did the agent greet the customer?"
+         *
+         * @param string $questionBody
+         */
+        public function setQuestionBody($questionBody)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQuestionBody()
+        {
+        }
+        /**
+         * User-defined list of arbitrary tags. Matches the value from
+         * QaScorecard.ScorecardQuestion.tags. Used for grouping/organization and for
+         * weighting the score of each answer.
+         *
+         * @param string[] $tags
+         */
+        public function setTags($tags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTags()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContactcenterinsightsV1mainQaAnswerAnswerSource[]
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainQaAnswer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnswerSources()
-    {
-    }
-    /**
-     * The main answer value, incorporating any manual edits if they exist.
-     *
-     * @param GoogleCloudContactcenterinsightsV1mainQaAnswerAnswerValue $answerValue
-     */
-    public function setAnswerValue(GoogleCloudContactcenterinsightsV1mainQaAnswerAnswerValue $answerValue)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1mainQaAnswerAnswerValue
-     */
-    public function getAnswerValue()
-    {
-    }
-    /**
-     * The conversation the answer applies to.
-     *
-     * @param string $conversation
-     */
-    public function setConversation($conversation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getConversation()
-    {
-    }
-    /**
-     * The QaQuestion answered by this answer.
-     *
-     * @param string $qaQuestion
-     */
-    public function setQaQuestion($qaQuestion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQaQuestion()
-    {
-    }
-    /**
-     * Question text. E.g., "Did the agent greet the customer?"
-     *
-     * @param string $questionBody
-     */
-    public function setQuestionBody($questionBody)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getQuestionBody()
-    {
-    }
-    /**
-     * User-defined list of arbitrary tags. Matches the value from
-     * QaScorecard.ScorecardQuestion.tags. Used for grouping/organization and for
-     * weighting the score of each answer.
-     *
-     * @param string[] $tags
-     */
-    public function setTags($tags)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTags()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1mainQaAnswer extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainQaAnswer
     {
     }
 }

@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaDeleteUserStoreMetadata extends \Google\Model
-{
-    /**
-     * The number of end users under the user store that failed to be deleted.
-     *
-     * @var string
-     */
-    public $failureCount;
-    /**
-     * The number of end users under the user store that were successfully
-     * deleted.
-     *
-     * @var string
-     */
-    public $successCount;
-    /**
-     * The number of end users under the user store that failed to be deleted.
-     *
-     * @param string $failureCount
-     */
-    public function setFailureCount($failureCount)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaDeleteUserStoreMetadata extends \Google\Model
     {
+        /**
+         * The number of end users under the user store that failed to be deleted.
+         *
+         * @var string
+         */
+        public $failureCount;
+        /**
+         * The number of end users under the user store that were successfully
+         * deleted.
+         *
+         * @var string
+         */
+        public $successCount;
+        /**
+         * The number of end users under the user store that failed to be deleted.
+         *
+         * @param string $failureCount
+         */
+        public function setFailureCount($failureCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFailureCount()
+        {
+        }
+        /**
+         * The number of end users under the user store that were successfully
+         * deleted.
+         *
+         * @param string $successCount
+         */
+        public function setSuccessCount($successCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSuccessCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaDeleteUserStoreMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFailureCount()
-    {
-    }
-    /**
-     * The number of end users under the user store that were successfully
-     * deleted.
-     *
-     * @param string $successCount
-     */
-    public function setSuccessCount($successCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSuccessCount()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaDeleteUserStoreMetadata extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaDeleteUserStoreMetadata
     {
     }
 }

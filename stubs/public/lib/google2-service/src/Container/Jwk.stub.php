@@ -21,188 +21,197 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Container;
-
-class Jwk extends \Google\Model
-{
-    /**
-     * Algorithm.
-     *
-     * @var string
-     */
-    public $alg;
-    /**
-     * Used for ECDSA keys.
-     *
-     * @var string
-     */
-    public $crv;
-    /**
-     * Used for RSA keys.
-     *
-     * @var string
-     */
-    public $e;
-    /**
-     * Key ID.
-     *
-     * @var string
-     */
-    public $kid;
-    /**
-     * Key Type.
-     *
-     * @var string
-     */
-    public $kty;
-    /**
-     * Used for RSA keys.
-     *
-     * @var string
-     */
-    public $n;
-    /**
-     * Permitted uses for the public keys.
-     *
-     * @var string
-     */
-    public $use;
-    /**
-     * Used for ECDSA keys.
-     *
-     * @var string
-     */
-    public $x;
-    /**
-     * Used for ECDSA keys.
-     *
-     * @var string
-     */
-    public $y;
-    /**
-     * Algorithm.
-     *
-     * @param string $alg
-     */
-    public function setAlg($alg)
+namespace Google\Service\Container {
+    class Jwk extends \Google\Model
     {
+        /**
+         * Algorithm.
+         *
+         * @var string
+         */
+        public $alg;
+        /**
+         * Used for ECDSA keys.
+         *
+         * @var string
+         */
+        public $crv;
+        /**
+         * Used for RSA keys.
+         *
+         * @var string
+         */
+        public $e;
+        /**
+         * Key ID.
+         *
+         * @var string
+         */
+        public $kid;
+        /**
+         * Key Type.
+         *
+         * @var string
+         */
+        public $kty;
+        /**
+         * Used for RSA keys.
+         *
+         * @var string
+         */
+        public $n;
+        /**
+         * Permitted uses for the public keys.
+         *
+         * @var string
+         */
+        public $use;
+        /**
+         * Used for ECDSA keys.
+         *
+         * @var string
+         */
+        public $x;
+        /**
+         * Used for ECDSA keys.
+         *
+         * @var string
+         */
+        public $y;
+        /**
+         * Algorithm.
+         *
+         * @param string $alg
+         */
+        public function setAlg($alg)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAlg()
+        {
+        }
+        /**
+         * Used for ECDSA keys.
+         *
+         * @param string $crv
+         */
+        public function setCrv($crv)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCrv()
+        {
+        }
+        /**
+         * Used for RSA keys.
+         *
+         * @param string $e
+         */
+        public function setE($e)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getE()
+        {
+        }
+        /**
+         * Key ID.
+         *
+         * @param string $kid
+         */
+        public function setKid($kid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKid()
+        {
+        }
+        /**
+         * Key Type.
+         *
+         * @param string $kty
+         */
+        public function setKty($kty)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKty()
+        {
+        }
+        /**
+         * Used for RSA keys.
+         *
+         * @param string $n
+         */
+        public function setN($n)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getN()
+        {
+        }
+        /**
+         * Permitted uses for the public keys.
+         *
+         * @param string $use
+         */
+        public function setUse($use)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUse()
+        {
+        }
+        /**
+         * Used for ECDSA keys.
+         *
+         * @param string $x
+         */
+        public function setX($x)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getX()
+        {
+        }
+        /**
+         * Used for ECDSA keys.
+         *
+         * @param string $y
+         */
+        public function setY($y)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getY()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Container\Jwk registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlg()
-    {
-    }
-    /**
-     * Used for ECDSA keys.
-     *
-     * @param string $crv
-     */
-    public function setCrv($crv)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCrv()
-    {
-    }
-    /**
-     * Used for RSA keys.
-     *
-     * @param string $e
-     */
-    public function setE($e)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getE()
-    {
-    }
-    /**
-     * Key ID.
-     *
-     * @param string $kid
-     */
-    public function setKid($kid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKid()
-    {
-    }
-    /**
-     * Key Type.
-     *
-     * @param string $kty
-     */
-    public function setKty($kty)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKty()
-    {
-    }
-    /**
-     * Used for RSA keys.
-     *
-     * @param string $n
-     */
-    public function setN($n)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getN()
-    {
-    }
-    /**
-     * Permitted uses for the public keys.
-     *
-     * @param string $use
-     */
-    public function setUse($use)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUse()
-    {
-    }
-    /**
-     * Used for ECDSA keys.
-     *
-     * @param string $x
-     */
-    public function setX($x)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getX()
-    {
-    }
-    /**
-     * Used for ECDSA keys.
-     *
-     * @param string $y
-     */
-    public function setY($y)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getY()
+    class Google_Service_Container_Jwk extends \Google\Service\Container\Jwk
     {
     }
 }

@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SchemaPredictInstanceImageObjectDetectionPredictionInstance extends \Google\Model
-{
-    /**
-     * The image bytes or Cloud Storage URI to make the prediction on.
-     *
-     * @var string
-     */
-    public $content;
-    /**
-     * The MIME type of the content of the image. Only the images in below listed
-     * MIME types are supported. - image/jpeg - image/gif - image/png - image/webp
-     * - image/bmp - image/tiff - image/vnd.microsoft.icon
-     *
-     * @var string
-     */
-    public $mimeType;
-    /**
-     * The image bytes or Cloud Storage URI to make the prediction on.
-     *
-     * @param string $content
-     */
-    public function setContent($content)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SchemaPredictInstanceImageObjectDetectionPredictionInstance extends \Google\Model
     {
+        /**
+         * The image bytes or Cloud Storage URI to make the prediction on.
+         *
+         * @var string
+         */
+        public $content;
+        /**
+         * The MIME type of the content of the image. Only the images in below listed
+         * MIME types are supported. - image/jpeg - image/gif - image/png - image/webp
+         * - image/bmp - image/tiff - image/vnd.microsoft.icon
+         *
+         * @var string
+         */
+        public $mimeType;
+        /**
+         * The image bytes or Cloud Storage URI to make the prediction on.
+         *
+         * @param string $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * The MIME type of the content of the image. Only the images in below listed
+         * MIME types are supported. - image/jpeg - image/gif - image/png - image/webp
+         * - image/bmp - image/tiff - image/vnd.microsoft.icon
+         *
+         * @param string $mimeType
+         */
+        public function setMimeType($mimeType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMimeType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPredictInstanceImageObjectDetectionPredictionInstance registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
-    {
-    }
-    /**
-     * The MIME type of the content of the image. Only the images in below listed
-     * MIME types are supported. - image/jpeg - image/gif - image/png - image/webp
-     * - image/bmp - image/tiff - image/vnd.microsoft.icon
-     *
-     * @param string $mimeType
-     */
-    public function setMimeType($mimeType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMimeType()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SchemaPredictInstanceImageObjectDetectionPredictionInstance extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SchemaPredictInstanceImageObjectDetectionPredictionInstance
     {
     }
 }

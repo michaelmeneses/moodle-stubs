@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaListEnginesResponse extends \Google\Collection
-{
-    protected $collection_key = 'engines';
-    protected $enginesType = GoogleCloudDiscoveryengineV1betaEngine::class;
-    protected $enginesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaEngine[]
-     */
-    public function setEngines($engines)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaListEnginesResponse extends \Google\Collection
     {
+        protected $collection_key = 'engines';
+        protected $enginesType = GoogleCloudDiscoveryengineV1betaEngine::class;
+        protected $enginesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaEngine[]
+         */
+        public function setEngines($engines)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaEngine[]
+         */
+        public function getEngines()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1betaEngine[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaListEnginesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEngines()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaListEnginesResponse extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaListEnginesResponse
     {
     }
 }

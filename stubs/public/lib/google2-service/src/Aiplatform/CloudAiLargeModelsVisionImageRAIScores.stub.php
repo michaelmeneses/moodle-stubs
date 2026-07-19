@@ -21,20 +21,29 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class CloudAiLargeModelsVisionImageRAIScores extends \Google\Model
-{
-    /**
-     * Agile watermark score for image.
-     *
-     * @var 
-     */
-    public $agileWatermarkDetectionScore;
-    public function setAgileWatermarkDetectionScore($agileWatermarkDetectionScore)
+namespace Google\Service\Aiplatform {
+    class CloudAiLargeModelsVisionImageRAIScores extends \Google\Model
     {
+        /**
+         * Agile watermark score for image.
+         *
+         * @var 
+         */
+        public $agileWatermarkDetectionScore;
+        public function setAgileWatermarkDetectionScore($agileWatermarkDetectionScore)
+        {
+        }
+        public function getAgileWatermarkDetectionScore()
+        {
+        }
     }
-    public function getAgileWatermarkDetectionScore()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Aiplatform\CloudAiLargeModelsVisionImageRAIScores registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Aiplatform_CloudAiLargeModelsVisionImageRAIScores extends \Google\Service\Aiplatform\CloudAiLargeModelsVisionImageRAIScores
     {
     }
 }

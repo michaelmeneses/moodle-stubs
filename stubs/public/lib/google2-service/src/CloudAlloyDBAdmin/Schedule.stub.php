@@ -21,120 +21,129 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAlloyDBAdmin;
-
-class Schedule extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $cronExpression;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var bool
-     */
-    public $disabled;
-    /**
-     * @var string
-     */
-    public $durationSec;
-    /**
-     * @var string
-     */
-    public $minNodeCount;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $timeZone;
-    /**
-     * @param string
-     */
-    public function setCronExpression($cronExpression)
+namespace Google\Service\CloudAlloyDBAdmin {
+    class Schedule extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $cronExpression;
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @var bool
+         */
+        public $disabled;
+        /**
+         * @var string
+         */
+        public $durationSec;
+        /**
+         * @var string
+         */
+        public $minNodeCount;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $timeZone;
+        /**
+         * @param string
+         */
+        public function setCronExpression($cronExpression)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCronExpression()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setDisabled($disabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisabled()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDurationSec($durationSec)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDurationSec()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMinNodeCount($minNodeCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMinNodeCount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setTimeZone($timeZone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimeZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudAlloyDBAdmin\Schedule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCronExpression()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setDisabled($disabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDisabled()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDurationSec($durationSec)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDurationSec()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMinNodeCount($minNodeCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMinNodeCount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setTimeZone($timeZone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimeZone()
+    class Google_Service_CloudAlloyDBAdmin_Schedule extends \Google\Service\CloudAlloyDBAdmin\Schedule
     {
     }
 }

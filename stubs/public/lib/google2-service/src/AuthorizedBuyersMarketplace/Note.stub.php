@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AuthorizedBuyersMarketplace;
-
-class Note extends \Google\Model
-{
-    /**
-     * A placeholder for an undefined buyer/seller role.
-     */
-    public const CREATOR_ROLE_BUYER_SELLER_ROLE_UNSPECIFIED = 'BUYER_SELLER_ROLE_UNSPECIFIED';
-    /**
-     * Specifies the role as buyer.
-     */
-    public const CREATOR_ROLE_BUYER = 'BUYER';
-    /**
-     * Specifies the role as seller.
-     */
-    public const CREATOR_ROLE_SELLER = 'SELLER';
-    /**
-     * Output only. When this note was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. The role who created the note.
-     *
-     * @var string
-     */
-    public $creatorRole;
-    /**
-     * The text of the note. Maximum length is 1024 characters.
-     *
-     * @var string
-     */
-    public $note;
-    /**
-     * Output only. When this note was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\AuthorizedBuyersMarketplace {
+    class Note extends \Google\Model
     {
+        /**
+         * A placeholder for an undefined buyer/seller role.
+         */
+        public const CREATOR_ROLE_BUYER_SELLER_ROLE_UNSPECIFIED = 'BUYER_SELLER_ROLE_UNSPECIFIED';
+        /**
+         * Specifies the role as buyer.
+         */
+        public const CREATOR_ROLE_BUYER = 'BUYER';
+        /**
+         * Specifies the role as seller.
+         */
+        public const CREATOR_ROLE_SELLER = 'SELLER';
+        /**
+         * Output only. When this note was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. The role who created the note.
+         *
+         * @var string
+         */
+        public $creatorRole;
+        /**
+         * The text of the note. Maximum length is 1024 characters.
+         *
+         * @var string
+         */
+        public $note;
+        /**
+         * Output only. When this note was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. The role who created the note.
+         *
+         * Accepted values: BUYER_SELLER_ROLE_UNSPECIFIED, BUYER, SELLER
+         *
+         * @param self::CREATOR_ROLE_* $creatorRole
+         */
+        public function setCreatorRole($creatorRole)
+        {
+        }
+        /**
+         * @return self::CREATOR_ROLE_*
+         */
+        public function getCreatorRole()
+        {
+        }
+        /**
+         * The text of the note. Maximum length is 1024 characters.
+         *
+         * @param string $note
+         */
+        public function setNote($note)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNote()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AuthorizedBuyersMarketplace\Note registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. The role who created the note.
-     *
-     * Accepted values: BUYER_SELLER_ROLE_UNSPECIFIED, BUYER, SELLER
-     *
-     * @param self::CREATOR_ROLE_* $creatorRole
-     */
-    public function setCreatorRole($creatorRole)
-    {
-    }
-    /**
-     * @return self::CREATOR_ROLE_*
-     */
-    public function getCreatorRole()
-    {
-    }
-    /**
-     * The text of the note. Maximum length is 1024 characters.
-     *
-     * @param string $note
-     */
-    public function setNote($note)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNote()
+    class Google_Service_AuthorizedBuyersMarketplace_Note extends \Google\Service\AuthorizedBuyersMarketplace\Note
     {
     }
 }

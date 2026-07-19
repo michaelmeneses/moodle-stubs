@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class GoogleFirestoreAdminV1ListBackupSchedulesResponse extends \Google\Collection
-{
-    protected $collection_key = 'backupSchedules';
-    protected $backupSchedulesType = GoogleFirestoreAdminV1BackupSchedule::class;
-    protected $backupSchedulesDataType = 'array';
-    /**
-     * List of all backup schedules.
-     *
-     * @param GoogleFirestoreAdminV1BackupSchedule[] $backupSchedules
-     */
-    public function setBackupSchedules($backupSchedules)
+namespace Google\Service\Firestore {
+    class GoogleFirestoreAdminV1ListBackupSchedulesResponse extends \Google\Collection
     {
+        protected $collection_key = 'backupSchedules';
+        protected $backupSchedulesType = GoogleFirestoreAdminV1BackupSchedule::class;
+        protected $backupSchedulesDataType = 'array';
+        /**
+         * List of all backup schedules.
+         *
+         * @param GoogleFirestoreAdminV1BackupSchedule[] $backupSchedules
+         */
+        public function setBackupSchedules($backupSchedules)
+        {
+        }
+        /**
+         * @return GoogleFirestoreAdminV1BackupSchedule[]
+         */
+        public function getBackupSchedules()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleFirestoreAdminV1BackupSchedule[]
+     * Runtime class alias of \Google\Service\Firestore\GoogleFirestoreAdminV1ListBackupSchedulesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackupSchedules()
+    class Google_Service_Firestore_GoogleFirestoreAdminV1ListBackupSchedulesResponse extends \Google\Service\Firestore\GoogleFirestoreAdminV1ListBackupSchedulesResponse
     {
     }
 }

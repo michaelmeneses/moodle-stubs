@@ -21,134 +21,143 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ProductStatusDestinationStatus extends \Google\Collection
-{
-    protected $collection_key = 'pendingCountries';
-    /**
-     * List of country codes (ISO 3166-1 alpha-2) where the offer is approved.
-     *
-     * @var string[]
-     */
-    public $approvedCountries;
-    /**
-     * The channel of the destination.
-     *
-     * @var string
-     */
-    public $channel;
-    /**
-     * The name of the destination
-     *
-     * @var string
-     */
-    public $destination;
-    /**
-     * List of country codes (ISO 3166-1 alpha-2) where the offer is disapproved.
-     *
-     * @var string[]
-     */
-    public $disapprovedCountries;
-    /**
-     * List of country codes (ISO 3166-1 alpha-2) where the offer is pending
-     * approval.
-     *
-     * @var string[]
-     */
-    public $pendingCountries;
-    /**
-     * Deprecated. Destination approval status in `targetCountry` of the offer.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $status;
-    /**
-     * List of country codes (ISO 3166-1 alpha-2) where the offer is approved.
-     *
-     * @param string[] $approvedCountries
-     */
-    public function setApprovedCountries($approvedCountries)
+namespace Google\Service\ShoppingContent {
+    class ProductStatusDestinationStatus extends \Google\Collection
     {
+        protected $collection_key = 'pendingCountries';
+        /**
+         * List of country codes (ISO 3166-1 alpha-2) where the offer is approved.
+         *
+         * @var string[]
+         */
+        public $approvedCountries;
+        /**
+         * The channel of the destination.
+         *
+         * @var string
+         */
+        public $channel;
+        /**
+         * The name of the destination
+         *
+         * @var string
+         */
+        public $destination;
+        /**
+         * List of country codes (ISO 3166-1 alpha-2) where the offer is disapproved.
+         *
+         * @var string[]
+         */
+        public $disapprovedCountries;
+        /**
+         * List of country codes (ISO 3166-1 alpha-2) where the offer is pending
+         * approval.
+         *
+         * @var string[]
+         */
+        public $pendingCountries;
+        /**
+         * Deprecated. Destination approval status in `targetCountry` of the offer.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $status;
+        /**
+         * List of country codes (ISO 3166-1 alpha-2) where the offer is approved.
+         *
+         * @param string[] $approvedCountries
+         */
+        public function setApprovedCountries($approvedCountries)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getApprovedCountries()
+        {
+        }
+        /**
+         * The channel of the destination.
+         *
+         * @param string $channel
+         */
+        public function setChannel($channel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChannel()
+        {
+        }
+        /**
+         * The name of the destination
+         *
+         * @param string $destination
+         */
+        public function setDestination($destination)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestination()
+        {
+        }
+        /**
+         * List of country codes (ISO 3166-1 alpha-2) where the offer is disapproved.
+         *
+         * @param string[] $disapprovedCountries
+         */
+        public function setDisapprovedCountries($disapprovedCountries)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDisapprovedCountries()
+        {
+        }
+        /**
+         * List of country codes (ISO 3166-1 alpha-2) where the offer is pending
+         * approval.
+         *
+         * @param string[] $pendingCountries
+         */
+        public function setPendingCountries($pendingCountries)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPendingCountries()
+        {
+        }
+        /**
+         * Deprecated. Destination approval status in `targetCountry` of the offer.
+         *
+         * @deprecated
+         * @param string $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ShoppingContent\ProductStatusDestinationStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApprovedCountries()
-    {
-    }
-    /**
-     * The channel of the destination.
-     *
-     * @param string $channel
-     */
-    public function setChannel($channel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getChannel()
-    {
-    }
-    /**
-     * The name of the destination
-     *
-     * @param string $destination
-     */
-    public function setDestination($destination)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDestination()
-    {
-    }
-    /**
-     * List of country codes (ISO 3166-1 alpha-2) where the offer is disapproved.
-     *
-     * @param string[] $disapprovedCountries
-     */
-    public function setDisapprovedCountries($disapprovedCountries)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDisapprovedCountries()
-    {
-    }
-    /**
-     * List of country codes (ISO 3166-1 alpha-2) where the offer is pending
-     * approval.
-     *
-     * @param string[] $pendingCountries
-     */
-    public function setPendingCountries($pendingCountries)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPendingCountries()
-    {
-    }
-    /**
-     * Deprecated. Destination approval status in `targetCountry` of the offer.
-     *
-     * @deprecated
-     * @param string $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getStatus()
+    class Google_Service_ShoppingContent_ProductStatusDestinationStatus extends \Google\Service\ShoppingContent\ProductStatusDestinationStatus
     {
     }
 }

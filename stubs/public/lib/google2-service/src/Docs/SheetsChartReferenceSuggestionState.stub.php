@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class SheetsChartReferenceSuggestionState extends \Google\Model
-{
-    /**
-     * Indicates if there was a suggested change to chart_id.
-     *
-     * @var bool
-     */
-    public $chartIdSuggested;
-    /**
-     * Indicates if there was a suggested change to spreadsheet_id.
-     *
-     * @var bool
-     */
-    public $spreadsheetIdSuggested;
-    /**
-     * Indicates if there was a suggested change to chart_id.
-     *
-     * @param bool $chartIdSuggested
-     */
-    public function setChartIdSuggested($chartIdSuggested)
+namespace Google\Service\Docs {
+    class SheetsChartReferenceSuggestionState extends \Google\Model
     {
+        /**
+         * Indicates if there was a suggested change to chart_id.
+         *
+         * @var bool
+         */
+        public $chartIdSuggested;
+        /**
+         * Indicates if there was a suggested change to spreadsheet_id.
+         *
+         * @var bool
+         */
+        public $spreadsheetIdSuggested;
+        /**
+         * Indicates if there was a suggested change to chart_id.
+         *
+         * @param bool $chartIdSuggested
+         */
+        public function setChartIdSuggested($chartIdSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getChartIdSuggested()
+        {
+        }
+        /**
+         * Indicates if there was a suggested change to spreadsheet_id.
+         *
+         * @param bool $spreadsheetIdSuggested
+         */
+        public function setSpreadsheetIdSuggested($spreadsheetIdSuggested)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSpreadsheetIdSuggested()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Docs\SheetsChartReferenceSuggestionState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChartIdSuggested()
-    {
-    }
-    /**
-     * Indicates if there was a suggested change to spreadsheet_id.
-     *
-     * @param bool $spreadsheetIdSuggested
-     */
-    public function setSpreadsheetIdSuggested($spreadsheetIdSuggested)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSpreadsheetIdSuggested()
+    class Google_Service_Docs_SheetsChartReferenceSuggestionState extends \Google\Service\Docs\SheetsChartReferenceSuggestionState
     {
     }
 }

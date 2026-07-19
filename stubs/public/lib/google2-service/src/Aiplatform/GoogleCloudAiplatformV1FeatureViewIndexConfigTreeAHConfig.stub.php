@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1FeatureViewIndexConfigTreeAHConfig extends \Google\Model
-{
-    /**
-     * Optional. Number of embeddings on each leaf node. The default value is 1000
-     * if not set.
-     *
-     * @var string
-     */
-    public $leafNodeEmbeddingCount;
-    /**
-     * Optional. Number of embeddings on each leaf node. The default value is 1000
-     * if not set.
-     *
-     * @param string $leafNodeEmbeddingCount
-     */
-    public function setLeafNodeEmbeddingCount($leafNodeEmbeddingCount)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1FeatureViewIndexConfigTreeAHConfig extends \Google\Model
     {
+        /**
+         * Optional. Number of embeddings on each leaf node. The default value is 1000
+         * if not set.
+         *
+         * @var string
+         */
+        public $leafNodeEmbeddingCount;
+        /**
+         * Optional. Number of embeddings on each leaf node. The default value is 1000
+         * if not set.
+         *
+         * @param string $leafNodeEmbeddingCount
+         */
+        public function setLeafNodeEmbeddingCount($leafNodeEmbeddingCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLeafNodeEmbeddingCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureViewIndexConfigTreeAHConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLeafNodeEmbeddingCount()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1FeatureViewIndexConfigTreeAHConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1FeatureViewIndexConfigTreeAHConfig
     {
     }
 }

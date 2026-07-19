@@ -21,28 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee\Resource;
-
-/**
- * The "caches" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apigeeService = new Google\Service\Apigee(...);
- *   $caches = $apigeeService->organizations_environments_caches;
- *  </code>
- */
-class OrganizationsEnvironmentsCaches extends \Google\Service\Resource
-{
+namespace Google\Service\Apigee\Resource {
+    use Google\Service\Apigee\GoogleProtobufEmpty;
     /**
-     * Deletes a cache. (caches.delete)
-     *
-     * @param string $name Required. Cache resource name of the form: `organizations
-     * /{organization_id}/environments/{environment_id}/caches/{cache_id}`
-     * @param array $optParams Optional parameters.
-     * @return GoogleProtobufEmpty
-     * @throws \Google\Service\Exception
+     * The "caches" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apigeeService = new Google\Service\Apigee(...);
+     *   $caches = $apigeeService->organizations_environments_caches;
+     *  </code>
      */
-    public function delete($name, $optParams = [])
+    class OrganizationsEnvironmentsCaches extends \Google\Service\Resource
+    {
+        /**
+         * Deletes a cache. (caches.delete)
+         *
+         * @param string $name Required. Cache resource name of the form: `organizations
+         * /{organization_id}/environments/{environment_id}/caches/{cache_id}`
+         * @param array $optParams Optional parameters.
+         * @return GoogleProtobufEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Apigee\Resource\OrganizationsEnvironmentsCaches registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Apigee_Resource_OrganizationsEnvironmentsCaches extends \Google\Service\Apigee\Resource\OrganizationsEnvironmentsCaches
     {
     }
 }

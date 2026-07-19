@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMemorystoreforMemcached;
-
-class GoogleCloudSaasacceleratorManagementProvidersV1NodeSloMetadata extends \Google\Model
-{
-    /**
-     * The location of the node, if different from instance location.
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * The id of the node. This should be equal to SaasInstanceNode.node_id.
-     *
-     * @var string
-     */
-    public $nodeId;
-    protected $perSliEligibilityType = GoogleCloudSaasacceleratorManagementProvidersV1PerSliSloEligibility::class;
-    protected $perSliEligibilityDataType = '';
-    /**
-     * The location of the node, if different from instance location.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
+namespace Google\Service\CloudMemorystoreforMemcached {
+    class GoogleCloudSaasacceleratorManagementProvidersV1NodeSloMetadata extends \Google\Model
     {
+        /**
+         * The location of the node, if different from instance location.
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * The id of the node. This should be equal to SaasInstanceNode.node_id.
+         *
+         * @var string
+         */
+        public $nodeId;
+        protected $perSliEligibilityType = GoogleCloudSaasacceleratorManagementProvidersV1PerSliSloEligibility::class;
+        protected $perSliEligibilityDataType = '';
+        /**
+         * The location of the node, if different from instance location.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * The id of the node. This should be equal to SaasInstanceNode.node_id.
+         *
+         * @param string $nodeId
+         */
+        public function setNodeId($nodeId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNodeId()
+        {
+        }
+        /**
+         * If present, this will override eligibility for the node coming from
+         * instance or exclusions for specified SLIs.
+         *
+         * @param GoogleCloudSaasacceleratorManagementProvidersV1PerSliSloEligibility $perSliEligibility
+         */
+        public function setPerSliEligibility(GoogleCloudSaasacceleratorManagementProvidersV1PerSliSloEligibility $perSliEligibility)
+        {
+        }
+        /**
+         * @return GoogleCloudSaasacceleratorManagementProvidersV1PerSliSloEligibility
+         */
+        public function getPerSliEligibility()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudMemorystoreforMemcached\GoogleCloudSaasacceleratorManagementProvidersV1NodeSloMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLocation()
-    {
-    }
-    /**
-     * The id of the node. This should be equal to SaasInstanceNode.node_id.
-     *
-     * @param string $nodeId
-     */
-    public function setNodeId($nodeId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNodeId()
-    {
-    }
-    /**
-     * If present, this will override eligibility for the node coming from
-     * instance or exclusions for specified SLIs.
-     *
-     * @param GoogleCloudSaasacceleratorManagementProvidersV1PerSliSloEligibility $perSliEligibility
-     */
-    public function setPerSliEligibility(GoogleCloudSaasacceleratorManagementProvidersV1PerSliSloEligibility $perSliEligibility)
-    {
-    }
-    /**
-     * @return GoogleCloudSaasacceleratorManagementProvidersV1PerSliSloEligibility
-     */
-    public function getPerSliEligibility()
+    class Google_Service_CloudMemorystoreforMemcached_GoogleCloudSaasacceleratorManagementProvidersV1NodeSloMetadata extends \Google\Service\CloudMemorystoreforMemcached\GoogleCloudSaasacceleratorManagementProvidersV1NodeSloMetadata
     {
     }
 }

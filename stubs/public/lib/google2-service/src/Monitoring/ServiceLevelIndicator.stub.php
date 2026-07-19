@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class ServiceLevelIndicator extends \Google\Model
-{
-    protected $basicSliType = BasicSli::class;
-    protected $basicSliDataType = '';
-    protected $requestBasedType = RequestBasedSli::class;
-    protected $requestBasedDataType = '';
-    protected $windowsBasedType = WindowsBasedSli::class;
-    protected $windowsBasedDataType = '';
-    /**
-     * Basic SLI on a well-known service type.
-     *
-     * @param BasicSli $basicSli
-     */
-    public function setBasicSli(BasicSli $basicSli)
+namespace Google\Service\Monitoring {
+    class ServiceLevelIndicator extends \Google\Model
     {
+        protected $basicSliType = BasicSli::class;
+        protected $basicSliDataType = '';
+        protected $requestBasedType = RequestBasedSli::class;
+        protected $requestBasedDataType = '';
+        protected $windowsBasedType = WindowsBasedSli::class;
+        protected $windowsBasedDataType = '';
+        /**
+         * Basic SLI on a well-known service type.
+         *
+         * @param BasicSli $basicSli
+         */
+        public function setBasicSli(BasicSli $basicSli)
+        {
+        }
+        /**
+         * @return BasicSli
+         */
+        public function getBasicSli()
+        {
+        }
+        /**
+         * Request-based SLIs
+         *
+         * @param RequestBasedSli $requestBased
+         */
+        public function setRequestBased(RequestBasedSli $requestBased)
+        {
+        }
+        /**
+         * @return RequestBasedSli
+         */
+        public function getRequestBased()
+        {
+        }
+        /**
+         * Windows-based SLIs
+         *
+         * @param WindowsBasedSli $windowsBased
+         */
+        public function setWindowsBased(WindowsBasedSli $windowsBased)
+        {
+        }
+        /**
+         * @return WindowsBasedSli
+         */
+        public function getWindowsBased()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BasicSli
+     * Runtime class alias of \Google\Service\Monitoring\ServiceLevelIndicator registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBasicSli()
-    {
-    }
-    /**
-     * Request-based SLIs
-     *
-     * @param RequestBasedSli $requestBased
-     */
-    public function setRequestBased(RequestBasedSli $requestBased)
-    {
-    }
-    /**
-     * @return RequestBasedSli
-     */
-    public function getRequestBased()
-    {
-    }
-    /**
-     * Windows-based SLIs
-     *
-     * @param WindowsBasedSli $windowsBased
-     */
-    public function setWindowsBased(WindowsBasedSli $windowsBased)
-    {
-    }
-    /**
-     * @return WindowsBasedSli
-     */
-    public function getWindowsBased()
+    class Google_Service_Monitoring_ServiceLevelIndicator extends \Google\Service\Monitoring\ServiceLevelIndicator
     {
     }
 }

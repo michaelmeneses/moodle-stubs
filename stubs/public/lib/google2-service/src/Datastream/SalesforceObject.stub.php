@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class SalesforceObject extends \Google\Collection
-{
-    protected $collection_key = 'fields';
-    protected $fieldsType = SalesforceField::class;
-    protected $fieldsDataType = 'array';
-    /**
-     * Object name.
-     *
-     * @var string
-     */
-    public $objectName;
-    /**
-     * Salesforce fields. When unspecified as part of include objects, includes
-     * everything, when unspecified as part of exclude objects, excludes nothing.
-     *
-     * @param SalesforceField[] $fields
-     */
-    public function setFields($fields)
+namespace Google\Service\Datastream {
+    class SalesforceObject extends \Google\Collection
     {
+        protected $collection_key = 'fields';
+        protected $fieldsType = SalesforceField::class;
+        protected $fieldsDataType = 'array';
+        /**
+         * Object name.
+         *
+         * @var string
+         */
+        public $objectName;
+        /**
+         * Salesforce fields. When unspecified as part of include objects, includes
+         * everything, when unspecified as part of exclude objects, excludes nothing.
+         *
+         * @param SalesforceField[] $fields
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return SalesforceField[]
+         */
+        public function getFields()
+        {
+        }
+        /**
+         * Object name.
+         *
+         * @param string $objectName
+         */
+        public function setObjectName($objectName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SalesforceField[]
+     * Runtime class alias of \Google\Service\Datastream\SalesforceObject registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFields()
-    {
-    }
-    /**
-     * Object name.
-     *
-     * @param string $objectName
-     */
-    public function setObjectName($objectName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectName()
+    class Google_Service_Datastream_SalesforceObject extends \Google\Service\Datastream\SalesforceObject
     {
     }
 }

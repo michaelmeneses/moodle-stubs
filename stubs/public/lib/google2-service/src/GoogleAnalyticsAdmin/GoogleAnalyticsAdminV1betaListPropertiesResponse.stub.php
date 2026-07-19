@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1betaListPropertiesResponse extends \Google\Collection
-{
-    protected $collection_key = 'properties';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $propertiesType = GoogleAnalyticsAdminV1betaProperty::class;
-    protected $propertiesDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1betaListPropertiesResponse extends \Google\Collection
     {
+        protected $collection_key = 'properties';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $propertiesType = GoogleAnalyticsAdminV1betaProperty::class;
+        protected $propertiesDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Results that matched the filter criteria and were accessible to the caller.
+         *
+         * @param GoogleAnalyticsAdminV1betaProperty[] $properties
+         */
+        public function setProperties($properties)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1betaProperty[]
+         */
+        public function getProperties()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaListPropertiesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Results that matched the filter criteria and were accessible to the caller.
-     *
-     * @param GoogleAnalyticsAdminV1betaProperty[] $properties
-     */
-    public function setProperties($properties)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1betaProperty[]
-     */
-    public function getProperties()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1betaListPropertiesResponse extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1betaListPropertiesResponse
     {
     }
 }

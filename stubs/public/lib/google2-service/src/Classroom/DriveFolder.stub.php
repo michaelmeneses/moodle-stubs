@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class DriveFolder extends \Google\Model
-{
-    /**
-     * URL that can be used to access the Drive folder. Read-only.
-     *
-     * @var string
-     */
-    public $alternateLink;
-    /**
-     * Drive API resource ID.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Title of the Drive folder. Read-only.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * URL that can be used to access the Drive folder. Read-only.
-     *
-     * @param string $alternateLink
-     */
-    public function setAlternateLink($alternateLink)
+namespace Google\Service\Classroom {
+    class DriveFolder extends \Google\Model
     {
+        /**
+         * URL that can be used to access the Drive folder. Read-only.
+         *
+         * @var string
+         */
+        public $alternateLink;
+        /**
+         * Drive API resource ID.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Title of the Drive folder. Read-only.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * URL that can be used to access the Drive folder. Read-only.
+         *
+         * @param string $alternateLink
+         */
+        public function setAlternateLink($alternateLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAlternateLink()
+        {
+        }
+        /**
+         * Drive API resource ID.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Title of the Drive folder. Read-only.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Classroom\DriveFolder registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlternateLink()
-    {
-    }
-    /**
-     * Drive API resource ID.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Title of the Drive folder. Read-only.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_Classroom_DriveFolder extends \Google\Service\Classroom\DriveFolder
     {
     }
 }

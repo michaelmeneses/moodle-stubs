@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIdentity;
-
-class GoogleAppsCloudidentityDevicesV1CustomAttributeValue extends \Google\Model
-{
-    /**
-     * Represents a boolean value.
-     *
-     * @var bool
-     */
-    public $boolValue;
-    /**
-     * Represents a double value.
-     *
-     * @var 
-     */
-    public $numberValue;
-    /**
-     * Represents a string value.
-     *
-     * @var string
-     */
-    public $stringValue;
-    /**
-     * Represents a boolean value.
-     *
-     * @param bool $boolValue
-     */
-    public function setBoolValue($boolValue)
+namespace Google\Service\CloudIdentity {
+    class GoogleAppsCloudidentityDevicesV1CustomAttributeValue extends \Google\Model
     {
+        /**
+         * Represents a boolean value.
+         *
+         * @var bool
+         */
+        public $boolValue;
+        /**
+         * Represents a double value.
+         *
+         * @var 
+         */
+        public $numberValue;
+        /**
+         * Represents a string value.
+         *
+         * @var string
+         */
+        public $stringValue;
+        /**
+         * Represents a boolean value.
+         *
+         * @param bool $boolValue
+         */
+        public function setBoolValue($boolValue)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBoolValue()
+        {
+        }
+        public function setNumberValue($numberValue)
+        {
+        }
+        public function getNumberValue()
+        {
+        }
+        /**
+         * Represents a string value.
+         *
+         * @param string $stringValue
+         */
+        public function setStringValue($stringValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStringValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudIdentity\GoogleAppsCloudidentityDevicesV1CustomAttributeValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBoolValue()
-    {
-    }
-    public function setNumberValue($numberValue)
-    {
-    }
-    public function getNumberValue()
-    {
-    }
-    /**
-     * Represents a string value.
-     *
-     * @param string $stringValue
-     */
-    public function setStringValue($stringValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStringValue()
+    class Google_Service_CloudIdentity_GoogleAppsCloudidentityDevicesV1CustomAttributeValue extends \Google\Service\CloudIdentity\GoogleAppsCloudidentityDevicesV1CustomAttributeValue
     {
     }
 }

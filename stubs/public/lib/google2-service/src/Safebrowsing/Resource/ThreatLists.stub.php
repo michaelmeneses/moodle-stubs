@@ -21,26 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Safebrowsing\Resource;
-
-/**
- * The "threatLists" collection of methods.
- * Typical usage is:
- *  <code>
- *   $safebrowsingService = new Google\Service\Safebrowsing(...);
- *   $threatLists = $safebrowsingService->threatLists;
- *  </code>
- */
-class ThreatLists extends \Google\Service\Resource
-{
+namespace Google\Service\Safebrowsing\Resource {
+    use Google\Service\Safebrowsing\GoogleSecuritySafebrowsingV4ListThreatListsResponse;
     /**
-     * Lists the Safe Browsing threat lists available for download.
-     * (threatLists.listThreatLists)
-     *
-     * @param array $optParams Optional parameters.
-     * @return GoogleSecuritySafebrowsingV4ListThreatListsResponse
+     * The "threatLists" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $safebrowsingService = new Google\Service\Safebrowsing(...);
+     *   $threatLists = $safebrowsingService->threatLists;
+     *  </code>
      */
-    public function listThreatLists($optParams = [])
+    class ThreatLists extends \Google\Service\Resource
+    {
+        /**
+         * Lists the Safe Browsing threat lists available for download.
+         * (threatLists.listThreatLists)
+         *
+         * @param array $optParams Optional parameters.
+         * @return GoogleSecuritySafebrowsingV4ListThreatListsResponse
+         */
+        public function listThreatLists($optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Safebrowsing\Resource\ThreatLists registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Safebrowsing_Resource_ThreatLists extends \Google\Service\Safebrowsing\Resource\ThreatLists
     {
     }
 }

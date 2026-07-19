@@ -21,93 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager\Resource;
-
-/**
- * The "tags" collection of methods.
- * Typical usage is:
- *  <code>
- *   $tagmanagerService = new Google\Service\TagManager(...);
- *   $tags = $tagmanagerService->accounts_containers_workspaces_tags;
- *  </code>
- */
-class AccountsContainersWorkspacesTags extends \Google\Service\Resource
-{
+namespace Google\Service\TagManager\Resource {
+    use Google\Service\TagManager\ListTagsResponse;
+    use Google\Service\TagManager\RevertTagResponse;
+    use Google\Service\TagManager\Tag;
     /**
-     * Creates a GTM Tag. (tags.create)
-     *
-     * @param string $parent GTM Workspace's API relative path.
-     * @param Tag $postBody
-     * @param array $optParams Optional parameters.
-     * @return Tag
-     * @throws \Google\Service\Exception
+     * The "tags" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $tagmanagerService = new Google\Service\TagManager(...);
+     *   $tags = $tagmanagerService->accounts_containers_workspaces_tags;
+     *  </code>
      */
-    public function create($parent, Tag $postBody, $optParams = [])
+    class AccountsContainersWorkspacesTags extends \Google\Service\Resource
     {
+        /**
+         * Creates a GTM Tag. (tags.create)
+         *
+         * @param string $parent GTM Workspace's API relative path.
+         * @param Tag $postBody
+         * @param array $optParams Optional parameters.
+         * @return Tag
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, Tag $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a GTM Tag. (tags.delete)
+         *
+         * @param string $path GTM Tag's API relative path.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($path, $optParams = [])
+        {
+        }
+        /**
+         * Gets a GTM Tag. (tags.get)
+         *
+         * @param string $path GTM Tag's API relative path.
+         * @param array $optParams Optional parameters.
+         * @return Tag
+         * @throws \Google\Service\Exception
+         */
+        public function get($path, $optParams = [])
+        {
+        }
+        /**
+         * Lists all GTM Tags of a Container.
+         * (tags.listAccountsContainersWorkspacesTags)
+         *
+         * @param string $parent GTM Workspace's API relative path.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string pageToken Continuation token for fetching the next page of
+         * results.
+         * @return ListTagsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listAccountsContainersWorkspacesTags($parent, $optParams = [])
+        {
+        }
+        /**
+         * Reverts changes to a GTM Tag in a GTM Workspace. (tags.revert)
+         *
+         * @param string $path GTM Tag's API relative path.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string fingerprint When provided, this fingerprint must match the
+         * fingerprint of thetag in storage.
+         * @return RevertTagResponse
+         * @throws \Google\Service\Exception
+         */
+        public function revert($path, $optParams = [])
+        {
+        }
+        /**
+         * Updates a GTM Tag. (tags.update)
+         *
+         * @param string $path GTM Tag's API relative path.
+         * @param Tag $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string fingerprint When provided, this fingerprint must match the
+         * fingerprint of the tag in storage.
+         * @return Tag
+         * @throws \Google\Service\Exception
+         */
+        public function update($path, Tag $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a GTM Tag. (tags.delete)
-     *
-     * @param string $path GTM Tag's API relative path.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\TagManager\Resource\AccountsContainersWorkspacesTags registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($path, $optParams = [])
-    {
-    }
-    /**
-     * Gets a GTM Tag. (tags.get)
-     *
-     * @param string $path GTM Tag's API relative path.
-     * @param array $optParams Optional parameters.
-     * @return Tag
-     * @throws \Google\Service\Exception
-     */
-    public function get($path, $optParams = [])
-    {
-    }
-    /**
-     * Lists all GTM Tags of a Container.
-     * (tags.listAccountsContainersWorkspacesTags)
-     *
-     * @param string $parent GTM Workspace's API relative path.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string pageToken Continuation token for fetching the next page of
-     * results.
-     * @return ListTagsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listAccountsContainersWorkspacesTags($parent, $optParams = [])
-    {
-    }
-    /**
-     * Reverts changes to a GTM Tag in a GTM Workspace. (tags.revert)
-     *
-     * @param string $path GTM Tag's API relative path.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string fingerprint When provided, this fingerprint must match the
-     * fingerprint of thetag in storage.
-     * @return RevertTagResponse
-     * @throws \Google\Service\Exception
-     */
-    public function revert($path, $optParams = [])
-    {
-    }
-    /**
-     * Updates a GTM Tag. (tags.update)
-     *
-     * @param string $path GTM Tag's API relative path.
-     * @param Tag $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string fingerprint When provided, this fingerprint must match the
-     * fingerprint of the tag in storage.
-     * @return Tag
-     * @throws \Google\Service\Exception
-     */
-    public function update($path, Tag $postBody, $optParams = [])
+    class Google_Service_TagManager_Resource_AccountsContainersWorkspacesTags extends \Google\Service\TagManager\Resource\AccountsContainersWorkspacesTags
     {
     }
 }

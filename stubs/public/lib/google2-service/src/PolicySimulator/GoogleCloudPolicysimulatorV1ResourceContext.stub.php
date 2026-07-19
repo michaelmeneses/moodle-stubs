@@ -21,93 +21,102 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PolicySimulator;
-
-class GoogleCloudPolicysimulatorV1ResourceContext extends \Google\Collection
-{
-    protected $collection_key = 'ancestors';
-    /**
-     * The ancestry path of the resource in Google Cloud [resource
-     * hierarchy](https://cloud.google.com/resource-manager/docs/cloud-platform-
-     * resource-hierarchy), represented as a list of relative resource names. An
-     * ancestry path starts with the closest ancestor in the hierarchy and ends at
-     * root. If the resource is a project, folder, or organization, the ancestry
-     * path starts from the resource itself. Example: `["projects/123456789",
-     * "folders/5432", "organizations/1234"]`
-     *
-     * @var string[]
-     */
-    public $ancestors;
-    /**
-     * The asset type of the resource as defined by CAIS. Example:
-     * `compute.googleapis.com/Firewall` See [Supported asset
-     * types](https://cloud.google.com/asset-inventory/docs/supported-asset-types)
-     * for more information.
-     *
-     * @var string
-     */
-    public $assetType;
-    /**
-     * The full name of the resource. Example: `//compute.googleapis.com/projects/
-     * my_project_123/zones/zone1/instances/instance1` See [Resource names](https:
-     * //cloud.google.com/apis/design/resource_names#full_resource_name) for more
-     * information.
-     *
-     * @var string
-     */
-    public $resource;
-    /**
-     * The ancestry path of the resource in Google Cloud [resource
-     * hierarchy](https://cloud.google.com/resource-manager/docs/cloud-platform-
-     * resource-hierarchy), represented as a list of relative resource names. An
-     * ancestry path starts with the closest ancestor in the hierarchy and ends at
-     * root. If the resource is a project, folder, or organization, the ancestry
-     * path starts from the resource itself. Example: `["projects/123456789",
-     * "folders/5432", "organizations/1234"]`
-     *
-     * @param string[] $ancestors
-     */
-    public function setAncestors($ancestors)
+namespace Google\Service\PolicySimulator {
+    class GoogleCloudPolicysimulatorV1ResourceContext extends \Google\Collection
     {
+        protected $collection_key = 'ancestors';
+        /**
+         * The ancestry path of the resource in Google Cloud [resource
+         * hierarchy](https://cloud.google.com/resource-manager/docs/cloud-platform-
+         * resource-hierarchy), represented as a list of relative resource names. An
+         * ancestry path starts with the closest ancestor in the hierarchy and ends at
+         * root. If the resource is a project, folder, or organization, the ancestry
+         * path starts from the resource itself. Example: `["projects/123456789",
+         * "folders/5432", "organizations/1234"]`
+         *
+         * @var string[]
+         */
+        public $ancestors;
+        /**
+         * The asset type of the resource as defined by CAIS. Example:
+         * `compute.googleapis.com/Firewall` See [Supported asset
+         * types](https://cloud.google.com/asset-inventory/docs/supported-asset-types)
+         * for more information.
+         *
+         * @var string
+         */
+        public $assetType;
+        /**
+         * The full name of the resource. Example: `//compute.googleapis.com/projects/
+         * my_project_123/zones/zone1/instances/instance1` See [Resource names](https:
+         * //cloud.google.com/apis/design/resource_names#full_resource_name) for more
+         * information.
+         *
+         * @var string
+         */
+        public $resource;
+        /**
+         * The ancestry path of the resource in Google Cloud [resource
+         * hierarchy](https://cloud.google.com/resource-manager/docs/cloud-platform-
+         * resource-hierarchy), represented as a list of relative resource names. An
+         * ancestry path starts with the closest ancestor in the hierarchy and ends at
+         * root. If the resource is a project, folder, or organization, the ancestry
+         * path starts from the resource itself. Example: `["projects/123456789",
+         * "folders/5432", "organizations/1234"]`
+         *
+         * @param string[] $ancestors
+         */
+        public function setAncestors($ancestors)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAncestors()
+        {
+        }
+        /**
+         * The asset type of the resource as defined by CAIS. Example:
+         * `compute.googleapis.com/Firewall` See [Supported asset
+         * types](https://cloud.google.com/asset-inventory/docs/supported-asset-types)
+         * for more information.
+         *
+         * @param string $assetType
+         */
+        public function setAssetType($assetType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAssetType()
+        {
+        }
+        /**
+         * The full name of the resource. Example: `//compute.googleapis.com/projects/
+         * my_project_123/zones/zone1/instances/instance1` See [Resource names](https:
+         * //cloud.google.com/apis/design/resource_names#full_resource_name) for more
+         * information.
+         *
+         * @param string $resource
+         */
+        public function setResource($resource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1ResourceContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAncestors()
-    {
-    }
-    /**
-     * The asset type of the resource as defined by CAIS. Example:
-     * `compute.googleapis.com/Firewall` See [Supported asset
-     * types](https://cloud.google.com/asset-inventory/docs/supported-asset-types)
-     * for more information.
-     *
-     * @param string $assetType
-     */
-    public function setAssetType($assetType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAssetType()
-    {
-    }
-    /**
-     * The full name of the resource. Example: `//compute.googleapis.com/projects/
-     * my_project_123/zones/zone1/instances/instance1` See [Resource names](https:
-     * //cloud.google.com/apis/design/resource_names#full_resource_name) for more
-     * information.
-     *
-     * @param string $resource
-     */
-    public function setResource($resource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResource()
+    class Google_Service_PolicySimulator_GoogleCloudPolicysimulatorV1ResourceContext extends \Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1ResourceContext
     {
     }
 }

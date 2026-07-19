@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class ListLineItemsResponse extends \Google\Collection
-{
-    protected $collection_key = 'lineItems';
-    protected $lineItemsType = LineItem::class;
-    protected $lineItemsDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * page_token field in the subsequent call to `ListLineItems` method to
-     * retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of line items. This list will be absent if empty.
-     *
-     * @param LineItem[] $lineItems
-     */
-    public function setLineItems($lineItems)
+namespace Google\Service\DisplayVideo {
+    class ListLineItemsResponse extends \Google\Collection
     {
+        protected $collection_key = 'lineItems';
+        protected $lineItemsType = LineItem::class;
+        protected $lineItemsDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * page_token field in the subsequent call to `ListLineItems` method to
+         * retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of line items. This list will be absent if empty.
+         *
+         * @param LineItem[] $lineItems
+         */
+        public function setLineItems($lineItems)
+        {
+        }
+        /**
+         * @return LineItem[]
+         */
+        public function getLineItems()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results. Pass this value in the
+         * page_token field in the subsequent call to `ListLineItems` method to
+         * retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LineItem[]
+     * Runtime class alias of \Google\Service\DisplayVideo\ListLineItemsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLineItems()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results. Pass this value in the
-     * page_token field in the subsequent call to `ListLineItems` method to
-     * retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DisplayVideo_ListLineItemsResponse extends \Google\Service\DisplayVideo\ListLineItemsResponse
     {
     }
 }

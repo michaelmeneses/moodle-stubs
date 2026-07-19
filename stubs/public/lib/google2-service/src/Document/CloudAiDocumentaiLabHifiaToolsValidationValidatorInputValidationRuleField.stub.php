@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleField extends \Google\Model
-{
-    protected $defaultValueType = CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleConstant::class;
-    protected $defaultValueDataType = '';
-    /**
-     * The field name to validate. This can be a simple field name or a nested
-     * field one using the ':' (meant as an aggregator) or '*' (meant as foreach)
-     * operators.
-     *
-     * @var string
-     */
-    public $fieldName;
-    /**
-     * Default value to use if the field is not present. If the field is missing
-     * and the default value is not set, the validation run as if the field is not
-     * present in the validation logic.
-     *
-     * @param CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleConstant $defaultValue
-     */
-    public function setDefaultValue(CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleConstant $defaultValue)
+namespace Google\Service\Document {
+    class CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleField extends \Google\Model
     {
+        protected $defaultValueType = CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleConstant::class;
+        protected $defaultValueDataType = '';
+        /**
+         * The field name to validate. This can be a simple field name or a nested
+         * field one using the ':' (meant as an aggregator) or '*' (meant as foreach)
+         * operators.
+         *
+         * @var string
+         */
+        public $fieldName;
+        /**
+         * Default value to use if the field is not present. If the field is missing
+         * and the default value is not set, the validation run as if the field is not
+         * present in the validation logic.
+         *
+         * @param CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleConstant $defaultValue
+         */
+        public function setDefaultValue(CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleConstant $defaultValue)
+        {
+        }
+        /**
+         * @return CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleConstant
+         */
+        public function getDefaultValue()
+        {
+        }
+        /**
+         * The field name to validate. This can be a simple field name or a nested
+         * field one using the ':' (meant as an aggregator) or '*' (meant as foreach)
+         * operators.
+         *
+         * @param string $fieldName
+         */
+        public function setFieldName($fieldName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFieldName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleConstant
+     * Runtime class alias of \Google\Service\Document\CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleField registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefaultValue()
-    {
-    }
-    /**
-     * The field name to validate. This can be a simple field name or a nested
-     * field one using the ':' (meant as an aggregator) or '*' (meant as foreach)
-     * operators.
-     *
-     * @param string $fieldName
-     */
-    public function setFieldName($fieldName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFieldName()
+    class Google_Service_Document_CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleField extends \Google\Service\Document\CloudAiDocumentaiLabHifiaToolsValidationValidatorInputValidationRuleField
     {
     }
 }

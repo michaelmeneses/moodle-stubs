@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity;
-
-class ListMirroringDeploymentGroupsResponse extends \Google\Collection
-{
-    protected $collection_key = 'mirroringDeploymentGroups';
-    protected $mirroringDeploymentGroupsType = MirroringDeploymentGroup::class;
-    protected $mirroringDeploymentGroupsDataType = 'array';
-    /**
-     * A token that can be sent as `page_token` to retrieve the next page. If this
-     * field is omitted, there are no subsequent pages. See
-     * https://google.aip.dev/158 for more details.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The deployment groups from the specified parent.
-     *
-     * @param MirroringDeploymentGroup[] $mirroringDeploymentGroups
-     */
-    public function setMirroringDeploymentGroups($mirroringDeploymentGroups)
+namespace Google\Service\NetworkSecurity {
+    class ListMirroringDeploymentGroupsResponse extends \Google\Collection
     {
+        protected $collection_key = 'mirroringDeploymentGroups';
+        protected $mirroringDeploymentGroupsType = MirroringDeploymentGroup::class;
+        protected $mirroringDeploymentGroupsDataType = 'array';
+        /**
+         * A token that can be sent as `page_token` to retrieve the next page. If this
+         * field is omitted, there are no subsequent pages. See
+         * https://google.aip.dev/158 for more details.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The deployment groups from the specified parent.
+         *
+         * @param MirroringDeploymentGroup[] $mirroringDeploymentGroups
+         */
+        public function setMirroringDeploymentGroups($mirroringDeploymentGroups)
+        {
+        }
+        /**
+         * @return MirroringDeploymentGroup[]
+         */
+        public function getMirroringDeploymentGroups()
+        {
+        }
+        /**
+         * A token that can be sent as `page_token` to retrieve the next page. If this
+         * field is omitted, there are no subsequent pages. See
+         * https://google.aip.dev/158 for more details.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MirroringDeploymentGroup[]
+     * Runtime class alias of \Google\Service\NetworkSecurity\ListMirroringDeploymentGroupsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMirroringDeploymentGroups()
-    {
-    }
-    /**
-     * A token that can be sent as `page_token` to retrieve the next page. If this
-     * field is omitted, there are no subsequent pages. See
-     * https://google.aip.dev/158 for more details.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_NetworkSecurity_ListMirroringDeploymentGroupsResponse extends \Google\Service\NetworkSecurity\ListMirroringDeploymentGroupsResponse
     {
     }
 }

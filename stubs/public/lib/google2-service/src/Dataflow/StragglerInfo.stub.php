@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class StragglerInfo extends \Google\Model
-{
-    protected $causesType = StragglerDebuggingInfo::class;
-    protected $causesDataType = 'map';
-    /**
-     * The time when the work item attempt became a straggler.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * The straggler causes, keyed by the string representation of the
-     * StragglerCause enum and contains specialized debugging information for each
-     * straggler cause.
-     *
-     * @param StragglerDebuggingInfo[] $causes
-     */
-    public function setCauses($causes)
+namespace Google\Service\Dataflow {
+    class StragglerInfo extends \Google\Model
     {
+        protected $causesType = StragglerDebuggingInfo::class;
+        protected $causesDataType = 'map';
+        /**
+         * The time when the work item attempt became a straggler.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * The straggler causes, keyed by the string representation of the
+         * StragglerCause enum and contains specialized debugging information for each
+         * straggler cause.
+         *
+         * @param StragglerDebuggingInfo[] $causes
+         */
+        public function setCauses($causes)
+        {
+        }
+        /**
+         * @return StragglerDebuggingInfo[]
+         */
+        public function getCauses()
+        {
+        }
+        /**
+         * The time when the work item attempt became a straggler.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return StragglerDebuggingInfo[]
+     * Runtime class alias of \Google\Service\Dataflow\StragglerInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCauses()
-    {
-    }
-    /**
-     * The time when the work item attempt became a straggler.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_Dataflow_StragglerInfo extends \Google\Service\Dataflow\StragglerInfo
     {
     }
 }

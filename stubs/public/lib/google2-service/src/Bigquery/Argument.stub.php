@@ -21,149 +21,158 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class Argument extends \Google\Model
-{
-    /**
-     * Default value.
-     */
-    public const ARGUMENT_KIND_ARGUMENT_KIND_UNSPECIFIED = 'ARGUMENT_KIND_UNSPECIFIED';
-    /**
-     * The argument is a variable with fully specified type, which can be a struct
-     * or an array, but not a table.
-     */
-    public const ARGUMENT_KIND_FIXED_TYPE = 'FIXED_TYPE';
-    /**
-     * The argument is any type, including struct or array, but not a table.
-     */
-    public const ARGUMENT_KIND_ANY_TYPE = 'ANY_TYPE';
-    /**
-     * Default value.
-     */
-    public const MODE_MODE_UNSPECIFIED = 'MODE_UNSPECIFIED';
-    /**
-     * The argument is input-only.
-     */
-    public const MODE_IN = 'IN';
-    /**
-     * The argument is output-only.
-     */
-    public const MODE_OUT = 'OUT';
-    /**
-     * The argument is both an input and an output.
-     */
-    public const MODE_INOUT = 'INOUT';
-    /**
-     * Optional. Defaults to FIXED_TYPE.
-     *
-     * @var string
-     */
-    public $argumentKind;
-    protected $dataTypeType = StandardSqlDataType::class;
-    protected $dataTypeDataType = '';
-    /**
-     * Optional. Whether the argument is an aggregate function parameter. Must be
-     * Unset for routine types other than AGGREGATE_FUNCTION. For
-     * AGGREGATE_FUNCTION, if set to false, it is equivalent to adding "NOT
-     * AGGREGATE" clause in DDL; Otherwise, it is equivalent to omitting "NOT
-     * AGGREGATE" clause in DDL.
-     *
-     * @var bool
-     */
-    public $isAggregate;
-    /**
-     * Optional. Specifies whether the argument is input or output. Can be set for
-     * procedures only.
-     *
-     * @var string
-     */
-    public $mode;
-    /**
-     * Optional. The name of this argument. Can be absent for function return
-     * argument.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. Defaults to FIXED_TYPE.
-     *
-     * Accepted values: ARGUMENT_KIND_UNSPECIFIED, FIXED_TYPE, ANY_TYPE
-     *
-     * @param self::ARGUMENT_KIND_* $argumentKind
-     */
-    public function setArgumentKind($argumentKind)
+namespace Google\Service\Bigquery {
+    class Argument extends \Google\Model
     {
+        /**
+         * Default value.
+         */
+        public const ARGUMENT_KIND_ARGUMENT_KIND_UNSPECIFIED = 'ARGUMENT_KIND_UNSPECIFIED';
+        /**
+         * The argument is a variable with fully specified type, which can be a struct
+         * or an array, but not a table.
+         */
+        public const ARGUMENT_KIND_FIXED_TYPE = 'FIXED_TYPE';
+        /**
+         * The argument is any type, including struct or array, but not a table.
+         */
+        public const ARGUMENT_KIND_ANY_TYPE = 'ANY_TYPE';
+        /**
+         * Default value.
+         */
+        public const MODE_MODE_UNSPECIFIED = 'MODE_UNSPECIFIED';
+        /**
+         * The argument is input-only.
+         */
+        public const MODE_IN = 'IN';
+        /**
+         * The argument is output-only.
+         */
+        public const MODE_OUT = 'OUT';
+        /**
+         * The argument is both an input and an output.
+         */
+        public const MODE_INOUT = 'INOUT';
+        /**
+         * Optional. Defaults to FIXED_TYPE.
+         *
+         * @var string
+         */
+        public $argumentKind;
+        protected $dataTypeType = StandardSqlDataType::class;
+        protected $dataTypeDataType = '';
+        /**
+         * Optional. Whether the argument is an aggregate function parameter. Must be
+         * Unset for routine types other than AGGREGATE_FUNCTION. For
+         * AGGREGATE_FUNCTION, if set to false, it is equivalent to adding "NOT
+         * AGGREGATE" clause in DDL; Otherwise, it is equivalent to omitting "NOT
+         * AGGREGATE" clause in DDL.
+         *
+         * @var bool
+         */
+        public $isAggregate;
+        /**
+         * Optional. Specifies whether the argument is input or output. Can be set for
+         * procedures only.
+         *
+         * @var string
+         */
+        public $mode;
+        /**
+         * Optional. The name of this argument. Can be absent for function return
+         * argument.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. Defaults to FIXED_TYPE.
+         *
+         * Accepted values: ARGUMENT_KIND_UNSPECIFIED, FIXED_TYPE, ANY_TYPE
+         *
+         * @param self::ARGUMENT_KIND_* $argumentKind
+         */
+        public function setArgumentKind($argumentKind)
+        {
+        }
+        /**
+         * @return self::ARGUMENT_KIND_*
+         */
+        public function getArgumentKind()
+        {
+        }
+        /**
+         * Set if argument_kind == FIXED_TYPE.
+         *
+         * @param StandardSqlDataType $dataType
+         */
+        public function setDataType(StandardSqlDataType $dataType)
+        {
+        }
+        /**
+         * @return StandardSqlDataType
+         */
+        public function getDataType()
+        {
+        }
+        /**
+         * Optional. Whether the argument is an aggregate function parameter. Must be
+         * Unset for routine types other than AGGREGATE_FUNCTION. For
+         * AGGREGATE_FUNCTION, if set to false, it is equivalent to adding "NOT
+         * AGGREGATE" clause in DDL; Otherwise, it is equivalent to omitting "NOT
+         * AGGREGATE" clause in DDL.
+         *
+         * @param bool $isAggregate
+         */
+        public function setIsAggregate($isAggregate)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsAggregate()
+        {
+        }
+        /**
+         * Optional. Specifies whether the argument is input or output. Can be set for
+         * procedures only.
+         *
+         * Accepted values: MODE_UNSPECIFIED, IN, OUT, INOUT
+         *
+         * @param self::MODE_* $mode
+         */
+        public function setMode($mode)
+        {
+        }
+        /**
+         * @return self::MODE_*
+         */
+        public function getMode()
+        {
+        }
+        /**
+         * Optional. The name of this argument. Can be absent for function return
+         * argument.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ARGUMENT_KIND_*
+     * Runtime class alias of \Google\Service\Bigquery\Argument registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArgumentKind()
-    {
-    }
-    /**
-     * Set if argument_kind == FIXED_TYPE.
-     *
-     * @param StandardSqlDataType $dataType
-     */
-    public function setDataType(StandardSqlDataType $dataType)
-    {
-    }
-    /**
-     * @return StandardSqlDataType
-     */
-    public function getDataType()
-    {
-    }
-    /**
-     * Optional. Whether the argument is an aggregate function parameter. Must be
-     * Unset for routine types other than AGGREGATE_FUNCTION. For
-     * AGGREGATE_FUNCTION, if set to false, it is equivalent to adding "NOT
-     * AGGREGATE" clause in DDL; Otherwise, it is equivalent to omitting "NOT
-     * AGGREGATE" clause in DDL.
-     *
-     * @param bool $isAggregate
-     */
-    public function setIsAggregate($isAggregate)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsAggregate()
-    {
-    }
-    /**
-     * Optional. Specifies whether the argument is input or output. Can be set for
-     * procedures only.
-     *
-     * Accepted values: MODE_UNSPECIFIED, IN, OUT, INOUT
-     *
-     * @param self::MODE_* $mode
-     */
-    public function setMode($mode)
-    {
-    }
-    /**
-     * @return self::MODE_*
-     */
-    public function getMode()
-    {
-    }
-    /**
-     * Optional. The name of this argument. Can be absent for function return
-     * argument.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Bigquery_Argument extends \Google\Service\Bigquery\Argument
     {
     }
 }

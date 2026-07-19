@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BeyondCorp\Resource;
-
-/**
- * The "projects" collection of methods.
- * Typical usage is:
- *  <code>
- *   $beyondcorpService = new Google\Service\BeyondCorp(...);
- *   $projects = $beyondcorpService->v_projects;
- *  </code>
- */
-class VProjects extends \Google\Service\Resource
-{
+namespace Google\Service\BeyondCorp\Resource {
+    /**
+     * The "projects" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $beyondcorpService = new Google\Service\BeyondCorp(...);
+     *   $projects = $beyondcorpService->v_projects;
+     *  </code>
+     */
+    class VProjects extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\BeyondCorp\Resource\VProjects registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_BeyondCorp_Resource_VProjects extends \Google\Service\BeyondCorp\Resource\VProjects
+    {
+    }
 }

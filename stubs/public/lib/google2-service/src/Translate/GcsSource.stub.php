@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Translate;
-
-class GcsSource extends \Google\Model
-{
-    /**
-     * Required. Source data URI. For example, `gs://my_bucket/my_object`.
-     *
-     * @var string
-     */
-    public $inputUri;
-    /**
-     * Required. Source data URI. For example, `gs://my_bucket/my_object`.
-     *
-     * @param string $inputUri
-     */
-    public function setInputUri($inputUri)
+namespace Google\Service\Translate {
+    class GcsSource extends \Google\Model
     {
+        /**
+         * Required. Source data URI. For example, `gs://my_bucket/my_object`.
+         *
+         * @var string
+         */
+        public $inputUri;
+        /**
+         * Required. Source data URI. For example, `gs://my_bucket/my_object`.
+         *
+         * @param string $inputUri
+         */
+        public function setInputUri($inputUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInputUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Translate\GcsSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInputUri()
+    class Google_Service_Translate_GcsSource extends \Google\Service\Translate\GcsSource
     {
     }
 }

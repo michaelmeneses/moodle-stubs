@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2TagFilters extends \Google\Collection
-{
-    protected $collection_key = 'tagFilters';
-    protected $tagFiltersType = GooglePrivacyDlpV2TagFilter::class;
-    protected $tagFiltersDataType = 'array';
-    /**
-     * Required. A resource must match ALL of the specified tag filters to be
-     * included in the collection.
-     *
-     * @param GooglePrivacyDlpV2TagFilter[] $tagFilters
-     */
-    public function setTagFilters($tagFilters)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2TagFilters extends \Google\Collection
     {
+        protected $collection_key = 'tagFilters';
+        protected $tagFiltersType = GooglePrivacyDlpV2TagFilter::class;
+        protected $tagFiltersDataType = 'array';
+        /**
+         * Required. A resource must match ALL of the specified tag filters to be
+         * included in the collection.
+         *
+         * @param GooglePrivacyDlpV2TagFilter[] $tagFilters
+         */
+        public function setTagFilters($tagFilters)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2TagFilter[]
+         */
+        public function getTagFilters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2TagFilter[]
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2TagFilters registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTagFilters()
+    class Google_Service_DLP_GooglePrivacyDlpV2TagFilters extends \Google\Service\DLP\GooglePrivacyDlpV2TagFilters
     {
     }
 }

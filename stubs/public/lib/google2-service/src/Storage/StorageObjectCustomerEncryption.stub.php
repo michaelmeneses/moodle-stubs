@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage;
-
-class StorageObjectCustomerEncryption extends \Google\Model
-{
-    /**
-     * The encryption algorithm.
-     *
-     * @var string
-     */
-    public $encryptionAlgorithm;
-    /**
-     * SHA256 hash value of the encryption key.
-     *
-     * @var string
-     */
-    public $keySha256;
-    /**
-     * The encryption algorithm.
-     *
-     * @param string $encryptionAlgorithm
-     */
-    public function setEncryptionAlgorithm($encryptionAlgorithm)
+namespace Google\Service\Storage {
+    class StorageObjectCustomerEncryption extends \Google\Model
     {
+        /**
+         * The encryption algorithm.
+         *
+         * @var string
+         */
+        public $encryptionAlgorithm;
+        /**
+         * SHA256 hash value of the encryption key.
+         *
+         * @var string
+         */
+        public $keySha256;
+        /**
+         * The encryption algorithm.
+         *
+         * @param string $encryptionAlgorithm
+         */
+        public function setEncryptionAlgorithm($encryptionAlgorithm)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEncryptionAlgorithm()
+        {
+        }
+        /**
+         * SHA256 hash value of the encryption key.
+         *
+         * @param string $keySha256
+         */
+        public function setKeySha256($keySha256)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKeySha256()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Storage\StorageObjectCustomerEncryption registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEncryptionAlgorithm()
-    {
-    }
-    /**
-     * SHA256 hash value of the encryption key.
-     *
-     * @param string $keySha256
-     */
-    public function setKeySha256($keySha256)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKeySha256()
+    class Google_Service_Storage_StorageObjectCustomerEncryption extends \Google\Service\Storage\StorageObjectCustomerEncryption
     {
     }
 }

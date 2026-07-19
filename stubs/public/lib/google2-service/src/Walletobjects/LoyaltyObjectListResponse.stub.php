@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class LoyaltyObjectListResponse extends \Google\Collection
-{
-    protected $collection_key = 'resources';
-    protected $paginationType = Pagination::class;
-    protected $paginationDataType = '';
-    protected $resourcesType = LoyaltyObject::class;
-    protected $resourcesDataType = 'array';
-    /**
-     * Pagination of the response.
-     *
-     * @param Pagination $pagination
-     */
-    public function setPagination(Pagination $pagination)
+namespace Google\Service\Walletobjects {
+    class LoyaltyObjectListResponse extends \Google\Collection
     {
+        protected $collection_key = 'resources';
+        protected $paginationType = Pagination::class;
+        protected $paginationDataType = '';
+        protected $resourcesType = LoyaltyObject::class;
+        protected $resourcesDataType = 'array';
+        /**
+         * Pagination of the response.
+         *
+         * @param Pagination $pagination
+         */
+        public function setPagination(Pagination $pagination)
+        {
+        }
+        /**
+         * @return Pagination
+         */
+        public function getPagination()
+        {
+        }
+        /**
+         * Resources corresponding to the list request.
+         *
+         * @param LoyaltyObject[] $resources
+         */
+        public function setResources($resources)
+        {
+        }
+        /**
+         * @return LoyaltyObject[]
+         */
+        public function getResources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Pagination
+     * Runtime class alias of \Google\Service\Walletobjects\LoyaltyObjectListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPagination()
-    {
-    }
-    /**
-     * Resources corresponding to the list request.
-     *
-     * @param LoyaltyObject[] $resources
-     */
-    public function setResources($resources)
-    {
-    }
-    /**
-     * @return LoyaltyObject[]
-     */
-    public function getResources()
+    class Google_Service_Walletobjects_LoyaltyObjectListResponse extends \Google\Service\Walletobjects\LoyaltyObjectListResponse
     {
     }
 }

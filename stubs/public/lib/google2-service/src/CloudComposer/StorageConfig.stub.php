@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudComposer;
-
-class StorageConfig extends \Google\Model
-{
-    /**
-     * Optional. The name of the Cloud Storage bucket used by the environment. No
-     * `gs://` prefix.
-     *
-     * @var string
-     */
-    public $bucket;
-    /**
-     * Optional. The name of the Cloud Storage bucket used by the environment. No
-     * `gs://` prefix.
-     *
-     * @param string $bucket
-     */
-    public function setBucket($bucket)
+namespace Google\Service\CloudComposer {
+    class StorageConfig extends \Google\Model
     {
+        /**
+         * Optional. The name of the Cloud Storage bucket used by the environment. No
+         * `gs://` prefix.
+         *
+         * @var string
+         */
+        public $bucket;
+        /**
+         * Optional. The name of the Cloud Storage bucket used by the environment. No
+         * `gs://` prefix.
+         *
+         * @param string $bucket
+         */
+        public function setBucket($bucket)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBucket()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudComposer\StorageConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBucket()
+    class Google_Service_CloudComposer_StorageConfig extends \Google\Service\CloudComposer\StorageConfig
     {
     }
 }

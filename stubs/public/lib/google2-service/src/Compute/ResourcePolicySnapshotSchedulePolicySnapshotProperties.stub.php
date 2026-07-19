@@ -21,93 +21,102 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ResourcePolicySnapshotSchedulePolicySnapshotProperties extends \Google\Collection
-{
-    protected $collection_key = 'storageLocations';
-    /**
-     * Chain name that the snapshot is created in.
-     *
-     * @var string
-     */
-    public $chainName;
-    /**
-     * Indication to perform a 'guest aware' snapshot.
-     *
-     * @var bool
-     */
-    public $guestFlush;
-    /**
-     * Labels to apply to scheduled snapshots. These can be later modified by the
-     * setLabels method. Label values may be empty.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Cloud Storage bucket storage location of the auto snapshot (regional or
-     * multi-regional).
-     *
-     * @var string[]
-     */
-    public $storageLocations;
-    /**
-     * Chain name that the snapshot is created in.
-     *
-     * @param string $chainName
-     */
-    public function setChainName($chainName)
+namespace Google\Service\Compute {
+    class ResourcePolicySnapshotSchedulePolicySnapshotProperties extends \Google\Collection
     {
+        protected $collection_key = 'storageLocations';
+        /**
+         * Chain name that the snapshot is created in.
+         *
+         * @var string
+         */
+        public $chainName;
+        /**
+         * Indication to perform a 'guest aware' snapshot.
+         *
+         * @var bool
+         */
+        public $guestFlush;
+        /**
+         * Labels to apply to scheduled snapshots. These can be later modified by the
+         * setLabels method. Label values may be empty.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Cloud Storage bucket storage location of the auto snapshot (regional or
+         * multi-regional).
+         *
+         * @var string[]
+         */
+        public $storageLocations;
+        /**
+         * Chain name that the snapshot is created in.
+         *
+         * @param string $chainName
+         */
+        public function setChainName($chainName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChainName()
+        {
+        }
+        /**
+         * Indication to perform a 'guest aware' snapshot.
+         *
+         * @param bool $guestFlush
+         */
+        public function setGuestFlush($guestFlush)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getGuestFlush()
+        {
+        }
+        /**
+         * Labels to apply to scheduled snapshots. These can be later modified by the
+         * setLabels method. Label values may be empty.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Cloud Storage bucket storage location of the auto snapshot (regional or
+         * multi-regional).
+         *
+         * @param string[] $storageLocations
+         */
+        public function setStorageLocations($storageLocations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getStorageLocations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\ResourcePolicySnapshotSchedulePolicySnapshotProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChainName()
-    {
-    }
-    /**
-     * Indication to perform a 'guest aware' snapshot.
-     *
-     * @param bool $guestFlush
-     */
-    public function setGuestFlush($guestFlush)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getGuestFlush()
-    {
-    }
-    /**
-     * Labels to apply to scheduled snapshots. These can be later modified by the
-     * setLabels method. Label values may be empty.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Cloud Storage bucket storage location of the auto snapshot (regional or
-     * multi-regional).
-     *
-     * @param string[] $storageLocations
-     */
-    public function setStorageLocations($storageLocations)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getStorageLocations()
+    class Google_Service_Compute_ResourcePolicySnapshotSchedulePolicySnapshotProperties extends \Google\Service\Compute\ResourcePolicySnapshotSchedulePolicySnapshotProperties
     {
     }
 }

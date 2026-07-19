@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class ContaineranalysisGoogleDevtoolsCloudbuildV1GitConfig extends \Google\Model
-{
-    protected $httpType = ContaineranalysisGoogleDevtoolsCloudbuildV1GitConfigHttpConfig::class;
-    protected $httpDataType = '';
-    /**
-     * Configuration for HTTP related git operations.
-     *
-     * @param ContaineranalysisGoogleDevtoolsCloudbuildV1GitConfigHttpConfig $http
-     */
-    public function setHttp(ContaineranalysisGoogleDevtoolsCloudbuildV1GitConfigHttpConfig $http)
+namespace Google\Service\ContainerAnalysis {
+    class ContaineranalysisGoogleDevtoolsCloudbuildV1GitConfig extends \Google\Model
     {
+        protected $httpType = ContaineranalysisGoogleDevtoolsCloudbuildV1GitConfigHttpConfig::class;
+        protected $httpDataType = '';
+        /**
+         * Configuration for HTTP related git operations.
+         *
+         * @param ContaineranalysisGoogleDevtoolsCloudbuildV1GitConfigHttpConfig $http
+         */
+        public function setHttp(ContaineranalysisGoogleDevtoolsCloudbuildV1GitConfigHttpConfig $http)
+        {
+        }
+        /**
+         * @return ContaineranalysisGoogleDevtoolsCloudbuildV1GitConfigHttpConfig
+         */
+        public function getHttp()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ContaineranalysisGoogleDevtoolsCloudbuildV1GitConfigHttpConfig
+     * Runtime class alias of \Google\Service\ContainerAnalysis\ContaineranalysisGoogleDevtoolsCloudbuildV1GitConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHttp()
+    class Google_Service_ContainerAnalysis_ContaineranalysisGoogleDevtoolsCloudbuildV1GitConfig extends \Google\Service\ContainerAnalysis\ContaineranalysisGoogleDevtoolsCloudbuildV1GitConfig
     {
     }
 }

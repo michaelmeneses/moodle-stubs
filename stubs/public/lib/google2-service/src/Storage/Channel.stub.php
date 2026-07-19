@@ -21,216 +21,225 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage;
-
-class Channel extends \Google\Model
-{
-    /**
-     * The address where notifications are delivered for this channel.
-     *
-     * @var string
-     */
-    public $address;
-    /**
-     * Date and time of notification channel expiration, expressed as a Unix
-     * timestamp, in milliseconds. Optional.
-     *
-     * @var string
-     */
-    public $expiration;
-    /**
-     * A UUID or similar unique string that identifies this channel.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Identifies this as a notification channel used to watch for changes to a
-     * resource, which is "api#channel".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Additional parameters controlling delivery channel behavior. Optional.
-     *
-     * @var string[]
-     */
-    public $params;
-    /**
-     * A Boolean value to indicate whether payload is wanted. Optional.
-     *
-     * @var bool
-     */
-    public $payload;
-    /**
-     * An opaque ID that identifies the resource being watched on this channel.
-     * Stable across different API versions.
-     *
-     * @var string
-     */
-    public $resourceId;
-    /**
-     * A version-specific identifier for the watched resource.
-     *
-     * @var string
-     */
-    public $resourceUri;
-    /**
-     * An arbitrary string delivered to the target address with each notification
-     * delivered over this channel. Optional.
-     *
-     * @var string
-     */
-    public $token;
-    /**
-     * The type of delivery mechanism used for this channel.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The address where notifications are delivered for this channel.
-     *
-     * @param string $address
-     */
-    public function setAddress($address)
+namespace Google\Service\Storage {
+    class Channel extends \Google\Model
     {
+        /**
+         * The address where notifications are delivered for this channel.
+         *
+         * @var string
+         */
+        public $address;
+        /**
+         * Date and time of notification channel expiration, expressed as a Unix
+         * timestamp, in milliseconds. Optional.
+         *
+         * @var string
+         */
+        public $expiration;
+        /**
+         * A UUID or similar unique string that identifies this channel.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Identifies this as a notification channel used to watch for changes to a
+         * resource, which is "api#channel".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Additional parameters controlling delivery channel behavior. Optional.
+         *
+         * @var string[]
+         */
+        public $params;
+        /**
+         * A Boolean value to indicate whether payload is wanted. Optional.
+         *
+         * @var bool
+         */
+        public $payload;
+        /**
+         * An opaque ID that identifies the resource being watched on this channel.
+         * Stable across different API versions.
+         *
+         * @var string
+         */
+        public $resourceId;
+        /**
+         * A version-specific identifier for the watched resource.
+         *
+         * @var string
+         */
+        public $resourceUri;
+        /**
+         * An arbitrary string delivered to the target address with each notification
+         * delivered over this channel. Optional.
+         *
+         * @var string
+         */
+        public $token;
+        /**
+         * The type of delivery mechanism used for this channel.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The address where notifications are delivered for this channel.
+         *
+         * @param string $address
+         */
+        public function setAddress($address)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAddress()
+        {
+        }
+        /**
+         * Date and time of notification channel expiration, expressed as a Unix
+         * timestamp, in milliseconds. Optional.
+         *
+         * @param string $expiration
+         */
+        public function setExpiration($expiration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpiration()
+        {
+        }
+        /**
+         * A UUID or similar unique string that identifies this channel.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Identifies this as a notification channel used to watch for changes to a
+         * resource, which is "api#channel".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Additional parameters controlling delivery channel behavior. Optional.
+         *
+         * @param string[] $params
+         */
+        public function setParams($params)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getParams()
+        {
+        }
+        /**
+         * A Boolean value to indicate whether payload is wanted. Optional.
+         *
+         * @param bool $payload
+         */
+        public function setPayload($payload)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getPayload()
+        {
+        }
+        /**
+         * An opaque ID that identifies the resource being watched on this channel.
+         * Stable across different API versions.
+         *
+         * @param string $resourceId
+         */
+        public function setResourceId($resourceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceId()
+        {
+        }
+        /**
+         * A version-specific identifier for the watched resource.
+         *
+         * @param string $resourceUri
+         */
+        public function setResourceUri($resourceUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceUri()
+        {
+        }
+        /**
+         * An arbitrary string delivered to the target address with each notification
+         * delivered over this channel. Optional.
+         *
+         * @param string $token
+         */
+        public function setToken($token)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getToken()
+        {
+        }
+        /**
+         * The type of delivery mechanism used for this channel.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Storage\Channel registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddress()
-    {
-    }
-    /**
-     * Date and time of notification channel expiration, expressed as a Unix
-     * timestamp, in milliseconds. Optional.
-     *
-     * @param string $expiration
-     */
-    public function setExpiration($expiration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpiration()
-    {
-    }
-    /**
-     * A UUID or similar unique string that identifies this channel.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Identifies this as a notification channel used to watch for changes to a
-     * resource, which is "api#channel".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Additional parameters controlling delivery channel behavior. Optional.
-     *
-     * @param string[] $params
-     */
-    public function setParams($params)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getParams()
-    {
-    }
-    /**
-     * A Boolean value to indicate whether payload is wanted. Optional.
-     *
-     * @param bool $payload
-     */
-    public function setPayload($payload)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getPayload()
-    {
-    }
-    /**
-     * An opaque ID that identifies the resource being watched on this channel.
-     * Stable across different API versions.
-     *
-     * @param string $resourceId
-     */
-    public function setResourceId($resourceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceId()
-    {
-    }
-    /**
-     * A version-specific identifier for the watched resource.
-     *
-     * @param string $resourceUri
-     */
-    public function setResourceUri($resourceUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceUri()
-    {
-    }
-    /**
-     * An arbitrary string delivered to the target address with each notification
-     * delivered over this channel. Optional.
-     *
-     * @param string $token
-     */
-    public function setToken($token)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getToken()
-    {
-    }
-    /**
-     * The type of delivery mechanism used for this channel.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Storage_Channel extends \Google\Service\Storage\Channel
     {
     }
 }

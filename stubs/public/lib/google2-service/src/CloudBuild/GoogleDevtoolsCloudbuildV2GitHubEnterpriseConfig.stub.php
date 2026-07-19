@@ -21,212 +21,221 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class GoogleDevtoolsCloudbuildV2GitHubEnterpriseConfig extends \Google\Model
-{
-    /**
-     * Required. API Key used for authentication of webhook events.
-     *
-     * @var string
-     */
-    public $apiKey;
-    /**
-     * Optional. Id of the GitHub App created from the manifest.
-     *
-     * @var string
-     */
-    public $appId;
-    /**
-     * Optional. ID of the installation of the GitHub App.
-     *
-     * @var string
-     */
-    public $appInstallationId;
-    /**
-     * Optional. The URL-friendly name of the GitHub App.
-     *
-     * @var string
-     */
-    public $appSlug;
-    /**
-     * Required. The URI of the GitHub Enterprise host this connection is for.
-     *
-     * @var string
-     */
-    public $hostUri;
-    /**
-     * Optional. SecretManager resource containing the private key of the GitHub
-     * App, formatted as `projects/secrets/versions`.
-     *
-     * @var string
-     */
-    public $privateKeySecretVersion;
-    /**
-     * Output only. GitHub Enterprise version installed at the host_uri.
-     *
-     * @var string
-     */
-    public $serverVersion;
-    protected $serviceDirectoryConfigType = GoogleDevtoolsCloudbuildV2ServiceDirectoryConfig::class;
-    protected $serviceDirectoryConfigDataType = '';
-    /**
-     * Optional. SSL certificate to use for requests to GitHub Enterprise.
-     *
-     * @var string
-     */
-    public $sslCa;
-    /**
-     * Optional. SecretManager resource containing the webhook secret of the
-     * GitHub App, formatted as `projects/secrets/versions`.
-     *
-     * @var string
-     */
-    public $webhookSecretSecretVersion;
-    /**
-     * Required. API Key used for authentication of webhook events.
-     *
-     * @param string $apiKey
-     */
-    public function setApiKey($apiKey)
+namespace Google\Service\CloudBuild {
+    class GoogleDevtoolsCloudbuildV2GitHubEnterpriseConfig extends \Google\Model
     {
+        /**
+         * Required. API Key used for authentication of webhook events.
+         *
+         * @var string
+         */
+        public $apiKey;
+        /**
+         * Optional. Id of the GitHub App created from the manifest.
+         *
+         * @var string
+         */
+        public $appId;
+        /**
+         * Optional. ID of the installation of the GitHub App.
+         *
+         * @var string
+         */
+        public $appInstallationId;
+        /**
+         * Optional. The URL-friendly name of the GitHub App.
+         *
+         * @var string
+         */
+        public $appSlug;
+        /**
+         * Required. The URI of the GitHub Enterprise host this connection is for.
+         *
+         * @var string
+         */
+        public $hostUri;
+        /**
+         * Optional. SecretManager resource containing the private key of the GitHub
+         * App, formatted as `projects/secrets/versions`.
+         *
+         * @var string
+         */
+        public $privateKeySecretVersion;
+        /**
+         * Output only. GitHub Enterprise version installed at the host_uri.
+         *
+         * @var string
+         */
+        public $serverVersion;
+        protected $serviceDirectoryConfigType = GoogleDevtoolsCloudbuildV2ServiceDirectoryConfig::class;
+        protected $serviceDirectoryConfigDataType = '';
+        /**
+         * Optional. SSL certificate to use for requests to GitHub Enterprise.
+         *
+         * @var string
+         */
+        public $sslCa;
+        /**
+         * Optional. SecretManager resource containing the webhook secret of the
+         * GitHub App, formatted as `projects/secrets/versions`.
+         *
+         * @var string
+         */
+        public $webhookSecretSecretVersion;
+        /**
+         * Required. API Key used for authentication of webhook events.
+         *
+         * @param string $apiKey
+         */
+        public function setApiKey($apiKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApiKey()
+        {
+        }
+        /**
+         * Optional. Id of the GitHub App created from the manifest.
+         *
+         * @param string $appId
+         */
+        public function setAppId($appId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAppId()
+        {
+        }
+        /**
+         * Optional. ID of the installation of the GitHub App.
+         *
+         * @param string $appInstallationId
+         */
+        public function setAppInstallationId($appInstallationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAppInstallationId()
+        {
+        }
+        /**
+         * Optional. The URL-friendly name of the GitHub App.
+         *
+         * @param string $appSlug
+         */
+        public function setAppSlug($appSlug)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAppSlug()
+        {
+        }
+        /**
+         * Required. The URI of the GitHub Enterprise host this connection is for.
+         *
+         * @param string $hostUri
+         */
+        public function setHostUri($hostUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHostUri()
+        {
+        }
+        /**
+         * Optional. SecretManager resource containing the private key of the GitHub
+         * App, formatted as `projects/secrets/versions`.
+         *
+         * @param string $privateKeySecretVersion
+         */
+        public function setPrivateKeySecretVersion($privateKeySecretVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrivateKeySecretVersion()
+        {
+        }
+        /**
+         * Output only. GitHub Enterprise version installed at the host_uri.
+         *
+         * @param string $serverVersion
+         */
+        public function setServerVersion($serverVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServerVersion()
+        {
+        }
+        /**
+         * Optional. Configuration for using Service Directory to privately connect to
+         * a GitHub Enterprise server. This should only be set if the GitHub
+         * Enterprise server is hosted on-premises and not reachable by public
+         * internet. If this field is left empty, calls to the GitHub Enterprise
+         * server will be made over the public internet.
+         *
+         * @param GoogleDevtoolsCloudbuildV2ServiceDirectoryConfig $serviceDirectoryConfig
+         */
+        public function setServiceDirectoryConfig(GoogleDevtoolsCloudbuildV2ServiceDirectoryConfig $serviceDirectoryConfig)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsCloudbuildV2ServiceDirectoryConfig
+         */
+        public function getServiceDirectoryConfig()
+        {
+        }
+        /**
+         * Optional. SSL certificate to use for requests to GitHub Enterprise.
+         *
+         * @param string $sslCa
+         */
+        public function setSslCa($sslCa)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSslCa()
+        {
+        }
+        /**
+         * Optional. SecretManager resource containing the webhook secret of the
+         * GitHub App, formatted as `projects/secrets/versions`.
+         *
+         * @param string $webhookSecretSecretVersion
+         */
+        public function setWebhookSecretSecretVersion($webhookSecretSecretVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWebhookSecretSecretVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\GoogleDevtoolsCloudbuildV2GitHubEnterpriseConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiKey()
-    {
-    }
-    /**
-     * Optional. Id of the GitHub App created from the manifest.
-     *
-     * @param string $appId
-     */
-    public function setAppId($appId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAppId()
-    {
-    }
-    /**
-     * Optional. ID of the installation of the GitHub App.
-     *
-     * @param string $appInstallationId
-     */
-    public function setAppInstallationId($appInstallationId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAppInstallationId()
-    {
-    }
-    /**
-     * Optional. The URL-friendly name of the GitHub App.
-     *
-     * @param string $appSlug
-     */
-    public function setAppSlug($appSlug)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAppSlug()
-    {
-    }
-    /**
-     * Required. The URI of the GitHub Enterprise host this connection is for.
-     *
-     * @param string $hostUri
-     */
-    public function setHostUri($hostUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHostUri()
-    {
-    }
-    /**
-     * Optional. SecretManager resource containing the private key of the GitHub
-     * App, formatted as `projects/secrets/versions`.
-     *
-     * @param string $privateKeySecretVersion
-     */
-    public function setPrivateKeySecretVersion($privateKeySecretVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrivateKeySecretVersion()
-    {
-    }
-    /**
-     * Output only. GitHub Enterprise version installed at the host_uri.
-     *
-     * @param string $serverVersion
-     */
-    public function setServerVersion($serverVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServerVersion()
-    {
-    }
-    /**
-     * Optional. Configuration for using Service Directory to privately connect to
-     * a GitHub Enterprise server. This should only be set if the GitHub
-     * Enterprise server is hosted on-premises and not reachable by public
-     * internet. If this field is left empty, calls to the GitHub Enterprise
-     * server will be made over the public internet.
-     *
-     * @param GoogleDevtoolsCloudbuildV2ServiceDirectoryConfig $serviceDirectoryConfig
-     */
-    public function setServiceDirectoryConfig(GoogleDevtoolsCloudbuildV2ServiceDirectoryConfig $serviceDirectoryConfig)
-    {
-    }
-    /**
-     * @return GoogleDevtoolsCloudbuildV2ServiceDirectoryConfig
-     */
-    public function getServiceDirectoryConfig()
-    {
-    }
-    /**
-     * Optional. SSL certificate to use for requests to GitHub Enterprise.
-     *
-     * @param string $sslCa
-     */
-    public function setSslCa($sslCa)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSslCa()
-    {
-    }
-    /**
-     * Optional. SecretManager resource containing the webhook secret of the
-     * GitHub App, formatted as `projects/secrets/versions`.
-     *
-     * @param string $webhookSecretSecretVersion
-     */
-    public function setWebhookSecretSecretVersion($webhookSecretSecretVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWebhookSecretSecretVersion()
+    class Google_Service_CloudBuild_GoogleDevtoolsCloudbuildV2GitHubEnterpriseConfig extends \Google\Service\CloudBuild\GoogleDevtoolsCloudbuildV2GitHubEnterpriseConfig
     {
     }
 }

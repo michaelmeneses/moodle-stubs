@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudLifeSciences;
-
-class ContainerStoppedEvent extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $actionId;
-    /**
-     * @var int
-     */
-    public $exitStatus;
-    /**
-     * @var string
-     */
-    public $stderr;
-    /**
-     * @param int
-     */
-    public function setActionId($actionId)
+namespace Google\Service\CloudLifeSciences {
+    class ContainerStoppedEvent extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $actionId;
+        /**
+         * @var int
+         */
+        public $exitStatus;
+        /**
+         * @var string
+         */
+        public $stderr;
+        /**
+         * @param int
+         */
+        public function setActionId($actionId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getActionId()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setExitStatus($exitStatus)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getExitStatus()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStderr($stderr)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStderr()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudLifeSciences\ContainerStoppedEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActionId()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setExitStatus($exitStatus)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getExitStatus()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStderr($stderr)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStderr()
+    class Google_Service_CloudLifeSciences_ContainerStoppedEvent extends \Google\Service\CloudLifeSciences\ContainerStoppedEvent
     {
     }
 }

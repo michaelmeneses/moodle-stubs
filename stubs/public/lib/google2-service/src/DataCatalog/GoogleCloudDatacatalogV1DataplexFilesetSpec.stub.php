@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1DataplexFilesetSpec extends \Google\Model
-{
-    protected $dataplexSpecType = GoogleCloudDatacatalogV1DataplexSpec::class;
-    protected $dataplexSpecDataType = '';
-    /**
-     * Common Dataplex Universal Catalog fields.
-     *
-     * @param GoogleCloudDatacatalogV1DataplexSpec $dataplexSpec
-     */
-    public function setDataplexSpec(GoogleCloudDatacatalogV1DataplexSpec $dataplexSpec)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1DataplexFilesetSpec extends \Google\Model
     {
+        protected $dataplexSpecType = GoogleCloudDatacatalogV1DataplexSpec::class;
+        protected $dataplexSpecDataType = '';
+        /**
+         * Common Dataplex Universal Catalog fields.
+         *
+         * @param GoogleCloudDatacatalogV1DataplexSpec $dataplexSpec
+         */
+        public function setDataplexSpec(GoogleCloudDatacatalogV1DataplexSpec $dataplexSpec)
+        {
+        }
+        /**
+         * @return GoogleCloudDatacatalogV1DataplexSpec
+         */
+        public function getDataplexSpec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatacatalogV1DataplexSpec
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1DataplexFilesetSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataplexSpec()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1DataplexFilesetSpec extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1DataplexFilesetSpec
     {
     }
 }

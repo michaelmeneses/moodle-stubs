@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class AccessSessionSparkApplicationJobResponse extends \Google\Model
-{
-    protected $jobDataType = JobData::class;
-    protected $jobDataDataType = '';
-    /**
-     * Output only. Data corresponding to a spark job.
-     *
-     * @param JobData $jobData
-     */
-    public function setJobData(JobData $jobData)
+namespace Google\Service\Dataproc {
+    class AccessSessionSparkApplicationJobResponse extends \Google\Model
     {
+        protected $jobDataType = JobData::class;
+        protected $jobDataDataType = '';
+        /**
+         * Output only. Data corresponding to a spark job.
+         *
+         * @param JobData $jobData
+         */
+        public function setJobData(JobData $jobData)
+        {
+        }
+        /**
+         * @return JobData
+         */
+        public function getJobData()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return JobData
+     * Runtime class alias of \Google\Service\Dataproc\AccessSessionSparkApplicationJobResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJobData()
+    class Google_Service_Dataproc_AccessSessionSparkApplicationJobResponse extends \Google\Service\Dataproc\AccessSessionSparkApplicationJobResponse
     {
     }
 }

@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class AppLinkData extends \Google\Model
-{
-    protected $androidAppLinkInfoType = AppLinkDataAppLinkInfo::class;
-    protected $androidAppLinkInfoDataType = '';
-    protected $displayTextType = LocalizedString::class;
-    protected $displayTextDataType = '';
-    protected $iosAppLinkInfoType = AppLinkDataAppLinkInfo::class;
-    protected $iosAppLinkInfoDataType = '';
-    protected $webAppLinkInfoType = AppLinkDataAppLinkInfo::class;
-    protected $webAppLinkInfoDataType = '';
-    /**
-     * Optional information about the partner app link.
-     *
-     * @param AppLinkDataAppLinkInfo $androidAppLinkInfo
-     */
-    public function setAndroidAppLinkInfo(AppLinkDataAppLinkInfo $androidAppLinkInfo)
+namespace Google\Service\Walletobjects {
+    class AppLinkData extends \Google\Model
     {
+        protected $androidAppLinkInfoType = AppLinkDataAppLinkInfo::class;
+        protected $androidAppLinkInfoDataType = '';
+        protected $displayTextType = LocalizedString::class;
+        protected $displayTextDataType = '';
+        protected $iosAppLinkInfoType = AppLinkDataAppLinkInfo::class;
+        protected $iosAppLinkInfoDataType = '';
+        protected $webAppLinkInfoType = AppLinkDataAppLinkInfo::class;
+        protected $webAppLinkInfoDataType = '';
+        /**
+         * Optional information about the partner app link.
+         *
+         * @param AppLinkDataAppLinkInfo $androidAppLinkInfo
+         */
+        public function setAndroidAppLinkInfo(AppLinkDataAppLinkInfo $androidAppLinkInfo)
+        {
+        }
+        /**
+         * @return AppLinkDataAppLinkInfo
+         */
+        public function getAndroidAppLinkInfo()
+        {
+        }
+        /**
+         * Optional display text for the app link button. Character limit is 30.
+         *
+         * @param LocalizedString $displayText
+         */
+        public function setDisplayText(LocalizedString $displayText)
+        {
+        }
+        /**
+         * @return LocalizedString
+         */
+        public function getDisplayText()
+        {
+        }
+        /**
+         * Deprecated. Links to open iOS apps are not supported.
+         *
+         * @deprecated
+         * @param AppLinkDataAppLinkInfo $iosAppLinkInfo
+         */
+        public function setIosAppLinkInfo(AppLinkDataAppLinkInfo $iosAppLinkInfo)
+        {
+        }
+        /**
+         * @deprecated
+         * @return AppLinkDataAppLinkInfo
+         */
+        public function getIosAppLinkInfo()
+        {
+        }
+        /**
+         * Optional information about the partner web link.
+         *
+         * @param AppLinkDataAppLinkInfo $webAppLinkInfo
+         */
+        public function setWebAppLinkInfo(AppLinkDataAppLinkInfo $webAppLinkInfo)
+        {
+        }
+        /**
+         * @return AppLinkDataAppLinkInfo
+         */
+        public function getWebAppLinkInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppLinkDataAppLinkInfo
+     * Runtime class alias of \Google\Service\Walletobjects\AppLinkData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAndroidAppLinkInfo()
-    {
-    }
-    /**
-     * Optional display text for the app link button. Character limit is 30.
-     *
-     * @param LocalizedString $displayText
-     */
-    public function setDisplayText(LocalizedString $displayText)
-    {
-    }
-    /**
-     * @return LocalizedString
-     */
-    public function getDisplayText()
-    {
-    }
-    /**
-     * Deprecated. Links to open iOS apps are not supported.
-     *
-     * @deprecated
-     * @param AppLinkDataAppLinkInfo $iosAppLinkInfo
-     */
-    public function setIosAppLinkInfo(AppLinkDataAppLinkInfo $iosAppLinkInfo)
-    {
-    }
-    /**
-     * @deprecated
-     * @return AppLinkDataAppLinkInfo
-     */
-    public function getIosAppLinkInfo()
-    {
-    }
-    /**
-     * Optional information about the partner web link.
-     *
-     * @param AppLinkDataAppLinkInfo $webAppLinkInfo
-     */
-    public function setWebAppLinkInfo(AppLinkDataAppLinkInfo $webAppLinkInfo)
-    {
-    }
-    /**
-     * @return AppLinkDataAppLinkInfo
-     */
-    public function getWebAppLinkInfo()
+    class Google_Service_Walletobjects_AppLinkData extends \Google\Service\Walletobjects\AppLinkData
     {
     }
 }

@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BinaryAuthorization;
-
-class AttestationAuthenticator extends \Google\Model
-{
-    /**
-     * Optional. A user-provided name for this `AttestationAuthenticator`. This
-     * field has no effect on the policy evaluation behavior except to improve
-     * readability of messages in evaluation results.
-     *
-     * @var string
-     */
-    public $displayName;
-    protected $pkixPublicKeySetType = PkixPublicKeySet::class;
-    protected $pkixPublicKeySetDataType = '';
-    /**
-     * Optional. A user-provided name for this `AttestationAuthenticator`. This
-     * field has no effect on the policy evaluation behavior except to improve
-     * readability of messages in evaluation results.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\BinaryAuthorization {
+    class AttestationAuthenticator extends \Google\Model
     {
+        /**
+         * Optional. A user-provided name for this `AttestationAuthenticator`. This
+         * field has no effect on the policy evaluation behavior except to improve
+         * readability of messages in evaluation results.
+         *
+         * @var string
+         */
+        public $displayName;
+        protected $pkixPublicKeySetType = PkixPublicKeySet::class;
+        protected $pkixPublicKeySetDataType = '';
+        /**
+         * Optional. A user-provided name for this `AttestationAuthenticator`. This
+         * field has no effect on the policy evaluation behavior except to improve
+         * readability of messages in evaluation results.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Optional. A set of raw PKIX SubjectPublicKeyInfo format public keys. If any
+         * public key in the set validates the attestation signature, then the
+         * signature is considered authenticated (i.e. any one key is sufficient to
+         * authenticate).
+         *
+         * @param PkixPublicKeySet $pkixPublicKeySet
+         */
+        public function setPkixPublicKeySet(PkixPublicKeySet $pkixPublicKeySet)
+        {
+        }
+        /**
+         * @return PkixPublicKeySet
+         */
+        public function getPkixPublicKeySet()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BinaryAuthorization\AttestationAuthenticator registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Optional. A set of raw PKIX SubjectPublicKeyInfo format public keys. If any
-     * public key in the set validates the attestation signature, then the
-     * signature is considered authenticated (i.e. any one key is sufficient to
-     * authenticate).
-     *
-     * @param PkixPublicKeySet $pkixPublicKeySet
-     */
-    public function setPkixPublicKeySet(PkixPublicKeySet $pkixPublicKeySet)
-    {
-    }
-    /**
-     * @return PkixPublicKeySet
-     */
-    public function getPkixPublicKeySet()
+    class Google_Service_BinaryAuthorization_AttestationAuthenticator extends \Google\Service\BinaryAuthorization\AttestationAuthenticator
     {
     }
 }

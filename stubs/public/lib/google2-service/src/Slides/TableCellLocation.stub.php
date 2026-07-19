@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class TableCellLocation extends \Google\Model
-{
-    /**
-     * The 0-based column index.
-     *
-     * @var int
-     */
-    public $columnIndex;
-    /**
-     * The 0-based row index.
-     *
-     * @var int
-     */
-    public $rowIndex;
-    /**
-     * The 0-based column index.
-     *
-     * @param int $columnIndex
-     */
-    public function setColumnIndex($columnIndex)
+namespace Google\Service\Slides {
+    class TableCellLocation extends \Google\Model
     {
+        /**
+         * The 0-based column index.
+         *
+         * @var int
+         */
+        public $columnIndex;
+        /**
+         * The 0-based row index.
+         *
+         * @var int
+         */
+        public $rowIndex;
+        /**
+         * The 0-based column index.
+         *
+         * @param int $columnIndex
+         */
+        public function setColumnIndex($columnIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getColumnIndex()
+        {
+        }
+        /**
+         * The 0-based row index.
+         *
+         * @param int $rowIndex
+         */
+        public function setRowIndex($rowIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRowIndex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Slides\TableCellLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumnIndex()
-    {
-    }
-    /**
-     * The 0-based row index.
-     *
-     * @param int $rowIndex
-     */
-    public function setRowIndex($rowIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRowIndex()
+    class Google_Service_Slides_TableCellLocation extends \Google\Service\Slides\TableCellLocation
     {
     }
 }

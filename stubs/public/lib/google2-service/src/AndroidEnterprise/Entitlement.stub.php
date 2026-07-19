@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class Entitlement extends \Google\Model
-{
-    public const REASON_free = 'free';
-    public const REASON_groupLicense = 'groupLicense';
-    public const REASON_userPurchase = 'userPurchase';
-    /**
-     * The ID of the product that the entitlement is for. For example,
-     * "app:com.google.android.gm".
-     *
-     * @var string
-     */
-    public $productId;
-    /**
-     * The reason for the entitlement. For example, "free" for free apps. This
-     * property is temporary: it will be replaced by the acquisition kind field of
-     * group licenses.
-     *
-     * @var string
-     */
-    public $reason;
-    /**
-     * The ID of the product that the entitlement is for. For example,
-     * "app:com.google.android.gm".
-     *
-     * @param string $productId
-     */
-    public function setProductId($productId)
+namespace Google\Service\AndroidEnterprise {
+    class Entitlement extends \Google\Model
     {
+        public const REASON_free = 'free';
+        public const REASON_groupLicense = 'groupLicense';
+        public const REASON_userPurchase = 'userPurchase';
+        /**
+         * The ID of the product that the entitlement is for. For example,
+         * "app:com.google.android.gm".
+         *
+         * @var string
+         */
+        public $productId;
+        /**
+         * The reason for the entitlement. For example, "free" for free apps. This
+         * property is temporary: it will be replaced by the acquisition kind field of
+         * group licenses.
+         *
+         * @var string
+         */
+        public $reason;
+        /**
+         * The ID of the product that the entitlement is for. For example,
+         * "app:com.google.android.gm".
+         *
+         * @param string $productId
+         */
+        public function setProductId($productId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductId()
+        {
+        }
+        /**
+         * The reason for the entitlement. For example, "free" for free apps. This
+         * property is temporary: it will be replaced by the acquisition kind field of
+         * group licenses.
+         *
+         * Accepted values: free, groupLicense, userPurchase
+         *
+         * @param self::REASON_* $reason
+         */
+        public function setReason($reason)
+        {
+        }
+        /**
+         * @return self::REASON_*
+         */
+        public function getReason()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidEnterprise\Entitlement registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProductId()
-    {
-    }
-    /**
-     * The reason for the entitlement. For example, "free" for free apps. This
-     * property is temporary: it will be replaced by the acquisition kind field of
-     * group licenses.
-     *
-     * Accepted values: free, groupLicense, userPurchase
-     *
-     * @param self::REASON_* $reason
-     */
-    public function setReason($reason)
-    {
-    }
-    /**
-     * @return self::REASON_*
-     */
-    public function getReason()
+    class Google_Service_AndroidEnterprise_Entitlement extends \Google\Service\AndroidEnterprise\Entitlement
     {
     }
 }

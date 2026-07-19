@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ReadIndexDatapointsRequest extends \Google\Collection
-{
-    protected $collection_key = 'ids';
-    /**
-     * The ID of the DeployedIndex that will serve the request.
-     *
-     * @var string
-     */
-    public $deployedIndexId;
-    /**
-     * IDs of the datapoints to be searched for.
-     *
-     * @var string[]
-     */
-    public $ids;
-    /**
-     * The ID of the DeployedIndex that will serve the request.
-     *
-     * @param string $deployedIndexId
-     */
-    public function setDeployedIndexId($deployedIndexId)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ReadIndexDatapointsRequest extends \Google\Collection
     {
+        protected $collection_key = 'ids';
+        /**
+         * The ID of the DeployedIndex that will serve the request.
+         *
+         * @var string
+         */
+        public $deployedIndexId;
+        /**
+         * IDs of the datapoints to be searched for.
+         *
+         * @var string[]
+         */
+        public $ids;
+        /**
+         * The ID of the DeployedIndex that will serve the request.
+         *
+         * @param string $deployedIndexId
+         */
+        public function setDeployedIndexId($deployedIndexId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeployedIndexId()
+        {
+        }
+        /**
+         * IDs of the datapoints to be searched for.
+         *
+         * @param string[] $ids
+         */
+        public function setIds($ids)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ReadIndexDatapointsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeployedIndexId()
-    {
-    }
-    /**
-     * IDs of the datapoints to be searched for.
-     *
-     * @param string[] $ids
-     */
-    public function setIds($ids)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getIds()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ReadIndexDatapointsRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ReadIndexDatapointsRequest
     {
     }
 }

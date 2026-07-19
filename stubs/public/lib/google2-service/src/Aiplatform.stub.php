@@ -21,212 +21,222 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for Aiplatform (v1).
- *
- * <p>
- * Train high-quality custom machine learning models with minimal machine
- * learning expertise and effort.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://cloud.google.com/vertex-ai/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class Aiplatform extends \Google\Service
-{
-    /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
-    const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
-    /** View your data across Google Cloud services and see the email address of your Google Account. */
-    const CLOUD_PLATFORM_READ_ONLY = "https://www.googleapis.com/auth/cloud-platform.read-only";
-    public $batchPredictionJobs;
-    public $customJobs_operations;
-    public $dataLabelingJobs_operations;
-    public $datasets;
-    public $datasets_annotationSpecs_operations;
-    public $datasets_dataItems_annotations_operations;
-    public $datasets_dataItems_operations;
-    public $datasets_datasetVersions;
-    public $datasets_operations;
-    public $datasets_savedQueries_operations;
-    public $deploymentResourcePools_operations;
-    public $endpoints;
-    public $endpoints_chat;
-    public $endpoints_operations;
-    public $featureGroups_features_operations;
-    public $featureGroups_operations;
-    public $featureOnlineStores_featureViews_operations;
-    public $featureOnlineStores_operations;
-    public $featurestores_entityTypes_features_operations;
-    public $featurestores_entityTypes_operations;
-    public $featurestores_operations;
-    public $hyperparameterTuningJobs_operations;
-    public $indexEndpoints_operations;
-    public $indexes_operations;
-    public $media;
-    public $metadataStores_artifacts_operations;
-    public $metadataStores_contexts_operations;
-    public $metadataStores_executions_operations;
-    public $metadataStores_operations;
-    public $migratableResources_operations;
-    public $modelDeploymentMonitoringJobs_operations;
-    public $models_evaluations_operations;
-    public $models_operations;
-    public $notebookExecutionJobs_operations;
-    public $notebookRuntimeTemplates_operations;
-    public $notebookRuntimes_operations;
-    public $operations;
-    public $persistentResources_operations;
-    public $pipelineJobs_operations;
-    public $projects;
-    public $projects_locations;
-    public $projects_locations_batchPredictionJobs;
-    public $projects_locations_cachedContents;
-    public $projects_locations_customJobs;
-    public $projects_locations_customJobs_operations;
-    public $projects_locations_dataLabelingJobs;
-    public $projects_locations_dataLabelingJobs_operations;
-    public $projects_locations_datasets;
-    public $projects_locations_datasets_annotationSpecs;
-    public $projects_locations_datasets_annotationSpecs_operations;
-    public $projects_locations_datasets_dataItems;
-    public $projects_locations_datasets_dataItems_annotations;
-    public $projects_locations_datasets_dataItems_annotations_operations;
-    public $projects_locations_datasets_dataItems_operations;
-    public $projects_locations_datasets_datasetVersions;
-    public $projects_locations_datasets_operations;
-    public $projects_locations_datasets_savedQueries;
-    public $projects_locations_datasets_savedQueries_operations;
-    public $projects_locations_deploymentResourcePools;
-    public $projects_locations_deploymentResourcePools_operations;
-    public $projects_locations_endpoints;
-    public $projects_locations_endpoints_chat;
-    public $projects_locations_endpoints_deployedModels_invoke;
-    public $projects_locations_endpoints_google_science;
-    public $projects_locations_endpoints_invoke;
-    public $projects_locations_endpoints_openapi;
-    public $projects_locations_endpoints_operations;
-    public $projects_locations_evaluationItems;
-    public $projects_locations_evaluationRuns;
-    public $projects_locations_evaluationSets;
-    public $projects_locations_featureGroups;
-    public $projects_locations_featureGroups_features;
-    public $projects_locations_featureGroups_features_operations;
-    public $projects_locations_featureGroups_operations;
-    public $projects_locations_featureOnlineStores;
-    public $projects_locations_featureOnlineStores_featureViews;
-    public $projects_locations_featureOnlineStores_featureViews_featureViewSyncs;
-    public $projects_locations_featureOnlineStores_featureViews_operations;
-    public $projects_locations_featureOnlineStores_operations;
-    public $projects_locations_featurestores;
-    public $projects_locations_featurestores_entityTypes;
-    public $projects_locations_featurestores_entityTypes_features;
-    public $projects_locations_featurestores_entityTypes_features_operations;
-    public $projects_locations_featurestores_entityTypes_operations;
-    public $projects_locations_featurestores_operations;
-    public $projects_locations_hyperparameterTuningJobs;
-    public $projects_locations_hyperparameterTuningJobs_operations;
-    public $projects_locations_indexEndpoints;
-    public $projects_locations_indexEndpoints_operations;
-    public $projects_locations_indexes;
-    public $projects_locations_indexes_operations;
-    public $projects_locations_metadataStores;
-    public $projects_locations_metadataStores_artifacts;
-    public $projects_locations_metadataStores_artifacts_operations;
-    public $projects_locations_metadataStores_contexts;
-    public $projects_locations_metadataStores_contexts_operations;
-    public $projects_locations_metadataStores_executions;
-    public $projects_locations_metadataStores_executions_operations;
-    public $projects_locations_metadataStores_metadataSchemas;
-    public $projects_locations_metadataStores_operations;
-    public $projects_locations_migratableResources;
-    public $projects_locations_migratableResources_operations;
-    public $projects_locations_modelDeploymentMonitoringJobs;
-    public $projects_locations_modelDeploymentMonitoringJobs_operations;
-    public $projects_locations_models;
-    public $projects_locations_models_evaluations;
-    public $projects_locations_models_evaluations_operations;
-    public $projects_locations_models_evaluations_slices;
-    public $projects_locations_models_operations;
-    public $projects_locations_nasJobs;
-    public $projects_locations_nasJobs_nasTrialDetails;
-    public $projects_locations_notebookExecutionJobs;
-    public $projects_locations_notebookExecutionJobs_operations;
-    public $projects_locations_notebookRuntimeTemplates;
-    public $projects_locations_notebookRuntimeTemplates_operations;
-    public $projects_locations_notebookRuntimes;
-    public $projects_locations_notebookRuntimes_operations;
-    public $projects_locations_operations;
-    public $projects_locations_persistentResources;
-    public $projects_locations_persistentResources_operations;
-    public $projects_locations_pipelineJobs;
-    public $projects_locations_pipelineJobs_operations;
-    public $projects_locations_publishers_models;
-    public $projects_locations_ragCorpora;
-    public $projects_locations_ragCorpora_operations;
-    public $projects_locations_ragCorpora_ragFiles;
-    public $projects_locations_ragCorpora_ragFiles_operations;
-    public $projects_locations_ragEngineConfig_operations;
-    public $projects_locations_reasoningEngines;
-    public $projects_locations_reasoningEngines_memories;
-    public $projects_locations_reasoningEngines_memories_operations;
-    public $projects_locations_reasoningEngines_memories_revisions;
-    public $projects_locations_reasoningEngines_operations;
-    public $projects_locations_reasoningEngines_sessions;
-    public $projects_locations_reasoningEngines_sessions_events;
-    public $projects_locations_reasoningEngines_sessions_operations;
-    public $projects_locations_schedules;
-    public $projects_locations_schedules_operations;
-    public $projects_locations_specialistPools;
-    public $projects_locations_specialistPools_operations;
-    public $projects_locations_studies;
-    public $projects_locations_studies_operations;
-    public $projects_locations_studies_trials;
-    public $projects_locations_studies_trials_operations;
-    public $projects_locations_tensorboards;
-    public $projects_locations_tensorboards_experiments;
-    public $projects_locations_tensorboards_experiments_operations;
-    public $projects_locations_tensorboards_experiments_runs;
-    public $projects_locations_tensorboards_experiments_runs_operations;
-    public $projects_locations_tensorboards_experiments_runs_timeSeries;
-    public $projects_locations_tensorboards_experiments_runs_timeSeries_operations;
-    public $projects_locations_tensorboards_operations;
-    public $projects_locations_trainingPipelines;
-    public $projects_locations_trainingPipelines_operations;
-    public $projects_locations_tuningJobs;
-    public $projects_locations_tuningJobs_operations;
-    public $publishers_models;
-    public $ragCorpora_operations;
-    public $ragCorpora_ragFiles_operations;
-    public $ragEngineConfig_operations;
-    public $reasoningEngines;
-    public $reasoningEngines_memories_operations;
-    public $reasoningEngines_operations;
-    public $reasoningEngines_sessions_operations;
-    public $schedules_operations;
-    public $specialistPools_operations;
-    public $studies_operations;
-    public $studies_trials_operations;
-    public $tensorboards_experiments_operations;
-    public $tensorboards_experiments_runs_operations;
-    public $tensorboards_experiments_runs_timeSeries_operations;
-    public $tensorboards_operations;
-    public $trainingPipelines_operations;
-    public $tuningJobs_operations;
-    public $v1;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the Aiplatform service.
+     * Service definition for Aiplatform (v1).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Train high-quality custom machine learning models with minimal machine
+     * learning expertise and effort.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://cloud.google.com/vertex-ai/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class Aiplatform extends \Google\Service
+    {
+        /** See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.. */
+        const CLOUD_PLATFORM = "https://www.googleapis.com/auth/cloud-platform";
+        /** View your data across Google Cloud services and see the email address of your Google Account. */
+        const CLOUD_PLATFORM_READ_ONLY = "https://www.googleapis.com/auth/cloud-platform.read-only";
+        public $batchPredictionJobs;
+        public $customJobs_operations;
+        public $dataLabelingJobs_operations;
+        public $datasets;
+        public $datasets_annotationSpecs_operations;
+        public $datasets_dataItems_annotations_operations;
+        public $datasets_dataItems_operations;
+        public $datasets_datasetVersions;
+        public $datasets_operations;
+        public $datasets_savedQueries_operations;
+        public $deploymentResourcePools_operations;
+        public $endpoints;
+        public $endpoints_chat;
+        public $endpoints_operations;
+        public $featureGroups_features_operations;
+        public $featureGroups_operations;
+        public $featureOnlineStores_featureViews_operations;
+        public $featureOnlineStores_operations;
+        public $featurestores_entityTypes_features_operations;
+        public $featurestores_entityTypes_operations;
+        public $featurestores_operations;
+        public $hyperparameterTuningJobs_operations;
+        public $indexEndpoints_operations;
+        public $indexes_operations;
+        public $media;
+        public $metadataStores_artifacts_operations;
+        public $metadataStores_contexts_operations;
+        public $metadataStores_executions_operations;
+        public $metadataStores_operations;
+        public $migratableResources_operations;
+        public $modelDeploymentMonitoringJobs_operations;
+        public $models_evaluations_operations;
+        public $models_operations;
+        public $notebookExecutionJobs_operations;
+        public $notebookRuntimeTemplates_operations;
+        public $notebookRuntimes_operations;
+        public $operations;
+        public $persistentResources_operations;
+        public $pipelineJobs_operations;
+        public $projects;
+        public $projects_locations;
+        public $projects_locations_batchPredictionJobs;
+        public $projects_locations_cachedContents;
+        public $projects_locations_customJobs;
+        public $projects_locations_customJobs_operations;
+        public $projects_locations_dataLabelingJobs;
+        public $projects_locations_dataLabelingJobs_operations;
+        public $projects_locations_datasets;
+        public $projects_locations_datasets_annotationSpecs;
+        public $projects_locations_datasets_annotationSpecs_operations;
+        public $projects_locations_datasets_dataItems;
+        public $projects_locations_datasets_dataItems_annotations;
+        public $projects_locations_datasets_dataItems_annotations_operations;
+        public $projects_locations_datasets_dataItems_operations;
+        public $projects_locations_datasets_datasetVersions;
+        public $projects_locations_datasets_operations;
+        public $projects_locations_datasets_savedQueries;
+        public $projects_locations_datasets_savedQueries_operations;
+        public $projects_locations_deploymentResourcePools;
+        public $projects_locations_deploymentResourcePools_operations;
+        public $projects_locations_endpoints;
+        public $projects_locations_endpoints_chat;
+        public $projects_locations_endpoints_deployedModels_invoke;
+        public $projects_locations_endpoints_google_science;
+        public $projects_locations_endpoints_invoke;
+        public $projects_locations_endpoints_openapi;
+        public $projects_locations_endpoints_operations;
+        public $projects_locations_evaluationItems;
+        public $projects_locations_evaluationRuns;
+        public $projects_locations_evaluationSets;
+        public $projects_locations_featureGroups;
+        public $projects_locations_featureGroups_features;
+        public $projects_locations_featureGroups_features_operations;
+        public $projects_locations_featureGroups_operations;
+        public $projects_locations_featureOnlineStores;
+        public $projects_locations_featureOnlineStores_featureViews;
+        public $projects_locations_featureOnlineStores_featureViews_featureViewSyncs;
+        public $projects_locations_featureOnlineStores_featureViews_operations;
+        public $projects_locations_featureOnlineStores_operations;
+        public $projects_locations_featurestores;
+        public $projects_locations_featurestores_entityTypes;
+        public $projects_locations_featurestores_entityTypes_features;
+        public $projects_locations_featurestores_entityTypes_features_operations;
+        public $projects_locations_featurestores_entityTypes_operations;
+        public $projects_locations_featurestores_operations;
+        public $projects_locations_hyperparameterTuningJobs;
+        public $projects_locations_hyperparameterTuningJobs_operations;
+        public $projects_locations_indexEndpoints;
+        public $projects_locations_indexEndpoints_operations;
+        public $projects_locations_indexes;
+        public $projects_locations_indexes_operations;
+        public $projects_locations_metadataStores;
+        public $projects_locations_metadataStores_artifacts;
+        public $projects_locations_metadataStores_artifacts_operations;
+        public $projects_locations_metadataStores_contexts;
+        public $projects_locations_metadataStores_contexts_operations;
+        public $projects_locations_metadataStores_executions;
+        public $projects_locations_metadataStores_executions_operations;
+        public $projects_locations_metadataStores_metadataSchemas;
+        public $projects_locations_metadataStores_operations;
+        public $projects_locations_migratableResources;
+        public $projects_locations_migratableResources_operations;
+        public $projects_locations_modelDeploymentMonitoringJobs;
+        public $projects_locations_modelDeploymentMonitoringJobs_operations;
+        public $projects_locations_models;
+        public $projects_locations_models_evaluations;
+        public $projects_locations_models_evaluations_operations;
+        public $projects_locations_models_evaluations_slices;
+        public $projects_locations_models_operations;
+        public $projects_locations_nasJobs;
+        public $projects_locations_nasJobs_nasTrialDetails;
+        public $projects_locations_notebookExecutionJobs;
+        public $projects_locations_notebookExecutionJobs_operations;
+        public $projects_locations_notebookRuntimeTemplates;
+        public $projects_locations_notebookRuntimeTemplates_operations;
+        public $projects_locations_notebookRuntimes;
+        public $projects_locations_notebookRuntimes_operations;
+        public $projects_locations_operations;
+        public $projects_locations_persistentResources;
+        public $projects_locations_persistentResources_operations;
+        public $projects_locations_pipelineJobs;
+        public $projects_locations_pipelineJobs_operations;
+        public $projects_locations_publishers_models;
+        public $projects_locations_ragCorpora;
+        public $projects_locations_ragCorpora_operations;
+        public $projects_locations_ragCorpora_ragFiles;
+        public $projects_locations_ragCorpora_ragFiles_operations;
+        public $projects_locations_ragEngineConfig_operations;
+        public $projects_locations_reasoningEngines;
+        public $projects_locations_reasoningEngines_memories;
+        public $projects_locations_reasoningEngines_memories_operations;
+        public $projects_locations_reasoningEngines_memories_revisions;
+        public $projects_locations_reasoningEngines_operations;
+        public $projects_locations_reasoningEngines_sessions;
+        public $projects_locations_reasoningEngines_sessions_events;
+        public $projects_locations_reasoningEngines_sessions_operations;
+        public $projects_locations_schedules;
+        public $projects_locations_schedules_operations;
+        public $projects_locations_specialistPools;
+        public $projects_locations_specialistPools_operations;
+        public $projects_locations_studies;
+        public $projects_locations_studies_operations;
+        public $projects_locations_studies_trials;
+        public $projects_locations_studies_trials_operations;
+        public $projects_locations_tensorboards;
+        public $projects_locations_tensorboards_experiments;
+        public $projects_locations_tensorboards_experiments_operations;
+        public $projects_locations_tensorboards_experiments_runs;
+        public $projects_locations_tensorboards_experiments_runs_operations;
+        public $projects_locations_tensorboards_experiments_runs_timeSeries;
+        public $projects_locations_tensorboards_experiments_runs_timeSeries_operations;
+        public $projects_locations_tensorboards_operations;
+        public $projects_locations_trainingPipelines;
+        public $projects_locations_trainingPipelines_operations;
+        public $projects_locations_tuningJobs;
+        public $projects_locations_tuningJobs_operations;
+        public $publishers_models;
+        public $ragCorpora_operations;
+        public $ragCorpora_ragFiles_operations;
+        public $ragEngineConfig_operations;
+        public $reasoningEngines;
+        public $reasoningEngines_memories_operations;
+        public $reasoningEngines_operations;
+        public $reasoningEngines_sessions_operations;
+        public $schedules_operations;
+        public $specialistPools_operations;
+        public $studies_operations;
+        public $studies_trials_operations;
+        public $tensorboards_experiments_operations;
+        public $tensorboards_experiments_runs_operations;
+        public $tensorboards_experiments_runs_timeSeries_operations;
+        public $tensorboards_operations;
+        public $trainingPipelines_operations;
+        public $tuningJobs_operations;
+        public $v1;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the Aiplatform service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Aiplatform registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Aiplatform extends \Google\Service\Aiplatform
     {
     }
 }

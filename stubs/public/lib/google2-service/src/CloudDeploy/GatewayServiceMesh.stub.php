@@ -21,162 +21,171 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class GatewayServiceMesh extends \Google\Model
-{
-    /**
-     * Required. Name of the Kubernetes Deployment whose traffic is managed by the
-     * specified HTTPRoute and Service.
-     *
-     * @var string
-     */
-    public $deployment;
-    /**
-     * Required. Name of the Gateway API HTTPRoute.
-     *
-     * @var string
-     */
-    public $httpRoute;
-    /**
-     * Optional. The label to use when selecting Pods for the Deployment and
-     * Service resources. This label must already be present in both resources.
-     *
-     * @var string
-     */
-    public $podSelectorLabel;
-    protected $routeDestinationsType = RouteDestinations::class;
-    protected $routeDestinationsDataType = '';
-    /**
-     * Optional. The time to wait for route updates to propagate. The maximum
-     * configurable time is 3 hours, in seconds format. If unspecified, there is
-     * no wait time.
-     *
-     * @var string
-     */
-    public $routeUpdateWaitTime;
-    /**
-     * Required. Name of the Kubernetes Service.
-     *
-     * @var string
-     */
-    public $service;
-    /**
-     * Optional. The amount of time to migrate traffic back from the canary
-     * Service to the original Service during the stable phase deployment. If
-     * specified, must be between 15s and 3600s. If unspecified, there is no
-     * cutback time.
-     *
-     * @var string
-     */
-    public $stableCutbackDuration;
-    /**
-     * Required. Name of the Kubernetes Deployment whose traffic is managed by the
-     * specified HTTPRoute and Service.
-     *
-     * @param string $deployment
-     */
-    public function setDeployment($deployment)
+namespace Google\Service\CloudDeploy {
+    class GatewayServiceMesh extends \Google\Model
     {
+        /**
+         * Required. Name of the Kubernetes Deployment whose traffic is managed by the
+         * specified HTTPRoute and Service.
+         *
+         * @var string
+         */
+        public $deployment;
+        /**
+         * Required. Name of the Gateway API HTTPRoute.
+         *
+         * @var string
+         */
+        public $httpRoute;
+        /**
+         * Optional. The label to use when selecting Pods for the Deployment and
+         * Service resources. This label must already be present in both resources.
+         *
+         * @var string
+         */
+        public $podSelectorLabel;
+        protected $routeDestinationsType = RouteDestinations::class;
+        protected $routeDestinationsDataType = '';
+        /**
+         * Optional. The time to wait for route updates to propagate. The maximum
+         * configurable time is 3 hours, in seconds format. If unspecified, there is
+         * no wait time.
+         *
+         * @var string
+         */
+        public $routeUpdateWaitTime;
+        /**
+         * Required. Name of the Kubernetes Service.
+         *
+         * @var string
+         */
+        public $service;
+        /**
+         * Optional. The amount of time to migrate traffic back from the canary
+         * Service to the original Service during the stable phase deployment. If
+         * specified, must be between 15s and 3600s. If unspecified, there is no
+         * cutback time.
+         *
+         * @var string
+         */
+        public $stableCutbackDuration;
+        /**
+         * Required. Name of the Kubernetes Deployment whose traffic is managed by the
+         * specified HTTPRoute and Service.
+         *
+         * @param string $deployment
+         */
+        public function setDeployment($deployment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeployment()
+        {
+        }
+        /**
+         * Required. Name of the Gateway API HTTPRoute.
+         *
+         * @param string $httpRoute
+         */
+        public function setHttpRoute($httpRoute)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHttpRoute()
+        {
+        }
+        /**
+         * Optional. The label to use when selecting Pods for the Deployment and
+         * Service resources. This label must already be present in both resources.
+         *
+         * @param string $podSelectorLabel
+         */
+        public function setPodSelectorLabel($podSelectorLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPodSelectorLabel()
+        {
+        }
+        /**
+         * Optional. Route destinations allow configuring the Gateway API HTTPRoute to
+         * be deployed to additional clusters. This option is available for multi-
+         * cluster service mesh set ups that require the route to exist in the
+         * clusters that call the service. If unspecified, the HTTPRoute will only be
+         * deployed to the Target cluster.
+         *
+         * @param RouteDestinations $routeDestinations
+         */
+        public function setRouteDestinations(RouteDestinations $routeDestinations)
+        {
+        }
+        /**
+         * @return RouteDestinations
+         */
+        public function getRouteDestinations()
+        {
+        }
+        /**
+         * Optional. The time to wait for route updates to propagate. The maximum
+         * configurable time is 3 hours, in seconds format. If unspecified, there is
+         * no wait time.
+         *
+         * @param string $routeUpdateWaitTime
+         */
+        public function setRouteUpdateWaitTime($routeUpdateWaitTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRouteUpdateWaitTime()
+        {
+        }
+        /**
+         * Required. Name of the Kubernetes Service.
+         *
+         * @param string $service
+         */
+        public function setService($service)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getService()
+        {
+        }
+        /**
+         * Optional. The amount of time to migrate traffic back from the canary
+         * Service to the original Service during the stable phase deployment. If
+         * specified, must be between 15s and 3600s. If unspecified, there is no
+         * cutback time.
+         *
+         * @param string $stableCutbackDuration
+         */
+        public function setStableCutbackDuration($stableCutbackDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStableCutbackDuration()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDeploy\GatewayServiceMesh registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeployment()
-    {
-    }
-    /**
-     * Required. Name of the Gateway API HTTPRoute.
-     *
-     * @param string $httpRoute
-     */
-    public function setHttpRoute($httpRoute)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHttpRoute()
-    {
-    }
-    /**
-     * Optional. The label to use when selecting Pods for the Deployment and
-     * Service resources. This label must already be present in both resources.
-     *
-     * @param string $podSelectorLabel
-     */
-    public function setPodSelectorLabel($podSelectorLabel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPodSelectorLabel()
-    {
-    }
-    /**
-     * Optional. Route destinations allow configuring the Gateway API HTTPRoute to
-     * be deployed to additional clusters. This option is available for multi-
-     * cluster service mesh set ups that require the route to exist in the
-     * clusters that call the service. If unspecified, the HTTPRoute will only be
-     * deployed to the Target cluster.
-     *
-     * @param RouteDestinations $routeDestinations
-     */
-    public function setRouteDestinations(RouteDestinations $routeDestinations)
-    {
-    }
-    /**
-     * @return RouteDestinations
-     */
-    public function getRouteDestinations()
-    {
-    }
-    /**
-     * Optional. The time to wait for route updates to propagate. The maximum
-     * configurable time is 3 hours, in seconds format. If unspecified, there is
-     * no wait time.
-     *
-     * @param string $routeUpdateWaitTime
-     */
-    public function setRouteUpdateWaitTime($routeUpdateWaitTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRouteUpdateWaitTime()
-    {
-    }
-    /**
-     * Required. Name of the Kubernetes Service.
-     *
-     * @param string $service
-     */
-    public function setService($service)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getService()
-    {
-    }
-    /**
-     * Optional. The amount of time to migrate traffic back from the canary
-     * Service to the original Service during the stable phase deployment. If
-     * specified, must be between 15s and 3600s. If unspecified, there is no
-     * cutback time.
-     *
-     * @param string $stableCutbackDuration
-     */
-    public function setStableCutbackDuration($stableCutbackDuration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStableCutbackDuration()
+    class Google_Service_CloudDeploy_GatewayServiceMesh extends \Google\Service\CloudDeploy\GatewayServiceMesh
     {
     }
 }

@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel;
-
-class GoogleCloudChannelV1alpha1OpportunityEvent extends \Google\Model
-{
-    /**
-     * Not used.
-     */
-    public const EVENT_TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * New opportunity created.
-     */
-    public const EVENT_TYPE_CREATED = 'CREATED';
-    /**
-     * Existing opportunity updated.
-     */
-    public const EVENT_TYPE_UPDATED = 'UPDATED';
-    /**
-     * Partner has been detached from the opportunity and can no longer access it.
-     */
-    public const EVENT_TYPE_PARTNER_DETACHED = 'PARTNER_DETACHED';
-    /**
-     * Type of event which happened for the opportunity.
-     *
-     * @var string
-     */
-    public $eventType;
-    /**
-     * Resource name of the opportunity. Format: opportunities/{opportunity}
-     *
-     * @var string
-     */
-    public $opportunity;
-    /**
-     * Resource name of the partner. Format: partners/{partner}
-     *
-     * @var string
-     */
-    public $partner;
-    /**
-     * Type of event which happened for the opportunity.
-     *
-     * Accepted values: TYPE_UNSPECIFIED, CREATED, UPDATED, PARTNER_DETACHED
-     *
-     * @param self::EVENT_TYPE_* $eventType
-     */
-    public function setEventType($eventType)
+namespace Google\Service\Cloudchannel {
+    class GoogleCloudChannelV1alpha1OpportunityEvent extends \Google\Model
     {
+        /**
+         * Not used.
+         */
+        public const EVENT_TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * New opportunity created.
+         */
+        public const EVENT_TYPE_CREATED = 'CREATED';
+        /**
+         * Existing opportunity updated.
+         */
+        public const EVENT_TYPE_UPDATED = 'UPDATED';
+        /**
+         * Partner has been detached from the opportunity and can no longer access it.
+         */
+        public const EVENT_TYPE_PARTNER_DETACHED = 'PARTNER_DETACHED';
+        /**
+         * Type of event which happened for the opportunity.
+         *
+         * @var string
+         */
+        public $eventType;
+        /**
+         * Resource name of the opportunity. Format: opportunities/{opportunity}
+         *
+         * @var string
+         */
+        public $opportunity;
+        /**
+         * Resource name of the partner. Format: partners/{partner}
+         *
+         * @var string
+         */
+        public $partner;
+        /**
+         * Type of event which happened for the opportunity.
+         *
+         * Accepted values: TYPE_UNSPECIFIED, CREATED, UPDATED, PARTNER_DETACHED
+         *
+         * @param self::EVENT_TYPE_* $eventType
+         */
+        public function setEventType($eventType)
+        {
+        }
+        /**
+         * @return self::EVENT_TYPE_*
+         */
+        public function getEventType()
+        {
+        }
+        /**
+         * Resource name of the opportunity. Format: opportunities/{opportunity}
+         *
+         * @param string $opportunity
+         */
+        public function setOpportunity($opportunity)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOpportunity()
+        {
+        }
+        /**
+         * Resource name of the partner. Format: partners/{partner}
+         *
+         * @param string $partner
+         */
+        public function setPartner($partner)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPartner()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::EVENT_TYPE_*
+     * Runtime class alias of \Google\Service\Cloudchannel\GoogleCloudChannelV1alpha1OpportunityEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEventType()
-    {
-    }
-    /**
-     * Resource name of the opportunity. Format: opportunities/{opportunity}
-     *
-     * @param string $opportunity
-     */
-    public function setOpportunity($opportunity)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOpportunity()
-    {
-    }
-    /**
-     * Resource name of the partner. Format: partners/{partner}
-     *
-     * @param string $partner
-     */
-    public function setPartner($partner)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPartner()
+    class Google_Service_Cloudchannel_GoogleCloudChannelV1alpha1OpportunityEvent extends \Google\Service\Cloudchannel\GoogleCloudChannelV1alpha1OpportunityEvent
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RayMetricSpec extends \Google\Model
-{
-    /**
-     * Optional. Flag to disable the Ray metrics collection.
-     *
-     * @var bool
-     */
-    public $disabled;
-    /**
-     * Optional. Flag to disable the Ray metrics collection.
-     *
-     * @param bool $disabled
-     */
-    public function setDisabled($disabled)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RayMetricSpec extends \Google\Model
     {
+        /**
+         * Optional. Flag to disable the Ray metrics collection.
+         *
+         * @var bool
+         */
+        public $disabled;
+        /**
+         * Optional. Flag to disable the Ray metrics collection.
+         *
+         * @param bool $disabled
+         */
+        public function setDisabled($disabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RayMetricSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisabled()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RayMetricSpec extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RayMetricSpec
     {
     }
 }

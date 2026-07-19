@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1ListRuleSetsResponse extends \Google\Collection
-{
-    protected $collection_key = 'ruleSets';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $ruleSetsType = GoogleCloudContentwarehouseV1RuleSet::class;
-    protected $ruleSetsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1ListRuleSetsResponse extends \Google\Collection
     {
+        protected $collection_key = 'ruleSets';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $ruleSetsType = GoogleCloudContentwarehouseV1RuleSet::class;
+        protected $ruleSetsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The rule sets from the specified parent.
+         *
+         * @param GoogleCloudContentwarehouseV1RuleSet[] $ruleSets
+         */
+        public function setRuleSets($ruleSets)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1RuleSet[]
+         */
+        public function getRuleSets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1ListRuleSetsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The rule sets from the specified parent.
-     *
-     * @param GoogleCloudContentwarehouseV1RuleSet[] $ruleSets
-     */
-    public function setRuleSets($ruleSets)
-    {
-    }
-    /**
-     * @return GoogleCloudContentwarehouseV1RuleSet[]
-     */
-    public function getRuleSets()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1ListRuleSetsResponse extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1ListRuleSetsResponse
     {
     }
 }

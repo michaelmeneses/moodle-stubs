@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudWorkstations;
-
-class GceConfidentialInstanceConfig extends \Google\Model
-{
-    /**
-     * Optional. Whether the instance has confidential compute enabled.
-     *
-     * @var bool
-     */
-    public $enableConfidentialCompute;
-    /**
-     * Optional. Whether the instance has confidential compute enabled.
-     *
-     * @param bool $enableConfidentialCompute
-     */
-    public function setEnableConfidentialCompute($enableConfidentialCompute)
+namespace Google\Service\CloudWorkstations {
+    class GceConfidentialInstanceConfig extends \Google\Model
     {
+        /**
+         * Optional. Whether the instance has confidential compute enabled.
+         *
+         * @var bool
+         */
+        public $enableConfidentialCompute;
+        /**
+         * Optional. Whether the instance has confidential compute enabled.
+         *
+         * @param bool $enableConfidentialCompute
+         */
+        public function setEnableConfidentialCompute($enableConfidentialCompute)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableConfidentialCompute()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudWorkstations\GceConfidentialInstanceConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableConfidentialCompute()
+    class Google_Service_CloudWorkstations_GceConfidentialInstanceConfig extends \Google\Service\CloudWorkstations\GceConfidentialInstanceConfig
     {
     }
 }

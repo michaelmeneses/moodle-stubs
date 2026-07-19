@@ -21,278 +21,287 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class ConsolidatedExecutorSummary extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $activeTasks;
-    /**
-     * @var int
-     */
-    public $completedTasks;
-    /**
-     * @var int
-     */
-    public $count;
-    /**
-     * @var string
-     */
-    public $diskUsed;
-    /**
-     * @var int
-     */
-    public $failedTasks;
-    /**
-     * @var int
-     */
-    public $isExcluded;
-    /**
-     * @var string
-     */
-    public $maxMemory;
-    protected $memoryMetricsType = MemoryMetrics::class;
-    protected $memoryMetricsDataType = '';
-    /**
-     * @var string
-     */
-    public $memoryUsed;
-    /**
-     * @var int
-     */
-    public $rddBlocks;
-    /**
-     * @var int
-     */
-    public $totalCores;
-    /**
-     * @var string
-     */
-    public $totalDurationMillis;
-    /**
-     * @var string
-     */
-    public $totalGcTimeMillis;
-    /**
-     * @var string
-     */
-    public $totalInputBytes;
-    /**
-     * @var string
-     */
-    public $totalShuffleRead;
-    /**
-     * @var string
-     */
-    public $totalShuffleWrite;
-    /**
-     * @var int
-     */
-    public $totalTasks;
-    /**
-     * @param int $activeTasks
-     */
-    public function setActiveTasks($activeTasks)
+namespace Google\Service\Dataproc {
+    class ConsolidatedExecutorSummary extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $activeTasks;
+        /**
+         * @var int
+         */
+        public $completedTasks;
+        /**
+         * @var int
+         */
+        public $count;
+        /**
+         * @var string
+         */
+        public $diskUsed;
+        /**
+         * @var int
+         */
+        public $failedTasks;
+        /**
+         * @var int
+         */
+        public $isExcluded;
+        /**
+         * @var string
+         */
+        public $maxMemory;
+        protected $memoryMetricsType = MemoryMetrics::class;
+        protected $memoryMetricsDataType = '';
+        /**
+         * @var string
+         */
+        public $memoryUsed;
+        /**
+         * @var int
+         */
+        public $rddBlocks;
+        /**
+         * @var int
+         */
+        public $totalCores;
+        /**
+         * @var string
+         */
+        public $totalDurationMillis;
+        /**
+         * @var string
+         */
+        public $totalGcTimeMillis;
+        /**
+         * @var string
+         */
+        public $totalInputBytes;
+        /**
+         * @var string
+         */
+        public $totalShuffleRead;
+        /**
+         * @var string
+         */
+        public $totalShuffleWrite;
+        /**
+         * @var int
+         */
+        public $totalTasks;
+        /**
+         * @param int $activeTasks
+         */
+        public function setActiveTasks($activeTasks)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getActiveTasks()
+        {
+        }
+        /**
+         * @param int $completedTasks
+         */
+        public function setCompletedTasks($completedTasks)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCompletedTasks()
+        {
+        }
+        /**
+         * @param int $count
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCount()
+        {
+        }
+        /**
+         * @param string $diskUsed
+         */
+        public function setDiskUsed($diskUsed)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDiskUsed()
+        {
+        }
+        /**
+         * @param int $failedTasks
+         */
+        public function setFailedTasks($failedTasks)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFailedTasks()
+        {
+        }
+        /**
+         * @param int $isExcluded
+         */
+        public function setIsExcluded($isExcluded)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getIsExcluded()
+        {
+        }
+        /**
+         * @param string $maxMemory
+         */
+        public function setMaxMemory($maxMemory)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMaxMemory()
+        {
+        }
+        /**
+         * @param MemoryMetrics $memoryMetrics
+         */
+        public function setMemoryMetrics(MemoryMetrics $memoryMetrics)
+        {
+        }
+        /**
+         * @return MemoryMetrics
+         */
+        public function getMemoryMetrics()
+        {
+        }
+        /**
+         * @param string $memoryUsed
+         */
+        public function setMemoryUsed($memoryUsed)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMemoryUsed()
+        {
+        }
+        /**
+         * @param int $rddBlocks
+         */
+        public function setRddBlocks($rddBlocks)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRddBlocks()
+        {
+        }
+        /**
+         * @param int $totalCores
+         */
+        public function setTotalCores($totalCores)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalCores()
+        {
+        }
+        /**
+         * @param string $totalDurationMillis
+         */
+        public function setTotalDurationMillis($totalDurationMillis)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalDurationMillis()
+        {
+        }
+        /**
+         * @param string $totalGcTimeMillis
+         */
+        public function setTotalGcTimeMillis($totalGcTimeMillis)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalGcTimeMillis()
+        {
+        }
+        /**
+         * @param string $totalInputBytes
+         */
+        public function setTotalInputBytes($totalInputBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalInputBytes()
+        {
+        }
+        /**
+         * @param string $totalShuffleRead
+         */
+        public function setTotalShuffleRead($totalShuffleRead)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalShuffleRead()
+        {
+        }
+        /**
+         * @param string $totalShuffleWrite
+         */
+        public function setTotalShuffleWrite($totalShuffleWrite)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalShuffleWrite()
+        {
+        }
+        /**
+         * @param int $totalTasks
+         */
+        public function setTotalTasks($totalTasks)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalTasks()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Dataproc\ConsolidatedExecutorSummary registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActiveTasks()
-    {
-    }
-    /**
-     * @param int $completedTasks
-     */
-    public function setCompletedTasks($completedTasks)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getCompletedTasks()
-    {
-    }
-    /**
-     * @param int $count
-     */
-    public function setCount($count)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getCount()
-    {
-    }
-    /**
-     * @param string $diskUsed
-     */
-    public function setDiskUsed($diskUsed)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDiskUsed()
-    {
-    }
-    /**
-     * @param int $failedTasks
-     */
-    public function setFailedTasks($failedTasks)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getFailedTasks()
-    {
-    }
-    /**
-     * @param int $isExcluded
-     */
-    public function setIsExcluded($isExcluded)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getIsExcluded()
-    {
-    }
-    /**
-     * @param string $maxMemory
-     */
-    public function setMaxMemory($maxMemory)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMaxMemory()
-    {
-    }
-    /**
-     * @param MemoryMetrics $memoryMetrics
-     */
-    public function setMemoryMetrics(MemoryMetrics $memoryMetrics)
-    {
-    }
-    /**
-     * @return MemoryMetrics
-     */
-    public function getMemoryMetrics()
-    {
-    }
-    /**
-     * @param string $memoryUsed
-     */
-    public function setMemoryUsed($memoryUsed)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMemoryUsed()
-    {
-    }
-    /**
-     * @param int $rddBlocks
-     */
-    public function setRddBlocks($rddBlocks)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRddBlocks()
-    {
-    }
-    /**
-     * @param int $totalCores
-     */
-    public function setTotalCores($totalCores)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalCores()
-    {
-    }
-    /**
-     * @param string $totalDurationMillis
-     */
-    public function setTotalDurationMillis($totalDurationMillis)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalDurationMillis()
-    {
-    }
-    /**
-     * @param string $totalGcTimeMillis
-     */
-    public function setTotalGcTimeMillis($totalGcTimeMillis)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalGcTimeMillis()
-    {
-    }
-    /**
-     * @param string $totalInputBytes
-     */
-    public function setTotalInputBytes($totalInputBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalInputBytes()
-    {
-    }
-    /**
-     * @param string $totalShuffleRead
-     */
-    public function setTotalShuffleRead($totalShuffleRead)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalShuffleRead()
-    {
-    }
-    /**
-     * @param string $totalShuffleWrite
-     */
-    public function setTotalShuffleWrite($totalShuffleWrite)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalShuffleWrite()
-    {
-    }
-    /**
-     * @param int $totalTasks
-     */
-    public function setTotalTasks($totalTasks)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalTasks()
+    class Google_Service_Dataproc_ConsolidatedExecutorSummary extends \Google\Service\Dataproc\ConsolidatedExecutorSummary
     {
     }
 }

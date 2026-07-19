@@ -21,95 +21,104 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudVideoIntelligence;
-
-class GoogleCloudVideointelligenceV1p2beta1LabelAnnotation extends \Google\Collection
-{
-    protected $collection_key = 'segments';
-    protected $categoryEntitiesType = GoogleCloudVideointelligenceV1p2beta1Entity::class;
-    protected $categoryEntitiesDataType = 'array';
-    protected $entityType = GoogleCloudVideointelligenceV1p2beta1Entity::class;
-    protected $entityDataType = '';
-    protected $framesType = GoogleCloudVideointelligenceV1p2beta1LabelFrame::class;
-    protected $framesDataType = 'array';
-    protected $segmentsType = GoogleCloudVideointelligenceV1p2beta1LabelSegment::class;
-    protected $segmentsDataType = 'array';
-    /**
-     * Feature version.
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Common categories for the detected entity. For example, when the label is
-     * `Terrier`, the category is likely `dog`. And in some cases there might be
-     * more than one categories e.g., `Terrier` could also be a `pet`.
-     *
-     * @param GoogleCloudVideointelligenceV1p2beta1Entity[] $categoryEntities
-     */
-    public function setCategoryEntities($categoryEntities)
+namespace Google\Service\CloudVideoIntelligence {
+    class GoogleCloudVideointelligenceV1p2beta1LabelAnnotation extends \Google\Collection
     {
+        protected $collection_key = 'segments';
+        protected $categoryEntitiesType = GoogleCloudVideointelligenceV1p2beta1Entity::class;
+        protected $categoryEntitiesDataType = 'array';
+        protected $entityType = GoogleCloudVideointelligenceV1p2beta1Entity::class;
+        protected $entityDataType = '';
+        protected $framesType = GoogleCloudVideointelligenceV1p2beta1LabelFrame::class;
+        protected $framesDataType = 'array';
+        protected $segmentsType = GoogleCloudVideointelligenceV1p2beta1LabelSegment::class;
+        protected $segmentsDataType = 'array';
+        /**
+         * Feature version.
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Common categories for the detected entity. For example, when the label is
+         * `Terrier`, the category is likely `dog`. And in some cases there might be
+         * more than one categories e.g., `Terrier` could also be a `pet`.
+         *
+         * @param GoogleCloudVideointelligenceV1p2beta1Entity[] $categoryEntities
+         */
+        public function setCategoryEntities($categoryEntities)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1p2beta1Entity[]
+         */
+        public function getCategoryEntities()
+        {
+        }
+        /**
+         * Detected entity.
+         *
+         * @param GoogleCloudVideointelligenceV1p2beta1Entity $entity
+         */
+        public function setEntity(GoogleCloudVideointelligenceV1p2beta1Entity $entity)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1p2beta1Entity
+         */
+        public function getEntity()
+        {
+        }
+        /**
+         * All video frames where a label was detected.
+         *
+         * @param GoogleCloudVideointelligenceV1p2beta1LabelFrame[] $frames
+         */
+        public function setFrames($frames)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1p2beta1LabelFrame[]
+         */
+        public function getFrames()
+        {
+        }
+        /**
+         * All video segments where a label was detected.
+         *
+         * @param GoogleCloudVideointelligenceV1p2beta1LabelSegment[] $segments
+         */
+        public function setSegments($segments)
+        {
+        }
+        /**
+         * @return GoogleCloudVideointelligenceV1p2beta1LabelSegment[]
+         */
+        public function getSegments()
+        {
+        }
+        /**
+         * Feature version.
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudVideointelligenceV1p2beta1Entity[]
+     * Runtime class alias of \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1p2beta1LabelAnnotation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCategoryEntities()
-    {
-    }
-    /**
-     * Detected entity.
-     *
-     * @param GoogleCloudVideointelligenceV1p2beta1Entity $entity
-     */
-    public function setEntity(GoogleCloudVideointelligenceV1p2beta1Entity $entity)
-    {
-    }
-    /**
-     * @return GoogleCloudVideointelligenceV1p2beta1Entity
-     */
-    public function getEntity()
-    {
-    }
-    /**
-     * All video frames where a label was detected.
-     *
-     * @param GoogleCloudVideointelligenceV1p2beta1LabelFrame[] $frames
-     */
-    public function setFrames($frames)
-    {
-    }
-    /**
-     * @return GoogleCloudVideointelligenceV1p2beta1LabelFrame[]
-     */
-    public function getFrames()
-    {
-    }
-    /**
-     * All video segments where a label was detected.
-     *
-     * @param GoogleCloudVideointelligenceV1p2beta1LabelSegment[] $segments
-     */
-    public function setSegments($segments)
-    {
-    }
-    /**
-     * @return GoogleCloudVideointelligenceV1p2beta1LabelSegment[]
-     */
-    public function getSegments()
-    {
-    }
-    /**
-     * Feature version.
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p2beta1LabelAnnotation extends \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1p2beta1LabelAnnotation
     {
     }
 }

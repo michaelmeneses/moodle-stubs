@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class AccumulableInfo extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $accumullableInfoId;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $update;
-    /**
-     * @var string
-     */
-    public $value;
-    /**
-     * @param string $accumullableInfoId
-     */
-    public function setAccumullableInfoId($accumullableInfoId)
+namespace Google\Service\Dataproc {
+    class AccumulableInfo extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $accumullableInfoId;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $update;
+        /**
+         * @var string
+         */
+        public $value;
+        /**
+         * @param string $accumullableInfoId
+         */
+        public function setAccumullableInfoId($accumullableInfoId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccumullableInfoId()
+        {
+        }
+        /**
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string $update
+         */
+        public function setUpdate($update)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdate()
+        {
+        }
+        /**
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\AccumulableInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccumullableInfoId()
-    {
-    }
-    /**
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string $update
-     */
-    public function setUpdate($update)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdate()
-    {
-    }
-    /**
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_Dataproc_AccumulableInfo extends \Google\Service\Dataproc\AccumulableInfo
     {
     }
 }

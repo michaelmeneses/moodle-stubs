@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class AutoCreatedSubnetworkInfo extends \Google\Model
-{
-    /**
-     * Output only. URI of the automatically created Internal Range. Only set if
-     * the subnetwork mode is AUTO_CREATED during creation.
-     *
-     * @var string
-     */
-    public $internalRange;
-    /**
-     * Output only. URI of the automatically created Internal Range reference.
-     * Only set if the subnetwork mode is AUTO_CREATED during creation.
-     *
-     * @var string
-     */
-    public $internalRangeRef;
-    /**
-     * Output only. URI of the automatically created subnetwork. Only set if the
-     * subnetwork mode is AUTO_CREATED during creation.
-     *
-     * @var string
-     */
-    public $subnetwork;
-    /**
-     * Output only. URI of the automatically created subnetwork reference. Only
-     * set if the subnetwork mode is AUTO_CREATED during creation.
-     *
-     * @var string
-     */
-    public $subnetworkRef;
-    /**
-     * Output only. URI of the automatically created Internal Range. Only set if
-     * the subnetwork mode is AUTO_CREATED during creation.
-     *
-     * @param string $internalRange
-     */
-    public function setInternalRange($internalRange)
+namespace Google\Service\Networkconnectivity {
+    class AutoCreatedSubnetworkInfo extends \Google\Model
     {
+        /**
+         * Output only. URI of the automatically created Internal Range. Only set if
+         * the subnetwork mode is AUTO_CREATED during creation.
+         *
+         * @var string
+         */
+        public $internalRange;
+        /**
+         * Output only. URI of the automatically created Internal Range reference.
+         * Only set if the subnetwork mode is AUTO_CREATED during creation.
+         *
+         * @var string
+         */
+        public $internalRangeRef;
+        /**
+         * Output only. URI of the automatically created subnetwork. Only set if the
+         * subnetwork mode is AUTO_CREATED during creation.
+         *
+         * @var string
+         */
+        public $subnetwork;
+        /**
+         * Output only. URI of the automatically created subnetwork reference. Only
+         * set if the subnetwork mode is AUTO_CREATED during creation.
+         *
+         * @var string
+         */
+        public $subnetworkRef;
+        /**
+         * Output only. URI of the automatically created Internal Range. Only set if
+         * the subnetwork mode is AUTO_CREATED during creation.
+         *
+         * @param string $internalRange
+         */
+        public function setInternalRange($internalRange)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInternalRange()
+        {
+        }
+        /**
+         * Output only. URI of the automatically created Internal Range reference.
+         * Only set if the subnetwork mode is AUTO_CREATED during creation.
+         *
+         * @param string $internalRangeRef
+         */
+        public function setInternalRangeRef($internalRangeRef)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInternalRangeRef()
+        {
+        }
+        /**
+         * Output only. URI of the automatically created subnetwork. Only set if the
+         * subnetwork mode is AUTO_CREATED during creation.
+         *
+         * @param string $subnetwork
+         */
+        public function setSubnetwork($subnetwork)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubnetwork()
+        {
+        }
+        /**
+         * Output only. URI of the automatically created subnetwork reference. Only
+         * set if the subnetwork mode is AUTO_CREATED during creation.
+         *
+         * @param string $subnetworkRef
+         */
+        public function setSubnetworkRef($subnetworkRef)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubnetworkRef()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Networkconnectivity\AutoCreatedSubnetworkInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInternalRange()
-    {
-    }
-    /**
-     * Output only. URI of the automatically created Internal Range reference.
-     * Only set if the subnetwork mode is AUTO_CREATED during creation.
-     *
-     * @param string $internalRangeRef
-     */
-    public function setInternalRangeRef($internalRangeRef)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInternalRangeRef()
-    {
-    }
-    /**
-     * Output only. URI of the automatically created subnetwork. Only set if the
-     * subnetwork mode is AUTO_CREATED during creation.
-     *
-     * @param string $subnetwork
-     */
-    public function setSubnetwork($subnetwork)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubnetwork()
-    {
-    }
-    /**
-     * Output only. URI of the automatically created subnetwork reference. Only
-     * set if the subnetwork mode is AUTO_CREATED during creation.
-     *
-     * @param string $subnetworkRef
-     */
-    public function setSubnetworkRef($subnetworkRef)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubnetworkRef()
+    class Google_Service_Networkconnectivity_AutoCreatedSubnetworkInfo extends \Google\Service\Networkconnectivity\AutoCreatedSubnetworkInfo
     {
     }
 }

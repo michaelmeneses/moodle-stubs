@@ -8,6 +8,7 @@
  */
 namespace core_reportbuilder\local\filters;
 
+use core_reportbuilder\local\helpers\database;
 /**
  * Text report filter
  *

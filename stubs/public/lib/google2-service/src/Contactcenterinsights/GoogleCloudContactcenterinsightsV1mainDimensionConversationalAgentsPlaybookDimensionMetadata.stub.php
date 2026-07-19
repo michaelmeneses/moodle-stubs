@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1mainDimensionConversationalAgentsPlaybookDimensionMetadata extends \Google\Model
-{
-    /**
-     * Optional. The dialogflow playbook display name.
-     *
-     * @var string
-     */
-    public $playbookDisplayName;
-    /**
-     * Optional. The dialogflow playbook ID.
-     *
-     * @var string
-     */
-    public $playbookId;
-    /**
-     * Optional. The dialogflow playbook display name.
-     *
-     * @param string $playbookDisplayName
-     */
-    public function setPlaybookDisplayName($playbookDisplayName)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1mainDimensionConversationalAgentsPlaybookDimensionMetadata extends \Google\Model
     {
+        /**
+         * Optional. The dialogflow playbook display name.
+         *
+         * @var string
+         */
+        public $playbookDisplayName;
+        /**
+         * Optional. The dialogflow playbook ID.
+         *
+         * @var string
+         */
+        public $playbookId;
+        /**
+         * Optional. The dialogflow playbook display name.
+         *
+         * @param string $playbookDisplayName
+         */
+        public function setPlaybookDisplayName($playbookDisplayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlaybookDisplayName()
+        {
+        }
+        /**
+         * Optional. The dialogflow playbook ID.
+         *
+         * @param string $playbookId
+         */
+        public function setPlaybookId($playbookId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlaybookId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainDimensionConversationalAgentsPlaybookDimensionMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPlaybookDisplayName()
-    {
-    }
-    /**
-     * Optional. The dialogflow playbook ID.
-     *
-     * @param string $playbookId
-     */
-    public function setPlaybookId($playbookId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPlaybookId()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1mainDimensionConversationalAgentsPlaybookDimensionMetadata extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainDimensionConversationalAgentsPlaybookDimensionMetadata
     {
     }
 }

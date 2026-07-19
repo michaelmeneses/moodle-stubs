@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class QuickPreviewResponse extends \Google\Model
-{
-    /**
-     * Were there compiler errors or not.
-     *
-     * @var bool
-     */
-    public $compilerError;
-    protected $containerVersionType = ContainerVersion::class;
-    protected $containerVersionDataType = '';
-    protected $syncStatusType = SyncStatus::class;
-    protected $syncStatusDataType = '';
-    /**
-     * Were there compiler errors or not.
-     *
-     * @param bool $compilerError
-     */
-    public function setCompilerError($compilerError)
+namespace Google\Service\TagManager {
+    class QuickPreviewResponse extends \Google\Model
     {
+        /**
+         * Were there compiler errors or not.
+         *
+         * @var bool
+         */
+        public $compilerError;
+        protected $containerVersionType = ContainerVersion::class;
+        protected $containerVersionDataType = '';
+        protected $syncStatusType = SyncStatus::class;
+        protected $syncStatusDataType = '';
+        /**
+         * Were there compiler errors or not.
+         *
+         * @param bool $compilerError
+         */
+        public function setCompilerError($compilerError)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCompilerError()
+        {
+        }
+        /**
+         * The quick previewed container version.
+         *
+         * @param ContainerVersion $containerVersion
+         */
+        public function setContainerVersion(ContainerVersion $containerVersion)
+        {
+        }
+        /**
+         * @return ContainerVersion
+         */
+        public function getContainerVersion()
+        {
+        }
+        /**
+         * Whether quick previewing failed when syncing the workspace to the latest
+         * container version.
+         *
+         * @param SyncStatus $syncStatus
+         */
+        public function setSyncStatus(SyncStatus $syncStatus)
+        {
+        }
+        /**
+         * @return SyncStatus
+         */
+        public function getSyncStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\TagManager\QuickPreviewResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCompilerError()
-    {
-    }
-    /**
-     * The quick previewed container version.
-     *
-     * @param ContainerVersion $containerVersion
-     */
-    public function setContainerVersion(ContainerVersion $containerVersion)
-    {
-    }
-    /**
-     * @return ContainerVersion
-     */
-    public function getContainerVersion()
-    {
-    }
-    /**
-     * Whether quick previewing failed when syncing the workspace to the latest
-     * container version.
-     *
-     * @param SyncStatus $syncStatus
-     */
-    public function setSyncStatus(SyncStatus $syncStatus)
-    {
-    }
-    /**
-     * @return SyncStatus
-     */
-    public function getSyncStatus()
+    class Google_Service_TagManager_QuickPreviewResponse extends \Google\Service\TagManager\QuickPreviewResponse
     {
     }
 }

@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class ListDatasetsResponse extends \Google\Collection
-{
-    protected $collection_key = 'datasets';
-    protected $datasetsType = Dataset::class;
-    protected $datasetsDataType = 'array';
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The first page of datasets.
-     *
-     * @param Dataset[] $datasets
-     */
-    public function setDatasets($datasets)
+namespace Google\Service\CloudHealthcare {
+    class ListDatasetsResponse extends \Google\Collection
     {
+        protected $collection_key = 'datasets';
+        protected $datasetsType = Dataset::class;
+        protected $datasetsDataType = 'array';
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The first page of datasets.
+         *
+         * @param Dataset[] $datasets
+         */
+        public function setDatasets($datasets)
+        {
+        }
+        /**
+         * @return Dataset[]
+         */
+        public function getDatasets()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results, or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Dataset[]
+     * Runtime class alias of \Google\Service\CloudHealthcare\ListDatasetsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatasets()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results, or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_CloudHealthcare_ListDatasetsResponse extends \Google\Service\CloudHealthcare\ListDatasetsResponse
     {
     }
 }

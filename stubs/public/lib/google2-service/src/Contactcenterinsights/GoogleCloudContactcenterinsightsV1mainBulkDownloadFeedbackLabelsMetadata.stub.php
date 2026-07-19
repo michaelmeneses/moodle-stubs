@@ -21,98 +21,107 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1mainBulkDownloadFeedbackLabelsMetadata extends \Google\Collection
-{
-    protected $collection_key = 'partialErrors';
-    /**
-     * Output only. The time the operation was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    protected $downloadStatsType = GoogleCloudContactcenterinsightsV1mainBulkDownloadFeedbackLabelsMetadataDownloadStats::class;
-    protected $downloadStatsDataType = '';
-    /**
-     * Output only. The time the operation finished running.
-     *
-     * @var string
-     */
-    public $endTime;
-    protected $partialErrorsType = GoogleRpcStatus::class;
-    protected $partialErrorsDataType = 'array';
-    protected $requestType = GoogleCloudContactcenterinsightsV1mainBulkDownloadFeedbackLabelsRequest::class;
-    protected $requestDataType = '';
-    /**
-     * Output only. The time the operation was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1mainBulkDownloadFeedbackLabelsMetadata extends \Google\Collection
     {
+        protected $collection_key = 'partialErrors';
+        /**
+         * Output only. The time the operation was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        protected $downloadStatsType = GoogleCloudContactcenterinsightsV1mainBulkDownloadFeedbackLabelsMetadataDownloadStats::class;
+        protected $downloadStatsDataType = '';
+        /**
+         * Output only. The time the operation finished running.
+         *
+         * @var string
+         */
+        public $endTime;
+        protected $partialErrorsType = GoogleRpcStatus::class;
+        protected $partialErrorsDataType = 'array';
+        protected $requestType = GoogleCloudContactcenterinsightsV1mainBulkDownloadFeedbackLabelsRequest::class;
+        protected $requestDataType = '';
+        /**
+         * Output only. The time the operation was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. Statistics for BulkDownloadFeedbackLabels operation.
+         *
+         * @param GoogleCloudContactcenterinsightsV1mainBulkDownloadFeedbackLabelsMetadataDownloadStats $downloadStats
+         */
+        public function setDownloadStats(GoogleCloudContactcenterinsightsV1mainBulkDownloadFeedbackLabelsMetadataDownloadStats $downloadStats)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1mainBulkDownloadFeedbackLabelsMetadataDownloadStats
+         */
+        public function getDownloadStats()
+        {
+        }
+        /**
+         * Output only. The time the operation finished running.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Partial errors during ingest operation that might cause the operation
+         * output to be incomplete.
+         *
+         * @param GoogleRpcStatus[] $partialErrors
+         */
+        public function setPartialErrors($partialErrors)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus[]
+         */
+        public function getPartialErrors()
+        {
+        }
+        /**
+         * Output only. The original request for download.
+         *
+         * @param GoogleCloudContactcenterinsightsV1mainBulkDownloadFeedbackLabelsRequest $request
+         */
+        public function setRequest(GoogleCloudContactcenterinsightsV1mainBulkDownloadFeedbackLabelsRequest $request)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1mainBulkDownloadFeedbackLabelsRequest
+         */
+        public function getRequest()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainBulkDownloadFeedbackLabelsMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. Statistics for BulkDownloadFeedbackLabels operation.
-     *
-     * @param GoogleCloudContactcenterinsightsV1mainBulkDownloadFeedbackLabelsMetadataDownloadStats $downloadStats
-     */
-    public function setDownloadStats(GoogleCloudContactcenterinsightsV1mainBulkDownloadFeedbackLabelsMetadataDownloadStats $downloadStats)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1mainBulkDownloadFeedbackLabelsMetadataDownloadStats
-     */
-    public function getDownloadStats()
-    {
-    }
-    /**
-     * Output only. The time the operation finished running.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Partial errors during ingest operation that might cause the operation
-     * output to be incomplete.
-     *
-     * @param GoogleRpcStatus[] $partialErrors
-     */
-    public function setPartialErrors($partialErrors)
-    {
-    }
-    /**
-     * @return GoogleRpcStatus[]
-     */
-    public function getPartialErrors()
-    {
-    }
-    /**
-     * Output only. The original request for download.
-     *
-     * @param GoogleCloudContactcenterinsightsV1mainBulkDownloadFeedbackLabelsRequest $request
-     */
-    public function setRequest(GoogleCloudContactcenterinsightsV1mainBulkDownloadFeedbackLabelsRequest $request)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1mainBulkDownloadFeedbackLabelsRequest
-     */
-    public function getRequest()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1mainBulkDownloadFeedbackLabelsMetadata extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainBulkDownloadFeedbackLabelsMetadata
     {
     }
 }

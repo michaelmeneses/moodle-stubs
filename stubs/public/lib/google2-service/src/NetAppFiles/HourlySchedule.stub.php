@@ -21,33 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetAppFiles;
-
-class HourlySchedule extends \Google\Model
-{
+namespace Google\Service\NetAppFiles {
+    class HourlySchedule extends \Google\Model
+    {
+        /**
+         * Set the minute of the hour to start the snapshot (0-59), defaults to the
+         * top of the hour (0).
+         *
+         * @var 
+         */
+        public $minute;
+        /**
+         * The maximum number of Snapshots to keep for the hourly schedule
+         *
+         * @var 
+         */
+        public $snapshotsToKeep;
+        public function setMinute($minute)
+        {
+        }
+        public function getMinute()
+        {
+        }
+        public function setSnapshotsToKeep($snapshotsToKeep)
+        {
+        }
+        public function getSnapshotsToKeep()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * Set the minute of the hour to start the snapshot (0-59), defaults to the
-     * top of the hour (0).
-     *
-     * @var 
+     * Runtime class alias of \Google\Service\NetAppFiles\HourlySchedule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $minute;
-    /**
-     * The maximum number of Snapshots to keep for the hourly schedule
-     *
-     * @var 
-     */
-    public $snapshotsToKeep;
-    public function setMinute($minute)
-    {
-    }
-    public function getMinute()
-    {
-    }
-    public function setSnapshotsToKeep($snapshotsToKeep)
-    {
-    }
-    public function getSnapshotsToKeep()
+    class Google_Service_NetAppFiles_HourlySchedule extends \Google\Service\NetAppFiles\HourlySchedule
     {
     }
 }

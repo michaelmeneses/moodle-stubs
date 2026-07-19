@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1alpha1IssueMatchData extends \Google\Model
-{
-    protected $issueAssignmentType = GoogleCloudContactcenterinsightsV1alpha1IssueAssignment::class;
-    protected $issueAssignmentDataType = '';
-    /**
-     * Information about the issue's assignment.
-     *
-     * @param GoogleCloudContactcenterinsightsV1alpha1IssueAssignment $issueAssignment
-     */
-    public function setIssueAssignment(GoogleCloudContactcenterinsightsV1alpha1IssueAssignment $issueAssignment)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1alpha1IssueMatchData extends \Google\Model
     {
+        protected $issueAssignmentType = GoogleCloudContactcenterinsightsV1alpha1IssueAssignment::class;
+        protected $issueAssignmentDataType = '';
+        /**
+         * Information about the issue's assignment.
+         *
+         * @param GoogleCloudContactcenterinsightsV1alpha1IssueAssignment $issueAssignment
+         */
+        public function setIssueAssignment(GoogleCloudContactcenterinsightsV1alpha1IssueAssignment $issueAssignment)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1alpha1IssueAssignment
+         */
+        public function getIssueAssignment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContactcenterinsightsV1alpha1IssueAssignment
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1IssueMatchData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIssueAssignment()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1alpha1IssueMatchData extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1IssueMatchData
     {
     }
 }

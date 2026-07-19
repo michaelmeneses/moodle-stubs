@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaSearchRequestBoostSpec extends \Google\Collection
-{
-    protected $collection_key = 'conditionBoostSpecs';
-    protected $conditionBoostSpecsType = GoogleCloudDiscoveryengineV1betaSearchRequestBoostSpecConditionBoostSpec::class;
-    protected $conditionBoostSpecsDataType = 'array';
-    /**
-     * Condition boost specifications. If a document matches multiple conditions
-     * in the specifications, boost scores from these specifications are all
-     * applied and combined in a non-linear way. Maximum number of specifications
-     * is 20.
-     *
-     * @param GoogleCloudDiscoveryengineV1betaSearchRequestBoostSpecConditionBoostSpec[] $conditionBoostSpecs
-     */
-    public function setConditionBoostSpecs($conditionBoostSpecs)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaSearchRequestBoostSpec extends \Google\Collection
     {
+        protected $collection_key = 'conditionBoostSpecs';
+        protected $conditionBoostSpecsType = GoogleCloudDiscoveryengineV1betaSearchRequestBoostSpecConditionBoostSpec::class;
+        protected $conditionBoostSpecsDataType = 'array';
+        /**
+         * Condition boost specifications. If a document matches multiple conditions
+         * in the specifications, boost scores from these specifications are all
+         * applied and combined in a non-linear way. Maximum number of specifications
+         * is 20.
+         *
+         * @param GoogleCloudDiscoveryengineV1betaSearchRequestBoostSpecConditionBoostSpec[] $conditionBoostSpecs
+         */
+        public function setConditionBoostSpecs($conditionBoostSpecs)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaSearchRequestBoostSpecConditionBoostSpec[]
+         */
+        public function getConditionBoostSpecs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1betaSearchRequestBoostSpecConditionBoostSpec[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaSearchRequestBoostSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConditionBoostSpecs()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaSearchRequestBoostSpec extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaSearchRequestBoostSpec
     {
     }
 }

@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class ListDeviceTierConfigsResponse extends \Google\Collection
-{
-    protected $collection_key = 'deviceTierConfigs';
-    protected $deviceTierConfigsType = DeviceTierConfig::class;
-    protected $deviceTierConfigsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Device tier configs created by the developer.
-     *
-     * @param DeviceTierConfig[] $deviceTierConfigs
-     */
-    public function setDeviceTierConfigs($deviceTierConfigs)
+namespace Google\Service\AndroidPublisher {
+    class ListDeviceTierConfigsResponse extends \Google\Collection
     {
+        protected $collection_key = 'deviceTierConfigs';
+        protected $deviceTierConfigsType = DeviceTierConfig::class;
+        protected $deviceTierConfigsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Device tier configs created by the developer.
+         *
+         * @param DeviceTierConfig[] $deviceTierConfigs
+         */
+        public function setDeviceTierConfigs($deviceTierConfigs)
+        {
+        }
+        /**
+         * @return DeviceTierConfig[]
+         */
+        public function getDeviceTierConfigs()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DeviceTierConfig[]
+     * Runtime class alias of \Google\Service\AndroidPublisher\ListDeviceTierConfigsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeviceTierConfigs()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_AndroidPublisher_ListDeviceTierConfigsResponse extends \Google\Service\AndroidPublisher\ListDeviceTierConfigsResponse
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class CloudPubsubTopic extends \Google\Model
-{
-    /**
-     * The `name` field of a Cloud Pub/Sub [Topic](https://cloud.google.com/pubsub
-     * /docs/reference/rest/v1/projects.topics#Topic).
-     *
-     * @var string
-     */
-    public $topicName;
-    /**
-     * The `name` field of a Cloud Pub/Sub [Topic](https://cloud.google.com/pubsub
-     * /docs/reference/rest/v1/projects.topics#Topic).
-     *
-     * @param string $topicName
-     */
-    public function setTopicName($topicName)
+namespace Google\Service\Classroom {
+    class CloudPubsubTopic extends \Google\Model
     {
+        /**
+         * The `name` field of a Cloud Pub/Sub [Topic](https://cloud.google.com/pubsub
+         * /docs/reference/rest/v1/projects.topics#Topic).
+         *
+         * @var string
+         */
+        public $topicName;
+        /**
+         * The `name` field of a Cloud Pub/Sub [Topic](https://cloud.google.com/pubsub
+         * /docs/reference/rest/v1/projects.topics#Topic).
+         *
+         * @param string $topicName
+         */
+        public function setTopicName($topicName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTopicName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Classroom\CloudPubsubTopic registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTopicName()
+    class Google_Service_Classroom_CloudPubsubTopic extends \Google\Service\Classroom\CloudPubsubTopic
     {
     }
 }

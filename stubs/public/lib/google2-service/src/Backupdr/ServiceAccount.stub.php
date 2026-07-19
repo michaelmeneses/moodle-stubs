@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class ServiceAccount extends \Google\Collection
-{
-    protected $collection_key = 'scopes';
-    /**
-     * Optional. Email address of the service account.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * Optional. The list of scopes to be made available for this service account.
-     *
-     * @var string[]
-     */
-    public $scopes;
-    /**
-     * Optional. Email address of the service account.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
+namespace Google\Service\Backupdr {
+    class ServiceAccount extends \Google\Collection
     {
+        protected $collection_key = 'scopes';
+        /**
+         * Optional. Email address of the service account.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * Optional. The list of scopes to be made available for this service account.
+         *
+         * @var string[]
+         */
+        public $scopes;
+        /**
+         * Optional. Email address of the service account.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * Optional. The list of scopes to be made available for this service account.
+         *
+         * @param string[] $scopes
+         */
+        public function setScopes($scopes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getScopes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Backupdr\ServiceAccount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmail()
-    {
-    }
-    /**
-     * Optional. The list of scopes to be made available for this service account.
-     *
-     * @param string[] $scopes
-     */
-    public function setScopes($scopes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getScopes()
+    class Google_Service_Backupdr_ServiceAccount extends \Google\Service\Backupdr\ServiceAccount
     {
     }
 }

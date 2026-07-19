@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkManagement;
-
-class AppEngineVersionInfo extends \Google\Model
-{
-    /**
-     * Name of an App Engine version.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * App Engine execution environment for a version.
-     *
-     * @var string
-     */
-    public $environment;
-    /**
-     * Runtime of the App Engine version.
-     *
-     * @var string
-     */
-    public $runtime;
-    /**
-     * URI of an App Engine version.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Name of an App Engine version.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\NetworkManagement {
+    class AppEngineVersionInfo extends \Google\Model
     {
+        /**
+         * Name of an App Engine version.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * App Engine execution environment for a version.
+         *
+         * @var string
+         */
+        public $environment;
+        /**
+         * Runtime of the App Engine version.
+         *
+         * @var string
+         */
+        public $runtime;
+        /**
+         * URI of an App Engine version.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Name of an App Engine version.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * App Engine execution environment for a version.
+         *
+         * @param string $environment
+         */
+        public function setEnvironment($environment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnvironment()
+        {
+        }
+        /**
+         * Runtime of the App Engine version.
+         *
+         * @param string $runtime
+         */
+        public function setRuntime($runtime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRuntime()
+        {
+        }
+        /**
+         * URI of an App Engine version.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkManagement\AppEngineVersionInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * App Engine execution environment for a version.
-     *
-     * @param string $environment
-     */
-    public function setEnvironment($environment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEnvironment()
-    {
-    }
-    /**
-     * Runtime of the App Engine version.
-     *
-     * @param string $runtime
-     */
-    public function setRuntime($runtime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRuntime()
-    {
-    }
-    /**
-     * URI of an App Engine version.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_NetworkManagement_AppEngineVersionInfo extends \Google\Service\NetworkManagement\AppEngineVersionInfo
     {
     }
 }

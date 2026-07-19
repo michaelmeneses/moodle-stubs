@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3DeploymentResult extends \Google\Collection
-{
-    protected $collection_key = 'deploymentTestResults';
-    /**
-     * Results of test cases running before the deployment. Format:
-     * `projects//locations//agents//testCases//results/`.
-     *
-     * @var string[]
-     */
-    public $deploymentTestResults;
-    /**
-     * The name of the experiment triggered by this deployment. Format:
-     * projects//locations//agents//environments//experiments/.
-     *
-     * @var string
-     */
-    public $experiment;
-    /**
-     * Results of test cases running before the deployment. Format:
-     * `projects//locations//agents//testCases//results/`.
-     *
-     * @param string[] $deploymentTestResults
-     */
-    public function setDeploymentTestResults($deploymentTestResults)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3DeploymentResult extends \Google\Collection
     {
+        protected $collection_key = 'deploymentTestResults';
+        /**
+         * Results of test cases running before the deployment. Format:
+         * `projects//locations//agents//testCases//results/`.
+         *
+         * @var string[]
+         */
+        public $deploymentTestResults;
+        /**
+         * The name of the experiment triggered by this deployment. Format:
+         * projects//locations//agents//environments//experiments/.
+         *
+         * @var string
+         */
+        public $experiment;
+        /**
+         * Results of test cases running before the deployment. Format:
+         * `projects//locations//agents//testCases//results/`.
+         *
+         * @param string[] $deploymentTestResults
+         */
+        public function setDeploymentTestResults($deploymentTestResults)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDeploymentTestResults()
+        {
+        }
+        /**
+         * The name of the experiment triggered by this deployment. Format:
+         * projects//locations//agents//environments//experiments/.
+         *
+         * @param string $experiment
+         */
+        public function setExperiment($experiment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExperiment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3DeploymentResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeploymentTestResults()
-    {
-    }
-    /**
-     * The name of the experiment triggered by this deployment. Format:
-     * projects//locations//agents//environments//experiments/.
-     *
-     * @param string $experiment
-     */
-    public function setExperiment($experiment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExperiment()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3DeploymentResult extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3DeploymentResult
     {
     }
 }

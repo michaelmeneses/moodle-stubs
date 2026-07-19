@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class ContextualKeyword extends \Google\Model
-{
-    /**
-     * The keyword that can be targeted by ads.
-     *
-     * @var string
-     */
-    public $keyword;
-    /**
-     * The keyword that can be targeted by ads.
-     *
-     * @param string $keyword
-     */
-    public function setKeyword($keyword)
+namespace Google\Service\Dfareporting {
+    class ContextualKeyword extends \Google\Model
     {
+        /**
+         * The keyword that can be targeted by ads.
+         *
+         * @var string
+         */
+        public $keyword;
+        /**
+         * The keyword that can be targeted by ads.
+         *
+         * @param string $keyword
+         */
+        public function setKeyword($keyword)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKeyword()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\ContextualKeyword registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKeyword()
+    class Google_Service_Dfareporting_ContextualKeyword extends \Google\Service\Dfareporting\ContextualKeyword
     {
     }
 }

@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaAudienceEventFilter extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $eventName;
-    protected $eventParameterFilterExpressionType = GoogleAnalyticsAdminV1alphaAudienceFilterExpression::class;
-    protected $eventParameterFilterExpressionDataType = '';
-    /**
-     * @param string
-     */
-    public function setEventName($eventName)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaAudienceEventFilter extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $eventName;
+        protected $eventParameterFilterExpressionType = GoogleAnalyticsAdminV1alphaAudienceFilterExpression::class;
+        protected $eventParameterFilterExpressionDataType = '';
+        /**
+         * @param string
+         */
+        public function setEventName($eventName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEventName()
+        {
+        }
+        /**
+         * @param GoogleAnalyticsAdminV1alphaAudienceFilterExpression
+         */
+        public function setEventParameterFilterExpression(GoogleAnalyticsAdminV1alphaAudienceFilterExpression $eventParameterFilterExpression)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaAudienceFilterExpression
+         */
+        public function getEventParameterFilterExpression()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAudienceEventFilter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEventName()
-    {
-    }
-    /**
-     * @param GoogleAnalyticsAdminV1alphaAudienceFilterExpression
-     */
-    public function setEventParameterFilterExpression(GoogleAnalyticsAdminV1alphaAudienceFilterExpression $eventParameterFilterExpression)
-    {
-    }
-    /**
-     * @return GoogleAnalyticsAdminV1alphaAudienceFilterExpression
-     */
-    public function getEventParameterFilterExpression()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaAudienceEventFilter extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaAudienceEventFilter
     {
     }
 }

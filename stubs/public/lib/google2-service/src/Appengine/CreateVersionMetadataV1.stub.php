@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine;
-
-class CreateVersionMetadataV1 extends \Google\Model
-{
-    /**
-     * The Cloud Build ID if one was created as part of the version create.
-     * @OutputOnly
-     *
-     * @var string
-     */
-    public $cloudBuildId;
-    /**
-     * The Cloud Build ID if one was created as part of the version create.
-     * @OutputOnly
-     *
-     * @param string $cloudBuildId
-     */
-    public function setCloudBuildId($cloudBuildId)
+namespace Google\Service\Appengine {
+    class CreateVersionMetadataV1 extends \Google\Model
     {
+        /**
+         * The Cloud Build ID if one was created as part of the version create.
+         * @OutputOnly
+         *
+         * @var string
+         */
+        public $cloudBuildId;
+        /**
+         * The Cloud Build ID if one was created as part of the version create.
+         * @OutputOnly
+         *
+         * @param string $cloudBuildId
+         */
+        public function setCloudBuildId($cloudBuildId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCloudBuildId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Appengine\CreateVersionMetadataV1 registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudBuildId()
+    class Google_Service_Appengine_CreateVersionMetadataV1 extends \Google\Service\Appengine\CreateVersionMetadataV1
     {
     }
 }

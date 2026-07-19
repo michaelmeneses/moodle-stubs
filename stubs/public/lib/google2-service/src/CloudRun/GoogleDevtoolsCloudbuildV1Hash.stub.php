@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleDevtoolsCloudbuildV1Hash extends \Google\Model
-{
-    /**
-     * No hash requested.
-     */
-    public const TYPE_NONE = 'NONE';
-    /**
-     * Use a sha256 hash.
-     */
-    public const TYPE_SHA256 = 'SHA256';
-    /**
-     * Use a md5 hash.
-     */
-    public const TYPE_MD5 = 'MD5';
-    /**
-     * Dirhash of a Go module's source code which is then hex-encoded.
-     */
-    public const TYPE_GO_MODULE_H1 = 'GO_MODULE_H1';
-    /**
-     * Use a sha512 hash.
-     */
-    public const TYPE_SHA512 = 'SHA512';
-    /**
-     * The type of hash that was performed.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The hash value.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * The type of hash that was performed.
-     *
-     * Accepted values: NONE, SHA256, MD5, GO_MODULE_H1, SHA512
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
+namespace Google\Service\CloudRun {
+    class GoogleDevtoolsCloudbuildV1Hash extends \Google\Model
     {
+        /**
+         * No hash requested.
+         */
+        public const TYPE_NONE = 'NONE';
+        /**
+         * Use a sha256 hash.
+         */
+        public const TYPE_SHA256 = 'SHA256';
+        /**
+         * Use a md5 hash.
+         */
+        public const TYPE_MD5 = 'MD5';
+        /**
+         * Dirhash of a Go module's source code which is then hex-encoded.
+         */
+        public const TYPE_GO_MODULE_H1 = 'GO_MODULE_H1';
+        /**
+         * Use a sha512 hash.
+         */
+        public const TYPE_SHA512 = 'SHA512';
+        /**
+         * The type of hash that was performed.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The hash value.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * The type of hash that was performed.
+         *
+         * Accepted values: NONE, SHA256, MD5, GO_MODULE_H1, SHA512
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
+        /**
+         * The hash value.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::TYPE_*
+     * Runtime class alias of \Google\Service\CloudRun\GoogleDevtoolsCloudbuildV1Hash registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getType()
-    {
-    }
-    /**
-     * The hash value.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_CloudRun_GoogleDevtoolsCloudbuildV1Hash extends \Google\Service\CloudRun\GoogleDevtoolsCloudbuildV1Hash
     {
     }
 }

@@ -21,48 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ACMEDNS\Resource;
-
-/**
- * The "acmeChallengeSets" collection of methods.
- * Typical usage is:
- *  <code>
- *   $acmednsService = new Google\Service\ACMEDNS(...);
- *   $acmeChallengeSets = $acmednsService->acmeChallengeSets;
- *  </code>
- */
-class AcmeChallengeSets extends \Google\Service\Resource
-{
+namespace Google\Service\ACMEDNS\Resource {
+    use Google\Service\ACMEDNS\AcmeChallengeSet;
+    use Google\Service\ACMEDNS\RotateChallengesRequest;
     /**
-     * Gets the ACME challenge set for a given domain name. Domain names must be
-     * provided in Punycode. (acmeChallengeSets.get)
-     *
-     * @param string $rootDomain Required. SLD + TLD domain name to list challenges.
-     * For example, this would be "google.com" for any FQDN under "google.com". That
-     * includes challenges for "subdomain.google.com". This MAY be Unicode or
-     * Punycode.
-     * @param array $optParams Optional parameters.
-     * @return AcmeChallengeSet
-     * @throws \Google\Service\Exception
+     * The "acmeChallengeSets" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $acmednsService = new Google\Service\ACMEDNS(...);
+     *   $acmeChallengeSets = $acmednsService->acmeChallengeSets;
+     *  </code>
      */
-    public function get($rootDomain, $optParams = [])
+    class AcmeChallengeSets extends \Google\Service\Resource
     {
+        /**
+         * Gets the ACME challenge set for a given domain name. Domain names must be
+         * provided in Punycode. (acmeChallengeSets.get)
+         *
+         * @param string $rootDomain Required. SLD + TLD domain name to list challenges.
+         * For example, this would be "google.com" for any FQDN under "google.com". That
+         * includes challenges for "subdomain.google.com". This MAY be Unicode or
+         * Punycode.
+         * @param array $optParams Optional parameters.
+         * @return AcmeChallengeSet
+         * @throws \Google\Service\Exception
+         */
+        public function get($rootDomain, $optParams = [])
+        {
+        }
+        /**
+         * Rotate the ACME challenges for a given domain name. By default, removes any
+         * challenges that are older than 30 days. Domain names must be provided in
+         * Punycode. (acmeChallengeSets.rotateChallenges)
+         *
+         * @param string $rootDomain Required. SLD + TLD domain name to update records
+         * for. For example, this would be "google.com" for any FQDN under "google.com".
+         * That includes challenges for "subdomain.google.com". This MAY be Unicode or
+         * Punycode.
+         * @param RotateChallengesRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return AcmeChallengeSet
+         * @throws \Google\Service\Exception
+         */
+        public function rotateChallenges($rootDomain, RotateChallengesRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Rotate the ACME challenges for a given domain name. By default, removes any
-     * challenges that are older than 30 days. Domain names must be provided in
-     * Punycode. (acmeChallengeSets.rotateChallenges)
-     *
-     * @param string $rootDomain Required. SLD + TLD domain name to update records
-     * for. For example, this would be "google.com" for any FQDN under "google.com".
-     * That includes challenges for "subdomain.google.com". This MAY be Unicode or
-     * Punycode.
-     * @param RotateChallengesRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return AcmeChallengeSet
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ACMEDNS\Resource\AcmeChallengeSets registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function rotateChallenges($rootDomain, RotateChallengesRequest $postBody, $optParams = [])
+    class Google_Service_ACMEDNS_Resource_AcmeChallengeSets extends \Google\Service\ACMEDNS\Resource\AcmeChallengeSets
     {
     }
 }

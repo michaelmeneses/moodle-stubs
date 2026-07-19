@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class DataSourceRefreshMonthlySchedule extends \Google\Collection
-{
-    protected $collection_key = 'daysOfMonth';
-    /**
-     * Days of the month to refresh. Only 1-28 are supported, mapping to the 1st
-     * to the 28th day. At least one day must be specified.
-     *
-     * @var int[]
-     */
-    public $daysOfMonth;
-    protected $startTimeType = TimeOfDay::class;
-    protected $startTimeDataType = '';
-    /**
-     * Days of the month to refresh. Only 1-28 are supported, mapping to the 1st
-     * to the 28th day. At least one day must be specified.
-     *
-     * @param int[] $daysOfMonth
-     */
-    public function setDaysOfMonth($daysOfMonth)
+namespace Google\Service\Sheets {
+    class DataSourceRefreshMonthlySchedule extends \Google\Collection
     {
+        protected $collection_key = 'daysOfMonth';
+        /**
+         * Days of the month to refresh. Only 1-28 are supported, mapping to the 1st
+         * to the 28th day. At least one day must be specified.
+         *
+         * @var int[]
+         */
+        public $daysOfMonth;
+        protected $startTimeType = TimeOfDay::class;
+        protected $startTimeDataType = '';
+        /**
+         * Days of the month to refresh. Only 1-28 are supported, mapping to the 1st
+         * to the 28th day. At least one day must be specified.
+         *
+         * @param int[] $daysOfMonth
+         */
+        public function setDaysOfMonth($daysOfMonth)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getDaysOfMonth()
+        {
+        }
+        /**
+         * The start time of a time interval in which a data source refresh is
+         * scheduled. Only `hours` part is used. The time interval size defaults to
+         * that in the Sheets editor.
+         *
+         * @param TimeOfDay $startTime
+         */
+        public function setStartTime(TimeOfDay $startTime)
+        {
+        }
+        /**
+         * @return TimeOfDay
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int[]
+     * Runtime class alias of \Google\Service\Sheets\DataSourceRefreshMonthlySchedule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDaysOfMonth()
-    {
-    }
-    /**
-     * The start time of a time interval in which a data source refresh is
-     * scheduled. Only `hours` part is used. The time interval size defaults to
-     * that in the Sheets editor.
-     *
-     * @param TimeOfDay $startTime
-     */
-    public function setStartTime(TimeOfDay $startTime)
-    {
-    }
-    /**
-     * @return TimeOfDay
-     */
-    public function getStartTime()
+    class Google_Service_Sheets_DataSourceRefreshMonthlySchedule extends \Google\Service\Sheets\DataSourceRefreshMonthlySchedule
     {
     }
 }

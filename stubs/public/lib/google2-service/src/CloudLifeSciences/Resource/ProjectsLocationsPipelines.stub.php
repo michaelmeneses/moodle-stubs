@@ -21,39 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudLifeSciences\Resource;
-
-/**
- * The "pipelines" collection of methods.
- * Typical usage is:
- *  <code>
- *   $lifesciencesService = new Google\Service\CloudLifeSciences(...);
- *   $pipelines = $lifesciencesService->projects_locations_pipelines;
- *  </code>
- */
-class ProjectsLocationsPipelines extends \Google\Service\Resource
-{
+namespace Google\Service\CloudLifeSciences\Resource {
+    use Google\Service\CloudLifeSciences\Operation;
+    use Google\Service\CloudLifeSciences\RunPipelineRequest;
     /**
-     * Runs a pipeline. The returned Operation's metadata field will contain a
-     * google.cloud.lifesciences.v2beta.Metadata object describing the status of the
-     * pipeline execution. The response field will contain a
-     * google.cloud.lifesciences.v2beta.RunPipelineResponse object if the pipeline
-     * completes successfully. **Note:** Before you can use this method, the *Life
-     * Sciences Service Agent* must have access to your project. This is done
-     * automatically when the Cloud Life Sciences API is first enabled, but if you
-     * delete this permission you must disable and re-enable the API to grant the
-     * Life Sciences Service Agent the required permissions. Authorization requires
-     * the following [Google IAM](https://cloud.google.com/iam/) permission: *
-     * `lifesciences.workflows.run` (pipelines.run)
-     *
-     * @param string $parent The project and location that this request should be
-     * executed against.
-     * @param RunPipelineRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "pipelines" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $lifesciencesService = new Google\Service\CloudLifeSciences(...);
+     *   $pipelines = $lifesciencesService->projects_locations_pipelines;
+     *  </code>
      */
-    public function run($parent, RunPipelineRequest $postBody, $optParams = [])
+    class ProjectsLocationsPipelines extends \Google\Service\Resource
+    {
+        /**
+         * Runs a pipeline. The returned Operation's metadata field will contain a
+         * google.cloud.lifesciences.v2beta.Metadata object describing the status of the
+         * pipeline execution. The response field will contain a
+         * google.cloud.lifesciences.v2beta.RunPipelineResponse object if the pipeline
+         * completes successfully. **Note:** Before you can use this method, the *Life
+         * Sciences Service Agent* must have access to your project. This is done
+         * automatically when the Cloud Life Sciences API is first enabled, but if you
+         * delete this permission you must disable and re-enable the API to grant the
+         * Life Sciences Service Agent the required permissions. Authorization requires
+         * the following [Google IAM](https://cloud.google.com/iam/) permission: *
+         * `lifesciences.workflows.run` (pipelines.run)
+         *
+         * @param string $parent The project and location that this request should be
+         * executed against.
+         * @param RunPipelineRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function run($parent, RunPipelineRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudLifeSciences\Resource\ProjectsLocationsPipelines registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudLifeSciences_Resource_ProjectsLocationsPipelines extends \Google\Service\CloudLifeSciences\Resource\ProjectsLocationsPipelines
     {
     }
 }

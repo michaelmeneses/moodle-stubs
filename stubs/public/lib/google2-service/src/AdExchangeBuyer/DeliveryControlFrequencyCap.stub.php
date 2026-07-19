@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class DeliveryControlFrequencyCap extends \Google\Model
-{
-    public $maxImpressions;
-    public $numTimeUnits;
-    public $timeUnitType;
-    public function setMaxImpressions($maxImpressions)
+namespace Google\Service\AdExchangeBuyer {
+    class DeliveryControlFrequencyCap extends \Google\Model
     {
+        public $maxImpressions;
+        public $numTimeUnits;
+        public $timeUnitType;
+        public function setMaxImpressions($maxImpressions)
+        {
+        }
+        public function getMaxImpressions()
+        {
+        }
+        public function setNumTimeUnits($numTimeUnits)
+        {
+        }
+        public function getNumTimeUnits()
+        {
+        }
+        public function setTimeUnitType($timeUnitType)
+        {
+        }
+        public function getTimeUnitType()
+        {
+        }
     }
-    public function getMaxImpressions()
-    {
-    }
-    public function setNumTimeUnits($numTimeUnits)
-    {
-    }
-    public function getNumTimeUnits()
-    {
-    }
-    public function setTimeUnitType($timeUnitType)
-    {
-    }
-    public function getTimeUnitType()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\DeliveryControlFrequencyCap registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AdExchangeBuyer_DeliveryControlFrequencyCap extends \Google\Service\AdExchangeBuyer\DeliveryControlFrequencyCap
     {
     }
 }

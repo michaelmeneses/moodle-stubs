@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta1DocumentTextChange extends \Google\Collection
-{
-    protected $collection_key = 'provenance';
-    /**
-     * @var string
-     */
-    public $changedText;
-    protected $provenanceType = GoogleCloudDocumentaiV1beta1DocumentProvenance::class;
-    protected $provenanceDataType = 'array';
-    protected $textAnchorType = GoogleCloudDocumentaiV1beta1DocumentTextAnchor::class;
-    protected $textAnchorDataType = '';
-    /**
-     * @param string
-     */
-    public function setChangedText($changedText)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta1DocumentTextChange extends \Google\Collection
     {
+        protected $collection_key = 'provenance';
+        /**
+         * @var string
+         */
+        public $changedText;
+        protected $provenanceType = GoogleCloudDocumentaiV1beta1DocumentProvenance::class;
+        protected $provenanceDataType = 'array';
+        protected $textAnchorType = GoogleCloudDocumentaiV1beta1DocumentTextAnchor::class;
+        protected $textAnchorDataType = '';
+        /**
+         * @param string
+         */
+        public function setChangedText($changedText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChangedText()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta1DocumentProvenance[]
+         */
+        public function setProvenance($provenance)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta1DocumentProvenance[]
+         */
+        public function getProvenance()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta1DocumentTextAnchor
+         */
+        public function setTextAnchor(GoogleCloudDocumentaiV1beta1DocumentTextAnchor $textAnchor)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta1DocumentTextAnchor
+         */
+        public function getTextAnchor()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta1DocumentTextChange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChangedText()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta1DocumentProvenance[]
-     */
-    public function setProvenance($provenance)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta1DocumentProvenance[]
-     */
-    public function getProvenance()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta1DocumentTextAnchor
-     */
-    public function setTextAnchor(GoogleCloudDocumentaiV1beta1DocumentTextAnchor $textAnchor)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta1DocumentTextAnchor
-     */
-    public function getTextAnchor()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta1DocumentTextChange extends \Google\Service\Document\GoogleCloudDocumentaiV1beta1DocumentTextChange
     {
     }
 }

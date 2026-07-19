@@ -21,134 +21,147 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dns\Resource;
-
-/**
- * The "responsePolicyRules" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dnsService = new Google\Service\Dns(...);
- *   $responsePolicyRules = $dnsService->responsePolicyRules;
- *  </code>
- */
-class ResponsePolicyRules extends \Google\Service\Resource
-{
+namespace Google\Service\Dns\Resource {
+    use Google\Service\Dns\ResponsePolicyRule;
+    use Google\Service\Dns\ResponsePolicyRulesListResponse;
+    use Google\Service\Dns\ResponsePolicyRulesPatchResponse;
+    use Google\Service\Dns\ResponsePolicyRulesUpdateResponse;
     /**
-     * Creates a new Response Policy Rule. (responsePolicyRules.create)
-     *
-     * @param string $project Identifies the project addressed by this request.
-     * @param string $responsePolicy User assigned name of the Response Policy
-     * containing the Response Policy Rule.
-     * @param ResponsePolicyRule $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string clientOperationId For mutating operation requests only. An
-     * optional identifier specified by the client. Must be unique for operation
-     * resources in the Operations collection.
-     * @return ResponsePolicyRule
-     * @throws \Google\Service\Exception
+     * The "responsePolicyRules" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dnsService = new Google\Service\Dns(...);
+     *   $responsePolicyRules = $dnsService->responsePolicyRules;
+     *  </code>
      */
-    public function create($project, $responsePolicy, ResponsePolicyRule $postBody, $optParams = [])
+    class ResponsePolicyRules extends \Google\Service\Resource
     {
+        /**
+         * Creates a new Response Policy Rule. (responsePolicyRules.create)
+         *
+         * @param string $project Identifies the project addressed by this request.
+         * @param string $responsePolicy User assigned name of the Response Policy
+         * containing the Response Policy Rule.
+         * @param ResponsePolicyRule $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string clientOperationId For mutating operation requests only. An
+         * optional identifier specified by the client. Must be unique for operation
+         * resources in the Operations collection.
+         * @return ResponsePolicyRule
+         * @throws \Google\Service\Exception
+         */
+        public function create($project, $responsePolicy, ResponsePolicyRule $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a previously created Response Policy Rule.
+         * (responsePolicyRules.delete)
+         *
+         * @param string $project Identifies the project addressed by this request.
+         * @param string $responsePolicy User assigned name of the Response Policy
+         * containing the Response Policy Rule.
+         * @param string $responsePolicyRule User assigned name of the Response Policy
+         * Rule addressed by this request.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string clientOperationId For mutating operation requests only. An
+         * optional identifier specified by the client. Must be unique for operation
+         * resources in the Operations collection.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($project, $responsePolicy, $responsePolicyRule, $optParams = [])
+        {
+        }
+        /**
+         * Fetches the representation of an existing Response Policy Rule.
+         * (responsePolicyRules.get)
+         *
+         * @param string $project Identifies the project addressed by this request.
+         * @param string $responsePolicy User assigned name of the Response Policy
+         * containing the Response Policy Rule.
+         * @param string $responsePolicyRule User assigned name of the Response Policy
+         * Rule addressed by this request.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string clientOperationId For mutating operation requests only. An
+         * optional identifier specified by the client. Must be unique for operation
+         * resources in the Operations collection.
+         * @return ResponsePolicyRule
+         * @throws \Google\Service\Exception
+         */
+        public function get($project, $responsePolicy, $responsePolicyRule, $optParams = [])
+        {
+        }
+        /**
+         * Enumerates all Response Policy Rules associated with a project.
+         * (responsePolicyRules.listResponsePolicyRules)
+         *
+         * @param string $project Identifies the project addressed by this request.
+         * @param string $responsePolicy User assigned name of the Response Policy to
+         * list.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int maxResults Optional. Maximum number of results to be returned.
+         * If unspecified, the server decides how many results to return.
+         * @opt_param string pageToken Optional. A tag returned by a previous list
+         * request that was truncated. Use this parameter to continue a previous list
+         * request.
+         * @return ResponsePolicyRulesListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listResponsePolicyRules($project, $responsePolicy, $optParams = [])
+        {
+        }
+        /**
+         * Applies a partial update to an existing Response Policy Rule.
+         * (responsePolicyRules.patch)
+         *
+         * @param string $project Identifies the project addressed by this request.
+         * @param string $responsePolicy User assigned name of the Response Policy
+         * containing the Response Policy Rule.
+         * @param string $responsePolicyRule User assigned name of the Response Policy
+         * Rule addressed by this request.
+         * @param ResponsePolicyRule $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string clientOperationId For mutating operation requests only. An
+         * optional identifier specified by the client. Must be unique for operation
+         * resources in the Operations collection.
+         * @return ResponsePolicyRulesPatchResponse
+         * @throws \Google\Service\Exception
+         */
+        public function patch($project, $responsePolicy, $responsePolicyRule, ResponsePolicyRule $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Updates an existing Response Policy Rule. (responsePolicyRules.update)
+         *
+         * @param string $project Identifies the project addressed by this request.
+         * @param string $responsePolicy User assigned name of the Response Policy
+         * containing the Response Policy Rule.
+         * @param string $responsePolicyRule User assigned name of the Response Policy
+         * Rule addressed by this request.
+         * @param ResponsePolicyRule $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string clientOperationId For mutating operation requests only. An
+         * optional identifier specified by the client. Must be unique for operation
+         * resources in the Operations collection.
+         * @return ResponsePolicyRulesUpdateResponse
+         * @throws \Google\Service\Exception
+         */
+        public function update($project, $responsePolicy, $responsePolicyRule, ResponsePolicyRule $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a previously created Response Policy Rule.
-     * (responsePolicyRules.delete)
-     *
-     * @param string $project Identifies the project addressed by this request.
-     * @param string $responsePolicy User assigned name of the Response Policy
-     * containing the Response Policy Rule.
-     * @param string $responsePolicyRule User assigned name of the Response Policy
-     * Rule addressed by this request.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string clientOperationId For mutating operation requests only. An
-     * optional identifier specified by the client. Must be unique for operation
-     * resources in the Operations collection.
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Dns\Resource\ResponsePolicyRules registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($project, $responsePolicy, $responsePolicyRule, $optParams = [])
-    {
-    }
-    /**
-     * Fetches the representation of an existing Response Policy Rule.
-     * (responsePolicyRules.get)
-     *
-     * @param string $project Identifies the project addressed by this request.
-     * @param string $responsePolicy User assigned name of the Response Policy
-     * containing the Response Policy Rule.
-     * @param string $responsePolicyRule User assigned name of the Response Policy
-     * Rule addressed by this request.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string clientOperationId For mutating operation requests only. An
-     * optional identifier specified by the client. Must be unique for operation
-     * resources in the Operations collection.
-     * @return ResponsePolicyRule
-     * @throws \Google\Service\Exception
-     */
-    public function get($project, $responsePolicy, $responsePolicyRule, $optParams = [])
-    {
-    }
-    /**
-     * Enumerates all Response Policy Rules associated with a project.
-     * (responsePolicyRules.listResponsePolicyRules)
-     *
-     * @param string $project Identifies the project addressed by this request.
-     * @param string $responsePolicy User assigned name of the Response Policy to
-     * list.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int maxResults Optional. Maximum number of results to be returned.
-     * If unspecified, the server decides how many results to return.
-     * @opt_param string pageToken Optional. A tag returned by a previous list
-     * request that was truncated. Use this parameter to continue a previous list
-     * request.
-     * @return ResponsePolicyRulesListResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listResponsePolicyRules($project, $responsePolicy, $optParams = [])
-    {
-    }
-    /**
-     * Applies a partial update to an existing Response Policy Rule.
-     * (responsePolicyRules.patch)
-     *
-     * @param string $project Identifies the project addressed by this request.
-     * @param string $responsePolicy User assigned name of the Response Policy
-     * containing the Response Policy Rule.
-     * @param string $responsePolicyRule User assigned name of the Response Policy
-     * Rule addressed by this request.
-     * @param ResponsePolicyRule $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string clientOperationId For mutating operation requests only. An
-     * optional identifier specified by the client. Must be unique for operation
-     * resources in the Operations collection.
-     * @return ResponsePolicyRulesPatchResponse
-     * @throws \Google\Service\Exception
-     */
-    public function patch($project, $responsePolicy, $responsePolicyRule, ResponsePolicyRule $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Updates an existing Response Policy Rule. (responsePolicyRules.update)
-     *
-     * @param string $project Identifies the project addressed by this request.
-     * @param string $responsePolicy User assigned name of the Response Policy
-     * containing the Response Policy Rule.
-     * @param string $responsePolicyRule User assigned name of the Response Policy
-     * Rule addressed by this request.
-     * @param ResponsePolicyRule $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string clientOperationId For mutating operation requests only. An
-     * optional identifier specified by the client. Must be unique for operation
-     * resources in the Operations collection.
-     * @return ResponsePolicyRulesUpdateResponse
-     * @throws \Google\Service\Exception
-     */
-    public function update($project, $responsePolicy, $responsePolicyRule, ResponsePolicyRule $postBody, $optParams = [])
+    class Google_Service_Dns_Resource_ResponsePolicyRules extends \Google\Service\Dns\Resource\ResponsePolicyRules
     {
     }
 }

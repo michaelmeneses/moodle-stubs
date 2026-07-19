@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class AnalyzeBatchRequest extends \Google\Model
-{
-    /**
-     * Optional. A unique ID used to identify the request. If the service receives
-     * two AnalyzeBatchRequest (http://cloud/dataproc/docs/reference/rpc/google.cl
-     * oud.dataproc.v1#google.cloud.dataproc.v1.AnalyzeBatchRequest)s with the
-     * same request_id, the second request is ignored and the Operation that
-     * corresponds to the first request created and stored in the backend is
-     * returned.Recommendation: Set this value to a UUID
-     * (https://en.wikipedia.org/wiki/Universally_unique_identifier).The value
-     * must contain only letters (a-z, A-Z), numbers (0-9), underscores (_), and
-     * hyphens (-). The maximum length is 40 characters.
-     *
-     * @var string
-     */
-    public $requestId;
-    /**
-     * Optional. The requestor ID is used to identify if the request comes from a
-     * GCA investigation or the old Ask Gemini Experience.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $requestorId;
-    /**
-     * Optional. A unique ID used to identify the request. If the service receives
-     * two AnalyzeBatchRequest (http://cloud/dataproc/docs/reference/rpc/google.cl
-     * oud.dataproc.v1#google.cloud.dataproc.v1.AnalyzeBatchRequest)s with the
-     * same request_id, the second request is ignored and the Operation that
-     * corresponds to the first request created and stored in the backend is
-     * returned.Recommendation: Set this value to a UUID
-     * (https://en.wikipedia.org/wiki/Universally_unique_identifier).The value
-     * must contain only letters (a-z, A-Z), numbers (0-9), underscores (_), and
-     * hyphens (-). The maximum length is 40 characters.
-     *
-     * @param string $requestId
-     */
-    public function setRequestId($requestId)
+namespace Google\Service\Dataproc {
+    class AnalyzeBatchRequest extends \Google\Model
     {
+        /**
+         * Optional. A unique ID used to identify the request. If the service receives
+         * two AnalyzeBatchRequest (http://cloud/dataproc/docs/reference/rpc/google.cl
+         * oud.dataproc.v1#google.cloud.dataproc.v1.AnalyzeBatchRequest)s with the
+         * same request_id, the second request is ignored and the Operation that
+         * corresponds to the first request created and stored in the backend is
+         * returned.Recommendation: Set this value to a UUID
+         * (https://en.wikipedia.org/wiki/Universally_unique_identifier).The value
+         * must contain only letters (a-z, A-Z), numbers (0-9), underscores (_), and
+         * hyphens (-). The maximum length is 40 characters.
+         *
+         * @var string
+         */
+        public $requestId;
+        /**
+         * Optional. The requestor ID is used to identify if the request comes from a
+         * GCA investigation or the old Ask Gemini Experience.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $requestorId;
+        /**
+         * Optional. A unique ID used to identify the request. If the service receives
+         * two AnalyzeBatchRequest (http://cloud/dataproc/docs/reference/rpc/google.cl
+         * oud.dataproc.v1#google.cloud.dataproc.v1.AnalyzeBatchRequest)s with the
+         * same request_id, the second request is ignored and the Operation that
+         * corresponds to the first request created and stored in the backend is
+         * returned.Recommendation: Set this value to a UUID
+         * (https://en.wikipedia.org/wiki/Universally_unique_identifier).The value
+         * must contain only letters (a-z, A-Z), numbers (0-9), underscores (_), and
+         * hyphens (-). The maximum length is 40 characters.
+         *
+         * @param string $requestId
+         */
+        public function setRequestId($requestId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestId()
+        {
+        }
+        /**
+         * Optional. The requestor ID is used to identify if the request comes from a
+         * GCA investigation or the old Ask Gemini Experience.
+         *
+         * @deprecated
+         * @param string $requestorId
+         */
+        public function setRequestorId($requestorId)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getRequestorId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\AnalyzeBatchRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequestId()
-    {
-    }
-    /**
-     * Optional. The requestor ID is used to identify if the request comes from a
-     * GCA investigation or the old Ask Gemini Experience.
-     *
-     * @deprecated
-     * @param string $requestorId
-     */
-    public function setRequestorId($requestorId)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getRequestorId()
+    class Google_Service_Dataproc_AnalyzeBatchRequest extends \Google\Service\Dataproc\AnalyzeBatchRequest
     {
     }
 }

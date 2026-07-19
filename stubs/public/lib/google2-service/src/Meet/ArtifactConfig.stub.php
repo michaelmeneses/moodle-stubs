@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Meet;
-
-class ArtifactConfig extends \Google\Model
-{
-    protected $recordingConfigType = RecordingConfig::class;
-    protected $recordingConfigDataType = '';
-    protected $smartNotesConfigType = SmartNotesConfig::class;
-    protected $smartNotesConfigDataType = '';
-    protected $transcriptionConfigType = TranscriptionConfig::class;
-    protected $transcriptionConfigDataType = '';
-    /**
-     * Configuration for recording.
-     *
-     * @param RecordingConfig $recordingConfig
-     */
-    public function setRecordingConfig(RecordingConfig $recordingConfig)
+namespace Google\Service\Meet {
+    class ArtifactConfig extends \Google\Model
     {
+        protected $recordingConfigType = RecordingConfig::class;
+        protected $recordingConfigDataType = '';
+        protected $smartNotesConfigType = SmartNotesConfig::class;
+        protected $smartNotesConfigDataType = '';
+        protected $transcriptionConfigType = TranscriptionConfig::class;
+        protected $transcriptionConfigDataType = '';
+        /**
+         * Configuration for recording.
+         *
+         * @param RecordingConfig $recordingConfig
+         */
+        public function setRecordingConfig(RecordingConfig $recordingConfig)
+        {
+        }
+        /**
+         * @return RecordingConfig
+         */
+        public function getRecordingConfig()
+        {
+        }
+        /**
+         * Configuration for auto-smart-notes.
+         *
+         * @param SmartNotesConfig $smartNotesConfig
+         */
+        public function setSmartNotesConfig(SmartNotesConfig $smartNotesConfig)
+        {
+        }
+        /**
+         * @return SmartNotesConfig
+         */
+        public function getSmartNotesConfig()
+        {
+        }
+        /**
+         * Configuration for auto-transcript.
+         *
+         * @param TranscriptionConfig $transcriptionConfig
+         */
+        public function setTranscriptionConfig(TranscriptionConfig $transcriptionConfig)
+        {
+        }
+        /**
+         * @return TranscriptionConfig
+         */
+        public function getTranscriptionConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RecordingConfig
+     * Runtime class alias of \Google\Service\Meet\ArtifactConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRecordingConfig()
-    {
-    }
-    /**
-     * Configuration for auto-smart-notes.
-     *
-     * @param SmartNotesConfig $smartNotesConfig
-     */
-    public function setSmartNotesConfig(SmartNotesConfig $smartNotesConfig)
-    {
-    }
-    /**
-     * @return SmartNotesConfig
-     */
-    public function getSmartNotesConfig()
-    {
-    }
-    /**
-     * Configuration for auto-transcript.
-     *
-     * @param TranscriptionConfig $transcriptionConfig
-     */
-    public function setTranscriptionConfig(TranscriptionConfig $transcriptionConfig)
-    {
-    }
-    /**
-     * @return TranscriptionConfig
-     */
-    public function getTranscriptionConfig()
+    class Google_Service_Meet_ArtifactConfig extends \Google\Service\Meet\ArtifactConfig
     {
     }
 }

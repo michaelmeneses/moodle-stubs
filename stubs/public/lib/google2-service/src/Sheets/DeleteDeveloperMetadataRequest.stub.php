@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class DeleteDeveloperMetadataRequest extends \Google\Model
-{
-    protected $dataFilterType = DataFilter::class;
-    protected $dataFilterDataType = '';
-    /**
-     * The data filter describing the criteria used to select which developer
-     * metadata entry to delete.
-     *
-     * @param DataFilter $dataFilter
-     */
-    public function setDataFilter(DataFilter $dataFilter)
+namespace Google\Service\Sheets {
+    class DeleteDeveloperMetadataRequest extends \Google\Model
     {
+        protected $dataFilterType = DataFilter::class;
+        protected $dataFilterDataType = '';
+        /**
+         * The data filter describing the criteria used to select which developer
+         * metadata entry to delete.
+         *
+         * @param DataFilter $dataFilter
+         */
+        public function setDataFilter(DataFilter $dataFilter)
+        {
+        }
+        /**
+         * @return DataFilter
+         */
+        public function getDataFilter()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DataFilter
+     * Runtime class alias of \Google\Service\Sheets\DeleteDeveloperMetadataRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataFilter()
+    class Google_Service_Sheets_DeleteDeveloperMetadataRequest extends \Google\Service\Sheets\DeleteDeveloperMetadataRequest
     {
     }
 }

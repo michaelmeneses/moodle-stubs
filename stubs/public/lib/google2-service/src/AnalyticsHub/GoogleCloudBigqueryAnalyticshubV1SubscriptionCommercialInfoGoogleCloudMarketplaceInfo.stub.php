@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsHub;
-
-class GoogleCloudBigqueryAnalyticshubV1SubscriptionCommercialInfoGoogleCloudMarketplaceInfo extends \Google\Model
-{
-    /**
-     * Resource name of the Marketplace Order.
-     *
-     * @var string
-     */
-    public $order;
-    /**
-     * Resource name of the Marketplace Order.
-     *
-     * @param string $order
-     */
-    public function setOrder($order)
+namespace Google\Service\AnalyticsHub {
+    class GoogleCloudBigqueryAnalyticshubV1SubscriptionCommercialInfoGoogleCloudMarketplaceInfo extends \Google\Model
     {
+        /**
+         * Resource name of the Marketplace Order.
+         *
+         * @var string
+         */
+        public $order;
+        /**
+         * Resource name of the Marketplace Order.
+         *
+         * @param string $order
+         */
+        public function setOrder($order)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrder()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AnalyticsHub\GoogleCloudBigqueryAnalyticshubV1SubscriptionCommercialInfoGoogleCloudMarketplaceInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOrder()
+    class Google_Service_AnalyticsHub_GoogleCloudBigqueryAnalyticshubV1SubscriptionCommercialInfoGoogleCloudMarketplaceInfo extends \Google\Service\AnalyticsHub\GoogleCloudBigqueryAnalyticshubV1SubscriptionCommercialInfoGoogleCloudMarketplaceInfo
     {
     }
 }

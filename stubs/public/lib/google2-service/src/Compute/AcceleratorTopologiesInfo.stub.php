@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class AcceleratorTopologiesInfo extends \Google\Collection
-{
-    protected $collection_key = 'acceleratorTopologyInfos';
-    protected $acceleratorTopologyInfosType = AcceleratorTopologiesInfoAcceleratorTopologyInfo::class;
-    protected $acceleratorTopologyInfosDataType = 'array';
-    /**
-     * Info for each accelerator topology.
-     *
-     * @param AcceleratorTopologiesInfoAcceleratorTopologyInfo[] $acceleratorTopologyInfos
-     */
-    public function setAcceleratorTopologyInfos($acceleratorTopologyInfos)
+namespace Google\Service\Compute {
+    class AcceleratorTopologiesInfo extends \Google\Collection
     {
+        protected $collection_key = 'acceleratorTopologyInfos';
+        protected $acceleratorTopologyInfosType = AcceleratorTopologiesInfoAcceleratorTopologyInfo::class;
+        protected $acceleratorTopologyInfosDataType = 'array';
+        /**
+         * Info for each accelerator topology.
+         *
+         * @param AcceleratorTopologiesInfoAcceleratorTopologyInfo[] $acceleratorTopologyInfos
+         */
+        public function setAcceleratorTopologyInfos($acceleratorTopologyInfos)
+        {
+        }
+        /**
+         * @return AcceleratorTopologiesInfoAcceleratorTopologyInfo[]
+         */
+        public function getAcceleratorTopologyInfos()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AcceleratorTopologiesInfoAcceleratorTopologyInfo[]
+     * Runtime class alias of \Google\Service\Compute\AcceleratorTopologiesInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAcceleratorTopologyInfos()
+    class Google_Service_Compute_AcceleratorTopologiesInfo extends \Google\Service\Compute\AcceleratorTopologiesInfo
     {
     }
 }

@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class JwtResource extends \Google\Model
-{
-    /**
-     * A string representing a JWT of the format described at
-     * https://developers.google.com/wallet/reference/rest/v1/Jwt
-     *
-     * @var string
-     */
-    public $jwt;
-    /**
-     * A string representing a JWT of the format described at
-     * https://developers.google.com/wallet/reference/rest/v1/Jwt
-     *
-     * @param string $jwt
-     */
-    public function setJwt($jwt)
+namespace Google\Service\Walletobjects {
+    class JwtResource extends \Google\Model
     {
+        /**
+         * A string representing a JWT of the format described at
+         * https://developers.google.com/wallet/reference/rest/v1/Jwt
+         *
+         * @var string
+         */
+        public $jwt;
+        /**
+         * A string representing a JWT of the format described at
+         * https://developers.google.com/wallet/reference/rest/v1/Jwt
+         *
+         * @param string $jwt
+         */
+        public function setJwt($jwt)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJwt()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Walletobjects\JwtResource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJwt()
+    class Google_Service_Walletobjects_JwtResource extends \Google\Service\Walletobjects\JwtResource
     {
     }
 }

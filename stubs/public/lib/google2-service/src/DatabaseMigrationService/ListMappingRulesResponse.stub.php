@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class ListMappingRulesResponse extends \Google\Collection
-{
-    protected $collection_key = 'mappingRules';
-    protected $mappingRulesType = MappingRule::class;
-    protected $mappingRulesDataType = 'array';
-    /**
-     * A token which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of conversion workspace mapping rules.
-     *
-     * @param MappingRule[] $mappingRules
-     */
-    public function setMappingRules($mappingRules)
+namespace Google\Service\DatabaseMigrationService {
+    class ListMappingRulesResponse extends \Google\Collection
     {
+        protected $collection_key = 'mappingRules';
+        protected $mappingRulesType = MappingRule::class;
+        protected $mappingRulesDataType = 'array';
+        /**
+         * A token which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of conversion workspace mapping rules.
+         *
+         * @param MappingRule[] $mappingRules
+         */
+        public function setMappingRules($mappingRules)
+        {
+        }
+        /**
+         * @return MappingRule[]
+         */
+        public function getMappingRules()
+        {
+        }
+        /**
+         * A token which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return MappingRule[]
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\ListMappingRulesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMappingRules()
-    {
-    }
-    /**
-     * A token which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DatabaseMigrationService_ListMappingRulesResponse extends \Google\Service\DatabaseMigrationService\ListMappingRulesResponse
     {
     }
 }

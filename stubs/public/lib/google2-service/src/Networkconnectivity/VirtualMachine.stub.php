@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class VirtualMachine extends \Google\Collection
-{
-    protected $collection_key = 'tags';
-    /**
-     * Optional. A list of VM instance tags that this policy-based route applies
-     * to. VM instances that have ANY of tags specified here installs this PBR.
-     *
-     * @var string[]
-     */
-    public $tags;
-    /**
-     * Optional. A list of VM instance tags that this policy-based route applies
-     * to. VM instances that have ANY of tags specified here installs this PBR.
-     *
-     * @param string[] $tags
-     */
-    public function setTags($tags)
+namespace Google\Service\Networkconnectivity {
+    class VirtualMachine extends \Google\Collection
     {
+        protected $collection_key = 'tags';
+        /**
+         * Optional. A list of VM instance tags that this policy-based route applies
+         * to. VM instances that have ANY of tags specified here installs this PBR.
+         *
+         * @var string[]
+         */
+        public $tags;
+        /**
+         * Optional. A list of VM instance tags that this policy-based route applies
+         * to. VM instances that have ANY of tags specified here installs this PBR.
+         *
+         * @param string[] $tags
+         */
+        public function setTags($tags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTags()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Networkconnectivity\VirtualMachine registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTags()
+    class Google_Service_Networkconnectivity_VirtualMachine extends \Google\Service\Networkconnectivity\VirtualMachine
     {
     }
 }

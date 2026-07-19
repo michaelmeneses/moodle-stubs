@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Gmail;
-
-class MessagePartHeader extends \Google\Model
-{
-    /**
-     * The name of the header before the `:` separator. For example, `To`.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The value of the header after the `:` separator. For example,
-     * `someuser@example.com`.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * The name of the header before the `:` separator. For example, `To`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Gmail {
+    class MessagePartHeader extends \Google\Model
     {
+        /**
+         * The name of the header before the `:` separator. For example, `To`.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The value of the header after the `:` separator. For example,
+         * `someuser@example.com`.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * The name of the header before the `:` separator. For example, `To`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The value of the header after the `:` separator. For example,
+         * `someuser@example.com`.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Gmail\MessagePartHeader registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * The value of the header after the `:` separator. For example,
-     * `someuser@example.com`.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_Gmail_MessagePartHeader extends \Google\Service\Gmail\MessagePartHeader
     {
     }
 }

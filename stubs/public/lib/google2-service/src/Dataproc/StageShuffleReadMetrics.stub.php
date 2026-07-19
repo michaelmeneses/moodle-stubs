@@ -21,166 +21,175 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class StageShuffleReadMetrics extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $bytesRead;
-    /**
-     * @var string
-     */
-    public $fetchWaitTimeMillis;
-    /**
-     * @var string
-     */
-    public $localBlocksFetched;
-    /**
-     * @var string
-     */
-    public $localBytesRead;
-    /**
-     * @var string
-     */
-    public $recordsRead;
-    /**
-     * @var string
-     */
-    public $remoteBlocksFetched;
-    /**
-     * @var string
-     */
-    public $remoteBytesRead;
-    /**
-     * @var string
-     */
-    public $remoteBytesReadToDisk;
-    /**
-     * @var string
-     */
-    public $remoteReqsDuration;
-    protected $stageShufflePushReadMetricsType = StageShufflePushReadMetrics::class;
-    protected $stageShufflePushReadMetricsDataType = '';
-    /**
-     * @param string $bytesRead
-     */
-    public function setBytesRead($bytesRead)
+namespace Google\Service\Dataproc {
+    class StageShuffleReadMetrics extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $bytesRead;
+        /**
+         * @var string
+         */
+        public $fetchWaitTimeMillis;
+        /**
+         * @var string
+         */
+        public $localBlocksFetched;
+        /**
+         * @var string
+         */
+        public $localBytesRead;
+        /**
+         * @var string
+         */
+        public $recordsRead;
+        /**
+         * @var string
+         */
+        public $remoteBlocksFetched;
+        /**
+         * @var string
+         */
+        public $remoteBytesRead;
+        /**
+         * @var string
+         */
+        public $remoteBytesReadToDisk;
+        /**
+         * @var string
+         */
+        public $remoteReqsDuration;
+        protected $stageShufflePushReadMetricsType = StageShufflePushReadMetrics::class;
+        protected $stageShufflePushReadMetricsDataType = '';
+        /**
+         * @param string $bytesRead
+         */
+        public function setBytesRead($bytesRead)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBytesRead()
+        {
+        }
+        /**
+         * @param string $fetchWaitTimeMillis
+         */
+        public function setFetchWaitTimeMillis($fetchWaitTimeMillis)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFetchWaitTimeMillis()
+        {
+        }
+        /**
+         * @param string $localBlocksFetched
+         */
+        public function setLocalBlocksFetched($localBlocksFetched)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocalBlocksFetched()
+        {
+        }
+        /**
+         * @param string $localBytesRead
+         */
+        public function setLocalBytesRead($localBytesRead)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocalBytesRead()
+        {
+        }
+        /**
+         * @param string $recordsRead
+         */
+        public function setRecordsRead($recordsRead)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRecordsRead()
+        {
+        }
+        /**
+         * @param string $remoteBlocksFetched
+         */
+        public function setRemoteBlocksFetched($remoteBlocksFetched)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRemoteBlocksFetched()
+        {
+        }
+        /**
+         * @param string $remoteBytesRead
+         */
+        public function setRemoteBytesRead($remoteBytesRead)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRemoteBytesRead()
+        {
+        }
+        /**
+         * @param string $remoteBytesReadToDisk
+         */
+        public function setRemoteBytesReadToDisk($remoteBytesReadToDisk)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRemoteBytesReadToDisk()
+        {
+        }
+        /**
+         * @param string $remoteReqsDuration
+         */
+        public function setRemoteReqsDuration($remoteReqsDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRemoteReqsDuration()
+        {
+        }
+        /**
+         * @param StageShufflePushReadMetrics $stageShufflePushReadMetrics
+         */
+        public function setStageShufflePushReadMetrics(StageShufflePushReadMetrics $stageShufflePushReadMetrics)
+        {
+        }
+        /**
+         * @return StageShufflePushReadMetrics
+         */
+        public function getStageShufflePushReadMetrics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\StageShuffleReadMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBytesRead()
-    {
-    }
-    /**
-     * @param string $fetchWaitTimeMillis
-     */
-    public function setFetchWaitTimeMillis($fetchWaitTimeMillis)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFetchWaitTimeMillis()
-    {
-    }
-    /**
-     * @param string $localBlocksFetched
-     */
-    public function setLocalBlocksFetched($localBlocksFetched)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocalBlocksFetched()
-    {
-    }
-    /**
-     * @param string $localBytesRead
-     */
-    public function setLocalBytesRead($localBytesRead)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocalBytesRead()
-    {
-    }
-    /**
-     * @param string $recordsRead
-     */
-    public function setRecordsRead($recordsRead)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRecordsRead()
-    {
-    }
-    /**
-     * @param string $remoteBlocksFetched
-     */
-    public function setRemoteBlocksFetched($remoteBlocksFetched)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRemoteBlocksFetched()
-    {
-    }
-    /**
-     * @param string $remoteBytesRead
-     */
-    public function setRemoteBytesRead($remoteBytesRead)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRemoteBytesRead()
-    {
-    }
-    /**
-     * @param string $remoteBytesReadToDisk
-     */
-    public function setRemoteBytesReadToDisk($remoteBytesReadToDisk)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRemoteBytesReadToDisk()
-    {
-    }
-    /**
-     * @param string $remoteReqsDuration
-     */
-    public function setRemoteReqsDuration($remoteReqsDuration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRemoteReqsDuration()
-    {
-    }
-    /**
-     * @param StageShufflePushReadMetrics $stageShufflePushReadMetrics
-     */
-    public function setStageShufflePushReadMetrics(StageShufflePushReadMetrics $stageShufflePushReadMetrics)
-    {
-    }
-    /**
-     * @return StageShufflePushReadMetrics
-     */
-    public function getStageShufflePushReadMetrics()
+    class Google_Service_Dataproc_StageShuffleReadMetrics extends \Google\Service\Dataproc\StageShuffleReadMetrics
     {
     }
 }

@@ -21,122 +21,131 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyerII;
-
-class DealPauseStatus extends \Google\Model
-{
-    /**
-     * A placeholder for an undefined buyer/seller role.
-     */
-    public const FIRST_PAUSED_BY_BUYER_SELLER_ROLE_UNSPECIFIED = 'BUYER_SELLER_ROLE_UNSPECIFIED';
-    /**
-     * Specifies the role as buyer.
-     */
-    public const FIRST_PAUSED_BY_BUYER = 'BUYER';
-    /**
-     * Specifies the role as seller.
-     */
-    public const FIRST_PAUSED_BY_SELLER = 'SELLER';
-    /**
-     * The buyer's reason for pausing, if the buyer paused the deal.
-     *
-     * @var string
-     */
-    public $buyerPauseReason;
-    /**
-     * The role of the person who first paused this deal.
-     *
-     * @var string
-     */
-    public $firstPausedBy;
-    /**
-     * True, if the buyer has paused the deal unilaterally.
-     *
-     * @var bool
-     */
-    public $hasBuyerPaused;
-    /**
-     * True, if the seller has paused the deal unilaterally.
-     *
-     * @var bool
-     */
-    public $hasSellerPaused;
-    /**
-     * The seller's reason for pausing, if the seller paused the deal.
-     *
-     * @var string
-     */
-    public $sellerPauseReason;
-    /**
-     * The buyer's reason for pausing, if the buyer paused the deal.
-     *
-     * @param string $buyerPauseReason
-     */
-    public function setBuyerPauseReason($buyerPauseReason)
+namespace Google\Service\AdExchangeBuyerII {
+    class DealPauseStatus extends \Google\Model
     {
+        /**
+         * A placeholder for an undefined buyer/seller role.
+         */
+        public const FIRST_PAUSED_BY_BUYER_SELLER_ROLE_UNSPECIFIED = 'BUYER_SELLER_ROLE_UNSPECIFIED';
+        /**
+         * Specifies the role as buyer.
+         */
+        public const FIRST_PAUSED_BY_BUYER = 'BUYER';
+        /**
+         * Specifies the role as seller.
+         */
+        public const FIRST_PAUSED_BY_SELLER = 'SELLER';
+        /**
+         * The buyer's reason for pausing, if the buyer paused the deal.
+         *
+         * @var string
+         */
+        public $buyerPauseReason;
+        /**
+         * The role of the person who first paused this deal.
+         *
+         * @var string
+         */
+        public $firstPausedBy;
+        /**
+         * True, if the buyer has paused the deal unilaterally.
+         *
+         * @var bool
+         */
+        public $hasBuyerPaused;
+        /**
+         * True, if the seller has paused the deal unilaterally.
+         *
+         * @var bool
+         */
+        public $hasSellerPaused;
+        /**
+         * The seller's reason for pausing, if the seller paused the deal.
+         *
+         * @var string
+         */
+        public $sellerPauseReason;
+        /**
+         * The buyer's reason for pausing, if the buyer paused the deal.
+         *
+         * @param string $buyerPauseReason
+         */
+        public function setBuyerPauseReason($buyerPauseReason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBuyerPauseReason()
+        {
+        }
+        /**
+         * The role of the person who first paused this deal.
+         *
+         * Accepted values: BUYER_SELLER_ROLE_UNSPECIFIED, BUYER, SELLER
+         *
+         * @param self::FIRST_PAUSED_BY_* $firstPausedBy
+         */
+        public function setFirstPausedBy($firstPausedBy)
+        {
+        }
+        /**
+         * @return self::FIRST_PAUSED_BY_*
+         */
+        public function getFirstPausedBy()
+        {
+        }
+        /**
+         * True, if the buyer has paused the deal unilaterally.
+         *
+         * @param bool $hasBuyerPaused
+         */
+        public function setHasBuyerPaused($hasBuyerPaused)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHasBuyerPaused()
+        {
+        }
+        /**
+         * True, if the seller has paused the deal unilaterally.
+         *
+         * @param bool $hasSellerPaused
+         */
+        public function setHasSellerPaused($hasSellerPaused)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHasSellerPaused()
+        {
+        }
+        /**
+         * The seller's reason for pausing, if the seller paused the deal.
+         *
+         * @param string $sellerPauseReason
+         */
+        public function setSellerPauseReason($sellerPauseReason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSellerPauseReason()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AdExchangeBuyerII\DealPauseStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBuyerPauseReason()
-    {
-    }
-    /**
-     * The role of the person who first paused this deal.
-     *
-     * Accepted values: BUYER_SELLER_ROLE_UNSPECIFIED, BUYER, SELLER
-     *
-     * @param self::FIRST_PAUSED_BY_* $firstPausedBy
-     */
-    public function setFirstPausedBy($firstPausedBy)
-    {
-    }
-    /**
-     * @return self::FIRST_PAUSED_BY_*
-     */
-    public function getFirstPausedBy()
-    {
-    }
-    /**
-     * True, if the buyer has paused the deal unilaterally.
-     *
-     * @param bool $hasBuyerPaused
-     */
-    public function setHasBuyerPaused($hasBuyerPaused)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getHasBuyerPaused()
-    {
-    }
-    /**
-     * True, if the seller has paused the deal unilaterally.
-     *
-     * @param bool $hasSellerPaused
-     */
-    public function setHasSellerPaused($hasSellerPaused)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getHasSellerPaused()
-    {
-    }
-    /**
-     * The seller's reason for pausing, if the seller paused the deal.
-     *
-     * @param string $sellerPauseReason
-     */
-    public function setSellerPauseReason($sellerPauseReason)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSellerPauseReason()
+    class Google_Service_AdExchangeBuyerII_DealPauseStatus extends \Google\Service\AdExchangeBuyerII\DealPauseStatus
     {
     }
 }

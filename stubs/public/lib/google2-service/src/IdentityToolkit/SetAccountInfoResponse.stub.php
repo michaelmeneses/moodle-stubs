@@ -21,247 +21,256 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\IdentityToolkit;
-
-class SetAccountInfoResponse extends \Google\Collection
-{
-    protected $collection_key = 'providerUserInfo';
-    /**
-     * The name of the user.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The email of the user.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * If email has been verified.
-     *
-     * @var bool
-     */
-    public $emailVerified;
-    /**
-     * If idToken is STS id token, then this field will be expiration time of STS
-     * id token in seconds.
-     *
-     * @var string
-     */
-    public $expiresIn;
-    /**
-     * The Gitkit id token to login the newly sign up user.
-     *
-     * @var string
-     */
-    public $idToken;
-    /**
-     * The fixed string "identitytoolkit#SetAccountInfoResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The local ID of the user.
-     *
-     * @var string
-     */
-    public $localId;
-    /**
-     * The new email the user attempts to change to.
-     *
-     * @var string
-     */
-    public $newEmail;
-    /**
-     * The user's hashed password.
-     *
-     * @var string
-     */
-    public $passwordHash;
-    /**
-     * The photo url of the user.
-     *
-     * @var string
-     */
-    public $photoUrl;
-    protected $providerUserInfoType = SetAccountInfoResponseProviderUserInfo::class;
-    protected $providerUserInfoDataType = 'array';
-    /**
-     * If idToken is STS id token, then this field will be refresh token.
-     *
-     * @var string
-     */
-    public $refreshToken;
-    /**
-     * The name of the user.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\IdentityToolkit {
+    class SetAccountInfoResponse extends \Google\Collection
     {
+        protected $collection_key = 'providerUserInfo';
+        /**
+         * The name of the user.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The email of the user.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * If email has been verified.
+         *
+         * @var bool
+         */
+        public $emailVerified;
+        /**
+         * If idToken is STS id token, then this field will be expiration time of STS
+         * id token in seconds.
+         *
+         * @var string
+         */
+        public $expiresIn;
+        /**
+         * The Gitkit id token to login the newly sign up user.
+         *
+         * @var string
+         */
+        public $idToken;
+        /**
+         * The fixed string "identitytoolkit#SetAccountInfoResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The local ID of the user.
+         *
+         * @var string
+         */
+        public $localId;
+        /**
+         * The new email the user attempts to change to.
+         *
+         * @var string
+         */
+        public $newEmail;
+        /**
+         * The user's hashed password.
+         *
+         * @var string
+         */
+        public $passwordHash;
+        /**
+         * The photo url of the user.
+         *
+         * @var string
+         */
+        public $photoUrl;
+        protected $providerUserInfoType = SetAccountInfoResponseProviderUserInfo::class;
+        protected $providerUserInfoDataType = 'array';
+        /**
+         * If idToken is STS id token, then this field will be refresh token.
+         *
+         * @var string
+         */
+        public $refreshToken;
+        /**
+         * The name of the user.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The email of the user.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * If email has been verified.
+         *
+         * @param bool $emailVerified
+         */
+        public function setEmailVerified($emailVerified)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEmailVerified()
+        {
+        }
+        /**
+         * If idToken is STS id token, then this field will be expiration time of STS
+         * id token in seconds.
+         *
+         * @param string $expiresIn
+         */
+        public function setExpiresIn($expiresIn)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpiresIn()
+        {
+        }
+        /**
+         * The Gitkit id token to login the newly sign up user.
+         *
+         * @param string $idToken
+         */
+        public function setIdToken($idToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIdToken()
+        {
+        }
+        /**
+         * The fixed string "identitytoolkit#SetAccountInfoResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The local ID of the user.
+         *
+         * @param string $localId
+         */
+        public function setLocalId($localId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocalId()
+        {
+        }
+        /**
+         * The new email the user attempts to change to.
+         *
+         * @param string $newEmail
+         */
+        public function setNewEmail($newEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNewEmail()
+        {
+        }
+        /**
+         * The user's hashed password.
+         *
+         * @param string $passwordHash
+         */
+        public function setPasswordHash($passwordHash)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPasswordHash()
+        {
+        }
+        /**
+         * The photo url of the user.
+         *
+         * @param string $photoUrl
+         */
+        public function setPhotoUrl($photoUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhotoUrl()
+        {
+        }
+        /**
+         * The user's profiles at the associated IdPs.
+         *
+         * @param SetAccountInfoResponseProviderUserInfo[] $providerUserInfo
+         */
+        public function setProviderUserInfo($providerUserInfo)
+        {
+        }
+        /**
+         * @return SetAccountInfoResponseProviderUserInfo[]
+         */
+        public function getProviderUserInfo()
+        {
+        }
+        /**
+         * If idToken is STS id token, then this field will be refresh token.
+         *
+         * @param string $refreshToken
+         */
+        public function setRefreshToken($refreshToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRefreshToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\IdentityToolkit\SetAccountInfoResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The email of the user.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEmail()
-    {
-    }
-    /**
-     * If email has been verified.
-     *
-     * @param bool $emailVerified
-     */
-    public function setEmailVerified($emailVerified)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEmailVerified()
-    {
-    }
-    /**
-     * If idToken is STS id token, then this field will be expiration time of STS
-     * id token in seconds.
-     *
-     * @param string $expiresIn
-     */
-    public function setExpiresIn($expiresIn)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpiresIn()
-    {
-    }
-    /**
-     * The Gitkit id token to login the newly sign up user.
-     *
-     * @param string $idToken
-     */
-    public function setIdToken($idToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIdToken()
-    {
-    }
-    /**
-     * The fixed string "identitytoolkit#SetAccountInfoResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The local ID of the user.
-     *
-     * @param string $localId
-     */
-    public function setLocalId($localId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocalId()
-    {
-    }
-    /**
-     * The new email the user attempts to change to.
-     *
-     * @param string $newEmail
-     */
-    public function setNewEmail($newEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNewEmail()
-    {
-    }
-    /**
-     * The user's hashed password.
-     *
-     * @param string $passwordHash
-     */
-    public function setPasswordHash($passwordHash)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPasswordHash()
-    {
-    }
-    /**
-     * The photo url of the user.
-     *
-     * @param string $photoUrl
-     */
-    public function setPhotoUrl($photoUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhotoUrl()
-    {
-    }
-    /**
-     * The user's profiles at the associated IdPs.
-     *
-     * @param SetAccountInfoResponseProviderUserInfo[] $providerUserInfo
-     */
-    public function setProviderUserInfo($providerUserInfo)
-    {
-    }
-    /**
-     * @return SetAccountInfoResponseProviderUserInfo[]
-     */
-    public function getProviderUserInfo()
-    {
-    }
-    /**
-     * If idToken is STS id token, then this field will be refresh token.
-     *
-     * @param string $refreshToken
-     */
-    public function setRefreshToken($refreshToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRefreshToken()
+    class Google_Service_IdentityToolkit_SetAccountInfoResponse extends \Google\Service\IdentityToolkit\SetAccountInfoResponse
     {
     }
 }

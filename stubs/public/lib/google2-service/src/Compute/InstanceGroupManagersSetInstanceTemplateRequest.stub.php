@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InstanceGroupManagersSetInstanceTemplateRequest extends \Google\Model
-{
-    /**
-     * The URL of the instance template that is specified for this managed
-     * instance group. The group uses this template to create all new instances in
-     * the managed instance group. The templates for existing instances in the
-     * group do not change unless you run recreateInstances,
-     * runapplyUpdatesToInstances, or set the group'supdatePolicy.type to
-     * PROACTIVE.
-     *
-     * @var string
-     */
-    public $instanceTemplate;
-    /**
-     * The URL of the instance template that is specified for this managed
-     * instance group. The group uses this template to create all new instances in
-     * the managed instance group. The templates for existing instances in the
-     * group do not change unless you run recreateInstances,
-     * runapplyUpdatesToInstances, or set the group'supdatePolicy.type to
-     * PROACTIVE.
-     *
-     * @param string $instanceTemplate
-     */
-    public function setInstanceTemplate($instanceTemplate)
+namespace Google\Service\Compute {
+    class InstanceGroupManagersSetInstanceTemplateRequest extends \Google\Model
     {
+        /**
+         * The URL of the instance template that is specified for this managed
+         * instance group. The group uses this template to create all new instances in
+         * the managed instance group. The templates for existing instances in the
+         * group do not change unless you run recreateInstances,
+         * runapplyUpdatesToInstances, or set the group'supdatePolicy.type to
+         * PROACTIVE.
+         *
+         * @var string
+         */
+        public $instanceTemplate;
+        /**
+         * The URL of the instance template that is specified for this managed
+         * instance group. The group uses this template to create all new instances in
+         * the managed instance group. The templates for existing instances in the
+         * group do not change unless you run recreateInstances,
+         * runapplyUpdatesToInstances, or set the group'supdatePolicy.type to
+         * PROACTIVE.
+         *
+         * @param string $instanceTemplate
+         */
+        public function setInstanceTemplate($instanceTemplate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstanceTemplate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\InstanceGroupManagersSetInstanceTemplateRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstanceTemplate()
+    class Google_Service_Compute_InstanceGroupManagersSetInstanceTemplateRequest extends \Google\Service\Compute\InstanceGroupManagersSetInstanceTemplateRequest
     {
     }
 }

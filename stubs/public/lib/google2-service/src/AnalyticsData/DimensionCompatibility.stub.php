@@ -21,64 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsData;
-
-class DimensionCompatibility extends \Google\Model
-{
-    /**
-     * Unspecified compatibility.
-     */
-    public const COMPATIBILITY_COMPATIBILITY_UNSPECIFIED = 'COMPATIBILITY_UNSPECIFIED';
-    /**
-     * The dimension or metric is compatible. This dimension or metric can be
-     * successfully added to a report.
-     */
-    public const COMPATIBILITY_COMPATIBLE = 'COMPATIBLE';
-    /**
-     * The dimension or metric is incompatible. This dimension or metric cannot be
-     * successfully added to a report.
-     */
-    public const COMPATIBILITY_INCOMPATIBLE = 'INCOMPATIBLE';
-    /**
-     * The compatibility of this dimension. If the compatibility is COMPATIBLE,
-     * this dimension can be successfully added to the report.
-     *
-     * @var string
-     */
-    public $compatibility;
-    protected $dimensionMetadataType = DimensionMetadata::class;
-    protected $dimensionMetadataDataType = '';
-    /**
-     * The compatibility of this dimension. If the compatibility is COMPATIBLE,
-     * this dimension can be successfully added to the report.
-     *
-     * Accepted values: COMPATIBILITY_UNSPECIFIED, COMPATIBLE, INCOMPATIBLE
-     *
-     * @param self::COMPATIBILITY_* $compatibility
-     */
-    public function setCompatibility($compatibility)
+namespace Google\Service\AnalyticsData {
+    class DimensionCompatibility extends \Google\Model
     {
+        /**
+         * Unspecified compatibility.
+         */
+        public const COMPATIBILITY_COMPATIBILITY_UNSPECIFIED = 'COMPATIBILITY_UNSPECIFIED';
+        /**
+         * The dimension or metric is compatible. This dimension or metric can be
+         * successfully added to a report.
+         */
+        public const COMPATIBILITY_COMPATIBLE = 'COMPATIBLE';
+        /**
+         * The dimension or metric is incompatible. This dimension or metric cannot be
+         * successfully added to a report.
+         */
+        public const COMPATIBILITY_INCOMPATIBLE = 'INCOMPATIBLE';
+        /**
+         * The compatibility of this dimension. If the compatibility is COMPATIBLE,
+         * this dimension can be successfully added to the report.
+         *
+         * @var string
+         */
+        public $compatibility;
+        protected $dimensionMetadataType = DimensionMetadata::class;
+        protected $dimensionMetadataDataType = '';
+        /**
+         * The compatibility of this dimension. If the compatibility is COMPATIBLE,
+         * this dimension can be successfully added to the report.
+         *
+         * Accepted values: COMPATIBILITY_UNSPECIFIED, COMPATIBLE, INCOMPATIBLE
+         *
+         * @param self::COMPATIBILITY_* $compatibility
+         */
+        public function setCompatibility($compatibility)
+        {
+        }
+        /**
+         * @return self::COMPATIBILITY_*
+         */
+        public function getCompatibility()
+        {
+        }
+        /**
+         * The dimension metadata contains the API name for this compatibility
+         * information. The dimension metadata also contains other helpful information
+         * like the UI name and description.
+         *
+         * @param DimensionMetadata $dimensionMetadata
+         */
+        public function setDimensionMetadata(DimensionMetadata $dimensionMetadata)
+        {
+        }
+        /**
+         * @return DimensionMetadata
+         */
+        public function getDimensionMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::COMPATIBILITY_*
+     * Runtime class alias of \Google\Service\AnalyticsData\DimensionCompatibility registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCompatibility()
-    {
-    }
-    /**
-     * The dimension metadata contains the API name for this compatibility
-     * information. The dimension metadata also contains other helpful information
-     * like the UI name and description.
-     *
-     * @param DimensionMetadata $dimensionMetadata
-     */
-    public function setDimensionMetadata(DimensionMetadata $dimensionMetadata)
-    {
-    }
-    /**
-     * @return DimensionMetadata
-     */
-    public function getDimensionMetadata()
+    class Google_Service_AnalyticsData_DimensionCompatibility extends \Google\Service\AnalyticsData\DimensionCompatibility
     {
     }
 }

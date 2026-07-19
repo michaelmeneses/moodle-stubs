@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoParamSpecEntryValidationRule extends \Google\Model
-{
-    protected $doubleRangeType = EnterpriseCrmEventbusProtoParamSpecEntryValidationRuleDoubleRange::class;
-    protected $doubleRangeDataType = '';
-    protected $intRangeType = EnterpriseCrmEventbusProtoParamSpecEntryValidationRuleIntRange::class;
-    protected $intRangeDataType = '';
-    protected $stringRegexType = EnterpriseCrmEventbusProtoParamSpecEntryValidationRuleStringRegex::class;
-    protected $stringRegexDataType = '';
-    /**
-     * @param EnterpriseCrmEventbusProtoParamSpecEntryValidationRuleDoubleRange $doubleRange
-     */
-    public function setDoubleRange(EnterpriseCrmEventbusProtoParamSpecEntryValidationRuleDoubleRange $doubleRange)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoParamSpecEntryValidationRule extends \Google\Model
     {
+        protected $doubleRangeType = EnterpriseCrmEventbusProtoParamSpecEntryValidationRuleDoubleRange::class;
+        protected $doubleRangeDataType = '';
+        protected $intRangeType = EnterpriseCrmEventbusProtoParamSpecEntryValidationRuleIntRange::class;
+        protected $intRangeDataType = '';
+        protected $stringRegexType = EnterpriseCrmEventbusProtoParamSpecEntryValidationRuleStringRegex::class;
+        protected $stringRegexDataType = '';
+        /**
+         * @param EnterpriseCrmEventbusProtoParamSpecEntryValidationRuleDoubleRange $doubleRange
+         */
+        public function setDoubleRange(EnterpriseCrmEventbusProtoParamSpecEntryValidationRuleDoubleRange $doubleRange)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoParamSpecEntryValidationRuleDoubleRange
+         */
+        public function getDoubleRange()
+        {
+        }
+        /**
+         * @param EnterpriseCrmEventbusProtoParamSpecEntryValidationRuleIntRange $intRange
+         */
+        public function setIntRange(EnterpriseCrmEventbusProtoParamSpecEntryValidationRuleIntRange $intRange)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoParamSpecEntryValidationRuleIntRange
+         */
+        public function getIntRange()
+        {
+        }
+        /**
+         * @param EnterpriseCrmEventbusProtoParamSpecEntryValidationRuleStringRegex $stringRegex
+         */
+        public function setStringRegex(EnterpriseCrmEventbusProtoParamSpecEntryValidationRuleStringRegex $stringRegex)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoParamSpecEntryValidationRuleStringRegex
+         */
+        public function getStringRegex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnterpriseCrmEventbusProtoParamSpecEntryValidationRuleDoubleRange
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoParamSpecEntryValidationRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDoubleRange()
-    {
-    }
-    /**
-     * @param EnterpriseCrmEventbusProtoParamSpecEntryValidationRuleIntRange $intRange
-     */
-    public function setIntRange(EnterpriseCrmEventbusProtoParamSpecEntryValidationRuleIntRange $intRange)
-    {
-    }
-    /**
-     * @return EnterpriseCrmEventbusProtoParamSpecEntryValidationRuleIntRange
-     */
-    public function getIntRange()
-    {
-    }
-    /**
-     * @param EnterpriseCrmEventbusProtoParamSpecEntryValidationRuleStringRegex $stringRegex
-     */
-    public function setStringRegex(EnterpriseCrmEventbusProtoParamSpecEntryValidationRuleStringRegex $stringRegex)
-    {
-    }
-    /**
-     * @return EnterpriseCrmEventbusProtoParamSpecEntryValidationRuleStringRegex
-     */
-    public function getStringRegex()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoParamSpecEntryValidationRule extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoParamSpecEntryValidationRule
     {
     }
 }

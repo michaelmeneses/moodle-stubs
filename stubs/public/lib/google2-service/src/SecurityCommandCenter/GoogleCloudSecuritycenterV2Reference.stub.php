@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2Reference extends \Google\Model
-{
-    /**
-     * Source of the reference e.g. NVD
-     *
-     * @var string
-     */
-    public $source;
-    /**
-     * Uri for the mentioned source e.g. https://cve.mitre.org/cgi-
-     * bin/cvename.cgi?name=CVE-2021-34527.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Source of the reference e.g. NVD
-     *
-     * @param string $source
-     */
-    public function setSource($source)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2Reference extends \Google\Model
     {
+        /**
+         * Source of the reference e.g. NVD
+         *
+         * @var string
+         */
+        public $source;
+        /**
+         * Uri for the mentioned source e.g. https://cve.mitre.org/cgi-
+         * bin/cvename.cgi?name=CVE-2021-34527.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Source of the reference e.g. NVD
+         *
+         * @param string $source
+         */
+        public function setSource($source)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSource()
+        {
+        }
+        /**
+         * Uri for the mentioned source e.g. https://cve.mitre.org/cgi-
+         * bin/cvename.cgi?name=CVE-2021-34527.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2Reference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSource()
-    {
-    }
-    /**
-     * Uri for the mentioned source e.g. https://cve.mitre.org/cgi-
-     * bin/cvename.cgi?name=CVE-2021-34527.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2Reference extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2Reference
     {
     }
 }

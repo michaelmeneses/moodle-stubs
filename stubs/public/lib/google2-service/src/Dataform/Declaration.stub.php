@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class Declaration extends \Google\Model
-{
-    protected $relationDescriptorType = RelationDescriptor::class;
-    protected $relationDescriptorDataType = '';
-    /**
-     * Descriptor for the relation and its columns. Used as documentation only,
-     * i.e. values here will result in no changes to the relation's metadata.
-     *
-     * @param RelationDescriptor $relationDescriptor
-     */
-    public function setRelationDescriptor(RelationDescriptor $relationDescriptor)
+namespace Google\Service\Dataform {
+    class Declaration extends \Google\Model
     {
+        protected $relationDescriptorType = RelationDescriptor::class;
+        protected $relationDescriptorDataType = '';
+        /**
+         * Descriptor for the relation and its columns. Used as documentation only,
+         * i.e. values here will result in no changes to the relation's metadata.
+         *
+         * @param RelationDescriptor $relationDescriptor
+         */
+        public function setRelationDescriptor(RelationDescriptor $relationDescriptor)
+        {
+        }
+        /**
+         * @return RelationDescriptor
+         */
+        public function getRelationDescriptor()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RelationDescriptor
+     * Runtime class alias of \Google\Service\Dataform\Declaration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRelationDescriptor()
+    class Google_Service_Dataform_Declaration extends \Google\Service\Dataform\Declaration
     {
     }
 }

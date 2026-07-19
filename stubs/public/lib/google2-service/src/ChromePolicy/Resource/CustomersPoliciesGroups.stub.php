@@ -21,84 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy\Resource;
-
-/**
- * The "groups" collection of methods.
- * Typical usage is:
- *  <code>
- *   $chromepolicyService = new Google\Service\ChromePolicy(...);
- *   $groups = $chromepolicyService->customers_policies_groups;
- *  </code>
- */
-class CustomersPoliciesGroups extends \Google\Service\Resource
-{
+namespace Google\Service\ChromePolicy\Resource {
+    use Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1BatchDeleteGroupPoliciesRequest;
+    use Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1BatchModifyGroupPoliciesRequest;
+    use Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1ListGroupPriorityOrderingRequest;
+    use Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1ListGroupPriorityOrderingResponse;
+    use Google\Service\ChromePolicy\GoogleChromePolicyVersionsV1UpdateGroupPriorityOrderingRequest;
+    use Google\Service\ChromePolicy\GoogleProtobufEmpty;
     /**
-     * Delete multiple policy values that are applied to a specific group. All
-     * targets must have the same target format. That is to say that they must point
-     * to the same target resource and must have the same keys specified in
-     * `additionalTargetKeyNames`, though the values for those keys may be
-     * different. On failure the request will return the error details as part of
-     * the google.rpc.Status. (groups.batchDelete)
-     *
-     * @param string $customer ID of the Google Workspace account or literal
-     * "my_customer" for the customer associated to the request.
-     * @param GoogleChromePolicyVersionsV1BatchDeleteGroupPoliciesRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleProtobufEmpty
-     * @throws \Google\Service\Exception
+     * The "groups" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $chromepolicyService = new Google\Service\ChromePolicy(...);
+     *   $groups = $chromepolicyService->customers_policies_groups;
+     *  </code>
      */
-    public function batchDelete($customer, GoogleChromePolicyVersionsV1BatchDeleteGroupPoliciesRequest $postBody, $optParams = [])
+    class CustomersPoliciesGroups extends \Google\Service\Resource
     {
+        /**
+         * Delete multiple policy values that are applied to a specific group. All
+         * targets must have the same target format. That is to say that they must point
+         * to the same target resource and must have the same keys specified in
+         * `additionalTargetKeyNames`, though the values for those keys may be
+         * different. On failure the request will return the error details as part of
+         * the google.rpc.Status. (groups.batchDelete)
+         *
+         * @param string $customer ID of the Google Workspace account or literal
+         * "my_customer" for the customer associated to the request.
+         * @param GoogleChromePolicyVersionsV1BatchDeleteGroupPoliciesRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleProtobufEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function batchDelete($customer, GoogleChromePolicyVersionsV1BatchDeleteGroupPoliciesRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Modify multiple policy values that are applied to a specific group. All
+         * targets must have the same target format. That is to say that they must point
+         * to the same target resource and must have the same keys specified in
+         * `additionalTargetKeyNames`, though the values for those keys may be
+         * different. On failure the request will return the error details as part of
+         * the google.rpc.Status. (groups.batchModify)
+         *
+         * @param string $customer ID of the Google Workspace account or literal
+         * "my_customer" for the customer associated to the request.
+         * @param GoogleChromePolicyVersionsV1BatchModifyGroupPoliciesRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleProtobufEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function batchModify($customer, GoogleChromePolicyVersionsV1BatchModifyGroupPoliciesRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Retrieve a group priority ordering for an app. The target app must be
+         * supplied in `additionalTargetKeyNames` in the PolicyTargetKey. On failure the
+         * request will return the error details as part of the google.rpc.Status.
+         * (groups.listGroupPriorityOrdering)
+         *
+         * @param string $customer Required. ID of the Google Workspace account or
+         * literal "my_customer" for the customer associated to the request.
+         * @param GoogleChromePolicyVersionsV1ListGroupPriorityOrderingRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleChromePolicyVersionsV1ListGroupPriorityOrderingResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listGroupPriorityOrdering($customer, GoogleChromePolicyVersionsV1ListGroupPriorityOrderingRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Update a group priority ordering for an app. The target app must be supplied
+         * in `additionalTargetKeyNames` in the PolicyTargetKey. On failure the request
+         * will return the error details as part of the google.rpc.Status.
+         * (groups.updateGroupPriorityOrdering)
+         *
+         * @param string $customer Required. ID of the Google Workspace account or
+         * literal "my_customer" for the customer associated to the request.
+         * @param GoogleChromePolicyVersionsV1UpdateGroupPriorityOrderingRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleProtobufEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function updateGroupPriorityOrdering($customer, GoogleChromePolicyVersionsV1UpdateGroupPriorityOrderingRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Modify multiple policy values that are applied to a specific group. All
-     * targets must have the same target format. That is to say that they must point
-     * to the same target resource and must have the same keys specified in
-     * `additionalTargetKeyNames`, though the values for those keys may be
-     * different. On failure the request will return the error details as part of
-     * the google.rpc.Status. (groups.batchModify)
-     *
-     * @param string $customer ID of the Google Workspace account or literal
-     * "my_customer" for the customer associated to the request.
-     * @param GoogleChromePolicyVersionsV1BatchModifyGroupPoliciesRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleProtobufEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ChromePolicy\Resource\CustomersPoliciesGroups registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function batchModify($customer, GoogleChromePolicyVersionsV1BatchModifyGroupPoliciesRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Retrieve a group priority ordering for an app. The target app must be
-     * supplied in `additionalTargetKeyNames` in the PolicyTargetKey. On failure the
-     * request will return the error details as part of the google.rpc.Status.
-     * (groups.listGroupPriorityOrdering)
-     *
-     * @param string $customer Required. ID of the Google Workspace account or
-     * literal "my_customer" for the customer associated to the request.
-     * @param GoogleChromePolicyVersionsV1ListGroupPriorityOrderingRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleChromePolicyVersionsV1ListGroupPriorityOrderingResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listGroupPriorityOrdering($customer, GoogleChromePolicyVersionsV1ListGroupPriorityOrderingRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Update a group priority ordering for an app. The target app must be supplied
-     * in `additionalTargetKeyNames` in the PolicyTargetKey. On failure the request
-     * will return the error details as part of the google.rpc.Status.
-     * (groups.updateGroupPriorityOrdering)
-     *
-     * @param string $customer Required. ID of the Google Workspace account or
-     * literal "my_customer" for the customer associated to the request.
-     * @param GoogleChromePolicyVersionsV1UpdateGroupPriorityOrderingRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleProtobufEmpty
-     * @throws \Google\Service\Exception
-     */
-    public function updateGroupPriorityOrdering($customer, GoogleChromePolicyVersionsV1UpdateGroupPriorityOrderingRequest $postBody, $optParams = [])
+    class Google_Service_ChromePolicy_Resource_CustomersPoliciesGroups extends \Google\Service\ChromePolicy\Resource\CustomersPoliciesGroups
     {
     }
 }

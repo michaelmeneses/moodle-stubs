@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkSecurity;
-
-class ListInterceptEndpointGroupAssociationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'interceptEndpointGroupAssociations';
-    protected $interceptEndpointGroupAssociationsType = InterceptEndpointGroupAssociation::class;
-    protected $interceptEndpointGroupAssociationsDataType = 'array';
-    /**
-     * A token that can be sent as `page_token` to retrieve the next page. If this
-     * field is omitted, there are no subsequent pages. See
-     * https://google.aip.dev/158 for more details.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The associations from the specified parent.
-     *
-     * @param InterceptEndpointGroupAssociation[] $interceptEndpointGroupAssociations
-     */
-    public function setInterceptEndpointGroupAssociations($interceptEndpointGroupAssociations)
+namespace Google\Service\NetworkSecurity {
+    class ListInterceptEndpointGroupAssociationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'interceptEndpointGroupAssociations';
+        protected $interceptEndpointGroupAssociationsType = InterceptEndpointGroupAssociation::class;
+        protected $interceptEndpointGroupAssociationsDataType = 'array';
+        /**
+         * A token that can be sent as `page_token` to retrieve the next page. If this
+         * field is omitted, there are no subsequent pages. See
+         * https://google.aip.dev/158 for more details.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The associations from the specified parent.
+         *
+         * @param InterceptEndpointGroupAssociation[] $interceptEndpointGroupAssociations
+         */
+        public function setInterceptEndpointGroupAssociations($interceptEndpointGroupAssociations)
+        {
+        }
+        /**
+         * @return InterceptEndpointGroupAssociation[]
+         */
+        public function getInterceptEndpointGroupAssociations()
+        {
+        }
+        /**
+         * A token that can be sent as `page_token` to retrieve the next page. If this
+         * field is omitted, there are no subsequent pages. See
+         * https://google.aip.dev/158 for more details.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return InterceptEndpointGroupAssociation[]
+     * Runtime class alias of \Google\Service\NetworkSecurity\ListInterceptEndpointGroupAssociationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInterceptEndpointGroupAssociations()
-    {
-    }
-    /**
-     * A token that can be sent as `page_token` to retrieve the next page. If this
-     * field is omitted, there are no subsequent pages. See
-     * https://google.aip.dev/158 for more details.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_NetworkSecurity_ListInterceptEndpointGroupAssociationsResponse extends \Google\Service\NetworkSecurity\ListInterceptEndpointGroupAssociationsResponse
     {
     }
 }

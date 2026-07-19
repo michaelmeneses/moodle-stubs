@@ -29,6 +29,8 @@
  */
 namespace core_message\output;
 
+use renderable;
+use templatable;
 /**
  * Class to prepare a message processor for display.
  *

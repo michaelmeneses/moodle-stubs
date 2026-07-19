@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Localservices;
-
-class GoogleAdsHomeservicesLocalservicesV1SearchDetailedLeadReportsResponse extends \Google\Collection
-{
-    protected $collection_key = 'detailedLeadReports';
-    protected $detailedLeadReportsType = GoogleAdsHomeservicesLocalservicesV1DetailedLeadReport::class;
-    protected $detailedLeadReportsDataType = 'array';
-    /**
-     * Pagination token to retrieve the next page of results. When
-     * `next_page_token` is not filled in, there is no next page and the list
-     * returned is the last page in the result set.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of detailed lead reports uniquely identified by external lead id.
-     *
-     * @param GoogleAdsHomeservicesLocalservicesV1DetailedLeadReport[] $detailedLeadReports
-     */
-    public function setDetailedLeadReports($detailedLeadReports)
+namespace Google\Service\Localservices {
+    class GoogleAdsHomeservicesLocalservicesV1SearchDetailedLeadReportsResponse extends \Google\Collection
     {
+        protected $collection_key = 'detailedLeadReports';
+        protected $detailedLeadReportsType = GoogleAdsHomeservicesLocalservicesV1DetailedLeadReport::class;
+        protected $detailedLeadReportsDataType = 'array';
+        /**
+         * Pagination token to retrieve the next page of results. When
+         * `next_page_token` is not filled in, there is no next page and the list
+         * returned is the last page in the result set.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of detailed lead reports uniquely identified by external lead id.
+         *
+         * @param GoogleAdsHomeservicesLocalservicesV1DetailedLeadReport[] $detailedLeadReports
+         */
+        public function setDetailedLeadReports($detailedLeadReports)
+        {
+        }
+        /**
+         * @return GoogleAdsHomeservicesLocalservicesV1DetailedLeadReport[]
+         */
+        public function getDetailedLeadReports()
+        {
+        }
+        /**
+         * Pagination token to retrieve the next page of results. When
+         * `next_page_token` is not filled in, there is no next page and the list
+         * returned is the last page in the result set.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAdsHomeservicesLocalservicesV1DetailedLeadReport[]
+     * Runtime class alias of \Google\Service\Localservices\GoogleAdsHomeservicesLocalservicesV1SearchDetailedLeadReportsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDetailedLeadReports()
-    {
-    }
-    /**
-     * Pagination token to retrieve the next page of results. When
-     * `next_page_token` is not filled in, there is no next page and the list
-     * returned is the last page in the result set.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Localservices_GoogleAdsHomeservicesLocalservicesV1SearchDetailedLeadReportsResponse extends \Google\Service\Localservices\GoogleAdsHomeservicesLocalservicesV1SearchDetailedLeadReportsResponse
     {
     }
 }

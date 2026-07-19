@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class GoogleMonitoringV3Range extends \Google\Model
-{
+namespace Google\Service\Monitoring {
+    class GoogleMonitoringV3Range extends \Google\Model
+    {
+        /**
+         * Range maximum.
+         *
+         * @var 
+         */
+        public $max;
+        /**
+         * Range minimum.
+         *
+         * @var 
+         */
+        public $min;
+        public function setMax($max)
+        {
+        }
+        public function getMax()
+        {
+        }
+        public function setMin($min)
+        {
+        }
+        public function getMin()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * Range maximum.
-     *
-     * @var 
+     * Runtime class alias of \Google\Service\Monitoring\GoogleMonitoringV3Range registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $max;
-    /**
-     * Range minimum.
-     *
-     * @var 
-     */
-    public $min;
-    public function setMax($max)
-    {
-    }
-    public function getMax()
-    {
-    }
-    public function setMin($min)
-    {
-    }
-    public function getMin()
+    class Google_Service_Monitoring_GoogleMonitoringV3Range extends \Google\Service\Monitoring\GoogleMonitoringV3Range
     {
     }
 }

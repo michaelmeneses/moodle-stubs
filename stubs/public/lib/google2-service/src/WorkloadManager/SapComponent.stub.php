@@ -21,118 +21,127 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class SapComponent extends \Google\Collection
-{
-    /**
-     * Unspecified topology.
-     */
-    public const TOPOLOGY_TYPE_TOPOLOGY_TYPE_UNSPECIFIED = 'TOPOLOGY_TYPE_UNSPECIFIED';
-    /**
-     * A scale-up single node system.
-     */
-    public const TOPOLOGY_TYPE_TOPOLOGY_SCALE_UP = 'TOPOLOGY_SCALE_UP';
-    /**
-     * A scale-out multi-node system.
-     */
-    public const TOPOLOGY_TYPE_TOPOLOGY_SCALE_OUT = 'TOPOLOGY_SCALE_OUT';
-    protected $collection_key = 'resources';
-    protected $databasePropertiesType = DatabaseProperties::class;
-    protected $databasePropertiesDataType = '';
-    /**
-     * A list of host URIs that are part of the HA configuration if present. An
-     * empty list indicates the component is not configured for HA.
-     *
-     * @var string[]
-     */
-    public $haHosts;
-    protected $resourcesType = CloudResource::class;
-    protected $resourcesDataType = 'array';
-    /**
-     * Output only. sid is the sap component identificator
-     *
-     * @var string
-     */
-    public $sid;
-    /**
-     * The detected topology of the component.
-     *
-     * @var string
-     */
-    public $topologyType;
-    /**
-     * Output only. All instance properties.
-     *
-     * @param DatabaseProperties $databaseProperties
-     */
-    public function setDatabaseProperties(DatabaseProperties $databaseProperties)
+namespace Google\Service\WorkloadManager {
+    class SapComponent extends \Google\Collection
     {
+        /**
+         * Unspecified topology.
+         */
+        public const TOPOLOGY_TYPE_TOPOLOGY_TYPE_UNSPECIFIED = 'TOPOLOGY_TYPE_UNSPECIFIED';
+        /**
+         * A scale-up single node system.
+         */
+        public const TOPOLOGY_TYPE_TOPOLOGY_SCALE_UP = 'TOPOLOGY_SCALE_UP';
+        /**
+         * A scale-out multi-node system.
+         */
+        public const TOPOLOGY_TYPE_TOPOLOGY_SCALE_OUT = 'TOPOLOGY_SCALE_OUT';
+        protected $collection_key = 'resources';
+        protected $databasePropertiesType = DatabaseProperties::class;
+        protected $databasePropertiesDataType = '';
+        /**
+         * A list of host URIs that are part of the HA configuration if present. An
+         * empty list indicates the component is not configured for HA.
+         *
+         * @var string[]
+         */
+        public $haHosts;
+        protected $resourcesType = CloudResource::class;
+        protected $resourcesDataType = 'array';
+        /**
+         * Output only. sid is the sap component identificator
+         *
+         * @var string
+         */
+        public $sid;
+        /**
+         * The detected topology of the component.
+         *
+         * @var string
+         */
+        public $topologyType;
+        /**
+         * Output only. All instance properties.
+         *
+         * @param DatabaseProperties $databaseProperties
+         */
+        public function setDatabaseProperties(DatabaseProperties $databaseProperties)
+        {
+        }
+        /**
+         * @return DatabaseProperties
+         */
+        public function getDatabaseProperties()
+        {
+        }
+        /**
+         * A list of host URIs that are part of the HA configuration if present. An
+         * empty list indicates the component is not configured for HA.
+         *
+         * @param string[] $haHosts
+         */
+        public function setHaHosts($haHosts)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getHaHosts()
+        {
+        }
+        /**
+         * Output only. resources in the component
+         *
+         * @param CloudResource[] $resources
+         */
+        public function setResources($resources)
+        {
+        }
+        /**
+         * @return CloudResource[]
+         */
+        public function getResources()
+        {
+        }
+        /**
+         * Output only. sid is the sap component identificator
+         *
+         * @param string $sid
+         */
+        public function setSid($sid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSid()
+        {
+        }
+        /**
+         * The detected topology of the component.
+         *
+         * Accepted values: TOPOLOGY_TYPE_UNSPECIFIED, TOPOLOGY_SCALE_UP,
+         * TOPOLOGY_SCALE_OUT
+         *
+         * @param self::TOPOLOGY_TYPE_* $topologyType
+         */
+        public function setTopologyType($topologyType)
+        {
+        }
+        /**
+         * @return self::TOPOLOGY_TYPE_*
+         */
+        public function getTopologyType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DatabaseProperties
+     * Runtime class alias of \Google\Service\WorkloadManager\SapComponent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatabaseProperties()
-    {
-    }
-    /**
-     * A list of host URIs that are part of the HA configuration if present. An
-     * empty list indicates the component is not configured for HA.
-     *
-     * @param string[] $haHosts
-     */
-    public function setHaHosts($haHosts)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getHaHosts()
-    {
-    }
-    /**
-     * Output only. resources in the component
-     *
-     * @param CloudResource[] $resources
-     */
-    public function setResources($resources)
-    {
-    }
-    /**
-     * @return CloudResource[]
-     */
-    public function getResources()
-    {
-    }
-    /**
-     * Output only. sid is the sap component identificator
-     *
-     * @param string $sid
-     */
-    public function setSid($sid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSid()
-    {
-    }
-    /**
-     * The detected topology of the component.
-     *
-     * Accepted values: TOPOLOGY_TYPE_UNSPECIFIED, TOPOLOGY_SCALE_UP,
-     * TOPOLOGY_SCALE_OUT
-     *
-     * @param self::TOPOLOGY_TYPE_* $topologyType
-     */
-    public function setTopologyType($topologyType)
-    {
-    }
-    /**
-     * @return self::TOPOLOGY_TYPE_*
-     */
-    public function getTopologyType()
+    class Google_Service_WorkloadManager_SapComponent extends \Google\Service\WorkloadManager\SapComponent
     {
     }
 }

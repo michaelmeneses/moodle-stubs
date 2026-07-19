@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1TrajectorySingleToolUseInstance extends \Google\Model
-{
-    protected $predictedTrajectoryType = GoogleCloudAiplatformV1Trajectory::class;
-    protected $predictedTrajectoryDataType = '';
-    /**
-     * Required. Spec for predicted tool call trajectory.
-     *
-     * @param GoogleCloudAiplatformV1Trajectory $predictedTrajectory
-     */
-    public function setPredictedTrajectory(GoogleCloudAiplatformV1Trajectory $predictedTrajectory)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1TrajectorySingleToolUseInstance extends \Google\Model
     {
+        protected $predictedTrajectoryType = GoogleCloudAiplatformV1Trajectory::class;
+        protected $predictedTrajectoryDataType = '';
+        /**
+         * Required. Spec for predicted tool call trajectory.
+         *
+         * @param GoogleCloudAiplatformV1Trajectory $predictedTrajectory
+         */
+        public function setPredictedTrajectory(GoogleCloudAiplatformV1Trajectory $predictedTrajectory)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Trajectory
+         */
+        public function getPredictedTrajectory()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1Trajectory
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1TrajectorySingleToolUseInstance registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPredictedTrajectory()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1TrajectorySingleToolUseInstance extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1TrajectorySingleToolUseInstance
     {
     }
 }

@@ -16,6 +16,13 @@
  */
 namespace Monolog\Handler;
 
+use Aws\Sdk;
+use Aws\DynamoDb\DynamoDbClient;
+use Monolog\Formatter\FormatterInterface;
+use Aws\DynamoDb\Marshaler;
+use Monolog\Formatter\ScalarFormatter;
+use Monolog\Level;
+use Monolog\LogRecord;
 /**
  * Amazon DynamoDB handler (http://aws.amazon.com/dynamodb/)
  *

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class SourceOperationResponse extends \Google\Model
-{
-    protected $getMetadataType = SourceGetMetadataResponse::class;
-    protected $getMetadataDataType = '';
-    protected $splitType = SourceSplitResponse::class;
-    protected $splitDataType = '';
-    /**
-     * A response to a request to get metadata about a source.
-     *
-     * @param SourceGetMetadataResponse $getMetadata
-     */
-    public function setGetMetadata(SourceGetMetadataResponse $getMetadata)
+namespace Google\Service\Dataflow {
+    class SourceOperationResponse extends \Google\Model
     {
+        protected $getMetadataType = SourceGetMetadataResponse::class;
+        protected $getMetadataDataType = '';
+        protected $splitType = SourceSplitResponse::class;
+        protected $splitDataType = '';
+        /**
+         * A response to a request to get metadata about a source.
+         *
+         * @param SourceGetMetadataResponse $getMetadata
+         */
+        public function setGetMetadata(SourceGetMetadataResponse $getMetadata)
+        {
+        }
+        /**
+         * @return SourceGetMetadataResponse
+         */
+        public function getGetMetadata()
+        {
+        }
+        /**
+         * A response to a request to split a source.
+         *
+         * @param SourceSplitResponse $split
+         */
+        public function setSplit(SourceSplitResponse $split)
+        {
+        }
+        /**
+         * @return SourceSplitResponse
+         */
+        public function getSplit()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SourceGetMetadataResponse
+     * Runtime class alias of \Google\Service\Dataflow\SourceOperationResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGetMetadata()
-    {
-    }
-    /**
-     * A response to a request to split a source.
-     *
-     * @param SourceSplitResponse $split
-     */
-    public function setSplit(SourceSplitResponse $split)
-    {
-    }
-    /**
-     * @return SourceSplitResponse
-     */
-    public function getSplit()
+    class Google_Service_Dataflow_SourceOperationResponse extends \Google\Service\Dataflow\SourceOperationResponse
     {
     }
 }

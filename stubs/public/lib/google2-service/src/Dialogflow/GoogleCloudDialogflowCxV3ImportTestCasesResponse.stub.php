@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3ImportTestCasesResponse extends \Google\Collection
-{
-    protected $collection_key = 'names';
-    /**
-     * The unique identifiers of the new test cases. Format:
-     * `projects//locations//agents//testCases/`.
-     *
-     * @var string[]
-     */
-    public $names;
-    /**
-     * The unique identifiers of the new test cases. Format:
-     * `projects//locations//agents//testCases/`.
-     *
-     * @param string[] $names
-     */
-    public function setNames($names)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3ImportTestCasesResponse extends \Google\Collection
     {
+        protected $collection_key = 'names';
+        /**
+         * The unique identifiers of the new test cases. Format:
+         * `projects//locations//agents//testCases/`.
+         *
+         * @var string[]
+         */
+        public $names;
+        /**
+         * The unique identifiers of the new test cases. Format:
+         * `projects//locations//agents//testCases/`.
+         *
+         * @param string[] $names
+         */
+        public function setNames($names)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getNames()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ImportTestCasesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNames()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3ImportTestCasesResponse extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3ImportTestCasesResponse
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class ProfileChildLink extends \Google\Model
-{
-    /**
-     * Link to the list of goals for this view (profile).
-     *
-     * @var string
-     */
-    public $href;
-    /**
-     * Value is "analytics#goals".
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Link to the list of goals for this view (profile).
-     *
-     * @param string $href
-     */
-    public function setHref($href)
+namespace Google\Service\Analytics {
+    class ProfileChildLink extends \Google\Model
     {
+        /**
+         * Link to the list of goals for this view (profile).
+         *
+         * @var string
+         */
+        public $href;
+        /**
+         * Value is "analytics#goals".
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Link to the list of goals for this view (profile).
+         *
+         * @param string $href
+         */
+        public function setHref($href)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHref()
+        {
+        }
+        /**
+         * Value is "analytics#goals".
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Analytics\ProfileChildLink registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHref()
-    {
-    }
-    /**
-     * Value is "analytics#goals".
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Analytics_ProfileChildLink extends \Google\Service\Analytics\ProfileChildLink
     {
     }
 }

@@ -21,33 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoBaseFunction extends \Google\Model
-{
-    public const FUNCTION_NAME_UNSPECIFIED = 'UNSPECIFIED';
-    public const FUNCTION_NAME_NOW_IN_MILLIS = 'NOW_IN_MILLIS';
-    public const FUNCTION_NAME_INT_LIST = 'INT_LIST';
-    public const FUNCTION_NAME_ENVIRONMENT = 'ENVIRONMENT';
-    public const FUNCTION_NAME_GET_EXECUTION_ID = 'GET_EXECUTION_ID';
-    public const FUNCTION_NAME_GET_INTEGRATION_NAME = 'GET_INTEGRATION_NAME';
-    public const FUNCTION_NAME_GET_REGION = 'GET_REGION';
-    public const FUNCTION_NAME_GET_UUID = 'GET_UUID';
-    public const FUNCTION_NAME_GET_PROJECT_ID = 'GET_PROJECT_ID';
-    /**
-     * @var string
-     */
-    public $functionName;
-    /**
-     * @param self::FUNCTION_NAME_* $functionName
-     */
-    public function setFunctionName($functionName)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoBaseFunction extends \Google\Model
     {
+        public const FUNCTION_NAME_UNSPECIFIED = 'UNSPECIFIED';
+        public const FUNCTION_NAME_NOW_IN_MILLIS = 'NOW_IN_MILLIS';
+        public const FUNCTION_NAME_INT_LIST = 'INT_LIST';
+        public const FUNCTION_NAME_ENVIRONMENT = 'ENVIRONMENT';
+        public const FUNCTION_NAME_GET_EXECUTION_ID = 'GET_EXECUTION_ID';
+        public const FUNCTION_NAME_GET_INTEGRATION_NAME = 'GET_INTEGRATION_NAME';
+        public const FUNCTION_NAME_GET_REGION = 'GET_REGION';
+        public const FUNCTION_NAME_GET_UUID = 'GET_UUID';
+        public const FUNCTION_NAME_GET_PROJECT_ID = 'GET_PROJECT_ID';
+        /**
+         * @var string
+         */
+        public $functionName;
+        /**
+         * @param self::FUNCTION_NAME_* $functionName
+         */
+        public function setFunctionName($functionName)
+        {
+        }
+        /**
+         * @return self::FUNCTION_NAME_*
+         */
+        public function getFunctionName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::FUNCTION_NAME_*
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoBaseFunction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFunctionName()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoBaseFunction extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoBaseFunction
     {
     }
 }

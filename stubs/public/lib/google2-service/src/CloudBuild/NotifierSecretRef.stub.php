@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class NotifierSecretRef extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $secretRef;
-    /**
-     * @param string
-     */
-    public function setSecretRef($secretRef)
+namespace Google\Service\CloudBuild {
+    class NotifierSecretRef extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $secretRef;
+        /**
+         * @param string
+         */
+        public function setSecretRef($secretRef)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecretRef()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\NotifierSecretRef registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSecretRef()
+    class Google_Service_CloudBuild_NotifierSecretRef extends \Google\Service\CloudBuild\NotifierSecretRef
     {
     }
 }

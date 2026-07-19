@@ -30,6 +30,7 @@
  */
 namespace core\output;
 
+use Mustache\LambdaHelper;
 /**
  * Wrap content in quotes, and escape all special JSON characters used.
  *

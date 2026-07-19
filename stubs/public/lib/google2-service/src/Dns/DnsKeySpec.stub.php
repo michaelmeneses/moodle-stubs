@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dns;
-
-class DnsKeySpec extends \Google\Model
-{
-    public const ALGORITHM_rsasha1 = 'rsasha1';
-    public const ALGORITHM_rsasha256 = 'rsasha256';
-    public const ALGORITHM_rsasha512 = 'rsasha512';
-    public const ALGORITHM_ecdsap256sha256 = 'ecdsap256sha256';
-    public const ALGORITHM_ecdsap384sha384 = 'ecdsap384sha384';
-    public const KEY_TYPE_keySigning = 'keySigning';
-    public const KEY_TYPE_zoneSigning = 'zoneSigning';
-    /**
-     * String mnemonic specifying the DNSSEC algorithm of this key.
-     *
-     * @var string
-     */
-    public $algorithm;
-    /**
-     * Length of the keys in bits.
-     *
-     * @var string
-     */
-    public $keyLength;
-    /**
-     * Specifies whether this is a key signing key (KSK) or a zone signing key
-     * (ZSK). Key signing keys have the Secure Entry Point flag set and, when
-     * active, are only used to sign resource record sets of type DNSKEY. Zone
-     * signing keys do not have the Secure Entry Point flag set and are used to
-     * sign all other types of resource record sets.
-     *
-     * @var string
-     */
-    public $keyType;
-    /**
-     * @var string
-     */
-    public $kind;
-    /**
-     * String mnemonic specifying the DNSSEC algorithm of this key.
-     *
-     * Accepted values: rsasha1, rsasha256, rsasha512, ecdsap256sha256,
-     * ecdsap384sha384
-     *
-     * @param self::ALGORITHM_* $algorithm
-     */
-    public function setAlgorithm($algorithm)
+namespace Google\Service\Dns {
+    class DnsKeySpec extends \Google\Model
     {
+        public const ALGORITHM_rsasha1 = 'rsasha1';
+        public const ALGORITHM_rsasha256 = 'rsasha256';
+        public const ALGORITHM_rsasha512 = 'rsasha512';
+        public const ALGORITHM_ecdsap256sha256 = 'ecdsap256sha256';
+        public const ALGORITHM_ecdsap384sha384 = 'ecdsap384sha384';
+        public const KEY_TYPE_keySigning = 'keySigning';
+        public const KEY_TYPE_zoneSigning = 'zoneSigning';
+        /**
+         * String mnemonic specifying the DNSSEC algorithm of this key.
+         *
+         * @var string
+         */
+        public $algorithm;
+        /**
+         * Length of the keys in bits.
+         *
+         * @var string
+         */
+        public $keyLength;
+        /**
+         * Specifies whether this is a key signing key (KSK) or a zone signing key
+         * (ZSK). Key signing keys have the Secure Entry Point flag set and, when
+         * active, are only used to sign resource record sets of type DNSKEY. Zone
+         * signing keys do not have the Secure Entry Point flag set and are used to
+         * sign all other types of resource record sets.
+         *
+         * @var string
+         */
+        public $keyType;
+        /**
+         * @var string
+         */
+        public $kind;
+        /**
+         * String mnemonic specifying the DNSSEC algorithm of this key.
+         *
+         * Accepted values: rsasha1, rsasha256, rsasha512, ecdsap256sha256,
+         * ecdsap384sha384
+         *
+         * @param self::ALGORITHM_* $algorithm
+         */
+        public function setAlgorithm($algorithm)
+        {
+        }
+        /**
+         * @return self::ALGORITHM_*
+         */
+        public function getAlgorithm()
+        {
+        }
+        /**
+         * Length of the keys in bits.
+         *
+         * @param string $keyLength
+         */
+        public function setKeyLength($keyLength)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKeyLength()
+        {
+        }
+        /**
+         * Specifies whether this is a key signing key (KSK) or a zone signing key
+         * (ZSK). Key signing keys have the Secure Entry Point flag set and, when
+         * active, are only used to sign resource record sets of type DNSKEY. Zone
+         * signing keys do not have the Secure Entry Point flag set and are used to
+         * sign all other types of resource record sets.
+         *
+         * Accepted values: keySigning, zoneSigning
+         *
+         * @param self::KEY_TYPE_* $keyType
+         */
+        public function setKeyType($keyType)
+        {
+        }
+        /**
+         * @return self::KEY_TYPE_*
+         */
+        public function getKeyType()
+        {
+        }
+        /**
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ALGORITHM_*
+     * Runtime class alias of \Google\Service\Dns\DnsKeySpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlgorithm()
-    {
-    }
-    /**
-     * Length of the keys in bits.
-     *
-     * @param string $keyLength
-     */
-    public function setKeyLength($keyLength)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKeyLength()
-    {
-    }
-    /**
-     * Specifies whether this is a key signing key (KSK) or a zone signing key
-     * (ZSK). Key signing keys have the Secure Entry Point flag set and, when
-     * active, are only used to sign resource record sets of type DNSKEY. Zone
-     * signing keys do not have the Secure Entry Point flag set and are used to
-     * sign all other types of resource record sets.
-     *
-     * Accepted values: keySigning, zoneSigning
-     *
-     * @param self::KEY_TYPE_* $keyType
-     */
-    public function setKeyType($keyType)
-    {
-    }
-    /**
-     * @return self::KEY_TYPE_*
-     */
-    public function getKeyType()
-    {
-    }
-    /**
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
+    class Google_Service_Dns_DnsKeySpec extends \Google\Service\Dns\DnsKeySpec
     {
     }
 }

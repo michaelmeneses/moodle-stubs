@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class KmsWrappedCryptoKey extends \Google\Model
-{
-    /**
-     * Required. The resource name of the KMS CryptoKey to use for unwrapping. For
-     * example, `projects/{project_id}/locations/{location_id}/keyRings/{keyring}/
-     * cryptoKeys/{key}`.
-     *
-     * @var string
-     */
-    public $cryptoKey;
-    /**
-     * Required. The wrapped data crypto key.
-     *
-     * @var string
-     */
-    public $wrappedKey;
-    /**
-     * Required. The resource name of the KMS CryptoKey to use for unwrapping. For
-     * example, `projects/{project_id}/locations/{location_id}/keyRings/{keyring}/
-     * cryptoKeys/{key}`.
-     *
-     * @param string $cryptoKey
-     */
-    public function setCryptoKey($cryptoKey)
+namespace Google\Service\CloudHealthcare {
+    class KmsWrappedCryptoKey extends \Google\Model
     {
+        /**
+         * Required. The resource name of the KMS CryptoKey to use for unwrapping. For
+         * example, `projects/{project_id}/locations/{location_id}/keyRings/{keyring}/
+         * cryptoKeys/{key}`.
+         *
+         * @var string
+         */
+        public $cryptoKey;
+        /**
+         * Required. The wrapped data crypto key.
+         *
+         * @var string
+         */
+        public $wrappedKey;
+        /**
+         * Required. The resource name of the KMS CryptoKey to use for unwrapping. For
+         * example, `projects/{project_id}/locations/{location_id}/keyRings/{keyring}/
+         * cryptoKeys/{key}`.
+         *
+         * @param string $cryptoKey
+         */
+        public function setCryptoKey($cryptoKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCryptoKey()
+        {
+        }
+        /**
+         * Required. The wrapped data crypto key.
+         *
+         * @param string $wrappedKey
+         */
+        public function setWrappedKey($wrappedKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWrappedKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudHealthcare\KmsWrappedCryptoKey registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCryptoKey()
-    {
-    }
-    /**
-     * Required. The wrapped data crypto key.
-     *
-     * @param string $wrappedKey
-     */
-    public function setWrappedKey($wrappedKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWrappedKey()
+    class Google_Service_CloudHealthcare_KmsWrappedCryptoKey extends \Google\Service\CloudHealthcare\KmsWrappedCryptoKey
     {
     }
 }

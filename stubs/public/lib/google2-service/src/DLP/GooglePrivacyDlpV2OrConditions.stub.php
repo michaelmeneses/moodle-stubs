@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2OrConditions extends \Google\Model
-{
-    /**
-     * Minimum age a table must have before Cloud DLP can profile it. Value must
-     * be 1 hour or greater.
-     *
-     * @var string
-     */
-    public $minAge;
-    /**
-     * Minimum number of rows that should be present before Cloud DLP profiles a
-     * table
-     *
-     * @var int
-     */
-    public $minRowCount;
-    /**
-     * Minimum age a table must have before Cloud DLP can profile it. Value must
-     * be 1 hour or greater.
-     *
-     * @param string $minAge
-     */
-    public function setMinAge($minAge)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2OrConditions extends \Google\Model
     {
+        /**
+         * Minimum age a table must have before Cloud DLP can profile it. Value must
+         * be 1 hour or greater.
+         *
+         * @var string
+         */
+        public $minAge;
+        /**
+         * Minimum number of rows that should be present before Cloud DLP profiles a
+         * table
+         *
+         * @var int
+         */
+        public $minRowCount;
+        /**
+         * Minimum age a table must have before Cloud DLP can profile it. Value must
+         * be 1 hour or greater.
+         *
+         * @param string $minAge
+         */
+        public function setMinAge($minAge)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMinAge()
+        {
+        }
+        /**
+         * Minimum number of rows that should be present before Cloud DLP profiles a
+         * table
+         *
+         * @param int $minRowCount
+         */
+        public function setMinRowCount($minRowCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinRowCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2OrConditions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMinAge()
-    {
-    }
-    /**
-     * Minimum number of rows that should be present before Cloud DLP profiles a
-     * table
-     *
-     * @param int $minRowCount
-     */
-    public function setMinRowCount($minRowCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinRowCount()
+    class Google_Service_DLP_GooglePrivacyDlpV2OrConditions extends \Google\Service\DLP\GooglePrivacyDlpV2OrConditions
     {
     }
 }

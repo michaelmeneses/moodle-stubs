@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class SubaccountsListResponse extends \Google\Collection
-{
-    protected $collection_key = 'subaccounts';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#subaccountsListResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Pagination token to be used for the next list operation.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $subaccountsType = Subaccount::class;
-    protected $subaccountsDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#subaccountsListResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Dfareporting {
+    class SubaccountsListResponse extends \Google\Collection
     {
+        protected $collection_key = 'subaccounts';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#subaccountsListResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Pagination token to be used for the next list operation.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $subaccountsType = Subaccount::class;
+        protected $subaccountsDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#subaccountsListResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Pagination token to be used for the next list operation.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Subaccount collection.
+         *
+         * @param Subaccount[] $subaccounts
+         */
+        public function setSubaccounts($subaccounts)
+        {
+        }
+        /**
+         * @return Subaccount[]
+         */
+        public function getSubaccounts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\SubaccountsListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * Pagination token to be used for the next list operation.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Subaccount collection.
-     *
-     * @param Subaccount[] $subaccounts
-     */
-    public function setSubaccounts($subaccounts)
-    {
-    }
-    /**
-     * @return Subaccount[]
-     */
-    public function getSubaccounts()
+    class Google_Service_Dfareporting_SubaccountsListResponse extends \Google\Service\Dfareporting\SubaccountsListResponse
     {
     }
 }

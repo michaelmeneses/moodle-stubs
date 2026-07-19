@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1RoutineSpecArgument extends \Google\Model
-{
-    /**
-     * Unspecified mode.
-     */
-    public const MODE_MODE_UNSPECIFIED = 'MODE_UNSPECIFIED';
-    /**
-     * The argument is input-only.
-     */
-    public const MODE_IN = 'IN';
-    /**
-     * The argument is output-only.
-     */
-    public const MODE_OUT = 'OUT';
-    /**
-     * The argument is both an input and an output.
-     */
-    public const MODE_INOUT = 'INOUT';
-    /**
-     * Specifies whether the argument is input or output.
-     *
-     * @var string
-     */
-    public $mode;
-    /**
-     * The name of the argument. A return argument of a function might not have a
-     * name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Type of the argument. The exact value depends on the source system and the
-     * language.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Specifies whether the argument is input or output.
-     *
-     * Accepted values: MODE_UNSPECIFIED, IN, OUT, INOUT
-     *
-     * @param self::MODE_* $mode
-     */
-    public function setMode($mode)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1RoutineSpecArgument extends \Google\Model
     {
+        /**
+         * Unspecified mode.
+         */
+        public const MODE_MODE_UNSPECIFIED = 'MODE_UNSPECIFIED';
+        /**
+         * The argument is input-only.
+         */
+        public const MODE_IN = 'IN';
+        /**
+         * The argument is output-only.
+         */
+        public const MODE_OUT = 'OUT';
+        /**
+         * The argument is both an input and an output.
+         */
+        public const MODE_INOUT = 'INOUT';
+        /**
+         * Specifies whether the argument is input or output.
+         *
+         * @var string
+         */
+        public $mode;
+        /**
+         * The name of the argument. A return argument of a function might not have a
+         * name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Type of the argument. The exact value depends on the source system and the
+         * language.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Specifies whether the argument is input or output.
+         *
+         * Accepted values: MODE_UNSPECIFIED, IN, OUT, INOUT
+         *
+         * @param self::MODE_* $mode
+         */
+        public function setMode($mode)
+        {
+        }
+        /**
+         * @return self::MODE_*
+         */
+        public function getMode()
+        {
+        }
+        /**
+         * The name of the argument. A return argument of a function might not have a
+         * name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Type of the argument. The exact value depends on the source system and the
+         * language.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::MODE_*
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1RoutineSpecArgument registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMode()
-    {
-    }
-    /**
-     * The name of the argument. A return argument of a function might not have a
-     * name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Type of the argument. The exact value depends on the source system and the
-     * language.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1RoutineSpecArgument extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1RoutineSpecArgument
     {
     }
 }

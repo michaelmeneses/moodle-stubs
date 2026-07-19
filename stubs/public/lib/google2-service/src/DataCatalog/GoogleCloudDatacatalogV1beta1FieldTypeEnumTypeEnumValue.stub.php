@@ -21,15 +21,24 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1beta1FieldTypeEnumTypeEnumValue extends \Google\Model
-{
-    public $displayName;
-    public function setDisplayName($displayName)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1beta1FieldTypeEnumTypeEnumValue extends \Google\Model
     {
+        public $displayName;
+        public function setDisplayName($displayName)
+        {
+        }
+        public function getDisplayName()
+        {
+        }
     }
-    public function getDisplayName()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1FieldTypeEnumTypeEnumValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1beta1FieldTypeEnumTypeEnumValue extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1FieldTypeEnumTypeEnumValue
     {
     }
 }

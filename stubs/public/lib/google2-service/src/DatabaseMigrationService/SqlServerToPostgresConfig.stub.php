@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class SqlServerToPostgresConfig extends \Google\Model
-{
-    protected $postgresDestinationConfigType = PostgresDestinationConfig::class;
-    protected $postgresDestinationConfigDataType = '';
-    protected $sqlserverSourceConfigType = SqlServerSourceConfig::class;
-    protected $sqlserverSourceConfigDataType = '';
-    /**
-     * Optional. Configuration for Postgres destination.
-     *
-     * @param PostgresDestinationConfig $postgresDestinationConfig
-     */
-    public function setPostgresDestinationConfig(PostgresDestinationConfig $postgresDestinationConfig)
+namespace Google\Service\DatabaseMigrationService {
+    class SqlServerToPostgresConfig extends \Google\Model
     {
+        protected $postgresDestinationConfigType = PostgresDestinationConfig::class;
+        protected $postgresDestinationConfigDataType = '';
+        protected $sqlserverSourceConfigType = SqlServerSourceConfig::class;
+        protected $sqlserverSourceConfigDataType = '';
+        /**
+         * Optional. Configuration for Postgres destination.
+         *
+         * @param PostgresDestinationConfig $postgresDestinationConfig
+         */
+        public function setPostgresDestinationConfig(PostgresDestinationConfig $postgresDestinationConfig)
+        {
+        }
+        /**
+         * @return PostgresDestinationConfig
+         */
+        public function getPostgresDestinationConfig()
+        {
+        }
+        /**
+         * Optional. Configuration for SQL Server source.
+         *
+         * @param SqlServerSourceConfig $sqlserverSourceConfig
+         */
+        public function setSqlserverSourceConfig(SqlServerSourceConfig $sqlserverSourceConfig)
+        {
+        }
+        /**
+         * @return SqlServerSourceConfig
+         */
+        public function getSqlserverSourceConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PostgresDestinationConfig
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\SqlServerToPostgresConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPostgresDestinationConfig()
-    {
-    }
-    /**
-     * Optional. Configuration for SQL Server source.
-     *
-     * @param SqlServerSourceConfig $sqlserverSourceConfig
-     */
-    public function setSqlserverSourceConfig(SqlServerSourceConfig $sqlserverSourceConfig)
-    {
-    }
-    /**
-     * @return SqlServerSourceConfig
-     */
-    public function getSqlserverSourceConfig()
+    class Google_Service_DatabaseMigrationService_SqlServerToPostgresConfig extends \Google\Service\DatabaseMigrationService\SqlServerToPostgresConfig
     {
     }
 }

@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIAP;
-
-class IdentityAwareProxyClient extends \Google\Model
-{
-    /**
-     * Human-friendly name given to the OAuth client.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. Unique identifier of the OAuth client.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Client secret of the OAuth client.
-     *
-     * @var string
-     */
-    public $secret;
-    /**
-     * Human-friendly name given to the OAuth client.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\CloudIAP {
+    class IdentityAwareProxyClient extends \Google\Model
     {
+        /**
+         * Human-friendly name given to the OAuth client.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. Unique identifier of the OAuth client.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Client secret of the OAuth client.
+         *
+         * @var string
+         */
+        public $secret;
+        /**
+         * Human-friendly name given to the OAuth client.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. Unique identifier of the OAuth client.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Client secret of the OAuth client.
+         *
+         * @param string $secret
+         */
+        public function setSecret($secret)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSecret()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudIAP\IdentityAwareProxyClient registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. Unique identifier of the OAuth client.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Client secret of the OAuth client.
-     *
-     * @param string $secret
-     */
-    public function setSecret($secret)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSecret()
+    class Google_Service_CloudIAP_IdentityAwareProxyClient extends \Google\Service\CloudIAP\IdentityAwareProxyClient
     {
     }
 }

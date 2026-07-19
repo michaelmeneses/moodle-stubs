@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class FeatureInstance extends \Google\Model
-{
-    protected $featureType = Feature::class;
-    protected $featureDataType = '';
-    /**
-     * The feature that this is an instance of. A calendar resource may have
-     * multiple instances of a feature.
-     *
-     * @param Feature $feature
-     */
-    public function setFeature(Feature $feature)
+namespace Google\Service\Directory {
+    class FeatureInstance extends \Google\Model
     {
+        protected $featureType = Feature::class;
+        protected $featureDataType = '';
+        /**
+         * The feature that this is an instance of. A calendar resource may have
+         * multiple instances of a feature.
+         *
+         * @param Feature $feature
+         */
+        public function setFeature(Feature $feature)
+        {
+        }
+        /**
+         * @return Feature
+         */
+        public function getFeature()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Feature
+     * Runtime class alias of \Google\Service\Directory\FeatureInstance registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFeature()
+    class Google_Service_Directory_FeatureInstance extends \Google\Service\Directory\FeatureInstance
     {
     }
 }

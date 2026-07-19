@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class ObjectDisplayOptions extends \Google\Collection
-{
-    protected $collection_key = 'metalines';
-    protected $metalinesType = Metaline::class;
-    protected $metalinesDataType = 'array';
-    /**
-     * The user friendly label to display in the search result to indicate the
-     * type of the item. This is OPTIONAL; if not provided, an object label isn't
-     * displayed on the context line of the search results. The maximum length is
-     * 64 characters.
-     *
-     * @var string
-     */
-    public $objectDisplayLabel;
-    /**
-     * Defines the properties that are displayed in the metalines of the search
-     * results. The property values are displayed in the order given here. If a
-     * property holds multiple values, all of the values are displayed before the
-     * next properties. For this reason, it is a good practice to specify singular
-     * properties before repeated properties in this list. All of the properties
-     * must set is_returnable to true. The maximum number of metalines is 3.
-     *
-     * @param Metaline[] $metalines
-     */
-    public function setMetalines($metalines)
+namespace Google\Service\CloudSearch {
+    class ObjectDisplayOptions extends \Google\Collection
     {
+        protected $collection_key = 'metalines';
+        protected $metalinesType = Metaline::class;
+        protected $metalinesDataType = 'array';
+        /**
+         * The user friendly label to display in the search result to indicate the
+         * type of the item. This is OPTIONAL; if not provided, an object label isn't
+         * displayed on the context line of the search results. The maximum length is
+         * 64 characters.
+         *
+         * @var string
+         */
+        public $objectDisplayLabel;
+        /**
+         * Defines the properties that are displayed in the metalines of the search
+         * results. The property values are displayed in the order given here. If a
+         * property holds multiple values, all of the values are displayed before the
+         * next properties. For this reason, it is a good practice to specify singular
+         * properties before repeated properties in this list. All of the properties
+         * must set is_returnable to true. The maximum number of metalines is 3.
+         *
+         * @param Metaline[] $metalines
+         */
+        public function setMetalines($metalines)
+        {
+        }
+        /**
+         * @return Metaline[]
+         */
+        public function getMetalines()
+        {
+        }
+        /**
+         * The user friendly label to display in the search result to indicate the
+         * type of the item. This is OPTIONAL; if not provided, an object label isn't
+         * displayed on the context line of the search results. The maximum length is
+         * 64 characters.
+         *
+         * @param string $objectDisplayLabel
+         */
+        public function setObjectDisplayLabel($objectDisplayLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectDisplayLabel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Metaline[]
+     * Runtime class alias of \Google\Service\CloudSearch\ObjectDisplayOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetalines()
-    {
-    }
-    /**
-     * The user friendly label to display in the search result to indicate the
-     * type of the item. This is OPTIONAL; if not provided, an object label isn't
-     * displayed on the context line of the search results. The maximum length is
-     * 64 characters.
-     *
-     * @param string $objectDisplayLabel
-     */
-    public function setObjectDisplayLabel($objectDisplayLabel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectDisplayLabel()
+    class Google_Service_CloudSearch_ObjectDisplayOptions extends \Google\Service\CloudSearch\ObjectDisplayOptions
     {
     }
 }

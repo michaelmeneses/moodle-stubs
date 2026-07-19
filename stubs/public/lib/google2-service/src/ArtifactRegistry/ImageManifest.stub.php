@@ -21,165 +21,174 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class ImageManifest extends \Google\Collection
-{
-    protected $collection_key = 'osFeatures';
-    /**
-     * Optional. The CPU architecture of the image. Values are provided by the
-     * Docker client and are not validated by Artifact Registry. Example values
-     * include "amd64", "arm64", "ppc64le", "s390x", "riscv64", "mips64le", etc.
-     *
-     * @var string
-     */
-    public $architecture;
-    /**
-     * Optional. The manifest digest, in the format "sha256:".
-     *
-     * @var string
-     */
-    public $digest;
-    /**
-     * Optional. The media type of the manifest, e.g.,
-     * "application/vnd.docker.distribution.manifest.v2+json"
-     *
-     * @var string
-     */
-    public $mediaType;
-    /**
-     * Optional. The operating system of the image. Values are provided by the
-     * Docker client and are not validated by Artifact Registry. Example values
-     * include "linux", "windows", "darwin", "aix", etc.
-     *
-     * @var string
-     */
-    public $os;
-    /**
-     * Optional. The required OS features for the image, for example on Windows
-     * `win32k`.
-     *
-     * @var string[]
-     */
-    public $osFeatures;
-    /**
-     * Optional. The OS version of the image, for example on Windows
-     * `10.0.14393.1066`.
-     *
-     * @var string
-     */
-    public $osVersion;
-    /**
-     * Optional. The variant of the CPU in the image, for example `v7` to specify
-     * ARMv7 when architecture is `arm`.
-     *
-     * @var string
-     */
-    public $variant;
-    /**
-     * Optional. The CPU architecture of the image. Values are provided by the
-     * Docker client and are not validated by Artifact Registry. Example values
-     * include "amd64", "arm64", "ppc64le", "s390x", "riscv64", "mips64le", etc.
-     *
-     * @param string $architecture
-     */
-    public function setArchitecture($architecture)
+namespace Google\Service\ArtifactRegistry {
+    class ImageManifest extends \Google\Collection
     {
+        protected $collection_key = 'osFeatures';
+        /**
+         * Optional. The CPU architecture of the image. Values are provided by the
+         * Docker client and are not validated by Artifact Registry. Example values
+         * include "amd64", "arm64", "ppc64le", "s390x", "riscv64", "mips64le", etc.
+         *
+         * @var string
+         */
+        public $architecture;
+        /**
+         * Optional. The manifest digest, in the format "sha256:".
+         *
+         * @var string
+         */
+        public $digest;
+        /**
+         * Optional. The media type of the manifest, e.g.,
+         * "application/vnd.docker.distribution.manifest.v2+json"
+         *
+         * @var string
+         */
+        public $mediaType;
+        /**
+         * Optional. The operating system of the image. Values are provided by the
+         * Docker client and are not validated by Artifact Registry. Example values
+         * include "linux", "windows", "darwin", "aix", etc.
+         *
+         * @var string
+         */
+        public $os;
+        /**
+         * Optional. The required OS features for the image, for example on Windows
+         * `win32k`.
+         *
+         * @var string[]
+         */
+        public $osFeatures;
+        /**
+         * Optional. The OS version of the image, for example on Windows
+         * `10.0.14393.1066`.
+         *
+         * @var string
+         */
+        public $osVersion;
+        /**
+         * Optional. The variant of the CPU in the image, for example `v7` to specify
+         * ARMv7 when architecture is `arm`.
+         *
+         * @var string
+         */
+        public $variant;
+        /**
+         * Optional. The CPU architecture of the image. Values are provided by the
+         * Docker client and are not validated by Artifact Registry. Example values
+         * include "amd64", "arm64", "ppc64le", "s390x", "riscv64", "mips64le", etc.
+         *
+         * @param string $architecture
+         */
+        public function setArchitecture($architecture)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getArchitecture()
+        {
+        }
+        /**
+         * Optional. The manifest digest, in the format "sha256:".
+         *
+         * @param string $digest
+         */
+        public function setDigest($digest)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDigest()
+        {
+        }
+        /**
+         * Optional. The media type of the manifest, e.g.,
+         * "application/vnd.docker.distribution.manifest.v2+json"
+         *
+         * @param string $mediaType
+         */
+        public function setMediaType($mediaType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMediaType()
+        {
+        }
+        /**
+         * Optional. The operating system of the image. Values are provided by the
+         * Docker client and are not validated by Artifact Registry. Example values
+         * include "linux", "windows", "darwin", "aix", etc.
+         *
+         * @param string $os
+         */
+        public function setOs($os)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOs()
+        {
+        }
+        /**
+         * Optional. The required OS features for the image, for example on Windows
+         * `win32k`.
+         *
+         * @param string[] $osFeatures
+         */
+        public function setOsFeatures($osFeatures)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getOsFeatures()
+        {
+        }
+        /**
+         * Optional. The OS version of the image, for example on Windows
+         * `10.0.14393.1066`.
+         *
+         * @param string $osVersion
+         */
+        public function setOsVersion($osVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOsVersion()
+        {
+        }
+        /**
+         * Optional. The variant of the CPU in the image, for example `v7` to specify
+         * ARMv7 when architecture is `arm`.
+         *
+         * @param string $variant
+         */
+        public function setVariant($variant)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVariant()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ArtifactRegistry\ImageManifest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArchitecture()
-    {
-    }
-    /**
-     * Optional. The manifest digest, in the format "sha256:".
-     *
-     * @param string $digest
-     */
-    public function setDigest($digest)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDigest()
-    {
-    }
-    /**
-     * Optional. The media type of the manifest, e.g.,
-     * "application/vnd.docker.distribution.manifest.v2+json"
-     *
-     * @param string $mediaType
-     */
-    public function setMediaType($mediaType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMediaType()
-    {
-    }
-    /**
-     * Optional. The operating system of the image. Values are provided by the
-     * Docker client and are not validated by Artifact Registry. Example values
-     * include "linux", "windows", "darwin", "aix", etc.
-     *
-     * @param string $os
-     */
-    public function setOs($os)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOs()
-    {
-    }
-    /**
-     * Optional. The required OS features for the image, for example on Windows
-     * `win32k`.
-     *
-     * @param string[] $osFeatures
-     */
-    public function setOsFeatures($osFeatures)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getOsFeatures()
-    {
-    }
-    /**
-     * Optional. The OS version of the image, for example on Windows
-     * `10.0.14393.1066`.
-     *
-     * @param string $osVersion
-     */
-    public function setOsVersion($osVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOsVersion()
-    {
-    }
-    /**
-     * Optional. The variant of the CPU in the image, for example `v7` to specify
-     * ARMv7 when architecture is `arm`.
-     *
-     * @param string $variant
-     */
-    public function setVariant($variant)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVariant()
+    class Google_Service_ArtifactRegistry_ImageManifest extends \Google\Service\ArtifactRegistry\ImageManifest
     {
     }
 }

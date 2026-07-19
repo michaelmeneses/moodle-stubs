@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DeploymentManager;
-
-class ResourceAccessControl extends \Google\Model
-{
-    /**
-     * The GCP IAM Policy to set on the resource.
-     *
-     * @var string
-     */
-    public $gcpIamPolicy;
-    /**
-     * The GCP IAM Policy to set on the resource.
-     *
-     * @param string $gcpIamPolicy
-     */
-    public function setGcpIamPolicy($gcpIamPolicy)
+namespace Google\Service\DeploymentManager {
+    class ResourceAccessControl extends \Google\Model
     {
+        /**
+         * The GCP IAM Policy to set on the resource.
+         *
+         * @var string
+         */
+        public $gcpIamPolicy;
+        /**
+         * The GCP IAM Policy to set on the resource.
+         *
+         * @param string $gcpIamPolicy
+         */
+        public function setGcpIamPolicy($gcpIamPolicy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcpIamPolicy()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DeploymentManager\ResourceAccessControl registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcpIamPolicy()
+    class Google_Service_DeploymentManager_ResourceAccessControl extends \Google\Service\DeploymentManager\ResourceAccessControl
     {
     }
 }

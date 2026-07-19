@@ -21,119 +21,128 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ReturnShipment extends \Google\Collection
-{
-    protected $collection_key = 'shipmentTrackingInfos';
-    /**
-     * @var string
-     */
-    public $creationDate;
-    /**
-     * @var string
-     */
-    public $deliveryDate;
-    /**
-     * @var string
-     */
-    public $returnMethodType;
-    /**
-     * @var string
-     */
-    public $shipmentId;
-    protected $shipmentTrackingInfosType = ShipmentTrackingInfo::class;
-    protected $shipmentTrackingInfosDataType = 'array';
-    /**
-     * @var string
-     */
-    public $shippingDate;
-    /**
-     * @var string
-     */
-    public $state;
-    /**
-     * @param string
-     */
-    public function setCreationDate($creationDate)
+namespace Google\Service\ShoppingContent {
+    class ReturnShipment extends \Google\Collection
     {
+        protected $collection_key = 'shipmentTrackingInfos';
+        /**
+         * @var string
+         */
+        public $creationDate;
+        /**
+         * @var string
+         */
+        public $deliveryDate;
+        /**
+         * @var string
+         */
+        public $returnMethodType;
+        /**
+         * @var string
+         */
+        public $shipmentId;
+        protected $shipmentTrackingInfosType = ShipmentTrackingInfo::class;
+        protected $shipmentTrackingInfosDataType = 'array';
+        /**
+         * @var string
+         */
+        public $shippingDate;
+        /**
+         * @var string
+         */
+        public $state;
+        /**
+         * @param string
+         */
+        public function setCreationDate($creationDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreationDate()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDeliveryDate($deliveryDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeliveryDate()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReturnMethodType($returnMethodType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReturnMethodType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setShipmentId($shipmentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShipmentId()
+        {
+        }
+        /**
+         * @param ShipmentTrackingInfo[]
+         */
+        public function setShipmentTrackingInfos($shipmentTrackingInfos)
+        {
+        }
+        /**
+         * @return ShipmentTrackingInfo[]
+         */
+        public function getShipmentTrackingInfos()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setShippingDate($shippingDate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShippingDate()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\ReturnShipment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreationDate()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDeliveryDate($deliveryDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeliveryDate()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReturnMethodType($returnMethodType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReturnMethodType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setShipmentId($shipmentId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShipmentId()
-    {
-    }
-    /**
-     * @param ShipmentTrackingInfo[]
-     */
-    public function setShipmentTrackingInfos($shipmentTrackingInfos)
-    {
-    }
-    /**
-     * @return ShipmentTrackingInfo[]
-     */
-    public function getShipmentTrackingInfos()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setShippingDate($shippingDate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShippingDate()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
+    class Google_Service_ShoppingContent_ReturnShipment extends \Google\Service\ShoppingContent\ReturnShipment
     {
     }
 }

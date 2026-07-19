@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class GoogleAppsCardV1Trigger extends \Google\Model
-{
-    /**
-     * The unique identifier of the ActionRule.
-     *
-     * @var string
-     */
-    public $actionRuleId;
-    /**
-     * The unique identifier of the ActionRule.
-     *
-     * @param string $actionRuleId
-     */
-    public function setActionRuleId($actionRuleId)
+namespace Google\Service\HangoutsChat {
+    class GoogleAppsCardV1Trigger extends \Google\Model
     {
+        /**
+         * The unique identifier of the ActionRule.
+         *
+         * @var string
+         */
+        public $actionRuleId;
+        /**
+         * The unique identifier of the ActionRule.
+         *
+         * @param string $actionRuleId
+         */
+        public function setActionRuleId($actionRuleId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActionRuleId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\HangoutsChat\GoogleAppsCardV1Trigger registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActionRuleId()
+    class Google_Service_HangoutsChat_GoogleAppsCardV1Trigger extends \Google\Service\HangoutsChat\GoogleAppsCardV1Trigger
     {
     }
 }

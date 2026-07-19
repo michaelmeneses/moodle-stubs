@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2ImportConversationDataOperationMetadata extends \Google\Collection
-{
-    protected $collection_key = 'partialFailures';
-    /**
-     * The resource name of the imported conversation dataset. Format:
-     * `projects//locations//conversationDatasets/`
-     *
-     * @var string
-     */
-    public $conversationDataset;
-    /**
-     * Timestamp when import conversation data request was created. The time is
-     * measured on server side.
-     *
-     * @var string
-     */
-    public $createTime;
-    protected $partialFailuresType = GoogleRpcStatus::class;
-    protected $partialFailuresDataType = 'array';
-    /**
-     * The resource name of the imported conversation dataset. Format:
-     * `projects//locations//conversationDatasets/`
-     *
-     * @param string $conversationDataset
-     */
-    public function setConversationDataset($conversationDataset)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2ImportConversationDataOperationMetadata extends \Google\Collection
     {
+        protected $collection_key = 'partialFailures';
+        /**
+         * The resource name of the imported conversation dataset. Format:
+         * `projects//locations//conversationDatasets/`
+         *
+         * @var string
+         */
+        public $conversationDataset;
+        /**
+         * Timestamp when import conversation data request was created. The time is
+         * measured on server side.
+         *
+         * @var string
+         */
+        public $createTime;
+        protected $partialFailuresType = GoogleRpcStatus::class;
+        protected $partialFailuresDataType = 'array';
+        /**
+         * The resource name of the imported conversation dataset. Format:
+         * `projects//locations//conversationDatasets/`
+         *
+         * @param string $conversationDataset
+         */
+        public function setConversationDataset($conversationDataset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConversationDataset()
+        {
+        }
+        /**
+         * Timestamp when import conversation data request was created. The time is
+         * measured on server side.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Partial failures are failures that don't fail the whole long running
+         * operation, e.g. single files that couldn't be read.
+         *
+         * @param GoogleRpcStatus[] $partialFailures
+         */
+        public function setPartialFailures($partialFailures)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus[]
+         */
+        public function getPartialFailures()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2ImportConversationDataOperationMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConversationDataset()
-    {
-    }
-    /**
-     * Timestamp when import conversation data request was created. The time is
-     * measured on server side.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Partial failures are failures that don't fail the whole long running
-     * operation, e.g. single files that couldn't be read.
-     *
-     * @param GoogleRpcStatus[] $partialFailures
-     */
-    public function setPartialFailures($partialFailures)
-    {
-    }
-    /**
-     * @return GoogleRpcStatus[]
-     */
-    public function getPartialFailures()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2ImportConversationDataOperationMetadata extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2ImportConversationDataOperationMetadata
     {
     }
 }

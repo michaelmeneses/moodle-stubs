@@ -21,123 +21,132 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vision;
-
-class ImageContext extends \Google\Collection
-{
-    protected $collection_key = 'languageHints';
-    protected $cropHintsParamsType = CropHintsParams::class;
-    protected $cropHintsParamsDataType = '';
-    /**
-     * List of languages to use for TEXT_DETECTION. In most cases, an empty value
-     * yields the best results since it enables automatic language detection. For
-     * languages based on the Latin alphabet, setting `language_hints` is not
-     * needed. In rare cases, when the language of the text in the image is known,
-     * setting a hint will help get better results (although it will be a
-     * significant hindrance if the hint is wrong). Text detection returns an
-     * error if one or more of the specified languages is not one of the
-     * [supported languages](https://cloud.google.com/vision/docs/languages).
-     *
-     * @var string[]
-     */
-    public $languageHints;
-    protected $latLongRectType = LatLongRect::class;
-    protected $latLongRectDataType = '';
-    protected $productSearchParamsType = ProductSearchParams::class;
-    protected $productSearchParamsDataType = '';
-    protected $textDetectionParamsType = TextDetectionParams::class;
-    protected $textDetectionParamsDataType = '';
-    protected $webDetectionParamsType = WebDetectionParams::class;
-    protected $webDetectionParamsDataType = '';
-    /**
-     * Parameters for crop hints annotation request.
-     *
-     * @param CropHintsParams $cropHintsParams
-     */
-    public function setCropHintsParams(CropHintsParams $cropHintsParams)
+namespace Google\Service\Vision {
+    class ImageContext extends \Google\Collection
     {
+        protected $collection_key = 'languageHints';
+        protected $cropHintsParamsType = CropHintsParams::class;
+        protected $cropHintsParamsDataType = '';
+        /**
+         * List of languages to use for TEXT_DETECTION. In most cases, an empty value
+         * yields the best results since it enables automatic language detection. For
+         * languages based on the Latin alphabet, setting `language_hints` is not
+         * needed. In rare cases, when the language of the text in the image is known,
+         * setting a hint will help get better results (although it will be a
+         * significant hindrance if the hint is wrong). Text detection returns an
+         * error if one or more of the specified languages is not one of the
+         * [supported languages](https://cloud.google.com/vision/docs/languages).
+         *
+         * @var string[]
+         */
+        public $languageHints;
+        protected $latLongRectType = LatLongRect::class;
+        protected $latLongRectDataType = '';
+        protected $productSearchParamsType = ProductSearchParams::class;
+        protected $productSearchParamsDataType = '';
+        protected $textDetectionParamsType = TextDetectionParams::class;
+        protected $textDetectionParamsDataType = '';
+        protected $webDetectionParamsType = WebDetectionParams::class;
+        protected $webDetectionParamsDataType = '';
+        /**
+         * Parameters for crop hints annotation request.
+         *
+         * @param CropHintsParams $cropHintsParams
+         */
+        public function setCropHintsParams(CropHintsParams $cropHintsParams)
+        {
+        }
+        /**
+         * @return CropHintsParams
+         */
+        public function getCropHintsParams()
+        {
+        }
+        /**
+         * List of languages to use for TEXT_DETECTION. In most cases, an empty value
+         * yields the best results since it enables automatic language detection. For
+         * languages based on the Latin alphabet, setting `language_hints` is not
+         * needed. In rare cases, when the language of the text in the image is known,
+         * setting a hint will help get better results (although it will be a
+         * significant hindrance if the hint is wrong). Text detection returns an
+         * error if one or more of the specified languages is not one of the
+         * [supported languages](https://cloud.google.com/vision/docs/languages).
+         *
+         * @param string[] $languageHints
+         */
+        public function setLanguageHints($languageHints)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLanguageHints()
+        {
+        }
+        /**
+         * Not used.
+         *
+         * @param LatLongRect $latLongRect
+         */
+        public function setLatLongRect(LatLongRect $latLongRect)
+        {
+        }
+        /**
+         * @return LatLongRect
+         */
+        public function getLatLongRect()
+        {
+        }
+        /**
+         * Parameters for product search.
+         *
+         * @param ProductSearchParams $productSearchParams
+         */
+        public function setProductSearchParams(ProductSearchParams $productSearchParams)
+        {
+        }
+        /**
+         * @return ProductSearchParams
+         */
+        public function getProductSearchParams()
+        {
+        }
+        /**
+         * Parameters for text detection and document text detection.
+         *
+         * @param TextDetectionParams $textDetectionParams
+         */
+        public function setTextDetectionParams(TextDetectionParams $textDetectionParams)
+        {
+        }
+        /**
+         * @return TextDetectionParams
+         */
+        public function getTextDetectionParams()
+        {
+        }
+        /**
+         * Parameters for web detection.
+         *
+         * @param WebDetectionParams $webDetectionParams
+         */
+        public function setWebDetectionParams(WebDetectionParams $webDetectionParams)
+        {
+        }
+        /**
+         * @return WebDetectionParams
+         */
+        public function getWebDetectionParams()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CropHintsParams
+     * Runtime class alias of \Google\Service\Vision\ImageContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCropHintsParams()
-    {
-    }
-    /**
-     * List of languages to use for TEXT_DETECTION. In most cases, an empty value
-     * yields the best results since it enables automatic language detection. For
-     * languages based on the Latin alphabet, setting `language_hints` is not
-     * needed. In rare cases, when the language of the text in the image is known,
-     * setting a hint will help get better results (although it will be a
-     * significant hindrance if the hint is wrong). Text detection returns an
-     * error if one or more of the specified languages is not one of the
-     * [supported languages](https://cloud.google.com/vision/docs/languages).
-     *
-     * @param string[] $languageHints
-     */
-    public function setLanguageHints($languageHints)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLanguageHints()
-    {
-    }
-    /**
-     * Not used.
-     *
-     * @param LatLongRect $latLongRect
-     */
-    public function setLatLongRect(LatLongRect $latLongRect)
-    {
-    }
-    /**
-     * @return LatLongRect
-     */
-    public function getLatLongRect()
-    {
-    }
-    /**
-     * Parameters for product search.
-     *
-     * @param ProductSearchParams $productSearchParams
-     */
-    public function setProductSearchParams(ProductSearchParams $productSearchParams)
-    {
-    }
-    /**
-     * @return ProductSearchParams
-     */
-    public function getProductSearchParams()
-    {
-    }
-    /**
-     * Parameters for text detection and document text detection.
-     *
-     * @param TextDetectionParams $textDetectionParams
-     */
-    public function setTextDetectionParams(TextDetectionParams $textDetectionParams)
-    {
-    }
-    /**
-     * @return TextDetectionParams
-     */
-    public function getTextDetectionParams()
-    {
-    }
-    /**
-     * Parameters for web detection.
-     *
-     * @param WebDetectionParams $webDetectionParams
-     */
-    public function setWebDetectionParams(WebDetectionParams $webDetectionParams)
-    {
-    }
-    /**
-     * @return WebDetectionParams
-     */
-    public function getWebDetectionParams()
+    class Google_Service_Vision_ImageContext extends \Google\Service\Vision\ImageContext
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DeploymentManager;
-
-class DeploymentUpdateLabelEntry extends \Google\Model
-{
-    /**
-     * Key of the label
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * Value of the label
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Key of the label
-     *
-     * @param string $key
-     */
-    public function setKey($key)
+namespace Google\Service\DeploymentManager {
+    class DeploymentUpdateLabelEntry extends \Google\Model
     {
+        /**
+         * Key of the label
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * Value of the label
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Key of the label
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * Value of the label
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DeploymentManager\DeploymentUpdateLabelEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKey()
-    {
-    }
-    /**
-     * Value of the label
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_DeploymentManager_DeploymentUpdateLabelEntry extends \Google\Service\DeploymentManager\DeploymentUpdateLabelEntry
     {
     }
 }

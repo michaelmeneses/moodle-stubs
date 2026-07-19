@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class LocalizedString extends \Google\Model
-{
-    /**
-     * A map of arguments used when creating the localized message. Keys represent
-     * parameter names which may be used by the localized version when
-     * substituting dynamic values.
-     *
-     * @var string[]
-     */
-    public $args;
-    /**
-     * The canonical English version of this message. If no token is provided or
-     * the front-end has no message associated with the token, this text will be
-     * displayed as-is.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * The token identifying the message, e.g. 'METRIC_READ_CPU'. This should be
-     * unique within the service.
-     *
-     * @var string
-     */
-    public $token;
-    /**
-     * A map of arguments used when creating the localized message. Keys represent
-     * parameter names which may be used by the localized version when
-     * substituting dynamic values.
-     *
-     * @param string[] $args
-     */
-    public function setArgs($args)
+namespace Google\Service\Spanner {
+    class LocalizedString extends \Google\Model
     {
+        /**
+         * A map of arguments used when creating the localized message. Keys represent
+         * parameter names which may be used by the localized version when
+         * substituting dynamic values.
+         *
+         * @var string[]
+         */
+        public $args;
+        /**
+         * The canonical English version of this message. If no token is provided or
+         * the front-end has no message associated with the token, this text will be
+         * displayed as-is.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * The token identifying the message, e.g. 'METRIC_READ_CPU'. This should be
+         * unique within the service.
+         *
+         * @var string
+         */
+        public $token;
+        /**
+         * A map of arguments used when creating the localized message. Keys represent
+         * parameter names which may be used by the localized version when
+         * substituting dynamic values.
+         *
+         * @param string[] $args
+         */
+        public function setArgs($args)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getArgs()
+        {
+        }
+        /**
+         * The canonical English version of this message. If no token is provided or
+         * the front-end has no message associated with the token, this text will be
+         * displayed as-is.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * The token identifying the message, e.g. 'METRIC_READ_CPU'. This should be
+         * unique within the service.
+         *
+         * @param string $token
+         */
+        public function setToken($token)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Spanner\LocalizedString registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArgs()
-    {
-    }
-    /**
-     * The canonical English version of this message. If no token is provided or
-     * the front-end has no message associated with the token, this text will be
-     * displayed as-is.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
-    {
-    }
-    /**
-     * The token identifying the message, e.g. 'METRIC_READ_CPU'. This should be
-     * unique within the service.
-     *
-     * @param string $token
-     */
-    public function setToken($token)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getToken()
+    class Google_Service_Spanner_LocalizedString extends \Google\Service\Spanner\LocalizedString
     {
     }
 }

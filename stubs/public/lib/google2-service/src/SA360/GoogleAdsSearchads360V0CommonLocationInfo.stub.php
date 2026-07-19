@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0CommonLocationInfo extends \Google\Model
-{
-    /**
-     * The geo target constant resource name.
-     *
-     * @var string
-     */
-    public $geoTargetConstant;
-    /**
-     * The geo target constant resource name.
-     *
-     * @param string $geoTargetConstant
-     */
-    public function setGeoTargetConstant($geoTargetConstant)
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0CommonLocationInfo extends \Google\Model
     {
+        /**
+         * The geo target constant resource name.
+         *
+         * @var string
+         */
+        public $geoTargetConstant;
+        /**
+         * The geo target constant resource name.
+         *
+         * @param string $geoTargetConstant
+         */
+        public function setGeoTargetConstant($geoTargetConstant)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGeoTargetConstant()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0CommonLocationInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGeoTargetConstant()
+    class Google_Service_SA360_GoogleAdsSearchads360V0CommonLocationInfo extends \Google\Service\SA360\GoogleAdsSearchads360V0CommonLocationInfo
     {
     }
 }

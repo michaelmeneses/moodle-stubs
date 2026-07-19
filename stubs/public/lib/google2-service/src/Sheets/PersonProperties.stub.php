@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class PersonProperties extends \Google\Model
-{
-    /**
-     * Default value, do not use.
-     */
-    public const DISPLAY_FORMAT_DISPLAY_FORMAT_UNSPECIFIED = 'DISPLAY_FORMAT_UNSPECIFIED';
-    /**
-     * Default display format.
-     */
-    public const DISPLAY_FORMAT_DEFAULT = 'DEFAULT';
-    /**
-     * Last name, first name display format.
-     */
-    public const DISPLAY_FORMAT_LAST_NAME_COMMA_FIRST_NAME = 'LAST_NAME_COMMA_FIRST_NAME';
-    /**
-     * Email display format.
-     */
-    public const DISPLAY_FORMAT_EMAIL = 'EMAIL';
-    /**
-     * Optional. The display format of the person chip. If not set, the default
-     * display format is used.
-     *
-     * @var string
-     */
-    public $displayFormat;
-    /**
-     * Required. The email address linked to this person. This field is always
-     * present.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * Optional. The display format of the person chip. If not set, the default
-     * display format is used.
-     *
-     * Accepted values: DISPLAY_FORMAT_UNSPECIFIED, DEFAULT,
-     * LAST_NAME_COMMA_FIRST_NAME, EMAIL
-     *
-     * @param self::DISPLAY_FORMAT_* $displayFormat
-     */
-    public function setDisplayFormat($displayFormat)
+namespace Google\Service\Sheets {
+    class PersonProperties extends \Google\Model
     {
+        /**
+         * Default value, do not use.
+         */
+        public const DISPLAY_FORMAT_DISPLAY_FORMAT_UNSPECIFIED = 'DISPLAY_FORMAT_UNSPECIFIED';
+        /**
+         * Default display format.
+         */
+        public const DISPLAY_FORMAT_DEFAULT = 'DEFAULT';
+        /**
+         * Last name, first name display format.
+         */
+        public const DISPLAY_FORMAT_LAST_NAME_COMMA_FIRST_NAME = 'LAST_NAME_COMMA_FIRST_NAME';
+        /**
+         * Email display format.
+         */
+        public const DISPLAY_FORMAT_EMAIL = 'EMAIL';
+        /**
+         * Optional. The display format of the person chip. If not set, the default
+         * display format is used.
+         *
+         * @var string
+         */
+        public $displayFormat;
+        /**
+         * Required. The email address linked to this person. This field is always
+         * present.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * Optional. The display format of the person chip. If not set, the default
+         * display format is used.
+         *
+         * Accepted values: DISPLAY_FORMAT_UNSPECIFIED, DEFAULT,
+         * LAST_NAME_COMMA_FIRST_NAME, EMAIL
+         *
+         * @param self::DISPLAY_FORMAT_* $displayFormat
+         */
+        public function setDisplayFormat($displayFormat)
+        {
+        }
+        /**
+         * @return self::DISPLAY_FORMAT_*
+         */
+        public function getDisplayFormat()
+        {
+        }
+        /**
+         * Required. The email address linked to this person. This field is always
+         * present.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::DISPLAY_FORMAT_*
+     * Runtime class alias of \Google\Service\Sheets\PersonProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayFormat()
-    {
-    }
-    /**
-     * Required. The email address linked to this person. This field is always
-     * present.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEmail()
+    class Google_Service_Sheets_PersonProperties extends \Google\Service\Sheets\PersonProperties
     {
     }
 }

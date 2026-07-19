@@ -21,30 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudOSLogin\Resource;
-
-/**
- * The "locations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $osloginService = new Google\Service\CloudOSLogin(...);
- *   $locations = $osloginService->projects_locations;
- *  </code>
- */
-class ProjectsLocations extends \Google\Service\Resource
-{
+namespace Google\Service\CloudOSLogin\Resource {
+    use Google\Service\CloudOSLogin\SignSshPublicKeyRequest;
+    use Google\Service\CloudOSLogin\SignSshPublicKeyResponse;
     /**
-     * Signs an SSH public key for a user to authenticate to a virtual machine on
-     * Google Compute Engine. (locations.signSshPublicKey)
-     *
-     * @param string $parent Required. The parent for the signing request. Format:
-     * projects/{project}/locations/{location}
-     * @param SignSshPublicKeyRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SignSshPublicKeyResponse
-     * @throws \Google\Service\Exception
+     * The "locations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $osloginService = new Google\Service\CloudOSLogin(...);
+     *   $locations = $osloginService->projects_locations;
+     *  </code>
      */
-    public function signSshPublicKey($parent, SignSshPublicKeyRequest $postBody, $optParams = [])
+    class ProjectsLocations extends \Google\Service\Resource
+    {
+        /**
+         * Signs an SSH public key for a user to authenticate to a virtual machine on
+         * Google Compute Engine. (locations.signSshPublicKey)
+         *
+         * @param string $parent Required. The parent for the signing request. Format:
+         * projects/{project}/locations/{location}
+         * @param SignSshPublicKeyRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SignSshPublicKeyResponse
+         * @throws \Google\Service\Exception
+         */
+        public function signSshPublicKey($parent, SignSshPublicKeyRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudOSLogin\Resource\ProjectsLocations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudOSLogin_Resource_ProjectsLocations extends \Google\Service\CloudOSLogin\Resource\ProjectsLocations
     {
     }
 }

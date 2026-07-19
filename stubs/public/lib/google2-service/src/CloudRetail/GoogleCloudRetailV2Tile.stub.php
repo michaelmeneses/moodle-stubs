@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2Tile extends \Google\Model
-{
-    protected $productAttributeIntervalType = GoogleCloudRetailV2ProductAttributeInterval::class;
-    protected $productAttributeIntervalDataType = '';
-    protected $productAttributeValueType = GoogleCloudRetailV2ProductAttributeValue::class;
-    protected $productAttributeValueDataType = '';
-    /**
-     * The representative product id for this tile.
-     *
-     * @var string
-     */
-    public $representativeProductId;
-    /**
-     * The product attribute key-numeric interval.
-     *
-     * @param GoogleCloudRetailV2ProductAttributeInterval $productAttributeInterval
-     */
-    public function setProductAttributeInterval(GoogleCloudRetailV2ProductAttributeInterval $productAttributeInterval)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2Tile extends \Google\Model
     {
+        protected $productAttributeIntervalType = GoogleCloudRetailV2ProductAttributeInterval::class;
+        protected $productAttributeIntervalDataType = '';
+        protected $productAttributeValueType = GoogleCloudRetailV2ProductAttributeValue::class;
+        protected $productAttributeValueDataType = '';
+        /**
+         * The representative product id for this tile.
+         *
+         * @var string
+         */
+        public $representativeProductId;
+        /**
+         * The product attribute key-numeric interval.
+         *
+         * @param GoogleCloudRetailV2ProductAttributeInterval $productAttributeInterval
+         */
+        public function setProductAttributeInterval(GoogleCloudRetailV2ProductAttributeInterval $productAttributeInterval)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2ProductAttributeInterval
+         */
+        public function getProductAttributeInterval()
+        {
+        }
+        /**
+         * The product attribute key-value.
+         *
+         * @param GoogleCloudRetailV2ProductAttributeValue $productAttributeValue
+         */
+        public function setProductAttributeValue(GoogleCloudRetailV2ProductAttributeValue $productAttributeValue)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2ProductAttributeValue
+         */
+        public function getProductAttributeValue()
+        {
+        }
+        /**
+         * The representative product id for this tile.
+         *
+         * @param string $representativeProductId
+         */
+        public function setRepresentativeProductId($representativeProductId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRepresentativeProductId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRetailV2ProductAttributeInterval
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2Tile registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProductAttributeInterval()
-    {
-    }
-    /**
-     * The product attribute key-value.
-     *
-     * @param GoogleCloudRetailV2ProductAttributeValue $productAttributeValue
-     */
-    public function setProductAttributeValue(GoogleCloudRetailV2ProductAttributeValue $productAttributeValue)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2ProductAttributeValue
-     */
-    public function getProductAttributeValue()
-    {
-    }
-    /**
-     * The representative product id for this tile.
-     *
-     * @param string $representativeProductId
-     */
-    public function setRepresentativeProductId($representativeProductId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRepresentativeProductId()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2Tile extends \Google\Service\CloudRetail\GoogleCloudRetailV2Tile
     {
     }
 }

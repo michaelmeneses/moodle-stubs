@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Texttospeech;
-
-class SynthesizeLongAudioRequest extends \Google\Model
-{
-    protected $audioConfigType = AudioConfig::class;
-    protected $audioConfigDataType = '';
-    protected $inputType = SynthesisInput::class;
-    protected $inputDataType = '';
-    /**
-     * Required. Specifies a Cloud Storage URI for the synthesis results. Must be
-     * specified in the format: `gs://bucket_name/object_name`, and the bucket
-     * must already exist.
-     *
-     * @var string
-     */
-    public $outputGcsUri;
-    protected $voiceType = VoiceSelectionParams::class;
-    protected $voiceDataType = '';
-    /**
-     * Required. The configuration of the synthesized audio.
-     *
-     * @param AudioConfig $audioConfig
-     */
-    public function setAudioConfig(AudioConfig $audioConfig)
+namespace Google\Service\Texttospeech {
+    class SynthesizeLongAudioRequest extends \Google\Model
     {
+        protected $audioConfigType = AudioConfig::class;
+        protected $audioConfigDataType = '';
+        protected $inputType = SynthesisInput::class;
+        protected $inputDataType = '';
+        /**
+         * Required. Specifies a Cloud Storage URI for the synthesis results. Must be
+         * specified in the format: `gs://bucket_name/object_name`, and the bucket
+         * must already exist.
+         *
+         * @var string
+         */
+        public $outputGcsUri;
+        protected $voiceType = VoiceSelectionParams::class;
+        protected $voiceDataType = '';
+        /**
+         * Required. The configuration of the synthesized audio.
+         *
+         * @param AudioConfig $audioConfig
+         */
+        public function setAudioConfig(AudioConfig $audioConfig)
+        {
+        }
+        /**
+         * @return AudioConfig
+         */
+        public function getAudioConfig()
+        {
+        }
+        /**
+         * Required. The Synthesizer requires either plain text or SSML as input.
+         *
+         * @param SynthesisInput $input
+         */
+        public function setInput(SynthesisInput $input)
+        {
+        }
+        /**
+         * @return SynthesisInput
+         */
+        public function getInput()
+        {
+        }
+        /**
+         * Required. Specifies a Cloud Storage URI for the synthesis results. Must be
+         * specified in the format: `gs://bucket_name/object_name`, and the bucket
+         * must already exist.
+         *
+         * @param string $outputGcsUri
+         */
+        public function setOutputGcsUri($outputGcsUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOutputGcsUri()
+        {
+        }
+        /**
+         * Required. The desired voice of the synthesized audio.
+         *
+         * @param VoiceSelectionParams $voice
+         */
+        public function setVoice(VoiceSelectionParams $voice)
+        {
+        }
+        /**
+         * @return VoiceSelectionParams
+         */
+        public function getVoice()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AudioConfig
+     * Runtime class alias of \Google\Service\Texttospeech\SynthesizeLongAudioRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAudioConfig()
-    {
-    }
-    /**
-     * Required. The Synthesizer requires either plain text or SSML as input.
-     *
-     * @param SynthesisInput $input
-     */
-    public function setInput(SynthesisInput $input)
-    {
-    }
-    /**
-     * @return SynthesisInput
-     */
-    public function getInput()
-    {
-    }
-    /**
-     * Required. Specifies a Cloud Storage URI for the synthesis results. Must be
-     * specified in the format: `gs://bucket_name/object_name`, and the bucket
-     * must already exist.
-     *
-     * @param string $outputGcsUri
-     */
-    public function setOutputGcsUri($outputGcsUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOutputGcsUri()
-    {
-    }
-    /**
-     * Required. The desired voice of the synthesized audio.
-     *
-     * @param VoiceSelectionParams $voice
-     */
-    public function setVoice(VoiceSelectionParams $voice)
-    {
-    }
-    /**
-     * @return VoiceSelectionParams
-     */
-    public function getVoice()
+    class Google_Service_Texttospeech_SynthesizeLongAudioRequest extends \Google\Service\Texttospeech\SynthesizeLongAudioRequest
     {
     }
 }

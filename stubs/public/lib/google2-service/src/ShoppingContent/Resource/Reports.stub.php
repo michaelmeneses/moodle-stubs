@@ -21,30 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent\Resource;
-
-/**
- * The "reports" collection of methods.
- * Typical usage is:
- *  <code>
- *   $contentService = new Google\Service\ShoppingContent(...);
- *   $reports = $contentService->reports;
- *  </code>
- */
-class Reports extends \Google\Service\Resource
-{
+namespace Google\Service\ShoppingContent\Resource {
+    use Google\Service\ShoppingContent\SearchRequest;
+    use Google\Service\ShoppingContent\SearchResponse;
     /**
-     * Retrieves merchant performance metrics matching the search query and
-     * optionally segmented by selected dimensions. (reports.search)
-     *
-     * @param string $merchantId Required. Id of the merchant making the call. Must
-     * be a standalone account or an MCA subaccount.
-     * @param SearchRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SearchResponse
-     * @throws \Google\Service\Exception
+     * The "reports" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $contentService = new Google\Service\ShoppingContent(...);
+     *   $reports = $contentService->reports;
+     *  </code>
      */
-    public function search($merchantId, SearchRequest $postBody, $optParams = [])
+    class Reports extends \Google\Service\Resource
+    {
+        /**
+         * Retrieves merchant performance metrics matching the search query and
+         * optionally segmented by selected dimensions. (reports.search)
+         *
+         * @param string $merchantId Required. Id of the merchant making the call. Must
+         * be a standalone account or an MCA subaccount.
+         * @param SearchRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SearchResponse
+         * @throws \Google\Service\Exception
+         */
+        public function search($merchantId, SearchRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\ShoppingContent\Resource\Reports registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_ShoppingContent_Resource_Reports extends \Google\Service\ShoppingContent\Resource\Reports
     {
     }
 }

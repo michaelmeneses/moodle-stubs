@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling;
-
-class GoogleCloudDatalabelingV1beta1ObjectDetectionMetrics extends \Google\Model
-{
-    protected $prCurveType = GoogleCloudDatalabelingV1beta1PrCurve::class;
-    protected $prCurveDataType = '';
-    /**
-     * Precision-recall curve.
-     *
-     * @param GoogleCloudDatalabelingV1beta1PrCurve $prCurve
-     */
-    public function setPrCurve(GoogleCloudDatalabelingV1beta1PrCurve $prCurve)
+namespace Google\Service\DataLabeling {
+    class GoogleCloudDatalabelingV1beta1ObjectDetectionMetrics extends \Google\Model
     {
+        protected $prCurveType = GoogleCloudDatalabelingV1beta1PrCurve::class;
+        protected $prCurveDataType = '';
+        /**
+         * Precision-recall curve.
+         *
+         * @param GoogleCloudDatalabelingV1beta1PrCurve $prCurve
+         */
+        public function setPrCurve(GoogleCloudDatalabelingV1beta1PrCurve $prCurve)
+        {
+        }
+        /**
+         * @return GoogleCloudDatalabelingV1beta1PrCurve
+         */
+        public function getPrCurve()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDatalabelingV1beta1PrCurve
+     * Runtime class alias of \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ObjectDetectionMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPrCurve()
+    class Google_Service_DataLabeling_GoogleCloudDatalabelingV1beta1ObjectDetectionMetrics extends \Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1ObjectDetectionMetrics
     {
     }
 }

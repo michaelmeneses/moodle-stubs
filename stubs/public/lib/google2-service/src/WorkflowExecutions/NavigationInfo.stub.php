@@ -21,93 +21,102 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkflowExecutions;
-
-class NavigationInfo extends \Google\Collection
-{
-    protected $collection_key = 'children';
-    /**
-     * Step entries that can be reached by "stepping into" e.g. a subworkflow
-     * call.
-     *
-     * @var string[]
-     */
-    public $children;
-    /**
-     * The index of the next step in the current workflow, if any.
-     *
-     * @var string
-     */
-    public $next;
-    /**
-     * The step entry, if any, that can be reached by "stepping out" of the
-     * current workflow being executed.
-     *
-     * @var string
-     */
-    public $parent;
-    /**
-     * The index of the previous step in the current workflow, if any.
-     *
-     * @var string
-     */
-    public $previous;
-    /**
-     * Step entries that can be reached by "stepping into" e.g. a subworkflow
-     * call.
-     *
-     * @param string[] $children
-     */
-    public function setChildren($children)
+namespace Google\Service\WorkflowExecutions {
+    class NavigationInfo extends \Google\Collection
     {
+        protected $collection_key = 'children';
+        /**
+         * Step entries that can be reached by "stepping into" e.g. a subworkflow
+         * call.
+         *
+         * @var string[]
+         */
+        public $children;
+        /**
+         * The index of the next step in the current workflow, if any.
+         *
+         * @var string
+         */
+        public $next;
+        /**
+         * The step entry, if any, that can be reached by "stepping out" of the
+         * current workflow being executed.
+         *
+         * @var string
+         */
+        public $parent;
+        /**
+         * The index of the previous step in the current workflow, if any.
+         *
+         * @var string
+         */
+        public $previous;
+        /**
+         * Step entries that can be reached by "stepping into" e.g. a subworkflow
+         * call.
+         *
+         * @param string[] $children
+         */
+        public function setChildren($children)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getChildren()
+        {
+        }
+        /**
+         * The index of the next step in the current workflow, if any.
+         *
+         * @param string $next
+         */
+        public function setNext($next)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNext()
+        {
+        }
+        /**
+         * The step entry, if any, that can be reached by "stepping out" of the
+         * current workflow being executed.
+         *
+         * @param string $parent
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
+        /**
+         * The index of the previous step in the current workflow, if any.
+         *
+         * @param string $previous
+         */
+        public function setPrevious($previous)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrevious()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\WorkflowExecutions\NavigationInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChildren()
-    {
-    }
-    /**
-     * The index of the next step in the current workflow, if any.
-     *
-     * @param string $next
-     */
-    public function setNext($next)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNext()
-    {
-    }
-    /**
-     * The step entry, if any, that can be reached by "stepping out" of the
-     * current workflow being executed.
-     *
-     * @param string $parent
-     */
-    public function setParent($parent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParent()
-    {
-    }
-    /**
-     * The index of the previous step in the current workflow, if any.
-     *
-     * @param string $previous
-     */
-    public function setPrevious($previous)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrevious()
+    class Google_Service_WorkflowExecutions_NavigationInfo extends \Google\Service\WorkflowExecutions\NavigationInfo
     {
     }
 }

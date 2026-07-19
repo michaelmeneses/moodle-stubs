@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1RubricBasedInstructionFollowingInstance extends \Google\Model
-{
-    /**
-     * Required. Instance specified as a json string. String key-value pairs are
-     * expected in the json_instance to render RubricBasedInstructionFollowing
-     * prompt templates.
-     *
-     * @var string
-     */
-    public $jsonInstance;
-    /**
-     * Required. Instance specified as a json string. String key-value pairs are
-     * expected in the json_instance to render RubricBasedInstructionFollowing
-     * prompt templates.
-     *
-     * @param string $jsonInstance
-     */
-    public function setJsonInstance($jsonInstance)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1RubricBasedInstructionFollowingInstance extends \Google\Model
     {
+        /**
+         * Required. Instance specified as a json string. String key-value pairs are
+         * expected in the json_instance to render RubricBasedInstructionFollowing
+         * prompt templates.
+         *
+         * @var string
+         */
+        public $jsonInstance;
+        /**
+         * Required. Instance specified as a json string. String key-value pairs are
+         * expected in the json_instance to render RubricBasedInstructionFollowing
+         * prompt templates.
+         *
+         * @param string $jsonInstance
+         */
+        public function setJsonInstance($jsonInstance)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getJsonInstance()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1RubricBasedInstructionFollowingInstance registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJsonInstance()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1RubricBasedInstructionFollowingInstance extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1RubricBasedInstructionFollowingInstance
     {
     }
 }

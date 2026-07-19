@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1LookupRuntimeProjectAttachmentResponse extends \Google\Model
-{
-    protected $runtimeProjectAttachmentType = GoogleCloudApihubV1RuntimeProjectAttachment::class;
-    protected $runtimeProjectAttachmentDataType = '';
-    /**
-     * Runtime project attachment for a project if exists, empty otherwise.
-     *
-     * @param GoogleCloudApihubV1RuntimeProjectAttachment $runtimeProjectAttachment
-     */
-    public function setRuntimeProjectAttachment(GoogleCloudApihubV1RuntimeProjectAttachment $runtimeProjectAttachment)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1LookupRuntimeProjectAttachmentResponse extends \Google\Model
     {
+        protected $runtimeProjectAttachmentType = GoogleCloudApihubV1RuntimeProjectAttachment::class;
+        protected $runtimeProjectAttachmentDataType = '';
+        /**
+         * Runtime project attachment for a project if exists, empty otherwise.
+         *
+         * @param GoogleCloudApihubV1RuntimeProjectAttachment $runtimeProjectAttachment
+         */
+        public function setRuntimeProjectAttachment(GoogleCloudApihubV1RuntimeProjectAttachment $runtimeProjectAttachment)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1RuntimeProjectAttachment
+         */
+        public function getRuntimeProjectAttachment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApihubV1RuntimeProjectAttachment
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1LookupRuntimeProjectAttachmentResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRuntimeProjectAttachment()
+    class Google_Service_APIhub_GoogleCloudApihubV1LookupRuntimeProjectAttachmentResponse extends \Google\Service\APIhub\GoogleCloudApihubV1LookupRuntimeProjectAttachmentResponse
     {
     }
 }

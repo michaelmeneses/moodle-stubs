@@ -21,105 +21,114 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PlayIntegrity;
-
-class TokenPayloadExternal extends \Google\Model
-{
-    protected $accountDetailsType = AccountDetails::class;
-    protected $accountDetailsDataType = '';
-    protected $appIntegrityType = AppIntegrity::class;
-    protected $appIntegrityDataType = '';
-    protected $deviceIntegrityType = DeviceIntegrity::class;
-    protected $deviceIntegrityDataType = '';
-    protected $environmentDetailsType = EnvironmentDetails::class;
-    protected $environmentDetailsDataType = '';
-    protected $requestDetailsType = RequestDetails::class;
-    protected $requestDetailsDataType = '';
-    protected $testingDetailsType = TestingDetails::class;
-    protected $testingDetailsDataType = '';
-    /**
-     * Required. Details about the Play Store account.
-     *
-     * @param AccountDetails $accountDetails
-     */
-    public function setAccountDetails(AccountDetails $accountDetails)
+namespace Google\Service\PlayIntegrity {
+    class TokenPayloadExternal extends \Google\Model
     {
+        protected $accountDetailsType = AccountDetails::class;
+        protected $accountDetailsDataType = '';
+        protected $appIntegrityType = AppIntegrity::class;
+        protected $appIntegrityDataType = '';
+        protected $deviceIntegrityType = DeviceIntegrity::class;
+        protected $deviceIntegrityDataType = '';
+        protected $environmentDetailsType = EnvironmentDetails::class;
+        protected $environmentDetailsDataType = '';
+        protected $requestDetailsType = RequestDetails::class;
+        protected $requestDetailsDataType = '';
+        protected $testingDetailsType = TestingDetails::class;
+        protected $testingDetailsDataType = '';
+        /**
+         * Required. Details about the Play Store account.
+         *
+         * @param AccountDetails $accountDetails
+         */
+        public function setAccountDetails(AccountDetails $accountDetails)
+        {
+        }
+        /**
+         * @return AccountDetails
+         */
+        public function getAccountDetails()
+        {
+        }
+        /**
+         * Required. Details about the application integrity.
+         *
+         * @param AppIntegrity $appIntegrity
+         */
+        public function setAppIntegrity(AppIntegrity $appIntegrity)
+        {
+        }
+        /**
+         * @return AppIntegrity
+         */
+        public function getAppIntegrity()
+        {
+        }
+        /**
+         * Required. Details about the device integrity.
+         *
+         * @param DeviceIntegrity $deviceIntegrity
+         */
+        public function setDeviceIntegrity(DeviceIntegrity $deviceIntegrity)
+        {
+        }
+        /**
+         * @return DeviceIntegrity
+         */
+        public function getDeviceIntegrity()
+        {
+        }
+        /**
+         * Details of the environment Play Integrity API runs in.
+         *
+         * @param EnvironmentDetails $environmentDetails
+         */
+        public function setEnvironmentDetails(EnvironmentDetails $environmentDetails)
+        {
+        }
+        /**
+         * @return EnvironmentDetails
+         */
+        public function getEnvironmentDetails()
+        {
+        }
+        /**
+         * Required. Details about the integrity request.
+         *
+         * @param RequestDetails $requestDetails
+         */
+        public function setRequestDetails(RequestDetails $requestDetails)
+        {
+        }
+        /**
+         * @return RequestDetails
+         */
+        public function getRequestDetails()
+        {
+        }
+        /**
+         * Indicates that this payload is generated for testing purposes and contains
+         * any additional data that is linked with testing status.
+         *
+         * @param TestingDetails $testingDetails
+         */
+        public function setTestingDetails(TestingDetails $testingDetails)
+        {
+        }
+        /**
+         * @return TestingDetails
+         */
+        public function getTestingDetails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AccountDetails
+     * Runtime class alias of \Google\Service\PlayIntegrity\TokenPayloadExternal registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountDetails()
-    {
-    }
-    /**
-     * Required. Details about the application integrity.
-     *
-     * @param AppIntegrity $appIntegrity
-     */
-    public function setAppIntegrity(AppIntegrity $appIntegrity)
-    {
-    }
-    /**
-     * @return AppIntegrity
-     */
-    public function getAppIntegrity()
-    {
-    }
-    /**
-     * Required. Details about the device integrity.
-     *
-     * @param DeviceIntegrity $deviceIntegrity
-     */
-    public function setDeviceIntegrity(DeviceIntegrity $deviceIntegrity)
-    {
-    }
-    /**
-     * @return DeviceIntegrity
-     */
-    public function getDeviceIntegrity()
-    {
-    }
-    /**
-     * Details of the environment Play Integrity API runs in.
-     *
-     * @param EnvironmentDetails $environmentDetails
-     */
-    public function setEnvironmentDetails(EnvironmentDetails $environmentDetails)
-    {
-    }
-    /**
-     * @return EnvironmentDetails
-     */
-    public function getEnvironmentDetails()
-    {
-    }
-    /**
-     * Required. Details about the integrity request.
-     *
-     * @param RequestDetails $requestDetails
-     */
-    public function setRequestDetails(RequestDetails $requestDetails)
-    {
-    }
-    /**
-     * @return RequestDetails
-     */
-    public function getRequestDetails()
-    {
-    }
-    /**
-     * Indicates that this payload is generated for testing purposes and contains
-     * any additional data that is linked with testing status.
-     *
-     * @param TestingDetails $testingDetails
-     */
-    public function setTestingDetails(TestingDetails $testingDetails)
-    {
-    }
-    /**
-     * @return TestingDetails
-     */
-    public function getTestingDetails()
+    class Google_Service_PlayIntegrity_TokenPayloadExternal extends \Google\Service\PlayIntegrity\TokenPayloadExternal
     {
     }
 }

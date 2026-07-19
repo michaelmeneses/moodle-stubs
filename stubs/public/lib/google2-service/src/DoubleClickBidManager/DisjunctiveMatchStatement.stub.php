@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DoubleClickBidManager;
-
-class DisjunctiveMatchStatement extends \Google\Collection
-{
-    protected $collection_key = 'eventFilters';
-    protected $eventFiltersType = EventFilter::class;
-    protected $eventFiltersDataType = 'array';
-    /**
-     * @param EventFilter[]
-     */
-    public function setEventFilters($eventFilters)
+namespace Google\Service\DoubleClickBidManager {
+    class DisjunctiveMatchStatement extends \Google\Collection
     {
+        protected $collection_key = 'eventFilters';
+        protected $eventFiltersType = EventFilter::class;
+        protected $eventFiltersDataType = 'array';
+        /**
+         * @param EventFilter[]
+         */
+        public function setEventFilters($eventFilters)
+        {
+        }
+        /**
+         * @return EventFilter[]
+         */
+        public function getEventFilters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EventFilter[]
+     * Runtime class alias of \Google\Service\DoubleClickBidManager\DisjunctiveMatchStatement registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEventFilters()
+    class Google_Service_DoubleClickBidManager_DisjunctiveMatchStatement extends \Google\Service\DoubleClickBidManager\DisjunctiveMatchStatement
     {
     }
 }

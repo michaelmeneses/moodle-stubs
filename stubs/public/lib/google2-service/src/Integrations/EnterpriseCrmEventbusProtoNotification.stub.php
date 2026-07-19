@@ -21,86 +21,95 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoNotification extends \Google\Model
-{
-    protected $buganizerNotificationType = EnterpriseCrmEventbusProtoBuganizerNotification::class;
-    protected $buganizerNotificationDataType = '';
-    protected $emailAddressType = EnterpriseCrmEventbusProtoAddress::class;
-    protected $emailAddressDataType = '';
-    /**
-     * @var string
-     */
-    public $escalatorQueue;
-    /**
-     * @var string
-     */
-    public $pubsubTopic;
-    protected $requestType = EnterpriseCrmEventbusProtoCustomSuspensionRequest::class;
-    protected $requestDataType = '';
-    /**
-     * @param EnterpriseCrmEventbusProtoBuganizerNotification $buganizerNotification
-     */
-    public function setBuganizerNotification(EnterpriseCrmEventbusProtoBuganizerNotification $buganizerNotification)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoNotification extends \Google\Model
     {
+        protected $buganizerNotificationType = EnterpriseCrmEventbusProtoBuganizerNotification::class;
+        protected $buganizerNotificationDataType = '';
+        protected $emailAddressType = EnterpriseCrmEventbusProtoAddress::class;
+        protected $emailAddressDataType = '';
+        /**
+         * @var string
+         */
+        public $escalatorQueue;
+        /**
+         * @var string
+         */
+        public $pubsubTopic;
+        protected $requestType = EnterpriseCrmEventbusProtoCustomSuspensionRequest::class;
+        protected $requestDataType = '';
+        /**
+         * @param EnterpriseCrmEventbusProtoBuganizerNotification $buganizerNotification
+         */
+        public function setBuganizerNotification(EnterpriseCrmEventbusProtoBuganizerNotification $buganizerNotification)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoBuganizerNotification
+         */
+        public function getBuganizerNotification()
+        {
+        }
+        /**
+         * @param EnterpriseCrmEventbusProtoAddress $emailAddress
+         */
+        public function setEmailAddress(EnterpriseCrmEventbusProtoAddress $emailAddress)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoAddress
+         */
+        public function getEmailAddress()
+        {
+        }
+        /**
+         * @param string $escalatorQueue
+         */
+        public function setEscalatorQueue($escalatorQueue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEscalatorQueue()
+        {
+        }
+        /**
+         * @param string $pubsubTopic
+         */
+        public function setPubsubTopic($pubsubTopic)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPubsubTopic()
+        {
+        }
+        /**
+         * If the out-of-the-box email/pubsub notifications are not suitable and
+         * custom logic is required, fire a workflow containing all info needed to
+         * notify users to resume execution.
+         *
+         * @param EnterpriseCrmEventbusProtoCustomSuspensionRequest $request
+         */
+        public function setRequest(EnterpriseCrmEventbusProtoCustomSuspensionRequest $request)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoCustomSuspensionRequest
+         */
+        public function getRequest()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EnterpriseCrmEventbusProtoBuganizerNotification
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoNotification registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBuganizerNotification()
-    {
-    }
-    /**
-     * @param EnterpriseCrmEventbusProtoAddress $emailAddress
-     */
-    public function setEmailAddress(EnterpriseCrmEventbusProtoAddress $emailAddress)
-    {
-    }
-    /**
-     * @return EnterpriseCrmEventbusProtoAddress
-     */
-    public function getEmailAddress()
-    {
-    }
-    /**
-     * @param string $escalatorQueue
-     */
-    public function setEscalatorQueue($escalatorQueue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEscalatorQueue()
-    {
-    }
-    /**
-     * @param string $pubsubTopic
-     */
-    public function setPubsubTopic($pubsubTopic)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPubsubTopic()
-    {
-    }
-    /**
-     * If the out-of-the-box email/pubsub notifications are not suitable and
-     * custom logic is required, fire a workflow containing all info needed to
-     * notify users to resume execution.
-     *
-     * @param EnterpriseCrmEventbusProtoCustomSuspensionRequest $request
-     */
-    public function setRequest(EnterpriseCrmEventbusProtoCustomSuspensionRequest $request)
-    {
-    }
-    /**
-     * @return EnterpriseCrmEventbusProtoCustomSuspensionRequest
-     */
-    public function getRequest()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoNotification extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoNotification
     {
     }
 }

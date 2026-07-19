@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_quiz\output;
 
+use core\output\named_templatable;
+use mod_quiz\quiz_attempt;
+use renderable;
+use renderer_base;
 /**
  * Display summary information about a list of attempts.
  *

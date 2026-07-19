@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class DirectorySearchResult extends \Google\Model
-{
-    /**
-     * File system path relative to the workspace root.
-     *
-     * @var string
-     */
-    public $path;
-    /**
-     * File system path relative to the workspace root.
-     *
-     * @param string $path
-     */
-    public function setPath($path)
+namespace Google\Service\Dataform {
+    class DirectorySearchResult extends \Google\Model
     {
+        /**
+         * File system path relative to the workspace root.
+         *
+         * @var string
+         */
+        public $path;
+        /**
+         * File system path relative to the workspace root.
+         *
+         * @param string $path
+         */
+        public function setPath($path)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataform\DirectorySearchResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPath()
+    class Google_Service_Dataform_DirectorySearchResult extends \Google\Service\Dataform\DirectorySearchResult
     {
     }
 }

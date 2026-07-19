@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class GoogleCloudSecuritycenterV2VertexAi extends \Google\Collection
-{
-    protected $collection_key = 'pipelines';
-    protected $datasetsType = GoogleCloudSecuritycenterV2Dataset::class;
-    protected $datasetsDataType = 'array';
-    protected $pipelinesType = GoogleCloudSecuritycenterV2Pipeline::class;
-    protected $pipelinesDataType = 'array';
-    /**
-     * Datasets associated with the finding.
-     *
-     * @param GoogleCloudSecuritycenterV2Dataset[] $datasets
-     */
-    public function setDatasets($datasets)
+namespace Google\Service\SecurityCommandCenter {
+    class GoogleCloudSecuritycenterV2VertexAi extends \Google\Collection
     {
+        protected $collection_key = 'pipelines';
+        protected $datasetsType = GoogleCloudSecuritycenterV2Dataset::class;
+        protected $datasetsDataType = 'array';
+        protected $pipelinesType = GoogleCloudSecuritycenterV2Pipeline::class;
+        protected $pipelinesDataType = 'array';
+        /**
+         * Datasets associated with the finding.
+         *
+         * @param GoogleCloudSecuritycenterV2Dataset[] $datasets
+         */
+        public function setDatasets($datasets)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2Dataset[]
+         */
+        public function getDatasets()
+        {
+        }
+        /**
+         * Pipelines associated with the finding.
+         *
+         * @param GoogleCloudSecuritycenterV2Pipeline[] $pipelines
+         */
+        public function setPipelines($pipelines)
+        {
+        }
+        /**
+         * @return GoogleCloudSecuritycenterV2Pipeline[]
+         */
+        public function getPipelines()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudSecuritycenterV2Dataset[]
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2VertexAi registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatasets()
-    {
-    }
-    /**
-     * Pipelines associated with the finding.
-     *
-     * @param GoogleCloudSecuritycenterV2Pipeline[] $pipelines
-     */
-    public function setPipelines($pipelines)
-    {
-    }
-    /**
-     * @return GoogleCloudSecuritycenterV2Pipeline[]
-     */
-    public function getPipelines()
+    class Google_Service_SecurityCommandCenter_GoogleCloudSecuritycenterV2VertexAi extends \Google\Service\SecurityCommandCenter\GoogleCloudSecuritycenterV2VertexAi
     {
     }
 }

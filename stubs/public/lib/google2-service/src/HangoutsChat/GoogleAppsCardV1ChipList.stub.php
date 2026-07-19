@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class GoogleAppsCardV1ChipList extends \Google\Collection
-{
-    /**
-     * Don't use. Unspecified.
-     */
-    public const LAYOUT_LAYOUT_UNSPECIFIED = 'LAYOUT_UNSPECIFIED';
-    /**
-     * Default value. The chip list wraps to the next line if there isn't enough
-     * horizontal space.
-     */
-    public const LAYOUT_WRAPPED = 'WRAPPED';
-    /**
-     * The chips scroll horizontally if they don't fit in the available space.
-     */
-    public const LAYOUT_HORIZONTAL_SCROLLABLE = 'HORIZONTAL_SCROLLABLE';
-    protected $collection_key = 'chips';
-    protected $chipsType = GoogleAppsCardV1Chip::class;
-    protected $chipsDataType = 'array';
-    /**
-     * Specified chip list layout.
-     *
-     * @var string
-     */
-    public $layout;
-    /**
-     * An array of chips.
-     *
-     * @param GoogleAppsCardV1Chip[] $chips
-     */
-    public function setChips($chips)
+namespace Google\Service\HangoutsChat {
+    class GoogleAppsCardV1ChipList extends \Google\Collection
     {
+        /**
+         * Don't use. Unspecified.
+         */
+        public const LAYOUT_LAYOUT_UNSPECIFIED = 'LAYOUT_UNSPECIFIED';
+        /**
+         * Default value. The chip list wraps to the next line if there isn't enough
+         * horizontal space.
+         */
+        public const LAYOUT_WRAPPED = 'WRAPPED';
+        /**
+         * The chips scroll horizontally if they don't fit in the available space.
+         */
+        public const LAYOUT_HORIZONTAL_SCROLLABLE = 'HORIZONTAL_SCROLLABLE';
+        protected $collection_key = 'chips';
+        protected $chipsType = GoogleAppsCardV1Chip::class;
+        protected $chipsDataType = 'array';
+        /**
+         * Specified chip list layout.
+         *
+         * @var string
+         */
+        public $layout;
+        /**
+         * An array of chips.
+         *
+         * @param GoogleAppsCardV1Chip[] $chips
+         */
+        public function setChips($chips)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1Chip[]
+         */
+        public function getChips()
+        {
+        }
+        /**
+         * Specified chip list layout.
+         *
+         * Accepted values: LAYOUT_UNSPECIFIED, WRAPPED, HORIZONTAL_SCROLLABLE
+         *
+         * @param self::LAYOUT_* $layout
+         */
+        public function setLayout($layout)
+        {
+        }
+        /**
+         * @return self::LAYOUT_*
+         */
+        public function getLayout()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAppsCardV1Chip[]
+     * Runtime class alias of \Google\Service\HangoutsChat\GoogleAppsCardV1ChipList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChips()
-    {
-    }
-    /**
-     * Specified chip list layout.
-     *
-     * Accepted values: LAYOUT_UNSPECIFIED, WRAPPED, HORIZONTAL_SCROLLABLE
-     *
-     * @param self::LAYOUT_* $layout
-     */
-    public function setLayout($layout)
-    {
-    }
-    /**
-     * @return self::LAYOUT_*
-     */
-    public function getLayout()
+    class Google_Service_HangoutsChat_GoogleAppsCardV1ChipList extends \Google\Service\HangoutsChat\GoogleAppsCardV1ChipList
     {
     }
 }

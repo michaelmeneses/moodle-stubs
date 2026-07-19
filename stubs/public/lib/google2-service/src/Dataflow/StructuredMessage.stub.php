@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class StructuredMessage extends \Google\Collection
-{
-    protected $collection_key = 'parameters';
-    /**
-     * Identifier for this message type. Used by external systems to
-     * internationalize or personalize message.
-     *
-     * @var string
-     */
-    public $messageKey;
-    /**
-     * Human-readable version of message.
-     *
-     * @var string
-     */
-    public $messageText;
-    protected $parametersType = Parameter::class;
-    protected $parametersDataType = 'array';
-    /**
-     * Identifier for this message type. Used by external systems to
-     * internationalize or personalize message.
-     *
-     * @param string $messageKey
-     */
-    public function setMessageKey($messageKey)
+namespace Google\Service\Dataflow {
+    class StructuredMessage extends \Google\Collection
     {
+        protected $collection_key = 'parameters';
+        /**
+         * Identifier for this message type. Used by external systems to
+         * internationalize or personalize message.
+         *
+         * @var string
+         */
+        public $messageKey;
+        /**
+         * Human-readable version of message.
+         *
+         * @var string
+         */
+        public $messageText;
+        protected $parametersType = Parameter::class;
+        protected $parametersDataType = 'array';
+        /**
+         * Identifier for this message type. Used by external systems to
+         * internationalize or personalize message.
+         *
+         * @param string $messageKey
+         */
+        public function setMessageKey($messageKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessageKey()
+        {
+        }
+        /**
+         * Human-readable version of message.
+         *
+         * @param string $messageText
+         */
+        public function setMessageText($messageText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessageText()
+        {
+        }
+        /**
+         * The structured data associated with this message.
+         *
+         * @param Parameter[] $parameters
+         */
+        public function setParameters($parameters)
+        {
+        }
+        /**
+         * @return Parameter[]
+         */
+        public function getParameters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\StructuredMessage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMessageKey()
-    {
-    }
-    /**
-     * Human-readable version of message.
-     *
-     * @param string $messageText
-     */
-    public function setMessageText($messageText)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessageText()
-    {
-    }
-    /**
-     * The structured data associated with this message.
-     *
-     * @param Parameter[] $parameters
-     */
-    public function setParameters($parameters)
-    {
-    }
-    /**
-     * @return Parameter[]
-     */
-    public function getParameters()
+    class Google_Service_Dataflow_StructuredMessage extends \Google\Service\Dataflow\StructuredMessage
     {
     }
 }

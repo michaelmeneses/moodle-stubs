@@ -21,29 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher\Resource;
-
-/**
- * The "pricing" collection of methods.
- * Typical usage is:
- *  <code>
- *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
- *   $pricing = $androidpublisherService->pricing;
- *  </code>
- */
-class ApplicationsPricing extends \Google\Service\Resource
-{
+namespace Google\Service\AndroidPublisher\Resource {
+    use Google\Service\AndroidPublisher\ConvertRegionPricesRequest;
+    use Google\Service\AndroidPublisher\ConvertRegionPricesResponse;
     /**
-     * Calculates the region prices, using today's exchange rate and country-
-     * specific pricing patterns, based on the price in the request for a set of
-     * regions. (pricing.convertRegionPrices)
-     *
-     * @param string $packageName Required. The app package name.
-     * @param ConvertRegionPricesRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return ConvertRegionPricesResponse
+     * The "pricing" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $androidpublisherService = new Google\Service\AndroidPublisher(...);
+     *   $pricing = $androidpublisherService->pricing;
+     *  </code>
      */
-    public function convertRegionPrices($packageName, ConvertRegionPricesRequest $postBody, $optParams = [])
+    class ApplicationsPricing extends \Google\Service\Resource
+    {
+        /**
+         * Calculates the region prices, using today's exchange rate and country-
+         * specific pricing patterns, based on the price in the request for a set of
+         * regions. (pricing.convertRegionPrices)
+         *
+         * @param string $packageName Required. The app package name.
+         * @param ConvertRegionPricesRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return ConvertRegionPricesResponse
+         */
+        public function convertRegionPrices($packageName, ConvertRegionPricesRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AndroidPublisher\Resource\ApplicationsPricing registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AndroidPublisher_Resource_ApplicationsPricing extends \Google\Service\AndroidPublisher\Resource\ApplicationsPricing
     {
     }
 }

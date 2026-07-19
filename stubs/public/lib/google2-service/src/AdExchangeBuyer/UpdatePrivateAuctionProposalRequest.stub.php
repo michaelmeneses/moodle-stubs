@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class UpdatePrivateAuctionProposalRequest extends \Google\Model
-{
-    public $externalDealId;
-    protected $noteType = MarketplaceNote::class;
-    protected $noteDataType = '';
-    public $proposalRevisionNumber;
-    public $updateAction;
-    public function setExternalDealId($externalDealId)
+namespace Google\Service\AdExchangeBuyer {
+    class UpdatePrivateAuctionProposalRequest extends \Google\Model
     {
+        public $externalDealId;
+        protected $noteType = MarketplaceNote::class;
+        protected $noteDataType = '';
+        public $proposalRevisionNumber;
+        public $updateAction;
+        public function setExternalDealId($externalDealId)
+        {
+        }
+        public function getExternalDealId()
+        {
+        }
+        /**
+         * @param MarketplaceNote
+         */
+        public function setNote(MarketplaceNote $note)
+        {
+        }
+        /**
+         * @return MarketplaceNote
+         */
+        public function getNote()
+        {
+        }
+        public function setProposalRevisionNumber($proposalRevisionNumber)
+        {
+        }
+        public function getProposalRevisionNumber()
+        {
+        }
+        public function setUpdateAction($updateAction)
+        {
+        }
+        public function getUpdateAction()
+        {
+        }
     }
-    public function getExternalDealId()
-    {
-    }
+}
+namespace {
     /**
-     * @param MarketplaceNote
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\UpdatePrivateAuctionProposalRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setNote(MarketplaceNote $note)
-    {
-    }
-    /**
-     * @return MarketplaceNote
-     */
-    public function getNote()
-    {
-    }
-    public function setProposalRevisionNumber($proposalRevisionNumber)
-    {
-    }
-    public function getProposalRevisionNumber()
-    {
-    }
-    public function setUpdateAction($updateAction)
-    {
-    }
-    public function getUpdateAction()
+    class Google_Service_AdExchangeBuyer_UpdatePrivateAuctionProposalRequest extends \Google\Service\AdExchangeBuyer\UpdatePrivateAuctionProposalRequest
     {
     }
 }

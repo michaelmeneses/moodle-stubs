@@ -21,109 +21,118 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceConsumerManagement;
-
-class Endpoint extends \Google\Collection
-{
-    protected $collection_key = 'aliases';
-    /**
-     * Aliases for this endpoint, these will be served by the same UrlMap as the
-     * parent endpoint, and will be provisioned in the GCP stack for the Regional
-     * Endpoints.
-     *
-     * @var string[]
-     */
-    public $aliases;
-    /**
-     * Allowing [CORS](https://en.wikipedia.org/wiki/Cross-
-     * origin_resource_sharing), aka cross-domain traffic, would allow the
-     * backends served from this endpoint to receive and respond to HTTP OPTIONS
-     * requests. The response will be used by the browser to determine whether the
-     * subsequent cross-origin request is allowed to proceed.
-     *
-     * @var bool
-     */
-    public $allowCors;
-    /**
-     * The canonical name of this endpoint.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The specification of an Internet routable address of API frontend that will
-     * handle requests to this [API
-     * Endpoint](https://cloud.google.com/apis/design/glossary). It should be
-     * either a valid IPv4 address or a fully-qualified domain name. For example,
-     * "8.8.8.8" or "myservice.appspot.com".
-     *
-     * @var string
-     */
-    public $target;
-    /**
-     * Aliases for this endpoint, these will be served by the same UrlMap as the
-     * parent endpoint, and will be provisioned in the GCP stack for the Regional
-     * Endpoints.
-     *
-     * @param string[] $aliases
-     */
-    public function setAliases($aliases)
+namespace Google\Service\ServiceConsumerManagement {
+    class Endpoint extends \Google\Collection
     {
+        protected $collection_key = 'aliases';
+        /**
+         * Aliases for this endpoint, these will be served by the same UrlMap as the
+         * parent endpoint, and will be provisioned in the GCP stack for the Regional
+         * Endpoints.
+         *
+         * @var string[]
+         */
+        public $aliases;
+        /**
+         * Allowing [CORS](https://en.wikipedia.org/wiki/Cross-
+         * origin_resource_sharing), aka cross-domain traffic, would allow the
+         * backends served from this endpoint to receive and respond to HTTP OPTIONS
+         * requests. The response will be used by the browser to determine whether the
+         * subsequent cross-origin request is allowed to proceed.
+         *
+         * @var bool
+         */
+        public $allowCors;
+        /**
+         * The canonical name of this endpoint.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The specification of an Internet routable address of API frontend that will
+         * handle requests to this [API
+         * Endpoint](https://cloud.google.com/apis/design/glossary). It should be
+         * either a valid IPv4 address or a fully-qualified domain name. For example,
+         * "8.8.8.8" or "myservice.appspot.com".
+         *
+         * @var string
+         */
+        public $target;
+        /**
+         * Aliases for this endpoint, these will be served by the same UrlMap as the
+         * parent endpoint, and will be provisioned in the GCP stack for the Regional
+         * Endpoints.
+         *
+         * @param string[] $aliases
+         */
+        public function setAliases($aliases)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAliases()
+        {
+        }
+        /**
+         * Allowing [CORS](https://en.wikipedia.org/wiki/Cross-
+         * origin_resource_sharing), aka cross-domain traffic, would allow the
+         * backends served from this endpoint to receive and respond to HTTP OPTIONS
+         * requests. The response will be used by the browser to determine whether the
+         * subsequent cross-origin request is allowed to proceed.
+         *
+         * @param bool $allowCors
+         */
+        public function setAllowCors($allowCors)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllowCors()
+        {
+        }
+        /**
+         * The canonical name of this endpoint.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The specification of an Internet routable address of API frontend that will
+         * handle requests to this [API
+         * Endpoint](https://cloud.google.com/apis/design/glossary). It should be
+         * either a valid IPv4 address or a fully-qualified domain name. For example,
+         * "8.8.8.8" or "myservice.appspot.com".
+         *
+         * @param string $target
+         */
+        public function setTarget($target)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTarget()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ServiceConsumerManagement\Endpoint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAliases()
-    {
-    }
-    /**
-     * Allowing [CORS](https://en.wikipedia.org/wiki/Cross-
-     * origin_resource_sharing), aka cross-domain traffic, would allow the
-     * backends served from this endpoint to receive and respond to HTTP OPTIONS
-     * requests. The response will be used by the browser to determine whether the
-     * subsequent cross-origin request is allowed to proceed.
-     *
-     * @param bool $allowCors
-     */
-    public function setAllowCors($allowCors)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getAllowCors()
-    {
-    }
-    /**
-     * The canonical name of this endpoint.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The specification of an Internet routable address of API frontend that will
-     * handle requests to this [API
-     * Endpoint](https://cloud.google.com/apis/design/glossary). It should be
-     * either a valid IPv4 address or a fully-qualified domain name. For example,
-     * "8.8.8.8" or "myservice.appspot.com".
-     *
-     * @param string $target
-     */
-    public function setTarget($target)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTarget()
+    class Google_Service_ServiceConsumerManagement_Endpoint extends \Google\Service\ServiceConsumerManagement\Endpoint
     {
     }
 }

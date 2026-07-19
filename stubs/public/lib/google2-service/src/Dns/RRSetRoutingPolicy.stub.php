@@ -21,92 +21,101 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dns;
-
-class RRSetRoutingPolicy extends \Google\Model
-{
-    protected $geoType = RRSetRoutingPolicyGeoPolicy::class;
-    protected $geoDataType = '';
-    /**
-     * The fully qualified URL of the HealthCheck to use for this
-     * RRSetRoutingPolicy. Format this URL like `https://www.googleapis.com/comput
-     * e/v1/projects/{project}/global/healthChecks/{healthCheck}`.
-     * https://cloud.google.com/compute/docs/reference/rest/v1/healthChecks
-     *
-     * @var string
-     */
-    public $healthCheck;
-    /**
-     * @var string
-     */
-    public $kind;
-    protected $primaryBackupType = RRSetRoutingPolicyPrimaryBackupPolicy::class;
-    protected $primaryBackupDataType = '';
-    protected $wrrType = RRSetRoutingPolicyWrrPolicy::class;
-    protected $wrrDataType = '';
-    /**
-     * @param RRSetRoutingPolicyGeoPolicy $geo
-     */
-    public function setGeo(RRSetRoutingPolicyGeoPolicy $geo)
+namespace Google\Service\Dns {
+    class RRSetRoutingPolicy extends \Google\Model
     {
+        protected $geoType = RRSetRoutingPolicyGeoPolicy::class;
+        protected $geoDataType = '';
+        /**
+         * The fully qualified URL of the HealthCheck to use for this
+         * RRSetRoutingPolicy. Format this URL like `https://www.googleapis.com/comput
+         * e/v1/projects/{project}/global/healthChecks/{healthCheck}`.
+         * https://cloud.google.com/compute/docs/reference/rest/v1/healthChecks
+         *
+         * @var string
+         */
+        public $healthCheck;
+        /**
+         * @var string
+         */
+        public $kind;
+        protected $primaryBackupType = RRSetRoutingPolicyPrimaryBackupPolicy::class;
+        protected $primaryBackupDataType = '';
+        protected $wrrType = RRSetRoutingPolicyWrrPolicy::class;
+        protected $wrrDataType = '';
+        /**
+         * @param RRSetRoutingPolicyGeoPolicy $geo
+         */
+        public function setGeo(RRSetRoutingPolicyGeoPolicy $geo)
+        {
+        }
+        /**
+         * @return RRSetRoutingPolicyGeoPolicy
+         */
+        public function getGeo()
+        {
+        }
+        /**
+         * The fully qualified URL of the HealthCheck to use for this
+         * RRSetRoutingPolicy. Format this URL like `https://www.googleapis.com/comput
+         * e/v1/projects/{project}/global/healthChecks/{healthCheck}`.
+         * https://cloud.google.com/compute/docs/reference/rest/v1/healthChecks
+         *
+         * @param string $healthCheck
+         */
+        public function setHealthCheck($healthCheck)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHealthCheck()
+        {
+        }
+        /**
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param RRSetRoutingPolicyPrimaryBackupPolicy $primaryBackup
+         */
+        public function setPrimaryBackup(RRSetRoutingPolicyPrimaryBackupPolicy $primaryBackup)
+        {
+        }
+        /**
+         * @return RRSetRoutingPolicyPrimaryBackupPolicy
+         */
+        public function getPrimaryBackup()
+        {
+        }
+        /**
+         * @param RRSetRoutingPolicyWrrPolicy $wrr
+         */
+        public function setWrr(RRSetRoutingPolicyWrrPolicy $wrr)
+        {
+        }
+        /**
+         * @return RRSetRoutingPolicyWrrPolicy
+         */
+        public function getWrr()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RRSetRoutingPolicyGeoPolicy
+     * Runtime class alias of \Google\Service\Dns\RRSetRoutingPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGeo()
-    {
-    }
-    /**
-     * The fully qualified URL of the HealthCheck to use for this
-     * RRSetRoutingPolicy. Format this URL like `https://www.googleapis.com/comput
-     * e/v1/projects/{project}/global/healthChecks/{healthCheck}`.
-     * https://cloud.google.com/compute/docs/reference/rest/v1/healthChecks
-     *
-     * @param string $healthCheck
-     */
-    public function setHealthCheck($healthCheck)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHealthCheck()
-    {
-    }
-    /**
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * @param RRSetRoutingPolicyPrimaryBackupPolicy $primaryBackup
-     */
-    public function setPrimaryBackup(RRSetRoutingPolicyPrimaryBackupPolicy $primaryBackup)
-    {
-    }
-    /**
-     * @return RRSetRoutingPolicyPrimaryBackupPolicy
-     */
-    public function getPrimaryBackup()
-    {
-    }
-    /**
-     * @param RRSetRoutingPolicyWrrPolicy $wrr
-     */
-    public function setWrr(RRSetRoutingPolicyWrrPolicy $wrr)
-    {
-    }
-    /**
-     * @return RRSetRoutingPolicyWrrPolicy
-     */
-    public function getWrr()
+    class Google_Service_Dns_RRSetRoutingPolicy extends \Google\Service\Dns\RRSetRoutingPolicy
     {
     }
 }

@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1DnsZonePeeringConfig extends \Google\Model
-{
-    /**
-     * Required. The VPC network where the records for that private DNS zone's
-     * namespace are available. Apigee will be performing DNS peering with this
-     * VPC network.
-     *
-     * @var string
-     */
-    public $targetNetworkId;
-    /**
-     * Required. The ID of the project that contains the producer VPC network.
-     *
-     * @var string
-     */
-    public $targetProjectId;
-    /**
-     * Required. The VPC network where the records for that private DNS zone's
-     * namespace are available. Apigee will be performing DNS peering with this
-     * VPC network.
-     *
-     * @param string $targetNetworkId
-     */
-    public function setTargetNetworkId($targetNetworkId)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1DnsZonePeeringConfig extends \Google\Model
     {
+        /**
+         * Required. The VPC network where the records for that private DNS zone's
+         * namespace are available. Apigee will be performing DNS peering with this
+         * VPC network.
+         *
+         * @var string
+         */
+        public $targetNetworkId;
+        /**
+         * Required. The ID of the project that contains the producer VPC network.
+         *
+         * @var string
+         */
+        public $targetProjectId;
+        /**
+         * Required. The VPC network where the records for that private DNS zone's
+         * namespace are available. Apigee will be performing DNS peering with this
+         * VPC network.
+         *
+         * @param string $targetNetworkId
+         */
+        public function setTargetNetworkId($targetNetworkId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetNetworkId()
+        {
+        }
+        /**
+         * Required. The ID of the project that contains the producer VPC network.
+         *
+         * @param string $targetProjectId
+         */
+        public function setTargetProjectId($targetProjectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTargetProjectId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1DnsZonePeeringConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTargetNetworkId()
-    {
-    }
-    /**
-     * Required. The ID of the project that contains the producer VPC network.
-     *
-     * @param string $targetProjectId
-     */
-    public function setTargetProjectId($targetProjectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTargetProjectId()
+    class Google_Service_Apigee_GoogleCloudApigeeV1DnsZonePeeringConfig extends \Google\Service\Apigee\GoogleCloudApigeeV1DnsZonePeeringConfig
     {
     }
 }

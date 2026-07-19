@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1DataQualityRuleRowConditionExpectation extends \Google\Model
-{
-    /**
-     * Optional. The SQL expression.
-     *
-     * @var string
-     */
-    public $sqlExpression;
-    /**
-     * Optional. The SQL expression.
-     *
-     * @param string $sqlExpression
-     */
-    public function setSqlExpression($sqlExpression)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1DataQualityRuleRowConditionExpectation extends \Google\Model
     {
+        /**
+         * Optional. The SQL expression.
+         *
+         * @var string
+         */
+        public $sqlExpression;
+        /**
+         * Optional. The SQL expression.
+         *
+         * @param string $sqlExpression
+         */
+        public function setSqlExpression($sqlExpression)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSqlExpression()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataQualityRuleRowConditionExpectation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSqlExpression()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1DataQualityRuleRowConditionExpectation extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1DataQualityRuleRowConditionExpectation
     {
     }
 }

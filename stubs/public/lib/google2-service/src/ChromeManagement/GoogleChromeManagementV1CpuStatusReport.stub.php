@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1CpuStatusReport extends \Google\Collection
-{
-    protected $collection_key = 'cpuTemperatureInfo';
-    protected $cpuTemperatureInfoType = GoogleChromeManagementV1CpuTemperatureInfo::class;
-    protected $cpuTemperatureInfoDataType = 'array';
-    /**
-     * Output only. Sample of CPU utilization (0-100 percent).
-     *
-     * @var int
-     */
-    public $cpuUtilizationPct;
-    /**
-     * Output only. The timestamp in milliseconds representing time at which this
-     * report was sampled.
-     *
-     * @var string
-     */
-    public $reportTime;
-    /**
-     * Output only. Frequency the report is sampled.
-     *
-     * @var string
-     */
-    public $sampleFrequency;
-    /**
-     * Output only. CPU temperature sample info per CPU core in Celsius
-     *
-     * @param GoogleChromeManagementV1CpuTemperatureInfo[] $cpuTemperatureInfo
-     */
-    public function setCpuTemperatureInfo($cpuTemperatureInfo)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1CpuStatusReport extends \Google\Collection
     {
+        protected $collection_key = 'cpuTemperatureInfo';
+        protected $cpuTemperatureInfoType = GoogleChromeManagementV1CpuTemperatureInfo::class;
+        protected $cpuTemperatureInfoDataType = 'array';
+        /**
+         * Output only. Sample of CPU utilization (0-100 percent).
+         *
+         * @var int
+         */
+        public $cpuUtilizationPct;
+        /**
+         * Output only. The timestamp in milliseconds representing time at which this
+         * report was sampled.
+         *
+         * @var string
+         */
+        public $reportTime;
+        /**
+         * Output only. Frequency the report is sampled.
+         *
+         * @var string
+         */
+        public $sampleFrequency;
+        /**
+         * Output only. CPU temperature sample info per CPU core in Celsius
+         *
+         * @param GoogleChromeManagementV1CpuTemperatureInfo[] $cpuTemperatureInfo
+         */
+        public function setCpuTemperatureInfo($cpuTemperatureInfo)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementV1CpuTemperatureInfo[]
+         */
+        public function getCpuTemperatureInfo()
+        {
+        }
+        /**
+         * Output only. Sample of CPU utilization (0-100 percent).
+         *
+         * @param int $cpuUtilizationPct
+         */
+        public function setCpuUtilizationPct($cpuUtilizationPct)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getCpuUtilizationPct()
+        {
+        }
+        /**
+         * Output only. The timestamp in milliseconds representing time at which this
+         * report was sampled.
+         *
+         * @param string $reportTime
+         */
+        public function setReportTime($reportTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReportTime()
+        {
+        }
+        /**
+         * Output only. Frequency the report is sampled.
+         *
+         * @param string $sampleFrequency
+         */
+        public function setSampleFrequency($sampleFrequency)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSampleFrequency()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChromeManagementV1CpuTemperatureInfo[]
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1CpuStatusReport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCpuTemperatureInfo()
-    {
-    }
-    /**
-     * Output only. Sample of CPU utilization (0-100 percent).
-     *
-     * @param int $cpuUtilizationPct
-     */
-    public function setCpuUtilizationPct($cpuUtilizationPct)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getCpuUtilizationPct()
-    {
-    }
-    /**
-     * Output only. The timestamp in milliseconds representing time at which this
-     * report was sampled.
-     *
-     * @param string $reportTime
-     */
-    public function setReportTime($reportTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReportTime()
-    {
-    }
-    /**
-     * Output only. Frequency the report is sampled.
-     *
-     * @param string $sampleFrequency
-     */
-    public function setSampleFrequency($sampleFrequency)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSampleFrequency()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1CpuStatusReport extends \Google\Service\ChromeManagement\GoogleChromeManagementV1CpuStatusReport
     {
     }
 }

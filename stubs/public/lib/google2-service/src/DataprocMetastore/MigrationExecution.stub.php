@@ -21,118 +21,127 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataprocMetastore;
-
-class MigrationExecution extends \Google\Model
-{
-    protected $cloudSqlMigrationConfigType = CloudSQLMigrationConfig::class;
-    protected $cloudSqlMigrationConfigDataType = '';
-    /**
-     * @var string
-     */
-    public $createTime;
-    /**
-     * @var string
-     */
-    public $endTime;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $phase;
-    /**
-     * @var string
-     */
-    public $state;
-    /**
-     * @var string
-     */
-    public $stateMessage;
-    /**
-     * @param CloudSQLMigrationConfig
-     */
-    public function setCloudSqlMigrationConfig(CloudSQLMigrationConfig $cloudSqlMigrationConfig)
+namespace Google\Service\DataprocMetastore {
+    class MigrationExecution extends \Google\Model
     {
+        protected $cloudSqlMigrationConfigType = CloudSQLMigrationConfig::class;
+        protected $cloudSqlMigrationConfigDataType = '';
+        /**
+         * @var string
+         */
+        public $createTime;
+        /**
+         * @var string
+         */
+        public $endTime;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $phase;
+        /**
+         * @var string
+         */
+        public $state;
+        /**
+         * @var string
+         */
+        public $stateMessage;
+        /**
+         * @param CloudSQLMigrationConfig
+         */
+        public function setCloudSqlMigrationConfig(CloudSQLMigrationConfig $cloudSqlMigrationConfig)
+        {
+        }
+        /**
+         * @return CloudSQLMigrationConfig
+         */
+        public function getCloudSqlMigrationConfig()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPhase($phase)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhase()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStateMessage($stateMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStateMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloudSQLMigrationConfig
+     * Runtime class alias of \Google\Service\DataprocMetastore\MigrationExecution registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudSqlMigrationConfig()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPhase($phase)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhase()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStateMessage($stateMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStateMessage()
+    class Google_Service_DataprocMetastore_MigrationExecution extends \Google\Service\DataprocMetastore\MigrationExecution
     {
     }
 }

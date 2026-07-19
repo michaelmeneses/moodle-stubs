@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2CloudStorageResourceReference extends \Google\Model
-{
-    /**
-     * Required. The bucket to scan.
-     *
-     * @var string
-     */
-    public $bucketName;
-    /**
-     * Required. If within a project-level config, then this must match the
-     * config's project id.
-     *
-     * @var string
-     */
-    public $projectId;
-    /**
-     * Required. The bucket to scan.
-     *
-     * @param string $bucketName
-     */
-    public function setBucketName($bucketName)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2CloudStorageResourceReference extends \Google\Model
     {
+        /**
+         * Required. The bucket to scan.
+         *
+         * @var string
+         */
+        public $bucketName;
+        /**
+         * Required. If within a project-level config, then this must match the
+         * config's project id.
+         *
+         * @var string
+         */
+        public $projectId;
+        /**
+         * Required. The bucket to scan.
+         *
+         * @param string $bucketName
+         */
+        public function setBucketName($bucketName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBucketName()
+        {
+        }
+        /**
+         * Required. If within a project-level config, then this must match the
+         * config's project id.
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2CloudStorageResourceReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBucketName()
-    {
-    }
-    /**
-     * Required. If within a project-level config, then this must match the
-     * config's project id.
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
+    class Google_Service_DLP_GooglePrivacyDlpV2CloudStorageResourceReference extends \Google\Service\DLP\GooglePrivacyDlpV2CloudStorageResourceReference
     {
     }
 }

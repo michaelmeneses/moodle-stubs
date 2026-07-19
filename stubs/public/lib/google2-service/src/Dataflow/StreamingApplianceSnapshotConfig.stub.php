@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class StreamingApplianceSnapshotConfig extends \Google\Model
-{
-    /**
-     * Indicates which endpoint is used to import appliance state.
-     *
-     * @var string
-     */
-    public $importStateEndpoint;
-    /**
-     * If set, indicates the snapshot id for the snapshot being performed.
-     *
-     * @var string
-     */
-    public $snapshotId;
-    /**
-     * Indicates which endpoint is used to import appliance state.
-     *
-     * @param string $importStateEndpoint
-     */
-    public function setImportStateEndpoint($importStateEndpoint)
+namespace Google\Service\Dataflow {
+    class StreamingApplianceSnapshotConfig extends \Google\Model
     {
+        /**
+         * Indicates which endpoint is used to import appliance state.
+         *
+         * @var string
+         */
+        public $importStateEndpoint;
+        /**
+         * If set, indicates the snapshot id for the snapshot being performed.
+         *
+         * @var string
+         */
+        public $snapshotId;
+        /**
+         * Indicates which endpoint is used to import appliance state.
+         *
+         * @param string $importStateEndpoint
+         */
+        public function setImportStateEndpoint($importStateEndpoint)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImportStateEndpoint()
+        {
+        }
+        /**
+         * If set, indicates the snapshot id for the snapshot being performed.
+         *
+         * @param string $snapshotId
+         */
+        public function setSnapshotId($snapshotId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSnapshotId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\StreamingApplianceSnapshotConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImportStateEndpoint()
-    {
-    }
-    /**
-     * If set, indicates the snapshot id for the snapshot being performed.
-     *
-     * @param string $snapshotId
-     */
-    public function setSnapshotId($snapshotId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSnapshotId()
+    class Google_Service_Dataflow_StreamingApplianceSnapshotConfig extends \Google\Service\Dataflow\StreamingApplianceSnapshotConfig
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class DisksResizeRequest extends \Google\Model
-{
-    /**
-     * The new size of the persistent disk, which is specified in GB.
-     *
-     * @var string
-     */
-    public $sizeGb;
-    /**
-     * The new size of the persistent disk, which is specified in GB.
-     *
-     * @param string $sizeGb
-     */
-    public function setSizeGb($sizeGb)
+namespace Google\Service\Compute {
+    class DisksResizeRequest extends \Google\Model
     {
+        /**
+         * The new size of the persistent disk, which is specified in GB.
+         *
+         * @var string
+         */
+        public $sizeGb;
+        /**
+         * The new size of the persistent disk, which is specified in GB.
+         *
+         * @param string $sizeGb
+         */
+        public function setSizeGb($sizeGb)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSizeGb()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\DisksResizeRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSizeGb()
+    class Google_Service_Compute_DisksResizeRequest extends \Google\Service\Compute\DisksResizeRequest
     {
     }
 }

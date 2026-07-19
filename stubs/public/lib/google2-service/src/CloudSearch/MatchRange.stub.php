@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class MatchRange extends \Google\Model
-{
-    /**
-     * End of the match in the snippet.
-     *
-     * @var int
-     */
-    public $end;
-    /**
-     * Starting position of the match in the snippet.
-     *
-     * @var int
-     */
-    public $start;
-    /**
-     * End of the match in the snippet.
-     *
-     * @param int $end
-     */
-    public function setEnd($end)
+namespace Google\Service\CloudSearch {
+    class MatchRange extends \Google\Model
     {
+        /**
+         * End of the match in the snippet.
+         *
+         * @var int
+         */
+        public $end;
+        /**
+         * Starting position of the match in the snippet.
+         *
+         * @var int
+         */
+        public $start;
+        /**
+         * End of the match in the snippet.
+         *
+         * @param int $end
+         */
+        public function setEnd($end)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getEnd()
+        {
+        }
+        /**
+         * Starting position of the match in the snippet.
+         *
+         * @param int $start
+         */
+        public function setStart($start)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStart()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudSearch\MatchRange registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnd()
-    {
-    }
-    /**
-     * Starting position of the match in the snippet.
-     *
-     * @param int $start
-     */
-    public function setStart($start)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStart()
+    class Google_Service_CloudSearch_MatchRange extends \Google\Service\CloudSearch\MatchRange
     {
     }
 }

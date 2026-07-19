@@ -21,128 +21,137 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class GoogleAppsCardV1CardHeader extends \Google\Model
-{
-    /**
-     * Default value. Applies a square mask to the image. For example, a 4x3 image
-     * becomes 3x3.
-     */
-    public const IMAGE_TYPE_SQUARE = 'SQUARE';
-    /**
-     * Applies a circular mask to the image. For example, a 4x3 image becomes a
-     * circle with a diameter of 3.
-     */
-    public const IMAGE_TYPE_CIRCLE = 'CIRCLE';
-    /**
-     * The alternative text of this image that's used for accessibility.
-     *
-     * @var string
-     */
-    public $imageAltText;
-    /**
-     * The shape used to crop the image. [Google Workspace add-ons and Chat
-     * apps](https://developers.google.com/workspace/extend):
-     *
-     * @var string
-     */
-    public $imageType;
-    /**
-     * The HTTPS URL of the image in the card header.
-     *
-     * @var string
-     */
-    public $imageUrl;
-    /**
-     * The subtitle of the card header. If specified, appears on its own line
-     * below the `title`.
-     *
-     * @var string
-     */
-    public $subtitle;
-    /**
-     * Required. The title of the card header. The header has a fixed height: if
-     * both a title and subtitle are specified, each takes up one line. If only
-     * the title is specified, it takes up both lines.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * The alternative text of this image that's used for accessibility.
-     *
-     * @param string $imageAltText
-     */
-    public function setImageAltText($imageAltText)
+namespace Google\Service\HangoutsChat {
+    class GoogleAppsCardV1CardHeader extends \Google\Model
     {
+        /**
+         * Default value. Applies a square mask to the image. For example, a 4x3 image
+         * becomes 3x3.
+         */
+        public const IMAGE_TYPE_SQUARE = 'SQUARE';
+        /**
+         * Applies a circular mask to the image. For example, a 4x3 image becomes a
+         * circle with a diameter of 3.
+         */
+        public const IMAGE_TYPE_CIRCLE = 'CIRCLE';
+        /**
+         * The alternative text of this image that's used for accessibility.
+         *
+         * @var string
+         */
+        public $imageAltText;
+        /**
+         * The shape used to crop the image. [Google Workspace add-ons and Chat
+         * apps](https://developers.google.com/workspace/extend):
+         *
+         * @var string
+         */
+        public $imageType;
+        /**
+         * The HTTPS URL of the image in the card header.
+         *
+         * @var string
+         */
+        public $imageUrl;
+        /**
+         * The subtitle of the card header. If specified, appears on its own line
+         * below the `title`.
+         *
+         * @var string
+         */
+        public $subtitle;
+        /**
+         * Required. The title of the card header. The header has a fixed height: if
+         * both a title and subtitle are specified, each takes up one line. If only
+         * the title is specified, it takes up both lines.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * The alternative text of this image that's used for accessibility.
+         *
+         * @param string $imageAltText
+         */
+        public function setImageAltText($imageAltText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageAltText()
+        {
+        }
+        /**
+         * The shape used to crop the image. [Google Workspace add-ons and Chat
+         * apps](https://developers.google.com/workspace/extend):
+         *
+         * Accepted values: SQUARE, CIRCLE
+         *
+         * @param self::IMAGE_TYPE_* $imageType
+         */
+        public function setImageType($imageType)
+        {
+        }
+        /**
+         * @return self::IMAGE_TYPE_*
+         */
+        public function getImageType()
+        {
+        }
+        /**
+         * The HTTPS URL of the image in the card header.
+         *
+         * @param string $imageUrl
+         */
+        public function setImageUrl($imageUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageUrl()
+        {
+        }
+        /**
+         * The subtitle of the card header. If specified, appears on its own line
+         * below the `title`.
+         *
+         * @param string $subtitle
+         */
+        public function setSubtitle($subtitle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubtitle()
+        {
+        }
+        /**
+         * Required. The title of the card header. The header has a fixed height: if
+         * both a title and subtitle are specified, each takes up one line. If only
+         * the title is specified, it takes up both lines.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\HangoutsChat\GoogleAppsCardV1CardHeader registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getImageAltText()
-    {
-    }
-    /**
-     * The shape used to crop the image. [Google Workspace add-ons and Chat
-     * apps](https://developers.google.com/workspace/extend):
-     *
-     * Accepted values: SQUARE, CIRCLE
-     *
-     * @param self::IMAGE_TYPE_* $imageType
-     */
-    public function setImageType($imageType)
-    {
-    }
-    /**
-     * @return self::IMAGE_TYPE_*
-     */
-    public function getImageType()
-    {
-    }
-    /**
-     * The HTTPS URL of the image in the card header.
-     *
-     * @param string $imageUrl
-     */
-    public function setImageUrl($imageUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImageUrl()
-    {
-    }
-    /**
-     * The subtitle of the card header. If specified, appears on its own line
-     * below the `title`.
-     *
-     * @param string $subtitle
-     */
-    public function setSubtitle($subtitle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubtitle()
-    {
-    }
-    /**
-     * Required. The title of the card header. The header has a fixed height: if
-     * both a title and subtitle are specified, each takes up one line. If only
-     * the title is specified, it takes up both lines.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_HangoutsChat_GoogleAppsCardV1CardHeader extends \Google\Service\HangoutsChat\GoogleAppsCardV1CardHeader
     {
     }
 }

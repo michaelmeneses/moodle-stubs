@@ -21,116 +21,132 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent\Resource;
-
-/**
- * The "shippingsettings" collection of methods.
- * Typical usage is:
- *  <code>
- *   $contentService = new Google\Service\ShoppingContent(...);
- *   $shippingsettings = $contentService->shippingsettings;
- *  </code>
- */
-class Shippingsettings extends \Google\Service\Resource
-{
+namespace Google\Service\ShoppingContent\Resource {
+    use Google\Service\ShoppingContent\ShippingSettings as ShippingSettingsModel;
+    use Google\Service\ShoppingContent\ShippingsettingsCustomBatchRequest;
+    use Google\Service\ShoppingContent\ShippingsettingsCustomBatchResponse;
+    use Google\Service\ShoppingContent\ShippingsettingsGetSupportedCarriersResponse;
+    use Google\Service\ShoppingContent\ShippingsettingsGetSupportedHolidaysResponse;
+    use Google\Service\ShoppingContent\ShippingsettingsGetSupportedPickupServicesResponse;
+    use Google\Service\ShoppingContent\ShippingsettingsListResponse;
     /**
-     * Retrieves and updates the shipping settings of multiple accounts in a single
-     * request. (shippingsettings.custombatch)
-     *
-     * @param ShippingsettingsCustomBatchRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return ShippingsettingsCustomBatchResponse
-     * @throws \Google\Service\Exception
+     * The "shippingsettings" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $contentService = new Google\Service\ShoppingContent(...);
+     *   $shippingsettings = $contentService->shippingsettings;
+     *  </code>
      */
-    public function custombatch(ShippingsettingsCustomBatchRequest $postBody, $optParams = [])
+    class Shippingsettings extends \Google\Service\Resource
     {
+        /**
+         * Retrieves and updates the shipping settings of multiple accounts in a single
+         * request. (shippingsettings.custombatch)
+         *
+         * @param ShippingsettingsCustomBatchRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return ShippingsettingsCustomBatchResponse
+         * @throws \Google\Service\Exception
+         */
+        public function custombatch(ShippingsettingsCustomBatchRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves the shipping settings of the account. (shippingsettings.get)
+         *
+         * @param string $merchantId The ID of the managing account. If this parameter
+         * is not the same as accountId, then this account must be a multi-client
+         * account and `accountId` must be the ID of a sub-account of this account.
+         * @param string $accountId The ID of the account for which to get/update
+         * shipping settings.
+         * @param array $optParams Optional parameters.
+         * @return ShippingSettingsModel
+         * @throws \Google\Service\Exception
+         */
+        public function get($merchantId, $accountId, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves supported carriers and carrier services for an account.
+         * (shippingsettings.getsupportedcarriers)
+         *
+         * @param string $merchantId The ID of the account for which to retrieve the
+         * supported carriers.
+         * @param array $optParams Optional parameters.
+         * @return ShippingsettingsGetSupportedCarriersResponse
+         * @throws \Google\Service\Exception
+         */
+        public function getsupportedcarriers($merchantId, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves supported holidays for an account.
+         * (shippingsettings.getsupportedholidays)
+         *
+         * @param string $merchantId The ID of the account for which to retrieve the
+         * supported holidays.
+         * @param array $optParams Optional parameters.
+         * @return ShippingsettingsGetSupportedHolidaysResponse
+         * @throws \Google\Service\Exception
+         */
+        public function getsupportedholidays($merchantId, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves supported pickup services for an account.
+         * (shippingsettings.getsupportedpickupservices)
+         *
+         * @param string $merchantId The ID of the account for which to retrieve the
+         * supported pickup services.
+         * @param array $optParams Optional parameters.
+         * @return ShippingsettingsGetSupportedPickupServicesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function getsupportedpickupservices($merchantId, $optParams = [])
+        {
+        }
+        /**
+         * Lists the shipping settings of the sub-accounts in your Merchant Center
+         * account. (shippingsettings.listShippingsettings)
+         *
+         * @param string $merchantId The ID of the managing account. This must be a
+         * multi-client account.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string maxResults The maximum number of shipping settings to
+         * return in the response, used for paging.
+         * @opt_param string pageToken The token returned by the previous request.
+         * @return ShippingsettingsListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listShippingsettings($merchantId, $optParams = [])
+        {
+        }
+        /**
+         * Updates the shipping settings of the account. Any fields that are not
+         * provided are deleted from the resource. (shippingsettings.update)
+         *
+         * @param string $merchantId The ID of the managing account. If this parameter
+         * is not the same as accountId, then this account must be a multi-client
+         * account and `accountId` must be the ID of a sub-account of this account.
+         * @param string $accountId The ID of the account for which to get/update
+         * shipping settings.
+         * @param ShippingSettingsModel $postBody
+         * @param array $optParams Optional parameters.
+         * @return ShippingSettingsModel
+         * @throws \Google\Service\Exception
+         */
+        public function update($merchantId, $accountId, ShippingSettingsModel $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Retrieves the shipping settings of the account. (shippingsettings.get)
-     *
-     * @param string $merchantId The ID of the managing account. If this parameter
-     * is not the same as accountId, then this account must be a multi-client
-     * account and `accountId` must be the ID of a sub-account of this account.
-     * @param string $accountId The ID of the account for which to get/update
-     * shipping settings.
-     * @param array $optParams Optional parameters.
-     * @return ShippingSettingsModel
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ShoppingContent\Resource\Shippingsettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($merchantId, $accountId, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves supported carriers and carrier services for an account.
-     * (shippingsettings.getsupportedcarriers)
-     *
-     * @param string $merchantId The ID of the account for which to retrieve the
-     * supported carriers.
-     * @param array $optParams Optional parameters.
-     * @return ShippingsettingsGetSupportedCarriersResponse
-     * @throws \Google\Service\Exception
-     */
-    public function getsupportedcarriers($merchantId, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves supported holidays for an account.
-     * (shippingsettings.getsupportedholidays)
-     *
-     * @param string $merchantId The ID of the account for which to retrieve the
-     * supported holidays.
-     * @param array $optParams Optional parameters.
-     * @return ShippingsettingsGetSupportedHolidaysResponse
-     * @throws \Google\Service\Exception
-     */
-    public function getsupportedholidays($merchantId, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves supported pickup services for an account.
-     * (shippingsettings.getsupportedpickupservices)
-     *
-     * @param string $merchantId The ID of the account for which to retrieve the
-     * supported pickup services.
-     * @param array $optParams Optional parameters.
-     * @return ShippingsettingsGetSupportedPickupServicesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function getsupportedpickupservices($merchantId, $optParams = [])
-    {
-    }
-    /**
-     * Lists the shipping settings of the sub-accounts in your Merchant Center
-     * account. (shippingsettings.listShippingsettings)
-     *
-     * @param string $merchantId The ID of the managing account. This must be a
-     * multi-client account.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string maxResults The maximum number of shipping settings to
-     * return in the response, used for paging.
-     * @opt_param string pageToken The token returned by the previous request.
-     * @return ShippingsettingsListResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listShippingsettings($merchantId, $optParams = [])
-    {
-    }
-    /**
-     * Updates the shipping settings of the account. Any fields that are not
-     * provided are deleted from the resource. (shippingsettings.update)
-     *
-     * @param string $merchantId The ID of the managing account. If this parameter
-     * is not the same as accountId, then this account must be a multi-client
-     * account and `accountId` must be the ID of a sub-account of this account.
-     * @param string $accountId The ID of the account for which to get/update
-     * shipping settings.
-     * @param ShippingSettingsModel $postBody
-     * @param array $optParams Optional parameters.
-     * @return ShippingSettingsModel
-     * @throws \Google\Service\Exception
-     */
-    public function update($merchantId, $accountId, ShippingSettingsModel $postBody, $optParams = [])
+    class Google_Service_ShoppingContent_Resource_Shippingsettings extends \Google\Service\ShoppingContent\Resource\Shippingsettings
     {
     }
 }

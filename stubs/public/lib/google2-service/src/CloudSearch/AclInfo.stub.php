@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AclInfo extends \Google\Model
-{
-    /**
-     * @var int
-     */
-    public $groupsCount;
-    /**
-     * @var string
-     */
-    public $scope;
-    /**
-     * @var int
-     */
-    public $usersCount;
-    /**
-     * @param int
-     */
-    public function setGroupsCount($groupsCount)
+namespace Google\Service\CloudSearch {
+    class AclInfo extends \Google\Model
     {
+        /**
+         * @var int
+         */
+        public $groupsCount;
+        /**
+         * @var string
+         */
+        public $scope;
+        /**
+         * @var int
+         */
+        public $usersCount;
+        /**
+         * @param int
+         */
+        public function setGroupsCount($groupsCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getGroupsCount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setScope($scope)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScope()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setUsersCount($usersCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getUsersCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudSearch\AclInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGroupsCount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setScope($scope)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScope()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setUsersCount($usersCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getUsersCount()
+    class Google_Service_CloudSearch_AclInfo extends \Google\Service\CloudSearch\AclInfo
     {
     }
 }

@@ -21,118 +21,127 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleMarketingPlatformAdminAPI;
-
-class AnalyticsAccountLink extends \Google\Model
-{
-    /**
-     * The link state is unknown.
-     */
-    public const LINK_VERIFICATION_STATE_LINK_VERIFICATION_STATE_UNSPECIFIED = 'LINK_VERIFICATION_STATE_UNSPECIFIED';
-    /**
-     * The link is established.
-     */
-    public const LINK_VERIFICATION_STATE_LINK_VERIFICATION_STATE_VERIFIED = 'LINK_VERIFICATION_STATE_VERIFIED';
-    /**
-     * The link is requested, but hasn't been approved by the product account
-     * admin.
-     */
-    public const LINK_VERIFICATION_STATE_LINK_VERIFICATION_STATE_NOT_VERIFIED = 'LINK_VERIFICATION_STATE_NOT_VERIFIED';
-    /**
-     * Required. Immutable. The resource name of the AnalyticsAdmin API account.
-     * The account ID will be used as the ID of this AnalyticsAccountLink
-     * resource, which will become the final component of the resource name.
-     * Format: analyticsadmin.googleapis.com/accounts/{account_id}
-     *
-     * @var string
-     */
-    public $analyticsAccount;
-    /**
-     * Output only. The human-readable name for the Analytics account.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. The verification state of the link between the Analytics
-     * account and the parent organization.
-     *
-     * @var string
-     */
-    public $linkVerificationState;
-    /**
-     * Identifier. Resource name of this AnalyticsAccountLink. Note the resource
-     * ID is the same as the ID of the Analtyics account. Format:
-     * organizations/{org_id}/analyticsAccountLinks/{analytics_account_link_id}
-     * Example: "organizations/xyz/analyticsAccountLinks/1234"
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. Immutable. The resource name of the AnalyticsAdmin API account.
-     * The account ID will be used as the ID of this AnalyticsAccountLink
-     * resource, which will become the final component of the resource name.
-     * Format: analyticsadmin.googleapis.com/accounts/{account_id}
-     *
-     * @param string $analyticsAccount
-     */
-    public function setAnalyticsAccount($analyticsAccount)
+namespace Google\Service\GoogleMarketingPlatformAdminAPI {
+    class AnalyticsAccountLink extends \Google\Model
     {
+        /**
+         * The link state is unknown.
+         */
+        public const LINK_VERIFICATION_STATE_LINK_VERIFICATION_STATE_UNSPECIFIED = 'LINK_VERIFICATION_STATE_UNSPECIFIED';
+        /**
+         * The link is established.
+         */
+        public const LINK_VERIFICATION_STATE_LINK_VERIFICATION_STATE_VERIFIED = 'LINK_VERIFICATION_STATE_VERIFIED';
+        /**
+         * The link is requested, but hasn't been approved by the product account
+         * admin.
+         */
+        public const LINK_VERIFICATION_STATE_LINK_VERIFICATION_STATE_NOT_VERIFIED = 'LINK_VERIFICATION_STATE_NOT_VERIFIED';
+        /**
+         * Required. Immutable. The resource name of the AnalyticsAdmin API account.
+         * The account ID will be used as the ID of this AnalyticsAccountLink
+         * resource, which will become the final component of the resource name.
+         * Format: analyticsadmin.googleapis.com/accounts/{account_id}
+         *
+         * @var string
+         */
+        public $analyticsAccount;
+        /**
+         * Output only. The human-readable name for the Analytics account.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. The verification state of the link between the Analytics
+         * account and the parent organization.
+         *
+         * @var string
+         */
+        public $linkVerificationState;
+        /**
+         * Identifier. Resource name of this AnalyticsAccountLink. Note the resource
+         * ID is the same as the ID of the Analtyics account. Format:
+         * organizations/{org_id}/analyticsAccountLinks/{analytics_account_link_id}
+         * Example: "organizations/xyz/analyticsAccountLinks/1234"
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. Immutable. The resource name of the AnalyticsAdmin API account.
+         * The account ID will be used as the ID of this AnalyticsAccountLink
+         * resource, which will become the final component of the resource name.
+         * Format: analyticsadmin.googleapis.com/accounts/{account_id}
+         *
+         * @param string $analyticsAccount
+         */
+        public function setAnalyticsAccount($analyticsAccount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnalyticsAccount()
+        {
+        }
+        /**
+         * Output only. The human-readable name for the Analytics account.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. The verification state of the link between the Analytics
+         * account and the parent organization.
+         *
+         * Accepted values: LINK_VERIFICATION_STATE_UNSPECIFIED,
+         * LINK_VERIFICATION_STATE_VERIFIED, LINK_VERIFICATION_STATE_NOT_VERIFIED
+         *
+         * @param self::LINK_VERIFICATION_STATE_* $linkVerificationState
+         */
+        public function setLinkVerificationState($linkVerificationState)
+        {
+        }
+        /**
+         * @return self::LINK_VERIFICATION_STATE_*
+         */
+        public function getLinkVerificationState()
+        {
+        }
+        /**
+         * Identifier. Resource name of this AnalyticsAccountLink. Note the resource
+         * ID is the same as the ID of the Analtyics account. Format:
+         * organizations/{org_id}/analyticsAccountLinks/{analytics_account_link_id}
+         * Example: "organizations/xyz/analyticsAccountLinks/1234"
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GoogleMarketingPlatformAdminAPI\AnalyticsAccountLink registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnalyticsAccount()
-    {
-    }
-    /**
-     * Output only. The human-readable name for the Analytics account.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. The verification state of the link between the Analytics
-     * account and the parent organization.
-     *
-     * Accepted values: LINK_VERIFICATION_STATE_UNSPECIFIED,
-     * LINK_VERIFICATION_STATE_VERIFIED, LINK_VERIFICATION_STATE_NOT_VERIFIED
-     *
-     * @param self::LINK_VERIFICATION_STATE_* $linkVerificationState
-     */
-    public function setLinkVerificationState($linkVerificationState)
-    {
-    }
-    /**
-     * @return self::LINK_VERIFICATION_STATE_*
-     */
-    public function getLinkVerificationState()
-    {
-    }
-    /**
-     * Identifier. Resource name of this AnalyticsAccountLink. Note the resource
-     * ID is the same as the ID of the Analtyics account. Format:
-     * organizations/{org_id}/analyticsAccountLinks/{analytics_account_link_id}
-     * Example: "organizations/xyz/analyticsAccountLinks/1234"
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_GoogleMarketingPlatformAdminAPI_AnalyticsAccountLink extends \Google\Service\GoogleMarketingPlatformAdminAPI\AnalyticsAccountLink
     {
     }
 }

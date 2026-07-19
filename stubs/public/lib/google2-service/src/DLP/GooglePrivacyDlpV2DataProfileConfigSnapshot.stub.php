@@ -21,103 +21,112 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2DataProfileConfigSnapshot extends \Google\Model
-{
-    protected $dataProfileJobType = GooglePrivacyDlpV2DataProfileJobConfig::class;
-    protected $dataProfileJobDataType = '';
-    protected $discoveryConfigType = GooglePrivacyDlpV2DiscoveryConfig::class;
-    protected $discoveryConfigDataType = '';
-    protected $inspectConfigType = GooglePrivacyDlpV2InspectConfig::class;
-    protected $inspectConfigDataType = '';
-    /**
-     * Timestamp when the template was modified
-     *
-     * @var string
-     */
-    public $inspectTemplateModifiedTime;
-    /**
-     * Name of the inspection template used to generate this profile
-     *
-     * @var string
-     */
-    public $inspectTemplateName;
-    /**
-     * A copy of the configuration used to generate this profile. This is
-     * deprecated, and the DiscoveryConfig field is preferred moving forward.
-     * DataProfileJobConfig will still be written here for Discovery in BigQuery
-     * for backwards compatibility, but will not be updated with new fields, while
-     * DiscoveryConfig will.
-     *
-     * @deprecated
-     * @param GooglePrivacyDlpV2DataProfileJobConfig $dataProfileJob
-     */
-    public function setDataProfileJob(GooglePrivacyDlpV2DataProfileJobConfig $dataProfileJob)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2DataProfileConfigSnapshot extends \Google\Model
     {
+        protected $dataProfileJobType = GooglePrivacyDlpV2DataProfileJobConfig::class;
+        protected $dataProfileJobDataType = '';
+        protected $discoveryConfigType = GooglePrivacyDlpV2DiscoveryConfig::class;
+        protected $discoveryConfigDataType = '';
+        protected $inspectConfigType = GooglePrivacyDlpV2InspectConfig::class;
+        protected $inspectConfigDataType = '';
+        /**
+         * Timestamp when the template was modified
+         *
+         * @var string
+         */
+        public $inspectTemplateModifiedTime;
+        /**
+         * Name of the inspection template used to generate this profile
+         *
+         * @var string
+         */
+        public $inspectTemplateName;
+        /**
+         * A copy of the configuration used to generate this profile. This is
+         * deprecated, and the DiscoveryConfig field is preferred moving forward.
+         * DataProfileJobConfig will still be written here for Discovery in BigQuery
+         * for backwards compatibility, but will not be updated with new fields, while
+         * DiscoveryConfig will.
+         *
+         * @deprecated
+         * @param GooglePrivacyDlpV2DataProfileJobConfig $dataProfileJob
+         */
+        public function setDataProfileJob(GooglePrivacyDlpV2DataProfileJobConfig $dataProfileJob)
+        {
+        }
+        /**
+         * @deprecated
+         * @return GooglePrivacyDlpV2DataProfileJobConfig
+         */
+        public function getDataProfileJob()
+        {
+        }
+        /**
+         * A copy of the configuration used to generate this profile.
+         *
+         * @param GooglePrivacyDlpV2DiscoveryConfig $discoveryConfig
+         */
+        public function setDiscoveryConfig(GooglePrivacyDlpV2DiscoveryConfig $discoveryConfig)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2DiscoveryConfig
+         */
+        public function getDiscoveryConfig()
+        {
+        }
+        /**
+         * A copy of the inspection config used to generate this profile. This is a
+         * copy of the inspect_template specified in `DataProfileJobConfig`.
+         *
+         * @param GooglePrivacyDlpV2InspectConfig $inspectConfig
+         */
+        public function setInspectConfig(GooglePrivacyDlpV2InspectConfig $inspectConfig)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2InspectConfig
+         */
+        public function getInspectConfig()
+        {
+        }
+        /**
+         * Timestamp when the template was modified
+         *
+         * @param string $inspectTemplateModifiedTime
+         */
+        public function setInspectTemplateModifiedTime($inspectTemplateModifiedTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInspectTemplateModifiedTime()
+        {
+        }
+        /**
+         * Name of the inspection template used to generate this profile
+         *
+         * @param string $inspectTemplateName
+         */
+        public function setInspectTemplateName($inspectTemplateName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInspectTemplateName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return GooglePrivacyDlpV2DataProfileJobConfig
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2DataProfileConfigSnapshot registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataProfileJob()
-    {
-    }
-    /**
-     * A copy of the configuration used to generate this profile.
-     *
-     * @param GooglePrivacyDlpV2DiscoveryConfig $discoveryConfig
-     */
-    public function setDiscoveryConfig(GooglePrivacyDlpV2DiscoveryConfig $discoveryConfig)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2DiscoveryConfig
-     */
-    public function getDiscoveryConfig()
-    {
-    }
-    /**
-     * A copy of the inspection config used to generate this profile. This is a
-     * copy of the inspect_template specified in `DataProfileJobConfig`.
-     *
-     * @param GooglePrivacyDlpV2InspectConfig $inspectConfig
-     */
-    public function setInspectConfig(GooglePrivacyDlpV2InspectConfig $inspectConfig)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2InspectConfig
-     */
-    public function getInspectConfig()
-    {
-    }
-    /**
-     * Timestamp when the template was modified
-     *
-     * @param string $inspectTemplateModifiedTime
-     */
-    public function setInspectTemplateModifiedTime($inspectTemplateModifiedTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInspectTemplateModifiedTime()
-    {
-    }
-    /**
-     * Name of the inspection template used to generate this profile
-     *
-     * @param string $inspectTemplateName
-     */
-    public function setInspectTemplateName($inspectTemplateName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInspectTemplateName()
+    class Google_Service_DLP_GooglePrivacyDlpV2DataProfileConfigSnapshot extends \Google\Service\DLP\GooglePrivacyDlpV2DataProfileConfigSnapshot
     {
     }
 }

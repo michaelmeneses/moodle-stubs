@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleAnalyticsAdmin;
-
-class GoogleAnalyticsAdminV1alphaListMeasurementProtocolSecretsResponse extends \Google\Collection
-{
-    protected $collection_key = 'measurementProtocolSecrets';
-    protected $measurementProtocolSecretsType = GoogleAnalyticsAdminV1alphaMeasurementProtocolSecret::class;
-    protected $measurementProtocolSecretsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @param GoogleAnalyticsAdminV1alphaMeasurementProtocolSecret[]
-     */
-    public function setMeasurementProtocolSecrets($measurementProtocolSecrets)
+namespace Google\Service\GoogleAnalyticsAdmin {
+    class GoogleAnalyticsAdminV1alphaListMeasurementProtocolSecretsResponse extends \Google\Collection
     {
+        protected $collection_key = 'measurementProtocolSecrets';
+        protected $measurementProtocolSecretsType = GoogleAnalyticsAdminV1alphaMeasurementProtocolSecret::class;
+        protected $measurementProtocolSecretsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @param GoogleAnalyticsAdminV1alphaMeasurementProtocolSecret[]
+         */
+        public function setMeasurementProtocolSecrets($measurementProtocolSecrets)
+        {
+        }
+        /**
+         * @return GoogleAnalyticsAdminV1alphaMeasurementProtocolSecret[]
+         */
+        public function getMeasurementProtocolSecrets()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAnalyticsAdminV1alphaMeasurementProtocolSecret[]
+     * Runtime class alias of \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaListMeasurementProtocolSecretsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMeasurementProtocolSecrets()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_GoogleAnalyticsAdmin_GoogleAnalyticsAdminV1alphaListMeasurementProtocolSecretsResponse extends \Google\Service\GoogleAnalyticsAdmin\GoogleAnalyticsAdminV1alphaListMeasurementProtocolSecretsResponse
     {
     }
 }

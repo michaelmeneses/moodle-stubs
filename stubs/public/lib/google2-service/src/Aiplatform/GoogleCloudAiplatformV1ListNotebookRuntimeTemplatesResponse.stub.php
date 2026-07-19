@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ListNotebookRuntimeTemplatesResponse extends \Google\Collection
-{
-    protected $collection_key = 'notebookRuntimeTemplates';
-    /**
-     * A token to retrieve next page of results. Pass to
-     * ListNotebookRuntimeTemplatesRequest.page_token to obtain that page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $notebookRuntimeTemplatesType = GoogleCloudAiplatformV1NotebookRuntimeTemplate::class;
-    protected $notebookRuntimeTemplatesDataType = 'array';
-    /**
-     * A token to retrieve next page of results. Pass to
-     * ListNotebookRuntimeTemplatesRequest.page_token to obtain that page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ListNotebookRuntimeTemplatesResponse extends \Google\Collection
     {
+        protected $collection_key = 'notebookRuntimeTemplates';
+        /**
+         * A token to retrieve next page of results. Pass to
+         * ListNotebookRuntimeTemplatesRequest.page_token to obtain that page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $notebookRuntimeTemplatesType = GoogleCloudAiplatformV1NotebookRuntimeTemplate::class;
+        protected $notebookRuntimeTemplatesDataType = 'array';
+        /**
+         * A token to retrieve next page of results. Pass to
+         * ListNotebookRuntimeTemplatesRequest.page_token to obtain that page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of NotebookRuntimeTemplates in the requested page.
+         *
+         * @param GoogleCloudAiplatformV1NotebookRuntimeTemplate[] $notebookRuntimeTemplates
+         */
+        public function setNotebookRuntimeTemplates($notebookRuntimeTemplates)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1NotebookRuntimeTemplate[]
+         */
+        public function getNotebookRuntimeTemplates()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListNotebookRuntimeTemplatesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of NotebookRuntimeTemplates in the requested page.
-     *
-     * @param GoogleCloudAiplatformV1NotebookRuntimeTemplate[] $notebookRuntimeTemplates
-     */
-    public function setNotebookRuntimeTemplates($notebookRuntimeTemplates)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1NotebookRuntimeTemplate[]
-     */
-    public function getNotebookRuntimeTemplates()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ListNotebookRuntimeTemplatesResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListNotebookRuntimeTemplatesResponse
     {
     }
 }

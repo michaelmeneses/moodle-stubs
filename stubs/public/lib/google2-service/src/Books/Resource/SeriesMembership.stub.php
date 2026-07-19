@@ -21,32 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books\Resource;
-
-/**
- * The "membership" collection of methods.
- * Typical usage is:
- *  <code>
- *   $booksService = new Google\Service\Books(...);
- *   $membership = $booksService->series_membership;
- *  </code>
- */
-class SeriesMembership extends \Google\Service\Resource
-{
+namespace Google\Service\Books\Resource {
+    use Google\Service\Books\Seriesmembership as SeriesmembershipModel;
     /**
-     * Returns Series membership data given the series id. (membership.get)
-     *
-     * @param string $seriesId String that identifies the series
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string page_size Number of maximum results per page to be included
-     * in the response.
-     * @opt_param string page_token The value of the nextToken from the previous
-     * page.
-     * @return SeriesmembershipModel
-     * @throws \Google\Service\Exception
+     * The "membership" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $booksService = new Google\Service\Books(...);
+     *   $membership = $booksService->series_membership;
+     *  </code>
      */
-    public function get($seriesId, $optParams = [])
+    class SeriesMembership extends \Google\Service\Resource
+    {
+        /**
+         * Returns Series membership data given the series id. (membership.get)
+         *
+         * @param string $seriesId String that identifies the series
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string page_size Number of maximum results per page to be included
+         * in the response.
+         * @opt_param string page_token The value of the nextToken from the previous
+         * page.
+         * @return SeriesmembershipModel
+         * @throws \Google\Service\Exception
+         */
+        public function get($seriesId, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Books\Resource\SeriesMembership registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Books_Resource_SeriesMembership extends \Google\Service\Books\Resource\SeriesMembership
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class StreamingSideInputLocation extends \Google\Model
-{
-    /**
-     * Identifies the state family where this side input is stored.
-     *
-     * @var string
-     */
-    public $stateFamily;
-    /**
-     * Identifies the particular side input within the streaming Dataflow job.
-     *
-     * @var string
-     */
-    public $tag;
-    /**
-     * Identifies the state family where this side input is stored.
-     *
-     * @param string $stateFamily
-     */
-    public function setStateFamily($stateFamily)
+namespace Google\Service\Dataflow {
+    class StreamingSideInputLocation extends \Google\Model
     {
+        /**
+         * Identifies the state family where this side input is stored.
+         *
+         * @var string
+         */
+        public $stateFamily;
+        /**
+         * Identifies the particular side input within the streaming Dataflow job.
+         *
+         * @var string
+         */
+        public $tag;
+        /**
+         * Identifies the state family where this side input is stored.
+         *
+         * @param string $stateFamily
+         */
+        public function setStateFamily($stateFamily)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStateFamily()
+        {
+        }
+        /**
+         * Identifies the particular side input within the streaming Dataflow job.
+         *
+         * @param string $tag
+         */
+        public function setTag($tag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTag()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\StreamingSideInputLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStateFamily()
-    {
-    }
-    /**
-     * Identifies the particular side input within the streaming Dataflow job.
-     *
-     * @param string $tag
-     */
-    public function setTag($tag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTag()
+    class Google_Service_Dataflow_StreamingSideInputLocation extends \Google\Service\Dataflow\StreamingSideInputLocation
     {
     }
 }

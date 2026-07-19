@@ -21,81 +21,90 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class BqmlTrainingRun extends \Google\Collection
-{
-    protected $collection_key = 'iterationResults';
-    protected $iterationResultsType = BqmlIterationResult::class;
-    protected $iterationResultsDataType = 'array';
-    /**
-     * Deprecated.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Deprecated.
-     *
-     * @var string
-     */
-    public $state;
-    protected $trainingOptionsType = BqmlTrainingRunTrainingOptions::class;
-    protected $trainingOptionsDataType = '';
-    /**
-     * Deprecated.
-     *
-     * @param BqmlIterationResult[] $iterationResults
-     */
-    public function setIterationResults($iterationResults)
+namespace Google\Service\Bigquery {
+    class BqmlTrainingRun extends \Google\Collection
     {
+        protected $collection_key = 'iterationResults';
+        protected $iterationResultsType = BqmlIterationResult::class;
+        protected $iterationResultsDataType = 'array';
+        /**
+         * Deprecated.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Deprecated.
+         *
+         * @var string
+         */
+        public $state;
+        protected $trainingOptionsType = BqmlTrainingRunTrainingOptions::class;
+        protected $trainingOptionsDataType = '';
+        /**
+         * Deprecated.
+         *
+         * @param BqmlIterationResult[] $iterationResults
+         */
+        public function setIterationResults($iterationResults)
+        {
+        }
+        /**
+         * @return BqmlIterationResult[]
+         */
+        public function getIterationResults()
+        {
+        }
+        /**
+         * Deprecated.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * Deprecated.
+         *
+         * @param string $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Deprecated.
+         *
+         * @param BqmlTrainingRunTrainingOptions $trainingOptions
+         */
+        public function setTrainingOptions(BqmlTrainingRunTrainingOptions $trainingOptions)
+        {
+        }
+        /**
+         * @return BqmlTrainingRunTrainingOptions
+         */
+        public function getTrainingOptions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BqmlIterationResult[]
+     * Runtime class alias of \Google\Service\Bigquery\BqmlTrainingRun registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIterationResults()
-    {
-    }
-    /**
-     * Deprecated.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * Deprecated.
-     *
-     * @param string $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Deprecated.
-     *
-     * @param BqmlTrainingRunTrainingOptions $trainingOptions
-     */
-    public function setTrainingOptions(BqmlTrainingRunTrainingOptions $trainingOptions)
-    {
-    }
-    /**
-     * @return BqmlTrainingRunTrainingOptions
-     */
-    public function getTrainingOptions()
+    class Google_Service_Bigquery_BqmlTrainingRun extends \Google\Service\Bigquery\BqmlTrainingRun
     {
     }
 }

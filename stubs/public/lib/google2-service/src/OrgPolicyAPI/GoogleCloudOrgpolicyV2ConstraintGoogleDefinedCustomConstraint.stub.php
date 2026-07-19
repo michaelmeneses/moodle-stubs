@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OrgPolicyAPI;
-
-class GoogleCloudOrgpolicyV2ConstraintGoogleDefinedCustomConstraint extends \Google\Collection
-{
-    protected $collection_key = 'resourceTypes';
-    /**
-     * @var string
-     */
-    public $actionType;
-    /**
-     * @var string
-     */
-    public $condition;
-    /**
-     * @var string[]
-     */
-    public $methodTypes;
-    /**
-     * @var string[]
-     */
-    public $resourceTypes;
-    /**
-     * @param string
-     */
-    public function setActionType($actionType)
+namespace Google\Service\OrgPolicyAPI {
+    class GoogleCloudOrgpolicyV2ConstraintGoogleDefinedCustomConstraint extends \Google\Collection
     {
+        protected $collection_key = 'resourceTypes';
+        /**
+         * @var string
+         */
+        public $actionType;
+        /**
+         * @var string
+         */
+        public $condition;
+        /**
+         * @var string[]
+         */
+        public $methodTypes;
+        /**
+         * @var string[]
+         */
+        public $resourceTypes;
+        /**
+         * @param string
+         */
+        public function setActionType($actionType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getActionType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCondition($condition)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCondition()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setMethodTypes($methodTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMethodTypes()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setResourceTypes($resourceTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getResourceTypes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OrgPolicyAPI\GoogleCloudOrgpolicyV2ConstraintGoogleDefinedCustomConstraint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActionType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCondition($condition)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCondition()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setMethodTypes($methodTypes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMethodTypes()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setResourceTypes($resourceTypes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getResourceTypes()
+    class Google_Service_OrgPolicyAPI_GoogleCloudOrgpolicyV2ConstraintGoogleDefinedCustomConstraint extends \Google\Service\OrgPolicyAPI\GoogleCloudOrgpolicyV2ConstraintGoogleDefinedCustomConstraint
     {
     }
 }

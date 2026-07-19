@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1DeleteResponse extends \Google\Model
-{
-    /**
-     * Unique error code for the request, if any.
-     *
-     * @var string
-     */
-    public $errorCode;
-    /**
-     * Google Cloud name of deleted resource.
-     *
-     * @var string
-     */
-    public $gcpResource;
-    /**
-     * Description of the operation.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * Unique ID of the request.
-     *
-     * @var string
-     */
-    public $requestId;
-    /**
-     * Status of the operation.
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * Unique error code for the request, if any.
-     *
-     * @param string $errorCode
-     */
-    public function setErrorCode($errorCode)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1DeleteResponse extends \Google\Model
     {
+        /**
+         * Unique error code for the request, if any.
+         *
+         * @var string
+         */
+        public $errorCode;
+        /**
+         * Google Cloud name of deleted resource.
+         *
+         * @var string
+         */
+        public $gcpResource;
+        /**
+         * Description of the operation.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * Unique ID of the request.
+         *
+         * @var string
+         */
+        public $requestId;
+        /**
+         * Status of the operation.
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * Unique error code for the request, if any.
+         *
+         * @param string $errorCode
+         */
+        public function setErrorCode($errorCode)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorCode()
+        {
+        }
+        /**
+         * Google Cloud name of deleted resource.
+         *
+         * @param string $gcpResource
+         */
+        public function setGcpResource($gcpResource)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGcpResource()
+        {
+        }
+        /**
+         * Description of the operation.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * Unique ID of the request.
+         *
+         * @param string $requestId
+         */
+        public function setRequestId($requestId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRequestId()
+        {
+        }
+        /**
+         * Status of the operation.
+         *
+         * @param string $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1DeleteResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorCode()
-    {
-    }
-    /**
-     * Google Cloud name of deleted resource.
-     *
-     * @param string $gcpResource
-     */
-    public function setGcpResource($gcpResource)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGcpResource()
-    {
-    }
-    /**
-     * Description of the operation.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
-    {
-    }
-    /**
-     * Unique ID of the request.
-     *
-     * @param string $requestId
-     */
-    public function setRequestId($requestId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRequestId()
-    {
-    }
-    /**
-     * Status of the operation.
-     *
-     * @param string $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatus()
+    class Google_Service_Apigee_GoogleCloudApigeeV1DeleteResponse extends \Google\Service\Apigee\GoogleCloudApigeeV1DeleteResponse
     {
     }
 }

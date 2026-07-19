@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigateway;
-
-class ApigatewayTestIamPermissionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'permissions';
-    /**
-     * A subset of `TestPermissionsRequest.permissions` that the caller is
-     * allowed.
-     *
-     * @var string[]
-     */
-    public $permissions;
-    /**
-     * A subset of `TestPermissionsRequest.permissions` that the caller is
-     * allowed.
-     *
-     * @param string[] $permissions
-     */
-    public function setPermissions($permissions)
+namespace Google\Service\Apigateway {
+    class ApigatewayTestIamPermissionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'permissions';
+        /**
+         * A subset of `TestPermissionsRequest.permissions` that the caller is
+         * allowed.
+         *
+         * @var string[]
+         */
+        public $permissions;
+        /**
+         * A subset of `TestPermissionsRequest.permissions` that the caller is
+         * allowed.
+         *
+         * @param string[] $permissions
+         */
+        public function setPermissions($permissions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPermissions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Apigateway\ApigatewayTestIamPermissionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPermissions()
+    class Google_Service_Apigateway_ApigatewayTestIamPermissionsResponse extends \Google\Service\Apigateway\ApigatewayTestIamPermissionsResponse
     {
     }
 }

@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1AssistantGroundedContentTextGroundingMetadata extends \Google\Collection
-{
-    protected $collection_key = 'segments';
-    protected $referencesType = GoogleCloudDiscoveryengineV1AssistantGroundedContentTextGroundingMetadataReference::class;
-    protected $referencesDataType = 'array';
-    protected $segmentsType = GoogleCloudDiscoveryengineV1AssistantGroundedContentTextGroundingMetadataSegment::class;
-    protected $segmentsDataType = 'array';
-    /**
-     * References for the grounded text.
-     *
-     * @param GoogleCloudDiscoveryengineV1AssistantGroundedContentTextGroundingMetadataReference[] $references
-     */
-    public function setReferences($references)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1AssistantGroundedContentTextGroundingMetadata extends \Google\Collection
     {
+        protected $collection_key = 'segments';
+        protected $referencesType = GoogleCloudDiscoveryengineV1AssistantGroundedContentTextGroundingMetadataReference::class;
+        protected $referencesDataType = 'array';
+        protected $segmentsType = GoogleCloudDiscoveryengineV1AssistantGroundedContentTextGroundingMetadataSegment::class;
+        protected $segmentsDataType = 'array';
+        /**
+         * References for the grounded text.
+         *
+         * @param GoogleCloudDiscoveryengineV1AssistantGroundedContentTextGroundingMetadataReference[] $references
+         */
+        public function setReferences($references)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1AssistantGroundedContentTextGroundingMetadataReference[]
+         */
+        public function getReferences()
+        {
+        }
+        /**
+         * Grounding information for parts of the text.
+         *
+         * @param GoogleCloudDiscoveryengineV1AssistantGroundedContentTextGroundingMetadataSegment[] $segments
+         */
+        public function setSegments($segments)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1AssistantGroundedContentTextGroundingMetadataSegment[]
+         */
+        public function getSegments()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1AssistantGroundedContentTextGroundingMetadataReference[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AssistantGroundedContentTextGroundingMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReferences()
-    {
-    }
-    /**
-     * Grounding information for parts of the text.
-     *
-     * @param GoogleCloudDiscoveryengineV1AssistantGroundedContentTextGroundingMetadataSegment[] $segments
-     */
-    public function setSegments($segments)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1AssistantGroundedContentTextGroundingMetadataSegment[]
-     */
-    public function getSegments()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1AssistantGroundedContentTextGroundingMetadata extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AssistantGroundedContentTextGroundingMetadata
     {
     }
 }

@@ -21,59 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine\Resource;
-
-/**
- * The "sitemaps" collection of methods.
- * Typical usage is:
- *  <code>
- *   $discoveryengineService = new Google\Service\DiscoveryEngine(...);
- *   $sitemaps = $discoveryengineService->projects_locations_dataStores_siteSearchEngine_sitemaps;
- *  </code>
- */
-class ProjectsLocationsDataStoresSiteSearchEngineSitemaps extends \Google\Service\Resource
-{
+namespace Google\Service\DiscoveryEngine\Resource {
+    use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1FetchSitemapsResponse;
+    use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1Sitemap;
+    use Google\Service\DiscoveryEngine\GoogleLongrunningOperation;
     /**
-     * Creates a Sitemap. (sitemaps.create)
-     *
-     * @param string $parent Required. Parent resource name of the SiteSearchEngine,
-     * such as `projects/locations/collections/dataStores/siteSearchEngine`.
-     * @param GoogleCloudDiscoveryengineV1Sitemap $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * The "sitemaps" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $discoveryengineService = new Google\Service\DiscoveryEngine(...);
+     *   $sitemaps = $discoveryengineService->projects_locations_dataStores_siteSearchEngine_sitemaps;
+     *  </code>
      */
-    public function create($parent, GoogleCloudDiscoveryengineV1Sitemap $postBody, $optParams = [])
+    class ProjectsLocationsDataStoresSiteSearchEngineSitemaps extends \Google\Service\Resource
     {
+        /**
+         * Creates a Sitemap. (sitemaps.create)
+         *
+         * @param string $parent Required. Parent resource name of the SiteSearchEngine,
+         * such as `projects/locations/collections/dataStores/siteSearchEngine`.
+         * @param GoogleCloudDiscoveryengineV1Sitemap $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudDiscoveryengineV1Sitemap $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a Sitemap. (sitemaps.delete)
+         *
+         * @param string $name Required. Full resource name of Sitemap, such as `project
+         * s/{project}/locations/{location}/collections/{collection}/dataStores/{data_st
+         * ore}/siteSearchEngine/sitemaps/{sitemap}`. If the caller does not have
+         * permission to access the Sitemap, regardless of whether or not it exists, a
+         * PERMISSION_DENIED error is returned. If the requested Sitemap does not exist,
+         * a NOT_FOUND error is returned.
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Fetch Sitemaps in a DataStore. (sitemaps.fetch)
+         *
+         * @param string $parent Required. Parent resource name of the SiteSearchEngine,
+         * such as `projects/locations/collections/dataStores/siteSearchEngine`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string matcher.urisMatcher.uris The Sitemap uris.
+         * @return GoogleCloudDiscoveryengineV1FetchSitemapsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function fetch($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a Sitemap. (sitemaps.delete)
-     *
-     * @param string $name Required. Full resource name of Sitemap, such as `project
-     * s/{project}/locations/{location}/collections/{collection}/dataStores/{data_st
-     * ore}/siteSearchEngine/sitemaps/{sitemap}`. If the caller does not have
-     * permission to access the Sitemap, regardless of whether or not it exists, a
-     * PERMISSION_DENIED error is returned. If the requested Sitemap does not exist,
-     * a NOT_FOUND error is returned.
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\DiscoveryEngine\Resource\ProjectsLocationsDataStoresSiteSearchEngineSitemaps registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Fetch Sitemaps in a DataStore. (sitemaps.fetch)
-     *
-     * @param string $parent Required. Parent resource name of the SiteSearchEngine,
-     * such as `projects/locations/collections/dataStores/siteSearchEngine`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string matcher.urisMatcher.uris The Sitemap uris.
-     * @return GoogleCloudDiscoveryengineV1FetchSitemapsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function fetch($parent, $optParams = [])
+    class Google_Service_DiscoveryEngine_Resource_ProjectsLocationsDataStoresSiteSearchEngineSitemaps extends \Google\Service\DiscoveryEngine\Resource\ProjectsLocationsDataStoresSiteSearchEngineSitemaps
     {
     }
 }

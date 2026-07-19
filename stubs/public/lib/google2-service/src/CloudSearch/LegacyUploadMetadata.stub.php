@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class LegacyUploadMetadata extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $legacyUniqueId;
-    protected $uploadMetadataType = UploadMetadata::class;
-    protected $uploadMetadataDataType = '';
-    /**
-     * @param string
-     */
-    public function setLegacyUniqueId($legacyUniqueId)
+namespace Google\Service\CloudSearch {
+    class LegacyUploadMetadata extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $legacyUniqueId;
+        protected $uploadMetadataType = UploadMetadata::class;
+        protected $uploadMetadataDataType = '';
+        /**
+         * @param string
+         */
+        public function setLegacyUniqueId($legacyUniqueId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLegacyUniqueId()
+        {
+        }
+        /**
+         * @param UploadMetadata
+         */
+        public function setUploadMetadata(UploadMetadata $uploadMetadata)
+        {
+        }
+        /**
+         * @return UploadMetadata
+         */
+        public function getUploadMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\LegacyUploadMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLegacyUniqueId()
-    {
-    }
-    /**
-     * @param UploadMetadata
-     */
-    public function setUploadMetadata(UploadMetadata $uploadMetadata)
-    {
-    }
-    /**
-     * @return UploadMetadata
-     */
-    public function getUploadMetadata()
+    class Google_Service_CloudSearch_LegacyUploadMetadata extends \Google\Service\CloudSearch\LegacyUploadMetadata
     {
     }
 }

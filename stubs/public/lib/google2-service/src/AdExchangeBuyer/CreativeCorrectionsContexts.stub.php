@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdExchangeBuyer;
-
-class CreativeCorrectionsContexts extends \Google\Collection
-{
-    protected $collection_key = 'platform';
-    public $auctionType;
-    public $contextType;
-    public $geoCriteriaId;
-    public $platform;
-    public function setAuctionType($auctionType)
+namespace Google\Service\AdExchangeBuyer {
+    class CreativeCorrectionsContexts extends \Google\Collection
     {
+        protected $collection_key = 'platform';
+        public $auctionType;
+        public $contextType;
+        public $geoCriteriaId;
+        public $platform;
+        public function setAuctionType($auctionType)
+        {
+        }
+        public function getAuctionType()
+        {
+        }
+        public function setContextType($contextType)
+        {
+        }
+        public function getContextType()
+        {
+        }
+        public function setGeoCriteriaId($geoCriteriaId)
+        {
+        }
+        public function getGeoCriteriaId()
+        {
+        }
+        public function setPlatform($platform)
+        {
+        }
+        public function getPlatform()
+        {
+        }
     }
-    public function getAuctionType()
-    {
-    }
-    public function setContextType($contextType)
-    {
-    }
-    public function getContextType()
-    {
-    }
-    public function setGeoCriteriaId($geoCriteriaId)
-    {
-    }
-    public function getGeoCriteriaId()
-    {
-    }
-    public function setPlatform($platform)
-    {
-    }
-    public function getPlatform()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AdExchangeBuyer\CreativeCorrectionsContexts registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AdExchangeBuyer_CreativeCorrectionsContexts extends \Google\Service\AdExchangeBuyer\CreativeCorrectionsContexts
     {
     }
 }

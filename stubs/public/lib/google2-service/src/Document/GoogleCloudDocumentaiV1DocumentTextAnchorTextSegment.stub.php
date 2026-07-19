@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1DocumentTextAnchorTextSegment extends \Google\Model
-{
-    /**
-     * TextSegment half open end UTF-8 char index in the Document.text.
-     *
-     * @var string
-     */
-    public $endIndex;
-    /**
-     * TextSegment start UTF-8 char index in the Document.text.
-     *
-     * @var string
-     */
-    public $startIndex;
-    /**
-     * TextSegment half open end UTF-8 char index in the Document.text.
-     *
-     * @param string $endIndex
-     */
-    public function setEndIndex($endIndex)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1DocumentTextAnchorTextSegment extends \Google\Model
     {
+        /**
+         * TextSegment half open end UTF-8 char index in the Document.text.
+         *
+         * @var string
+         */
+        public $endIndex;
+        /**
+         * TextSegment start UTF-8 char index in the Document.text.
+         *
+         * @var string
+         */
+        public $startIndex;
+        /**
+         * TextSegment half open end UTF-8 char index in the Document.text.
+         *
+         * @param string $endIndex
+         */
+        public function setEndIndex($endIndex)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndIndex()
+        {
+        }
+        /**
+         * TextSegment start UTF-8 char index in the Document.text.
+         *
+         * @param string $startIndex
+         */
+        public function setStartIndex($startIndex)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartIndex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1DocumentTextAnchorTextSegment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndIndex()
-    {
-    }
-    /**
-     * TextSegment start UTF-8 char index in the Document.text.
-     *
-     * @param string $startIndex
-     */
-    public function setStartIndex($startIndex)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartIndex()
+    class Google_Service_Document_GoogleCloudDocumentaiV1DocumentTextAnchorTextSegment extends \Google\Service\Document\GoogleCloudDocumentaiV1DocumentTextAnchorTextSegment
     {
     }
 }

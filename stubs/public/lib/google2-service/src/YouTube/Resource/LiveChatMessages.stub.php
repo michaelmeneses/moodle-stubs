@@ -21,83 +21,94 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube\Resource;
-
-/**
- * The "liveChatMessages" collection of methods.
- * Typical usage is:
- *  <code>
- *   $youtubeService = new Google\Service\YouTube(...);
- *   $liveChatMessages = $youtubeService->liveChatMessages;
- *  </code>
- */
-class LiveChatMessages extends \Google\Service\Resource
-{
+namespace Google\Service\YouTube\Resource {
+    use Google\Service\YouTube\LiveChatMessage;
+    use Google\Service\YouTube\LiveChatMessageListResponse;
     /**
-     * Deletes a chat message. (liveChatMessages.delete)
-     *
-     * @param string $id
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "liveChatMessages" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $youtubeService = new Google\Service\YouTube(...);
+     *   $liveChatMessages = $youtubeService->liveChatMessages;
+     *  </code>
      */
-    public function delete($id, $optParams = [])
+    class LiveChatMessages extends \Google\Service\Resource
     {
+        /**
+         * Deletes a chat message. (liveChatMessages.delete)
+         *
+         * @param string $id
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($id, $optParams = [])
+        {
+        }
+        /**
+         * Inserts a new resource into this collection. (liveChatMessages.insert)
+         *
+         * @param string|array $part The *part* parameter serves two purposes. It
+         * identifies the properties that the write operation will set as well as the
+         * properties that the API response will include. Set the parameter value to
+         * snippet.
+         * @param LiveChatMessage $postBody
+         * @param array $optParams Optional parameters.
+         * @return LiveChatMessage
+         * @throws \Google\Service\Exception
+         */
+        public function insert($part, LiveChatMessage $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves a list of resources, possibly filtered.
+         * (liveChatMessages.listLiveChatMessages)
+         *
+         * @param string $liveChatId The id of the live chat for which comments should
+         * be returned.
+         * @param string|array $part The *part* parameter specifies the liveChatComment
+         * resource parts that the API response will include. Supported values are id,
+         * snippet, and authorDetails.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string hl Specifies the localization language in which the system
+         * messages should be returned.
+         * @opt_param string maxResults The *maxResults* parameter specifies the maximum
+         * number of items that should be returned in the result set. Not used in the
+         * streaming RPC.
+         * @opt_param string pageToken The *pageToken* parameter identifies a specific
+         * page in the result set that should be returned. In an API response, the
+         * nextPageToken property identify other pages that could be retrieved.
+         * @opt_param string profileImageSize Specifies the size of the profile image
+         * that should be returned for each user.
+         * @return LiveChatMessageListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listLiveChatMessages($liveChatId, $part, $optParams = [])
+        {
+        }
+        /**
+         * Transition a durable chat event. (liveChatMessages.transition)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string id The ID that uniquely identify the chat message event to
+         * transition.
+         * @opt_param string status The status to which the chat event is going to
+         * transition.
+         * @return LiveChatMessage
+         * @throws \Google\Service\Exception
+         */
+        public function transition($optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Inserts a new resource into this collection. (liveChatMessages.insert)
-     *
-     * @param string|array $part The *part* parameter serves two purposes. It
-     * identifies the properties that the write operation will set as well as the
-     * properties that the API response will include. Set the parameter value to
-     * snippet.
-     * @param LiveChatMessage $postBody
-     * @param array $optParams Optional parameters.
-     * @return LiveChatMessage
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\YouTube\Resource\LiveChatMessages registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function insert($part, LiveChatMessage $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves a list of resources, possibly filtered.
-     * (liveChatMessages.listLiveChatMessages)
-     *
-     * @param string $liveChatId The id of the live chat for which comments should
-     * be returned.
-     * @param string|array $part The *part* parameter specifies the liveChatComment
-     * resource parts that the API response will include. Supported values are id,
-     * snippet, and authorDetails.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string hl Specifies the localization language in which the system
-     * messages should be returned.
-     * @opt_param string maxResults The *maxResults* parameter specifies the maximum
-     * number of items that should be returned in the result set. Not used in the
-     * streaming RPC.
-     * @opt_param string pageToken The *pageToken* parameter identifies a specific
-     * page in the result set that should be returned. In an API response, the
-     * nextPageToken property identify other pages that could be retrieved.
-     * @opt_param string profileImageSize Specifies the size of the profile image
-     * that should be returned for each user.
-     * @return LiveChatMessageListResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listLiveChatMessages($liveChatId, $part, $optParams = [])
-    {
-    }
-    /**
-     * Transition a durable chat event. (liveChatMessages.transition)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string id The ID that uniquely identify the chat message event to
-     * transition.
-     * @opt_param string status The status to which the chat event is going to
-     * transition.
-     * @return LiveChatMessage
-     * @throws \Google\Service\Exception
-     */
-    public function transition($optParams = [])
+    class Google_Service_YouTube_Resource_LiveChatMessages extends \Google\Service\YouTube\Resource\LiveChatMessages
     {
     }
 }

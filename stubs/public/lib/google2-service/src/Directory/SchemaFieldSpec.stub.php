@@ -21,216 +21,225 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class SchemaFieldSpec extends \Google\Model
-{
-    /**
-     * Display Name of the field.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The ETag of the field.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * The unique identifier of the field (Read-only)
-     *
-     * @var string
-     */
-    public $fieldId;
-    /**
-     * The name of the field.
-     *
-     * @var string
-     */
-    public $fieldName;
-    /**
-     * The type of the field.
-     *
-     * @var string
-     */
-    public $fieldType;
-    /**
-     * Boolean specifying whether the field is indexed or not. Default: `true`.
-     *
-     * @var bool
-     */
-    public $indexed;
-    /**
-     * The kind of resource this is. For schema fields this is always
-     * `admin#directory#schema#fieldspec`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * A boolean specifying whether this is a multi-valued field or not. Default:
-     * `false`.
-     *
-     * @var bool
-     */
-    public $multiValued;
-    protected $numericIndexingSpecType = SchemaFieldSpecNumericIndexingSpec::class;
-    protected $numericIndexingSpecDataType = '';
-    /**
-     * Specifies who can view values of this field. See [Retrieve users as a non-a
-     * dministrator](https://developers.google.com/workspace/admin/directory/v1/gu
-     * ides/manage-users#retrieve_users_non_admin) for more information. Note: It
-     * may take up to 24 hours for changes to this field to be reflected.
-     *
-     * @var string
-     */
-    public $readAccessType;
-    /**
-     * Display Name of the field.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\Directory {
+    class SchemaFieldSpec extends \Google\Model
     {
+        /**
+         * Display Name of the field.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The ETag of the field.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * The unique identifier of the field (Read-only)
+         *
+         * @var string
+         */
+        public $fieldId;
+        /**
+         * The name of the field.
+         *
+         * @var string
+         */
+        public $fieldName;
+        /**
+         * The type of the field.
+         *
+         * @var string
+         */
+        public $fieldType;
+        /**
+         * Boolean specifying whether the field is indexed or not. Default: `true`.
+         *
+         * @var bool
+         */
+        public $indexed;
+        /**
+         * The kind of resource this is. For schema fields this is always
+         * `admin#directory#schema#fieldspec`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * A boolean specifying whether this is a multi-valued field or not. Default:
+         * `false`.
+         *
+         * @var bool
+         */
+        public $multiValued;
+        protected $numericIndexingSpecType = SchemaFieldSpecNumericIndexingSpec::class;
+        protected $numericIndexingSpecDataType = '';
+        /**
+         * Specifies who can view values of this field. See [Retrieve users as a non-a
+         * dministrator](https://developers.google.com/workspace/admin/directory/v1/gu
+         * ides/manage-users#retrieve_users_non_admin) for more information. Note: It
+         * may take up to 24 hours for changes to this field to be reflected.
+         *
+         * @var string
+         */
+        public $readAccessType;
+        /**
+         * Display Name of the field.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The ETag of the field.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * The unique identifier of the field (Read-only)
+         *
+         * @param string $fieldId
+         */
+        public function setFieldId($fieldId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFieldId()
+        {
+        }
+        /**
+         * The name of the field.
+         *
+         * @param string $fieldName
+         */
+        public function setFieldName($fieldName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFieldName()
+        {
+        }
+        /**
+         * The type of the field.
+         *
+         * @param string $fieldType
+         */
+        public function setFieldType($fieldType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFieldType()
+        {
+        }
+        /**
+         * Boolean specifying whether the field is indexed or not. Default: `true`.
+         *
+         * @param bool $indexed
+         */
+        public function setIndexed($indexed)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIndexed()
+        {
+        }
+        /**
+         * The kind of resource this is. For schema fields this is always
+         * `admin#directory#schema#fieldspec`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * A boolean specifying whether this is a multi-valued field or not. Default:
+         * `false`.
+         *
+         * @param bool $multiValued
+         */
+        public function setMultiValued($multiValued)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getMultiValued()
+        {
+        }
+        /**
+         * Indexing spec for a numeric field. By default, only exact match queries
+         * will be supported for numeric fields. Setting the `numericIndexingSpec`
+         * allows range queries to be supported.
+         *
+         * @param SchemaFieldSpecNumericIndexingSpec $numericIndexingSpec
+         */
+        public function setNumericIndexingSpec(SchemaFieldSpecNumericIndexingSpec $numericIndexingSpec)
+        {
+        }
+        /**
+         * @return SchemaFieldSpecNumericIndexingSpec
+         */
+        public function getNumericIndexingSpec()
+        {
+        }
+        /**
+         * Specifies who can view values of this field. See [Retrieve users as a non-a
+         * dministrator](https://developers.google.com/workspace/admin/directory/v1/gu
+         * ides/manage-users#retrieve_users_non_admin) for more information. Note: It
+         * may take up to 24 hours for changes to this field to be reflected.
+         *
+         * @param string $readAccessType
+         */
+        public function setReadAccessType($readAccessType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReadAccessType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\SchemaFieldSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The ETag of the field.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * The unique identifier of the field (Read-only)
-     *
-     * @param string $fieldId
-     */
-    public function setFieldId($fieldId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFieldId()
-    {
-    }
-    /**
-     * The name of the field.
-     *
-     * @param string $fieldName
-     */
-    public function setFieldName($fieldName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFieldName()
-    {
-    }
-    /**
-     * The type of the field.
-     *
-     * @param string $fieldType
-     */
-    public function setFieldType($fieldType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFieldType()
-    {
-    }
-    /**
-     * Boolean specifying whether the field is indexed or not. Default: `true`.
-     *
-     * @param bool $indexed
-     */
-    public function setIndexed($indexed)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIndexed()
-    {
-    }
-    /**
-     * The kind of resource this is. For schema fields this is always
-     * `admin#directory#schema#fieldspec`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * A boolean specifying whether this is a multi-valued field or not. Default:
-     * `false`.
-     *
-     * @param bool $multiValued
-     */
-    public function setMultiValued($multiValued)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getMultiValued()
-    {
-    }
-    /**
-     * Indexing spec for a numeric field. By default, only exact match queries
-     * will be supported for numeric fields. Setting the `numericIndexingSpec`
-     * allows range queries to be supported.
-     *
-     * @param SchemaFieldSpecNumericIndexingSpec $numericIndexingSpec
-     */
-    public function setNumericIndexingSpec(SchemaFieldSpecNumericIndexingSpec $numericIndexingSpec)
-    {
-    }
-    /**
-     * @return SchemaFieldSpecNumericIndexingSpec
-     */
-    public function getNumericIndexingSpec()
-    {
-    }
-    /**
-     * Specifies who can view values of this field. See [Retrieve users as a non-a
-     * dministrator](https://developers.google.com/workspace/admin/directory/v1/gu
-     * ides/manage-users#retrieve_users_non_admin) for more information. Note: It
-     * may take up to 24 hours for changes to this field to be reflected.
-     *
-     * @param string $readAccessType
-     */
-    public function setReadAccessType($readAccessType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReadAccessType()
+    class Google_Service_Directory_SchemaFieldSpec extends \Google\Service\Directory\SchemaFieldSpec
     {
     }
 }

@@ -21,57 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SmartDeviceManagement\Resource;
-
-/**
- * The "devices" collection of methods.
- * Typical usage is:
- *  <code>
- *   $smartdevicemanagementService = new Google\Service\SmartDeviceManagement(...);
- *   $devices = $smartdevicemanagementService->enterprises_devices;
- *  </code>
- */
-class EnterprisesDevices extends \Google\Service\Resource
-{
+namespace Google\Service\SmartDeviceManagement\Resource {
+    use Google\Service\SmartDeviceManagement\GoogleHomeEnterpriseSdmV1Device;
+    use Google\Service\SmartDeviceManagement\GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandRequest;
+    use Google\Service\SmartDeviceManagement\GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandResponse;
+    use Google\Service\SmartDeviceManagement\GoogleHomeEnterpriseSdmV1ListDevicesResponse;
     /**
-     * Executes a command to device managed by the enterprise.
-     * (devices.executeCommand)
-     *
-     * @param string $name The name of the device requested. For example:
-     * "enterprises/XYZ/devices/123"
-     * @param GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandResponse
-     * @throws \Google\Service\Exception
+     * The "devices" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $smartdevicemanagementService = new Google\Service\SmartDeviceManagement(...);
+     *   $devices = $smartdevicemanagementService->enterprises_devices;
+     *  </code>
      */
-    public function executeCommand($name, GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandRequest $postBody, $optParams = [])
+    class EnterprisesDevices extends \Google\Service\Resource
     {
+        /**
+         * Executes a command to device managed by the enterprise.
+         * (devices.executeCommand)
+         *
+         * @param string $name The name of the device requested. For example:
+         * "enterprises/XYZ/devices/123"
+         * @param GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandResponse
+         * @throws \Google\Service\Exception
+         */
+        public function executeCommand($name, GoogleHomeEnterpriseSdmV1ExecuteDeviceCommandRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Gets a device managed by the enterprise. (devices.get)
+         *
+         * @param string $name The name of the device requested. For example:
+         * "enterprises/XYZ/devices/123"
+         * @param array $optParams Optional parameters.
+         * @return GoogleHomeEnterpriseSdmV1Device
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists devices managed by the enterprise. (devices.listEnterprisesDevices)
+         *
+         * @param string $parent The parent enterprise to list devices under. E.g.
+         * "enterprises/XYZ".
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional filter to list devices. Filters can be done
+         * on: Device custom name (substring match): 'customName=wing'
+         * @return GoogleHomeEnterpriseSdmV1ListDevicesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listEnterprisesDevices($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets a device managed by the enterprise. (devices.get)
-     *
-     * @param string $name The name of the device requested. For example:
-     * "enterprises/XYZ/devices/123"
-     * @param array $optParams Optional parameters.
-     * @return GoogleHomeEnterpriseSdmV1Device
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\SmartDeviceManagement\Resource\EnterprisesDevices registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists devices managed by the enterprise. (devices.listEnterprisesDevices)
-     *
-     * @param string $parent The parent enterprise to list devices under. E.g.
-     * "enterprises/XYZ".
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional filter to list devices. Filters can be done
-     * on: Device custom name (substring match): 'customName=wing'
-     * @return GoogleHomeEnterpriseSdmV1ListDevicesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listEnterprisesDevices($parent, $optParams = [])
+    class Google_Service_SmartDeviceManagement_Resource_EnterprisesDevices extends \Google\Service\SmartDeviceManagement\Resource\EnterprisesDevices
     {
     }
 }

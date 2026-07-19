@@ -21,217 +21,226 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class SearchApplication extends \Google\Collection
-{
-    protected $collection_key = 'sourceConfig';
-    protected $dataSourceRestrictionsType = DataSourceRestriction::class;
-    protected $dataSourceRestrictionsDataType = 'array';
-    protected $defaultFacetOptionsType = FacetOptions::class;
-    protected $defaultFacetOptionsDataType = 'array';
-    protected $defaultSortOptionsType = SortOptions::class;
-    protected $defaultSortOptionsDataType = '';
-    /**
-     * Display name of the Search Application. The maximum length is 300
-     * characters.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Indicates whether audit logging is on/off for requests made for the search
-     * application in query APIs.
-     *
-     * @var bool
-     */
-    public $enableAuditLog;
-    /**
-     * The name of the Search Application. Format:
-     * searchapplications/{application_id}.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. IDs of the Long Running Operations (LROs) currently running
-     * for this schema. Output only field.
-     *
-     * @var string[]
-     */
-    public $operationIds;
-    protected $queryInterpretationConfigType = QueryInterpretationConfig::class;
-    protected $queryInterpretationConfigDataType = '';
-    /**
-     * With each result we should return the URI for its thumbnail (when
-     * applicable)
-     *
-     * @var bool
-     */
-    public $returnResultThumbnailUrls;
-    protected $scoringConfigType = ScoringConfig::class;
-    protected $scoringConfigDataType = '';
-    protected $sourceConfigType = SourceConfig::class;
-    protected $sourceConfigDataType = 'array';
-    /**
-     * Retrictions applied to the configurations. The maximum number of elements
-     * is 10.
-     *
-     * @param DataSourceRestriction[] $dataSourceRestrictions
-     */
-    public function setDataSourceRestrictions($dataSourceRestrictions)
+namespace Google\Service\CloudSearch {
+    class SearchApplication extends \Google\Collection
     {
+        protected $collection_key = 'sourceConfig';
+        protected $dataSourceRestrictionsType = DataSourceRestriction::class;
+        protected $dataSourceRestrictionsDataType = 'array';
+        protected $defaultFacetOptionsType = FacetOptions::class;
+        protected $defaultFacetOptionsDataType = 'array';
+        protected $defaultSortOptionsType = SortOptions::class;
+        protected $defaultSortOptionsDataType = '';
+        /**
+         * Display name of the Search Application. The maximum length is 300
+         * characters.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Indicates whether audit logging is on/off for requests made for the search
+         * application in query APIs.
+         *
+         * @var bool
+         */
+        public $enableAuditLog;
+        /**
+         * The name of the Search Application. Format:
+         * searchapplications/{application_id}.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. IDs of the Long Running Operations (LROs) currently running
+         * for this schema. Output only field.
+         *
+         * @var string[]
+         */
+        public $operationIds;
+        protected $queryInterpretationConfigType = QueryInterpretationConfig::class;
+        protected $queryInterpretationConfigDataType = '';
+        /**
+         * With each result we should return the URI for its thumbnail (when
+         * applicable)
+         *
+         * @var bool
+         */
+        public $returnResultThumbnailUrls;
+        protected $scoringConfigType = ScoringConfig::class;
+        protected $scoringConfigDataType = '';
+        protected $sourceConfigType = SourceConfig::class;
+        protected $sourceConfigDataType = 'array';
+        /**
+         * Retrictions applied to the configurations. The maximum number of elements
+         * is 10.
+         *
+         * @param DataSourceRestriction[] $dataSourceRestrictions
+         */
+        public function setDataSourceRestrictions($dataSourceRestrictions)
+        {
+        }
+        /**
+         * @return DataSourceRestriction[]
+         */
+        public function getDataSourceRestrictions()
+        {
+        }
+        /**
+         * The default fields for returning facet results. The sources specified here
+         * also have been included in data_source_restrictions above.
+         *
+         * @param FacetOptions[] $defaultFacetOptions
+         */
+        public function setDefaultFacetOptions($defaultFacetOptions)
+        {
+        }
+        /**
+         * @return FacetOptions[]
+         */
+        public function getDefaultFacetOptions()
+        {
+        }
+        /**
+         * The default options for sorting the search results
+         *
+         * @param SortOptions $defaultSortOptions
+         */
+        public function setDefaultSortOptions(SortOptions $defaultSortOptions)
+        {
+        }
+        /**
+         * @return SortOptions
+         */
+        public function getDefaultSortOptions()
+        {
+        }
+        /**
+         * Display name of the Search Application. The maximum length is 300
+         * characters.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Indicates whether audit logging is on/off for requests made for the search
+         * application in query APIs.
+         *
+         * @param bool $enableAuditLog
+         */
+        public function setEnableAuditLog($enableAuditLog)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableAuditLog()
+        {
+        }
+        /**
+         * The name of the Search Application. Format:
+         * searchapplications/{application_id}.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. IDs of the Long Running Operations (LROs) currently running
+         * for this schema. Output only field.
+         *
+         * @param string[] $operationIds
+         */
+        public function setOperationIds($operationIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getOperationIds()
+        {
+        }
+        /**
+         * The default options for query interpretation
+         *
+         * @param QueryInterpretationConfig $queryInterpretationConfig
+         */
+        public function setQueryInterpretationConfig(QueryInterpretationConfig $queryInterpretationConfig)
+        {
+        }
+        /**
+         * @return QueryInterpretationConfig
+         */
+        public function getQueryInterpretationConfig()
+        {
+        }
+        /**
+         * With each result we should return the URI for its thumbnail (when
+         * applicable)
+         *
+         * @param bool $returnResultThumbnailUrls
+         */
+        public function setReturnResultThumbnailUrls($returnResultThumbnailUrls)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReturnResultThumbnailUrls()
+        {
+        }
+        /**
+         * Configuration for ranking results.
+         *
+         * @param ScoringConfig $scoringConfig
+         */
+        public function setScoringConfig(ScoringConfig $scoringConfig)
+        {
+        }
+        /**
+         * @return ScoringConfig
+         */
+        public function getScoringConfig()
+        {
+        }
+        /**
+         * Configuration for a sources specified in data_source_restrictions.
+         *
+         * @param SourceConfig[] $sourceConfig
+         */
+        public function setSourceConfig($sourceConfig)
+        {
+        }
+        /**
+         * @return SourceConfig[]
+         */
+        public function getSourceConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DataSourceRestriction[]
+     * Runtime class alias of \Google\Service\CloudSearch\SearchApplication registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataSourceRestrictions()
-    {
-    }
-    /**
-     * The default fields for returning facet results. The sources specified here
-     * also have been included in data_source_restrictions above.
-     *
-     * @param FacetOptions[] $defaultFacetOptions
-     */
-    public function setDefaultFacetOptions($defaultFacetOptions)
-    {
-    }
-    /**
-     * @return FacetOptions[]
-     */
-    public function getDefaultFacetOptions()
-    {
-    }
-    /**
-     * The default options for sorting the search results
-     *
-     * @param SortOptions $defaultSortOptions
-     */
-    public function setDefaultSortOptions(SortOptions $defaultSortOptions)
-    {
-    }
-    /**
-     * @return SortOptions
-     */
-    public function getDefaultSortOptions()
-    {
-    }
-    /**
-     * Display name of the Search Application. The maximum length is 300
-     * characters.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Indicates whether audit logging is on/off for requests made for the search
-     * application in query APIs.
-     *
-     * @param bool $enableAuditLog
-     */
-    public function setEnableAuditLog($enableAuditLog)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableAuditLog()
-    {
-    }
-    /**
-     * The name of the Search Application. Format:
-     * searchapplications/{application_id}.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. IDs of the Long Running Operations (LROs) currently running
-     * for this schema. Output only field.
-     *
-     * @param string[] $operationIds
-     */
-    public function setOperationIds($operationIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getOperationIds()
-    {
-    }
-    /**
-     * The default options for query interpretation
-     *
-     * @param QueryInterpretationConfig $queryInterpretationConfig
-     */
-    public function setQueryInterpretationConfig(QueryInterpretationConfig $queryInterpretationConfig)
-    {
-    }
-    /**
-     * @return QueryInterpretationConfig
-     */
-    public function getQueryInterpretationConfig()
-    {
-    }
-    /**
-     * With each result we should return the URI for its thumbnail (when
-     * applicable)
-     *
-     * @param bool $returnResultThumbnailUrls
-     */
-    public function setReturnResultThumbnailUrls($returnResultThumbnailUrls)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReturnResultThumbnailUrls()
-    {
-    }
-    /**
-     * Configuration for ranking results.
-     *
-     * @param ScoringConfig $scoringConfig
-     */
-    public function setScoringConfig(ScoringConfig $scoringConfig)
-    {
-    }
-    /**
-     * @return ScoringConfig
-     */
-    public function getScoringConfig()
-    {
-    }
-    /**
-     * Configuration for a sources specified in data_source_restrictions.
-     *
-     * @param SourceConfig[] $sourceConfig
-     */
-    public function setSourceConfig($sourceConfig)
-    {
-    }
-    /**
-     * @return SourceConfig[]
-     */
-    public function getSourceConfig()
+    class Google_Service_CloudSearch_SearchApplication extends \Google\Service\CloudSearch\SearchApplication
     {
     }
 }

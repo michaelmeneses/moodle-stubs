@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class EnrollBareMetalNodePoolRequest extends \Google\Model
-{
-    /**
-     * User provided OnePlatform identifier that is used as part of the resource
-     * name. (https://tools.ietf.org/html/rfc1123) format.
-     *
-     * @var string
-     */
-    public $bareMetalNodePoolId;
-    /**
-     * If set, only validate the request, but do not actually enroll the node
-     * pool.
-     *
-     * @var bool
-     */
-    public $validateOnly;
-    /**
-     * User provided OnePlatform identifier that is used as part of the resource
-     * name. (https://tools.ietf.org/html/rfc1123) format.
-     *
-     * @param string $bareMetalNodePoolId
-     */
-    public function setBareMetalNodePoolId($bareMetalNodePoolId)
+namespace Google\Service\GKEOnPrem {
+    class EnrollBareMetalNodePoolRequest extends \Google\Model
     {
+        /**
+         * User provided OnePlatform identifier that is used as part of the resource
+         * name. (https://tools.ietf.org/html/rfc1123) format.
+         *
+         * @var string
+         */
+        public $bareMetalNodePoolId;
+        /**
+         * If set, only validate the request, but do not actually enroll the node
+         * pool.
+         *
+         * @var bool
+         */
+        public $validateOnly;
+        /**
+         * User provided OnePlatform identifier that is used as part of the resource
+         * name. (https://tools.ietf.org/html/rfc1123) format.
+         *
+         * @param string $bareMetalNodePoolId
+         */
+        public function setBareMetalNodePoolId($bareMetalNodePoolId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBareMetalNodePoolId()
+        {
+        }
+        /**
+         * If set, only validate the request, but do not actually enroll the node
+         * pool.
+         *
+         * @param bool $validateOnly
+         */
+        public function setValidateOnly($validateOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getValidateOnly()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEOnPrem\EnrollBareMetalNodePoolRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBareMetalNodePoolId()
-    {
-    }
-    /**
-     * If set, only validate the request, but do not actually enroll the node
-     * pool.
-     *
-     * @param bool $validateOnly
-     */
-    public function setValidateOnly($validateOnly)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getValidateOnly()
+    class Google_Service_GKEOnPrem_EnrollBareMetalNodePoolRequest extends \Google\Service\GKEOnPrem\EnrollBareMetalNodePoolRequest
     {
     }
 }

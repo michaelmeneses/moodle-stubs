@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MapsPlaces;
-
-class GoogleMapsPlacesV1PlaceGoogleMapsLinks extends \Google\Model
-{
-    /**
-     * A link to show the directions to the place. The link only populates the
-     * destination location and uses the default travel mode `DRIVE`.
-     *
-     * @var string
-     */
-    public $directionsUri;
-    /**
-     * A link to show photos of this place on Google Maps.
-     *
-     * @var string
-     */
-    public $photosUri;
-    /**
-     * A link to show this place.
-     *
-     * @var string
-     */
-    public $placeUri;
-    /**
-     * A link to show reviews of this place on Google Maps.
-     *
-     * @var string
-     */
-    public $reviewsUri;
-    /**
-     * A link to write a review for this place on Google Maps.
-     *
-     * @var string
-     */
-    public $writeAReviewUri;
-    /**
-     * A link to show the directions to the place. The link only populates the
-     * destination location and uses the default travel mode `DRIVE`.
-     *
-     * @param string $directionsUri
-     */
-    public function setDirectionsUri($directionsUri)
+namespace Google\Service\MapsPlaces {
+    class GoogleMapsPlacesV1PlaceGoogleMapsLinks extends \Google\Model
     {
+        /**
+         * A link to show the directions to the place. The link only populates the
+         * destination location and uses the default travel mode `DRIVE`.
+         *
+         * @var string
+         */
+        public $directionsUri;
+        /**
+         * A link to show photos of this place on Google Maps.
+         *
+         * @var string
+         */
+        public $photosUri;
+        /**
+         * A link to show this place.
+         *
+         * @var string
+         */
+        public $placeUri;
+        /**
+         * A link to show reviews of this place on Google Maps.
+         *
+         * @var string
+         */
+        public $reviewsUri;
+        /**
+         * A link to write a review for this place on Google Maps.
+         *
+         * @var string
+         */
+        public $writeAReviewUri;
+        /**
+         * A link to show the directions to the place. The link only populates the
+         * destination location and uses the default travel mode `DRIVE`.
+         *
+         * @param string $directionsUri
+         */
+        public function setDirectionsUri($directionsUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDirectionsUri()
+        {
+        }
+        /**
+         * A link to show photos of this place on Google Maps.
+         *
+         * @param string $photosUri
+         */
+        public function setPhotosUri($photosUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhotosUri()
+        {
+        }
+        /**
+         * A link to show this place.
+         *
+         * @param string $placeUri
+         */
+        public function setPlaceUri($placeUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPlaceUri()
+        {
+        }
+        /**
+         * A link to show reviews of this place on Google Maps.
+         *
+         * @param string $reviewsUri
+         */
+        public function setReviewsUri($reviewsUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReviewsUri()
+        {
+        }
+        /**
+         * A link to write a review for this place on Google Maps.
+         *
+         * @param string $writeAReviewUri
+         */
+        public function setWriteAReviewUri($writeAReviewUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWriteAReviewUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MapsPlaces\GoogleMapsPlacesV1PlaceGoogleMapsLinks registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDirectionsUri()
-    {
-    }
-    /**
-     * A link to show photos of this place on Google Maps.
-     *
-     * @param string $photosUri
-     */
-    public function setPhotosUri($photosUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhotosUri()
-    {
-    }
-    /**
-     * A link to show this place.
-     *
-     * @param string $placeUri
-     */
-    public function setPlaceUri($placeUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPlaceUri()
-    {
-    }
-    /**
-     * A link to show reviews of this place on Google Maps.
-     *
-     * @param string $reviewsUri
-     */
-    public function setReviewsUri($reviewsUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReviewsUri()
-    {
-    }
-    /**
-     * A link to write a review for this place on Google Maps.
-     *
-     * @param string $writeAReviewUri
-     */
-    public function setWriteAReviewUri($writeAReviewUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWriteAReviewUri()
+    class Google_Service_MapsPlaces_GoogleMapsPlacesV1PlaceGoogleMapsLinks extends \Google\Service\MapsPlaces\GoogleMapsPlacesV1PlaceGoogleMapsLinks
     {
     }
 }

@@ -21,109 +21,118 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSTrackMetricsEntry extends \Google\Collection
-{
-    protected $collection_key = 'confidenceMetricsEntries';
-    protected $confidenceMetricsEntriesType = XPSTrackMetricsEntryConfidenceMetricsEntry::class;
-    protected $confidenceMetricsEntriesDataType = 'array';
-    /**
-     * Output only. The intersection-over-union threshold value between bounding
-     * boxes across frames used to compute this metric entry.
-     *
-     * @var float
-     */
-    public $iouThreshold;
-    /**
-     * Output only. The mean bounding box iou over all confidence thresholds.
-     *
-     * @var float
-     */
-    public $meanBoundingBoxIou;
-    /**
-     * Output only. The mean mismatch rate over all confidence thresholds.
-     *
-     * @var float
-     */
-    public $meanMismatchRate;
-    /**
-     * Output only. The mean average precision over all confidence thresholds.
-     *
-     * @var float
-     */
-    public $meanTrackingAveragePrecision;
-    /**
-     * Output only. Metrics for each label-match confidence_threshold from
-     * 0.05,0.10,...,0.95,0.96,0.97,0.98,0.99. Precision-recall curve is derived
-     * from them.
-     *
-     * @param XPSTrackMetricsEntryConfidenceMetricsEntry[] $confidenceMetricsEntries
-     */
-    public function setConfidenceMetricsEntries($confidenceMetricsEntries)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSTrackMetricsEntry extends \Google\Collection
     {
+        protected $collection_key = 'confidenceMetricsEntries';
+        protected $confidenceMetricsEntriesType = XPSTrackMetricsEntryConfidenceMetricsEntry::class;
+        protected $confidenceMetricsEntriesDataType = 'array';
+        /**
+         * Output only. The intersection-over-union threshold value between bounding
+         * boxes across frames used to compute this metric entry.
+         *
+         * @var float
+         */
+        public $iouThreshold;
+        /**
+         * Output only. The mean bounding box iou over all confidence thresholds.
+         *
+         * @var float
+         */
+        public $meanBoundingBoxIou;
+        /**
+         * Output only. The mean mismatch rate over all confidence thresholds.
+         *
+         * @var float
+         */
+        public $meanMismatchRate;
+        /**
+         * Output only. The mean average precision over all confidence thresholds.
+         *
+         * @var float
+         */
+        public $meanTrackingAveragePrecision;
+        /**
+         * Output only. Metrics for each label-match confidence_threshold from
+         * 0.05,0.10,...,0.95,0.96,0.97,0.98,0.99. Precision-recall curve is derived
+         * from them.
+         *
+         * @param XPSTrackMetricsEntryConfidenceMetricsEntry[] $confidenceMetricsEntries
+         */
+        public function setConfidenceMetricsEntries($confidenceMetricsEntries)
+        {
+        }
+        /**
+         * @return XPSTrackMetricsEntryConfidenceMetricsEntry[]
+         */
+        public function getConfidenceMetricsEntries()
+        {
+        }
+        /**
+         * Output only. The intersection-over-union threshold value between bounding
+         * boxes across frames used to compute this metric entry.
+         *
+         * @param float $iouThreshold
+         */
+        public function setIouThreshold($iouThreshold)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getIouThreshold()
+        {
+        }
+        /**
+         * Output only. The mean bounding box iou over all confidence thresholds.
+         *
+         * @param float $meanBoundingBoxIou
+         */
+        public function setMeanBoundingBoxIou($meanBoundingBoxIou)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getMeanBoundingBoxIou()
+        {
+        }
+        /**
+         * Output only. The mean mismatch rate over all confidence thresholds.
+         *
+         * @param float $meanMismatchRate
+         */
+        public function setMeanMismatchRate($meanMismatchRate)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getMeanMismatchRate()
+        {
+        }
+        /**
+         * Output only. The mean average precision over all confidence thresholds.
+         *
+         * @param float $meanTrackingAveragePrecision
+         */
+        public function setMeanTrackingAveragePrecision($meanTrackingAveragePrecision)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getMeanTrackingAveragePrecision()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return XPSTrackMetricsEntryConfidenceMetricsEntry[]
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSTrackMetricsEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfidenceMetricsEntries()
-    {
-    }
-    /**
-     * Output only. The intersection-over-union threshold value between bounding
-     * boxes across frames used to compute this metric entry.
-     *
-     * @param float $iouThreshold
-     */
-    public function setIouThreshold($iouThreshold)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getIouThreshold()
-    {
-    }
-    /**
-     * Output only. The mean bounding box iou over all confidence thresholds.
-     *
-     * @param float $meanBoundingBoxIou
-     */
-    public function setMeanBoundingBoxIou($meanBoundingBoxIou)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getMeanBoundingBoxIou()
-    {
-    }
-    /**
-     * Output only. The mean mismatch rate over all confidence thresholds.
-     *
-     * @param float $meanMismatchRate
-     */
-    public function setMeanMismatchRate($meanMismatchRate)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getMeanMismatchRate()
-    {
-    }
-    /**
-     * Output only. The mean average precision over all confidence thresholds.
-     *
-     * @param float $meanTrackingAveragePrecision
-     */
-    public function setMeanTrackingAveragePrecision($meanTrackingAveragePrecision)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getMeanTrackingAveragePrecision()
+    class Google_Service_CloudNaturalLanguage_XPSTrackMetricsEntry extends \Google\Service\CloudNaturalLanguage\XPSTrackMetricsEntry
     {
     }
 }

@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1CompleteQueryResponseQuerySuggestion extends \Google\Collection
-{
-    protected $collection_key = 'completableFieldPaths';
-    /**
-     * The unique document field paths that serve as the source of this suggestion
-     * if it was generated from completable fields. This field is only populated
-     * for the document-completable model.
-     *
-     * @var string[]
-     */
-    public $completableFieldPaths;
-    /**
-     * The suggestion for the query.
-     *
-     * @var string
-     */
-    public $suggestion;
-    /**
-     * The unique document field paths that serve as the source of this suggestion
-     * if it was generated from completable fields. This field is only populated
-     * for the document-completable model.
-     *
-     * @param string[] $completableFieldPaths
-     */
-    public function setCompletableFieldPaths($completableFieldPaths)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1CompleteQueryResponseQuerySuggestion extends \Google\Collection
     {
+        protected $collection_key = 'completableFieldPaths';
+        /**
+         * The unique document field paths that serve as the source of this suggestion
+         * if it was generated from completable fields. This field is only populated
+         * for the document-completable model.
+         *
+         * @var string[]
+         */
+        public $completableFieldPaths;
+        /**
+         * The suggestion for the query.
+         *
+         * @var string
+         */
+        public $suggestion;
+        /**
+         * The unique document field paths that serve as the source of this suggestion
+         * if it was generated from completable fields. This field is only populated
+         * for the document-completable model.
+         *
+         * @param string[] $completableFieldPaths
+         */
+        public function setCompletableFieldPaths($completableFieldPaths)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCompletableFieldPaths()
+        {
+        }
+        /**
+         * The suggestion for the query.
+         *
+         * @param string $suggestion
+         */
+        public function setSuggestion($suggestion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSuggestion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1CompleteQueryResponseQuerySuggestion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCompletableFieldPaths()
-    {
-    }
-    /**
-     * The suggestion for the query.
-     *
-     * @param string $suggestion
-     */
-    public function setSuggestion($suggestion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSuggestion()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1CompleteQueryResponseQuerySuggestion extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1CompleteQueryResponseQuerySuggestion
     {
     }
 }

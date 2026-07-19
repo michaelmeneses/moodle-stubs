@@ -21,35 +21,44 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ExplanationMetadataOverrideInputMetadataOverride extends \Google\Collection
-{
-    protected $collection_key = 'inputBaselines';
-    /**
-     * Baseline inputs for this feature. This overrides the `input_baseline` field
-     * of the ExplanationMetadata.InputMetadata object of the corresponding
-     * feature's input metadata. If it's not specified, the original baselines are
-     * not overridden.
-     *
-     * @var array[]
-     */
-    public $inputBaselines;
-    /**
-     * Baseline inputs for this feature. This overrides the `input_baseline` field
-     * of the ExplanationMetadata.InputMetadata object of the corresponding
-     * feature's input metadata. If it's not specified, the original baselines are
-     * not overridden.
-     *
-     * @param array[] $inputBaselines
-     */
-    public function setInputBaselines($inputBaselines)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ExplanationMetadataOverrideInputMetadataOverride extends \Google\Collection
     {
+        protected $collection_key = 'inputBaselines';
+        /**
+         * Baseline inputs for this feature. This overrides the `input_baseline` field
+         * of the ExplanationMetadata.InputMetadata object of the corresponding
+         * feature's input metadata. If it's not specified, the original baselines are
+         * not overridden.
+         *
+         * @var array[]
+         */
+        public $inputBaselines;
+        /**
+         * Baseline inputs for this feature. This overrides the `input_baseline` field
+         * of the ExplanationMetadata.InputMetadata object of the corresponding
+         * feature's input metadata. If it's not specified, the original baselines are
+         * not overridden.
+         *
+         * @param array[] $inputBaselines
+         */
+        public function setInputBaselines($inputBaselines)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getInputBaselines()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ExplanationMetadataOverrideInputMetadataOverride registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInputBaselines()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ExplanationMetadataOverrideInputMetadataOverride extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ExplanationMetadataOverrideInputMetadataOverride
     {
     }
 }

@@ -21,32 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine\Resource;
-
-/**
- * The "projects" collection of methods.
- * Typical usage is:
- *  <code>
- *   $discoveryengineService = new Google\Service\DiscoveryEngine(...);
- *   $projects = $discoveryengineService->projects;
- *  </code>
- */
-class Projects extends \Google\Service\Resource
-{
+namespace Google\Service\DiscoveryEngine\Resource {
+    use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1ProvisionProjectRequest;
+    use Google\Service\DiscoveryEngine\GoogleLongrunningOperation;
     /**
-     * Provisions the project resource. During the process, related systems will get
-     * prepared and initialized. Caller must read the [Terms for data
-     * use](https://cloud.google.com/retail/data-use-terms), and optionally specify
-     * in request to provide consent to that service terms. (projects.provision)
-     *
-     * @param string $name Required. Full resource name of a Project, such as
-     * `projects/{project_id_or_number}`.
-     * @param GoogleCloudDiscoveryengineV1ProvisionProjectRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * The "projects" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $discoveryengineService = new Google\Service\DiscoveryEngine(...);
+     *   $projects = $discoveryengineService->projects;
+     *  </code>
      */
-    public function provision($name, GoogleCloudDiscoveryengineV1ProvisionProjectRequest $postBody, $optParams = [])
+    class Projects extends \Google\Service\Resource
+    {
+        /**
+         * Provisions the project resource. During the process, related systems will get
+         * prepared and initialized. Caller must read the [Terms for data
+         * use](https://cloud.google.com/retail/data-use-terms), and optionally specify
+         * in request to provide consent to that service terms. (projects.provision)
+         *
+         * @param string $name Required. Full resource name of a Project, such as
+         * `projects/{project_id_or_number}`.
+         * @param GoogleCloudDiscoveryengineV1ProvisionProjectRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function provision($name, GoogleCloudDiscoveryengineV1ProvisionProjectRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DiscoveryEngine\Resource\Projects registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DiscoveryEngine_Resource_Projects extends \Google\Service\DiscoveryEngine\Resource\Projects
     {
     }
 }

@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class AppStartTime extends \Google\Model
-{
-    protected $fullyDrawnTimeType = Duration::class;
-    protected $fullyDrawnTimeDataType = '';
-    protected $initialDisplayTimeType = Duration::class;
-    protected $initialDisplayTimeDataType = '';
-    /**
-     * Optional. The time from app start to reaching the developer-reported "fully
-     * drawn" time. This is only stored if the app includes a call to
-     * Activity.reportFullyDrawn(). See
-     * https://developer.android.com/topic/performance/launch-time.html#time-full
-     *
-     * @param Duration $fullyDrawnTime
-     */
-    public function setFullyDrawnTime(Duration $fullyDrawnTime)
+namespace Google\Service\ToolResults {
+    class AppStartTime extends \Google\Model
     {
+        protected $fullyDrawnTimeType = Duration::class;
+        protected $fullyDrawnTimeDataType = '';
+        protected $initialDisplayTimeType = Duration::class;
+        protected $initialDisplayTimeDataType = '';
+        /**
+         * Optional. The time from app start to reaching the developer-reported "fully
+         * drawn" time. This is only stored if the app includes a call to
+         * Activity.reportFullyDrawn(). See
+         * https://developer.android.com/topic/performance/launch-time.html#time-full
+         *
+         * @param Duration $fullyDrawnTime
+         */
+        public function setFullyDrawnTime(Duration $fullyDrawnTime)
+        {
+        }
+        /**
+         * @return Duration
+         */
+        public function getFullyDrawnTime()
+        {
+        }
+        /**
+         * The time from app start to the first displayed activity being drawn, as
+         * reported in Logcat. See
+         * https://developer.android.com/topic/performance/launch-time.html#time-
+         * initial
+         *
+         * @param Duration $initialDisplayTime
+         */
+        public function setInitialDisplayTime(Duration $initialDisplayTime)
+        {
+        }
+        /**
+         * @return Duration
+         */
+        public function getInitialDisplayTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Duration
+     * Runtime class alias of \Google\Service\ToolResults\AppStartTime registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFullyDrawnTime()
-    {
-    }
-    /**
-     * The time from app start to the first displayed activity being drawn, as
-     * reported in Logcat. See
-     * https://developer.android.com/topic/performance/launch-time.html#time-
-     * initial
-     *
-     * @param Duration $initialDisplayTime
-     */
-    public function setInitialDisplayTime(Duration $initialDisplayTime)
-    {
-    }
-    /**
-     * @return Duration
-     */
-    public function getInitialDisplayTime()
+    class Google_Service_ToolResults_AppStartTime extends \Google\Service\ToolResults\AppStartTime
     {
     }
 }

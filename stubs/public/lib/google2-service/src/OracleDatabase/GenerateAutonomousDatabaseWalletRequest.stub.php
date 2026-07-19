@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class GenerateAutonomousDatabaseWalletRequest extends \Google\Model
-{
-    /**
-     * Default unspecified value.
-     */
-    public const TYPE_GENERATE_TYPE_UNSPECIFIED = 'GENERATE_TYPE_UNSPECIFIED';
-    /**
-     * Used to generate wallet for all databases in the region.
-     */
-    public const TYPE_ALL = 'ALL';
-    /**
-     * Used to generate wallet for a single database.
-     */
-    public const TYPE_SINGLE = 'SINGLE';
-    /**
-     * Optional. True when requesting regional connection strings in PDB connect
-     * info, applicable to cross-region Data Guard only.
-     *
-     * @var bool
-     */
-    public $isRegional;
-    /**
-     * Required. The password used to encrypt the keys inside the wallet. The
-     * password must be a minimum of 8 characters.
-     *
-     * @var string
-     */
-    public $password;
-    /**
-     * Optional. The type of wallet generation for the Autonomous Database. The
-     * default value is SINGLE.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Optional. True when requesting regional connection strings in PDB connect
-     * info, applicable to cross-region Data Guard only.
-     *
-     * @param bool $isRegional
-     */
-    public function setIsRegional($isRegional)
+namespace Google\Service\OracleDatabase {
+    class GenerateAutonomousDatabaseWalletRequest extends \Google\Model
     {
+        /**
+         * Default unspecified value.
+         */
+        public const TYPE_GENERATE_TYPE_UNSPECIFIED = 'GENERATE_TYPE_UNSPECIFIED';
+        /**
+         * Used to generate wallet for all databases in the region.
+         */
+        public const TYPE_ALL = 'ALL';
+        /**
+         * Used to generate wallet for a single database.
+         */
+        public const TYPE_SINGLE = 'SINGLE';
+        /**
+         * Optional. True when requesting regional connection strings in PDB connect
+         * info, applicable to cross-region Data Guard only.
+         *
+         * @var bool
+         */
+        public $isRegional;
+        /**
+         * Required. The password used to encrypt the keys inside the wallet. The
+         * password must be a minimum of 8 characters.
+         *
+         * @var string
+         */
+        public $password;
+        /**
+         * Optional. The type of wallet generation for the Autonomous Database. The
+         * default value is SINGLE.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Optional. True when requesting regional connection strings in PDB connect
+         * info, applicable to cross-region Data Guard only.
+         *
+         * @param bool $isRegional
+         */
+        public function setIsRegional($isRegional)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsRegional()
+        {
+        }
+        /**
+         * Required. The password used to encrypt the keys inside the wallet. The
+         * password must be a minimum of 8 characters.
+         *
+         * @param string $password
+         */
+        public function setPassword($password)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPassword()
+        {
+        }
+        /**
+         * Optional. The type of wallet generation for the Autonomous Database. The
+         * default value is SINGLE.
+         *
+         * Accepted values: GENERATE_TYPE_UNSPECIFIED, ALL, SINGLE
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\OracleDatabase\GenerateAutonomousDatabaseWalletRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIsRegional()
-    {
-    }
-    /**
-     * Required. The password used to encrypt the keys inside the wallet. The
-     * password must be a minimum of 8 characters.
-     *
-     * @param string $password
-     */
-    public function setPassword($password)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPassword()
-    {
-    }
-    /**
-     * Optional. The type of wallet generation for the Autonomous Database. The
-     * default value is SINGLE.
-     *
-     * Accepted values: GENERATE_TYPE_UNSPECIFIED, ALL, SINGLE
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_OracleDatabase_GenerateAutonomousDatabaseWalletRequest extends \Google\Service\OracleDatabase\GenerateAutonomousDatabaseWalletRequest
     {
     }
 }

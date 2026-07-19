@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManufacturerCenter;
-
-class ListProductCertificationsResponse extends \Google\Collection
-{
-    protected $collection_key = 'productCertifications';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $productCertificationsType = ProductCertification::class;
-    protected $productCertificationsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\ManufacturerCenter {
+    class ListProductCertificationsResponse extends \Google\Collection
     {
+        protected $collection_key = 'productCertifications';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $productCertificationsType = ProductCertification::class;
+        protected $productCertificationsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The product certifications from the specified certification body.
+         *
+         * @param ProductCertification[] $productCertifications
+         */
+        public function setProductCertifications($productCertifications)
+        {
+        }
+        /**
+         * @return ProductCertification[]
+         */
+        public function getProductCertifications()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ManufacturerCenter\ListProductCertificationsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The product certifications from the specified certification body.
-     *
-     * @param ProductCertification[] $productCertifications
-     */
-    public function setProductCertifications($productCertifications)
-    {
-    }
-    /**
-     * @return ProductCertification[]
-     */
-    public function getProductCertifications()
+    class Google_Service_ManufacturerCenter_ListProductCertificationsResponse extends \Google\Service\ManufacturerCenter\ListProductCertificationsResponse
     {
     }
 }

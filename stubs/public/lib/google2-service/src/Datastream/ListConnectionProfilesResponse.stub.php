@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class ListConnectionProfilesResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $connectionProfilesType = ConnectionProfile::class;
-    protected $connectionProfilesDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * List of connection profiles.
-     *
-     * @param ConnectionProfile[] $connectionProfiles
-     */
-    public function setConnectionProfiles($connectionProfiles)
+namespace Google\Service\Datastream {
+    class ListConnectionProfilesResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $connectionProfilesType = ConnectionProfile::class;
+        protected $connectionProfilesDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * List of connection profiles.
+         *
+         * @param ConnectionProfile[] $connectionProfiles
+         */
+        public function setConnectionProfiles($connectionProfiles)
+        {
+        }
+        /**
+         * @return ConnectionProfile[]
+         */
+        public function getConnectionProfiles()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ConnectionProfile[]
+     * Runtime class alias of \Google\Service\Datastream\ListConnectionProfilesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConnectionProfiles()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_Datastream_ListConnectionProfilesResponse extends \Google\Service\Datastream\ListConnectionProfilesResponse
     {
     }
 }

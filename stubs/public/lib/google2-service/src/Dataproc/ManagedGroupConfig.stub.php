@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class ManagedGroupConfig extends \Google\Model
-{
-    /**
-     * Output only. The name of the Instance Group Manager for this group.
-     *
-     * @var string
-     */
-    public $instanceGroupManagerName;
-    /**
-     * Output only. The partial URI to the instance group manager for this group.
-     * E.g. projects/my-project/regions/us-central1/instanceGroupManagers/my-igm.
-     *
-     * @var string
-     */
-    public $instanceGroupManagerUri;
-    /**
-     * Output only. The name of the Instance Template used for the Managed
-     * Instance Group.
-     *
-     * @var string
-     */
-    public $instanceTemplateName;
-    /**
-     * Output only. The name of the Instance Group Manager for this group.
-     *
-     * @param string $instanceGroupManagerName
-     */
-    public function setInstanceGroupManagerName($instanceGroupManagerName)
+namespace Google\Service\Dataproc {
+    class ManagedGroupConfig extends \Google\Model
     {
+        /**
+         * Output only. The name of the Instance Group Manager for this group.
+         *
+         * @var string
+         */
+        public $instanceGroupManagerName;
+        /**
+         * Output only. The partial URI to the instance group manager for this group.
+         * E.g. projects/my-project/regions/us-central1/instanceGroupManagers/my-igm.
+         *
+         * @var string
+         */
+        public $instanceGroupManagerUri;
+        /**
+         * Output only. The name of the Instance Template used for the Managed
+         * Instance Group.
+         *
+         * @var string
+         */
+        public $instanceTemplateName;
+        /**
+         * Output only. The name of the Instance Group Manager for this group.
+         *
+         * @param string $instanceGroupManagerName
+         */
+        public function setInstanceGroupManagerName($instanceGroupManagerName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstanceGroupManagerName()
+        {
+        }
+        /**
+         * Output only. The partial URI to the instance group manager for this group.
+         * E.g. projects/my-project/regions/us-central1/instanceGroupManagers/my-igm.
+         *
+         * @param string $instanceGroupManagerUri
+         */
+        public function setInstanceGroupManagerUri($instanceGroupManagerUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstanceGroupManagerUri()
+        {
+        }
+        /**
+         * Output only. The name of the Instance Template used for the Managed
+         * Instance Group.
+         *
+         * @param string $instanceTemplateName
+         */
+        public function setInstanceTemplateName($instanceTemplateName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstanceTemplateName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\ManagedGroupConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstanceGroupManagerName()
-    {
-    }
-    /**
-     * Output only. The partial URI to the instance group manager for this group.
-     * E.g. projects/my-project/regions/us-central1/instanceGroupManagers/my-igm.
-     *
-     * @param string $instanceGroupManagerUri
-     */
-    public function setInstanceGroupManagerUri($instanceGroupManagerUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstanceGroupManagerUri()
-    {
-    }
-    /**
-     * Output only. The name of the Instance Template used for the Managed
-     * Instance Group.
-     *
-     * @param string $instanceTemplateName
-     */
-    public function setInstanceTemplateName($instanceTemplateName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstanceTemplateName()
+    class Google_Service_Dataproc_ManagedGroupConfig extends \Google\Service\Dataproc\ManagedGroupConfig
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Config;
-
-class ExportPreviewResultResponse extends \Google\Model
-{
-    protected $resultType = PreviewResult::class;
-    protected $resultDataType = '';
-    /**
-     * Output only. Signed URLs for accessing the plan files.
-     *
-     * @param PreviewResult $result
-     */
-    public function setResult(PreviewResult $result)
+namespace Google\Service\Config {
+    class ExportPreviewResultResponse extends \Google\Model
     {
+        protected $resultType = PreviewResult::class;
+        protected $resultDataType = '';
+        /**
+         * Output only. Signed URLs for accessing the plan files.
+         *
+         * @param PreviewResult $result
+         */
+        public function setResult(PreviewResult $result)
+        {
+        }
+        /**
+         * @return PreviewResult
+         */
+        public function getResult()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PreviewResult
+     * Runtime class alias of \Google\Service\Config\ExportPreviewResultResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResult()
+    class Google_Service_Config_ExportPreviewResultResponse extends \Google\Service\Config\ExportPreviewResultResponse
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class DfareportingFileUrls extends \Google\Model
-{
-    /**
-     * The URL for downloading the report data through the API.
-     *
-     * @var string
-     */
-    public $apiUrl;
-    /**
-     * The URL for downloading the report data through a browser.
-     *
-     * @var string
-     */
-    public $browserUrl;
-    /**
-     * The URL for downloading the report data through the API.
-     *
-     * @param string $apiUrl
-     */
-    public function setApiUrl($apiUrl)
+namespace Google\Service\Dfareporting {
+    class DfareportingFileUrls extends \Google\Model
     {
+        /**
+         * The URL for downloading the report data through the API.
+         *
+         * @var string
+         */
+        public $apiUrl;
+        /**
+         * The URL for downloading the report data through a browser.
+         *
+         * @var string
+         */
+        public $browserUrl;
+        /**
+         * The URL for downloading the report data through the API.
+         *
+         * @param string $apiUrl
+         */
+        public function setApiUrl($apiUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApiUrl()
+        {
+        }
+        /**
+         * The URL for downloading the report data through a browser.
+         *
+         * @param string $browserUrl
+         */
+        public function setBrowserUrl($browserUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBrowserUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\DfareportingFileUrls registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiUrl()
-    {
-    }
-    /**
-     * The URL for downloading the report data through a browser.
-     *
-     * @param string $browserUrl
-     */
-    public function setBrowserUrl($browserUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBrowserUrl()
+    class Google_Service_Dfareporting_DfareportingFileUrls extends \Google\Service\Dfareporting\DfareportingFileUrls
     {
     }
 }

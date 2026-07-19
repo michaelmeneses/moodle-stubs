@@ -21,33 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin\Resource;
-
-/**
- * The "flags" collection of methods.
- * Typical usage is:
- *  <code>
- *   $sqladminService = new Google\Service\SQLAdmin(...);
- *   $flags = $sqladminService->flags;
- *  </code>
- */
-class Flags extends \Google\Service\Resource
-{
+namespace Google\Service\SQLAdmin\Resource {
+    use Google\Service\SQLAdmin\FlagsListResponse;
     /**
-     * Lists all available database flags for Cloud SQL instances. (flags.listFlags)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string databaseVersion Database type and version you want to
-     * retrieve flags for. By default, this method returns flags for all database
-     * types and versions.
-     * @opt_param string flagScope Optional. Specify the scope of flags to be
-     * returned by SqlFlagsListService. Return list of database flags if
-     * unspecified.
-     * @return FlagsListResponse
-     * @throws \Google\Service\Exception
+     * The "flags" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $sqladminService = new Google\Service\SQLAdmin(...);
+     *   $flags = $sqladminService->flags;
+     *  </code>
      */
-    public function listFlags($optParams = [])
+    class Flags extends \Google\Service\Resource
+    {
+        /**
+         * Lists all available database flags for Cloud SQL instances. (flags.listFlags)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string databaseVersion Database type and version you want to
+         * retrieve flags for. By default, this method returns flags for all database
+         * types and versions.
+         * @opt_param string flagScope Optional. Specify the scope of flags to be
+         * returned by SqlFlagsListService. Return list of database flags if
+         * unspecified.
+         * @return FlagsListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listFlags($optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\SQLAdmin\Resource\Flags registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_SQLAdmin_Resource_Flags extends \Google\Service\SQLAdmin\Resource\Flags
     {
     }
 }

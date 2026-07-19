@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleDevtoolsCloudbuildV1FileHashes extends \Google\Collection
-{
-    protected $collection_key = 'fileHash';
-    protected $fileHashType = GoogleDevtoolsCloudbuildV1Hash::class;
-    protected $fileHashDataType = 'array';
-    /**
-     * Collection of file hashes.
-     *
-     * @param GoogleDevtoolsCloudbuildV1Hash[] $fileHash
-     */
-    public function setFileHash($fileHash)
+namespace Google\Service\CloudRun {
+    class GoogleDevtoolsCloudbuildV1FileHashes extends \Google\Collection
     {
+        protected $collection_key = 'fileHash';
+        protected $fileHashType = GoogleDevtoolsCloudbuildV1Hash::class;
+        protected $fileHashDataType = 'array';
+        /**
+         * Collection of file hashes.
+         *
+         * @param GoogleDevtoolsCloudbuildV1Hash[] $fileHash
+         */
+        public function setFileHash($fileHash)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsCloudbuildV1Hash[]
+         */
+        public function getFileHash()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleDevtoolsCloudbuildV1Hash[]
+     * Runtime class alias of \Google\Service\CloudRun\GoogleDevtoolsCloudbuildV1FileHashes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFileHash()
+    class Google_Service_CloudRun_GoogleDevtoolsCloudbuildV1FileHashes extends \Google\Service\CloudRun\GoogleDevtoolsCloudbuildV1FileHashes
     {
     }
 }

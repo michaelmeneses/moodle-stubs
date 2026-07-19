@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Iam;
-
-class PatchServiceAccountRequest extends \Google\Model
-{
-    protected $serviceAccountType = ServiceAccount::class;
-    protected $serviceAccountDataType = '';
-    public $serviceAccount;
-    /**
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * @param ServiceAccount
-     */
-    public function setServiceAccount(ServiceAccount $serviceAccount)
+namespace Google\Service\Iam {
+    class PatchServiceAccountRequest extends \Google\Model
     {
+        protected $serviceAccountType = ServiceAccount::class;
+        protected $serviceAccountDataType = '';
+        public $serviceAccount;
+        /**
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * @param ServiceAccount
+         */
+        public function setServiceAccount(ServiceAccount $serviceAccount)
+        {
+        }
+        /**
+         * @return ServiceAccount
+         */
+        public function getServiceAccount()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ServiceAccount
+     * Runtime class alias of \Google\Service\Iam\PatchServiceAccountRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getServiceAccount()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_Iam_PatchServiceAccountRequest extends \Google\Service\Iam\PatchServiceAccountRequest
     {
     }
 }

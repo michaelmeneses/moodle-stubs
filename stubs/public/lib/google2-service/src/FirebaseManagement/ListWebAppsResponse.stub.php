@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseManagement;
-
-class ListWebAppsResponse extends \Google\Collection
-{
-    protected $collection_key = 'apps';
-    protected $appsType = WebApp::class;
-    protected $appsDataType = 'array';
-    /**
-     * If the result list is too large to fit in a single response, then a token
-     * is returned. If the string is empty, then this response is the last page of
-     * results. This token can be used in a subsequent call to `ListWebApps` to
-     * find the next group of Apps. Page tokens are short-lived and should not be
-     * persisted.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of each `WebApp` associated with the specified `FirebaseProject`.
-     *
-     * @param WebApp[] $apps
-     */
-    public function setApps($apps)
+namespace Google\Service\FirebaseManagement {
+    class ListWebAppsResponse extends \Google\Collection
     {
+        protected $collection_key = 'apps';
+        protected $appsType = WebApp::class;
+        protected $appsDataType = 'array';
+        /**
+         * If the result list is too large to fit in a single response, then a token
+         * is returned. If the string is empty, then this response is the last page of
+         * results. This token can be used in a subsequent call to `ListWebApps` to
+         * find the next group of Apps. Page tokens are short-lived and should not be
+         * persisted.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of each `WebApp` associated with the specified `FirebaseProject`.
+         *
+         * @param WebApp[] $apps
+         */
+        public function setApps($apps)
+        {
+        }
+        /**
+         * @return WebApp[]
+         */
+        public function getApps()
+        {
+        }
+        /**
+         * If the result list is too large to fit in a single response, then a token
+         * is returned. If the string is empty, then this response is the last page of
+         * results. This token can be used in a subsequent call to `ListWebApps` to
+         * find the next group of Apps. Page tokens are short-lived and should not be
+         * persisted.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return WebApp[]
+     * Runtime class alias of \Google\Service\FirebaseManagement\ListWebAppsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApps()
-    {
-    }
-    /**
-     * If the result list is too large to fit in a single response, then a token
-     * is returned. If the string is empty, then this response is the last page of
-     * results. This token can be used in a subsequent call to `ListWebApps` to
-     * find the next group of Apps. Page tokens are short-lived and should not be
-     * persisted.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_FirebaseManagement_ListWebAppsResponse extends \Google\Service\FirebaseManagement\ListWebAppsResponse
     {
     }
 }

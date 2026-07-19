@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class InsertTableColumnRequest extends \Google\Model
-{
-    /**
-     * Whether to insert new column to the right of the reference cell location. -
-     * `True`: insert to the right. - `False`: insert to the left.
-     *
-     * @var bool
-     */
-    public $insertRight;
-    protected $tableCellLocationType = TableCellLocation::class;
-    protected $tableCellLocationDataType = '';
-    /**
-     * Whether to insert new column to the right of the reference cell location. -
-     * `True`: insert to the right. - `False`: insert to the left.
-     *
-     * @param bool $insertRight
-     */
-    public function setInsertRight($insertRight)
+namespace Google\Service\Docs {
+    class InsertTableColumnRequest extends \Google\Model
     {
+        /**
+         * Whether to insert new column to the right of the reference cell location. -
+         * `True`: insert to the right. - `False`: insert to the left.
+         *
+         * @var bool
+         */
+        public $insertRight;
+        protected $tableCellLocationType = TableCellLocation::class;
+        protected $tableCellLocationDataType = '';
+        /**
+         * Whether to insert new column to the right of the reference cell location. -
+         * `True`: insert to the right. - `False`: insert to the left.
+         *
+         * @param bool $insertRight
+         */
+        public function setInsertRight($insertRight)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getInsertRight()
+        {
+        }
+        /**
+         * The reference table cell location from which columns will be inserted. A
+         * new column will be inserted to the left (or right) of the column where the
+         * reference cell is. If the reference cell is a merged cell, a new column
+         * will be inserted to the left (or right) of the merged cell.
+         *
+         * @param TableCellLocation $tableCellLocation
+         */
+        public function setTableCellLocation(TableCellLocation $tableCellLocation)
+        {
+        }
+        /**
+         * @return TableCellLocation
+         */
+        public function getTableCellLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Docs\InsertTableColumnRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInsertRight()
-    {
-    }
-    /**
-     * The reference table cell location from which columns will be inserted. A
-     * new column will be inserted to the left (or right) of the column where the
-     * reference cell is. If the reference cell is a merged cell, a new column
-     * will be inserted to the left (or right) of the merged cell.
-     *
-     * @param TableCellLocation $tableCellLocation
-     */
-    public function setTableCellLocation(TableCellLocation $tableCellLocation)
-    {
-    }
-    /**
-     * @return TableCellLocation
-     */
-    public function getTableCellLocation()
+    class Google_Service_Docs_InsertTableColumnRequest extends \Google\Service\Docs\InsertTableColumnRequest
     {
     }
 }

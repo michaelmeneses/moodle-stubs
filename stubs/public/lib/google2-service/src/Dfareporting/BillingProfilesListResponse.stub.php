@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class BillingProfilesListResponse extends \Google\Collection
-{
-    protected $collection_key = 'billingProfiles';
-    protected $billingProfilesType = BillingProfile::class;
-    protected $billingProfilesDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#billingProfilesListResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Pagination token to be used for the next list operation.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Billing profiles collection.
-     *
-     * @param BillingProfile[] $billingProfiles
-     */
-    public function setBillingProfiles($billingProfiles)
+namespace Google\Service\Dfareporting {
+    class BillingProfilesListResponse extends \Google\Collection
     {
+        protected $collection_key = 'billingProfiles';
+        protected $billingProfilesType = BillingProfile::class;
+        protected $billingProfilesDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#billingProfilesListResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Pagination token to be used for the next list operation.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Billing profiles collection.
+         *
+         * @param BillingProfile[] $billingProfiles
+         */
+        public function setBillingProfiles($billingProfiles)
+        {
+        }
+        /**
+         * @return BillingProfile[]
+         */
+        public function getBillingProfiles()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#billingProfilesListResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Pagination token to be used for the next list operation.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BillingProfile[]
+     * Runtime class alias of \Google\Service\Dfareporting\BillingProfilesListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBillingProfiles()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#billingProfilesListResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Pagination token to be used for the next list operation.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Dfareporting_BillingProfilesListResponse extends \Google\Service\Dfareporting\BillingProfilesListResponse
     {
     }
 }

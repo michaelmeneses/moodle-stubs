@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSVideoActionMetricsEntry extends \Google\Collection
-{
-    protected $collection_key = 'confidenceMetricsEntries';
-    protected $confidenceMetricsEntriesType = XPSVideoActionMetricsEntryConfidenceMetricsEntry::class;
-    protected $confidenceMetricsEntriesDataType = 'array';
-    /**
-     * The mean average precision.
-     *
-     * @var float
-     */
-    public $meanAveragePrecision;
-    /**
-     * This VideoActionMetricsEntry is calculated based on this prediction window
-     * length. If the predicted action's timestamp is inside the time window whose
-     * center is the ground truth action's timestamp with this specific length,
-     * the prediction result is treated as a true positive.
-     *
-     * @var string
-     */
-    public $precisionWindowLength;
-    /**
-     * Metrics for each label-match confidence_threshold from
-     * 0.05,0.10,...,0.95,0.96,0.97,0.98,0.99.
-     *
-     * @param XPSVideoActionMetricsEntryConfidenceMetricsEntry[] $confidenceMetricsEntries
-     */
-    public function setConfidenceMetricsEntries($confidenceMetricsEntries)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSVideoActionMetricsEntry extends \Google\Collection
     {
+        protected $collection_key = 'confidenceMetricsEntries';
+        protected $confidenceMetricsEntriesType = XPSVideoActionMetricsEntryConfidenceMetricsEntry::class;
+        protected $confidenceMetricsEntriesDataType = 'array';
+        /**
+         * The mean average precision.
+         *
+         * @var float
+         */
+        public $meanAveragePrecision;
+        /**
+         * This VideoActionMetricsEntry is calculated based on this prediction window
+         * length. If the predicted action's timestamp is inside the time window whose
+         * center is the ground truth action's timestamp with this specific length,
+         * the prediction result is treated as a true positive.
+         *
+         * @var string
+         */
+        public $precisionWindowLength;
+        /**
+         * Metrics for each label-match confidence_threshold from
+         * 0.05,0.10,...,0.95,0.96,0.97,0.98,0.99.
+         *
+         * @param XPSVideoActionMetricsEntryConfidenceMetricsEntry[] $confidenceMetricsEntries
+         */
+        public function setConfidenceMetricsEntries($confidenceMetricsEntries)
+        {
+        }
+        /**
+         * @return XPSVideoActionMetricsEntryConfidenceMetricsEntry[]
+         */
+        public function getConfidenceMetricsEntries()
+        {
+        }
+        /**
+         * The mean average precision.
+         *
+         * @param float $meanAveragePrecision
+         */
+        public function setMeanAveragePrecision($meanAveragePrecision)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getMeanAveragePrecision()
+        {
+        }
+        /**
+         * This VideoActionMetricsEntry is calculated based on this prediction window
+         * length. If the predicted action's timestamp is inside the time window whose
+         * center is the ground truth action's timestamp with this specific length,
+         * the prediction result is treated as a true positive.
+         *
+         * @param string $precisionWindowLength
+         */
+        public function setPrecisionWindowLength($precisionWindowLength)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrecisionWindowLength()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return XPSVideoActionMetricsEntryConfidenceMetricsEntry[]
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSVideoActionMetricsEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfidenceMetricsEntries()
-    {
-    }
-    /**
-     * The mean average precision.
-     *
-     * @param float $meanAveragePrecision
-     */
-    public function setMeanAveragePrecision($meanAveragePrecision)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getMeanAveragePrecision()
-    {
-    }
-    /**
-     * This VideoActionMetricsEntry is calculated based on this prediction window
-     * length. If the predicted action's timestamp is inside the time window whose
-     * center is the ground truth action's timestamp with this specific length,
-     * the prediction result is treated as a true positive.
-     *
-     * @param string $precisionWindowLength
-     */
-    public function setPrecisionWindowLength($precisionWindowLength)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrecisionWindowLength()
+    class Google_Service_CloudNaturalLanguage_XPSVideoActionMetricsEntry extends \Google\Service\CloudNaturalLanguage\XPSVideoActionMetricsEntry
     {
     }
 }

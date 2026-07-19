@@ -21,158 +21,167 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsData;
-
-class RunPivotReportResponse extends \Google\Collection
-{
-    protected $collection_key = 'rows';
-    protected $aggregatesType = Row::class;
-    protected $aggregatesDataType = 'array';
-    protected $dimensionHeadersType = DimensionHeader::class;
-    protected $dimensionHeadersDataType = 'array';
-    /**
-     * Identifies what kind of resource this message is. This `kind` is always the
-     * fixed string "analyticsData#runPivotReport". Useful to distinguish between
-     * response types in JSON.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $metadataType = ResponseMetaData::class;
-    protected $metadataDataType = '';
-    protected $metricHeadersType = MetricHeader::class;
-    protected $metricHeadersDataType = 'array';
-    protected $pivotHeadersType = PivotHeader::class;
-    protected $pivotHeadersDataType = 'array';
-    protected $propertyQuotaType = PropertyQuota::class;
-    protected $propertyQuotaDataType = '';
-    protected $rowsType = Row::class;
-    protected $rowsDataType = 'array';
-    /**
-     * Aggregation of metric values. Can be totals, minimums, or maximums. The
-     * returned aggregations are controlled by the metric_aggregations in the
-     * pivot. The type of aggregation returned in each row is shown by the
-     * dimension_values which are set to "RESERVED_".
-     *
-     * @param Row[] $aggregates
-     */
-    public function setAggregates($aggregates)
+namespace Google\Service\AnalyticsData {
+    class RunPivotReportResponse extends \Google\Collection
     {
+        protected $collection_key = 'rows';
+        protected $aggregatesType = Row::class;
+        protected $aggregatesDataType = 'array';
+        protected $dimensionHeadersType = DimensionHeader::class;
+        protected $dimensionHeadersDataType = 'array';
+        /**
+         * Identifies what kind of resource this message is. This `kind` is always the
+         * fixed string "analyticsData#runPivotReport". Useful to distinguish between
+         * response types in JSON.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $metadataType = ResponseMetaData::class;
+        protected $metadataDataType = '';
+        protected $metricHeadersType = MetricHeader::class;
+        protected $metricHeadersDataType = 'array';
+        protected $pivotHeadersType = PivotHeader::class;
+        protected $pivotHeadersDataType = 'array';
+        protected $propertyQuotaType = PropertyQuota::class;
+        protected $propertyQuotaDataType = '';
+        protected $rowsType = Row::class;
+        protected $rowsDataType = 'array';
+        /**
+         * Aggregation of metric values. Can be totals, minimums, or maximums. The
+         * returned aggregations are controlled by the metric_aggregations in the
+         * pivot. The type of aggregation returned in each row is shown by the
+         * dimension_values which are set to "RESERVED_".
+         *
+         * @param Row[] $aggregates
+         */
+        public function setAggregates($aggregates)
+        {
+        }
+        /**
+         * @return Row[]
+         */
+        public function getAggregates()
+        {
+        }
+        /**
+         * Describes dimension columns. The number of DimensionHeaders and ordering of
+         * DimensionHeaders matches the dimensions present in rows.
+         *
+         * @param DimensionHeader[] $dimensionHeaders
+         */
+        public function setDimensionHeaders($dimensionHeaders)
+        {
+        }
+        /**
+         * @return DimensionHeader[]
+         */
+        public function getDimensionHeaders()
+        {
+        }
+        /**
+         * Identifies what kind of resource this message is. This `kind` is always the
+         * fixed string "analyticsData#runPivotReport". Useful to distinguish between
+         * response types in JSON.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Metadata for the report.
+         *
+         * @param ResponseMetaData $metadata
+         */
+        public function setMetadata(ResponseMetaData $metadata)
+        {
+        }
+        /**
+         * @return ResponseMetaData
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * Describes metric columns. The number of MetricHeaders and ordering of
+         * MetricHeaders matches the metrics present in rows.
+         *
+         * @param MetricHeader[] $metricHeaders
+         */
+        public function setMetricHeaders($metricHeaders)
+        {
+        }
+        /**
+         * @return MetricHeader[]
+         */
+        public function getMetricHeaders()
+        {
+        }
+        /**
+         * Summarizes the columns and rows created by a pivot. Each pivot in the
+         * request produces one header in the response. If we have a request like
+         * this: "pivots": [{ "fieldNames": ["country", "city"] }, { "fieldNames":
+         * "eventName" }] We will have the following `pivotHeaders` in the response:
+         * "pivotHeaders" : [{ "dimensionHeaders": [{ "dimensionValues": [ { "value":
+         * "United Kingdom" }, { "value": "London" } ] }, { "dimensionValues": [ {
+         * "value": "Japan" }, { "value": "Osaka" } ] }] }, { "dimensionHeaders": [{
+         * "dimensionValues": [{ "value": "session_start" }] }, { "dimensionValues":
+         * [{ "value": "scroll" }] }] }]
+         *
+         * @param PivotHeader[] $pivotHeaders
+         */
+        public function setPivotHeaders($pivotHeaders)
+        {
+        }
+        /**
+         * @return PivotHeader[]
+         */
+        public function getPivotHeaders()
+        {
+        }
+        /**
+         * This Google Analytics property's quota state including this request.
+         *
+         * @param PropertyQuota $propertyQuota
+         */
+        public function setPropertyQuota(PropertyQuota $propertyQuota)
+        {
+        }
+        /**
+         * @return PropertyQuota
+         */
+        public function getPropertyQuota()
+        {
+        }
+        /**
+         * Rows of dimension value combinations and metric values in the report.
+         *
+         * @param Row[] $rows
+         */
+        public function setRows($rows)
+        {
+        }
+        /**
+         * @return Row[]
+         */
+        public function getRows()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Row[]
+     * Runtime class alias of \Google\Service\AnalyticsData\RunPivotReportResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAggregates()
-    {
-    }
-    /**
-     * Describes dimension columns. The number of DimensionHeaders and ordering of
-     * DimensionHeaders matches the dimensions present in rows.
-     *
-     * @param DimensionHeader[] $dimensionHeaders
-     */
-    public function setDimensionHeaders($dimensionHeaders)
-    {
-    }
-    /**
-     * @return DimensionHeader[]
-     */
-    public function getDimensionHeaders()
-    {
-    }
-    /**
-     * Identifies what kind of resource this message is. This `kind` is always the
-     * fixed string "analyticsData#runPivotReport". Useful to distinguish between
-     * response types in JSON.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Metadata for the report.
-     *
-     * @param ResponseMetaData $metadata
-     */
-    public function setMetadata(ResponseMetaData $metadata)
-    {
-    }
-    /**
-     * @return ResponseMetaData
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * Describes metric columns. The number of MetricHeaders and ordering of
-     * MetricHeaders matches the metrics present in rows.
-     *
-     * @param MetricHeader[] $metricHeaders
-     */
-    public function setMetricHeaders($metricHeaders)
-    {
-    }
-    /**
-     * @return MetricHeader[]
-     */
-    public function getMetricHeaders()
-    {
-    }
-    /**
-     * Summarizes the columns and rows created by a pivot. Each pivot in the
-     * request produces one header in the response. If we have a request like
-     * this: "pivots": [{ "fieldNames": ["country", "city"] }, { "fieldNames":
-     * "eventName" }] We will have the following `pivotHeaders` in the response:
-     * "pivotHeaders" : [{ "dimensionHeaders": [{ "dimensionValues": [ { "value":
-     * "United Kingdom" }, { "value": "London" } ] }, { "dimensionValues": [ {
-     * "value": "Japan" }, { "value": "Osaka" } ] }] }, { "dimensionHeaders": [{
-     * "dimensionValues": [{ "value": "session_start" }] }, { "dimensionValues":
-     * [{ "value": "scroll" }] }] }]
-     *
-     * @param PivotHeader[] $pivotHeaders
-     */
-    public function setPivotHeaders($pivotHeaders)
-    {
-    }
-    /**
-     * @return PivotHeader[]
-     */
-    public function getPivotHeaders()
-    {
-    }
-    /**
-     * This Google Analytics property's quota state including this request.
-     *
-     * @param PropertyQuota $propertyQuota
-     */
-    public function setPropertyQuota(PropertyQuota $propertyQuota)
-    {
-    }
-    /**
-     * @return PropertyQuota
-     */
-    public function getPropertyQuota()
-    {
-    }
-    /**
-     * Rows of dimension value combinations and metric values in the report.
-     *
-     * @param Row[] $rows
-     */
-    public function setRows($rows)
-    {
-    }
-    /**
-     * @return Row[]
-     */
-    public function getRows()
+    class Google_Service_AnalyticsData_RunPivotReportResponse extends \Google\Service\AnalyticsData\RunPivotReportResponse
     {
     }
 }

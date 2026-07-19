@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailLoggingSourceLocation extends \Google\Model
-{
-    /**
-     * Human-readable name of a function or method. For example,
-     * "google.cloud.retail.v2.UserEventService.ImportUserEvents".
-     *
-     * @var string
-     */
-    public $functionName;
-    /**
-     * Human-readable name of a function or method. For example,
-     * "google.cloud.retail.v2.UserEventService.ImportUserEvents".
-     *
-     * @param string $functionName
-     */
-    public function setFunctionName($functionName)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailLoggingSourceLocation extends \Google\Model
     {
+        /**
+         * Human-readable name of a function or method. For example,
+         * "google.cloud.retail.v2.UserEventService.ImportUserEvents".
+         *
+         * @var string
+         */
+        public $functionName;
+        /**
+         * Human-readable name of a function or method. For example,
+         * "google.cloud.retail.v2.UserEventService.ImportUserEvents".
+         *
+         * @param string $functionName
+         */
+        public function setFunctionName($functionName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFunctionName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailLoggingSourceLocation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFunctionName()
+    class Google_Service_CloudRetail_GoogleCloudRetailLoggingSourceLocation extends \Google\Service\CloudRetail\GoogleCloudRetailLoggingSourceLocation
     {
     }
 }

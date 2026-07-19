@@ -21,16 +21,25 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SubscriptionLinking\Resource;
-
-/**
- * The "publications" collection of methods.
- * Typical usage is:
- *  <code>
- *   $readerrevenuesubscriptionlinkingService = new Google\Service\SubscriptionLinking(...);
- *   $publications = $readerrevenuesubscriptionlinkingService->publications;
- *  </code>
- */
-class Publications extends \Google\Service\Resource
-{
+namespace Google\Service\SubscriptionLinking\Resource {
+    /**
+     * The "publications" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $readerrevenuesubscriptionlinkingService = new Google\Service\SubscriptionLinking(...);
+     *   $publications = $readerrevenuesubscriptionlinkingService->publications;
+     *  </code>
+     */
+    class Publications extends \Google\Service\Resource
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\SubscriptionLinking\Resource\Publications registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_SubscriptionLinking_Resource_Publications extends \Google\Service\SubscriptionLinking\Resource\Publications
+    {
+    }
 }

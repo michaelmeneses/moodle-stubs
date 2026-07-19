@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1CheckGroundingSpec extends \Google\Model
-{
-    /**
-     * The threshold (in [0,1]) used for determining whether a fact must be cited
-     * for a claim in the answer candidate. Choosing a higher threshold will lead
-     * to fewer but very strong citations, while choosing a lower threshold may
-     * lead to more but somewhat weaker citations. If unset, the threshold will
-     * default to 0.6.
-     *
-     * @var 
-     */
-    public $citationThreshold;
-    /**
-     * The control flag that enables claim-level grounding score in the response.
-     *
-     * @var bool
-     */
-    public $enableClaimLevelScore;
-    public function setCitationThreshold($citationThreshold)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1CheckGroundingSpec extends \Google\Model
     {
+        /**
+         * The threshold (in [0,1]) used for determining whether a fact must be cited
+         * for a claim in the answer candidate. Choosing a higher threshold will lead
+         * to fewer but very strong citations, while choosing a lower threshold may
+         * lead to more but somewhat weaker citations. If unset, the threshold will
+         * default to 0.6.
+         *
+         * @var 
+         */
+        public $citationThreshold;
+        /**
+         * The control flag that enables claim-level grounding score in the response.
+         *
+         * @var bool
+         */
+        public $enableClaimLevelScore;
+        public function setCitationThreshold($citationThreshold)
+        {
+        }
+        public function getCitationThreshold()
+        {
+        }
+        /**
+         * The control flag that enables claim-level grounding score in the response.
+         *
+         * @param bool $enableClaimLevelScore
+         */
+        public function setEnableClaimLevelScore($enableClaimLevelScore)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableClaimLevelScore()
+        {
+        }
     }
-    public function getCitationThreshold()
-    {
-    }
+}
+namespace {
     /**
-     * The control flag that enables claim-level grounding score in the response.
-     *
-     * @param bool $enableClaimLevelScore
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1CheckGroundingSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setEnableClaimLevelScore($enableClaimLevelScore)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnableClaimLevelScore()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1CheckGroundingSpec extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1CheckGroundingSpec
     {
     }
 }

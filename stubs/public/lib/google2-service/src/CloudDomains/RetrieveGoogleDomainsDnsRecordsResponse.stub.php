@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDomains;
-
-class RetrieveGoogleDomainsDnsRecordsResponse extends \Google\Collection
-{
-    protected $collection_key = 'rrset';
-    /**
-     * When present, there are more results to retrieve. Set `page_token` to this
-     * value on a subsequent call to get the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $rrsetType = ResourceRecordSet::class;
-    protected $rrsetDataType = 'array';
-    /**
-     * When present, there are more results to retrieve. Set `page_token` to this
-     * value on a subsequent call to get the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\CloudDomains {
+    class RetrieveGoogleDomainsDnsRecordsResponse extends \Google\Collection
     {
+        protected $collection_key = 'rrset';
+        /**
+         * When present, there are more results to retrieve. Set `page_token` to this
+         * value on a subsequent call to get the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $rrsetType = ResourceRecordSet::class;
+        protected $rrsetDataType = 'array';
+        /**
+         * When present, there are more results to retrieve. Set `page_token` to this
+         * value on a subsequent call to get the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The resource record set resources (DNS Zone records).
+         *
+         * @param ResourceRecordSet[] $rrset
+         */
+        public function setRrset($rrset)
+        {
+        }
+        /**
+         * @return ResourceRecordSet[]
+         */
+        public function getRrset()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDomains\RetrieveGoogleDomainsDnsRecordsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The resource record set resources (DNS Zone records).
-     *
-     * @param ResourceRecordSet[] $rrset
-     */
-    public function setRrset($rrset)
-    {
-    }
-    /**
-     * @return ResourceRecordSet[]
-     */
-    public function getRrset()
+    class Google_Service_CloudDomains_RetrieveGoogleDomainsDnsRecordsResponse extends \Google\Service\CloudDomains\RetrieveGoogleDomainsDnsRecordsResponse
     {
     }
 }

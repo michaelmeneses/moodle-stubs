@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataprocMetastore;
-
-class GoogleCloudMetastoreV2AuxiliaryVersionConfig extends \Google\Collection
-{
-    protected $collection_key = 'endpoints';
-    /**
-     * @var string[]
-     */
-    public $configOverrides;
-    protected $endpointsType = GoogleCloudMetastoreV2Endpoint::class;
-    protected $endpointsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $version;
-    /**
-     * @param string[]
-     */
-    public function setConfigOverrides($configOverrides)
+namespace Google\Service\DataprocMetastore {
+    class GoogleCloudMetastoreV2AuxiliaryVersionConfig extends \Google\Collection
     {
+        protected $collection_key = 'endpoints';
+        /**
+         * @var string[]
+         */
+        public $configOverrides;
+        protected $endpointsType = GoogleCloudMetastoreV2Endpoint::class;
+        protected $endpointsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $version;
+        /**
+         * @param string[]
+         */
+        public function setConfigOverrides($configOverrides)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getConfigOverrides()
+        {
+        }
+        /**
+         * @param GoogleCloudMetastoreV2Endpoint[]
+         */
+        public function setEndpoints($endpoints)
+        {
+        }
+        /**
+         * @return GoogleCloudMetastoreV2Endpoint[]
+         */
+        public function getEndpoints()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\DataprocMetastore\GoogleCloudMetastoreV2AuxiliaryVersionConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfigOverrides()
-    {
-    }
-    /**
-     * @param GoogleCloudMetastoreV2Endpoint[]
-     */
-    public function setEndpoints($endpoints)
-    {
-    }
-    /**
-     * @return GoogleCloudMetastoreV2Endpoint[]
-     */
-    public function getEndpoints()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_DataprocMetastore_GoogleCloudMetastoreV2AuxiliaryVersionConfig extends \Google\Service\DataprocMetastore\GoogleCloudMetastoreV2AuxiliaryVersionConfig
     {
     }
 }

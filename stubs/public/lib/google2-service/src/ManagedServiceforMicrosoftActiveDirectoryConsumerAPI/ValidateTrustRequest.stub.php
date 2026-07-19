@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI;
-
-class ValidateTrustRequest extends \Google\Model
-{
-    protected $trustType = Trust::class;
-    protected $trustDataType = '';
-    /**
-     * Required. The domain trust to validate trust state for.
-     *
-     * @param Trust $trust
-     */
-    public function setTrust(Trust $trust)
+namespace Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI {
+    class ValidateTrustRequest extends \Google\Model
     {
+        protected $trustType = Trust::class;
+        protected $trustDataType = '';
+        /**
+         * Required. The domain trust to validate trust state for.
+         *
+         * @param Trust $trust
+         */
+        public function setTrust(Trust $trust)
+        {
+        }
+        /**
+         * @return Trust
+         */
+        public function getTrust()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Trust
+     * Runtime class alias of \Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\ValidateTrustRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTrust()
+    class Google_Service_ManagedServiceforMicrosoftActiveDirectoryConsumerAPI_ValidateTrustRequest extends \Google\Service\ManagedServiceforMicrosoftActiveDirectoryConsumerAPI\ValidateTrustRequest
     {
     }
 }

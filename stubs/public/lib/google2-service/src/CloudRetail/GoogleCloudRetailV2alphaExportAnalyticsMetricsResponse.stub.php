@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2alphaExportAnalyticsMetricsResponse extends \Google\Collection
-{
-    protected $collection_key = 'errorSamples';
-    protected $errorSamplesType = GoogleRpcStatus::class;
-    protected $errorSamplesDataType = 'array';
-    protected $errorsConfigType = GoogleCloudRetailV2alphaExportErrorsConfig::class;
-    protected $errorsConfigDataType = '';
-    protected $outputResultType = GoogleCloudRetailV2alphaOutputResult::class;
-    protected $outputResultDataType = '';
-    /**
-     * A sample of errors encountered while processing the request.
-     *
-     * @param GoogleRpcStatus[] $errorSamples
-     */
-    public function setErrorSamples($errorSamples)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2alphaExportAnalyticsMetricsResponse extends \Google\Collection
     {
+        protected $collection_key = 'errorSamples';
+        protected $errorSamplesType = GoogleRpcStatus::class;
+        protected $errorSamplesDataType = 'array';
+        protected $errorsConfigType = GoogleCloudRetailV2alphaExportErrorsConfig::class;
+        protected $errorsConfigDataType = '';
+        protected $outputResultType = GoogleCloudRetailV2alphaOutputResult::class;
+        protected $outputResultDataType = '';
+        /**
+         * A sample of errors encountered while processing the request.
+         *
+         * @param GoogleRpcStatus[] $errorSamples
+         */
+        public function setErrorSamples($errorSamples)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus[]
+         */
+        public function getErrorSamples()
+        {
+        }
+        /**
+         * This field is never set.
+         *
+         * @param GoogleCloudRetailV2alphaExportErrorsConfig $errorsConfig
+         */
+        public function setErrorsConfig(GoogleCloudRetailV2alphaExportErrorsConfig $errorsConfig)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2alphaExportErrorsConfig
+         */
+        public function getErrorsConfig()
+        {
+        }
+        /**
+         * Output result indicating where the data were exported to.
+         *
+         * @param GoogleCloudRetailV2alphaOutputResult $outputResult
+         */
+        public function setOutputResult(GoogleCloudRetailV2alphaOutputResult $outputResult)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2alphaOutputResult
+         */
+        public function getOutputResult()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleRpcStatus[]
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2alphaExportAnalyticsMetricsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getErrorSamples()
-    {
-    }
-    /**
-     * This field is never set.
-     *
-     * @param GoogleCloudRetailV2alphaExportErrorsConfig $errorsConfig
-     */
-    public function setErrorsConfig(GoogleCloudRetailV2alphaExportErrorsConfig $errorsConfig)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2alphaExportErrorsConfig
-     */
-    public function getErrorsConfig()
-    {
-    }
-    /**
-     * Output result indicating where the data were exported to.
-     *
-     * @param GoogleCloudRetailV2alphaOutputResult $outputResult
-     */
-    public function setOutputResult(GoogleCloudRetailV2alphaOutputResult $outputResult)
-    {
-    }
-    /**
-     * @return GoogleCloudRetailV2alphaOutputResult
-     */
-    public function getOutputResult()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2alphaExportAnalyticsMetricsResponse extends \Google\Service\CloudRetail\GoogleCloudRetailV2alphaExportAnalyticsMetricsResponse
     {
     }
 }

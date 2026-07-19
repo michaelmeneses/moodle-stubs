@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class AutoscalingSettings extends \Google\Model
-{
-    /**
-     * The algorithm is unknown, or unspecified.
-     */
-    public const ALGORITHM_AUTOSCALING_ALGORITHM_UNKNOWN = 'AUTOSCALING_ALGORITHM_UNKNOWN';
-    /**
-     * Disable autoscaling.
-     */
-    public const ALGORITHM_AUTOSCALING_ALGORITHM_NONE = 'AUTOSCALING_ALGORITHM_NONE';
-    /**
-     * Increase worker count over time to reduce job execution time.
-     */
-    public const ALGORITHM_AUTOSCALING_ALGORITHM_BASIC = 'AUTOSCALING_ALGORITHM_BASIC';
-    /**
-     * The algorithm to use for autoscaling.
-     *
-     * @var string
-     */
-    public $algorithm;
-    /**
-     * The maximum number of workers to cap scaling at.
-     *
-     * @var int
-     */
-    public $maxNumWorkers;
-    /**
-     * The algorithm to use for autoscaling.
-     *
-     * Accepted values: AUTOSCALING_ALGORITHM_UNKNOWN, AUTOSCALING_ALGORITHM_NONE,
-     * AUTOSCALING_ALGORITHM_BASIC
-     *
-     * @param self::ALGORITHM_* $algorithm
-     */
-    public function setAlgorithm($algorithm)
+namespace Google\Service\Dataflow {
+    class AutoscalingSettings extends \Google\Model
     {
+        /**
+         * The algorithm is unknown, or unspecified.
+         */
+        public const ALGORITHM_AUTOSCALING_ALGORITHM_UNKNOWN = 'AUTOSCALING_ALGORITHM_UNKNOWN';
+        /**
+         * Disable autoscaling.
+         */
+        public const ALGORITHM_AUTOSCALING_ALGORITHM_NONE = 'AUTOSCALING_ALGORITHM_NONE';
+        /**
+         * Increase worker count over time to reduce job execution time.
+         */
+        public const ALGORITHM_AUTOSCALING_ALGORITHM_BASIC = 'AUTOSCALING_ALGORITHM_BASIC';
+        /**
+         * The algorithm to use for autoscaling.
+         *
+         * @var string
+         */
+        public $algorithm;
+        /**
+         * The maximum number of workers to cap scaling at.
+         *
+         * @var int
+         */
+        public $maxNumWorkers;
+        /**
+         * The algorithm to use for autoscaling.
+         *
+         * Accepted values: AUTOSCALING_ALGORITHM_UNKNOWN, AUTOSCALING_ALGORITHM_NONE,
+         * AUTOSCALING_ALGORITHM_BASIC
+         *
+         * @param self::ALGORITHM_* $algorithm
+         */
+        public function setAlgorithm($algorithm)
+        {
+        }
+        /**
+         * @return self::ALGORITHM_*
+         */
+        public function getAlgorithm()
+        {
+        }
+        /**
+         * The maximum number of workers to cap scaling at.
+         *
+         * @param int $maxNumWorkers
+         */
+        public function setMaxNumWorkers($maxNumWorkers)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxNumWorkers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ALGORITHM_*
+     * Runtime class alias of \Google\Service\Dataflow\AutoscalingSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlgorithm()
-    {
-    }
-    /**
-     * The maximum number of workers to cap scaling at.
-     *
-     * @param int $maxNumWorkers
-     */
-    public function setMaxNumWorkers($maxNumWorkers)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxNumWorkers()
+    class Google_Service_Dataflow_AutoscalingSettings extends \Google\Service\Dataflow\AutoscalingSettings
     {
     }
 }

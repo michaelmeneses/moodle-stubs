@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class CreateDeveloperMetadataResponse extends \Google\Model
-{
-    protected $developerMetadataType = DeveloperMetadata::class;
-    protected $developerMetadataDataType = '';
-    /**
-     * The developer metadata that was created.
-     *
-     * @param DeveloperMetadata $developerMetadata
-     */
-    public function setDeveloperMetadata(DeveloperMetadata $developerMetadata)
+namespace Google\Service\Sheets {
+    class CreateDeveloperMetadataResponse extends \Google\Model
     {
+        protected $developerMetadataType = DeveloperMetadata::class;
+        protected $developerMetadataDataType = '';
+        /**
+         * The developer metadata that was created.
+         *
+         * @param DeveloperMetadata $developerMetadata
+         */
+        public function setDeveloperMetadata(DeveloperMetadata $developerMetadata)
+        {
+        }
+        /**
+         * @return DeveloperMetadata
+         */
+        public function getDeveloperMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DeveloperMetadata
+     * Runtime class alias of \Google\Service\Sheets\CreateDeveloperMetadataResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeveloperMetadata()
+    class Google_Service_Sheets_CreateDeveloperMetadataResponse extends \Google\Service\Sheets\CreateDeveloperMetadataResponse
     {
     }
 }

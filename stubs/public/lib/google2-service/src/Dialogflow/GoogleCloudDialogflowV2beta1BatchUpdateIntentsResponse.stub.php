@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1BatchUpdateIntentsResponse extends \Google\Collection
-{
-    protected $collection_key = 'intents';
-    protected $intentsType = GoogleCloudDialogflowV2beta1Intent::class;
-    protected $intentsDataType = 'array';
-    /**
-     * The collection of updated or created intents.
-     *
-     * @param GoogleCloudDialogflowV2beta1Intent[] $intents
-     */
-    public function setIntents($intents)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1BatchUpdateIntentsResponse extends \Google\Collection
     {
+        protected $collection_key = 'intents';
+        protected $intentsType = GoogleCloudDialogflowV2beta1Intent::class;
+        protected $intentsDataType = 'array';
+        /**
+         * The collection of updated or created intents.
+         *
+         * @param GoogleCloudDialogflowV2beta1Intent[] $intents
+         */
+        public function setIntents($intents)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2beta1Intent[]
+         */
+        public function getIntents()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowV2beta1Intent[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1BatchUpdateIntentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIntents()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1BatchUpdateIntentsResponse extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1BatchUpdateIntentsResponse
     {
     }
 }

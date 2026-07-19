@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta2DocumentPageAnchor extends \Google\Collection
-{
-    protected $collection_key = 'pageRefs';
-    protected $pageRefsType = GoogleCloudDocumentaiV1beta2DocumentPageAnchorPageRef::class;
-    protected $pageRefsDataType = 'array';
-    /**
-     * @param GoogleCloudDocumentaiV1beta2DocumentPageAnchorPageRef[]
-     */
-    public function setPageRefs($pageRefs)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta2DocumentPageAnchor extends \Google\Collection
     {
+        protected $collection_key = 'pageRefs';
+        protected $pageRefsType = GoogleCloudDocumentaiV1beta2DocumentPageAnchorPageRef::class;
+        protected $pageRefsDataType = 'array';
+        /**
+         * @param GoogleCloudDocumentaiV1beta2DocumentPageAnchorPageRef[]
+         */
+        public function setPageRefs($pageRefs)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta2DocumentPageAnchorPageRef[]
+         */
+        public function getPageRefs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1beta2DocumentPageAnchorPageRef[]
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta2DocumentPageAnchor registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPageRefs()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta2DocumentPageAnchor extends \Google\Service\Document\GoogleCloudDocumentaiV1beta2DocumentPageAnchor
     {
     }
 }

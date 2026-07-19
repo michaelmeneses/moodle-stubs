@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChecksService;
-
-class GoogleChecksReportV1alphaDataTypeEndpointEvidenceAttributedSdk extends \Google\Model
-{
-    protected $sdkType = GoogleChecksReportV1alphaSdk::class;
-    protected $sdkDataType = '';
-    /**
-     * SDK that is attributed to the exfiltration.
-     *
-     * @param GoogleChecksReportV1alphaSdk $sdk
-     */
-    public function setSdk(GoogleChecksReportV1alphaSdk $sdk)
+namespace Google\Service\ChecksService {
+    class GoogleChecksReportV1alphaDataTypeEndpointEvidenceAttributedSdk extends \Google\Model
     {
+        protected $sdkType = GoogleChecksReportV1alphaSdk::class;
+        protected $sdkDataType = '';
+        /**
+         * SDK that is attributed to the exfiltration.
+         *
+         * @param GoogleChecksReportV1alphaSdk $sdk
+         */
+        public function setSdk(GoogleChecksReportV1alphaSdk $sdk)
+        {
+        }
+        /**
+         * @return GoogleChecksReportV1alphaSdk
+         */
+        public function getSdk()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChecksReportV1alphaSdk
+     * Runtime class alias of \Google\Service\ChecksService\GoogleChecksReportV1alphaDataTypeEndpointEvidenceAttributedSdk registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSdk()
+    class Google_Service_ChecksService_GoogleChecksReportV1alphaDataTypeEndpointEvidenceAttributedSdk extends \Google\Service\ChecksService\GoogleChecksReportV1alphaDataTypeEndpointEvidenceAttributedSdk
     {
     }
 }

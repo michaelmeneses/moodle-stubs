@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2KmsWrappedCryptoKey extends \Google\Model
-{
-    /**
-     * Required. The resource name of the KMS CryptoKey to use for unwrapping.
-     *
-     * @var string
-     */
-    public $cryptoKeyName;
-    /**
-     * Required. The wrapped data crypto key.
-     *
-     * @var string
-     */
-    public $wrappedKey;
-    /**
-     * Required. The resource name of the KMS CryptoKey to use for unwrapping.
-     *
-     * @param string $cryptoKeyName
-     */
-    public function setCryptoKeyName($cryptoKeyName)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2KmsWrappedCryptoKey extends \Google\Model
     {
+        /**
+         * Required. The resource name of the KMS CryptoKey to use for unwrapping.
+         *
+         * @var string
+         */
+        public $cryptoKeyName;
+        /**
+         * Required. The wrapped data crypto key.
+         *
+         * @var string
+         */
+        public $wrappedKey;
+        /**
+         * Required. The resource name of the KMS CryptoKey to use for unwrapping.
+         *
+         * @param string $cryptoKeyName
+         */
+        public function setCryptoKeyName($cryptoKeyName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCryptoKeyName()
+        {
+        }
+        /**
+         * Required. The wrapped data crypto key.
+         *
+         * @param string $wrappedKey
+         */
+        public function setWrappedKey($wrappedKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWrappedKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2KmsWrappedCryptoKey registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCryptoKeyName()
-    {
-    }
-    /**
-     * Required. The wrapped data crypto key.
-     *
-     * @param string $wrappedKey
-     */
-    public function setWrappedKey($wrappedKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWrappedKey()
+    class Google_Service_DLP_GooglePrivacyDlpV2KmsWrappedCryptoKey extends \Google\Service\DLP\GooglePrivacyDlpV2KmsWrappedCryptoKey
     {
     }
 }

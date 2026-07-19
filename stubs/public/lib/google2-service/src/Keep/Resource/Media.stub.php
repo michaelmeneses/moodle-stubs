@@ -21,33 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Keep\Resource;
-
-/**
- * The "media" collection of methods.
- * Typical usage is:
- *  <code>
- *   $keepService = new Google\Service\Keep(...);
- *   $media = $keepService->media;
- *  </code>
- */
-class Media extends \Google\Service\Resource
-{
+namespace Google\Service\Keep\Resource {
+    use Google\Service\Keep\Attachment;
     /**
-     * Gets an attachment. To download attachment media via REST requires the
-     * alt=media query parameter. Returns a 400 bad request error if attachment
-     * media is not available in the requested MIME type. (media.download)
-     *
-     * @param string $name Required. The name of the attachment.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string mimeType The IANA MIME type format requested. The requested
-     * MIME type must be one specified in the attachment.mime_type. Required when
-     * downloading attachment media and ignored otherwise.
-     * @return Attachment
-     * @throws \Google\Service\Exception
+     * The "media" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $keepService = new Google\Service\Keep(...);
+     *   $media = $keepService->media;
+     *  </code>
      */
-    public function download($name, $optParams = [])
+    class Media extends \Google\Service\Resource
+    {
+        /**
+         * Gets an attachment. To download attachment media via REST requires the
+         * alt=media query parameter. Returns a 400 bad request error if attachment
+         * media is not available in the requested MIME type. (media.download)
+         *
+         * @param string $name Required. The name of the attachment.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string mimeType The IANA MIME type format requested. The requested
+         * MIME type must be one specified in the attachment.mime_type. Required when
+         * downloading attachment media and ignored otherwise.
+         * @return Attachment
+         * @throws \Google\Service\Exception
+         */
+        public function download($name, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Keep\Resource\Media registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Keep_Resource_Media extends \Google\Service\Keep\Resource\Media
     {
     }
 }

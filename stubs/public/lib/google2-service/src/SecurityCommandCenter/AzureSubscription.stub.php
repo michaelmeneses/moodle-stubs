@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class AzureSubscription extends \Google\Model
-{
-    /**
-     * The display name of the Azure subscription.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The UUID of the Azure subscription, for example,
-     * `291bba3f-e0a5-47bc-a099-3bdcb2a50a05`.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * The display name of the Azure subscription.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\SecurityCommandCenter {
+    class AzureSubscription extends \Google\Model
     {
+        /**
+         * The display name of the Azure subscription.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The UUID of the Azure subscription, for example,
+         * `291bba3f-e0a5-47bc-a099-3bdcb2a50a05`.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * The display name of the Azure subscription.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The UUID of the Azure subscription, for example,
+         * `291bba3f-e0a5-47bc-a099-3bdcb2a50a05`.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\AzureSubscription registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The UUID of the Azure subscription, for example,
-     * `291bba3f-e0a5-47bc-a099-3bdcb2a50a05`.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
+    class Google_Service_SecurityCommandCenter_AzureSubscription extends \Google\Service\SecurityCommandCenter\AzureSubscription
     {
     }
 }

@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1AgentCoachingSuggestionSources extends \Google\Collection
-{
-    protected $collection_key = 'instructionIndexes';
-    /**
-     * Output only. Source instruction indexes for the suggestion. This is the
-     * index of the applicable_instructions field.
-     *
-     * @var int[]
-     */
-    public $instructionIndexes;
-    /**
-     * Output only. Source instruction indexes for the suggestion. This is the
-     * index of the applicable_instructions field.
-     *
-     * @param int[] $instructionIndexes
-     */
-    public function setInstructionIndexes($instructionIndexes)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1AgentCoachingSuggestionSources extends \Google\Collection
     {
+        protected $collection_key = 'instructionIndexes';
+        /**
+         * Output only. Source instruction indexes for the suggestion. This is the
+         * index of the applicable_instructions field.
+         *
+         * @var int[]
+         */
+        public $instructionIndexes;
+        /**
+         * Output only. Source instruction indexes for the suggestion. This is the
+         * index of the applicable_instructions field.
+         *
+         * @param int[] $instructionIndexes
+         */
+        public function setInstructionIndexes($instructionIndexes)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getInstructionIndexes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1AgentCoachingSuggestionSources registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstructionIndexes()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1AgentCoachingSuggestionSources extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1AgentCoachingSuggestionSources
     {
     }
 }

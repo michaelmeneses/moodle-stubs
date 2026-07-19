@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1alpha1SearchKnowledgeAnswer extends \Google\Collection
-{
-    protected $collection_key = 'answerSources';
-    /**
-     * @var string
-     */
-    public $answer;
-    /**
-     * @var string
-     */
-    public $answerRecord;
-    protected $answerSourcesType = GoogleCloudContactcenterinsightsV1alpha1SearchKnowledgeAnswerAnswerSource::class;
-    protected $answerSourcesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $answerType;
-    /**
-     * @var float
-     */
-    public $confidenceScore;
-    /**
-     * @param string
-     */
-    public function setAnswer($answer)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1alpha1SearchKnowledgeAnswer extends \Google\Collection
     {
+        protected $collection_key = 'answerSources';
+        /**
+         * @var string
+         */
+        public $answer;
+        /**
+         * @var string
+         */
+        public $answerRecord;
+        protected $answerSourcesType = GoogleCloudContactcenterinsightsV1alpha1SearchKnowledgeAnswerAnswerSource::class;
+        protected $answerSourcesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $answerType;
+        /**
+         * @var float
+         */
+        public $confidenceScore;
+        /**
+         * @param string
+         */
+        public function setAnswer($answer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnswer()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setAnswerRecord($answerRecord)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnswerRecord()
+        {
+        }
+        /**
+         * @param GoogleCloudContactcenterinsightsV1alpha1SearchKnowledgeAnswerAnswerSource[]
+         */
+        public function setAnswerSources($answerSources)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1alpha1SearchKnowledgeAnswerAnswerSource[]
+         */
+        public function getAnswerSources()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setAnswerType($answerType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnswerType()
+        {
+        }
+        /**
+         * @param float
+         */
+        public function setConfidenceScore($confidenceScore)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidenceScore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1SearchKnowledgeAnswer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnswer()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setAnswerRecord($answerRecord)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAnswerRecord()
-    {
-    }
-    /**
-     * @param GoogleCloudContactcenterinsightsV1alpha1SearchKnowledgeAnswerAnswerSource[]
-     */
-    public function setAnswerSources($answerSources)
-    {
-    }
-    /**
-     * @return GoogleCloudContactcenterinsightsV1alpha1SearchKnowledgeAnswerAnswerSource[]
-     */
-    public function getAnswerSources()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setAnswerType($answerType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAnswerType()
-    {
-    }
-    /**
-     * @param float
-     */
-    public function setConfidenceScore($confidenceScore)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getConfidenceScore()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1alpha1SearchKnowledgeAnswer extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1alpha1SearchKnowledgeAnswer
     {
     }
 }

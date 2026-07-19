@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1CountChromeBrowsersNeedingAttentionResponse extends \Google\Model
-{
-    /**
-     * Number of browsers that haven’t had any recent activity
-     *
-     * @var string
-     */
-    public $noRecentActivityCount;
-    /**
-     * Number of browsers that are pending an OS update
-     *
-     * @var string
-     */
-    public $pendingBrowserUpdateCount;
-    /**
-     * Number of browsers that have been recently enrolled
-     *
-     * @var string
-     */
-    public $recentlyEnrolledCount;
-    /**
-     * Number of browsers that haven’t had any recent activity
-     *
-     * @param string $noRecentActivityCount
-     */
-    public function setNoRecentActivityCount($noRecentActivityCount)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1CountChromeBrowsersNeedingAttentionResponse extends \Google\Model
     {
+        /**
+         * Number of browsers that haven’t had any recent activity
+         *
+         * @var string
+         */
+        public $noRecentActivityCount;
+        /**
+         * Number of browsers that are pending an OS update
+         *
+         * @var string
+         */
+        public $pendingBrowserUpdateCount;
+        /**
+         * Number of browsers that have been recently enrolled
+         *
+         * @var string
+         */
+        public $recentlyEnrolledCount;
+        /**
+         * Number of browsers that haven’t had any recent activity
+         *
+         * @param string $noRecentActivityCount
+         */
+        public function setNoRecentActivityCount($noRecentActivityCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNoRecentActivityCount()
+        {
+        }
+        /**
+         * Number of browsers that are pending an OS update
+         *
+         * @param string $pendingBrowserUpdateCount
+         */
+        public function setPendingBrowserUpdateCount($pendingBrowserUpdateCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPendingBrowserUpdateCount()
+        {
+        }
+        /**
+         * Number of browsers that have been recently enrolled
+         *
+         * @param string $recentlyEnrolledCount
+         */
+        public function setRecentlyEnrolledCount($recentlyEnrolledCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRecentlyEnrolledCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1CountChromeBrowsersNeedingAttentionResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNoRecentActivityCount()
-    {
-    }
-    /**
-     * Number of browsers that are pending an OS update
-     *
-     * @param string $pendingBrowserUpdateCount
-     */
-    public function setPendingBrowserUpdateCount($pendingBrowserUpdateCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPendingBrowserUpdateCount()
-    {
-    }
-    /**
-     * Number of browsers that have been recently enrolled
-     *
-     * @param string $recentlyEnrolledCount
-     */
-    public function setRecentlyEnrolledCount($recentlyEnrolledCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRecentlyEnrolledCount()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1CountChromeBrowsersNeedingAttentionResponse extends \Google\Service\ChromeManagement\GoogleChromeManagementV1CountChromeBrowsersNeedingAttentionResponse
     {
     }
 }

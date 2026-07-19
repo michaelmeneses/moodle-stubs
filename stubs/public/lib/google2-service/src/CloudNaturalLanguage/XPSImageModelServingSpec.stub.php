@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSImageModelServingSpec extends \Google\Collection
-{
-    protected $collection_key = 'modelThroughputEstimation';
-    protected $modelThroughputEstimationType = XPSImageModelServingSpecModelThroughputEstimation::class;
-    protected $modelThroughputEstimationDataType = 'array';
-    /**
-     * An estimated value of how much traffic a node can serve. Populated for
-     * AutoMl request only.
-     *
-     * @var 
-     */
-    public $nodeQps;
-    /**
-     * ## The fields below are only populated under uCAIP request scope.
-     * https://cloud.google.com/ml-engine/docs/runtime-version-list
-     *
-     * @var string
-     */
-    public $tfRuntimeVersion;
-    /**
-     * Populate under uCAIP request scope.
-     *
-     * @param XPSImageModelServingSpecModelThroughputEstimation[] $modelThroughputEstimation
-     */
-    public function setModelThroughputEstimation($modelThroughputEstimation)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSImageModelServingSpec extends \Google\Collection
     {
+        protected $collection_key = 'modelThroughputEstimation';
+        protected $modelThroughputEstimationType = XPSImageModelServingSpecModelThroughputEstimation::class;
+        protected $modelThroughputEstimationDataType = 'array';
+        /**
+         * An estimated value of how much traffic a node can serve. Populated for
+         * AutoMl request only.
+         *
+         * @var 
+         */
+        public $nodeQps;
+        /**
+         * ## The fields below are only populated under uCAIP request scope.
+         * https://cloud.google.com/ml-engine/docs/runtime-version-list
+         *
+         * @var string
+         */
+        public $tfRuntimeVersion;
+        /**
+         * Populate under uCAIP request scope.
+         *
+         * @param XPSImageModelServingSpecModelThroughputEstimation[] $modelThroughputEstimation
+         */
+        public function setModelThroughputEstimation($modelThroughputEstimation)
+        {
+        }
+        /**
+         * @return XPSImageModelServingSpecModelThroughputEstimation[]
+         */
+        public function getModelThroughputEstimation()
+        {
+        }
+        public function setNodeQps($nodeQps)
+        {
+        }
+        public function getNodeQps()
+        {
+        }
+        /**
+         * ## The fields below are only populated under uCAIP request scope.
+         * https://cloud.google.com/ml-engine/docs/runtime-version-list
+         *
+         * @param string $tfRuntimeVersion
+         */
+        public function setTfRuntimeVersion($tfRuntimeVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTfRuntimeVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return XPSImageModelServingSpecModelThroughputEstimation[]
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSImageModelServingSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getModelThroughputEstimation()
-    {
-    }
-    public function setNodeQps($nodeQps)
-    {
-    }
-    public function getNodeQps()
-    {
-    }
-    /**
-     * ## The fields below are only populated under uCAIP request scope.
-     * https://cloud.google.com/ml-engine/docs/runtime-version-list
-     *
-     * @param string $tfRuntimeVersion
-     */
-    public function setTfRuntimeVersion($tfRuntimeVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTfRuntimeVersion()
+    class Google_Service_CloudNaturalLanguage_XPSImageModelServingSpec extends \Google\Service\CloudNaturalLanguage\XPSImageModelServingSpec
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class WorkerConfig extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $diskSizeGb;
-    /**
-     * @var string
-     */
-    public $machineType;
-    /**
-     * @param string
-     */
-    public function setDiskSizeGb($diskSizeGb)
+namespace Google\Service\CloudBuild {
+    class WorkerConfig extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $diskSizeGb;
+        /**
+         * @var string
+         */
+        public $machineType;
+        /**
+         * @param string
+         */
+        public function setDiskSizeGb($diskSizeGb)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDiskSizeGb()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMachineType($machineType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMachineType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\WorkerConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDiskSizeGb()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMachineType($machineType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMachineType()
+    class Google_Service_CloudBuild_WorkerConfig extends \Google\Service\CloudBuild\WorkerConfig
     {
     }
 }

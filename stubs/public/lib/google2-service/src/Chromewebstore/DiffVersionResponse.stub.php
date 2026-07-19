@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Chromewebstore;
-
-class DiffVersionResponse extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $objectSizeBytes;
-    /**
-     * @var string
-     */
-    public $objectVersion;
-    /**
-     * @param string
-     */
-    public function setObjectSizeBytes($objectSizeBytes)
+namespace Google\Service\Chromewebstore {
+    class DiffVersionResponse extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $objectSizeBytes;
+        /**
+         * @var string
+         */
+        public $objectVersion;
+        /**
+         * @param string
+         */
+        public function setObjectSizeBytes($objectSizeBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectSizeBytes()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setObjectVersion($objectVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Chromewebstore\DiffVersionResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getObjectSizeBytes()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setObjectVersion($objectVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectVersion()
+    class Google_Service_Chromewebstore_DiffVersionResponse extends \Google\Service\Chromewebstore\DiffVersionResponse
     {
     }
 }

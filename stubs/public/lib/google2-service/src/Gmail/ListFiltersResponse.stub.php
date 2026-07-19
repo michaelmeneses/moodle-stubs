@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Gmail;
-
-class ListFiltersResponse extends \Google\Collection
-{
-    protected $collection_key = 'filter';
-    protected $filterType = Filter::class;
-    protected $filterDataType = 'array';
-    /**
-     * List of a user's filters.
-     *
-     * @param Filter[] $filter
-     */
-    public function setFilter($filter)
+namespace Google\Service\Gmail {
+    class ListFiltersResponse extends \Google\Collection
     {
+        protected $collection_key = 'filter';
+        protected $filterType = Filter::class;
+        protected $filterDataType = 'array';
+        /**
+         * List of a user's filters.
+         *
+         * @param Filter[] $filter
+         */
+        public function setFilter($filter)
+        {
+        }
+        /**
+         * @return Filter[]
+         */
+        public function getFilter()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Filter[]
+     * Runtime class alias of \Google\Service\Gmail\ListFiltersResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilter()
+    class Google_Service_Gmail_ListFiltersResponse extends \Google\Service\Gmail\ListFiltersResponse
     {
     }
 }

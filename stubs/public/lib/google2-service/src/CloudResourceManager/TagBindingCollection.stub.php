@@ -21,102 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudResourceManager;
-
-class TagBindingCollection extends \Google\Model
-{
-    /**
-     * Optional. A checksum based on the current bindings which can be passed to
-     * prevent race conditions. This field is always set in server responses.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * The full resource name of the resource the TagBindings are bound to. E.g.
-     * `//cloudresourcemanager.googleapis.com/projects/123`
-     *
-     * @var string
-     */
-    public $fullResourceName;
-    /**
-     * Identifier. The name of the TagBindingCollection, following the convention:
-     * `locations/{location}/tagBindingCollections/{encoded-full-resource-name}`
-     * where the encoded-full-resource-name is the UTF-8 encoded name of the GCP
-     * resource the TagBindings are bound to. "locations/global/tagBindingCollecti
-     * ons/%2f%2fcloudresourcemanager.googleapis.com%2fprojects%2f123"
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Tag keys/values directly bound to this resource, specified in namespaced
-     * format. For example: "123/environment": "production"
-     *
-     * @var string[]
-     */
-    public $tags;
-    /**
-     * Optional. A checksum based on the current bindings which can be passed to
-     * prevent race conditions. This field is always set in server responses.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
+namespace Google\Service\CloudResourceManager {
+    class TagBindingCollection extends \Google\Model
     {
+        /**
+         * Optional. A checksum based on the current bindings which can be passed to
+         * prevent race conditions. This field is always set in server responses.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * The full resource name of the resource the TagBindings are bound to. E.g.
+         * `//cloudresourcemanager.googleapis.com/projects/123`
+         *
+         * @var string
+         */
+        public $fullResourceName;
+        /**
+         * Identifier. The name of the TagBindingCollection, following the convention:
+         * `locations/{location}/tagBindingCollections/{encoded-full-resource-name}`
+         * where the encoded-full-resource-name is the UTF-8 encoded name of the GCP
+         * resource the TagBindings are bound to. "locations/global/tagBindingCollecti
+         * ons/%2f%2fcloudresourcemanager.googleapis.com%2fprojects%2f123"
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Tag keys/values directly bound to this resource, specified in namespaced
+         * format. For example: "123/environment": "production"
+         *
+         * @var string[]
+         */
+        public $tags;
+        /**
+         * Optional. A checksum based on the current bindings which can be passed to
+         * prevent race conditions. This field is always set in server responses.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * The full resource name of the resource the TagBindings are bound to. E.g.
+         * `//cloudresourcemanager.googleapis.com/projects/123`
+         *
+         * @param string $fullResourceName
+         */
+        public function setFullResourceName($fullResourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFullResourceName()
+        {
+        }
+        /**
+         * Identifier. The name of the TagBindingCollection, following the convention:
+         * `locations/{location}/tagBindingCollections/{encoded-full-resource-name}`
+         * where the encoded-full-resource-name is the UTF-8 encoded name of the GCP
+         * resource the TagBindings are bound to. "locations/global/tagBindingCollecti
+         * ons/%2f%2fcloudresourcemanager.googleapis.com%2fprojects%2f123"
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Tag keys/values directly bound to this resource, specified in namespaced
+         * format. For example: "123/environment": "production"
+         *
+         * @param string[] $tags
+         */
+        public function setTags($tags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTags()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudResourceManager\TagBindingCollection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * The full resource name of the resource the TagBindings are bound to. E.g.
-     * `//cloudresourcemanager.googleapis.com/projects/123`
-     *
-     * @param string $fullResourceName
-     */
-    public function setFullResourceName($fullResourceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFullResourceName()
-    {
-    }
-    /**
-     * Identifier. The name of the TagBindingCollection, following the convention:
-     * `locations/{location}/tagBindingCollections/{encoded-full-resource-name}`
-     * where the encoded-full-resource-name is the UTF-8 encoded name of the GCP
-     * resource the TagBindings are bound to. "locations/global/tagBindingCollecti
-     * ons/%2f%2fcloudresourcemanager.googleapis.com%2fprojects%2f123"
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Tag keys/values directly bound to this resource, specified in namespaced
-     * format. For example: "123/environment": "production"
-     *
-     * @param string[] $tags
-     */
-    public function setTags($tags)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTags()
+    class Google_Service_CloudResourceManager_TagBindingCollection extends \Google\Service\CloudResourceManager\TagBindingCollection
     {
     }
 }

@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VersionHistory;
-
-class Version extends \Google\Model
-{
-    /**
-     * Version name. Format is
-     * "{product}/platforms/{platform}/channels/{channel}/versions/{version}" e.g.
-     * "chrome/platforms/win/channels/beta/versions/84.0.4147.38"
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * String containing just the version number. e.g. "84.0.4147.38"
-     *
-     * @var string
-     */
-    public $version;
-    /**
-     * Version name. Format is
-     * "{product}/platforms/{platform}/channels/{channel}/versions/{version}" e.g.
-     * "chrome/platforms/win/channels/beta/versions/84.0.4147.38"
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\VersionHistory {
+    class Version extends \Google\Model
     {
+        /**
+         * Version name. Format is
+         * "{product}/platforms/{platform}/channels/{channel}/versions/{version}" e.g.
+         * "chrome/platforms/win/channels/beta/versions/84.0.4147.38"
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * String containing just the version number. e.g. "84.0.4147.38"
+         *
+         * @var string
+         */
+        public $version;
+        /**
+         * Version name. Format is
+         * "{product}/platforms/{platform}/channels/{channel}/versions/{version}" e.g.
+         * "chrome/platforms/win/channels/beta/versions/84.0.4147.38"
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * String containing just the version number. e.g. "84.0.4147.38"
+         *
+         * @param string $version
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\VersionHistory\Version registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * String containing just the version number. e.g. "84.0.4147.38"
-     *
-     * @param string $version
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersion()
+    class Google_Service_VersionHistory_Version extends \Google\Service\VersionHistory\Version
     {
     }
 }

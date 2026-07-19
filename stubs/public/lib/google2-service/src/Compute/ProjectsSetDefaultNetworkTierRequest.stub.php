@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ProjectsSetDefaultNetworkTierRequest extends \Google\Model
-{
-    /**
-     * Public internet quality with fixed bandwidth.
-     */
-    public const NETWORK_TIER_FIXED_STANDARD = 'FIXED_STANDARD';
-    /**
-     * High quality, Google-grade network tier, support for all networking
-     * products.
-     */
-    public const NETWORK_TIER_PREMIUM = 'PREMIUM';
-    /**
-     * Public internet quality, only limited support for other networking
-     * products.
-     */
-    public const NETWORK_TIER_STANDARD = 'STANDARD';
-    /**
-     * (Output only) Temporary tier for FIXED_STANDARD when fixed standard tier is
-     * expired or not configured.
-     */
-    public const NETWORK_TIER_STANDARD_OVERRIDES_FIXED_STANDARD = 'STANDARD_OVERRIDES_FIXED_STANDARD';
-    /**
-     * Default network tier to be set.
-     *
-     * @var string
-     */
-    public $networkTier;
-    /**
-     * Default network tier to be set.
-     *
-     * Accepted values: FIXED_STANDARD, PREMIUM, STANDARD,
-     * STANDARD_OVERRIDES_FIXED_STANDARD
-     *
-     * @param self::NETWORK_TIER_* $networkTier
-     */
-    public function setNetworkTier($networkTier)
+namespace Google\Service\Compute {
+    class ProjectsSetDefaultNetworkTierRequest extends \Google\Model
     {
+        /**
+         * Public internet quality with fixed bandwidth.
+         */
+        public const NETWORK_TIER_FIXED_STANDARD = 'FIXED_STANDARD';
+        /**
+         * High quality, Google-grade network tier, support for all networking
+         * products.
+         */
+        public const NETWORK_TIER_PREMIUM = 'PREMIUM';
+        /**
+         * Public internet quality, only limited support for other networking
+         * products.
+         */
+        public const NETWORK_TIER_STANDARD = 'STANDARD';
+        /**
+         * (Output only) Temporary tier for FIXED_STANDARD when fixed standard tier is
+         * expired or not configured.
+         */
+        public const NETWORK_TIER_STANDARD_OVERRIDES_FIXED_STANDARD = 'STANDARD_OVERRIDES_FIXED_STANDARD';
+        /**
+         * Default network tier to be set.
+         *
+         * @var string
+         */
+        public $networkTier;
+        /**
+         * Default network tier to be set.
+         *
+         * Accepted values: FIXED_STANDARD, PREMIUM, STANDARD,
+         * STANDARD_OVERRIDES_FIXED_STANDARD
+         *
+         * @param self::NETWORK_TIER_* $networkTier
+         */
+        public function setNetworkTier($networkTier)
+        {
+        }
+        /**
+         * @return self::NETWORK_TIER_*
+         */
+        public function getNetworkTier()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::NETWORK_TIER_*
+     * Runtime class alias of \Google\Service\Compute\ProjectsSetDefaultNetworkTierRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNetworkTier()
+    class Google_Service_Compute_ProjectsSetDefaultNetworkTierRequest extends \Google\Service\Compute\ProjectsSetDefaultNetworkTierRequest
     {
     }
 }

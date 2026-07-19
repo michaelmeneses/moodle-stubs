@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecureSourceManager;
-
-class ListPullRequestFileDiffsResponse extends \Google\Collection
-{
-    protected $collection_key = 'fileDiffs';
-    protected $fileDiffsType = FileDiff::class;
-    protected $fileDiffsDataType = 'array';
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of pull request file diffs.
-     *
-     * @param FileDiff[] $fileDiffs
-     */
-    public function setFileDiffs($fileDiffs)
+namespace Google\Service\SecureSourceManager {
+    class ListPullRequestFileDiffsResponse extends \Google\Collection
     {
+        protected $collection_key = 'fileDiffs';
+        protected $fileDiffsType = FileDiff::class;
+        protected $fileDiffsDataType = 'array';
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of pull request file diffs.
+         *
+         * @param FileDiff[] $fileDiffs
+         */
+        public function setFileDiffs($fileDiffs)
+        {
+        }
+        /**
+         * @return FileDiff[]
+         */
+        public function getFileDiffs()
+        {
+        }
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FileDiff[]
+     * Runtime class alias of \Google\Service\SecureSourceManager\ListPullRequestFileDiffsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFileDiffs()
-    {
-    }
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_SecureSourceManager_ListPullRequestFileDiffsResponse extends \Google\Service\SecureSourceManager\ListPullRequestFileDiffsResponse
     {
     }
 }

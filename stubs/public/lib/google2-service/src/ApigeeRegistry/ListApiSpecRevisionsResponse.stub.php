@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ApigeeRegistry;
-
-class ListApiSpecRevisionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'apiSpecs';
-    protected $apiSpecsType = ApiSpec::class;
-    protected $apiSpecsDataType = 'array';
-    /**
-     * A token that can be sent as `page_token` to retrieve the next page. If this
-     * field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The revisions of the spec.
-     *
-     * @param ApiSpec[] $apiSpecs
-     */
-    public function setApiSpecs($apiSpecs)
+namespace Google\Service\ApigeeRegistry {
+    class ListApiSpecRevisionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'apiSpecs';
+        protected $apiSpecsType = ApiSpec::class;
+        protected $apiSpecsDataType = 'array';
+        /**
+         * A token that can be sent as `page_token` to retrieve the next page. If this
+         * field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The revisions of the spec.
+         *
+         * @param ApiSpec[] $apiSpecs
+         */
+        public function setApiSpecs($apiSpecs)
+        {
+        }
+        /**
+         * @return ApiSpec[]
+         */
+        public function getApiSpecs()
+        {
+        }
+        /**
+         * A token that can be sent as `page_token` to retrieve the next page. If this
+         * field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ApiSpec[]
+     * Runtime class alias of \Google\Service\ApigeeRegistry\ListApiSpecRevisionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiSpecs()
-    {
-    }
-    /**
-     * A token that can be sent as `page_token` to retrieve the next page. If this
-     * field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_ApigeeRegistry_ListApiSpecRevisionsResponse extends \Google\Service\ApigeeRegistry\ListApiSpecRevisionsResponse
     {
     }
 }

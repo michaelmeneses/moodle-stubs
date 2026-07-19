@@ -21,148 +21,157 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManufacturerCenter;
-
-class Certification extends \Google\Model
-{
-    /**
-     * Required. Name of the certification body.
-     *
-     * @var string
-     */
-    public $authority;
-    /**
-     * Optional. A unique code to identify the certification.
-     *
-     * @var string
-     */
-    public $code;
-    /**
-     * Optional. A URL link to the certification.
-     *
-     * @var string
-     */
-    public $link;
-    /**
-     * Optional. A URL link to the certification logo.
-     *
-     * @var string
-     */
-    public $logo;
-    /**
-     * Required. Name of the certification.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Optional. The expiration date (UTC).
-     *
-     * @var string
-     */
-    public $validUntil;
-    /**
-     * Optional. A custom value of the certification.
-     *
-     * @var string
-     */
-    public $value;
-    /**
-     * Required. Name of the certification body.
-     *
-     * @param string $authority
-     */
-    public function setAuthority($authority)
+namespace Google\Service\ManufacturerCenter {
+    class Certification extends \Google\Model
     {
+        /**
+         * Required. Name of the certification body.
+         *
+         * @var string
+         */
+        public $authority;
+        /**
+         * Optional. A unique code to identify the certification.
+         *
+         * @var string
+         */
+        public $code;
+        /**
+         * Optional. A URL link to the certification.
+         *
+         * @var string
+         */
+        public $link;
+        /**
+         * Optional. A URL link to the certification logo.
+         *
+         * @var string
+         */
+        public $logo;
+        /**
+         * Required. Name of the certification.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Optional. The expiration date (UTC).
+         *
+         * @var string
+         */
+        public $validUntil;
+        /**
+         * Optional. A custom value of the certification.
+         *
+         * @var string
+         */
+        public $value;
+        /**
+         * Required. Name of the certification body.
+         *
+         * @param string $authority
+         */
+        public function setAuthority($authority)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAuthority()
+        {
+        }
+        /**
+         * Optional. A unique code to identify the certification.
+         *
+         * @param string $code
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCode()
+        {
+        }
+        /**
+         * Optional. A URL link to the certification.
+         *
+         * @param string $link
+         */
+        public function setLink($link)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLink()
+        {
+        }
+        /**
+         * Optional. A URL link to the certification logo.
+         *
+         * @param string $logo
+         */
+        public function setLogo($logo)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLogo()
+        {
+        }
+        /**
+         * Required. Name of the certification.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. The expiration date (UTC).
+         *
+         * @param string $validUntil
+         */
+        public function setValidUntil($validUntil)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValidUntil()
+        {
+        }
+        /**
+         * Optional. A custom value of the certification.
+         *
+         * @param string $value
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ManufacturerCenter\Certification registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthority()
-    {
-    }
-    /**
-     * Optional. A unique code to identify the certification.
-     *
-     * @param string $code
-     */
-    public function setCode($code)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCode()
-    {
-    }
-    /**
-     * Optional. A URL link to the certification.
-     *
-     * @param string $link
-     */
-    public function setLink($link)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLink()
-    {
-    }
-    /**
-     * Optional. A URL link to the certification logo.
-     *
-     * @param string $logo
-     */
-    public function setLogo($logo)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLogo()
-    {
-    }
-    /**
-     * Required. Name of the certification.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. The expiration date (UTC).
-     *
-     * @param string $validUntil
-     */
-    public function setValidUntil($validUntil)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValidUntil()
-    {
-    }
-    /**
-     * Optional. A custom value of the certification.
-     *
-     * @param string $value
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_ManufacturerCenter_Certification extends \Google\Service\ManufacturerCenter\Certification
     {
     }
 }

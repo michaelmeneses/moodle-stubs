@@ -21,275 +21,284 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class VirtualMachineConfig extends \Google\Collection
-{
-    protected $collection_key = 'tags';
-    protected $acceleratorConfigType = RuntimeAcceleratorConfig::class;
-    protected $acceleratorConfigDataType = '';
-    public $acceleratorConfig;
-    protected $bootImageType = BootImage::class;
-    protected $bootImageDataType = '';
-    public $bootImage;
-    protected $containerImagesType = ContainerImage::class;
-    protected $containerImagesDataType = 'array';
-    public $containerImages = [];
-    protected $dataDiskType = LocalDisk::class;
-    protected $dataDiskDataType = '';
-    public $dataDisk;
-    protected $encryptionConfigType = EncryptionConfig::class;
-    protected $encryptionConfigDataType = '';
-    public $encryptionConfig;
-    /**
-     * @var string[]
-     */
-    public $guestAttributes = [];
-    /**
-     * @var bool
-     */
-    public $internalIpOnly;
-    /**
-     * @var string[]
-     */
-    public $labels = [];
-    /**
-     * @var string
-     */
-    public $machineType;
-    /**
-     * @var string[]
-     */
-    public $metadata = [];
-    /**
-     * @var string
-     */
-    public $network;
-    /**
-     * @var string
-     */
-    public $nicType;
-    /**
-     * @var string
-     */
-    public $reservedIpRange;
-    protected $shieldedInstanceConfigType = RuntimeShieldedInstanceConfig::class;
-    protected $shieldedInstanceConfigDataType = '';
-    public $shieldedInstanceConfig;
-    /**
-     * @var string
-     */
-    public $subnet;
-    /**
-     * @var string[]
-     */
-    public $tags = [];
-    /**
-     * @var string
-     */
-    public $zone;
-    /**
-     * @param RuntimeAcceleratorConfig
-     */
-    public function setAcceleratorConfig(RuntimeAcceleratorConfig $acceleratorConfig)
+namespace Google\Service\AIPlatformNotebooks {
+    class VirtualMachineConfig extends \Google\Collection
     {
+        protected $collection_key = 'tags';
+        protected $acceleratorConfigType = RuntimeAcceleratorConfig::class;
+        protected $acceleratorConfigDataType = '';
+        public $acceleratorConfig;
+        protected $bootImageType = BootImage::class;
+        protected $bootImageDataType = '';
+        public $bootImage;
+        protected $containerImagesType = ContainerImage::class;
+        protected $containerImagesDataType = 'array';
+        public $containerImages = [];
+        protected $dataDiskType = LocalDisk::class;
+        protected $dataDiskDataType = '';
+        public $dataDisk;
+        protected $encryptionConfigType = EncryptionConfig::class;
+        protected $encryptionConfigDataType = '';
+        public $encryptionConfig;
+        /**
+         * @var string[]
+         */
+        public $guestAttributes = [];
+        /**
+         * @var bool
+         */
+        public $internalIpOnly;
+        /**
+         * @var string[]
+         */
+        public $labels = [];
+        /**
+         * @var string
+         */
+        public $machineType;
+        /**
+         * @var string[]
+         */
+        public $metadata = [];
+        /**
+         * @var string
+         */
+        public $network;
+        /**
+         * @var string
+         */
+        public $nicType;
+        /**
+         * @var string
+         */
+        public $reservedIpRange;
+        protected $shieldedInstanceConfigType = RuntimeShieldedInstanceConfig::class;
+        protected $shieldedInstanceConfigDataType = '';
+        public $shieldedInstanceConfig;
+        /**
+         * @var string
+         */
+        public $subnet;
+        /**
+         * @var string[]
+         */
+        public $tags = [];
+        /**
+         * @var string
+         */
+        public $zone;
+        /**
+         * @param RuntimeAcceleratorConfig
+         */
+        public function setAcceleratorConfig(RuntimeAcceleratorConfig $acceleratorConfig)
+        {
+        }
+        /**
+         * @return RuntimeAcceleratorConfig
+         */
+        public function getAcceleratorConfig()
+        {
+        }
+        /**
+         * @param BootImage
+         */
+        public function setBootImage(BootImage $bootImage)
+        {
+        }
+        /**
+         * @return BootImage
+         */
+        public function getBootImage()
+        {
+        }
+        /**
+         * @param ContainerImage[]
+         */
+        public function setContainerImages($containerImages)
+        {
+        }
+        /**
+         * @return ContainerImage[]
+         */
+        public function getContainerImages()
+        {
+        }
+        /**
+         * @param LocalDisk
+         */
+        public function setDataDisk(LocalDisk $dataDisk)
+        {
+        }
+        /**
+         * @return LocalDisk
+         */
+        public function getDataDisk()
+        {
+        }
+        /**
+         * @param EncryptionConfig
+         */
+        public function setEncryptionConfig(EncryptionConfig $encryptionConfig)
+        {
+        }
+        /**
+         * @return EncryptionConfig
+         */
+        public function getEncryptionConfig()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setGuestAttributes($guestAttributes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getGuestAttributes()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setInternalIpOnly($internalIpOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getInternalIpOnly()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMachineType($machineType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMachineType()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNetwork($network)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNetwork()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNicType($nicType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNicType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReservedIpRange($reservedIpRange)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReservedIpRange()
+        {
+        }
+        /**
+         * @param RuntimeShieldedInstanceConfig
+         */
+        public function setShieldedInstanceConfig(RuntimeShieldedInstanceConfig $shieldedInstanceConfig)
+        {
+        }
+        /**
+         * @return RuntimeShieldedInstanceConfig
+         */
+        public function getShieldedInstanceConfig()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSubnet($subnet)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubnet()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setTags($tags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTags()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setZone($zone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return RuntimeAcceleratorConfig
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\VirtualMachineConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAcceleratorConfig()
-    {
-    }
-    /**
-     * @param BootImage
-     */
-    public function setBootImage(BootImage $bootImage)
-    {
-    }
-    /**
-     * @return BootImage
-     */
-    public function getBootImage()
-    {
-    }
-    /**
-     * @param ContainerImage[]
-     */
-    public function setContainerImages($containerImages)
-    {
-    }
-    /**
-     * @return ContainerImage[]
-     */
-    public function getContainerImages()
-    {
-    }
-    /**
-     * @param LocalDisk
-     */
-    public function setDataDisk(LocalDisk $dataDisk)
-    {
-    }
-    /**
-     * @return LocalDisk
-     */
-    public function getDataDisk()
-    {
-    }
-    /**
-     * @param EncryptionConfig
-     */
-    public function setEncryptionConfig(EncryptionConfig $encryptionConfig)
-    {
-    }
-    /**
-     * @return EncryptionConfig
-     */
-    public function getEncryptionConfig()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setGuestAttributes($guestAttributes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getGuestAttributes()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setInternalIpOnly($internalIpOnly)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getInternalIpOnly()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMachineType($machineType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMachineType()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setMetadata($metadata)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNetwork($network)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNetwork()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNicType($nicType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNicType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReservedIpRange($reservedIpRange)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReservedIpRange()
-    {
-    }
-    /**
-     * @param RuntimeShieldedInstanceConfig
-     */
-    public function setShieldedInstanceConfig(RuntimeShieldedInstanceConfig $shieldedInstanceConfig)
-    {
-    }
-    /**
-     * @return RuntimeShieldedInstanceConfig
-     */
-    public function getShieldedInstanceConfig()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSubnet($subnet)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubnet()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setTags($tags)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTags()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setZone($zone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getZone()
+    class Google_Service_AIPlatformNotebooks_VirtualMachineConfig extends \Google\Service\AIPlatformNotebooks\VirtualMachineConfig
     {
     }
 }

@@ -21,211 +21,220 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1AppGroup extends \Google\Collection
-{
-    protected $collection_key = 'attributes';
-    /**
-     * Output only. Internal identifier that cannot be edited
-     *
-     * @var string
-     */
-    public $appGroupId;
-    protected $attributesType = GoogleCloudApigeeV1Attribute::class;
-    protected $attributesDataType = 'array';
-    /**
-     * channel identifier identifies the owner maintaing this grouping.
-     *
-     * @var string
-     */
-    public $channelId;
-    /**
-     * A reference to the associated storefront/marketplace.
-     *
-     * @var string
-     */
-    public $channelUri;
-    /**
-     * Output only. Created time as milliseconds since epoch.
-     *
-     * @var string
-     */
-    public $createdAt;
-    /**
-     * app group name displayed in the UI
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. Modified time as milliseconds since epoch.
-     *
-     * @var string
-     */
-    public $lastModifiedAt;
-    /**
-     * Immutable. Name of the AppGroup. Characters you can use in the name are
-     * restricted to: A-Z0-9._\-$ %.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Immutable. the org the app group is created
-     *
-     * @var string
-     */
-    public $organization;
-    /**
-     * Valid values are `active` or `inactive`. Note that the status of the
-     * AppGroup should be updated via UpdateAppGroupRequest by setting the action
-     * as `active` or `inactive`.
-     *
-     * @var string
-     */
-    public $status;
-    /**
-     * Output only. Internal identifier that cannot be edited
-     *
-     * @param string $appGroupId
-     */
-    public function setAppGroupId($appGroupId)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1AppGroup extends \Google\Collection
     {
+        protected $collection_key = 'attributes';
+        /**
+         * Output only. Internal identifier that cannot be edited
+         *
+         * @var string
+         */
+        public $appGroupId;
+        protected $attributesType = GoogleCloudApigeeV1Attribute::class;
+        protected $attributesDataType = 'array';
+        /**
+         * channel identifier identifies the owner maintaing this grouping.
+         *
+         * @var string
+         */
+        public $channelId;
+        /**
+         * A reference to the associated storefront/marketplace.
+         *
+         * @var string
+         */
+        public $channelUri;
+        /**
+         * Output only. Created time as milliseconds since epoch.
+         *
+         * @var string
+         */
+        public $createdAt;
+        /**
+         * app group name displayed in the UI
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. Modified time as milliseconds since epoch.
+         *
+         * @var string
+         */
+        public $lastModifiedAt;
+        /**
+         * Immutable. Name of the AppGroup. Characters you can use in the name are
+         * restricted to: A-Z0-9._\-$ %.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Immutable. the org the app group is created
+         *
+         * @var string
+         */
+        public $organization;
+        /**
+         * Valid values are `active` or `inactive`. Note that the status of the
+         * AppGroup should be updated via UpdateAppGroupRequest by setting the action
+         * as `active` or `inactive`.
+         *
+         * @var string
+         */
+        public $status;
+        /**
+         * Output only. Internal identifier that cannot be edited
+         *
+         * @param string $appGroupId
+         */
+        public function setAppGroupId($appGroupId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAppGroupId()
+        {
+        }
+        /**
+         * A list of attributes
+         *
+         * @param GoogleCloudApigeeV1Attribute[] $attributes
+         */
+        public function setAttributes($attributes)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1Attribute[]
+         */
+        public function getAttributes()
+        {
+        }
+        /**
+         * channel identifier identifies the owner maintaing this grouping.
+         *
+         * @param string $channelId
+         */
+        public function setChannelId($channelId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChannelId()
+        {
+        }
+        /**
+         * A reference to the associated storefront/marketplace.
+         *
+         * @param string $channelUri
+         */
+        public function setChannelUri($channelUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChannelUri()
+        {
+        }
+        /**
+         * Output only. Created time as milliseconds since epoch.
+         *
+         * @param string $createdAt
+         */
+        public function setCreatedAt($createdAt)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreatedAt()
+        {
+        }
+        /**
+         * app group name displayed in the UI
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. Modified time as milliseconds since epoch.
+         *
+         * @param string $lastModifiedAt
+         */
+        public function setLastModifiedAt($lastModifiedAt)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastModifiedAt()
+        {
+        }
+        /**
+         * Immutable. Name of the AppGroup. Characters you can use in the name are
+         * restricted to: A-Z0-9._\-$ %.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Immutable. the org the app group is created
+         *
+         * @param string $organization
+         */
+        public function setOrganization($organization)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrganization()
+        {
+        }
+        /**
+         * Valid values are `active` or `inactive`. Note that the status of the
+         * AppGroup should be updated via UpdateAppGroupRequest by setting the action
+         * as `active` or `inactive`.
+         *
+         * @param string $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1AppGroup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAppGroupId()
-    {
-    }
-    /**
-     * A list of attributes
-     *
-     * @param GoogleCloudApigeeV1Attribute[] $attributes
-     */
-    public function setAttributes($attributes)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1Attribute[]
-     */
-    public function getAttributes()
-    {
-    }
-    /**
-     * channel identifier identifies the owner maintaing this grouping.
-     *
-     * @param string $channelId
-     */
-    public function setChannelId($channelId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getChannelId()
-    {
-    }
-    /**
-     * A reference to the associated storefront/marketplace.
-     *
-     * @param string $channelUri
-     */
-    public function setChannelUri($channelUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getChannelUri()
-    {
-    }
-    /**
-     * Output only. Created time as milliseconds since epoch.
-     *
-     * @param string $createdAt
-     */
-    public function setCreatedAt($createdAt)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreatedAt()
-    {
-    }
-    /**
-     * app group name displayed in the UI
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. Modified time as milliseconds since epoch.
-     *
-     * @param string $lastModifiedAt
-     */
-    public function setLastModifiedAt($lastModifiedAt)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastModifiedAt()
-    {
-    }
-    /**
-     * Immutable. Name of the AppGroup. Characters you can use in the name are
-     * restricted to: A-Z0-9._\-$ %.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Immutable. the org the app group is created
-     *
-     * @param string $organization
-     */
-    public function setOrganization($organization)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrganization()
-    {
-    }
-    /**
-     * Valid values are `active` or `inactive`. Note that the status of the
-     * AppGroup should be updated via UpdateAppGroupRequest by setting the action
-     * as `active` or `inactive`.
-     *
-     * @param string $status
-     */
-    public function setStatus($status)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStatus()
+    class Google_Service_Apigee_GoogleCloudApigeeV1AppGroup extends \Google\Service\Apigee\GoogleCloudApigeeV1AppGroup
     {
     }
 }

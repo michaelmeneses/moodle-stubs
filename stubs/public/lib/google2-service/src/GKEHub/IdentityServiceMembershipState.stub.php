@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class IdentityServiceMembershipState extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $failureReason;
-    /**
-     * @var string
-     */
-    public $installedVersion;
-    protected $memberConfigType = IdentityServiceMembershipSpec::class;
-    protected $memberConfigDataType = '';
-    /**
-     * @var string
-     */
-    public $state;
-    /**
-     * @param string
-     */
-    public function setFailureReason($failureReason)
+namespace Google\Service\GKEHub {
+    class IdentityServiceMembershipState extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $failureReason;
+        /**
+         * @var string
+         */
+        public $installedVersion;
+        protected $memberConfigType = IdentityServiceMembershipSpec::class;
+        protected $memberConfigDataType = '';
+        /**
+         * @var string
+         */
+        public $state;
+        /**
+         * @param string
+         */
+        public function setFailureReason($failureReason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFailureReason()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setInstalledVersion($installedVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstalledVersion()
+        {
+        }
+        /**
+         * @param IdentityServiceMembershipSpec
+         */
+        public function setMemberConfig(IdentityServiceMembershipSpec $memberConfig)
+        {
+        }
+        /**
+         * @return IdentityServiceMembershipSpec
+         */
+        public function getMemberConfig()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\IdentityServiceMembershipState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFailureReason()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setInstalledVersion($installedVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstalledVersion()
-    {
-    }
-    /**
-     * @param IdentityServiceMembershipSpec
-     */
-    public function setMemberConfig(IdentityServiceMembershipSpec $memberConfig)
-    {
-    }
-    /**
-     * @return IdentityServiceMembershipSpec
-     */
-    public function getMemberConfig()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
+    class Google_Service_GKEHub_IdentityServiceMembershipState extends \Google\Service\GKEHub\IdentityServiceMembershipState
     {
     }
 }

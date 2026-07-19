@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Ideahub;
-
-class GoogleSearchIdeahubV1betaIdeaActivity extends \Google\Collection
-{
-    protected $collection_key = 'topics';
-    /**
-     * @var string[]
-     */
-    public $ideas;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string[]
-     */
-    public $topics;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @var string
-     */
-    public $uri;
-    /**
-     * @param string[]
-     */
-    public function setIdeas($ideas)
+namespace Google\Service\Ideahub {
+    class GoogleSearchIdeahubV1betaIdeaActivity extends \Google\Collection
     {
+        protected $collection_key = 'topics';
+        /**
+         * @var string[]
+         */
+        public $ideas;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string[]
+         */
+        public $topics;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @var string
+         */
+        public $uri;
+        /**
+         * @param string[]
+         */
+        public function setIdeas($ideas)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIdeas()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setTopics($topics)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTopics()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Ideahub\GoogleSearchIdeahubV1betaIdeaActivity registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIdeas()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setTopics($topics)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTopics()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
+    class Google_Service_Ideahub_GoogleSearchIdeahubV1betaIdeaActivity extends \Google\Service\Ideahub\GoogleSearchIdeahubV1betaIdeaActivity
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage;
-
-class BucketLogging extends \Google\Model
-{
-    /**
-     * The destination bucket where the current bucket's logs should be placed.
-     *
-     * @var string
-     */
-    public $logBucket;
-    /**
-     * A prefix for log object names.
-     *
-     * @var string
-     */
-    public $logObjectPrefix;
-    /**
-     * The destination bucket where the current bucket's logs should be placed.
-     *
-     * @param string $logBucket
-     */
-    public function setLogBucket($logBucket)
+namespace Google\Service\Storage {
+    class BucketLogging extends \Google\Model
     {
+        /**
+         * The destination bucket where the current bucket's logs should be placed.
+         *
+         * @var string
+         */
+        public $logBucket;
+        /**
+         * A prefix for log object names.
+         *
+         * @var string
+         */
+        public $logObjectPrefix;
+        /**
+         * The destination bucket where the current bucket's logs should be placed.
+         *
+         * @param string $logBucket
+         */
+        public function setLogBucket($logBucket)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLogBucket()
+        {
+        }
+        /**
+         * A prefix for log object names.
+         *
+         * @param string $logObjectPrefix
+         */
+        public function setLogObjectPrefix($logObjectPrefix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLogObjectPrefix()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Storage\BucketLogging registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLogBucket()
-    {
-    }
-    /**
-     * A prefix for log object names.
-     *
-     * @param string $logObjectPrefix
-     */
-    public function setLogObjectPrefix($logObjectPrefix)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLogObjectPrefix()
+    class Google_Service_Storage_BucketLogging extends \Google\Service\Storage\BucketLogging
     {
     }
 }

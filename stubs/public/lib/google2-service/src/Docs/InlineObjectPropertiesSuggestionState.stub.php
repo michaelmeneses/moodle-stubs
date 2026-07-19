@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class InlineObjectPropertiesSuggestionState extends \Google\Model
-{
-    protected $embeddedObjectSuggestionStateType = EmbeddedObjectSuggestionState::class;
-    protected $embeddedObjectSuggestionStateDataType = '';
-    /**
-     * A mask that indicates which of the fields in embedded_object have been
-     * changed in this suggestion.
-     *
-     * @param EmbeddedObjectSuggestionState $embeddedObjectSuggestionState
-     */
-    public function setEmbeddedObjectSuggestionState(EmbeddedObjectSuggestionState $embeddedObjectSuggestionState)
+namespace Google\Service\Docs {
+    class InlineObjectPropertiesSuggestionState extends \Google\Model
     {
+        protected $embeddedObjectSuggestionStateType = EmbeddedObjectSuggestionState::class;
+        protected $embeddedObjectSuggestionStateDataType = '';
+        /**
+         * A mask that indicates which of the fields in embedded_object have been
+         * changed in this suggestion.
+         *
+         * @param EmbeddedObjectSuggestionState $embeddedObjectSuggestionState
+         */
+        public function setEmbeddedObjectSuggestionState(EmbeddedObjectSuggestionState $embeddedObjectSuggestionState)
+        {
+        }
+        /**
+         * @return EmbeddedObjectSuggestionState
+         */
+        public function getEmbeddedObjectSuggestionState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EmbeddedObjectSuggestionState
+     * Runtime class alias of \Google\Service\Docs\InlineObjectPropertiesSuggestionState registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmbeddedObjectSuggestionState()
+    class Google_Service_Docs_InlineObjectPropertiesSuggestionState extends \Google\Service\Docs\InlineObjectPropertiesSuggestionState
     {
     }
 }

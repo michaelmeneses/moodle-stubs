@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1PeripheralsReport extends \Google\Collection
-{
-    protected $collection_key = 'usbPeripheralReport';
-    /**
-     * Output only. Timestamp of when the report was collected.
-     *
-     * @var string
-     */
-    public $reportTime;
-    protected $usbPeripheralReportType = GoogleChromeManagementV1UsbPeripheralReport::class;
-    protected $usbPeripheralReportDataType = 'array';
-    /**
-     * Output only. Timestamp of when the report was collected.
-     *
-     * @param string $reportTime
-     */
-    public function setReportTime($reportTime)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1PeripheralsReport extends \Google\Collection
     {
+        protected $collection_key = 'usbPeripheralReport';
+        /**
+         * Output only. Timestamp of when the report was collected.
+         *
+         * @var string
+         */
+        public $reportTime;
+        protected $usbPeripheralReportType = GoogleChromeManagementV1UsbPeripheralReport::class;
+        protected $usbPeripheralReportDataType = 'array';
+        /**
+         * Output only. Timestamp of when the report was collected.
+         *
+         * @param string $reportTime
+         */
+        public function setReportTime($reportTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReportTime()
+        {
+        }
+        /**
+         * Reports of all usb connected devices.
+         *
+         * @param GoogleChromeManagementV1UsbPeripheralReport[] $usbPeripheralReport
+         */
+        public function setUsbPeripheralReport($usbPeripheralReport)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementV1UsbPeripheralReport[]
+         */
+        public function getUsbPeripheralReport()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1PeripheralsReport registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReportTime()
-    {
-    }
-    /**
-     * Reports of all usb connected devices.
-     *
-     * @param GoogleChromeManagementV1UsbPeripheralReport[] $usbPeripheralReport
-     */
-    public function setUsbPeripheralReport($usbPeripheralReport)
-    {
-    }
-    /**
-     * @return GoogleChromeManagementV1UsbPeripheralReport[]
-     */
-    public function getUsbPeripheralReport()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1PeripheralsReport extends \Google\Service\ChromeManagement\GoogleChromeManagementV1PeripheralsReport
     {
     }
 }

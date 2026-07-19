@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class RevertTransformationResponse extends \Google\Model
-{
-    protected $transformationType = Transformation::class;
-    protected $transformationDataType = '';
-    /**
-     * Transformation as it appears in the latest container version since the last
-     * workspace synchronization operation. If no transformation is present, that
-     * means the transformation was deleted in the latest container version.
-     *
-     * @param Transformation $transformation
-     */
-    public function setTransformation(Transformation $transformation)
+namespace Google\Service\TagManager {
+    class RevertTransformationResponse extends \Google\Model
     {
+        protected $transformationType = Transformation::class;
+        protected $transformationDataType = '';
+        /**
+         * Transformation as it appears in the latest container version since the last
+         * workspace synchronization operation. If no transformation is present, that
+         * means the transformation was deleted in the latest container version.
+         *
+         * @param Transformation $transformation
+         */
+        public function setTransformation(Transformation $transformation)
+        {
+        }
+        /**
+         * @return Transformation
+         */
+        public function getTransformation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Transformation
+     * Runtime class alias of \Google\Service\TagManager\RevertTransformationResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTransformation()
+    class Google_Service_TagManager_RevertTransformationResponse extends \Google\Service\TagManager\RevertTransformationResponse
     {
     }
 }

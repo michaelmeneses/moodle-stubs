@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AddressValidation;
-
-class GoogleMapsAddressvalidationV1LanguageOptions extends \Google\Model
-{
-    /**
-     * Preview: Return a [google.maps.addressvalidation.v1.Address] in English.
-     * See
-     * [google.maps.addressvalidation.v1.ValidationResult.english_latin_address]
-     * for details.
-     *
-     * @var bool
-     */
-    public $returnEnglishLatinAddress;
-    /**
-     * Preview: Return a [google.maps.addressvalidation.v1.Address] in English.
-     * See
-     * [google.maps.addressvalidation.v1.ValidationResult.english_latin_address]
-     * for details.
-     *
-     * @param bool $returnEnglishLatinAddress
-     */
-    public function setReturnEnglishLatinAddress($returnEnglishLatinAddress)
+namespace Google\Service\AddressValidation {
+    class GoogleMapsAddressvalidationV1LanguageOptions extends \Google\Model
     {
+        /**
+         * Preview: Return a [google.maps.addressvalidation.v1.Address] in English.
+         * See
+         * [google.maps.addressvalidation.v1.ValidationResult.english_latin_address]
+         * for details.
+         *
+         * @var bool
+         */
+        public $returnEnglishLatinAddress;
+        /**
+         * Preview: Return a [google.maps.addressvalidation.v1.Address] in English.
+         * See
+         * [google.maps.addressvalidation.v1.ValidationResult.english_latin_address]
+         * for details.
+         *
+         * @param bool $returnEnglishLatinAddress
+         */
+        public function setReturnEnglishLatinAddress($returnEnglishLatinAddress)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReturnEnglishLatinAddress()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\AddressValidation\GoogleMapsAddressvalidationV1LanguageOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReturnEnglishLatinAddress()
+    class Google_Service_AddressValidation_GoogleMapsAddressvalidationV1LanguageOptions extends \Google\Service\AddressValidation\GoogleMapsAddressvalidationV1LanguageOptions
     {
     }
 }

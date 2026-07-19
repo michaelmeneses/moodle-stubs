@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSSpeechModelSpec extends \Google\Collection
-{
-    protected $collection_key = 'subModelSpecs';
-    /**
-     * Required for speech xps backend. Speech xps has to use dataset_id and
-     * model_id as the primary key in db so that speech API can query the db
-     * directly.
-     *
-     * @var string
-     */
-    public $datasetId;
-    /**
-     * @var string
-     */
-    public $language;
-    protected $subModelSpecsType = XPSSpeechModelSpecSubModelSpec::class;
-    protected $subModelSpecsDataType = 'array';
-    /**
-     * Required for speech xps backend. Speech xps has to use dataset_id and
-     * model_id as the primary key in db so that speech API can query the db
-     * directly.
-     *
-     * @param string $datasetId
-     */
-    public function setDatasetId($datasetId)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSSpeechModelSpec extends \Google\Collection
     {
+        protected $collection_key = 'subModelSpecs';
+        /**
+         * Required for speech xps backend. Speech xps has to use dataset_id and
+         * model_id as the primary key in db so that speech API can query the db
+         * directly.
+         *
+         * @var string
+         */
+        public $datasetId;
+        /**
+         * @var string
+         */
+        public $language;
+        protected $subModelSpecsType = XPSSpeechModelSpecSubModelSpec::class;
+        protected $subModelSpecsDataType = 'array';
+        /**
+         * Required for speech xps backend. Speech xps has to use dataset_id and
+         * model_id as the primary key in db so that speech API can query the db
+         * directly.
+         *
+         * @param string $datasetId
+         */
+        public function setDatasetId($datasetId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDatasetId()
+        {
+        }
+        /**
+         * @param string $language
+         */
+        public function setLanguage($language)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLanguage()
+        {
+        }
+        /**
+         * Model specs for all submodels contained in this model.
+         *
+         * @param XPSSpeechModelSpecSubModelSpec[] $subModelSpecs
+         */
+        public function setSubModelSpecs($subModelSpecs)
+        {
+        }
+        /**
+         * @return XPSSpeechModelSpecSubModelSpec[]
+         */
+        public function getSubModelSpecs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSSpeechModelSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDatasetId()
-    {
-    }
-    /**
-     * @param string $language
-     */
-    public function setLanguage($language)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLanguage()
-    {
-    }
-    /**
-     * Model specs for all submodels contained in this model.
-     *
-     * @param XPSSpeechModelSpecSubModelSpec[] $subModelSpecs
-     */
-    public function setSubModelSpecs($subModelSpecs)
-    {
-    }
-    /**
-     * @return XPSSpeechModelSpecSubModelSpec[]
-     */
-    public function getSubModelSpecs()
+    class Google_Service_CloudNaturalLanguage_XPSSpeechModelSpec extends \Google\Service\CloudNaturalLanguage\XPSSpeechModelSpec
     {
     }
 }

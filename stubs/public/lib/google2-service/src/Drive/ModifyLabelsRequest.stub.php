@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Drive;
-
-class ModifyLabelsRequest extends \Google\Collection
-{
-    protected $collection_key = 'labelModifications';
-    /**
-     * This is always `"drive#modifyLabelsRequest"`.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $labelModificationsType = LabelModification::class;
-    protected $labelModificationsDataType = 'array';
-    /**
-     * This is always `"drive#modifyLabelsRequest"`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Drive {
+    class ModifyLabelsRequest extends \Google\Collection
     {
+        protected $collection_key = 'labelModifications';
+        /**
+         * This is always `"drive#modifyLabelsRequest"`.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $labelModificationsType = LabelModification::class;
+        protected $labelModificationsDataType = 'array';
+        /**
+         * This is always `"drive#modifyLabelsRequest"`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The list of modifications to apply to the labels on the file.
+         *
+         * @param LabelModification[] $labelModifications
+         */
+        public function setLabelModifications($labelModifications)
+        {
+        }
+        /**
+         * @return LabelModification[]
+         */
+        public function getLabelModifications()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Drive\ModifyLabelsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * The list of modifications to apply to the labels on the file.
-     *
-     * @param LabelModification[] $labelModifications
-     */
-    public function setLabelModifications($labelModifications)
-    {
-    }
-    /**
-     * @return LabelModification[]
-     */
-    public function getLabelModifications()
+    class Google_Service_Drive_ModifyLabelsRequest extends \Google\Service\Drive\ModifyLabelsRequest
     {
     }
 }

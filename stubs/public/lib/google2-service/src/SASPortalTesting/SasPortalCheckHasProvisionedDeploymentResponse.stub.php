@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SASPortalTesting;
-
-class SasPortalCheckHasProvisionedDeploymentResponse extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $hasProvisionedDeployment;
-    /**
-     * @param bool
-     */
-    public function setHasProvisionedDeployment($hasProvisionedDeployment)
+namespace Google\Service\SASPortalTesting {
+    class SasPortalCheckHasProvisionedDeploymentResponse extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $hasProvisionedDeployment;
+        /**
+         * @param bool
+         */
+        public function setHasProvisionedDeployment($hasProvisionedDeployment)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHasProvisionedDeployment()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\SASPortalTesting\SasPortalCheckHasProvisionedDeploymentResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHasProvisionedDeployment()
+    class Google_Service_SASPortalTesting_SasPortalCheckHasProvisionedDeploymentResponse extends \Google\Service\SASPortalTesting\SasPortalCheckHasProvisionedDeploymentResponse
     {
     }
 }

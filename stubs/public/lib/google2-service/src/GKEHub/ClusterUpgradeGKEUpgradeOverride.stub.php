@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ClusterUpgradeGKEUpgradeOverride extends \Google\Model
-{
-    protected $postConditionsType = ClusterUpgradePostConditions::class;
-    protected $postConditionsDataType = '';
-    protected $upgradeType = ClusterUpgradeGKEUpgrade::class;
-    protected $upgradeDataType = '';
-    /**
-     * @param ClusterUpgradePostConditions
-     */
-    public function setPostConditions(ClusterUpgradePostConditions $postConditions)
+namespace Google\Service\GKEHub {
+    class ClusterUpgradeGKEUpgradeOverride extends \Google\Model
     {
+        protected $postConditionsType = ClusterUpgradePostConditions::class;
+        protected $postConditionsDataType = '';
+        protected $upgradeType = ClusterUpgradeGKEUpgrade::class;
+        protected $upgradeDataType = '';
+        /**
+         * @param ClusterUpgradePostConditions
+         */
+        public function setPostConditions(ClusterUpgradePostConditions $postConditions)
+        {
+        }
+        /**
+         * @return ClusterUpgradePostConditions
+         */
+        public function getPostConditions()
+        {
+        }
+        /**
+         * @param ClusterUpgradeGKEUpgrade
+         */
+        public function setUpgrade(ClusterUpgradeGKEUpgrade $upgrade)
+        {
+        }
+        /**
+         * @return ClusterUpgradeGKEUpgrade
+         */
+        public function getUpgrade()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ClusterUpgradePostConditions
+     * Runtime class alias of \Google\Service\GKEHub\ClusterUpgradeGKEUpgradeOverride registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPostConditions()
-    {
-    }
-    /**
-     * @param ClusterUpgradeGKEUpgrade
-     */
-    public function setUpgrade(ClusterUpgradeGKEUpgrade $upgrade)
-    {
-    }
-    /**
-     * @return ClusterUpgradeGKEUpgrade
-     */
-    public function getUpgrade()
+    class Google_Service_GKEHub_ClusterUpgradeGKEUpgradeOverride extends \Google\Service\GKEHub\ClusterUpgradeGKEUpgradeOverride
     {
     }
 }

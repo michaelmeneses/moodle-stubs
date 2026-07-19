@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Slides;
-
-class TableRowProperties extends \Google\Model
-{
-    protected $minRowHeightType = Dimension::class;
-    protected $minRowHeightDataType = '';
-    /**
-     * Minimum height of the row. The row will be rendered in the Slides editor at
-     * a height equal to or greater than this value in order to show all the text
-     * in the row's cell(s).
-     *
-     * @param Dimension $minRowHeight
-     */
-    public function setMinRowHeight(Dimension $minRowHeight)
+namespace Google\Service\Slides {
+    class TableRowProperties extends \Google\Model
     {
+        protected $minRowHeightType = Dimension::class;
+        protected $minRowHeightDataType = '';
+        /**
+         * Minimum height of the row. The row will be rendered in the Slides editor at
+         * a height equal to or greater than this value in order to show all the text
+         * in the row's cell(s).
+         *
+         * @param Dimension $minRowHeight
+         */
+        public function setMinRowHeight(Dimension $minRowHeight)
+        {
+        }
+        /**
+         * @return Dimension
+         */
+        public function getMinRowHeight()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Dimension
+     * Runtime class alias of \Google\Service\Slides\TableRowProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMinRowHeight()
+    class Google_Service_Slides_TableRowProperties extends \Google\Service\Slides\TableRowProperties
     {
     }
 }

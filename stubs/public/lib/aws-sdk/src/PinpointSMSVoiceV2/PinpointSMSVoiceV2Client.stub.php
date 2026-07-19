@@ -8,6 +8,7 @@
  */
 namespace Aws\PinpointSMSVoiceV2;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Pinpoint SMS Voice V2** service.
  * @method \Aws\Result associateOriginationIdentity(array $args = [])

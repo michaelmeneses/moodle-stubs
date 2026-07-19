@@ -21,62 +21,71 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PubsubLite;
-
-class ComputeMessageStatsRequest extends \Google\Model
-{
-    protected $endCursorType = Cursor::class;
-    protected $endCursorDataType = '';
-    /**
-     * Required. The partition for which we should compute message stats.
-     *
-     * @var string
-     */
-    public $partition;
-    protected $startCursorType = Cursor::class;
-    protected $startCursorDataType = '';
-    /**
-     * The exclusive end of the range. The range is empty if end_cursor <=
-     * start_cursor. Specifying a start_cursor before the first message and an
-     * end_cursor after the last message will retrieve all messages.
-     *
-     * @param Cursor $endCursor
-     */
-    public function setEndCursor(Cursor $endCursor)
+namespace Google\Service\PubsubLite {
+    class ComputeMessageStatsRequest extends \Google\Model
     {
+        protected $endCursorType = Cursor::class;
+        protected $endCursorDataType = '';
+        /**
+         * Required. The partition for which we should compute message stats.
+         *
+         * @var string
+         */
+        public $partition;
+        protected $startCursorType = Cursor::class;
+        protected $startCursorDataType = '';
+        /**
+         * The exclusive end of the range. The range is empty if end_cursor <=
+         * start_cursor. Specifying a start_cursor before the first message and an
+         * end_cursor after the last message will retrieve all messages.
+         *
+         * @param Cursor $endCursor
+         */
+        public function setEndCursor(Cursor $endCursor)
+        {
+        }
+        /**
+         * @return Cursor
+         */
+        public function getEndCursor()
+        {
+        }
+        /**
+         * Required. The partition for which we should compute message stats.
+         *
+         * @param string $partition
+         */
+        public function setPartition($partition)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPartition()
+        {
+        }
+        /**
+         * The inclusive start of the range.
+         *
+         * @param Cursor $startCursor
+         */
+        public function setStartCursor(Cursor $startCursor)
+        {
+        }
+        /**
+         * @return Cursor
+         */
+        public function getStartCursor()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Cursor
+     * Runtime class alias of \Google\Service\PubsubLite\ComputeMessageStatsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndCursor()
-    {
-    }
-    /**
-     * Required. The partition for which we should compute message stats.
-     *
-     * @param string $partition
-     */
-    public function setPartition($partition)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPartition()
-    {
-    }
-    /**
-     * The inclusive start of the range.
-     *
-     * @param Cursor $startCursor
-     */
-    public function setStartCursor(Cursor $startCursor)
-    {
-    }
-    /**
-     * @return Cursor
-     */
-    public function getStartCursor()
+    class Google_Service_PubsubLite_ComputeMessageStatsRequest extends \Google\Service\PubsubLite\ComputeMessageStatsRequest
     {
     }
 }

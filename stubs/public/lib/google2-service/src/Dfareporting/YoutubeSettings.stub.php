@@ -21,137 +21,146 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class YoutubeSettings extends \Google\Collection
-{
-    protected $collection_key = 'longHeadlines';
-    /**
-     * Optional. The IDs of the creatives to use for the business logo. Currently
-     * only one creative is supported.
-     *
-     * @var string[]
-     */
-    public $businessLogoCreativeIds;
-    /**
-     * Optional. The business name.
-     *
-     * @var string
-     */
-    public $businessName;
-    /**
-     * Optional. The call to actions. Currently only one call to action is
-     * supported.
-     *
-     * @var string[]
-     */
-    public $callToActions;
-    /**
-     * Optional. The descriptions. Currently only one description is supported.
-     *
-     * @var string[]
-     */
-    public $descriptions;
-    /**
-     * Optional. The headlines associated with the call to actions. Currently only
-     * one headline is supported.
-     *
-     * @var string[]
-     */
-    public $headlines;
-    /**
-     * Optional. The long headlines. Currently only one long headline is
-     * supported.
-     *
-     * @var string[]
-     */
-    public $longHeadlines;
-    /**
-     * Optional. The IDs of the creatives to use for the business logo. Currently
-     * only one creative is supported.
-     *
-     * @param string[] $businessLogoCreativeIds
-     */
-    public function setBusinessLogoCreativeIds($businessLogoCreativeIds)
+namespace Google\Service\Dfareporting {
+    class YoutubeSettings extends \Google\Collection
     {
+        protected $collection_key = 'longHeadlines';
+        /**
+         * Optional. The IDs of the creatives to use for the business logo. Currently
+         * only one creative is supported.
+         *
+         * @var string[]
+         */
+        public $businessLogoCreativeIds;
+        /**
+         * Optional. The business name.
+         *
+         * @var string
+         */
+        public $businessName;
+        /**
+         * Optional. The call to actions. Currently only one call to action is
+         * supported.
+         *
+         * @var string[]
+         */
+        public $callToActions;
+        /**
+         * Optional. The descriptions. Currently only one description is supported.
+         *
+         * @var string[]
+         */
+        public $descriptions;
+        /**
+         * Optional. The headlines associated with the call to actions. Currently only
+         * one headline is supported.
+         *
+         * @var string[]
+         */
+        public $headlines;
+        /**
+         * Optional. The long headlines. Currently only one long headline is
+         * supported.
+         *
+         * @var string[]
+         */
+        public $longHeadlines;
+        /**
+         * Optional. The IDs of the creatives to use for the business logo. Currently
+         * only one creative is supported.
+         *
+         * @param string[] $businessLogoCreativeIds
+         */
+        public function setBusinessLogoCreativeIds($businessLogoCreativeIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getBusinessLogoCreativeIds()
+        {
+        }
+        /**
+         * Optional. The business name.
+         *
+         * @param string $businessName
+         */
+        public function setBusinessName($businessName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBusinessName()
+        {
+        }
+        /**
+         * Optional. The call to actions. Currently only one call to action is
+         * supported.
+         *
+         * @param string[] $callToActions
+         */
+        public function setCallToActions($callToActions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCallToActions()
+        {
+        }
+        /**
+         * Optional. The descriptions. Currently only one description is supported.
+         *
+         * @param string[] $descriptions
+         */
+        public function setDescriptions($descriptions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDescriptions()
+        {
+        }
+        /**
+         * Optional. The headlines associated with the call to actions. Currently only
+         * one headline is supported.
+         *
+         * @param string[] $headlines
+         */
+        public function setHeadlines($headlines)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getHeadlines()
+        {
+        }
+        /**
+         * Optional. The long headlines. Currently only one long headline is
+         * supported.
+         *
+         * @param string[] $longHeadlines
+         */
+        public function setLongHeadlines($longHeadlines)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLongHeadlines()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Dfareporting\YoutubeSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBusinessLogoCreativeIds()
-    {
-    }
-    /**
-     * Optional. The business name.
-     *
-     * @param string $businessName
-     */
-    public function setBusinessName($businessName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBusinessName()
-    {
-    }
-    /**
-     * Optional. The call to actions. Currently only one call to action is
-     * supported.
-     *
-     * @param string[] $callToActions
-     */
-    public function setCallToActions($callToActions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getCallToActions()
-    {
-    }
-    /**
-     * Optional. The descriptions. Currently only one description is supported.
-     *
-     * @param string[] $descriptions
-     */
-    public function setDescriptions($descriptions)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getDescriptions()
-    {
-    }
-    /**
-     * Optional. The headlines associated with the call to actions. Currently only
-     * one headline is supported.
-     *
-     * @param string[] $headlines
-     */
-    public function setHeadlines($headlines)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getHeadlines()
-    {
-    }
-    /**
-     * Optional. The long headlines. Currently only one long headline is
-     * supported.
-     *
-     * @param string[] $longHeadlines
-     */
-    public function setLongHeadlines($longHeadlines)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLongHeadlines()
+    class Google_Service_Dfareporting_YoutubeSettings extends \Google\Service\Dfareporting\YoutubeSettings
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class PingConfig extends \Google\Model
-{
-    /**
-     * Number of ICMP pings. A maximum of 3 ICMP pings is currently supported.
-     *
-     * @var int
-     */
-    public $pingsCount;
-    /**
-     * Number of ICMP pings. A maximum of 3 ICMP pings is currently supported.
-     *
-     * @param int $pingsCount
-     */
-    public function setPingsCount($pingsCount)
+namespace Google\Service\Monitoring {
+    class PingConfig extends \Google\Model
     {
+        /**
+         * Number of ICMP pings. A maximum of 3 ICMP pings is currently supported.
+         *
+         * @var int
+         */
+        public $pingsCount;
+        /**
+         * Number of ICMP pings. A maximum of 3 ICMP pings is currently supported.
+         *
+         * @param int $pingsCount
+         */
+        public function setPingsCount($pingsCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPingsCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Monitoring\PingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPingsCount()
+    class Google_Service_Monitoring_PingConfig extends \Google\Service\Monitoring\PingConfig
     {
     }
 }

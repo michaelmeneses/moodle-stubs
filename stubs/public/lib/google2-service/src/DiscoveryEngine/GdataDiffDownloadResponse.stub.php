@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GdataDiffDownloadResponse extends \Google\Model
-{
-    protected $objectLocationType = GdataCompositeMedia::class;
-    protected $objectLocationDataType = '';
-    /**
-     * The original object location.
-     *
-     * @param GdataCompositeMedia $objectLocation
-     */
-    public function setObjectLocation(GdataCompositeMedia $objectLocation)
+namespace Google\Service\DiscoveryEngine {
+    class GdataDiffDownloadResponse extends \Google\Model
     {
+        protected $objectLocationType = GdataCompositeMedia::class;
+        protected $objectLocationDataType = '';
+        /**
+         * The original object location.
+         *
+         * @param GdataCompositeMedia $objectLocation
+         */
+        public function setObjectLocation(GdataCompositeMedia $objectLocation)
+        {
+        }
+        /**
+         * @return GdataCompositeMedia
+         */
+        public function getObjectLocation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GdataCompositeMedia
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GdataDiffDownloadResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getObjectLocation()
+    class Google_Service_DiscoveryEngine_GdataDiffDownloadResponse extends \Google\Service\DiscoveryEngine\GdataDiffDownloadResponse
     {
     }
 }

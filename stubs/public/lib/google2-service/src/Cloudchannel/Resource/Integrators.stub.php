@@ -21,97 +21,111 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Cloudchannel\Resource;
-
-/**
- * The "integrators" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudchannelService = new Google\Service\Cloudchannel(...);
- *   $integrators = $cloudchannelService->integrators;
- *  </code>
- */
-class Integrators extends \Google\Service\Resource
-{
+namespace Google\Service\Cloudchannel\Resource {
+    use Google\Service\Cloudchannel\GoogleCloudChannelV1ListSubscribersResponse;
+    use Google\Service\Cloudchannel\GoogleCloudChannelV1RegisterSubscriberRequest;
+    use Google\Service\Cloudchannel\GoogleCloudChannelV1RegisterSubscriberResponse;
+    use Google\Service\Cloudchannel\GoogleCloudChannelV1UnregisterSubscriberRequest;
+    use Google\Service\Cloudchannel\GoogleCloudChannelV1UnregisterSubscriberResponse;
     /**
-     * Lists service accounts with subscriber privileges on the Pub/Sub topic
-     * created for this Channel Services account or integrator. Possible error
-     * codes: * PERMISSION_DENIED: The reseller account making the request and the
-     * provided reseller account are different, or the impersonated user is not a
-     * super admin. * INVALID_ARGUMENT: Required request parameters are missing or
-     * invalid. * NOT_FOUND: The topic resource doesn't exist. * INTERNAL: Any non-
-     * user error related to a technical issue in the backend. Contact Cloud Channel
-     * support. * UNKNOWN: Any non-user error related to a technical issue in the
-     * backend. Contact Cloud Channel support. Return value: A list of service email
-     * addresses. (integrators.listSubscribers)
-     *
-     * @param string $integrator Optional. Resource name of the integrator. Required
-     * if account is not provided. Otherwise, leave this field empty/unset.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string account Optional. Resource name of the account. Required if
-     * integrator is not provided. Otherwise, leave this field empty/unset.
-     * @opt_param int pageSize Optional. The maximum number of service accounts to
-     * return. The service may return fewer than this value. If unspecified, returns
-     * at most 100 service accounts. The maximum value is 1000; the server will
-     * coerce values above 1000.
-     * @opt_param string pageToken Optional. A page token, received from a previous
-     * `ListSubscribers` call. Provide this to retrieve the subsequent page. When
-     * paginating, all other parameters provided to `ListSubscribers` must match the
-     * call that provided the page token.
-     * @return GoogleCloudChannelV1ListSubscribersResponse
-     * @throws \Google\Service\Exception
+     * The "integrators" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $cloudchannelService = new Google\Service\Cloudchannel(...);
+     *   $integrators = $cloudchannelService->integrators;
+     *  </code>
      */
-    public function listSubscribers($integrator, $optParams = [])
+    class Integrators extends \Google\Service\Resource
     {
+        /**
+         * Lists service accounts with subscriber privileges on the Pub/Sub topic
+         * created for this Channel Services account or integrator. Possible error
+         * codes: * PERMISSION_DENIED: The reseller account making the request and the
+         * provided reseller account are different, or the impersonated user is not a
+         * super admin. * INVALID_ARGUMENT: Required request parameters are missing or
+         * invalid. * NOT_FOUND: The topic resource doesn't exist. * INTERNAL: Any non-
+         * user error related to a technical issue in the backend. Contact Cloud Channel
+         * support. * UNKNOWN: Any non-user error related to a technical issue in the
+         * backend. Contact Cloud Channel support. Return value: A list of service email
+         * addresses. (integrators.listSubscribers)
+         *
+         * @param string $integrator Optional. Resource name of the integrator. Required
+         * if account is not provided. Otherwise, leave this field empty/unset.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string account Optional. Resource name of the account. Required if
+         * integrator is not provided. Otherwise, leave this field empty/unset.
+         * @opt_param int pageSize Optional. The maximum number of service accounts to
+         * return. The service may return fewer than this value. If unspecified, returns
+         * at most 100 service accounts. The maximum value is 1000; the server will
+         * coerce values above 1000.
+         * @opt_param string pageToken Optional. A page token, received from a previous
+         * `ListSubscribers` call. Provide this to retrieve the subsequent page. When
+         * paginating, all other parameters provided to `ListSubscribers` must match the
+         * call that provided the page token.
+         * @return GoogleCloudChannelV1ListSubscribersResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listSubscribers($integrator, $optParams = [])
+        {
+        }
+        /**
+         * Registers a service account with subscriber privileges on the Pub/Sub topic
+         * for this Channel Services account or integrator. After you create a
+         * subscriber, you get the events through SubscriberEvent Possible error codes:
+         * * PERMISSION_DENIED: The reseller account making the request and the provided
+         * reseller account are different, or the impersonated user is not a super
+         * admin. * INVALID_ARGUMENT: Required request parameters are missing or
+         * invalid. * INTERNAL: Any non-user error related to a technical issue in the
+         * backend. Contact Cloud Channel support. * UNKNOWN: Any non-user error related
+         * to a technical issue in the backend. Contact Cloud Channel support. Return
+         * value: The topic name with the registered service email address.
+         * (integrators.registerSubscriber)
+         *
+         * @param string $integrator Optional. Resource name of the integrator. Required
+         * if account is not provided. Otherwise, leave this field empty/unset.
+         * @param GoogleCloudChannelV1RegisterSubscriberRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudChannelV1RegisterSubscriberResponse
+         * @throws \Google\Service\Exception
+         */
+        public function registerSubscriber($integrator, GoogleCloudChannelV1RegisterSubscriberRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Unregisters a service account with subscriber privileges on the Pub/Sub topic
+         * created for this Channel Services account or integrator. If there are no
+         * service accounts left with subscriber privileges, this deletes the topic. You
+         * can call ListSubscribers to check for these accounts. Possible error codes: *
+         * PERMISSION_DENIED: The reseller account making the request and the provided
+         * reseller account are different, or the impersonated user is not a super
+         * admin. * INVALID_ARGUMENT: Required request parameters are missing or
+         * invalid. * NOT_FOUND: The topic resource doesn't exist. * INTERNAL: Any non-
+         * user error related to a technical issue in the backend. Contact Cloud Channel
+         * support. * UNKNOWN: Any non-user error related to a technical issue in the
+         * backend. Contact Cloud Channel support. Return value: The topic name that
+         * unregistered the service email address. Returns a success response if the
+         * service email address wasn't registered with the topic.
+         * (integrators.unregisterSubscriber)
+         *
+         * @param string $integrator Optional. Resource name of the integrator. Required
+         * if account is not provided. Otherwise, leave this field empty/unset.
+         * @param GoogleCloudChannelV1UnregisterSubscriberRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudChannelV1UnregisterSubscriberResponse
+         * @throws \Google\Service\Exception
+         */
+        public function unregisterSubscriber($integrator, GoogleCloudChannelV1UnregisterSubscriberRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Registers a service account with subscriber privileges on the Pub/Sub topic
-     * for this Channel Services account or integrator. After you create a
-     * subscriber, you get the events through SubscriberEvent Possible error codes:
-     * * PERMISSION_DENIED: The reseller account making the request and the provided
-     * reseller account are different, or the impersonated user is not a super
-     * admin. * INVALID_ARGUMENT: Required request parameters are missing or
-     * invalid. * INTERNAL: Any non-user error related to a technical issue in the
-     * backend. Contact Cloud Channel support. * UNKNOWN: Any non-user error related
-     * to a technical issue in the backend. Contact Cloud Channel support. Return
-     * value: The topic name with the registered service email address.
-     * (integrators.registerSubscriber)
-     *
-     * @param string $integrator Optional. Resource name of the integrator. Required
-     * if account is not provided. Otherwise, leave this field empty/unset.
-     * @param GoogleCloudChannelV1RegisterSubscriberRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudChannelV1RegisterSubscriberResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Cloudchannel\Resource\Integrators registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function registerSubscriber($integrator, GoogleCloudChannelV1RegisterSubscriberRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Unregisters a service account with subscriber privileges on the Pub/Sub topic
-     * created for this Channel Services account or integrator. If there are no
-     * service accounts left with subscriber privileges, this deletes the topic. You
-     * can call ListSubscribers to check for these accounts. Possible error codes: *
-     * PERMISSION_DENIED: The reseller account making the request and the provided
-     * reseller account are different, or the impersonated user is not a super
-     * admin. * INVALID_ARGUMENT: Required request parameters are missing or
-     * invalid. * NOT_FOUND: The topic resource doesn't exist. * INTERNAL: Any non-
-     * user error related to a technical issue in the backend. Contact Cloud Channel
-     * support. * UNKNOWN: Any non-user error related to a technical issue in the
-     * backend. Contact Cloud Channel support. Return value: The topic name that
-     * unregistered the service email address. Returns a success response if the
-     * service email address wasn't registered with the topic.
-     * (integrators.unregisterSubscriber)
-     *
-     * @param string $integrator Optional. Resource name of the integrator. Required
-     * if account is not provided. Otherwise, leave this field empty/unset.
-     * @param GoogleCloudChannelV1UnregisterSubscriberRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudChannelV1UnregisterSubscriberResponse
-     * @throws \Google\Service\Exception
-     */
-    public function unregisterSubscriber($integrator, GoogleCloudChannelV1UnregisterSubscriberRequest $postBody, $optParams = [])
+    class Google_Service_Cloudchannel_Resource_Integrators extends \Google\Service\Cloudchannel\Resource\Integrators
     {
     }
 }

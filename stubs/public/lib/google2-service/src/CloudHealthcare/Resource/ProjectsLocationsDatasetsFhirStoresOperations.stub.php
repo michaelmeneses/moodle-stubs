@@ -21,57 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare\Resource;
-
-/**
- * The "operations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $healthcareService = new Google\Service\CloudHealthcare(...);
- *   $operations = $healthcareService->projects_locations_datasets_fhirStores_operations;
- *  </code>
- */
-class ProjectsLocationsDatasetsFhirStoresOperations extends \Google\Service\Resource
-{
+namespace Google\Service\CloudHealthcare\Resource {
+    use Google\Service\CloudHealthcare\HttpBody;
     /**
-     * Deletes operations as defined in the FHIR specification. Implements the FHIR
-     * implementation guide [bulk data delete
-     * request](https://build.fhir.org/ig/HL7/bulk-data/export.html#bulk-data-
-     * delete-request). Returns success if the operation was successfully cancelled.
-     * If the operation is complete, or has already been cancelled, returns an error
-     * response. (operations.deleteFhirOperation)
-     *
-     * @param string $name Required. Name of the operation to be deleted, in the
-     * format `projects/{project_id}/locations/{location_id}/datasets/{dataset_id}/f
-     * hirStores/{fhir_store_id}/operations/{operation_id}`.
-     * @param array $optParams Optional parameters.
-     * @return HttpBody
-     * @throws \Google\Service\Exception
+     * The "operations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $healthcareService = new Google\Service\CloudHealthcare(...);
+     *   $operations = $healthcareService->projects_locations_datasets_fhirStores_operations;
+     *  </code>
      */
-    public function deleteFhirOperation($name, $optParams = [])
+    class ProjectsLocationsDatasetsFhirStoresOperations extends \Google\Service\Resource
     {
+        /**
+         * Deletes operations as defined in the FHIR specification. Implements the FHIR
+         * implementation guide [bulk data delete
+         * request](https://build.fhir.org/ig/HL7/bulk-data/export.html#bulk-data-
+         * delete-request). Returns success if the operation was successfully cancelled.
+         * If the operation is complete, or has already been cancelled, returns an error
+         * response. (operations.deleteFhirOperation)
+         *
+         * @param string $name Required. Name of the operation to be deleted, in the
+         * format `projects/{project_id}/locations/{location_id}/datasets/{dataset_id}/f
+         * hirStores/{fhir_store_id}/operations/{operation_id}`.
+         * @param array $optParams Optional parameters.
+         * @return HttpBody
+         * @throws \Google\Service\Exception
+         */
+        public function deleteFhirOperation($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets the status of operations as defined in the FHIR specification.
+         * Implements the FHIR implementation guide [bulk data status
+         * request](https://build.fhir.org/ig/HL7/bulk-data/export.html#bulk-data-
+         * status-request). Operations can have one of these states: * in-progress:
+         * response status code is `202` and `X-Progress` header is set to `in
+         * progress`. * complete: response status code is `200` and the body is a JSON-
+         * encoded operation response as defined by the spec. For a bulk export, this
+         * response is defined in https://build.fhir.org/ig/HL7/bulk-
+         * data/export.html#response---complete-status. * error: response status code is
+         * `5XX`, and the body is a JSON-encoded `OperationOutcome` resource describing
+         * the reason for the error. (operations.getFhirOperationStatus)
+         *
+         * @param string $name Required. Name of the operation to query, in the format `
+         * projects/{project_id}/locations/{location_id}/datasets/{dataset_id}/fhirStore
+         * s/{fhir_store_id}/operations/{operation_id}`.
+         * @param array $optParams Optional parameters.
+         * @return HttpBody
+         * @throws \Google\Service\Exception
+         */
+        public function getFhirOperationStatus($name, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets the status of operations as defined in the FHIR specification.
-     * Implements the FHIR implementation guide [bulk data status
-     * request](https://build.fhir.org/ig/HL7/bulk-data/export.html#bulk-data-
-     * status-request). Operations can have one of these states: * in-progress:
-     * response status code is `202` and `X-Progress` header is set to `in
-     * progress`. * complete: response status code is `200` and the body is a JSON-
-     * encoded operation response as defined by the spec. For a bulk export, this
-     * response is defined in https://build.fhir.org/ig/HL7/bulk-
-     * data/export.html#response---complete-status. * error: response status code is
-     * `5XX`, and the body is a JSON-encoded `OperationOutcome` resource describing
-     * the reason for the error. (operations.getFhirOperationStatus)
-     *
-     * @param string $name Required. Name of the operation to query, in the format `
-     * projects/{project_id}/locations/{location_id}/datasets/{dataset_id}/fhirStore
-     * s/{fhir_store_id}/operations/{operation_id}`.
-     * @param array $optParams Optional parameters.
-     * @return HttpBody
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\CloudHealthcare\Resource\ProjectsLocationsDatasetsFhirStoresOperations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFhirOperationStatus($name, $optParams = [])
+    class Google_Service_CloudHealthcare_Resource_ProjectsLocationsDatasetsFhirStoresOperations extends \Google\Service\CloudHealthcare\Resource\ProjectsLocationsDatasetsFhirStoresOperations
     {
     }
 }

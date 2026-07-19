@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class EidInfo extends \Google\Collection
-{
-    protected $collection_key = 'eids';
-    protected $eidsType = Eid::class;
-    protected $eidsDataType = 'array';
-    /**
-     * Output only. EID information for each eUICC chip.
-     *
-     * @param Eid[] $eids
-     */
-    public function setEids($eids)
+namespace Google\Service\AndroidManagement {
+    class EidInfo extends \Google\Collection
     {
+        protected $collection_key = 'eids';
+        protected $eidsType = Eid::class;
+        protected $eidsDataType = 'array';
+        /**
+         * Output only. EID information for each eUICC chip.
+         *
+         * @param Eid[] $eids
+         */
+        public function setEids($eids)
+        {
+        }
+        /**
+         * @return Eid[]
+         */
+        public function getEids()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Eid[]
+     * Runtime class alias of \Google\Service\AndroidManagement\EidInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEids()
+    class Google_Service_AndroidManagement_EidInfo extends \Google\Service\AndroidManagement\EidInfo
     {
     }
 }

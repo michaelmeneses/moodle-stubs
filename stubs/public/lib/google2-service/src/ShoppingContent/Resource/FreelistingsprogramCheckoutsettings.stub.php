@@ -21,51 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent\Resource;
-
-/**
- * The "checkoutsettings" collection of methods.
- * Typical usage is:
- *  <code>
- *   $contentService = new Google\Service\ShoppingContent(...);
- *   $checkoutsettings = $contentService->freelistingsprogram_checkoutsettings;
- *  </code>
- */
-class FreelistingsprogramCheckoutsettings extends \Google\Service\Resource
-{
+namespace Google\Service\ShoppingContent\Resource {
+    use Google\Service\ShoppingContent\CheckoutSettings;
+    use Google\Service\ShoppingContent\InsertCheckoutSettingsRequest;
     /**
-     * Deletes `Checkout` settings and unenrolls merchant from `Checkout` program.
-     * (checkoutsettings.delete)
-     *
-     * @param string $merchantId Required. The ID of the account.
-     * @param array $optParams Optional parameters.
-     * @throws \Google\Service\Exception
+     * The "checkoutsettings" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $contentService = new Google\Service\ShoppingContent(...);
+     *   $checkoutsettings = $contentService->freelistingsprogram_checkoutsettings;
+     *  </code>
      */
-    public function delete($merchantId, $optParams = [])
+    class FreelistingsprogramCheckoutsettings extends \Google\Service\Resource
     {
+        /**
+         * Deletes `Checkout` settings and unenrolls merchant from `Checkout` program.
+         * (checkoutsettings.delete)
+         *
+         * @param string $merchantId Required. The ID of the account.
+         * @param array $optParams Optional parameters.
+         * @throws \Google\Service\Exception
+         */
+        public function delete($merchantId, $optParams = [])
+        {
+        }
+        /**
+         * Gets Checkout settings for the given merchant. This includes information
+         * about review state, enrollment state and URL settings. (checkoutsettings.get)
+         *
+         * @param string $merchantId Required. The ID of the account.
+         * @param array $optParams Optional parameters.
+         * @return CheckoutSettings
+         * @throws \Google\Service\Exception
+         */
+        public function get($merchantId, $optParams = [])
+        {
+        }
+        /**
+         * Enrolls merchant in `Checkout` program. (checkoutsettings.insert)
+         *
+         * @param string $merchantId Required. The ID of the account.
+         * @param InsertCheckoutSettingsRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return CheckoutSettings
+         * @throws \Google\Service\Exception
+         */
+        public function insert($merchantId, InsertCheckoutSettingsRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets Checkout settings for the given merchant. This includes information
-     * about review state, enrollment state and URL settings. (checkoutsettings.get)
-     *
-     * @param string $merchantId Required. The ID of the account.
-     * @param array $optParams Optional parameters.
-     * @return CheckoutSettings
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\ShoppingContent\Resource\FreelistingsprogramCheckoutsettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get($merchantId, $optParams = [])
-    {
-    }
-    /**
-     * Enrolls merchant in `Checkout` program. (checkoutsettings.insert)
-     *
-     * @param string $merchantId Required. The ID of the account.
-     * @param InsertCheckoutSettingsRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return CheckoutSettings
-     * @throws \Google\Service\Exception
-     */
-    public function insert($merchantId, InsertCheckoutSettingsRequest $postBody, $optParams = [])
+    class Google_Service_ShoppingContent_Resource_FreelistingsprogramCheckoutsettings extends \Google\Service\ShoppingContent\Resource\FreelistingsprogramCheckoutsettings
     {
     }
 }

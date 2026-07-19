@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ServiceMeshType extends \Google\Model
-{
-    /**
-     * A 7 character code matching `^IST[0-9]{4}$` or `^ASM[0-9]{4}$`, intended to
-     * uniquely identify the message type. (e.g. "IST0001" is mapped to the
-     * "InternalError" message type.)
-     *
-     * @var string
-     */
-    public $code;
-    /**
-     * A human-readable name for the message type. e.g. "InternalError",
-     * "PodMissingProxy". This should be the same for all messages of the same
-     * type. (This corresponds to the `name` field in open-source Istio.)
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * A 7 character code matching `^IST[0-9]{4}$` or `^ASM[0-9]{4}$`, intended to
-     * uniquely identify the message type. (e.g. "IST0001" is mapped to the
-     * "InternalError" message type.)
-     *
-     * @param string $code
-     */
-    public function setCode($code)
+namespace Google\Service\GKEHub {
+    class ServiceMeshType extends \Google\Model
     {
+        /**
+         * A 7 character code matching `^IST[0-9]{4}$` or `^ASM[0-9]{4}$`, intended to
+         * uniquely identify the message type. (e.g. "IST0001" is mapped to the
+         * "InternalError" message type.)
+         *
+         * @var string
+         */
+        public $code;
+        /**
+         * A human-readable name for the message type. e.g. "InternalError",
+         * "PodMissingProxy". This should be the same for all messages of the same
+         * type. (This corresponds to the `name` field in open-source Istio.)
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * A 7 character code matching `^IST[0-9]{4}$` or `^ASM[0-9]{4}$`, intended to
+         * uniquely identify the message type. (e.g. "IST0001" is mapped to the
+         * "InternalError" message type.)
+         *
+         * @param string $code
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCode()
+        {
+        }
+        /**
+         * A human-readable name for the message type. e.g. "InternalError",
+         * "PodMissingProxy". This should be the same for all messages of the same
+         * type. (This corresponds to the `name` field in open-source Istio.)
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\ServiceMeshType registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCode()
-    {
-    }
-    /**
-     * A human-readable name for the message type. e.g. "InternalError",
-     * "PodMissingProxy". This should be the same for all messages of the same
-     * type. (This corresponds to the `name` field in open-source Istio.)
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
+    class Google_Service_GKEHub_ServiceMeshType extends \Google\Service\GKEHub\ServiceMeshType
     {
     }
 }

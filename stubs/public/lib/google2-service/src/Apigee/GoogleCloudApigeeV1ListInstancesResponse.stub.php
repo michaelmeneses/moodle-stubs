@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ListInstancesResponse extends \Google\Collection
-{
-    protected $collection_key = 'instances';
-    protected $instancesType = GoogleCloudApigeeV1Instance::class;
-    protected $instancesDataType = 'array';
-    /**
-     * Page token that you can include in a ListInstance request to retrieve the
-     * next page of content. If omitted, no subsequent pages exist.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Instances in the specified organization.
-     *
-     * @param GoogleCloudApigeeV1Instance[] $instances
-     */
-    public function setInstances($instances)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ListInstancesResponse extends \Google\Collection
     {
+        protected $collection_key = 'instances';
+        protected $instancesType = GoogleCloudApigeeV1Instance::class;
+        protected $instancesDataType = 'array';
+        /**
+         * Page token that you can include in a ListInstance request to retrieve the
+         * next page of content. If omitted, no subsequent pages exist.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Instances in the specified organization.
+         *
+         * @param GoogleCloudApigeeV1Instance[] $instances
+         */
+        public function setInstances($instances)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1Instance[]
+         */
+        public function getInstances()
+        {
+        }
+        /**
+         * Page token that you can include in a ListInstance request to retrieve the
+         * next page of content. If omitted, no subsequent pages exist.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1Instance[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ListInstancesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstances()
-    {
-    }
-    /**
-     * Page token that you can include in a ListInstance request to retrieve the
-     * next page of content. If omitted, no subsequent pages exist.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ListInstancesResponse extends \Google\Service\Apigee\GoogleCloudApigeeV1ListInstancesResponse
     {
     }
 }

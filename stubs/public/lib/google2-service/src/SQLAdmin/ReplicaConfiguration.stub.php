@@ -21,101 +21,110 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class ReplicaConfiguration extends \Google\Model
-{
-    /**
-     * Optional. Specifies if a SQL Server replica is a cascadable replica. A
-     * cascadable replica is a SQL Server cross region replica that supports
-     * replica(s) under it.
-     *
-     * @var bool
-     */
-    public $cascadableReplica;
-    /**
-     * Specifies if the replica is the failover target. If the field is set to
-     * `true`, the replica will be designated as a failover replica. In case the
-     * primary instance fails, the replica instance will be promoted as the new
-     * primary instance. Only one replica can be specified as failover target, and
-     * the replica has to be in different zone with the primary instance.
-     *
-     * @var bool
-     */
-    public $failoverTarget;
-    /**
-     * This is always `sql#replicaConfiguration`.
-     *
-     * @var string
-     */
-    public $kind;
-    protected $mysqlReplicaConfigurationType = MySqlReplicaConfiguration::class;
-    protected $mysqlReplicaConfigurationDataType = '';
-    /**
-     * Optional. Specifies if a SQL Server replica is a cascadable replica. A
-     * cascadable replica is a SQL Server cross region replica that supports
-     * replica(s) under it.
-     *
-     * @param bool $cascadableReplica
-     */
-    public function setCascadableReplica($cascadableReplica)
+namespace Google\Service\SQLAdmin {
+    class ReplicaConfiguration extends \Google\Model
     {
+        /**
+         * Optional. Specifies if a SQL Server replica is a cascadable replica. A
+         * cascadable replica is a SQL Server cross region replica that supports
+         * replica(s) under it.
+         *
+         * @var bool
+         */
+        public $cascadableReplica;
+        /**
+         * Specifies if the replica is the failover target. If the field is set to
+         * `true`, the replica will be designated as a failover replica. In case the
+         * primary instance fails, the replica instance will be promoted as the new
+         * primary instance. Only one replica can be specified as failover target, and
+         * the replica has to be in different zone with the primary instance.
+         *
+         * @var bool
+         */
+        public $failoverTarget;
+        /**
+         * This is always `sql#replicaConfiguration`.
+         *
+         * @var string
+         */
+        public $kind;
+        protected $mysqlReplicaConfigurationType = MySqlReplicaConfiguration::class;
+        protected $mysqlReplicaConfigurationDataType = '';
+        /**
+         * Optional. Specifies if a SQL Server replica is a cascadable replica. A
+         * cascadable replica is a SQL Server cross region replica that supports
+         * replica(s) under it.
+         *
+         * @param bool $cascadableReplica
+         */
+        public function setCascadableReplica($cascadableReplica)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getCascadableReplica()
+        {
+        }
+        /**
+         * Specifies if the replica is the failover target. If the field is set to
+         * `true`, the replica will be designated as a failover replica. In case the
+         * primary instance fails, the replica instance will be promoted as the new
+         * primary instance. Only one replica can be specified as failover target, and
+         * the replica has to be in different zone with the primary instance.
+         *
+         * @param bool $failoverTarget
+         */
+        public function setFailoverTarget($failoverTarget)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getFailoverTarget()
+        {
+        }
+        /**
+         * This is always `sql#replicaConfiguration`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * MySQL specific configuration when replicating from a MySQL on-premises
+         * primary instance. Replication configuration information such as the
+         * username, password, certificates, and keys are not stored in the instance
+         * metadata. The configuration information is used only to set up the
+         * replication connection and is stored by MySQL in a file named `master.info`
+         * in the data directory.
+         *
+         * @param MySqlReplicaConfiguration $mysqlReplicaConfiguration
+         */
+        public function setMysqlReplicaConfiguration(MySqlReplicaConfiguration $mysqlReplicaConfiguration)
+        {
+        }
+        /**
+         * @return MySqlReplicaConfiguration
+         */
+        public function getMysqlReplicaConfiguration()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\SQLAdmin\ReplicaConfiguration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCascadableReplica()
-    {
-    }
-    /**
-     * Specifies if the replica is the failover target. If the field is set to
-     * `true`, the replica will be designated as a failover replica. In case the
-     * primary instance fails, the replica instance will be promoted as the new
-     * primary instance. Only one replica can be specified as failover target, and
-     * the replica has to be in different zone with the primary instance.
-     *
-     * @param bool $failoverTarget
-     */
-    public function setFailoverTarget($failoverTarget)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getFailoverTarget()
-    {
-    }
-    /**
-     * This is always `sql#replicaConfiguration`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * MySQL specific configuration when replicating from a MySQL on-premises
-     * primary instance. Replication configuration information such as the
-     * username, password, certificates, and keys are not stored in the instance
-     * metadata. The configuration information is used only to set up the
-     * replication connection and is stored by MySQL in a file named `master.info`
-     * in the data directory.
-     *
-     * @param MySqlReplicaConfiguration $mysqlReplicaConfiguration
-     */
-    public function setMysqlReplicaConfiguration(MySqlReplicaConfiguration $mysqlReplicaConfiguration)
-    {
-    }
-    /**
-     * @return MySqlReplicaConfiguration
-     */
-    public function getMysqlReplicaConfiguration()
+    class Google_Service_SQLAdmin_ReplicaConfiguration extends \Google\Service\SQLAdmin\ReplicaConfiguration
     {
     }
 }

@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1EmbedContentResponseEmbedding extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    /**
-     * Embedding vector values.
-     *
-     * @var float[]
-     */
-    public $values;
-    /**
-     * Embedding vector values.
-     *
-     * @param float[] $values
-     */
-    public function setValues($values)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1EmbedContentResponseEmbedding extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        /**
+         * Embedding vector values.
+         *
+         * @var float[]
+         */
+        public $values;
+        /**
+         * Embedding vector values.
+         *
+         * @param float[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return float[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1EmbedContentResponseEmbedding registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getValues()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1EmbedContentResponseEmbedding extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1EmbedContentResponseEmbedding
     {
     }
 }

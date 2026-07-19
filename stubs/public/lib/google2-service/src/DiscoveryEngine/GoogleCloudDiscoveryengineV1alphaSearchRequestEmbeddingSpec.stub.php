@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaSearchRequestEmbeddingSpec extends \Google\Collection
-{
-    protected $collection_key = 'embeddingVectors';
-    protected $embeddingVectorsType = GoogleCloudDiscoveryengineV1alphaSearchRequestEmbeddingSpecEmbeddingVector::class;
-    protected $embeddingVectorsDataType = 'array';
-    /**
-     * The embedding vector used for retrieval. Limit to 1.
-     *
-     * @param GoogleCloudDiscoveryengineV1alphaSearchRequestEmbeddingSpecEmbeddingVector[] $embeddingVectors
-     */
-    public function setEmbeddingVectors($embeddingVectors)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaSearchRequestEmbeddingSpec extends \Google\Collection
     {
+        protected $collection_key = 'embeddingVectors';
+        protected $embeddingVectorsType = GoogleCloudDiscoveryengineV1alphaSearchRequestEmbeddingSpecEmbeddingVector::class;
+        protected $embeddingVectorsDataType = 'array';
+        /**
+         * The embedding vector used for retrieval. Limit to 1.
+         *
+         * @param GoogleCloudDiscoveryengineV1alphaSearchRequestEmbeddingSpecEmbeddingVector[] $embeddingVectors
+         */
+        public function setEmbeddingVectors($embeddingVectors)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1alphaSearchRequestEmbeddingSpecEmbeddingVector[]
+         */
+        public function getEmbeddingVectors()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1alphaSearchRequestEmbeddingSpecEmbeddingVector[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaSearchRequestEmbeddingSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmbeddingVectors()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaSearchRequestEmbeddingSpec extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaSearchRequestEmbeddingSpec
     {
     }
 }

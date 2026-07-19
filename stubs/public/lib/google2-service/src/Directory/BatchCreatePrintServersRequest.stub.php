@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class BatchCreatePrintServersRequest extends \Google\Collection
-{
-    protected $collection_key = 'requests';
-    protected $requestsType = CreatePrintServerRequest::class;
-    protected $requestsDataType = 'array';
-    /**
-     * Required. A list of `PrintServer` resources to be created (max `50` per
-     * batch).
-     *
-     * @param CreatePrintServerRequest[] $requests
-     */
-    public function setRequests($requests)
+namespace Google\Service\Directory {
+    class BatchCreatePrintServersRequest extends \Google\Collection
     {
+        protected $collection_key = 'requests';
+        protected $requestsType = CreatePrintServerRequest::class;
+        protected $requestsDataType = 'array';
+        /**
+         * Required. A list of `PrintServer` resources to be created (max `50` per
+         * batch).
+         *
+         * @param CreatePrintServerRequest[] $requests
+         */
+        public function setRequests($requests)
+        {
+        }
+        /**
+         * @return CreatePrintServerRequest[]
+         */
+        public function getRequests()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CreatePrintServerRequest[]
+     * Runtime class alias of \Google\Service\Directory\BatchCreatePrintServersRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequests()
+    class Google_Service_Directory_BatchCreatePrintServersRequest extends \Google\Service\Directory\BatchCreatePrintServersRequest
     {
     }
 }

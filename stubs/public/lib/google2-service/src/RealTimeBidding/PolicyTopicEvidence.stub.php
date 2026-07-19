@@ -21,122 +21,131 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RealTimeBidding;
-
-class PolicyTopicEvidence extends \Google\Model
-{
-    protected $destinationNotCrawlableType = DestinationNotCrawlableEvidence::class;
-    protected $destinationNotCrawlableDataType = '';
-    protected $destinationNotWorkingType = DestinationNotWorkingEvidence::class;
-    protected $destinationNotWorkingDataType = '';
-    protected $destinationUrlType = DestinationUrlEvidence::class;
-    protected $destinationUrlDataType = '';
-    protected $domainCallType = DomainCallEvidence::class;
-    protected $domainCallDataType = '';
-    protected $downloadSizeType = DownloadSizeEvidence::class;
-    protected $downloadSizeDataType = '';
-    protected $httpCallType = HttpCallEvidence::class;
-    protected $httpCallDataType = '';
-    protected $httpCookieType = HttpCookieEvidence::class;
-    protected $httpCookieDataType = '';
-    /**
-     * The creative's destination URL was not crawlable by Google.
-     *
-     * @param DestinationNotCrawlableEvidence $destinationNotCrawlable
-     */
-    public function setDestinationNotCrawlable(DestinationNotCrawlableEvidence $destinationNotCrawlable)
+namespace Google\Service\RealTimeBidding {
+    class PolicyTopicEvidence extends \Google\Model
     {
+        protected $destinationNotCrawlableType = DestinationNotCrawlableEvidence::class;
+        protected $destinationNotCrawlableDataType = '';
+        protected $destinationNotWorkingType = DestinationNotWorkingEvidence::class;
+        protected $destinationNotWorkingDataType = '';
+        protected $destinationUrlType = DestinationUrlEvidence::class;
+        protected $destinationUrlDataType = '';
+        protected $domainCallType = DomainCallEvidence::class;
+        protected $domainCallDataType = '';
+        protected $downloadSizeType = DownloadSizeEvidence::class;
+        protected $downloadSizeDataType = '';
+        protected $httpCallType = HttpCallEvidence::class;
+        protected $httpCallDataType = '';
+        protected $httpCookieType = HttpCookieEvidence::class;
+        protected $httpCookieDataType = '';
+        /**
+         * The creative's destination URL was not crawlable by Google.
+         *
+         * @param DestinationNotCrawlableEvidence $destinationNotCrawlable
+         */
+        public function setDestinationNotCrawlable(DestinationNotCrawlableEvidence $destinationNotCrawlable)
+        {
+        }
+        /**
+         * @return DestinationNotCrawlableEvidence
+         */
+        public function getDestinationNotCrawlable()
+        {
+        }
+        /**
+         * The creative's destination URL did not function properly or was incorrectly
+         * set up.
+         *
+         * @param DestinationNotWorkingEvidence $destinationNotWorking
+         */
+        public function setDestinationNotWorking(DestinationNotWorkingEvidence $destinationNotWorking)
+        {
+        }
+        /**
+         * @return DestinationNotWorkingEvidence
+         */
+        public function getDestinationNotWorking()
+        {
+        }
+        /**
+         * URL of the actual landing page.
+         *
+         * @param DestinationUrlEvidence $destinationUrl
+         */
+        public function setDestinationUrl(DestinationUrlEvidence $destinationUrl)
+        {
+        }
+        /**
+         * @return DestinationUrlEvidence
+         */
+        public function getDestinationUrl()
+        {
+        }
+        /**
+         * Number of HTTP calls made by the creative, broken down by domain.
+         *
+         * @param DomainCallEvidence $domainCall
+         */
+        public function setDomainCall(DomainCallEvidence $domainCall)
+        {
+        }
+        /**
+         * @return DomainCallEvidence
+         */
+        public function getDomainCall()
+        {
+        }
+        /**
+         * Total download size and URL-level download size breakdown for resources in
+         * a creative.
+         *
+         * @param DownloadSizeEvidence $downloadSize
+         */
+        public function setDownloadSize(DownloadSizeEvidence $downloadSize)
+        {
+        }
+        /**
+         * @return DownloadSizeEvidence
+         */
+        public function getDownloadSize()
+        {
+        }
+        /**
+         * HTTP calls made by the creative that resulted in policy violations.
+         *
+         * @param HttpCallEvidence $httpCall
+         */
+        public function setHttpCall(HttpCallEvidence $httpCall)
+        {
+        }
+        /**
+         * @return HttpCallEvidence
+         */
+        public function getHttpCall()
+        {
+        }
+        /**
+         * Evidence for HTTP cookie-related policy violations.
+         *
+         * @param HttpCookieEvidence $httpCookie
+         */
+        public function setHttpCookie(HttpCookieEvidence $httpCookie)
+        {
+        }
+        /**
+         * @return HttpCookieEvidence
+         */
+        public function getHttpCookie()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DestinationNotCrawlableEvidence
+     * Runtime class alias of \Google\Service\RealTimeBidding\PolicyTopicEvidence registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDestinationNotCrawlable()
-    {
-    }
-    /**
-     * The creative's destination URL did not function properly or was incorrectly
-     * set up.
-     *
-     * @param DestinationNotWorkingEvidence $destinationNotWorking
-     */
-    public function setDestinationNotWorking(DestinationNotWorkingEvidence $destinationNotWorking)
-    {
-    }
-    /**
-     * @return DestinationNotWorkingEvidence
-     */
-    public function getDestinationNotWorking()
-    {
-    }
-    /**
-     * URL of the actual landing page.
-     *
-     * @param DestinationUrlEvidence $destinationUrl
-     */
-    public function setDestinationUrl(DestinationUrlEvidence $destinationUrl)
-    {
-    }
-    /**
-     * @return DestinationUrlEvidence
-     */
-    public function getDestinationUrl()
-    {
-    }
-    /**
-     * Number of HTTP calls made by the creative, broken down by domain.
-     *
-     * @param DomainCallEvidence $domainCall
-     */
-    public function setDomainCall(DomainCallEvidence $domainCall)
-    {
-    }
-    /**
-     * @return DomainCallEvidence
-     */
-    public function getDomainCall()
-    {
-    }
-    /**
-     * Total download size and URL-level download size breakdown for resources in
-     * a creative.
-     *
-     * @param DownloadSizeEvidence $downloadSize
-     */
-    public function setDownloadSize(DownloadSizeEvidence $downloadSize)
-    {
-    }
-    /**
-     * @return DownloadSizeEvidence
-     */
-    public function getDownloadSize()
-    {
-    }
-    /**
-     * HTTP calls made by the creative that resulted in policy violations.
-     *
-     * @param HttpCallEvidence $httpCall
-     */
-    public function setHttpCall(HttpCallEvidence $httpCall)
-    {
-    }
-    /**
-     * @return HttpCallEvidence
-     */
-    public function getHttpCall()
-    {
-    }
-    /**
-     * Evidence for HTTP cookie-related policy violations.
-     *
-     * @param HttpCookieEvidence $httpCookie
-     */
-    public function setHttpCookie(HttpCookieEvidence $httpCookie)
-    {
-    }
-    /**
-     * @return HttpCookieEvidence
-     */
-    public function getHttpCookie()
+    class Google_Service_RealTimeBidding_PolicyTopicEvidence extends \Google\Service\RealTimeBidding\PolicyTopicEvidence
     {
     }
 }

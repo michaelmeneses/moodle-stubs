@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDebugger;
-
-class CloudRepoSourceContext extends \Google\Model
-{
-    protected $aliasContextType = AliasContext::class;
-    protected $aliasContextDataType = '';
-    /**
-     * @var string
-     */
-    public $aliasName;
-    protected $repoIdType = RepoId::class;
-    protected $repoIdDataType = '';
-    /**
-     * @var string
-     */
-    public $revisionId;
-    /**
-     * @param AliasContext
-     */
-    public function setAliasContext(AliasContext $aliasContext)
+namespace Google\Service\CloudDebugger {
+    class CloudRepoSourceContext extends \Google\Model
     {
+        protected $aliasContextType = AliasContext::class;
+        protected $aliasContextDataType = '';
+        /**
+         * @var string
+         */
+        public $aliasName;
+        protected $repoIdType = RepoId::class;
+        protected $repoIdDataType = '';
+        /**
+         * @var string
+         */
+        public $revisionId;
+        /**
+         * @param AliasContext
+         */
+        public function setAliasContext(AliasContext $aliasContext)
+        {
+        }
+        /**
+         * @return AliasContext
+         */
+        public function getAliasContext()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setAliasName($aliasName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAliasName()
+        {
+        }
+        /**
+         * @param RepoId
+         */
+        public function setRepoId(RepoId $repoId)
+        {
+        }
+        /**
+         * @return RepoId
+         */
+        public function getRepoId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setRevisionId($revisionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRevisionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AliasContext
+     * Runtime class alias of \Google\Service\CloudDebugger\CloudRepoSourceContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAliasContext()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setAliasName($aliasName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAliasName()
-    {
-    }
-    /**
-     * @param RepoId
-     */
-    public function setRepoId(RepoId $repoId)
-    {
-    }
-    /**
-     * @return RepoId
-     */
-    public function getRepoId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setRevisionId($revisionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRevisionId()
+    class Google_Service_CloudDebugger_CloudRepoSourceContext extends \Google\Service\CloudDebugger\CloudRepoSourceContext
     {
     }
 }

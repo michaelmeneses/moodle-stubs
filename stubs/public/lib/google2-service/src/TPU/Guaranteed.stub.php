@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TPU;
-
-class Guaranteed extends \Google\Model
-{
-    /**
-     * Optional. Defines the minimum duration of the guarantee. If specified, the
-     * requested resources will only be provisioned if they can be allocated for
-     * at least the given duration.
-     *
-     * @var string
-     */
-    public $minDuration;
-    /**
-     * Optional. Defines the minimum duration of the guarantee. If specified, the
-     * requested resources will only be provisioned if they can be allocated for
-     * at least the given duration.
-     *
-     * @param string $minDuration
-     */
-    public function setMinDuration($minDuration)
+namespace Google\Service\TPU {
+    class Guaranteed extends \Google\Model
     {
+        /**
+         * Optional. Defines the minimum duration of the guarantee. If specified, the
+         * requested resources will only be provisioned if they can be allocated for
+         * at least the given duration.
+         *
+         * @var string
+         */
+        public $minDuration;
+        /**
+         * Optional. Defines the minimum duration of the guarantee. If specified, the
+         * requested resources will only be provisioned if they can be allocated for
+         * at least the given duration.
+         *
+         * @param string $minDuration
+         */
+        public function setMinDuration($minDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMinDuration()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\TPU\Guaranteed registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMinDuration()
+    class Google_Service_TPU_Guaranteed extends \Google\Service\TPU\Guaranteed
     {
     }
 }

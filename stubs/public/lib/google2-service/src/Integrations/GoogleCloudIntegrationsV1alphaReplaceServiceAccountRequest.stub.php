@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaReplaceServiceAccountRequest extends \Google\Model
-{
-    /**
-     * Required. REQUIRED: Run-as service account to be updated
-     *
-     * @var string
-     */
-    public $runAsServiceAccount;
-    /**
-     * Required. REQUIRED: Run-as service account to be updated
-     *
-     * @param string $runAsServiceAccount
-     */
-    public function setRunAsServiceAccount($runAsServiceAccount)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaReplaceServiceAccountRequest extends \Google\Model
     {
+        /**
+         * Required. REQUIRED: Run-as service account to be updated
+         *
+         * @var string
+         */
+        public $runAsServiceAccount;
+        /**
+         * Required. REQUIRED: Run-as service account to be updated
+         *
+         * @param string $runAsServiceAccount
+         */
+        public function setRunAsServiceAccount($runAsServiceAccount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRunAsServiceAccount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaReplaceServiceAccountRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRunAsServiceAccount()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaReplaceServiceAccountRequest extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaReplaceServiceAccountRequest
     {
     }
 }

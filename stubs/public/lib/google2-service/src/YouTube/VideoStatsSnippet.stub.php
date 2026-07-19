@@ -21,34 +21,43 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube;
-
-class VideoStatsSnippet extends \Google\Model
-{
-    /**
-     * Output only. The date and time that the video was uploaded. The property
-     * value is a
-     * [`google.protobuf.Timestamp`](https://developers.google.com/protocol-
-     * buffers/docs/reference/google.protobuf#timestamp) object.
-     *
-     * @var string
-     */
-    public $publishTime;
-    /**
-     * Output only. The date and time that the video was uploaded. The property
-     * value is a
-     * [`google.protobuf.Timestamp`](https://developers.google.com/protocol-
-     * buffers/docs/reference/google.protobuf#timestamp) object.
-     *
-     * @param string $publishTime
-     */
-    public function setPublishTime($publishTime)
+namespace Google\Service\YouTube {
+    class VideoStatsSnippet extends \Google\Model
     {
+        /**
+         * Output only. The date and time that the video was uploaded. The property
+         * value is a
+         * [`google.protobuf.Timestamp`](https://developers.google.com/protocol-
+         * buffers/docs/reference/google.protobuf#timestamp) object.
+         *
+         * @var string
+         */
+        public $publishTime;
+        /**
+         * Output only. The date and time that the video was uploaded. The property
+         * value is a
+         * [`google.protobuf.Timestamp`](https://developers.google.com/protocol-
+         * buffers/docs/reference/google.protobuf#timestamp) object.
+         *
+         * @param string $publishTime
+         */
+        public function setPublishTime($publishTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPublishTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\YouTube\VideoStatsSnippet registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPublishTime()
+    class Google_Service_YouTube_VideoStatsSnippet extends \Google\Service\YouTube\VideoStatsSnippet
     {
     }
 }

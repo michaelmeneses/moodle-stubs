@@ -21,83 +21,92 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsReporting;
-
-class Pivot extends \Google\Collection
-{
-    protected $collection_key = 'metrics';
-    protected $dimensionFilterClausesType = DimensionFilterClause::class;
-    protected $dimensionFilterClausesDataType = 'array';
-    protected $dimensionsType = Dimension::class;
-    protected $dimensionsDataType = 'array';
-    /**
-     * @var int
-     */
-    public $maxGroupCount;
-    protected $metricsType = Metric::class;
-    protected $metricsDataType = 'array';
-    /**
-     * @var int
-     */
-    public $startGroup;
-    /**
-     * @param DimensionFilterClause[]
-     */
-    public function setDimensionFilterClauses($dimensionFilterClauses)
+namespace Google\Service\AnalyticsReporting {
+    class Pivot extends \Google\Collection
     {
+        protected $collection_key = 'metrics';
+        protected $dimensionFilterClausesType = DimensionFilterClause::class;
+        protected $dimensionFilterClausesDataType = 'array';
+        protected $dimensionsType = Dimension::class;
+        protected $dimensionsDataType = 'array';
+        /**
+         * @var int
+         */
+        public $maxGroupCount;
+        protected $metricsType = Metric::class;
+        protected $metricsDataType = 'array';
+        /**
+         * @var int
+         */
+        public $startGroup;
+        /**
+         * @param DimensionFilterClause[]
+         */
+        public function setDimensionFilterClauses($dimensionFilterClauses)
+        {
+        }
+        /**
+         * @return DimensionFilterClause[]
+         */
+        public function getDimensionFilterClauses()
+        {
+        }
+        /**
+         * @param Dimension[]
+         */
+        public function setDimensions($dimensions)
+        {
+        }
+        /**
+         * @return Dimension[]
+         */
+        public function getDimensions()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setMaxGroupCount($maxGroupCount)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaxGroupCount()
+        {
+        }
+        /**
+         * @param Metric[]
+         */
+        public function setMetrics($metrics)
+        {
+        }
+        /**
+         * @return Metric[]
+         */
+        public function getMetrics()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setStartGroup($startGroup)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStartGroup()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DimensionFilterClause[]
+     * Runtime class alias of \Google\Service\AnalyticsReporting\Pivot registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDimensionFilterClauses()
-    {
-    }
-    /**
-     * @param Dimension[]
-     */
-    public function setDimensions($dimensions)
-    {
-    }
-    /**
-     * @return Dimension[]
-     */
-    public function getDimensions()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setMaxGroupCount($maxGroupCount)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaxGroupCount()
-    {
-    }
-    /**
-     * @param Metric[]
-     */
-    public function setMetrics($metrics)
-    {
-    }
-    /**
-     * @return Metric[]
-     */
-    public function getMetrics()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setStartGroup($startGroup)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStartGroup()
+    class Google_Service_AnalyticsReporting_Pivot extends \Google\Service\AnalyticsReporting\Pivot
     {
     }
 }

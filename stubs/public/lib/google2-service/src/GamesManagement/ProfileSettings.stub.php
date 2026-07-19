@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GamesManagement;
-
-class ProfileSettings extends \Google\Model
-{
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `gamesManagement#profileSettings`.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * @var bool
-     */
-    public $profileVisible;
-    /**
-     * Uniquely identifies the type of this resource. Value is always the fixed
-     * string `gamesManagement#profileSettings`.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\GamesManagement {
+    class ProfileSettings extends \Google\Model
     {
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `gamesManagement#profileSettings`.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * @var bool
+         */
+        public $profileVisible;
+        /**
+         * Uniquely identifies the type of this resource. Value is always the fixed
+         * string `gamesManagement#profileSettings`.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param bool $profileVisible
+         */
+        public function setProfileVisible($profileVisible)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getProfileVisible()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GamesManagement\ProfileSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * @param bool $profileVisible
-     */
-    public function setProfileVisible($profileVisible)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getProfileVisible()
+    class Google_Service_GamesManagement_ProfileSettings extends \Google\Service\GamesManagement\ProfileSettings
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class PreviewFeatureRolloutOperation extends \Google\Model
-{
-    protected $rolloutInputType = PreviewFeatureRolloutOperationRolloutInput::class;
-    protected $rolloutInputDataType = '';
-    /**
-     * Input only. The input for the rollout operation.
-     *
-     * @param PreviewFeatureRolloutOperationRolloutInput $rolloutInput
-     */
-    public function setRolloutInput(PreviewFeatureRolloutOperationRolloutInput $rolloutInput)
+namespace Google\Service\Compute {
+    class PreviewFeatureRolloutOperation extends \Google\Model
     {
+        protected $rolloutInputType = PreviewFeatureRolloutOperationRolloutInput::class;
+        protected $rolloutInputDataType = '';
+        /**
+         * Input only. The input for the rollout operation.
+         *
+         * @param PreviewFeatureRolloutOperationRolloutInput $rolloutInput
+         */
+        public function setRolloutInput(PreviewFeatureRolloutOperationRolloutInput $rolloutInput)
+        {
+        }
+        /**
+         * @return PreviewFeatureRolloutOperationRolloutInput
+         */
+        public function getRolloutInput()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PreviewFeatureRolloutOperationRolloutInput
+     * Runtime class alias of \Google\Service\Compute\PreviewFeatureRolloutOperation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRolloutInput()
+    class Google_Service_Compute_PreviewFeatureRolloutOperation extends \Google\Service\Compute\PreviewFeatureRolloutOperation
     {
     }
 }

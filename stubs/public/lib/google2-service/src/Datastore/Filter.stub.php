@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastore;
-
-class Filter extends \Google\Model
-{
-    protected $compositeFilterType = CompositeFilter::class;
-    protected $compositeFilterDataType = '';
-    protected $propertyFilterType = PropertyFilter::class;
-    protected $propertyFilterDataType = '';
-    /**
-     * A composite filter.
-     *
-     * @param CompositeFilter $compositeFilter
-     */
-    public function setCompositeFilter(CompositeFilter $compositeFilter)
+namespace Google\Service\Datastore {
+    class Filter extends \Google\Model
     {
+        protected $compositeFilterType = CompositeFilter::class;
+        protected $compositeFilterDataType = '';
+        protected $propertyFilterType = PropertyFilter::class;
+        protected $propertyFilterDataType = '';
+        /**
+         * A composite filter.
+         *
+         * @param CompositeFilter $compositeFilter
+         */
+        public function setCompositeFilter(CompositeFilter $compositeFilter)
+        {
+        }
+        /**
+         * @return CompositeFilter
+         */
+        public function getCompositeFilter()
+        {
+        }
+        /**
+         * A filter on a property.
+         *
+         * @param PropertyFilter $propertyFilter
+         */
+        public function setPropertyFilter(PropertyFilter $propertyFilter)
+        {
+        }
+        /**
+         * @return PropertyFilter
+         */
+        public function getPropertyFilter()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CompositeFilter
+     * Runtime class alias of \Google\Service\Datastore\Filter registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCompositeFilter()
-    {
-    }
-    /**
-     * A filter on a property.
-     *
-     * @param PropertyFilter $propertyFilter
-     */
-    public function setPropertyFilter(PropertyFilter $propertyFilter)
-    {
-    }
-    /**
-     * @return PropertyFilter
-     */
-    public function getPropertyFilter()
+    class Google_Service_Datastore_Filter extends \Google\Service\Datastore\Filter
     {
     }
 }

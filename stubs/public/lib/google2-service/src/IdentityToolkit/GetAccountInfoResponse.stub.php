@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\IdentityToolkit;
-
-class GetAccountInfoResponse extends \Google\Collection
-{
-    protected $collection_key = 'users';
-    /**
-     * The fixed string "identitytoolkit#GetAccountInfoResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    protected $usersType = UserInfo::class;
-    protected $usersDataType = 'array';
-    /**
-     * The fixed string "identitytoolkit#GetAccountInfoResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\IdentityToolkit {
+    class GetAccountInfoResponse extends \Google\Collection
     {
+        protected $collection_key = 'users';
+        /**
+         * The fixed string "identitytoolkit#GetAccountInfoResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        protected $usersType = UserInfo::class;
+        protected $usersDataType = 'array';
+        /**
+         * The fixed string "identitytoolkit#GetAccountInfoResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The info of the users.
+         *
+         * @param UserInfo[] $users
+         */
+        public function setUsers($users)
+        {
+        }
+        /**
+         * @return UserInfo[]
+         */
+        public function getUsers()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\IdentityToolkit\GetAccountInfoResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * The info of the users.
-     *
-     * @param UserInfo[] $users
-     */
-    public function setUsers($users)
-    {
-    }
-    /**
-     * @return UserInfo[]
-     */
-    public function getUsers()
+    class Google_Service_IdentityToolkit_GetAccountInfoResponse extends \Google\Service\IdentityToolkit\GetAccountInfoResponse
     {
     }
 }

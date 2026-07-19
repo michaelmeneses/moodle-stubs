@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CCAIPlatform;
-
-class FeatureConfig extends \Google\Model
-{
-    /**
-     * Optional. If true - enables the agent desktop feature. Default is false.
-     *
-     * @var bool
-     */
-    public $agentDesktopEnabled;
-    /**
-     * Optional. If true - enables the agent desktop feature. Default is false.
-     *
-     * @param bool $agentDesktopEnabled
-     */
-    public function setAgentDesktopEnabled($agentDesktopEnabled)
+namespace Google\Service\CCAIPlatform {
+    class FeatureConfig extends \Google\Model
     {
+        /**
+         * Optional. If true - enables the agent desktop feature. Default is false.
+         *
+         * @var bool
+         */
+        public $agentDesktopEnabled;
+        /**
+         * Optional. If true - enables the agent desktop feature. Default is false.
+         *
+         * @param bool $agentDesktopEnabled
+         */
+        public function setAgentDesktopEnabled($agentDesktopEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAgentDesktopEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CCAIPlatform\FeatureConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAgentDesktopEnabled()
+    class Google_Service_CCAIPlatform_FeatureConfig extends \Google\Service\CCAIPlatform\FeatureConfig
     {
     }
 }

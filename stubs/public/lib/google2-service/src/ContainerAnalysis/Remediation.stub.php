@@ -21,91 +21,100 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class Remediation extends \Google\Model
-{
-    /**
-     * No remediation type specified.
-     */
-    public const REMEDIATION_TYPE_REMEDIATION_TYPE_UNSPECIFIED = 'REMEDIATION_TYPE_UNSPECIFIED';
-    /**
-     * A MITIGATION is available.
-     */
-    public const REMEDIATION_TYPE_MITIGATION = 'MITIGATION';
-    /**
-     * No fix is planned.
-     */
-    public const REMEDIATION_TYPE_NO_FIX_PLANNED = 'NO_FIX_PLANNED';
-    /**
-     * Not available.
-     */
-    public const REMEDIATION_TYPE_NONE_AVAILABLE = 'NONE_AVAILABLE';
-    /**
-     * A vendor fix is available.
-     */
-    public const REMEDIATION_TYPE_VENDOR_FIX = 'VENDOR_FIX';
-    /**
-     * A workaround is available.
-     */
-    public const REMEDIATION_TYPE_WORKAROUND = 'WORKAROUND';
-    /**
-     * Contains a comprehensive human-readable discussion of the remediation.
-     *
-     * @var string
-     */
-    public $details;
-    /**
-     * The type of remediation that can be applied.
-     *
-     * @var string
-     */
-    public $remediationType;
-    protected $remediationUriType = RelatedUrl::class;
-    protected $remediationUriDataType = '';
-    /**
-     * Contains a comprehensive human-readable discussion of the remediation.
-     *
-     * @param string $details
-     */
-    public function setDetails($details)
+namespace Google\Service\ContainerAnalysis {
+    class Remediation extends \Google\Model
     {
+        /**
+         * No remediation type specified.
+         */
+        public const REMEDIATION_TYPE_REMEDIATION_TYPE_UNSPECIFIED = 'REMEDIATION_TYPE_UNSPECIFIED';
+        /**
+         * A MITIGATION is available.
+         */
+        public const REMEDIATION_TYPE_MITIGATION = 'MITIGATION';
+        /**
+         * No fix is planned.
+         */
+        public const REMEDIATION_TYPE_NO_FIX_PLANNED = 'NO_FIX_PLANNED';
+        /**
+         * Not available.
+         */
+        public const REMEDIATION_TYPE_NONE_AVAILABLE = 'NONE_AVAILABLE';
+        /**
+         * A vendor fix is available.
+         */
+        public const REMEDIATION_TYPE_VENDOR_FIX = 'VENDOR_FIX';
+        /**
+         * A workaround is available.
+         */
+        public const REMEDIATION_TYPE_WORKAROUND = 'WORKAROUND';
+        /**
+         * Contains a comprehensive human-readable discussion of the remediation.
+         *
+         * @var string
+         */
+        public $details;
+        /**
+         * The type of remediation that can be applied.
+         *
+         * @var string
+         */
+        public $remediationType;
+        protected $remediationUriType = RelatedUrl::class;
+        protected $remediationUriDataType = '';
+        /**
+         * Contains a comprehensive human-readable discussion of the remediation.
+         *
+         * @param string $details
+         */
+        public function setDetails($details)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDetails()
+        {
+        }
+        /**
+         * The type of remediation that can be applied.
+         *
+         * Accepted values: REMEDIATION_TYPE_UNSPECIFIED, MITIGATION, NO_FIX_PLANNED,
+         * NONE_AVAILABLE, VENDOR_FIX, WORKAROUND
+         *
+         * @param self::REMEDIATION_TYPE_* $remediationType
+         */
+        public function setRemediationType($remediationType)
+        {
+        }
+        /**
+         * @return self::REMEDIATION_TYPE_*
+         */
+        public function getRemediationType()
+        {
+        }
+        /**
+         * Contains the URL where to obtain the remediation.
+         *
+         * @param RelatedUrl $remediationUri
+         */
+        public function setRemediationUri(RelatedUrl $remediationUri)
+        {
+        }
+        /**
+         * @return RelatedUrl
+         */
+        public function getRemediationUri()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ContainerAnalysis\Remediation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDetails()
-    {
-    }
-    /**
-     * The type of remediation that can be applied.
-     *
-     * Accepted values: REMEDIATION_TYPE_UNSPECIFIED, MITIGATION, NO_FIX_PLANNED,
-     * NONE_AVAILABLE, VENDOR_FIX, WORKAROUND
-     *
-     * @param self::REMEDIATION_TYPE_* $remediationType
-     */
-    public function setRemediationType($remediationType)
-    {
-    }
-    /**
-     * @return self::REMEDIATION_TYPE_*
-     */
-    public function getRemediationType()
-    {
-    }
-    /**
-     * Contains the URL where to obtain the remediation.
-     *
-     * @param RelatedUrl $remediationUri
-     */
-    public function setRemediationUri(RelatedUrl $remediationUri)
-    {
-    }
-    /**
-     * @return RelatedUrl
-     */
-    public function getRemediationUri()
+    class Google_Service_ContainerAnalysis_Remediation extends \Google\Service\ContainerAnalysis\Remediation
     {
     }
 }

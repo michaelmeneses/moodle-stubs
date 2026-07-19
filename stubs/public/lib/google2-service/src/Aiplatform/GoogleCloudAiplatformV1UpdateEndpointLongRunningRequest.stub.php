@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1UpdateEndpointLongRunningRequest extends \Google\Model
-{
-    protected $endpointType = GoogleCloudAiplatformV1Endpoint::class;
-    protected $endpointDataType = '';
-    /**
-     * Required. The Endpoint which replaces the resource on the server. Currently
-     * we only support updating the `client_connection_config` field, all the
-     * other fields' update will be blocked.
-     *
-     * @param GoogleCloudAiplatformV1Endpoint $endpoint
-     */
-    public function setEndpoint(GoogleCloudAiplatformV1Endpoint $endpoint)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1UpdateEndpointLongRunningRequest extends \Google\Model
     {
+        protected $endpointType = GoogleCloudAiplatformV1Endpoint::class;
+        protected $endpointDataType = '';
+        /**
+         * Required. The Endpoint which replaces the resource on the server. Currently
+         * we only support updating the `client_connection_config` field, all the
+         * other fields' update will be blocked.
+         *
+         * @param GoogleCloudAiplatformV1Endpoint $endpoint
+         */
+        public function setEndpoint(GoogleCloudAiplatformV1Endpoint $endpoint)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1Endpoint
+         */
+        public function getEndpoint()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1Endpoint
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1UpdateEndpointLongRunningRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndpoint()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1UpdateEndpointLongRunningRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1UpdateEndpointLongRunningRequest
     {
     }
 }

@@ -21,151 +21,160 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class SslCertificateAggregatedList extends \Google\Collection
-{
-    protected $collection_key = 'unreachables';
-    /**
-     * [Output Only] Unique identifier for the resource; defined by the server.
-     *
-     * @var string
-     */
-    public $id;
-    protected $itemsType = SslCertificatesScopedList::class;
-    protected $itemsDataType = 'map';
-    /**
-     * Output only. [Output Only] Type of resource.
-     * Alwayscompute#sslCertificateAggregatedList for lists of SSL Certificates.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * [Output Only] This token allows you to get the next page of results for
-     * list requests. If the number of results is larger thanmaxResults, use the
-     * nextPageToken as a value for the query parameter pageToken in the next list
-     * request. Subsequent list requests will have their own nextPageToken to
-     * continue paging through the results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Output only. [Output Only] Server-defined URL for this resource.
-     *
-     * @var string
-     */
-    public $selfLink;
-    /**
-     * Output only. [Output Only] Unreachable resources.
-     *
-     * @var string[]
-     */
-    public $unreachables;
-    protected $warningType = SslCertificateAggregatedListWarning::class;
-    protected $warningDataType = '';
-    /**
-     * [Output Only] Unique identifier for the resource; defined by the server.
-     *
-     * @param string $id
-     */
-    public function setId($id)
+namespace Google\Service\Compute {
+    class SslCertificateAggregatedList extends \Google\Collection
     {
+        protected $collection_key = 'unreachables';
+        /**
+         * [Output Only] Unique identifier for the resource; defined by the server.
+         *
+         * @var string
+         */
+        public $id;
+        protected $itemsType = SslCertificatesScopedList::class;
+        protected $itemsDataType = 'map';
+        /**
+         * Output only. [Output Only] Type of resource.
+         * Alwayscompute#sslCertificateAggregatedList for lists of SSL Certificates.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * [Output Only] This token allows you to get the next page of results for
+         * list requests. If the number of results is larger thanmaxResults, use the
+         * nextPageToken as a value for the query parameter pageToken in the next list
+         * request. Subsequent list requests will have their own nextPageToken to
+         * continue paging through the results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Output only. [Output Only] Server-defined URL for this resource.
+         *
+         * @var string
+         */
+        public $selfLink;
+        /**
+         * Output only. [Output Only] Unreachable resources.
+         *
+         * @var string[]
+         */
+        public $unreachables;
+        protected $warningType = SslCertificateAggregatedListWarning::class;
+        protected $warningDataType = '';
+        /**
+         * [Output Only] Unique identifier for the resource; defined by the server.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * A list of SslCertificatesScopedList resources.
+         *
+         * @param SslCertificatesScopedList[] $items
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return SslCertificatesScopedList[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * Output only. [Output Only] Type of resource.
+         * Alwayscompute#sslCertificateAggregatedList for lists of SSL Certificates.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * [Output Only] This token allows you to get the next page of results for
+         * list requests. If the number of results is larger thanmaxResults, use the
+         * nextPageToken as a value for the query parameter pageToken in the next list
+         * request. Subsequent list requests will have their own nextPageToken to
+         * continue paging through the results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Output only. [Output Only] Server-defined URL for this resource.
+         *
+         * @param string $selfLink
+         */
+        public function setSelfLink($selfLink)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSelfLink()
+        {
+        }
+        /**
+         * Output only. [Output Only] Unreachable resources.
+         *
+         * @param string[] $unreachables
+         */
+        public function setUnreachables($unreachables)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachables()
+        {
+        }
+        /**
+         * [Output Only] Informational warning message.
+         *
+         * @param SslCertificateAggregatedListWarning $warning
+         */
+        public function setWarning(SslCertificateAggregatedListWarning $warning)
+        {
+        }
+        /**
+         * @return SslCertificateAggregatedListWarning
+         */
+        public function getWarning()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\SslCertificateAggregatedList registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getId()
-    {
-    }
-    /**
-     * A list of SslCertificatesScopedList resources.
-     *
-     * @param SslCertificatesScopedList[] $items
-     */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return SslCertificatesScopedList[]
-     */
-    public function getItems()
-    {
-    }
-    /**
-     * Output only. [Output Only] Type of resource.
-     * Alwayscompute#sslCertificateAggregatedList for lists of SSL Certificates.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * [Output Only] This token allows you to get the next page of results for
-     * list requests. If the number of results is larger thanmaxResults, use the
-     * nextPageToken as a value for the query parameter pageToken in the next list
-     * request. Subsequent list requests will have their own nextPageToken to
-     * continue paging through the results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Output only. [Output Only] Server-defined URL for this resource.
-     *
-     * @param string $selfLink
-     */
-    public function setSelfLink($selfLink)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSelfLink()
-    {
-    }
-    /**
-     * Output only. [Output Only] Unreachable resources.
-     *
-     * @param string[] $unreachables
-     */
-    public function setUnreachables($unreachables)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachables()
-    {
-    }
-    /**
-     * [Output Only] Informational warning message.
-     *
-     * @param SslCertificateAggregatedListWarning $warning
-     */
-    public function setWarning(SslCertificateAggregatedListWarning $warning)
-    {
-    }
-    /**
-     * @return SslCertificateAggregatedListWarning
-     */
-    public function getWarning()
+    class Google_Service_Compute_SslCertificateAggregatedList extends \Google\Service\Compute\SslCertificateAggregatedList
     {
     }
 }

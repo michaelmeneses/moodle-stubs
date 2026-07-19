@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BackupforGKE;
-
-class ListRestoresResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    /**
-     * A token which may be sent as page_token in a subsequent `ListRestores` call
-     * to retrieve the next page of results. If this field is omitted or empty,
-     * then there are no more results to return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $restoresType = Restore::class;
-    protected $restoresDataType = 'array';
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * A token which may be sent as page_token in a subsequent `ListRestores` call
-     * to retrieve the next page of results. If this field is omitted or empty,
-     * then there are no more results to return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\BackupforGKE {
+    class ListRestoresResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        /**
+         * A token which may be sent as page_token in a subsequent `ListRestores` call
+         * to retrieve the next page of results. If this field is omitted or empty,
+         * then there are no more results to return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $restoresType = Restore::class;
+        protected $restoresDataType = 'array';
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * A token which may be sent as page_token in a subsequent `ListRestores` call
+         * to retrieve the next page of results. If this field is omitted or empty,
+         * then there are no more results to return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of Restores matching the given criteria.
+         *
+         * @param Restore[] $restores
+         */
+        public function setRestores($restores)
+        {
+        }
+        /**
+         * @return Restore[]
+         */
+        public function getRestores()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BackupforGKE\ListRestoresResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of Restores matching the given criteria.
-     *
-     * @param Restore[] $restores
-     */
-    public function setRestores($restores)
-    {
-    }
-    /**
-     * @return Restore[]
-     */
-    public function getRestores()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_BackupforGKE_ListRestoresResponse extends \Google\Service\BackupforGKE\ListRestoresResponse
     {
     }
 }

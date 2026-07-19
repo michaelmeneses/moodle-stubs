@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class ListPerfSampleSeriesResponse extends \Google\Collection
-{
-    protected $collection_key = 'perfSampleSeries';
-    protected $perfSampleSeriesType = PerfSampleSeries::class;
-    protected $perfSampleSeriesDataType = 'array';
-    /**
-     * The resulting PerfSampleSeries sorted by id
-     *
-     * @param PerfSampleSeries[] $perfSampleSeries
-     */
-    public function setPerfSampleSeries($perfSampleSeries)
+namespace Google\Service\ToolResults {
+    class ListPerfSampleSeriesResponse extends \Google\Collection
     {
+        protected $collection_key = 'perfSampleSeries';
+        protected $perfSampleSeriesType = PerfSampleSeries::class;
+        protected $perfSampleSeriesDataType = 'array';
+        /**
+         * The resulting PerfSampleSeries sorted by id
+         *
+         * @param PerfSampleSeries[] $perfSampleSeries
+         */
+        public function setPerfSampleSeries($perfSampleSeries)
+        {
+        }
+        /**
+         * @return PerfSampleSeries[]
+         */
+        public function getPerfSampleSeries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PerfSampleSeries[]
+     * Runtime class alias of \Google\Service\ToolResults\ListPerfSampleSeriesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPerfSampleSeries()
+    class Google_Service_ToolResults_ListPerfSampleSeriesResponse extends \Google\Service\ToolResults\ListPerfSampleSeriesResponse
     {
     }
 }

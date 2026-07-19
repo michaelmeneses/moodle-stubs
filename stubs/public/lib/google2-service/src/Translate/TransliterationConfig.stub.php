@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Translate;
-
-class TransliterationConfig extends \Google\Model
-{
-    /**
-     * If true, source text in romanized form can be translated to the target
-     * language.
-     *
-     * @var bool
-     */
-    public $enableTransliteration;
-    /**
-     * If true, source text in romanized form can be translated to the target
-     * language.
-     *
-     * @param bool $enableTransliteration
-     */
-    public function setEnableTransliteration($enableTransliteration)
+namespace Google\Service\Translate {
+    class TransliterationConfig extends \Google\Model
     {
+        /**
+         * If true, source text in romanized form can be translated to the target
+         * language.
+         *
+         * @var bool
+         */
+        public $enableTransliteration;
+        /**
+         * If true, source text in romanized form can be translated to the target
+         * language.
+         *
+         * @param bool $enableTransliteration
+         */
+        public function setEnableTransliteration($enableTransliteration)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnableTransliteration()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Translate\TransliterationConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnableTransliteration()
+    class Google_Service_Translate_TransliterationConfig extends \Google\Service\Translate\TransliterationConfig
     {
     }
 }

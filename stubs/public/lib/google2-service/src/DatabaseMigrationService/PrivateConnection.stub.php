@@ -21,250 +21,259 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class PrivateConnection extends \Google\Model
-{
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The private connection is in creation state - creating resources.
-     */
-    public const STATE_CREATING = 'CREATING';
-    /**
-     * The private connection has been created with all of its resources.
-     */
-    public const STATE_CREATED = 'CREATED';
-    /**
-     * The private connection creation has failed.
-     */
-    public const STATE_FAILED = 'FAILED';
-    /**
-     * The private connection is being deleted.
-     */
-    public const STATE_DELETING = 'DELETING';
-    /**
-     * Delete request has failed, resource is in invalid state.
-     */
-    public const STATE_FAILED_TO_DELETE = 'FAILED_TO_DELETE';
-    /**
-     * The private connection has been deleted.
-     */
-    public const STATE_DELETED = 'DELETED';
-    /**
-     * Output only. The create time of the resource.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * The private connection display name.
-     *
-     * @var string
-     */
-    public $displayName;
-    protected $errorType = Status::class;
-    protected $errorDataType = '';
-    /**
-     * The resource labels for private connections to use to annotate any related
-     * underlying resources such as Compute Engine VMs. An object containing a
-     * list of "key": "value" pairs. Example: `{ "name": "wrench", "mass":
-     * "1.3kg", "count": "3" }`.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * The name of the resource.
-     *
-     * @var string
-     */
-    public $name;
-    protected $pscInterfaceConfigType = PscInterfaceConfig::class;
-    protected $pscInterfaceConfigDataType = '';
-    /**
-     * Output only. Reserved for future use.
-     *
-     * @var bool
-     */
-    public $satisfiesPzi;
-    /**
-     * Output only. Reserved for future use.
-     *
-     * @var bool
-     */
-    public $satisfiesPzs;
-    /**
-     * Output only. The state of the private connection.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. The last update time of the resource.
-     *
-     * @var string
-     */
-    public $updateTime;
-    protected $vpcPeeringConfigType = VpcPeeringConfig::class;
-    protected $vpcPeeringConfigDataType = '';
-    /**
-     * Output only. The create time of the resource.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\DatabaseMigrationService {
+    class PrivateConnection extends \Google\Model
     {
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The private connection is in creation state - creating resources.
+         */
+        public const STATE_CREATING = 'CREATING';
+        /**
+         * The private connection has been created with all of its resources.
+         */
+        public const STATE_CREATED = 'CREATED';
+        /**
+         * The private connection creation has failed.
+         */
+        public const STATE_FAILED = 'FAILED';
+        /**
+         * The private connection is being deleted.
+         */
+        public const STATE_DELETING = 'DELETING';
+        /**
+         * Delete request has failed, resource is in invalid state.
+         */
+        public const STATE_FAILED_TO_DELETE = 'FAILED_TO_DELETE';
+        /**
+         * The private connection has been deleted.
+         */
+        public const STATE_DELETED = 'DELETED';
+        /**
+         * Output only. The create time of the resource.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * The private connection display name.
+         *
+         * @var string
+         */
+        public $displayName;
+        protected $errorType = Status::class;
+        protected $errorDataType = '';
+        /**
+         * The resource labels for private connections to use to annotate any related
+         * underlying resources such as Compute Engine VMs. An object containing a
+         * list of "key": "value" pairs. Example: `{ "name": "wrench", "mass":
+         * "1.3kg", "count": "3" }`.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * The name of the resource.
+         *
+         * @var string
+         */
+        public $name;
+        protected $pscInterfaceConfigType = PscInterfaceConfig::class;
+        protected $pscInterfaceConfigDataType = '';
+        /**
+         * Output only. Reserved for future use.
+         *
+         * @var bool
+         */
+        public $satisfiesPzi;
+        /**
+         * Output only. Reserved for future use.
+         *
+         * @var bool
+         */
+        public $satisfiesPzs;
+        /**
+         * Output only. The state of the private connection.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. The last update time of the resource.
+         *
+         * @var string
+         */
+        public $updateTime;
+        protected $vpcPeeringConfigType = VpcPeeringConfig::class;
+        protected $vpcPeeringConfigDataType = '';
+        /**
+         * Output only. The create time of the resource.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * The private connection display name.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. The error details in case of state FAILED.
+         *
+         * @param Status $error
+         */
+        public function setError(Status $error)
+        {
+        }
+        /**
+         * @return Status
+         */
+        public function getError()
+        {
+        }
+        /**
+         * The resource labels for private connections to use to annotate any related
+         * underlying resources such as Compute Engine VMs. An object containing a
+         * list of "key": "value" pairs. Example: `{ "name": "wrench", "mass":
+         * "1.3kg", "count": "3" }`.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * The name of the resource.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * PSC Interface configuration.
+         *
+         * @param PscInterfaceConfig $pscInterfaceConfig
+         */
+        public function setPscInterfaceConfig(PscInterfaceConfig $pscInterfaceConfig)
+        {
+        }
+        /**
+         * @return PscInterfaceConfig
+         */
+        public function getPscInterfaceConfig()
+        {
+        }
+        /**
+         * Output only. Reserved for future use.
+         *
+         * @param bool $satisfiesPzi
+         */
+        public function setSatisfiesPzi($satisfiesPzi)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSatisfiesPzi()
+        {
+        }
+        /**
+         * Output only. Reserved for future use.
+         *
+         * @param bool $satisfiesPzs
+         */
+        public function setSatisfiesPzs($satisfiesPzs)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSatisfiesPzs()
+        {
+        }
+        /**
+         * Output only. The state of the private connection.
+         *
+         * Accepted values: STATE_UNSPECIFIED, CREATING, CREATED, FAILED, DELETING,
+         * FAILED_TO_DELETE, DELETED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Output only. The last update time of the resource.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * VPC peering configuration.
+         *
+         * @param VpcPeeringConfig $vpcPeeringConfig
+         */
+        public function setVpcPeeringConfig(VpcPeeringConfig $vpcPeeringConfig)
+        {
+        }
+        /**
+         * @return VpcPeeringConfig
+         */
+        public function getVpcPeeringConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\PrivateConnection registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * The private connection display name.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. The error details in case of state FAILED.
-     *
-     * @param Status $error
-     */
-    public function setError(Status $error)
-    {
-    }
-    /**
-     * @return Status
-     */
-    public function getError()
-    {
-    }
-    /**
-     * The resource labels for private connections to use to annotate any related
-     * underlying resources such as Compute Engine VMs. An object containing a
-     * list of "key": "value" pairs. Example: `{ "name": "wrench", "mass":
-     * "1.3kg", "count": "3" }`.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * The name of the resource.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * PSC Interface configuration.
-     *
-     * @param PscInterfaceConfig $pscInterfaceConfig
-     */
-    public function setPscInterfaceConfig(PscInterfaceConfig $pscInterfaceConfig)
-    {
-    }
-    /**
-     * @return PscInterfaceConfig
-     */
-    public function getPscInterfaceConfig()
-    {
-    }
-    /**
-     * Output only. Reserved for future use.
-     *
-     * @param bool $satisfiesPzi
-     */
-    public function setSatisfiesPzi($satisfiesPzi)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSatisfiesPzi()
-    {
-    }
-    /**
-     * Output only. Reserved for future use.
-     *
-     * @param bool $satisfiesPzs
-     */
-    public function setSatisfiesPzs($satisfiesPzs)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSatisfiesPzs()
-    {
-    }
-    /**
-     * Output only. The state of the private connection.
-     *
-     * Accepted values: STATE_UNSPECIFIED, CREATING, CREATED, FAILED, DELETING,
-     * FAILED_TO_DELETE, DELETED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Output only. The last update time of the resource.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
-    {
-    }
-    /**
-     * VPC peering configuration.
-     *
-     * @param VpcPeeringConfig $vpcPeeringConfig
-     */
-    public function setVpcPeeringConfig(VpcPeeringConfig $vpcPeeringConfig)
-    {
-    }
-    /**
-     * @return VpcPeeringConfig
-     */
-    public function getVpcPeeringConfig()
+    class Google_Service_DatabaseMigrationService_PrivateConnection extends \Google\Service\DatabaseMigrationService\PrivateConnection
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class ReactionBatchCreatedEventData extends \Google\Collection
-{
-    protected $collection_key = 'reactions';
-    protected $reactionsType = ReactionCreatedEventData::class;
-    protected $reactionsDataType = 'array';
-    /**
-     * A list of new reactions.
-     *
-     * @param ReactionCreatedEventData[] $reactions
-     */
-    public function setReactions($reactions)
+namespace Google\Service\HangoutsChat {
+    class ReactionBatchCreatedEventData extends \Google\Collection
     {
+        protected $collection_key = 'reactions';
+        protected $reactionsType = ReactionCreatedEventData::class;
+        protected $reactionsDataType = 'array';
+        /**
+         * A list of new reactions.
+         *
+         * @param ReactionCreatedEventData[] $reactions
+         */
+        public function setReactions($reactions)
+        {
+        }
+        /**
+         * @return ReactionCreatedEventData[]
+         */
+        public function getReactions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ReactionCreatedEventData[]
+     * Runtime class alias of \Google\Service\HangoutsChat\ReactionBatchCreatedEventData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getReactions()
+    class Google_Service_HangoutsChat_ReactionBatchCreatedEventData extends \Google\Service\HangoutsChat\ReactionBatchCreatedEventData
     {
     }
 }

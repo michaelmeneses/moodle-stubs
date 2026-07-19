@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Classroom;
-
-class ListCourseWorkResponse extends \Google\Collection
-{
-    protected $collection_key = 'courseWork';
-    protected $courseWorkType = CourseWork::class;
-    protected $courseWorkDataType = 'array';
-    /**
-     * Token identifying the next page of results to return. If empty, no further
-     * results are available.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Course work items that match the request.
-     *
-     * @param CourseWork[] $courseWork
-     */
-    public function setCourseWork($courseWork)
+namespace Google\Service\Classroom {
+    class ListCourseWorkResponse extends \Google\Collection
     {
+        protected $collection_key = 'courseWork';
+        protected $courseWorkType = CourseWork::class;
+        protected $courseWorkDataType = 'array';
+        /**
+         * Token identifying the next page of results to return. If empty, no further
+         * results are available.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Course work items that match the request.
+         *
+         * @param CourseWork[] $courseWork
+         */
+        public function setCourseWork($courseWork)
+        {
+        }
+        /**
+         * @return CourseWork[]
+         */
+        public function getCourseWork()
+        {
+        }
+        /**
+         * Token identifying the next page of results to return. If empty, no further
+         * results are available.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CourseWork[]
+     * Runtime class alias of \Google\Service\Classroom\ListCourseWorkResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCourseWork()
-    {
-    }
-    /**
-     * Token identifying the next page of results to return. If empty, no further
-     * results are available.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Classroom_ListCourseWorkResponse extends \Google\Service\Classroom\ListCourseWorkResponse
     {
     }
 }

@@ -21,94 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights\Resource;
-
-/**
- * The "qaQuestionTags" collection of methods.
- * Typical usage is:
- *  <code>
- *   $contactcenterinsightsService = new Google\Service\Contactcenterinsights(...);
- *   $qaQuestionTags = $contactcenterinsightsService->projects_locations_qaQuestionTags;
- *  </code>
- */
-class ProjectsLocationsQaQuestionTags extends \Google\Service\Resource
-{
+namespace Google\Service\Contactcenterinsights\Resource {
+    use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1ListQaQuestionTagsResponse;
+    use Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1QaQuestionTag;
+    use Google\Service\Contactcenterinsights\GoogleLongrunningOperation;
     /**
-     * Creates a QaQuestionTag. (qaQuestionTags.create)
-     *
-     * @param string $parent Required. The parent resource of the QaQuestionTag.
-     * @param GoogleCloudContactcenterinsightsV1QaQuestionTag $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string qaQuestionTagId Optional. A unique ID for the new
-     * QaQuestionTag. This ID will become the final component of the QaQuestionTag's
-     * resource name. If no ID is specified, a server-generated ID will be used.
-     * This value should be 4-64 characters and must match the regular expression
-     * `^[a-z0-9-]{4,64}$`. Valid characters are `a-z-`.
-     * @return GoogleCloudContactcenterinsightsV1QaQuestionTag
-     * @throws \Google\Service\Exception
+     * The "qaQuestionTags" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $contactcenterinsightsService = new Google\Service\Contactcenterinsights(...);
+     *   $qaQuestionTags = $contactcenterinsightsService->projects_locations_qaQuestionTags;
+     *  </code>
      */
-    public function create($parent, GoogleCloudContactcenterinsightsV1QaQuestionTag $postBody, $optParams = [])
+    class ProjectsLocationsQaQuestionTags extends \Google\Service\Resource
     {
+        /**
+         * Creates a QaQuestionTag. (qaQuestionTags.create)
+         *
+         * @param string $parent Required. The parent resource of the QaQuestionTag.
+         * @param GoogleCloudContactcenterinsightsV1QaQuestionTag $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string qaQuestionTagId Optional. A unique ID for the new
+         * QaQuestionTag. This ID will become the final component of the QaQuestionTag's
+         * resource name. If no ID is specified, a server-generated ID will be used.
+         * This value should be 4-64 characters and must match the regular expression
+         * `^[a-z0-9-]{4,64}$`. Valid characters are `a-z-`.
+         * @return GoogleCloudContactcenterinsightsV1QaQuestionTag
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudContactcenterinsightsV1QaQuestionTag $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a QaQuestionTag. (qaQuestionTags.delete)
+         *
+         * @param string $name Required. The name of the QaQuestionTag to delete.
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets a QaQuestionTag. (qaQuestionTags.get)
+         *
+         * @param string $name Required. The name of the QaQuestionTag to get.
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudContactcenterinsightsV1QaQuestionTag
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists the question tags. (qaQuestionTags.listProjectsLocationsQaQuestionTags)
+         *
+         * @param string $parent Required. The parent resource of the QaQuestionTags.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. A filter to reduce results to a specific
+         * subset. Supports conjunctions (ie. AND operators). Supported fields include
+         * the following: * `project_id` - id of the project to list tags for *
+         * `qa_scorecard_id` - id of the scorecard to list tags for * `revision_id` - id
+         * of the scorecard revision to list tags for` * `qa_question_id - id of the
+         * question to list tags for`
+         * @return GoogleCloudContactcenterinsightsV1ListQaQuestionTagsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsQaQuestionTags($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates a QaQuestionTag. (qaQuestionTags.patch)
+         *
+         * @param string $name Identifier. Resource name for the QaQuestionTag Format
+         * projects/{project}/locations/{location}/qaQuestionTags/{qa_question_tag} In
+         * the above format, the last segment, i.e., qa_question_tag, is a server-
+         * generated ID corresponding to the tag resource.
+         * @param GoogleCloudContactcenterinsightsV1QaQuestionTag $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Optional. The list of fields to be updated. All
+         * possible fields can be updated by passing `*`, or a subset of the following
+         * updateable fields can be provided: * `qa_question_tag_name` - the name of the
+         * tag * `qa_question_ids` - the list of questions the tag applies to
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, GoogleCloudContactcenterinsightsV1QaQuestionTag $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a QaQuestionTag. (qaQuestionTags.delete)
-     *
-     * @param string $name Required. The name of the QaQuestionTag to delete.
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Contactcenterinsights\Resource\ProjectsLocationsQaQuestionTags registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets a QaQuestionTag. (qaQuestionTags.get)
-     *
-     * @param string $name Required. The name of the QaQuestionTag to get.
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudContactcenterinsightsV1QaQuestionTag
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists the question tags. (qaQuestionTags.listProjectsLocationsQaQuestionTags)
-     *
-     * @param string $parent Required. The parent resource of the QaQuestionTags.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. A filter to reduce results to a specific
-     * subset. Supports conjunctions (ie. AND operators). Supported fields include
-     * the following: * `project_id` - id of the project to list tags for *
-     * `qa_scorecard_id` - id of the scorecard to list tags for * `revision_id` - id
-     * of the scorecard revision to list tags for` * `qa_question_id - id of the
-     * question to list tags for`
-     * @return GoogleCloudContactcenterinsightsV1ListQaQuestionTagsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsQaQuestionTags($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates a QaQuestionTag. (qaQuestionTags.patch)
-     *
-     * @param string $name Identifier. Resource name for the QaQuestionTag Format
-     * projects/{project}/locations/{location}/qaQuestionTags/{qa_question_tag} In
-     * the above format, the last segment, i.e., qa_question_tag, is a server-
-     * generated ID corresponding to the tag resource.
-     * @param GoogleCloudContactcenterinsightsV1QaQuestionTag $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Optional. The list of fields to be updated. All
-     * possible fields can be updated by passing `*`, or a subset of the following
-     * updateable fields can be provided: * `qa_question_tag_name` - the name of the
-     * tag * `qa_question_ids` - the list of questions the tag applies to
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, GoogleCloudContactcenterinsightsV1QaQuestionTag $postBody, $optParams = [])
+    class Google_Service_Contactcenterinsights_Resource_ProjectsLocationsQaQuestionTags extends \Google\Service\Contactcenterinsights\Resource\ProjectsLocationsQaQuestionTags
     {
     }
 }

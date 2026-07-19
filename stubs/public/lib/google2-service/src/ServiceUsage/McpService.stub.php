@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceUsage;
-
-class McpService extends \Google\Model
-{
-    /**
-     * The names of the services that are enabled for MCP. Example:
-     * `services/library-example.googleapis.com`
-     *
-     * @var string
-     */
-    public $service;
-    /**
-     * The names of the services that are enabled for MCP. Example:
-     * `services/library-example.googleapis.com`
-     *
-     * @param string $service
-     */
-    public function setService($service)
+namespace Google\Service\ServiceUsage {
+    class McpService extends \Google\Model
     {
+        /**
+         * The names of the services that are enabled for MCP. Example:
+         * `services/library-example.googleapis.com`
+         *
+         * @var string
+         */
+        public $service;
+        /**
+         * The names of the services that are enabled for MCP. Example:
+         * `services/library-example.googleapis.com`
+         *
+         * @param string $service
+         */
+        public function setService($service)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getService()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceUsage\McpService registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getService()
+    class Google_Service_ServiceUsage_McpService extends \Google\Service\ServiceUsage\McpService
     {
     }
 }

@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1PublisherModelResourceReference extends \Google\Model
-{
-    /**
-     * Description of the resource.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $description;
-    /**
-     * The resource name of the Google Cloud resource.
-     *
-     * @var string
-     */
-    public $resourceName;
-    /**
-     * The URI of the resource.
-     *
-     * @var string
-     */
-    public $uri;
-    /**
-     * Use case (CUJ) of the resource.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $useCase;
-    /**
-     * Description of the resource.
-     *
-     * @deprecated
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1PublisherModelResourceReference extends \Google\Model
     {
+        /**
+         * Description of the resource.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $description;
+        /**
+         * The resource name of the Google Cloud resource.
+         *
+         * @var string
+         */
+        public $resourceName;
+        /**
+         * The URI of the resource.
+         *
+         * @var string
+         */
+        public $uri;
+        /**
+         * Use case (CUJ) of the resource.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $useCase;
+        /**
+         * Description of the resource.
+         *
+         * @deprecated
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The resource name of the Google Cloud resource.
+         *
+         * @param string $resourceName
+         */
+        public function setResourceName($resourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResourceName()
+        {
+        }
+        /**
+         * The URI of the resource.
+         *
+         * @param string $uri
+         */
+        public function setUri($uri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUri()
+        {
+        }
+        /**
+         * Use case (CUJ) of the resource.
+         *
+         * @deprecated
+         * @param string $useCase
+         */
+        public function setUseCase($useCase)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getUseCase()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1PublisherModelResourceReference registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * The resource name of the Google Cloud resource.
-     *
-     * @param string $resourceName
-     */
-    public function setResourceName($resourceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResourceName()
-    {
-    }
-    /**
-     * The URI of the resource.
-     *
-     * @param string $uri
-     */
-    public function setUri($uri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUri()
-    {
-    }
-    /**
-     * Use case (CUJ) of the resource.
-     *
-     * @deprecated
-     * @param string $useCase
-     */
-    public function setUseCase($useCase)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getUseCase()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1PublisherModelResourceReference extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1PublisherModelResourceReference
     {
     }
 }

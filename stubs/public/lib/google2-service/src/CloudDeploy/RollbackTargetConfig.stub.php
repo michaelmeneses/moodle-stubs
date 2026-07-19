@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDeploy;
-
-class RollbackTargetConfig extends \Google\Model
-{
-    protected $rolloutType = Rollout::class;
-    protected $rolloutDataType = '';
-    /**
-     * Optional. The starting phase ID for the `Rollout`. If unspecified, the
-     * `Rollout` will start in the stable phase.
-     *
-     * @var string
-     */
-    public $startingPhaseId;
-    /**
-     * Optional. The rollback `Rollout` to create.
-     *
-     * @param Rollout $rollout
-     */
-    public function setRollout(Rollout $rollout)
+namespace Google\Service\CloudDeploy {
+    class RollbackTargetConfig extends \Google\Model
     {
+        protected $rolloutType = Rollout::class;
+        protected $rolloutDataType = '';
+        /**
+         * Optional. The starting phase ID for the `Rollout`. If unspecified, the
+         * `Rollout` will start in the stable phase.
+         *
+         * @var string
+         */
+        public $startingPhaseId;
+        /**
+         * Optional. The rollback `Rollout` to create.
+         *
+         * @param Rollout $rollout
+         */
+        public function setRollout(Rollout $rollout)
+        {
+        }
+        /**
+         * @return Rollout
+         */
+        public function getRollout()
+        {
+        }
+        /**
+         * Optional. The starting phase ID for the `Rollout`. If unspecified, the
+         * `Rollout` will start in the stable phase.
+         *
+         * @param string $startingPhaseId
+         */
+        public function setStartingPhaseId($startingPhaseId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartingPhaseId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Rollout
+     * Runtime class alias of \Google\Service\CloudDeploy\RollbackTargetConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRollout()
-    {
-    }
-    /**
-     * Optional. The starting phase ID for the `Rollout`. If unspecified, the
-     * `Rollout` will start in the stable phase.
-     *
-     * @param string $startingPhaseId
-     */
-    public function setStartingPhaseId($startingPhaseId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartingPhaseId()
+    class Google_Service_CloudDeploy_RollbackTargetConfig extends \Google\Service\CloudDeploy\RollbackTargetConfig
     {
     }
 }

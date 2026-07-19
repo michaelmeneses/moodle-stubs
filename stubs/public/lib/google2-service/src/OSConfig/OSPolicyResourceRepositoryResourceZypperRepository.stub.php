@@ -21,95 +21,104 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class OSPolicyResourceRepositoryResourceZypperRepository extends \Google\Collection
-{
-    protected $collection_key = 'gpgKeys';
-    /**
-     * Required. The location of the repository directory.
-     *
-     * @var string
-     */
-    public $baseUrl;
-    /**
-     * The display name of the repository.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * URIs of GPG keys.
-     *
-     * @var string[]
-     */
-    public $gpgKeys;
-    /**
-     * Required. A one word, unique name for this repository. This is the `repo
-     * id` in the zypper config file and also the `display_name` if `display_name`
-     * is omitted. This id is also used as the unique identifier when checking for
-     * GuestPolicy conflicts.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Required. The location of the repository directory.
-     *
-     * @param string $baseUrl
-     */
-    public function setBaseUrl($baseUrl)
+namespace Google\Service\OSConfig {
+    class OSPolicyResourceRepositoryResourceZypperRepository extends \Google\Collection
     {
+        protected $collection_key = 'gpgKeys';
+        /**
+         * Required. The location of the repository directory.
+         *
+         * @var string
+         */
+        public $baseUrl;
+        /**
+         * The display name of the repository.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * URIs of GPG keys.
+         *
+         * @var string[]
+         */
+        public $gpgKeys;
+        /**
+         * Required. A one word, unique name for this repository. This is the `repo
+         * id` in the zypper config file and also the `display_name` if `display_name`
+         * is omitted. This id is also used as the unique identifier when checking for
+         * GuestPolicy conflicts.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Required. The location of the repository directory.
+         *
+         * @param string $baseUrl
+         */
+        public function setBaseUrl($baseUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBaseUrl()
+        {
+        }
+        /**
+         * The display name of the repository.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * URIs of GPG keys.
+         *
+         * @param string[] $gpgKeys
+         */
+        public function setGpgKeys($gpgKeys)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getGpgKeys()
+        {
+        }
+        /**
+         * Required. A one word, unique name for this repository. This is the `repo
+         * id` in the zypper config file and also the `display_name` if `display_name`
+         * is omitted. This id is also used as the unique identifier when checking for
+         * GuestPolicy conflicts.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OSConfig\OSPolicyResourceRepositoryResourceZypperRepository registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBaseUrl()
-    {
-    }
-    /**
-     * The display name of the repository.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * URIs of GPG keys.
-     *
-     * @param string[] $gpgKeys
-     */
-    public function setGpgKeys($gpgKeys)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getGpgKeys()
-    {
-    }
-    /**
-     * Required. A one word, unique name for this repository. This is the `repo
-     * id` in the zypper config file and also the `display_name` if `display_name`
-     * is omitted. This id is also used as the unique identifier when checking for
-     * GuestPolicy conflicts.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
+    class Google_Service_OSConfig_OSPolicyResourceRepositoryResourceZypperRepository extends \Google\Service\OSConfig\OSPolicyResourceRepositoryResourceZypperRepository
     {
     }
 }

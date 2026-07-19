@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceManagement;
-
-class Diagnostic extends \Google\Model
-{
-    /**
-     * Warnings and errors
-     */
-    public const KIND_WARNING = 'WARNING';
-    /**
-     * Only errors
-     */
-    public const KIND_ERROR = 'ERROR';
-    /**
-     * The kind of diagnostic information provided.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * File name and line number of the error or warning.
-     *
-     * @var string
-     */
-    public $location;
-    /**
-     * Message describing the error or warning.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * The kind of diagnostic information provided.
-     *
-     * Accepted values: WARNING, ERROR
-     *
-     * @param self::KIND_* $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\ServiceManagement {
+    class Diagnostic extends \Google\Model
     {
+        /**
+         * Warnings and errors
+         */
+        public const KIND_WARNING = 'WARNING';
+        /**
+         * Only errors
+         */
+        public const KIND_ERROR = 'ERROR';
+        /**
+         * The kind of diagnostic information provided.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * File name and line number of the error or warning.
+         *
+         * @var string
+         */
+        public $location;
+        /**
+         * Message describing the error or warning.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * The kind of diagnostic information provided.
+         *
+         * Accepted values: WARNING, ERROR
+         *
+         * @param self::KIND_* $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return self::KIND_*
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * File name and line number of the error or warning.
+         *
+         * @param string $location
+         */
+        public function setLocation($location)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocation()
+        {
+        }
+        /**
+         * Message describing the error or warning.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::KIND_*
+     * Runtime class alias of \Google\Service\ServiceManagement\Diagnostic registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * File name and line number of the error or warning.
-     *
-     * @param string $location
-     */
-    public function setLocation($location)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocation()
-    {
-    }
-    /**
-     * Message describing the error or warning.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMessage()
+    class Google_Service_ServiceManagement_Diagnostic extends \Google\Service\ServiceManagement\Diagnostic
     {
     }
 }

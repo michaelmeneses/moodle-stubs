@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class AwsMetadata extends \Google\Collection
-{
-    protected $collection_key = 'organizationalUnits';
-    protected $accountType = AwsAccount::class;
-    protected $accountDataType = '';
-    protected $organizationType = AwsOrganization::class;
-    protected $organizationDataType = '';
-    protected $organizationalUnitsType = AwsOrganizationalUnit::class;
-    protected $organizationalUnitsDataType = 'array';
-    /**
-     * The AWS account associated with the resource.
-     *
-     * @param AwsAccount $account
-     */
-    public function setAccount(AwsAccount $account)
+namespace Google\Service\SecurityCommandCenter {
+    class AwsMetadata extends \Google\Collection
     {
+        protected $collection_key = 'organizationalUnits';
+        protected $accountType = AwsAccount::class;
+        protected $accountDataType = '';
+        protected $organizationType = AwsOrganization::class;
+        protected $organizationDataType = '';
+        protected $organizationalUnitsType = AwsOrganizationalUnit::class;
+        protected $organizationalUnitsDataType = 'array';
+        /**
+         * The AWS account associated with the resource.
+         *
+         * @param AwsAccount $account
+         */
+        public function setAccount(AwsAccount $account)
+        {
+        }
+        /**
+         * @return AwsAccount
+         */
+        public function getAccount()
+        {
+        }
+        /**
+         * The AWS organization associated with the resource.
+         *
+         * @param AwsOrganization $organization
+         */
+        public function setOrganization(AwsOrganization $organization)
+        {
+        }
+        /**
+         * @return AwsOrganization
+         */
+        public function getOrganization()
+        {
+        }
+        /**
+         * A list of AWS organizational units associated with the resource, ordered
+         * from lowest level (closest to the account) to highest level.
+         *
+         * @param AwsOrganizationalUnit[] $organizationalUnits
+         */
+        public function setOrganizationalUnits($organizationalUnits)
+        {
+        }
+        /**
+         * @return AwsOrganizationalUnit[]
+         */
+        public function getOrganizationalUnits()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AwsAccount
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\AwsMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccount()
-    {
-    }
-    /**
-     * The AWS organization associated with the resource.
-     *
-     * @param AwsOrganization $organization
-     */
-    public function setOrganization(AwsOrganization $organization)
-    {
-    }
-    /**
-     * @return AwsOrganization
-     */
-    public function getOrganization()
-    {
-    }
-    /**
-     * A list of AWS organizational units associated with the resource, ordered
-     * from lowest level (closest to the account) to highest level.
-     *
-     * @param AwsOrganizationalUnit[] $organizationalUnits
-     */
-    public function setOrganizationalUnits($organizationalUnits)
-    {
-    }
-    /**
-     * @return AwsOrganizationalUnit[]
-     */
-    public function getOrganizationalUnits()
+    class Google_Service_SecurityCommandCenter_AwsMetadata extends \Google\Service\SecurityCommandCenter\AwsMetadata
     {
     }
 }

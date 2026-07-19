@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Transcoder;
-
-class Deblock extends \Google\Model
-{
-    /**
-     * Enable deblocker. The default is `false`.
-     *
-     * @var bool
-     */
-    public $enabled;
-    /**
-     * Set strength of the deblocker. Enter a value between 0 and 1. The higher
-     * the value, the stronger the block removal. 0 is no deblocking. The default
-     * is 0.
-     *
-     * @var 
-     */
-    public $strength;
-    /**
-     * Enable deblocker. The default is `false`.
-     *
-     * @param bool $enabled
-     */
-    public function setEnabled($enabled)
+namespace Google\Service\Transcoder {
+    class Deblock extends \Google\Model
     {
+        /**
+         * Enable deblocker. The default is `false`.
+         *
+         * @var bool
+         */
+        public $enabled;
+        /**
+         * Set strength of the deblocker. Enter a value between 0 and 1. The higher
+         * the value, the stronger the block removal. 0 is no deblocking. The default
+         * is 0.
+         *
+         * @var 
+         */
+        public $strength;
+        /**
+         * Enable deblocker. The default is `false`.
+         *
+         * @param bool $enabled
+         */
+        public function setEnabled($enabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnabled()
+        {
+        }
+        public function setStrength($strength)
+        {
+        }
+        public function getStrength()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Transcoder\Deblock registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabled()
-    {
-    }
-    public function setStrength($strength)
-    {
-    }
-    public function getStrength()
+    class Google_Service_Transcoder_Deblock extends \Google\Service\Transcoder\Deblock
     {
     }
 }

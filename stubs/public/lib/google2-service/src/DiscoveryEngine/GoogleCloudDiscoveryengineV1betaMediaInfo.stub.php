@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaMediaInfo extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $mediaProgressDuration;
-    /**
-     * @var float
-     */
-    public $mediaProgressPercentage;
-    /**
-     * @param string
-     */
-    public function setMediaProgressDuration($mediaProgressDuration)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaMediaInfo extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $mediaProgressDuration;
+        /**
+         * @var float
+         */
+        public $mediaProgressPercentage;
+        /**
+         * @param string
+         */
+        public function setMediaProgressDuration($mediaProgressDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMediaProgressDuration()
+        {
+        }
+        /**
+         * @param float
+         */
+        public function setMediaProgressPercentage($mediaProgressPercentage)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getMediaProgressPercentage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaMediaInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMediaProgressDuration()
-    {
-    }
-    /**
-     * @param float
-     */
-    public function setMediaProgressPercentage($mediaProgressPercentage)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getMediaProgressPercentage()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaMediaInfo extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaMediaInfo
     {
     }
 }

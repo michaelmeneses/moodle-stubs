@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OSConfig;
-
-class GoogleCloudOsconfigV2OrchestrationScopeResourceHierarchySelector extends \Google\Collection
-{
-    protected $collection_key = 'includedProjects';
-    /**
-     * Optional. Names of the folders in scope. Format: `folders/{folder_id}`
-     *
-     * @var string[]
-     */
-    public $includedFolders;
-    /**
-     * Optional. Names of the projects in scope. Format:
-     * `projects/{project_number}`
-     *
-     * @var string[]
-     */
-    public $includedProjects;
-    /**
-     * Optional. Names of the folders in scope. Format: `folders/{folder_id}`
-     *
-     * @param string[] $includedFolders
-     */
-    public function setIncludedFolders($includedFolders)
+namespace Google\Service\OSConfig {
+    class GoogleCloudOsconfigV2OrchestrationScopeResourceHierarchySelector extends \Google\Collection
     {
+        protected $collection_key = 'includedProjects';
+        /**
+         * Optional. Names of the folders in scope. Format: `folders/{folder_id}`
+         *
+         * @var string[]
+         */
+        public $includedFolders;
+        /**
+         * Optional. Names of the projects in scope. Format:
+         * `projects/{project_number}`
+         *
+         * @var string[]
+         */
+        public $includedProjects;
+        /**
+         * Optional. Names of the folders in scope. Format: `folders/{folder_id}`
+         *
+         * @param string[] $includedFolders
+         */
+        public function setIncludedFolders($includedFolders)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIncludedFolders()
+        {
+        }
+        /**
+         * Optional. Names of the projects in scope. Format:
+         * `projects/{project_number}`
+         *
+         * @param string[] $includedProjects
+         */
+        public function setIncludedProjects($includedProjects)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIncludedProjects()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\OSConfig\GoogleCloudOsconfigV2OrchestrationScopeResourceHierarchySelector registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIncludedFolders()
-    {
-    }
-    /**
-     * Optional. Names of the projects in scope. Format:
-     * `projects/{project_number}`
-     *
-     * @param string[] $includedProjects
-     */
-    public function setIncludedProjects($includedProjects)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getIncludedProjects()
+    class Google_Service_OSConfig_GoogleCloudOsconfigV2OrchestrationScopeResourceHierarchySelector extends \Google\Service\OSConfig\GoogleCloudOsconfigV2OrchestrationScopeResourceHierarchySelector
     {
     }
 }

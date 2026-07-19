@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1PublisherModelCallToActionViewRestApi extends \Google\Collection
-{
-    protected $collection_key = 'documentations';
-    protected $documentationsType = GoogleCloudAiplatformV1PublisherModelDocumentation::class;
-    protected $documentationsDataType = 'array';
-    /**
-     * Required. The title of the view rest API.
-     *
-     * @var string
-     */
-    public $title;
-    /**
-     * Required.
-     *
-     * @param GoogleCloudAiplatformV1PublisherModelDocumentation[] $documentations
-     */
-    public function setDocumentations($documentations)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1PublisherModelCallToActionViewRestApi extends \Google\Collection
     {
+        protected $collection_key = 'documentations';
+        protected $documentationsType = GoogleCloudAiplatformV1PublisherModelDocumentation::class;
+        protected $documentationsDataType = 'array';
+        /**
+         * Required. The title of the view rest API.
+         *
+         * @var string
+         */
+        public $title;
+        /**
+         * Required.
+         *
+         * @param GoogleCloudAiplatformV1PublisherModelDocumentation[] $documentations
+         */
+        public function setDocumentations($documentations)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1PublisherModelDocumentation[]
+         */
+        public function getDocumentations()
+        {
+        }
+        /**
+         * Required. The title of the view rest API.
+         *
+         * @param string $title
+         */
+        public function setTitle($title)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTitle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1PublisherModelDocumentation[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1PublisherModelCallToActionViewRestApi registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocumentations()
-    {
-    }
-    /**
-     * Required. The title of the view rest API.
-     *
-     * @param string $title
-     */
-    public function setTitle($title)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTitle()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1PublisherModelCallToActionViewRestApi extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1PublisherModelCallToActionViewRestApi
     {
     }
 }

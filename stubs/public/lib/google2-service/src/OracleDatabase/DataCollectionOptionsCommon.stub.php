@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class DataCollectionOptionsCommon extends \Google\Model
-{
-    /**
-     * Optional. Indicates whether to enable data collection for diagnostics.
-     *
-     * @var bool
-     */
-    public $isDiagnosticsEventsEnabled;
-    /**
-     * Optional. Indicates whether to enable health monitoring.
-     *
-     * @var bool
-     */
-    public $isHealthMonitoringEnabled;
-    /**
-     * Optional. Indicates whether to enable incident logs and trace collection.
-     *
-     * @var bool
-     */
-    public $isIncidentLogsEnabled;
-    /**
-     * Optional. Indicates whether to enable data collection for diagnostics.
-     *
-     * @param bool $isDiagnosticsEventsEnabled
-     */
-    public function setIsDiagnosticsEventsEnabled($isDiagnosticsEventsEnabled)
+namespace Google\Service\OracleDatabase {
+    class DataCollectionOptionsCommon extends \Google\Model
     {
+        /**
+         * Optional. Indicates whether to enable data collection for diagnostics.
+         *
+         * @var bool
+         */
+        public $isDiagnosticsEventsEnabled;
+        /**
+         * Optional. Indicates whether to enable health monitoring.
+         *
+         * @var bool
+         */
+        public $isHealthMonitoringEnabled;
+        /**
+         * Optional. Indicates whether to enable incident logs and trace collection.
+         *
+         * @var bool
+         */
+        public $isIncidentLogsEnabled;
+        /**
+         * Optional. Indicates whether to enable data collection for diagnostics.
+         *
+         * @param bool $isDiagnosticsEventsEnabled
+         */
+        public function setIsDiagnosticsEventsEnabled($isDiagnosticsEventsEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsDiagnosticsEventsEnabled()
+        {
+        }
+        /**
+         * Optional. Indicates whether to enable health monitoring.
+         *
+         * @param bool $isHealthMonitoringEnabled
+         */
+        public function setIsHealthMonitoringEnabled($isHealthMonitoringEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsHealthMonitoringEnabled()
+        {
+        }
+        /**
+         * Optional. Indicates whether to enable incident logs and trace collection.
+         *
+         * @param bool $isIncidentLogsEnabled
+         */
+        public function setIsIncidentLogsEnabled($isIncidentLogsEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsIncidentLogsEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\OracleDatabase\DataCollectionOptionsCommon registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIsDiagnosticsEventsEnabled()
-    {
-    }
-    /**
-     * Optional. Indicates whether to enable health monitoring.
-     *
-     * @param bool $isHealthMonitoringEnabled
-     */
-    public function setIsHealthMonitoringEnabled($isHealthMonitoringEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsHealthMonitoringEnabled()
-    {
-    }
-    /**
-     * Optional. Indicates whether to enable incident logs and trace collection.
-     *
-     * @param bool $isIncidentLogsEnabled
-     */
-    public function setIsIncidentLogsEnabled($isIncidentLogsEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsIncidentLogsEnabled()
+    class Google_Service_OracleDatabase_DataCollectionOptionsCommon extends \Google\Service\OracleDatabase\DataCollectionOptionsCommon
     {
     }
 }

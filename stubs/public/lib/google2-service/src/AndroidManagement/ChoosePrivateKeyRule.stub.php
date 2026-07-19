@@ -21,95 +21,104 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class ChoosePrivateKeyRule extends \Google\Collection
-{
-    protected $collection_key = 'packageNames';
-    /**
-     * The package names to which this rule applies. The signing key certificate
-     * fingerprint of the app is verified against the signing key certificate
-     * fingerprints provided by Play Store and ApplicationPolicy.signingKeyCerts .
-     * If no package names are specified, then the alias is provided to all apps
-     * that call KeyChain.choosePrivateKeyAlias (https://developer.android.com/ref
-     * erence/android/security/KeyChain#choosePrivateKeyAlias%28android.app.Activi
-     * ty,%20android.security.KeyChainAliasCallback,%20java.lang.String[],%20java.
-     * security.Principal[],%20java.lang.String,%20int,%20java.lang.String%29) or
-     * any overloads (but not without calling KeyChain.choosePrivateKeyAlias, even
-     * on Android 11 and above). Any app with the same Android UID as a package
-     * specified here will have access when they call
-     * KeyChain.choosePrivateKeyAlias.
-     *
-     * @var string[]
-     */
-    public $packageNames;
-    /**
-     * The alias of the private key to be used.
-     *
-     * @var string
-     */
-    public $privateKeyAlias;
-    /**
-     * The URL pattern to match against the URL of the request. If not set or
-     * empty, it matches all URLs. This uses the regular expression syntax of
-     * java.util.regex.Pattern.
-     *
-     * @var string
-     */
-    public $urlPattern;
-    /**
-     * The package names to which this rule applies. The signing key certificate
-     * fingerprint of the app is verified against the signing key certificate
-     * fingerprints provided by Play Store and ApplicationPolicy.signingKeyCerts .
-     * If no package names are specified, then the alias is provided to all apps
-     * that call KeyChain.choosePrivateKeyAlias (https://developer.android.com/ref
-     * erence/android/security/KeyChain#choosePrivateKeyAlias%28android.app.Activi
-     * ty,%20android.security.KeyChainAliasCallback,%20java.lang.String[],%20java.
-     * security.Principal[],%20java.lang.String,%20int,%20java.lang.String%29) or
-     * any overloads (but not without calling KeyChain.choosePrivateKeyAlias, even
-     * on Android 11 and above). Any app with the same Android UID as a package
-     * specified here will have access when they call
-     * KeyChain.choosePrivateKeyAlias.
-     *
-     * @param string[] $packageNames
-     */
-    public function setPackageNames($packageNames)
+namespace Google\Service\AndroidManagement {
+    class ChoosePrivateKeyRule extends \Google\Collection
     {
+        protected $collection_key = 'packageNames';
+        /**
+         * The package names to which this rule applies. The signing key certificate
+         * fingerprint of the app is verified against the signing key certificate
+         * fingerprints provided by Play Store and ApplicationPolicy.signingKeyCerts .
+         * If no package names are specified, then the alias is provided to all apps
+         * that call KeyChain.choosePrivateKeyAlias (https://developer.android.com/ref
+         * erence/android/security/KeyChain#choosePrivateKeyAlias%28android.app.Activi
+         * ty,%20android.security.KeyChainAliasCallback,%20java.lang.String[],%20java.
+         * security.Principal[],%20java.lang.String,%20int,%20java.lang.String%29) or
+         * any overloads (but not without calling KeyChain.choosePrivateKeyAlias, even
+         * on Android 11 and above). Any app with the same Android UID as a package
+         * specified here will have access when they call
+         * KeyChain.choosePrivateKeyAlias.
+         *
+         * @var string[]
+         */
+        public $packageNames;
+        /**
+         * The alias of the private key to be used.
+         *
+         * @var string
+         */
+        public $privateKeyAlias;
+        /**
+         * The URL pattern to match against the URL of the request. If not set or
+         * empty, it matches all URLs. This uses the regular expression syntax of
+         * java.util.regex.Pattern.
+         *
+         * @var string
+         */
+        public $urlPattern;
+        /**
+         * The package names to which this rule applies. The signing key certificate
+         * fingerprint of the app is verified against the signing key certificate
+         * fingerprints provided by Play Store and ApplicationPolicy.signingKeyCerts .
+         * If no package names are specified, then the alias is provided to all apps
+         * that call KeyChain.choosePrivateKeyAlias (https://developer.android.com/ref
+         * erence/android/security/KeyChain#choosePrivateKeyAlias%28android.app.Activi
+         * ty,%20android.security.KeyChainAliasCallback,%20java.lang.String[],%20java.
+         * security.Principal[],%20java.lang.String,%20int,%20java.lang.String%29) or
+         * any overloads (but not without calling KeyChain.choosePrivateKeyAlias, even
+         * on Android 11 and above). Any app with the same Android UID as a package
+         * specified here will have access when they call
+         * KeyChain.choosePrivateKeyAlias.
+         *
+         * @param string[] $packageNames
+         */
+        public function setPackageNames($packageNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPackageNames()
+        {
+        }
+        /**
+         * The alias of the private key to be used.
+         *
+         * @param string $privateKeyAlias
+         */
+        public function setPrivateKeyAlias($privateKeyAlias)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrivateKeyAlias()
+        {
+        }
+        /**
+         * The URL pattern to match against the URL of the request. If not set or
+         * empty, it matches all URLs. This uses the regular expression syntax of
+         * java.util.regex.Pattern.
+         *
+         * @param string $urlPattern
+         */
+        public function setUrlPattern($urlPattern)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrlPattern()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AndroidManagement\ChoosePrivateKeyRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPackageNames()
-    {
-    }
-    /**
-     * The alias of the private key to be used.
-     *
-     * @param string $privateKeyAlias
-     */
-    public function setPrivateKeyAlias($privateKeyAlias)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrivateKeyAlias()
-    {
-    }
-    /**
-     * The URL pattern to match against the URL of the request. If not set or
-     * empty, it matches all URLs. This uses the regular expression syntax of
-     * java.util.regex.Pattern.
-     *
-     * @param string $urlPattern
-     */
-    public function setUrlPattern($urlPattern)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrlPattern()
+    class Google_Service_AndroidManagement_ChoosePrivateKeyRule extends \Google\Service\AndroidManagement\ChoosePrivateKeyRule
     {
     }
 }

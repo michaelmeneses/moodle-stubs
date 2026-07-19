@@ -21,159 +21,168 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class Annotation extends \Google\Model
-{
-    /**
-     * Default value for the enum. Don't use.
-     */
-    public const TYPE_ANNOTATION_TYPE_UNSPECIFIED = 'ANNOTATION_TYPE_UNSPECIFIED';
-    /**
-     * A user is mentioned.
-     */
-    public const TYPE_USER_MENTION = 'USER_MENTION';
-    /**
-     * A slash command is invoked.
-     */
-    public const TYPE_SLASH_COMMAND = 'SLASH_COMMAND';
-    /**
-     * A rich link annotation.
-     */
-    public const TYPE_RICH_LINK = 'RICH_LINK';
-    /**
-     * A custom emoji annotation.
-     */
-    public const TYPE_CUSTOM_EMOJI = 'CUSTOM_EMOJI';
-    protected $customEmojiMetadataType = CustomEmojiMetadata::class;
-    protected $customEmojiMetadataDataType = '';
-    /**
-     * Length of the substring in the plain-text message body this annotation
-     * corresponds to. If not present, indicates a length of 0.
-     *
-     * @var int
-     */
-    public $length;
-    protected $richLinkMetadataType = RichLinkMetadata::class;
-    protected $richLinkMetadataDataType = '';
-    protected $slashCommandType = SlashCommandMetadata::class;
-    protected $slashCommandDataType = '';
-    /**
-     * Start index (0-based, inclusive) in the plain-text message body this
-     * annotation corresponds to.
-     *
-     * @var int
-     */
-    public $startIndex;
-    /**
-     * The type of this annotation.
-     *
-     * @var string
-     */
-    public $type;
-    protected $userMentionType = UserMentionMetadata::class;
-    protected $userMentionDataType = '';
-    /**
-     * The metadata for a custom emoji.
-     *
-     * @param CustomEmojiMetadata $customEmojiMetadata
-     */
-    public function setCustomEmojiMetadata(CustomEmojiMetadata $customEmojiMetadata)
+namespace Google\Service\HangoutsChat {
+    class Annotation extends \Google\Model
     {
+        /**
+         * Default value for the enum. Don't use.
+         */
+        public const TYPE_ANNOTATION_TYPE_UNSPECIFIED = 'ANNOTATION_TYPE_UNSPECIFIED';
+        /**
+         * A user is mentioned.
+         */
+        public const TYPE_USER_MENTION = 'USER_MENTION';
+        /**
+         * A slash command is invoked.
+         */
+        public const TYPE_SLASH_COMMAND = 'SLASH_COMMAND';
+        /**
+         * A rich link annotation.
+         */
+        public const TYPE_RICH_LINK = 'RICH_LINK';
+        /**
+         * A custom emoji annotation.
+         */
+        public const TYPE_CUSTOM_EMOJI = 'CUSTOM_EMOJI';
+        protected $customEmojiMetadataType = CustomEmojiMetadata::class;
+        protected $customEmojiMetadataDataType = '';
+        /**
+         * Length of the substring in the plain-text message body this annotation
+         * corresponds to. If not present, indicates a length of 0.
+         *
+         * @var int
+         */
+        public $length;
+        protected $richLinkMetadataType = RichLinkMetadata::class;
+        protected $richLinkMetadataDataType = '';
+        protected $slashCommandType = SlashCommandMetadata::class;
+        protected $slashCommandDataType = '';
+        /**
+         * Start index (0-based, inclusive) in the plain-text message body this
+         * annotation corresponds to.
+         *
+         * @var int
+         */
+        public $startIndex;
+        /**
+         * The type of this annotation.
+         *
+         * @var string
+         */
+        public $type;
+        protected $userMentionType = UserMentionMetadata::class;
+        protected $userMentionDataType = '';
+        /**
+         * The metadata for a custom emoji.
+         *
+         * @param CustomEmojiMetadata $customEmojiMetadata
+         */
+        public function setCustomEmojiMetadata(CustomEmojiMetadata $customEmojiMetadata)
+        {
+        }
+        /**
+         * @return CustomEmojiMetadata
+         */
+        public function getCustomEmojiMetadata()
+        {
+        }
+        /**
+         * Length of the substring in the plain-text message body this annotation
+         * corresponds to. If not present, indicates a length of 0.
+         *
+         * @param int $length
+         */
+        public function setLength($length)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getLength()
+        {
+        }
+        /**
+         * The metadata for a rich link.
+         *
+         * @param RichLinkMetadata $richLinkMetadata
+         */
+        public function setRichLinkMetadata(RichLinkMetadata $richLinkMetadata)
+        {
+        }
+        /**
+         * @return RichLinkMetadata
+         */
+        public function getRichLinkMetadata()
+        {
+        }
+        /**
+         * The metadata for a slash command.
+         *
+         * @param SlashCommandMetadata $slashCommand
+         */
+        public function setSlashCommand(SlashCommandMetadata $slashCommand)
+        {
+        }
+        /**
+         * @return SlashCommandMetadata
+         */
+        public function getSlashCommand()
+        {
+        }
+        /**
+         * Start index (0-based, inclusive) in the plain-text message body this
+         * annotation corresponds to.
+         *
+         * @param int $startIndex
+         */
+        public function setStartIndex($startIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStartIndex()
+        {
+        }
+        /**
+         * The type of this annotation.
+         *
+         * Accepted values: ANNOTATION_TYPE_UNSPECIFIED, USER_MENTION, SLASH_COMMAND,
+         * RICH_LINK, CUSTOM_EMOJI
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
+        /**
+         * The metadata of user mention.
+         *
+         * @param UserMentionMetadata $userMention
+         */
+        public function setUserMention(UserMentionMetadata $userMention)
+        {
+        }
+        /**
+         * @return UserMentionMetadata
+         */
+        public function getUserMention()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CustomEmojiMetadata
+     * Runtime class alias of \Google\Service\HangoutsChat\Annotation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomEmojiMetadata()
-    {
-    }
-    /**
-     * Length of the substring in the plain-text message body this annotation
-     * corresponds to. If not present, indicates a length of 0.
-     *
-     * @param int $length
-     */
-    public function setLength($length)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getLength()
-    {
-    }
-    /**
-     * The metadata for a rich link.
-     *
-     * @param RichLinkMetadata $richLinkMetadata
-     */
-    public function setRichLinkMetadata(RichLinkMetadata $richLinkMetadata)
-    {
-    }
-    /**
-     * @return RichLinkMetadata
-     */
-    public function getRichLinkMetadata()
-    {
-    }
-    /**
-     * The metadata for a slash command.
-     *
-     * @param SlashCommandMetadata $slashCommand
-     */
-    public function setSlashCommand(SlashCommandMetadata $slashCommand)
-    {
-    }
-    /**
-     * @return SlashCommandMetadata
-     */
-    public function getSlashCommand()
-    {
-    }
-    /**
-     * Start index (0-based, inclusive) in the plain-text message body this
-     * annotation corresponds to.
-     *
-     * @param int $startIndex
-     */
-    public function setStartIndex($startIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStartIndex()
-    {
-    }
-    /**
-     * The type of this annotation.
-     *
-     * Accepted values: ANNOTATION_TYPE_UNSPECIFIED, USER_MENTION, SLASH_COMMAND,
-     * RICH_LINK, CUSTOM_EMOJI
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
-    {
-    }
-    /**
-     * The metadata of user mention.
-     *
-     * @param UserMentionMetadata $userMention
-     */
-    public function setUserMention(UserMentionMetadata $userMention)
-    {
-    }
-    /**
-     * @return UserMentionMetadata
-     */
-    public function getUserMention()
+    class Google_Service_HangoutsChat_Annotation extends \Google\Service\HangoutsChat\Annotation
     {
     }
 }

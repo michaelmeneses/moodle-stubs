@@ -21,31 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2RuleTwowaySynonymsAction extends \Google\Collection
-{
-    protected $collection_key = 'synonyms';
-    /**
-     * Defines a set of synonyms. Can specify up to 100 synonyms. Must specify at
-     * least 2 synonyms.
-     *
-     * @var string[]
-     */
-    public $synonyms;
-    /**
-     * Defines a set of synonyms. Can specify up to 100 synonyms. Must specify at
-     * least 2 synonyms.
-     *
-     * @param string[] $synonyms
-     */
-    public function setSynonyms($synonyms)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2RuleTwowaySynonymsAction extends \Google\Collection
     {
+        protected $collection_key = 'synonyms';
+        /**
+         * Defines a set of synonyms. Can specify up to 100 synonyms. Must specify at
+         * least 2 synonyms.
+         *
+         * @var string[]
+         */
+        public $synonyms;
+        /**
+         * Defines a set of synonyms. Can specify up to 100 synonyms. Must specify at
+         * least 2 synonyms.
+         *
+         * @param string[] $synonyms
+         */
+        public function setSynonyms($synonyms)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSynonyms()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2RuleTwowaySynonymsAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSynonyms()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2RuleTwowaySynonymsAction extends \Google\Service\CloudRetail\GoogleCloudRetailV2RuleTwowaySynonymsAction
     {
     }
 }

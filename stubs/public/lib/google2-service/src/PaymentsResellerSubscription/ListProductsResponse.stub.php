@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class ListProductsResponse extends \Google\Collection
-{
-    protected $collection_key = 'products';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is empty, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $productsType = Product::class;
-    protected $productsDataType = 'array';
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is empty, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\PaymentsResellerSubscription {
+    class ListProductsResponse extends \Google\Collection
     {
+        protected $collection_key = 'products';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is empty, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $productsType = Product::class;
+        protected $productsDataType = 'array';
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is empty, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The products for the specified partner.
+         *
+         * @param Product[] $products
+         */
+        public function setProducts($products)
+        {
+        }
+        /**
+         * @return Product[]
+         */
+        public function getProducts()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\ListProductsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The products for the specified partner.
-     *
-     * @param Product[] $products
-     */
-    public function setProducts($products)
-    {
-    }
-    /**
-     * @return Product[]
-     */
-    public function getProducts()
+    class Google_Service_PaymentsResellerSubscription_ListProductsResponse extends \Google\Service\PaymentsResellerSubscription\ListProductsResponse
     {
     }
 }

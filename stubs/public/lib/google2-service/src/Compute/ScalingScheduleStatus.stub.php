@@ -21,96 +21,105 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ScalingScheduleStatus extends \Google\Model
-{
-    /**
-     * The current autoscaling recommendation is influenced by this scaling
-     * schedule.
-     */
-    public const STATE_ACTIVE = 'ACTIVE';
-    /**
-     * This scaling schedule has been disabled by the user.
-     */
-    public const STATE_DISABLED = 'DISABLED';
-    /**
-     * This scaling schedule will never become active again.
-     */
-    public const STATE_OBSOLETE = 'OBSOLETE';
-    /**
-     * The current autoscaling recommendation is not influenced by this scaling
-     * schedule.
-     */
-    public const STATE_READY = 'READY';
-    /**
-     * [Output Only] The last time the scaling schedule became active. Note: this
-     * is a timestamp when a schedule actually became active, not when it was
-     * planned to do so. The timestamp is in RFC3339 text format.
-     *
-     * @var string
-     */
-    public $lastStartTime;
-    /**
-     * [Output Only] The next time the scaling schedule is to become active. Note:
-     * this is a timestamp when a schedule is planned to run, but the actual time
-     * might be slightly different. The timestamp is in RFC3339 text format.
-     *
-     * @var string
-     */
-    public $nextStartTime;
-    /**
-     * [Output Only] The current state of a scaling schedule.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * [Output Only] The last time the scaling schedule became active. Note: this
-     * is a timestamp when a schedule actually became active, not when it was
-     * planned to do so. The timestamp is in RFC3339 text format.
-     *
-     * @param string $lastStartTime
-     */
-    public function setLastStartTime($lastStartTime)
+namespace Google\Service\Compute {
+    class ScalingScheduleStatus extends \Google\Model
     {
+        /**
+         * The current autoscaling recommendation is influenced by this scaling
+         * schedule.
+         */
+        public const STATE_ACTIVE = 'ACTIVE';
+        /**
+         * This scaling schedule has been disabled by the user.
+         */
+        public const STATE_DISABLED = 'DISABLED';
+        /**
+         * This scaling schedule will never become active again.
+         */
+        public const STATE_OBSOLETE = 'OBSOLETE';
+        /**
+         * The current autoscaling recommendation is not influenced by this scaling
+         * schedule.
+         */
+        public const STATE_READY = 'READY';
+        /**
+         * [Output Only] The last time the scaling schedule became active. Note: this
+         * is a timestamp when a schedule actually became active, not when it was
+         * planned to do so. The timestamp is in RFC3339 text format.
+         *
+         * @var string
+         */
+        public $lastStartTime;
+        /**
+         * [Output Only] The next time the scaling schedule is to become active. Note:
+         * this is a timestamp when a schedule is planned to run, but the actual time
+         * might be slightly different. The timestamp is in RFC3339 text format.
+         *
+         * @var string
+         */
+        public $nextStartTime;
+        /**
+         * [Output Only] The current state of a scaling schedule.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * [Output Only] The last time the scaling schedule became active. Note: this
+         * is a timestamp when a schedule actually became active, not when it was
+         * planned to do so. The timestamp is in RFC3339 text format.
+         *
+         * @param string $lastStartTime
+         */
+        public function setLastStartTime($lastStartTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastStartTime()
+        {
+        }
+        /**
+         * [Output Only] The next time the scaling schedule is to become active. Note:
+         * this is a timestamp when a schedule is planned to run, but the actual time
+         * might be slightly different. The timestamp is in RFC3339 text format.
+         *
+         * @param string $nextStartTime
+         */
+        public function setNextStartTime($nextStartTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextStartTime()
+        {
+        }
+        /**
+         * [Output Only] The current state of a scaling schedule.
+         *
+         * Accepted values: ACTIVE, DISABLED, OBSOLETE, READY
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\ScalingScheduleStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLastStartTime()
-    {
-    }
-    /**
-     * [Output Only] The next time the scaling schedule is to become active. Note:
-     * this is a timestamp when a schedule is planned to run, but the actual time
-     * might be slightly different. The timestamp is in RFC3339 text format.
-     *
-     * @param string $nextStartTime
-     */
-    public function setNextStartTime($nextStartTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextStartTime()
-    {
-    }
-    /**
-     * [Output Only] The current state of a scaling schedule.
-     *
-     * Accepted values: ACTIVE, DISABLED, OBSOLETE, READY
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_Compute_ScalingScheduleStatus extends \Google\Service\Compute\ScalingScheduleStatus
     {
     }
 }

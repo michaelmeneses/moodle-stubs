@@ -21,78 +21,87 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InterconnectAttachmentPartnerMetadata extends \Google\Model
-{
-    /**
-     * Plain text name of the Interconnect this attachment is connected to, as
-     * displayed in the Partner's portal. For instance "Chicago 1". This value may
-     * be validated to match approved Partner values.
-     *
-     * @var string
-     */
-    public $interconnectName;
-    /**
-     * Plain text name of the Partner providing this attachment. This value may be
-     * validated to match approved Partner values.
-     *
-     * @var string
-     */
-    public $partnerName;
-    /**
-     * URL of the Partner's portal for this Attachment. Partners may customise
-     * this to be a deep link to the specific resource on the Partner portal. This
-     * value may be validated to match approved Partner values.
-     *
-     * @var string
-     */
-    public $portalUrl;
-    /**
-     * Plain text name of the Interconnect this attachment is connected to, as
-     * displayed in the Partner's portal. For instance "Chicago 1". This value may
-     * be validated to match approved Partner values.
-     *
-     * @param string $interconnectName
-     */
-    public function setInterconnectName($interconnectName)
+namespace Google\Service\Compute {
+    class InterconnectAttachmentPartnerMetadata extends \Google\Model
     {
+        /**
+         * Plain text name of the Interconnect this attachment is connected to, as
+         * displayed in the Partner's portal. For instance "Chicago 1". This value may
+         * be validated to match approved Partner values.
+         *
+         * @var string
+         */
+        public $interconnectName;
+        /**
+         * Plain text name of the Partner providing this attachment. This value may be
+         * validated to match approved Partner values.
+         *
+         * @var string
+         */
+        public $partnerName;
+        /**
+         * URL of the Partner's portal for this Attachment. Partners may customise
+         * this to be a deep link to the specific resource on the Partner portal. This
+         * value may be validated to match approved Partner values.
+         *
+         * @var string
+         */
+        public $portalUrl;
+        /**
+         * Plain text name of the Interconnect this attachment is connected to, as
+         * displayed in the Partner's portal. For instance "Chicago 1". This value may
+         * be validated to match approved Partner values.
+         *
+         * @param string $interconnectName
+         */
+        public function setInterconnectName($interconnectName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInterconnectName()
+        {
+        }
+        /**
+         * Plain text name of the Partner providing this attachment. This value may be
+         * validated to match approved Partner values.
+         *
+         * @param string $partnerName
+         */
+        public function setPartnerName($partnerName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPartnerName()
+        {
+        }
+        /**
+         * URL of the Partner's portal for this Attachment. Partners may customise
+         * this to be a deep link to the specific resource on the Partner portal. This
+         * value may be validated to match approved Partner values.
+         *
+         * @param string $portalUrl
+         */
+        public function setPortalUrl($portalUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPortalUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\InterconnectAttachmentPartnerMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInterconnectName()
-    {
-    }
-    /**
-     * Plain text name of the Partner providing this attachment. This value may be
-     * validated to match approved Partner values.
-     *
-     * @param string $partnerName
-     */
-    public function setPartnerName($partnerName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPartnerName()
-    {
-    }
-    /**
-     * URL of the Partner's portal for this Attachment. Partners may customise
-     * this to be a deep link to the specific resource on the Partner portal. This
-     * value may be validated to match approved Partner values.
-     *
-     * @param string $portalUrl
-     */
-    public function setPortalUrl($portalUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPortalUrl()
+    class Google_Service_Compute_InterconnectAttachmentPartnerMetadata extends \Google\Service\Compute\InterconnectAttachmentPartnerMetadata
     {
     }
 }

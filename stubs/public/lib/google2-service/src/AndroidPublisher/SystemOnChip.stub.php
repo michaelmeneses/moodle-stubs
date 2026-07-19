@@ -21,60 +21,69 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class SystemOnChip extends \Google\Model
-{
-    /**
-     * Required. The designer of the SoC, eg. "Google" Value of build property
-     * "ro.soc.manufacturer"
-     * https://developer.android.com/reference/android/os/Build#SOC_MANUFACTURER
-     * Required.
-     *
-     * @var string
-     */
-    public $manufacturer;
-    /**
-     * Required. The model of the SoC, eg. "Tensor" Value of build property
-     * "ro.soc.model"
-     * https://developer.android.com/reference/android/os/Build#SOC_MODEL
-     * Required.
-     *
-     * @var string
-     */
-    public $model;
-    /**
-     * Required. The designer of the SoC, eg. "Google" Value of build property
-     * "ro.soc.manufacturer"
-     * https://developer.android.com/reference/android/os/Build#SOC_MANUFACTURER
-     * Required.
-     *
-     * @param string $manufacturer
-     */
-    public function setManufacturer($manufacturer)
+namespace Google\Service\AndroidPublisher {
+    class SystemOnChip extends \Google\Model
     {
+        /**
+         * Required. The designer of the SoC, eg. "Google" Value of build property
+         * "ro.soc.manufacturer"
+         * https://developer.android.com/reference/android/os/Build#SOC_MANUFACTURER
+         * Required.
+         *
+         * @var string
+         */
+        public $manufacturer;
+        /**
+         * Required. The model of the SoC, eg. "Tensor" Value of build property
+         * "ro.soc.model"
+         * https://developer.android.com/reference/android/os/Build#SOC_MODEL
+         * Required.
+         *
+         * @var string
+         */
+        public $model;
+        /**
+         * Required. The designer of the SoC, eg. "Google" Value of build property
+         * "ro.soc.manufacturer"
+         * https://developer.android.com/reference/android/os/Build#SOC_MANUFACTURER
+         * Required.
+         *
+         * @param string $manufacturer
+         */
+        public function setManufacturer($manufacturer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getManufacturer()
+        {
+        }
+        /**
+         * Required. The model of the SoC, eg. "Tensor" Value of build property
+         * "ro.soc.model"
+         * https://developer.android.com/reference/android/os/Build#SOC_MODEL
+         * Required.
+         *
+         * @param string $model
+         */
+        public function setModel($model)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\SystemOnChip registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getManufacturer()
-    {
-    }
-    /**
-     * Required. The model of the SoC, eg. "Tensor" Value of build property
-     * "ro.soc.model"
-     * https://developer.android.com/reference/android/os/Build#SOC_MODEL
-     * Required.
-     *
-     * @param string $model
-     */
-    public function setModel($model)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getModel()
+    class Google_Service_AndroidPublisher_SystemOnChip extends \Google\Service\AndroidPublisher\SystemOnChip
     {
     }
 }

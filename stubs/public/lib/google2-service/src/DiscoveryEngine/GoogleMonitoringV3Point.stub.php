@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleMonitoringV3Point extends \Google\Model
-{
-    protected $intervalType = GoogleMonitoringV3TimeInterval::class;
-    protected $intervalDataType = '';
-    protected $valueType = GoogleMonitoringV3TypedValue::class;
-    protected $valueDataType = '';
-    /**
-     * The time interval to which the data point applies. For `GAUGE` metrics, the
-     * start time is optional, but if it is supplied, it must equal the end time.
-     * For `DELTA` metrics, the start and end time should specify a non-zero
-     * interval, with subsequent points specifying contiguous and non-overlapping
-     * intervals. For `CUMULATIVE` metrics, the start and end time should specify
-     * a non-zero interval, with subsequent points specifying the same start time
-     * and increasing end times, until an event resets the cumulative value to
-     * zero and sets a new start time for the following points.
-     *
-     * @param GoogleMonitoringV3TimeInterval $interval
-     */
-    public function setInterval(GoogleMonitoringV3TimeInterval $interval)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleMonitoringV3Point extends \Google\Model
     {
+        protected $intervalType = GoogleMonitoringV3TimeInterval::class;
+        protected $intervalDataType = '';
+        protected $valueType = GoogleMonitoringV3TypedValue::class;
+        protected $valueDataType = '';
+        /**
+         * The time interval to which the data point applies. For `GAUGE` metrics, the
+         * start time is optional, but if it is supplied, it must equal the end time.
+         * For `DELTA` metrics, the start and end time should specify a non-zero
+         * interval, with subsequent points specifying contiguous and non-overlapping
+         * intervals. For `CUMULATIVE` metrics, the start and end time should specify
+         * a non-zero interval, with subsequent points specifying the same start time
+         * and increasing end times, until an event resets the cumulative value to
+         * zero and sets a new start time for the following points.
+         *
+         * @param GoogleMonitoringV3TimeInterval $interval
+         */
+        public function setInterval(GoogleMonitoringV3TimeInterval $interval)
+        {
+        }
+        /**
+         * @return GoogleMonitoringV3TimeInterval
+         */
+        public function getInterval()
+        {
+        }
+        /**
+         * The value of the data point.
+         *
+         * @param GoogleMonitoringV3TypedValue $value
+         */
+        public function setValue(GoogleMonitoringV3TypedValue $value)
+        {
+        }
+        /**
+         * @return GoogleMonitoringV3TypedValue
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleMonitoringV3TimeInterval
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleMonitoringV3Point registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInterval()
-    {
-    }
-    /**
-     * The value of the data point.
-     *
-     * @param GoogleMonitoringV3TypedValue $value
-     */
-    public function setValue(GoogleMonitoringV3TypedValue $value)
-    {
-    }
-    /**
-     * @return GoogleMonitoringV3TypedValue
-     */
-    public function getValue()
+    class Google_Service_DiscoveryEngine_GoogleMonitoringV3Point extends \Google\Service\DiscoveryEngine\GoogleMonitoringV3Point
     {
     }
 }

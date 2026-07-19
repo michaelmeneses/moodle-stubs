@@ -21,135 +21,144 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CivicInfo;
-
-class Candidate extends \Google\Collection
-{
-    protected $collection_key = 'channels';
-    /**
-     * @var string
-     */
-    public $candidateUrl;
-    protected $channelsType = Channel::class;
-    protected $channelsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $email;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $orderOnBallot;
-    /**
-     * @var string
-     */
-    public $party;
-    /**
-     * @var string
-     */
-    public $phone;
-    /**
-     * @var string
-     */
-    public $photoUrl;
-    /**
-     * @param string
-     */
-    public function setCandidateUrl($candidateUrl)
+namespace Google\Service\CivicInfo {
+    class Candidate extends \Google\Collection
     {
+        protected $collection_key = 'channels';
+        /**
+         * @var string
+         */
+        public $candidateUrl;
+        protected $channelsType = Channel::class;
+        protected $channelsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $email;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $orderOnBallot;
+        /**
+         * @var string
+         */
+        public $party;
+        /**
+         * @var string
+         */
+        public $phone;
+        /**
+         * @var string
+         */
+        public $photoUrl;
+        /**
+         * @param string
+         */
+        public function setCandidateUrl($candidateUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCandidateUrl()
+        {
+        }
+        /**
+         * @param Channel[]
+         */
+        public function setChannels($channels)
+        {
+        }
+        /**
+         * @return Channel[]
+         */
+        public function getChannels()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setOrderOnBallot($orderOnBallot)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrderOnBallot()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setParty($party)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParty()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPhone($phone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhone()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPhotoUrl($photoUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhotoUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CivicInfo\Candidate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCandidateUrl()
-    {
-    }
-    /**
-     * @param Channel[]
-     */
-    public function setChannels($channels)
-    {
-    }
-    /**
-     * @return Channel[]
-     */
-    public function getChannels()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEmail($email)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEmail()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setOrderOnBallot($orderOnBallot)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrderOnBallot()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setParty($party)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParty()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPhone($phone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhone()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPhotoUrl($photoUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhotoUrl()
+    class Google_Service_CivicInfo_Candidate extends \Google\Service\CivicInfo\Candidate
     {
     }
 }

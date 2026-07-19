@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ServiceConsumerManagement;
-
-class UndeleteTenantProjectRequest extends \Google\Model
-{
-    /**
-     * Required. Tag of the resource within the tenancy unit.
-     *
-     * @var string
-     */
-    public $tag;
-    /**
-     * Required. Tag of the resource within the tenancy unit.
-     *
-     * @param string $tag
-     */
-    public function setTag($tag)
+namespace Google\Service\ServiceConsumerManagement {
+    class UndeleteTenantProjectRequest extends \Google\Model
     {
+        /**
+         * Required. Tag of the resource within the tenancy unit.
+         *
+         * @var string
+         */
+        public $tag;
+        /**
+         * Required. Tag of the resource within the tenancy unit.
+         *
+         * @param string $tag
+         */
+        public function setTag($tag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTag()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ServiceConsumerManagement\UndeleteTenantProjectRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTag()
+    class Google_Service_ServiceConsumerManagement_UndeleteTenantProjectRequest extends \Google\Service\ServiceConsumerManagement\UndeleteTenantProjectRequest
     {
     }
 }

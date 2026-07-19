@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1ListNasJobsResponse extends \Google\Collection
-{
-    protected $collection_key = 'nasJobs';
-    protected $nasJobsType = GoogleCloudAiplatformV1NasJob::class;
-    protected $nasJobsDataType = 'array';
-    /**
-     * A token to retrieve the next page of results. Pass to
-     * ListNasJobsRequest.page_token to obtain that page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of NasJobs in the requested page. NasJob.nas_job_output of the jobs
-     * will not be returned.
-     *
-     * @param GoogleCloudAiplatformV1NasJob[] $nasJobs
-     */
-    public function setNasJobs($nasJobs)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1ListNasJobsResponse extends \Google\Collection
     {
+        protected $collection_key = 'nasJobs';
+        protected $nasJobsType = GoogleCloudAiplatformV1NasJob::class;
+        protected $nasJobsDataType = 'array';
+        /**
+         * A token to retrieve the next page of results. Pass to
+         * ListNasJobsRequest.page_token to obtain that page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of NasJobs in the requested page. NasJob.nas_job_output of the jobs
+         * will not be returned.
+         *
+         * @param GoogleCloudAiplatformV1NasJob[] $nasJobs
+         */
+        public function setNasJobs($nasJobs)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1NasJob[]
+         */
+        public function getNasJobs()
+        {
+        }
+        /**
+         * A token to retrieve the next page of results. Pass to
+         * ListNasJobsRequest.page_token to obtain that page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1NasJob[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListNasJobsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNasJobs()
-    {
-    }
-    /**
-     * A token to retrieve the next page of results. Pass to
-     * ListNasJobsRequest.page_token to obtain that page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1ListNasJobsResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1ListNasJobsResponse
     {
     }
 }

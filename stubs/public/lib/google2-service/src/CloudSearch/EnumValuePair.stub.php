@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class EnumValuePair extends \Google\Model
-{
-    /**
-     * The integer value of the EnumValuePair which must be non-negative.
-     * Optional.
-     *
-     * @var int
-     */
-    public $integerValue;
-    /**
-     * The string value of the EnumValuePair. The maximum length is 32 characters.
-     *
-     * @var string
-     */
-    public $stringValue;
-    /**
-     * The integer value of the EnumValuePair which must be non-negative.
-     * Optional.
-     *
-     * @param int $integerValue
-     */
-    public function setIntegerValue($integerValue)
+namespace Google\Service\CloudSearch {
+    class EnumValuePair extends \Google\Model
     {
+        /**
+         * The integer value of the EnumValuePair which must be non-negative.
+         * Optional.
+         *
+         * @var int
+         */
+        public $integerValue;
+        /**
+         * The string value of the EnumValuePair. The maximum length is 32 characters.
+         *
+         * @var string
+         */
+        public $stringValue;
+        /**
+         * The integer value of the EnumValuePair which must be non-negative.
+         * Optional.
+         *
+         * @param int $integerValue
+         */
+        public function setIntegerValue($integerValue)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getIntegerValue()
+        {
+        }
+        /**
+         * The string value of the EnumValuePair. The maximum length is 32 characters.
+         *
+         * @param string $stringValue
+         */
+        public function setStringValue($stringValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStringValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudSearch\EnumValuePair registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIntegerValue()
-    {
-    }
-    /**
-     * The string value of the EnumValuePair. The maximum length is 32 characters.
-     *
-     * @param string $stringValue
-     */
-    public function setStringValue($stringValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStringValue()
+    class Google_Service_CloudSearch_EnumValuePair extends \Google\Service\CloudSearch\EnumValuePair
     {
     }
 }

@@ -21,29 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Logging\Resource;
-
-/**
- * The "views" collection of methods.
- * Typical usage is:
- *  <code>
- *   $loggingService = new Google\Service\Logging(...);
- *   $views = $loggingService->views;
- *  </code>
- */
-class BillingAccountsBucketsViews extends \Google\Service\Resource
-{
+namespace Google\Service\Logging\Resource {
+    use Google\Service\Logging\LogView;
     /**
-     * Gets a view on a log bucket.. (views.get)
-     *
-     * @param string $name Required. The resource name of the policy: "projects/[PRO
-     * JECT_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]/views/[VIEW_ID]" For
-     * example:"projects/my-project/locations/global/buckets/my-bucket/views/my-
-     * view"
-     * @param array $optParams Optional parameters.
-     * @return LogView
+     * The "views" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $loggingService = new Google\Service\Logging(...);
+     *   $views = $loggingService->views;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class BillingAccountsBucketsViews extends \Google\Service\Resource
+    {
+        /**
+         * Gets a view on a log bucket.. (views.get)
+         *
+         * @param string $name Required. The resource name of the policy: "projects/[PRO
+         * JECT_ID]/locations/[LOCATION_ID]/buckets/[BUCKET_ID]/views/[VIEW_ID]" For
+         * example:"projects/my-project/locations/global/buckets/my-bucket/views/my-
+         * view"
+         * @param array $optParams Optional parameters.
+         * @return LogView
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Logging\Resource\BillingAccountsBucketsViews registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Logging_Resource_BillingAccountsBucketsViews extends \Google\Service\Logging\Resource\BillingAccountsBucketsViews
     {
     }
 }

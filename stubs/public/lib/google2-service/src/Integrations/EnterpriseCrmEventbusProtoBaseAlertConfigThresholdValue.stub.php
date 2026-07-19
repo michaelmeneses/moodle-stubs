@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoBaseAlertConfigThresholdValue extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $absolute;
-    /**
-     * @var int
-     */
-    public $percentage;
-    /**
-     * @param string $absolute
-     */
-    public function setAbsolute($absolute)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoBaseAlertConfigThresholdValue extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $absolute;
+        /**
+         * @var int
+         */
+        public $percentage;
+        /**
+         * @param string $absolute
+         */
+        public function setAbsolute($absolute)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAbsolute()
+        {
+        }
+        /**
+         * @param int $percentage
+         */
+        public function setPercentage($percentage)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPercentage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoBaseAlertConfigThresholdValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAbsolute()
-    {
-    }
-    /**
-     * @param int $percentage
-     */
-    public function setPercentage($percentage)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPercentage()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoBaseAlertConfigThresholdValue extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoBaseAlertConfigThresholdValue
     {
     }
 }

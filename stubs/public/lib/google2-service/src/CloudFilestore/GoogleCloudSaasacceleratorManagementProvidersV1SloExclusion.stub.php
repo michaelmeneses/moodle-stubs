@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudFilestore;
-
-class GoogleCloudSaasacceleratorManagementProvidersV1SloExclusion extends \Google\Model
-{
-    public $duration;
-    public $reason;
-    public $sliName;
-    public $startTime;
-    public function setDuration($duration)
+namespace Google\Service\CloudFilestore {
+    class GoogleCloudSaasacceleratorManagementProvidersV1SloExclusion extends \Google\Model
     {
+        public $duration;
+        public $reason;
+        public $sliName;
+        public $startTime;
+        public function setDuration($duration)
+        {
+        }
+        public function getDuration()
+        {
+        }
+        public function setReason($reason)
+        {
+        }
+        public function getReason()
+        {
+        }
+        public function setSliName($sliName)
+        {
+        }
+        public function getSliName()
+        {
+        }
+        public function setStartTime($startTime)
+        {
+        }
+        public function getStartTime()
+        {
+        }
     }
-    public function getDuration()
-    {
-    }
-    public function setReason($reason)
-    {
-    }
-    public function getReason()
-    {
-    }
-    public function setSliName($sliName)
-    {
-    }
-    public function getSliName()
-    {
-    }
-    public function setStartTime($startTime)
-    {
-    }
-    public function getStartTime()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudFilestore\GoogleCloudSaasacceleratorManagementProvidersV1SloExclusion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudFilestore_GoogleCloudSaasacceleratorManagementProvidersV1SloExclusion extends \Google\Service\CloudFilestore\GoogleCloudSaasacceleratorManagementProvidersV1SloExclusion
     {
     }
 }

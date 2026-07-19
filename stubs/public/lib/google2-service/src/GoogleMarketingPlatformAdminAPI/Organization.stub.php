@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GoogleMarketingPlatformAdminAPI;
-
-class Organization extends \Google\Model
-{
-    /**
-     * The human-readable name for the organization.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Identifier. The resource name of the GMP organization. Format:
-     * organizations/{org_id}
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The human-readable name for the organization.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\GoogleMarketingPlatformAdminAPI {
+    class Organization extends \Google\Model
     {
+        /**
+         * The human-readable name for the organization.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Identifier. The resource name of the GMP organization. Format:
+         * organizations/{org_id}
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The human-readable name for the organization.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Identifier. The resource name of the GMP organization. Format:
+         * organizations/{org_id}
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GoogleMarketingPlatformAdminAPI\Organization registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Identifier. The resource name of the GMP organization. Format:
-     * organizations/{org_id}
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_GoogleMarketingPlatformAdminAPI_Organization extends \Google\Service\GoogleMarketingPlatformAdminAPI\Organization
     {
     }
 }

@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class ListNoteOccurrencesResponse extends \Google\Collection
-{
-    protected $collection_key = 'occurrences';
-    /**
-     * Token to provide to skip to a particular spot in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $occurrencesType = Occurrence::class;
-    protected $occurrencesDataType = 'array';
-    /**
-     * Token to provide to skip to a particular spot in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\ContainerAnalysis {
+    class ListNoteOccurrencesResponse extends \Google\Collection
     {
+        protected $collection_key = 'occurrences';
+        /**
+         * Token to provide to skip to a particular spot in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $occurrencesType = Occurrence::class;
+        protected $occurrencesDataType = 'array';
+        /**
+         * Token to provide to skip to a particular spot in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The occurrences attached to the specified note.
+         *
+         * @param Occurrence[] $occurrences
+         */
+        public function setOccurrences($occurrences)
+        {
+        }
+        /**
+         * @return Occurrence[]
+         */
+        public function getOccurrences()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ContainerAnalysis\ListNoteOccurrencesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The occurrences attached to the specified note.
-     *
-     * @param Occurrence[] $occurrences
-     */
-    public function setOccurrences($occurrences)
-    {
-    }
-    /**
-     * @return Occurrence[]
-     */
-    public function getOccurrences()
+    class Google_Service_ContainerAnalysis_ListNoteOccurrencesResponse extends \Google\Service\ContainerAnalysis\ListNoteOccurrencesResponse
     {
     }
 }

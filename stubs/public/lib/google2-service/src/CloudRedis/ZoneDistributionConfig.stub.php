@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class ZoneDistributionConfig extends \Google\Model
-{
-    /**
-     * Not Set. Default: MULTI_ZONE
-     */
-    public const MODE_ZONE_DISTRIBUTION_MODE_UNSPECIFIED = 'ZONE_DISTRIBUTION_MODE_UNSPECIFIED';
-    /**
-     * Distribute all resources across 3 zones picked at random, within the
-     * region.
-     */
-    public const MODE_MULTI_ZONE = 'MULTI_ZONE';
-    /**
-     * Distribute all resources in a single zone. The zone field must be
-     * specified, when this mode is selected.
-     */
-    public const MODE_SINGLE_ZONE = 'SINGLE_ZONE';
-    /**
-     * Optional. The mode of zone distribution. Defaults to MULTI_ZONE, when not
-     * specified.
-     *
-     * @var string
-     */
-    public $mode;
-    /**
-     * Optional. When SINGLE ZONE distribution is selected, zone field would be
-     * used to allocate all resources in that zone. This is not applicable to
-     * MULTI_ZONE, and would be ignored for MULTI_ZONE clusters.
-     *
-     * @var string
-     */
-    public $zone;
-    /**
-     * Optional. The mode of zone distribution. Defaults to MULTI_ZONE, when not
-     * specified.
-     *
-     * Accepted values: ZONE_DISTRIBUTION_MODE_UNSPECIFIED, MULTI_ZONE,
-     * SINGLE_ZONE
-     *
-     * @param self::MODE_* $mode
-     */
-    public function setMode($mode)
+namespace Google\Service\CloudRedis {
+    class ZoneDistributionConfig extends \Google\Model
     {
+        /**
+         * Not Set. Default: MULTI_ZONE
+         */
+        public const MODE_ZONE_DISTRIBUTION_MODE_UNSPECIFIED = 'ZONE_DISTRIBUTION_MODE_UNSPECIFIED';
+        /**
+         * Distribute all resources across 3 zones picked at random, within the
+         * region.
+         */
+        public const MODE_MULTI_ZONE = 'MULTI_ZONE';
+        /**
+         * Distribute all resources in a single zone. The zone field must be
+         * specified, when this mode is selected.
+         */
+        public const MODE_SINGLE_ZONE = 'SINGLE_ZONE';
+        /**
+         * Optional. The mode of zone distribution. Defaults to MULTI_ZONE, when not
+         * specified.
+         *
+         * @var string
+         */
+        public $mode;
+        /**
+         * Optional. When SINGLE ZONE distribution is selected, zone field would be
+         * used to allocate all resources in that zone. This is not applicable to
+         * MULTI_ZONE, and would be ignored for MULTI_ZONE clusters.
+         *
+         * @var string
+         */
+        public $zone;
+        /**
+         * Optional. The mode of zone distribution. Defaults to MULTI_ZONE, when not
+         * specified.
+         *
+         * Accepted values: ZONE_DISTRIBUTION_MODE_UNSPECIFIED, MULTI_ZONE,
+         * SINGLE_ZONE
+         *
+         * @param self::MODE_* $mode
+         */
+        public function setMode($mode)
+        {
+        }
+        /**
+         * @return self::MODE_*
+         */
+        public function getMode()
+        {
+        }
+        /**
+         * Optional. When SINGLE ZONE distribution is selected, zone field would be
+         * used to allocate all resources in that zone. This is not applicable to
+         * MULTI_ZONE, and would be ignored for MULTI_ZONE clusters.
+         *
+         * @param string $zone
+         */
+        public function setZone($zone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::MODE_*
+     * Runtime class alias of \Google\Service\CloudRedis\ZoneDistributionConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMode()
-    {
-    }
-    /**
-     * Optional. When SINGLE ZONE distribution is selected, zone field would be
-     * used to allocate all resources in that zone. This is not applicable to
-     * MULTI_ZONE, and would be ignored for MULTI_ZONE clusters.
-     *
-     * @param string $zone
-     */
-    public function setZone($zone)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getZone()
+    class Google_Service_CloudRedis_ZoneDistributionConfig extends \Google\Service\CloudRedis\ZoneDistributionConfig
     {
     }
 }

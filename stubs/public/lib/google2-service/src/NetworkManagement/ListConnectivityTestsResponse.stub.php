@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkManagement;
-
-class ListConnectivityTestsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    /**
-     * Page token to fetch the next set of Connectivity Tests.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $resourcesType = ConnectivityTest::class;
-    protected $resourcesDataType = 'array';
-    /**
-     * Locations that could not be reached (when querying all locations with `-`).
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * Page token to fetch the next set of Connectivity Tests.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\NetworkManagement {
+    class ListConnectivityTestsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        /**
+         * Page token to fetch the next set of Connectivity Tests.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $resourcesType = ConnectivityTest::class;
+        protected $resourcesDataType = 'array';
+        /**
+         * Locations that could not be reached (when querying all locations with `-`).
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * Page token to fetch the next set of Connectivity Tests.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * List of Connectivity Tests.
+         *
+         * @param ConnectivityTest[] $resources
+         */
+        public function setResources($resources)
+        {
+        }
+        /**
+         * @return ConnectivityTest[]
+         */
+        public function getResources()
+        {
+        }
+        /**
+         * Locations that could not be reached (when querying all locations with `-`).
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkManagement\ListConnectivityTestsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * List of Connectivity Tests.
-     *
-     * @param ConnectivityTest[] $resources
-     */
-    public function setResources($resources)
-    {
-    }
-    /**
-     * @return ConnectivityTest[]
-     */
-    public function getResources()
-    {
-    }
-    /**
-     * Locations that could not be reached (when querying all locations with `-`).
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_NetworkManagement_ListConnectivityTestsResponse extends \Google\Service\NetworkManagement\ListConnectivityTestsResponse
     {
     }
 }

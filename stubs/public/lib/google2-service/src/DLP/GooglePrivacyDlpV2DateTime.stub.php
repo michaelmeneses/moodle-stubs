@@ -21,112 +21,121 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2DateTime extends \Google\Model
-{
-    /**
-     * The day of the week is unspecified.
-     */
-    public const DAY_OF_WEEK_DAY_OF_WEEK_UNSPECIFIED = 'DAY_OF_WEEK_UNSPECIFIED';
-    /**
-     * Monday
-     */
-    public const DAY_OF_WEEK_MONDAY = 'MONDAY';
-    /**
-     * Tuesday
-     */
-    public const DAY_OF_WEEK_TUESDAY = 'TUESDAY';
-    /**
-     * Wednesday
-     */
-    public const DAY_OF_WEEK_WEDNESDAY = 'WEDNESDAY';
-    /**
-     * Thursday
-     */
-    public const DAY_OF_WEEK_THURSDAY = 'THURSDAY';
-    /**
-     * Friday
-     */
-    public const DAY_OF_WEEK_FRIDAY = 'FRIDAY';
-    /**
-     * Saturday
-     */
-    public const DAY_OF_WEEK_SATURDAY = 'SATURDAY';
-    /**
-     * Sunday
-     */
-    public const DAY_OF_WEEK_SUNDAY = 'SUNDAY';
-    protected $dateType = GoogleTypeDate::class;
-    protected $dateDataType = '';
-    /**
-     * Day of week
-     *
-     * @var string
-     */
-    public $dayOfWeek;
-    protected $timeType = GoogleTypeTimeOfDay::class;
-    protected $timeDataType = '';
-    protected $timeZoneType = GooglePrivacyDlpV2TimeZone::class;
-    protected $timeZoneDataType = '';
-    /**
-     * One or more of the following must be set. Must be a valid date or time
-     * value.
-     *
-     * @param GoogleTypeDate $date
-     */
-    public function setDate(GoogleTypeDate $date)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2DateTime extends \Google\Model
     {
+        /**
+         * The day of the week is unspecified.
+         */
+        public const DAY_OF_WEEK_DAY_OF_WEEK_UNSPECIFIED = 'DAY_OF_WEEK_UNSPECIFIED';
+        /**
+         * Monday
+         */
+        public const DAY_OF_WEEK_MONDAY = 'MONDAY';
+        /**
+         * Tuesday
+         */
+        public const DAY_OF_WEEK_TUESDAY = 'TUESDAY';
+        /**
+         * Wednesday
+         */
+        public const DAY_OF_WEEK_WEDNESDAY = 'WEDNESDAY';
+        /**
+         * Thursday
+         */
+        public const DAY_OF_WEEK_THURSDAY = 'THURSDAY';
+        /**
+         * Friday
+         */
+        public const DAY_OF_WEEK_FRIDAY = 'FRIDAY';
+        /**
+         * Saturday
+         */
+        public const DAY_OF_WEEK_SATURDAY = 'SATURDAY';
+        /**
+         * Sunday
+         */
+        public const DAY_OF_WEEK_SUNDAY = 'SUNDAY';
+        protected $dateType = GoogleTypeDate::class;
+        protected $dateDataType = '';
+        /**
+         * Day of week
+         *
+         * @var string
+         */
+        public $dayOfWeek;
+        protected $timeType = GoogleTypeTimeOfDay::class;
+        protected $timeDataType = '';
+        protected $timeZoneType = GooglePrivacyDlpV2TimeZone::class;
+        protected $timeZoneDataType = '';
+        /**
+         * One or more of the following must be set. Must be a valid date or time
+         * value.
+         *
+         * @param GoogleTypeDate $date
+         */
+        public function setDate(GoogleTypeDate $date)
+        {
+        }
+        /**
+         * @return GoogleTypeDate
+         */
+        public function getDate()
+        {
+        }
+        /**
+         * Day of week
+         *
+         * Accepted values: DAY_OF_WEEK_UNSPECIFIED, MONDAY, TUESDAY, WEDNESDAY,
+         * THURSDAY, FRIDAY, SATURDAY, SUNDAY
+         *
+         * @param self::DAY_OF_WEEK_* $dayOfWeek
+         */
+        public function setDayOfWeek($dayOfWeek)
+        {
+        }
+        /**
+         * @return self::DAY_OF_WEEK_*
+         */
+        public function getDayOfWeek()
+        {
+        }
+        /**
+         * Time of day
+         *
+         * @param GoogleTypeTimeOfDay $time
+         */
+        public function setTime(GoogleTypeTimeOfDay $time)
+        {
+        }
+        /**
+         * @return GoogleTypeTimeOfDay
+         */
+        public function getTime()
+        {
+        }
+        /**
+         * Time zone
+         *
+         * @param GooglePrivacyDlpV2TimeZone $timeZone
+         */
+        public function setTimeZone(GooglePrivacyDlpV2TimeZone $timeZone)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2TimeZone
+         */
+        public function getTimeZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleTypeDate
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2DateTime registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDate()
-    {
-    }
-    /**
-     * Day of week
-     *
-     * Accepted values: DAY_OF_WEEK_UNSPECIFIED, MONDAY, TUESDAY, WEDNESDAY,
-     * THURSDAY, FRIDAY, SATURDAY, SUNDAY
-     *
-     * @param self::DAY_OF_WEEK_* $dayOfWeek
-     */
-    public function setDayOfWeek($dayOfWeek)
-    {
-    }
-    /**
-     * @return self::DAY_OF_WEEK_*
-     */
-    public function getDayOfWeek()
-    {
-    }
-    /**
-     * Time of day
-     *
-     * @param GoogleTypeTimeOfDay $time
-     */
-    public function setTime(GoogleTypeTimeOfDay $time)
-    {
-    }
-    /**
-     * @return GoogleTypeTimeOfDay
-     */
-    public function getTime()
-    {
-    }
-    /**
-     * Time zone
-     *
-     * @param GooglePrivacyDlpV2TimeZone $timeZone
-     */
-    public function setTimeZone(GooglePrivacyDlpV2TimeZone $timeZone)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2TimeZone
-     */
-    public function getTimeZone()
+    class Google_Service_DLP_GooglePrivacyDlpV2DateTime extends \Google\Service\DLP\GooglePrivacyDlpV2DateTime
     {
     }
 }

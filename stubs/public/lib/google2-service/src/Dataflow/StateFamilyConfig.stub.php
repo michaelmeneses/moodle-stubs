@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class StateFamilyConfig extends \Google\Model
-{
-    /**
-     * If true, this family corresponds to a read operation.
-     *
-     * @var bool
-     */
-    public $isRead;
-    /**
-     * The state family value.
-     *
-     * @var string
-     */
-    public $stateFamily;
-    /**
-     * If true, this family corresponds to a read operation.
-     *
-     * @param bool $isRead
-     */
-    public function setIsRead($isRead)
+namespace Google\Service\Dataflow {
+    class StateFamilyConfig extends \Google\Model
     {
+        /**
+         * If true, this family corresponds to a read operation.
+         *
+         * @var bool
+         */
+        public $isRead;
+        /**
+         * The state family value.
+         *
+         * @var string
+         */
+        public $stateFamily;
+        /**
+         * If true, this family corresponds to a read operation.
+         *
+         * @param bool $isRead
+         */
+        public function setIsRead($isRead)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsRead()
+        {
+        }
+        /**
+         * The state family value.
+         *
+         * @param string $stateFamily
+         */
+        public function setStateFamily($stateFamily)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStateFamily()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Dataflow\StateFamilyConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIsRead()
-    {
-    }
-    /**
-     * The state family value.
-     *
-     * @param string $stateFamily
-     */
-    public function setStateFamily($stateFamily)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStateFamily()
+    class Google_Service_Dataflow_StateFamilyConfig extends \Google\Service\Dataflow\StateFamilyConfig
     {
     }
 }

@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIManagement;
-
-class ListApiObservationTagsResponse extends \Google\Collection
-{
-    protected $collection_key = 'apiObservationTags';
-    /**
-     * The tags from the specified project
-     *
-     * @var string[]
-     */
-    public $apiObservationTags;
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The tags from the specified project
-     *
-     * @param string[] $apiObservationTags
-     */
-    public function setApiObservationTags($apiObservationTags)
+namespace Google\Service\APIManagement {
+    class ListApiObservationTagsResponse extends \Google\Collection
     {
+        protected $collection_key = 'apiObservationTags';
+        /**
+         * The tags from the specified project
+         *
+         * @var string[]
+         */
+        public $apiObservationTags;
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The tags from the specified project
+         *
+         * @param string[] $apiObservationTags
+         */
+        public function setApiObservationTags($apiObservationTags)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getApiObservationTags()
+        {
+        }
+        /**
+         * A token, which can be sent as `page_token` to retrieve the next page. If
+         * this field is omitted, there are no subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\APIManagement\ListApiObservationTagsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiObservationTags()
-    {
-    }
-    /**
-     * A token, which can be sent as `page_token` to retrieve the next page. If
-     * this field is omitted, there are no subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_APIManagement_ListApiObservationTagsResponse extends \Google\Service\APIManagement\ListApiObservationTagsResponse
     {
     }
 }

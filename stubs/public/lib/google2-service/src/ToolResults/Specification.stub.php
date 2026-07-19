@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class Specification extends \Google\Model
-{
-    protected $androidTestType = AndroidTest::class;
-    protected $androidTestDataType = '';
-    protected $iosTestType = IosTest::class;
-    protected $iosTestDataType = '';
-    /**
-     * An Android mobile test execution specification.
-     *
-     * @param AndroidTest $androidTest
-     */
-    public function setAndroidTest(AndroidTest $androidTest)
+namespace Google\Service\ToolResults {
+    class Specification extends \Google\Model
     {
+        protected $androidTestType = AndroidTest::class;
+        protected $androidTestDataType = '';
+        protected $iosTestType = IosTest::class;
+        protected $iosTestDataType = '';
+        /**
+         * An Android mobile test execution specification.
+         *
+         * @param AndroidTest $androidTest
+         */
+        public function setAndroidTest(AndroidTest $androidTest)
+        {
+        }
+        /**
+         * @return AndroidTest
+         */
+        public function getAndroidTest()
+        {
+        }
+        /**
+         * An iOS mobile test execution specification.
+         *
+         * @param IosTest $iosTest
+         */
+        public function setIosTest(IosTest $iosTest)
+        {
+        }
+        /**
+         * @return IosTest
+         */
+        public function getIosTest()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AndroidTest
+     * Runtime class alias of \Google\Service\ToolResults\Specification registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAndroidTest()
-    {
-    }
-    /**
-     * An iOS mobile test execution specification.
-     *
-     * @param IosTest $iosTest
-     */
-    public function setIosTest(IosTest $iosTest)
-    {
-    }
-    /**
-     * @return IosTest
-     */
-    public function getIosTest()
+    class Google_Service_ToolResults_Specification extends \Google\Service\ToolResults\Specification
     {
     }
 }

@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataprocMetastore;
-
-class LimitConfig extends \Google\Model
-{
-    /**
-     * @var float
-     */
-    public $maxScalingFactor;
-    /**
-     * @var float
-     */
-    public $minScalingFactor;
-    /**
-     * @param float
-     */
-    public function setMaxScalingFactor($maxScalingFactor)
+namespace Google\Service\DataprocMetastore {
+    class LimitConfig extends \Google\Model
     {
+        /**
+         * @var float
+         */
+        public $maxScalingFactor;
+        /**
+         * @var float
+         */
+        public $minScalingFactor;
+        /**
+         * @param float
+         */
+        public function setMaxScalingFactor($maxScalingFactor)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getMaxScalingFactor()
+        {
+        }
+        /**
+         * @param float
+         */
+        public function setMinScalingFactor($minScalingFactor)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getMinScalingFactor()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\DataprocMetastore\LimitConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMaxScalingFactor()
-    {
-    }
-    /**
-     * @param float
-     */
-    public function setMinScalingFactor($minScalingFactor)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getMinScalingFactor()
+    class Google_Service_DataprocMetastore_LimitConfig extends \Google\Service\DataprocMetastore\LimitConfig
     {
     }
 }

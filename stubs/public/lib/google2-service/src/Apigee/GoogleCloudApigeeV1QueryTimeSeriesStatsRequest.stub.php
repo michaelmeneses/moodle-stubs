@@ -21,211 +21,220 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1QueryTimeSeriesStatsRequest extends \Google\Collection
-{
-    /**
-     * Unspecified order. Default is Descending.
-     */
-    public const TIMESTAMP_ORDER_ORDER_UNSPECIFIED = 'ORDER_UNSPECIFIED';
-    /**
-     * Ascending sort order.
-     */
-    public const TIMESTAMP_ORDER_ASCENDING = 'ASCENDING';
-    /**
-     * Descending sort order.
-     */
-    public const TIMESTAMP_ORDER_DESCENDING = 'DESCENDING';
-    /**
-     * Unspecified window size. Default is 1 hour.
-     */
-    public const WINDOW_SIZE_WINDOW_SIZE_UNSPECIFIED = 'WINDOW_SIZE_UNSPECIFIED';
-    /**
-     * 1 Minute window
-     */
-    public const WINDOW_SIZE_MINUTE = 'MINUTE';
-    /**
-     * 1 Hour window
-     */
-    public const WINDOW_SIZE_HOUR = 'HOUR';
-    /**
-     * 1 Day window
-     */
-    public const WINDOW_SIZE_DAY = 'DAY';
-    /**
-     * 1 Month window
-     */
-    public const WINDOW_SIZE_MONTH = 'MONTH';
-    protected $collection_key = 'metrics';
-    /**
-     * List of dimension names to group the aggregations by. If no dimensions are
-     * passed, a single trend line representing the requested metric aggregations
-     * grouped by environment is returned.
-     *
-     * @var string[]
-     */
-    public $dimensions;
-    /**
-     * Filter further on specific dimension values. Follows the same grammar as
-     * custom report's filter expressions. Example, apiproxy eq 'foobar'.
-     * https://cloud.google.com/apigee/docs/api-platform/analytics/analytics-
-     * reference#filters
-     *
-     * @var string
-     */
-    public $filter;
-    protected $metricsType = GoogleCloudApigeeV1MetricAggregation::class;
-    protected $metricsDataType = 'array';
-    /**
-     * Page size represents the number of time series sequences, one per unique
-     * set of dimensions and their values.
-     *
-     * @var int
-     */
-    public $pageSize;
-    /**
-     * Page token stands for a specific collection of time series sequences.
-     *
-     * @var string
-     */
-    public $pageToken;
-    protected $timeRangeType = GoogleTypeInterval::class;
-    protected $timeRangeDataType = '';
-    /**
-     * Order the sequences in increasing or decreasing order of timestamps.
-     * Default is descending order of timestamps (latest first).
-     *
-     * @var string
-     */
-    public $timestampOrder;
-    /**
-     * Time buckets to group the stats by.
-     *
-     * @var string
-     */
-    public $windowSize;
-    /**
-     * List of dimension names to group the aggregations by. If no dimensions are
-     * passed, a single trend line representing the requested metric aggregations
-     * grouped by environment is returned.
-     *
-     * @param string[] $dimensions
-     */
-    public function setDimensions($dimensions)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1QueryTimeSeriesStatsRequest extends \Google\Collection
     {
+        /**
+         * Unspecified order. Default is Descending.
+         */
+        public const TIMESTAMP_ORDER_ORDER_UNSPECIFIED = 'ORDER_UNSPECIFIED';
+        /**
+         * Ascending sort order.
+         */
+        public const TIMESTAMP_ORDER_ASCENDING = 'ASCENDING';
+        /**
+         * Descending sort order.
+         */
+        public const TIMESTAMP_ORDER_DESCENDING = 'DESCENDING';
+        /**
+         * Unspecified window size. Default is 1 hour.
+         */
+        public const WINDOW_SIZE_WINDOW_SIZE_UNSPECIFIED = 'WINDOW_SIZE_UNSPECIFIED';
+        /**
+         * 1 Minute window
+         */
+        public const WINDOW_SIZE_MINUTE = 'MINUTE';
+        /**
+         * 1 Hour window
+         */
+        public const WINDOW_SIZE_HOUR = 'HOUR';
+        /**
+         * 1 Day window
+         */
+        public const WINDOW_SIZE_DAY = 'DAY';
+        /**
+         * 1 Month window
+         */
+        public const WINDOW_SIZE_MONTH = 'MONTH';
+        protected $collection_key = 'metrics';
+        /**
+         * List of dimension names to group the aggregations by. If no dimensions are
+         * passed, a single trend line representing the requested metric aggregations
+         * grouped by environment is returned.
+         *
+         * @var string[]
+         */
+        public $dimensions;
+        /**
+         * Filter further on specific dimension values. Follows the same grammar as
+         * custom report's filter expressions. Example, apiproxy eq 'foobar'.
+         * https://cloud.google.com/apigee/docs/api-platform/analytics/analytics-
+         * reference#filters
+         *
+         * @var string
+         */
+        public $filter;
+        protected $metricsType = GoogleCloudApigeeV1MetricAggregation::class;
+        protected $metricsDataType = 'array';
+        /**
+         * Page size represents the number of time series sequences, one per unique
+         * set of dimensions and their values.
+         *
+         * @var int
+         */
+        public $pageSize;
+        /**
+         * Page token stands for a specific collection of time series sequences.
+         *
+         * @var string
+         */
+        public $pageToken;
+        protected $timeRangeType = GoogleTypeInterval::class;
+        protected $timeRangeDataType = '';
+        /**
+         * Order the sequences in increasing or decreasing order of timestamps.
+         * Default is descending order of timestamps (latest first).
+         *
+         * @var string
+         */
+        public $timestampOrder;
+        /**
+         * Time buckets to group the stats by.
+         *
+         * @var string
+         */
+        public $windowSize;
+        /**
+         * List of dimension names to group the aggregations by. If no dimensions are
+         * passed, a single trend line representing the requested metric aggregations
+         * grouped by environment is returned.
+         *
+         * @param string[] $dimensions
+         */
+        public function setDimensions($dimensions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDimensions()
+        {
+        }
+        /**
+         * Filter further on specific dimension values. Follows the same grammar as
+         * custom report's filter expressions. Example, apiproxy eq 'foobar'.
+         * https://cloud.google.com/apigee/docs/api-platform/analytics/analytics-
+         * reference#filters
+         *
+         * @param string $filter
+         */
+        public function setFilter($filter)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFilter()
+        {
+        }
+        /**
+         * Required. List of metrics and their aggregations.
+         *
+         * @param GoogleCloudApigeeV1MetricAggregation[] $metrics
+         */
+        public function setMetrics($metrics)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1MetricAggregation[]
+         */
+        public function getMetrics()
+        {
+        }
+        /**
+         * Page size represents the number of time series sequences, one per unique
+         * set of dimensions and their values.
+         *
+         * @param int $pageSize
+         */
+        public function setPageSize($pageSize)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getPageSize()
+        {
+        }
+        /**
+         * Page token stands for a specific collection of time series sequences.
+         *
+         * @param string $pageToken
+         */
+        public function setPageToken($pageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPageToken()
+        {
+        }
+        /**
+         * Required. Time range for the stats.
+         *
+         * @param GoogleTypeInterval $timeRange
+         */
+        public function setTimeRange(GoogleTypeInterval $timeRange)
+        {
+        }
+        /**
+         * @return GoogleTypeInterval
+         */
+        public function getTimeRange()
+        {
+        }
+        /**
+         * Order the sequences in increasing or decreasing order of timestamps.
+         * Default is descending order of timestamps (latest first).
+         *
+         * Accepted values: ORDER_UNSPECIFIED, ASCENDING, DESCENDING
+         *
+         * @param self::TIMESTAMP_ORDER_* $timestampOrder
+         */
+        public function setTimestampOrder($timestampOrder)
+        {
+        }
+        /**
+         * @return self::TIMESTAMP_ORDER_*
+         */
+        public function getTimestampOrder()
+        {
+        }
+        /**
+         * Time buckets to group the stats by.
+         *
+         * Accepted values: WINDOW_SIZE_UNSPECIFIED, MINUTE, HOUR, DAY, MONTH
+         *
+         * @param self::WINDOW_SIZE_* $windowSize
+         */
+        public function setWindowSize($windowSize)
+        {
+        }
+        /**
+         * @return self::WINDOW_SIZE_*
+         */
+        public function getWindowSize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1QueryTimeSeriesStatsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDimensions()
-    {
-    }
-    /**
-     * Filter further on specific dimension values. Follows the same grammar as
-     * custom report's filter expressions. Example, apiproxy eq 'foobar'.
-     * https://cloud.google.com/apigee/docs/api-platform/analytics/analytics-
-     * reference#filters
-     *
-     * @param string $filter
-     */
-    public function setFilter($filter)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFilter()
-    {
-    }
-    /**
-     * Required. List of metrics and their aggregations.
-     *
-     * @param GoogleCloudApigeeV1MetricAggregation[] $metrics
-     */
-    public function setMetrics($metrics)
-    {
-    }
-    /**
-     * @return GoogleCloudApigeeV1MetricAggregation[]
-     */
-    public function getMetrics()
-    {
-    }
-    /**
-     * Page size represents the number of time series sequences, one per unique
-     * set of dimensions and their values.
-     *
-     * @param int $pageSize
-     */
-    public function setPageSize($pageSize)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getPageSize()
-    {
-    }
-    /**
-     * Page token stands for a specific collection of time series sequences.
-     *
-     * @param string $pageToken
-     */
-    public function setPageToken($pageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPageToken()
-    {
-    }
-    /**
-     * Required. Time range for the stats.
-     *
-     * @param GoogleTypeInterval $timeRange
-     */
-    public function setTimeRange(GoogleTypeInterval $timeRange)
-    {
-    }
-    /**
-     * @return GoogleTypeInterval
-     */
-    public function getTimeRange()
-    {
-    }
-    /**
-     * Order the sequences in increasing or decreasing order of timestamps.
-     * Default is descending order of timestamps (latest first).
-     *
-     * Accepted values: ORDER_UNSPECIFIED, ASCENDING, DESCENDING
-     *
-     * @param self::TIMESTAMP_ORDER_* $timestampOrder
-     */
-    public function setTimestampOrder($timestampOrder)
-    {
-    }
-    /**
-     * @return self::TIMESTAMP_ORDER_*
-     */
-    public function getTimestampOrder()
-    {
-    }
-    /**
-     * Time buckets to group the stats by.
-     *
-     * Accepted values: WINDOW_SIZE_UNSPECIFIED, MINUTE, HOUR, DAY, MONTH
-     *
-     * @param self::WINDOW_SIZE_* $windowSize
-     */
-    public function setWindowSize($windowSize)
-    {
-    }
-    /**
-     * @return self::WINDOW_SIZE_*
-     */
-    public function getWindowSize()
+    class Google_Service_Apigee_GoogleCloudApigeeV1QueryTimeSeriesStatsRequest extends \Google\Service\Apigee\GoogleCloudApigeeV1QueryTimeSeriesStatsRequest
     {
     }
 }

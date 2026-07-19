@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class DataSourceRestriction extends \Google\Collection
-{
-    protected $collection_key = 'filterOptions';
-    protected $filterOptionsType = FilterOptions::class;
-    protected $filterOptionsDataType = 'array';
-    protected $sourceType = Source::class;
-    protected $sourceDataType = '';
-    /**
-     * Filter options restricting the results. If multiple filters are present,
-     * they are grouped by object type before joining. Filters with the same
-     * object type are joined conjunctively, then the resulting expressions are
-     * joined disjunctively. The maximum number of elements is 20. NOTE: Suggest
-     * API supports only few filters at the moment: "objecttype", "type" and
-     * "mimetype". For now, schema specific filters cannot be used to filter
-     * suggestions.
-     *
-     * @param FilterOptions[] $filterOptions
-     */
-    public function setFilterOptions($filterOptions)
+namespace Google\Service\CloudSearch {
+    class DataSourceRestriction extends \Google\Collection
     {
+        protected $collection_key = 'filterOptions';
+        protected $filterOptionsType = FilterOptions::class;
+        protected $filterOptionsDataType = 'array';
+        protected $sourceType = Source::class;
+        protected $sourceDataType = '';
+        /**
+         * Filter options restricting the results. If multiple filters are present,
+         * they are grouped by object type before joining. Filters with the same
+         * object type are joined conjunctively, then the resulting expressions are
+         * joined disjunctively. The maximum number of elements is 20. NOTE: Suggest
+         * API supports only few filters at the moment: "objecttype", "type" and
+         * "mimetype". For now, schema specific filters cannot be used to filter
+         * suggestions.
+         *
+         * @param FilterOptions[] $filterOptions
+         */
+        public function setFilterOptions($filterOptions)
+        {
+        }
+        /**
+         * @return FilterOptions[]
+         */
+        public function getFilterOptions()
+        {
+        }
+        /**
+         * The source of restriction.
+         *
+         * @param Source $source
+         */
+        public function setSource(Source $source)
+        {
+        }
+        /**
+         * @return Source
+         */
+        public function getSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FilterOptions[]
+     * Runtime class alias of \Google\Service\CloudSearch\DataSourceRestriction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFilterOptions()
-    {
-    }
-    /**
-     * The source of restriction.
-     *
-     * @param Source $source
-     */
-    public function setSource(Source $source)
-    {
-    }
-    /**
-     * @return Source
-     */
-    public function getSource()
+    class Google_Service_CloudSearch_DataSourceRestriction extends \Google\Service\CloudSearch\DataSourceRestriction
     {
     }
 }

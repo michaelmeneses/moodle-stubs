@@ -21,100 +21,109 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudResourceManager;
-
-class TagBinding extends \Google\Model
-{
-    /**
-     * Output only. The name of the TagBinding. This is a String of the form:
-     * `tagBindings/{full-resource-name}/{tag-value-name}` (e.g. `tagBindings/%2F%
-     * 2Fcloudresourcemanager.googleapis.com%2Fprojects%2F123/tagValues/456`).
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The full resource name of the resource the TagValue is bound to. E.g.
-     * `//cloudresourcemanager.googleapis.com/projects/123`
-     *
-     * @var string
-     */
-    public $parent;
-    /**
-     * The TagValue of the TagBinding. Must be of the form `tagValues/456`.
-     *
-     * @var string
-     */
-    public $tagValue;
-    /**
-     * The namespaced name for the TagValue of the TagBinding. Must be in the
-     * format `{parent_id}/{tag_key_short_name}/{short_name}`. For methods that
-     * support TagValue namespaced name, only one of tag_value_namespaced_name or
-     * tag_value may be filled. Requests with both fields will be rejected.
-     *
-     * @var string
-     */
-    public $tagValueNamespacedName;
-    /**
-     * Output only. The name of the TagBinding. This is a String of the form:
-     * `tagBindings/{full-resource-name}/{tag-value-name}` (e.g. `tagBindings/%2F%
-     * 2Fcloudresourcemanager.googleapis.com%2Fprojects%2F123/tagValues/456`).
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\CloudResourceManager {
+    class TagBinding extends \Google\Model
     {
+        /**
+         * Output only. The name of the TagBinding. This is a String of the form:
+         * `tagBindings/{full-resource-name}/{tag-value-name}` (e.g. `tagBindings/%2F%
+         * 2Fcloudresourcemanager.googleapis.com%2Fprojects%2F123/tagValues/456`).
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The full resource name of the resource the TagValue is bound to. E.g.
+         * `//cloudresourcemanager.googleapis.com/projects/123`
+         *
+         * @var string
+         */
+        public $parent;
+        /**
+         * The TagValue of the TagBinding. Must be of the form `tagValues/456`.
+         *
+         * @var string
+         */
+        public $tagValue;
+        /**
+         * The namespaced name for the TagValue of the TagBinding. Must be in the
+         * format `{parent_id}/{tag_key_short_name}/{short_name}`. For methods that
+         * support TagValue namespaced name, only one of tag_value_namespaced_name or
+         * tag_value may be filled. Requests with both fields will be rejected.
+         *
+         * @var string
+         */
+        public $tagValueNamespacedName;
+        /**
+         * Output only. The name of the TagBinding. This is a String of the form:
+         * `tagBindings/{full-resource-name}/{tag-value-name}` (e.g. `tagBindings/%2F%
+         * 2Fcloudresourcemanager.googleapis.com%2Fprojects%2F123/tagValues/456`).
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The full resource name of the resource the TagValue is bound to. E.g.
+         * `//cloudresourcemanager.googleapis.com/projects/123`
+         *
+         * @param string $parent
+         */
+        public function setParent($parent)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getParent()
+        {
+        }
+        /**
+         * The TagValue of the TagBinding. Must be of the form `tagValues/456`.
+         *
+         * @param string $tagValue
+         */
+        public function setTagValue($tagValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTagValue()
+        {
+        }
+        /**
+         * The namespaced name for the TagValue of the TagBinding. Must be in the
+         * format `{parent_id}/{tag_key_short_name}/{short_name}`. For methods that
+         * support TagValue namespaced name, only one of tag_value_namespaced_name or
+         * tag_value may be filled. Requests with both fields will be rejected.
+         *
+         * @param string $tagValueNamespacedName
+         */
+        public function setTagValueNamespacedName($tagValueNamespacedName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTagValueNamespacedName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudResourceManager\TagBinding registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * The full resource name of the resource the TagValue is bound to. E.g.
-     * `//cloudresourcemanager.googleapis.com/projects/123`
-     *
-     * @param string $parent
-     */
-    public function setParent($parent)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getParent()
-    {
-    }
-    /**
-     * The TagValue of the TagBinding. Must be of the form `tagValues/456`.
-     *
-     * @param string $tagValue
-     */
-    public function setTagValue($tagValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTagValue()
-    {
-    }
-    /**
-     * The namespaced name for the TagValue of the TagBinding. Must be in the
-     * format `{parent_id}/{tag_key_short_name}/{short_name}`. For methods that
-     * support TagValue namespaced name, only one of tag_value_namespaced_name or
-     * tag_value may be filled. Requests with both fields will be rejected.
-     *
-     * @param string $tagValueNamespacedName
-     */
-    public function setTagValueNamespacedName($tagValueNamespacedName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTagValueNamespacedName()
+    class Google_Service_CloudResourceManager_TagBinding extends \Google\Service\CloudResourceManager\TagBinding
     {
     }
 }

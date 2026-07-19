@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class DocumentInfo extends \Google\Model
-{
-    protected $whiteboardInfoType = WhiteboardInfo::class;
-    protected $whiteboardInfoDataType = '';
-    /**
-     * @param WhiteboardInfo
-     */
-    public function setWhiteboardInfo(WhiteboardInfo $whiteboardInfo)
+namespace Google\Service\CloudSearch {
+    class DocumentInfo extends \Google\Model
     {
+        protected $whiteboardInfoType = WhiteboardInfo::class;
+        protected $whiteboardInfoDataType = '';
+        /**
+         * @param WhiteboardInfo
+         */
+        public function setWhiteboardInfo(WhiteboardInfo $whiteboardInfo)
+        {
+        }
+        /**
+         * @return WhiteboardInfo
+         */
+        public function getWhiteboardInfo()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return WhiteboardInfo
+     * Runtime class alias of \Google\Service\CloudSearch\DocumentInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getWhiteboardInfo()
+    class Google_Service_CloudSearch_DocumentInfo extends \Google\Service\CloudSearch\DocumentInfo
     {
     }
 }

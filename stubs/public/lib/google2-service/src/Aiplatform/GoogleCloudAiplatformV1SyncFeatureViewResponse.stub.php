@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SyncFeatureViewResponse extends \Google\Model
-{
-    /**
-     * Format: `projects/{project}/locations/{location}/featureOnlineStores/{featu
-     * re_online_store}/featureViews/{feature_view}/featureViewSyncs/{feature_view
-     * _sync}`
-     *
-     * @var string
-     */
-    public $featureViewSync;
-    /**
-     * Format: `projects/{project}/locations/{location}/featureOnlineStores/{featu
-     * re_online_store}/featureViews/{feature_view}/featureViewSyncs/{feature_view
-     * _sync}`
-     *
-     * @param string $featureViewSync
-     */
-    public function setFeatureViewSync($featureViewSync)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SyncFeatureViewResponse extends \Google\Model
     {
+        /**
+         * Format: `projects/{project}/locations/{location}/featureOnlineStores/{featu
+         * re_online_store}/featureViews/{feature_view}/featureViewSyncs/{feature_view
+         * _sync}`
+         *
+         * @var string
+         */
+        public $featureViewSync;
+        /**
+         * Format: `projects/{project}/locations/{location}/featureOnlineStores/{featu
+         * re_online_store}/featureViews/{feature_view}/featureViewSyncs/{feature_view
+         * _sync}`
+         *
+         * @param string $featureViewSync
+         */
+        public function setFeatureViewSync($featureViewSync)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFeatureViewSync()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SyncFeatureViewResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFeatureViewSync()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SyncFeatureViewResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SyncFeatureViewResponse
     {
     }
 }

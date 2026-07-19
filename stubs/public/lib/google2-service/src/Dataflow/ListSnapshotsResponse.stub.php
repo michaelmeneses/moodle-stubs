@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class ListSnapshotsResponse extends \Google\Collection
-{
-    protected $collection_key = 'snapshots';
-    protected $snapshotsType = Snapshot::class;
-    protected $snapshotsDataType = 'array';
-    /**
-     * Returned snapshots.
-     *
-     * @param Snapshot[] $snapshots
-     */
-    public function setSnapshots($snapshots)
+namespace Google\Service\Dataflow {
+    class ListSnapshotsResponse extends \Google\Collection
     {
+        protected $collection_key = 'snapshots';
+        protected $snapshotsType = Snapshot::class;
+        protected $snapshotsDataType = 'array';
+        /**
+         * Returned snapshots.
+         *
+         * @param Snapshot[] $snapshots
+         */
+        public function setSnapshots($snapshots)
+        {
+        }
+        /**
+         * @return Snapshot[]
+         */
+        public function getSnapshots()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Snapshot[]
+     * Runtime class alias of \Google\Service\Dataflow\ListSnapshotsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSnapshots()
+    class Google_Service_Dataflow_ListSnapshotsResponse extends \Google\Service\Dataflow\ListSnapshotsResponse
     {
     }
 }

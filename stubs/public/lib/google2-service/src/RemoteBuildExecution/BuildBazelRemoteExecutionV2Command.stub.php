@@ -21,79 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class BuildBazelRemoteExecutionV2Command extends \Google\Collection
-{
-    protected $collection_key = 'outputPaths';
-    public $arguments;
-    protected $environmentVariablesType = BuildBazelRemoteExecutionV2CommandEnvironmentVariable::class;
-    protected $environmentVariablesDataType = 'array';
-    public $outputDirectories;
-    public $outputFiles;
-    public $outputNodeProperties;
-    public $outputPaths;
-    protected $platformType = BuildBazelRemoteExecutionV2Platform::class;
-    protected $platformDataType = '';
-    public $workingDirectory;
-    public function setArguments($arguments)
+namespace Google\Service\RemoteBuildExecution {
+    class BuildBazelRemoteExecutionV2Command extends \Google\Collection
     {
+        protected $collection_key = 'outputPaths';
+        public $arguments;
+        protected $environmentVariablesType = BuildBazelRemoteExecutionV2CommandEnvironmentVariable::class;
+        protected $environmentVariablesDataType = 'array';
+        public $outputDirectories;
+        public $outputFiles;
+        public $outputNodeProperties;
+        public $outputPaths;
+        protected $platformType = BuildBazelRemoteExecutionV2Platform::class;
+        protected $platformDataType = '';
+        public $workingDirectory;
+        public function setArguments($arguments)
+        {
+        }
+        public function getArguments()
+        {
+        }
+        /**
+         * @param BuildBazelRemoteExecutionV2CommandEnvironmentVariable[]
+         */
+        public function setEnvironmentVariables($environmentVariables)
+        {
+        }
+        /**
+         * @return BuildBazelRemoteExecutionV2CommandEnvironmentVariable[]
+         */
+        public function getEnvironmentVariables()
+        {
+        }
+        public function setOutputDirectories($outputDirectories)
+        {
+        }
+        public function getOutputDirectories()
+        {
+        }
+        public function setOutputFiles($outputFiles)
+        {
+        }
+        public function getOutputFiles()
+        {
+        }
+        public function setOutputNodeProperties($outputNodeProperties)
+        {
+        }
+        public function getOutputNodeProperties()
+        {
+        }
+        public function setOutputPaths($outputPaths)
+        {
+        }
+        public function getOutputPaths()
+        {
+        }
+        /**
+         * @param BuildBazelRemoteExecutionV2Platform
+         */
+        public function setPlatform(BuildBazelRemoteExecutionV2Platform $platform)
+        {
+        }
+        /**
+         * @return BuildBazelRemoteExecutionV2Platform
+         */
+        public function getPlatform()
+        {
+        }
+        public function setWorkingDirectory($workingDirectory)
+        {
+        }
+        public function getWorkingDirectory()
+        {
+        }
     }
-    public function getArguments()
-    {
-    }
+}
+namespace {
     /**
-     * @param BuildBazelRemoteExecutionV2CommandEnvironmentVariable[]
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2Command registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setEnvironmentVariables($environmentVariables)
-    {
-    }
-    /**
-     * @return BuildBazelRemoteExecutionV2CommandEnvironmentVariable[]
-     */
-    public function getEnvironmentVariables()
-    {
-    }
-    public function setOutputDirectories($outputDirectories)
-    {
-    }
-    public function getOutputDirectories()
-    {
-    }
-    public function setOutputFiles($outputFiles)
-    {
-    }
-    public function getOutputFiles()
-    {
-    }
-    public function setOutputNodeProperties($outputNodeProperties)
-    {
-    }
-    public function getOutputNodeProperties()
-    {
-    }
-    public function setOutputPaths($outputPaths)
-    {
-    }
-    public function getOutputPaths()
-    {
-    }
-    /**
-     * @param BuildBazelRemoteExecutionV2Platform
-     */
-    public function setPlatform(BuildBazelRemoteExecutionV2Platform $platform)
-    {
-    }
-    /**
-     * @return BuildBazelRemoteExecutionV2Platform
-     */
-    public function getPlatform()
-    {
-    }
-    public function setWorkingDirectory($workingDirectory)
-    {
-    }
-    public function getWorkingDirectory()
+    class Google_Service_RemoteBuildExecution_BuildBazelRemoteExecutionV2Command extends \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2Command
     {
     }
 }

@@ -21,46 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for AdExchangeBuyer (v1.4).
- *
- * <p>
- * Accesses your bidding-account information, submits creatives for validation,
- * finds available direct deals, and retrieves performance reports.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://developers.google.com/ad-exchange/buyer-rest" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class AdExchangeBuyer extends \Google\Service
-{
-    /** Manage your Ad Exchange buyer account configuration. */
-    const ADEXCHANGE_BUYER = "https://www.googleapis.com/auth/adexchange.buyer";
-    public $accounts;
-    public $billingInfo;
-    public $budget;
-    public $creatives;
-    public $marketplacedeals;
-    public $marketplacenotes;
-    public $marketplaceprivateauction;
-    public $performanceReport;
-    public $pretargetingConfig;
-    public $products;
-    public $proposals;
-    public $pubprofiles;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the AdExchangeBuyer service.
+     * Service definition for AdExchangeBuyer (v1.4).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * Accesses your bidding-account information, submits creatives for validation,
+     * finds available direct deals, and retrieves performance reports.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://developers.google.com/ad-exchange/buyer-rest" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class AdExchangeBuyer extends \Google\Service
+    {
+        /** Manage your Ad Exchange buyer account configuration. */
+        const ADEXCHANGE_BUYER = "https://www.googleapis.com/auth/adexchange.buyer";
+        public $accounts;
+        public $billingInfo;
+        public $budget;
+        public $creatives;
+        public $marketplacedeals;
+        public $marketplacenotes;
+        public $marketplaceprivateauction;
+        public $performanceReport;
+        public $pretargetingConfig;
+        public $products;
+        public $proposals;
+        public $pubprofiles;
+        /**
+         * Constructs the internal representation of the AdExchangeBuyer service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\AdExchangeBuyer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_AdExchangeBuyer extends \Google\Service\AdExchangeBuyer
     {
     }
 }

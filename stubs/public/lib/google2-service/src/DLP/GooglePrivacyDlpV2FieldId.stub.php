@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2FieldId extends \Google\Model
-{
-    /**
-     * Name describing the field.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Name describing the field.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2FieldId extends \Google\Model
     {
+        /**
+         * Name describing the field.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Name describing the field.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2FieldId registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
+    class Google_Service_DLP_GooglePrivacyDlpV2FieldId extends \Google\Service\DLP\GooglePrivacyDlpV2FieldId
     {
     }
 }

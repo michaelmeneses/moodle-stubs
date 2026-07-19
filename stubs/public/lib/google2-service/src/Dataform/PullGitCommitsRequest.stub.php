@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataform;
-
-class PullGitCommitsRequest extends \Google\Model
-{
-    protected $authorType = CommitAuthor::class;
-    protected $authorDataType = '';
-    /**
-     * Optional. The name of the branch in the Git remote from which to pull
-     * commits. If left unset, the repository's default branch name will be used.
-     *
-     * @var string
-     */
-    public $remoteBranch;
-    /**
-     * Required. The author of any merge commit which may be created as a result
-     * of merging fetched Git commits into this workspace.
-     *
-     * @param CommitAuthor $author
-     */
-    public function setAuthor(CommitAuthor $author)
+namespace Google\Service\Dataform {
+    class PullGitCommitsRequest extends \Google\Model
     {
+        protected $authorType = CommitAuthor::class;
+        protected $authorDataType = '';
+        /**
+         * Optional. The name of the branch in the Git remote from which to pull
+         * commits. If left unset, the repository's default branch name will be used.
+         *
+         * @var string
+         */
+        public $remoteBranch;
+        /**
+         * Required. The author of any merge commit which may be created as a result
+         * of merging fetched Git commits into this workspace.
+         *
+         * @param CommitAuthor $author
+         */
+        public function setAuthor(CommitAuthor $author)
+        {
+        }
+        /**
+         * @return CommitAuthor
+         */
+        public function getAuthor()
+        {
+        }
+        /**
+         * Optional. The name of the branch in the Git remote from which to pull
+         * commits. If left unset, the repository's default branch name will be used.
+         *
+         * @param string $remoteBranch
+         */
+        public function setRemoteBranch($remoteBranch)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRemoteBranch()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CommitAuthor
+     * Runtime class alias of \Google\Service\Dataform\PullGitCommitsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAuthor()
-    {
-    }
-    /**
-     * Optional. The name of the branch in the Git remote from which to pull
-     * commits. If left unset, the repository's default branch name will be used.
-     *
-     * @param string $remoteBranch
-     */
-    public function setRemoteBranch($remoteBranch)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRemoteBranch()
+    class Google_Service_Dataform_PullGitCommitsRequest extends \Google\Service\Dataform\PullGitCommitsRequest
     {
     }
 }

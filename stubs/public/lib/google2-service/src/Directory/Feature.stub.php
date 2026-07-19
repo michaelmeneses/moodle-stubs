@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class Feature extends \Google\Model
-{
-    /**
-     * ETag of the resource.
-     *
-     * @var string
-     */
-    public $etags;
-    /**
-     * Kind of resource this is.
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * The name of the feature.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * ETag of the resource.
-     *
-     * @param string $etags
-     */
-    public function setEtags($etags)
+namespace Google\Service\Directory {
+    class Feature extends \Google\Model
     {
+        /**
+         * ETag of the resource.
+         *
+         * @var string
+         */
+        public $etags;
+        /**
+         * Kind of resource this is.
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * The name of the feature.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * ETag of the resource.
+         *
+         * @param string $etags
+         */
+        public function setEtags($etags)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtags()
+        {
+        }
+        /**
+         * Kind of resource this is.
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * The name of the feature.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\Feature registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtags()
-    {
-    }
-    /**
-     * Kind of resource this is.
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * The name of the feature.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Directory_Feature extends \Google\Service\Directory\Feature
     {
     }
 }

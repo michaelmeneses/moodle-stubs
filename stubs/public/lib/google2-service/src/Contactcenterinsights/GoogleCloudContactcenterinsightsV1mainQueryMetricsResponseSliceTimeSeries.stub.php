@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contactcenterinsights;
-
-class GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceTimeSeries extends \Google\Collection
-{
-    protected $collection_key = 'dataPoints';
-    protected $dataPointsType = GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceDataPoint::class;
-    protected $dataPointsDataType = 'array';
-    /**
-     * The data points that make up the time series .
-     *
-     * @param GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceDataPoint[] $dataPoints
-     */
-    public function setDataPoints($dataPoints)
+namespace Google\Service\Contactcenterinsights {
+    class GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceTimeSeries extends \Google\Collection
     {
+        protected $collection_key = 'dataPoints';
+        protected $dataPointsType = GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceDataPoint::class;
+        protected $dataPointsDataType = 'array';
+        /**
+         * The data points that make up the time series .
+         *
+         * @param GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceDataPoint[] $dataPoints
+         */
+        public function setDataPoints($dataPoints)
+        {
+        }
+        /**
+         * @return GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceDataPoint[]
+         */
+        public function getDataPoints()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceDataPoint[]
+     * Runtime class alias of \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceTimeSeries registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataPoints()
+    class Google_Service_Contactcenterinsights_GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceTimeSeries extends \Google\Service\Contactcenterinsights\GoogleCloudContactcenterinsightsV1mainQueryMetricsResponseSliceTimeSeries
     {
     }
 }

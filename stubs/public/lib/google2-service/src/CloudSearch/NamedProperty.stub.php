@@ -21,160 +21,169 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class NamedProperty extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $booleanValue;
-    protected $dateValuesType = DateValues::class;
-    protected $dateValuesDataType = '';
-    protected $doubleValuesType = DoubleValues::class;
-    protected $doubleValuesDataType = '';
-    protected $enumValuesType = EnumValues::class;
-    protected $enumValuesDataType = '';
-    protected $htmlValuesType = HtmlValues::class;
-    protected $htmlValuesDataType = '';
-    protected $integerValuesType = IntegerValues::class;
-    protected $integerValuesDataType = '';
-    /**
-     * The name of the property. This name should correspond to the name of the
-     * property that was registered for object definition in the schema. The
-     * maximum allowable length for this property is 256 characters.
-     *
-     * @var string
-     */
-    public $name;
-    protected $objectValuesType = ObjectValues::class;
-    protected $objectValuesDataType = '';
-    protected $textValuesType = TextValues::class;
-    protected $textValuesDataType = '';
-    protected $timestampValuesType = TimestampValues::class;
-    protected $timestampValuesDataType = '';
-    /**
-     * @param bool $booleanValue
-     */
-    public function setBooleanValue($booleanValue)
+namespace Google\Service\CloudSearch {
+    class NamedProperty extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $booleanValue;
+        protected $dateValuesType = DateValues::class;
+        protected $dateValuesDataType = '';
+        protected $doubleValuesType = DoubleValues::class;
+        protected $doubleValuesDataType = '';
+        protected $enumValuesType = EnumValues::class;
+        protected $enumValuesDataType = '';
+        protected $htmlValuesType = HtmlValues::class;
+        protected $htmlValuesDataType = '';
+        protected $integerValuesType = IntegerValues::class;
+        protected $integerValuesDataType = '';
+        /**
+         * The name of the property. This name should correspond to the name of the
+         * property that was registered for object definition in the schema. The
+         * maximum allowable length for this property is 256 characters.
+         *
+         * @var string
+         */
+        public $name;
+        protected $objectValuesType = ObjectValues::class;
+        protected $objectValuesDataType = '';
+        protected $textValuesType = TextValues::class;
+        protected $textValuesDataType = '';
+        protected $timestampValuesType = TimestampValues::class;
+        protected $timestampValuesDataType = '';
+        /**
+         * @param bool $booleanValue
+         */
+        public function setBooleanValue($booleanValue)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBooleanValue()
+        {
+        }
+        /**
+         * @param DateValues $dateValues
+         */
+        public function setDateValues(DateValues $dateValues)
+        {
+        }
+        /**
+         * @return DateValues
+         */
+        public function getDateValues()
+        {
+        }
+        /**
+         * @param DoubleValues $doubleValues
+         */
+        public function setDoubleValues(DoubleValues $doubleValues)
+        {
+        }
+        /**
+         * @return DoubleValues
+         */
+        public function getDoubleValues()
+        {
+        }
+        /**
+         * @param EnumValues $enumValues
+         */
+        public function setEnumValues(EnumValues $enumValues)
+        {
+        }
+        /**
+         * @return EnumValues
+         */
+        public function getEnumValues()
+        {
+        }
+        /**
+         * @param HtmlValues $htmlValues
+         */
+        public function setHtmlValues(HtmlValues $htmlValues)
+        {
+        }
+        /**
+         * @return HtmlValues
+         */
+        public function getHtmlValues()
+        {
+        }
+        /**
+         * @param IntegerValues $integerValues
+         */
+        public function setIntegerValues(IntegerValues $integerValues)
+        {
+        }
+        /**
+         * @return IntegerValues
+         */
+        public function getIntegerValues()
+        {
+        }
+        /**
+         * The name of the property. This name should correspond to the name of the
+         * property that was registered for object definition in the schema. The
+         * maximum allowable length for this property is 256 characters.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param ObjectValues $objectValues
+         */
+        public function setObjectValues(ObjectValues $objectValues)
+        {
+        }
+        /**
+         * @return ObjectValues
+         */
+        public function getObjectValues()
+        {
+        }
+        /**
+         * @param TextValues $textValues
+         */
+        public function setTextValues(TextValues $textValues)
+        {
+        }
+        /**
+         * @return TextValues
+         */
+        public function getTextValues()
+        {
+        }
+        /**
+         * @param TimestampValues $timestampValues
+         */
+        public function setTimestampValues(TimestampValues $timestampValues)
+        {
+        }
+        /**
+         * @return TimestampValues
+         */
+        public function getTimestampValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudSearch\NamedProperty registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBooleanValue()
-    {
-    }
-    /**
-     * @param DateValues $dateValues
-     */
-    public function setDateValues(DateValues $dateValues)
-    {
-    }
-    /**
-     * @return DateValues
-     */
-    public function getDateValues()
-    {
-    }
-    /**
-     * @param DoubleValues $doubleValues
-     */
-    public function setDoubleValues(DoubleValues $doubleValues)
-    {
-    }
-    /**
-     * @return DoubleValues
-     */
-    public function getDoubleValues()
-    {
-    }
-    /**
-     * @param EnumValues $enumValues
-     */
-    public function setEnumValues(EnumValues $enumValues)
-    {
-    }
-    /**
-     * @return EnumValues
-     */
-    public function getEnumValues()
-    {
-    }
-    /**
-     * @param HtmlValues $htmlValues
-     */
-    public function setHtmlValues(HtmlValues $htmlValues)
-    {
-    }
-    /**
-     * @return HtmlValues
-     */
-    public function getHtmlValues()
-    {
-    }
-    /**
-     * @param IntegerValues $integerValues
-     */
-    public function setIntegerValues(IntegerValues $integerValues)
-    {
-    }
-    /**
-     * @return IntegerValues
-     */
-    public function getIntegerValues()
-    {
-    }
-    /**
-     * The name of the property. This name should correspond to the name of the
-     * property that was registered for object definition in the schema. The
-     * maximum allowable length for this property is 256 characters.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param ObjectValues $objectValues
-     */
-    public function setObjectValues(ObjectValues $objectValues)
-    {
-    }
-    /**
-     * @return ObjectValues
-     */
-    public function getObjectValues()
-    {
-    }
-    /**
-     * @param TextValues $textValues
-     */
-    public function setTextValues(TextValues $textValues)
-    {
-    }
-    /**
-     * @return TextValues
-     */
-    public function getTextValues()
-    {
-    }
-    /**
-     * @param TimestampValues $timestampValues
-     */
-    public function setTimestampValues(TimestampValues $timestampValues)
-    {
-    }
-    /**
-     * @return TimestampValues
-     */
-    public function getTimestampValues()
+    class Google_Service_CloudSearch_NamedProperty extends \Google\Service\CloudSearch\NamedProperty
     {
     }
 }

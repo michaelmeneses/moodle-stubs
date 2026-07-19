@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PlayIntegrity;
-
-class WriteDeviceRecallResponse extends \Google\Model
-{
+namespace Google\Service\PlayIntegrity {
+    class WriteDeviceRecallResponse extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\PlayIntegrity\WriteDeviceRecallResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_PlayIntegrity_WriteDeviceRecallResponse extends \Google\Service\PlayIntegrity\WriteDeviceRecallResponse
+    {
+    }
 }

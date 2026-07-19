@@ -29,6 +29,7 @@
  */
 namespace assignfeedback_editpdf;
 
+use DOMDocument;
 /**
  * Functions for generating the annotated pdf.
  *

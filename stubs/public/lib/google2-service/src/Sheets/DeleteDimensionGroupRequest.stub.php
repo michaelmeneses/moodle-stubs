@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class DeleteDimensionGroupRequest extends \Google\Model
-{
-    protected $rangeType = DimensionRange::class;
-    protected $rangeDataType = '';
-    /**
-     * The range of the group to be deleted.
-     *
-     * @param DimensionRange $range
-     */
-    public function setRange(DimensionRange $range)
+namespace Google\Service\Sheets {
+    class DeleteDimensionGroupRequest extends \Google\Model
     {
+        protected $rangeType = DimensionRange::class;
+        protected $rangeDataType = '';
+        /**
+         * The range of the group to be deleted.
+         *
+         * @param DimensionRange $range
+         */
+        public function setRange(DimensionRange $range)
+        {
+        }
+        /**
+         * @return DimensionRange
+         */
+        public function getRange()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DimensionRange
+     * Runtime class alias of \Google\Service\Sheets\DeleteDimensionGroupRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRange()
+    class Google_Service_Sheets_DeleteDimensionGroupRequest extends \Google\Service\Sheets\DeleteDimensionGroupRequest
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMemorystoreforMemcached;
-
-class ZoneConfiguration extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $zone;
-    /**
-     * @param string
-     */
-    public function setZone($zone)
+namespace Google\Service\CloudMemorystoreforMemcached {
+    class ZoneConfiguration extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $zone;
+        /**
+         * @param string
+         */
+        public function setZone($zone)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getZone()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudMemorystoreforMemcached\ZoneConfiguration registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getZone()
+    class Google_Service_CloudMemorystoreforMemcached_ZoneConfiguration extends \Google\Service\CloudMemorystoreforMemcached\ZoneConfiguration
     {
     }
 }

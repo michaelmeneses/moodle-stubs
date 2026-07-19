@@ -21,29 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine\Resource;
-
-/**
- * The "answers" collection of methods.
- * Typical usage is:
- *  <code>
- *   $discoveryengineService = new Google\Service\DiscoveryEngine(...);
- *   $answers = $discoveryengineService->projects_locations_collections_engines_sessions_answers;
- *  </code>
- */
-class ProjectsLocationsCollectionsEnginesSessionsAnswers extends \Google\Service\Resource
-{
+namespace Google\Service\DiscoveryEngine\Resource {
+    use Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1Answer;
     /**
-     * Gets a Answer. (answers.get)
-     *
-     * @param string $name Required. The resource name of the Answer to get. Format:
-     * `projects/{project}/locations/{location}/collections/{collection}/engines/{en
-     * gine_id}/sessions/{session_id}/answers/{answer_id}`
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudDiscoveryengineV1Answer
-     * @throws \Google\Service\Exception
+     * The "answers" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $discoveryengineService = new Google\Service\DiscoveryEngine(...);
+     *   $answers = $discoveryengineService->projects_locations_collections_engines_sessions_answers;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocationsCollectionsEnginesSessionsAnswers extends \Google\Service\Resource
+    {
+        /**
+         * Gets a Answer. (answers.get)
+         *
+         * @param string $name Required. The resource name of the Answer to get. Format:
+         * `projects/{project}/locations/{location}/collections/{collection}/engines/{en
+         * gine_id}/sessions/{session_id}/answers/{answer_id}`
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudDiscoveryengineV1Answer
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DiscoveryEngine\Resource\ProjectsLocationsCollectionsEnginesSessionsAnswers registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DiscoveryEngine_Resource_ProjectsLocationsCollectionsEnginesSessionsAnswers extends \Google\Service\DiscoveryEngine\Resource\ProjectsLocationsCollectionsEnginesSessionsAnswers
     {
     }
 }

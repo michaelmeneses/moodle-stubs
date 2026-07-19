@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class CloudReliabilityZicyWs3DataplaneProtosCloudAssetComposition extends \Google\Collection
-{
-    protected $collection_key = 'childAsset';
-    protected $childAssetType = CloudReliabilityZicyWs3DataplaneProtosCloudAsset::class;
-    protected $childAssetDataType = 'array';
-    /**
-     * @param CloudReliabilityZicyWs3DataplaneProtosCloudAsset[]
-     */
-    public function setChildAsset($childAsset)
+namespace Google\Service\CloudDataplex {
+    class CloudReliabilityZicyWs3DataplaneProtosCloudAssetComposition extends \Google\Collection
     {
+        protected $collection_key = 'childAsset';
+        protected $childAssetType = CloudReliabilityZicyWs3DataplaneProtosCloudAsset::class;
+        protected $childAssetDataType = 'array';
+        /**
+         * @param CloudReliabilityZicyWs3DataplaneProtosCloudAsset[]
+         */
+        public function setChildAsset($childAsset)
+        {
+        }
+        /**
+         * @return CloudReliabilityZicyWs3DataplaneProtosCloudAsset[]
+         */
+        public function getChildAsset()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloudReliabilityZicyWs3DataplaneProtosCloudAsset[]
+     * Runtime class alias of \Google\Service\CloudDataplex\CloudReliabilityZicyWs3DataplaneProtosCloudAssetComposition registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChildAsset()
+    class Google_Service_CloudDataplex_CloudReliabilityZicyWs3DataplaneProtosCloudAssetComposition extends \Google\Service\CloudDataplex\CloudReliabilityZicyWs3DataplaneProtosCloudAssetComposition
     {
     }
 }

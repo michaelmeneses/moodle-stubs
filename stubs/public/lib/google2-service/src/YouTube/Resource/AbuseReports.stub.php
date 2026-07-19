@@ -21,30 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube\Resource;
-
-/**
- * The "abuseReports" collection of methods.
- * Typical usage is:
- *  <code>
- *   $youtubeService = new Google\Service\YouTube(...);
- *   $abuseReports = $youtubeService->abuseReports;
- *  </code>
- */
-class AbuseReports extends \Google\Service\Resource
-{
+namespace Google\Service\YouTube\Resource {
+    use Google\Service\YouTube\AbuseReport;
     /**
-     * Inserts a new resource into this collection. (abuseReports.insert)
-     *
-     * @param string|array $part The *part* parameter serves two purposes in this
-     * operation. It identifies the properties that the write operation will set as
-     * well as the properties that the API response will include.
-     * @param AbuseReport $postBody
-     * @param array $optParams Optional parameters.
-     * @return AbuseReport
-     * @throws \Google\Service\Exception
+     * The "abuseReports" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $youtubeService = new Google\Service\YouTube(...);
+     *   $abuseReports = $youtubeService->abuseReports;
+     *  </code>
      */
-    public function insert($part, AbuseReport $postBody, $optParams = [])
+    class AbuseReports extends \Google\Service\Resource
+    {
+        /**
+         * Inserts a new resource into this collection. (abuseReports.insert)
+         *
+         * @param string|array $part The *part* parameter serves two purposes in this
+         * operation. It identifies the properties that the write operation will set as
+         * well as the properties that the API response will include.
+         * @param AbuseReport $postBody
+         * @param array $optParams Optional parameters.
+         * @return AbuseReport
+         * @throws \Google\Service\Exception
+         */
+        public function insert($part, AbuseReport $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\YouTube\Resource\AbuseReports registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_YouTube_Resource_AbuseReports extends \Google\Service\YouTube\Resource\AbuseReports
     {
     }
 }

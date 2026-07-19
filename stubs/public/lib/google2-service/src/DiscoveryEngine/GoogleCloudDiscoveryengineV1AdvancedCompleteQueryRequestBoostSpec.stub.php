@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1AdvancedCompleteQueryRequestBoostSpec extends \Google\Collection
-{
-    protected $collection_key = 'conditionBoostSpecs';
-    protected $conditionBoostSpecsType = GoogleCloudDiscoveryengineV1AdvancedCompleteQueryRequestBoostSpecConditionBoostSpec::class;
-    protected $conditionBoostSpecsDataType = 'array';
-    /**
-     * Condition boost specifications. If a suggestion matches multiple conditions
-     * in the specifications, boost values from these specifications are all
-     * applied and combined in a non-linear way. Maximum number of specifications
-     * is 20. Note: Currently only support language condition boost.
-     *
-     * @param GoogleCloudDiscoveryengineV1AdvancedCompleteQueryRequestBoostSpecConditionBoostSpec[] $conditionBoostSpecs
-     */
-    public function setConditionBoostSpecs($conditionBoostSpecs)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1AdvancedCompleteQueryRequestBoostSpec extends \Google\Collection
     {
+        protected $collection_key = 'conditionBoostSpecs';
+        protected $conditionBoostSpecsType = GoogleCloudDiscoveryengineV1AdvancedCompleteQueryRequestBoostSpecConditionBoostSpec::class;
+        protected $conditionBoostSpecsDataType = 'array';
+        /**
+         * Condition boost specifications. If a suggestion matches multiple conditions
+         * in the specifications, boost values from these specifications are all
+         * applied and combined in a non-linear way. Maximum number of specifications
+         * is 20. Note: Currently only support language condition boost.
+         *
+         * @param GoogleCloudDiscoveryengineV1AdvancedCompleteQueryRequestBoostSpecConditionBoostSpec[] $conditionBoostSpecs
+         */
+        public function setConditionBoostSpecs($conditionBoostSpecs)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1AdvancedCompleteQueryRequestBoostSpecConditionBoostSpec[]
+         */
+        public function getConditionBoostSpecs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1AdvancedCompleteQueryRequestBoostSpecConditionBoostSpec[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AdvancedCompleteQueryRequestBoostSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConditionBoostSpecs()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1AdvancedCompleteQueryRequestBoostSpec extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AdvancedCompleteQueryRequestBoostSpec
     {
     }
 }

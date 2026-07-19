@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Safebrowsing;
-
-class FindFullHashesResponse extends \Google\Collection
-{
-    protected $collection_key = 'matches';
-    protected $matchesType = ThreatMatch::class;
-    protected $matchesDataType = 'array';
-    public $matches;
-    /**
-     * @var string
-     */
-    public $minimumWaitDuration;
-    /**
-     * @var string
-     */
-    public $negativeCacheDuration;
-    /**
-     * @param ThreatMatch[]
-     */
-    public function setMatches($matches)
+namespace Google\Service\Safebrowsing {
+    class FindFullHashesResponse extends \Google\Collection
     {
+        protected $collection_key = 'matches';
+        protected $matchesType = ThreatMatch::class;
+        protected $matchesDataType = 'array';
+        public $matches;
+        /**
+         * @var string
+         */
+        public $minimumWaitDuration;
+        /**
+         * @var string
+         */
+        public $negativeCacheDuration;
+        /**
+         * @param ThreatMatch[]
+         */
+        public function setMatches($matches)
+        {
+        }
+        /**
+         * @return ThreatMatch[]
+         */
+        public function getMatches()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMinimumWaitDuration($minimumWaitDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMinimumWaitDuration()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNegativeCacheDuration($negativeCacheDuration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNegativeCacheDuration()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ThreatMatch[]
+     * Runtime class alias of \Google\Service\Safebrowsing\FindFullHashesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMatches()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMinimumWaitDuration($minimumWaitDuration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMinimumWaitDuration()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNegativeCacheDuration($negativeCacheDuration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNegativeCacheDuration()
+    class Google_Service_Safebrowsing_FindFullHashesResponse extends \Google\Service\Safebrowsing\FindFullHashesResponse
     {
     }
 }

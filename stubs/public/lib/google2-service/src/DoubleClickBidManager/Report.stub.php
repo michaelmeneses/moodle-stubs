@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DoubleClickBidManager;
-
-class Report extends \Google\Model
-{
-    protected $keyType = ReportKey::class;
-    protected $keyDataType = '';
-    protected $metadataType = ReportMetadata::class;
-    protected $metadataDataType = '';
-    protected $paramsType = Parameters::class;
-    protected $paramsDataType = '';
-    /**
-     * The key information identifying the report.
-     *
-     * @param ReportKey $key
-     */
-    public function setKey(ReportKey $key)
+namespace Google\Service\DoubleClickBidManager {
+    class Report extends \Google\Model
     {
+        protected $keyType = ReportKey::class;
+        protected $keyDataType = '';
+        protected $metadataType = ReportMetadata::class;
+        protected $metadataDataType = '';
+        protected $paramsType = Parameters::class;
+        protected $paramsDataType = '';
+        /**
+         * The key information identifying the report.
+         *
+         * @param ReportKey $key
+         */
+        public function setKey(ReportKey $key)
+        {
+        }
+        /**
+         * @return ReportKey
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * The metadata of the report.
+         *
+         * @param ReportMetadata $metadata
+         */
+        public function setMetadata(ReportMetadata $metadata)
+        {
+        }
+        /**
+         * @return ReportMetadata
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * The parameters of the report.
+         *
+         * @param Parameters $params
+         */
+        public function setParams(Parameters $params)
+        {
+        }
+        /**
+         * @return Parameters
+         */
+        public function getParams()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ReportKey
+     * Runtime class alias of \Google\Service\DoubleClickBidManager\Report registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKey()
-    {
-    }
-    /**
-     * The metadata of the report.
-     *
-     * @param ReportMetadata $metadata
-     */
-    public function setMetadata(ReportMetadata $metadata)
-    {
-    }
-    /**
-     * @return ReportMetadata
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * The parameters of the report.
-     *
-     * @param Parameters $params
-     */
-    public function setParams(Parameters $params)
-    {
-    }
-    /**
-     * @return Parameters
-     */
-    public function getParams()
+    class Google_Service_DoubleClickBidManager_Report extends \Google\Service\DoubleClickBidManager\Report
     {
     }
 }

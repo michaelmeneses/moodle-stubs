@@ -8,6 +8,8 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Document;
 
+use DateTime;
+use PhpOffice\PhpSpreadsheet\Shared\IntOrFloat;
 class Properties
 {
     /** constants */

@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigtableAdmin;
-
-class SetIamPolicyRequest extends \Google\Model
-{
-    protected $policyType = Policy::class;
-    protected $policyDataType = '';
-    /**
-     * OPTIONAL: A FieldMask specifying which fields of the policy to modify. Only
-     * the fields in the mask will be modified. If no mask is provided, the
-     * following default mask is used: `paths: "bindings, etag"`
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * REQUIRED: The complete policy to be applied to the `resource`. The size of
-     * the policy is limited to a few 10s of KB. An empty policy is a valid policy
-     * but certain Google Cloud services (such as Projects) might reject them.
-     *
-     * @param Policy $policy
-     */
-    public function setPolicy(Policy $policy)
+namespace Google\Service\BigtableAdmin {
+    class SetIamPolicyRequest extends \Google\Model
     {
+        protected $policyType = Policy::class;
+        protected $policyDataType = '';
+        /**
+         * OPTIONAL: A FieldMask specifying which fields of the policy to modify. Only
+         * the fields in the mask will be modified. If no mask is provided, the
+         * following default mask is used: `paths: "bindings, etag"`
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * REQUIRED: The complete policy to be applied to the `resource`. The size of
+         * the policy is limited to a few 10s of KB. An empty policy is a valid policy
+         * but certain Google Cloud services (such as Projects) might reject them.
+         *
+         * @param Policy $policy
+         */
+        public function setPolicy(Policy $policy)
+        {
+        }
+        /**
+         * @return Policy
+         */
+        public function getPolicy()
+        {
+        }
+        /**
+         * OPTIONAL: A FieldMask specifying which fields of the policy to modify. Only
+         * the fields in the mask will be modified. If no mask is provided, the
+         * following default mask is used: `paths: "bindings, etag"`
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Policy
+     * Runtime class alias of \Google\Service\BigtableAdmin\SetIamPolicyRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPolicy()
-    {
-    }
-    /**
-     * OPTIONAL: A FieldMask specifying which fields of the policy to modify. Only
-     * the fields in the mask will be modified. If no mask is provided, the
-     * following default mask is used: `paths: "bindings, etag"`
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_BigtableAdmin_SetIamPolicyRequest extends \Google\Service\BigtableAdmin\SetIamPolicyRequest
     {
     }
 }

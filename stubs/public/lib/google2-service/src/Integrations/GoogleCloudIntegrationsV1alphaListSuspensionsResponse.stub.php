@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaListSuspensionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'suspensions';
-    /**
-     * Token to retrieve the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $suspensionsType = GoogleCloudIntegrationsV1alphaSuspension::class;
-    protected $suspensionsDataType = 'array';
-    /**
-     * Token to retrieve the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaListSuspensionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'suspensions';
+        /**
+         * Token to retrieve the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $suspensionsType = GoogleCloudIntegrationsV1alphaSuspension::class;
+        protected $suspensionsDataType = 'array';
+        /**
+         * Token to retrieve the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The suspensions for the relevant execution which the caller has permissions
+         * to view and resolve.
+         *
+         * @param GoogleCloudIntegrationsV1alphaSuspension[] $suspensions
+         */
+        public function setSuspensions($suspensions)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaSuspension[]
+         */
+        public function getSuspensions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListSuspensionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The suspensions for the relevant execution which the caller has permissions
-     * to view and resolve.
-     *
-     * @param GoogleCloudIntegrationsV1alphaSuspension[] $suspensions
-     */
-    public function setSuspensions($suspensions)
-    {
-    }
-    /**
-     * @return GoogleCloudIntegrationsV1alphaSuspension[]
-     */
-    public function getSuspensions()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaListSuspensionsResponse extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListSuspensionsResponse
     {
     }
 }

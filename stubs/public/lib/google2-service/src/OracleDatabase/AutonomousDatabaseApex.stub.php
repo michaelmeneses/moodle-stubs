@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class AutonomousDatabaseApex extends \Google\Model
-{
-    /**
-     * Output only. The Oracle APEX Application Development version.
-     *
-     * @var string
-     */
-    public $apexVersion;
-    /**
-     * Output only. The Oracle REST Data Services (ORDS) version.
-     *
-     * @var string
-     */
-    public $ordsVersion;
-    /**
-     * Output only. The Oracle APEX Application Development version.
-     *
-     * @param string $apexVersion
-     */
-    public function setApexVersion($apexVersion)
+namespace Google\Service\OracleDatabase {
+    class AutonomousDatabaseApex extends \Google\Model
     {
+        /**
+         * Output only. The Oracle APEX Application Development version.
+         *
+         * @var string
+         */
+        public $apexVersion;
+        /**
+         * Output only. The Oracle REST Data Services (ORDS) version.
+         *
+         * @var string
+         */
+        public $ordsVersion;
+        /**
+         * Output only. The Oracle APEX Application Development version.
+         *
+         * @param string $apexVersion
+         */
+        public function setApexVersion($apexVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApexVersion()
+        {
+        }
+        /**
+         * Output only. The Oracle REST Data Services (ORDS) version.
+         *
+         * @param string $ordsVersion
+         */
+        public function setOrdsVersion($ordsVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOrdsVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\OracleDatabase\AutonomousDatabaseApex registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApexVersion()
-    {
-    }
-    /**
-     * Output only. The Oracle REST Data Services (ORDS) version.
-     *
-     * @param string $ordsVersion
-     */
-    public function setOrdsVersion($ordsVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOrdsVersion()
+    class Google_Service_OracleDatabase_AutonomousDatabaseApex extends \Google\Service\OracleDatabase\AutonomousDatabaseApex
     {
     }
 }

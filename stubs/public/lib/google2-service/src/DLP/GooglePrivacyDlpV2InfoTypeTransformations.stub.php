@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2InfoTypeTransformations extends \Google\Collection
-{
-    protected $collection_key = 'transformations';
-    protected $transformationsType = GooglePrivacyDlpV2InfoTypeTransformation::class;
-    protected $transformationsDataType = 'array';
-    /**
-     * Required. Transformation for each infoType. Cannot specify more than one
-     * for a given infoType.
-     *
-     * @param GooglePrivacyDlpV2InfoTypeTransformation[] $transformations
-     */
-    public function setTransformations($transformations)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2InfoTypeTransformations extends \Google\Collection
     {
+        protected $collection_key = 'transformations';
+        protected $transformationsType = GooglePrivacyDlpV2InfoTypeTransformation::class;
+        protected $transformationsDataType = 'array';
+        /**
+         * Required. Transformation for each infoType. Cannot specify more than one
+         * for a given infoType.
+         *
+         * @param GooglePrivacyDlpV2InfoTypeTransformation[] $transformations
+         */
+        public function setTransformations($transformations)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2InfoTypeTransformation[]
+         */
+        public function getTransformations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2InfoTypeTransformation[]
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2InfoTypeTransformations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTransformations()
+    class Google_Service_DLP_GooglePrivacyDlpV2InfoTypeTransformations extends \Google\Service\DLP\GooglePrivacyDlpV2InfoTypeTransformations
     {
     }
 }

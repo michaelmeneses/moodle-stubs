@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OnDemandScanning;
-
-class GerritSourceContext extends \Google\Model
-{
-    protected $aliasContextType = AliasContext::class;
-    protected $aliasContextDataType = '';
-    /**
-     * The full project name within the host. Projects may be nested, so
-     * "project/subproject" is a valid project name. The "repo name" is the
-     * hostURI/project.
-     *
-     * @var string
-     */
-    public $gerritProject;
-    /**
-     * The URI of a running Gerrit instance.
-     *
-     * @var string
-     */
-    public $hostUri;
-    /**
-     * A revision (commit) ID.
-     *
-     * @var string
-     */
-    public $revisionId;
-    /**
-     * An alias, which may be a branch or tag.
-     *
-     * @param AliasContext $aliasContext
-     */
-    public function setAliasContext(AliasContext $aliasContext)
+namespace Google\Service\OnDemandScanning {
+    class GerritSourceContext extends \Google\Model
     {
+        protected $aliasContextType = AliasContext::class;
+        protected $aliasContextDataType = '';
+        /**
+         * The full project name within the host. Projects may be nested, so
+         * "project/subproject" is a valid project name. The "repo name" is the
+         * hostURI/project.
+         *
+         * @var string
+         */
+        public $gerritProject;
+        /**
+         * The URI of a running Gerrit instance.
+         *
+         * @var string
+         */
+        public $hostUri;
+        /**
+         * A revision (commit) ID.
+         *
+         * @var string
+         */
+        public $revisionId;
+        /**
+         * An alias, which may be a branch or tag.
+         *
+         * @param AliasContext $aliasContext
+         */
+        public function setAliasContext(AliasContext $aliasContext)
+        {
+        }
+        /**
+         * @return AliasContext
+         */
+        public function getAliasContext()
+        {
+        }
+        /**
+         * The full project name within the host. Projects may be nested, so
+         * "project/subproject" is a valid project name. The "repo name" is the
+         * hostURI/project.
+         *
+         * @param string $gerritProject
+         */
+        public function setGerritProject($gerritProject)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGerritProject()
+        {
+        }
+        /**
+         * The URI of a running Gerrit instance.
+         *
+         * @param string $hostUri
+         */
+        public function setHostUri($hostUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHostUri()
+        {
+        }
+        /**
+         * A revision (commit) ID.
+         *
+         * @param string $revisionId
+         */
+        public function setRevisionId($revisionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRevisionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AliasContext
+     * Runtime class alias of \Google\Service\OnDemandScanning\GerritSourceContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAliasContext()
-    {
-    }
-    /**
-     * The full project name within the host. Projects may be nested, so
-     * "project/subproject" is a valid project name. The "repo name" is the
-     * hostURI/project.
-     *
-     * @param string $gerritProject
-     */
-    public function setGerritProject($gerritProject)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getGerritProject()
-    {
-    }
-    /**
-     * The URI of a running Gerrit instance.
-     *
-     * @param string $hostUri
-     */
-    public function setHostUri($hostUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHostUri()
-    {
-    }
-    /**
-     * A revision (commit) ID.
-     *
-     * @param string $revisionId
-     */
-    public function setRevisionId($revisionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRevisionId()
+    class Google_Service_OnDemandScanning_GerritSourceContext extends \Google\Service\OnDemandScanning\GerritSourceContext
     {
     }
 }

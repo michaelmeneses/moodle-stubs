@@ -21,113 +21,122 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ManagedKafka;
-
-class SchemaConfig extends \Google\Model
-{
-    /**
-     * No compatibility check.
-     */
-    public const COMPATIBILITY_NONE = 'NONE';
-    /**
-     * Backwards compatible with the most recent version.
-     */
-    public const COMPATIBILITY_BACKWARD = 'BACKWARD';
-    /**
-     * Backwards compatible with all previous versions.
-     */
-    public const COMPATIBILITY_BACKWARD_TRANSITIVE = 'BACKWARD_TRANSITIVE';
-    /**
-     * Forwards compatible with the most recent version.
-     */
-    public const COMPATIBILITY_FORWARD = 'FORWARD';
-    /**
-     * Forwards compatible with all previous versions.
-     */
-    public const COMPATIBILITY_FORWARD_TRANSITIVE = 'FORWARD_TRANSITIVE';
-    /**
-     * Backwards and forwards compatible with the most recent version.
-     */
-    public const COMPATIBILITY_FULL = 'FULL';
-    /**
-     * Backwards and forwards compatible with all previous versions.
-     */
-    public const COMPATIBILITY_FULL_TRANSITIVE = 'FULL_TRANSITIVE';
-    /**
-     * Optional. The subject to which this subject is an alias of. Only applicable
-     * for subject config.
-     *
-     * @var string
-     */
-    public $alias;
-    /**
-     * Required. The compatibility type of the schema. The default value is
-     * BACKWARD. If unset in a SchemaSubject-level SchemaConfig, defaults to the
-     * global value. If unset in a SchemaRegistry-level SchemaConfig, reverts to
-     * the default value.
-     *
-     * @var string
-     */
-    public $compatibility;
-    /**
-     * Optional. If true, the schema will be normalized before being stored or
-     * looked up. The default is false. If unset in a SchemaSubject-level
-     * SchemaConfig, the global value will be used. If unset in a SchemaRegistry-
-     * level SchemaConfig, reverts to the default value.
-     *
-     * @var bool
-     */
-    public $normalize;
-    /**
-     * Optional. The subject to which this subject is an alias of. Only applicable
-     * for subject config.
-     *
-     * @param string $alias
-     */
-    public function setAlias($alias)
+namespace Google\Service\ManagedKafka {
+    class SchemaConfig extends \Google\Model
     {
+        /**
+         * No compatibility check.
+         */
+        public const COMPATIBILITY_NONE = 'NONE';
+        /**
+         * Backwards compatible with the most recent version.
+         */
+        public const COMPATIBILITY_BACKWARD = 'BACKWARD';
+        /**
+         * Backwards compatible with all previous versions.
+         */
+        public const COMPATIBILITY_BACKWARD_TRANSITIVE = 'BACKWARD_TRANSITIVE';
+        /**
+         * Forwards compatible with the most recent version.
+         */
+        public const COMPATIBILITY_FORWARD = 'FORWARD';
+        /**
+         * Forwards compatible with all previous versions.
+         */
+        public const COMPATIBILITY_FORWARD_TRANSITIVE = 'FORWARD_TRANSITIVE';
+        /**
+         * Backwards and forwards compatible with the most recent version.
+         */
+        public const COMPATIBILITY_FULL = 'FULL';
+        /**
+         * Backwards and forwards compatible with all previous versions.
+         */
+        public const COMPATIBILITY_FULL_TRANSITIVE = 'FULL_TRANSITIVE';
+        /**
+         * Optional. The subject to which this subject is an alias of. Only applicable
+         * for subject config.
+         *
+         * @var string
+         */
+        public $alias;
+        /**
+         * Required. The compatibility type of the schema. The default value is
+         * BACKWARD. If unset in a SchemaSubject-level SchemaConfig, defaults to the
+         * global value. If unset in a SchemaRegistry-level SchemaConfig, reverts to
+         * the default value.
+         *
+         * @var string
+         */
+        public $compatibility;
+        /**
+         * Optional. If true, the schema will be normalized before being stored or
+         * looked up. The default is false. If unset in a SchemaSubject-level
+         * SchemaConfig, the global value will be used. If unset in a SchemaRegistry-
+         * level SchemaConfig, reverts to the default value.
+         *
+         * @var bool
+         */
+        public $normalize;
+        /**
+         * Optional. The subject to which this subject is an alias of. Only applicable
+         * for subject config.
+         *
+         * @param string $alias
+         */
+        public function setAlias($alias)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAlias()
+        {
+        }
+        /**
+         * Required. The compatibility type of the schema. The default value is
+         * BACKWARD. If unset in a SchemaSubject-level SchemaConfig, defaults to the
+         * global value. If unset in a SchemaRegistry-level SchemaConfig, reverts to
+         * the default value.
+         *
+         * Accepted values: NONE, BACKWARD, BACKWARD_TRANSITIVE, FORWARD,
+         * FORWARD_TRANSITIVE, FULL, FULL_TRANSITIVE
+         *
+         * @param self::COMPATIBILITY_* $compatibility
+         */
+        public function setCompatibility($compatibility)
+        {
+        }
+        /**
+         * @return self::COMPATIBILITY_*
+         */
+        public function getCompatibility()
+        {
+        }
+        /**
+         * Optional. If true, the schema will be normalized before being stored or
+         * looked up. The default is false. If unset in a SchemaSubject-level
+         * SchemaConfig, the global value will be used. If unset in a SchemaRegistry-
+         * level SchemaConfig, reverts to the default value.
+         *
+         * @param bool $normalize
+         */
+        public function setNormalize($normalize)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getNormalize()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ManagedKafka\SchemaConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAlias()
-    {
-    }
-    /**
-     * Required. The compatibility type of the schema. The default value is
-     * BACKWARD. If unset in a SchemaSubject-level SchemaConfig, defaults to the
-     * global value. If unset in a SchemaRegistry-level SchemaConfig, reverts to
-     * the default value.
-     *
-     * Accepted values: NONE, BACKWARD, BACKWARD_TRANSITIVE, FORWARD,
-     * FORWARD_TRANSITIVE, FULL, FULL_TRANSITIVE
-     *
-     * @param self::COMPATIBILITY_* $compatibility
-     */
-    public function setCompatibility($compatibility)
-    {
-    }
-    /**
-     * @return self::COMPATIBILITY_*
-     */
-    public function getCompatibility()
-    {
-    }
-    /**
-     * Optional. If true, the schema will be normalized before being stored or
-     * looked up. The default is false. If unset in a SchemaSubject-level
-     * SchemaConfig, the global value will be used. If unset in a SchemaRegistry-
-     * level SchemaConfig, reverts to the default value.
-     *
-     * @param bool $normalize
-     */
-    public function setNormalize($normalize)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getNormalize()
+    class Google_Service_ManagedKafka_SchemaConfig extends \Google\Service\ManagedKafka\SchemaConfig
     {
     }
 }

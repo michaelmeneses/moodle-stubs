@@ -21,99 +21,108 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class AggregateClassificationMetrics extends \Google\Model
-{
+namespace Google\Service\Bigquery {
+    class AggregateClassificationMetrics extends \Google\Model
+    {
+        /**
+         * Accuracy is the fraction of predictions given the correct label. For
+         * multiclass this is a micro-averaged metric.
+         *
+         * @var 
+         */
+        public $accuracy;
+        /**
+         * The F1 score is an average of recall and precision. For multiclass this is
+         * a macro-averaged metric.
+         *
+         * @var 
+         */
+        public $f1Score;
+        /**
+         * Logarithmic Loss. For multiclass this is a macro-averaged metric.
+         *
+         * @var 
+         */
+        public $logLoss;
+        /**
+         * Precision is the fraction of actual positive predictions that had positive
+         * actual labels. For multiclass this is a macro-averaged metric treating each
+         * class as a binary classifier.
+         *
+         * @var 
+         */
+        public $precision;
+        /**
+         * Recall is the fraction of actual positive labels that were given a positive
+         * prediction. For multiclass this is a macro-averaged metric.
+         *
+         * @var 
+         */
+        public $recall;
+        /**
+         * Area Under a ROC Curve. For multiclass this is a macro-averaged metric.
+         *
+         * @var 
+         */
+        public $rocAuc;
+        /**
+         * Threshold at which the metrics are computed. For binary classification
+         * models this is the positive class threshold. For multi-class classification
+         * models this is the confidence threshold.
+         *
+         * @var 
+         */
+        public $threshold;
+        public function setAccuracy($accuracy)
+        {
+        }
+        public function getAccuracy()
+        {
+        }
+        public function setF1Score($f1Score)
+        {
+        }
+        public function getF1Score()
+        {
+        }
+        public function setLogLoss($logLoss)
+        {
+        }
+        public function getLogLoss()
+        {
+        }
+        public function setPrecision($precision)
+        {
+        }
+        public function getPrecision()
+        {
+        }
+        public function setRecall($recall)
+        {
+        }
+        public function getRecall()
+        {
+        }
+        public function setRocAuc($rocAuc)
+        {
+        }
+        public function getRocAuc()
+        {
+        }
+        public function setThreshold($threshold)
+        {
+        }
+        public function getThreshold()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * Accuracy is the fraction of predictions given the correct label. For
-     * multiclass this is a micro-averaged metric.
-     *
-     * @var 
+     * Runtime class alias of \Google\Service\Bigquery\AggregateClassificationMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $accuracy;
-    /**
-     * The F1 score is an average of recall and precision. For multiclass this is
-     * a macro-averaged metric.
-     *
-     * @var 
-     */
-    public $f1Score;
-    /**
-     * Logarithmic Loss. For multiclass this is a macro-averaged metric.
-     *
-     * @var 
-     */
-    public $logLoss;
-    /**
-     * Precision is the fraction of actual positive predictions that had positive
-     * actual labels. For multiclass this is a macro-averaged metric treating each
-     * class as a binary classifier.
-     *
-     * @var 
-     */
-    public $precision;
-    /**
-     * Recall is the fraction of actual positive labels that were given a positive
-     * prediction. For multiclass this is a macro-averaged metric.
-     *
-     * @var 
-     */
-    public $recall;
-    /**
-     * Area Under a ROC Curve. For multiclass this is a macro-averaged metric.
-     *
-     * @var 
-     */
-    public $rocAuc;
-    /**
-     * Threshold at which the metrics are computed. For binary classification
-     * models this is the positive class threshold. For multi-class classification
-     * models this is the confidence threshold.
-     *
-     * @var 
-     */
-    public $threshold;
-    public function setAccuracy($accuracy)
-    {
-    }
-    public function getAccuracy()
-    {
-    }
-    public function setF1Score($f1Score)
-    {
-    }
-    public function getF1Score()
-    {
-    }
-    public function setLogLoss($logLoss)
-    {
-    }
-    public function getLogLoss()
-    {
-    }
-    public function setPrecision($precision)
-    {
-    }
-    public function getPrecision()
-    {
-    }
-    public function setRecall($recall)
-    {
-    }
-    public function getRecall()
-    {
-    }
-    public function setRocAuc($rocAuc)
-    {
-    }
-    public function getRocAuc()
-    {
-    }
-    public function setThreshold($threshold)
-    {
-    }
-    public function getThreshold()
+    class Google_Service_Bigquery_AggregateClassificationMetrics extends \Google\Service\Bigquery\AggregateClassificationMetrics
     {
     }
 }

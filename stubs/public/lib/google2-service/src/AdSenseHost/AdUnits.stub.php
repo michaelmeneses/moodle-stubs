@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AdSenseHost;
-
-class AdUnits extends \Google\Collection
-{
-    protected $collection_key = 'items';
-    /**
-     * @var string
-     */
-    public $etag;
-    protected $itemsType = AdUnit::class;
-    protected $itemsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $kind;
-    /**
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * @param string
-     */
-    public function setEtag($etag)
+namespace Google\Service\AdSenseHost {
+    class AdUnits extends \Google\Collection
     {
+        protected $collection_key = 'items';
+        /**
+         * @var string
+         */
+        public $etag;
+        protected $itemsType = AdUnit::class;
+        protected $itemsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $kind;
+        /**
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * @param string
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * @param AdUnit[]
+         */
+        public function setItems($items)
+        {
+        }
+        /**
+         * @return AdUnit[]
+         */
+        public function getItems()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AdSenseHost\AdUnits registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEtag()
-    {
-    }
-    /**
-     * @param AdUnit[]
-     */
-    public function setItems($items)
-    {
-    }
-    /**
-     * @return AdUnit[]
-     */
-    public function getItems()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_AdSenseHost_AdUnits extends \Google\Service\AdSenseHost\AdUnits
     {
     }
 }

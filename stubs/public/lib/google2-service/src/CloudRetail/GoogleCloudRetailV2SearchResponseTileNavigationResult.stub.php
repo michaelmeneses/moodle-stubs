@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2SearchResponseTileNavigationResult extends \Google\Collection
-{
-    protected $collection_key = 'tiles';
-    protected $tilesType = GoogleCloudRetailV2Tile::class;
-    protected $tilesDataType = 'array';
-    /**
-     * The current tiles that are used for tile navigation, sorted by engagement.
-     *
-     * @param GoogleCloudRetailV2Tile[] $tiles
-     */
-    public function setTiles($tiles)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2SearchResponseTileNavigationResult extends \Google\Collection
     {
+        protected $collection_key = 'tiles';
+        protected $tilesType = GoogleCloudRetailV2Tile::class;
+        protected $tilesDataType = 'array';
+        /**
+         * The current tiles that are used for tile navigation, sorted by engagement.
+         *
+         * @param GoogleCloudRetailV2Tile[] $tiles
+         */
+        public function setTiles($tiles)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2Tile[]
+         */
+        public function getTiles()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRetailV2Tile[]
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2SearchResponseTileNavigationResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getTiles()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2SearchResponseTileNavigationResult extends \Google\Service\CloudRetail\GoogleCloudRetailV2SearchResponseTileNavigationResult
     {
     }
 }

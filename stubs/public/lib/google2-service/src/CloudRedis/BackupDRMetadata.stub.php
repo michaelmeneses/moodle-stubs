@@ -21,112 +21,121 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class BackupDRMetadata extends \Google\Model
-{
-    protected $backupConfigurationType = BackupConfiguration::class;
-    protected $backupConfigurationDataType = '';
-    protected $backupRunType = BackupRun::class;
-    protected $backupRunDataType = '';
-    protected $backupdrConfigurationType = BackupDRConfiguration::class;
-    protected $backupdrConfigurationDataType = '';
-    /**
-     * Required. Full resource name of this instance.
-     *
-     * @var string
-     */
-    public $fullResourceName;
-    /**
-     * Required. Last time backup configuration was refreshed.
-     *
-     * @var string
-     */
-    public $lastRefreshTime;
-    protected $resourceIdType = DatabaseResourceId::class;
-    protected $resourceIdDataType = '';
-    /**
-     * Backup configuration for this instance.
-     *
-     * @param BackupConfiguration $backupConfiguration
-     */
-    public function setBackupConfiguration(BackupConfiguration $backupConfiguration)
+namespace Google\Service\CloudRedis {
+    class BackupDRMetadata extends \Google\Model
     {
+        protected $backupConfigurationType = BackupConfiguration::class;
+        protected $backupConfigurationDataType = '';
+        protected $backupRunType = BackupRun::class;
+        protected $backupRunDataType = '';
+        protected $backupdrConfigurationType = BackupDRConfiguration::class;
+        protected $backupdrConfigurationDataType = '';
+        /**
+         * Required. Full resource name of this instance.
+         *
+         * @var string
+         */
+        public $fullResourceName;
+        /**
+         * Required. Last time backup configuration was refreshed.
+         *
+         * @var string
+         */
+        public $lastRefreshTime;
+        protected $resourceIdType = DatabaseResourceId::class;
+        protected $resourceIdDataType = '';
+        /**
+         * Backup configuration for this instance.
+         *
+         * @param BackupConfiguration $backupConfiguration
+         */
+        public function setBackupConfiguration(BackupConfiguration $backupConfiguration)
+        {
+        }
+        /**
+         * @return BackupConfiguration
+         */
+        public function getBackupConfiguration()
+        {
+        }
+        /**
+         * Latest backup run information for this instance.
+         *
+         * @param BackupRun $backupRun
+         */
+        public function setBackupRun(BackupRun $backupRun)
+        {
+        }
+        /**
+         * @return BackupRun
+         */
+        public function getBackupRun()
+        {
+        }
+        /**
+         * BackupDR configuration for this instance.
+         *
+         * @param BackupDRConfiguration $backupdrConfiguration
+         */
+        public function setBackupdrConfiguration(BackupDRConfiguration $backupdrConfiguration)
+        {
+        }
+        /**
+         * @return BackupDRConfiguration
+         */
+        public function getBackupdrConfiguration()
+        {
+        }
+        /**
+         * Required. Full resource name of this instance.
+         *
+         * @param string $fullResourceName
+         */
+        public function setFullResourceName($fullResourceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFullResourceName()
+        {
+        }
+        /**
+         * Required. Last time backup configuration was refreshed.
+         *
+         * @param string $lastRefreshTime
+         */
+        public function setLastRefreshTime($lastRefreshTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastRefreshTime()
+        {
+        }
+        /**
+         * Required. Database resource id.
+         *
+         * @param DatabaseResourceId $resourceId
+         */
+        public function setResourceId(DatabaseResourceId $resourceId)
+        {
+        }
+        /**
+         * @return DatabaseResourceId
+         */
+        public function getResourceId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BackupConfiguration
+     * Runtime class alias of \Google\Service\CloudRedis\BackupDRMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackupConfiguration()
-    {
-    }
-    /**
-     * Latest backup run information for this instance.
-     *
-     * @param BackupRun $backupRun
-     */
-    public function setBackupRun(BackupRun $backupRun)
-    {
-    }
-    /**
-     * @return BackupRun
-     */
-    public function getBackupRun()
-    {
-    }
-    /**
-     * BackupDR configuration for this instance.
-     *
-     * @param BackupDRConfiguration $backupdrConfiguration
-     */
-    public function setBackupdrConfiguration(BackupDRConfiguration $backupdrConfiguration)
-    {
-    }
-    /**
-     * @return BackupDRConfiguration
-     */
-    public function getBackupdrConfiguration()
-    {
-    }
-    /**
-     * Required. Full resource name of this instance.
-     *
-     * @param string $fullResourceName
-     */
-    public function setFullResourceName($fullResourceName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFullResourceName()
-    {
-    }
-    /**
-     * Required. Last time backup configuration was refreshed.
-     *
-     * @param string $lastRefreshTime
-     */
-    public function setLastRefreshTime($lastRefreshTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLastRefreshTime()
-    {
-    }
-    /**
-     * Required. Database resource id.
-     *
-     * @param DatabaseResourceId $resourceId
-     */
-    public function setResourceId(DatabaseResourceId $resourceId)
-    {
-    }
-    /**
-     * @return DatabaseResourceId
-     */
-    public function getResourceId()
+    class Google_Service_CloudRedis_BackupDRMetadata extends \Google\Service\CloudRedis\BackupDRMetadata
     {
     }
 }

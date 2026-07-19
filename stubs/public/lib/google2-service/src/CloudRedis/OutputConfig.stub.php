@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class OutputConfig extends \Google\Model
-{
-    protected $gcsDestinationType = GcsDestination::class;
-    protected $gcsDestinationDataType = '';
-    /**
-     * Google Cloud Storage destination for output content.
-     *
-     * @param GcsDestination $gcsDestination
-     */
-    public function setGcsDestination(GcsDestination $gcsDestination)
+namespace Google\Service\CloudRedis {
+    class OutputConfig extends \Google\Model
     {
+        protected $gcsDestinationType = GcsDestination::class;
+        protected $gcsDestinationDataType = '';
+        /**
+         * Google Cloud Storage destination for output content.
+         *
+         * @param GcsDestination $gcsDestination
+         */
+        public function setGcsDestination(GcsDestination $gcsDestination)
+        {
+        }
+        /**
+         * @return GcsDestination
+         */
+        public function getGcsDestination()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GcsDestination
+     * Runtime class alias of \Google\Service\CloudRedis\OutputConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGcsDestination()
+    class Google_Service_CloudRedis_OutputConfig extends \Google\Service\CloudRedis\OutputConfig
     {
     }
 }

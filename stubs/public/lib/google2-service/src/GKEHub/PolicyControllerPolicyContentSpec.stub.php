@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class PolicyControllerPolicyContentSpec extends \Google\Model
-{
-    protected $bundlesType = PolicyControllerBundleInstallSpec::class;
-    protected $bundlesDataType = 'map';
-    protected $templateLibraryType = PolicyControllerTemplateLibraryConfig::class;
-    protected $templateLibraryDataType = '';
-    /**
-     * map of bundle name to BundleInstallSpec. The bundle name maps to the
-     * `bundleName` key in the `policycontroller.gke.io/constraintData` annotation
-     * on a constraint.
-     *
-     * @param PolicyControllerBundleInstallSpec[] $bundles
-     */
-    public function setBundles($bundles)
+namespace Google\Service\GKEHub {
+    class PolicyControllerPolicyContentSpec extends \Google\Model
     {
+        protected $bundlesType = PolicyControllerBundleInstallSpec::class;
+        protected $bundlesDataType = 'map';
+        protected $templateLibraryType = PolicyControllerTemplateLibraryConfig::class;
+        protected $templateLibraryDataType = '';
+        /**
+         * map of bundle name to BundleInstallSpec. The bundle name maps to the
+         * `bundleName` key in the `policycontroller.gke.io/constraintData` annotation
+         * on a constraint.
+         *
+         * @param PolicyControllerBundleInstallSpec[] $bundles
+         */
+        public function setBundles($bundles)
+        {
+        }
+        /**
+         * @return PolicyControllerBundleInstallSpec[]
+         */
+        public function getBundles()
+        {
+        }
+        /**
+         * Configures the installation of the Template Library.
+         *
+         * @param PolicyControllerTemplateLibraryConfig $templateLibrary
+         */
+        public function setTemplateLibrary(PolicyControllerTemplateLibraryConfig $templateLibrary)
+        {
+        }
+        /**
+         * @return PolicyControllerTemplateLibraryConfig
+         */
+        public function getTemplateLibrary()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PolicyControllerBundleInstallSpec[]
+     * Runtime class alias of \Google\Service\GKEHub\PolicyControllerPolicyContentSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBundles()
-    {
-    }
-    /**
-     * Configures the installation of the Template Library.
-     *
-     * @param PolicyControllerTemplateLibraryConfig $templateLibrary
-     */
-    public function setTemplateLibrary(PolicyControllerTemplateLibraryConfig $templateLibrary)
-    {
-    }
-    /**
-     * @return PolicyControllerTemplateLibraryConfig
-     */
-    public function getTemplateLibrary()
+    class Google_Service_GKEHub_PolicyControllerPolicyContentSpec extends \Google\Service\GKEHub\PolicyControllerPolicyContentSpec
     {
     }
 }

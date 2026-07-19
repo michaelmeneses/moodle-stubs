@@ -21,129 +21,138 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ExchangedPeeringRoute extends \Google\Model
-{
-    /**
-     * For routes exported from local network.
-     */
-    public const TYPE_DYNAMIC_PEERING_ROUTE = 'DYNAMIC_PEERING_ROUTE';
-    /**
-     * The peering route.
-     */
-    public const TYPE_STATIC_PEERING_ROUTE = 'STATIC_PEERING_ROUTE';
-    /**
-     * The peering route corresponding to subnetwork range.
-     */
-    public const TYPE_SUBNET_PEERING_ROUTE = 'SUBNET_PEERING_ROUTE';
-    /**
-     * The destination range of the route.
-     *
-     * @var string
-     */
-    public $destRange;
-    /**
-     * True if the peering route has been imported from a peer. The actual import
-     * happens if the field networkPeering.importCustomRoutes is true for this
-     * network, and networkPeering.exportCustomRoutes is true for the peer
-     * network, and the import does not result in a route conflict.
-     *
-     * @var bool
-     */
-    public $imported;
-    /**
-     * The region of peering route next hop, only applies to dynamic routes.
-     *
-     * @var string
-     */
-    public $nextHopRegion;
-    /**
-     * The priority of the peering route.
-     *
-     * @var string
-     */
-    public $priority;
-    /**
-     * The type of the peering route.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The destination range of the route.
-     *
-     * @param string $destRange
-     */
-    public function setDestRange($destRange)
+namespace Google\Service\Compute {
+    class ExchangedPeeringRoute extends \Google\Model
     {
+        /**
+         * For routes exported from local network.
+         */
+        public const TYPE_DYNAMIC_PEERING_ROUTE = 'DYNAMIC_PEERING_ROUTE';
+        /**
+         * The peering route.
+         */
+        public const TYPE_STATIC_PEERING_ROUTE = 'STATIC_PEERING_ROUTE';
+        /**
+         * The peering route corresponding to subnetwork range.
+         */
+        public const TYPE_SUBNET_PEERING_ROUTE = 'SUBNET_PEERING_ROUTE';
+        /**
+         * The destination range of the route.
+         *
+         * @var string
+         */
+        public $destRange;
+        /**
+         * True if the peering route has been imported from a peer. The actual import
+         * happens if the field networkPeering.importCustomRoutes is true for this
+         * network, and networkPeering.exportCustomRoutes is true for the peer
+         * network, and the import does not result in a route conflict.
+         *
+         * @var bool
+         */
+        public $imported;
+        /**
+         * The region of peering route next hop, only applies to dynamic routes.
+         *
+         * @var string
+         */
+        public $nextHopRegion;
+        /**
+         * The priority of the peering route.
+         *
+         * @var string
+         */
+        public $priority;
+        /**
+         * The type of the peering route.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The destination range of the route.
+         *
+         * @param string $destRange
+         */
+        public function setDestRange($destRange)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDestRange()
+        {
+        }
+        /**
+         * True if the peering route has been imported from a peer. The actual import
+         * happens if the field networkPeering.importCustomRoutes is true for this
+         * network, and networkPeering.exportCustomRoutes is true for the peer
+         * network, and the import does not result in a route conflict.
+         *
+         * @param bool $imported
+         */
+        public function setImported($imported)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getImported()
+        {
+        }
+        /**
+         * The region of peering route next hop, only applies to dynamic routes.
+         *
+         * @param string $nextHopRegion
+         */
+        public function setNextHopRegion($nextHopRegion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextHopRegion()
+        {
+        }
+        /**
+         * The priority of the peering route.
+         *
+         * @param string $priority
+         */
+        public function setPriority($priority)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPriority()
+        {
+        }
+        /**
+         * The type of the peering route.
+         *
+         * Accepted values: DYNAMIC_PEERING_ROUTE, STATIC_PEERING_ROUTE,
+         * SUBNET_PEERING_ROUTE
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Compute\ExchangedPeeringRoute registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDestRange()
-    {
-    }
-    /**
-     * True if the peering route has been imported from a peer. The actual import
-     * happens if the field networkPeering.importCustomRoutes is true for this
-     * network, and networkPeering.exportCustomRoutes is true for the peer
-     * network, and the import does not result in a route conflict.
-     *
-     * @param bool $imported
-     */
-    public function setImported($imported)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getImported()
-    {
-    }
-    /**
-     * The region of peering route next hop, only applies to dynamic routes.
-     *
-     * @param string $nextHopRegion
-     */
-    public function setNextHopRegion($nextHopRegion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextHopRegion()
-    {
-    }
-    /**
-     * The priority of the peering route.
-     *
-     * @param string $priority
-     */
-    public function setPriority($priority)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPriority()
-    {
-    }
-    /**
-     * The type of the peering route.
-     *
-     * Accepted values: DYNAMIC_PEERING_ROUTE, STATIC_PEERING_ROUTE,
-     * SUBNET_PEERING_ROUTE
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_Compute_ExchangedPeeringRoute extends \Google\Service\Compute\ExchangedPeeringRoute
     {
     }
 }

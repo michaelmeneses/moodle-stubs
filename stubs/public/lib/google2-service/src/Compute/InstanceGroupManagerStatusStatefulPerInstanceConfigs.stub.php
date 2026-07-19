@@ -21,32 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InstanceGroupManagerStatusStatefulPerInstanceConfigs extends \Google\Model
-{
-    /**
-     * Output only. A bit indicating if all of the group's per-instance
-     * configurations (listed in the output of a listPerInstanceConfigs API call)
-     * have status EFFECTIVE or there are no per-instance-configs.
-     *
-     * @var bool
-     */
-    public $allEffective;
-    /**
-     * Output only. A bit indicating if all of the group's per-instance
-     * configurations (listed in the output of a listPerInstanceConfigs API call)
-     * have status EFFECTIVE or there are no per-instance-configs.
-     *
-     * @param bool $allEffective
-     */
-    public function setAllEffective($allEffective)
+namespace Google\Service\Compute {
+    class InstanceGroupManagerStatusStatefulPerInstanceConfigs extends \Google\Model
     {
+        /**
+         * Output only. A bit indicating if all of the group's per-instance
+         * configurations (listed in the output of a listPerInstanceConfigs API call)
+         * have status EFFECTIVE or there are no per-instance-configs.
+         *
+         * @var bool
+         */
+        public $allEffective;
+        /**
+         * Output only. A bit indicating if all of the group's per-instance
+         * configurations (listed in the output of a listPerInstanceConfigs API call)
+         * have status EFFECTIVE or there are no per-instance-configs.
+         *
+         * @param bool $allEffective
+         */
+        public function setAllEffective($allEffective)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAllEffective()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Compute\InstanceGroupManagerStatusStatefulPerInstanceConfigs registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllEffective()
+    class Google_Service_Compute_InstanceGroupManagerStatusStatefulPerInstanceConfigs extends \Google\Service\Compute\InstanceGroupManagerStatusStatefulPerInstanceConfigs
     {
     }
 }

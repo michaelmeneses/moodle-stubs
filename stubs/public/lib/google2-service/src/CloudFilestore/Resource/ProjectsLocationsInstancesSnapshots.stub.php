@@ -21,101 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudFilestore\Resource;
-
-/**
- * The "snapshots" collection of methods.
- * Typical usage is:
- *  <code>
- *   $fileService = new Google\Service\CloudFilestore(...);
- *   $snapshots = $fileService->projects_locations_instances_snapshots;
- *  </code>
- */
-class ProjectsLocationsInstancesSnapshots extends \Google\Service\Resource
-{
+namespace Google\Service\CloudFilestore\Resource {
+    use Google\Service\CloudFilestore\ListSnapshotsResponse;
+    use Google\Service\CloudFilestore\Operation;
+    use Google\Service\CloudFilestore\Snapshot;
     /**
-     * Creates a snapshot. (snapshots.create)
-     *
-     * @param string $parent Required. The Filestore Instance to create the
-     * snapshots of, in the format
-     * `projects/{project_id}/locations/{location}/instances/{instance_id}`
-     * @param Snapshot $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string snapshotId Required. The ID to use for the snapshot. The ID
-     * must be unique within the specified instance. This value must start with a
-     * lowercase letter followed by up to 62 lowercase letters, numbers, or hyphens,
-     * and cannot end with a hyphen.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "snapshots" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $fileService = new Google\Service\CloudFilestore(...);
+     *   $snapshots = $fileService->projects_locations_instances_snapshots;
+     *  </code>
      */
-    public function create($parent, Snapshot $postBody, $optParams = [])
+    class ProjectsLocationsInstancesSnapshots extends \Google\Service\Resource
     {
+        /**
+         * Creates a snapshot. (snapshots.create)
+         *
+         * @param string $parent Required. The Filestore Instance to create the
+         * snapshots of, in the format
+         * `projects/{project_id}/locations/{location}/instances/{instance_id}`
+         * @param Snapshot $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string snapshotId Required. The ID to use for the snapshot. The ID
+         * must be unique within the specified instance. This value must start with a
+         * lowercase letter followed by up to 62 lowercase letters, numbers, or hyphens,
+         * and cannot end with a hyphen.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, Snapshot $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a snapshot. (snapshots.delete)
+         *
+         * @param string $name Required. The snapshot resource name, in the format `proj
+         * ects/{project_id}/locations/{location}/instances/{instance_id}/snapshots/{sna
+         * pshot_id}`
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets the details of a specific snapshot. (snapshots.get)
+         *
+         * @param string $name Required. The snapshot resource name, in the format `proj
+         * ects/{project_id}/locations/{location}/instances/{instance_id}/snapshots/{sna
+         * pshot_id}`
+         * @param array $optParams Optional parameters.
+         * @return Snapshot
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists all snapshots in a project for either a specified location or for all
+         * locations. (snapshots.listProjectsLocationsInstancesSnapshots)
+         *
+         * @param string $parent Required. The instance for which to retrieve snapshot
+         * information, in the format
+         * `projects/{project_id}/locations/{location}/instances/{instance_id}`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter List filter.
+         * @opt_param string orderBy Sort results. Supported values are "name", "name
+         * desc" or "" (unsorted).
+         * @opt_param int pageSize The maximum number of items to return.
+         * @opt_param string pageToken The next_page_token value to use if there are
+         * additional results to retrieve for this list request.
+         * @opt_param bool returnPartialSuccess Optional. If true, allow partial
+         * responses for multi-regional Aggregated List requests.
+         * @return ListSnapshotsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsInstancesSnapshots($parent, $optParams = [])
+        {
+        }
+        /**
+         * Updates the settings of a specific snapshot. (snapshots.patch)
+         *
+         * @param string $name Output only. The resource name of the snapshot, in the
+         * format `projects/{project_id}/locations/{location_id}/instances/{instance_id}
+         * /snapshots/{snapshot_id}`.
+         * @param Snapshot $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Required. Mask of fields to update. At least one
+         * path must be supplied in this field.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function patch($name, Snapshot $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a snapshot. (snapshots.delete)
-     *
-     * @param string $name Required. The snapshot resource name, in the format `proj
-     * ects/{project_id}/locations/{location}/instances/{instance_id}/snapshots/{sna
-     * pshot_id}`
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\CloudFilestore\Resource\ProjectsLocationsInstancesSnapshots registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets the details of a specific snapshot. (snapshots.get)
-     *
-     * @param string $name Required. The snapshot resource name, in the format `proj
-     * ects/{project_id}/locations/{location}/instances/{instance_id}/snapshots/{sna
-     * pshot_id}`
-     * @param array $optParams Optional parameters.
-     * @return Snapshot
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists all snapshots in a project for either a specified location or for all
-     * locations. (snapshots.listProjectsLocationsInstancesSnapshots)
-     *
-     * @param string $parent Required. The instance for which to retrieve snapshot
-     * information, in the format
-     * `projects/{project_id}/locations/{location}/instances/{instance_id}`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter List filter.
-     * @opt_param string orderBy Sort results. Supported values are "name", "name
-     * desc" or "" (unsorted).
-     * @opt_param int pageSize The maximum number of items to return.
-     * @opt_param string pageToken The next_page_token value to use if there are
-     * additional results to retrieve for this list request.
-     * @opt_param bool returnPartialSuccess Optional. If true, allow partial
-     * responses for multi-regional Aggregated List requests.
-     * @return ListSnapshotsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsInstancesSnapshots($parent, $optParams = [])
-    {
-    }
-    /**
-     * Updates the settings of a specific snapshot. (snapshots.patch)
-     *
-     * @param string $name Output only. The resource name of the snapshot, in the
-     * format `projects/{project_id}/locations/{location_id}/instances/{instance_id}
-     * /snapshots/{snapshot_id}`.
-     * @param Snapshot $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Required. Mask of fields to update. At least one
-     * path must be supplied in this field.
-     * @return Operation
-     * @throws \Google\Service\Exception
-     */
-    public function patch($name, Snapshot $postBody, $optParams = [])
+    class Google_Service_CloudFilestore_Resource_ProjectsLocationsInstancesSnapshots extends \Google\Service\CloudFilestore\Resource\ProjectsLocationsInstancesSnapshots
     {
     }
 }

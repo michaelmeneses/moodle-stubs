@@ -21,122 +21,131 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CCAIPlatform;
-
-class EventTemplate extends \Google\Model
-{
-    /**
-     * Required. Fixed duration in minutes of this event.
-     *
-     * @var int
-     */
-    public $durationMinutes;
-    /**
-     * Required. Unique ID of this template.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Optional. Maximum number of minutes after the beginning of a shift that
-     * this event can start.
-     *
-     * @var int
-     */
-    public $maximumMinutesAfterShiftStart;
-    /**
-     * Optional. Minimum number of minutes after the beginning of a shift that
-     * this event can start.
-     *
-     * @var int
-     */
-    public $minimumMinutesAfterShiftStart;
-    /**
-     * Required. The time increment (in minutes) used to generate the set of
-     * possible event start times between `minimum_minutes_after_shift_start` and
-     * `maximum_minutes_after_shift_start`. For example, if the minimum minutes
-     * after shift start are 30, maximum minutes after shift start are 45, and the
-     * start time increment is 5 minutes, the event can take place 30, 35, 40, or
-     * 45 minutes after the start of the shift.
-     *
-     * @var int
-     */
-    public $startTimeIncrementMinutes;
-    /**
-     * Required. Fixed duration in minutes of this event.
-     *
-     * @param int $durationMinutes
-     */
-    public function setDurationMinutes($durationMinutes)
+namespace Google\Service\CCAIPlatform {
+    class EventTemplate extends \Google\Model
     {
+        /**
+         * Required. Fixed duration in minutes of this event.
+         *
+         * @var int
+         */
+        public $durationMinutes;
+        /**
+         * Required. Unique ID of this template.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Optional. Maximum number of minutes after the beginning of a shift that
+         * this event can start.
+         *
+         * @var int
+         */
+        public $maximumMinutesAfterShiftStart;
+        /**
+         * Optional. Minimum number of minutes after the beginning of a shift that
+         * this event can start.
+         *
+         * @var int
+         */
+        public $minimumMinutesAfterShiftStart;
+        /**
+         * Required. The time increment (in minutes) used to generate the set of
+         * possible event start times between `minimum_minutes_after_shift_start` and
+         * `maximum_minutes_after_shift_start`. For example, if the minimum minutes
+         * after shift start are 30, maximum minutes after shift start are 45, and the
+         * start time increment is 5 minutes, the event can take place 30, 35, 40, or
+         * 45 minutes after the start of the shift.
+         *
+         * @var int
+         */
+        public $startTimeIncrementMinutes;
+        /**
+         * Required. Fixed duration in minutes of this event.
+         *
+         * @param int $durationMinutes
+         */
+        public function setDurationMinutes($durationMinutes)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDurationMinutes()
+        {
+        }
+        /**
+         * Required. Unique ID of this template.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Optional. Maximum number of minutes after the beginning of a shift that
+         * this event can start.
+         *
+         * @param int $maximumMinutesAfterShiftStart
+         */
+        public function setMaximumMinutesAfterShiftStart($maximumMinutesAfterShiftStart)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMaximumMinutesAfterShiftStart()
+        {
+        }
+        /**
+         * Optional. Minimum number of minutes after the beginning of a shift that
+         * this event can start.
+         *
+         * @param int $minimumMinutesAfterShiftStart
+         */
+        public function setMinimumMinutesAfterShiftStart($minimumMinutesAfterShiftStart)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getMinimumMinutesAfterShiftStart()
+        {
+        }
+        /**
+         * Required. The time increment (in minutes) used to generate the set of
+         * possible event start times between `minimum_minutes_after_shift_start` and
+         * `maximum_minutes_after_shift_start`. For example, if the minimum minutes
+         * after shift start are 30, maximum minutes after shift start are 45, and the
+         * start time increment is 5 minutes, the event can take place 30, 35, 40, or
+         * 45 minutes after the start of the shift.
+         *
+         * @param int $startTimeIncrementMinutes
+         */
+        public function setStartTimeIncrementMinutes($startTimeIncrementMinutes)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getStartTimeIncrementMinutes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CCAIPlatform\EventTemplate registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDurationMinutes()
-    {
-    }
-    /**
-     * Required. Unique ID of this template.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Optional. Maximum number of minutes after the beginning of a shift that
-     * this event can start.
-     *
-     * @param int $maximumMinutesAfterShiftStart
-     */
-    public function setMaximumMinutesAfterShiftStart($maximumMinutesAfterShiftStart)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMaximumMinutesAfterShiftStart()
-    {
-    }
-    /**
-     * Optional. Minimum number of minutes after the beginning of a shift that
-     * this event can start.
-     *
-     * @param int $minimumMinutesAfterShiftStart
-     */
-    public function setMinimumMinutesAfterShiftStart($minimumMinutesAfterShiftStart)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getMinimumMinutesAfterShiftStart()
-    {
-    }
-    /**
-     * Required. The time increment (in minutes) used to generate the set of
-     * possible event start times between `minimum_minutes_after_shift_start` and
-     * `maximum_minutes_after_shift_start`. For example, if the minimum minutes
-     * after shift start are 30, maximum minutes after shift start are 45, and the
-     * start time increment is 5 minutes, the event can take place 30, 35, 40, or
-     * 45 minutes after the start of the shift.
-     *
-     * @param int $startTimeIncrementMinutes
-     */
-    public function setStartTimeIncrementMinutes($startTimeIncrementMinutes)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getStartTimeIncrementMinutes()
+    class Google_Service_CCAIPlatform_EventTemplate extends \Google\Service\CCAIPlatform\EventTemplate
     {
     }
 }

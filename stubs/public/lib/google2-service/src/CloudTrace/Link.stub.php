@@ -21,99 +21,108 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudTrace;
-
-class Link extends \Google\Model
-{
-    /**
-     * The relationship of the two spans is unknown.
-     */
-    public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
-    /**
-     * The linked span is a child of the current span.
-     */
-    public const TYPE_CHILD_LINKED_SPAN = 'CHILD_LINKED_SPAN';
-    /**
-     * The linked span is a parent of the current span.
-     */
-    public const TYPE_PARENT_LINKED_SPAN = 'PARENT_LINKED_SPAN';
-    protected $attributesType = Attributes::class;
-    protected $attributesDataType = '';
-    /**
-     * The `[SPAN_ID]` for a span within a trace.
-     *
-     * @var string
-     */
-    public $spanId;
-    /**
-     * The `[TRACE_ID]` for a trace within a project.
-     *
-     * @var string
-     */
-    public $traceId;
-    /**
-     * The relationship of the current span relative to the linked span.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * A set of attributes on the link. Up to 32 attributes can be specified per
-     * link.
-     *
-     * @param Attributes $attributes
-     */
-    public function setAttributes(Attributes $attributes)
+namespace Google\Service\CloudTrace {
+    class Link extends \Google\Model
     {
+        /**
+         * The relationship of the two spans is unknown.
+         */
+        public const TYPE_TYPE_UNSPECIFIED = 'TYPE_UNSPECIFIED';
+        /**
+         * The linked span is a child of the current span.
+         */
+        public const TYPE_CHILD_LINKED_SPAN = 'CHILD_LINKED_SPAN';
+        /**
+         * The linked span is a parent of the current span.
+         */
+        public const TYPE_PARENT_LINKED_SPAN = 'PARENT_LINKED_SPAN';
+        protected $attributesType = Attributes::class;
+        protected $attributesDataType = '';
+        /**
+         * The `[SPAN_ID]` for a span within a trace.
+         *
+         * @var string
+         */
+        public $spanId;
+        /**
+         * The `[TRACE_ID]` for a trace within a project.
+         *
+         * @var string
+         */
+        public $traceId;
+        /**
+         * The relationship of the current span relative to the linked span.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * A set of attributes on the link. Up to 32 attributes can be specified per
+         * link.
+         *
+         * @param Attributes $attributes
+         */
+        public function setAttributes(Attributes $attributes)
+        {
+        }
+        /**
+         * @return Attributes
+         */
+        public function getAttributes()
+        {
+        }
+        /**
+         * The `[SPAN_ID]` for a span within a trace.
+         *
+         * @param string $spanId
+         */
+        public function setSpanId($spanId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSpanId()
+        {
+        }
+        /**
+         * The `[TRACE_ID]` for a trace within a project.
+         *
+         * @param string $traceId
+         */
+        public function setTraceId($traceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTraceId()
+        {
+        }
+        /**
+         * The relationship of the current span relative to the linked span.
+         *
+         * Accepted values: TYPE_UNSPECIFIED, CHILD_LINKED_SPAN, PARENT_LINKED_SPAN
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Attributes
+     * Runtime class alias of \Google\Service\CloudTrace\Link registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttributes()
-    {
-    }
-    /**
-     * The `[SPAN_ID]` for a span within a trace.
-     *
-     * @param string $spanId
-     */
-    public function setSpanId($spanId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSpanId()
-    {
-    }
-    /**
-     * The `[TRACE_ID]` for a trace within a project.
-     *
-     * @param string $traceId
-     */
-    public function setTraceId($traceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTraceId()
-    {
-    }
-    /**
-     * The relationship of the current span relative to the linked span.
-     *
-     * Accepted values: TYPE_UNSPECIFIED, CHILD_LINKED_SPAN, PARENT_LINKED_SPAN
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return self::TYPE_*
-     */
-    public function getType()
+    class Google_Service_CloudTrace_Link extends \Google\Service\CloudTrace\Link
     {
     }
 }

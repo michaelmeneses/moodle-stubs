@@ -21,225 +21,234 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class Value extends \Google\Model
-{
-    /**
-     * Null value.
-     */
-    public const NULL_VALUE_NULL_VALUE = 'NULL_VALUE';
-    protected $arrayValueType = ArrayValue::class;
-    protected $arrayValueDataType = '';
-    /**
-     * A boolean value.
-     *
-     * @var bool
-     */
-    public $booleanValue;
-    /**
-     * A bytes value. Must not exceed 1 MiB - 89 bytes. Only the first 1,500 bytes
-     * are considered by queries.
-     *
-     * @var string
-     */
-    public $bytesValue;
-    /**
-     * A double value.
-     *
-     * @var 
-     */
-    public $doubleValue;
-    protected $geoPointValueType = LatLng::class;
-    protected $geoPointValueDataType = '';
-    /**
-     * An integer value.
-     *
-     * @var string
-     */
-    public $integerValue;
-    protected $mapValueType = MapValue::class;
-    protected $mapValueDataType = '';
-    /**
-     * A null value.
-     *
-     * @var string
-     */
-    public $nullValue;
-    /**
-     * A reference to a document. For example:
-     * `projects/{project_id}/databases/{database_id}/documents/{document_path}`.
-     *
-     * @var string
-     */
-    public $referenceValue;
-    /**
-     * A string value. The string, represented as UTF-8, must not exceed 1 MiB -
-     * 89 bytes. Only the first 1,500 bytes of the UTF-8 representation are
-     * considered by queries.
-     *
-     * @var string
-     */
-    public $stringValue;
-    /**
-     * A timestamp value. Precise only to microseconds. When stored, any
-     * additional precision is rounded down.
-     *
-     * @var string
-     */
-    public $timestampValue;
-    /**
-     * An array value. Cannot directly contain another array value, though can
-     * contain a map which contains another array.
-     *
-     * @param ArrayValue $arrayValue
-     */
-    public function setArrayValue(ArrayValue $arrayValue)
+namespace Google\Service\Firestore {
+    class Value extends \Google\Model
     {
+        /**
+         * Null value.
+         */
+        public const NULL_VALUE_NULL_VALUE = 'NULL_VALUE';
+        protected $arrayValueType = ArrayValue::class;
+        protected $arrayValueDataType = '';
+        /**
+         * A boolean value.
+         *
+         * @var bool
+         */
+        public $booleanValue;
+        /**
+         * A bytes value. Must not exceed 1 MiB - 89 bytes. Only the first 1,500 bytes
+         * are considered by queries.
+         *
+         * @var string
+         */
+        public $bytesValue;
+        /**
+         * A double value.
+         *
+         * @var 
+         */
+        public $doubleValue;
+        protected $geoPointValueType = LatLng::class;
+        protected $geoPointValueDataType = '';
+        /**
+         * An integer value.
+         *
+         * @var string
+         */
+        public $integerValue;
+        protected $mapValueType = MapValue::class;
+        protected $mapValueDataType = '';
+        /**
+         * A null value.
+         *
+         * @var string
+         */
+        public $nullValue;
+        /**
+         * A reference to a document. For example:
+         * `projects/{project_id}/databases/{database_id}/documents/{document_path}`.
+         *
+         * @var string
+         */
+        public $referenceValue;
+        /**
+         * A string value. The string, represented as UTF-8, must not exceed 1 MiB -
+         * 89 bytes. Only the first 1,500 bytes of the UTF-8 representation are
+         * considered by queries.
+         *
+         * @var string
+         */
+        public $stringValue;
+        /**
+         * A timestamp value. Precise only to microseconds. When stored, any
+         * additional precision is rounded down.
+         *
+         * @var string
+         */
+        public $timestampValue;
+        /**
+         * An array value. Cannot directly contain another array value, though can
+         * contain a map which contains another array.
+         *
+         * @param ArrayValue $arrayValue
+         */
+        public function setArrayValue(ArrayValue $arrayValue)
+        {
+        }
+        /**
+         * @return ArrayValue
+         */
+        public function getArrayValue()
+        {
+        }
+        /**
+         * A boolean value.
+         *
+         * @param bool $booleanValue
+         */
+        public function setBooleanValue($booleanValue)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBooleanValue()
+        {
+        }
+        /**
+         * A bytes value. Must not exceed 1 MiB - 89 bytes. Only the first 1,500 bytes
+         * are considered by queries.
+         *
+         * @param string $bytesValue
+         */
+        public function setBytesValue($bytesValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBytesValue()
+        {
+        }
+        public function setDoubleValue($doubleValue)
+        {
+        }
+        public function getDoubleValue()
+        {
+        }
+        /**
+         * A geo point value representing a point on the surface of Earth.
+         *
+         * @param LatLng $geoPointValue
+         */
+        public function setGeoPointValue(LatLng $geoPointValue)
+        {
+        }
+        /**
+         * @return LatLng
+         */
+        public function getGeoPointValue()
+        {
+        }
+        /**
+         * An integer value.
+         *
+         * @param string $integerValue
+         */
+        public function setIntegerValue($integerValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIntegerValue()
+        {
+        }
+        /**
+         * A map value.
+         *
+         * @param MapValue $mapValue
+         */
+        public function setMapValue(MapValue $mapValue)
+        {
+        }
+        /**
+         * @return MapValue
+         */
+        public function getMapValue()
+        {
+        }
+        /**
+         * A null value.
+         *
+         * Accepted values: NULL_VALUE
+         *
+         * @param self::NULL_VALUE_* $nullValue
+         */
+        public function setNullValue($nullValue)
+        {
+        }
+        /**
+         * @return self::NULL_VALUE_*
+         */
+        public function getNullValue()
+        {
+        }
+        /**
+         * A reference to a document. For example:
+         * `projects/{project_id}/databases/{database_id}/documents/{document_path}`.
+         *
+         * @param string $referenceValue
+         */
+        public function setReferenceValue($referenceValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReferenceValue()
+        {
+        }
+        /**
+         * A string value. The string, represented as UTF-8, must not exceed 1 MiB -
+         * 89 bytes. Only the first 1,500 bytes of the UTF-8 representation are
+         * considered by queries.
+         *
+         * @param string $stringValue
+         */
+        public function setStringValue($stringValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStringValue()
+        {
+        }
+        /**
+         * A timestamp value. Precise only to microseconds. When stored, any
+         * additional precision is rounded down.
+         *
+         * @param string $timestampValue
+         */
+        public function setTimestampValue($timestampValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimestampValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ArrayValue
+     * Runtime class alias of \Google\Service\Firestore\Value registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getArrayValue()
-    {
-    }
-    /**
-     * A boolean value.
-     *
-     * @param bool $booleanValue
-     */
-    public function setBooleanValue($booleanValue)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getBooleanValue()
-    {
-    }
-    /**
-     * A bytes value. Must not exceed 1 MiB - 89 bytes. Only the first 1,500 bytes
-     * are considered by queries.
-     *
-     * @param string $bytesValue
-     */
-    public function setBytesValue($bytesValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getBytesValue()
-    {
-    }
-    public function setDoubleValue($doubleValue)
-    {
-    }
-    public function getDoubleValue()
-    {
-    }
-    /**
-     * A geo point value representing a point on the surface of Earth.
-     *
-     * @param LatLng $geoPointValue
-     */
-    public function setGeoPointValue(LatLng $geoPointValue)
-    {
-    }
-    /**
-     * @return LatLng
-     */
-    public function getGeoPointValue()
-    {
-    }
-    /**
-     * An integer value.
-     *
-     * @param string $integerValue
-     */
-    public function setIntegerValue($integerValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIntegerValue()
-    {
-    }
-    /**
-     * A map value.
-     *
-     * @param MapValue $mapValue
-     */
-    public function setMapValue(MapValue $mapValue)
-    {
-    }
-    /**
-     * @return MapValue
-     */
-    public function getMapValue()
-    {
-    }
-    /**
-     * A null value.
-     *
-     * Accepted values: NULL_VALUE
-     *
-     * @param self::NULL_VALUE_* $nullValue
-     */
-    public function setNullValue($nullValue)
-    {
-    }
-    /**
-     * @return self::NULL_VALUE_*
-     */
-    public function getNullValue()
-    {
-    }
-    /**
-     * A reference to a document. For example:
-     * `projects/{project_id}/databases/{database_id}/documents/{document_path}`.
-     *
-     * @param string $referenceValue
-     */
-    public function setReferenceValue($referenceValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReferenceValue()
-    {
-    }
-    /**
-     * A string value. The string, represented as UTF-8, must not exceed 1 MiB -
-     * 89 bytes. Only the first 1,500 bytes of the UTF-8 representation are
-     * considered by queries.
-     *
-     * @param string $stringValue
-     */
-    public function setStringValue($stringValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStringValue()
-    {
-    }
-    /**
-     * A timestamp value. Precise only to microseconds. When stored, any
-     * additional precision is rounded down.
-     *
-     * @param string $timestampValue
-     */
-    public function setTimestampValue($timestampValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimestampValue()
+    class Google_Service_Firestore_Value extends \Google\Service\Firestore\Value
     {
     }
 }

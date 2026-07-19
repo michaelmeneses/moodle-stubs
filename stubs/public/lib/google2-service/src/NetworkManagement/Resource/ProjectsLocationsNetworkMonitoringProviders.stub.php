@@ -21,85 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkManagement\Resource;
-
-/**
- * The "networkMonitoringProviders" collection of methods.
- * Typical usage is:
- *  <code>
- *   $networkmanagementService = new Google\Service\NetworkManagement(...);
- *   $networkMonitoringProviders = $networkmanagementService->projects_locations_networkMonitoringProviders;
- *  </code>
- */
-class ProjectsLocationsNetworkMonitoringProviders extends \Google\Service\Resource
-{
+namespace Google\Service\NetworkManagement\Resource {
+    use Google\Service\NetworkManagement\ListNetworkMonitoringProvidersResponse;
+    use Google\Service\NetworkManagement\NetworkMonitoringProvider;
+    use Google\Service\NetworkManagement\Operation;
     /**
-     * Creates a NetworkMonitoringProvider resource.
-     * (networkMonitoringProviders.create)
-     *
-     * @param string $parent Required. Parent value for
-     * CreateNetworkMonitoringProviderRequest. Format:
-     * projects/{project}/locations/{location}
-     * @param NetworkMonitoringProvider $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string networkMonitoringProviderId Required. The ID to use for the
-     * NetworkMonitoringProvider resource, which will become the final component of
-     * the NetworkMonitoringProvider resource's name.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * The "networkMonitoringProviders" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $networkmanagementService = new Google\Service\NetworkManagement(...);
+     *   $networkMonitoringProviders = $networkmanagementService->projects_locations_networkMonitoringProviders;
+     *  </code>
      */
-    public function create($parent, NetworkMonitoringProvider $postBody, $optParams = [])
+    class ProjectsLocationsNetworkMonitoringProviders extends \Google\Service\Resource
     {
+        /**
+         * Creates a NetworkMonitoringProvider resource.
+         * (networkMonitoringProviders.create)
+         *
+         * @param string $parent Required. Parent value for
+         * CreateNetworkMonitoringProviderRequest. Format:
+         * projects/{project}/locations/{location}
+         * @param NetworkMonitoringProvider $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string networkMonitoringProviderId Required. The ID to use for the
+         * NetworkMonitoringProvider resource, which will become the final component of
+         * the NetworkMonitoringProvider resource's name.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, NetworkMonitoringProvider $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a NetworkMonitoringProvider resource and all of its child resources.
+         * (networkMonitoringProviders.delete)
+         *
+         * @param string $name Required. Name of the resource. Format: projects/{project
+         * }/locations/{location}/networkMonitoringProviders/{network_monitoring_provide
+         * r}
+         * @param array $optParams Optional parameters.
+         * @return Operation
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets the NetworkMonitoringProvider resource. (networkMonitoringProviders.get)
+         *
+         * @param string $name Required. Name of the resource. Format: `projects/{projec
+         * t}/locations/{location}/networkMonitoringProviders/{network_monitoring_provid
+         * er}`
+         * @param array $optParams Optional parameters.
+         * @return NetworkMonitoringProvider
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists NetworkMonitoringProviders for a given project and location.
+         * (networkMonitoringProviders.listProjectsLocationsNetworkMonitoringProviders)
+         *
+         * @param string $parent Required. Parent value for
+         * ListNetworkMonitoringProvidersRequest. Format:
+         * `projects/{project}/locations/{location}`
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. The maximum number of monitoring points to
+         * return. The service may return fewer than this value. If unspecified, at most
+         * 20 monitoring points will be returned. The maximum value is 1000; values
+         * above 1000 will be coerced to 1000.
+         * @opt_param string pageToken Optional. A page token, received from a previous
+         * `ListMonitoringPoints` call. Provide this to retrieve the subsequent page.
+         * When paginating, all other parameters provided to `ListMonitoringPoints` must
+         * match the call that provided the page token.
+         * @return ListNetworkMonitoringProvidersResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsNetworkMonitoringProviders($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a NetworkMonitoringProvider resource and all of its child resources.
-     * (networkMonitoringProviders.delete)
-     *
-     * @param string $name Required. Name of the resource. Format: projects/{project
-     * }/locations/{location}/networkMonitoringProviders/{network_monitoring_provide
-     * r}
-     * @param array $optParams Optional parameters.
-     * @return Operation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\NetworkManagement\Resource\ProjectsLocationsNetworkMonitoringProviders registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets the NetworkMonitoringProvider resource. (networkMonitoringProviders.get)
-     *
-     * @param string $name Required. Name of the resource. Format: `projects/{projec
-     * t}/locations/{location}/networkMonitoringProviders/{network_monitoring_provid
-     * er}`
-     * @param array $optParams Optional parameters.
-     * @return NetworkMonitoringProvider
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists NetworkMonitoringProviders for a given project and location.
-     * (networkMonitoringProviders.listProjectsLocationsNetworkMonitoringProviders)
-     *
-     * @param string $parent Required. Parent value for
-     * ListNetworkMonitoringProvidersRequest. Format:
-     * `projects/{project}/locations/{location}`
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. The maximum number of monitoring points to
-     * return. The service may return fewer than this value. If unspecified, at most
-     * 20 monitoring points will be returned. The maximum value is 1000; values
-     * above 1000 will be coerced to 1000.
-     * @opt_param string pageToken Optional. A page token, received from a previous
-     * `ListMonitoringPoints` call. Provide this to retrieve the subsequent page.
-     * When paginating, all other parameters provided to `ListMonitoringPoints` must
-     * match the call that provided the page token.
-     * @return ListNetworkMonitoringProvidersResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsLocationsNetworkMonitoringProviders($parent, $optParams = [])
+    class Google_Service_NetworkManagement_Resource_ProjectsLocationsNetworkMonitoringProviders extends \Google\Service\NetworkManagement\Resource\ProjectsLocationsNetworkMonitoringProviders
     {
     }
 }

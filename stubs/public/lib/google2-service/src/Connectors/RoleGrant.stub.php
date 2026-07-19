@@ -21,71 +21,80 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class RoleGrant extends \Google\Collection
-{
-    protected $collection_key = 'roles';
-    /**
-     * @var string
-     */
-    public $helperTextTemplate;
-    /**
-     * @var string
-     */
-    public $principal;
-    protected $resourceType = ConnectorsResource::class;
-    protected $resourceDataType = '';
-    /**
-     * @var string[]
-     */
-    public $roles;
-    /**
-     * @param string
-     */
-    public function setHelperTextTemplate($helperTextTemplate)
+namespace Google\Service\Connectors {
+    class RoleGrant extends \Google\Collection
     {
+        protected $collection_key = 'roles';
+        /**
+         * @var string
+         */
+        public $helperTextTemplate;
+        /**
+         * @var string
+         */
+        public $principal;
+        protected $resourceType = ConnectorsResource::class;
+        protected $resourceDataType = '';
+        /**
+         * @var string[]
+         */
+        public $roles;
+        /**
+         * @param string
+         */
+        public function setHelperTextTemplate($helperTextTemplate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHelperTextTemplate()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPrincipal($principal)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrincipal()
+        {
+        }
+        /**
+         * @param ConnectorsResource
+         */
+        public function setResource(ConnectorsResource $resource)
+        {
+        }
+        /**
+         * @return ConnectorsResource
+         */
+        public function getResource()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setRoles($roles)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRoles()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Connectors\RoleGrant registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHelperTextTemplate()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPrincipal($principal)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPrincipal()
-    {
-    }
-    /**
-     * @param ConnectorsResource
-     */
-    public function setResource(ConnectorsResource $resource)
-    {
-    }
-    /**
-     * @return ConnectorsResource
-     */
-    public function getResource()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setRoles($roles)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRoles()
+    class Google_Service_Connectors_RoleGrant extends \Google\Service\Connectors\RoleGrant
     {
     }
 }

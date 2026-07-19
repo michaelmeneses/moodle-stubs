@@ -21,30 +21,41 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataLabeling\Resource;
-
-/**
- * The "text" collection of methods.
- * Typical usage is:
- *  <code>
- *   $datalabelingService = new Google\Service\DataLabeling(...);
- *   $text = $datalabelingService->projects_datasets_text;
- *  </code>
- */
-class ProjectsDatasetsText extends \Google\Service\Resource
-{
+namespace Google\Service\DataLabeling\Resource {
+    use Google\Service\DataLabeling\GoogleCloudDatalabelingV1beta1LabelTextRequest;
+    use Google\Service\DataLabeling\GoogleLongrunningOperation;
     /**
-     * Starts a labeling task for text. The type of text labeling task is configured
-     * by feature in the request. (text.label)
-     *
-     * @param string $parent Required. Name of the data set to request labeling
-     * task, format: projects/{project_id}/datasets/{dataset_id}
-     * @param GoogleCloudDatalabelingV1beta1LabelTextRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * The "text" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $datalabelingService = new Google\Service\DataLabeling(...);
+     *   $text = $datalabelingService->projects_datasets_text;
+     *  </code>
      */
-    public function label($parent, GoogleCloudDatalabelingV1beta1LabelTextRequest $postBody, $optParams = [])
+    class ProjectsDatasetsText extends \Google\Service\Resource
+    {
+        /**
+         * Starts a labeling task for text. The type of text labeling task is configured
+         * by feature in the request. (text.label)
+         *
+         * @param string $parent Required. Name of the data set to request labeling
+         * task, format: projects/{project_id}/datasets/{dataset_id}
+         * @param GoogleCloudDatalabelingV1beta1LabelTextRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function label($parent, GoogleCloudDatalabelingV1beta1LabelTextRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DataLabeling\Resource\ProjectsDatasetsText registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DataLabeling_Resource_ProjectsDatasetsText extends \Google\Service\DataLabeling\Resource\ProjectsDatasetsText
     {
     }
 }

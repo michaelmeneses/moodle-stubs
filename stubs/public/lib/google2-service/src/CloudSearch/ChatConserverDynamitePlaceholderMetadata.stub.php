@@ -21,122 +21,131 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class ChatConserverDynamitePlaceholderMetadata extends \Google\Model
-{
-    protected $attachmentMetadataType = ChatConserverDynamitePlaceholderMetadataAttachmentMetadata::class;
-    protected $attachmentMetadataDataType = '';
-    protected $botMessageMetadataType = ChatConserverDynamitePlaceholderMetadataBotMessageMetadata::class;
-    protected $botMessageMetadataDataType = '';
-    protected $calendarEventMetadataType = ChatConserverDynamitePlaceholderMetadataCalendarEventMetadata::class;
-    protected $calendarEventMetadataDataType = '';
-    protected $deleteMetadataType = ChatConserverDynamitePlaceholderMetadataDeleteMetadata::class;
-    protected $deleteMetadataDataType = '';
-    protected $editMetadataType = ChatConserverDynamitePlaceholderMetadataEditMetadata::class;
-    protected $editMetadataDataType = '';
-    /**
-     * @var string
-     */
-    public $spaceUrl;
-    protected $tasksMetadataType = ChatConserverDynamitePlaceholderMetadataTasksMetadata::class;
-    protected $tasksMetadataDataType = '';
-    protected $videoCallMetadataType = ChatConserverDynamitePlaceholderMetadataVideoCallMetadata::class;
-    protected $videoCallMetadataDataType = '';
-    /**
-     * @param ChatConserverDynamitePlaceholderMetadataAttachmentMetadata
-     */
-    public function setAttachmentMetadata(ChatConserverDynamitePlaceholderMetadataAttachmentMetadata $attachmentMetadata)
+namespace Google\Service\CloudSearch {
+    class ChatConserverDynamitePlaceholderMetadata extends \Google\Model
     {
+        protected $attachmentMetadataType = ChatConserverDynamitePlaceholderMetadataAttachmentMetadata::class;
+        protected $attachmentMetadataDataType = '';
+        protected $botMessageMetadataType = ChatConserverDynamitePlaceholderMetadataBotMessageMetadata::class;
+        protected $botMessageMetadataDataType = '';
+        protected $calendarEventMetadataType = ChatConserverDynamitePlaceholderMetadataCalendarEventMetadata::class;
+        protected $calendarEventMetadataDataType = '';
+        protected $deleteMetadataType = ChatConserverDynamitePlaceholderMetadataDeleteMetadata::class;
+        protected $deleteMetadataDataType = '';
+        protected $editMetadataType = ChatConserverDynamitePlaceholderMetadataEditMetadata::class;
+        protected $editMetadataDataType = '';
+        /**
+         * @var string
+         */
+        public $spaceUrl;
+        protected $tasksMetadataType = ChatConserverDynamitePlaceholderMetadataTasksMetadata::class;
+        protected $tasksMetadataDataType = '';
+        protected $videoCallMetadataType = ChatConserverDynamitePlaceholderMetadataVideoCallMetadata::class;
+        protected $videoCallMetadataDataType = '';
+        /**
+         * @param ChatConserverDynamitePlaceholderMetadataAttachmentMetadata
+         */
+        public function setAttachmentMetadata(ChatConserverDynamitePlaceholderMetadataAttachmentMetadata $attachmentMetadata)
+        {
+        }
+        /**
+         * @return ChatConserverDynamitePlaceholderMetadataAttachmentMetadata
+         */
+        public function getAttachmentMetadata()
+        {
+        }
+        /**
+         * @param ChatConserverDynamitePlaceholderMetadataBotMessageMetadata
+         */
+        public function setBotMessageMetadata(ChatConserverDynamitePlaceholderMetadataBotMessageMetadata $botMessageMetadata)
+        {
+        }
+        /**
+         * @return ChatConserverDynamitePlaceholderMetadataBotMessageMetadata
+         */
+        public function getBotMessageMetadata()
+        {
+        }
+        /**
+         * @param ChatConserverDynamitePlaceholderMetadataCalendarEventMetadata
+         */
+        public function setCalendarEventMetadata(ChatConserverDynamitePlaceholderMetadataCalendarEventMetadata $calendarEventMetadata)
+        {
+        }
+        /**
+         * @return ChatConserverDynamitePlaceholderMetadataCalendarEventMetadata
+         */
+        public function getCalendarEventMetadata()
+        {
+        }
+        /**
+         * @param ChatConserverDynamitePlaceholderMetadataDeleteMetadata
+         */
+        public function setDeleteMetadata(ChatConserverDynamitePlaceholderMetadataDeleteMetadata $deleteMetadata)
+        {
+        }
+        /**
+         * @return ChatConserverDynamitePlaceholderMetadataDeleteMetadata
+         */
+        public function getDeleteMetadata()
+        {
+        }
+        /**
+         * @param ChatConserverDynamitePlaceholderMetadataEditMetadata
+         */
+        public function setEditMetadata(ChatConserverDynamitePlaceholderMetadataEditMetadata $editMetadata)
+        {
+        }
+        /**
+         * @return ChatConserverDynamitePlaceholderMetadataEditMetadata
+         */
+        public function getEditMetadata()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSpaceUrl($spaceUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSpaceUrl()
+        {
+        }
+        /**
+         * @param ChatConserverDynamitePlaceholderMetadataTasksMetadata
+         */
+        public function setTasksMetadata(ChatConserverDynamitePlaceholderMetadataTasksMetadata $tasksMetadata)
+        {
+        }
+        /**
+         * @return ChatConserverDynamitePlaceholderMetadataTasksMetadata
+         */
+        public function getTasksMetadata()
+        {
+        }
+        /**
+         * @param ChatConserverDynamitePlaceholderMetadataVideoCallMetadata
+         */
+        public function setVideoCallMetadata(ChatConserverDynamitePlaceholderMetadataVideoCallMetadata $videoCallMetadata)
+        {
+        }
+        /**
+         * @return ChatConserverDynamitePlaceholderMetadataVideoCallMetadata
+         */
+        public function getVideoCallMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ChatConserverDynamitePlaceholderMetadataAttachmentMetadata
+     * Runtime class alias of \Google\Service\CloudSearch\ChatConserverDynamitePlaceholderMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAttachmentMetadata()
-    {
-    }
-    /**
-     * @param ChatConserverDynamitePlaceholderMetadataBotMessageMetadata
-     */
-    public function setBotMessageMetadata(ChatConserverDynamitePlaceholderMetadataBotMessageMetadata $botMessageMetadata)
-    {
-    }
-    /**
-     * @return ChatConserverDynamitePlaceholderMetadataBotMessageMetadata
-     */
-    public function getBotMessageMetadata()
-    {
-    }
-    /**
-     * @param ChatConserverDynamitePlaceholderMetadataCalendarEventMetadata
-     */
-    public function setCalendarEventMetadata(ChatConserverDynamitePlaceholderMetadataCalendarEventMetadata $calendarEventMetadata)
-    {
-    }
-    /**
-     * @return ChatConserverDynamitePlaceholderMetadataCalendarEventMetadata
-     */
-    public function getCalendarEventMetadata()
-    {
-    }
-    /**
-     * @param ChatConserverDynamitePlaceholderMetadataDeleteMetadata
-     */
-    public function setDeleteMetadata(ChatConserverDynamitePlaceholderMetadataDeleteMetadata $deleteMetadata)
-    {
-    }
-    /**
-     * @return ChatConserverDynamitePlaceholderMetadataDeleteMetadata
-     */
-    public function getDeleteMetadata()
-    {
-    }
-    /**
-     * @param ChatConserverDynamitePlaceholderMetadataEditMetadata
-     */
-    public function setEditMetadata(ChatConserverDynamitePlaceholderMetadataEditMetadata $editMetadata)
-    {
-    }
-    /**
-     * @return ChatConserverDynamitePlaceholderMetadataEditMetadata
-     */
-    public function getEditMetadata()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSpaceUrl($spaceUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSpaceUrl()
-    {
-    }
-    /**
-     * @param ChatConserverDynamitePlaceholderMetadataTasksMetadata
-     */
-    public function setTasksMetadata(ChatConserverDynamitePlaceholderMetadataTasksMetadata $tasksMetadata)
-    {
-    }
-    /**
-     * @return ChatConserverDynamitePlaceholderMetadataTasksMetadata
-     */
-    public function getTasksMetadata()
-    {
-    }
-    /**
-     * @param ChatConserverDynamitePlaceholderMetadataVideoCallMetadata
-     */
-    public function setVideoCallMetadata(ChatConserverDynamitePlaceholderMetadataVideoCallMetadata $videoCallMetadata)
-    {
-    }
-    /**
-     * @return ChatConserverDynamitePlaceholderMetadataVideoCallMetadata
-     */
-    public function getVideoCallMetadata()
+    class Google_Service_CloudSearch_ChatConserverDynamitePlaceholderMetadata extends \Google\Service\CloudSearch\ChatConserverDynamitePlaceholderMetadata
     {
     }
 }

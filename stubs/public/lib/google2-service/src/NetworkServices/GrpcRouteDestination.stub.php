@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkServices;
-
-class GrpcRouteDestination extends \Google\Model
-{
-    /**
-     * Required. The URL of a destination service to which to route traffic. Must
-     * refer to either a BackendService or ServiceDirectoryService.
-     *
-     * @var string
-     */
-    public $serviceName;
-    /**
-     * Optional. Specifies the proportion of requests forwarded to the backend
-     * referenced by the serviceName field. This is computed as: -
-     * weight/Sum(weights in this destination list). For non-zero values, there
-     * may be some epsilon from the exact proportion defined here depending on the
-     * precision an implementation supports. If only one serviceName is specified
-     * and it has a weight greater than 0, 100% of the traffic is forwarded to
-     * that backend. If weights are specified for any one service name, they need
-     * to be specified for all of them. If weights are unspecified for all
-     * services, then, traffic is distributed in equal proportions to all of them.
-     *
-     * @var int
-     */
-    public $weight;
-    /**
-     * Required. The URL of a destination service to which to route traffic. Must
-     * refer to either a BackendService or ServiceDirectoryService.
-     *
-     * @param string $serviceName
-     */
-    public function setServiceName($serviceName)
+namespace Google\Service\NetworkServices {
+    class GrpcRouteDestination extends \Google\Model
     {
+        /**
+         * Required. The URL of a destination service to which to route traffic. Must
+         * refer to either a BackendService or ServiceDirectoryService.
+         *
+         * @var string
+         */
+        public $serviceName;
+        /**
+         * Optional. Specifies the proportion of requests forwarded to the backend
+         * referenced by the serviceName field. This is computed as: -
+         * weight/Sum(weights in this destination list). For non-zero values, there
+         * may be some epsilon from the exact proportion defined here depending on the
+         * precision an implementation supports. If only one serviceName is specified
+         * and it has a weight greater than 0, 100% of the traffic is forwarded to
+         * that backend. If weights are specified for any one service name, they need
+         * to be specified for all of them. If weights are unspecified for all
+         * services, then, traffic is distributed in equal proportions to all of them.
+         *
+         * @var int
+         */
+        public $weight;
+        /**
+         * Required. The URL of a destination service to which to route traffic. Must
+         * refer to either a BackendService or ServiceDirectoryService.
+         *
+         * @param string $serviceName
+         */
+        public function setServiceName($serviceName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceName()
+        {
+        }
+        /**
+         * Optional. Specifies the proportion of requests forwarded to the backend
+         * referenced by the serviceName field. This is computed as: -
+         * weight/Sum(weights in this destination list). For non-zero values, there
+         * may be some epsilon from the exact proportion defined here depending on the
+         * precision an implementation supports. If only one serviceName is specified
+         * and it has a weight greater than 0, 100% of the traffic is forwarded to
+         * that backend. If weights are specified for any one service name, they need
+         * to be specified for all of them. If weights are unspecified for all
+         * services, then, traffic is distributed in equal proportions to all of them.
+         *
+         * @param int $weight
+         */
+        public function setWeight($weight)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getWeight()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\NetworkServices\GrpcRouteDestination registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getServiceName()
-    {
-    }
-    /**
-     * Optional. Specifies the proportion of requests forwarded to the backend
-     * referenced by the serviceName field. This is computed as: -
-     * weight/Sum(weights in this destination list). For non-zero values, there
-     * may be some epsilon from the exact proportion defined here depending on the
-     * precision an implementation supports. If only one serviceName is specified
-     * and it has a weight greater than 0, 100% of the traffic is forwarded to
-     * that backend. If weights are specified for any one service name, they need
-     * to be specified for all of them. If weights are unspecified for all
-     * services, then, traffic is distributed in equal proportions to all of them.
-     *
-     * @param int $weight
-     */
-    public function setWeight($weight)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getWeight()
+    class Google_Service_NetworkServices_GrpcRouteDestination extends \Google\Service\NetworkServices\GrpcRouteDestination
     {
     }
 }

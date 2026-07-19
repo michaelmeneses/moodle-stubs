@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class CandlestickChartSpec extends \Google\Collection
-{
-    protected $collection_key = 'data';
-    protected $dataType = CandlestickData::class;
-    protected $dataDataType = 'array';
-    protected $domainType = CandlestickDomain::class;
-    protected $domainDataType = '';
-    /**
-     * The Candlestick chart data. Only one CandlestickData is supported.
-     *
-     * @param CandlestickData[] $data
-     */
-    public function setData($data)
+namespace Google\Service\Sheets {
+    class CandlestickChartSpec extends \Google\Collection
     {
+        protected $collection_key = 'data';
+        protected $dataType = CandlestickData::class;
+        protected $dataDataType = 'array';
+        protected $domainType = CandlestickDomain::class;
+        protected $domainDataType = '';
+        /**
+         * The Candlestick chart data. Only one CandlestickData is supported.
+         *
+         * @param CandlestickData[] $data
+         */
+        public function setData($data)
+        {
+        }
+        /**
+         * @return CandlestickData[]
+         */
+        public function getData()
+        {
+        }
+        /**
+         * The domain data (horizontal axis) for the candlestick chart. String data
+         * will be treated as discrete labels, other data will be treated as
+         * continuous values.
+         *
+         * @param CandlestickDomain $domain
+         */
+        public function setDomain(CandlestickDomain $domain)
+        {
+        }
+        /**
+         * @return CandlestickDomain
+         */
+        public function getDomain()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CandlestickData[]
+     * Runtime class alias of \Google\Service\Sheets\CandlestickChartSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getData()
-    {
-    }
-    /**
-     * The domain data (horizontal axis) for the candlestick chart. String data
-     * will be treated as discrete labels, other data will be treated as
-     * continuous values.
-     *
-     * @param CandlestickDomain $domain
-     */
-    public function setDomain(CandlestickDomain $domain)
-    {
-    }
-    /**
-     * @return CandlestickDomain
-     */
-    public function getDomain()
+    class Google_Service_Sheets_CandlestickChartSpec extends \Google\Service\Sheets\CandlestickChartSpec
     {
     }
 }

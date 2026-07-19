@@ -21,292 +21,301 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\IdentityToolkit;
-
-class IdentitytoolkitRelyingpartySignupNewUserRequest extends \Google\Model
-{
-    /**
-     * The captcha challenge.
-     *
-     * @var string
-     */
-    public $captchaChallenge;
-    /**
-     * Response to the captcha.
-     *
-     * @var string
-     */
-    public $captchaResponse;
-    /**
-     * Whether to disable the user. Only can be used by service account.
-     *
-     * @var bool
-     */
-    public $disabled;
-    /**
-     * The name of the user.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * The email of the user.
-     *
-     * @var string
-     */
-    public $email;
-    /**
-     * Mark the email as verified or not. Only can be used by service account.
-     *
-     * @var bool
-     */
-    public $emailVerified;
-    /**
-     * The GITKit token of the authenticated user.
-     *
-     * @var string
-     */
-    public $idToken;
-    /**
-     * Instance id token of the app.
-     *
-     * @var string
-     */
-    public $instanceId;
-    /**
-     * Privileged caller can create user with specified user id.
-     *
-     * @var string
-     */
-    public $localId;
-    /**
-     * The new password of the user.
-     *
-     * @var string
-     */
-    public $password;
-    /**
-     * Privileged caller can create user with specified phone number.
-     *
-     * @var string
-     */
-    public $phoneNumber;
-    /**
-     * The photo url of the user.
-     *
-     * @var string
-     */
-    public $photoUrl;
-    /**
-     * For multi-tenant use cases, in order to construct sign-in URL with the
-     * correct IDP parameters, Firebear needs to know which Tenant to retrieve IDP
-     * configs from.
-     *
-     * @var string
-     */
-    public $tenantId;
-    /**
-     * Tenant project number to be used for idp discovery.
-     *
-     * @var string
-     */
-    public $tenantProjectNumber;
-    /**
-     * The captcha challenge.
-     *
-     * @param string $captchaChallenge
-     */
-    public function setCaptchaChallenge($captchaChallenge)
+namespace Google\Service\IdentityToolkit {
+    class IdentitytoolkitRelyingpartySignupNewUserRequest extends \Google\Model
     {
+        /**
+         * The captcha challenge.
+         *
+         * @var string
+         */
+        public $captchaChallenge;
+        /**
+         * Response to the captcha.
+         *
+         * @var string
+         */
+        public $captchaResponse;
+        /**
+         * Whether to disable the user. Only can be used by service account.
+         *
+         * @var bool
+         */
+        public $disabled;
+        /**
+         * The name of the user.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * The email of the user.
+         *
+         * @var string
+         */
+        public $email;
+        /**
+         * Mark the email as verified or not. Only can be used by service account.
+         *
+         * @var bool
+         */
+        public $emailVerified;
+        /**
+         * The GITKit token of the authenticated user.
+         *
+         * @var string
+         */
+        public $idToken;
+        /**
+         * Instance id token of the app.
+         *
+         * @var string
+         */
+        public $instanceId;
+        /**
+         * Privileged caller can create user with specified user id.
+         *
+         * @var string
+         */
+        public $localId;
+        /**
+         * The new password of the user.
+         *
+         * @var string
+         */
+        public $password;
+        /**
+         * Privileged caller can create user with specified phone number.
+         *
+         * @var string
+         */
+        public $phoneNumber;
+        /**
+         * The photo url of the user.
+         *
+         * @var string
+         */
+        public $photoUrl;
+        /**
+         * For multi-tenant use cases, in order to construct sign-in URL with the
+         * correct IDP parameters, Firebear needs to know which Tenant to retrieve IDP
+         * configs from.
+         *
+         * @var string
+         */
+        public $tenantId;
+        /**
+         * Tenant project number to be used for idp discovery.
+         *
+         * @var string
+         */
+        public $tenantProjectNumber;
+        /**
+         * The captcha challenge.
+         *
+         * @param string $captchaChallenge
+         */
+        public function setCaptchaChallenge($captchaChallenge)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCaptchaChallenge()
+        {
+        }
+        /**
+         * Response to the captcha.
+         *
+         * @param string $captchaResponse
+         */
+        public function setCaptchaResponse($captchaResponse)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCaptchaResponse()
+        {
+        }
+        /**
+         * Whether to disable the user. Only can be used by service account.
+         *
+         * @param bool $disabled
+         */
+        public function setDisabled($disabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisabled()
+        {
+        }
+        /**
+         * The name of the user.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * The email of the user.
+         *
+         * @param string $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * Mark the email as verified or not. Only can be used by service account.
+         *
+         * @param bool $emailVerified
+         */
+        public function setEmailVerified($emailVerified)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEmailVerified()
+        {
+        }
+        /**
+         * The GITKit token of the authenticated user.
+         *
+         * @param string $idToken
+         */
+        public function setIdToken($idToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIdToken()
+        {
+        }
+        /**
+         * Instance id token of the app.
+         *
+         * @param string $instanceId
+         */
+        public function setInstanceId($instanceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstanceId()
+        {
+        }
+        /**
+         * Privileged caller can create user with specified user id.
+         *
+         * @param string $localId
+         */
+        public function setLocalId($localId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLocalId()
+        {
+        }
+        /**
+         * The new password of the user.
+         *
+         * @param string $password
+         */
+        public function setPassword($password)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPassword()
+        {
+        }
+        /**
+         * Privileged caller can create user with specified phone number.
+         *
+         * @param string $phoneNumber
+         */
+        public function setPhoneNumber($phoneNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhoneNumber()
+        {
+        }
+        /**
+         * The photo url of the user.
+         *
+         * @param string $photoUrl
+         */
+        public function setPhotoUrl($photoUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhotoUrl()
+        {
+        }
+        /**
+         * For multi-tenant use cases, in order to construct sign-in URL with the
+         * correct IDP parameters, Firebear needs to know which Tenant to retrieve IDP
+         * configs from.
+         *
+         * @param string $tenantId
+         */
+        public function setTenantId($tenantId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTenantId()
+        {
+        }
+        /**
+         * Tenant project number to be used for idp discovery.
+         *
+         * @param string $tenantProjectNumber
+         */
+        public function setTenantProjectNumber($tenantProjectNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTenantProjectNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartySignupNewUserRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCaptchaChallenge()
-    {
-    }
-    /**
-     * Response to the captcha.
-     *
-     * @param string $captchaResponse
-     */
-    public function setCaptchaResponse($captchaResponse)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCaptchaResponse()
-    {
-    }
-    /**
-     * Whether to disable the user. Only can be used by service account.
-     *
-     * @param bool $disabled
-     */
-    public function setDisabled($disabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDisabled()
-    {
-    }
-    /**
-     * The name of the user.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * The email of the user.
-     *
-     * @param string $email
-     */
-    public function setEmail($email)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEmail()
-    {
-    }
-    /**
-     * Mark the email as verified or not. Only can be used by service account.
-     *
-     * @param bool $emailVerified
-     */
-    public function setEmailVerified($emailVerified)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEmailVerified()
-    {
-    }
-    /**
-     * The GITKit token of the authenticated user.
-     *
-     * @param string $idToken
-     */
-    public function setIdToken($idToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIdToken()
-    {
-    }
-    /**
-     * Instance id token of the app.
-     *
-     * @param string $instanceId
-     */
-    public function setInstanceId($instanceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstanceId()
-    {
-    }
-    /**
-     * Privileged caller can create user with specified user id.
-     *
-     * @param string $localId
-     */
-    public function setLocalId($localId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLocalId()
-    {
-    }
-    /**
-     * The new password of the user.
-     *
-     * @param string $password
-     */
-    public function setPassword($password)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPassword()
-    {
-    }
-    /**
-     * Privileged caller can create user with specified phone number.
-     *
-     * @param string $phoneNumber
-     */
-    public function setPhoneNumber($phoneNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhoneNumber()
-    {
-    }
-    /**
-     * The photo url of the user.
-     *
-     * @param string $photoUrl
-     */
-    public function setPhotoUrl($photoUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhotoUrl()
-    {
-    }
-    /**
-     * For multi-tenant use cases, in order to construct sign-in URL with the
-     * correct IDP parameters, Firebear needs to know which Tenant to retrieve IDP
-     * configs from.
-     *
-     * @param string $tenantId
-     */
-    public function setTenantId($tenantId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTenantId()
-    {
-    }
-    /**
-     * Tenant project number to be used for idp discovery.
-     *
-     * @param string $tenantProjectNumber
-     */
-    public function setTenantProjectNumber($tenantProjectNumber)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTenantProjectNumber()
+    class Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartySignupNewUserRequest extends \Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartySignupNewUserRequest
     {
     }
 }

@@ -21,175 +21,184 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudAsset;
-
-class GoogleCloudAssetV1CustomConstraint extends \Google\Collection
-{
-    /**
-     * Unspecified. Will results in user error.
-     */
-    public const ACTION_TYPE_ACTION_TYPE_UNSPECIFIED = 'ACTION_TYPE_UNSPECIFIED';
-    /**
-     * Allowed action type.
-     */
-    public const ACTION_TYPE_ALLOW = 'ALLOW';
-    /**
-     * Deny action type.
-     */
-    public const ACTION_TYPE_DENY = 'DENY';
-    protected $collection_key = 'resourceTypes';
-    /**
-     * Allow or deny type.
-     *
-     * @var string
-     */
-    public $actionType;
-    /**
-     * Organization Policy condition/expression. For example:
-     * `resource.instanceName.matches("(production|test)_(.+_)?[\d]+")'` or,
-     * `resource.management.auto_upgrade == true`
-     *
-     * @var string
-     */
-    public $condition;
-    /**
-     * Detailed information about this custom policy constraint.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * One line display name for the UI.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * All the operations being applied for this constraint.
-     *
-     * @var string[]
-     */
-    public $methodTypes;
-    /**
-     * Name of the constraint. This is unique within the organization. Format of
-     * the name should be *
-     * `organizations/{organization_id}/customConstraints/{custom_constraint_id}`
-     * Example : "organizations/123/customConstraints/custom.createOnlyE2TypeVms"
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The Resource Instance type on which this policy applies to. Format will be
-     * of the form : "/" Example: * `compute.googleapis.com/Instance`.
-     *
-     * @var string[]
-     */
-    public $resourceTypes;
-    /**
-     * Allow or deny type.
-     *
-     * Accepted values: ACTION_TYPE_UNSPECIFIED, ALLOW, DENY
-     *
-     * @param self::ACTION_TYPE_* $actionType
-     */
-    public function setActionType($actionType)
+namespace Google\Service\CloudAsset {
+    class GoogleCloudAssetV1CustomConstraint extends \Google\Collection
     {
+        /**
+         * Unspecified. Will results in user error.
+         */
+        public const ACTION_TYPE_ACTION_TYPE_UNSPECIFIED = 'ACTION_TYPE_UNSPECIFIED';
+        /**
+         * Allowed action type.
+         */
+        public const ACTION_TYPE_ALLOW = 'ALLOW';
+        /**
+         * Deny action type.
+         */
+        public const ACTION_TYPE_DENY = 'DENY';
+        protected $collection_key = 'resourceTypes';
+        /**
+         * Allow or deny type.
+         *
+         * @var string
+         */
+        public $actionType;
+        /**
+         * Organization Policy condition/expression. For example:
+         * `resource.instanceName.matches("(production|test)_(.+_)?[\d]+")'` or,
+         * `resource.management.auto_upgrade == true`
+         *
+         * @var string
+         */
+        public $condition;
+        /**
+         * Detailed information about this custom policy constraint.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * One line display name for the UI.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * All the operations being applied for this constraint.
+         *
+         * @var string[]
+         */
+        public $methodTypes;
+        /**
+         * Name of the constraint. This is unique within the organization. Format of
+         * the name should be *
+         * `organizations/{organization_id}/customConstraints/{custom_constraint_id}`
+         * Example : "organizations/123/customConstraints/custom.createOnlyE2TypeVms"
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The Resource Instance type on which this policy applies to. Format will be
+         * of the form : "/" Example: * `compute.googleapis.com/Instance`.
+         *
+         * @var string[]
+         */
+        public $resourceTypes;
+        /**
+         * Allow or deny type.
+         *
+         * Accepted values: ACTION_TYPE_UNSPECIFIED, ALLOW, DENY
+         *
+         * @param self::ACTION_TYPE_* $actionType
+         */
+        public function setActionType($actionType)
+        {
+        }
+        /**
+         * @return self::ACTION_TYPE_*
+         */
+        public function getActionType()
+        {
+        }
+        /**
+         * Organization Policy condition/expression. For example:
+         * `resource.instanceName.matches("(production|test)_(.+_)?[\d]+")'` or,
+         * `resource.management.auto_upgrade == true`
+         *
+         * @param string $condition
+         */
+        public function setCondition($condition)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCondition()
+        {
+        }
+        /**
+         * Detailed information about this custom policy constraint.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * One line display name for the UI.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * All the operations being applied for this constraint.
+         *
+         * @param string[] $methodTypes
+         */
+        public function setMethodTypes($methodTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMethodTypes()
+        {
+        }
+        /**
+         * Name of the constraint. This is unique within the organization. Format of
+         * the name should be *
+         * `organizations/{organization_id}/customConstraints/{custom_constraint_id}`
+         * Example : "organizations/123/customConstraints/custom.createOnlyE2TypeVms"
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The Resource Instance type on which this policy applies to. Format will be
+         * of the form : "/" Example: * `compute.googleapis.com/Instance`.
+         *
+         * @param string[] $resourceTypes
+         */
+        public function setResourceTypes($resourceTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getResourceTypes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::ACTION_TYPE_*
+     * Runtime class alias of \Google\Service\CloudAsset\GoogleCloudAssetV1CustomConstraint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getActionType()
-    {
-    }
-    /**
-     * Organization Policy condition/expression. For example:
-     * `resource.instanceName.matches("(production|test)_(.+_)?[\d]+")'` or,
-     * `resource.management.auto_upgrade == true`
-     *
-     * @param string $condition
-     */
-    public function setCondition($condition)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCondition()
-    {
-    }
-    /**
-     * Detailed information about this custom policy constraint.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * One line display name for the UI.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * All the operations being applied for this constraint.
-     *
-     * @param string[] $methodTypes
-     */
-    public function setMethodTypes($methodTypes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getMethodTypes()
-    {
-    }
-    /**
-     * Name of the constraint. This is unique within the organization. Format of
-     * the name should be *
-     * `organizations/{organization_id}/customConstraints/{custom_constraint_id}`
-     * Example : "organizations/123/customConstraints/custom.createOnlyE2TypeVms"
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The Resource Instance type on which this policy applies to. Format will be
-     * of the form : "/" Example: * `compute.googleapis.com/Instance`.
-     *
-     * @param string[] $resourceTypes
-     */
-    public function setResourceTypes($resourceTypes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getResourceTypes()
+    class Google_Service_CloudAsset_GoogleCloudAssetV1CustomConstraint extends \Google\Service\CloudAsset\GoogleCloudAssetV1CustomConstraint
     {
     }
 }

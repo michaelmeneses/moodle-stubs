@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AccessContextManager;
-
-class Application extends \Google\Model
-{
-    /**
-     * The OAuth client ID of the application.
-     *
-     * @var string
-     */
-    public $clientId;
-    /**
-     * The name of the application. Example: "Cloud Console"
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The OAuth client ID of the application.
-     *
-     * @param string $clientId
-     */
-    public function setClientId($clientId)
+namespace Google\Service\AccessContextManager {
+    class Application extends \Google\Model
     {
+        /**
+         * The OAuth client ID of the application.
+         *
+         * @var string
+         */
+        public $clientId;
+        /**
+         * The name of the application. Example: "Cloud Console"
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The OAuth client ID of the application.
+         *
+         * @param string $clientId
+         */
+        public function setClientId($clientId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientId()
+        {
+        }
+        /**
+         * The name of the application. Example: "Cloud Console"
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AccessContextManager\Application registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClientId()
-    {
-    }
-    /**
-     * The name of the application. Example: "Cloud Console"
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_AccessContextManager_Application extends \Google\Service\AccessContextManager\Application
     {
     }
 }

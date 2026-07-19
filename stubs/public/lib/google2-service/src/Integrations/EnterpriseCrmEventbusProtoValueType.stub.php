@@ -21,121 +21,130 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class EnterpriseCrmEventbusProtoValueType extends \Google\Model
-{
-    /**
-     * @var bool
-     */
-    public $booleanValue;
-    protected $doubleArrayType = EnterpriseCrmEventbusProtoDoubleArray::class;
-    protected $doubleArrayDataType = '';
-    public $doubleValue;
-    protected $intArrayType = EnterpriseCrmEventbusProtoIntArray::class;
-    protected $intArrayDataType = '';
-    /**
-     * @var string
-     */
-    public $intValue;
-    /**
-     * @var array[]
-     */
-    public $protoValue;
-    protected $stringArrayType = EnterpriseCrmEventbusProtoStringArray::class;
-    protected $stringArrayDataType = '';
-    /**
-     * @var string
-     */
-    public $stringValue;
-    /**
-     * @param bool $booleanValue
-     */
-    public function setBooleanValue($booleanValue)
+namespace Google\Service\Integrations {
+    class EnterpriseCrmEventbusProtoValueType extends \Google\Model
     {
+        /**
+         * @var bool
+         */
+        public $booleanValue;
+        protected $doubleArrayType = EnterpriseCrmEventbusProtoDoubleArray::class;
+        protected $doubleArrayDataType = '';
+        public $doubleValue;
+        protected $intArrayType = EnterpriseCrmEventbusProtoIntArray::class;
+        protected $intArrayDataType = '';
+        /**
+         * @var string
+         */
+        public $intValue;
+        /**
+         * @var array[]
+         */
+        public $protoValue;
+        protected $stringArrayType = EnterpriseCrmEventbusProtoStringArray::class;
+        protected $stringArrayDataType = '';
+        /**
+         * @var string
+         */
+        public $stringValue;
+        /**
+         * @param bool $booleanValue
+         */
+        public function setBooleanValue($booleanValue)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getBooleanValue()
+        {
+        }
+        /**
+         * @param EnterpriseCrmEventbusProtoDoubleArray $doubleArray
+         */
+        public function setDoubleArray(EnterpriseCrmEventbusProtoDoubleArray $doubleArray)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoDoubleArray
+         */
+        public function getDoubleArray()
+        {
+        }
+        public function setDoubleValue($doubleValue)
+        {
+        }
+        public function getDoubleValue()
+        {
+        }
+        /**
+         * @param EnterpriseCrmEventbusProtoIntArray $intArray
+         */
+        public function setIntArray(EnterpriseCrmEventbusProtoIntArray $intArray)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoIntArray
+         */
+        public function getIntArray()
+        {
+        }
+        /**
+         * @param string $intValue
+         */
+        public function setIntValue($intValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIntValue()
+        {
+        }
+        /**
+         * @param array[] $protoValue
+         */
+        public function setProtoValue($protoValue)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getProtoValue()
+        {
+        }
+        /**
+         * @param EnterpriseCrmEventbusProtoStringArray $stringArray
+         */
+        public function setStringArray(EnterpriseCrmEventbusProtoStringArray $stringArray)
+        {
+        }
+        /**
+         * @return EnterpriseCrmEventbusProtoStringArray
+         */
+        public function getStringArray()
+        {
+        }
+        /**
+         * @param string $stringValue
+         */
+        public function setStringValue($stringValue)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStringValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Integrations\EnterpriseCrmEventbusProtoValueType registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBooleanValue()
-    {
-    }
-    /**
-     * @param EnterpriseCrmEventbusProtoDoubleArray $doubleArray
-     */
-    public function setDoubleArray(EnterpriseCrmEventbusProtoDoubleArray $doubleArray)
-    {
-    }
-    /**
-     * @return EnterpriseCrmEventbusProtoDoubleArray
-     */
-    public function getDoubleArray()
-    {
-    }
-    public function setDoubleValue($doubleValue)
-    {
-    }
-    public function getDoubleValue()
-    {
-    }
-    /**
-     * @param EnterpriseCrmEventbusProtoIntArray $intArray
-     */
-    public function setIntArray(EnterpriseCrmEventbusProtoIntArray $intArray)
-    {
-    }
-    /**
-     * @return EnterpriseCrmEventbusProtoIntArray
-     */
-    public function getIntArray()
-    {
-    }
-    /**
-     * @param string $intValue
-     */
-    public function setIntValue($intValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIntValue()
-    {
-    }
-    /**
-     * @param array[] $protoValue
-     */
-    public function setProtoValue($protoValue)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getProtoValue()
-    {
-    }
-    /**
-     * @param EnterpriseCrmEventbusProtoStringArray $stringArray
-     */
-    public function setStringArray(EnterpriseCrmEventbusProtoStringArray $stringArray)
-    {
-    }
-    /**
-     * @return EnterpriseCrmEventbusProtoStringArray
-     */
-    public function getStringArray()
-    {
-    }
-    /**
-     * @param string $stringValue
-     */
-    public function setStringValue($stringValue)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStringValue()
+    class Google_Service_Integrations_EnterpriseCrmEventbusProtoValueType extends \Google\Service\Integrations\EnterpriseCrmEventbusProtoValueType
     {
     }
 }

@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkServices;
-
-class EndpointMatcher extends \Google\Model
-{
-    protected $metadataLabelMatcherType = EndpointMatcherMetadataLabelMatcher::class;
-    protected $metadataLabelMatcherDataType = '';
-    /**
-     * The matcher is based on node metadata presented by xDS clients.
-     *
-     * @param EndpointMatcherMetadataLabelMatcher $metadataLabelMatcher
-     */
-    public function setMetadataLabelMatcher(EndpointMatcherMetadataLabelMatcher $metadataLabelMatcher)
+namespace Google\Service\NetworkServices {
+    class EndpointMatcher extends \Google\Model
     {
+        protected $metadataLabelMatcherType = EndpointMatcherMetadataLabelMatcher::class;
+        protected $metadataLabelMatcherDataType = '';
+        /**
+         * The matcher is based on node metadata presented by xDS clients.
+         *
+         * @param EndpointMatcherMetadataLabelMatcher $metadataLabelMatcher
+         */
+        public function setMetadataLabelMatcher(EndpointMatcherMetadataLabelMatcher $metadataLabelMatcher)
+        {
+        }
+        /**
+         * @return EndpointMatcherMetadataLabelMatcher
+         */
+        public function getMetadataLabelMatcher()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EndpointMatcherMetadataLabelMatcher
+     * Runtime class alias of \Google\Service\NetworkServices\EndpointMatcher registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetadataLabelMatcher()
+    class Google_Service_NetworkServices_EndpointMatcher extends \Google\Service\NetworkServices\EndpointMatcher
     {
     }
 }

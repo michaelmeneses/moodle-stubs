@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SecurityCommandCenter;
-
-class AttackPath extends \Google\Collection
-{
-    protected $collection_key = 'pathNodes';
-    protected $edgesType = AttackPathEdge::class;
-    protected $edgesDataType = 'array';
-    /**
-     * The attack path name, for example,
-     * `organizations/12/simulation/34/valuedResources/56/attackPaths/78`
-     *
-     * @var string
-     */
-    public $name;
-    protected $pathNodesType = AttackPathNode::class;
-    protected $pathNodesDataType = 'array';
-    /**
-     * A list of the edges between nodes in this attack path.
-     *
-     * @param AttackPathEdge[] $edges
-     */
-    public function setEdges($edges)
+namespace Google\Service\SecurityCommandCenter {
+    class AttackPath extends \Google\Collection
     {
+        protected $collection_key = 'pathNodes';
+        protected $edgesType = AttackPathEdge::class;
+        protected $edgesDataType = 'array';
+        /**
+         * The attack path name, for example,
+         * `organizations/12/simulation/34/valuedResources/56/attackPaths/78`
+         *
+         * @var string
+         */
+        public $name;
+        protected $pathNodesType = AttackPathNode::class;
+        protected $pathNodesDataType = 'array';
+        /**
+         * A list of the edges between nodes in this attack path.
+         *
+         * @param AttackPathEdge[] $edges
+         */
+        public function setEdges($edges)
+        {
+        }
+        /**
+         * @return AttackPathEdge[]
+         */
+        public function getEdges()
+        {
+        }
+        /**
+         * The attack path name, for example,
+         * `organizations/12/simulation/34/valuedResources/56/attackPaths/78`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * A list of nodes that exist in this attack path.
+         *
+         * @param AttackPathNode[] $pathNodes
+         */
+        public function setPathNodes($pathNodes)
+        {
+        }
+        /**
+         * @return AttackPathNode[]
+         */
+        public function getPathNodes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AttackPathEdge[]
+     * Runtime class alias of \Google\Service\SecurityCommandCenter\AttackPath registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEdges()
-    {
-    }
-    /**
-     * The attack path name, for example,
-     * `organizations/12/simulation/34/valuedResources/56/attackPaths/78`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * A list of nodes that exist in this attack path.
-     *
-     * @param AttackPathNode[] $pathNodes
-     */
-    public function setPathNodes($pathNodes)
-    {
-    }
-    /**
-     * @return AttackPathNode[]
-     */
-    public function getPathNodes()
+    class Google_Service_SecurityCommandCenter_AttackPath extends \Google\Service\SecurityCommandCenter\AttackPath
     {
     }
 }

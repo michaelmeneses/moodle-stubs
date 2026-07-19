@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigParsingConfigOcrParsingConfig extends \Google\Collection
-{
-    protected $collection_key = 'enhancedDocumentElements';
-    /**
-     * [DEPRECATED] This field is deprecated. To use the additional enhanced
-     * document elements processing, please switch to `layout_parsing_config`.
-     *
-     * @deprecated
-     * @var string[]
-     */
-    public $enhancedDocumentElements;
-    /**
-     * If true, will use native text instead of OCR text on pages containing
-     * native text.
-     *
-     * @var bool
-     */
-    public $useNativeText;
-    /**
-     * [DEPRECATED] This field is deprecated. To use the additional enhanced
-     * document elements processing, please switch to `layout_parsing_config`.
-     *
-     * @deprecated
-     * @param string[] $enhancedDocumentElements
-     */
-    public function setEnhancedDocumentElements($enhancedDocumentElements)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigParsingConfigOcrParsingConfig extends \Google\Collection
     {
+        protected $collection_key = 'enhancedDocumentElements';
+        /**
+         * [DEPRECATED] This field is deprecated. To use the additional enhanced
+         * document elements processing, please switch to `layout_parsing_config`.
+         *
+         * @deprecated
+         * @var string[]
+         */
+        public $enhancedDocumentElements;
+        /**
+         * If true, will use native text instead of OCR text on pages containing
+         * native text.
+         *
+         * @var bool
+         */
+        public $useNativeText;
+        /**
+         * [DEPRECATED] This field is deprecated. To use the additional enhanced
+         * document elements processing, please switch to `layout_parsing_config`.
+         *
+         * @deprecated
+         * @param string[] $enhancedDocumentElements
+         */
+        public function setEnhancedDocumentElements($enhancedDocumentElements)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string[]
+         */
+        public function getEnhancedDocumentElements()
+        {
+        }
+        /**
+         * If true, will use native text instead of OCR text on pages containing
+         * native text.
+         *
+         * @param bool $useNativeText
+         */
+        public function setUseNativeText($useNativeText)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUseNativeText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return string[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigParsingConfigOcrParsingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnhancedDocumentElements()
-    {
-    }
-    /**
-     * If true, will use native text instead of OCR text on pages containing
-     * native text.
-     *
-     * @param bool $useNativeText
-     */
-    public function setUseNativeText($useNativeText)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUseNativeText()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigParsingConfigOcrParsingConfig extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1alphaDocumentProcessingConfigParsingConfigOcrParsingConfig
     {
     }
 }

@@ -21,95 +21,104 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AIPlatformNotebooks;
-
-class GenerateAccessTokenResponse extends \Google\Model
-{
-    protected $internal_gapi_mappings = ["accessToken" => "access_token", "expiresIn" => "expires_in", "tokenType" => "token_type"];
-    /**
-     * Short-lived access token string which may be used to access Google APIs.
-     *
-     * @var string
-     */
-    public $accessToken;
-    /**
-     * The time in seconds when the access token expires. Typically that's 3600.
-     *
-     * @var int
-     */
-    public $expiresIn;
-    /**
-     * Space-separated list of scopes contained in the returned token.
-     * https://cloud.google.com/docs/authentication/token-types#access-contents
-     *
-     * @var string
-     */
-    public $scope;
-    /**
-     * Type of the returned access token (e.g. "Bearer"). It specifies how the
-     * token must be used. Bearer tokens may be used by any entity without proof
-     * of identity.
-     *
-     * @var string
-     */
-    public $tokenType;
-    /**
-     * Short-lived access token string which may be used to access Google APIs.
-     *
-     * @param string $accessToken
-     */
-    public function setAccessToken($accessToken)
+namespace Google\Service\AIPlatformNotebooks {
+    class GenerateAccessTokenResponse extends \Google\Model
     {
+        protected $internal_gapi_mappings = ["accessToken" => "access_token", "expiresIn" => "expires_in", "tokenType" => "token_type"];
+        /**
+         * Short-lived access token string which may be used to access Google APIs.
+         *
+         * @var string
+         */
+        public $accessToken;
+        /**
+         * The time in seconds when the access token expires. Typically that's 3600.
+         *
+         * @var int
+         */
+        public $expiresIn;
+        /**
+         * Space-separated list of scopes contained in the returned token.
+         * https://cloud.google.com/docs/authentication/token-types#access-contents
+         *
+         * @var string
+         */
+        public $scope;
+        /**
+         * Type of the returned access token (e.g. "Bearer"). It specifies how the
+         * token must be used. Bearer tokens may be used by any entity without proof
+         * of identity.
+         *
+         * @var string
+         */
+        public $tokenType;
+        /**
+         * Short-lived access token string which may be used to access Google APIs.
+         *
+         * @param string $accessToken
+         */
+        public function setAccessToken($accessToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccessToken()
+        {
+        }
+        /**
+         * The time in seconds when the access token expires. Typically that's 3600.
+         *
+         * @param int $expiresIn
+         */
+        public function setExpiresIn($expiresIn)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getExpiresIn()
+        {
+        }
+        /**
+         * Space-separated list of scopes contained in the returned token.
+         * https://cloud.google.com/docs/authentication/token-types#access-contents
+         *
+         * @param string $scope
+         */
+        public function setScope($scope)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getScope()
+        {
+        }
+        /**
+         * Type of the returned access token (e.g. "Bearer"). It specifies how the
+         * token must be used. Bearer tokens may be used by any entity without proof
+         * of identity.
+         *
+         * @param string $tokenType
+         */
+        public function setTokenType($tokenType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTokenType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AIPlatformNotebooks\GenerateAccessTokenResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccessToken()
-    {
-    }
-    /**
-     * The time in seconds when the access token expires. Typically that's 3600.
-     *
-     * @param int $expiresIn
-     */
-    public function setExpiresIn($expiresIn)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getExpiresIn()
-    {
-    }
-    /**
-     * Space-separated list of scopes contained in the returned token.
-     * https://cloud.google.com/docs/authentication/token-types#access-contents
-     *
-     * @param string $scope
-     */
-    public function setScope($scope)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getScope()
-    {
-    }
-    /**
-     * Type of the returned access token (e.g. "Bearer"). It specifies how the
-     * token must be used. Bearer tokens may be used by any entity without proof
-     * of identity.
-     *
-     * @param string $tokenType
-     */
-    public function setTokenType($tokenType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTokenType()
+    class Google_Service_AIPlatformNotebooks_GenerateAccessTokenResponse extends \Google\Service\AIPlatformNotebooks\GenerateAccessTokenResponse
     {
     }
 }

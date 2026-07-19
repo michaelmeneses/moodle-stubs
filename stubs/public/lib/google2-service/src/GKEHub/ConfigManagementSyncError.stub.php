@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEHub;
-
-class ConfigManagementSyncError extends \Google\Collection
-{
-    protected $collection_key = 'errorResources';
-    /**
-     * An ACM defined error code
-     *
-     * @var string
-     */
-    public $code;
-    /**
-     * A description of the error
-     *
-     * @var string
-     */
-    public $errorMessage;
-    protected $errorResourcesType = ConfigManagementErrorResource::class;
-    protected $errorResourcesDataType = 'array';
-    /**
-     * An ACM defined error code
-     *
-     * @param string $code
-     */
-    public function setCode($code)
+namespace Google\Service\GKEHub {
+    class ConfigManagementSyncError extends \Google\Collection
     {
+        protected $collection_key = 'errorResources';
+        /**
+         * An ACM defined error code
+         *
+         * @var string
+         */
+        public $code;
+        /**
+         * A description of the error
+         *
+         * @var string
+         */
+        public $errorMessage;
+        protected $errorResourcesType = ConfigManagementErrorResource::class;
+        protected $errorResourcesDataType = 'array';
+        /**
+         * An ACM defined error code
+         *
+         * @param string $code
+         */
+        public function setCode($code)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCode()
+        {
+        }
+        /**
+         * A description of the error
+         *
+         * @param string $errorMessage
+         */
+        public function setErrorMessage($errorMessage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getErrorMessage()
+        {
+        }
+        /**
+         * A list of config(s) associated with the error, if any
+         *
+         * @param ConfigManagementErrorResource[] $errorResources
+         */
+        public function setErrorResources($errorResources)
+        {
+        }
+        /**
+         * @return ConfigManagementErrorResource[]
+         */
+        public function getErrorResources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GKEHub\ConfigManagementSyncError registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCode()
-    {
-    }
-    /**
-     * A description of the error
-     *
-     * @param string $errorMessage
-     */
-    public function setErrorMessage($errorMessage)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getErrorMessage()
-    {
-    }
-    /**
-     * A list of config(s) associated with the error, if any
-     *
-     * @param ConfigManagementErrorResource[] $errorResources
-     */
-    public function setErrorResources($errorResources)
-    {
-    }
-    /**
-     * @return ConfigManagementErrorResource[]
-     */
-    public function getErrorResources()
+    class Google_Service_GKEHub_ConfigManagementSyncError extends \Google\Service\GKEHub\ConfigManagementSyncError
     {
     }
 }

@@ -21,147 +21,156 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PaymentsResellerSubscription;
-
-class GoogleCloudPaymentsResellerSubscriptionV1Promotion extends \Google\Collection
-{
-    protected $collection_key = 'titles';
-    /**
-     * @var string[]
-     */
-    public $applicableProducts;
-    /**
-     * @var string
-     */
-    public $endTime;
-    protected $freeTrialDurationType = GoogleCloudPaymentsResellerSubscriptionV1Duration::class;
-    protected $freeTrialDurationDataType = '';
-    protected $introductoryPricingDetailsType = GoogleCloudPaymentsResellerSubscriptionV1PromotionIntroductoryPricingDetails::class;
-    protected $introductoryPricingDetailsDataType = '';
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $promotionType;
-    /**
-     * @var string[]
-     */
-    public $regionCodes;
-    /**
-     * @var string
-     */
-    public $startTime;
-    protected $titlesType = GoogleTypeLocalizedText::class;
-    protected $titlesDataType = 'array';
-    /**
-     * @param string[]
-     */
-    public function setApplicableProducts($applicableProducts)
+namespace Google\Service\PaymentsResellerSubscription {
+    class GoogleCloudPaymentsResellerSubscriptionV1Promotion extends \Google\Collection
     {
+        protected $collection_key = 'titles';
+        /**
+         * @var string[]
+         */
+        public $applicableProducts;
+        /**
+         * @var string
+         */
+        public $endTime;
+        protected $freeTrialDurationType = GoogleCloudPaymentsResellerSubscriptionV1Duration::class;
+        protected $freeTrialDurationDataType = '';
+        protected $introductoryPricingDetailsType = GoogleCloudPaymentsResellerSubscriptionV1PromotionIntroductoryPricingDetails::class;
+        protected $introductoryPricingDetailsDataType = '';
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $promotionType;
+        /**
+         * @var string[]
+         */
+        public $regionCodes;
+        /**
+         * @var string
+         */
+        public $startTime;
+        protected $titlesType = GoogleTypeLocalizedText::class;
+        protected $titlesDataType = 'array';
+        /**
+         * @param string[]
+         */
+        public function setApplicableProducts($applicableProducts)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getApplicableProducts()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * @param GoogleCloudPaymentsResellerSubscriptionV1Duration
+         */
+        public function setFreeTrialDuration(GoogleCloudPaymentsResellerSubscriptionV1Duration $freeTrialDuration)
+        {
+        }
+        /**
+         * @return GoogleCloudPaymentsResellerSubscriptionV1Duration
+         */
+        public function getFreeTrialDuration()
+        {
+        }
+        /**
+         * @param GoogleCloudPaymentsResellerSubscriptionV1PromotionIntroductoryPricingDetails
+         */
+        public function setIntroductoryPricingDetails(GoogleCloudPaymentsResellerSubscriptionV1PromotionIntroductoryPricingDetails $introductoryPricingDetails)
+        {
+        }
+        /**
+         * @return GoogleCloudPaymentsResellerSubscriptionV1PromotionIntroductoryPricingDetails
+         */
+        public function getIntroductoryPricingDetails()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPromotionType($promotionType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPromotionType()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setRegionCodes($regionCodes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRegionCodes()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * @param GoogleTypeLocalizedText[]
+         */
+        public function setTitles($titles)
+        {
+        }
+        /**
+         * @return GoogleTypeLocalizedText[]
+         */
+        public function getTitles()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1Promotion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApplicableProducts()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * @param GoogleCloudPaymentsResellerSubscriptionV1Duration
-     */
-    public function setFreeTrialDuration(GoogleCloudPaymentsResellerSubscriptionV1Duration $freeTrialDuration)
-    {
-    }
-    /**
-     * @return GoogleCloudPaymentsResellerSubscriptionV1Duration
-     */
-    public function getFreeTrialDuration()
-    {
-    }
-    /**
-     * @param GoogleCloudPaymentsResellerSubscriptionV1PromotionIntroductoryPricingDetails
-     */
-    public function setIntroductoryPricingDetails(GoogleCloudPaymentsResellerSubscriptionV1PromotionIntroductoryPricingDetails $introductoryPricingDetails)
-    {
-    }
-    /**
-     * @return GoogleCloudPaymentsResellerSubscriptionV1PromotionIntroductoryPricingDetails
-     */
-    public function getIntroductoryPricingDetails()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPromotionType($promotionType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPromotionType()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setRegionCodes($regionCodes)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRegionCodes()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * @param GoogleTypeLocalizedText[]
-     */
-    public function setTitles($titles)
-    {
-    }
-    /**
-     * @return GoogleTypeLocalizedText[]
-     */
-    public function getTitles()
+    class Google_Service_PaymentsResellerSubscription_GoogleCloudPaymentsResellerSubscriptionV1Promotion extends \Google\Service\PaymentsResellerSubscription\GoogleCloudPaymentsResellerSubscriptionV1Promotion
     {
     }
 }

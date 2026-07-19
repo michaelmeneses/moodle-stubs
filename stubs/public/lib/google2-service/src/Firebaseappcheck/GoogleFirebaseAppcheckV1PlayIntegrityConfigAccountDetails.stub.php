@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebaseappcheck;
-
-class GoogleFirebaseAppcheckV1PlayIntegrityConfigAccountDetails extends \Google\Model
-{
-    /**
-     * Specifies whether the caller must have received the [`LICENSED` verdict](ht
-     * tps://developer.android.com/google/play/integrity/verdicts#account-details-
-     * field). For additional details about scenarios where your users will
-     * receive this `LICENSED` label, see [the default responses
-     * table](https://developer.android.com/google/play/integrity/setup#default).
-     * If set to `true`, apps without the `LICENSED` app licensing verdict will be
-     * rejected. If set to `false`, any app licensing verdict is allowed. The
-     * default value is `false`.
-     *
-     * @var bool
-     */
-    public $requireLicensed;
-    /**
-     * Specifies whether the caller must have received the [`LICENSED` verdict](ht
-     * tps://developer.android.com/google/play/integrity/verdicts#account-details-
-     * field). For additional details about scenarios where your users will
-     * receive this `LICENSED` label, see [the default responses
-     * table](https://developer.android.com/google/play/integrity/setup#default).
-     * If set to `true`, apps without the `LICENSED` app licensing verdict will be
-     * rejected. If set to `false`, any app licensing verdict is allowed. The
-     * default value is `false`.
-     *
-     * @param bool $requireLicensed
-     */
-    public function setRequireLicensed($requireLicensed)
+namespace Google\Service\Firebaseappcheck {
+    class GoogleFirebaseAppcheckV1PlayIntegrityConfigAccountDetails extends \Google\Model
     {
+        /**
+         * Specifies whether the caller must have received the [`LICENSED` verdict](ht
+         * tps://developer.android.com/google/play/integrity/verdicts#account-details-
+         * field). For additional details about scenarios where your users will
+         * receive this `LICENSED` label, see [the default responses
+         * table](https://developer.android.com/google/play/integrity/setup#default).
+         * If set to `true`, apps without the `LICENSED` app licensing verdict will be
+         * rejected. If set to `false`, any app licensing verdict is allowed. The
+         * default value is `false`.
+         *
+         * @var bool
+         */
+        public $requireLicensed;
+        /**
+         * Specifies whether the caller must have received the [`LICENSED` verdict](ht
+         * tps://developer.android.com/google/play/integrity/verdicts#account-details-
+         * field). For additional details about scenarios where your users will
+         * receive this `LICENSED` label, see [the default responses
+         * table](https://developer.android.com/google/play/integrity/setup#default).
+         * If set to `true`, apps without the `LICENSED` app licensing verdict will be
+         * rejected. If set to `false`, any app licensing verdict is allowed. The
+         * default value is `false`.
+         *
+         * @param bool $requireLicensed
+         */
+        public function setRequireLicensed($requireLicensed)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getRequireLicensed()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1PlayIntegrityConfigAccountDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequireLicensed()
+    class Google_Service_Firebaseappcheck_GoogleFirebaseAppcheckV1PlayIntegrityConfigAccountDetails extends \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1PlayIntegrityConfigAccountDetails
     {
     }
 }

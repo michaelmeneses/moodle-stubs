@@ -21,287 +21,296 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedBackendUploadMetadata extends \Google\Collection
-{
-    protected $collection_key = 'experiment';
-    /**
-     * @var string
-     */
-    public $blobPath;
-    /**
-     * @var string
-     */
-    public $contentName;
-    /**
-     * @var string
-     */
-    public $contentSize;
-    /**
-     * @var string
-     */
-    public $contentType;
-    /**
-     * @var string
-     */
-    public $dlpScanOutcome;
-    protected $dlpScanSummaryType = DlpScanSummary::class;
-    protected $dlpScanSummaryDataType = '';
-    /**
-     * @var string[]
-     */
-    public $experiment;
-    protected $groupIdType = GroupId::class;
-    protected $groupIdDataType = '';
-    /**
-     * @var bool
-     */
-    public $isClientSideTranscodedVideo;
-    protected $migratedFromHangoutsMetadataType = AppsDynamiteSharedBackendUploadMetadataMigratedFromHangoutsMetadata::class;
-    protected $migratedFromHangoutsMetadataDataType = '';
-    protected $originalDimensionType = AppsDynamiteSharedDimension::class;
-    protected $originalDimensionDataType = '';
-    protected $quoteReplyMessageIdType = MessageId::class;
-    protected $quoteReplyMessageIdDataType = '';
-    /**
-     * @var string
-     */
-    public $sha256;
-    /**
-     * @var string
-     */
-    public $uploadIp;
-    /**
-     * @var string
-     */
-    public $uploadTimestampUsec;
-    /**
-     * @var string
-     */
-    public $videoId;
-    /**
-     * @var string
-     */
-    public $videoThumbnailBlobId;
-    /**
-     * @var string
-     */
-    public $virusScanResult;
-    /**
-     * @param string
-     */
-    public function setBlobPath($blobPath)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedBackendUploadMetadata extends \Google\Collection
     {
+        protected $collection_key = 'experiment';
+        /**
+         * @var string
+         */
+        public $blobPath;
+        /**
+         * @var string
+         */
+        public $contentName;
+        /**
+         * @var string
+         */
+        public $contentSize;
+        /**
+         * @var string
+         */
+        public $contentType;
+        /**
+         * @var string
+         */
+        public $dlpScanOutcome;
+        protected $dlpScanSummaryType = DlpScanSummary::class;
+        protected $dlpScanSummaryDataType = '';
+        /**
+         * @var string[]
+         */
+        public $experiment;
+        protected $groupIdType = GroupId::class;
+        protected $groupIdDataType = '';
+        /**
+         * @var bool
+         */
+        public $isClientSideTranscodedVideo;
+        protected $migratedFromHangoutsMetadataType = AppsDynamiteSharedBackendUploadMetadataMigratedFromHangoutsMetadata::class;
+        protected $migratedFromHangoutsMetadataDataType = '';
+        protected $originalDimensionType = AppsDynamiteSharedDimension::class;
+        protected $originalDimensionDataType = '';
+        protected $quoteReplyMessageIdType = MessageId::class;
+        protected $quoteReplyMessageIdDataType = '';
+        /**
+         * @var string
+         */
+        public $sha256;
+        /**
+         * @var string
+         */
+        public $uploadIp;
+        /**
+         * @var string
+         */
+        public $uploadTimestampUsec;
+        /**
+         * @var string
+         */
+        public $videoId;
+        /**
+         * @var string
+         */
+        public $videoThumbnailBlobId;
+        /**
+         * @var string
+         */
+        public $virusScanResult;
+        /**
+         * @param string
+         */
+        public function setBlobPath($blobPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBlobPath()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setContentName($contentName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContentName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setContentSize($contentSize)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContentSize()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setContentType($contentType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContentType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDlpScanOutcome($dlpScanOutcome)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDlpScanOutcome()
+        {
+        }
+        /**
+         * @param DlpScanSummary
+         */
+        public function setDlpScanSummary(DlpScanSummary $dlpScanSummary)
+        {
+        }
+        /**
+         * @return DlpScanSummary
+         */
+        public function getDlpScanSummary()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setExperiment($experiment)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getExperiment()
+        {
+        }
+        /**
+         * @param GroupId
+         */
+        public function setGroupId(GroupId $groupId)
+        {
+        }
+        /**
+         * @return GroupId
+         */
+        public function getGroupId()
+        {
+        }
+        /**
+         * @param bool
+         */
+        public function setIsClientSideTranscodedVideo($isClientSideTranscodedVideo)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIsClientSideTranscodedVideo()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedBackendUploadMetadataMigratedFromHangoutsMetadata
+         */
+        public function setMigratedFromHangoutsMetadata(AppsDynamiteSharedBackendUploadMetadataMigratedFromHangoutsMetadata $migratedFromHangoutsMetadata)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedBackendUploadMetadataMigratedFromHangoutsMetadata
+         */
+        public function getMigratedFromHangoutsMetadata()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedDimension
+         */
+        public function setOriginalDimension(AppsDynamiteSharedDimension $originalDimension)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedDimension
+         */
+        public function getOriginalDimension()
+        {
+        }
+        /**
+         * @param MessageId
+         */
+        public function setQuoteReplyMessageId(MessageId $quoteReplyMessageId)
+        {
+        }
+        /**
+         * @return MessageId
+         */
+        public function getQuoteReplyMessageId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSha256($sha256)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSha256()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUploadIp($uploadIp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUploadIp()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUploadTimestampUsec($uploadTimestampUsec)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUploadTimestampUsec()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setVideoId($videoId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVideoId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setVideoThumbnailBlobId($videoThumbnailBlobId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVideoThumbnailBlobId()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setVirusScanResult($virusScanResult)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVirusScanResult()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedBackendUploadMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBlobPath()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setContentName($contentName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContentName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setContentSize($contentSize)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContentSize()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setContentType($contentType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getContentType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDlpScanOutcome($dlpScanOutcome)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDlpScanOutcome()
-    {
-    }
-    /**
-     * @param DlpScanSummary
-     */
-    public function setDlpScanSummary(DlpScanSummary $dlpScanSummary)
-    {
-    }
-    /**
-     * @return DlpScanSummary
-     */
-    public function getDlpScanSummary()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setExperiment($experiment)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getExperiment()
-    {
-    }
-    /**
-     * @param GroupId
-     */
-    public function setGroupId(GroupId $groupId)
-    {
-    }
-    /**
-     * @return GroupId
-     */
-    public function getGroupId()
-    {
-    }
-    /**
-     * @param bool
-     */
-    public function setIsClientSideTranscodedVideo($isClientSideTranscodedVideo)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIsClientSideTranscodedVideo()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedBackendUploadMetadataMigratedFromHangoutsMetadata
-     */
-    public function setMigratedFromHangoutsMetadata(AppsDynamiteSharedBackendUploadMetadataMigratedFromHangoutsMetadata $migratedFromHangoutsMetadata)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedBackendUploadMetadataMigratedFromHangoutsMetadata
-     */
-    public function getMigratedFromHangoutsMetadata()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedDimension
-     */
-    public function setOriginalDimension(AppsDynamiteSharedDimension $originalDimension)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedDimension
-     */
-    public function getOriginalDimension()
-    {
-    }
-    /**
-     * @param MessageId
-     */
-    public function setQuoteReplyMessageId(MessageId $quoteReplyMessageId)
-    {
-    }
-    /**
-     * @return MessageId
-     */
-    public function getQuoteReplyMessageId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSha256($sha256)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSha256()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUploadIp($uploadIp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUploadIp()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUploadTimestampUsec($uploadTimestampUsec)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUploadTimestampUsec()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setVideoId($videoId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVideoId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setVideoThumbnailBlobId($videoThumbnailBlobId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVideoThumbnailBlobId()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setVirusScanResult($virusScanResult)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVirusScanResult()
+    class Google_Service_CloudSearch_AppsDynamiteSharedBackendUploadMetadata extends \Google\Service\CloudSearch\AppsDynamiteSharedBackendUploadMetadata
     {
     }
 }

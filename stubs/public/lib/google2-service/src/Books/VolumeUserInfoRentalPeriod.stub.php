@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class VolumeUserInfoRentalPeriod extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $endUtcSec;
-    /**
-     * @var string
-     */
-    public $startUtcSec;
-    /**
-     * @param string $endUtcSec
-     */
-    public function setEndUtcSec($endUtcSec)
+namespace Google\Service\Books {
+    class VolumeUserInfoRentalPeriod extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $endUtcSec;
+        /**
+         * @var string
+         */
+        public $startUtcSec;
+        /**
+         * @param string $endUtcSec
+         */
+        public function setEndUtcSec($endUtcSec)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndUtcSec()
+        {
+        }
+        /**
+         * @param string $startUtcSec
+         */
+        public function setStartUtcSec($startUtcSec)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartUtcSec()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Books\VolumeUserInfoRentalPeriod registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEndUtcSec()
-    {
-    }
-    /**
-     * @param string $startUtcSec
-     */
-    public function setStartUtcSec($startUtcSec)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartUtcSec()
+    class Google_Service_Books_VolumeUserInfoRentalPeriod extends \Google\Service\Books\VolumeUserInfoRentalPeriod
     {
     }
 }

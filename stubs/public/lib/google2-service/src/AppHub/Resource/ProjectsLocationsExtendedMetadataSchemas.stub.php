@@ -21,49 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AppHub\Resource;
-
-/**
- * The "extendedMetadataSchemas" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apphubService = new Google\Service\AppHub(...);
- *   $extendedMetadataSchemas = $apphubService->projects_locations_extendedMetadataSchemas;
- *  </code>
- */
-class ProjectsLocationsExtendedMetadataSchemas extends \Google\Service\Resource
-{
+namespace Google\Service\AppHub\Resource {
+    use Google\Service\AppHub\ExtendedMetadataSchema;
+    use Google\Service\AppHub\ListExtendedMetadataSchemasResponse;
     /**
-     * Gets an Extended Metadata Schema. (extendedMetadataSchemas.get)
-     *
-     * @param string $name Required. Schema resource name Format:
-     * projects//locations//extendedMetadataSchemas/ could be
-     * "apphub.googleapis.com/Name"
-     * @param array $optParams Optional parameters.
-     * @return ExtendedMetadataSchema
-     * @throws \Google\Service\Exception
+     * The "extendedMetadataSchemas" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apphubService = new Google\Service\AppHub(...);
+     *   $extendedMetadataSchemas = $apphubService->projects_locations_extendedMetadataSchemas;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocationsExtendedMetadataSchemas extends \Google\Service\Resource
     {
+        /**
+         * Gets an Extended Metadata Schema. (extendedMetadataSchemas.get)
+         *
+         * @param string $name Required. Schema resource name Format:
+         * projects//locations//extendedMetadataSchemas/ could be
+         * "apphub.googleapis.com/Name"
+         * @param array $optParams Optional parameters.
+         * @return ExtendedMetadataSchema
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists Extended Metadata Schemas available in a host project and location.
+         * (extendedMetadataSchemas.listProjectsLocationsExtendedMetadataSchemas)
+         *
+         * @param string $parent Required. Project and location to list Extended
+         * Metadata Schemas on. Expected format:
+         * `projects/{project}/locations/{location}`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Optional. Requested page size. Server may return
+         * fewer items than requested. If unspecified, server will pick an appropriate
+         * default.
+         * @opt_param string pageToken Optional. A token identifying a page of results
+         * the server should return.
+         * @return ListExtendedMetadataSchemasResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsExtendedMetadataSchemas($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists Extended Metadata Schemas available in a host project and location.
-     * (extendedMetadataSchemas.listProjectsLocationsExtendedMetadataSchemas)
-     *
-     * @param string $parent Required. Project and location to list Extended
-     * Metadata Schemas on. Expected format:
-     * `projects/{project}/locations/{location}`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Optional. Requested page size. Server may return
-     * fewer items than requested. If unspecified, server will pick an appropriate
-     * default.
-     * @opt_param string pageToken Optional. A token identifying a page of results
-     * the server should return.
-     * @return ListExtendedMetadataSchemasResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AppHub\Resource\ProjectsLocationsExtendedMetadataSchemas registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listProjectsLocationsExtendedMetadataSchemas($parent, $optParams = [])
+    class Google_Service_AppHub_Resource_ProjectsLocationsExtendedMetadataSchemas extends \Google\Service\AppHub\Resource\ProjectsLocationsExtendedMetadataSchemas
     {
     }
 }

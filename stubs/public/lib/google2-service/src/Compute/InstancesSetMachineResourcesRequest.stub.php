@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InstancesSetMachineResourcesRequest extends \Google\Collection
-{
-    protected $collection_key = 'guestAccelerators';
-    protected $guestAcceleratorsType = AcceleratorConfig::class;
-    protected $guestAcceleratorsDataType = 'array';
-    /**
-     * A list of the type and count of accelerator cards attached to the instance.
-     *
-     * @param AcceleratorConfig[] $guestAccelerators
-     */
-    public function setGuestAccelerators($guestAccelerators)
+namespace Google\Service\Compute {
+    class InstancesSetMachineResourcesRequest extends \Google\Collection
     {
+        protected $collection_key = 'guestAccelerators';
+        protected $guestAcceleratorsType = AcceleratorConfig::class;
+        protected $guestAcceleratorsDataType = 'array';
+        /**
+         * A list of the type and count of accelerator cards attached to the instance.
+         *
+         * @param AcceleratorConfig[] $guestAccelerators
+         */
+        public function setGuestAccelerators($guestAccelerators)
+        {
+        }
+        /**
+         * @return AcceleratorConfig[]
+         */
+        public function getGuestAccelerators()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AcceleratorConfig[]
+     * Runtime class alias of \Google\Service\Compute\InstancesSetMachineResourcesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGuestAccelerators()
+    class Google_Service_Compute_InstancesSetMachineResourcesRequest extends \Google\Service\Compute\InstancesSetMachineResourcesRequest
     {
     }
 }

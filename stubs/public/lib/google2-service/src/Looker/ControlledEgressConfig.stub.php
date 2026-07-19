@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Looker;
-
-class ControlledEgressConfig extends \Google\Collection
-{
-    protected $collection_key = 'webProxyIps';
-    /**
-     * Optional. List of fully qualified domain names to be added to the allowlist
-     * for outbound traffic.
-     *
-     * @var string[]
-     */
-    public $egressFqdns;
-    /**
-     * Optional. Whether marketplace is enabled.
-     *
-     * @var bool
-     */
-    public $marketplaceEnabled;
-    /**
-     * Output only. The list of IP addresses used by Secure Web Proxy for outbound
-     * traffic.
-     *
-     * @var string[]
-     */
-    public $webProxyIps;
-    /**
-     * Optional. List of fully qualified domain names to be added to the allowlist
-     * for outbound traffic.
-     *
-     * @param string[] $egressFqdns
-     */
-    public function setEgressFqdns($egressFqdns)
+namespace Google\Service\Looker {
+    class ControlledEgressConfig extends \Google\Collection
     {
+        protected $collection_key = 'webProxyIps';
+        /**
+         * Optional. List of fully qualified domain names to be added to the allowlist
+         * for outbound traffic.
+         *
+         * @var string[]
+         */
+        public $egressFqdns;
+        /**
+         * Optional. Whether marketplace is enabled.
+         *
+         * @var bool
+         */
+        public $marketplaceEnabled;
+        /**
+         * Output only. The list of IP addresses used by Secure Web Proxy for outbound
+         * traffic.
+         *
+         * @var string[]
+         */
+        public $webProxyIps;
+        /**
+         * Optional. List of fully qualified domain names to be added to the allowlist
+         * for outbound traffic.
+         *
+         * @param string[] $egressFqdns
+         */
+        public function setEgressFqdns($egressFqdns)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEgressFqdns()
+        {
+        }
+        /**
+         * Optional. Whether marketplace is enabled.
+         *
+         * @param bool $marketplaceEnabled
+         */
+        public function setMarketplaceEnabled($marketplaceEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getMarketplaceEnabled()
+        {
+        }
+        /**
+         * Output only. The list of IP addresses used by Secure Web Proxy for outbound
+         * traffic.
+         *
+         * @param string[] $webProxyIps
+         */
+        public function setWebProxyIps($webProxyIps)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getWebProxyIps()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Looker\ControlledEgressConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEgressFqdns()
-    {
-    }
-    /**
-     * Optional. Whether marketplace is enabled.
-     *
-     * @param bool $marketplaceEnabled
-     */
-    public function setMarketplaceEnabled($marketplaceEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getMarketplaceEnabled()
-    {
-    }
-    /**
-     * Output only. The list of IP addresses used by Secure Web Proxy for outbound
-     * traffic.
-     *
-     * @param string[] $webProxyIps
-     */
-    public function setWebProxyIps($webProxyIps)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getWebProxyIps()
+    class Google_Service_Looker_ControlledEgressConfig extends \Google\Service\Looker\ControlledEgressConfig
     {
     }
 }

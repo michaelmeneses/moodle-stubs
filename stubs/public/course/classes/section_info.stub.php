@@ -20,339 +20,354 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core_course;
-
-// phpcs:disable PSR2.Classes.PropertyDeclaration.Underscore
-/**
- * Data about a single section on a course.
- *
- * This contains the fields from the.course_sections table, plus additional data when required.
- *
- * @package    core_course
- * @license    https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @copyright  Sam Marshall
- * @property-read int $id Section ID - from course_sections table
- * @property-read int $course Course ID - from course_sections table
- * @property-read int $sectionnum Section number - from course_sections table
- * @property-read string $name Section name if specified - from course_sections table
- * @property-read int $visible Section visibility (1 = visible) - from course_sections table
- * @property-read string $summary Section summary text if specified - from course_sections table
- * @property-read int $summaryformat Section summary text format (FORMAT_xx constant) - from course_sections table
- * @property-read string $availability Availability information as JSON string - from course_sections table
- * @property-read string|null $component Optional section delegate component - from course_sections table
- * @property-read int|null $itemid Optional section delegate item id - from course_sections table
- * @property-read array $conditionscompletion Availability conditions for this section based on the completion of
- *    course-modules (array from course-module id to required completion state
- *    for that module) - from cached data in sectioncache field
- * @property-read array $conditionsgrade Availability conditions for this section based on course grades (array from
- *    grade item id to object with ->min, ->max fields) - from cached data in
- *    sectioncache field
- * @property-read array $conditionsfield Availability conditions for this section based on user fields
- * @property-read bool $available True if this section is available to the given user i.e. if all availability conditions
- *    are met - obtained dynamically
- * @property-read string $availableinfo If section is not available to some users, this string gives information about
- *    availability which can be displayed to students and/or staff (e.g. 'Available from 3 January 2010')
- *    for display on main page - obtained dynamically
- * @property-read bool $uservisible True if this section is available to the given user (for example, if current user
- *    has viewhiddensections capability, they can access the section even if it is not
- *    visible or not available, so this would be true in that case) - obtained dynamically
- * @property-read string $sequence Comma-separated list of all modules in the section. Note, this field may not exactly
- *    match course_sections.sequence if later has references to non-existing modules or not modules of not available module types.
- * @property-read course_modinfo $modinfo
- */
-class section_info implements IteratorAggregate
-{
+namespace core_course {
+    use ArrayIterator;
+    use IteratorAggregate;
+    use Traversable;
+    use core\context\course as context_course;
+    use core_courseformat\sectiondelegate;
+    use core_courseformat\sectiondelegatemodule;
+    // phpcs:disable PSR2.Classes.PropertyDeclaration.Underscore
     /**
-     * Section ID - from course_sections table
-     * @var int
-     */
-    private $_id;
-    /**
-     * Section number - from course_sections table
-     * @var int
-     */
-    private $_sectionnum;
-    /**
-     * Section name if specified - from course_sections table
-     * @var string
-     */
-    private $_name;
-    /**
-     * Section visibility (1 = visible) - from course_sections table
-     * @var int
-     */
-    private $_visible;
-    /**
-     * Section summary text if specified - from course_sections table
-     * @var string
-     */
-    private $_summary;
-    /**
-     * Section summary text format (FORMAT_xx constant) - from course_sections table
-     * @var int
-     */
-    private $_summaryformat;
-    /**
-     * Availability information as JSON string - from course_sections table
-     * @var string
-     */
-    private $_availability;
-    /**
-     * @var string|null the delegated component if any.
-     */
-    private ?string $_component = null;
-    /**
-     * @var int|null the delegated instance item id if any.
-     */
-    private ?int $_itemid = null;
-    /**
-     * @var sectiondelegate|null Section delegate instance if any.
-     */
-    private ?sectiondelegate $_delegateinstance = null;
-    /** @var cm_info[]|null Section cm_info activities, null when it is not loaded yet. */
-    private array|null $_sequencecminfos = null;
-    /**
-     * @var bool|null $_isorphan True if the section is orphan for some reason.
-     */
-    private $_isorphan = null;
-    /**
-     * Availability conditions for this section based on the completion of
-     * course-modules (array from course-module id to required completion state
-     * for that module) - from cached data in sectioncache field
-     * @var array
-     */
-    private $_conditionscompletion;
-    /**
-     * Availability conditions for this section based on course grades (array from
-     * grade item id to object with ->min, ->max fields) - from cached data in
-     * sectioncache field
-     * @var array
-     */
-    private $_conditionsgrade;
-    /**
-     * Availability conditions for this section based on user fields
-     * @var array
-     */
-    private $_conditionsfield;
-    /**
-     * True if this section is available to students i.e. if all availability conditions
-     * are met - obtained dynamically on request, see function {@see section_info::get_available()}
-     * @var bool|null
-     */
-    private $_available;
-    /**
-     * If section is not available to some users, this string gives information about
-     * availability which can be displayed to students and/or staff (e.g. 'Available from 3
-     * January 2010') for display on main page - obtained dynamically on request, see
-     * function {@see section_info::get_availableinfo()}
-     * @var string
-     */
-    private $_availableinfo;
-    /**
-     * True if this section is available to the CURRENT user (for example, if current user
-     * has viewhiddensections capability, they can access the section even if it is not
-     * visible or not available, so this would be true in that case) - obtained dynamically
-     * on request, see function {@see section_info::get_uservisible()}
-     * @var bool|null
-     */
-    private $_uservisible;
-    /**
-     * Default values for sectioncache fields; if a field has this value, it won't
-     * be stored in the sectioncache cache, to save space. Checks are done by ===
-     * which means values must all be strings.
-     * @var array
-     */
-    private static $sectioncachedefaults = [
-        'name' => null,
-        'summary' => '',
-        'summaryformat' => '1',
-        // FORMAT_HTML, but must be a string.
-        'visible' => '1',
-        'availability' => null,
-        'component' => null,
-        'itemid' => null,
-    ];
-    /**
-     * Stores format options that have been cached when building 'coursecache'
-     * When the format option is requested we look first if it has been cached
-     * @var array
-     */
-    private $cachedformatoptions = [];
-    /**
-     * Stores the list of all possible section options defined in each used course format.
-     * @var array
-     */
-    private static $sectionformatoptions = [];
-    /**
-     * Stores the modinfo object passed in constructor, may be used when requesting
-     * dynamically obtained attributes such as available, availableinfo, uservisible.
-     * Also used to retrun information about current course or user.
-     * @var course_modinfo
-     */
-    private $modinfo;
-    /**
-     * True if has activities, otherwise false.
-     * @var bool
-     */
-    public $hasactivites;
-    /**
-     * List of class read-only properties' getter methods.
-     * Used by magic functions __get(), __isset().
-     * @var array
-     */
-    private static $standardproperties = ['section' => 'get_section_number'];
-    /**
-     * Constructs object from database information plus extra required data.
-     * @param object $data Array entry from cached sectioncache
-     * @param int $number Section number (array key)
-     * @param mixed $notused1 argument not used (informaion is available in $modinfo)
-     * @param mixed $notused2 argument not used (informaion is available in $modinfo)
-     * @param modinfo $modinfo Owner (needed for checking availability)
-     * @param mixed $notused3 argument not used (informaion is available in $modinfo)
-     */
-    public function __construct($data, $number, $notused1, $notused2, $modinfo, $notused3)
-    {
-    }
-    /**
-     * Magic method to check if the property is set
+     * Data about a single section on a course.
      *
-     * @param string $name name of the property
-     * @return bool
+     * This contains the fields from the.course_sections table, plus additional data when required.
+     *
+     * @package    core_course
+     * @license    https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     * @copyright  Sam Marshall
+     * @property-read int $id Section ID - from course_sections table
+     * @property-read int $course Course ID - from course_sections table
+     * @property-read int $sectionnum Section number - from course_sections table
+     * @property-read string $name Section name if specified - from course_sections table
+     * @property-read int $visible Section visibility (1 = visible) - from course_sections table
+     * @property-read string $summary Section summary text if specified - from course_sections table
+     * @property-read int $summaryformat Section summary text format (FORMAT_xx constant) - from course_sections table
+     * @property-read string $availability Availability information as JSON string - from course_sections table
+     * @property-read string|null $component Optional section delegate component - from course_sections table
+     * @property-read int|null $itemid Optional section delegate item id - from course_sections table
+     * @property-read array $conditionscompletion Availability conditions for this section based on the completion of
+     *    course-modules (array from course-module id to required completion state
+     *    for that module) - from cached data in sectioncache field
+     * @property-read array $conditionsgrade Availability conditions for this section based on course grades (array from
+     *    grade item id to object with ->min, ->max fields) - from cached data in
+     *    sectioncache field
+     * @property-read array $conditionsfield Availability conditions for this section based on user fields
+     * @property-read bool $available True if this section is available to the given user i.e. if all availability conditions
+     *    are met - obtained dynamically
+     * @property-read string $availableinfo If section is not available to some users, this string gives information about
+     *    availability which can be displayed to students and/or staff (e.g. 'Available from 3 January 2010')
+     *    for display on main page - obtained dynamically
+     * @property-read bool $uservisible True if this section is available to the given user (for example, if current user
+     *    has viewhiddensections capability, they can access the section even if it is not
+     *    visible or not available, so this would be true in that case) - obtained dynamically
+     * @property-read string $sequence Comma-separated list of all modules in the section. Note, this field may not exactly
+     *    match course_sections.sequence if later has references to non-existing modules or not modules of not available module types.
+     * @property-read course_modinfo $modinfo
      */
-    public function __isset($name)
+    class section_info implements IteratorAggregate
     {
+        /**
+         * Section ID - from course_sections table
+         * @var int
+         */
+        private $_id;
+        /**
+         * Section number - from course_sections table
+         * @var int
+         */
+        private $_sectionnum;
+        /**
+         * Section name if specified - from course_sections table
+         * @var string
+         */
+        private $_name;
+        /**
+         * Section visibility (1 = visible) - from course_sections table
+         * @var int
+         */
+        private $_visible;
+        /**
+         * Section summary text if specified - from course_sections table
+         * @var string
+         */
+        private $_summary;
+        /**
+         * Section summary text format (FORMAT_xx constant) - from course_sections table
+         * @var int
+         */
+        private $_summaryformat;
+        /**
+         * Availability information as JSON string - from course_sections table
+         * @var string
+         */
+        private $_availability;
+        /**
+         * @var string|null the delegated component if any.
+         */
+        private ?string $_component = null;
+        /**
+         * @var int|null the delegated instance item id if any.
+         */
+        private ?int $_itemid = null;
+        /**
+         * @var sectiondelegate|null Section delegate instance if any.
+         */
+        private ?sectiondelegate $_delegateinstance = null;
+        /** @var cm_info[]|null Section cm_info activities, null when it is not loaded yet. */
+        private array|null $_sequencecminfos = null;
+        /**
+         * @var bool|null $_isorphan True if the section is orphan for some reason.
+         */
+        private $_isorphan = null;
+        /**
+         * Availability conditions for this section based on the completion of
+         * course-modules (array from course-module id to required completion state
+         * for that module) - from cached data in sectioncache field
+         * @var array
+         */
+        private $_conditionscompletion;
+        /**
+         * Availability conditions for this section based on course grades (array from
+         * grade item id to object with ->min, ->max fields) - from cached data in
+         * sectioncache field
+         * @var array
+         */
+        private $_conditionsgrade;
+        /**
+         * Availability conditions for this section based on user fields
+         * @var array
+         */
+        private $_conditionsfield;
+        /**
+         * True if this section is available to students i.e. if all availability conditions
+         * are met - obtained dynamically on request, see function {@see section_info::get_available()}
+         * @var bool|null
+         */
+        private $_available;
+        /**
+         * If section is not available to some users, this string gives information about
+         * availability which can be displayed to students and/or staff (e.g. 'Available from 3
+         * January 2010') for display on main page - obtained dynamically on request, see
+         * function {@see section_info::get_availableinfo()}
+         * @var string
+         */
+        private $_availableinfo;
+        /**
+         * True if this section is available to the CURRENT user (for example, if current user
+         * has viewhiddensections capability, they can access the section even if it is not
+         * visible or not available, so this would be true in that case) - obtained dynamically
+         * on request, see function {@see section_info::get_uservisible()}
+         * @var bool|null
+         */
+        private $_uservisible;
+        /**
+         * Default values for sectioncache fields; if a field has this value, it won't
+         * be stored in the sectioncache cache, to save space. Checks are done by ===
+         * which means values must all be strings.
+         * @var array
+         */
+        private static $sectioncachedefaults = [
+            'name' => null,
+            'summary' => '',
+            'summaryformat' => '1',
+            // FORMAT_HTML, but must be a string.
+            'visible' => '1',
+            'availability' => null,
+            'component' => null,
+            'itemid' => null,
+        ];
+        /**
+         * Stores format options that have been cached when building 'coursecache'
+         * When the format option is requested we look first if it has been cached
+         * @var array
+         */
+        private $cachedformatoptions = [];
+        /**
+         * Stores the list of all possible section options defined in each used course format.
+         * @var array
+         */
+        private static $sectionformatoptions = [];
+        /**
+         * Stores the modinfo object passed in constructor, may be used when requesting
+         * dynamically obtained attributes such as available, availableinfo, uservisible.
+         * Also used to retrun information about current course or user.
+         * @var course_modinfo
+         */
+        private $modinfo;
+        /**
+         * True if has activities, otherwise false.
+         * @var bool
+         */
+        public $hasactivites;
+        /**
+         * List of class read-only properties' getter methods.
+         * Used by magic functions __get(), __isset().
+         * @var array
+         */
+        private static $standardproperties = ['section' => 'get_section_number'];
+        /**
+         * Constructs object from database information plus extra required data.
+         * @param object $data Array entry from cached sectioncache
+         * @param int $number Section number (array key)
+         * @param mixed $notused1 argument not used (informaion is available in $modinfo)
+         * @param mixed $notused2 argument not used (informaion is available in $modinfo)
+         * @param modinfo $modinfo Owner (needed for checking availability)
+         * @param mixed $notused3 argument not used (informaion is available in $modinfo)
+         */
+        public function __construct($data, $number, $notused1, $notused2, $modinfo, $notused3)
+        {
+        }
+        /**
+         * Magic method to check if the property is set
+         *
+         * @param string $name name of the property
+         * @return bool
+         */
+        public function __isset($name)
+        {
+        }
+        /**
+         * Magic method to retrieve the property, this is either basic section property
+         * or availability information or additional properties added by course format
+         *
+         * @param string $name name of the property
+         * @return mixed
+         */
+        public function __get($name)
+        {
+        }
+        /**
+         * Finds whether this section is available at the moment for the current user.
+         *
+         * The value can be accessed publicly as $sectioninfo->available, but can be called directly if there
+         * is a case when it might be called recursively (you can't call property values recursively).
+         *
+         * @return bool
+         */
+        public function get_available()
+        {
+        }
+        /**
+         * Check if the delegated component is available.
+         *
+         * @return bool
+         */
+        private function check_delegated_available(): bool
+        {
+        }
+        /**
+         * Returns the availability text shown next to the section on course page.
+         *
+         * @return string
+         */
+        private function get_availableinfo()
+        {
+        }
+        #[\Override]
+        public function getIterator(): Traversable
+        {
+        }
+        /**
+         * Works out whether activity is visible *for current user* - if this is false, they
+         * aren't allowed to access it.
+         *
+         * @return bool
+         */
+        private function get_uservisible()
+        {
+        }
+        /**
+         * Check if the delegated component is user visible.
+         *
+         * @return bool
+         */
+        private function check_delegated_uservisible(): bool
+        {
+        }
+        /**
+         * Restores the course_sections.sequence value
+         *
+         * @return string
+         */
+        private function get_sequence()
+        {
+        }
+        /**
+         * Returns the course modules in this section.
+         *
+         * @return cm_info[]
+         */
+        public function get_sequence_cm_infos(): array
+        {
+        }
+        /**
+         * Returns course ID - from course_sections table
+         *
+         * @return int
+         */
+        private function get_course()
+        {
+        }
+        /**
+         * Modinfo object
+         *
+         * @return course_modinfo
+         */
+        private function get_modinfo()
+        {
+        }
+        /**
+         * Returns section number.
+         *
+         * This method is called by the property ->section.
+         *
+         * @return int
+         */
+        private function get_section_number(): int
+        {
+        }
+        /**
+         * Get the delegate component instance.
+         *
+         * @return sectiondelegate|null
+         */
+        public function get_component_instance(): ?sectiondelegate
+        {
+        }
+        /**
+         * Returns true if this section is a delegate to a component.
+         * @return bool
+         */
+        public function is_delegated(): bool
+        {
+        }
+        /**
+         * Returns true if this section is orphan.
+         *
+         * @return bool
+         */
+        public function is_orphan(): bool
+        {
+        }
+        /**
+         * Prepares section data for inclusion in sectioncache cache, removing items
+         * that are set to defaults, and adding availability data if required.
+         *
+         * Called by build_section_cache in course_modinfo only; do not use otherwise.
+         * @param object $section Raw section data object
+         */
+        public static function convert_for_section_cache($section)
+        {
+        }
     }
+}
+namespace {
     /**
-     * Magic method to retrieve the property, this is either basic section property
-     * or availability information or additional properties added by course format
-     *
-     * @param string $name name of the property
-     * @return mixed
+     * Runtime class alias of \core_course\section_info registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function __get($name)
-    {
-    }
-    /**
-     * Finds whether this section is available at the moment for the current user.
-     *
-     * The value can be accessed publicly as $sectioninfo->available, but can be called directly if there
-     * is a case when it might be called recursively (you can't call property values recursively).
-     *
-     * @return bool
-     */
-    public function get_available()
-    {
-    }
-    /**
-     * Check if the delegated component is available.
-     *
-     * @return bool
-     */
-    private function check_delegated_available(): bool
-    {
-    }
-    /**
-     * Returns the availability text shown next to the section on course page.
-     *
-     * @return string
-     */
-    private function get_availableinfo()
-    {
-    }
-    #[\Override]
-    public function getIterator(): Traversable
-    {
-    }
-    /**
-     * Works out whether activity is visible *for current user* - if this is false, they
-     * aren't allowed to access it.
-     *
-     * @return bool
-     */
-    private function get_uservisible()
-    {
-    }
-    /**
-     * Check if the delegated component is user visible.
-     *
-     * @return bool
-     */
-    private function check_delegated_uservisible(): bool
-    {
-    }
-    /**
-     * Restores the course_sections.sequence value
-     *
-     * @return string
-     */
-    private function get_sequence()
-    {
-    }
-    /**
-     * Returns the course modules in this section.
-     *
-     * @return cm_info[]
-     */
-    public function get_sequence_cm_infos(): array
-    {
-    }
-    /**
-     * Returns course ID - from course_sections table
-     *
-     * @return int
-     */
-    private function get_course()
-    {
-    }
-    /**
-     * Modinfo object
-     *
-     * @return course_modinfo
-     */
-    private function get_modinfo()
-    {
-    }
-    /**
-     * Returns section number.
-     *
-     * This method is called by the property ->section.
-     *
-     * @return int
-     */
-    private function get_section_number(): int
-    {
-    }
-    /**
-     * Get the delegate component instance.
-     *
-     * @return sectiondelegate|null
-     */
-    public function get_component_instance(): ?sectiondelegate
-    {
-    }
-    /**
-     * Returns true if this section is a delegate to a component.
-     * @return bool
-     */
-    public function is_delegated(): bool
-    {
-    }
-    /**
-     * Returns true if this section is orphan.
-     *
-     * @return bool
-     */
-    public function is_orphan(): bool
-    {
-    }
-    /**
-     * Prepares section data for inclusion in sectioncache cache, removing items
-     * that are set to defaults, and adding availability data if required.
-     *
-     * Called by build_section_cache in course_modinfo only; do not use otherwise.
-     * @param object $section Raw section data object
-     */
-    public static function convert_for_section_cache($section)
+    class section_info extends \core_course\section_info
     {
     }
 }

@@ -8,6 +8,9 @@
  */
 namespace Aws\Identity\S3;
 
+use Aws;
+use Aws\LruArrayCache;
+use GuzzleHttp\Promise;
 class S3ExpressIdentityProvider
 {
     private $cache;

@@ -21,81 +21,90 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadata extends \Google\Collection
-{
-    protected $collection_key = 'webSearchQueries';
-    protected $groundingSupportType = GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadataGroundingSupport::class;
-    protected $groundingSupportDataType = 'array';
-    protected $retrievalMetadataType = GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadataRetrievalMetadata::class;
-    protected $retrievalMetadataDataType = 'array';
-    protected $searchEntryPointType = GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadataSearchEntryPoint::class;
-    protected $searchEntryPointDataType = '';
-    protected $supportChunksType = GoogleCloudDiscoveryengineV1FactChunk::class;
-    protected $supportChunksDataType = 'array';
-    /**
-     * @var string[]
-     */
-    public $webSearchQueries;
-    /**
-     * @param GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadataGroundingSupport[]
-     */
-    public function setGroundingSupport($groundingSupport)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadata extends \Google\Collection
     {
+        protected $collection_key = 'webSearchQueries';
+        protected $groundingSupportType = GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadataGroundingSupport::class;
+        protected $groundingSupportDataType = 'array';
+        protected $retrievalMetadataType = GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadataRetrievalMetadata::class;
+        protected $retrievalMetadataDataType = 'array';
+        protected $searchEntryPointType = GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadataSearchEntryPoint::class;
+        protected $searchEntryPointDataType = '';
+        protected $supportChunksType = GoogleCloudDiscoveryengineV1FactChunk::class;
+        protected $supportChunksDataType = 'array';
+        /**
+         * @var string[]
+         */
+        public $webSearchQueries;
+        /**
+         * @param GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadataGroundingSupport[]
+         */
+        public function setGroundingSupport($groundingSupport)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadataGroundingSupport[]
+         */
+        public function getGroundingSupport()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadataRetrievalMetadata[]
+         */
+        public function setRetrievalMetadata($retrievalMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadataRetrievalMetadata[]
+         */
+        public function getRetrievalMetadata()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadataSearchEntryPoint
+         */
+        public function setSearchEntryPoint(GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadataSearchEntryPoint $searchEntryPoint)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadataSearchEntryPoint
+         */
+        public function getSearchEntryPoint()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1FactChunk[]
+         */
+        public function setSupportChunks($supportChunks)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1FactChunk[]
+         */
+        public function getSupportChunks()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setWebSearchQueries($webSearchQueries)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getWebSearchQueries()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadataGroundingSupport[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGroundingSupport()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadataRetrievalMetadata[]
-     */
-    public function setRetrievalMetadata($retrievalMetadata)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadataRetrievalMetadata[]
-     */
-    public function getRetrievalMetadata()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadataSearchEntryPoint
-     */
-    public function setSearchEntryPoint(GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadataSearchEntryPoint $searchEntryPoint)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadataSearchEntryPoint
-     */
-    public function getSearchEntryPoint()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1FactChunk[]
-     */
-    public function setSupportChunks($supportChunks)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1FactChunk[]
-     */
-    public function getSupportChunks()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setWebSearchQueries($webSearchQueries)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getWebSearchQueries()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadata extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1GenerateGroundedContentResponseCandidateGroundingMetadata
     {
     }
 }

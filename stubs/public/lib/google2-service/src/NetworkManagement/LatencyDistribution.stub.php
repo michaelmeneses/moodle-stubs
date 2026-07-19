@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkManagement;
-
-class LatencyDistribution extends \Google\Collection
-{
-    protected $collection_key = 'latencyPercentiles';
-    protected $latencyPercentilesType = LatencyPercentile::class;
-    protected $latencyPercentilesDataType = 'array';
-    /**
-     * Representative latency percentiles.
-     *
-     * @param LatencyPercentile[] $latencyPercentiles
-     */
-    public function setLatencyPercentiles($latencyPercentiles)
+namespace Google\Service\NetworkManagement {
+    class LatencyDistribution extends \Google\Collection
     {
+        protected $collection_key = 'latencyPercentiles';
+        protected $latencyPercentilesType = LatencyPercentile::class;
+        protected $latencyPercentilesDataType = 'array';
+        /**
+         * Representative latency percentiles.
+         *
+         * @param LatencyPercentile[] $latencyPercentiles
+         */
+        public function setLatencyPercentiles($latencyPercentiles)
+        {
+        }
+        /**
+         * @return LatencyPercentile[]
+         */
+        public function getLatencyPercentiles()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return LatencyPercentile[]
+     * Runtime class alias of \Google\Service\NetworkManagement\LatencyDistribution registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLatencyPercentiles()
+    class Google_Service_NetworkManagement_LatencyDistribution extends \Google\Service\NetworkManagement\LatencyDistribution
     {
     }
 }

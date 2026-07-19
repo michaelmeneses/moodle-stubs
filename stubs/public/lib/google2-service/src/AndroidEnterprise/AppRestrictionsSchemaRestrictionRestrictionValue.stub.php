@@ -21,149 +21,158 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class AppRestrictionsSchemaRestrictionRestrictionValue extends \Google\Collection
-{
-    /**
-     * A restriction of boolean type.
-     */
-    public const TYPE_bool = 'bool';
-    /**
-     * A restriction of string type.
-     */
-    public const TYPE_string = 'string';
-    /**
-     * A restriction of integer type.
-     */
-    public const TYPE_integer = 'integer';
-    /**
-     * A choice of one item from a set.
-     */
-    public const TYPE_choice = 'choice';
-    /**
-     * A choice of multiple items from a set.
-     */
-    public const TYPE_multiselect = 'multiselect';
-    /**
-     * A hidden restriction of string type (the default value can be used to pass
-     * along information that cannot be modified, such as a version code).
-     */
-    public const TYPE_hidden = 'hidden';
-    /**
-     * [M+ devices only] A bundle of restrictions
-     */
-    public const TYPE_bundle = 'bundle';
-    /**
-     * [M+ devices only] An array of restriction bundles
-     */
-    public const TYPE_bundleArray = 'bundleArray';
-    protected $collection_key = 'valueMultiselect';
-    /**
-     * The type of the value being provided.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * The boolean value - this will only be present if type is bool.
-     *
-     * @var bool
-     */
-    public $valueBool;
-    /**
-     * The integer value - this will only be present if type is integer.
-     *
-     * @var int
-     */
-    public $valueInteger;
-    /**
-     * The list of string values - this will only be present if type is
-     * multiselect.
-     *
-     * @var string[]
-     */
-    public $valueMultiselect;
-    /**
-     * The string value - this will be present for types string, choice and
-     * hidden.
-     *
-     * @var string
-     */
-    public $valueString;
-    /**
-     * The type of the value being provided.
-     *
-     * Accepted values: bool, string, integer, choice, multiselect, hidden,
-     * bundle, bundleArray
-     *
-     * @param self::TYPE_* $type
-     */
-    public function setType($type)
+namespace Google\Service\AndroidEnterprise {
+    class AppRestrictionsSchemaRestrictionRestrictionValue extends \Google\Collection
     {
+        /**
+         * A restriction of boolean type.
+         */
+        public const TYPE_bool = 'bool';
+        /**
+         * A restriction of string type.
+         */
+        public const TYPE_string = 'string';
+        /**
+         * A restriction of integer type.
+         */
+        public const TYPE_integer = 'integer';
+        /**
+         * A choice of one item from a set.
+         */
+        public const TYPE_choice = 'choice';
+        /**
+         * A choice of multiple items from a set.
+         */
+        public const TYPE_multiselect = 'multiselect';
+        /**
+         * A hidden restriction of string type (the default value can be used to pass
+         * along information that cannot be modified, such as a version code).
+         */
+        public const TYPE_hidden = 'hidden';
+        /**
+         * [M+ devices only] A bundle of restrictions
+         */
+        public const TYPE_bundle = 'bundle';
+        /**
+         * [M+ devices only] An array of restriction bundles
+         */
+        public const TYPE_bundleArray = 'bundleArray';
+        protected $collection_key = 'valueMultiselect';
+        /**
+         * The type of the value being provided.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * The boolean value - this will only be present if type is bool.
+         *
+         * @var bool
+         */
+        public $valueBool;
+        /**
+         * The integer value - this will only be present if type is integer.
+         *
+         * @var int
+         */
+        public $valueInteger;
+        /**
+         * The list of string values - this will only be present if type is
+         * multiselect.
+         *
+         * @var string[]
+         */
+        public $valueMultiselect;
+        /**
+         * The string value - this will be present for types string, choice and
+         * hidden.
+         *
+         * @var string
+         */
+        public $valueString;
+        /**
+         * The type of the value being provided.
+         *
+         * Accepted values: bool, string, integer, choice, multiselect, hidden,
+         * bundle, bundleArray
+         *
+         * @param self::TYPE_* $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return self::TYPE_*
+         */
+        public function getType()
+        {
+        }
+        /**
+         * The boolean value - this will only be present if type is bool.
+         *
+         * @param bool $valueBool
+         */
+        public function setValueBool($valueBool)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getValueBool()
+        {
+        }
+        /**
+         * The integer value - this will only be present if type is integer.
+         *
+         * @param int $valueInteger
+         */
+        public function setValueInteger($valueInteger)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getValueInteger()
+        {
+        }
+        /**
+         * The list of string values - this will only be present if type is
+         * multiselect.
+         *
+         * @param string[] $valueMultiselect
+         */
+        public function setValueMultiselect($valueMultiselect)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getValueMultiselect()
+        {
+        }
+        /**
+         * The string value - this will be present for types string, choice and
+         * hidden.
+         *
+         * @param string $valueString
+         */
+        public function setValueString($valueString)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValueString()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::TYPE_*
+     * Runtime class alias of \Google\Service\AndroidEnterprise\AppRestrictionsSchemaRestrictionRestrictionValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getType()
-    {
-    }
-    /**
-     * The boolean value - this will only be present if type is bool.
-     *
-     * @param bool $valueBool
-     */
-    public function setValueBool($valueBool)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getValueBool()
-    {
-    }
-    /**
-     * The integer value - this will only be present if type is integer.
-     *
-     * @param int $valueInteger
-     */
-    public function setValueInteger($valueInteger)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getValueInteger()
-    {
-    }
-    /**
-     * The list of string values - this will only be present if type is
-     * multiselect.
-     *
-     * @param string[] $valueMultiselect
-     */
-    public function setValueMultiselect($valueMultiselect)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getValueMultiselect()
-    {
-    }
-    /**
-     * The string value - this will be present for types string, choice and
-     * hidden.
-     *
-     * @param string $valueString
-     */
-    public function setValueString($valueString)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValueString()
+    class Google_Service_AndroidEnterprise_AppRestrictionsSchemaRestrictionRestrictionValue extends \Google\Service\AndroidEnterprise\AppRestrictionsSchemaRestrictionRestrictionValue
     {
     }
 }

@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudVideoIntelligence;
-
-class GoogleCloudVideointelligenceV1SpeechContext extends \Google\Collection
-{
-    protected $collection_key = 'phrases';
-    /**
-     * Optional. A list of strings containing words and phrases "hints" so that
-     * the speech recognition is more likely to recognize them. This can be used
-     * to improve the accuracy for specific words and phrases, for example, if
-     * specific commands are typically spoken by the user. This can also be used
-     * to add additional words to the vocabulary of the recognizer. See [usage
-     * limits](https://cloud.google.com/speech/limits#content).
-     *
-     * @var string[]
-     */
-    public $phrases;
-    /**
-     * Optional. A list of strings containing words and phrases "hints" so that
-     * the speech recognition is more likely to recognize them. This can be used
-     * to improve the accuracy for specific words and phrases, for example, if
-     * specific commands are typically spoken by the user. This can also be used
-     * to add additional words to the vocabulary of the recognizer. See [usage
-     * limits](https://cloud.google.com/speech/limits#content).
-     *
-     * @param string[] $phrases
-     */
-    public function setPhrases($phrases)
+namespace Google\Service\CloudVideoIntelligence {
+    class GoogleCloudVideointelligenceV1SpeechContext extends \Google\Collection
     {
+        protected $collection_key = 'phrases';
+        /**
+         * Optional. A list of strings containing words and phrases "hints" so that
+         * the speech recognition is more likely to recognize them. This can be used
+         * to improve the accuracy for specific words and phrases, for example, if
+         * specific commands are typically spoken by the user. This can also be used
+         * to add additional words to the vocabulary of the recognizer. See [usage
+         * limits](https://cloud.google.com/speech/limits#content).
+         *
+         * @var string[]
+         */
+        public $phrases;
+        /**
+         * Optional. A list of strings containing words and phrases "hints" so that
+         * the speech recognition is more likely to recognize them. This can be used
+         * to improve the accuracy for specific words and phrases, for example, if
+         * specific commands are typically spoken by the user. This can also be used
+         * to add additional words to the vocabulary of the recognizer. See [usage
+         * limits](https://cloud.google.com/speech/limits#content).
+         *
+         * @param string[] $phrases
+         */
+        public function setPhrases($phrases)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPhrases()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1SpeechContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPhrases()
+    class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1SpeechContext extends \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1SpeechContext
     {
     }
 }

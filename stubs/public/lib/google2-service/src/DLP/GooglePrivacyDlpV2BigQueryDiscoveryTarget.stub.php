@@ -21,76 +21,85 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2BigQueryDiscoveryTarget extends \Google\Model
-{
-    protected $cadenceType = GooglePrivacyDlpV2DiscoveryGenerationCadence::class;
-    protected $cadenceDataType = '';
-    protected $conditionsType = GooglePrivacyDlpV2DiscoveryBigQueryConditions::class;
-    protected $conditionsDataType = '';
-    protected $disabledType = GooglePrivacyDlpV2Disabled::class;
-    protected $disabledDataType = '';
-    protected $filterType = GooglePrivacyDlpV2DiscoveryBigQueryFilter::class;
-    protected $filterDataType = '';
-    /**
-     * How often and when to update profiles. New tables that match both the
-     * filter and conditions are scanned as quickly as possible depending on
-     * system capacity.
-     *
-     * @param GooglePrivacyDlpV2DiscoveryGenerationCadence $cadence
-     */
-    public function setCadence(GooglePrivacyDlpV2DiscoveryGenerationCadence $cadence)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2BigQueryDiscoveryTarget extends \Google\Model
     {
+        protected $cadenceType = GooglePrivacyDlpV2DiscoveryGenerationCadence::class;
+        protected $cadenceDataType = '';
+        protected $conditionsType = GooglePrivacyDlpV2DiscoveryBigQueryConditions::class;
+        protected $conditionsDataType = '';
+        protected $disabledType = GooglePrivacyDlpV2Disabled::class;
+        protected $disabledDataType = '';
+        protected $filterType = GooglePrivacyDlpV2DiscoveryBigQueryFilter::class;
+        protected $filterDataType = '';
+        /**
+         * How often and when to update profiles. New tables that match both the
+         * filter and conditions are scanned as quickly as possible depending on
+         * system capacity.
+         *
+         * @param GooglePrivacyDlpV2DiscoveryGenerationCadence $cadence
+         */
+        public function setCadence(GooglePrivacyDlpV2DiscoveryGenerationCadence $cadence)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2DiscoveryGenerationCadence
+         */
+        public function getCadence()
+        {
+        }
+        /**
+         * In addition to matching the filter, these conditions must be true before a
+         * profile is generated.
+         *
+         * @param GooglePrivacyDlpV2DiscoveryBigQueryConditions $conditions
+         */
+        public function setConditions(GooglePrivacyDlpV2DiscoveryBigQueryConditions $conditions)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2DiscoveryBigQueryConditions
+         */
+        public function getConditions()
+        {
+        }
+        /**
+         * Tables that match this filter will not have profiles created.
+         *
+         * @param GooglePrivacyDlpV2Disabled $disabled
+         */
+        public function setDisabled(GooglePrivacyDlpV2Disabled $disabled)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2Disabled
+         */
+        public function getDisabled()
+        {
+        }
+        /**
+         * Required. The tables the discovery cadence applies to. The first target
+         * with a matching filter will be the one to apply to a table.
+         *
+         * @param GooglePrivacyDlpV2DiscoveryBigQueryFilter $filter
+         */
+        public function setFilter(GooglePrivacyDlpV2DiscoveryBigQueryFilter $filter)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2DiscoveryBigQueryFilter
+         */
+        public function getFilter()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2DiscoveryGenerationCadence
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2BigQueryDiscoveryTarget registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCadence()
-    {
-    }
-    /**
-     * In addition to matching the filter, these conditions must be true before a
-     * profile is generated.
-     *
-     * @param GooglePrivacyDlpV2DiscoveryBigQueryConditions $conditions
-     */
-    public function setConditions(GooglePrivacyDlpV2DiscoveryBigQueryConditions $conditions)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2DiscoveryBigQueryConditions
-     */
-    public function getConditions()
-    {
-    }
-    /**
-     * Tables that match this filter will not have profiles created.
-     *
-     * @param GooglePrivacyDlpV2Disabled $disabled
-     */
-    public function setDisabled(GooglePrivacyDlpV2Disabled $disabled)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2Disabled
-     */
-    public function getDisabled()
-    {
-    }
-    /**
-     * Required. The tables the discovery cadence applies to. The first target
-     * with a matching filter will be the one to apply to a table.
-     *
-     * @param GooglePrivacyDlpV2DiscoveryBigQueryFilter $filter
-     */
-    public function setFilter(GooglePrivacyDlpV2DiscoveryBigQueryFilter $filter)
-    {
-    }
-    /**
-     * @return GooglePrivacyDlpV2DiscoveryBigQueryFilter
-     */
-    public function getFilter()
+    class Google_Service_DLP_GooglePrivacyDlpV2BigQueryDiscoveryTarget extends \Google\Service\DLP\GooglePrivacyDlpV2BigQueryDiscoveryTarget
     {
     }
 }

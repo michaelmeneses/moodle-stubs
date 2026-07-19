@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class BackupDrPlanRule extends \Google\Model
-{
-    /**
-     * Output only. Timestamp of the latest successful backup created via this
-     * backup rule.
-     *
-     * @var string
-     */
-    public $lastSuccessfulBackupTime;
-    /**
-     * Output only. Unique Id of the backup rule.
-     *
-     * @var string
-     */
-    public $ruleId;
-    /**
-     * Output only. Timestamp of the latest successful backup created via this
-     * backup rule.
-     *
-     * @param string $lastSuccessfulBackupTime
-     */
-    public function setLastSuccessfulBackupTime($lastSuccessfulBackupTime)
+namespace Google\Service\Backupdr {
+    class BackupDrPlanRule extends \Google\Model
     {
+        /**
+         * Output only. Timestamp of the latest successful backup created via this
+         * backup rule.
+         *
+         * @var string
+         */
+        public $lastSuccessfulBackupTime;
+        /**
+         * Output only. Unique Id of the backup rule.
+         *
+         * @var string
+         */
+        public $ruleId;
+        /**
+         * Output only. Timestamp of the latest successful backup created via this
+         * backup rule.
+         *
+         * @param string $lastSuccessfulBackupTime
+         */
+        public function setLastSuccessfulBackupTime($lastSuccessfulBackupTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLastSuccessfulBackupTime()
+        {
+        }
+        /**
+         * Output only. Unique Id of the backup rule.
+         *
+         * @param string $ruleId
+         */
+        public function setRuleId($ruleId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRuleId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Backupdr\BackupDrPlanRule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLastSuccessfulBackupTime()
-    {
-    }
-    /**
-     * Output only. Unique Id of the backup rule.
-     *
-     * @param string $ruleId
-     */
-    public function setRuleId($ruleId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRuleId()
+    class Google_Service_Backupdr_BackupDrPlanRule extends \Google\Service\Backupdr\BackupDrPlanRule
     {
     }
 }

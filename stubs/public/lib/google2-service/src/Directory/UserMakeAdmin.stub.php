@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class UserMakeAdmin extends \Google\Model
-{
-    /**
-     * Indicates the administrator status of the user.
-     *
-     * @var bool
-     */
-    public $status;
-    /**
-     * Indicates the administrator status of the user.
-     *
-     * @param bool $status
-     */
-    public function setStatus($status)
+namespace Google\Service\Directory {
+    class UserMakeAdmin extends \Google\Model
     {
+        /**
+         * Indicates the administrator status of the user.
+         *
+         * @var bool
+         */
+        public $status;
+        /**
+         * Indicates the administrator status of the user.
+         *
+         * @param bool $status
+         */
+        public function setStatus($status)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Directory\UserMakeAdmin registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStatus()
+    class Google_Service_Directory_UserMakeAdmin extends \Google\Service\Directory\UserMakeAdmin
     {
     }
 }

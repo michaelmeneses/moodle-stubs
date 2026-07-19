@@ -21,63 +21,72 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class PersonalApplicationPolicy extends \Google\Model
-{
-    /**
-     * Unspecified. Defaults to AVAILABLE.
-     */
-    public const INSTALL_TYPE_INSTALL_TYPE_UNSPECIFIED = 'INSTALL_TYPE_UNSPECIFIED';
-    /**
-     * The app is blocked and can't be installed in the personal profile. If the
-     * app was previously installed in the device, it will be uninstalled.
-     */
-    public const INSTALL_TYPE_BLOCKED = 'BLOCKED';
-    /**
-     * The app is available to install in the personal profile.
-     */
-    public const INSTALL_TYPE_AVAILABLE = 'AVAILABLE';
-    /**
-     * The type of installation to perform.
-     *
-     * @var string
-     */
-    public $installType;
-    /**
-     * The package name of the application.
-     *
-     * @var string
-     */
-    public $packageName;
-    /**
-     * The type of installation to perform.
-     *
-     * Accepted values: INSTALL_TYPE_UNSPECIFIED, BLOCKED, AVAILABLE
-     *
-     * @param self::INSTALL_TYPE_* $installType
-     */
-    public function setInstallType($installType)
+namespace Google\Service\AndroidManagement {
+    class PersonalApplicationPolicy extends \Google\Model
     {
+        /**
+         * Unspecified. Defaults to AVAILABLE.
+         */
+        public const INSTALL_TYPE_INSTALL_TYPE_UNSPECIFIED = 'INSTALL_TYPE_UNSPECIFIED';
+        /**
+         * The app is blocked and can't be installed in the personal profile. If the
+         * app was previously installed in the device, it will be uninstalled.
+         */
+        public const INSTALL_TYPE_BLOCKED = 'BLOCKED';
+        /**
+         * The app is available to install in the personal profile.
+         */
+        public const INSTALL_TYPE_AVAILABLE = 'AVAILABLE';
+        /**
+         * The type of installation to perform.
+         *
+         * @var string
+         */
+        public $installType;
+        /**
+         * The package name of the application.
+         *
+         * @var string
+         */
+        public $packageName;
+        /**
+         * The type of installation to perform.
+         *
+         * Accepted values: INSTALL_TYPE_UNSPECIFIED, BLOCKED, AVAILABLE
+         *
+         * @param self::INSTALL_TYPE_* $installType
+         */
+        public function setInstallType($installType)
+        {
+        }
+        /**
+         * @return self::INSTALL_TYPE_*
+         */
+        public function getInstallType()
+        {
+        }
+        /**
+         * The package name of the application.
+         *
+         * @param string $packageName
+         */
+        public function setPackageName($packageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPackageName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::INSTALL_TYPE_*
+     * Runtime class alias of \Google\Service\AndroidManagement\PersonalApplicationPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstallType()
-    {
-    }
-    /**
-     * The package name of the application.
-     *
-     * @param string $packageName
-     */
-    public function setPackageName($packageName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPackageName()
+    class Google_Service_AndroidManagement_PersonalApplicationPolicy extends \Google\Service\AndroidManagement\PersonalApplicationPolicy
     {
     }
 }

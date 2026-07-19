@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RecommendationsAI;
-
-class GoogleCloudRecommendationengineV1beta1ListCatalogsResponse extends \Google\Collection
-{
-    protected $collection_key = 'catalogs';
-    protected $catalogsType = GoogleCloudRecommendationengineV1beta1Catalog::class;
-    protected $catalogsDataType = 'array';
-    /**
-     * Pagination token, if not returned indicates the last page.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Output only. All the customer's catalogs.
-     *
-     * @param GoogleCloudRecommendationengineV1beta1Catalog[] $catalogs
-     */
-    public function setCatalogs($catalogs)
+namespace Google\Service\RecommendationsAI {
+    class GoogleCloudRecommendationengineV1beta1ListCatalogsResponse extends \Google\Collection
     {
+        protected $collection_key = 'catalogs';
+        protected $catalogsType = GoogleCloudRecommendationengineV1beta1Catalog::class;
+        protected $catalogsDataType = 'array';
+        /**
+         * Pagination token, if not returned indicates the last page.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Output only. All the customer's catalogs.
+         *
+         * @param GoogleCloudRecommendationengineV1beta1Catalog[] $catalogs
+         */
+        public function setCatalogs($catalogs)
+        {
+        }
+        /**
+         * @return GoogleCloudRecommendationengineV1beta1Catalog[]
+         */
+        public function getCatalogs()
+        {
+        }
+        /**
+         * Pagination token, if not returned indicates the last page.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRecommendationengineV1beta1Catalog[]
+     * Runtime class alias of \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1ListCatalogsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCatalogs()
-    {
-    }
-    /**
-     * Pagination token, if not returned indicates the last page.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_RecommendationsAI_GoogleCloudRecommendationengineV1beta1ListCatalogsResponse extends \Google\Service\RecommendationsAI\GoogleCloudRecommendationengineV1beta1ListCatalogsResponse
     {
     }
 }

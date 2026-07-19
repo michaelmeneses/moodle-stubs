@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class GoogleFirestoreAdminV1VectorConfig extends \Google\Model
-{
-    /**
-     * Required. The vector dimension this configuration applies to. The resulting
-     * index will only include vectors of this dimension, and can be used for
-     * vector search with the same dimension.
-     *
-     * @var int
-     */
-    public $dimension;
-    protected $flatType = GoogleFirestoreAdminV1FlatIndex::class;
-    protected $flatDataType = '';
-    /**
-     * Required. The vector dimension this configuration applies to. The resulting
-     * index will only include vectors of this dimension, and can be used for
-     * vector search with the same dimension.
-     *
-     * @param int $dimension
-     */
-    public function setDimension($dimension)
+namespace Google\Service\Firestore {
+    class GoogleFirestoreAdminV1VectorConfig extends \Google\Model
     {
+        /**
+         * Required. The vector dimension this configuration applies to. The resulting
+         * index will only include vectors of this dimension, and can be used for
+         * vector search with the same dimension.
+         *
+         * @var int
+         */
+        public $dimension;
+        protected $flatType = GoogleFirestoreAdminV1FlatIndex::class;
+        protected $flatDataType = '';
+        /**
+         * Required. The vector dimension this configuration applies to. The resulting
+         * index will only include vectors of this dimension, and can be used for
+         * vector search with the same dimension.
+         *
+         * @param int $dimension
+         */
+        public function setDimension($dimension)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDimension()
+        {
+        }
+        /**
+         * Indicates the vector index is a flat index.
+         *
+         * @param GoogleFirestoreAdminV1FlatIndex $flat
+         */
+        public function setFlat(GoogleFirestoreAdminV1FlatIndex $flat)
+        {
+        }
+        /**
+         * @return GoogleFirestoreAdminV1FlatIndex
+         */
+        public function getFlat()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Firestore\GoogleFirestoreAdminV1VectorConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDimension()
-    {
-    }
-    /**
-     * Indicates the vector index is a flat index.
-     *
-     * @param GoogleFirestoreAdminV1FlatIndex $flat
-     */
-    public function setFlat(GoogleFirestoreAdminV1FlatIndex $flat)
-    {
-    }
-    /**
-     * @return GoogleFirestoreAdminV1FlatIndex
-     */
-    public function getFlat()
+    class Google_Service_Firestore_GoogleFirestoreAdminV1VectorConfig extends \Google\Service\Firestore\GoogleFirestoreAdminV1VectorConfig
     {
     }
 }

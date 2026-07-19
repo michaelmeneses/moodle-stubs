@@ -21,61 +21,70 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class BackgroundColoredText extends \Google\Model
-{
-    public const BACKGROUND_COLOR_UNKNOWN_COLOR = 'UNKNOWN_COLOR';
-    public const BACKGROUND_COLOR_WHITE = 'WHITE';
-    public const BACKGROUND_COLOR_YELLOW = 'YELLOW';
-    public const BACKGROUND_COLOR_ORANGE = 'ORANGE';
-    public const BACKGROUND_COLOR_GREEN = 'GREEN';
-    public const BACKGROUND_COLOR_BLUE = 'BLUE';
-    public const BACKGROUND_COLOR_GREY = 'GREY';
-    /**
-     * [Optional] Color of the background. The text color can change depending on
-     * the selected background color, and the client does not have control over
-     * this. If missing, the background will be WHITE.
-     *
-     * @var string
-     */
-    public $backgroundColor;
-    /**
-     * [Required] The text to display.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * [Optional] Color of the background. The text color can change depending on
-     * the selected background color, and the client does not have control over
-     * this. If missing, the background will be WHITE.
-     *
-     * Accepted values: UNKNOWN_COLOR, WHITE, YELLOW, ORANGE, GREEN, BLUE, GREY
-     *
-     * @param self::BACKGROUND_COLOR_* $backgroundColor
-     */
-    public function setBackgroundColor($backgroundColor)
+namespace Google\Service\CloudSearch {
+    class BackgroundColoredText extends \Google\Model
     {
+        public const BACKGROUND_COLOR_UNKNOWN_COLOR = 'UNKNOWN_COLOR';
+        public const BACKGROUND_COLOR_WHITE = 'WHITE';
+        public const BACKGROUND_COLOR_YELLOW = 'YELLOW';
+        public const BACKGROUND_COLOR_ORANGE = 'ORANGE';
+        public const BACKGROUND_COLOR_GREEN = 'GREEN';
+        public const BACKGROUND_COLOR_BLUE = 'BLUE';
+        public const BACKGROUND_COLOR_GREY = 'GREY';
+        /**
+         * [Optional] Color of the background. The text color can change depending on
+         * the selected background color, and the client does not have control over
+         * this. If missing, the background will be WHITE.
+         *
+         * @var string
+         */
+        public $backgroundColor;
+        /**
+         * [Required] The text to display.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * [Optional] Color of the background. The text color can change depending on
+         * the selected background color, and the client does not have control over
+         * this. If missing, the background will be WHITE.
+         *
+         * Accepted values: UNKNOWN_COLOR, WHITE, YELLOW, ORANGE, GREEN, BLUE, GREY
+         *
+         * @param self::BACKGROUND_COLOR_* $backgroundColor
+         */
+        public function setBackgroundColor($backgroundColor)
+        {
+        }
+        /**
+         * @return self::BACKGROUND_COLOR_*
+         */
+        public function getBackgroundColor()
+        {
+        }
+        /**
+         * [Required] The text to display.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::BACKGROUND_COLOR_*
+     * Runtime class alias of \Google\Service\CloudSearch\BackgroundColoredText registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackgroundColor()
-    {
-    }
-    /**
-     * [Required] The text to display.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_CloudSearch_BackgroundColoredText extends \Google\Service\CloudSearch\BackgroundColoredText
     {
     }
 }

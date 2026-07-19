@@ -21,43 +21,52 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2SearchRequestConversationalSearchSpecUserAnswerSelectedAnswer extends \Google\Collection
-{
-    protected $collection_key = 'productAttributeValues';
-    protected $productAttributeValueType = GoogleCloudRetailV2ProductAttributeValue::class;
-    protected $productAttributeValueDataType = '';
-    protected $productAttributeValuesType = GoogleCloudRetailV2ProductAttributeValue::class;
-    protected $productAttributeValuesDataType = 'array';
-    /**
-     * This field specifies the selected answer which is a attribute key-value.
-     *
-     * @param GoogleCloudRetailV2ProductAttributeValue $productAttributeValue
-     */
-    public function setProductAttributeValue(GoogleCloudRetailV2ProductAttributeValue $productAttributeValue)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2SearchRequestConversationalSearchSpecUserAnswerSelectedAnswer extends \Google\Collection
     {
+        protected $collection_key = 'productAttributeValues';
+        protected $productAttributeValueType = GoogleCloudRetailV2ProductAttributeValue::class;
+        protected $productAttributeValueDataType = '';
+        protected $productAttributeValuesType = GoogleCloudRetailV2ProductAttributeValue::class;
+        protected $productAttributeValuesDataType = 'array';
+        /**
+         * This field specifies the selected answer which is a attribute key-value.
+         *
+         * @param GoogleCloudRetailV2ProductAttributeValue $productAttributeValue
+         */
+        public function setProductAttributeValue(GoogleCloudRetailV2ProductAttributeValue $productAttributeValue)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2ProductAttributeValue
+         */
+        public function getProductAttributeValue()
+        {
+        }
+        /**
+         * This field is deprecated and should not be set.
+         *
+         * @deprecated
+         * @param GoogleCloudRetailV2ProductAttributeValue[] $productAttributeValues
+         */
+        public function setProductAttributeValues($productAttributeValues)
+        {
+        }
+        /**
+         * @deprecated
+         * @return GoogleCloudRetailV2ProductAttributeValue[]
+         */
+        public function getProductAttributeValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRetailV2ProductAttributeValue
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2SearchRequestConversationalSearchSpecUserAnswerSelectedAnswer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProductAttributeValue()
-    {
-    }
-    /**
-     * This field is deprecated and should not be set.
-     *
-     * @deprecated
-     * @param GoogleCloudRetailV2ProductAttributeValue[] $productAttributeValues
-     */
-    public function setProductAttributeValues($productAttributeValues)
-    {
-    }
-    /**
-     * @deprecated
-     * @return GoogleCloudRetailV2ProductAttributeValue[]
-     */
-    public function getProductAttributeValues()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2SearchRequestConversationalSearchSpecUserAnswerSelectedAnswer extends \Google\Service\CloudRetail\GoogleCloudRetailV2SearchRequestConversationalSearchSpecUserAnswerSelectedAnswer
     {
     }
 }

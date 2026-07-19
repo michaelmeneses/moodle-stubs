@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class ListCloudExadataInfrastructuresResponse extends \Google\Collection
-{
-    protected $collection_key = 'cloudExadataInfrastructures';
-    protected $cloudExadataInfrastructuresType = CloudExadataInfrastructure::class;
-    protected $cloudExadataInfrastructuresDataType = 'array';
-    /**
-     * A token for fetching next page of response.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * The list of Exadata Infrastructures.
-     *
-     * @param CloudExadataInfrastructure[] $cloudExadataInfrastructures
-     */
-    public function setCloudExadataInfrastructures($cloudExadataInfrastructures)
+namespace Google\Service\OracleDatabase {
+    class ListCloudExadataInfrastructuresResponse extends \Google\Collection
     {
+        protected $collection_key = 'cloudExadataInfrastructures';
+        protected $cloudExadataInfrastructuresType = CloudExadataInfrastructure::class;
+        protected $cloudExadataInfrastructuresDataType = 'array';
+        /**
+         * A token for fetching next page of response.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * The list of Exadata Infrastructures.
+         *
+         * @param CloudExadataInfrastructure[] $cloudExadataInfrastructures
+         */
+        public function setCloudExadataInfrastructures($cloudExadataInfrastructures)
+        {
+        }
+        /**
+         * @return CloudExadataInfrastructure[]
+         */
+        public function getCloudExadataInfrastructures()
+        {
+        }
+        /**
+         * A token for fetching next page of response.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return CloudExadataInfrastructure[]
+     * Runtime class alias of \Google\Service\OracleDatabase\ListCloudExadataInfrastructuresResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCloudExadataInfrastructures()
-    {
-    }
-    /**
-     * A token for fetching next page of response.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_OracleDatabase_ListCloudExadataInfrastructuresResponse extends \Google\Service\OracleDatabase\ListCloudExadataInfrastructuresResponse
     {
     }
 }

@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\OracleDatabase;
-
-class DataCollectionOptions extends \Google\Model
-{
-    /**
-     * Optional. Indicates whether diagnostic collection is enabled for the VM
-     * cluster
-     *
-     * @var bool
-     */
-    public $diagnosticsEventsEnabled;
-    /**
-     * Optional. Indicates whether health monitoring is enabled for the VM cluster
-     *
-     * @var bool
-     */
-    public $healthMonitoringEnabled;
-    /**
-     * Optional. Indicates whether incident logs and trace collection are enabled
-     * for the VM cluster
-     *
-     * @var bool
-     */
-    public $incidentLogsEnabled;
-    /**
-     * Optional. Indicates whether diagnostic collection is enabled for the VM
-     * cluster
-     *
-     * @param bool $diagnosticsEventsEnabled
-     */
-    public function setDiagnosticsEventsEnabled($diagnosticsEventsEnabled)
+namespace Google\Service\OracleDatabase {
+    class DataCollectionOptions extends \Google\Model
     {
+        /**
+         * Optional. Indicates whether diagnostic collection is enabled for the VM
+         * cluster
+         *
+         * @var bool
+         */
+        public $diagnosticsEventsEnabled;
+        /**
+         * Optional. Indicates whether health monitoring is enabled for the VM cluster
+         *
+         * @var bool
+         */
+        public $healthMonitoringEnabled;
+        /**
+         * Optional. Indicates whether incident logs and trace collection are enabled
+         * for the VM cluster
+         *
+         * @var bool
+         */
+        public $incidentLogsEnabled;
+        /**
+         * Optional. Indicates whether diagnostic collection is enabled for the VM
+         * cluster
+         *
+         * @param bool $diagnosticsEventsEnabled
+         */
+        public function setDiagnosticsEventsEnabled($diagnosticsEventsEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDiagnosticsEventsEnabled()
+        {
+        }
+        /**
+         * Optional. Indicates whether health monitoring is enabled for the VM cluster
+         *
+         * @param bool $healthMonitoringEnabled
+         */
+        public function setHealthMonitoringEnabled($healthMonitoringEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getHealthMonitoringEnabled()
+        {
+        }
+        /**
+         * Optional. Indicates whether incident logs and trace collection are enabled
+         * for the VM cluster
+         *
+         * @param bool $incidentLogsEnabled
+         */
+        public function setIncidentLogsEnabled($incidentLogsEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIncidentLogsEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\OracleDatabase\DataCollectionOptions registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDiagnosticsEventsEnabled()
-    {
-    }
-    /**
-     * Optional. Indicates whether health monitoring is enabled for the VM cluster
-     *
-     * @param bool $healthMonitoringEnabled
-     */
-    public function setHealthMonitoringEnabled($healthMonitoringEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getHealthMonitoringEnabled()
-    {
-    }
-    /**
-     * Optional. Indicates whether incident logs and trace collection are enabled
-     * for the VM cluster
-     *
-     * @param bool $incidentLogsEnabled
-     */
-    public function setIncidentLogsEnabled($incidentLogsEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getIncidentLogsEnabled()
+    class Google_Service_OracleDatabase_DataCollectionOptions extends \Google\Service\OracleDatabase\DataCollectionOptions
     {
     }
 }

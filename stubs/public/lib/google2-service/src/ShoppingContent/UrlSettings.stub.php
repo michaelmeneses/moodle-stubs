@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class UrlSettings extends \Google\Model
-{
-    /**
-     * URL template when the placeholders are expanded will redirect the buyer to
-     * the cart page on the merchant website with the selected item in cart.
-     *
-     * @var string
-     */
-    public $cartUriTemplate;
-    /**
-     * URL template when the placeholders are expanded will redirect the buyer to
-     * the merchant checkout page with the item in the cart.
-     *
-     * @var string
-     */
-    public $checkoutUriTemplate;
-    /**
-     * URL template when the placeholders are expanded will redirect the buyer to
-     * the cart page on the merchant website with the selected item in cart.
-     *
-     * @param string $cartUriTemplate
-     */
-    public function setCartUriTemplate($cartUriTemplate)
+namespace Google\Service\ShoppingContent {
+    class UrlSettings extends \Google\Model
     {
+        /**
+         * URL template when the placeholders are expanded will redirect the buyer to
+         * the cart page on the merchant website with the selected item in cart.
+         *
+         * @var string
+         */
+        public $cartUriTemplate;
+        /**
+         * URL template when the placeholders are expanded will redirect the buyer to
+         * the merchant checkout page with the item in the cart.
+         *
+         * @var string
+         */
+        public $checkoutUriTemplate;
+        /**
+         * URL template when the placeholders are expanded will redirect the buyer to
+         * the cart page on the merchant website with the selected item in cart.
+         *
+         * @param string $cartUriTemplate
+         */
+        public function setCartUriTemplate($cartUriTemplate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCartUriTemplate()
+        {
+        }
+        /**
+         * URL template when the placeholders are expanded will redirect the buyer to
+         * the merchant checkout page with the item in the cart.
+         *
+         * @param string $checkoutUriTemplate
+         */
+        public function setCheckoutUriTemplate($checkoutUriTemplate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCheckoutUriTemplate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\UrlSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCartUriTemplate()
-    {
-    }
-    /**
-     * URL template when the placeholders are expanded will redirect the buyer to
-     * the merchant checkout page with the item in the cart.
-     *
-     * @param string $checkoutUriTemplate
-     */
-    public function setCheckoutUriTemplate($checkoutUriTemplate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCheckoutUriTemplate()
+    class Google_Service_ShoppingContent_UrlSettings extends \Google\Service\ShoppingContent\UrlSettings
     {
     }
 }

@@ -21,109 +21,118 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Docs;
-
-class TextRun extends \Google\Collection
-{
-    protected $collection_key = 'suggestedInsertionIds';
-    /**
-     * The text of this run. Any non-text elements in the run are replaced with
-     * the Unicode character U+E907.
-     *
-     * @var string
-     */
-    public $content;
-    /**
-     * The suggested deletion IDs. If empty, then there are no suggested deletions
-     * of this content.
-     *
-     * @var string[]
-     */
-    public $suggestedDeletionIds;
-    /**
-     * The suggested insertion IDs. A TextRun may have multiple insertion IDs if
-     * it's a nested suggested change. If empty, then this is not a suggested
-     * insertion.
-     *
-     * @var string[]
-     */
-    public $suggestedInsertionIds;
-    protected $suggestedTextStyleChangesType = SuggestedTextStyle::class;
-    protected $suggestedTextStyleChangesDataType = 'map';
-    protected $textStyleType = TextStyle::class;
-    protected $textStyleDataType = '';
-    /**
-     * The text of this run. Any non-text elements in the run are replaced with
-     * the Unicode character U+E907.
-     *
-     * @param string $content
-     */
-    public function setContent($content)
+namespace Google\Service\Docs {
+    class TextRun extends \Google\Collection
     {
+        protected $collection_key = 'suggestedInsertionIds';
+        /**
+         * The text of this run. Any non-text elements in the run are replaced with
+         * the Unicode character U+E907.
+         *
+         * @var string
+         */
+        public $content;
+        /**
+         * The suggested deletion IDs. If empty, then there are no suggested deletions
+         * of this content.
+         *
+         * @var string[]
+         */
+        public $suggestedDeletionIds;
+        /**
+         * The suggested insertion IDs. A TextRun may have multiple insertion IDs if
+         * it's a nested suggested change. If empty, then this is not a suggested
+         * insertion.
+         *
+         * @var string[]
+         */
+        public $suggestedInsertionIds;
+        protected $suggestedTextStyleChangesType = SuggestedTextStyle::class;
+        protected $suggestedTextStyleChangesDataType = 'map';
+        protected $textStyleType = TextStyle::class;
+        protected $textStyleDataType = '';
+        /**
+         * The text of this run. Any non-text elements in the run are replaced with
+         * the Unicode character U+E907.
+         *
+         * @param string $content
+         */
+        public function setContent($content)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getContent()
+        {
+        }
+        /**
+         * The suggested deletion IDs. If empty, then there are no suggested deletions
+         * of this content.
+         *
+         * @param string[] $suggestedDeletionIds
+         */
+        public function setSuggestedDeletionIds($suggestedDeletionIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSuggestedDeletionIds()
+        {
+        }
+        /**
+         * The suggested insertion IDs. A TextRun may have multiple insertion IDs if
+         * it's a nested suggested change. If empty, then this is not a suggested
+         * insertion.
+         *
+         * @param string[] $suggestedInsertionIds
+         */
+        public function setSuggestedInsertionIds($suggestedInsertionIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSuggestedInsertionIds()
+        {
+        }
+        /**
+         * The suggested text style changes to this run, keyed by suggestion ID.
+         *
+         * @param SuggestedTextStyle[] $suggestedTextStyleChanges
+         */
+        public function setSuggestedTextStyleChanges($suggestedTextStyleChanges)
+        {
+        }
+        /**
+         * @return SuggestedTextStyle[]
+         */
+        public function getSuggestedTextStyleChanges()
+        {
+        }
+        /**
+         * The text style of this run.
+         *
+         * @param TextStyle $textStyle
+         */
+        public function setTextStyle(TextStyle $textStyle)
+        {
+        }
+        /**
+         * @return TextStyle
+         */
+        public function getTextStyle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Docs\TextRun registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContent()
-    {
-    }
-    /**
-     * The suggested deletion IDs. If empty, then there are no suggested deletions
-     * of this content.
-     *
-     * @param string[] $suggestedDeletionIds
-     */
-    public function setSuggestedDeletionIds($suggestedDeletionIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSuggestedDeletionIds()
-    {
-    }
-    /**
-     * The suggested insertion IDs. A TextRun may have multiple insertion IDs if
-     * it's a nested suggested change. If empty, then this is not a suggested
-     * insertion.
-     *
-     * @param string[] $suggestedInsertionIds
-     */
-    public function setSuggestedInsertionIds($suggestedInsertionIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSuggestedInsertionIds()
-    {
-    }
-    /**
-     * The suggested text style changes to this run, keyed by suggestion ID.
-     *
-     * @param SuggestedTextStyle[] $suggestedTextStyleChanges
-     */
-    public function setSuggestedTextStyleChanges($suggestedTextStyleChanges)
-    {
-    }
-    /**
-     * @return SuggestedTextStyle[]
-     */
-    public function getSuggestedTextStyleChanges()
-    {
-    }
-    /**
-     * The text style of this run.
-     *
-     * @param TextStyle $textStyle
-     */
-    public function setTextStyle(TextStyle $textStyle)
-    {
-    }
-    /**
-     * @return TextStyle
-     */
-    public function getTextStyle()
+    class Google_Service_Docs_TextRun extends \Google\Service\Docs\TextRun
     {
     }
 }

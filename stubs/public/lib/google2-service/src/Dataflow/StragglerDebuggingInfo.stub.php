@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class StragglerDebuggingInfo extends \Google\Model
-{
-    protected $hotKeyType = HotKeyDebuggingInfo::class;
-    protected $hotKeyDataType = '';
-    /**
-     * Hot key debugging details.
-     *
-     * @param HotKeyDebuggingInfo $hotKey
-     */
-    public function setHotKey(HotKeyDebuggingInfo $hotKey)
+namespace Google\Service\Dataflow {
+    class StragglerDebuggingInfo extends \Google\Model
     {
+        protected $hotKeyType = HotKeyDebuggingInfo::class;
+        protected $hotKeyDataType = '';
+        /**
+         * Hot key debugging details.
+         *
+         * @param HotKeyDebuggingInfo $hotKey
+         */
+        public function setHotKey(HotKeyDebuggingInfo $hotKey)
+        {
+        }
+        /**
+         * @return HotKeyDebuggingInfo
+         */
+        public function getHotKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return HotKeyDebuggingInfo
+     * Runtime class alias of \Google\Service\Dataflow\StragglerDebuggingInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHotKey()
+    class Google_Service_Dataflow_StragglerDebuggingInfo extends \Google\Service\Dataflow\StragglerDebuggingInfo
     {
     }
 }

@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TPU;
-
-class GetGuestAttributesRequest extends \Google\Collection
-{
-    protected $collection_key = 'workerIds';
-    /**
-     * The guest attributes path to be queried.
-     *
-     * @var string
-     */
-    public $queryPath;
-    /**
-     * The 0-based worker ID. If it is empty, all workers' GuestAttributes will be
-     * returned.
-     *
-     * @var string[]
-     */
-    public $workerIds;
-    /**
-     * The guest attributes path to be queried.
-     *
-     * @param string $queryPath
-     */
-    public function setQueryPath($queryPath)
+namespace Google\Service\TPU {
+    class GetGuestAttributesRequest extends \Google\Collection
     {
+        protected $collection_key = 'workerIds';
+        /**
+         * The guest attributes path to be queried.
+         *
+         * @var string
+         */
+        public $queryPath;
+        /**
+         * The 0-based worker ID. If it is empty, all workers' GuestAttributes will be
+         * returned.
+         *
+         * @var string[]
+         */
+        public $workerIds;
+        /**
+         * The guest attributes path to be queried.
+         *
+         * @param string $queryPath
+         */
+        public function setQueryPath($queryPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getQueryPath()
+        {
+        }
+        /**
+         * The 0-based worker ID. If it is empty, all workers' GuestAttributes will be
+         * returned.
+         *
+         * @param string[] $workerIds
+         */
+        public function setWorkerIds($workerIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getWorkerIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\TPU\GetGuestAttributesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getQueryPath()
-    {
-    }
-    /**
-     * The 0-based worker ID. If it is empty, all workers' GuestAttributes will be
-     * returned.
-     *
-     * @param string[] $workerIds
-     */
-    public function setWorkerIds($workerIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getWorkerIds()
+    class Google_Service_TPU_GetGuestAttributesRequest extends \Google\Service\TPU\GetGuestAttributesRequest
     {
     }
 }

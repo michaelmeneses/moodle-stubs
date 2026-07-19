@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class ExecutorMetrics extends \Google\Model
-{
-    /**
-     * @var string[]
-     */
-    public $metrics;
-    /**
-     * @param string[] $metrics
-     */
-    public function setMetrics($metrics)
+namespace Google\Service\Dataproc {
+    class ExecutorMetrics extends \Google\Model
     {
+        /**
+         * @var string[]
+         */
+        public $metrics;
+        /**
+         * @param string[] $metrics
+         */
+        public function setMetrics($metrics)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getMetrics()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Dataproc\ExecutorMetrics registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetrics()
+    class Google_Service_Dataproc_ExecutorMetrics extends \Google\Service\Dataproc\ExecutorMetrics
     {
     }
 }

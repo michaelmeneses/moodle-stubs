@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1PredictRequest extends \Google\Collection
-{
-    protected $collection_key = 'instances';
-    /**
-     * Required. The instances that are the input to the prediction call. A
-     * DeployedModel may have an upper limit on the number of instances it
-     * supports per request, and when it is exceeded the prediction call errors in
-     * case of AutoML Models, or, in case of customer created Models, the
-     * behaviour is as documented by that Model. The schema of any single instance
-     * may be specified via Endpoint's DeployedModels' Model's PredictSchemata's
-     * instance_schema_uri.
-     *
-     * @var array[]
-     */
-    public $instances;
-    /**
-     * Optional. The user labels for Imagen billing usage only. Only Imagen
-     * supports labels. For other use cases, it will be ignored.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * The parameters that govern the prediction. The schema of the parameters may
-     * be specified via Endpoint's DeployedModels' Model's PredictSchemata's
-     * parameters_schema_uri.
-     *
-     * @var array
-     */
-    public $parameters;
-    /**
-     * Required. The instances that are the input to the prediction call. A
-     * DeployedModel may have an upper limit on the number of instances it
-     * supports per request, and when it is exceeded the prediction call errors in
-     * case of AutoML Models, or, in case of customer created Models, the
-     * behaviour is as documented by that Model. The schema of any single instance
-     * may be specified via Endpoint's DeployedModels' Model's PredictSchemata's
-     * instance_schema_uri.
-     *
-     * @param array[] $instances
-     */
-    public function setInstances($instances)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1PredictRequest extends \Google\Collection
     {
+        protected $collection_key = 'instances';
+        /**
+         * Required. The instances that are the input to the prediction call. A
+         * DeployedModel may have an upper limit on the number of instances it
+         * supports per request, and when it is exceeded the prediction call errors in
+         * case of AutoML Models, or, in case of customer created Models, the
+         * behaviour is as documented by that Model. The schema of any single instance
+         * may be specified via Endpoint's DeployedModels' Model's PredictSchemata's
+         * instance_schema_uri.
+         *
+         * @var array[]
+         */
+        public $instances;
+        /**
+         * Optional. The user labels for Imagen billing usage only. Only Imagen
+         * supports labels. For other use cases, it will be ignored.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * The parameters that govern the prediction. The schema of the parameters may
+         * be specified via Endpoint's DeployedModels' Model's PredictSchemata's
+         * parameters_schema_uri.
+         *
+         * @var array
+         */
+        public $parameters;
+        /**
+         * Required. The instances that are the input to the prediction call. A
+         * DeployedModel may have an upper limit on the number of instances it
+         * supports per request, and when it is exceeded the prediction call errors in
+         * case of AutoML Models, or, in case of customer created Models, the
+         * behaviour is as documented by that Model. The schema of any single instance
+         * may be specified via Endpoint's DeployedModels' Model's PredictSchemata's
+         * instance_schema_uri.
+         *
+         * @param array[] $instances
+         */
+        public function setInstances($instances)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getInstances()
+        {
+        }
+        /**
+         * Optional. The user labels for Imagen billing usage only. Only Imagen
+         * supports labels. For other use cases, it will be ignored.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * The parameters that govern the prediction. The schema of the parameters may
+         * be specified via Endpoint's DeployedModels' Model's PredictSchemata's
+         * parameters_schema_uri.
+         *
+         * @param array $parameters
+         */
+        public function setParameters($parameters)
+        {
+        }
+        /**
+         * @return array
+         */
+        public function getParameters()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return array[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1PredictRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInstances()
-    {
-    }
-    /**
-     * Optional. The user labels for Imagen billing usage only. Only Imagen
-     * supports labels. For other use cases, it will be ignored.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * The parameters that govern the prediction. The schema of the parameters may
-     * be specified via Endpoint's DeployedModels' Model's PredictSchemata's
-     * parameters_schema_uri.
-     *
-     * @param array $parameters
-     */
-    public function setParameters($parameters)
-    {
-    }
-    /**
-     * @return array
-     */
-    public function getParameters()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1PredictRequest extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1PredictRequest
     {
     }
 }

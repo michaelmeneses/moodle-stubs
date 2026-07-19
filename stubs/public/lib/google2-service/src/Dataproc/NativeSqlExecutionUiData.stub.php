@@ -21,125 +21,134 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataproc;
-
-class NativeSqlExecutionUiData extends \Google\Collection
-{
-    protected $collection_key = 'fallbackNodeToReason';
-    /**
-     * Optional. Description of the execution.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * Required. Execution ID of the Native SQL Execution.
-     *
-     * @var string
-     */
-    public $executionId;
-    /**
-     * Optional. Description of the fallback.
-     *
-     * @var string
-     */
-    public $fallbackDescription;
-    protected $fallbackNodeToReasonType = FallbackReason::class;
-    protected $fallbackNodeToReasonDataType = 'array';
-    /**
-     * Optional. Number of nodes fallen back to Spark.
-     *
-     * @var int
-     */
-    public $numFallbackNodes;
-    /**
-     * Optional. Number of nodes in Native.
-     *
-     * @var int
-     */
-    public $numNativeNodes;
-    /**
-     * Optional. Description of the execution.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Dataproc {
+    class NativeSqlExecutionUiData extends \Google\Collection
     {
+        protected $collection_key = 'fallbackNodeToReason';
+        /**
+         * Optional. Description of the execution.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * Required. Execution ID of the Native SQL Execution.
+         *
+         * @var string
+         */
+        public $executionId;
+        /**
+         * Optional. Description of the fallback.
+         *
+         * @var string
+         */
+        public $fallbackDescription;
+        protected $fallbackNodeToReasonType = FallbackReason::class;
+        protected $fallbackNodeToReasonDataType = 'array';
+        /**
+         * Optional. Number of nodes fallen back to Spark.
+         *
+         * @var int
+         */
+        public $numFallbackNodes;
+        /**
+         * Optional. Number of nodes in Native.
+         *
+         * @var int
+         */
+        public $numNativeNodes;
+        /**
+         * Optional. Description of the execution.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * Required. Execution ID of the Native SQL Execution.
+         *
+         * @param string $executionId
+         */
+        public function setExecutionId($executionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExecutionId()
+        {
+        }
+        /**
+         * Optional. Description of the fallback.
+         *
+         * @param string $fallbackDescription
+         */
+        public function setFallbackDescription($fallbackDescription)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFallbackDescription()
+        {
+        }
+        /**
+         * Optional. Fallback node to reason.
+         *
+         * @param FallbackReason[] $fallbackNodeToReason
+         */
+        public function setFallbackNodeToReason($fallbackNodeToReason)
+        {
+        }
+        /**
+         * @return FallbackReason[]
+         */
+        public function getFallbackNodeToReason()
+        {
+        }
+        /**
+         * Optional. Number of nodes fallen back to Spark.
+         *
+         * @param int $numFallbackNodes
+         */
+        public function setNumFallbackNodes($numFallbackNodes)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumFallbackNodes()
+        {
+        }
+        /**
+         * Optional. Number of nodes in Native.
+         *
+         * @param int $numNativeNodes
+         */
+        public function setNumNativeNodes($numNativeNodes)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumNativeNodes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataproc\NativeSqlExecutionUiData registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * Required. Execution ID of the Native SQL Execution.
-     *
-     * @param string $executionId
-     */
-    public function setExecutionId($executionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExecutionId()
-    {
-    }
-    /**
-     * Optional. Description of the fallback.
-     *
-     * @param string $fallbackDescription
-     */
-    public function setFallbackDescription($fallbackDescription)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFallbackDescription()
-    {
-    }
-    /**
-     * Optional. Fallback node to reason.
-     *
-     * @param FallbackReason[] $fallbackNodeToReason
-     */
-    public function setFallbackNodeToReason($fallbackNodeToReason)
-    {
-    }
-    /**
-     * @return FallbackReason[]
-     */
-    public function getFallbackNodeToReason()
-    {
-    }
-    /**
-     * Optional. Number of nodes fallen back to Spark.
-     *
-     * @param int $numFallbackNodes
-     */
-    public function setNumFallbackNodes($numFallbackNodes)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumFallbackNodes()
-    {
-    }
-    /**
-     * Optional. Number of nodes in Native.
-     *
-     * @param int $numNativeNodes
-     */
-    public function setNumNativeNodes($numNativeNodes)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumNativeNodes()
+    class Google_Service_Dataproc_NativeSqlExecutionUiData extends \Google\Service\Dataproc\NativeSqlExecutionUiData
     {
     }
 }

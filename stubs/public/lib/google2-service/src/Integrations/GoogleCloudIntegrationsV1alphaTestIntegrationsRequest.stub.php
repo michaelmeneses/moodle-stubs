@@ -21,172 +21,181 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaTestIntegrationsRequest extends \Google\Model
-{
-    /**
-     * Required. This is used to identify the client on whose behalf the event
-     * will be executed.
-     *
-     * @var string
-     */
-    public $clientId;
-    /**
-     * Optional. Config parameters used during integration execution.
-     *
-     * @var array[]
-     */
-    public $configParameters;
-    /**
-     * Optional. custom deadline of the rpc
-     *
-     * @var string
-     */
-    public $deadlineSecondsTime;
-    protected $inputParametersType = GoogleCloudIntegrationsV1alphaValueType::class;
-    protected $inputParametersDataType = 'map';
-    protected $integrationVersionType = GoogleCloudIntegrationsV1alphaIntegrationVersion::class;
-    protected $integrationVersionDataType = '';
-    protected $parametersType = EnterpriseCrmFrontendsEventbusProtoEventParameters::class;
-    protected $parametersDataType = '';
-    /**
-     * Optional. Can be specified in the event request, otherwise false (default).
-     * If true, enables tasks with condition "test_mode = true". If false,
-     * disables tasks with condition "test_mode = true" if global test mode (set
-     * by platform) is also false {@link EventBusConfig}.
-     *
-     * @var bool
-     */
-    public $testMode;
-    /**
-     * Required. The trigger id of the integration trigger config. If both
-     * trigger_id and client_id is present, the integration is executed from the
-     * start tasks provided by the matching trigger config otherwise it is
-     * executed from the default start tasks.
-     *
-     * @var string
-     */
-    public $triggerId;
-    /**
-     * Required. This is used to identify the client on whose behalf the event
-     * will be executed.
-     *
-     * @param string $clientId
-     */
-    public function setClientId($clientId)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaTestIntegrationsRequest extends \Google\Model
     {
+        /**
+         * Required. This is used to identify the client on whose behalf the event
+         * will be executed.
+         *
+         * @var string
+         */
+        public $clientId;
+        /**
+         * Optional. Config parameters used during integration execution.
+         *
+         * @var array[]
+         */
+        public $configParameters;
+        /**
+         * Optional. custom deadline of the rpc
+         *
+         * @var string
+         */
+        public $deadlineSecondsTime;
+        protected $inputParametersType = GoogleCloudIntegrationsV1alphaValueType::class;
+        protected $inputParametersDataType = 'map';
+        protected $integrationVersionType = GoogleCloudIntegrationsV1alphaIntegrationVersion::class;
+        protected $integrationVersionDataType = '';
+        protected $parametersType = EnterpriseCrmFrontendsEventbusProtoEventParameters::class;
+        protected $parametersDataType = '';
+        /**
+         * Optional. Can be specified in the event request, otherwise false (default).
+         * If true, enables tasks with condition "test_mode = true". If false,
+         * disables tasks with condition "test_mode = true" if global test mode (set
+         * by platform) is also false {@link EventBusConfig}.
+         *
+         * @var bool
+         */
+        public $testMode;
+        /**
+         * Required. The trigger id of the integration trigger config. If both
+         * trigger_id and client_id is present, the integration is executed from the
+         * start tasks provided by the matching trigger config otherwise it is
+         * executed from the default start tasks.
+         *
+         * @var string
+         */
+        public $triggerId;
+        /**
+         * Required. This is used to identify the client on whose behalf the event
+         * will be executed.
+         *
+         * @param string $clientId
+         */
+        public function setClientId($clientId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getClientId()
+        {
+        }
+        /**
+         * Optional. Config parameters used during integration execution.
+         *
+         * @param array[] $configParameters
+         */
+        public function setConfigParameters($configParameters)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getConfigParameters()
+        {
+        }
+        /**
+         * Optional. custom deadline of the rpc
+         *
+         * @param string $deadlineSecondsTime
+         */
+        public function setDeadlineSecondsTime($deadlineSecondsTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDeadlineSecondsTime()
+        {
+        }
+        /**
+         * Optional. Input parameters used during integration execution.
+         *
+         * @param GoogleCloudIntegrationsV1alphaValueType[] $inputParameters
+         */
+        public function setInputParameters($inputParameters)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaValueType[]
+         */
+        public function getInputParameters()
+        {
+        }
+        /**
+         * Required. integration config to execute the workflow
+         *
+         * @param GoogleCloudIntegrationsV1alphaIntegrationVersion $integrationVersion
+         */
+        public function setIntegrationVersion(GoogleCloudIntegrationsV1alphaIntegrationVersion $integrationVersion)
+        {
+        }
+        /**
+         * @return GoogleCloudIntegrationsV1alphaIntegrationVersion
+         */
+        public function getIntegrationVersion()
+        {
+        }
+        /**
+         * Optional. Passed in as parameters to each integration execution.
+         *
+         * @deprecated
+         * @param EnterpriseCrmFrontendsEventbusProtoEventParameters $parameters
+         */
+        public function setParameters(EnterpriseCrmFrontendsEventbusProtoEventParameters $parameters)
+        {
+        }
+        /**
+         * @deprecated
+         * @return EnterpriseCrmFrontendsEventbusProtoEventParameters
+         */
+        public function getParameters()
+        {
+        }
+        /**
+         * Optional. Can be specified in the event request, otherwise false (default).
+         * If true, enables tasks with condition "test_mode = true". If false,
+         * disables tasks with condition "test_mode = true" if global test mode (set
+         * by platform) is also false {@link EventBusConfig}.
+         *
+         * @param bool $testMode
+         */
+        public function setTestMode($testMode)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getTestMode()
+        {
+        }
+        /**
+         * Required. The trigger id of the integration trigger config. If both
+         * trigger_id and client_id is present, the integration is executed from the
+         * start tasks provided by the matching trigger config otherwise it is
+         * executed from the default start tasks.
+         *
+         * @param string $triggerId
+         */
+        public function setTriggerId($triggerId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTriggerId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaTestIntegrationsRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getClientId()
-    {
-    }
-    /**
-     * Optional. Config parameters used during integration execution.
-     *
-     * @param array[] $configParameters
-     */
-    public function setConfigParameters($configParameters)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getConfigParameters()
-    {
-    }
-    /**
-     * Optional. custom deadline of the rpc
-     *
-     * @param string $deadlineSecondsTime
-     */
-    public function setDeadlineSecondsTime($deadlineSecondsTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDeadlineSecondsTime()
-    {
-    }
-    /**
-     * Optional. Input parameters used during integration execution.
-     *
-     * @param GoogleCloudIntegrationsV1alphaValueType[] $inputParameters
-     */
-    public function setInputParameters($inputParameters)
-    {
-    }
-    /**
-     * @return GoogleCloudIntegrationsV1alphaValueType[]
-     */
-    public function getInputParameters()
-    {
-    }
-    /**
-     * Required. integration config to execute the workflow
-     *
-     * @param GoogleCloudIntegrationsV1alphaIntegrationVersion $integrationVersion
-     */
-    public function setIntegrationVersion(GoogleCloudIntegrationsV1alphaIntegrationVersion $integrationVersion)
-    {
-    }
-    /**
-     * @return GoogleCloudIntegrationsV1alphaIntegrationVersion
-     */
-    public function getIntegrationVersion()
-    {
-    }
-    /**
-     * Optional. Passed in as parameters to each integration execution.
-     *
-     * @deprecated
-     * @param EnterpriseCrmFrontendsEventbusProtoEventParameters $parameters
-     */
-    public function setParameters(EnterpriseCrmFrontendsEventbusProtoEventParameters $parameters)
-    {
-    }
-    /**
-     * @deprecated
-     * @return EnterpriseCrmFrontendsEventbusProtoEventParameters
-     */
-    public function getParameters()
-    {
-    }
-    /**
-     * Optional. Can be specified in the event request, otherwise false (default).
-     * If true, enables tasks with condition "test_mode = true". If false,
-     * disables tasks with condition "test_mode = true" if global test mode (set
-     * by platform) is also false {@link EventBusConfig}.
-     *
-     * @param bool $testMode
-     */
-    public function setTestMode($testMode)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getTestMode()
-    {
-    }
-    /**
-     * Required. The trigger id of the integration trigger config. If both
-     * trigger_id and client_id is present, the integration is executed from the
-     * start tasks provided by the matching trigger config otherwise it is
-     * executed from the default start tasks.
-     *
-     * @param string $triggerId
-     */
-    public function setTriggerId($triggerId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTriggerId()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaTestIntegrationsRequest extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaTestIntegrationsRequest
     {
     }
 }

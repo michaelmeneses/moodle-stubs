@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class CertValidationFailureEvent extends \Google\Model
-{
-    /**
-     * The reason why certification validation failed.
-     *
-     * @var string
-     */
-    public $failureReason;
-    /**
-     * The reason why certification validation failed.
-     *
-     * @param string $failureReason
-     */
-    public function setFailureReason($failureReason)
+namespace Google\Service\AndroidManagement {
+    class CertValidationFailureEvent extends \Google\Model
     {
+        /**
+         * The reason why certification validation failed.
+         *
+         * @var string
+         */
+        public $failureReason;
+        /**
+         * The reason why certification validation failed.
+         *
+         * @param string $failureReason
+         */
+        public function setFailureReason($failureReason)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFailureReason()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidManagement\CertValidationFailureEvent registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFailureReason()
+    class Google_Service_AndroidManagement_CertValidationFailureEvent extends \Google\Service\AndroidManagement\CertValidationFailureEvent
     {
     }
 }

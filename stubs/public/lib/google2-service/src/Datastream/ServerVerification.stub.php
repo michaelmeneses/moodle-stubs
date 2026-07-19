@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Datastream;
-
-class ServerVerification extends \Google\Model
-{
-    /**
-     * Required. Input only. PEM-encoded server root CA certificate.
-     *
-     * @var string
-     */
-    public $caCertificate;
-    /**
-     * Optional. The hostname mentioned in the Subject or SAN extension of the
-     * server certificate. If this field is not provided, the hostname in the
-     * server certificate is not validated.
-     *
-     * @var string
-     */
-    public $serverCertificateHostname;
-    /**
-     * Required. Input only. PEM-encoded server root CA certificate.
-     *
-     * @param string $caCertificate
-     */
-    public function setCaCertificate($caCertificate)
+namespace Google\Service\Datastream {
+    class ServerVerification extends \Google\Model
     {
+        /**
+         * Required. Input only. PEM-encoded server root CA certificate.
+         *
+         * @var string
+         */
+        public $caCertificate;
+        /**
+         * Optional. The hostname mentioned in the Subject or SAN extension of the
+         * server certificate. If this field is not provided, the hostname in the
+         * server certificate is not validated.
+         *
+         * @var string
+         */
+        public $serverCertificateHostname;
+        /**
+         * Required. Input only. PEM-encoded server root CA certificate.
+         *
+         * @param string $caCertificate
+         */
+        public function setCaCertificate($caCertificate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCaCertificate()
+        {
+        }
+        /**
+         * Optional. The hostname mentioned in the Subject or SAN extension of the
+         * server certificate. If this field is not provided, the hostname in the
+         * server certificate is not validated.
+         *
+         * @param string $serverCertificateHostname
+         */
+        public function setServerCertificateHostname($serverCertificateHostname)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServerCertificateHostname()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Datastream\ServerVerification registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCaCertificate()
-    {
-    }
-    /**
-     * Optional. The hostname mentioned in the Subject or SAN extension of the
-     * server certificate. If this field is not provided, the hostname in the
-     * server certificate is not validated.
-     *
-     * @param string $serverCertificateHostname
-     */
-    public function setServerCertificateHostname($serverCertificateHostname)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServerCertificateHostname()
+    class Google_Service_Datastream_ServerVerification extends \Google\Service\Datastream\ServerVerification
     {
     }
 }

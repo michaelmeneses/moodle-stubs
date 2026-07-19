@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\TagManager;
-
-class ListVariablesResponse extends \Google\Collection
-{
-    protected $collection_key = 'variable';
-    /**
-     * Continuation token for fetching the next page of results.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $variableType = Variable::class;
-    protected $variableDataType = 'array';
-    /**
-     * Continuation token for fetching the next page of results.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\TagManager {
+    class ListVariablesResponse extends \Google\Collection
     {
+        protected $collection_key = 'variable';
+        /**
+         * Continuation token for fetching the next page of results.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $variableType = Variable::class;
+        protected $variableDataType = 'array';
+        /**
+         * Continuation token for fetching the next page of results.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * All GTM Variables of a GTM Container.
+         *
+         * @param Variable[] $variable
+         */
+        public function setVariable($variable)
+        {
+        }
+        /**
+         * @return Variable[]
+         */
+        public function getVariable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\TagManager\ListVariablesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * All GTM Variables of a GTM Container.
-     *
-     * @param Variable[] $variable
-     */
-    public function setVariable($variable)
-    {
-    }
-    /**
-     * @return Variable[]
-     */
-    public function getVariable()
+    class Google_Service_TagManager_ListVariablesResponse extends \Google\Service\TagManager\ListVariablesResponse
     {
     }
 }

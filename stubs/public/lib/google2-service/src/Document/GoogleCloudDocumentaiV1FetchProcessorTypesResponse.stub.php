@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1FetchProcessorTypesResponse extends \Google\Collection
-{
-    protected $collection_key = 'processorTypes';
-    protected $processorTypesType = GoogleCloudDocumentaiV1ProcessorType::class;
-    protected $processorTypesDataType = 'array';
-    /**
-     * The list of processor types.
-     *
-     * @param GoogleCloudDocumentaiV1ProcessorType[] $processorTypes
-     */
-    public function setProcessorTypes($processorTypes)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1FetchProcessorTypesResponse extends \Google\Collection
     {
+        protected $collection_key = 'processorTypes';
+        protected $processorTypesType = GoogleCloudDocumentaiV1ProcessorType::class;
+        protected $processorTypesDataType = 'array';
+        /**
+         * The list of processor types.
+         *
+         * @param GoogleCloudDocumentaiV1ProcessorType[] $processorTypes
+         */
+        public function setProcessorTypes($processorTypes)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1ProcessorType[]
+         */
+        public function getProcessorTypes()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1ProcessorType[]
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1FetchProcessorTypesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProcessorTypes()
+    class Google_Service_Document_GoogleCloudDocumentaiV1FetchProcessorTypesResponse extends \Google\Service\Document\GoogleCloudDocumentaiV1FetchProcessorTypesResponse
     {
     }
 }

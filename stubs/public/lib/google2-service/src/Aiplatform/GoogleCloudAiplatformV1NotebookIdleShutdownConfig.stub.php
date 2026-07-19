@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1NotebookIdleShutdownConfig extends \Google\Model
-{
-    /**
-     * Whether Idle Shutdown is disabled in this NotebookRuntimeTemplate.
-     *
-     * @var bool
-     */
-    public $idleShutdownDisabled;
-    /**
-     * Required. Duration is accurate to the second. In Notebook, Idle Timeout is
-     * accurate to minute so the range of idle_timeout (second) is: 10 * 60 ~ 1440
-     * * 60.
-     *
-     * @var string
-     */
-    public $idleTimeout;
-    /**
-     * Whether Idle Shutdown is disabled in this NotebookRuntimeTemplate.
-     *
-     * @param bool $idleShutdownDisabled
-     */
-    public function setIdleShutdownDisabled($idleShutdownDisabled)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1NotebookIdleShutdownConfig extends \Google\Model
     {
+        /**
+         * Whether Idle Shutdown is disabled in this NotebookRuntimeTemplate.
+         *
+         * @var bool
+         */
+        public $idleShutdownDisabled;
+        /**
+         * Required. Duration is accurate to the second. In Notebook, Idle Timeout is
+         * accurate to minute so the range of idle_timeout (second) is: 10 * 60 ~ 1440
+         * * 60.
+         *
+         * @var string
+         */
+        public $idleTimeout;
+        /**
+         * Whether Idle Shutdown is disabled in this NotebookRuntimeTemplate.
+         *
+         * @param bool $idleShutdownDisabled
+         */
+        public function setIdleShutdownDisabled($idleShutdownDisabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIdleShutdownDisabled()
+        {
+        }
+        /**
+         * Required. Duration is accurate to the second. In Notebook, Idle Timeout is
+         * accurate to minute so the range of idle_timeout (second) is: 10 * 60 ~ 1440
+         * * 60.
+         *
+         * @param string $idleTimeout
+         */
+        public function setIdleTimeout($idleTimeout)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIdleTimeout()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1NotebookIdleShutdownConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIdleShutdownDisabled()
-    {
-    }
-    /**
-     * Required. Duration is accurate to the second. In Notebook, Idle Timeout is
-     * accurate to minute so the range of idle_timeout (second) is: 10 * 60 ~ 1440
-     * * 60.
-     *
-     * @param string $idleTimeout
-     */
-    public function setIdleTimeout($idleTimeout)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIdleTimeout()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1NotebookIdleShutdownConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1NotebookIdleShutdownConfig
     {
     }
 }

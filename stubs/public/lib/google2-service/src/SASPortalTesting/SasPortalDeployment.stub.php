@@ -21,93 +21,102 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SASPortalTesting;
-
-class SasPortalDeployment extends \Google\Collection
-{
-    protected $collection_key = 'sasUserIds';
-    /**
-     * The deployment's display name.
-     *
-     * @var string
-     */
-    public $displayName;
-    /**
-     * Output only. The FCC Registration Numbers (FRNs) copied from its direct
-     * parent.
-     *
-     * @var string[]
-     */
-    public $frns;
-    /**
-     * Output only. Resource name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * User ID used by the devices belonging to this deployment. Each deployment
-     * should be associated with one unique user ID.
-     *
-     * @var string[]
-     */
-    public $sasUserIds;
-    /**
-     * The deployment's display name.
-     *
-     * @param string $displayName
-     */
-    public function setDisplayName($displayName)
+namespace Google\Service\SASPortalTesting {
+    class SasPortalDeployment extends \Google\Collection
     {
+        protected $collection_key = 'sasUserIds';
+        /**
+         * The deployment's display name.
+         *
+         * @var string
+         */
+        public $displayName;
+        /**
+         * Output only. The FCC Registration Numbers (FRNs) copied from its direct
+         * parent.
+         *
+         * @var string[]
+         */
+        public $frns;
+        /**
+         * Output only. Resource name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * User ID used by the devices belonging to this deployment. Each deployment
+         * should be associated with one unique user ID.
+         *
+         * @var string[]
+         */
+        public $sasUserIds;
+        /**
+         * The deployment's display name.
+         *
+         * @param string $displayName
+         */
+        public function setDisplayName($displayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisplayName()
+        {
+        }
+        /**
+         * Output only. The FCC Registration Numbers (FRNs) copied from its direct
+         * parent.
+         *
+         * @param string[] $frns
+         */
+        public function setFrns($frns)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getFrns()
+        {
+        }
+        /**
+         * Output only. Resource name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * User ID used by the devices belonging to this deployment. Each deployment
+         * should be associated with one unique user ID.
+         *
+         * @param string[] $sasUserIds
+         */
+        public function setSasUserIds($sasUserIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getSasUserIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SASPortalTesting\SasPortalDeployment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisplayName()
-    {
-    }
-    /**
-     * Output only. The FCC Registration Numbers (FRNs) copied from its direct
-     * parent.
-     *
-     * @param string[] $frns
-     */
-    public function setFrns($frns)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getFrns()
-    {
-    }
-    /**
-     * Output only. Resource name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * User ID used by the devices belonging to this deployment. Each deployment
-     * should be associated with one unique user ID.
-     *
-     * @param string[] $sasUserIds
-     */
-    public function setSasUserIds($sasUserIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getSasUserIds()
+    class Google_Service_SASPortalTesting_SasPortalDeployment extends \Google\Service\SASPortalTesting\SasPortalDeployment
     {
     }
 }

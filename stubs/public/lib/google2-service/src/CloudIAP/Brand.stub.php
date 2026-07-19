@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIAP;
-
-class Brand extends \Google\Model
-{
-    /**
-     * Application name displayed on OAuth consent screen.
-     *
-     * @var string
-     */
-    public $applicationTitle;
-    /**
-     * Output only. Identifier of the brand. NOTE: GCP project number achieves the
-     * same brand identification purpose as only one brand per project can be
-     * created.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Whether the brand is only intended for usage inside the G
-     * Suite organization only.
-     *
-     * @var bool
-     */
-    public $orgInternalOnly;
-    /**
-     * Support email displayed on the OAuth consent screen.
-     *
-     * @var string
-     */
-    public $supportEmail;
-    /**
-     * Application name displayed on OAuth consent screen.
-     *
-     * @param string $applicationTitle
-     */
-    public function setApplicationTitle($applicationTitle)
+namespace Google\Service\CloudIAP {
+    class Brand extends \Google\Model
     {
+        /**
+         * Application name displayed on OAuth consent screen.
+         *
+         * @var string
+         */
+        public $applicationTitle;
+        /**
+         * Output only. Identifier of the brand. NOTE: GCP project number achieves the
+         * same brand identification purpose as only one brand per project can be
+         * created.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Whether the brand is only intended for usage inside the G
+         * Suite organization only.
+         *
+         * @var bool
+         */
+        public $orgInternalOnly;
+        /**
+         * Support email displayed on the OAuth consent screen.
+         *
+         * @var string
+         */
+        public $supportEmail;
+        /**
+         * Application name displayed on OAuth consent screen.
+         *
+         * @param string $applicationTitle
+         */
+        public function setApplicationTitle($applicationTitle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApplicationTitle()
+        {
+        }
+        /**
+         * Output only. Identifier of the brand. NOTE: GCP project number achieves the
+         * same brand identification purpose as only one brand per project can be
+         * created.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. Whether the brand is only intended for usage inside the G
+         * Suite organization only.
+         *
+         * @param bool $orgInternalOnly
+         */
+        public function setOrgInternalOnly($orgInternalOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getOrgInternalOnly()
+        {
+        }
+        /**
+         * Support email displayed on the OAuth consent screen.
+         *
+         * @param string $supportEmail
+         */
+        public function setSupportEmail($supportEmail)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSupportEmail()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudIAP\Brand registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApplicationTitle()
-    {
-    }
-    /**
-     * Output only. Identifier of the brand. NOTE: GCP project number achieves the
-     * same brand identification purpose as only one brand per project can be
-     * created.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. Whether the brand is only intended for usage inside the G
-     * Suite organization only.
-     *
-     * @param bool $orgInternalOnly
-     */
-    public function setOrgInternalOnly($orgInternalOnly)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getOrgInternalOnly()
-    {
-    }
-    /**
-     * Support email displayed on the OAuth consent screen.
-     *
-     * @param string $supportEmail
-     */
-    public function setSupportEmail($supportEmail)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSupportEmail()
+    class Google_Service_CloudIAP_Brand extends \Google\Service\CloudIAP\Brand
     {
     }
 }

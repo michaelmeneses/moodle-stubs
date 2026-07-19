@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class SqlInstancesResetReplicaSizeRequest extends \Google\Model
-{
+namespace Google\Service\SQLAdmin {
+    class SqlInstancesResetReplicaSizeRequest extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\SQLAdmin\SqlInstancesResetReplicaSizeRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_SQLAdmin_SqlInstancesResetReplicaSizeRequest extends \Google\Service\SQLAdmin\SqlInstancesResetReplicaSizeRequest
+    {
+    }
 }

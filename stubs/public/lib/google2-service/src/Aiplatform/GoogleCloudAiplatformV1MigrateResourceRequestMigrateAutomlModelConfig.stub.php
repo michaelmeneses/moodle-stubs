@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1MigrateResourceRequestMigrateAutomlModelConfig extends \Google\Model
-{
-    /**
-     * Required. Full resource name of automl Model. Format:
-     * `projects/{project}/locations/{location}/models/{model}`.
-     *
-     * @var string
-     */
-    public $model;
-    /**
-     * Optional. Display name of the model in Vertex AI. System will pick a
-     * display name if unspecified.
-     *
-     * @var string
-     */
-    public $modelDisplayName;
-    /**
-     * Required. Full resource name of automl Model. Format:
-     * `projects/{project}/locations/{location}/models/{model}`.
-     *
-     * @param string $model
-     */
-    public function setModel($model)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1MigrateResourceRequestMigrateAutomlModelConfig extends \Google\Model
     {
+        /**
+         * Required. Full resource name of automl Model. Format:
+         * `projects/{project}/locations/{location}/models/{model}`.
+         *
+         * @var string
+         */
+        public $model;
+        /**
+         * Optional. Display name of the model in Vertex AI. System will pick a
+         * display name if unspecified.
+         *
+         * @var string
+         */
+        public $modelDisplayName;
+        /**
+         * Required. Full resource name of automl Model. Format:
+         * `projects/{project}/locations/{location}/models/{model}`.
+         *
+         * @param string $model
+         */
+        public function setModel($model)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModel()
+        {
+        }
+        /**
+         * Optional. Display name of the model in Vertex AI. System will pick a
+         * display name if unspecified.
+         *
+         * @param string $modelDisplayName
+         */
+        public function setModelDisplayName($modelDisplayName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModelDisplayName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1MigrateResourceRequestMigrateAutomlModelConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getModel()
-    {
-    }
-    /**
-     * Optional. Display name of the model in Vertex AI. System will pick a
-     * display name if unspecified.
-     *
-     * @param string $modelDisplayName
-     */
-    public function setModelDisplayName($modelDisplayName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getModelDisplayName()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1MigrateResourceRequestMigrateAutomlModelConfig extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1MigrateResourceRequestMigrateAutomlModelConfig
     {
     }
 }

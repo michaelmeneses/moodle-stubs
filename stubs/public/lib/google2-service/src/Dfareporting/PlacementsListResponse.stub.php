@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class PlacementsListResponse extends \Google\Collection
-{
-    protected $collection_key = 'placements';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#placementsListResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Pagination token to be used for the next list operation.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $placementsType = Placement::class;
-    protected $placementsDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#placementsListResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Dfareporting {
+    class PlacementsListResponse extends \Google\Collection
     {
+        protected $collection_key = 'placements';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#placementsListResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Pagination token to be used for the next list operation.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $placementsType = Placement::class;
+        protected $placementsDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#placementsListResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Pagination token to be used for the next list operation.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Placement collection.
+         *
+         * @param Placement[] $placements
+         */
+        public function setPlacements($placements)
+        {
+        }
+        /**
+         * @return Placement[]
+         */
+        public function getPlacements()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\PlacementsListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * Pagination token to be used for the next list operation.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Placement collection.
-     *
-     * @param Placement[] $placements
-     */
-    public function setPlacements($placements)
-    {
-    }
-    /**
-     * @return Placement[]
-     */
-    public function getPlacements()
+    class Google_Service_Dfareporting_PlacementsListResponse extends \Google\Service\Dfareporting\PlacementsListResponse
     {
     }
 }

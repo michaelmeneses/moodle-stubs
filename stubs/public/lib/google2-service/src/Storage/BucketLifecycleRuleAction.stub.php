@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Storage;
-
-class BucketLifecycleRuleAction extends \Google\Model
-{
-    /**
-     * Target storage class. Required iff the type of the action is
-     * SetStorageClass.
-     *
-     * @var string
-     */
-    public $storageClass;
-    /**
-     * Type of the action. Currently, only Delete, SetStorageClass, and
-     * AbortIncompleteMultipartUpload are supported.
-     *
-     * @var string
-     */
-    public $type;
-    /**
-     * Target storage class. Required iff the type of the action is
-     * SetStorageClass.
-     *
-     * @param string $storageClass
-     */
-    public function setStorageClass($storageClass)
+namespace Google\Service\Storage {
+    class BucketLifecycleRuleAction extends \Google\Model
     {
+        /**
+         * Target storage class. Required iff the type of the action is
+         * SetStorageClass.
+         *
+         * @var string
+         */
+        public $storageClass;
+        /**
+         * Type of the action. Currently, only Delete, SetStorageClass, and
+         * AbortIncompleteMultipartUpload are supported.
+         *
+         * @var string
+         */
+        public $type;
+        /**
+         * Target storage class. Required iff the type of the action is
+         * SetStorageClass.
+         *
+         * @param string $storageClass
+         */
+        public function setStorageClass($storageClass)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStorageClass()
+        {
+        }
+        /**
+         * Type of the action. Currently, only Delete, SetStorageClass, and
+         * AbortIncompleteMultipartUpload are supported.
+         *
+         * @param string $type
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Storage\BucketLifecycleRuleAction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStorageClass()
-    {
-    }
-    /**
-     * Type of the action. Currently, only Delete, SetStorageClass, and
-     * AbortIncompleteMultipartUpload are supported.
-     *
-     * @param string $type
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_Storage_BucketLifecycleRuleAction extends \Google\Service\Storage\BucketLifecycleRuleAction
     {
     }
 }

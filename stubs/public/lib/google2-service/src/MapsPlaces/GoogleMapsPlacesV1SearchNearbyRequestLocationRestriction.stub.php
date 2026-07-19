@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MapsPlaces;
-
-class GoogleMapsPlacesV1SearchNearbyRequestLocationRestriction extends \Google\Model
-{
-    protected $circleType = GoogleMapsPlacesV1Circle::class;
-    protected $circleDataType = '';
-    /**
-     * A circle defined by center point and radius.
-     *
-     * @param GoogleMapsPlacesV1Circle $circle
-     */
-    public function setCircle(GoogleMapsPlacesV1Circle $circle)
+namespace Google\Service\MapsPlaces {
+    class GoogleMapsPlacesV1SearchNearbyRequestLocationRestriction extends \Google\Model
     {
+        protected $circleType = GoogleMapsPlacesV1Circle::class;
+        protected $circleDataType = '';
+        /**
+         * A circle defined by center point and radius.
+         *
+         * @param GoogleMapsPlacesV1Circle $circle
+         */
+        public function setCircle(GoogleMapsPlacesV1Circle $circle)
+        {
+        }
+        /**
+         * @return GoogleMapsPlacesV1Circle
+         */
+        public function getCircle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleMapsPlacesV1Circle
+     * Runtime class alias of \Google\Service\MapsPlaces\GoogleMapsPlacesV1SearchNearbyRequestLocationRestriction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCircle()
+    class Google_Service_MapsPlaces_GoogleMapsPlacesV1SearchNearbyRequestLocationRestriction extends \Google\Service\MapsPlaces\GoogleMapsPlacesV1SearchNearbyRequestLocationRestriction
     {
     }
 }

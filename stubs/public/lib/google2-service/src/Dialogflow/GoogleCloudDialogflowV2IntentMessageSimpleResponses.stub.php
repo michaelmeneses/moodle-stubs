@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2IntentMessageSimpleResponses extends \Google\Collection
-{
-    protected $collection_key = 'simpleResponses';
-    protected $simpleResponsesType = GoogleCloudDialogflowV2IntentMessageSimpleResponse::class;
-    protected $simpleResponsesDataType = 'array';
-    /**
-     * Required. The list of simple responses.
-     *
-     * @param GoogleCloudDialogflowV2IntentMessageSimpleResponse[] $simpleResponses
-     */
-    public function setSimpleResponses($simpleResponses)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2IntentMessageSimpleResponses extends \Google\Collection
     {
+        protected $collection_key = 'simpleResponses';
+        protected $simpleResponsesType = GoogleCloudDialogflowV2IntentMessageSimpleResponse::class;
+        protected $simpleResponsesDataType = 'array';
+        /**
+         * Required. The list of simple responses.
+         *
+         * @param GoogleCloudDialogflowV2IntentMessageSimpleResponse[] $simpleResponses
+         */
+        public function setSimpleResponses($simpleResponses)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowV2IntentMessageSimpleResponse[]
+         */
+        public function getSimpleResponses()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowV2IntentMessageSimpleResponse[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2IntentMessageSimpleResponses registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSimpleResponses()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2IntentMessageSimpleResponses extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2IntentMessageSimpleResponses
     {
     }
 }

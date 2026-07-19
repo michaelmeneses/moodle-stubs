@@ -21,33 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudOSLogin;
-
-class ProvisionPosixAccountRequest extends \Google\Collection
-{
-    protected $collection_key = 'regions';
-    /**
-     * Optional. The regions to wait for a POSIX account to be written to before
-     * returning a response. If unspecified, defaults to all regions. Regions are
-     * listed at https://cloud.google.com/about/locations#region.
-     *
-     * @var string[]
-     */
-    public $regions;
-    /**
-     * Optional. The regions to wait for a POSIX account to be written to before
-     * returning a response. If unspecified, defaults to all regions. Regions are
-     * listed at https://cloud.google.com/about/locations#region.
-     *
-     * @param string[] $regions
-     */
-    public function setRegions($regions)
+namespace Google\Service\CloudOSLogin {
+    class ProvisionPosixAccountRequest extends \Google\Collection
     {
+        protected $collection_key = 'regions';
+        /**
+         * Optional. The regions to wait for a POSIX account to be written to before
+         * returning a response. If unspecified, defaults to all regions. Regions are
+         * listed at https://cloud.google.com/about/locations#region.
+         *
+         * @var string[]
+         */
+        public $regions;
+        /**
+         * Optional. The regions to wait for a POSIX account to be written to before
+         * returning a response. If unspecified, defaults to all regions. Regions are
+         * listed at https://cloud.google.com/about/locations#region.
+         *
+         * @param string[] $regions
+         */
+        public function setRegions($regions)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRegions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudOSLogin\ProvisionPosixAccountRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRegions()
+    class Google_Service_CloudOSLogin_ProvisionPosixAccountRequest extends \Google\Service\CloudOSLogin\ProvisionPosixAccountRequest
     {
     }
 }

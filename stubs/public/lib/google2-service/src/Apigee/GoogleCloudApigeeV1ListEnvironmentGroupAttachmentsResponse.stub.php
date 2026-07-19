@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1ListEnvironmentGroupAttachmentsResponse extends \Google\Collection
-{
-    protected $collection_key = 'environmentGroupAttachments';
-    protected $environmentGroupAttachmentsType = GoogleCloudApigeeV1EnvironmentGroupAttachment::class;
-    protected $environmentGroupAttachmentsDataType = 'array';
-    /**
-     * Page token that you can include in a ListEnvironmentGroupAttachments
-     * request to retrieve the next page. If omitted, no subsequent pages exist.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * EnvironmentGroupAttachments for the specified environment group.
-     *
-     * @param GoogleCloudApigeeV1EnvironmentGroupAttachment[] $environmentGroupAttachments
-     */
-    public function setEnvironmentGroupAttachments($environmentGroupAttachments)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1ListEnvironmentGroupAttachmentsResponse extends \Google\Collection
     {
+        protected $collection_key = 'environmentGroupAttachments';
+        protected $environmentGroupAttachmentsType = GoogleCloudApigeeV1EnvironmentGroupAttachment::class;
+        protected $environmentGroupAttachmentsDataType = 'array';
+        /**
+         * Page token that you can include in a ListEnvironmentGroupAttachments
+         * request to retrieve the next page. If omitted, no subsequent pages exist.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * EnvironmentGroupAttachments for the specified environment group.
+         *
+         * @param GoogleCloudApigeeV1EnvironmentGroupAttachment[] $environmentGroupAttachments
+         */
+        public function setEnvironmentGroupAttachments($environmentGroupAttachments)
+        {
+        }
+        /**
+         * @return GoogleCloudApigeeV1EnvironmentGroupAttachment[]
+         */
+        public function getEnvironmentGroupAttachments()
+        {
+        }
+        /**
+         * Page token that you can include in a ListEnvironmentGroupAttachments
+         * request to retrieve the next page. If omitted, no subsequent pages exist.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApigeeV1EnvironmentGroupAttachment[]
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1ListEnvironmentGroupAttachmentsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnvironmentGroupAttachments()
-    {
-    }
-    /**
-     * Page token that you can include in a ListEnvironmentGroupAttachments
-     * request to retrieve the next page. If omitted, no subsequent pages exist.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Apigee_GoogleCloudApigeeV1ListEnvironmentGroupAttachmentsResponse extends \Google\Service\Apigee\GoogleCloudApigeeV1ListEnvironmentGroupAttachmentsResponse
     {
     }
 }

@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class VideoFormatsListResponse extends \Google\Collection
-{
-    protected $collection_key = 'videoFormats';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#videoFormatsListResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    protected $videoFormatsType = VideoFormat::class;
-    protected $videoFormatsDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#videoFormatsListResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Dfareporting {
+    class VideoFormatsListResponse extends \Google\Collection
     {
+        protected $collection_key = 'videoFormats';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#videoFormatsListResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        protected $videoFormatsType = VideoFormat::class;
+        protected $videoFormatsDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#videoFormatsListResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Video format collection.
+         *
+         * @param VideoFormat[] $videoFormats
+         */
+        public function setVideoFormats($videoFormats)
+        {
+        }
+        /**
+         * @return VideoFormat[]
+         */
+        public function getVideoFormats()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\VideoFormatsListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * Video format collection.
-     *
-     * @param VideoFormat[] $videoFormats
-     */
-    public function setVideoFormats($videoFormats)
-    {
-    }
-    /**
-     * @return VideoFormat[]
-     */
-    public function getVideoFormats()
+    class Google_Service_Dfareporting_VideoFormatsListResponse extends \Google\Service\Dfareporting\VideoFormatsListResponse
     {
     }
 }

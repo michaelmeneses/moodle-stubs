@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRetail;
-
-class GoogleCloudRetailV2AddCatalogAttributeRequest extends \Google\Model
-{
-    protected $catalogAttributeType = GoogleCloudRetailV2CatalogAttribute::class;
-    protected $catalogAttributeDataType = '';
-    /**
-     * Required. The CatalogAttribute to add.
-     *
-     * @param GoogleCloudRetailV2CatalogAttribute $catalogAttribute
-     */
-    public function setCatalogAttribute(GoogleCloudRetailV2CatalogAttribute $catalogAttribute)
+namespace Google\Service\CloudRetail {
+    class GoogleCloudRetailV2AddCatalogAttributeRequest extends \Google\Model
     {
+        protected $catalogAttributeType = GoogleCloudRetailV2CatalogAttribute::class;
+        protected $catalogAttributeDataType = '';
+        /**
+         * Required. The CatalogAttribute to add.
+         *
+         * @param GoogleCloudRetailV2CatalogAttribute $catalogAttribute
+         */
+        public function setCatalogAttribute(GoogleCloudRetailV2CatalogAttribute $catalogAttribute)
+        {
+        }
+        /**
+         * @return GoogleCloudRetailV2CatalogAttribute
+         */
+        public function getCatalogAttribute()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudRetailV2CatalogAttribute
+     * Runtime class alias of \Google\Service\CloudRetail\GoogleCloudRetailV2AddCatalogAttributeRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCatalogAttribute()
+    class Google_Service_CloudRetail_GoogleCloudRetailV2AddCatalogAttributeRequest extends \Google\Service\CloudRetail\GoogleCloudRetailV2AddCatalogAttributeRequest
     {
     }
 }

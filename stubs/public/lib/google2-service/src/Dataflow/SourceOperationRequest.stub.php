@@ -21,126 +21,135 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class SourceOperationRequest extends \Google\Model
-{
-    protected $getMetadataType = SourceGetMetadataRequest::class;
-    protected $getMetadataDataType = '';
-    /**
-     * User-provided name of the Read instruction for this source.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * System-defined name for the Read instruction for this source in the
-     * original workflow graph.
-     *
-     * @var string
-     */
-    public $originalName;
-    protected $splitType = SourceSplitRequest::class;
-    protected $splitDataType = '';
-    /**
-     * System-defined name of the stage containing the source operation. Unique
-     * across the workflow.
-     *
-     * @var string
-     */
-    public $stageName;
-    /**
-     * System-defined name of the Read instruction for this source. Unique across
-     * the workflow.
-     *
-     * @var string
-     */
-    public $systemName;
-    /**
-     * Information about a request to get metadata about a source.
-     *
-     * @param SourceGetMetadataRequest $getMetadata
-     */
-    public function setGetMetadata(SourceGetMetadataRequest $getMetadata)
+namespace Google\Service\Dataflow {
+    class SourceOperationRequest extends \Google\Model
     {
+        protected $getMetadataType = SourceGetMetadataRequest::class;
+        protected $getMetadataDataType = '';
+        /**
+         * User-provided name of the Read instruction for this source.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * System-defined name for the Read instruction for this source in the
+         * original workflow graph.
+         *
+         * @var string
+         */
+        public $originalName;
+        protected $splitType = SourceSplitRequest::class;
+        protected $splitDataType = '';
+        /**
+         * System-defined name of the stage containing the source operation. Unique
+         * across the workflow.
+         *
+         * @var string
+         */
+        public $stageName;
+        /**
+         * System-defined name of the Read instruction for this source. Unique across
+         * the workflow.
+         *
+         * @var string
+         */
+        public $systemName;
+        /**
+         * Information about a request to get metadata about a source.
+         *
+         * @param SourceGetMetadataRequest $getMetadata
+         */
+        public function setGetMetadata(SourceGetMetadataRequest $getMetadata)
+        {
+        }
+        /**
+         * @return SourceGetMetadataRequest
+         */
+        public function getGetMetadata()
+        {
+        }
+        /**
+         * User-provided name of the Read instruction for this source.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * System-defined name for the Read instruction for this source in the
+         * original workflow graph.
+         *
+         * @param string $originalName
+         */
+        public function setOriginalName($originalName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOriginalName()
+        {
+        }
+        /**
+         * Information about a request to split a source.
+         *
+         * @param SourceSplitRequest $split
+         */
+        public function setSplit(SourceSplitRequest $split)
+        {
+        }
+        /**
+         * @return SourceSplitRequest
+         */
+        public function getSplit()
+        {
+        }
+        /**
+         * System-defined name of the stage containing the source operation. Unique
+         * across the workflow.
+         *
+         * @param string $stageName
+         */
+        public function setStageName($stageName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStageName()
+        {
+        }
+        /**
+         * System-defined name of the Read instruction for this source. Unique across
+         * the workflow.
+         *
+         * @param string $systemName
+         */
+        public function setSystemName($systemName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSystemName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SourceGetMetadataRequest
+     * Runtime class alias of \Google\Service\Dataflow\SourceOperationRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGetMetadata()
-    {
-    }
-    /**
-     * User-provided name of the Read instruction for this source.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * System-defined name for the Read instruction for this source in the
-     * original workflow graph.
-     *
-     * @param string $originalName
-     */
-    public function setOriginalName($originalName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOriginalName()
-    {
-    }
-    /**
-     * Information about a request to split a source.
-     *
-     * @param SourceSplitRequest $split
-     */
-    public function setSplit(SourceSplitRequest $split)
-    {
-    }
-    /**
-     * @return SourceSplitRequest
-     */
-    public function getSplit()
-    {
-    }
-    /**
-     * System-defined name of the stage containing the source operation. Unique
-     * across the workflow.
-     *
-     * @param string $stageName
-     */
-    public function setStageName($stageName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStageName()
-    {
-    }
-    /**
-     * System-defined name of the Read instruction for this source. Unique across
-     * the workflow.
-     *
-     * @param string $systemName
-     */
-    public function setSystemName($systemName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSystemName()
+    class Google_Service_Dataflow_SourceOperationRequest extends \Google\Service\Dataflow\SourceOperationRequest
     {
     }
 }

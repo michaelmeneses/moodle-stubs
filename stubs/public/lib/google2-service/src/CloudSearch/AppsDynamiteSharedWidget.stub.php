@@ -21,174 +21,183 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedWidget extends \Google\Model
-{
-    protected $buttonListType = AppsDynamiteSharedButtonList::class;
-    protected $buttonListDataType = '';
-    public $buttonList;
-    protected $columnsType = AppsDynamiteSharedColumns::class;
-    protected $columnsDataType = '';
-    public $columns;
-    protected $dateTimePickerType = AppsDynamiteSharedDateTimePicker::class;
-    protected $dateTimePickerDataType = '';
-    public $dateTimePicker;
-    protected $decoratedTextType = AppsDynamiteSharedDecoratedText::class;
-    protected $decoratedTextDataType = '';
-    public $decoratedText;
-    protected $dividerType = AppsDynamiteSharedDivider::class;
-    protected $dividerDataType = '';
-    public $divider;
-    protected $gridType = AppsDynamiteSharedGrid::class;
-    protected $gridDataType = '';
-    public $grid;
-    /**
-     * @var string
-     */
-    public $horizontalAlignment;
-    protected $imageType = AppsDynamiteSharedImage::class;
-    protected $imageDataType = '';
-    public $image;
-    protected $selectionInputType = AppsDynamiteSharedSelectionInput::class;
-    protected $selectionInputDataType = '';
-    public $selectionInput;
-    protected $textInputType = AppsDynamiteSharedTextInput::class;
-    protected $textInputDataType = '';
-    public $textInput;
-    protected $textParagraphType = AppsDynamiteSharedTextParagraph::class;
-    protected $textParagraphDataType = '';
-    public $textParagraph;
-    /**
-     * @param AppsDynamiteSharedButtonList
-     */
-    public function setButtonList(AppsDynamiteSharedButtonList $buttonList)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedWidget extends \Google\Model
     {
+        protected $buttonListType = AppsDynamiteSharedButtonList::class;
+        protected $buttonListDataType = '';
+        public $buttonList;
+        protected $columnsType = AppsDynamiteSharedColumns::class;
+        protected $columnsDataType = '';
+        public $columns;
+        protected $dateTimePickerType = AppsDynamiteSharedDateTimePicker::class;
+        protected $dateTimePickerDataType = '';
+        public $dateTimePicker;
+        protected $decoratedTextType = AppsDynamiteSharedDecoratedText::class;
+        protected $decoratedTextDataType = '';
+        public $decoratedText;
+        protected $dividerType = AppsDynamiteSharedDivider::class;
+        protected $dividerDataType = '';
+        public $divider;
+        protected $gridType = AppsDynamiteSharedGrid::class;
+        protected $gridDataType = '';
+        public $grid;
+        /**
+         * @var string
+         */
+        public $horizontalAlignment;
+        protected $imageType = AppsDynamiteSharedImage::class;
+        protected $imageDataType = '';
+        public $image;
+        protected $selectionInputType = AppsDynamiteSharedSelectionInput::class;
+        protected $selectionInputDataType = '';
+        public $selectionInput;
+        protected $textInputType = AppsDynamiteSharedTextInput::class;
+        protected $textInputDataType = '';
+        public $textInput;
+        protected $textParagraphType = AppsDynamiteSharedTextParagraph::class;
+        protected $textParagraphDataType = '';
+        public $textParagraph;
+        /**
+         * @param AppsDynamiteSharedButtonList
+         */
+        public function setButtonList(AppsDynamiteSharedButtonList $buttonList)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedButtonList
+         */
+        public function getButtonList()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedColumns
+         */
+        public function setColumns(AppsDynamiteSharedColumns $columns)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedColumns
+         */
+        public function getColumns()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedDateTimePicker
+         */
+        public function setDateTimePicker(AppsDynamiteSharedDateTimePicker $dateTimePicker)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedDateTimePicker
+         */
+        public function getDateTimePicker()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedDecoratedText
+         */
+        public function setDecoratedText(AppsDynamiteSharedDecoratedText $decoratedText)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedDecoratedText
+         */
+        public function getDecoratedText()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedDivider
+         */
+        public function setDivider(AppsDynamiteSharedDivider $divider)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedDivider
+         */
+        public function getDivider()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedGrid
+         */
+        public function setGrid(AppsDynamiteSharedGrid $grid)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedGrid
+         */
+        public function getGrid()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setHorizontalAlignment($horizontalAlignment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHorizontalAlignment()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedImage
+         */
+        public function setImage(AppsDynamiteSharedImage $image)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedImage
+         */
+        public function getImage()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedSelectionInput
+         */
+        public function setSelectionInput(AppsDynamiteSharedSelectionInput $selectionInput)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedSelectionInput
+         */
+        public function getSelectionInput()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedTextInput
+         */
+        public function setTextInput(AppsDynamiteSharedTextInput $textInput)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedTextInput
+         */
+        public function getTextInput()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedTextParagraph
+         */
+        public function setTextParagraph(AppsDynamiteSharedTextParagraph $textParagraph)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedTextParagraph
+         */
+        public function getTextParagraph()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AppsDynamiteSharedButtonList
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedWidget registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getButtonList()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedColumns
-     */
-    public function setColumns(AppsDynamiteSharedColumns $columns)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedColumns
-     */
-    public function getColumns()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedDateTimePicker
-     */
-    public function setDateTimePicker(AppsDynamiteSharedDateTimePicker $dateTimePicker)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedDateTimePicker
-     */
-    public function getDateTimePicker()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedDecoratedText
-     */
-    public function setDecoratedText(AppsDynamiteSharedDecoratedText $decoratedText)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedDecoratedText
-     */
-    public function getDecoratedText()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedDivider
-     */
-    public function setDivider(AppsDynamiteSharedDivider $divider)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedDivider
-     */
-    public function getDivider()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedGrid
-     */
-    public function setGrid(AppsDynamiteSharedGrid $grid)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedGrid
-     */
-    public function getGrid()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setHorizontalAlignment($horizontalAlignment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHorizontalAlignment()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedImage
-     */
-    public function setImage(AppsDynamiteSharedImage $image)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedImage
-     */
-    public function getImage()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedSelectionInput
-     */
-    public function setSelectionInput(AppsDynamiteSharedSelectionInput $selectionInput)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedSelectionInput
-     */
-    public function getSelectionInput()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedTextInput
-     */
-    public function setTextInput(AppsDynamiteSharedTextInput $textInput)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedTextInput
-     */
-    public function getTextInput()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedTextParagraph
-     */
-    public function setTextParagraph(AppsDynamiteSharedTextParagraph $textParagraph)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedTextParagraph
-     */
-    public function getTextParagraph()
+    class Google_Service_CloudSearch_AppsDynamiteSharedWidget extends \Google\Service\CloudSearch\AppsDynamiteSharedWidget
     {
     }
 }

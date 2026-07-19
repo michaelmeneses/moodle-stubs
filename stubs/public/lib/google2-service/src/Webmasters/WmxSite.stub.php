@@ -21,22 +21,31 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Webmasters;
-
-class WmxSite extends \Google\Model
-{
-    public $permissionLevel;
-    public $siteUrl;
-    public function setPermissionLevel($permissionLevel)
+namespace Google\Service\Webmasters {
+    class WmxSite extends \Google\Model
     {
+        public $permissionLevel;
+        public $siteUrl;
+        public function setPermissionLevel($permissionLevel)
+        {
+        }
+        public function getPermissionLevel()
+        {
+        }
+        public function setSiteUrl($siteUrl)
+        {
+        }
+        public function getSiteUrl()
+        {
+        }
     }
-    public function getPermissionLevel()
-    {
-    }
-    public function setSiteUrl($siteUrl)
-    {
-    }
-    public function getSiteUrl()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Webmasters\WmxSite registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Webmasters_WmxSite extends \Google\Service\Webmasters\WmxSite
     {
     }
 }

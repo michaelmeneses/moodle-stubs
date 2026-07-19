@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1TrainProcessorVersionMetadata extends \Google\Model
-{
-    protected $commonMetadataType = GoogleCloudDocumentaiV1CommonOperationMetadata::class;
-    protected $commonMetadataDataType = '';
-    protected $testDatasetValidationType = GoogleCloudDocumentaiV1TrainProcessorVersionMetadataDatasetValidation::class;
-    protected $testDatasetValidationDataType = '';
-    protected $trainingDatasetValidationType = GoogleCloudDocumentaiV1TrainProcessorVersionMetadataDatasetValidation::class;
-    protected $trainingDatasetValidationDataType = '';
-    /**
-     * The basic metadata of the long-running operation.
-     *
-     * @param GoogleCloudDocumentaiV1CommonOperationMetadata $commonMetadata
-     */
-    public function setCommonMetadata(GoogleCloudDocumentaiV1CommonOperationMetadata $commonMetadata)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1TrainProcessorVersionMetadata extends \Google\Model
     {
+        protected $commonMetadataType = GoogleCloudDocumentaiV1CommonOperationMetadata::class;
+        protected $commonMetadataDataType = '';
+        protected $testDatasetValidationType = GoogleCloudDocumentaiV1TrainProcessorVersionMetadataDatasetValidation::class;
+        protected $testDatasetValidationDataType = '';
+        protected $trainingDatasetValidationType = GoogleCloudDocumentaiV1TrainProcessorVersionMetadataDatasetValidation::class;
+        protected $trainingDatasetValidationDataType = '';
+        /**
+         * The basic metadata of the long-running operation.
+         *
+         * @param GoogleCloudDocumentaiV1CommonOperationMetadata $commonMetadata
+         */
+        public function setCommonMetadata(GoogleCloudDocumentaiV1CommonOperationMetadata $commonMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1CommonOperationMetadata
+         */
+        public function getCommonMetadata()
+        {
+        }
+        /**
+         * The test dataset validation information.
+         *
+         * @param GoogleCloudDocumentaiV1TrainProcessorVersionMetadataDatasetValidation $testDatasetValidation
+         */
+        public function setTestDatasetValidation(GoogleCloudDocumentaiV1TrainProcessorVersionMetadataDatasetValidation $testDatasetValidation)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1TrainProcessorVersionMetadataDatasetValidation
+         */
+        public function getTestDatasetValidation()
+        {
+        }
+        /**
+         * The training dataset validation information.
+         *
+         * @param GoogleCloudDocumentaiV1TrainProcessorVersionMetadataDatasetValidation $trainingDatasetValidation
+         */
+        public function setTrainingDatasetValidation(GoogleCloudDocumentaiV1TrainProcessorVersionMetadataDatasetValidation $trainingDatasetValidation)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1TrainProcessorVersionMetadataDatasetValidation
+         */
+        public function getTrainingDatasetValidation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1CommonOperationMetadata
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1TrainProcessorVersionMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCommonMetadata()
-    {
-    }
-    /**
-     * The test dataset validation information.
-     *
-     * @param GoogleCloudDocumentaiV1TrainProcessorVersionMetadataDatasetValidation $testDatasetValidation
-     */
-    public function setTestDatasetValidation(GoogleCloudDocumentaiV1TrainProcessorVersionMetadataDatasetValidation $testDatasetValidation)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1TrainProcessorVersionMetadataDatasetValidation
-     */
-    public function getTestDatasetValidation()
-    {
-    }
-    /**
-     * The training dataset validation information.
-     *
-     * @param GoogleCloudDocumentaiV1TrainProcessorVersionMetadataDatasetValidation $trainingDatasetValidation
-     */
-    public function setTrainingDatasetValidation(GoogleCloudDocumentaiV1TrainProcessorVersionMetadataDatasetValidation $trainingDatasetValidation)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1TrainProcessorVersionMetadataDatasetValidation
-     */
-    public function getTrainingDatasetValidation()
+    class Google_Service_Document_GoogleCloudDocumentaiV1TrainProcessorVersionMetadata extends \Google\Service\Document\GoogleCloudDocumentaiV1TrainProcessorVersionMetadata
     {
     }
 }

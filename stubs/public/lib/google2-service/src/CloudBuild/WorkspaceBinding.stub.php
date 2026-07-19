@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class WorkspaceBinding extends \Google\Model
-{
-    /**
-     * Name of the workspace.
-     *
-     * @var string
-     */
-    public $name;
-    protected $secretType = SecretVolumeSource::class;
-    protected $secretDataType = '';
-    /**
-     * Optional. SubPath is optionally a directory on the volume which should be
-     * used for this binding (i.e. the volume will be mounted at this sub
-     * directory). +optional
-     *
-     * @var string
-     */
-    public $subPath;
-    /**
-     * Name of the workspace.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\CloudBuild {
+    class WorkspaceBinding extends \Google\Model
     {
+        /**
+         * Name of the workspace.
+         *
+         * @var string
+         */
+        public $name;
+        protected $secretType = SecretVolumeSource::class;
+        protected $secretDataType = '';
+        /**
+         * Optional. SubPath is optionally a directory on the volume which should be
+         * used for this binding (i.e. the volume will be mounted at this sub
+         * directory). +optional
+         *
+         * @var string
+         */
+        public $subPath;
+        /**
+         * Name of the workspace.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Secret Volume Source.
+         *
+         * @param SecretVolumeSource $secret
+         */
+        public function setSecret(SecretVolumeSource $secret)
+        {
+        }
+        /**
+         * @return SecretVolumeSource
+         */
+        public function getSecret()
+        {
+        }
+        /**
+         * Optional. SubPath is optionally a directory on the volume which should be
+         * used for this binding (i.e. the volume will be mounted at this sub
+         * directory). +optional
+         *
+         * @param string $subPath
+         */
+        public function setSubPath($subPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubPath()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\WorkspaceBinding registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Secret Volume Source.
-     *
-     * @param SecretVolumeSource $secret
-     */
-    public function setSecret(SecretVolumeSource $secret)
-    {
-    }
-    /**
-     * @return SecretVolumeSource
-     */
-    public function getSecret()
-    {
-    }
-    /**
-     * Optional. SubPath is optionally a directory on the volume which should be
-     * used for this binding (i.e. the volume will be mounted at this sub
-     * directory). +optional
-     *
-     * @param string $subPath
-     */
-    public function setSubPath($subPath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubPath()
+    class Google_Service_CloudBuild_WorkspaceBinding extends \Google\Service\CloudBuild\WorkspaceBinding
     {
     }
 }

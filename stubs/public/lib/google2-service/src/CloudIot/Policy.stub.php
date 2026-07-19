@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIot;
-
-class Policy extends \Google\Collection
-{
-    protected $collection_key = 'bindings';
-    protected $bindingsType = Binding::class;
-    protected $bindingsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $etag;
-    /**
-     * @var int
-     */
-    public $version;
-    /**
-     * @param Binding[]
-     */
-    public function setBindings($bindings)
+namespace Google\Service\CloudIot {
+    class Policy extends \Google\Collection
     {
+        protected $collection_key = 'bindings';
+        protected $bindingsType = Binding::class;
+        protected $bindingsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $etag;
+        /**
+         * @var int
+         */
+        public $version;
+        /**
+         * @param Binding[]
+         */
+        public function setBindings($bindings)
+        {
+        }
+        /**
+         * @return Binding[]
+         */
+        public function getBindings()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setVersion($version)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getVersion()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Binding[]
+     * Runtime class alias of \Google\Service\CloudIot\Policy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBindings()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setVersion($version)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getVersion()
+    class Google_Service_CloudIot_Policy extends \Google\Service\CloudIot\Policy
     {
     }
 }

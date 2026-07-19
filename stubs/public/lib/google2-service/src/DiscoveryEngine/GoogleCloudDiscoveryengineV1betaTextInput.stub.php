@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaTextInput extends \Google\Model
-{
-    protected $contextType = GoogleCloudDiscoveryengineV1betaConversationContext::class;
-    protected $contextDataType = '';
-    /**
-     * @var string
-     */
-    public $input;
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaConversationContext
-     */
-    public function setContext(GoogleCloudDiscoveryengineV1betaConversationContext $context)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaTextInput extends \Google\Model
     {
+        protected $contextType = GoogleCloudDiscoveryengineV1betaConversationContext::class;
+        protected $contextDataType = '';
+        /**
+         * @var string
+         */
+        public $input;
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaConversationContext
+         */
+        public function setContext(GoogleCloudDiscoveryengineV1betaConversationContext $context)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaConversationContext
+         */
+        public function getContext()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setInput($input)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInput()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1betaConversationContext
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaTextInput registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContext()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setInput($input)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInput()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaTextInput extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaTextInput
     {
     }
 }

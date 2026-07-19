@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class GoalUrlDestinationDetailsSteps extends \Google\Model
-{
-    /**
-     * Step name.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Step number.
-     *
-     * @var int
-     */
-    public $number;
-    /**
-     * URL for this step.
-     *
-     * @var string
-     */
-    public $url;
-    /**
-     * Step name.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\Analytics {
+    class GoalUrlDestinationDetailsSteps extends \Google\Model
     {
+        /**
+         * Step name.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Step number.
+         *
+         * @var int
+         */
+        public $number;
+        /**
+         * URL for this step.
+         *
+         * @var string
+         */
+        public $url;
+        /**
+         * Step name.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Step number.
+         *
+         * @param int $number
+         */
+        public function setNumber($number)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumber()
+        {
+        }
+        /**
+         * URL for this step.
+         *
+         * @param string $url
+         */
+        public function setUrl($url)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Analytics\GoalUrlDestinationDetailsSteps registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Step number.
-     *
-     * @param int $number
-     */
-    public function setNumber($number)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumber()
-    {
-    }
-    /**
-     * URL for this step.
-     *
-     * @param string $url
-     */
-    public function setUrl($url)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUrl()
+    class Google_Service_Analytics_GoalUrlDestinationDetailsSteps extends \Google\Service\Analytics\GoalUrlDestinationDetailsSteps
     {
     }
 }

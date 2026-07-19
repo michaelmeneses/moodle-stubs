@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Integrations;
-
-class GoogleCloudIntegrationsV1alphaExecuteEventResponse extends \Google\Model
-{
-    /**
-     * The id of the execution corresponding to this run of integration.
-     *
-     * @var string
-     */
-    public $executionId;
-    /**
-     * The id of the execution corresponding to this run of integration.
-     *
-     * @param string $executionId
-     */
-    public function setExecutionId($executionId)
+namespace Google\Service\Integrations {
+    class GoogleCloudIntegrationsV1alphaExecuteEventResponse extends \Google\Model
     {
+        /**
+         * The id of the execution corresponding to this run of integration.
+         *
+         * @var string
+         */
+        public $executionId;
+        /**
+         * The id of the execution corresponding to this run of integration.
+         *
+         * @param string $executionId
+         */
+        public function setExecutionId($executionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExecutionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaExecuteEventResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExecutionId()
+    class Google_Service_Integrations_GoogleCloudIntegrationsV1alphaExecuteEventResponse extends \Google\Service\Integrations\GoogleCloudIntegrationsV1alphaExecuteEventResponse
     {
     }
 }

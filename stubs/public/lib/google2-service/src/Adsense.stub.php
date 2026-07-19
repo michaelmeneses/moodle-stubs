@@ -21,48 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service;
-
-/**
- * Service definition for Adsense (v2).
- *
- * <p>
- * The AdSense Management API allows publishers to access their inventory and
- * run earnings and performance reports.</p>
- *
- * <p>
- * For more information about this service, see the API
- * <a href="https://developers.google.com/adsense/management/" target="_blank">Documentation</a>
- * </p>
- *
- * @author Google, Inc.
- */
-class Adsense extends \Google\Service
-{
-    /** View and manage your AdSense data. */
-    const ADSENSE = "https://www.googleapis.com/auth/adsense";
-    /** View your AdSense data. */
-    const ADSENSE_READONLY = "https://www.googleapis.com/auth/adsense.readonly";
-    public $accounts;
-    public $accounts_adclients;
-    public $accounts_adclients_adunits;
-    public $accounts_adclients_customchannels;
-    public $accounts_adclients_urlchannels;
-    public $accounts_alerts;
-    public $accounts_payments;
-    public $accounts_policyIssues;
-    public $accounts_reports;
-    public $accounts_reports_saved;
-    public $accounts_sites;
-    public $rootUrlTemplate;
+namespace Google\Service {
+    use Google\Client;
     /**
-     * Constructs the internal representation of the Adsense service.
+     * Service definition for Adsense (v2).
      *
-     * @param Client|array $clientOrConfig The client used to deliver requests, or a
-     *                                     config array to pass to a new Client instance.
-     * @param string $rootUrl The root URL used for requests to the service.
+     * <p>
+     * The AdSense Management API allows publishers to access their inventory and
+     * run earnings and performance reports.</p>
+     *
+     * <p>
+     * For more information about this service, see the API
+     * <a href="https://developers.google.com/adsense/management/" target="_blank">Documentation</a>
+     * </p>
+     *
+     * @author Google, Inc.
      */
-    public function __construct($clientOrConfig = [], $rootUrl = null)
+    class Adsense extends \Google\Service
+    {
+        /** View and manage your AdSense data. */
+        const ADSENSE = "https://www.googleapis.com/auth/adsense";
+        /** View your AdSense data. */
+        const ADSENSE_READONLY = "https://www.googleapis.com/auth/adsense.readonly";
+        public $accounts;
+        public $accounts_adclients;
+        public $accounts_adclients_adunits;
+        public $accounts_adclients_customchannels;
+        public $accounts_adclients_urlchannels;
+        public $accounts_alerts;
+        public $accounts_payments;
+        public $accounts_policyIssues;
+        public $accounts_reports;
+        public $accounts_reports_saved;
+        public $accounts_sites;
+        public $rootUrlTemplate;
+        /**
+         * Constructs the internal representation of the Adsense service.
+         *
+         * @param Client|array $clientOrConfig The client used to deliver requests, or a
+         *                                     config array to pass to a new Client instance.
+         * @param string $rootUrl The root URL used for requests to the service.
+         */
+        public function __construct($clientOrConfig = [], $rootUrl = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Adsense registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Adsense extends \Google\Service\Adsense
     {
     }
 }

@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firebaseappcheck;
-
-class GoogleFirebaseAppcheckV1betaBatchUpdateServicesRequest extends \Google\Collection
-{
-    protected $collection_key = 'requests';
-    protected $requestsType = GoogleFirebaseAppcheckV1betaUpdateServiceRequest::class;
-    protected $requestsDataType = 'array';
-    /**
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * @param GoogleFirebaseAppcheckV1betaUpdateServiceRequest[]
-     */
-    public function setRequests($requests)
+namespace Google\Service\Firebaseappcheck {
+    class GoogleFirebaseAppcheckV1betaBatchUpdateServicesRequest extends \Google\Collection
     {
+        protected $collection_key = 'requests';
+        protected $requestsType = GoogleFirebaseAppcheckV1betaUpdateServiceRequest::class;
+        protected $requestsDataType = 'array';
+        /**
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * @param GoogleFirebaseAppcheckV1betaUpdateServiceRequest[]
+         */
+        public function setRequests($requests)
+        {
+        }
+        /**
+         * @return GoogleFirebaseAppcheckV1betaUpdateServiceRequest[]
+         */
+        public function getRequests()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleFirebaseAppcheckV1betaUpdateServiceRequest[]
+     * Runtime class alias of \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1betaBatchUpdateServicesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequests()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_Firebaseappcheck_GoogleFirebaseAppcheckV1betaBatchUpdateServicesRequest extends \Google\Service\Firebaseappcheck\GoogleFirebaseAppcheckV1betaBatchUpdateServicesRequest
     {
     }
 }

@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2ProfileStatus extends \Google\Model
-{
-    protected $statusType = GoogleRpcStatus::class;
-    protected $statusDataType = '';
-    /**
-     * Time when the profile generation status was updated
-     *
-     * @var string
-     */
-    public $timestamp;
-    /**
-     * Profiling status code and optional message. The `status.code` value is 0
-     * (default value) for OK.
-     *
-     * @param GoogleRpcStatus $status
-     */
-    public function setStatus(GoogleRpcStatus $status)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2ProfileStatus extends \Google\Model
     {
+        protected $statusType = GoogleRpcStatus::class;
+        protected $statusDataType = '';
+        /**
+         * Time when the profile generation status was updated
+         *
+         * @var string
+         */
+        public $timestamp;
+        /**
+         * Profiling status code and optional message. The `status.code` value is 0
+         * (default value) for OK.
+         *
+         * @param GoogleRpcStatus $status
+         */
+        public function setStatus(GoogleRpcStatus $status)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus
+         */
+        public function getStatus()
+        {
+        }
+        /**
+         * Time when the profile generation status was updated
+         *
+         * @param string $timestamp
+         */
+        public function setTimestamp($timestamp)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTimestamp()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleRpcStatus
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2ProfileStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getStatus()
-    {
-    }
-    /**
-     * Time when the profile generation status was updated
-     *
-     * @param string $timestamp
-     */
-    public function setTimestamp($timestamp)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTimestamp()
+    class Google_Service_DLP_GooglePrivacyDlpV2ProfileStatus extends \Google\Service\DLP\GooglePrivacyDlpV2ProfileStatus
     {
     }
 }

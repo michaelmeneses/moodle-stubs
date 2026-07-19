@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SlackSourceSlackChannelsSlackChannel extends \Google\Model
-{
-    /**
-     * Required. The Slack channel ID.
-     *
-     * @var string
-     */
-    public $channelId;
-    /**
-     * Optional. The ending timestamp for messages to import.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * Optional. The starting timestamp for messages to import.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * Required. The Slack channel ID.
-     *
-     * @param string $channelId
-     */
-    public function setChannelId($channelId)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SlackSourceSlackChannelsSlackChannel extends \Google\Model
     {
+        /**
+         * Required. The Slack channel ID.
+         *
+         * @var string
+         */
+        public $channelId;
+        /**
+         * Optional. The ending timestamp for messages to import.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * Optional. The starting timestamp for messages to import.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * Required. The Slack channel ID.
+         *
+         * @param string $channelId
+         */
+        public function setChannelId($channelId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getChannelId()
+        {
+        }
+        /**
+         * Optional. The ending timestamp for messages to import.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * Optional. The starting timestamp for messages to import.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SlackSourceSlackChannelsSlackChannel registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getChannelId()
-    {
-    }
-    /**
-     * Optional. The ending timestamp for messages to import.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * Optional. The starting timestamp for messages to import.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SlackSourceSlackChannelsSlackChannel extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SlackSourceSlackChannelsSlackChannel
     {
     }
 }

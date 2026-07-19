@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Gmail;
-
-class ListMessagesResponse extends \Google\Collection
-{
-    protected $collection_key = 'messages';
-    protected $messagesType = Message::class;
-    protected $messagesDataType = 'array';
-    /**
-     * Token to retrieve the next page of results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Estimated total number of results.
-     *
-     * @var string
-     */
-    public $resultSizeEstimate;
-    /**
-     * List of messages. Note that each message resource contains only an `id` and
-     * a `threadId`. Additional message details can be fetched using the
-     * messages.get method.
-     *
-     * @param Message[] $messages
-     */
-    public function setMessages($messages)
+namespace Google\Service\Gmail {
+    class ListMessagesResponse extends \Google\Collection
     {
+        protected $collection_key = 'messages';
+        protected $messagesType = Message::class;
+        protected $messagesDataType = 'array';
+        /**
+         * Token to retrieve the next page of results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Estimated total number of results.
+         *
+         * @var string
+         */
+        public $resultSizeEstimate;
+        /**
+         * List of messages. Note that each message resource contains only an `id` and
+         * a `threadId`. Additional message details can be fetched using the
+         * messages.get method.
+         *
+         * @param Message[] $messages
+         */
+        public function setMessages($messages)
+        {
+        }
+        /**
+         * @return Message[]
+         */
+        public function getMessages()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Estimated total number of results.
+         *
+         * @param string $resultSizeEstimate
+         */
+        public function setResultSizeEstimate($resultSizeEstimate)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getResultSizeEstimate()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Message[]
+     * Runtime class alias of \Google\Service\Gmail\ListMessagesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMessages()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Estimated total number of results.
-     *
-     * @param string $resultSizeEstimate
-     */
-    public function setResultSizeEstimate($resultSizeEstimate)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getResultSizeEstimate()
+    class Google_Service_Gmail_ListMessagesResponse extends \Google\Service\Gmail\ListMessagesResponse
     {
     }
 }

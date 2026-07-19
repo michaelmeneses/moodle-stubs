@@ -21,570 +21,579 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class PipelineRun extends \Google\Collection
-{
-    /**
-     * Default enum type; should not be used.
-     */
-    public const PIPELINE_RUN_STATUS_PIPELINE_RUN_STATUS_UNSPECIFIED = 'PIPELINE_RUN_STATUS_UNSPECIFIED';
-    /**
-     * Cancelled status.
-     */
-    public const PIPELINE_RUN_STATUS_PIPELINE_RUN_CANCELLED = 'PIPELINE_RUN_CANCELLED';
-    protected $collection_key = 'workspaces';
-    /**
-     * User annotations. See https://google.aip.dev/128#annotations
-     *
-     * @var string[]
-     */
-    public $annotations;
-    protected $childReferencesType = ChildStatusReference::class;
-    protected $childReferencesDataType = 'array';
-    /**
-     * Output only. Time the pipeline completed.
-     *
-     * @var string
-     */
-    public $completionTime;
-    protected $conditionsType = GoogleDevtoolsCloudbuildV2Condition::class;
-    protected $conditionsDataType = 'array';
-    /**
-     * Output only. Time at which the request to create the `PipelineRun` was
-     * received.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Needed for declarative-friendly resources.
-     *
-     * @var string
-     */
-    public $etag;
-    /**
-     * Output only. FinallyStartTime is when all non-finally tasks have been
-     * completed and only finally tasks are being executed. +optional
-     *
-     * @var string
-     */
-    public $finallyStartTime;
-    /**
-     * Output only. GCB default params.
-     *
-     * @var string[]
-     */
-    public $gcbParams;
-    /**
-     * Output only. The `PipelineRun` name with format
-     * `projects/{project}/locations/{location}/pipelineRuns/{pipeline_run}`
-     *
-     * @var string
-     */
-    public $name;
-    protected $paramsType = Param::class;
-    protected $paramsDataType = 'array';
-    protected $pipelineRefType = PipelineRef::class;
-    protected $pipelineRefDataType = '';
-    /**
-     * Pipelinerun status the user can provide. Used for cancellation.
-     *
-     * @var string
-     */
-    public $pipelineRunStatus;
-    protected $pipelineSpecType = PipelineSpec::class;
-    protected $pipelineSpecDataType = '';
-    /**
-     * Output only. Inline pipelineSpec yaml string, used by workflow run
-     * requests.
-     *
-     * @var string
-     */
-    public $pipelineSpecYaml;
-    protected $provenanceType = Provenance::class;
-    protected $provenanceDataType = '';
-    /**
-     * Output only. The `Record` of this `PipelineRun`. Format: `projects/{project
-     * }/locations/{location}/results/{result_id}/records/{record_id}`
-     *
-     * @var string
-     */
-    public $record;
-    protected $resolvedPipelineSpecType = PipelineSpec::class;
-    protected $resolvedPipelineSpecDataType = '';
-    protected $resultsType = PipelineRunResult::class;
-    protected $resultsDataType = 'array';
-    protected $securityType = Security::class;
-    protected $securityDataType = '';
-    /**
-     * Service account used in the Pipeline. Deprecated; please use
-     * security.service_account instead.
-     *
-     * @deprecated
-     * @var string
-     */
-    public $serviceAccount;
-    protected $skippedTasksType = SkippedTask::class;
-    protected $skippedTasksDataType = 'array';
-    /**
-     * Output only. Time the pipeline is actually started.
-     *
-     * @var string
-     */
-    public $startTime;
-    protected $timeoutsType = TimeoutFields::class;
-    protected $timeoutsDataType = '';
-    /**
-     * Output only. A unique identifier for the `PipelineRun`.
-     *
-     * @var string
-     */
-    public $uid;
-    /**
-     * Output only. Time at which the request to update the `PipelineRun` was
-     * received.
-     *
-     * @var string
-     */
-    public $updateTime;
-    protected $workerType = Worker::class;
-    protected $workerDataType = '';
-    /**
-     * Output only. The WorkerPool used to run this PipelineRun.
-     *
-     * @var string
-     */
-    public $workerPool;
-    /**
-     * Output only. The Workflow used to create this PipelineRun.
-     *
-     * @var string
-     */
-    public $workflow;
-    protected $workspacesType = WorkspaceBinding::class;
-    protected $workspacesDataType = 'array';
-    /**
-     * User annotations. See https://google.aip.dev/128#annotations
-     *
-     * @param string[] $annotations
-     */
-    public function setAnnotations($annotations)
+namespace Google\Service\CloudBuild {
+    class PipelineRun extends \Google\Collection
     {
+        /**
+         * Default enum type; should not be used.
+         */
+        public const PIPELINE_RUN_STATUS_PIPELINE_RUN_STATUS_UNSPECIFIED = 'PIPELINE_RUN_STATUS_UNSPECIFIED';
+        /**
+         * Cancelled status.
+         */
+        public const PIPELINE_RUN_STATUS_PIPELINE_RUN_CANCELLED = 'PIPELINE_RUN_CANCELLED';
+        protected $collection_key = 'workspaces';
+        /**
+         * User annotations. See https://google.aip.dev/128#annotations
+         *
+         * @var string[]
+         */
+        public $annotations;
+        protected $childReferencesType = ChildStatusReference::class;
+        protected $childReferencesDataType = 'array';
+        /**
+         * Output only. Time the pipeline completed.
+         *
+         * @var string
+         */
+        public $completionTime;
+        protected $conditionsType = GoogleDevtoolsCloudbuildV2Condition::class;
+        protected $conditionsDataType = 'array';
+        /**
+         * Output only. Time at which the request to create the `PipelineRun` was
+         * received.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Needed for declarative-friendly resources.
+         *
+         * @var string
+         */
+        public $etag;
+        /**
+         * Output only. FinallyStartTime is when all non-finally tasks have been
+         * completed and only finally tasks are being executed. +optional
+         *
+         * @var string
+         */
+        public $finallyStartTime;
+        /**
+         * Output only. GCB default params.
+         *
+         * @var string[]
+         */
+        public $gcbParams;
+        /**
+         * Output only. The `PipelineRun` name with format
+         * `projects/{project}/locations/{location}/pipelineRuns/{pipeline_run}`
+         *
+         * @var string
+         */
+        public $name;
+        protected $paramsType = Param::class;
+        protected $paramsDataType = 'array';
+        protected $pipelineRefType = PipelineRef::class;
+        protected $pipelineRefDataType = '';
+        /**
+         * Pipelinerun status the user can provide. Used for cancellation.
+         *
+         * @var string
+         */
+        public $pipelineRunStatus;
+        protected $pipelineSpecType = PipelineSpec::class;
+        protected $pipelineSpecDataType = '';
+        /**
+         * Output only. Inline pipelineSpec yaml string, used by workflow run
+         * requests.
+         *
+         * @var string
+         */
+        public $pipelineSpecYaml;
+        protected $provenanceType = Provenance::class;
+        protected $provenanceDataType = '';
+        /**
+         * Output only. The `Record` of this `PipelineRun`. Format: `projects/{project
+         * }/locations/{location}/results/{result_id}/records/{record_id}`
+         *
+         * @var string
+         */
+        public $record;
+        protected $resolvedPipelineSpecType = PipelineSpec::class;
+        protected $resolvedPipelineSpecDataType = '';
+        protected $resultsType = PipelineRunResult::class;
+        protected $resultsDataType = 'array';
+        protected $securityType = Security::class;
+        protected $securityDataType = '';
+        /**
+         * Service account used in the Pipeline. Deprecated; please use
+         * security.service_account instead.
+         *
+         * @deprecated
+         * @var string
+         */
+        public $serviceAccount;
+        protected $skippedTasksType = SkippedTask::class;
+        protected $skippedTasksDataType = 'array';
+        /**
+         * Output only. Time the pipeline is actually started.
+         *
+         * @var string
+         */
+        public $startTime;
+        protected $timeoutsType = TimeoutFields::class;
+        protected $timeoutsDataType = '';
+        /**
+         * Output only. A unique identifier for the `PipelineRun`.
+         *
+         * @var string
+         */
+        public $uid;
+        /**
+         * Output only. Time at which the request to update the `PipelineRun` was
+         * received.
+         *
+         * @var string
+         */
+        public $updateTime;
+        protected $workerType = Worker::class;
+        protected $workerDataType = '';
+        /**
+         * Output only. The WorkerPool used to run this PipelineRun.
+         *
+         * @var string
+         */
+        public $workerPool;
+        /**
+         * Output only. The Workflow used to create this PipelineRun.
+         *
+         * @var string
+         */
+        public $workflow;
+        protected $workspacesType = WorkspaceBinding::class;
+        protected $workspacesDataType = 'array';
+        /**
+         * User annotations. See https://google.aip.dev/128#annotations
+         *
+         * @param string[] $annotations
+         */
+        public function setAnnotations($annotations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAnnotations()
+        {
+        }
+        /**
+         * Output only. List of TaskRun and Run names and PipelineTask names for
+         * children of this PipelineRun.
+         *
+         * @param ChildStatusReference[] $childReferences
+         */
+        public function setChildReferences($childReferences)
+        {
+        }
+        /**
+         * @return ChildStatusReference[]
+         */
+        public function getChildReferences()
+        {
+        }
+        /**
+         * Output only. Time the pipeline completed.
+         *
+         * @param string $completionTime
+         */
+        public function setCompletionTime($completionTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCompletionTime()
+        {
+        }
+        /**
+         * Output only. Kubernetes Conditions convention for PipelineRun status and
+         * error.
+         *
+         * @param GoogleDevtoolsCloudbuildV2Condition[] $conditions
+         */
+        public function setConditions($conditions)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsCloudbuildV2Condition[]
+         */
+        public function getConditions()
+        {
+        }
+        /**
+         * Output only. Time at which the request to create the `PipelineRun` was
+         * received.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Needed for declarative-friendly resources.
+         *
+         * @param string $etag
+         */
+        public function setEtag($etag)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEtag()
+        {
+        }
+        /**
+         * Output only. FinallyStartTime is when all non-finally tasks have been
+         * completed and only finally tasks are being executed. +optional
+         *
+         * @param string $finallyStartTime
+         */
+        public function setFinallyStartTime($finallyStartTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFinallyStartTime()
+        {
+        }
+        /**
+         * Output only. GCB default params.
+         *
+         * @param string[] $gcbParams
+         */
+        public function setGcbParams($gcbParams)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getGcbParams()
+        {
+        }
+        /**
+         * Output only. The `PipelineRun` name with format
+         * `projects/{project}/locations/{location}/pipelineRuns/{pipeline_run}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Params is a list of parameter names and values.
+         *
+         * @param Param[] $params
+         */
+        public function setParams($params)
+        {
+        }
+        /**
+         * @return Param[]
+         */
+        public function getParams()
+        {
+        }
+        /**
+         * PipelineRef refer to a specific instance of a Pipeline.
+         *
+         * @param PipelineRef $pipelineRef
+         */
+        public function setPipelineRef(PipelineRef $pipelineRef)
+        {
+        }
+        /**
+         * @return PipelineRef
+         */
+        public function getPipelineRef()
+        {
+        }
+        /**
+         * Pipelinerun status the user can provide. Used for cancellation.
+         *
+         * Accepted values: PIPELINE_RUN_STATUS_UNSPECIFIED, PIPELINE_RUN_CANCELLED
+         *
+         * @param self::PIPELINE_RUN_STATUS_* $pipelineRunStatus
+         */
+        public function setPipelineRunStatus($pipelineRunStatus)
+        {
+        }
+        /**
+         * @return self::PIPELINE_RUN_STATUS_*
+         */
+        public function getPipelineRunStatus()
+        {
+        }
+        /**
+         * PipelineSpec defines the desired state of Pipeline.
+         *
+         * @param PipelineSpec $pipelineSpec
+         */
+        public function setPipelineSpec(PipelineSpec $pipelineSpec)
+        {
+        }
+        /**
+         * @return PipelineSpec
+         */
+        public function getPipelineSpec()
+        {
+        }
+        /**
+         * Output only. Inline pipelineSpec yaml string, used by workflow run
+         * requests.
+         *
+         * @param string $pipelineSpecYaml
+         */
+        public function setPipelineSpecYaml($pipelineSpecYaml)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPipelineSpecYaml()
+        {
+        }
+        /**
+         * Optional. Provenance configuration.
+         *
+         * @param Provenance $provenance
+         */
+        public function setProvenance(Provenance $provenance)
+        {
+        }
+        /**
+         * @return Provenance
+         */
+        public function getProvenance()
+        {
+        }
+        /**
+         * Output only. The `Record` of this `PipelineRun`. Format: `projects/{project
+         * }/locations/{location}/results/{result_id}/records/{record_id}`
+         *
+         * @param string $record
+         */
+        public function setRecord($record)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRecord()
+        {
+        }
+        /**
+         * Output only. The exact PipelineSpec used to instantiate the run.
+         *
+         * @param PipelineSpec $resolvedPipelineSpec
+         */
+        public function setResolvedPipelineSpec(PipelineSpec $resolvedPipelineSpec)
+        {
+        }
+        /**
+         * @return PipelineSpec
+         */
+        public function getResolvedPipelineSpec()
+        {
+        }
+        /**
+         * Optional. Output only. List of results written out by the pipeline's
+         * containers
+         *
+         * @param PipelineRunResult[] $results
+         */
+        public function setResults($results)
+        {
+        }
+        /**
+         * @return PipelineRunResult[]
+         */
+        public function getResults()
+        {
+        }
+        /**
+         * Optional. Security configuration.
+         *
+         * @param Security $security
+         */
+        public function setSecurity(Security $security)
+        {
+        }
+        /**
+         * @return Security
+         */
+        public function getSecurity()
+        {
+        }
+        /**
+         * Service account used in the Pipeline. Deprecated; please use
+         * security.service_account instead.
+         *
+         * @deprecated
+         * @param string $serviceAccount
+         */
+        public function setServiceAccount($serviceAccount)
+        {
+        }
+        /**
+         * @deprecated
+         * @return string
+         */
+        public function getServiceAccount()
+        {
+        }
+        /**
+         * Output only. List of tasks that were skipped due to when expressions
+         * evaluating to false.
+         *
+         * @param SkippedTask[] $skippedTasks
+         */
+        public function setSkippedTasks($skippedTasks)
+        {
+        }
+        /**
+         * @return SkippedTask[]
+         */
+        public function getSkippedTasks()
+        {
+        }
+        /**
+         * Output only. Time the pipeline is actually started.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * Time after which the Pipeline times out. Currently three keys are accepted
+         * in the map pipeline, tasks and finally with Timeouts.pipeline >=
+         * Timeouts.tasks + Timeouts.finally
+         *
+         * @param TimeoutFields $timeouts
+         */
+        public function setTimeouts(TimeoutFields $timeouts)
+        {
+        }
+        /**
+         * @return TimeoutFields
+         */
+        public function getTimeouts()
+        {
+        }
+        /**
+         * Output only. A unique identifier for the `PipelineRun`.
+         *
+         * @param string $uid
+         */
+        public function setUid($uid)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUid()
+        {
+        }
+        /**
+         * Output only. Time at which the request to update the `PipelineRun` was
+         * received.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
+        /**
+         * Optional. Worker configuration.
+         *
+         * @param Worker $worker
+         */
+        public function setWorker(Worker $worker)
+        {
+        }
+        /**
+         * @return Worker
+         */
+        public function getWorker()
+        {
+        }
+        /**
+         * Output only. The WorkerPool used to run this PipelineRun.
+         *
+         * @param string $workerPool
+         */
+        public function setWorkerPool($workerPool)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWorkerPool()
+        {
+        }
+        /**
+         * Output only. The Workflow used to create this PipelineRun.
+         *
+         * @param string $workflow
+         */
+        public function setWorkflow($workflow)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWorkflow()
+        {
+        }
+        /**
+         * Workspaces is a list of WorkspaceBindings from volumes to workspaces.
+         *
+         * @param WorkspaceBinding[] $workspaces
+         */
+        public function setWorkspaces($workspaces)
+        {
+        }
+        /**
+         * @return WorkspaceBinding[]
+         */
+        public function getWorkspaces()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\CloudBuild\PipelineRun registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotations()
-    {
-    }
-    /**
-     * Output only. List of TaskRun and Run names and PipelineTask names for
-     * children of this PipelineRun.
-     *
-     * @param ChildStatusReference[] $childReferences
-     */
-    public function setChildReferences($childReferences)
-    {
-    }
-    /**
-     * @return ChildStatusReference[]
-     */
-    public function getChildReferences()
-    {
-    }
-    /**
-     * Output only. Time the pipeline completed.
-     *
-     * @param string $completionTime
-     */
-    public function setCompletionTime($completionTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCompletionTime()
-    {
-    }
-    /**
-     * Output only. Kubernetes Conditions convention for PipelineRun status and
-     * error.
-     *
-     * @param GoogleDevtoolsCloudbuildV2Condition[] $conditions
-     */
-    public function setConditions($conditions)
-    {
-    }
-    /**
-     * @return GoogleDevtoolsCloudbuildV2Condition[]
-     */
-    public function getConditions()
-    {
-    }
-    /**
-     * Output only. Time at which the request to create the `PipelineRun` was
-     * received.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Needed for declarative-friendly resources.
-     *
-     * @param string $etag
-     */
-    public function setEtag($etag)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEtag()
-    {
-    }
-    /**
-     * Output only. FinallyStartTime is when all non-finally tasks have been
-     * completed and only finally tasks are being executed. +optional
-     *
-     * @param string $finallyStartTime
-     */
-    public function setFinallyStartTime($finallyStartTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFinallyStartTime()
-    {
-    }
-    /**
-     * Output only. GCB default params.
-     *
-     * @param string[] $gcbParams
-     */
-    public function setGcbParams($gcbParams)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getGcbParams()
-    {
-    }
-    /**
-     * Output only. The `PipelineRun` name with format
-     * `projects/{project}/locations/{location}/pipelineRuns/{pipeline_run}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Params is a list of parameter names and values.
-     *
-     * @param Param[] $params
-     */
-    public function setParams($params)
-    {
-    }
-    /**
-     * @return Param[]
-     */
-    public function getParams()
-    {
-    }
-    /**
-     * PipelineRef refer to a specific instance of a Pipeline.
-     *
-     * @param PipelineRef $pipelineRef
-     */
-    public function setPipelineRef(PipelineRef $pipelineRef)
-    {
-    }
-    /**
-     * @return PipelineRef
-     */
-    public function getPipelineRef()
-    {
-    }
-    /**
-     * Pipelinerun status the user can provide. Used for cancellation.
-     *
-     * Accepted values: PIPELINE_RUN_STATUS_UNSPECIFIED, PIPELINE_RUN_CANCELLED
-     *
-     * @param self::PIPELINE_RUN_STATUS_* $pipelineRunStatus
-     */
-    public function setPipelineRunStatus($pipelineRunStatus)
-    {
-    }
-    /**
-     * @return self::PIPELINE_RUN_STATUS_*
-     */
-    public function getPipelineRunStatus()
-    {
-    }
-    /**
-     * PipelineSpec defines the desired state of Pipeline.
-     *
-     * @param PipelineSpec $pipelineSpec
-     */
-    public function setPipelineSpec(PipelineSpec $pipelineSpec)
-    {
-    }
-    /**
-     * @return PipelineSpec
-     */
-    public function getPipelineSpec()
-    {
-    }
-    /**
-     * Output only. Inline pipelineSpec yaml string, used by workflow run
-     * requests.
-     *
-     * @param string $pipelineSpecYaml
-     */
-    public function setPipelineSpecYaml($pipelineSpecYaml)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPipelineSpecYaml()
-    {
-    }
-    /**
-     * Optional. Provenance configuration.
-     *
-     * @param Provenance $provenance
-     */
-    public function setProvenance(Provenance $provenance)
-    {
-    }
-    /**
-     * @return Provenance
-     */
-    public function getProvenance()
-    {
-    }
-    /**
-     * Output only. The `Record` of this `PipelineRun`. Format: `projects/{project
-     * }/locations/{location}/results/{result_id}/records/{record_id}`
-     *
-     * @param string $record
-     */
-    public function setRecord($record)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRecord()
-    {
-    }
-    /**
-     * Output only. The exact PipelineSpec used to instantiate the run.
-     *
-     * @param PipelineSpec $resolvedPipelineSpec
-     */
-    public function setResolvedPipelineSpec(PipelineSpec $resolvedPipelineSpec)
-    {
-    }
-    /**
-     * @return PipelineSpec
-     */
-    public function getResolvedPipelineSpec()
-    {
-    }
-    /**
-     * Optional. Output only. List of results written out by the pipeline's
-     * containers
-     *
-     * @param PipelineRunResult[] $results
-     */
-    public function setResults($results)
-    {
-    }
-    /**
-     * @return PipelineRunResult[]
-     */
-    public function getResults()
-    {
-    }
-    /**
-     * Optional. Security configuration.
-     *
-     * @param Security $security
-     */
-    public function setSecurity(Security $security)
-    {
-    }
-    /**
-     * @return Security
-     */
-    public function getSecurity()
-    {
-    }
-    /**
-     * Service account used in the Pipeline. Deprecated; please use
-     * security.service_account instead.
-     *
-     * @deprecated
-     * @param string $serviceAccount
-     */
-    public function setServiceAccount($serviceAccount)
-    {
-    }
-    /**
-     * @deprecated
-     * @return string
-     */
-    public function getServiceAccount()
-    {
-    }
-    /**
-     * Output only. List of tasks that were skipped due to when expressions
-     * evaluating to false.
-     *
-     * @param SkippedTask[] $skippedTasks
-     */
-    public function setSkippedTasks($skippedTasks)
-    {
-    }
-    /**
-     * @return SkippedTask[]
-     */
-    public function getSkippedTasks()
-    {
-    }
-    /**
-     * Output only. Time the pipeline is actually started.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * Time after which the Pipeline times out. Currently three keys are accepted
-     * in the map pipeline, tasks and finally with Timeouts.pipeline >=
-     * Timeouts.tasks + Timeouts.finally
-     *
-     * @param TimeoutFields $timeouts
-     */
-    public function setTimeouts(TimeoutFields $timeouts)
-    {
-    }
-    /**
-     * @return TimeoutFields
-     */
-    public function getTimeouts()
-    {
-    }
-    /**
-     * Output only. A unique identifier for the `PipelineRun`.
-     *
-     * @param string $uid
-     */
-    public function setUid($uid)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUid()
-    {
-    }
-    /**
-     * Output only. Time at which the request to update the `PipelineRun` was
-     * received.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
-    {
-    }
-    /**
-     * Optional. Worker configuration.
-     *
-     * @param Worker $worker
-     */
-    public function setWorker(Worker $worker)
-    {
-    }
-    /**
-     * @return Worker
-     */
-    public function getWorker()
-    {
-    }
-    /**
-     * Output only. The WorkerPool used to run this PipelineRun.
-     *
-     * @param string $workerPool
-     */
-    public function setWorkerPool($workerPool)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWorkerPool()
-    {
-    }
-    /**
-     * Output only. The Workflow used to create this PipelineRun.
-     *
-     * @param string $workflow
-     */
-    public function setWorkflow($workflow)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWorkflow()
-    {
-    }
-    /**
-     * Workspaces is a list of WorkspaceBindings from volumes to workspaces.
-     *
-     * @param WorkspaceBinding[] $workspaces
-     */
-    public function setWorkspaces($workspaces)
-    {
-    }
-    /**
-     * @return WorkspaceBinding[]
-     */
-    public function getWorkspaces()
+    class Google_Service_CloudBuild_PipelineRun extends \Google\Service\CloudBuild\PipelineRun
     {
     }
 }

@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class GroupingInfo extends \Google\Model
-{
-    /**
-     * Optional grouping ID for grouping the passes with the same ID visually
-     * together. Grouping with different types of passes is allowed.
-     *
-     * @var string
-     */
-    public $groupingId;
-    /**
-     * Optional index for sorting the passes when they are grouped with other
-     * passes. Passes with lower sort index are shown before passes with higher
-     * sort index. If unspecified, the value is assumed to be INT_MAX. For two
-     * passes with the same sort index, the sorting behavior is undefined.
-     *
-     * @var int
-     */
-    public $sortIndex;
-    /**
-     * Optional grouping ID for grouping the passes with the same ID visually
-     * together. Grouping with different types of passes is allowed.
-     *
-     * @param string $groupingId
-     */
-    public function setGroupingId($groupingId)
+namespace Google\Service\Walletobjects {
+    class GroupingInfo extends \Google\Model
     {
+        /**
+         * Optional grouping ID for grouping the passes with the same ID visually
+         * together. Grouping with different types of passes is allowed.
+         *
+         * @var string
+         */
+        public $groupingId;
+        /**
+         * Optional index for sorting the passes when they are grouped with other
+         * passes. Passes with lower sort index are shown before passes with higher
+         * sort index. If unspecified, the value is assumed to be INT_MAX. For two
+         * passes with the same sort index, the sorting behavior is undefined.
+         *
+         * @var int
+         */
+        public $sortIndex;
+        /**
+         * Optional grouping ID for grouping the passes with the same ID visually
+         * together. Grouping with different types of passes is allowed.
+         *
+         * @param string $groupingId
+         */
+        public function setGroupingId($groupingId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getGroupingId()
+        {
+        }
+        /**
+         * Optional index for sorting the passes when they are grouped with other
+         * passes. Passes with lower sort index are shown before passes with higher
+         * sort index. If unspecified, the value is assumed to be INT_MAX. For two
+         * passes with the same sort index, the sorting behavior is undefined.
+         *
+         * @param int $sortIndex
+         */
+        public function setSortIndex($sortIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getSortIndex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Walletobjects\GroupingInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGroupingId()
-    {
-    }
-    /**
-     * Optional index for sorting the passes when they are grouped with other
-     * passes. Passes with lower sort index are shown before passes with higher
-     * sort index. If unspecified, the value is assumed to be INT_MAX. For two
-     * passes with the same sort index, the sorting behavior is undefined.
-     *
-     * @param int $sortIndex
-     */
-    public function setSortIndex($sortIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getSortIndex()
+    class Google_Service_Walletobjects_GroupingInfo extends \Google\Service\Walletobjects\GroupingInfo
     {
     }
 }

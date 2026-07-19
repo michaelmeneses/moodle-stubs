@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseAppHosting;
-
-class ListBuildsResponse extends \Google\Collection
-{
-    protected $collection_key = 'unreachable';
-    protected $buildsType = Build::class;
-    protected $buildsDataType = 'array';
-    /**
-     * A token identifying the next page of results the server should return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Locations that could not be reached.
-     *
-     * @var string[]
-     */
-    public $unreachable;
-    /**
-     * The list of builds.
-     *
-     * @param Build[] $builds
-     */
-    public function setBuilds($builds)
+namespace Google\Service\FirebaseAppHosting {
+    class ListBuildsResponse extends \Google\Collection
     {
+        protected $collection_key = 'unreachable';
+        protected $buildsType = Build::class;
+        protected $buildsDataType = 'array';
+        /**
+         * A token identifying the next page of results the server should return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Locations that could not be reached.
+         *
+         * @var string[]
+         */
+        public $unreachable;
+        /**
+         * The list of builds.
+         *
+         * @param Build[] $builds
+         */
+        public function setBuilds($builds)
+        {
+        }
+        /**
+         * @return Build[]
+         */
+        public function getBuilds()
+        {
+        }
+        /**
+         * A token identifying the next page of results the server should return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Locations that could not be reached.
+         *
+         * @param string[] $unreachable
+         */
+        public function setUnreachable($unreachable)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUnreachable()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Build[]
+     * Runtime class alias of \Google\Service\FirebaseAppHosting\ListBuildsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBuilds()
-    {
-    }
-    /**
-     * A token identifying the next page of results the server should return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Locations that could not be reached.
-     *
-     * @param string[] $unreachable
-     */
-    public function setUnreachable($unreachable)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUnreachable()
+    class Google_Service_FirebaseAppHosting_ListBuildsResponse extends \Google\Service\FirebaseAppHosting\ListBuildsResponse
     {
     }
 }

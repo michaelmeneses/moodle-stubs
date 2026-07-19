@@ -21,67 +21,76 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class TargetingTemplatesListResponse extends \Google\Collection
-{
-    protected $collection_key = 'targetingTemplates';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#targetingTemplatesListResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Pagination token to be used for the next list operation.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $targetingTemplatesType = TargetingTemplate::class;
-    protected $targetingTemplatesDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#targetingTemplatesListResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Dfareporting {
+    class TargetingTemplatesListResponse extends \Google\Collection
     {
+        protected $collection_key = 'targetingTemplates';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#targetingTemplatesListResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Pagination token to be used for the next list operation.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $targetingTemplatesType = TargetingTemplate::class;
+        protected $targetingTemplatesDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#targetingTemplatesListResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Pagination token to be used for the next list operation.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Targeting template collection.
+         *
+         * @param TargetingTemplate[] $targetingTemplates
+         */
+        public function setTargetingTemplates($targetingTemplates)
+        {
+        }
+        /**
+         * @return TargetingTemplate[]
+         */
+        public function getTargetingTemplates()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\TargetingTemplatesListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * Pagination token to be used for the next list operation.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Targeting template collection.
-     *
-     * @param TargetingTemplate[] $targetingTemplates
-     */
-    public function setTargetingTemplates($targetingTemplates)
-    {
-    }
-    /**
-     * @return TargetingTemplate[]
-     */
-    public function getTargetingTemplates()
+    class Google_Service_Dfareporting_TargetingTemplatesListResponse extends \Google\Service\Dfareporting\TargetingTemplatesListResponse
     {
     }
 }

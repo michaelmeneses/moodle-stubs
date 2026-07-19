@@ -21,31 +21,42 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow\Resource;
-
-/**
- * The "locations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $dataflowService = new Google\Service\Dataflow(...);
- *   $locations = $dataflowService->projects_locations;
- *  </code>
- */
-class ProjectsLocations extends \Google\Service\Resource
-{
+namespace Google\Service\Dataflow\Resource {
+    use Google\Service\Dataflow\SendWorkerMessagesRequest;
+    use Google\Service\Dataflow\SendWorkerMessagesResponse;
     /**
-     * Send a worker_message to the service. (locations.workerMessages)
-     *
-     * @param string $projectId The project to send the WorkerMessages to.
-     * @param string $location The [regional endpoint]
-     * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that
-     * contains the job.
-     * @param SendWorkerMessagesRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return SendWorkerMessagesResponse
-     * @throws \Google\Service\Exception
+     * The "locations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $dataflowService = new Google\Service\Dataflow(...);
+     *   $locations = $dataflowService->projects_locations;
+     *  </code>
      */
-    public function workerMessages($projectId, $location, SendWorkerMessagesRequest $postBody, $optParams = [])
+    class ProjectsLocations extends \Google\Service\Resource
+    {
+        /**
+         * Send a worker_message to the service. (locations.workerMessages)
+         *
+         * @param string $projectId The project to send the WorkerMessages to.
+         * @param string $location The [regional endpoint]
+         * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that
+         * contains the job.
+         * @param SendWorkerMessagesRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return SendWorkerMessagesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function workerMessages($projectId, $location, SendWorkerMessagesRequest $postBody, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Dataflow\Resource\ProjectsLocations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Dataflow_Resource_ProjectsLocations extends \Google\Service\Dataflow\Resource\ProjectsLocations
     {
     }
 }

@@ -21,46 +21,55 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ContainerAnalysis;
-
-class ContaineranalysisGoogleDevtoolsCloudbuildV1Dependency extends \Google\Model
-{
-    /**
-     * If set to true disable all dependency fetching (ignoring the default source
-     * as well).
-     *
-     * @var bool
-     */
-    public $empty;
-    protected $gitSourceType = ContaineranalysisGoogleDevtoolsCloudbuildV1DependencyGitSourceDependency::class;
-    protected $gitSourceDataType = '';
-    /**
-     * If set to true disable all dependency fetching (ignoring the default source
-     * as well).
-     *
-     * @param bool $empty
-     */
-    public function setEmpty($empty)
+namespace Google\Service\ContainerAnalysis {
+    class ContaineranalysisGoogleDevtoolsCloudbuildV1Dependency extends \Google\Model
     {
+        /**
+         * If set to true disable all dependency fetching (ignoring the default source
+         * as well).
+         *
+         * @var bool
+         */
+        public $empty;
+        protected $gitSourceType = ContaineranalysisGoogleDevtoolsCloudbuildV1DependencyGitSourceDependency::class;
+        protected $gitSourceDataType = '';
+        /**
+         * If set to true disable all dependency fetching (ignoring the default source
+         * as well).
+         *
+         * @param bool $empty
+         */
+        public function setEmpty($empty)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEmpty()
+        {
+        }
+        /**
+         * Represents a git repository as a build dependency.
+         *
+         * @param ContaineranalysisGoogleDevtoolsCloudbuildV1DependencyGitSourceDependency $gitSource
+         */
+        public function setGitSource(ContaineranalysisGoogleDevtoolsCloudbuildV1DependencyGitSourceDependency $gitSource)
+        {
+        }
+        /**
+         * @return ContaineranalysisGoogleDevtoolsCloudbuildV1DependencyGitSourceDependency
+         */
+        public function getGitSource()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\ContainerAnalysis\ContaineranalysisGoogleDevtoolsCloudbuildV1Dependency registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEmpty()
-    {
-    }
-    /**
-     * Represents a git repository as a build dependency.
-     *
-     * @param ContaineranalysisGoogleDevtoolsCloudbuildV1DependencyGitSourceDependency $gitSource
-     */
-    public function setGitSource(ContaineranalysisGoogleDevtoolsCloudbuildV1DependencyGitSourceDependency $gitSource)
-    {
-    }
-    /**
-     * @return ContaineranalysisGoogleDevtoolsCloudbuildV1DependencyGitSourceDependency
-     */
-    public function getGitSource()
+    class Google_Service_ContainerAnalysis_ContaineranalysisGoogleDevtoolsCloudbuildV1Dependency extends \Google\Service\ContainerAnalysis\ContaineranalysisGoogleDevtoolsCloudbuildV1Dependency
     {
     }
 }

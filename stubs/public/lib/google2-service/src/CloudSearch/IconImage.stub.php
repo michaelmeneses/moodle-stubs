@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class IconImage extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $altText;
-    /**
-     * @var string
-     */
-    public $icon;
-    /**
-     * @var string
-     */
-    public $iconUrl;
-    /**
-     * @var string
-     */
-    public $imageStyle;
-    /**
-     * @param string
-     */
-    public function setAltText($altText)
+namespace Google\Service\CloudSearch {
+    class IconImage extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $altText;
+        /**
+         * @var string
+         */
+        public $icon;
+        /**
+         * @var string
+         */
+        public $iconUrl;
+        /**
+         * @var string
+         */
+        public $imageStyle;
+        /**
+         * @param string
+         */
+        public function setAltText($altText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAltText()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setIcon($icon)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIcon()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setIconUrl($iconUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIconUrl()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setImageStyle($imageStyle)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageStyle()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\IconImage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAltText()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setIcon($icon)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIcon()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setIconUrl($iconUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIconUrl()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setImageStyle($imageStyle)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImageStyle()
+    class Google_Service_CloudSearch_IconImage extends \Google\Service\CloudSearch\IconImage
     {
     }
 }

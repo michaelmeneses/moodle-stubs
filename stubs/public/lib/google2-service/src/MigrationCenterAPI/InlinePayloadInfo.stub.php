@@ -21,39 +21,48 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class InlinePayloadInfo extends \Google\Collection
-{
-    protected $collection_key = 'payload';
-    /**
-     * @var string
-     */
-    public $format;
-    protected $payloadType = PayloadFile::class;
-    protected $payloadDataType = 'array';
-    /**
-     * @param string
-     */
-    public function setFormat($format)
+namespace Google\Service\MigrationCenterAPI {
+    class InlinePayloadInfo extends \Google\Collection
     {
+        protected $collection_key = 'payload';
+        /**
+         * @var string
+         */
+        public $format;
+        protected $payloadType = PayloadFile::class;
+        protected $payloadDataType = 'array';
+        /**
+         * @param string
+         */
+        public function setFormat($format)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFormat()
+        {
+        }
+        /**
+         * @param PayloadFile[]
+         */
+        public function setPayload($payload)
+        {
+        }
+        /**
+         * @return PayloadFile[]
+         */
+        public function getPayload()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\InlinePayloadInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFormat()
-    {
-    }
-    /**
-     * @param PayloadFile[]
-     */
-    public function setPayload($payload)
-    {
-    }
-    /**
-     * @return PayloadFile[]
-     */
-    public function getPayload()
+    class Google_Service_MigrationCenterAPI_InlinePayloadInfo extends \Google\Service\MigrationCenterAPI\InlinePayloadInfo
     {
     }
 }

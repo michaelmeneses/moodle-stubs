@@ -21,165 +21,174 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class BitbucketServerConfig extends \Google\Collection
-{
-    protected $collection_key = 'connectedRepositories';
-    /**
-     * @var string
-     */
-    public $apiKey;
-    protected $connectedRepositoriesType = BitbucketServerRepositoryId::class;
-    protected $connectedRepositoriesDataType = 'array';
-    /**
-     * @var string
-     */
-    public $createTime;
-    /**
-     * @var string
-     */
-    public $hostUri;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string
-     */
-    public $peeredNetwork;
-    protected $secretsType = BitbucketServerSecrets::class;
-    protected $secretsDataType = '';
-    /**
-     * @var string
-     */
-    public $sslCa;
-    /**
-     * @var string
-     */
-    public $username;
-    /**
-     * @var string
-     */
-    public $webhookKey;
-    /**
-     * @param string
-     */
-    public function setApiKey($apiKey)
+namespace Google\Service\CloudBuild {
+    class BitbucketServerConfig extends \Google\Collection
     {
+        protected $collection_key = 'connectedRepositories';
+        /**
+         * @var string
+         */
+        public $apiKey;
+        protected $connectedRepositoriesType = BitbucketServerRepositoryId::class;
+        protected $connectedRepositoriesDataType = 'array';
+        /**
+         * @var string
+         */
+        public $createTime;
+        /**
+         * @var string
+         */
+        public $hostUri;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string
+         */
+        public $peeredNetwork;
+        protected $secretsType = BitbucketServerSecrets::class;
+        protected $secretsDataType = '';
+        /**
+         * @var string
+         */
+        public $sslCa;
+        /**
+         * @var string
+         */
+        public $username;
+        /**
+         * @var string
+         */
+        public $webhookKey;
+        /**
+         * @param string
+         */
+        public function setApiKey($apiKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getApiKey()
+        {
+        }
+        /**
+         * @param BitbucketServerRepositoryId[]
+         */
+        public function setConnectedRepositories($connectedRepositories)
+        {
+        }
+        /**
+         * @return BitbucketServerRepositoryId[]
+         */
+        public function getConnectedRepositories()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setHostUri($hostUri)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getHostUri()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setPeeredNetwork($peeredNetwork)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPeeredNetwork()
+        {
+        }
+        /**
+         * @param BitbucketServerSecrets
+         */
+        public function setSecrets(BitbucketServerSecrets $secrets)
+        {
+        }
+        /**
+         * @return BitbucketServerSecrets
+         */
+        public function getSecrets()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setSslCa($sslCa)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSslCa()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setUsername($username)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUsername()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setWebhookKey($webhookKey)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getWebhookKey()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\BitbucketServerConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApiKey()
-    {
-    }
-    /**
-     * @param BitbucketServerRepositoryId[]
-     */
-    public function setConnectedRepositories($connectedRepositories)
-    {
-    }
-    /**
-     * @return BitbucketServerRepositoryId[]
-     */
-    public function getConnectedRepositories()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setHostUri($hostUri)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getHostUri()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setPeeredNetwork($peeredNetwork)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPeeredNetwork()
-    {
-    }
-    /**
-     * @param BitbucketServerSecrets
-     */
-    public function setSecrets(BitbucketServerSecrets $secrets)
-    {
-    }
-    /**
-     * @return BitbucketServerSecrets
-     */
-    public function getSecrets()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setSslCa($sslCa)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSslCa()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setUsername($username)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUsername()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setWebhookKey($webhookKey)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getWebhookKey()
+    class Google_Service_CloudBuild_BitbucketServerConfig extends \Google\Service\CloudBuild\BitbucketServerConfig
     {
     }
 }

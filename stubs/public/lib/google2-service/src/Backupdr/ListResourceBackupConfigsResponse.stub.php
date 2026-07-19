@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class ListResourceBackupConfigsResponse extends \Google\Collection
-{
-    protected $collection_key = 'resourceBackupConfigs';
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $resourceBackupConfigsType = ResourceBackupConfig::class;
-    protected $resourceBackupConfigsDataType = 'array';
-    /**
-     * A token identifying a page of results the server should return.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Backupdr {
+    class ListResourceBackupConfigsResponse extends \Google\Collection
     {
+        protected $collection_key = 'resourceBackupConfigs';
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $resourceBackupConfigsType = ResourceBackupConfig::class;
+        protected $resourceBackupConfigsDataType = 'array';
+        /**
+         * A token identifying a page of results the server should return.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The list of ResourceBackupConfigs for the specified scope.
+         *
+         * @param ResourceBackupConfig[] $resourceBackupConfigs
+         */
+        public function setResourceBackupConfigs($resourceBackupConfigs)
+        {
+        }
+        /**
+         * @return ResourceBackupConfig[]
+         */
+        public function getResourceBackupConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Backupdr\ListResourceBackupConfigsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The list of ResourceBackupConfigs for the specified scope.
-     *
-     * @param ResourceBackupConfig[] $resourceBackupConfigs
-     */
-    public function setResourceBackupConfigs($resourceBackupConfigs)
-    {
-    }
-    /**
-     * @return ResourceBackupConfig[]
-     */
-    public function getResourceBackupConfigs()
+    class Google_Service_Backupdr_ListResourceBackupConfigsResponse extends \Google\Service\Backupdr\ListResourceBackupConfigsResponse
     {
     }
 }

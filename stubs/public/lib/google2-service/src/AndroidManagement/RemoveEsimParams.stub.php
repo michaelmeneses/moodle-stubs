@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class RemoveEsimParams extends \Google\Model
-{
-    /**
-     * Required. ICC ID of the eSIM profile to be deleted.
-     *
-     * @var string
-     */
-    public $iccId;
-    /**
-     * Required. ICC ID of the eSIM profile to be deleted.
-     *
-     * @param string $iccId
-     */
-    public function setIccId($iccId)
+namespace Google\Service\AndroidManagement {
+    class RemoveEsimParams extends \Google\Model
     {
+        /**
+         * Required. ICC ID of the eSIM profile to be deleted.
+         *
+         * @var string
+         */
+        public $iccId;
+        /**
+         * Required. ICC ID of the eSIM profile to be deleted.
+         *
+         * @param string $iccId
+         */
+        public function setIccId($iccId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIccId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidManagement\RemoveEsimParams registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIccId()
+    class Google_Service_AndroidManagement_RemoveEsimParams extends \Google\Service\AndroidManagement\RemoveEsimParams
     {
     }
 }

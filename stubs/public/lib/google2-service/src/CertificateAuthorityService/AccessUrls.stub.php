@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CertificateAuthorityService;
-
-class AccessUrls extends \Google\Collection
-{
-    protected $collection_key = 'crlAccessUrls';
-    /**
-     * The URL where this CertificateAuthority's CA certificate is published. This
-     * will only be set for CAs that have been activated.
-     *
-     * @var string
-     */
-    public $caCertificateAccessUrl;
-    /**
-     * The URLs where this CertificateAuthority's CRLs are published. This will
-     * only be set for CAs that have been activated.
-     *
-     * @var string[]
-     */
-    public $crlAccessUrls;
-    /**
-     * The URL where this CertificateAuthority's CA certificate is published. This
-     * will only be set for CAs that have been activated.
-     *
-     * @param string $caCertificateAccessUrl
-     */
-    public function setCaCertificateAccessUrl($caCertificateAccessUrl)
+namespace Google\Service\CertificateAuthorityService {
+    class AccessUrls extends \Google\Collection
     {
+        protected $collection_key = 'crlAccessUrls';
+        /**
+         * The URL where this CertificateAuthority's CA certificate is published. This
+         * will only be set for CAs that have been activated.
+         *
+         * @var string
+         */
+        public $caCertificateAccessUrl;
+        /**
+         * The URLs where this CertificateAuthority's CRLs are published. This will
+         * only be set for CAs that have been activated.
+         *
+         * @var string[]
+         */
+        public $crlAccessUrls;
+        /**
+         * The URL where this CertificateAuthority's CA certificate is published. This
+         * will only be set for CAs that have been activated.
+         *
+         * @param string $caCertificateAccessUrl
+         */
+        public function setCaCertificateAccessUrl($caCertificateAccessUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCaCertificateAccessUrl()
+        {
+        }
+        /**
+         * The URLs where this CertificateAuthority's CRLs are published. This will
+         * only be set for CAs that have been activated.
+         *
+         * @param string[] $crlAccessUrls
+         */
+        public function setCrlAccessUrls($crlAccessUrls)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getCrlAccessUrls()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CertificateAuthorityService\AccessUrls registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCaCertificateAccessUrl()
-    {
-    }
-    /**
-     * The URLs where this CertificateAuthority's CRLs are published. This will
-     * only be set for CAs that have been activated.
-     *
-     * @param string[] $crlAccessUrls
-     */
-    public function setCrlAccessUrls($crlAccessUrls)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getCrlAccessUrls()
+    class Google_Service_CertificateAuthorityService_AccessUrls extends \Google\Service\CertificateAuthorityService\AccessUrls
     {
     }
 }

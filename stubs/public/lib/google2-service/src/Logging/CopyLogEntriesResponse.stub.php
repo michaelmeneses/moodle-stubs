@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Logging;
-
-class CopyLogEntriesResponse extends \Google\Model
-{
-    /**
-     * Number of log entries copied.
-     *
-     * @var string
-     */
-    public $logEntriesCopiedCount;
-    /**
-     * Number of log entries copied.
-     *
-     * @param string $logEntriesCopiedCount
-     */
-    public function setLogEntriesCopiedCount($logEntriesCopiedCount)
+namespace Google\Service\Logging {
+    class CopyLogEntriesResponse extends \Google\Model
     {
+        /**
+         * Number of log entries copied.
+         *
+         * @var string
+         */
+        public $logEntriesCopiedCount;
+        /**
+         * Number of log entries copied.
+         *
+         * @param string $logEntriesCopiedCount
+         */
+        public function setLogEntriesCopiedCount($logEntriesCopiedCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLogEntriesCopiedCount()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Logging\CopyLogEntriesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLogEntriesCopiedCount()
+    class Google_Service_Logging_CopyLogEntriesResponse extends \Google\Service\Logging\CopyLogEntriesResponse
     {
     }
 }

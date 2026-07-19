@@ -21,87 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1AssistantCustomerPolicyBannedPhrase extends \Google\Model
-{
-    /**
-     * Defaults to SIMPLE_STRING_MATCH.
-     */
-    public const MATCH_TYPE_BANNED_PHRASE_MATCH_TYPE_UNSPECIFIED = 'BANNED_PHRASE_MATCH_TYPE_UNSPECIFIED';
-    /**
-     * The banned phrase matches if it is found anywhere in the text as an exact
-     * substring.
-     */
-    public const MATCH_TYPE_SIMPLE_STRING_MATCH = 'SIMPLE_STRING_MATCH';
-    /**
-     * Banned phrase only matches if the pattern found in the text is surrounded
-     * by word delimiters. The phrase itself may still contain word delimiters.
-     */
-    public const MATCH_TYPE_WORD_BOUNDARY_STRING_MATCH = 'WORD_BOUNDARY_STRING_MATCH';
-    /**
-     * Optional. If true, diacritical marks (e.g., accents, umlauts) are ignored
-     * when matching banned phrases. For example, "cafe" would match "café".
-     *
-     * @var bool
-     */
-    public $ignoreDiacritics;
-    /**
-     * Optional. Match type for the banned phrase.
-     *
-     * @var string
-     */
-    public $matchType;
-    /**
-     * Required. The raw string content to be banned.
-     *
-     * @var string
-     */
-    public $phrase;
-    /**
-     * Optional. If true, diacritical marks (e.g., accents, umlauts) are ignored
-     * when matching banned phrases. For example, "cafe" would match "café".
-     *
-     * @param bool $ignoreDiacritics
-     */
-    public function setIgnoreDiacritics($ignoreDiacritics)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1AssistantCustomerPolicyBannedPhrase extends \Google\Model
     {
+        /**
+         * Defaults to SIMPLE_STRING_MATCH.
+         */
+        public const MATCH_TYPE_BANNED_PHRASE_MATCH_TYPE_UNSPECIFIED = 'BANNED_PHRASE_MATCH_TYPE_UNSPECIFIED';
+        /**
+         * The banned phrase matches if it is found anywhere in the text as an exact
+         * substring.
+         */
+        public const MATCH_TYPE_SIMPLE_STRING_MATCH = 'SIMPLE_STRING_MATCH';
+        /**
+         * Banned phrase only matches if the pattern found in the text is surrounded
+         * by word delimiters. The phrase itself may still contain word delimiters.
+         */
+        public const MATCH_TYPE_WORD_BOUNDARY_STRING_MATCH = 'WORD_BOUNDARY_STRING_MATCH';
+        /**
+         * Optional. If true, diacritical marks (e.g., accents, umlauts) are ignored
+         * when matching banned phrases. For example, "cafe" would match "café".
+         *
+         * @var bool
+         */
+        public $ignoreDiacritics;
+        /**
+         * Optional. Match type for the banned phrase.
+         *
+         * @var string
+         */
+        public $matchType;
+        /**
+         * Required. The raw string content to be banned.
+         *
+         * @var string
+         */
+        public $phrase;
+        /**
+         * Optional. If true, diacritical marks (e.g., accents, umlauts) are ignored
+         * when matching banned phrases. For example, "cafe" would match "café".
+         *
+         * @param bool $ignoreDiacritics
+         */
+        public function setIgnoreDiacritics($ignoreDiacritics)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getIgnoreDiacritics()
+        {
+        }
+        /**
+         * Optional. Match type for the banned phrase.
+         *
+         * Accepted values: BANNED_PHRASE_MATCH_TYPE_UNSPECIFIED, SIMPLE_STRING_MATCH,
+         * WORD_BOUNDARY_STRING_MATCH
+         *
+         * @param self::MATCH_TYPE_* $matchType
+         */
+        public function setMatchType($matchType)
+        {
+        }
+        /**
+         * @return self::MATCH_TYPE_*
+         */
+        public function getMatchType()
+        {
+        }
+        /**
+         * Required. The raw string content to be banned.
+         *
+         * @param string $phrase
+         */
+        public function setPhrase($phrase)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPhrase()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AssistantCustomerPolicyBannedPhrase registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIgnoreDiacritics()
-    {
-    }
-    /**
-     * Optional. Match type for the banned phrase.
-     *
-     * Accepted values: BANNED_PHRASE_MATCH_TYPE_UNSPECIFIED, SIMPLE_STRING_MATCH,
-     * WORD_BOUNDARY_STRING_MATCH
-     *
-     * @param self::MATCH_TYPE_* $matchType
-     */
-    public function setMatchType($matchType)
-    {
-    }
-    /**
-     * @return self::MATCH_TYPE_*
-     */
-    public function getMatchType()
-    {
-    }
-    /**
-     * Required. The raw string content to be banned.
-     *
-     * @param string $phrase
-     */
-    public function setPhrase($phrase)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPhrase()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1AssistantCustomerPolicyBannedPhrase extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1AssistantCustomerPolicyBannedPhrase
     {
     }
 }

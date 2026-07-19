@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeUXReport;
-
-class UrlNormalization extends \Google\Model
-{
-    /**
-     * The URL after any normalization actions. This is a valid user experience
-     * URL that could reasonably be looked up.
-     *
-     * @var string
-     */
-    public $normalizedUrl;
-    /**
-     * The original requested URL prior to any normalization actions.
-     *
-     * @var string
-     */
-    public $originalUrl;
-    /**
-     * The URL after any normalization actions. This is a valid user experience
-     * URL that could reasonably be looked up.
-     *
-     * @param string $normalizedUrl
-     */
-    public function setNormalizedUrl($normalizedUrl)
+namespace Google\Service\ChromeUXReport {
+    class UrlNormalization extends \Google\Model
     {
+        /**
+         * The URL after any normalization actions. This is a valid user experience
+         * URL that could reasonably be looked up.
+         *
+         * @var string
+         */
+        public $normalizedUrl;
+        /**
+         * The original requested URL prior to any normalization actions.
+         *
+         * @var string
+         */
+        public $originalUrl;
+        /**
+         * The URL after any normalization actions. This is a valid user experience
+         * URL that could reasonably be looked up.
+         *
+         * @param string $normalizedUrl
+         */
+        public function setNormalizedUrl($normalizedUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNormalizedUrl()
+        {
+        }
+        /**
+         * The original requested URL prior to any normalization actions.
+         *
+         * @param string $originalUrl
+         */
+        public function setOriginalUrl($originalUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOriginalUrl()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromeUXReport\UrlNormalization registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNormalizedUrl()
-    {
-    }
-    /**
-     * The original requested URL prior to any normalization actions.
-     *
-     * @param string $originalUrl
-     */
-    public function setOriginalUrl($originalUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOriginalUrl()
+    class Google_Service_ChromeUXReport_UrlNormalization extends \Google\Service\ChromeUXReport\UrlNormalization
     {
     }
 }

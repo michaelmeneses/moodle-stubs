@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Monitoring;
-
-class SpanContext extends \Google\Model
-{
-    /**
-     * The resource name of the span. The format is:
-     * projects/[PROJECT_ID_OR_NUMBER]/traces/[TRACE_ID]/spans/[SPAN_ID]
-     * [TRACE_ID] is a unique identifier for a trace within a project; it is a
-     * 32-character hexadecimal encoding of a 16-byte array.[SPAN_ID] is a unique
-     * identifier for a span within a trace; it is a 16-character hexadecimal
-     * encoding of an 8-byte array.
-     *
-     * @var string
-     */
-    public $spanName;
-    /**
-     * The resource name of the span. The format is:
-     * projects/[PROJECT_ID_OR_NUMBER]/traces/[TRACE_ID]/spans/[SPAN_ID]
-     * [TRACE_ID] is a unique identifier for a trace within a project; it is a
-     * 32-character hexadecimal encoding of a 16-byte array.[SPAN_ID] is a unique
-     * identifier for a span within a trace; it is a 16-character hexadecimal
-     * encoding of an 8-byte array.
-     *
-     * @param string $spanName
-     */
-    public function setSpanName($spanName)
+namespace Google\Service\Monitoring {
+    class SpanContext extends \Google\Model
     {
+        /**
+         * The resource name of the span. The format is:
+         * projects/[PROJECT_ID_OR_NUMBER]/traces/[TRACE_ID]/spans/[SPAN_ID]
+         * [TRACE_ID] is a unique identifier for a trace within a project; it is a
+         * 32-character hexadecimal encoding of a 16-byte array.[SPAN_ID] is a unique
+         * identifier for a span within a trace; it is a 16-character hexadecimal
+         * encoding of an 8-byte array.
+         *
+         * @var string
+         */
+        public $spanName;
+        /**
+         * The resource name of the span. The format is:
+         * projects/[PROJECT_ID_OR_NUMBER]/traces/[TRACE_ID]/spans/[SPAN_ID]
+         * [TRACE_ID] is a unique identifier for a trace within a project; it is a
+         * 32-character hexadecimal encoding of a 16-byte array.[SPAN_ID] is a unique
+         * identifier for a span within a trace; it is a 16-character hexadecimal
+         * encoding of an 8-byte array.
+         *
+         * @param string $spanName
+         */
+        public function setSpanName($spanName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSpanName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Monitoring\SpanContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSpanName()
+    class Google_Service_Monitoring_SpanContext extends \Google\Service\Monitoring\SpanContext
     {
     }
 }

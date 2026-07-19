@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Firestore;
-
-class GoogleFirestoreAdminV1SourceInfo extends \Google\Model
-{
-    protected $backupType = GoogleFirestoreAdminV1BackupSource::class;
-    protected $backupDataType = '';
-    /**
-     * The associated long-running operation. This field may not be set after the
-     * operation has completed. Format:
-     * `projects/{project}/databases/{database}/operations/{operation}`.
-     *
-     * @var string
-     */
-    public $operation;
-    /**
-     * If set, this database was restored from the specified backup (or a snapshot
-     * thereof).
-     *
-     * @param GoogleFirestoreAdminV1BackupSource $backup
-     */
-    public function setBackup(GoogleFirestoreAdminV1BackupSource $backup)
+namespace Google\Service\Firestore {
+    class GoogleFirestoreAdminV1SourceInfo extends \Google\Model
     {
+        protected $backupType = GoogleFirestoreAdminV1BackupSource::class;
+        protected $backupDataType = '';
+        /**
+         * The associated long-running operation. This field may not be set after the
+         * operation has completed. Format:
+         * `projects/{project}/databases/{database}/operations/{operation}`.
+         *
+         * @var string
+         */
+        public $operation;
+        /**
+         * If set, this database was restored from the specified backup (or a snapshot
+         * thereof).
+         *
+         * @param GoogleFirestoreAdminV1BackupSource $backup
+         */
+        public function setBackup(GoogleFirestoreAdminV1BackupSource $backup)
+        {
+        }
+        /**
+         * @return GoogleFirestoreAdminV1BackupSource
+         */
+        public function getBackup()
+        {
+        }
+        /**
+         * The associated long-running operation. This field may not be set after the
+         * operation has completed. Format:
+         * `projects/{project}/databases/{database}/operations/{operation}`.
+         *
+         * @param string $operation
+         */
+        public function setOperation($operation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleFirestoreAdminV1BackupSource
+     * Runtime class alias of \Google\Service\Firestore\GoogleFirestoreAdminV1SourceInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBackup()
-    {
-    }
-    /**
-     * The associated long-running operation. This field may not be set after the
-     * operation has completed. Format:
-     * `projects/{project}/databases/{database}/operations/{operation}`.
-     *
-     * @param string $operation
-     */
-    public function setOperation($operation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOperation()
+    class Google_Service_Firestore_GoogleFirestoreAdminV1SourceInfo extends \Google\Service\Firestore\GoogleFirestoreAdminV1SourceInfo
     {
     }
 }

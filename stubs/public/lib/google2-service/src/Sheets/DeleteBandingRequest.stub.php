@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class DeleteBandingRequest extends \Google\Model
-{
-    /**
-     * The ID of the banded range to delete.
-     *
-     * @var int
-     */
-    public $bandedRangeId;
-    /**
-     * The ID of the banded range to delete.
-     *
-     * @param int $bandedRangeId
-     */
-    public function setBandedRangeId($bandedRangeId)
+namespace Google\Service\Sheets {
+    class DeleteBandingRequest extends \Google\Model
     {
+        /**
+         * The ID of the banded range to delete.
+         *
+         * @var int
+         */
+        public $bandedRangeId;
+        /**
+         * The ID of the banded range to delete.
+         *
+         * @param int $bandedRangeId
+         */
+        public function setBandedRangeId($bandedRangeId)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getBandedRangeId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\Sheets\DeleteBandingRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBandedRangeId()
+    class Google_Service_Sheets_DeleteBandingRequest extends \Google\Service\Sheets\DeleteBandingRequest
     {
     }
 }

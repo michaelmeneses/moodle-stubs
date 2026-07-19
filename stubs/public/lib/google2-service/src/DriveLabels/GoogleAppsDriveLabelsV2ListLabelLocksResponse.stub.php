@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DriveLabels;
-
-class GoogleAppsDriveLabelsV2ListLabelLocksResponse extends \Google\Collection
-{
-    protected $collection_key = 'labelLocks';
-    protected $labelLocksType = GoogleAppsDriveLabelsV2LabelLock::class;
-    protected $labelLocksDataType = 'array';
-    /**
-     * The token of the next page in the response.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Label locks.
-     *
-     * @param GoogleAppsDriveLabelsV2LabelLock[] $labelLocks
-     */
-    public function setLabelLocks($labelLocks)
+namespace Google\Service\DriveLabels {
+    class GoogleAppsDriveLabelsV2ListLabelLocksResponse extends \Google\Collection
     {
+        protected $collection_key = 'labelLocks';
+        protected $labelLocksType = GoogleAppsDriveLabelsV2LabelLock::class;
+        protected $labelLocksDataType = 'array';
+        /**
+         * The token of the next page in the response.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Label locks.
+         *
+         * @param GoogleAppsDriveLabelsV2LabelLock[] $labelLocks
+         */
+        public function setLabelLocks($labelLocks)
+        {
+        }
+        /**
+         * @return GoogleAppsDriveLabelsV2LabelLock[]
+         */
+        public function getLabelLocks()
+        {
+        }
+        /**
+         * The token of the next page in the response.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleAppsDriveLabelsV2LabelLock[]
+     * Runtime class alias of \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2ListLabelLocksResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLabelLocks()
-    {
-    }
-    /**
-     * The token of the next page in the response.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DriveLabels_GoogleAppsDriveLabelsV2ListLabelLocksResponse extends \Google\Service\DriveLabels\GoogleAppsDriveLabelsV2ListLabelLocksResponse
     {
     }
 }

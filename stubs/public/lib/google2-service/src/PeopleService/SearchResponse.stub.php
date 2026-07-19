@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PeopleService;
-
-class SearchResponse extends \Google\Collection
-{
-    protected $collection_key = 'results';
-    protected $resultsType = SearchResult::class;
-    protected $resultsDataType = 'array';
-    /**
-     * The results of the request.
-     *
-     * @param SearchResult[] $results
-     */
-    public function setResults($results)
+namespace Google\Service\PeopleService {
+    class SearchResponse extends \Google\Collection
     {
+        protected $collection_key = 'results';
+        protected $resultsType = SearchResult::class;
+        protected $resultsDataType = 'array';
+        /**
+         * The results of the request.
+         *
+         * @param SearchResult[] $results
+         */
+        public function setResults($results)
+        {
+        }
+        /**
+         * @return SearchResult[]
+         */
+        public function getResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return SearchResult[]
+     * Runtime class alias of \Google\Service\PeopleService\SearchResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResults()
+    class Google_Service_PeopleService_SearchResponse extends \Google\Service\PeopleService\SearchResponse
     {
     }
 }

@@ -21,48 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\NetworkServices\Resource;
-
-/**
- * The "routeViews" collection of methods.
- * Typical usage is:
- *  <code>
- *   $networkservicesService = new Google\Service\NetworkServices(...);
- *   $routeViews = $networkservicesService->projects_locations_gateways_routeViews;
- *  </code>
- */
-class ProjectsLocationsGatewaysRouteViews extends \Google\Service\Resource
-{
+namespace Google\Service\NetworkServices\Resource {
+    use Google\Service\NetworkServices\GatewayRouteView;
+    use Google\Service\NetworkServices\ListGatewayRouteViewsResponse;
     /**
-     * Get a single RouteView of a Gateway. (routeViews.get)
-     *
-     * @param string $name Required. Name of the GatewayRouteView resource. Formats:
-     * projects/{project_number}/locations/{location}/gateways/{gateway}/routeViews/
-     * {route_view}
-     * @param array $optParams Optional parameters.
-     * @return GatewayRouteView
-     * @throws \Google\Service\Exception
+     * The "routeViews" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $networkservicesService = new Google\Service\NetworkServices(...);
+     *   $routeViews = $networkservicesService->projects_locations_gateways_routeViews;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocationsGatewaysRouteViews extends \Google\Service\Resource
     {
+        /**
+         * Get a single RouteView of a Gateway. (routeViews.get)
+         *
+         * @param string $name Required. Name of the GatewayRouteView resource. Formats:
+         * projects/{project_number}/locations/{location}/gateways/{gateway}/routeViews/
+         * {route_view}
+         * @param array $optParams Optional parameters.
+         * @return GatewayRouteView
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists RouteViews (routeViews.listProjectsLocationsGatewaysRouteViews)
+         *
+         * @param string $parent Required. The Gateway to which a Route is associated.
+         * Formats: projects/{project_number}/locations/{location}/gateways/{gateway}
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize Maximum number of GatewayRouteViews to return per
+         * call.
+         * @opt_param string pageToken The value returned by the last
+         * `ListGatewayRouteViewsResponse` Indicates that this is a continuation of a
+         * prior `ListGatewayRouteViews` call, and that the system should return the
+         * next page of data.
+         * @return ListGatewayRouteViewsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsGatewaysRouteViews($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists RouteViews (routeViews.listProjectsLocationsGatewaysRouteViews)
-     *
-     * @param string $parent Required. The Gateway to which a Route is associated.
-     * Formats: projects/{project_number}/locations/{location}/gateways/{gateway}
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize Maximum number of GatewayRouteViews to return per
-     * call.
-     * @opt_param string pageToken The value returned by the last
-     * `ListGatewayRouteViewsResponse` Indicates that this is a continuation of a
-     * prior `ListGatewayRouteViews` call, and that the system should return the
-     * next page of data.
-     * @return ListGatewayRouteViewsResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\NetworkServices\Resource\ProjectsLocationsGatewaysRouteViews registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listProjectsLocationsGatewaysRouteViews($parent, $optParams = [])
+    class Google_Service_NetworkServices_Resource_ProjectsLocationsGatewaysRouteViews extends \Google\Service\NetworkServices\Resource\ProjectsLocationsGatewaysRouteViews
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class VpnGatewayStatus extends \Google\Collection
-{
-    protected $collection_key = 'vpnConnections';
-    protected $vpnConnectionsType = VpnGatewayStatusVpnConnection::class;
-    protected $vpnConnectionsDataType = 'array';
-    /**
-     * Output only. List of VPN connection for this VpnGateway.
-     *
-     * @param VpnGatewayStatusVpnConnection[] $vpnConnections
-     */
-    public function setVpnConnections($vpnConnections)
+namespace Google\Service\Compute {
+    class VpnGatewayStatus extends \Google\Collection
     {
+        protected $collection_key = 'vpnConnections';
+        protected $vpnConnectionsType = VpnGatewayStatusVpnConnection::class;
+        protected $vpnConnectionsDataType = 'array';
+        /**
+         * Output only. List of VPN connection for this VpnGateway.
+         *
+         * @param VpnGatewayStatusVpnConnection[] $vpnConnections
+         */
+        public function setVpnConnections($vpnConnections)
+        {
+        }
+        /**
+         * @return VpnGatewayStatusVpnConnection[]
+         */
+        public function getVpnConnections()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return VpnGatewayStatusVpnConnection[]
+     * Runtime class alias of \Google\Service\Compute\VpnGatewayStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getVpnConnections()
+    class Google_Service_Compute_VpnGatewayStatus extends \Google\Service\Compute\VpnGatewayStatus
     {
     }
 }

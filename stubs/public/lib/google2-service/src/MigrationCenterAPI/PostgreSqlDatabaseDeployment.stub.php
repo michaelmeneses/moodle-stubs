@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class PostgreSqlDatabaseDeployment extends \Google\Collection
-{
-    protected $collection_key = 'settings';
-    protected $propertiesType = PostgreSqlProperty::class;
-    protected $propertiesDataType = 'array';
-    protected $settingsType = PostgreSqlSetting::class;
-    protected $settingsDataType = 'array';
-    /**
-     * Optional. List of PostgreSql properties.
-     *
-     * @param PostgreSqlProperty[] $properties
-     */
-    public function setProperties($properties)
+namespace Google\Service\MigrationCenterAPI {
+    class PostgreSqlDatabaseDeployment extends \Google\Collection
     {
+        protected $collection_key = 'settings';
+        protected $propertiesType = PostgreSqlProperty::class;
+        protected $propertiesDataType = 'array';
+        protected $settingsType = PostgreSqlSetting::class;
+        protected $settingsDataType = 'array';
+        /**
+         * Optional. List of PostgreSql properties.
+         *
+         * @param PostgreSqlProperty[] $properties
+         */
+        public function setProperties($properties)
+        {
+        }
+        /**
+         * @return PostgreSqlProperty[]
+         */
+        public function getProperties()
+        {
+        }
+        /**
+         * Optional. List of PostgreSql settings.
+         *
+         * @param PostgreSqlSetting[] $settings
+         */
+        public function setSettings($settings)
+        {
+        }
+        /**
+         * @return PostgreSqlSetting[]
+         */
+        public function getSettings()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PostgreSqlProperty[]
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\PostgreSqlDatabaseDeployment registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProperties()
-    {
-    }
-    /**
-     * Optional. List of PostgreSql settings.
-     *
-     * @param PostgreSqlSetting[] $settings
-     */
-    public function setSettings($settings)
-    {
-    }
-    /**
-     * @return PostgreSqlSetting[]
-     */
-    public function getSettings()
+    class Google_Service_MigrationCenterAPI_PostgreSqlDatabaseDeployment extends \Google\Service\MigrationCenterAPI\PostgreSqlDatabaseDeployment
     {
     }
 }

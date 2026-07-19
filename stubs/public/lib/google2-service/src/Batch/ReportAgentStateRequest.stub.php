@@ -21,56 +21,65 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Batch;
-
-class ReportAgentStateRequest extends \Google\Model
-{
-    protected $agentInfoType = AgentInfo::class;
-    protected $agentInfoDataType = '';
-    protected $agentTimingInfoType = AgentTimingInfo::class;
-    protected $agentTimingInfoDataType = '';
-    protected $metadataType = AgentMetadata::class;
-    protected $metadataDataType = '';
-    /**
-     * Agent info.
-     *
-     * @param AgentInfo $agentInfo
-     */
-    public function setAgentInfo(AgentInfo $agentInfo)
+namespace Google\Service\Batch {
+    class ReportAgentStateRequest extends \Google\Model
     {
+        protected $agentInfoType = AgentInfo::class;
+        protected $agentInfoDataType = '';
+        protected $agentTimingInfoType = AgentTimingInfo::class;
+        protected $agentTimingInfoDataType = '';
+        protected $metadataType = AgentMetadata::class;
+        protected $metadataDataType = '';
+        /**
+         * Agent info.
+         *
+         * @param AgentInfo $agentInfo
+         */
+        public function setAgentInfo(AgentInfo $agentInfo)
+        {
+        }
+        /**
+         * @return AgentInfo
+         */
+        public function getAgentInfo()
+        {
+        }
+        /**
+         * Agent timing info.
+         *
+         * @param AgentTimingInfo $agentTimingInfo
+         */
+        public function setAgentTimingInfo(AgentTimingInfo $agentTimingInfo)
+        {
+        }
+        /**
+         * @return AgentTimingInfo
+         */
+        public function getAgentTimingInfo()
+        {
+        }
+        /**
+         * Agent metadata.
+         *
+         * @param AgentMetadata $metadata
+         */
+        public function setMetadata(AgentMetadata $metadata)
+        {
+        }
+        /**
+         * @return AgentMetadata
+         */
+        public function getMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return AgentInfo
+     * Runtime class alias of \Google\Service\Batch\ReportAgentStateRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAgentInfo()
-    {
-    }
-    /**
-     * Agent timing info.
-     *
-     * @param AgentTimingInfo $agentTimingInfo
-     */
-    public function setAgentTimingInfo(AgentTimingInfo $agentTimingInfo)
-    {
-    }
-    /**
-     * @return AgentTimingInfo
-     */
-    public function getAgentTimingInfo()
-    {
-    }
-    /**
-     * Agent metadata.
-     *
-     * @param AgentMetadata $metadata
-     */
-    public function setMetadata(AgentMetadata $metadata)
-    {
-    }
-    /**
-     * @return AgentMetadata
-     */
-    public function getMetadata()
+    class Google_Service_Batch_ReportAgentStateRequest extends \Google\Service\Batch\ReportAgentStateRequest
     {
     }
 }

@@ -21,97 +21,106 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class EditCustomerMatchMembersRequest extends \Google\Model
-{
-    protected $addedContactInfoListType = ContactInfoList::class;
-    protected $addedContactInfoListDataType = '';
-    protected $addedMobileDeviceIdListType = MobileDeviceIdList::class;
-    protected $addedMobileDeviceIdListDataType = '';
-    /**
-     * Required. The ID of the owner advertiser of the updated Customer Match
-     * FirstAndThirdPartyAudience.
-     *
-     * @var string
-     */
-    public $advertiserId;
-    protected $removedContactInfoListType = ContactInfoList::class;
-    protected $removedContactInfoListDataType = '';
-    protected $removedMobileDeviceIdListType = MobileDeviceIdList::class;
-    protected $removedMobileDeviceIdListDataType = '';
-    /**
-     * Input only. A list of contact information to define the members to be
-     * added.
-     *
-     * @param ContactInfoList $addedContactInfoList
-     */
-    public function setAddedContactInfoList(ContactInfoList $addedContactInfoList)
+namespace Google\Service\DisplayVideo {
+    class EditCustomerMatchMembersRequest extends \Google\Model
     {
+        protected $addedContactInfoListType = ContactInfoList::class;
+        protected $addedContactInfoListDataType = '';
+        protected $addedMobileDeviceIdListType = MobileDeviceIdList::class;
+        protected $addedMobileDeviceIdListDataType = '';
+        /**
+         * Required. The ID of the owner advertiser of the updated Customer Match
+         * FirstAndThirdPartyAudience.
+         *
+         * @var string
+         */
+        public $advertiserId;
+        protected $removedContactInfoListType = ContactInfoList::class;
+        protected $removedContactInfoListDataType = '';
+        protected $removedMobileDeviceIdListType = MobileDeviceIdList::class;
+        protected $removedMobileDeviceIdListDataType = '';
+        /**
+         * Input only. A list of contact information to define the members to be
+         * added.
+         *
+         * @param ContactInfoList $addedContactInfoList
+         */
+        public function setAddedContactInfoList(ContactInfoList $addedContactInfoList)
+        {
+        }
+        /**
+         * @return ContactInfoList
+         */
+        public function getAddedContactInfoList()
+        {
+        }
+        /**
+         * Input only. A list of mobile device IDs to define the members to be added.
+         *
+         * @param MobileDeviceIdList $addedMobileDeviceIdList
+         */
+        public function setAddedMobileDeviceIdList(MobileDeviceIdList $addedMobileDeviceIdList)
+        {
+        }
+        /**
+         * @return MobileDeviceIdList
+         */
+        public function getAddedMobileDeviceIdList()
+        {
+        }
+        /**
+         * Required. The ID of the owner advertiser of the updated Customer Match
+         * FirstAndThirdPartyAudience.
+         *
+         * @param string $advertiserId
+         */
+        public function setAdvertiserId($advertiserId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAdvertiserId()
+        {
+        }
+        /**
+         * Input only. A list of contact information to define the members to be
+         * removed.
+         *
+         * @param ContactInfoList $removedContactInfoList
+         */
+        public function setRemovedContactInfoList(ContactInfoList $removedContactInfoList)
+        {
+        }
+        /**
+         * @return ContactInfoList
+         */
+        public function getRemovedContactInfoList()
+        {
+        }
+        /**
+         * Input only. A list of mobile device IDs to define the members to be
+         * removed.
+         *
+         * @param MobileDeviceIdList $removedMobileDeviceIdList
+         */
+        public function setRemovedMobileDeviceIdList(MobileDeviceIdList $removedMobileDeviceIdList)
+        {
+        }
+        /**
+         * @return MobileDeviceIdList
+         */
+        public function getRemovedMobileDeviceIdList()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ContactInfoList
+     * Runtime class alias of \Google\Service\DisplayVideo\EditCustomerMatchMembersRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAddedContactInfoList()
-    {
-    }
-    /**
-     * Input only. A list of mobile device IDs to define the members to be added.
-     *
-     * @param MobileDeviceIdList $addedMobileDeviceIdList
-     */
-    public function setAddedMobileDeviceIdList(MobileDeviceIdList $addedMobileDeviceIdList)
-    {
-    }
-    /**
-     * @return MobileDeviceIdList
-     */
-    public function getAddedMobileDeviceIdList()
-    {
-    }
-    /**
-     * Required. The ID of the owner advertiser of the updated Customer Match
-     * FirstAndThirdPartyAudience.
-     *
-     * @param string $advertiserId
-     */
-    public function setAdvertiserId($advertiserId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAdvertiserId()
-    {
-    }
-    /**
-     * Input only. A list of contact information to define the members to be
-     * removed.
-     *
-     * @param ContactInfoList $removedContactInfoList
-     */
-    public function setRemovedContactInfoList(ContactInfoList $removedContactInfoList)
-    {
-    }
-    /**
-     * @return ContactInfoList
-     */
-    public function getRemovedContactInfoList()
-    {
-    }
-    /**
-     * Input only. A list of mobile device IDs to define the members to be
-     * removed.
-     *
-     * @param MobileDeviceIdList $removedMobileDeviceIdList
-     */
-    public function setRemovedMobileDeviceIdList(MobileDeviceIdList $removedMobileDeviceIdList)
-    {
-    }
-    /**
-     * @return MobileDeviceIdList
-     */
-    public function getRemovedMobileDeviceIdList()
+    class Google_Service_DisplayVideo_EditCustomerMatchMembersRequest extends \Google\Service\DisplayVideo\EditCustomerMatchMembersRequest
     {
     }
 }

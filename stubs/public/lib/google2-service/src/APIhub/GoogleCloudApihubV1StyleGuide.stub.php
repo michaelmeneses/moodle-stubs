@@ -21,80 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1StyleGuide extends \Google\Model
-{
-    /**
-     * Linter type unspecified.
-     */
-    public const LINTER_LINTER_UNSPECIFIED = 'LINTER_UNSPECIFIED';
-    /**
-     * Linter type spectral.
-     */
-    public const LINTER_SPECTRAL = 'SPECTRAL';
-    /**
-     * Linter type other.
-     */
-    public const LINTER_OTHER = 'OTHER';
-    protected $contentsType = GoogleCloudApihubV1StyleGuideContents::class;
-    protected $contentsDataType = '';
-    /**
-     * Required. Target linter for the style guide.
-     *
-     * @var string
-     */
-    public $linter;
-    /**
-     * Identifier. The name of the style guide. Format:
-     * `projects/{project}/locations/{location}/plugins/{plugin}/styleGuide`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Required. Input only. The contents of the uploaded style guide.
-     *
-     * @param GoogleCloudApihubV1StyleGuideContents $contents
-     */
-    public function setContents(GoogleCloudApihubV1StyleGuideContents $contents)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1StyleGuide extends \Google\Model
     {
+        /**
+         * Linter type unspecified.
+         */
+        public const LINTER_LINTER_UNSPECIFIED = 'LINTER_UNSPECIFIED';
+        /**
+         * Linter type spectral.
+         */
+        public const LINTER_SPECTRAL = 'SPECTRAL';
+        /**
+         * Linter type other.
+         */
+        public const LINTER_OTHER = 'OTHER';
+        protected $contentsType = GoogleCloudApihubV1StyleGuideContents::class;
+        protected $contentsDataType = '';
+        /**
+         * Required. Target linter for the style guide.
+         *
+         * @var string
+         */
+        public $linter;
+        /**
+         * Identifier. The name of the style guide. Format:
+         * `projects/{project}/locations/{location}/plugins/{plugin}/styleGuide`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Required. Input only. The contents of the uploaded style guide.
+         *
+         * @param GoogleCloudApihubV1StyleGuideContents $contents
+         */
+        public function setContents(GoogleCloudApihubV1StyleGuideContents $contents)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1StyleGuideContents
+         */
+        public function getContents()
+        {
+        }
+        /**
+         * Required. Target linter for the style guide.
+         *
+         * Accepted values: LINTER_UNSPECIFIED, SPECTRAL, OTHER
+         *
+         * @param self::LINTER_* $linter
+         */
+        public function setLinter($linter)
+        {
+        }
+        /**
+         * @return self::LINTER_*
+         */
+        public function getLinter()
+        {
+        }
+        /**
+         * Identifier. The name of the style guide. Format:
+         * `projects/{project}/locations/{location}/plugins/{plugin}/styleGuide`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApihubV1StyleGuideContents
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1StyleGuide registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContents()
-    {
-    }
-    /**
-     * Required. Target linter for the style guide.
-     *
-     * Accepted values: LINTER_UNSPECIFIED, SPECTRAL, OTHER
-     *
-     * @param self::LINTER_* $linter
-     */
-    public function setLinter($linter)
-    {
-    }
-    /**
-     * @return self::LINTER_*
-     */
-    public function getLinter()
-    {
-    }
-    /**
-     * Identifier. The name of the style guide. Format:
-     * `projects/{project}/locations/{location}/plugins/{plugin}/styleGuide`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_APIhub_GoogleCloudApihubV1StyleGuide extends \Google\Service\APIhub\GoogleCloudApihubV1StyleGuide
     {
     }
 }

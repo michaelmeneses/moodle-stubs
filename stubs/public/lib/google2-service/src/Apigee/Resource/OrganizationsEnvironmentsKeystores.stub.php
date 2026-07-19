@@ -21,63 +21,73 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee\Resource;
-
-/**
- * The "keystores" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apigeeService = new Google\Service\Apigee(...);
- *   $keystores = $apigeeService->organizations_environments_keystores;
- *  </code>
- */
-class OrganizationsEnvironmentsKeystores extends \Google\Service\Resource
-{
+namespace Google\Service\Apigee\Resource {
+    use Google\Service\Apigee\GoogleCloudApigeeV1Keystore;
     /**
-     * Creates a keystore or truststore. - Keystore: Contains certificates and their
-     * associated keys. - Truststore: Contains trusted certificates used to validate
-     * a server's certificate. These certificates are typically self-signed
-     * certificates or certificates that are not signed by a trusted CA.
-     * (keystores.create)
-     *
-     * @param string $parent Required. Name of the environment in which to create
-     * the keystore. Use the following format in your request:
-     * `organizations/{org}/environments/{env}`
-     * @param GoogleCloudApigeeV1Keystore $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string name Optional. Name of the keystore. Overrides the value in
-     * Keystore.
-     * @return GoogleCloudApigeeV1Keystore
-     * @throws \Google\Service\Exception
+     * The "keystores" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apigeeService = new Google\Service\Apigee(...);
+     *   $keystores = $apigeeService->organizations_environments_keystores;
+     *  </code>
      */
-    public function create($parent, GoogleCloudApigeeV1Keystore $postBody, $optParams = [])
+    class OrganizationsEnvironmentsKeystores extends \Google\Service\Resource
     {
+        /**
+         * Creates a keystore or truststore. - Keystore: Contains certificates and their
+         * associated keys. - Truststore: Contains trusted certificates used to validate
+         * a server's certificate. These certificates are typically self-signed
+         * certificates or certificates that are not signed by a trusted CA.
+         * (keystores.create)
+         *
+         * @param string $parent Required. Name of the environment in which to create
+         * the keystore. Use the following format in your request:
+         * `organizations/{org}/environments/{env}`
+         * @param GoogleCloudApigeeV1Keystore $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string name Optional. Name of the keystore. Overrides the value in
+         * Keystore.
+         * @return GoogleCloudApigeeV1Keystore
+         * @throws \Google\Service\Exception
+         */
+        public function create($parent, GoogleCloudApigeeV1Keystore $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a keystore or truststore. (keystores.delete)
+         *
+         * @param string $name Required. Name of the keystore. Use the following format
+         * in your request:
+         * `organizations/{org}/environments/{env}/keystores/{keystore}`
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1Keystore
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets a keystore or truststore. (keystores.get)
+         *
+         * @param string $name Required. Name of the keystore. Use the following format
+         * in your request:
+         * `organizations/{org}/environments/{env}/keystores/{keystore}`.
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudApigeeV1Keystore
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a keystore or truststore. (keystores.delete)
-     *
-     * @param string $name Required. Name of the keystore. Use the following format
-     * in your request:
-     * `organizations/{org}/environments/{env}/keystores/{keystore}`
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1Keystore
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Apigee\Resource\OrganizationsEnvironmentsKeystores registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets a keystore or truststore. (keystores.get)
-     *
-     * @param string $name Required. Name of the keystore. Use the following format
-     * in your request:
-     * `organizations/{org}/environments/{env}/keystores/{keystore}`.
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudApigeeV1Keystore
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
+    class Google_Service_Apigee_Resource_OrganizationsEnvironmentsKeystores extends \Google\Service\Apigee\Resource\OrganizationsEnvironmentsKeystores
     {
     }
 }

@@ -21,30 +21,40 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\YouTube\Resource;
-
-/**
- * The "membershipsLevels" collection of methods.
- * Typical usage is:
- *  <code>
- *   $youtubeService = new Google\Service\YouTube(...);
- *   $membershipsLevels = $youtubeService->membershipsLevels;
- *  </code>
- */
-class MembershipsLevels extends \Google\Service\Resource
-{
+namespace Google\Service\YouTube\Resource {
+    use Google\Service\YouTube\MembershipsLevelListResponse;
     /**
-     * Retrieves a list of all pricing levels offered by a creator to the fans.
-     * (membershipsLevels.listMembershipsLevels)
-     *
-     * @param string|array $part The *part* parameter specifies the membershipsLevel
-     * resource parts that the API response will include. Supported values are id
-     * and snippet.
-     * @param array $optParams Optional parameters.
-     * @return MembershipsLevelListResponse
-     * @throws \Google\Service\Exception
+     * The "membershipsLevels" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $youtubeService = new Google\Service\YouTube(...);
+     *   $membershipsLevels = $youtubeService->membershipsLevels;
+     *  </code>
      */
-    public function listMembershipsLevels($part, $optParams = [])
+    class MembershipsLevels extends \Google\Service\Resource
+    {
+        /**
+         * Retrieves a list of all pricing levels offered by a creator to the fans.
+         * (membershipsLevels.listMembershipsLevels)
+         *
+         * @param string|array $part The *part* parameter specifies the membershipsLevel
+         * resource parts that the API response will include. Supported values are id
+         * and snippet.
+         * @param array $optParams Optional parameters.
+         * @return MembershipsLevelListResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listMembershipsLevels($part, $optParams = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\YouTube\Resource\MembershipsLevels registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_YouTube_Resource_MembershipsLevels extends \Google\Service\YouTube\Resource\MembershipsLevels
     {
     }
 }

@@ -21,113 +21,122 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Connectors;
-
-class EntityType extends \Google\Collection
-{
-    protected $collection_key = 'operations';
-    /**
-     * @var string
-     */
-    public $defaultSortBy;
-    protected $fieldsType = Field::class;
-    protected $fieldsDataType = 'array';
-    protected $jsonSchemaType = JsonSchema::class;
-    protected $jsonSchemaDataType = '';
-    /**
-     * Metadata like service latency, etc.
-     *
-     * @var array[]
-     */
-    public $metadata;
-    /**
-     * The name of the entity type.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string[]
-     */
-    public $operations;
-    /**
-     * @param string $defaultSortBy
-     */
-    public function setDefaultSortBy($defaultSortBy)
+namespace Google\Service\Connectors {
+    class EntityType extends \Google\Collection
     {
+        protected $collection_key = 'operations';
+        /**
+         * @var string
+         */
+        public $defaultSortBy;
+        protected $fieldsType = Field::class;
+        protected $fieldsDataType = 'array';
+        protected $jsonSchemaType = JsonSchema::class;
+        protected $jsonSchemaDataType = '';
+        /**
+         * Metadata like service latency, etc.
+         *
+         * @var array[]
+         */
+        public $metadata;
+        /**
+         * The name of the entity type.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string[]
+         */
+        public $operations;
+        /**
+         * @param string $defaultSortBy
+         */
+        public function setDefaultSortBy($defaultSortBy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefaultSortBy()
+        {
+        }
+        /**
+         * List containing metadata information about each field of the entity type.
+         *
+         * @param Field[] $fields
+         */
+        public function setFields($fields)
+        {
+        }
+        /**
+         * @return Field[]
+         */
+        public function getFields()
+        {
+        }
+        /**
+         * JsonSchema representation of this entity's schema
+         *
+         * @param JsonSchema $jsonSchema
+         */
+        public function setJsonSchema(JsonSchema $jsonSchema)
+        {
+        }
+        /**
+         * @return JsonSchema
+         */
+        public function getJsonSchema()
+        {
+        }
+        /**
+         * Metadata like service latency, etc.
+         *
+         * @param array[] $metadata
+         */
+        public function setMetadata($metadata)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getMetadata()
+        {
+        }
+        /**
+         * The name of the entity type.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string[] $operations
+         */
+        public function setOperations($operations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getOperations()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Connectors\EntityType registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefaultSortBy()
-    {
-    }
-    /**
-     * List containing metadata information about each field of the entity type.
-     *
-     * @param Field[] $fields
-     */
-    public function setFields($fields)
-    {
-    }
-    /**
-     * @return Field[]
-     */
-    public function getFields()
-    {
-    }
-    /**
-     * JsonSchema representation of this entity's schema
-     *
-     * @param JsonSchema $jsonSchema
-     */
-    public function setJsonSchema(JsonSchema $jsonSchema)
-    {
-    }
-    /**
-     * @return JsonSchema
-     */
-    public function getJsonSchema()
-    {
-    }
-    /**
-     * Metadata like service latency, etc.
-     *
-     * @param array[] $metadata
-     */
-    public function setMetadata($metadata)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getMetadata()
-    {
-    }
-    /**
-     * The name of the entity type.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string[] $operations
-     */
-    public function setOperations($operations)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getOperations()
+    class Google_Service_Connectors_EntityType extends \Google\Service\Connectors\EntityType
     {
     }
 }

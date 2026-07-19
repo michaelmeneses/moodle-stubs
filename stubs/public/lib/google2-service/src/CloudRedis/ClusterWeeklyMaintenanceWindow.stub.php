@@ -21,79 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRedis;
-
-class ClusterWeeklyMaintenanceWindow extends \Google\Model
-{
-    /**
-     * The day of the week is unspecified.
-     */
-    public const DAY_DAY_OF_WEEK_UNSPECIFIED = 'DAY_OF_WEEK_UNSPECIFIED';
-    /**
-     * Monday
-     */
-    public const DAY_MONDAY = 'MONDAY';
-    /**
-     * Tuesday
-     */
-    public const DAY_TUESDAY = 'TUESDAY';
-    /**
-     * Wednesday
-     */
-    public const DAY_WEDNESDAY = 'WEDNESDAY';
-    /**
-     * Thursday
-     */
-    public const DAY_THURSDAY = 'THURSDAY';
-    /**
-     * Friday
-     */
-    public const DAY_FRIDAY = 'FRIDAY';
-    /**
-     * Saturday
-     */
-    public const DAY_SATURDAY = 'SATURDAY';
-    /**
-     * Sunday
-     */
-    public const DAY_SUNDAY = 'SUNDAY';
-    /**
-     * Optional. Allows to define schedule that runs specified day of the week.
-     *
-     * @var string
-     */
-    public $day;
-    protected $startTimeType = TimeOfDay::class;
-    protected $startTimeDataType = '';
-    /**
-     * Optional. Allows to define schedule that runs specified day of the week.
-     *
-     * Accepted values: DAY_OF_WEEK_UNSPECIFIED, MONDAY, TUESDAY, WEDNESDAY,
-     * THURSDAY, FRIDAY, SATURDAY, SUNDAY
-     *
-     * @param self::DAY_* $day
-     */
-    public function setDay($day)
+namespace Google\Service\CloudRedis {
+    class ClusterWeeklyMaintenanceWindow extends \Google\Model
     {
+        /**
+         * The day of the week is unspecified.
+         */
+        public const DAY_DAY_OF_WEEK_UNSPECIFIED = 'DAY_OF_WEEK_UNSPECIFIED';
+        /**
+         * Monday
+         */
+        public const DAY_MONDAY = 'MONDAY';
+        /**
+         * Tuesday
+         */
+        public const DAY_TUESDAY = 'TUESDAY';
+        /**
+         * Wednesday
+         */
+        public const DAY_WEDNESDAY = 'WEDNESDAY';
+        /**
+         * Thursday
+         */
+        public const DAY_THURSDAY = 'THURSDAY';
+        /**
+         * Friday
+         */
+        public const DAY_FRIDAY = 'FRIDAY';
+        /**
+         * Saturday
+         */
+        public const DAY_SATURDAY = 'SATURDAY';
+        /**
+         * Sunday
+         */
+        public const DAY_SUNDAY = 'SUNDAY';
+        /**
+         * Optional. Allows to define schedule that runs specified day of the week.
+         *
+         * @var string
+         */
+        public $day;
+        protected $startTimeType = TimeOfDay::class;
+        protected $startTimeDataType = '';
+        /**
+         * Optional. Allows to define schedule that runs specified day of the week.
+         *
+         * Accepted values: DAY_OF_WEEK_UNSPECIFIED, MONDAY, TUESDAY, WEDNESDAY,
+         * THURSDAY, FRIDAY, SATURDAY, SUNDAY
+         *
+         * @param self::DAY_* $day
+         */
+        public function setDay($day)
+        {
+        }
+        /**
+         * @return self::DAY_*
+         */
+        public function getDay()
+        {
+        }
+        /**
+         * Optional. Start time of the window in UTC.
+         *
+         * @param TimeOfDay $startTime
+         */
+        public function setStartTime(TimeOfDay $startTime)
+        {
+        }
+        /**
+         * @return TimeOfDay
+         */
+        public function getStartTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::DAY_*
+     * Runtime class alias of \Google\Service\CloudRedis\ClusterWeeklyMaintenanceWindow registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDay()
-    {
-    }
-    /**
-     * Optional. Start time of the window in UTC.
-     *
-     * @param TimeOfDay $startTime
-     */
-    public function setStartTime(TimeOfDay $startTime)
-    {
-    }
-    /**
-     * @return TimeOfDay
-     */
-    public function getStartTime()
+    class Google_Service_CloudRedis_ClusterWeeklyMaintenanceWindow extends \Google\Service\CloudRedis\ClusterWeeklyMaintenanceWindow
     {
     }
 }

@@ -8,6 +8,8 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Style;
 
+use PhpOffice\PhpSpreadsheet\Chart\ChartColor;
+use PhpOffice\PhpSpreadsheet\Theme;
 class Font extends Supervisor
 {
     // Underline types

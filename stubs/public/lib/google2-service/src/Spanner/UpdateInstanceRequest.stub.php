@@ -21,51 +21,60 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Spanner;
-
-class UpdateInstanceRequest extends \Google\Model
-{
-    /**
-     * Required. A mask specifying which fields in Instance should be updated. The
-     * field mask must always be specified; this prevents any future fields in
-     * Instance from being erased accidentally by clients that do not know about
-     * them.
-     *
-     * @var string
-     */
-    public $fieldMask;
-    protected $instanceType = Instance::class;
-    protected $instanceDataType = '';
-    /**
-     * Required. A mask specifying which fields in Instance should be updated. The
-     * field mask must always be specified; this prevents any future fields in
-     * Instance from being erased accidentally by clients that do not know about
-     * them.
-     *
-     * @param string $fieldMask
-     */
-    public function setFieldMask($fieldMask)
+namespace Google\Service\Spanner {
+    class UpdateInstanceRequest extends \Google\Model
     {
+        /**
+         * Required. A mask specifying which fields in Instance should be updated. The
+         * field mask must always be specified; this prevents any future fields in
+         * Instance from being erased accidentally by clients that do not know about
+         * them.
+         *
+         * @var string
+         */
+        public $fieldMask;
+        protected $instanceType = Instance::class;
+        protected $instanceDataType = '';
+        /**
+         * Required. A mask specifying which fields in Instance should be updated. The
+         * field mask must always be specified; this prevents any future fields in
+         * Instance from being erased accidentally by clients that do not know about
+         * them.
+         *
+         * @param string $fieldMask
+         */
+        public function setFieldMask($fieldMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFieldMask()
+        {
+        }
+        /**
+         * Required. The instance to update, which must always include the instance
+         * name. Otherwise, only fields mentioned in field_mask need be included.
+         *
+         * @param Instance $instance
+         */
+        public function setInstance(Instance $instance)
+        {
+        }
+        /**
+         * @return Instance
+         */
+        public function getInstance()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Spanner\UpdateInstanceRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFieldMask()
-    {
-    }
-    /**
-     * Required. The instance to update, which must always include the instance
-     * name. Otherwise, only fields mentioned in field_mask need be included.
-     *
-     * @param Instance $instance
-     */
-    public function setInstance(Instance $instance)
-    {
-    }
-    /**
-     * @return Instance
-     */
-    public function getInstance()
+    class Google_Service_Spanner_UpdateInstanceRequest extends \Google\Service\Spanner\UpdateInstanceRequest
     {
     }
 }

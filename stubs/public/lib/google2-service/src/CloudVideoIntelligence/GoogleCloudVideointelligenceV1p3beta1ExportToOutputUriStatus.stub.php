@@ -21,58 +21,67 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudVideoIntelligence;
-
-class GoogleCloudVideointelligenceV1p3beta1ExportToOutputUriStatus extends \Google\Model
-{
-    /**
-     * Default value.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * Export succeeded.
-     */
-    public const STATE_SUCCEEDED = 'SUCCEEDED';
-    /**
-     * Export failed.
-     */
-    public const STATE_FAILED = 'FAILED';
-    /**
-     * Output only. State of the `output_uri` export.
-     *
-     * @var string
-     */
-    public $state;
-    protected $statusType = GoogleRpcStatus::class;
-    protected $statusDataType = '';
-    /**
-     * Output only. State of the `output_uri` export.
-     *
-     * Accepted values: STATE_UNSPECIFIED, SUCCEEDED, FAILED
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
+namespace Google\Service\CloudVideoIntelligence {
+    class GoogleCloudVideointelligenceV1p3beta1ExportToOutputUriStatus extends \Google\Model
     {
+        /**
+         * Default value.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * Export succeeded.
+         */
+        public const STATE_SUCCEEDED = 'SUCCEEDED';
+        /**
+         * Export failed.
+         */
+        public const STATE_FAILED = 'FAILED';
+        /**
+         * Output only. State of the `output_uri` export.
+         *
+         * @var string
+         */
+        public $state;
+        protected $statusType = GoogleRpcStatus::class;
+        protected $statusDataType = '';
+        /**
+         * Output only. State of the `output_uri` export.
+         *
+         * Accepted values: STATE_UNSPECIFIED, SUCCEEDED, FAILED
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Output only. Only set if state is FAILED.
+         *
+         * @param GoogleRpcStatus $status
+         */
+        public function setStatus(GoogleRpcStatus $status)
+        {
+        }
+        /**
+         * @return GoogleRpcStatus
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::STATE_*
+     * Runtime class alias of \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1p3beta1ExportToOutputUriStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getState()
-    {
-    }
-    /**
-     * Output only. Only set if state is FAILED.
-     *
-     * @param GoogleRpcStatus $status
-     */
-    public function setStatus(GoogleRpcStatus $status)
-    {
-    }
-    /**
-     * @return GoogleRpcStatus
-     */
-    public function getStatus()
+    class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1ExportToOutputUriStatus extends \Google\Service\CloudVideoIntelligence\GoogleCloudVideointelligenceV1p3beta1ExportToOutputUriStatus
     {
     }
 }

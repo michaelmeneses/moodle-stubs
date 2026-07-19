@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\VMMigrationService;
-
-class DiskImageDefaults extends \Google\Model
-{
-    /**
-     * Required. The Image resource used when creating the disk.
-     *
-     * @var string
-     */
-    public $sourceImage;
-    /**
-     * Required. The Image resource used when creating the disk.
-     *
-     * @param string $sourceImage
-     */
-    public function setSourceImage($sourceImage)
+namespace Google\Service\VMMigrationService {
+    class DiskImageDefaults extends \Google\Model
     {
+        /**
+         * Required. The Image resource used when creating the disk.
+         *
+         * @var string
+         */
+        public $sourceImage;
+        /**
+         * Required. The Image resource used when creating the disk.
+         *
+         * @param string $sourceImage
+         */
+        public function setSourceImage($sourceImage)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSourceImage()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\VMMigrationService\DiskImageDefaults registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSourceImage()
+    class Google_Service_VMMigrationService_DiskImageDefaults extends \Google\Service\VMMigrationService\DiskImageDefaults
     {
     }
 }

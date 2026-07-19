@@ -21,74 +21,83 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseAppHosting;
-
-class RolloutPolicy extends \Google\Model
-{
-    /**
-     * If set, specifies a branch that triggers a new build to be started with
-     * this policy. Otherwise, no automatic rollouts will happen.
-     *
-     * @var string
-     */
-    public $codebaseBranch;
-    /**
-     * Optional. A flag that, if true, prevents automatic rollouts from being
-     * created via this RolloutPolicy.
-     *
-     * @var bool
-     */
-    public $disabled;
-    /**
-     * Output only. If `disabled` is set, the time at which the automatic rollouts
-     * were disabled.
-     *
-     * @var string
-     */
-    public $disabledTime;
-    /**
-     * If set, specifies a branch that triggers a new build to be started with
-     * this policy. Otherwise, no automatic rollouts will happen.
-     *
-     * @param string $codebaseBranch
-     */
-    public function setCodebaseBranch($codebaseBranch)
+namespace Google\Service\FirebaseAppHosting {
+    class RolloutPolicy extends \Google\Model
     {
+        /**
+         * If set, specifies a branch that triggers a new build to be started with
+         * this policy. Otherwise, no automatic rollouts will happen.
+         *
+         * @var string
+         */
+        public $codebaseBranch;
+        /**
+         * Optional. A flag that, if true, prevents automatic rollouts from being
+         * created via this RolloutPolicy.
+         *
+         * @var bool
+         */
+        public $disabled;
+        /**
+         * Output only. If `disabled` is set, the time at which the automatic rollouts
+         * were disabled.
+         *
+         * @var string
+         */
+        public $disabledTime;
+        /**
+         * If set, specifies a branch that triggers a new build to be started with
+         * this policy. Otherwise, no automatic rollouts will happen.
+         *
+         * @param string $codebaseBranch
+         */
+        public function setCodebaseBranch($codebaseBranch)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCodebaseBranch()
+        {
+        }
+        /**
+         * Optional. A flag that, if true, prevents automatic rollouts from being
+         * created via this RolloutPolicy.
+         *
+         * @param bool $disabled
+         */
+        public function setDisabled($disabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisabled()
+        {
+        }
+        /**
+         * Output only. If `disabled` is set, the time at which the automatic rollouts
+         * were disabled.
+         *
+         * @param string $disabledTime
+         */
+        public function setDisabledTime($disabledTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDisabledTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\FirebaseAppHosting\RolloutPolicy registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCodebaseBranch()
-    {
-    }
-    /**
-     * Optional. A flag that, if true, prevents automatic rollouts from being
-     * created via this RolloutPolicy.
-     *
-     * @param bool $disabled
-     */
-    public function setDisabled($disabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDisabled()
-    {
-    }
-    /**
-     * Output only. If `disabled` is set, the time at which the automatic rollouts
-     * were disabled.
-     *
-     * @param string $disabledTime
-     */
-    public function setDisabledTime($disabledTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDisabledTime()
+    class Google_Service_FirebaseAppHosting_RolloutPolicy extends \Google\Service\FirebaseAppHosting\RolloutPolicy
     {
     }
 }

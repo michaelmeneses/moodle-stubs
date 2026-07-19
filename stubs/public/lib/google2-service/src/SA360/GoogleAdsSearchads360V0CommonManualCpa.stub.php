@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SA360;
-
-class GoogleAdsSearchads360V0CommonManualCpa extends \Google\Model
-{
+namespace Google\Service\SA360 {
+    class GoogleAdsSearchads360V0CommonManualCpa extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\SA360\GoogleAdsSearchads360V0CommonManualCpa registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_SA360_GoogleAdsSearchads360V0CommonManualCpa extends \Google\Service\SA360\GoogleAdsSearchads360V0CommonManualCpa
+    {
+    }
 }

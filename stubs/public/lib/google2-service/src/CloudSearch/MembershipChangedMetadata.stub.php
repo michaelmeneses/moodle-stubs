@@ -21,110 +21,119 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class MembershipChangedMetadata extends \Google\Collection
-{
-    protected $collection_key = 'affectedMemberships';
-    protected $affectedMemberProfilesType = Member::class;
-    protected $affectedMemberProfilesDataType = 'array';
-    protected $affectedMembersType = MemberId::class;
-    protected $affectedMembersDataType = 'array';
-    protected $affectedMembershipsType = AffectedMembership::class;
-    protected $affectedMembershipsDataType = 'array';
-    protected $initiatorDataType = '';
-    protected $initiatorProfileType = User::class;
-    protected $initiatorProfileDataType = '';
-    /**
-     * @var string
-     */
-    public $initiatorType;
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param Member[]
-     */
-    public function setAffectedMemberProfiles($affectedMemberProfiles)
+namespace Google\Service\CloudSearch {
+    class MembershipChangedMetadata extends \Google\Collection
     {
+        protected $collection_key = 'affectedMemberships';
+        protected $affectedMemberProfilesType = Member::class;
+        protected $affectedMemberProfilesDataType = 'array';
+        protected $affectedMembersType = MemberId::class;
+        protected $affectedMembersDataType = 'array';
+        protected $affectedMembershipsType = AffectedMembership::class;
+        protected $affectedMembershipsDataType = 'array';
+        protected $initiatorDataType = '';
+        protected $initiatorProfileType = User::class;
+        protected $initiatorProfileDataType = '';
+        /**
+         * @var string
+         */
+        public $initiatorType;
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param Member[]
+         */
+        public function setAffectedMemberProfiles($affectedMemberProfiles)
+        {
+        }
+        /**
+         * @return Member[]
+         */
+        public function getAffectedMemberProfiles()
+        {
+        }
+        /**
+         * @param MemberId[]
+         */
+        public function setAffectedMembers($affectedMembers)
+        {
+        }
+        /**
+         * @return MemberId[]
+         */
+        public function getAffectedMembers()
+        {
+        }
+        /**
+         * @param AffectedMembership[]
+         */
+        public function setAffectedMemberships($affectedMemberships)
+        {
+        }
+        /**
+         * @return AffectedMembership[]
+         */
+        public function getAffectedMemberships()
+        {
+        }
+        /**
+         * @param UserId
+         */
+        public function setInitiator(UserId $initiator)
+        {
+        }
+        /**
+         * @return UserId
+         */
+        public function getInitiator()
+        {
+        }
+        /**
+         * @param User
+         */
+        public function setInitiatorProfile(User $initiatorProfile)
+        {
+        }
+        /**
+         * @return User
+         */
+        public function getInitiatorProfile()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setInitiatorType($initiatorType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInitiatorType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Member[]
+     * Runtime class alias of \Google\Service\CloudSearch\MembershipChangedMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAffectedMemberProfiles()
-    {
-    }
-    /**
-     * @param MemberId[]
-     */
-    public function setAffectedMembers($affectedMembers)
-    {
-    }
-    /**
-     * @return MemberId[]
-     */
-    public function getAffectedMembers()
-    {
-    }
-    /**
-     * @param AffectedMembership[]
-     */
-    public function setAffectedMemberships($affectedMemberships)
-    {
-    }
-    /**
-     * @return AffectedMembership[]
-     */
-    public function getAffectedMemberships()
-    {
-    }
-    /**
-     * @param UserId
-     */
-    public function setInitiator(UserId $initiator)
-    {
-    }
-    /**
-     * @return UserId
-     */
-    public function getInitiator()
-    {
-    }
-    /**
-     * @param User
-     */
-    public function setInitiatorProfile(User $initiatorProfile)
-    {
-    }
-    /**
-     * @return User
-     */
-    public function getInitiatorProfile()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setInitiatorType($initiatorType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInitiatorType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_CloudSearch_MembershipChangedMetadata extends \Google\Service\CloudSearch\MembershipChangedMetadata
     {
     }
 }

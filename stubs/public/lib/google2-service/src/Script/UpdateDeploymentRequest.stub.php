@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Script;
-
-class UpdateDeploymentRequest extends \Google\Model
-{
-    protected $deploymentConfigType = DeploymentConfig::class;
-    protected $deploymentConfigDataType = '';
-    /**
-     * The deployment configuration.
-     *
-     * @param DeploymentConfig $deploymentConfig
-     */
-    public function setDeploymentConfig(DeploymentConfig $deploymentConfig)
+namespace Google\Service\Script {
+    class UpdateDeploymentRequest extends \Google\Model
     {
+        protected $deploymentConfigType = DeploymentConfig::class;
+        protected $deploymentConfigDataType = '';
+        /**
+         * The deployment configuration.
+         *
+         * @param DeploymentConfig $deploymentConfig
+         */
+        public function setDeploymentConfig(DeploymentConfig $deploymentConfig)
+        {
+        }
+        /**
+         * @return DeploymentConfig
+         */
+        public function getDeploymentConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DeploymentConfig
+     * Runtime class alias of \Google\Service\Script\UpdateDeploymentRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDeploymentConfig()
+    class Google_Service_Script_UpdateDeploymentRequest extends \Google\Service\Script\UpdateDeploymentRequest
     {
     }
 }

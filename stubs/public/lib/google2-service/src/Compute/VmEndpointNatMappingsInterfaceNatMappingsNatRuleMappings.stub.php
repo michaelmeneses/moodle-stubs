@@ -21,129 +21,138 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class VmEndpointNatMappingsInterfaceNatMappingsNatRuleMappings extends \Google\Collection
-{
-    protected $collection_key = 'natIpPortRanges';
-    /**
-     * Output only. List of all drain IP:port-range mappings assigned to this
-     * interface by this rule. These ranges are inclusive, that is, both the first
-     * and the last ports can be used for NAT. Example: ["2.2.2.2:12345-12355",
-     * "1.1.1.1:2234-2234"].
-     *
-     * @var string[]
-     */
-    public $drainNatIpPortRanges;
-    /**
-     * Output only. A list of all IP:port-range mappings assigned to this
-     * interface by this rule. These ranges are inclusive, that is, both the first
-     * and the last ports can be used for NAT. Example: ["2.2.2.2:12345-12355",
-     * "1.1.1.1:2234-2234"].
-     *
-     * @var string[]
-     */
-    public $natIpPortRanges;
-    /**
-     * Output only. Total number of drain ports across all NAT IPs allocated to
-     * this interface by this rule. It equals the aggregated port number in the
-     * field drain_nat_ip_port_ranges.
-     *
-     * @var int
-     */
-    public $numTotalDrainNatPorts;
-    /**
-     * Output only. Total number of ports across all NAT IPs allocated to this
-     * interface by this rule. It equals the aggregated port number in the field
-     * nat_ip_port_ranges.
-     *
-     * @var int
-     */
-    public $numTotalNatPorts;
-    /**
-     * Output only. Rule number of the NAT Rule.
-     *
-     * @var int
-     */
-    public $ruleNumber;
-    /**
-     * Output only. List of all drain IP:port-range mappings assigned to this
-     * interface by this rule. These ranges are inclusive, that is, both the first
-     * and the last ports can be used for NAT. Example: ["2.2.2.2:12345-12355",
-     * "1.1.1.1:2234-2234"].
-     *
-     * @param string[] $drainNatIpPortRanges
-     */
-    public function setDrainNatIpPortRanges($drainNatIpPortRanges)
+namespace Google\Service\Compute {
+    class VmEndpointNatMappingsInterfaceNatMappingsNatRuleMappings extends \Google\Collection
     {
+        protected $collection_key = 'natIpPortRanges';
+        /**
+         * Output only. List of all drain IP:port-range mappings assigned to this
+         * interface by this rule. These ranges are inclusive, that is, both the first
+         * and the last ports can be used for NAT. Example: ["2.2.2.2:12345-12355",
+         * "1.1.1.1:2234-2234"].
+         *
+         * @var string[]
+         */
+        public $drainNatIpPortRanges;
+        /**
+         * Output only. A list of all IP:port-range mappings assigned to this
+         * interface by this rule. These ranges are inclusive, that is, both the first
+         * and the last ports can be used for NAT. Example: ["2.2.2.2:12345-12355",
+         * "1.1.1.1:2234-2234"].
+         *
+         * @var string[]
+         */
+        public $natIpPortRanges;
+        /**
+         * Output only. Total number of drain ports across all NAT IPs allocated to
+         * this interface by this rule. It equals the aggregated port number in the
+         * field drain_nat_ip_port_ranges.
+         *
+         * @var int
+         */
+        public $numTotalDrainNatPorts;
+        /**
+         * Output only. Total number of ports across all NAT IPs allocated to this
+         * interface by this rule. It equals the aggregated port number in the field
+         * nat_ip_port_ranges.
+         *
+         * @var int
+         */
+        public $numTotalNatPorts;
+        /**
+         * Output only. Rule number of the NAT Rule.
+         *
+         * @var int
+         */
+        public $ruleNumber;
+        /**
+         * Output only. List of all drain IP:port-range mappings assigned to this
+         * interface by this rule. These ranges are inclusive, that is, both the first
+         * and the last ports can be used for NAT. Example: ["2.2.2.2:12345-12355",
+         * "1.1.1.1:2234-2234"].
+         *
+         * @param string[] $drainNatIpPortRanges
+         */
+        public function setDrainNatIpPortRanges($drainNatIpPortRanges)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getDrainNatIpPortRanges()
+        {
+        }
+        /**
+         * Output only. A list of all IP:port-range mappings assigned to this
+         * interface by this rule. These ranges are inclusive, that is, both the first
+         * and the last ports can be used for NAT. Example: ["2.2.2.2:12345-12355",
+         * "1.1.1.1:2234-2234"].
+         *
+         * @param string[] $natIpPortRanges
+         */
+        public function setNatIpPortRanges($natIpPortRanges)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getNatIpPortRanges()
+        {
+        }
+        /**
+         * Output only. Total number of drain ports across all NAT IPs allocated to
+         * this interface by this rule. It equals the aggregated port number in the
+         * field drain_nat_ip_port_ranges.
+         *
+         * @param int $numTotalDrainNatPorts
+         */
+        public function setNumTotalDrainNatPorts($numTotalDrainNatPorts)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumTotalDrainNatPorts()
+        {
+        }
+        /**
+         * Output only. Total number of ports across all NAT IPs allocated to this
+         * interface by this rule. It equals the aggregated port number in the field
+         * nat_ip_port_ranges.
+         *
+         * @param int $numTotalNatPorts
+         */
+        public function setNumTotalNatPorts($numTotalNatPorts)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getNumTotalNatPorts()
+        {
+        }
+        /**
+         * Output only. Rule number of the NAT Rule.
+         *
+         * @param int $ruleNumber
+         */
+        public function setRuleNumber($ruleNumber)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getRuleNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Compute\VmEndpointNatMappingsInterfaceNatMappingsNatRuleMappings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDrainNatIpPortRanges()
-    {
-    }
-    /**
-     * Output only. A list of all IP:port-range mappings assigned to this
-     * interface by this rule. These ranges are inclusive, that is, both the first
-     * and the last ports can be used for NAT. Example: ["2.2.2.2:12345-12355",
-     * "1.1.1.1:2234-2234"].
-     *
-     * @param string[] $natIpPortRanges
-     */
-    public function setNatIpPortRanges($natIpPortRanges)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getNatIpPortRanges()
-    {
-    }
-    /**
-     * Output only. Total number of drain ports across all NAT IPs allocated to
-     * this interface by this rule. It equals the aggregated port number in the
-     * field drain_nat_ip_port_ranges.
-     *
-     * @param int $numTotalDrainNatPorts
-     */
-    public function setNumTotalDrainNatPorts($numTotalDrainNatPorts)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumTotalDrainNatPorts()
-    {
-    }
-    /**
-     * Output only. Total number of ports across all NAT IPs allocated to this
-     * interface by this rule. It equals the aggregated port number in the field
-     * nat_ip_port_ranges.
-     *
-     * @param int $numTotalNatPorts
-     */
-    public function setNumTotalNatPorts($numTotalNatPorts)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getNumTotalNatPorts()
-    {
-    }
-    /**
-     * Output only. Rule number of the NAT Rule.
-     *
-     * @param int $ruleNumber
-     */
-    public function setRuleNumber($ruleNumber)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getRuleNumber()
+    class Google_Service_Compute_VmEndpointNatMappingsInterfaceNatMappingsNatRuleMappings extends \Google\Service\Compute\VmEndpointNatMappingsInterfaceNatMappingsNatRuleMappings
     {
     }
 }

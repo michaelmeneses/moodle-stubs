@@ -21,137 +21,146 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1MemoryRevision extends \Google\Collection
-{
-    protected $collection_key = 'extractedMemories';
-    /**
-     * Output only. Timestamp when this Memory Revision was created.
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. Timestamp of when this resource is considered expired.
-     *
-     * @var string
-     */
-    public $expireTime;
-    protected $extractedMemoriesType = GoogleCloudAiplatformV1IntermediateExtractedMemory::class;
-    protected $extractedMemoriesDataType = 'array';
-    /**
-     * Output only. The fact of the Memory Revision. This corresponds to the
-     * `fact` field of the parent Memory at the time of revision creation.
-     *
-     * @var string
-     */
-    public $fact;
-    /**
-     * Output only. The labels of the Memory Revision. These labels are applied to
-     * the MemoryRevision when it is created based on
-     * `GenerateMemoriesRequest.revision_labels`.
-     *
-     * @var string[]
-     */
-    public $labels;
-    /**
-     * Identifier. The resource name of the Memory Revision. Format: `projects/{pr
-     * oject}/locations/{location}/reasoningEngines/{reasoning_engine}/memories/{m
-     * emory}/revisions/{memory_revision}`
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. Timestamp when this Memory Revision was created.
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1MemoryRevision extends \Google\Collection
     {
+        protected $collection_key = 'extractedMemories';
+        /**
+         * Output only. Timestamp when this Memory Revision was created.
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. Timestamp of when this resource is considered expired.
+         *
+         * @var string
+         */
+        public $expireTime;
+        protected $extractedMemoriesType = GoogleCloudAiplatformV1IntermediateExtractedMemory::class;
+        protected $extractedMemoriesDataType = 'array';
+        /**
+         * Output only. The fact of the Memory Revision. This corresponds to the
+         * `fact` field of the parent Memory at the time of revision creation.
+         *
+         * @var string
+         */
+        public $fact;
+        /**
+         * Output only. The labels of the Memory Revision. These labels are applied to
+         * the MemoryRevision when it is created based on
+         * `GenerateMemoriesRequest.revision_labels`.
+         *
+         * @var string[]
+         */
+        public $labels;
+        /**
+         * Identifier. The resource name of the Memory Revision. Format: `projects/{pr
+         * oject}/locations/{location}/reasoningEngines/{reasoning_engine}/memories/{m
+         * emory}/revisions/{memory_revision}`
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. Timestamp when this Memory Revision was created.
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. Timestamp of when this resource is considered expired.
+         *
+         * @param string $expireTime
+         */
+        public function setExpireTime($expireTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpireTime()
+        {
+        }
+        /**
+         * Output only. The extracted memories from the source content before
+         * consolidation when the memory was updated via GenerateMemories. This
+         * information was used to modify an existing Memory via Consolidation.
+         *
+         * @param GoogleCloudAiplatformV1IntermediateExtractedMemory[] $extractedMemories
+         */
+        public function setExtractedMemories($extractedMemories)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1IntermediateExtractedMemory[]
+         */
+        public function getExtractedMemories()
+        {
+        }
+        /**
+         * Output only. The fact of the Memory Revision. This corresponds to the
+         * `fact` field of the parent Memory at the time of revision creation.
+         *
+         * @param string $fact
+         */
+        public function setFact($fact)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getFact()
+        {
+        }
+        /**
+         * Output only. The labels of the Memory Revision. These labels are applied to
+         * the MemoryRevision when it is created based on
+         * `GenerateMemoriesRequest.revision_labels`.
+         *
+         * @param string[] $labels
+         */
+        public function setLabels($labels)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLabels()
+        {
+        }
+        /**
+         * Identifier. The resource name of the Memory Revision. Format: `projects/{pr
+         * oject}/locations/{location}/reasoningEngines/{reasoning_engine}/memories/{m
+         * emory}/revisions/{memory_revision}`
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1MemoryRevision registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. Timestamp of when this resource is considered expired.
-     *
-     * @param string $expireTime
-     */
-    public function setExpireTime($expireTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExpireTime()
-    {
-    }
-    /**
-     * Output only. The extracted memories from the source content before
-     * consolidation when the memory was updated via GenerateMemories. This
-     * information was used to modify an existing Memory via Consolidation.
-     *
-     * @param GoogleCloudAiplatformV1IntermediateExtractedMemory[] $extractedMemories
-     */
-    public function setExtractedMemories($extractedMemories)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1IntermediateExtractedMemory[]
-     */
-    public function getExtractedMemories()
-    {
-    }
-    /**
-     * Output only. The fact of the Memory Revision. This corresponds to the
-     * `fact` field of the parent Memory at the time of revision creation.
-     *
-     * @param string $fact
-     */
-    public function setFact($fact)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getFact()
-    {
-    }
-    /**
-     * Output only. The labels of the Memory Revision. These labels are applied to
-     * the MemoryRevision when it is created based on
-     * `GenerateMemoriesRequest.revision_labels`.
-     *
-     * @param string[] $labels
-     */
-    public function setLabels($labels)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLabels()
-    {
-    }
-    /**
-     * Identifier. The resource name of the Memory Revision. Format: `projects/{pr
-     * oject}/locations/{location}/reasoningEngines/{reasoning_engine}/memories/{m
-     * emory}/revisions/{memory_revision}`
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1MemoryRevision extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1MemoryRevision
     {
     }
 }

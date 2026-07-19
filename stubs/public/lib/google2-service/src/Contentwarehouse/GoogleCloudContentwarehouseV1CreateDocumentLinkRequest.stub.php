@@ -21,42 +21,51 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse;
-
-class GoogleCloudContentwarehouseV1CreateDocumentLinkRequest extends \Google\Model
-{
-    protected $documentLinkType = GoogleCloudContentwarehouseV1DocumentLink::class;
-    protected $documentLinkDataType = '';
-    protected $requestMetadataType = GoogleCloudContentwarehouseV1RequestMetadata::class;
-    protected $requestMetadataDataType = '';
-    /**
-     * Required. Document links associated with the source documents
-     * (source_document_id).
-     *
-     * @param GoogleCloudContentwarehouseV1DocumentLink $documentLink
-     */
-    public function setDocumentLink(GoogleCloudContentwarehouseV1DocumentLink $documentLink)
+namespace Google\Service\Contentwarehouse {
+    class GoogleCloudContentwarehouseV1CreateDocumentLinkRequest extends \Google\Model
     {
+        protected $documentLinkType = GoogleCloudContentwarehouseV1DocumentLink::class;
+        protected $documentLinkDataType = '';
+        protected $requestMetadataType = GoogleCloudContentwarehouseV1RequestMetadata::class;
+        protected $requestMetadataDataType = '';
+        /**
+         * Required. Document links associated with the source documents
+         * (source_document_id).
+         *
+         * @param GoogleCloudContentwarehouseV1DocumentLink $documentLink
+         */
+        public function setDocumentLink(GoogleCloudContentwarehouseV1DocumentLink $documentLink)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1DocumentLink
+         */
+        public function getDocumentLink()
+        {
+        }
+        /**
+         * The meta information collected about the document creator, used to enforce
+         * access control for the service.
+         *
+         * @param GoogleCloudContentwarehouseV1RequestMetadata $requestMetadata
+         */
+        public function setRequestMetadata(GoogleCloudContentwarehouseV1RequestMetadata $requestMetadata)
+        {
+        }
+        /**
+         * @return GoogleCloudContentwarehouseV1RequestMetadata
+         */
+        public function getRequestMetadata()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudContentwarehouseV1DocumentLink
+     * Runtime class alias of \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1CreateDocumentLinkRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocumentLink()
-    {
-    }
-    /**
-     * The meta information collected about the document creator, used to enforce
-     * access control for the service.
-     *
-     * @param GoogleCloudContentwarehouseV1RequestMetadata $requestMetadata
-     */
-    public function setRequestMetadata(GoogleCloudContentwarehouseV1RequestMetadata $requestMetadata)
-    {
-    }
-    /**
-     * @return GoogleCloudContentwarehouseV1RequestMetadata
-     */
-    public function getRequestMetadata()
+    class Google_Service_Contentwarehouse_GoogleCloudContentwarehouseV1CreateDocumentLinkRequest extends \Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1CreateDocumentLinkRequest
     {
     }
 }

@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GKEOnPrem;
-
-class BareMetalLoadBalancerConfig extends \Google\Model
-{
-    protected $bgpLbConfigType = BareMetalBgpLbConfig::class;
-    protected $bgpLbConfigDataType = '';
-    protected $manualLbConfigType = BareMetalManualLbConfig::class;
-    protected $manualLbConfigDataType = '';
-    protected $metalLbConfigType = BareMetalMetalLbConfig::class;
-    protected $metalLbConfigDataType = '';
-    protected $portConfigType = BareMetalPortConfig::class;
-    protected $portConfigDataType = '';
-    protected $vipConfigType = BareMetalVipConfig::class;
-    protected $vipConfigDataType = '';
-    /**
-     * Configuration for BGP typed load balancers. When set
-     * network_config.advanced_networking is automatically set to true.
-     *
-     * @param BareMetalBgpLbConfig $bgpLbConfig
-     */
-    public function setBgpLbConfig(BareMetalBgpLbConfig $bgpLbConfig)
+namespace Google\Service\GKEOnPrem {
+    class BareMetalLoadBalancerConfig extends \Google\Model
     {
+        protected $bgpLbConfigType = BareMetalBgpLbConfig::class;
+        protected $bgpLbConfigDataType = '';
+        protected $manualLbConfigType = BareMetalManualLbConfig::class;
+        protected $manualLbConfigDataType = '';
+        protected $metalLbConfigType = BareMetalMetalLbConfig::class;
+        protected $metalLbConfigDataType = '';
+        protected $portConfigType = BareMetalPortConfig::class;
+        protected $portConfigDataType = '';
+        protected $vipConfigType = BareMetalVipConfig::class;
+        protected $vipConfigDataType = '';
+        /**
+         * Configuration for BGP typed load balancers. When set
+         * network_config.advanced_networking is automatically set to true.
+         *
+         * @param BareMetalBgpLbConfig $bgpLbConfig
+         */
+        public function setBgpLbConfig(BareMetalBgpLbConfig $bgpLbConfig)
+        {
+        }
+        /**
+         * @return BareMetalBgpLbConfig
+         */
+        public function getBgpLbConfig()
+        {
+        }
+        /**
+         * Manually configured load balancers.
+         *
+         * @param BareMetalManualLbConfig $manualLbConfig
+         */
+        public function setManualLbConfig(BareMetalManualLbConfig $manualLbConfig)
+        {
+        }
+        /**
+         * @return BareMetalManualLbConfig
+         */
+        public function getManualLbConfig()
+        {
+        }
+        /**
+         * Configuration for MetalLB load balancers.
+         *
+         * @param BareMetalMetalLbConfig $metalLbConfig
+         */
+        public function setMetalLbConfig(BareMetalMetalLbConfig $metalLbConfig)
+        {
+        }
+        /**
+         * @return BareMetalMetalLbConfig
+         */
+        public function getMetalLbConfig()
+        {
+        }
+        /**
+         * Configures the ports that the load balancer will listen on.
+         *
+         * @param BareMetalPortConfig $portConfig
+         */
+        public function setPortConfig(BareMetalPortConfig $portConfig)
+        {
+        }
+        /**
+         * @return BareMetalPortConfig
+         */
+        public function getPortConfig()
+        {
+        }
+        /**
+         * The VIPs used by the load balancer.
+         *
+         * @param BareMetalVipConfig $vipConfig
+         */
+        public function setVipConfig(BareMetalVipConfig $vipConfig)
+        {
+        }
+        /**
+         * @return BareMetalVipConfig
+         */
+        public function getVipConfig()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BareMetalBgpLbConfig
+     * Runtime class alias of \Google\Service\GKEOnPrem\BareMetalLoadBalancerConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBgpLbConfig()
-    {
-    }
-    /**
-     * Manually configured load balancers.
-     *
-     * @param BareMetalManualLbConfig $manualLbConfig
-     */
-    public function setManualLbConfig(BareMetalManualLbConfig $manualLbConfig)
-    {
-    }
-    /**
-     * @return BareMetalManualLbConfig
-     */
-    public function getManualLbConfig()
-    {
-    }
-    /**
-     * Configuration for MetalLB load balancers.
-     *
-     * @param BareMetalMetalLbConfig $metalLbConfig
-     */
-    public function setMetalLbConfig(BareMetalMetalLbConfig $metalLbConfig)
-    {
-    }
-    /**
-     * @return BareMetalMetalLbConfig
-     */
-    public function getMetalLbConfig()
-    {
-    }
-    /**
-     * Configures the ports that the load balancer will listen on.
-     *
-     * @param BareMetalPortConfig $portConfig
-     */
-    public function setPortConfig(BareMetalPortConfig $portConfig)
-    {
-    }
-    /**
-     * @return BareMetalPortConfig
-     */
-    public function getPortConfig()
-    {
-    }
-    /**
-     * The VIPs used by the load balancer.
-     *
-     * @param BareMetalVipConfig $vipConfig
-     */
-    public function setVipConfig(BareMetalVipConfig $vipConfig)
-    {
-    }
-    /**
-     * @return BareMetalVipConfig
-     */
-    public function getVipConfig()
+    class Google_Service_GKEOnPrem_BareMetalLoadBalancerConfig extends \Google\Service\GKEOnPrem\BareMetalLoadBalancerConfig
     {
     }
 }

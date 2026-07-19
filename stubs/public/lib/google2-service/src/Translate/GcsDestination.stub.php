@@ -21,36 +21,45 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Translate;
-
-class GcsDestination extends \Google\Model
-{
-    /**
-     * Required. The bucket used in 'output_uri_prefix' must exist and there must
-     * be no files under 'output_uri_prefix'. 'output_uri_prefix' must end with
-     * "/" and start with "gs://". One 'output_uri_prefix' can only be used by one
-     * batch translation job at a time. Otherwise an INVALID_ARGUMENT (400) error
-     * is returned.
-     *
-     * @var string
-     */
-    public $outputUriPrefix;
-    /**
-     * Required. The bucket used in 'output_uri_prefix' must exist and there must
-     * be no files under 'output_uri_prefix'. 'output_uri_prefix' must end with
-     * "/" and start with "gs://". One 'output_uri_prefix' can only be used by one
-     * batch translation job at a time. Otherwise an INVALID_ARGUMENT (400) error
-     * is returned.
-     *
-     * @param string $outputUriPrefix
-     */
-    public function setOutputUriPrefix($outputUriPrefix)
+namespace Google\Service\Translate {
+    class GcsDestination extends \Google\Model
     {
+        /**
+         * Required. The bucket used in 'output_uri_prefix' must exist and there must
+         * be no files under 'output_uri_prefix'. 'output_uri_prefix' must end with
+         * "/" and start with "gs://". One 'output_uri_prefix' can only be used by one
+         * batch translation job at a time. Otherwise an INVALID_ARGUMENT (400) error
+         * is returned.
+         *
+         * @var string
+         */
+        public $outputUriPrefix;
+        /**
+         * Required. The bucket used in 'output_uri_prefix' must exist and there must
+         * be no files under 'output_uri_prefix'. 'output_uri_prefix' must end with
+         * "/" and start with "gs://". One 'output_uri_prefix' can only be used by one
+         * batch translation job at a time. Otherwise an INVALID_ARGUMENT (400) error
+         * is returned.
+         *
+         * @param string $outputUriPrefix
+         */
+        public function setOutputUriPrefix($outputUriPrefix)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOutputUriPrefix()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Translate\GcsDestination registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOutputUriPrefix()
+    class Google_Service_Translate_GcsDestination extends \Google\Service\Translate\GcsDestination
     {
     }
 }

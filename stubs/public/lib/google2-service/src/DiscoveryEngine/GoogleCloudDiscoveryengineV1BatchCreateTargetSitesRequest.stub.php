@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1BatchCreateTargetSitesRequest extends \Google\Collection
-{
-    protected $collection_key = 'requests';
-    protected $requestsType = GoogleCloudDiscoveryengineV1CreateTargetSiteRequest::class;
-    protected $requestsDataType = 'array';
-    /**
-     * Required. The request message specifying the resources to create. A maximum
-     * of 20 TargetSites can be created in a batch.
-     *
-     * @param GoogleCloudDiscoveryengineV1CreateTargetSiteRequest[] $requests
-     */
-    public function setRequests($requests)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1BatchCreateTargetSitesRequest extends \Google\Collection
     {
+        protected $collection_key = 'requests';
+        protected $requestsType = GoogleCloudDiscoveryengineV1CreateTargetSiteRequest::class;
+        protected $requestsDataType = 'array';
+        /**
+         * Required. The request message specifying the resources to create. A maximum
+         * of 20 TargetSites can be created in a batch.
+         *
+         * @param GoogleCloudDiscoveryengineV1CreateTargetSiteRequest[] $requests
+         */
+        public function setRequests($requests)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1CreateTargetSiteRequest[]
+         */
+        public function getRequests()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDiscoveryengineV1CreateTargetSiteRequest[]
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1BatchCreateTargetSitesRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getRequests()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1BatchCreateTargetSitesRequest extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1BatchCreateTargetSitesRequest
     {
     }
 }

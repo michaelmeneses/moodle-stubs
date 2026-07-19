@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Drive;
-
-class DriveFileLinkShareMetadata extends \Google\Model
-{
-    /**
-     * Output only. Whether the file is eligible for security update.
-     *
-     * @var bool
-     */
-    public $securityUpdateEligible;
-    /**
-     * Output only. Whether the security update is enabled for this file.
-     *
-     * @var bool
-     */
-    public $securityUpdateEnabled;
-    /**
-     * Output only. Whether the file is eligible for security update.
-     *
-     * @param bool $securityUpdateEligible
-     */
-    public function setSecurityUpdateEligible($securityUpdateEligible)
+namespace Google\Service\Drive {
+    class DriveFileLinkShareMetadata extends \Google\Model
     {
+        /**
+         * Output only. Whether the file is eligible for security update.
+         *
+         * @var bool
+         */
+        public $securityUpdateEligible;
+        /**
+         * Output only. Whether the security update is enabled for this file.
+         *
+         * @var bool
+         */
+        public $securityUpdateEnabled;
+        /**
+         * Output only. Whether the file is eligible for security update.
+         *
+         * @param bool $securityUpdateEligible
+         */
+        public function setSecurityUpdateEligible($securityUpdateEligible)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSecurityUpdateEligible()
+        {
+        }
+        /**
+         * Output only. Whether the security update is enabled for this file.
+         *
+         * @param bool $securityUpdateEnabled
+         */
+        public function setSecurityUpdateEnabled($securityUpdateEnabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSecurityUpdateEnabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\Drive\DriveFileLinkShareMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSecurityUpdateEligible()
-    {
-    }
-    /**
-     * Output only. Whether the security update is enabled for this file.
-     *
-     * @param bool $securityUpdateEnabled
-     */
-    public function setSecurityUpdateEnabled($securityUpdateEnabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSecurityUpdateEnabled()
+    class Google_Service_Drive_DriveFileLinkShareMetadata extends \Google\Service\Drive\DriveFileLinkShareMetadata
     {
     }
 }

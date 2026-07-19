@@ -21,115 +21,124 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudRun;
-
-class GoogleDevtoolsCloudbuildV1SourceProvenance extends \Google\Model
-{
-    protected $fileHashesType = GoogleDevtoolsCloudbuildV1FileHashes::class;
-    protected $fileHashesDataType = 'map';
-    protected $resolvedConnectedRepositoryType = GoogleDevtoolsCloudbuildV1ConnectedRepository::class;
-    protected $resolvedConnectedRepositoryDataType = '';
-    protected $resolvedGitSourceType = GoogleDevtoolsCloudbuildV1GitSource::class;
-    protected $resolvedGitSourceDataType = '';
-    protected $resolvedRepoSourceType = GoogleDevtoolsCloudbuildV1RepoSource::class;
-    protected $resolvedRepoSourceDataType = '';
-    protected $resolvedStorageSourceType = GoogleDevtoolsCloudbuildV1StorageSource::class;
-    protected $resolvedStorageSourceDataType = '';
-    protected $resolvedStorageSourceManifestType = GoogleDevtoolsCloudbuildV1StorageSourceManifest::class;
-    protected $resolvedStorageSourceManifestDataType = '';
-    /**
-     * Output only. Hash(es) of the build source, which can be used to verify that
-     * the original source integrity was maintained in the build. Note that
-     * `FileHashes` will only be populated if `BuildOptions` has requested a
-     * `SourceProvenanceHash`. The keys to this map are file paths used as build
-     * source and the values contain the hash values for those files. If the build
-     * source came in a single package such as a gzipped tarfile (`.tar.gz`), the
-     * `FileHash` will be for the single path to that file.
-     *
-     * @param GoogleDevtoolsCloudbuildV1FileHashes[] $fileHashes
-     */
-    public function setFileHashes($fileHashes)
+namespace Google\Service\CloudRun {
+    class GoogleDevtoolsCloudbuildV1SourceProvenance extends \Google\Model
     {
+        protected $fileHashesType = GoogleDevtoolsCloudbuildV1FileHashes::class;
+        protected $fileHashesDataType = 'map';
+        protected $resolvedConnectedRepositoryType = GoogleDevtoolsCloudbuildV1ConnectedRepository::class;
+        protected $resolvedConnectedRepositoryDataType = '';
+        protected $resolvedGitSourceType = GoogleDevtoolsCloudbuildV1GitSource::class;
+        protected $resolvedGitSourceDataType = '';
+        protected $resolvedRepoSourceType = GoogleDevtoolsCloudbuildV1RepoSource::class;
+        protected $resolvedRepoSourceDataType = '';
+        protected $resolvedStorageSourceType = GoogleDevtoolsCloudbuildV1StorageSource::class;
+        protected $resolvedStorageSourceDataType = '';
+        protected $resolvedStorageSourceManifestType = GoogleDevtoolsCloudbuildV1StorageSourceManifest::class;
+        protected $resolvedStorageSourceManifestDataType = '';
+        /**
+         * Output only. Hash(es) of the build source, which can be used to verify that
+         * the original source integrity was maintained in the build. Note that
+         * `FileHashes` will only be populated if `BuildOptions` has requested a
+         * `SourceProvenanceHash`. The keys to this map are file paths used as build
+         * source and the values contain the hash values for those files. If the build
+         * source came in a single package such as a gzipped tarfile (`.tar.gz`), the
+         * `FileHash` will be for the single path to that file.
+         *
+         * @param GoogleDevtoolsCloudbuildV1FileHashes[] $fileHashes
+         */
+        public function setFileHashes($fileHashes)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsCloudbuildV1FileHashes[]
+         */
+        public function getFileHashes()
+        {
+        }
+        /**
+         * Output only. A copy of the build's `source.connected_repository`, if
+         * exists, with any revisions resolved.
+         *
+         * @param GoogleDevtoolsCloudbuildV1ConnectedRepository $resolvedConnectedRepository
+         */
+        public function setResolvedConnectedRepository(GoogleDevtoolsCloudbuildV1ConnectedRepository $resolvedConnectedRepository)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsCloudbuildV1ConnectedRepository
+         */
+        public function getResolvedConnectedRepository()
+        {
+        }
+        /**
+         * Output only. A copy of the build's `source.git_source`, if exists, with any
+         * revisions resolved.
+         *
+         * @param GoogleDevtoolsCloudbuildV1GitSource $resolvedGitSource
+         */
+        public function setResolvedGitSource(GoogleDevtoolsCloudbuildV1GitSource $resolvedGitSource)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsCloudbuildV1GitSource
+         */
+        public function getResolvedGitSource()
+        {
+        }
+        /**
+         * A copy of the build's `source.repo_source`, if exists, with any revisions
+         * resolved.
+         *
+         * @param GoogleDevtoolsCloudbuildV1RepoSource $resolvedRepoSource
+         */
+        public function setResolvedRepoSource(GoogleDevtoolsCloudbuildV1RepoSource $resolvedRepoSource)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsCloudbuildV1RepoSource
+         */
+        public function getResolvedRepoSource()
+        {
+        }
+        /**
+         * A copy of the build's `source.storage_source`, if exists, with any
+         * generations resolved.
+         *
+         * @param GoogleDevtoolsCloudbuildV1StorageSource $resolvedStorageSource
+         */
+        public function setResolvedStorageSource(GoogleDevtoolsCloudbuildV1StorageSource $resolvedStorageSource)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsCloudbuildV1StorageSource
+         */
+        public function getResolvedStorageSource()
+        {
+        }
+        /**
+         * A copy of the build's `source.storage_source_manifest`, if exists, with any
+         * revisions resolved. This feature is in Preview.
+         *
+         * @param GoogleDevtoolsCloudbuildV1StorageSourceManifest $resolvedStorageSourceManifest
+         */
+        public function setResolvedStorageSourceManifest(GoogleDevtoolsCloudbuildV1StorageSourceManifest $resolvedStorageSourceManifest)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsCloudbuildV1StorageSourceManifest
+         */
+        public function getResolvedStorageSourceManifest()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleDevtoolsCloudbuildV1FileHashes[]
+     * Runtime class alias of \Google\Service\CloudRun\GoogleDevtoolsCloudbuildV1SourceProvenance registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFileHashes()
-    {
-    }
-    /**
-     * Output only. A copy of the build's `source.connected_repository`, if
-     * exists, with any revisions resolved.
-     *
-     * @param GoogleDevtoolsCloudbuildV1ConnectedRepository $resolvedConnectedRepository
-     */
-    public function setResolvedConnectedRepository(GoogleDevtoolsCloudbuildV1ConnectedRepository $resolvedConnectedRepository)
-    {
-    }
-    /**
-     * @return GoogleDevtoolsCloudbuildV1ConnectedRepository
-     */
-    public function getResolvedConnectedRepository()
-    {
-    }
-    /**
-     * Output only. A copy of the build's `source.git_source`, if exists, with any
-     * revisions resolved.
-     *
-     * @param GoogleDevtoolsCloudbuildV1GitSource $resolvedGitSource
-     */
-    public function setResolvedGitSource(GoogleDevtoolsCloudbuildV1GitSource $resolvedGitSource)
-    {
-    }
-    /**
-     * @return GoogleDevtoolsCloudbuildV1GitSource
-     */
-    public function getResolvedGitSource()
-    {
-    }
-    /**
-     * A copy of the build's `source.repo_source`, if exists, with any revisions
-     * resolved.
-     *
-     * @param GoogleDevtoolsCloudbuildV1RepoSource $resolvedRepoSource
-     */
-    public function setResolvedRepoSource(GoogleDevtoolsCloudbuildV1RepoSource $resolvedRepoSource)
-    {
-    }
-    /**
-     * @return GoogleDevtoolsCloudbuildV1RepoSource
-     */
-    public function getResolvedRepoSource()
-    {
-    }
-    /**
-     * A copy of the build's `source.storage_source`, if exists, with any
-     * generations resolved.
-     *
-     * @param GoogleDevtoolsCloudbuildV1StorageSource $resolvedStorageSource
-     */
-    public function setResolvedStorageSource(GoogleDevtoolsCloudbuildV1StorageSource $resolvedStorageSource)
-    {
-    }
-    /**
-     * @return GoogleDevtoolsCloudbuildV1StorageSource
-     */
-    public function getResolvedStorageSource()
-    {
-    }
-    /**
-     * A copy of the build's `source.storage_source_manifest`, if exists, with any
-     * revisions resolved. This feature is in Preview.
-     *
-     * @param GoogleDevtoolsCloudbuildV1StorageSourceManifest $resolvedStorageSourceManifest
-     */
-    public function setResolvedStorageSourceManifest(GoogleDevtoolsCloudbuildV1StorageSourceManifest $resolvedStorageSourceManifest)
-    {
-    }
-    /**
-     * @return GoogleDevtoolsCloudbuildV1StorageSourceManifest
-     */
-    public function getResolvedStorageSourceManifest()
+    class Google_Service_CloudRun_GoogleDevtoolsCloudbuildV1SourceProvenance extends \Google\Service\CloudRun\GoogleDevtoolsCloudbuildV1SourceProvenance
     {
     }
 }

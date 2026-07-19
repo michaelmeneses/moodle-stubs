@@ -21,84 +21,96 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Baremetalsolution\Resource;
-
-/**
- * The "snapshotSchedulePolicies" collection of methods.
- * Typical usage is:
- *  <code>
- *   $baremetalsolutionService = new Google\Service\Baremetalsolution(...);
- *   $snapshotSchedulePolicies = $baremetalsolutionService->snapshotSchedulePolicies;
- *  </code>
- */
-class ProjectsLocationsSnapshotSchedulePolicies extends \Google\Service\Resource
-{
+namespace Google\Service\Baremetalsolution\Resource {
+    use Google\Service\Baremetalsolution\BaremetalsolutionEmpty;
+    use Google\Service\Baremetalsolution\ListSnapshotSchedulePoliciesResponse;
+    use Google\Service\Baremetalsolution\SnapshotSchedulePolicy;
     /**
-     * Create a snapshot schedule policy in the specified project.
-     * (snapshotSchedulePolicies.create)
-     *
-     * @param string $parent Required. The parent project and location containing
-     * the SnapshotSchedulePolicy.
-     * @param SnapshotSchedulePolicy $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string snapshotSchedulePolicyId Required. Snapshot policy ID
-     * @return SnapshotSchedulePolicy
+     * The "snapshotSchedulePolicies" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $baremetalsolutionService = new Google\Service\Baremetalsolution(...);
+     *   $snapshotSchedulePolicies = $baremetalsolutionService->snapshotSchedulePolicies;
+     *  </code>
      */
-    public function create($parent, SnapshotSchedulePolicy $postBody, $optParams = [])
+    class ProjectsLocationsSnapshotSchedulePolicies extends \Google\Service\Resource
     {
+        /**
+         * Create a snapshot schedule policy in the specified project.
+         * (snapshotSchedulePolicies.create)
+         *
+         * @param string $parent Required. The parent project and location containing
+         * the SnapshotSchedulePolicy.
+         * @param SnapshotSchedulePolicy $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string snapshotSchedulePolicyId Required. Snapshot policy ID
+         * @return SnapshotSchedulePolicy
+         */
+        public function create($parent, SnapshotSchedulePolicy $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Delete a named snapshot schedule policy. (snapshotSchedulePolicies.delete)
+         *
+         * @param string $name Required. The name of the snapshot schedule policy to
+         * delete.
+         * @param array $optParams Optional parameters.
+         * @return BaremetalsolutionEmpty
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Get details of a single snapshot schedule policy.
+         * (snapshotSchedulePolicies.get)
+         *
+         * @param string $name Required. Name of the resource.
+         * @param array $optParams Optional parameters.
+         * @return SnapshotSchedulePolicy
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * List snapshot schedule policies in a given project and location.
+         * (snapshotSchedulePolicies.listProjectsLocationsSnapshotSchedulePolicies)
+         *
+         * @param string $parent Required. The parent project containing the Snapshot
+         * Schedule Policies.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter List filter.
+         * @opt_param int pageSize The maximum number of items to return.
+         * @opt_param string pageToken The next_page_token value returned from a
+         * previous List request, if any.
+         * @return ListSnapshotSchedulePoliciesResponse
+         */
+        public function listProjectsLocationsSnapshotSchedulePolicies($parent, $optParams = [])
+        {
+        }
+        /**
+         * Update a snapshot schedule policy in the specified project.
+         * (snapshotSchedulePolicies.patch)
+         *
+         * @param string $name Output only. The name of the snapshot schedule policy.
+         * @param SnapshotSchedulePolicy $postBody
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string updateMask Required. The list of fields to update.
+         * @return SnapshotSchedulePolicy
+         */
+        public function patch($name, SnapshotSchedulePolicy $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Delete a named snapshot schedule policy. (snapshotSchedulePolicies.delete)
-     *
-     * @param string $name Required. The name of the snapshot schedule policy to
-     * delete.
-     * @param array $optParams Optional parameters.
-     * @return BaremetalsolutionEmpty
+     * Runtime class alias of \Google\Service\Baremetalsolution\Resource\ProjectsLocationsSnapshotSchedulePolicies registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Get details of a single snapshot schedule policy.
-     * (snapshotSchedulePolicies.get)
-     *
-     * @param string $name Required. Name of the resource.
-     * @param array $optParams Optional parameters.
-     * @return SnapshotSchedulePolicy
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * List snapshot schedule policies in a given project and location.
-     * (snapshotSchedulePolicies.listProjectsLocationsSnapshotSchedulePolicies)
-     *
-     * @param string $parent Required. The parent project containing the Snapshot
-     * Schedule Policies.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter List filter.
-     * @opt_param int pageSize The maximum number of items to return.
-     * @opt_param string pageToken The next_page_token value returned from a
-     * previous List request, if any.
-     * @return ListSnapshotSchedulePoliciesResponse
-     */
-    public function listProjectsLocationsSnapshotSchedulePolicies($parent, $optParams = [])
-    {
-    }
-    /**
-     * Update a snapshot schedule policy in the specified project.
-     * (snapshotSchedulePolicies.patch)
-     *
-     * @param string $name Output only. The name of the snapshot schedule policy.
-     * @param SnapshotSchedulePolicy $postBody
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string updateMask Required. The list of fields to update.
-     * @return SnapshotSchedulePolicy
-     */
-    public function patch($name, SnapshotSchedulePolicy $postBody, $optParams = [])
+    class Google_Service_Baremetalsolution_Resource_ProjectsLocationsSnapshotSchedulePolicies extends \Google\Service\Baremetalsolution\Resource\ProjectsLocationsSnapshotSchedulePolicies
     {
     }
 }

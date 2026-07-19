@@ -8,6 +8,7 @@
  */
 namespace Aws\MPA;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Multi-party Approval** service.
  * @method \Aws\Result cancelSession(array $args = [])

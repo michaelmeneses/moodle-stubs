@@ -21,882 +21,891 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Appengine;
-
-class Version extends \Google\Collection
-{
-    /**
-     * Not specified.
-     */
-    public const SERVING_STATUS_SERVING_STATUS_UNSPECIFIED = 'SERVING_STATUS_UNSPECIFIED';
-    /**
-     * Currently serving. Instances are created according to the scaling settings
-     * of the version.
-     */
-    public const SERVING_STATUS_SERVING = 'SERVING';
-    /**
-     * Disabled. No instances will be created and the scaling settings are ignored
-     * until the state of the version changes to SERVING.
-     */
-    public const SERVING_STATUS_STOPPED = 'STOPPED';
-    protected $collection_key = 'zones';
-    protected $apiConfigType = ApiConfigHandler::class;
-    protected $apiConfigDataType = '';
-    /**
-     * Allows App Engine second generation runtimes to access the legacy bundled
-     * services.
-     *
-     * @var bool
-     */
-    public $appEngineApis;
-    protected $automaticScalingType = AutomaticScaling::class;
-    protected $automaticScalingDataType = '';
-    protected $basicScalingType = BasicScaling::class;
-    protected $basicScalingDataType = '';
-    /**
-     * Metadata settings that are supplied to this version to enable beta runtime
-     * features.
-     *
-     * @var string[]
-     */
-    public $betaSettings;
-    /**
-     * Environment variables available to the build environment.Only returned in
-     * GET requests if view=FULL is set.
-     *
-     * @var string[]
-     */
-    public $buildEnvVariables;
-    /**
-     * Time that this version was created.@OutputOnly
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Output only. Email address of the user who created this version.@OutputOnly
-     *
-     * @var string
-     */
-    public $createdBy;
-    /**
-     * Duration that static files should be cached by web proxies and browsers.
-     * Only applicable if the corresponding StaticFilesHandler
-     * (https://cloud.google.com/appengine/docs/admin-
-     * api/reference/rest/v1/apps.services.versions#StaticFilesHandler) does not
-     * specify its own expiration time.Only returned in GET requests if view=FULL
-     * is set.
-     *
-     * @var string
-     */
-    public $defaultExpiration;
-    protected $deploymentType = Deployment::class;
-    protected $deploymentDataType = '';
-    /**
-     * Output only. Total size in bytes of all the files that are included in this
-     * version and currently hosted on the App Engine disk.@OutputOnly
-     *
-     * @var string
-     */
-    public $diskUsageBytes;
-    protected $endpointsApiServiceType = EndpointsApiService::class;
-    protected $endpointsApiServiceDataType = '';
-    protected $entrypointType = Entrypoint::class;
-    protected $entrypointDataType = '';
-    /**
-     * App Engine execution environment for this version.Defaults to standard.
-     *
-     * @var string
-     */
-    public $env;
-    /**
-     * Environment variables available to the application.Only returned in GET
-     * requests if view=FULL is set.
-     *
-     * @var string[]
-     */
-    public $envVariables;
-    protected $errorHandlersType = ErrorHandler::class;
-    protected $errorHandlersDataType = 'array';
-    protected $flexibleRuntimeSettingsType = FlexibleRuntimeSettings::class;
-    protected $flexibleRuntimeSettingsDataType = '';
-    /**
-     * Additional Google Generated Customer Metadata, this field won't be provided
-     * by default and can be requested by setting the IncludeExtraData field in
-     * GetVersionRequest
-     *
-     * @var array[]
-     */
-    public $generatedCustomerMetadata;
-    protected $handlersType = UrlMap::class;
-    protected $handlersDataType = 'array';
-    protected $healthCheckType = HealthCheck::class;
-    protected $healthCheckDataType = '';
-    /**
-     * Relative name of the version within the service. Example: v1. Version names
-     * can contain only lowercase letters, numbers, or hyphens. Reserved names:
-     * "default", "latest", and any name with the prefix "ah-".
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Before an application can receive email or XMPP messages, the application
-     * must be configured to enable the service.
-     *
-     * @var string[]
-     */
-    public $inboundServices;
-    /**
-     * Instance class that is used to run this version. Valid values are:
-     * AutomaticScaling: F1, F2, F4, F4_1G ManualScaling or BasicScaling: B1, B2,
-     * B4, B8, B4_1GDefaults to F1 for AutomaticScaling and B1 for ManualScaling
-     * or BasicScaling.
-     *
-     * @var string
-     */
-    public $instanceClass;
-    protected $librariesType = Library::class;
-    protected $librariesDataType = 'array';
-    protected $livenessCheckType = LivenessCheck::class;
-    protected $livenessCheckDataType = '';
-    protected $manualScalingType = ManualScaling::class;
-    protected $manualScalingDataType = '';
-    /**
-     * Output only. Full path to the Version resource in the API. Example:
-     * apps/myapp/services/default/versions/v1.@OutputOnly
-     *
-     * @var string
-     */
-    public $name;
-    protected $networkType = Network::class;
-    protected $networkDataType = '';
-    /**
-     * Files that match this pattern will not be built into this version. Only
-     * applicable for Go runtimes.Only returned in GET requests if view=FULL is
-     * set.
-     *
-     * @var string
-     */
-    public $nobuildFilesRegex;
-    protected $readinessCheckType = ReadinessCheck::class;
-    protected $readinessCheckDataType = '';
-    protected $resourcesType = Resources::class;
-    protected $resourcesDataType = '';
-    /**
-     * Desired runtime. Example: python27.
-     *
-     * @var string
-     */
-    public $runtime;
-    /**
-     * The version of the API in the given runtime environment. Please see the
-     * app.yaml reference for valid values at
-     * https://cloud.google.com/appengine/docs/standard//config/appref
-     *
-     * @var string
-     */
-    public $runtimeApiVersion;
-    /**
-     * The channel of the runtime to use. Only available for some runtimes.
-     * Defaults to the default channel.
-     *
-     * @var string
-     */
-    public $runtimeChannel;
-    /**
-     * The path or name of the app's main executable.
-     *
-     * @var string
-     */
-    public $runtimeMainExecutablePath;
-    /**
-     * The identity that the deployed version will run as. Admin API will use the
-     * App Engine Appspot service account as default if this field is neither
-     * provided in app.yaml file nor through CLI flag.
-     *
-     * @var string
-     */
-    public $serviceAccount;
-    /**
-     * Current serving status of this version. Only the versions with a SERVING
-     * status create instances and can be billed.SERVING_STATUS_UNSPECIFIED is an
-     * invalid value. Defaults to SERVING.
-     *
-     * @var string
-     */
-    public $servingStatus;
-    /**
-     * Whether multiple requests can be dispatched to this version at once.
-     *
-     * @var bool
-     */
-    public $threadsafe;
-    /**
-     * Output only. Serving URL for this version. Example: "https://myversion-dot-
-     * myservice-dot-myapp.appspot.com"@OutputOnly
-     *
-     * @var string
-     */
-    public $versionUrl;
-    /**
-     * Whether to deploy this version in a container on a virtual machine.
-     *
-     * @var bool
-     */
-    public $vm;
-    protected $vpcAccessConnectorType = VpcAccessConnector::class;
-    protected $vpcAccessConnectorDataType = '';
-    /**
-     * The Google Compute Engine zones that are supported by this version in the
-     * App Engine flexible environment. Deprecated.
-     *
-     * @var string[]
-     */
-    public $zones;
-    /**
-     * Serving configuration for Google Cloud Endpoints
-     * (https://cloud.google.com/endpoints).Only returned in GET requests if
-     * view=FULL is set.
-     *
-     * @deprecated
-     * @param ApiConfigHandler $apiConfig
-     */
-    public function setApiConfig(ApiConfigHandler $apiConfig)
-    {
-    }
-    /**
-     * @deprecated
-     * @return ApiConfigHandler
-     */
-    public function getApiConfig()
-    {
-    }
-    /**
-     * Allows App Engine second generation runtimes to access the legacy bundled
-     * services.
-     *
-     * @param bool $appEngineApis
-     */
-    public function setAppEngineApis($appEngineApis)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getAppEngineApis()
-    {
-    }
-    /**
-     * Automatic scaling is based on request rate, response latencies, and other
-     * application metrics. Instances are dynamically created and destroyed as
-     * needed in order to handle traffic.
-     *
-     * @param AutomaticScaling $automaticScaling
-     */
-    public function setAutomaticScaling(AutomaticScaling $automaticScaling)
-    {
-    }
-    /**
-     * @return AutomaticScaling
-     */
-    public function getAutomaticScaling()
-    {
-    }
-    /**
-     * A service with basic scaling will create an instance when the application
-     * receives a request. The instance will be turned down when the app becomes
-     * idle. Basic scaling is ideal for work that is intermittent or driven by
-     * user activity.
-     *
-     * @param BasicScaling $basicScaling
-     */
-    public function setBasicScaling(BasicScaling $basicScaling)
-    {
-    }
-    /**
-     * @return BasicScaling
-     */
-    public function getBasicScaling()
-    {
-    }
-    /**
-     * Metadata settings that are supplied to this version to enable beta runtime
-     * features.
-     *
-     * @param string[] $betaSettings
-     */
-    public function setBetaSettings($betaSettings)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getBetaSettings()
-    {
-    }
-    /**
-     * Environment variables available to the build environment.Only returned in
-     * GET requests if view=FULL is set.
-     *
-     * @param string[] $buildEnvVariables
-     */
-    public function setBuildEnvVariables($buildEnvVariables)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getBuildEnvVariables()
-    {
-    }
-    /**
-     * Time that this version was created.@OutputOnly
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Output only. Email address of the user who created this version.@OutputOnly
-     *
-     * @param string $createdBy
-     */
-    public function setCreatedBy($createdBy)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getCreatedBy()
-    {
-    }
-    /**
-     * Duration that static files should be cached by web proxies and browsers.
-     * Only applicable if the corresponding StaticFilesHandler
-     * (https://cloud.google.com/appengine/docs/admin-
-     * api/reference/rest/v1/apps.services.versions#StaticFilesHandler) does not
-     * specify its own expiration time.Only returned in GET requests if view=FULL
-     * is set.
-     *
-     * @param string $defaultExpiration
-     */
-    public function setDefaultExpiration($defaultExpiration)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDefaultExpiration()
-    {
-    }
-    /**
-     * Code and application artifacts that make up this version.Only returned in
-     * GET requests if view=FULL is set.
-     *
-     * @param Deployment $deployment
-     */
-    public function setDeployment(Deployment $deployment)
-    {
-    }
-    /**
-     * @return Deployment
-     */
-    public function getDeployment()
-    {
-    }
-    /**
-     * Output only. Total size in bytes of all the files that are included in this
-     * version and currently hosted on the App Engine disk.@OutputOnly
-     *
-     * @param string $diskUsageBytes
-     */
-    public function setDiskUsageBytes($diskUsageBytes)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDiskUsageBytes()
-    {
-    }
-    /**
-     * Cloud Endpoints configuration.If endpoints_api_service is set, the Cloud
-     * Endpoints Extensible Service Proxy will be provided to serve the API
-     * implemented by the app.
-     *
-     * @param EndpointsApiService $endpointsApiService
-     */
-    public function setEndpointsApiService(EndpointsApiService $endpointsApiService)
-    {
-    }
-    /**
-     * @return EndpointsApiService
-     */
-    public function getEndpointsApiService()
-    {
-    }
-    /**
-     * The entrypoint for the application.
-     *
-     * @param Entrypoint $entrypoint
-     */
-    public function setEntrypoint(Entrypoint $entrypoint)
-    {
-    }
-    /**
-     * @return Entrypoint
-     */
-    public function getEntrypoint()
-    {
-    }
-    /**
-     * App Engine execution environment for this version.Defaults to standard.
-     *
-     * @param string $env
-     */
-    public function setEnv($env)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEnv()
-    {
-    }
-    /**
-     * Environment variables available to the application.Only returned in GET
-     * requests if view=FULL is set.
-     *
-     * @param string[] $envVariables
-     */
-    public function setEnvVariables($envVariables)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getEnvVariables()
-    {
-    }
-    /**
-     * Custom static error pages. Limited to 10KB per page.Only returned in GET
-     * requests if view=FULL is set.
-     *
-     * @param ErrorHandler[] $errorHandlers
-     */
-    public function setErrorHandlers($errorHandlers)
-    {
-    }
-    /**
-     * @return ErrorHandler[]
-     */
-    public function getErrorHandlers()
-    {
-    }
-    /**
-     * Settings for App Engine flexible runtimes.
-     *
-     * @param FlexibleRuntimeSettings $flexibleRuntimeSettings
-     */
-    public function setFlexibleRuntimeSettings(FlexibleRuntimeSettings $flexibleRuntimeSettings)
-    {
-    }
-    /**
-     * @return FlexibleRuntimeSettings
-     */
-    public function getFlexibleRuntimeSettings()
-    {
-    }
-    /**
-     * Additional Google Generated Customer Metadata, this field won't be provided
-     * by default and can be requested by setting the IncludeExtraData field in
-     * GetVersionRequest
-     *
-     * @param array[] $generatedCustomerMetadata
-     */
-    public function setGeneratedCustomerMetadata($generatedCustomerMetadata)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getGeneratedCustomerMetadata()
-    {
-    }
-    /**
-     * An ordered list of URL-matching patterns that should be applied to incoming
-     * requests. The first matching URL handles the request and other request
-     * handlers are not attempted.Only returned in GET requests if view=FULL is
-     * set.
-     *
-     * @param UrlMap[] $handlers
-     */
-    public function setHandlers($handlers)
-    {
-    }
-    /**
-     * @return UrlMap[]
-     */
-    public function getHandlers()
-    {
-    }
-    /**
-     * Configures health checking for instances. Unhealthy instances are stopped
-     * and replaced with new instances. Only applicable in the App Engine flexible
-     * environment.
-     *
-     * @param HealthCheck $healthCheck
-     */
-    public function setHealthCheck(HealthCheck $healthCheck)
-    {
-    }
-    /**
-     * @return HealthCheck
-     */
-    public function getHealthCheck()
-    {
-    }
-    /**
-     * Relative name of the version within the service. Example: v1. Version names
-     * can contain only lowercase letters, numbers, or hyphens. Reserved names:
-     * "default", "latest", and any name with the prefix "ah-".
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Before an application can receive email or XMPP messages, the application
-     * must be configured to enable the service.
-     *
-     * @param string[] $inboundServices
-     */
-    public function setInboundServices($inboundServices)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getInboundServices()
-    {
-    }
-    /**
-     * Instance class that is used to run this version. Valid values are:
-     * AutomaticScaling: F1, F2, F4, F4_1G ManualScaling or BasicScaling: B1, B2,
-     * B4, B8, B4_1GDefaults to F1 for AutomaticScaling and B1 for ManualScaling
-     * or BasicScaling.
-     *
-     * @param string $instanceClass
-     */
-    public function setInstanceClass($instanceClass)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstanceClass()
-    {
-    }
-    /**
-     * Configuration for third-party Python runtime libraries that are required by
-     * the application.Only returned in GET requests if view=FULL is set.
-     *
-     * @param Library[] $libraries
-     */
-    public function setLibraries($libraries)
-    {
-    }
-    /**
-     * @return Library[]
-     */
-    public function getLibraries()
-    {
-    }
-    /**
-     * Configures liveness health checking for instances. Unhealthy instances are
-     * stopped and replaced with new instances
-     *
-     * @param LivenessCheck $livenessCheck
-     */
-    public function setLivenessCheck(LivenessCheck $livenessCheck)
-    {
-    }
-    /**
-     * @return LivenessCheck
-     */
-    public function getLivenessCheck()
-    {
-    }
-    /**
-     * A service with manual scaling runs continuously, allowing you to perform
-     * complex initialization and rely on the state of its memory over time.
-     * Manually scaled versions are sometimes referred to as "backends".
-     *
-     * @param ManualScaling $manualScaling
-     */
-    public function setManualScaling(ManualScaling $manualScaling)
-    {
-    }
-    /**
-     * @return ManualScaling
-     */
-    public function getManualScaling()
-    {
-    }
-    /**
-     * Output only. Full path to the Version resource in the API. Example:
-     * apps/myapp/services/default/versions/v1.@OutputOnly
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Extra network settings. Only applicable in the App Engine flexible
-     * environment.
-     *
-     * @param Network $network
-     */
-    public function setNetwork(Network $network)
-    {
-    }
-    /**
-     * @return Network
-     */
-    public function getNetwork()
-    {
-    }
-    /**
-     * Files that match this pattern will not be built into this version. Only
-     * applicable for Go runtimes.Only returned in GET requests if view=FULL is
-     * set.
-     *
-     * @param string $nobuildFilesRegex
-     */
-    public function setNobuildFilesRegex($nobuildFilesRegex)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNobuildFilesRegex()
-    {
-    }
-    /**
-     * Configures readiness health checking for instances. Unhealthy instances are
-     * not put into the backend traffic rotation.
-     *
-     * @param ReadinessCheck $readinessCheck
-     */
-    public function setReadinessCheck(ReadinessCheck $readinessCheck)
-    {
-    }
-    /**
-     * @return ReadinessCheck
-     */
-    public function getReadinessCheck()
-    {
-    }
-    /**
-     * Machine resources for this version. Only applicable in the App Engine
-     * flexible environment.
-     *
-     * @param Resources $resources
-     */
-    public function setResources(Resources $resources)
-    {
-    }
-    /**
-     * @return Resources
-     */
-    public function getResources()
-    {
-    }
-    /**
-     * Desired runtime. Example: python27.
-     *
-     * @param string $runtime
-     */
-    public function setRuntime($runtime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRuntime()
-    {
-    }
-    /**
-     * The version of the API in the given runtime environment. Please see the
-     * app.yaml reference for valid values at
-     * https://cloud.google.com/appengine/docs/standard//config/appref
-     *
-     * @param string $runtimeApiVersion
-     */
-    public function setRuntimeApiVersion($runtimeApiVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRuntimeApiVersion()
-    {
-    }
-    /**
-     * The channel of the runtime to use. Only available for some runtimes.
-     * Defaults to the default channel.
-     *
-     * @param string $runtimeChannel
-     */
-    public function setRuntimeChannel($runtimeChannel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRuntimeChannel()
-    {
-    }
-    /**
-     * The path or name of the app's main executable.
-     *
-     * @param string $runtimeMainExecutablePath
-     */
-    public function setRuntimeMainExecutablePath($runtimeMainExecutablePath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRuntimeMainExecutablePath()
-    {
-    }
-    /**
-     * The identity that the deployed version will run as. Admin API will use the
-     * App Engine Appspot service account as default if this field is neither
-     * provided in app.yaml file nor through CLI flag.
-     *
-     * @param string $serviceAccount
-     */
-    public function setServiceAccount($serviceAccount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceAccount()
-    {
-    }
-    /**
-     * Current serving status of this version. Only the versions with a SERVING
-     * status create instances and can be billed.SERVING_STATUS_UNSPECIFIED is an
-     * invalid value. Defaults to SERVING.
-     *
-     * Accepted values: SERVING_STATUS_UNSPECIFIED, SERVING, STOPPED
-     *
-     * @param self::SERVING_STATUS_* $servingStatus
-     */
-    public function setServingStatus($servingStatus)
-    {
-    }
-    /**
-     * @return self::SERVING_STATUS_*
-     */
-    public function getServingStatus()
-    {
-    }
-    /**
-     * Whether multiple requests can be dispatched to this version at once.
-     *
-     * @param bool $threadsafe
-     */
-    public function setThreadsafe($threadsafe)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getThreadsafe()
-    {
-    }
-    /**
-     * Output only. Serving URL for this version. Example: "https://myversion-dot-
-     * myservice-dot-myapp.appspot.com"@OutputOnly
-     *
-     * @param string $versionUrl
-     */
-    public function setVersionUrl($versionUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVersionUrl()
-    {
-    }
-    /**
-     * Whether to deploy this version in a container on a virtual machine.
-     *
-     * @param bool $vm
-     */
-    public function setVm($vm)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getVm()
-    {
-    }
-    /**
-     * Enables VPC connectivity for standard apps.
-     *
-     * @param VpcAccessConnector $vpcAccessConnector
-     */
-    public function setVpcAccessConnector(VpcAccessConnector $vpcAccessConnector)
-    {
-    }
-    /**
-     * @return VpcAccessConnector
-     */
-    public function getVpcAccessConnector()
-    {
-    }
-    /**
-     * The Google Compute Engine zones that are supported by this version in the
-     * App Engine flexible environment. Deprecated.
-     *
-     * @param string[] $zones
-     */
-    public function setZones($zones)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getZones()
+namespace Google\Service\Appengine {
+    class Version extends \Google\Collection
+    {
+        /**
+         * Not specified.
+         */
+        public const SERVING_STATUS_SERVING_STATUS_UNSPECIFIED = 'SERVING_STATUS_UNSPECIFIED';
+        /**
+         * Currently serving. Instances are created according to the scaling settings
+         * of the version.
+         */
+        public const SERVING_STATUS_SERVING = 'SERVING';
+        /**
+         * Disabled. No instances will be created and the scaling settings are ignored
+         * until the state of the version changes to SERVING.
+         */
+        public const SERVING_STATUS_STOPPED = 'STOPPED';
+        protected $collection_key = 'zones';
+        protected $apiConfigType = ApiConfigHandler::class;
+        protected $apiConfigDataType = '';
+        /**
+         * Allows App Engine second generation runtimes to access the legacy bundled
+         * services.
+         *
+         * @var bool
+         */
+        public $appEngineApis;
+        protected $automaticScalingType = AutomaticScaling::class;
+        protected $automaticScalingDataType = '';
+        protected $basicScalingType = BasicScaling::class;
+        protected $basicScalingDataType = '';
+        /**
+         * Metadata settings that are supplied to this version to enable beta runtime
+         * features.
+         *
+         * @var string[]
+         */
+        public $betaSettings;
+        /**
+         * Environment variables available to the build environment.Only returned in
+         * GET requests if view=FULL is set.
+         *
+         * @var string[]
+         */
+        public $buildEnvVariables;
+        /**
+         * Time that this version was created.@OutputOnly
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Output only. Email address of the user who created this version.@OutputOnly
+         *
+         * @var string
+         */
+        public $createdBy;
+        /**
+         * Duration that static files should be cached by web proxies and browsers.
+         * Only applicable if the corresponding StaticFilesHandler
+         * (https://cloud.google.com/appengine/docs/admin-
+         * api/reference/rest/v1/apps.services.versions#StaticFilesHandler) does not
+         * specify its own expiration time.Only returned in GET requests if view=FULL
+         * is set.
+         *
+         * @var string
+         */
+        public $defaultExpiration;
+        protected $deploymentType = Deployment::class;
+        protected $deploymentDataType = '';
+        /**
+         * Output only. Total size in bytes of all the files that are included in this
+         * version and currently hosted on the App Engine disk.@OutputOnly
+         *
+         * @var string
+         */
+        public $diskUsageBytes;
+        protected $endpointsApiServiceType = EndpointsApiService::class;
+        protected $endpointsApiServiceDataType = '';
+        protected $entrypointType = Entrypoint::class;
+        protected $entrypointDataType = '';
+        /**
+         * App Engine execution environment for this version.Defaults to standard.
+         *
+         * @var string
+         */
+        public $env;
+        /**
+         * Environment variables available to the application.Only returned in GET
+         * requests if view=FULL is set.
+         *
+         * @var string[]
+         */
+        public $envVariables;
+        protected $errorHandlersType = ErrorHandler::class;
+        protected $errorHandlersDataType = 'array';
+        protected $flexibleRuntimeSettingsType = FlexibleRuntimeSettings::class;
+        protected $flexibleRuntimeSettingsDataType = '';
+        /**
+         * Additional Google Generated Customer Metadata, this field won't be provided
+         * by default and can be requested by setting the IncludeExtraData field in
+         * GetVersionRequest
+         *
+         * @var array[]
+         */
+        public $generatedCustomerMetadata;
+        protected $handlersType = UrlMap::class;
+        protected $handlersDataType = 'array';
+        protected $healthCheckType = HealthCheck::class;
+        protected $healthCheckDataType = '';
+        /**
+         * Relative name of the version within the service. Example: v1. Version names
+         * can contain only lowercase letters, numbers, or hyphens. Reserved names:
+         * "default", "latest", and any name with the prefix "ah-".
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Before an application can receive email or XMPP messages, the application
+         * must be configured to enable the service.
+         *
+         * @var string[]
+         */
+        public $inboundServices;
+        /**
+         * Instance class that is used to run this version. Valid values are:
+         * AutomaticScaling: F1, F2, F4, F4_1G ManualScaling or BasicScaling: B1, B2,
+         * B4, B8, B4_1GDefaults to F1 for AutomaticScaling and B1 for ManualScaling
+         * or BasicScaling.
+         *
+         * @var string
+         */
+        public $instanceClass;
+        protected $librariesType = Library::class;
+        protected $librariesDataType = 'array';
+        protected $livenessCheckType = LivenessCheck::class;
+        protected $livenessCheckDataType = '';
+        protected $manualScalingType = ManualScaling::class;
+        protected $manualScalingDataType = '';
+        /**
+         * Output only. Full path to the Version resource in the API. Example:
+         * apps/myapp/services/default/versions/v1.@OutputOnly
+         *
+         * @var string
+         */
+        public $name;
+        protected $networkType = Network::class;
+        protected $networkDataType = '';
+        /**
+         * Files that match this pattern will not be built into this version. Only
+         * applicable for Go runtimes.Only returned in GET requests if view=FULL is
+         * set.
+         *
+         * @var string
+         */
+        public $nobuildFilesRegex;
+        protected $readinessCheckType = ReadinessCheck::class;
+        protected $readinessCheckDataType = '';
+        protected $resourcesType = Resources::class;
+        protected $resourcesDataType = '';
+        /**
+         * Desired runtime. Example: python27.
+         *
+         * @var string
+         */
+        public $runtime;
+        /**
+         * The version of the API in the given runtime environment. Please see the
+         * app.yaml reference for valid values at
+         * https://cloud.google.com/appengine/docs/standard//config/appref
+         *
+         * @var string
+         */
+        public $runtimeApiVersion;
+        /**
+         * The channel of the runtime to use. Only available for some runtimes.
+         * Defaults to the default channel.
+         *
+         * @var string
+         */
+        public $runtimeChannel;
+        /**
+         * The path or name of the app's main executable.
+         *
+         * @var string
+         */
+        public $runtimeMainExecutablePath;
+        /**
+         * The identity that the deployed version will run as. Admin API will use the
+         * App Engine Appspot service account as default if this field is neither
+         * provided in app.yaml file nor through CLI flag.
+         *
+         * @var string
+         */
+        public $serviceAccount;
+        /**
+         * Current serving status of this version. Only the versions with a SERVING
+         * status create instances and can be billed.SERVING_STATUS_UNSPECIFIED is an
+         * invalid value. Defaults to SERVING.
+         *
+         * @var string
+         */
+        public $servingStatus;
+        /**
+         * Whether multiple requests can be dispatched to this version at once.
+         *
+         * @var bool
+         */
+        public $threadsafe;
+        /**
+         * Output only. Serving URL for this version. Example: "https://myversion-dot-
+         * myservice-dot-myapp.appspot.com"@OutputOnly
+         *
+         * @var string
+         */
+        public $versionUrl;
+        /**
+         * Whether to deploy this version in a container on a virtual machine.
+         *
+         * @var bool
+         */
+        public $vm;
+        protected $vpcAccessConnectorType = VpcAccessConnector::class;
+        protected $vpcAccessConnectorDataType = '';
+        /**
+         * The Google Compute Engine zones that are supported by this version in the
+         * App Engine flexible environment. Deprecated.
+         *
+         * @var string[]
+         */
+        public $zones;
+        /**
+         * Serving configuration for Google Cloud Endpoints
+         * (https://cloud.google.com/endpoints).Only returned in GET requests if
+         * view=FULL is set.
+         *
+         * @deprecated
+         * @param ApiConfigHandler $apiConfig
+         */
+        public function setApiConfig(ApiConfigHandler $apiConfig)
+        {
+        }
+        /**
+         * @deprecated
+         * @return ApiConfigHandler
+         */
+        public function getApiConfig()
+        {
+        }
+        /**
+         * Allows App Engine second generation runtimes to access the legacy bundled
+         * services.
+         *
+         * @param bool $appEngineApis
+         */
+        public function setAppEngineApis($appEngineApis)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getAppEngineApis()
+        {
+        }
+        /**
+         * Automatic scaling is based on request rate, response latencies, and other
+         * application metrics. Instances are dynamically created and destroyed as
+         * needed in order to handle traffic.
+         *
+         * @param AutomaticScaling $automaticScaling
+         */
+        public function setAutomaticScaling(AutomaticScaling $automaticScaling)
+        {
+        }
+        /**
+         * @return AutomaticScaling
+         */
+        public function getAutomaticScaling()
+        {
+        }
+        /**
+         * A service with basic scaling will create an instance when the application
+         * receives a request. The instance will be turned down when the app becomes
+         * idle. Basic scaling is ideal for work that is intermittent or driven by
+         * user activity.
+         *
+         * @param BasicScaling $basicScaling
+         */
+        public function setBasicScaling(BasicScaling $basicScaling)
+        {
+        }
+        /**
+         * @return BasicScaling
+         */
+        public function getBasicScaling()
+        {
+        }
+        /**
+         * Metadata settings that are supplied to this version to enable beta runtime
+         * features.
+         *
+         * @param string[] $betaSettings
+         */
+        public function setBetaSettings($betaSettings)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getBetaSettings()
+        {
+        }
+        /**
+         * Environment variables available to the build environment.Only returned in
+         * GET requests if view=FULL is set.
+         *
+         * @param string[] $buildEnvVariables
+         */
+        public function setBuildEnvVariables($buildEnvVariables)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getBuildEnvVariables()
+        {
+        }
+        /**
+         * Time that this version was created.@OutputOnly
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Output only. Email address of the user who created this version.@OutputOnly
+         *
+         * @param string $createdBy
+         */
+        public function setCreatedBy($createdBy)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreatedBy()
+        {
+        }
+        /**
+         * Duration that static files should be cached by web proxies and browsers.
+         * Only applicable if the corresponding StaticFilesHandler
+         * (https://cloud.google.com/appengine/docs/admin-
+         * api/reference/rest/v1/apps.services.versions#StaticFilesHandler) does not
+         * specify its own expiration time.Only returned in GET requests if view=FULL
+         * is set.
+         *
+         * @param string $defaultExpiration
+         */
+        public function setDefaultExpiration($defaultExpiration)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDefaultExpiration()
+        {
+        }
+        /**
+         * Code and application artifacts that make up this version.Only returned in
+         * GET requests if view=FULL is set.
+         *
+         * @param Deployment $deployment
+         */
+        public function setDeployment(Deployment $deployment)
+        {
+        }
+        /**
+         * @return Deployment
+         */
+        public function getDeployment()
+        {
+        }
+        /**
+         * Output only. Total size in bytes of all the files that are included in this
+         * version and currently hosted on the App Engine disk.@OutputOnly
+         *
+         * @param string $diskUsageBytes
+         */
+        public function setDiskUsageBytes($diskUsageBytes)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDiskUsageBytes()
+        {
+        }
+        /**
+         * Cloud Endpoints configuration.If endpoints_api_service is set, the Cloud
+         * Endpoints Extensible Service Proxy will be provided to serve the API
+         * implemented by the app.
+         *
+         * @param EndpointsApiService $endpointsApiService
+         */
+        public function setEndpointsApiService(EndpointsApiService $endpointsApiService)
+        {
+        }
+        /**
+         * @return EndpointsApiService
+         */
+        public function getEndpointsApiService()
+        {
+        }
+        /**
+         * The entrypoint for the application.
+         *
+         * @param Entrypoint $entrypoint
+         */
+        public function setEntrypoint(Entrypoint $entrypoint)
+        {
+        }
+        /**
+         * @return Entrypoint
+         */
+        public function getEntrypoint()
+        {
+        }
+        /**
+         * App Engine execution environment for this version.Defaults to standard.
+         *
+         * @param string $env
+         */
+        public function setEnv($env)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEnv()
+        {
+        }
+        /**
+         * Environment variables available to the application.Only returned in GET
+         * requests if view=FULL is set.
+         *
+         * @param string[] $envVariables
+         */
+        public function setEnvVariables($envVariables)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEnvVariables()
+        {
+        }
+        /**
+         * Custom static error pages. Limited to 10KB per page.Only returned in GET
+         * requests if view=FULL is set.
+         *
+         * @param ErrorHandler[] $errorHandlers
+         */
+        public function setErrorHandlers($errorHandlers)
+        {
+        }
+        /**
+         * @return ErrorHandler[]
+         */
+        public function getErrorHandlers()
+        {
+        }
+        /**
+         * Settings for App Engine flexible runtimes.
+         *
+         * @param FlexibleRuntimeSettings $flexibleRuntimeSettings
+         */
+        public function setFlexibleRuntimeSettings(FlexibleRuntimeSettings $flexibleRuntimeSettings)
+        {
+        }
+        /**
+         * @return FlexibleRuntimeSettings
+         */
+        public function getFlexibleRuntimeSettings()
+        {
+        }
+        /**
+         * Additional Google Generated Customer Metadata, this field won't be provided
+         * by default and can be requested by setting the IncludeExtraData field in
+         * GetVersionRequest
+         *
+         * @param array[] $generatedCustomerMetadata
+         */
+        public function setGeneratedCustomerMetadata($generatedCustomerMetadata)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getGeneratedCustomerMetadata()
+        {
+        }
+        /**
+         * An ordered list of URL-matching patterns that should be applied to incoming
+         * requests. The first matching URL handles the request and other request
+         * handlers are not attempted.Only returned in GET requests if view=FULL is
+         * set.
+         *
+         * @param UrlMap[] $handlers
+         */
+        public function setHandlers($handlers)
+        {
+        }
+        /**
+         * @return UrlMap[]
+         */
+        public function getHandlers()
+        {
+        }
+        /**
+         * Configures health checking for instances. Unhealthy instances are stopped
+         * and replaced with new instances. Only applicable in the App Engine flexible
+         * environment.
+         *
+         * @param HealthCheck $healthCheck
+         */
+        public function setHealthCheck(HealthCheck $healthCheck)
+        {
+        }
+        /**
+         * @return HealthCheck
+         */
+        public function getHealthCheck()
+        {
+        }
+        /**
+         * Relative name of the version within the service. Example: v1. Version names
+         * can contain only lowercase letters, numbers, or hyphens. Reserved names:
+         * "default", "latest", and any name with the prefix "ah-".
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Before an application can receive email or XMPP messages, the application
+         * must be configured to enable the service.
+         *
+         * @param string[] $inboundServices
+         */
+        public function setInboundServices($inboundServices)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getInboundServices()
+        {
+        }
+        /**
+         * Instance class that is used to run this version. Valid values are:
+         * AutomaticScaling: F1, F2, F4, F4_1G ManualScaling or BasicScaling: B1, B2,
+         * B4, B8, B4_1GDefaults to F1 for AutomaticScaling and B1 for ManualScaling
+         * or BasicScaling.
+         *
+         * @param string $instanceClass
+         */
+        public function setInstanceClass($instanceClass)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstanceClass()
+        {
+        }
+        /**
+         * Configuration for third-party Python runtime libraries that are required by
+         * the application.Only returned in GET requests if view=FULL is set.
+         *
+         * @param Library[] $libraries
+         */
+        public function setLibraries($libraries)
+        {
+        }
+        /**
+         * @return Library[]
+         */
+        public function getLibraries()
+        {
+        }
+        /**
+         * Configures liveness health checking for instances. Unhealthy instances are
+         * stopped and replaced with new instances
+         *
+         * @param LivenessCheck $livenessCheck
+         */
+        public function setLivenessCheck(LivenessCheck $livenessCheck)
+        {
+        }
+        /**
+         * @return LivenessCheck
+         */
+        public function getLivenessCheck()
+        {
+        }
+        /**
+         * A service with manual scaling runs continuously, allowing you to perform
+         * complex initialization and rely on the state of its memory over time.
+         * Manually scaled versions are sometimes referred to as "backends".
+         *
+         * @param ManualScaling $manualScaling
+         */
+        public function setManualScaling(ManualScaling $manualScaling)
+        {
+        }
+        /**
+         * @return ManualScaling
+         */
+        public function getManualScaling()
+        {
+        }
+        /**
+         * Output only. Full path to the Version resource in the API. Example:
+         * apps/myapp/services/default/versions/v1.@OutputOnly
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Extra network settings. Only applicable in the App Engine flexible
+         * environment.
+         *
+         * @param Network $network
+         */
+        public function setNetwork(Network $network)
+        {
+        }
+        /**
+         * @return Network
+         */
+        public function getNetwork()
+        {
+        }
+        /**
+         * Files that match this pattern will not be built into this version. Only
+         * applicable for Go runtimes.Only returned in GET requests if view=FULL is
+         * set.
+         *
+         * @param string $nobuildFilesRegex
+         */
+        public function setNobuildFilesRegex($nobuildFilesRegex)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNobuildFilesRegex()
+        {
+        }
+        /**
+         * Configures readiness health checking for instances. Unhealthy instances are
+         * not put into the backend traffic rotation.
+         *
+         * @param ReadinessCheck $readinessCheck
+         */
+        public function setReadinessCheck(ReadinessCheck $readinessCheck)
+        {
+        }
+        /**
+         * @return ReadinessCheck
+         */
+        public function getReadinessCheck()
+        {
+        }
+        /**
+         * Machine resources for this version. Only applicable in the App Engine
+         * flexible environment.
+         *
+         * @param Resources $resources
+         */
+        public function setResources(Resources $resources)
+        {
+        }
+        /**
+         * @return Resources
+         */
+        public function getResources()
+        {
+        }
+        /**
+         * Desired runtime. Example: python27.
+         *
+         * @param string $runtime
+         */
+        public function setRuntime($runtime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRuntime()
+        {
+        }
+        /**
+         * The version of the API in the given runtime environment. Please see the
+         * app.yaml reference for valid values at
+         * https://cloud.google.com/appengine/docs/standard//config/appref
+         *
+         * @param string $runtimeApiVersion
+         */
+        public function setRuntimeApiVersion($runtimeApiVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRuntimeApiVersion()
+        {
+        }
+        /**
+         * The channel of the runtime to use. Only available for some runtimes.
+         * Defaults to the default channel.
+         *
+         * @param string $runtimeChannel
+         */
+        public function setRuntimeChannel($runtimeChannel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRuntimeChannel()
+        {
+        }
+        /**
+         * The path or name of the app's main executable.
+         *
+         * @param string $runtimeMainExecutablePath
+         */
+        public function setRuntimeMainExecutablePath($runtimeMainExecutablePath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRuntimeMainExecutablePath()
+        {
+        }
+        /**
+         * The identity that the deployed version will run as. Admin API will use the
+         * App Engine Appspot service account as default if this field is neither
+         * provided in app.yaml file nor through CLI flag.
+         *
+         * @param string $serviceAccount
+         */
+        public function setServiceAccount($serviceAccount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceAccount()
+        {
+        }
+        /**
+         * Current serving status of this version. Only the versions with a SERVING
+         * status create instances and can be billed.SERVING_STATUS_UNSPECIFIED is an
+         * invalid value. Defaults to SERVING.
+         *
+         * Accepted values: SERVING_STATUS_UNSPECIFIED, SERVING, STOPPED
+         *
+         * @param self::SERVING_STATUS_* $servingStatus
+         */
+        public function setServingStatus($servingStatus)
+        {
+        }
+        /**
+         * @return self::SERVING_STATUS_*
+         */
+        public function getServingStatus()
+        {
+        }
+        /**
+         * Whether multiple requests can be dispatched to this version at once.
+         *
+         * @param bool $threadsafe
+         */
+        public function setThreadsafe($threadsafe)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getThreadsafe()
+        {
+        }
+        /**
+         * Output only. Serving URL for this version. Example: "https://myversion-dot-
+         * myservice-dot-myapp.appspot.com"@OutputOnly
+         *
+         * @param string $versionUrl
+         */
+        public function setVersionUrl($versionUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVersionUrl()
+        {
+        }
+        /**
+         * Whether to deploy this version in a container on a virtual machine.
+         *
+         * @param bool $vm
+         */
+        public function setVm($vm)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getVm()
+        {
+        }
+        /**
+         * Enables VPC connectivity for standard apps.
+         *
+         * @param VpcAccessConnector $vpcAccessConnector
+         */
+        public function setVpcAccessConnector(VpcAccessConnector $vpcAccessConnector)
+        {
+        }
+        /**
+         * @return VpcAccessConnector
+         */
+        public function getVpcAccessConnector()
+        {
+        }
+        /**
+         * The Google Compute Engine zones that are supported by this version in the
+         * App Engine flexible environment. Deprecated.
+         *
+         * @param string[] $zones
+         */
+        public function setZones($zones)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getZones()
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Appengine\Version registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Appengine_Version extends \Google\Service\Appengine\Version
     {
     }
 }

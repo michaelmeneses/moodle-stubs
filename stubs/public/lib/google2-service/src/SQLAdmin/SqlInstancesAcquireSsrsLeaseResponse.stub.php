@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\SQLAdmin;
-
-class SqlInstancesAcquireSsrsLeaseResponse extends \Google\Model
-{
-    /**
-     * The unique identifier for this operation.
-     *
-     * @var string
-     */
-    public $operationId;
-    /**
-     * The unique identifier for this operation.
-     *
-     * @param string $operationId
-     */
-    public function setOperationId($operationId)
+namespace Google\Service\SQLAdmin {
+    class SqlInstancesAcquireSsrsLeaseResponse extends \Google\Model
     {
+        /**
+         * The unique identifier for this operation.
+         *
+         * @var string
+         */
+        public $operationId;
+        /**
+         * The unique identifier for this operation.
+         *
+         * @param string $operationId
+         */
+        public function setOperationId($operationId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperationId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\SQLAdmin\SqlInstancesAcquireSsrsLeaseResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOperationId()
+    class Google_Service_SQLAdmin_SqlInstancesAcquireSsrsLeaseResponse extends \Google\Service\SQLAdmin\SqlInstancesAcquireSsrsLeaseResponse
     {
     }
 }

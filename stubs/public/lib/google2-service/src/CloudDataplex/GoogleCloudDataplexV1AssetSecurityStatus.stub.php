@@ -21,88 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudDataplex;
-
-class GoogleCloudDataplexV1AssetSecurityStatus extends \Google\Model
-{
-    /**
-     * State unspecified.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * Security policy has been successfully applied to the attached resource.
-     */
-    public const STATE_READY = 'READY';
-    /**
-     * Security policy is in the process of being applied to the attached
-     * resource.
-     */
-    public const STATE_APPLYING = 'APPLYING';
-    /**
-     * Security policy could not be applied to the attached resource due to
-     * errors.
-     */
-    public const STATE_ERROR = 'ERROR';
-    /**
-     * Additional information about the current state.
-     *
-     * @var string
-     */
-    public $message;
-    /**
-     * The current state of the security policy applied to the attached resource.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Last update time of the status.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Additional information about the current state.
-     *
-     * @param string $message
-     */
-    public function setMessage($message)
+namespace Google\Service\CloudDataplex {
+    class GoogleCloudDataplexV1AssetSecurityStatus extends \Google\Model
     {
+        /**
+         * State unspecified.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * Security policy has been successfully applied to the attached resource.
+         */
+        public const STATE_READY = 'READY';
+        /**
+         * Security policy is in the process of being applied to the attached
+         * resource.
+         */
+        public const STATE_APPLYING = 'APPLYING';
+        /**
+         * Security policy could not be applied to the attached resource due to
+         * errors.
+         */
+        public const STATE_ERROR = 'ERROR';
+        /**
+         * Additional information about the current state.
+         *
+         * @var string
+         */
+        public $message;
+        /**
+         * The current state of the security policy applied to the attached resource.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Last update time of the status.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Additional information about the current state.
+         *
+         * @param string $message
+         */
+        public function setMessage($message)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMessage()
+        {
+        }
+        /**
+         * The current state of the security policy applied to the attached resource.
+         *
+         * Accepted values: STATE_UNSPECIFIED, READY, APPLYING, ERROR
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
+        /**
+         * Last update time of the status.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudDataplex\GoogleCloudDataplexV1AssetSecurityStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMessage()
-    {
-    }
-    /**
-     * The current state of the security policy applied to the attached resource.
-     *
-     * Accepted values: STATE_UNSPECIFIED, READY, APPLYING, ERROR
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
-    {
-    }
-    /**
-     * Last update time of the status.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_CloudDataplex_GoogleCloudDataplexV1AssetSecurityStatus extends \Google\Service\CloudDataplex\GoogleCloudDataplexV1AssetSecurityStatus
     {
     }
 }

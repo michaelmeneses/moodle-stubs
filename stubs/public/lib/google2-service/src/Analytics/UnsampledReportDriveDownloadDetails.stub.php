@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class UnsampledReportDriveDownloadDetails extends \Google\Model
-{
-    /**
-     * Id of the document/file containing the report data.
-     *
-     * @var string
-     */
-    public $documentId;
-    /**
-     * Id of the document/file containing the report data.
-     *
-     * @param string $documentId
-     */
-    public function setDocumentId($documentId)
+namespace Google\Service\Analytics {
+    class UnsampledReportDriveDownloadDetails extends \Google\Model
     {
+        /**
+         * Id of the document/file containing the report data.
+         *
+         * @var string
+         */
+        public $documentId;
+        /**
+         * Id of the document/file containing the report data.
+         *
+         * @param string $documentId
+         */
+        public function setDocumentId($documentId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDocumentId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Analytics\UnsampledReportDriveDownloadDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocumentId()
+    class Google_Service_Analytics_UnsampledReportDriveDownloadDetails extends \Google\Service\Analytics\UnsampledReportDriveDownloadDetails
     {
     }
 }

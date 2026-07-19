@@ -21,24 +21,33 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class ClassifyTextRequest extends \Google\Model
-{
-    protected $documentType = Document::class;
-    protected $documentDataType = '';
-    /**
-     * Required. Input document.
-     *
-     * @param Document $document
-     */
-    public function setDocument(Document $document)
+namespace Google\Service\CloudNaturalLanguage {
+    class ClassifyTextRequest extends \Google\Model
     {
+        protected $documentType = Document::class;
+        protected $documentDataType = '';
+        /**
+         * Required. Input document.
+         *
+         * @param Document $document
+         */
+        public function setDocument(Document $document)
+        {
+        }
+        /**
+         * @return Document
+         */
+        public function getDocument()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Document
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\ClassifyTextRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDocument()
+    class Google_Service_CloudNaturalLanguage_ClassifyTextRequest extends \Google\Service\CloudNaturalLanguage\ClassifyTextRequest
     {
     }
 }

@@ -21,66 +21,75 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataFusion;
-
-class ListAvailableVersionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'versions';
-    protected $availableVersionsType = Version::class;
-    protected $availableVersionsDataType = 'array';
-    /**
-     * Token to retrieve the next page of results or empty if there are no more
-     * results in the list.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $versionsType = Version::class;
-    protected $versionsDataType = 'array';
-    /**
-     * Represents a list of versions that are supported. Deprecated: Use versions
-     * field instead.
-     *
-     * @deprecated
-     * @param Version[] $availableVersions
-     */
-    public function setAvailableVersions($availableVersions)
+namespace Google\Service\DataFusion {
+    class ListAvailableVersionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'versions';
+        protected $availableVersionsType = Version::class;
+        protected $availableVersionsDataType = 'array';
+        /**
+         * Token to retrieve the next page of results or empty if there are no more
+         * results in the list.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $versionsType = Version::class;
+        protected $versionsDataType = 'array';
+        /**
+         * Represents a list of versions that are supported. Deprecated: Use versions
+         * field instead.
+         *
+         * @deprecated
+         * @param Version[] $availableVersions
+         */
+        public function setAvailableVersions($availableVersions)
+        {
+        }
+        /**
+         * @deprecated
+         * @return Version[]
+         */
+        public function getAvailableVersions()
+        {
+        }
+        /**
+         * Token to retrieve the next page of results or empty if there are no more
+         * results in the list.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * Represents a list of all versions.
+         *
+         * @param Version[] $versions
+         */
+        public function setVersions($versions)
+        {
+        }
+        /**
+         * @return Version[]
+         */
+        public function getVersions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @deprecated
-     * @return Version[]
+     * Runtime class alias of \Google\Service\DataFusion\ListAvailableVersionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAvailableVersions()
-    {
-    }
-    /**
-     * Token to retrieve the next page of results or empty if there are no more
-     * results in the list.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * Represents a list of all versions.
-     *
-     * @param Version[] $versions
-     */
-    public function setVersions($versions)
-    {
-    }
-    /**
-     * @return Version[]
-     */
-    public function getVersions()
+    class Google_Service_DataFusion_ListAvailableVersionsResponse extends \Google\Service\DataFusion\ListAvailableVersionsResponse
     {
     }
 }

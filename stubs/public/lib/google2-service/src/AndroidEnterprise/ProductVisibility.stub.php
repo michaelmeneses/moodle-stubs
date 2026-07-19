@@ -21,73 +21,82 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidEnterprise;
-
-class ProductVisibility extends \Google\Collection
-{
-    protected $collection_key = 'tracks';
-    /**
-     * The product ID to make visible to the user. Required for each item in the
-     * productVisibility list.
-     *
-     * @var string
-     */
-    public $productId;
-    /**
-     * Grants the user visibility to the specified product track(s), identified by
-     * trackIds.
-     *
-     * @var string[]
-     */
-    public $trackIds;
-    /**
-     * Deprecated. Use trackIds instead.
-     *
-     * @var string[]
-     */
-    public $tracks;
-    /**
-     * The product ID to make visible to the user. Required for each item in the
-     * productVisibility list.
-     *
-     * @param string $productId
-     */
-    public function setProductId($productId)
+namespace Google\Service\AndroidEnterprise {
+    class ProductVisibility extends \Google\Collection
     {
+        protected $collection_key = 'tracks';
+        /**
+         * The product ID to make visible to the user. Required for each item in the
+         * productVisibility list.
+         *
+         * @var string
+         */
+        public $productId;
+        /**
+         * Grants the user visibility to the specified product track(s), identified by
+         * trackIds.
+         *
+         * @var string[]
+         */
+        public $trackIds;
+        /**
+         * Deprecated. Use trackIds instead.
+         *
+         * @var string[]
+         */
+        public $tracks;
+        /**
+         * The product ID to make visible to the user. Required for each item in the
+         * productVisibility list.
+         *
+         * @param string $productId
+         */
+        public function setProductId($productId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductId()
+        {
+        }
+        /**
+         * Grants the user visibility to the specified product track(s), identified by
+         * trackIds.
+         *
+         * @param string[] $trackIds
+         */
+        public function setTrackIds($trackIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTrackIds()
+        {
+        }
+        /**
+         * Deprecated. Use trackIds instead.
+         *
+         * @param string[] $tracks
+         */
+        public function setTracks($tracks)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getTracks()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidEnterprise\ProductVisibility registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProductId()
-    {
-    }
-    /**
-     * Grants the user visibility to the specified product track(s), identified by
-     * trackIds.
-     *
-     * @param string[] $trackIds
-     */
-    public function setTrackIds($trackIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTrackIds()
-    {
-    }
-    /**
-     * Deprecated. Use trackIds instead.
-     *
-     * @param string[] $tracks
-     */
-    public function setTracks($tracks)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getTracks()
+    class Google_Service_AndroidEnterprise_ProductVisibility extends \Google\Service\AndroidEnterprise\ProductVisibility
     {
     }
 }

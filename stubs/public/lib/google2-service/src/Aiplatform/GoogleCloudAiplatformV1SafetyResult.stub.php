@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SafetyResult extends \Google\Model
-{
-    /**
-     * Output only. Confidence for safety score.
-     *
-     * @var float
-     */
-    public $confidence;
-    /**
-     * Output only. Explanation for safety score.
-     *
-     * @var string
-     */
-    public $explanation;
-    /**
-     * Output only. Safety score.
-     *
-     * @var float
-     */
-    public $score;
-    /**
-     * Output only. Confidence for safety score.
-     *
-     * @param float $confidence
-     */
-    public function setConfidence($confidence)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SafetyResult extends \Google\Model
     {
+        /**
+         * Output only. Confidence for safety score.
+         *
+         * @var float
+         */
+        public $confidence;
+        /**
+         * Output only. Explanation for safety score.
+         *
+         * @var string
+         */
+        public $explanation;
+        /**
+         * Output only. Safety score.
+         *
+         * @var float
+         */
+        public $score;
+        /**
+         * Output only. Confidence for safety score.
+         *
+         * @param float $confidence
+         */
+        public function setConfidence($confidence)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getConfidence()
+        {
+        }
+        /**
+         * Output only. Explanation for safety score.
+         *
+         * @param string $explanation
+         */
+        public function setExplanation($explanation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExplanation()
+        {
+        }
+        /**
+         * Output only. Safety score.
+         *
+         * @param float $score
+         */
+        public function setScore($score)
+        {
+        }
+        /**
+         * @return float
+         */
+        public function getScore()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return float
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SafetyResult registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConfidence()
-    {
-    }
-    /**
-     * Output only. Explanation for safety score.
-     *
-     * @param string $explanation
-     */
-    public function setExplanation($explanation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getExplanation()
-    {
-    }
-    /**
-     * Output only. Safety score.
-     *
-     * @param float $score
-     */
-    public function setScore($score)
-    {
-    }
-    /**
-     * @return float
-     */
-    public function getScore()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SafetyResult extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SafetyResult
     {
     }
 }

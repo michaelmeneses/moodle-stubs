@@ -21,104 +21,113 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class LocalinventoryCustomBatchRequestEntry extends \Google\Model
-{
-    /**
-     * An entry ID, unique within the batch request.
-     *
-     * @var string
-     */
-    public $batchId;
-    protected $localInventoryType = LocalInventory::class;
-    protected $localInventoryDataType = '';
-    /**
-     * The ID of the managing account.
-     *
-     * @var string
-     */
-    public $merchantId;
-    /**
-     * Method of the batch request entry. Acceptable values are: - "`insert`"
-     *
-     * @var string
-     */
-    public $method;
-    /**
-     * The ID of the product for which to update local inventory.
-     *
-     * @var string
-     */
-    public $productId;
-    /**
-     * An entry ID, unique within the batch request.
-     *
-     * @param string $batchId
-     */
-    public function setBatchId($batchId)
+namespace Google\Service\ShoppingContent {
+    class LocalinventoryCustomBatchRequestEntry extends \Google\Model
     {
+        /**
+         * An entry ID, unique within the batch request.
+         *
+         * @var string
+         */
+        public $batchId;
+        protected $localInventoryType = LocalInventory::class;
+        protected $localInventoryDataType = '';
+        /**
+         * The ID of the managing account.
+         *
+         * @var string
+         */
+        public $merchantId;
+        /**
+         * Method of the batch request entry. Acceptable values are: - "`insert`"
+         *
+         * @var string
+         */
+        public $method;
+        /**
+         * The ID of the product for which to update local inventory.
+         *
+         * @var string
+         */
+        public $productId;
+        /**
+         * An entry ID, unique within the batch request.
+         *
+         * @param string $batchId
+         */
+        public function setBatchId($batchId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBatchId()
+        {
+        }
+        /**
+         * Local inventory of the product.
+         *
+         * @param LocalInventory $localInventory
+         */
+        public function setLocalInventory(LocalInventory $localInventory)
+        {
+        }
+        /**
+         * @return LocalInventory
+         */
+        public function getLocalInventory()
+        {
+        }
+        /**
+         * The ID of the managing account.
+         *
+         * @param string $merchantId
+         */
+        public function setMerchantId($merchantId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMerchantId()
+        {
+        }
+        /**
+         * Method of the batch request entry. Acceptable values are: - "`insert`"
+         *
+         * @param string $method
+         */
+        public function setMethod($method)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMethod()
+        {
+        }
+        /**
+         * The ID of the product for which to update local inventory.
+         *
+         * @param string $productId
+         */
+        public function setProductId($productId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProductId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\LocalinventoryCustomBatchRequestEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBatchId()
-    {
-    }
-    /**
-     * Local inventory of the product.
-     *
-     * @param LocalInventory $localInventory
-     */
-    public function setLocalInventory(LocalInventory $localInventory)
-    {
-    }
-    /**
-     * @return LocalInventory
-     */
-    public function getLocalInventory()
-    {
-    }
-    /**
-     * The ID of the managing account.
-     *
-     * @param string $merchantId
-     */
-    public function setMerchantId($merchantId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMerchantId()
-    {
-    }
-    /**
-     * Method of the batch request entry. Acceptable values are: - "`insert`"
-     *
-     * @param string $method
-     */
-    public function setMethod($method)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMethod()
-    {
-    }
-    /**
-     * The ID of the product for which to update local inventory.
-     *
-     * @param string $productId
-     */
-    public function setProductId($productId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProductId()
+    class Google_Service_ShoppingContent_LocalinventoryCustomBatchRequestEntry extends \Google\Service\ShoppingContent\LocalinventoryCustomBatchRequestEntry
     {
     }
 }

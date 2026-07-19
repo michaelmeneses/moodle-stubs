@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class LanguagesListResponse extends \Google\Collection
-{
-    protected $collection_key = 'languages';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#languagesListResponse".
-     *
-     * @var string
-     */
-    public $kind;
-    protected $languagesType = Language::class;
-    protected $languagesDataType = 'array';
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#languagesListResponse".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
+namespace Google\Service\Dfareporting {
+    class LanguagesListResponse extends \Google\Collection
     {
+        protected $collection_key = 'languages';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#languagesListResponse".
+         *
+         * @var string
+         */
+        public $kind;
+        protected $languagesType = Language::class;
+        protected $languagesDataType = 'array';
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#languagesListResponse".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Language collection.
+         *
+         * @param Language[] $languages
+         */
+        public function setLanguages($languages)
+        {
+        }
+        /**
+         * @return Language[]
+         */
+        public function getLanguages()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\LanguagesListResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getKind()
-    {
-    }
-    /**
-     * Language collection.
-     *
-     * @param Language[] $languages
-     */
-    public function setLanguages($languages)
-    {
-    }
-    /**
-     * @return Language[]
-     */
-    public function getLanguages()
+    class Google_Service_Dfareporting_LanguagesListResponse extends \Google\Service\Dfareporting\LanguagesListResponse
     {
     }
 }

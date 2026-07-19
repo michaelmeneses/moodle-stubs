@@ -21,126 +21,135 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class AccountStatus extends \Google\Collection
-{
-    protected $collection_key = 'products';
-    /**
-     * The ID of the account for which the status is reported.
-     *
-     * @var string
-     */
-    public $accountId;
-    protected $accountLevelIssuesType = AccountStatusAccountLevelIssue::class;
-    protected $accountLevelIssuesDataType = 'array';
-    /**
-     * How the account is managed. Acceptable values are: - "`manual`" -
-     * "`automatic`"
-     *
-     * @var string
-     */
-    public $accountManagement;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "`content#accountStatus`"
-     *
-     * @var string
-     */
-    public $kind;
-    protected $productsType = AccountStatusProducts::class;
-    protected $productsDataType = 'array';
-    /**
-     * Whether the account's website is claimed or not.
-     *
-     * @var bool
-     */
-    public $websiteClaimed;
-    /**
-     * The ID of the account for which the status is reported.
-     *
-     * @param string $accountId
-     */
-    public function setAccountId($accountId)
+namespace Google\Service\ShoppingContent {
+    class AccountStatus extends \Google\Collection
     {
+        protected $collection_key = 'products';
+        /**
+         * The ID of the account for which the status is reported.
+         *
+         * @var string
+         */
+        public $accountId;
+        protected $accountLevelIssuesType = AccountStatusAccountLevelIssue::class;
+        protected $accountLevelIssuesDataType = 'array';
+        /**
+         * How the account is managed. Acceptable values are: - "`manual`" -
+         * "`automatic`"
+         *
+         * @var string
+         */
+        public $accountManagement;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "`content#accountStatus`"
+         *
+         * @var string
+         */
+        public $kind;
+        protected $productsType = AccountStatusProducts::class;
+        protected $productsDataType = 'array';
+        /**
+         * Whether the account's website is claimed or not.
+         *
+         * @var bool
+         */
+        public $websiteClaimed;
+        /**
+         * The ID of the account for which the status is reported.
+         *
+         * @param string $accountId
+         */
+        public function setAccountId($accountId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountId()
+        {
+        }
+        /**
+         * A list of account level issues.
+         *
+         * @param AccountStatusAccountLevelIssue[] $accountLevelIssues
+         */
+        public function setAccountLevelIssues($accountLevelIssues)
+        {
+        }
+        /**
+         * @return AccountStatusAccountLevelIssue[]
+         */
+        public function getAccountLevelIssues()
+        {
+        }
+        /**
+         * How the account is managed. Acceptable values are: - "`manual`" -
+         * "`automatic`"
+         *
+         * @param string $accountManagement
+         */
+        public function setAccountManagement($accountManagement)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAccountManagement()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "`content#accountStatus`"
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * List of product-related data by channel, destination, and country. Data in
+         * this field may be delayed by up to 30 minutes.
+         *
+         * @param AccountStatusProducts[] $products
+         */
+        public function setProducts($products)
+        {
+        }
+        /**
+         * @return AccountStatusProducts[]
+         */
+        public function getProducts()
+        {
+        }
+        /**
+         * Whether the account's website is claimed or not.
+         *
+         * @param bool $websiteClaimed
+         */
+        public function setWebsiteClaimed($websiteClaimed)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getWebsiteClaimed()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ShoppingContent\AccountStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountId()
-    {
-    }
-    /**
-     * A list of account level issues.
-     *
-     * @param AccountStatusAccountLevelIssue[] $accountLevelIssues
-     */
-    public function setAccountLevelIssues($accountLevelIssues)
-    {
-    }
-    /**
-     * @return AccountStatusAccountLevelIssue[]
-     */
-    public function getAccountLevelIssues()
-    {
-    }
-    /**
-     * How the account is managed. Acceptable values are: - "`manual`" -
-     * "`automatic`"
-     *
-     * @param string $accountManagement
-     */
-    public function setAccountManagement($accountManagement)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getAccountManagement()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "`content#accountStatus`"
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * List of product-related data by channel, destination, and country. Data in
-     * this field may be delayed by up to 30 minutes.
-     *
-     * @param AccountStatusProducts[] $products
-     */
-    public function setProducts($products)
-    {
-    }
-    /**
-     * @return AccountStatusProducts[]
-     */
-    public function getProducts()
-    {
-    }
-    /**
-     * Whether the account's website is claimed or not.
-     *
-     * @param bool $websiteClaimed
-     */
-    public function setWebsiteClaimed($websiteClaimed)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getWebsiteClaimed()
+    class Google_Service_ShoppingContent_AccountStatus extends \Google\Service\ShoppingContent\AccountStatus
     {
     }
 }

@@ -21,105 +21,114 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AnalyticsHub;
-
-class BigQueryDatasetSource extends \Google\Collection
-{
-    protected $collection_key = 'selectedResources';
-    /**
-     * Optional. Resource name of the dataset source for this listing. e.g.
-     * `projects/myproject/datasets/123`
-     *
-     * @var string
-     */
-    public $dataset;
-    protected $effectiveReplicasType = Replica::class;
-    protected $effectiveReplicasDataType = 'array';
-    /**
-     * Optional. A list of regions where the publisher has created shared dataset
-     * replicas.
-     *
-     * @var string[]
-     */
-    public $replicaLocations;
-    protected $restrictedExportPolicyType = RestrictedExportPolicy::class;
-    protected $restrictedExportPolicyDataType = '';
-    protected $selectedResourcesType = SelectedResource::class;
-    protected $selectedResourcesDataType = 'array';
-    /**
-     * Optional. Resource name of the dataset source for this listing. e.g.
-     * `projects/myproject/datasets/123`
-     *
-     * @param string $dataset
-     */
-    public function setDataset($dataset)
+namespace Google\Service\AnalyticsHub {
+    class BigQueryDatasetSource extends \Google\Collection
     {
+        protected $collection_key = 'selectedResources';
+        /**
+         * Optional. Resource name of the dataset source for this listing. e.g.
+         * `projects/myproject/datasets/123`
+         *
+         * @var string
+         */
+        public $dataset;
+        protected $effectiveReplicasType = Replica::class;
+        protected $effectiveReplicasDataType = 'array';
+        /**
+         * Optional. A list of regions where the publisher has created shared dataset
+         * replicas.
+         *
+         * @var string[]
+         */
+        public $replicaLocations;
+        protected $restrictedExportPolicyType = RestrictedExportPolicy::class;
+        protected $restrictedExportPolicyDataType = '';
+        protected $selectedResourcesType = SelectedResource::class;
+        protected $selectedResourcesDataType = 'array';
+        /**
+         * Optional. Resource name of the dataset source for this listing. e.g.
+         * `projects/myproject/datasets/123`
+         *
+         * @param string $dataset
+         */
+        public function setDataset($dataset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataset()
+        {
+        }
+        /**
+         * Output only. Server-owned effective state of replicas. Contains both
+         * primary and secondary replicas. Each replica includes a system-computed
+         * (output-only) state and primary designation.
+         *
+         * @param Replica[] $effectiveReplicas
+         */
+        public function setEffectiveReplicas($effectiveReplicas)
+        {
+        }
+        /**
+         * @return Replica[]
+         */
+        public function getEffectiveReplicas()
+        {
+        }
+        /**
+         * Optional. A list of regions where the publisher has created shared dataset
+         * replicas.
+         *
+         * @param string[] $replicaLocations
+         */
+        public function setReplicaLocations($replicaLocations)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getReplicaLocations()
+        {
+        }
+        /**
+         * Optional. If set, restricted export policy will be propagated and enforced
+         * on the linked dataset.
+         *
+         * @param RestrictedExportPolicy $restrictedExportPolicy
+         */
+        public function setRestrictedExportPolicy(RestrictedExportPolicy $restrictedExportPolicy)
+        {
+        }
+        /**
+         * @return RestrictedExportPolicy
+         */
+        public function getRestrictedExportPolicy()
+        {
+        }
+        /**
+         * Optional. Resource in this dataset that is selectively shared. This field
+         * is required for data clean room exchanges.
+         *
+         * @param SelectedResource[] $selectedResources
+         */
+        public function setSelectedResources($selectedResources)
+        {
+        }
+        /**
+         * @return SelectedResource[]
+         */
+        public function getSelectedResources()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AnalyticsHub\BigQueryDatasetSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDataset()
-    {
-    }
-    /**
-     * Output only. Server-owned effective state of replicas. Contains both
-     * primary and secondary replicas. Each replica includes a system-computed
-     * (output-only) state and primary designation.
-     *
-     * @param Replica[] $effectiveReplicas
-     */
-    public function setEffectiveReplicas($effectiveReplicas)
-    {
-    }
-    /**
-     * @return Replica[]
-     */
-    public function getEffectiveReplicas()
-    {
-    }
-    /**
-     * Optional. A list of regions where the publisher has created shared dataset
-     * replicas.
-     *
-     * @param string[] $replicaLocations
-     */
-    public function setReplicaLocations($replicaLocations)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getReplicaLocations()
-    {
-    }
-    /**
-     * Optional. If set, restricted export policy will be propagated and enforced
-     * on the linked dataset.
-     *
-     * @param RestrictedExportPolicy $restrictedExportPolicy
-     */
-    public function setRestrictedExportPolicy(RestrictedExportPolicy $restrictedExportPolicy)
-    {
-    }
-    /**
-     * @return RestrictedExportPolicy
-     */
-    public function getRestrictedExportPolicy()
-    {
-    }
-    /**
-     * Optional. Resource in this dataset that is selectively shared. This field
-     * is required for data clean room exchanges.
-     *
-     * @param SelectedResource[] $selectedResources
-     */
-    public function setSelectedResources($selectedResources)
-    {
-    }
-    /**
-     * @return SelectedResource[]
-     */
-    public function getSelectedResources()
+    class Google_Service_AnalyticsHub_BigQueryDatasetSource extends \Google\Service\AnalyticsHub\BigQueryDatasetSource
     {
     }
 }

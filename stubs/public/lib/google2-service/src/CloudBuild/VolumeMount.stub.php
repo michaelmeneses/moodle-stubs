@@ -21,118 +21,127 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class VolumeMount extends \Google\Model
-{
-    /**
-     * Path within the container at which the volume should be mounted. Must not
-     * contain ':'.
-     *
-     * @var string
-     */
-    public $mountPath;
-    /**
-     * Name of the volume.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Mounted read-only if true, read-write otherwise (false or unspecified).
-     *
-     * @var bool
-     */
-    public $readOnly;
-    /**
-     * Path within the volume from which the container's volume should be mounted.
-     * Defaults to "" (volume's root).
-     *
-     * @var string
-     */
-    public $subPath;
-    /**
-     * Expanded path within the volume from which the container's volume should be
-     * mounted. Behaves similarly to SubPath but environment variable references
-     * $(VAR_NAME) are expanded using the container's environment. Defaults to ""
-     * (volume's root).
-     *
-     * @var string
-     */
-    public $subPathExpr;
-    /**
-     * Path within the container at which the volume should be mounted. Must not
-     * contain ':'.
-     *
-     * @param string $mountPath
-     */
-    public function setMountPath($mountPath)
+namespace Google\Service\CloudBuild {
+    class VolumeMount extends \Google\Model
     {
+        /**
+         * Path within the container at which the volume should be mounted. Must not
+         * contain ':'.
+         *
+         * @var string
+         */
+        public $mountPath;
+        /**
+         * Name of the volume.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Mounted read-only if true, read-write otherwise (false or unspecified).
+         *
+         * @var bool
+         */
+        public $readOnly;
+        /**
+         * Path within the volume from which the container's volume should be mounted.
+         * Defaults to "" (volume's root).
+         *
+         * @var string
+         */
+        public $subPath;
+        /**
+         * Expanded path within the volume from which the container's volume should be
+         * mounted. Behaves similarly to SubPath but environment variable references
+         * $(VAR_NAME) are expanded using the container's environment. Defaults to ""
+         * (volume's root).
+         *
+         * @var string
+         */
+        public $subPathExpr;
+        /**
+         * Path within the container at which the volume should be mounted. Must not
+         * contain ':'.
+         *
+         * @param string $mountPath
+         */
+        public function setMountPath($mountPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMountPath()
+        {
+        }
+        /**
+         * Name of the volume.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Mounted read-only if true, read-write otherwise (false or unspecified).
+         *
+         * @param bool $readOnly
+         */
+        public function setReadOnly($readOnly)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getReadOnly()
+        {
+        }
+        /**
+         * Path within the volume from which the container's volume should be mounted.
+         * Defaults to "" (volume's root).
+         *
+         * @param string $subPath
+         */
+        public function setSubPath($subPath)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubPath()
+        {
+        }
+        /**
+         * Expanded path within the volume from which the container's volume should be
+         * mounted. Behaves similarly to SubPath but environment variable references
+         * $(VAR_NAME) are expanded using the container's environment. Defaults to ""
+         * (volume's root).
+         *
+         * @param string $subPathExpr
+         */
+        public function setSubPathExpr($subPathExpr)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSubPathExpr()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\VolumeMount registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMountPath()
-    {
-    }
-    /**
-     * Name of the volume.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Mounted read-only if true, read-write otherwise (false or unspecified).
-     *
-     * @param bool $readOnly
-     */
-    public function setReadOnly($readOnly)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getReadOnly()
-    {
-    }
-    /**
-     * Path within the volume from which the container's volume should be mounted.
-     * Defaults to "" (volume's root).
-     *
-     * @param string $subPath
-     */
-    public function setSubPath($subPath)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubPath()
-    {
-    }
-    /**
-     * Expanded path within the volume from which the container's volume should be
-     * mounted. Behaves similarly to SubPath but environment variable references
-     * $(VAR_NAME) are expanded using the container's environment. Defaults to ""
-     * (volume's root).
-     *
-     * @param string $subPathExpr
-     */
-    public function setSubPathExpr($subPathExpr)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSubPathExpr()
+    class Google_Service_CloudBuild_VolumeMount extends \Google\Service\CloudBuild\VolumeMount
     {
     }
 }

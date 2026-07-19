@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowV2beta1ResponseMessageEndInteraction extends \Google\Model
-{
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowV2beta1ResponseMessageEndInteraction extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1ResponseMessageEndInteraction registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1ResponseMessageEndInteraction extends \Google\Service\Dialogflow\GoogleCloudDialogflowV2beta1ResponseMessageEndInteraction
+    {
+    }
 }

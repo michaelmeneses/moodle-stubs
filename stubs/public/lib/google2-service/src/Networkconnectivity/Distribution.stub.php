@@ -21,107 +21,116 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class Distribution extends \Google\Collection
-{
-    protected $collection_key = 'exemplars';
-    public $bucketCounts;
-    public $count;
-    protected $exemplarsType = Exemplar::class;
-    protected $exemplarsDataType = 'array';
-    protected $explicitBucketsType = ExplicitBuckets::class;
-    protected $explicitBucketsDataType = '';
-    protected $exponentialBucketsType = ExponentialBuckets::class;
-    protected $exponentialBucketsDataType = '';
-    protected $linearBucketsType = LinearBuckets::class;
-    protected $linearBucketsDataType = '';
-    public $maximum;
-    public $mean;
-    public $minimum;
-    public $sumOfSquaredDeviation;
-    public function setBucketCounts($bucketCounts)
+namespace Google\Service\Networkconnectivity {
+    class Distribution extends \Google\Collection
     {
+        protected $collection_key = 'exemplars';
+        public $bucketCounts;
+        public $count;
+        protected $exemplarsType = Exemplar::class;
+        protected $exemplarsDataType = 'array';
+        protected $explicitBucketsType = ExplicitBuckets::class;
+        protected $explicitBucketsDataType = '';
+        protected $exponentialBucketsType = ExponentialBuckets::class;
+        protected $exponentialBucketsDataType = '';
+        protected $linearBucketsType = LinearBuckets::class;
+        protected $linearBucketsDataType = '';
+        public $maximum;
+        public $mean;
+        public $minimum;
+        public $sumOfSquaredDeviation;
+        public function setBucketCounts($bucketCounts)
+        {
+        }
+        public function getBucketCounts()
+        {
+        }
+        public function setCount($count)
+        {
+        }
+        public function getCount()
+        {
+        }
+        /**
+         * @param Exemplar[]
+         */
+        public function setExemplars($exemplars)
+        {
+        }
+        /**
+         * @return Exemplar[]
+         */
+        public function getExemplars()
+        {
+        }
+        /**
+         * @param ExplicitBuckets
+         */
+        public function setExplicitBuckets(ExplicitBuckets $explicitBuckets)
+        {
+        }
+        /**
+         * @return ExplicitBuckets
+         */
+        public function getExplicitBuckets()
+        {
+        }
+        /**
+         * @param ExponentialBuckets
+         */
+        public function setExponentialBuckets(ExponentialBuckets $exponentialBuckets)
+        {
+        }
+        /**
+         * @return ExponentialBuckets
+         */
+        public function getExponentialBuckets()
+        {
+        }
+        /**
+         * @param LinearBuckets
+         */
+        public function setLinearBuckets(LinearBuckets $linearBuckets)
+        {
+        }
+        /**
+         * @return LinearBuckets
+         */
+        public function getLinearBuckets()
+        {
+        }
+        public function setMaximum($maximum)
+        {
+        }
+        public function getMaximum()
+        {
+        }
+        public function setMean($mean)
+        {
+        }
+        public function getMean()
+        {
+        }
+        public function setMinimum($minimum)
+        {
+        }
+        public function getMinimum()
+        {
+        }
+        public function setSumOfSquaredDeviation($sumOfSquaredDeviation)
+        {
+        }
+        public function getSumOfSquaredDeviation()
+        {
+        }
     }
-    public function getBucketCounts()
-    {
-    }
-    public function setCount($count)
-    {
-    }
-    public function getCount()
-    {
-    }
+}
+namespace {
     /**
-     * @param Exemplar[]
+     * Runtime class alias of \Google\Service\Networkconnectivity\Distribution registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setExemplars($exemplars)
-    {
-    }
-    /**
-     * @return Exemplar[]
-     */
-    public function getExemplars()
-    {
-    }
-    /**
-     * @param ExplicitBuckets
-     */
-    public function setExplicitBuckets(ExplicitBuckets $explicitBuckets)
-    {
-    }
-    /**
-     * @return ExplicitBuckets
-     */
-    public function getExplicitBuckets()
-    {
-    }
-    /**
-     * @param ExponentialBuckets
-     */
-    public function setExponentialBuckets(ExponentialBuckets $exponentialBuckets)
-    {
-    }
-    /**
-     * @return ExponentialBuckets
-     */
-    public function getExponentialBuckets()
-    {
-    }
-    /**
-     * @param LinearBuckets
-     */
-    public function setLinearBuckets(LinearBuckets $linearBuckets)
-    {
-    }
-    /**
-     * @return LinearBuckets
-     */
-    public function getLinearBuckets()
-    {
-    }
-    public function setMaximum($maximum)
-    {
-    }
-    public function getMaximum()
-    {
-    }
-    public function setMean($mean)
-    {
-    }
-    public function getMean()
-    {
-    }
-    public function setMinimum($minimum)
-    {
-    }
-    public function getMinimum()
-    {
-    }
-    public function setSumOfSquaredDeviation($sumOfSquaredDeviation)
-    {
-    }
-    public function getSumOfSquaredDeviation()
+    class Google_Service_Networkconnectivity_Distribution extends \Google\Service\Networkconnectivity\Distribution
     {
     }
 }

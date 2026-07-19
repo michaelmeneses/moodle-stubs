@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedActivityFeedAnnotationDataUserInfo extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $updaterCountDisplayType;
-    /**
-     * @var int
-     */
-    public $updaterCountToShow;
-    protected $updaterToShowType = UserId::class;
-    protected $updaterToShowDataType = '';
-    /**
-     * @param string
-     */
-    public function setUpdaterCountDisplayType($updaterCountDisplayType)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedActivityFeedAnnotationDataUserInfo extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $updaterCountDisplayType;
+        /**
+         * @var int
+         */
+        public $updaterCountToShow;
+        protected $updaterToShowType = UserId::class;
+        protected $updaterToShowDataType = '';
+        /**
+         * @param string
+         */
+        public function setUpdaterCountDisplayType($updaterCountDisplayType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdaterCountDisplayType()
+        {
+        }
+        /**
+         * @param int
+         */
+        public function setUpdaterCountToShow($updaterCountToShow)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getUpdaterCountToShow()
+        {
+        }
+        /**
+         * @param UserId
+         */
+        public function setUpdaterToShow(UserId $updaterToShow)
+        {
+        }
+        /**
+         * @return UserId
+         */
+        public function getUpdaterToShow()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedActivityFeedAnnotationDataUserInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUpdaterCountDisplayType()
-    {
-    }
-    /**
-     * @param int
-     */
-    public function setUpdaterCountToShow($updaterCountToShow)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getUpdaterCountToShow()
-    {
-    }
-    /**
-     * @param UserId
-     */
-    public function setUpdaterToShow(UserId $updaterToShow)
-    {
-    }
-    /**
-     * @return UserId
-     */
-    public function getUpdaterToShow()
+    class Google_Service_CloudSearch_AppsDynamiteSharedActivityFeedAnnotationDataUserInfo extends \Google\Service\CloudSearch\AppsDynamiteSharedActivityFeedAnnotationDataUserInfo
     {
     }
 }

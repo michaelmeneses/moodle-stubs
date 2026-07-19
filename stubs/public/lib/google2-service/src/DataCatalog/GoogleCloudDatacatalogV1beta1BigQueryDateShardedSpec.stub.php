@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataCatalog;
-
-class GoogleCloudDatacatalogV1beta1BigQueryDateShardedSpec extends \Google\Model
-{
-    public $dataset;
-    public $shardCount;
-    public $tablePrefix;
-    public function setDataset($dataset)
+namespace Google\Service\DataCatalog {
+    class GoogleCloudDatacatalogV1beta1BigQueryDateShardedSpec extends \Google\Model
     {
+        public $dataset;
+        public $shardCount;
+        public $tablePrefix;
+        public function setDataset($dataset)
+        {
+        }
+        public function getDataset()
+        {
+        }
+        public function setShardCount($shardCount)
+        {
+        }
+        public function getShardCount()
+        {
+        }
+        public function setTablePrefix($tablePrefix)
+        {
+        }
+        public function getTablePrefix()
+        {
+        }
     }
-    public function getDataset()
-    {
-    }
-    public function setShardCount($shardCount)
-    {
-    }
-    public function getShardCount()
-    {
-    }
-    public function setTablePrefix($tablePrefix)
-    {
-    }
-    public function getTablePrefix()
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1BigQueryDateShardedSpec registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_DataCatalog_GoogleCloudDatacatalogV1beta1BigQueryDateShardedSpec extends \Google\Service\DataCatalog\GoogleCloudDatacatalogV1beta1BigQueryDateShardedSpec
     {
     }
 }

@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ArtifactRegistry;
-
-class ImportGoogetArtifactsGcsSource extends \Google\Collection
-{
-    protected $collection_key = 'uris';
-    /**
-     * Cloud Storage paths URI (e.g., `gs://my_bucket/my_object`).
-     *
-     * @var string[]
-     */
-    public $uris;
-    /**
-     * Supports URI wildcards for matching multiple objects from a single URI.
-     *
-     * @var bool
-     */
-    public $useWildcards;
-    /**
-     * Cloud Storage paths URI (e.g., `gs://my_bucket/my_object`).
-     *
-     * @param string[] $uris
-     */
-    public function setUris($uris)
+namespace Google\Service\ArtifactRegistry {
+    class ImportGoogetArtifactsGcsSource extends \Google\Collection
     {
+        protected $collection_key = 'uris';
+        /**
+         * Cloud Storage paths URI (e.g., `gs://my_bucket/my_object`).
+         *
+         * @var string[]
+         */
+        public $uris;
+        /**
+         * Supports URI wildcards for matching multiple objects from a single URI.
+         *
+         * @var bool
+         */
+        public $useWildcards;
+        /**
+         * Cloud Storage paths URI (e.g., `gs://my_bucket/my_object`).
+         *
+         * @param string[] $uris
+         */
+        public function setUris($uris)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUris()
+        {
+        }
+        /**
+         * Supports URI wildcards for matching multiple objects from a single URI.
+         *
+         * @param bool $useWildcards
+         */
+        public function setUseWildcards($useWildcards)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getUseWildcards()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\ArtifactRegistry\ImportGoogetArtifactsGcsSource registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getUris()
-    {
-    }
-    /**
-     * Supports URI wildcards for matching multiple objects from a single URI.
-     *
-     * @param bool $useWildcards
-     */
-    public function setUseWildcards($useWildcards)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getUseWildcards()
+    class Google_Service_ArtifactRegistry_ImportGoogetArtifactsGcsSource extends \Google\Service\ArtifactRegistry\ImportGoogetArtifactsGcsSource
     {
     }
 }

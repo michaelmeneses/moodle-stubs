@@ -21,59 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class FutureReservationStatusLastKnownGoodStateFutureReservationSpecs extends \Google\Model
-{
-    protected $shareSettingsType = ShareSettings::class;
-    protected $shareSettingsDataType = '';
-    protected $specificSkuPropertiesType = FutureReservationSpecificSKUProperties::class;
-    protected $specificSkuPropertiesDataType = '';
-    protected $timeWindowType = FutureReservationTimeWindow::class;
-    protected $timeWindowDataType = '';
-    /**
-     * Output only. [Output Only] The previous share settings of the Future
-     * Reservation.
-     *
-     * @param ShareSettings $shareSettings
-     */
-    public function setShareSettings(ShareSettings $shareSettings)
+namespace Google\Service\Compute {
+    class FutureReservationStatusLastKnownGoodStateFutureReservationSpecs extends \Google\Model
     {
+        protected $shareSettingsType = ShareSettings::class;
+        protected $shareSettingsDataType = '';
+        protected $specificSkuPropertiesType = FutureReservationSpecificSKUProperties::class;
+        protected $specificSkuPropertiesDataType = '';
+        protected $timeWindowType = FutureReservationTimeWindow::class;
+        protected $timeWindowDataType = '';
+        /**
+         * Output only. [Output Only] The previous share settings of the Future
+         * Reservation.
+         *
+         * @param ShareSettings $shareSettings
+         */
+        public function setShareSettings(ShareSettings $shareSettings)
+        {
+        }
+        /**
+         * @return ShareSettings
+         */
+        public function getShareSettings()
+        {
+        }
+        /**
+         * Output only. [Output Only] The previous instance related properties of the
+         * Future Reservation.
+         *
+         * @param FutureReservationSpecificSKUProperties $specificSkuProperties
+         */
+        public function setSpecificSkuProperties(FutureReservationSpecificSKUProperties $specificSkuProperties)
+        {
+        }
+        /**
+         * @return FutureReservationSpecificSKUProperties
+         */
+        public function getSpecificSkuProperties()
+        {
+        }
+        /**
+         * Output only. [Output Only] The previous time window of the Future
+         * Reservation.
+         *
+         * @param FutureReservationTimeWindow $timeWindow
+         */
+        public function setTimeWindow(FutureReservationTimeWindow $timeWindow)
+        {
+        }
+        /**
+         * @return FutureReservationTimeWindow
+         */
+        public function getTimeWindow()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ShareSettings
+     * Runtime class alias of \Google\Service\Compute\FutureReservationStatusLastKnownGoodStateFutureReservationSpecs registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getShareSettings()
-    {
-    }
-    /**
-     * Output only. [Output Only] The previous instance related properties of the
-     * Future Reservation.
-     *
-     * @param FutureReservationSpecificSKUProperties $specificSkuProperties
-     */
-    public function setSpecificSkuProperties(FutureReservationSpecificSKUProperties $specificSkuProperties)
-    {
-    }
-    /**
-     * @return FutureReservationSpecificSKUProperties
-     */
-    public function getSpecificSkuProperties()
-    {
-    }
-    /**
-     * Output only. [Output Only] The previous time window of the Future
-     * Reservation.
-     *
-     * @param FutureReservationTimeWindow $timeWindow
-     */
-    public function setTimeWindow(FutureReservationTimeWindow $timeWindow)
-    {
-    }
-    /**
-     * @return FutureReservationTimeWindow
-     */
-    public function getTimeWindow()
+    class Google_Service_Compute_FutureReservationStatusLastKnownGoodStateFutureReservationSpecs extends \Google\Service\Compute\FutureReservationStatusLastKnownGoodStateFutureReservationSpecs
     {
     }
 }

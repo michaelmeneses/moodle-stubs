@@ -21,67 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Vault\Resource;
-
-/**
- * The "savedQueries" collection of methods.
- * Typical usage is:
- *  <code>
- *   $vaultService = new Google\Service\Vault(...);
- *   $savedQueries = $vaultService->matters_savedQueries;
- *  </code>
- */
-class MattersSavedQueries extends \Google\Service\Resource
-{
+namespace Google\Service\Vault\Resource {
+    use Google\Service\Vault\ListSavedQueriesResponse;
+    use Google\Service\Vault\SavedQuery;
+    use Google\Service\Vault\VaultEmpty;
     /**
-     * Creates a saved query. (savedQueries.create)
-     *
-     * @param string $matterId The ID of the matter to create the saved query in.
-     * @param SavedQuery $postBody
-     * @param array $optParams Optional parameters.
-     * @return SavedQuery
-     * @throws \Google\Service\Exception
+     * The "savedQueries" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $vaultService = new Google\Service\Vault(...);
+     *   $savedQueries = $vaultService->matters_savedQueries;
+     *  </code>
      */
-    public function create($matterId, SavedQuery $postBody, $optParams = [])
+    class MattersSavedQueries extends \Google\Service\Resource
     {
+        /**
+         * Creates a saved query. (savedQueries.create)
+         *
+         * @param string $matterId The ID of the matter to create the saved query in.
+         * @param SavedQuery $postBody
+         * @param array $optParams Optional parameters.
+         * @return SavedQuery
+         * @throws \Google\Service\Exception
+         */
+        public function create($matterId, SavedQuery $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes the specified saved query. (savedQueries.delete)
+         *
+         * @param string $matterId The ID of the matter to delete the saved query from.
+         * @param string $savedQueryId ID of the saved query to delete.
+         * @param array $optParams Optional parameters.
+         * @return VaultEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($matterId, $savedQueryId, $optParams = [])
+        {
+        }
+        /**
+         * Retrieves the specified saved query. (savedQueries.get)
+         *
+         * @param string $matterId The ID of the matter to get the saved query from.
+         * @param string $savedQueryId ID of the saved query to retrieve.
+         * @param array $optParams Optional parameters.
+         * @return SavedQuery
+         * @throws \Google\Service\Exception
+         */
+        public function get($matterId, $savedQueryId, $optParams = [])
+        {
+        }
+        /**
+         * Lists the saved queries in a matter. (savedQueries.listMattersSavedQueries)
+         *
+         * @param string $matterId The ID of the matter to get the saved queries for.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of saved queries to return.
+         * @opt_param string pageToken The pagination token as returned in the previous
+         * response. An empty token means start from the beginning.
+         * @return ListSavedQueriesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listMattersSavedQueries($matterId, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes the specified saved query. (savedQueries.delete)
-     *
-     * @param string $matterId The ID of the matter to delete the saved query from.
-     * @param string $savedQueryId ID of the saved query to delete.
-     * @param array $optParams Optional parameters.
-     * @return VaultEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Vault\Resource\MattersSavedQueries registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($matterId, $savedQueryId, $optParams = [])
-    {
-    }
-    /**
-     * Retrieves the specified saved query. (savedQueries.get)
-     *
-     * @param string $matterId The ID of the matter to get the saved query from.
-     * @param string $savedQueryId ID of the saved query to retrieve.
-     * @param array $optParams Optional parameters.
-     * @return SavedQuery
-     * @throws \Google\Service\Exception
-     */
-    public function get($matterId, $savedQueryId, $optParams = [])
-    {
-    }
-    /**
-     * Lists the saved queries in a matter. (savedQueries.listMattersSavedQueries)
-     *
-     * @param string $matterId The ID of the matter to get the saved queries for.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of saved queries to return.
-     * @opt_param string pageToken The pagination token as returned in the previous
-     * response. An empty token means start from the beginning.
-     * @return ListSavedQueriesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listMattersSavedQueries($matterId, $optParams = [])
+    class Google_Service_Vault_Resource_MattersSavedQueries extends \Google\Service\Vault\Resource\MattersSavedQueries
     {
     }
 }

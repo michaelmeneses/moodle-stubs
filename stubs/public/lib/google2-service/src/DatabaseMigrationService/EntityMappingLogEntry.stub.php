@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DatabaseMigrationService;
-
-class EntityMappingLogEntry extends \Google\Model
-{
-    /**
-     * Comment.
-     *
-     * @var string
-     */
-    public $mappingComment;
-    /**
-     * Which rule caused this log entry.
-     *
-     * @var string
-     */
-    public $ruleId;
-    /**
-     * Rule revision ID.
-     *
-     * @var string
-     */
-    public $ruleRevisionId;
-    /**
-     * Comment.
-     *
-     * @param string $mappingComment
-     */
-    public function setMappingComment($mappingComment)
+namespace Google\Service\DatabaseMigrationService {
+    class EntityMappingLogEntry extends \Google\Model
     {
+        /**
+         * Comment.
+         *
+         * @var string
+         */
+        public $mappingComment;
+        /**
+         * Which rule caused this log entry.
+         *
+         * @var string
+         */
+        public $ruleId;
+        /**
+         * Rule revision ID.
+         *
+         * @var string
+         */
+        public $ruleRevisionId;
+        /**
+         * Comment.
+         *
+         * @param string $mappingComment
+         */
+        public function setMappingComment($mappingComment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMappingComment()
+        {
+        }
+        /**
+         * Which rule caused this log entry.
+         *
+         * @param string $ruleId
+         */
+        public function setRuleId($ruleId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRuleId()
+        {
+        }
+        /**
+         * Rule revision ID.
+         *
+         * @param string $ruleRevisionId
+         */
+        public function setRuleRevisionId($ruleRevisionId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRuleRevisionId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DatabaseMigrationService\EntityMappingLogEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMappingComment()
-    {
-    }
-    /**
-     * Which rule caused this log entry.
-     *
-     * @param string $ruleId
-     */
-    public function setRuleId($ruleId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRuleId()
-    {
-    }
-    /**
-     * Rule revision ID.
-     *
-     * @param string $ruleRevisionId
-     */
-    public function setRuleRevisionId($ruleRevisionId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRuleRevisionId()
+    class Google_Service_DatabaseMigrationService_EntityMappingLogEntry extends \Google\Service\DatabaseMigrationService\EntityMappingLogEntry
     {
     }
 }

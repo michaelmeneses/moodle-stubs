@@ -21,8 +21,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudIAP;
-
-class ValidateIapAttributeExpressionResponse extends \Google\Model
-{
+namespace Google\Service\CloudIAP {
+    class ValidateIapAttributeExpressionResponse extends \Google\Model
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \Google\Service\CloudIAP\ValidateIapAttributeExpressionResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class Google_Service_CloudIAP_ValidateIapAttributeExpressionResponse extends \Google\Service\CloudIAP\ValidateIapAttributeExpressionResponse
+    {
+    }
 }

@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseRules;
-
-class TestRulesetResponse extends \Google\Collection
-{
-    protected $collection_key = 'testResults';
-    protected $issuesType = Issue::class;
-    protected $issuesDataType = 'array';
-    protected $testResultsType = TestResult::class;
-    protected $testResultsDataType = 'array';
-    /**
-     * Syntactic and semantic `Source` issues of varying severity. Issues of
-     * `ERROR` severity will prevent tests from executing.
-     *
-     * @param Issue[] $issues
-     */
-    public function setIssues($issues)
+namespace Google\Service\FirebaseRules {
+    class TestRulesetResponse extends \Google\Collection
     {
+        protected $collection_key = 'testResults';
+        protected $issuesType = Issue::class;
+        protected $issuesDataType = 'array';
+        protected $testResultsType = TestResult::class;
+        protected $testResultsDataType = 'array';
+        /**
+         * Syntactic and semantic `Source` issues of varying severity. Issues of
+         * `ERROR` severity will prevent tests from executing.
+         *
+         * @param Issue[] $issues
+         */
+        public function setIssues($issues)
+        {
+        }
+        /**
+         * @return Issue[]
+         */
+        public function getIssues()
+        {
+        }
+        /**
+         * The set of test results given the test cases in the `TestSuite`. The
+         * results will appear in the same order as the test cases appear in the
+         * `TestSuite`.
+         *
+         * @param TestResult[] $testResults
+         */
+        public function setTestResults($testResults)
+        {
+        }
+        /**
+         * @return TestResult[]
+         */
+        public function getTestResults()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Issue[]
+     * Runtime class alias of \Google\Service\FirebaseRules\TestRulesetResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIssues()
-    {
-    }
-    /**
-     * The set of test results given the test cases in the `TestSuite`. The
-     * results will appear in the same order as the test cases appear in the
-     * `TestSuite`.
-     *
-     * @param TestResult[] $testResults
-     */
-    public function setTestResults($testResults)
-    {
-    }
-    /**
-     * @return TestResult[]
-     */
-    public function getTestResults()
+    class Google_Service_FirebaseRules_TestRulesetResponse extends \Google\Service\FirebaseRules\TestRulesetResponse
     {
     }
 }

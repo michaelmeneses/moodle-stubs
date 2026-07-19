@@ -21,142 +21,151 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ParameterManager;
-
-class ParameterVersion extends \Google\Model
-{
-    /**
-     * Output only. [Output only] Create time stamp
-     *
-     * @var string
-     */
-    public $createTime;
-    /**
-     * Optional. Disabled boolean to determine if a ParameterVersion acts as a
-     * metadata only resource (payload is never returned if disabled is true). If
-     * true any calls will always default to BASIC view even if the user
-     * explicitly passes FULL view as part of the request. A render call on a
-     * disabled resource fails with an error. Default value is False.
-     *
-     * @var bool
-     */
-    public $disabled;
-    /**
-     * Optional. Output only. [Output only] The resource name of the KMS key
-     * version used to encrypt the ParameterVersion payload. This field is
-     * populated only if the Parameter resource has customer managed encryption
-     * key (CMEK) configured.
-     *
-     * @var string
-     */
-    public $kmsKeyVersion;
-    /**
-     * Identifier. [Output only] The resource name of the ParameterVersion in the
-     * format `projects/locations/parameters/versions`.
-     *
-     * @var string
-     */
-    public $name;
-    protected $payloadType = ParameterVersionPayload::class;
-    protected $payloadDataType = '';
-    /**
-     * Output only. [Output only] Update time stamp
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Output only. [Output only] Create time stamp
-     *
-     * @param string $createTime
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\ParameterManager {
+    class ParameterVersion extends \Google\Model
     {
+        /**
+         * Output only. [Output only] Create time stamp
+         *
+         * @var string
+         */
+        public $createTime;
+        /**
+         * Optional. Disabled boolean to determine if a ParameterVersion acts as a
+         * metadata only resource (payload is never returned if disabled is true). If
+         * true any calls will always default to BASIC view even if the user
+         * explicitly passes FULL view as part of the request. A render call on a
+         * disabled resource fails with an error. Default value is False.
+         *
+         * @var bool
+         */
+        public $disabled;
+        /**
+         * Optional. Output only. [Output only] The resource name of the KMS key
+         * version used to encrypt the ParameterVersion payload. This field is
+         * populated only if the Parameter resource has customer managed encryption
+         * key (CMEK) configured.
+         *
+         * @var string
+         */
+        public $kmsKeyVersion;
+        /**
+         * Identifier. [Output only] The resource name of the ParameterVersion in the
+         * format `projects/locations/parameters/versions`.
+         *
+         * @var string
+         */
+        public $name;
+        protected $payloadType = ParameterVersionPayload::class;
+        protected $payloadDataType = '';
+        /**
+         * Output only. [Output only] Update time stamp
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Output only. [Output only] Create time stamp
+         *
+         * @param string $createTime
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * Optional. Disabled boolean to determine if a ParameterVersion acts as a
+         * metadata only resource (payload is never returned if disabled is true). If
+         * true any calls will always default to BASIC view even if the user
+         * explicitly passes FULL view as part of the request. A render call on a
+         * disabled resource fails with an error. Default value is False.
+         *
+         * @param bool $disabled
+         */
+        public function setDisabled($disabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisabled()
+        {
+        }
+        /**
+         * Optional. Output only. [Output only] The resource name of the KMS key
+         * version used to encrypt the ParameterVersion payload. This field is
+         * populated only if the Parameter resource has customer managed encryption
+         * key (CMEK) configured.
+         *
+         * @param string $kmsKeyVersion
+         */
+        public function setKmsKeyVersion($kmsKeyVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKmsKeyVersion()
+        {
+        }
+        /**
+         * Identifier. [Output only] The resource name of the ParameterVersion in the
+         * format `projects/locations/parameters/versions`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Required. Immutable. Payload content of a ParameterVersion resource. This
+         * is only returned when the request provides the View value of FULL (default
+         * for GET request).
+         *
+         * @param ParameterVersionPayload $payload
+         */
+        public function setPayload(ParameterVersionPayload $payload)
+        {
+        }
+        /**
+         * @return ParameterVersionPayload
+         */
+        public function getPayload()
+        {
+        }
+        /**
+         * Output only. [Output only] Update time stamp
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ParameterManager\ParameterVersion registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * Optional. Disabled boolean to determine if a ParameterVersion acts as a
-     * metadata only resource (payload is never returned if disabled is true). If
-     * true any calls will always default to BASIC view even if the user
-     * explicitly passes FULL view as part of the request. A render call on a
-     * disabled resource fails with an error. Default value is False.
-     *
-     * @param bool $disabled
-     */
-    public function setDisabled($disabled)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getDisabled()
-    {
-    }
-    /**
-     * Optional. Output only. [Output only] The resource name of the KMS key
-     * version used to encrypt the ParameterVersion payload. This field is
-     * populated only if the Parameter resource has customer managed encryption
-     * key (CMEK) configured.
-     *
-     * @param string $kmsKeyVersion
-     */
-    public function setKmsKeyVersion($kmsKeyVersion)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKmsKeyVersion()
-    {
-    }
-    /**
-     * Identifier. [Output only] The resource name of the ParameterVersion in the
-     * format `projects/locations/parameters/versions`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Required. Immutable. Payload content of a ParameterVersion resource. This
-     * is only returned when the request provides the View value of FULL (default
-     * for GET request).
-     *
-     * @param ParameterVersionPayload $payload
-     */
-    public function setPayload(ParameterVersionPayload $payload)
-    {
-    }
-    /**
-     * @return ParameterVersionPayload
-     */
-    public function getPayload()
-    {
-    }
-    /**
-     * Output only. [Output only] Update time stamp
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_ParameterManager_ParameterVersion extends \Google\Service\ParameterManager\ParameterVersion
     {
     }
 }

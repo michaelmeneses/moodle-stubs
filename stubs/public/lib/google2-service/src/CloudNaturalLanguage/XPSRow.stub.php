@@ -21,55 +21,64 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSRow extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    /**
-     * The ids of the columns. Note: The below `values` field must match order of
-     * this field, if this field is set.
-     *
-     * @var int[]
-     */
-    public $columnIds;
-    /**
-     * The values of the row cells, given in the same order as the column_ids. If
-     * column_ids is not set, then in the same order as the
-     * input_feature_column_ids in TablesModelMetadata.
-     *
-     * @var array[]
-     */
-    public $values;
-    /**
-     * The ids of the columns. Note: The below `values` field must match order of
-     * this field, if this field is set.
-     *
-     * @param int[] $columnIds
-     */
-    public function setColumnIds($columnIds)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSRow extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        /**
+         * The ids of the columns. Note: The below `values` field must match order of
+         * this field, if this field is set.
+         *
+         * @var int[]
+         */
+        public $columnIds;
+        /**
+         * The values of the row cells, given in the same order as the column_ids. If
+         * column_ids is not set, then in the same order as the
+         * input_feature_column_ids in TablesModelMetadata.
+         *
+         * @var array[]
+         */
+        public $values;
+        /**
+         * The ids of the columns. Note: The below `values` field must match order of
+         * this field, if this field is set.
+         *
+         * @param int[] $columnIds
+         */
+        public function setColumnIds($columnIds)
+        {
+        }
+        /**
+         * @return int[]
+         */
+        public function getColumnIds()
+        {
+        }
+        /**
+         * The values of the row cells, given in the same order as the column_ids. If
+         * column_ids is not set, then in the same order as the
+         * input_feature_column_ids in TablesModelMetadata.
+         *
+         * @param array[] $values
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int[]
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSRow registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getColumnIds()
-    {
-    }
-    /**
-     * The values of the row cells, given in the same order as the column_ids. If
-     * column_ids is not set, then in the same order as the
-     * input_feature_column_ids in TablesModelMetadata.
-     *
-     * @param array[] $values
-     */
-    public function setValues($values)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getValues()
+    class Google_Service_CloudNaturalLanguage_XPSRow extends \Google\Service\CloudNaturalLanguage\XPSRow
     {
     }
 }

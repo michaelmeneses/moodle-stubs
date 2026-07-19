@@ -21,44 +21,53 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2UpdateJobTriggerRequest extends \Google\Model
-{
-    protected $jobTriggerType = GooglePrivacyDlpV2JobTrigger::class;
-    protected $jobTriggerDataType = '';
-    /**
-     * Mask to control which fields get updated.
-     *
-     * @var string
-     */
-    public $updateMask;
-    /**
-     * New JobTrigger value.
-     *
-     * @param GooglePrivacyDlpV2JobTrigger $jobTrigger
-     */
-    public function setJobTrigger(GooglePrivacyDlpV2JobTrigger $jobTrigger)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2UpdateJobTriggerRequest extends \Google\Model
     {
+        protected $jobTriggerType = GooglePrivacyDlpV2JobTrigger::class;
+        protected $jobTriggerDataType = '';
+        /**
+         * Mask to control which fields get updated.
+         *
+         * @var string
+         */
+        public $updateMask;
+        /**
+         * New JobTrigger value.
+         *
+         * @param GooglePrivacyDlpV2JobTrigger $jobTrigger
+         */
+        public function setJobTrigger(GooglePrivacyDlpV2JobTrigger $jobTrigger)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2JobTrigger
+         */
+        public function getJobTrigger()
+        {
+        }
+        /**
+         * Mask to control which fields get updated.
+         *
+         * @param string $updateMask
+         */
+        public function setUpdateMask($updateMask)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateMask()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2JobTrigger
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2UpdateJobTriggerRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getJobTrigger()
-    {
-    }
-    /**
-     * Mask to control which fields get updated.
-     *
-     * @param string $updateMask
-     */
-    public function setUpdateMask($updateMask)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateMask()
+    class Google_Service_DLP_GooglePrivacyDlpV2UpdateJobTriggerRequest extends \Google\Service\DLP\GooglePrivacyDlpV2UpdateJobTriggerRequest
     {
     }
 }

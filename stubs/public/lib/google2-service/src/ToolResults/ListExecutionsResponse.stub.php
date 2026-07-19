@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class ListExecutionsResponse extends \Google\Collection
-{
-    protected $collection_key = 'executions';
-    protected $executionsType = Execution::class;
-    protected $executionsDataType = 'array';
-    /**
-     * A continuation token to resume the query at the next item. Will only be set
-     * if there are more Executions to fetch.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * Executions. Always set.
-     *
-     * @param Execution[] $executions
-     */
-    public function setExecutions($executions)
+namespace Google\Service\ToolResults {
+    class ListExecutionsResponse extends \Google\Collection
     {
+        protected $collection_key = 'executions';
+        protected $executionsType = Execution::class;
+        protected $executionsDataType = 'array';
+        /**
+         * A continuation token to resume the query at the next item. Will only be set
+         * if there are more Executions to fetch.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * Executions. Always set.
+         *
+         * @param Execution[] $executions
+         */
+        public function setExecutions($executions)
+        {
+        }
+        /**
+         * @return Execution[]
+         */
+        public function getExecutions()
+        {
+        }
+        /**
+         * A continuation token to resume the query at the next item. Will only be set
+         * if there are more Executions to fetch.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Execution[]
+     * Runtime class alias of \Google\Service\ToolResults\ListExecutionsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExecutions()
-    {
-    }
-    /**
-     * A continuation token to resume the query at the next item. Will only be set
-     * if there are more Executions to fetch.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_ToolResults_ListExecutionsResponse extends \Google\Service\ToolResults\ListExecutionsResponse
     {
     }
 }

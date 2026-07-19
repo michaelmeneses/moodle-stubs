@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\BigQueryReservation;
-
-class BiReservation extends \Google\Collection
-{
-    protected $collection_key = 'preferredTables';
-    /**
-     * Identifier. The resource name of the singleton BI reservation. Reservation
-     * names have the form
-     * `projects/{project_id}/locations/{location_id}/biReservation`.
-     *
-     * @var string
-     */
-    public $name;
-    protected $preferredTablesType = TableReference::class;
-    protected $preferredTablesDataType = 'array';
-    /**
-     * Optional. Size of a reservation, in bytes.
-     *
-     * @var string
-     */
-    public $size;
-    /**
-     * Output only. The last update timestamp of a reservation.
-     *
-     * @var string
-     */
-    public $updateTime;
-    /**
-     * Identifier. The resource name of the singleton BI reservation. Reservation
-     * names have the form
-     * `projects/{project_id}/locations/{location_id}/biReservation`.
-     *
-     * @param string $name
-     */
-    public function setName($name)
+namespace Google\Service\BigQueryReservation {
+    class BiReservation extends \Google\Collection
     {
+        protected $collection_key = 'preferredTables';
+        /**
+         * Identifier. The resource name of the singleton BI reservation. Reservation
+         * names have the form
+         * `projects/{project_id}/locations/{location_id}/biReservation`.
+         *
+         * @var string
+         */
+        public $name;
+        protected $preferredTablesType = TableReference::class;
+        protected $preferredTablesDataType = 'array';
+        /**
+         * Optional. Size of a reservation, in bytes.
+         *
+         * @var string
+         */
+        public $size;
+        /**
+         * Output only. The last update timestamp of a reservation.
+         *
+         * @var string
+         */
+        public $updateTime;
+        /**
+         * Identifier. The resource name of the singleton BI reservation. Reservation
+         * names have the form
+         * `projects/{project_id}/locations/{location_id}/biReservation`.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Optional. Preferred tables to use BI capacity for.
+         *
+         * @param TableReference[] $preferredTables
+         */
+        public function setPreferredTables($preferredTables)
+        {
+        }
+        /**
+         * @return TableReference[]
+         */
+        public function getPreferredTables()
+        {
+        }
+        /**
+         * Optional. Size of a reservation, in bytes.
+         *
+         * @param string $size
+         */
+        public function setSize($size)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSize()
+        {
+        }
+        /**
+         * Output only. The last update timestamp of a reservation.
+         *
+         * @param string $updateTime
+         */
+        public function setUpdateTime($updateTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUpdateTime()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\BigQueryReservation\BiReservation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getName()
-    {
-    }
-    /**
-     * Optional. Preferred tables to use BI capacity for.
-     *
-     * @param TableReference[] $preferredTables
-     */
-    public function setPreferredTables($preferredTables)
-    {
-    }
-    /**
-     * @return TableReference[]
-     */
-    public function getPreferredTables()
-    {
-    }
-    /**
-     * Optional. Size of a reservation, in bytes.
-     *
-     * @param string $size
-     */
-    public function setSize($size)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSize()
-    {
-    }
-    /**
-     * Output only. The last update timestamp of a reservation.
-     *
-     * @param string $updateTime
-     */
-    public function setUpdateTime($updateTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUpdateTime()
+    class Google_Service_BigQueryReservation_BiReservation extends \Google\Service\BigQueryReservation\BiReservation
     {
     }
 }

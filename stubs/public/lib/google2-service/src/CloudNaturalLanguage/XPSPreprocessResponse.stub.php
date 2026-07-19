@@ -21,69 +21,78 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudNaturalLanguage;
-
-class XPSPreprocessResponse extends \Google\Model
-{
-    protected $outputExampleSetType = XPSExampleSet::class;
-    protected $outputExampleSetDataType = '';
-    protected $speechPreprocessRespType = XPSSpeechPreprocessResponse::class;
-    protected $speechPreprocessRespDataType = '';
-    protected $tablesPreprocessResponseType = XPSTablesPreprocessResponse::class;
-    protected $tablesPreprocessResponseDataType = '';
-    protected $translationPreprocessRespType = XPSTranslationPreprocessResponse::class;
-    protected $translationPreprocessRespDataType = '';
-    /**
-     * Preprocessed examples, that are to be imported into AutoML storage. This
-     * should point to RecordIO file(s) of PreprocessedExample messages. The
-     * PreprocessedExample.mvp_training_data-s returned here are later verbatim
-     * passed to Train() call in TrainExample.mvp_training_data.
-     *
-     * @param XPSExampleSet $outputExampleSet
-     */
-    public function setOutputExampleSet(XPSExampleSet $outputExampleSet)
+namespace Google\Service\CloudNaturalLanguage {
+    class XPSPreprocessResponse extends \Google\Model
     {
+        protected $outputExampleSetType = XPSExampleSet::class;
+        protected $outputExampleSetDataType = '';
+        protected $speechPreprocessRespType = XPSSpeechPreprocessResponse::class;
+        protected $speechPreprocessRespDataType = '';
+        protected $tablesPreprocessResponseType = XPSTablesPreprocessResponse::class;
+        protected $tablesPreprocessResponseDataType = '';
+        protected $translationPreprocessRespType = XPSTranslationPreprocessResponse::class;
+        protected $translationPreprocessRespDataType = '';
+        /**
+         * Preprocessed examples, that are to be imported into AutoML storage. This
+         * should point to RecordIO file(s) of PreprocessedExample messages. The
+         * PreprocessedExample.mvp_training_data-s returned here are later verbatim
+         * passed to Train() call in TrainExample.mvp_training_data.
+         *
+         * @param XPSExampleSet $outputExampleSet
+         */
+        public function setOutputExampleSet(XPSExampleSet $outputExampleSet)
+        {
+        }
+        /**
+         * @return XPSExampleSet
+         */
+        public function getOutputExampleSet()
+        {
+        }
+        /**
+         * @param XPSSpeechPreprocessResponse $speechPreprocessResp
+         */
+        public function setSpeechPreprocessResp(XPSSpeechPreprocessResponse $speechPreprocessResp)
+        {
+        }
+        /**
+         * @return XPSSpeechPreprocessResponse
+         */
+        public function getSpeechPreprocessResp()
+        {
+        }
+        /**
+         * @param XPSTablesPreprocessResponse $tablesPreprocessResponse
+         */
+        public function setTablesPreprocessResponse(XPSTablesPreprocessResponse $tablesPreprocessResponse)
+        {
+        }
+        /**
+         * @return XPSTablesPreprocessResponse
+         */
+        public function getTablesPreprocessResponse()
+        {
+        }
+        /**
+         * @param XPSTranslationPreprocessResponse $translationPreprocessResp
+         */
+        public function setTranslationPreprocessResp(XPSTranslationPreprocessResponse $translationPreprocessResp)
+        {
+        }
+        /**
+         * @return XPSTranslationPreprocessResponse
+         */
+        public function getTranslationPreprocessResp()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return XPSExampleSet
+     * Runtime class alias of \Google\Service\CloudNaturalLanguage\XPSPreprocessResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getOutputExampleSet()
-    {
-    }
-    /**
-     * @param XPSSpeechPreprocessResponse $speechPreprocessResp
-     */
-    public function setSpeechPreprocessResp(XPSSpeechPreprocessResponse $speechPreprocessResp)
-    {
-    }
-    /**
-     * @return XPSSpeechPreprocessResponse
-     */
-    public function getSpeechPreprocessResp()
-    {
-    }
-    /**
-     * @param XPSTablesPreprocessResponse $tablesPreprocessResponse
-     */
-    public function setTablesPreprocessResponse(XPSTablesPreprocessResponse $tablesPreprocessResponse)
-    {
-    }
-    /**
-     * @return XPSTablesPreprocessResponse
-     */
-    public function getTablesPreprocessResponse()
-    {
-    }
-    /**
-     * @param XPSTranslationPreprocessResponse $translationPreprocessResp
-     */
-    public function setTranslationPreprocessResp(XPSTranslationPreprocessResponse $translationPreprocessResp)
-    {
-    }
-    /**
-     * @return XPSTranslationPreprocessResponse
-     */
-    public function getTranslationPreprocessResp()
+    class Google_Service_CloudNaturalLanguage_XPSPreprocessResponse extends \Google\Service\CloudNaturalLanguage\XPSPreprocessResponse
     {
     }
 }

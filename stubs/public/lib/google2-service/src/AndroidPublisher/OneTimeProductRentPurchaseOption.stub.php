@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidPublisher;
-
-class OneTimeProductRentPurchaseOption extends \Google\Model
-{
-    /**
-     * Optional. The amount of time the user has after starting consuming the
-     * entitlement before it is revoked. Specified in ISO 8601 format.
-     *
-     * @var string
-     */
-    public $expirationPeriod;
-    /**
-     * Required. The amount of time a user has the entitlement for. Starts at
-     * purchase flow completion. Specified in ISO 8601 format.
-     *
-     * @var string
-     */
-    public $rentalPeriod;
-    /**
-     * Optional. The amount of time the user has after starting consuming the
-     * entitlement before it is revoked. Specified in ISO 8601 format.
-     *
-     * @param string $expirationPeriod
-     */
-    public function setExpirationPeriod($expirationPeriod)
+namespace Google\Service\AndroidPublisher {
+    class OneTimeProductRentPurchaseOption extends \Google\Model
     {
+        /**
+         * Optional. The amount of time the user has after starting consuming the
+         * entitlement before it is revoked. Specified in ISO 8601 format.
+         *
+         * @var string
+         */
+        public $expirationPeriod;
+        /**
+         * Required. The amount of time a user has the entitlement for. Starts at
+         * purchase flow completion. Specified in ISO 8601 format.
+         *
+         * @var string
+         */
+        public $rentalPeriod;
+        /**
+         * Optional. The amount of time the user has after starting consuming the
+         * entitlement before it is revoked. Specified in ISO 8601 format.
+         *
+         * @param string $expirationPeriod
+         */
+        public function setExpirationPeriod($expirationPeriod)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getExpirationPeriod()
+        {
+        }
+        /**
+         * Required. The amount of time a user has the entitlement for. Starts at
+         * purchase flow completion. Specified in ISO 8601 format.
+         *
+         * @param string $rentalPeriod
+         */
+        public function setRentalPeriod($rentalPeriod)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRentalPeriod()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\AndroidPublisher\OneTimeProductRentPurchaseOption registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getExpirationPeriod()
-    {
-    }
-    /**
-     * Required. The amount of time a user has the entitlement for. Starts at
-     * purchase flow completion. Specified in ISO 8601 format.
-     *
-     * @param string $rentalPeriod
-     */
-    public function setRentalPeriod($rentalPeriod)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRentalPeriod()
+    class Google_Service_AndroidPublisher_OneTimeProductRentPurchaseOption extends \Google\Service\AndroidPublisher\OneTimeProductRentPurchaseOption
     {
     }
 }

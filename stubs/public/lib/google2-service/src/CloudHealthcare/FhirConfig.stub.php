@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudHealthcare;
-
-class FhirConfig extends \Google\Collection
-{
-    protected $collection_key = 'fieldMetadataList';
-    /**
-     * Optional. The behaviour for handling FHIR extensions that aren't otherwise
-     * specified for de-identification. If true, all extensions are preserved
-     * during de-identification by default. If false or unspecified, all
-     * extensions are removed during de-identification by default.
-     *
-     * @var bool
-     */
-    public $defaultKeepExtensions;
-    protected $fieldMetadataListType = FieldMetadata::class;
-    protected $fieldMetadataListDataType = 'array';
-    /**
-     * Optional. The behaviour for handling FHIR extensions that aren't otherwise
-     * specified for de-identification. If true, all extensions are preserved
-     * during de-identification by default. If false or unspecified, all
-     * extensions are removed during de-identification by default.
-     *
-     * @param bool $defaultKeepExtensions
-     */
-    public function setDefaultKeepExtensions($defaultKeepExtensions)
+namespace Google\Service\CloudHealthcare {
+    class FhirConfig extends \Google\Collection
     {
+        protected $collection_key = 'fieldMetadataList';
+        /**
+         * Optional. The behaviour for handling FHIR extensions that aren't otherwise
+         * specified for de-identification. If true, all extensions are preserved
+         * during de-identification by default. If false or unspecified, all
+         * extensions are removed during de-identification by default.
+         *
+         * @var bool
+         */
+        public $defaultKeepExtensions;
+        protected $fieldMetadataListType = FieldMetadata::class;
+        protected $fieldMetadataListDataType = 'array';
+        /**
+         * Optional. The behaviour for handling FHIR extensions that aren't otherwise
+         * specified for de-identification. If true, all extensions are preserved
+         * during de-identification by default. If false or unspecified, all
+         * extensions are removed during de-identification by default.
+         *
+         * @param bool $defaultKeepExtensions
+         */
+        public function setDefaultKeepExtensions($defaultKeepExtensions)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDefaultKeepExtensions()
+        {
+        }
+        /**
+         * Optional. Specifies FHIR paths to match and how to transform them. Any
+         * field that is not matched by a FieldMetadata is passed through to the
+         * output dataset unmodified. All extensions will be processed according to
+         * `default_keep_extensions`.
+         *
+         * @param FieldMetadata[] $fieldMetadataList
+         */
+        public function setFieldMetadataList($fieldMetadataList)
+        {
+        }
+        /**
+         * @return FieldMetadata[]
+         */
+        public function getFieldMetadataList()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\CloudHealthcare\FhirConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDefaultKeepExtensions()
-    {
-    }
-    /**
-     * Optional. Specifies FHIR paths to match and how to transform them. Any
-     * field that is not matched by a FieldMetadata is passed through to the
-     * output dataset unmodified. All extensions will be processed according to
-     * `default_keep_extensions`.
-     *
-     * @param FieldMetadata[] $fieldMetadataList
-     */
-    public function setFieldMetadataList($fieldMetadataList)
-    {
-    }
-    /**
-     * @return FieldMetadata[]
-     */
-    public function getFieldMetadataList()
+    class Google_Service_CloudHealthcare_FhirConfig extends \Google\Service\CloudHealthcare\FhirConfig
     {
     }
 }

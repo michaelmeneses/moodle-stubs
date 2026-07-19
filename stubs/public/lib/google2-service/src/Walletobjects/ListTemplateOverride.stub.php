@@ -21,65 +21,74 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Walletobjects;
-
-class ListTemplateOverride extends \Google\Model
-{
-    protected $firstRowOptionType = FirstRowOption::class;
-    protected $firstRowOptionDataType = '';
-    protected $secondRowOptionType = FieldSelector::class;
-    protected $secondRowOptionDataType = '';
-    protected $thirdRowOptionType = FieldSelector::class;
-    protected $thirdRowOptionDataType = '';
-    /**
-     * Specifies from a predefined set of options or from a reference to the field
-     * what will be displayed in the first row. To set this override, set the
-     * FirstRowOption.fieldOption to the FieldSelector of your choice.
-     *
-     * @param FirstRowOption $firstRowOption
-     */
-    public function setFirstRowOption(FirstRowOption $firstRowOption)
+namespace Google\Service\Walletobjects {
+    class ListTemplateOverride extends \Google\Model
     {
+        protected $firstRowOptionType = FirstRowOption::class;
+        protected $firstRowOptionDataType = '';
+        protected $secondRowOptionType = FieldSelector::class;
+        protected $secondRowOptionDataType = '';
+        protected $thirdRowOptionType = FieldSelector::class;
+        protected $thirdRowOptionDataType = '';
+        /**
+         * Specifies from a predefined set of options or from a reference to the field
+         * what will be displayed in the first row. To set this override, set the
+         * FirstRowOption.fieldOption to the FieldSelector of your choice.
+         *
+         * @param FirstRowOption $firstRowOption
+         */
+        public function setFirstRowOption(FirstRowOption $firstRowOption)
+        {
+        }
+        /**
+         * @return FirstRowOption
+         */
+        public function getFirstRowOption()
+        {
+        }
+        /**
+         * A reference to the field to be displayed in the second row. This option is
+         * only displayed if there are not multiple user objects in a group. If there
+         * is a group, the second row will always display a field shared by all
+         * objects. To set this override, please set secondRowOption to the
+         * FieldSelector of you choice.
+         *
+         * @param FieldSelector $secondRowOption
+         */
+        public function setSecondRowOption(FieldSelector $secondRowOption)
+        {
+        }
+        /**
+         * @return FieldSelector
+         */
+        public function getSecondRowOption()
+        {
+        }
+        /**
+         * An unused/deprecated field. Setting it will have no effect on what the user
+         * sees.
+         *
+         * @deprecated
+         * @param FieldSelector $thirdRowOption
+         */
+        public function setThirdRowOption(FieldSelector $thirdRowOption)
+        {
+        }
+        /**
+         * @deprecated
+         * @return FieldSelector
+         */
+        public function getThirdRowOption()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return FirstRowOption
+     * Runtime class alias of \Google\Service\Walletobjects\ListTemplateOverride registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getFirstRowOption()
-    {
-    }
-    /**
-     * A reference to the field to be displayed in the second row. This option is
-     * only displayed if there are not multiple user objects in a group. If there
-     * is a group, the second row will always display a field shared by all
-     * objects. To set this override, please set secondRowOption to the
-     * FieldSelector of you choice.
-     *
-     * @param FieldSelector $secondRowOption
-     */
-    public function setSecondRowOption(FieldSelector $secondRowOption)
-    {
-    }
-    /**
-     * @return FieldSelector
-     */
-    public function getSecondRowOption()
-    {
-    }
-    /**
-     * An unused/deprecated field. Setting it will have no effect on what the user
-     * sees.
-     *
-     * @deprecated
-     * @param FieldSelector $thirdRowOption
-     */
-    public function setThirdRowOption(FieldSelector $thirdRowOption)
-    {
-    }
-    /**
-     * @deprecated
-     * @return FieldSelector
-     */
-    public function getThirdRowOption()
+    class Google_Service_Walletobjects_ListTemplateOverride extends \Google\Service\Walletobjects\ListTemplateOverride
     {
     }
 }

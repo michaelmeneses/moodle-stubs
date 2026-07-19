@@ -21,94 +21,103 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class EnterpriseTopazSidekickDocumentPerCategoryListDocumentPerCategoryListEntry extends \Google\Model
-{
-    public const CATEGORY_UNKNOWN_DOCUMENT = 'UNKNOWN_DOCUMENT';
-    /**
-     * @deprecated
-     */
-    public const CATEGORY_ACTIONABLE = 'ACTIONABLE';
-    public const CATEGORY_VIEWED = 'VIEWED';
-    /**
-     * @deprecated
-     */
-    public const CATEGORY_REPLIED = 'REPLIED';
-    /**
-     * Mention categories. The mention has been viewed by the user, but the user
-     * has not replied.
-     */
-    public const CATEGORY_MENTION_VIEWED = 'MENTION_VIEWED';
-    /**
-     * The user has replied to the mention.
-     */
-    public const CATEGORY_MENTION_REPLIED = 'MENTION_REPLIED';
-    /**
-     * The mention has not been viewed by the user.
-     */
-    public const CATEGORY_MENTION_NOT_VIEWED = 'MENTION_NOT_VIEWED';
-    /**
-     * Share categories. Consists of documents that have been explicitly shared
-     * with the user. Document has been viewed.
-     */
-    public const CATEGORY_SHARED_AND_VIEWED = 'SHARED_AND_VIEWED';
-    /**
-     * Document has not been viewed.
-     */
-    public const CATEGORY_SHARED_NOT_VIEWED = 'SHARED_NOT_VIEWED';
-    /**
-     * Document has been edited.
-     */
-    public const CATEGORY_EDITED = 'EDITED';
-    /**
-     * @var string
-     */
-    public $category;
-    protected $documentType = EnterpriseTopazSidekickCommonDocument::class;
-    protected $documentDataType = '';
-    /**
-     * Reason this document was selected.
-     *
-     * @var string
-     */
-    public $rationale;
-    /**
-     * @param self::CATEGORY_* $category
-     */
-    public function setCategory($category)
+namespace Google\Service\CloudSearch {
+    class EnterpriseTopazSidekickDocumentPerCategoryListDocumentPerCategoryListEntry extends \Google\Model
     {
+        public const CATEGORY_UNKNOWN_DOCUMENT = 'UNKNOWN_DOCUMENT';
+        /**
+         * @deprecated
+         */
+        public const CATEGORY_ACTIONABLE = 'ACTIONABLE';
+        public const CATEGORY_VIEWED = 'VIEWED';
+        /**
+         * @deprecated
+         */
+        public const CATEGORY_REPLIED = 'REPLIED';
+        /**
+         * Mention categories. The mention has been viewed by the user, but the user
+         * has not replied.
+         */
+        public const CATEGORY_MENTION_VIEWED = 'MENTION_VIEWED';
+        /**
+         * The user has replied to the mention.
+         */
+        public const CATEGORY_MENTION_REPLIED = 'MENTION_REPLIED';
+        /**
+         * The mention has not been viewed by the user.
+         */
+        public const CATEGORY_MENTION_NOT_VIEWED = 'MENTION_NOT_VIEWED';
+        /**
+         * Share categories. Consists of documents that have been explicitly shared
+         * with the user. Document has been viewed.
+         */
+        public const CATEGORY_SHARED_AND_VIEWED = 'SHARED_AND_VIEWED';
+        /**
+         * Document has not been viewed.
+         */
+        public const CATEGORY_SHARED_NOT_VIEWED = 'SHARED_NOT_VIEWED';
+        /**
+         * Document has been edited.
+         */
+        public const CATEGORY_EDITED = 'EDITED';
+        /**
+         * @var string
+         */
+        public $category;
+        protected $documentType = EnterpriseTopazSidekickCommonDocument::class;
+        protected $documentDataType = '';
+        /**
+         * Reason this document was selected.
+         *
+         * @var string
+         */
+        public $rationale;
+        /**
+         * @param self::CATEGORY_* $category
+         */
+        public function setCategory($category)
+        {
+        }
+        /**
+         * @return self::CATEGORY_*
+         */
+        public function getCategory()
+        {
+        }
+        /**
+         * @param EnterpriseTopazSidekickCommonDocument $document
+         */
+        public function setDocument(EnterpriseTopazSidekickCommonDocument $document)
+        {
+        }
+        /**
+         * @return EnterpriseTopazSidekickCommonDocument
+         */
+        public function getDocument()
+        {
+        }
+        /**
+         * Reason this document was selected.
+         *
+         * @param string $rationale
+         */
+        public function setRationale($rationale)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRationale()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::CATEGORY_*
+     * Runtime class alias of \Google\Service\CloudSearch\EnterpriseTopazSidekickDocumentPerCategoryListDocumentPerCategoryListEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCategory()
-    {
-    }
-    /**
-     * @param EnterpriseTopazSidekickCommonDocument $document
-     */
-    public function setDocument(EnterpriseTopazSidekickCommonDocument $document)
-    {
-    }
-    /**
-     * @return EnterpriseTopazSidekickCommonDocument
-     */
-    public function getDocument()
-    {
-    }
-    /**
-     * Reason this document was selected.
-     *
-     * @param string $rationale
-     */
-    public function setRationale($rationale)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRationale()
+    class Google_Service_CloudSearch_EnterpriseTopazSidekickDocumentPerCategoryListDocumentPerCategoryListEntry extends \Google\Service\CloudSearch\EnterpriseTopazSidekickDocumentPerCategoryListDocumentPerCategoryListEntry
     {
     }
 }

@@ -21,90 +21,99 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Apigee;
-
-class GoogleCloudApigeeV1NatAddress extends \Google\Model
-{
-    /**
-     * The resource is in an unspecified state.
-     */
-    public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
-    /**
-     * The NAT address is being created.
-     */
-    public const STATE_CREATING = 'CREATING';
-    /**
-     * The NAT address is reserved but not yet used for Internet egress.
-     */
-    public const STATE_RESERVED = 'RESERVED';
-    /**
-     * The NAT address is active and used for Internet egress.
-     */
-    public const STATE_ACTIVE = 'ACTIVE';
-    /**
-     * The NAT address is being deleted.
-     */
-    public const STATE_DELETING = 'DELETING';
-    /**
-     * Output only. The static IPV4 address.
-     *
-     * @var string
-     */
-    public $ipAddress;
-    /**
-     * Required. Resource ID of the NAT address.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Output only. State of the nat address.
-     *
-     * @var string
-     */
-    public $state;
-    /**
-     * Output only. The static IPV4 address.
-     *
-     * @param string $ipAddress
-     */
-    public function setIpAddress($ipAddress)
+namespace Google\Service\Apigee {
+    class GoogleCloudApigeeV1NatAddress extends \Google\Model
     {
+        /**
+         * The resource is in an unspecified state.
+         */
+        public const STATE_STATE_UNSPECIFIED = 'STATE_UNSPECIFIED';
+        /**
+         * The NAT address is being created.
+         */
+        public const STATE_CREATING = 'CREATING';
+        /**
+         * The NAT address is reserved but not yet used for Internet egress.
+         */
+        public const STATE_RESERVED = 'RESERVED';
+        /**
+         * The NAT address is active and used for Internet egress.
+         */
+        public const STATE_ACTIVE = 'ACTIVE';
+        /**
+         * The NAT address is being deleted.
+         */
+        public const STATE_DELETING = 'DELETING';
+        /**
+         * Output only. The static IPV4 address.
+         *
+         * @var string
+         */
+        public $ipAddress;
+        /**
+         * Required. Resource ID of the NAT address.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Output only. State of the nat address.
+         *
+         * @var string
+         */
+        public $state;
+        /**
+         * Output only. The static IPV4 address.
+         *
+         * @param string $ipAddress
+         */
+        public function setIpAddress($ipAddress)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIpAddress()
+        {
+        }
+        /**
+         * Required. Resource ID of the NAT address.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Output only. State of the nat address.
+         *
+         * Accepted values: STATE_UNSPECIFIED, CREATING, RESERVED, ACTIVE, DELETING
+         *
+         * @param self::STATE_* $state
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return self::STATE_*
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Apigee\GoogleCloudApigeeV1NatAddress registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIpAddress()
-    {
-    }
-    /**
-     * Required. Resource ID of the NAT address.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Output only. State of the nat address.
-     *
-     * Accepted values: STATE_UNSPECIFIED, CREATING, RESERVED, ACTIVE, DELETING
-     *
-     * @param self::STATE_* $state
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return self::STATE_*
-     */
-    public function getState()
+    class Google_Service_Apigee_GoogleCloudApigeeV1NatAddress extends \Google\Service\Apigee\GoogleCloudApigeeV1NatAddress
     {
     }
 }

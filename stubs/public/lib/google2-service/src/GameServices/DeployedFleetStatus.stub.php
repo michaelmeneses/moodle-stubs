@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\GameServices;
-
-class DeployedFleetStatus extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $allocatedReplicas;
-    /**
-     * @var string
-     */
-    public $readyReplicas;
-    /**
-     * @var string
-     */
-    public $replicas;
-    /**
-     * @var string
-     */
-    public $reservedReplicas;
-    /**
-     * @param string
-     */
-    public function setAllocatedReplicas($allocatedReplicas)
+namespace Google\Service\GameServices {
+    class DeployedFleetStatus extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $allocatedReplicas;
+        /**
+         * @var string
+         */
+        public $readyReplicas;
+        /**
+         * @var string
+         */
+        public $replicas;
+        /**
+         * @var string
+         */
+        public $reservedReplicas;
+        /**
+         * @param string
+         */
+        public function setAllocatedReplicas($allocatedReplicas)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAllocatedReplicas()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReadyReplicas($readyReplicas)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReadyReplicas()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReplicas($replicas)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReplicas()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setReservedReplicas($reservedReplicas)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getReservedReplicas()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\GameServices\DeployedFleetStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAllocatedReplicas()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReadyReplicas($readyReplicas)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReadyReplicas()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReplicas($replicas)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReplicas()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setReservedReplicas($reservedReplicas)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getReservedReplicas()
+    class Google_Service_GameServices_DeployedFleetStatus extends \Google\Service\GameServices\DeployedFleetStatus
     {
     }
 }

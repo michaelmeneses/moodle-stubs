@@ -21,108 +21,117 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Backupdr;
-
-class ComputeInstanceDataSourceProperties extends \Google\Model
-{
-    /**
-     * The description of the Compute Engine instance.
-     *
-     * @var string
-     */
-    public $description;
-    /**
-     * The machine type of the instance.
-     *
-     * @var string
-     */
-    public $machineType;
-    /**
-     * Name of the compute instance backed up by the datasource.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * The total number of disks attached to the Instance.
-     *
-     * @var string
-     */
-    public $totalDiskCount;
-    /**
-     * The sum of all the disk sizes.
-     *
-     * @var string
-     */
-    public $totalDiskSizeGb;
-    /**
-     * The description of the Compute Engine instance.
-     *
-     * @param string $description
-     */
-    public function setDescription($description)
+namespace Google\Service\Backupdr {
+    class ComputeInstanceDataSourceProperties extends \Google\Model
     {
+        /**
+         * The description of the Compute Engine instance.
+         *
+         * @var string
+         */
+        public $description;
+        /**
+         * The machine type of the instance.
+         *
+         * @var string
+         */
+        public $machineType;
+        /**
+         * Name of the compute instance backed up by the datasource.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * The total number of disks attached to the Instance.
+         *
+         * @var string
+         */
+        public $totalDiskCount;
+        /**
+         * The sum of all the disk sizes.
+         *
+         * @var string
+         */
+        public $totalDiskSizeGb;
+        /**
+         * The description of the Compute Engine instance.
+         *
+         * @param string $description
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * The machine type of the instance.
+         *
+         * @param string $machineType
+         */
+        public function setMachineType($machineType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMachineType()
+        {
+        }
+        /**
+         * Name of the compute instance backed up by the datasource.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * The total number of disks attached to the Instance.
+         *
+         * @param string $totalDiskCount
+         */
+        public function setTotalDiskCount($totalDiskCount)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalDiskCount()
+        {
+        }
+        /**
+         * The sum of all the disk sizes.
+         *
+         * @param string $totalDiskSizeGb
+         */
+        public function setTotalDiskSizeGb($totalDiskSizeGb)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getTotalDiskSizeGb()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Backupdr\ComputeInstanceDataSourceProperties registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDescription()
-    {
-    }
-    /**
-     * The machine type of the instance.
-     *
-     * @param string $machineType
-     */
-    public function setMachineType($machineType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMachineType()
-    {
-    }
-    /**
-     * Name of the compute instance backed up by the datasource.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * The total number of disks attached to the Instance.
-     *
-     * @param string $totalDiskCount
-     */
-    public function setTotalDiskCount($totalDiskCount)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalDiskCount()
-    {
-    }
-    /**
-     * The sum of all the disk sizes.
-     *
-     * @param string $totalDiskSizeGb
-     */
-    public function setTotalDiskSizeGb($totalDiskSizeGb)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getTotalDiskSizeGb()
+    class Google_Service_Backupdr_ComputeInstanceDataSourceProperties extends \Google\Service\Backupdr\ComputeInstanceDataSourceProperties
     {
     }
 }

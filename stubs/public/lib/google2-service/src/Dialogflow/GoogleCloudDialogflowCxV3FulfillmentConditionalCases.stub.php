@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3FulfillmentConditionalCases extends \Google\Collection
-{
-    protected $collection_key = 'cases';
-    protected $casesType = GoogleCloudDialogflowCxV3FulfillmentConditionalCasesCase::class;
-    protected $casesDataType = 'array';
-    /**
-     * A list of cascading if-else conditions.
-     *
-     * @param GoogleCloudDialogflowCxV3FulfillmentConditionalCasesCase[] $cases
-     */
-    public function setCases($cases)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3FulfillmentConditionalCases extends \Google\Collection
     {
+        protected $collection_key = 'cases';
+        protected $casesType = GoogleCloudDialogflowCxV3FulfillmentConditionalCasesCase::class;
+        protected $casesDataType = 'array';
+        /**
+         * A list of cascading if-else conditions.
+         *
+         * @param GoogleCloudDialogflowCxV3FulfillmentConditionalCasesCase[] $cases
+         */
+        public function setCases($cases)
+        {
+        }
+        /**
+         * @return GoogleCloudDialogflowCxV3FulfillmentConditionalCasesCase[]
+         */
+        public function getCases()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDialogflowCxV3FulfillmentConditionalCasesCase[]
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3FulfillmentConditionalCases registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCases()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3FulfillmentConditionalCases extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3FulfillmentConditionalCases
     {
     }
 }

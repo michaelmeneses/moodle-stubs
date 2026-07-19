@@ -21,57 +21,66 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class GoogleDevtoolsRemotebuildbotResourceUsage extends \Google\Model
-{
-    public $cpuUsedPercent;
-    protected $diskUsageType = GoogleDevtoolsRemotebuildbotResourceUsageStat::class;
-    protected $diskUsageDataType = '';
-    protected $memoryUsageType = GoogleDevtoolsRemotebuildbotResourceUsageStat::class;
-    protected $memoryUsageDataType = '';
-    protected $totalDiskIoStatsType = GoogleDevtoolsRemotebuildbotResourceUsageIOStats::class;
-    protected $totalDiskIoStatsDataType = '';
-    public function setCpuUsedPercent($cpuUsedPercent)
+namespace Google\Service\RemoteBuildExecution {
+    class GoogleDevtoolsRemotebuildbotResourceUsage extends \Google\Model
     {
+        public $cpuUsedPercent;
+        protected $diskUsageType = GoogleDevtoolsRemotebuildbotResourceUsageStat::class;
+        protected $diskUsageDataType = '';
+        protected $memoryUsageType = GoogleDevtoolsRemotebuildbotResourceUsageStat::class;
+        protected $memoryUsageDataType = '';
+        protected $totalDiskIoStatsType = GoogleDevtoolsRemotebuildbotResourceUsageIOStats::class;
+        protected $totalDiskIoStatsDataType = '';
+        public function setCpuUsedPercent($cpuUsedPercent)
+        {
+        }
+        public function getCpuUsedPercent()
+        {
+        }
+        /**
+         * @param GoogleDevtoolsRemotebuildbotResourceUsageStat
+         */
+        public function setDiskUsage(GoogleDevtoolsRemotebuildbotResourceUsageStat $diskUsage)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsRemotebuildbotResourceUsageStat
+         */
+        public function getDiskUsage()
+        {
+        }
+        /**
+         * @param GoogleDevtoolsRemotebuildbotResourceUsageStat
+         */
+        public function setMemoryUsage(GoogleDevtoolsRemotebuildbotResourceUsageStat $memoryUsage)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsRemotebuildbotResourceUsageStat
+         */
+        public function getMemoryUsage()
+        {
+        }
+        /**
+         * @param GoogleDevtoolsRemotebuildbotResourceUsageIOStats
+         */
+        public function setTotalDiskIoStats(GoogleDevtoolsRemotebuildbotResourceUsageIOStats $totalDiskIoStats)
+        {
+        }
+        /**
+         * @return GoogleDevtoolsRemotebuildbotResourceUsageIOStats
+         */
+        public function getTotalDiskIoStats()
+        {
+        }
     }
-    public function getCpuUsedPercent()
-    {
-    }
+}
+namespace {
     /**
-     * @param GoogleDevtoolsRemotebuildbotResourceUsageStat
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemotebuildbotResourceUsage registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setDiskUsage(GoogleDevtoolsRemotebuildbotResourceUsageStat $diskUsage)
-    {
-    }
-    /**
-     * @return GoogleDevtoolsRemotebuildbotResourceUsageStat
-     */
-    public function getDiskUsage()
-    {
-    }
-    /**
-     * @param GoogleDevtoolsRemotebuildbotResourceUsageStat
-     */
-    public function setMemoryUsage(GoogleDevtoolsRemotebuildbotResourceUsageStat $memoryUsage)
-    {
-    }
-    /**
-     * @return GoogleDevtoolsRemotebuildbotResourceUsageStat
-     */
-    public function getMemoryUsage()
-    {
-    }
-    /**
-     * @param GoogleDevtoolsRemotebuildbotResourceUsageIOStats
-     */
-    public function setTotalDiskIoStats(GoogleDevtoolsRemotebuildbotResourceUsageIOStats $totalDiskIoStats)
-    {
-    }
-    /**
-     * @return GoogleDevtoolsRemotebuildbotResourceUsageIOStats
-     */
-    public function getTotalDiskIoStats()
+    class Google_Service_RemoteBuildExecution_GoogleDevtoolsRemotebuildbotResourceUsage extends \Google\Service\RemoteBuildExecution\GoogleDevtoolsRemotebuildbotResourceUsage
     {
     }
 }

@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1SearchMigratableResourcesResponse extends \Google\Collection
-{
-    protected $collection_key = 'migratableResources';
-    protected $migratableResourcesType = GoogleCloudAiplatformV1MigratableResource::class;
-    protected $migratableResourcesDataType = 'array';
-    /**
-     * The standard next-page token. The migratable_resources may not fill
-     * page_size in SearchMigratableResourcesRequest even when there are
-     * subsequent pages.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * All migratable resources that can be migrated to the location specified in
-     * the request.
-     *
-     * @param GoogleCloudAiplatformV1MigratableResource[] $migratableResources
-     */
-    public function setMigratableResources($migratableResources)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1SearchMigratableResourcesResponse extends \Google\Collection
     {
+        protected $collection_key = 'migratableResources';
+        protected $migratableResourcesType = GoogleCloudAiplatformV1MigratableResource::class;
+        protected $migratableResourcesDataType = 'array';
+        /**
+         * The standard next-page token. The migratable_resources may not fill
+         * page_size in SearchMigratableResourcesRequest even when there are
+         * subsequent pages.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * All migratable resources that can be migrated to the location specified in
+         * the request.
+         *
+         * @param GoogleCloudAiplatformV1MigratableResource[] $migratableResources
+         */
+        public function setMigratableResources($migratableResources)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1MigratableResource[]
+         */
+        public function getMigratableResources()
+        {
+        }
+        /**
+         * The standard next-page token. The migratable_resources may not fill
+         * page_size in SearchMigratableResourcesRequest even when there are
+         * subsequent pages.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1MigratableResource[]
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1SearchMigratableResourcesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMigratableResources()
-    {
-    }
-    /**
-     * The standard next-page token. The migratable_resources may not fill
-     * page_size in SearchMigratableResourcesRequest even when there are
-     * subsequent pages.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1SearchMigratableResourcesResponse extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1SearchMigratableResourcesResponse
     {
     }
 }

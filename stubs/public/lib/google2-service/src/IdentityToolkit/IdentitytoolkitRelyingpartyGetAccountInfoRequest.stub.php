@@ -21,111 +21,120 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\IdentityToolkit;
-
-class IdentitytoolkitRelyingpartyGetAccountInfoRequest extends \Google\Collection
-{
-    protected $collection_key = 'phoneNumber';
-    /**
-     * GCP project number of the requesting delegated app. Currently only intended
-     * for Firebase V1 migration.
-     *
-     * @var string
-     */
-    public $delegatedProjectNumber;
-    /**
-     * The list of emails of the users to inquiry.
-     *
-     * @var string[]
-     */
-    public $email;
-    /**
-     * The GITKit token of the authenticated user.
-     *
-     * @var string
-     */
-    public $idToken;
-    /**
-     * The list of local ID's of the users to inquiry.
-     *
-     * @var string[]
-     */
-    public $localId;
-    /**
-     * Privileged caller can query users by specified phone number.
-     *
-     * @var string[]
-     */
-    public $phoneNumber;
-    /**
-     * GCP project number of the requesting delegated app. Currently only intended
-     * for Firebase V1 migration.
-     *
-     * @param string $delegatedProjectNumber
-     */
-    public function setDelegatedProjectNumber($delegatedProjectNumber)
+namespace Google\Service\IdentityToolkit {
+    class IdentitytoolkitRelyingpartyGetAccountInfoRequest extends \Google\Collection
     {
+        protected $collection_key = 'phoneNumber';
+        /**
+         * GCP project number of the requesting delegated app. Currently only intended
+         * for Firebase V1 migration.
+         *
+         * @var string
+         */
+        public $delegatedProjectNumber;
+        /**
+         * The list of emails of the users to inquiry.
+         *
+         * @var string[]
+         */
+        public $email;
+        /**
+         * The GITKit token of the authenticated user.
+         *
+         * @var string
+         */
+        public $idToken;
+        /**
+         * The list of local ID's of the users to inquiry.
+         *
+         * @var string[]
+         */
+        public $localId;
+        /**
+         * Privileged caller can query users by specified phone number.
+         *
+         * @var string[]
+         */
+        public $phoneNumber;
+        /**
+         * GCP project number of the requesting delegated app. Currently only intended
+         * for Firebase V1 migration.
+         *
+         * @param string $delegatedProjectNumber
+         */
+        public function setDelegatedProjectNumber($delegatedProjectNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDelegatedProjectNumber()
+        {
+        }
+        /**
+         * The list of emails of the users to inquiry.
+         *
+         * @param string[] $email
+         */
+        public function setEmail($email)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEmail()
+        {
+        }
+        /**
+         * The GITKit token of the authenticated user.
+         *
+         * @param string $idToken
+         */
+        public function setIdToken($idToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIdToken()
+        {
+        }
+        /**
+         * The list of local ID's of the users to inquiry.
+         *
+         * @param string[] $localId
+         */
+        public function setLocalId($localId)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getLocalId()
+        {
+        }
+        /**
+         * Privileged caller can query users by specified phone number.
+         *
+         * @param string[] $phoneNumber
+         */
+        public function setPhoneNumber($phoneNumber)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getPhoneNumber()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartyGetAccountInfoRequest registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDelegatedProjectNumber()
-    {
-    }
-    /**
-     * The list of emails of the users to inquiry.
-     *
-     * @param string[] $email
-     */
-    public function setEmail($email)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getEmail()
-    {
-    }
-    /**
-     * The GITKit token of the authenticated user.
-     *
-     * @param string $idToken
-     */
-    public function setIdToken($idToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIdToken()
-    {
-    }
-    /**
-     * The list of local ID's of the users to inquiry.
-     *
-     * @param string[] $localId
-     */
-    public function setLocalId($localId)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getLocalId()
-    {
-    }
-    /**
-     * Privileged caller can query users by specified phone number.
-     *
-     * @param string[] $phoneNumber
-     */
-    public function setPhoneNumber($phoneNumber)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getPhoneNumber()
+    class Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartyGetAccountInfoRequest extends \Google\Service\IdentityToolkit\IdentitytoolkitRelyingpartyGetAccountInfoRequest
     {
     }
 }

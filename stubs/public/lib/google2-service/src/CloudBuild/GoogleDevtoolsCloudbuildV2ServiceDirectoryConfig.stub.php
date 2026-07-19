@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudBuild;
-
-class GoogleDevtoolsCloudbuildV2ServiceDirectoryConfig extends \Google\Model
-{
-    /**
-     * Required. The Service Directory service name. Format: projects/{project}/lo
-     * cations/{location}/namespaces/{namespace}/services/{service}.
-     *
-     * @var string
-     */
-    public $service;
-    /**
-     * Required. The Service Directory service name. Format: projects/{project}/lo
-     * cations/{location}/namespaces/{namespace}/services/{service}.
-     *
-     * @param string $service
-     */
-    public function setService($service)
+namespace Google\Service\CloudBuild {
+    class GoogleDevtoolsCloudbuildV2ServiceDirectoryConfig extends \Google\Model
     {
+        /**
+         * Required. The Service Directory service name. Format: projects/{project}/lo
+         * cations/{location}/namespaces/{namespace}/services/{service}.
+         *
+         * @var string
+         */
+        public $service;
+        /**
+         * Required. The Service Directory service name. Format: projects/{project}/lo
+         * cations/{location}/namespaces/{namespace}/services/{service}.
+         *
+         * @param string $service
+         */
+        public function setService($service)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getService()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudBuild\GoogleDevtoolsCloudbuildV2ServiceDirectoryConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getService()
+    class Google_Service_CloudBuild_GoogleDevtoolsCloudbuildV2ServiceDirectoryConfig extends \Google\Service\CloudBuild\GoogleDevtoolsCloudbuildV2ServiceDirectoryConfig
     {
     }
 }

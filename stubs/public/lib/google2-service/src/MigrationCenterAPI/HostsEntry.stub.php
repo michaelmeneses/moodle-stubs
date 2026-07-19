@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\MigrationCenterAPI;
-
-class HostsEntry extends \Google\Collection
-{
-    protected $collection_key = 'hostNames';
-    /**
-     * List of host names / aliases.
-     *
-     * @var string[]
-     */
-    public $hostNames;
-    /**
-     * IP (raw, IPv4/6 agnostic).
-     *
-     * @var string
-     */
-    public $ip;
-    /**
-     * List of host names / aliases.
-     *
-     * @param string[] $hostNames
-     */
-    public function setHostNames($hostNames)
+namespace Google\Service\MigrationCenterAPI {
+    class HostsEntry extends \Google\Collection
     {
+        protected $collection_key = 'hostNames';
+        /**
+         * List of host names / aliases.
+         *
+         * @var string[]
+         */
+        public $hostNames;
+        /**
+         * IP (raw, IPv4/6 agnostic).
+         *
+         * @var string
+         */
+        public $ip;
+        /**
+         * List of host names / aliases.
+         *
+         * @param string[] $hostNames
+         */
+        public function setHostNames($hostNames)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getHostNames()
+        {
+        }
+        /**
+         * IP (raw, IPv4/6 agnostic).
+         *
+         * @param string $ip
+         */
+        public function setIp($ip)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIp()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\MigrationCenterAPI\HostsEntry registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getHostNames()
-    {
-    }
-    /**
-     * IP (raw, IPv4/6 agnostic).
-     *
-     * @param string $ip
-     */
-    public function setIp($ip)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIp()
+    class Google_Service_MigrationCenterAPI_HostsEntry extends \Google\Service\MigrationCenterAPI\HostsEntry
     {
     }
 }

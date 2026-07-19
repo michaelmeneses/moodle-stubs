@@ -21,49 +21,58 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ToolResults;
-
-class EncounteredLoginScreen extends \Google\Collection
-{
-    protected $collection_key = 'screenIds';
-    /**
-     * Number of encountered distinct login screens.
-     *
-     * @var int
-     */
-    public $distinctScreens;
-    /**
-     * Subset of login screens.
-     *
-     * @var string[]
-     */
-    public $screenIds;
-    /**
-     * Number of encountered distinct login screens.
-     *
-     * @param int $distinctScreens
-     */
-    public function setDistinctScreens($distinctScreens)
+namespace Google\Service\ToolResults {
+    class EncounteredLoginScreen extends \Google\Collection
     {
+        protected $collection_key = 'screenIds';
+        /**
+         * Number of encountered distinct login screens.
+         *
+         * @var int
+         */
+        public $distinctScreens;
+        /**
+         * Subset of login screens.
+         *
+         * @var string[]
+         */
+        public $screenIds;
+        /**
+         * Number of encountered distinct login screens.
+         *
+         * @param int $distinctScreens
+         */
+        public function setDistinctScreens($distinctScreens)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getDistinctScreens()
+        {
+        }
+        /**
+         * Subset of login screens.
+         *
+         * @param string[] $screenIds
+         */
+        public function setScreenIds($screenIds)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getScreenIds()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\ToolResults\EncounteredLoginScreen registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDistinctScreens()
-    {
-    }
-    /**
-     * Subset of login screens.
-     *
-     * @param string[] $screenIds
-     */
-    public function setScreenIds($screenIds)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getScreenIds()
+    class Google_Service_ToolResults_EncounteredLoginScreen extends \Google\Service\ToolResults\EncounteredLoginScreen
     {
     }
 }

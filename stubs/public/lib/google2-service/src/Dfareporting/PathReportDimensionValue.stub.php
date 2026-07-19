@@ -21,89 +21,98 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class PathReportDimensionValue extends \Google\Collection
-{
-    protected $collection_key = 'values';
-    /**
-     * @var string
-     */
-    public $dimensionName;
-    /**
-     * @var string[]
-     */
-    public $ids;
-    /**
-     * @var string
-     */
-    public $kind;
-    /**
-     * @var string
-     */
-    public $matchType;
-    /**
-     * @var string[]
-     */
-    public $values;
-    /**
-     * @param string
-     */
-    public function setDimensionName($dimensionName)
+namespace Google\Service\Dfareporting {
+    class PathReportDimensionValue extends \Google\Collection
     {
+        protected $collection_key = 'values';
+        /**
+         * @var string
+         */
+        public $dimensionName;
+        /**
+         * @var string[]
+         */
+        public $ids;
+        /**
+         * @var string
+         */
+        public $kind;
+        /**
+         * @var string
+         */
+        public $matchType;
+        /**
+         * @var string[]
+         */
+        public $values;
+        /**
+         * @param string
+         */
+        public function setDimensionName($dimensionName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDimensionName()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setIds($ids)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIds()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setMatchType($matchType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getMatchType()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setValues($values)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getValues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dfareporting\PathReportDimensionValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDimensionName()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setIds($ids)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getIds()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setMatchType($matchType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getMatchType()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setValues($values)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getValues()
+    class Google_Service_Dfareporting_PathReportDimensionValue extends \Google\Service\Dfareporting\PathReportDimensionValue
     {
     }
 }

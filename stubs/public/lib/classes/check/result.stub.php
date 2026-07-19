@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\check;
 
+use core\output\action_link;
 /**
  * A check object returns a result object
  *

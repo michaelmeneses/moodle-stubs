@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineV1betaSearchResponseFacetFacetValue extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $count;
-    protected $intervalType = GoogleCloudDiscoveryengineV1betaInterval::class;
-    protected $intervalDataType = '';
-    /**
-     * @var string
-     */
-    public $value;
-    /**
-     * @param string
-     */
-    public function setCount($count)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineV1betaSearchResponseFacetFacetValue extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $count;
+        protected $intervalType = GoogleCloudDiscoveryengineV1betaInterval::class;
+        protected $intervalDataType = '';
+        /**
+         * @var string
+         */
+        public $value;
+        /**
+         * @param string
+         */
+        public function setCount($count)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCount()
+        {
+        }
+        /**
+         * @param GoogleCloudDiscoveryengineV1betaInterval
+         */
+        public function setInterval(GoogleCloudDiscoveryengineV1betaInterval $interval)
+        {
+        }
+        /**
+         * @return GoogleCloudDiscoveryengineV1betaInterval
+         */
+        public function getInterval()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaSearchResponseFacetFacetValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCount()
-    {
-    }
-    /**
-     * @param GoogleCloudDiscoveryengineV1betaInterval
-     */
-    public function setInterval(GoogleCloudDiscoveryengineV1betaInterval $interval)
-    {
-    }
-    /**
-     * @return GoogleCloudDiscoveryengineV1betaInterval
-     */
-    public function getInterval()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getValue()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineV1betaSearchResponseFacetFacetValue extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineV1betaSearchResponseFacetFacetValue
     {
     }
 }

@@ -21,50 +21,59 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class ResourcePolicySnapshotSchedulePolicySchedule extends \Google\Model
-{
-    protected $dailyScheduleType = ResourcePolicyDailyCycle::class;
-    protected $dailyScheduleDataType = '';
-    protected $hourlyScheduleType = ResourcePolicyHourlyCycle::class;
-    protected $hourlyScheduleDataType = '';
-    protected $weeklyScheduleType = ResourcePolicyWeeklyCycle::class;
-    protected $weeklyScheduleDataType = '';
-    /**
-     * @param ResourcePolicyDailyCycle $dailySchedule
-     */
-    public function setDailySchedule(ResourcePolicyDailyCycle $dailySchedule)
+namespace Google\Service\Compute {
+    class ResourcePolicySnapshotSchedulePolicySchedule extends \Google\Model
     {
+        protected $dailyScheduleType = ResourcePolicyDailyCycle::class;
+        protected $dailyScheduleDataType = '';
+        protected $hourlyScheduleType = ResourcePolicyHourlyCycle::class;
+        protected $hourlyScheduleDataType = '';
+        protected $weeklyScheduleType = ResourcePolicyWeeklyCycle::class;
+        protected $weeklyScheduleDataType = '';
+        /**
+         * @param ResourcePolicyDailyCycle $dailySchedule
+         */
+        public function setDailySchedule(ResourcePolicyDailyCycle $dailySchedule)
+        {
+        }
+        /**
+         * @return ResourcePolicyDailyCycle
+         */
+        public function getDailySchedule()
+        {
+        }
+        /**
+         * @param ResourcePolicyHourlyCycle $hourlySchedule
+         */
+        public function setHourlySchedule(ResourcePolicyHourlyCycle $hourlySchedule)
+        {
+        }
+        /**
+         * @return ResourcePolicyHourlyCycle
+         */
+        public function getHourlySchedule()
+        {
+        }
+        /**
+         * @param ResourcePolicyWeeklyCycle $weeklySchedule
+         */
+        public function setWeeklySchedule(ResourcePolicyWeeklyCycle $weeklySchedule)
+        {
+        }
+        /**
+         * @return ResourcePolicyWeeklyCycle
+         */
+        public function getWeeklySchedule()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ResourcePolicyDailyCycle
+     * Runtime class alias of \Google\Service\Compute\ResourcePolicySnapshotSchedulePolicySchedule registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDailySchedule()
-    {
-    }
-    /**
-     * @param ResourcePolicyHourlyCycle $hourlySchedule
-     */
-    public function setHourlySchedule(ResourcePolicyHourlyCycle $hourlySchedule)
-    {
-    }
-    /**
-     * @return ResourcePolicyHourlyCycle
-     */
-    public function getHourlySchedule()
-    {
-    }
-    /**
-     * @param ResourcePolicyWeeklyCycle $weeklySchedule
-     */
-    public function setWeeklySchedule(ResourcePolicyWeeklyCycle $weeklySchedule)
-    {
-    }
-    /**
-     * @return ResourcePolicyWeeklyCycle
-     */
-    public function getWeeklySchedule()
+    class Google_Service_Compute_ResourcePolicySnapshotSchedulePolicySchedule extends \Google\Service\Compute\ResourcePolicySnapshotSchedulePolicySchedule
     {
     }
 }

@@ -21,69 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AppHub\Resource;
-
-/**
- * The "discoveredWorkloads" collection of methods.
- * Typical usage is:
- *  <code>
- *   $apphubService = new Google\Service\AppHub(...);
- *   $discoveredWorkloads = $apphubService->projects_locations_discoveredWorkloads;
- *  </code>
- */
-class ProjectsLocationsDiscoveredWorkloads extends \Google\Service\Resource
-{
+namespace Google\Service\AppHub\Resource {
+    use Google\Service\AppHub\DiscoveredWorkload;
+    use Google\Service\AppHub\ListDiscoveredWorkloadsResponse;
+    use Google\Service\AppHub\LookupDiscoveredWorkloadResponse;
     /**
-     * Gets a Discovered Workload in a host project and location.
-     * (discoveredWorkloads.get)
-     *
-     * @param string $name Required. Fully qualified name of the Discovered Workload
-     * to fetch. Expected format: `projects/{project}/locations/{location}/discovere
-     * dWorkloads/{discoveredWorkload}`.
-     * @param array $optParams Optional parameters.
-     * @return DiscoveredWorkload
-     * @throws \Google\Service\Exception
+     * The "discoveredWorkloads" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $apphubService = new Google\Service\AppHub(...);
+     *   $discoveredWorkloads = $apphubService->projects_locations_discoveredWorkloads;
+     *  </code>
      */
-    public function get($name, $optParams = [])
+    class ProjectsLocationsDiscoveredWorkloads extends \Google\Service\Resource
     {
+        /**
+         * Gets a Discovered Workload in a host project and location.
+         * (discoveredWorkloads.get)
+         *
+         * @param string $name Required. Fully qualified name of the Discovered Workload
+         * to fetch. Expected format: `projects/{project}/locations/{location}/discovere
+         * dWorkloads/{discoveredWorkload}`.
+         * @param array $optParams Optional parameters.
+         * @return DiscoveredWorkload
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists Discovered Workloads that can be added to an Application in a host
+         * project and location.
+         * (discoveredWorkloads.listProjectsLocationsDiscoveredWorkloads)
+         *
+         * @param string $parent Required. Project and location to list Discovered
+         * Workloads on. Expected format: `projects/{project}/locations/{location}`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Optional. Filtering results.
+         * @opt_param string orderBy Optional. Hint for how to order the results.
+         * @opt_param int pageSize Optional. Requested page size. Server may return
+         * fewer items than requested. If unspecified, server will pick an appropriate
+         * default.
+         * @opt_param string pageToken Optional. A token identifying a page of results
+         * the server should return.
+         * @return ListDiscoveredWorkloadsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsLocationsDiscoveredWorkloads($parent, $optParams = [])
+        {
+        }
+        /**
+         * Lists a Discovered Workload in a host project and location, with a given
+         * resource URI. (discoveredWorkloads.lookup)
+         *
+         * @param string $parent Required. Host project ID and location to lookup
+         * Discovered Workload in. Expected format:
+         * `projects/{project}/locations/{location}`.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string uri Required. Resource URI to find Discovered Workload for.
+         * Accepts both project number and project ID and does translation when needed.
+         * @return LookupDiscoveredWorkloadResponse
+         * @throws \Google\Service\Exception
+         */
+        public function lookup($parent, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Lists Discovered Workloads that can be added to an Application in a host
-     * project and location.
-     * (discoveredWorkloads.listProjectsLocationsDiscoveredWorkloads)
-     *
-     * @param string $parent Required. Project and location to list Discovered
-     * Workloads on. Expected format: `projects/{project}/locations/{location}`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Optional. Filtering results.
-     * @opt_param string orderBy Optional. Hint for how to order the results.
-     * @opt_param int pageSize Optional. Requested page size. Server may return
-     * fewer items than requested. If unspecified, server will pick an appropriate
-     * default.
-     * @opt_param string pageToken Optional. A token identifying a page of results
-     * the server should return.
-     * @return ListDiscoveredWorkloadsResponse
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\AppHub\Resource\ProjectsLocationsDiscoveredWorkloads registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function listProjectsLocationsDiscoveredWorkloads($parent, $optParams = [])
-    {
-    }
-    /**
-     * Lists a Discovered Workload in a host project and location, with a given
-     * resource URI. (discoveredWorkloads.lookup)
-     *
-     * @param string $parent Required. Host project ID and location to lookup
-     * Discovered Workload in. Expected format:
-     * `projects/{project}/locations/{location}`.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string uri Required. Resource URI to find Discovered Workload for.
-     * Accepts both project number and project ID and does translation when needed.
-     * @return LookupDiscoveredWorkloadResponse
-     * @throws \Google\Service\Exception
-     */
-    public function lookup($parent, $optParams = [])
+    class Google_Service_AppHub_Resource_ProjectsLocationsDiscoveredWorkloads extends \Google\Service\AppHub\Resource\ProjectsLocationsDiscoveredWorkloads
     {
     }
 }

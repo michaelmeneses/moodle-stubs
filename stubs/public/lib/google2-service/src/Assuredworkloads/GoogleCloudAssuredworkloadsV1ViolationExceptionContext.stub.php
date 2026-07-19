@@ -21,70 +21,79 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Assuredworkloads;
-
-class GoogleCloudAssuredworkloadsV1ViolationExceptionContext extends \Google\Model
-{
-    /**
-     * Timestamp when the violation was acknowledged.
-     *
-     * @var string
-     */
-    public $acknowledgementTime;
-    /**
-     * Business justification provided towards the acknowledgement of the
-     * violation.
-     *
-     * @var string
-     */
-    public $comment;
-    /**
-     * Name of the user (or service account) who acknowledged the violation.
-     *
-     * @var string
-     */
-    public $userName;
-    /**
-     * Timestamp when the violation was acknowledged.
-     *
-     * @param string $acknowledgementTime
-     */
-    public function setAcknowledgementTime($acknowledgementTime)
+namespace Google\Service\Assuredworkloads {
+    class GoogleCloudAssuredworkloadsV1ViolationExceptionContext extends \Google\Model
     {
+        /**
+         * Timestamp when the violation was acknowledged.
+         *
+         * @var string
+         */
+        public $acknowledgementTime;
+        /**
+         * Business justification provided towards the acknowledgement of the
+         * violation.
+         *
+         * @var string
+         */
+        public $comment;
+        /**
+         * Name of the user (or service account) who acknowledged the violation.
+         *
+         * @var string
+         */
+        public $userName;
+        /**
+         * Timestamp when the violation was acknowledged.
+         *
+         * @param string $acknowledgementTime
+         */
+        public function setAcknowledgementTime($acknowledgementTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAcknowledgementTime()
+        {
+        }
+        /**
+         * Business justification provided towards the acknowledgement of the
+         * violation.
+         *
+         * @param string $comment
+         */
+        public function setComment($comment)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getComment()
+        {
+        }
+        /**
+         * Name of the user (or service account) who acknowledged the violation.
+         *
+         * @param string $userName
+         */
+        public function setUserName($userName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getUserName()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1ViolationExceptionContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAcknowledgementTime()
-    {
-    }
-    /**
-     * Business justification provided towards the acknowledgement of the
-     * violation.
-     *
-     * @param string $comment
-     */
-    public function setComment($comment)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getComment()
-    {
-    }
-    /**
-     * Name of the user (or service account) who acknowledged the violation.
-     *
-     * @param string $userName
-     */
-    public function setUserName($userName)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getUserName()
+    class Google_Service_Assuredworkloads_GoogleCloudAssuredworkloadsV1ViolationExceptionContext extends \Google\Service\Assuredworkloads\GoogleCloudAssuredworkloadsV1ViolationExceptionContext
     {
     }
 }

@@ -21,151 +21,160 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class ChatContentExtension extends \Google\Collection
-{
-    protected $collection_key = 'annotation';
-    protected $annotationType = EventAnnotation::class;
-    protected $annotationDataType = 'array';
-    protected $dynamitePlaceholderMetadataType = ChatConserverDynamitePlaceholderMetadata::class;
-    protected $dynamitePlaceholderMetadataDataType = '';
-    /**
-     * @var string
-     */
-    public $eventOtrStatus;
-    protected $groupLinkSharingModificationEventType = GroupLinkSharingModificationEvent::class;
-    protected $groupLinkSharingModificationEventDataType = '';
-    protected $hangoutEventType = HangoutEvent::class;
-    protected $hangoutEventDataType = '';
-    protected $inviteAcceptedEventType = InviteAcceptedEvent::class;
-    protected $inviteAcceptedEventDataType = '';
-    protected $membershipChangeEventType = MembershipChangeEvent::class;
-    protected $membershipChangeEventDataType = '';
-    protected $otrChatMessageEventType = OtrChatMessageEvent::class;
-    protected $otrChatMessageEventDataType = '';
-    protected $otrModificationEventType = OtrModificationEvent::class;
-    protected $otrModificationEventDataType = '';
-    protected $renameEventType = RenameEvent::class;
-    protected $renameEventDataType = '';
-    /**
-     * @param EventAnnotation[]
-     */
-    public function setAnnotation($annotation)
+namespace Google\Service\CloudSearch {
+    class ChatContentExtension extends \Google\Collection
     {
+        protected $collection_key = 'annotation';
+        protected $annotationType = EventAnnotation::class;
+        protected $annotationDataType = 'array';
+        protected $dynamitePlaceholderMetadataType = ChatConserverDynamitePlaceholderMetadata::class;
+        protected $dynamitePlaceholderMetadataDataType = '';
+        /**
+         * @var string
+         */
+        public $eventOtrStatus;
+        protected $groupLinkSharingModificationEventType = GroupLinkSharingModificationEvent::class;
+        protected $groupLinkSharingModificationEventDataType = '';
+        protected $hangoutEventType = HangoutEvent::class;
+        protected $hangoutEventDataType = '';
+        protected $inviteAcceptedEventType = InviteAcceptedEvent::class;
+        protected $inviteAcceptedEventDataType = '';
+        protected $membershipChangeEventType = MembershipChangeEvent::class;
+        protected $membershipChangeEventDataType = '';
+        protected $otrChatMessageEventType = OtrChatMessageEvent::class;
+        protected $otrChatMessageEventDataType = '';
+        protected $otrModificationEventType = OtrModificationEvent::class;
+        protected $otrModificationEventDataType = '';
+        protected $renameEventType = RenameEvent::class;
+        protected $renameEventDataType = '';
+        /**
+         * @param EventAnnotation[]
+         */
+        public function setAnnotation($annotation)
+        {
+        }
+        /**
+         * @return EventAnnotation[]
+         */
+        public function getAnnotation()
+        {
+        }
+        /**
+         * @param ChatConserverDynamitePlaceholderMetadata
+         */
+        public function setDynamitePlaceholderMetadata(ChatConserverDynamitePlaceholderMetadata $dynamitePlaceholderMetadata)
+        {
+        }
+        /**
+         * @return ChatConserverDynamitePlaceholderMetadata
+         */
+        public function getDynamitePlaceholderMetadata()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEventOtrStatus($eventOtrStatus)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEventOtrStatus()
+        {
+        }
+        /**
+         * @param GroupLinkSharingModificationEvent
+         */
+        public function setGroupLinkSharingModificationEvent(GroupLinkSharingModificationEvent $groupLinkSharingModificationEvent)
+        {
+        }
+        /**
+         * @return GroupLinkSharingModificationEvent
+         */
+        public function getGroupLinkSharingModificationEvent()
+        {
+        }
+        /**
+         * @param HangoutEvent
+         */
+        public function setHangoutEvent(HangoutEvent $hangoutEvent)
+        {
+        }
+        /**
+         * @return HangoutEvent
+         */
+        public function getHangoutEvent()
+        {
+        }
+        /**
+         * @param InviteAcceptedEvent
+         */
+        public function setInviteAcceptedEvent(InviteAcceptedEvent $inviteAcceptedEvent)
+        {
+        }
+        /**
+         * @return InviteAcceptedEvent
+         */
+        public function getInviteAcceptedEvent()
+        {
+        }
+        /**
+         * @param MembershipChangeEvent
+         */
+        public function setMembershipChangeEvent(MembershipChangeEvent $membershipChangeEvent)
+        {
+        }
+        /**
+         * @return MembershipChangeEvent
+         */
+        public function getMembershipChangeEvent()
+        {
+        }
+        /**
+         * @param OtrChatMessageEvent
+         */
+        public function setOtrChatMessageEvent(OtrChatMessageEvent $otrChatMessageEvent)
+        {
+        }
+        /**
+         * @return OtrChatMessageEvent
+         */
+        public function getOtrChatMessageEvent()
+        {
+        }
+        /**
+         * @param OtrModificationEvent
+         */
+        public function setOtrModificationEvent(OtrModificationEvent $otrModificationEvent)
+        {
+        }
+        /**
+         * @return OtrModificationEvent
+         */
+        public function getOtrModificationEvent()
+        {
+        }
+        /**
+         * @param RenameEvent
+         */
+        public function setRenameEvent(RenameEvent $renameEvent)
+        {
+        }
+        /**
+         * @return RenameEvent
+         */
+        public function getRenameEvent()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return EventAnnotation[]
+     * Runtime class alias of \Google\Service\CloudSearch\ChatContentExtension registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnnotation()
-    {
-    }
-    /**
-     * @param ChatConserverDynamitePlaceholderMetadata
-     */
-    public function setDynamitePlaceholderMetadata(ChatConserverDynamitePlaceholderMetadata $dynamitePlaceholderMetadata)
-    {
-    }
-    /**
-     * @return ChatConserverDynamitePlaceholderMetadata
-     */
-    public function getDynamitePlaceholderMetadata()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEventOtrStatus($eventOtrStatus)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEventOtrStatus()
-    {
-    }
-    /**
-     * @param GroupLinkSharingModificationEvent
-     */
-    public function setGroupLinkSharingModificationEvent(GroupLinkSharingModificationEvent $groupLinkSharingModificationEvent)
-    {
-    }
-    /**
-     * @return GroupLinkSharingModificationEvent
-     */
-    public function getGroupLinkSharingModificationEvent()
-    {
-    }
-    /**
-     * @param HangoutEvent
-     */
-    public function setHangoutEvent(HangoutEvent $hangoutEvent)
-    {
-    }
-    /**
-     * @return HangoutEvent
-     */
-    public function getHangoutEvent()
-    {
-    }
-    /**
-     * @param InviteAcceptedEvent
-     */
-    public function setInviteAcceptedEvent(InviteAcceptedEvent $inviteAcceptedEvent)
-    {
-    }
-    /**
-     * @return InviteAcceptedEvent
-     */
-    public function getInviteAcceptedEvent()
-    {
-    }
-    /**
-     * @param MembershipChangeEvent
-     */
-    public function setMembershipChangeEvent(MembershipChangeEvent $membershipChangeEvent)
-    {
-    }
-    /**
-     * @return MembershipChangeEvent
-     */
-    public function getMembershipChangeEvent()
-    {
-    }
-    /**
-     * @param OtrChatMessageEvent
-     */
-    public function setOtrChatMessageEvent(OtrChatMessageEvent $otrChatMessageEvent)
-    {
-    }
-    /**
-     * @return OtrChatMessageEvent
-     */
-    public function getOtrChatMessageEvent()
-    {
-    }
-    /**
-     * @param OtrModificationEvent
-     */
-    public function setOtrModificationEvent(OtrModificationEvent $otrModificationEvent)
-    {
-    }
-    /**
-     * @return OtrModificationEvent
-     */
-    public function getOtrModificationEvent()
-    {
-    }
-    /**
-     * @param RenameEvent
-     */
-    public function setRenameEvent(RenameEvent $renameEvent)
-    {
-    }
-    /**
-     * @return RenameEvent
-     */
-    public function getRenameEvent()
+    class Google_Service_CloudSearch_ChatContentExtension extends \Google\Service\CloudSearch\ChatContentExtension
     {
     }
 }

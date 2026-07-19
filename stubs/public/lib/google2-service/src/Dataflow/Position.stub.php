@@ -21,128 +21,137 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dataflow;
-
-class Position extends \Google\Model
-{
-    /**
-     * Position is a byte offset.
-     *
-     * @var string
-     */
-    public $byteOffset;
-    protected $concatPositionType = ConcatPosition::class;
-    protected $concatPositionDataType = '';
-    /**
-     * Position is past all other positions. Also useful for the end position of
-     * an unbounded range.
-     *
-     * @var bool
-     */
-    public $end;
-    /**
-     * Position is a string key, ordered lexicographically.
-     *
-     * @var string
-     */
-    public $key;
-    /**
-     * Position is a record index.
-     *
-     * @var string
-     */
-    public $recordIndex;
-    /**
-     * CloudPosition is a base64 encoded BatchShufflePosition (with FIXED
-     * sharding).
-     *
-     * @var string
-     */
-    public $shufflePosition;
-    /**
-     * Position is a byte offset.
-     *
-     * @param string $byteOffset
-     */
-    public function setByteOffset($byteOffset)
+namespace Google\Service\Dataflow {
+    class Position extends \Google\Model
     {
+        /**
+         * Position is a byte offset.
+         *
+         * @var string
+         */
+        public $byteOffset;
+        protected $concatPositionType = ConcatPosition::class;
+        protected $concatPositionDataType = '';
+        /**
+         * Position is past all other positions. Also useful for the end position of
+         * an unbounded range.
+         *
+         * @var bool
+         */
+        public $end;
+        /**
+         * Position is a string key, ordered lexicographically.
+         *
+         * @var string
+         */
+        public $key;
+        /**
+         * Position is a record index.
+         *
+         * @var string
+         */
+        public $recordIndex;
+        /**
+         * CloudPosition is a base64 encoded BatchShufflePosition (with FIXED
+         * sharding).
+         *
+         * @var string
+         */
+        public $shufflePosition;
+        /**
+         * Position is a byte offset.
+         *
+         * @param string $byteOffset
+         */
+        public function setByteOffset($byteOffset)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getByteOffset()
+        {
+        }
+        /**
+         * CloudPosition is a concat position.
+         *
+         * @param ConcatPosition $concatPosition
+         */
+        public function setConcatPosition(ConcatPosition $concatPosition)
+        {
+        }
+        /**
+         * @return ConcatPosition
+         */
+        public function getConcatPosition()
+        {
+        }
+        /**
+         * Position is past all other positions. Also useful for the end position of
+         * an unbounded range.
+         *
+         * @param bool $end
+         */
+        public function setEnd($end)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getEnd()
+        {
+        }
+        /**
+         * Position is a string key, ordered lexicographically.
+         *
+         * @param string $key
+         */
+        public function setKey($key)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKey()
+        {
+        }
+        /**
+         * Position is a record index.
+         *
+         * @param string $recordIndex
+         */
+        public function setRecordIndex($recordIndex)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getRecordIndex()
+        {
+        }
+        /**
+         * CloudPosition is a base64 encoded BatchShufflePosition (with FIXED
+         * sharding).
+         *
+         * @param string $shufflePosition
+         */
+        public function setShufflePosition($shufflePosition)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getShufflePosition()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dataflow\Position registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getByteOffset()
-    {
-    }
-    /**
-     * CloudPosition is a concat position.
-     *
-     * @param ConcatPosition $concatPosition
-     */
-    public function setConcatPosition(ConcatPosition $concatPosition)
-    {
-    }
-    /**
-     * @return ConcatPosition
-     */
-    public function getConcatPosition()
-    {
-    }
-    /**
-     * Position is past all other positions. Also useful for the end position of
-     * an unbounded range.
-     *
-     * @param bool $end
-     */
-    public function setEnd($end)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getEnd()
-    {
-    }
-    /**
-     * Position is a string key, ordered lexicographically.
-     *
-     * @param string $key
-     */
-    public function setKey($key)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKey()
-    {
-    }
-    /**
-     * Position is a record index.
-     *
-     * @param string $recordIndex
-     */
-    public function setRecordIndex($recordIndex)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getRecordIndex()
-    {
-    }
-    /**
-     * CloudPosition is a base64 encoded BatchShufflePosition (with FIXED
-     * sharding).
-     *
-     * @param string $shufflePosition
-     */
-    public function setShufflePosition($shufflePosition)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getShufflePosition()
+    class Google_Service_Dataflow_Position extends \Google\Service\Dataflow\Position
     {
     }
 }

@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Bigquery;
-
-class ConfusionMatrix extends \Google\Collection
-{
-    protected $collection_key = 'rows';
-    /**
-     * Confidence threshold used when computing the entries of the confusion
-     * matrix.
-     *
-     * @var 
-     */
-    public $confidenceThreshold;
-    protected $rowsType = Row::class;
-    protected $rowsDataType = 'array';
-    public function setConfidenceThreshold($confidenceThreshold)
+namespace Google\Service\Bigquery {
+    class ConfusionMatrix extends \Google\Collection
     {
+        protected $collection_key = 'rows';
+        /**
+         * Confidence threshold used when computing the entries of the confusion
+         * matrix.
+         *
+         * @var 
+         */
+        public $confidenceThreshold;
+        protected $rowsType = Row::class;
+        protected $rowsDataType = 'array';
+        public function setConfidenceThreshold($confidenceThreshold)
+        {
+        }
+        public function getConfidenceThreshold()
+        {
+        }
+        /**
+         * One row per actual label.
+         *
+         * @param Row[] $rows
+         */
+        public function setRows($rows)
+        {
+        }
+        /**
+         * @return Row[]
+         */
+        public function getRows()
+        {
+        }
     }
-    public function getConfidenceThreshold()
-    {
-    }
+}
+namespace {
     /**
-     * One row per actual label.
-     *
-     * @param Row[] $rows
+     * Runtime class alias of \Google\Service\Bigquery\ConfusionMatrix registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function setRows($rows)
-    {
-    }
-    /**
-     * @return Row[]
-     */
-    public function getRows()
+    class Google_Service_Bigquery_ConfusionMatrix extends \Google\Service\Bigquery\ConfusionMatrix
     {
     }
 }

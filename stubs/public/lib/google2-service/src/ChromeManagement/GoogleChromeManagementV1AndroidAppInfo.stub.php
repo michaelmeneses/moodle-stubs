@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromeManagement;
-
-class GoogleChromeManagementV1AndroidAppInfo extends \Google\Collection
-{
-    protected $collection_key = 'permissions';
-    protected $permissionsType = GoogleChromeManagementV1AndroidAppPermission::class;
-    protected $permissionsDataType = 'array';
-    /**
-     * Output only. Permissions requested by an Android app.
-     *
-     * @param GoogleChromeManagementV1AndroidAppPermission[] $permissions
-     */
-    public function setPermissions($permissions)
+namespace Google\Service\ChromeManagement {
+    class GoogleChromeManagementV1AndroidAppInfo extends \Google\Collection
     {
+        protected $collection_key = 'permissions';
+        protected $permissionsType = GoogleChromeManagementV1AndroidAppPermission::class;
+        protected $permissionsDataType = 'array';
+        /**
+         * Output only. Permissions requested by an Android app.
+         *
+         * @param GoogleChromeManagementV1AndroidAppPermission[] $permissions
+         */
+        public function setPermissions($permissions)
+        {
+        }
+        /**
+         * @return GoogleChromeManagementV1AndroidAppPermission[]
+         */
+        public function getPermissions()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleChromeManagementV1AndroidAppPermission[]
+     * Runtime class alias of \Google\Service\ChromeManagement\GoogleChromeManagementV1AndroidAppInfo registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPermissions()
+    class Google_Service_ChromeManagement_GoogleChromeManagementV1AndroidAppInfo extends \Google\Service\ChromeManagement\GoogleChromeManagementV1AndroidAppInfo
     {
     }
 }

@@ -21,23 +21,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\RemoteBuildExecution;
-
-class BuildBazelRemoteExecutionV2BatchUpdateBlobsResponse extends \Google\Collection
-{
-    protected $collection_key = 'responses';
-    protected $responsesType = BuildBazelRemoteExecutionV2BatchUpdateBlobsResponseResponse::class;
-    protected $responsesDataType = 'array';
-    /**
-     * @param BuildBazelRemoteExecutionV2BatchUpdateBlobsResponseResponse[]
-     */
-    public function setResponses($responses)
+namespace Google\Service\RemoteBuildExecution {
+    class BuildBazelRemoteExecutionV2BatchUpdateBlobsResponse extends \Google\Collection
     {
+        protected $collection_key = 'responses';
+        protected $responsesType = BuildBazelRemoteExecutionV2BatchUpdateBlobsResponseResponse::class;
+        protected $responsesDataType = 'array';
+        /**
+         * @param BuildBazelRemoteExecutionV2BatchUpdateBlobsResponseResponse[]
+         */
+        public function setResponses($responses)
+        {
+        }
+        /**
+         * @return BuildBazelRemoteExecutionV2BatchUpdateBlobsResponseResponse[]
+         */
+        public function getResponses()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return BuildBazelRemoteExecutionV2BatchUpdateBlobsResponseResponse[]
+     * Runtime class alias of \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2BatchUpdateBlobsResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResponses()
+    class Google_Service_RemoteBuildExecution_BuildBazelRemoteExecutionV2BatchUpdateBlobsResponse extends \Google\Service\RemoteBuildExecution\BuildBazelRemoteExecutionV2BatchUpdateBlobsResponse
     {
     }
 }

@@ -21,26 +21,35 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Compute;
-
-class InstanceGroupManagersUpdatePerInstanceConfigsReq extends \Google\Collection
-{
-    protected $collection_key = 'perInstanceConfigs';
-    protected $perInstanceConfigsType = PerInstanceConfig::class;
-    protected $perInstanceConfigsDataType = 'array';
-    /**
-     * The list of per-instance configurations to insert or patch on this managed
-     * instance group.
-     *
-     * @param PerInstanceConfig[] $perInstanceConfigs
-     */
-    public function setPerInstanceConfigs($perInstanceConfigs)
+namespace Google\Service\Compute {
+    class InstanceGroupManagersUpdatePerInstanceConfigsReq extends \Google\Collection
     {
+        protected $collection_key = 'perInstanceConfigs';
+        protected $perInstanceConfigsType = PerInstanceConfig::class;
+        protected $perInstanceConfigsDataType = 'array';
+        /**
+         * The list of per-instance configurations to insert or patch on this managed
+         * instance group.
+         *
+         * @param PerInstanceConfig[] $perInstanceConfigs
+         */
+        public function setPerInstanceConfigs($perInstanceConfigs)
+        {
+        }
+        /**
+         * @return PerInstanceConfig[]
+         */
+        public function getPerInstanceConfigs()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return PerInstanceConfig[]
+     * Runtime class alias of \Google\Service\Compute\InstanceGroupManagersUpdatePerInstanceConfigsReq registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPerInstanceConfigs()
+    class Google_Service_Compute_InstanceGroupManagersUpdatePerInstanceConfigsReq extends \Google\Service\Compute\InstanceGroupManagersUpdatePerInstanceConfigsReq
     {
     }
 }

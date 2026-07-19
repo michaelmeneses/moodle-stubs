@@ -21,68 +21,77 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ShoppingContent;
-
-class ShoppingAdsProgramStatus extends \Google\Collection
-{
-    /**
-     * State is unknown.
-     */
-    public const GLOBAL_STATE_PROGRAM_STATE_UNSPECIFIED = 'PROGRAM_STATE_UNSPECIFIED';
-    /**
-     * Program is not enabled for any country.
-     */
-    public const GLOBAL_STATE_NOT_ENABLED = 'NOT_ENABLED';
-    /**
-     * No products have been uploaded for any region. Upload products to Merchant
-     * Center.
-     */
-    public const GLOBAL_STATE_NO_OFFERS_UPLOADED = 'NO_OFFERS_UPLOADED';
-    /**
-     * Program is enabled and offers are uploaded for at least one country.
-     */
-    public const GLOBAL_STATE_ENABLED = 'ENABLED';
-    protected $collection_key = 'regionStatuses';
-    /**
-     * State of the program. `ENABLED` if there are offers for at least one
-     * region.
-     *
-     * @var string
-     */
-    public $globalState;
-    protected $regionStatusesType = ShoppingAdsProgramStatusRegionStatus::class;
-    protected $regionStatusesDataType = 'array';
-    /**
-     * State of the program. `ENABLED` if there are offers for at least one
-     * region.
-     *
-     * Accepted values: PROGRAM_STATE_UNSPECIFIED, NOT_ENABLED,
-     * NO_OFFERS_UPLOADED, ENABLED
-     *
-     * @param self::GLOBAL_STATE_* $globalState
-     */
-    public function setGlobalState($globalState)
+namespace Google\Service\ShoppingContent {
+    class ShoppingAdsProgramStatus extends \Google\Collection
     {
+        /**
+         * State is unknown.
+         */
+        public const GLOBAL_STATE_PROGRAM_STATE_UNSPECIFIED = 'PROGRAM_STATE_UNSPECIFIED';
+        /**
+         * Program is not enabled for any country.
+         */
+        public const GLOBAL_STATE_NOT_ENABLED = 'NOT_ENABLED';
+        /**
+         * No products have been uploaded for any region. Upload products to Merchant
+         * Center.
+         */
+        public const GLOBAL_STATE_NO_OFFERS_UPLOADED = 'NO_OFFERS_UPLOADED';
+        /**
+         * Program is enabled and offers are uploaded for at least one country.
+         */
+        public const GLOBAL_STATE_ENABLED = 'ENABLED';
+        protected $collection_key = 'regionStatuses';
+        /**
+         * State of the program. `ENABLED` if there are offers for at least one
+         * region.
+         *
+         * @var string
+         */
+        public $globalState;
+        protected $regionStatusesType = ShoppingAdsProgramStatusRegionStatus::class;
+        protected $regionStatusesDataType = 'array';
+        /**
+         * State of the program. `ENABLED` if there are offers for at least one
+         * region.
+         *
+         * Accepted values: PROGRAM_STATE_UNSPECIFIED, NOT_ENABLED,
+         * NO_OFFERS_UPLOADED, ENABLED
+         *
+         * @param self::GLOBAL_STATE_* $globalState
+         */
+        public function setGlobalState($globalState)
+        {
+        }
+        /**
+         * @return self::GLOBAL_STATE_*
+         */
+        public function getGlobalState()
+        {
+        }
+        /**
+         * Status of the program in each region. Regions with the same status and
+         * review eligibility are grouped together in `regionCodes`.
+         *
+         * @param ShoppingAdsProgramStatusRegionStatus[] $regionStatuses
+         */
+        public function setRegionStatuses($regionStatuses)
+        {
+        }
+        /**
+         * @return ShoppingAdsProgramStatusRegionStatus[]
+         */
+        public function getRegionStatuses()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return self::GLOBAL_STATE_*
+     * Runtime class alias of \Google\Service\ShoppingContent\ShoppingAdsProgramStatus registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getGlobalState()
-    {
-    }
-    /**
-     * Status of the program in each region. Regions with the same status and
-     * review eligibility are grouped together in `regionCodes`.
-     *
-     * @param ShoppingAdsProgramStatusRegionStatus[] $regionStatuses
-     */
-    public function setRegionStatuses($regionStatuses)
-    {
-    }
-    /**
-     * @return ShoppingAdsProgramStatusRegionStatus[]
-     */
-    public function getRegionStatuses()
+    class Google_Service_ShoppingContent_ShoppingAdsProgramStatus extends \Google\Service\ShoppingContent\ShoppingAdsProgramStatus
     {
     }
 }

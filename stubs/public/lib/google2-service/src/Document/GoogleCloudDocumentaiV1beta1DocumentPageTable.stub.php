@@ -21,79 +21,88 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1beta1DocumentPageTable extends \Google\Collection
-{
-    protected $collection_key = 'headerRows';
-    protected $bodyRowsType = GoogleCloudDocumentaiV1beta1DocumentPageTableTableRow::class;
-    protected $bodyRowsDataType = 'array';
-    protected $detectedLanguagesType = GoogleCloudDocumentaiV1beta1DocumentPageDetectedLanguage::class;
-    protected $detectedLanguagesDataType = 'array';
-    protected $headerRowsType = GoogleCloudDocumentaiV1beta1DocumentPageTableTableRow::class;
-    protected $headerRowsDataType = 'array';
-    protected $layoutType = GoogleCloudDocumentaiV1beta1DocumentPageLayout::class;
-    protected $layoutDataType = '';
-    protected $provenanceType = GoogleCloudDocumentaiV1beta1DocumentProvenance::class;
-    protected $provenanceDataType = '';
-    /**
-     * @param GoogleCloudDocumentaiV1beta1DocumentPageTableTableRow[]
-     */
-    public function setBodyRows($bodyRows)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1beta1DocumentPageTable extends \Google\Collection
     {
+        protected $collection_key = 'headerRows';
+        protected $bodyRowsType = GoogleCloudDocumentaiV1beta1DocumentPageTableTableRow::class;
+        protected $bodyRowsDataType = 'array';
+        protected $detectedLanguagesType = GoogleCloudDocumentaiV1beta1DocumentPageDetectedLanguage::class;
+        protected $detectedLanguagesDataType = 'array';
+        protected $headerRowsType = GoogleCloudDocumentaiV1beta1DocumentPageTableTableRow::class;
+        protected $headerRowsDataType = 'array';
+        protected $layoutType = GoogleCloudDocumentaiV1beta1DocumentPageLayout::class;
+        protected $layoutDataType = '';
+        protected $provenanceType = GoogleCloudDocumentaiV1beta1DocumentProvenance::class;
+        protected $provenanceDataType = '';
+        /**
+         * @param GoogleCloudDocumentaiV1beta1DocumentPageTableTableRow[]
+         */
+        public function setBodyRows($bodyRows)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta1DocumentPageTableTableRow[]
+         */
+        public function getBodyRows()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta1DocumentPageDetectedLanguage[]
+         */
+        public function setDetectedLanguages($detectedLanguages)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta1DocumentPageDetectedLanguage[]
+         */
+        public function getDetectedLanguages()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta1DocumentPageTableTableRow[]
+         */
+        public function setHeaderRows($headerRows)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta1DocumentPageTableTableRow[]
+         */
+        public function getHeaderRows()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta1DocumentPageLayout
+         */
+        public function setLayout(GoogleCloudDocumentaiV1beta1DocumentPageLayout $layout)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta1DocumentPageLayout
+         */
+        public function getLayout()
+        {
+        }
+        /**
+         * @param GoogleCloudDocumentaiV1beta1DocumentProvenance
+         */
+        public function setProvenance(GoogleCloudDocumentaiV1beta1DocumentProvenance $provenance)
+        {
+        }
+        /**
+         * @return GoogleCloudDocumentaiV1beta1DocumentProvenance
+         */
+        public function getProvenance()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudDocumentaiV1beta1DocumentPageTableTableRow[]
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1beta1DocumentPageTable registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBodyRows()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta1DocumentPageDetectedLanguage[]
-     */
-    public function setDetectedLanguages($detectedLanguages)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta1DocumentPageDetectedLanguage[]
-     */
-    public function getDetectedLanguages()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta1DocumentPageTableTableRow[]
-     */
-    public function setHeaderRows($headerRows)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta1DocumentPageTableTableRow[]
-     */
-    public function getHeaderRows()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta1DocumentPageLayout
-     */
-    public function setLayout(GoogleCloudDocumentaiV1beta1DocumentPageLayout $layout)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta1DocumentPageLayout
-     */
-    public function getLayout()
-    {
-    }
-    /**
-     * @param GoogleCloudDocumentaiV1beta1DocumentProvenance
-     */
-    public function setProvenance(GoogleCloudDocumentaiV1beta1DocumentProvenance $provenance)
-    {
-    }
-    /**
-     * @return GoogleCloudDocumentaiV1beta1DocumentProvenance
-     */
-    public function getProvenance()
+    class Google_Service_Document_GoogleCloudDocumentaiV1beta1DocumentPageTable extends \Google\Service\Document\GoogleCloudDocumentaiV1beta1DocumentPageTable
     {
     }
 }

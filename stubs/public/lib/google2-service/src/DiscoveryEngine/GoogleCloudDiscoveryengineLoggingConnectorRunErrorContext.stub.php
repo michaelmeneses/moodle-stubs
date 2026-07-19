@@ -21,154 +21,163 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DiscoveryEngine;
-
-class GoogleCloudDiscoveryengineLoggingConnectorRunErrorContext extends \Google\Model
-{
-    /**
-     * The full resource name of the Connector Run. Format:
-     * `projects/locations/collections/dataConnector/connectorRuns`. The
-     * `connector_run_id` is system-generated.
-     *
-     * @var string
-     */
-    public $connectorRun;
-    /**
-     * The full resource name of the DataConnector. Format:
-     * `projects/locations/collections/dataConnector`.
-     *
-     * @var string
-     */
-    public $dataConnector;
-    /**
-     * The time when the connector run ended.
-     *
-     * @var string
-     */
-    public $endTime;
-    /**
-     * The entity to sync for the connector run.
-     *
-     * @var string
-     */
-    public $entity;
-    /**
-     * The operation resource name of the LRO to sync the connector.
-     *
-     * @var string
-     */
-    public $operation;
-    /**
-     * The time when the connector run started.
-     *
-     * @var string
-     */
-    public $startTime;
-    /**
-     * The type of sync run. Can be one of the following: * `FULL` * `INCREMENTAL`
-     *
-     * @var string
-     */
-    public $syncType;
-    /**
-     * The full resource name of the Connector Run. Format:
-     * `projects/locations/collections/dataConnector/connectorRuns`. The
-     * `connector_run_id` is system-generated.
-     *
-     * @param string $connectorRun
-     */
-    public function setConnectorRun($connectorRun)
+namespace Google\Service\DiscoveryEngine {
+    class GoogleCloudDiscoveryengineLoggingConnectorRunErrorContext extends \Google\Model
     {
+        /**
+         * The full resource name of the Connector Run. Format:
+         * `projects/locations/collections/dataConnector/connectorRuns`. The
+         * `connector_run_id` is system-generated.
+         *
+         * @var string
+         */
+        public $connectorRun;
+        /**
+         * The full resource name of the DataConnector. Format:
+         * `projects/locations/collections/dataConnector`.
+         *
+         * @var string
+         */
+        public $dataConnector;
+        /**
+         * The time when the connector run ended.
+         *
+         * @var string
+         */
+        public $endTime;
+        /**
+         * The entity to sync for the connector run.
+         *
+         * @var string
+         */
+        public $entity;
+        /**
+         * The operation resource name of the LRO to sync the connector.
+         *
+         * @var string
+         */
+        public $operation;
+        /**
+         * The time when the connector run started.
+         *
+         * @var string
+         */
+        public $startTime;
+        /**
+         * The type of sync run. Can be one of the following: * `FULL` * `INCREMENTAL`
+         *
+         * @var string
+         */
+        public $syncType;
+        /**
+         * The full resource name of the Connector Run. Format:
+         * `projects/locations/collections/dataConnector/connectorRuns`. The
+         * `connector_run_id` is system-generated.
+         *
+         * @param string $connectorRun
+         */
+        public function setConnectorRun($connectorRun)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getConnectorRun()
+        {
+        }
+        /**
+         * The full resource name of the DataConnector. Format:
+         * `projects/locations/collections/dataConnector`.
+         *
+         * @param string $dataConnector
+         */
+        public function setDataConnector($dataConnector)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDataConnector()
+        {
+        }
+        /**
+         * The time when the connector run ended.
+         *
+         * @param string $endTime
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * The entity to sync for the connector run.
+         *
+         * @param string $entity
+         */
+        public function setEntity($entity)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEntity()
+        {
+        }
+        /**
+         * The operation resource name of the LRO to sync the connector.
+         *
+         * @param string $operation
+         */
+        public function setOperation($operation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getOperation()
+        {
+        }
+        /**
+         * The time when the connector run started.
+         *
+         * @param string $startTime
+         */
+        public function setStartTime($startTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getStartTime()
+        {
+        }
+        /**
+         * The type of sync run. Can be one of the following: * `FULL` * `INCREMENTAL`
+         *
+         * @param string $syncType
+         */
+        public function setSyncType($syncType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSyncType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineLoggingConnectorRunErrorContext registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getConnectorRun()
-    {
-    }
-    /**
-     * The full resource name of the DataConnector. Format:
-     * `projects/locations/collections/dataConnector`.
-     *
-     * @param string $dataConnector
-     */
-    public function setDataConnector($dataConnector)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDataConnector()
-    {
-    }
-    /**
-     * The time when the connector run ended.
-     *
-     * @param string $endTime
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * The entity to sync for the connector run.
-     *
-     * @param string $entity
-     */
-    public function setEntity($entity)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEntity()
-    {
-    }
-    /**
-     * The operation resource name of the LRO to sync the connector.
-     *
-     * @param string $operation
-     */
-    public function setOperation($operation)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getOperation()
-    {
-    }
-    /**
-     * The time when the connector run started.
-     *
-     * @param string $startTime
-     */
-    public function setStartTime($startTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getStartTime()
-    {
-    }
-    /**
-     * The type of sync run. Can be one of the following: * `FULL` * `INCREMENTAL`
-     *
-     * @param string $syncType
-     */
-    public function setSyncType($syncType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSyncType()
+    class Google_Service_DiscoveryEngine_GoogleCloudDiscoveryengineLoggingConnectorRunErrorContext extends \Google\Service\DiscoveryEngine\GoogleCloudDiscoveryengineLoggingConnectorRunErrorContext
     {
     }
 }

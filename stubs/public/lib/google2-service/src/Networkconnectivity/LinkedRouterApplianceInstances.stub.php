@@ -21,95 +21,104 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Networkconnectivity;
-
-class LinkedRouterApplianceInstances extends \Google\Collection
-{
-    protected $collection_key = 'instances';
-    /**
-     * Optional. Hub routes fully encompassed by include import ranges are
-     * included during import from hub.
-     *
-     * @var string[]
-     */
-    public $includeImportRanges;
-    protected $instancesType = RouterApplianceInstance::class;
-    protected $instancesDataType = 'array';
-    /**
-     * A value that controls whether site-to-site data transfer is enabled for
-     * these resources. Data transfer is available only in [supported
-     * locations](https://cloud.google.com/network-connectivity/docs/network-
-     * connectivity-center/concepts/locations).
-     *
-     * @var bool
-     */
-    public $siteToSiteDataTransfer;
-    /**
-     * Output only. The VPC network where these router appliance instances are
-     * located.
-     *
-     * @var string
-     */
-    public $vpcNetwork;
-    /**
-     * Optional. Hub routes fully encompassed by include import ranges are
-     * included during import from hub.
-     *
-     * @param string[] $includeImportRanges
-     */
-    public function setIncludeImportRanges($includeImportRanges)
+namespace Google\Service\Networkconnectivity {
+    class LinkedRouterApplianceInstances extends \Google\Collection
     {
+        protected $collection_key = 'instances';
+        /**
+         * Optional. Hub routes fully encompassed by include import ranges are
+         * included during import from hub.
+         *
+         * @var string[]
+         */
+        public $includeImportRanges;
+        protected $instancesType = RouterApplianceInstance::class;
+        protected $instancesDataType = 'array';
+        /**
+         * A value that controls whether site-to-site data transfer is enabled for
+         * these resources. Data transfer is available only in [supported
+         * locations](https://cloud.google.com/network-connectivity/docs/network-
+         * connectivity-center/concepts/locations).
+         *
+         * @var bool
+         */
+        public $siteToSiteDataTransfer;
+        /**
+         * Output only. The VPC network where these router appliance instances are
+         * located.
+         *
+         * @var string
+         */
+        public $vpcNetwork;
+        /**
+         * Optional. Hub routes fully encompassed by include import ranges are
+         * included during import from hub.
+         *
+         * @param string[] $includeImportRanges
+         */
+        public function setIncludeImportRanges($includeImportRanges)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getIncludeImportRanges()
+        {
+        }
+        /**
+         * The list of router appliance instances.
+         *
+         * @param RouterApplianceInstance[] $instances
+         */
+        public function setInstances($instances)
+        {
+        }
+        /**
+         * @return RouterApplianceInstance[]
+         */
+        public function getInstances()
+        {
+        }
+        /**
+         * A value that controls whether site-to-site data transfer is enabled for
+         * these resources. Data transfer is available only in [supported
+         * locations](https://cloud.google.com/network-connectivity/docs/network-
+         * connectivity-center/concepts/locations).
+         *
+         * @param bool $siteToSiteDataTransfer
+         */
+        public function setSiteToSiteDataTransfer($siteToSiteDataTransfer)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getSiteToSiteDataTransfer()
+        {
+        }
+        /**
+         * Output only. The VPC network where these router appliance instances are
+         * located.
+         *
+         * @param string $vpcNetwork
+         */
+        public function setVpcNetwork($vpcNetwork)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getVpcNetwork()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Networkconnectivity\LinkedRouterApplianceInstances registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getIncludeImportRanges()
-    {
-    }
-    /**
-     * The list of router appliance instances.
-     *
-     * @param RouterApplianceInstance[] $instances
-     */
-    public function setInstances($instances)
-    {
-    }
-    /**
-     * @return RouterApplianceInstance[]
-     */
-    public function getInstances()
-    {
-    }
-    /**
-     * A value that controls whether site-to-site data transfer is enabled for
-     * these resources. Data transfer is available only in [supported
-     * locations](https://cloud.google.com/network-connectivity/docs/network-
-     * connectivity-center/concepts/locations).
-     *
-     * @param bool $siteToSiteDataTransfer
-     */
-    public function setSiteToSiteDataTransfer($siteToSiteDataTransfer)
-    {
-    }
-    /**
-     * @return bool
-     */
-    public function getSiteToSiteDataTransfer()
-    {
-    }
-    /**
-     * Output only. The VPC network where these router appliance instances are
-     * located.
-     *
-     * @param string $vpcNetwork
-     */
-    public function setVpcNetwork($vpcNetwork)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getVpcNetwork()
+    class Google_Service_Networkconnectivity_LinkedRouterApplianceInstances extends \Google\Service\Networkconnectivity\LinkedRouterApplianceInstances
     {
     }
 }

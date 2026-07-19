@@ -21,129 +21,138 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Sheets;
-
-class BatchUpdateValuesByDataFilterResponse extends \Google\Collection
-{
-    protected $collection_key = 'responses';
-    protected $responsesType = UpdateValuesByDataFilterResponse::class;
-    protected $responsesDataType = 'array';
-    /**
-     * The spreadsheet the updates were applied to.
-     *
-     * @var string
-     */
-    public $spreadsheetId;
-    /**
-     * The total number of cells updated.
-     *
-     * @var int
-     */
-    public $totalUpdatedCells;
-    /**
-     * The total number of columns where at least one cell in the column was
-     * updated.
-     *
-     * @var int
-     */
-    public $totalUpdatedColumns;
-    /**
-     * The total number of rows where at least one cell in the row was updated.
-     *
-     * @var int
-     */
-    public $totalUpdatedRows;
-    /**
-     * The total number of sheets where at least one cell in the sheet was
-     * updated.
-     *
-     * @var int
-     */
-    public $totalUpdatedSheets;
-    /**
-     * The response for each range updated.
-     *
-     * @param UpdateValuesByDataFilterResponse[] $responses
-     */
-    public function setResponses($responses)
+namespace Google\Service\Sheets {
+    class BatchUpdateValuesByDataFilterResponse extends \Google\Collection
     {
+        protected $collection_key = 'responses';
+        protected $responsesType = UpdateValuesByDataFilterResponse::class;
+        protected $responsesDataType = 'array';
+        /**
+         * The spreadsheet the updates were applied to.
+         *
+         * @var string
+         */
+        public $spreadsheetId;
+        /**
+         * The total number of cells updated.
+         *
+         * @var int
+         */
+        public $totalUpdatedCells;
+        /**
+         * The total number of columns where at least one cell in the column was
+         * updated.
+         *
+         * @var int
+         */
+        public $totalUpdatedColumns;
+        /**
+         * The total number of rows where at least one cell in the row was updated.
+         *
+         * @var int
+         */
+        public $totalUpdatedRows;
+        /**
+         * The total number of sheets where at least one cell in the sheet was
+         * updated.
+         *
+         * @var int
+         */
+        public $totalUpdatedSheets;
+        /**
+         * The response for each range updated.
+         *
+         * @param UpdateValuesByDataFilterResponse[] $responses
+         */
+        public function setResponses($responses)
+        {
+        }
+        /**
+         * @return UpdateValuesByDataFilterResponse[]
+         */
+        public function getResponses()
+        {
+        }
+        /**
+         * The spreadsheet the updates were applied to.
+         *
+         * @param string $spreadsheetId
+         */
+        public function setSpreadsheetId($spreadsheetId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getSpreadsheetId()
+        {
+        }
+        /**
+         * The total number of cells updated.
+         *
+         * @param int $totalUpdatedCells
+         */
+        public function setTotalUpdatedCells($totalUpdatedCells)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalUpdatedCells()
+        {
+        }
+        /**
+         * The total number of columns where at least one cell in the column was
+         * updated.
+         *
+         * @param int $totalUpdatedColumns
+         */
+        public function setTotalUpdatedColumns($totalUpdatedColumns)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalUpdatedColumns()
+        {
+        }
+        /**
+         * The total number of rows where at least one cell in the row was updated.
+         *
+         * @param int $totalUpdatedRows
+         */
+        public function setTotalUpdatedRows($totalUpdatedRows)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalUpdatedRows()
+        {
+        }
+        /**
+         * The total number of sheets where at least one cell in the sheet was
+         * updated.
+         *
+         * @param int $totalUpdatedSheets
+         */
+        public function setTotalUpdatedSheets($totalUpdatedSheets)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getTotalUpdatedSheets()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return UpdateValuesByDataFilterResponse[]
+     * Runtime class alias of \Google\Service\Sheets\BatchUpdateValuesByDataFilterResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getResponses()
-    {
-    }
-    /**
-     * The spreadsheet the updates were applied to.
-     *
-     * @param string $spreadsheetId
-     */
-    public function setSpreadsheetId($spreadsheetId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getSpreadsheetId()
-    {
-    }
-    /**
-     * The total number of cells updated.
-     *
-     * @param int $totalUpdatedCells
-     */
-    public function setTotalUpdatedCells($totalUpdatedCells)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalUpdatedCells()
-    {
-    }
-    /**
-     * The total number of columns where at least one cell in the column was
-     * updated.
-     *
-     * @param int $totalUpdatedColumns
-     */
-    public function setTotalUpdatedColumns($totalUpdatedColumns)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalUpdatedColumns()
-    {
-    }
-    /**
-     * The total number of rows where at least one cell in the row was updated.
-     *
-     * @param int $totalUpdatedRows
-     */
-    public function setTotalUpdatedRows($totalUpdatedRows)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalUpdatedRows()
-    {
-    }
-    /**
-     * The total number of sheets where at least one cell in the sheet was
-     * updated.
-     *
-     * @param int $totalUpdatedSheets
-     */
-    public function setTotalUpdatedSheets($totalUpdatedSheets)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getTotalUpdatedSheets()
+    class Google_Service_Sheets_BatchUpdateValuesByDataFilterResponse extends \Google\Service\Sheets\BatchUpdateValuesByDataFilterResponse
     {
     }
 }

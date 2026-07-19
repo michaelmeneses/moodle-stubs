@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Adsense;
-
-class ListPolicyIssuesResponse extends \Google\Collection
-{
-    protected $collection_key = 'policyIssues';
-    /**
-     * Continuation token used to page through policy issues. To retrieve the next
-     * page of the results, set the next request's "page_token" value to this.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    protected $policyIssuesType = PolicyIssue::class;
-    protected $policyIssuesDataType = 'array';
-    /**
-     * Continuation token used to page through policy issues. To retrieve the next
-     * page of the results, set the next request's "page_token" value to this.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
+namespace Google\Service\Adsense {
+    class ListPolicyIssuesResponse extends \Google\Collection
     {
+        protected $collection_key = 'policyIssues';
+        /**
+         * Continuation token used to page through policy issues. To retrieve the next
+         * page of the results, set the next request's "page_token" value to this.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        protected $policyIssuesType = PolicyIssue::class;
+        protected $policyIssuesDataType = 'array';
+        /**
+         * Continuation token used to page through policy issues. To retrieve the next
+         * page of the results, set the next request's "page_token" value to this.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
+        /**
+         * The policy issues returned in the list response.
+         *
+         * @param PolicyIssue[] $policyIssues
+         */
+        public function setPolicyIssues($policyIssues)
+        {
+        }
+        /**
+         * @return PolicyIssue[]
+         */
+        public function getPolicyIssues()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Adsense\ListPolicyIssuesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getNextPageToken()
-    {
-    }
-    /**
-     * The policy issues returned in the list response.
-     *
-     * @param PolicyIssue[] $policyIssues
-     */
-    public function setPolicyIssues($policyIssues)
-    {
-    }
-    /**
-     * @return PolicyIssue[]
-     */
-    public function getPolicyIssues()
+    class Google_Service_Adsense_ListPolicyIssuesResponse extends \Google\Service\Adsense\ListPolicyIssuesResponse
     {
     }
 }

@@ -21,41 +21,50 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\StreetViewPublish;
-
-class PhotoResponse extends \Google\Model
-{
-    protected $photoType = Photo::class;
-    protected $photoDataType = '';
-    protected $statusType = Status::class;
-    protected $statusDataType = '';
-    /**
-     * The Photo resource, if the request was successful.
-     *
-     * @param Photo $photo
-     */
-    public function setPhoto(Photo $photo)
+namespace Google\Service\StreetViewPublish {
+    class PhotoResponse extends \Google\Model
     {
+        protected $photoType = Photo::class;
+        protected $photoDataType = '';
+        protected $statusType = Status::class;
+        protected $statusDataType = '';
+        /**
+         * The Photo resource, if the request was successful.
+         *
+         * @param Photo $photo
+         */
+        public function setPhoto(Photo $photo)
+        {
+        }
+        /**
+         * @return Photo
+         */
+        public function getPhoto()
+        {
+        }
+        /**
+         * The status for the operation to get or update a single photo in the batch
+         * request.
+         *
+         * @param Status $status
+         */
+        public function setStatus(Status $status)
+        {
+        }
+        /**
+         * @return Status
+         */
+        public function getStatus()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Photo
+     * Runtime class alias of \Google\Service\StreetViewPublish\PhotoResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPhoto()
-    {
-    }
-    /**
-     * The status for the operation to get or update a single photo in the batch
-     * request.
-     *
-     * @param Status $status
-     */
-    public function setStatus(Status $status)
-    {
-    }
-    /**
-     * @return Status
-     */
-    public function getStatus()
+    class Google_Service_StreetViewPublish_PhotoResponse extends \Google\Service\StreetViewPublish\PhotoResponse
     {
     }
 }

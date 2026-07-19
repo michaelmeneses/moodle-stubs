@@ -21,82 +21,91 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\HangoutsChat;
-
-class GoogleAppsCardV1OverflowMenuItem extends \Google\Model
-{
-    /**
-     * Whether the menu option is disabled. Defaults to false.
-     *
-     * @var bool
-     */
-    public $disabled;
-    protected $onClickType = GoogleAppsCardV1OnClick::class;
-    protected $onClickDataType = '';
-    protected $startIconType = GoogleAppsCardV1Icon::class;
-    protected $startIconDataType = '';
-    /**
-     * Required. The text that identifies or describes the item to users.
-     *
-     * @var string
-     */
-    public $text;
-    /**
-     * Whether the menu option is disabled. Defaults to false.
-     *
-     * @param bool $disabled
-     */
-    public function setDisabled($disabled)
+namespace Google\Service\HangoutsChat {
+    class GoogleAppsCardV1OverflowMenuItem extends \Google\Model
     {
+        /**
+         * Whether the menu option is disabled. Defaults to false.
+         *
+         * @var bool
+         */
+        public $disabled;
+        protected $onClickType = GoogleAppsCardV1OnClick::class;
+        protected $onClickDataType = '';
+        protected $startIconType = GoogleAppsCardV1Icon::class;
+        protected $startIconDataType = '';
+        /**
+         * Required. The text that identifies or describes the item to users.
+         *
+         * @var string
+         */
+        public $text;
+        /**
+         * Whether the menu option is disabled. Defaults to false.
+         *
+         * @param bool $disabled
+         */
+        public function setDisabled($disabled)
+        {
+        }
+        /**
+         * @return bool
+         */
+        public function getDisabled()
+        {
+        }
+        /**
+         * Required. The action invoked when a menu option is selected. This `OnClick`
+         * cannot contain an `OverflowMenu`, any specified `OverflowMenu` is dropped
+         * and the menu item disabled.
+         *
+         * @param GoogleAppsCardV1OnClick $onClick
+         */
+        public function setOnClick(GoogleAppsCardV1OnClick $onClick)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1OnClick
+         */
+        public function getOnClick()
+        {
+        }
+        /**
+         * The icon displayed in front of the text.
+         *
+         * @param GoogleAppsCardV1Icon $startIcon
+         */
+        public function setStartIcon(GoogleAppsCardV1Icon $startIcon)
+        {
+        }
+        /**
+         * @return GoogleAppsCardV1Icon
+         */
+        public function getStartIcon()
+        {
+        }
+        /**
+         * Required. The text that identifies or describes the item to users.
+         *
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return bool
+     * Runtime class alias of \Google\Service\HangoutsChat\GoogleAppsCardV1OverflowMenuItem registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getDisabled()
-    {
-    }
-    /**
-     * Required. The action invoked when a menu option is selected. This `OnClick`
-     * cannot contain an `OverflowMenu`, any specified `OverflowMenu` is dropped
-     * and the menu item disabled.
-     *
-     * @param GoogleAppsCardV1OnClick $onClick
-     */
-    public function setOnClick(GoogleAppsCardV1OnClick $onClick)
-    {
-    }
-    /**
-     * @return GoogleAppsCardV1OnClick
-     */
-    public function getOnClick()
-    {
-    }
-    /**
-     * The icon displayed in front of the text.
-     *
-     * @param GoogleAppsCardV1Icon $startIcon
-     */
-    public function setStartIcon(GoogleAppsCardV1Icon $startIcon)
-    {
-    }
-    /**
-     * @return GoogleAppsCardV1Icon
-     */
-    public function getStartIcon()
-    {
-    }
-    /**
-     * Required. The text that identifies or describes the item to users.
-     *
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_HangoutsChat_GoogleAppsCardV1OverflowMenuItem extends \Google\Service\HangoutsChat\GoogleAppsCardV1OverflowMenuItem
     {
     }
 }

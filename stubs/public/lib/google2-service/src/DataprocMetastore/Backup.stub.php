@@ -21,119 +21,128 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DataprocMetastore;
-
-class Backup extends \Google\Collection
-{
-    protected $collection_key = 'restoringServices';
-    /**
-     * @var string
-     */
-    public $createTime;
-    /**
-     * @var string
-     */
-    public $description;
-    /**
-     * @var string
-     */
-    public $endTime;
-    /**
-     * @var string
-     */
-    public $name;
-    /**
-     * @var string[]
-     */
-    public $restoringServices;
-    protected $serviceRevisionType = Service::class;
-    protected $serviceRevisionDataType = '';
-    /**
-     * @var string
-     */
-    public $state;
-    /**
-     * @param string
-     */
-    public function setCreateTime($createTime)
+namespace Google\Service\DataprocMetastore {
+    class Backup extends \Google\Collection
     {
+        protected $collection_key = 'restoringServices';
+        /**
+         * @var string
+         */
+        public $createTime;
+        /**
+         * @var string
+         */
+        public $description;
+        /**
+         * @var string
+         */
+        public $endTime;
+        /**
+         * @var string
+         */
+        public $name;
+        /**
+         * @var string[]
+         */
+        public $restoringServices;
+        protected $serviceRevisionType = Service::class;
+        protected $serviceRevisionDataType = '';
+        /**
+         * @var string
+         */
+        public $state;
+        /**
+         * @param string
+         */
+        public function setCreateTime($createTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getCreateTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setDescription($description)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getDescription()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setEndTime($endTime)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEndTime()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * @param string[]
+         */
+        public function setRestoringServices($restoringServices)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getRestoringServices()
+        {
+        }
+        /**
+         * @param Service
+         */
+        public function setServiceRevision(Service $serviceRevision)
+        {
+        }
+        /**
+         * @return Service
+         */
+        public function getServiceRevision()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setState($state)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getState()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DataprocMetastore\Backup registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCreateTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setDescription($description)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getDescription()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setEndTime($endTime)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getEndTime()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * @param string[]
-     */
-    public function setRestoringServices($restoringServices)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getRestoringServices()
-    {
-    }
-    /**
-     * @param Service
-     */
-    public function setServiceRevision(Service $serviceRevision)
-    {
-    }
-    /**
-     * @return Service
-     */
-    public function getServiceRevision()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setState($state)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getState()
+    class Google_Service_DataprocMetastore_Backup extends \Google\Service\DataprocMetastore\Backup
     {
     }
 }

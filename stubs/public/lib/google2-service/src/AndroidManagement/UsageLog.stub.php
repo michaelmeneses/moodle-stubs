@@ -21,53 +21,62 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\AndroidManagement;
-
-class UsageLog extends \Google\Collection
-{
-    protected $collection_key = 'uploadOnCellularAllowed';
-    /**
-     * Specifies which log types are enabled. Note that users will receive on-
-     * device messaging when usage logging is enabled.
-     *
-     * @var string[]
-     */
-    public $enabledLogTypes;
-    /**
-     * Specifies which of the enabled log types can be uploaded over mobile data.
-     * By default logs are queued for upload when the device connects to WiFi.
-     *
-     * @var string[]
-     */
-    public $uploadOnCellularAllowed;
-    /**
-     * Specifies which log types are enabled. Note that users will receive on-
-     * device messaging when usage logging is enabled.
-     *
-     * @param string[] $enabledLogTypes
-     */
-    public function setEnabledLogTypes($enabledLogTypes)
+namespace Google\Service\AndroidManagement {
+    class UsageLog extends \Google\Collection
     {
+        protected $collection_key = 'uploadOnCellularAllowed';
+        /**
+         * Specifies which log types are enabled. Note that users will receive on-
+         * device messaging when usage logging is enabled.
+         *
+         * @var string[]
+         */
+        public $enabledLogTypes;
+        /**
+         * Specifies which of the enabled log types can be uploaded over mobile data.
+         * By default logs are queued for upload when the device connects to WiFi.
+         *
+         * @var string[]
+         */
+        public $uploadOnCellularAllowed;
+        /**
+         * Specifies which log types are enabled. Note that users will receive on-
+         * device messaging when usage logging is enabled.
+         *
+         * @param string[] $enabledLogTypes
+         */
+        public function setEnabledLogTypes($enabledLogTypes)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getEnabledLogTypes()
+        {
+        }
+        /**
+         * Specifies which of the enabled log types can be uploaded over mobile data.
+         * By default logs are queued for upload when the device connects to WiFi.
+         *
+         * @param string[] $uploadOnCellularAllowed
+         */
+        public function setUploadOnCellularAllowed($uploadOnCellularAllowed)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getUploadOnCellularAllowed()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\AndroidManagement\UsageLog registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEnabledLogTypes()
-    {
-    }
-    /**
-     * Specifies which of the enabled log types can be uploaded over mobile data.
-     * By default logs are queued for upload when the device connects to WiFi.
-     *
-     * @param string[] $uploadOnCellularAllowed
-     */
-    public function setUploadOnCellularAllowed($uploadOnCellularAllowed)
-    {
-    }
-    /**
-     * @return string[]
-     */
-    public function getUploadOnCellularAllowed()
+    class Google_Service_AndroidManagement_UsageLog extends \Google\Service\AndroidManagement\UsageLog
     {
     }
 }

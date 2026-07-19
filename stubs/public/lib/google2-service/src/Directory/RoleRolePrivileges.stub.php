@@ -21,52 +21,61 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Directory;
-
-class RoleRolePrivileges extends \Google\Model
-{
-    /**
-     * The name of the privilege.
-     *
-     * @var string
-     */
-    public $privilegeName;
-    /**
-     * The obfuscated ID of the service this privilege is for. This value is
-     * returned with [`Privileges.list()`](https://developers.google.com/workspace
-     * /admin/directory/v1/reference/privileges/list).
-     *
-     * @var string
-     */
-    public $serviceId;
-    /**
-     * The name of the privilege.
-     *
-     * @param string $privilegeName
-     */
-    public function setPrivilegeName($privilegeName)
+namespace Google\Service\Directory {
+    class RoleRolePrivileges extends \Google\Model
     {
+        /**
+         * The name of the privilege.
+         *
+         * @var string
+         */
+        public $privilegeName;
+        /**
+         * The obfuscated ID of the service this privilege is for. This value is
+         * returned with [`Privileges.list()`](https://developers.google.com/workspace
+         * /admin/directory/v1/reference/privileges/list).
+         *
+         * @var string
+         */
+        public $serviceId;
+        /**
+         * The name of the privilege.
+         *
+         * @param string $privilegeName
+         */
+        public function setPrivilegeName($privilegeName)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPrivilegeName()
+        {
+        }
+        /**
+         * The obfuscated ID of the service this privilege is for. This value is
+         * returned with [`Privileges.list()`](https://developers.google.com/workspace
+         * /admin/directory/v1/reference/privileges/list).
+         *
+         * @param string $serviceId
+         */
+        public function setServiceId($serviceId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getServiceId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Directory\RoleRolePrivileges registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPrivilegeName()
-    {
-    }
-    /**
-     * The obfuscated ID of the service this privilege is for. This value is
-     * returned with [`Privileges.list()`](https://developers.google.com/workspace
-     * /admin/directory/v1/reference/privileges/list).
-     *
-     * @param string $serviceId
-     */
-    public function setServiceId($serviceId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getServiceId()
+    class Google_Service_Directory_RoleRolePrivileges extends \Google\Service\Directory\RoleRolePrivileges
     {
     }
 }

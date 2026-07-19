@@ -21,55 +21,68 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Contentwarehouse\Resource;
-
-/**
- * The "locations" collection of methods.
- * Typical usage is:
- *  <code>
- *   $contentwarehouseService = new Google\Service\Contentwarehouse(...);
- *   $locations = $contentwarehouseService->projects_locations;
- *  </code>
- */
-class ProjectsLocations extends \Google\Service\Resource
-{
+namespace Google\Service\Contentwarehouse\Resource {
+    use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1InitializeProjectRequest;
+    use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1ProjectStatus;
+    use Google\Service\Contentwarehouse\GoogleCloudContentwarehouseV1RunPipelineRequest;
+    use Google\Service\Contentwarehouse\GoogleLongrunningOperation;
     /**
-     * Get the project status. (locations.getStatus)
-     *
-     * @param string $location Required. The location to be queried Format:
-     * projects/{project_number}/locations/{location}.
-     * @param array $optParams Optional parameters.
-     * @return GoogleCloudContentwarehouseV1ProjectStatus
-     * @throws \Google\Service\Exception
+     * The "locations" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $contentwarehouseService = new Google\Service\Contentwarehouse(...);
+     *   $locations = $contentwarehouseService->projects_locations;
+     *  </code>
      */
-    public function getStatus($location, $optParams = [])
+    class ProjectsLocations extends \Google\Service\Resource
     {
+        /**
+         * Get the project status. (locations.getStatus)
+         *
+         * @param string $location Required. The location to be queried Format:
+         * projects/{project_number}/locations/{location}.
+         * @param array $optParams Optional parameters.
+         * @return GoogleCloudContentwarehouseV1ProjectStatus
+         * @throws \Google\Service\Exception
+         */
+        public function getStatus($location, $optParams = [])
+        {
+        }
+        /**
+         * Provisions resources for given tenant project. Returns a long running
+         * operation. (locations.initialize)
+         *
+         * @param string $location Required. The location to be initialized Format:
+         * projects/{project_number}/locations/{location}.
+         * @param GoogleCloudContentwarehouseV1InitializeProjectRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function initialize($location, GoogleCloudContentwarehouseV1InitializeProjectRequest $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Run a predefined pipeline. (locations.runPipeline)
+         *
+         * @param string $name Required. The resource name which owns the resources of
+         * the pipeline. Format: projects/{project_number}/locations/{location}.
+         * @param GoogleCloudContentwarehouseV1RunPipelineRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return GoogleLongrunningOperation
+         * @throws \Google\Service\Exception
+         */
+        public function runPipeline($name, GoogleCloudContentwarehouseV1RunPipelineRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Provisions resources for given tenant project. Returns a long running
-     * operation. (locations.initialize)
-     *
-     * @param string $location Required. The location to be initialized Format:
-     * projects/{project_number}/locations/{location}.
-     * @param GoogleCloudContentwarehouseV1InitializeProjectRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Contentwarehouse\Resource\ProjectsLocations registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function initialize($location, GoogleCloudContentwarehouseV1InitializeProjectRequest $postBody, $optParams = [])
-    {
-    }
-    /**
-     * Run a predefined pipeline. (locations.runPipeline)
-     *
-     * @param string $name Required. The resource name which owns the resources of
-     * the pipeline. Format: projects/{project_number}/locations/{location}.
-     * @param GoogleCloudContentwarehouseV1RunPipelineRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return GoogleLongrunningOperation
-     * @throws \Google\Service\Exception
-     */
-    public function runPipeline($name, GoogleCloudContentwarehouseV1RunPipelineRequest $postBody, $optParams = [])
+    class Google_Service_Contentwarehouse_Resource_ProjectsLocations extends \Google\Service\Contentwarehouse\Resource\ProjectsLocations
     {
     }
 }

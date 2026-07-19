@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Aiplatform;
-
-class GoogleCloudAiplatformV1MemoryBankCustomizationConfigMemoryTopic extends \Google\Model
-{
-    protected $customMemoryTopicType = GoogleCloudAiplatformV1MemoryBankCustomizationConfigMemoryTopicCustomMemoryTopic::class;
-    protected $customMemoryTopicDataType = '';
-    protected $managedMemoryTopicType = GoogleCloudAiplatformV1MemoryBankCustomizationConfigMemoryTopicManagedMemoryTopic::class;
-    protected $managedMemoryTopicDataType = '';
-    /**
-     * A custom memory topic defined by the developer.
-     *
-     * @param GoogleCloudAiplatformV1MemoryBankCustomizationConfigMemoryTopicCustomMemoryTopic $customMemoryTopic
-     */
-    public function setCustomMemoryTopic(GoogleCloudAiplatformV1MemoryBankCustomizationConfigMemoryTopicCustomMemoryTopic $customMemoryTopic)
+namespace Google\Service\Aiplatform {
+    class GoogleCloudAiplatformV1MemoryBankCustomizationConfigMemoryTopic extends \Google\Model
     {
+        protected $customMemoryTopicType = GoogleCloudAiplatformV1MemoryBankCustomizationConfigMemoryTopicCustomMemoryTopic::class;
+        protected $customMemoryTopicDataType = '';
+        protected $managedMemoryTopicType = GoogleCloudAiplatformV1MemoryBankCustomizationConfigMemoryTopicManagedMemoryTopic::class;
+        protected $managedMemoryTopicDataType = '';
+        /**
+         * A custom memory topic defined by the developer.
+         *
+         * @param GoogleCloudAiplatformV1MemoryBankCustomizationConfigMemoryTopicCustomMemoryTopic $customMemoryTopic
+         */
+        public function setCustomMemoryTopic(GoogleCloudAiplatformV1MemoryBankCustomizationConfigMemoryTopicCustomMemoryTopic $customMemoryTopic)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1MemoryBankCustomizationConfigMemoryTopicCustomMemoryTopic
+         */
+        public function getCustomMemoryTopic()
+        {
+        }
+        /**
+         * A managed memory topic defined by Memory Bank.
+         *
+         * @param GoogleCloudAiplatformV1MemoryBankCustomizationConfigMemoryTopicManagedMemoryTopic $managedMemoryTopic
+         */
+        public function setManagedMemoryTopic(GoogleCloudAiplatformV1MemoryBankCustomizationConfigMemoryTopicManagedMemoryTopic $managedMemoryTopic)
+        {
+        }
+        /**
+         * @return GoogleCloudAiplatformV1MemoryBankCustomizationConfigMemoryTopicManagedMemoryTopic
+         */
+        public function getManagedMemoryTopic()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudAiplatformV1MemoryBankCustomizationConfigMemoryTopicCustomMemoryTopic
+     * Runtime class alias of \Google\Service\Aiplatform\GoogleCloudAiplatformV1MemoryBankCustomizationConfigMemoryTopic registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomMemoryTopic()
-    {
-    }
-    /**
-     * A managed memory topic defined by Memory Bank.
-     *
-     * @param GoogleCloudAiplatformV1MemoryBankCustomizationConfigMemoryTopicManagedMemoryTopic $managedMemoryTopic
-     */
-    public function setManagedMemoryTopic(GoogleCloudAiplatformV1MemoryBankCustomizationConfigMemoryTopicManagedMemoryTopic $managedMemoryTopic)
-    {
-    }
-    /**
-     * @return GoogleCloudAiplatformV1MemoryBankCustomizationConfigMemoryTopicManagedMemoryTopic
-     */
-    public function getManagedMemoryTopic()
+    class Google_Service_Aiplatform_GoogleCloudAiplatformV1MemoryBankCustomizationConfigMemoryTopic extends \Google\Service\Aiplatform\GoogleCloudAiplatformV1MemoryBankCustomizationConfigMemoryTopic
     {
     }
 }

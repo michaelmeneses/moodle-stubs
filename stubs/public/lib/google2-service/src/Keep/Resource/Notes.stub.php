@@ -21,77 +21,89 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Keep\Resource;
-
-/**
- * The "notes" collection of methods.
- * Typical usage is:
- *  <code>
- *   $keepService = new Google\Service\Keep(...);
- *   $notes = $keepService->notes;
- *  </code>
- */
-class Notes extends \Google\Service\Resource
-{
+namespace Google\Service\Keep\Resource {
+    use Google\Service\Keep\KeepEmpty;
+    use Google\Service\Keep\ListNotesResponse;
+    use Google\Service\Keep\Note;
     /**
-     * Creates a new note. (notes.create)
-     *
-     * @param Note $postBody
-     * @param array $optParams Optional parameters.
-     * @return Note
-     * @throws \Google\Service\Exception
+     * The "notes" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $keepService = new Google\Service\Keep(...);
+     *   $notes = $keepService->notes;
+     *  </code>
      */
-    public function create(Note $postBody, $optParams = [])
+    class Notes extends \Google\Service\Resource
     {
+        /**
+         * Creates a new note. (notes.create)
+         *
+         * @param Note $postBody
+         * @param array $optParams Optional parameters.
+         * @return Note
+         * @throws \Google\Service\Exception
+         */
+        public function create(Note $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a note. Caller must have the `OWNER` role on the note to delete.
+         * Deleting a note removes the resource immediately and cannot be undone. Any
+         * collaborators will lose access to the note. (notes.delete)
+         *
+         * @param string $name Required. Name of the note to delete.
+         * @param array $optParams Optional parameters.
+         * @return KeepEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($name, $optParams = [])
+        {
+        }
+        /**
+         * Gets a note. (notes.get)
+         *
+         * @param string $name Required. Name of the resource.
+         * @param array $optParams Optional parameters.
+         * @return Note
+         * @throws \Google\Service\Exception
+         */
+        public function get($name, $optParams = [])
+        {
+        }
+        /**
+         * Lists notes. Every list call returns a page of results with `page_size` as
+         * the upper bound of returned items. A `page_size` of zero allows the server to
+         * choose the upper bound. The ListNotesResponse contains at most `page_size`
+         * entries. If there are more things left to list, it provides a
+         * `next_page_token` value. (Page tokens are opaque values.) To get the next
+         * page of results, copy the result's `next_page_token` into the next request's
+         * `page_token`. Repeat until the `next_page_token` returned with a page of
+         * results is empty. ListNotes return consistent results in the face of
+         * concurrent changes, or signals that it cannot with an ABORTED error.
+         * (notes.listNotes)
+         *
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param string filter Filter for list results. If no filter is supplied,
+         * the `trashed` filter is applied by default. Valid fields to filter by are:
+         * `create_time`, `update_time`, `trash_time`, and `trashed`. Filter syntax
+         * follows the [Google AIP filtering spec](https://aip.dev/160).
+         * @opt_param int pageSize The maximum number of results to return.
+         * @opt_param string pageToken The previous page's `next_page_token` field.
+         * @return ListNotesResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listNotes($optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a note. Caller must have the `OWNER` role on the note to delete.
-     * Deleting a note removes the resource immediately and cannot be undone. Any
-     * collaborators will lose access to the note. (notes.delete)
-     *
-     * @param string $name Required. Name of the note to delete.
-     * @param array $optParams Optional parameters.
-     * @return KeepEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Keep\Resource\Notes registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($name, $optParams = [])
-    {
-    }
-    /**
-     * Gets a note. (notes.get)
-     *
-     * @param string $name Required. Name of the resource.
-     * @param array $optParams Optional parameters.
-     * @return Note
-     * @throws \Google\Service\Exception
-     */
-    public function get($name, $optParams = [])
-    {
-    }
-    /**
-     * Lists notes. Every list call returns a page of results with `page_size` as
-     * the upper bound of returned items. A `page_size` of zero allows the server to
-     * choose the upper bound. The ListNotesResponse contains at most `page_size`
-     * entries. If there are more things left to list, it provides a
-     * `next_page_token` value. (Page tokens are opaque values.) To get the next
-     * page of results, copy the result's `next_page_token` into the next request's
-     * `page_token`. Repeat until the `next_page_token` returned with a page of
-     * results is empty. ListNotes return consistent results in the face of
-     * concurrent changes, or signals that it cannot with an ABORTED error.
-     * (notes.listNotes)
-     *
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param string filter Filter for list results. If no filter is supplied,
-     * the `trashed` filter is applied by default. Valid fields to filter by are:
-     * `create_time`, `update_time`, `trash_time`, and `trashed`. Filter syntax
-     * follows the [Google AIP filtering spec](https://aip.dev/160).
-     * @opt_param int pageSize The maximum number of results to return.
-     * @opt_param string pageToken The previous page's `next_page_token` field.
-     * @return ListNotesResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listNotes($optParams = [])
+    class Google_Service_Keep_Resource_Notes extends \Google\Service\Keep\Resource\Notes
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dialogflow;
-
-class GoogleCloudDialogflowCxV3LlmModelSettings extends \Google\Model
-{
-    /**
-     * The selected LLM model.
-     *
-     * @var string
-     */
-    public $model;
-    /**
-     * The custom prompt to use.
-     *
-     * @var string
-     */
-    public $promptText;
-    /**
-     * The selected LLM model.
-     *
-     * @param string $model
-     */
-    public function setModel($model)
+namespace Google\Service\Dialogflow {
+    class GoogleCloudDialogflowCxV3LlmModelSettings extends \Google\Model
     {
+        /**
+         * The selected LLM model.
+         *
+         * @var string
+         */
+        public $model;
+        /**
+         * The custom prompt to use.
+         *
+         * @var string
+         */
+        public $promptText;
+        /**
+         * The selected LLM model.
+         *
+         * @param string $model
+         */
+        public function setModel($model)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getModel()
+        {
+        }
+        /**
+         * The custom prompt to use.
+         *
+         * @param string $promptText
+         */
+        public function setPromptText($promptText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPromptText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3LlmModelSettings registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getModel()
-    {
-    }
-    /**
-     * The custom prompt to use.
-     *
-     * @param string $promptText
-     */
-    public function setPromptText($promptText)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPromptText()
+    class Google_Service_Dialogflow_GoogleCloudDialogflowCxV3LlmModelSettings extends \Google\Service\Dialogflow\GoogleCloudDialogflowCxV3LlmModelSettings
     {
     }
 }

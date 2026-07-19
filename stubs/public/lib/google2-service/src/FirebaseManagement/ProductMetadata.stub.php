@@ -21,29 +21,38 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\FirebaseManagement;
-
-class ProductMetadata extends \Google\Collection
-{
-    protected $collection_key = 'warningMessages';
-    /**
-     * List of warnings related to the associated operation.
-     *
-     * @var string[]
-     */
-    public $warningMessages;
-    /**
-     * List of warnings related to the associated operation.
-     *
-     * @param string[] $warningMessages
-     */
-    public function setWarningMessages($warningMessages)
+namespace Google\Service\FirebaseManagement {
+    class ProductMetadata extends \Google\Collection
     {
+        protected $collection_key = 'warningMessages';
+        /**
+         * List of warnings related to the associated operation.
+         *
+         * @var string[]
+         */
+        public $warningMessages;
+        /**
+         * List of warnings related to the associated operation.
+         *
+         * @param string[] $warningMessages
+         */
+        public function setWarningMessages($warningMessages)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getWarningMessages()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\FirebaseManagement\ProductMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getWarningMessages()
+    class Google_Service_FirebaseManagement_ProductMetadata extends \Google\Service\FirebaseManagement\ProductMetadata
     {
     }
 }

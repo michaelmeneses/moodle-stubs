@@ -21,45 +21,54 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class ResultDisplayMetadata extends \Google\Collection
-{
-    protected $collection_key = 'metalines';
-    protected $metalinesType = ResultDisplayLine::class;
-    protected $metalinesDataType = 'array';
-    /**
-     * The display label for the object.
-     *
-     * @var string
-     */
-    public $objectTypeLabel;
-    /**
-     * The metalines content to be displayed with the result.
-     *
-     * @param ResultDisplayLine[] $metalines
-     */
-    public function setMetalines($metalines)
+namespace Google\Service\CloudSearch {
+    class ResultDisplayMetadata extends \Google\Collection
     {
+        protected $collection_key = 'metalines';
+        protected $metalinesType = ResultDisplayLine::class;
+        protected $metalinesDataType = 'array';
+        /**
+         * The display label for the object.
+         *
+         * @var string
+         */
+        public $objectTypeLabel;
+        /**
+         * The metalines content to be displayed with the result.
+         *
+         * @param ResultDisplayLine[] $metalines
+         */
+        public function setMetalines($metalines)
+        {
+        }
+        /**
+         * @return ResultDisplayLine[]
+         */
+        public function getMetalines()
+        {
+        }
+        /**
+         * The display label for the object.
+         *
+         * @param string $objectTypeLabel
+         */
+        public function setObjectTypeLabel($objectTypeLabel)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getObjectTypeLabel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return ResultDisplayLine[]
+     * Runtime class alias of \Google\Service\CloudSearch\ResultDisplayMetadata registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getMetalines()
-    {
-    }
-    /**
-     * The display label for the object.
-     *
-     * @param string $objectTypeLabel
-     */
-    public function setObjectTypeLabel($objectTypeLabel)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getObjectTypeLabel()
+    class Google_Service_CloudSearch_ResultDisplayMetadata extends \Google\Service\CloudSearch\ResultDisplayMetadata
     {
     }
 }

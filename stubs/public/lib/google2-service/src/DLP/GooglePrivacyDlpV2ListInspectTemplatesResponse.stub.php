@@ -21,47 +21,56 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DLP;
-
-class GooglePrivacyDlpV2ListInspectTemplatesResponse extends \Google\Collection
-{
-    protected $collection_key = 'inspectTemplates';
-    protected $inspectTemplatesType = GooglePrivacyDlpV2InspectTemplate::class;
-    protected $inspectTemplatesDataType = 'array';
-    /**
-     * If the next page is available then the next page token to be used in the
-     * following ListInspectTemplates request.
-     *
-     * @var string
-     */
-    public $nextPageToken;
-    /**
-     * List of inspectTemplates, up to page_size in ListInspectTemplatesRequest.
-     *
-     * @param GooglePrivacyDlpV2InspectTemplate[] $inspectTemplates
-     */
-    public function setInspectTemplates($inspectTemplates)
+namespace Google\Service\DLP {
+    class GooglePrivacyDlpV2ListInspectTemplatesResponse extends \Google\Collection
     {
+        protected $collection_key = 'inspectTemplates';
+        protected $inspectTemplatesType = GooglePrivacyDlpV2InspectTemplate::class;
+        protected $inspectTemplatesDataType = 'array';
+        /**
+         * If the next page is available then the next page token to be used in the
+         * following ListInspectTemplates request.
+         *
+         * @var string
+         */
+        public $nextPageToken;
+        /**
+         * List of inspectTemplates, up to page_size in ListInspectTemplatesRequest.
+         *
+         * @param GooglePrivacyDlpV2InspectTemplate[] $inspectTemplates
+         */
+        public function setInspectTemplates($inspectTemplates)
+        {
+        }
+        /**
+         * @return GooglePrivacyDlpV2InspectTemplate[]
+         */
+        public function getInspectTemplates()
+        {
+        }
+        /**
+         * If the next page is available then the next page token to be used in the
+         * following ListInspectTemplates request.
+         *
+         * @param string $nextPageToken
+         */
+        public function setNextPageToken($nextPageToken)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getNextPageToken()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GooglePrivacyDlpV2InspectTemplate[]
+     * Runtime class alias of \Google\Service\DLP\GooglePrivacyDlpV2ListInspectTemplatesResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getInspectTemplates()
-    {
-    }
-    /**
-     * If the next page is available then the next page token to be used in the
-     * following ListInspectTemplates request.
-     *
-     * @param string $nextPageToken
-     */
-    public function setNextPageToken($nextPageToken)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getNextPageToken()
+    class Google_Service_DLP_GooglePrivacyDlpV2ListInspectTemplatesResponse extends \Google\Service\DLP\GooglePrivacyDlpV2ListInspectTemplatesResponse
     {
     }
 }

@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Analytics;
-
-class FilterLowercaseDetails extends \Google\Model
-{
-    /**
-     * Field to use in the filter.
-     *
-     * @var string
-     */
-    public $field;
-    /**
-     * The Index of the custom dimension. Required if field is a CUSTOM_DIMENSION.
-     *
-     * @var int
-     */
-    public $fieldIndex;
-    /**
-     * Field to use in the filter.
-     *
-     * @param string $field
-     */
-    public function setField($field)
+namespace Google\Service\Analytics {
+    class FilterLowercaseDetails extends \Google\Model
     {
+        /**
+         * Field to use in the filter.
+         *
+         * @var string
+         */
+        public $field;
+        /**
+         * The Index of the custom dimension. Required if field is a CUSTOM_DIMENSION.
+         *
+         * @var int
+         */
+        public $fieldIndex;
+        /**
+         * Field to use in the filter.
+         *
+         * @param string $field
+         */
+        public function setField($field)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getField()
+        {
+        }
+        /**
+         * The Index of the custom dimension. Required if field is a CUSTOM_DIMENSION.
+         *
+         * @param int $fieldIndex
+         */
+        public function setFieldIndex($fieldIndex)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getFieldIndex()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Analytics\FilterLowercaseDetails registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getField()
-    {
-    }
-    /**
-     * The Index of the custom dimension. Required if field is a CUSTOM_DIMENSION.
-     *
-     * @param int $fieldIndex
-     */
-    public function setFieldIndex($fieldIndex)
-    {
-    }
-    /**
-     * @return int
-     */
-    public function getFieldIndex()
+    class Google_Service_Analytics_FilterLowercaseDetails extends \Google\Service\Analytics\FilterLowercaseDetails
     {
     }
 }

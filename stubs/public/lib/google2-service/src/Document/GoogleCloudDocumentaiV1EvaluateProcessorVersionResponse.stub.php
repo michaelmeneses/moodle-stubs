@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Document;
-
-class GoogleCloudDocumentaiV1EvaluateProcessorVersionResponse extends \Google\Model
-{
-    /**
-     * The resource name of the created evaluation.
-     *
-     * @var string
-     */
-    public $evaluation;
-    /**
-     * The resource name of the created evaluation.
-     *
-     * @param string $evaluation
-     */
-    public function setEvaluation($evaluation)
+namespace Google\Service\Document {
+    class GoogleCloudDocumentaiV1EvaluateProcessorVersionResponse extends \Google\Model
     {
+        /**
+         * The resource name of the created evaluation.
+         *
+         * @var string
+         */
+        public $evaluation;
+        /**
+         * The resource name of the created evaluation.
+         *
+         * @param string $evaluation
+         */
+        public function setEvaluation($evaluation)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getEvaluation()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\Document\GoogleCloudDocumentaiV1EvaluateProcessorVersionResponse registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getEvaluation()
+    class Google_Service_Document_GoogleCloudDocumentaiV1EvaluateProcessorVersionResponse extends \Google\Service\Document\GoogleCloudDocumentaiV1EvaluateProcessorVersionResponse
     {
     }
 }

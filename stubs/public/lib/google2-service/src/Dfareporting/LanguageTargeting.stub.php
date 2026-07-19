@@ -21,27 +21,36 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class LanguageTargeting extends \Google\Collection
-{
-    protected $collection_key = 'languages';
-    protected $languagesType = Language::class;
-    protected $languagesDataType = 'array';
-    /**
-     * Languages that this ad targets. For each language only languageId is
-     * required. The other fields are populated automatically when the ad is
-     * inserted or updated.
-     *
-     * @param Language[] $languages
-     */
-    public function setLanguages($languages)
+namespace Google\Service\Dfareporting {
+    class LanguageTargeting extends \Google\Collection
     {
+        protected $collection_key = 'languages';
+        protected $languagesType = Language::class;
+        protected $languagesDataType = 'array';
+        /**
+         * Languages that this ad targets. For each language only languageId is
+         * required. The other fields are populated automatically when the ad is
+         * inserted or updated.
+         *
+         * @param Language[] $languages
+         */
+        public function setLanguages($languages)
+        {
+        }
+        /**
+         * @return Language[]
+         */
+        public function getLanguages()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return Language[]
+     * Runtime class alias of \Google\Service\Dfareporting\LanguageTargeting registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getLanguages()
+    class Google_Service_Dfareporting_LanguageTargeting extends \Google\Service\Dfareporting\LanguageTargeting
     {
     }
 }

@@ -21,25 +21,34 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\APIhub;
-
-class GoogleCloudApihubV1Endpoint extends \Google\Model
-{
-    protected $applicationIntegrationEndpointDetailsType = GoogleCloudApihubV1ApplicationIntegrationEndpointDetails::class;
-    protected $applicationIntegrationEndpointDetailsDataType = '';
-    /**
-     * Required. The details of the Application Integration endpoint to be
-     * triggered for curation.
-     *
-     * @param GoogleCloudApihubV1ApplicationIntegrationEndpointDetails $applicationIntegrationEndpointDetails
-     */
-    public function setApplicationIntegrationEndpointDetails(GoogleCloudApihubV1ApplicationIntegrationEndpointDetails $applicationIntegrationEndpointDetails)
+namespace Google\Service\APIhub {
+    class GoogleCloudApihubV1Endpoint extends \Google\Model
     {
+        protected $applicationIntegrationEndpointDetailsType = GoogleCloudApihubV1ApplicationIntegrationEndpointDetails::class;
+        protected $applicationIntegrationEndpointDetailsDataType = '';
+        /**
+         * Required. The details of the Application Integration endpoint to be
+         * triggered for curation.
+         *
+         * @param GoogleCloudApihubV1ApplicationIntegrationEndpointDetails $applicationIntegrationEndpointDetails
+         */
+        public function setApplicationIntegrationEndpointDetails(GoogleCloudApihubV1ApplicationIntegrationEndpointDetails $applicationIntegrationEndpointDetails)
+        {
+        }
+        /**
+         * @return GoogleCloudApihubV1ApplicationIntegrationEndpointDetails
+         */
+        public function getApplicationIntegrationEndpointDetails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudApihubV1ApplicationIntegrationEndpointDetails
+     * Runtime class alias of \Google\Service\APIhub\GoogleCloudApihubV1Endpoint registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getApplicationIntegrationEndpointDetails()
+    class Google_Service_APIhub_GoogleCloudApihubV1Endpoint extends \Google\Service\APIhub\GoogleCloudApihubV1Endpoint
     {
     }
 }

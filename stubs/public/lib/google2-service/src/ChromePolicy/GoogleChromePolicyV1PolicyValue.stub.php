@@ -21,40 +21,49 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\ChromePolicy;
-
-class GoogleChromePolicyV1PolicyValue extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $policySchema;
-    /**
-     * @var array[]
-     */
-    public $value;
-    /**
-     * @param string
-     */
-    public function setPolicySchema($policySchema)
+namespace Google\Service\ChromePolicy {
+    class GoogleChromePolicyV1PolicyValue extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $policySchema;
+        /**
+         * @var array[]
+         */
+        public $value;
+        /**
+         * @param string
+         */
+        public function setPolicySchema($policySchema)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPolicySchema()
+        {
+        }
+        /**
+         * @param array[]
+         */
+        public function setValue($value)
+        {
+        }
+        /**
+         * @return array[]
+         */
+        public function getValue()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\ChromePolicy\GoogleChromePolicyV1PolicyValue registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getPolicySchema()
-    {
-    }
-    /**
-     * @param array[]
-     */
-    public function setValue($value)
-    {
-    }
-    /**
-     * @return array[]
-     */
-    public function getValue()
+    class Google_Service_ChromePolicy_GoogleChromePolicyV1PolicyValue extends \Google\Service\ChromePolicy\GoogleChromePolicyV1PolicyValue
     {
     }
 }

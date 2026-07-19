@@ -21,137 +21,146 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Dfareporting;
-
-class AccountPermission extends \Google\Collection
-{
-    public const LEVEL_USER = 'USER';
-    public const LEVEL_ADMINISTRATOR = 'ADMINISTRATOR';
-    protected $collection_key = 'accountProfiles';
-    /**
-     * Account profiles associated with this account permission. Possible values
-     * are: - "ACCOUNT_PROFILE_BASIC" - "ACCOUNT_PROFILE_STANDARD"
-     *
-     * @var string[]
-     */
-    public $accountProfiles;
-    /**
-     * ID of this account permission.
-     *
-     * @var string
-     */
-    public $id;
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#accountPermission".
-     *
-     * @var string
-     */
-    public $kind;
-    /**
-     * Administrative level required to enable this account permission.
-     *
-     * @var string
-     */
-    public $level;
-    /**
-     * Name of this account permission.
-     *
-     * @var string
-     */
-    public $name;
-    /**
-     * Permission group of this account permission.
-     *
-     * @var string
-     */
-    public $permissionGroupId;
-    /**
-     * Account profiles associated with this account permission. Possible values
-     * are: - "ACCOUNT_PROFILE_BASIC" - "ACCOUNT_PROFILE_STANDARD"
-     *
-     * @param string[] $accountProfiles
-     */
-    public function setAccountProfiles($accountProfiles)
+namespace Google\Service\Dfareporting {
+    class AccountPermission extends \Google\Collection
     {
+        public const LEVEL_USER = 'USER';
+        public const LEVEL_ADMINISTRATOR = 'ADMINISTRATOR';
+        protected $collection_key = 'accountProfiles';
+        /**
+         * Account profiles associated with this account permission. Possible values
+         * are: - "ACCOUNT_PROFILE_BASIC" - "ACCOUNT_PROFILE_STANDARD"
+         *
+         * @var string[]
+         */
+        public $accountProfiles;
+        /**
+         * ID of this account permission.
+         *
+         * @var string
+         */
+        public $id;
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#accountPermission".
+         *
+         * @var string
+         */
+        public $kind;
+        /**
+         * Administrative level required to enable this account permission.
+         *
+         * @var string
+         */
+        public $level;
+        /**
+         * Name of this account permission.
+         *
+         * @var string
+         */
+        public $name;
+        /**
+         * Permission group of this account permission.
+         *
+         * @var string
+         */
+        public $permissionGroupId;
+        /**
+         * Account profiles associated with this account permission. Possible values
+         * are: - "ACCOUNT_PROFILE_BASIC" - "ACCOUNT_PROFILE_STANDARD"
+         *
+         * @param string[] $accountProfiles
+         */
+        public function setAccountProfiles($accountProfiles)
+        {
+        }
+        /**
+         * @return string[]
+         */
+        public function getAccountProfiles()
+        {
+        }
+        /**
+         * ID of this account permission.
+         *
+         * @param string $id
+         */
+        public function setId($id)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getId()
+        {
+        }
+        /**
+         * Identifies what kind of resource this is. Value: the fixed string
+         * "dfareporting#accountPermission".
+         *
+         * @param string $kind
+         */
+        public function setKind($kind)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKind()
+        {
+        }
+        /**
+         * Administrative level required to enable this account permission.
+         *
+         * Accepted values: USER, ADMINISTRATOR
+         *
+         * @param self::LEVEL_* $level
+         */
+        public function setLevel($level)
+        {
+        }
+        /**
+         * @return self::LEVEL_*
+         */
+        public function getLevel()
+        {
+        }
+        /**
+         * Name of this account permission.
+         *
+         * @param string $name
+         */
+        public function setName($name)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getName()
+        {
+        }
+        /**
+         * Permission group of this account permission.
+         *
+         * @param string $permissionGroupId
+         */
+        public function setPermissionGroupId($permissionGroupId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getPermissionGroupId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string[]
+     * Runtime class alias of \Google\Service\Dfareporting\AccountPermission registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAccountProfiles()
-    {
-    }
-    /**
-     * ID of this account permission.
-     *
-     * @param string $id
-     */
-    public function setId($id)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getId()
-    {
-    }
-    /**
-     * Identifies what kind of resource this is. Value: the fixed string
-     * "dfareporting#accountPermission".
-     *
-     * @param string $kind
-     */
-    public function setKind($kind)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKind()
-    {
-    }
-    /**
-     * Administrative level required to enable this account permission.
-     *
-     * Accepted values: USER, ADMINISTRATOR
-     *
-     * @param self::LEVEL_* $level
-     */
-    public function setLevel($level)
-    {
-    }
-    /**
-     * @return self::LEVEL_*
-     */
-    public function getLevel()
-    {
-    }
-    /**
-     * Name of this account permission.
-     *
-     * @param string $name
-     */
-    public function setName($name)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getName()
-    {
-    }
-    /**
-     * Permission group of this account permission.
-     *
-     * @param string $permissionGroupId
-     */
-    public function setPermissionGroupId($permissionGroupId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getPermissionGroupId()
+    class Google_Service_Dfareporting_AccountPermission extends \Google\Service\Dfareporting\AccountPermission
     {
     }
 }

@@ -21,28 +21,37 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\DisplayVideo;
-
-class AdvertiserBillingConfig extends \Google\Model
-{
-    /**
-     * Required. The ID of a billing profile assigned to the advertiser.
-     *
-     * @var string
-     */
-    public $billingProfileId;
-    /**
-     * Required. The ID of a billing profile assigned to the advertiser.
-     *
-     * @param string $billingProfileId
-     */
-    public function setBillingProfileId($billingProfileId)
+namespace Google\Service\DisplayVideo {
+    class AdvertiserBillingConfig extends \Google\Model
     {
+        /**
+         * Required. The ID of a billing profile assigned to the advertiser.
+         *
+         * @var string
+         */
+        public $billingProfileId;
+        /**
+         * Required. The ID of a billing profile assigned to the advertiser.
+         *
+         * @param string $billingProfileId
+         */
+        public function setBillingProfileId($billingProfileId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getBillingProfileId()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\DisplayVideo\AdvertiserBillingConfig registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getBillingProfileId()
+    class Google_Service_DisplayVideo_AdvertiserBillingConfig extends \Google\Service\DisplayVideo\AdvertiserBillingConfig
     {
     }
 }

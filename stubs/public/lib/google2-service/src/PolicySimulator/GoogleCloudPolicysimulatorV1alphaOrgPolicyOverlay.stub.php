@@ -21,37 +21,46 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\PolicySimulator;
-
-class GoogleCloudPolicysimulatorV1alphaOrgPolicyOverlay extends \Google\Collection
-{
-    protected $collection_key = 'policies';
-    protected $customConstraintsType = GoogleCloudPolicysimulatorV1alphaOrgPolicyOverlayCustomConstraintOverlay::class;
-    protected $customConstraintsDataType = 'array';
-    protected $policiesType = GoogleCloudPolicysimulatorV1alphaOrgPolicyOverlayPolicyOverlay::class;
-    protected $policiesDataType = 'array';
-    /**
-     * @param GoogleCloudPolicysimulatorV1alphaOrgPolicyOverlayCustomConstraintOverlay[]
-     */
-    public function setCustomConstraints($customConstraints)
+namespace Google\Service\PolicySimulator {
+    class GoogleCloudPolicysimulatorV1alphaOrgPolicyOverlay extends \Google\Collection
     {
+        protected $collection_key = 'policies';
+        protected $customConstraintsType = GoogleCloudPolicysimulatorV1alphaOrgPolicyOverlayCustomConstraintOverlay::class;
+        protected $customConstraintsDataType = 'array';
+        protected $policiesType = GoogleCloudPolicysimulatorV1alphaOrgPolicyOverlayPolicyOverlay::class;
+        protected $policiesDataType = 'array';
+        /**
+         * @param GoogleCloudPolicysimulatorV1alphaOrgPolicyOverlayCustomConstraintOverlay[]
+         */
+        public function setCustomConstraints($customConstraints)
+        {
+        }
+        /**
+         * @return GoogleCloudPolicysimulatorV1alphaOrgPolicyOverlayCustomConstraintOverlay[]
+         */
+        public function getCustomConstraints()
+        {
+        }
+        /**
+         * @param GoogleCloudPolicysimulatorV1alphaOrgPolicyOverlayPolicyOverlay[]
+         */
+        public function setPolicies($policies)
+        {
+        }
+        /**
+         * @return GoogleCloudPolicysimulatorV1alphaOrgPolicyOverlayPolicyOverlay[]
+         */
+        public function getPolicies()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return GoogleCloudPolicysimulatorV1alphaOrgPolicyOverlayCustomConstraintOverlay[]
+     * Runtime class alias of \Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1alphaOrgPolicyOverlay registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getCustomConstraints()
-    {
-    }
-    /**
-     * @param GoogleCloudPolicysimulatorV1alphaOrgPolicyOverlayPolicyOverlay[]
-     */
-    public function setPolicies($policies)
-    {
-    }
-    /**
-     * @return GoogleCloudPolicysimulatorV1alphaOrgPolicyOverlayPolicyOverlay[]
-     */
-    public function getPolicies()
+    class Google_Service_PolicySimulator_GoogleCloudPolicysimulatorV1alphaOrgPolicyOverlay extends \Google\Service\PolicySimulator\GoogleCloudPolicysimulatorV1alphaOrgPolicyOverlay
     {
     }
 }

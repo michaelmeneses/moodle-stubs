@@ -21,38 +21,47 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Books;
-
-class DictlayerdataDictWordsSensesDefinitionsExamples extends \Google\Model
-{
-    protected $sourceType = DictlayerdataDictWordsSensesDefinitionsExamplesSource::class;
-    protected $sourceDataType = '';
-    /**
-     * @var string
-     */
-    public $text;
-    /**
-     * @param DictlayerdataDictWordsSensesDefinitionsExamplesSource $source
-     */
-    public function setSource(DictlayerdataDictWordsSensesDefinitionsExamplesSource $source)
+namespace Google\Service\Books {
+    class DictlayerdataDictWordsSensesDefinitionsExamples extends \Google\Model
     {
+        protected $sourceType = DictlayerdataDictWordsSensesDefinitionsExamplesSource::class;
+        protected $sourceDataType = '';
+        /**
+         * @var string
+         */
+        public $text;
+        /**
+         * @param DictlayerdataDictWordsSensesDefinitionsExamplesSource $source
+         */
+        public function setSource(DictlayerdataDictWordsSensesDefinitionsExamplesSource $source)
+        {
+        }
+        /**
+         * @return DictlayerdataDictWordsSensesDefinitionsExamplesSource
+         */
+        public function getSource()
+        {
+        }
+        /**
+         * @param string $text
+         */
+        public function setText($text)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getText()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return DictlayerdataDictWordsSensesDefinitionsExamplesSource
+     * Runtime class alias of \Google\Service\Books\DictlayerdataDictWordsSensesDefinitionsExamples registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getSource()
-    {
-    }
-    /**
-     * @param string $text
-     */
-    public function setText($text)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getText()
+    class Google_Service_Books_DictlayerdataDictWordsSensesDefinitionsExamples extends \Google\Service\Books\DictlayerdataDictWordsSensesDefinitionsExamples
     {
     }
 }

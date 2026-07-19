@@ -21,83 +21,97 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\Script\Resource;
-
-/**
- * The "deployments" collection of methods.
- * Typical usage is:
- *  <code>
- *   $scriptService = new Google\Service\Script(...);
- *   $deployments = $scriptService->projects_deployments;
- *  </code>
- */
-class ProjectsDeployments extends \Google\Service\Resource
-{
+namespace Google\Service\Script\Resource {
+    use Google\Service\Script\Deployment;
+    use Google\Service\Script\DeploymentConfig;
+    use Google\Service\Script\ListDeploymentsResponse;
+    use Google\Service\Script\ScriptEmpty;
+    use Google\Service\Script\UpdateDeploymentRequest;
     /**
-     * Creates a deployment of an Apps Script project. (deployments.create)
-     *
-     * @param string $scriptId The script project's Drive ID.
-     * @param DeploymentConfig $postBody
-     * @param array $optParams Optional parameters.
-     * @return Deployment
-     * @throws \Google\Service\Exception
+     * The "deployments" collection of methods.
+     * Typical usage is:
+     *  <code>
+     *   $scriptService = new Google\Service\Script(...);
+     *   $deployments = $scriptService->projects_deployments;
+     *  </code>
      */
-    public function create($scriptId, DeploymentConfig $postBody, $optParams = [])
+    class ProjectsDeployments extends \Google\Service\Resource
     {
+        /**
+         * Creates a deployment of an Apps Script project. (deployments.create)
+         *
+         * @param string $scriptId The script project's Drive ID.
+         * @param DeploymentConfig $postBody
+         * @param array $optParams Optional parameters.
+         * @return Deployment
+         * @throws \Google\Service\Exception
+         */
+        public function create($scriptId, DeploymentConfig $postBody, $optParams = [])
+        {
+        }
+        /**
+         * Deletes a deployment of an Apps Script project. (deployments.delete)
+         *
+         * @param string $scriptId The script project's Drive ID.
+         * @param string $deploymentId The deployment ID to be undeployed.
+         * @param array $optParams Optional parameters.
+         * @return ScriptEmpty
+         * @throws \Google\Service\Exception
+         */
+        public function delete($scriptId, $deploymentId, $optParams = [])
+        {
+        }
+        /**
+         * Gets a deployment of an Apps Script project. (deployments.get)
+         *
+         * @param string $scriptId The script project's Drive ID.
+         * @param string $deploymentId The deployment ID.
+         * @param array $optParams Optional parameters.
+         * @return Deployment
+         * @throws \Google\Service\Exception
+         */
+        public function get($scriptId, $deploymentId, $optParams = [])
+        {
+        }
+        /**
+         * Lists the deployments of an Apps Script project.
+         * (deployments.listProjectsDeployments)
+         *
+         * @param string $scriptId The script project's Drive ID.
+         * @param array $optParams Optional parameters.
+         *
+         * @opt_param int pageSize The maximum number of deployments on each returned
+         * page. Defaults to 50.
+         * @opt_param string pageToken The token for continuing a previous list request
+         * on the next page. This should be set to the value of `nextPageToken` from a
+         * previous response.
+         * @return ListDeploymentsResponse
+         * @throws \Google\Service\Exception
+         */
+        public function listProjectsDeployments($scriptId, $optParams = [])
+        {
+        }
+        /**
+         * Updates a deployment of an Apps Script project. (deployments.update)
+         *
+         * @param string $scriptId The script project's Drive ID.
+         * @param string $deploymentId The deployment ID for this deployment.
+         * @param UpdateDeploymentRequest $postBody
+         * @param array $optParams Optional parameters.
+         * @return Deployment
+         * @throws \Google\Service\Exception
+         */
+        public function update($scriptId, $deploymentId, UpdateDeploymentRequest $postBody, $optParams = [])
+        {
+        }
     }
+}
+namespace {
     /**
-     * Deletes a deployment of an Apps Script project. (deployments.delete)
-     *
-     * @param string $scriptId The script project's Drive ID.
-     * @param string $deploymentId The deployment ID to be undeployed.
-     * @param array $optParams Optional parameters.
-     * @return ScriptEmpty
-     * @throws \Google\Service\Exception
+     * Runtime class alias of \Google\Service\Script\Resource\ProjectsDeployments registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function delete($scriptId, $deploymentId, $optParams = [])
-    {
-    }
-    /**
-     * Gets a deployment of an Apps Script project. (deployments.get)
-     *
-     * @param string $scriptId The script project's Drive ID.
-     * @param string $deploymentId The deployment ID.
-     * @param array $optParams Optional parameters.
-     * @return Deployment
-     * @throws \Google\Service\Exception
-     */
-    public function get($scriptId, $deploymentId, $optParams = [])
-    {
-    }
-    /**
-     * Lists the deployments of an Apps Script project.
-     * (deployments.listProjectsDeployments)
-     *
-     * @param string $scriptId The script project's Drive ID.
-     * @param array $optParams Optional parameters.
-     *
-     * @opt_param int pageSize The maximum number of deployments on each returned
-     * page. Defaults to 50.
-     * @opt_param string pageToken The token for continuing a previous list request
-     * on the next page. This should be set to the value of `nextPageToken` from a
-     * previous response.
-     * @return ListDeploymentsResponse
-     * @throws \Google\Service\Exception
-     */
-    public function listProjectsDeployments($scriptId, $optParams = [])
-    {
-    }
-    /**
-     * Updates a deployment of an Apps Script project. (deployments.update)
-     *
-     * @param string $scriptId The script project's Drive ID.
-     * @param string $deploymentId The deployment ID for this deployment.
-     * @param UpdateDeploymentRequest $postBody
-     * @param array $optParams Optional parameters.
-     * @return Deployment
-     * @throws \Google\Service\Exception
-     */
-    public function update($scriptId, $deploymentId, UpdateDeploymentRequest $postBody, $optParams = [])
+    class Google_Service_Script_Resource_ProjectsDeployments extends \Google\Service\Script\Resource\ProjectsDeployments
     {
     }
 }

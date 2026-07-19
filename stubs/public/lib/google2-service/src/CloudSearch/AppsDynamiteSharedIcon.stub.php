@@ -21,72 +21,81 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedIcon extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $altText;
-    /**
-     * @var string
-     */
-    public $iconUrl;
-    /**
-     * @var string
-     */
-    public $imageType;
-    /**
-     * @var string
-     */
-    public $knownIcon;
-    /**
-     * @param string
-     */
-    public function setAltText($altText)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedIcon extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $altText;
+        /**
+         * @var string
+         */
+        public $iconUrl;
+        /**
+         * @var string
+         */
+        public $imageType;
+        /**
+         * @var string
+         */
+        public $knownIcon;
+        /**
+         * @param string
+         */
+        public function setAltText($altText)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAltText()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setIconUrl($iconUrl)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getIconUrl()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setImageType($imageType)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getImageType()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setKnownIcon($knownIcon)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getKnownIcon()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedIcon registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAltText()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setIconUrl($iconUrl)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getIconUrl()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setImageType($imageType)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getImageType()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setKnownIcon($knownIcon)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getKnownIcon()
+    class Google_Service_CloudSearch_AppsDynamiteSharedIcon extends \Google\Service\CloudSearch\AppsDynamiteSharedIcon
     {
     }
 }

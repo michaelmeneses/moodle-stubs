@@ -21,30 +21,39 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudMachineLearningEngine;
-
-class GoogleCloudMlV1ContainerPort extends \Google\Model
-{
-    /**
-     * Number of the port to expose on the container. This must be a valid port
-     * number: 0 < PORT_NUMBER < 65536.
-     *
-     * @var int
-     */
-    public $containerPort;
-    /**
-     * Number of the port to expose on the container. This must be a valid port
-     * number: 0 < PORT_NUMBER < 65536.
-     *
-     * @param int $containerPort
-     */
-    public function setContainerPort($containerPort)
+namespace Google\Service\CloudMachineLearningEngine {
+    class GoogleCloudMlV1ContainerPort extends \Google\Model
     {
+        /**
+         * Number of the port to expose on the container. This must be a valid port
+         * number: 0 < PORT_NUMBER < 65536.
+         *
+         * @var int
+         */
+        public $containerPort;
+        /**
+         * Number of the port to expose on the container. This must be a valid port
+         * number: 0 < PORT_NUMBER < 65536.
+         *
+         * @param int $containerPort
+         */
+        public function setContainerPort($containerPort)
+        {
+        }
+        /**
+         * @return int
+         */
+        public function getContainerPort()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return int
+     * Runtime class alias of \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1ContainerPort registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getContainerPort()
+    class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1ContainerPort extends \Google\Service\CloudMachineLearningEngine\GoogleCloudMlV1ContainerPort
     {
     }
 }

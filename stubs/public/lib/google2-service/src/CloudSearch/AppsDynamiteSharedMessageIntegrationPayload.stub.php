@@ -21,54 +21,63 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class AppsDynamiteSharedMessageIntegrationPayload extends \Google\Model
-{
-    /**
-     * @var string
-     */
-    public $projectNumber;
-    protected $tasksMessageIntegrationPayloadType = AppsDynamiteSharedTasksMessageIntegrationPayload::class;
-    protected $tasksMessageIntegrationPayloadDataType = '';
-    /**
-     * @var string
-     */
-    public $type;
-    /**
-     * @param string
-     */
-    public function setProjectNumber($projectNumber)
+namespace Google\Service\CloudSearch {
+    class AppsDynamiteSharedMessageIntegrationPayload extends \Google\Model
     {
+        /**
+         * @var string
+         */
+        public $projectNumber;
+        protected $tasksMessageIntegrationPayloadType = AppsDynamiteSharedTasksMessageIntegrationPayload::class;
+        protected $tasksMessageIntegrationPayloadDataType = '';
+        /**
+         * @var string
+         */
+        public $type;
+        /**
+         * @param string
+         */
+        public function setProjectNumber($projectNumber)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectNumber()
+        {
+        }
+        /**
+         * @param AppsDynamiteSharedTasksMessageIntegrationPayload
+         */
+        public function setTasksMessageIntegrationPayload(AppsDynamiteSharedTasksMessageIntegrationPayload $tasksMessageIntegrationPayload)
+        {
+        }
+        /**
+         * @return AppsDynamiteSharedTasksMessageIntegrationPayload
+         */
+        public function getTasksMessageIntegrationPayload()
+        {
+        }
+        /**
+         * @param string
+         */
+        public function setType($type)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getType()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\AppsDynamiteSharedMessageIntegrationPayload registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getProjectNumber()
-    {
-    }
-    /**
-     * @param AppsDynamiteSharedTasksMessageIntegrationPayload
-     */
-    public function setTasksMessageIntegrationPayload(AppsDynamiteSharedTasksMessageIntegrationPayload $tasksMessageIntegrationPayload)
-    {
-    }
-    /**
-     * @return AppsDynamiteSharedTasksMessageIntegrationPayload
-     */
-    public function getTasksMessageIntegrationPayload()
-    {
-    }
-    /**
-     * @param string
-     */
-    public function setType($type)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getType()
+    class Google_Service_CloudSearch_AppsDynamiteSharedMessageIntegrationPayload extends \Google\Service\CloudSearch\AppsDynamiteSharedMessageIntegrationPayload
     {
     }
 }

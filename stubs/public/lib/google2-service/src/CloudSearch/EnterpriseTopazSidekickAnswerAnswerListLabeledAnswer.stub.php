@@ -21,48 +21,57 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\CloudSearch;
-
-class EnterpriseTopazSidekickAnswerAnswerListLabeledAnswer extends \Google\Model
-{
-    /**
-     * The free text answer.
-     *
-     * @var string
-     */
-    public $answer;
-    /**
-     * A localized label for the answer (e.g. "Cell phone" vs "Desk phone").
-     *
-     * @var string
-     */
-    public $label;
-    /**
-     * The free text answer.
-     *
-     * @param string $answer
-     */
-    public function setAnswer($answer)
+namespace Google\Service\CloudSearch {
+    class EnterpriseTopazSidekickAnswerAnswerListLabeledAnswer extends \Google\Model
     {
+        /**
+         * The free text answer.
+         *
+         * @var string
+         */
+        public $answer;
+        /**
+         * A localized label for the answer (e.g. "Cell phone" vs "Desk phone").
+         *
+         * @var string
+         */
+        public $label;
+        /**
+         * The free text answer.
+         *
+         * @param string $answer
+         */
+        public function setAnswer($answer)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAnswer()
+        {
+        }
+        /**
+         * A localized label for the answer (e.g. "Cell phone" vs "Desk phone").
+         *
+         * @param string $label
+         */
+        public function setLabel($label)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getLabel()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\CloudSearch\EnterpriseTopazSidekickAnswerAnswerListLabeledAnswer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAnswer()
-    {
-    }
-    /**
-     * A localized label for the answer (e.g. "Cell phone" vs "Desk phone").
-     *
-     * @param string $label
-     */
-    public function setLabel($label)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getLabel()
+    class Google_Service_CloudSearch_EnterpriseTopazSidekickAnswerAnswerListLabeledAnswer extends \Google\Service\CloudSearch\EnterpriseTopazSidekickAnswerAnswerListLabeledAnswer
     {
     }
 }

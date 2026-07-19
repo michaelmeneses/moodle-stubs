@@ -21,93 +21,102 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-namespace Google\Service\WorkloadManager;
-
-class SqlserverValidation extends \Google\Collection
-{
-    protected $collection_key = 'validationDetails';
-    /**
-     * Optional. The agent version collected this data point
-     *
-     * @var string
-     */
-    public $agentVersion;
-    /**
-     * Required. The instance_name of the instance that the Insight data comes
-     * from. According to https://linter.aip.dev/122/name-suffix: field names
-     * should not use the _name suffix unless the field would be ambiguous without
-     * it.
-     *
-     * @var string
-     */
-    public $instance;
-    /**
-     * Required. The project_id of the cloud project that the Insight data comes
-     * from.
-     *
-     * @var string
-     */
-    public $projectId;
-    protected $validationDetailsType = SqlserverValidationValidationDetail::class;
-    protected $validationDetailsDataType = 'array';
-    /**
-     * Optional. The agent version collected this data point
-     *
-     * @param string $agentVersion
-     */
-    public function setAgentVersion($agentVersion)
+namespace Google\Service\WorkloadManager {
+    class SqlserverValidation extends \Google\Collection
     {
+        protected $collection_key = 'validationDetails';
+        /**
+         * Optional. The agent version collected this data point
+         *
+         * @var string
+         */
+        public $agentVersion;
+        /**
+         * Required. The instance_name of the instance that the Insight data comes
+         * from. According to https://linter.aip.dev/122/name-suffix: field names
+         * should not use the _name suffix unless the field would be ambiguous without
+         * it.
+         *
+         * @var string
+         */
+        public $instance;
+        /**
+         * Required. The project_id of the cloud project that the Insight data comes
+         * from.
+         *
+         * @var string
+         */
+        public $projectId;
+        protected $validationDetailsType = SqlserverValidationValidationDetail::class;
+        protected $validationDetailsDataType = 'array';
+        /**
+         * Optional. The agent version collected this data point
+         *
+         * @param string $agentVersion
+         */
+        public function setAgentVersion($agentVersion)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getAgentVersion()
+        {
+        }
+        /**
+         * Required. The instance_name of the instance that the Insight data comes
+         * from. According to https://linter.aip.dev/122/name-suffix: field names
+         * should not use the _name suffix unless the field would be ambiguous without
+         * it.
+         *
+         * @param string $instance
+         */
+        public function setInstance($instance)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getInstance()
+        {
+        }
+        /**
+         * Required. The project_id of the cloud project that the Insight data comes
+         * from.
+         *
+         * @param string $projectId
+         */
+        public function setProjectId($projectId)
+        {
+        }
+        /**
+         * @return string
+         */
+        public function getProjectId()
+        {
+        }
+        /**
+         * Optional. A list of SqlServer validation metrics data.
+         *
+         * @param SqlserverValidationValidationDetail[] $validationDetails
+         */
+        public function setValidationDetails($validationDetails)
+        {
+        }
+        /**
+         * @return SqlserverValidationValidationDetail[]
+         */
+        public function getValidationDetails()
+        {
+        }
     }
+}
+namespace {
     /**
-     * @return string
+     * Runtime class alias of \Google\Service\WorkloadManager\SqlserverValidation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function getAgentVersion()
-    {
-    }
-    /**
-     * Required. The instance_name of the instance that the Insight data comes
-     * from. According to https://linter.aip.dev/122/name-suffix: field names
-     * should not use the _name suffix unless the field would be ambiguous without
-     * it.
-     *
-     * @param string $instance
-     */
-    public function setInstance($instance)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getInstance()
-    {
-    }
-    /**
-     * Required. The project_id of the cloud project that the Insight data comes
-     * from.
-     *
-     * @param string $projectId
-     */
-    public function setProjectId($projectId)
-    {
-    }
-    /**
-     * @return string
-     */
-    public function getProjectId()
-    {
-    }
-    /**
-     * Optional. A list of SqlServer validation metrics data.
-     *
-     * @param SqlserverValidationValidationDetail[] $validationDetails
-     */
-    public function setValidationDetails($validationDetails)
-    {
-    }
-    /**
-     * @return SqlserverValidationValidationDetail[]
-     */
-    public function getValidationDetails()
+    class Google_Service_WorkloadManager_SqlserverValidation extends \Google\Service\WorkloadManager\SqlserverValidation
     {
     }
 }
